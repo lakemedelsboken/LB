@@ -1,37 +1,40 @@
 set :application, 'lb'
-set :repo_url, 'git@github.com:lakemedelsboken/LB.git'
-set :scm, "git"
-set :branch, "master"
-set :deploy_to, "/var/www/lb"
-set :deploy_via, :remote_cache
-set :copy_strategy, :checkout
+set :repo_url, 'git@example.com:lakemedelsboken/LB.git'
+
+# ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
+
+set :deploy_to, '/var/www/lb'
+set :scm, :git
+
+# set :format, :pretty
+# set :log_level, :debug
+# set :pty, true
+
+# set :linked_files, %w{config/database.yml}
+# set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+
+# set :default_env, { path: "/opt/ruby/bin:$PATH" }
 set :keep_releases, 5
-set :use_sudo, false
-set :copy_compression, :bz2
-set :normalize_asset_timestamps, false
-set :document_root, "/var/www/lb"
-set :ssh_options, {:forward_agent => true}
-set :user, "deploy"
- 
-role :app, "87.237.210.67"
- 
+
 namespace :deploy do
-    task :start, :roles => :app do
-        run "sudo restart #{application} || sudo start #{application}"
+
+  desc 'Restart application'
+  task :restart do
+    on roles(:app), in: :sequence, wait: 5 do
+      # Your restart mechanism here, for example:
+      # execute :touch, release_path.join('tmp/restart.txt')
     end
- 
-    task :stop, :roles => :app do
-        run "sudo stop #{application}"
+  end
+
+  after :restart, :clear_cache do
+    on roles(:web), in: :groups, limit: 3, wait: 10 do
+      # Here we can do anything such as:
+      # within release_path do
+      #   execute :rake, 'cache:clear'
+      # end
     end
- 
-    task :restart, :roles => :app do
-        start
-    end
- 
-#    task :npm_install, :roles => :app do
-#        run "cd #{release_path} && npm install"
-#    end
+  end
+
+  after :finishing, 'deploy:cleanup'
+
 end
- 
-after "deploy:update", "deploy:cleanup"
-#after "deploy:update_code", "deploy:npm_install"
