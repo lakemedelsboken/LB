@@ -16,6 +16,7 @@ set :branch, 'master'
 
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 set :keep_releases, 5
+set :pass, fetch(:pass, '')
 
 namespace :deploy do
 
@@ -28,11 +29,17 @@ namespace :deploy do
         execute "rm -rf #{release_path}/fass/www/products"
         execute "mkdir -p #{release_path}/fass/www/products"
         execute "mkdir -p #{shared_path}/fass/www/products"
-        execute "ln -nfs #{shared_path}/fass/www/products #{release_path}/fass/www/products"
+        execute "ln -nfs #{shared_path}/fass/www/products #{release_path}/fass/www/"
+
+        execute "rm -rf #{release_path}/settings"
+        execute "mkdir -p #{release_path}/settings"
+        execute "mkdir -p #{shared_path}/settings"
+        execute "ln -nfs #{shared_path}/settings #{release_path}/"
+        execute "cd #{shared_path}/settings && make decrypt_conf_pass PASS=#{pass}"
 
         execute "pm2 kill"
         execute "cd /var/www/lb/current/servers/"
-        execute "pm2 start pm2_servers.json"
+        execute "pm2 start pm2_production.json"
         #end
     end
   end
