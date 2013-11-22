@@ -1,3 +1,5 @@
+#cap production deploy
+
 set :application, 'lb'
 set :repo_url, 'https://github.com/lakemedelsboken/LB.git'
 
@@ -16,7 +18,7 @@ set :branch, 'master'
 
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 set :keep_releases, 5
-set :pass, fetch(:pass, '')
+#set :pass, fetch(:pass, '')
 
 namespace :deploy do
 
@@ -27,19 +29,23 @@ namespace :deploy do
       # execute :touch, release_path.join('tmp/restart.txt')
       #within release_path do
         execute "rm -rf #{release_path}/fass/www/products"
-        execute "mkdir -p #{release_path}/fass/www/products"
+        execute "mkdir -p #{release_path}/fass/www/"
         execute "mkdir -p #{shared_path}/fass/www/products"
         execute "ln -nfs #{shared_path}/fass/www/products #{release_path}/fass/www/"
 
-        execute "rm -rf #{release_path}/settings"
-        execute "mkdir -p #{release_path}/settings"
+        ask(:pass, "")
+        
         execute "mkdir -p #{shared_path}/settings"
+        execute "rm -f #{shared_path}/settings/*"
+        execute "cp  #{release_path}/settings/* #{shared_path}/settings/"
+
+        execute "rm -rf #{release_path}/settings"
+
         execute "ln -nfs #{shared_path}/settings #{release_path}/"
-        execute "cd #{shared_path}/settings && make decrypt_conf_pass PASS=#{pass}"
+        execute "cd #{shared_path}/settings && make decrypt_conf_pass PASS=#{fetch(:pass)}"
 
         execute "pm2 kill"
-        execute "cd /var/www/lb/current/servers/"
-        execute "pm2 start pm2_production.json"
+        execute "cd /var/www/lb/current/servers/ && pm2 start pm2_production.json &"
         #end
     end
   end
