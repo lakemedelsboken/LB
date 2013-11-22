@@ -1,10 +1,11 @@
 set :application, 'lb'
-set :repo_url, 'git@example.com:lakemedelsboken/LB.git'
+set :repo_url, 'https://github.com/lakemedelsboken/LB.git'
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 set :deploy_to, '/var/www/lb'
 set :scm, :git
+set :branch, 'master'
 
 # set :format, :pretty
 # set :log_level, :debug
@@ -20,9 +21,19 @@ namespace :deploy do
 
   desc 'Restart application'
   task :restart do
-    on roles(:app), in: :sequence, wait: 5 do
+    on roles(:web), in: :sequence, wait: 5 do
       # Your restart mechanism here, for example:
       # execute :touch, release_path.join('tmp/restart.txt')
+      #within release_path do
+        execute "rm -rf #{release_path}/fass/www/products"
+        execute "mkdir -p #{release_path}/fass/www/products"
+        execute "mkdir -p #{shared_path}/fass/www/products"
+        execute "ln -nfs #{shared_path}/fass/www/products #{release_path}/fass/www/products"
+
+        execute "pm2 kill"
+        execute "cd /var/www/lb/current/servers/"
+        execute "pm2 start pm2_servers.json"
+        #end
     end
   end
 
@@ -38,3 +49,4 @@ namespace :deploy do
   after :finishing, 'deploy:cleanup'
 
 end
+

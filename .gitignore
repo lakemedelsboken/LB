@@ -7,8 +7,13 @@ lib-cov
 *.pid
 *.gz
 
+
 pids
 logs
 results
 
 npm-debug.log
+secretSettings.json
+.DS_Store
+_old
+/npl/database/*
