@@ -1,0 +1,86 @@
+<% include header.ejs %>
+
+<div class="container">
+	<div class="row">
+		<div class="span5">
+			<div class="well">
+				<a class="btn btn-small pull-right" id="updateAll" data-loading-text="Konverterar..." autocomplete="off" href="preview/updateall"><i class="icon-refresh"></i> Konvertera alla</a>
+				<br>
+				<ul id="previewList" class="nav nav-list">
+					<li class="nav-header">Förhandsgranskningar</li>
+					<% for (var i = 0; i < previews.length; i++) { %>
+					<li><a href="/<%=previews[i].name%>" target="_blank"><i class="icon-eye-open"></i> <small><%=previews[i].name%></small></a>
+						<% if (previews[i].pdf !== "") {%>
+							<a href="/<%=previews[i].pdf%>" target="_blank"><i class="icon-book"></i> <small>&nbsp;&nbsp;&nbsp;&nbsp;- <%=previews[i].name.replace(".html", ".pdf")%></small></a>
+						<% } %>
+					</li>
+					<% } %>
+					<!-- <button class="btn btn-small pull-right deletePreview" data-preview-id=""><i class="icon-remove"></i></button> -->
+				</ul>
+			</div>
+		</div>
+		<div class="span7">
+			<h2>Skapa ny förhandsgranskning</h2>
+			<div>
+				<form action="/admin/uploadmif" method="post" enctype="multipart/form-data">
+					<label>Välj en fil av mif-format:</label>
+					<input type="file" name="mif" />
+					<br><br>
+					<label>Ladda upp PDF (valfritt):</label>
+					<input type="file" name="pdf" />
+					<br>
+					<h3>Figurbilder, png-format, 600 dpi</h3>
+					<button class="btn" id="addFigure"><i class="icon-plus"></i> Lägg till en bild</button>
+
+					<div id="figures">
+					</div>
+
+					<br><br>
+					<button id="submitPreview" class="btn btn-primary" data-loading-text="Konverterar..." autocomplete="off"><i class="icon-ok icon-white"></i> Konvertera dokument</button>
+
+				</form>
+			</div>
+			<h2>Senaste resultatet av konvertering:</h2>
+			<div style="font-family: monospace;" class="well">
+<%-parserMessages.replace(/\n/g, "<br>")%>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<hr>
+	<footer>
+		<p>Läkemedelsboken</p>
+	</footer>
+</div>
+<script>
+
+$("#updateAll").on("click", function(event) {
+	$(this).html("<i class=\"icon-refresh\"></i> Konverterar...");
+	$(this).addClass("disabled");
+});
+
+$("#submitPreview").on("click", function(event) {
+//	$(this).button('loading');
+	$(this).html("<i class=\"icon-refresh icon-white\"></i> Konverterar...");
+	$(this).addClass("disabled");
+});
+
+$("#addFigure").live("click", function(event) {
+	event.preventDefault();
+	$("#figures").append($("<div class=\"figure\"><label>Figurnummer:</label><select class=\"input-mini figureNumber\" autocomplete=\"off\"><option>Välj:</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option></select><input type=\"file\" name=\"figur\" class=\"figureFile\" /></div>"));
+});
+
+$(".figureNumber").live("change", function(event) {
+
+	var numberSelector = $(this);
+	var fileSelector = numberSelector.parent().find(".figureFile")
+	fileSelector.attr("name", "figur" + numberSelector.val());
+
+});
+
+
+</script>
+
+<% include footer.ejs %>

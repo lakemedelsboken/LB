@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title><%= title %></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="description" content="">
+		<meta name="author" content="">
+	    <link rel="alternate" type="application/atom+xml" title="Läkemedelsboken" href="/blog/index.xml" />
+		
+		<link href="/css/styles.min.css" rel="stylesheet">
+
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="/css/jquery.ui.ie.min.css"/>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+			
+		<link rel="stylesheet" type="text/css" href="/css/lb14-1.0.min.css" >
+		<link rel="stylesheet" type="text/css" href="/css/print.min.css" media="print">
+
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/apple-touch-icon-60x60-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png">
+	</head>
+
+	<body>
+		<a href="#" id="gotoTop" class="btn btn-mini btn-primary visible-phone" title="Gå till sidans topp"><i class="icon-arrow-up"></i></a>
+		<a href="{PDF}" target="_blank" id="pdf" class="btn btn-small btn-primary hidden-phone" title="Visa detta kapitel som PDF"><i class="icon icon-file-alt"></i></a>
+		<a href="#" id="fullscreen" class="btn btn-small btn-primary hidden-phone" title="Visa text i fullskärm (f)"><i id="fullscreenIcon" class="icon icon-resize-full"></i></a>
+		<a href="#" id="normalscreen" class="btn btn-small btn-primary hidden-phone" title="Visa text normalt (f)"><i id="normalscreenIcon" class="icon icon-resize-small"></i></a>
+		<div class="container" id="content">
+			<div class="row">
+				<div id="sideContainer" class="span8 offset2">
+					<div id="searchContainer" class="navbar">
+						<div class="navbar-inner">
+							<a class="brand" href="/"><i class="icon icon-double-angle-left"></i> Tillbaka till Läkemedelsboken</a>
+						</div>
+					</div>
+				</div>
+				<div id="mainContainer" class="span8 offset2">
+					<div id="main" class="blog">
+<%- body %> 
+					</div>
+					<hr>
+					<footer>
+						<p>&copy; Läkemedelsverket</p>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+

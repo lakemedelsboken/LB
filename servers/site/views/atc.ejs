@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ATC-rubrik</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="description" content="">
+		<meta name="author" content="">
+		
+		<link href="/css/styles.min.css" rel="stylesheet">
+
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="/css/jquery.ui.ie.min.css"/>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+			
+		<link rel="stylesheet" type="text/css" href="/css/lb14-1.0.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/print.min.css" media="print">
+
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/apple-touch-icon-60x60-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png">
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="/css/noscript.min.css" media="print">
+		</noscript>
+	</head>
+
+	<body>
+		<div class="container" id="content">
+			<div class="row">
+				<div id="sideContainer" class="span12">
+					<div id="searchContainer" class="navbar">
+						<div class="navbar-inner" style="text-align: center;">
+							<a class="brand" href="/">Läkemedelsboken</a>
+							<form id="searchForm" class="form-search" action="/search" method="get">
+								<div class="input-append">
+									<input type="text" value="" class="search-query span4" style="padding-left: 15px; padding-right: 2px;" placeholder="Sök" name="search" id="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" title="Sökruta (s)">
+									<input type="submit" class="btn btn-primary" value="Sök">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div style="clear: both;">
+				<div id="mainContainer" class="span12">
+					<div id="main">
+						<%
+
+						function getIcon (type) {
+							var icons = {
+								header: "icon-bookmark-empty",
+								infoTable: "icon-th-large",
+								facts: "icon-th-list",
+								therapyRecommendations: "icon-info-sign",
+								figure: "icon-bar-chart",
+								atc: "icon-plus-sign-alt",
+								product: "icon-info-sign"
+							}
+							if (icons[type] !== undefined) {
+								return icons[type];
+							} else {
+								return icons["header"];
+							}
+						}
+						
+						%>
+						<h2 style="text-align: center;">ATC-Rubriker</h2>
+							<%
+							for (var i = 0; i < atc.length; i++) {
+								var code = atc[i];
+								%>
+							<div class="row">
+								<div class="span6 offset3">
+									<h3><%=code.title%></h3>
+									<h5><%-code.titlePath%></h5>
+									<ul style="list-style-type: none; font-family: Helvetica; margin-left: 25px;">
+									<%
+									for (var j = 0; j < code.children.length; j++) {
+										var child = code.children[j];
+										if (child.type === "atc") {
+											%>
+											<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon <%=getIcon(child.type)%>"></i></span><a href="/atclist/<%=child.id%>"><%=child.title%></a></li>
+											<%
+										} else {
+											%>
+											<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon <%=getIcon(child.type)%>"></i></span><a href="/product/<%=child.id%>"><%=child.title%></a></li>
+											<%
+										}
+									}
+									%>
+									</ul>
+								</div>
+							</div>
+								<%
+							}
+							%>
+						</div>
+					</div>
+					<hr>
+					<footer>
+						<p>&copy; Läkemedelsverket</p>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

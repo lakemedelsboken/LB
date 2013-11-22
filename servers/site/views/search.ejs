@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sökresultat | Läkemedelsboken</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="description" content="">
+		<meta name="author" content="">
+		
+		<link href="/css/styles.min.css" rel="stylesheet">
+
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="/css/jquery.ui.ie.min.css"/>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+			
+		<link rel="stylesheet" type="text/css" href="/css/lb14-1.0.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/print.min.css" media="print">
+
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/apple-touch-icon-60x60-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png">
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="/css/noscript.min.css" media="print">
+		</noscript>
+	</head>
+
+	<body>
+		<div class="container" id="content">
+			<div class="row">
+				<div id="sideContainer" class="span12">
+					<div id="searchContainer" class="navbar">
+						<div class="navbar-inner" style="text-align: center;">
+							<a class="brand" href="/">Läkemedelsboken</a>
+							<form id="searchForm" class="form-search" action="/search" method="get">
+								<div class="input-append">
+									<input type="text" value="<%=terms%>" class="search-query span4" style="padding-left: 15px; padding-right: 2px;" placeholder="Sök" name="search" id="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" title="Sökruta (s)">
+									<input type="submit" class="btn btn-primary" value="Sök">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div style="clear: both;">
+				<div id="mainContainer" class="span12">
+					<div id="main">
+						<%
+
+						function getIcon (type) {
+							var icons = {
+								header: "icon-bookmark-empty",
+								infoTable: "icon-th-large",
+								facts: "icon-th-list",
+								therapyRecommendations: "icon-info-sign",
+								figure: "icon-bar-chart",
+								atc: "icon-plus-sign-alt",
+								product: "icon-info-sign"
+							}
+							if (icons[type] !== undefined) {
+								return icons[type];
+							} else {
+								return icons["header"];
+							}
+						}
+						
+						
+						if (err) {
+							%>
+							<h2 style="text-align: center;"><%=err%></h2>
+							<%
+						} else if (terms === "") {
+							%>
+							<h2 style="text-align: center;">Skriv in sökord ovan, klicka därefter på "Sök"</h2>
+							<%
+						} else {
+							%>
+							<h2 style="text-align: center;">Sökresultat</h2>
+							<%
+						}
+
+						if (terms === "") {
+						} else {
+						%>
+						<div class="row">
+							<div class="span4">
+								<h3>Rubriker:</h3>
+								<ul style="list-style-type: none; margin-left: 25px; font-family: 'Avenir Next', 'Helvetica Neue Ultra Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+								<%
+								
+								
+								if (results.titlesearch.length === 0) {
+									%>
+									<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon-info-sign"></i></span>Din sökning gav inga resultat</li>
+									<%
+								} else {
+									for	(var i = 0; i < results.titlesearch.length; i++) {
+										var item = results.titlesearch[i];
+										var titlePath = item.titlePath;
+										if (titlePath.indexOf(" && ") > -1) {
+											titlePath = titlePath.split(" && ");
+											titlePath.pop();
+											titlePath = titlePath.join(" &#187; ");
+										}
+
+										%>
+										<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon <%=getIcon(item.type)%>"></i></span><a href="<%=item.chapter%>#<%=item.id%>"><strong><%=item.title%></strong><br><small><%-titlePath%></small></a></li>
+										<%
+									}
+								}
+								%>
+								</ul>
+							</div>
+
+							<div class="span4">
+								<h3>Fritext:</h3>
+								<ul style="list-style-type: none; margin-left: 25px; font-family: 'Avenir Next', 'Helvetica Neue Ultra Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+								<%
+								
+								if (results.contentsearch.length === 0) {
+									%>
+									<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon-info-sign"></i></span>Din sökning gav inga resultat</li>
+									<%
+								} else {
+									for	(var i = 0; i < results.contentsearch.length; i++) {
+										var item = results.contentsearch[i];
+										var titlePath = item.titlePath;
+										if (titlePath.indexOf(" && ") > -1) {
+											titlePath = titlePath.split(" && ");
+											titlePath.pop();
+											titlePath = titlePath.join(" &#187; ");
+										}
+
+										%>
+										<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon <%=getIcon(item.type)%>"></i></span><a href="<%=item.chapter%>#<%=item.id%>"><strong><%=item.title%></strong><br><small><%-titlePath%></small></a></li>
+										<%
+									}
+								}
+								%>
+								</ul>
+							</div>
+
+							<div class="span4">
+								<h3>Läkemedel:</h3>
+								<ul style="list-style-type: none; margin-left: 25px; font-family: 'Avenir Next', 'Helvetica Neue Ultra Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+								<%
+								
+								
+								if (results.medicinesearch.length === 0) {
+									%>
+									<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon-info-sign"></i></span>Din sökning gav inga resultat</li>
+									<%
+								} else {
+									for	(var i = 0; i < results.medicinesearch.length; i++) {
+										var item = results.medicinesearch[i];
+										if (item.type === "atc") {
+											%>
+											<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon <%=getIcon(item.type)%>"></i></span><a href="/atclist/<%=item.id%>"><strong><%=item.title%></strong><br><small><%=item.titlePath%></small></a></li> 
+											<%
+										} else if (item.type === "product") {
+											//Add images
+											var images = "";
+											if (item.images !== undefined) {
+												for (var x=0; x < item.images.length; x++) {
+													images += "<img src='" + item.images[x] + "' class='img-polaroid pull-right' style='width: 30px; height: 30px; margin-right: 5px;' />";
+												}
+											}
+											var title = item.title;
+											if (title.indexOf(", ") > -1) {
+												title = title.split(", ");
+												title[0] = "<strong>" + title[0] + "</strong>";
+												if (title.length >= 3) {
+
+													title[title.length - 1] = "<em>" + title[title.length - 1] + "</em>";
+
+												}
+												if (item.parallelimport !== undefined && item.parallelimport !== "") {
+													title[title.length - 1] = title[title.length - 1] + " (Parallellimport " + item.parallelimport + ")";
+												}
+												title = title.join(" <br>");
+											}
+							
+											var href = "/product/" + item.id;
+											%>
+											<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon <%=getIcon(item.type)%>"></i></span><a href="<%-href%>" class="inlineProduct" data-product-id="<%=item.id%>"><%-images%><%-title%><br><small><%=item.titlePath%></small></a></li> 
+											<%
+										}
+									}
+								}
+								%>
+								</ul>
+							</div>
+						</div>
+						<%
+						}
+						%>
+					</div>
+					<hr>
+					<footer>
+						<p>&copy; Läkemedelsverket</p>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

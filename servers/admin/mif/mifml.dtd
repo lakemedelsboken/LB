@@ -1,0 +1,2802 @@
+<!-- 
+
+    MIFML DTD .. A Work in Progress
+    
+    Please send comments to Scott Prentice <mifml (at) leximation.com>
+
+    This MIFML DTD is intended to represent all FrameMaker MIF 7.0 statements. 
+    In order to facilitate the conversion of MIF to MIFML, the bulk of the 
+    data in a MIFML file is represented as attribute values; the MIF "String" 
+    statement is the only valid PCDATA content in a MIFML file. For a complete
+    explanation of the meaning of these elements, refer to the like-named 
+    statements in the MIF Reference.
+    
+    To my knowledge, all valid MIF statements are supported except:
+    - Macro statements (define and include)
+    
+    This DTD attempts to correctly define the valid child elements and 
+    attribute values (if the value is a boolean or a MIF keyword), based on the 
+    MIF Reference and statements found in sample MIF files. This DTD does not
+    currently attempt to enforce the number or order of child elements of a
+    given element; it is possible to create a valid MIFML file that does not
+    equate to a valid MIF file. With some effort this may be corrected in the
+    future. It is possible (and quite likely) that there are valid items not 
+    covered here. If you run into any items or constructs in a generated MIF 
+    file, please notify the author.
+    
+        Author:   Scott Prentice <mifml (at) leximation.com>
+        
+        URL:      http://www.leximation.com/tools/mifml/
+    
+        Revision history: 
+        
+          0.08 - 19 Sep 2007 - Added Element to TblTitle.
+                               Added TblF to Tbl.
+                               Added TextLine, Rectangle, and Ellipse to Frame.
+                               Added Element to FNote.
+                               Added value and type attributes to FNote (however,
+                               these attributes are not required (see note below
+                               with element definition).
+                               Added NewGerman as a valid FLanguage value.
+                               Added NewGerman as a valid PdfLanguage value.
+                               Added DPDFOpenPage, and DPDFJobOptions to Document.
+                               Added UserString to all elements that contain 
+                               multiple children.
+          
+          0.07 - 10 May 2007 - Added new flag attribute to the ImportObjectData 
+                               element.
+          0.06 - 26 Jan 2005 - Added new ColorTintPercentage element
+                               Added ColorTintPercentage element to Color
+                               Added ImportObject element to Page
+          0.05 - 29 Nov 2004 - Changed the 'Exclusions' element to 'Exclusion' 
+                               and the 'Inclusions' element to 'Inclusion'.
+                               Changed EDObject@EDFootnote to EDFootNote.
+                               Added TSXRelative element.
+                               Added DCustomElementList, DElementTags, 
+                               DUseInitStructure, DExclusions, DInclusions, 
+                               and DApplyFormatRules elements.
+                               Added '&nbsp;' entity.
+          0.04 - 23 Nov 2004 - Removed value and type attributes from XRefEnd.
+          0.03 - 25 Sep 2004 - Added 'type' attribute to facilitate conversion
+                               back to MIF.
+                               Added ContextLabel, ElementSuffix, and 
+                               FSizeChange elements.
+                               Changed typo "FPlalin" to "FPlain".
+          0.02 - 20 May 2004 - First reasonably useful version.
+          0.01 -  6 Jun 2003 - Initial attempt.
+        
+
+    The process of converting a MIF file to MIFML is fairly straight forward 
+    process. The MIF statement name becomes the element name and the value of
+    the statement becomes the value  of the 'value' attribute. Statements that
+    define a group, wrap the child elements of that group. The content of all 
+    'value' attributes is processed to convert invalid characters into the 
+    appropriate character entities ('>', '<', '&', '"'). The MIFML elements
+    that diverge from this general conversion process are: MIFFile, String,
+    ImportObjectData, and DocFileInfo. Examples of the processing of these 
+    elements are shown below.
+    
+    In order to support proper round-tripping (at least until the hex codes are
+    converted to Unicode), backslashes in content or attribute values remain
+    escaped (as they are in the MIF). 
+    
+    << As of v.0.08 of the DTD, the following statement is no longer true .. 
+       multiple spaces in the MIF remain multiple spaces in the MIFML. >>
+    Multiple spaces in String elements or in attribute values should be replaced
+    with one or more '&nbsp;' entities followed by a space. This allows for more 
+    reliable round-trip processing.
+    
+    NOTE: Currently the 'type' attribute can be any one of (str | num | enum | 
+    val) values. As time allows, I'll be changing each element so it has only
+    one valid value for its type attribute. If you'd like to assist in this 
+    endeavor, please contact me.
+    
+    
+    CAVEATS:
+    
+    1. Using a "Pretty Printer" on a MIFML file may result in some corruption 
+       of that file. Known problems are ..
+      
+       a. Embedded binary data in an ImportObject, DocFileInfo, or BookFileInfo
+          element is wrapped to fewer lines than in the original file. (Although,
+          there does not appear to be any noticable impact to the resulting 
+          Frame file.)
+          
+       b. Hmm .. the other "known" problems seem to have been solved, if you run
+          into others, please let me know.
+          
+    
+
+MIF                               MIFML
+================================  =============================================
+<MIFFile 7.00> # Generated by FrameMaker 7.1b023
+                                  - <MIFFile version="7.00" 
+                                     export-type="<export-type>" 
+                                     description="Generated by FrameMaker 7.1b023">
+<Color                            - <Color>
+ <ColorTag `Black'>               - <ColorTag value="Black" type="str"/>
+ <ColorCyan  0.000000>            - <ColorCyan value="0.000000" type="num"/>
+ <ColorAttribute ColorIsBlack>    - <ColorCyan value="ColorIsBlack" type="enum"/>
+> # end of Color                  - </Color>
+
+<String `Creating dialog box topics'>  
+                                  - <String>Creating dialog box topics</String>
+ 
+<ImportObject 
+...
+=<facetname> 
+&%<datatype>                      - <ImportObjectData facetName="<facetname>" 
+                                      dataType="<datatype>" value="
+&\xD0CF11E0...
+...                               - (direct mapping with appropriate entification)
+=EndInset                         - " type="val" flag="endinset"/>  (close attribute)
+
+<DocFileInfo                      - <DocFileInfo value="
+...                               - (direct mapping)
+> # end of DocFileInfo            - " type="val"/>  (close attribute)
+
+<TextInsetEnd >                   - <TextInsetEnd />
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<Book 7.0> # Generated by FrameMaker 7.1b023
+                                  - <MIFBook version="7.0" 
+                                     export-type="<export-type>" 
+                                     description="Generated by FrameMaker 7.1b023">
+                                    
+<BookFileInfo                     - <BookFileInfo value="
+...                               - (direct mapping)
+> # end of BookFileInfo           - " type="val"/>  (close attribute)
+
+===============================================================================
+-->
+
+<!ENTITY nbsp "&#32;">
+
+<!ELEMENT MIFFile (Units | CharUnits | Verbose | Comment | ConditionCatalog | 
+    ColorCatalog | CombinedFontCatalog | PgfCatalog | ElementDefCatalog | 
+    FmtChangeListCatalog | FontCatalog | RulingCatalog | TblCatalog | 
+    KumihanCatalog | Views | VariableFormats | MarkerTypeCatalog | 
+    XRefFormats | Document | BookComponent | InitialAutoNums | Dictionary | 
+    AFrames | Tbls | Page | TextFlow | Math | MIFEncoding
+    )*>
+<!--    
+    | BWindowRect | BNextUnique | BookSettings | 
+    PDFBookInfo | BookFileInfo | BXmlVersion | BXmlEncoding | BXmlStandAlone | BXmlStyleSheet | 
+    BViewOnly | BViewOnlyWinBorders | BViewOnlyWinMenubar | BViewOnlyPopup | BViewOnlyNoOp | 
+    BDisplayText | BookComponent | BookXRef | BookUpdateReferences | BookElements 
+    )*>
+-->
+<!ATTLIST MIFFile 
+    version CDATA #REQUIRED
+    export-type (full | partial | contentOnly) #IMPLIED
+    description CDATA #IMPLIED
+>
+
+<!ELEMENT MIFBook (Units | Verbose | Comment | BWindowRect | BNextUnique | BookSettings | 
+    PDFBookInfo | BookFileInfo | BXmlVersion | BXmlEncoding | BXmlStandAlone | BXmlStyleSheet | 
+    BViewOnly | BViewOnlyWinBorders | BViewOnlyWinMenubar | BViewOnlyPopup | BViewOnlyNoOp | 
+    BDisplayText | BookComponent | BookXRef | BookUpdateReferences | BookElements |
+    PgfCatalog | FontCatalog | ColorCatalog | ConditionCatalog | CombinedFontCatalog |
+    ElementDefCatalog | FmtChangeListCatalog | MIFEncoding)*>
+<!ATTLIST MIFBook 
+    version CDATA #REQUIRED
+    export-type (full | partial | contentOnly) #IMPLIED
+    description CDATA #IMPLIED
+>
+
+
+
+<!ELEMENT MIFEncoding EMPTY>
+<!ATTLIST MIFEncoding value CDATA #IMPLIED>
+
+<!ELEMENT Units EMPTY>
+<!ATTLIST Units value (Uin | Ucm | Umm | Upica | Upt | Udd | Ucc) "Uin" >
+<!ATTLIST Units type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT CharUnits EMPTY>
+<!ATTLIST CharUnits value (CUpt | CUQ) #IMPLIED>
+<!ATTLIST CharUnits type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT Verbose EMPTY>
+<!ATTLIST Verbose value (Yes | No) #IMPLIED>
+<!ATTLIST Verbose type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT Comment EMPTY>
+<!ATTLIST Comment value CDATA #IMPLIED>
+<!ATTLIST Comment type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT ConditionCatalog (Condition)*>
+<!ELEMENT Condition (CTag | CState | CStyle | CSeparation | CColor | UserString)*>
+<!ELEMENT CTag EMPTY>
+<!ATTLIST CTag value CDATA #IMPLIED>
+<!ATTLIST CTag type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CState EMPTY>
+<!ATTLIST CState value (CHidden | CShown) #IMPLIED>
+<!ATTLIST CState type (str | num | enum | val) #REQUIRED>
+<!-- CNumericUnderline is not listed as an attribute of CStyle in the MIF Reference .. but it was found 
+     as such in at least one MIF file, therefore it is included here. (scottp) -->
+<!ELEMENT CStyle EMPTY>
+<!ATTLIST CStyle value (CAsIs | CUnderline | CDoubleUnderline | CStrike | 
+    COverline | CChangeBar | CNumericUnderline) #IMPLIED>
+<!ATTLIST CStyle type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CSeparation EMPTY>
+<!ATTLIST CSeparation value CDATA #IMPLIED>
+<!ATTLIST CSeparation type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CColor EMPTY>
+<!ATTLIST CColor value CDATA #IMPLIED>
+<!ATTLIST CColor type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT Conditional (InCondition)*>
+<!ELEMENT InCondition EMPTY>
+<!ATTLIST InCondition value CDATA #IMPLIED>
+<!ATTLIST InCondition type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Unconditional EMPTY>
+
+<!ELEMENT PgfCatalog (Pgf)*>
+<!ELEMENT Pgf (PgfTag | PgfUseNextTag | PgfNextTag | 
+    PgfFIndent | PgfFIndentRelative | PgfFIndentOffset | PgfLIndent | PgfRIndent | 
+    PgfAlignment | PgfSpBefore | PgfSpAfter | PgfLineSpacing | PgfLeading | 
+    PgfNumTabs | TabStop | PgfFont | PgfPlacement | PgfPlacementStyle | 
+    PgfRunInDefaultPunct | PgfWithPrev | PgfWithNext | PgfBlockSize | 
+    PgfAutoNum | PgfNumFormat | PgfNumberFont | PgfNumAtEnd | 
+    PgfHyphenate | HyphenMaxLines | HyphenMinPrefix | HyphenMinSuffix | HyphenMinWord | 
+    PgfLetterSpace | PgfMinWordSpace | PgfOptWordSpace | PgfMaxWordSpace | 
+    PgfLanguage | PgfTopSeparator | PgfTopSepAtIndent | PgfTopSepOffset | 
+    PgfBotSeparator | PgfBotSepAtIndent | PgfBotSepOffset | 
+    PgfCellAlignment | PgfCellMargins | 
+    PgfCellLMarginFixed | PgfCellTMarginFixed | PgfCellRMarginFixed | PgfCellBMarginFixed | 
+    PgfLocked | PgfAcrobatLevel |
+    
+    PgfMinJRomanLetterSpace | PgfOptJRomanLetterSpace | 
+    PgfMaxJRomanLetterSpace | PgfMinJLetterSpace | PgfOptJLetterSpace | PgfMaxJLetterSpace | 
+    PgfYakumonoType | PgfPDFStructureLevel | UserString
+    )*>
+<!ELEMENT PgfTag EMPTY>
+<!ATTLIST PgfTag value CDATA #IMPLIED>
+<!ATTLIST PgfTag type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfUseNextTag EMPTY>
+<!ATTLIST PgfUseNextTag value (Yes | No) #IMPLIED>
+<!ATTLIST PgfUseNextTag type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfNextTag EMPTY>
+<!ATTLIST PgfNextTag value CDATA #IMPLIED>
+<!ATTLIST PgfNextTag type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfFIndent EMPTY>
+<!ATTLIST PgfFIndent value CDATA #IMPLIED>
+<!ATTLIST PgfFIndent type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfFIndentRelative EMPTY>
+<!ATTLIST PgfFIndentRelative value (Yes | No) #IMPLIED>
+<!ATTLIST PgfFIndentRelative type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfFIndentOffset EMPTY>
+<!ATTLIST PgfFIndentOffset value CDATA #IMPLIED>
+<!ATTLIST PgfFIndentOffset type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfLIndent EMPTY>
+<!ATTLIST PgfLIndent value CDATA #IMPLIED>
+<!ATTLIST PgfLIndent type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfRIndent EMPTY>
+<!ATTLIST PgfRIndent value CDATA #IMPLIED>
+<!ATTLIST PgfRIndent type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfAlignment EMPTY>
+<!ATTLIST PgfAlignment value (LeftRight | Left | Center | Right) #IMPLIED>
+<!ATTLIST PgfAlignment type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfSpBefore EMPTY>
+<!ATTLIST PgfSpBefore value CDATA #IMPLIED>
+<!ATTLIST PgfSpBefore type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfSpAfter EMPTY>
+<!ATTLIST PgfSpAfter value CDATA #IMPLIED>
+<!ATTLIST PgfSpAfter type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfLineSpacing EMPTY>
+<!ATTLIST PgfLineSpacing value (Fixed | Proportional)     #IMPLIED>
+<!ATTLIST PgfLineSpacing type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfLeading EMPTY>
+<!ATTLIST PgfLeading value CDATA #IMPLIED>
+<!ATTLIST PgfLeading type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfNumTabs EMPTY>
+<!ATTLIST PgfNumTabs value CDATA #IMPLIED>
+<!ATTLIST PgfNumTabs type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TabStop (TSX | TSXRelative | TSType | TSLeaderStr | TSDecimalChar | UserString)*>
+<!ELEMENT TSX EMPTY>
+<!ATTLIST TSX value CDATA #IMPLIED>
+<!ATTLIST TSX type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TSXRelative EMPTY>
+<!ATTLIST TSXRelative value CDATA #IMPLIED>
+<!ATTLIST TSXRelative type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TSType EMPTY>
+<!ATTLIST TSType value (Left | Center | Right | Decimal) #IMPLIED>
+<!ATTLIST TSType type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TSLeaderStr EMPTY>
+<!ATTLIST TSLeaderStr value CDATA #IMPLIED>
+<!ATTLIST TSLeaderStr type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TSDecimalChar EMPTY>
+<!ATTLIST TSDecimalChar value CDATA #IMPLIED>
+<!ATTLIST TSDecimalChar type (str | num | enum | val) #REQUIRED>
+<!-- ELEMENT PgfFont "container" -->
+<!ELEMENT PgfPlacement EMPTY>
+<!ATTLIST PgfPlacement value (Anywhere | ColumnTop | PageTop | LPageTop | RPageTop) #IMPLIED>
+<!ATTLIST PgfPlacement type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfPlacementStyle EMPTY>
+<!ATTLIST PgfPlacementStyle value (Normal | RunIn | SideheadTop | SideheadFirstBaseline | 
+    SideheadLastBaseline | Straddle | StraddleNormalOnly) #IMPLIED>
+<!ATTLIST PgfPlacementStyle type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfRunInDefaultPunct EMPTY>
+<!ATTLIST PgfRunInDefaultPunct value CDATA #IMPLIED>
+<!ATTLIST PgfRunInDefaultPunct type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfWithPrev EMPTY>
+<!ATTLIST PgfWithPrev value CDATA #IMPLIED>
+<!ATTLIST PgfWithPrev type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfWithNext EMPTY>
+<!ATTLIST PgfWithNext value CDATA #IMPLIED>
+<!ATTLIST PgfWithNext type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfBlockSize EMPTY>
+<!ATTLIST PgfBlockSize value CDATA #IMPLIED>
+<!ATTLIST PgfBlockSize type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfAutoNum EMPTY>
+<!ATTLIST PgfAutoNum value (Yes | No) #IMPLIED>
+<!ATTLIST PgfAutoNum type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfNumFormat EMPTY>
+<!ATTLIST PgfNumFormat value CDATA #IMPLIED>
+<!ATTLIST PgfNumFormat type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfNumberFont EMPTY>
+<!ATTLIST PgfNumberFont value CDATA #IMPLIED>
+<!ATTLIST PgfNumberFont type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfNumAtEnd EMPTY>
+<!ATTLIST PgfNumAtEnd value (Yes | No) #IMPLIED>
+<!ATTLIST PgfNumAtEnd type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfHyphenate EMPTY>
+<!ATTLIST PgfHyphenate value (Yes | No) #IMPLIED>
+<!ATTLIST PgfHyphenate type (str | num | enum | val) #REQUIRED>
+<!ELEMENT HyphenMaxLines EMPTY>
+<!ATTLIST HyphenMaxLines value CDATA #IMPLIED>
+<!ATTLIST HyphenMaxLines type (str | num | enum | val) #REQUIRED>
+<!ELEMENT HyphenMinPrefix EMPTY>
+<!ATTLIST HyphenMinPrefix value CDATA #IMPLIED>
+<!ATTLIST HyphenMinPrefix type (str | num | enum | val) #REQUIRED>
+<!ELEMENT HyphenMinSuffix EMPTY>
+<!ATTLIST HyphenMinSuffix value CDATA #IMPLIED>
+<!ATTLIST HyphenMinSuffix type (str | num | enum | val) #REQUIRED>
+<!ELEMENT HyphenMinWord EMPTY>
+<!ATTLIST HyphenMinWord value CDATA #IMPLIED>
+<!ATTLIST HyphenMinWord type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfLetterSpace EMPTY>
+<!ATTLIST PgfLetterSpace value (Yes | No) #IMPLIED>
+<!ATTLIST PgfLetterSpace type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfMinWordSpace EMPTY>
+<!ATTLIST PgfMinWordSpace value CDATA #IMPLIED>
+<!ATTLIST PgfMinWordSpace type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfOptWordSpace EMPTY>
+<!ATTLIST PgfOptWordSpace value CDATA #IMPLIED>
+<!ATTLIST PgfOptWordSpace type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfMaxWordSpace EMPTY>
+<!ATTLIST PgfMaxWordSpace value CDATA #IMPLIED>
+<!ATTLIST PgfMaxWordSpace type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfLanguage EMPTY>
+<!ATTLIST PgfLanguage value (NoLanguage | USEnglish | UKEnglish | German | SwissGerman | 
+    French | CanadianFrench | Spanish | Catalan | Italian | Portuguese | Brazilian | 
+    Danish | Dutch | Norwegian | Nynorsk | Finnish | Swedish | Japanese | 
+    TraditionalChinese | SimplifiedChinese | Korean | NewGerman) #IMPLIED>
+<!ATTLIST PgfLanguage type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfTopSeparator EMPTY>
+<!ATTLIST PgfTopSeparator value CDATA #IMPLIED>
+<!ATTLIST PgfTopSeparator type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfTopSepAtIndent EMPTY>
+<!ATTLIST PgfTopSepAtIndent value (Yes | No) #IMPLIED>
+<!ATTLIST PgfTopSepAtIndent type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfTopSepOffset EMPTY>
+<!ATTLIST PgfTopSepOffset value CDATA #IMPLIED>
+<!ATTLIST PgfTopSepOffset type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfBotSeparator EMPTY>
+<!ATTLIST PgfBotSeparator value CDATA #IMPLIED>
+<!ATTLIST PgfBotSeparator type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfBotSepAtIndent EMPTY>
+<!ATTLIST PgfBotSepAtIndent value (Yes | No) #IMPLIED>
+<!ATTLIST PgfBotSepAtIndent type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfBotSepOffset EMPTY>
+<!ATTLIST PgfBotSepOffset value CDATA #IMPLIED>
+<!ATTLIST PgfBotSepOffset type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfCellAlignment EMPTY>
+<!ATTLIST PgfCellAlignment value (Top | Middle | Bottom) #IMPLIED>
+<!ATTLIST PgfCellAlignment type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfCellMargins EMPTY>
+<!ATTLIST PgfCellMargins value CDATA #IMPLIED>
+<!ATTLIST PgfCellMargins type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfCellLMarginFixed EMPTY>
+<!ATTLIST PgfCellLMarginFixed value (Yes | No) #IMPLIED>
+<!ATTLIST PgfCellLMarginFixed type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfCellTMarginFixed EMPTY>
+<!ATTLIST PgfCellTMarginFixed value (Yes | No) #IMPLIED>
+<!ATTLIST PgfCellTMarginFixed type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfCellRMarginFixed EMPTY>
+<!ATTLIST PgfCellRMarginFixed value (Yes | No) #IMPLIED>
+<!ATTLIST PgfCellRMarginFixed type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfCellBMarginFixed EMPTY>
+<!ATTLIST PgfCellBMarginFixed value (Yes | No) #IMPLIED>
+<!ATTLIST PgfCellBMarginFixed type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfLocked EMPTY>
+<!ATTLIST PgfLocked value (Yes | No) #IMPLIED>
+<!ATTLIST PgfLocked type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfAcrobatLevel EMPTY>
+<!ATTLIST PgfAcrobatLevel value CDATA #IMPLIED>
+<!ATTLIST PgfAcrobatLevel type (str | num | enum | val) #REQUIRED>
+
+
+<!ELEMENT FontCatalog (Font)*>
+
+<!ELEMENT Font (FTag | FFamily | FAngle | FWeight | FVar | FPostScriptName | FPlatformName | 
+    FLanguage | FEncoding | FSize | FColor | FSeparation | FStretch | 
+    FUnderlining | FOverline | FStrike | FChangeBar | 
+    FPosition | FOutline | FShadow | FPairKern | FCase | FDX | FDY | FDW | FTsume | 
+    FPlain | FBold | FItalic | FLocked | FCombinedFontName | FWesternPlatformName | UserString)*>
+<!ELEMENT PgfFont (FTag | FFamily | FAngle | FWeight | FVar | FPostScriptName | FPlatformName | 
+    FLanguage | FEncoding | FSize | FColor | FSeparation | FStretch | 
+    FUnderlining | FOverline | FStrike | FChangeBar | 
+    FPosition | FOutline | FShadow | FPairKern | FCase | FDX | FDY | FDW | FTsume | 
+    FPlain | FBold | FItalic | FLocked | 
+    FWesternPostScriptName | FWesternPlatformName | FCombinedFontName | UserString)*>
+<!ELEMENT FTag EMPTY>
+<!ATTLIST FTag value CDATA #IMPLIED>
+<!ATTLIST FTag type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FFamily EMPTY>
+<!ATTLIST FFamily value CDATA #IMPLIED>
+<!ATTLIST FFamily type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FAngle EMPTY>
+<!ATTLIST FAngle value CDATA #IMPLIED>
+<!ATTLIST FAngle type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FWeight EMPTY>
+<!ATTLIST FWeight value CDATA #IMPLIED>
+<!ATTLIST FWeight type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FVar EMPTY>
+<!ATTLIST FVar value CDATA #IMPLIED>
+<!ATTLIST FVar type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FPostScriptName EMPTY>
+<!ATTLIST FPostScriptName value CDATA #IMPLIED>
+<!ATTLIST FPostScriptName type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FPlatformName EMPTY>
+<!ATTLIST FPlatformName value CDATA #IMPLIED>
+<!ATTLIST FPlatformName type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FLanguage EMPTY>
+<!ATTLIST FLanguage value (NoLanguage | USEnglish | UKEnglish | German | SwissGerman | 
+    French | CanadianFrench | Spanish | Catalan | Italian | Portuguese | Brazilian | 
+    Danish | Dutch | Norwegian | Nynorsk | Finnish | Swedish | Japanese | 
+    TraditionalChinese | SimplifiedChinese | Korean | NewGerman) #IMPLIED>
+<!ATTLIST FLanguage type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FEncoding EMPTY>
+<!ATTLIST FEncoding value (FrameRoman | JISX0208.ShiftJIS | BIG5 | GB2312-80.EUC | 
+    KSC5601-1992) #IMPLIED>
+<!ATTLIST FEncoding type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FWesternPostScriptName EMPTY>
+<!ATTLIST FWesternPostScriptName value CDATA #IMPLIED>
+<!ATTLIST FWesternPostScriptName type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FWesternPlatformName EMPTY>
+<!ATTLIST FWesternPlatformName value CDATA #IMPLIED>
+<!ATTLIST FWesternPlatformName type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FCombinedFontName EMPTY>
+<!ATTLIST FCombinedFontName value CDATA #IMPLIED>
+<!ATTLIST FCombinedFontName type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT FSize EMPTY>
+<!ATTLIST FSize value CDATA #IMPLIED>
+<!ATTLIST FSize type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FSizeChange EMPTY>
+<!ATTLIST FSizeChange value CDATA #IMPLIED>
+<!ATTLIST FSizeChange type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FColor EMPTY>
+<!ATTLIST FColor value CDATA #IMPLIED>
+<!ATTLIST FColor type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FSeparation EMPTY>
+<!ATTLIST FSeparation value CDATA #IMPLIED>
+<!ATTLIST FSeparation type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FStretch EMPTY>
+<!ATTLIST FStretch value CDATA #IMPLIED>
+<!ATTLIST FStretch type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FUnderlining EMPTY>
+<!ATTLIST FUnderlining value (FNoUnderlining | FSingle | FDouble | FNumeric) #IMPLIED>
+<!ATTLIST FUnderlining type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FOverline EMPTY>
+<!ATTLIST FOverline value (Yes | No) #IMPLIED>
+<!ATTLIST FOverline type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FStrike EMPTY>
+<!ATTLIST FStrike value (Yes | No) #IMPLIED>
+<!ATTLIST FStrike type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FChangeBar EMPTY>
+<!ATTLIST FChangeBar value (Yes | No) #IMPLIED>
+<!ATTLIST FChangeBar type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FPosition EMPTY>
+<!ATTLIST FPosition value (FNormal | FSuperscript | FSubscript) #IMPLIED>
+<!ATTLIST FPosition type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FOutline EMPTY>
+<!ATTLIST FOutline value (Yes | No) #IMPLIED>
+<!ATTLIST FOutline type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FShadow EMPTY>
+<!ATTLIST FShadow value (Yes | No) #IMPLIED>
+<!ATTLIST FShadow type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FPairKern EMPTY>
+<!ATTLIST FPairKern value (Yes | No) #IMPLIED>
+<!ATTLIST FPairKern type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FCase EMPTY>
+<!ATTLIST FCase value (FAsTyped | FSmallCaps | FLowercase | FUppercase) #IMPLIED>
+<!ATTLIST FCase type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FDX EMPTY>
+<!ATTLIST FDX value CDATA #IMPLIED>
+<!ATTLIST FDX type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FDY EMPTY>
+<!ATTLIST FDY value CDATA #IMPLIED>
+<!ATTLIST FDY type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FDW EMPTY>
+<!ATTLIST FDW value CDATA #IMPLIED>
+<!ATTLIST FDW type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FTsume EMPTY>
+<!ATTLIST FTsume value CDATA #IMPLIED>
+<!ATTLIST FTsume type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FPlain EMPTY>
+<!ATTLIST FPlain value (Yes | No) #IMPLIED>
+<!ATTLIST FPlain type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FBold EMPTY>
+<!ATTLIST FBold value (Yes | No) #IMPLIED>
+<!ATTLIST FBold type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FItalic EMPTY>
+<!ATTLIST FItalic value (Yes | No) #IMPLIED>
+<!ATTLIST FItalic type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FLocked EMPTY>
+<!ATTLIST FLocked value (Yes | No) #IMPLIED>
+<!ATTLIST FLocked type (str | num | enum | val) #REQUIRED>
+
+
+<!--     According to the MIF Reference, TblColumnBody is not a child of TblFormat .. but it 
+    shows up as such in at least one MIF file, therefore it is included here. (scottp) -->
+<!ELEMENT TblCatalog (TblFormat)*>
+<!ELEMENT TblFormat (TblTag | TblLIndent | TblRIndent | TblSpBefore | TblSpAfter | TblAlignment | 
+    TblPlacement | TblBlockSize | TblCellMargins | TblTitlePlacement | TblTitlePgf1 | TblTitleGap | 
+    TblNumByColumn | TblColumnRuling | TblXColumnNum | TblXColumnRuling | TblBodyRowRuling | 
+    TblXRowRuling | TblRulingPeriod | TblHFRowRuling | TblSeparatorRuling | TblLRuling | 
+    TblBRuling | TblRRuling | TblTRuling | TblLastBRuling | TblHFFill | TblHFColor | 
+    TblHFSeparation | TblBodyFill | TblBodyColor | TblBodySeparation | TblShadeByColumn | 
+    TblShadePeriod | TblXFill | TblXColor | TblXSeparation | TblAltShadePeriod | 
+    TblWidth | TblColumn | TblInitNumColumns | TblInitNumHRows | TblInitNumBodyRows | 
+    TblInitNumFRows | TblLocked |
+    
+    TblColumnBody | UserString
+     )*>
+<!ELEMENT TblTag EMPTY>
+<!ATTLIST TblTag value CDATA #IMPLIED>
+<!ATTLIST TblTag type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblLIndent EMPTY>
+<!ATTLIST TblLIndent value CDATA #IMPLIED>
+<!ATTLIST TblLIndent type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblRIndent EMPTY>
+<!ATTLIST TblRIndent value CDATA #IMPLIED>
+<!ATTLIST TblRIndent type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblSpBefore EMPTY>
+<!ATTLIST TblSpBefore value CDATA #IMPLIED>
+<!ATTLIST TblSpBefore type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblSpAfter EMPTY>
+<!ATTLIST TblSpAfter value CDATA #IMPLIED>
+<!ATTLIST TblSpAfter type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblAlignment EMPTY>
+<!ATTLIST TblAlignment value (Left | Center | Right | Inside | Outside) #IMPLIED>
+<!ATTLIST TblAlignment type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblPlacement EMPTY>
+<!ATTLIST TblPlacement value (Anywhere | Float | ColumnTop | PageTop | LPageTop | RPageTop) #IMPLIED>
+<!ATTLIST TblPlacement type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblBlockSize EMPTY>
+<!ATTLIST TblBlockSize value CDATA #IMPLIED>
+<!ATTLIST TblBlockSize type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblCellMargins EMPTY>
+<!ATTLIST TblCellMargins value CDATA #IMPLIED>
+<!ATTLIST TblCellMargins type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblTitlePlacement EMPTY>
+<!ATTLIST TblTitlePlacement value (InHeader | InFooter | None) #IMPLIED>
+<!ATTLIST TblTitlePlacement type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblTitlePgf1 (PgfTag | Pgf | UserString)*>
+<!ELEMENT TblTitleGap EMPTY>
+<!ATTLIST TblTitleGap value CDATA #IMPLIED>
+<!ATTLIST TblTitleGap type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblNumByColumn EMPTY>
+<!ATTLIST TblNumByColumn value (Yes | No) #IMPLIED>
+<!ATTLIST TblNumByColumn type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblColumnRuling EMPTY>
+<!ATTLIST TblColumnRuling value CDATA #IMPLIED>
+<!ATTLIST TblColumnRuling type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblXColumnNum EMPTY>
+<!ATTLIST TblXColumnNum value CDATA #IMPLIED>
+<!ATTLIST TblXColumnNum type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblXColumnRuling EMPTY>
+<!ATTLIST TblXColumnRuling value CDATA #IMPLIED>
+<!ATTLIST TblXColumnRuling type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblBodyRowRuling EMPTY>
+<!ATTLIST TblBodyRowRuling value CDATA #IMPLIED>
+<!ATTLIST TblBodyRowRuling type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblXRowRuling EMPTY>
+<!ATTLIST TblXRowRuling value CDATA #IMPLIED>
+<!ATTLIST TblXRowRuling type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblRulingPeriod EMPTY>
+<!ATTLIST TblRulingPeriod value CDATA #IMPLIED>
+<!ATTLIST TblRulingPeriod type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblHFRowRuling EMPTY>
+<!ATTLIST TblHFRowRuling value CDATA #IMPLIED>
+<!ATTLIST TblHFRowRuling type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblSeparatorRuling EMPTY>
+<!ATTLIST TblSeparatorRuling value CDATA #IMPLIED>
+<!ATTLIST TblSeparatorRuling type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblLRuling EMPTY>
+<!ATTLIST TblLRuling value CDATA #IMPLIED>
+<!ATTLIST TblLRuling type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblBRuling EMPTY>
+<!ATTLIST TblBRuling value CDATA #IMPLIED>
+<!ATTLIST TblBRuling type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblRRuling EMPTY>
+<!ATTLIST TblRRuling value CDATA #IMPLIED>
+<!ATTLIST TblRRuling type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblTRuling EMPTY>
+<!ATTLIST TblTRuling value CDATA #IMPLIED>
+<!ATTLIST TblTRuling type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblLastBRuling EMPTY>
+<!ATTLIST TblLastBRuling value (Yes | No) #IMPLIED>
+<!ATTLIST TblLastBRuling type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblHFFill EMPTY>
+<!ATTLIST TblHFFill value CDATA #IMPLIED>
+<!ATTLIST TblHFFill type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblHFColor EMPTY>
+<!ATTLIST TblHFColor value CDATA #IMPLIED>
+<!ATTLIST TblHFColor type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblHFSeparation EMPTY>
+<!ATTLIST TblHFSeparation value CDATA #IMPLIED>
+<!ATTLIST TblHFSeparation type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblBodyFill EMPTY>
+<!ATTLIST TblBodyFill value CDATA #IMPLIED>
+<!ATTLIST TblBodyFill type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblBodyColor EMPTY>
+<!ATTLIST TblBodyColor value CDATA #IMPLIED>
+<!ATTLIST TblBodyColor type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblBodySeparation EMPTY>
+<!ATTLIST TblBodySeparation value CDATA #IMPLIED>
+<!ATTLIST TblBodySeparation type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblShadeByColumn EMPTY>
+<!ATTLIST TblShadeByColumn value (Yes | No) #IMPLIED>
+<!ATTLIST TblShadeByColumn type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblShadePeriod EMPTY>
+<!ATTLIST TblShadePeriod value CDATA #IMPLIED>
+<!ATTLIST TblShadePeriod type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblXFill EMPTY>
+<!ATTLIST TblXFill value CDATA #IMPLIED>
+<!ATTLIST TblXFill type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblXColor EMPTY>
+<!ATTLIST TblXColor value CDATA #IMPLIED>
+<!ATTLIST TblXColor type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblXSeparation EMPTY>
+<!ATTLIST TblXSeparation value CDATA #IMPLIED>
+<!ATTLIST TblXSeparation type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblAltShadePeriod EMPTY>
+<!ATTLIST TblAltShadePeriod value CDATA #IMPLIED>
+<!ATTLIST TblAltShadePeriod type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblWidth EMPTY>
+<!ATTLIST TblWidth value CDATA #IMPLIED>
+<!ATTLIST TblWidth type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT TblColumn (TblColumnNum | TblColumnWidth | TblColumnWidthP | TblColumnWidthA | 
+    TblColumnH | TblColumnBody | TblColumnF | UserString)*>
+<!ELEMENT TblColumnNum EMPTY>
+<!ATTLIST TblColumnNum value CDATA #IMPLIED>
+<!ATTLIST TblColumnNum type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblColumnWidth EMPTY>
+<!ATTLIST TblColumnWidth value CDATA #IMPLIED>
+<!ATTLIST TblColumnWidth type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblColumnWidthP EMPTY>
+<!ATTLIST TblColumnWidthP value CDATA #IMPLIED>
+<!ATTLIST TblColumnWidthP type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblColumnWidthA EMPTY>
+<!ATTLIST TblColumnWidthA value CDATA #IMPLIED>
+<!ATTLIST TblColumnWidthA type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblColumnH (PgfTag | Pgf | UserString)*>
+<!ELEMENT TblColumnBody (PgfTag | Pgf)*>
+<!ELEMENT TblColumnF (PgfTag | Pgf | UserString)*>
+
+<!ELEMENT TblInitNumColumns EMPTY>
+<!ATTLIST TblInitNumColumns value CDATA #IMPLIED>
+<!ATTLIST TblInitNumColumns type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblInitNumHRows EMPTY>
+<!ATTLIST TblInitNumHRows value CDATA #IMPLIED>
+<!ATTLIST TblInitNumHRows type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblInitNumBodyRows EMPTY>
+<!ATTLIST TblInitNumBodyRows value CDATA #IMPLIED>
+<!ATTLIST TblInitNumBodyRows type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblInitNumFRows EMPTY>
+<!ATTLIST TblInitNumFRows value CDATA #IMPLIED>
+<!ATTLIST TblInitNumFRows type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TblLocked EMPTY>
+<!ATTLIST TblLocked value (Yes | No) #IMPLIED>
+<!ATTLIST TblLocked type (str | num | enum | val) #REQUIRED>
+
+
+<!ELEMENT Tbls (Tbl)*>
+<!ELEMENT Tbl (TblID | TblTag | TblFormat | TblNumColumns | TblColumnWidth | EqualizeWidths | 
+     TblTitle | Unique | TblH | TblBody | Element | TblF | UserString)*>
+<!ELEMENT TblID EMPTY>
+<!ATTLIST TblID value CDATA #IMPLIED>
+<!ATTLIST TblID type (str | num | enum | val) #REQUIRED>
+<!-- TblTag .. see above -->
+<!-- TblFormat .. see above -->
+<!ELEMENT TblNumColumns EMPTY>
+<!ATTLIST TblNumColumns value CDATA #IMPLIED>
+<!ATTLIST TblNumColumns type (str | num | enum | val) #REQUIRED>
+<!-- TblColumnWidth .. see above -->
+<!ELEMENT EqualizeWidths (TblColumnNum)*>
+<!-- TblColumnNum .. see above -->
+<!ELEMENT TblTitle (TblTitleContent | Element | UserString)*>
+<!ELEMENT TblTitleContent (Notes | Para | UserString)*>
+
+<!ELEMENT Notes (FNote)*>
+<!-- FNote can be empty, which needs the value and type attributes, 
+     or it can be a parent which will not have the attributes. 
+     So it seems. -->
+<!ELEMENT FNote (ID | Unique | Font | Para | Element | UserString)*>
+<!ATTLIST FNote value CDATA #IMPLIED>
+<!ATTLIST FNote type (str | num | enum | val) #IMPLIED>
+<!ELEMENT ID EMPTY>
+<!ATTLIST ID value CDATA #REQUIRED>
+<!ATTLIST ID type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Unique EMPTY>
+<!ATTLIST Unique value CDATA #REQUIRED>
+<!ATTLIST Unique type (str | num | enum | val) #REQUIRED>
+<!-- Font .. see above -->
+<!-- Para .. see below -->
+
+<!ELEMENT TblH (Row | Element | UserString)*>
+<!ELEMENT TblBody (Row | Element | UserString)*>
+<!ELEMENT TblF (Row | Element | UserString)*>
+
+<!ELEMENT Row (Conditional | RowWithNext | RowWithPrev | RowMinHeight | RowMaxHeight | RowHeight | 
+    RowPlacement | Cell | Element | UserString)*>
+<!-- Conditional element .. see above -->
+<!ELEMENT RowWithNext EMPTY>
+<!ATTLIST RowWithNext value (Yes | No) #IMPLIED>
+<!ATTLIST RowWithNext type (str | num | enum | val) #REQUIRED>
+<!ELEMENT RowWithPrev EMPTY>
+<!ATTLIST RowWithPrev value (Yes | No) #IMPLIED>
+<!ATTLIST RowWithPrev type (str | num | enum | val) #REQUIRED>
+<!ELEMENT RowMinHeight EMPTY>
+<!ATTLIST RowMinHeight value CDATA #IMPLIED>
+<!ATTLIST RowMinHeight type (str | num | enum | val) #REQUIRED>
+<!ELEMENT RowMaxHeight EMPTY>
+<!ATTLIST RowMaxHeight value CDATA #IMPLIED>
+<!ATTLIST RowMaxHeight type (str | num | enum | val) #REQUIRED>
+<!ELEMENT RowHeight EMPTY>
+<!ATTLIST RowHeight value CDATA #IMPLIED>
+<!ATTLIST RowHeight type (str | num | enum | val) #REQUIRED>
+<!ELEMENT RowPlacement EMPTY>
+<!ATTLIST RowPlacement value (Anywhere | ColumnTop | LPageTop | RPageTop | PageTop) #IMPLIED>
+<!ATTLIST RowPlacement type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT Cell (CellFill | CellColor | CellSeparation | CellLRuling | CellBRuling | CellRRuling | 
+    CellTRuling | CellColumns | CellRows | CellAffectsColumnWidthA | CellAngle | CellContent |
+    Element | UserString)*>
+<!ELEMENT CellFill EMPTY>
+<!ATTLIST CellFill value CDATA #IMPLIED>
+<!ATTLIST CellFill type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CellColor EMPTY>
+<!ATTLIST CellColor value CDATA #IMPLIED>
+<!ATTLIST CellColor type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CellSeparation EMPTY>
+<!ATTLIST CellSeparation value CDATA #IMPLIED>
+<!ATTLIST CellSeparation type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CellLRuling EMPTY>
+<!ATTLIST CellLRuling value CDATA #IMPLIED>
+<!ATTLIST CellLRuling type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CellBRuling EMPTY>
+<!ATTLIST CellBRuling value CDATA #IMPLIED>
+<!ATTLIST CellBRuling type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CellRRuling EMPTY>
+<!ATTLIST CellRRuling value CDATA #IMPLIED>
+<!ATTLIST CellRRuling type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CellTRuling EMPTY>
+<!ATTLIST CellTRuling value CDATA #IMPLIED>
+<!ATTLIST CellTRuling type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CellColumns EMPTY>
+<!ATTLIST CellColumns value CDATA #IMPLIED>
+<!ATTLIST CellColumns type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CellRows EMPTY>
+<!ATTLIST CellRows value CDATA #IMPLIED>
+<!ATTLIST CellRows type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CellAffectsColumnWidthA EMPTY>
+<!ATTLIST CellAffectsColumnWidthA value (Yes | No) #IMPLIED>
+<!ATTLIST CellAffectsColumnWidthA type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CellAngle EMPTY>
+<!ATTLIST CellAngle value CDATA #IMPLIED>
+<!ATTLIST CellAngle type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CellContent (Notes | Para | UserString)*>
+<!-- Notes element .. see above -->
+<!-- Para element .. see below -->
+
+
+<!ELEMENT RulingCatalog (Ruling)*>
+<!ELEMENT Ruling (RulingTag | RulingPenWidth | RulingGap | RulingColor | RulingSeparation | 
+    RulingPen | RulingLines | UserString)*>
+<!ELEMENT RulingTag EMPTY>
+<!ATTLIST RulingTag value CDATA #IMPLIED>
+<!ATTLIST RulingTag type (str | num | enum | val) #REQUIRED>
+<!ELEMENT RulingPenWidth EMPTY>
+<!ATTLIST RulingPenWidth value CDATA #IMPLIED>
+<!ATTLIST RulingPenWidth type (str | num | enum | val) #REQUIRED>
+<!ELEMENT RulingGap EMPTY>
+<!ATTLIST RulingGap value CDATA #IMPLIED>
+<!ATTLIST RulingGap type (str | num | enum | val) #REQUIRED>
+<!ELEMENT RulingColor EMPTY>
+<!ATTLIST RulingColor value CDATA #IMPLIED>
+<!ATTLIST RulingColor type (str | num | enum | val) #REQUIRED>
+<!ELEMENT RulingSeparation EMPTY>
+<!ATTLIST RulingSeparation value CDATA #IMPLIED>
+<!ATTLIST RulingSeparation type (str | num | enum | val) #REQUIRED>
+<!ELEMENT RulingPen EMPTY>
+<!ATTLIST RulingPen value CDATA #IMPLIED>
+<!ATTLIST RulingPen type (str | num | enum | val) #REQUIRED>
+<!ELEMENT RulingLines EMPTY>
+<!ATTLIST RulingLines value CDATA #IMPLIED>
+<!ATTLIST RulingLines type (str | num | enum | val) #REQUIRED>
+
+
+<!ELEMENT ColorCatalog (Color)*>
+<!ELEMENT Color (ColorTag | ColorCyan | ColorMagenta | ColorYellow | ColorBlack | 
+    ColorLibraryFamilyName | ColorLibraryInkName | ColorAttribute | ColorTint | 
+    ColorTintBaseColor | ColorTintPercentage | ColorOverprint | UserString)*>
+<!ELEMENT ColorTag EMPTY>
+<!ATTLIST ColorTag value CDATA #IMPLIED>
+<!ATTLIST ColorTag type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ColorCyan EMPTY>
+<!ATTLIST ColorCyan value CDATA #IMPLIED>
+<!ATTLIST ColorCyan type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ColorMagenta EMPTY>
+<!ATTLIST ColorMagenta value CDATA #IMPLIED>
+<!ATTLIST ColorMagenta type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ColorYellow EMPTY>
+<!ATTLIST ColorYellow value CDATA #IMPLIED>
+<!ATTLIST ColorYellow type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ColorBlack EMPTY>
+<!ATTLIST ColorBlack value CDATA #IMPLIED>
+<!ATTLIST ColorBlack type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ColorLibraryFamilyName EMPTY>
+<!ATTLIST ColorLibraryFamilyName value CDATA #IMPLIED>
+<!ATTLIST ColorLibraryFamilyName type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ColorLibraryInkName EMPTY>
+<!ATTLIST ColorLibraryInkName value CDATA #IMPLIED>
+<!ATTLIST ColorLibraryInkName type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ColorAttribute EMPTY>
+<!ATTLIST ColorAttribute value (ColorIsBlack | ColorIsWhite | ColorIsRed | ColorIsGreen | 
+    ColorIsBlue | ColorIsCyan | ColorIsMagenta | ColorIsYellow | ColorIsReserved) #IMPLIED>
+<!ATTLIST ColorAttribute type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ColorTint EMPTY>
+<!ATTLIST ColorTint value CDATA #IMPLIED>
+<!ATTLIST ColorTint type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ColorTintBaseColor EMPTY>
+<!ATTLIST ColorTintBaseColor value CDATA #IMPLIED>
+<!ATTLIST ColorTintBaseColor type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ColorTintPercentage EMPTY>
+<!ATTLIST ColorTintPercentage value CDATA #IMPLIED>
+<!ATTLIST ColorTintPercentage type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ColorOverprint EMPTY>
+<!ATTLIST ColorOverprint value CDATA #IMPLIED>
+<!ATTLIST ColorOverprint type (str | num | enum | val) #REQUIRED>
+<!-- UserString not in MIF Ref. -->
+<!ELEMENT UserString EMPTY>
+<!ATTLIST UserString value CDATA #IMPLIED>
+<!ATTLIST UserString type (str | num | enum | val) #REQUIRED>
+
+
+<!ELEMENT Views (View)*>
+<!ELEMENT View (ViewNumber | ViewCutout | ViewInvisible | UserString)*>
+<!ELEMENT ViewNumber EMPTY>
+<!ATTLIST ViewNumber value CDATA #IMPLIED>
+<!ATTLIST ViewNumber type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ViewCutout EMPTY>
+<!ATTLIST ViewCutout value CDATA #IMPLIED>
+<!ATTLIST ViewCutout type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ViewInvisible EMPTY>
+<!ATTLIST ViewInvisible value CDATA #IMPLIED>
+<!ATTLIST ViewInvisible type (str | num | enum | val) #REQUIRED>
+
+
+<!ELEMENT VariableFormats (VariableFormat)*>
+<!ELEMENT VariableFormat (VariableName | VariableDef | UserString)*>
+<!ELEMENT VariableName EMPTY>
+<!ATTLIST VariableName value CDATA #IMPLIED>
+<!ATTLIST VariableName type (str | num | enum | val) #REQUIRED>
+<!ELEMENT VariableDef EMPTY>
+<!ATTLIST VariableDef value CDATA #IMPLIED>
+<!ATTLIST VariableDef type (str | num | enum | val) #REQUIRED>
+
+
+<!ELEMENT XRefFormats (XRefFormat)*>
+<!ELEMENT XRefFormat (XRefName | XRefDef | UserString)*>
+<!ELEMENT XRefName EMPTY>
+<!ATTLIST XRefName value CDATA #IMPLIED>
+<!ATTLIST XRefName type (str | num | enum | val) #REQUIRED>
+<!ELEMENT XRefDef EMPTY>
+<!ATTLIST XRefDef value CDATA #IMPLIED>
+<!ATTLIST XRefDef type (str | num | enum | val) #REQUIRED>
+
+
+
+
+<!ELEMENT InitialAutoNums (AutoNumSeries)*>
+<!ELEMENT AutoNumSeries (FlowTag | Series | NumCounter | UserString)*>
+<!ELEMENT FlowTag EMPTY>
+<!ATTLIST FlowTag value CDATA #IMPLIED>
+<!ATTLIST FlowTag type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Series EMPTY>
+<!ATTLIST Series value CDATA #IMPLIED>
+<!ATTLIST Series type (str | num | enum | val) #REQUIRED>
+<!ELEMENT NumCounter EMPTY>
+<!ATTLIST NumCounter value CDATA #IMPLIED>
+<!ATTLIST NumCounter type (str | num | enum | val) #REQUIRED>
+
+
+<!ELEMENT Dictionary (OKWord)*>
+<!ELEMENT OKWord EMPTY>
+<!ATTLIST OKWord value CDATA #IMPLIED>
+<!ATTLIST OKWord type (str | num | enum | val) #REQUIRED>
+
+
+<!-- PageOrientation as child of Page not in MIF Ref. -->
+<!ELEMENT Page (Unique | PageType | PageNum | PageTag | PageSize | PageAngle | 
+    PageBackground | PageOrientation | TextRect | Frame | Arc | PolyLine | 
+    Rectangle | RoundRect | Ellipse | Polygon | TextLine | Math | Group |
+    ImportObject | UserString)*>
+<!-- Unique .. see above --> 
+<!ELEMENT PageType EMPTY>
+<!ATTLIST PageType value CDATA #IMPLIED>
+<!ATTLIST PageType type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PageNum EMPTY>
+<!ATTLIST PageNum value CDATA #IMPLIED>
+<!ATTLIST PageNum type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PageTag EMPTY>
+<!ATTLIST PageTag value CDATA #IMPLIED>
+<!ATTLIST PageTag type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PageSize EMPTY>
+<!ATTLIST PageSize value CDATA #IMPLIED>
+<!ATTLIST PageSize type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PageAngle EMPTY>
+<!ATTLIST PageAngle value CDATA #IMPLIED>
+<!ATTLIST PageAngle type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PageBackground EMPTY>
+<!ATTLIST PageBackground value CDATA #IMPLIED>
+<!ATTLIST PageBackground type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PageOrientation EMPTY>
+<!ATTLIST PageOrientation value CDATA #IMPLIED>
+<!ATTLIST PageOrientation type (str | num | enum | val) #REQUIRED>
+<!-- TextRect .. see elsewhere --> 
+<!-- Frame .. see elsewhere --> 
+
+
+<!-- 
+===============================================================================
+MIFML Graphic Objects
+===============================================================================
+-->
+
+<!-- Generic object statements -->
+<!-- ID .. see elsewhere -->
+<!ELEMENT GroupID EMPTY>
+<!ATTLIST GroupID value CDATA #IMPLIED>
+<!ATTLIST GroupID type (str | num | enum | val) #REQUIRED>
+<!-- Unique .. see elsewhere -->
+<!ELEMENT Pen EMPTY>
+<!ATTLIST Pen value CDATA #IMPLIED>
+<!ATTLIST Pen type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Fill EMPTY>
+<!ATTLIST Fill value CDATA #IMPLIED>
+<!ATTLIST Fill type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PenWidth EMPTY>
+<!ATTLIST PenWidth value CDATA #IMPLIED>
+<!ATTLIST PenWidth type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ObColor EMPTY>
+<!ATTLIST ObColor value CDATA #IMPLIED>
+<!ATTLIST ObColor type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ObTint EMPTY>
+<!ATTLIST ObTint value CDATA #IMPLIED>
+<!ATTLIST ObTint type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Separation EMPTY>
+<!ATTLIST Separation value CDATA #IMPLIED>
+<!ATTLIST Separation type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Overprint EMPTY>
+<!ATTLIST Overprint value (Yes | No) #IMPLIED>
+<!ATTLIST Overprint type (str | num | enum | val) #REQUIRED>
+<!ELEMENT RunaroundType EMPTY>
+<!ATTLIST RunaroundType value (Contour | Box | None) #IMPLIED>
+<!ATTLIST RunaroundType type (str | num | enum | val) #REQUIRED>
+<!ELEMENT RunaroundGap EMPTY>
+<!ATTLIST RunaroundGap value CDATA #IMPLIED>
+<!ATTLIST RunaroundGap type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Angle EMPTY>
+<!ATTLIST Angle value CDATA #IMPLIED>
+<!ATTLIST Angle type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ReRotateAngle EMPTY>
+<!ATTLIST ReRotateAngle value CDATA #IMPLIED>
+<!ATTLIST ReRotateAngle type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT DashedPattern (DashedStyle | NumSegments | DashSegment | UserString)*>
+<!ELEMENT DashedStyle EMPTY>
+<!ATTLIST DashedStyle value (Solid | Dashed) #IMPLIED>
+<!ATTLIST DashedStyle type (str | num | enum | val) #REQUIRED>
+<!ELEMENT NumSegments EMPTY>
+<!ATTLIST NumSegments value CDATA #IMPLIED>
+<!ATTLIST NumSegments type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DashSegment EMPTY>
+<!ATTLIST DashSegment value CDATA #IMPLIED>
+<!ATTLIST DashSegment type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT ObjectAttribute (Tag | Value | UserString)*>
+<!ELEMENT Tag EMPTY>
+<!ATTLIST Tag value CDATA #IMPLIED>
+<!ATTLIST Tag type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Value EMPTY>
+<!ATTLIST Value value CDATA #IMPLIED>
+<!ATTLIST Value type (str | num | enum | val) #REQUIRED>
+
+
+<!ELEMENT AFrames (Frame)*>
+<!-- Frame .. see elsewhere -->
+
+<!ENTITY % generic_objects "ID | GroupID | Unique | Pen | Fill | PenWidth | ObColor | 
+    ObTint | Separation | Overprint | RunaroundType | RunaroundGap | Angle | 
+    ReRotateAngle | DashedPattern | ObjectAttribute">
+
+<!ELEMENT Arc (%generic_objects; | HeadCap | TailCap | ArrowStyle | ArcRect | 
+    ArcTheta | ArcDTheta | UserString)*>
+<!ELEMENT HeadCap EMPTY>
+<!ATTLIST HeadCap value (ArrowHead | Butt | Round | Square) #IMPLIED>
+<!ATTLIST HeadCap type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TailCap EMPTY>
+<!ATTLIST TailCap value (ArrowHead | Butt | Round | Square) #IMPLIED>
+<!ATTLIST TailCap type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ArcRect EMPTY>
+<!ATTLIST ArcRect value CDATA #IMPLIED>
+<!ATTLIST ArcRect type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ArcTheta EMPTY>
+<!ATTLIST ArcTheta value CDATA #IMPLIED>
+<!ATTLIST ArcTheta type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ArcDTheta EMPTY>
+<!ATTLIST ArcDTheta value CDATA #IMPLIED>
+<!ATTLIST ArcDTheta type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT ArrowStyle (TipAngle | BaseAngle | Length | HeadType | ScaleHead | 
+    ScaleFactor | UserString)*>
+<!ELEMENT TipAngle EMPTY>
+<!ATTLIST TipAngle value CDATA #IMPLIED>
+<!ATTLIST TipAngle type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BaseAngle EMPTY>
+<!ATTLIST BaseAngle value CDATA #IMPLIED>
+<!ATTLIST BaseAngle type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Length EMPTY>
+<!ATTLIST Length value CDATA #IMPLIED>
+<!ATTLIST Length type (str | num | enum | val) #REQUIRED>
+<!ELEMENT HeadType EMPTY>
+<!ATTLIST HeadType value (Stick | Hollow | Filled) #IMPLIED>
+<!ATTLIST HeadType type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ScaleHead EMPTY>
+<!ATTLIST ScaleHead value (Yes | No) #IMPLIED>
+<!ATTLIST ScaleHead type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ScaleFactor EMPTY>
+<!ATTLIST ScaleFactor value CDATA #IMPLIED>
+<!ATTLIST ScaleFactor type (str | num | enum | val) #REQUIRED>
+
+<!-- BRect as child of Ellipse not in MIF Ref. -->
+<!ELEMENT Ellipse (%generic_objects; | ShapeRect | BRect | UserString)*>
+<!ELEMENT ShapeRect EMPTY>
+<!ATTLIST ShapeRect value CDATA #IMPLIED>
+<!ATTLIST ShapeRect type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BRect EMPTY>
+<!ATTLIST BRect value CDATA #IMPLIED>
+<!ATTLIST BRect type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT Frame (%generic_objects; | ShapeRect | BRect | FrameType | Tag | Float | 
+    NSOffset | BLOffset | AnchorAlign | AnchorBeside | Cropped | Element | 
+    ImportObject | PolyLine | Frame | Math | TextRect | TextLine | Rectangle | 
+    Ellipse | UserString)*>
+<!-- ShapeRect .. see above -->
+<!ELEMENT FrameType EMPTY>
+<!ATTLIST FrameType value (Below | Top | Bottom | Inline | Left | Right | Inside | 
+    Outside | Near | Far | RunIntoParagraph | NotAnchored) #IMPLIED>
+<!ATTLIST FrameType type (str | num | enum | val) #REQUIRED>
+<!-- Tag .. see above -->
+<!ELEMENT Float EMPTY>
+<!ATTLIST Float value (Yes | No) #IMPLIED>
+<!ATTLIST Float type (str | num | enum | val) #REQUIRED>
+<!ELEMENT NSOffset EMPTY>
+<!ATTLIST NSOffset value CDATA #IMPLIED>
+<!ATTLIST NSOffset type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BLOffset EMPTY>
+<!ATTLIST BLOffset value CDATA #IMPLIED>
+<!ATTLIST BLOffset type (str | num | enum | val) #REQUIRED>
+<!ELEMENT AnchorAlign EMPTY>
+<!ATTLIST AnchorAlign value (Left | Center | Right | Inside | Outside) #IMPLIED>
+<!ATTLIST AnchorAlign type (str | num | enum | val) #REQUIRED>
+<!ELEMENT AnchorBeside EMPTY>
+<!ATTLIST AnchorBeside value (Column | TextFrame) #IMPLIED>
+<!ATTLIST AnchorBeside type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Cropped EMPTY>
+<!ATTLIST Cropped value (Yes | No) #IMPLIED>
+<!ATTLIST Cropped type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT Group (ID | Unique | Angle | GroupID | UserString)*>
+<!-- ID, Unique, Angle .. see above -->
+
+<!--    ImportObjects can contain raw data in a MIF .. convert it as follows ..
+    <ImportObject 
+    ...
+    =<facetname>      - <ImportObjectData facetName="<facetname>" 
+                         dataType="<datatype>" value="
+    ... <raw data>    - (direct mapping)
+    =EndInset         - " type="val" flag="endinset"/>
+-->
+
+<!ELEMENT ImportObject (%generic_objects; | 
+    ImportObFile | ImportObFileDI | ImportHint | ShapeRect | BRect | BitMapDpi | 
+    ImportObFixedSize | FlipLR | NativeOrigin | ImportObEditor | ImportObUpdater |
+    ImportObjectData | UserString)*>
+<!ELEMENT ImportObFile EMPTY>
+<!ATTLIST ImportObFile value CDATA #IMPLIED>
+<!ATTLIST ImportObFile type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ImportObFileDI EMPTY>
+<!ATTLIST ImportObFileDI value CDATA #IMPLIED>
+<!ATTLIST ImportObFileDI type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ImportHint EMPTY>
+<!ATTLIST ImportHint value CDATA #IMPLIED>
+<!ATTLIST ImportHint type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BitMapDpi EMPTY>
+<!ATTLIST BitMapDpi value CDATA #IMPLIED>
+<!ATTLIST BitMapDpi type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ImportObFixedSize EMPTY>
+<!ATTLIST ImportObFixedSize value (Yes | No) #IMPLIED>
+<!ATTLIST ImportObFixedSize type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FlipLR EMPTY>
+<!ATTLIST FlipLR value (Yes | No) #IMPLIED>
+<!ATTLIST FlipLR type (str | num | enum | val) #REQUIRED>
+<!ELEMENT NativeOrigin EMPTY>
+<!ATTLIST NativeOrigin value CDATA #IMPLIED>
+<!ATTLIST NativeOrigin type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ImportObEditor EMPTY>
+<!ATTLIST ImportObEditor value CDATA #IMPLIED>
+<!ATTLIST ImportObEditor type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ImportObUpdater EMPTY>
+<!ATTLIST ImportObUpdater value CDATA #IMPLIED>
+<!ATTLIST ImportObUpdater type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ImportObjectData EMPTY>
+<!ATTLIST ImportObjectData 
+    facetName CDATA #REQUIRED
+    dataType (v | i | m) #REQUIRED
+    value CDATA #REQUIRED
+    flag (endinset | facet | 0) #IMPLIED
+>
+<!ATTLIST ImportObjectData type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT Polygon (%generic_objects; | Smoothed | NumPoints | Point | UserString)*>
+<!ELEMENT Smoothed EMPTY>
+<!ATTLIST Smoothed value (Yes | No) #IMPLIED>
+<!ATTLIST Smoothed type (str | num | enum | val) #REQUIRED>
+<!ELEMENT NumPoints EMPTY>
+<!ATTLIST NumPoints value CDATA #IMPLIED>
+<!ATTLIST NumPoints type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Point EMPTY>
+<!ATTLIST Point value CDATA #IMPLIED>
+<!ATTLIST Point type (str | num | enum | val) #REQUIRED>
+
+
+<!ELEMENT PolyLine (%generic_objects; | HeadCap | TailCap | ArrowStyle | 
+    Smoothed | NumPoints | Point | UserString)*>
+
+<!ELEMENT Rectangle (%generic_objects; | ShapeRect | BRect | Smoothed | UserString)*>
+
+<!ELEMENT RoundRect (%generic_objects; | ShapeRect | BRect | Radius | UserString)*>
+<!ELEMENT Radius EMPTY>
+<!ATTLIST Radius value CDATA #IMPLIED>
+<!ATTLIST Radius type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT TextLine (%generic_objects; | TLOrigin | TLAlignment | TLLanguage | 
+    Char | Font | String | UserString)*>
+<!ELEMENT TLOrigin EMPTY>
+<!ATTLIST TLOrigin value CDATA #IMPLIED>
+<!ATTLIST TLOrigin type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TLAlignment EMPTY>
+<!ATTLIST TLAlignment value (Center | Left | Right) #IMPLIED>
+<!ATTLIST TLAlignment type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TLLanguage EMPTY>
+<!ATTLIST TLLanguage value (NoLanguage | USEnglish | UKEnglish | German | SwissGerman | 
+    French | CanadianFrench | Spanish | Catalan | Italian | Portuguese | Brazilian | 
+    Danish | Dutch | Norwegian | Nynorsk | Finnish | Swedish | Japanese | 
+    TraditionalChinese | SimplifiedChinese | Korean) #IMPLIED>
+<!ATTLIST TLLanguage type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT TextRect (%generic_objects; | ShapeRect | BRect | 
+    TRNext | TRNumColumns | TRColumnGap | TRColumnBalance | TRSideheadWidth | 
+    TRSideheadGap | TRSideheadPlacement | TextFlow | UserString)*>
+<!ELEMENT TRNext EMPTY>
+<!ATTLIST TRNext value CDATA #IMPLIED>
+<!ATTLIST TRNext type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TRNumColumns EMPTY>
+<!ATTLIST TRNumColumns value CDATA #IMPLIED>
+<!ATTLIST TRNumColumns type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TRColumnGap EMPTY>
+<!ATTLIST TRColumnGap value CDATA #IMPLIED>
+<!ATTLIST TRColumnGap type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TRColumnBalance EMPTY>
+<!ATTLIST TRColumnBalance value (Yes | No) #IMPLIED>
+<!ATTLIST TRColumnBalance type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TRSideheadWidth EMPTY>
+<!ATTLIST TRSideheadWidth value CDATA #IMPLIED>
+<!ATTLIST TRSideheadWidth type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TRSideheadGap EMPTY>
+<!ATTLIST TRSideheadGap value CDATA #IMPLIED>
+<!ATTLIST TRSideheadGap type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TRSideheadPlacement EMPTY>
+<!ATTLIST TRSideheadPlacement value (Left | Right | Inside | Outside) #IMPLIED>
+<!ATTLIST TRSideheadPlacement type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT TextFlow (TFTag | TFAutoConnect | TFPostScript | TFFeather | TFSynchronized | 
+    TFLineSpacing | TFMinHangHeight | TFSideheads | TFMaxInterLine | TFMaxInterPgf | 
+    Notes | Para | UserString)*>
+<!ELEMENT TFTag EMPTY>
+<!ATTLIST TFTag value CDATA #IMPLIED>
+<!ATTLIST TFTag type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TFAutoConnect EMPTY>
+<!ATTLIST TFAutoConnect value (Yes | No) #IMPLIED>
+<!ATTLIST TFAutoConnect type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TFPostScript EMPTY>
+<!ATTLIST TFPostScript value (Yes | No) #IMPLIED>
+<!ATTLIST TFPostScript type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TFFeather EMPTY>
+<!ATTLIST TFFeather value (Yes | No) #IMPLIED>
+<!ATTLIST TFFeather type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TFSynchronized EMPTY>
+<!ATTLIST TFSynchronized value (Yes | No) #IMPLIED>
+<!ATTLIST TFSynchronized type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TFLineSpacing EMPTY>
+<!ATTLIST TFLineSpacing value CDATA #IMPLIED>
+<!ATTLIST TFLineSpacing type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TFMinHangHeight EMPTY>
+<!ATTLIST TFMinHangHeight value CDATA #IMPLIED>
+<!ATTLIST TFMinHangHeight type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TFSideheads EMPTY>
+<!ATTLIST TFSideheads value (Yes | No) #IMPLIED>
+<!ATTLIST TFSideheads type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TFMaxInterLine EMPTY>
+<!ATTLIST TFMaxInterLine value CDATA #IMPLIED>
+<!ATTLIST TFMaxInterLine type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TFMaxInterPgf EMPTY>
+<!ATTLIST TFMaxInterPgf value CDATA #IMPLIED>
+<!ATTLIST TFMaxInterPgf type (str | num | enum | val) #REQUIRED>
+
+<!-- Notes .. see above -->
+
+<!-- PgfReferenced not listed in MIF Ref. as a child of Para, but found in MIF file. -->
+<!ELEMENT Para (Unique | PgfTag | Pgf | PgfNumString | PgfEndCond | 
+    PgfCondFullPgf | ParaLine | PgfReferenced | UserString)*>
+<!-- Unique .. see above -->
+<!-- PgfTag .. see above -->
+<!-- Pgf .. see above -->
+<!ELEMENT PgfNumString EMPTY>
+<!ATTLIST PgfNumString value CDATA #IMPLIED>
+<!ATTLIST PgfNumString type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfEndCond EMPTY>
+<!ATTLIST PgfEndCond value (Yes | No) #IMPLIED>
+<!ATTLIST PgfEndCond type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfCondFullPgf EMPTY>
+<!ATTLIST PgfCondFullPgf value (Yes | No) #IMPLIED>
+<!ATTLIST PgfCondFullPgf type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfReferenced EMPTY>
+<!ATTLIST PgfReferenced value (Yes | No) #IMPLIED>
+<!ATTLIST PgfReferenced type (str | num | enum | val) #REQUIRED>
+
+<!-- PrefixEnd not listed in MIF Ref as a child of ParaLine .. but found in MIF files -->
+<!ELEMENT ParaLine (ElementBegin | TextRectID | SpclHyphenation | 
+    Font | Conditional | Unconditional | String | Char | ATbl | AFrame | 
+    FNote | Marker | Variable | XRef | XRefEnd | 
+    ElementEnd | PrefixEnd | TextInset | TextInsetEnd | 
+    RubiCompositeBegin | RubiCompositeEnd | RubiTextBegin | RubiTextEnd | UserString)*>
+<!ELEMENT TextRectID EMPTY>
+<!ATTLIST TextRectID value CDATA #IMPLIED>
+<!ATTLIST TextRectID type (str | num | enum | val) #REQUIRED>
+<!ELEMENT SpclHyphenation EMPTY>
+<!ATTLIST SpclHyphenation value (Yes | No) #IMPLIED>
+<!ATTLIST SpclHyphenation type (str | num | enum | val) #REQUIRED>
+<!ELEMENT String ( #PCDATA )>
+<!ELEMENT Variable (Unique | VariableName | VariableLocked | UserString)*>
+<!ELEMENT VariableLocked EMPTY>
+<!ATTLIST VariableLocked value (Yes | No) #IMPLIED>
+<!ATTLIST VariableLocked type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Char EMPTY>
+<!ATTLIST Char value (Tab | HardSpace | SoftHyphen | HardHyphen | DiscHyphen | 
+    NoHyphen | Cent | Pound | Yen | EnDash | EmDash | Dagger | DoubleDagger |
+    Bullet | HardReturn | NumberSpace | ThinSpace | EnSpace | EmSpace) #IMPLIED>
+<!ATTLIST Char type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ATbl EMPTY>
+<!ATTLIST ATbl value CDATA #IMPLIED>
+<!ATTLIST ATbl type (str | num | enum | val) #REQUIRED>
+<!ELEMENT AFrame EMPTY>
+<!ATTLIST AFrame value CDATA #IMPLIED>
+<!ATTLIST AFrame type (str | num | enum | val) #REQUIRED>
+<!ELEMENT XRefEnd EMPTY>
+<!-- <!ATTLIST XRefEnd value CDATA #IMPLIED> -->
+<!-- <!ATTLIST XRefEnd type (str | num | enum | val) #REQUIRED> -->
+<!ELEMENT PrefixEnd EMPTY>
+<!-- <!ATTLIST PrefixEnd value CDATA #IMPLIED> -->
+<!-- <!ATTLIST CHANGEME type (str | num | enum | val) #REQUIRED> -->
+
+
+<!ELEMENT MarkerTypeCatalog (MTypeName)*>
+<!ELEMENT MTypeName EMPTY>
+<!ATTLIST MTypeName value CDATA #IMPLIED>
+<!ATTLIST MTypeName type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT Marker (Unique | MType | MTypeName | MText | MCurrPage | Element | UserString)*>
+<!ELEMENT MType EMPTY>
+<!ATTLIST MType value CDATA #IMPLIED>
+<!ATTLIST MType type (str | num | enum | val) #REQUIRED>
+<!ELEMENT MText EMPTY>
+<!ATTLIST MText value CDATA #IMPLIED>
+<!ATTLIST MText type (str | num | enum | val) #REQUIRED>
+<!ELEMENT MCurrPage EMPTY>
+<!ATTLIST MCurrPage value CDATA #IMPLIED>
+<!ATTLIST MCurrPage type (str | num | enum | val) #REQUIRED>
+
+
+<!ELEMENT XRef (Unique | XRefName | XRefLastUpdate | XRefLocked | XRefSrcText | 
+    XRefSrcIsElem | XRefSrcFile | Element | UserString)*>
+<!ELEMENT XRefLastUpdate EMPTY>
+<!ATTLIST XRefLastUpdate value CDATA #IMPLIED>
+<!ATTLIST XRefLastUpdate type (str | num | enum | val) #REQUIRED>
+<!ELEMENT XRefLocked EMPTY>
+<!ATTLIST XRefLocked value (Yes | No) #IMPLIED>
+<!ATTLIST XRefLocked type (str | num | enum | val) #REQUIRED>
+<!ELEMENT XRefSrcText EMPTY>
+<!ATTLIST XRefSrcText value CDATA #IMPLIED>
+<!ATTLIST XRefSrcText type (str | num | enum | val) #REQUIRED>
+<!ELEMENT XRefSrcIsElem EMPTY>
+<!ATTLIST XRefSrcIsElem value (Yes | No) #IMPLIED>
+<!ATTLIST XRefSrcIsElem type (str | num | enum | val) #REQUIRED>
+<!ELEMENT XRefSrcFile EMPTY>
+<!ATTLIST XRefSrcFile value CDATA #IMPLIED>
+<!ATTLIST XRefSrcFile type (str | num | enum | val) #REQUIRED>
+
+
+<!ELEMENT TextInset (Unique | TiName | TiSrcFile | TiAutoUpdate | TiLastUpdate | 
+    TiMacEditionId | TiImportHint | TiApiClient | TiFlow | TiText | TiTextTable |
+    TextInsetLocked | UserString)*>
+<!ELEMENT TiName EMPTY>
+<!ATTLIST TiName value CDATA #IMPLIED>
+<!ATTLIST TiName type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiSrcFile EMPTY>
+<!ATTLIST TiSrcFile value CDATA #IMPLIED>
+<!ATTLIST TiSrcFile type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiAutoUpdate EMPTY>
+<!ATTLIST TiAutoUpdate value (Yes | No) #IMPLIED>
+<!ATTLIST TiAutoUpdate type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TextInsetLocked EMPTY>
+<!ATTLIST TextInsetLocked value (Yes | No) #IMPLIED>
+<!ATTLIST TextInsetLocked type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiLastUpdate EMPTY>
+<!ATTLIST TiLastUpdate value CDATA #IMPLIED>
+<!ATTLIST TiLastUpdate type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiMacEditionId EMPTY>
+<!ATTLIST TiMacEditionId value CDATA #IMPLIED>
+<!ATTLIST TiMacEditionId type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiImportHint EMPTY>
+<!ATTLIST TiImportHint value CDATA #IMPLIED>
+<!ATTLIST TiImportHint type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiApiClient (TiClientName | TiClientSource | TiClientType | TiClientData |
+    UserString)*>
+<!ELEMENT TiClientName EMPTY>
+<!ATTLIST TiClientName value CDATA #IMPLIED>
+<!ATTLIST TiClientName type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiClientSource EMPTY>
+<!ATTLIST TiClientSource value CDATA #IMPLIED>
+<!ATTLIST TiClientSource type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiClientType EMPTY>
+<!ATTLIST TiClientType value CDATA #IMPLIED>
+<!ATTLIST TiClientType type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiClientData EMPTY>
+<!ATTLIST TiClientData value CDATA #IMPLIED>
+<!ATTLIST TiClientData type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT TiFlow (TiFormatting | TiMainFlow | TiPageSpace | TiFlowName | 
+    TiFormatRemoveOverrides | TiFormatRemovePageBreaks | UserString)*>
+<!ELEMENT TiFormatting EMPTY>
+<!ATTLIST TiFormatting value (TiSource | TiEnclosing | TiPlainText) #IMPLIED>
+<!ATTLIST TiFormatting type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiMainFlow EMPTY>
+<!ATTLIST TiMainFlow value (Yes | No) #IMPLIED>
+<!ATTLIST TiMainFlow type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiPageSpace EMPTY>
+<!ATTLIST TiPageSpace value (BodyPage | ReferencePage) #IMPLIED>
+<!ATTLIST TiPageSpace type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiFlowName EMPTY>
+<!ATTLIST TiFlowName value CDATA #IMPLIED>
+<!ATTLIST TiFlowName type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiFormatRemoveOverrides EMPTY>
+<!ATTLIST TiFormatRemoveOverrides value (Yes | No) #IMPLIED>
+<!ATTLIST TiFormatRemoveOverrides type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiFormatRemovePageBreaks EMPTY>
+<!ATTLIST TiFormatRemovePageBreaks value (Yes | No) #IMPLIED>
+<!ATTLIST TiFormatRemovePageBreaks type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT TiText (TiEOLisEOP | TiTxtEncoding | UserString)*>
+<!ELEMENT TiEOLisEOP EMPTY>
+<!ATTLIST TiEOLisEOP value (Yes | No) #IMPLIED>
+<!ATTLIST TiEOLisEOP type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiTxtEncoding EMPTY>
+<!ATTLIST TiTxtEncoding value (TiIsoLatin | TiASCII | TiANSI | TiMacASCII | TiJIS | 
+    TiShiftJIS | TiEUC | TiBig5 | TIEUCCNS | TiGB | TiHZ | TiKorean) #IMPLIED>
+<!ATTLIST TiTxtEncoding type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT TiTextTable (TiTblTag | TiTblIsByRow | TiTblNumCols | TiTblSep | 
+    TiTblNumSep | TiTblNumHdrRows | TiTblHeadersEmpty | TiTblTxtEncoding | UserString)*>
+<!ELEMENT TiTblTag EMPTY>
+<!ATTLIST TiTblTag value CDATA #IMPLIED>
+<!ATTLIST TiTblTag type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiTblIsByRow EMPTY>
+<!ATTLIST TiTblIsByRow value (Yes | No) #IMPLIED>
+<!ATTLIST TiTblIsByRow type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiTblNumCols EMPTY>
+<!ATTLIST TiTblNumCols value CDATA #IMPLIED>
+<!ATTLIST TiTblNumCols type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiTblSep EMPTY>
+<!ATTLIST TiTblSep value CDATA #IMPLIED>
+<!ATTLIST TiTblSep type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiTblNumSep EMPTY>
+<!ATTLIST TiTblNumSep value CDATA #IMPLIED>
+<!ATTLIST TiTblNumSep type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiTblNumHdrRows EMPTY>
+<!ATTLIST TiTblNumHdrRows value CDATA #IMPLIED>
+<!ATTLIST TiTblNumHdrRows type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiTblHeadersEmpty EMPTY>
+<!ATTLIST TiTblHeadersEmpty value (Yes | No) #IMPLIED>
+<!ATTLIST TiTblHeadersEmpty type (str | num | enum | val) #REQUIRED>
+<!ELEMENT TiTblTxtEncoding EMPTY>
+<!ATTLIST TiTblTxtEncoding value (TiIsoLatin | TiASCII | TiANSI | TiMacASCII | TiJIS | 
+    TiShiftJIS | TiEUC | TiBig5 | TIEUCCNS | TiGB | TiHZ | TiKorean) #IMPLIED>
+<!ATTLIST TiTblTxtEncoding type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT TextInsetEnd EMPTY>
+<!-- <!ATTLIST TextInsetEnd value CDATA #IMPLIED> -->
+
+<!-- DataLink statement is Mac-only -->
+<!ELEMENT DataLink (DLSource | DLOut | OneLinePerRec | MacEdition | UserString)*>
+<!ELEMENT DLSource EMPTY>
+<!ATTLIST DLSource value CDATA #IMPLIED>
+<!ATTLIST DLSource type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DLOut EMPTY>
+<!ATTLIST DLOut value (Yes | No) #IMPLIED>
+<!ATTLIST DLOut type (str | num | enum | val) #REQUIRED>
+<!ELEMENT OneLinePerRec EMPTY>
+<!ATTLIST OneLinePerRec value (Yes | No) #IMPLIED>
+<!ATTLIST OneLinePerRec type (str | num | enum | val) #REQUIRED>
+<!ELEMENT MacEdition EMPTY>
+<!ATTLIST MacEdition value CDATA #IMPLIED>
+<!ATTLIST MacEdition type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT DataLinkEnd EMPTY>
+
+<!ELEMENT RubiCompositeBegin EMPTY>
+<!ATTLIST RubiCompositeBegin value CDATA #IMPLIED>
+<!ATTLIST RubiCompositeBegin type (str | num | enum | val) #REQUIRED>
+<!ELEMENT RubiCompositeEnd EMPTY>
+<!ATTLIST RubiCompositeEnd value CDATA #IMPLIED>
+<!ATTLIST RubiCompositeEnd type (str | num | enum | val) #REQUIRED>
+<!ELEMENT RubiTextBegin EMPTY>
+<!ATTLIST RubiTextBegin value CDATA #IMPLIED>
+<!ATTLIST RubiTextBegin type (str | num | enum | val) #REQUIRED>
+<!ELEMENT RubiTextEnd EMPTY>
+<!ATTLIST RubiTextEnd value CDATA #IMPLIED>
+<!ATTLIST RubiTextEnd type (str | num | enum | val) #REQUIRED>
+
+
+<!-- 
+===============================================================================
+MIFML Structured Book/Document Statements 
+===============================================================================
+-->
+<!ELEMENT ElementDefCatalog (ElementDef)*>
+<!ELEMENT ElementDef (EDTag | EDObject | EDValidHighestLevel | EDGeneralRule | 
+    EDExclusions | EDInclusions | EDAlsoInsert | EDInitialTablePattern | 
+    EDAttrDefinitions | EDPgfFormat | EDTextFormatRules | EDObjectFormatRules | 
+    EDPrefixRules | EDSuffixRules | EDStartElementRules | EDEndElementRules | 
+    EDComments | UserString)*>
+<!ELEMENT EDTag EMPTY>
+<!ATTLIST EDTag value CDATA #IMPLIED>
+<!ATTLIST EDTag type (str | num | enum | val) #REQUIRED>
+<!ELEMENT EDObject EMPTY>
+<!ATTLIST EDObject value (EDContainer | EDEquation | EDFootNote | EDGraphic | 
+    EDMarker | EDTable | EDTblTitle | EDTblHeading | EDTblBody | EDTblFooting | 
+    EDTblRow | EDTblCell | EDSystemVariable | EDXRef) #IMPLIED>
+<!-- MIF Reference shows 'EDFootNote' as 'EDFootnote' -->
+<!ATTLIST EDObject type (str | num | enum | val) #REQUIRED>
+<!ELEMENT EDValidHighestLevel EMPTY>
+<!ATTLIST EDValidHighestLevel value (Yes | No) #IMPLIED>
+<!ATTLIST EDValidHighestLevel type (str | num | enum | val) #REQUIRED>
+<!ELEMENT EDGeneralRule EMPTY>
+<!ATTLIST EDGeneralRule value CDATA #IMPLIED>
+<!ATTLIST EDGeneralRule type (str | num | enum | val) #REQUIRED>
+<!ELEMENT EDExclusions (Exclusion)*>
+<!ELEMENT Exclusion EMPTY>
+<!ATTLIST Exclusion value CDATA #IMPLIED>
+<!ATTLIST Exclusion type (str | num | enum | val) #REQUIRED>
+<!ELEMENT EDInclusions (Inclusion)*>
+<!ELEMENT Inclusion EMPTY>
+<!ATTLIST Inclusion value CDATA #IMPLIED>
+<!ATTLIST Inclusion type (str | num | enum | val) #REQUIRED>
+<!ELEMENT EDAlsoInsert (#PCDATA | AlsoInsert)*>
+<!ELEMENT AlsoInsert EMPTY>
+<!ATTLIST AlsoInsert value CDATA #IMPLIED>
+<!ATTLIST AlsoInsert type (str | num | enum | val) #REQUIRED>
+<!ELEMENT EDInitialTablePattern EMPTY>
+<!ATTLIST EDInitialTablePattern value CDATA #IMPLIED>
+<!ATTLIST EDInitialTablePattern type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT EDAttrDefinitions (EDAttrDef)*>
+<!ELEMENT EDAttrDef (EDAttrName | EDAttrType | EDAttrRequired | EDAttrReadOnly | 
+    EDAttrHidden | EDAttrChoices | EDAttrDefValues | EDAttrRange | UserString)*>
+<!ELEMENT EDAttrName EMPTY>
+<!ATTLIST EDAttrName value CDATA #IMPLIED>
+<!ATTLIST EDAttrName type (str | num | enum | val) #REQUIRED>
+<!ELEMENT EDAttrType EMPTY>
+<!ATTLIST EDAttrType value (FAttrChoice | FAttrInt | FAttrInts | FAttrReal | 
+    FAttrReals | FAttrString | FAttrStrings | FAttrUniqueId | FAttrUniqueIdRef | 
+    FAttrUniqueIdRefs) #IMPLIED>
+<!ATTLIST EDAttrType type (str | num | enum | val) #REQUIRED>
+<!ELEMENT EDAttrRequired EMPTY>
+<!ATTLIST EDAttrRequired value (Yes | No) #IMPLIED>
+<!ATTLIST EDAttrRequired type (str | num | enum | val) #REQUIRED>
+<!ELEMENT EDAttrReadOnly EMPTY>
+<!ATTLIST EDAttrReadOnly value (Yes | No) #IMPLIED>
+<!ATTLIST EDAttrReadOnly type (str | num | enum | val) #REQUIRED>
+<!ELEMENT EDAttrHidden EMPTY>
+<!ATTLIST EDAttrHidden value (Yes | No) #IMPLIED>
+<!ATTLIST EDAttrHidden type (str | num | enum | val) #REQUIRED>
+<!ELEMENT EDAttrChoices (EDAttrChoice)*>
+<!ELEMENT EDAttrChoice EMPTY>
+<!ATTLIST EDAttrChoice value CDATA #IMPLIED>
+<!ATTLIST EDAttrChoice type (str | num | enum | val) #REQUIRED>
+<!ELEMENT EDAttrDefValues (EDAttrDefValue)*>
+<!ELEMENT EDAttrDefValue EMPTY>
+<!ATTLIST EDAttrDefValue value CDATA #IMPLIED>
+<!ATTLIST EDAttrDefValue type (str | num | enum | val) #REQUIRED>
+<!ELEMENT EDAttrRange (EDAttrRangeStart | EDAttrRangeEnd | UserString)*>
+<!ELEMENT EDAttrRangeStart EMPTY>
+<!ATTLIST EDAttrRangeStart value CDATA #IMPLIED>
+<!ATTLIST EDAttrRangeStart type (str | num | enum | val) #REQUIRED>
+<!ELEMENT EDAttrRangeEnd EMPTY>
+<!ATTLIST EDAttrRangeEnd value CDATA #IMPLIED>
+<!ATTLIST EDAttrRangeEnd type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT EDPgfFormat EMPTY>
+<!ATTLIST EDPgfFormat value CDATA #IMPLIED>
+<!ATTLIST EDPgfFormat type (str | num | enum | val) #REQUIRED>
+<!ELEMENT EDTextFormatRules (ContextFormatRule | LevelFormatRule | UserString)*>
+<!ELEMENT ContextFormatRule (If | ElseIf | Else | UserString)*>
+<!ELEMENT LevelFormatRule (CountElements | StopCountingAt | If | ElseIf | Else | UserString)*>
+
+<!ENTITY % formatting_statements "IsTextRange | FormatTag | FmtChangeListTag | FmtChangeList | 
+    ContextFormatRule | LevelFormatRule | ContextLabel | ElementPrefix | ElementSuffix">
+
+<!ELEMENT If (Context | Level | %formatting_statements; | UserString)*>
+<!ELEMENT ElseIf (Context | Level | %formatting_statements; | UserString)*>
+<!ELEMENT Else (Context | Level | %formatting_statements; | UserString)*>
+<!ELEMENT Level EMPTY>
+<!ATTLIST Level value CDATA #IMPLIED>
+<!ATTLIST Level type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT EDObjectFormatRules (ContextFormatRule | LevelFormatRule | UserString)*>
+<!ELEMENT EDPrefixRules (ContextFormatRule | LevelFormatRule | UserString)*>
+<!ELEMENT EDSuffixRules (ContextFormatRule | LevelFormatRule | UserString)*>
+<!ELEMENT EDStartElementRules (ContextFormatRule | LevelFormatRule | UserString)*>
+<!ELEMENT EDEndElementRules (ContextFormatRule | LevelFormatRule | UserString)*>
+<!ELEMENT CountElements (#PCDATA | CountElement)*>
+<!ELEMENT CountElement EMPTY>
+<!ATTLIST CountElement value CDATA #IMPLIED>
+<!ATTLIST CountElement type (str | num | enum | val) #REQUIRED>
+<!ELEMENT StopCountingAt EMPTY>
+<!ATTLIST StopCountingAt value CDATA #IMPLIED>
+<!ATTLIST StopCountingAt type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT Context EMPTY>
+<!ATTLIST Context value CDATA #IMPLIED>
+<!ATTLIST Context type (str | num | enum | val) #REQUIRED>
+
+
+<!ELEMENT EDComments EMPTY>
+<!ATTLIST EDComments value CDATA #IMPLIED>
+<!ATTLIST EDComments type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT IsTextRange EMPTY>
+<!ATTLIST IsTextRange value CDATA #IMPLIED>
+<!ATTLIST IsTextRange type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FormatTag EMPTY>
+<!ATTLIST FormatTag value CDATA #IMPLIED>
+<!ATTLIST FormatTag type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FmtChangeListTag EMPTY>
+<!ATTLIST FmtChangeListTag value CDATA #IMPLIED>
+<!ATTLIST FmtChangeListTag type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT FmtChangeListCatalog (FmtChangeList)*>
+
+<!ELEMENT FmtChangeList (FclTag | FclPgfCatalogRef | PgfFIndent | PgfFIndentChange | 
+    PgfFIndentRelative | PgfLIndent | PgfLIndentChange | PgfRIndent | PgfRIndentChange | 
+    PgfAlignment | PgfSpBefore | PgfSpBeforeChange | PgfSpAfter | PgfSpAfterChange | 
+    PgfLineSpacingFixed | PgfLeading | PgfLeadingChange | PgfNumTabs | TabStop |
+    MoveTabs | FFamily | FAngle | FWeight | FVar | FPostScriptName | FPlatformName | 
+    FSize | FSizeChange | FColor | FSeparation | FStretch | FStretchChange | FUnderlining | 
+    FOverline | FStrike | FChangeBar | FPosition | FOutline | FShadow | FPairKern | 
+    FCase | FDX | FDY | FDW | FDWChange | FLocked | PgfPlacement | PgfPlacementStyle | 
+    PgfRunInDefaultPunct | PgfWithPrev | PgfWithNext | PgfBlockSize | PgfAutoNum | 
+    PgfNumFormat | PgfNumberFont | PgfNumAtEnd | PgfHyphenate | HyphenMaxLines | 
+    HyphenMinPrefix | HyphenMinSuffix | HyphenMinWord | PgfLetterSpace | 
+    PgfMinWordSpace | PgfOptWordSpace | PgfMaxWordSpace | PgfLanguage | PgfTopSeparator | 
+    PgfTopSepAtIndent | PgfTopSepOffset | PgfBotSeparator | PgfBotSepAtIndent | 
+    PgfBotSepOffset | PgfCellAlignment | PgfCellLMargin | PgfCellLMarginChange | 
+    PgfCellBMargin | PgfCellBMarginChange | PgfCellTMargin | PgfCellTMarginChange | 
+    PgfCellRMargin | PgfCellRMarginChange | PgfCellLMarginFixed | PgfCellTMarginFixed | 
+    PgfCellRMarginFixed | PgfCellBMarginFixed | UserString)*>
+<!ELEMENT FclTag EMPTY>
+<!ATTLIST FclTag value CDATA #IMPLIED>
+<!ATTLIST FclTag type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FclPgfCatalogRef EMPTY>
+<!ATTLIST FclPgfCatalogRef value CDATA #IMPLIED>
+<!ATTLIST FclPgfCatalogRef type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfFIndentChange EMPTY>
+<!ATTLIST PgfFIndentChange value CDATA #IMPLIED>
+<!ATTLIST PgfFIndentChange type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfLIndentChange EMPTY>
+<!ATTLIST PgfLIndentChange value CDATA #IMPLIED>
+<!ATTLIST PgfLIndentChange type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfRIndentChange EMPTY>
+<!ATTLIST PgfRIndentChange value CDATA #IMPLIED>
+<!ATTLIST PgfRIndentChange type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfSpBeforeChange EMPTY>
+<!ATTLIST PgfSpBeforeChange value (Yes | No) #IMPLIED>
+<!ATTLIST PgfSpBeforeChange type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfSpAfterChange EMPTY>
+<!ATTLIST PgfSpAfterChange value (Yes | No) #IMPLIED>
+<!ATTLIST PgfSpAfterChange type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfLineSpacingFixed EMPTY>
+<!ATTLIST PgfLineSpacingFixed value (Yes | No) #IMPLIED>
+<!ATTLIST PgfLineSpacingFixed type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfLeadingChange EMPTY>
+<!ATTLIST PgfLeadingChange value CDATA #IMPLIED>
+<!ATTLIST PgfLeadingChange type (str | num | enum | val) #REQUIRED>
+<!ELEMENT MoveTabs EMPTY>
+<!ATTLIST MoveTabs value CDATA #IMPLIED>
+<!ATTLIST MoveTabs type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FStretchChange EMPTY>
+<!ATTLIST FStretchChange value CDATA #IMPLIED>
+<!ATTLIST FStretchChange type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FDWChange EMPTY>
+<!ATTLIST FDWChange value CDATA #IMPLIED>
+<!ATTLIST FDWChange type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfCellLMargin EMPTY>
+<!ATTLIST PgfCellLMargin value CDATA #IMPLIED>
+<!ATTLIST PgfCellLMargin type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfCellLMarginChange EMPTY>
+<!ATTLIST PgfCellLMarginChange value CDATA #IMPLIED>
+<!ATTLIST PgfCellLMarginChange type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfCellBMargin EMPTY>
+<!ATTLIST PgfCellBMargin value CDATA #IMPLIED>
+<!ATTLIST PgfCellBMargin type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfCellBMarginChange EMPTY>
+<!ATTLIST PgfCellBMarginChange value CDATA #IMPLIED>
+<!ATTLIST PgfCellBMarginChange type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfCellTMargin EMPTY>
+<!ATTLIST PgfCellTMargin value CDATA #IMPLIED>
+<!ATTLIST PgfCellTMargin type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfCellTMarginChange EMPTY>
+<!ATTLIST PgfCellTMarginChange value CDATA #IMPLIED>
+<!ATTLIST PgfCellTMarginChange type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfCellRMargin EMPTY>
+<!ATTLIST PgfCellRMargin value CDATA #IMPLIED>
+<!ATTLIST PgfCellRMargin type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfCellRMarginChange EMPTY>
+<!ATTLIST PgfCellRMarginChange value CDATA #IMPLIED>
+<!ATTLIST PgfCellRMarginChange type (str | num | enum | val) #REQUIRED>
+
+
+
+
+<!ELEMENT ElementBegin (Unique | ElementReferenced | ETag | Collapsed | SpecialCase | 
+    ENamespace | AttributeDisplay | Attributes | UserString)*>
+<!ELEMENT ElementReferenced EMPTY>
+<!ATTLIST ElementReferenced value CDATA #IMPLIED>
+<!ATTLIST ElementReferenced type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ETag EMPTY>
+<!ATTLIST ETag value CDATA #IMPLIED>
+<!ATTLIST ETag type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Collapsed EMPTY>
+<!ATTLIST Collapsed value CDATA #IMPLIED>
+<!ATTLIST Collapsed type (str | num | enum | val) #REQUIRED>
+<!ELEMENT SpecialCase EMPTY>
+<!ATTLIST SpecialCase value CDATA #IMPLIED>
+<!ATTLIST SpecialCase type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ENamespace (ENamespacePrefix | ENamespacePath | UserString)*>
+<!ELEMENT ENamespacePrefix EMPTY>
+<!ATTLIST ENamespacePrefix value CDATA #IMPLIED>
+<!ATTLIST ENamespacePrefix type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ENamespacePath EMPTY>
+<!ATTLIST ENamespacePath value CDATA #IMPLIED>
+<!ATTLIST ENamespacePath type (str | num | enum | val) #REQUIRED>
+<!ELEMENT AttributeDisplay EMPTY>
+<!ATTLIST AttributeDisplay value CDATA #IMPLIED>
+<!ATTLIST AttributeDisplay type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Attributes (Attribute)*>
+<!ELEMENT Attribute (AttrName, AttrValue*)>
+<!ELEMENT AttrName EMPTY>
+<!ATTLIST AttrName value CDATA #IMPLIED>
+<!ATTLIST AttrName type (str | num | enum | val) #REQUIRED>
+<!ELEMENT AttrValue EMPTY>
+<!ATTLIST AttrValue value CDATA #IMPLIED>
+<!ATTLIST AttrValue type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT ElementEnd EMPTY>
+<!ATTLIST ElementEnd value CDATA #IMPLIED>
+<!ATTLIST ElementEnd type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT ContextLabel EMPTY>
+<!ATTLIST ContextLabel value CDATA #IMPLIED>
+<!ATTLIST ContextLabel type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ElementPrefix EMPTY>
+<!ATTLIST ElementPrefix value CDATA #IMPLIED>
+<!ATTLIST ElementPrefix type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ElementSuffix EMPTY>
+<!ATTLIST ElementSuffix value CDATA #IMPLIED>
+<!ATTLIST ElementSuffix type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT Element (Unique | ETag | Attributes | Collapsed | SpecialCase | AttributeDisplay |
+    EComponent | ETextSnippet | UserString)*>
+<!ELEMENT ElementContext (PrevElement | Element | NextElement | UserString)*>
+<!ELEMENT NextElement (ETag | Attributes | UserString)*>
+<!ELEMENT PrevElement (ETag | Attributes | UserString)*>
+<!ELEMENT EComponent EMPTY>
+<!ATTLIST EComponent value CDATA #IMPLIED>
+<!ATTLIST EComponent type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ETextSnippet EMPTY>
+<!ATTLIST ETextSnippet value CDATA #IMPLIED>
+<!ATTLIST ETextSnippet type (str | num | enum | val) #REQUIRED>
+
+
+
+
+
+<!-- 
+===============================================================================
+Asian Text Processing Statements 
+===============================================================================
+-->
+
+<!ELEMENT CombinedFontCatalog (CombinedFontDefn)*>
+<!ELEMENT CombinedFontDefn (CombinedFontName | CombinedFontBaseFamily | CombinedFontWesternFamily | 
+    CombinedFontWesternSize | CombinedFontWesternShift | CombinedFontBaseEncoding | 
+    CombinedFontAllowBaseFamilyBoldedAndObliqued | UserString)*>
+<!ELEMENT CombinedFontName EMPTY>
+<!ATTLIST CombinedFontName value CDATA #IMPLIED>
+<!ATTLIST CombinedFontName type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CombinedFontBaseFamily EMPTY>
+<!ATTLIST CombinedFontBaseFamily value CDATA #IMPLIED>
+<!ATTLIST CombinedFontBaseFamily type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CombinedFontWesternFamily EMPTY>
+<!ATTLIST CombinedFontWesternFamily value CDATA #IMPLIED>
+<!ATTLIST CombinedFontWesternFamily type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CombinedFontWesternSize EMPTY>
+<!ATTLIST CombinedFontWesternSize value CDATA #IMPLIED>
+<!ATTLIST CombinedFontWesternSize type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CombinedFontWesternShift EMPTY>
+<!ATTLIST CombinedFontWesternShift value CDATA #IMPLIED>
+<!ATTLIST CombinedFontWesternShift type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CombinedFontBaseEncoding EMPTY>
+<!ATTLIST CombinedFontBaseEncoding value (JISX0208.ShiftJIS | BIG5 | GB2312-80.EUC | 
+    KSC5601-1992) #IMPLIED>
+<!ATTLIST CombinedFontBaseEncoding type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CombinedFontAllowBaseFamilyBoldedAndObliqued EMPTY>
+<!ATTLIST CombinedFontAllowBaseFamilyBoldedAndObliqued value (Yes | No) #IMPLIED>
+<!ATTLIST CombinedFontAllowBaseFamilyBoldedAndObliqued type (str | num | enum | val) #REQUIRED>
+
+
+<!--  
+    Discrepancies ...
+    MIF Ref             MIF File
+    ==================  =====================
+    Klanguage           KLanguage
+    ParenBeginWariChu   ParenBegWariChu
+    
+-->
+<!ELEMENT KumihanCatalog (Kumihan)*>
+<!ELEMENT Kumihan (KLanguage | CharClass | SqueezeTable | SpreadTable | LineBreakTable | 
+    ExtraSpaceTable | UserString)*>
+<!ELEMENT KLanguage EMPTY>
+<!ATTLIST KLanguage value (Japanese | TraditionalChinese | SimpleChinese | Korean | 
+    UKEnglish | SimplifiedChinese) #IMPLIED>
+<!ATTLIST KLanguage type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CharClass (BegParentheses | EndParentheses | NoLineBeginChar | QuestionBang | 
+    CenteredPunct | PeriodComma | NonSeparableChar | PrecedingSymbol | SucceedingSymbol | 
+    AsianSpace | Hiragana | Others | BaseCharWithSuper | BaseCharWithRubi | Numeral |
+    UnitSymbol | RomanSpace | RomanChar | ParenBegWariChu | ParenEndWariChu | 
+    Spare1 | Spare2 | Spare3 | Spare4 | Spare5 | UserString)*>
+<!ELEMENT SqueezeTable (SqueezeHorizontal | SqueezeVertical | UserString)*>
+<!ELEMENT SqueezeHorizontal EMPTY>
+<!ATTLIST SqueezeHorizontal value CDATA #IMPLIED>
+<!ATTLIST SqueezeHorizontal type (str | num | enum | val) #REQUIRED>
+<!ELEMENT SqueezeVertical EMPTY>
+<!ATTLIST SqueezeVertical value CDATA #IMPLIED>
+<!ATTLIST SqueezeVertical type (str | num | enum | val) #REQUIRED>
+<!ELEMENT SpreadTable (BegParentheses | EndParentheses | NoLineBeginChar | QuestionBang | 
+    CenteredPunct | PeriodComma | NonSeparableChar | PrecedingSymbol | SucceedingSymbol | 
+    AsianSpace | Hiragana | Others | BaseCharWithSuper | BaseCharWithRubi | Numeral | 
+    UnitSymbol | RomanSpace | RomanChar | ParenBegWariChu | ParenEndWariChu | 
+    Spare1 | Spare2 | Spare3 | Spare4 | Spare5 | LineBeginEnd | UserString)*>
+<!ELEMENT LineBreakTable (BegParentheses | EndParentheses | NoLineBeginChar | QuestionBang | 
+    CenteredPunct | PeriodComma | NonSeparableChar | PrecedingSymbol | SucceedingSymbol | 
+    AsianSpace | Hiragana | Others | BaseCharWithSuper | BaseCharWithRubi | Numeral | 
+    UnitSymbol | RomanSpace | RomanChar | ParenBegWariChu | ParenEndWariChu | 
+    Spare1 | Spare2 | Spare3 | Spare4 | Spare5 | UserString)*>
+<!ELEMENT ExtraSpaceTable (BegParentheses | EndParentheses | NoLineBeginChar | QuestionBang | 
+    CenteredPunct | PeriodComma | NonSeparableChar | PrecedingSymbol | SucceedingSymbol | 
+    AsianSpace | Hiragana | Others | BaseCharWithSuper | BaseCharWithRubi | Numeral | 
+    UnitSymbol | RomanSpace | RomanChar | ParenBegWariChu | ParenEndWariChu | 
+    Spare1 | Spare2 | Spare3 | Spare4 | Spare5 | UserString)*>
+<!ELEMENT BegParentheses EMPTY>
+<!ATTLIST BegParentheses value CDATA #IMPLIED>
+<!ATTLIST BegParentheses type (str | num | enum | val) #REQUIRED>
+<!ELEMENT EndParentheses EMPTY>
+<!ATTLIST EndParentheses value CDATA #IMPLIED>
+<!ATTLIST EndParentheses type (str | num | enum | val) #REQUIRED>
+<!ELEMENT NoLineBeginChar EMPTY>
+<!ATTLIST NoLineBeginChar value CDATA #IMPLIED>
+<!ATTLIST NoLineBeginChar type (str | num | enum | val) #REQUIRED>
+<!ELEMENT QuestionBang EMPTY>
+<!ATTLIST QuestionBang value CDATA #IMPLIED>
+<!ATTLIST QuestionBang type (str | num | enum | val) #REQUIRED>
+<!ELEMENT CenteredPunct EMPTY>
+<!ATTLIST CenteredPunct value CDATA #IMPLIED>
+<!ATTLIST CenteredPunct type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PeriodComma EMPTY>
+<!ATTLIST PeriodComma value CDATA #IMPLIED>
+<!ATTLIST PeriodComma type (str | num | enum | val) #REQUIRED>
+<!ELEMENT NonSeparableChar EMPTY>
+<!ATTLIST NonSeparableChar value CDATA #IMPLIED>
+<!ATTLIST NonSeparableChar type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PrecedingSymbol EMPTY>
+<!ATTLIST PrecedingSymbol value CDATA #IMPLIED>
+<!ATTLIST PrecedingSymbol type (str | num | enum | val) #REQUIRED>
+<!ELEMENT SucceedingSymbol EMPTY>
+<!ATTLIST SucceedingSymbol value CDATA #IMPLIED>
+<!ATTLIST SucceedingSymbol type (str | num | enum | val) #REQUIRED>
+<!ELEMENT AsianSpace EMPTY>
+<!ATTLIST AsianSpace value CDATA #IMPLIED>
+<!ATTLIST AsianSpace type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Hiragana EMPTY>
+<!ATTLIST Hiragana value CDATA #IMPLIED>
+<!ATTLIST Hiragana type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Others EMPTY>
+<!ATTLIST Others value CDATA #IMPLIED>
+<!ATTLIST Others type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BaseCharWithSuper EMPTY>
+<!ATTLIST BaseCharWithSuper value CDATA #IMPLIED>
+<!ATTLIST BaseCharWithSuper type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BaseCharWithRubi EMPTY>
+<!ATTLIST BaseCharWithRubi value CDATA #IMPLIED>
+<!ATTLIST BaseCharWithRubi type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Numeral EMPTY>
+<!ATTLIST Numeral value CDATA #IMPLIED>
+<!ATTLIST Numeral type (str | num | enum | val) #REQUIRED>
+<!ELEMENT UnitSymbol EMPTY>
+<!ATTLIST UnitSymbol value CDATA #IMPLIED>
+<!ATTLIST UnitSymbol type (str | num | enum | val) #REQUIRED>
+<!ELEMENT RomanSpace EMPTY>
+<!ATTLIST RomanSpace value CDATA #IMPLIED>
+<!ATTLIST RomanSpace type (str | num | enum | val) #REQUIRED>
+<!ELEMENT RomanChar EMPTY>
+<!ATTLIST RomanChar value CDATA #IMPLIED>
+<!ATTLIST RomanChar type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ParenBegWariChu EMPTY>
+<!ATTLIST ParenBegWariChu value CDATA #IMPLIED>
+<!ATTLIST ParenBegWariChu type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ParenEndWariChu EMPTY>
+<!ATTLIST ParenEndWariChu value CDATA #IMPLIED>
+<!ATTLIST ParenEndWariChu type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Spare1 EMPTY>
+<!ATTLIST Spare1 value CDATA #IMPLIED>
+<!ATTLIST Spare1 type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Spare2 EMPTY>
+<!ATTLIST Spare2 value CDATA #IMPLIED>
+<!ATTLIST Spare2 type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Spare3 EMPTY>
+<!ATTLIST Spare3 value CDATA #IMPLIED>
+<!ATTLIST Spare3 type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Spare4 EMPTY>
+<!ATTLIST Spare4 value CDATA #IMPLIED>
+<!ATTLIST Spare4 type (str | num | enum | val) #REQUIRED>
+<!ELEMENT Spare5 EMPTY>
+<!ATTLIST Spare5 value CDATA #IMPLIED>
+<!ATTLIST Spare5 type (str | num | enum | val) #REQUIRED>
+<!-- LineBeginEnd not in MIF Ref -->
+<!ELEMENT LineBeginEnd EMPTY>
+<!ATTLIST LineBeginEnd value CDATA #IMPLIED>
+<!ATTLIST LineBeginEnd type (str | num | enum | val) #REQUIRED>
+
+
+
+
+<!-- The following are not in the MIF Reference, but were found in MIF files. (scottp) -->
+<!ELEMENT PgfMinJRomanLetterSpace EMPTY>
+<!ATTLIST PgfMinJRomanLetterSpace value CDATA #IMPLIED>
+<!ATTLIST PgfMinJRomanLetterSpace type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfOptJRomanLetterSpace EMPTY>
+<!ATTLIST PgfOptJRomanLetterSpace value CDATA #IMPLIED>
+<!ATTLIST PgfOptJRomanLetterSpace type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfMaxJRomanLetterSpace EMPTY>
+<!ATTLIST PgfMaxJRomanLetterSpace value CDATA #IMPLIED>
+<!ATTLIST PgfMaxJRomanLetterSpace type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfMinJLetterSpace EMPTY>
+<!ATTLIST PgfMinJLetterSpace value CDATA #IMPLIED>
+<!ATTLIST PgfMinJLetterSpace type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfOptJLetterSpace EMPTY>
+<!ATTLIST PgfOptJLetterSpace value CDATA #IMPLIED>
+<!ATTLIST PgfOptJLetterSpace type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfMaxJLetterSpace EMPTY>
+<!ATTLIST PgfMaxJLetterSpace value CDATA #IMPLIED>
+<!ATTLIST PgfMaxJLetterSpace type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfYakumonoType EMPTY>
+<!ATTLIST PgfYakumonoType value CDATA #IMPLIED>
+<!ATTLIST PgfYakumonoType type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PgfPDFStructureLevel EMPTY>
+<!ATTLIST PgfPDFStructureLevel value CDATA #IMPLIED>
+<!ATTLIST PgfPDFStructureLevel type (str | num | enum | val) #REQUIRED>
+
+
+
+
+<!-- 
+===============================================================================
+MIFML Document statements (not cleaned up yet)
+===============================================================================
+-->
+
+<!ELEMENT Document (DViewRect | DWindowRect | DViewScale | DNextUnique | DPageSize | 
+    DMenuBar | DVoMenuBar | DStartPage | DPageNumStyle | ContPageNum | PgfNumbering | 
+    VolNumComputeMethod | VolumeNumStart | VolumeNumStyle | VolumeNumText | 
+    ChapterNumComputeMethod | ChapterNumStart | ChapterNumStyle | ChapterNumText | 
+    DPagePointStyle | DTwoSides | DParity | DFrozenPages | DPageRounding | DFNoteMaxH | 
+    FNoteStartNum | DFNoteRestart | DFNoteTag | DFNoteLabels | DFNoteNumStyle | 
+    DFNoteComputeMethod | DFNoteAnchorPos | DFNoteNumberPos | DFNoteAnchorPrefix | 
+    DFNoteAnchorSuffix | DFNoteNumberPrefix | DFNoteNumberSuffix | DTblFNoteTag | 
+    DTblFNoteLabels | DTblFNoteNumStyle | DTblFNoteAnchorPos | DTblFNoteNumberPos | 
+    DTblFNoteAnchorPrefix | DTblFNoteAnchorSuffix | DTblFNoteNumberPrefix | 
+    DTblFNoteNumberSuffix | DLinebreakChars | DPunctuationChars | DChBarGap | 
+    DChBarWidth | DChBarPosition | DChBarColor | DAutoChBars | DShowAllConditions | 
+    DDisplayOverrides | DPageScrolling | DViewOnly | DViewOnlyXRef | DViewOnlySelect | 
+    DViewOnlyWinBorders | DViewOnlyWinMenubar | DViewOnlyWinPopup | DViewOnlyWinPalette | 
+    DFluid | DFluidSideheads | DGridOn | DPageGrid | DSnapGrid | DSnapRotation | 
+    DRulersOn | DFullRulers | DGraphicsOff | DCurrentView | DBordersOn | DSymbolsOn | 
+    DLinkBoundariesOn | DElementBordersOn | DElementTagsOn | DAttrEditor | 
+    DSmartQuotesOn | DSmartSpacesOn | DUpdateTextInsetsOnOpen | DUpdateXRefsOnOpen | 
+    DLanguage | DSuperscriptSize | DSubscriptSize | DSmallCapsSize | DSuperscriptShift | 
+    DSubscriptShift | DSuperscriptStretch | DSubscriptStretch | DSmallCapsStretch | 
+    DRubiSize | DRubiFixedSize | DRubiOverhang | DRubiAlignAtLineBounds | DNarrowRubiSpaceForJapanese | 
+    DWideRubiSpaceForJapanese | DNarrowRubiSpaceForOther | DWideRubiSpaceForOther | 
+    DMathAlphaCharFontFamily | DMathSmallIntegral | DMathMediumIntegral | 
+    DMathLargeIntegral | DMathSmallSigma | DMathMediumSigma | DMathLargeSigma | 
+    DMathSmallLevel1 | DMathMediumLevel1 | DMathLargeLevel1 | DMathSmallLevel2 | 
+    DMathMediumLevel2 | DMathLargeLevel2 | DMathSmallLevel3 | DMathMediumLevel3 | 
+    DMathLargeLevel3 | DMathSmallHoriz | DMathMediumHoriz | DMathLargeHoriz | 
+    DMathSmallVert | DMathMediumVert | DMathLargeVert | DMathShowCustom | 
+    DMathFunctions | DMathNumbers | DMathVariables | DMathStrings | DMathGreek | 
+    DMathCatalog | DElementCatalogScope | DSeparateInclusions | DAttributeDisplay | 
+    DUseInitialStructure | DStructAppName | DSGMLAppName | DBookElementHierarchy | 
+    DPrintSkipBlankPages | DPrintSeparations | DPrintProcessColor | DNoPrintSepColor | 
+    DGenerateAcrobatInfo | DAcrobatParagraphBookmarks | DAcrobatBookmarksIncludeTagNames | 
+    DPDFAllNamedDestinations | DPDFDestsMarked | DPDFStructure | DPDFStructureDefined | 
+    DPDFConvertCMYK | DPDFFit | DPDFZoom | DPDFSaveSeparate | DPDFRegMarks | 
+    DPDFPageSizeSet | DPDFAllPages | DPDFOpenBookmarkLevel | PDFDocInfo | DocFileInfo | 
+    DFCLMinimums | DFCLMaximums | DXmlVersion | DXmlEncoding | DXmlFileEncoding | 
+    DXmlDocType | DXmlPublicId | DXmlSystemId | DXmlStandAlone | DXmlUseBOM | 
+    DXmlWellFormed | DPDFBookmarks |
+
+    DCustomElementList | DElementTags | DUseInitStructure | DExclusions | DInclusions | 
+    DApplyFormatRules | 
+    
+    UserString | DPDFOpenPage | DPDFJobOptions
+    )*>
+
+<!ELEMENT DPDFOpenPage EMPTY>
+<!ATTLIST DPDFOpenPage value CDATA #IMPLIED>
+<!ATTLIST DPDFOpenPage type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPDFJobOptions EMPTY>
+<!ATTLIST DPDFJobOptions value CDATA #IMPLIED>
+<!ATTLIST DPDFJobOptions type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT DCustomElementList (EDTag)* >
+<!ELEMENT DExclusions (Exclusion)*>
+<!ELEMENT DInclusions (Inclusion)*>
+
+<!ELEMENT DElementTags EMPTY>
+<!ATTLIST DElementTags value CDATA #IMPLIED>
+<!ATTLIST DElementTags type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DUseInitStructure EMPTY>
+<!ATTLIST DUseInitStructure value CDATA #IMPLIED>
+<!ATTLIST DUseInitStructure type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DApplyFormatRules EMPTY>
+<!ATTLIST DApplyFormatRules value CDATA #IMPLIED>
+<!ATTLIST DApplyFormatRules type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT PgfNumbering EMPTY>
+<!ATTLIST PgfNumbering value CDATA #IMPLIED>
+<!ATTLIST PgfNumbering type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DAcrobatBookmarksIncludeTagNames EMPTY>
+<!ATTLIST DAcrobatBookmarksIncludeTagNames value CDATA #IMPLIED>
+<!ATTLIST DAcrobatBookmarksIncludeTagNames type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DAcrobatParagraphBookmarks EMPTY>
+<!ATTLIST DAcrobatParagraphBookmarks value CDATA #IMPLIED>
+<!ATTLIST DAcrobatParagraphBookmarks type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DAttrEditor EMPTY>
+<!ATTLIST DAttrEditor value CDATA #IMPLIED>
+<!ATTLIST DAttrEditor type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DAttributeDisplay EMPTY>
+<!ATTLIST DAttributeDisplay value CDATA #IMPLIED>
+<!ATTLIST DAttributeDisplay type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DAutoChBars EMPTY>
+<!ATTLIST DAutoChBars value CDATA #IMPLIED>
+<!ATTLIST DAutoChBars type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DBookElementHierarchy (#PCDATA | ElementContext)*>
+<!ELEMENT DBordersOn EMPTY>
+<!ATTLIST DBordersOn value CDATA #IMPLIED>
+<!ATTLIST DBordersOn type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DChBarColor EMPTY>
+<!ATTLIST DChBarColor value CDATA #IMPLIED>
+<!ATTLIST DChBarColor type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DChBarGap EMPTY>
+<!ATTLIST DChBarGap value CDATA #IMPLIED>
+<!ATTLIST DChBarGap type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DChBarPosition EMPTY>
+<!ATTLIST DChBarPosition value CDATA #IMPLIED>
+<!ATTLIST DChBarPosition type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DChBarWidth EMPTY>
+<!ATTLIST DChBarWidth value CDATA #IMPLIED>
+<!ATTLIST DChBarWidth type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DCurrentView EMPTY>
+<!ATTLIST DCurrentView value CDATA #IMPLIED>
+<!ATTLIST DCurrentView type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DDisplayOverrides EMPTY>
+<!ATTLIST DDisplayOverrides value CDATA #IMPLIED>
+<!ATTLIST DDisplayOverrides type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DElementBordersOn EMPTY>
+<!ATTLIST DElementBordersOn value CDATA #IMPLIED>
+<!ATTLIST DElementBordersOn type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DElementCatalogScope EMPTY>
+<!ATTLIST DElementCatalogScope value CDATA #IMPLIED>
+<!ATTLIST DElementCatalogScope type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DElementTagsOn EMPTY>
+<!ATTLIST DElementTagsOn value CDATA #IMPLIED>
+<!ATTLIST DElementTagsOn type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DFCLMaximums (#PCDATA | PgfFIndent | PgfLIndent | PgfRIndent | PgfSpBefore | PgfSpAfter | PgfLeading | FSize | FDW | FStretch | TSX | PgfCellTMargin | PgfCellRMargin | PgfCellLMargin | PgfCellBMargin | UserString)*>
+<!ELEMENT DFCLMinimums (#PCDATA | PgfFIndent | PgfLIndent | PgfRIndent | PgfSpBefore | PgfSpAfter | PgfLeading | FSize | FDW | FStretch | TSX | PgfCellTMargin | PgfCellRMargin | PgfCellLMargin | PgfCellBMargin | UserString)*>
+<!ELEMENT DFNoteAnchorPos EMPTY>
+<!ATTLIST DFNoteAnchorPos value CDATA #IMPLIED>
+<!ATTLIST DFNoteAnchorPos type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DFNoteAnchorPrefix EMPTY>
+<!ATTLIST DFNoteAnchorPrefix value CDATA #IMPLIED>
+<!ATTLIST DFNoteAnchorPrefix type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DFNoteAnchorSuffix EMPTY>
+<!ATTLIST DFNoteAnchorSuffix value CDATA #IMPLIED>
+<!ATTLIST DFNoteAnchorSuffix type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DFNoteComputeMethod EMPTY>
+<!ATTLIST DFNoteComputeMethod value CDATA #IMPLIED>
+<!ATTLIST DFNoteComputeMethod type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DFNoteLabels EMPTY>
+<!ATTLIST DFNoteLabels value CDATA #IMPLIED>
+<!ATTLIST DFNoteLabels type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DFNoteMaxH EMPTY>
+<!ATTLIST DFNoteMaxH value CDATA #IMPLIED>
+<!ATTLIST DFNoteMaxH type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DFNoteNumStyle EMPTY>
+<!ATTLIST DFNoteNumStyle value CDATA #IMPLIED>
+<!ATTLIST DFNoteNumStyle type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DFNoteNumberPos EMPTY>
+<!ATTLIST DFNoteNumberPos value CDATA #IMPLIED>
+<!ATTLIST DFNoteNumberPos type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DFNoteNumberPrefix EMPTY>
+<!ATTLIST DFNoteNumberPrefix value CDATA #IMPLIED>
+<!ATTLIST DFNoteNumberPrefix type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DFNoteNumberSuffix EMPTY>
+<!ATTLIST DFNoteNumberSuffix value CDATA #IMPLIED>
+<!ATTLIST DFNoteNumberSuffix type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DFNoteRestart EMPTY>
+<!ATTLIST DFNoteRestart value CDATA #IMPLIED>
+<!ATTLIST DFNoteRestart type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DFNoteTag EMPTY>
+<!ATTLIST DFNoteTag value CDATA #IMPLIED>
+<!ATTLIST DFNoteTag type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DFluid EMPTY>
+<!ATTLIST DFluid value CDATA #IMPLIED>
+<!ATTLIST DFluid type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DFluidSideheads EMPTY>
+<!ATTLIST DFluidSideheads value CDATA #IMPLIED>
+<!ATTLIST DFluidSideheads type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DFrozenPages EMPTY>
+<!ATTLIST DFrozenPages value CDATA #IMPLIED>
+<!ATTLIST DFrozenPages type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DFullRulers EMPTY>
+<!ATTLIST DFullRulers value CDATA #IMPLIED>
+<!ATTLIST DFullRulers type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DGenerateAcrobatInfo EMPTY>
+<!ATTLIST DGenerateAcrobatInfo value CDATA #IMPLIED>
+<!ATTLIST DGenerateAcrobatInfo type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DGraphicsOff EMPTY>
+<!ATTLIST DGraphicsOff value CDATA #IMPLIED>
+<!ATTLIST DGraphicsOff type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DGridOn EMPTY>
+<!ATTLIST DGridOn value CDATA #IMPLIED>
+<!ATTLIST DGridOn type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DLanguage EMPTY>
+<!ATTLIST DLanguage value CDATA #IMPLIED>
+<!ATTLIST DLanguage type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DLinebreakChars EMPTY>
+<!ATTLIST DLinebreakChars value CDATA #IMPLIED>
+<!ATTLIST DLinebreakChars type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DLinkBoundariesOn EMPTY>
+<!ATTLIST DLinkBoundariesOn value CDATA #IMPLIED>
+<!ATTLIST DLinkBoundariesOn type (str | num | enum | val) #REQUIRED>
+
+<!-- DMath statements have been checked -->
+<!ELEMENT DMathSmallIntegral EMPTY>
+<!ATTLIST DMathSmallIntegral value CDATA #IMPLIED>
+<!ATTLIST DMathSmallIntegral type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathMediumIntegral EMPTY>
+<!ATTLIST DMathMediumIntegral value CDATA #IMPLIED>
+<!ATTLIST DMathMediumIntegral type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathLargeIntegral EMPTY>
+<!ATTLIST DMathLargeIntegral value CDATA #IMPLIED>
+<!ATTLIST DMathLargeIntegral type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathSmallSigma EMPTY>
+<!ATTLIST DMathSmallSigma value CDATA #IMPLIED>
+<!ATTLIST DMathSmallSigma type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathMediumSigma EMPTY>
+<!ATTLIST DMathMediumSigma value CDATA #IMPLIED>
+<!ATTLIST DMathMediumSigma type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathLargeSigma EMPTY>
+<!ATTLIST DMathLargeSigma value CDATA #IMPLIED>
+<!ATTLIST DMathLargeSigma type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathSmallLevel1 EMPTY>
+<!ATTLIST DMathSmallLevel1 value CDATA #IMPLIED>
+<!ATTLIST DMathSmallLevel1 type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathMediumLevel1 EMPTY>
+<!ATTLIST DMathMediumLevel1 value CDATA #IMPLIED>
+<!ATTLIST DMathMediumLevel1 type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathLargeLevel1 EMPTY>
+<!ATTLIST DMathLargeLevel1 value CDATA #IMPLIED>
+<!ATTLIST DMathLargeLevel1 type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathSmallLevel2 EMPTY>
+<!ATTLIST DMathSmallLevel2 value CDATA #IMPLIED>
+<!ATTLIST DMathSmallLevel2 type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathMediumLevel2 EMPTY>
+<!ATTLIST DMathMediumLevel2 value CDATA #IMPLIED>
+<!ATTLIST DMathMediumLevel2 type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathLargeLevel2 EMPTY>
+<!ATTLIST DMathLargeLevel2 value CDATA #IMPLIED>
+<!ATTLIST DMathLargeLevel2 type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathSmallLevel3 EMPTY>
+<!ATTLIST DMathSmallLevel3 value CDATA #IMPLIED>
+<!ATTLIST DMathSmallLevel3 type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathMediumLevel3 EMPTY>
+<!ATTLIST DMathMediumLevel3 value CDATA #IMPLIED>
+<!ATTLIST DMathMediumLevel3 type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathLargeLevel3 EMPTY>
+<!ATTLIST DMathLargeLevel3 value CDATA #IMPLIED>
+<!ATTLIST DMathLargeLevel3 type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathSmallHoriz EMPTY>
+<!ATTLIST DMathSmallHoriz value CDATA #IMPLIED>
+<!ATTLIST DMathSmallHoriz type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathMediumHoriz EMPTY>
+<!ATTLIST DMathMediumHoriz value CDATA #IMPLIED>
+<!ATTLIST DMathMediumHoriz type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathLargeHoriz EMPTY>
+<!ATTLIST DMathLargeHoriz value CDATA #IMPLIED>
+<!ATTLIST DMathLargeHoriz type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathSmallVert EMPTY>
+<!ATTLIST DMathSmallVert value CDATA #IMPLIED>
+<!ATTLIST DMathSmallVert type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathMediumVert EMPTY>
+<!ATTLIST DMathMediumVert value CDATA #IMPLIED>
+<!ATTLIST DMathMediumVert type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathLargeVert EMPTY>
+<!ATTLIST DMathLargeVert value CDATA #IMPLIED>
+<!ATTLIST DMathLargeVert type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathShowCustom EMPTY>
+<!ATTLIST DMathShowCustom value (Yes | No) #IMPLIED>
+<!ATTLIST DMathShowCustom type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathFunctions EMPTY>
+<!ATTLIST DMathFunctions value CDATA #IMPLIED>
+<!ATTLIST DMathFunctions type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathNumbers EMPTY>
+<!ATTLIST DMathNumbers value CDATA #IMPLIED>
+<!ATTLIST DMathNumbers type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathVariables EMPTY>
+<!ATTLIST DMathVariables value CDATA #IMPLIED>
+<!ATTLIST DMathVariables type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathStrings EMPTY>
+<!ATTLIST DMathStrings value CDATA #IMPLIED>
+<!ATTLIST DMathStrings type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathGreek EMPTY>
+<!ATTLIST DMathGreek value CDATA #IMPLIED>
+<!ATTLIST DMathGreek type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathAlphaCharFontFamily EMPTY>
+<!ATTLIST DMathAlphaCharFontFamily value CDATA #IMPLIED>
+<!ATTLIST DMathAlphaCharFontFamily type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT DMathCatalog (DMathGreekOverrides | DMathOpOverrides | DMathNew | DMathOpName | 
+    DMathNewType | DMathOpTLineOverride | DMathOpPositionA | DMathOpPositionB | 
+    DMathOpPositionC | UserString)*>
+<!ELEMENT DMathOpOverrides (DMathOpName | DMathOpTLineOverride | DMathOpPositionA | 
+    DMathOpPositionB | DMathOpPositionC | UserString)*>
+<!ELEMENT DMathGreekOverrides EMPTY>
+<!ATTLIST DMathGreekOverrides value CDATA #IMPLIED>
+<!ATTLIST DMathGreekOverrides type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathNew EMPTY>
+<!ATTLIST DMathNew value CDATA #IMPLIED>
+<!ATTLIST DMathNew type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathOpName EMPTY>
+<!ATTLIST DMathOpName value CDATA #IMPLIED>
+<!ATTLIST DMathOpName type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathNewType EMPTY>
+<!ATTLIST DMathNewType value (Atom | Delimiter | Function | Infix | Large | Limit | 
+    Postfix | Prefix | VerticalList) #IMPLIED>
+<!ATTLIST DMathNewType type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathOpTLineOverride EMPTY>
+<!ATTLIST DMathOpTLineOverride value (Yes | No) #IMPLIED>
+<!ATTLIST DMathOpTLineOverride type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathOpPositionA EMPTY>
+<!ATTLIST DMathOpPositionA value CDATA #IMPLIED>
+<!ATTLIST DMathOpPositionA type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathOpPositionB EMPTY>
+<!ATTLIST DMathOpPositionB value CDATA #IMPLIED>
+<!ATTLIST DMathOpPositionB type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DMathOpPositionC EMPTY>
+<!ATTLIST DMathOpPositionC value CDATA #IMPLIED>
+<!ATTLIST DMathOpPositionC type (str | num | enum | val) #REQUIRED>
+
+
+<!ELEMENT DMenuBar EMPTY>
+<!ATTLIST DMenuBar value CDATA #IMPLIED>
+<!ATTLIST DMenuBar type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DNextUnique EMPTY>
+<!ATTLIST DNextUnique value CDATA #IMPLIED>
+<!ATTLIST DNextUnique type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DNoPrintSepColor EMPTY>
+<!ATTLIST DNoPrintSepColor value CDATA #IMPLIED>
+<!ATTLIST DNoPrintSepColor type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPDFAllNamedDestinations EMPTY>
+<!ATTLIST DPDFAllNamedDestinations value CDATA #IMPLIED>
+<!ATTLIST DPDFAllNamedDestinations type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPDFAllPages EMPTY>
+<!ATTLIST DPDFAllPages value CDATA #IMPLIED>
+<!ATTLIST DPDFAllPages type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPDFConvertCMYK EMPTY>
+<!ATTLIST DPDFConvertCMYK value CDATA #IMPLIED>
+<!ATTLIST DPDFConvertCMYK type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPDFDestsMarked EMPTY>
+<!ATTLIST DPDFDestsMarked value CDATA #IMPLIED>
+<!ATTLIST DPDFDestsMarked type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPDFFit EMPTY>
+<!ATTLIST DPDFFit value CDATA #IMPLIED>
+<!ATTLIST DPDFFit type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPDFOpenBookmarkLevel EMPTY>
+<!ATTLIST DPDFOpenBookmarkLevel value CDATA #IMPLIED>
+<!ATTLIST DPDFOpenBookmarkLevel type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPDFPageSizeSet EMPTY>
+<!ATTLIST DPDFPageSizeSet value CDATA #IMPLIED>
+<!ATTLIST DPDFPageSizeSet type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPDFRegMarks EMPTY>
+<!ATTLIST DPDFRegMarks value CDATA #IMPLIED>
+<!ATTLIST DPDFRegMarks type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPDFSaveSeparate EMPTY>
+<!ATTLIST DPDFSaveSeparate value CDATA #IMPLIED>
+<!ATTLIST DPDFSaveSeparate type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPDFStructure EMPTY>
+<!ATTLIST DPDFStructure value CDATA #IMPLIED>
+<!ATTLIST DPDFStructure type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPDFStructureDefined EMPTY>
+<!ATTLIST DPDFStructureDefined value CDATA #IMPLIED>
+<!ATTLIST DPDFStructureDefined type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPDFZoom EMPTY>
+<!ATTLIST DPDFZoom value CDATA #IMPLIED>
+<!ATTLIST DPDFZoom type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPageGrid EMPTY>
+<!ATTLIST DPageGrid value CDATA #IMPLIED>
+<!ATTLIST DPageGrid type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPageNumStyle EMPTY>
+<!ATTLIST DPageNumStyle value CDATA #IMPLIED>
+<!ATTLIST DPageNumStyle type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPagePointStyle EMPTY>
+<!ATTLIST DPagePointStyle value CDATA #IMPLIED>
+<!ATTLIST DPagePointStyle type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPageRounding EMPTY>
+<!ATTLIST DPageRounding value CDATA #IMPLIED>
+<!ATTLIST DPageRounding type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPageScrolling EMPTY>
+<!ATTLIST DPageScrolling value CDATA #IMPLIED>
+<!ATTLIST DPageScrolling type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPageSize EMPTY>
+<!ATTLIST DPageSize value CDATA #IMPLIED>
+<!ATTLIST DPageSize type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DParity EMPTY>
+<!ATTLIST DParity value CDATA #IMPLIED>
+<!ATTLIST DParity type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPrintProcessColor EMPTY>
+<!ATTLIST DPrintProcessColor value CDATA #IMPLIED>
+<!ATTLIST DPrintProcessColor type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPrintSeparations EMPTY>
+<!ATTLIST DPrintSeparations value CDATA #IMPLIED>
+<!ATTLIST DPrintSeparations type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPrintSkipBlankPages EMPTY>
+<!ATTLIST DPrintSkipBlankPages value CDATA #IMPLIED>
+<!ATTLIST DPrintSkipBlankPages type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DPunctuationChars EMPTY>
+<!ATTLIST DPunctuationChars value CDATA #IMPLIED>
+<!ATTLIST DPunctuationChars type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT DRubiSize EMPTY>
+<!ATTLIST DRubiSize value CDATA #IMPLIED>
+<!ATTLIST DRubiSize type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DRubiFixedSize EMPTY>
+<!ATTLIST DRubiFixedSize value CDATA #IMPLIED>
+<!ATTLIST DRubiFixedSize type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DRubiOverhang EMPTY>
+<!ATTLIST DRubiOverhang value (Yes | No) #IMPLIED>
+<!ATTLIST DRubiOverhang type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DRubiAlignAtLineBounds EMPTY>
+<!ATTLIST DRubiAlignAtLineBounds value (Yes | No) #IMPLIED>
+<!ATTLIST DRubiAlignAtLineBounds type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DWideRubiSpaceForJapanese EMPTY>
+<!ATTLIST DWideRubiSpaceForJapanese value (Wide | Narrow | Proportional) #IMPLIED>
+<!ATTLIST DWideRubiSpaceForJapanese type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DNarrowRubiSpaceForJapanese EMPTY>
+<!ATTLIST DNarrowRubiSpaceForJapanese value (Wide | Narrow | Proportional) #IMPLIED>
+<!ATTLIST DNarrowRubiSpaceForJapanese type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DWideRubiSpaceForOther EMPTY>
+<!ATTLIST DWideRubiSpaceForOther value (Wide | Narrow | Proportional) #IMPLIED>
+<!ATTLIST DWideRubiSpaceForOther type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DNarrowRubiSpaceForOther EMPTY>
+<!ATTLIST DNarrowRubiSpaceForOther value (Wide | Narrow | Proportional) #IMPLIED>
+<!ATTLIST DNarrowRubiSpaceForOther type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT DRulersOn EMPTY>
+<!ATTLIST DRulersOn value CDATA #IMPLIED>
+<!ATTLIST DRulersOn type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DSGMLAppName EMPTY>
+<!ATTLIST DSGMLAppName value CDATA #IMPLIED>
+<!ATTLIST DSGMLAppName type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DSeparateInclusions EMPTY>
+<!ATTLIST DSeparateInclusions value CDATA #IMPLIED>
+<!ATTLIST DSeparateInclusions type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DShowAllConditions EMPTY>
+<!ATTLIST DShowAllConditions value CDATA #IMPLIED>
+<!ATTLIST DShowAllConditions type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DSmallCapsSize EMPTY>
+<!ATTLIST DSmallCapsSize value CDATA #IMPLIED>
+<!ATTLIST DSmallCapsSize type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DSmallCapsStretch EMPTY>
+<!ATTLIST DSmallCapsStretch value CDATA #IMPLIED>
+<!ATTLIST DSmallCapsStretch type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DSmartQuotesOn EMPTY>
+<!ATTLIST DSmartQuotesOn value CDATA #IMPLIED>
+<!ATTLIST DSmartQuotesOn type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DSmartSpacesOn EMPTY>
+<!ATTLIST DSmartSpacesOn value CDATA #IMPLIED>
+<!ATTLIST DSmartSpacesOn type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DSnapGrid EMPTY>
+<!ATTLIST DSnapGrid value CDATA #IMPLIED>
+<!ATTLIST DSnapGrid type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DSnapRotation EMPTY>
+<!ATTLIST DSnapRotation value CDATA #IMPLIED>
+<!ATTLIST DSnapRotation type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DStartPage EMPTY>
+<!ATTLIST DStartPage value CDATA #IMPLIED>
+<!ATTLIST DStartPage type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DStructAppName EMPTY>
+<!ATTLIST DStructAppName value CDATA #IMPLIED>
+<!ATTLIST DStructAppName type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DSubscriptShift EMPTY>
+<!ATTLIST DSubscriptShift value CDATA #IMPLIED>
+<!ATTLIST DSubscriptShift type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DSubscriptSize EMPTY>
+<!ATTLIST DSubscriptSize value CDATA #IMPLIED>
+<!ATTLIST DSubscriptSize type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DSubscriptStretch EMPTY>
+<!ATTLIST DSubscriptStretch value CDATA #IMPLIED>
+<!ATTLIST DSubscriptStretch type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DSuperscriptShift EMPTY>
+<!ATTLIST DSuperscriptShift value CDATA #IMPLIED>
+<!ATTLIST DSuperscriptShift type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DSuperscriptSize EMPTY>
+<!ATTLIST DSuperscriptSize value CDATA #IMPLIED>
+<!ATTLIST DSuperscriptSize type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DSuperscriptStretch EMPTY>
+<!ATTLIST DSuperscriptStretch value CDATA #IMPLIED>
+<!ATTLIST DSuperscriptStretch type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DSymbolsOn EMPTY>
+<!ATTLIST DSymbolsOn value CDATA #IMPLIED>
+<!ATTLIST DSymbolsOn type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DTblFNoteAnchorPos EMPTY>
+<!ATTLIST DTblFNoteAnchorPos value CDATA #IMPLIED>
+<!ATTLIST DTblFNoteAnchorPos type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DTblFNoteAnchorPrefix EMPTY>
+<!ATTLIST DTblFNoteAnchorPrefix value CDATA #IMPLIED>
+<!ATTLIST DTblFNoteAnchorPrefix type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DTblFNoteAnchorSuffix EMPTY>
+<!ATTLIST DTblFNoteAnchorSuffix value CDATA #IMPLIED>
+<!ATTLIST DTblFNoteAnchorSuffix type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DTblFNoteLabels EMPTY>
+<!ATTLIST DTblFNoteLabels value CDATA #IMPLIED>
+<!ATTLIST DTblFNoteLabels type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DTblFNoteNumStyle EMPTY>
+<!ATTLIST DTblFNoteNumStyle value CDATA #IMPLIED>
+<!ATTLIST DTblFNoteNumStyle type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DTblFNoteNumberPos EMPTY>
+<!ATTLIST DTblFNoteNumberPos value CDATA #IMPLIED>
+<!ATTLIST DTblFNoteNumberPos type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DTblFNoteNumberPrefix EMPTY>
+<!ATTLIST DTblFNoteNumberPrefix value CDATA #IMPLIED>
+<!ATTLIST DTblFNoteNumberPrefix type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DTblFNoteNumberSuffix EMPTY>
+<!ATTLIST DTblFNoteNumberSuffix value CDATA #IMPLIED>
+<!ATTLIST DTblFNoteNumberSuffix type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DTblFNoteTag EMPTY>
+<!ATTLIST DTblFNoteTag value CDATA #IMPLIED>
+<!ATTLIST DTblFNoteTag type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DTwoSides EMPTY>
+<!ATTLIST DTwoSides value CDATA #IMPLIED>
+<!ATTLIST DTwoSides type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DUpdateTextInsetsOnOpen EMPTY>
+<!ATTLIST DUpdateTextInsetsOnOpen value CDATA #IMPLIED>
+<!ATTLIST DUpdateTextInsetsOnOpen type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DUpdateXRefsOnOpen EMPTY>
+<!ATTLIST DUpdateXRefsOnOpen value CDATA #IMPLIED>
+<!ATTLIST DUpdateXRefsOnOpen type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DUseInitialStructure EMPTY>
+<!ATTLIST DUseInitialStructure value CDATA #IMPLIED>
+<!ATTLIST DUseInitialStructure type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DViewOnly EMPTY>
+<!ATTLIST DViewOnly value CDATA #IMPLIED>
+<!ATTLIST DViewOnly type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DViewOnlySelect EMPTY>
+<!ATTLIST DViewOnlySelect value CDATA #IMPLIED>
+<!ATTLIST DViewOnlySelect type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DViewOnlyWinBorders EMPTY>
+<!ATTLIST DViewOnlyWinBorders value CDATA #IMPLIED>
+<!ATTLIST DViewOnlyWinBorders type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DViewOnlyWinMenubar EMPTY>
+<!ATTLIST DViewOnlyWinMenubar value CDATA #IMPLIED>
+<!ATTLIST DViewOnlyWinMenubar type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DViewOnlyWinPalette EMPTY>
+<!ATTLIST DViewOnlyWinPalette value CDATA #IMPLIED>
+<!ATTLIST DViewOnlyWinPalette type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DViewOnlyWinPopup EMPTY>
+<!ATTLIST DViewOnlyWinPopup value CDATA #IMPLIED>
+<!ATTLIST DViewOnlyWinPopup type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DViewOnlyXRef EMPTY>
+<!ATTLIST DViewOnlyXRef value CDATA #IMPLIED>
+<!ATTLIST DViewOnlyXRef type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DViewRect EMPTY>
+<!ATTLIST DViewRect value CDATA #IMPLIED>
+<!ATTLIST DViewRect type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DViewScale EMPTY>
+<!ATTLIST DViewScale value CDATA #IMPLIED>
+<!ATTLIST DViewScale type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DVoMenuBar EMPTY>
+<!ATTLIST DVoMenuBar value CDATA #IMPLIED>
+<!ATTLIST DVoMenuBar type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DWindowRect EMPTY>
+<!ATTLIST DWindowRect value CDATA #IMPLIED>
+<!ATTLIST DWindowRect type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DXmlDocType EMPTY>
+<!ATTLIST DXmlDocType value CDATA #IMPLIED>
+<!ATTLIST DXmlDocType type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DXmlEncoding EMPTY>
+<!ATTLIST DXmlEncoding value CDATA #IMPLIED>
+<!ATTLIST DXmlEncoding type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DXmlFileEncoding EMPTY>
+<!ATTLIST DXmlFileEncoding value CDATA #IMPLIED>
+<!ATTLIST DXmlFileEncoding type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DXmlPublicId EMPTY>
+<!ATTLIST DXmlPublicId value CDATA #IMPLIED>
+<!ATTLIST DXmlPublicId type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DXmlStandAlone EMPTY>
+<!ATTLIST DXmlStandAlone value CDATA #IMPLIED>
+<!ATTLIST DXmlStandAlone type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DXmlSystemId EMPTY>
+<!ATTLIST DXmlSystemId value CDATA #IMPLIED>
+<!ATTLIST DXmlSystemId type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DXmlUseBOM EMPTY>
+<!ATTLIST DXmlUseBOM value CDATA #IMPLIED>
+<!ATTLIST DXmlUseBOM type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DXmlVersion EMPTY>
+<!ATTLIST DXmlVersion value CDATA #IMPLIED>
+<!ATTLIST DXmlVersion type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DXmlWellFormed EMPTY>
+<!ATTLIST DXmlWellFormed value CDATA #IMPLIED>
+<!ATTLIST DXmlWellFormed type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FNoteStartNum EMPTY>
+<!ATTLIST FNoteStartNum value CDATA #IMPLIED>
+<!ATTLIST FNoteStartNum type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT DPDFBookmarks EMPTY>
+<!ATTLIST DPDFBookmarks value (Yes | No) #IMPLIED>
+<!ATTLIST DPDFBookmarks type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT PDFDocInfo (Key | Value | UserString)*>
+<!ELEMENT Key EMPTY>
+<!ATTLIST Key value CDATA #IMPLIED>
+<!ATTLIST Key type (str | num | enum | val) #REQUIRED>
+<!-- Value .. see above -->
+
+<!ELEMENT DocFileInfo EMPTY>
+<!ATTLIST DocFileInfo value CDATA #REQUIRED>
+<!ATTLIST DocFileInfo type (str | num | enum | val) #REQUIRED>
+
+
+<!-- 
+===============================================================================
+MIFML Math statements 
+===============================================================================
+-->
+<!ELEMENT Math (%generic_objects; | ShapeRect | BRect | MathFullForm | MathLineBreak | 
+    MathOrigin | MathAlignment | MathSize | UserString)*>
+<!ELEMENT MathFullForm EMPTY>
+<!ATTLIST MathFullForm value CDATA #REQUIRED>
+<!ATTLIST MathFullForm type (str | num | enum | val) #REQUIRED>
+<!ELEMENT MathLineBreak EMPTY>
+<!ATTLIST MathLineBreak value CDATA #REQUIRED>
+<!ATTLIST MathLineBreak type (str | num | enum | val) #REQUIRED>
+<!ELEMENT MathOrigin EMPTY>
+<!ATTLIST MathOrigin value CDATA #REQUIRED>
+<!ATTLIST MathOrigin type (str | num | enum | val) #REQUIRED>
+<!ELEMENT MathAlignment EMPTY>
+<!ATTLIST MathAlignment value (Left | Center | Right | Manual) #REQUIRED>
+<!ATTLIST MathAlignment type (str | num | enum | val) #REQUIRED>
+<!ELEMENT MathSize EMPTY>
+<!ATTLIST MathSize value (MathLarge | MathMedium | MathSmall) #REQUIRED>
+<!ATTLIST MathSize type (str | num | enum | val) #REQUIRED>
+
+
+<!-- 
+===============================================================================
+MIFML Book statements 
+===============================================================================
+-->
+
+
+<!ELEMENT BWindowRect EMPTY>
+<!ATTLIST BWindowRect value CDATA #IMPLIED>
+<!ATTLIST BWindowRect type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BNextUnique EMPTY>
+<!ATTLIST BNextUnique value CDATA #IMPLIED>
+<!ATTLIST BNextUnique type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT PDFBookInfo (Key | Value | UserString)*>
+<!ELEMENT BookFileInfo EMPTY>
+<!ATTLIST BookFileInfo value CDATA #IMPLIED>
+<!ATTLIST BookFileInfo type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BXmlVersion EMPTY>
+<!ATTLIST BXmlVersion value CDATA #IMPLIED>
+<!ATTLIST BXmlVersion type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BXmlEncoding EMPTY>
+<!ATTLIST BXmlEncoding value CDATA #IMPLIED>
+<!ATTLIST BXmlEncoding type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BXmlStandAlone EMPTY>
+<!ATTLIST BXmlStandAlone value CDATA #IMPLIED>
+<!ATTLIST BXmlStandAlone type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BXmlStyleSheet EMPTY>
+<!ATTLIST BXmlStyleSheet value CDATA #IMPLIED>
+<!ATTLIST BXmlStyleSheet type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT BViewOnly EMPTY>
+<!ATTLIST BViewOnly value CDATA #IMPLIED>
+<!ATTLIST BViewOnly type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BViewOnlyWinBorders EMPTY>
+<!ATTLIST BViewOnlyWinBorders value CDATA #IMPLIED>
+<!ATTLIST BViewOnlyWinBorders type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BViewOnlyWinMenubar EMPTY>
+<!ATTLIST BViewOnlyWinMenubar value CDATA #IMPLIED>
+<!ATTLIST BViewOnlyWinMenubar type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BViewOnlyPopup EMPTY>
+<!ATTLIST BViewOnlyPopup value CDATA #IMPLIED>
+<!ATTLIST BViewOnlyPopup type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BViewOnlyNoOp EMPTY>
+<!ATTLIST BViewOnlyNoOp value CDATA #IMPLIED>
+<!ATTLIST BViewOnlyNoOp type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT BDisplayText EMPTY>
+<!ATTLIST BDisplayText value (AsFilename | AsText) #IMPLIED>
+<!ATTLIST BDisplayText type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT BookComponent (Unique | FileName | DisplayText | FileNameSuffix | DeriveType | DeriveTag | 
+    DeriveLinks | StartPageSide | VolumeNumStart | VolumeNumStyle | VolumeNumText | 
+    VolNumComputeMethod | ChapterNumStart | ChapterNumStyle | ChapterNumText | 
+    ChapterNumComputeMethod | ContPageNum | PageNumStart | PageNumStyle | PageNumbering | 
+    PgfNumbering | BFNoteStartNum | BFNoteNumStyle | BFNoteLabels | BFNoteComputeMethod | 
+    BFNoteRestart | BTblFNoteNumStyle | BTblFNoteLabels | BTblFNoteComputeMethod | 
+    DefaultPrint | DefaultApply | DefaultDerive | NumPages | DeriveTagElement | UserString)*>
+<!ELEMENT FileName EMPTY>
+<!ATTLIST FileName value CDATA #IMPLIED>
+<!ATTLIST FileName type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DisplayText EMPTY>
+<!ATTLIST DisplayText value CDATA #IMPLIED>
+<!ATTLIST DisplayText type (str | num | enum | val) #REQUIRED>
+<!ELEMENT FileNameSuffix EMPTY>
+<!ATTLIST FileNameSuffix value CDATA #IMPLIED>
+<!ATTLIST FileNameSuffix type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DeriveType EMPTY>
+<!ATTLIST DeriveType value (AML | APL | IDX | IOA | IOM | IOS | IR | LOF | LOM | LOP | 
+    LOT | LR | TOC) #IMPLIED>
+<!ATTLIST DeriveType type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DeriveTag EMPTY>
+<!ATTLIST DeriveTag value CDATA #IMPLIED>
+<!ATTLIST DeriveTag type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DeriveLinks EMPTY>
+<!ATTLIST DeriveLinks value (Yes | No) #IMPLIED>
+<!ATTLIST DeriveLinks type (str | num | enum | val) #REQUIRED>
+<!ELEMENT StartPageSide EMPTY>
+<!ATTLIST StartPageSide value (ReadFromFile | NextAvailableSide | StartLeftSide | 
+    StartRightSide) #IMPLIED>
+<!ATTLIST StartPageSide type (str | num | enum | val) #REQUIRED>
+<!ELEMENT VolumeNumStart EMPTY>
+<!ATTLIST VolumeNumStart value CDATA #IMPLIED>
+<!ATTLIST VolumeNumStart type (str | num | enum | val) #REQUIRED>
+<!ELEMENT VolumeNumStyle EMPTY>
+<!ATTLIST VolumeNumStyle value (Arabic | UCRoman | LCRoman | UCAlpha | LCAlpha | 
+    KanjiNumeric | ZenArabic | ZenUCAlpha | ZenLCAlpha | Kanjikazu | BusinessKazu | 
+    Custom) #IMPLIED>
+<!ATTLIST VolumeNumStyle type (str | num | enum | val) #REQUIRED>
+<!ELEMENT VolumeNumText EMPTY>
+<!ATTLIST VolumeNumText value CDATA #IMPLIED>
+<!ATTLIST VolumeNumText type (str | num | enum | val) #REQUIRED>
+<!ELEMENT VolNumComputeMethod EMPTY>
+<!ATTLIST VolNumComputeMethod value (StartNumbering | ContinueNumbering | UseSameNumbering | 
+    ReadFromFile) #IMPLIED>
+<!ATTLIST VolNumComputeMethod type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ChapterNumStart EMPTY>
+<!ATTLIST ChapterNumStart value CDATA #IMPLIED>
+<!ATTLIST ChapterNumStart type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ChapterNumStyle EMPTY>
+<!ATTLIST ChapterNumStyle value (Arabic | UCRoman | LCRoman | UCAlpha | LCAlpha | 
+    KanjiNumeric | ZenArabic | ZenUCAlpha | ZenLCAlpha | Kanjikazu | BusinessKazu | 
+    Custom) #IMPLIED>
+<!ATTLIST ChapterNumStyle type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ChapterNumText EMPTY>
+<!ATTLIST ChapterNumText value CDATA #IMPLIED>
+<!ATTLIST ChapterNumText type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ChapterNumComputeMethod EMPTY>
+<!ATTLIST ChapterNumComputeMethod value (StartNumbering | ContinueNumbering | UseSameNumbering | 
+    ReadFromFile) #IMPLIED>
+<!ATTLIST ChapterNumComputeMethod type (str | num | enum | val) #REQUIRED>
+<!ELEMENT ContPageNum EMPTY>
+<!ATTLIST ContPageNum value (Yes | No) #IMPLIED>
+<!ATTLIST ContPageNum type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PageNumStart EMPTY>
+<!ATTLIST PageNumStart value CDATA #IMPLIED>
+<!ATTLIST PageNumStart type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PageNumStyle EMPTY>
+<!ATTLIST PageNumStyle value (Arabic | UCRoman | LCRoman | UCAlpha | LCAlpha | 
+    KanjiNumeric | ZenArabic | ZenUCAlpha | ZenLCAlpha | Kanjikazu | 
+    BusinessKazu) #IMPLIED>
+<!ATTLIST PageNumStyle type (str | num | enum | val) #REQUIRED>
+<!ELEMENT PageNumbering EMPTY>
+<!ATTLIST PageNumbering value (Continue | Restart | ReadFromFile) #IMPLIED>
+<!ATTLIST PageNumbering type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BFNoteStartNum EMPTY>
+<!ATTLIST BFNoteStartNum value CDATA #IMPLIED>
+<!ATTLIST BFNoteStartNum type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BFNoteNumStyle EMPTY>
+<!ATTLIST BFNoteNumStyle value (Arabic | UCRoman | LCRoman | UCAlpha | LCAlpha | 
+    KanjiNumeric | ZenArabic | ZenUCAlpha | ZenLCAlpha | Kanjikazu | BusinessKazu | 
+    Custom) #IMPLIED>
+<!ATTLIST BFNoteNumStyle type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BFNoteLabels EMPTY>
+<!ATTLIST BFNoteLabels value CDATA #IMPLIED>
+<!ATTLIST BFNoteLabels type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BFNoteComputeMethod EMPTY>
+<!ATTLIST BFNoteComputeMethod value (Continue | Restart | PerPage | ReadFromFile) #IMPLIED>
+<!ATTLIST BFNoteComputeMethod type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BFNoteRestart EMPTY>
+<!ATTLIST BFNoteRestart value (PerFlow | PerPage) #IMPLIED>
+<!ATTLIST BFNoteRestart type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BTblFNoteNumStyle EMPTY>
+<!ATTLIST BTblFNoteNumStyle value (Arabic | UCRoman | LCRoman | UCAlpha | LCAlpha | 
+    KanjiNumeric | ZenArabic | ZenUCAlpha | ZenLCAlpha | Kanjikazu | BusinessKazu | 
+    Custom) #IMPLIED>
+<!ATTLIST BTblFNoteNumStyle type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BTblFNoteLabels EMPTY>
+<!ATTLIST BTblFNoteLabels value CDATA #IMPLIED>
+<!ATTLIST BTblFNoteLabels type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BTblFNoteComputeMethod EMPTY>
+<!ATTLIST BTblFNoteComputeMethod value (Restart | ReadFromFile) #IMPLIED>
+<!ATTLIST BTblFNoteComputeMethod type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DefaultPrint EMPTY>
+<!ATTLIST DefaultPrint value (Yes | No) #IMPLIED>
+<!ATTLIST DefaultPrint type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DefaultApply EMPTY>
+<!ATTLIST DefaultApply value (Yes | No) #IMPLIED>
+<!ATTLIST DefaultApply type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DefaultDerive EMPTY>
+<!ATTLIST DefaultDerive value (Yes | No) #IMPLIED>
+<!ATTLIST DefaultDerive type (str | num | enum | val) #REQUIRED>
+<!ELEMENT NumPages EMPTY>
+<!ATTLIST NumPages value CDATA #IMPLIED>
+<!ATTLIST NumPages type (str | num | enum | val) #REQUIRED>
+<!ELEMENT DeriveTagElement EMPTY>
+<!ATTLIST DeriveTagElement value CDATA #IMPLIED>
+<!ATTLIST DeriveTagElement type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT BookXRef (XRefDef | XRefSrcText | XRefSrcIsElem | XRefSrcFile | Font | String | Char | UserString)*>
+
+<!ELEMENT BookUpdateReferences EMPTY>
+<!ATTLIST BookUpdateReferences value (Yes | No) #IMPLIED>
+<!ATTLIST BookUpdateReferences type (str | num | enum | val) #REQUIRED>
+
+<!ELEMENT BookSettings (BElementCatalogScope | BCustomElementList | BAttributeDisplay | 
+    BAttrEditor | BUseInitStructure | BSGMLAppName | BSeparateInclusions | BFCLMaximums | 
+    BFCLMinimums | BUseInitialStructure | BStructAppName | BXmlVersion | BXmlEncoding |
+    BXmlFileEncoding | BXmlDocType | BXmlPublicId | BXmlSystemId | BXmlUseBOM | 
+    BXmlWellFormed | BXmlStandAlone | UserString)*>
+<!ELEMENT BElementCatalogScope EMPTY>
+<!ATTLIST BElementCatalogScope value (Strict | Loose | Children | All | CustomList) #IMPLIED>
+<!ATTLIST BElementCatalogScope type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BCustomElementList (EDTag)*>
+<!ELEMENT BAttributeDisplay EMPTY>
+<!ATTLIST BAttributeDisplay value CDATA #IMPLIED>
+<!ATTLIST BAttributeDisplay type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BAttrEditor EMPTY>
+<!ATTLIST BAttrEditor value CDATA #IMPLIED>
+<!ATTLIST BAttrEditor type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BUseInitStructure EMPTY>
+<!ATTLIST BUseInitStructure value CDATA #IMPLIED>
+<!ATTLIST BUseInitStructure type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BSGMLAppName EMPTY>
+<!ATTLIST BSGMLAppName value CDATA #IMPLIED>
+<!ATTLIST BSGMLAppName type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BSeparateInclusions EMPTY>
+<!ATTLIST BSeparateInclusions value CDATA #IMPLIED>
+<!ATTLIST BSeparateInclusions type (str | num | enum | val) #REQUIRED>
+<!ELEMENT BFCLMaximums (PgfFIndent | PgfLIndent | PgfRIndent | PgfSpBefore | PgfSpAfter | 
+    PgfLeading | FSize | FDW | TSX | PgfCellLMargin | PgfCellBMargin | PgfCellTMargin | 
+    PgfCellRMargin | FStretch | UserString)*>
+<!ELEMENT BFCLMinimums (PgfFIndent | PgfLIndent | PgfRIndent | PgfSpBefore | PgfSpAfter | 
+    PgfLeading | FSize | FDW | TSX | PgfCellLMargin | PgfCellBMargin | PgfCellTMargin | 
+    PgfCellRMargin | FStretch | UserString)*>
+<!-- BUseInitialStructure not in MIF Ref?? -->
+<!ELEMENT BUseInitialStructure EMPTY>
+<!ATTLIST BUseInitialStructure value CDATA #IMPLIED>
+<!ATTLIST BUseInitialStructure type (str | num | enum | val) #REQUIRED>
+<!-- BStructAppName not in MIF Ref?? -->
+<!ELEMENT BStructAppName EMPTY>
+<!ATTLIST BStructAppName value CDATA #IMPLIED>
+<!ATTLIST BStructAppName type (str | num | enum | val) #REQUIRED>
+<!-- BXmlFileEncoding not in MIF Ref?? -->
+<!ELEMENT BXmlFileEncoding EMPTY>
+<!ATTLIST BXmlFileEncoding value CDATA #IMPLIED>
+<!ATTLIST BXmlFileEncoding type (str | num | enum | val) #REQUIRED>
+<!-- BXmlDocType not in MIF Ref?? -->
+<!ELEMENT BXmlDocType EMPTY>
+<!ATTLIST BXmlDocType value CDATA #IMPLIED>
+<!ATTLIST BXmlDocType type (str | num | enum | val) #REQUIRED>
+<!-- BXmlPublicId not in MIF Ref?? -->
+<!ELEMENT BXmlPublicId EMPTY>
+<!ATTLIST BXmlPublicId value CDATA #IMPLIED>
+<!ATTLIST BXmlPublicId type (str | num | enum | val) #REQUIRED>
+<!-- BXmlSystemId not in MIF Ref?? -->
+<!ELEMENT BXmlSystemId EMPTY>
+<!ATTLIST BXmlSystemId value CDATA #IMPLIED>
+<!ATTLIST BXmlSystemId type (str | num | enum | val) #REQUIRED>
+<!-- BXmlUseBOM not in MIF Ref?? -->
+<!ELEMENT BXmlUseBOM EMPTY>
+<!ATTLIST BXmlUseBOM value CDATA #IMPLIED>
+<!ATTLIST BXmlUseBOM type (str | num | enum | val) #REQUIRED>
+<!-- BXmlWellFormed not in MIF Ref?? -->
+<!ELEMENT BXmlWellFormed EMPTY>
+<!ATTLIST BXmlWellFormed value CDATA #IMPLIED>
+<!ATTLIST BXmlWellFormed type (str | num | enum | val) #REQUIRED>
+
+
+<!ELEMENT BookElements (ElementBegin | ElementEnd | Element | UserString)*>
+

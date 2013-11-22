@@ -1,0 +1,50 @@
+var fs = require("fs");
+var Fuse = require("../lib/fuse.js");
+
+var isInitializingSearchIndex = false;
+var searchIndices = null;
+
+function initSearchIndex() {
+	
+	if (isInitializingSearchIndex) {
+		return;
+	}
+
+	isInitializingSearchIndex = true;
+	searchIndices = {};
+
+	//Title search
+	var options = {
+		keys: ["title", "titlePath"],
+		threshold: 0.3,
+		distance: 300
+	};
+
+	//Iterate and add all search indices
+	var previewFolders = fs.readdirSync(__dirname + "/../chapters/");
+	for (var i=0; i < previewFolders.length; i++) {
+		if (previewFolders[i].indexOf("_index") > -1) {
+			var index = JSON.parse(fs.readFileSync(__dirname + "/../chapters/" + previewFolders[i] + "/" + previewFolders[i].replace("_index", ".json")));
+			var id = previewFolders[i];
+
+			//Remove root objects
+			index = index.filter(function(element) {
+				return (element.title !== "root");
+			});
+			
+			searchIndices[id] = new Fuse(index, options);
+		}
+	}
+
+	isInitializingSearchIndex = false;
+}
+
+initSearchIndex();
+
+module.exports = function(input, callback) {
+
+	var index = searchIndices[input.index];
+	var results = index.search(input.term);
+
+	callback(null, results);
+}
