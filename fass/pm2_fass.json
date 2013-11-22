@@ -1,0 +1,29 @@
+[
+	{
+		"name"      : "findUpdatesService",
+		"script"    : "./findUpdatesService.js",
+		"instances" : "1",
+		"min_uptime" : "100",
+		"max_restarts" : "10",
+		"fileError" : "./logs/findUpdatesService-err.log",
+		"fileOutput" : "./logs/findUpdatesService-out.log"
+	},
+	{
+		"name"      : "fetchUpdatesService",
+		"script"    : "./fetchUpdatesService.js",
+		"instances" : "1",
+		"min_uptime" : "100",
+		"max_restarts" : "10",
+		"fileError" : "./logs/fetchUpdatesService-err.log",
+		"fileOutput" : "./logs/fetchUpdatesService-out.log"
+	},
+	{
+		"name"      : "dailyReportService",
+		"script"    : "./dailyReportService.js",
+		"instances" : "1",
+		"min_uptime" : "100",
+		"max_restarts" : "1",
+		"fileError" : "./logs/dailyReportService-err.log",
+		"fileOutput" : "./logs/dailyReportService-out.log"
+	}
+]
