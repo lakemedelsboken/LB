@@ -8,7 +8,7 @@ var chapterIdentifier = null;
 var toc = null;
 var contentsId = 0;
 
-var atcTree = JSON.parse(fs.readFileSync(__dirname + "/../fass/atcTree.json", "utf8"));
+var atcTree = JSON.parse(fs.readFileSync(__dirname + "/../npl/atcTree.json", "utf8"));
 
 function createSearchIndex(htmlContent, name) {
 
