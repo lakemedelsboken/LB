@@ -2,7 +2,7 @@
 	{
 		"name"      : "blog",
 		"script"    : "./blog/app.js",
-		"instances" : "1",
+		"instances" : "8",
 		"min_uptime" : "100",
 		"max_restarts" : "10",
 		"fileError" : "./logs/blog-err.log",
