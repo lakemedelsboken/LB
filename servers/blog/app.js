@@ -13,6 +13,7 @@ app.listen(networkPort);
 
 app.set('view engine', 'ejs');
 app.set('jojo basepath', '/blog/');
+app.set('jojo articles', __dirname + '/articles/');
 //app.use("/blog/", express.static(process.cwd() + '/public'));
 
 console.log('Blog server is listening to http://127.0.0.1:' + networkPort);
