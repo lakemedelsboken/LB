@@ -17,7 +17,7 @@ set :branch, 'master'
 # set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
-set :keep_releases, 5
+set :keep_releases, 3
 #set :pass, fetch(:pass, '')
 
 namespace :deploy do
