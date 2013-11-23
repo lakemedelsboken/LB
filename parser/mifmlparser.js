@@ -332,6 +332,33 @@ var Parser = {
 						result += "<li>";
 					}
 					self.hasStartedOrderedList = true;
+				} else {
+					//Check for PgfIndent
+					if ($tag.next()[0].name === "pgf") {
+						var pgf = $tag.next();
+						var pgfIndent = pgf.find("PgfFIndent, PgfLIndent");
+						if (pgfIndent.length > 0) {
+							var longest = 0;
+							pgfIndent.each(function(i, e) {
+								e = $(e);
+								var length = parseInt(e.attr("value").replace(" mm", ""));
+								if (self.isNumber(length) && length > longest) {
+									longest = length;
+								}
+							});
+							if (longest > 0) {
+								//We have indentation
+								result += "<ul class=\"indent\"><li class=\"nobullet\">";
+							} else {
+								result += "<ul><li>"
+							}
+						} else {
+							result += "<ul><li>"
+						}
+					} else {
+						result += "<ul><li>"
+					}
+					
 				}
 				return indentation + result;
 			},
@@ -747,7 +774,7 @@ var Parser = {
 		self.tagHandlers["tabstop"] = {
 			begin: function(tag, indentation) {
 				if (self.state.textflow === "A") {
-					return indentation + "<span class=\"tabstop\" style=\"display: inline-block; width: 20px;\"></span>";
+					return indentation + "<span class=\"tabstop\"></span>";
 				}
 			},
 			end: function(tag, indentation) {
@@ -1532,7 +1559,7 @@ var Parser = {
 							if (charHandlers[value] !== undefined) {
 								//Concat split words/lines to increase accuracy of injections based on word
 								
-								if (!self.state.table && value === "SoftHyphen" || value === "DiscHyphen") {
+								if (!self.state.table && (value === "SoftHyphen" || value === "DiscHyphen")) {
 									/*
 									var lineBack = self.html.pop().split(" ");
 									if (lineBack[lineBack.length - 1] !== "") {
@@ -1542,8 +1569,8 @@ var Parser = {
 										self.html.push(lineBack.join(" "));
 									}
 									*/
+
 									//Two hyphens after each other, must clear the lineRest
-									
 									if (self.tagHandlers["paraline"].lineRest !== "") {
 										self.html[self.html.length - 1] += self.tagHandlers["paraline"].lineRest;
 										self.tagHandlers["paraline"].lineRest = "";
@@ -1643,8 +1670,9 @@ var Parser = {
 								if (element.name.toLowerCase() === "ffamily" || element.name.toLowerCase() === "ftag" || element.name.toLowerCase() === "fposition" || element.name.toLowerCase() === "fangle" || element.name.toLowerCase() === "fcolor" || element.name.toLowerCase() === "fweight") {
 
 									var value = $element.attr("value");
-									//.replace(/å/g, "aa").replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/Å/g, "Aa").replace(/Ä/g, "Ae").replace(/Ö/g, "Oe")
+
 									if (value === "" && self.state.fontFormat !== null) {
+										//Clear old formatting
 										if (self.state.markerFormat !== null) {
 											self.html.push("</a> ");
 											self.state.markerFormat = null;
@@ -1652,6 +1680,7 @@ var Parser = {
 										self.html.push("</span>");
 										self.state.fontFormat = null;
 									} else if (value !== null && value !== undefined && fontFormatHandlers[value] !== undefined) {
+										//Clear old formatting
 										if (self.state.fontFormat !== null) {
 											self.html.push("</span>");
 											self.state.fontFormat = null;
@@ -1659,6 +1688,16 @@ var Parser = {
 										self.html.push(fontFormatHandlers[value]);
 										self.state.fontFormat = value;
 									} else {
+										//Clear old formatting
+										if (self.state.markerFormat !== null) {
+											self.html.push("</a> ");
+											self.state.markerFormat = null;
+										}
+										if (self.state.fontFormat !== null) {
+											self.html.push("</span>");
+											self.state.fontFormat = null;
+										}
+
 										if (value !== "" && skippedFormatHandlers[value] === undefined) {
 											console.error("* Unhandled FTAG: " + value);
 										}
@@ -2727,7 +2766,7 @@ var Parser = {
 			tabStops.each(function(i, e) {
 				var tab = cheerio(e);
 				var parent = tab.parent();
-				if (parent.length === 1 && parent[0].name === "p") {
+				if (parent.length === 1 && (parent[0].name === "p" || parent[0].name === "div")) {
 					tab.remove();
 					var prev = parent.prev();
 					if (prev.length === 1 && (prev[0].name === "ul" || prev.hasClass("tabStop"))) {
