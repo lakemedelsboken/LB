@@ -224,6 +224,17 @@ var Parser = {
 			}
 		};
 
+		self.formatHandlers["faktatextin"] = {
+			begin: function(tag, indentation) {
+				return indentation + "<p class=\"indent\">";
+			},
+			end: function(tag, indentation) {
+				var result = "";
+
+				return result + "</p>";
+			}
+		};
+
 		self.formatHandlers["bread"] = {
 			begin: function(tag, indentation) {
 				return indentation + "<p>";
@@ -1544,7 +1555,7 @@ var Parser = {
 						if (child.name.toLowerCase() === "char") {
 							var value = $child.attr("value");
 							var charHandlers = {
-								"HardSpace": " ", //&nbsp;
+								"HardSpace": "&nbsp;", //&nbsp;
 								"EnDash": "&ndash;",
 								"EmDash": "&mdash;",
 								"EnSpace": "&ensp;",
