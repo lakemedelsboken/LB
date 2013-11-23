@@ -33,7 +33,7 @@ namespace :deploy do
         execute "mkdir -p #{shared_path}/fass/www/products"
         execute "ln -nfs #{shared_path}/fass/www/products #{release_path}/fass/www/"
 
-        ask(:pass, "")
+        ask(:secretSettingsPassword, "")
         
         execute "mkdir -p #{shared_path}/settings"
         execute "rm -f #{shared_path}/settings/*"
@@ -42,10 +42,10 @@ namespace :deploy do
         execute "rm -rf #{release_path}/settings"
 
         execute "ln -nfs #{shared_path}/settings #{release_path}/"
-        execute "cd #{shared_path}/settings && make decrypt_conf_pass PASS=#{fetch(:pass)}"
+        execute "cd #{shared_path}/settings && make decrypt_conf_pass PASS=#{fetch(:secretSettingsPassword)}"
 
         execute "pm2 kill"
-        execute "cd /var/www/lb/current/servers/ && pm2 start pm2_production.json &"
+        execute "cd /var/www/lb/current/servers/ && pm2 start pm2_#{fetch(:stage)}.json &"
         #end
     end
   end
