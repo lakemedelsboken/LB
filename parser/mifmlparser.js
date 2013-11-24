@@ -2432,8 +2432,15 @@ var Parser = {
 					}
 				} else if (self.isNumber(text)) {
 					//Found page reference - remove from output
-					$element.remove();
-					//console.error("Removed page ref: " + text);
+
+					//Check if we are in references
+					var possibleListItem = $element.parents("li").first();
+					if (possibleListItem.length === 1 && possibleListItem.attr("id") && (possibleListItem.attr("id").indexOf("reference_") === 0)) {
+						//Do not remove
+					} else {
+						//console.error("Removing page number: " + self.htmlEscape(cheerio.html($element)));
+						$element.remove();
+					}
 				} else {
 					console.error("* Unhandled blue marker: \"" + $element.text() + "\"");
 					$element.replaceWith($element.html());
