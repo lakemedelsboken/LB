@@ -2069,7 +2069,7 @@ var console = {log: function() {}};
 
 			$("#mask").fadeTo(0,0.8);
 			if ($(window).width() < 768) {
-				$("#modalMed").css("top", ($(window).scrollTop() + 10) + "px")
+				$("#modalMed").css("top", $(window).scrollTop() + "px")
 			}
 		
 			$("#modalMed").show();
