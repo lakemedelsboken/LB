@@ -1591,6 +1591,8 @@ var Parser = {
 									if (lineBack.indexOf("<") !== 0) {
 										//Remove any tags in the previous line
 										self.tagHandlers["paraline"].lineRest += self.htmlEscape($("<p>" + lineBack + "</p>").text());
+										//console.error("* " + self.htmlEscape(lineBack));
+										//self.tagHandlers["paraline"].lineRest += lineBack;
 									} else {
 										self.html.push(lineBack);
 									}
@@ -2006,6 +2008,10 @@ var Parser = {
 								removedHtml = removedHtml.substr(0, (removedHtml.length - 2));
 								self.html.push(removedHtml);
 								done = true;
+							} else if (removedHtml.trim() !== "" && removedHtml.lastIndexOf("sid ") === (removedHtml.length - 4)) {
+								removedHtml = removedHtml.substr(0, (removedHtml.length - 4));
+								self.html.push(removedHtml);
+								done = true;
 							}
 							
 							if (!done && (iterations >= allowedIterations)) {
@@ -2025,8 +2031,14 @@ var Parser = {
 				} else {
 					//console.error("Found page ref, last html = " + self.html[self.html.length - 1]);
 					var done = false;
+					var allowedIterations = 3;
+					var iterations = 0;
+					var allRemoved = [];
+
 					while(!done) {
 						var removedHtml = self.html.pop();
+						allRemoved.unshift(removedHtml);
+						iterations++;
 						if (removedHtml.trim() !== "" && removedHtml.lastIndexOf(", s") === (removedHtml.length - 3)) {
 							removedHtml = removedHtml.substr(0, (removedHtml.length - 3));
 							self.html.push(removedHtml);
@@ -2051,7 +2063,18 @@ var Parser = {
 							removedHtml = removedHtml.substr(0, (removedHtml.length - 2));
 							self.html.push(removedHtml);
 							done = true;
+						} else if (removedHtml.trim() !== "" && removedHtml.lastIndexOf("sid ") === (removedHtml.length - 4)) {
+							removedHtml = removedHtml.substr(0, (removedHtml.length - 4));
+							self.html.push(removedHtml);
+							done = true;
 						}
+						
+						if (!done && (iterations >= allowedIterations)) {
+							//Defeat
+							done = true;
+							self.html.push(allRemoved.join(""));
+						} 
+						
 					}
 					self.html.push(" <a href=\"#" + sourceText.split(":")[0] + "\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"icon-arrow-right icon-white\"></i></a>");
 				}
