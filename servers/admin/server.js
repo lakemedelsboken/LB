@@ -595,6 +595,46 @@ function getControlResults() {
 	return result;
 }
 
+function getTables() {
+	var result = [];
+
+	var chapters = getChapters();
+
+	//Check that every chapter has a control object
+	for (var i = 0; i < chapters.length; i++) {
+		var chapter = chapters[i];
+		var chapterName = chapter.name;
+		var chapterId = chapter.name.split("_");
+
+		chapterContent = fs.readFileSync(chapters[i].path, "utf8");
+
+		var $ = cheerio.load(chapterContent);
+		
+		var chapterResults = {chapter: chapterName, tables: []};
+
+		//Tables
+		var foundTables = $("div.facts, div.wide, div.narrow, div.therapy-recommendations");
+		
+		foundTables.each(function(i, e) {
+			var tableContent = cheerio.html(cheerio(e));
+			chapterResults.tables.push(tableContent);
+		});
+		
+		//Send to results
+		result.push(chapterResults);
+		
+	}
+
+	//Sort result
+	result.sort(function(a, b){
+		if(a.chapter < b.chapter) return -1;
+		if(a.chapter > b.chapter) return 1;
+		return 0;
+	})
+
+	return result;
+}
+
 app.get('/admin/keywords', function(req,res){
 
 	locals.keywords = getKeywords();
@@ -640,13 +680,24 @@ app.get('/admin/sitemap', function(req,res){
 	locals.sitemap = getSiteMap();
 	res.render('sitemap.ejs', locals);
 
+
+});
+
+app.get('/admin/tables', function(req,res){
+
+	locals.date = new Date().toLocaleDateString();
+
+	locals.tables = getTables();
+	
+	res.render('tables.ejs', locals);
+
 });
 
 app.get('/admin/publish', function(req,res){
 
 	locals.date = new Date().toLocaleDateString();
 
-	res.render('main.ejs', locals);
+	res.render('publish.ejs', locals);
 
 });
 
