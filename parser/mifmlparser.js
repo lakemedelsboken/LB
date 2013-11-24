@@ -1326,7 +1326,7 @@ var Parser = {
 					} else {
 						var id = $tag.find("ID").first().attr("value");
 						self.counters.tableFootnoteItems++;
-						result = "<div class=\"tableFootnote\" id=\"fnote_" + id + "\"><strong>" + translatedTableFootnoteItems[self.counters.tableFootnoteItems - 1] + ".</strong> ";
+						result = "<div class=\"tableFootnote\" id=\"fnote_" + id + "\">" + translatedTableFootnoteItems[self.counters.tableFootnoteItems - 1] + ". ";
 					}
 
 				} else if (self.state.textflow === "A") {
@@ -1494,7 +1494,7 @@ var Parser = {
 
 				if (self.state.textflow === "A") {
 
-					if (self.state.table) {
+					if (self.state.table && self.tagHandlers["cell"].skipCells === 0) {
 						self.html.push("<div class=\"tableLine\">");
 					}
 					
@@ -1564,7 +1564,7 @@ var Parser = {
 								"HardReturn": "<br>",
 								"DiscHyphen": "",
 								"NoHyphen": "",
-								"Tab": " ", //"&nbsp;&nbsp;&nbsp;&nbsp;",
+								"Tab": "<span class=\"tab\"></span>", //"&nbsp;&nbsp;&nbsp;&nbsp;",
 								"SoftHyphen": "&shy;"
 							};
 							if (charHandlers[value] !== undefined) {
@@ -1827,7 +1827,7 @@ var Parser = {
 						self.state.fontFormat = null;
 					}
 
-					if (self.state.table) {
+					if (self.state.table  && self.tagHandlers["cell"].skipCells === 0) {
 						result += "</div>";
 					}
 
@@ -2017,7 +2017,7 @@ var Parser = {
 
 						//console.error("* Linking out to: " + sourceFile + "#" + sourceText.split(":")[0]);
 
-						self.html.push(" <a href=\"" + sourceFile + "#" + sourceText.split(":")[0] + "\" class=\"btn btn-primary btn-small pageLink\"><i class=\"icon-arrow-right icon-white\"></i></a>");
+						self.html.push(" <a href=\"" + sourceFile + "#" + sourceText.split(":")[0] + "\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"icon-arrow-right icon-white\"></i></a>");
 
 					} else {
 						console.error("Could not parse link to source file: " + sourceFile);
@@ -2053,7 +2053,7 @@ var Parser = {
 							done = true;
 						}
 					}
-					self.html.push(" <a href=\"#" + sourceText.split(":")[0] + "\" class=\"btn btn-primary btn-small pageLink\"><i class=\"icon-arrow-right icon-white\"></i></a>");
+					self.html.push(" <a href=\"#" + sourceText.split(":")[0] + "\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"icon-arrow-right icon-white\"></i></a>");
 				}
 				break;
 			default:
@@ -2544,6 +2544,11 @@ var Parser = {
 //					console.error("");
 					$line.html(newHtml);
 				}
+				
+				//If no content, add a space
+				if ($line.html().trim() === "") {
+					$line.html("&nbsp;");
+				}
 			});
 
 			//Remove empty table rows
@@ -2785,18 +2790,18 @@ var Parser = {
 				var tab = cheerio(e);
 				var parent = tab.parent();
 				if (parent.length === 1 && (parent[0].name === "p" || parent[0].name === "div")) {
-					tab.remove();
+					//tab.remove();
 					var prev = parent.prev();
 					if (prev.length === 1 && (prev[0].name === "ul" || prev.hasClass("tabStop"))) {
 						parent.replaceWith("<div class=\"tabStop\">" + parent.html() + "</div>");
 					}
-				} else if (parent.length === 1 && parent[0].name === "li" && parent.text().trim().substr(0, 1) === "-") {
+				} else if (parent.length === 1 && parent[0].name === "li" && (parent.text().trim().substr(0, 1) === "-" || parent.text().trim().substr(0, 1) === "–")) {
 					tab.remove();
 					parent.attr("class", "tabStop");
-				} else if (parent.length === 1 && parent.hasClass("tableFootnote")) {
-					tab.remove();
+				} else if (parent.length === 1 && parent.parent().length === 1 && parent.parent().hasClass("tableFootnote")) {
+					tab.replaceWith("&nbsp;&nbsp;&nbsp;&nbsp;");
 				} else {
-					tab.remove()
+					//tab.remove()
 				}
 			});
 			
