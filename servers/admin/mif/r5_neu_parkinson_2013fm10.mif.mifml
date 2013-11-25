@@ -5745,7 +5745,7 @@
         <DViewRect value="18 20 923 764 " type="enum"/>
         <DWindowRect value="0 0 1272 1044 " type="enum"/>
         <DViewScale value="112.28%" type="num"/>
-        <DNextUnique value="1070094" type="enum"/>
+        <DNextUnique value="1070120" type="enum"/>
         <DPageSize value="170.0 mm 240.0 mm" type="num"/>
         <DMenuBar value="" type="str"/>
         <DVoMenuBar value="" type="str"/>
@@ -5903,11 +5903,11 @@
         <DPDFDestsMarked value="Yes" type="enum"/>
         <DPDFStructure value="No" type="enum"/>
         <DPDFStructureDefined value="Yes" type="enum"/>
-        <DPDFBookmarks value="Yes" type="enum"/>
-        <DPDFConvertCMYK value="Yes" type="enum"/>
-        <DPDFOpenPage value="0" type="str"/>
+        <DPDFBookmarks value="No" type="enum"/>
+        <DPDFConvertCMYK value="No" type="enum"/>
+        <DPDFOpenPage value="983" type="str"/>
         <DPDFFit value="Default" type="enum"/>
-        <DPDFJobOptions value="Smallest File Size" type="str"/>
+        <DPDFJobOptions value="High Quality Print" type="str"/>
         <DPDFSaveSeparate value="No" type="enum"/>
         <DPDFRegMarks value="None" type="enum"/>
         <DPDFPageSizeSet value="No" type="enum"/>
@@ -5926,7 +5926,7 @@
         </PDFDocInfo>
         <DocFileInfo value="
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D30392D32375431303A32343A31352B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D30392D32375431303A32343A31352B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D31302D32355431393A31313A31392B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D31302D32355431393A31313A31392B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E5061726B696E736F6E7320736A756B646F6D20E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 20202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
@@ -10654,7 +10654,7 @@
                                         <MCurrPage value="983" type="str"/>
                                         <Unique value="1068491" type="enum"/>
                                     </Marker>
-                                    <String>Parkinsons sjukdom och parkinsonism</String>
+                                    <String>#1;Parkinsons sjukdom och parkinsonism</String>
                                     <Font>
                                         <FTag value="" type="str"/>
                                         <FLocked value="No" type="enum"/>
@@ -10902,7 +10902,7 @@
                                         <MCurrPage value="986" type="str"/>
                                         <Unique value="1068509" type="enum"/>
                                     </Marker>
-                                    <String>Faser i sjukdomen</String>
+                                    <String>#4;Faser i sjukdomen</String>
                                 </ParaLine>
                             </Para>
                             <Para>
@@ -11066,7 +11066,7 @@
                                         <MCurrPage value="984" type="str"/>
                                         <Unique value="1068500" type="enum"/>
                                     </Marker>
-                                    <String>Typiska rörelserelaterade symtom vid </String>
+                                    <String>#2;Typiska rörelserelaterade symtom vid </String>
                                     <Char value="HardReturn" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
@@ -11162,6 +11162,7 @@
                                 <PgfTag value="FaktaRub1" type="str"/>
                                 <PgfReferenced value="Yes" type="enum"/>
                                 <ParaLine>
+                                    <String>#3;</String>
                                     <Marker>
                                         <MType value="9" type="enum"/>
                                         <MTypeName value="Cross-Ref" type="str"/>
@@ -12089,7 +12090,7 @@
                                         <XRefSrcText value="74832: Rub3: Neuropatisk smärta\x0d " type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;Q1_SMA_Smartbehandl_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382865855 550000" type="num"/>
+                                        <XRefLastUpdate value="1385403079 446000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -12102,7 +12103,7 @@
                                         <FTag value="Blue" type="str"/>
                                         <FLocked value="No" type="enum"/>
                                     </Font>
-                                    <String>899</String>
+                                    <String>898</String>
                                     <Font>
                                         <FTag value="" type="str"/>
                                         <FLocked value="No" type="enum"/>
@@ -12484,7 +12485,7 @@
                                         <MCurrPage value="986" type="str"/>
                                         <Unique value="1068526" type="enum"/>
                                     </Marker>
-                                    <String>Behandlingskomplikationer</String>
+                                    <String>#5;Behandlingskomplikationer</String>
                                 </ParaLine>
                             </Para>
                             <Para>
@@ -13652,7 +13653,7 @@
                                         <MCurrPage value="988" type="str"/>
                                         <Unique value="1068534" type="enum"/>
                                     </Marker>
-                                    <String>Terminologi vid behandling av </String>
+                                    <String>#6;Terminologi vid behandling av </String>
                                     <Char value="HardReturn" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
@@ -18838,7 +18839,7 @@
                     <XRefSrcText value="49118: FaktaRub1: Parkinsons sjukdom och parkinsonism – ICD-10" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865855 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 403000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -18943,7 +18944,7 @@
                     <XRefSrcText value="28021: FaktaRub1: Typiska rörelserelaterade symtom vid tidig fas av" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865855 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 403000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -18967,7 +18968,7 @@
                     <XRefSrcText value="80462: FaktaRub1: Faktorer som talar emot diagnosen Parkinsons sjuk" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865855 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 403000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -20045,7 +20046,7 @@
                     <XRefSrcText value="77242: FaktaRub1: Faser i sjukdomen" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865855 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 403000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -20228,7 +20229,7 @@
                     <XRefSrcText value="21416: FaktaRub1: Behandlingskomplikationer" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865855 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 403000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -20263,7 +20264,7 @@
                     <XRefSrcText value="21416: FaktaRub1: Behandlingskomplikationer" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865855 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 403000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -21161,7 +21162,7 @@
                     <XRefSrcText value="46110: FaktaRub1: Terminologi vid behandling av Parkinsons sjukdom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865855 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 403000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -22876,7 +22877,7 @@
                     <XRefSrcText value="25967: TabellRekRub: Terapirekommendationer – Behandling av Parkinsons sjukdom (3–6)" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865855 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 403000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -22901,7 +22902,7 @@
                     <XRefSrcText value="25967: TabellRekRub: Terapirekommendationer – Behandling av Parkinsons sjukdom (3–6)" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865855 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 403000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -22971,7 +22972,7 @@
                     <XRefSrcText value="25967: TabellRekRub: Terapirekommendationer – Behandling av Parkinsons sjukdom (3–6)" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865855 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 403000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -22996,7 +22997,7 @@
                     <XRefSrcText value="25967: TabellRekRub: Terapirekommendationer – Behandling av Parkinsons sjukdom (3–6)" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865855 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 403000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -23122,7 +23123,7 @@
                     <XRefSrcText value="25967: TabellRekRub: Terapirekommendationer – Behandling av Parkinsons sjukdom (3–6)" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865855 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 403000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -23152,7 +23153,7 @@
                     <XRefSrcText value="25967: TabellRekRub: Terapirekommendationer – Behandling av Parkinsons sjukdom (3–6)" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865855 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 403000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -23176,7 +23177,7 @@
                     <XRefSrcText value="30864: TabellRekRub: Terapirekommendationer – Behandling av ortostatisk hypotension" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865855 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 403000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -23497,7 +23498,7 @@
                     <XRefSrcText value="59944: TabellRekRub: Terapirekommendationer – Kvarvarande rörelserelaterade symtom (3–6)" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865855 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 403000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -23522,7 +23523,7 @@
                     <XRefSrcText value="59944: TabellRekRub: Terapirekommendationer – Kvarvarande rörelserelaterade symtom (3–6)" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865855 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 403000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -23878,7 +23879,7 @@
                     <XRefSrcText value="30864: TabellRekRub: Terapirekommendationer – Behandling av ortostatisk hypotension" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865855 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 403000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -24721,7 +24722,7 @@
                     <XRefSrcText value="20578: Rub1: Sömnfysiologi och diagnos" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;S1_PSY_Somnstorn_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688944 513000" type="num"/>
+                    <XRefLastUpdate value="1385403079 412000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -24952,7 +24953,7 @@
                     <XRefSrcText value="41010: KapRub: Sömnstörningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;S1_PSY_Somnstorn_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688944 513000" type="num"/>
+                    <XRefLastUpdate value="1385403079 412000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25616,7 +25617,7 @@
                     <XRefSrcText value="53500: KapRub: Demens" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;S7_PSY_Demens_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688944 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 426000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25749,7 +25750,7 @@
                     <XRefSrcText value="89243: Rub2: Lewy body-demens och demens vid Parkinsons sjukdom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;S7_PSY_Demens_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688944 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 426000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25901,7 +25902,7 @@
                     <XRefSrcText value="70377: TabellRubrik_1sp: Tabell 1. Multidisciplinära team med tydliga rollfördelningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865855 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 403000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25949,7 +25950,7 @@
                     <XRefSrcText value="70377: TabellRubrik_1sp: Tabell 1. Multidisciplinära team med tydliga rollfördelningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865855 530000" type="num"/>
+                    <XRefLastUpdate value="1385403079 403000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>

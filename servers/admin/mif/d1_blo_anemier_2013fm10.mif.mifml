@@ -6235,8 +6235,8 @@
     <Document>
         <DViewRect value="18 20 923 764 " type="enum"/>
         <DWindowRect value="0 0 1272 1044 " type="enum"/>
-        <DViewScale value="140.0%" type="num"/>
-        <DNextUnique value="1068014" type="enum"/>
+        <DViewScale value="100.0%" type="num"/>
+        <DNextUnique value="1068034" type="enum"/>
         <DPageSize value="170.0 mm 240.0 mm" type="num"/>
         <DMenuBar value="" type="str"/>
         <DVoMenuBar value="" type="str"/>
@@ -6394,12 +6394,12 @@
         <DPDFDestsMarked value="Yes" type="enum"/>
         <DPDFStructure value="No" type="enum"/>
         <DPDFStructureDefined value="Yes" type="enum"/>
-        <DPDFBookmarks value="Yes" type="enum"/>
+        <DPDFBookmarks value="No" type="enum"/>
         <DPDFConvertCMYK value="No" type="enum"/>
-        <DPDFOpenPage value="239" type="str"/>
+        <DPDFOpenPage value="253" type="str"/>
         <DPDFFit value="Page" type="enum"/>
         <DPDFZoom value="0.0%" type="num"/>
-        <DPDFJobOptions value="Standard" type="str"/>
+        <DPDFJobOptions value="High Quality Print" type="str"/>
         <DPDFSaveSeparate value="No" type="enum"/>
         <DPDFRegMarks value="None" type="enum"/>
         <DPDFPageSizeSet value="No" type="enum"/>
@@ -6419,7 +6419,7 @@
         </PDFDocInfo>
         <DocFileInfo value="
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D30392D32375430393A34373A33362B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D30392D32375430393A34373A33362B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D31302D32355431383A35373A31392B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D31302D32355431383A35373A31392B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E416E656D69657220E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 20202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 2020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
@@ -38987,7 +38987,7 @@
                                         <MCurrPage value="267" type="str"/>
                                         <Unique value="1065763" type="enum"/>
                                     </Marker>
-                                    <String>Screeningundersökning vid anemi </String>
+                                    <String>#2;Screeningundersökning vid anemi </String>
                                     <Char value="HardReturn" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
@@ -39523,6 +39523,7 @@
                                 </Pgf>
                                 <PgfReferenced value="Yes" type="enum"/>
                                 <ParaLine>
+                                    <String>#1;</String>
                                     <Marker>
                                         <MType value="9" type="enum"/>
                                         <MTypeName value="Cross-Ref" type="str"/>
@@ -39864,7 +39865,7 @@
                                         <MCurrPage value="269" type="str"/>
                                         <Unique value="1065780" type="enum"/>
                                     </Marker>
-                                    <String>Läkemedel som kan utlösa hemolys </String>
+                                    <String>#4;Läkemedel som kan utlösa hemolys </String>
                                     <Char value="HardReturn" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
@@ -40132,7 +40133,7 @@
                                         <MCurrPage value="268" type="str"/>
                                         <Unique value="1065755" type="enum"/>
                                     </Marker>
-                                    <String>Vanliga </String>
+                                    <String>#3;Vanliga </String>
                                     <Marker>
                                         <MType value="2" type="enum"/>
                                         <MTypeName value="Index" type="str"/>
@@ -47154,7 +47155,7 @@
                     <XRefSrcText value="52093: TabellRubrik_1sp: Tabell 1. Vanliga anemisymtom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -47260,7 +47261,7 @@
                     <XRefSrcText value="52093: TabellRubrik_1sp: Tabell 1. Vanliga anemisymtom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -47354,7 +47355,7 @@
                     <XRefSrcText value="30157: Rub2: Restless legs syndrom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;R1_NEU_AllmNeurolMS_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688936 618000" type="num"/>
+                    <XRefLastUpdate value="1385402239 505000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -47772,7 +47773,7 @@
                     <XRefSrcText value="71788: FigurNr: Figur 1. Anemiutredning med utgångspunkt från MCV och retikulocy" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -48014,7 +48015,7 @@
                     <XRefSrcText value="91242: Rub1: \x0d Sekundär anemi och funktionell järnbrist (FID)\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -48353,7 +48354,7 @@
                     <XRefSrcText value="10229: Rub3: Kronisk autoimmun gastrit" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -48749,7 +48750,7 @@
                     <XRefSrcText value="74441: Rub1: \x0d Hemolytisk anemi\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -48781,7 +48782,7 @@
                     <XRefSrcText value="71345: Rub2: Kronisk lymfatisk leukemi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;J2_ONK_HematMaligniteter_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688936 633000" type="num"/>
+                    <XRefLastUpdate value="1385402239 519000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -48999,7 +49000,7 @@
                     <XRefSrcText value="72270: FigurNr: Figur 2. Tidsförloppet för utveckling av olika laboratoriepar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -49245,7 +49246,7 @@
                     <XRefSrcText value="32267: Rub2: Anemi\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;I1+2_GYN_SjukdLmGravAmning_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688936 648000" type="num"/>
+                    <XRefLastUpdate value="1385402239 534000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -49530,7 +49531,7 @@
                     <XRefSrcText value="72863: Rub1: Koloncancer" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;B7_MAG_AnorektSjukdom_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 550000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -49565,7 +49566,7 @@
                     <XRefSrcText value="34743: Rub1: Kolondivertiklar/divertikulit" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;B7_MAG_AnorektSjukdom_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 550000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -49598,7 +49599,7 @@
                     <XRefSrcText value="10310: Rub3: Ventrikelulcus" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;B1_MAG_StrupeSackTarm_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382863656 563000" type="num"/>
+                    <XRefLastUpdate value="1385402239 565000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -49848,7 +49849,7 @@
                     <XRefSrcText value="50091: Rub1: \x0d Perniciös anemi\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -49924,7 +49925,7 @@
                     <XRefSrcText value="73054: TabellRekRub: Terapirekommendationer – Eradikering av Helicobacter pylori" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;B1_MAG_StrupeSackTarm_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382863656 563000" type="num"/>
+                    <XRefLastUpdate value="1385402239 565000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -49949,7 +49950,7 @@
                     <XRefSrcText value="73054: TabellRekRub: Terapirekommendationer – Eradikering av Helicobacter pylori" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;B1_MAG_StrupeSackTarm_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382863656 563000" type="num"/>
+                    <XRefLastUpdate value="1385402239 565000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -50472,7 +50473,7 @@
                     <XRefSrcText value="73255: TabellRekRub: Terapirekommendationer – Behandling av järnbristanemi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -51151,7 +51152,7 @@
                     <XRefSrcText value="14354: Rub2: Absolut järnbrist \x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -51306,7 +51307,7 @@
                     <XRefSrcText value="83010: FigurNr: Figur 3. Figuren illustrerar mekanismen vid funktionell järnbri" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -51331,7 +51332,7 @@
                     <XRefSrcText value="83010: FigurNr: Figur 3. Figuren illustrerar mekanismen vid funktionell järnbri" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -51444,7 +51445,7 @@
                     <XRefSrcText value="49440: TabellRubrik_2sp: Tabell 2. Diagnostik av “vanlig” järnbristanemi, ACD med FID respektiv" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -51738,7 +51739,7 @@
                     <XRefSrcText value="45044: Rub1: \x0d Anamnes och patientundersökning\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -51873,7 +51874,7 @@
                     <XRefSrcText value="42407: FaktaRub1: Utredning av makrocytär anemi med isolerad B12-brist \x0d (där" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -51898,7 +51899,7 @@
                     <XRefSrcText value="42407: FaktaRub1: Utredning av makrocytär anemi med isolerad B12-brist \x0d (där" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -52066,7 +52067,7 @@
                     <XRefSrcText value="15832: TabellRekRub: Terapirekommendationer – Behandling av brist på vitamin B12 och folat" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -52091,7 +52092,7 @@
                     <XRefSrcText value="15832: TabellRekRub: Terapirekommendationer – Behandling av brist på vitamin B12 och folat" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -52342,7 +52343,7 @@
                     <XRefSrcText value="86107: Rub3efterRub2: Metformin" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;K1_END_DiabetMellitus_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688936 698000" type="num"/>
+                    <XRefLastUpdate value="1385402239 584000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -52382,7 +52383,7 @@
                     <XRefSrcText value="87120: Rub2: Information till den fertila kvinnan\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;I1+2_GYN_SjukdLmGravAmning_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688936 648000" type="num"/>
+                    <XRefLastUpdate value="1385402239 534000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -52631,7 +52632,7 @@
                     <XRefSrcText value="42407: FaktaRub1: Utredning av makrocytär anemi med isolerad B12-brist \x0d (där" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -52722,7 +52723,7 @@
                     <XRefSrcText value="87120: Rub2: Information till den fertila kvinnan\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;I1+2_GYN_SjukdLmGravAmning_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688936 648000" type="num"/>
+                    <XRefLastUpdate value="1385402239 534000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -52903,7 +52904,7 @@
                     <XRefSrcText value="15832: TabellRekRub: Terapirekommendationer – Behandling av brist på vitamin B12 och folat" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -52975,7 +52976,7 @@
                     <XRefSrcText value="65625: FaktaRub1: Vanliga hemolytiska anemier hos barn" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -53003,7 +53004,7 @@
                     <XRefSrcText value="65625: FaktaRub1: Vanliga hemolytiska anemier hos barn" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -53159,7 +53160,7 @@
                     <XRefSrcText value="50988: Rub3: Erytrocytär orsak till hemolys" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -53349,7 +53350,7 @@
                     <XRefSrcText value="71345: Rub2: Kronisk lymfatisk leukemi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;J2_ONK_HematMaligniteter_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688936 633000" type="num"/>
+                    <XRefLastUpdate value="1385402239 519000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -53729,7 +53730,7 @@
                     <XRefSrcText value="16749: Rub1: Myelodysplastiskt syndrom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;J2_ONK_HematMaligniteter_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688936 633000" type="num"/>
+                    <XRefLastUpdate value="1385402239 519000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -54018,7 +54019,7 @@
                     <XRefSrcText value="95892: Rub2efterRub1: Myeloproliferativa neoplasier" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;J2_ONK_HematMaligniteter_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688936 633000" type="num"/>
+                    <XRefLastUpdate value="1385402239 519000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -54096,7 +54097,7 @@
                     <XRefSrcText value="88221: FaktaRub1: Screeningundersökning vid anemi hos barn" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -54121,7 +54122,7 @@
                     <XRefSrcText value="88221: FaktaRub1: Screeningundersökning vid anemi hos barn" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -54207,7 +54208,7 @@
                     <XRefSrcText value="65176: FigurNr: Figur 1. Hur retikulocyttalet kan användas för att avgöra typen av anemi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -54423,7 +54424,7 @@
                     <XRefSrcText value="23803: Rub2: Mikrocytär anemi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -55195,7 +55196,7 @@
                     <XRefSrcText value="38396: Rub2: Normocytär anemi\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -55422,7 +55423,7 @@
                     <XRefSrcText value="74441: Rub1: \x0d Hemolytisk anemi\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -55820,7 +55821,7 @@
                     <XRefSrcText value="34533: FaktaRub1: Läkemedel som kan utlösa hemolys vid G6PD" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863656 543000" type="num"/>
+                    <XRefLastUpdate value="1385402239 491000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -56666,7 +56667,7 @@
                     <XRefSrcText value="78740: Rub3: Hematologisk onkologi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;J0_ONK_ForsattsBlad_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688936 708000" type="num"/>
+                    <XRefLastUpdate value="1383750728 549000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>

@@ -5697,7 +5697,7 @@
         <DViewRect value="18 20 923 764 " type="enum"/>
         <DWindowRect value="0 0 1272 1044 " type="enum"/>
         <DViewScale value="112.2%" type="num"/>
-        <DNextUnique value="1048332" type="enum"/>
+        <DNextUnique value="1048366" type="enum"/>
         <DPageSize value="170.0 mm 240.0 mm" type="num"/>
         <DMenuBar value="" type="str"/>
         <DVoMenuBar value="" type="str"/>
@@ -5855,7 +5855,7 @@
         <DPDFDestsMarked value="Yes" type="enum"/>
         <DPDFStructure value="No" type="enum"/>
         <DPDFStructureDefined value="Yes" type="enum"/>
-        <DPDFBookmarks value="Yes" type="enum"/>
+        <DPDFBookmarks value="No" type="enum"/>
         <DPDFConvertCMYK value="No" type="enum"/>
         <DPDFOpenPage value="1016" type="str"/>
         <DPDFFit value="Page" type="enum"/>
@@ -5881,7 +5881,7 @@
         </PDFDocInfo>
         <DocFileInfo value="
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130392D30322D32375431303A35363A31312B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D30392D32375431303A32353A35392B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D30392D32375431303A32353A35392B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130392D30322D32375431303A35363A31312B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D31302D32355431393A31323A30382B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D31302D32355431393A31323A30382B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223EC3856E67657374206F6368206F726F20E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 20202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
@@ -10636,6 +10636,7 @@
                                 <PgfTag value="FaktaRub1" type="str"/>
                                 <PgfReferenced value="Yes" type="enum"/>
                                 <ParaLine>
+                                    <String>#3;</String>
                                     <Marker>
                                         <MType value="9" type="enum"/>
                                         <MTypeName value="Cross-Ref" type="str"/>
@@ -10952,7 +10953,6 @@
                         <PgfNumFormat value="T:Tabell &lt;n+&gt;:\x11 " type="str"/>
                         <PgfNumberFont value="" type="str"/>
                         <PgfNumAtEnd value="No" type="enum"/>
-                        <PgfAcrobatLevel value="26" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                         <PgfCellMargins value="0.0 pt 0.0 pt 0.0 pt 0.0 pt" type="num"/>
                     </Pgf>
@@ -11968,7 +11968,7 @@
                                         <MCurrPage value="1022" type="str"/>
                                         <Unique value="1047390" type="enum"/>
                                     </Marker>
-                                    <String>Livstidsrisk att utveck</String>
+                                    <String>#1;Livstidsrisk att utveck</String>
                                     <AFrame value="5" type="enum"/>
                                     <String>la ett </String>
                                     <Char value="HardReturn" type="enum"/>
@@ -12247,7 +12247,7 @@
                                         <MCurrPage value="1027" type="str"/>
                                         <Unique value="1045352" type="enum"/>
                                     </Marker>
-                                    <String>Bensodiazepiner vid ångest</String>
+                                    <String>#4;Bensodiazepiner vid ångest</String>
                                 </ParaLine>
                             </Para>
                             <Para>
@@ -12358,7 +12358,7 @@
                                         <MCurrPage value="1023" type="str"/>
                                         <Unique value="1047399" type="enum"/>
                                     </Marker>
-                                    <String>Ökad risk för andra sjukdoma</String>
+                                    <String>#2;Ökad risk för andra sjukdoma</String>
                                     <AFrame value="4" type="enum"/>
                                     <String>r vid </String>
                                     <Char value="HardReturn" type="enum"/>
@@ -12549,7 +12549,7 @@
                                         <MCurrPage value="1032" type="str"/>
                                         <Unique value="1042766" type="enum"/>
                                     </Marker>
-                                    <String>Läkemedelsbehandling av ångest-</String>
+                                    <String>#5;Läkemedelsbehandling av ångest-</String>
                                     <Char value="HardReturn" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
@@ -12743,6 +12743,7 @@
                                 <PgfTag value="FaktaRub1" type="str"/>
                                 <PgfReferenced value="Yes" type="enum"/>
                                 <ParaLine>
+                                    <String>#6;</String>
                                     <Marker>
                                         <MType value="9" type="enum"/>
                                         <MTypeName value="Cross-Ref" type="str"/>
@@ -14140,7 +14141,7 @@
                                         <XRefSrcText value="25606: TabellRubrik_2sp: Tabell 1. Evidensbaserad psykoterapeutisk behandling av olika ånge" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="" type="str"/>
-                                        <XRefLastUpdate value="1382865959 809000" type="num"/>
+                                        <XRefLastUpdate value="1385403128 543000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -23727,6 +23728,13 @@
                     </Pgf>
                     <PgfReferenced value="Yes" type="enum"/>
                     <ParaLine>
+                        <Marker>
+                            <MType value="9" type="enum"/>
+                            <MTypeName value="Cross-Ref" type="str"/>
+                            <MText value="76763: Footnote: 1. Kapitlet är skrivet innan DSM-5 publicerades i maj" type="str"/>
+                            <MCurrPage value="1022" type="str"/>
+                            <Unique value="1048358" type="enum"/>
+                        </Marker>
                         <String>Kapitlet är skrivet innan DSM-5 publicerades i maj 2013. </String>
                     </ParaLine>
                     <ParaLine>
@@ -23737,7 +23745,7 @@
                             <XRefSrcText value="27184: Rub1: Addendum" type="str"/>
                             <XRefSrcIsElem value="No" type="enum"/>
                             <XRefSrcFile value="" type="str"/>
-                            <XRefLastUpdate value="1382865959 810000" type="num"/>
+                            <XRefLastUpdate value="1385403128 543000" type="num"/>
                             <XRefSrcElemNonUniqueId value="" type="str"/>
                             <XRefAltText value="" type="str"/>
                             <XRefApiClient>
@@ -23800,6 +23808,31 @@
                     <FLocked value="No" type="enum"/>
                 </Font>
                 <String>1</String>
+                <XRef>
+                    <XRefName value="Ref" type="str"/>
+                    <XRefSrcText value="76763: Footnote: 1. Kapitlet är skrivet innan DSM-5 publicerades i maj" type="str"/>
+                    <XRefSrcIsElem value="No" type="enum"/>
+                    <XRefSrcFile value="" type="str"/>
+                    <XRefLastUpdate value="1385403128 543000" type="num"/>
+                    <XRefSrcElemNonUniqueId value="" type="str"/>
+                    <XRefAltText value="" type="str"/>
+                    <XRefApiClient>
+                        <XRefClientName value="" type="str"/>
+                        <XRefClientType value="" type="str"/>
+                    </XRefApiClient>
+                    <Unique value="1048359" type="enum"/>
+                </XRef>
+                <Font>
+                    <FTag value="Ref" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <String> </String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FPosition value="FSuperscript" type="enum"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <XRefEnd />
             </ParaLine>
         </Para>
         <Para>
@@ -24077,7 +24110,7 @@
                     <XRefSrcText value="67676: FaktaRub1: Livstidsrisk att utveckla ett ångestsyndrom om ma" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865959 810000" type="num"/>
+                    <XRefLastUpdate value="1385403128 543000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -24285,7 +24318,7 @@
                     <XRefSrcText value="65931: FaktaRub1: Ökad risk för andra sjukdomar vid ångest- och paniks" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865959 810000" type="num"/>
+                    <XRefLastUpdate value="1385403128 543000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -24675,7 +24708,7 @@
                     <XRefSrcText value="39677: FaktaRub1: Definition av panikattack enligt DSM-IV" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865959 810000" type="num"/>
+                    <XRefLastUpdate value="1385403128 543000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25975,7 +26008,7 @@
                     <XRefSrcText value="67976: Rub1: Centralstimulantia" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;T3_BER_Narkotika_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688944 779000" type="num"/>
+                    <XRefLastUpdate value="1385403128 555000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26546,7 +26579,7 @@
                     <XRefSrcText value="25606: TabellRubrik_2sp: Tabell 1. Evidensbaserad psykoterapeutisk behandling av olika ånge" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865959 809000" type="num"/>
+                    <XRefLastUpdate value="1385403128 543000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26571,7 +26604,7 @@
                     <XRefSrcText value="25606: TabellRubrik_2sp: Tabell 1. Evidensbaserad psykoterapeutisk behandling av olika ånge" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865959 810000" type="num"/>
+                    <XRefLastUpdate value="1385403128 543000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27463,7 +27496,7 @@
                     <XRefSrcText value="60890: TabellRekRub: Terapirekommendationer – Vid behandling av ångestsyndrom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865959 809000" type="num"/>
+                    <XRefLastUpdate value="1385403128 543000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27488,7 +27521,7 @@
                     <XRefSrcText value="60890: TabellRekRub: Terapirekommendationer – Vid behandling av ångestsyndrom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865959 809000" type="num"/>
+                    <XRefLastUpdate value="1385403128 543000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27573,7 +27606,7 @@
                     <XRefSrcText value="37016: TabellRubrik_2sp: Tabell 2. Evidensbaserad farmakologisk behandling av olika ån" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865959 810000" type="num"/>
+                    <XRefLastUpdate value="1385403128 543000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27597,7 +27630,7 @@
                     <XRefSrcText value="60890: TabellRekRub: Terapirekommendationer – Vid behandling av ångestsyndrom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865959 810000" type="num"/>
+                    <XRefLastUpdate value="1385403128 543000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27781,7 +27814,7 @@
                     <XRefSrcText value="97407: FaktaRub1: Bensodiazepiner vid ångest" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865959 809000" type="num"/>
+                    <XRefLastUpdate value="1385403128 542000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27869,7 +27902,7 @@
                     <XRefSrcText value="97407: FaktaRub1: Bensodiazepiner vid ångest" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865959 810000" type="num"/>
+                    <XRefLastUpdate value="1385403128 543000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28515,7 +28548,7 @@
                     <XRefSrcText value="29599: Rub1: Behandling av ungdomar med SSRI" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865959 810000" type="num"/>
+                    <XRefLastUpdate value="1385403128 543000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28979,7 +29012,7 @@
                     <XRefSrcText value="60890: TabellRekRub: Terapirekommendationer – Vid behandling av ångestsyndrom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865959 810000" type="num"/>
+                    <XRefLastUpdate value="1385403128 543000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -29092,7 +29125,7 @@
                     <XRefSrcText value="60890: TabellRekRub: Terapirekommendationer – Vid behandling av ångestsyndrom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865959 810000" type="num"/>
+                    <XRefLastUpdate value="1385403128 543000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30102,7 +30135,7 @@
                     <XRefSrcText value="87083: FaktaRub1: Läkemedelsbehandling av ångestsyndrom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865959 810000" type="num"/>
+                    <XRefLastUpdate value="1385403128 543000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -31188,7 +31221,7 @@
                     <XRefSrcText value="44533: Rub1: Behandling" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;S3_PSY_Forstamning_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688944 799000" type="num"/>
+                    <XRefLastUpdate value="1385399720 393000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -31222,7 +31255,7 @@
                     <XRefSrcText value="47957: Rub1: Läkemedelsbehandling" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;S6_PSY_UtvNeuroPsyk_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688944 814000" type="num"/>
+                    <XRefLastUpdate value="1385399720 403000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -31255,7 +31288,7 @@
                     <XRefSrcText value="38681: Rub1: Läkemedelsbehandling vid demens" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;S7_PSY_Demens_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688944 829000" type="num"/>
+                    <XRefLastUpdate value="1385399720 413000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -31963,7 +31996,7 @@
                     <XRefSrcText value="43205: Rub3efterRub2: Depression \x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;I1+2_GYN_SjukdLmGravAmning_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382865959 819000" type="num"/>
+                    <XRefLastUpdate value="1385403128 572000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -31997,7 +32030,7 @@
                     <XRefSrcText value="76801: Rub1: Graviditet och psykisk sjukdom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;S3_PSY_Forstamning_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688944 799000" type="num"/>
+                    <XRefLastUpdate value="1385399720 393000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -32177,7 +32210,7 @@
                     <XRefSrcText value="43205: Rub3efterRub2: Depression \x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;I1+2_GYN_SjukdLmGravAmning_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382865959 819000" type="num"/>
+                    <XRefLastUpdate value="1385403128 572000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -32220,7 +32253,7 @@
                     <XRefSrcText value="28237: FaktaRub1: Patientföreningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865959 809000" type="num"/>
+                    <XRefLastUpdate value="1385403128 542000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -32245,7 +32278,7 @@
                     <XRefSrcText value="28237: FaktaRub1: Patientföreningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865959 810000" type="num"/>
+                    <XRefLastUpdate value="1385403128 543000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>

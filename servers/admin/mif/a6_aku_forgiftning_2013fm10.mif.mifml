@@ -5811,8 +5811,8 @@
     <Document>
         <DViewRect value="18 20 923 764 " type="enum"/>
         <DWindowRect value="0 0 1272 1044 " type="enum"/>
-        <DViewScale value="112.22%" type="num"/>
-        <DNextUnique value="1056041" type="enum"/>
+        <DViewScale value="98.99%" type="num"/>
+        <DNextUnique value="1056061" type="enum"/>
         <DPageSize value="170.0 mm 240.0 mm" type="num"/>
         <DMenuBar value="" type="str"/>
         <DVoMenuBar value="" type="str"/>
@@ -5970,7 +5970,7 @@
         <DPDFDestsMarked value="Yes" type="enum"/>
         <DPDFStructure value="No" type="enum"/>
         <DPDFStructureDefined value="Yes" type="enum"/>
-        <DPDFBookmarks value="Yes" type="enum"/>
+        <DPDFBookmarks value="No" type="enum"/>
         <DPDFConvertCMYK value="No" type="enum"/>
         <DPDFOpenPage value="49" type="str"/>
         <DPDFFit value="Page" type="enum"/>
@@ -5999,7 +5999,7 @@
         </PDFDocInfo>
         <DocFileInfo value="
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D30392D32375430393A33313A33312B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D30392D32375430393A33313A33312B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D31302D32355431383A35323A31352B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D31302D32355431383A35323A31352B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E46C3B672676966746E696E67617220E2809320416E7469646F74626568616E646C696E6720E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020
 20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020
@@ -10819,7 +10819,6 @@
                         <PgfNumFormat value="T:Tabell &lt;n+&gt;:\x11 " type="str"/>
                         <PgfNumberFont value="" type="str"/>
                         <PgfNumAtEnd value="No" type="enum"/>
-                        <PgfAcrobatLevel value="27" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                         <PgfCellAlignment value="Top" type="enum"/>
                         <PgfCellMargins value="0.0 pt 0.0 pt 0.0 pt 0.0 pt" type="num"/>
@@ -11438,6 +11437,17 @@
                                         <MCurrPage value="57" type="str"/>
                                         <Unique value="1053668" type="enum"/>
                                     </Marker>
+                                    <Font>
+                                        <FTag value="TF Tecken fet" type="str"/>
+                                        <FSize value="8.7 pt" type="num"/>
+                                        <FDW value="0.0%" type="num"/>
+                                        <FLocked value="No" type="enum"/>
+                                    </Font>
+                                    <String>#1;</String>
+                                    <Font>
+                                        <FTag value="" type="str"/>
+                                        <FLocked value="No" type="enum"/>
+                                    </Font>
                                     <String>Så här når du </String>
                                     <Char value="HardReturn" type="enum"/>
                                 </ParaLine>
@@ -16043,7 +16053,7 @@
                     <XRefSrcText value="84185: FaktaRub1: Så här når du Giftinformationscentralen (GIC)" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 137000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16223,7 +16233,7 @@
                     <XRefSrcText value="20272: Rub1: Arsenikföreningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16260,7 +16270,7 @@
                     <XRefSrcText value="72010: Rub1: Bariumföreningar, lösliga" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16297,7 +16307,7 @@
                     <XRefSrcText value="73470: Rub1: Belladonnaalkaloider" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16334,7 +16344,7 @@
                     <XRefSrcText value="86280: Rub1: Bly" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16371,7 +16381,7 @@
                     <XRefSrcText value="16785: Rub1: Botulinustoxiner" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16408,7 +16418,7 @@
                     <XRefSrcText value="73293: Rub1: Brandrök" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16445,7 +16455,7 @@
                     <XRefSrcText value="44902: Rub1: Cyanidföreningar, cyanväte" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16525,7 +16535,7 @@
                     <XRefSrcText value="29978: Rub1: Etylenglykol" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16562,7 +16572,7 @@
                     <XRefSrcText value="71532: Rub1: Fenol och fenolliknande ämnen" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16599,7 +16609,7 @@
                     <XRefSrcText value="43316: Rub1: Fisksting" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16636,7 +16646,7 @@
                     <XRefSrcText value="55931: Rub1: Fluorider" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16673,7 +16683,7 @@
                     <XRefSrcText value="99504: Rub1: Fluorvätesyra" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16710,7 +16720,7 @@
                     <XRefSrcText value="54602: Rub1: Karbamater" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16747,7 +16757,7 @@
                     <XRefSrcText value="79176: Rub1: Kolmonoxid" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16784,7 +16794,7 @@
                     <XRefSrcText value="79270: Rub1: Kopparföreningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16821,7 +16831,7 @@
                     <XRefSrcText value="51566: Rub1: Kvicksilver och kvicksilverföreningar, oorganiska" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16858,7 +16868,7 @@
                     <XRefSrcText value="72935: Rub1: Malign hypertermi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16895,7 +16905,7 @@
                     <XRefSrcText value="72693: Rub1: Malignt neuroleptikasyndrom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16932,7 +16942,7 @@
                     <XRefSrcText value="40307: Rub1: Metanol" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16969,7 +16979,7 @@
                     <XRefSrcText value="81281: Rub1: Methemoglobinemi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17006,7 +17016,7 @@
                     <XRefSrcText value="13648: Rub1: Nervgaser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17072,7 +17082,7 @@
                     <XRefSrcText value="11930: Rub1: Nitrösa gaser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17115,7 +17125,7 @@
                     <XRefSrcText value="22454: Rub1: Organiska fosforföreningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17158,7 +17168,7 @@
                     <XRefSrcText value="14958: Rub1: Ormbett" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17201,7 +17211,7 @@
                     <XRefSrcText value="82867: Rub1: Oxalsyra, oxalater" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17244,7 +17254,7 @@
                     <XRefSrcText value="22503: Rub1: Retande gaser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17287,7 +17297,7 @@
                     <XRefSrcText value="26227: Rub1: Senapsgas" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17330,7 +17340,7 @@
                     <XRefSrcText value="92946: Rub1: Serotonergt syndrom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17373,7 +17383,7 @@
                     <XRefSrcText value="21623: Rub1: Superwarfariner" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17416,7 +17426,7 @@
                     <XRefSrcText value="77128: Rub1: Svampar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17459,7 +17469,7 @@
                     <XRefSrcText value="40772: Rub1: Svavelväte" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17502,7 +17512,7 @@
                     <XRefSrcText value="16889: Rub1: Tårgaser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17669,7 +17679,7 @@
                     <XRefSrcText value="99504: Rub1: Fluorvätesyra" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17710,7 +17720,7 @@
                     <XRefSrcText value="82867: Rub1: Oxalsyra, oxalater" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -19175,7 +19185,7 @@
                     <XRefSrcText value="22503: Rub1: Retande gaser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -19378,7 +19388,7 @@
                     <XRefSrcText value="73293: Rub1: Brandrök" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -19405,7 +19415,7 @@
                     <XRefSrcText value="44902: Rub1: Cyanidföreningar, cyanväte" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -19435,7 +19445,7 @@
                     <XRefSrcText value="79176: Rub1: Kolmonoxid" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -19472,7 +19482,7 @@
                     <XRefSrcText value="13648: Rub1: Nervgaser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 137000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -19789,7 +19799,7 @@
                     <XRefSrcText value="71532: Rub1: Fenol och fenolliknande ämnen" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -19815,7 +19825,7 @@
                     <XRefSrcText value="99504: Rub1: Fluorvätesyra" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -20172,7 +20182,7 @@
                     <XRefSrcText value="71532: Rub1: Fenol och fenolliknande ämnen" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -20215,7 +20225,7 @@
                     <XRefSrcText value="99504: Rub1: Fluorvätesyra" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -20861,7 +20871,7 @@
                     <XRefSrcText value="22503: Rub1: Retande gaser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -22567,7 +22577,7 @@
                     <XRefSrcText value="88889: TabellRubrik_1sp: Tabell 1. Skadliga ämnen i brandrök" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 137000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -22807,7 +22817,7 @@
                     <XRefSrcText value="79176: Rub1: Kolmonoxid" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -22855,7 +22865,7 @@
                     <XRefSrcText value="22503: Rub1: Retande gaser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -24652,7 +24662,7 @@
                     <XRefSrcText value="81281: Rub1: Methemoglobinemi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -24895,7 +24905,7 @@
                     <XRefSrcText value="22503: Rub1: Retande gaser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 137000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25372,7 +25382,7 @@
                     <XRefSrcText value="99504: Rub1: Fluorvätesyra" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 137000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26514,7 +26524,7 @@
                     <XRefSrcText value="22503: Rub1: Retande gaser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 137000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26826,7 +26836,7 @@
                     <XRefSrcText value="22454: Rub1: Organiska fosforföreningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 137000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27286,7 +27296,7 @@
                     <XRefSrcText value="73293: Rub1: Brandrök" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27804,7 +27814,7 @@
                     <XRefSrcText value="15339: Rub2: Peroral exponering" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 137000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28233,7 +28243,7 @@
                     <XRefSrcText value="20272: Rub1: Arsenikföreningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 137000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28349,7 +28359,7 @@
                     <XRefSrcText value="22503: Rub1: Retande gaser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 137000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -29466,7 +29476,7 @@
                     <XRefSrcText value="29978: Rub1: Etylenglykol" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 137000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -29534,7 +29544,7 @@
                     <XRefSrcText value="29978: Rub1: Etylenglykol" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 137000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30608,7 +30618,7 @@
                     <XRefSrcText value="22454: Rub1: Organiska fosforföreningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 136000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30880,7 +30890,7 @@
                     <XRefSrcText value="22503: Rub1: Retande gaser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 137000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30913,7 +30923,7 @@
                     <XRefSrcText value="81281: Rub1: Methemoglobinemi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 137000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -31733,7 +31743,7 @@
                     <XRefSrcText value="76028: KapRub: Anafylaxi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;A3_AKU_Anafylaxi_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382862691 146000" type="num"/>
+                    <XRefLastUpdate value="1385401935 60000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -34042,7 +34052,7 @@
                     <XRefSrcText value="22503: Rub1: Retande gaser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 137000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -36165,7 +36175,7 @@
                     <XRefSrcText value="22503: Rub1: Retande gaser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 137000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -36295,7 +36305,7 @@
                     <XRefSrcText value="22503: Rub1: Retande gaser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382862691 137000" type="num"/>
+                    <XRefLastUpdate value="1385401935 48000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -36468,7 +36478,7 @@
                     <XRefSrcText value="32247: KapRub: Akutmedicin på vårdcentral och andra vårdenheter" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;A4_AKU_AkutMedVC_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382862691 160000" type="num"/>
+                    <XRefLastUpdate value="1385401935 78000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>

@@ -5816,7 +5816,7 @@
         <DViewRect value="18 20 923 764 " type="enum"/>
         <DWindowRect value="0 0 1272 1044 " type="enum"/>
         <DViewScale value="120.0%" type="num"/>
-        <DNextUnique value="1063741" type="enum"/>
+        <DNextUnique value="1063761" type="enum"/>
         <DPageSize value="170.0 mm 240.0 mm" type="num"/>
         <DMenuBar value="" type="str"/>
         <DVoMenuBar value="" type="str"/>
@@ -5974,12 +5974,12 @@
         <DPDFDestsMarked value="Yes" type="enum"/>
         <DPDFStructure value="No" type="enum"/>
         <DPDFStructureDefined value="Yes" type="enum"/>
-        <DPDFBookmarks value="Yes" type="enum"/>
-        <DPDFConvertCMYK value="Yes" type="enum"/>
-        <DPDFOpenPage value="0" type="str"/>
+        <DPDFBookmarks value="No" type="enum"/>
+        <DPDFConvertCMYK value="No" type="enum"/>
+        <DPDFOpenPage value="614" type="str"/>
         <DPDFFit value="Page" type="enum"/>
         <DPDFZoom value="0.0%" type="num"/>
-        <DPDFJobOptions value="Smallest File Size" type="str"/>
+        <DPDFJobOptions value="High Quality Print" type="str"/>
         <DPDFSaveSeparate value="No" type="enum"/>
         <DPDFRegMarks value="None" type="enum"/>
         <DPDFPageSizeSet value="No" type="enum"/>
@@ -5998,7 +5998,7 @@
         </PDFDocInfo>
         <DocFileInfo value="
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D30392D32375431303A30393A31382B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D30392D32375431303A30393A31382B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D31302D32355431393A30343A35372B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D31302D32355431393A30343A35372B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E4F7374656F706F726F73206F6368206672616B74757270726576656E74696F6E20E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020
@@ -10805,7 +10805,7 @@
                                         <MCurrPage value="619" type="str"/>
                                         <Unique value="1060645" type="enum"/>
                                     </Marker>
-                                    <String>Praktiska fall- och </String>
+                                    <String>#4;Praktiska fall- och </String>
                                     <Marker>
                                         <MType value="2" type="enum"/>
                                         <MTypeName value="Index" type="str"/>
@@ -11169,6 +11169,7 @@
                                 <PgfTag value="FaktaRub1" type="str"/>
                                 <PgfReferenced value="Yes" type="enum"/>
                                 <ParaLine>
+                                    <String>#1;</String>
                                     <Marker>
                                         <MType value="9" type="enum"/>
                                         <MTypeName value="Cross-Ref" type="str"/>
@@ -11548,6 +11549,7 @@
                                 <PgfTag value="FaktaRub1" type="str"/>
                                 <PgfReferenced value="Yes" type="enum"/>
                                 <ParaLine>
+                                    <String>#2;</String>
                                     <Marker>
                                         <MType value="9" type="enum"/>
                                         <MTypeName value="Cross-Ref" type="str"/>
@@ -11641,7 +11643,7 @@
                                         <FTag value="" type="str"/>
                                         <FPlatformName value="W.Arial Unicode MS.R.400" type="str"/>
                                         <FFamily value="Arial Unicode MS" type="str"/>
-                                        <FEncoding value="JISX0208.ShiftJIS" type="str"/>
+                                        <FEncoding value="GB2312-80.EUC" type="str"/>
                                         <FLocked value="No" type="enum"/>
                                     </Font>
                                     <String>≤</String>
@@ -11748,7 +11750,7 @@
                                         <MCurrPage value="618" type="str"/>
                                         <Unique value="1060636" type="enum"/>
                                     </Marker>
-                                    <String>Laboratorieprover som tas för </String>
+                                    <String>#3;Laboratorieprover som tas för </String>
                                     <Char value="HardReturn" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
@@ -17574,7 +17576,7 @@
                     <XRefSrcText value="60772: FaktaRub1: Riskfaktorer i FRAX (6)" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382864958 143000" type="num"/>
+                    <XRefLastUpdate value="1385402697 734000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17964,7 +17966,7 @@
                     <XRefSrcText value="25078: FaktaRub1: Bedömning av frakturrisk vid misstanke om osteoporos" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382864958 143000" type="num"/>
+                    <XRefLastUpdate value="1385402697 734000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -18376,7 +18378,7 @@
                     <XRefSrcText value="60152: FaktaRub1: Laboratorieprover som tas för att utesluta andra" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382864958 143000" type="num"/>
+                    <XRefLastUpdate value="1385402697 734000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -18548,7 +18550,7 @@
                     <XRefSrcText value="94041: FaktaRub1: Praktiska fall- och frakturpreventiva insatser\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382864958 143000" type="num"/>
+                    <XRefLastUpdate value="1385402697 734000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -18573,7 +18575,7 @@
                     <XRefSrcText value="94041: FaktaRub1: Praktiska fall- och frakturpreventiva insatser\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382864958 143000" type="num"/>
+                    <XRefLastUpdate value="1385402697 734000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -18713,7 +18715,7 @@
                     <XRefSrcText value="94041: FaktaRub1: Praktiska fall- och frakturpreventiva insatser\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382864958 143000" type="num"/>
+                    <XRefLastUpdate value="1385402697 734000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -18970,7 +18972,7 @@
                     <XRefSrcText value="38388: TabellRekRub: Terapirekommendationer – för patienter med mycket hög respektive låg risk för" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382864958 143000" type="num"/>
+                    <XRefLastUpdate value="1385402697 734000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -18995,7 +18997,7 @@
                     <XRefSrcText value="38388: TabellRekRub: Terapirekommendationer – för patienter med mycket hög respektive låg risk för" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382864958 143000" type="num"/>
+                    <XRefLastUpdate value="1385402697 734000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -19668,7 +19670,7 @@
                     <XRefSrcText value="38388: TabellRekRub: Terapirekommendationer – för patienter med mycket hög respektive låg risk för" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382864958 143000" type="num"/>
+                    <XRefLastUpdate value="1385402697 734000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -19693,7 +19695,7 @@
                     <XRefSrcText value="38388: TabellRekRub: Terapirekommendationer – för patienter med mycket hög respektive låg risk för" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382864958 143000" type="num"/>
+                    <XRefLastUpdate value="1385402697 734000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -19867,7 +19869,7 @@
                     <XRefSrcText value="36887: Rub1: Käkbensnekroser relaterade till bisfosfonater, biolog" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;N2_AND_Munhala_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688940 496000" type="num"/>
+                    <XRefLastUpdate value="1385402697 754000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -20503,7 +20505,7 @@
                     <XRefSrcText value="94524: Rub2: Osteoporosrisk" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;K4_END_KortikoHypofys_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688940 478000" type="num"/>
+                    <XRefLastUpdate value="1385402697 744000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -20584,7 +20586,7 @@
                     <XRefSrcText value="94524: Rub2: Osteoporosrisk" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;K4_END_KortikoHypofys_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688940 478000" type="num"/>
+                    <XRefLastUpdate value="1385402697 744000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -21129,7 +21131,7 @@
                     <XRefSrcText value="89705: Rub2: \x0d Kalcium och vitamin D\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382864958 143000" type="num"/>
+                    <XRefLastUpdate value="1385402697 734000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>

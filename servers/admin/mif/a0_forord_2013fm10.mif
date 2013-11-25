@@ -4665,6 +4665,33 @@
   <FColor `Black'>
  > # end of Font
  <Font 
+  <FTag `LänkSidhuvud'>
+  <FPlatformName `W.Frutiger LT Std 45 Light.R.700'>
+  <FFamily `Frutiger LT Std 45 Light'>
+  <FVar `Regular'>
+  <FWeight `Bold'>
+  <FAngle `Regular'>
+  <FPostScriptName `FrutigerLTStd-Bold'>
+  <FEncoding `FrameRoman'>
+  <FSize  9.0 pt>
+  <FUnderlining FNoUnderlining>
+  <FOverline No>
+  <FStrike No>
+  <FChangeBar No>
+  <FOutline No>
+  <FShadow No>
+  <FPairKern Yes>
+  <FTsume No>
+  <FCase FAsTyped>
+  <FPosition FNormal>
+  <FDW  0.0%>
+  <FStretch  100.0%>
+  <FLanguage Swedish>
+  <FLocked No>
+  <FSeparation 4>
+  <FColor `Blue'>
+ > # end of Font
+ <Font 
   <FTag `Nedsänkt'>
   <FPosition FSubscript>
   <FLocked No>
@@ -4695,6 +4722,20 @@
   <FLocked No>
   <FSeparation 0>
   <FColor `Black'>
+ > # end of Font
+ <Font 
+  <FTag `Ref'>
+  <FSize  2.0 pt>
+  <FLocked No>
+  <FSeparation 1>
+  <FColor `White'>
+ > # end of Font
+ <Font 
+  <FTag `Symbol'>
+  <FFamily `Symbol'>
+  <FWeight `Bolded'>
+  <FEncoding `FrameRoman'>
+  <FLocked No>
  > # end of Font
  <Font 
   <FTag `TabellFet'>
@@ -4760,6 +4801,33 @@
   <FPostScriptName `FrutigerLTStd-Bold'>
   <FEncoding `FrameRoman'>
   <FSize  7.0 pt>
+  <FUnderlining FNoUnderlining>
+  <FOverline No>
+  <FStrike No>
+  <FChangeBar No>
+  <FOutline No>
+  <FShadow No>
+  <FPairKern Yes>
+  <FTsume No>
+  <FCase FAsTyped>
+  <FPosition FNormal>
+  <FDW  0.0%>
+  <FStretch  100.0%>
+  <FLanguage Swedish>
+  <FLocked No>
+  <FSeparation 0>
+  <FColor `Black'>
+ > # end of Font
+ <Font 
+  <FTag `TF Tecken fet'>
+  <FPlatformName `W.Frutiger LT Std 45 Light.R.700'>
+  <FFamily `Frutiger LT Std 45 Light'>
+  <FVar `Regular'>
+  <FWeight `Bold'>
+  <FAngle `Regular'>
+  <FPostScriptName `FrutigerLTStd-Bold'>
+  <FEncoding `FrameRoman'>
+  <FSize  8.7 pt>
   <FUnderlining FNoUnderlining>
   <FOverline No>
   <FStrike No>
@@ -5691,7 +5759,7 @@
  > # end of XRefFormat
  <XRefFormat 
   <XRefName `Page'>
-  <XRefDef `<$pagenum\>'>
+  <XRefDef `<Blue\><$pagenum\>'>
  > # end of XRefFormat
  <XRefFormat 
   <XRefName `See Heading & Page'>
@@ -5705,12 +5773,20 @@
   <XRefName `Table Number & Page'>
   <XRefDef `Table\x11 <$paranumonly\> on page\x11 <$pagenum\>'>
  > # end of XRefFormat
+ <XRefFormat 
+  <XRefName `Ref'>
+  <XRefDef `<Ref\> '>
+ > # end of XRefFormat
+ <XRefFormat 
+  <XRefName `ORef'>
+  <XRefDef `<Ref\> '>
+ > # end of XRefFormat
 > # end of XRefFormats
 <Document 
  <DViewRect 18 20 923 764 >
  <DWindowRect 0 0 1272 1044 >
  <DViewScale  100.0%>
- <DNextUnique 1040104>
+ <DNextUnique 1040144>
  <DPageSize  170.0 mm 240.0 mm>
  <DMenuBar `'>
  <DVoMenuBar `'>
@@ -5893,7 +5969,7 @@
  > # end of PDFDocInfo
  <DocFileInfo 
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D30392D32355431303A31353A32332B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D30392D32355431303A31353A32332B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D31302D32355431383A33323A30362B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D31302D32355431383A33323A30362B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E46C3B6726F726420E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 20202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 2020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
@@ -10609,6 +10685,13 @@
        <PgfTag `FaktaText'>
        <PgfReferenced Yes>
        <ParaLine 
+        <Marker 
+         <MType 9>
+         <MTypeName `Cross-Ref'>
+         <MText `75608: FaktaText: Information om indikationer och doser för \x04 läkemede'>
+         <MCurrPage `4'>
+         <Unique 1040139>
+        > # end of Marker
         <String `Information om indikationer och doser för '>
        > # end of ParaLine
        <ParaLine 
@@ -10628,6 +10711,36 @@
        <PgfTag `FaktaTextPunkt'>
        <Pgf 
         <PgfSpBefore  2.0 pt>
+        <PgfFont 
+         <FTag `'>
+         <FPlatformName `W.Frutiger LT Std 55 Roman.R.400'>
+         <FFamily `Frutiger LT Std 55 Roman'>
+         <FVar `Regular'>
+         <FWeight `Regular'>
+         <FAngle `Regular'>
+         <FPostScriptName `FrutigerLTStd-Roman'>
+         <FEncoding `FrameRoman'>
+         <FSize  7.0 pt>
+         <FUnderlining FNoUnderlining>
+         <FOverline No>
+         <FStrike No>
+         <FChangeBar No>
+         <FOutline No>
+         <FShadow No>
+         <FPairKern Yes>
+         <FTsume No>
+         <FCase FAsTyped>
+         <FPosition FNormal>
+         <FDX  0.0%>
+         <FDY  0.0%>
+         <FDW  0.0%>
+         <FStretch  100.0%>
+         <FLanguage Swedish>
+         <FLocked No>
+         <FSeparation 4>
+         <FColor `Blue'>
+         <FBackgroundColor NoColor>
+        > # end of PgfFont
        > # end of Pgf
        <PgfNumString `•\t'>
        <ParaLine 
@@ -10643,6 +10756,36 @@
        <PgfTag `FaktaTextPunkt'>
        <Pgf 
         <PgfSpBefore  2.0 pt>
+        <PgfFont 
+         <FTag `'>
+         <FPlatformName `W.Frutiger LT Std 55 Roman.R.400'>
+         <FFamily `Frutiger LT Std 55 Roman'>
+         <FVar `Regular'>
+         <FWeight `Regular'>
+         <FAngle `Regular'>
+         <FPostScriptName `FrutigerLTStd-Roman'>
+         <FEncoding `FrameRoman'>
+         <FSize  7.0 pt>
+         <FUnderlining FNoUnderlining>
+         <FOverline No>
+         <FStrike No>
+         <FChangeBar No>
+         <FOutline No>
+         <FShadow No>
+         <FPairKern Yes>
+         <FTsume No>
+         <FCase FAsTyped>
+         <FPosition FNormal>
+         <FDX  0.0%>
+         <FDY  0.0%>
+         <FDW  0.0%>
+         <FStretch  100.0%>
+         <FLanguage Swedish>
+         <FLocked No>
+         <FSeparation 4>
+         <FColor `Blue'>
+         <FBackgroundColor NoColor>
+        > # end of PgfFont
        > # end of Pgf
        <PgfNumString `•\t'>
        <ParaLine 
@@ -10658,6 +10801,36 @@
        <PgfTag `FaktaTextPunkt'>
        <Pgf 
         <PgfSpBefore  2.0 pt>
+        <PgfFont 
+         <FTag `'>
+         <FPlatformName `W.Frutiger LT Std 55 Roman.R.400'>
+         <FFamily `Frutiger LT Std 55 Roman'>
+         <FVar `Regular'>
+         <FWeight `Regular'>
+         <FAngle `Regular'>
+         <FPostScriptName `FrutigerLTStd-Roman'>
+         <FEncoding `FrameRoman'>
+         <FSize  7.0 pt>
+         <FUnderlining FNoUnderlining>
+         <FOverline No>
+         <FStrike No>
+         <FChangeBar No>
+         <FOutline No>
+         <FShadow No>
+         <FPairKern Yes>
+         <FTsume No>
+         <FCase FAsTyped>
+         <FPosition FNormal>
+         <FDX  0.0%>
+         <FDY  0.0%>
+         <FDW  0.0%>
+         <FStretch  100.0%>
+         <FLanguage Swedish>
+         <FLocked No>
+         <FSeparation 4>
+         <FColor `Blue'>
+         <FBackgroundColor NoColor>
+        > # end of PgfFont
        > # end of Pgf
        <PgfNumString `•\t'>
        <PgfReferenced Yes>
@@ -10674,6 +10847,36 @@
        <PgfTag `FaktaTextPunkt'>
        <Pgf 
         <PgfSpBefore  2.0 pt>
+        <PgfFont 
+         <FTag `'>
+         <FPlatformName `W.Frutiger LT Std 55 Roman.R.400'>
+         <FFamily `Frutiger LT Std 55 Roman'>
+         <FVar `Regular'>
+         <FWeight `Regular'>
+         <FAngle `Regular'>
+         <FPostScriptName `FrutigerLTStd-Roman'>
+         <FEncoding `FrameRoman'>
+         <FSize  7.0 pt>
+         <FUnderlining FNoUnderlining>
+         <FOverline No>
+         <FStrike No>
+         <FChangeBar No>
+         <FOutline No>
+         <FShadow No>
+         <FPairKern Yes>
+         <FTsume No>
+         <FCase FAsTyped>
+         <FPosition FNormal>
+         <FDX  0.0%>
+         <FDY  0.0%>
+         <FDW  0.0%>
+         <FStretch  100.0%>
+         <FLanguage Swedish>
+         <FLocked No>
+         <FSeparation 4>
+         <FColor `Blue'>
+         <FBackgroundColor NoColor>
+        > # end of PgfFont
        > # end of Pgf
        <PgfNumString `•\t'>
        <PgfReferenced Yes>
@@ -10690,6 +10893,36 @@
        <PgfTag `FaktaTextPunkt'>
        <Pgf 
         <PgfSpBefore  2.0 pt>
+        <PgfFont 
+         <FTag `'>
+         <FPlatformName `W.Frutiger LT Std 55 Roman.R.400'>
+         <FFamily `Frutiger LT Std 55 Roman'>
+         <FVar `Regular'>
+         <FWeight `Regular'>
+         <FAngle `Regular'>
+         <FPostScriptName `FrutigerLTStd-Roman'>
+         <FEncoding `FrameRoman'>
+         <FSize  7.0 pt>
+         <FUnderlining FNoUnderlining>
+         <FOverline No>
+         <FStrike No>
+         <FChangeBar No>
+         <FOutline No>
+         <FShadow No>
+         <FPairKern Yes>
+         <FTsume No>
+         <FCase FAsTyped>
+         <FPosition FNormal>
+         <FDX  0.0%>
+         <FDY  0.0%>
+         <FDW  0.0%>
+         <FStretch  100.0%>
+         <FLanguage Swedish>
+         <FLocked No>
+         <FSeparation 4>
+         <FColor `Blue'>
+         <FBackgroundColor NoColor>
+        > # end of PgfFont
        > # end of Pgf
        <PgfNumString `•\t'>
        <ParaLine 
@@ -24900,8 +25133,8 @@
   <Separation 0>
   <ObColor `Black'>
   <RunaroundType None>
-  <ShapeRect  18.0 mm 18.0 mm 134.0 mm 100.38454 mm>
-  <BRect  18.0 mm 18.0 mm 134.0 mm 100.38454 mm>
+  <ShapeRect  18.0 mm 18.0 mm 134.0 mm 102.23663 mm>
+  <BRect  18.0 mm 18.0 mm 134.0 mm 102.23663 mm>
   <TRNumColumns 2>
   <TRColumnGap  7.0 mm>
   <TRColumnBalance No>
@@ -26207,14 +26440,42 @@
    <String `ekonomi '>
   > # end of ParaLine
   <ParaLine 
-   <TextRectID 139>
    <String `och IT-stöd. I regelverkskapitlen beskrivs de '>
   > # end of ParaLine
   <ParaLine 
+   <TextRectID 139>
    <String `olika lagarna och förordningarna som finns '>
   > # end of ParaLine
   <ParaLine 
-   <String `inom läkemedelsområdet. '>
+   <String `inom läkemedelsområdet. Se även Faktaru'>
+   <Char SoftHyphen>
+  > # end of ParaLine
+  <ParaLine 
+   <String `ta 1.'>
+   <XRef 
+    <XRefName `Ref'>
+    <XRefSrcText `75608: FaktaText: Information om indikationer och doser för \x04 läkemede'>
+    <XRefSrcIsElem No>
+    <XRefSrcFile `'>
+    <XRefLastUpdate  1385400708 305000>
+    <XRefSrcElemNonUniqueId `'>
+    <XRefAltText `'>
+    <XRefApiClient 
+     <XRefClientName `'>
+     <XRefClientType `'>
+    > # end of XRefApiClient
+    <Unique 1040140>
+   > # end of XRef
+   <Font 
+    <FTag `Ref'>
+    <FLocked No>
+   > # end of Font
+   <String ` '>
+   <Font 
+    <FTag `'>
+    <FLocked No>
+   > # end of Font
+   <XRefEnd >
   > # end of ParaLine
  > # end of Para
  <Para 
@@ -30054,55 +30315,18 @@
  <Para 
   <Unique 1036757>
   <Pgf 
-   <PgfFont 
-    <FTag `'>
-    <FPlatformName `W.Frutiger LT Std 45 Light.R.700'>
-    <FFamily `Frutiger LT Std 45 Light'>
-    <FVar `Regular'>
-    <FWeight `Bold'>
-    <FAngle `Regular'>
-    <FPostScriptName `FrutigerLTStd-Bold'>
-    <FEncoding `FrameRoman'>
-    <FSize  18.0 pt>
-    <FUnderlining FNoUnderlining>
-    <FOverline No>
-    <FStrike No>
-    <FChangeBar No>
-    <FOutline No>
-    <FShadow No>
-    <FPairKern No>
-    <FTsume No>
-    <FCase FAsTyped>
-    <FPosition FNormal>
-    <FDX  0.0%>
-    <FDY  0.0%>
-    <FDW  0.0%>
-    <FStretch  100.0%>
-    <FLanguage Swedish>
-    <FLocked No>
-    <FSeparation 0>
-    <FColor `Black'>
-    <FBackgroundColor NoColor>
-   > # end of PgfFont
-   <PgfLeading  4.0 pt>
+   <PgfLeading  6.0 pt>
   > # end of Pgf
   <ParaLine 
-   <Font 
-    <FTag `'>
-    <FSize  28.0 pt>
-    <FLocked No>
-   > # end of Font
    <String `2'>
    <Font 
     <FTag `'>
-    <FSize  28.0 pt>
     <FDW  -5.0%>
     <FLocked No>
    > # end of Font
    <String `01'>
    <Font 
     <FTag `'>
-    <FSize  28.0 pt>
     <FLocked No>
    > # end of Font
    <String `4'>

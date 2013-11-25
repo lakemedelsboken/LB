@@ -5690,7 +5690,7 @@
         <DViewRect value="18 20 923 764 " type="enum"/>
         <DWindowRect value="0 0 1272 1044 " type="enum"/>
         <DViewScale value="112.2%" type="num"/>
-        <DNextUnique value="1050271" type="enum"/>
+        <DNextUnique value="1050288" type="enum"/>
         <DPageSize value="170.0 mm 240.0 mm" type="num"/>
         <DMenuBar value="" type="str"/>
         <DVoMenuBar value="" type="str"/>
@@ -5848,12 +5848,12 @@
         <DPDFDestsMarked value="Yes" type="enum"/>
         <DPDFStructure value="No" type="enum"/>
         <DPDFStructureDefined value="Yes" type="enum"/>
-        <DPDFBookmarks value="Yes" type="enum"/>
-        <DPDFConvertCMYK value="Yes" type="enum"/>
-        <DPDFOpenPage value="0" type="str"/>
+        <DPDFBookmarks value="No" type="enum"/>
+        <DPDFConvertCMYK value="No" type="enum"/>
+        <DPDFOpenPage value="949" type="str"/>
         <DPDFFit value="Page" type="enum"/>
         <DPDFZoom value="0.0%" type="num"/>
-        <DPDFJobOptions value="Smallest File Size" type="str"/>
+        <DPDFJobOptions value="High Quality Print" type="str"/>
         <DPDFSaveSeparate value="No" type="enum"/>
         <DPDFRegMarks value="None" type="enum"/>
         <DPDFPageSizeSet value="No" type="enum"/>
@@ -5874,7 +5874,7 @@
         </PDFDocInfo>
         <DocFileInfo value="
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130392D30322D32375431303A35353A34382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D30392D32375431303A32313A34312B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D30392D32375431303A32313A34312B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130392D30322D32375431303A35353A34382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D31302D32355431393A31303A33312B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D31302D32355431393A31303A33312B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E487576756476C3A4726B20E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 20202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 2020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
@@ -10682,7 +10682,6 @@
                         <HyphenMinSuffix value="3" type="enum"/>
                         <PgfMinWordSpace value="90" type="enum"/>
                         <PgfMaxWordSpace value="110" type="enum"/>
-                        <PgfAcrobatLevel value="25" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                     </Pgf>
                 </TblTitlePgf1>
@@ -11111,7 +11110,7 @@
                                         <MCurrPage value="950" type="str"/>
                                         <Unique value="1048400" type="enum"/>
                                     </Marker>
-                                    <String>Viktiga undersökningsmoment </String>
+                                    <String>#1;Viktiga undersökningsmoment </String>
                                     <Char value="HardReturn" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
@@ -11678,7 +11677,6 @@
                         <HyphenMinSuffix value="3" type="enum"/>
                         <PgfMinWordSpace value="90" type="enum"/>
                         <PgfMaxWordSpace value="110" type="enum"/>
-                        <PgfAcrobatLevel value="25" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                     </Pgf>
                 </TblTitlePgf1>
@@ -13892,7 +13890,6 @@
                         <HyphenMinSuffix value="3" type="enum"/>
                         <PgfMinWordSpace value="90" type="enum"/>
                         <PgfMaxWordSpace value="110" type="enum"/>
-                        <PgfAcrobatLevel value="25" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                     </Pgf>
                 </TblTitlePgf1>
@@ -14461,7 +14458,7 @@
                                         <XRefSrcText value="90355: Rub3: Kognitiv beteendeterapi\x0d " type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;Q1_SMA_Smartbehandl_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382865701 456000" type="num"/>
+                                        <XRefLastUpdate value="1385403031 118000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -15360,7 +15357,6 @@
                         <PgfNumFormat value="T:Tabell &lt;n+&gt;:\x11 " type="str"/>
                         <PgfNumberFont value="" type="str"/>
                         <PgfNumAtEnd value="No" type="enum"/>
-                        <PgfAcrobatLevel value="25" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                         <PgfCellMargins value="0.0 pt 0.0 pt 0.0 pt 0.0 pt" type="num"/>
                     </Pgf>
@@ -18721,7 +18717,7 @@
                                         <MCurrPage value="959" type="str"/>
                                         <Unique value="1048439" type="enum"/>
                                     </Marker>
-                                    <String>Huvudvärksformer hos barn </String>
+                                    <String>#2;Huvudvärksformer hos barn </String>
                                     <Char value="HardReturn" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
@@ -26968,7 +26964,7 @@
                     <XRefSrcText value="50246: TabellRubrik_1sp: Tabell 1. Prevalens i befolkningen (%) av olika specifika huvudvärksdiagnoser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27133,7 +27129,7 @@
                     <XRefSrcText value="95154: Rub1: Huvudvärk hos barn och ungdomar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27503,7 +27499,7 @@
                     <XRefSrcText value="12552: TabellRubrik_2sp: Tabell 2. ”Varningsflaggor” för sekundär huvudvärk" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27528,7 +27524,7 @@
                     <XRefSrcText value="48516: FaktaRub1: Viktiga undersökningsmoment vid huvudvärk" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27552,7 +27548,7 @@
                     <XRefSrcText value="12552: TabellRubrik_2sp: Tabell 2. ”Varningsflaggor” för sekundär huvudvärk" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27731,7 +27727,7 @@
                     <XRefSrcText value="95125: TabellRubrik_2sp: Tabell 3. Differentialdiagnostiskt schema över olika huvudvärkyper" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27756,7 +27752,7 @@
                     <XRefSrcText value="95125: TabellRubrik_2sp: Tabell 3. Differentialdiagnostiskt schema över olika huvudvärkyper" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28004,7 +28000,7 @@
                     <XRefSrcText value="22869: TabellRubrik_2sp: Tabell 4. Schematisk översikt av möjliga behandlingsåtgärder vid huvudvärk av spänningstyp" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28080,7 +28076,7 @@
                     <XRefSrcText value="24717: Rub1: Läkemedelsinducerad huvudvärk" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28160,7 +28156,7 @@
                     <XRefSrcText value="22869: TabellRubrik_2sp: Tabell 4. Schematisk översikt av möjliga behandlingsåtgärder vid huvudvärk av spänningstyp" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28250,7 +28246,7 @@
                     <XRefSrcText value="50246: TabellRubrik_1sp: Tabell 1. Prevalens i befolkningen (%) av olika specifika huvudvärksdiagnoser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28292,7 +28288,7 @@
                     <XRefSrcText value="95125: TabellRubrik_2sp: Tabell 3. Differentialdiagnostiskt schema över olika huvudvärkyper" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28344,7 +28340,7 @@
                     <XRefSrcText value="82624: Rub2: Migrän" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28858,7 +28854,7 @@
                     <XRefSrcText value="81615: TabellRekRub: Terapirekommendationer – Migränbehandling enligt trappstegsmodell för vuxna patienter" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28934,7 +28930,7 @@
                     <XRefSrcText value="81615: TabellRekRub: Terapirekommendationer – Migränbehandling enligt trappstegsmodell för vuxna patienter" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30520,7 +30516,7 @@
                     <XRefSrcText value="81615: TabellRekRub: Terapirekommendationer – Migränbehandling enligt trappstegsmodell för vuxna patienter" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30545,7 +30541,7 @@
                     <XRefSrcText value="81615: TabellRekRub: Terapirekommendationer – Migränbehandling enligt trappstegsmodell för vuxna patienter" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30621,7 +30617,7 @@
                     <XRefSrcText value="81615: TabellRekRub: Terapirekommendationer – Migränbehandling enligt trappstegsmodell för vuxna patienter" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30646,7 +30642,7 @@
                     <XRefSrcText value="81615: TabellRekRub: Terapirekommendationer – Migränbehandling enligt trappstegsmodell för vuxna patienter" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -31545,7 +31541,7 @@
                     <XRefSrcText value="11281: FaktaRub1: Att screena för bipolär sjukdom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;S3_PSY_Forstamning_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688944 111000" type="num"/>
+                    <XRefLastUpdate value="1385403031 78000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -31610,7 +31606,7 @@
                     <XRefSrcText value="11281: FaktaRub1: Att screena för bipolär sjukdom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;S3_PSY_Forstamning_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688944 111000" type="num"/>
+                    <XRefLastUpdate value="1385403031 78000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -32070,7 +32066,7 @@
                     <XRefSrcText value="80557: Rub2: Trigeminusneuralgi och andra neuralgier" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;R1_NEU_AllmNeurolMS_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382865701 436000" type="num"/>
+                    <XRefLastUpdate value="1385403031 98000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -32188,7 +32184,7 @@
                     <XRefSrcText value="92755: FaktaRub1: Huvudvärksformer hos barn och ungdom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -32235,7 +32231,7 @@
                     <XRefSrcText value="smärta:barn och tolkning " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;Q1_SMA_Smartbehandl_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382865701 456000" type="num"/>
+                    <XRefLastUpdate value="1385403031 118000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -32248,7 +32244,7 @@
                     <FTag value="Blue" type="str"/>
                     <FLocked value="No" type="enum"/>
                 </Font>
-                <String>907</String>
+                <String>906</String>
                 <Font>
                     <FTag value="" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -32331,7 +32327,7 @@
                     <XRefSrcText value="95125: TabellRubrik_2sp: Tabell 3. Differentialdiagnostiskt schema över olika huvudvärkyper" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -32529,7 +32525,7 @@
                     <XRefSrcText value="29963: Rub1: Huvudvärk av spänningstyp" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -33200,7 +33196,7 @@
                     <XRefSrcText value="99108: Rub1: Barn och smärta" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;Q1_SMA_Smartbehandl_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382865701 456000" type="num"/>
+                    <XRefLastUpdate value="1385403031 118000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -33407,7 +33403,7 @@
                     <XRefSrcText value="97977: TabellRekRub: Terapirekommendationer – Akut migränbehandling hos barn och ungdomar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -33432,7 +33428,7 @@
                     <XRefSrcText value="97977: TabellRekRub: Terapirekommendationer – Akut migränbehandling hos barn och ungdomar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -33604,7 +33600,7 @@
                     <XRefSrcText value="71577: BrödIn: Migränvarianter förekommer, men är ovanliga. Vid familjär hemiplegisk migrän" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -33823,7 +33819,7 @@
                     <XRefSrcText value="12552: TabellRubrik_2sp: Tabell 2. ”Varningsflaggor” för sekundär huvudvärk" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865701 426000" type="num"/>
+                    <XRefLastUpdate value="1385403031 68000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>

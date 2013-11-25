@@ -5721,10 +5721,10 @@
         </XRefFormat>
     </XRefFormats>
     <Document>
-        <DViewRect value="18 20 637 674 " type="enum"/>
-        <DWindowRect value="0 0 890 924 " type="enum"/>
-        <DViewScale value="110.36%" type="num"/>
-        <DNextUnique value="1031804" type="enum"/>
+        <DViewRect value="18 20 923 764 " type="enum"/>
+        <DWindowRect value="0 0 1272 1044 " type="enum"/>
+        <DViewScale value="160.0%" type="num"/>
+        <DNextUnique value="1032183" type="enum"/>
         <DPageSize value="170.0 mm 240.0 mm" type="num"/>
         <DMenuBar value="" type="str"/>
         <DVoMenuBar value="" type="str"/>
@@ -5805,7 +5805,7 @@
         <DFullRulers value="Yes" type="enum"/>
         <DGraphicsOff value="No" type="enum"/>
         <DCurrentView value="1" type="enum"/>
-        <DBordersOn value="No" type="enum"/>
+        <DBordersOn value="Yes" type="enum"/>
         <DSymbolsOn value="No" type="enum"/>
         <DLinkBoundariesOn value="No" type="enum"/>
         <DTrackChangesOn value="No" type="enum"/>
@@ -5910,7 +5910,7 @@
         </PDFDocInfo>
         <DocFileInfo value="
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D31302D31335430383A32313A33382B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D31302D31335430383A32313A33382B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D31302D32355432303A31343A30382B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D31302D32355432303A31343A30382B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E4CC3A46B656D6564656C20686F7320706572736F6E6572206D65642075747665636B6C696E67737374C3B6726E696E6720E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020
 202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020
 20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020
@@ -10562,303 +10562,6 @@
             <TblID value="9" type="enum"/>
             <TblTag value="Tabell faktaruta" type="str"/>
             <TblNumColumns value="1" type="enum"/>
-            <Unique value="1025588" type="enum"/>
-            <TblColumnWidth value="63.5 mm" type="num"/>
-            <TblBody>
-                <Row>
-                    <RowMaxHeight value="355.60065 mm" type="num"/>
-                    <RowHeight value="33.16113 mm" type="num"/>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1026986" type="enum"/>
-                                <PgfTag value="FaktaText" type="str"/>
-                                <Pgf>
-                                    <PgfFont>
-                                        <FTag value="" type="str"/>
-                                        <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
-                                        <FFamily value="Frutiger LT Std 45 Light" type="str"/>
-                                        <FVar value="Regular" type="str"/>
-                                        <FWeight value="Bold" type="str"/>
-                                        <FAngle value="Regular" type="str"/>
-                                        <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
-                                        <FEncoding value="FrameRoman" type="str"/>
-                                        <FSize value="7.5 pt" type="num"/>
-                                        <FUnderlining value="FNoUnderlining" type="enum"/>
-                                        <FOverline value="No" type="enum"/>
-                                        <FStrike value="No" type="enum"/>
-                                        <FChangeBar value="No" type="enum"/>
-                                        <FOutline value="No" type="enum"/>
-                                        <FShadow value="No" type="enum"/>
-                                        <FPairKern value="Yes" type="enum"/>
-                                        <FTsume value="No" type="enum"/>
-                                        <FCase value="FAsTyped" type="enum"/>
-                                        <FPosition value="FNormal" type="enum"/>
-                                        <FDX value="0.0%" type="num"/>
-                                        <FDY value="0.0%" type="num"/>
-                                        <FDW value="0.0%" type="num"/>
-                                        <FStretch value="100.0%" type="num"/>
-                                        <FLanguage value="Swedish" type="enum"/>
-                                        <FLocked value="No" type="enum"/>
-                                        <FSeparation value="0" type="enum"/>
-                                        <FColor value="Black" type="str"/>
-                                        <FBackgroundColor value="NoColor" type="enum"/>
-                                    </PgfFont>
-                                    <PgfNumTabs value="3" type="enum"/>
-                                    <TabStop>
-                                        <TSX value="19.08914 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                    <TabStop>
-                                        <TSX value="29.58308 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                    <TabStop>
-                                        <TSX value="43.41425 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                </Pgf>
-                                <PgfReferenced value="Yes" type="enum"/>
-                                <ParaLine>
-                                    <Font>
-                                        <FTag value="FaktaFet" type="str"/>
-                                        <FLocked value="No" type="enum"/>
-                                    </Font>
-                                    <Marker>
-                                        <MType value="9" type="enum"/>
-                                        <MTypeName value="Cross-Ref" type="str"/>
-                                        <MText value="30994: FaktaText: Utvecklings- \x11 \x11 \x11 IQ Kognitiv Nivå enl störning ålder Kylén" type="str"/>
-                                        <MCurrPage value="1281" type="str"/>
-                                        <Unique value="1026985" type="enum"/>
-                                    </Marker>
-                                    <String>#1;Utveckl</String>
-                                    <XRef>
-                                        <XRefName value="Ref" type="str"/>
-                                        <XRefSrcText value="30994: FaktaText: Utvecklings- \x11 \x11 \x11 IQ Kognitiv Nivå enl störning ålder Kylén" type="str"/>
-                                        <XRefSrcIsElem value="No" type="enum"/>
-                                        <XRefSrcFile value="" type="str"/>
-                                        <XRefLastUpdate value="1384327298 69000" type="num"/>
-                                        <XRefSrcElemNonUniqueId value="" type="str"/>
-                                        <XRefAltText value="" type="str"/>
-                                        <XRefApiClient>
-                                            <XRefClientName value="" type="str"/>
-                                            <XRefClientType value="" type="str"/>
-                                        </XRefApiClient>
-                                        <Unique value="1031472" type="enum"/>
-                                    </XRef>
-                                    <Font>
-                                        <FTag value="Ref" type="str"/>
-                                        <FLocked value="No" type="enum"/>
-                                    </Font>
-                                    <String> </String>
-                                    <Font>
-                                        <FTag value="FaktaFet" type="str"/>
-                                        <FLocked value="No" type="enum"/>
-                                    </Font>
-                                    <XRefEnd />
-                                    <String>ings-</String>
-                                    <Char value="Tab" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>IQ</String>
-                                    <Char value="Tab" type="enum"/>
-                                    <String>Kognitiv</String>
-                                    <Char value="Tab" type="enum"/>
-                                    <String>Nivå enl</String>
-                                    <Char value="HardReturn" type="enum"/>
-                                </ParaLine>
-                                <ParaLine>
-                                    <String>störning</String>
-                                    <Char value="Tab" type="enum"/>
-                                    <Char value="Tab" type="enum"/>
-                                    <String>ålder</String>
-                                    <Char value="Tab" type="enum"/>
-                                    <String>Kylén</String>
-                                </ParaLine>
-                            </Para>
-                            <Para>
-                                <Unique value="1025591" type="enum"/>
-                                <PgfTag value="FaktaText" type="str"/>
-                                <Pgf>
-                                    <PgfNumTabs value="3" type="enum"/>
-                                    <TabStop>
-                                        <TSX value="19.08914 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                    <TabStop>
-                                        <TSX value="29.58308 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                    <TabStop>
-                                        <TSX value="43.41425 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                </Pgf>
-                                <ParaLine>
-                                    <String>Lindrig </String>
-                                    <Char value="HardReturn" type="enum"/>
-                                </ParaLine>
-                                <ParaLine>
-                                    <String>(lätt)</String>
-                                    <Char value="Tab" type="enum"/>
-                                    <String>50–69</String>
-                                    <Char value="Tab" type="enum"/>
-                                    <String>9–12 år</String>
-                                    <Char value="Tab" type="enum"/>
-                                    <String>C </String>
-                                </ParaLine>
-                            </Para>
-                            <Para>
-                                <Unique value="1025592" type="enum"/>
-                                <PgfTag value="FaktaText" type="str"/>
-                                <Pgf>
-                                    <PgfNumTabs value="3" type="enum"/>
-                                    <TabStop>
-                                        <TSX value="19.08914 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                    <TabStop>
-                                        <TSX value="29.58308 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                    <TabStop>
-                                        <TSX value="43.41425 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                </Pgf>
-                                <ParaLine>
-                                    <String>Medelsvår </String>
-                                    <Char value="HardReturn" type="enum"/>
-                                </ParaLine>
-                                <ParaLine>
-                                    <String>(måttlig)</String>
-                                    <Char value="Tab" type="enum"/>
-                                    <String>35–49</String>
-                                    <Char value="Tab" type="enum"/>
-                                    <String>6–8 år</String>
-                                    <Char value="Tab" type="enum"/>
-                                    <String>B–C</String>
-                                </ParaLine>
-                            </Para>
-                            <Para>
-                                <Unique value="1025593" type="enum"/>
-                                <PgfTag value="FaktaText" type="str"/>
-                                <Pgf>
-                                    <PgfNumTabs value="3" type="enum"/>
-                                    <TabStop>
-                                        <TSX value="19.08914 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                    <TabStop>
-                                        <TSX value="29.58308 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                    <TabStop>
-                                        <TSX value="43.41425 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                </Pgf>
-                                <ParaLine>
-                                    <String>Svår</String>
-                                    <Char value="Tab" type="enum"/>
-                                    <String>20–34</String>
-                                    <Char value="Tab" type="enum"/>
-                                    <String>3–5 år</String>
-                                    <Char value="Tab" type="enum"/>
-                                    <String>A–B</String>
-                                </ParaLine>
-                            </Para>
-                            <Para>
-                                <Unique value="1025594" type="enum"/>
-                                <PgfTag value="FaktaText" type="str"/>
-                                <Pgf>
-                                    <PgfNumTabs value="3" type="enum"/>
-                                    <TabStop>
-                                        <TSX value="19.08914 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                    <TabStop>
-                                        <TSX value="29.58308 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                    <TabStop>
-                                        <TSX value="43.41425 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                </Pgf>
-                                <ParaLine>
-                                    <String>Grav</String>
-                                    <Char value="Tab" type="enum"/>
-                                    <String>&lt;</String>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>20</String>
-                                    <Char value="Tab" type="enum"/>
-                                    <String>0–2 år</String>
-                                    <Char value="Tab" type="enum"/>
-                                    <String>A</String>
-                                </ParaLine>
-                            </Para>
-                            <Para>
-                                <Unique value="1025595" type="enum"/>
-                                <PgfTag value="FaktaRub1" type="str"/>
-                                <Pgf>
-                                    <PgfNumTabs value="5" type="enum"/>
-                                    <TabStop>
-                                        <TSX value="18.2072 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                    <TabStop>
-                                        <TSX value="19.08914 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                    <TabStop>
-                                        <TSX value="29.58308 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                    <TabStop>
-                                        <TSX value="43.41425 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                    <TabStop>
-                                        <TSX value="44.67416 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                </Pgf>
-                                <ParaLine>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                </Row>
-            </TblBody>
-        </Tbl>
-        <Tbl>
-            <TblID value="10" type="enum"/>
-            <TblTag value="Tabell faktaruta" type="str"/>
-            <TblNumColumns value="1" type="enum"/>
             <Unique value="1022126" type="enum"/>
             <TblColumnWidth value="63.5 mm" type="num"/>
             <TblBody>
@@ -10949,7 +10652,7 @@
             </TblBody>
         </Tbl>
         <Tbl>
-            <TblID value="11" type="enum"/>
+            <TblID value="10" type="enum"/>
             <TblTag value="Tabell faktaruta" type="str"/>
             <TblNumColumns value="1" type="enum"/>
             <Unique value="1031450" type="enum"/>
@@ -11190,7 +10893,7 @@
             </TblBody>
         </Tbl>
         <Tbl>
-            <TblID value="12" type="enum"/>
+            <TblID value="11" type="enum"/>
             <TblTag value="Tabell faktaruta" type="str"/>
             <TblNumColumns value="1" type="enum"/>
             <Unique value="1025968" type="enum"/>
@@ -11389,7 +11092,7 @@
             </TblBody>
         </Tbl>
         <Tbl>
-            <TblID value="13" type="enum"/>
+            <TblID value="12" type="enum"/>
             <TblTag value="Tabell faktaruta" type="str"/>
             <TblFormat>
                 <TblColumn>
@@ -11537,7 +11240,7 @@
             </TblBody>
         </Tbl>
         <Tbl>
-            <TblID value="14" type="enum"/>
+            <TblID value="13" type="enum"/>
             <TblTag value="Tabell faktaruta" type="str"/>
             <TblFormat>
                 <TblColumn>
@@ -11677,6 +11380,546 @@
                                 <Unique value="1028860" type="enum"/>
                                 <PgfTag value="FaktaText" type="str"/>
                                 <ParaLine>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                </Row>
+            </TblBody>
+        </Tbl>
+        <Tbl>
+            <TblID value="14" type="enum"/>
+            <TblTag value="Tabell faktaruta" type="str"/>
+            <TblNumColumns value="4" type="enum"/>
+            <Unique value="1031812" type="enum"/>
+            <TblColumnWidth value="24.50699 mm" type="num"/>
+            <TblColumnWidth value="7.05557 mm" type="num"/>
+            <TblColumnWidth value="14.43078 mm" type="num"/>
+            <TblColumnWidth value="13.83546 mm" type="num"/>
+            <TblBody>
+                <Row>
+                    <RowMaxHeight value="355.60065 mm" type="num"/>
+                    <RowHeight value="9.87776 mm" type="num"/>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1032130" type="enum"/>
+                                <PgfTag value="FaktaRub1" type="str"/>
+                                <Pgf>
+                                    <PgfNumTabs value="5" type="enum"/>
+                                    <TabStop>
+                                        <TSX value="18.2072 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                    <TabStop>
+                                        <TSX value="19.08914 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                    <TabStop>
+                                        <TSX value="29.58308 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                    <TabStop>
+                                        <TSX value="43.41425 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                    <TabStop>
+                                        <TSX value="44.67416 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                </Pgf>
+                                <PgfReferenced value="Yes" type="enum"/>
+                                <ParaLine>
+                                    <Font>
+                                        <FTag value="FaktaFet" type="str"/>
+                                        <FLocked value="No" type="enum"/>
+                                    </Font>
+                                    <String>#1;Utveckl</String>
+                                    <XRef>
+                                        <XRefName value="Ref" type="str"/>
+                                        <XRefSrcText value="30994: FaktaText: Utvecklings- \x11 \x11 \x11 IQ Kognitiv Nivå enl störning ålder Kylén" type="str"/>
+                                        <XRefSrcIsElem value="No" type="enum"/>
+                                        <XRefSrcFile value="" type="str"/>
+                                        <XRefSrcElemNonUniqueId value="" type="str"/>
+                                        <XRefAltText value="" type="str"/>
+                                        <XRefApiClient>
+                                            <XRefClientName value="" type="str"/>
+                                            <XRefClientType value="" type="str"/>
+                                        </XRefApiClient>
+                                        <Unique value="1032173" type="enum"/>
+                                    </XRef>
+                                    <Font>
+                                        <FTag value="Ref" type="str"/>
+                                        <FLocked value="No" type="enum"/>
+                                    </Font>
+                                    <String> </String>
+                                    <Font>
+                                        <FTag value="FaktaFet" type="str"/>
+                                        <FLocked value="No" type="enum"/>
+                                    </Font>
+                                    <XRefEnd />
+                                    <String>ings</String>
+                                    <Char value="Tab" type="enum"/>
+                                </ParaLine>
+                                <ParaLine>
+                                    <String>störning</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1032132" type="enum"/>
+                                <PgfTag value="FaktaRub1" type="str"/>
+                                <Pgf>
+                                    <PgfNumTabs value="5" type="enum"/>
+                                    <TabStop>
+                                        <TSX value="18.2072 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                    <TabStop>
+                                        <TSX value="19.08914 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                    <TabStop>
+                                        <TSX value="29.58308 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                    <TabStop>
+                                        <TSX value="43.41425 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                    <TabStop>
+                                        <TSX value="44.67416 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                    <PgfCellMargins value="-8.5039 pt 0.0 pt 0.0 pt 0.0 pt" type="num"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>IQ</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1032134" type="enum"/>
+                                <PgfTag value="FaktaRub1" type="str"/>
+                                <Pgf>
+                                    <PgfNumTabs value="5" type="enum"/>
+                                    <TabStop>
+                                        <TSX value="18.2072 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                    <TabStop>
+                                        <TSX value="19.08914 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                    <TabStop>
+                                        <TSX value="29.58308 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                    <TabStop>
+                                        <TSX value="43.41425 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                    <TabStop>
+                                        <TSX value="44.67416 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                    <PgfCellMargins value="-8.5039 pt 0.0 pt 0.0 pt 0.0 pt" type="num"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>Kognitiv </String>
+                                    <Char value="HardReturn" type="enum"/>
+                                </ParaLine>
+                                <ParaLine>
+                                    <String>ålder</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1032136" type="enum"/>
+                                <PgfTag value="FaktaRub1" type="str"/>
+                                <Pgf>
+                                    <PgfNumTabs value="5" type="enum"/>
+                                    <TabStop>
+                                        <TSX value="18.2072 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                    <TabStop>
+                                        <TSX value="19.08914 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                    <TabStop>
+                                        <TSX value="29.58308 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                    <TabStop>
+                                        <TSX value="43.41425 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                    <TabStop>
+                                        <TSX value="44.67416 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                    <PgfCellMargins value="-8.5039 pt 0.0 pt 0.0 pt 0.0 pt" type="num"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>Nivå </String>
+                                </ParaLine>
+                                <ParaLine>
+                                    <String>enl. </String>
+                                    <Char value="HardReturn" type="enum"/>
+                                </ParaLine>
+                                <ParaLine>
+                                    <String>Kylén</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                </Row>
+                <Row>
+                    <RowMaxHeight value="355.60065 mm" type="num"/>
+                    <RowHeight value="3.88056 mm" type="num"/>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1032138" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfFIndent value="3.0 mm" type="num"/>
+                                    <PgfLIndent value="3.0 mm" type="num"/>
+                                    <PgfCellAlignment value="Middle" type="enum"/>
+                                    <PgfCellMargins value="0.0 pt 2.0 pt 0.0 pt 2.0 pt" type="num"/>
+                                </Pgf>
+                                <PgfReferenced value="Yes" type="enum"/>
+                                <ParaLine>
+                                    <String>Lindrig (lätt)</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1032140" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfCellAlignment value="Middle" type="enum"/>
+                                    <PgfCellMargins value="-8.5039 pt 2.0 pt 0.0 pt 2.0 pt" type="num"/>
+                                </Pgf>
+                                <PgfReferenced value="Yes" type="enum"/>
+                                <ParaLine>
+                                    <String>50–69</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1032142" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfCellAlignment value="Middle" type="enum"/>
+                                    <PgfCellMargins value="-8.5039 pt 2.0 pt 0.0 pt 2.0 pt" type="num"/>
+                                </Pgf>
+                                <PgfReferenced value="Yes" type="enum"/>
+                                <ParaLine>
+                                    <String>9–12 år</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1032144" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfCellAlignment value="Middle" type="enum"/>
+                                    <PgfCellMargins value="-8.5039 pt 2.0 pt 0.0 pt 2.0 pt" type="num"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>C</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                </Row>
+                <Row>
+                    <RowMaxHeight value="355.60065 mm" type="num"/>
+                    <RowHeight value="7.05556 mm" type="num"/>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1032146" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfFIndent value="3.0 mm" type="num"/>
+                                    <PgfLIndent value="3.0 mm" type="num"/>
+                                    <PgfCellAlignment value="Middle" type="enum"/>
+                                    <PgfCellMargins value="0.0 pt 2.0 pt 0.0 pt 2.0 pt" type="num"/>
+                                </Pgf>
+                                <PgfReferenced value="Yes" type="enum"/>
+                                <ParaLine>
+                                    <String>Medelsvår(mått</String>
+                                    <Char value="SoftHyphen" type="enum"/>
+                                </ParaLine>
+                                <ParaLine>
+                                    <String>lig)</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1032148" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfCellAlignment value="Middle" type="enum"/>
+                                    <PgfCellMargins value="-8.5039 pt 2.0 pt 0.0 pt 2.0 pt" type="num"/>
+                                </Pgf>
+                                <PgfReferenced value="Yes" type="enum"/>
+                                <ParaLine>
+                                    <String>35–49</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1032150" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfCellAlignment value="Middle" type="enum"/>
+                                    <PgfCellMargins value="-8.5039 pt 2.0 pt 0.0 pt 2.0 pt" type="num"/>
+                                </Pgf>
+                                <PgfReferenced value="Yes" type="enum"/>
+                                <ParaLine>
+                                    <String>6–8 år</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1032152" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfCellAlignment value="Middle" type="enum"/>
+                                    <PgfCellMargins value="-8.5039 pt 2.0 pt 0.0 pt 2.0 pt" type="num"/>
+                                </Pgf>
+                                <PgfReferenced value="Yes" type="enum"/>
+                                <ParaLine>
+                                    <String>B–C</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                </Row>
+                <Row>
+                    <RowMaxHeight value="355.60065 mm" type="num"/>
+                    <RowHeight value="3.88056 mm" type="num"/>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1032154" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfFIndent value="3.0 mm" type="num"/>
+                                    <PgfLIndent value="3.0 mm" type="num"/>
+                                    <PgfCellAlignment value="Middle" type="enum"/>
+                                    <PgfCellMargins value="0.0 pt 2.0 pt 0.0 pt 2.0 pt" type="num"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>Svår</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1032156" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfCellAlignment value="Middle" type="enum"/>
+                                    <PgfCellMargins value="-8.5039 pt 2.0 pt 0.0 pt 2.0 pt" type="num"/>
+                                </Pgf>
+                                <PgfReferenced value="Yes" type="enum"/>
+                                <ParaLine>
+                                    <String>20–34</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1032158" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfCellAlignment value="Middle" type="enum"/>
+                                    <PgfCellMargins value="-8.5039 pt 2.0 pt 0.0 pt 2.0 pt" type="num"/>
+                                </Pgf>
+                                <PgfReferenced value="Yes" type="enum"/>
+                                <ParaLine>
+                                    <String>3–5 år</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1032160" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfCellAlignment value="Middle" type="enum"/>
+                                    <PgfCellMargins value="-8.5039 pt 2.0 pt 0.0 pt 2.0 pt" type="num"/>
+                                </Pgf>
+                                <PgfReferenced value="Yes" type="enum"/>
+                                <ParaLine>
+                                    <String>A–B</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                </Row>
+                <Row>
+                    <RowMaxHeight value="355.60065 mm" type="num"/>
+                    <RowHeight value="3.88056 mm" type="num"/>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1032162" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfFIndent value="3.0 mm" type="num"/>
+                                    <PgfLIndent value="3.0 mm" type="num"/>
+                                    <PgfCellAlignment value="Middle" type="enum"/>
+                                    <PgfCellMargins value="0.0 pt 2.0 pt 0.0 pt 2.0 pt" type="num"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>Grav</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1032164" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfCellAlignment value="Middle" type="enum"/>
+                                    <PgfCellMargins value="-8.5039 pt 2.0 pt 0.0 pt 2.0 pt" type="num"/>
+                                </Pgf>
+                                <PgfReferenced value="Yes" type="enum"/>
+                                <ParaLine>
+                                    <String>&lt; 20</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1032166" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfCellAlignment value="Middle" type="enum"/>
+                                    <PgfCellMargins value="-8.5039 pt 2.0 pt 0.0 pt 2.0 pt" type="num"/>
+                                </Pgf>
+                                <PgfReferenced value="Yes" type="enum"/>
+                                <ParaLine>
+                                    <String>0–2 år</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1032168" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfCellAlignment value="Middle" type="enum"/>
+                                    <PgfCellMargins value="-8.5039 pt 2.0 pt 0.0 pt 2.0 pt" type="num"/>
+                                </Pgf>
+                                <PgfReferenced value="Yes" type="enum"/>
+                                <ParaLine>
+                                    <String>A</String>
                                 </ParaLine>
                             </Para>
                         </CellContent>
@@ -14318,17 +14561,21 @@
             <Point value="152.12891 mm 26.32085 mm" type="num"/>
             <Point value="152.12891 mm 17.80255 mm" type="num"/>
         </PolyLine>
+        <Group>
+            <ID value="139" type="enum"/>
+            <Unique value="1031675" type="enum"/>
+        </Group>
         <TextRect>
             <ID value="142" type="enum"/>
-            <Unique value="1025573" type="enum"/>
+            <Unique value="1031809" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
             <PenWidth value="1.0 pt" type="num"/>
             <Separation value="0" type="enum"/>
             <ObColor value="Black" type="str"/>
             <RunaroundType value="Contour" type="enum"/>
-            <ShapeRect value="17.70914 mm 14.89574 mm 63.5 mm 44.49302 mm" type="num"/>
-            <BRect value="17.70914 mm 14.89574 mm 63.5 mm 44.49302 mm" type="num"/>
+            <ShapeRect value="17.8745 mm 15.72296 mm 63.5 mm 44.49302 mm" type="num"/>
+            <BRect value="17.8745 mm 15.72296 mm 63.5 mm 44.49302 mm" type="num"/>
             <TRNumColumns value="1" type="enum"/>
             <TRColumnGap value="5.00001 mm" type="num"/>
             <TRColumnBalance value="No" type="enum"/>
@@ -14438,10 +14685,6 @@
         <Group>
             <ID value="143" type="enum"/>
             <Unique value="1030592" type="enum"/>
-        </Group>
-        <Group>
-            <ID value="139" type="enum"/>
-            <Unique value="1031675" type="enum"/>
         </Group>
     </Page>
     <Page>
@@ -15902,7 +16145,7 @@
                     <XRefSrcText value="30994: FaktaText: Utvecklings- \x11 \x11 \x11 IQ Kognitiv Nivå enl störning ålder Kylén" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1384327298 69000" type="num"/>
+                    <XRefLastUpdate value="1385394046 872000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -15958,7 +16201,7 @@
                     <XRefSrcText value="30994: FaktaText: Utvecklings- \x11 \x11 \x11 IQ Kognitiv Nivå enl störning ålder Kylén" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1384327298 69000" type="num"/>
+                    <XRefLastUpdate value="1385394046 872000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16318,7 +16561,7 @@
                     <XRefSrcText value="69087: FaktaRub1: Förberedande frågor" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1384327298 69000" type="num"/>
+                    <XRefLastUpdate value="1385406848 807000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -16437,7 +16680,7 @@
                     <XRefSrcText value="97740: FaktaRub1: Checklista" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1384327298 69000" type="num"/>
+                    <XRefLastUpdate value="1385406848 807000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17081,7 +17324,7 @@
                     <XRefSrcText value="31044: Rub2: Spasticitet" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;R1_NEU_AllmNeurolMS_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1383832035 362000" type="num"/>
+                    <XRefLastUpdate value="1385406848 822000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17291,7 +17534,7 @@
                     <XRefSrcText value="59652: Rub1: Prevention av fetma" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;C2_NUT_OverviktFetma_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1383832035 411000" type="num"/>
+                    <XRefLastUpdate value="1385406848 837000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17416,7 +17659,7 @@
                     <XRefSrcText value="91916: Rub2: Preparatval" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;R4_NEU_Epilepsi_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866486 13000" type="num"/>
+                    <XRefLastUpdate value="1385406848 902000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -18219,7 +18462,7 @@
                     <XRefSrcText value="42274: Rub2: Behandlingsuppföljning" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;S5_PSY_Psykoser_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1384327298 80000" type="num"/>
+                    <XRefLastUpdate value="1385406848 857000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -18298,7 +18541,7 @@
                     <XRefSrcText value="95390: Rub2: Behandlingsval" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;S3_PSY_Forstamning_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1383832035 446000" type="num"/>
+                    <XRefLastUpdate value="1385406848 872000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -18360,7 +18603,7 @@
                     <XRefSrcText value="41010: KapRub: Sömnstörningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;S1_PSY_Somnstorn_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1383832035 461000" type="num"/>
+                    <XRefLastUpdate value="1385406848 887000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -18536,7 +18779,7 @@
                     <XRefSrcText value="59191: FaktaRub1: Omprövning av psykofarmaka- behandling" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1384327298 69000" type="num"/>
+                    <XRefLastUpdate value="1385406848 807000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -18587,7 +18830,7 @@
                     <XRefSrcText value="59191: FaktaRub1: Omprövning av psykofarmaka- behandling" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1384327298 69000" type="num"/>
+                    <XRefLastUpdate value="1385406848 807000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -21499,7 +21742,7 @@
             </Pgf>
             <ParaLine>
                 <TextRectID value="123" type="enum"/>
-                <ATbl value="13" type="enum"/>
+                <ATbl value="12" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -21510,7 +21753,7 @@
             <Unique value="1028861" type="enum"/>
             <ParaLine>
                 <TextRectID value="124" type="enum"/>
-                <ATbl value="14" type="enum"/>
+                <ATbl value="13" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -21583,7 +21826,7 @@
             <Unique value="1031463" type="enum"/>
             <PgfTag value="BrödIn" type="str"/>
             <ParaLine>
-                <ATbl value="11" type="enum"/>
+                <ATbl value="10" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -21643,64 +21886,7 @@
         <Notes>
         </Notes>
         <Para>
-            <Unique value="1025587" type="enum"/>
-            <PgfTag value="Bröd" type="str"/>
-            <ParaLine>
-                <TextRectID value="142" type="enum"/>
-            </ParaLine>
-        </Para>
-        <Para>
-            <Unique value="1025596" type="enum"/>
-            <PgfTag value="Bröd" type="str"/>
-            <ParaLine>
-                <ATbl value="9" type="enum"/>
-            </ParaLine>
-        </Para>
-    </TextFlow>
-    <TextFlow>
-        <Notes>
-        </Notes>
-        <Para>
             <Unique value="1025597" type="enum"/>
-            <Pgf>
-                <PgfTag value="Body" type="str"/>
-                <PgfNextTag value="KapRub" type="str"/>
-                <PgfAlignment value="Center" type="enum"/>
-                <PgfRunInDefaultPunct value=". " type="str"/>
-                <PgfBlockSize value="1" type="enum"/>
-                <PgfFont>
-                    <FTag value="" type="str"/>
-                    <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
-                    <FFamily value="Frutiger LT Std 45 Light" type="str"/>
-                    <FVar value="Regular" type="str"/>
-                    <FWeight value="Bold" type="str"/>
-                    <FAngle value="Regular" type="str"/>
-                    <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
-                    <FEncoding value="FrameRoman" type="str"/>
-                    <FSize value="7.0 pt" type="num"/>
-                    <FUnderlining value="FNoUnderlining" type="enum"/>
-                    <FOverline value="No" type="enum"/>
-                    <FStrike value="No" type="enum"/>
-                    <FChangeBar value="No" type="enum"/>
-                    <FOutline value="No" type="enum"/>
-                    <FShadow value="No" type="enum"/>
-                    <FPairKern value="Yes" type="enum"/>
-                    <FTsume value="No" type="enum"/>
-                    <FCase value="FAsTyped" type="enum"/>
-                    <FPosition value="FNormal" type="enum"/>
-                    <FDX value="0.0%" type="num"/>
-                    <FDY value="0.0%" type="num"/>
-                    <FDW value="0.0%" type="num"/>
-                    <FStretch value="100.0%" type="num"/>
-                    <FLanguage value="Swedish" type="enum"/>
-                    <FLocked value="No" type="enum"/>
-                    <FSeparation value="0" type="enum"/>
-                    <FColor value="Black" type="str"/>
-                    <FBackgroundColor value="NoColor" type="enum"/>
-                </PgfFont>
-                <HyphenMaxLines value="2" type="enum"/>
-                <PgfPDFStructureLevel value="0" type="enum"/>
-            </Pgf>
             <ParaLine>
                 <TextRectID value="145" type="enum"/>
                 <String>1</String>
@@ -21721,7 +21907,7 @@
             <Unique value="1025066" type="enum"/>
             <PgfTag value="Bröd" type="str"/>
             <ParaLine>
-                <ATbl value="10" type="enum"/>
+                <ATbl value="9" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -21779,6 +21965,24 @@
         <Notes>
         </Notes>
         <Para>
+            <Unique value="1031811" type="enum"/>
+            <PgfTag value="Bröd" type="str"/>
+            <ParaLine>
+                <TextRectID value="142" type="enum"/>
+            </ParaLine>
+        </Para>
+        <Para>
+            <Unique value="1031824" type="enum"/>
+            <PgfTag value="Bröd" type="str"/>
+            <ParaLine>
+                <ATbl value="14" type="enum"/>
+            </ParaLine>
+        </Para>
+    </TextFlow>
+    <TextFlow>
+        <Notes>
+        </Notes>
+        <Para>
             <Unique value="1025967" type="enum"/>
             <PgfTag value="Bröd" type="str"/>
             <ParaLine>
@@ -21789,7 +21993,7 @@
             <Unique value="1025979" type="enum"/>
             <PgfTag value="Bröd" type="str"/>
             <ParaLine>
-                <ATbl value="12" type="enum"/>
+                <ATbl value="11" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>

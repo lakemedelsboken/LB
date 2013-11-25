@@ -5699,7 +5699,7 @@
         <DViewRect value="18 20 923 764 " type="enum"/>
         <DWindowRect value="0 0 1272 1044 " type="enum"/>
         <DViewScale value="110.35%" type="num"/>
-        <DNextUnique value="1069211" type="enum"/>
+        <DNextUnique value="1069246" type="enum"/>
         <DPageSize value="170.0 mm 240.0 mm" type="num"/>
         <DMenuBar value="" type="str"/>
         <DVoMenuBar value="" type="str"/>
@@ -5857,12 +5857,12 @@
         <DPDFDestsMarked value="Yes" type="enum"/>
         <DPDFStructure value="No" type="enum"/>
         <DPDFStructureDefined value="Yes" type="enum"/>
-        <DPDFBookmarks value="Yes" type="enum"/>
-        <DPDFConvertCMYK value="Yes" type="enum"/>
-        <DPDFOpenPage value="0" type="str"/>
+        <DPDFBookmarks value="No" type="enum"/>
+        <DPDFConvertCMYK value="No" type="enum"/>
+        <DPDFOpenPage value="301" type="str"/>
         <DPDFFit value="Page" type="enum"/>
         <DPDFZoom value="0.0%" type="num"/>
-        <DPDFJobOptions value="Smallest File Size" type="str"/>
+        <DPDFJobOptions value="High Quality Print" type="str"/>
         <DPDFSaveSeparate value="No" type="enum"/>
         <DPDFRegMarks value="None" type="enum"/>
         <DPDFPageSizeSet value="No" type="enum"/>
@@ -5883,7 +5883,7 @@
         </PDFDocInfo>
         <DocFileInfo value="
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130392D30322D32375431303A34393A30352B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D30392D32375430393A34393A32392B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D30392D32375430393A34393A32392B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130392D30322D32375431303A34393A30352B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D31302D32355431383A35383A32372B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D31302D32355431383A35383A32372B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E49736368656D69736B20686AC3A47274736A756B646F6D20E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 2020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
@@ -22910,7 +22910,7 @@
                                         <MCurrPage value="301" type="str"/>
                                         <Unique value="1065132" type="enum"/>
                                     </Marker>
-                                    <String>Förkortningar</String>
+                                    <String>#1;Förkortningar</String>
                                 </ParaLine>
                             </Para>
                         </CellContent>
@@ -24152,7 +24152,7 @@
                                         <MCurrPage value="303" type="str"/>
                                         <Unique value="1065145" type="enum"/>
                                     </Marker>
-                                    <String>Risk- och skyddsfak</String>
+                                    <String>#2;Risk- och skyddsfak</String>
                                     <Font>
                                         <FTag value="" type="str"/>
                                         <FSize value="7.5 pt" type="num"/>
@@ -24286,6 +24286,7 @@
                                 <PgfTag value="FaktaRub1" type="str"/>
                                 <PgfReferenced value="Yes" type="enum"/>
                                 <ParaLine>
+                                    <String>#3;</String>
                                     <Marker>
                                         <MType value="9" type="enum"/>
                                         <MTypeName value="Cross-Ref" type="str"/>
@@ -24295,11 +24296,10 @@
                                     </Marker>
                                     <String>Användandet av SCORE för pre</String>
                                     <AFrame value="114" type="enum"/>
-                                    <String>dik</String>
                                     <Char value="SoftHyphen" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
-                                    <String>tion av kardiovaskulär sjukdom</String>
+                                    <String>diktion av kardiovaskulär sjukdom</String>
                                 </ParaLine>
                             </Para>
                             <Para>
@@ -25425,7 +25425,7 @@
                                         <MCurrPage value="309" type="str"/>
                                         <Unique value="1061728" type="enum"/>
                                     </Marker>
-                                    <String>Klassificering a</String>
+                                    <String>#4;Klassificering a</String>
                                     <AFrame value="115" type="enum"/>
                                     <String>v hjärtinfarkter </String>
                                     <Char value="HardReturn" type="enum"/>
@@ -25850,7 +25850,7 @@
                                         <MCurrPage value="314" type="str"/>
                                         <Unique value="1065185" type="enum"/>
                                     </Marker>
-                                    <String>Instabil angina</String>
+                                    <String>#7;Instabil angina</String>
                                     <AFrame value="116" type="enum"/>
                                 </ParaLine>
                             </Para>
@@ -25979,7 +25979,7 @@
                                         <MCurrPage value="310" type="str"/>
                                         <Unique value="1065180" type="enum"/>
                                     </Marker>
-                                    <String>AKS –</String>
+                                    <String>#6;AKS –</String>
                                     <Font>
                                         <FTag value="" type="str"/>
                                         <FPlatformName value="W.NewCenturySchlbk LT Std.R.400" type="str"/>
@@ -26124,6 +26124,7 @@
                                 </Pgf>
                                 <PgfReferenced value="Yes" type="enum"/>
                                 <ParaLine>
+                                    <String>#5;</String>
                                     <Marker>
                                         <MType value="2" type="enum"/>
                                         <MTypeName value="Index" type="str"/>
@@ -26164,7 +26165,7 @@
                                         <XRefSrcText value="75558: Rub2: Symtom" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="" type="str"/>
-                                        <XRefLastUpdate value="1382863769 10000" type="num"/>
+                                        <XRefLastUpdate value="1385402307 207000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -27092,7 +27093,7 @@
                                         <XRefSrcText value="92787: Rub2: Lipidsänkande läkemedel" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="" type="str"/>
-                                        <XRefLastUpdate value="1382863769 10000" type="num"/>
+                                        <XRefLastUpdate value="1385402307 207000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -27121,7 +27122,7 @@
                                         <XRefSrcText value="87040: Rub2: Statiner\x0d " type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;E4_HJA_BlodFettRubbn_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688937 78000" type="num"/>
+                                        <XRefLastUpdate value="1383918113 989000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -35680,7 +35681,7 @@
                     <XRefSrcText value="30995: Rub1: Riskvärdering\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;E4_HJA_BlodFettRubbn_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688937 78000" type="num"/>
+                    <XRefLastUpdate value="1383918113 989000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -35710,7 +35711,7 @@
                     <XRefSrcText value="51570: Rub1: Riskbedömning och primärprevention" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;E6_HJA_Cerebrovaskulara_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688937 103000" type="num"/>
+                    <XRefLastUpdate value="1385402307 217000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -36632,7 +36633,7 @@
                     <XRefSrcText value="71940: FaktaRub1: Förkortningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863769 10000" type="num"/>
+                    <XRefLastUpdate value="1385402307 207000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -37066,7 +37067,7 @@
                     <XRefSrcText value="86088: FaktaRub1: Risk- och skyddsfaktorer för en första hjärtinfark" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863769 10000" type="num"/>
+                    <XRefLastUpdate value="1385402307 207000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -37149,7 +37150,7 @@
                     <XRefSrcText value="86088: FaktaRub1: Risk- och skyddsfaktorer för en första hjärtinfark" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863769 10000" type="num"/>
+                    <XRefLastUpdate value="1385402307 207000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -37759,7 +37760,7 @@
                     <XRefSrcText value="86174: FigurNr: Figur 2. SCORE-diagram med siffror som anger procentuell beräknad risk att avlida inom 10 år till" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863769 10000" type="num"/>
+                    <XRefLastUpdate value="1385402307 207000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -37794,7 +37795,7 @@
                     <XRefSrcText value="49309: FaktaRub1: Användandet av SCORE för prediktion av kardiovas" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863769 10000" type="num"/>
+                    <XRefLastUpdate value="1385402307 207000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -37877,7 +37878,7 @@
                     <XRefSrcText value="30995: Rub1: Riskvärdering\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;E4_HJA_BlodFettRubbn_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688937 78000" type="num"/>
+                    <XRefLastUpdate value="1383918113 989000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -37913,7 +37914,7 @@
                     <XRefSrcText value="51570: Rub1: Riskbedömning och primärprevention" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;E6_HJA_Cerebrovaskulara_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688937 103000" type="num"/>
+                    <XRefLastUpdate value="1385402307 217000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -37940,7 +37941,7 @@
                     <XRefSrcText value="49309: FaktaRub1: Användandet av SCORE för prediktion av kardiovas" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863769 10000" type="num"/>
+                    <XRefLastUpdate value="1385402307 207000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -37966,7 +37967,7 @@
                     <XRefSrcText value="86174: FigurNr: Figur 2. SCORE-diagram med siffror som anger procentuell beräknad risk att avlida inom 10 år till" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863769 10000" type="num"/>
+                    <XRefLastUpdate value="1385402307 207000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -39326,7 +39327,7 @@
                     <XRefSrcText value="24864: TabellRekRub: Terapirekommendationer – Stabil angina pectoris" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863769 10000" type="num"/>
+                    <XRefLastUpdate value="1385402307 207000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -39351,7 +39352,7 @@
                     <XRefSrcText value="24864: TabellRekRub: Terapirekommendationer – Stabil angina pectoris" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863769 10000" type="num"/>
+                    <XRefLastUpdate value="1385402307 207000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -40773,7 +40774,7 @@
                     <XRefSrcText value="98670: FaktaRub1: Klassificering av hjärtinfarkter enligt nya definitioner" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863769 10000" type="num"/>
+                    <XRefLastUpdate value="1385402307 207000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -40891,7 +40892,7 @@
                     <XRefSrcText value="29663: FaktaRub1: Symtom som bör föranleda miss\x04 tanke om akut koro" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863769 10000" type="num"/>
+                    <XRefLastUpdate value="1385402307 207000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -40965,7 +40966,7 @@
                     <XRefSrcText value="29663: FaktaRub1: Symtom som bör föranleda miss\x04 tanke om akut koro" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863769 10000" type="num"/>
+                    <XRefLastUpdate value="1385402307 207000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -41120,7 +41121,7 @@
                     <XRefSrcText value="79796: FaktaRub1: AKS – differentialdiagnoser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863769 10000" type="num"/>
+                    <XRefLastUpdate value="1385402307 207000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -41951,7 +41952,7 @@
                     <XRefSrcText value="36709: TabellRekRub: Terapirekommendationer – AKS-behandling (STEMI och NSTEMI)" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863769 10000" type="num"/>
+                    <XRefLastUpdate value="1385402307 207000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -42040,7 +42041,7 @@
                     <XRefSrcText value="70080: Rub2: Läkemedel för trombolys" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;D2_BLO_VenosTrombo_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382863769 20000" type="num"/>
+                    <XRefLastUpdate value="1385402307 227000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -42778,7 +42779,7 @@
                     <XRefSrcText value="67292: Rub1: Hjärt-lungräddning (HLR) – vuxna personer" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;A1_AKU_AkutMedv_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382863769 50000" type="num"/>
+                    <XRefLastUpdate value="1385402307 247000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -43101,7 +43102,7 @@
                     <XRefSrcText value="64320: FaktaRub1: Instabil angina" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863769 10000" type="num"/>
+                    <XRefLastUpdate value="1385402307 207000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -43173,7 +43174,7 @@
                     <XRefSrcText value="64320: FaktaRub1: Instabil angina" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863769 10000" type="num"/>
+                    <XRefLastUpdate value="1385402307 207000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -44261,7 +44262,7 @@
                     <XRefSrcText value="49142: TabellRekRub: Terapirekommendationer – Sekundärprevention efter AKS" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863769 10000" type="num"/>
+                    <XRefLastUpdate value="1385402307 207000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -44286,7 +44287,7 @@
                     <XRefSrcText value="49142: TabellRekRub: Terapirekommendationer – Sekundärprevention efter AKS" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863769 10000" type="num"/>
+                    <XRefLastUpdate value="1385402307 207000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -44396,7 +44397,7 @@
                     <XRefSrcText value="91997: Rub3: Protonpumpshämmare (PPI)" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;B1_MAG_StrupeSackTarm_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382863769 60000" type="num"/>
+                    <XRefLastUpdate value="1385402307 267000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -45582,7 +45583,7 @@
                     <XRefSrcText value="41207: Rub1: Läkemedel\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;E4_HJA_BlodFettRubbn_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688937 78000" type="num"/>
+                    <XRefLastUpdate value="1383918113 989000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -45817,7 +45818,7 @@
                     <XRefSrcText value="31067: TabellRubrik_2sp: Tabell 1. Exempel på strukturerat omhändertagande av patienter" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863769 10000" type="num"/>
+                    <XRefLastUpdate value="1385402307 207000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -45842,7 +45843,7 @@
                     <XRefSrcText value="31067: TabellRubrik_2sp: Tabell 1. Exempel på strukturerat omhändertagande av patienter" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382863769 10000" type="num"/>
+                    <XRefLastUpdate value="1385402307 207000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>

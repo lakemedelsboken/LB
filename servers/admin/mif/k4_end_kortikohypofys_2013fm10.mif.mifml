@@ -5745,7 +5745,7 @@
         <DViewRect value="0 0 941 783 " type="enum"/>
         <DWindowRect value="0 0 1272 1044 " type="enum"/>
         <DViewScale value="113.23%" type="num"/>
-        <DNextUnique value="1066108" type="enum"/>
+        <DNextUnique value="1066159" type="enum"/>
         <DPageSize value="170.0 mm 240.0 mm" type="num"/>
         <DMenuBar value="" type="str"/>
         <DVoMenuBar value="" type="str"/>
@@ -5903,12 +5903,12 @@
         <DPDFDestsMarked value="Yes" type="enum"/>
         <DPDFStructure value="No" type="enum"/>
         <DPDFStructureDefined value="Yes" type="enum"/>
-        <DPDFBookmarks value="Yes" type="enum"/>
-        <DPDFConvertCMYK value="Yes" type="enum"/>
-        <DPDFOpenPage value="0" type="str"/>
+        <DPDFBookmarks value="No" type="enum"/>
+        <DPDFConvertCMYK value="No" type="enum"/>
+        <DPDFOpenPage value="651" type="str"/>
         <DPDFFit value="Page" type="enum"/>
         <DPDFZoom value="0.0%" type="num"/>
-        <DPDFJobOptions value="Smallest File Size" type="str"/>
+        <DPDFJobOptions value="High Quality Print" type="str"/>
         <DPDFSaveSeparate value="No" type="enum"/>
         <DPDFRegMarks value="None" type="enum"/>
         <DPDFPageSizeSet value="No" type="enum"/>
@@ -5927,7 +5927,7 @@
         </PDFDocInfo>
         <DocFileInfo value="
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130392D30322D32375431303A35323A35372B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D30392D32375431303A31303A35372B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D30392D32375431303A31303A35372B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130392D30322D32375431303A35323A35372B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D31302D32355431393A30353A35382B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D31302D32355431393A30353A35382B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E4B6F7274696B6F737465726F69646572206F6368206879706F667973686F726D6F6E657220E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020
 20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020
@@ -10932,7 +10932,6 @@
                         <HyphenMinSuffix value="3" type="enum"/>
                         <PgfMinWordSpace value="90" type="enum"/>
                         <PgfMaxWordSpace value="110" type="enum"/>
-                        <PgfAcrobatLevel value="24" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                     </Pgf>
                 </TblTitlePgf1>
@@ -11474,7 +11473,7 @@
                                         <MCurrPage value="657" type="str"/>
                                         <Unique value="1064438" type="enum"/>
                                     </Marker>
-                                    <String>Riktlinjer för nedtrappning av </String>
+                                    <String>#6;Riktlinjer för nedtrappning av </String>
                                     <Marker>
                                         <MType value="2" type="enum"/>
                                         <MTypeName value="Index" type="str"/>
@@ -11789,7 +11788,6 @@
                         <HyphenMinSuffix value="3" type="enum"/>
                         <PgfMinWordSpace value="90" type="enum"/>
                         <PgfMaxWordSpace value="110" type="enum"/>
-                        <PgfAcrobatLevel value="24" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                     </Pgf>
                 </TblTitlePgf1>
@@ -12403,7 +12401,6 @@
                         <HyphenMinSuffix value="3" type="enum"/>
                         <PgfMinWordSpace value="90" type="enum"/>
                         <PgfMaxWordSpace value="110" type="enum"/>
-                        <PgfAcrobatLevel value="24" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                     </Pgf>
                 </TblTitlePgf1>
@@ -13541,6 +13538,7 @@
                                 <PgfTag value="FaktaRub1" type="str"/>
                                 <PgfReferenced value="Yes" type="enum"/>
                                 <ParaLine>
+                                    <String>#5;</String>
                                     <Marker>
                                         <MType value="9" type="enum"/>
                                         <MTypeName value="Cross-Ref" type="str"/>
@@ -13548,13 +13546,13 @@
                                         <MCurrPage value="656" type="str"/>
                                         <Unique value="1064029" type="enum"/>
                                     </Marker>
-                                    <String>Ogynnsamma effekter vid beh</String>
-                                    <AFrame value="6" type="enum"/>
-                                    <String>and</String>
+                                    <String>Ogynnsamma effekter vid be</String>
                                     <Char value="SoftHyphen" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
-                                    <String>ling med </String>
+                                    <String>h</String>
+                                    <AFrame value="6" type="enum"/>
+                                    <String>andling med </String>
                                     <Marker>
                                         <MType value="2" type="enum"/>
                                         <MTypeName value="Index" type="str"/>
@@ -13878,6 +13876,7 @@
                                 <PgfTag value="FaktaRub1" type="str"/>
                                 <PgfReferenced value="Yes" type="enum"/>
                                 <ParaLine>
+                                    <String>#7;</String>
                                     <Marker>
                                         <MType value="9" type="enum"/>
                                         <MTypeName value="Cross-Ref" type="str"/>
@@ -13895,6 +13894,8 @@
                                         <Unique value="1061443" type="enum"/>
                                     </Marker>
                                     <String>hypotalamus-/</String>
+                                </ParaLine>
+                                <ParaLine>
                                     <Marker>
                                         <MType value="2" type="enum"/>
                                         <MTypeName value="Index" type="str"/>
@@ -13903,9 +13904,6 @@
                                         <Unique value="1059896" type="enum"/>
                                     </Marker>
                                     <String>hypofys</String>
-                                    <Char value="SoftHyphen" type="enum"/>
-                                </ParaLine>
-                                <ParaLine>
                                     <Char value="DiscHyphen" type="enum"/>
                                     <String>insufficiens</String>
                                 </ParaLine>
@@ -14608,7 +14606,7 @@
                                         <Unique value="1064523" type="enum"/>
                                     </Marker>
                                     <AFrame value="10" type="enum"/>
-                                    <String>Indikationer för utredning och </String>
+                                    <String>#8;Indikationer för utredning och </String>
                                     <Char value="HardReturn" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
@@ -14895,12 +14893,13 @@
                                         <MCurrPage value="663" type="str"/>
                                         <Unique value="1061745" type="enum"/>
                                     </Marker>
-                                    <String>Diagnos, behandling och ko</String>
+                                    <String>#12;Diagnos, behandling och ko</String>
                                     <AFrame value="8" type="enum"/>
-                                    <String>ntroller </String>
+                                    <String>n</String>
+                                    <Char value="SoftHyphen" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
-                                    <String>vid </String>
+                                    <String>troller vid </String>
                                     <Marker>
                                         <MType value="2" type="enum"/>
                                         <MTypeName value="Index" type="str"/>
@@ -15322,7 +15321,7 @@
                                         <MCurrPage value="662" type="str"/>
                                         <Unique value="1064093" type="enum"/>
                                     </Marker>
-                                    <String>Symtom och kliniska tecken vid </String>
+                                    <String>#11;Symtom och kliniska tecken vid </String>
                                     <Char value="HardReturn" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
@@ -15452,7 +15451,7 @@
                                         <MCurrPage value="652" type="str"/>
                                         <Unique value="1057270" type="enum"/>
                                     </Marker>
-                                    <String>Orsaker till primär </String>
+                                    <String>#1;Orsaker till primär </String>
                                     <Marker>
                                         <MType value="2" type="enum"/>
                                         <MTypeName value="Index" type="str"/>
@@ -15901,6 +15900,7 @@
                                 <PgfTag value="FaktaRub1" type="str"/>
                                 <PgfReferenced value="Yes" type="enum"/>
                                 <ParaLine>
+                                    <String>#2;</String>
                                     <Marker>
                                         <MType value="9" type="enum"/>
                                         <MTypeName value="Cross-Ref" type="str"/>
@@ -16219,7 +16219,7 @@
                                         <MCurrPage value="653" type="str"/>
                                         <Unique value="1058509" type="enum"/>
                                     </Marker>
-                                    <String>Åtgärder vid misstan</String>
+                                    <String>#4;Åtgärder vid misstan</String>
                                     <AFrame value="3" type="enum"/>
                                     <String>ke om akut </String>
                                     <Char value="HardReturn" type="enum"/>
@@ -16542,7 +16542,7 @@
                                         <MCurrPage value="653" type="str"/>
                                         <Unique value="1064020" type="enum"/>
                                     </Marker>
-                                    <String>Diagnostik av </String>
+                                    <String>#3;Diagnostik av </String>
                                     <Marker>
                                         <MType value="2" type="enum"/>
                                         <MTypeName value="Index" type="str"/>
@@ -16916,7 +16916,7 @@
                                         <Unique value="1064075" type="enum"/>
                                     </Marker>
                                     <AFrame value="5" type="enum"/>
-                                    <String>Tillstånd som kan ge </String>
+                                    <String>#9;Tillstånd som kan ge </String>
                                     <Marker>
                                         <MType value="2" type="enum"/>
                                         <MTypeName value="Index" type="str"/>
@@ -17326,7 +17326,7 @@
                                         <Unique value="1064084" type="enum"/>
                                     </Marker>
                                     <AFrame value="9" type="enum"/>
-                                    <String>Symtom och kliniska fynd vid </String>
+                                    <String>#10;Symtom och kliniska fynd vid </String>
                                     <Char value="HardReturn" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
@@ -17452,7 +17452,7 @@
                                         <MCurrPage value="664" type="str"/>
                                         <Unique value="1064102" type="enum"/>
                                     </Marker>
-                                    <String>Diagnoskriterier för SIADH</String>
+                                    <String>#13;Diagnoskriterier för SIADH</String>
                                 </ParaLine>
                             </Para>
                             <Para>
@@ -27453,7 +27453,7 @@
                     <XRefSrcText value="11016: FaktaRub1: Orsaker till primär binjurebarkinsufficiens" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27553,7 +27553,7 @@
                     <XRefSrcText value="32557: FaktaRub1: Symtom/klinisk bild vid primär binjurebarkssvikt – Addi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27653,7 +27653,7 @@
                     <XRefSrcText value="47180: FaktaRub1: Orsaker till hypotalamus-/hypofys\x04 insufficiens" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27685,7 +27685,7 @@
                     <XRefSrcText value="47180: FaktaRub1: Orsaker till hypotalamus-/hypofys\x04 insufficiens" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27886,7 +27886,7 @@
                     <XRefSrcText value="58119: FaktaRub1: Diagnostik av binjurebarkssvikt" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27911,7 +27911,7 @@
                     <XRefSrcText value="65039: FaktaRub1: Åtgärder vid misstanke på akut binjurebarkinsufficiens" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28239,7 +28239,7 @@
                     <XRefSrcText value="34553: TabellRekRub: Terapirekommendationer – Steroidsubstitution i samband med interkurrent sju" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28351,7 +28351,7 @@
                     <XRefSrcText value="65039: FaktaRub1: Åtgärder vid misstanke på akut binjurebarkinsufficiens" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28392,7 +28392,7 @@
                     <XRefSrcText value="34553: TabellRekRub: Terapirekommendationer – Steroidsubstitution i samband med interkurrent sju" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28616,7 +28616,7 @@
                     <XRefSrcText value="34553: TabellRekRub: Terapirekommendationer – Steroidsubstitution i samband med interkurrent sju" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28641,7 +28641,7 @@
                     <XRefSrcText value="34553: TabellRekRub: Terapirekommendationer – Steroidsubstitution i samband med interkurrent sju" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28721,7 +28721,7 @@
                     <XRefSrcText value="47330: Rub1: Autoimmunitet" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;P1_ALL_AllergiImmunologi_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688940 713000" type="num"/>
+                    <XRefLastUpdate value="1385402758 198000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28831,7 +28831,7 @@
                     <XRefSrcText value="14667: Rub2: Oönskade effekter" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28935,7 +28935,7 @@
                     <XRefSrcText value="55515: FaktaRub1: Ogynnsamma effekter vid behandling med kortikostero" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28971,7 +28971,7 @@
                     <XRefSrcText value="69670: TabellRubrik_1sp: Tabell 1. Relativa biologiska effekter hos olika syntetiska" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28995,7 +28995,7 @@
                     <XRefSrcText value="55515: FaktaRub1: Ogynnsamma effekter vid behandling med kortikostero" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -29130,7 +29130,7 @@
                     <XRefSrcText value="34553: TabellRekRub: Terapirekommendationer – Steroidsubstitution i samband med interkurrent sju" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -29158,7 +29158,7 @@
                     <XRefSrcText value="34553: TabellRekRub: Terapirekommendationer – Steroidsubstitution i samband med interkurrent sju" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -29378,7 +29378,7 @@
                     <XRefSrcText value="34553: TabellRekRub: Terapirekommendationer – Steroidsubstitution i samband med interkurrent sju" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -29403,7 +29403,7 @@
                     <XRefSrcText value="34553: TabellRekRub: Terapirekommendationer – Steroidsubstitution i samband med interkurrent sju" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -29555,7 +29555,7 @@
                     <XRefSrcText value="25413: Rub2: \x0d Bisfosfonater\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;K2a_END_OsteoFraktur_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382865057 387000" type="num"/>
+                    <XRefLastUpdate value="1385402758 208000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -29637,7 +29637,7 @@
                     <XRefSrcText value="88970: FaktaRub1: Riktlinjer för nedtrappning av gluko- kortikoider" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -29926,7 +29926,7 @@
                     <XRefSrcText value="47180: FaktaRub1: Orsaker till hypotalamus-/hypofys\x04 insufficiens" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30234,7 +30234,7 @@
                     <XRefSrcText value="12635: TabellRubrik_1sp: Tabell 2. Basal provtagning vid misstänkt hypofysinsufficiens" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30573,7 +30573,7 @@
                     <XRefSrcText value="28284: Rub2: Behandling med tyreoideahormoner" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;K3_END_TyreoideaSjukd_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382865057 407000" type="num"/>
+                    <XRefLastUpdate value="1385402758 228000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30859,7 +30859,7 @@
                     <XRefSrcText value="36938: FaktaRub1: Indikationer för utredning och substitution med" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30910,7 +30910,7 @@
                     <XRefSrcText value="36938: FaktaRub1: Indikationer för utredning och substitution med" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30964,7 +30964,7 @@
                     <XRefSrcText value="42118: Rub1: Binjurebarkinsufficiens" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30999,7 +30999,7 @@
                     <XRefSrcText value="58119: FaktaRub1: Diagnostik av binjurebarkssvikt" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -31118,7 +31118,7 @@
                     <XRefSrcText value="34072: FaktaRub1: Tillstånd som kan ge hyper- prolaktinemi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -31409,7 +31409,7 @@
                     <XRefSrcText value="34072: FaktaRub1: Tillstånd som kan ge hyper- prolaktinemi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -31861,7 +31861,7 @@
                     <XRefSrcText value="78791: FaktaRub1: Symtom och kliniska fynd vid akromegali" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -31904,7 +31904,7 @@
                     <XRefSrcText value="78791: FaktaRub1: Symtom och kliniska fynd vid akromegali" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -32095,7 +32095,7 @@
                     <XRefSrcText value="58461: Rub2: Behandling\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -32324,7 +32324,7 @@
                     <XRefSrcText value="91588: FaktaRub1: Symtom och kliniska tecken vid Cushings syndrom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -32808,7 +32808,7 @@
                     <XRefSrcText value="47180: FaktaRub1: Orsaker till hypotalamus-/hypofys\x04 insufficiens" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -32870,7 +32870,7 @@
                     <XRefSrcText value="13723: FaktaRub1: Diagnos, behandling och kon\x04 troller vid central diabetes" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -33181,7 +33181,7 @@
                     <XRefSrcText value="14967: FaktaRub1: Diagnoskriterier för SIADH" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382865057 377000" type="num"/>
+                    <XRefLastUpdate value="1385402758 188000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>

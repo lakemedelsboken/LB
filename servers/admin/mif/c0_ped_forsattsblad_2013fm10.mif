@@ -4795,6 +4795,20 @@
   <FColor `Black'>
  > # end of Font
  <Font 
+  <FTag `Ref'>
+  <FSize  2.0 pt>
+  <FLocked No>
+  <FSeparation 1>
+  <FColor `White'>
+ > # end of Font
+ <Font 
+  <FTag `Symbol'>
+  <FFamily `Symbol'>
+  <FWeight `Bolded'>
+  <FEncoding `FrameRoman'>
+  <FLocked No>
+ > # end of Font
+ <Font 
   <FTag `TabellFet'>
   <FPlatformName `W.Frutiger LT Std 45 Light.R.700'>
   <FFamily `Frutiger LT Std 45 Light'>
@@ -5762,12 +5776,20 @@
   <XRefName `Table Number & Page'>
   <XRefDef `Table\x11 <$paranumonly\> on page\x11 <$pagenum\>'>
  > # end of XRefFormat
+ <XRefFormat 
+  <XRefName `Ref'>
+  <XRefDef `<Ref\> '>
+ > # end of XRefFormat
+ <XRefFormat 
+  <XRefName `ORef'>
+  <XRefDef `<Ref\> '>
+ > # end of XRefFormat
 > # end of XRefFormats
 <Document 
  <DViewRect 18 20 923 764 >
  <DWindowRect 0 0 1272 1044 >
  <DViewScale  120.0%>
- <DNextUnique 1030769>
+ <DNextUnique 1030781>
  <DPageSize  170.0 mm 240.0 mm>
  <DMenuBar `'>
  <DVoMenuBar `'>
@@ -5925,12 +5947,12 @@
  <DPDFDestsMarked Yes>
  <DPDFStructure No>
  <DPDFStructureDefined Yes>
- <DPDFBookmarks Yes>
- <DPDFConvertCMYK Yes>
- <DPDFOpenPage `0'>
+ <DPDFBookmarks No>
+ <DPDFConvertCMYK No>
+ <DPDFOpenPage `163'>
  <DPDFFit Page>
  <DPDFZoom  0.0%>
- <DPDFJobOptions `Smallest File Size'>
+ <DPDFJobOptions `High Quality Print'>
  <DPDFSaveSeparate No>
  <DPDFRegMarks None>
  <DPDFPageSizeSet No>
@@ -5951,7 +5973,7 @@
  > # end of PDFDocInfo
  <DocFileInfo 
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D30392D32375430393A33363A33382B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D30392D32375430393A33363A33382B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D31302D32355431383A35343A34352B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D31302D32355431383A35343A34352B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E4CC3A46B656D6564656C206F6368206261726E2C20696E6C65646E696E6720E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020
@@ -10618,6 +10640,13 @@
      <PgfNumString `Tabell 1. '>
      <PgfReferenced Yes>
      <ParaLine 
+      <Marker 
+       <MType 9>
+       <MTypeName `Cross-Ref'>
+       <MText `65809: TabellRubrik_2sp: Tabell 1. Terapikapitel med särskild information om läkemedels'>
+       <MCurrPage `163'>
+       <Unique 1030773>
+      > # end of Marker
       <String `Terapikapitel med särskild information om läkemedelsbehandling av barn'>
      > # end of ParaLine
     > # end of Para
@@ -10887,7 +10916,7 @@
          <XRefSrcText `53811: KapRub: Den akut medvetslöse patienten'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>A1_AKU_AkutMedv_2013FM10.fm'>
-         <XRefLastUpdate  1382862998 463000>
+         <XRefLastUpdate  1385402084 940000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -10980,7 +11009,7 @@
          <XRefSrcText `18570: KapRub: Diabetes mellitus'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>K1_END_DiabetMellitus_2013FM10.fm'>
-         <XRefLastUpdate  1382688935 383000>
+         <XRefLastUpdate  1385398996 54000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -11078,7 +11107,7 @@
          <XRefSrcText `41565: KapRub: Chock'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>A2_AKU_Chock_2013FM10.fm'>
-         <XRefLastUpdate  1382862998 496000>
+         <XRefLastUpdate  1385402084 950000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -11171,7 +11200,7 @@
          <XRefSrcText `48372: KapRub: Tyreoideasjukdomar'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>K3_END_TyreoideaSjukd_2013FM10.fm'>
-         <XRefLastUpdate  1382688935 403000>
+         <XRefLastUpdate  1385398996 74000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -11269,7 +11298,7 @@
          <XRefSrcText `76028: KapRub: Anafylaxi'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>A3_AKU_Anafylaxi_2013FM10.fm'>
-         <XRefLastUpdate  1382862998 509000>
+         <XRefLastUpdate  1385402084 970000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -11362,7 +11391,7 @@
          <XRefSrcText `21329: KapRub: Kortikosteroider och hypofyshormoner'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>K4_END_KortikoHypofys_2013FM10.fm'>
-         <XRefLastUpdate  1382688935 418000>
+         <XRefLastUpdate  1385398996 84000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -11460,7 +11489,7 @@
          <XRefSrcText `32247: KapRub: Akutmedicin på vårdcentral och andra vårdenheter'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>A4_AKU_AkutMedVC_2013FM10.fm'>
-         <XRefLastUpdate  1382862998 524000>
+         <XRefLastUpdate  1385402084 980000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -11553,7 +11582,7 @@
          <XRefSrcText `68179: KapRub: Astma och KOL'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>M1_AND_AstmaKol_2013FM10.fm'>
-         <XRefLastUpdate  1382688935 438000>
+         <XRefLastUpdate  1385398996 104000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -11651,7 +11680,7 @@
          <XRefSrcText `50376: KapRub: Sjukdomar i matstrupe, magsäck och tolvfingertarm'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>B1_MAG_StrupeSackTarm_2013FM10.fm'>
-         <XRefLastUpdate  1382862998 536000>
+         <XRefLastUpdate  1385402085 0>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -11744,7 +11773,7 @@
          <XRefSrcText `99469: KapRub: Luftvägsinfektioner hos barn och vuxna'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>M2_AND_LuftvInfBarnVux_2013FM10.fm'>
-         <XRefLastUpdate  1382688935 458000>
+         <XRefLastUpdate  1385398996 124000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -11842,7 +11871,7 @@
          <XRefSrcText `52103: KapRub: Inflammatoriska tarmsjukdomar'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>B4_MAG_InflamTarm_2013FM10.fm'>
-         <XRefLastUpdate  1382862998 550000>
+         <XRefLastUpdate  1385402085 10000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -11935,7 +11964,7 @@
          <XRefSrcText `46808: KapRub: Öron-, näs- och halssjukdomar\x0d '>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>N1_AND_OronNasaHals_2013FM10.fm'>
-         <XRefLastUpdate  1382688935 473000>
+         <XRefLastUpdate  1385398996 144000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -12033,7 +12062,7 @@
          <XRefSrcText `45302: KapRub: Övervikt och fetma'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>C2_NUT_OverviktFetma_2013FM10.fm'>
-         <XRefLastUpdate  1382688935 238000>
+         <XRefLastUpdate  1385398995 944000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -12126,7 +12155,7 @@
          <XRefSrcText `56888: KapRub: Smärta och smärtbehandling'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>Q1_SMA_Smartbehandl_2013FM10.fm'>
-         <XRefLastUpdate  1382688935 498000>
+         <XRefLastUpdate  1385398996 164000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -12224,7 +12253,7 @@
          <XRefSrcText `33893: KapRub: Vitaminer, mineraler och spårämnen'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>C3_NUT_VitMinSpar_2013FM10.fm'>
-         <XRefLastUpdate  1382688935 258000>
+         <XRefLastUpdate  1385398995 964000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -12317,7 +12346,7 @@
          <XRefSrcText `55705: KapRub: Allmän neurologi och multipel skleros'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>R1_NEU_AllmNeurolMS_2013FM10.fm'>
-         <XRefLastUpdate  1382688935 523000>
+         <XRefLastUpdate  1385402085 30000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -12415,7 +12444,7 @@
          <XRefSrcText `53003: KapRub: Anemier'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>D1_BLO_Anemier_2013FM10.fm'>
-         <XRefLastUpdate  1382688935 278000>
+         <XRefLastUpdate  1385398995 974000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -12508,7 +12537,7 @@
          <XRefSrcText `80016: KapRub: Huvudvärk'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>R2_NEU_Huvudvark_2013FM10.fm'>
-         <XRefLastUpdate  1382688935 553000>
+         <XRefLastUpdate  1385398996 194000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -12606,7 +12635,7 @@
          <XRefSrcText `34531: KapRub: Venös tromboembolism och medel mot trombos'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>D2_BLO_VenosTrombo_2013FM10.fm'>
-         <XRefLastUpdate  1382688935 303000>
+         <XRefLastUpdate  1385398995 994000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -12699,7 +12728,7 @@
          <XRefSrcText `59026: KapRub_Första: Yrsel'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>R3_NEU_Yrsel_2013FM10.fm'>
-         <XRefLastUpdate  1382688935 573000>
+         <XRefLastUpdate  1385398996 214000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -12797,7 +12826,7 @@
          <XRefSrcText `15485: KapRub: Hjärtsvikt'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>E2_HJA_Hjartsvikt_2013FM10.fm'>
-         <XRefLastUpdate  1382688935 323000>
+         <XRefLastUpdate  1385398996 4000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -12890,7 +12919,7 @@
          <XRefSrcText `94494: KapRub: Epilepsi'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>R4_NEU_Epilepsi_2013FM10.fm'>
-         <XRefLastUpdate  1382688935 588000>
+         <XRefLastUpdate  1385398996 224000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -12988,7 +13017,7 @@
          <XRefSrcText `64136: KapRub: Urininkontinens'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>G2_NEF_Urininkontinens_2013FM10.fm'>
-         <XRefLastUpdate  1382688935 343000>
+         <XRefLastUpdate  1385398996 24000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -13081,7 +13110,7 @@
          <XRefSrcText `95052: KapRub: Ångest och oro'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>S2_PSY_AngestOro_2013FM10.fm'>
-         <XRefLastUpdate  1382688935 603000>
+         <XRefLastUpdate  1385402085 50000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -13179,7 +13208,7 @@
          <XRefSrcText `10511: KapRub: Urinvägsinfektioner'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>G3_NEF_UrinvagInfekt_2013FM10.fm'>
-         <XRefLastUpdate  1382688935 358000>
+         <XRefLastUpdate  1385398996 34000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -13272,7 +13301,7 @@
          <XRefSrcText `39825: KapRub: Utvecklings- och neuro\x04 psykiatriska störningar'>
          <XRefSrcIsElem No>
          <XRefSrcFile `<u\><c\>S6_PSY_UtvNeuroPsyk_2013FM10.fm'>
-         <XRefLastUpdate  1382688935 618000>
+         <XRefLastUpdate  1385398996 254000>
          <XRefSrcElemNonUniqueId `'>
          <XRefAltText `'>
          <XRefApiClient 
@@ -16984,7 +17013,7 @@
     <FColor `Akut_Text'>
     <FBackgroundColor NoColor>
    > # end of PgfFont
-   <PgfAcrobatLevel 1>
+   <PgfAcrobatLevel 0>
    <PgfPDFStructureLevel 2>
   > # end of Pgf
   <PgfReferenced Yes>
@@ -17026,7 +17055,7 @@
     <XRefSrcText `74968: KapRub: Krav vid utveckling av läkemedel till barn'>
     <XRefSrcIsElem No>
     <XRefSrcFile `<u\><c\>C1a_PED_LakemedBarn_2013FM10.fm'>
-    <XRefLastUpdate  1382688935 633000>
+    <XRefLastUpdate  1385398996 264000>
     <XRefSrcElemNonUniqueId `'>
     <XRefAltText `'>
     <XRefApiClient 
@@ -17073,7 +17102,7 @@
     <XRefSrcText `28740: KapRub: Läkemedelsbehandling till barn\x0d '>
     <XRefSrcIsElem No>
     <XRefSrcFile `<u\><c\>C1b_PED_PraktAspektBarn_2013FM10.fm'>
-    <XRefLastUpdate  1382688935 643000>
+    <XRefLastUpdate  1385398996 274000>
     <XRefSrcElemNonUniqueId `'>
     <XRefAltText `'>
     <XRefApiClient 
@@ -17113,7 +17142,7 @@
     <XRefSrcText `89501: KapRub: Vanliga problem under småbarnsåren\x0d '>
     <XRefSrcIsElem No>
     <XRefSrcFile `<u\><c\>C1_PED_ProblemSmabarn_2013FM10.fm'>
-    <XRefLastUpdate  1382688935 658000>
+    <XRefLastUpdate  1385398996 284000>
     <XRefSrcElemNonUniqueId `'>
     <XRefAltText `'>
     <XRefApiClient 
@@ -17156,7 +17185,7 @@
     <XRefSrcText `89155: KapRub: Vaccination av barn och ungdom'>
     <XRefSrcIsElem No>
     <XRefSrcFile `<u\><c\>C1c_PED_VaccBarnUndom_2013FM10.fm'>
-    <XRefLastUpdate  1382688935 678000>
+    <XRefLastUpdate  1385398996 304000>
     <XRefSrcElemNonUniqueId `'>
     <XRefAltText `'>
     <XRefApiClient 
@@ -17200,6 +17229,30 @@
   > # end of ParaLine
   <ParaLine 
    <String `pikapitel i LB.'>
+   <XRef 
+    <XRefName `Ref'>
+    <XRefSrcText `65809: TabellRubrik_2sp: Tabell 1. Terapikapitel med särskild information om läkemedels'>
+    <XRefSrcIsElem No>
+    <XRefSrcFile `'>
+    <XRefLastUpdate  1385402084 930000>
+    <XRefSrcElemNonUniqueId `'>
+    <XRefAltText `'>
+    <XRefApiClient 
+     <XRefClientName `'>
+     <XRefClientType `'>
+    > # end of XRefApiClient
+    <Unique 1030774>
+   > # end of XRef
+   <Font 
+    <FTag `Ref'>
+    <FLocked No>
+   > # end of Font
+   <String ` '>
+   <Font 
+    <FTag `'>
+    <FLocked No>
+   > # end of Font
+   <XRefEnd >
   > # end of ParaLine
  > # end of Para
  <Para 

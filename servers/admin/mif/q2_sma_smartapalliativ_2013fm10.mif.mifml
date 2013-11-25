@@ -5749,10 +5749,10 @@
         </XRefFormat>
     </XRefFormats>
     <Document>
-        <DViewRect value="18 20 637 674 " type="enum"/>
-        <DWindowRect value="0 0 890 924 " type="enum"/>
-        <DViewScale value="112.25%" type="num"/>
-        <DNextUnique value="1049778" type="enum"/>
+        <DViewRect value="18 20 923 764 " type="enum"/>
+        <DWindowRect value="0 0 1272 1044 " type="enum"/>
+        <DViewScale value="120.0%" type="num"/>
+        <DNextUnique value="1050328" type="enum"/>
         <DPageSize value="170.0 mm 240.0 mm" type="num"/>
         <DMenuBar value="" type="str"/>
         <DVoMenuBar value="" type="str"/>
@@ -5833,7 +5833,7 @@
         <DFullRulers value="Yes" type="enum"/>
         <DGraphicsOff value="No" type="enum"/>
         <DCurrentView value="1" type="enum"/>
-        <DBordersOn value="No" type="enum"/>
+        <DBordersOn value="Yes" type="enum"/>
         <DSymbolsOn value="No" type="enum"/>
         <DLinkBoundariesOn value="No" type="enum"/>
         <DTrackChangesOn value="No" type="enum"/>
@@ -5935,7 +5935,7 @@
         </PDFDocInfo>
         <DocFileInfo value="
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D31302D31335430383A31373A35312B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D31302D31335430383A31373A35312B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D31302D32355431393A30393A35372B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D31302D32355431393A30393A35372B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E50616C6C69617469762076C3A5726420E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 20202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
@@ -10700,1348 +10700,6 @@
         </Tbl>
         <Tbl>
             <TblID value="14" type="enum"/>
-            <TblTag value="Tabell bred" type="str"/>
-            <TblFormat>
-                <TblColumn>
-                    <TblColumnNum value="0" type="enum"/>
-                    <TblColumnWidth value="20.00003 mm" type="num"/>
-                    <TblColumnH>
-                        <Pgf>
-                            <PgfTag value="Body" type="str"/>
-                            <PgfUseNextTag value="No" type="enum"/>
-                            <PgfNextTag value="" type="str"/>
-                            <PgfAlignment value="LeftRight" type="enum"/>
-                            <PgfFIndent value="0.0 mm" type="num"/>
-                            <PgfLIndent value="0.0 mm" type="num"/>
-                            <PgfRIndent value="0.0 mm" type="num"/>
-                            <PgfRunInDefaultPunct value=". " type="str"/>
-                            <PgfBlockSize value="1" type="enum"/>
-                            <PgfFont>
-                                <FTag value="" type="str"/>
-                                <FPlatformName value="W.Times New Roman.R.400" type="str"/>
-                                <FFamily value="Times New Roman" type="str"/>
-                                <FVar value="Regular" type="str"/>
-                                <FWeight value="Regular" type="str"/>
-                                <FAngle value="Regular" type="str"/>
-                                <FEncoding value="FrameRoman" type="str"/>
-                                <FSize value="12.0 pt" type="num"/>
-                                <FUnderlining value="FNoUnderlining" type="enum"/>
-                                <FOverline value="No" type="enum"/>
-                                <FStrike value="No" type="enum"/>
-                                <FChangeBar value="No" type="enum"/>
-                                <FOutline value="No" type="enum"/>
-                                <FShadow value="No" type="enum"/>
-                                <FPairKern value="No" type="enum"/>
-                                <FTsume value="No" type="enum"/>
-                                <FCase value="FAsTyped" type="enum"/>
-                                <FPosition value="FNormal" type="enum"/>
-                                <FDX value="0.0%" type="num"/>
-                                <FDY value="0.0%" type="num"/>
-                                <FDW value="0.0%" type="num"/>
-                                <FStretch value="100.0%" type="num"/>
-                                <FLanguage value="USEnglish" type="enum"/>
-                                <FLocked value="No" type="enum"/>
-                                <FSeparation value="0" type="enum"/>
-                                <FColor value="Black" type="str"/>
-                                <FBackgroundColor value="NoColor" type="enum"/>
-                            </PgfFont>
-                            <PgfLeading value="2.0 pt" type="num"/>
-                            <PgfPDFStructureLevel value="0" type="enum"/>
-                            <PgfLanguage value="USEnglish" type="enum"/>
-                        </Pgf>
-                    </TblColumnH>
-                    <TblColumnBody>
-                    </TblColumnBody>
-                    <TblColumnF>
-                    </TblColumnF>
-                </TblColumn>
-                <TblTitlePlacement value="None" type="enum"/>
-                <TblTitlePgf1>
-                </TblTitlePgf1>
-                <TblInitNumColumns value="1" type="enum"/>
-                <TblInitNumHRows value="0" type="enum"/>
-                <TblInitNumBodyRows value="1" type="enum"/>
-            </TblFormat>
-            <TblNumColumns value="5" type="enum"/>
-            <Unique value="1039501" type="enum"/>
-            <TblColumnWidth value="35.82342 mm" type="num"/>
-            <TblColumnWidth value="19.54331 mm" type="num"/>
-            <TblColumnWidth value="31.52415 mm" type="num"/>
-            <TblColumnWidth value="19.01415 mm" type="num"/>
-            <TblColumnWidth value="28.32716 mm" type="num"/>
-            <TblBody>
-                <Row>
-                    <RowMaxHeight value="355.60065 mm" type="num"/>
-                    <RowHeight value="4.76251 mm" type="num"/>
-                    <Cell>
-                        <CellColumns value="2" type="enum"/>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039503" type="enum"/>
-                                <PgfTag value="TabellKolRub" type="str"/>
-                                <Pgf>
-                                    <PgfFont>
-                                        <FTag value="" type="str"/>
-                                        <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
-                                        <FFamily value="Frutiger LT Std 45 Light" type="str"/>
-                                        <FVar value="Regular" type="str"/>
-                                        <FWeight value="Bold" type="str"/>
-                                        <FAngle value="Regular" type="str"/>
-                                        <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
-                                        <FEncoding value="FrameRoman" type="str"/>
-                                        <FSize value="7.5 pt" type="num"/>
-                                        <FUnderlining value="FNoUnderlining" type="enum"/>
-                                        <FOverline value="No" type="enum"/>
-                                        <FStrike value="No" type="enum"/>
-                                        <FChangeBar value="No" type="enum"/>
-                                        <FOutline value="No" type="enum"/>
-                                        <FShadow value="No" type="enum"/>
-                                        <FPairKern value="Yes" type="enum"/>
-                                        <FTsume value="No" type="enum"/>
-                                        <FCase value="FAsTyped" type="enum"/>
-                                        <FPosition value="FNormal" type="enum"/>
-                                        <FDX value="0.0%" type="num"/>
-                                        <FDY value="0.0%" type="num"/>
-                                        <FDW value="0.0%" type="num"/>
-                                        <FStretch value="100.0%" type="num"/>
-                                        <FLanguage value="Swedish" type="enum"/>
-                                        <FLocked value="No" type="enum"/>
-                                        <FSeparation value="0" type="enum"/>
-                                        <FColor value="Black" type="str"/>
-                                        <FBackgroundColor value="NoColor" type="enum"/>
-                                    </PgfFont>
-                                </Pgf>
-                                <ParaLine>
-                                    <String>Morfin/oxikodon (mg)</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039505" type="enum"/>
-                                <PgfTag value="TabellKolRub" type="str"/>
-                                <ParaLine>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellColumns value="2" type="enum"/>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039507" type="enum"/>
-                                <PgfTag value="TabellKolRub" type="str"/>
-                                <Pgf>
-                                    <PgfFont>
-                                        <FTag value="" type="str"/>
-                                        <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
-                                        <FFamily value="Frutiger LT Std 45 Light" type="str"/>
-                                        <FVar value="Regular" type="str"/>
-                                        <FWeight value="Bold" type="str"/>
-                                        <FAngle value="Regular" type="str"/>
-                                        <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
-                                        <FEncoding value="FrameRoman" type="str"/>
-                                        <FSize value="7.5 pt" type="num"/>
-                                        <FUnderlining value="FNoUnderlining" type="enum"/>
-                                        <FOverline value="No" type="enum"/>
-                                        <FStrike value="No" type="enum"/>
-                                        <FChangeBar value="No" type="enum"/>
-                                        <FOutline value="No" type="enum"/>
-                                        <FShadow value="No" type="enum"/>
-                                        <FPairKern value="Yes" type="enum"/>
-                                        <FTsume value="No" type="enum"/>
-                                        <FCase value="FAsTyped" type="enum"/>
-                                        <FPosition value="FNormal" type="enum"/>
-                                        <FDX value="0.0%" type="num"/>
-                                        <FDY value="0.0%" type="num"/>
-                                        <FDW value="0.0%" type="num"/>
-                                        <FStretch value="100.0%" type="num"/>
-                                        <FLanguage value="Swedish" type="enum"/>
-                                        <FLocked value="No" type="enum"/>
-                                        <FSeparation value="0" type="enum"/>
-                                        <FColor value="Black" type="str"/>
-                                        <FBackgroundColor value="NoColor" type="enum"/>
-                                    </PgfFont>
-                                </Pgf>
-                                <ParaLine>
-                                    <String>Hydromorfon (mg)</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039509" type="enum"/>
-                                <PgfTag value="TabellKolRub" type="str"/>
-                                <ParaLine>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                                <FNote>
-                                    <ID value="15" type="enum"/>
-                                    <Para>
-                                        <Unique value="1041571" type="enum"/>
-                                        <PgfTag value="TableFootnote" type="str"/>
-                                        <ParaLine>
-                                            <String>Till patienter med transdermal fentanylbehandling ges i första hand morfin/oxikodon inom dosintervallet som anges för extra </String>
-                                            <Char value="Tab" type="enum"/>
-                                            <Char value="Tab" type="enum"/>
-                                        </ParaLine>
-                                        <ParaLine>
-                                            <Char value="HardSpace" type="enum"/>
-                                            <Char value="HardSpace" type="enum"/>
-                                            <Char value="HardSpace" type="enum"/>
-                                            <Char value="HardSpace" type="enum"/>
-                                            <Char value="DiscHyphen" type="enum"/>
-                                            <String>doser vid behandling med morfin/oxikodon + se nedan.</String>
-                                        </ParaLine>
-                                    </Para>
-                                </FNote>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039511" type="enum"/>
-                                <PgfTag value="TabellKolRub" type="str"/>
-                                <Pgf>
-                                    <PgfFont>
-                                        <FTag value="" type="str"/>
-                                        <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
-                                        <FFamily value="Frutiger LT Std 45 Light" type="str"/>
-                                        <FVar value="Regular" type="str"/>
-                                        <FWeight value="Bold" type="str"/>
-                                        <FAngle value="Regular" type="str"/>
-                                        <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
-                                        <FEncoding value="FrameRoman" type="str"/>
-                                        <FSize value="7.5 pt" type="num"/>
-                                        <FUnderlining value="FNoUnderlining" type="enum"/>
-                                        <FOverline value="No" type="enum"/>
-                                        <FStrike value="No" type="enum"/>
-                                        <FChangeBar value="No" type="enum"/>
-                                        <FOutline value="No" type="enum"/>
-                                        <FShadow value="No" type="enum"/>
-                                        <FPairKern value="Yes" type="enum"/>
-                                        <FTsume value="No" type="enum"/>
-                                        <FCase value="FAsTyped" type="enum"/>
-                                        <FPosition value="FNormal" type="enum"/>
-                                        <FDX value="0.0%" type="num"/>
-                                        <FDY value="0.0%" type="num"/>
-                                        <FDW value="0.0%" type="num"/>
-                                        <FStretch value="100.0%" type="num"/>
-                                        <FLanguage value="Swedish" type="enum"/>
-                                        <FLocked value="No" type="enum"/>
-                                        <FSeparation value="0" type="enum"/>
-                                        <FColor value="Black" type="str"/>
-                                        <FBackgroundColor value="NoColor" type="enum"/>
-                                    </PgfFont>
-                                </Pgf>
-                                <ParaLine>
-                                    <String>Fentanyl</String>
-                                    <FNote value="15" type="enum"/>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                </Row>
-                <Row>
-                    <RowMaxHeight value="355.60065 mm" type="num"/>
-                    <RowHeight value="7.40834 mm" type="num"/>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039513" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfFont>
-                                        <FTag value="" type="str"/>
-                                        <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
-                                        <FFamily value="Frutiger LT Std 45 Light" type="str"/>
-                                        <FVar value="Regular" type="str"/>
-                                        <FWeight value="Bold" type="str"/>
-                                        <FAngle value="Regular" type="str"/>
-                                        <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
-                                        <FEncoding value="FrameRoman" type="str"/>
-                                        <FSize value="7.0 pt" type="num"/>
-                                        <FUnderlining value="FNoUnderlining" type="enum"/>
-                                        <FOverline value="No" type="enum"/>
-                                        <FStrike value="No" type="enum"/>
-                                        <FChangeBar value="No" type="enum"/>
-                                        <FOutline value="No" type="enum"/>
-                                        <FShadow value="No" type="enum"/>
-                                        <FPairKern value="Yes" type="enum"/>
-                                        <FTsume value="No" type="enum"/>
-                                        <FCase value="FAsTyped" type="enum"/>
-                                        <FPosition value="FNormal" type="enum"/>
-                                        <FDX value="0.0%" type="num"/>
-                                        <FDY value="0.0%" type="num"/>
-                                        <FDW value="0.0%" type="num"/>
-                                        <FStretch value="100.0%" type="num"/>
-                                        <FLanguage value="Swedish" type="enum"/>
-                                        <FLocked value="No" type="enum"/>
-                                        <FSeparation value="0" type="enum"/>
-                                        <FColor value="Black" type="str"/>
-                                        <FBackgroundColor value="NoColor" type="enum"/>
-                                    </PgfFont>
-                                    <PgfLeading value="1.0 pt" type="num"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Font>
-                                        <FTag value="TabellFet" type="str"/>
-                                        <FLocked value="No" type="enum"/>
-                                    </Font>
-                                    <String>Dygnsdos (subkutant)</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039515" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfFont>
-                                        <FTag value="" type="str"/>
-                                        <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
-                                        <FFamily value="Frutiger LT Std 45 Light" type="str"/>
-                                        <FVar value="Regular" type="str"/>
-                                        <FWeight value="Bold" type="str"/>
-                                        <FAngle value="Regular" type="str"/>
-                                        <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
-                                        <FEncoding value="FrameRoman" type="str"/>
-                                        <FSize value="7.0 pt" type="num"/>
-                                        <FUnderlining value="FNoUnderlining" type="enum"/>
-                                        <FOverline value="No" type="enum"/>
-                                        <FStrike value="No" type="enum"/>
-                                        <FChangeBar value="No" type="enum"/>
-                                        <FOutline value="No" type="enum"/>
-                                        <FShadow value="No" type="enum"/>
-                                        <FPairKern value="Yes" type="enum"/>
-                                        <FTsume value="No" type="enum"/>
-                                        <FCase value="FAsTyped" type="enum"/>
-                                        <FPosition value="FNormal" type="enum"/>
-                                        <FDX value="0.0%" type="num"/>
-                                        <FDY value="0.0%" type="num"/>
-                                        <FDW value="0.0%" type="num"/>
-                                        <FStretch value="100.0%" type="num"/>
-                                        <FLanguage value="Swedish" type="enum"/>
-                                        <FLocked value="No" type="enum"/>
-                                        <FSeparation value="0" type="enum"/>
-                                        <FColor value="Black" type="str"/>
-                                        <FBackgroundColor value="NoColor" type="enum"/>
-                                    </PgfFont>
-                                    <PgfLeading value="1.0 pt" type="num"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Font>
-                                        <FTag value="TabellFet" type="str"/>
-                                        <FLocked value="No" type="enum"/>
-                                    </Font>
-                                    <String>Extrados </String>
-                                </ParaLine>
-                                <ParaLine>
-                                    <String>(subkutant)</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039517" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfFont>
-                                        <FTag value="" type="str"/>
-                                        <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
-                                        <FFamily value="Frutiger LT Std 45 Light" type="str"/>
-                                        <FVar value="Regular" type="str"/>
-                                        <FWeight value="Bold" type="str"/>
-                                        <FAngle value="Regular" type="str"/>
-                                        <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
-                                        <FEncoding value="FrameRoman" type="str"/>
-                                        <FSize value="7.0 pt" type="num"/>
-                                        <FUnderlining value="FNoUnderlining" type="enum"/>
-                                        <FOverline value="No" type="enum"/>
-                                        <FStrike value="No" type="enum"/>
-                                        <FChangeBar value="No" type="enum"/>
-                                        <FOutline value="No" type="enum"/>
-                                        <FShadow value="No" type="enum"/>
-                                        <FPairKern value="Yes" type="enum"/>
-                                        <FTsume value="No" type="enum"/>
-                                        <FCase value="FAsTyped" type="enum"/>
-                                        <FPosition value="FNormal" type="enum"/>
-                                        <FDX value="0.0%" type="num"/>
-                                        <FDY value="0.0%" type="num"/>
-                                        <FDW value="0.0%" type="num"/>
-                                        <FStretch value="100.0%" type="num"/>
-                                        <FLanguage value="Swedish" type="enum"/>
-                                        <FLocked value="No" type="enum"/>
-                                        <FSeparation value="0" type="enum"/>
-                                        <FColor value="Black" type="str"/>
-                                        <FBackgroundColor value="NoColor" type="enum"/>
-                                    </PgfFont>
-                                    <PgfLeading value="1.0 pt" type="num"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Font>
-                                        <FTag value="TabellFet" type="str"/>
-                                        <FLocked value="No" type="enum"/>
-                                    </Font>
-                                    <String>Dygnsdos (subkutant)</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039519" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfFont>
-                                        <FTag value="" type="str"/>
-                                        <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
-                                        <FFamily value="Frutiger LT Std 45 Light" type="str"/>
-                                        <FVar value="Regular" type="str"/>
-                                        <FWeight value="Bold" type="str"/>
-                                        <FAngle value="Regular" type="str"/>
-                                        <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
-                                        <FEncoding value="FrameRoman" type="str"/>
-                                        <FSize value="7.0 pt" type="num"/>
-                                        <FUnderlining value="FNoUnderlining" type="enum"/>
-                                        <FOverline value="No" type="enum"/>
-                                        <FStrike value="No" type="enum"/>
-                                        <FChangeBar value="No" type="enum"/>
-                                        <FOutline value="No" type="enum"/>
-                                        <FShadow value="No" type="enum"/>
-                                        <FPairKern value="Yes" type="enum"/>
-                                        <FTsume value="No" type="enum"/>
-                                        <FCase value="FAsTyped" type="enum"/>
-                                        <FPosition value="FNormal" type="enum"/>
-                                        <FDX value="0.0%" type="num"/>
-                                        <FDY value="0.0%" type="num"/>
-                                        <FDW value="-0.5%" type="num"/>
-                                        <FStretch value="100.0%" type="num"/>
-                                        <FLanguage value="Swedish" type="enum"/>
-                                        <FLocked value="No" type="enum"/>
-                                        <FSeparation value="0" type="enum"/>
-                                        <FColor value="Black" type="str"/>
-                                        <FBackgroundColor value="NoColor" type="enum"/>
-                                    </PgfFont>
-                                    <PgfLeading value="1.0 pt" type="num"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Font>
-                                        <FTag value="TabellFet" type="str"/>
-                                        <FDW value="-0.5%" type="num"/>
-                                        <FLocked value="No" type="enum"/>
-                                    </Font>
-                                    <String>Extrados </String>
-                                </ParaLine>
-                                <ParaLine>
-                                    <String>(subkutant)</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039521" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfFont>
-                                        <FTag value="" type="str"/>
-                                        <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
-                                        <FFamily value="Frutiger LT Std 45 Light" type="str"/>
-                                        <FVar value="Regular" type="str"/>
-                                        <FWeight value="Bold" type="str"/>
-                                        <FAngle value="Regular" type="str"/>
-                                        <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
-                                        <FEncoding value="FrameRoman" type="str"/>
-                                        <FSize value="7.0 pt" type="num"/>
-                                        <FUnderlining value="FNoUnderlining" type="enum"/>
-                                        <FOverline value="No" type="enum"/>
-                                        <FStrike value="No" type="enum"/>
-                                        <FChangeBar value="No" type="enum"/>
-                                        <FOutline value="No" type="enum"/>
-                                        <FShadow value="No" type="enum"/>
-                                        <FPairKern value="Yes" type="enum"/>
-                                        <FTsume value="No" type="enum"/>
-                                        <FCase value="FAsTyped" type="enum"/>
-                                        <FPosition value="FNormal" type="enum"/>
-                                        <FDX value="0.0%" type="num"/>
-                                        <FDY value="0.0%" type="num"/>
-                                        <FDW value="0.0%" type="num"/>
-                                        <FStretch value="100.0%" type="num"/>
-                                        <FLanguage value="Swedish" type="enum"/>
-                                        <FLocked value="No" type="enum"/>
-                                        <FSeparation value="0" type="enum"/>
-                                        <FColor value="Black" type="str"/>
-                                        <FBackgroundColor value="NoColor" type="enum"/>
-                                    </PgfFont>
-                                    <PgfLeading value="1.0 pt" type="num"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Font>
-                                        <FTag value="TabellFet" type="str"/>
-                                        <FLocked value="No" type="enum"/>
-                                    </Font>
-                                    <String>Dos mikrog/timme</String>
-                                </ParaLine>
-                            </Para>
-                            <Para>
-                                <Unique value="1039522" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfFont>
-                                        <FTag value="" type="str"/>
-                                        <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
-                                        <FFamily value="Frutiger LT Std 45 Light" type="str"/>
-                                        <FVar value="Regular" type="str"/>
-                                        <FWeight value="Bold" type="str"/>
-                                        <FAngle value="Regular" type="str"/>
-                                        <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
-                                        <FEncoding value="FrameRoman" type="str"/>
-                                        <FSize value="7.0 pt" type="num"/>
-                                        <FUnderlining value="FNoUnderlining" type="enum"/>
-                                        <FOverline value="No" type="enum"/>
-                                        <FStrike value="No" type="enum"/>
-                                        <FChangeBar value="No" type="enum"/>
-                                        <FOutline value="No" type="enum"/>
-                                        <FShadow value="No" type="enum"/>
-                                        <FPairKern value="Yes" type="enum"/>
-                                        <FTsume value="No" type="enum"/>
-                                        <FCase value="FAsTyped" type="enum"/>
-                                        <FPosition value="FNormal" type="enum"/>
-                                        <FDX value="0.0%" type="num"/>
-                                        <FDY value="0.0%" type="num"/>
-                                        <FDW value="0.0%" type="num"/>
-                                        <FStretch value="100.0%" type="num"/>
-                                        <FLanguage value="Swedish" type="enum"/>
-                                        <FLocked value="No" type="enum"/>
-                                        <FSeparation value="0" type="enum"/>
-                                        <FColor value="Black" type="str"/>
-                                        <FBackgroundColor value="NoColor" type="enum"/>
-                                    </PgfFont>
-                                    <PgfLeading value="1.0 pt" type="num"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <String>(transdermalt)</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                </Row>
-                <Row>
-                    <RowMaxHeight value="355.60065 mm" type="num"/>
-                    <RowHeight value="4.58611 mm" type="num"/>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039524" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                    <PgfNumTabs value="1" type="enum"/>
-                                    <TabStop>
-                                        <TSX value="15.69037 mm" type="num"/>
-                                        <TSType value="Left" type="enum"/>
-                                        <TSLeaderStr value=" " type="str"/>
-                                    </TabStop>
-                                </Pgf>
-                                <ParaLine>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>10</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039526" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>2,5</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039528" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039530" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039532" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>12</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                </Row>
-                <Row>
-                    <RowMaxHeight value="355.60065 mm" type="num"/>
-                    <RowHeight value="4.58611 mm" type="num"/>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039534" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>20</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039536" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>5</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039538" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039540" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039542" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>12</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                </Row>
-                <Row>
-                    <RowMaxHeight value="355.60065 mm" type="num"/>
-                    <RowHeight value="4.58611 mm" type="num"/>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039544" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>40</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039546" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>7,5</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039548" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039550" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039552" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>25</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                </Row>
-                <Row>
-                    <RowMaxHeight value="355.60065 mm" type="num"/>
-                    <RowHeight value="4.58611 mm" type="num"/>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039554" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>60</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039556" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <String>10</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039558" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>12</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039560" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>2</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039562" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>50</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                </Row>
-                <Row>
-                    <RowMaxHeight value="355.60065 mm" type="num"/>
-                    <RowHeight value="4.58611 mm" type="num"/>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039564" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <String>100</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039566" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <String>15</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039568" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>20</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039570" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>3</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039572" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>75</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                </Row>
-                <Row>
-                    <RowMaxHeight value="355.60065 mm" type="num"/>
-                    <RowHeight value="4.58611 mm" type="num"/>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039574" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <String>150</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039576" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <String>25</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039578" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>30</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039580" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>5</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039582" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <String>100</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                </Row>
-                <Row>
-                    <RowMaxHeight value="355.60065 mm" type="num"/>
-                    <RowHeight value="4.58611 mm" type="num"/>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039584" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039586" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039588" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>60</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039590" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <String>10</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039592" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <String>200</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                </Row>
-                <Row>
-                    <RowMaxHeight value="355.60065 mm" type="num"/>
-                    <RowHeight value="4.58611 mm" type="num"/>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039594" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039596" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039598" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <String>100</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039600" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <String>15</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039602" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <Pgf>
-                                    <PgfAlignment value="Center" type="enum"/>
-                                </Pgf>
-                                <ParaLine>
-                                    <String>300</String>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                </Row>
-                <Row>
-                    <RowMaxHeight value="355.60065 mm" type="num"/>
-                    <RowHeight value="0.81138 mm" type="num"/>
-                    <Cell>
-                        <CellColumns value="5" type="enum"/>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039604" type="enum"/>
-                                <PgfTag value="TabellLinje" type="str"/>
-                                <ParaLine>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039606" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <ParaLine>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039608" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <ParaLine>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039610" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <ParaLine>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                    <Cell>
-                        <CellContent>
-                            <Notes>
-                            </Notes>
-                            <Para>
-                                <Unique value="1039612" type="enum"/>
-                                <PgfTag value="TabellText" type="str"/>
-                                <ParaLine>
-                                </ParaLine>
-                            </Para>
-                        </CellContent>
-                    </Cell>
-                </Row>
-            </TblBody>
-        </Tbl>
-        <Tbl>
-            <TblID value="16" type="enum"/>
             <TblTag value="Tabell faktaruta" type="str"/>
             <TblNumColumns value="1" type="enum"/>
             <Unique value="1035955" type="enum"/>
@@ -12412,7 +11070,7 @@
                                         <XRefSrcText value="69092: FaktaRub1: Paracetamol" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;Q1_SMA_Smartbehandl_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1384327071 370000" type="num"/>
+                                        <XRefLastUpdate value="1385402997 882000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -12437,7 +11095,7 @@
                                         <XRefSrcText value="69092: FaktaRub1: Paracetamol" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;Q1_SMA_Smartbehandl_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1384327071 370000" type="num"/>
+                                        <XRefLastUpdate value="1385402997 882000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -12568,7 +11226,7 @@
             </TblBody>
         </Tbl>
         <Tbl>
-            <TblID value="17" type="enum"/>
+            <TblID value="15" type="enum"/>
             <TblTag value="Tabell faktaruta" type="str"/>
             <TblNumColumns value="1" type="enum"/>
             <Unique value="1040211" type="enum"/>
@@ -12810,7 +11468,7 @@
             </TblBody>
         </Tbl>
         <Tbl>
-            <TblID value="18" type="enum"/>
+            <TblID value="16" type="enum"/>
             <TblTag value="Tabell faktaruta" type="str"/>
             <TblNumColumns value="1" type="enum"/>
             <Unique value="1036487" type="enum"/>
@@ -13017,6 +11675,1386 @@
                             <Para>
                                 <Unique value="1046685" type="enum"/>
                                 <PgfTag value="FaktaText" type="str"/>
+                                <ParaLine>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                </Row>
+            </TblBody>
+        </Tbl>
+        <Tbl>
+            <TblID value="17" type="enum"/>
+            <TblTag value="Tabell bred" type="str"/>
+            <TblFormat>
+                <TblColumn>
+                    <TblColumnNum value="0" type="enum"/>
+                    <TblColumnWidth value="20.00003 mm" type="num"/>
+                    <TblColumnH>
+                        <Pgf>
+                            <PgfTag value="Body" type="str"/>
+                            <PgfUseNextTag value="No" type="enum"/>
+                            <PgfNextTag value="" type="str"/>
+                            <PgfAlignment value="LeftRight" type="enum"/>
+                            <PgfFIndent value="0.0 mm" type="num"/>
+                            <PgfLIndent value="0.0 mm" type="num"/>
+                            <PgfRIndent value="0.0 mm" type="num"/>
+                            <PgfRunInDefaultPunct value=". " type="str"/>
+                            <PgfBlockSize value="1" type="enum"/>
+                            <PgfFont>
+                                <FTag value="" type="str"/>
+                                <FPlatformName value="W.Times New Roman.R.400" type="str"/>
+                                <FFamily value="Times New Roman" type="str"/>
+                                <FVar value="Regular" type="str"/>
+                                <FWeight value="Regular" type="str"/>
+                                <FAngle value="Regular" type="str"/>
+                                <FEncoding value="FrameRoman" type="str"/>
+                                <FSize value="12.0 pt" type="num"/>
+                                <FUnderlining value="FNoUnderlining" type="enum"/>
+                                <FOverline value="No" type="enum"/>
+                                <FStrike value="No" type="enum"/>
+                                <FChangeBar value="No" type="enum"/>
+                                <FOutline value="No" type="enum"/>
+                                <FShadow value="No" type="enum"/>
+                                <FPairKern value="No" type="enum"/>
+                                <FTsume value="No" type="enum"/>
+                                <FCase value="FAsTyped" type="enum"/>
+                                <FPosition value="FNormal" type="enum"/>
+                                <FDX value="0.0%" type="num"/>
+                                <FDY value="0.0%" type="num"/>
+                                <FDW value="0.0%" type="num"/>
+                                <FStretch value="100.0%" type="num"/>
+                                <FLanguage value="USEnglish" type="enum"/>
+                                <FLocked value="No" type="enum"/>
+                                <FSeparation value="0" type="enum"/>
+                                <FColor value="Black" type="str"/>
+                                <FBackgroundColor value="NoColor" type="enum"/>
+                            </PgfFont>
+                            <PgfLeading value="2.0 pt" type="num"/>
+                            <PgfPDFStructureLevel value="0" type="enum"/>
+                            <PgfLanguage value="USEnglish" type="enum"/>
+                        </Pgf>
+                    </TblColumnH>
+                    <TblColumnBody>
+                    </TblColumnBody>
+                    <TblColumnF>
+                    </TblColumnF>
+                </TblColumn>
+                <TblTitlePgf1>
+                </TblTitlePgf1>
+                <TblInitNumColumns value="1" type="enum"/>
+                <TblInitNumHRows value="0" type="enum"/>
+                <TblInitNumBodyRows value="1" type="enum"/>
+            </TblFormat>
+            <TblNumColumns value="5" type="enum"/>
+            <Unique value="1050049" type="enum"/>
+            <TblColumnWidth value="35.82342 mm" type="num"/>
+            <TblColumnWidth value="19.54331 mm" type="num"/>
+            <TblColumnWidth value="31.52415 mm" type="num"/>
+            <TblColumnWidth value="19.01415 mm" type="num"/>
+            <TblColumnWidth value="28.32716 mm" type="num"/>
+            <TblTitle>
+                <TblTitleContent>
+                    <Notes>
+                    </Notes>
+                    <Para>
+                        <Unique value="1050298" type="enum"/>
+                        <PgfTag value="TabellRubrik_2sp" type="str"/>
+                        <PgfNumString value="Tabell 1. " type="str"/>
+                        <PgfReferenced value="Yes" type="enum"/>
+                        <ParaLine>
+                            <Marker>
+                                <MType value="9" type="enum"/>
+                                <MTypeName value="Cross-Ref" type="str"/>
+                                <MText value="15930: TabellRubrik_2sp: Tabell 1. Tabell för beräkning av lämpliga extradoser opioider vid" type="str"/>
+                                <MCurrPage value="917" type="str"/>
+                                <Unique value="1050323" type="enum"/>
+                            </Marker>
+                            <String>Tabell </String>
+                            <Marker>
+                                <MType value="2" type="enum"/>
+                                <MTypeName value="Index" type="str"/>
+                                <MText value="opioider:doskonvertering;opioider:extradoser" type="str"/>
+                                <MCurrPage value="917" type="str"/>
+                                <Unique value="1050313" type="enum"/>
+                            </Marker>
+                            <String>för beräkning av lämpliga extradoser opioider vid smärtgenombrott. Tabellen </String>
+                        </ParaLine>
+                        <ParaLine>
+                            <String>baseras på Fass och på klinisk erfarenhet. De olika medlens biotillgänglighet vid oral administration </String>
+                        </ParaLine>
+                        <ParaLine>
+                            <String>varierar mycket. Räkna med att tablettdosen för morfin ska vara ungefär dubbel parenteral dos och </String>
+                        </ParaLine>
+                        <ParaLine>
+                            <String>för oxikodon 50% högre.</String>
+                        </ParaLine>
+                    </Para>
+                </TblTitleContent>
+            </TblTitle>
+            <TblBody>
+                <Row>
+                    <RowMaxHeight value="355.60065 mm" type="num"/>
+                    <RowHeight value="4.76251 mm" type="num"/>
+                    <Cell>
+                        <CellColumns value="2" type="enum"/>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050184" type="enum"/>
+                                <PgfTag value="TabellKolRub" type="str"/>
+                                <Pgf>
+                                    <PgfFont>
+                                        <FTag value="" type="str"/>
+                                        <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
+                                        <FFamily value="Frutiger LT Std 45 Light" type="str"/>
+                                        <FVar value="Regular" type="str"/>
+                                        <FWeight value="Bold" type="str"/>
+                                        <FAngle value="Regular" type="str"/>
+                                        <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
+                                        <FEncoding value="FrameRoman" type="str"/>
+                                        <FSize value="7.5 pt" type="num"/>
+                                        <FUnderlining value="FNoUnderlining" type="enum"/>
+                                        <FOverline value="No" type="enum"/>
+                                        <FStrike value="No" type="enum"/>
+                                        <FChangeBar value="No" type="enum"/>
+                                        <FOutline value="No" type="enum"/>
+                                        <FShadow value="No" type="enum"/>
+                                        <FPairKern value="Yes" type="enum"/>
+                                        <FTsume value="No" type="enum"/>
+                                        <FCase value="FAsTyped" type="enum"/>
+                                        <FPosition value="FNormal" type="enum"/>
+                                        <FDX value="0.0%" type="num"/>
+                                        <FDY value="0.0%" type="num"/>
+                                        <FDW value="0.0%" type="num"/>
+                                        <FStretch value="100.0%" type="num"/>
+                                        <FLanguage value="Swedish" type="enum"/>
+                                        <FLocked value="No" type="enum"/>
+                                        <FSeparation value="0" type="enum"/>
+                                        <FColor value="Black" type="str"/>
+                                        <FBackgroundColor value="NoColor" type="enum"/>
+                                    </PgfFont>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>Morfin/oxikodon (mg)</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050186" type="enum"/>
+                                <PgfTag value="TabellKolRub" type="str"/>
+                                <ParaLine>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellColumns value="2" type="enum"/>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050188" type="enum"/>
+                                <PgfTag value="TabellKolRub" type="str"/>
+                                <Pgf>
+                                    <PgfFont>
+                                        <FTag value="" type="str"/>
+                                        <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
+                                        <FFamily value="Frutiger LT Std 45 Light" type="str"/>
+                                        <FVar value="Regular" type="str"/>
+                                        <FWeight value="Bold" type="str"/>
+                                        <FAngle value="Regular" type="str"/>
+                                        <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
+                                        <FEncoding value="FrameRoman" type="str"/>
+                                        <FSize value="7.5 pt" type="num"/>
+                                        <FUnderlining value="FNoUnderlining" type="enum"/>
+                                        <FOverline value="No" type="enum"/>
+                                        <FStrike value="No" type="enum"/>
+                                        <FChangeBar value="No" type="enum"/>
+                                        <FOutline value="No" type="enum"/>
+                                        <FShadow value="No" type="enum"/>
+                                        <FPairKern value="Yes" type="enum"/>
+                                        <FTsume value="No" type="enum"/>
+                                        <FCase value="FAsTyped" type="enum"/>
+                                        <FPosition value="FNormal" type="enum"/>
+                                        <FDX value="0.0%" type="num"/>
+                                        <FDY value="0.0%" type="num"/>
+                                        <FDW value="0.0%" type="num"/>
+                                        <FStretch value="100.0%" type="num"/>
+                                        <FLanguage value="Swedish" type="enum"/>
+                                        <FLocked value="No" type="enum"/>
+                                        <FSeparation value="0" type="enum"/>
+                                        <FColor value="Black" type="str"/>
+                                        <FBackgroundColor value="NoColor" type="enum"/>
+                                    </PgfFont>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>Hydromorfon (mg)</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050190" type="enum"/>
+                                <PgfTag value="TabellKolRub" type="str"/>
+                                <ParaLine>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                                <FNote>
+                                    <ID value="18" type="enum"/>
+                                    <Para>
+                                        <Unique value="1050194" type="enum"/>
+                                        <PgfTag value="TableFootnote" type="str"/>
+                                        <ParaLine>
+                                            <String>Till patienter med transdermal fentanylbehandling ges i första hand morfin/oxikodon inom dosintervallet som anges för extra </String>
+                                            <Char value="Tab" type="enum"/>
+                                            <Char value="Tab" type="enum"/>
+                                        </ParaLine>
+                                        <ParaLine>
+                                            <Char value="HardSpace" type="enum"/>
+                                            <Char value="HardSpace" type="enum"/>
+                                            <Char value="HardSpace" type="enum"/>
+                                            <Char value="HardSpace" type="enum"/>
+                                            <Char value="DiscHyphen" type="enum"/>
+                                            <String>doser vid behandling med morfin/oxikodon + se nedan.</String>
+                                        </ParaLine>
+                                    </Para>
+                                </FNote>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050195" type="enum"/>
+                                <PgfTag value="TabellKolRub" type="str"/>
+                                <Pgf>
+                                    <PgfFont>
+                                        <FTag value="" type="str"/>
+                                        <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
+                                        <FFamily value="Frutiger LT Std 45 Light" type="str"/>
+                                        <FVar value="Regular" type="str"/>
+                                        <FWeight value="Bold" type="str"/>
+                                        <FAngle value="Regular" type="str"/>
+                                        <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
+                                        <FEncoding value="FrameRoman" type="str"/>
+                                        <FSize value="7.5 pt" type="num"/>
+                                        <FUnderlining value="FNoUnderlining" type="enum"/>
+                                        <FOverline value="No" type="enum"/>
+                                        <FStrike value="No" type="enum"/>
+                                        <FChangeBar value="No" type="enum"/>
+                                        <FOutline value="No" type="enum"/>
+                                        <FShadow value="No" type="enum"/>
+                                        <FPairKern value="Yes" type="enum"/>
+                                        <FTsume value="No" type="enum"/>
+                                        <FCase value="FAsTyped" type="enum"/>
+                                        <FPosition value="FNormal" type="enum"/>
+                                        <FDX value="0.0%" type="num"/>
+                                        <FDY value="0.0%" type="num"/>
+                                        <FDW value="0.0%" type="num"/>
+                                        <FStretch value="100.0%" type="num"/>
+                                        <FLanguage value="Swedish" type="enum"/>
+                                        <FLocked value="No" type="enum"/>
+                                        <FSeparation value="0" type="enum"/>
+                                        <FColor value="Black" type="str"/>
+                                        <FBackgroundColor value="NoColor" type="enum"/>
+                                    </PgfFont>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>Fentanyl</String>
+                                    <FNote value="18" type="enum"/>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                </Row>
+                <Row>
+                    <RowMaxHeight value="355.60065 mm" type="num"/>
+                    <RowHeight value="7.40834 mm" type="num"/>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050197" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfFont>
+                                        <FTag value="" type="str"/>
+                                        <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
+                                        <FFamily value="Frutiger LT Std 45 Light" type="str"/>
+                                        <FVar value="Regular" type="str"/>
+                                        <FWeight value="Bold" type="str"/>
+                                        <FAngle value="Regular" type="str"/>
+                                        <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
+                                        <FEncoding value="FrameRoman" type="str"/>
+                                        <FSize value="7.0 pt" type="num"/>
+                                        <FUnderlining value="FNoUnderlining" type="enum"/>
+                                        <FOverline value="No" type="enum"/>
+                                        <FStrike value="No" type="enum"/>
+                                        <FChangeBar value="No" type="enum"/>
+                                        <FOutline value="No" type="enum"/>
+                                        <FShadow value="No" type="enum"/>
+                                        <FPairKern value="Yes" type="enum"/>
+                                        <FTsume value="No" type="enum"/>
+                                        <FCase value="FAsTyped" type="enum"/>
+                                        <FPosition value="FNormal" type="enum"/>
+                                        <FDX value="0.0%" type="num"/>
+                                        <FDY value="0.0%" type="num"/>
+                                        <FDW value="0.0%" type="num"/>
+                                        <FStretch value="100.0%" type="num"/>
+                                        <FLanguage value="Swedish" type="enum"/>
+                                        <FLocked value="No" type="enum"/>
+                                        <FSeparation value="0" type="enum"/>
+                                        <FColor value="Black" type="str"/>
+                                        <FBackgroundColor value="NoColor" type="enum"/>
+                                    </PgfFont>
+                                    <PgfLeading value="1.0 pt" type="num"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Font>
+                                        <FTag value="TabellFet" type="str"/>
+                                        <FLocked value="No" type="enum"/>
+                                    </Font>
+                                    <String>Dygnsdos (subkutant)</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050199" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfFont>
+                                        <FTag value="" type="str"/>
+                                        <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
+                                        <FFamily value="Frutiger LT Std 45 Light" type="str"/>
+                                        <FVar value="Regular" type="str"/>
+                                        <FWeight value="Bold" type="str"/>
+                                        <FAngle value="Regular" type="str"/>
+                                        <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
+                                        <FEncoding value="FrameRoman" type="str"/>
+                                        <FSize value="7.0 pt" type="num"/>
+                                        <FUnderlining value="FNoUnderlining" type="enum"/>
+                                        <FOverline value="No" type="enum"/>
+                                        <FStrike value="No" type="enum"/>
+                                        <FChangeBar value="No" type="enum"/>
+                                        <FOutline value="No" type="enum"/>
+                                        <FShadow value="No" type="enum"/>
+                                        <FPairKern value="Yes" type="enum"/>
+                                        <FTsume value="No" type="enum"/>
+                                        <FCase value="FAsTyped" type="enum"/>
+                                        <FPosition value="FNormal" type="enum"/>
+                                        <FDX value="0.0%" type="num"/>
+                                        <FDY value="0.0%" type="num"/>
+                                        <FDW value="0.0%" type="num"/>
+                                        <FStretch value="100.0%" type="num"/>
+                                        <FLanguage value="Swedish" type="enum"/>
+                                        <FLocked value="No" type="enum"/>
+                                        <FSeparation value="0" type="enum"/>
+                                        <FColor value="Black" type="str"/>
+                                        <FBackgroundColor value="NoColor" type="enum"/>
+                                    </PgfFont>
+                                    <PgfLeading value="1.0 pt" type="num"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Font>
+                                        <FTag value="TabellFet" type="str"/>
+                                        <FLocked value="No" type="enum"/>
+                                    </Font>
+                                    <String>Extrados </String>
+                                </ParaLine>
+                                <ParaLine>
+                                    <String>(subkutant)</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050201" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfFont>
+                                        <FTag value="" type="str"/>
+                                        <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
+                                        <FFamily value="Frutiger LT Std 45 Light" type="str"/>
+                                        <FVar value="Regular" type="str"/>
+                                        <FWeight value="Bold" type="str"/>
+                                        <FAngle value="Regular" type="str"/>
+                                        <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
+                                        <FEncoding value="FrameRoman" type="str"/>
+                                        <FSize value="7.0 pt" type="num"/>
+                                        <FUnderlining value="FNoUnderlining" type="enum"/>
+                                        <FOverline value="No" type="enum"/>
+                                        <FStrike value="No" type="enum"/>
+                                        <FChangeBar value="No" type="enum"/>
+                                        <FOutline value="No" type="enum"/>
+                                        <FShadow value="No" type="enum"/>
+                                        <FPairKern value="Yes" type="enum"/>
+                                        <FTsume value="No" type="enum"/>
+                                        <FCase value="FAsTyped" type="enum"/>
+                                        <FPosition value="FNormal" type="enum"/>
+                                        <FDX value="0.0%" type="num"/>
+                                        <FDY value="0.0%" type="num"/>
+                                        <FDW value="0.0%" type="num"/>
+                                        <FStretch value="100.0%" type="num"/>
+                                        <FLanguage value="Swedish" type="enum"/>
+                                        <FLocked value="No" type="enum"/>
+                                        <FSeparation value="0" type="enum"/>
+                                        <FColor value="Black" type="str"/>
+                                        <FBackgroundColor value="NoColor" type="enum"/>
+                                    </PgfFont>
+                                    <PgfLeading value="1.0 pt" type="num"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Font>
+                                        <FTag value="TabellFet" type="str"/>
+                                        <FLocked value="No" type="enum"/>
+                                    </Font>
+                                    <String>Dygnsdos (subkutant)</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050203" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfFont>
+                                        <FTag value="" type="str"/>
+                                        <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
+                                        <FFamily value="Frutiger LT Std 45 Light" type="str"/>
+                                        <FVar value="Regular" type="str"/>
+                                        <FWeight value="Bold" type="str"/>
+                                        <FAngle value="Regular" type="str"/>
+                                        <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
+                                        <FEncoding value="FrameRoman" type="str"/>
+                                        <FSize value="7.0 pt" type="num"/>
+                                        <FUnderlining value="FNoUnderlining" type="enum"/>
+                                        <FOverline value="No" type="enum"/>
+                                        <FStrike value="No" type="enum"/>
+                                        <FChangeBar value="No" type="enum"/>
+                                        <FOutline value="No" type="enum"/>
+                                        <FShadow value="No" type="enum"/>
+                                        <FPairKern value="Yes" type="enum"/>
+                                        <FTsume value="No" type="enum"/>
+                                        <FCase value="FAsTyped" type="enum"/>
+                                        <FPosition value="FNormal" type="enum"/>
+                                        <FDX value="0.0%" type="num"/>
+                                        <FDY value="0.0%" type="num"/>
+                                        <FDW value="-0.5%" type="num"/>
+                                        <FStretch value="100.0%" type="num"/>
+                                        <FLanguage value="Swedish" type="enum"/>
+                                        <FLocked value="No" type="enum"/>
+                                        <FSeparation value="0" type="enum"/>
+                                        <FColor value="Black" type="str"/>
+                                        <FBackgroundColor value="NoColor" type="enum"/>
+                                    </PgfFont>
+                                    <PgfLeading value="1.0 pt" type="num"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Font>
+                                        <FTag value="TabellFet" type="str"/>
+                                        <FDW value="-0.5%" type="num"/>
+                                        <FLocked value="No" type="enum"/>
+                                    </Font>
+                                    <String>Extrados </String>
+                                </ParaLine>
+                                <ParaLine>
+                                    <String>(subkutant)</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050205" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfFont>
+                                        <FTag value="" type="str"/>
+                                        <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
+                                        <FFamily value="Frutiger LT Std 45 Light" type="str"/>
+                                        <FVar value="Regular" type="str"/>
+                                        <FWeight value="Bold" type="str"/>
+                                        <FAngle value="Regular" type="str"/>
+                                        <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
+                                        <FEncoding value="FrameRoman" type="str"/>
+                                        <FSize value="7.0 pt" type="num"/>
+                                        <FUnderlining value="FNoUnderlining" type="enum"/>
+                                        <FOverline value="No" type="enum"/>
+                                        <FStrike value="No" type="enum"/>
+                                        <FChangeBar value="No" type="enum"/>
+                                        <FOutline value="No" type="enum"/>
+                                        <FShadow value="No" type="enum"/>
+                                        <FPairKern value="Yes" type="enum"/>
+                                        <FTsume value="No" type="enum"/>
+                                        <FCase value="FAsTyped" type="enum"/>
+                                        <FPosition value="FNormal" type="enum"/>
+                                        <FDX value="0.0%" type="num"/>
+                                        <FDY value="0.0%" type="num"/>
+                                        <FDW value="0.0%" type="num"/>
+                                        <FStretch value="100.0%" type="num"/>
+                                        <FLanguage value="Swedish" type="enum"/>
+                                        <FLocked value="No" type="enum"/>
+                                        <FSeparation value="0" type="enum"/>
+                                        <FColor value="Black" type="str"/>
+                                        <FBackgroundColor value="NoColor" type="enum"/>
+                                    </PgfFont>
+                                    <PgfLeading value="1.0 pt" type="num"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Font>
+                                        <FTag value="TabellFet" type="str"/>
+                                        <FLocked value="No" type="enum"/>
+                                    </Font>
+                                    <String>Dos mikrog/timme</String>
+                                </ParaLine>
+                            </Para>
+                            <Para>
+                                <Unique value="1050206" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfFont>
+                                        <FTag value="" type="str"/>
+                                        <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
+                                        <FFamily value="Frutiger LT Std 45 Light" type="str"/>
+                                        <FVar value="Regular" type="str"/>
+                                        <FWeight value="Bold" type="str"/>
+                                        <FAngle value="Regular" type="str"/>
+                                        <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
+                                        <FEncoding value="FrameRoman" type="str"/>
+                                        <FSize value="7.0 pt" type="num"/>
+                                        <FUnderlining value="FNoUnderlining" type="enum"/>
+                                        <FOverline value="No" type="enum"/>
+                                        <FStrike value="No" type="enum"/>
+                                        <FChangeBar value="No" type="enum"/>
+                                        <FOutline value="No" type="enum"/>
+                                        <FShadow value="No" type="enum"/>
+                                        <FPairKern value="Yes" type="enum"/>
+                                        <FTsume value="No" type="enum"/>
+                                        <FCase value="FAsTyped" type="enum"/>
+                                        <FPosition value="FNormal" type="enum"/>
+                                        <FDX value="0.0%" type="num"/>
+                                        <FDY value="0.0%" type="num"/>
+                                        <FDW value="0.0%" type="num"/>
+                                        <FStretch value="100.0%" type="num"/>
+                                        <FLanguage value="Swedish" type="enum"/>
+                                        <FLocked value="No" type="enum"/>
+                                        <FSeparation value="0" type="enum"/>
+                                        <FColor value="Black" type="str"/>
+                                        <FBackgroundColor value="NoColor" type="enum"/>
+                                    </PgfFont>
+                                    <PgfLeading value="1.0 pt" type="num"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>(transdermalt)</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                </Row>
+                <Row>
+                    <RowMaxHeight value="355.60065 mm" type="num"/>
+                    <RowHeight value="4.58611 mm" type="num"/>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050208" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                    <PgfNumTabs value="1" type="enum"/>
+                                    <TabStop>
+                                        <TSX value="15.69037 mm" type="num"/>
+                                        <TSType value="Left" type="enum"/>
+                                        <TSLeaderStr value=" " type="str"/>
+                                    </TabStop>
+                                </Pgf>
+                                <ParaLine>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <String>10</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050210" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <String>2,5</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050212" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050214" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050216" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <String>12</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                </Row>
+                <Row>
+                    <RowMaxHeight value="355.60065 mm" type="num"/>
+                    <RowHeight value="4.58611 mm" type="num"/>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050218" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <String>20</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050220" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <String>5</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050222" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050224" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050226" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <String>12</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                </Row>
+                <Row>
+                    <RowMaxHeight value="355.60065 mm" type="num"/>
+                    <RowHeight value="4.58611 mm" type="num"/>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050228" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <String>40</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050230" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <String>7,5</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050232" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050234" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050236" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <String>25</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                </Row>
+                <Row>
+                    <RowMaxHeight value="355.60065 mm" type="num"/>
+                    <RowHeight value="4.58611 mm" type="num"/>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050238" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <String>60</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050240" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>10</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050242" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <String>12</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050244" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <String>2</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050246" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <String>50</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                </Row>
+                <Row>
+                    <RowMaxHeight value="355.60065 mm" type="num"/>
+                    <RowHeight value="4.58611 mm" type="num"/>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050248" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>100</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050250" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>15</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050252" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <String>20</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050254" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <String>3</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050256" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <String>75</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                </Row>
+                <Row>
+                    <RowMaxHeight value="355.60065 mm" type="num"/>
+                    <RowHeight value="4.58611 mm" type="num"/>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050258" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>150</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050260" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>25</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050262" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <String>30</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050264" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <String>5</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050266" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>100</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                </Row>
+                <Row>
+                    <RowMaxHeight value="355.60065 mm" type="num"/>
+                    <RowHeight value="4.58611 mm" type="num"/>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050268" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050270" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050272" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <Char value="HardSpace" type="enum"/>
+                                    <String>60</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050274" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>10</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050276" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>200</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                </Row>
+                <Row>
+                    <RowMaxHeight value="355.60065 mm" type="num"/>
+                    <RowHeight value="4.58611 mm" type="num"/>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050278" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050280" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050282" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>100</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050284" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>15</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050286" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <Pgf>
+                                    <PgfAlignment value="Center" type="enum"/>
+                                </Pgf>
+                                <ParaLine>
+                                    <String>300</String>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                </Row>
+                <Row>
+                    <RowMaxHeight value="355.60065 mm" type="num"/>
+                    <RowHeight value="0.81138 mm" type="num"/>
+                    <Cell>
+                        <CellColumns value="5" type="enum"/>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050288" type="enum"/>
+                                <PgfTag value="TabellLinje" type="str"/>
+                                <ParaLine>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050290" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <ParaLine>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050292" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <ParaLine>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050294" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
+                                <ParaLine>
+                                </ParaLine>
+                            </Para>
+                        </CellContent>
+                    </Cell>
+                    <Cell>
+                        <CellContent>
+                            <Notes>
+                            </Notes>
+                            <Para>
+                                <Unique value="1050296" type="enum"/>
+                                <PgfTag value="TabellText" type="str"/>
                                 <ParaLine>
                                 </ParaLine>
                             </Para>
@@ -15716,13 +15754,24 @@
             <TRSideheadPlacement value="Left" type="enum"/>
             <TRNext value="147" type="enum"/>
         </TextRect>
+        <PolyLine>
+            <Unique value="1036629" type="enum"/>
+            <Pen value="0" type="enum"/>
+            <PenWidth value="0.5 pt" type="num"/>
+            <HeadCap value="Butt" type="enum"/>
+            <TailCap value="Butt" type="enum"/>
+            <NumPoints value="2" type="enum"/>
+            <Point value="85.0 mm 93.43191 mm" type="num"/>
+            <Point value="85.0 mm 220.55 mm" type="num"/>
+        </PolyLine>
         <TextRect>
             <ID value="148" type="enum"/>
-            <Unique value="1036514" type="enum"/>
-            <PenWidth value="0.5 pt" type="num"/>
+            <Unique value="1049911" type="enum"/>
+            <Pen value="15" type="enum"/>
+            <PenWidth value="1.0 pt" type="num"/>
             <RunaroundType value="Contour" type="enum"/>
-            <ShapeRect value="18.0 mm 17.81531 mm 134.0 mm 73.41503 mm" type="num"/>
-            <BRect value="18.0 mm 17.81531 mm 134.0 mm 73.41503 mm" type="num"/>
+            <ShapeRect value="18.0 mm 14.65 mm 134.0 mm 76.254 mm" type="num"/>
+            <BRect value="18.0 mm 14.65 mm 134.0 mm 76.254 mm" type="num"/>
             <TRNumColumns value="1" type="enum"/>
             <TRColumnGap value="5.00001 mm" type="num"/>
             <TRColumnBalance value="No" type="enum"/>
@@ -15731,16 +15780,6 @@
             <TRSideheadPlacement value="Left" type="enum"/>
             <TRNext value="0" type="enum"/>
         </TextRect>
-        <PolyLine>
-            <Unique value="1036629" type="enum"/>
-            <Pen value="0" type="enum"/>
-            <HeadCap value="Butt" type="enum"/>
-            <TailCap value="Butt" type="enum"/>
-            <RunaroundType value="None" type="enum"/>
-            <NumPoints value="2" type="enum"/>
-            <Point value="85.0 mm 93.43191 mm" type="num"/>
-            <Point value="85.0 mm 220.55 mm" type="num"/>
-        </PolyLine>
     </Page>
     <Page>
         <Unique value="1031054" type="enum"/>
@@ -17482,7 +17521,7 @@
                     <XRefSrcText value="76644: FaktaRub1: Läkemedel som ofta kan sättas ut\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1384327071 356000" type="num"/>
+                    <XRefLastUpdate value="1385402997 867000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17507,7 +17546,7 @@
                     <XRefSrcText value="76644: FaktaRub1: Läkemedel som ofta kan sättas ut\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1384327071 356000" type="num"/>
+                    <XRefLastUpdate value="1385402997 867000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17683,7 +17722,7 @@
                     <XRefSrcText value="56888: KapRub: Smärta och smärtbehandling" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;Q1_SMA_Smartbehandl_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1384327071 370000" type="num"/>
+                    <XRefLastUpdate value="1385402997 882000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17841,7 +17880,7 @@
                     <XRefSrcText value="30984: Rub1: \x0d Symtom, diagnostik och differentialdiagnostik\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;Q1_SMA_Smartbehandl_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1384327071 370000" type="num"/>
+                    <XRefLastUpdate value="1385402997 882000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -18828,10 +18867,10 @@
                 <String>lever som obehagligt (Tabell 1).</String>
                 <XRef>
                     <XRefName value="Ref" type="str"/>
-                    <XRefSrcText value="30913: TabellRubrik_2sp: Tabell 1. Tabell för beräkning av lämpliga extradoser opioider vid" type="str"/>
+                    <XRefSrcText value="15930: TabellRubrik_2sp: Tabell 1. Tabell för beräkning av lämpliga extradoser opioider vid" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1384327071 356000" type="num"/>
+                    <XRefLastUpdate value="1385402997 867000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -19351,7 +19390,7 @@
                     <XRefSrcText value="83683: Rub3: Opioider och förstoppning \x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1384327071 356000" type="num"/>
+                    <XRefLastUpdate value="1385402997 867000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -19880,7 +19919,7 @@
                     <XRefSrcText value="30913: TabellRubrik_2sp: Tabell 1. Tabell för beräkning av lämpliga extradoser opioider vid" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1384327071 356000" type="num"/>
+                    <XRefLastUpdate value="1385393264 239000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -20046,7 +20085,7 @@
                     <XRefSrcText value="70929: Rub2: Palliativ behandling" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;J3_ONK_SjukdBrostkortel_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1383824872 244000" type="num"/>
+                    <XRefLastUpdate value="1385402997 895000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -20410,7 +20449,7 @@
                     <XRefSrcText value="19747: Rub2: Ångest och rädsla\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1384327071 356000" type="num"/>
+                    <XRefLastUpdate value="1385402997 867000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -20717,7 +20756,7 @@
                     <XRefSrcText value="47926: Rub2: Behandling av hyperkalcemi\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;K2b_END_RubbnKalc_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1383824872 254000" type="num"/>
+                    <XRefLastUpdate value="1385402997 910000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -21098,7 +21137,7 @@
                     <XRefSrcText value="66205: Rub2: Oxygenbehandling" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;M1_AND_AstmaKol_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1384327071 393000" type="num"/>
+                    <XRefLastUpdate value="1385402997 934000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -21975,7 +22014,7 @@
                     <XRefSrcText value="34947: Rub1: Muntorrhet" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;N2_AND_Munhala_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1383824872 294000" type="num"/>
+                    <XRefLastUpdate value="1385402997 952000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -22000,7 +22039,7 @@
                     <XRefSrcText value="55997: FaktaRub1: Subkutan infusion\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1384327071 356000" type="num"/>
+                    <XRefLastUpdate value="1385402997 867000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -23830,7 +23869,7 @@
                     <XRefSrcText value="60226: Rub1: Behandling av ångest och oro" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;S2_PSY_AngestOro_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1384172767 554000" type="num"/>
+                    <XRefLastUpdate value="1385402997 970000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -24370,7 +24409,7 @@
                     <XRefSrcText value="82417: FaktaRub1: Trygghetslåda\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1384327071 356000" type="num"/>
+                    <XRefLastUpdate value="1385402997 867000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -24445,7 +24484,7 @@
                     <XRefSrcText value="82417: FaktaRub1: Trygghetslåda\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1384327071 356000" type="num"/>
+                    <XRefLastUpdate value="1385402997 867000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27788,9 +27827,72 @@
         <Notes>
         </Notes>
         <Para>
+            <Unique value="1049913" type="enum"/>
+            <PgfTag value="Bröd" type="str"/>
+            <PgfReferenced value="Yes" type="enum"/>
+            <ParaLine>
+                <TextRectID value="148" type="enum"/>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FPlatformName value="W.Times New Roman.R.400" type="str"/>
+                    <FFamily value="Times New Roman" type="str"/>
+                    <FEncoding value="FrameRoman" type="str"/>
+                    <FSize value="12.0 pt" type="num"/>
+                    <FPairKern value="No" type="enum"/>
+                    <FLanguage value="UKEnglish" type="enum"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <ATbl value="17" type="enum"/>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+            </ParaLine>
+        </Para>
+    </TextFlow>
+    <TextFlow>
+        <Notes>
+        </Notes>
+        <Para>
             <Unique value="1044262" type="enum"/>
             <Pgf>
+                <PgfTag value="Body" type="str"/>
+                <PgfNextTag value="KapRub" type="str"/>
                 <PgfAlignment value="Right" type="enum"/>
+                <PgfRunInDefaultPunct value=". " type="str"/>
+                <PgfBlockSize value="1" type="enum"/>
+                <PgfFont>
+                    <FTag value="" type="str"/>
+                    <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
+                    <FFamily value="Frutiger LT Std 45 Light" type="str"/>
+                    <FVar value="Regular" type="str"/>
+                    <FWeight value="Bold" type="str"/>
+                    <FAngle value="Regular" type="str"/>
+                    <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
+                    <FEncoding value="FrameRoman" type="str"/>
+                    <FSize value="7.0 pt" type="num"/>
+                    <FUnderlining value="FNoUnderlining" type="enum"/>
+                    <FOverline value="No" type="enum"/>
+                    <FStrike value="No" type="enum"/>
+                    <FChangeBar value="No" type="enum"/>
+                    <FOutline value="No" type="enum"/>
+                    <FShadow value="No" type="enum"/>
+                    <FPairKern value="Yes" type="enum"/>
+                    <FTsume value="No" type="enum"/>
+                    <FCase value="FAsTyped" type="enum"/>
+                    <FPosition value="FNormal" type="enum"/>
+                    <FDX value="0.0%" type="num"/>
+                    <FDY value="0.0%" type="num"/>
+                    <FDW value="0.0%" type="num"/>
+                    <FStretch value="100.0%" type="num"/>
+                    <FLanguage value="Swedish" type="enum"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="0" type="enum"/>
+                    <FColor value="Black" type="str"/>
+                    <FBackgroundColor value="NoColor" type="enum"/>
+                </PgfFont>
+                <HyphenMaxLines value="2" type="enum"/>
+                <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
                 <TextRectID value="26" type="enum"/>
@@ -27883,7 +27985,7 @@
             </Pgf>
             <ParaLine>
                 <TextRectID value="164" type="enum"/>
-                <ATbl value="17" type="enum"/>
+                <ATbl value="15" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -28895,7 +28997,7 @@
             </Pgf>
             <ParaLine>
                 <TextRectID value="142" type="enum"/>
-                <ATbl value="16" type="enum"/>
+                <ATbl value="14" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -28947,56 +29049,11 @@
         <Notes>
         </Notes>
         <Para>
-            <Unique value="1036516" type="enum"/>
-            <PgfTag value="TabellRubrik_2sp" type="str"/>
-            <PgfNumString value="Tabell 1. " type="str"/>
-            <PgfReferenced value="Yes" type="enum"/>
-            <ParaLine>
-                <TextRectID value="148" type="enum"/>
-                <Marker>
-                    <MType value="9" type="enum"/>
-                    <MTypeName value="Cross-Ref" type="str"/>
-                    <MText value="30913: TabellRubrik_2sp: Tabell 1. Tabell för beräkning av lämpliga extradoser opioider vid" type="str"/>
-                    <MCurrPage value="917" type="str"/>
-                    <Unique value="1048117" type="enum"/>
-                </Marker>
-                <String>Tabell </String>
-                <Marker>
-                    <MType value="2" type="enum"/>
-                    <MTypeName value="Index" type="str"/>
-                    <MText value="opioider:doskonvertering;opioider:extradoser" type="str"/>
-                    <MCurrPage value="917" type="str"/>
-                    <Unique value="1039798" type="enum"/>
-                </Marker>
-                <String>för beräkning av lämpliga extradoser opioider vid smärtgenombrott. Tabellen </String>
-            </ParaLine>
-            <ParaLine>
-                <String>baseras på Fass och på klinisk erfarenhet. De olika medlens biotillgänglighet vid oral administration </String>
-            </ParaLine>
-            <ParaLine>
-                <String>varierar mycket. Räkna med att tablettdosen för morfin ska vara ungefär dubbel parenteral dos och </String>
-            </ParaLine>
-            <ParaLine>
-                <String>för oxikodon 50% högre.</String>
-                <ATbl value="14" type="enum"/>
-            </ParaLine>
-        </Para>
-    </TextFlow>
-    <TextFlow>
-        <Notes>
-        </Notes>
-        <Para>
             <Unique value="1044591" type="enum"/>
             <Pgf>
-                <PgfTag value="Body" type="str"/>
+                <PgfUseNextTag value="No" type="enum"/>
+                <PgfNextTag value="" type="str"/>
                 <PgfAlignment value="Right" type="enum"/>
-                <PgfFIndent value="0.0 mm" type="num"/>
-                <PgfLIndent value="0.0 mm" type="num"/>
-                <PgfBotSeparator value="" type="str"/>
-                <PgfPlacementStyle value="Normal" type="enum"/>
-                <PgfRunInDefaultPunct value=". " type="str"/>
-                <PgfSpBefore value="0.0 pt" type="num"/>
-                <PgfBlockSize value="1" type="enum"/>
                 <PgfFont>
                     <FTag value="" type="str"/>
                     <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
@@ -29028,13 +29085,6 @@
                     <FBackgroundColor value="NoColor" type="enum"/>
                 </PgfFont>
                 <PgfLeading value="2.0 pt" type="num"/>
-                <PgfAutoNum value="No" type="enum"/>
-                <PgfHyphenate value="Yes" type="enum"/>
-                <HyphenMinPrefix value="2" type="enum"/>
-                <HyphenMinSuffix value="2" type="enum"/>
-                <PgfMinWordSpace value="75" type="enum"/>
-                <PgfMaxWordSpace value="125" type="enum"/>
-                <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
                 <TextRectID value="97" type="enum"/>
@@ -29120,7 +29170,7 @@
             </Pgf>
             <ParaLine>
                 <TextRectID value="154" type="enum"/>
-                <ATbl value="18" type="enum"/>
+                <ATbl value="16" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>

@@ -5690,7 +5690,7 @@
         <DViewRect value="18 20 923 764 " type="enum"/>
         <DWindowRect value="0 0 1272 1044 " type="enum"/>
         <DViewScale value="120.0%" type="num"/>
-        <DNextUnique value="1036015" type="enum"/>
+        <DNextUnique value="1036046" type="enum"/>
         <DPageSize value="170.0 mm 240.0 mm" type="num"/>
         <DMenuBar value="" type="str"/>
         <DVoMenuBar value="" type="str"/>
@@ -5848,12 +5848,12 @@
         <DPDFDestsMarked value="Yes" type="enum"/>
         <DPDFStructure value="No" type="enum"/>
         <DPDFStructureDefined value="Yes" type="enum"/>
-        <DPDFBookmarks value="Yes" type="enum"/>
-        <DPDFConvertCMYK value="Yes" type="enum"/>
-        <DPDFOpenPage value="0" type="str"/>
+        <DPDFBookmarks value="No" type="enum"/>
+        <DPDFConvertCMYK value="No" type="enum"/>
+        <DPDFOpenPage value="1054" type="str"/>
         <DPDFFit value="Page" type="enum"/>
         <DPDFZoom value="0.0%" type="num"/>
-        <DPDFJobOptions value="Smallest File Size" type="str"/>
+        <DPDFJobOptions value="High Quality Print" type="str"/>
         <DPDFSaveSeparate value="No" type="enum"/>
         <DPDFRegMarks value="None" type="enum"/>
         <DPDFPageSizeSet value="No" type="enum"/>
@@ -5876,7 +5876,7 @@
         </PDFDocInfo>
         <DocFileInfo value="
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D30392D32375431303A32363A35302B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D30392D32375431303A32363A35302B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D31302D32355431393A31323A34302B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D31302D32355431393A31323A34302B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223EC384747374C3B6726E696E67617220E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 2020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
@@ -11168,7 +11168,6 @@
                         <PgfNumFormat value="T:Tabell &lt;n+&gt;:\x11 " type="str"/>
                         <PgfNumberFont value="" type="str"/>
                         <PgfNumAtEnd value="No" type="enum"/>
-                        <PgfAcrobatLevel value="25" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                         <PgfCellMargins value="0.0 pt 0.0 pt 0.0 pt 0.0 pt" type="num"/>
                     </Pgf>
@@ -11445,6 +11444,7 @@
                                 <PgfTag value="FaktaRub1" type="str"/>
                                 <PgfReferenced value="Yes" type="enum"/>
                                 <ParaLine>
+                                    <String>#2;</String>
                                     <Marker>
                                         <MType value="9" type="enum"/>
                                         <MTypeName value="Cross-Ref" type="str"/>
@@ -11548,7 +11548,7 @@
                                         <MCurrPage value="1057" type="str"/>
                                         <Unique value="1025119" type="enum"/>
                                     </Marker>
-                                    <String>Anorexia nervosa</String>
+                                    <String>#1;Anorexia nervosa</String>
                                 </ParaLine>
                             </Para>
                             <Para>
@@ -11887,7 +11887,7 @@
                                         <MCurrPage value="1058" type="str"/>
                                         <Unique value="1030490" type="enum"/>
                                     </Marker>
-                                    <String>Bulimia nervosa</String>
+                                    <String>#3;Bulimia nervosa</String>
                                 </ParaLine>
                             </Para>
                             <Para>
@@ -12214,7 +12214,7 @@
                                         <XRefSrcText value="20368: Rub1: Behandling\x0d " type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;C3_NUT_VitMinSpar_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382866010 715000" type="num"/>
+                                        <XRefLastUpdate value="1385403160 241000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -12419,6 +12419,7 @@
                                 </Pgf>
                                 <PgfReferenced value="Yes" type="enum"/>
                                 <ParaLine>
+                                    <String>#5;</String>
                                     <Marker>
                                         <MType value="2" type="enum"/>
                                         <MTypeName value="Index" type="str"/>
@@ -12545,7 +12546,7 @@
                                         <MCurrPage value="1060" type="str"/>
                                         <Unique value="1035430" type="enum"/>
                                     </Marker>
-                                    <String>Akuta/relativa indikationer för </String>
+                                    <String>#4;Akuta/relativa indikationer för </String>
                                     <Char value="HardReturn" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
@@ -17178,6 +17179,13 @@
                     </Pgf>
                     <PgfReferenced value="Yes" type="enum"/>
                     <ParaLine>
+                        <Marker>
+                            <MType value="9" type="enum"/>
+                            <MTypeName value="Cross-Ref" type="str"/>
+                            <MText value="39770: Footnote: 1. Under arbetet med kapitlet har det diagnostiska sy" type="str"/>
+                            <MCurrPage value="1054" type="str"/>
+                            <Unique value="1036038" type="enum"/>
+                        </Marker>
                         <String>Under arbetet med kapitlet har det diagnostiska syste</String>
                         <Char value="SoftHyphen" type="enum"/>
                     </ParaLine>
@@ -17209,6 +17217,31 @@
                     <FLocked value="No" type="enum"/>
                 </Font>
                 <String>1</String>
+                <XRef>
+                    <XRefName value="Ref" type="str"/>
+                    <XRefSrcText value="39770: Footnote: 1. Under arbetet med kapitlet har det diagnostiska sy" type="str"/>
+                    <XRefSrcIsElem value="No" type="enum"/>
+                    <XRefSrcFile value="" type="str"/>
+                    <XRefLastUpdate value="1385403160 221000" type="num"/>
+                    <XRefSrcElemNonUniqueId value="" type="str"/>
+                    <XRefAltText value="" type="str"/>
+                    <XRefApiClient>
+                        <XRefClientName value="" type="str"/>
+                        <XRefClientType value="" type="str"/>
+                    </XRefApiClient>
+                    <Unique value="1036039" type="enum"/>
+                </XRef>
+                <Font>
+                    <FTag value="Ref" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <String> </String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FPosition value="FSuperscript" type="enum"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <XRefEnd />
             </ParaLine>
         </Para>
         <Para>
@@ -17815,7 +17848,7 @@
                     <XRefSrcText value="43628: Rub1: Ätstörningar och idrott" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866010 665000" type="num"/>
+                    <XRefLastUpdate value="1385403160 221000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17973,7 +18006,7 @@
                     <XRefSrcText value="45315: TabellRubrik_1sp: Tabell 1. Anorexia nervosa hos flickor i adolescensen, utfal" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866010 675000" type="num"/>
+                    <XRefLastUpdate value="1385403160 221000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -18074,7 +18107,7 @@
                     <XRefSrcText value="65021: FigurNr: Figur 1. Ätstörningar – riskfaktorer och multifaktoriell orsaks" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866010 675000" type="num"/>
+                    <XRefLastUpdate value="1385403160 221000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -18417,7 +18450,7 @@
                     <XRefSrcText value="67355: Rub2: Behandling av anorexia nervosa" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866010 665000" type="num"/>
+                    <XRefLastUpdate value="1385403160 221000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -18826,7 +18859,7 @@
                     <XRefSrcText value="30322: FaktaRub1: Anorexia nervosa" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866010 665000" type="num"/>
+                    <XRefLastUpdate value="1385403160 221000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -18879,7 +18912,7 @@
                     <XRefSrcText value="30322: FaktaRub1: Anorexia nervosa" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866010 675000" type="num"/>
+                    <XRefLastUpdate value="1385403160 221000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -18920,7 +18953,7 @@
                     <XRefSrcText value="19505: FaktaRub1: Somatiska differentialdiagnoser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866010 675000" type="num"/>
+                    <XRefLastUpdate value="1385403160 221000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -19130,7 +19163,7 @@
                     <XRefSrcText value="83165: FaktaRub1: Bulimia nervosa" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866010 665000" type="num"/>
+                    <XRefLastUpdate value="1385403160 221000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -19155,7 +19188,7 @@
                     <XRefSrcText value="83165: FaktaRub1: Bulimia nervosa" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866010 675000" type="num"/>
+                    <XRefLastUpdate value="1385403160 221000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -20922,7 +20955,7 @@
                     <XRefSrcText value="59507: FaktaRub1: Akuta/relativa indikationer för intagning på slutenvå" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866010 675000" type="num"/>
+                    <XRefLastUpdate value="1385403160 221000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -21015,7 +21048,7 @@
                     <XRefSrcText value="52009: TabellRekRub: Terapirekommendationer – Behandling av anorexia nervosa" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866010 665000" type="num"/>
+                    <XRefLastUpdate value="1385403160 221000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -21039,7 +21072,7 @@
                     <XRefSrcText value="52009: TabellRekRub: Terapirekommendationer – Behandling av anorexia nervosa" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866010 665000" type="num"/>
+                    <XRefLastUpdate value="1385403160 221000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -21065,7 +21098,7 @@
                     <XRefSrcText value="68382: TabellRekRub: Terapirekommendationer – Behandling av bulimia nervosa" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866010 665000" type="num"/>
+                    <XRefLastUpdate value="1385403160 221000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -21089,7 +21122,7 @@
                     <XRefSrcText value="68382: TabellRekRub: Terapirekommendationer – Behandling av bulimia nervosa" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866010 665000" type="num"/>
+                    <XRefLastUpdate value="1385403160 221000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -22052,7 +22085,7 @@
                     <XRefSrcText value="60226: Rub1: Behandling av ångest och oro" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;S2_PSY_AngestOro_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866010 695000" type="num"/>
+                    <XRefLastUpdate value="1385403160 231000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -22088,7 +22121,7 @@
                     <XRefSrcText value="11018: Rub1: Behandling" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;S3_PSY_Forstamning_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866010 725000" type="num"/>
+                    <XRefLastUpdate value="1385403160 261000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -22127,7 +22160,7 @@
                     <XRefSrcText value="23978: FaktaRub1: Patientföreningar och information om anorexia och b" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866010 675000" type="num"/>
+                    <XRefLastUpdate value="1385403160 221000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>

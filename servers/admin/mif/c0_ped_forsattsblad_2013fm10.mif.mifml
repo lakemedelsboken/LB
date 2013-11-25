@@ -4781,6 +4781,20 @@
             <FColor value="Black" type="str"/>
         </Font>
         <Font>
+            <FTag value="Ref" type="str"/>
+            <FSize value="2.0 pt" type="num"/>
+            <FLocked value="No" type="enum"/>
+            <FSeparation value="1" type="enum"/>
+            <FColor value="White" type="str"/>
+        </Font>
+        <Font>
+            <FTag value="Symbol" type="str"/>
+            <FFamily value="Symbol" type="str"/>
+            <FWeight value="Bolded" type="str"/>
+            <FEncoding value="FrameRoman" type="str"/>
+            <FLocked value="No" type="enum"/>
+        </Font>
+        <Font>
             <FTag value="TabellFet" type="str"/>
             <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
             <FFamily value="Frutiger LT Std 45 Light" type="str"/>
@@ -5748,12 +5762,20 @@
             <XRefName value="Table Number &amp; Page" type="str"/>
             <XRefDef value="Table\x11 &lt;$paranumonly&gt; on page\x11 &lt;$pagenum&gt;" type="str"/>
         </XRefFormat>
+        <XRefFormat>
+            <XRefName value="Ref" type="str"/>
+            <XRefDef value="&lt;Ref&gt; " type="str"/>
+        </XRefFormat>
+        <XRefFormat>
+            <XRefName value="ORef" type="str"/>
+            <XRefDef value="&lt;Ref&gt; " type="str"/>
+        </XRefFormat>
     </XRefFormats>
     <Document>
         <DViewRect value="18 20 923 764 " type="enum"/>
         <DWindowRect value="0 0 1272 1044 " type="enum"/>
         <DViewScale value="120.0%" type="num"/>
-        <DNextUnique value="1030769" type="enum"/>
+        <DNextUnique value="1030781" type="enum"/>
         <DPageSize value="170.0 mm 240.0 mm" type="num"/>
         <DMenuBar value="" type="str"/>
         <DVoMenuBar value="" type="str"/>
@@ -5911,12 +5933,12 @@
         <DPDFDestsMarked value="Yes" type="enum"/>
         <DPDFStructure value="No" type="enum"/>
         <DPDFStructureDefined value="Yes" type="enum"/>
-        <DPDFBookmarks value="Yes" type="enum"/>
-        <DPDFConvertCMYK value="Yes" type="enum"/>
-        <DPDFOpenPage value="0" type="str"/>
+        <DPDFBookmarks value="No" type="enum"/>
+        <DPDFConvertCMYK value="No" type="enum"/>
+        <DPDFOpenPage value="163" type="str"/>
         <DPDFFit value="Page" type="enum"/>
         <DPDFZoom value="0.0%" type="num"/>
-        <DPDFJobOptions value="Smallest File Size" type="str"/>
+        <DPDFJobOptions value="High Quality Print" type="str"/>
         <DPDFSaveSeparate value="No" type="enum"/>
         <DPDFRegMarks value="None" type="enum"/>
         <DPDFPageSizeSet value="No" type="enum"/>
@@ -5937,7 +5959,7 @@
         </PDFDocInfo>
         <DocFileInfo value="
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D30392D32375430393A33363A33382B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D30392D32375430393A33363A33382B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D31302D32355431383A35343A34352B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D31302D32355431383A35343A34352B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E4CC3A46B656D6564656C206F6368206261726E2C20696E6C65646E696E6720E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020
@@ -10604,6 +10626,13 @@
                         <PgfNumString value="Tabell 1. " type="str"/>
                         <PgfReferenced value="Yes" type="enum"/>
                         <ParaLine>
+                            <Marker>
+                                <MType value="9" type="enum"/>
+                                <MTypeName value="Cross-Ref" type="str"/>
+                                <MText value="65809: TabellRubrik_2sp: Tabell 1. Terapikapitel med särskild information om läkemedels" type="str"/>
+                                <MCurrPage value="163" type="str"/>
+                                <Unique value="1030773" type="enum"/>
+                            </Marker>
                             <String>Terapikapitel med särskild information om läkemedelsbehandling av barn</String>
                         </ParaLine>
                     </Para>
@@ -10873,7 +10902,7 @@
                                         <XRefSrcText value="53811: KapRub: Den akut medvetslöse patienten" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;A1_AKU_AkutMedv_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382862998 463000" type="num"/>
+                                        <XRefLastUpdate value="1385402084 940000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -10966,7 +10995,7 @@
                                         <XRefSrcText value="18570: KapRub: Diabetes mellitus" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;K1_END_DiabetMellitus_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688935 383000" type="num"/>
+                                        <XRefLastUpdate value="1385398996 54000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -11064,7 +11093,7 @@
                                         <XRefSrcText value="41565: KapRub: Chock" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;A2_AKU_Chock_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382862998 496000" type="num"/>
+                                        <XRefLastUpdate value="1385402084 950000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -11157,7 +11186,7 @@
                                         <XRefSrcText value="48372: KapRub: Tyreoideasjukdomar" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;K3_END_TyreoideaSjukd_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688935 403000" type="num"/>
+                                        <XRefLastUpdate value="1385398996 74000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -11255,7 +11284,7 @@
                                         <XRefSrcText value="76028: KapRub: Anafylaxi" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;A3_AKU_Anafylaxi_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382862998 509000" type="num"/>
+                                        <XRefLastUpdate value="1385402084 970000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -11348,7 +11377,7 @@
                                         <XRefSrcText value="21329: KapRub: Kortikosteroider och hypofyshormoner" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;K4_END_KortikoHypofys_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688935 418000" type="num"/>
+                                        <XRefLastUpdate value="1385398996 84000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -11446,7 +11475,7 @@
                                         <XRefSrcText value="32247: KapRub: Akutmedicin på vårdcentral och andra vårdenheter" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;A4_AKU_AkutMedVC_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382862998 524000" type="num"/>
+                                        <XRefLastUpdate value="1385402084 980000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -11539,7 +11568,7 @@
                                         <XRefSrcText value="68179: KapRub: Astma och KOL" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;M1_AND_AstmaKol_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688935 438000" type="num"/>
+                                        <XRefLastUpdate value="1385398996 104000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -11637,7 +11666,7 @@
                                         <XRefSrcText value="50376: KapRub: Sjukdomar i matstrupe, magsäck och tolvfingertarm" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;B1_MAG_StrupeSackTarm_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382862998 536000" type="num"/>
+                                        <XRefLastUpdate value="1385402085 0" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -11730,7 +11759,7 @@
                                         <XRefSrcText value="99469: KapRub: Luftvägsinfektioner hos barn och vuxna" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;M2_AND_LuftvInfBarnVux_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688935 458000" type="num"/>
+                                        <XRefLastUpdate value="1385398996 124000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -11828,7 +11857,7 @@
                                         <XRefSrcText value="52103: KapRub: Inflammatoriska tarmsjukdomar" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;B4_MAG_InflamTarm_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382862998 550000" type="num"/>
+                                        <XRefLastUpdate value="1385402085 10000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -11921,7 +11950,7 @@
                                         <XRefSrcText value="46808: KapRub: Öron-, näs- och halssjukdomar\x0d " type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;N1_AND_OronNasaHals_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688935 473000" type="num"/>
+                                        <XRefLastUpdate value="1385398996 144000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -12019,7 +12048,7 @@
                                         <XRefSrcText value="45302: KapRub: Övervikt och fetma" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;C2_NUT_OverviktFetma_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688935 238000" type="num"/>
+                                        <XRefLastUpdate value="1385398995 944000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -12112,7 +12141,7 @@
                                         <XRefSrcText value="56888: KapRub: Smärta och smärtbehandling" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;Q1_SMA_Smartbehandl_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688935 498000" type="num"/>
+                                        <XRefLastUpdate value="1385398996 164000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -12210,7 +12239,7 @@
                                         <XRefSrcText value="33893: KapRub: Vitaminer, mineraler och spårämnen" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;C3_NUT_VitMinSpar_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688935 258000" type="num"/>
+                                        <XRefLastUpdate value="1385398995 964000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -12303,7 +12332,7 @@
                                         <XRefSrcText value="55705: KapRub: Allmän neurologi och multipel skleros" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;R1_NEU_AllmNeurolMS_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688935 523000" type="num"/>
+                                        <XRefLastUpdate value="1385402085 30000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -12401,7 +12430,7 @@
                                         <XRefSrcText value="53003: KapRub: Anemier" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;D1_BLO_Anemier_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688935 278000" type="num"/>
+                                        <XRefLastUpdate value="1385398995 974000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -12494,7 +12523,7 @@
                                         <XRefSrcText value="80016: KapRub: Huvudvärk" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;R2_NEU_Huvudvark_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688935 553000" type="num"/>
+                                        <XRefLastUpdate value="1385398996 194000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -12592,7 +12621,7 @@
                                         <XRefSrcText value="34531: KapRub: Venös tromboembolism och medel mot trombos" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;D2_BLO_VenosTrombo_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688935 303000" type="num"/>
+                                        <XRefLastUpdate value="1385398995 994000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -12685,7 +12714,7 @@
                                         <XRefSrcText value="59026: KapRub_Första: Yrsel" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;R3_NEU_Yrsel_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688935 573000" type="num"/>
+                                        <XRefLastUpdate value="1385398996 214000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -12783,7 +12812,7 @@
                                         <XRefSrcText value="15485: KapRub: Hjärtsvikt" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;E2_HJA_Hjartsvikt_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688935 323000" type="num"/>
+                                        <XRefLastUpdate value="1385398996 4000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -12876,7 +12905,7 @@
                                         <XRefSrcText value="94494: KapRub: Epilepsi" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;R4_NEU_Epilepsi_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688935 588000" type="num"/>
+                                        <XRefLastUpdate value="1385398996 224000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -12974,7 +13003,7 @@
                                         <XRefSrcText value="64136: KapRub: Urininkontinens" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;G2_NEF_Urininkontinens_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688935 343000" type="num"/>
+                                        <XRefLastUpdate value="1385398996 24000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -13067,7 +13096,7 @@
                                         <XRefSrcText value="95052: KapRub: Ångest och oro" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;S2_PSY_AngestOro_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688935 603000" type="num"/>
+                                        <XRefLastUpdate value="1385402085 50000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -13165,7 +13194,7 @@
                                         <XRefSrcText value="10511: KapRub: Urinvägsinfektioner" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;G3_NEF_UrinvagInfekt_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688935 358000" type="num"/>
+                                        <XRefLastUpdate value="1385398996 34000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -13258,7 +13287,7 @@
                                         <XRefSrcText value="39825: KapRub: Utvecklings- och neuro\x04 psykiatriska störningar" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="&lt;u&gt;&lt;c&gt;S6_PSY_UtvNeuroPsyk_2013FM10.fm" type="str"/>
-                                        <XRefLastUpdate value="1382688935 618000" type="num"/>
+                                        <XRefLastUpdate value="1385398996 254000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -16970,7 +16999,7 @@
                     <FColor value="Akut_Text" type="str"/>
                     <FBackgroundColor value="NoColor" type="enum"/>
                 </PgfFont>
-                <PgfAcrobatLevel value="1" type="enum"/>
+                <PgfAcrobatLevel value="0" type="enum"/>
                 <PgfPDFStructureLevel value="2" type="enum"/>
             </Pgf>
             <PgfReferenced value="Yes" type="enum"/>
@@ -17012,7 +17041,7 @@
                     <XRefSrcText value="74968: KapRub: Krav vid utveckling av läkemedel till barn" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;C1a_PED_LakemedBarn_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688935 633000" type="num"/>
+                    <XRefLastUpdate value="1385398996 264000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17059,7 +17088,7 @@
                     <XRefSrcText value="28740: KapRub: Läkemedelsbehandling till barn\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;C1b_PED_PraktAspektBarn_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688935 643000" type="num"/>
+                    <XRefLastUpdate value="1385398996 274000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17099,7 +17128,7 @@
                     <XRefSrcText value="89501: KapRub: Vanliga problem under småbarnsåren\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;C1_PED_ProblemSmabarn_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688935 658000" type="num"/>
+                    <XRefLastUpdate value="1385398996 284000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17142,7 +17171,7 @@
                     <XRefSrcText value="89155: KapRub: Vaccination av barn och ungdom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;C1c_PED_VaccBarnUndom_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382688935 678000" type="num"/>
+                    <XRefLastUpdate value="1385398996 304000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -17186,6 +17215,30 @@
             </ParaLine>
             <ParaLine>
                 <String>pikapitel i LB.</String>
+                <XRef>
+                    <XRefName value="Ref" type="str"/>
+                    <XRefSrcText value="65809: TabellRubrik_2sp: Tabell 1. Terapikapitel med särskild information om läkemedels" type="str"/>
+                    <XRefSrcIsElem value="No" type="enum"/>
+                    <XRefSrcFile value="" type="str"/>
+                    <XRefLastUpdate value="1385402084 930000" type="num"/>
+                    <XRefSrcElemNonUniqueId value="" type="str"/>
+                    <XRefAltText value="" type="str"/>
+                    <XRefApiClient>
+                        <XRefClientName value="" type="str"/>
+                        <XRefClientType value="" type="str"/>
+                    </XRefApiClient>
+                    <Unique value="1030774" type="enum"/>
+                </XRef>
+                <Font>
+                    <FTag value="Ref" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <String> </String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <XRefEnd />
             </ParaLine>
         </Para>
         <Para>

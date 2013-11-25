@@ -5705,7 +5705,7 @@
         <DViewRect value="18 20 923 764 " type="enum"/>
         <DWindowRect value="0 0 1272 1044 " type="enum"/>
         <DViewScale value="112.2%" type="num"/>
-        <DNextUnique value="1073134" type="enum"/>
+        <DNextUnique value="1073163" type="enum"/>
         <DPageSize value="170.0 mm 240.0 mm" type="num"/>
         <DMenuBar value="" type="str"/>
         <DVoMenuBar value="" type="str"/>
@@ -5863,12 +5863,12 @@
         <DPDFDestsMarked value="Yes" type="enum"/>
         <DPDFStructure value="No" type="enum"/>
         <DPDFStructureDefined value="Yes" type="enum"/>
-        <DPDFBookmarks value="Yes" type="enum"/>
-        <DPDFConvertCMYK value="Yes" type="enum"/>
-        <DPDFOpenPage value="0" type="str"/>
+        <DPDFBookmarks value="No" type="enum"/>
+        <DPDFConvertCMYK value="No" type="enum"/>
+        <DPDFOpenPage value="1240" type="str"/>
         <DPDFFit value="Page" type="enum"/>
         <DPDFZoom value="0.0%" type="num"/>
-        <DPDFJobOptions value="Smallest File Size" type="str"/>
+        <DPDFJobOptions value="High Quality Print" type="str"/>
         <DPDFSaveSeparate value="No" type="enum"/>
         <DPDFRegMarks value="None" type="enum"/>
         <DPDFPageSizeSet value="No" type="enum"/>
@@ -5889,7 +5889,7 @@
         </PDFDocInfo>
         <DocFileInfo value="
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D30392D32375431303A33333A34342B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D30392D32375431303A33333A34342B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D31302D32355432303A31333A33392B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D31302D32355432303A31333A33392B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E4CC3A46B656D6564656C7362697665726B6E696E67617220E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 2020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
@@ -10668,7 +10668,6 @@
                         <PgfNumFormat value="T:Tabell &lt;n+&gt;:\x11 " type="str"/>
                         <PgfNumberFont value="" type="str"/>
                         <PgfNumAtEnd value="No" type="enum"/>
-                        <PgfAcrobatLevel value="28" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                         <PgfCellMargins value="0.0 pt 0.0 pt 0.0 pt 0.0 pt" type="num"/>
                     </Pgf>
@@ -11229,7 +11228,6 @@
                         <PgfNumFormat value="T:Tabell &lt;n+&gt;:\x11 " type="str"/>
                         <PgfNumberFont value="" type="str"/>
                         <PgfNumAtEnd value="No" type="enum"/>
-                        <PgfAcrobatLevel value="28" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                         <PgfCellAlignment value="Top" type="enum"/>
                         <PgfCellMargins value="0.0 pt 0.0 pt 0.0 pt 0.0 pt" type="num"/>
@@ -11754,7 +11752,6 @@
                         <PgfNumFormat value="T:Tabell &lt;n+&gt;:\x11 " type="str"/>
                         <PgfNumberFont value="" type="str"/>
                         <PgfNumAtEnd value="No" type="enum"/>
-                        <PgfAcrobatLevel value="28" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                         <PgfCellAlignment value="Top" type="enum"/>
                         <PgfCellMargins value="0.0 pt 0.0 pt 0.0 pt 0.0 pt" type="num"/>
@@ -12224,7 +12221,6 @@
                         <PgfNumFormat value="T:Tabell &lt;n+&gt;:\x11 " type="str"/>
                         <PgfNumberFont value="" type="str"/>
                         <PgfNumAtEnd value="No" type="enum"/>
-                        <PgfAcrobatLevel value="28" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                         <PgfCellAlignment value="Top" type="enum"/>
                         <PgfCellMargins value="0.0 pt 0.0 pt 0.0 pt 0.0 pt" type="num"/>
@@ -13005,7 +13001,6 @@
                         <PgfNumFormat value="T:Tabell &lt;n+&gt;:\x11 " type="str"/>
                         <PgfNumberFont value="" type="str"/>
                         <PgfNumAtEnd value="No" type="enum"/>
-                        <PgfAcrobatLevel value="28" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                         <PgfCellAlignment value="Top" type="enum"/>
                         <PgfCellMargins value="0.0 pt 0.0 pt 0.0 pt 0.0 pt" type="num"/>
@@ -14231,6 +14226,7 @@
                                     </TabStop>
                                 </Pgf>
                                 <ParaLine>
+                                    <String>#4;</String>
                                     <Marker>
                                         <MType value="9" type="enum"/>
                                         <MTypeName value="Cross-Ref" type="str"/>
@@ -14667,7 +14663,6 @@
                         <PgfNumFormat value="T:Tabell &lt;n+&gt;:\x11 " type="str"/>
                         <PgfNumberFont value="" type="str"/>
                         <PgfNumAtEnd value="No" type="enum"/>
-                        <PgfAcrobatLevel value="28" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                         <PgfCellMargins value="0.0 pt 0.0 pt 0.0 pt 0.0 pt" type="num"/>
                     </Pgf>
@@ -15410,7 +15405,6 @@
                         <PgfNumFormat value="T:Tabell &lt;n+&gt;:\x11 " type="str"/>
                         <PgfNumberFont value="" type="str"/>
                         <PgfNumAtEnd value="No" type="enum"/>
-                        <PgfAcrobatLevel value="28" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                         <PgfCellAlignment value="Top" type="enum"/>
                         <PgfCellMargins value="0.0 pt 0.0 pt 0.0 pt 0.0 pt" type="num"/>
@@ -16264,7 +16258,6 @@
                         <PgfNumFormat value="T:Tabell &lt;n+&gt;:\x11 " type="str"/>
                         <PgfNumberFont value="" type="str"/>
                         <PgfNumAtEnd value="No" type="enum"/>
-                        <PgfAcrobatLevel value="28" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                         <PgfCellAlignment value="Top" type="enum"/>
                         <PgfCellMargins value="0.0 pt 0.0 pt 0.0 pt 0.0 pt" type="num"/>
@@ -17269,7 +17262,6 @@
                         <PgfNumFormat value="T:Tabell &lt;n+&gt;:\x11 " type="str"/>
                         <PgfNumberFont value="" type="str"/>
                         <PgfNumAtEnd value="No" type="enum"/>
-                        <PgfAcrobatLevel value="28" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                         <PgfCellMargins value="0.0 pt 0.0 pt 0.0 pt 0.0 pt" type="num"/>
                     </Pgf>
@@ -18426,7 +18418,6 @@
                         <PgfNumFormat value="T:Tabell &lt;n+&gt;:\x11 " type="str"/>
                         <PgfNumberFont value="" type="str"/>
                         <PgfNumAtEnd value="No" type="enum"/>
-                        <PgfAcrobatLevel value="28" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                         <PgfCellAlignment value="Top" type="enum"/>
                         <PgfCellMargins value="0.0 pt 0.0 pt 0.0 pt 0.0 pt" type="num"/>
@@ -19216,7 +19207,6 @@
                         <PgfNumFormat value="T:Tabell &lt;n+&gt;:\x11 " type="str"/>
                         <PgfNumberFont value="" type="str"/>
                         <PgfNumAtEnd value="No" type="enum"/>
-                        <PgfAcrobatLevel value="28" type="enum"/>
                         <PgfPDFStructureLevel value="17" type="enum"/>
                         <PgfCellAlignment value="Top" type="enum"/>
                         <PgfCellMargins value="0.0 pt 0.0 pt 0.0 pt 0.0 pt" type="num"/>
@@ -19848,11 +19838,13 @@
                                     </PgfFont>
                                 </Pgf>
                                 <ParaLine>
-                                    <String>Kontaktuppgifter till Läkemedels</String>
+                                    <String>#7;Kontaktuppgifter till Läkeme</String>
                                     <Char value="SoftHyphen" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
-                                    <String>verket och </String>
+                                    <String>delsverket och </String>
+                                </ParaLine>
+                                <ParaLine>
                                     <Marker>
                                         <MType value="9" type="enum"/>
                                         <MTypeName value="Cross-Ref" type="str"/>
@@ -19861,9 +19853,6 @@
                                         <Unique value="1071212" type="enum"/>
                                     </Marker>
                                     <String>läkemedelsinformations</String>
-                                    <Char value="SoftHyphen" type="enum"/>
-                                </ParaLine>
-                                <ParaLine>
                                     <Char value="DiscHyphen" type="enum"/>
                                     <String>centralerna </String>
                                 </ParaLine>
@@ -21454,7 +21443,7 @@
                                         <MCurrPage value="1264" type="str"/>
                                         <Unique value="1071338" type="enum"/>
                                     </Marker>
-                                    <String>Varning</String>
+                                    <String>#3;Varning</String>
                                 </ParaLine>
                             </Para>
                             <Para>
@@ -21550,7 +21539,7 @@
                                         <MCurrPage value="1265" type="str"/>
                                         <Unique value="1071279" type="enum"/>
                                     </Marker>
-                                    <String>Misstänker du en allvarlig </String>
+                                    <String>#5;Misstänker du en allvarlig </String>
                                     <Char value="HardReturn" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
@@ -21614,6 +21603,7 @@
                                         <Unique value="1071367" type="enum"/>
                                     </Marker>
                                     <Char value="Tab" type="enum"/>
+                                    <String>#2;</String>
                                     <Font>
                                         <FTag value="" type="str"/>
                                         <FSize value="8.7 pt" type="num"/>
@@ -21860,7 +21850,7 @@
                                 <Unique value="1071256" type="enum"/>
                                 <PgfTag value="FaktaText" type="str"/>
                                 <ParaLine>
-                                    <String>Systemets effektivitet och kvalitet </String>
+                                    <String>#6;Systemets effektivitet och kvalitet </String>
                                     <Char value="HardReturn" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
@@ -21932,7 +21922,7 @@
                                         <MCurrPage value="1261" type="str"/>
                                         <Unique value="1071170" type="enum"/>
                                     </Marker>
-                                    <String>Frågor som kan vara vägledande för </String>
+                                    <String>#1;Frågor som kan vara vägledande för </String>
                                     <Char value="HardReturn" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
@@ -27917,7 +27907,7 @@
                     <XRefSrcText value="49207: TabellRubrik_2sp: Tabell 1. Förekomst av vissa typer av läkemedelsbiverkningar hos" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 363000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28288,7 +28278,7 @@
                     <XRefSrcText value="23193: Rub2efterRub1: Ärftliga faktorer" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;X2_LMA_KlinFarmPrincip_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866424 375000" type="num"/>
+                    <XRefLastUpdate value="1385406819 515000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28383,7 +28373,7 @@
                     <XRefSrcText value="50094: Rub2: Elimination" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;X2_LMA_KlinFarmPrincip_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866424 375000" type="num"/>
+                    <XRefLastUpdate value="1385406819 515000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28413,7 +28403,7 @@
                     <XRefSrcText value="88217: Rub2: Läkemedelsinteraktioner" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;X2_LMA_KlinFarmPrincip_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866424 375000" type="num"/>
+                    <XRefLastUpdate value="1385406819 515000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28657,7 +28647,7 @@
                     <XRefSrcText value="43307: Rub2: Immunreaktion vid immunologiskt betingade sjukdomar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;P1_ALL_AllergiImmunologi_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866424 401000" type="num"/>
+                    <XRefLastUpdate value="1385406819 525000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -29131,7 +29121,7 @@
                     <XRefSrcText value="61209: FigurNr: Figur 1. Orsaker till anafylaxi enligt ny nomenklatur (12,13)" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;A3_AKU_Anafylaxi_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866424 414000" type="num"/>
+                    <XRefLastUpdate value="1385406819 545000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -29338,7 +29328,7 @@
                     <XRefSrcText value="23193: Rub2efterRub1: Ärftliga faktorer" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;X2_LMA_KlinFarmPrincip_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866424 375000" type="num"/>
+                    <XRefLastUpdate value="1385406819 515000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -29687,7 +29677,7 @@
                     <XRefSrcText value="81171: TabellRubrik_2sp: Tabell 2. Exempel på läkemedel som kan ge anemi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 363000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -29746,7 +29736,7 @@
                     <XRefSrcText value="81171: TabellRubrik_2sp: Tabell 2. Exempel på läkemedel som kan ge anemi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 363000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30311,7 +30301,7 @@
                     <XRefSrcText value="21733: TabellRubrik_1sp: Tabell 3. Läkemedel som visats eller misstänks kunna orsaka" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 363000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30345,7 +30335,7 @@
                     <XRefSrcText value="21733: TabellRubrik_1sp: Tabell 3. Läkemedel som visats eller misstänks kunna orsaka" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 363000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30430,7 +30420,7 @@
                     <XRefSrcText value="11857: Rub2efterRub1: Trombocytopeni\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;D3_BLO_Blodning_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866424 431000" type="num"/>
+                    <XRefLastUpdate value="1385406819 555000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30670,7 +30660,7 @@
                     <XRefSrcText value="51336: TabellRubrik_1sp: Tabell 4. Läkemedel som i Sverige utlöst trombocytopeni" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 363000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30824,7 +30814,7 @@
                     <XRefSrcText value="70907: Rub2: Aplastisk anemi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;D1_BLO_Anemier_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866424 446000" type="num"/>
+                    <XRefLastUpdate value="1385406819 575000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30849,7 +30839,7 @@
                     <XRefSrcText value="48324: TabellRubrik_1sp: Tabell 5. Läkemedel, förutom cytostatika, i Sverige vilka kan utlösa aplastisk anemi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 363000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30957,7 +30947,7 @@
                     <XRefSrcText value="32913: Rub1: Läkemedelsreaktioner i huden" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;F1_HUD_Hudsjukdomar_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866424 462000" type="num"/>
+                    <XRefLastUpdate value="1385406819 595000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30982,7 +30972,7 @@
                     <XRefSrcText value="48015: TabellRubrik_2sp: Tabell 6. Exempel på läkemedel som kan framkalla hudbiverkningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 362000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -32143,7 +32133,7 @@
                     <XRefSrcText value="40704: TabellRubrik_2sp: Tabell 7. Läkemedel som kan orsaka rytmrubbningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 362000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -33344,7 +33334,7 @@
                     <XRefSrcText value="75751: FaktaRub1: Riskfaktorer för venös trombo- embolism" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;D2_BLO_VenosTrombo_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866424 479000" type="num"/>
+                    <XRefLastUpdate value="1385406819 605000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -33380,7 +33370,7 @@
                     <XRefSrcText value="88224: Rub3: Djup ventrombos" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;I4_GYN_AntikonceptAborter_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866424 493000" type="num"/>
+                    <XRefLastUpdate value="1385406819 625000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -33837,7 +33827,7 @@
                     <XRefSrcText value="71301: Rub3: Mukokutant syndrom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 363000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -33865,7 +33855,7 @@
                     <XRefSrcText value="51776: TabellRubrik_1sp: Tabell 8. Läkemedelssubstanser som är esofagusskadande" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 363000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -33890,7 +33880,7 @@
                     <XRefSrcText value="51776: TabellRubrik_1sp: Tabell 8. Läkemedelssubstanser som är esofagusskadande" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 363000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -34359,7 +34349,7 @@
                     <XRefSrcText value="38818: Rub1: Akut övre gastrointestinal blödning" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;B1_MAG_StrupeSackTarm_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866424 507000" type="num"/>
+                    <XRefLastUpdate value="1385406819 635000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -34372,7 +34362,7 @@
                     <FTag value="Blue" type="str"/>
                     <FLocked value="No" type="enum"/>
                 </Font>
-                <String>87</String>
+                <String>86</String>
                 <Font>
                     <FTag value="" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -34818,7 +34808,7 @@
                     <XRefSrcText value="48720: Rub1: Läkemedelsinducerad leverskada" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;B2_MAG_Lever_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866424 522000" type="num"/>
+                    <XRefLastUpdate value="1385406819 655000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -35010,7 +35000,7 @@
                     <XRefSrcText value="45767: TabellRubrik_2sp: Tabell 9. Exempel på läkemedel som kan framkalla leverbiverkningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 362000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -35320,7 +35310,7 @@
                     <XRefSrcText value="27032: Rub2: Njurfunktionsorsakad läkemedelsbiverkning" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;G4_NEF_Njursjukdomar_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866424 537000" type="num"/>
+                    <XRefLastUpdate value="1385406819 665000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -35345,7 +35335,7 @@
                     <XRefSrcText value="77321: TabellRubrik_2sp: Tabell 10. Exempel på läkemedel som kan framkalla njurbiverkningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 362000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -35884,7 +35874,7 @@
                     <XRefSrcText value="24809: TabellRubrik_2sp: Tabell 11. Exempel på läkemedel som orsakar påverkan på nervsystemet" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 362000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -35909,7 +35899,7 @@
                     <XRefSrcText value="24809: TabellRubrik_2sp: Tabell 11. Exempel på läkemedel som orsakar påverkan på nervsystemet" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 363000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -37114,7 +37104,7 @@
                     <XRefSrcText value="27201: Rub1: Ögonbiverkningar vid andra läkemedelsbehandlingar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;O1_OGO_Ogonsjukdom_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866424 554000" type="num"/>
+                    <XRefLastUpdate value="1385406819 685000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -37145,7 +37135,6 @@
             <PgfTag value="Rub3" type="str"/>
             <Pgf>
                 <PgfLeading value="2.1 pt" type="num"/>
-                <PgfAcrobatLevel value="0" type="enum"/>
                 <PgfPDFStructureLevel value="26" type="enum"/>
             </Pgf>
             <ParaLine>
@@ -37262,7 +37251,6 @@
             <PgfTag value="Rub3" type="str"/>
             <Pgf>
                 <PgfLeading value="2.1 pt" type="num"/>
-                <PgfAcrobatLevel value="0" type="enum"/>
                 <PgfPDFStructureLevel value="26" type="enum"/>
             </Pgf>
             <ParaLine>
@@ -38359,7 +38347,7 @@
                     <XRefSrcText value="71753: TabellRubrik_1sp: Tabell 12. Några läkemedel (läke\x04 medels\x04 -grupper) som kan ge upphov till muskel- och" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 362000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -39135,7 +39123,7 @@
                     <XRefSrcText value="80463: Rub3: Äldre" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;X2_LMA_KlinFarmPrincip_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866424 375000" type="num"/>
+                    <XRefLastUpdate value="1385406819 515000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -39169,7 +39157,7 @@
                     <XRefSrcText value="21686: Rub1: Multimedicinering" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;Y1_LMA_LakemedAldre_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866424 569000" type="num"/>
+                    <XRefLastUpdate value="1385406819 705000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -39274,7 +39262,7 @@
                     <XRefSrcText value="80463: Rub3: Äldre" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;X2_LMA_KlinFarmPrincip_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866424 375000" type="num"/>
+                    <XRefLastUpdate value="1385406819 515000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -39656,7 +39644,7 @@
                     <XRefSrcText value="88726: Rub1: Överföring av patienter och information mellan o" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;Y1_LMA_LakemedAldre_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1382866424 569000" type="num"/>
+                    <XRefLastUpdate value="1385406819 705000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -40185,7 +40173,7 @@
                     <XRefSrcText value="61914: FaktaRub1: Frågor som kan vägleda åtgärder för att förebygga ADRs/ADEs" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 362000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -41105,7 +41093,7 @@
                     <XRefSrcText value="42464: FaktaRub1: Regler för rapportering av misstänkta läkemedelsb" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 362000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -41214,7 +41202,7 @@
                     <XRefSrcText value="87556: FaktaRub1: Varning" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 362000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -41259,7 +41247,7 @@
                     <XRefSrcText value="95301: FaktaText: Personnummer" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 363000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -41284,7 +41272,7 @@
                     <XRefSrcText value="87556: FaktaRub1: Varning" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 362000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -41308,7 +41296,7 @@
                     <XRefSrcText value="95301: FaktaText: Personnummer" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 362000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -41448,7 +41436,7 @@
                     <XRefSrcText value="67114: Rub2: Typ A-biverkningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 363000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -41513,7 +41501,7 @@
                     <XRefSrcText value="49340: FaktaRub1: Läkemedels- informationscentraler i Sverige" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 362000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -41538,7 +41526,7 @@
                     <XRefSrcText value="49340: FaktaRub1: Läkemedels- informationscentraler i Sverige" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 362000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -42033,7 +42021,7 @@
                     <XRefSrcText value="49340: FaktaRub1: Läkemedels- informationscentraler i Sverige" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 363000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -42058,7 +42046,7 @@
                     <XRefSrcText value="66282: FaktaRub1: Misstänker du en allvarlig biverkning – Rapportera!" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 362000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -42082,7 +42070,7 @@
                     <XRefSrcText value="22261: FaktaText: Systemets effektivitet och kvalitet bygger på att" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 362000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -42106,7 +42094,7 @@
                     <XRefSrcText value="49340: FaktaRub1: Läkemedels- informationscentraler i Sverige" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1382866424 362000" type="num"/>
+                    <XRefLastUpdate value="1385406819 495000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>

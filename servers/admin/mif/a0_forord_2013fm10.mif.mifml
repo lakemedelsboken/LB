@@ -4651,6 +4651,33 @@
             <FColor value="Black" type="str"/>
         </Font>
         <Font>
+            <FTag value="LänkSidhuvud" type="str"/>
+            <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
+            <FFamily value="Frutiger LT Std 45 Light" type="str"/>
+            <FVar value="Regular" type="str"/>
+            <FWeight value="Bold" type="str"/>
+            <FAngle value="Regular" type="str"/>
+            <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
+            <FEncoding value="FrameRoman" type="str"/>
+            <FSize value="9.0 pt" type="num"/>
+            <FUnderlining value="FNoUnderlining" type="enum"/>
+            <FOverline value="No" type="enum"/>
+            <FStrike value="No" type="enum"/>
+            <FChangeBar value="No" type="enum"/>
+            <FOutline value="No" type="enum"/>
+            <FShadow value="No" type="enum"/>
+            <FPairKern value="Yes" type="enum"/>
+            <FTsume value="No" type="enum"/>
+            <FCase value="FAsTyped" type="enum"/>
+            <FPosition value="FNormal" type="enum"/>
+            <FDW value="0.0%" type="num"/>
+            <FStretch value="100.0%" type="num"/>
+            <FLanguage value="Swedish" type="enum"/>
+            <FLocked value="No" type="enum"/>
+            <FSeparation value="4" type="enum"/>
+            <FColor value="Blue" type="str"/>
+        </Font>
+        <Font>
             <FTag value="Nedsänkt" type="str"/>
             <FPosition value="FSubscript" type="enum"/>
             <FLocked value="No" type="enum"/>
@@ -4681,6 +4708,20 @@
             <FLocked value="No" type="enum"/>
             <FSeparation value="0" type="enum"/>
             <FColor value="Black" type="str"/>
+        </Font>
+        <Font>
+            <FTag value="Ref" type="str"/>
+            <FSize value="2.0 pt" type="num"/>
+            <FLocked value="No" type="enum"/>
+            <FSeparation value="1" type="enum"/>
+            <FColor value="White" type="str"/>
+        </Font>
+        <Font>
+            <FTag value="Symbol" type="str"/>
+            <FFamily value="Symbol" type="str"/>
+            <FWeight value="Bolded" type="str"/>
+            <FEncoding value="FrameRoman" type="str"/>
+            <FLocked value="No" type="enum"/>
         </Font>
         <Font>
             <FTag value="TabellFet" type="str"/>
@@ -4746,6 +4787,33 @@
             <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
             <FEncoding value="FrameRoman" type="str"/>
             <FSize value="7.0 pt" type="num"/>
+            <FUnderlining value="FNoUnderlining" type="enum"/>
+            <FOverline value="No" type="enum"/>
+            <FStrike value="No" type="enum"/>
+            <FChangeBar value="No" type="enum"/>
+            <FOutline value="No" type="enum"/>
+            <FShadow value="No" type="enum"/>
+            <FPairKern value="Yes" type="enum"/>
+            <FTsume value="No" type="enum"/>
+            <FCase value="FAsTyped" type="enum"/>
+            <FPosition value="FNormal" type="enum"/>
+            <FDW value="0.0%" type="num"/>
+            <FStretch value="100.0%" type="num"/>
+            <FLanguage value="Swedish" type="enum"/>
+            <FLocked value="No" type="enum"/>
+            <FSeparation value="0" type="enum"/>
+            <FColor value="Black" type="str"/>
+        </Font>
+        <Font>
+            <FTag value="TF Tecken fet" type="str"/>
+            <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
+            <FFamily value="Frutiger LT Std 45 Light" type="str"/>
+            <FVar value="Regular" type="str"/>
+            <FWeight value="Bold" type="str"/>
+            <FAngle value="Regular" type="str"/>
+            <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
+            <FEncoding value="FrameRoman" type="str"/>
+            <FSize value="8.7 pt" type="num"/>
             <FUnderlining value="FNoUnderlining" type="enum"/>
             <FOverline value="No" type="enum"/>
             <FStrike value="No" type="enum"/>
@@ -5677,7 +5745,7 @@
         </XRefFormat>
         <XRefFormat>
             <XRefName value="Page" type="str"/>
-            <XRefDef value="&lt;$pagenum&gt;" type="str"/>
+            <XRefDef value="&lt;Blue&gt;&lt;$pagenum&gt;" type="str"/>
         </XRefFormat>
         <XRefFormat>
             <XRefName value="See Heading &amp; Page" type="str"/>
@@ -5691,12 +5759,20 @@
             <XRefName value="Table Number &amp; Page" type="str"/>
             <XRefDef value="Table\x11 &lt;$paranumonly&gt; on page\x11 &lt;$pagenum&gt;" type="str"/>
         </XRefFormat>
+        <XRefFormat>
+            <XRefName value="Ref" type="str"/>
+            <XRefDef value="&lt;Ref&gt; " type="str"/>
+        </XRefFormat>
+        <XRefFormat>
+            <XRefName value="ORef" type="str"/>
+            <XRefDef value="&lt;Ref&gt; " type="str"/>
+        </XRefFormat>
     </XRefFormats>
     <Document>
         <DViewRect value="18 20 923 764 " type="enum"/>
         <DWindowRect value="0 0 1272 1044 " type="enum"/>
         <DViewScale value="100.0%" type="num"/>
-        <DNextUnique value="1040104" type="enum"/>
+        <DNextUnique value="1040144" type="enum"/>
         <DPageSize value="170.0 mm 240.0 mm" type="num"/>
         <DMenuBar value="" type="str"/>
         <DVoMenuBar value="" type="str"/>
@@ -5879,7 +5955,7 @@
         </PDFDocInfo>
         <DocFileInfo value="
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D30392D32355431303A31353A32332B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D30392D32355431303A31353A32332B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D31302D32355431383A33323A30362B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D31302D32355431383A33323A30362B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E46C3B6726F726420E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 20202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 2020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
@@ -10595,6 +10671,13 @@
                                 <PgfTag value="FaktaText" type="str"/>
                                 <PgfReferenced value="Yes" type="enum"/>
                                 <ParaLine>
+                                    <Marker>
+                                        <MType value="9" type="enum"/>
+                                        <MTypeName value="Cross-Ref" type="str"/>
+                                        <MText value="75608: FaktaText: Information om indikationer och doser för \x04 läkemede" type="str"/>
+                                        <MCurrPage value="4" type="str"/>
+                                        <Unique value="1040139" type="enum"/>
+                                    </Marker>
                                     <String>Information om indikationer och doser för </String>
                                 </ParaLine>
                                 <ParaLine>
@@ -10614,6 +10697,36 @@
                                 <PgfTag value="FaktaTextPunkt" type="str"/>
                                 <Pgf>
                                     <PgfSpBefore value="2.0 pt" type="num"/>
+                                    <PgfFont>
+                                        <FTag value="" type="str"/>
+                                        <FPlatformName value="W.Frutiger LT Std 55 Roman.R.400" type="str"/>
+                                        <FFamily value="Frutiger LT Std 55 Roman" type="str"/>
+                                        <FVar value="Regular" type="str"/>
+                                        <FWeight value="Regular" type="str"/>
+                                        <FAngle value="Regular" type="str"/>
+                                        <FPostScriptName value="FrutigerLTStd-Roman" type="str"/>
+                                        <FEncoding value="FrameRoman" type="str"/>
+                                        <FSize value="7.0 pt" type="num"/>
+                                        <FUnderlining value="FNoUnderlining" type="enum"/>
+                                        <FOverline value="No" type="enum"/>
+                                        <FStrike value="No" type="enum"/>
+                                        <FChangeBar value="No" type="enum"/>
+                                        <FOutline value="No" type="enum"/>
+                                        <FShadow value="No" type="enum"/>
+                                        <FPairKern value="Yes" type="enum"/>
+                                        <FTsume value="No" type="enum"/>
+                                        <FCase value="FAsTyped" type="enum"/>
+                                        <FPosition value="FNormal" type="enum"/>
+                                        <FDX value="0.0%" type="num"/>
+                                        <FDY value="0.0%" type="num"/>
+                                        <FDW value="0.0%" type="num"/>
+                                        <FStretch value="100.0%" type="num"/>
+                                        <FLanguage value="Swedish" type="enum"/>
+                                        <FLocked value="No" type="enum"/>
+                                        <FSeparation value="4" type="enum"/>
+                                        <FColor value="Blue" type="str"/>
+                                        <FBackgroundColor value="NoColor" type="enum"/>
+                                    </PgfFont>
                                 </Pgf>
                                 <PgfNumString value="•\t" type="str"/>
                                 <ParaLine>
@@ -10629,6 +10742,36 @@
                                 <PgfTag value="FaktaTextPunkt" type="str"/>
                                 <Pgf>
                                     <PgfSpBefore value="2.0 pt" type="num"/>
+                                    <PgfFont>
+                                        <FTag value="" type="str"/>
+                                        <FPlatformName value="W.Frutiger LT Std 55 Roman.R.400" type="str"/>
+                                        <FFamily value="Frutiger LT Std 55 Roman" type="str"/>
+                                        <FVar value="Regular" type="str"/>
+                                        <FWeight value="Regular" type="str"/>
+                                        <FAngle value="Regular" type="str"/>
+                                        <FPostScriptName value="FrutigerLTStd-Roman" type="str"/>
+                                        <FEncoding value="FrameRoman" type="str"/>
+                                        <FSize value="7.0 pt" type="num"/>
+                                        <FUnderlining value="FNoUnderlining" type="enum"/>
+                                        <FOverline value="No" type="enum"/>
+                                        <FStrike value="No" type="enum"/>
+                                        <FChangeBar value="No" type="enum"/>
+                                        <FOutline value="No" type="enum"/>
+                                        <FShadow value="No" type="enum"/>
+                                        <FPairKern value="Yes" type="enum"/>
+                                        <FTsume value="No" type="enum"/>
+                                        <FCase value="FAsTyped" type="enum"/>
+                                        <FPosition value="FNormal" type="enum"/>
+                                        <FDX value="0.0%" type="num"/>
+                                        <FDY value="0.0%" type="num"/>
+                                        <FDW value="0.0%" type="num"/>
+                                        <FStretch value="100.0%" type="num"/>
+                                        <FLanguage value="Swedish" type="enum"/>
+                                        <FLocked value="No" type="enum"/>
+                                        <FSeparation value="4" type="enum"/>
+                                        <FColor value="Blue" type="str"/>
+                                        <FBackgroundColor value="NoColor" type="enum"/>
+                                    </PgfFont>
                                 </Pgf>
                                 <PgfNumString value="•\t" type="str"/>
                                 <ParaLine>
@@ -10644,6 +10787,36 @@
                                 <PgfTag value="FaktaTextPunkt" type="str"/>
                                 <Pgf>
                                     <PgfSpBefore value="2.0 pt" type="num"/>
+                                    <PgfFont>
+                                        <FTag value="" type="str"/>
+                                        <FPlatformName value="W.Frutiger LT Std 55 Roman.R.400" type="str"/>
+                                        <FFamily value="Frutiger LT Std 55 Roman" type="str"/>
+                                        <FVar value="Regular" type="str"/>
+                                        <FWeight value="Regular" type="str"/>
+                                        <FAngle value="Regular" type="str"/>
+                                        <FPostScriptName value="FrutigerLTStd-Roman" type="str"/>
+                                        <FEncoding value="FrameRoman" type="str"/>
+                                        <FSize value="7.0 pt" type="num"/>
+                                        <FUnderlining value="FNoUnderlining" type="enum"/>
+                                        <FOverline value="No" type="enum"/>
+                                        <FStrike value="No" type="enum"/>
+                                        <FChangeBar value="No" type="enum"/>
+                                        <FOutline value="No" type="enum"/>
+                                        <FShadow value="No" type="enum"/>
+                                        <FPairKern value="Yes" type="enum"/>
+                                        <FTsume value="No" type="enum"/>
+                                        <FCase value="FAsTyped" type="enum"/>
+                                        <FPosition value="FNormal" type="enum"/>
+                                        <FDX value="0.0%" type="num"/>
+                                        <FDY value="0.0%" type="num"/>
+                                        <FDW value="0.0%" type="num"/>
+                                        <FStretch value="100.0%" type="num"/>
+                                        <FLanguage value="Swedish" type="enum"/>
+                                        <FLocked value="No" type="enum"/>
+                                        <FSeparation value="4" type="enum"/>
+                                        <FColor value="Blue" type="str"/>
+                                        <FBackgroundColor value="NoColor" type="enum"/>
+                                    </PgfFont>
                                 </Pgf>
                                 <PgfNumString value="•\t" type="str"/>
                                 <PgfReferenced value="Yes" type="enum"/>
@@ -10660,6 +10833,36 @@
                                 <PgfTag value="FaktaTextPunkt" type="str"/>
                                 <Pgf>
                                     <PgfSpBefore value="2.0 pt" type="num"/>
+                                    <PgfFont>
+                                        <FTag value="" type="str"/>
+                                        <FPlatformName value="W.Frutiger LT Std 55 Roman.R.400" type="str"/>
+                                        <FFamily value="Frutiger LT Std 55 Roman" type="str"/>
+                                        <FVar value="Regular" type="str"/>
+                                        <FWeight value="Regular" type="str"/>
+                                        <FAngle value="Regular" type="str"/>
+                                        <FPostScriptName value="FrutigerLTStd-Roman" type="str"/>
+                                        <FEncoding value="FrameRoman" type="str"/>
+                                        <FSize value="7.0 pt" type="num"/>
+                                        <FUnderlining value="FNoUnderlining" type="enum"/>
+                                        <FOverline value="No" type="enum"/>
+                                        <FStrike value="No" type="enum"/>
+                                        <FChangeBar value="No" type="enum"/>
+                                        <FOutline value="No" type="enum"/>
+                                        <FShadow value="No" type="enum"/>
+                                        <FPairKern value="Yes" type="enum"/>
+                                        <FTsume value="No" type="enum"/>
+                                        <FCase value="FAsTyped" type="enum"/>
+                                        <FPosition value="FNormal" type="enum"/>
+                                        <FDX value="0.0%" type="num"/>
+                                        <FDY value="0.0%" type="num"/>
+                                        <FDW value="0.0%" type="num"/>
+                                        <FStretch value="100.0%" type="num"/>
+                                        <FLanguage value="Swedish" type="enum"/>
+                                        <FLocked value="No" type="enum"/>
+                                        <FSeparation value="4" type="enum"/>
+                                        <FColor value="Blue" type="str"/>
+                                        <FBackgroundColor value="NoColor" type="enum"/>
+                                    </PgfFont>
                                 </Pgf>
                                 <PgfNumString value="•\t" type="str"/>
                                 <PgfReferenced value="Yes" type="enum"/>
@@ -10676,6 +10879,36 @@
                                 <PgfTag value="FaktaTextPunkt" type="str"/>
                                 <Pgf>
                                     <PgfSpBefore value="2.0 pt" type="num"/>
+                                    <PgfFont>
+                                        <FTag value="" type="str"/>
+                                        <FPlatformName value="W.Frutiger LT Std 55 Roman.R.400" type="str"/>
+                                        <FFamily value="Frutiger LT Std 55 Roman" type="str"/>
+                                        <FVar value="Regular" type="str"/>
+                                        <FWeight value="Regular" type="str"/>
+                                        <FAngle value="Regular" type="str"/>
+                                        <FPostScriptName value="FrutigerLTStd-Roman" type="str"/>
+                                        <FEncoding value="FrameRoman" type="str"/>
+                                        <FSize value="7.0 pt" type="num"/>
+                                        <FUnderlining value="FNoUnderlining" type="enum"/>
+                                        <FOverline value="No" type="enum"/>
+                                        <FStrike value="No" type="enum"/>
+                                        <FChangeBar value="No" type="enum"/>
+                                        <FOutline value="No" type="enum"/>
+                                        <FShadow value="No" type="enum"/>
+                                        <FPairKern value="Yes" type="enum"/>
+                                        <FTsume value="No" type="enum"/>
+                                        <FCase value="FAsTyped" type="enum"/>
+                                        <FPosition value="FNormal" type="enum"/>
+                                        <FDX value="0.0%" type="num"/>
+                                        <FDY value="0.0%" type="num"/>
+                                        <FDW value="0.0%" type="num"/>
+                                        <FStretch value="100.0%" type="num"/>
+                                        <FLanguage value="Swedish" type="enum"/>
+                                        <FLocked value="No" type="enum"/>
+                                        <FSeparation value="4" type="enum"/>
+                                        <FColor value="Blue" type="str"/>
+                                        <FBackgroundColor value="NoColor" type="enum"/>
+                                    </PgfFont>
                                 </Pgf>
                                 <PgfNumString value="•\t" type="str"/>
                                 <ParaLine>
@@ -24881,8 +25114,8 @@
             <Separation value="0" type="enum"/>
             <ObColor value="Black" type="str"/>
             <RunaroundType value="None" type="enum"/>
-            <ShapeRect value="18.0 mm 18.0 mm 134.0 mm 100.38454 mm" type="num"/>
-            <BRect value="18.0 mm 18.0 mm 134.0 mm 100.38454 mm" type="num"/>
+            <ShapeRect value="18.0 mm 18.0 mm 134.0 mm 102.23663 mm" type="num"/>
+            <BRect value="18.0 mm 18.0 mm 134.0 mm 102.23663 mm" type="num"/>
             <TRNumColumns value="2" type="enum"/>
             <TRColumnGap value="7.0 mm" type="num"/>
             <TRColumnBalance value="No" type="enum"/>
@@ -26188,14 +26421,42 @@
                 <String>ekonomi </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="139" type="enum"/>
                 <String>och IT-stöd. I regelverkskapitlen beskrivs de </String>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="139" type="enum"/>
                 <String>olika lagarna och förordningarna som finns </String>
             </ParaLine>
             <ParaLine>
-                <String>inom läkemedelsområdet. </String>
+                <String>inom läkemedelsområdet. Se även Faktaru</String>
+                <Char value="SoftHyphen" type="enum"/>
+            </ParaLine>
+            <ParaLine>
+                <String>ta 1.</String>
+                <XRef>
+                    <XRefName value="Ref" type="str"/>
+                    <XRefSrcText value="75608: FaktaText: Information om indikationer och doser för \x04 läkemede" type="str"/>
+                    <XRefSrcIsElem value="No" type="enum"/>
+                    <XRefSrcFile value="" type="str"/>
+                    <XRefLastUpdate value="1385400708 305000" type="num"/>
+                    <XRefSrcElemNonUniqueId value="" type="str"/>
+                    <XRefAltText value="" type="str"/>
+                    <XRefApiClient>
+                        <XRefClientName value="" type="str"/>
+                        <XRefClientType value="" type="str"/>
+                    </XRefApiClient>
+                    <Unique value="1040140" type="enum"/>
+                </XRef>
+                <Font>
+                    <FTag value="Ref" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <String> </String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <XRefEnd />
             </ParaLine>
         </Para>
         <Para>
@@ -30035,55 +30296,18 @@
         <Para>
             <Unique value="1036757" type="enum"/>
             <Pgf>
-                <PgfFont>
-                    <FTag value="" type="str"/>
-                    <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
-                    <FFamily value="Frutiger LT Std 45 Light" type="str"/>
-                    <FVar value="Regular" type="str"/>
-                    <FWeight value="Bold" type="str"/>
-                    <FAngle value="Regular" type="str"/>
-                    <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
-                    <FEncoding value="FrameRoman" type="str"/>
-                    <FSize value="18.0 pt" type="num"/>
-                    <FUnderlining value="FNoUnderlining" type="enum"/>
-                    <FOverline value="No" type="enum"/>
-                    <FStrike value="No" type="enum"/>
-                    <FChangeBar value="No" type="enum"/>
-                    <FOutline value="No" type="enum"/>
-                    <FShadow value="No" type="enum"/>
-                    <FPairKern value="No" type="enum"/>
-                    <FTsume value="No" type="enum"/>
-                    <FCase value="FAsTyped" type="enum"/>
-                    <FPosition value="FNormal" type="enum"/>
-                    <FDX value="0.0%" type="num"/>
-                    <FDY value="0.0%" type="num"/>
-                    <FDW value="0.0%" type="num"/>
-                    <FStretch value="100.0%" type="num"/>
-                    <FLanguage value="Swedish" type="enum"/>
-                    <FLocked value="No" type="enum"/>
-                    <FSeparation value="0" type="enum"/>
-                    <FColor value="Black" type="str"/>
-                    <FBackgroundColor value="NoColor" type="enum"/>
-                </PgfFont>
-                <PgfLeading value="4.0 pt" type="num"/>
+                <PgfLeading value="6.0 pt" type="num"/>
             </Pgf>
             <ParaLine>
-                <Font>
-                    <FTag value="" type="str"/>
-                    <FSize value="28.0 pt" type="num"/>
-                    <FLocked value="No" type="enum"/>
-                </Font>
                 <String>2</String>
                 <Font>
                     <FTag value="" type="str"/>
-                    <FSize value="28.0 pt" type="num"/>
                     <FDW value="-5.0%" type="num"/>
                     <FLocked value="No" type="enum"/>
                 </Font>
                 <String>01</String>
                 <Font>
                     <FTag value="" type="str"/>
-                    <FSize value="28.0 pt" type="num"/>
                     <FLocked value="No" type="enum"/>
                 </Font>
                 <String>4</String>
