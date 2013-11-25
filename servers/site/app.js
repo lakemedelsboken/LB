@@ -37,7 +37,7 @@ exports.init = function(port) {
 	app.enable('trust proxy');
 
 	app.configure(function(){
-		app.use(express.basicAuth(authorize));
+//		app.use(express.basicAuth(authorize));
 		app.set('views', __dirname + '/views');
 		app.set('view engine', 'ejs');
 //		app.use(express.logger());
@@ -53,7 +53,8 @@ exports.init = function(port) {
 	});
 
 	app.configure('development', function(){
-		app.use(express.errorHandler({ dumpExceptions: true, showStack: true })); 
+		app.use(express.errorHandler()); 
+		//app.use(express.errorHandler({ dumpExceptions: true, showStack: true })); 
 		// app.use(express.logger({ format: ':method :url' }));
 	});
 

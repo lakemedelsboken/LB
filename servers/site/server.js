@@ -176,7 +176,7 @@ app.get('/search', function(req,res){
 
 		async.parallel({
 			titlesearch: function(callback) {
-				request('http://127.0.0.1:' + networkPort + '/titlesearch?search=' + encodeURIComponent(terms), {'json': true, 'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': true}}, function (err, response, body) {
+				request('http://127.0.0.1:' + networkPort + '/titlesearch?search=' + encodeURIComponent(terms), {'json': true, 'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': false}}, function (err, response, body) {
 
 					if (err) {
 						callback(err)
@@ -186,7 +186,7 @@ app.get('/search', function(req,res){
 				});
 			},
 			contentsearch: function(callback) {
-				request('http://127.0.0.1:' + networkPort + '/contentsearch?search=' + encodeURIComponent(terms), {'json': true, 'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': true}}, function (err, response, body) {
+				request('http://127.0.0.1:' + networkPort + '/contentsearch?search=' + encodeURIComponent(terms), {'json': true, 'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': false}}, function (err, response, body) {
 
 					if (err) {
 						callback(err)
@@ -196,7 +196,7 @@ app.get('/search', function(req,res){
 				});
 			},
 			medicinesearch: function(callback) {
-				request('http://127.0.0.1:' + networkPort + '/medicinesearch?search=' + encodeURIComponent(terms), {'json': true, 'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': true}}, function (err, response, body) {
+				request('http://127.0.0.1:' + networkPort + '/medicinesearch?search=' + encodeURIComponent(terms), {'json': true, 'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': false}}, function (err, response, body) {
 
 					if (err) {
 						callback(err)
@@ -247,7 +247,7 @@ app.get('/search', function(req,res){
 
 		async.parallel({
 			titlesearch: function(callback) {
-				request('http://127.0.0.1:' + networkPort + '/titlesearch?search=' + encodeURIComponent(terms), {'json': true, 'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': true}}, function (err, response, body) {
+				request('http://127.0.0.1:' + networkPort + '/titlesearch?search=' + encodeURIComponent(terms), {'json': true, 'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': false}}, function (err, response, body) {
 
 					if (err) {
 						callback(err)
@@ -257,7 +257,7 @@ app.get('/search', function(req,res){
 				});
 			},
 			contentsearch: function(callback) {
-				request('http://127.0.0.1:' + networkPort + '/contentsearch?search=' + encodeURIComponent(terms), {'json': true, 'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': true}}, function (err, response, body) {
+				request('http://127.0.0.1:' + networkPort + '/contentsearch?search=' + encodeURIComponent(terms), {'json': true, 'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': false}}, function (err, response, body) {
 
 					if (err) {
 						callback(err)
@@ -267,7 +267,7 @@ app.get('/search', function(req,res){
 				});
 			},
 			medicinesearch: function(callback) {
-				request('http://127.0.0.1:' + networkPort + '/medicinesearch?search=' + encodeURIComponent(terms), {'json': true, 'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': true}}, function (err, response, body) {
+				request('http://127.0.0.1:' + networkPort + '/medicinesearch?search=' + encodeURIComponent(terms), {'json': true, 'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': false}}, function (err, response, body) {
 
 					if (err) {
 						callback(err)
@@ -1896,5 +1896,33 @@ app.get('/atc', function(req, res) {
 
 /* The 404 Route (Keep this as the last route) */
 app.get('/*', function(req, res){
+	var url = req.url;
+	var query = req.query;
+
+	//Requested medicine?
+	if (query["medicine"] !== null) {
+		
+	}
+	
+	//Requested chapter?
+	if (url.toLowerCase().indexOf(".html") > -1) {
+		
+	}
+
+	//Requested pdf?
+	if (url.toLowerCase().indexOf(".pdf") > -1) {
+		
+	}
+	
+	//Requested toc in chapter?
+	for (var key in url) {
+		if (key.indexOf("toc") === 0) {
+			
+		}
+	}
+
+	console.log(url);
+	console.log(query);
+
 	res.render('404.ejs', locals);
 });
