@@ -430,7 +430,6 @@ app.post('/admin/uploadmif', function(req,res){
 
 			var newPath = __dirname + "/mif/" + mif.name.toLowerCase();
 			var convertedPath = newPath + ".mifml";
-			var dtdPath = __dirname + "/mif/mifml.dtd";
 		
 			fs.renameSync(mif.path, newPath);
 
@@ -567,6 +566,7 @@ function getControlResults() {
 				}
 
 				//Outgoing links
+				/*
 				var links = $("a");
 				var outLinks = [];
 				links.each(function(i, e) {
@@ -577,7 +577,8 @@ function getControlResults() {
 				});
 
 				chapterResults.links = outLinks;
-
+				*/
+				chapterResults.links = [];
 				//Send to results
 				result.push(chapterResults);
 				
