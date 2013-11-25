@@ -2361,7 +2361,7 @@ var Parser = {
 			});
 			
 			
-
+			
 			//Remove anchor tags with no attributes of value, and remove "span.blue"
 			var anchors = cheerio("a");
 			anchors.each(function(index, element) {
@@ -3181,7 +3181,13 @@ var Parser = {
 					self.foundGenericas[matchedWord] = saveGenericaTitles;
 					
 					if (genericaTitles.length > 0) {
-						return match.substr(0, 1) + "<a href=\"" + href + "\" data-atcid=\"" + genericaATC.join(",") + "\" data-atctitles=\"" + genericaTitles.join("$$") + "\" class=\"inlineGenerica text\">" + matchedWord + "</a>" + match.substr(match.length - 1);
+						var result = match.substr(0, 1) + "<a href=\"" + href + "\" data-atcid=\"" + genericaATC.join(",") + "\" data-atctitles=\"" + genericaTitles.join("##") + "\" class=\"inlineGenerica text\">" + matchedWord + "</a>" + match.substr(match.length - 1);
+
+						if (result.indexOf("klindamycin") > -1) {
+							console.error(self.htmlEscape(result));
+						}
+
+						return result;
 					} else {
 						return match.substr(0, 1) + "<span>" + matchedWord + "</span>" + match.substr(match.length - 1);
 					}
@@ -3195,6 +3201,7 @@ var Parser = {
 			text = text.replace(/\|\)/g, ")");
 
 		}
+
 
 		return text;
 

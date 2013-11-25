@@ -1844,8 +1844,8 @@ var console = {log: function() {}};
 
 			var atcTitles = $(this).attr("data-atctitles");
 
-			if (atcTitles.indexOf("$$") > -1) {
-				atcTitles = atcTitles.split("$$");
+			if (atcTitles.indexOf("##") > -1) {
+				atcTitles = atcTitles.split("##");
 			} else {
 				atcTitles = [atcTitles];
 			}
