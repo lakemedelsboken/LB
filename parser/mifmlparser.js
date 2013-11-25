@@ -1863,8 +1863,46 @@ var Parser = {
 					return ($(this).attr("value").toLowerCase().indexOf(sourceText.toLowerCase()) > -1);
 				});
 
-				//console.error("Handling: " + sourceText);
+				var foundSource = false;
 				
+				//console.error("Handling: " + sourceText);
+				if (source.length !== 1) {
+					//Try to find based on text
+					var tables = $("Tbl");
+					var foundTable = null;
+					var lowest = null;
+					var findText = sourceText;
+					if (findText.indexOf(":") > -1) {
+						findText = findText.split(":")
+						findText = findText[findText.length - 1].trim();
+						if (findText.length > 20) {
+							findText = findText.substr(0, 20);
+						}
+					}
+					tables.each(function(index, element) {
+						tableText = $(element).find("String").first().text().trim().replace(/\n/g, " ");
+						//console.error("Looking in: " + tableText);
+						var foundIndex = tableText.indexOf(findText);
+						if (foundIndex > -1) {
+							if (lowest === null) {
+								lowest = foundIndex;
+								foundTable = $(element);
+							} else if (foundIndex < lowest) {
+								lowest = foundIndex;
+								foundTable = $(element);
+							}
+						}
+					});
+					
+					if (foundTable !== null) {
+						source = foundTable;
+					} else if (sourceFile === "" || sourceFile === undefined || sourceFile === null) {
+						console.error("* Could not find source table for: " + findText);
+					}
+					
+				} else {
+					foundSource = true;
+				}
 //				console.error(source);
 				
 				//Figure or table
@@ -1890,8 +1928,12 @@ var Parser = {
 
 					//console.error("Found: ", source);
 					//console.error(sourceText);
-
-					var sourceTable = $(source).parents("Tbl").eq(0);
+					var sourceTable = null;
+					if (foundSource) {
+						sourceTable = $(source).parents("Tbl").eq(0);
+					} else {
+						sourceTable = source;
+					}
 
 					if (sourceTable.length === 0) {
 						//TODO: Handle refs to tables in other chapters
@@ -3182,10 +3224,6 @@ var Parser = {
 					
 					if (genericaTitles.length > 0) {
 						var result = match.substr(0, 1) + "<a href=\"" + href + "\" data-atcid=\"" + genericaATC.join(",") + "\" data-atctitles=\"" + genericaTitles.join("##") + "\" class=\"inlineGenerica text\">" + matchedWord + "</a>" + match.substr(match.length - 1);
-
-						if (result.indexOf("klindamycin") > -1) {
-							console.error(self.htmlEscape(result));
-						}
 
 						return result;
 					} else {
