@@ -6,12 +6,7 @@ var stream = fs.createReadStream(path.join(__dirname, '/database/atc-code-lx.xml
 var xml = new XmlStream(stream);
 
 xml.preserve('xs:enumeration', true);
-//xml.collect('xs:enumeration');
-/*
-xml.on("data", function(data) {
-	process.stdout.write(data);
-});
-*/
+
 var counter = 0;
 
 var atcItems = [];
@@ -135,7 +130,7 @@ xml.on("end", function() {
 	}
 
 	//console.log(atc);
-	fs.writeFileSync(__dirname + "/atcTree.json", JSON.stringify(atc, null, "\t"), "utf8");
-	console.log(counter + " items saved to atcTree.json");
+	fs.writeFileSync(__dirname + "/newAtcTree.json", JSON.stringify(atc, null, "\t"), "utf8");
+	console.log(counter + " items saved to newAtcTree.json");
 
 });

@@ -1,7 +1,7 @@
 var fs = require("fs");
 var $ = require("cheerio");
 
-var atcTree = JSON.parse(fs.readFileSync(__dirname + "/atcTree.json"));
+var atcTree = JSON.parse(fs.readFileSync(__dirname + "/newAtcTree.json"));
 
 function getItemById(id) {
 	var result = undefined;
@@ -156,4 +156,4 @@ for (var i = atcTree.length - 1; i >= 0; i--) {
 console.log(atcTree.length);
 
 //Save new atcTree
-fs.writeFileSync(__dirname + "/atcTree.json", JSON.stringify(atcTree, null, "\t"), "utf8");
+fs.writeFileSync(__dirname + "/newAtcTree.json", JSON.stringify(atcTree, null, "\t"), "utf8");
