@@ -8,8 +8,7 @@ var job = new cronJob({
 		// Runs every day at 04:00:00 AM.
 		updateFromNpl();
 	},
-	start: true,
-	timeZone: "Europe/Stockholm"
+	start: true
 });
 updateFromNpl();
 
