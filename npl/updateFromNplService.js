@@ -39,9 +39,28 @@ function updateFromNpl() {
 	async.series([
 		//fetch
 		function(callback){
-			run(__dirname + "/fetch.js", function() {
-				callback(null);
+
+			var handle = spawn("./_fetch.sh", [], {cwd: __dirname});
+
+			handle.stdout.on('data', function (data) {
+				//console.log("\t" + data.toString().replace("\n", ""));
+			});
+
+			handle.stderr.on('data', function (data) {
+				if (/^execvp\(\)/.test(data)) {
+					console.log('Failed to start child process.');
+				}
+				//console.log('stderr: ' + data);
+			});
+
+			handle.on('close', function (code) {
+				console.log("* Finished fetching xml");
+				callback();
 			});	
+
+//			run(__dirname + "/fetch.js", function() {
+//				callback(null);
+//			});	
 		},
 		//buildATCTree
 		function(callback){
