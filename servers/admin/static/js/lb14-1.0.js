@@ -2658,7 +2658,7 @@ var console = {log: function() {}};
 				var popoverPlacement = "bottom";
 
 				var pageFootnoteList = $($(this).attr("href"));
-				var title = pageFootnoteList.find("legend").first().text().trim();
+				var title = $.trim(pageFootnoteList.find("legend").first().text());
 				pageFootnoteList.find("legend").remove();
 				
 				var content = "";
