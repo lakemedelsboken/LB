@@ -108,7 +108,7 @@ function readProducts() {
 
 					missingInfoCounter++;
 
-					var foundUpdates = JSON.parse(fs.readFileSync(__dirname + "/../fass/foundUpdates.json", "utf8"));
+					var foundUpdates = JSON.parse(fs.readFileSync(__dirname + "/../fass/shared/foundUpdates.json", "utf8"));
 					var alreadyInList = false;
 					
 					for (var i = 0; i < foundUpdates.length; i++) {
@@ -118,9 +118,9 @@ function readProducts() {
 						}
 					}
 					if (!alreadyInList) {
-						console.log(nplId + " is added to foundUpdates.json");
+						console.log(nplId + " is added to shared/foundUpdates.json");
 						foundUpdates.push(nplId);
-						fs.writeFileSync(__dirname + "/../fass/foundUpdates.json", JSON.stringify(foundUpdates, null, "\t"), "utf8");
+						fs.writeFileSync(__dirname + "/../fass/shared/foundUpdates.json", JSON.stringify(foundUpdates, null, "\t"), "utf8");
 					}
 				}
 

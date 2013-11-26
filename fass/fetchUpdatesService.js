@@ -33,7 +33,7 @@ var secretSettings = JSON.parse(fs.readFileSync(secretSettingsPath, "utf8"));
 var fassUserId = secretSettings.fass.fassUserId;
 
 var chokidar = require("chokidar");
-var watcher = chokidar.watch(path.normalize(__dirname + "/foundUpdates.json"), {persistent: true, ignoreInitial: true, interval:1});
+var watcher = chokidar.watch(path.normalize(__dirname + "/shared/foundUpdates.json"), {persistent: true, ignoreInitial: true, interval:1});
 
 watcher.on('error', function(error) {console.error('Error happened on file watch', error);})
 
@@ -42,7 +42,7 @@ watcher.on('change', function(path, stats) {
 	fetchUpdates();
 });
 
-console.log("Watching foundUpdates.json for changes...");
+console.log("Watching shared/foundUpdates.json for changes...");
 
 var isUpdating = false;
 
@@ -58,9 +58,9 @@ function fetchUpdates() {
 	var foundUpdates = [];
 	
 	try {
-		foundUpdates = JSON.parse(fs.readFileSync(__dirname + "/foundUpdates.json", "utf8"));
+		foundUpdates = JSON.parse(fs.readFileSync(__dirname + "/shared/foundUpdates.json", "utf8"));
 	} catch (err) {
-		console.error("Error trying to parse foundUpdates.json:")
+		console.error("Error trying to parse shared/foundUpdates.json:")
 		console.error(err);
 	}
 	
@@ -156,7 +156,7 @@ function check(updates) {
 
 function removeFromFoundUpdates(nplId) {
 
-	var foundUpdates = JSON.parse(fs.readFileSync(__dirname + "/foundUpdates.json", "utf8"));
+	var foundUpdates = JSON.parse(fs.readFileSync(__dirname + "/shared/foundUpdates.json", "utf8"));
 
 	for (var i = foundUpdates.length - 1; i >= 1; i--) {
 		if (foundUpdates[i] === nplId && i > 0) {
@@ -166,7 +166,7 @@ function removeFromFoundUpdates(nplId) {
 	}
 
 	//console.log("Saving new list");
-	fs.writeFileSync(__dirname + "/foundUpdates.json", JSON.stringify(foundUpdates, null, "\t"), "utf8");
+	fs.writeFileSync(__dirname + "/shared/foundUpdates.json", JSON.stringify(foundUpdates, null, "\t"), "utf8");
 	
 }
 

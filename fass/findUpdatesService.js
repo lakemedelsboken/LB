@@ -4,7 +4,7 @@ var urlParser = require("url");
 var http = require("http");
 
 var isUpdating = false;
-var foundUpdatesPath = __dirname + "/foundUpdates.json";
+var foundUpdatesPath = __dirname + "/shared/foundUpdates.json";
 
 var secretSettingsPath = __dirname + "/../settings/secretSettings.json";
 
@@ -95,7 +95,7 @@ function findUpdates() {
 				//Update time
 				oldUpdates[0].time = formatDate(currentDate);
 
-				//Save to foundUpdates.json
+				//Save to shared/foundUpdates.json
 				fs.writeFileSync(foundUpdatesPath, JSON.stringify(oldUpdates, null, "\t"), "utf8");
 			
 				isUpdating = false;
@@ -106,7 +106,7 @@ function findUpdates() {
 				//Update time
 				oldUpdates[0].time = formatDate(currentDate);
 
-				//Save to foundUpdates.json
+				//Save to shared/foundUpdates.json
 				fs.writeFileSync(foundUpdatesPath, JSON.stringify(oldUpdates, null, "\t"), "utf8");
 
 				isUpdating = false;
