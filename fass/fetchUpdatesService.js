@@ -170,27 +170,39 @@ function removeFromFoundUpdates(nplId) {
 	
 }
 
+function getNoInfo(nplId) {
+	var noinfo = {noinfo: true, id: nplId};
+	if (fs.existsSync(__dirname + "/../npl/products/" + nplId + ".json")) {
+		var nplProduct = JSON.parse(fs.readFileSync(__dirname + "/../npl/products/" + nplId + ".json", "utf8"));
+		noinfo.name = nplProduct.name;
+		noinfo.description = "Saknar förskrivarinformation";
+		noinfo.atcCode = nplProduct.atcCode;
+		noinfo.brand = nplProduct.brand;
+	}
+	return noinfo;
+}
+
 function processAnswer(answer, nplId, callback) {
 
 	if (answer.indexOf("No published FASS-document") > -1) {
 
-		var output = {noinfo: true, id: nplId};
+		var output = getNoInfo(nplId);
 		callback(new Error("No published FASS-document: " + nplId), output);
 
 		
 	} else if (answer.indexOf("Product is not active") > -1) {
 
-		var output = {noinfo: true, id: nplId};
+		var output = getNoInfo(nplId);
 		callback(new Error("Product is not active: " + nplId), output);
 		
 	} else if (answer.indexOf("Unable to find document for nplId = ") > -1) {
 
-		var output = {noinfo: true, id: nplId};
+		var output = getNoInfo(nplId);
 		callback(new Error("Unable to find document for nplId = " + nplId), output);
 		
 	} else if (answer.indexOf("Unexpected error") > -1) {
 
-		var output = {noinfo: true, id: nplId};
+		var output = getNoInfo(nplId);
 		callback(new Error("Unexpected error for nplId = " + nplId), output);
 		
 	} else {

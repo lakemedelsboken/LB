@@ -103,27 +103,6 @@ function readProducts() {
 
 			if (nplId !== undefined) {
 
-				//Check if product exists in fass listings
-				if (existingNplIds[nplId] === undefined) {
-
-					missingInfoCounter++;
-
-					var foundUpdates = JSON.parse(fs.readFileSync(__dirname + "/../fass/shared/foundUpdates.json", "utf8"));
-					var alreadyInList = false;
-					
-					for (var i = 0; i < foundUpdates.length; i++) {
-						if (foundUpdates[i] === nplId) {
-							alreadyInList = true;
-							break;
-						}
-					}
-					if (!alreadyInList) {
-						console.log(nplId + " is added to shared/foundUpdates.json");
-						foundUpdates.push(nplId);
-						fs.writeFileSync(__dirname + "/../fass/shared/foundUpdates.json", JSON.stringify(foundUpdates, null, "\t"), "utf8");
-					}
-				}
-
 				//Name
 				var name = "";
 				var names = item["npl:names"].$children;
@@ -146,6 +125,51 @@ function readProducts() {
 					console.log("Unknown brand for " + name);
 				}
 
+				//Check if product exists in fass listings
+				if (existingNplIds[nplId] === undefined) {
+
+					missingInfoCounter++;
+
+					var foundUpdates = JSON.parse(fs.readFileSync(__dirname + "/../fass/shared/foundUpdates.json", "utf8"));
+					var alreadyInList = false;
+					
+					for (var i = 0; i < foundUpdates.length; i++) {
+						if (foundUpdates[i] === nplId) {
+							alreadyInList = true;
+							break;
+						}
+					}
+					if (!alreadyInList) {
+						console.log(nplId + " is added to shared/foundUpdates.json");
+						foundUpdates.push(nplId);
+						fs.writeFileSync(__dirname + "/../fass/shared/foundUpdates.json", JSON.stringify(foundUpdates, null, "\t"), "utf8");
+					}
+				} else {
+					//Check that name and brand is set
+					var product = JSON.parse(fs.readFileSync(__dirname + "/../fass/www/products/" + nplId + ".json"));
+					var update = false;
+					if (product.name === undefined || product.name === "") {
+						product.name = name;
+						update = true;
+					}
+					if (product.brand === undefined || product.brand === "") {
+						product.brand = brand;
+						update = true;
+					}
+					if (product.atcCode === undefined || product.atcCode === "") {
+						product.atcCode = atcCode;
+						update = true;
+					}
+					if (product.noinfo !== undefined && product.noinfo === true && product.description !== "Saknar förskrivarinformation") {
+						product.description = "Saknar förskrivarinformation";
+						update = true;
+					}
+					if (update) {
+						console.log("Adding basic information to: " + nplId + " " + product.name + ", " + product.brand);
+						fs.writeFileSync(__dirname + "/../fass/www/products/" + nplId + ".json", JSON.stringify(product, null, "\t"), "utf8");
+					}
+				}
+
 				var spcLink = "";
 
 				var product = {
@@ -156,6 +180,8 @@ function readProducts() {
 					"spcLink": spcLink,
 					"available": available
 				}
+
+				fs.writeFileSync(__dirname + "/products/" + nplId + ".json", JSON.stringify(product, null, "\t"), "utf8");
 			
 				availableCounter++;
 			}
