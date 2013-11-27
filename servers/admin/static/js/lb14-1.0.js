@@ -2194,7 +2194,7 @@ var console = {log: function() {}};
 
 				if (product["noinfo"] !== undefined && product["noinfo"] === true) {
 					//title.html("Ingen information")
-					body.html("<div class=\"hero-unit\"><h5><i class=\"icon icon-info-sign\"></i> Det finns tyvärr ingen information i FASS om detta läkemedel.</h5></div>");
+					body.html("<div class=\"hero-unit\"><h5><i class=\"icon icon-info-sign\"></i> Det finns tyvärr ingen förskrivarinformation i Fass om detta läkemedel.</h5><h5><a href=\"http://www.fass.se/LIF/product?4&userType=0&nplId=" + nplId + "\" target=\"_blank\"><i class=\"icon-search\"></i> Visa preparat på Fass.se</a></h5</div>");
 				} else {
 					//title.html(product.name);
 					lb.renderProductInfo(product, nplId, body, forcedNplId);
@@ -2238,7 +2238,7 @@ var console = {log: function() {}};
 			$.getJSON("/products/" + nplId + ".json", function(product) {
 
 				if (product["noinfo"] !== undefined && product["noinfo"] === true) {
-					body.html("<div class=\"hero-unit\"><h5><i class=\"icon icon-info-sign\"></i> Det finns tyvärr ingen information i FASS om detta läkemedel.</h5></div>");
+					body.html("<div class=\"hero-unit\"><h5><i class=\"icon icon-info-sign\"></i> Det finns tyvärr ingen förskrivarinformation i Fass om detta läkemedel.</h5><h5><a href=\"http://www.fass.se/LIF/product?4&userType=0&nplId=" + nplId + "\" target=\"_blank\"><i class=\"icon-search\"></i> Visa preparat på Fass.se</a></h5</div>");
 				} else {
 					lb.renderProductInfo(product, nplId, body);
 
