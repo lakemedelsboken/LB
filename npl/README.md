@@ -7,8 +7,8 @@ This is where new products are fetched from http://npa.mpl.se/, added to the fas
 ###1. updateFromNplService.js
 Runs all of the following scripts in correct order, this is done each night.
 
-###2. fetch.js
-Fetches and extracts xml data from npl.mpa.se
+###2. _fetch.sh
+Fetches npl-data in xml and extracting it.
 
 ###3. buildATCTree.js
 Builds `newAtcTree.json` which holds only human atc-codes.
@@ -30,5 +30,3 @@ The current database of atc-codes and searchable product information that is use
 ###newAtcTree.json
 Temporary file that is being processed by the scripts. When it is done it replaces the content in `atcTree.json`.
 
-###_fetch.sh
-Batch script for fetching npl-data and extracting it, used by `fetch.js`.
