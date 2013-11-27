@@ -28,10 +28,21 @@ namespace :deploy do
       # Your restart mechanism here, for example:
       # execute :touch, release_path.join('tmp/restart.txt')
       #within release_path do
+
+      #Create symlinks for fass products
         execute "rm -rf #{release_path}/fass/www/products"
         execute "mkdir -p #{release_path}/fass/www/"
         execute "mkdir -p #{shared_path}/fass/www/products"
         execute "ln -nfs #{shared_path}/fass/www/products #{release_path}/fass/www/"
+
+        #Create symlink for foundUpdates.json
+        execute "mkdir -p #{shared_path}/fass/shared"
+        execute "cp -n #{release_path}/fass/shared/foundUpdates.json #{shared_path}/fass/shared/foundUpdates.json"
+        execute "rm -rf #{release_path}/fass/shared"
+        execute "ln -nfs #{shared_path}/fass/shared #{release_path}/fass/"
+
+        #rebuild node-xml module
+        execute "cd #{release_path}/npl/node_modules/xml-stream/ && npm rebuild"
 
         ask(:secretSettingsPassword, "")
         
