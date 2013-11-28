@@ -1635,7 +1635,7 @@ var console = {log: function() {}};
 						for (var i=0; i < results.length; i++) {
 							var item = results[i];
 							if (item.type === "atc") {
-								resultsList.append($("<li id=\"searchResults_" + item.id + "\"><a href=\"#\" class=\"atcCodeInPopover searchResult\" data-indentation=\"0\" data-atcid=\"" + item.id + "\" data-atctitles=\"" + item.titlePath.replace(/\s\/\s/g, "--").replace(/\s/g, "_") + "\"><i class=\"icon icon-plus-sign-alt\"></i> <strong>" + item.title + "</strong><br><small>" + item.titlePath + "</small></a></li>")); 
+								resultsList.append($("<li id=\"searchResults_" + item.id + "\"><a href=\"/atc/" + item.id + "\" class=\"atcCodeInPopover searchResult\" data-indentation=\"0\" data-atcid=\"" + item.id + "\" data-atctitles=\"" + item.titlePath.replace(/\s\/\s/g, "--").replace(/\s/g, "_") + "\"><i class=\"icon icon-plus-sign-alt\"></i> <strong>" + item.title + "</strong><br><small>" + item.titlePath + "</small></a></li>")); 
 							} else if (item.type === "product") {
 								//Add images
 								var images = "";
@@ -1659,7 +1659,7 @@ var console = {log: function() {}};
 									title = title.join(" <br>");
 								}
 							
-								resultsList.append($("<li" + (item.noinfo === true ? " class=\"ui-state-disabled\"" : "") + "><a href=\"#\" class=\"inlineProduct searchResult\" data-product-id=\"" + item.id + "\">" + images + title + "<br><small>" + item.titlePath + "</small></a></li>")); 
+								resultsList.append($("<li" + (item.noinfo === true ? " class=\"ui-state-disabled\"" : "") + "><a href=\"/product/" + item.id + "\" class=\"inlineProduct searchResult\" data-product-id=\"" + item.id + "\">" + images + title + "<br><small>" + item.titlePath + "</small></a></li>")); 
 							}
 						}
 					

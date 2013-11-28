@@ -3215,7 +3215,7 @@ var Parser = {
 						}
 					}
 
-					var href = "/atclist/" + genericaATC.join("-");
+					var href = "/atc/" + genericaATC.join("-");
 					//console.error("Match: \"" + match + "\"");
 					var matchedWord = match.substr(1, match.length - 2);
 					

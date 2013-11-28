@@ -1799,13 +1799,14 @@ function getTreeChildren(parentId, showATCCodes) {
 	}
 
 }
-app.get('/atclist/:atcCodes?', function(req, res) {
+
+app.get('/atc/:atcCodes?', function(req, res) {
 	var atcCodes = ["root"];
 	
 	if (req.params.atcCodes !== undefined && req.params.atcCodes !== "") {
 		atcCodes = req.params.atcCodes.split("-");
 	}
-		
+	
 	var atcItems = [];
 	for (var i = 0; i < atcCodes.length; i++) {
 		var atcItem = null;
@@ -1827,7 +1828,7 @@ app.get('/atclist/:atcCodes?', function(req, res) {
 			idPath.unshift("root");
 
 			for (var k = 0; k < titlePath.length; k++) {
-				titlePath[k] = "<a href=\"/atclist/" + idPath[k] + "\">" + titlePath[k] + "</a>";
+				titlePath[k] = "<a href=\"/atc/" + idPath[k] + "\">" + titlePath[k] + "</a>";
 			}
 			
 			titlePath.pop();
@@ -1845,6 +1846,41 @@ app.get('/atclist/:atcCodes?', function(req, res) {
 	locals.atc = atcItems;
 	res.render("atc.ejs", locals);
 
+});
+
+app.get('/product/:nplId?', function(req, res) {
+	var nplId = "";
+	
+	if (req.params.nplId !== undefined && req.params.nplId !== "") {
+		nplId = req.params.nplId;
+		nplId = nplId.replace(/\//g, "").replace(/\./g, "");
+	}
+		
+	var product = {noinfo: true, id: nplId};
+
+	if (nplId !== "" && nplId.length > 4) {
+		//Check if product exists
+		fs.exists(__dirname + "/../../fass/www/products/" + nplId + ".json", function(fileExists) {
+			if (fileExists) {
+				fs.readFile(__dirname + "/../../fass/www/products/" + nplId + ".json", "utf8", function(err, data) {
+					if (err) {
+						console.log(err);
+					} else {
+						product = JSON.parse(data);
+					}
+					locals.product = product
+					res.render("product.ejs", locals);
+				});
+			} else {
+				console.log("File does not exist.")
+				locals.product = product;
+				res.render("product.ejs", locals);
+			}
+		});
+	} else {
+		locals.product = product;
+		res.render("product.ejs", locals);
+	}
 });
 
 /*
@@ -1901,7 +1937,8 @@ app.get('/*', function(req, res){
 
 	//Requested medicine?
 	if (query["medicine"] !== null) {
-		
+		var medicineName = query["medicine"];
+		//Perform search
 	}
 	
 	//Requested chapter?
