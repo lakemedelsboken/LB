@@ -1144,7 +1144,6 @@ var console = {log: function() {}};
 		},
 		openPage: function(chapter, id, forceMenuUpdate) {
 			//Inject content via ajax
-
 			var self = this;
 		
 			lb.currentChapter = chapter;
@@ -1242,9 +1241,7 @@ var console = {log: function() {}};
 					var relativeUrl = chapter;
 					
 					//Track page
-					if ( typeof window._gaq !== 'undefined' ) {
-						window._gaq.push(['_trackPageview', relativeUrl]);
-					}
+					ga('send', 'pageview', {'page': chapter, 'title': document.title});
 
 				},
 				error: function(jqXHR, textStatus, errorThrown){
@@ -1596,6 +1593,7 @@ var console = {log: function() {}};
 				History.replaceState(state, "Sök: " + searchValue + " | Läkemedelsboken", state.toString());
 
 				lb.titleSearch = $.getJSON("/titlesearch?search=" + encodeURIComponent(searchValue), function(results) {
+
 					lb.titleSearch = null;
 					if ($.trim(search.val()) === searchValue) {
 						var resultsList = $("#titleSearchResultsList");
@@ -1616,6 +1614,9 @@ var console = {log: function() {}};
 							resultsList.append($("<li><a href=\"#\"><i class=\"icon icon-ban-circle\"></i> Inga träffar</a></li>"));
 						}
 						resultsList.menu("refresh");
+
+						ga('send', 'event', 'search', searchValue, {'nonInteraction': 1});
+						
 					}
 				}).error(function(jqXHR, status, error) {
 					lb.titleSearch = null;
@@ -2250,6 +2251,9 @@ var console = {log: function() {}};
 		},
 		renderProductInfo: function(product, nplId, container, forcedNplId) {
 
+			ga('send', 'pageview', {'page': '/product/' + nplId, 'title': product.name + ' | Läkemedelsboken'});
+			ga('send', 'event', 'product', product.name, {'nonInteraction': 1});
+			
 			lb.nplId = nplId;
 			if (!forcedNplId) {
 				var state = lb.getState();
