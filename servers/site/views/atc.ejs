@@ -86,8 +86,12 @@
 											<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon <%=getIcon(child.type)%>"></i></span><a href="/atc/<%=child.id%>"><%=child.title%></a></li>
 											<%
 										} else {
+											var disabled = "";
+											if (child.noinfo === true) {
+												disabled = "style='text-decoration:line-through;'";
+											}
 											%>
-											<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon <%=getIcon(child.type)%>"></i></span><a href="/product/<%=child.id%>"><%=child.title%></a></li>
+											<li<%=disabled%>><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon <%=getIcon(child.type)%>"></i></span><a href="/product/<%=child.id%>"><%=child.title%></a></li>
 											<%
 										}
 									}

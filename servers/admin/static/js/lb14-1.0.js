@@ -1785,7 +1785,7 @@ var console = {log: function() {}};
 
 							var item = results.data[i];
 							if (item.hasChildren) {
-								content += "<li id=\"" + tipId + "_" + item.id + "\"><a href=\"#\" data-indentation=\"" + (indentationLevel + 1) + "\" class=\"atcCodeInPopover\" style=\"padding-left: " + indentationPixels + ";\"><i class=\"icon icon-plus-sign-alt\"></i><i class=\"icon icon-angle-down pull-right\"></i> <strong>" + item.text + "</strong></a></li>";
+								content += "<li id=\"" + tipId + "_" + item.id + "\"><a href=\"/atc/" + item.id + "\" data-indentation=\"" + (indentationLevel + 1) + "\" class=\"atcCodeInPopover\" style=\"padding-left: " + indentationPixels + ";\"><i class=\"icon icon-plus-sign-alt\"></i><i class=\"icon icon-angle-down pull-right\"></i> <strong>" + item.text + "</strong></a></li>";
 							} else if (item.children && item.children.length > 0) {
 								//content += "<li><a style=\"padding-left: " + indentationPixels + ";\"><strong>" + item.text + "</strong></a></li>";
 							
@@ -1812,7 +1812,7 @@ var console = {log: function() {}};
 									if (j > 0) {
 										//extraIndent = 25;
 									}
-									content += "<li" + (productItem.noinfo === true ? " class=\"ui-state-disabled\"" : "") + "><a href=\"#\" data-product-id=\"" + productItem.id + "\" class=\"inlineProduct\" data-indentation=\"" + (indentationLevel + 1) + "\" style=\"padding-left: " + (parseInt(indentationPixels) + extraIndent) + "px;\">" + images + productInfo + "</a></li>";
+									content += "<li" + (productItem.noinfo === true ? " class=\"ui-state-disabled\"" : "") + "><a href=\"/product/" + productItem.id + "\" data-product-id=\"" + productItem.id + "\" class=\"inlineProduct\" data-indentation=\"" + (indentationLevel + 1) + "\" style=\"padding-left: " + (parseInt(indentationPixels) + extraIndent) + "px;\">" + images + productInfo + "</a></li>";
 								}
 							
 							
@@ -1899,9 +1899,8 @@ var console = {log: function() {}};
 
 										var item = results.data[i];
 										if (item.hasChildren) {
-											currentATCMenu.append("<li id=\"" + tipId + "_" + item.id + "\"><a href=\"#\" data-indentation=\"0\" class=\"atcCodeInPopover\"><i class=\"icon icon-plus-sign-alt\"></i><i class=\"icon icon-angle-down pull-right\"></i> <strong>" + item.text + "</strong></a></li>");
+											currentATCMenu.append("<li id=\"" + tipId + "_" + item.id + "\"><a href=\"/atc/" + item.id + "\" data-indentation=\"0\" class=\"atcCodeInPopover\"><i class=\"icon icon-plus-sign-alt\"></i><i class=\"icon icon-angle-down pull-right\"></i> <strong>" + item.text + "</strong></a></li>");
 										} else if (item.children && item.children.length > 0) {
-											//currentATCMenu.append("<li><a href=\"#\"><strong>" + item.text + "</strong></a></li>");
 											for (var j = 0; j < item.children.length; j++) {
 												var productItem = item.children[j];
 												var images = "";
@@ -1926,7 +1925,7 @@ var console = {log: function() {}};
 													//extraIndent = 25;
 												}
 												
-												currentATCMenu.append("<li" + (productItem.noinfo === true ? " class=\"ui-state-disabled\"" : "") + "><a href=\"#\" data-product-id=\"" + productItem.id + "\" class=\"inlineProduct\" " + ((extraIndent > 0) ? " style=\"padding-left: " + extraIndent + "px;\"" : "") + ">" + images + productInfo + "</a></li>");
+												currentATCMenu.append("<li" + (productItem.noinfo === true ? " class=\"ui-state-disabled\"" : "") + "><a href=\"/product/" + productItem.id + "\" data-product-id=\"" + productItem.id + "\" class=\"inlineProduct\" " + ((extraIndent > 0) ? " style=\"padding-left: " + extraIndent + "px;\"" : "") + ">" + images + productInfo + "</a></li>");
 											}
 										} else {
 											//console.log(item);
@@ -1935,7 +1934,6 @@ var console = {log: function() {}};
 									}
 									
 									if (results.data.length === 0) {
-										//currentATCMenu.append("<li><a href=\"#\"><i class=\"icon icon-info-sign\"></i> Det finns inga produkter i denna kategori</a></li>");
 										
 										$("h6." + results.atcCode).remove();
 										currentATCMenu.remove();
@@ -2125,17 +2123,28 @@ var console = {log: function() {}};
 
 				if (medList.length > 0) {
 					var products = [];
+					var noinfoProducts = [];
 					for (var i=0; i < medList.length; i++) {
 						var item = medList[i];
 
 						if (item.type === "product") {
-							products.push(item);
+							if (item.noinfo === true) {
+								noinfoProducts.push(item);
+							} else {
+								products.push(item);
+							}
 						} else {
 							categoryTitle.html("<i class=\"icon-info-sign\"></i> " + item.title + "</a>");
 						}
 					}
 
 					products.sort(function(a,b){
+						if(a.title < b.title) return -1;
+						if(a.title > b.title) return 1;
+						return 0;
+					});
+
+					noinfoProducts.sort(function(a,b){
 						if(a.title < b.title) return -1;
 						if(a.title > b.title) return 1;
 						return 0;
@@ -2164,8 +2173,34 @@ var console = {log: function() {}};
 							
 							title = title.join(" <br>");
 						}
-						list.append($("<li id=\"item_" + product.id + "\"" + (product.noinfo === true ? " class=\"ui-state-disabled\"" : "") + "><a class=\"inlineListProduct\" data-product-id=\"" + product.id + "\" href=\"#\">" + images + title + "</a></li>"));
+						list.append($("<li id=\"item_" + product.id + "\"" + (product.noinfo === true ? " class=\"ui-state-disabled\"" : "") + "><a class=\"inlineListProduct\" data-product-id=\"" + product.id + "\" href=\"/product/" + product.id + "\">" + images + title + "</a></li>"));
 					}
+					for (var j=0; j < noinfoProducts.length; j++) {
+						var product = noinfoProducts[j];
+						var images = "";
+						//Add images
+						if (product.images !== undefined) {
+							images = "";
+							for (var x=0; x < product.images.length; x++) {
+								images += "<img src=\"" + product.images[x] + "\" class=\"img-polaroid pull-right\" style=\"width: 30px; height: 30px; margin-right: 5px;\" />";
+							}
+						}
+						var title = product.title;
+						if (title.indexOf(", ") > -1) {
+							title = title.split(", ");
+							title[0] = "<strong>" + title[0] + "</strong>";
+							if (title.length >= 3) {
+								title[title.length - 1] = "<em>" + title[title.length - 1] + "</em>";
+							}
+							if (product.parallelimport !== undefined && product.parallelimport !== "") {
+								title[title.length - 1] = title[title.length - 1] + " (Parallellimport " + product.parallelimport + ")";
+							}
+							
+							title = title.join(" <br>");
+						}
+						list.append($("<li id=\"item_" + product.id + "\"" + (product.noinfo === true ? " class=\"ui-state-disabled\"" : "") + "><a class=\"inlineListProduct\" data-product-id=\"" + product.id + "\" href=\"/product/" + product.id + "\">" + images + title + "</a></li>"));
+					}
+
 				}
 				list.menu("refresh");
 
@@ -2277,7 +2312,7 @@ var console = {log: function() {}};
 			medInfo.append($("<h2>" + product.name + "</h2>"));
 
 			if (product.images !== undefined) {
-				var images = $("<div class=\"medImages\" />")
+				var images = $("<div class=\"medImages\" />");
 				for (var i=0; i < product.images.length; i++) {
 					var imageSource = "/products/images/" + product.images[i].checksum + ".jpg";
 					var image = $("<img class=\"img-polaroid medImage pull-right\" title=\"" + product.images[i].description + "\" src=\"" + imageSource + "\" />");

@@ -176,7 +176,7 @@ app.get('/search', function(req,res){
 
 		async.parallel({
 			titlesearch: function(callback) {
-				request('http://127.0.0.1:' + networkPort + '/titlesearch?search=' + encodeURIComponent(terms), {'json': true, 'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': false}}, function (err, response, body) {
+				request('http://127.0.0.1:' + networkPort + '/titlesearch?search=' + encodeURIComponent(terms), {'json': true}, function (err, response, body) {
 
 					if (err) {
 						callback(err)
@@ -186,7 +186,7 @@ app.get('/search', function(req,res){
 				});
 			},
 			contentsearch: function(callback) {
-				request('http://127.0.0.1:' + networkPort + '/contentsearch?search=' + encodeURIComponent(terms), {'json': true, 'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': false}}, function (err, response, body) {
+				request('http://127.0.0.1:' + networkPort + '/contentsearch?search=' + encodeURIComponent(terms), {'json': true}, function (err, response, body) {
 
 					if (err) {
 						callback(err)
@@ -196,7 +196,7 @@ app.get('/search', function(req,res){
 				});
 			},
 			medicinesearch: function(callback) {
-				request('http://127.0.0.1:' + networkPort + '/medicinesearch?search=' + encodeURIComponent(terms), {'json': true, 'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': false}}, function (err, response, body) {
+				request('http://127.0.0.1:' + networkPort + '/medicinesearch?search=' + encodeURIComponent(terms), {'json': true}, function (err, response, body) {
 
 					if (err) {
 						callback(err)
@@ -247,7 +247,7 @@ app.get('/search', function(req,res){
 
 		async.parallel({
 			titlesearch: function(callback) {
-				request('http://127.0.0.1:' + networkPort + '/titlesearch?search=' + encodeURIComponent(terms), {'json': true, 'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': false}}, function (err, response, body) {
+				request('http://127.0.0.1:' + networkPort + '/titlesearch?search=' + encodeURIComponent(terms), {'json': true}, function (err, response, body) {
 
 					if (err) {
 						callback(err)
@@ -257,7 +257,7 @@ app.get('/search', function(req,res){
 				});
 			},
 			contentsearch: function(callback) {
-				request('http://127.0.0.1:' + networkPort + '/contentsearch?search=' + encodeURIComponent(terms), {'json': true, 'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': false}}, function (err, response, body) {
+				request('http://127.0.0.1:' + networkPort + '/contentsearch?search=' + encodeURIComponent(terms), {'json': true}, function (err, response, body) {
 
 					if (err) {
 						callback(err)
@@ -267,7 +267,7 @@ app.get('/search', function(req,res){
 				});
 			},
 			medicinesearch: function(callback) {
-				request('http://127.0.0.1:' + networkPort + '/medicinesearch?search=' + encodeURIComponent(terms), {'json': true, 'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': false}}, function (err, response, body) {
+				request('http://127.0.0.1:' + networkPort + '/medicinesearch?search=' + encodeURIComponent(terms), {'json': true}, function (err, response, body) {
 
 					if (err) {
 						callback(err)
@@ -932,10 +932,10 @@ app.get('/medicinesearch', function(req,res){
 
 			//Create queue
 			var searchQueue = async.queue(function (task, callback) {
-				request("http://127.0.0.1:" + networkPort + "/medicinesearch?search=" + encodeURIComponent(task.term) + "&limit=off", {'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': true}}, function (error, response, body) {
+				request("http://127.0.0.1:" + networkPort + "/medicinesearch?search=" + encodeURIComponent(task.term) + "&limit=off", {'json': true}, function (error, response, body) {
 					var requestResult = [];
 					if (!error && response.statusCode == 200) {
-						requestResult = JSON.parse(body);
+						requestResult = body;
 					} else if (error) {
 						console.log(error);
 					} else {
@@ -1099,10 +1099,10 @@ app.get('/titlesearch', function(req,res){
 
 				//Create queue
 				var titleQueue = async.queue(function (task, callback) {
-					request("http://127.0.0.1:" + networkPort + "/titlesearch?search=" + encodeURIComponent(task.term) + "&limit=off", {'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': true}}, function (error, response, body) {
+					request("http://127.0.0.1:" + networkPort + "/titlesearch?search=" + encodeURIComponent(task.term) + "&limit=off", {'json': true}, function (error, response, body) {
 						var requestResult = [];
 						if (!error && response.statusCode == 200) {
-							requestResult = JSON.parse(body);
+							requestResult = body;
 						} else if (error) {
 							console.log(error);
 						} else {
@@ -1258,10 +1258,10 @@ app.get('/contentsearch', function(req,res){
 
 			//Create queue
 			var contentQueue = async.queue(function (task, callback) {
-				request("http://127.0.0.1:" + networkPort + "/contentsearch?search=" + encodeURIComponent(task.term) + "&limit=off", {'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': true}}, function (error, response, body) {
+				request("http://127.0.0.1:" + networkPort + "/contentsearch?search=" + encodeURIComponent(task.term) + "&limit=off", {'json': true}, function (error, response, body) {
 					var requestResult = [];
 					if (!error && response.statusCode == 200) {
-						requestResult = JSON.parse(body);
+						requestResult = body;
 					} else if (error) {
 						console.log(error);
 					} else {
@@ -1417,10 +1417,10 @@ app.get('/boxsearch', function(req,res){
 
 			//Create queue
 			var therapyQueue = async.queue(function (task, callback) {
-				request("http://127.0.0.1:" + networkPort + "/boxsearch?search=" + encodeURIComponent(task.term) + "&limit=off", {'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': true}}, function (error, response, body) {
+				request("http://127.0.0.1:" + networkPort + "/boxsearch?search=" + encodeURIComponent(task.term) + "&limit=off", {'json': true}, function (error, response, body) {
 					var requestResult = [];
 					if (!error && response.statusCode == 200) {
-						requestResult = JSON.parse(body);
+						requestResult = body;
 					} else if (error) {
 						console.log(error);
 					} else {
@@ -1858,29 +1858,53 @@ app.get('/product/:nplId?', function(req, res) {
 		
 	var product = {noinfo: true, id: nplId};
 
-	if (nplId !== "" && nplId.length > 4) {
-		//Check if product exists
-		fs.exists(__dirname + "/../../fass/www/products/" + nplId + ".json", function(fileExists) {
-			if (fileExists) {
-				fs.readFile(__dirname + "/../../fass/www/products/" + nplId + ".json", "utf8", function(err, data) {
-					if (err) {
-						console.log(err);
+	async.parallel({
+		product: function(callback) {
+			if (nplId !== "" && nplId.length > 4) {
+				//Check if product exists
+				fs.exists(__dirname + "/../../fass/www/products/" + nplId + ".json", function(fileExists) {
+					if (fileExists) {
+						fs.readFile(__dirname + "/../../fass/www/products/" + nplId + ".json", "utf8", function(err, data) {
+							if (err) {
+								console.log(err);
+							} else {
+								product = JSON.parse(data);
+							}
+							callback(null, product);
+						});
 					} else {
-						product = JSON.parse(data);
+						//console.error("File does not exist: " + nplId + ".json");
+						callback(new Error("No product with nplId: " + nplId));
 					}
-					locals.product = product
-					res.render("product.ejs", locals);
 				});
 			} else {
-				console.log("File does not exist.")
-				locals.product = product;
-				res.render("product.ejs", locals);
+				callback(new Error("Invalid nplId: " + nplId));
 			}
-		});
-	} else {
-		locals.product = product;
-		res.render("product.ejs", locals);
-	}
+		},
+		medlist: function(callback) {
+			request("http://127.0.0.1:" + networkPort + "/medlist?id=" + nplId, {'json': true}, function (error, response, body) {
+				var requestResult = [];
+				if (!error && response.statusCode == 200) {
+					requestResult = body;
+					callback(null, requestResult)
+				} else if (error) {
+					callback(error);
+				} else {
+					console.log("Status code: " + response.statusCode);
+					callback(null, requestResult)
+				}
+			});
+		}
+	}, function(err, results) {
+		if (err) {
+			res.render('404.ejs', locals);
+		} else {
+			locals.product = results.product;
+			locals.medList = results.medlist;
+			res.render("product.ejs", locals);
+		}
+	});
+
 });
 
 /*
