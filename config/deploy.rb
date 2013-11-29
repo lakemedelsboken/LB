@@ -56,6 +56,7 @@ namespace :deploy do
         execute "cd #{shared_path}/settings && make decrypt_conf_pass PASS=#{fetch(:secretSettingsPassword)}"
 
         execute "pm2 kill"
+        execute "export NODE_ENV=production"
         execute "cd /var/www/lb/current/servers/ && pm2 start pm2_#{fetch(:stage)}.json &"
         #end
     end
