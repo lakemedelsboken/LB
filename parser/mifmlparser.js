@@ -1944,7 +1944,7 @@ var Parser = {
 							//Force facts
 							$(sourceTable).attr("forceType", "Tabell faktaruta");
 						}
-						if (!self.state.table) {
+						if (!self.state.table && !self.state.figure) {
 							//Check if already rendered
 							if (self.renderedBoxes[sourceText] === undefined) {
 								self.renderedBoxes[sourceText] = true;
@@ -2661,7 +2661,8 @@ var Parser = {
 							"h4": true,
 							"h5": true,
 							"h6": true,
-							"table": true
+							"table": true,
+							"div": true
 						};
 					
 						if (findNames[tagName] !== undefined) {
@@ -3063,7 +3064,7 @@ var Parser = {
 
 			var lastTag = self.state.tags.pop();
 			
-			if (lastTag === "tbl") {
+			if (lastTag === "tbl" || lastTag === "figure") {
 				if (self.xrefQueue.length > 0) {
 					for (var i = 0; i < self.xrefQueue.length; i++) {
 						//console.error("Render " + (i + 1));
