@@ -1954,36 +1954,188 @@ app.get('/atc', function(req, res) {
 });
 */
 
+var oldIndex = JSON.parse(fs.readFileSync(__dirname + "/previousSiteIndex.json", "utf8"));
+
+function getOldNameFromChapterPath(chapterPath) {
+
+	var foundName = undefined;
+
+	for (var i = oldIndex.length - 1; i >= 0; i--) {
+		if (oldIndex[i].chapter === chapterPath && oldIndex[i].level === 1) {
+			foundName = oldIndex[i].title;
+			break;
+		}
+	}
+	
+	return foundName;
+}
+
 /* The 404 Route (Keep this as the last route) */
 app.get('/*', function(req, res){
 	var url = req.url;
 	var query = req.query;
 
+	var tocKey = undefined;
+	var medicineName = undefined;
+	var chapter = undefined;
+	var pdf = undefined;
+	
+	
+	//Requested toc in chapter?
+	for (var key in query) {
+		if (key.indexOf("toc") === 0) {
+			tocKey = parseInt(key.replace("toc", ""));
+		}
+	}
+
 	//Requested medicine?
 	if (query["medicine"] !== null) {
-		var medicineName = query["medicine"];
-		//Perform search
+		medicineName = query["medicine"];
 	}
 	
 	//Requested chapter?
 	if (url.toLowerCase().indexOf(".html") > -1) {
+		chapter = url.toLowerCase().split(".html")[0];
+		if (chapter.indexOf("/") > -1) {
+			chapter = chapter.split("/");
+			chapter = chapter[chapter.length - 1];
+		}
 		
+		var possibleChapter = getOldNameFromChapterPath(chapter + ".html");
+		if (possibleChapter === undefined) {
+			chapter = decodeURIComponent(chapter);
+		} else {
+			chapter = possibleChapter;
+		}
 	}
 
 	//Requested pdf?
 	if (url.toLowerCase().indexOf(".pdf") > -1) {
-		
+		pdf = url.toLowerCase().split(".pdf")[0];
+		if (pdf.indexOf("/") > -1) {
+			pdf = pdf.split("/");
+			pdf = pdf[pdf.length - 1];
+		}
+		chapter = decodeURIComponent(pdf);
 	}
+
+	var foundIndex = undefined;
 	
-	//Requested toc in chapter?
-	for (var key in url) {
-		if (key.indexOf("toc") === 0) {
-			
+	if (tocKey) {
+		for (var i = oldIndex.length - 1; i >= 0; i--) {
+			if (oldIndex[i].id === tocKey) {
+				foundIndex = "\"" + oldIndex[i].title + "\"";
+				chapter = "\"" + getOldNameFromChapterPath(oldIndex[i].chapter) + "\"";
+				break;
+			}
 		}
 	}
+	
+	locals.suggestions = [];
+	locals.medicineSuggestions = [];
 
-	console.log(url);
-	console.log(query);
+	if (foundIndex && chapter) {
+		//Perform search
+		request('http://127.0.0.1:' + networkPort + '/titlesearch?search=' + encodeURIComponent(foundIndex + " " + chapter), {'json': true}, function (err, response, body) {
+			if (!err) {
+				locals.suggestions = body;
+			}
+			
+			if (locals.suggestions.length === 0) {
+				request('http://127.0.0.1:' + networkPort + '/titlesearch?search=' + encodeURIComponent(chapter), {'json': true}, function (err, response, body) {
+					if (!err) {
+						locals.suggestions = body;
 
-	res.render('404.ejs', locals);
+						locals.suggestions.sort(function(a,b){
+							var aParam = a.id;
+							var bParam = b.id;
+							
+							if (aParam.indexOf("_") > -1) {
+								aParam = aParam.split("_")[1];
+								if (aParam.length > 0) {
+									aParam = parseInt(aParam);
+								} else {
+									aParam = a.id;
+								}
+							}
+
+							if (bParam.indexOf("_") > -1) {
+								bParam = bParam.split("_")[1];
+								if (bParam.length > 0) {
+									bParam = parseInt(bParam);
+								} else {
+									bParam = b.id;
+								}
+							}
+							
+							if(aParam < bParam) return -1;
+							if(aParam > bParam) return 1;
+							return 0;
+						});
+
+					}
+						
+					res.render('404.ejs', locals);
+
+				});
+				
+			} else {
+				res.render('404.ejs', locals);
+			}
+
+		});
+	} else if (medicineName) {
+		request('http://127.0.0.1:' + networkPort + '/medicinesearch?search=' + encodeURIComponent(medicineName), {'json': true}, function (err, response, body) {
+
+			if (!err) {
+				locals.medicineSuggestions = body;
+			}
+			
+			res.render('404.ejs', locals);
+
+		});
+
+	} else if (chapter) {
+		console.log("Searching for: " + chapter);
+		request('http://127.0.0.1:' + networkPort + '/titlesearch?search=' + encodeURIComponent(chapter), {'json': true}, function (err, response, body) {
+			if (!err) {
+				locals.suggestions = body;
+
+				locals.suggestions.sort(function(a,b){
+					var aParam = a.id;
+					var bParam = b.id;
+					
+					if (aParam.indexOf("_") > -1) {
+						aParam = aParam.split("_")[1];
+						if (aParam.length > 0) {
+							aParam = parseInt(aParam);
+						} else {
+							aParam = a.id;
+						}
+					}
+
+					if (bParam.indexOf("_") > -1) {
+						bParam = bParam.split("_")[1];
+						if (bParam.length > 0) {
+							bParam = parseInt(bParam);
+						} else {
+							bParam = b.id;
+						}
+					}
+					
+					if(aParam < bParam) return -1;
+					if(aParam > bParam) return 1;
+					return 0;
+				});
+
+			}
+				
+			res.render('404.ejs', locals);
+
+		});
+		
+	} else {
+		res.render('404.ejs', locals);
+	}
+
 });
