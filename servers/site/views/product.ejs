@@ -305,14 +305,14 @@ noinfoProducts.sort(function(a,b){
 								medInfo += "</div>";
 							
 								var medHeadLines = "<div id='medHeadLines'>";
-								var sectionsHeader = "<h3 id='sectionsHeader' style='margin-left: 5px;'>Genvägar till rubriker:</h3><ul class='nav nav-pills' style='list-style-type: disc; margin: 5px; list-style-position: inside;'>";
+								var sectionsHeader = "<h3 id='sectionsHeader' style='margin-left: 5px;'>Genvägar till rubriker:</h3><ul class='nav nav-pills' style='list-style-type: none; margin: 5px; list-style-position: inside; white-space: nowrap;  font-family: Helvetica, Arial, sans;'>";
 		
 								for(headLine in product.sections) {
 									var headLineId = headLine.replace(/\s/g, "_").replace(/å/ig, "a").replace(/ä/ig, "a").replace(/ö/ig, "o").replace(/,/ig, "")
 									var content = product.sections[headLine];
 									if (content !== "" && content !== "<p></p>") {
 										medHeadLines += "<h4 id='" + headLineId + "'><a class='toggleSection' href='#sectionsHeader'><i class='icon icon-arrow-up rightIcon pull-right'></i> " + headLine + "</a></h4><div style='margin-left: 10px'>" + content + "</div>";
-										sectionsHeader += "<li style='margin: 2px; padding: 2px;'><a href='#" + headLineId + "' style='padding: 3px; margin: 0;'>" + headLine + "</a></li>";
+										sectionsHeader += "<li style='margin: 2px; padding: 2px;'><a href='#" + headLineId + "' style='padding: 3px; margin: 0;'><i class='icon icon-plus-sign-alt'></i> " + headLine + "</a></li>";
 									}
 								}
 								medHeadLines += "</div>"
@@ -330,7 +330,7 @@ noinfoProducts.sort(function(a,b){
 						<% if (medList.length > 1) { %>
 						<div class="span3">
 							<h4>Liknande preparat inom:</h4><h5><%=categoryTitle%></h5>
-							<ul style="list-style-type: none; margin-left: 0; font-size: 14px; font-family: Helvetica;">
+							<ul style="list-style-type: none; margin-left: 0; font-size: 14px; font-family: Helvetica, Arial, sans;">
 								<% for (var i=0; i < products.length; i++) {
 									var item = products[i];
 									var disabled = "";
