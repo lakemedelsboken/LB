@@ -404,7 +404,7 @@ var console = {log: function() {}};
 													if (scrollItem.length === 1) {
 														scrollItem.ScrollTo();
 													} else {
-														$("body").animate({ scrollTop: 0 }, "fast");
+														//$("body").animate({ scrollTop: 0 }, "fast");
 													}
 												}
 
@@ -431,7 +431,7 @@ var console = {log: function() {}};
 												if (scrollItem.length === 1) {
 													scrollItem.ScrollTo();
 												} else {
-													$("body").animate({ scrollTop: 0 }, "fast");
+													//$("body").animate({ scrollTop: 0 }, "fast");
 												}
 											}
 											$("#search").focus();
@@ -898,7 +898,7 @@ var console = {log: function() {}};
 				}
 			
 				if (lb.isMedicineWindowOpen) {
-					var toggles = $(".accordion-toggle");
+					var toggles = $(".toggleSection");
 
 					if (toggles.length > 0) {
 						if (lb.activeToggle === null) {
@@ -943,7 +943,7 @@ var console = {log: function() {}};
 				if (lb.isMedicineWindowOpen) {
 					event.stopPropagation();
 					event.preventDefault();
-					var toggles = $(".accordion-toggle");
+					var toggles = $(".toggleSection");
 					if (toggles.length > 0) {
 						if (lb.activeToggle === null) {
 							toggles.first().focus();

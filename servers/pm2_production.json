@@ -18,15 +18,6 @@
 		"fileOutput" : "./logs/site-out.log"
 	},
 	{
-		"name"      : "admin",
-		"script"    : "./admin/server.js",
-		"instances" : "1",
-		"min_uptime" : "100",
-		"max_restarts" : "10",
-		"fileError" : "./logs/admin-err.log",
-		"fileOutput" : "./logs/admin-out.log"
-	},
-	{
 		"name"      : "findUpdatesService",
 		"script"    : "../fass/findUpdatesService.js",
 		"instances" : "1",

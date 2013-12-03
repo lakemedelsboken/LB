@@ -1054,7 +1054,7 @@ function parseToHtmlAndSave(mifmlFilePath, append, callback) {
 		var htmlFileName = fileName.toLowerCase().replace(".mif.mifml", ".html").replace(/\+/g, "-");
 		var htmlContent = stdout.toString();
 	
-		htmlContent.replace(/\{VERSION\}/g, settings.version);
+		htmlContent = htmlContent.replace(/\{VERSION\}/g, settings.version);
 	
 		//console.error("Error:" + stderr);
 		//console.error("Out:" + htmlContent);

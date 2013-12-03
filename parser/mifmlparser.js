@@ -8,7 +8,7 @@ RegExp.quote = function(str) {
 };
 
 var argv = require("optimist")
-    .usage('Parse Läkemedelsboken 2011-2012 from FrameMaker mif > mifml to html.\nUsage: $0')
+    .usage('Parse Läkemedelsboken from FrameMaker mif > mifml to html.\nUsage: $0')
 
     .demand('i')
     .alias('i', 'inputFile')
@@ -2503,7 +2503,7 @@ var Parser = {
 					if (possibleListItem.length === 1 && possibleListItem.attr("id") && (possibleListItem.attr("id").indexOf("reference_") === 0)) {
 						//Do not remove
 					} else {
-						//console.error("Removing page number: " + self.htmlEscape(cheerio.html($element)));
+						console.error("Removing page number: " + self.htmlEscape(cheerio.html($element)));
 						$element.remove();
 					}
 				} else {
@@ -3272,7 +3272,8 @@ var Parser = {
 			"övrigt": true,
 			"kol": true,
 			"vitaminer": true,
-			"kombinationer": true
+			"kombinationer": true,
+			"skelett": true
 		};
 
 		//remove non atc types, exclude short atc-codes and short titles

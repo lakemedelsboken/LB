@@ -1592,6 +1592,14 @@ div#mask {
 		border-top: solid 1px #e3e3e3;
 		border-bottom: solid 1px #e3e3e3;
 	}
+	div.figure h4 {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.figureText {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 
 	div.popover-content div.figure {
 		margin: 10px 0px 10px 0px;
