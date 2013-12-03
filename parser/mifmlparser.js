@@ -1918,10 +1918,26 @@ var Parser = {
 						//TODO: Handle refs to figures in other chapters
 					} else {
 						//Check if already rendered
+						/*
 						if (self.renderedBoxes[sourceText] === undefined) {
 							self.renderedBoxes[sourceText] = true;
 							self.parseTag(sourceFigure);
 						}
+*/
+						if (!self.state.table && !self.state.figure) {
+							//Check if already rendered
+							if (self.renderedBoxes[sourceText] === undefined) {
+								self.renderedBoxes[sourceText] = true;
+								//console.error("Render: " + sourceText);
+								self.parseTag(sourceFigure);
+							}
+						} else {
+							if (self.renderedBoxes[sourceText] === undefined) {
+								self.xrefQueue.push(ref);
+								//console.error("Was already in table state, not rendering: " + sourceText);
+							}
+						}
+
 					}
 					
 				} else {
@@ -2503,7 +2519,7 @@ var Parser = {
 					if (possibleListItem.length === 1 && possibleListItem.attr("id") && (possibleListItem.attr("id").indexOf("reference_") === 0)) {
 						//Do not remove
 					} else {
-						console.error("Removing page number: " + self.htmlEscape(cheerio.html($element)));
+						//console.error("Removing page number: " + self.htmlEscape(cheerio.html($element)));
 						$element.remove();
 					}
 				} else {
