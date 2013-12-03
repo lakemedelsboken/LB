@@ -8,6 +8,7 @@ var path = require("path");
 var fs = require("fs");
 
 var secretSettingsPath = __dirname + "/../../settings/secretSettings.json";
+var settingsPath = __dirname + "/../../settings/settings.json";
 
 if (!fs.existsSync(secretSettingsPath)) {
 	console.error("Config file [" + secretSettingsPath + "] missing!");
@@ -27,6 +28,10 @@ if (!fs.existsSync(secretSettingsPath)) {
 })();
 
 var secretSettings = JSON.parse(fs.readFileSync(secretSettingsPath, "utf8"));
+var settings = JSON.parse(fs.readFileSync(settingsPath, "utf8"));
+
+app.version = settings.version;
+var versionator = require('versionator').create(app.version);
 
 exports.init = function(port) {
 
@@ -44,9 +49,9 @@ exports.init = function(port) {
 //		app.use(express.compress());
 //		app.use(express.bodyParser());
 //		app.use(express.methodOverride());
-		app.use(express.static(__dirname + '/static'));
+		app.use(versionator.middleware);
+		app.use(express.static(__dirname + '/static', {maxAge: 31104000000}));
 		app.use(express.static(__dirname + '/chapters'));
-//		app.use(express.staticCache());
 		app.use(express.static(__dirname + '/../../fass/www'));
 		app.use(app.router);
 //		app.use(express.errorHandler({ dumpExceptions: true, showStack: true })); 
@@ -63,7 +68,7 @@ exports.init = function(port) {
 	});
 
 	app.use(function(err, req, res, next) {
-		res.render('500.ejs', { locals: { error: err },status: 500 });	
+		res.render('500.ejs', { locals: { error: err }, status: 500});	
 	});
 
 	app.listen(port);

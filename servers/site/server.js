@@ -122,9 +122,10 @@ function clearCachedFileReads() {
 }
 
 var locals = {
-	title: 		 'Läkemedelsboken',
+	title: 'Läkemedelsboken',
 	description: '',
-	author: 	 ''
+	author: '',
+	version: settings.version
 };
 
 app.get('/sitemap.xml', function(req,res){
@@ -212,7 +213,6 @@ app.get('/search', function(req,res){
 				locals.err = "Något gick fel med sökningen, var god försök igen senare.";
 				res.render('search.ejs', locals);
 			} else {
-
 				locals.err = false;
 				locals.results = results;
 				res.render('search.ejs', locals);
@@ -221,77 +221,6 @@ app.get('/search', function(req,res){
 		
 	}
 
-});
-
-//No javascript search results
-app.get('/search', function(req,res){
-
-	var terms = req.query["search"];
-
-	if (typeof terms === "string") {
-		terms = terms.trim()
-	}
-	
-	if (terms === undefined) {
-		terms = "";
-	}
-
-	locals.terms = terms;
-	
-	if (terms === "") {
-		locals.err = false;
-		locals.results = {titlesearch: [], medicinesearch: [], contentsearch: []};
-		res.render('search.ejs', locals);
-		
-	} else {
-
-		async.parallel({
-			titlesearch: function(callback) {
-				request('http://127.0.0.1:' + networkPort + '/titlesearch?search=' + encodeURIComponent(terms), {'json': true}, function (err, response, body) {
-
-					if (err) {
-						callback(err)
-					} else {
-						callback(null, body);
-					}
-				});
-			},
-			contentsearch: function(callback) {
-				request('http://127.0.0.1:' + networkPort + '/contentsearch?search=' + encodeURIComponent(terms), {'json': true}, function (err, response, body) {
-
-					if (err) {
-						callback(err)
-					} else {
-						callback(null, body);
-					}
-				});
-			},
-			medicinesearch: function(callback) {
-				request('http://127.0.0.1:' + networkPort + '/medicinesearch?search=' + encodeURIComponent(terms), {'json': true}, function (err, response, body) {
-
-					if (err) {
-						callback(err)
-					} else {
-						callback(null, body);
-					}
-				});
-			},
-		}, function(err, results) {
-
-			if (err) {
-				console.error(err);
-				locals.err = "Något gick fel med sökningen, var god försök igen senare.";
-				res.render('search.ejs', locals);
-			} else {
-
-				locals.err = false;
-				locals.results = results;
-				res.render('search.ejs', locals);
-			}
-		});
-		
-	}
-	
 });
 
 app.get('/tree', function(req,res){
@@ -834,7 +763,7 @@ app.get('/medicinesearch', function(req,res){
 							res.json(results);
 
 							var endDate = new Date().getTime();
-							console.log(start.terms + " finished in " + (endDate - start.time) + ", fetched from finished search.");
+							//console.log(start.terms + " finished in " + (endDate - start.time) + ", fetched from finished search.");
 						} else {
 
 							fs.unlinkSync(possibleMedicineSearchFileName);
@@ -842,7 +771,7 @@ app.get('/medicinesearch', function(req,res){
 							res.json([]);
 
 							var endDate = new Date().getTime();
-							console.log(start.terms + " finished in " + (endDate - start.time) + ", generated an error when trying to parse the file " + possibleMedicineSearchFileName);
+							//console.log(start.terms + " finished in " + (endDate - start.time) + ", generated an error when trying to parse the file " + possibleMedicineSearchFileName);
 							
 						}
 
@@ -913,7 +842,7 @@ app.get('/medicinesearch', function(req,res){
 						}
 
 						var endDate = new Date().getTime();
-						console.log(start.terms + " finished in " + (endDate - start.time));
+						//console.log(start.terms + " finished in " + (endDate - start.time));
 
 						//Normal exit
 						res.json(results);
@@ -959,7 +888,7 @@ app.get('/medicinesearch', function(req,res){
 				//Async exit
 				res.json(results);
 				var endDate = new Date().getTime();
-				console.log(start.terms + " finished in " + (endDate - start.time) + ", multiple terms search.");
+				//console.log(start.terms + " finished in " + (endDate - start.time) + ", multiple terms search.");
 
 			}
 

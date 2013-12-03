@@ -247,7 +247,7 @@ app.get('/admin/frontpage/generate', function(req,res){
 	//Generate side menu
 	var index = genereateMasterSideMenu(masterIndex);
 	
-	header = header.replace()
+	//header = header.replace()
 
 	//Get blog contents
 	request({uri: 'http://127.0.0.1:' + externalNetworkPort + '/blog/index.json', json: true}, function (error, response, body) {
@@ -271,7 +271,7 @@ app.get('/admin/frontpage/generate', function(req,res){
 		
 		frontPageContent.push(footer);
 
-		var frontPagePath = __dirname + "/../site/static/index.html";
+		var frontPagePath = __dirname + "/../site/chapters/index.html";
 		frontPageContent = frontPageContent.join("\n");
 		
 		var $ = cheerio.load(frontPageContent);
@@ -284,6 +284,9 @@ app.get('/admin/frontpage/generate', function(req,res){
 
 		//Change title
 		frontPageContent = frontPageContent.replace("{TITLE}", "Läkemedelsboken")
+		frontPageContent = frontPageContent.replace(/\{VERSION\}/g, settings.version)
+		
+		//console.log(frontPageContent);
 		
 		fs.writeFileSync(frontPagePath, frontPageContent, "utf8");
 
@@ -1050,6 +1053,8 @@ function parseToHtmlAndSave(mifmlFilePath, append, callback) {
 	
 		var htmlFileName = fileName.toLowerCase().replace(".mif.mifml", ".html").replace(/\+/g, "-");
 		var htmlContent = stdout.toString();
+	
+		htmlContent.replace(/\{VERSION\}/g, settings.version);
 	
 		//console.error("Error:" + stderr);
 		//console.error("Out:" + htmlContent);
