@@ -36,8 +36,44 @@ function readOrganizations(callback) {
 	});
 }
 
+var pharmForms = {};
+
+function readPharmForms(callback) {
+
+	console.log("Reading pharmaceutical forms...");
+
+	var stream = fs.createReadStream(path.join(__dirname, '/database/pharmaceutical-form-lx.xsd'));
+	var xml = new XmlStream(stream);
+	
+	xml.preserve("xs:enumeration", true);
+	
+	xml.on('updateElement: xs:enumeration', function(item) {
+		var id = item.$.value;
+
+
+		var n = item["xs:annotation"].$children.filter(function(e) {
+			return (e.$["xml:lang"] === "sv");
+		});
+
+		var name = "";
+		
+		if (n.length > 0) {
+			name = n[0].$text
+		}
+		
+		pharmForms[id] = name;
+	});
+	
+	xml.on("end", function() {
+		console.log("Read " + Object.keys(pharmForms).length + " pharmaceutical forms.");
+		callback();
+	});
+}
+
 readOrganizations(function() {
-	readProducts();
+	readPharmForms(function() {
+		readProducts();
+	});
 });
 
 function readProducts() {
@@ -48,7 +84,11 @@ function readProducts() {
 	var xml = new XmlStream(stream);
 
 	xml.preserve("npl:names", true);
+	xml.preserve("npl:identifiers", true);
 	xml.preserve("npl:flags", true);
+	xml.preserve("npl:classifications", true);
+	xml.preserve("mpa:identifier", true);
+	
 
 	var atcItems = {};
 	var atcTree = JSON.parse(fs.readFileSync(__dirname + "/newAtcTree.json", "utf8"));
@@ -81,6 +121,7 @@ function readProducts() {
 		}
 
 		if (atcCode === undefined) {
+			//fs.writeFileSync(__dirname + "/_old/" + totalCounter + ".json", JSON.stringify(item, null, "\t"), "utf8");
 //			console.log(JSON.stringify(item, null, "\t"));
 		}
 
@@ -101,6 +142,26 @@ function readProducts() {
 			//NplId
 			var nplId = item["npl:identifiers"]["mpa:identifier"].$.v;
 
+			if (nplId === undefined) {
+				//console.log(item["npl:identifiers"].$children);
+				for (var i = 0; i < item["npl:identifiers"].$children.length; i++) {
+					var n = item["npl:identifiers"].$children[i];
+					if (n.$.type === "nplid") {
+						nplId = n.$.v;
+						break;
+					}
+				}
+
+				//console.log("");
+				//fs.writeFileSync(__dirname + "/_old/" + atcCode + ".json", JSON.stringify(item, null, "\t"), "utf8");
+				//nplId = item["npl:identifiers"]["mpa:pack-identifier"].$.v;
+			}
+			
+			if (nplId === undefined) {
+				console.log(item["npl:identifiers"].$children);
+				console.log("");
+			}
+
 			if (nplId !== undefined) {
 
 				//Name
@@ -116,15 +177,40 @@ function readProducts() {
 				//console.log(name);
 
 				//Brand
-				var brand = item["npl:organizations"]["mpa:organization"]["mpa:organization-lx"].$.v;
+				var brand = undefined;
+				
+				if (item["npl:organizations"] && item["npl:organizations"]["mpa:organization"] && item["npl:organizations"]["mpa:organization"]["mpa:organization-lx"]) {
+					brand = item["npl:organizations"]["mpa:organization"]["mpa:organization-lx"].$.v;
+				}
 				if (brand !== undefined) {
 					brand = organizations[brand];
 					//console.log(brand);
 				} else {
 					brand = "";
-					console.log("Unknown brand for " + name);
+					console.log("Unknown brand for " + name + ", " + nplId);
 				}
 
+				//Form
+				var form = undefined;
+				if (item["mpa:pharmaceutical-form-lx"]) {
+					form = item["mpa:pharmaceutical-form-lx"].$.v;
+				}
+				
+				if (form !== undefined && pharmForms[form] !== undefined) {
+					form = pharmForms[form];
+				} else {
+					form = "";
+				}
+				
+				//Strength
+				var strength = undefined;
+				if (item["ind:strength-text"] && item["ind:strength-text"]["ind:v"]) {
+					strength = item["ind:strength-text"]["ind:v"];
+				} else {
+					strength = "";
+				}
+				var description = (form + " " + strength).trim();
+				
 				//Check if product exists in fass listings
 				if (existingNplIds[nplId] === undefined) {
 
@@ -152,7 +238,7 @@ function readProducts() {
 						product.name = name;
 						update = true;
 					}
-					if (product.brand === undefined || product.brand === "") {
+					if (product.brand === undefined || product.brand === "" && brand !== undefined && brand !== "") {
 						product.brand = brand;
 						update = true;
 					}
@@ -160,12 +246,21 @@ function readProducts() {
 						product.atcCode = atcCode;
 						update = true;
 					}
+
+					if (product.description === undefined || product.description === "" || product.description === "Saknar förskrivarinformation") {
+						if (description !== "") {
+							product.description = description;
+							update = true;
+						}
+					}
+					/*
 					if (product.noinfo !== undefined && product.noinfo === true && product.description !== "Saknar förskrivarinformation") {
 						product.description = "Saknar förskrivarinformation";
 						update = true;
 					}
+					*/
 					if (update) {
-						console.log("Adding basic information to: " + nplId + " " + product.name + ", " + product.brand);
+						console.log("Adding basic information to: " + nplId + " " + product.name + ", " + product.brand + ", " + product.description);
 						fs.writeFileSync(__dirname + "/../fass/www/products/" + nplId + ".json", JSON.stringify(product, null, "\t"), "utf8");
 					}
 				}
@@ -178,7 +273,8 @@ function readProducts() {
 					"brand": brand,
 					"atcCode": atcCode,
 					"spcLink": spcLink,
-					"available": available
+					"available": available,
+					"description": description
 				}
 
 				fs.writeFileSync(__dirname + "/products/" + nplId + ".json", JSON.stringify(product, null, "\t"), "utf8");

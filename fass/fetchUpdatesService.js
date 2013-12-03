@@ -175,7 +175,7 @@ function getNoInfo(nplId) {
 	if (fs.existsSync(__dirname + "/../npl/products/" + nplId + ".json")) {
 		var nplProduct = JSON.parse(fs.readFileSync(__dirname + "/../npl/products/" + nplId + ".json", "utf8"));
 		noinfo.name = nplProduct.name;
-		noinfo.description = "Saknar förskrivarinformation";
+		noinfo.description = nplProduct.description;
 		noinfo.atcCode = nplProduct.atcCode;
 		noinfo.brand = nplProduct.brand;
 	}

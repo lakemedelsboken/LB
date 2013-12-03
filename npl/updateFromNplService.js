@@ -30,7 +30,11 @@ function run(cmd, callback) {
 
 	handle.on('close', function (code) {
 		console.log("* " + cmd + ' finished with code: ' + code);
-		callback();
+		if (code !== 0) {
+			callback(new Error("Something went wrong."));
+		} else {
+			callback();
+		}
 	});	
 }
 
@@ -55,7 +59,7 @@ function updateFromNpl() {
 
 			handle.on('close', function (code) {
 				console.log("* Finished fetching xml");
-				callback();
+				callback(null);
 			});	
 
 //			run(__dirname + "/fetch.js", function() {
@@ -64,14 +68,14 @@ function updateFromNpl() {
 		},
 		//buildATCTree
 		function(callback){
-			run(__dirname + "/buildATCTree.js", function() {
-				callback(null);
+			run(__dirname + "/buildATCTree.js", function(err) {
+				callback(err);
 			});	
 		},
 		//parseProducts
 		function(callback){
-			run(__dirname + "/parseProducts.js", function() {
-				callback(null);
+			run(__dirname + "/parseProducts.js", function(err) {
+				callback(err);
 			});	
 		},
 		//Wait, check queue of foundUpdates.json
@@ -81,21 +85,25 @@ function updateFromNpl() {
 		},
 		//addProductsToATCTree
 		function(callback){
-			run(__dirname + "/addProductsToATCTree.js", function() {
-				callback(null);
+			run(__dirname + "/addProductsToATCTree.js", function(err) {
+				callback(err);
 			});	
 		},
 		//replaceATCTree
 		function(callback){
-			run(__dirname + "/replaceATCTree.js", function() {
-				callback(null);
+			run(__dirname + "/replaceATCTree.js", function(err) {
+				callback(err);
 			});	
 		},
 		
 		],
 		// optional callback
 		function(err, results){
-			console.log("Done with updating from NPL.")
+			if (err) {
+				console.log(err);
+			} else {
+				console.log("Done with updating from NPL.")
+			}
 		});
 }
 
