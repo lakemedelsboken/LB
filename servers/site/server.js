@@ -1901,6 +1901,9 @@ function getOldNameFromChapterPath(chapterPath) {
 
 /* The 404 Route (Keep this as the last route) */
 app.get('/*', function(req, res){
+
+	res.status(400);
+
 	var url = req.url;
 	var query = req.query;
 
