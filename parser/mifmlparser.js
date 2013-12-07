@@ -1693,6 +1693,7 @@ var Parser = {
 										self.html.push("</span>");
 										self.state.fontFormat = null;
 									} else if (value !== null && value !== undefined && fontFormatHandlers[value] !== undefined) {
+
 										//Clear old formatting
 										if (self.state.fontFormat !== null) {
 											self.html.push("</span>");
@@ -1700,6 +1701,11 @@ var Parser = {
 										}
 										self.html.push(fontFormatHandlers[value]);
 										self.state.fontFormat = value;
+										
+										if (value === "Symbol") {
+											//Make sure symbols are not removed
+											return false;
+										}
 									} else {
 										//Clear old formatting
 										if (self.state.markerFormat !== null) {
