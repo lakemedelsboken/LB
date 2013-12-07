@@ -1529,10 +1529,11 @@ var Parser = {
 								self.html.push(self.symbolsToUnicode($child.text()));
 							} else {
 								//Inject links to generica names
-								var modifiedText = self.injectGenericas(self.tagHandlers["paraline"].lineRest + self.htmlEscape($child.text()));
+								//var modifiedText = self.injectGenericas(self.tagHandlers["paraline"].lineRest + self.htmlEscape($child.text()));
+								var modifiedText = self.tagHandlers["paraline"].lineRest + self.htmlEscape($child.text());
 
 								//Inject table, facts and figure links in text, handle "Faktaruta 1-5" etc...
-								modifiedText = self.injectBoxLinks(modifiedText);
+								//modifiedText = self.injectBoxLinks(modifiedText);
 
 								self.html.push(modifiedText);
 
@@ -2898,6 +2899,9 @@ var Parser = {
 			
 			resultHtml = cheerio.html();
 
+			resultHtml = require(__dirname + "/postprocessors/genericas.js").process(resultHtml);
+			resultHtml = require(__dirname + "/postprocessors/boxlinks.js").process(resultHtml);
+
 			callback(null, resultHtml, chapterTitle);
 			
 		});
@@ -3159,6 +3163,7 @@ var Parser = {
 			.replace(/>/g, '&gt;');
 
 	},
+/*	
 	injectBoxLinks: function(text) {
 
 		function extractNumbers(number) {
@@ -3204,7 +3209,7 @@ var Parser = {
 		return text;
 		
 	},
-	foundGenericas: {},
+
 	injectGenericas: function(text) {
 		var self = this;
 		
@@ -3242,8 +3247,6 @@ var Parser = {
 					//console.error("Match: \"" + match + "\"");
 					var matchedWord = match.substr(1, match.length - 2);
 					
-					//Save to foundGenericas
-					self.foundGenericas[matchedWord] = saveGenericaTitles;
 					
 					if (genericaTitles.length > 0) {
 						var result = match.substr(0, 1) + "<a href=\"" + href + "\" data-atcid=\"" + genericaATC.join(",") + "\" data-atctitles=\"" + genericaTitles.join("##") + "\" class=\"inlineGenerica text\">" + matchedWord + "</a>" + match.substr(match.length - 1);
@@ -3284,6 +3287,8 @@ var Parser = {
 		
 		return returnItem;
 	},
+*/
+/*	
 	loadGenericas: function() {
 		var self = this;
 		
@@ -3342,6 +3347,7 @@ var Parser = {
 			if (distilledGenericas[genericas[i].title.toLowerCase()] === undefined) {
 				distilledGenericas[genericas[i].title.toLowerCase()] = [genericas[i]];
 			} else {
+*/
 				/*
 				//TODO: Fix: Check if current generica is a descendant of an already added generica
 				var alreadyAdded = false;
@@ -3356,6 +3362,7 @@ var Parser = {
 					distilledGenericas[genericas[i].title.toLowerCase()].push(genericas[i]);
 				}
 				*/
+/*
 				distilledGenericas[genericas[i].title.toLowerCase()].push(genericas[i]);
 			}
 		}
@@ -3364,9 +3371,11 @@ var Parser = {
 
 		return;
 	},
+*/
 	isNumber:  function(o) {
 	  return ! isNaN (o-0) && o !== null && o !== "" && o !== false;
-	},
+	}
+/*
 	findProductNamesFromATCCode: function(atcCode) {
 		var result = [];
 		var self = this;
@@ -3398,7 +3407,7 @@ var Parser = {
 	
 		return result;
 	}
-	
+*/	
 	
 }
 
@@ -3444,7 +3453,6 @@ Parser.parseFile(sourceFilePath, function(err, result, title) {
 //	console.error(unhandledTags);
 //	console.error("Handled tags:");
 //	console.error(handledTags);
-	//console.error(Parser.foundGenericas);
 
 	console.error("\nDONE")
 	console.error("**************************************");
