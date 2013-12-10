@@ -6,10 +6,13 @@ var path = require("path");
 var cheerio = require("cheerio");
 var crypto = require("crypto");
 var request = require("request");
+var nodemailer = require("nodemailer");
 
 var baseUrl = "http://www.fass.se/LIF/FassDocumentWebService?WSDL";
 
 var secretSettingsPath = __dirname + "/../settings/secretSettings.json";
+var errors = {};
+
 
 if (!fs.existsSync(secretSettingsPath)) {
 	console.error("Config file [" + secretSettingsPath + "] missing!");
@@ -128,6 +131,22 @@ function check(updates) {
 			if (err) {
 				console.log("Error with id: " + id);
 				console.log(err);
+				
+				if (errors[id] !== undefined) {
+					if (errors[id] >= 5) {
+						//Remove and mail
+						removeFromFoundUpdates(id);
+						sendMail("Unable to update: " + id, "The server has tried multiple times to update nplId: \"" + id + "\"\n\nThe item has been removed from the queue.");
+						errors[id] = undefined;
+					} else {
+						errors[id]++;
+						moveToLast(id);
+					}
+				} else {
+					errors[id] = 1;
+					moveToLast(id);
+				}
+				
 				//TODO: Move id to last of queue (first in array)
 				//Implement retries, max 5 for one id, then save to error log and mail
 			} else {
@@ -152,6 +171,24 @@ function check(updates) {
 
 	}
 
+}
+
+function moveToLast(nplId) {
+
+	var foundUpdates = JSON.parse(fs.readFileSync(__dirname + "/shared/foundUpdates.json", "utf8"));
+
+	for (var i = foundUpdates.length - 1; i >= 1; i--) {
+		if (foundUpdates[i] === nplId && i > 0) {
+			//console.log("Removing " + nplId);
+			foundUpdates.splice(i, 1);
+		}
+	}
+
+	//Insert as second item
+	foundUpdates.splice(1, 0, nplId);
+
+	fs.writeFileSync(__dirname + "/shared/foundUpdates.json", JSON.stringify(foundUpdates, null, "\t"), "utf8");
+	
 }
 
 function removeFromFoundUpdates(nplId) {
@@ -588,6 +625,22 @@ function _getMpaSPC(name, nplId, callback) {
 
 	console.log("Searching MPA for: " + name);
 
+	var spcLink = "";
+	var isCentral = true;
+	var error = null;
+
+	if (fs.existsSync(__dirname + "/../npl/products/" + nplId + ".json")) {
+		var product = JSON.parse(fs.readFileSync(__dirname + "/../npl/products/" + nplId + ".json", "utf8"));
+		if (product.spcLink !== undefined &&  product.spcLink !== "") {
+			spcLink = product.spcLink;
+			isCentral = false;
+			console.log("Found link: " + spcLink);
+		}
+	}
+	callback(error, {isCentral: isCentral, spcLink: spcLink});
+
+/*	
+
 	request("http://www.lakemedelsverket.se/LMF/Lakemedelsinformation/?nplid=" + nplId + "&type=product", function (err, response, body) {
 
 		var spcLink = "";
@@ -619,6 +672,8 @@ function _getMpaSPC(name, nplId, callback) {
 		callback(error, {isCentral: isCentral, spcLink: spcLink});
 		
 	});
+	
+*/
 }
 
 //var finishedCentralSPCs = {};
@@ -639,7 +694,7 @@ function _getCentralSPC(name, nplId, callback) {
 	}
 	*/
 	//Get search results
-	console.log("Searching EMEA for: " + searchName);
+	console.log("Searching EMA for: " + searchName);
 	request("http://www.ema.europa.eu/ema/index.jsp?curl=pages%2Fmedicines%2Flanding%2Fepar_search.jsp&mid=WC0b01ac058001d125&searchTab=searchByKey&alreadyLoaded=true&isNewQuery=true&status=Authorised&status=Withdrawn&status=Suspended&status=Refused&keyword=" + encodeURIComponent(searchName) + "&keywordSearch=Submit&searchType=name&taxonomyPath=&treeNumber=&searchGenericType=generics", function (err, response, body) {
 		if (!err && response.statusCode == 200) {
 			var $ = cheerio.load(body);
@@ -697,4 +752,34 @@ function _getCentralSPC(name, nplId, callback) {
 			callback(new Error("Error fetching from EMEA:" + searchName));
 		}
 	});
+}
+
+function sendMail(subject, text) {
+
+	var plainMail = text;
+
+	var smtpTransport = nodemailer.createTransport("SMTP",{
+		service: "Gmail",
+		auth: {
+			user: secretSettings.fass.gmailAddress,
+			pass: secretSettings.fass.gmailPassword
+		}
+	});
+
+	var mailOptions = {
+		from: "Läkemedelsboken <" + secretSettings.fass.gmailAddress + ">", 
+		to: secretSettings.fass.dailyReportRecipients, 
+		subject: "[BOT] " + subject, 
+		text: plainMail
+	}
+
+	smtpTransport.sendMail(mailOptions, function(error, response){
+		if (error){
+			console.log(error);
+		} else {
+			console.log("Message sent: " + response.message);
+		}
+
+		smtpTransport.close();
+	});	
 }
