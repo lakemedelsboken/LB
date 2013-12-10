@@ -87,6 +87,12 @@ function initFileWatchers() {
 		}
 	});
 
+	searchWatcher.on('unlink', function(path) {
+		if (path.indexOf(".json.gz") > -1) {
+			finishedSearches[path] = undefined;
+		}
+	});
+
 	chaptersWatcher.on('error', function(error) {console.error('Error happened on chapters file watch', error);})
 	console.log("Watching " + chaptersPath + " for changes...");
 
@@ -739,9 +745,9 @@ app.get('/medicinesearch', function(req,res){
 
 		fs.readFile(possibleMedicineSearchFileName, function(err, data) {
 			if (err) {
-				fs.unlinkSync(possibleMedicineSearchFileName);
 				res.json([]);
-				console.error("err");
+				console.error(err);
+				fs.unlink(possibleMedicineSearchFileName, function(err) {});
 			} else {
 				zlib.unzip(data, function(err, buffer) {
 					if (!err) {
@@ -762,22 +768,22 @@ app.get('/medicinesearch', function(req,res){
 							//Exit 1
 							res.json(results);
 
-							var endDate = new Date().getTime();
+							//var endDate = new Date().getTime();
 							//console.log(start.terms + " finished in " + (endDate - start.time) + ", fetched from finished search.");
 						} else {
 
-							fs.unlinkSync(possibleMedicineSearchFileName);
-
 							res.json([]);
+							fs.unlink(possibleMedicineSearchFileName, function(err) {});
 
-							var endDate = new Date().getTime();
+							//var endDate = new Date().getTime();
 							//console.log(start.terms + " finished in " + (endDate - start.time) + ", generated an error when trying to parse the file " + possibleMedicineSearchFileName);
 							
 						}
 
 					} else {
 						res.json([]);
-						console.error("err");
+						console.error(err);
+						fs.unlink(possibleSearchFileName, function(err) {});
 					}
 				});
 			}
@@ -948,23 +954,45 @@ app.get('/titlesearch', function(req,res){
 //	fs.exists(possibleSearchFileName, function(fileExists) {
 		if (finishedSearches[possibleSearchFileName] !== undefined) {
 			fs.readFile(possibleSearchFileName, function(err, data) {
-				zlib.unzip(data, function(err, buffer) {
-					if (!err) {
+				
+				if (err) {
+					res.json([]);
+					console.error(err);
+					fs.unlink(possibleSearchFileName, function(err) {});
+				} else {
+					zlib.unzip(data, function(err, buffer) {
+						if (!err) {
 						
-						results = JSON.parse(buffer.toString());
+							var errorParsingJSON = false;
+							try {
+								results = JSON.parse(buffer.toString());
+							} catch (err) {
+								console.error(err);
+								errorParsingJSON = true;
+							}
 
-						if (limit && results.length > resultsLimit) {
-							results.length = resultsLimit;
+
+							if (!errorParsingJSON) {
+
+								if (limit && results.length > resultsLimit) {
+									results.length = resultsLimit;
+								}
+
+								//Exit 1
+								res.json(results);
+							} else {
+								res.json([]);
+								fs.unlink(possibleSearchFileName, function(err) {});
+							}
+
+						} else {
+							res.json([]);
+							console.error(err);
+							fs.unlink(possibleSearchFileName, function(err) {});
 						}
+					});
+				}
 
-						//Exit 1
-						res.json(results);
-
-					} else {
-						res.json([]);
-						console.error(err);
-					}
-				});
 			});
 		} else {
 
@@ -1110,22 +1138,43 @@ app.get('/contentsearch', function(req,res){
 	if (finishedSearches[possibleSearchFileName] !== undefined) {
 
 		fs.readFile(possibleSearchFileName, function(err, data) {
-			zlib.unzip(data, function(err, buffer) {
-				if (!err) {
-					results = JSON.parse(buffer.toString());
+			if (err) {
+				res.json([]);
+				console.error(err);
+				fs.unlink(possibleSearchFileName, function(err) {});
+			} else {
 
-					if (limit && results.length > resultsLimit) {
-						results.length = resultsLimit;
+				zlib.unzip(data, function(err, buffer) {
+					if (!err) {
+						var errorParsingJSON = false;
+						try {
+							results = JSON.parse(buffer.toString());
+						} catch (err) {
+							console.error(err);
+							errorParsingJSON = true;
+						}
+
+
+						if (!errorParsingJSON) {
+
+							if (limit && results.length > resultsLimit) {
+								results.length = resultsLimit;
+							}
+
+							//Exit 1
+							res.json(results);
+						} else {
+							res.json([]);
+							fs.unlink(possibleSearchFileName, function(err) {});
+						}
+
+					} else {
+						res.json([]);
+						console.error(err);
+						fs.unlink(possibleSearchFileName, function(err) {});
 					}
-
-					//Exit 1
-					res.json(results);
-
-				} else {
-					res.json([]);
-					console.error("err");
-				}
-			});
+				});
+			}
 		});
 	} else {
 
@@ -1269,18 +1318,35 @@ app.get('/boxsearch', function(req,res){
 		fs.readFile(possibleSearchFileName, function(err, data) {
 			zlib.unzip(data, function(err, buffer) {
 				if (!err) {
-					results = JSON.parse(buffer.toString());
-
-					if (limit && results.length > resultsLimit) {
-						results.length = resultsLimit;
+					var errorParsingJSON = false;
+					try {
+						results = JSON.parse(buffer.toString());
+					} catch (err) {
+						console.error(err);
+						errorParsingJSON = true;
 					}
 
-					//Exit 1
-					res.json(results);
+
+					if (!errorParsingJSON) {
+
+						if (limit && results.length > resultsLimit) {
+							results.length = resultsLimit;
+						}
+
+						//Exit 1
+						res.json(results);
+					} else {
+						res.json([]);
+						fs.unlink(possibleSearchFileName, function(err) {
+							
+						});
+						
+					}
 
 				} else {
 					res.json([]);
 					console.error("err");
+					fs.unlink(possibleSearchFileName, function(err) {});
 				}
 			});
 		});
