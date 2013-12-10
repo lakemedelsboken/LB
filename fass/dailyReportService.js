@@ -1,6 +1,18 @@
 var fs = require("fs");
 var nodemailer = require("nodemailer");
 
+var cronJob = require('cron').CronJob;
+
+var job = new cronJob({
+	cronTime: '00 00 05 * * *',
+	onTick: function() {
+		// Runs every day at 05:00:00 AM.
+		var recentUpdates = getRecentlyModifiedFiles(24);
+		sendMail(recentUpdates);	
+	},
+	start: true
+});
+
 if (!fs.existsSync("../settings/secretSettings.json")) {
 	console.error("Config file [../settings/secretSettings.json] missing!");
 	console.error("Did you forget to run `make decrypt_conf`?");
@@ -20,17 +32,10 @@ if (!fs.existsSync("../settings/secretSettings.json")) {
 
 var secretSettings = JSON.parse(fs.readFileSync("../settings/secretSettings.json", "utf8"));
 
-var updateInterval = 1000 * 60 * 60 * 24;
-setInterval(function() {
-
-	var recentUpdates = getRecentlyModifiedFiles(24);
-	sendMail(recentUpdates);	
-
-}, updateInterval);
 
 //Also run at start
-var recentUpdates = getRecentlyModifiedFiles(24);
-sendMail(recentUpdates);
+//var recentUpdates = getRecentlyModifiedFiles(24);
+//sendMail(recentUpdates);
 
 function getRecentlyModifiedFiles(hours) {
 
