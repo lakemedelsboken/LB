@@ -72,6 +72,12 @@ function updateFromNpl() {
 				callback(err);
 			});	
 		},
+		//parseDocumentLinks
+		function(callback){
+			run(__dirname + "/parseDocumentLinks.js", function(err) {
+				callback(err);
+			});	
+		},
 		//parseProducts
 		function(callback){
 			run(__dirname + "/parseProducts.js", function(err) {

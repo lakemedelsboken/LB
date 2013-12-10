@@ -1,8 +1,6 @@
 var fs = require("fs");
 var XmlStream = require("xml-stream");
 var path = require("path");
-var request = require("request");
-var cheerio = require("cheerio");
 
 var existingNplIds = {};
 
@@ -210,6 +208,15 @@ function readProducts() {
 					strength = "";
 				}
 				var description = (form + " " + strength).trim();
+
+				//SPC Link
+				var spcLink = undefined;
+				if (fs.existsSync(__dirname + "/products/" + nplId + ".json")) {
+					var product = JSON.parse(fs.readFileSync(__dirname + "/products/" + nplId + ".json", "utf8"));
+					if (product.spcLink !== undefined && product.spcLink !== "") {
+						spcLink = product.spcLink;
+					}
+				}
 				
 				//Check if product exists in fass listings
 				if (existingNplIds[nplId] === undefined) {
@@ -247,6 +254,11 @@ function readProducts() {
 						update = true;
 					}
 
+					if (spcLink !== undefined && spcLink !== "" && product.spcLink !== spcLink) {
+						product.spcLink = spcLink;
+						update = true;
+					}
+
 					if (product.description === undefined || product.description === "" || product.description === "Saknar förskrivarinformation") {
 						if (description !== "") {
 							product.description = description;
@@ -265,7 +277,6 @@ function readProducts() {
 					}
 				}
 
-				var spcLink = "";
 
 				var product = {
 					"id": nplId,
