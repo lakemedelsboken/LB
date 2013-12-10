@@ -81,68 +81,6 @@ var Parser = {
 	initFormatHandlers: function() {
 		var self = this;
 
-/*		
-		self.formatHandlers["a"] = {
-			begin: function(tag, indentation) {
-				var $tag = $(tag);
-				var href = $tag.attr("href");
-				var html = [];
-				html.push(indentation + "<a");
-				var attributes = {};
-				$.each($tag.get(0).attributes, function(i, attrib){
-					var name = attrib.name.toLowerCase();
-					var value = attrib.value.toLowerCase();
-					attributes[name] = value;
-					//html.push("\n" + name.toLowerCase() + ": " + value.toLowerCase());
-				});
-
-				if (href !== "") {
-				
-					if (href.indexOf(self.fileName) > -1) {
-						//Found link to self, keep the "#[nr]" part
-						href = href.replace(self.fileName, "");
-					}
-				
-					if (href.indexOf("#id(") > -1) {
-						//Reference to an id
-						var tempHref = href.split("#");
-						href = tempHref[0];
-						tempHref = tempHref[1].substr(3);
-						href += "#" + tempHref.replace(")", "").toLowerCase();
-					}
-				
-					html.push(" href=\"" + href + "\"");
-				
-				}
-				if (attributes.hasOwnProperty("class")) {
-					if (attributes["class"] === "url") {
-						html.push(" class=\"urlLink\" target=\"_new\"");
-					} else if (attributes["class"] === "footnote") {
-						html.push(" class=\"footnote\"");
-					} else if (attributes["class"] === "hypertext") {
-						html.push(" class=\"inlineReference\"");
-					}
-				}
-
-				if (attributes.hasOwnProperty("id")) {
-					html.push(" id=\"" + attributes["id"] + "\"");
-				}
-
-				html.push(">");
-				$.each($tag.get(0).attributes, function(i, attrib){
-					var name = attrib.name;
-					var value = attrib.value;
-					//html.push("\n" + name.toLowerCase() + ": " + value.toLowerCase());
-				});
-			
-				return html.join("");
-			},
-			end: function(tag, indentation) {
-				return "</a>";
-			}
-		};
-*/
-
 		self.formatHandlers["avsnittsrub"] = {
 			begin: function(tag, indentation) {
 				return indentation + "<h1 class=\"remove\" id=\"" + self.chapterIdentifier + "_" + (++self.tocId) + "\">";
@@ -711,26 +649,6 @@ var Parser = {
 			}
 		};
 
-		/*
-		self.formatHandlers["footnote"] = {
-			begin: function(tag, indentation) {
-				return indentation + "<ol class=\"footnotes\">";
-			},
-			end: function(tag, indentation) {
-				return "</ol>";
-			}
-		};
-
-		self.formatHandlers["subfootnote"] = {
-			begin: function(tag, indentation) {
-				self.counters.footnoteItems++;
-				return indentation + "<li class=\"footnote\" id=\"footnote_" + self.counters.footnoteItems + "\">";
-			},
-			end: function(tag, indentation) {
-				return "</li>";
-			}
-		};
-		*/
 		self.formatHandlers["tk-tecken-kursiv"] = {
 			begin: function(tag, indentation) {
 				return indentation + "<em>";
@@ -1528,13 +1446,7 @@ var Parser = {
 							if (self.state.fontFormat === "Symbol") {
 								self.html.push(self.symbolsToUnicode($child.text()));
 							} else {
-								//Inject links to generica names
-								//var modifiedText = self.injectGenericas(self.tagHandlers["paraline"].lineRest + self.htmlEscape($child.text()));
 								var modifiedText = self.tagHandlers["paraline"].lineRest + self.htmlEscape($child.text());
-
-								//Inject table, facts and figure links in text, handle "Faktaruta 1-5" etc...
-								//modifiedText = self.injectBoxLinks(modifiedText);
-
 								self.html.push(modifiedText);
 
 								/*
@@ -1757,13 +1669,7 @@ var Parser = {
 											indexId = indexText.split(":")[0];
 										}
 
-										self.html.push("<a class=\"index\" id=\"" + indexId + "\"></a>");
-
-										//TODO: Maybe add name?
-										//self.html.push("<a class=\"index\" id=\"" + indexId + "\"" + ((indexName !== "") ? " name=\"" + indexName + "\"" : "") + "></a>");
-
-										//self.html.push("<a class=\"index\" id=\"" + indexId + "\" data-index=\"" + indexText + "\"" + ((indexName !== "") ? " name=\"" + indexName + "\"" : "") + "></a>");
-										
+										self.html.push("<a class=\"index\" id=\"" + indexId + "\"></a>");										
 										
 									} else if (value === "Author") {
 										//TODO: Save to author db
@@ -1984,51 +1890,6 @@ var Parser = {
 
 				}
 				break;
-//			case "ORef":
-//				var sourceText = ref.children().filter(function(index, element) {return (element.name === "XRefSrcText");}).attr("value").split(":");
-//				var sourceFile = ref.children().filter(function(index, element) {return (element.name === "XRefSrcFile");}).attr("value");
-//
-//				sourceText = sourceText[0] + ":" + sourceText[1] + ":";
-//				//console.error("Looking for 2: " + sourceText);
-//				//var source = $('mtext[value^="' + sourceText + '"]');
-//				var source = $("MText").filter(function(index, element) {
-//					return ($(this).attr("value").indexOf(sourceText) > -1);
-//				});
-//				//Figure or table
-//				if (sourceText.indexOf("FigurNr:") > -1) {
-//					var sourceFigure = $(source).parents("TextFlow").eq(0);
-//					sourceFigure.name = "figure";
-//
-//					//var figureNumber = ref.find("XRefSrcText").attr("value").split(":")[2].split(".")[0].replace(" Figur ", "");
-//					//console.error("Parsing figure: " + figureNumber);
-//
-//					if (sourceFigure.length === 0) {
-//						//TODO: Handle refs to figures in other chapters
-//					} else {
-//						self.parseTag(sourceFigure);
-//					}
-//					
-//				} else {
-//
-//					//console.error("Found2: ", source);
-//
-//					var sourceTable = $(source).parents("Tbl").eq(0);
-//
-//					if (sourceTable.length === 0) {
-//						//TODO: Handle refs to tables in other chapters
-//					} else {
-//						sourceTable.name = "tbl";
-//						if (sourceText.indexOf("FaktaRub") > -1) {
-//							//Force facts
-//							$(sourceTable).attr("forceType", "Tabell faktaruta");
-//						}
-//						if (!self.state.table) {
-//							self.parseTag(sourceTable);
-//						}
-//					}
-//
-//				}
-//				break;
 			case "Page":
 				var sourceText = $ref.children().filter(function(index, element) {return (element.name.toLowerCase() === "xrefsrctext");}).attr("value");
 				var sourceFile = $ref.children().filter(function(index, element) {return (element.name.toLowerCase() === "xrefsrcfile");}).attr("value");
@@ -2185,126 +2046,13 @@ var Parser = {
 			xmlData = xmlData.replace("</MIFFile>", "</body></html>");
 			xmlData = xmlData.replace("<MIFFile", "<html><body");
 
-			/*
-			var replaceTags = {
-				"Författare": "Author",
-				"Bröd": "Bread",
-				"BrödIn": "BreadIn",
-				"ÄndringNyText": "ChangeNewText",
-				"Footnote": "subFootNote"
-			};
-
-			for (oldTag in replaceTags) {
-				while (xmlData.indexOf("<" + oldTag + ">") > -1) {
-					xmlData = xmlData.replace("<" + oldTag + ">", "<" + replaceTags[oldTag] + ">");
-				}
-				while (xmlData.indexOf("</" + oldTag + ">") > -1) {
-					xmlData = xmlData.replace("</" + oldTag + ">", "</" + replaceTags[oldTag] + ">");
-				}
-			}
-			*/
-			
-			//console.error("\nInitializing DOM...")
-			//var jsdom = require('jsdom');
-			//console.error("Finished initializing DOM.\n")
-
-//			console.time("DOMInstance");
-			//console.error("Creating DOM instance...")
-			//var domInstance = jsdom.jsdom(xmlData);
-			//console.error("Finished creating DOM instance.\n")
-//			console.timeEnd("DOMInstance");
-
-			//console.error("Creating DOM window...")
-			//var window = domInstance.createWindow();
-			//console.error("Finished creating DOM window.\n")
-
 			//console.error("Creating Cheerio instance...")
 			$ = require("cheerio").load(xmlData);
-			//Populate fact numbers
-
-			/*
-			var tempFactCounter = 0;
-			var tableTags = $("TblTag"); //.filter(function(index, element) { return $(element).attr("value") === "Tabell faktaruta"});
-			tableTags.each(function(index, element) {
-				if ($(element).attr("value") === "Tabell faktaruta") {
-					var table = $(element).parent();
-					var tableId = table.find("TblID").first().attr("value");
-					if (tableId !== undefined && table.text().trim() !== "" && factsNumbers[tableId] === undefined) {
-						tempFactCounter++;
-						factsNumbers[tableId] = tempFactCounter;
-					}
-				}
-			});
-			
-			console.error(factsNumbers);
-
-			var foundNumbers = {};
-			var usedNumbers = {};
-			var foundNumbersCounter = 0;
-			var textFlows = $("TextFlow");
-			textFlows.each(function(index, element) {
-				var text = $(element).text().trim();
-				if (text.length > 0 && text.length < 3 && self.isNumber(text)) { // && usedNumbers[text] === undefined
-					foundNumbersCounter++;
-					foundNumbers[text] = foundNumbersCounter;
-					usedNumbers[text] = true;
-				}
-			});
-
-			console.error(foundNumbers);
-
-			var atbls = {};
-			atblsCounter = 0;
-			$("ATbl").each(function(index, element) {
-				if ($(element).attr("value") !== undefined && factsNumbers[$(element).attr("value")] !== undefined) {
-					atblsCounter++;
-					atbls[atblsCounter] = $(element).attr("value");
-				}
-			});
-			
-			console.error(atbls);
-			*/
-			//console.error("Finished creating Cheerio instance.\n")
-
-
-			//console.error($("frame").length + " nr of frames");
-
-			/*
-			var fileNameCounter = 0;
-			$("importobjectdata").each(function(index, tag) {
-				var imageData = $(tag).attr("value").toString("binary");
-				var fileFormat = $(tag).attr("facetName");
-				//imageData = unescape(imageData).split("\n");
-				//imageData = unescape(imageData).replace(/\\n/g, "").replace(/\\r/g, "").split("\n");
-
-				imageData = imageData.map(function(line) {
-					if (line.substr(0, 1) === "&") {
-						return line.substr(1);
-					} else {
-						return line;
-					}
-				}).join("\n");
-
-				imageData = new Buffer(imageData, "binary");
-				var frame = $(tag).parents("frame").eq(0);
-				var fileName = "./out/image" + fileNameCounter + "." + fileFormat.toLowerCase();
-
-				console.error("Saving to file: " + fileName);
-				fs.writeFileSync(fileName, imageData);
-
-				fileNameCounter++;
-			});
-			*/
-			
-			//var resultHtml = self.parseTag($("body"));
 			
 			//Perform parsing
-			//console.error("Body length: " + $("body").length);
 			self.parseTag($("body"));
 			var resultHtml = self.html.join("");
 			
-			//console.error(self.html.join("\n"));
-
 			//Cleanup
 			var cheerio = require("cheerio").load(resultHtml);
 
@@ -3053,37 +2801,17 @@ var Parser = {
 		
 			var children = $tag.children;
 			for (var i = 0; i < children.length; i++) {
-				//if (i < 2) {
-				//	console.error(children[i]);
-				//}
-				//if (i < 2 && children[i] !== undefined) {
-	//				console.error(children[i].type);
-					//}
 				if (children[i].type === "tag") {
 					self.parseTag(children[i], (level + 1));
 				}
 			}
 
-			/*
-			$tag.contents().each(function(i, e) {
-				if (!(e.nodeType === 3)) {
-					self.parseTag(e, (level + 1));
-				} else {
-					//Text
-	//				var text = $(e).text().replace(/\t/g, ""); //.replace(/\n/g, "");
-	//				if (text !== "" && text !== undefined && text !== null) {
-	//					html.push(text);
-	//				}
-				}
-			});
-	*/
 			//End tag
 			if (existsHandlers) {
-	//			console.error("Ending tag \"" + tagName + "\"...")
-			
+				//console.error("Ending tag \"" + tagName + "\"...")
 				var result = indentation + self.tagHandlers[tagName].end(tag, indentation);
 				if (result.trim() !== "") {
-	//				console.error("Finished ending tag \"" + tagName + "\". " + result);
+					//console.error("Finished ending tag \"" + tagName + "\". " + result);
 					self.html.push(result);
 				}
 			}
@@ -3102,21 +2830,12 @@ var Parser = {
 				
 			}
 			
-			/*
-			while (self.xrefQueue.length > 0) {
-				
-				var xref = self.xrefQueue.shift();
-				self.parseXRef(xref);
-			}
-			*/
 		}
 		
 	},
 	symbolsToUnicode: function(chars) {
 		
 		var self = this;
-		
-		//console.error("This: " + chars);
 
 		//From: http://www.snible.org/greek/symb2uni.html
 
@@ -3163,252 +2882,9 @@ var Parser = {
 			.replace(/>/g, '&gt;');
 
 	},
-/*	
-	injectBoxLinks: function(text) {
-
-		function extractNumbers(number) {
-			var numbers = [];
-			if (number.indexOf("-") > -1) {
-				var start = parseInt(number.split("-")[0]);
-				var stop = parseInt(number.split("-")[1]);
-				for (var j=start; j <= stop; j++) {
-					numbers.push(j);
-				}
-			} else {
-				numbers = [parseInt(number)];
-			}
-			return numbers;
-		}
-		
-		//Add a space for regex operations
-		text = " " + text;
-
-		text = text.replace(/[ (]Figur\s[0-9\-]+/g, function(match) {
-			var firstChar = match.substr(0, 1);
-			match = match.substr(1);
-			var numbers = extractNumbers(match.split(" ")[1]);
-			return " <a class=\"btn btn-small figureLink\" href=\"#figure_" + numbers[0] + "\" data-numbers=\"" + numbers.join(",") + "\">" + match + "</a>";
-		});
-
-		text = text.replace(/[ (]Tabell\s[0-9\-]+/g, function(match) {
-			var firstChar = match.substr(0, 1);
-			match = match.substr(1);
-			var numbers = extractNumbers(match.split(" ")[1]);
-			return " <a class=\"btn btn-small tableLink\" href=\"#table_" + numbers[0] + "\" data-numbers=\"" + numbers.join(",") + "\">" + match + "</a>";
-		});
-
-		text = text.replace(/[ (]Faktaruta\s[0-9\-]+/g, function(match) {
-			var firstChar = match.substr(0, 1);
-			match = match.substr(1);
-			var numbers = extractNumbers(match.split(" ")[1]);
-			return firstChar + "<a class=\"btn btn-small factsLink\" href=\"#facts_" + numbers[0] + "\" data-numbers=\"" + numbers.join(",") + "\">" + match + "</a>";
-		});
-
-		//Remove the added space
-		text = text.substr(1);
-		return text;
-		
-	},
-
-	injectGenericas: function(text) {
-		var self = this;
-		
-		if (self.genericas === null) {
-			self.loadGenericas();
-		}
-
-		if (text.trim() !== "") {
-
-			text = " " + text + " ";
-
-			for (var title in self.genericas) {
-				var genericaName = title;
-				
-				var re = new RegExp("[ (/;\[\-]" + RegExp.quote(genericaName.toLowerCase()) + "[^<]", "gi"); 
-				text = text.replace(re, function(match) {
-
-					var genericaATC = [];
-					var genericaTitles = [];
-					var saveGenericaTitles = [];
-					
-					for (var i=0; i < self.genericas[title].length; i++) {
-						genericaATC.push(self.genericas[title][i].id);
-
-						var originalItem = self.getGenericaById(self.genericas[title][i].id);
-						if (originalItem !== undefined) {
-							genericaTitles.push(self.htmlEscape(originalItem.titlePath).replace(/\s\/\s/g, "<|>").replace(/\(/g, "(|").replace(/\)/g, "|)").replace(/\s/g, "_"));
-							saveGenericaTitles.push(originalItem.titlePath + " :: " + originalItem.idPath);
-						} else {
-							//console.error("Could not find generica for: " + title + " with id: " + self.genericas[title][i].id);
-						}
-					}
-
-					var href = "/atc/" + genericaATC.join("-");
-					//console.error("Match: \"" + match + "\"");
-					var matchedWord = match.substr(1, match.length - 2);
-					
-					
-					if (genericaTitles.length > 0) {
-						var result = match.substr(0, 1) + "<a href=\"" + href + "\" data-atcid=\"" + genericaATC.join(",") + "\" data-atctitles=\"" + genericaTitles.join("##") + "\" class=\"inlineGenerica text\">" + matchedWord + "</a>" + match.substr(match.length - 1);
-
-						return result;
-					} else {
-						return match.substr(0, 1) + "<span>" + matchedWord + "</span>" + match.substr(match.length - 1);
-					}
-					//TODO: Perhaps dangerous: data-atc-title=\"" + self.htmlEscape(genericaName) + "\"
-				});
-			}
-			
-			text = text.substr(1, text.length - 2);
-			text = text.replace(/\<\|\>/g, "--");
-			text = text.replace(/\(\|/g, "(");
-			text = text.replace(/\|\)/g, ")");
-
-		}
-
-
-		return text;
-
-	},
-	originalGenericas : null,
-	getGenericaById: function(id) {
-		var self = this;
-		var returnItem = undefined;
-		
-		if (self.originalGenericas === null) {
-			self.originalGenericas = JSON.parse(fs.readFileSync(__dirname + "/../npl/atcTree.json"), "utf8");
-		}
-		for (var i=0; i < self.originalGenericas.length; i++) {
-			if (self.originalGenericas[i].id === id) {
-				returnItem = self.originalGenericas[i];
-				break;
-			}
-		}
-		
-		return returnItem;
-	},
-*/
-/*	
-	loadGenericas: function() {
-		var self = this;
-		
-		var genericas = JSON.parse(fs.readFileSync(__dirname + "/../npl/atcTree.json"), "utf8");
-		genericas.shift(); //remove root element
-
-		var blackList = {
-			"övrigt": true,
-			"kol": true,
-			"vitaminer": true,
-			"kombinationer": true,
-			"skelett": true
-		};
-
-		//remove non atc types, exclude short atc-codes and short titles
-		genericas = genericas.filter(function(element) {
-			if (element.type === "atc" && element.id.length > 3 && element.title.length > 3 && (blackList[element.title.toLowerCase()] === undefined)) {
-				var subProducts = self.findProductNamesFromATCCode(element.id);
-				return (subProducts.length > 0);
-			} else {
-				return false;
-			}
-		});
-
-		//sort with the longest title first
-		genericas.sort(function(a, b) {
-			return (b.title.length - a.title.length)
-		});
-
-		var distilledGenericas = {};
-
-		//add keywords
-		var keywords = JSON.parse(fs.readFileSync(__dirname + "/../servers/admin/keywords.json"), "utf8");
-
-		var sortedKeywords = [];
-
-		for (var keyword in keywords) {
-			sortedKeywords.push({title: keyword, atc: keywords[keyword].atc});
-		}
-
-		//sort with the longest title first
-		sortedKeywords.sort(function(a, b) {
-			return (b.title.length - a.title.length)
-		});
-
-		for (var i=0; i < sortedKeywords.length; i++) {
-			if (distilledGenericas[sortedKeywords[i].title.toLowerCase()] === undefined) {
-				distilledGenericas[sortedKeywords[i].title.toLowerCase()] = [{id: sortedKeywords[i].atc.split(" ")[0], title: sortedKeywords[i].title, type: "atc"}];
-			} else {
-				distilledGenericas[sortedKeywords[i].title.toLowerCase()].push({id: sortedKeywords[i].atc.split(" ")[0], title: sortedKeywords[i].title, type: "atc"});
-			}
-		}
-
-		//create object with keywords for genericas with the same name
-		for (var i=0; i < genericas.length; i++) {
-			if (distilledGenericas[genericas[i].title.toLowerCase()] === undefined) {
-				distilledGenericas[genericas[i].title.toLowerCase()] = [genericas[i]];
-			} else {
-*/
-				/*
-				//TODO: Fix: Check if current generica is a descendant of an already added generica
-				var alreadyAdded = false;
-				for (var j=0; j < distilledGenericas[genericas[i].title.toLowerCase()].length; j++) {
-					var item = distilledGenericas[genericas[i].title.toLowerCase()][j];
-					if (item.id.indexOf(genericas[i].id) === 0) {
-						alreadyAdded = true;
-						break;
-					}
-				}
-				if (!alreadyAdded) {
-					distilledGenericas[genericas[i].title.toLowerCase()].push(genericas[i]);
-				}
-				*/
-/*
-				distilledGenericas[genericas[i].title.toLowerCase()].push(genericas[i]);
-			}
-		}
-
-		self.genericas = distilledGenericas;
-
-		return;
-	},
-*/
 	isNumber:  function(o) {
 	  return ! isNaN (o-0) && o !== null && o !== "" && o !== false;
-	}
-/*
-	findProductNamesFromATCCode: function(atcCode) {
-		var result = [];
-		var self = this;
-
-		if (self.originalGenericas === null) {
-			self.originalGenericas = JSON.parse(fs.readFileSync(__dirname + "/../npl/atcTree.json"), "utf8");
-		}
-
-		var atcTree = self.originalGenericas;
-
-		for (var i = 0; i < atcTree.length; i++) {
-			if (atcTree[i].parentId === atcCode) {
-				if (atcTree[i].type === "product") {
-					var productName = atcTree[i].title.split(",")[0].toLowerCase().replace("®", "").split(" ");
-
-					var end = productName.length;
-					if (end > 1) {
-						end = (end - 1);
-					}
-
-					for (var j = 0; j < end; j++) {
-						result.push(productName[j]);
-					}
-				} else if (atcTree[i].type === "atc") {
-					result = result.concat(self.findProductNamesFromATCCode(atcTree[i].id));
-				}
-			}
-		}
-	
-		return result;
-	}
-*/	
-	
+	}	
 }
 
 //console.error("\nInitializing parser...");
@@ -3507,7 +2983,7 @@ function resizeImage(imagePath, maxWidth, extension, forceResize, callback) {
 					//console.error('stdout: ' + stdout);
 					//console.error('stderr: ' + stderr);
 					if (error !== null) {
-						//console.error('exec error: ' + error);
+						console.error('exec error: ' + error);
 					}
 					
 					exec("pngout -s1 -y " + optImageDir + "/" + newFileName, function (error, stdout, stderr) {
