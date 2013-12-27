@@ -11,7 +11,7 @@
 	{
 		"name"      : "site",
 		"script"    : "./site/server.js",
-		"instances" : "8",
+		"instances" : "4",
 		"min_uptime" : "100",
 		"max_restarts" : "10",
 		"fileError" : "./logs/site-err.log",
