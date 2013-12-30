@@ -842,7 +842,7 @@
 						</div>
 						<div>
 						<% 
-						if (suggestions.length > 0) {
+						if (suggestions && suggestions.length > 0) {
 							%>
 							<h3>Letade du möjligen efter:</h3>
 							<ul class="resultsList">
@@ -866,7 +866,7 @@
 							<%
 						}
 						
-						if (medicineSuggestions.length > 0) {
+						if (medicineSuggestions && medicineSuggestions.length > 0) {
 							%>
 							<h3>Letade du möjligen efter:</h3>
 							<ul class="resultsList">
