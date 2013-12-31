@@ -87,7 +87,8 @@ function updateSPCLink(nplId, linkPath) {
 	} else {
 		//console.log("Could not find product json for: " + productPath);
 	}
-	
+
+/*	
 	productPath = path.normalize(__dirname + "/../fass/www/products/" + nplId + ".json");
 
 	if (fs.existsSync(productPath)) {
@@ -97,5 +98,5 @@ function updateSPCLink(nplId, linkPath) {
 	} else {
 		//console.log("Could not find product json for: " + productPath);
 	}
-
+*/
 }
