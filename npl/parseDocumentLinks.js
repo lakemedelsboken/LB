@@ -85,18 +85,25 @@ function updateSPCLink(nplId, linkPath) {
 		product.spcLink = linkPath;
 		fs.writeFileSync(productPath, JSON.stringify(product, null, "\t"), "utf8");
 	} else {
+		product = {"id": nplId, "spcLink": linkPath};
+		fs.writeFileSync(productPath, JSON.stringify(product, null, "\t"), "utf8");
 		//console.log("Could not find product json for: " + productPath);
 	}
 
-/*	
 	productPath = path.normalize(__dirname + "/../fass/www/products/" + nplId + ".json");
 
 	if (fs.existsSync(productPath)) {
 		var product = JSON.parse(fs.readFileSync(productPath, "utf8"));
-		product.spcLink = linkPath;
-		fs.writeFileSync(productPath, JSON.stringify(product, null, "\t"), "utf8");
+		var update = true;
+		if (product.spcLink && product.spcLink === linkPath) {
+			update = false;
+		}
+		if (update) {
+			product.spcLink = linkPath;
+			fs.writeFileSync(productPath, JSON.stringify(product, null, "\t"), "utf8");
+		}
 	} else {
 		//console.log("Could not find product json for: " + productPath);
 	}
-*/
+
 }
