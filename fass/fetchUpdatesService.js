@@ -307,6 +307,10 @@ function processProduct(product, $, callback) {
 					output.available = product.find("product-info > available").text();
 					output.active = product.find("product-info > active").text();
 					
+					if (spcLink !== undefined && spcLink !== null && spcLink !== "" && spcLink !== "undefined") {
+						output.spcLink = spcLink;
+					}
+					
 					output.partOfFass = $("is-part-of-fass").text();
 					output.lffInsurance = $("lff-insurance-member").text();
 					/*
