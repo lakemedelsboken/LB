@@ -82,7 +82,7 @@ fetchUpdates();
 
 function check(updates) {
 
-	console.log(formatDate(new Date()) + " Fetching " + updates.join(", ") + "...")
+	console.log("\n" + formatDate(new Date()) + " Fetching " + updates.join(", ") + "...")
 
 	var q = async.queue(function (task, callback) {
 
@@ -93,12 +93,12 @@ function check(updates) {
 		requestSoapData(task.url, productInfoEnvelope, function(err, answer) {
 			if (err) {
 				//console.log(err);
-				callback(err);
+				callback(err, task.nplId);
 			} else {
 				processAnswer(answer, task.nplId, function(err, data) {
 
 					if (err && (err.message.indexOf("Error fetching") > -1 || err.message.indexOf("Unexpected error") > -1)) { 
-						callback(err);
+						callback(err, task.nplId);
 					} else if (data && data.id !== undefined) {
 						var fileName = __dirname + "/www/products/" + data.id + ".json";
 						//console.log("Writing to: " + fileName);
@@ -113,9 +113,9 @@ function check(updates) {
 						callback(null, data.id, description);
 					} else {
 						if (err) {
-							callback(err);
+							callback(err, task.nplId);
 						} else {
-							callback(new Error("Id was undefined"));
+							callback(new Error("Id was undefined"), task.nplId);
 						}
 					}
 				});
@@ -124,44 +124,6 @@ function check(updates) {
 
 	}, 1);
 
-	//Add to queue
-	for (var i = 0; i < updates.length; i++) {
-
-		q.push({url: baseUrl, nplId: updates[i]}, function(err, id, name) {
-			if (err) {
-				console.log("Error with id: " + id);
-				console.log(err);
-				
-				if (errors[id] !== undefined) {
-					if (errors[id] >= 5) {
-						//Remove and mail
-						removeFromFoundUpdates(id);
-						sendMail("Unable to update: " + id, "The server has tried multiple times to update nplId: \"" + id + "\"\n\nThe item has been removed from the queue.");
-						errors[id] = undefined;
-					} else {
-						errors[id]++;
-						moveToLast(id);
-					}
-				} else {
-					errors[id] = 1;
-					moveToLast(id);
-				}
-				
-				//TODO: Move id to last of queue (first in array)
-				//Implement retries, max 5 for one id, then save to error log and mail
-			} else {
-				//Remove from master list, this will trigger a new run of fetchUpdates()
-				removeFromFoundUpdates(id);
-				var abbrName = name;
-				if (abbrName.indexOf("(") > -1) {
-					abbrName = abbrName.substr(0, (abbrName.indexOf("(") - 1));
-				}
-				console.log(formatDate(new Date()) + " Finished updating " + id + " (" + abbrName + ")");
-			}
-			
-		});
-	}
-	
 	//When queue is done
 	q.drain = function() {
 
@@ -171,23 +133,78 @@ function check(updates) {
 
 	}
 
+	//Add to queue
+	for (var i = 0; i < updates.length; i++) {
+
+		if (updates[i] !== null && updates[i] !== undefined && updates[i] !== "undefined") {
+
+			q.push({url: baseUrl, nplId: updates[i]}, function(err, id, name) {
+				if (err) {
+					console.log(err);
+					if (id !== undefined) {
+						console.log("Error with id: " + id);
+						//Move id to last of queue (first in array)
+						if (errors[id] !== undefined) {
+							//Retries, max 5 for one id, then save to error log and mail
+							if (errors[id] >= 5) {
+								//Remove and mail
+								removeFromFoundUpdates(id);
+								sendMail("Unable to update: " + id, "The server has tried multiple times to update nplId: \"" + id + "\"\n\nThe item has been removed from the queue.");
+								errors[id] = undefined;
+							} else {
+								errors[id]++;
+								moveToLast(id);
+							}
+						} else {
+							errors[id] = 1;
+							moveToLast(id);
+						}
+					}
+				
+				} else {
+					//Remove from master list, this will trigger a new run of fetchUpdates()
+					removeFromFoundUpdates(id);
+					var abbrName = name;
+					if (abbrName.indexOf("(") > -1) {
+						abbrName = abbrName.substr(0, (abbrName.indexOf("(") - 1));
+					}
+					console.log(formatDate(new Date()) + " Finished updating " + id + " (" + abbrName + ")");
+				}
+			
+			});
+			
+		} else {
+			//Remove from list if undefined, null or "undefined"
+			removeFromFoundUpdates(updates[i]);
+			if (updates.length === 1) {
+				q.drain();
+			}
+		}
+
+	}
+	
 }
 
 function moveToLast(nplId) {
 
-	var foundUpdates = JSON.parse(fs.readFileSync(__dirname + "/shared/foundUpdates.json", "utf8"));
+	if (nplId !== null && nplId !== undefined && nplId !== "undefined") {
+		var foundUpdates = JSON.parse(fs.readFileSync(__dirname + "/shared/foundUpdates.json", "utf8"));
 
-	for (var i = foundUpdates.length - 1; i >= 1; i--) {
-		if (foundUpdates[i] === nplId && i > 0) {
-			//console.log("Removing " + nplId);
-			foundUpdates.splice(i, 1);
+		for (var i = foundUpdates.length - 1; i >= 1; i--) {
+			if (foundUpdates[i] === nplId && i > 0) {
+				//console.log("Removing " + nplId);
+				foundUpdates.splice(i, 1);
+			}
 		}
+
+		//Insert as second item
+		foundUpdates.splice(1, 0, nplId);
+
+		fs.writeFileSync(__dirname + "/shared/foundUpdates.json", JSON.stringify(foundUpdates, null, "\t"), "utf8");
+		console.log("INFO: " + nplId + " was moved to the end of the queue.");
+	} else {
+		removeFromFoundUpdates(nplId);
 	}
-
-	//Insert as second item
-	foundUpdates.splice(1, 0, nplId);
-
-	fs.writeFileSync(__dirname + "/shared/foundUpdates.json", JSON.stringify(foundUpdates, null, "\t"), "utf8");
 	
 }
 
@@ -612,9 +629,10 @@ function getSPC(name, nplId, callback) {
 				_getCentralSPC(name, nplId, function(err, spcLink) {
 					if (err) {
 						return callback(err);
+					} else {
+						console.log("Found SPC link from EMA: " + spcLink);
+						callback(null, spcLink);
 					}
-
-					callback(null, spcLink);
 				});
 			}
 		});
@@ -634,7 +652,7 @@ function _getMpaSPC(name, nplId, callback) {
 		if (product.spcLink !== undefined &&  product.spcLink !== "") {
 			spcLink = product.spcLink;
 			isCentral = false;
-			console.log("Found link: " + spcLink);
+			console.log("Found SPC link from MPA: " + spcLink);
 		}
 	}
 	callback(error, {isCentral: isCentral, spcLink: spcLink});
