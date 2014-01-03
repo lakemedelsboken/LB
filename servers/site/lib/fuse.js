@@ -109,9 +109,12 @@
 		*/
 		this.search = function (text) {
 			text = options.caseSensitive ? text : text.toLowerCase();
+			
+			//console.log(pattern)
 
 			if (pattern === text) {
 				// Exact match
+				//console.log("Exact: " + pattern + " = " + text);
 				return {
 					isMatch: true,
 					score: 0
@@ -134,11 +137,18 @@
 			score = 1,
 
 			locations = [];
+			if (bestLoc === 0 && pattern !== text) {
+				bestLoc = 0.1;
+			}
 
 			if (bestLoc != -1) {
 				scoreThreshold = Math.min(match_bitapScore(0, bestLoc), scoreThreshold);
 				// What about in the other direction? (speedup)
 				bestLoc = text.lastIndexOf(pattern, MATCH_LOCATION + patternLen);
+
+				if (bestLoc === 0 && pattern !== text) {
+					bestLoc = 0.1;
+				}
 
 				if (bestLoc != -1) {
 					scoreThreshold = Math.min(match_bitapScore(0, bestLoc), scoreThreshold);
@@ -209,6 +219,10 @@
 				lastRd = rd;
 			}
 
+			if (score === 0 && pattern !== text) {
+				score = 0.000001;
+			}
+
 			return {
 				isMatch: bestLoc >= 0,
 				score: score
@@ -225,6 +239,7 @@
 	function Fuse(list, options) {
 		options = options || {};
 		var keys = options.keys;
+		var boost = options.boost;
 		var dataLen = list.length;
 		this.length = dataLen;
 		/**
@@ -253,7 +268,7 @@
 			* @return {Object|Int}
 			* @private
 			*/
-			function analyzeText(text, entity, index) {
+			function analyzeText(text, entity, index, boost) {
 				// Check if the text can be searched
 				if (text !== undefined && text !== null && typeof text === 'string') {
 
@@ -262,6 +277,8 @@
 
 					// If a match is found, add the item to <rawResults>, including its score
 					if (bitapResult.isMatch) {
+
+						bitapResult.score = bitapResult.score * boost;
 
 						//console.log(bitapResult.score);
 
@@ -298,7 +315,11 @@
 					item = list[i];
 					// Iterate over every key
 					for (j = 0; j < keys.length; j++) {
-						analyzeText(item[keys[j]], item, i);
+						var itemBoost = 1;
+						if (boost) {
+							itemBoost = (1 / boost[j]);
+						}
+						analyzeText(item[keys[j]], item, i, itemBoost);
 					}
 				}
 //			}

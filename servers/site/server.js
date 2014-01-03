@@ -34,7 +34,7 @@ var masterIndex = JSON.parse(fs.readFileSync(__dirname + "/masterIndex.json", "u
 
 var atcTree = JSON.parse(fs.readFileSync(__dirname + "/../../npl/atcTree.json", "utf8"));
 var searchIndexer = require("../../search/createSearchIndex.js");
-var Fuse = require("./lib/fuse.js");
+//var Fuse = require("./lib/fuse.js");
 
 var settings = JSON.parse(fs.readFileSync(__dirname + "/../../settings/settings.json", "utf8"));
 
@@ -639,12 +639,14 @@ function initSearchIndex() {
 }
 
 function populateFinishedSearches(searchDir) {
+	/*
 	var files = fs.readdirSync(searchDir);
 	for (var i = 0; i < files.length; i++) {
 		if (files[i].indexOf(".json.gz") > -1) {
 			finishedSearches[searchDir + files[i]] = true;
 		}
 	}
+*/
 }
 
 function getResultsThatMatchAllTerms(searchResults) {
@@ -733,6 +735,16 @@ app.get('/medicinesearch', function(req,res){
 		limit = false;
 	}
 
+	var replaceCommon = req.query["replace"];
+
+	//Implement replacement of common characters
+	var replaceCommonCharacters = true;
+	if (replaceCommon !== undefined) {
+		replaceCommonCharacters = false;
+	}
+
+	replaceCommonCharacters = false;
+
 	var results = [];
 	
 	var resultsLimit = 40;
@@ -790,7 +802,7 @@ app.get('/medicinesearch', function(req,res){
 		});
 	} else {
 
-		searchTerms = parseSearchTerms(searchTerms, !limit);
+		searchTerms = parseSearchTerms(searchTerms, !limit, replaceCommonCharacters);
 		
 		if (searchIndex === null) {
 			initSearchIndex();
@@ -867,7 +879,7 @@ app.get('/medicinesearch', function(req,res){
 
 			//Create queue
 			var searchQueue = async.queue(function (task, callback) {
-				request("http://127.0.0.1:" + networkPort + "/medicinesearch?search=" + encodeURIComponent(task.term) + "&limit=off", {'json': true}, function (error, response, body) {
+				request("http://127.0.0.1:" + networkPort + "/medicinesearch?search=" + encodeURIComponent(task.term) + "&limit=off&replace=off", {'json': true}, function (error, response, body) {
 					var requestResult = [];
 					if (!error && response.statusCode == 200) {
 						requestResult = body;
@@ -943,6 +955,14 @@ app.get('/titlesearch', function(req,res){
 		limit = false;
 	}
 
+	var replaceCommon = req.query["replace"];
+
+	//Implement replacement of common characters
+	var replaceCommonCharacters = true;
+	if (replaceCommon !== undefined) {
+		replaceCommonCharacters = false;
+	}
+
 	var results = [];
 	
 	var resultsLimit = 40;
@@ -996,7 +1016,11 @@ app.get('/titlesearch', function(req,res){
 			});
 		} else {
 
-			searchTerms = parseSearchTerms(searchTerms, !limit);
+			if (searchTerms.indexOf(" ") > -1) {
+				replaceCommonCharacters = false;
+			}
+
+			searchTerms = parseSearchTerms(searchTerms, !limit, replaceCommonCharacters);
 			
 			if (searchIndex === null) {
 				initSearchIndex();
@@ -1027,9 +1051,24 @@ app.get('/titlesearch', function(req,res){
 							var merged = [];
 							merged = merged.concat.apply(merged, allSearchResults);
 						
-							//Sort according to score
+							//Sort according to score and level
 							merged.sort(function(a, b) {
-								return a.score - b.score;
+								//return a.score - b.score;
+
+							    var aScore = a.score;
+							    var bScore = b.score;
+							    var aLevel = a.level;
+							    var bLevel = b.level;
+							    //console.log(aLow + " | " + bLow);
+
+							    if(aScore == bScore)
+							    {
+							        return (aLevel < bLevel) ? -1 : (aLevel > bLevel) ? 1 : 0;
+							    }
+							    else
+							    {
+							        return (aScore < bScore) ? -1 : 1;
+							    }
 							});
 
 							searchResults[0] = merged;
@@ -1056,7 +1095,7 @@ app.get('/titlesearch', function(req,res){
 
 				//Create queue
 				var titleQueue = async.queue(function (task, callback) {
-					request("http://127.0.0.1:" + networkPort + "/titlesearch?search=" + encodeURIComponent(task.term) + "&limit=off", {'json': true}, function (error, response, body) {
+					request("http://127.0.0.1:" + networkPort + "/titlesearch?search=" + encodeURIComponent(task.term) + "&limit=off&replace=off", {'json': true}, function (error, response, body) {
 						var requestResult = [];
 						if (!error && response.statusCode == 200) {
 							requestResult = body;
@@ -1072,7 +1111,28 @@ app.get('/titlesearch', function(req,res){
 				//When all the searches have finished
 				titleQueue.drain = function() {
 					//Finished with async search
+
 					results = filterAndSaveSearchResults(searchTerms, searchResults, possibleSearchFileName);
+
+					//Sort according to score and level
+					results.sort(function(a, b) {
+						//return a.score - b.score;
+
+					    var aScore = a.score;
+					    var bScore = b.score;
+					    var aLevel = a.level;
+					    var bLevel = b.level;
+					    //console.log(aLow + " | " + bLow);
+
+					    if(aScore == bScore)
+					    {
+					        return (aLevel < bLevel) ? -1 : (aLevel > bLevel) ? 1 : 0;
+					    }
+					    else
+					    {
+					        return (aScore < bScore) ? -1 : 1;
+					    }
+					});
 
 					if (limit && results.length > resultsLimit) {
 						results.length = resultsLimit;
@@ -1127,6 +1187,16 @@ app.get('/contentsearch', function(req,res){
 		limit = false;
 	}
 
+	var replaceCommon = req.query["replace"];
+
+	//Implement replacement of common characters
+	var replaceCommonCharacters = true;
+	if (replaceCommon !== undefined) {
+		replaceCommonCharacters = false;
+	}
+
+	replaceCommonCharacters = false;
+
 	var results = [];
 	
 	var resultsLimit = 40;
@@ -1178,7 +1248,7 @@ app.get('/contentsearch', function(req,res){
 		});
 	} else {
 
-		searchTerms = parseSearchTerms(searchTerms, !limit);
+		searchTerms = parseSearchTerms(searchTerms, !limit, replaceCommonCharacters);
 		
 		if (searchIndex === null) {
 			initSearchIndex();
@@ -1236,7 +1306,7 @@ app.get('/contentsearch', function(req,res){
 
 			//Create queue
 			var contentQueue = async.queue(function (task, callback) {
-				request("http://127.0.0.1:" + networkPort + "/contentsearch?search=" + encodeURIComponent(task.term) + "&limit=off", {'json': true}, function (error, response, body) {
+				request("http://127.0.0.1:" + networkPort + "/contentsearch?search=" + encodeURIComponent(task.term) + "&limit=off&replace=off", {'json': true}, function (error, response, body) {
 					var requestResult = [];
 					if (!error && response.statusCode == 200) {
 						requestResult = body;
@@ -1305,6 +1375,14 @@ app.get('/boxsearch', function(req,res){
 		limit = false;
 	}
 
+	var replaceCommon = req.query["replace"];
+
+	//Implement replacement of common characters
+	var replaceCommonCharacters = true;
+	if (replaceCommon !== undefined) {
+		replaceCommonCharacters = false;
+	}
+
 	var results = [];
 	
 	var resultsLimit = 40;
@@ -1352,7 +1430,7 @@ app.get('/boxsearch', function(req,res){
 		});
 	} else {
 
-		searchTerms = parseSearchTerms(searchTerms, !limit);
+		searchTerms = parseSearchTerms(searchTerms, !limit, replaceCommonCharacters);
 		
 		if (searchIndex === null) {
 			initSearchIndex();
@@ -1412,7 +1490,7 @@ app.get('/boxsearch', function(req,res){
 
 			//Create queue
 			var therapyQueue = async.queue(function (task, callback) {
-				request("http://127.0.0.1:" + networkPort + "/boxsearch?search=" + encodeURIComponent(task.term) + "&limit=off", {'json': true}, function (error, response, body) {
+				request("http://127.0.0.1:" + networkPort + "/boxsearch?search=" + encodeURIComponent(task.term) + "&limit=off&replace=off", {'json': true}, function (error, response, body) {
 					var requestResult = [];
 					if (!error && response.statusCode == 200) {
 						requestResult = body;
@@ -1474,11 +1552,20 @@ function filterAndSaveSearchResults(searchTerms, searchResults, fileName) {
 	if (searchTerms.length > 1) {
 		results = getResultsThatMatchAllTerms(searchResults);
 		
-		//If none matched, return the results for the first term
+		//If none matched, return the results for the term with the most results
 		//TODO: Improve this
-		//if (results.length === 0) {
-		//	results = searchResults[0];
-		//}
+		if (results.length === 0) {
+
+			var sortedByLength = [];
+			for (var key in searchResults) {
+				sortedByLength.push(searchResults[key]);
+			}
+			sortedByLength.sort(function(a, b) {
+				return b.length - a.length;
+			});
+			
+			results = sortedByLength[0];
+		}
 	} else {
 		results = searchResults[0];
 	}
@@ -1519,6 +1606,8 @@ function filterAndSaveSearchResults(searchTerms, searchResults, fileName) {
 			trimmed[i].content = "";
 			trimmed[i].products = "";
 		}
+
+		//If results have the same score, sort on level descending
 
 		results = trimmed;
 		
@@ -1562,7 +1651,7 @@ function getSafeSearchTerms(terms) {
 	return createCheckSum(terms);
 }
 
-function parseSearchTerms(terms, skipSplit) {
+function parseSearchTerms(terms, skipSplit, replaceCommonCharacters) {
 
 	if (skipSplit === undefined) {
 		skipSplit = false;
@@ -1629,6 +1718,33 @@ function parseSearchTerms(terms, skipSplit) {
 		if (result[i].trim() === "") {
 			result.splice(i, 1);
 		}
+	}
+
+	if (replaceCommonCharacters) {
+		var newTerms = [];
+	
+		var commonReplacements = {
+			"c": "k",
+			"k": "c",
+			"s": "z",
+			"z": "s"
+		};
+		for (var i = 0; i < result.length; i++) {
+			var original = result[i];
+			var replaced = original;
+			for (var key in commonReplacements) {
+				var re = new RegExp(key, "g");
+				replaced = original.replace(re, commonReplacements[key]);
+				if (replaced !== original) {
+					newTerms.push(replaced);
+				}
+			}
+		}
+	
+		if (newTerms.length > 0) {
+			result = result.concat(newTerms);
+		}
+		
 	}
 	
 	//console.log("Finished terms: ", result);
@@ -2035,13 +2151,13 @@ app.get('/*', function(req, res){
 	if (foundIndex && chapter) {
 		//Perform search
 		request('http://127.0.0.1:' + networkPort + '/titlesearch?search=' + encodeURIComponent(foundIndex + " " + chapter), {'json': true}, function (err, response, body) {
-			if (!err) {
+			if (!err && body !== undefined) {
 				locals.suggestions = body;
 			}
 			
 			if (locals.suggestions.length === 0) {
 				request('http://127.0.0.1:' + networkPort + '/titlesearch?search=' + encodeURIComponent(chapter), {'json': true}, function (err, response, body) {
-					if (!err) {
+					if (!err && body !== undefined) {
 						locals.suggestions = body;
 
 						locals.suggestions.sort(function(a,b){

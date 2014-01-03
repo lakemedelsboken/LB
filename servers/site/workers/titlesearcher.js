@@ -16,7 +16,8 @@ function initSearchIndex() {
 	//Title search
 	var options = {
 		keys: ["title", "titlePath"],
-		threshold: 0.3,
+		boost: [2, 1],
+		threshold: 0.24,
 		distance: 300
 	};
 
