@@ -639,14 +639,13 @@ function initSearchIndex() {
 }
 
 function populateFinishedSearches(searchDir) {
-	/*
+
 	var files = fs.readdirSync(searchDir);
 	for (var i = 0; i < files.length; i++) {
 		if (files[i].indexOf(".json.gz") > -1) {
 			finishedSearches[searchDir + files[i]] = true;
 		}
 	}
-*/
 }
 
 function getResultsThatMatchAllTerms(searchResults) {
