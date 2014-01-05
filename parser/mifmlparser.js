@@ -64,7 +64,8 @@ var Parser = {
 		table: false,
 		figure: false,
 		tableFormatSection: false,
-		furtherReading: false
+		furtherReading: false,
+		references: false
 	},
 	resetState: function() {
 		this.state = {
@@ -393,6 +394,7 @@ var Parser = {
 
 		self.formatHandlers["refrub"] = {
 			begin: function(tag, indentation) {
+				self.state.references = true;
 				return indentation + "<h2 id=\"" + self.chapterIdentifier + "_" + (++self.tocId) + "\">Referenser";
 			},
 			end: function(tag, indentation) {
@@ -511,6 +513,7 @@ var Parser = {
 		self.formatHandlers["forvidarelasning"] = {
 			begin: function(tag, indentation) {
 				self.state.furtherReading = true;
+				self.state.references = false;
 				return indentation + "<h5 id=\"" + self.chapterIdentifier + "_" + (++self.tocId) + "\">För vidare läsning:";
 			},
 			end: function(tag, indentation) {
@@ -539,7 +542,7 @@ var Parser = {
 		*/
 		self.formatHandlers["reftextnrforts"] = {
 			begin: function(tag, indentation) {
-				if (!self.state.furtherReading) {
+				if (self.state.references && !self.state.furtherReading) {
 					self.counters.referenceItems++;
 				}
 
@@ -564,8 +567,10 @@ var Parser = {
 
 				if (self.state.furtherReading) {
 					result += "<li>";
-				} else {
+				} else if (self.state.references){
 					result += "<li id=\"reference_" + self.counters.referenceItems + "\">";
+				} else {
+					result += "<li>";
 				}
 
 				return result;
