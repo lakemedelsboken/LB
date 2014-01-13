@@ -39,12 +39,7 @@ var searchIndexer = require("../../search/createSearchIndex.js");
 var settings = JSON.parse(fs.readFileSync(__dirname + "/../../settings/settings.json", "utf8"));
 
 var networkPort = settings.internalServerPorts.site;
-
-var numCPUs = (require('os').cpus().length);
-
-if (numCPUs < 2) {
-	numCPUs = 2;
-}
+var searchPort = settings.internalServerPorts.search;
 
 var app = require('./app').init(networkPort);
 
@@ -53,45 +48,18 @@ var searchIndex = null;
 var searchIndices = [];
 var chapterFileNames = null;
 var indexCache = {};
+var siteMap = null;
 
-var workerFarm = null;
-var contentSearchers = null;
-var titleSearchers = null;
-var boxSearchers = null;
-var medicineSearchers = null;
-
-initSearchIndex();
 initFileWatchers();
 
 //TODO: Switch to polling
 function initFileWatchers() {
 	
 	var chaptersPath = path.normalize(__dirname + "/chapters/");
-	//var staticPath = path.normalize(__dirname + "/static/");
 	var atcTreePath = path.normalize(__dirname + "/../../npl/atcTree.json");
-	var searchesPath = path.normalize(__dirname + "/../../search/");
 	
 	var chaptersWatcher = chokidar.watch(chaptersPath, {ignored: /^\./, persistent: true, ignoreInitial: true, interval: 20000, binaryInterval: 20000});
-	//var staticWatcher = chokidar.watch(chaptersPath, {ignored: /^\./, persistent: true, ignoreInitial: true, interval: 20000, binaryInterval: 20000});
 	var atcTreeWatcher = chokidar.watch(atcTreePath, {persistent: true, ignoreInitial: true, interval: 20000, binaryInterval: 20000});
-	var searchWatcher = chokidar.watch(searchesPath, {ignored: /^\./, persistent: false, ignoreInitial: true, interval: 1000, binaryInterval: 2000});
-
-
-
-	searchWatcher.on('error', function(error) {console.error('Error happened on search file watch', error);})
-	searchWatcher.on('add', function(path) {
-		if (path.indexOf(".json.gz") > -1) {
-			//console.log('File', path, 'has been added');
-			finishedSearches[path] = true;
-			
-		}
-	});
-
-	searchWatcher.on('unlink', function(path) {
-		if (path.indexOf(".json.gz") > -1) {
-			finishedSearches[path] = undefined;
-		}
-	});
 
 	chaptersWatcher.on('error', function(error) {console.error('Error happened on chapters file watch', error);})
 	console.log("Watching " + chaptersPath + " for changes...");
@@ -100,9 +68,6 @@ function initFileWatchers() {
 
 		console.log("Clearing cached file reads.");
 		clearCachedFileReads();
-
-		console.log("Reinitializing search index.");
-		initSearchIndex();
 
 	});
 
@@ -114,9 +79,6 @@ function initFileWatchers() {
 
 		console.log("Reloading ATC tree.");
 		atcTree = JSON.parse(fs.readFileSync(__dirname + "/../../npl/atcTree.json", "utf8"));
-
-		console.log("Reinitializing search index.");
-		initSearchIndex();
 
 	});
 
@@ -176,24 +138,14 @@ app.get('/search', function(req,res){
 	
 	if (terms === "") {
 		locals.err = false;
-		locals.results = {titlesearch: [], medicinesearch: [], contentsearch: []};
+		locals.results = {medicinesearch: [], contentsearch: []};
 		res.render('search.ejs', locals);
 		
 	} else {
 
 		async.parallel({
-			titlesearch: function(callback) {
-				request('http://127.0.0.1:' + networkPort + '/titlesearch?search=' + encodeURIComponent(terms), {'json': true}, function (err, response, body) {
-
-					if (err) {
-						callback(err)
-					} else {
-						callback(null, body);
-					}
-				});
-			},
 			contentsearch: function(callback) {
-				request('http://127.0.0.1:' + networkPort + '/contentsearch?search=' + encodeURIComponent(terms), {'json': true}, function (err, response, body) {
+				request('http://127.0.0.1:' + searchPort + '/contentsearch?search=' + encodeURIComponent(terms), {'json': true}, function (err, response, body) {
 
 					if (err) {
 						callback(err)
@@ -203,7 +155,7 @@ app.get('/search', function(req,res){
 				});
 			},
 			medicinesearch: function(callback) {
-				request('http://127.0.0.1:' + networkPort + '/medicinesearch?search=' + encodeURIComponent(terms), {'json': true}, function (err, response, body) {
+				request('http://127.0.0.1:' + searchPort + '/medicinesearch?search=' + encodeURIComponent(terms), {'json': true}, function (err, response, body) {
 
 					if (err) {
 						callback(err)
@@ -399,36 +351,42 @@ app.get('/tocitems', function(req,res){
 });
 
 function getSiteMap(callback) {
-	var header = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\" xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n";
-	var footer = "\n</urlset>";
-	
-	var content = [];
 
-	//Get all pages
-	fs.readdir(__dirname + "/chapters", function(err, data) {
-		if (err) {
-			callback(err, "");
-		} else {
-
-			var htmlFiles = data.filter(function(fileName) { return (fileName.indexOf(".html") > -1);})
-	
-			for (var i = 0; i < htmlFiles.length; i++) {
-				content.push("\t<url>");
-				content.push("\t\t<loc>http://www.lakemedelsboken.se/" + htmlFiles[i] + "</loc>");
-				content.push("\t</url>");
-			}
-	
-			content = content.join("\n");
-	
-			var sitemap = header + content + footer;
-
-			callback(null, sitemap);
-			
-		}
+	if (siteMap === null) {
 		
-	});
-
+		var header = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\" xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n";
+		var footer = "\n</urlset>";
 	
+		var content = [];
+
+		//Get all pages
+		fs.readdir(__dirname + "/chapters", function(err, data) {
+			if (err) {
+				callback(err, "");
+			} else {
+
+				var htmlFiles = data.filter(function(fileName) { return (fileName.indexOf(".html") > -1);})
+	
+				for (var i = 0; i < htmlFiles.length; i++) {
+					content.push("\t<url>");
+					content.push("\t\t<loc>http://www.lakemedelsboken.se/" + htmlFiles[i] + "</loc>");
+					content.push("\t</url>");
+				}
+	
+				content = content.join("\n");
+	
+				var combined = header + content + footer;
+
+				siteMap = combined;
+
+				callback(null, siteMap);
+			
+			}
+		
+		});
+	} else {
+		callback(null, siteMap);
+	}
 }
 
 function getIndexByChapterId(chapterId) {
@@ -537,1219 +495,69 @@ function getChaptersFromChapterId(chapterId) {
 	
 }
 
-function createCheckSum(data) {
-	var checksum = crypto.createHash("sha1");
-	checksum.update(data);
-	return checksum.digest("hex");
-}
-
-function controlSearchChecksums(searchDir, checksum) {
-	var prepopSearchesNr = 0;
-	var searchChecksumPath = path.normalize(searchDir + "/indexchecksum.txt");
-	var checksumsMatch = false;
-	if (fs.existsSync(searchChecksumPath)) {
-		var oldCheckSum = fs.readFileSync(searchChecksumPath, "utf8");
-		//console.error("Checking if \"" + oldCheckSum + "\" == \"" + checksum + "\"");
-		checksumsMatch = (oldCheckSum === checksum);
-	}
-	
-	if (!checksumsMatch) {
-		var files = fs.readdirSync(searchDir);
-		for (var i=0; i < files.length; i++) {
-			if (files[i].indexOf(".json") > -1) {
-				prepopSearchesNr++;
-				if (fs.existsSync(searchDir + files[i])) {
-					fs.unlinkSync(searchDir + files[i]);
-				}
-			}
-		}
-	} else {
-		console.log("Prepopulated search checksums match in dir: " + searchDir + ", not clearing searches.")
-	}
-
-	if (prepopSearchesNr > 0) {
-		console.log(prepopSearchesNr + " prepopulated searches were cleared in dir: " + searchDir);
-	}
-
-	//Set current search index checksum for searches
-	fs.writeFileSync(searchChecksumPath, checksum, "utf8");
-	
-}
-
-var isInitializingSearchIndex = false;
-
-function initSearchIndex() {
-
-	if (isInitializingSearchIndex) {
-		return;
-	}
-
-	isInitializingSearchIndex = true;
-
-	//Cleanup
-	if (workerFarm !== null) {
-		workerFarm.end(titleSearchers);
-		workerFarm.end(contentSearchers);
-		workerFarm.end(boxSearchers);
-		workerFarm.end(medicineSearchers);
-	}
-
-	if (workerFarm === null) {
-		workerFarm = require("worker-farm");
-	}
-	
-	searchIndex = [];
-	searchIndices = [];
-
-	//Iterate and add all search indexes
-	var previewFolders = fs.readdirSync(__dirname + "/chapters/");
-	for (var i=0; i < previewFolders.length; i++) {
-		if (previewFolders[i].indexOf("_index") > -1) {
-			var index = JSON.parse(fs.readFileSync(__dirname + "/chapters/" + previewFolders[i] + "/" + previewFolders[i].replace("_index", ".json")));
-			searchIndex = searchIndex.concat(index);
-			searchIndices.push(previewFolders[i]);
-		}
-	}
-
-	console.log("Book search index is populated with " + searchIndex.length + " items.");
-	console.log("Medicine search index is populated with " + atcTree.length + " items.");
-
-	//Create checksum for search index
-	var indexChecksum = createCheckSum(JSON.stringify(searchIndex));
-	var medicineIndexChecksum = createCheckSum(JSON.stringify(atcTree));
-
-	titleSearchers = workerFarm({maxConcurrentWorkers: 2}, require.resolve("./workers/titlesearcher"));
-	contentSearchers = workerFarm({maxConcurrentWorkers: 4}, require.resolve("./workers/contentsearcher"));
-	boxSearchers = workerFarm({maxConcurrentWorkers: 2}, require.resolve("./workers/boxsearcher"));
-	medicineSearchers = workerFarm({maxConcurrentWorkers: 4}, require.resolve("./workers/medicinesearcher"));
-
-	//Clear prepopulated searches if checksums do not match 
-	controlSearchChecksums(path.normalize(__dirname + "/../../search/titlesearches/"), indexChecksum);
-	controlSearchChecksums(path.normalize(__dirname + "/../../search/contentsearches/"), indexChecksum);
-	controlSearchChecksums(path.normalize(__dirname + "/../../search/boxsearches/"), indexChecksum);
-	controlSearchChecksums(path.normalize(__dirname + "/../../search/medicinesearches/"), medicineIndexChecksum);
-
-	
-	populateFinishedSearches(path.normalize(__dirname + "/../../search/titlesearches/"));
-	populateFinishedSearches(path.normalize(__dirname + "/../../search/contentsearches/"));
-	populateFinishedSearches(path.normalize(__dirname + "/../../search/boxsearches/"));
-	populateFinishedSearches(path.normalize(__dirname + "/../../search/medicinesearches/"));
-
-	isInitializingSearchIndex = false;
-}
-
-function populateFinishedSearches(searchDir) {
-
-	var files = fs.readdirSync(searchDir);
-	for (var i = 0; i < files.length; i++) {
-		if (files[i].indexOf(".json.gz") > -1) {
-			finishedSearches[searchDir + files[i]] = true;
-		}
-	}
-}
-
-function getResultsThatMatchAllTerms(searchResults) {
-	
-	var numberOfSearchResults = Object.keys(searchResults).length;
-
-	//Check which array is the shortest one
-	var shortestResultsKey = null;
-	for (var key in searchResults) {
-		if (shortestResultsKey === null) {
-			shortestResultsKey = key;
-		} else {
-			if (searchResults[key].length < searchResults[shortestResultsKey].length) {
-				shortestResultsKey = key;
-			}
-		}
-	}
-	
-	//Create objects for the other arrays with id as key
-	var compareToSearchResults = [];
-	for (var key in searchResults) {
-		if (key !== shortestResultsKey) {
-			var resultObject = {};
-			var resultArray = searchResults[key];
-			for (var i=0; i < resultArray.length; i++) {
-				resultObject[resultArray[i].id] = resultArray[i].score;
-			}
-			compareToSearchResults.push(resultObject);
-		}
-	}
-
-	var crossMatches = {};
-	//Check cross matches
-	var shortestArray = searchResults[shortestResultsKey];
-	for (var i=0; i < shortestArray.length; i++) {
-		var idToMatch = shortestArray[i].id;
-		for (var j=0; j < compareToSearchResults.length; j++) {
-			if (compareToSearchResults[j][idToMatch] !== undefined) {
-				//A match
-				if (crossMatches[idToMatch] === undefined) {
-					crossMatches[idToMatch] = {item: shortestArray[i], count: 2, score: (shortestArray[i].score + compareToSearchResults[j][idToMatch])};
-				} else {
-					crossMatches[idToMatch].count++;
-					crossMatches[idToMatch].score += compareToSearchResults[j][idToMatch];
-				}
-			}
-		}
-	}
-
-
-	var resultsWithScores = [];
-	var results = [];
-	
-	//Only keep the ones that match all terms
-	for (var id in crossMatches) {
-		if (crossMatches.hasOwnProperty(id) && (crossMatches[id].count >= numberOfSearchResults)) {
-			resultsWithScores.push({item: crossMatches[id].item, score: crossMatches[id].score});
-		}
-	}
-
-	//Sort on lowest score
-	resultsWithScores.sort(function (a, b) {
-		return a.score - b.score;
-	});
-
-	//Return only the items
-	for (var i = 0; i < resultsWithScores.length; i++) {
-		results.push(resultsWithScores[i].item);
-	}	
-	
-	return results;
-}
-
 app.get('/medicinesearch', function(req,res){
 
-	var searchTerms = req.query["search"].trim().toLowerCase().replace(/\s+/g, " ");
-
-	var startDate = new Date().getTime();
-	var start = {time: startDate, terms: searchTerms};
-
-	var searchLimit = req.query["limit"];
-
-	//Implement limit
-	var limit = true;
-	if (searchLimit !== undefined) {
-		limit = false;
-	}
-
-	var replaceCommon = req.query["replace"];
-
-	//Implement replacement of common characters
-	var replaceCommonCharacters = true;
-	if (replaceCommon !== undefined) {
-		replaceCommonCharacters = false;
-	}
-
-	replaceCommonCharacters = false;
-
-	var results = [];
-	
-	var resultsLimit = 40;
-	
-	//Find already finished search for the same terms
-	var safeTerms = getSafeSearchTerms(searchTerms);
-	var possibleMedicineSearchFileName = path.normalize(__dirname + "/../../search/medicinesearches/" + safeTerms + ".json.gz");
-
-	if (finishedSearches[possibleMedicineSearchFileName] !== undefined) {
-
-		fs.readFile(possibleMedicineSearchFileName, function(err, data) {
-			if (err) {
-				res.json([]);
-				console.error(err);
-				fs.unlink(possibleMedicineSearchFileName, function(err) {});
-			} else {
-				zlib.unzip(data, function(err, buffer) {
-					if (!err) {
-						var errorParsingJSON = false;
-						try {
-							results = JSON.parse(buffer.toString());
-						} catch (err) {
-							console.error(err);
-							errorParsingJSON = true;
-						}
-
-
-						if (!errorParsingJSON) {
-							if (limit && results.length > resultsLimit) {
-								results.length = resultsLimit;
-							}
-
-							//Exit 1
-							res.json(results);
-
-							//var endDate = new Date().getTime();
-							//console.log(start.terms + " finished in " + (endDate - start.time) + ", fetched from finished search.");
-						} else {
-
-							res.json([]);
-							fs.unlink(possibleMedicineSearchFileName, function(err) {});
-
-							//var endDate = new Date().getTime();
-							//console.log(start.terms + " finished in " + (endDate - start.time) + ", generated an error when trying to parse the file " + possibleMedicineSearchFileName);
-							
-						}
-
-					} else {
-						res.json([]);
-						console.error(err);
-						fs.unlink(possibleSearchFileName, function(err) {});
-					}
-				});
-			}
-		});
-	} else {
-
-		searchTerms = parseSearchTerms(searchTerms, !limit, replaceCommonCharacters);
-		
-		if (searchIndex === null) {
-			initSearchIndex();
-		}
-
-		var searchResults = {};
-
-		//Perform the actual searching
-
-		if (searchTerms.length === 1) {
-			//Main search for one word
-			var term = searchTerms[0];
-
-			if (term.length > 32) {
-				term = term.substr(0, 32);
-			}
-
-			var allSearchResults = [];
-			var count = 0;
-			
-			//Distribute search to 8 search workers
-			//console.time("search");
-			for (var i = 0; i < 8; i++) {
-				//console.time("start");
-				medicineSearchers({index: i, term: term}, function(err, data) {
-
-					//console.timeEnd("start");
-
-					if (err) {
-						console.error(err);
-					}
-
-					allSearchResults.push(data);
-					count++;
-					if (count === 8) {
-						//console.timeEnd("search");
-
-						//Done searching, continue
-						var merged = [];
-						merged = merged.concat.apply(merged, allSearchResults);
-						
-						//Sort according to score
-						merged.sort(function(a, b) {
-							return a.score - b.score;
-						});
-
-						searchResults[0] = merged;
-						
-						//console.time("filter 1");
-						results = filterAndSaveSearchResults(searchTerms, searchResults, possibleMedicineSearchFileName);
-						//console.timeEnd("filter 1");
-
-						if (limit && results.length > resultsLimit) {
-							results.length = resultsLimit;
-						}
-
-						var endDate = new Date().getTime();
-						//console.log(start.terms + " finished in " + (endDate - start.time));
-
-						//Normal exit
-						res.json(results);
-					}
-				});
-			}
-			
-			
-		} else if (searchTerms.length > 1){
-			//Multiple words, perform searches in parallel
-
-			//Limit to 6 words
-			if (searchTerms.length > 6) {
-				searchTerms.length = 6;
-			}
-
-			//Create queue
-			var searchQueue = async.queue(function (task, callback) {
-				request("http://127.0.0.1:" + networkPort + "/medicinesearch?search=" + encodeURIComponent(task.term) + "&limit=off&replace=off", {'json': true}, function (error, response, body) {
-					var requestResult = [];
-					if (!error && response.statusCode == 200) {
-						requestResult = body;
-					} else if (error) {
-						console.log(error);
-					} else {
-						console.log("Status code: " + response.statusCode);
-					}
-					callback(null, task.index, requestResult);
-				});
-			}, (numCPUs - 1));
-
-			//When all the searches have finished
-			searchQueue.drain = function() {
-				//Finished with async search
-				//console.time("filter 2");
-				results = filterAndSaveSearchResults(searchTerms, searchResults, possibleMedicineSearchFileName);
-				//console.timeEnd("filter 2");
-
-				if (limit && results.length > resultsLimit) {
-					results.length = resultsLimit;
-				}
-
-				//Async exit
-				res.json(results);
-				var endDate = new Date().getTime();
-				//console.log(start.terms + " finished in " + (endDate - start.time) + ", multiple terms search.");
-
-			}
-
-			//Iterate terms and add to queue
-			for (var i=0; i < searchTerms.length; i++) {
-				var term = searchTerms[i];
-
-				if (term.length > 32) {
-					term = term.substr(0, 32);
-				}
-				
-				//Add item to the queue
-				searchQueue.push({index: i, term: term}, function (err, index, result) {
-					//Callback when a request has finished
-					if (err) {
-						console.log(err);
-					} else {
-						//Add result to master object
-						searchResults[index] = result;
-					}
-				});
-			}
-
+	request("http://127.0.0.1:" + searchPort + req.originalUrl, {'json': true}, function (error, response, body) {
+		var requestResult = [];
+		if (!error && response.statusCode == 200) {
+			requestResult = body;
+		} else if (error) {
+			console.log(error);
 		} else {
-			//Exit, empty
-			res.json([]);
-
-			var endDate = new Date().getTime();
-			//console.log(start.terms + " finished in " + (endDate - start.time) + ", no terms.");
+			console.log("Status code: " + response.statusCode);
 		}
-
-	}
-
+		res.json(requestResult);
+	});
 
 });
 
 app.get('/titlesearch', function(req,res){
 
-	var searchTerms = req.query["search"].trim().toLowerCase().replace(/\s+/g, " ");
-
-	var searchLimit = req.query["limit"];
-
-	//Implement limit
-	var limit = true;
-	if (searchLimit !== undefined) {
-		limit = false;
-	}
-
-	var replaceCommon = req.query["replace"];
-
-	//Implement replacement of common characters
-	var replaceCommonCharacters = true;
-	if (replaceCommon !== undefined) {
-		replaceCommonCharacters = false;
-	}
-
-	var results = [];
-	
-	var resultsLimit = 40;
-	
-	//Find already finished search for the same terms
-	var safeTerms = getSafeSearchTerms(searchTerms);
-	var possibleSearchFileName = path.normalize(__dirname + "/../../search/titlesearches/" + safeTerms + ".json.gz");
-
-//	fs.exists(possibleSearchFileName, function(fileExists) {
-		if (finishedSearches[possibleSearchFileName] !== undefined) {
-			fs.readFile(possibleSearchFileName, function(err, data) {
-				
-				if (err) {
-					res.json([]);
-					console.error(err);
-					fs.unlink(possibleSearchFileName, function(err) {});
-				} else {
-					zlib.unzip(data, function(err, buffer) {
-						if (!err) {
-						
-							var errorParsingJSON = false;
-							try {
-								results = JSON.parse(buffer.toString());
-							} catch (err) {
-								console.error(err);
-								errorParsingJSON = true;
-							}
-
-
-							if (!errorParsingJSON) {
-
-								if (limit && results.length > resultsLimit) {
-									results.length = resultsLimit;
-								}
-
-								//Exit 1
-								res.json(results);
-							} else {
-								res.json([]);
-								fs.unlink(possibleSearchFileName, function(err) {});
-							}
-
-						} else {
-							res.json([]);
-							console.error(err);
-							fs.unlink(possibleSearchFileName, function(err) {});
-						}
-					});
-				}
-
-			});
+	request("http://127.0.0.1:" + searchPort + req.originalUrl, {'json': true}, function (error, response, body) {
+		var requestResult = [];
+		if (!error && response.statusCode == 200) {
+			requestResult = body;
+		} else if (error) {
+			console.log(error);
 		} else {
-
-			if (searchTerms.indexOf(" ") > -1) {
-				replaceCommonCharacters = false;
-			}
-
-			searchTerms = parseSearchTerms(searchTerms, !limit, replaceCommonCharacters);
-			
-			if (searchIndex === null) {
-				initSearchIndex();
-			}
-
-			var searchResults = {};
-
-			//Perform the actual searching
-
-			if (searchTerms.length === 1) {
-				//Main search for one word
-				var term = searchTerms[0];
-
-				if (term.length > 32) {
-					term = term.substr(0, 32);
-				}
-
-				var allSearchResults = [];
-				var count = 0;
-			
-				//Distribute search to search workers
-				for (var i = 0; i < searchIndices.length; i++) {
-					titleSearchers({index: searchIndices[i], term: term}, function(err, data) {
-						allSearchResults.push(data);
-						count++
-						if (count === searchIndices.length) {
-							//Done searching, continue
-							var merged = [];
-							merged = merged.concat.apply(merged, allSearchResults);
-						
-							//Sort according to score and level
-							merged.sort(function(a, b) {
-								//return a.score - b.score;
-
-							    var aScore = a.score;
-							    var bScore = b.score;
-							    var aLevel = a.level;
-							    var bLevel = b.level;
-							    //console.log(aLow + " | " + bLow);
-
-							    if(aScore == bScore)
-							    {
-							        return (aLevel < bLevel) ? -1 : (aLevel > bLevel) ? 1 : 0;
-							    }
-							    else
-							    {
-							        return (aScore < bScore) ? -1 : 1;
-							    }
-							});
-
-							searchResults[0] = merged;
-
-							results = filterAndSaveSearchResults(searchTerms, searchResults, possibleSearchFileName);
-
-							if (limit && results.length > resultsLimit) {
-								results.length = resultsLimit;
-							}
-
-							//Normal exit
-							res.json(results);
-						}
-					});
-				}
-			
-			} else if (searchTerms.length > 1){
-				//Multiple words, perform searches in parallel
-
-				//Limit to 6 words
-				if (searchTerms.length > 6) {
-					searchTerms.length = 6;
-				}
-
-				//Create queue
-				var titleQueue = async.queue(function (task, callback) {
-					request("http://127.0.0.1:" + networkPort + "/titlesearch?search=" + encodeURIComponent(task.term) + "&limit=off&replace=off", {'json': true}, function (error, response, body) {
-						var requestResult = [];
-						if (!error && response.statusCode == 200) {
-							requestResult = body;
-						} else if (error) {
-							console.log(error);
-						} else {
-							console.log("Status code: " + response.statusCode);
-						}
-						callback(null, task.index, requestResult);
-					});
-				}, (numCPUs - 1));
-
-				//When all the searches have finished
-				titleQueue.drain = function() {
-					//Finished with async search
-
-					results = filterAndSaveSearchResults(searchTerms, searchResults, possibleSearchFileName);
-
-					//Sort according to score and level
-					results.sort(function(a, b) {
-						//return a.score - b.score;
-
-					    var aScore = a.score;
-					    var bScore = b.score;
-					    var aLevel = a.level;
-					    var bLevel = b.level;
-					    //console.log(aLow + " | " + bLow);
-
-					    if(aScore == bScore)
-					    {
-					        return (aLevel < bLevel) ? -1 : (aLevel > bLevel) ? 1 : 0;
-					    }
-					    else
-					    {
-					        return (aScore < bScore) ? -1 : 1;
-					    }
-					});
-
-					if (limit && results.length > resultsLimit) {
-						results.length = resultsLimit;
-					}
-
-					//Async exit
-					res.json(results);
-				}
-
-				//Iterate terms and add to queue
-				for (var i=0; i < searchTerms.length; i++) {
-					var term = searchTerms[i];
-
-					if (term.length > 32) {
-						term = term.substr(0, 32);
-					}
-				
-					//Add item to the queue
-					titleQueue.push({index: i, term: term}, function (err, index, result) {
-						//Callback when a request has finished
-						if (err) {
-							console.log(err);
-						} else {
-							//Add result to master object
-							searchResults[index] = result;
-						}
-					});
-				}
-
-			} else {
-				//Exit, empty
-				res.json([]);
-			}
-
+			console.log("Status code: " + response.statusCode);
 		}
-			
-//	});
-
+		res.json(requestResult);
+	});
 
 });
 
-
 app.get('/contentsearch', function(req,res){
 
-	var searchTerms = req.query["search"].trim().toLowerCase().replace(/\s+/g, " ");
-
-	var searchLimit = req.query["limit"];
-
-	//Implement limit
-	var limit = true;
-	if (searchLimit !== undefined) {
-		limit = false;
-	}
-
-	var replaceCommon = req.query["replace"];
-
-	//Implement replacement of common characters
-	var replaceCommonCharacters = true;
-	if (replaceCommon !== undefined) {
-		replaceCommonCharacters = false;
-	}
-
-	replaceCommonCharacters = false;
-
-	var results = [];
-	
-	var resultsLimit = 40;
-	
-	//Find already finished search for the same terms
-	var safeTerms = getSafeSearchTerms(searchTerms);
-	var possibleSearchFileName = path.normalize(__dirname + "/../../search/contentsearches/" + safeTerms + ".json.gz");
-
-	if (finishedSearches[possibleSearchFileName] !== undefined) {
-
-		fs.readFile(possibleSearchFileName, function(err, data) {
-			if (err) {
-				res.json([]);
-				console.error(err);
-				fs.unlink(possibleSearchFileName, function(err) {});
-			} else {
-
-				zlib.unzip(data, function(err, buffer) {
-					if (!err) {
-						var errorParsingJSON = false;
-						try {
-							results = JSON.parse(buffer.toString());
-						} catch (err) {
-							console.error(err);
-							errorParsingJSON = true;
-						}
-
-
-						if (!errorParsingJSON) {
-
-							if (limit && results.length > resultsLimit) {
-								results.length = resultsLimit;
-							}
-
-							//Exit 1
-							res.json(results);
-						} else {
-							res.json([]);
-							fs.unlink(possibleSearchFileName, function(err) {});
-						}
-
-					} else {
-						res.json([]);
-						console.error(err);
-						fs.unlink(possibleSearchFileName, function(err) {});
-					}
-				});
-			}
-		});
-	} else {
-
-		searchTerms = parseSearchTerms(searchTerms, !limit, replaceCommonCharacters);
-		
-		if (searchIndex === null) {
-			initSearchIndex();
-		}
-
-		var searchResults = {};
-
-		//Perform the actual searching
-		if (searchTerms.length === 1) {
-			//Main search for one word
-			var term = searchTerms[0];
-
-			if (term.length > 32) {
-				term = term.substr(0, 32);
-			}
-
-			var allSearchResults = [];
-			var count = 0;
-			
-			//Distribute search to search workers
-			for (var i = 0; i < searchIndices.length; i++) {
-				contentSearchers({index: searchIndices[i], term: term}, function(err, data) {
-					allSearchResults.push(data);
-					count++;
-					if (count === searchIndices.length) {
-						//Done searching, continue
-						var merged = [];
-						merged = merged.concat.apply(merged, allSearchResults);
-						
-						//Sort according to score
-						merged.sort(function(a, b) {
-							return a.score - b.score;
-						});
-
-						searchResults[0] = merged;
-
-						results = filterAndSaveSearchResults(searchTerms, searchResults, possibleSearchFileName);
-
-						if (limit && results.length > resultsLimit) {
-							results.length = resultsLimit;
-						}
-
-						//Normal exit
-						res.json(results);
-					}
-				});
-			}
-		} else if (searchTerms.length > 1){
-			//Multiple words, perform searches in parallel
-
-			//Limit to 6 words
-			if (searchTerms.length > 6) {
-				searchTerms.length = 6;
-			}
-
-			//Create queue
-			var contentQueue = async.queue(function (task, callback) {
-				request("http://127.0.0.1:" + networkPort + "/contentsearch?search=" + encodeURIComponent(task.term) + "&limit=off&replace=off", {'json': true}, function (error, response, body) {
-					var requestResult = [];
-					if (!error && response.statusCode == 200) {
-						requestResult = body;
-					} else if (error) {
-						console.log(error);
-					} else {
-						console.log("Status code: " + response.statusCode);
-					}
-					callback(null, task.index, requestResult);
-				});
-			}, (numCPUs - 1));
-
-			//When all the searches have finished
-			contentQueue.drain = function() {
-				//Finished with async search
-								
-				results = filterAndSaveSearchResults(searchTerms, searchResults, possibleSearchFileName);
-
-				if (limit && results.length > resultsLimit) {
-					results.length = resultsLimit;
-				}
-
-				//Async exit
-				res.json(results);
-			}
-
-			//Iterate terms and add to queue
-			for (var i=0; i < searchTerms.length; i++) {
-				var term = searchTerms[i];
-
-				if (term.length > 32) {
-					term = term.substr(0, 32);
-				}
-				
-				//Add item to the queue
-				contentQueue.push({index: i, term: term}, function (err, index, result) {
-					//Callback when a request has finished
-					if (err) {
-						console.log(err);
-					} else {
-						//Add result to master object
-						searchResults[index] = result;
-					}
-				});
-			}
-
+	request("http://127.0.0.1:" + searchPort + req.originalUrl, {'json': true}, function (error, response, body) {
+		var requestResult = [];
+		if (!error && response.statusCode == 200) {
+			requestResult = body;
+		} else if (error) {
+			console.log(error);
 		} else {
-			//Exit, empty
-			res.json([]);
+			console.log("Status code: " + response.statusCode);
 		}
-
-	}
-
+		res.json(requestResult);
+	});
 
 });
 
 app.get('/boxsearch', function(req,res){
 
-	var searchTerms = req.query["search"].trim().toLowerCase().replace(/\s+/g, " ");
-
-	var searchLimit = req.query["limit"];
-
-	//Implement limit
-	var limit = true;
-	if (searchLimit !== undefined) {
-		limit = false;
-	}
-
-	var replaceCommon = req.query["replace"];
-
-	//Implement replacement of common characters
-	var replaceCommonCharacters = true;
-	if (replaceCommon !== undefined) {
-		replaceCommonCharacters = false;
-	}
-
-	var results = [];
-	
-	var resultsLimit = 40;
-	
-	//Find already finished search for the same terms
-	var safeTerms = getSafeSearchTerms(searchTerms);
-	var possibleSearchFileName = path.normalize(__dirname + "/../../search/boxsearches/" + safeTerms + ".json.gz");
-
-	if (finishedSearches[possibleSearchFileName] !== undefined) {
-
-		fs.readFile(possibleSearchFileName, function(err, data) {
-			zlib.unzip(data, function(err, buffer) {
-				if (!err) {
-					var errorParsingJSON = false;
-					try {
-						results = JSON.parse(buffer.toString());
-					} catch (err) {
-						console.error(err);
-						errorParsingJSON = true;
-					}
-
-
-					if (!errorParsingJSON) {
-
-						if (limit && results.length > resultsLimit) {
-							results.length = resultsLimit;
-						}
-
-						//Exit 1
-						res.json(results);
-					} else {
-						res.json([]);
-						fs.unlink(possibleSearchFileName, function(err) {
-							
-						});
-						
-					}
-
-				} else {
-					res.json([]);
-					console.error("err");
-					fs.unlink(possibleSearchFileName, function(err) {});
-				}
-			});
-		});
-	} else {
-
-		searchTerms = parseSearchTerms(searchTerms, !limit, replaceCommonCharacters);
-		
-		if (searchIndex === null) {
-			initSearchIndex();
-		}
-
-		var searchResults = {};
-
-		//Perform the actual searching
-
-		if (searchTerms.length === 1) {
-			//Main search for one word
-			var term = searchTerms[0];
-
-			if (term.length > 32) {
-				term = term.substr(0, 32);
-			}
-
-			var allSearchResults = [];
-			var count = 0;
-			
-			//Distribute search to search workers
-			for (var i = 0; i < searchIndices.length; i++) {
-				boxSearchers({index: searchIndices[i], term: term}, function(err, data) {
-					allSearchResults.push(data);
-					count++;
-					if (count === searchIndices.length) {
-						//Done searching, continue
-						var merged = [];
-						merged = merged.concat.apply(merged, allSearchResults);
-						
-						//Sort according to score
-						merged.sort(function(a, b) {
-							return a.score - b.score;
-						});
-
-						searchResults[0] = merged;
-
-						results = filterAndSaveSearchResults(searchTerms, searchResults, possibleSearchFileName);
-
-						if (limit && results.length > resultsLimit) {
-							results.length = resultsLimit;
-						}
-
-						//Normal exit
-						res.json(results);
-					}
-				});
-			}
-			
-		} else if (searchTerms.length > 1){
-			//Multiple words, perform searches in parallel
-
-			//Limit to 6 words
-			if (searchTerms.length > 6) {
-				searchTerms.length = 6;
-			}
-
-			//Create queue
-			var therapyQueue = async.queue(function (task, callback) {
-				request("http://127.0.0.1:" + networkPort + "/boxsearch?search=" + encodeURIComponent(task.term) + "&limit=off&replace=off", {'json': true}, function (error, response, body) {
-					var requestResult = [];
-					if (!error && response.statusCode == 200) {
-						requestResult = body;
-					} else if (error) {
-						console.log(error);
-					} else {
-						console.log("Status code: " + response.statusCode);
-					}
-					callback(null, task.index, requestResult);
-				});
-			}, (numCPUs - 1));
-
-			//When all the searches have finished
-			therapyQueue.drain = function() {
-				//Finished with async search
-				results = filterAndSaveSearchResults(searchTerms, searchResults, possibleSearchFileName);
-
-				if (limit && results.length > resultsLimit) {
-					results.length = resultsLimit;
-				}
-
-				//Async exit
-				res.json(results);
-			}
-
-			//Iterate terms and add to queue
-			for (var i=0; i < searchTerms.length; i++) {
-				var term = searchTerms[i];
-
-				if (term.length > 32) {
-					term = term.substr(0, 32);
-				}
-				
-				//Add item to the queue
-				therapyQueue.push({index: i, term: term}, function (err, index, result) {
-					//Callback when a request has finished
-					if (err) {
-						console.log(err);
-					} else {
-						//Add result to master object
-						searchResults[index] = result;
-					}
-				});
-			}
-
+	request("http://127.0.0.1:" + searchPort + req.originalUrl, {'json': true}, function (error, response, body) {
+		var requestResult = [];
+		if (!error && response.statusCode == 200) {
+			requestResult = body;
+		} else if (error) {
+			console.log(error);
 		} else {
-			//Exit, empty
-			res.json([]);
+			console.log("Status code: " + response.statusCode);
 		}
-
-	}
-
-});
-
-function filterAndSaveSearchResults(searchTerms, searchResults, fileName) {
-
-	var results = [];
-
-	if (searchTerms.length > 1) {
-		results = getResultsThatMatchAllTerms(searchResults);
-		
-		//If none matched, return the results for the term with the most results
-		//TODO: Improve this
-		if (results.length === 0) {
-
-			var sortedByLength = [];
-			for (var key in searchResults) {
-				sortedByLength.push(searchResults[key]);
-			}
-			sortedByLength.sort(function(a, b) {
-				return b.length - a.length;
-			});
-			
-			results = sortedByLength[0];
-		}
-	} else {
-		results = searchResults[0];
-	}
-
-	//Remove duplicates
-	results = removeDuplicates(results);
-
-	//If this is a medicine search
-	if (results.length > 0 && results[0].indications !== undefined) {
-
-		var removedItems = [];
-		//Send medicines with no info to the bottom of the list
-		for (var k = results.length - 1; k >= 0; k--) {
-			if (results[k].noinfo === true) {
-				removedItems = removedItems.concat(results.splice(k, 1));
-			}
-		}
-
-		if (removedItems.length > 0) {
-			results = results.concat(removedItems);
-		}
-
-		//Create copy of array
-		var trimmed = JSON.parse(JSON.stringify(results));
-
-		//Remove indications blob before returning or saving
-		for (var i = trimmed.length - 1; i >= 0; i--){
-			trimmed[i].indications = "";
-		}
-
-		results = trimmed;
-		
-	} else if (results.length > 0 && results[0].content !== undefined) {
-		//Remove content blob
-		var trimmed = JSON.parse(JSON.stringify(results));
-
-		for (var i = trimmed.length - 1; i >= 0; i--){
-			trimmed[i].content = "";
-			trimmed[i].products = "";
-		}
-
-		//If results have the same score, sort on level descending
-
-		results = trimmed;
-		
-	}
-
-	//Compress and save to file, async
-	zlib.deflate(JSON.stringify(results), function(err, buffer) {
-		if (!err) {
-
-			fs.writeFile(fileName, buffer, function(err) {
-				if (err) {
-					console.error(err);
-				}
-				finishedSearches[fileName] = true;
-			});
-
-		} else {
-			console.error(err);
-		}
+		res.json(requestResult);
 	});
 
-	return results;
-}
-
-
-function removeDuplicates(items) {
-	var usedIds = {};
-	var results = [];
-	
-	for (var i = 0; i < items.length; i++) {
-		if (usedIds[items[i].id] === undefined) {
-			results.push(items[i]);
-			usedIds[items[i].id] = true;
-		}
-	}
-	
-	return results;
-}
-
-function getSafeSearchTerms(terms) {
-	return createCheckSum(terms);
-}
-
-function parseSearchTerms(terms, skipSplit, replaceCommonCharacters) {
-
-	if (skipSplit === undefined) {
-		skipSplit = false;
-	}
-
-	var result = [];
-	var groups = [];
-
-	//Find encapsulated terms
-	if (terms.indexOf("\"") > -1) {
-
-		//console.log("Incoming: " + terms);
-
-		//Find all "
-		var groupLocations = [];
-		for (var i = 0; i < terms.length; i++) {
-			if (terms[i] === "\"") {
-				groupLocations.push(i);
-			}
-		}
-		
-		//Clear strays
-		if (groupLocations.length === 1 || (groupLocations.length % 2) !== 0) {
-			terms = terms.split("");
-			terms.splice(groupLocations[groupLocations.length - 1], 1);
-			groupLocations.pop();
-			terms = terms.join("");
-		}
-		
-		//console.log("Cleared strays: " + terms);
-		//console.log("Group locations: ", groupLocations);
-
-		//Start grouping into ""
-		if (groupLocations.length > 1) {
-			for (var i = groupLocations.length - 1; i >= 0; i = i - 2) {
-				var start = groupLocations[i - 1];
-				var stop = groupLocations[i];
-				var term = terms.substr(start + 1, (stop - start - 1));
-				groups.push(term);
-				//Remove from terms
-				terms = terms.split("");
-				terms.splice(start, stop - start + 1);
-				terms = terms.join("");
-				
-				//console.log("Singled out: " + term);
-				//console.log("Removed from terms: " + terms);
-			}
-		}
-
-	}
-
-	if (!skipSplit && terms.indexOf(" ") > -1) {
-		result = terms.split(" ");
-	} else {
-		result = [terms];
-	}
-	
-	if (groups.length > 0) {
-		result = result.concat(groups);
-	}
-	
-	//Clear empty terms
-	for (var i = result.length - 1; i >= 0; i--) {
-		if (result[i].trim() === "") {
-			result.splice(i, 1);
-		}
-	}
-
-	if (replaceCommonCharacters) {
-		var newTerms = [];
-	
-		var commonReplacements = {
-			"c": "k",
-			"k": "c",
-			"s": "z",
-			"z": "s"
-		};
-		for (var i = 0; i < result.length; i++) {
-			var original = result[i];
-			var replaced = original;
-			for (var key in commonReplacements) {
-				var re = new RegExp(key, "g");
-				replaced = original.replace(re, commonReplacements[key]);
-				if (replaced !== original) {
-					newTerms.push(replaced);
-				}
-			}
-		}
-	
-		if (newTerms.length > 0) {
-			result = result.concat(newTerms);
-		}
-		
-	}
-	
-	//console.log("Finished terms: ", result);
-	
-	return result;
-}
+});
 
 app.get('/atctree', function(req,res){
 
@@ -2017,53 +825,6 @@ app.get('/product/:nplId?', function(req, res) {
 
 });
 
-/*
-app.get('/atc', function(req, res) {
-
-	//locals.date = new Date().toLocaleDateString();
-
-	var query = req.query["query"];
-	var results = [];
-	var maxResults = 200;
-	if (query !== undefined && query.length > 1) {
-
-		query = query.toLowerCase();
-
-		for (var i=0; i < atcTree.length; i++) {
-
-			if (atcTree[i].type === "atc" && (atcTree[i].title.toLowerCase().indexOf(query) > -1 || atcTree[i].id.toLowerCase().indexOf(query) > -1)) {
-				if (atcTree[i].title.toLowerCase() === query) {
-					results.unshift(atcTree[i].id + " " + atcTree[i].title);
-				} else {
-					results.push(atcTree[i].id + " " + atcTree[i].title);
-				}
-				if (results.length >= maxResults) {
-					break;
-				}
-			}
-
-			if (atcTree[i].type !== "atc" && atcTree[i].title !== undefined && (atcTree[i].title.toLowerCase().indexOf(query) > -1 || atcTree[i].id.toLowerCase().indexOf(query) > -1)) {
-				var parentATC = null;
-				for (var j=0; j < atcTree.length; j++) {
-					if (atcTree[j].id === atcTree[i].parentId) {
-						parentATC = atcTree[j];
-					}
-				};
-				results.push(parentATC.id + " " + parentATC.title + " (*" + atcTree[i].title + ")");
-				if (results.length >= maxResults) {
-					break;
-				}
-			}
-
-		}
-	}
-	var options = {"options": results};
-
-	res.json(options);
-
-});
-*/
-
 var oldIndex = JSON.parse(fs.readFileSync(__dirname + "/previousSiteIndex.json", "utf8"));
 
 function getOldNameFromChapterPath(chapterPath) {
@@ -2149,13 +910,13 @@ app.get('/*', function(req, res){
 
 	if (foundIndex && chapter) {
 		//Perform search
-		request('http://127.0.0.1:' + networkPort + '/titlesearch?search=' + encodeURIComponent(foundIndex + " " + chapter), {'json': true}, function (err, response, body) {
+		request('http://127.0.0.1:' + searchPort + '/titlesearch?search=' + encodeURIComponent(foundIndex + " " + chapter), {'json': true}, function (err, response, body) {
 			if (!err && body !== undefined) {
 				locals.suggestions = body;
 			}
 			
 			if (locals.suggestions.length === 0) {
-				request('http://127.0.0.1:' + networkPort + '/titlesearch?search=' + encodeURIComponent(chapter), {'json': true}, function (err, response, body) {
+				request('http://127.0.0.1:' + searchPort + '/titlesearch?search=' + encodeURIComponent(chapter), {'json': true}, function (err, response, body) {
 					if (!err && body !== undefined) {
 						locals.suggestions = body;
 
@@ -2198,7 +959,7 @@ app.get('/*', function(req, res){
 
 		});
 	} else if (medicineName) {
-		request('http://127.0.0.1:' + networkPort + '/medicinesearch?search=' + encodeURIComponent(medicineName), {'json': true}, function (err, response, body) {
+		request('http://127.0.0.1:' + searchPort + '/medicinesearch?search=' + encodeURIComponent(medicineName), {'json': true}, function (err, response, body) {
 
 			if (!err) {
 				locals.medicineSuggestions = body;
@@ -2210,7 +971,7 @@ app.get('/*', function(req, res){
 
 	} else if (chapter) {
 		console.log("Searching for: " + chapter);
-		request('http://127.0.0.1:' + networkPort + '/titlesearch?search=' + encodeURIComponent(chapter), {'json': true}, function (err, response, body) {
+		request('http://127.0.0.1:' + searchPort + '/titlesearch?search=' + encodeURIComponent(chapter), {'json': true}, function (err, response, body) {
 			if (!err) {
 				locals.suggestions = body;
 

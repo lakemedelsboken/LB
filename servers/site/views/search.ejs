@@ -81,37 +81,9 @@
 						} else {
 						%>
 						<div class="row">
-							<div class="span4">
-								<h3>Rubriker:</h3>
-								<ul style="list-style-type: none; margin-left: 25px; font-family: 'Avenir Next', 'Helvetica Neue Ultra Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-								<%
-								
-								
-								if (results.titlesearch.length === 0) {
-									%>
-									<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon-info-sign"></i></span>Din sökning gav inga resultat</li>
-									<%
-								} else {
-									for	(var i = 0; i < results.titlesearch.length; i++) {
-										var item = results.titlesearch[i];
-										var titlePath = item.titlePath;
-										if (titlePath.indexOf(" && ") > -1) {
-											titlePath = titlePath.split(" && ");
-											titlePath.pop();
-											titlePath = titlePath.join(" &#187; ");
-										}
 
-										%>
-										<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon <%=getIcon(item.type)%>"></i></span><a href="<%=item.chapter%>#<%=item.id%>"><strong><%=item.title%></strong><br><small><%-titlePath%></small></a></li>
-										<%
-									}
-								}
-								%>
-								</ul>
-							</div>
-
-							<div class="span4">
-								<h3>Fritext:</h3>
+							<div class="span7">
+								<h3>Innehåll:</h3>
 								<ul style="list-style-type: none; margin-left: 25px; font-family: 'Avenir Next', 'Helvetica Neue Ultra Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;">
 								<%
 								
@@ -122,7 +94,7 @@
 								} else {
 									for	(var i = 0; i < results.contentsearch.length; i++) {
 										var item = results.contentsearch[i];
-										var titlePath = item.titlePath;
+										var titlePath = item.titlePath_HL;
 										if (titlePath.indexOf(" && ") > -1) {
 											titlePath = titlePath.split(" && ");
 											titlePath.pop();
@@ -130,7 +102,7 @@
 										}
 
 										%>
-										<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon <%=getIcon(item.type)%>"></i></span><a href="<%=item.chapter%>#<%=item.id%>"><strong><%=item.title%></strong><br><small><%-titlePath%></small></a></li>
+										<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon <%=getIcon(item.type)%>"></i></span><a href="<%=item.chapter%>#<%=item.id%>"><strong><%-item.title_HL%></strong><br><small><%-titlePath%></small></a><p><%-item.content_HL%></p></li>
 										<%
 									}
 								}
@@ -138,7 +110,7 @@
 								</ul>
 							</div>
 
-							<div class="span4">
+							<div class="span5">
 								<h3>Läkemedel:</h3>
 								<ul style="list-style-type: none; margin-left: 25px; font-family: 'Avenir Next', 'Helvetica Neue Ultra Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;">
 								<%
@@ -153,7 +125,7 @@
 										var item = results.medicinesearch[i];
 										if (item.type === "atc") {
 											%>
-											<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon <%=getIcon(item.type)%>"></i></span><a href="/atclist/<%=item.id%>"><strong><%=item.title%></strong><br><small><%=item.titlePath%></small></a></li> 
+											<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon <%=getIcon(item.type)%>"></i></span><a href="/atc/<%=item.id%>"><strong><%-item.title_HL%></strong><br><small><%-item.titlePath_HL%></small></a></li> 
 											<%
 										} else if (item.type === "product") {
 											//Add images
@@ -163,7 +135,7 @@
 													images += "<img src='" + item.images[x] + "' class='img-polaroid pull-right' style='width: 30px; height: 30px; margin-right: 5px;' />";
 												}
 											}
-											var title = item.title;
+											var title = item.title_HL;
 											if (title.indexOf(", ") > -1) {
 												title = title.split(", ");
 												title[0] = "<strong>" + title[0] + "</strong>";
@@ -180,7 +152,7 @@
 							
 											var href = "/product/" + item.id;
 											%>
-											<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon <%=getIcon(item.type)%>"></i></span><a href="<%-href%>" class="inlineProduct" data-product-id="<%=item.id%>"><%-images%><%-title%><br><small><%=item.titlePath%></small></a></li> 
+											<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon <%=getIcon(item.type)%>"></i></span><a href="<%-href%>" class="inlineProduct" data-product-id="<%=item.id%>"><%-images%><%-title%><br><small><%-item.titlePath_HL%></small></a></li> 
 											<%
 										}
 									}

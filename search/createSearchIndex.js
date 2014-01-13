@@ -65,7 +65,7 @@ function addToToc(id, title, level, type) {
 		"chapter": chapterName, 
 		"type": type, 
 		"titlePath": titlePath, 
-		"content": title,
+		"content": "",
 		"products": ""
 	});
 	

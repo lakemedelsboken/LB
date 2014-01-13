@@ -20,7 +20,7 @@ var console = {log: function() {}};
 		activeMenu: null,
 		isSearchResultsOpen: false,
 		medicineSearch: null,
-		titleSearch: null,
+		//titleSearch: null,
 		contentSearch: null,
 		isMedicineWindowOpen: false,
 		clickoverIds: 0,
@@ -67,12 +67,13 @@ var console = {log: function() {}};
 					var list = $(event.target);
 					var targetId = list.attr("id");
 
-					if (targetId === "titleSearchResultsList") {
-						self.switchList(list, $("#contentSearchResultsList"));
-					} else if (targetId === "contentSearchResultsList") {
+					//if (targetId === "titleSearchResultsList") {
+						//self.switchList(list, $("#contentSearchResultsList"));
+						//} else 
+					if (targetId === "contentSearchResultsList") {
 						self.switchList(list, $("#medicineSearchResultsList"));
 					} else if (targetId === "medicineSearchResultsList") {
-						self.switchList(list, $("#titleSearchResultsList"));
+						self.switchList(list, $("#contentSearchResultsList"));
 					} else {
 						this.select(event);
 					}
@@ -94,10 +95,11 @@ var console = {log: function() {}};
 						var list = $(event.target);
 						var targetId = list.attr("id");
 
-						if (targetId === "titleSearchResultsList") {
+						//if (targetId === "titleSearchResultsList") {
+							//self.switchList(list, $("#medicineSearchResultsList"));
+							//} else 
+						if (targetId === "contentSearchResultsList") {
 							self.switchList(list, $("#medicineSearchResultsList"));
-						} else if (targetId === "contentSearchResultsList") {
-							self.switchList(list, $("#titleSearchResultsList"));
 						} else if (targetId === "medicineSearchResultsList") {
 							self.switchList(list, $("#contentSearchResultsList"));
 						} else {
@@ -871,7 +873,7 @@ var console = {log: function() {}};
 				if (self.activeMenu !== null && !self.isSearchResultsOpen) {
 					self.activeMenu.focus();
 				} else if (self.isSearchResultsOpen) {
-					$("#titleSearchResultsList").focus();
+					$("#contentSearchResultsList").focus();
 				}
 				event.preventDefault();
 				event.stopPropagation();
@@ -1257,6 +1259,7 @@ var console = {log: function() {}};
 			var search = $("#search");
 			var searchResults = $("#searchResults");
 
+			/*
 			$("#titleSearchResultsList").menu({select: function(event, ui) {
 				event.preventDefault();
 				lb.closeSearchResults();
@@ -1296,6 +1299,8 @@ var console = {log: function() {}};
 					}
 				}
 			}});
+			*/
+
 			$("#contentSearchResultsList").menu({select: function(event, ui) {
 				event.preventDefault();
 				lb.closeSearchResults();
@@ -1566,20 +1571,23 @@ var console = {log: function() {}};
 				if (lb.contentSearch !== null) {
 					lb.contentSearch.abort();
 				}
-				if (lb.titleSearch !== null) {
-					lb.titleSearch.abort();
-				}
+
+				//if (lb.titleSearch !== null) {
+				//	lb.titleSearch.abort();
+				//}
 
 				var list = $("#medicineSearchResultsList");
 				list.empty();
 				list.append($("<li><a href=\"#\"><i class=\"icon-refresh icon-spin\"></i> Söker efter \"" + searchValue + "\"...</a></li>"));
 				list.menu("refresh");
 
+				/*
 				list = $("#titleSearchResultsList");
 				list.empty();
 				list.append($("<li><a href=\"#\"><i class=\"icon-refresh icon-spin\"></i> Söker efter \"" + searchValue + "\"...</a></li>"));
 				list.menu("refresh");
-
+				*/
+				
 				list = $("#contentSearchResultsList");
 				list.empty();
 				list.append($("<li><a href=\"#\"><i class=\"icon-refresh icon-spin\"></i> Söker efter \"" + searchValue + "\"...</a></li>"));
@@ -1592,6 +1600,7 @@ var console = {log: function() {}};
 				var state = lb.getState();
 				History.replaceState(state, "Sök: " + searchValue + " | Läkemedelsboken", state.toString());
 
+				/*
 				lb.titleSearch = $.getJSON("/titlesearch?search=" + encodeURIComponent(searchValue), function(results) {
 
 					lb.titleSearch = null;
@@ -1627,7 +1636,7 @@ var console = {log: function() {}};
 						resultsList.menu("refresh");
 					}
 				});
-
+				*/
 				lb.medicineSearch = $.getJSON("/medicinesearch?search=" + encodeURIComponent(searchValue), function(results) {
 					lb.medicineSearch = null;
 					if ($.trim(search.val()) === searchValue) {
@@ -1636,7 +1645,7 @@ var console = {log: function() {}};
 						for (var i=0; i < results.length; i++) {
 							var item = results[i];
 							if (item.type === "atc") {
-								resultsList.append($("<li id=\"searchResults_" + item.id + "\"><a href=\"/atc/" + item.id + "\" class=\"atcCodeInPopover searchResult\" data-indentation=\"0\" data-atcid=\"" + item.id + "\" data-atctitles=\"" + item.titlePath.replace(/\s\/\s/g, "--").replace(/\s/g, "_") + "\"><i class=\"icon icon-plus-sign-alt\"></i> <strong>" + item.title + "</strong><br><small>" + item.titlePath + "</small></a></li>")); 
+								resultsList.append($("<li id=\"searchResults_" + item.id + "\"><a href=\"/atc/" + item.id + "\" class=\"atcCodeInPopover searchResult\" data-indentation=\"0\" data-atcid=\"" + item.id + "\" data-atctitles=\"" + item.titlePath.replace(/\s\/\s/g, "--").replace(/\s/g, "_") + "\"><i class=\"icon icon-plus-sign-alt\"></i> <strong>" + item.title_HL + "</strong><br><small>" + item.titlePath_HL + "</small></a></li>")); 
 							} else if (item.type === "product") {
 								//Add images
 								var images = "";
@@ -1645,7 +1654,7 @@ var console = {log: function() {}};
 										images += "<img src=\"" + item.images[x] + "\" class=\"img-polaroid pull-right\" style=\"width: 30px; height: 30px; margin-right: 5px;\" />";
 									}
 								}
-								var title = item.title;
+								var title = (item.title_HL !== undefined) ? item.title_HL : item.title;
 								if (title.indexOf(", ") > -1) {
 									title = title.split(", ");
 									title[0] = "<strong>" + title[0] + "</strong>";
@@ -1659,8 +1668,10 @@ var console = {log: function() {}};
 									}
 									title = title.join(" <br>");
 								}
-							
-								resultsList.append($("<li" + (item.noinfo === true ? " class=\"ui-state-disabled\"" : "") + "><a href=\"/product/" + item.id + "\" class=\"inlineProduct searchResult\" data-product-id=\"" + item.id + "\">" + images + title + "<br><small>" + item.titlePath + "</small></a></li>")); 
+
+								var titlePath = (item.titlePath_HL !== undefined) ? item.titlePath_HL : item.titlePath;
+								
+								resultsList.append($("<li" + (item.noinfo === true ? " class=\"ui-state-disabled\"" : "") + "><a href=\"/product/" + item.id + "\" class=\"inlineProduct searchResult\" data-product-id=\"" + item.id + "\">" + images + title + "<br><small>" + titlePath + "</small></a></li>")); 
 							}
 						}
 					
@@ -1687,13 +1698,15 @@ var console = {log: function() {}};
 						resultsList.empty();
 						for (var i=0; i < results.length; i++) {
 							var contentItem = results[i];
-							var titlePath = contentItem.titlePath;
+							var titlePath = (contentItem.titlePath_HL !== undefined) ? contentItem.titlePath_HL : contentItem.titlePath;
 							if (titlePath.indexOf(" && ") > -1) {
 								titlePath = titlePath.split(" && ");
 								titlePath.pop();
 								titlePath = titlePath.join(" &#187; ");
 							}
-							resultsList.append($("<li><a class=\"searchResult\" href=\"/" + contentItem.chapter + "#" + contentItem.id + "\"><i class=\"icon " + lb.getIcon(contentItem.type) + "\"></i> <strong>" + contentItem.title + "</strong><br><small>" + titlePath + "</small></a></li>")); 
+							var title = (contentItem.title_HL !== undefined) ? contentItem.title_HL : contentItem.title;
+							
+							resultsList.append($("<li><a class=\"searchResult\" href=\"/" + contentItem.chapter + "#" + contentItem.id + "\"><i class=\"icon " + lb.getIcon(contentItem.type) + "\"></i> <strong>" + title + "</strong><br><small>" + titlePath + "</small><div>" + contentItem.content_HL + "</div></a></li>")); 
 						}
 						if (results.length === 0) {
 							//$("#contentSearchResults").hide();

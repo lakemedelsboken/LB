@@ -8,21 +8,21 @@
 
 	    <link rel="alternate" type="application/atom+xml" title="L&#228;kemedelsboken" href="/blog/index.xml">
 		
-		<link rel="stylesheet" href="/css/v0.1.1/styles.min.css">
+		<link rel="stylesheet" href="/css/v0.1.2/styles.min.css">
 
 		<!--[if lt IE 9]>
-			<link rel="stylesheet" type="text/css" href="/css/v0.1.1/jquery.ui.ie.min.css"/>
+			<link rel="stylesheet" type="text/css" href="/css/v0.1.2/jquery.ui.ie.min.css"/>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 			
-		<link rel="stylesheet" type="text/css" href="/css/v0.1.1/lb.min.css">
-		<link rel="stylesheet" type="text/css" href="/css/v0.1.1/print.min.css" media="print">
+		<link rel="stylesheet" type="text/css" href="/css/v0.1.2/lb.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/v0.1.2/print.min.css" media="print">
 
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 		<noscript>
-			<link rel="stylesheet" type="text/css" href="/css/v0.1.1/noscript.min.css">
+			<link rel="stylesheet" type="text/css" href="/css/v0.1.2/noscript.min.css">
 		</noscript>
 	</head>
 
@@ -39,9 +39,10 @@
 							<div id="searchResultsNavigation" class="navbar-inverse hidden">
 								<div class="navbar-inner">
 									<ul class="nav">
+										<li class="goto">Gå till:</li>
 										<li class="search"><a href="#sideContainer">Sökruta</a></li>
-										<li class="titles"><a href="#titleSearchResults">Rubriker</a></li>
-										<li class="content"><a href="#contentSearchResults">Fritext</a></li>
+										<!-- <li class="titles"><a href="#titleSearchResults">Rubriker</a></li> -->
+										<li class="content"><a href="#contentSearchResults">Innehåll</a></li>
 										<li class="medicines"><a href="#medicineSearchResults">Läkemedel</a></li>
 									</ul>
 								</div>
@@ -209,17 +210,19 @@
 						<h3 class="popover-title searchTitleBar">Sökresultat <button class="close" id="closeSearchResults">&times;</button></h3>
 						<div class="popover-content">
 							<div class="container" id="searchResultsContainer">
+								<!--
 								<div id="titleSearchResults" class="span4">
 									<h5>Rubriker</h5>
 									<ul class="nav nav-tabs nav-stacked" id="titleSearchResultsList">
 									</ul>
 								</div>
-								<div id="contentSearchResults" class="span4">
-									<h5>Fritext</h5>
+								-->
+								<div id="contentSearchResults" class="span7">
+									<h5>Innehåll</h5>
 									<ul class="nav nav-tabs nav-stacked" id="contentSearchResultsList">
 									</ul>
 								</div>
-								<div id="medicineSearchResults" class="span4">
+								<div id="medicineSearchResults" class="span5">
 									<h5>Läkemedel</h5>
 									<ul class="nav nav-tabs nav-stacked" id="medicineSearchResultsList">
 									</ul>
@@ -300,7 +303,7 @@
 			<tr>
 				<td>
 					<p>
-						<a href="/files/v0.1.1/LB2014.pdf"><i class="icon-file-alt"></i> Ladda hem (15 MB)</a>
+						<a href="/files/v0.1.2/LB2014.pdf"><i class="icon-file-alt"></i> Ladda hem (15 MB)</a>
 					</p>
 				</td>
 			</tr>
@@ -373,6 +376,6 @@
 		  ga('send', 'pageview');
 
 		</script>
-		<script src="/js/v0.1.1/scripts.min.js"></script>
+		<script src="/js/v0.1.2/scripts.min.js"></script>
 	</body>
 </html>

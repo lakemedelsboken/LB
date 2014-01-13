@@ -233,14 +233,23 @@ ol.references li, p.popoverReference {
 	padding: 0;
 }
 
+#searchResultsNavigation li.goto {
+	width: 20%;
+	padding: 3px 5px 3px 5px;
+	text-align: center;
+	font-size: 11px;
+	color: #fdfdfd;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 #searchResultsNavigation li.search {
 	width: 23%;
 }
-
+/*
 #searchResultsNavigation li.titles {
 	width: 24%;
 }
-
+*/
 #searchResultsNavigation li.content {
 	width: 23%;
 }
@@ -912,7 +921,7 @@ div#searchMask {
 
 #titleSearchResultsList, #contentSearchResultsList, #medicineSearchResultsList {
 	border: 0;
-	width: 30%;
+/*	width: 30%;*/
 	padding: 0;
 	position: absolute;
 	overflow-y: auto;
@@ -924,10 +933,29 @@ div#searchMask {
 	border-bottom: 1px;
 }
 
+#contentSearchResultsList {
+	width: 57%;
+}
+
+#medicineSearchResultsList {
+	width: 40%;
+}
 #titleSearchResults, #contentSearchResults, #medicineSearchResults {
 	margin-left: 5px;
 }
 
+.highlight {
+	background-color: #7DC0FA;
+	color: #000;
+	text-shadow: none;
+	padding: 0;
+	-webkit-border-radius: 	4px;
+	-moz-border-radius: 	4px;
+	-ms-border-radius: 		4px;
+	-o-border-radius: 		4px;
+	border-radius: 			4px;
+	
+}
 .modal {
 	top: 10px;
 	bottom: 10px;
