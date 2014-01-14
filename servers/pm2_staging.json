@@ -20,7 +20,7 @@
 	{
 		"name"      : "site",
 		"script"    : "./site/server.js",
-		"instances" : "2",
+		"instances" : "1",
 		"min_uptime" : "100",
 		"max_restarts" : "10",
 		"fileError" : "./logs/site-err.log",
