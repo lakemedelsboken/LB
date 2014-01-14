@@ -6,23 +6,31 @@ var _ = require('underscore'),
     encode = require('../utils').encode,
     slice = Array.prototype.slice;
 
-/*
-  Creates an array of cheerio objects,
-  parsing strings if necessary
-*/
-var makeCheerioArray = function(elems) {
-  return _.reduce(elems, function(dom, elem) {
-    return dom.concat(elem.cheerio ? elem.toArray() : evaluate(elem));
-  }, []);
+// Create an array of nodes, recursing into arrays and parsing strings if
+// necessary
+var makeDomArray = function(elem) {
+  if (elem == null) {
+    return [];
+  } else if (elem.cheerio) {
+    return elem.toArray();
+  } else if (_.isArray(elem)) {
+    return _.flatten(elem.map(makeDomArray));
+  } else if (_.isString(elem)) {
+    return evaluate(elem);
+  } else {
+    return [elem];
+  }
 };
 
 var _insert = function(concatenator) {
   return function() {
     var elems = slice.call(arguments),
-        dom = makeCheerioArray(elems);
+        dom = makeDomArray(elems);
 
     return this.each(function(i, el) {
-      if (_.isFunction(elems[0])) return el; // not yet supported
+      if (_.isFunction(elems[0])) {
+        dom = makeDomArray(elems[0].call(el, i, this.html()));
+      }
       updateDOM(concatenator(dom, el.children || (el.children = [])), el);
     });
   };
@@ -38,22 +46,25 @@ var prepend = exports.prepend = _insert(function(dom, children) {
 
 var after = exports.after = function() {
   var elems = slice.call(arguments),
-      dom = makeCheerioArray(elems);
+      dom = makeDomArray(elems);
 
   this.each(function(i, el) {
-    var siblings = el.parent.children,
+    var parent = el.parent || el.root,
+        siblings = parent.children,
         index = siblings.indexOf(el);
 
     // If not found, move on
     if (!~index) return;
 
+    if (_.isFunction(elems[0])) {
+      dom = makeDomArray(elems[0].call(el, i));
+    }
+
     // Add element after `this` element
     siblings.splice.apply(siblings, [++index, 0].concat(dom));
 
     // Update next, prev, and parent pointers
-    updateDOM(siblings, el.parent);
-    el.parent.children = siblings;
-
+    updateDOM(siblings, parent);
   });
 
   return this;
@@ -61,22 +72,25 @@ var after = exports.after = function() {
 
 var before = exports.before = function() {
   var elems = slice.call(arguments),
-      dom = makeCheerioArray(elems);
+      dom = makeDomArray(elems);
 
   this.each(function(i, el) {
-    var siblings = el.parent.children,
+    var parent = el.parent || el.root,
+        siblings = parent.children,
         index = siblings.indexOf(el);
 
     // If not found, move on
     if (!~index) return;
 
+    if (_.isFunction(elems[0])) {
+      dom = makeDomArray(elems[0].call(el, i));
+    }
+
     // Add element before `el` element
     siblings.splice.apply(siblings, [index, 0].concat(dom));
 
     // Update next, prev, and parent pointers
-    updateDOM(siblings, el.parent);
-    el.parent.children = siblings;
-
+    updateDOM(siblings, parent);
   });
 
   return this;
@@ -93,7 +107,8 @@ var remove = exports.remove = function(selector) {
     elems = elems.filter(selector);
 
   elems.each(function(i, el) {
-    var siblings = el.parent.children,
+    var parent = el.parent || el.root,
+        siblings = parent.children,
         index = siblings.indexOf(el);
 
     if (!~index) return;
@@ -101,26 +116,35 @@ var remove = exports.remove = function(selector) {
     siblings.splice(index, 1);
 
     // Update next, prev, and parent pointers
-    updateDOM(siblings, el.parent);
-    el.parent.children = siblings;
+    updateDOM(siblings, parent);
   });
 
   return this;
 };
 
 var replaceWith = exports.replaceWith = function(content) {
-  content = content.cheerio ? content.toArray() : evaluate(content);
+  var dom = makeDomArray(content);
 
   this.each(function(i, el) {
-    var siblings = el.parent.children,
-        index = siblings.indexOf(el);
+    var parent = el.parent || el.root,
+        siblings = parent.children,
+        index;
 
-    if (!~index) return;
+    if (_.isFunction(content)) {
+      dom = makeDomArray(content.call(el, i));
+    }
 
-    siblings.splice.apply(siblings, [index, 1].concat(content));
+    // In the case that `dom` contains nodes that already exist in other
+    // structures, ensure those nodes are properly removed.
+    updateDOM(dom, null);
 
-    updateDOM(siblings, el.parent);
-    el.parent.children = siblings;
+    index = siblings.indexOf(el);
+
+    // Completely remove old element
+    siblings.splice.apply(siblings, [index, 1].concat(dom));
+    el.parent = el.prev = el.next = null;
+
+    updateDOM(siblings, parent);
   });
 
   return this;
@@ -157,8 +181,8 @@ var toString = exports.toString = function() {
 };
 
 var text = exports.text = function(str) {
-  // If `str` blank or an object
-  if (!str || typeof str === 'object') {
+  // If `str` is undefined, act as a "getter"
+  if (str === undefined) {
     return $.text(this);
   } else if (_.isFunction(str)) {
     // Function support
@@ -188,5 +212,5 @@ var text = exports.text = function(str) {
 var clone = exports.clone = function() {
   // Turn it into HTML, then recreate it,
   // Seems to be the easiest way to reconnect everything correctly
-  return this.constructor($.html(this));
+  return this._make($.html(this));
 };

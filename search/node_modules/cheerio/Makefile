@@ -1,7 +1,8 @@
 REPORTER = dot
 
 test:
-	@./node_modules/mocha/bin/mocha --reporter $(REPORTER)
+	@./node_modules/.bin/jshint lib/ test/
+	@./node_modules/.bin/mocha --reporter $(REPORTER)
 
 setup:
 	@npm install
@@ -14,5 +15,8 @@ test-cov: lib-cov
 
 lib-cov:
 	@jscoverage lib lib-cov
+
+bench:
+	@./benchmark/benchmark.js
 
 .PHONY: test build setup subl
