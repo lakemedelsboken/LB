@@ -59,12 +59,12 @@ initFileWatchers();
 //TODO: Switch to polling
 function initFileWatchers() {
 	
-	var chaptersPath = path.normalize(__dirname + "/../site/chapters/");
+	//var chaptersPath = path.normalize(__dirname + "/../site/chapters/");
 	//var staticPath = path.normalize(__dirname + "/static/");
 	var atcTreePath = path.normalize(__dirname + "/../../npl/atcTree.json");
 	var searchesPath = path.normalize(__dirname + "/../../search/");
 	
-	var chaptersWatcher = chokidar.watch(chaptersPath, {ignored: /^\./, persistent: true, ignoreInitial: true, interval: 20000, binaryInterval: 20000});
+	//var chaptersWatcher = chokidar.watch(chaptersPath, {ignored: /^\./, persistent: true, ignoreInitial: true, interval: 20000, binaryInterval: 20000});
 	//var staticWatcher = chokidar.watch(chaptersPath, {ignored: /^\./, persistent: true, ignoreInitial: true, interval: 20000, binaryInterval: 20000});
 	var atcTreeWatcher = chokidar.watch(atcTreePath, {persistent: true, ignoreInitial: true, interval: 20000, binaryInterval: 20000});
 	var searchWatcher = chokidar.watch(searchesPath, {ignored: /^\./, persistent: false, ignoreInitial: true, interval: 1000, binaryInterval: 2000});
@@ -83,15 +83,17 @@ function initFileWatchers() {
 		}
 	});
 
-	chaptersWatcher.on('error', function(error) {console.error('Error happened on chapters file watch', error);})
-	console.log("Watching " + chaptersPath + " for changes...");
+	//chaptersWatcher.on('error', function(error) {console.error('Error happened on chapters file watch', error);})
+	//console.log("Watching " + chaptersPath + " for changes...");
 
+	/*
 	chaptersWatcher.on('all', function(path, stats) {
 
 		console.log("Reinitializing search index.");
 		initSearchIndex();
 
 	});
+	*/
 
 	atcTreeWatcher.on('error', function(error) {console.error('Error happened on atc file watch', error);})
 	console.log("Watching " + atcTreePath + " for changes...");
@@ -281,7 +283,7 @@ function initSearchIndex() {
 	titleSearchers = workerFarm({maxConcurrentWorkers: 2}, require.resolve("./workers/titlesearcher"));
 	contentSearchers = workerFarm({maxConcurrentWorkers: 4}, require.resolve("./workers/contentsearcher"));
 	boxSearchers = workerFarm({maxConcurrentWorkers: 2}, require.resolve("./workers/boxsearcher"));
-	medicineSearchers = workerFarm({maxConcurrentWorkers: 4}, require.resolve("./workers/medicinesearcher"));
+	medicineSearchers = workerFarm({maxConcurrentWorkers: 3}, require.resolve("./workers/medicinesearcher"));
 
 	//Clear prepopulated searches if checksums do not match 
 	controlSearchChecksums(path.normalize(__dirname + "/../../search/titlesearches/"), indexChecksum);

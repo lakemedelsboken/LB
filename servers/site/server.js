@@ -55,21 +55,21 @@ initFileWatchers();
 //TODO: Switch to polling
 function initFileWatchers() {
 	
-	var chaptersPath = path.normalize(__dirname + "/chapters/");
+	//var chaptersPath = path.normalize(__dirname + "/chapters/");
 	var atcTreePath = path.normalize(__dirname + "/../../npl/atcTree.json");
 	
-	var chaptersWatcher = chokidar.watch(chaptersPath, {ignored: /^\./, persistent: true, ignoreInitial: true, interval: 20000, binaryInterval: 20000});
+	//var chaptersWatcher = chokidar.watch(chaptersPath, {ignored: /^\./, persistent: true, ignoreInitial: true, interval: 20000, binaryInterval: 20000});
 	var atcTreeWatcher = chokidar.watch(atcTreePath, {persistent: true, ignoreInitial: true, interval: 20000, binaryInterval: 20000});
 
-	chaptersWatcher.on('error', function(error) {console.error('Error happened on chapters file watch', error);})
-	console.log("Watching " + chaptersPath + " for changes...");
+	//chaptersWatcher.on('error', function(error) {console.error('Error happened on chapters file watch', error);})
+	//console.log("Watching " + chaptersPath + " for changes...");
 
-	chaptersWatcher.on('all', function(path, stats) {
+	//chaptersWatcher.on('all', function(path, stats) {
 
-		console.log("Clearing cached file reads.");
-		clearCachedFileReads();
+	//	console.log("Clearing cached file reads.");
+	//	clearCachedFileReads();
 
-	});
+	//});
 
 	atcTreeWatcher.on('error', function(error) {console.error('Error happened on atc file watch', error);})
 	console.log("Watching " + atcTreePath + " for changes...");

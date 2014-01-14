@@ -81,6 +81,22 @@ function addContent(content, elementName, element) {
 			findTypeOfHeader = {"facts": null, "therapyRecommendations": null, "infoTable": null};
 		}
 
+		if (elementName !== "body" && element.parents("div.facts").length > 0) {
+			findTypeOfHeader = {"facts": null};
+		}
+
+		if (elementName !== "body" && element.parents("div.figure").length > 0) {
+			findTypeOfHeader = {"figure": null};
+		}
+
+		if (elementName !== "body" && element.parents("div.therapy-recommendations").length > 0) {
+			findTypeOfHeader = {"therapyRecommendations": null};
+		}
+
+		if (elementName !== "body" && (element.parents("div.wide").length > 0 || element.parents("div.narrow").length > 0)) {
+			findTypeOfHeader = {"infoTable": null};
+		}
+
 		if (element.hasClass("figureText")) {
 			findTypeOfHeader = {"figure": null};
 		}
@@ -114,6 +130,9 @@ function addContent(content, elementName, element) {
 			}
 			tocItem.content += " " + content;
 			tocItem.content = tocItem.content.replace(/\s+/g, " ");
+
+			//TODO: Remove
+			//tocItem.contrib.push(element[0].name + " #" + element.attr("id") + " ." + element.attr("class")  + " = " + content);
 			
 //			if (tocItem.type === "therapyRecommendations") {
 				var genericas = element.find(".inlineGenerica");
@@ -231,7 +250,7 @@ function iterateElement(element) {
 				addToToc(dataId, $(element).text(), level, type);
 			}
 		
-		} else if (element.attribs["id"] !== "main" && !$(element).hasClass("tableLine") && element.name !== "a" && element.name !== undefined && element.name !== "em" && element.name !== "span" && element.name !== "ol" && element.name !== "br" && element.name !== "ul" && element.name !== "tr" && element.name !== "button" && element.name !== "img" && element.name !== "strong" && element.name !== "table" && element.name !== "thead"  && element.name !== "th" && element.name !== "i") {
+		} else if (element.attribs["id"] !== "main" && !$(element).hasClass("tableLine") && element.name !== "a" && element.name !== undefined && element.name !== "em" && element.name !== "span" && element.name !== "ol" && element.name !== "br" && element.name !== "ul" && element.name !== "tr" && element.name !== "button" && element.name !== "img" && element.name !== "strong" && element.name !== "table" && element.name !== "thead"  && element.name !== "th" && element.name !== "i" && element.name !== "div" && element.name !== "td") {
 			
 			//console.log(indent + "\t" + element.name + " : " + $(element).text());
 			//console.error("Adding tag content for: " + element.name);
