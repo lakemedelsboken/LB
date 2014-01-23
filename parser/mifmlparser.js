@@ -2557,7 +2557,7 @@ var Parser = {
 			}
 			
 			if (overviews.length > 0) {
-				cheerio("p.authors").last().after("<h2 class=\"overview\">Tabeller och figurer</h2><div>" + overview.html() + "</div>");
+				cheerio("p.authors").last().after("<h2>Terapirekommendationer / Faktarutor etc.</h2><div>" + overview.html() + "</div>");
 			}
 
 			var blockTags = {
