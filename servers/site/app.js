@@ -2,7 +2,6 @@ var http = require("http");
 http.globalAgent.maxSockets = 200;
 
 var express = require('express');
-var ga = require('node-ga');
 var app = express();
 var path = require("path");
 var fs = require("fs");
