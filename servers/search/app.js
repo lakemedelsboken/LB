@@ -1,5 +1,5 @@
 var http = require("http");
-http.globalAgent.maxSockets = 20;
+http.globalAgent.maxSockets = 60;
 
 var express = require('express');
 //var app = express.createServer();

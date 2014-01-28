@@ -27,9 +27,9 @@ function initSearchIndex() {
 			var index = JSON.parse(fs.readFileSync(__dirname + "/../../site/chapters/" + previewFolders[i] + "/" + previewFolders[i].replace("_index", ".json")));
 			var id = previewFolders[i];
 
-			//Remove root objects
+			//Remove root objects and "Terapirekommendationer / Faktarutor etc."
 			index = index.filter(function(element) {
-				return (element.title !== "root");
+				return (element.title !== "root" && element.title !== "Terapirekommendationer / Faktarutor etc.");
 			});
 			
 			searchIndices[id] = new Fuse(index, options);

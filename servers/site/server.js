@@ -338,7 +338,7 @@ app.get('/tocitems', function(req,res){
 			//Find children and add to response
 			var children = [];
 			for (var i=0; i < index.length; i++) {
-				if (index[i].parentId === parentId) {
+				if (index[i].parentId === parentId || index[i].id === parentId) {
 					//No need to worry about cloning
 					index[i].content = null;
 					children.push(index[i]);

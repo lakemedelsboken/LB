@@ -699,8 +699,17 @@ var console = {log: function() {}};
 						}
 					} else {
 
+						if (data.length > 0) {
+							//Get id of first item and change titleItem:s link to reflect
+							var firstItem = data[0];
+							var titleItem = newMenu.find(".titleItem").first();
+							if (titleItem.length === 1) {
+								titleItem.attr("href", "/" + firstItem.chapter + "#" + firstItem.id);
+							}
+						}
+
 						//Create menu from fetched items
-						for (var i=0; i < data.length; i++) {
+						for (var i=1; i < data.length; i++) {
 							var item = data[i];
 							if (item.headeritem !== undefined) {
 								newMenu.append($("<li><a class=\"titleItem\" href=\"/" + chapter + "#" + menuId + "\"" + ((item.chapter !== undefined) ? " data-chapter=\"" + item.chapter + "\"" : " data-chapter=\"\"") + ">" + item.title + "</a></li>")); 
@@ -1680,6 +1689,7 @@ var console = {log: function() {}};
 							resultsList.append($("<li><a href=\"#\"><i class=\"icon icon-ban-circle\"></i> Inga träffar</a></li>"));
 						}
 						resultsList.menu("refresh");
+						
 					}
 				}).error(function(jqXHR, status, error) {
 					lb.medicineSearch = null;
@@ -1713,6 +1723,8 @@ var console = {log: function() {}};
 							resultsList.append($("<li><a href=\"#\"><i class=\"icon icon-ban-circle\"></i> Inga träffar</a></li>"));
 						}
 						resultsList.menu("refresh");
+						ga('send', 'pageview', {'page': '/search?' + searchValue, 'title': 'Sökning: ' + searchValue + ' | Läkemedelsboken'});
+						ga('send', 'event', 'search', searchValue, {'nonInteraction': 1});
 					}
 				}).error(function(jqXHR, status, error) {
 					lb.contentSearch = null;
