@@ -1,13 +1,14 @@
-var cluster = require('cluster');
+var cluster = require("cluster");
 var path = require("path");
 var fs = require("fs");
 var wrench = require("wrench");
 var async = require("async");
 var crypto = require("crypto");
 var request = require("request");
-var zlib = require('zlib');
+var zlib = require("zlib");
 var exec = require('child_process').exec;
 var cheerio = require("cheerio");
+var filesize = require("filesize");
 
 //Setup master index
 var masterIndex = JSON.parse(fs.readFileSync(__dirname + "/../site/masterIndex.json", "utf8"));
@@ -20,7 +21,7 @@ var settings = JSON.parse(fs.readFileSync(__dirname + "/../../settings/settings.
 var networkPort = settings.internalServerPorts.admin;
 var externalNetworkPort = settings.externalServerPorts.main;
 
-var numCPUs = (require('os').cpus().length);
+var numCPUs = require('os').cpus().length;
 
 var app = require('./app').init(networkPort);
 
@@ -262,11 +263,26 @@ app.get('/admin/frontpage/generate', function(req,res){
 		frontPageContent.push(header);
 		frontPageContent.push(hero);
 
+		//BLOG
 		for (var i = 0; i < blogArticles.length; i++) {
 			var article = blogArticles[i];
 			frontPageContent.push('<h3><a href="/blog/' + article.url + '">' + article.title + '</a></h3>');
 			frontPageContent.push('<p>' + article.summary + '</p>');
 			frontPageContent.push('<p><a href="/blog/' + article.url + '">Läs vidare &raquo;</a></p>');
+		}
+		
+		//PDF:s
+		var pdfs = getPDFs();
+
+		frontPageContent.push('<h2 id="pdfs">PDF-versioner av varje kapitel</h2>');
+		
+		for (var division in pdfs) {
+			frontPageContent.push('<h3>' + division + '</h3>');
+			frontPageContent.push('<ul>');
+			for (var name in pdfs[division]) {
+				frontPageContent.push('<li><a href="' + pdfs[division][name].url + '">' + name + '</a> (' + pdfs[division][name].size + ')</li>');
+			}
+			frontPageContent.push('</ul>');
 		}
 		
 		frontPageContent.push(footer);
@@ -295,6 +311,56 @@ app.get('/admin/frontpage/generate', function(req,res){
 	
 
 });
+
+function getPDFs() {
+	var result = {};
+	
+	for (var key in masterIndex) {
+		var item = masterIndex[key];
+		var name = item.name;
+		var division = item.division;
+		
+		if (result[division] === undefined) {
+			result[division] = {};
+		}
+		
+		var pdf = getPDF(key);
+		if (pdf.url !== null && pdf.size !== null) {
+			result[division][name] = pdf;
+		} else {
+			console.error("Could not find pdf for id: " + key);
+		}
+	}
+	
+	return result;
+}
+
+function getPDF(id) {
+
+	var chaptersPath = __dirname + "/../site/chapters/";
+
+	var files = fs.readdirSync(chaptersPath);
+
+	id = id.toLowerCase();
+
+	var result = {url: null, size: null};
+
+	for (var i = 0; i < files.length; i++) {
+		var fileName = files[i];
+		if (fileName.indexOf(id) === 0 && fileName.indexOf("_pdf") > -1) {
+			result.url = "/" + fileName + "/" + fileName.replace("_pdf", "") + ".pdf";
+			var filePath = chaptersPath + fileName + "/" + fileName.replace("_pdf", "") + ".pdf";
+			if (fs.existsSync(filePath)) {
+				var stat = fs.statSync(filePath);
+				var size = stat.size;
+				size = filesize(size, {round: 1});
+				result.size = size;
+			}
+		} 
+	}
+
+	return result;
+}
 
 function genereateMasterSideMenu(index) {
 	
@@ -359,7 +425,7 @@ app.get('/admin/preview/updateall', function(req,res){
 	//get all mifml files
 	var files = fs.readdirSync(__dirname + "/mif/");
 
-	var nrOfParallelProcessing = (numCPUs);
+	var nrOfParallelProcessing = numCPUs;
 	if (nrOfParallelProcessing < 1) {
 		nrOfParallelProcessing = 1;
 	}
