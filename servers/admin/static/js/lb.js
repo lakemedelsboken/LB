@@ -699,6 +699,7 @@ var console = {log: function() {}};
 						}
 					} else {
 
+						/*
 						if (data.length > 0) {
 							//Get id of first item and change titleItem:s link to reflect
 							var firstItem = data[0];
@@ -707,12 +708,21 @@ var console = {log: function() {}};
 								titleItem.attr("href", "/" + firstItem.chapter + "#" + firstItem.id);
 							}
 						}
+						*/
 
 						//Create menu from fetched items
-						for (var i=1; i < data.length; i++) {
+						for (var i=0; i < data.length; i++) {
 							var item = data[i];
 							if (item.headeritem !== undefined) {
-								newMenu.append($("<li><a class=\"titleItem\" href=\"/" + chapter + "#" + menuId + "\"" + ((item.chapter !== undefined) ? " data-chapter=\"" + item.chapter + "\"" : " data-chapter=\"\"") + ">" + item.title + "</a></li>")); 
+
+								//Get id of first item and change titleItem:s link to reflect
+								var firstItem = item;
+								var titleItem = newMenu.find(".titleItem").first();
+								if (titleItem.length === 1) {
+									titleItem.attr("href", "/" + firstItem.chapter + "#" + firstItem.id);
+								}
+
+								//newMenu.append($("<li><a class=\"titleItem\" href=\"/" + chapter + "#" + menuId + "\"" + ((item.chapter !== undefined) ? " data-chapter=\"" + item.chapter + "\"" : " data-chapter=\"\"") + ">" + item.title + "</a></li>")); 
 							} else {
 								newMenu.append($("<li><a href=\"/" + item.chapter + "#" + item.id + "\"" + ((item.chapter !== undefined) ? " data-chapter=\"" + item.chapter + "\"" : " data-chapter=\"\"") + " data-has-children=\"" + (item.hasChildren ? "true" : "false") + "\"><i class=\"" + lb.getIcon(item.type) + "\"></i> " + (item.hasChildren ? "<i class=\"icon icon-angle-down pull-right\"></i> " : "") + item.title + "</a></li>")); 
 							}

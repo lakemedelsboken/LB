@@ -359,7 +359,7 @@ app.get('/admin/preview/updateall', function(req,res){
 	//get all mifml files
 	var files = fs.readdirSync(__dirname + "/mif/");
 
-	var nrOfParallelProcessing = (numCPUs - 1);
+	var nrOfParallelProcessing = (numCPUs);
 	if (nrOfParallelProcessing < 1) {
 		nrOfParallelProcessing = 1;
 	}
