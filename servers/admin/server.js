@@ -274,10 +274,10 @@ app.get('/admin/frontpage/generate', function(req,res){
 		//PDF:s
 		var pdfs = getPDFs();
 
-		frontPageContent.push('<h2 id="pdfs">PDF-versioner av varje kapitel</h2>');
+		frontPageContent.push('<h3 id="pdfs">PDF-versioner av varje kapitel</h3>');
 		
 		for (var division in pdfs) {
-			frontPageContent.push('<h3>' + division + '</h3>');
+			frontPageContent.push('<h4>' + division + '</h4>');
 			frontPageContent.push('<ul>');
 			for (var name in pdfs[division]) {
 				frontPageContent.push('<li><a href="' + pdfs[division][name].url + '">' + name + '</a> <small>(' + pdfs[division][name].size + ')</small></li>');
