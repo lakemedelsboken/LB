@@ -24,7 +24,7 @@ module.exports = injector = {
 
 		self.iterate(body);
 		
-		return $.html();
+		return body.html();
 	},
 	htmlEscape: function(text) {
 
