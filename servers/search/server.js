@@ -7,6 +7,7 @@ var crypto = require("crypto");
 var request = require("request");
 var zlib = require("zlib");
 var chokidar = require("chokidar");
+var util = require("util");
 
 var secretSettingsPath = __dirname + "/../../settings/secretSettings.json";
 
@@ -1356,7 +1357,11 @@ function parseSearchTerms(terms, skipSplit, replaceCommonCharacters) {
 	if (skipSplit === undefined) {
 		skipSplit = false;
 	}
-
+	
+	if (util.isArray(terms)) {
+		terms = terms.join(" ");
+	}
+	
 	var result = [];
 	var groups = [];
 
