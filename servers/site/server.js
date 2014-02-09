@@ -341,7 +341,10 @@ app.get('/tocitems', function(req,res){
 				if (index[i].parentId === parentId) {
 					//No need to worry about cloning
 					index[i].content = null;
-					index[i].headeritem = false;
+					if (index[i].headeritem !== undefined) {
+						delete index[i].headeritem;
+					}
+					//index[i].headeritem = false;
 					index[i].products = "";
 					
 					children.push(index[i]);
