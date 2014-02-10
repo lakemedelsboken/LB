@@ -347,16 +347,21 @@ function getPDF(id) {
 
 	for (var i = 0; i < files.length; i++) {
 		var fileName = files[i];
-		if (fileName.indexOf(id) === 0 && fileName.indexOf("_pdf") > -1) {
-			result.url = "/" + fileName + "/" + fileName.replace("_pdf", "") + ".pdf";
-			var filePath = chaptersPath + fileName + "/" + fileName.replace("_pdf", "") + ".pdf";
-			if (fs.existsSync(filePath)) {
-				var stat = fs.statSync(filePath);
-				var size = stat.size;
-				size = filesize(size, {round: 1});
-				result.size = size;
-			}
-		} 
+
+		if (fileName.indexOf("_") > -1) {
+			var chapterId = fileName.split("_")[0];
+			if (chapterId === id && fileName.indexOf("_pdf") > -1) {
+				result.url = "/" + fileName + "/" + fileName.replace("_pdf", "") + ".pdf";
+				var filePath = chaptersPath + fileName + "/" + fileName.replace("_pdf", "") + ".pdf";
+				if (fs.existsSync(filePath)) {
+					var stat = fs.statSync(filePath);
+					var size = stat.size;
+					size = filesize(size, {round: 1});
+					result.size = size;
+				}
+			} 
+		}
+
 	}
 
 	return result;
