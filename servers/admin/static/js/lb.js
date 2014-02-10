@@ -1,6 +1,6 @@
 var lb = null;
 
-//var console = {log: function() {}};
+var console = {log: function() {}};
 
 (function(window, undefined){
 
