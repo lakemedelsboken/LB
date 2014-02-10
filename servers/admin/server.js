@@ -280,7 +280,7 @@ app.get('/admin/frontpage/generate', function(req,res){
 			frontPageContent.push('<h4>' + division + '</h4>');
 			frontPageContent.push('<ul>');
 			for (var name in pdfs[division]) {
-				frontPageContent.push('<li><a href="' + pdfs[division][name].url + '">' + name + '</a> <small>(' + pdfs[division][name].size + ')</small></li>');
+				frontPageContent.push('<li><a href="' + pdfs[division][name].url + '" class="pdfLink">' + name + '</a> <small>(' + pdfs[division][name].size + ')</small></li>');
 			}
 			frontPageContent.push('</ul>');
 		}

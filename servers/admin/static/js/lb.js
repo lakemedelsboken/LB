@@ -1,6 +1,6 @@
 var lb = null;
 
-var console = {log: function() {}};
+//var console = {log: function() {}};
 
 (function(window, undefined){
 
@@ -132,6 +132,11 @@ var console = {log: function() {}};
 			$("body").on("click", ".therapyLink", self.handleBoxLinks);
 			$("body").on("click", "a.pageFootnoteItem", self.handlePageFootnoteItems);
 			$("body").on("click", "a.atcCodeInPopover", self.handleAtcCodeInPopover);
+			$("body").on("click", "a.pdfLink", function(event) {
+				ga('send', 'pageview', {'page': $(this).attr("href"), 'title': "PDF: " + $(this).text()});
+				ga('send', 'event', 'pdf', $(this).text(), {'nonInteraction': 0});
+			});
+			
 
 			//Handlers for product information accordion
 			$("#modalMed").on("click", "#toggleAllSections", self.toggleAccordion);
@@ -1734,7 +1739,7 @@ var console = {log: function() {}};
 						}
 						resultsList.menu("refresh");
 						ga('send', 'pageview', {'page': '/search?' + searchValue, 'title': 'Sökning: ' + searchValue + ' | Läkemedelsboken'});
-						ga('send', 'event', 'search', searchValue, {'nonInteraction': 1});
+						ga('send', 'event', 'search', searchValue, {'nonInteraction': 0});
 					}
 				}).error(function(jqXHR, status, error) {
 					lb.contentSearch = null;
@@ -2322,7 +2327,7 @@ var console = {log: function() {}};
 		renderProductInfo: function(product, nplId, container, forcedNplId) {
 
 			ga('send', 'pageview', {'page': '/product/' + nplId, 'title': product.name + ' | Läkemedelsboken'});
-			ga('send', 'event', 'product', product.name, {'nonInteraction': 1});
+			ga('send', 'event', 'product', product.name, {'nonInteraction': 0});
 			
 			lb.nplId = nplId;
 			if (!forcedNplId) {
