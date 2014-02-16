@@ -725,6 +725,8 @@ var console = {log: function() {}};
 								var titleItem = newMenu.find(".titleItem").first();
 								if (titleItem.length === 1) {
 									titleItem.attr("href", "/" + firstItem.chapter + "#" + firstItem.id);
+								} else {
+									newMenu.append($("<li><a class=\"titleItem\" href=\"/" + item.chapter + "#" + item.id + "\"" + ((item.chapter !== undefined) ? " data-chapter=\"" + item.chapter + "\"" : " data-chapter=\"\"") + " data-has-children=\"false\">" + item.title + "</li>")); 
 								}
 
 								//newMenu.append($("<li><a class=\"titleItem\" href=\"/" + chapter + "#" + menuId + "\"" + ((item.chapter !== undefined) ? " data-chapter=\"" + item.chapter + "\"" : " data-chapter=\"\"") + ">" + item.title + "</a></li>")); 
