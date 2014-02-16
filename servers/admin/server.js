@@ -236,6 +236,12 @@ function createImageSizes(newImagePath, callback) {
 
 app.get('/admin/frontpage/generate', function(req,res){
 
+	buildAuthorsRegistry();
+	buildPDFRegistry();
+	buildEditorsRegistry();
+	buildForeword();
+	buildPress();
+
 	req.connection.setTimeout(1000 * 60 * 30); //30 minutes
 
 	var frontPageContent = [];
@@ -270,21 +276,7 @@ app.get('/admin/frontpage/generate', function(req,res){
 			frontPageContent.push('<p>' + article.summary + '</p>');
 			frontPageContent.push('<p><a href="/blog/' + article.url + '">Läs vidare &raquo;</a></p>');
 		}
-		
-		//PDF:s
-		var pdfs = getPDFs();
-
-		frontPageContent.push('<h3 id="pdfs">PDF-versioner av varje kapitel</h3>');
-		
-		for (var division in pdfs) {
-			frontPageContent.push('<h4>' + division + '</h4>');
-			frontPageContent.push('<ul>');
-			for (var name in pdfs[division]) {
-				frontPageContent.push('<li><a href="' + pdfs[division][name].url + '" class="pdfLink">' + name + '</a> <small>(' + pdfs[division][name].size + ')</small></li>');
-			}
-			frontPageContent.push('</ul>');
-		}
-		
+				
 		frontPageContent.push(footer);
 
 		var frontPagePath = __dirname + "/../site/chapters/index.html";
@@ -307,10 +299,149 @@ app.get('/admin/frontpage/generate', function(req,res){
 		fs.writeFileSync(frontPagePath, frontPageContent, "utf8");
 
 		res.redirect('/admin/frontpage');
-	});
-	
+	});	
 
 });
+
+function buildAuthorsRegistry() {
+
+	var indexedAuthors = require("./db/authors_registry").getIndexedAuthors();
+
+	var pageContent = [];
+
+	//Get header and footer
+	var header = fs.readFileSync(__dirname + "/../../parser/templates/browser/header.html", "utf8");
+	var footer = fs.readFileSync(__dirname + "/../../parser/templates/browser/footer.html", "utf8");
+
+	//Generate side menu
+	var index = genereateMasterSideMenu(masterIndex);
+	
+	pageContent.push(header);
+
+	pageContent.push("<h2>Författarregister</h2>");
+
+	//Add authors registry
+	pageContent.push("<ul class=\"nav nav-pills\" id=\"authorsRegistryLetterIndex\">");
+	for (var letter in indexedAuthors) {
+		pageContent.push("<li><a title=\"Gå till författare vars efternamn börjar med " + letter + "\" href=\"#" + letter + "\">" + letter + "</a></li>");
+	}
+	pageContent.push("</ul>");
+
+	for (var letter in indexedAuthors) {
+		var authorsByLetter = indexedAuthors[letter];
+	
+		pageContent.push("<h4 id=\"" + letter + "\">" + letter + "</h4>");
+		pageContent.push("<ul class=\"authorsByLetter\">");
+	
+		for (var i = 0; i < authorsByLetter.length; i++) {
+			var author = authorsByLetter[i];
+			pageContent.push("<li><article>");
+			
+			var name = author.name.split(" ");
+			if (name.length === 2) {
+				pageContent.push("<strong>" + name[1] + " " + name[0] + "</strong> <small>" + author.title + "</small><br>");
+			} else if (author.firstname !== undefined && author.lastname !== undefined) {
+				pageContent.push("<strong>" + author.firstname + " " + author.lastname + "</strong> <small>" + author.title + "</small><br>");
+			} else {
+				pageContent.push("<strong>" + author.name + "</strong> <small>" + author.title + "</small><br>");
+				console.log(author.name + " could not be niced up.");
+			}
+			//pageContent.push(author.title + "<br>");
+			
+			if (author.department && author.department !== "") {
+				pageContent.push("<em>" + author.department + "</em><br>");
+			}
+			//pageContent.push("<address>");
+			if (author.hospital && author.hospital !== "") {
+				pageContent.push(author.hospital + ", ");
+			}
+			pageContent.push(author.city);
+			//pageContent.push("</address>");
+
+			//pageContent.push("<h5>Kapitel</h5>");
+			pageContent.push("<ul>");
+			for (var k = 0; k < author.chapters.length; k++) {
+				pageContent.push("<li>");
+				pageContent.push("<a href=\"" + author.chapters[k].htmlFile + "\">" + author.chapters[k].chaptertitle + " <i class=\"icon-double-angle-right\"></i></a>");
+				pageContent.push("</li>");
+			
+			}
+			pageContent.push("</ul>");
+		
+			pageContent.push("</article></li>");
+		
+		}
+		pageContent.push("</ul>");
+	}
+	
+	pageContent.push(footer);
+
+	var pagePath = __dirname + "/../site/chapters/authors.html";
+	pageContent = pageContent.join("\n");
+	
+	var $ = cheerio.load(pageContent);
+	//Remove pdf viewer
+	$("#pdf").attr("style", "display: none;");
+	//Add sidebar
+	$("#sideBar").html(index);
+
+	pageContent = $.html();
+
+	//Change title
+	pageContent = pageContent.replace("{TITLE}", "Författarregister | Läkemedelsboken")
+	pageContent = pageContent.replace(/\{VERSION\}/g, settings.version)
+	
+	fs.writeFileSync(pagePath, pageContent, "utf8");
+
+}
+
+function buildPDFRegistry() {
+
+	var pageContent = [];
+
+	//Get header and footer
+	var header = fs.readFileSync(__dirname + "/../../parser/templates/browser/header.html", "utf8");
+	var footer = fs.readFileSync(__dirname + "/../../parser/templates/browser/footer.html", "utf8");
+
+	//Generate side menu
+	var index = genereateMasterSideMenu(masterIndex);
+	
+	pageContent.push(header);
+
+	pageContent.push("<h2>PDF-versioner av alla kapitel i Läkemedelsboken</h2>");
+
+	//PDF:s
+	var pdfs = getPDFs();
+	
+	for (var division in pdfs) {
+		pageContent.push('<h4>' + division + '</h4>');
+		pageContent.push('<ul>');
+		for (var name in pdfs[division]) {
+			pageContent.push('<li><a href="' + pdfs[division][name].url + '" class="pdfLink">' + name + '</a> <small>(' + pdfs[division][name].size + ')</small></li>');
+		}
+		pageContent.push('</ul>');
+	}
+	
+	pageContent.push(footer);
+
+	var pagePath = __dirname + "/../site/chapters/pdfs.html";
+	pageContent = pageContent.join("\n");
+	
+	var $ = cheerio.load(pageContent);
+	//Remove pdf viewer
+	$("#pdf").attr("style", "display: none;");
+	//Add sidebar
+	$("#sideBar").html(index);
+
+	pageContent = $.html();
+
+	//Change title
+	pageContent = pageContent.replace("{TITLE}", "PDF-versioner av alla kapitel | Läkemedelsboken")
+	pageContent = pageContent.replace(/\{VERSION\}/g, settings.version)
+	
+	fs.writeFileSync(pagePath, pageContent, "utf8");
+
+}
 
 function getPDFs() {
 	var result = {};
@@ -365,6 +496,117 @@ function getPDF(id) {
 	}
 
 	return result;
+}
+
+function buildEditorsRegistry() {
+
+	var pageContent = [];
+
+	//Get header and footer
+	var header = fs.readFileSync(__dirname + "/../../parser/templates/browser/header.html", "utf8");
+	var footer = fs.readFileSync(__dirname + "/../../parser/templates/browser/footer.html", "utf8");
+	var content = fs.readFileSync(__dirname + "/templates/editors.html", "utf8");
+
+	//Generate side menu
+	var index = genereateMasterSideMenu(masterIndex);
+	
+	pageContent.push(header);
+
+	pageContent.push(content);
+	
+	pageContent.push(footer);
+
+	var pagePath = __dirname + "/../site/chapters/editors.html";
+	pageContent = pageContent.join("\n");
+	
+	var $ = cheerio.load(pageContent);
+	//Remove pdf viewer
+	$("#pdf").attr("style", "display: none;");
+	//Add sidebar
+	$("#sideBar").html(index);
+
+	pageContent = $.html();
+
+	//Change title
+	pageContent = pageContent.replace("{TITLE}", "Redaktionskommittén | Läkemedelsboken")
+	pageContent = pageContent.replace(/\{VERSION\}/g, settings.version)
+	
+	fs.writeFileSync(pagePath, pageContent, "utf8");
+
+}
+
+function buildForeword() {
+
+	var pageContent = [];
+
+	//Get header and footer
+	var header = fs.readFileSync(__dirname + "/../../parser/templates/browser/header.html", "utf8");
+	var footer = fs.readFileSync(__dirname + "/../../parser/templates/browser/footer.html", "utf8");
+	var content = fs.readFileSync(__dirname + "/templates/foreword.html", "utf8");
+
+	//Generate side menu
+	var index = genereateMasterSideMenu(masterIndex);
+	
+	pageContent.push(header);
+
+	pageContent.push(content);
+	
+	pageContent.push(footer);
+
+	var pagePath = __dirname + "/../site/chapters/foreword.html";
+	pageContent = pageContent.join("\n");
+	
+	var $ = cheerio.load(pageContent);
+	//Remove pdf viewer
+	$("#pdf").attr("style", "display: none;");
+	//Add sidebar
+	$("#sideBar").html(index);
+
+	pageContent = $.html();
+
+	//Change title
+	pageContent = pageContent.replace("{TITLE}", "Förord | Läkemedelsboken")
+	pageContent = pageContent.replace(/\{VERSION\}/g, settings.version)
+	
+	fs.writeFileSync(pagePath, pageContent, "utf8");
+
+}
+
+function buildPress() {
+
+	var pageContent = [];
+
+	//Get header and footer
+	var header = fs.readFileSync(__dirname + "/../../parser/templates/browser/header.html", "utf8");
+	var footer = fs.readFileSync(__dirname + "/../../parser/templates/browser/footer.html", "utf8");
+	var content = fs.readFileSync(__dirname + "/templates/press.html", "utf8");
+
+	//Generate side menu
+	var index = genereateMasterSideMenu(masterIndex);
+	
+	pageContent.push(header);
+
+	pageContent.push(content);
+	
+	pageContent.push(footer);
+
+	var pagePath = __dirname + "/../site/chapters/press.html";
+	pageContent = pageContent.join("\n");
+	
+	var $ = cheerio.load(pageContent);
+	//Remove pdf viewer
+	$("#pdf").attr("style", "display: none;");
+	//Add sidebar
+	$("#sideBar").html(index);
+
+	pageContent = $.html();
+
+	//Change title
+	pageContent = pageContent.replace("{TITLE}", "Pressmaterial | Läkemedelsboken")
+	pageContent = pageContent.replace(/\{VERSION\}/g, settings.version)
+	
+	fs.writeFileSync(pagePath, pageContent, "utf8");
+
 }
 
 function genereateMasterSideMenu(index) {

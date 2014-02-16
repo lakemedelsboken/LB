@@ -1318,6 +1318,33 @@ div#mask {
 
 }
 
+ul#authorsRegistryLetterIndex {
+	list-style-type: none; 
+	margin: 0px; 
+	padding: 0;
+	list-style-position: inside; 
+	font-family: Helvetica, Arial, sans;
+}
+
+ul.authorsByLetter {
+	list-style-type: none; 
+	margin: 10px 0 10px 0; 
+	list-style-position: inside; 
+}
+
+ul.authorsByLetter li {
+	margin-bottom: 20px;
+}
+
+ul.authorsByLetter li ul {
+	list-style-type: none; 
+	margin: 0px; 
+	list-style-position: inside; 
+}
+
+ul.authorsByLetter li ul li {
+	margin: 0px; 
+}
 
 /* Large desktop */
 @media (min-width: 1200px) {
