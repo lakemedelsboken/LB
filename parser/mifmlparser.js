@@ -1557,7 +1557,8 @@ var Parser = {
 								"TabellFet": "<span style=\"font-weight: bold;\">",
 								//"Symbol": "<span style=\"font-family: symbol,'Standard Symbols L'\">",
 								"Symbol": "<span>",
-								"Ref": "<span>"
+								"Ref": "<span>",
+								"Red": "<span class=\"updated\" title=\"Texten är uppdaterad\">"
 							};
 							
 							var skippedFormatHandlers = {
@@ -1588,7 +1589,6 @@ var Parser = {
 								"TN Tecken nedsänkt": "<span class=\"sub\">",
 								"Ändr röd": "<span style=\"color: red;\">",
 								"Ändr Röd": "<span style=\"color: red;\">",
-								"Red": "<span style=\"color: red;\">",
 								"ÄndringNyText": "<span style=\"color: red;\">",
 								"Bolded": "<span style=\"font-weight: bold;\">"
 							};
