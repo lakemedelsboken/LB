@@ -20,7 +20,7 @@
 %>
   <entry>
     <title><%=article.title%></title>
-    <link rel="alternate" href="<%=article.url%>"/>
+    <link rel="alternate" href="<%=url%><%=article.url%>"/>
     <id><%=article.url%></id>
     <published><%=article.rawDate.toISOString()%></published>
     <updated><%=article.rawDate.toISOString()%></updated>
