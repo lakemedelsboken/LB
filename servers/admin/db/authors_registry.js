@@ -33,6 +33,12 @@ var AuthorsRegistry = {
 		}
 	
 		return indexed;
+	},
+	getAuthorsByChapterId: function(chapterId) {
+		var chapterName = getChapterNameFromChapterId(chapterId);
+		//console.log("Found chapter " + chapterName + " from chapterId " + chapterId);
+		var authors = getAuthorsByChapterName(chapterName);
+		return authors;
 	}
 }
 
@@ -85,5 +91,54 @@ function getHtmlFile(chapterName) {
 	console.log("Could not find chapter for: \"" + chapterName + "\"")
 	return null;
 }
+
+function getAuthorsByChapterName(chapterName) {
+
+	var foundAuthorIds = {};
+	
+	for (var i = 0; i < chapters.length; i++) {
+		if (chapters[i].chaptertitle.trim() === chapterName.trim()) {
+			foundAuthorIds["id_" + chapters[i].id_author] = true;
+		}
+	}
+
+	var foundAuthors = [];
+	
+	for (var i = 0; i < authors.length; i++) {
+		var author = authors[i];
+		if (foundAuthorIds["id_" + author.id_author] !== undefined) {
+			foundAuthors.push(author);
+		}
+	}
+
+	return foundAuthors;
+}
+
+
+function getChapterIdFromChapterName(chapterName) {
+
+	for (var key in masterIndex) {
+		if (masterIndex[key].name === chapterName) {
+			key = key.toLowerCase();
+			return key;
+		}
+	}
+	
+	console.log("Could not find chapter id for: \"" + chapterName + "\"")
+	return null;
+}
+
+function getChapterNameFromChapterId(chapterId) {
+
+	if (masterIndex[chapterId.toUpperCase()] !== undefined) {
+		return masterIndex[chapterId.toUpperCase()].name;
+	} else {
+		console.log("Could not find chapter name for id: \"" + chapterId + "\"")
+		return null;
+	}
+
+}
+
+
 
 module.exports = AuthorsRegistry;

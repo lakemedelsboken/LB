@@ -697,6 +697,9 @@ app.get('/admin/preview/updateall', function(req,res){
 
 	for (var i=0; i < files.length; i++) {
 		if (files[i].indexOf(".mifml") > 0) {
+			
+			console.log("Adding " + __dirname + "/mif/" + files[i] + " to parser queue.");
+			
 			q.push({name: __dirname + "/mif/" + files[i]}, function (err) {
 			});
 		}
@@ -1351,6 +1354,8 @@ function parseToHtml(mifmlFilePath, callback) {
 
 function parseToHtmlAndSave(mifmlFilePath, append, callback) {
 
+	console.log("Begin parsing " + mifmlFilePath);
+
 	var startParseTime = new Date().getTime();
 
 	parseToHtml(mifmlFilePath, function(err, stderr, stdout) {
@@ -1385,6 +1390,70 @@ function parseToHtmlAndSave(mifmlFilePath, append, callback) {
 		var sideBar = $("#sideBar");
 		var sideBarContent = buildSideBarToc(newSearchIndex);
 		sideBar.append($(sideBarContent));
+
+		//Add way to request conflicts of interest
+		
+		//Find authors of current chapter
+		var chapterId = htmlFileName.split("_")[0];
+		var authors = require("./db/authors_registry").getAuthorsByChapterId(chapterId);
+
+		//console.log("Found " + authors.length + " authors for chapterId: " + chapterId);
+
+		//Render authors anew
+		var oldAuthors = $("p.authors");
+		//console.log("Before:");
+		//console.log(oldAuthors.html());
+
+		var authorsDisclosure = $('<div class="authorsDisclosure"><h2>Jävsdeklarationer</h2><p>Författarnas jävsdeklarationer går att beställa via <a href=\"mailto:registrator@mpa.se\">registrator@mpa.se</a>. Nedan listas kapitlets författare med relevant länk för att skicka en förfrågan via ditt mailprogram.</p><h3>Författare</h3></div>');
+
+		var newAuthors = $('<ul class="authors"></ul>');
+		for (var i = 0; i < authors.length; i++) {
+			var author = authors[i];
+			
+			var niceAuthorName = "";
+
+			var name = author.name.split(" ");
+			if (name.length === 2) {
+				niceAuthorName = name[1] + " " + name[0];
+			} else if (author.firstname !== undefined && author.lastname !== undefined) {
+				niceAuthorName = author.firstname + " " + author.lastname;
+			} else {
+				niceAuthorName = author.name
+				//console.log(author.name + " could not be niced up.");
+			}
+
+			if (author.department !== undefined && author.department !== "") {
+				niceAuthorName += ", " + author.department;
+			}
+
+			if (author.hospital !== undefined && author.hospital !== "") {
+				niceAuthorName += ", " + author.hospital;
+			}
+			
+			if (author.city !== undefined && author.city !== "") {
+				niceAuthorName += ", " + author.city;
+			}
+			
+			//console.log("Addind author: " + niceAuthorName);
+			var chapterName = $("h1").first().text();
+			
+			newAuthors.append("<li>" + niceAuthorName  + " <a href=\"mailto:registrator@mpa.se?subject=Förfrågan om jävsdeklaration&body=Jag önskar jävsdeklaration för:%0D%0A%0D%0A" + niceAuthorName + "%0D%0A%0D%0Ai förhållande till kapitlet:%0D%0A%0D%0A" + chapterName + ", Läkemedelsboken 2014.%0D%0A%0D%0AVänliga hälsningar%0D%0A\" class=\"btn btn-mini\"><i class=\"icon icon-envelope-alt\"></i> Fråga efter jävsdeklaration via mail</a></li>");
+			
+		}
+
+		if (authors.length > 0) {
+			//oldAuthors.replaceWith(newAuthors);
+
+			authorsDisclosure.append(newAuthors)
+
+			var referenceHeader = $(".referenceHeader").last();
+			referenceHeader.before(authorsDisclosure);
+		}
+
+		//console.log("After:");
+//		console.log(oldAuthors.html());
+
+		//Get parsed and restructured content
 		htmlContent = $.html();
 
 		//Write page to disk

@@ -395,7 +395,7 @@ var Parser = {
 		self.formatHandlers["refrub"] = {
 			begin: function(tag, indentation) {
 				self.state.references = true;
-				return indentation + "<h2 id=\"" + self.chapterIdentifier + "_" + (++self.tocId) + "\">Referenser";
+				return indentation + "<h2 class=\"referenceHeader\" id=\"" + self.chapterIdentifier + "_" + (++self.tocId) + "\">Referenser";
 			},
 			end: function(tag, indentation) {
 				return "</h2>";
@@ -1617,6 +1617,11 @@ var Parser = {
 											self.html.push("</span>");
 											self.state.fontFormat = null;
 										}
+										
+										if (value === "Red") {
+											console.error("* RED");
+										}
+										
 										self.html.push(fontFormatHandlers[value]);
 										self.state.fontFormat = value;
 										

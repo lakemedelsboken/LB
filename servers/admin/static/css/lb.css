@@ -363,7 +363,8 @@ div.thumbnail:hover {
 
 }
 
-p.authors {
+
+p.authors, ul.authors {
 	font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	font-size: 14px;
@@ -372,6 +373,13 @@ p.authors {
 	/*
 	font-style: italic;
 		white-space: pre-wrap; */
+}
+
+ul.authors {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
 }
 
 div.tabStop {
