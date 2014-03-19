@@ -1404,7 +1404,7 @@ function parseToHtmlAndSave(mifmlFilePath, append, callback) {
 		//console.log("Before:");
 		//console.log(oldAuthors.html());
 
-		var authorsDisclosure = $('<div class="authorsDisclosure"><h2>Jävsdeklarationer</h2><p>Författarnas jävsdeklarationer går att beställa via <a href=\"mailto:registrator@mpa.se\">registrator@mpa.se</a>. Nedan listas kapitlets författare med relevant länk för att skicka en förfrågan via ditt mailprogram.</p><h3>Författare</h3></div>');
+		var authorsDisclosure = $('<div class="authorsDisclosure"><p>Jävsdeklarationer för kapitlets författare kan erhållas via <a href=\"mailto:registrator@mpa.se\">registrator@mpa.se</a>. Enklast sker detta genom de förberedda mejlen nedan.</p></div>');
 
 		var newAuthors = $('<ul class="authors"></ul>');
 		for (var i = 0; i < authors.length; i++) {
@@ -1437,7 +1437,7 @@ function parseToHtmlAndSave(mifmlFilePath, append, callback) {
 			//console.log("Addind author: " + niceAuthorName);
 			var chapterName = $("h1").first().text();
 			
-			newAuthors.append("<li>" + niceAuthorName  + " <a href=\"mailto:registrator@mpa.se?subject=Förfrågan om jävsdeklaration&body=Jag önskar jävsdeklaration för:%0D%0A%0D%0A" + niceAuthorName + "%0D%0A%0D%0Ai förhållande till kapitlet:%0D%0A%0D%0A" + chapterName + ", Läkemedelsboken 2014.%0D%0A%0D%0AVänliga hälsningar%0D%0A\" class=\"btn btn-mini\"><i class=\"icon icon-envelope-alt\"></i> Fråga efter jävsdeklaration via mail</a></li>");
+			newAuthors.append("<li>" + niceAuthorName  + " <a href=\"mailto:registrator@mpa.se?subject=Förfrågan om jävsdeklaration&body=Jag önskar jävsdeklaration för%0D%0A" + niceAuthorName + "%0D%0Aförfattare till kapitlet " + chapterName + ", Läkemedelsboken 2014.%0D%0A%0D%0AVänliga hälsningar%0D%0A\" class=\"btn btn-mini\"><i class=\"icon icon-envelope-alt\"></i> Fråga efter jävsdeklaration via mejl</a></li>");
 			
 		}
 
