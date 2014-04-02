@@ -1434,10 +1434,10 @@ function parseToHtmlAndSave(mifmlFilePath, append, callback) {
 				niceAuthorName += ", " + author.city;
 			}
 			
-			//console.log("Addind author: " + niceAuthorName);
+			//console.log("Adding author: " + niceAuthorName);
 			var chapterName = $("h1").first().text();
 			
-			newAuthors.append("<li>" + niceAuthorName  + " <a href=\"mailto:registrator@mpa.se?subject=Förfrågan om jävsdeklaration&body=Jag önskar jävsdeklaration för%0D%0A" + niceAuthorName + "%0D%0Aförfattare till kapitlet " + chapterName + ", Läkemedelsboken 2014.%0D%0A%0D%0AVänliga hälsningar%0D%0A\" class=\"btn btn-mini\"><i class=\"icon icon-envelope-alt\"></i> Fråga efter jävsdeklaration via mejl</a></li>");
+			newAuthors.append("<li>" + niceAuthorName  + " <a href=\"mailto:registrator@mpa.se?subject=" + encodeURIComponent('Förfrågan om jävsdeklaration') + "&body=" + encodeURIComponent('Jag önskar jävsdeklaration för') + "%0D%0A" + encodeURIComponent(niceAuthorName) + "%0D%0A" + encodeURIComponent('författare till kapitlet ' + chapterName) + encodeURIComponent(', Läkemedelsboken 2014.') + "%0D%0A%0D%0A" + encodeURIComponent('Vänliga hälsningar') + "%0D%0A\" class=\"btn btn-mini\"><i class=\"icon icon-envelope-alt\"></i> Fråga efter jävsdeklaration via mejl</a></li>");
 			
 		}
 
