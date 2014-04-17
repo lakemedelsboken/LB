@@ -515,16 +515,18 @@ function getImageData(nplId, callback) {
 				item = $(item);
 				var image = {};
 
-				image.description = $("description", item).html();
+				image.description = $(item).find("description").first().html();
 
-				var base64ImageData = $("photo", item).html();
+				var base64ImageData = $(item).find("photo").first().html();
 
 				if (base64ImageData !== undefined && base64ImageData !== null && base64ImageData !== "") {
+					console.log("Creating checksum for " + base64ImageData.length + " characters..");
 					//Create checksum, use for filename
 					var checksum = crypto.createHash("sha1");
 					checksum.update(base64ImageData);
 					var imageChecksum = checksum.digest("hex");
 					image.checksum = imageChecksum;
+					console.log("Checksum was: " + imageChecksum);
 					var newFilePath = __dirname + "/www/products/images/" + image.checksum + ".jpg"
 					fs.writeFileSync(newFilePath, new Buffer(base64ImageData, "base64"));
 					images.push(image);
