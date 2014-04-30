@@ -707,9 +707,13 @@ a.inlineReference {
 a.inlineGenerica.text {
 	text-decoration: none;
 	color: #000;
-}
-a.inlineGenerica.text {
 	border-bottom: dotted 1px #000;
+}
+
+span.updated > a.inlineGenerica.text {
+	text-decoration: none;
+	color: red;
+	border-bottom: dotted 1px red;
 }
 
 /*
@@ -1491,10 +1495,13 @@ ul.authorsByLetter li ul li {
 	div.thumbnail {
 		height: auto;
 	}
+	
+	/*
 	a.inlineGenerica.text {
 		border-bottom: dotted 1px black;
 		color: #000;
 	}
+	*/
 	
 	#toggleNavigation {
 		margin-bottom: 20px;
