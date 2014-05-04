@@ -27,6 +27,15 @@
 		"fileOutput" : "./logs/search-out.log"
 	},
 	{
+		"name"      : "api",
+		"script"    : "./api/server.js",
+		"instances" : "4",
+		"min_uptime" : "100",
+		"max_restarts" : "10",
+		"fileError" : "./logs/api-err.log",
+		"fileOutput" : "./logs/api-out.log"
+	},
+	{
 		"name"      : "findUpdatesService",
 		"script"    : "../fass/findUpdatesService.js",
 		"instances" : "1",
