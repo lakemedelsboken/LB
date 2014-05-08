@@ -282,10 +282,10 @@ function initSearchIndex() {
 	var indexChecksum = createCheckSum(JSON.stringify(searchIndex));
 	var medicineIndexChecksum = createCheckSum(JSON.stringify(atcTree));
 
-	titleSearchers = workerFarm({maxConcurrentWorkers: 2}, require.resolve("./workers/titlesearcher"));
-	contentSearchers = workerFarm({maxConcurrentWorkers: 4}, require.resolve("./workers/contentsearcher"));
-	boxSearchers = workerFarm({maxConcurrentWorkers: 2}, require.resolve("./workers/boxsearcher"));
-	medicineSearchers = workerFarm({maxConcurrentWorkers: 3}, require.resolve("./workers/medicinesearcher"));
+	titleSearchers = workerFarm({maxConcurrentWorkers: 20}, require.resolve("./workers/titlesearcher"));
+	contentSearchers = workerFarm({maxConcurrentWorkers: 20}, require.resolve("./workers/contentsearcher"));
+	boxSearchers = workerFarm({maxConcurrentWorkers: 20}, require.resolve("./workers/boxsearcher"));
+	medicineSearchers = workerFarm({maxConcurrentWorkers: 24}, require.resolve("./workers/medicinesearcher"));
 
 	//Clear prepopulated searches if checksums do not match 
 	controlSearchChecksums(path.normalize(__dirname + "/../../search/titlesearches/"), indexChecksum);
@@ -492,9 +492,9 @@ app.get('/medicinesearch', function(req,res){
 				var allSearchResults = [];
 				var count = 0;
 			
-				//Distribute search to 8 search workers
+				//Distribute search to 24 search workers
 				//console.time("search");
-				for (var i = 0; i < 8; i++) {
+				for (var i = 0; i < 24; i++) {
 					//console.time("start");
 					medicineSearchers({index: i, term: term}, function(err, data) {
 

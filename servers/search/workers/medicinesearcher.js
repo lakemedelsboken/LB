@@ -31,8 +31,8 @@ function initSearchIndex() {
 //		return (b.title.length - a.title.length)
 //	});
 
-	//Create 8 slices
-	var slices = [[],[],[],[],[],[],[],[]];
+	//Create 24 slices
+	var slices = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];
 
 	//Iterate and distribute evenly in 8 slices
 	for (var i = 0; i < medicineSearchTree.length; i++) {
