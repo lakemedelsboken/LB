@@ -19,7 +19,7 @@ function initSearchIndex() {
 	var options = {
 		keys: ["title", "titlePath", "id", "indications", "substance"],
 		threshold: 0.3,
-		distance: 1000
+		distance: 2000
 	};
 
 	var medicineSearchTree = atcTree.filter(function(element) {
@@ -31,8 +31,8 @@ function initSearchIndex() {
 //		return (b.title.length - a.title.length)
 //	});
 
-	//Create 24 slices
-	var slices = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];
+	//Create 32 slices
+	var slices = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];
 
 	//Iterate and distribute evenly in 8 slices
 	for (var i = 0; i < medicineSearchTree.length; i++) {
@@ -57,7 +57,7 @@ initSearchIndex();
 module.exports = function(input, callback) {
 
 	var index = searchIndices[input.index];
-	var length = index.length;
+	//var length = index.length;
 	//console.time(input.index + " : " + length);
 	var results = index.search(input.term);
 	//console.timeEnd(input.index + " : " + length);
