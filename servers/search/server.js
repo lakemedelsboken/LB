@@ -283,9 +283,9 @@ function initSearchIndex() {
 	var medicineIndexChecksum = createCheckSum(JSON.stringify(atcTree));
 
 	titleSearchers = workerFarm({maxConcurrentWorkers: 20}, require.resolve("./workers/titlesearcher"));
-	contentSearchers = workerFarm({maxConcurrentWorkers: 14}, require.resolve("./workers/contentsearcher"));
+	contentSearchers = workerFarm({maxConcurrentWorkers: 8}, require.resolve("./workers/contentsearcher"));
 	boxSearchers = workerFarm({maxConcurrentWorkers: 20}, require.resolve("./workers/boxsearcher"));
-	medicineSearchers = workerFarm({maxConcurrentWorkers: 32}, require.resolve("./workers/medicinesearcher"));
+	medicineSearchers = workerFarm({maxConcurrentWorkers: 16}, require.resolve("./workers/medicinesearcher"));
 
 	//Clear prepopulated searches if checksums do not match 
 	controlSearchChecksums(path.normalize(__dirname + "/../../search/titlesearches/"), indexChecksum);
@@ -492,8 +492,8 @@ app.get('/medicinesearch', function(req,res){
 				var allSearchResults = [];
 				var count = 0;
 			
-				//Distribute search to 32 search workers
-				var nrOfMedicineSearchWorkers = 32;
+				//Distribute search to 16 search workers
+				var nrOfMedicineSearchWorkers = 16;
 				//console.time("Search");
 				
 				for (var i = 0; i < nrOfMedicineSearchWorkers; i++) {
@@ -514,11 +514,6 @@ app.get('/medicinesearch', function(req,res){
 							//Done searching, continue
 							var merged = [];
 							merged = merged.concat.apply(merged, allSearchResults);
-
-							//Sort according to score
-							merged.sort(function(a, b) {
-								return a.score - b.score;
-							});
 
 							searchResults[0] = merged;
 						
@@ -687,26 +682,6 @@ app.get('/titlesearch', function(req,res){
 							var merged = [];
 							merged = merged.concat.apply(merged, allSearchResults);
 						
-							//Sort according to score and level
-							merged.sort(function(a, b) {
-								//return a.score - b.score;
-
-							    var aScore = a.score;
-							    var bScore = b.score;
-							    var aLevel = a.level;
-							    var bLevel = b.level;
-							    //console.log(aLow + " | " + bLow);
-
-							    if(aScore == bScore)
-							    {
-							        return (aLevel < bLevel) ? -1 : (aLevel > bLevel) ? 1 : 0;
-							    }
-							    else
-							    {
-							        return (aScore < bScore) ? -1 : 1;
-							    }
-							});
-
 							searchResults[0] = merged;
 
 							results = filterAndSaveSearchResults(searchTerms, searchResults, possibleSearchFileName);
@@ -753,26 +728,6 @@ app.get('/titlesearch', function(req,res){
 					//Finished with async search
 
 					results = filterAndSaveSearchResults(searchTerms, searchResults, possibleSearchFileName);
-
-					//Sort according to score and level
-					results.sort(function(a, b) {
-						//return a.score - b.score;
-
-					    var aScore = a.score;
-					    var bScore = b.score;
-					    var aLevel = a.level;
-					    var bLevel = b.level;
-					    //console.log(aLow + " | " + bLow);
-
-					    if(aScore == bScore)
-					    {
-					        return (aLevel < bLevel) ? -1 : (aLevel > bLevel) ? 1 : 0;
-					    }
-					    else
-					    {
-					        return (aScore < bScore) ? -1 : 1;
-					    }
-					});
 
 					if (limit && results.length > resultsLimit) {
 						results.length = resultsLimit;
@@ -995,11 +950,6 @@ app.get('/contentsearch', function(req,res){
 							var merged = [];
 							merged = merged.concat.apply(merged, allSearchResults);
 						
-							//Sort according to score
-							merged.sort(function(a, b) {
-								return a.score - b.score;
-							});
-
 							searchResults[0] = merged;
 
 							results = filterAndSaveSearchResults(searchTerms, searchResults, possibleSearchFileName);
@@ -1158,11 +1108,6 @@ app.get('/boxsearch', function(req,res){
 							var merged = [];
 							merged = merged.concat.apply(merged, allSearchResults);
 						
-							//Sort according to score
-							merged.sort(function(a, b) {
-								return a.score - b.score;
-							});
-
 							searchResults[0] = merged;
 
 							results = filterAndSaveSearchResults(searchTerms, searchResults, possibleSearchFileName);
@@ -1248,6 +1193,7 @@ function filterAndSaveSearchResults(searchTerms, searchResults, fileName) {
 
 	if (searchTerms.length > 1) {
 		results = getResultsThatMatchAllTerms(searchResults);
+
 		
 		//If none matched, return the results for the term with the most results
 		//TODO: Improve this
@@ -1274,33 +1220,57 @@ function filterAndSaveSearchResults(searchTerms, searchResults, fileName) {
 	
 	//If this is a medicine search
 	if (results.length > 0 && (results[0].type === "atc" || results[0].type === "product")) {
-
-		//Send medicines with no info to the bottom of the list
+		//Sort according to score and lowest position in atc system
 		results.sort(function(a, b) {
-
-			if (a.noinfo !== undefined && !a.noinfo && b.noinfo) { //a is less than b by some ordering criterion
-				return -1;
+			
+			var aScore = a.score;
+			var bScore = b.score;
+			
+			var aLevel = a.id.length;
+			if (a.type === "product") {
+				aLevel = a.parentId.length + 1;
+				if (a.noinfo) {
+					aScore += 1;
+				}
 			}
 			
-			if (a.noinfo !== undefined && a.noinfo && !b.noinfo) { //a is greater than b by the ordering criterion
-				return 1;
+			var bLevel = b.id.length;
+			if (b.type === "product") {
+				bLevel = b.parentId.length + 1;
+				if (b.noinfo) {
+					bScore += 1;
+				}
 			}
-			// a must be equal to b
-			return 0;
+
+			if(aScore === bScore) {
+			    return (aLevel < bLevel) ? -1 : (aLevel > bLevel) ? 1 : 0;
+			} else {
+			    return (aScore < bScore) ? -1 : 1;
+			}
+			
 		});
 		
 	} else if (results.length > 0 && results[0].content !== undefined) {
-//		//Remove content blob
-//		var trimmed = JSON.parse(JSON.stringify(results));
-//
-//		for (var i = trimmed.length - 1; i >= 0; i--){
-//			//trimmed[i].content = "";
-//			trimmed[i].products = "";
-//		}
 
-		//TODO: If results have the same score, sort on level descending
+		//Sort according to score and level
+		results.sort(function(a, b) {
+			//return a.score - b.score;
 
-//		results = trimmed;
+		    var aScore = a.score;
+		    var bScore = b.score;
+		    var aLevel = a.level;
+		    var bLevel = b.level;
+
+		    if(aScore == bScore)
+		    {
+		        return (aLevel < bLevel) ? -1 : (aLevel > bLevel) ? 1 : 0;
+		    }
+		    else
+		    {
+		        return (aScore < bScore) ? -1 : 1;
+		    }
+		});
+
 		
 	}
 

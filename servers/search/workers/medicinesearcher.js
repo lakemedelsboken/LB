@@ -33,8 +33,8 @@ function initSearchIndex() {
 
 	var slices = [];
 
-	//Create 32 slices
-	var nrOfSlices = 32;
+	//Create 16 slices
+	var nrOfSlices = 16;
 	for (var i = 0; i < nrOfSlices; i++) {
 		slices.push([]);
 	}
