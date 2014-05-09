@@ -493,12 +493,12 @@ app.get('/medicinesearch', function(req,res){
 				var count = 0;
 			
 				//Distribute search to 32 search workers
-				//console.time("search");
-				for (var i = 0; i < 32; i++) {
-					//console.time("start");
-					medicineSearchers({index: i, term: term}, function(err, data) {
+				var nrOfMedicineSearchWorkers = 32;
+				//console.time("Search");
+				
+				for (var i = 0; i < nrOfMedicineSearchWorkers; i++) {
 
-						//console.timeEnd("start");
+					medicineSearchers({index: i, term: term}, function(err, data) {
 
 						if (err) {
 							console.error(err);
@@ -506,13 +506,15 @@ app.get('/medicinesearch', function(req,res){
 
 						allSearchResults.push(data);
 						count++;
-						if (count === 32) {
-							//console.timeEnd("search");
+						//console.log("Got " + allSearchResults.length);
+						
+						if (count === nrOfMedicineSearchWorkers) {
+							//console.timeEnd("Search");
 
 							//Done searching, continue
 							var merged = [];
 							merged = merged.concat.apply(merged, allSearchResults);
-						
+
 							//Sort according to score
 							merged.sort(function(a, b) {
 								return a.score - b.score;
@@ -520,9 +522,7 @@ app.get('/medicinesearch', function(req,res){
 
 							searchResults[0] = merged;
 						
-							//console.time("filter 1");
 							results = filterAndSaveSearchResults(searchTerms, searchResults, possibleMedicineSearchFileName);
-							//console.timeEnd("filter 1");
 
 							if (limit && results.length > resultsLimit) {
 								results.length = resultsLimit;
@@ -531,9 +531,6 @@ app.get('/medicinesearch', function(req,res){
 							if (limit) {
 								results = highlightSearchTerms(results, searchTerms, ["title", "titlePath"])
 							}
-
-							//var endDate = new Date().getTime();
-							//console.log(start.terms + " finished in " + (endDate - start.time));
 
 							//Normal exit
 							res.json(results);
@@ -1274,44 +1271,36 @@ function filterAndSaveSearchResults(searchTerms, searchResults, fileName) {
 
 	//Remove duplicates
 	results = removeDuplicates(results);
-
+	
 	//If this is a medicine search
-	if (results.length > 0 && results[0].indications !== undefined) {
+	if (results.length > 0 && (results[0].type === "atc" || results[0].type === "product")) {
 
-		var removedItems = [];
 		//Send medicines with no info to the bottom of the list
-		for (var k = results.length - 1; k >= 0; k--) {
-			if (results[k].noinfo === true) {
-				removedItems = removedItems.concat(results.splice(k, 1));
+		results.sort(function(a, b) {
+
+			if (a.noinfo !== undefined && !a.noinfo && b.noinfo) { //a is less than b by some ordering criterion
+				return -1;
 			}
-		}
-
-		if (removedItems.length > 0) {
-			results = results.concat(removedItems);
-		}
-
-		//Create copy of array
-		var trimmed = JSON.parse(JSON.stringify(results));
-
-		//Remove indications blob before returning or saving
-		for (var i = trimmed.length - 1; i >= 0; i--){
-			trimmed[i].indications = "";
-		}
-
-		results = trimmed;
+			
+			if (a.noinfo !== undefined && a.noinfo && !b.noinfo) { //a is greater than b by the ordering criterion
+				return 1;
+			}
+			// a must be equal to b
+			return 0;
+		});
 		
 	} else if (results.length > 0 && results[0].content !== undefined) {
-		//Remove content blob
-		var trimmed = JSON.parse(JSON.stringify(results));
+//		//Remove content blob
+//		var trimmed = JSON.parse(JSON.stringify(results));
+//
+//		for (var i = trimmed.length - 1; i >= 0; i--){
+//			//trimmed[i].content = "";
+//			trimmed[i].products = "";
+//		}
 
-		for (var i = trimmed.length - 1; i >= 0; i--){
-			//trimmed[i].content = "";
-			trimmed[i].products = "";
-		}
+		//TODO: If results have the same score, sort on level descending
 
-		//If results have the same score, sort on level descending
-
-		results = trimmed;
+//		results = trimmed;
 		
 	}
 
@@ -1323,6 +1312,7 @@ function filterAndSaveSearchResults(searchTerms, searchResults, fileName) {
 				if (err) {
 					console.error(err);
 				}
+
 			});
 
 		} else {

@@ -46,5 +46,17 @@ module.exports = function(input, callback) {
 	var index = searchIndices[input.index];
 	var results = index.search(input.term);
 
+	//Create copy of array
+	var trimmed = JSON.parse(JSON.stringify(results));
+
+	//Remove products blob before returning or saving
+	for (var i = trimmed.length - 1; i >= 0; i--){
+		if (trimmed[i].products !== undefined) {
+			trimmed[i].products = "";
+		}
+	}
+
+	results = trimmed;
+
 	callback(null, results);
 }

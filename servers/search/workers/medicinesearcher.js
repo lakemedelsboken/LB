@@ -19,7 +19,7 @@ function initSearchIndex() {
 	var options = {
 		keys: ["title", "titlePath", "id", "indications", "substance"],
 		threshold: 0.3,
-		distance: 2000
+		distance: 3000
 	};
 
 	var medicineSearchTree = atcTree.filter(function(element) {
@@ -31,8 +31,13 @@ function initSearchIndex() {
 //		return (b.title.length - a.title.length)
 //	});
 
+	var slices = [];
+
 	//Create 32 slices
-	var slices = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]];
+	var nrOfSlices = 32;
+	for (var i = 0; i < nrOfSlices; i++) {
+		slices.push([]);
+	}
 
 	//Iterate and distribute evenly in 8 slices
 	for (var i = 0; i < medicineSearchTree.length; i++) {
@@ -57,10 +62,19 @@ initSearchIndex();
 module.exports = function(input, callback) {
 
 	var index = searchIndices[input.index];
-	//var length = index.length;
-	//console.time(input.index + " : " + length);
 	var results = index.search(input.term);
-	//console.timeEnd(input.index + " : " + length);
+
+	//Create copy of array
+	var trimmed = JSON.parse(JSON.stringify(results));
+
+	//Remove indications blob before returning or saving
+	for (var i = trimmed.length - 1; i >= 0; i--){
+		if (trimmed[i].type === "product") {
+			trimmed[i].indications = "";
+		}
+	}
+
+	results = trimmed;
 
 	callback(null, results);
 }
