@@ -65,7 +65,7 @@ for (var name in foundNames) {
 //Convert tree to array
 var finalTree = [];
 for (var searchItem in tree) {
-	if (searchItem.length < 4) {
+	if (searchItem.length <= 4) {
 		finalTree.push(searchItem);
 	}
 }

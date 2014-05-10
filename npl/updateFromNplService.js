@@ -87,7 +87,10 @@ function updateFromNpl() {
 		//Wait, check queue of foundUpdates.json
 		function(callback){
 			//TODO: Implement wait
-			callback(null);
+			console.log("Waiting 10 seconds...")
+			setTimeout(function() {
+				callback(null);
+			}, 10000)
 		},
 		//addProductsToATCTree
 		function(callback){
@@ -98,6 +101,26 @@ function updateFromNpl() {
 		//replaceATCTree
 		function(callback){
 			run(__dirname + "/replaceATCTree.js", function(err) {
+				callback(err);
+			});	
+		},
+		//Wait, check queue of foundUpdates.json
+		function(callback){
+			//TODO: Implement wait
+			console.log("Waiting 10 seconds...")
+			setTimeout(function() {
+				callback(null);
+			}, 10000)
+		},
+		//Create search terms
+		function(callback){
+			run(__dirname + "/../fass/createSearchTerms.js", function(err) {
+				callback(err);
+			});	
+		},
+		//Create populated searches
+		function(callback){
+			run(__dirname + "/../fass/createPopulatedSearches.js", function(err) {
 				callback(err);
 			});	
 		},

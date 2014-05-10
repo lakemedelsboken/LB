@@ -66,7 +66,7 @@ var searchQueue = async.queue(function (task, callback) {
 		}
 		callback(null, task.term);
 	});
-}, 1);
+}, 2);
 
 //When all the searches have finished
 searchQueue.drain = function() {

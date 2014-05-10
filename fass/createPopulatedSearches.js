@@ -45,7 +45,7 @@ var interval = setInterval(function() {
 
 //Create queue
 var searchQueue = async.queue(function (task, callback) {
-	request("http://127.0.0.1:" + networkPort + "/medicinesearch?search=" + encodeURIComponent(task.term) + "", {'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': true}}, function (error, response, body) {
+	request("http://127.0.0.1:" + networkPort + "/medicinesearch?search=" + encodeURIComponent(task.term) + "", {}, function (error, response, body) {
 		
 		counter++;
 		intervalCounter++;
@@ -64,7 +64,7 @@ var searchQueue = async.queue(function (task, callback) {
 		}
 		callback(null, task.term);
 	});
-}, 1);
+}, 2);
 
 //When all the searches have finished
 searchQueue.drain = function() {
@@ -80,7 +80,8 @@ var searchTerms = JSON.parse(fs.readFileSync(__dirname + "/productSearchTerms.js
 console.log("Sending requests for " + searchTerms.length + " search terms...");
 
 //Iterate terms and add to queue
-for (var i = searchTerms.length - 1; i >= 0; i--) {
+for (var i = 0; i < searchTerms.length; i++) {
+
 	var term = searchTerms[i];
 
 	if (term.length > 32) {
