@@ -11,7 +11,7 @@
 	{
 		"name"      : "site",
 		"script"    : "./site/server.js",
-		"instances" : "4",
+		"instances" : "8",
 		"min_uptime" : "100",
 		"max_restarts" : "10",
 		"fileError" : "./logs/site-err.log",
@@ -29,7 +29,7 @@
 	{
 		"name"      : "api",
 		"script"    : "./api/server.js",
-		"instances" : "4",
+		"instances" : "8",
 		"min_uptime" : "100",
 		"max_restarts" : "10",
 		"fileError" : "./logs/api-err.log",
