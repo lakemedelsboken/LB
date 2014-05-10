@@ -107,10 +107,10 @@ function updateFromNpl() {
 		//Wait, check queue of foundUpdates.json
 		function(callback){
 			//TODO: Implement wait
-			console.log("Waiting 10 seconds...")
+			console.log("Waiting 20 seconds...")
 			setTimeout(function() {
 				callback(null);
-			}, 10000)
+			}, 20000)
 		},
 		//Create search terms
 		function(callback){
