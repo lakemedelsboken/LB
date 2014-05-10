@@ -19,7 +19,8 @@ function initSearchIndex() {
 	var options = {
 		keys: ["title", "titlePath", "id", "indications", "substance"],
 		threshold: 0.3,
-		distance: 3000
+		distance: 3000,
+		boost: [2, 1, 1, 1, 1]
 	};
 
 	var medicineSearchTree = atcTree.filter(function(element) {

@@ -8,6 +8,7 @@ var request = require("request");
 var zlib = require("zlib");
 var chokidar = require("chokidar");
 var util = require("util");
+var LRU = require("lru-cache")
 
 var secretSettingsPath = __dirname + "/../../settings/secretSettings.json";
 
@@ -35,6 +36,7 @@ var atcTree = JSON.parse(fs.readFileSync(__dirname + "/../../npl/atcTree.json", 
 var settings = JSON.parse(fs.readFileSync(__dirname + "/../../settings/settings.json", "utf8"));
 
 var networkPort = settings.internalServerPorts.search;
+var searchCache = LRU({max: 1000, maxAge: 1000 * 60 * 60});
 
 var numCPUs = (require('os').cpus().length);
 
@@ -384,48 +386,76 @@ function getResultsThatMatchAllTerms(searchResults) {
 	return results;
 }
 
-function getSearchContents(fileName, limit, searchTerms, highlightedKeys, callback) {
+function getSearchContents(fileName, limit, searchTerms, highlightedKeys, debug, callback) {
 	
 	var results = [];
 	
-	fs.readFile(fileName, function(err, data) {
-		if (err) {
-			callback(err, []);
-			fs.unlink(fileName, function(err) {});
-		} else {
-			zlib.unzip(data, function(err, buffer) {
-				if (err) {
-					
-				} else {
-					var errorParsingJSON = false;
-					try {
-						results = JSON.parse(buffer.toString());
-					} catch (parserError) {
-						errorParsingJSON = parserError;
-					}
+	//console.log("Cache length: " + searchCache.keys().length);
+	
+	if (searchCache.has(fileName)) {
 
-					if (errorParsingJSON) {
-						callback(errorParsingJSON, []);
-						fs.unlink(fileName, function(err) {});
-						
-					} else {
+		//console.log("Fetch from cache");
+		results = searchCache.get(fileName);
 
-						if (limit && results.length > resultsLimit) {
-							results.length = resultsLimit;
-						}
-
-						if (limit) {
-							searchTerms = parseSearchTerms(searchTerms, !limit, false);
-							results = highlightSearchTerms(results, searchTerms, highlightedKeys)
-						}
-
-						callback(null, results);
-
-					}
-				}
-			});
+		if (limit && results.length > resultsLimit) {
+			results.length = resultsLimit;
 		}
-	});
+
+		//console.log("limit: " + limit);})
+		if (limit) {
+			if (debug) {console.time("ParseSearchTerms");}
+			searchTerms = parseSearchTerms(searchTerms, !limit, false);
+			if (debug) {console.timeEnd("ParseSearchTerms");}
+			if (debug) {console.time("HighlightSearchTerms");}
+			results = highlightSearchTerms(results, searchTerms, highlightedKeys)
+			if (debug) {console.timeEnd("HighlightSearchTerms");}
+		}
+
+		callback(null, results);
+		
+	} else {
+		fs.readFile(fileName, function(err, data) {
+			if (err) {
+				callback(err, []);
+				fs.unlink(fileName, function(err) {});
+			} else {
+				zlib.unzip(data, function(err, buffer) {
+					if (err) {
+					
+					} else {
+						var errorParsingJSON = false;
+						try {
+							results = JSON.parse(buffer.toString());
+						} catch (parserError) {
+							errorParsingJSON = parserError;
+						}
+
+						if (errorParsingJSON) {
+							callback(errorParsingJSON, []);
+							fs.unlink(fileName, function(err) {});
+						
+						} else {
+
+							searchCache.set(fileName, results);
+
+							if (limit && results.length > resultsLimit) {
+								results.length = resultsLimit;
+							}
+
+							if (limit) {
+								searchTerms = parseSearchTerms(searchTerms, !limit, false);
+								results = highlightSearchTerms(results, searchTerms, highlightedKeys)
+							}
+
+							callback(null, results);
+
+						}
+					}
+				});
+			}
+		});
+	}
+	
 }
 
 app.get('/medicinesearch', function(req,res){
@@ -436,6 +466,7 @@ app.get('/medicinesearch', function(req,res){
 	//var start = {time: startDate, terms: searchTerms};
 
 	var searchLimit = req.query["limit"];
+	var debug = (req.query["debug"] === "on");
 
 	//Implement limit
 	var limit = true;
@@ -462,7 +493,7 @@ app.get('/medicinesearch', function(req,res){
 	fs.exists(possibleMedicineSearchFileName, function(fileExists) {
 
 		if (fileExists) {
-			getSearchContents(possibleMedicineSearchFileName, limit, searchTerms, ["title", "titlePath"], function(err, data) {
+			getSearchContents(possibleMedicineSearchFileName, limit, searchTerms, ["title", "titlePath"], debug, function(err, data) {
 				if (err) {
 					res.json([]);
 					console.error(err);
@@ -494,10 +525,10 @@ app.get('/medicinesearch', function(req,res){
 			
 				//Distribute search to 16 search workers
 				var nrOfMedicineSearchWorkers = 16;
-				//console.time("Search");
+				if (debug) {console.time("Search");}
 				
 				for (var i = 0; i < nrOfMedicineSearchWorkers; i++) {
-
+					//if (debug) {console.time("Worker" + i)};
 					medicineSearchers({index: i, term: term}, function(err, data) {
 
 						if (err) {
@@ -506,25 +537,33 @@ app.get('/medicinesearch', function(req,res){
 
 						allSearchResults.push(data);
 						count++;
-						//console.log("Got " + allSearchResults.length);
+
+						//if (debug) {console.timeEnd("Worker" + (allSearchResults.length - 1))};
 						
 						if (count === nrOfMedicineSearchWorkers) {
-							//console.timeEnd("Search");
+
+							if (debug) {console.timeEnd("Search");}
 
 							//Done searching, continue
+							if (debug) {console.time("Merge");}
 							var merged = [];
 							merged = merged.concat.apply(merged, allSearchResults);
 
 							searchResults[0] = merged;
+							if (debug) {console.timeEnd("Merge");}
 						
+							if (debug) {console.time("FilterAndSave");}
 							results = filterAndSaveSearchResults(searchTerms, searchResults, possibleMedicineSearchFileName);
+							if (debug) {console.timeEnd("FilterAndSave");}
 
 							if (limit && results.length > resultsLimit) {
 								results.length = resultsLimit;
 							}
 						
 							if (limit) {
+								if (debug) {console.time("HighLight");}
 								results = highlightSearchTerms(results, searchTerms, ["title", "titlePath"])
+								if (debug) {console.timeEnd("HighLight");}
 							}
 
 							//Normal exit
@@ -643,7 +682,7 @@ app.get('/titlesearch', function(req,res){
 	fs.exists(possibleSearchFileName, function(fileExists) {
 
 		if (fileExists) {
-			getSearchContents(possibleSearchFileName, limit, searchTerms, ["title", "titlePath"], function(err, data) {
+			getSearchContents(possibleSearchFileName, limit, searchTerms, ["title", "titlePath"], false, function(err, data) {
 				if (err) {
 					res.json([]);
 					console.error(err);
@@ -909,7 +948,7 @@ app.get('/contentsearch', function(req,res){
 	fs.exists(possibleSearchFileName, function(fileExists) {
 
 		if (fileExists) {
-			getSearchContents(possibleSearchFileName, limit, searchTerms, ["content", "title", "titlePath"], function(err, data) {
+			getSearchContents(possibleSearchFileName, limit, searchTerms, ["content", "title", "titlePath"], false, function(err, data) {
 				if (err) {
 					res.json([]);
 					console.error(err);
@@ -1067,7 +1106,7 @@ app.get('/boxsearch', function(req,res){
 	fs.exists(possibleSearchFileName, function(fileExists) {
 
 		if (fileExists) {
-			getSearchContents(possibleSearchFileName, limit, searchTerms, ["title", "titlePath"], function(err, data) {
+			getSearchContents(possibleSearchFileName, limit, searchTerms, ["title", "titlePath"], false, function(err, data) {
 				if (err) {
 					res.json([]);
 					console.error(err);
@@ -1273,6 +1312,9 @@ function filterAndSaveSearchResults(searchTerms, searchResults, fileName) {
 
 		
 	}
+
+	//Put in cache
+	searchCache.set(fileName, results);
 
 	//Compress and save to file, async
 	zlib.deflate(JSON.stringify(results), function(err, buffer) {

@@ -3,7 +3,7 @@ var fs = require("fs");
 //var productsPath = __dirname + "/www/products/";
 //var productNames = fs.readdirSync(productsPath);
 
-var atcTree = JSON.parse(fs.readFileSync(__dirname + "/atcTree.json", "utf8"));
+var atcTree = JSON.parse(fs.readFileSync(__dirname + "/../npl/atcTree.json", "utf8"));
 
 var productNames = atcTree.filter(function(element) {
 	return ((element.type === "atc" && element.hasChildren) || element.type === "product");
@@ -65,7 +65,9 @@ for (var name in foundNames) {
 //Convert tree to array
 var finalTree = [];
 for (var searchItem in tree) {
-	finalTree.push(searchItem);
+	if (searchItem.length < 4) {
+		finalTree.push(searchItem);
+	}
 }
 
 finalTree.sort();

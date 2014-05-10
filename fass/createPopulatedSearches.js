@@ -45,7 +45,7 @@ var interval = setInterval(function() {
 
 //Create queue
 var searchQueue = async.queue(function (task, callback) {
-	request("http://127.0.0.1:" + networkPort + "/medicinesearch?search=" + encodeURIComponent(task.term) + "&limit=off", {'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': true}}, function (error, response, body) {
+	request("http://127.0.0.1:" + networkPort + "/medicinesearch?search=" + encodeURIComponent(task.term) + "", {'auth': {'user': secretSettings.admin.basicAuthId,'pass': secretSettings.admin.basicAuthPassword,'sendImmediately': true}}, function (error, response, body) {
 		
 		counter++;
 		intervalCounter++;
