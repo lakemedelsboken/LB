@@ -407,7 +407,8 @@ function getSearchContents(fileName, limit, searchTerms, highlightedKeys, debug,
 			searchTerms = parseSearchTerms(searchTerms, !limit, false);
 			if (debug) {console.timeEnd("ParseSearchTerms");}
 			if (debug) {console.time("HighlightSearchTerms");}
-			results = highlightSearchTerms(results, searchTerms, highlightedKeys)
+			var resultsCopy = JSON.parse(JSON.stringify(results));
+			results = highlightSearchTerms(resultsCopy, searchTerms, highlightedKeys)
 			if (debug) {console.timeEnd("HighlightSearchTerms");}
 		}
 
@@ -444,7 +445,8 @@ function getSearchContents(fileName, limit, searchTerms, highlightedKeys, debug,
 
 							if (limit) {
 								searchTerms = parseSearchTerms(searchTerms, !limit, false);
-								results = highlightSearchTerms(results, searchTerms, highlightedKeys)
+								var resultsCopy = JSON.parse(JSON.stringify(results));
+								results = highlightSearchTerms(resultsCopy, searchTerms, highlightedKeys)
 							}
 
 							callback(null, results);
