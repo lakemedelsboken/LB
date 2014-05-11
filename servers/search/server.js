@@ -407,8 +407,7 @@ function getSearchContents(fileName, limit, searchTerms, highlightedKeys, debug,
 			searchTerms = parseSearchTerms(searchTerms, !limit, false);
 			if (debug) {console.timeEnd("ParseSearchTerms");}
 			if (debug) {console.time("HighlightSearchTerms");}
-			var resultsCopy = JSON.parse(JSON.stringify(results));
-			results = highlightSearchTerms(resultsCopy, searchTerms, highlightedKeys)
+			results = highlightSearchTerms(results, searchTerms, highlightedKeys)
 			if (debug) {console.timeEnd("HighlightSearchTerms");}
 		}
 
@@ -437,7 +436,9 @@ function getSearchContents(fileName, limit, searchTerms, highlightedKeys, debug,
 						
 						} else {
 
-							searchCache.set(fileName, results);
+							if (!searchCache.has(fileName)) {
+								searchCache.set(fileName, results);
+							}
 
 							if (limit && results.length > resultsLimit) {
 								results.length = resultsLimit;
@@ -445,8 +446,7 @@ function getSearchContents(fileName, limit, searchTerms, highlightedKeys, debug,
 
 							if (limit) {
 								searchTerms = parseSearchTerms(searchTerms, !limit, false);
-								var resultsCopy = JSON.parse(JSON.stringify(results));
-								results = highlightSearchTerms(resultsCopy, searchTerms, highlightedKeys)
+								results = highlightSearchTerms(results, searchTerms, highlightedKeys)
 							}
 
 							callback(null, results);
@@ -820,6 +820,9 @@ function escapeRegExp(str) {
 
 function highlightSearchTerms(results, searchTerms, keysToHighlight) {
 	
+	//Create a copy with no references
+	results = JSON.parse(JSON.stringify(results));
+	
 	var maxContentLength = 200;
 
 	var keysLookup = {};
@@ -849,7 +852,7 @@ function highlightSearchTerms(results, searchTerms, keysToHighlight) {
 					for (var j = 0; j < searchTerms.length; j++) {
 						var term = searchTerms[j];
 						
-						var index = text.indexOf(term);
+						var index = text.toLowerCase().indexOf(term);
 						
 						if (index > -1) {
 							var start = ((index - charsLeft) < 0) ? 0 : (index - charsLeft);
@@ -885,7 +888,6 @@ function highlightSearchTerms(results, searchTerms, keysToHighlight) {
 					} else if (text.length > maxContentLength) {
 						text = text.substr(0, maxContentLength) + "...";
 					}
-					
 					
 				}
 			
@@ -1108,7 +1110,7 @@ app.get('/boxsearch', function(req,res){
 	fs.exists(possibleSearchFileName, function(fileExists) {
 
 		if (fileExists) {
-			getSearchContents(possibleSearchFileName, limit, searchTerms, ["title", "titlePath"], false, function(err, data) {
+			getSearchContents(possibleSearchFileName, limit, searchTerms, ["title", "titlePath", "content"], false, function(err, data) {
 				if (err) {
 					res.json([]);
 					console.error(err);
@@ -1156,6 +1158,10 @@ app.get('/boxsearch', function(req,res){
 							if (limit && results.length > resultsLimit) {
 								results.length = resultsLimit;
 							}
+							
+							if (limit) {
+								results = highlightSearchTerms(results, searchTerms, ["title", "titlePath", "content"]);
+							}
 
 							//Normal exit
 							res.json(results);
@@ -1193,6 +1199,10 @@ app.get('/boxsearch', function(req,res){
 
 					if (limit && results.length > resultsLimit) {
 						results.length = resultsLimit;
+					}
+					
+					if (limit) {
+						results = highlightSearchTerms(results, searchTerms, ["title", "titlePath", "content"]);
 					}
 
 					//Async exit
@@ -1317,6 +1327,14 @@ function filterAndSaveSearchResults(searchTerms, searchResults, fileName) {
 
 	//Put in cache
 	searchCache.set(fileName, results);
+
+	/*
+	fs.writeFile(fileName.replace(".json.gz", ".json"), JSON.stringify(results, null, "\t"), function(err) {
+		if (err) {
+			console.error(err);
+		}
+	});
+	*/
 
 	//Compress and save to file, async
 	zlib.deflate(JSON.stringify(results), function(err, buffer) {
