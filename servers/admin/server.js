@@ -812,12 +812,12 @@ function getControlResults() {
 
 		if (chapterId.length < 2) {
 			console.error(new Error("Could not extract chapter id from " + chapterName + " in getControlResults()"));
-			return [];
-		}
-
-		chapterId = chapterId[0] + "_" + chapterId[1];
-		if (controls[chapterId] === undefined) {
-			controls[chapterId] = {facts: 0, therapyRecommendations: 0, infoTables: 0, figures: 0};
+			//return [];
+		} else {
+			chapterId = chapterId[0] + "_" + chapterId[1];
+			if (controls[chapterId] === undefined) {
+				controls[chapterId] = {facts: 0, therapyRecommendations: 0, infoTables: 0, figures: 0};
+			}
 		}
 
 	}
@@ -883,6 +883,18 @@ function getControlResults() {
 				} else {
 					chapterResults.therapyRecommendations = {result: false, description: "Förväntade " + expectedTherapies + " terapirekommendationer, fann " + foundTherapies + " stycken."};
 				}
+
+				//Updated text
+				var updates = $("span.updated");
+				var outUpdates = [];
+				updates.each(function(i, e) {
+					var update = $(e);
+					if (update.text().trim() !== "") {
+						outUpdates.push({text: update.text().trim(), html: update.html()});
+					}
+				});
+
+				chapterResults.updates = outUpdates;
 
 				//Outgoing links
 				/*
@@ -1556,7 +1568,7 @@ function getChapters() {
 	var files = fs.readdirSync(__dirname + "/../site/chapters/");
 	var previews = [];
 	for (var i=0; i < files.length; i++) {
-		if (files[i].indexOf(".html") > -1) {
+		if (files[i].indexOf(".html") > -1 && files[i].indexOf("_") > 0) {
 			var pdf = "";
 		
 			var pdfDirPath = __dirname + "/../site/chapters/" + files[i].replace(".html", "_pdf/");

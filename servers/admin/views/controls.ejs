@@ -70,6 +70,20 @@ for (var i = 0; i < results.length; i++) {
 			<%
 		}
 	}
+
+	if (result.updates.length > 0) {
+		%>
+		<h5>Uppdaterade ord</h5>
+		<%
+		for	(var j = 0; j < result.updates.length; j++) {
+			var update = result.updates[j];
+			%>
+			<div class="row" style="padding-bottom: 5px; padding-top: 5px; border-bottom: solid 1px #cecece;">
+				<div class="span12" style="text-align: left; white-space: nowrap;">"<%=update.text%>"</div>
+			</div>
+			<%
+		}
+	}
 		
 	%>
 	<hr>
