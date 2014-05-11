@@ -2,6 +2,8 @@ var fs = require("fs");
 var async = require("async");
 var wrench = require("wrench");
 var path = require("path");
+var im = require("imagemagick");
+var exec = require('child_process').exec;
 
 RegExp.quote = function(str) {
 	return str.replace(/([.?*+^$[\]\\(){}-])/g, "\\$1");
@@ -1009,144 +1011,7 @@ var Parser = {
 			}
 		};
 
-		self.tagHandlers["figure"] = {
-			begin: function(tag, indentation) {
-
-				var result = "";
-
-				//End current format before rendering figure
-				while (self.state.format.length > 0) {
-					if (self.formatHandlers[self.state.format[self.state.format.length - 1]] !== undefined) {
-						//TODO: Perhaps self.html.push instead
-						result += self.formatHandlers[self.state.format[self.state.format.length - 1]].end(tag, indentation);
-					} else {
-						//console.error("Could not find ending formathandler for " + self.state.format[self.state.format.length - 1]);
-					}
-					self.state.format.pop();
-				}
-
-				self.state.figure = true;
-
-				$tag = $(tag);
-				//var number = $tag.children().filter(function(index, element) {return (element.name === "PgfNumString");}).attr("value").split(".")[0].replace("Figur ", "");
-
-				var number = $tag.find("PgfNumString").attr("value").split(".")[0].replace("Figur ", "");
-				
-				var imagesDirName = sourceFilePath.toLowerCase().replace(/\+/g, "-");
-				if (imagesDirName.indexOf("/") > -1) {
-					imagesDirName = imagesDirName.split("/");
-					imagesDirName = imagesDirName[imagesDirName.length - 1];
-				}
-
-				imagesDirName = imagesDirName.replace(".mif", "").replace(".mifml", "") + "_images";
-				var optImagesDirName = imagesDirName + "/opt"
-				result += "<div id=\"figure_" + number + "\" class=\"well figure\">";
-//				result += "<img class=\"figureImage\" src=\"" + imagesDirName + "/figur" + number + ".png\" />";
-
-				result += "<div class=\"figureImage\" data-picture data-alt=\"Figur " + number + "\">";
-				
-				result += "<div data-src=\"" + optImagesDirName + "/figur" + number + "_small.png\"></div>";
-				result += "<div data-src=\"" + optImagesDirName + "/figur" + number + "_small_x2.png\"         data-media=\"(min-device-pixel-ratio: 2.0)\"></div>";
-				result += "<div data-src=\"" + optImagesDirName + "/figur" + number + "_medium.png\"        data-media=\"(min-width: 481px)\"></div>";
-				result += "<div data-src=\"" + optImagesDirName + "/figur" + number + "_medium_x2.png\"     data-media=\"(min-width: 481px) and (min-device-pixel-ratio: 2.0)\"></div>";
-
-				//result += "<div data-src=\"" + imagesDirName + "/figur" + number + "_large.png\"         data-media=\"(min-width: 768px)\"></div>";
-				//result += "<div data-src=\"" + imagesDirName + "/figur" + number + "_large_x2.png\"      data-media=\"(min-width: 768px) and (min-device-pixel-ratio: 2.0)\"></div>";
-
-				result += "<div data-src=\"" + optImagesDirName + "/figur" + number + "_large.png\"    data-media=\"(min-width: 980px)\"></div>";
-				result += "<div data-src=\"" + optImagesDirName + "/figur" + number + "_large_x2.png\" data-media=\"(min-width: 980px) and (min-device-pixel-ratio: 2.0)\"></div>";
-				result += "<div data-src=\"" + optImagesDirName + "/figur" + number + "_huge.png\"    data-media=\"(min-width: 1200px)\"></div>";
-				result += "<div data-src=\"" + optImagesDirName + "/figur" + number + "_huge_x2.png\" data-media=\"(min-width: 1200px) and (min-device-pixel-ratio: 2.0)\"></div>";
-
-				result += "<!--[if (lt IE 9) & (!IEMobile)]>";
-				result += "<div data-src=\"" + optImagesDirName + "/figur" + number + "_large.png\"></div>";
-				result += "<![endif]-->";
-				
-				result += "<noscript>";
-				result += "<img src=\"" + optImagesDirName + "/figur" + number + "_large.png\" alt=\"Figur " + number + "\">";
-				result += "</noscript>";
-				result += "</div>";
-				
-				var newImagePath = __dirname + "/../servers/site/chapters/" + imagesDirName + "/figur" + number + ".png";
-				
-				var optImagesDir = __dirname + "/../servers/site/chapters/" + imagesDirName + "/opt/";
-				
-				//console.error("Creating dir for optimized images: " + optImagesDir);
-				wrench.mkdirSyncRecursive(optImagesDir);
-				//console.error("Done.");
-				
-				if (!fs.existsSync(newImagePath)) {
-					//Check if image exists
-					var imageName = newImagePath;
-					if (imageName.indexOf("/") > -1) {
-						imageName = imageName.split("/");
-						imageName = imageName[imageName.length - 1];
-					}
-					console.error("* Missing figure image: " + imageName);
-				} else {
-
-					//async.series(
-					async.parallel(
-						[
-							function(callback) {
-								resizeImage(newImagePath, 480, "_small", forcedImageResizing, function(err, result) {
-									callback(err, result);
-								});
-							},
-							function(callback) {
-								resizeImage(newImagePath, 960, "_small_x2", forcedImageResizing, function(err, result) {
-									callback(err, result);
-								});
-							},
-							function(callback) {
-								resizeImage(newImagePath, 724, "_medium", forcedImageResizing, function(err, result) {
-									callback(err, result);
-								});
-							},
-							function(callback) {
-								resizeImage(newImagePath, 1448, "_medium_x2", forcedImageResizing, function(err, result) {
-									callback(err, result);
-								});
-							},
-							function(callback) {
-								resizeImage(newImagePath, 940, "_large", forcedImageResizing, function(err, result) {
-									callback(err, result);
-								});
-							},
-							function(callback) {
-								resizeImage(newImagePath, 1880, "_large_x2", forcedImageResizing, function(err, result) {
-									callback(err, result);
-								});
-							},
-							function(callback) {
-								resizeImage(newImagePath, 1170, "_huge", forcedImageResizing, function(err, result) {
-									callback(err, result);
-								});
-							},
-							function(callback) {
-								resizeImage(newImagePath, 2340, "_huge_x2", forcedImageResizing, function(err, result) {
-									callback(err, result);
-								});
-							}
-						], 
-						function(err, results) {
-							if (err) {
-								console.error("* Error:", err);
-							} else {
-								//console.error("Resized images: \n\t" + results.join("\n\t"));
-							}
-						}
-					);
-					
-				}
-				
-				return result;
-			},
-			end: function(tag, indentation) {
-				self.state.figure = false;
-				return "</p></div>";
-			}
-		};
+		self.tagHandlers["figure"] = require(__dirname + "/processors/" + outputType + "/figure.js");
 
 		self.tagHandlers["pgfnumstring"] = {
 			begin: function(tag, indentation) {
@@ -1395,9 +1260,9 @@ var Parser = {
 						}
 						
 						if (self.formatHandlers[currentFormat] !== undefined) {
-							result = self.formatHandlers[currentFormat].begin(tag, indentation);
+							result = self.formatHandlers[currentFormat].begin(tag, indentation, self);
 						} else if (self.formatHandlers[currentFormat.replace("Indent", "")] !== undefined) {
-							result = self.formatHandlers[currentFormat.replace("Indent", "")].begin(tag, indentation);
+							result = self.formatHandlers[currentFormat.replace("Indent", "")].begin(tag, indentation, self);
 						} else {
 							unhandledTags[currentFormat] = "";
 						}
@@ -1719,7 +1584,7 @@ var Parser = {
 									var value = $element.attr("value");
 									if (value.indexOf("message URL ") === 0) {
 										var result = self.html.pop();
-										result = result.substr(0, result.length - 1) + " href=\"" + value.replace("message URL ", "") + "\" target=\"_blank\">";
+										result = result.substr(0, result.length - 1) + " href=\"" + value.replace("message URL ", "") + "\" target=\"_blank\" class=\"linkOut\">";
 										self.html.push(result);
 										self.state.linkFormat = true;
 										self.state.markerFormat = null;
@@ -2026,6 +1891,9 @@ var Parser = {
 	parseFile: function(filePath, callback) {
 		var self = this;
 		if (!self.isInitialized) throw new Error("parseFile was called before initializing the parser.");
+		
+		self.sourceFilePath = filePath;
+		self.forcedImageResizing = forcedImageResizing;
 		
 		self.fileName = (filePath.indexOf("/") > -1) ? filePath.split("/")[filePath.split("/").length - 1] : filePath;
 		
@@ -2794,7 +2662,7 @@ var Parser = {
 			//Begin tag
 			if (existsHandlers) {
 	//			console.error("Beginning tag \"" + tagName + "\"...")
-				var result = self.tagHandlers[tagName].begin(tag, indentation);
+				var result = self.tagHandlers[tagName].begin(tag, indentation, self);
 				if (result !== "") {
 	//				console.error("Finished beginning tag \"" + tagName + "\". " + result)
 					self.html.push(result);
@@ -2819,7 +2687,7 @@ var Parser = {
 			//End tag
 			if (existsHandlers) {
 				//console.error("Ending tag \"" + tagName + "\"...")
-				var result = indentation + self.tagHandlers[tagName].end(tag, indentation);
+				var result = indentation + self.tagHandlers[tagName].end(tag, indentation, self);
 				if (result.trim() !== "") {
 					//console.error("Finished ending tag \"" + tagName + "\". " + result);
 					self.html.push(result);
@@ -2894,7 +2762,66 @@ var Parser = {
 	},
 	isNumber:  function(o) {
 	  return ! isNaN (o-0) && o !== null && o !== "" && o !== false;
-	}	
+	},
+	resizeImage: function(imagePath, maxWidth, extension, forceResize, callback) {
+		//var maxImageWidth = maxWidth;
+		var newDestination = imagePath.replace(".png", extension + ".png");
+
+		if (fs.existsSync(newDestination) && !forceResize) {
+			callback(null, "Skipped resize of " + newDestination);
+		} else {
+			im.identify(imagePath, function(err, features) {
+				if (err) { return callback(err); }
+				//var maxImageWidth = parseInt((features.width / 2), 10);
+				if (maxWidth > features.width) {
+					maxWidth = features.width;
+				}
+				var newWidth = maxWidth;
+				var newHeight = parseInt(features.height * (newWidth/features.width), 10);
+
+				//Make sure image is not bigger than 1024*1024*3 for compatibility with iPod Touch 4 and iPhone 3GS
+				var maxPixels = 1024*1024*3;
+
+				if (extension.indexOf("_x2") > -1) {
+					//Make sure image is not bigger than 1024*1024*5 for compatibility with retina devices
+					var maxPixels = 1024*1024*5;
+				}
+
+				while((newWidth * newHeight) > maxPixels) {
+					var ratio = newWidth / newHeight;
+					var oldWidth = newWidth;
+					newWidth = newWidth - 5;
+					newHeight = parseInt(newHeight * (newWidth/oldWidth), 10);
+				}
+
+				im.convert([imagePath, '-resize', newWidth + 'x' + newHeight, 'PNG8:' + newDestination], function(err, stdout) { //, "-colors", "256"
+					if (err) { return callback(err); }
+				
+					var optImageDir = newDestination.split("/");
+					var newFileName = optImageDir.pop();
+					optImageDir = optImageDir.join("/") + "/opt/";
+
+					wrench.mkdirSyncRecursive(optImageDir);
+				
+					exec("pngnq -e .png -f -s 1 -d " + optImageDir + " " + newDestination, function (error, stdout, stderr) {
+						//console.error('stdout: ' + stdout);
+						//console.error('stderr: ' + stderr);
+						if (error !== null) {
+							console.error('exec error: ' + error);
+						}
+					
+						exec("pngout -s1 -y " + optImageDir + "/" + newFileName, function (error, stdout, stderr) {
+							callback(null, "Resized: " + imagePath + " to " + newWidth + "x" + newHeight + " at " + newDestination);
+						});
+					});
+
+				});
+			});
+		
+		}
+
+	}
+	
 }
 
 //console.error("\nInitializing parser...");
@@ -2944,66 +2871,3 @@ Parser.parseFile(sourceFilePath, function(err, result, title) {
 	console.error("**************************************");
 	
 });
-
-
-var im = require("imagemagick");
-var exec = require('child_process').exec;
-
-function resizeImage(imagePath, maxWidth, extension, forceResize, callback) {
-	//var maxImageWidth = maxWidth;
-	var newDestination = imagePath.replace(".png", extension + ".png");
-
-	if (fs.existsSync(newDestination) && !forceResize) {
-		callback(null, "Skipped resize of " + newDestination);
-	} else {
-		im.identify(imagePath, function(err, features) {
-			if (err) { return callback(err); }
-			//var maxImageWidth = parseInt((features.width / 2), 10);
-			if (maxWidth > features.width) {
-				maxWidth = features.width;
-			}
-			var newWidth = maxWidth;
-			var newHeight = parseInt(features.height * (newWidth/features.width), 10);
-
-			//Make sure image is not bigger than 1024*1024*3 for compatibility with iPod Touch 4 and iPhone 3GS
-			var maxPixels = 1024*1024*3;
-
-			if (extension.indexOf("_x2") > -1) {
-				//Make sure image is not bigger than 1024*1024*5 for compatibility with retina devices
-				var maxPixels = 1024*1024*5;
-			}
-
-			while((newWidth * newHeight) > maxPixels) {
-				var ratio = newWidth / newHeight;
-				var oldWidth = newWidth;
-				newWidth = newWidth - 5;
-				newHeight = parseInt(newHeight * (newWidth/oldWidth), 10);
-			}
-
-			im.convert([imagePath, '-resize', newWidth + 'x' + newHeight, 'PNG8:' + newDestination], function(err, stdout) { //, "-colors", "256"
-				if (err) { return callback(err); }
-				
-				var optImageDir = newDestination.split("/");
-				var newFileName = optImageDir.pop();
-				optImageDir = optImageDir.join("/") + "/opt/";
-
-				wrench.mkdirSyncRecursive(optImageDir);
-				
-				exec("pngnq -e .png -f -s 1 -d " + optImageDir + " " + newDestination, function (error, stdout, stderr) {
-					//console.error('stdout: ' + stdout);
-					//console.error('stderr: ' + stderr);
-					if (error !== null) {
-						console.error('exec error: ' + error);
-					}
-					
-					exec("pngout -s1 -y " + optImageDir + "/" + newFileName, function (error, stdout, stderr) {
-						callback(null, "Resized: " + imagePath + " to " + newWidth + "x" + newHeight + " at " + newDestination);
-					});
-				});
-
-			});
-		});
-		
-	}
-
-}
