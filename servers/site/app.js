@@ -49,6 +49,7 @@ exports.init = function(port) {
 //		app.use(express.bodyParser());
 //		app.use(express.methodOverride());
 		app.use(versionator.middleware);
+		app.use('/bookmarklets', express.static(__dirname + '/bookmarklets'));
 		app.use(express.static(__dirname + '/static', {maxAge: 31104000000})); //
 		app.use(express.static(__dirname + '/chapters'));
 		app.use(express.static(__dirname + '/../../fass/www'));
