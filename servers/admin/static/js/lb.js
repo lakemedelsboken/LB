@@ -2052,6 +2052,49 @@ var console = {log: function() {}};
 				class_name: "clickover boxSearchPopover",
 				onShown: function() {
 					var currentTherapyMenu = $("ul." + className);
+					
+					currentTherapyMenu.on("click", "a.searchResult", function(event) {
+
+						event.preventDefault();
+						lb.closeSearchResults();
+						lb.closeMedicineWindow();
+
+						var anchor = $(this);
+						var chapter = anchor.attr("href").split("#")[0];
+						var id = anchor.attr("href").split("#")[1];
+
+						var currentChapter = lb.currentChapter;
+				
+						if (currentChapter === "") {
+							currentChapter = window.location.href;
+						}
+				
+						if (currentChapter.indexOf(chapter) > -1) {
+							if (lb.isMobile.any()) {
+								search.blur();
+							}
+
+							var scrollItem = $("#" + id);
+							if (scrollItem.length === 1) {
+								scrollItem.ScrollTo();
+							} else {
+								$("body").animate({ scrollTop: 0 }, "fast");
+							}
+					
+							lb.closeSearchResults();
+							//Set history
+							var state = lb.getState(id);
+							History.pushState(state, null, state.toString());
+						} else {
+							var state = lb.getState(id);
+							History.pushState(state, null, chapter + state.toString());
+
+							//Inject
+							lb.openPage(chapter, id);
+						}
+						
+					});
+					
 					currentTherapyMenu.menu();
 					
 					var searchName = name;
@@ -2069,16 +2112,18 @@ var console = {log: function() {}};
 
 								var item = results[i];
 
-								var titlePath = item.titlePath;
+								var titlePath = (item.titlePath_HL !== undefined) ? item.titlePath_HL : item.titlePath;
 								if (titlePath.indexOf(" && ") > -1) {
 									titlePath = titlePath.split(" && ");
 									titlePath.pop();
 									titlePath = titlePath.join(" &#187; ");
 								}
 
-								var title = item.title.replace()
+								var title = (item.title_HL !== undefined) ? item.title_HL : item.title;
+							
+								currentTherapyMenu.append($("<li><a class=\"searchResult\" href=\"/" + item.chapter + "#" + item.id + "\"><i class=\"icon " + lb.getIcon(item.type) + "\"></i> <strong>" + title + "</strong><br><small>" + titlePath + "</small><div>" + item.content_HL + "</div></a></li>")); 
 
-								currentTherapyMenu.append("<li><a href=\"/" + item.chapter + "?id=" + item.id + "\"><strong>" + item.title + "</strong><br><small>" + titlePath+ "</small></a></li>");
+								//currentTherapyMenu.append("<li><a href=\"/" + item.chapter + "?id=" + item.id + "\"><strong>" + item.title_HL + "</strong><br><small>" + titlePath_HL + "</small></a></li>");
 							}
 
 							currentTherapyMenu.menu("refresh");
