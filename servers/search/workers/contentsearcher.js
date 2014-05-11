@@ -17,7 +17,8 @@ function initSearchIndex() {
 	var options = {
 		keys: ["content", "title", "titlePath", "products"],
 		distance: 8000,
-		threshold: 0.3
+		threshold: 0.3,
+		boost: [2, 3, 1, 0.09]
 	};
 
 	//Iterate and add all search indices
