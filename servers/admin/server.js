@@ -65,19 +65,19 @@ function getUploadedImages() {
 			var result = [];
 			
 			result.push("<div class=\"staticImage\" data-picture data-alt=\"Bild\">");
-			result.push("	<div data-src=\"/img/static/" + files[i] + "/opt/" + imagePrefix + "_small.png\"></div>");
-			result.push("	<div data-src=\"/img/static/" + files[i] + "/opt/" + imagePrefix + "_small_x2.png\" data-media=\"(min-device-pixel-ratio: 2.0)\"></div>");
-			result.push("	<div data-src=\"/img/static/" + files[i] + "/opt/" + imagePrefix + "_medium.png\" data-media=\"(min-width: 481px)\"></div>");
-			result.push("	<div data-src=\"/img/static/" + files[i] + "/opt/" + imagePrefix + "_medium_x2.png\" data-media=\"(min-width: 481px) and (min-device-pixel-ratio: 2.0)\"></div>");
-			result.push("	<div data-src=\"/img/static/" + files[i] + "/opt/" + imagePrefix + "_large.png\" data-media=\"(min-width: 980px)\"></div>");
-			result.push("	<div data-src=\"/img/static/" + files[i] + "/opt/" + imagePrefix + "_large_x2.png\" data-media=\"(min-width: 980px) and (min-device-pixel-ratio: 2.0)\"></div>");
-			result.push("	<div data-src=\"/img/static/" + files[i] + "/opt/" + imagePrefix + "_huge.png\" data-media=\"(min-width: 1200px)\"></div>");
-			result.push("	<div data-src=\"/img/static/" + files[i] + "/opt/" + imagePrefix + "_huge_x2.png\" data-media=\"(min-width: 1200px) and (min-device-pixel-ratio: 2.0)\"></div>");
+			result.push("	<div data-src=\"/img/{VERSION}/static/" + files[i] + "/opt/" + imagePrefix + "_small.png\"></div>");
+			result.push("	<div data-src=\"/img/{VERSION}/static/" + files[i] + "/opt/" + imagePrefix + "_small_x2.png\" data-media=\"(min-device-pixel-ratio: 2.0)\"></div>");
+			result.push("	<div data-src=\"/img/{VERSION}/static/" + files[i] + "/opt/" + imagePrefix + "_medium.png\" data-media=\"(min-width: 481px)\"></div>");
+			result.push("	<div data-src=\"/img/{VERSION}/static/" + files[i] + "/opt/" + imagePrefix + "_medium_x2.png\" data-media=\"(min-width: 481px) and (min-device-pixel-ratio: 2.0)\"></div>");
+			result.push("	<div data-src=\"/img/{VERSION}/static/" + files[i] + "/opt/" + imagePrefix + "_large.png\" data-media=\"(min-width: 980px)\"></div>");
+			result.push("	<div data-src=\"/img/{VERSION}/static/" + files[i] + "/opt/" + imagePrefix + "_large_x2.png\" data-media=\"(min-width: 980px) and (min-device-pixel-ratio: 2.0)\"></div>");
+			result.push("	<div data-src=\"/img/{VERSION}/static/" + files[i] + "/opt/" + imagePrefix + "_huge.png\" data-media=\"(min-width: 1200px)\"></div>");
+			result.push("	<div data-src=\"/img/{VERSION}/static/" + files[i] + "/opt/" + imagePrefix + "_huge_x2.png\" data-media=\"(min-width: 1200px) and (min-device-pixel-ratio: 2.0)\"></div>");
 			result.push("	<!--[if (lt IE 9) & (!IEMobile)]>");
-			result.push("	<div data-src=\"/img/static/" + files[i] + "/opt/" + imagePrefix + "_large.png\"></div>");
+			result.push("	<div data-src=\"/img/{VERSION}/static/" + files[i] + "/opt/" + imagePrefix + "_large.png\"></div>");
 			result.push("	<![endif]-->");
 			result.push("	<noscript>");
-			result.push("	<img src=\"/img/static/" + files[i] + "/opt/" + imagePrefix + "_large.png\" alt=\"Bild\">");
+			result.push("	<img src=\"/img/{VERSION}/static/" + files[i] + "/opt/" + imagePrefix + "_large.png\" alt=\"Bild\">");
 			result.push("	</noscript>");
 			result.push("</div>");
 
@@ -241,6 +241,7 @@ app.get('/admin/frontpage/generate', function(req,res){
 	buildEditorsRegistry();
 	buildForeword();
 	buildPress();
+	buildBookmarklets();
 
 	req.connection.setTimeout(1000 * 60 * 30); //30 minutes
 
@@ -608,6 +609,44 @@ function buildPress() {
 	fs.writeFileSync(pagePath, pageContent, "utf8");
 
 }
+
+function buildBookmarklets() {
+
+	var pageContent = [];
+
+	//Get header and footer
+	var header = fs.readFileSync(__dirname + "/../../parser/templates/browser/header.html", "utf8");
+	var footer = fs.readFileSync(__dirname + "/../../parser/templates/browser/footer.html", "utf8");
+	var content = fs.readFileSync(__dirname + "/templates/bookmarklets.html", "utf8");
+
+	//Generate side menu
+	var index = genereateMasterSideMenu(masterIndex);
+	
+	pageContent.push(header);
+
+	pageContent.push(content);
+	
+	pageContent.push(footer);
+
+	var pagePath = __dirname + "/../site/bookmarklets/index.html";
+	pageContent = pageContent.join("\n");
+	
+	var $ = cheerio.load(pageContent);
+	//Remove pdf viewer
+	$("#pdf").attr("style", "display: none;");
+	//Add sidebar
+	$("#sideBar").html(index);
+
+	pageContent = $.html();
+
+	//Change title
+	pageContent = pageContent.replace("{TITLE}", "Bookmarklet | Läkemedelsboken")
+	pageContent = pageContent.replace(/\{VERSION\}/g, settings.version)
+	
+	fs.writeFileSync(pagePath, pageContent, "utf8");
+
+}
+
 
 function genereateMasterSideMenu(index) {
 	
