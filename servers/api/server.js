@@ -1,6 +1,11 @@
 var fs = require("fs");
 var request = require("request");
 var genericasInjector = require("../../parser/postprocessors/genericas.js")
+var crypto = require("crypto");
+
+var LRU = require("lru-cache")
+  , options = {max: 2000}
+  , cache = LRU(options)
 
 var secretSettingsPath = __dirname + "/../../settings/secretSettings.json";
 
@@ -35,6 +40,7 @@ var locals = {
 	author: '',
 	version: settings.version
 };
+
 
 //BEGIN API VERSION 1
 
@@ -224,8 +230,15 @@ app.get('/api/v1/injectgenericas', function(req,res){
 	if (isAllowed) {
 
 		var result = {content: content};
+
+		var contentHash = createHash(content);
+		if (cache.has(contentHash)) {
+			content = cache.get(contentHash);
+		} else {
+			content = genericasInjector.process(content);
+			cache.set(contentHash, content);
+		}
 	
-		content = genericasInjector.process(content);
 		result.content = content;
 
 		if (req.query["callback"] !== undefined && req.query["callback"] !== "") {
@@ -293,6 +306,17 @@ function logRequest(nameOfService, url) {
 		}
 	});
 }
+
+function createHash(data) {
+	var checksum = crypto.createHash("sha1");
+	checksum.update(data);
+	return checksum.digest("hex");
+}
+
+app.get("/api/", function(req, res) {
+	res.render("index.ejs", locals);
+});
+
 
 /* The 404 Route (Keep this as the last route) */
 app.get('/*', function(req, res){
