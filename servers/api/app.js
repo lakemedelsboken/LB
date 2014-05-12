@@ -41,25 +41,13 @@ exports.init = function(port) {
 	app.enable('trust proxy');
 
 	app.configure(function(){
-//		app.use(express.basicAuth(authorize));
-//		app.set('views', __dirname + '/views');
-//		app.set('view engine', 'ejs');
-//		app.use(express.logger());
-//		app.use(express.compress());
-//		app.use(express.bodyParser());
-//		app.use(express.methodOverride());
-//		app.use(versionator.middleware);
-//		app.use(express.static(__dirname + '/static')); //, {maxAge: 31104000000}
-//		app.use(express.static(__dirname + '/chapters'));
-//		app.use(express.static(__dirname + '/../../fass/www'));
+		app.set('views', __dirname + '/views');
+		app.set('view engine', 'ejs');
 		app.use(app.router);
-//		app.use(express.errorHandler({ dumpExceptions: true, showStack: true })); 
 	});
 
 	app.configure('development', function(){
 		app.use(express.errorHandler()); 
-		//app.use(express.errorHandler({ dumpExceptions: true, showStack: true })); 
-		// app.use(express.logger({ format: ':method :url' }));
 	});
 
  	app.configure('production', function(){
