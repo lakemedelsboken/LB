@@ -68,8 +68,7 @@ javascript:(function(){if(window.lbBookmarklet!==undefined){lbBookmarklet();}els
 			
 			log("Running");
 
-			//TODO: Perform analysis to find main content
-			//var $body = $("div.maincontent");
+			//Perform analysis to find main content
 			var articleContent = readability.grabArticle(false);
 			var $body = null;
 			
@@ -88,16 +87,32 @@ javascript:(function(){if(window.lbBookmarklet!==undefined){lbBookmarklet();}els
 
 				$("head").append('<link rel="stylesheet" href="http://www.lakemedelsboken.se/bookmarklets/injectgenericas/css/injectgenericas.css" id="injectGenericasStyles">');
 
-				var oldBackgroundColor = $body.css("backgroundColor");
-				$body.css("backgroundColor", "#fafafa");
+				//Display loading box
+				var loadBox = $("<div style=\"display: none;z-index: 10000;position: fixed;top: 10px;left: 10px;background: #fff;width: 200px;text-align: center;color: #000;font-size: 14px;text-decoration: none;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;border: solid 1px black;padding: 10px;-webkit-border-radius: 4px 4px 4px 4px;-moz-border-radius: 4px 4px 4px 4px;border-radius: 4px 4px 4px 4px;\">Letar efter substansnamn...</div>");
+
+				$("body").append(loadBox);
+				loadBox.show("fast");
+				//var oldBackgroundColor = $body.css("backgroundColor");
+				//$body.css("backgroundColor", "#fafafa");
 				
 				getNewContent($body, function(err, data) {
 					if (err) {
+						//Remove loading box
+						loadBox.html("Lyckades inte hitta substanser");
+						setTimeout(function() {
+							loadBox.hide("fast");
+						}, 2000);
 						log(err);
 					} else {
+						//Remove loading box
+						loadBox.html("Färdig.");
+						setTimeout(function() {
+							loadBox.hide("fast");
+						}, 1000);
+						//Switch content
 						$body.html(data);
 					}
-					$body.css("backgroundColor", oldBackgroundColor);
+					//$body.css("backgroundColor", oldBackgroundColor);
 
 				});
 				

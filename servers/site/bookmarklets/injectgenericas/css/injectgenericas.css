@@ -393,14 +393,45 @@ a.inlineGenerica {
 /*  border-color: #ddd; */
 }
 
+.nav-tabs.nav-stacked li {
+	margin-top: 0;
+}
+
 ul.nav li a.inlineProduct {
 	color: #000;
 	font-weight: normal;
 	font-size: 14px;
 	text-decoration: none;
-	
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+a.atcCodeInPopover {
+	color: #000;
+	font-size: 14px;
+	text-decoration: none;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .pull-right {
 	float: right;
+}
+
+div#lbLoadBox {
+	display: none;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	background: #fff;
+	width: 200px;
+	text-align: center;
+	color: #000;
+	font-size: 14px;
+	text-decoration: none;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	border: solid 1px black;
+	padding: 10px;
+    -webkit-border-radius: 4px 4px 0 0;
+       -moz-border-radius: 4px 4px 0 0;
+            border-radius: 4px 4px 0 0;
 }
