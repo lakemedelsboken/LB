@@ -856,6 +856,10 @@ function getOldNameFromChapterPath(chapterPath) {
 	return foundName;
 }
 
+app.get("/psidata", function(req, res){
+	res.redirect(301, "/api/");
+});
+
 /* The 404 Route (Keep this as the last route) */
 app.get('/*', function(req, res){
 
