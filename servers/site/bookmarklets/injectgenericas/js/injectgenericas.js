@@ -35,9 +35,9 @@ javascript:(function(){if(window.lbBookmarklet!==undefined){lbBookmarklet();}els
 			initClickOver();
 
 			function log(message) {
-				if (console && console.log) {
-					console.log(message);
-				}
+//				if (console && console.log) {
+//					console.log(message);
+//				}
 			}
 			
 			function getNewContent($body, callback) {
@@ -296,16 +296,16 @@ javascript:(function(){if(window.lbBookmarklet!==undefined){lbBookmarklet();}els
 	function initClickOver() {
 
 		function log(message) {
-			if (console && console.log) {
-				console.log(message);
-			}
+//			if (console && console.log) {
+//				console.log(message);
+//			}
 		}
 
 		log("initClickOver");
 
 		var dbg = function(s) {
-			if(typeof console !== 'undefined')
-				console.log("Readability: " + s);
+//			if(typeof console !== 'undefined')
+//				console.log("Readability: " + s);
 		};
 
 		/*
@@ -1802,7 +1802,7 @@ javascript:(function(){if(window.lbBookmarklet!==undefined){lbBookmarklet();}els
 		    , debughide: function() {
 		      var dt = new Date().toString();
 
-		      console.log(dt + ": clickover hide");
+		      //console.log(dt + ": clickover hide");
 		      this.hide();
 		    }
 		  })
