@@ -415,7 +415,7 @@ var console = {log: function() {}};
 													}
 												}
 
-												$("#search").focus();
+												//$("#search").focus();
 											
 												activeMenuItem = lb.activeMenu.find("li").eq(1);
 												activeMenuItem.find("a").addClass("ui-state-focus");
@@ -441,7 +441,7 @@ var console = {log: function() {}};
 													//$("body").animate({ scrollTop: 0 }, "fast");
 												}
 											}
-											$("#search").focus();
+											//$("#search").focus();
 										
 											activeMenuItem.find("a").addClass("ui-state-focus");
 											setTimeout(function() {
@@ -465,7 +465,7 @@ var console = {log: function() {}};
 												$("body").animate({ scrollTop: 0 }, "fast");
 											}
 										}
-										$("#search").focus();
+										//$("#search").focus();
 									}
 								});
 							} else {
@@ -477,7 +477,7 @@ var console = {log: function() {}};
 										$("body").animate({ scrollTop: 0 }, "fast");
 									}
 								}
-								$("#search").focus();
+								//$("#search").focus();
 							}
 							
 						});
