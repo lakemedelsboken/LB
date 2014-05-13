@@ -638,6 +638,7 @@ function buildBookmarklets() {
 	$("#sideBar").html(index);
 
 	pageContent = $.html();
+	pageContent = pageContent.replace(/&apos;/g, "'");
 
 	//Change title
 	pageContent = pageContent.replace("{TITLE}", "Bookmarklet | Läkemedelsboken")
