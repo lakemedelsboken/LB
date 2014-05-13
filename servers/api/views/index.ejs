@@ -37,15 +37,15 @@
 				<div style="clear: both;">
 				<div id="mainContainer" class="span10 offset1">
 					<div id="main">
-						<h1>API</h1>
+						<h1>Webbtjänster/API</h1>
 						<p class="normal">
 							Läkemedelsboken har ett öppet API där man fritt kan göra 100 anrop per timma från en ip-adress.
 						</p>
 						<p class="normal">
-							Vill du ha möjlighet att göra fler anrop går det också utmärkt, skicka ett mail till <a href="mailto:staffan@staffanliving.se?subject=Nyckel till API">staffan@staffanliving.se</a> så fixar jag det.
+							Vill du ha möjlighet att göra fler anrop går det också bra, skicka ett mejl till <a href="mailto:staffan@staffanliving.se?subject=Nyckel till API">staffan@staffanliving.se</a> så ordnar vi det.
 						</p>
 						<p class="normal">
-							Läkemedelsboken.se är öppen källkod, du hittar den bakomliggande koden på <a href="https://github.com/lakemedelsboken/LB">GitHub</a>.
+							Läkemedelsboken.se har öppen källkod, du hittar den bakomliggande koden på <a href="https://github.com/lakemedelsboken/LB">GitHub</a>.
 						</p>
 						<h2>Översikt</h2>
 						<p>
@@ -53,12 +53,12 @@
 						</p>
 						<ul>
 							<li><a href="#contentSearch">Söka efter innehåll i Läkemedelsboken</a></li>
-							<li><a href="#medicine">Söka efter läkemedel och ATC-koder</a></li>
+							<li><a href="#medicine">Söka efter läkemedel och ATC-rubriker</a></li>
 							<li><a href="#atc">Hämta information från vårt träd med ATC-koder och läkemedel</a></li>
 							<!--<li><a href="#titles">Söka efter rubriker i Läkemedelsboken</a></li>-->
-							<li><a href="#boxes">Söka efter innehåll i informationsrutor, dvs. faktarutor, tabeller och terapirekommendationer</a></li>
+							<li><a href="#boxes">Söka efter innehåll i informationsrutor, dvs. terapirekommendationer, faktarutor och tabeller</a></li>
 							<li><a href="#genericas">Skicka in html och få generiska preparatnamn uppmärkta</a></li>
-							<li><a href="#deeplinking">Länka direkt till en del av Läkemedelsbokens webbsida</a></li>
+							<li><a href="#deeplinking">Länka direkt till en del av Läkemedelsbokens webbplats</a></li>
 						</ul>
 						<h2>Beskrivningar</h2>
 						<h3 id="contentSearch">Sök efter innehåll i Läkemedelsboken</h3>
@@ -73,7 +73,7 @@
 <a href="http://www.lakemedelsboken.se/api/v1/contentsearch?search=terapi%20hjärtsvikt&apikey={nyckel}" target="_blank">"tablett alvedon"</a> //Inom citationstecken för att söka efter hela meningen</pre>
 							
 							<h4 id="contentAnswer">Svar:</h4>
-							<p class="normal">Svaret kommer som JSON eller JSONP i form av en array, <code>callback=</code> som parameter gör att svaret returneras som JSONP. Svaret är sorterat med bästa resultatet först. Varje objekt i svaret följer nedanstående definition.</p>
+							<p class="normal">Svaret kommer som JSON eller JSONP i form av en array, <code>callback=</code> som parameter till anropet gör att svaret returneras som JSONP. Svaret är sorterat med bästa resultat först. Varje objekt i svaret följer nedanstående definition.</p>
 							<pre>
 {
   //Titel
@@ -144,7 +144,7 @@ function htmlEncode(value){
 <p>See the Pen <a href='http://codepen.io/staliv/pen/Ayjux/'>Sök innehåll i Läkemedelsboken</a> by Staffan Living (<a href='http://codepen.io/staliv'>@staliv</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 </div><script async src="//codepen.io/assets/embed/ei.js"></script>
 
-						<h3 id="medicine">Sök efter medicinska preparat och ATC-koder</h3>
+						<h3 id="medicine">Sök efter medicinska preparat och ATC-rubriker</h3>
 
 						<h4>Protokoll:</strong></h4>
 						<pre>HTTP GET</pre>
@@ -157,7 +157,7 @@ function htmlEncode(value){
 <a href="http://www.lakemedelsboken.se/api/v1/medicinesearch?search=%22seroquel%20depot%22&apikey={nyckel}" target="_blank">search="seroquel depot"</a> //Inom citationstecken för att söka efter hela meningen</pre>
 						
 						<h4>Svar:</h4>
-						<p class="normal">Svaret kommer som JSON eller JSONP i form av en array, <code>callback=</code> som parameter gör att svaret returneras som JSONP. Svaret är sorterat med bästa resultatet först. Varje objekt i svaret kan vara av två typer, antingen en ATC-kod eller en produkt.</p>
+						<p class="normal">Svaret kommer som JSON eller JSONP i form av en array, <code>callback=</code> som parameter till anropet gör att svaret returneras som JSONP. Svaret är sorterat med bästa resultat först. Varje objekt i svaret kan vara av två typer, antingen en ATC-kod eller en produkt.</p>
 						<h5 id="productObject">Produkt</h5>
 						<pre>
 {
@@ -254,14 +254,14 @@ function htmlEncode(value){
 						<pre>
 <a href="http://www.lakemedelsboken.se/api/v1/atctree?parentid=root&apikey={nyckel}" target="_blank">parentid=root</a> //Hämtar från grunden
 
-<a href="http://www.lakemedelsboken.se/api/v1/atctree?parentid=B01AE07&apikey={nyckel}" target="_blank">parentid=B01AE07</a> //Ange en ATC-kod som <code>root</code> för att hämta underrubriker</pre>
+<a href="http://www.lakemedelsboken.se/api/v1/atctree?parentid=B01AE07&apikey={nyckel}" target="_blank">parentid=B01AE07</a> //Ange en ATC-kod som <code>parentid</code> för att hämta underrubriker</pre>
 						
 						<h4>Svar:</h4>
 						<p class="normal">Svaret består av en array med atc-koder och produkter vilka är barn till given <code>parentid</code></a>.</p>
-						<p class="normal">Svaret kommer som JSON eller JSONP i form av en array, <code>callback=</code> som parameter gör att svaret returneras som JSONP.</p>
+						<p class="normal">Svaret kommer som JSON eller JSONP i form av en array, <code>callback=</code> som parameter till anropet gör att svaret returneras som JSONP.</p>
 						<p class="normal">
 							Ett objekt i svaret representerar antingen en produkt eller en ATC-kod. En produkt känns igen genom att den har värdet <code>children</code> satt till en array. 
-							En ATC-kod har inte <code>children</code> definierad, däremot finns det en variabel vid namn <code>hasChildren</code> som indikerar om där finns några barn.
+							En ATC-kod har inte <code>children</code> definierad, däremot finns det en variabel vid namn <code>hasChildren</code> som indikerar om där finns några underliggande objekt.
 						</p>
 						
 						<h5>Produkt</h5>
@@ -396,7 +396,7 @@ $(&quot;body&quot;).on(&quot;click&quot;, &quot;a.atc&quot;, function() {
 						<p class="normal"></p>
 -->
 						<h3 id="boxes">Sök efter innehåll i informationsrutor</h3>
-						<p class="normal">Du kan söka efter innehåll i enbart informationsrutor i Läkemedelsboken. Detta är till exempel intressant om man har ett namn på ett läkemedel och önskar se mer information kring detta preparat.</p>
+						<p class="normal">Du kan söka efter innehåll i enbart informationsrutor i Läkemedelsboken, dvs. terapirekommendationer, faktarutor och tabeller. Detta är till exempel intressant om man har ett namn på ett läkemedel och önskar se mer information kring detta preparat.</p>
 
 						<h4>Protokoll:</strong></h4>
 						<pre>HTTP GET</pre>
@@ -428,7 +428,7 @@ $(&quot;body&quot;).on(&quot;click&quot;, &quot;a.atc&quot;, function() {
   }
 ]</pre>
 						<h3 id="genericas">Skicka in en html-text och få eventuella namn på generika uppmärkta</h3>
-						<p class="normal">Detta är en tjänst som i dagsläget används av ett <a href="http://en.wikipedia.org/wiki/Bookmarklet">smart bokmärke</a> (bookmarklet på engelska) för att <a href="/bookmarklets/">tagga upp substansnamn på en webbsida</a>. Vi kommer att bygga ut funktionen framöver.</p>
+						<p class="normal">Detta är en tjänst som i dagsläget används av ett <a href="http://en.wikipedia.org/wiki/Bookmarklet">smart bokmärke</a> (bookmarklet på engelska) för att <a href="/bookmarklets/">hitta och märka upp substansnamn/ATC-rubriker på en webbsida</a>. Vi planerar att bygga ut funktionen framöver.</p>
 <pre>
 <a href="http://localhost/api/v1/injectgenericas?content=paracetamol">http://localhost/api/v1/injectgenericas?content=paracetamol</a> //Byt ut "paracetamol" mot html
 </pre>
@@ -438,7 +438,7 @@ Svaret kommer i JSON som ett objekt med ett värde vid namn 'content' med den up
   &quot;content&quot;: &quot;&lt;a href=\&quot;/atc/N02BE01\&quot; data-atcid=\&quot;N02BE01\&quot; data-atctitles=\&quot;Nervsystemet--Analgetika--&#214;vriga_analgetika_och_antipyretika--Anilider,_inkl_kombinationer--Paracetamol\&quot; class=\&quot;inlineGenerica text\&quot;&gt;paracetamol&lt;/a&gt;&quot;
 }</pre>
 
-						<h3 id="deeplinking">Länka direkt till en del av Läkemedelsbokens webbsida</h3>
+						<h3 id="deeplinking">Länka direkt till en del av Läkemedelsbokens webbplats</h3>
 						<h4>Länka till ett sökresultat</h4>
 						<p class="normal"><code><a href="http://www.lakemedelsboken.se/?iso=true&search=test">http://www.lakemedelsboken.se/?iso=true&search=test</a></code> //Byt ut "test" mot valfritt sökord</p>
 						<p class="normal">eller länka till version utan javascript:</p>
@@ -450,7 +450,7 @@ Svaret kommer i JSON som ett objekt med ett värde vid namn 'content' med den up
 						<p class="normal"><code><a href="http://www.lakemedelsboken.se/product/19530210000012">http://www.lakemedelsboken.se/product/19530210000012</a></code> //Byt ut "19530210000012" mot valfritt nplId</p>
 
 						<h4>Länka till ATC-kod</h4>
-						<p class="normal"><code><a href="http://www.lakemedelsboken.se/atc/A11GA01">http://www.lakemedelsboken.se/atc/A11GA01</a></code> //Byt ut "A11GA01" mot valfritt ATC-kod</p>
+						<p class="normal"><code><a href="http://www.lakemedelsboken.se/atc/A11GA01">http://www.lakemedelsboken.se/atc/A11GA01</a></code> //Byt ut "A11GA01" mot valfri ATC-kod</p>
 
 						</div>
 					</div>
