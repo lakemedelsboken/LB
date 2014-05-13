@@ -695,7 +695,11 @@ app.get('/admin/preview', function(req,res){
 
 	locals.date = new Date().toLocaleDateString();
 	locals.previews = getChapters();
-	locals.parserMessages = fs.readFileSync(__dirname + "/mif/parserMessages.txt", "utf8");
+	if (fs.existsSync(__dirname + "/mif/parserMessages.txt")) {
+		locals.parserMessages = fs.readFileSync(__dirname + "/mif/parserMessages.txt", "utf8");
+	} else {
+		locals.parserMessages = "";
+	}
 	res.render('preview.ejs', locals);
 
 });
