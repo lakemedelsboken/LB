@@ -84,6 +84,7 @@ javascript:(function(){if(window.lbBookmarklet!==undefined){lbBookmarklet();}els
 				log("Saved " + html.length + " chars to attribute 'data-old-html'");
 
 				$body.on("click", "a.inlineGenerica", handleGenericas);
+				$("body").on("click", "a.atcCodeInPopover", handleAtcCodeInPopover);
 
 				$("head").append('<link rel="stylesheet" href="http://www.lakemedelsboken.se/bookmarklets/injectgenericas/css/injectgenericas.css" id="injectGenericasStyles">');
 
@@ -215,7 +216,7 @@ javascript:(function(){if(window.lbBookmarklet!==undefined){lbBookmarklet();}els
 
 											var item = results.data[i];
 											if (item.hasChildren) {
-												currentATCMenu.append("<li id=\"" + tipId + "_" + item.id + "\"><a target=\"_blank\" href=\"http://www.lakemedelsboken.se/atc/" + item.id + "\" data-indentation=\"0\" class=\"atcCodeInPopover\"><i class=\"icon icon-plus-sign-alt\"></i><i class=\"icon icon-angle-down pull-right\"></i> <strong>" + item.text + "</strong></a></li>");
+												currentATCMenu.append("<li id=\"" + tipId + "_" + item.id + "\"><a target=\"_blank\" href=\"http://www.lakemedelsboken.se/atc/" + item.id + "\" data-indentation=\"0\" class=\"atcCodeInPopover\"><i class=\"icon icon-plus-sign-alt\">+</i><i class=\"icon icon-angle-down pull-right\"></i> <strong>" + item.text + "</strong></a></li>");
 											} else if (item.children && item.children.length > 0) {
 												for (var j = 0; j < item.children.length; j++) {
 													var productItem = item.children[j];
@@ -287,6 +288,127 @@ javascript:(function(){if(window.lbBookmarklet!==undefined){lbBookmarklet();}els
 				event.preventDefault();
 				//event.cancelBubble();
 		
+			}
+
+			function handleAtcCodeInPopover(event) {
+				event.preventDefault();
+				event.stopPropagation();
+
+				var currentAnchor = $(this);
+	
+				if (currentAnchor.attr("data-already-loaded") !== undefined) {
+					//Close sub menu
+
+					var id = currentAnchor.parent().attr("id");
+					var parentMenu = $("#" + id).parents("ul.ui-menu");
+
+					var indentationLevel = parseInt(currentAnchor.attr("data-indentation"));
+		
+					//Find proceeding items with higher indentation level and remove
+					var children = currentAnchor.parent().nextAll().each(function(index, element) {
+						var firstAnchor = $(element).find("a").first();
+						if (firstAnchor.attr("data-indentation") !== undefined && parseInt(firstAnchor.attr("data-indentation")) > indentationLevel) {
+							$(element).remove();
+						} else {
+							return false;
+						}
+					});
+		
+					//Remove attribute data-already-loaded
+					currentAnchor.removeAttr("data-already-loaded");
+
+					//Set icon
+					currentAnchor.find("i.icon-minus-sign-alt").removeClass("icon-minus-sign-alt").addClass("icon-plus-sign-alt");
+
+					//parentMenu.menu("refresh");
+		
+					//parentMenu.menu("focus", null, currentAnchor.parent());
+		
+					return;
+				} else {
+					currentAnchor.attr("data-already-loaded", "true");
+
+					var id = currentAnchor.parent().attr("id");
+					var atcCode = id.split("_");
+					atcCode = atcCode[atcCode.length - 1];
+					var tipId = id.split("_");
+					tipId.pop();
+					tipId = tipId.join("_");
+	
+					//console.log(atcCode);
+					//console.log(tipId);
+					var parentMenu = $("#" + id).parents("ul.ui-menu");
+
+					//Display loading indicator
+					currentAnchor.find("i.icon-plus-sign-alt").removeClass("icon-plus-sign-alt").addClass("icon-refresh");
+					currentListItem = currentAnchor.parent();
+
+					var indentationLevel = parseInt(currentAnchor.attr("data-indentation"));
+					var indentationPixels = ((indentationLevel + 1) * 25) + "px"; 
+
+					//Fetch info
+					lb.getATCItems(atcCode, function(err, results) {
+						currentAnchor.find("i.icon-refresh").removeClass("icon-refresh").addClass("icon-minus-sign-alt");
+						if (err) {
+							currentAnchor.find("i.icon-minus-sign-alt").removeClass("icon-minus-sign-alt").addClass("icon-info-sign");
+							var oldText = currentAnchor.text();
+							currentAnchor.find("strong").text("Kunde inte hämta information för \"" + oldText + "\"");
+			
+							//parentMenu.menu("refresh");
+						} else {
+							var content = "";
+							for (var i = 0; i < results.data.length; i++) {
+
+								var item = results.data[i];
+								if (item.hasChildren) {
+									content += "<li id=\"" + tipId + "_" + item.id + "\"><a target=\"_blank\" href=\"http://www.lakemedelsboken.se/atc/" + item.id + "\" data-indentation=\"" + (indentationLevel + 1) + "\" class=\"atcCodeInPopover\" style=\"padding-left: " + indentationPixels + ";\"><i class=\"icon icon-plus-sign-alt\">+</i><i class=\"icon icon-angle-down pull-right\"></i> <strong>" + item.text + "</strong></a></li>";
+								} else if (item.children && item.children.length > 0) {
+									//content += "<li><a style=\"padding-left: " + indentationPixels + ";\"><strong>" + item.text + "</strong></a></li>";
+					
+									for (var j = 0; j < item.children.length; j++) {
+										var productItem = item.children[j];
+						
+										var images = "";
+										if (productItem.images) {
+											for (var x=0; x < productItem.images.length; x++) {
+												images += "<img src=\"http://www.lakemedelsboken.se" + productItem.images[x] + "\" class=\"img-polaroid pull-right\" style=\"width: 15px; height: 15px; margin-right: 5px;\" />";
+											}
+										}
+						
+										var productInfo = productItem.text.split(",");
+										if (j === 0) {
+											productInfo[0] = "<strong>" + productInfo[0] + "</strong>";
+										} else {
+											//productInfo.shift();
+										}
+
+										productInfo = productInfo.join(",");
+						
+										var extraIndent = 0;
+										if (j > 0) {
+											//extraIndent = 25;
+										}
+										content += "<li" + (productItem.noinfo === true ? " class=\"ui-state-disabled\"" : "") + "><a target=\"_blank\" href=\"http://www.lakemedelsboken.se/?imo=true&nplId=" + productItem.id + "\" data-product-id=\"" + productItem.id + "\" class=\"inlineProduct\" data-indentation=\"" + (indentationLevel + 1) + "\" style=\"padding-left: " + (parseInt(indentationPixels) + extraIndent) + "px;\">" + images + productInfo + "</a></li>";
+									}
+					
+					
+								} else {
+									//console.log(item);
+								}
+							}
+							if (content !== "") {
+								currentListItem.after(content);
+							} else {
+								currentListItem.after("<li><a style=\"padding-left: " + indentationPixels + ";\"><i class=\"icon icon-info-sign\"></i> Det finns inga underliggande preparat</a></li>");
+							}
+							//parentMenu.menu("refresh");
+			
+							//parentMenu.menu("focus", null, currentListItem);
+						}
+					});
+
+				}
+	
 			}
 
 			

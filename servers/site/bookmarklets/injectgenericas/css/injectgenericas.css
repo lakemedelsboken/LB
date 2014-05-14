@@ -435,3 +435,9 @@ div#lbLoadBox {
        -moz-border-radius: 4px 4px 0 0;
             border-radius: 4px 4px 0 0;
 }
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled { opacity: .35; filter:Alpha(Opacity=35); background-image: none;  }
+.ui-state-disabled .ui-icon { filter:Alpha(Opacity=35); } /* For IE8 - See #6059 */
+.ui-menu .ui-state-disabled { font-weight: 300; /*margin: .4em 0 .2em;*/ line-height: 1.5; margin: 0;}
+.ui-menu .ui-state-disabled a { cursor: default; }
+.ui-state-disabled { cursor: default !important; }
