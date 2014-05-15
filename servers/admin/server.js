@@ -251,6 +251,7 @@ app.get('/admin/frontpage/generate', function(req,res){
 	var header = fs.readFileSync(__dirname + "/../../parser/templates/browser/header.html", "utf8");
 	var footer = fs.readFileSync(__dirname + "/../../parser/templates/browser/footer.html", "utf8");
 	var hero = fs.readFileSync(__dirname + "/templates/frontpage.html", "utf8");
+	var about = fs.readFileSync(__dirname + "/templates/about.html", "utf8");
 
 	//Generate side menu
 	var index = genereateMasterSideMenu(masterIndex);
@@ -277,6 +278,8 @@ app.get('/admin/frontpage/generate', function(req,res){
 			frontPageContent.push('<p>' + article.summary + '</p>');
 			frontPageContent.push('<p><a href="/blog/' + article.url + '">Läs vidare &raquo;</a></p>');
 		}
+
+		frontPageContent.push(about);
 				
 		frontPageContent.push(footer);
 
