@@ -10,23 +10,43 @@ javascript:(function(){if(window.lbBookmarklet!==undefined){lbBookmarklet();}els
 
 (function(){
 
-	var minimumJQuery = "1.11.0";
+	var minimumJQueryMajor = 1;
+	var minimumJQueryMinor = 11;
 	var preferredJQuery = "1.11.0";
 
-	if (window.jQuery === undefined || window.jQuery.fn.jquery < minimumJQuery) {
+	if (window.jQuery !== undefined) {
+
+		var minJqueryMajor = window.jQuery.fn.jquery.split(".")[0];
+		var minJqueryMinor = window.jQuery.fn.jquery.split(".")[1];
+		
+		if (minJqueryMajor < minimumJQueryMajor || (minJqueryMajor <= minimumJQueryMajor && minJqueryMinor < minimumJQueryMinor)) {
+
+			//console.log("Loading jQuery...");
+			var done = false;
+			var script = document.createElement("script");
+			script.src = "http://ajax.googleapis.com/ajax/libs/jquery/" + preferredJQuery + "/jquery.min.js";
+			script.onload = script.onreadystatechange = function(){
+				if (!done && (!this.readyState || this.readyState == "loaded" || this.readyState == "complete")) {
+				
+					done = true;
+					initLBBookmarklet();
+				}
+			};
+			document.getElementsByTagName("head")[0].appendChild(script);
+		}
+	} else {
+		//console.log("Loading jQuery...");
 		var done = false;
 		var script = document.createElement("script");
 		script.src = "http://ajax.googleapis.com/ajax/libs/jquery/" + preferredJQuery + "/jquery.min.js";
 		script.onload = script.onreadystatechange = function(){
 			if (!done && (!this.readyState || this.readyState == "loaded" || this.readyState == "complete")) {
-				
+			
 				done = true;
 				initLBBookmarklet();
 			}
 		};
 		document.getElementsByTagName("head")[0].appendChild(script);
-	} else {
-		initLBBookmarklet();
 	}
 	
 	function initLBBookmarklet() {
@@ -40,12 +60,12 @@ javascript:(function(){if(window.lbBookmarklet!==undefined){lbBookmarklet();}els
 //				}
 			}
 			
-			function getNewContent($body, callback) {
+			function getNewContent($lbBody, callback) {
 
 				//Remove inline scripts
-				$body.find("script").remove();
+				$lbBody.find("script").remove();
 
-				var data = $body.html();
+				var data = $lbBody.html();
 				
 				//Send data to lb webservice
 				// Assign handlers immediately after making the request,
@@ -68,35 +88,40 @@ javascript:(function(){if(window.lbBookmarklet!==undefined){lbBookmarklet();}els
 			
 			log("Running");
 
+			//Display loading box
+			var loadBox = $("<div style=\"display: none;z-index: 10000;position: fixed;top: 10px;left: 10px;background: #fff;width: 200px;text-align: center;color: #000;font-size: 14px;text-decoration: none;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;border: solid 1px black;padding: 10px;-webkit-border-radius: 4px 4px 4px 4px;-moz-border-radius: 4px 4px 4px 4px;border-radius: 4px 4px 4px 4px;\">Försöker hitta huvudinnehåll...</div>");
+
+			$("body").append(loadBox);
+			loadBox.show("fast");
+
+
 			//Perform analysis to find main content
 			var articleContent = readability.grabArticle(false);
-			var $body = null;
+			var $lbBody = null;
 			
 			if (articleContent !== null) {
-				$body = $(articleContent)
+				$lbBody = $(articleContent)
 			}
 			
-			//log($body);
+			//log($lbBody);
 
-			if ($body !== null && $body.length === 1 && $body.attr("data-old-html") === undefined) {
-				var html = $body.html();
-				$body.attr("data-old-html", html);
+			if ($lbBody !== null && $lbBody !== undefined && $lbBody.length === 1 && $lbBody.attr("data-old-html") === undefined) {
+
+				$lbBody = $($lbBody);
+				var html = $lbBody.html();
+				$lbBody.attr("data-old-html", html);
 				log("Saved " + html.length + " chars to attribute 'data-old-html'");
 
-				$body.on("click", "a.inlineGenerica", handleGenericas);
+				$("body").on("click", "a.inlineGenerica", handleGenericas);
 				$("body").on("click", "a.atcCodeInPopover", handleAtcCodeInPopover);
 
 				$("head").append('<link rel="stylesheet" href="http://www.lakemedelsboken.se/bookmarklets/injectgenericas/css/injectgenericas.css" id="injectGenericasStyles">');
 
-				//Display loading box
-				var loadBox = $("<div style=\"display: none;z-index: 10000;position: fixed;top: 10px;left: 10px;background: #fff;width: 200px;text-align: center;color: #000;font-size: 14px;text-decoration: none;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;border: solid 1px black;padding: 10px;-webkit-border-radius: 4px 4px 4px 4px;-moz-border-radius: 4px 4px 4px 4px;border-radius: 4px 4px 4px 4px;\">Letar efter substansnamn...</div>");
-
-				$("body").append(loadBox);
-				loadBox.show("fast");
-				//var oldBackgroundColor = $body.css("backgroundColor");
-				//$body.css("backgroundColor", "#fafafa");
+				loadBox.html("Letar efter substansnamn...")
+				//var oldBackgroundColor = $lbBody.css("backgroundColor");
+				//$lbBody.css("backgroundColor", "#fafafa");
 				
-				getNewContent($body, function(err, data) {
+				getNewContent($lbBody, function(err, data) {
 					if (err) {
 						//Remove loading box
 						loadBox.html("Lyckades inte hitta substanser");
@@ -111,25 +136,32 @@ javascript:(function(){if(window.lbBookmarklet!==undefined){lbBookmarklet();}els
 							loadBox.hide("fast");
 						}, 1000);
 						//Switch content
-						$body.html(data);
+						$lbBody.html(data);
 					}
-					//$body.css("backgroundColor", oldBackgroundColor);
+					//$lbBody.css("backgroundColor", oldBackgroundColor);
 
 				});
 				
-			} else if ($body !== null && $body.length === 1 && $body.attr("data-old-html") !== undefined) {
+			} else if ($lbBody !== null && $lbBody !== undefined && $lbBody.length === 1 && $lbBody.attr("data-old-html") !== undefined) {
 				//Restore everything, currently not working because of current readability implementation
-				$body.html($body.attr("data-old-html"));
-				$body.removeAttr("data-old-html");
+				$lbBody.html($lbBody.attr("data-old-html"));
+				$lbBody.removeAttr("data-old-html");
 				var styles = $("head").find("#injectGenericasStyles");
 				if (styles.length) {
 					styles.remove();
 				}
-				$body.off("click", "a.inlineGenerica", handleGenericas);
+				$lbBody.off("click", "a.inlineGenerica", handleGenericas);
 				
 				log("Restored to normal");
 
-			} else if ($body === null || $body.length === 0) {
+			} else if ($lbBody === null || $lbBody === undefined || $lbBody.length === 0) {
+				//Remove loading box
+				loadBox.html("Lyckades inte hitta huvudinnehåll.");
+				setTimeout(function() {
+					loadBox.hide("fast");
+				}, 2000);
+				log(err);
+				
 				log("No body tag was found");
 			} else {
 				log("Something went wrong");
