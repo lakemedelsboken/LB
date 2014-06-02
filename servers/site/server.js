@@ -632,8 +632,7 @@ function getATCTreeChildren(parentId, showATCCodes) {
 
 		title = title.join(",");
 		
-		var images = (childProducts[i].images !== undefined) ? childProducts[i].images : false;
-
+		var images = (childProducts[i].images !== undefined) ? childProducts[i].images : [];
 
 		product.children.push({text: title, id: childProducts[i].id, images: images, noinfo: (childProducts[i].noinfo === true)});
 
