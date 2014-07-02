@@ -1358,11 +1358,16 @@ var console = {log: function() {}};
 						var state = lb.getState(id);
 						History.pushState(state, null, state.toString());
 					} else {
-						var state = lb.getState(id);
-						History.pushState(state, null, chapter + state.toString());
+						if (document.addEventListener) {
+							var state = lb.getState(id);
+							History.pushState(state, null, chapter + state.toString());
 
-						//Inject
-						lb.openPage(chapter, id);
+							//Inject
+							lb.openPage(chapter, id);
+						} else {
+							$("#loading").show();
+							location.href = anchor.attr("href");
+						}
 					}
 				}
 			}});
@@ -1733,7 +1738,7 @@ var console = {log: function() {}};
 							}
 							var title = (contentItem.title_HL !== undefined) ? contentItem.title_HL : contentItem.title;
 							
-							resultsList.append($("<li><a class=\"searchResult\" href=\"/" + contentItem.chapter + "#" + contentItem.id + "\"><i class=\"icon " + lb.getIcon(contentItem.type) + "\"></i> <strong>" + title + "</strong><br><small>" + titlePath + "</small><div>" + contentItem.content_HL + "</div></a></li>")); 
+							resultsList.append($("<li><a class=\"searchResult\" href=\"/" + contentItem.chapter + "?id=" + contentItem.id + "#" + contentItem.id + "\"><i class=\"icon " + lb.getIcon(contentItem.type) + "\"></i> <strong>" + title + "</strong><br><small>" + titlePath + "</small><div>" + contentItem.content_HL + "</div></a></li>")); 
 						}
 						if (results.length === 0) {
 							//$("#contentSearchResults").hide();
