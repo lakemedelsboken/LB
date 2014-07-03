@@ -308,6 +308,8 @@ var console = {log: function() {}};
 		},
 		initMenu: function(state, suppressSearch) {
 			var self = this;
+			
+			var menuAnimationDuration = 0;
 		
 			//Clear old menus
 			if (self.menuStack.length > 0) {
@@ -322,9 +324,10 @@ var console = {log: function() {}};
 			//Get id from first header as fallback
 			var firstItem = $("h1").first();
 			var menuId = firstItem.attr("id");
-
+			
 			//Render root menu
-			self.addMenu("root", "Läkemedelsboken", "forward", undefined, 0, true, function() {
+			//self.addMenu("root", "Läkemedelsboken", "forward", undefined, menuAnimationDuration, true, function() {
+			self.addMenu("root", "Läkemedelsboken", "forward", undefined, menuAnimationDuration, true, function() {
 
 				//Render division menu
 				var chapterId = null;
@@ -335,7 +338,7 @@ var console = {log: function() {}};
 
 				if (chapterId !== null) {
 					//Render division menu
-					self.addMenu(chapterId, undefined, "forward", "", 0, true, function() {
+					self.addMenu(chapterId, undefined, "forward", "", menuAnimationDuration, true, function() {
 
 						var chapter = undefined;
 				
@@ -357,7 +360,7 @@ var console = {log: function() {}};
 						}
 
 						//Render chapter menu
-						self.addMenu(menuId, firstItem.text(), "forward", chapter, 0, true, function() {
+						self.addMenu(menuId, firstItem.text(), "forward", chapter, menuAnimationDuration, true, function() {
 							
 							var chapterItem = null;
 
@@ -395,7 +398,7 @@ var console = {log: function() {}};
 								//TODO: Lots of exits, maybe fix?
 
 								//Render the stack
-								self.renderMenuStack(stack, chapter, function() {
+								self.renderMenuStack(stack, chapter, menuAnimationDuration, function() {
 								
 									var activeMenuItem = self.activeMenu.find("li").filter(function() { 
 										//A bit crude - TODO: Fix for id instead?
@@ -404,7 +407,7 @@ var console = {log: function() {}};
 								
 									if (activeMenuItem.length === 1) {
 										if (activeMenuItem.find("a").attr("data-has-children") === "true") {
-											self.addMenu(chapterItem.attr("id"), chapterItem.text(), "forward", chapter, 0, true, function() {
+											self.addMenu(chapterItem.attr("id"), chapterItem.text(), "forward", chapter, menuAnimationDuration, true, function() {
 
 												if (lb.currentId !== null) {
 													var scrollItem = $("#" + lb.currentId);
@@ -488,12 +491,12 @@ var console = {log: function() {}};
 			
 			});
 		},
-		renderMenuStack: function(stack, chapter, callback) {
+		renderMenuStack: function(stack, chapter, menuAnimationDuration, callback) {
 			var self = this;
 			if (stack.length > 0) {
 				var id = stack.shift();
 				var element = $("#" + id);
-				self.addMenu(id, element.text(), "forward", chapter, 0, true, function() {
+				self.addMenu(id, element.text(), "forward", chapter, menuAnimationDuration, true, function() {
 					self.renderMenuStack(stack, chapter, callback);
 				});
 			} else {
@@ -683,16 +686,29 @@ var console = {log: function() {}};
 				newMenu.hide();
 				$("#sideMenu").append(newMenu);
 
+				var animationDone = false;
+				var loadingDone = false;
+
 				//Perform animation and focus, async
 				if (direction === "backward") {
 					self.animateMenuBackward(newMenu, animDuration);
 				} else {
-					self.animateMenuForward(newMenu, animDuration, skipFocus);
+					self.animateMenuForward(newMenu, animDuration, skipFocus, function() {
+						animationDone = true;
+
+						//console.log("Animation done, loadingDone: " + loadingDone);
+						
+						if (animationDone && loadingDone && next !== undefined) {
+							//console.log("Continue because animation was lagging");
+							next();
+						}
+					});
 				}
 
 				//Fetch index items and add to new menu, async
 				lb.getTocMenuItems(menuId, function(err, data) {
 					if (err) {
+						//console.log(err);
 						//Remove loading indicator
 						newMenu.find(".menuLoading").remove();
 						//Display error message
@@ -715,6 +731,8 @@ var console = {log: function() {}};
 						}
 						*/
 
+						//console.log("Got " + data.length + " items");
+						//console.log(data);
 						//Create menu from fetched items
 						for (var i=0; i < data.length; i++) {
 							var item = data[i];
@@ -726,7 +744,7 @@ var console = {log: function() {}};
 								if (titleItem.length === 1) {
 									titleItem.attr("href", "/" + firstItem.chapter + "#" + firstItem.id);
 								} else {
-									newMenu.append($("<li><a class=\"titleItem\" href=\"/" + item.chapter + "#" + item.id + "\"" + ((item.chapter !== undefined) ? " data-chapter=\"" + item.chapter + "\"" : " data-chapter=\"\"") + " data-has-children=\"false\">" + item.title + "</li>")); 
+									newMenu.append($("<li><a class=\"titleItem\" href=\"/" + item.chapter + "#" + item.id + "\"" + ((item.chapter !== undefined) ? " data-chapter=\"" + item.chapter + "\"" : " data-chapter=\"\"") + " data-has-children=\"false\">" + item.title + "</a></li>")); 
 								}
 
 								//newMenu.append($("<li><a class=\"titleItem\" href=\"/" + chapter + "#" + menuId + "\"" + ((item.chapter !== undefined) ? " data-chapter=\"" + item.chapter + "\"" : " data-chapter=\"\"") + ">" + item.title + "</a></li>")); 
@@ -740,9 +758,10 @@ var console = {log: function() {}};
 				
 						//Refresh
 						newMenu.menu("refresh");
-					
 
-						if (next !== undefined) {
+						loadingDone = true;
+
+						if (animationDone && loadingDone && next) {
 							next();
 						}
 					}
@@ -757,13 +776,17 @@ var console = {log: function() {}};
 				//Animate in
 				if (direction === "backward") {
 					self.animateMenuBackward(newMenu, animDuration);
+					if (next !== undefined) {
+						next();
+					}
 				} else {
-					self.animateMenuForward(newMenu, animDuration, skipFocus);
+					self.animateMenuForward(newMenu, animDuration, skipFocus, function() {
+						if (next !== undefined) {
+							next();
+						}
+					});
 				}
 
-				if (next !== undefined) {
-					next();
-				}
 
 			}
 		
@@ -792,22 +815,27 @@ var console = {log: function() {}};
 				//Save active menu reference
 				var oldMenu = self.activeMenu;
 
+				var oldMenuTop = parseInt(oldMenu.css("top"));
+				var oldMenuItems = oldMenu.find("li");
+				var titleItem = oldMenu.find(".titleItem").first().parent();
+				var visibleItemHeight = titleItem.height();
+
 				//Set as current active menu
 				self.activeMenu = newMenu;
 			
-				var oldMenuTop = parseInt(oldMenu.css("top"));
-				var oldMenuItems = oldMenu.find("li");
-				var titleItem = oldMenu.find(".titleItem").parent();
-				var visibleItemHeight = titleItem.height();
-							
 				var titleIndex = oldMenuItems.index(titleItem);
 			
 				var animationProperties = {};
 
+				var hideDuration = duration;
+				if (hideDuration > 0) {
+					hideDuration = hideDuration - 1;
+				}
 				//Hide old items, except title
 				oldMenuItems.each(function(index, element) {
 					if (index !== titleIndex) {
-						$(element).hide(duration);
+						$(element).hide(hideDuration);
+						//$(element).css("display", "none");
 					}
 				});
 
@@ -825,7 +853,7 @@ var console = {log: function() {}};
 					newMenu.css("bottom", "10px");
 				
 					newMenu.focus();
-					var focusedItem = newMenu.find(".titleItem").parent();
+					var focusedItem = newMenu.find(".titleItem").first().parent();
 					
 					newMenu.menu("focus", null, focusedItem);
 
@@ -1358,16 +1386,11 @@ var console = {log: function() {}};
 						var state = lb.getState(id);
 						History.pushState(state, null, state.toString());
 					} else {
-						if (document.addEventListener) {
-							var state = lb.getState(id);
-							History.pushState(state, null, chapter + state.toString());
+						var state = lb.getState(id);
+						History.pushState(state, null, chapter + state.toString());
 
-							//Inject
-							lb.openPage(chapter, id);
-						} else {
-							$("#loading").show();
-							location.href = anchor.attr("href");
-						}
+						//Inject
+						lb.openPage(chapter, id);
 					}
 				}
 			}});
