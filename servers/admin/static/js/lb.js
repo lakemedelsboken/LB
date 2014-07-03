@@ -497,7 +497,7 @@ var console = {log: function() {}};
 				var id = stack.shift();
 				var element = $("#" + id);
 				self.addMenu(id, element.text(), "forward", chapter, menuAnimationDuration, true, function() {
-					self.renderMenuStack(stack, chapter, callback);
+					self.renderMenuStack(stack, chapter, menuAnimationDuration, callback);
 				});
 			} else {
 				callback();
