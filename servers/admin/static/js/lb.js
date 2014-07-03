@@ -309,7 +309,7 @@ var console = {log: function() {}};
 		initMenu: function(state, suppressSearch) {
 			var self = this;
 			
-			var menuAnimationDuration = 0;
+			var menuAnimationDuration = 5;
 		
 			//Clear old menus
 			if (self.menuStack.length > 0) {
@@ -398,21 +398,24 @@ var console = {log: function() {}};
 								//TODO: Lots of exits, maybe fix?
 
 								//Render the stack
-								self.renderMenuStack(stack, chapter, menuAnimationDuration, function() {
 								
+								self.renderMenuStack(stack, chapter, menuAnimationDuration, function() {
+
 									var activeMenuItem = self.activeMenu.find("li").filter(function() { 
 										//A bit crude - TODO: Fix for id instead?
-										return $.trim($(this).text()) == chapterItem.text();
+										return $.trim($(this).text()) == $.trim(chapterItem.text());
 									});
 								
 									if (activeMenuItem.length === 1) {
-										if (activeMenuItem.find("a").attr("data-has-children") === "true") {
+
+										if (activeMenuItem.find("a").first().attr("data-has-children") === "true") {
+
 											self.addMenu(chapterItem.attr("id"), chapterItem.text(), "forward", chapter, menuAnimationDuration, true, function() {
 
 												if (lb.currentId !== null) {
 													var scrollItem = $("#" + lb.currentId);
 													if (scrollItem.length === 1) {
-														scrollItem.ScrollTo();
+														//scrollItem.ScrollTo();
 													} else {
 														//$("body").animate({ scrollTop: 0 }, "fast");
 													}
@@ -439,7 +442,7 @@ var console = {log: function() {}};
 											if (lb.currentId !== null) {
 												var scrollItem = $("#" + lb.currentId);
 												if (scrollItem.length === 1) {
-													scrollItem.ScrollTo();
+													//scrollItem.ScrollTo();
 												} else {
 													//$("body").animate({ scrollTop: 0 }, "fast");
 												}
@@ -460,16 +463,20 @@ var console = {log: function() {}};
 										
 										}
 									} else {
+
 										if (lb.currentId !== null) {
+
 											var scrollItem = $("#" + lb.currentId);
+
 											if (scrollItem.length === 1) {
-												scrollItem.ScrollTo();
+												//scrollItem.ScrollTo();
 											} else {
-												$("body").animate({ scrollTop: 0 }, "fast");
+												//$("body").animate({ scrollTop: 0 }, "fast");
 											}
 										}
 										//$("#search").focus();
 									}
+								
 								});
 							} else {
 								if (lb.currentId !== null) {
@@ -1358,9 +1365,15 @@ var console = {log: function() {}};
 			$("#contentSearchResultsList").menu({select: function(event, ui) {
 				event.preventDefault();
 				lb.closeSearchResults();
-				var anchor = ui.item.find("a");
-				if (anchor) {
+				var anchor = ui.item.find("a").first();
+
+				if (anchor.length === 1) {
 					var chapter = anchor.attr("href").split("#")[0];
+					
+					if (chapter.indexOf("?") > -1) {
+						chapter = chapter.split("?")[0];
+					}
+					
 					var id = anchor.attr("href").split("#")[1];
 
 					var currentChapter = lb.currentChapter;
@@ -1368,7 +1381,7 @@ var console = {log: function() {}};
 					if (currentChapter === "") {
 						currentChapter = window.location.href;
 					}
-				
+					
 					if (currentChapter.indexOf(chapter) > -1) {
 						if (lb.isMobile.any()) {
 							search.blur();
