@@ -177,6 +177,18 @@ javascript:(function(){if(window.lbBookmarklet!==undefined){lbBookmarklet();}els
 					}).error(function(jqXHR, status, error) {
 						callback("Kunde inte hitta rubriker", out);
 					});
+				},
+				getBoxSearch: function(medName, callback) {
+					var out = [];
+					$.getJSON("http://www.lakemedelsboken.se/api/v1/contentsearch?search=" + encodeURIComponent(medName) + "&callback=?", function(results) {
+						out = results;
+						callback(null, out);
+					}).error(function(jqXHR, status, error) {
+						callback("Preparatet kunde inte hittas", out);
+					});
+				},
+				getIcon: function(type) {
+					return "";
 				}
 			};
 			
@@ -187,6 +199,7 @@ javascript:(function(){if(window.lbBookmarklet!==undefined){lbBookmarklet();}els
 				//event.preventDefault();
 				
 				var atcCodes = $(this).attr("data-atcid");
+				var medName = $(this).text();
 
 				if (atcCodes.indexOf(",") > -1) {
 					atcCodes = atcCodes.split(",");
@@ -204,13 +217,14 @@ javascript:(function(){if(window.lbBookmarklet!==undefined){lbBookmarklet();}els
 
 				if ($(this).attr("data-original-title") === undefined) {
 					var popoverPlacement = "bottom";
-					var content = "";
+					var content = "<div><div style=\"float: left; width: 47%;\"><h4>Preparat</h4>";
 					for (var i=0; i < atcCodes.length; i++) {
 						var atcCode = atcCodes[i];
 						content += "<h6 class=\"" + atcCode + "\">" + atcTitles[i].replace(/\-\-/g, " - ").replace(/_/g, " ") + "</h6><ul class=\"" + atcCode + " nav nav-tabs nav-stacked\"><li class=\"loading\"><a href=\"#\"><i class=\"icon icon-refresh icon-spin\"></i> Hämtar rubriker...</a></ul>";
 					}
 			
-					var title = "Preparatlista";
+					content += "</div><div style=\"float: left; width: 47%; margin-left: 5%;\"><h4>Innehåll</h4><ul class=\"search-" + atcCodes.join("") + " nav nav-tabs nav-stacked\"><li class=\"loading\"><a href=\"#\"><i class=\"icon icon-refresh icon-spin\"></i> Söker...</a></ul></div>";
+					var title = "Preparatinformation från <a href=\"http://www.lakemedelsboken.se\" target=\"_blank\">Läkemedelsboken</a>";
 
 					title += '<button type="button" class="close" data-dismiss="clickover">&times;</button>'
 
@@ -235,6 +249,49 @@ javascript:(function(){if(window.lbBookmarklet!==undefined){lbBookmarklet();}els
 						esc_close: 0,
 						onShown: function() {
 							var completionCounter = 0;
+							
+							//Search in information boxes
+							lb.getBoxSearch(medName, function(err, results) {
+								var currentTherapyMenu = $("ul.search-" + atcCodes.join(""));
+								currentTherapyMenu.find(".loading").remove();
+								if (err) {
+									currentBoxMenu.append("<li><a href=\"#\"><i class=\"icon icon-info-sign\"></i> Sökningen misslyckades</a></li>");
+								} else {
+									//currentTherapyMenu.find(".loading").remove();
+									if (results.length === 0) {
+										currentTherapyMenu.append("<li><a href=\"#\"><i class=\"icon icon-info-sign\"></i> Substansen nämns inte i några informationsrutor</a></li>");
+										currentTherapyMenu.menu("refresh");
+									} else {
+										
+										if (results.length > 5) {
+											results.length = 5;
+										}
+										
+										for (var i = 0; i < results.length; i++) {
+
+											var item = results[i];
+
+											var titlePath = (item.titlePath_HL !== undefined) ? item.titlePath_HL : item.titlePath;
+											if (titlePath.indexOf(" && ") > -1) {
+												titlePath = titlePath.split(" && ");
+												titlePath.pop();
+												titlePath = titlePath.join(" &#187; ");
+											}
+
+											var title = (item.title_HL !== undefined) ? item.title_HL : item.title;
+							
+											currentTherapyMenu.append($("<li><a class=\"boxSearchResult\" target=\"_blank\" href=\"http://www.lakemedelsboken.se/" + item.chapter + "?search=&iso=false&imo=false&nplId=null&id=" + item.id + "\"><i class=\"icon " + lb.getIcon(item.type) + "\"></i> <strong>" + title + "</strong><br><small>" + titlePath + "</small><div>" + item.content_HL + "</div></a></li>")); 
+
+										}
+
+										//currentTherapyMenu.menu("refresh");
+
+									}
+								}
+								//console.log(results);
+							});
+
+							//Find ATC list items
 							for (var i=0; i < atcCodes.length; i++) {
 								var atcCode = atcCodes[i];
 
@@ -542,7 +599,7 @@ javascript:(function(){if(window.lbBookmarklet!==undefined){lbBookmarklet();}els
 					}
 					else
 					{
-						articleContent.innerHTML = "<p>Sorry, readability was unable to parse this page for content. If you feel like it should have been able to, please <a href='http://code.google.com/p/arc90labs-readability/issues/entry'>let us know by submitting an issue.</a></p>";
+						//articleContent.innerHTML = "<p>Sorry, readability was unable to parse this page for content. If you feel like it should have been able to, please <a href='http://code.google.com/p/arc90labs-readability/issues/entry'>let us know by submitting an issue.</a></p>";
 					}
 				}
 

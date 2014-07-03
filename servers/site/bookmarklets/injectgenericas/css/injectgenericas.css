@@ -441,3 +441,21 @@ div#lbLoadBox {
 .ui-menu .ui-state-disabled { font-weight: 300; /*margin: .4em 0 .2em;*/ line-height: 1.5; margin: 0;}
 .ui-menu .ui-state-disabled a { cursor: default; }
 .ui-state-disabled { cursor: default !important; }
+
+a.boxSearchResult {
+	color: #000;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+span.highlight {
+	background-color: #7DC0FA;
+	color: #000;
+	text-shadow: none;
+	padding: 0;
+	-webkit-border-radius: 	4px;
+	-moz-border-radius: 	4px;
+	-ms-border-radius: 		4px;
+	-o-border-radius: 		4px;
+	border-radius: 			4px;
+}
