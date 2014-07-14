@@ -5687,10 +5687,10 @@
         </XRefFormat>
     </XRefFormats>
     <Document>
-        <DViewRect value="18 20 923 764 " type="enum"/>
-        <DWindowRect value="0 0 1272 1044 " type="enum"/>
+        <DViewRect value="18 20 1283 764 " type="enum"/>
+        <DWindowRect value="0 0 1751 1044 " type="enum"/>
         <DViewScale value="112.2%" type="num"/>
-        <DNextUnique value="1032594" type="enum"/>
+        <DNextUnique value="1032621" type="enum"/>
         <DPageSize value="170.0 mm 240.0 mm" type="num"/>
         <DMenuBar value="" type="str"/>
         <DVoMenuBar value="" type="str"/>
@@ -5853,7 +5853,7 @@
         <DPDFOpenPage value="572" type="str"/>
         <DPDFFit value="Page" type="enum"/>
         <DPDFZoom value="0.0%" type="num"/>
-        <DPDFJobOptions value="High Quality Print" type="str"/>
+        <DPDFJobOptions value="Standard" type="str"/>
         <DPDFSaveSeparate value="No" type="enum"/>
         <DPDFRegMarks value="None" type="enum"/>
         <DPDFPageSizeSet value="No" type="enum"/>
@@ -5876,7 +5876,7 @@
         </PDFDocInfo>
         <DocFileInfo value="
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130392D30322D32375431303A35323A32312B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D31302D32355431393A30343A30332B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D31302D32355431393A30343A30332B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130392D30322D32375431303A35323A32312B30323A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131342D30362D31305431373A35303A32382B30323A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131342D30362D31305431373A35303A32382B30323A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E536A756B646F6D61722069206272C3B673746BC3B67274656C6E20E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
@@ -14498,6 +14498,20 @@
             <TRSideheadPlacement value="Left" type="enum"/>
             <TRNext value="134" type="enum"/>
         </TextRect>
+        <TextRect>
+            <ID value="135" type="enum"/>
+            <Unique value="1032599" type="enum"/>
+            <PenWidth value="0.5 pt" type="num"/>
+            <ShapeRect value="57.0 mm 7.0 mm 95.0 mm 5.0 mm" type="num"/>
+            <BRect value="57.0 mm 7.0 mm 95.0 mm 5.0 mm" type="num"/>
+            <TRNumColumns value="1" type="enum"/>
+            <TRColumnGap value="5.00001 mm" type="num"/>
+            <TRColumnBalance value="No" type="enum"/>
+            <TRSideheadWidth value="30.00005 mm" type="num"/>
+            <TRSideheadGap value="5.00001 mm" type="num"/>
+            <TRSideheadPlacement value="Left" type="enum"/>
+            <TRNext value="0" type="enum"/>
+        </TextRect>
     </Page>
     <Page>
         <Unique value="1021804" type="enum"/>
@@ -14529,7 +14543,7 @@
             <TRSideheadWidth value="30.00005 mm" type="num"/>
             <TRSideheadGap value="5.00001 mm" type="num"/>
             <TRSideheadPlacement value="Left" type="enum"/>
-            <TRNext value="135" type="enum"/>
+            <TRNext value="136" type="enum"/>
         </TextRect>
     </Page>
     <Page>
@@ -14542,41 +14556,8 @@
         <PageAngle value="0.0" type="num"/>
         <PageBackground value="Default" type="str"/>
         <TextRect>
-            <ID value="135" type="enum"/>
-            <Unique value="1021815" type="enum"/>
-            <Pen value="15" type="enum"/>
-            <Fill value="15" type="enum"/>
-            <PenWidth value="1.0 pt" type="num"/>
-            <Separation value="0" type="enum"/>
-            <ObColor value="Black" type="str"/>
-            <DashedPattern>
-                <DashedStyle value="Solid" type="enum"/>
-            </DashedPattern>
-            <RunaroundGap value="6.0 pt" type="num"/>
-            <RunaroundType value="None" type="enum"/>
-            <ShapeRect value="18.0 mm 18.0 mm 134.0 mm 202.55 mm" type="num"/>
-            <BRect value="18.0 mm 18.0 mm 134.0 mm 202.55 mm" type="num"/>
-            <TRNumColumns value="2" type="enum"/>
-            <TRColumnGap value="7.0 mm" type="num"/>
-            <TRColumnBalance value="No" type="enum"/>
-            <TRSideheadWidth value="30.00005 mm" type="num"/>
-            <TRSideheadGap value="5.00001 mm" type="num"/>
-            <TRSideheadPlacement value="Left" type="enum"/>
-            <TRNext value="136" type="enum"/>
-        </TextRect>
-    </Page>
-    <Page>
-        <Unique value="1021820" type="enum"/>
-        <PageType value="BodyPage" type="enum"/>
-        <PageNum value="575" type="str"/>
-        <PageTag value="" type="str"/>
-        <PageSize value="170.0 mm 240.0 mm" type="num"/>
-        <PageOrientation value="Portrait" type="enum"/>
-        <PageAngle value="0.0" type="num"/>
-        <PageBackground value="Default" type="str"/>
-        <TextRect>
             <ID value="136" type="enum"/>
-            <Unique value="1021823" type="enum"/>
+            <Unique value="1021815" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
             <PenWidth value="1.0 pt" type="num"/>
@@ -14599,9 +14580,9 @@
         </TextRect>
     </Page>
     <Page>
-        <Unique value="1021828" type="enum"/>
+        <Unique value="1021820" type="enum"/>
         <PageType value="BodyPage" type="enum"/>
-        <PageNum value="576" type="str"/>
+        <PageNum value="575" type="str"/>
         <PageTag value="" type="str"/>
         <PageSize value="170.0 mm 240.0 mm" type="num"/>
         <PageOrientation value="Portrait" type="enum"/>
@@ -14609,7 +14590,7 @@
         <PageBackground value="Default" type="str"/>
         <TextRect>
             <ID value="137" type="enum"/>
-            <Unique value="1021831" type="enum"/>
+            <Unique value="1021823" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
             <PenWidth value="1.0 pt" type="num"/>
@@ -14632,17 +14613,17 @@
         </TextRect>
     </Page>
     <Page>
-        <Unique value="1021836" type="enum"/>
+        <Unique value="1021828" type="enum"/>
         <PageType value="BodyPage" type="enum"/>
-        <PageNum value="577" type="str"/>
+        <PageNum value="576" type="str"/>
         <PageTag value="" type="str"/>
         <PageSize value="170.0 mm 240.0 mm" type="num"/>
         <PageOrientation value="Portrait" type="enum"/>
         <PageAngle value="0.0" type="num"/>
-        <PageBackground value="Right utan linje" type="str"/>
+        <PageBackground value="Default" type="str"/>
         <TextRect>
             <ID value="138" type="enum"/>
-            <Unique value="1021839" type="enum"/>
+            <Unique value="1021831" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
             <PenWidth value="1.0 pt" type="num"/>
@@ -14663,8 +14644,41 @@
             <TRSideheadPlacement value="Left" type="enum"/>
             <TRNext value="139" type="enum"/>
         </TextRect>
+    </Page>
+    <Page>
+        <Unique value="1021836" type="enum"/>
+        <PageType value="BodyPage" type="enum"/>
+        <PageNum value="577" type="str"/>
+        <PageTag value="" type="str"/>
+        <PageSize value="170.0 mm 240.0 mm" type="num"/>
+        <PageOrientation value="Portrait" type="enum"/>
+        <PageAngle value="0.0" type="num"/>
+        <PageBackground value="Right utan linje" type="str"/>
         <TextRect>
-            <ID value="140" type="enum"/>
+            <ID value="139" type="enum"/>
+            <Unique value="1021839" type="enum"/>
+            <Pen value="15" type="enum"/>
+            <Fill value="15" type="enum"/>
+            <PenWidth value="1.0 pt" type="num"/>
+            <Separation value="0" type="enum"/>
+            <ObColor value="Black" type="str"/>
+            <DashedPattern>
+                <DashedStyle value="Solid" type="enum"/>
+            </DashedPattern>
+            <RunaroundGap value="6.0 pt" type="num"/>
+            <RunaroundType value="None" type="enum"/>
+            <ShapeRect value="18.0 mm 18.0 mm 134.0 mm 202.55 mm" type="num"/>
+            <BRect value="18.0 mm 18.0 mm 134.0 mm 202.55 mm" type="num"/>
+            <TRNumColumns value="2" type="enum"/>
+            <TRColumnGap value="7.0 mm" type="num"/>
+            <TRColumnBalance value="No" type="enum"/>
+            <TRSideheadWidth value="30.00005 mm" type="num"/>
+            <TRSideheadGap value="5.00001 mm" type="num"/>
+            <TRSideheadPlacement value="Left" type="enum"/>
+            <TRNext value="140" type="enum"/>
+        </TextRect>
+        <TextRect>
+            <ID value="141" type="enum"/>
             <Unique value="1022092" type="enum"/>
             <RunaroundType value="Contour" type="enum"/>
             <ShapeRect value="18.0 mm 14.65 mm 134.0 mm 79.21751 mm" type="num"/>
@@ -14699,7 +14713,7 @@
         <PageAngle value="0.0" type="num"/>
         <PageBackground value="Default" type="str"/>
         <TextRect>
-            <ID value="139" type="enum"/>
+            <ID value="140" type="enum"/>
             <Unique value="1021847" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -19190,10 +19204,60 @@
         <Notes>
         </Notes>
         <Para>
+            <Unique value="1032601" type="enum"/>
+            <PgfTag value="Ingress" type="str"/>
+            <Pgf>
+                <PgfAlignment value="Right" type="enum"/>
+                <PgfFont>
+                    <FTag value="" type="str"/>
+                    <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
+                    <FFamily value="Frutiger LT Std 45 Light" type="str"/>
+                    <FVar value="Regular" type="str"/>
+                    <FWeight value="Bold" type="str"/>
+                    <FAngle value="Regular" type="str"/>
+                    <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
+                    <FEncoding value="FrameRoman" type="str"/>
+                    <FSize value="9.0 pt" type="num"/>
+                    <FUnderlining value="FNoUnderlining" type="enum"/>
+                    <FOverline value="No" type="enum"/>
+                    <FStrike value="No" type="enum"/>
+                    <FChangeBar value="No" type="enum"/>
+                    <FOutline value="No" type="enum"/>
+                    <FShadow value="No" type="enum"/>
+                    <FPairKern value="Yes" type="enum"/>
+                    <FTsume value="No" type="enum"/>
+                    <FCase value="FAsTyped" type="enum"/>
+                    <FPosition value="FNormal" type="enum"/>
+                    <FDX value="0.0%" type="num"/>
+                    <FDY value="0.0%" type="num"/>
+                    <FDW value="0.0%" type="num"/>
+                    <FStretch value="100.0%" type="num"/>
+                    <FLanguage value="Swedish" type="enum"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="5" type="enum"/>
+                    <FColor value="PANTONE Rubine Red CVC" type="str"/>
+                    <FBackgroundColor value="NoColor" type="enum"/>
+                </PgfFont>
+            </Pgf>
+            <ParaLine>
+                <TextRectID value="135" type="enum"/>
+                <String>Ändrad 2014-07-16, s</String>
+                <Char value="HardSpace" type="enum"/>
+                <String>578.</String>
+            </ParaLine>
+        </Para>
+    </TextFlow>
+    <TextFlow>
+        <Notes>
+        </Notes>
+        <Para>
             <Unique value="1027894" type="enum"/>
             <Pgf>
+                <PgfTag value="Body" type="str"/>
                 <PgfUseNextTag value="No" type="enum"/>
                 <PgfNextTag value="" type="str"/>
+                <PgfRunInDefaultPunct value=". " type="str"/>
+                <PgfBlockSize value="1" type="enum"/>
                 <PgfFont>
                     <FTag value="" type="str"/>
                     <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
@@ -19225,6 +19289,7 @@
                     <FBackgroundColor value="NoColor" type="enum"/>
                 </PgfFont>
                 <PgfLeading value="2.0 pt" type="num"/>
+                <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
                 <TextRectID value="98" type="enum"/>
@@ -20562,7 +20627,7 @@
             <PgfTag value="Rub1" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
-                <TextRectID value="135" type="enum"/>
+                <TextRectID value="136" type="enum"/>
                 <Marker>
                     <MType value="9" type="enum"/>
                     <MTypeName value="Cross-Ref" type="str"/>
@@ -20781,7 +20846,7 @@
                     <XRefSrcText value="20858: Rub2: Risker och kontraindikationer vid HRT" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;I3_GYN_AllmGynekologi_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1385402643 152000" type="num"/>
+                    <XRefLastUpdate value="1404749860 874000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -20816,7 +20881,7 @@
                     <XRefSrcText value="78606: Rub3: Bröstcancer" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;I4_GYN_AntikonceptAborter_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1385402643 172000" type="num"/>
+                    <XRefLastUpdate value="1405007428 623000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -21012,7 +21077,7 @@
             <PgfTag value="BrödPunkt" type="str"/>
             <PgfNumString value="•\t" type="str"/>
             <ParaLine>
-                <TextRectID value="135" type="enum"/>
+                <TextRectID value="136" type="enum"/>
                 <Char value="Tab" type="enum"/>
                 <String>Stadium III har en tumörstorlek &gt;</String>
                 <Char value="HardSpace" type="enum"/>
@@ -21095,7 +21160,7 @@
                     <XRefSrcText value="20148: TabellRekRub: Terapirekommendationer – Invasiv bröstcancer" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1385402643 142000" type="num"/>
+                    <XRefLastUpdate value="1405007428 606000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -21141,7 +21206,7 @@
                     <XRefSrcText value="20148: TabellRekRub: Terapirekommendationer – Invasiv bröstcancer" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1385402643 142000" type="num"/>
+                    <XRefLastUpdate value="1405007428 606000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -21348,7 +21413,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="136" type="enum"/>
+                <TextRectID value="137" type="enum"/>
                 <String>nös infart eller sticka i armen på den opere</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -21636,7 +21701,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="136" type="enum"/>
+                <TextRectID value="137" type="enum"/>
                 <String>nation man väljer bestäms av tumörens pro</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -22015,7 +22080,7 @@
                     <XRefSrcText value="48273: Rub1: Monoklonala antikroppar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;J1_ONK_FarmBehMalTumor_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1385402643 182000" type="num"/>
+                    <XRefLastUpdate value="1404749860 914000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -22071,7 +22136,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="137" type="enum"/>
+                <TextRectID value="138" type="enum"/>
                 <String>sala kvinnor som opererats för hormonbero</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -22453,7 +22518,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="137" type="enum"/>
+                <TextRectID value="138" type="enum"/>
                 <Char value="DiscHyphen" type="enum"/>
                 <String>enter</String>
                 <Font>
@@ -22752,7 +22817,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="138" type="enum"/>
+                <TextRectID value="139" type="enum"/>
                 <Char value="DiscHyphen" type="enum"/>
                 <String>en blivit behandlad för bröstcancer. Recidiv </String>
             </ParaLine>
@@ -23024,7 +23089,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="138" type="enum"/>
+                <TextRectID value="139" type="enum"/>
                 <String>den av kombinationsmöjligheter gör att även </String>
             </ParaLine>
             <ParaLine>
@@ -23327,7 +23392,7 @@
                 <String>mab används nu regelmässigt till patienter </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="139" type="enum"/>
+                <TextRectID value="140" type="enum"/>
                 <String>med överuttryck av HER2 i tumören och ges </String>
             </ParaLine>
             <ParaLine>
@@ -23465,7 +23530,7 @@
                     <XRefSrcText value="12174: Rub1: Cytostatikabiverkningar och deras behandling" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;J1_ONK_FarmBehMalTumor_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1385402643 182000" type="num"/>
+                    <XRefLastUpdate value="1404749860 914000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -23496,7 +23561,7 @@
             </Pgf>
             <PgfNumString value="Referenser" type="str"/>
             <ParaLine>
-                <TextRectID value="139" type="enum"/>
+                <TextRectID value="140" type="enum"/>
             </ParaLine>
         </Para>
         <Para>
@@ -23612,7 +23677,7 @@
                     <XRefSrcText value="98765: Rub3efterRub2: Allmän onkologi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;J0_ONK_ForsattsBlad_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1385402643 202000" type="num"/>
+                    <XRefLastUpdate value="1404749860 920000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -23671,11 +23736,199 @@
             </ParaLine>
         </Para>
         <Para>
+            <Unique value="1032605" type="enum"/>
+            <PgfTag value="RefTextNrForts" type="str"/>
+            <Pgf>
+                <PgfFont>
+                    <FTag value="" type="str"/>
+                    <FPlatformName value="W.Frutiger LT Std 55 Roman.R.400" type="str"/>
+                    <FFamily value="Frutiger LT Std 55 Roman" type="str"/>
+                    <FVar value="Regular" type="str"/>
+                    <FWeight value="Regular" type="str"/>
+                    <FAngle value="Regular" type="str"/>
+                    <FPostScriptName value="FrutigerLTStd-Roman" type="str"/>
+                    <FEncoding value="FrameRoman" type="str"/>
+                    <FSize value="7.5 pt" type="num"/>
+                    <FUnderlining value="FNoUnderlining" type="enum"/>
+                    <FOverline value="No" type="enum"/>
+                    <FStrike value="No" type="enum"/>
+                    <FChangeBar value="No" type="enum"/>
+                    <FOutline value="No" type="enum"/>
+                    <FShadow value="No" type="enum"/>
+                    <FPairKern value="Yes" type="enum"/>
+                    <FTsume value="No" type="enum"/>
+                    <FCase value="FAsTyped" type="enum"/>
+                    <FPosition value="FNormal" type="enum"/>
+                    <FDX value="0.0%" type="num"/>
+                    <FDY value="0.0%" type="num"/>
+                    <FDW value="0.0%" type="num"/>
+                    <FStretch value="100.0%" type="num"/>
+                    <FLanguage value="Swedish" type="enum"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                    <FBackgroundColor value="NoColor" type="enum"/>
+                </PgfFont>
+            </Pgf>
+            <PgfNumString value="4.\t" type="str"/>
+            <PgfReferenced value="Yes" type="enum"/>
+            <ParaLine>
+            <Font>
+                <FTag value="" type="str"/>
+                <FLocked value="No" type="enum"/>
+                <FSeparation value="2" type="enum"/>
+                <FColor value="Red" type="str"/>
+            </Font>
+                <String>Nationella riktlinjer för bröst-, prostata-, tjock</String>
+                <Char value="SoftHyphen" type="enum"/>
+            </ParaLine>
+            <ParaLine>
+            <Font>
+                <FTag value="" type="str"/>
+                <FLocked value="No" type="enum"/>
+                <FSeparation value="2" type="enum"/>
+                <FColor value="Red" type="str"/>
+            </Font>
+                <String>tarms- och ändtarmscancervård 2014 – Stöd för </String>
+            </ParaLine>
+            <ParaLine>
+            <Font>
+                <FTag value="" type="str"/>
+                <FLocked value="No" type="enum"/>
+                <FSeparation value="2" type="enum"/>
+                <FColor value="Red" type="str"/>
+            </Font>
+                <String>styrning och ledning. Socialstyrelsen. 2014. ISBN </String>
+            </ParaLine>
+            <ParaLine>
+            <Font>
+                <FTag value="" type="str"/>
+                <FLocked value="No" type="enum"/>
+                <FSeparation value="2" type="enum"/>
+                <FColor value="Red" type="str"/>
+            </Font>
+                <String>978-91-7555-162-3. Artikelnummer 2014-4-2. </String>
+            </ParaLine>
+            <ParaLine>
+                <Font>
+                    <FTag value="Blue" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <Marker>
+                    <MType value="8" type="enum"/>
+                    <MTypeName value="Hypertext" type="str"/>
+                    <MText value="message URL http://www.socialstyrelsen.se/Lists/Artikelkatalog/Attachments/19383/2014-4-2.pdf" type="str"/>
+                    <MCurrPage value="578" type="str"/>
+                    <Unique value="1032606" type="enum"/>
+                </Marker>
+                <String>www.socialstyrelsen.se</String>
+            </ParaLine>
+        </Para>
+        <Para>
+            <Unique value="1032607" type="enum"/>
+            <PgfTag value="RefTextNrForts" type="str"/>
+            <Pgf>
+                <PgfFont>
+                    <FTag value="" type="str"/>
+                    <FPlatformName value="W.Frutiger LT Std 55 Roman.R.400" type="str"/>
+                    <FFamily value="Frutiger LT Std 55 Roman" type="str"/>
+                    <FVar value="Regular" type="str"/>
+                    <FWeight value="Regular" type="str"/>
+                    <FAngle value="Regular" type="str"/>
+                    <FPostScriptName value="FrutigerLTStd-Roman" type="str"/>
+                    <FEncoding value="FrameRoman" type="str"/>
+                    <FSize value="7.5 pt" type="num"/>
+                    <FUnderlining value="FNoUnderlining" type="enum"/>
+                    <FOverline value="No" type="enum"/>
+                    <FStrike value="No" type="enum"/>
+                    <FChangeBar value="No" type="enum"/>
+                    <FOutline value="No" type="enum"/>
+                    <FShadow value="No" type="enum"/>
+                    <FPairKern value="Yes" type="enum"/>
+                    <FTsume value="No" type="enum"/>
+                    <FCase value="FAsTyped" type="enum"/>
+                    <FPosition value="FNormal" type="enum"/>
+                    <FDX value="0.0%" type="num"/>
+                    <FDY value="0.0%" type="num"/>
+                    <FDW value="0.0%" type="num"/>
+                    <FStretch value="100.0%" type="num"/>
+                    <FLanguage value="Swedish" type="enum"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                    <FBackgroundColor value="NoColor" type="enum"/>
+                </PgfFont>
+            </Pgf>
+            <PgfNumString value="5.\t" type="str"/>
+            <ParaLine>
+            <Font>
+                <FTag value="" type="str"/>
+                <FLocked value="No" type="enum"/>
+                <FSeparation value="2" type="enum"/>
+                <FColor value="Red" type="str"/>
+            </Font>
+                <String>SBU. Aromatashämmande läkemedel vid be</String>
+                <Char value="SoftHyphen" type="enum"/>
+            </ParaLine>
+            <ParaLine>
+            <Font>
+                <FTag value="" type="str"/>
+                <FLocked value="No" type="enum"/>
+                <FSeparation value="2" type="enum"/>
+                <FColor value="Red" type="str"/>
+            </Font>
+                <String>handling av postmenopausala kvinnor med tidig </String>
+            </ParaLine>
+            <ParaLine>
+            <Font>
+                <FTag value="" type="str"/>
+                <FLocked value="No" type="enum"/>
+                <FSeparation value="2" type="enum"/>
+                <FColor value="Red" type="str"/>
+            </Font>
+                <String>ER-positiv bröstcancer. Stockholm: Statens bered</String>
+                <Char value="SoftHyphen" type="enum"/>
+            </ParaLine>
+            <ParaLine>
+            <Font>
+                <FTag value="" type="str"/>
+                <FLocked value="No" type="enum"/>
+                <FSeparation value="2" type="enum"/>
+                <FColor value="Red" type="str"/>
+            </Font>
+                <String>ning för medicinsk utvärdering (SBU); 2014. SBU </String>
+            </ParaLine>
+            <ParaLine>
+            <Font>
+                <FTag value="" type="str"/>
+                <FLocked value="No" type="enum"/>
+                <FSeparation value="2" type="enum"/>
+                <FColor value="Red" type="str"/>
+            </Font>
+                <String>Alert-rapport nr 2014-02. ISSN 1652-7151. </String>
+            </ParaLine>
+            <ParaLine>
+                <Font>
+                    <FTag value="Blue" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <Marker>
+                    <MType value="8" type="enum"/>
+                    <MTypeName value="Hypertext" type="str"/>
+                    <MText value="message URL http://www.sbu.se/sv/Publicerat/Alert/Aromatashammande-lakemedel-vid-behandling-av-postmenopausala-kvinnor-med-tidig-ER-positiv-brostcancer/" type="str"/>
+                    <MCurrPage value="578" type="str"/>
+                    <Unique value="1032608" type="enum"/>
+                </Marker>
+                <String>www.sbu.se</String>
+            </ParaLine>
+        </Para>
+        <Para>
             <Unique value="1028751" type="enum"/>
             <PgfTag value="FaktaText" type="str"/>
             <Pgf>
                 <PgfBotSeparator value="Tunn_Tjock" type="str"/>
             </Pgf>
+            <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
                 <Font>
                     <FTag value="" type="str"/>
@@ -23725,7 +23978,7 @@
                 <PgfLanguage value="UKEnglish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="140" type="enum"/>
+                <TextRectID value="141" type="enum"/>
                 <ATbl value="9" type="enum"/>
             </ParaLine>
         </Para>
