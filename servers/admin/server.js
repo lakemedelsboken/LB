@@ -14,7 +14,6 @@ var filesize = require("filesize");
 var masterIndex = JSON.parse(fs.readFileSync(__dirname + "/../site/masterIndex.json", "utf8"));
 
 var atcTree = JSON.parse(fs.readFileSync(__dirname + "/../../npl/atcTree.json", "utf8"));
-var searchIndexer = require("../../search/createSearchIndex.js");
 
 var settings = JSON.parse(fs.readFileSync(__dirname + "/../../settings/settings.json", "utf8"));
 
@@ -276,7 +275,7 @@ app.get('/admin/frontpage/generate', function(req,res){
 			var article = blogArticles[i];
 			frontPageContent.push('<h3><a href="/blog/' + article.url + '">' + article.title + '</a></h3>');
 			frontPageContent.push('<p>' + article.summary + '</p>');
-			frontPageContent.push('<p><a href="/blog/' + article.url + '">Läs vidare &raquo;</a></p>');
+			frontPageContent.push('<p><a href="/blog/' + article.url + '">Läs vidare &raquo;</a></p><hr>');
 		}
 
 		frontPageContent.push(about);
@@ -719,7 +718,7 @@ app.get('/admin/preview/updateall', function(req,res){
 	//get all mifml files
 	var files = fs.readdirSync(__dirname + "/mif/");
 
-	var nrOfParallelProcessing = numCPUs;
+	var nrOfParallelProcessing = numCPUs - 1;
 	if (nrOfParallelProcessing < 1) {
 		nrOfParallelProcessing = 1;
 	}
@@ -1410,6 +1409,20 @@ function parseToHtml(mifmlFilePath, callback) {
 
 }
 
+function createSearchIndex(htmlFilePath, callback) {
+
+	var pathToParser = __dirname + "/../../search/createSearchIndex.js";
+
+	//console.error(pathToParser);
+	var execute = require('child_process').exec;
+	var child = execute("node " + pathToParser + " -i " + htmlFilePath, {maxBuffer: 2000*1024}, function (error, stdout, stderr) {
+
+		callback(error, stderr, stdout);
+
+	});
+
+}
+
 
 function parseToHtmlAndSave(mifmlFilePath, append, callback) {
 
@@ -1436,104 +1449,118 @@ function parseToHtmlAndSave(mifmlFilePath, append, callback) {
 		//console.error("Error:" + stderr);
 		//console.error("Out:" + htmlContent);
 
-		//Create and save searchIndex
-		var newSearchIndex = searchIndexer(htmlContent, htmlFileName);
-		var searchDir = __dirname + "/../site/chapters/" + htmlFileName.replace(".html", "_index/");
-		wrench.mkdirSyncRecursive(searchDir);
-		var searchIndexPath = searchDir + htmlFileName.replace(".html", ".json");
-		fs.writeFileSync(searchIndexPath, newSearchIndex, "utf8");
-	
-		//Add page structure to sideBar
-		newSearchIndex = JSON.parse(newSearchIndex);
-		var $ = require("cheerio").load(htmlContent);
-		var sideBar = $("#sideBar");
-		var sideBarContent = buildSideBarToc(newSearchIndex);
-		sideBar.append($(sideBarContent));
-
-		//Add way to request conflicts of interest
-		
-		//Find authors of current chapter
-		var chapterId = htmlFileName.split("_")[0];
-		var authors = require("./db/authors_registry").getAuthorsByChapterId(chapterId);
-
-		//console.log("Found " + authors.length + " authors for chapterId: " + chapterId);
-
-		//Render authors anew
-		var oldAuthors = $("p.authors");
-		//console.log("Before:");
-		//console.log(oldAuthors.html());
-
-		var authorsDisclosure = $('<div class="authorsDisclosure"><p>Jävsdeklarationer för kapitlets författare kan erhållas via <a href=\"mailto:registrator@mpa.se\">registrator@mpa.se</a>. Enklast sker detta genom de förberedda mejlen nedan.</p></div>');
-
-		var newAuthors = $('<ul class="authors"></ul>');
-		for (var i = 0; i < authors.length; i++) {
-			var author = authors[i];
-			
-			var niceAuthorName = "";
-
-			var name = author.name.split(" ");
-			if (name.length === 2) {
-				niceAuthorName = name[1] + " " + name[0];
-			} else if (author.firstname !== undefined && author.lastname !== undefined) {
-				niceAuthorName = author.firstname + " " + author.lastname;
-			} else {
-				niceAuthorName = author.name
-				//console.log(author.name + " could not be niced up.");
-			}
-
-			if (author.department !== undefined && author.department !== "") {
-				niceAuthorName += ", " + author.department;
-			}
-
-			if (author.hospital !== undefined && author.hospital !== "") {
-				niceAuthorName += ", " + author.hospital;
-			}
-			
-			if (author.city !== undefined && author.city !== "") {
-				niceAuthorName += ", " + author.city;
-			}
-			
-			//console.log("Adding author: " + niceAuthorName);
-			var chapterName = $("h1").first().text();
-			
-			newAuthors.append("<li>" + niceAuthorName  + " <a href=\"mailto:registrator@mpa.se?subject=" + encodeURIComponent('Förfrågan om jävsdeklaration') + "&body=" + encodeURIComponent('Jag önskar jävsdeklaration för') + "%0D%0A" + encodeURIComponent(niceAuthorName) + "%0D%0A" + encodeURIComponent('författare till kapitlet ' + chapterName) + encodeURIComponent(', Läkemedelsboken 2014.') + "%0D%0A%0D%0A" + encodeURIComponent('Vänliga hälsningar') + "%0D%0A\" class=\"btn btn-mini\"><i class=\"icon icon-envelope-alt\"></i> Fråga efter jävsdeklaration via mejl</a></li>");
-			
-		}
-
-		if (authors.length > 0) {
-			//oldAuthors.replaceWith(newAuthors);
-
-			authorsDisclosure.append(newAuthors)
-
-			var referenceHeader = $(".referenceHeader").last();
-			referenceHeader.before(authorsDisclosure);
-		}
-
-		//console.log("After:");
-//		console.log(oldAuthors.html());
-
 		//Get parsed and restructured content
+		var $ = require("cheerio").load(htmlContent);
 		htmlContent = $.html();
 
 		//Write page to disk
-		fs.writeFileSync(__dirname + "/../site/chapters/" + htmlFileName, htmlContent, "utf8");
-	
-		//Save messages from parser
-		
-		var endParseTime = new Date().getTime();
-		var totalParseTime = ((endParseTime - startParseTime) / 1000) + " seconds";
-		
-		parserMessages += "Parsing finished in " + totalParseTime + "\n\n";
-		
-		var latestParserMessagesFile = __dirname + "/mif/parserMessages.txt";
-		if (append) {
-			fs.appendFileSync(latestParserMessagesFile, parserMessages, "utf8");
-		} else {
-			fs.writeFileSync(latestParserMessagesFile, parserMessages, "utf8");
-		}
+		var htmlFilePath = path.normalize(__dirname + "/../site/chapters/" + htmlFileName);
+		fs.writeFileSync(htmlFilePath, htmlContent, "utf8");
 
-		callback(err);
+		createSearchIndex(htmlFilePath, function(err, stderr, stdout) {
+			if (err !== null) {
+				console.log('exec error: ' + err);
+				return callback(err);
+			}
+			
+			//Create and save searchIndex
+			var newSearchIndex = stdout.toString();
+			var searchDir = __dirname + "/../site/chapters/" + htmlFileName.replace(".html", "_index/");
+			wrench.mkdirSyncRecursive(searchDir);
+			var searchIndexPath = searchDir + htmlFileName.replace(".html", ".json");
+			fs.writeFileSync(searchIndexPath, newSearchIndex, "utf8");
+
+			//Add page structure to sideBar
+			newSearchIndex = JSON.parse(newSearchIndex);
+			var sideBar = $("#sideBar");
+			var sideBarContent = buildSideBarToc(newSearchIndex);
+			sideBar.append($(sideBarContent));
+
+			//Add way to request conflicts of interest
+		
+			//Find authors of current chapter
+			var chapterId = htmlFileName.split("_")[0];
+			var authors = require("./db/authors_registry").getAuthorsByChapterId(chapterId);
+
+			//console.log("Found " + authors.length + " authors for chapterId: " + chapterId);
+
+			//Render authors anew
+			var oldAuthors = $("p.authors");
+			//console.log("Before:");
+			//console.log(oldAuthors.html());
+
+			var authorsDisclosure = $('<div class="authorsDisclosure"><p>Jävsdeklarationer för kapitlets författare kan erhållas via <a href=\"mailto:registrator@mpa.se\">registrator@mpa.se</a>. Enklast sker detta genom de förberedda mejlen nedan.</p></div>');
+
+			var newAuthors = $('<ul class="authors"></ul>');
+			for (var i = 0; i < authors.length; i++) {
+				var author = authors[i];
+			
+				var niceAuthorName = "";
+
+				var name = author.name.split(" ");
+				if (name.length === 2) {
+					niceAuthorName = name[1] + " " + name[0];
+				} else if (author.firstname !== undefined && author.lastname !== undefined) {
+					niceAuthorName = author.firstname + " " + author.lastname;
+				} else {
+					niceAuthorName = author.name
+					//console.log(author.name + " could not be niced up.");
+				}
+
+				if (author.department !== undefined && author.department !== "") {
+					niceAuthorName += ", " + author.department;
+				}
+
+				if (author.hospital !== undefined && author.hospital !== "") {
+					niceAuthorName += ", " + author.hospital;
+				}
+			
+				if (author.city !== undefined && author.city !== "") {
+					niceAuthorName += ", " + author.city;
+				}
+			
+				//console.log("Adding author: " + niceAuthorName);
+				var chapterName = $("h1").first().text();
+			
+				newAuthors.append("<li>" + niceAuthorName  + " <a href=\"mailto:registrator@mpa.se?subject=" + encodeURIComponent('Förfrågan om jävsdeklaration') + "&body=" + encodeURIComponent('Jag önskar jävsdeklaration för') + "%0D%0A" + encodeURIComponent(niceAuthorName) + "%0D%0A" + encodeURIComponent('författare till kapitlet ' + chapterName) + encodeURIComponent(', Läkemedelsboken 2014.') + "%0D%0A%0D%0A" + encodeURIComponent('Vänliga hälsningar') + "%0D%0A\" class=\"btn btn-mini\"><i class=\"icon icon-envelope-alt\"></i> Fråga efter jävsdeklaration via mejl</a></li>");
+			
+			}
+
+			if (authors.length > 0) {
+				//oldAuthors.replaceWith(newAuthors);
+
+				authorsDisclosure.append(newAuthors)
+
+				var referenceHeader = $(".referenceHeader").last();
+				referenceHeader.before(authorsDisclosure);
+			}
+
+			//console.log("After:");
+	//		console.log(oldAuthors.html());
+
+			//Get parsed and restructured content
+			htmlContent = $.html();
+
+			//Write page to disk
+			fs.writeFileSync(__dirname + "/../site/chapters/" + htmlFileName, htmlContent, "utf8");
 	
+			//Save messages from parser
+		
+			var endParseTime = new Date().getTime();
+			var totalParseTime = ((endParseTime - startParseTime) / 1000) + " seconds";
+		
+			parserMessages += "Parsing finished in " + totalParseTime + "\n\n";
+		
+			var latestParserMessagesFile = __dirname + "/mif/parserMessages.txt";
+			if (append) {
+				fs.appendFileSync(latestParserMessagesFile, parserMessages, "utf8");
+			} else {
+				fs.writeFileSync(latestParserMessagesFile, parserMessages, "utf8");
+			}
+
+			callback(err);
+			
+		});
 	});
 }
 

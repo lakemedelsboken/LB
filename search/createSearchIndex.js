@@ -10,6 +10,33 @@ var contentsId = 0;
 
 var atcTree = JSON.parse(fs.readFileSync(__dirname + "/../npl/atcTree.json", "utf8"));
 
+var argv = require("optimist")
+    .usage('Create search index from html chapter\nUsage: $0')
+
+    .demand('i')
+    .alias('i', 'inputFile')
+    .describe('i', 'Input html file')
+
+    .argv;
+
+var sourceFilePath = argv.i;
+
+if (sourceFilePath) {
+	console.error("Parsing: " + sourceFilePath);
+
+	if (sourceFilePath.indexOf("/") > -1) {
+		chapterName = sourceFilePath.split("/");
+		chapterName = chapterName[chapterName.length - 1];
+	} else {
+		chapterName = sourceFilePath;
+	}
+	
+	var htmlContent = fs.readFileSync(sourceFilePath, "utf8");
+	
+	console.log(createSearchIndex(htmlContent, chapterName));
+}
+
+
 function createSearchIndex(htmlContent, name) {
 
 	$ = require("cheerio").load(htmlContent);
@@ -235,6 +262,9 @@ function iterateElement(element) {
 				//Switch level to 3
 				level = 3;
 			}
+
+			$(element).find("fieldset").remove();
+			$(element).find("sup.hiddenNoteNumber").remove();
 			
 			if (type === "facts" && $(element).hasClass("skip")) {
 				//If the last item was also a facts item (it probably was) add the title to that header

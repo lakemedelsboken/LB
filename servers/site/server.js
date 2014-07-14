@@ -33,7 +33,7 @@ var secretSettings = JSON.parse(fs.readFileSync(secretSettingsPath, "utf8"));
 var masterIndex = JSON.parse(fs.readFileSync(__dirname + "/masterIndex.json", "utf8"));
 
 var atcTree = JSON.parse(fs.readFileSync(__dirname + "/../../npl/atcTree.json", "utf8"));
-var searchIndexer = require("../../search/createSearchIndex.js");
+//var searchIndexer = require("../../search/createSearchIndex.js");
 //var Fuse = require("./lib/fuse.js");
 
 var settings = JSON.parse(fs.readFileSync(__dirname + "/../../settings/settings.json", "utf8"));
