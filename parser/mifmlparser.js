@@ -563,8 +563,10 @@ var Parser = {
 					listAlreadyStarted = true;
 				}
 				
-				if (!listAlreadyStarted) {
+				if (!listAlreadyStarted && self.state.furtherReading) {
 					result += "<ol class=\"references\">";
+				} else if (!listAlreadyStarted && self.state.references) {
+					result += "<ol class=\"references\" start=\"" + self.counters.referenceItems + "\">";
 				}
 
 				if (self.state.furtherReading) {
@@ -1542,9 +1544,10 @@ var Parser = {
 										//Cross-Ref sets name
 										if (value === "Cross-Ref" && indexText && indexText.indexOf(":") > -1) {
 											indexId = indexText.split(":")[0];
+											self.html.push("<a class=\"crossref\" id=\"" + indexId + "\"></a>");
+										} else {
+											self.html.push("<a class=\"index\" id=\"" + indexId + "\" data-text=\"" + indexText + "\"></a>");
 										}
-
-										self.html.push("<a class=\"index\" id=\"" + indexId + "\"></a>");										
 										
 									} else if (value === "Author") {
 										//TODO: Save to author db
