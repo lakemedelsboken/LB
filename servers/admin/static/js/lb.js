@@ -403,7 +403,8 @@ var console = {log: function() {}};
 
 									var activeMenuItem = self.activeMenu.find("li").filter(function() { 
 										//A bit crude - TODO: Fix for id instead?
-										return $.trim($(this).text()) == $.trim(chapterItem.text());
+										//return $.trim($(this).text()) == $.trim(chapterItem.text());
+										return ($(this).find("a").first().attr("href").indexOf(chapterItem.attr("id")) > -1);
 									});
 								
 									if (activeMenuItem.length === 1) {
@@ -503,6 +504,13 @@ var console = {log: function() {}};
 			if (stack.length > 0) {
 				var id = stack.shift();
 				var element = $("#" + id);
+
+				//Remove unwanted chars
+				element.find("fieldset").remove();
+				element.find("sup.hiddenNoteNumber").remove();
+
+				//console.log(element.text());
+
 				self.addMenu(id, element.text(), "forward", chapter, menuAnimationDuration, true, function() {
 					self.renderMenuStack(stack, chapter, menuAnimationDuration, callback);
 				});
@@ -750,6 +758,7 @@ var console = {log: function() {}};
 								var titleItem = newMenu.find(".titleItem").first();
 								if (titleItem.length === 1) {
 									titleItem.attr("href", "/" + firstItem.chapter + "#" + firstItem.id);
+									titleItem.text(item.title)
 								} else {
 									newMenu.append($("<li><a class=\"titleItem\" href=\"/" + item.chapter + "#" + item.id + "\"" + ((item.chapter !== undefined) ? " data-chapter=\"" + item.chapter + "\"" : " data-chapter=\"\"") + " data-has-children=\"false\">" + item.title + "</a></li>")); 
 								}
