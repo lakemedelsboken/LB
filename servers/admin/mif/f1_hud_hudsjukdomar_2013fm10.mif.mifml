@@ -29295,7 +29295,24 @@
                     <FSeparation value="2" type="enum"/>
                     <FColor value="Red" type="str"/>
                 </Font>
-                <String>Se också referens 2 om akne.</String>
+                <String>Se också referens </String>
+                <Font>
+                    <FTag value="Blue" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <String>(2)</String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FDW value="0.5%" type="num"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                </Font>
+                <String> om akne.</String>
             </ParaLine>
         </Para>
         <Para>

@@ -29309,7 +29309,28 @@
     <FSeparation 2>
     <FColor `Red'>
    > # end of Font
-   <String `Se också referens 2 om akne.'>
+   <String `Se också referens '>
+
+   <Font 
+    <FTag `Blue'>
+    <FLocked No>
+   > # end of Font
+   <String `(2)'>
+   <Font 
+    <FTag `'>
+    <FDW  0.5%>
+    <FLocked No>
+   > # end of Font
+
+   <Font 
+    <FTag `'>
+    <FLocked No>
+    <FSeparation 2>
+    <FColor `Red'>
+   > # end of Font
+   <String ` om akne.'>
+
+
   > # end of ParaLine
  > # end of Para
  <Para 
