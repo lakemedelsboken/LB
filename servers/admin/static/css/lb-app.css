@@ -1690,3 +1690,9 @@ ul.authorsByLetter li ul li {
 .ribbon:after {
   right: 0;
 }
+
+span.updated > a.inlineGenerica.text {
+	text-decoration: none;
+	color: red;
+	border-bottom: dotted 1px red;
+}
