@@ -8,9 +8,7 @@ var crypto = require("crypto");
 var exec = require('child_process').exec;
 var cheerio = require("cheerio");
 
-
-
-var searchIndexer = require("../search/createSearchIndex.js");
+//var searchIndexer = require("../search/createSearchIndex.js");
 
 var numCPUs = require('os').cpus().length;
 var settings = JSON.parse(fs.readFileSync(__dirname + "/../settings/settings.json", "utf8"));
