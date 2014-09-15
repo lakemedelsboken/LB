@@ -765,7 +765,11 @@ var console = {log: function() {}};
 
 								//newMenu.append($("<li><a class=\"titleItem\" href=\"/" + chapter + "#" + menuId + "\"" + ((item.chapter !== undefined) ? " data-chapter=\"" + item.chapter + "\"" : " data-chapter=\"\"") + ">" + item.title + "</a></li>")); 
 							} else {
-								newMenu.append($("<li><a href=\"/" + item.chapter + "#" + item.id + "\"" + ((item.chapter !== undefined) ? " data-chapter=\"" + item.chapter + "\"" : " data-chapter=\"\"") + " data-has-children=\"" + (item.hasChildren ? "true" : "false") + "\"><i class=\"" + lb.getIcon(item.type) + "\"></i> " + (item.hasChildren ? "<i class=\"icon icon-angle-down pull-right\"></i> " : "") + item.title + "</a></li>")); 
+								var itemType = item.type;
+								if (item.hasChildren) {
+									itemType = "parent";
+								}
+								newMenu.append($("<li><a href=\"/" + item.chapter + "#" + item.id + "\"" + ((item.chapter !== undefined) ? " data-chapter=\"" + item.chapter + "\"" : " data-chapter=\"\"") + " data-has-children=\"" + (item.hasChildren ? "true" : "false") + "\"><i class=\"" + lb.getIcon(itemType) + "\"></i> " + (item.hasChildren ? "<i class=\"icon icon-angle-down pull-right\"></i> " : "") + item.title + "</a></li>")); 
 							}
 						}
 
@@ -844,9 +848,12 @@ var console = {log: function() {}};
 				var animationProperties = {};
 
 				var hideDuration = duration;
+
+				//Make sure hiding is a fraction faster than displaying the new menu
 				if (hideDuration > 0) {
 					hideDuration = hideDuration - 1;
 				}
+
 				//Hide old items, except title
 				oldMenuItems.each(function(index, element) {
 					if (index !== titleIndex) {
@@ -1061,11 +1068,13 @@ var console = {log: function() {}};
 		},
 		getIcon: function(type) {
 			var icons = {
-				header: "icon-bookmark-empty",
+				parent: "icon-bookmark-empty",
+				header: "icon-chevron-right",
 				infoTable: "icon-th-large",
 				facts: "icon-th-list",
 				therapyRecommendations: "icon-info-sign",
-				figure: "icon-bar-chart"
+				figure: "icon-bar-chart",
+				division: "icon-bookmark-empty"
 			}
 			if (icons[type] !== undefined) {
 				return icons[type];
