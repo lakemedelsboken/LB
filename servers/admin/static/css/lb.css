@@ -498,7 +498,7 @@ p.indent {
 	margin: 0;
 }
 
-span.updated {
+span.updated.active {
 	color: red;
 }
 
@@ -710,7 +710,7 @@ a.inlineGenerica.text {
 	border-bottom: dotted 1px #000;
 }
 
-span.updated > a.inlineGenerica.text {
+span.updated.active > a.inlineGenerica.text {
 	text-decoration: none;
 	color: red;
 	border-bottom: dotted 1px red;
@@ -782,6 +782,7 @@ a.inlineGenerica.text {
 	right: 7px;
 	margin: 0;
 	z-index: 12;
+	width: 11px;
 }
 
 #gotoTop {
@@ -803,6 +804,7 @@ a.inlineGenerica.text {
 	right: 7px;
 	margin: 0;
 	z-index: 12;
+	width: 11px;
 }
 
 #normalscreen {
@@ -812,8 +814,21 @@ a.inlineGenerica.text {
 	display: none;
 	margin: 0;
 	z-index: 12;
+	width: 11px;
 }
 
+#settings {
+	position: fixed;
+	top: 63px;
+	right: 7px;
+	margin: 0;
+	z-index: 13;
+	width: 11px;
+}
+
+.settings {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
 #sideContainer {
 	height: 100%;
@@ -1406,6 +1421,25 @@ ul.authorsByLetter li ul li {
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+
+
+	#settings {
+		position: fixed;
+		top: 27px;
+		right: 3px;
+		margin: 0;
+		z-index: 4000;
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+		filter: alpha(opacity=50);
+		-moz-opacity:0.5;
+		-khtml-opacity: 0.5;
+		opacity: 0.5;
+		height: 16px;
+		padding-top: 2px;
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+
 
 	#performSearch {
 		top: 3px;

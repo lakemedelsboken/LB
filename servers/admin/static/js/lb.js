@@ -1,6 +1,6 @@
 var lb = null;
 
-var console = {log: function() {}};
+//var console = {log: function() {}};
 
 (function(window, undefined){
 
@@ -136,7 +136,50 @@ var console = {log: function() {}};
 				ga('send', 'pageview', {'page': $(this).attr("href"), 'title': "PDF: " + $(this).text()});
 				ga('send', 'event', 'pdf', $(this).text(), {'nonInteraction': 0});
 			});
+
+			//Check if settings button should be shown
+			var updatedElements = $("#mainContainer").find("span.updated");
 			
+			if (updatedElements.length > 0) {
+				$("#settings").show();
+			} else {
+				$("#settings").hide();
+			}
+			
+			//Read cookie for this setting
+			var visualizeUpdatedText = $.cookie("visualizeUpdatedText");
+			
+			if (visualizeUpdatedText === undefined || visualizeUpdatedText === "false") {
+				visualizeUpdatedText = false;
+			} else {
+				visualizeUpdatedText = true;
+			}
+			
+			//Convert text style on load
+			if (visualizeUpdatedText && updatedElements.length > 0) {
+				updatedElements.addClass("active");
+			}
+
+			var checkboxStatus = (visualizeUpdatedText) ? " checked=\"checked\"" : "";
+
+			//Initiate settings
+			$("#settings").clickover({
+				html: true, 
+				title: "Inställningar",
+				content: "<div class=\"settings\"><label class=\"checkbox\"><input type=\"checkbox\" id=\"visualizeUpdatedText\"" + checkboxStatus + "> Visa uppdaterad text med röd färg</label></div>",
+				placement: "left"
+			});
+
+			$("body").on("click", "#visualizeUpdatedText", function(event) {
+				var updatedElements = $("#mainContainer").find("span.updated");
+				if ($(this).prop("checked")) {
+					updatedElements.addClass("active");
+					$.cookie("visualizeUpdatedText", "true", { expires: 365, path: '/' });
+				} else {
+					updatedElements.removeClass("active");
+					$.cookie("visualizeUpdatedText", "false", { expires: 365, path: '/' });
+				}
+			});
 
 			//Handlers for product information accordion
 			$("#modalMed").on("click", "#toggleAllSections", self.toggleAccordion);
@@ -1272,12 +1315,37 @@ var console = {log: function() {}};
 					}
 
 					$("#mainContainer").html(contentHtml);
+					
+					//Fix link to pdf
 					var pdf = $("#pdf");
 					var newPdf = $dataBody.find("#pdf");
 					
 					if (pdf.length === 1 && newPdf.length === 1) {
 						pdf.attr("href", newPdf.attr("href"));
 						pdf.show("fast");
+					}
+					
+					//Check if settings should be visible
+					var updatedElements = $("#mainContainer").find("span.updated");
+					
+					if (updatedElements.length > 0) {
+						$("#settings").show("fast");
+					} else {
+						$("#settings").hide();
+					}
+
+					//Read cookie
+					var visualizeUpdatedText = $.cookie("visualizeUpdatedText");
+
+					if (visualizeUpdatedText === undefined || visualizeUpdatedText === "false") {
+						visualizeUpdatedText = false;
+					} else {
+						visualizeUpdatedText = true;
+					}
+
+					//Convert text style on load
+					if (visualizeUpdatedText && updatedElements.length > 0) {
+						updatedElements.addClass("active");
 					}
 
 					var scrollItem = $("#" + id);
@@ -1321,7 +1389,7 @@ var console = {log: function() {}};
 					
 					var relativeUrl = chapter;
 					
-					//Track page
+					//Track page request
 					ga('send', 'pageview', {'page': chapter, 'title': document.title});
 
 				},
