@@ -173,6 +173,12 @@
       console.log(dt + ": clickover hide");
       this.hide();
     }
+    , destroy: function () {
+        this.hide();
+		this.$element.off("click").removeData(this.type).removeAttr("data-original-title");
+        $('body').off( this.attr.click_event_ns );
+    }
+	
   })
 
   /* plugin definition */
