@@ -138,7 +138,7 @@ var lb = null;
 			});
 
 			//Check if settings button should be shown
-			var updatedElements = $("#mainContainer").find("span.updated");
+			var updatedElements = $("span.updated");
 			
 			if (updatedElements.length > 0) {
 				$("#settings").show();
@@ -162,23 +162,70 @@ var lb = null;
 
 			var checkboxStatus = (visualizeUpdatedText) ? " checked=\"checked\"" : "";
 
+			function setupNewSettingsBox() {
+				//Remove the last clickover
+				$("#settings").clickover("destroy");
+
+				//Read cookie
+				visualizeUpdatedText = $.cookie("visualizeUpdatedText");
+		
+				//Cleanup
+				if (visualizeUpdatedText === undefined || visualizeUpdatedText === "false") {
+					visualizeUpdatedText = false;
+				} else {
+					visualizeUpdatedText = true;
+				}
+
+				checkboxStatus = (visualizeUpdatedText) ? " checked=\"checked\"" : "";
+
+				//Setup new clickover for settings
+				$("#settings").clickover({
+					html: true, 
+					title: "Inställningar",
+					content: "<div class=\"settings\"><label class=\"checkbox\"><input type=\"checkbox\" id=\"visualizeUpdatedText\"" + checkboxStatus + "> Visa uppdaterad text med röd färg</label></div>",
+					placement: "left",
+					allow_multiple: true,
+					onHidden: setupNewSettingsBox
+				});
+				
+			}
+
 			//Initiate settings
 			$("#settings").clickover({
 				html: true, 
 				title: "Inställningar",
 				content: "<div class=\"settings\"><label class=\"checkbox\"><input type=\"checkbox\" id=\"visualizeUpdatedText\"" + checkboxStatus + "> Visa uppdaterad text med röd färg</label></div>",
-				placement: "left"
+				placement: "left",
+				allow_multiple: true,
+				onHidden: setupNewSettingsBox
 			});
 
 			$("body").on("click", "#visualizeUpdatedText", function(event) {
-				var updatedElements = $("#mainContainer").find("span.updated");
+				var updatedElements = $("span.updated");
+				
 				if ($(this).prop("checked")) {
 					updatedElements.addClass("active");
 					$.cookie("visualizeUpdatedText", "true", { expires: 365, path: '/' });
 				} else {
 					updatedElements.removeClass("active");
+					$(this).removeAttr("checked");
 					$.cookie("visualizeUpdatedText", "false", { expires: 365, path: '/' });
 				}
+
+				//Reset all clickovers, except settings
+				$("[data-original-title]").each(function() {
+					if ($(this).attr("id") !== "settings") {
+						$(this).clickover("destroy");
+					}
+				});
+				
+				/*
+				setTimeout(function() {
+
+					
+				}, 500);
+				*/
+				
 			});
 
 			//Handlers for product information accordion
@@ -1326,7 +1373,7 @@ var lb = null;
 					}
 					
 					//Check if settings should be visible
-					var updatedElements = $("#mainContainer").find("span.updated");
+					var updatedElements = $("span.updated");
 					
 					if (updatedElements.length > 0) {
 						$("#settings").show("fast");
