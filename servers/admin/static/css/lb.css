@@ -826,6 +826,12 @@ a.inlineGenerica.text {
 	width: 11px;
 }
 
+.settingsBox {
+	position: fixed;
+	top: 36px !important;
+	margin-left: -10px;
+}
+
 .settings {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }

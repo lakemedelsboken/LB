@@ -185,6 +185,7 @@ var lb = null;
 					content: "<div class=\"settings\"><label class=\"checkbox\"><input type=\"checkbox\" id=\"visualizeUpdatedText\"" + checkboxStatus + "> Visa uppdaterad text med röd färg</label></div>",
 					placement: "left",
 					allow_multiple: true,
+					class_name: "settingsBox",
 					onHidden: setupNewSettingsBox
 				});
 				
@@ -197,6 +198,7 @@ var lb = null;
 				content: "<div class=\"settings\"><label class=\"checkbox\"><input type=\"checkbox\" id=\"visualizeUpdatedText\"" + checkboxStatus + "> Visa uppdaterad text med röd färg</label></div>",
 				placement: "left",
 				allow_multiple: true,
+				class_name: "settingsBox",
 				onHidden: setupNewSettingsBox
 			});
 
