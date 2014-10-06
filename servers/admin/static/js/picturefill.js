@@ -14,7 +14,7 @@
 		}
 
 		//TODO: set a base class
-		var ps = $("div.figureImage, div.fassImage, div.narcImage, div.staticImage");
+		var ps = $("div.figureImage, div.fassImage, div.narcImage, div.staticImage, div.providerImage");
 		
 		// Loop the pictures
 		var loadCounter = 0;

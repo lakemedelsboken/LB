@@ -1446,6 +1446,12 @@ ul.authorsByLetter li ul li {
 		padding-right: 6px;
 	}
 
+	.settingsBox {
+		position: fixed;
+		top: 1px !important;
+		margin-left: -10px;
+	}
+
 
 	#performSearch {
 		top: 3px;

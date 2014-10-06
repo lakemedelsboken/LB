@@ -2564,13 +2564,29 @@ var lb = null;
 
 			var medInfo = $("<div class=\"medInfo\" />");
 
-			var fassImage = "<div data-picture data-alt=\"FASS.se\" class=\"fassImage\">";
-			fassImage += "<div data-src=\"/img/fasslogo.png\"></div>";
-			fassImage += "<div data-src=\"/img/fasslogo_x2.png\" data-media=\"(min-device-pixel-ratio: 2.0)\"></div>";
-			fassImage += "<img src=\"/img/fasslogo.png\" />";
-			fassImage += "</div>";
+			if (!product.provider || product.provider === "fass") {
+				var fassImage = "<div data-picture data-alt=\"FASS.se\" class=\"fassImage\">";
+				fassImage += "<div data-src=\"/img/fasslogo.png\"></div>";
+				fassImage += "<div data-src=\"/img/fasslogo_x2.png\" data-media=\"(min-device-pixel-ratio: 2.0)\"></div>";
+				fassImage += "<img src=\"/img/fasslogo.png\" />";
+				fassImage += "</div>";
 
-			medInfo.append($("<div class=\"pull-right\" style=\"width: 120px;\"><a href=\"http://www.fass.se/LIF/product?4&userType=0&nplId=" + nplId + "\" target=\"_blank\">" + fassImage + "</a></div>"));
+				medInfo.append($("<div class=\"pull-right\" style=\"width: 120px;\"><a href=\"http://www.fass.se/LIF/product?4&userType=0&nplId=" + nplId + "\" target=\"_blank\">" + fassImage + "</a></div>"));
+			} else {
+				var providerImage = "<div data-picture data-alt=\"" + product.provider + "\" class=\"providerImage\">";
+				providerImage += "<div data-src=\"/img/" + product.provider.toLowerCase() + ".png\"></div>";
+				providerImage += "<div data-src=\"/img/" + product.provider.toLowerCase() + "_x2.png\" data-media=\"(min-device-pixel-ratio: 2.0)\"></div>";
+				providerImage += "<img src=\"/img/" + product.provider.toLowerCase() + ".png\" />";
+				providerImage += "</div>";
+
+				var providerLink = product.providerLink;
+				
+				if (providerLink !== undefined) {
+					providerLink = providerLink.replace("{NPLID}", nplId);
+					medInfo.append($("<div class=\"pull-right\" style=\"width: 120px;\"><a href=\"" + providerLink + "\" target=\"_blank\">" + providerImage + "</a></div>"));
+				}
+				
+			}
 
 			medInfo.append($("<h2>" + product.name + "</h2>"));
 
@@ -2590,12 +2606,14 @@ var lb = null;
 
 			if (product.available === "true") {
 				medInfo.append($("<h4>" + product.description + "</h4>"));
-			} else {
+			} else if (product.hasOwnProperty("available")) {
 				medInfo.append($("<h4 class=\"not-available\">" + product.description + "</h4>"));
 				medInfo.append($("<div class=\"alert alert-error\"><h4>Tillhandahålls ej</h4></div>"));
 			}
 
-			medInfo.append($("<h4>" + product.mechanism + "</h4>"));
+			if (product.mechanism) {
+				medInfo.append($("<h4>" + product.mechanism + "</h4>"));
+			}
 
 			medInfo.append($("<div style=\"clear: right;\"><a data-productName=\"" + product.name + "\" class=\"btn pull-right inlineBoxSearch\">Sök bland informationsrutor...</a></div>"));
 
@@ -2641,12 +2659,25 @@ var lb = null;
 				narcImage += "<img src=\"/img/narcotic.png\" />";
 				narcImage += "</div>";
 
+				var narcoticClassTextCaution = "Iakttag största försiktighet vid förskrivning av detta läkemedel.";
+				var narcoticClassTextHabituation = "Beroendeframkallande medel.";
+
+				if (product.narcoticClassTextCaution !== undefined) {
+					narcoticClassTextCaution = product.narcoticClassTextCaution;
+				}
+
+				if (product.narcoticClassTextHabituation !== undefined) {
+					narcoticClassTextHabituation = product.narcoticClassTextHabituation;
+				}
 			
-				narcotic = product.narcoticClassTextCaution + "<br />" + product.narcoticClassTextHabituation;
+				narcotic = narcoticClassTextCaution + "<br />" + narcoticClassTextHabituation;
 				medInfo.append($("<div style=\"margin-bottom: 10px;\">" + narcImage + "<div style=\"margin-left: 30px;\">" + narcotic + "</div></div>"));
 			}
 
-			medInfo.append($("<div><strong>Aktiv substans:</strong> " + product.substance + "</div>"));
+			if (product.substance) {
+				medInfo.append($("<div><strong>Aktiv substans:</strong> " + product.substance + "</div>"));
+			}
+
 			//medInfo.append($("<div><strong>ATC-kod:</strong> <a href=\"" + product.atcLink + "\" target=\"_new\">" + product.atcCode + "</a></div>"));
 			medInfo.append($("<div><strong>ATC-kod:</strong> " + product.atcCode + "</div>"));
 
@@ -2786,7 +2817,7 @@ var lb = null;
 			var medHeadLines = $("<div id=\"medHeadLines\"/>");
 		
 			for(headLine in product.sections) {
-				var headLineId = headLine.replace(/\s/g, "_").replace(/å/ig, "a").replace(/ä/ig, "a").replace(/ö/ig, "o").replace(/,/ig, "")
+				var headLineId = headLine.replace(/\s/g, "_").replace(/å/ig, "a").replace(/ä/ig, "a").replace(/ö/ig, "o").replace(/,/ig, "").replace(/\./ig, "");
 				var content = product.sections[headLine];
 				if (content !== "" && content !== "<p></p>") {
 					medHeadLines.append($("<h4 class=\"section-header\"><a class=\"toggleSection\" href=\"#" + headLineId + "\"><i class=\"icon icon-plus-sign-alt leftIcon\"></i><i class=\"icon icon-angle-down pull-right rightIcon\"></i> " + headLine + "</a></h4><div id=\"" + headLineId + "\" class=\"section\">" + content + "</div>"));
