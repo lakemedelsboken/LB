@@ -8,18 +8,21 @@ This is where new products are fetched from http://npa.mpl.se/, added to the fas
 Runs all of the following scripts in correct order, this is done each night.
 
 ###2. _fetch.sh
-Fetches npl-data in xml and extracting it.
+Fetches npl-data in xml and extracts it.
 
 ###3. buildATCTree.js
-Builds `newAtcTree.json` which holds only human atc-codes.
+Builds `newAtcTree.json` which holds atc-codes for human drugs.
 
-###4. parseProducts.js
+###4. parseDocumentLinks.js
+Reads SPC document links from LMFDocuments.xml and adds to the product information, or creates a small stub containing the link. This only applies to non central approved SPC:s.
+
+###5. parseProducts.js
 Parses `database/NplProducts.xml` and saves unrecognized nplId:s to the `/fass/foundUpdates.json`. Also saves a stub to `/npl/products/`.
 
-###5. addProductsToATCTree.js
+###6. addProductsToATCTree.js
 Iterates all products in /fass/www/products/ and saves some data to newAtcTree.json.
 
-###6. replaceATCTree.js
+###7. replaceATCTree.js
 The contents of the `newAtcTree.json` is copied into `atcTree.json`
 
 ##Other files

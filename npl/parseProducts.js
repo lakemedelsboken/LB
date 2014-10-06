@@ -48,7 +48,6 @@ function readPharmForms(callback) {
 	xml.on('updateElement: xs:enumeration', function(item) {
 		var id = item.$.value;
 
-
 		var n = item["xs:annotation"].$children.filter(function(e) {
 			return (e.$["xml:lang"] === "sv");
 		});
@@ -68,9 +67,45 @@ function readPharmForms(callback) {
 	});
 }
 
+var controlClasses = {};
+
+function readControlClasses(callback) {
+
+	console.log("Reading control classes...");
+
+	var stream = fs.createReadStream(path.join(__dirname, '/database/control-class-lx.xsd'));
+	var xml = new XmlStream(stream);
+	
+	xml.preserve("xs:enumeration", true);
+	
+	xml.on('updateElement: xs:enumeration', function(item) {
+		var id = item.$.value;
+
+		var n = item["xs:annotation"].$children.filter(function(e) {
+			return (e.$["xml:lang"] === "sv");
+		});
+
+		var name = "";
+		
+		if (n.length > 0) {
+			name = n[0].$text
+		}
+		
+		controlClasses["c_" + id] = name;
+	});
+	
+	xml.on("end", function() {
+		console.log("Read " + Object.keys(controlClasses).length + " control classes.");
+		callback();
+	});
+}
+
+
 readOrganizations(function() {
 	readPharmForms(function() {
-		readProducts();
+		readControlClasses(function() {
+			readProducts();
+		});
 	});
 });
 
@@ -86,6 +121,11 @@ function readProducts() {
 	xml.preserve("npl:flags", true);
 	xml.preserve("npl:classifications", true);
 	xml.preserve("mpa:identifier", true);
+
+	xml.collect("npl:presentation", true);
+	xml.collect("lfn:price", true);
+	xml.collect("npl:price", true);
+	xml.collect("ind:price", true);
 	
 
 	var atcItems = {};
@@ -209,6 +249,48 @@ function readProducts() {
 				}
 				var description = (form + " " + strength).trim();
 
+
+				//Narcotics
+				var narcoticClass = "";
+				var narcoticClassTextCaution = "";
+				var narcoticClassTextHabituation = "";
+				var isNarcotic = false;
+				
+				if (item["npl:classifications"] && item["npl:classifications"]["mpa:control-class-lx"] && item["npl:classifications"]["mpa:control-class-lx"]["$"] && item["npl:classifications"]["mpa:control-class-lx"]["$"]["v"]) {
+					narcoticClass = item["npl:classifications"]["mpa:control-class-lx"]["$"]["v"]
+					if (narcoticClass === "1" || narcoticClass === "2" || narcoticClass === "3" || narcoticClass === "4" || narcoticClass === "5") {
+						narcoticClassTextCaution = "Iakttag största försiktighet vid förskrivning av detta läkemedel.";
+						narcoticClassTextHabituation = "Beroendeframkallande medel.";
+						isNarcotic = true;
+					}
+				}
+
+				//Packaging
+				var packaging = "";
+				if (item["npl:medprodpack"] && item["npl:medprodpack"]["npl:presentation"]) {
+					
+					var presentation = item["npl:medprodpack"]["npl:presentation"];
+					if (presentation.length > 0) {
+						presentation = presentation[0];
+						
+						if (presentation["mpa:package-text"] && presentation["mpa:package-text"]["mpa:v"]) {
+							packaging = presentation["mpa:package-text"]["mpa:v"];
+						}
+					}
+				}
+
+				//Availability
+				var available = "";
+				if (item["npl:flags"] && item["npl:flags"]["ind:flag"] && item["npl:flags"]["ind:flag"]["$"] && item["npl:flags"]["ind:flag"]["$"]["type"] === "available") {
+					available = item["npl:flags"]["ind:flag"]["$"]["v"];
+					
+					if (available === "Y") {
+						available = "true";
+					} else {
+						available = "false";
+					}
+				}
+
 				//SPC Link
 				var spcLink = undefined;
 				if (fs.existsSync(__dirname + "/products/" + nplId + ".json")) {
@@ -249,8 +331,56 @@ function readProducts() {
 						product.brand = brand;
 						update = true;
 					}
+
 					if (product.atcCode === undefined || product.atcCode === "") {
 						product.atcCode = atcCode;
+						update = true;
+					}
+
+					if (product.strength !== strength) {
+						product.strength = strength;
+						update = true;
+					}
+
+					if (product.form !== form) {
+						product.form = form;
+						update = true;
+					}
+
+					if (product.packaging !== packaging) {
+						product.packaging = packaging;
+						update = true;
+					}
+
+					if (product.narcoticClass !== narcoticClass) {
+						product.narcoticClass = narcoticClass;
+						update = true;
+					}
+
+					if (isNarcotic) {
+						if (product.narcoticClassTextHabituation !== narcoticClassTextHabituation) {
+							product.narcoticClassTextHabituation = narcoticClassTextHabituation;
+							update = true;
+						}
+
+						if (product.narcoticClassTextCaution !== narcoticClassTextCaution) {
+							product.narcoticClassTextCaution = narcoticClassTextCaution;
+							update = true;
+						}
+					} else {
+						if (product.narcoticClassTextHabituation !== undefined) {
+							delete product.narcoticClassTextHabituation;
+							update = true;
+						}
+						
+						if (product.narcoticClassTextCaution !== undefined) {
+							delete product.narcoticClassTextCaution;
+							update = true;
+						}
+					}
+
+					if (product.available !== available) {
+						product.available = available;
 						update = true;
 					}
 
@@ -289,6 +419,7 @@ function readProducts() {
 				}
 
 				fs.writeFileSync(__dirname + "/products/" + nplId + ".json", JSON.stringify(product, null, "\t"), "utf8");
+				//fs.writeFileSync(__dirname + "/items/" + nplId + ".json", JSON.stringify(item, null, "\t"), "utf8");
 			
 				availableCounter++;
 			}
