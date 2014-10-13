@@ -319,6 +319,30 @@ function readProducts() {
 						foundUpdates.push(nplId);
 						fs.writeFileSync(__dirname + "/../fass/shared/foundUpdates.json", JSON.stringify(foundUpdates, null, "\t"), "utf8");
 					}
+					
+					//Write a basic stub to fass/www/products/
+					var newProduct = {
+						"noinfo": true,
+						"id": nplId,
+						"name": name,
+						"brand": brand,
+						"atcCode": atcCode,
+						"strength": strength,
+						"form": form,
+						"packaging": packaging,
+						"narcoticClass": narcoticClass,
+						"spcLink": spcLink,
+						"available": available,
+						"description": description
+					}
+					
+					if (isNarcotic) {
+						newProduct.narcoticClassTextHabituation = narcoticClassTextHabituation;
+						newProduct.narcoticClassTextCaution = narcoticClassTextCaution;
+					}
+					
+					fs.writeFileSync(__dirname + "/../fass/www/products/" + nplId + ".json", JSON.stringify(newProduct, null, "\t"), "utf8");
+					
 				} else {
 					//Check that name and brand is set
 					var product = JSON.parse(fs.readFileSync(__dirname + "/../fass/www/products/" + nplId + ".json"));
