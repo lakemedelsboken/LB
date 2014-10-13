@@ -43,6 +43,7 @@ noinfoProducts.sort(function(a,b){
 <html>
 	<head>
 		<title><%=pageTitle%></title>
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Preparatinformation - <%=pageTitle%>">
 		<meta name="author" content="Läkemedelsverket">
@@ -95,13 +96,29 @@ noinfoProducts.sort(function(a,b){
 								var medInfo = "<div class='medInfo' style='background: none;'>";
 								var nplId = product.id;
 
-								var fassImage = "<div data-picture data-alt='FASS.se' class='fassImage'>";
-								fassImage += "<div data-src='/img/fasslogo.png'></div>";
-								fassImage += "<div data-src='/img/fasslogo_x2.png' data-media='(min-device-pixel-ratio: 2.0)'></div>";
-								fassImage += "<img src='/img/fasslogo.png' />";
-								fassImage += "</div>";
+								if (!product.provider || product.provider === "fass") {
+									var fassImage = "<div data-picture data-alt='FASS.se' class='fassImage'>";
+									fassImage += "<div data-src='/img/fasslogo.png'></div>";
+									fassImage += "<div data-src='/img/fasslogo_x2.png' data-media='(min-device-pixel-ratio: 2.0)'></div>";
+									fassImage += "<img src='/img/fasslogo.png' />";
+									fassImage += "</div>";
 
-								medInfo += "<div class='pull-right' style='width: 120px;'><a href='http://www.fass.se/LIF/product?4&userType=0&nplId=" + nplId + "' target='_blank'>" + fassImage + "</a></div>";
+									medInfo += "<div class='pull-right' style='width: 120px;'><a href='http://www.fass.se/LIF/product?4&userType=0&nplId=" + nplId + "' target='_blank'>" + fassImage + "</a></div>";
+								} else {
+									var providerImage = "<div data-picture data-alt=\"" + product.provider + "\" class=\"providerImage\">";
+									providerImage += "<div data-src=\"/img/" + product.provider.toLowerCase() + ".png\"></div>";
+									providerImage += "<div data-src=\"/img/" + product.provider.toLowerCase() + "_x2.png\" data-media=\"(min-device-pixel-ratio: 2.0)\"></div>";
+									providerImage += "<img src=\"/img/" + product.provider.toLowerCase() + ".png\" />";
+									providerImage += "</div>";
+
+									var providerLink = product.providerLink;
+				
+									if (providerLink !== undefined) {
+										providerLink = providerLink.replace("{NPLID}", nplId);
+										medInfo += "<div class='pull-right' style='width: 120px;'><a href='" + providerLink + "' target='_blank'>" + providerImage + "</a></div>";
+									}
+				
+								}
 
 								medInfo += "<h2>" + product.name + "</h2>";
 
@@ -127,7 +144,9 @@ noinfoProducts.sort(function(a,b){
 									medInfo += "<div class='alert alert-error'><h4>Tillhandahålls ej</h4></div>";
 								}
 
-								medInfo += "<h4>" + product.mechanism + "</h4>";
+								if (product.mechanism) {
+									medInfo += "<h4>" + product.mechanism + "</h4>";
+								}
 
 								//medInfo += "<div style='clear: right;'><a data-productName='" + product.name + "' class='btn pull-right inlineBoxSearch'>Sök bland informationsrutor...</a></div>";
 
@@ -178,7 +197,9 @@ noinfoProducts.sort(function(a,b){
 									medInfo += "<div style='margin-bottom: 10px;'>" + narcImage + "<div style='margin-left: 30px;'>" + narcotic + "</div></div>";
 								}
 
-								medInfo += "<div><strong>Aktiv substans:</strong> " + product.substance + "</div>";
+								if (product.substance) {
+									medInfo += "<div><strong>Aktiv substans:</strong> " + product.substance + "</div>";
+								}
 
 								medInfo += "<div><strong>ATC-kod:</strong> " + product.atcCode + "</div>";
 
@@ -297,6 +318,10 @@ noinfoProducts.sort(function(a,b){
 									medInfo += "<div><strong>Försäkring:</strong> " + lff + "</div>";
 								}
 
+								if (product.license !== undefined) {
+									medInfo += "<div><strong>Licens:</strong> " + product.license + "</div>";
+								}
+
 								medInfo += "</div>";
 							
 								var medHeadLines = "<div id='medHeadLines'>";
@@ -323,7 +348,7 @@ noinfoProducts.sort(function(a,b){
 								%>
 						</div>
 						<% if (medList.length > 1) { %>
-						<div class="span3">
+						<div class="span3 others">
 							<h4>Liknande preparat inom:</h4><h5><%=categoryTitle%></h5>
 							<ul style="list-style-type: none; margin-left: 0; font-size: 14px; font-family: Helvetica, Arial, sans;">
 								<% for (var i=0; i < products.length; i++) {
