@@ -207,11 +207,11 @@ var lb = null;
 				
 				if ($(this).prop("checked")) {
 					updatedElements.addClass("active");
-					$.cookie("visualizeUpdatedText", "true", { expires: 365, path: '/' });
+					$.cookie("visualizeUpdatedText", "true");
 				} else {
 					updatedElements.removeClass("active");
 					$(this).removeAttr("checked");
-					$.cookie("visualizeUpdatedText", "false", { expires: 365, path: '/' });
+					$.cookie("visualizeUpdatedText", "false");
 				}
 
 				//Reset all clickovers, except settings
@@ -2763,8 +2763,7 @@ var lb = null;
 			if (product.overTheCounter === "AD") {
 				medInfo.append($("<div><strong>Försäljning:</strong> Läkemedlet kan utöver på apotek även köpas i dagligvaruhandeln.</div>"));
 			}
-	
-	
+
 			//LFF
 			var lff = null;
 
@@ -2795,6 +2794,11 @@ var lb = null;
 			if (lff !== null) {
 				medInfo.append($("<div><strong>Försäkring:</strong> " + lff + "</div>"));
 			}
+
+			if (product.license !== null) {
+				medInfo.append($("<div><strong>Licens:</strong> " + product.license + "</div>"));
+			}
+
 
 			body.append(medInfo);
 
