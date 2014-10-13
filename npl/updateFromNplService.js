@@ -186,6 +186,8 @@ function updateFromAPL(callback) {
 			
 		}
 		
+		//foundAPLProducts = [{id: "20030804001211"}];
+		
 		console.log("Found " + counter + " products from APL");
 		
 		var spcCounter = 0;
@@ -260,6 +262,15 @@ function updateAPLProduct(stub, callback) {
 			body = body.replace(/paragraph/g, "p");
 			body = body.replace(/<emphasis>/g, "<em>");
 			body = body.replace(/<\/emphasis>/g, "</em>");
+			body = body.replace(/<item>/g, "<li>");
+			body = body.replace(/<\/item>/g, "</li>");
+			body = body.replace(/<unorderedlist>/g, "<ul>");
+			body = body.replace(/<\/unorderedlist>/g, "</ul>");
+			body = body.replace(/<orderedlist>/g, "<ol>");
+			body = body.replace(/<\/orderedlist>/g, "</ol>");
+			body = body.replace(/<underline>/g, "<u>");
+			body = body.replace(/<\/underline>/g, "</u>");
+			body = body.replace(/<table>/g, "<table class=\"table table-bordered\">");
 			body = body.replace(/<spc>/g, "<body>");
 			body = body.replace(/<\/spc>/g, "</body>");
 			body = body.replace(/<dateContent>/g, "");
@@ -271,7 +282,13 @@ function updateAPLProduct(stub, callback) {
 			
 			var name = $("name").first().html();
 			var composition = $("composition-text").first().html();
-			composition += $("excipients-reference").first().html();
+			var excipientsReference = $("excipients-reference").first().html();
+			
+			if (excipientsReference === null) {
+				excipientsReference = "";
+			}
+			
+			composition += excipientsReference;
 			var pharmaceuticalForm = $("pharmaceutical-form").first().html();
 			var indication = $("indication").first().html();
 			var dosage = $("dosage").first().html();
@@ -349,6 +366,8 @@ function updateAPLProduct(stub, callback) {
 
 				productStub.sections = sections;
 				productStub.provider = "APL";
+				productStub.license = "Rikslicens";
+				
 				var firstChar = "";
 				if (productStub.name !== undefined && productStub.name.length > 0) {
 					firstChar = productStub.name.substr(0,1).toUpperCase();
