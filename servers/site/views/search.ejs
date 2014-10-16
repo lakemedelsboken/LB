@@ -23,6 +23,17 @@
 		<noscript>
 			<link rel="stylesheet" type="text/css" href="/css/<%=version%>/noscript.min.css" media="print">
 		</noscript>
+
+		<%
+		if (terms && terms !== "") {
+		%>
+			<script>
+			window.location = "/?search=<%=terms%>&iso=true";
+			</script>
+		<%
+		}
+		%>
+		
 	</head>
 
 	<body>
