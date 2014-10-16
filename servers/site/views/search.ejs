@@ -88,11 +88,11 @@
 								<ul style="list-style-type: none; margin-left: 25px; font-family: 'Avenir Next', 'Helvetica Neue Ultra Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;">
 								<%
 								
-								if (results.contentsearch.length === 0) {
+								if (results && results.contentsearch && results.contentsearch.length === 0) {
 									%>
 									<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon-info-sign"></i></span>Din sökning gav inga resultat</li>
 									<%
-								} else {
+								} else if (results && results.contentsearch && results && results.contentsearch.length > 0) {
 									for	(var i = 0; i < results.contentsearch.length; i++) {
 										var item = results.contentsearch[i];
 										var titlePath = item.titlePath_HL;
@@ -117,11 +117,11 @@
 								<%
 								
 								
-								if (results.medicinesearch.length === 0) {
+								if (results && results.medicinesearch && results.medicinesearch.length === 0) {
 									%>
 									<li><span style="display: inline-block; margin-left: -25px; width: 25px; text-align: center;"><i class="icon-info-sign"></i></span>Din sökning gav inga resultat</li>
 									<%
-								} else {
+								} else if (results && results.medicinesearch && results && results.medicinesearch.length > 0) {
 									for	(var i = 0; i < results.medicinesearch.length; i++) {
 										var item = results.medicinesearch[i];
 										if (item.type === "atc") {
