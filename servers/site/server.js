@@ -135,6 +135,7 @@ app.get('/search', function(req,res){
 	}
 
 	locals.terms = terms;
+	locals.results = undefined;
 	
 	if (terms === "") {
 		locals.err = false;
