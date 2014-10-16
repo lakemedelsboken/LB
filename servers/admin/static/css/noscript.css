@@ -26,6 +26,11 @@ fieldset.pageFootnote {
 sup.hiddenNoteNumber {
 	display: block;
 }
+
+#settings {
+	display: none;
+}
+
 @media (max-width: 767px) {
 	a#toggleNavigation.visible-phone {
 		display: none !important;
@@ -36,5 +41,8 @@ sup.hiddenNoteNumber {
 	}
 	#sideBar {
 		display: block;
+	}
+	#settings {
+		display: none;
 	}
 }
