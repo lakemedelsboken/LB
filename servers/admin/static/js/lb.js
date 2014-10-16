@@ -2796,7 +2796,14 @@ var lb = null;
 			}
 
 			if (product.license !== null) {
-				medInfo.append($("<div><strong>Licens:</strong> " + product.license + "</div>"));
+				
+				var license = product.license;
+				
+				if (product.licenseLink && product.licenseLink !== "") {
+					license = "<a href=\"" + product.licenseLink + "\" target=\"_blank\">" + license + "</a>";
+				}
+
+				medInfo.append($("<div><strong>" + license + "</strong></div>"));
 			}
 
 
