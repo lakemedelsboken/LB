@@ -319,7 +319,14 @@ noinfoProducts.sort(function(a,b){
 								}
 
 								if (product.license !== undefined) {
-									medInfo += "<div><strong>Licens:</strong> " + product.license + "</div>";
+
+									var license = product.license;
+				
+									if (product.licenseLink && product.licenseLink !== "") {
+										license = "<a href=\"" + product.licenseLink + "\" target=\"_blank\">" + license + "</a>";
+									}
+
+									medInfo += "<div><strong>" + license + "</strong></div>";
 								}
 
 								medInfo += "</div>";
