@@ -1,13 +1,14 @@
 {
-	"version": "v0.1.32",
+	"version": "v0.1.33",
 	"externalServerPorts": {
 		"main": 80
 	},
 	"internalServerPorts": {
 		"blog": 8080,
 		"site": 8090,
-		"admin": 8002,
 		"search": 8001,
-		"api": 8003
+		"admin": 8002,
+		"api": 8003,
+		"cms": 8004
 	}
 }
