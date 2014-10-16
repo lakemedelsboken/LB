@@ -195,7 +195,7 @@ function updateFromAPL(callback) {
 		var q = async.queue(updateAPLProduct, 1);
 		
 		q.drain = function() {
-		    console.log("All items have been processed, found " + spcCounter + " SPC:s from " + foundAPLProducts.length + " possbible products.");
+		    console.log("All items have been processed, found " + spcCounter + " SPC:s from " + foundAPLProducts.length + " possible products.");
 			
 			//Write new atcTree.json
 			fs.writeFileSync(__dirname + "/atcTree.json", JSON.stringify(atcTree, null, "\t"), "utf8");
@@ -367,6 +367,7 @@ function updateAPLProduct(stub, callback) {
 				productStub.sections = sections;
 				productStub.provider = "APL";
 				productStub.license = "Rikslicens";
+				productStub.licenseLink = "http://www.lakemedelsverket.se/malgrupp/Halso---sjukvard/Forskrivning/Ex-temporeRikslicens/";
 				
 				var firstChar = "";
 				if (productStub.name !== undefined && productStub.name.length > 0) {
