@@ -2795,7 +2795,7 @@ var lb = null;
 				medInfo.append($("<div><strong>Försäkring:</strong> " + lff + "</div>"));
 			}
 
-			if (product.license !== null) {
+			if (product.license !== undefined) {
 				
 				var license = product.license;
 				
