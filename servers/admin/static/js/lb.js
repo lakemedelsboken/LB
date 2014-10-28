@@ -341,6 +341,7 @@ var lb = null;
 					}
 				}
 				
+				addAnchors();
 				//Ready for scrollspy
 				//self.initScrollSpy();
 			});
@@ -1437,6 +1438,8 @@ var lb = null;
 					catch ( Exception ) { }
 					
 					var relativeUrl = chapter;
+					
+					addAnchors();
 					
 					//Track page request
 					ga('send', 'pageview', {'page': chapter, 'title': document.title});
