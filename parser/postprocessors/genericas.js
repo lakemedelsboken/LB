@@ -1,5 +1,7 @@
 var cheerio = require("cheerio");
 var fs = require("fs");
+var crypto = require("crypto");
+var path = require("path");
 
 var injector;
 
@@ -14,17 +16,57 @@ module.exports = injector = {
 	process: function(text) {
 		var self = this;
 
-		if (text.indexOf("<body>") === -1) {
-			text = "<body>" + text + "</body>";
+		var textHash = self.createCheckSum(text);
+		
+		var result = self.getPreparsedText(textHash);
+		
+		if (result === undefined) {
+
+			if (text.indexOf("<body>") === -1) {
+				text = "<body>" + text + "</body>";
+			}
+
+			$ = cheerio.load(text);
+		
+			var body = $("body").first();
+
+			self.iterate(body);
+
+			result = body.html();
+			
+			//Save the preparsed text
+			self.savePreparsedText(textHash, result);
 		}
 
-		$ = cheerio.load(text);
-		
-		var body = $("body").first();
-
-		self.iterate(body);
-		
-		return body.html();
+		return result;
+	},
+	getPreparsedText: function(hash) {
+		var possibleFilePath = path.join(__dirname, "preparsed_genericas", hash + ".txt");
+		if (fs.existsSync(possibleFilePath)) {
+			//File is allowed to be 1 day old
+			var mtime = fs.statSync(possibleFilePath).mtime.getTime();
+			var now = new Date().getTime();
+			
+			var elapsed = now - mtime;
+			var allowed = 1000 * 60 * 60 * 24;
+			
+			if (elapsed <= allowed) {
+				return fs.readFileSync(possibleFilePath, "utf8");
+			} else {
+				return undefined;
+			}
+			
+		} else {
+			return undefined;
+		}
+	},
+	savePreparsedText: function(hash, parsedText) {
+		fs.writeFileSync(path.join(__dirname, "preparsed_genericas", hash + ".txt"), parsedText, "utf8");
+	},
+	createCheckSum: function(data) {
+		var checksum = crypto.createHash("sha1");
+		checksum.update(data);
+		return checksum.digest("hex");
 	},
 	htmlEscape: function(text) {
 
