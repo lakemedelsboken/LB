@@ -1,6 +1,6 @@
 #/bin/bash
 #../servers/admin/static/css/jquery.treeview.css
-cat ../servers/admin/static/css/bootstrap.css ../servers/admin/static/css/bootstrap-responsive.css ../servers/admin/static/css/jquery-ui-1.10.0.custom.css ../servers/admin/static/css/font-awesome.css > styles.css
+cat ../servers/admin/static/css/bootstrap.css ../servers/admin/static/css/bootstrap-responsive.css ../servers/admin/static/css/jquery-ui-1.10.0.custom.css ../servers/admin/static/css/font-awesome.css ../servers/admin/static/css/anchor.css > styles.css
 
 cleancss -o ../servers/admin/static/css/styles.min.css styles.css
 cleancss -o ../servers/site/static/css/styles.min.css styles.css
