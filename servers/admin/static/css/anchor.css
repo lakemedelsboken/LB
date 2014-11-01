@@ -8,6 +8,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 .icon-link {
   font-family: 'anchorjs-link';
   speak: none;
@@ -20,6 +21,8 @@
   /* Better Icon Rendering */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  border: none;
+  display: none\9;
 }
 
 /**
@@ -39,6 +42,7 @@ a.anchor-link {
 }
 .icon-link:before {
   content: "\e600";
+  display: none\9;
 }
 
 /**
@@ -57,6 +61,6 @@ a.anchor-link:hover { color: #041e42; }
 a.anchor-link:active { color: #041e42; }
 
 .icon-link {
-  font-size: 90%;
+  font-size: 70%;
   padding-left: 6px;
 }
