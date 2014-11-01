@@ -21,7 +21,7 @@ function addAnchors(selector) {
 		}
 		
 		if (elementID !== undefined) {
-			var anchor = '<a class="anchor-link" href="?id=' + elementID + '" title="Direktlänk till rubrik"><span class="icon-link"></span></a>';
+			var anchor = '<a class="anchor-link" href="?id=' + elementID + '#' + elementID + '" title="Direktlänk till rubrik"><span class="icon-link"></span></a>';
 			element.html(element.html() + anchor);
 		}
 	});
