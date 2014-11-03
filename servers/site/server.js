@@ -616,9 +616,23 @@ function getATCTreeChildren(parentId, showATCCodes) {
 		}
 	}
 
+	//Sort ATC-codes by name
+	childATCCodes.sort(function(a, b){
+	    if(a.title < b.title) return -1;
+	    if(a.title > b.title) return 1;
+	    return 0;
+	});
+	
 	for (var i = 0; i < childATCCodes.length; i++) {
 		result.push({text: ((showATCCodes) ? childATCCodes[i].id + " " : "") + childATCCodes[i].title, id: childATCCodes[i].id, hasChildren: true});
 	}
+
+	//Sort products by name
+	childProducts.sort(function(a, b){
+	    if(a.title < b.title) return -1;
+	    if(a.title > b.title) return 1;
+	    return 0;
+	});
 
 	for (var i = 0; i < childProducts.length; i++) {
 		var product = getProduct(childProducts[i].title);
@@ -647,14 +661,14 @@ function getATCTreeChildren(parentId, showATCCodes) {
 		var product = null;
 		//Find if the product already exists
 		for (var i=0; i < result.length; i++) {
-			if (result[i].text === productTitle) {
+			if (result[i].text === productTitle && result[i].type === "product") {
 				product = result[i];
 				break;
 			}
 		}
 	
 		if (product === null) {
-			product = {text: productTitle, id: productTitle, children: []};
+			product = {text: productTitle, id: productTitle, children: [], type: "product"};
 			result.push(product)
 		}
 	
