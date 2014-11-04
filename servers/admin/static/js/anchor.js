@@ -5,6 +5,12 @@
 */
 function addAnchors(selector) {
 
+	var ltIE9 = true;
+	
+	if (document.addEventListener){
+		ltIE9 = false;
+	}
+
 	if (!ltIE9) {
 		// Sensible default selector, if none is provided.
 		selector = selector || '.chapterContent h1, .chapterContent h2, .chapterContent h3, .chapterContent h4, .chapterContent h5, .chapterContent h6';
