@@ -1,6 +1,7 @@
 var lb = null;
 
-//var console = {log: function() {}};
+if (!window.console) window.console = {};
+if (!window.console.log) window.console.log = function () { };
 
 (function(window, undefined){
 
@@ -1309,6 +1310,8 @@ var lb = null;
 				} else {
 					$("body").animate({ scrollTop: 0 }, "fast");
 				}
+			} else {
+				otherChapter = null;
 			}
 		
 			//Was another chapter opened in html4 browser? 
@@ -1446,8 +1449,8 @@ var lb = null;
 
 				},
 				error: function(jqXHR, textStatus, errorThrown){
-						document.location.href = chapter + "#" + id;
-						return false;
+					document.location.href = chapter + "#" + id;
+					return false;
 				}
 			});
 		},
