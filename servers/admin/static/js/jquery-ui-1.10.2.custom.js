@@ -1691,10 +1691,14 @@ $.widget( "ui.menu", {
 
 	_scrollIntoView: function( item ) {
 		var borderTop, paddingTop, offset, scroll, elementHeight, itemHeight;
-		if ( this._hasScroll() ) {
+		if ( this._hasScroll()) {
 			borderTop = parseFloat( $.css( this.activeMenu[0], "borderTopWidth" ) ) || 0;
 			paddingTop = parseFloat( $.css( this.activeMenu[0], "paddingTop" ) ) || 0;
-			offset = item.offset().top - this.activeMenu.offset().top - borderTop - paddingTop;
+			if (item.offset()) {
+				offset = item.offset().top - this.activeMenu.offset().top - borderTop - paddingTop;
+			} else {
+				offset = 0;
+			}
 			scroll = this.activeMenu.scrollTop();
 			elementHeight = this.activeMenu.height();
 			itemHeight = item.height();
