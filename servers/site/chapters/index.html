@@ -500,27 +500,25 @@
 
 		};
 
-		if (!ltIE9) {
-			var raf = undefined;
+		var raf = undefined;
 
-			function isIE() {
-			  var myNav = navigator.userAgent.toLowerCase();
-			  return (myNav.indexOf('msie') !== -1) ? parseInt(myNav.split('msie')[1]) : false;
-			}
+		function isIE() {
+		  var myNav = navigator.userAgent.toLowerCase();
+		  return (myNav.indexOf('msie') !== -1) ? parseInt(myNav.split('msie')[1]) : false;
+		}
 
-			if (!ltIE9) {
-				if (!(isIE() === 9)) {
-					raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
-				}
-			}
+		var ie = isIE();
 
-			if (raf) {
-				raf(cb);
-			} else {
-				var addEvent =  window.attachEvent || window.addEventListener;
-				var eventName = window.attachEvent ? 'onload' : 'load';
-				addEvent(eventName, cb);
-			}
+		if (ie > 9 || !ie) {
+			raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+		}
+
+		if (raf) {
+			raf(cb);
+		} else {
+			var addEvent =  window.attachEvent || window.addEventListener;
+			var eventName = window.attachEvent ? 'onload' : 'load';
+			addEvent(eventName, cb);
 		}
 		</script>
 	</body>
