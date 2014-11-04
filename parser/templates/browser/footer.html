@@ -20,15 +20,77 @@
 		<div id="mask"></div>
 		<div id="searchMask"></div>
 		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', 'UA-46072475-1', 'lakemedelsboken.se');
-		  ga('send', 'pageview');
 
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-46072475-1', 'lakemedelsboken.se');
+		ga('send', 'pageview');
+		
+		var ltIE9 = true;
+		
+		if (document.addEventListener){
+			ltIE9 = false;
+		}
+
+		var cb = function() {
+			var h = document.getElementsByTagName('head')[0]; 
+
+			function addToHeader(href, media) {
+				if (href.indexOf(".css") > -1) {
+					var l = document.createElement('link'); 
+					l.rel = 'stylesheet';
+					if (media) {
+						l.media = media;
+					}
+					l.href = href;
+					h.appendChild(l);
+				} else if (href.indexOf(".js") > -1) {
+					var script = document.createElement('script');
+					script.type = 'text/javascript';
+					script.src = href;
+					h.appendChild(script);
+				}
+				
+			}
+
+			var headerInjections = [];
+
+			headerInjections.push({link: "/css/{VERSION}/styles.min.css"});
+			headerInjections.push({link: "/css/{VERSION}/lb.min.css"});
+			headerInjections.push({link: "/js/{VERSION}/scripts.min.js"});
+			
+			for (var i = 0; i < headerInjections.length; i++) {
+				addToHeader(headerInjections[i].link, headerInjections[i].media);
+			}
+
+		};
+
+		if (!ltIE9) {
+			var raf = undefined;
+
+			function isIE() {
+			  var myNav = navigator.userAgent.toLowerCase();
+			  return (myNav.indexOf('msie') !== -1) ? parseInt(myNav.split('msie')[1]) : false;
+			}
+
+			if (!ltIE9) {
+				if (!(isIE() === 9)) {
+					raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+				}
+			}
+
+			if (raf) {
+				raf(cb);
+			} else {
+				var addEvent =  window.attachEvent || window.addEventListener;
+				var eventName = window.attachEvent ? 'onload' : 'load';
+				addEvent(eventName, cb);
+			}
+		}
 		</script>
-		<script src="/js/{VERSION}/scripts.min.js"></script>
 	</body>
 </html>
