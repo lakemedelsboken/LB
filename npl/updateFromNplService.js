@@ -389,7 +389,9 @@ function updateAPLProduct(stub, callback) {
 				var productStub = JSON.parse(fs.readFileSync(productPath, "utf8"));
 
 				//Third time with error, remove from listings
-				if (productStub.errors !== undefined && productStub.errors >= 2) {
+				if (productStub.errors !== undefined && productStub.errors >= 2 && productStub.noinfo !== true) {
+					
+					console.log(productStub.id + " has failed to update, marking as not available.");
 					
 					//Set noinfo to true in atcTree
 					stub.noinfo = true;
@@ -407,7 +409,7 @@ function updateAPLProduct(stub, callback) {
 						delete productStub.errors;
 					}
 					
-				} else {
+				} else if (productStub.noinfo !== true) {
 					if (productStub.errors !== undefined) {
 						//Add an error marker
 						productStub.errors++;
@@ -415,6 +417,9 @@ function updateAPLProduct(stub, callback) {
 						//Add the first error marker
 						productStub.errors = 1;
 					}
+					
+					console.log(productStub.id + " has failed to update " + productStub.errors + " times.");
+					
 				}
 			
 				fs.writeFileSync(productPath, JSON.stringify(productStub, null, "\t"), "utf8");
