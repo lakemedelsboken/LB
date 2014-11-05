@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7 ]><html class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html class="ie8"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class=""><!--<![endif]-->
 	<head>
 		<title>Kortikosteroider och hypofyshormoner | Läkemedelsboken</title>
 		<meta charset="utf-8">
@@ -7,20 +11,13 @@
 		<meta name="description" content="L&#228;kemedelsbokens webbversion">
 		<meta name="author" content="L&#228;kemedelsverket">
 		<link rel="alternate" type="application/atom+xml" title="L&#228;kemedelsboken" href="/blog/index.xml">
-		<style type="text/css">body{margin-top:7px;padding-bottom:10px;background-color:#fdfdfd;font-family:Palatino,'Times New Roman','Book Antiqua',serif;text-rendering:optimizelegibility;font-size:17.5px;line-height:27px;color:#000}h1{text-align:center;font-variant:small-caps}h1,h2,h3,h4,h5,h6{font-family:'Avenir Next','Helvetica Neue Ultra Light','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:400;letter-spacing:1px;margin-top:5px;margin-bottom:5px}footer{font-family:'Helvetica Neue Ultra Light','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;line-height:21px;text-align:center}#loading,#modalMed,#searchResults,#searchResultsNavigation,#toggleNavigation{display:none}.navbar .brand{font-family:'Avenir Next','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:400;text-transform:uppercase;display:block;float:none;text-align:center;white-space:nowrap;font-size:16px;letter-spacing:1px;margin-left:0;padding-left:0;padding-right:0;color:#000}a{text-decoration:none}.pull-right{float:right}.span4{width:370px;margin-left:30px}.offset4{margin-left:400px}.affix{position:fixed}#sideContainer{height:100%;z-index:10;overflow-y:auto}@media (max-width:767px){body{padding-right:20px;padding-left:20px}.navbar-fixed-bottom,.navbar-fixed-top,.navbar-static-top{margin-right:-20px;margin-left:-20px}.container-fluid{padding:0}.dl-horizontal dt{float:none;width:auto;clear:none;text-align:left}.dl-horizontal dd{margin-left:0}.container{width:auto}.row-fluid{width:100%}.row,.thumbnails{margin-left:0}.thumbnails>li{float:none;margin-left:0}.row-fluid [class*=span],[class*=span]{display:block;float:none;width:100%;margin-left:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.row-fluid .span12,.span12{width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.input-large,.input-xlarge,.input-xxlarge,.uneditable-input,input[class*=span],select[class*=span],textarea[class*=span]{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.input-append input,.input-append input[class*=span],.input-prepend input,.input-prepend input[class*=span]{display:inline-block;width:auto}.controls-row [class*=span]+[class*=span]{margin-left:0}.modal{position:fixed;top:20px;right:20px;left:20px;width:auto;margin:0}.modal.fade.in{top:auto}.affix{position:static}}</style>
-		<!--[if lt IE 9]>
-			<link rel="stylesheet" type="text/css" href="/css/v0.1.36/styles.min.css">
-			<link rel="stylesheet" type="text/css" href="/css/v0.1.36/jquery.ui.ie.min.css"/>
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-			<link rel="stylesheet" type="text/css" href="/css/v0.1.36/lb.min.css">
-		<![endif]-->
+		<link rel="stylesheet" href="/css/v0.1.37/styles.min.css">
+		<!--[if lt IE 9]><script src="/js/v0.1.37/html5shiv.min.js"></script><![endif]-->
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 		<noscript>
-			<link rel="stylesheet" type="text/css" href="/css/v0.1.36/styles.min.css">
-			<link rel="stylesheet" type="text/css" href="/css/v0.1.36/lb.min.css">
-			<link rel="stylesheet" type="text/css" href="/css/v0.1.36/noscript.min.css">
+			<link rel="stylesheet" type="text/css" href="/css/v0.1.37/noscript.min.css">
 		</noscript>
 	</head>
 
@@ -107,8 +104,6 @@
 		<div id="mask"></div>
 		<div id="searchMask"></div>
 		<script>
-
-
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -116,67 +111,8 @@
 
 		ga('create', 'UA-46072475-1', 'lakemedelsboken.se');
 		ga('send', 'pageview');
-		
-		var ltIE9 = true;
-		
-		if (document.addEventListener){
-			ltIE9 = false;
-		}
-
-		var cb = function() {
-			var h = document.getElementsByTagName('head')[0]; 
-
-			function addToHeader(href, media) {
-				if (href.indexOf(".css") > -1) {
-					var l = document.createElement('link'); 
-					l.rel = 'stylesheet';
-					if (media) {
-						l.media = media;
-					}
-					l.href = href;
-					h.appendChild(l);
-				} else if (href.indexOf(".js") > -1) {
-					var script = document.createElement('script');
-					script.type = 'text/javascript';
-					script.src = href;
-					h.appendChild(script);
-				}
-				
-			}
-
-			var headerInjections = [];
-
-			headerInjections.push({link: "/css/v0.1.36/styles.min.css"});
-			headerInjections.push({link: "/css/v0.1.36/lb.min.css"});
-			headerInjections.push({link: "/js/v0.1.36/scripts.min.js"});
-			
-			for (var i = 0; i < headerInjections.length; i++) {
-				addToHeader(headerInjections[i].link, headerInjections[i].media);
-			}
-
-		};
-
-		var raf = undefined;
-
-		function isIE() {
-		  var myNav = navigator.userAgent.toLowerCase();
-		  return (myNav.indexOf('msie') !== -1) ? parseInt(myNav.split('msie')[1]) : false;
-		}
-
-		var ie = isIE();
-
-		if (ie > 9 || !ie) {
-			raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
-		}
-
-		if (raf) {
-			raf(cb);
-		} else {
-			var addEvent =  window.attachEvent || window.addEventListener;
-			var eventName = window.attachEvent ? 'onload' : 'load';
-			addEvent(eventName, cb);
-		}
 		</script>
+		<script src="/js/v0.1.37/scripts.min.js" defer></script>
 	</body>
 </html>
 
