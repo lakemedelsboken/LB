@@ -40,7 +40,11 @@ noinfoProducts.sort(function(a,b){
 %>
 
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7 ]><html class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html class="ie8"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class=""><!--<![endif]-->
 	<head>
 		<title><%=pageTitle%></title>
 		<meta charset="utf-8">
@@ -48,20 +52,13 @@ noinfoProducts.sort(function(a,b){
 		<meta name="description" content="Preparatinformation - <%=pageTitle%>">
 		<meta name="author" content="Läkemedelsverket">
 		
-		<link href="/css/styles.min.css" rel="stylesheet">
-
-		<!--[if lt IE 9]>
-			<link rel="stylesheet" type="text/css" href="/css/jquery.ui.ie.min.css"/>
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-			
-		<link rel="stylesheet" type="text/css" href="/css/<%=version%>/lb.min.css">
-
+		<link rel="stylesheet" href="/css/<%=version%>/styles.min.css">
+		<!--[if lt IE 9]><script src="/js/<%=version%>/html5shiv.min.js"></script><![endif]-->
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 		<noscript>
-			<link rel="stylesheet" type="text/css" href="/css/<%=version%>/noscript.min.css" media="print">
+			<link rel="stylesheet" type="text/css" href="/css/<%=version%>/noscript.min.css">
 		</noscript>
 		<script>
 		window.location = "/?imo=true&nplId=<%=product.id%>";
