@@ -19,5 +19,7 @@ rm -f styles.css
 
 cleancss --s0 -o ../servers/site/static/css/noscript.min.css ../servers/admin/static/css/noscript.css
 
+cleancss --s0 -o ../servers/api/css/lb.injectgenericas.min.css ../servers/api/css/lb.injectgenericas.css
+
 #cleancss --s0 -o ../servers/site/static/css/jquery.ui.ie.min.css ../servers/admin/static/css/jquery.ui.1.10.0.ie.css
 

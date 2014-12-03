@@ -2,6 +2,8 @@ var fs = require("fs");
 var request = require("request");
 var genericasInjector = require("../../parser/postprocessors/genericas.js")
 var crypto = require("crypto");
+var cheerio = require("cheerio");
+var path = require("path");
 
 var LRU = require("lru-cache")
   , options = {max: 2000}
@@ -219,33 +221,155 @@ app.get('/api/v1/atctree', function(req,res){
 
 });
 
-//Tag generica names in a text
-app.get('/api/v1/injectgenericas', function(req,res){
-
-	var content = req.query["content"];
+//Get css for injected generica names
+app.get('/api/v1/injectgenericas/lb.injectgenericas.css', function(req,res) {
 
 	var apiKey = req.query["apikey"];
 	var isAllowed = checkIfApiKeyIsLegit(apiKey, req);
 
 	if (isAllowed) {
 
-		var result = {content: content};
+		var cssPath = path.join(__dirname, "css", "lb.injectgenericas.min.css");
+		
+		res.sendfile(cssPath);
 
-		var contentHash = createHash(content);
-		if (cache.has(contentHash)) {
-			content = cache.get(contentHash);
-		} else {
-			content = genericasInjector.process(content);
-			cache.set(contentHash, content);
-		}
+	} else {
+		res.status(403);
+		res.end("403 Forbidden, too many requests from the same ip-address without an api key");
+	}
 	
-		result.content = content;
+});
 
-		if (req.query["callback"] !== undefined && req.query["callback"] !== "") {
-			res.jsonp(result);
-		} else {
-			res.json(result);
+//Get javascript for injecting generica names
+app.get('/api/v1/injectgenericas/lb.injectgenericas.js/:selector?', function(req,res) {
+
+	var apiKey = req.query["apikey"];
+	var isAllowed = checkIfApiKeyIsLegit(apiKey, req);
+
+	if (isAllowed) {
+		res.set({
+			'Content-Type': 'application/javascript',
+			'Vary': 'Accept-Encoding',
+			'Last-Modified': '0'
+		});
+		
+		var selector = req.params.selector;
+		
+		if (!selector) {
+			selector = "body";
 		}
+
+		var cacheKey = createHash(apiKey + "_" + selector);
+		
+		var script = "";
+		
+		if (cache.has(cacheKey)) {
+			script = cache.get(cacheKey);
+		} else {
+			script = fs.readFileSync(path.join(__dirname, "scripts", "lb.injectgenericas.min.js"), "utf8");
+		
+			script = script.replace(/{SELECTOR}/g, selector);
+			script = script.replace(/{URL_SELECTOR}/g, encodeURIComponent(selector));
+			script = script.replace(/{APIKEY}/g, apiKey);
+
+			cache.set(cacheKey, script);
+		}
+		
+		res.send(script);
+		
+	} else {
+		res.status(403);
+		res.end("403 Forbidden, too many requests from the same ip-address without an api key");
+	}
+	
+});
+
+//Tag generica names in a text
+app.get('/api/v1/injectgenericas/:selector?', function(req,res){
+
+//	res.header("Access-Control-Allow-Origin", "*");
+//	res.header("Access-Control-Allow-Headers", "X-Requested-With");
+
+	var content = req.query["content"];
+	var url = req.query["url"];
+	
+	var apiKey = req.query["apikey"];
+	var isAllowed = checkIfApiKeyIsLegit(apiKey, req);
+
+	if (isAllowed) {
+
+		//Fetch content if only url is provided
+		if (content === undefined && url !== undefined) {
+			getContentFromUrl(url, function(err, data) {
+				var result = {content: ""};
+				if (err) {
+					if (req.query["callback"] !== undefined && req.query["callback"] !== "") {
+						res.jsonp(result);
+					} else {
+						res.json(result);
+					}
+				} else {
+					//Load in cheerio
+					var $ = cheerio.load(data);
+					
+					var selector = req.params.selector;
+					if (!selector) {
+						selector = "body";
+					}
+					
+					var selectedElement = $(selector);
+					
+					if (selectedElement.length > 0) {
+						selectedElement = selectedElement.first();
+						
+						selectedElement.find("script").remove();
+
+						data = selectedElement.html();
+						data = data.replace(/\r\n/g, "\n"); //.replace(/\n/g, "").replace(/\t/g, "");
+					
+						if (data.length > 0) {
+							data = genericasInjector.process(data);
+							result.content = data;
+						} else {
+							console.log("No data");
+						}
+
+					}
+					
+					if (req.query["callback"] !== undefined && req.query["callback"] !== "") {
+						res.jsonp(result);
+					} else {
+						res.json(result);
+					}
+				}
+			});
+		} else if (content) {
+			var result = {content: content};
+
+			var contentHash = createHash(content);
+			if (cache.has(contentHash)) {
+				content = cache.get(contentHash);
+			} else {
+				content = genericasInjector.process(content);
+				cache.set(contentHash, content);
+			}
+	
+			result.content = content;
+
+			if (req.query["callback"] !== undefined && req.query["callback"] !== "") {
+				res.jsonp(result);
+			} else {
+				res.json(result);
+			}
+		} else {
+			var result = {content: ""};
+			if (req.query["callback"] !== undefined && req.query["callback"] !== "") {
+				res.jsonp(result);
+			} else {
+				res.json(result);
+			}
+		}
+
 
 	} else {
 		res.status(403);
@@ -253,6 +377,8 @@ app.get('/api/v1/injectgenericas', function(req,res){
 	}
 
 });
+
+
 
 //END API VERSION 1
 
@@ -313,6 +439,20 @@ function createHash(data) {
 	return checksum.digest("hex");
 }
 
+function getContentFromUrl(url, callback) {
+	
+	request(url, function(error, response, body) {
+		if (!error && response.statusCode == 200) {
+			return callback(null, body);
+		} else if (error) {
+			return callback(error);
+		} else {
+			return callback(new Error(response.statusCode));
+		}
+	});
+	
+};
+
 app.get("/api/", function(req, res) {
 	res.render("index.ejs", locals);
 });
@@ -325,3 +465,5 @@ app.get('/*', function(req, res){
 	res.end("404");
 	
 });
+
+

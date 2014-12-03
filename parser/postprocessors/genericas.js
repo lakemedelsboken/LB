@@ -133,13 +133,13 @@ module.exports = injector = {
 						}
 					}
 
-					var href = "/atc/" + genericaATC.join("-");
+					var href = "http://www.lakemedelsboken.se/atc/" + genericaATC.join("-");
 					//console.error("Match: \"" + match + "\"");
 					var matchedWord = match.substr(1, match.length - 2);
 					
 					
 					if (genericaTitles.length > 0) {
-						var result = match.substr(0, 1) + "<a href=\"" + href + "\" data-atcid=\"" + genericaATC.join(",") + "\" data-atctitles=\"" + genericaTitles.join("##") + "\" class=\"inlineGenerica text\">" + matchedWord + "</a>" + match.substr(match.length - 1);
+						var result = match.substr(0, 1) + "<a href=\"" + href + "\" data-atcid=\"" + genericaATC.join(",") + "\" data-atctitles=\"" + genericaTitles.join("##") + "\" class=\"lb inlineGenerica text\">" + matchedWord + "</a>" + match.substr(match.length - 1);
 
 						return result;
 					} else {
