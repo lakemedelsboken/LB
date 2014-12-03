@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv">
+        <head>
+
+    <title>404 - sidan kunde inte hittas, Landstinget i J&ouml;nk&ouml;pings l&auml;n</title>
+        <meta name="Title" content="404 - sidan kunde inte hittas" />
+        <meta name="DC.Title" content="404 - sidan kunde inte hittas" />
+        <meta name="DC.Creator" content="Wed Dec 03 22:45:58 CET 2014" />
+        <meta name="Date" scheme="W3CDTF" content="Wed Dec 03 22:45:58 CET 2014" />
+        <meta name="DC.Date" scheme="W3CDTF" content="Wed Dec 03 22:45:58 CET 2014" />
+        <meta name="DC.Date.Modified" scheme="W3CDTF" content="Wed Dec 03 22:45:58 CET 2014" />
+        <meta name="DC.Date.Created" scheme="W3CDTF" content="Wed Dec 03 22:45:58 CET 2014" />
+        <meta http-equiv="Content-Type" content="text/html; iso-8859-1" />
+        <meta http-equiv="Content-Script-Type" content="text/javascript" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <meta http-equiv="content-language" content="sv" />
+        <meta name="robots" content="noindex, follow" />
+        <link rel="schema.DC" href="http://purl.org/DC/elements/1.0/" />
+        <meta name="DC.Format" scheme="IMT" content="text/html" />
+        <meta name="DC.Type" content="text" />
+        <meta name="DC.Subject" content="Felsida" />
+        <meta name="DC.Language" scheme="RFC1766" content="sv" />
+        <meta name="DC.Identifier" scheme="URL" content="http://plus.lj.se/" />
+        <meta name="DC.Publisher" content="Landstinget i J&ouml;nk&ouml;pings l&auml;n" />
+        <meta name="DC.Rights" content="Landstinget i J&ouml;nk&ouml;pings l&auml;n" />
+        <meta name="DC.Organisation" content="Landstinget i J&ouml;nk&ouml;pings l&auml;n" />
+
+        <link rel="stylesheet" type="text/css" href="/css/screen.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/css/oldtemplates.css" media="all" />			
+
+        <!--[if lte IE 6]>
+        <link rel="stylesheet" type="text/css" href="/css/ie.css"/>
+        <meta http-equiv="Imagetoolbar" content="no"/>
+        <![endif]-->
+
+        <!--[if lt IE 6]>
+        <link rel="stylesheet" type="text/css" href="/css/ie5.css"/>
+        <![endif]-->
+
+        <!--<link rel="stylesheet" type="text/css" href="/css/print.css" media="print"/>-->
+        </head>
+    <body>
+            <div id="errorpagewrapper">
+            <div id="errorpage">
+            <h1>404 - sidan kunde inte hittas</h1>
+			<p>Du har f&ouml;rs&ouml;kt n&aring; en sida som inte finns p&aring; Landstingets webbplats. Sidan kan ha blivit flyttad, f&aring;tt ett nytt namn eller s&aring; &auml;r den inte n&aring;bar f&ouml;r tillf&auml;llet.</p> 
+			<h2>Vad kan du g&ouml;ra?</h2>
+			<ul>
+			<li>Kontrollera adressen i webbl&auml;sarens adressf&auml;lt s&aring; att det inte blev n&aring;got skriv- eller klipp-och-klistra-fel.</li>
+			<li><a href="/index.jsf">G&aring; till startsidan p&aring; Landstinget Plus.</a></li>
+			<li><a href="/index.jsf?query=">S&ouml;ka efter sidan.</a></li>
+			<li>Skicka en felanm&auml;lan eller fr&aring;ga till oss. Skriv g&auml;rna vad du gjorde n&auml;r felet uppstod.</li>                        
+			</ul>
+<form id="errorForm" name="errorForm" method="post" action="/error404.jsf" class="area big" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="errorForm" value="errorForm" />
+<input id="errorForm:fromSite" type="hidden" name="errorForm:fromSite" />
+            <input type="hidden" name="errorTitle" value="404 - sidan kunde inte hittas" />  
+            
+            <!-- FS# 2961 -->
+            <input type="hidden" name="nodeId" value="" />
+            <input type="hidden" name="nodeType" value="" />
+            <input type="hidden" name="childId" value="" />
+            
+            <fieldset><label for="errorForm:fraga">
+Beskriv felet eller fr&aring;gan:<textarea id="errorForm:fraga" name="errorForm:fraga" class="fullwidth" cols="2" rows="2" title="Beskriv felet eller fr&aring;gan"></textarea></label><label for="errorForm:email">
+Din e-postadress:<input id="errorForm:email" type="text" name="errorForm:email" class="fullwidth" title="Din e-postadress (om svar &ouml;nskas)" /></label>
+                <p></p>Kontrollfr&aring;ga<label for="errorForm:secretAnswer">
+Vad blir fyra plus tre ? Skriv in svaret nedan:<input id="errorForm:secretAnswer" type="text" name="errorForm:secretAnswer" class="fullwidth" /></label><input type="submit" name="errorForm:j_id20" value="Skicka" class="submit" />
+            </fieldset><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="1416524627832275351:-7745546599835530377" autocomplete="off" />
+</form>
+            </div>
+            </div>		
+    </body>
+</html>

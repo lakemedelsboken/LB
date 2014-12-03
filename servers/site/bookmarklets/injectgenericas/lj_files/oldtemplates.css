@@ -1,0 +1,254 @@
+/* OLD CSS */
+
+/*
+TABLE, TD, TR
+{
+border-collapse:collapse;
+margin:0;
+padding:0;
+}
+*/
+
+.extwebIRB_frameTDinfoWidth,
+.extwebIRB_frameTDrightWidth
+{
+	vertical-align: top;
+	margin:0;
+	padding:0;
+}
+
+.extwebIRB_frameTDinfoWidth li,
+.extwebIRB_frameTDrightWidth li
+{
+    margin: 0;
+	padding:0.25em 0 0.25em 0;
+}
+
+
+.extwebIRB_frameTDrightWidth
+{
+	width:37%;
+}
+
+.extwebIRB_boxTable
+{
+	width:100%;
+}
+
+.extwebIRB_frameTDinfoWidth
+{
+	width:60%;
+	padding-right:1em;
+}
+
+.Rubrik1,
+.extwebIRB_infoTDHeader {
+    font-family: georgia, serif;
+    font-size: 2.2em;
+    line-height: 1.1em;
+    font-weight: normal;
+    margin: 0 0 0 0;
+}
+
+.extwebIRB_boxTDHeader H2 {
+	font-weight:bold;
+    font-size: 1em;
+	padding:0.3em 0.3em 0.3em 0.5em;
+	margin:0;
+	background:url(../img/bg_gray_gradient.gif) #e4e4e4 repeat-x;
+	border-top: 0.08em solid #f0f0ee;
+	border-left: 0.095em solid #f0f0ee;		
+	border-bottom: 0.095em solid #dbdbdb;	
+}
+
+.extwebIRB_boxTDHeader{
+	font-weight:bold;
+    font-size: 1em;
+	padding:0.3em 0.3em 0.3em 0.5em;
+	margin:0;
+	background:url(../img/bg_gray_gradient.gif) #e4e4e4 repeat-x;
+	border-top: 0.08em solid #f0f0ee;
+	border-left: 0.095em solid #f0f0ee;		
+	border-bottom: 0.095em solid #dbdbdb;	
+}
+
+
+
+
+/* ### Intranätets mallar ### - START */
+
+/* Klasser som kan användas av alla */
+
+.smallHeaderTextGray
+{
+    FONT-SIZE: 10px! important;
+    COLOR: #9A9999;
+    FONT-FAMILY: Verdana, Arial;
+    line-height:14px;
+	padding:7px 0px 0px 7px;
+	height: 20px
+
+}
+
+
+/* ------------------------ Sidmall med box, intraIRB ----------------------- */
+
+
+.intraIRB_frameTableWidth
+{
+	width: 566px;
+	BORDER: 0px;
+
+}
+
+.intraIRB_frameTDinfoWidth
+{
+	width: 378px;
+	vertical-align: top;
+}
+
+.intraIRB_frameTDrightWidth
+{
+	width: 188px;
+	vertical-align: top;
+	padding:0px 0px 0px 0px;
+}
+
+.intraIRB_infoTableWidth
+{
+	width: 378px;
+	height: 250px;
+	BORDER: 0px;
+}
+
+.intraIRB_infoTDHeader
+{
+	padding:7px 7px 7px 7px;
+	height: 20px;
+
+}
+
+.intraIRB_infoTDText
+{
+	padding:7px 7px 7px 7px;
+	vertical-align: top;
+	height: 230px;
+}
+
+
+.intraIRB_boxTable
+{
+	width: 188px;
+	BORDER-top: 0px;
+	BORDER-left: solid 1px;
+	BORDER-right: solid 1px;
+	BORDER-bottom: solid 1px;
+	BORDER-COLOR: #B5B5B5;
+}
+
+.intraIRB_boxTDbg
+{
+	background-color: #EDEDED;
+}
+
+.intraIRB_boxTDHeader
+{
+	padding:5px 5px 5px 5px;
+}
+
+.intraIRB_boxTDText
+{
+	padding:5px 5px 5px 5px;
+	vertical-align: top;
+}
+
+/* ------------------- Sidmall utan box, intraIR ------------------ */
+
+.intraIR_frameTableWidth
+{
+	width: 566px;
+	BORDER: 0px;
+
+}
+
+.intraIR_frameTDinfoWidth
+{
+	width: 378px;
+	vertical-align: top;
+}
+
+.intraIR_frameTDrightWidth
+{
+	width: 188px;
+	vertical-align: top;
+	padding:0px 0px 0px 0px;
+}
+
+.intraIR_infoTableWidth
+{
+	width: 378px;
+	height: 250px;
+	BORDER: 0px;
+}
+
+.intraIR_infoTDHeader
+{
+	padding:7px 7px 7px 7px;
+	height: 20px
+
+}
+
+.intraIR_infoTDText
+{
+	padding:7px 7px 7px 7px;
+	vertical-align: top;
+	height: 230px
+}
+
+/* -------------- Sidmall fullbredd, intraIF ----------------- */
+
+.intraIF_frameTableWidth
+{
+	width: 566px;
+	BORDER: 0px;
+
+}
+
+.intraIF_infoTDHeader
+{
+	padding:7px 7px 7px 7px;
+	height: 20px
+}
+
+.intraIF_infoTDText
+{
+	padding:7px 7px 7px 7px;
+	vertical-align: top;
+	height: 230px
+}
+
+/* -------------- Sidmall EXTRA bred, intraIEB ----------------- */
+.intraIEB_frameTableWidth
+{
+	width: 100%;
+	BORDER: 0px;
+
+}
+
+.intraIEB_infoTDHeader
+{
+	padding:7px 7px 7px 7px;
+	height: 20px
+}
+
+.intraIEB_infoTDText
+{
+	padding:7px 7px 7px 7px;
+	vertical-align: top;
+	height: 230px
+}
+
+
+
+/* ### Intranätets mallar - SLUT ### */
+

@@ -1,0 +1,23 @@
+/* General */
+/*--------------------------------------------------------------------------*/
+* {margin: 0; padding: 0;}
+body {font-size: 80%; color: #000000; background-color: #FFFFFF;}
+
+/* DIV Positioning Framwork */
+/*--------------------------------------------------------------------------*/
+div#printheader{ display: block; padding-bottom: 30px; }
+div#bodycontainer {width: 100%; margin: auto; background-color: #FFFFFF; padding: 0;}
+div#top { display: none;}
+/*div#center {background-image: url(/images/vertical_separator.gif); background-repeat: repeat-y;}*/
+div#bottom { display: none;}
+div#bodybottom { display: none;}
+
+.centerareanorightcolumn{ display: block; float: none; width: 100%; padding: 0;}
+
+div#center_left { display: none;}
+div#center_middle {width:100%;}
+div#center_right { display: block;  padding: 30px 0 0 0;}
+
+#inforesultbody{ width: 600px; }
+
+

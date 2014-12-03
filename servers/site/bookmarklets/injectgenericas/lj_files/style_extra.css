@@ -1,0 +1,39 @@
+/* tables */
+table.tablesorterOther {
+	font-family:arial;
+	background-color: #CDCDCD;
+	margin:0 0pt 0px;
+	xfont-size: 8pt;
+	width: 100%;
+	text-align: left;
+}
+table.tablesorterOther thead tr th, table.tablesorterOther tfoot tr th {
+	background-color: #d5e6f8;
+	border: 1px solid #FFF;
+	font-size: 8pt;
+	padding: 4px;
+}
+table.tablesorterOther thead tr .header {
+	background-image: url(bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorterOther tbody td {
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+table.tablesorterOther tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorterOther thead tr .headerSortUp {
+	background-image: url(asc.gif);
+}
+table.tablesorterOther thead tr .headerSortDown {
+	background-image: url(desc.gif);
+}
+table.tablesorterOther thead tr .headerSortDown, table.tablesorterOther thead tr .headerSortUp {
+background-color: #a9bdd3;
+}

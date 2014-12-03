@@ -1,0 +1,192 @@
+
+a.fancyBox {text-decoration: none;
+	color: #000;}
+
+
+a.fancyBox span.webbis {
+
+		float: left;
+		width: 290px;
+		height: 170px;
+		margin-right: 20px;
+		margin-bottom: 15px;
+
+	}
+
+a.fancyBox span.webbis:hover {background-color: #eee; border-color: #cbb;}
+
+
+div#col1.fullsize {
+width: 100%!important;
+}
+
+
+span.wmale {
+			background-image: url(img/webbisbkg_male.png);
+
+	}
+
+
+	a.fancyBox span.wmale:hover {background-position-x: 290px}
+
+
+	span.wfemale {
+
+		background-image: url(img/webbisbkg_female.png);
+
+	}
+
+	a.fancyBox span.wfemale:hover {background-position-x: 290px}
+
+
+
+
+
+img.webbisImgSmall {
+	display: block;
+	padding: 10px;
+	border: none;
+	float: left;
+	width: 100px;
+	height:  150px;
+}
+
+
+
+span.webbisInfoContainer {
+	float: left;
+	margin-top: 10px;
+	width: 170px;
+}
+
+span.webbisInfoContainer span {
+
+	float: left;
+	clear: both;
+
+}
+
+span.WebbisDate {
+	margin-top: ;
+	font-size: .8em;
+}
+
+span.WebbisName {
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-bottom: 10px;
+
+}
+
+span.WebbisMotherHead {
+	margin-top: 5px;
+	font-weight: bold;
+	color: #444;
+
+}
+
+span.WebbisMotherName {
+
+}
+
+span.WebbisFatherHead {
+	margin-top: 5px;
+	font-weight: bold;
+	color: #444;
+
+}
+
+span.WebbisFatherName {
+
+}
+
+span.WebbisSiblingHead {
+	margin-top: 5px;
+	font-weight: bold;
+	color: #444;
+
+}
+
+span.WebbisMessageHead {
+	margin-top: 5px;
+	font-weight: bold;
+	color: #444;
+
+}
+
+span.WebbisGender {
+	margin-top: 5px;
+	/*font-weight: bold;*/
+	color: #444;
+
+}
+
+
+/*webbisen*/
+img.webbisImgBig {
+	display: block;
+	padding: 5px;
+	border: none;
+	float: right;
+	/*width: 350px;*/
+}
+
+a img.webbisImgBig {
+	border: 5px solid #FFF;
+}
+
+a img.webbisImgBig:hover {
+	border: 5px solid #04589c;
+}
+
+div.webbisen .webbisInfoContainer {
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 400px;
+
+}
+
+#col1 div.webbisen div.webbisInfoContainer div.addthis_toolbox.addthis_default_style.addthis_32x32_style {
+
+	display: block;
+	float: left;
+	border-top: none;
+
+}
+
+#col1.fullsize #searchFunctionWindow {
+	position: relative;
+
+
+
+}
+
+
+
+#col1.fullsize #leftSearchWindow {
+	padding-left: 15px;
+	;
+	position: absolute;
+	top: 0px;
+	left: 250px;
+
+
+}
+
+#col1.fullsize #leftSearchWindow span.searchCatHeadline {
+	line-height: 30px;
+
+}
+
+
+
+
+@media print {
+body { color: #000000; background-color: #ffffff; }
+
+}
+
+
+
+

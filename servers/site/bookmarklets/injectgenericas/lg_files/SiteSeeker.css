@@ -1,0 +1,399 @@
+.ess-option-group
+{
+	display: block;
+	padding: 5px 4px 0px 4px;
+	margin-top: 5px;
+	border-top: 1px solid #dedede;
+}
+
+    .ess-option-group label {
+    font-weight:normal;
+    }
+
+.ess-option-group .ess-cat-group
+{
+	display: block;
+	margin-top: 3px;
+	margin-left: 25px;
+    
+}
+.ess-option-group .ess-cat
+{
+	display: block;
+	margin-left: 25px;
+}
+.ess-option-group select
+{
+	display: block;
+	margin-left: 25px;
+}
+.ess-thumbnail 
+{
+	border-width: 1px;
+	border-style: solid;
+	margin: 5px 20px;
+}
+dd.ess-doctype-img 
+{
+	margin: 0px 10px 10px 0px;
+	width: 45%;
+	height: 190px;
+	float: left;
+}
+dd.ess-doctype-img .ess-contextlink 
+{
+	margin-left: 20px;
+}
+.ess-search-button
+{
+	float: right;
+    /*font-weight: bold;*/
+	/*font-size: 11px;*/
+	padding: 0px 5px;
+}
+.ess-help-button
+{
+	float: left;
+}
+.ess-clear
+{
+	clear: both;
+	height: 1px;
+	overflow: hidden;
+}
+.ess-search-query
+{
+	/*font-size: 11px;*/
+	/*font-weight: bold;*/
+	width: 100%;
+	-moz-box-sizing: border-box;
+}
+.ess-search-group
+{
+	padding: 5px 4px 0px 4px;
+}
+.ess-details
+{
+	padding: 2px 4px 2px 2px;
+	border-top: 1px solid #dedede;
+	color: #999;
+	margin: 5px 0px;
+}
+.ess-specialtext 
+{
+	color: #000;
+	margin-bottom: 2px;
+}
+.ess-details br
+{
+	display: none;
+}
+.ess-details img
+{
+	float: left;
+}
+
+.ess-spelling,
+.ess-no-query,
+.ess-no-hits
+{
+	border: 1px solid #bdbdbd;
+	background-color: #ffffe0;
+	margin: 10px 0px;
+	padding: 6px;
+}
+
+.ess-sort-order-current 
+{
+	/*font-weight: bold;*/
+}
+
+.ess-spelling h2
+{
+	margin: 0px 0px 10px 0px;
+}
+.ess-spelling ul
+{
+	list-style-type: square;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 10px;
+	color: #bdbdbd;
+}
+.ess-spelling li
+{
+	margin: 7px;
+	color: #000;
+}
+.ess-resheader
+{
+	border-bottom: #dedede 1px solid;
+	margin: 10px 0px;
+	font-size: 1.4em;
+	padding: 2px;
+}
+
+.ess-resheader2
+{
+	border-bottom: #dedede 1px solid;
+	margin: 10px 0px;
+	font-size: 1.1em;
+	padding: 2px;
+}
+
+
+.ess-pagenav
+{
+	clear: left;
+	text-align: center;
+	font-size: 1.1em;
+}
+.ess-pagenav a
+{
+	/*font-weight: bold;*/
+}
+.ess-sortselection
+{
+	margin-bottom: 10px;
+	margin-top: -5px;
+	text-align: center;
+}
+.ess-hit-header
+{
+	font-size: 1.2em;
+	margin-bottom: 3px;
+	/*font-weight: bold;*/
+	margin-left: 30px;
+}
+.ess-hit-header strong 
+{
+	font-style: italic;
+}
+.ess-hit-num
+{
+	white-space: nowrap;
+	font-weight: normal;
+	width: 30px;
+	float: left;
+	margin-left: -30px;
+}
+.ess-hit-body 
+{
+	margin-left: 30px;
+	margin-bottom: 15px;
+}
+.ess-meterframe
+{
+	display: block;
+	float: left;
+	border: 1px solid #dedede;
+	width: 32px;
+	height: 4px;
+	margin-right: 5px;
+	margin-top: 4px;
+}
+.ess-meter
+{
+	display: block;
+	height: 2px;
+	background-color: #999;
+	overflow: hidden;
+	text-indent: -2000px;
+	margin: 1px;
+}
+dl.ess-bestbets
+{
+	margin: 15px 0px;
+	padding-bottom: 7px;
+	border-bottom: 2px solid #dedede;
+}
+.ess-bestbets dt
+{
+	padding: 4px 8px 4px 8px;
+	border: 1px solid #dedede;
+	border-bottom: none;
+}
+.ess-bestbets .ess-header
+{
+	/*font-weight: bold;*/
+	font-size: 11px;
+}
+.ess-bestbets dd
+{
+	padding: 2px 8px 4px 8px;
+	margin: 0px 0px 8px 0px;
+	border: 1px solid #dedede;
+	border-top: none;
+}
+.ess-cat-bd 
+{
+	display: block;
+}
+.ess-cat-bd .ess-cat-group,
+.ess-cat-bd .ess-partition-group 
+{
+	display: block;
+	/*font-weight: bold;*/
+	font-size: 11px;
+	margin-top: 8px;
+	padding: 2px;
+}
+.ess-cat-bd .ess-cat,
+.ess-cat-bd .ess-partition 
+{
+	display: block;
+	margin-top: 4px;
+	padding: 2px;
+}
+.ess-cat-bd .ess-cat-all 
+{
+	/*font-weight: bold;*/
+	padding-bottom: 2px;
+}
+.ess-cat-bd .ess-cat.ess-cat-current,
+.ess-cat-bd .ess-partition.ess-partition-current 
+{
+	background-color: #dedede;
+}
+.ess-cat-bd .ess-cat a,
+.ess-cat-bd .ess-partition a 
+{
+	/*font-size: 11px;*/
+	display: block;
+}
+.ess-cat-bd .ess-cat-info,
+.ess-cat-bd .ess-partition-info 
+{
+	display: block;
+	color: #999;
+	font-size: 0.9em;
+}
+.ess-cat-bd .ess-count
+{
+	/*font-weight: bold;*/
+}
+/* Remove the following four rules to show alternative partition breakdown labelling */
+.ess-cat-bd .ess-count
+{
+	float: right;
+}
+.ess-cat-bd .ess-label
+{
+	clear: both;
+	width: 10px;
+	height: 1px;
+	overflow: hidden;
+	text-indent: -4000px;
+	display: block;
+}
+.ess-cat-bd .ess-cat a,
+.ess-cat-bd .ess-partition a
+{
+	float: left;
+}
+.ess-cat-bd .ess-cat a.ess-cat-all
+{
+	float: none;
+}
+
+
+
+/* Hit info */
+.ess-cache-link 
+{
+	white-space: nowrap;
+}
+
+.ess-dtype-icon 
+{
+	margin-right: 7px;
+}
+.ess-dtype-marker
+{
+	text-transform: uppercase;
+	/*font-weight: bold;*/
+	font-size: 0.85em;
+	color: #999;
+}
+/* The following two rules must be below the above two rules */
+.ess-dtype-icon-html {
+	display: none;
+}
+
+.ess-dtype-marker-html {
+	display: none;
+}
+
+.ess-hide-text 
+{
+	display: none;
+}
+
+.ess-filter-default 
+{
+	/*font-weight: bold;*/
+}
+
+#essi-search-provider 
+{
+	color: #999;
+	text-align: center;
+	margin: 3em 0px 0.5em 0px;
+}
+#essi-search-provider a:link,
+#essi-search-provider a:visited,
+#essi-search-provider a:active 
+{
+	text-decoration: underline;
+	color: #999;
+	/*font-weight: bold;*/
+}
+
+dl.ess-attachments { 
+  margin: 0px;
+}
+dl.ess-attachments dt { 
+  margin: 0.2em 0px 0px 0px;
+  clear: left;
+  padding-left: 22px;
+  background: url('/SiteSeeker/Images/attachment.png') 2px 10% no-repeat;
+}
+* html dl.ess-attachments dt { 
+  background: url('/SiteSeeker/Images/attachment.gif') 2px 10% no-repeat;
+}
+dl.ess-attachments dd {
+  margin-left: 22px;
+  margin-bottom: 5px;
+}
+        
+/*  Yellow markup for search terms */
+
+.ess-hit-header strong,
+.ess-description strong,
+.ess-metadescription strong
+{
+	background: #FFF179;
+	padding: 0 0.3em;
+	color: #000;
+    -khtml-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+	font-style: normal;
+}
+
+/* Styles for PresetSearch, e.g. related pages */
+
+#essi-preset-bestbets dt,
+#essi-preset-searchresults dt,
+#essi-preset-bestbets dd,
+#essi-preset-searchresults dd
+{
+	margin: 0.2em 0;
+	padding: 0;
+}
+
+#essi-preset-bestbets dt,
+#essi-preset-searchresults dt
+{
+	/*font-weight: bold;*/
+	margin-top: 0.8em;
+}
