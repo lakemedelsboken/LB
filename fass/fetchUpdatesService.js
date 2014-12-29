@@ -8,7 +8,7 @@ var crypto = require("crypto");
 var request = require("request");
 var nodemailer = require("nodemailer");
 
-var baseUrl = "http://www.fass.se/LIF/FassDocumentWebService?WSDL";
+var baseUrl = "http://www.fass.se/LIF/FassDocumentWebService2?WSDL";
 
 var secretSettingsPath = __dirname + "/../settings/secretSettings.json";
 var errors = {};
@@ -36,7 +36,7 @@ var secretSettings = JSON.parse(fs.readFileSync(secretSettingsPath, "utf8"));
 var fassUserId = secretSettings.fass.fassUserId;
 
 var chokidar = require("chokidar");
-var watcher = chokidar.watch(path.normalize(__dirname + "/shared/foundUpdates.json"), {persistent: true, ignoreInitial: true, interval:1});
+var watcher = chokidar.watch(path.normalize(__dirname + "/shared/foundUpdates.json"), {persistent: true, ignoreInitial: true, interval:1000});
 
 watcher.on('error', function(error) {console.error('Error happened on file watch', error);})
 
@@ -200,7 +200,8 @@ function moveToLast(nplId) {
 		//Insert as second item
 		foundUpdates.splice(1, 0, nplId);
 
-		fs.writeFileSync(__dirname + "/shared/foundUpdates.json", JSON.stringify(foundUpdates, null, "\t"), "utf8");
+		fs.writeFileSync(__dirname + "/shared/foundUpdatesFetchLock.json", JSON.stringify(foundUpdates, null, "\t"), "utf8");
+		fs.renameSync(__dirname + "/shared/foundUpdatesFetchLock.json", __dirname + "/shared/foundUpdates.json");
 		console.log("INFO: " + nplId + " was moved to the end of the queue.");
 	} else {
 		removeFromFoundUpdates(nplId);
@@ -220,7 +221,8 @@ function removeFromFoundUpdates(nplId) {
 	}
 
 	//console.log("Saving new list");
-	fs.writeFileSync(__dirname + "/shared/foundUpdates.json", JSON.stringify(foundUpdates, null, "\t"), "utf8");
+	fs.writeFileSync(__dirname + "/shared/foundUpdatesFetchLock.json", JSON.stringify(foundUpdates, null, "\t"), "utf8");
+	fs.renameSync(__dirname + "/shared/foundUpdatesFetchLock.json", __dirname + "/shared/foundUpdates.json");
 	
 }
 
@@ -232,6 +234,7 @@ function getNoInfo(nplId) {
 		noinfo.description = nplProduct.description;
 		noinfo.atcCode = nplProduct.atcCode;
 		noinfo.brand = nplProduct.brand;
+		noinfo.additionalMonitoring = false;
 	}
 	return noinfo;
 }
@@ -306,6 +309,13 @@ function processProduct(product, $, callback) {
 					output.parallelimport = product.find("product-info > parallel-import-country").text();
 					output.available = product.find("product-info > available").text();
 					output.active = product.find("product-info > active").text();
+					var additionalMonitoring = product.find("product-info > additional-monitoring");
+					
+					if (additionalMonitoring.length > 0 && additionalMonitoring.first().text() === "true") {
+						output.additionalMonitoring = true;
+					} else {
+						output.additionalMonitoring = false;
+					}
 					
 					if (spcLink !== undefined && spcLink !== null && spcLink !== "" && spcLink !== "undefined") {
 						output.spcLink = spcLink;
@@ -454,6 +464,40 @@ function formatSection(section) {
 		//turn xml into html
 		section = section.trim();
 		section = section.replace(/\<paragraph\/\>/g, "");
+		section = section.replace(/\<very-common\/\>/g, "");
+		section = section.replace(/\<very-common\>\<\/very-common\>/g, "");
+
+		section = section.replace(/\<very-common\>/g, "<table class=\"table\"><tbody><tr><td style=\"width: 150px;\">Mycket vanliga <br>(≥1/10)</td><td>");
+		section = section.replace(/\<\/very-common\>/g, "</td></tr></tbody></table>");
+
+		section = section.replace(/\<common\/\>/g, "");
+		section = section.replace(/\<common\>\<\/common\>/g, "");
+
+		section = section.replace(/\<common\>/g, "<table class=\"table\"><tbody><tr><td style=\"width: 150px;\">Vanliga <br>(≥1/100, <1/10)</td><td>");
+		section = section.replace(/\<\/common\>/g, "</td></tr></tbody></table>");
+
+		section = section.replace(/\<less-common\/\>/g, "");
+		section = section.replace(/\<less-common\>\<\/less-common\>/g, "");
+
+		section = section.replace(/\<less-common\>/g, "<table class=\"table\"><tbody><tr><td style=\"width: 150px;\">Mindre vanliga <br>(≥1/1 000, <1/100)</td><td>");
+		section = section.replace(/\<\/less-common\>/g, "</td></tr></tbody></table>");
+
+		section = section.replace(/\<rare\/\>/g, "");
+		section = section.replace(/\<rare\>\<\/rare\>/g, "");
+
+		section = section.replace(/\<rare\>/g, "<table class=\"table\"><tbody><tr><td style=\"width: 150px;\">Sällsynta <br>(≥1/10 000, <1/1 000)</td><td>");
+		section = section.replace(/\<\/rare\>/g, "</td></tr></tbody></table>");
+
+		section = section.replace(/\<very-rare\/\>/g, "");
+		section = section.replace(/\<very-rare\>\<\/very-rare\>/g, "");
+
+		section = section.replace(/\<very-rare\>/g, "<table class=\"table\"><tbody><tr><td style=\"width: 150px;\">Mycket sällsynta <br>(<1/10 000)</td><td>");
+		section = section.replace(/\<\/very-rare\>/g, "</td></tr></tbody></table>");
+
+		section = section.replace(/\<clickable\/\>/g, "");
+		section = section.replace(/\<clickable\>/g, "");
+		
+		
 		section = section.replace(/\<paragraph\>/g, "<p>");
 		section = section.replace(/\<\/paragraph\>/g, "</p>");
 
@@ -482,6 +526,7 @@ function formatSection(section) {
 		section = section.replace(/\<\/image\>/g, "");
 		section = section.replace(/fileref\=\"\//g, "src=\"http://www.fass.se/");
 		section = section.replace(/fileref\=\"/g, "src=\"");
+		
 	} else {
 		section = "";
 	}
@@ -773,7 +818,7 @@ function _getCentralSPC(name, nplId, callback) {
 				callback(new Error("Multiple links for: " + searchName + "\n"));
 			}
 		} else {
-			callback(new Error("Error fetching from EMEA:" + searchName));
+			callback(new Error("Error fetching from EMA:" + searchName));
 		}
 	});
 }

@@ -1181,6 +1181,16 @@ div#medDisplay {
 	width: 21px;
 	height: 21px;
 }
+
+.monitoringImage {
+	float: left;
+	width: 22px;
+}
+.monitoringImage img {
+	width: 21px;
+	height: 21px;
+}
+
 /*
 .fassImage {
 	width: 80px;
@@ -1728,6 +1738,11 @@ ul.authorsByLetter li ul li {
 
 	div.popover-content div.figure {
 		margin: 10px 0px 10px 0px;
+	}
+	
+	a.btn.inlineBoxSearch {
+		position: static;
+		float: none;
 	}
 
 }

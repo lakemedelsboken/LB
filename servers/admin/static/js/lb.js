@@ -2680,6 +2680,16 @@ if (!window.console.log) window.console.log = function () { };
 				medInfo.append($("<div style=\"margin-bottom: 10px;\">" + narcImage + "<div style=\"margin-left: 30px;\">" + narcotic + "</div></div>"));
 			}
 
+			if (product.additionalMonitoring) {
+				var monitoringImage = "<div data-picture data-alt=\"Utökad övervakning\" class=\"monitoringImage\">";
+				monitoringImage += "<div data-src=\"/img/monitoring.png\"></div>";
+				monitoringImage += "<div data-src=\"/img/monitoring_x2.png\" data-media=\"(min-device-pixel-ratio: 2.0)\"></div>";
+				monitoringImage += "<img src=\"/img/monitoring.png\" />";
+				monitoringImage += "</div>";
+
+				medInfo.append($("<div style=\"margin-bottom: 10px;\">" + monitoringImage + "<div style=\"margin-left: 30px;\"><a href=\"http://www.lakemedelsverket.se/utokadovervakning\" target=\"_blank\">Detta läkemedel är föremål för utökad övervakning.</a></div></div>"));
+			}
+
 			if (product.substance) {
 				medInfo.append($("<div><strong>Aktiv substans:</strong> " + product.substance + "</div>"));
 			}
