@@ -67,6 +67,33 @@ function readPharmForms(callback) {
 	});
 }
 
+function addToDownloadList(nplId) {
+
+	if (nplId !== undefined && nplId !== "") {
+		var foundUpdates = JSON.parse(fs.readFileSync(__dirname + "/../fass/shared/foundUpdates.json", "utf8"));
+		var alreadyInList = false;
+
+		var alreadyInList = (foundUpdates.indexOf(nplId) > -1);
+
+/*
+		for (var i = 0; i < foundUpdates.length; i++) {
+			if (foundUpdates[i] === nplId) {
+				alreadyInList = true;
+				break;
+			}
+		}
+*/
+
+		if (!alreadyInList) {
+			console.log(nplId + " is added to shared/foundUpdates.json");
+			foundUpdates.push(nplId);
+			fs.writeFileSync(__dirname + "/../fass/shared/foundUpdatesParseLock.json", JSON.stringify(foundUpdates, null, "\t"), "utf8");
+			fs.renameSync(__dirname + "/../fass/shared/foundUpdatesParseLock.json", __dirname + "/../fass/shared/foundUpdates.json");
+		}
+	}
+
+}
+
 var controlClasses = {};
 
 function readControlClasses(callback) {
@@ -119,6 +146,7 @@ function readProducts() {
 	xml.preserve("npl:names", true);
 	xml.preserve("npl:identifiers", true);
 	xml.preserve("npl:flags", true);
+	xml.preserve("npl:dates", true);
 	xml.preserve("npl:classifications", true);
 	xml.preserve("mpa:identifier", true);
 
@@ -305,21 +333,8 @@ function readProducts() {
 
 					missingInfoCounter++;
 
-					var foundUpdates = JSON.parse(fs.readFileSync(__dirname + "/../fass/shared/foundUpdates.json", "utf8"));
-					var alreadyInList = false;
-					
-					for (var i = 0; i < foundUpdates.length; i++) {
-						if (foundUpdates[i] === nplId) {
-							alreadyInList = true;
-							break;
-						}
-					}
-					if (!alreadyInList) {
-						console.log(nplId + " is added to shared/foundUpdates.json");
-						foundUpdates.push(nplId);
-						fs.writeFileSync(__dirname + "/../fass/shared/foundUpdates.json", JSON.stringify(foundUpdates, null, "\t"), "utf8");
-					}
-					
+					addToDownloadList(nplId);
+										
 					//Write a basic stub to fass/www/products/
 					var newProduct = {
 						"noinfo": true,
@@ -347,6 +362,8 @@ function readProducts() {
 					//Check that name and brand is set
 					var product = JSON.parse(fs.readFileSync(__dirname + "/../fass/www/products/" + nplId + ".json"));
 					var update = false;
+					var updateFromFass = false;
+					
 					if (product.name === undefined || product.name === "") {
 						product.name = name;
 						update = true;
@@ -419,6 +436,12 @@ function readProducts() {
 							update = true;
 						}
 					}
+					
+					//Make sure additional monitoring info is added to each product
+					if (product.additionalMonitoring === undefined) {
+						updateFromFass = true;
+					}
+					
 					/*
 					if (product.noinfo !== undefined && product.noinfo === true && product.description !== "Saknar förskrivarinformation") {
 						product.description = "Saknar förskrivarinformation";
@@ -429,8 +452,11 @@ function readProducts() {
 						console.log("Adding basic information to: " + nplId + " " + product.name + ", " + product.brand + ", " + product.description);
 						fs.writeFileSync(__dirname + "/../fass/www/products/" + nplId + ".json", JSON.stringify(product, null, "\t"), "utf8");
 					}
+					
+					if (updateFromFass) {
+						addToDownloadList(nplId);
+					}
 				}
-
 
 				var product = {
 					"id": nplId,
