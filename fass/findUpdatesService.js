@@ -5,6 +5,8 @@ var http = require("http");
 
 var isUpdating = false;
 var foundUpdatesPath = __dirname + "/shared/foundUpdates.json";
+var foundUpdatesTempPath = __dirname + "/shared/foundUpdatesFindLock.json";
+
 
 var secretSettingsPath = __dirname + "/../settings/secretSettings.json";
 
@@ -63,7 +65,7 @@ function findUpdates() {
 
 	productInfoEnvelope = productInfoEnvelope.replace("{USERID}", fassUserId);
 
-	requestSoapData("http://www.fass.se/LIF/FassDocumentWebService?WSDL", productInfoEnvelope, function(err, answer) {
+	requestSoapData("http://www.fass.se/LIF/FassDocumentWebService2?WSDL", productInfoEnvelope, function(err, answer) {
 
 		if (answer !== undefined) {
 
@@ -96,7 +98,8 @@ function findUpdates() {
 				oldUpdates[0].time = formatDate(currentDate);
 
 				//Save to shared/foundUpdates.json
-				fs.writeFileSync(foundUpdatesPath, JSON.stringify(oldUpdates, null, "\t"), "utf8");
+				fs.writeFileSync(foundUpdatesTempPath, JSON.stringify(oldUpdates, null, "\t"), "utf8");
+				fs.renameSync(foundUpdatesTempPath, foundUpdatesPath);
 			
 				isUpdating = false;
 			
@@ -107,7 +110,8 @@ function findUpdates() {
 				oldUpdates[0].time = formatDate(currentDate);
 
 				//Save to shared/foundUpdates.json
-				fs.writeFileSync(foundUpdatesPath, JSON.stringify(oldUpdates, null, "\t"), "utf8");
+				fs.writeFileSync(foundUpdatesTempPath, JSON.stringify(oldUpdates, null, "\t"), "utf8");
+				fs.renameSync(foundUpdatesTempPath, foundUpdatesPath);
 
 				isUpdating = false;
 			}
