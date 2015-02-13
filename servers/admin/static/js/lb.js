@@ -2589,7 +2589,7 @@ if (!window.console.log) window.console.log = function () { };
 				
 				if (providerLink !== undefined) {
 					providerLink = providerLink.replace("{NPLID}", nplId);
-					medInfo.append($("<div class=\"pull-right\" style=\"width: 120px;\"><a href=\"" + providerLink + "\" target=\"_blank\">" + providerImage + "</a></div>"));
+					//medInfo.append($("<div class=\"pull-right\" style=\"width: 120px;\"><a href=\"" + providerLink + "\" target=\"_blank\">" + providerImage + "</a></div>"));
 				}
 				
 			}
