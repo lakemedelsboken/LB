@@ -2,7 +2,7 @@ var fs = require("fs");
 
 var authors = JSON.parse(fs.readFileSync(__dirname + "/Authors.json", "utf8"));
 var chapters = JSON.parse(fs.readFileSync(__dirname + "/Chapters.json", "utf8"));
-var masterIndex = JSON.parse(fs.readFileSync(__dirname + "/../../site/MasterIndex.json", "utf8"));
+var masterIndex = JSON.parse(fs.readFileSync(__dirname + "/../../site/masterIndex.json", "utf8"));
 
 var AuthorsRegistry = {
 
