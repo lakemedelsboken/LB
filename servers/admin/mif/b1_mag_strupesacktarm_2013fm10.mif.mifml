@@ -5444,10 +5444,10 @@
         </XRefFormat>
     </XRefFormats>
     <Document>
-        <DViewRect value="18 20 1283 764 " type="enum"/>
-        <DWindowRect value="0 0 1751 1044 " type="enum"/>
-        <DViewScale value="140.0%" type="num"/>
-        <DNextUnique value="1047313" type="enum"/>
+        <DViewRect value="18 20 1248 592 " type="enum"/>
+        <DWindowRect value="0 0 1705 815 " type="enum"/>
+        <DViewScale value="55.44%" type="num"/>
+        <DNextUnique value="1047396" type="enum"/>
         <DPageSize value="170.0 mm 400.0 mm" type="num"/>
         <DMenuBar value="" type="str"/>
         <DVoMenuBar value="" type="str"/>
@@ -5610,7 +5610,7 @@
         <DPDFOpenPage value="79" type="str"/>
         <DPDFFit value="Page" type="enum"/>
         <DPDFZoom value="0.0%" type="num"/>
-        <DPDFJobOptions value="Standard" type="str"/>
+        <DPDFJobOptions value="High Quality Print" type="str"/>
         <DPDFSaveSeparate value="No" type="enum"/>
         <DPDFRegMarks value="None" type="enum"/>
         <DPDFPageSizeSet value="No" type="enum"/>
@@ -5632,7 +5632,7 @@
         </PDFDocInfo>
         <DocFileInfo value="
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130392D30322D32375431303A34373A35362B30323A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131342D30362D31305431373A34363A31392B30323A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131342D30362D31305431373A34363A31392B30323A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130392D30322D32375431303A34373A35362B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131352D30312D31345431333A32393A31312B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131352D30312D31345431333A32393A31312B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E536A756B646F6D61722069206D61747374727570652C206D616773C3A4636B206F636820746F6C7666696E6765727461726D20E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020
 2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020
 202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020
@@ -12242,7 +12242,7 @@
                                         <XRefSrcText value="98433: FaktaRub1: Tester för Helicobacter pylori" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="" type="str"/>
-                                        <XRefLastUpdate value="1405007179 551000" type="num"/>
+                                        <XRefLastUpdate value="1423916951 471000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -21162,7 +21162,7 @@
         <Notes>
         </Notes>
         <Para>
-            <Unique value="1047282" type="enum"/>
+            <Unique value="1047319" type="enum"/>
             <PgfTag value="Bröd" type="str"/>
             <Pgf>
                 <PgfAlignment value="Left" type="enum"/>
@@ -21196,16 +21196,30 @@
                     <FColor value="PANTONE Rubine Red CVC" type="str"/>
                     <FBackgroundColor value="NoColor" type="enum"/>
                 </PgfFont>
+                <PgfNumTabs value="1" type="enum"/>
+                <TabStop>
+                    <TSX value="12.86811 mm" type="num"/>
+                    <TSType value="Left" type="enum"/>
+                    <TSLeaderStr value=" " type="str"/>
+                </TabStop>
             </Pgf>
+            <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
                 <TextRectID value="148" type="enum"/>
                 <String>Ändrad</String>
                 <Char value="Tab" type="enum"/>
-                <String> </String>
-                <Char value="Tab" type="enum"/>
                 <String>2014-07-16, s</String>
                 <Char value="HardSpace" type="enum"/>
                 <String>85.</String>
+                <Char value="HardReturn" type="enum"/>
+            </ParaLine>
+            <ParaLine>
+                <Char value="Tab" type="enum"/>
+                <String>2015-03-04, s</String>
+                <Char value="HardSpace" type="enum"/>
+                <String>85 och s</String>
+                <Char value="HardSpace" type="enum"/>
+                <String>90.</String>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -21541,73 +21555,6 @@
         <Notes>
             <FNote>
                 <ID value="182" type="enum"/>
-                <Para>
-                    <Unique value="1047291" type="enum"/>
-                    <PgfTag value="Footnote" type="str"/>
-                    <Pgf>
-                        <PgfAlignment value="Left" type="enum"/>
-                        <PgfFont>
-                            <FTag value="" type="str"/>
-                            <FPlatformName value="W.Frutiger LT Std 55 Roman.R.400" type="str"/>
-                            <FFamily value="Frutiger LT Std 55 Roman" type="str"/>
-                            <FVar value="Regular" type="str"/>
-                            <FWeight value="Regular" type="str"/>
-                            <FAngle value="Regular" type="str"/>
-                            <FPostScriptName value="FrutigerLTStd-Roman" type="str"/>
-                            <FEncoding value="FrameRoman" type="str"/>
-                            <FSize value="6.0 pt" type="num"/>
-                            <FUnderlining value="FNoUnderlining" type="enum"/>
-                            <FOverline value="No" type="enum"/>
-                            <FStrike value="No" type="enum"/>
-                            <FChangeBar value="No" type="enum"/>
-                            <FOutline value="No" type="enum"/>
-                            <FShadow value="No" type="enum"/>
-                            <FPairKern value="Yes" type="enum"/>
-                            <FTsume value="No" type="enum"/>
-                            <FCase value="FAsTyped" type="enum"/>
-                            <FPosition value="FNormal" type="enum"/>
-                            <FDX value="0.0%" type="num"/>
-                            <FDY value="0.0%" type="num"/>
-                            <FDW value="0.0%" type="num"/>
-                            <FStretch value="100.0%" type="num"/>
-                            <FLanguage value="Swedish" type="enum"/>
-                            <FLocked value="No" type="enum"/>
-                            <FSeparation value="2" type="enum"/>
-                            <FColor value="Red" type="str"/>
-                            <FBackgroundColor value="NoColor" type="enum"/>
-                        </PgfFont>
-                    </Pgf>
-                    <ParaLine>
-                        <String>Nyhet från Läkemedelsverket: Ny rekommendation för </String>
-                    </ParaLine>
-                    <ParaLine>
-                        <String>användning av domperidon, </String>
-                        <Font>
-                            <FTag value="" type="str"/>
-                            <FLocked value="No" type="enum"/>
-                            <FSeparation value="4" type="enum"/>
-                            <FColor value="Blue" type="str"/>
-                        </Font>
-                        <Marker>
-                            <MType value="8" type="enum"/>
-                            <MTypeName value="Hypertext" type="str"/>
-                            <MText value="message URL http://www.lakemedelsverket.se/Alla-nyheter/NYHETER-2014/Ny-rekommendation-for-anvandning-av-domperidon-/" type="str"/>
-                            <MCurrPage value="85" type="str"/>
-                            <Unique value="1047292" type="enum"/>
-                        </Marker>
-                        <String>www.lakemedelsverket.se </String>
-                    </ParaLine>
-                    <ParaLine>
-                        <Font>
-                            <FTag value="" type="str"/>
-                            <FLocked value="No" type="enum"/>
-                        </Font>
-                        <String>(red. anmärkning)</String>
-                    </ParaLine>
-                </Para>
-            </FNote>
-            <FNote>
-                <ID value="183" type="enum"/>
                 <Para>
                     <Unique value="1045424" type="enum"/>
                     <PgfTag value="Footnote" type="str"/>
@@ -22512,7 +22459,7 @@
                     <XRefSrcText value="34577: FaktaRub1: Gastroesofageal refluxsjukdom – livsstilsförändring" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007179 550000" type="num"/>
+                    <XRefLastUpdate value="1423916951 471000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -22704,7 +22651,7 @@
                     <XRefSrcText value="50403: TabellRubrik_1sp: Tabell 1. Behandling av gastroesofageal refluxsjukdom hos vu" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007179 550000" type="num"/>
+                    <XRefLastUpdate value="1423916951 471000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -23154,7 +23101,7 @@
                     <XRefSrcText value="39134: FaktaRub1: Dyspepsi – definition" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007179 550000" type="num"/>
+                    <XRefLastUpdate value="1423916951 471000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -23896,7 +23843,7 @@
                     <XRefSrcText value="63309: Rub1: Behandling vid funktionell dyspepsi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007179 551000" type="num"/>
+                    <XRefLastUpdate value="1423916951 471000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -24785,7 +24732,7 @@
                     <XRefSrcText value="49901: Rub2efterRub1: NSAID/COX-hämmare" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;P2_ROR_ReumSjukdom_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1404972946 739000" type="num"/>
+                    <XRefLastUpdate value="1421671552 771000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25076,7 +25023,7 @@
                     <XRefSrcText value="25972: BrödPunkt: • Alarmsymtom och anamnes. Sväljningsbesvär, avmagring, ikterus, bukresistens," type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007179 550000" type="num"/>
+                    <XRefLastUpdate value="1423916951 471000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25114,7 +25061,7 @@
                     <XRefSrcText value="57272: FaktaRub1: Absoluta indikationer för gastroskopi (inom 1–2 veckor)" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007179 550000" type="num"/>
+                    <XRefLastUpdate value="1423916951 471000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25190,7 +25137,7 @@
                     <XRefSrcText value="38818: Rub1: Akut övre gastrointestinal blödning" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007179 550000" type="num"/>
+                    <XRefLastUpdate value="1423916951 471000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25240,7 +25187,7 @@
                     <XRefSrcText value="53990: FaktaRub1: Strategier för handläggning av oundersökt dyspepsi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007179 550000" type="num"/>
+                    <XRefLastUpdate value="1423916951 471000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25342,7 +25289,7 @@
                     <XRefSrcText value="53990: FaktaRub1: Strategier för handläggning av oundersökt dyspepsi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007179 550000" type="num"/>
+                    <XRefLastUpdate value="1423916951 471000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25432,7 +25379,7 @@
                     <XRefSrcText value="61206: Rub1: Behandling vid ulcus" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007179 550000" type="num"/>
+                    <XRefLastUpdate value="1423916951 471000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25483,7 +25430,7 @@
                     <XRefSrcText value="98433: FaktaRub1: Tester för Helicobacter pylori" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007179 550000" type="num"/>
+                    <XRefLastUpdate value="1423916951 471000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25519,7 +25466,7 @@
                     <XRefSrcText value="98433: FaktaRub1: Tester för Helicobacter pylori" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007179 550000" type="num"/>
+                    <XRefLastUpdate value="1423916951 471000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25778,62 +25725,6 @@
             </ParaLine>
         </Para>
         <Para>
-            <Unique value="1029344" type="enum"/>
-            <PgfTag value="BrödIn" type="str"/>
-            <PgfReferenced value="Yes" type="enum"/>
-            <ParaLine>
-                <String>Motorikstimulerande behandling (”proki</String>
-                <Char value="SoftHyphen" type="enum"/>
-            </ParaLine>
-            <ParaLine>
-                <String>netika”) förefaller i varje fall för vissa pati</String>
-                <Char value="SoftHyphen" type="enum"/>
-            </ParaLine>
-            <ParaLine>
-                <Char value="DiscHyphen" type="enum"/>
-                <String>enter etiologiskt tilltalande, men saknar </String>
-            </ParaLine>
-            <ParaLine>
-                <String>övertygande evidens för effekt. </String>
-                <Font>
-                    <FTag value="" type="str"/>
-                    <FLocked value="No" type="enum"/>
-                    <FSeparation value="2" type="enum"/>
-                    <FColor value="Red" type="str"/>
-                </Font>
-                <String>I svåra fall </String>
-                <Font>
-                    <FTag value="" type="str"/>
-                    <FLocked value="No" type="enum"/>
-                </Font>
-            </ParaLine>
-            <ParaLine>
-                <Font>
-                    <FTag value="" type="str"/>
-                    <FLocked value="No" type="enum"/>
-                    <FSeparation value="2" type="enum"/>
-                    <FColor value="Red" type="str"/>
-                </Font>
-                <String>kan domperidon</String>
-                <Font>
-                    <FTag value="" type="str"/>
-                    <FLocked value="No" type="enum"/>
-                </Font>
-                <FNote value="182" type="enum"/>
-                <Font>
-                    <FTag value="" type="str"/>
-                    <FLocked value="No" type="enum"/>
-                    <FSeparation value="2" type="enum"/>
-                    <FColor value="Red" type="str"/>
-                </Font>
-                <String> prövas.</String>
-                <Font>
-                    <FTag value="" type="str"/>
-                    <FLocked value="No" type="enum"/>
-                </Font>
-            </ParaLine>
-        </Para>
-        <Para>
             <Unique value="1033622" type="enum"/>
             <PgfTag value="BrödIn" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
@@ -25965,7 +25856,7 @@
                     <XRefSrcText value="73054: TabellRekRub: Terapirekommendationer – Eradikering av Helicobacter pylori" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007179 550000" type="num"/>
+                    <XRefLastUpdate value="1423916951 471000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25998,7 +25889,7 @@
                     <XRefSrcText value="73054: TabellRekRub: Terapirekommendationer – Eradikering av Helicobacter pylori" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007179 551000" type="num"/>
+                    <XRefLastUpdate value="1423916951 471000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26064,7 +25955,6 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="167" type="enum"/>
                 <String>ringsterapi. Även patienter som tidigare har </String>
             </ParaLine>
             <ParaLine>
@@ -26096,6 +25986,7 @@
                 <String>pylori-infekterade patienter </String>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="167" type="enum"/>
                 <String>med ulcus vid NSAID- eller ASA-behand</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -26388,7 +26279,6 @@
                 <String>ulcusblödning, som står för ca </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="172" type="enum"/>
                 <String>hälften av fallen, samt blödning från vari</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -26402,7 +26292,7 @@
                     <MType value="2" type="enum"/>
                     <MTypeName value="Index" type="str"/>
                     <MText value="Mallory-Weissblödning" type="str"/>
-                    <MCurrPage value="87" type="str"/>
+                    <MCurrPage value="86" type="str"/>
                     <Unique value="1028715" type="enum"/>
                 </Marker>
                 <String>Mallory-Weissblöd</String>
@@ -26466,6 +26356,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="172" type="enum"/>
                 <String>varligaste blödningarna. Mortaliteten i övre </String>
             </ParaLine>
             <ParaLine>
@@ -26654,7 +26545,6 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="172" type="enum"/>
                 <String>nats. Man bör också se över indikationen för </String>
             </ParaLine>
             <ParaLine>
@@ -26681,6 +26571,7 @@
                 <String>bör helst inte användas. Även behandling </String>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="172" type="enum"/>
                 <String>med COX-2-hämmare är behäftad med en </String>
             </ParaLine>
             <ParaLine>
@@ -26826,7 +26717,6 @@
                 <String>er/dag tillsammans med klaritromycin </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="177" type="enum"/>
                 <String>10</String>
                 <Char value="HardSpace" type="enum"/>
                 <String>mg/kg kroppsvikt (max 500</String>
@@ -26850,7 +26740,7 @@
                     <MType value="9" type="enum"/>
                     <MTypeName value="Cross-Ref" type="str"/>
                     <MText value="56062: Rub1: Malignitet i esofagus – ventrikel" type="str"/>
-                    <MCurrPage value="88" type="str"/>
+                    <MCurrPage value="87" type="str"/>
                     <Unique value="1030751" type="enum"/>
                 </Marker>
                 <String>Malignitet i esofagus – ventrikel</String>
@@ -26865,14 +26755,14 @@
                     <MType value="2" type="enum"/>
                     <MTypeName value="Index" type="str"/>
                     <MText value="esofaguscancer" type="str"/>
-                    <MCurrPage value="88" type="str"/>
+                    <MCurrPage value="87" type="str"/>
                     <Unique value="1028722" type="enum"/>
                 </Marker>
                 <Marker>
                     <MType value="9" type="enum"/>
                     <MTypeName value="Cross-Ref" type="str"/>
                     <MText value="90141: Rub2efterRub1: Esofaguscancer" type="str"/>
-                    <MCurrPage value="88" type="str"/>
+                    <MCurrPage value="87" type="str"/>
                     <Unique value="1046776" type="enum"/>
                 </Marker>
                 <String>Esofaguscancer</String>
@@ -26926,6 +26816,7 @@
                 <String>epitelcancer och adenokarcinom. De senare </String>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="177" type="enum"/>
                 <String>är relaterade till Barretts esofagus och blir </String>
             </ParaLine>
             <ParaLine>
@@ -27212,7 +27103,6 @@
             <Unique value="1046402" type="enum"/>
             <PgfTag value="Rub1" type="str"/>
             <ParaLine>
-                <TextRectID value="177" type="enum"/>
                 <String>Läkemedel</String>
             </ParaLine>
         </Para>
@@ -27333,6 +27223,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="177" type="enum"/>
                 <String>synta och saknas vid korttidsbehandling. </String>
             </ParaLine>
             <ParaLine>
@@ -27657,7 +27548,6 @@
                 </PgfFont>
             </Pgf>
             <ParaLine>
-                <TextRectID value="179" type="enum"/>
                 <String>H</String>
                 <Font>
                     <FTag value="Nedsänkt" type="str"/>
@@ -27745,6 +27635,7 @@
                 <String>komasti, </String>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="179" type="enum"/>
                 <String>övergående stegring av P/S-krea</String>
                 <Char value="DiscHyphen" type="enum"/>
                 <String>tinin, rever</String>
@@ -28115,7 +28006,7 @@
                     <XRefSrcText value="73054: TabellRekRub: Terapirekommendationer – Eradikering av Helicobacter pylori" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007179 542000" type="num"/>
+                    <XRefLastUpdate value="1423916951 471000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28151,7 +28042,7 @@
                     <XRefSrcText value="73054: TabellRekRub: Terapirekommendationer – Eradikering av Helicobacter pylori" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007179 551000" type="num"/>
+                    <XRefLastUpdate value="1423916951 471000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28201,7 +28092,6 @@
                 <String>rebound-effekt vid utsättning av PPI, dvs </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="179" type="enum"/>
                 <String>att behandlingen i sig kan orsaka dyspep</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -28270,6 +28160,7 @@
                 <String>klopidogrel uppmärksammats och </String>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="179" type="enum"/>
                 <String>Läkemedelsverket har manat till försiktig</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -28590,7 +28481,6 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="180" type="enum"/>
                 <String>bination med NSAID, med samma biverk</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -28606,7 +28496,7 @@
             </ParaLine>
         </Para>
         <Para>
-            <Unique value="1026288" type="enum"/>
+            <Unique value="1047336" type="enum"/>
             <PgfTag value="Bröd" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
@@ -28614,11 +28504,11 @@
                     <MType value="2" type="enum"/>
                     <MTypeName value="Index" type="str"/>
                     <MText value="metoklopramid:magsäckens sjukdomar" type="str"/>
-                    <MCurrPage value="90" type="str"/>
+                    <MCurrPage value="89" type="str"/>
                     <Unique value="1028738" type="enum"/>
                 </Marker>
                 <String>Metoklopramid</String>
-                <FNote value="183" type="enum"/>
+                <FNote value="182" type="enum"/>
                 <String> används för tillfälligt bruk </String>
             </ParaLine>
             <ParaLine>
@@ -28640,6 +28530,7 @@
                 <String>ter på kräkningscentrum och med perifera </String>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="180" type="enum"/>
                 <String>effekter på gastrointestinalkanalen där den </String>
             </ParaLine>
             <ParaLine>
@@ -28659,6 +28550,48 @@
             <ParaLine>
                 <Char value="DiscHyphen" type="enum"/>
                 <String>oralt som tabletter. </String>
+            </ParaLine>
+        </Para>
+        <Para>
+            <Unique value="1047387" type="enum"/>
+            <PgfTag value="BrödIn" type="str"/>
+            <ParaLine>
+                <Font>
+                    <FColor value="Red" type="str"/>
+                </Font>
+                <String>Till gruppen prokinetiska läkemedel räknas också domperidon, som är en dopamianntagonist med effekt och användningsområden som liknar metoklopramid. Efter en </String>
+                <String>EU-gemensam granskning ska </String>
+                <String>domperidoninnehållande läkemedel endast användas </String>
+                <String></String>
+                <String>vid illamående och kräkningar. Tillgängliga </String>
+                <String>data för effektivitet är inte tillräckliga för </String>
+                <String>att stödja dess användning vid andra indikationer enligt Läkemedelsverket, </String>
+            </ParaLine>
+            <ParaLine>
+                <String></String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="4" type="enum"/>
+                    <FColor value="Blue" type="str"/>
+                </Font>
+                <Marker>
+                    <MType value="8" type="enum"/>
+                    <MTypeName value="Hypertext" type="str"/>
+                    <MText value="message URL http://www.lakemedelsverket.se/Alla-nyheter/NYHETER-2014/Ny-rekommendation-for-anvandning-av-domperidon-/" type="str"/>
+                    <MCurrPage value="90" type="str"/>
+                    <Unique value="1047338" type="enum"/>
+                </Marker>
+                <String>www.lakemedelsverket.se</String>
+            </ParaLine>
+            <ParaLine>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                </Font>
+                <String>.</String>
             </ParaLine>
         </Para>
         <Para>
@@ -28991,7 +28924,7 @@
                     <XRefSrcText value="73054: TabellRekRub: Terapirekommendationer – Eradikering av Helicobacter pylori" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007179 550000" type="num"/>
+                    <XRefLastUpdate value="1423916951 471000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -29016,7 +28949,7 @@
                     <XRefSrcText value="73054: TabellRekRub: Terapirekommendationer – Eradikering av Helicobacter pylori" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007179 551000" type="num"/>
+                    <XRefLastUpdate value="1423916951 471000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>

@@ -5913,6 +5913,252 @@
         </TblFormat>
     </TblCatalog>
     <KumihanCatalog>
+        <Kumihan>
+            <KLanguage value="UKEnglish" type="enum"/>
+            <CharClass>
+                <BegParentheses value="" type="str"/>
+                <EndParentheses value="" type="str"/>
+                <NoLineBeginChar value="" type="str"/>
+                <QuestionBang value="" type="str"/>
+                <CenteredPunct value="" type="str"/>
+                <PeriodComma value="" type="str"/>
+                <NonSeparableChar value="" type="str"/>
+                <PrecedingSymbol value="" type="str"/>
+                <SucceedingSymbol value="" type="str"/>
+                <AsianSpace value="" type="str"/>
+                <Hiragana value="" type="str"/>
+                <BaseCharWithSuper value="" type="str"/>
+                <BaseCharWithRubi value="" type="str"/>
+                <Numeral value="" type="str"/>
+                <UnitSymbol value="" type="str"/>
+                <RomanSpace value=" " type="str"/>
+                <RomanChar value="!&quot;#$%&amp;\q()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abc" type="str"/>
+                <RomanChar value="defghijklmnopqrstuvwxyz{|}~­ÄÅÇÉÑÖÜáàâäãåçéèêëí" type="str"/>
+                <RomanChar value="ìîïñóòôöõúùûü†°¢£§•¶ß®©™´¨¦ÆØ×±ð" type="str"/>
+                <RomanChar value="Š¥µ¹²³¼½ªº¾æø¿¡¬ÐƒÝý«»…þÀÃÕŒœ–—“" type="str"/>
+                <RomanChar value="”‘’÷ÞÿŸ⁄¤‹›ﬁﬂ‡·‚„‰ÂÊÁËÈÍÎÏÌÓ" type="str"/>
+                <RomanChar value="ÔšÒÚÛÙ€ˆ˜¯˘Ž°¸˝žˇ" type="str"/>
+                <ParenBegWariChu value="" type="str"/>
+                <ParenEndWariChu value="" type="str"/>
+                <Spare1 value="" type="str"/>
+                <Spare2 value="" type="str"/>
+                <Spare3 value="" type="str"/>
+                <Spare4 value="" type="str"/>
+                <Spare5 value="" type="str"/>
+            </CharClass>
+            <SqueezeTable>
+                <SqueezeHorizontal value="1 2 0 0 3 2 0 0 0 0 0 0 0 0 5 0 0 0 1 2 0 0 0 0 0" type="num"/>
+                <SqueezeVertical value="1 2 0 0 4 2 0 0 0 0 0 0 0 0 5 0 0 0 1 2 0 0 0 0 0" type="enum"/>
+            </SqueezeTable>
+            <SpreadTable>
+                <BegParentheses value="14  0  0  0  4  0  0  0  0  0  0  0  0 12  0  0  0  0  0 16  0  0  0  0  0 16" type="enum"/>
+                <EndParentheses value="1 15  1  1  4 15  1  1  1  0  1  1  1 10  1  1  1  1  1  1  1  1  1  1  1  0" type="enum"/>
+                <NoLineBeginChar value="2  0  0  0  4  0  0  0  0  0  0  0  3 12  3  3  0  3  0  0  0  0  0  0  0  0" type="enum"/>
+                <QuestionBang value="2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  3  0  0  0  0  0  0  0  0" type="enum"/>
+                <CenteredPunct value="3  3  3  3  5  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  0" type="enum"/>
+                <PeriodComma value="1 15  1  1  6  0  1  1  1  1  1  1  1 10  1  1  1  1  1  1  1  1  1  1  1  1" type="enum"/>
+                <NonSeparableChar value="2  0  0  0  4  0  0  0  0  0  0  0  0 12  0  0  0  0  0  0  0  0  0  0  0  0" type="enum"/>
+                <PrecedingSymbol value="2  0  0  0  4  0  0  0  0  0  0  0  0  0  0  0  0  0  0 16  0  0  0  0  0 16" type="enum"/>
+                <SucceedingSymbol value="2  0  0  0  4  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0" type="enum"/>
+                <AsianSpace value="0  0  0  0  4  0  0  0  0  0  0  0  0 12  0  0  0  0  0  0  0  0  0  0  0  0" type="enum"/>
+                <Hiragana value="2  0  0  0  4  0  0  0  0  0  0  0  3 12  3  3  0  7  0  0  0  0  0  0  0  0" type="enum"/>
+                <Others value="2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0" type="enum"/>
+                <BaseCharWithSuper value="2  0  0  0  4  0  0  0  0  0  4  4  0  4  0  0  0  3  3  0  4  4  4  4  4  0" type="enum"/>
+                <BaseCharWithRubi value="11 12  0  0  4 12 12  0  0 12 12  0  3 13  3  3  0  7  0  0  0  0  0  0  0  0" type="enum"/>
+                <Numeral value="2  0  0  0  4  0  0  0  0  0  4  4  0  4  0  3  0  0  3  0  4  4  4  4  4  0" type="enum"/>
+                <UnitSymbol value="2  0  0  0  4  0  0  0  0  0  4  4  0  4  3  0  0  0  3  0  4  4  4  4  4  0" type="enum"/>
+                <RomanSpace value="2  0  0  0  4  0  0  0  0  0  0  0  0  0  0  0  0  0  0  9  0  0  0  0  0  9" type="enum"/>
+                <RomanChar value="2  0  0  0  4  0  0  0  0  0  8  8  3  8  0  0  0  0  3  0  8  8  8  8  8  0" type="enum"/>
+                <ParenBegWariChu value="2 16 16 16 16 16  0  0  0  0  0  0  0  0  0  0  9  0 16 16  0  0  0  0  0 16" type="enum"/>
+                <ParenEndWariChu value="2  0  0  0  4  0  0  0  0  0  0  0  4  0  4  4  0  4  0 16  0  0  0  0  0  9" type="enum"/>
+                <Spare1 value="2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0" type="enum"/>
+                <Spare2 value="2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0" type="enum"/>
+                <Spare3 value="2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0" type="enum"/>
+                <Spare4 value="2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0" type="enum"/>
+                <Spare5 value="2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0" type="enum"/>
+                <LineBeginEnd value="0 16 16 16 16 16  0  0  0  0  0  0  0  0  0  0  9  0  9 16  0  0  0  0  0 16" type="enum"/>
+            </SpreadTable>
+            <LineBreakTable>
+                <BegParentheses value="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3 1 1 1 1 1" type="enum"/>
+                <EndParentheses value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <NoLineBeginChar value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <QuestionBang value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <CenteredPunct value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <PeriodComma value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <NonSeparableChar value="0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <PrecedingSymbol value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 1 0 0 0 0 3 0 0 0 0 0" type="enum"/>
+                <SucceedingSymbol value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <AsianSpace value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <Hiragana value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <Others value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <BaseCharWithSuper value="0 1 1 1 1 1 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0" type="num"/>
+                <BaseCharWithRubi value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <Numeral value="0 1 1 1 1 1 0 0 1 0 0 0 0 0 1 0 0 1 0 1 0 0 0 0 0" type="enum"/>
+                <UnitSymbol value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 0 0 0 0" type="enum"/>
+                <RomanSpace value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0" type="enum"/>
+                <RomanChar value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 1 1 0 2 0 1 0 0 0 0 0" type="enum"/>
+                <ParenBegWariChu value="1 3 3 3 3 3 1 1 1 1 1 1 1 1 1 1 3 1 3 3 1 1 1 1 1" type="enum"/>
+                <ParenEndWariChu value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0" type="enum"/>
+                <Spare1 value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <Spare2 value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <Spare3 value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <Spare4 value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <Spare5 value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+            </LineBreakTable>
+            <ExtraSpaceTable>
+                <BegParentheses value="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 6 1 1 1 1 1" type="enum"/>
+                <EndParentheses value="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1" type="enum"/>
+                <NoLineBeginChar value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <QuestionBang value="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1" type="enum"/>
+                <CenteredPunct value="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1" type="enum"/>
+                <PeriodComma value="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1" type="enum"/>
+                <NonSeparableChar value="1 1 0 1 1 1 1 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <PrecedingSymbol value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 1 0 0 0 0 6 0 0 0 0 0" type="enum"/>
+                <SucceedingSymbol value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <AsianSpace value="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1" type="enum"/>
+                <Hiragana value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0" type="enum"/>
+                <Others value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0" type="enum"/>
+                <BaseCharWithSuper value="1 1 0 1 1 1 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0" type="num"/>
+                <BaseCharWithRubi value="1 1 0 1 1 1 0 0 0 1 0 0 0 1 0 0 0 4 0 1 0 0 0 0 0" type="enum"/>
+                <Numeral value="1 1 1 1 1 1 0 0 1 1 0 0 0 0 1 1 0 1 1 1 0 0 0 0 0" type="enum"/>
+                <UnitSymbol value="1 1 1 1 1 1 0 0 0 1 0 0 0 0 1 1 0 1 1 1 0 0 0 0 0" type="enum"/>
+                <RomanSpace value="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5 2 0 6 0 0 0 0 0" type="enum"/>
+                <RomanChar value="1 1 1 1 1 1 0 0 0 1 4 4 0 4 1 1 2 3 1 1 4 4 4 4 4" type="enum"/>
+                <ParenBegWariChu value="1 6 6 6 6 6 1 1 1 1 1 1 1 1 1 1 6 1 6 6 1 1 1 1 1" type="enum"/>
+                <ParenEndWariChu value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 6 0 0 0 0 0" type="enum"/>
+                <Spare1 value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0" type="enum"/>
+                <Spare2 value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0" type="enum"/>
+                <Spare3 value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0" type="enum"/>
+                <Spare4 value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0" type="enum"/>
+                <Spare5 value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0" type="enum"/>
+            </ExtraSpaceTable>
+        </Kumihan>
+        <Kumihan>
+            <KLanguage value="Japanese" type="enum"/>
+            <CharClass>
+                <BegParentheses value="‘“（〔［｛〈《「『【" type="str"/>
+                <EndParentheses value="、，’”）〕］｝〉》」』】" type="str"/>
+                <NoLineBeginChar value="ヽヾゝゞ々ーぁぃぅぇぉっゃゅょゎァィゥェォ" type="str"/>
+                <NoLineBeginChar value="ッャュョヮヵヶ" type="str"/>
+                <QuestionBang value="？！" type="str"/>
+                <CenteredPunct value="・：；" type="str"/>
+                <PeriodComma value="。．" type="str"/>
+                <NonSeparableChar value="―…‥" type="str"/>
+                <PrecedingSymbol value="￥＄￡" type="str"/>
+                <SucceedingSymbol value="゛゜°′″￠％‰" type="str"/>
+                <AsianSpace value="　" type="str"/>
+                <Hiragana value="あいうえおかがきぎくぐけげこごさざしじすずせぜ" type="str"/>
+                <Hiragana value="そぞただちぢつづてでとどなにぬねのはばぱひびぴ" type="str"/>
+                <Hiragana value="ふぶぷへべぺほぼぽまみむめもやゆよらりるれろわ" type="str"/>
+                <Hiragana value="ゐゑをん" type="str"/>
+                <BaseCharWithSuper value="" type="str"/>
+                <BaseCharWithRubi value="" type="str"/>
+                <Numeral value="０１２３４５６７８９" type="str"/>
+                <UnitSymbol value="" type="str"/>
+                <RomanSpace value=" " type="str"/>
+                <RomanChar value="!&quot;#$%&amp;\q()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abc" type="str"/>
+                <RomanChar value="defghijklmnopqrstuvwxyz{|}~ＡＢＣＤＥＦＧＨＩＪＫＬＭＮ" type="str"/>
+                <RomanChar value="ＯＰＱＲＳＴＵＶＷＸＹＺａｂｃｄｅｆｇｈｉｊｋ" type="str"/>
+                <RomanChar value="ｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚΑΒΓΔΕΖΗΘΙΚΛ" type="str"/>
+                <RomanChar value="ΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρστυφ" type="str"/>
+                <RomanChar value="χψωАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭ" type="str"/>
+                <RomanChar value="ЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэю" type="str"/>
+                <RomanChar value="я" type="str"/>
+                <ParenBegWariChu value="" type="str"/>
+                <ParenEndWariChu value="" type="str"/>
+                <Spare1 value="" type="str"/>
+                <Spare2 value="" type="str"/>
+                <Spare3 value="" type="str"/>
+                <Spare4 value="" type="str"/>
+                <Spare5 value="" type="str"/>
+            </CharClass>
+            <SqueezeTable>
+                <SqueezeHorizontal value="1 2 0 0 3 2 0 0 0 0 0 0 0 0 5 0 0 0 1 2 0 0 0 0 0" type="num"/>
+                <SqueezeVertical value="1 2 0 0 4 2 0 0 0 0 0 0 0 0 5 0 0 0 1 2 0 0 0 0 0" type="enum"/>
+            </SqueezeTable>
+            <SpreadTable>
+                <BegParentheses value="14  0  0  0  4  0  0  0  0  0  0  0  0 12  0  0  0  0  0 16  0  0  0  0  0 16" type="enum"/>
+                <EndParentheses value="1 15  1  1  4 15  1  1  1  0  1  1  1 10  1  1  1  1  1  1  1  1  1  1  1  0" type="enum"/>
+                <NoLineBeginChar value="2  0  0  0  4  0  0  0  0  0  0  0  3 12  3  3  0  3  0  0  0  0  0  0  0  0" type="enum"/>
+                <QuestionBang value="2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  3  0  0  0  0  0  0  0  0" type="enum"/>
+                <CenteredPunct value="3  3  3  3  5  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  0" type="enum"/>
+                <PeriodComma value="1 15  1  1  6  0  1  1  1  1  1  1  1 10  1  1  1  1  1  1  1  1  1  1  1  1" type="enum"/>
+                <NonSeparableChar value="2  0  0  0  4  0  0  0  0  0  0  0  0 12  0  0  0  0  0  0  0  0  0  0  0  0" type="enum"/>
+                <PrecedingSymbol value="2  0  0  0  4  0  0  0  0  0  0  0  0  0  0  0  0  0  0 16  0  0  0  0  0 16" type="enum"/>
+                <SucceedingSymbol value="2  0  0  0  4  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0" type="enum"/>
+                <AsianSpace value="0  0  0  0  4  0  0  0  0  0  0  0  0 12  0  0  0  0  0  0  0  0  0  0  0  0" type="enum"/>
+                <Hiragana value="2  0  0  0  4  0  0  0  0  0  0  0  3 12  3  3  0  7  0  0  0  0  0  0  0  0" type="enum"/>
+                <Others value="2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0" type="enum"/>
+                <BaseCharWithSuper value="2  0  0  0  4  0  0  0  0  0  4  4  0  4  0  0  0  3  3  0  4  4  4  4  4  0" type="enum"/>
+                <BaseCharWithRubi value="11 12  0  0  4 12 12  0  0 12 12  0  3 13  3  3  0  7  0  0  0  0  0  0  0  0" type="enum"/>
+                <Numeral value="2  0  0  0  4  0  0  0  0  0  4  4  0  4  0  3  0  0  3  0  4  4  4  4  4  0" type="enum"/>
+                <UnitSymbol value="2  0  0  0  4  0  0  0  0  0  4  4  0  4  3  0  0  0  3  0  4  4  4  4  4  0" type="enum"/>
+                <RomanSpace value="2  0  0  0  4  0  0  0  0  0  0  0  0  0  0  0  0  0  0  9  0  0  0  0  0  9" type="enum"/>
+                <RomanChar value="2  0  0  0  4  0  0  0  0  0  8  8  3  8  0  0  0  0  3  0  8  8  8  8  8  0" type="enum"/>
+                <ParenBegWariChu value="2 16 16 16 16 16  0  0  0  0  0  0  0  0  0  0  9  0 16 16  0  0  0  0  0 16" type="enum"/>
+                <ParenEndWariChu value="2  0  0  0  4  0  0  0  0  0  0  0  4  0  4  4  0  4  0 16  0  0  0  0  0  9" type="enum"/>
+                <Spare1 value="2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0" type="enum"/>
+                <Spare2 value="2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0" type="enum"/>
+                <Spare3 value="2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0" type="enum"/>
+                <Spare4 value="2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0" type="enum"/>
+                <Spare5 value="2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0" type="enum"/>
+                <LineBeginEnd value="0 16 16 16 16 16  0  0  0  0  0  0  0  0  0  0  9  0  9 16  0  0  0  0  0 16" type="enum"/>
+            </SpreadTable>
+            <LineBreakTable>
+                <BegParentheses value="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3 1 1 1 1 1" type="enum"/>
+                <EndParentheses value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <NoLineBeginChar value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <QuestionBang value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <CenteredPunct value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <PeriodComma value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <NonSeparableChar value="0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <PrecedingSymbol value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 1 0 0 0 0 3 0 0 0 0 0" type="enum"/>
+                <SucceedingSymbol value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <AsianSpace value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <Hiragana value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <Others value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <BaseCharWithSuper value="0 1 1 1 1 1 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0" type="num"/>
+                <BaseCharWithRubi value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <Numeral value="0 1 1 1 1 1 0 0 1 0 0 0 0 0 1 0 0 1 0 1 0 0 0 0 0" type="enum"/>
+                <UnitSymbol value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 0 0 0 0" type="enum"/>
+                <RomanSpace value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0" type="enum"/>
+                <RomanChar value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 1 1 0 2 0 1 0 0 0 0 0" type="enum"/>
+                <ParenBegWariChu value="1 3 3 3 3 3 1 1 1 1 1 1 1 1 1 1 3 1 3 3 1 1 1 1 1" type="enum"/>
+                <ParenEndWariChu value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0" type="enum"/>
+                <Spare1 value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <Spare2 value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <Spare3 value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <Spare4 value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <Spare5 value="0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+            </LineBreakTable>
+            <ExtraSpaceTable>
+                <BegParentheses value="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 6 1 1 1 1 1" type="enum"/>
+                <EndParentheses value="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1" type="enum"/>
+                <NoLineBeginChar value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <QuestionBang value="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1" type="enum"/>
+                <CenteredPunct value="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1" type="enum"/>
+                <PeriodComma value="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1" type="enum"/>
+                <NonSeparableChar value="1 1 0 1 1 1 1 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <PrecedingSymbol value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 1 0 0 0 0 6 0 0 0 0 0" type="enum"/>
+                <SucceedingSymbol value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0" type="enum"/>
+                <AsianSpace value="1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1" type="enum"/>
+                <Hiragana value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0" type="enum"/>
+                <Others value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0" type="enum"/>
+                <BaseCharWithSuper value="1 1 0 1 1 1 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0" type="num"/>
+                <BaseCharWithRubi value="1 1 0 1 1 1 0 0 0 1 0 0 0 1 0 0 0 4 0 1 0 0 0 0 0" type="enum"/>
+                <Numeral value="1 1 1 1 1 1 0 0 1 1 0 0 0 0 1 1 0 1 1 1 0 0 0 0 0" type="enum"/>
+                <UnitSymbol value="1 1 1 1 1 1 0 0 0 1 0 0 0 0 1 1 0 1 1 1 0 0 0 0 0" type="enum"/>
+                <RomanSpace value="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5 2 0 6 0 0 0 0 0" type="enum"/>
+                <RomanChar value="1 1 1 1 1 1 0 0 0 1 4 4 0 4 1 1 2 3 1 1 4 4 4 4 4" type="enum"/>
+                <ParenBegWariChu value="1 6 6 6 6 6 1 1 1 1 1 1 1 1 1 1 6 1 6 6 1 1 1 1 1" type="enum"/>
+                <ParenEndWariChu value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 6 0 0 0 0 0" type="enum"/>
+                <Spare1 value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0" type="enum"/>
+                <Spare2 value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0" type="enum"/>
+                <Spare3 value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0" type="enum"/>
+                <Spare4 value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0" type="enum"/>
+                <Spare5 value="1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0" type="enum"/>
+            </ExtraSpaceTable>
+        </Kumihan>
     </KumihanCatalog>
     <Views>
         <View>
@@ -6113,10 +6359,10 @@
         </XRefFormat>
     </XRefFormats>
     <Document>
-        <DViewRect value="18 20 1283 764 " type="enum"/>
-        <DWindowRect value="0 0 1751 1044 " type="enum"/>
-        <DViewScale value="112.28%" type="num"/>
-        <DNextUnique value="1066710" type="enum"/>
+        <DViewRect value="18 20 1271 631 " type="enum"/>
+        <DWindowRect value="0 0 1735 867 " type="enum"/>
+        <DViewScale value="95.9%" type="num"/>
+        <DNextUnique value="1066939" type="enum"/>
         <DPageSize value="170.0 mm 240.0 mm" type="num"/>
         <DMenuBar value="" type="str"/>
         <DVoMenuBar value="" type="str"/>
@@ -6197,7 +6443,7 @@
         <DFullRulers value="Yes" type="enum"/>
         <DGraphicsOff value="No" type="enum"/>
         <DCurrentView value="1" type="enum"/>
-        <DBordersOn value="No" type="enum"/>
+        <DBordersOn value="Yes" type="enum"/>
         <DSymbolsOn value="Yes" type="enum"/>
         <DLinkBoundariesOn value="No" type="enum"/>
         <DTrackChangesOn value="No" type="enum"/>
@@ -6298,7 +6544,7 @@
         </PDFDocInfo>
         <DocFileInfo value="
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30323A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131342D30362D31305431373A35313A30312B30323A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131342D30362D31305431373A35313A30312B30323A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131352D30312D31345431343A32323A32382B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131352D30312D31345431343A32323A32382B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E4F7374656F706F726F73206F6368206672616B74757270726576656E74696F6E20E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020
@@ -13234,7 +13480,7 @@
                                         <FTag value="" type="str"/>
                                         <FPlatformName value="W.Arial Unicode MS.R.400" type="str"/>
                                         <FFamily value="Arial Unicode MS" type="str"/>
-                                        <FEncoding value="GB2312-80.EUC" type="str"/>
+                                        <FEncoding value="JISX0208.ShiftJIS" type="str"/>
                                         <FLocked value="No" type="enum"/>
                                     </Font>
                                     <String>≤</String>
@@ -42333,10 +42579,10 @@
         </TextRect>
         <TextRect>
             <ID value="151" type="enum"/>
-            <Unique value="1066699" type="enum"/>
+            <Unique value="1066715" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
-            <ShapeRect value="57.0 mm 7.0 mm 95.0 mm 12.30905 mm" type="num"/>
-            <BRect value="57.0 mm 7.0 mm 95.0 mm 12.30905 mm" type="num"/>
+            <ShapeRect value="57.0 mm 7.0 mm 95.0 mm 19.20616 mm" type="num"/>
+            <BRect value="57.0 mm 7.0 mm 95.0 mm 19.20616 mm" type="num"/>
             <TRNumColumns value="1" type="enum"/>
             <TRColumnGap value="5.00001 mm" type="num"/>
             <TRColumnBalance value="No" type="enum"/>
@@ -43859,6 +44105,46 @@
         <TFTag value="A" type="str"/>
         <TFAutoConnect value="Yes" type="enum"/>
         <Notes>
+            <FNote>
+                <ID value="178" type="enum"/>
+                <Para>
+                    <Unique value="1066723" type="enum"/>
+                    <PgfTag value="Footnote" type="str"/>
+                    <ParaLine>
+                        <Font>
+                            <FTag value="" type="str"/>
+                            <FLocked value="No" type="enum"/>
+                            <FSeparation value="2" type="enum"/>
+                            <FColor value="Red" type="str"/>
+                        </Font>
+                        <String>“D-vitaminbehandling och skeletthälsa – svenska riktlinjer behövs&quot; publicerad 2014-07-29,</String>
+                    </ParaLine>
+                    <ParaLine>
+                        <Char value="DiscHyphen" type="enum"/>
+                        <String></String>
+                        <Font>
+                            <FTag value="" type="str"/>
+                            <FLocked value="No" type="enum"/>
+                        </Font>
+                        <String> </String>
+                        <Char value="HardReturn" type="enum"/>
+                    </ParaLine>
+                    <ParaLine>
+                        <Font>
+                            <FTag value="Blue" type="str"/>
+                            <FLocked value="No" type="enum"/>
+                        </Font>
+                        <Marker>
+                            <MType value="8" type="enum"/>
+                            <MTypeName value="Hypertext" type="str"/>
+                            <MText value="message URL http://www.lakartidningen.se/Klinik-och-vetenskap/Rapport/2014/07/D-vitaminbehandling-och-skeletthalsa--svenska-riktlinjer-behovs/" type="str"/>
+                            <MCurrPage value="619" type="str"/>
+                            <Unique value="1066724" type="enum"/>
+                        </Marker>
+                        <String>www.lakartidningen.se</String>
+                    </ParaLine>
+                </Para>
+            </FNote>
         </Notes>
         <Para>
             <Unique value="1054968" type="enum"/>
@@ -45169,7 +45455,7 @@
                     <XRefSrcText value="60772: FaktaRub1: Riskfaktorer i FRAX (6)" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007461 613000" type="num"/>
+                    <XRefLastUpdate value="1423920148 758000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -45559,7 +45845,7 @@
                     <XRefSrcText value="25078: FaktaRub1: Bedömning av frakturrisk vid misstanke om osteoporos" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007461 613000" type="num"/>
+                    <XRefLastUpdate value="1423920148 758000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -45971,7 +46257,7 @@
                     <XRefSrcText value="60152: FaktaRub1: Laboratorieprover som tas för att utesluta andra" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007461 613000" type="num"/>
+                    <XRefLastUpdate value="1423920148 758000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -46143,7 +46429,7 @@
                     <XRefSrcText value="94041: FaktaRub1: Praktiska fall- och frakturpreventiva insatser\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007461 613000" type="num"/>
+                    <XRefLastUpdate value="1423920148 758000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -46168,7 +46454,7 @@
                     <XRefSrcText value="94041: FaktaRub1: Praktiska fall- och frakturpreventiva insatser\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007461 613000" type="num"/>
+                    <XRefLastUpdate value="1423920148 758000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -46308,7 +46594,7 @@
                     <XRefSrcText value="94041: FaktaRub1: Praktiska fall- och frakturpreventiva insatser\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007461 614000" type="num"/>
+                    <XRefLastUpdate value="1423920148 758000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -46565,7 +46851,7 @@
                     <XRefSrcText value="38388: TabellRekRub: Terapirekommendationer – för patienter med mycket hög respektive låg risk för" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007461 613000" type="num"/>
+                    <XRefLastUpdate value="1423920148 758000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -46590,7 +46876,7 @@
                     <XRefSrcText value="38388: TabellRekRub: Terapirekommendationer – för patienter med mycket hög respektive låg risk för" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007461 613000" type="num"/>
+                    <XRefLastUpdate value="1423920148 758000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -46624,6 +46910,17 @@
                     <Unique value="1060681" type="enum"/>
                 </Marker>
                 <String>Kalcium och vitamin D</String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                </Font>
+                <FNote value="178" type="enum"/>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
             </ParaLine>
         </Para>
         <Para>
@@ -46924,6 +47221,7 @@
                 <String>förstoppning orsakad av kalciumtillskottet. </String>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="168" type="enum"/>
                 <String>Lindrigare oftast övergående hyperkalce</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -46935,7 +47233,6 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="168" type="enum"/>
                 <String>cium och P/S-kreatinin bör kontrolleras ef</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -47189,6 +47486,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="168" type="enum"/>
                 <String>dier med postmenopausala kvinnor med an</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -47200,7 +47498,6 @@
                 <String>ler låg bentäthet i rygg eller höft kan man </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="168" type="enum"/>
                 <String>se en relativ riskreduktion för kotkompres</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -47263,7 +47560,7 @@
                     <XRefSrcText value="38388: TabellRekRub: Terapirekommendationer – för patienter med mycket hög respektive låg risk för" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007461 613000" type="num"/>
+                    <XRefLastUpdate value="1423920148 758000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -47288,7 +47585,7 @@
                     <XRefSrcText value="38388: TabellRekRub: Terapirekommendationer – för patienter med mycket hög respektive låg risk för" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007461 613000" type="num"/>
+                    <XRefLastUpdate value="1423920148 758000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -47310,7 +47607,7 @@
             </ParaLine>
         </Para>
         <Para>
-            <Unique value="1063769" type="enum"/>
+            <Unique value="1066760" type="enum"/>
             <PgfTag value="BrödIn" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
@@ -47319,7 +47616,7 @@
                     <MTypeName value="Index" type="str"/>
                     <MText value="bisfosfonater:biverkningar" type="str"/>
                     <MCurrPage value="620" type="str"/>
-                    <Unique value="1063768" type="enum"/>
+                    <Unique value="1066759" type="enum"/>
                 </Marker>
                 <String>Biverkningar av perorala bisfosfonater är </String>
             </ParaLine>
@@ -47351,7 +47648,7 @@
                     <MTypeName value="Index" type="str"/>
                     <MText value="käkbensnekros:bisfosfonater" type="str"/>
                     <MCurrPage value="620" type="str"/>
-                    <Unique value="1063770" type="enum"/>
+                    <Unique value="1066761" type="enum"/>
                 </Marker>
                 <String>käk</String>
                 <Char value="SoftHyphen" type="enum"/>
@@ -47363,7 +47660,7 @@
                     <MTypeName value="Index" type="str"/>
                     <MText value="atypisk femurfraktur:bisfosfonater" type="str"/>
                     <MCurrPage value="620" type="str"/>
-                    <Unique value="1063771" type="enum"/>
+                    <Unique value="1066762" type="enum"/>
                 </Marker>
                 <String>atypiska femurfrakturer </String>
             </ParaLine>
@@ -47390,71 +47687,61 @@
             </ParaLine>
             <ParaLine>
                 <String>rige </String>
-                <Font>
-                    <FTag value="Blue" type="str"/>
-                    <FLocked value="No" type="enum"/>
-                </Font>
                 <Marker>
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="gotolink 16K2a" type="str"/>
                     <MCurrPage value="620" type="str"/>
-                    <Unique value="1063772" type="enum"/>
+                    <Unique value="1066763" type="enum"/>
                 </Marker>
-                <String>(16)</String>
-            </ParaLine>
-            <ParaLine>
-            <Font>
-                <FTag value="" type="str"/>
-                <FLocked value="No" type="enum"/>
-                <FSeparation value="2" type="enum"/>
-                <FColor value="Red" type="str"/>
-            </Font>
-            <String>. Vad gäller AFF visar en svensk studie en riskökning i samma storleksordning samt att risken ökar med behandlingstiden </String>
+                <String>(16). </String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                </Font>
+                <String>Vad gäller AFF visar en svensk </String>
+                <String>studie en riskökning i samma storleksordning samt att risken ökar med behandlingstiden</String>
             </ParaLine>
             <ParaLine>
                 <Font>
                     <FTag value="Blue" type="str"/>
                     <FLocked value="No" type="enum"/>
                 </Font>
+                <String> </String>
                 <Marker>
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="gotolink 17K2a" type="str"/>
                     <MCurrPage value="620" type="str"/>
-                    <Unique value="1063832" type="enum"/>
+                    <Unique value="1066776" type="enum"/>
                 </Marker>
-                <String>(17)</String>
+                <String>(17, </String>
+                <Marker>
+                    <MType value="8" type="enum"/>
+                    <MTypeName value="Hypertext" type="str"/>
+                    <MText value="gotolink 18K2a" type="str"/>
+                    <MCurrPage value="620" type="str"/>
+                    <Unique value="1066777" type="enum"/>
+                </Marker>
+                <String>18)</String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                </Font>
+                <String>. Risken för käkbensnekros </String>
+                <String>och AFF bör vägas mot förväntad vinst vid </String>
+                <String>långtidsbehandling.</String>
             </ParaLine>
             <ParaLine>
-            <Font>
-                <FTag value="" type="str"/>
-                <FLocked value="No" type="enum"/>
-                <FSeparation value="2" type="enum"/>
-                <FColor value="Red" type="str"/>
-            </Font>
-                <String>. Risken för käkbensnekros och </String>
-            <Font>
-                <FTag value="" type="str"/>
-                <FLocked value="No" type="enum"/>
-                <FSeparation value="2" type="enum"/>
-                <FColor value="Red" type="str"/>
-            </Font>
-                <String>AFF bör vägas mot förväntad vinst vid </String>
-            </ParaLine>
-            <ParaLine>
-            <Font>
-                <FTag value="" type="str"/>
-                <FLocked value="No" type="enum"/>
-                <FSeparation value="2" type="enum"/>
-                <FColor value="Red" type="str"/>
-            </Font>
-                <String>långtidsbehandling. </String>
                 <Font>
                     <FTag value="" type="str"/>
                     <FLocked value="No" type="enum"/>
                 </Font>
-                <String>Se även kapitlet Mun</String>
+                <String> Se även kapitlet Mun</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
@@ -47468,14 +47755,14 @@
                     <XRefSrcText value="36887: Rub1: Käkbensnekroser relaterade till bisfosfonater, biolog" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;u&gt;&lt;c&gt;LB TRYCKVERSION 2014&lt;c&gt;N2_AND_Munhala_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1405007461 752000" type="num"/>
+                    <XRefLastUpdate value="1423759208 540000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
                         <XRefClientName value="" type="str"/>
                         <XRefClientType value="" type="str"/>
                     </XRefApiClient>
-                    <Unique value="1063775" type="enum"/>
+                    <Unique value="1066766" type="enum"/>
                 </XRef>
                 <Font>
                     <FTag value="Blue" type="str"/>
@@ -47491,7 +47778,7 @@
             </ParaLine>
         </Para>
         <Para>
-            <Unique value="1047106" type="enum"/>
+            <Unique value="1066769" type="enum"/>
             <PgfTag value="Rub2" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
@@ -47501,7 +47788,7 @@
                     <MTypeName value="Index" type="str"/>
                     <MText value="denosumab " type="str"/>
                     <MCurrPage value="620" type="str"/>
-                    <Unique value="1059009" type="enum"/>
+                    <Unique value="1066768" type="enum"/>
                 </Marker>
                 <String>enosumab</String>
             </ParaLine>
@@ -48478,7 +48765,7 @@
             </ParaLine>
         </Para>
         <Para>
-            <Unique value="1048890" type="enum"/>
+            <Unique value="1066811" type="enum"/>
             <PgfTag value="BrödIn" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
@@ -48496,11 +48783,11 @@
                 <Marker>
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
-                    <MText value="gotolink 18K2a" type="str"/>
+                    <MText value="gotolink 19K2a" type="str"/>
                     <MCurrPage value="622" type="str"/>
-                    <Unique value="1063025" type="enum"/>
+                    <Unique value="1066819" type="enum"/>
                 </Marker>
-                <String>(18)</String>
+                <String>(19)</String>
                 <Font>
                     <FTag value="" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -48511,7 +48798,7 @@
                     <MTypeName value="Index" type="str"/>
                     <MText value="bisfosfonater:behandlingstid" type="str"/>
                     <MCurrPage value="622" type="str"/>
-                    <Unique value="1059088" type="enum"/>
+                    <Unique value="1066813" type="enum"/>
                 </Marker>
                 <String>bisfosfonater </String>
             </ParaLine>
@@ -48553,11 +48840,11 @@
                 <Marker>
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
-                    <MText value="gotolink 18K2a" type="str"/>
+                    <MText value="gotolink 19K2a" type="str"/>
                     <MCurrPage value="622" type="str"/>
-                    <Unique value="1063032" type="enum"/>
+                    <Unique value="1066832" type="enum"/>
                 </Marker>
-                <String>(18)</String>
+                <String>(19)</String>
                 <Font>
                     <FTag value="" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -48617,11 +48904,11 @@
                 <Marker>
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
-                    <MText value="gotolink 19K2a" type="str"/>
+                    <MText value="gotolink 20K2a" type="str"/>
                     <MCurrPage value="622" type="str"/>
-                    <Unique value="1063039" type="enum"/>
+                    <Unique value="1066880" type="enum"/>
                 </Marker>
-                <String>(19)</String>
+                <String>(20)</String>
                 <Font>
                     <FTag value="" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -48730,7 +49017,7 @@
                     <XRefSrcText value="89705: Rub2: \x0d Kalcium och vitamin D\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007461 613000" type="num"/>
+                    <XRefLastUpdate value="1423920148 758000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -49731,7 +50018,7 @@
             </ParaLine>
         </Para>
         <Para>
-            <Unique value="1062542" type="enum"/>
+            <Unique value="1066845" type="enum"/>
             <PgfTag value="RefTextNrForts" type="str"/>
             <PgfNumString value="17.\t" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
@@ -49751,24 +50038,10 @@
                     <FColor value="Red" type="str"/>
                 </Font>
                 <String>Schilcher J1, Michaëlsson K, Aspenberg P. </String>
-            </ParaLine>
-            <ParaLine>
-            <Font>
-                <FTag value="" type="str"/>
-                <FLocked value="No" type="enum"/>
-                <FSeparation value="2" type="enum"/>
-                <FColor value="Red" type="str"/>
-            </Font>
                 <String>Bisphosphonate use and atypical fractures of the </String>
+                <String>femoral shaft.</String>
             </ParaLine>
             <ParaLine>
-            <Font>
-                <FTag value="" type="str"/>
-                <FLocked value="No" type="enum"/>
-                <FSeparation value="2" type="enum"/>
-                <FColor value="Red" type="str"/>
-            </Font>
-                <String>femoral shaft.</String>
                 <Font>
                     <FTag value="Blue" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -49779,29 +50052,93 @@
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="message URL http://www.ncbi.nlm.nih.gov/pubmed/?term=schilcher+j+2011+bisphosphonate" type="str"/>
                     <MCurrPage value="624" type="str"/>
-                    <Unique value="1063811" type="enum"/>
+                    <Unique value="1066846" type="enum"/>
                 </Marker>
-                <String>N Engl J Med. 2011;364:1728—37. </String>
-                <Font>
-                    <FTag value="" type="str"/>
-                    <FLocked value="No" type="enum"/>
-                    <FSeparation value="4" type="enum"/>
-                    <FColor value="Blue" type="str"/>
-                </Font>
+                <String>N Engl J Med. 2011;364:1728—37.</String>
             </ParaLine>
         </Para>
         <Para>
-            <Unique value="1054584" type="enum"/>
+            <Unique value="1066848" type="enum"/>
             <PgfTag value="RefTextNrForts" type="str"/>
+            <Pgf>
+                <PgfFont>
+                    <FTag value="" type="str"/>
+                    <FPlatformName value="W.Frutiger LT Std 55 Roman.R.400" type="str"/>
+                    <FFamily value="Frutiger LT Std 55 Roman" type="str"/>
+                    <FVar value="Regular" type="str"/>
+                    <FWeight value="Regular" type="str"/>
+                    <FAngle value="Regular" type="str"/>
+                    <FPostScriptName value="FrutigerLTStd-Roman" type="str"/>
+                    <FEncoding value="FrameRoman" type="str"/>
+                    <FSize value="7.5 pt" type="num"/>
+                    <FUnderlining value="FNoUnderlining" type="enum"/>
+                    <FOverline value="No" type="enum"/>
+                    <FStrike value="No" type="enum"/>
+                    <FChangeBar value="No" type="enum"/>
+                    <FOutline value="No" type="enum"/>
+                    <FShadow value="No" type="enum"/>
+                    <FPairKern value="Yes" type="enum"/>
+                    <FTsume value="No" type="enum"/>
+                    <FCase value="FAsTyped" type="enum"/>
+                    <FPosition value="FNormal" type="enum"/>
+                    <FDX value="0.0%" type="num"/>
+                    <FDY value="0.0%" type="num"/>
+                    <FDW value="0.0%" type="num"/>
+                    <FStretch value="100.0%" type="num"/>
+                    <FLanguage value="Swedish" type="enum"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                    <FBackgroundColor value="NoColor" type="enum"/>
+                </PgfFont>
+            </Pgf>
             <PgfNumString value="18.\t" type="str"/>
-            <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
                 <Marker>
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="newlink 18K2a" type="str"/>
                     <MCurrPage value="624" type="str"/>
-                    <Unique value="1062956" type="enum"/>
+                    <Unique value="1066847" type="enum"/>
+                </Marker>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                </Font>
+                <String>Schilcher J1, Koeppen V, Aspenberg P, Michaëlsson K. Risk of atypical femoral fracture during </String>
+                <String>and after bisphosphonate use. </String>
+            </ParaLine>
+            <ParaLine>
+                <Font>
+                    <FTag value="Blue" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <Marker>
+                    <MType value="8" type="enum"/>
+                    <MTypeName value="Hypertext" type="str"/>
+                    <MText value="message URL http://www.ncbi.nlm.nih.gov/pubmed/?term=10.1056%2FNEJMc1403799" type="str"/>
+                    <MCurrPage value="624" type="str"/>
+                    <Unique value="1066849" type="enum"/>
+                </Marker>
+                <String>N Engl J Med. </String>
+            </ParaLine>
+            <ParaLine>
+                <String>2014;371:974–6.</String>
+            </ParaLine>
+        </Para>
+        <Para>
+            <Unique value="1066851" type="enum"/>
+            <PgfTag value="RefTextNrForts" type="str"/>
+            <PgfNumString value="19.\t" type="str"/>
+            <ParaLine>
+                <Marker>
+                    <MType value="8" type="enum"/>
+                    <MTypeName value="Hypertext" type="str"/>
+                    <MText value="newlink 19K2a" type="str"/>
+                    <MCurrPage value="624" type="str"/>
+                    <Unique value="1066850" type="enum"/>
                 </Marker>
                 <String>Whitaker M, Guo J, Kehoe T, Benson G. Bisphos</String>
                 <Char value="SoftHyphen" type="enum"/>
@@ -49811,33 +50148,40 @@
                 <String>phonates for osteoporosis — where do we go </String>
             </ParaLine>
             <ParaLine>
-                <String>from here? </String>
+                <String>from here?</String>
                 <Font>
                     <FTag value="Blue" type="str"/>
                     <FLocked value="No" type="enum"/>
                 </Font>
+                <String> </String>
                 <Marker>
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="message URL http://www.ncbi.nlm.nih.gov/pubmed/22571168" type="str"/>
                     <MCurrPage value="624" type="str"/>
-                    <Unique value="1054585" type="enum"/>
+                    <Unique value="1066852" type="enum"/>
                 </Marker>
-                <String>N Engl J Med. 2012;366:2048–51. </String>
+                <String>N Engl J Med. 2012;366:2048–51</String>
+                <Font>
+                    <FTag value="Blue" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="0" type="enum"/>
+                    <FColor value="Black" type="str"/>
+                </Font>
+                <String>. </String>
             </ParaLine>
         </Para>
         <Para>
-            <Unique value="1049692" type="enum"/>
+            <Unique value="1066854" type="enum"/>
             <PgfTag value="RefTextNrForts" type="str"/>
-            <PgfNumString value="19.\t" type="str"/>
-            <PgfReferenced value="Yes" type="enum"/>
+            <PgfNumString value="20.\t" type="str"/>
             <ParaLine>
                 <Marker>
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
-                    <MText value="newlink 19K2a" type="str"/>
+                    <MText value="newlink 20K2a" type="str"/>
                     <MCurrPage value="624" type="str"/>
-                    <Unique value="1062961" type="enum"/>
+                    <Unique value="1066853" type="enum"/>
                 </Marker>
                 <String>Black DM, Bauer DC, Schwartz AV, Cummings SR, </String>
             </ParaLine>
@@ -49858,7 +50202,7 @@
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="message URL http://www.ncbi.nlm.nih.gov/pubmed/22571169" type="str"/>
                     <MCurrPage value="624" type="str"/>
-                    <Unique value="1054618" type="enum"/>
+                    <Unique value="1066855" type="enum"/>
                 </Marker>
                 <String>N Engl J Med. 2012;366:2051–3.</String>
                 <Font>
@@ -49868,7 +50212,7 @@
             </ParaLine>
         </Para>
         <Para>
-            <Unique value="1062865" type="enum"/>
+            <Unique value="1066856" type="enum"/>
             <PgfTag value="FaktaText" type="str"/>
             <Pgf>
                 <PgfBotSeparator value="Tunn_Tjock" type="str"/>
@@ -52390,7 +52734,7 @@
         <Notes>
         </Notes>
         <Para>
-            <Unique value="1066701" type="enum"/>
+            <Unique value="1066924" type="enum"/>
             <PgfTag value="Bröd" type="str"/>
             <Pgf>
                 <PgfFIndent value="43.38272 mm" type="num"/>
@@ -52432,6 +52776,7 @@
                     <TSLeaderStr value=" " type="str"/>
                 </TabStop>
             </Pgf>
+            <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
                 <TextRectID value="151" type="enum"/>
                 <String>Ändrad</String>
@@ -52448,6 +52793,59 @@
                 <String>2014-07-16, s</String>
                 <Char value="HardSpace" type="enum"/>
                 <String>621.</String>
+                <Char value="HardReturn" type="enum"/>
+            </ParaLine>
+            <ParaLine>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FDW value="-1.0%" type="num"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <Char value="Tab" type="enum"/>
+                <String>2015-03-04, s</String>
+                <Char value="HardSpace" type="enum"/>
+                <String>619, s</String>
+                <Char value="HardSpace" type="enum"/>
+                <String>620 och </String>
+                <Char value="Tab" type="enum"/>
+            </ParaLine>
+            <ParaLine>
+                <Char value="Tab" type="enum"/>
+                <Char value="HardSpace" type="enum"/>
+                <Char value="HardSpace" type="enum"/>
+                <Char value="HardSpace" type="enum"/>
+                <Char value="HardSpace" type="enum"/>
+                <Char value="HardSpace" type="enum"/>
+                <Char value="HardSpace" type="enum"/>
+                <Char value="HardSpace" type="enum"/>
+                <Char value="HardSpace" type="enum"/>
+                <Char value="HardSpace" type="enum"/>
+                <Char value="HardSpace" type="enum"/>
+                <Char value="HardSpace" type="enum"/>
+                <Char value="HardSpace" type="enum"/>
+                <Char value="HardSpace" type="enum"/>
+                <Char value="HardSpace" type="enum"/>
+                <Char value="HardSpace" type="enum"/>
+                <Char value="HardSpace" type="enum"/>
+                <Char value="HardSpace" type="enum"/>
+                <Char value="HardSpace" type="enum"/>
+                <Char value="HardSpace" type="enum"/>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FSize value="8.5 pt" type="num"/>
+                    <FDW value="-1.0%" type="num"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <Char value="HardSpace" type="enum"/>
+                <Char value="HardSpace" type="enum"/>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FDW value="-1.0%" type="num"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <String>s</String>
+                <Char value="HardSpace" type="enum"/>
+                <String>624</String>
             </ParaLine>
         </Para>
     </TextFlow>

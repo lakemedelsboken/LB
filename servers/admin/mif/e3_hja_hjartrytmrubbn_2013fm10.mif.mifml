@@ -5703,10 +5703,10 @@
         </XRefFormat>
     </XRefFormats>
     <Document>
-        <DViewRect value="18 20 1283 764 " type="enum"/>
-        <DWindowRect value="0 0 1751 1044 " type="enum"/>
-        <DViewScale value="140.0%" type="num"/>
-        <DNextUnique value="1063063" type="enum"/>
+        <DViewRect value="18 20 1271 631 " type="enum"/>
+        <DWindowRect value="0 0 1735 867 " type="enum"/>
+        <DViewScale value="160.0%" type="num"/>
+        <DNextUnique value="1063178" type="enum"/>
         <DPageSize value="170.0 mm 500.0 mm" type="num"/>
         <DMenuBar value="" type="str"/>
         <DVoMenuBar value="" type="str"/>
@@ -5788,7 +5788,7 @@
         <DGraphicsOff value="No" type="enum"/>
         <DCurrentView value="1" type="enum"/>
         <DBordersOn value="Yes" type="enum"/>
-        <DSymbolsOn value="No" type="enum"/>
+        <DSymbolsOn value="Yes" type="enum"/>
         <DLinkBoundariesOn value="No" type="enum"/>
         <DTrackChangesOn value="No" type="enum"/>
         <DTrackChangesPreviewState value="No" type="enum"/>
@@ -5890,7 +5890,7 @@
         </PDFDocInfo>
         <DocFileInfo value="
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30323A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131342D30362D31305431373A34393A32392B30323A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131342D30362D31305431373A34393A32392B30323A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131352D30312D31345431343A31373A31332B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131352D30312D31345431343A31373A31332B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E486AC3A472747279746D727562626E696E67617220E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 2020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
@@ -23928,10 +23928,10 @@
         </TextRect>
         <TextRect>
             <ID value="149" type="enum"/>
-            <Unique value="1063053" type="enum"/>
+            <Unique value="1063068" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
-            <ShapeRect value="18.0 mm 7.37057 mm 95.0 mm 12.30905 mm" type="num"/>
-            <BRect value="18.0 mm 7.37057 mm 95.0 mm 12.30905 mm" type="num"/>
+            <ShapeRect value="18.0 mm 7.0 mm 95.0 mm 12.30905 mm" type="num"/>
+            <BRect value="18.0 mm 7.0 mm 95.0 mm 12.30905 mm" type="num"/>
             <TRNumColumns value="1" type="enum"/>
             <TRColumnGap value="5.00001 mm" type="num"/>
             <TRColumnBalance value="No" type="enum"/>
@@ -26601,7 +26601,7 @@
                     <XRefSrcText value="23107: TabellRubrik_2sp: Tabell 1. Arytmianamnes – vägledande karakteristika" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 968000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26649,7 +26649,7 @@
                     <XRefSrcText value="23107: TabellRubrik_2sp: Tabell 1. Arytmianamnes – vägledande karakteristika" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 968000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26819,7 +26819,7 @@
                     <XRefSrcText value="53543: FigurNr: Figur 1. Flödesschema för diagnostik av rytmrubbningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 968000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26873,7 +26873,7 @@
                     <XRefSrcText value="53543: FigurNr: Figur 1. Flödesschema för diagnostik av rytmrubbningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 968000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26931,7 +26931,7 @@
                     <XRefSrcText value="53543: FigurNr: Figur 1. Flödesschema för diagnostik av rytmrubbningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 711000" type="num"/>
+                    <XRefLastUpdate value="1423919833 966000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27371,7 +27371,7 @@
                     <XRefSrcText value="30539: FaktaRub1: Indikationer för specialistutredning" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 711000" type="num"/>
+                    <XRefLastUpdate value="1423919833 966000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27430,7 +27430,7 @@
                     <XRefSrcText value="30539: FaktaRub1: Indikationer för specialistutredning" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 968000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27501,7 +27501,7 @@
                     <XRefSrcText value="77615: FaktaRub1: Utlösande icke- kardiella orsaker till arytmi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 711000" type="num"/>
+                    <XRefLastUpdate value="1423919833 966000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27574,7 +27574,7 @@
                     <XRefSrcText value="30539: FaktaRub1: Indikationer för specialistutredning" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 711000" type="num"/>
+                    <XRefLastUpdate value="1423919833 966000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27607,7 +27607,7 @@
                     <XRefSrcText value="87110: FaktaRub1: Undersökningar som kan bli aktuella vid utredning av" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 967000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27632,7 +27632,7 @@
                     <XRefSrcText value="87110: FaktaRub1: Undersökningar som kan bli aktuella vid utredning av" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 968000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27656,7 +27656,7 @@
                     <XRefSrcText value="77615: FaktaRub1: Utlösande icke- kardiella orsaker till arytmi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 969000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28620,7 +28620,7 @@
                     <XRefSrcText value="36139: TabellRubrik_2sp: Tabell 2. Klassifikation av antiarytmiska läkemedel enligt Vaughan Williams" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 711000" type="num"/>
+                    <XRefLastUpdate value="1423919833 967000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28661,7 +28661,7 @@
                     <XRefSrcText value="24326: TabellRekRub: Terapirekommendationer – Akut behandling av olika arytmier utan hemodynamisk påverkan" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 967000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28687,7 +28687,7 @@
                     <XRefSrcText value="88249: TabellRekRub: Terapirekommendationer – Långtidsbehandling av olika arytmier" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 967000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28712,7 +28712,7 @@
                     <XRefSrcText value="36139: TabellRubrik_2sp: Tabell 2. Klassifikation av antiarytmiska läkemedel enligt Vaughan Williams" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 968000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28736,7 +28736,7 @@
                     <XRefSrcText value="24326: TabellRekRub: Terapirekommendationer – Akut behandling av olika arytmier utan hemodynamisk påverkan" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 968000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28760,7 +28760,7 @@
                     <XRefSrcText value="88249: TabellRekRub: Terapirekommendationer – Långtidsbehandling av olika arytmier" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 968000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -29944,7 +29944,7 @@
                     <XRefSrcText value="21959: Rub2: Förmaksflimmer" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 967000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30101,7 +30101,7 @@
                     <XRefSrcText value="88249: TabellRekRub: Terapirekommendationer – Långtidsbehandling av olika arytmier" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 967000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30143,7 +30143,7 @@
                     <XRefSrcText value="88249: TabellRekRub: Terapirekommendationer – Långtidsbehandling av olika arytmier" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 968000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30870,7 +30870,7 @@
                     <XRefSrcText value="95338: FaktaRub1: Riskfaktorer för tromboemboliska komplikationer" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 968000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -30945,7 +30945,7 @@
             </ParaLine>
         </Para>
         <Para>
-            <Unique value="1062586" type="enum"/>
+            <Unique value="1063078" type="enum"/>
             <PgfTag value="BrödIn" type="str"/>
             <Pgf>
                 <PgfFont>
@@ -30970,12 +30970,12 @@
                     <FPosition value="FNormal" type="enum"/>
                     <FDX value="0.0%" type="num"/>
                     <FDY value="0.0%" type="num"/>
-                    <FDW value="0.0%" type="num"/>
+                    <FDW value="-1.5%" type="num"/>
                     <FStretch value="100.0%" type="num"/>
                     <FLanguage value="Swedish" type="enum"/>
                     <FLocked value="No" type="enum"/>
-                    <FSeparation value="2" type="enum"/>
-                    <FColor value="Red" type="str"/>
+                    <FSeparation value="0" type="enum"/>
+                    <FColor value="Black" type="str"/>
                     <FBackgroundColor value="NoColor" type="enum"/>
                 </PgfFont>
                 <PgfNumTabs value="1" type="enum"/>
@@ -30988,18 +30988,12 @@
             </Pgf>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
-                <Font>
-                    <FTag value="" type="str"/>
-                    <FLocked value="No" type="enum"/>
-                    <FSeparation value="0" type="enum"/>
-                    <FColor value="Black" type="str"/>
-                </Font>
                 <Marker>
                     <MType value="2" type="enum"/>
                     <MTypeName value="Index" type="str"/>
                     <MText value="warfarin:förmaksflimmer" type="str"/>
                     <MCurrPage value="343" type="str"/>
-                    <Unique value="1062585" type="enum"/>
+                    <Unique value="1063077" type="enum"/>
                 </Marker>
                 <String>Warfarin, dabigatran (trombinhämmare), </String>
             </ParaLine>
@@ -31021,166 +31015,186 @@
                 <Font>
                     <FTag value="" type="str"/>
                     <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
                 </Font>
+                <String>mekaniska</String>
+            </ParaLine>
+            <ParaLine>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <String> hjärtklaffar där warfarin ger ett bättre </String>
+            </ParaLine>
+            <ParaLine>
+                <String>skydd. Samtliga av dessa nya preparat har </String>
+            </ParaLine>
+            <ParaLine>
+                <String>en lägre risk för </String>
                 <Font>
                     <FTag value="" type="str"/>
                     <FLocked value="No" type="enum"/>
                     <FSeparation value="2" type="enum"/>
                     <FColor value="Red" type="str"/>
                 </Font>
-                <String>mekaniska</String>
+                <String>intracerebrala</String>
                 <Font>
                     <FTag value="" type="str"/>
                     <FLocked value="No" type="enum"/>
                 </Font>
+                <String> och </String>
                 <Font>
                     <FTag value="" type="str"/>
                     <FLocked value="No" type="enum"/>
-                    <FSeparation value="0" type="enum"/>
-                    <FColor value="Black" type="str"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
                 </Font>
-                <String> hjärtklaffar där warfarin ger ett bätt</String>
-                <Char value="SoftHyphen" type="enum"/>
+                <String>livshotande</String>
             </ParaLine>
             <ParaLine>
-                <String>re skydd. Samtliga av dessa nya preparat </String>
-            </ParaLine>
-            <ParaLine>
-                <String>har en lägre risk för intracerebral blödning </String>
-            </ParaLine>
-            <ParaLine>
-                <String>jämfört med warfarin, men saknar i mot</String>
-                <Char value="SoftHyphen" type="enum"/>
-            </ParaLine>
-            <ParaLine>
-                <String>sats till warfarin motmedel vid blödnings</String>
-                <Char value="SoftHyphen" type="enum"/>
-            </ParaLine>
-            <ParaLine>
-                <String>komplikationer. Enligt Socialstyrelsen och </String>
-            </ParaLine>
-            <ParaLine>
-                <String>Läkemedelsverkets rekommendationer är </String>
-            </ParaLine>
-            <ParaLine>
-                <String>warfarin dock fortfarande ett förstahands</String>
-                <Char value="SoftHyphen" type="enum"/>
-            </ParaLine>
-            <ParaLine>
-                <String>alternativ för tromboemboliprofylax vid för</String>
-                <Char value="SoftHyphen" type="enum"/>
-            </ParaLine>
-            <ParaLine>
-                <String>maksflimmer. Rekommendation om be</String>
-                <Char value="SoftHyphen" type="enum"/>
-            </ParaLine>
-            <ParaLine>
-                <String>handling med antikoagulantia vid förmaks</String>
-                <Char value="SoftHyphen" type="enum"/>
-            </ParaLine>
-            <ParaLine>
-                <String>flimmer finns på </String>
                 <Font>
                     <FTag value="" type="str"/>
                     <FLocked value="No" type="enum"/>
-                    <FSeparation value="4" type="enum"/>
-                    <FColor value="Blue" type="str"/>
+                </Font>
+                <String> blödningar jämfört med warfarin. </String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                </Font>
+                <String>Socialstyrelsen har i januari 2015 kommit ut med en remissversion av nationella riktlinjer för antikoagulationsbehandling vid förmaksflimmer, </String>
+            </ParaLine>
+            <ParaLine>
+                <String></String>
+                <Font>
+                    <FTag value="Blue" type="str"/>
+                    <FLocked value="No" type="enum"/>
                 </Font>
                 <Marker>
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
-                    <MText value="message URL http://www.socialstyrelsen.se/nationellariktlinjerforhjartsjukvard" type="str"/>
+                    <MText value="message URL http://www.socialstyrelsen.se/Lists/Artikelkatalog/Attachments/19657/2015-1-12.pdf" type="str"/>
                     <MCurrPage value="343" type="str"/>
-                    <Unique value="1062587" type="enum"/>
+                    <Unique value="1063079" type="enum"/>
                 </Marker>
                 <String>www.socialstyrelsen.se</String>
                 <Font>
                     <FTag value="" type="str"/>
                     <FLocked value="No" type="enum"/>
-                    <FSeparation value="0" type="enum"/>
-                    <FColor value="Black" type="str"/>
                 </Font>
-                <String> </String>
             </ParaLine>
             <ParaLine>
-                <String>och </String>
+                <String>. Rekommendation om behandling med antikoagulantia </String>
+            </ParaLine>
+            <ParaLine>
+                <String>vid förmaksflimmer finns </String>
                 <Font>
                     <FTag value="" type="str"/>
                     <FLocked value="No" type="enum"/>
-                    <FSeparation value="4" type="enum"/>
-                    <FColor value="Blue" type="str"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                </Font>
+                <String>också</String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <String> på </String>
+            </ParaLine>
+            <ParaLine>
+                <Font>
+                    <FTag value="Blue" type="str"/>
+                    <FLocked value="No" type="enum"/>
                 </Font>
                 <Marker>
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="message URL http://www.sbu.se/sv/Publicerat/Alert/Dabigatran-for-att-forebygga-stroke-vid-formaksflimmer/" type="str"/>
                     <MCurrPage value="343" type="str"/>
-                    <Unique value="1062588" type="enum"/>
+                    <Unique value="1063080" type="enum"/>
                 </Marker>
                 <String>www.sbu.se</String>
                 <Font>
                     <FTag value="" type="str"/>
                     <FLocked value="No" type="enum"/>
-                    <FSeparation value="0" type="enum"/>
-                    <FColor value="Black" type="str"/>
                 </Font>
                 <String> samt hos Camm AJ et al </String>
-            </ParaLine>
-            <ParaLine>
                 <Font>
-                    <FTag value="" type="str"/>
+                    <FTag value="Blue" type="str"/>
                     <FLocked value="No" type="enum"/>
-                    <FSeparation value="4" type="enum"/>
-                    <FColor value="Blue" type="str"/>
                 </Font>
+                <Marker>
+                    <MType value="8" type="enum"/>
+                    <MTypeName value="Hypertext" type="str"/>
+                    <MText value="gotolink 3E3" type="str"/>
+                    <MCurrPage value="343" type="str"/>
+                    <Unique value="1063081" type="enum"/>
+                </Marker>
                 <String>(3)</String>
                 <Font>
                     <FTag value="" type="str"/>
                     <FLocked value="No" type="enum"/>
-                    <FSeparation value="0" type="enum"/>
-                    <FColor value="Black" type="str"/>
                 </Font>
-                <String>. Dabigatran</String>
+                <String>. </String>
+            </ParaLine>
+            <ParaLine>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                </Font>
+                <String>Warfarin och de nya trombin-  och faktor X-hämmarna ges lika hög prioritet. </String>
+            </ParaLine>
+            <ParaLine>
+                <String></String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <String>Dabigatran</String>
+                <Char value="SoftHyphen" type="enum"/>
+            </ParaLine>
+            <ParaLine>
                 <Char value="DiscHyphen" type="enum"/>
                 <String>dosen är 150 eller 110</String>
                 <Char value="HardSpace" type="enum"/>
-                <String>mg </String>
+                <String>mg 2</String>
+                <Char value="HardSpace" type="enum"/>
+                <String>gånger/dag, riva</String>
+                <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <String>2</String>
-                <Char value="HardSpace" type="enum"/>
-                <String>gånger/dag, rivaroxaban 20</String>
+                <String>roxaban 20</String>
                 <Char value="HardSpace" type="enum"/>
                 <String>mg 1</String>
                 <Char value="HardSpace" type="enum"/>
-                <String>gång/</String>
+                <String>gång/dag och apixaban </String>
             </ParaLine>
             <ParaLine>
-                <String>dag och apixaban 5</String>
+                <String>5</String>
                 <Char value="HardSpace" type="enum"/>
-                <String>mg 2 gånger/dag. Samt</String>
+                <String>mg 2</String>
+                <Char value="HardSpace" type="enum"/>
+                <String>gånger/dag. Samtliga utsöndras i oli</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <String>liga utsöndras i olika grad via njurarna var</String>
-                <Char value="SoftHyphen" type="enum"/>
+                <String>ka grad via njurarna varför njurfunktionen </String>
             </ParaLine>
             <ParaLine>
-                <String>för njurfunktionen bör kontrolleras regel</String>
-                <Char value="SoftHyphen" type="enum"/>
+                <String>bör kontrolleras regelbundet. Vid nedsatt </String>
             </ParaLine>
             <ParaLine>
-                <String>bundet. Vid nedsatt njurfunktion krävs dos</String>
-                <Char value="SoftHyphen" type="enum"/>
-            </ParaLine>
-            <ParaLine>
-                <TextRectID value="172" type="enum"/>
+                <String>njurfunktion krävs dos</String>
                 <Char value="DiscHyphen" type="enum"/>
-                <String>anpassning. Interaktioner med andra läke</String>
+                <String>anpassning. Interak</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <String>medel måste ses över. </String>
+                <String>tioner med andra läkemedel måste ses över. </String>
             </ParaLine>
         </Para>
         <Para>
@@ -31196,6 +31210,7 @@
             </Pgf>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
+                <TextRectID value="172" type="enum"/>
                 <String>Vissa riskfaktorer talar i närvaro av flim</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -31210,7 +31225,7 @@
                     <XRefSrcText value="95338: FaktaRub1: Riskfaktorer för tromboemboliska komplikationer" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 968000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -31694,7 +31709,7 @@
                     <XRefSrcText value="36139: TabellRubrik_2sp: Tabell 2. Klassifikation av antiarytmiska läkemedel enligt Vaughan Williams" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 711000" type="num"/>
+                    <XRefLastUpdate value="1423919833 967000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -31974,7 +31989,7 @@
                     <XRefSrcText value="44011: Rub2: Transvenös kateterablation" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 969000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -32487,7 +32502,7 @@
                     <XRefSrcText value="53543: FigurNr: Figur 1. Flödesschema för diagnostik av rytmrubbningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 711000" type="num"/>
+                    <XRefLastUpdate value="1423919833 967000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -32529,7 +32544,7 @@
                     <XRefSrcText value="53543: FigurNr: Figur 1. Flödesschema för diagnostik av rytmrubbningar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 711000" type="num"/>
+                    <XRefLastUpdate value="1423919833 967000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -32564,7 +32579,7 @@
                     <XRefSrcText value="77615: FaktaRub1: Utlösande icke- kardiella orsaker till arytmi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 711000" type="num"/>
+                    <XRefLastUpdate value="1423919833 967000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -33446,7 +33461,7 @@
                     <XRefSrcText value="21170: Rub1: Barn – arytmier" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 968000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -33888,7 +33903,7 @@
                     <XRefSrcText value="30539: FaktaRub1: Indikationer för specialistutredning" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 967000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -33915,7 +33930,7 @@
                     <XRefSrcText value="87110: FaktaRub1: Undersökningar som kan bli aktuella vid utredning av" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 967000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -34043,7 +34058,7 @@
                     <XRefSrcText value="74636: Rub2: Ventrikeltakykardi" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 711000" type="num"/>
+                    <XRefLastUpdate value="1423919833 966000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -34401,7 +34416,7 @@
                     <XRefSrcText value="69581: FaktaRub1: Bradyarytmier" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 968000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -34462,7 +34477,7 @@
                     <XRefSrcText value="69581: FaktaRub1: Bradyarytmier" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007369 712000" type="num"/>
+                    <XRefLastUpdate value="1423919833 968000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -38406,7 +38421,7 @@
         <Notes>
         </Notes>
         <Para>
-            <Unique value="1063055" type="enum"/>
+            <Unique value="1063070" type="enum"/>
             <PgfTag value="Bröd" type="str"/>
             <Pgf>
                 <PgfAlignment value="Left" type="enum"/>
@@ -38440,14 +38455,25 @@
                     <FColor value="PANTONE Rubine Red CVC" type="str"/>
                     <FBackgroundColor value="NoColor" type="enum"/>
                 </PgfFont>
+                <PgfNumTabs value="1" type="enum"/>
+                <TabStop>
+                    <TSX value="12.16255 mm" type="num"/>
+                    <TSType value="Left" type="enum"/>
+                    <TSLeaderStr value=" " type="str"/>
+                </TabStop>
             </Pgf>
             <ParaLine>
                 <TextRectID value="149" type="enum"/>
                 <String>Ändrad</String>
                 <Char value="Tab" type="enum"/>
-                <String> </String>
-                <Char value="Tab" type="enum"/>
                 <String>2014-07-16, s</String>
+                <Char value="HardSpace" type="enum"/>
+                <String>343.</String>
+                <Char value="HardReturn" type="enum"/>
+            </ParaLine>
+            <ParaLine>
+                <Char value="Tab" type="enum"/>
+                <String>2015-03-04, s</String>
                 <Char value="HardSpace" type="enum"/>
                 <String>343.</String>
             </ParaLine>
@@ -38494,6 +38520,7 @@
                     <FColor value="Black" type="str"/>
                     <FBackgroundColor value="NoColor" type="enum"/>
                 </PgfFont>
+                <PgfNumTabs value="0" type="enum"/>
                 <HyphenMaxLines value="2" type="enum"/>
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>

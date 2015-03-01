@@ -5696,10 +5696,10 @@
         </XRefFormat>
     </XRefFormats>
     <Document>
-        <DViewRect value="18 20 923 764 " type="enum"/>
-        <DWindowRect value="0 0 1272 1044 " type="enum"/>
-        <DViewScale value="120.0%" type="num"/>
-        <DNextUnique value="1041007" type="enum"/>
+        <DViewRect value="18 20 1271 631 " type="enum"/>
+        <DWindowRect value="0 0 1735 867 " type="enum"/>
+        <DViewScale value="95.95%" type="num"/>
+        <DNextUnique value="1041112" type="enum"/>
         <DPageSize value="170.0 mm 240.0 mm" type="num"/>
         <DMenuBar value="" type="str"/>
         <DVoMenuBar value="" type="str"/>
@@ -5781,7 +5781,7 @@
         <DGraphicsOff value="No" type="enum"/>
         <DCurrentView value="1" type="enum"/>
         <DBordersOn value="Yes" type="enum"/>
-        <DSymbolsOn value="No" type="enum"/>
+        <DSymbolsOn value="Yes" type="enum"/>
         <DLinkBoundariesOn value="No" type="enum"/>
         <DTrackChangesOn value="No" type="enum"/>
         <DTrackChangesPreviewState value="No" type="enum"/>
@@ -5883,7 +5883,7 @@
         </PDFDocInfo>
         <DocFileInfo value="
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130392D30322D32375431303A35303A30322B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131332D31302D32355431393A30303A30332B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131332D31302D32355431393A30303A30332B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130392D30322D32375431303A35303A30322B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131352D30312D31345431343A31393A34382B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131352D30312D31345431343A31393A34382B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E506572696665726120617274C3A472736A756B646F6D617220E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
@@ -13320,6 +13320,49 @@
                     <Cell>
                         <CellContent>
                             <Notes>
+                                <FNote>
+                                    <ID value="23" type="enum"/>
+                                    <Para>
+                                        <Unique value="1041020" type="enum"/>
+                                        <PgfTag value="TableFootnote" type="str"/>
+                                        <ParaLine>
+                                            <Font>
+                                                <FTag value="" type="str"/>
+                                                <FLocked value="No" type="enum"/>
+                                                <FSeparation value="2" type="enum"/>
+                                                <FColor value="Red" type="str"/>
+                                            </Font>
+                                            <String>För detaljerad genomgång av lämpligaste förebyggande läkemedelsbehandling vid aterosklerotisk hjärt-kärlsjukdom se Läkemedelsverkets behandlingsrekommendation “Att förebygga aterosklerotisk hjärt-kärlsjukdom med läkemedel” publicerad 2014-06-24, </String>
+                                        </ParaLine>
+                                        <ParaLine>
+                                            <Font>
+                                                <FTag value="Blue" type="str"/>
+                                                <FLocked value="No" type="enum"/>
+                                            </Font>
+                                            <Marker>
+                                                <MType value="8" type="enum"/>
+                                                <MTypeName value="Hypertext" type="str"/>
+                                                <MText value="message URL http://www.lakemedelsverket.se/upload/halso-och-sjukvard/behandlingsrekommendationer/Att_forebygga_aterosklerotisk_hjart-karlsjukdom_med%20_lakemedel_behandlingsrekommendation.pdf" type="str"/>
+                                                <MCurrPage value="398" type="str"/>
+                                                <Unique value="1041021" type="enum"/>
+                                            </Marker>
+                                            <String>www.lakemedelsverket.se</String>
+                                        </ParaLine>
+                                        <ParaLine>
+                                            <Font>
+                                                <FTag value="Blue" type="str"/>
+                                                <FLocked value="No" type="enum"/>
+                                                <FSeparation value="0" type="enum"/>
+                                                <FColor value="Black" type="str"/>
+                                            </Font>
+                                            <String>.</String>
+                                            <Font>
+                                                <FTag value="" type="str"/>
+                                                <FLocked value="No" type="enum"/>
+                                            </Font>
+                                        </ParaLine>
+                                    </Para>
+                                </FNote>
                             </Notes>
                             <Para>
                                 <Unique value="1024752" type="enum"/>
@@ -13336,6 +13379,17 @@
                                     <String>#5;Riskfaktorbehandlin</String>
                                     <AFrame value="8" type="enum"/>
                                     <String>g</String>
+                                    <Font>
+                                        <FTag value="" type="str"/>
+                                        <FLocked value="No" type="enum"/>
+                                        <FSeparation value="2" type="enum"/>
+                                        <FColor value="Red" type="str"/>
+                                    </Font>
+                                    <FNote value="23" type="enum"/>
+                                    <Font>
+                                        <FTag value="" type="str"/>
+                                        <FLocked value="No" type="enum"/>
+                                    </Font>
                                 </ParaLine>
                             </Para>
                             <Para>
@@ -13415,6 +13469,7 @@
                             <Para>
                                 <Unique value="1024758" type="enum"/>
                                 <PgfTag value="FaktaText" type="str"/>
+                                <PgfReferenced value="Yes" type="enum"/>
                                 <ParaLine>
                                     <String>Blodtrycksbehandling ska påbörjas vid ett blod</String>
                                     <Char value="SoftHyphen" type="enum"/>
@@ -13422,27 +13477,30 @@
                                 <ParaLine>
                                     <String>tryck &gt;</String>
                                     <Char value="HardSpace" type="enum"/>
-                                    <String>140/90 mm Hg. Vid diabetes mellitus och </String>
+                                    <String>140/90 mm Hg </String>
+                                    <Font>
+                                        <FTag value="" type="str"/>
+                                        <FLocked value="No" type="enum"/>
+                                        <FSeparation value="2" type="enum"/>
+                                        <FColor value="Red" type="str"/>
+                                    </Font>
+                                    <String>(vid diabetes mellitus och njursjukdom rekommenderas 140/85 mm Hg). </String>
                                 </ParaLine>
                                 <ParaLine>
-                                    <String>njursjukdom rekommenderas en lägre gräns, 130/</String>
-                                </ParaLine>
-                                <ParaLine>
-                                    <String>80</String>
-                                    <Char value="HardSpace" type="enum"/>
-                                    <String>mm Hg. Med hänsyn till ben</String>
+                                    <String>Med hänsyn till ben</String>
                                     <Char value="DiscHyphen" type="enum"/>
-                                    <String>artärsjukdom sak</String>
+                                    <String>artärsjukdom saknas evidens </String>
+                                </ParaLine>
+                                <ParaLine>
+                                    <String>för att rekommendera eller avråda från använd</String>
                                     <Char value="SoftHyphen" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
-                                    <String>nas evidens för att rekommendera eller avråda </String>
+                                    <String>ning av någon specifik preparatgrupp. Betablock</String>
+                                    <Char value="SoftHyphen" type="enum"/>
                                 </ParaLine>
                                 <ParaLine>
-                                    <String>från användning av någon specifik preparatgrupp. </String>
-                                </ParaLine>
-                                <ParaLine>
-                                    <String>Betablockad är inte kontraindicerad.</String>
+                                    <String>ad är inte kontraindicerad.</String>
                                 </ParaLine>
                             </Para>
                             <Para>
@@ -13520,7 +13578,7 @@
             </TblBody>
         </Tbl>
         <Tbl>
-            <TblID value="23" type="enum"/>
+            <TblID value="24" type="enum"/>
             <TblTag value="Tabell faktaruta" type="str"/>
             <TblFormat>
                 <TblColumn>
@@ -13800,7 +13858,7 @@
             </TblBody>
         </Tbl>
         <Tbl>
-            <TblID value="24" type="enum"/>
+            <TblID value="25" type="enum"/>
             <TblTag value="Tabell faktaruta" type="str"/>
             <TblFormat>
                 <TblColumn>
@@ -13942,7 +14000,7 @@
                         <CellContent>
                             <Notes>
                                 <FNote>
-                                    <ID value="25" type="enum"/>
+                                    <ID value="26" type="enum"/>
                                     <Para>
                                         <Unique value="1028682" type="enum"/>
                                         <PgfTag value="TableFootnote" type="str"/>
@@ -13967,7 +14025,7 @@
                                     </Para>
                                 </FNote>
                                 <FNote>
-                                    <ID value="26" type="enum"/>
+                                    <ID value="27" type="enum"/>
                                     <Para>
                                         <Unique value="1028686" type="enum"/>
                                         <PgfTag value="TableFootnote" type="str"/>
@@ -14180,7 +14238,7 @@
                                         <FTag value="Upphöjt" type="str"/>
                                         <FLocked value="No" type="enum"/>
                                     </Font>
-                                    <FNote value="25" type="enum"/>
+                                    <FNote value="26" type="enum"/>
                                     <Font>
                                         <FTag value="" type="str"/>
                                         <FLocked value="No" type="enum"/>
@@ -14193,7 +14251,7 @@
                                         <FTag value="Upphöjt" type="str"/>
                                         <FLocked value="No" type="enum"/>
                                     </Font>
-                                    <FNote value="26" type="enum"/>
+                                    <FNote value="27" type="enum"/>
                                     <Font>
                                         <FTag value="" type="str"/>
                                         <FLocked value="No" type="enum"/>
@@ -14207,7 +14265,7 @@
             </TblBody>
         </Tbl>
         <Tbl>
-            <TblID value="27" type="enum"/>
+            <TblID value="28" type="enum"/>
             <TblTag value="Tabell faktaruta" type="str"/>
             <TblNumColumns value="1" type="enum"/>
             <Unique value="1035546" type="enum"/>
@@ -14232,7 +14290,7 @@
             </TblBody>
         </Tbl>
         <Tbl>
-            <TblID value="28" type="enum"/>
+            <TblID value="29" type="enum"/>
             <TblTag value="Tabell faktaruta" type="str"/>
             <TblNumColumns value="1" type="enum"/>
             <Unique value="1035550" type="enum"/>
@@ -14265,7 +14323,7 @@
         <PageOrientation value="Portrait" type="enum"/>
         <PageAngle value="0.0" type="num"/>
         <TextRect>
-            <ID value="29" type="enum"/>
+            <ID value="30" type="enum"/>
             <Unique value="1034474" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -14288,7 +14346,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="30" type="enum"/>
+            <ID value="31" type="enum"/>
             <Unique value="1034476" type="enum"/>
             <ShapeRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
             <BRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
@@ -14301,7 +14359,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="31" type="enum"/>
+            <ID value="32" type="enum"/>
             <Unique value="1034478" type="enum"/>
             <ShapeRect value="18.0 mm 18.0 mm 134.0 mm 202.55 mm" type="num"/>
             <BRect value="18.0 mm 18.0 mm 134.0 mm 202.55 mm" type="num"/>
@@ -14314,7 +14372,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="32" type="enum"/>
+            <ID value="33" type="enum"/>
             <Unique value="1034481" type="enum"/>
             <ShapeRect value="18.0 mm 7.0 mm 134.0 mm 5.0 mm" type="num"/>
             <BRect value="18.0 mm 7.0 mm 134.0 mm 5.0 mm" type="num"/>
@@ -14337,9 +14395,9 @@
             <Point value="85.0 mm 220.55 mm" type="num"/>
         </PolyLine>
         <TextRect>
-            <ID value="33" type="enum"/>
+            <ID value="34" type="enum"/>
             <Unique value="1034484" type="enum"/>
-            <GroupID value="34" type="enum"/>
+            <GroupID value="35" type="enum"/>
             <Pen value="15" type="enum"/>
             <ShapeRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
             <BRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
@@ -14352,9 +14410,9 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="35" type="enum"/>
+            <ID value="36" type="enum"/>
             <Unique value="1034486" type="enum"/>
-            <GroupID value="34" type="enum"/>
+            <GroupID value="35" type="enum"/>
             <ShapeRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <BRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <TRNumColumns value="1" type="enum"/>
@@ -14366,7 +14424,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <Group>
-            <ID value="34" type="enum"/>
+            <ID value="35" type="enum"/>
             <Unique value="1034488" type="enum"/>
         </Group>
     </Page>
@@ -14378,7 +14436,7 @@
         <PageOrientation value="Portrait" type="enum"/>
         <PageAngle value="0.0" type="num"/>
         <TextRect>
-            <ID value="36" type="enum"/>
+            <ID value="37" type="enum"/>
             <Unique value="1034509" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -14401,7 +14459,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="37" type="enum"/>
+            <ID value="38" type="enum"/>
             <Unique value="1034511" type="enum"/>
             <ShapeRect value="18.0 mm 18.0 mm 134.0 mm 202.55 mm" type="num"/>
             <BRect value="18.0 mm 18.0 mm 134.0 mm 202.55 mm" type="num"/>
@@ -14414,7 +14472,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="38" type="enum"/>
+            <ID value="39" type="enum"/>
             <Unique value="1034514" type="enum"/>
             <ShapeRect value="153.0 mm 7.0 mm 17.0 mm 5.0 mm" type="num"/>
             <BRect value="153.0 mm 7.0 mm 17.0 mm 5.0 mm" type="num"/>
@@ -14427,7 +14485,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="39" type="enum"/>
+            <ID value="40" type="enum"/>
             <Unique value="1034516" type="enum"/>
             <ShapeRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
             <BRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
@@ -14450,9 +14508,9 @@
             <Point value="85.0 mm 220.55 mm" type="num"/>
         </PolyLine>
         <TextRect>
-            <ID value="40" type="enum"/>
+            <ID value="41" type="enum"/>
             <Unique value="1034519" type="enum"/>
-            <GroupID value="41" type="enum"/>
+            <GroupID value="42" type="enum"/>
             <Pen value="15" type="enum"/>
             <ShapeRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
             <BRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
@@ -14465,9 +14523,9 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="42" type="enum"/>
+            <ID value="43" type="enum"/>
             <Unique value="1034521" type="enum"/>
-            <GroupID value="41" type="enum"/>
+            <GroupID value="42" type="enum"/>
             <ShapeRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <BRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <TRNumColumns value="1" type="enum"/>
@@ -14479,7 +14537,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <Group>
-            <ID value="41" type="enum"/>
+            <ID value="42" type="enum"/>
             <Unique value="1034523" type="enum"/>
         </Group>
     </Page>
@@ -14491,7 +14549,7 @@
         <PageOrientation value="Portrait" type="enum"/>
         <PageAngle value="0.0" type="num"/>
         <TextRect>
-            <ID value="43" type="enum"/>
+            <ID value="44" type="enum"/>
             <Unique value="1034544" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -14511,10 +14569,10 @@
             <TRSideheadWidth value="30.00005 mm" type="num"/>
             <TRSideheadGap value="5.00001 mm" type="num"/>
             <TRSideheadPlacement value="Left" type="enum"/>
-            <TRNext value="44" type="enum"/>
+            <TRNext value="45" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="44" type="enum"/>
+            <ID value="45" type="enum"/>
             <Unique value="1034546" type="enum"/>
             <ShapeRect value="18.0 mm 80.0 mm 134.0 mm 140.55 mm" type="num"/>
             <BRect value="18.0 mm 80.0 mm 134.0 mm 140.55 mm" type="num"/>
@@ -14527,7 +14585,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="45" type="enum"/>
+            <ID value="46" type="enum"/>
             <Unique value="1034549" type="enum"/>
             <ShapeRect value="153.0 mm 7.0 mm 17.0 mm 5.0 mm" type="num"/>
             <BRect value="153.0 mm 7.0 mm 17.0 mm 5.0 mm" type="num"/>
@@ -14540,7 +14598,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="46" type="enum"/>
+            <ID value="47" type="enum"/>
             <Unique value="1034551" type="enum"/>
             <ShapeRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
             <BRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
@@ -14563,7 +14621,7 @@
             <Point value="85.0 mm 220.55 mm" type="num"/>
         </PolyLine>
         <TextRect>
-            <ID value="47" type="enum"/>
+            <ID value="48" type="enum"/>
             <Unique value="1034554" type="enum"/>
             <Pen value="15" type="enum"/>
             <PenWidth value="1.0 pt" type="num"/>
@@ -14578,9 +14636,9 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="48" type="enum"/>
+            <ID value="49" type="enum"/>
             <Unique value="1034556" type="enum"/>
-            <GroupID value="49" type="enum"/>
+            <GroupID value="50" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ShapeRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
             <BRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
@@ -14593,9 +14651,9 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="50" type="enum"/>
+            <ID value="51" type="enum"/>
             <Unique value="1034558" type="enum"/>
-            <GroupID value="49" type="enum"/>
+            <GroupID value="50" type="enum"/>
             <ShapeRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <BRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <TRNumColumns value="1" type="enum"/>
@@ -14607,7 +14665,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <Group>
-            <ID value="49" type="enum"/>
+            <ID value="50" type="enum"/>
             <Unique value="1034560" type="enum"/>
         </Group>
     </Page>
@@ -14619,7 +14677,7 @@
         <PageOrientation value="Portrait" type="enum"/>
         <PageAngle value="0.0" type="num"/>
         <TextRect>
-            <ID value="51" type="enum"/>
+            <ID value="52" type="enum"/>
             <Unique value="1034582" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -14642,7 +14700,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="52" type="enum"/>
+            <ID value="53" type="enum"/>
             <Unique value="1034584" type="enum"/>
             <ShapeRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
             <BRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
@@ -14655,7 +14713,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="53" type="enum"/>
+            <ID value="54" type="enum"/>
             <Unique value="1034586" type="enum"/>
             <ShapeRect value="18.0 mm 7.0 mm 134.0 mm 5.0 mm" type="num"/>
             <BRect value="18.0 mm 7.0 mm 134.0 mm 5.0 mm" type="num"/>
@@ -14668,7 +14726,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="54" type="enum"/>
+            <ID value="55" type="enum"/>
             <Unique value="1034588" type="enum"/>
             <ShapeRect value="18.0 mm 28.0 mm 134.0 mm 47.0 mm" type="num"/>
             <BRect value="18.0 mm 28.0 mm 134.0 mm 47.0 mm" type="num"/>
@@ -14678,10 +14736,10 @@
             <TRSideheadWidth value="30.00005 mm" type="num"/>
             <TRSideheadGap value="5.00001 mm" type="num"/>
             <TRSideheadPlacement value="Left" type="enum"/>
-            <TRNext value="55" type="enum"/>
+            <TRNext value="56" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="55" type="enum"/>
+            <ID value="56" type="enum"/>
             <Unique value="1034590" type="enum"/>
             <ShapeRect value="18.0 mm 80.0 mm 134.0 mm 140.55 mm" type="num"/>
             <BRect value="18.0 mm 80.0 mm 134.0 mm 140.55 mm" type="num"/>
@@ -14704,9 +14762,9 @@
             <Point value="85.0 mm 220.55 mm" type="num"/>
         </PolyLine>
         <TextRect>
-            <ID value="56" type="enum"/>
+            <ID value="57" type="enum"/>
             <Unique value="1034594" type="enum"/>
-            <GroupID value="57" type="enum"/>
+            <GroupID value="58" type="enum"/>
             <Pen value="15" type="enum"/>
             <ShapeRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
             <BRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
@@ -14719,9 +14777,9 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="58" type="enum"/>
+            <ID value="59" type="enum"/>
             <Unique value="1034596" type="enum"/>
-            <GroupID value="57" type="enum"/>
+            <GroupID value="58" type="enum"/>
             <ShapeRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <BRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <TRNumColumns value="1" type="enum"/>
@@ -14733,7 +14791,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <Group>
-            <ID value="57" type="enum"/>
+            <ID value="58" type="enum"/>
             <Unique value="1034598" type="enum"/>
         </Group>
     </Page>
@@ -14745,7 +14803,7 @@
         <PageOrientation value="Portrait" type="enum"/>
         <PageAngle value="0.0" type="num"/>
         <TextRect>
-            <ID value="59" type="enum"/>
+            <ID value="60" type="enum"/>
             <Unique value="1034620" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -14768,7 +14826,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="60" type="enum"/>
+            <ID value="61" type="enum"/>
             <Unique value="1034622" type="enum"/>
             <ShapeRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
             <BRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
@@ -14781,7 +14839,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="61" type="enum"/>
+            <ID value="62" type="enum"/>
             <Unique value="1034624" type="enum"/>
             <ShapeRect value="18.0 mm 18.0 mm 134.0 mm 202.55 mm" type="num"/>
             <BRect value="18.0 mm 18.0 mm 134.0 mm 202.55 mm" type="num"/>
@@ -14794,7 +14852,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="62" type="enum"/>
+            <ID value="63" type="enum"/>
             <Unique value="1034627" type="enum"/>
             <ShapeRect value="18.0 mm 7.0 mm 134.0 mm 5.0 mm" type="num"/>
             <BRect value="18.0 mm 7.0 mm 134.0 mm 5.0 mm" type="num"/>
@@ -14807,9 +14865,9 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="63" type="enum"/>
+            <ID value="64" type="enum"/>
             <Unique value="1034629" type="enum"/>
-            <GroupID value="64" type="enum"/>
+            <GroupID value="65" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ShapeRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
             <BRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
@@ -14822,9 +14880,9 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="65" type="enum"/>
+            <ID value="66" type="enum"/>
             <Unique value="1034631" type="enum"/>
-            <GroupID value="64" type="enum"/>
+            <GroupID value="65" type="enum"/>
             <ShapeRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <BRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <TRNumColumns value="1" type="enum"/>
@@ -14836,7 +14894,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <Group>
-            <ID value="64" type="enum"/>
+            <ID value="65" type="enum"/>
             <Unique value="1034633" type="enum"/>
         </Group>
     </Page>
@@ -14848,7 +14906,7 @@
         <PageOrientation value="Portrait" type="enum"/>
         <PageAngle value="0.0" type="num"/>
         <TextRect>
-            <ID value="66" type="enum"/>
+            <ID value="67" type="enum"/>
             <Unique value="1034654" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -14871,7 +14929,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="67" type="enum"/>
+            <ID value="68" type="enum"/>
             <Unique value="1034656" type="enum"/>
             <ShapeRect value="18.0 mm 18.0 mm 134.0 mm 202.55 mm" type="num"/>
             <BRect value="18.0 mm 18.0 mm 134.0 mm 202.55 mm" type="num"/>
@@ -14884,7 +14942,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="68" type="enum"/>
+            <ID value="69" type="enum"/>
             <Unique value="1034659" type="enum"/>
             <ShapeRect value="153.0 mm 7.0 mm 17.0 mm 5.0 mm" type="num"/>
             <BRect value="153.0 mm 7.0 mm 17.0 mm 5.0 mm" type="num"/>
@@ -14897,7 +14955,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="69" type="enum"/>
+            <ID value="70" type="enum"/>
             <Unique value="1034661" type="enum"/>
             <ShapeRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
             <BRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
@@ -14910,9 +14968,9 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="70" type="enum"/>
+            <ID value="71" type="enum"/>
             <Unique value="1034663" type="enum"/>
-            <GroupID value="71" type="enum"/>
+            <GroupID value="72" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ShapeRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
             <BRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
@@ -14925,9 +14983,9 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="72" type="enum"/>
+            <ID value="73" type="enum"/>
             <Unique value="1034665" type="enum"/>
-            <GroupID value="71" type="enum"/>
+            <GroupID value="72" type="enum"/>
             <ShapeRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <BRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <TRNumColumns value="1" type="enum"/>
@@ -14939,7 +14997,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <Group>
-            <ID value="71" type="enum"/>
+            <ID value="72" type="enum"/>
             <Unique value="1034667" type="enum"/>
         </Group>
     </Page>
@@ -14951,7 +15009,7 @@
         <PageOrientation value="Portrait" type="enum"/>
         <PageAngle value="0.0" type="num"/>
         <TextRect>
-            <ID value="73" type="enum"/>
+            <ID value="74" type="enum"/>
             <Unique value="1034688" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -14974,7 +15032,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="74" type="enum"/>
+            <ID value="75" type="enum"/>
             <Unique value="1034690" type="enum"/>
             <ShapeRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
             <BRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
@@ -14987,7 +15045,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="75" type="enum"/>
+            <ID value="76" type="enum"/>
             <Unique value="1034692" type="enum"/>
             <Angle value="90.0" type="num"/>
             <ShapeRect value="-16.275 mm 52.275 mm 202.55 mm 134.0 mm" type="num"/>
@@ -15001,7 +15059,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="76" type="enum"/>
+            <ID value="77" type="enum"/>
             <Unique value="1034694" type="enum"/>
             <ShapeRect value="18.0 mm 7.0 mm 134.0 mm 5.0 mm" type="num"/>
             <BRect value="18.0 mm 7.0 mm 134.0 mm 5.0 mm" type="num"/>
@@ -15014,9 +15072,9 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="77" type="enum"/>
+            <ID value="78" type="enum"/>
             <Unique value="1034696" type="enum"/>
-            <GroupID value="78" type="enum"/>
+            <GroupID value="79" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ShapeRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
             <BRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
@@ -15029,9 +15087,9 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="79" type="enum"/>
+            <ID value="80" type="enum"/>
             <Unique value="1034698" type="enum"/>
-            <GroupID value="78" type="enum"/>
+            <GroupID value="79" type="enum"/>
             <ShapeRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <BRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <TRNumColumns value="1" type="enum"/>
@@ -15043,7 +15101,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <Group>
-            <ID value="78" type="enum"/>
+            <ID value="79" type="enum"/>
             <Unique value="1034700" type="enum"/>
         </Group>
     </Page>
@@ -15055,7 +15113,7 @@
         <PageOrientation value="Portrait" type="enum"/>
         <PageAngle value="0.0" type="num"/>
         <TextRect>
-            <ID value="80" type="enum"/>
+            <ID value="81" type="enum"/>
             <Unique value="1034721" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -15078,7 +15136,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="81" type="enum"/>
+            <ID value="82" type="enum"/>
             <Unique value="1034723" type="enum"/>
             <ShapeRect value="153.0 mm 7.0 mm 17.0 mm 5.0 mm" type="num"/>
             <BRect value="153.0 mm 7.0 mm 17.0 mm 5.0 mm" type="num"/>
@@ -15091,7 +15149,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="82" type="enum"/>
+            <ID value="83" type="enum"/>
             <Unique value="1034725" type="enum"/>
             <ShapeRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
             <BRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
@@ -15104,7 +15162,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="83" type="enum"/>
+            <ID value="84" type="enum"/>
             <Unique value="1034727" type="enum"/>
             <Angle value="90.0" type="num"/>
             <ShapeRect value="-16.275 mm 52.275 mm 202.55 mm 134.0 mm" type="num"/>
@@ -15118,9 +15176,9 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="84" type="enum"/>
+            <ID value="85" type="enum"/>
             <Unique value="1034729" type="enum"/>
-            <GroupID value="85" type="enum"/>
+            <GroupID value="86" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ShapeRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
             <BRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
@@ -15133,9 +15191,9 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="86" type="enum"/>
+            <ID value="87" type="enum"/>
             <Unique value="1034731" type="enum"/>
-            <GroupID value="85" type="enum"/>
+            <GroupID value="86" type="enum"/>
             <ShapeRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <BRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <TRNumColumns value="1" type="enum"/>
@@ -15147,7 +15205,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <Group>
-            <ID value="85" type="enum"/>
+            <ID value="86" type="enum"/>
             <Unique value="1034733" type="enum"/>
         </Group>
     </Page>
@@ -15159,7 +15217,7 @@
         <PageOrientation value="Portrait" type="enum"/>
         <PageAngle value="0.0" type="num"/>
         <TextRect>
-            <ID value="87" type="enum"/>
+            <ID value="88" type="enum"/>
             <Unique value="1034754" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -15182,7 +15240,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="88" type="enum"/>
+            <ID value="89" type="enum"/>
             <Unique value="1034756" type="enum"/>
             <ShapeRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
             <BRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
@@ -15195,7 +15253,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="89" type="enum"/>
+            <ID value="90" type="enum"/>
             <Unique value="1034758" type="enum"/>
             <ShapeRect value="18.0 mm 18.0 mm 134.0 mm 200.0 mm" type="num"/>
             <BRect value="18.0 mm 18.0 mm 134.0 mm 200.0 mm" type="num"/>
@@ -15208,7 +15266,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="90" type="enum"/>
+            <ID value="91" type="enum"/>
             <Unique value="1034761" type="enum"/>
             <ShapeRect value="18.0 mm 7.0 mm 134.0 mm 5.0 mm" type="num"/>
             <BRect value="18.0 mm 7.0 mm 134.0 mm 5.0 mm" type="num"/>
@@ -15231,9 +15289,9 @@
             <Point value="85.0 mm 220.55 mm" type="num"/>
         </PolyLine>
         <TextRect>
-            <ID value="91" type="enum"/>
+            <ID value="92" type="enum"/>
             <Unique value="1034764" type="enum"/>
-            <GroupID value="92" type="enum"/>
+            <GroupID value="93" type="enum"/>
             <Pen value="15" type="enum"/>
             <ShapeRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
             <BRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
@@ -15246,9 +15304,9 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="93" type="enum"/>
+            <ID value="94" type="enum"/>
             <Unique value="1034766" type="enum"/>
-            <GroupID value="92" type="enum"/>
+            <GroupID value="93" type="enum"/>
             <ShapeRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <BRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <TRNumColumns value="1" type="enum"/>
@@ -15260,7 +15318,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <Group>
-            <ID value="92" type="enum"/>
+            <ID value="93" type="enum"/>
             <Unique value="1034768" type="enum"/>
         </Group>
     </Page>
@@ -15272,7 +15330,7 @@
         <PageOrientation value="Portrait" type="enum"/>
         <PageAngle value="0.0" type="num"/>
         <TextRect>
-            <ID value="94" type="enum"/>
+            <ID value="95" type="enum"/>
             <Unique value="1034789" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -15295,7 +15353,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="95" type="enum"/>
+            <ID value="96" type="enum"/>
             <Unique value="1034791" type="enum"/>
             <ShapeRect value="18.0 mm 18.0 mm 134.0 mm 200.0 mm" type="num"/>
             <BRect value="18.0 mm 18.0 mm 134.0 mm 200.0 mm" type="num"/>
@@ -15308,7 +15366,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="96" type="enum"/>
+            <ID value="97" type="enum"/>
             <Unique value="1034794" type="enum"/>
             <ShapeRect value="153.0 mm 7.0 mm 17.0 mm 5.0 mm" type="num"/>
             <BRect value="153.0 mm 7.0 mm 17.0 mm 5.0 mm" type="num"/>
@@ -15321,7 +15379,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="97" type="enum"/>
+            <ID value="98" type="enum"/>
             <Unique value="1034796" type="enum"/>
             <ShapeRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
             <BRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
@@ -15344,9 +15402,9 @@
             <Point value="85.0 mm 220.55 mm" type="num"/>
         </PolyLine>
         <TextRect>
-            <ID value="98" type="enum"/>
+            <ID value="99" type="enum"/>
             <Unique value="1034799" type="enum"/>
-            <GroupID value="99" type="enum"/>
+            <GroupID value="100" type="enum"/>
             <Pen value="15" type="enum"/>
             <ShapeRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
             <BRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
@@ -15359,9 +15417,9 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="100" type="enum"/>
+            <ID value="101" type="enum"/>
             <Unique value="1034801" type="enum"/>
-            <GroupID value="99" type="enum"/>
+            <GroupID value="100" type="enum"/>
             <ShapeRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <BRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <TRNumColumns value="1" type="enum"/>
@@ -15373,7 +15431,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <Group>
-            <ID value="99" type="enum"/>
+            <ID value="100" type="enum"/>
             <Unique value="1034803" type="enum"/>
         </Group>
     </Page>
@@ -15385,7 +15443,7 @@
         <PageOrientation value="Portrait" type="enum"/>
         <PageAngle value="0.0" type="num"/>
         <TextRect>
-            <ID value="101" type="enum"/>
+            <ID value="102" type="enum"/>
             <Unique value="1034824" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -15405,10 +15463,10 @@
             <TRSideheadWidth value="30.00005 mm" type="num"/>
             <TRSideheadGap value="5.00001 mm" type="num"/>
             <TRSideheadPlacement value="Left" type="enum"/>
-            <TRNext value="102" type="enum"/>
+            <TRNext value="103" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="103" type="enum"/>
+            <ID value="104" type="enum"/>
             <Unique value="1034826" type="enum"/>
             <ShapeRect value="18.0 mm 10.06917 mm 134.0 mm 1.93083 mm" type="num"/>
             <BRect value="18.0 mm 10.06917 mm 134.0 mm 1.93083 mm" type="num"/>
@@ -15421,7 +15479,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="102" type="enum"/>
+            <ID value="103" type="enum"/>
             <Unique value="1034828" type="enum"/>
             <ShapeRect value="18.0 mm 28.0 mm 134.0 mm 47.0 mm" type="num"/>
             <BRect value="18.0 mm 28.0 mm 134.0 mm 47.0 mm" type="num"/>
@@ -15431,10 +15489,10 @@
             <TRSideheadWidth value="30.00005 mm" type="num"/>
             <TRSideheadGap value="5.00001 mm" type="num"/>
             <TRSideheadPlacement value="Left" type="enum"/>
-            <TRNext value="104" type="enum"/>
+            <TRNext value="105" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="104" type="enum"/>
+            <ID value="105" type="enum"/>
             <Unique value="1034830" type="enum"/>
             <ShapeRect value="18.0 mm 80.0 mm 134.0 mm 140.55 mm" type="num"/>
             <BRect value="18.0 mm 80.0 mm 134.0 mm 140.55 mm" type="num"/>
@@ -15447,7 +15505,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="105" type="enum"/>
+            <ID value="106" type="enum"/>
             <Unique value="1034833" type="enum"/>
             <ShapeRect value="153.0 mm 7.0 mm 17.0 mm 5.0 mm" type="num"/>
             <BRect value="153.0 mm 7.0 mm 17.0 mm 5.0 mm" type="num"/>
@@ -15460,7 +15518,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="106" type="enum"/>
+            <ID value="107" type="enum"/>
             <Unique value="1034835" type="enum"/>
             <ShapeRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
             <BRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
@@ -15483,9 +15541,9 @@
             <Point value="85.0 mm 220.55 mm" type="num"/>
         </PolyLine>
         <TextRect>
-            <ID value="107" type="enum"/>
+            <ID value="108" type="enum"/>
             <Unique value="1034838" type="enum"/>
-            <GroupID value="108" type="enum"/>
+            <GroupID value="109" type="enum"/>
             <Pen value="15" type="enum"/>
             <ShapeRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
             <BRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
@@ -15498,9 +15556,9 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="109" type="enum"/>
+            <ID value="110" type="enum"/>
             <Unique value="1034840" type="enum"/>
-            <GroupID value="108" type="enum"/>
+            <GroupID value="109" type="enum"/>
             <ShapeRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <BRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <TRNumColumns value="1" type="enum"/>
@@ -15512,7 +15570,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <Group>
-            <ID value="108" type="enum"/>
+            <ID value="109" type="enum"/>
             <Unique value="1034842" type="enum"/>
         </Group>
     </Page>
@@ -15524,7 +15582,7 @@
         <PageOrientation value="Portrait" type="enum"/>
         <PageAngle value="0.0" type="num"/>
         <TextRect>
-            <ID value="110" type="enum"/>
+            <ID value="111" type="enum"/>
             <Unique value="1034862" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -15547,7 +15605,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="111" type="enum"/>
+            <ID value="112" type="enum"/>
             <Unique value="1034864" type="enum"/>
             <ShapeRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
             <BRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
@@ -15560,7 +15618,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="112" type="enum"/>
+            <ID value="113" type="enum"/>
             <Unique value="1034866" type="enum"/>
             <ShapeRect value="18.0 mm 18.0 mm 134.0 mm 200.0 mm" type="num"/>
             <BRect value="18.0 mm 18.0 mm 134.0 mm 200.0 mm" type="num"/>
@@ -15573,7 +15631,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="113" type="enum"/>
+            <ID value="114" type="enum"/>
             <Unique value="1034869" type="enum"/>
             <ShapeRect value="18.0 mm 7.0 mm 134.0 mm 5.0 mm" type="num"/>
             <BRect value="18.0 mm 7.0 mm 134.0 mm 5.0 mm" type="num"/>
@@ -15586,9 +15644,9 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="114" type="enum"/>
+            <ID value="115" type="enum"/>
             <Unique value="1034871" type="enum"/>
-            <GroupID value="115" type="enum"/>
+            <GroupID value="116" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ShapeRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
             <BRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
@@ -15601,9 +15659,9 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="116" type="enum"/>
+            <ID value="117" type="enum"/>
             <Unique value="1034873" type="enum"/>
-            <GroupID value="115" type="enum"/>
+            <GroupID value="116" type="enum"/>
             <ShapeRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <BRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <TRNumColumns value="1" type="enum"/>
@@ -15615,7 +15673,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <Group>
-            <ID value="115" type="enum"/>
+            <ID value="116" type="enum"/>
             <Unique value="1034875" type="enum"/>
         </Group>
     </Page>
@@ -15627,7 +15685,7 @@
         <PageOrientation value="Portrait" type="enum"/>
         <PageAngle value="0.0" type="num"/>
         <TextRect>
-            <ID value="117" type="enum"/>
+            <ID value="118" type="enum"/>
             <Unique value="1034896" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -15650,7 +15708,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="118" type="enum"/>
+            <ID value="119" type="enum"/>
             <Unique value="1034898" type="enum"/>
             <ShapeRect value="18.0 mm 18.0 mm 134.0 mm 200.0 mm" type="num"/>
             <BRect value="18.0 mm 18.0 mm 134.0 mm 200.0 mm" type="num"/>
@@ -15663,7 +15721,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="119" type="enum"/>
+            <ID value="120" type="enum"/>
             <Unique value="1034901" type="enum"/>
             <ShapeRect value="153.0 mm 7.0 mm 17.0 mm 5.0 mm" type="num"/>
             <BRect value="153.0 mm 7.0 mm 17.0 mm 5.0 mm" type="num"/>
@@ -15676,7 +15734,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="120" type="enum"/>
+            <ID value="121" type="enum"/>
             <Unique value="1034903" type="enum"/>
             <ShapeRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
             <BRect value="18.0 mm 225.6 mm 134.0 mm 5.0 mm" type="num"/>
@@ -15689,9 +15747,9 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="121" type="enum"/>
+            <ID value="122" type="enum"/>
             <Unique value="1034905" type="enum"/>
-            <GroupID value="122" type="enum"/>
+            <GroupID value="123" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ShapeRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
             <BRect value="71.37434 mm 221.71929 mm 11.0 mm 5.0 mm" type="num"/>
@@ -15704,9 +15762,9 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="123" type="enum"/>
+            <ID value="124" type="enum"/>
             <Unique value="1034907" type="enum"/>
-            <GroupID value="122" type="enum"/>
+            <GroupID value="123" type="enum"/>
             <ShapeRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <BRect value="86.37434 mm 221.71929 mm 15.0 mm 5.0 mm" type="num"/>
             <TRNumColumns value="1" type="enum"/>
@@ -15718,7 +15776,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <Group>
-            <ID value="122" type="enum"/>
+            <ID value="123" type="enum"/>
             <Unique value="1034909" type="enum"/>
         </Group>
     </Page>
@@ -15730,7 +15788,7 @@
         <PageOrientation value="Portrait" type="enum"/>
         <PageAngle value="0.0" type="num"/>
         <TextRect>
-            <ID value="124" type="enum"/>
+            <ID value="125" type="enum"/>
             <Unique value="1034938" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -15754,7 +15812,7 @@
         </TextRect>
         <Rectangle>
             <Unique value="1034940" type="enum"/>
-            <GroupID value="125" type="enum"/>
+            <GroupID value="126" type="enum"/>
             <Pen value="0" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -15764,7 +15822,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1034941" type="enum"/>
-            <GroupID value="125" type="enum"/>
+            <GroupID value="126" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
             <ShapeRect value="19.05 mm 98.27964 mm 61.4 mm 53.2 mm" type="num"/>
@@ -15884,8 +15942,8 @@
                 <Separation value="5" type="enum"/>
                 <ObColor value="Svart 35%" type="str"/>
                 <NumPoints value="2" type="enum"/>
-                <Point value="2.822 mm 2.79377 mm" type="num"/>
-                <Point value="37.822 mm 2.79377 mm" type="num"/>
+                <Point value="2.822 mm 4.93089 mm" type="num"/>
+                <Point value="37.822 mm 4.93089 mm" type="num"/>
             </PolyLine>
         </Frame>
         <TextLine>
@@ -15931,7 +15989,7 @@
         </TextLine>
         <Rectangle>
             <Unique value="1034957" type="enum"/>
-            <GroupID value="126" type="enum"/>
+            <GroupID value="127" type="enum"/>
             <Fill value="7" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -15940,7 +15998,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1034958" type="enum"/>
-            <GroupID value="126" type="enum"/>
+            <GroupID value="127" type="enum"/>
             <Fill value="15" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -15948,9 +16006,9 @@
             <BRect value="162.31684 mm 0.82682 mm 6.92414 mm 6.92413 mm" type="num"/>
         </Rectangle>
         <TextRect>
-            <ID value="127" type="enum"/>
+            <ID value="128" type="enum"/>
             <Unique value="1034959" type="enum"/>
-            <GroupID value="126" type="enum"/>
+            <GroupID value="127" type="enum"/>
             <Pen value="15" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -15965,12 +16023,12 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <Group>
-            <ID value="126" type="enum"/>
+            <ID value="127" type="enum"/>
             <Unique value="1034961" type="enum"/>
         </Group>
         <Rectangle>
             <Unique value="1034962" type="enum"/>
-            <GroupID value="128" type="enum"/>
+            <GroupID value="129" type="enum"/>
             <Pen value="0" type="enum"/>
             <Fill value="7" type="enum"/>
             <ObTint value="3500.0%" type="num"/>
@@ -15979,7 +16037,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1034963" type="enum"/>
-            <GroupID value="128" type="enum"/>
+            <GroupID value="129" type="enum"/>
             <Fill value="15" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -15987,9 +16045,9 @@
             <BRect value="73.39103 mm 98.02153 mm 7.45083 mm 7.36583 mm" type="num"/>
         </Rectangle>
         <TextRect>
-            <ID value="129" type="enum"/>
+            <ID value="130" type="enum"/>
             <Unique value="1034964" type="enum"/>
-            <GroupID value="128" type="enum"/>
+            <GroupID value="129" type="enum"/>
             <Pen value="15" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -16006,7 +16064,7 @@
         </TextRect>
         <PolyLine>
             <Unique value="1034966" type="enum"/>
-            <GroupID value="128" type="enum"/>
+            <GroupID value="129" type="enum"/>
             <Pen value="0" type="enum"/>
             <Separation value="1" type="enum"/>
             <ObColor value="White" type="str"/>
@@ -16016,14 +16074,14 @@
         </PolyLine>
         <PolyLine>
             <Unique value="1034967" type="enum"/>
-            <GroupID value="128" type="enum"/>
+            <GroupID value="129" type="enum"/>
             <NumPoints value="2" type="enum"/>
             <Point value="73.28903 mm 97.40872 mm" type="num"/>
             <Point value="81.3 mm 97.40872 mm" type="num"/>
         </PolyLine>
         <PolyLine>
             <Unique value="1034968" type="enum"/>
-            <GroupID value="128" type="enum"/>
+            <GroupID value="129" type="enum"/>
             <Separation value="5" type="enum"/>
             <ObColor value="Svart 35%" type="str"/>
             <NumPoints value="2" type="enum"/>
@@ -16032,7 +16090,7 @@
         </PolyLine>
         <Polygon>
             <Unique value="1034969" type="enum"/>
-            <GroupID value="128" type="enum"/>
+            <GroupID value="129" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="7" type="enum"/>
             <PenWidth value="0.15 pt" type="num"/>
@@ -16044,9 +16102,9 @@
             <Point value="81.11079 mm 97.83515 mm" type="num"/>
         </Polygon>
         <Group>
-            <ID value="128" type="enum"/>
+            <ID value="129" type="enum"/>
             <Unique value="1034970" type="enum"/>
-            <GroupID value="125" type="enum"/>
+            <GroupID value="126" type="enum"/>
         </Group>
         <Frame>
             <Unique value="1034971" type="enum"/>
@@ -16116,7 +16174,7 @@
             <Point value="85.0 mm 220.55 mm" type="num"/>
         </PolyLine>
         <TextRect>
-            <ID value="130" type="enum"/>
+            <ID value="131" type="enum"/>
             <Unique value="1034979" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -16185,7 +16243,7 @@
         </TextLine>
         <Rectangle>
             <Unique value="1034987" type="enum"/>
-            <GroupID value="131" type="enum"/>
+            <GroupID value="132" type="enum"/>
             <Pen value="7" type="enum"/>
             <RunaroundGap value="0.0 pt" type="num"/>
             <RunaroundType value="Contour" type="enum"/>
@@ -16194,7 +16252,7 @@
         </Rectangle>
         <PolyLine>
             <Unique value="1034988" type="enum"/>
-            <GroupID value="132" type="enum"/>
+            <GroupID value="133" type="enum"/>
             <Pen value="0" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -16204,7 +16262,7 @@
         </PolyLine>
         <PolyLine>
             <Unique value="1034989" type="enum"/>
-            <GroupID value="132" type="enum"/>
+            <GroupID value="133" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
             <NumPoints value="2" type="enum"/>
@@ -16212,18 +16270,18 @@
             <Point value="152.19999 mm 219.67521 mm" type="num"/>
         </PolyLine>
         <Group>
-            <ID value="132" type="enum"/>
+            <ID value="133" type="enum"/>
             <Unique value="1034990" type="enum"/>
-            <GroupID value="131" type="enum"/>
+            <GroupID value="132" type="enum"/>
             <RunaroundType value="None" type="enum"/>
         </Group>
         <Group>
-            <ID value="131" type="enum"/>
+            <ID value="132" type="enum"/>
             <Unique value="1034991" type="enum"/>
         </Group>
         <Rectangle>
             <Unique value="1034992" type="enum"/>
-            <GroupID value="133" type="enum"/>
+            <GroupID value="134" type="enum"/>
             <Pen value="7" type="enum"/>
             <RunaroundType value="Contour" type="enum"/>
             <ShapeRect value="18.0 mm 217.55 mm 63.5 mm 3.0 mm" type="num"/>
@@ -16231,7 +16289,7 @@
         </Rectangle>
         <PolyLine>
             <Unique value="1034993" type="enum"/>
-            <GroupID value="134" type="enum"/>
+            <GroupID value="135" type="enum"/>
             <Pen value="0" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -16241,7 +16299,7 @@
         </PolyLine>
         <PolyLine>
             <Unique value="1034994" type="enum"/>
-            <GroupID value="134" type="enum"/>
+            <GroupID value="135" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
             <NumPoints value="2" type="enum"/>
@@ -16249,13 +16307,13 @@
             <Point value="81.5 mm 219.67521 mm" type="num"/>
         </PolyLine>
         <Group>
-            <ID value="134" type="enum"/>
+            <ID value="135" type="enum"/>
             <Unique value="1034995" type="enum"/>
-            <GroupID value="133" type="enum"/>
+            <GroupID value="134" type="enum"/>
             <RunaroundType value="None" type="enum"/>
         </Group>
         <Group>
-            <ID value="133" type="enum"/>
+            <ID value="134" type="enum"/>
             <Unique value="1034996" type="enum"/>
         </Group>
         <TextLine>
@@ -16272,7 +16330,7 @@
             <String>Preparat nedtill h-spalt</String>
         </TextLine>
         <Group>
-            <ID value="125" type="enum"/>
+            <ID value="126" type="enum"/>
             <Unique value="1034999" type="enum"/>
         </Group>
     </Page>
@@ -16284,7 +16342,7 @@
         <PageOrientation value="Portrait" type="enum"/>
         <PageAngle value="0.0" type="num"/>
         <TextRect>
-            <ID value="135" type="enum"/>
+            <ID value="136" type="enum"/>
             <Unique value="1035011" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -16304,10 +16362,10 @@
             <TRSideheadWidth value="30.00005 mm" type="num"/>
             <TRSideheadGap value="5.00001 mm" type="num"/>
             <TRSideheadPlacement value="Left" type="enum"/>
-            <TRNext value="136" type="enum"/>
+            <TRNext value="137" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="137" type="enum"/>
+            <ID value="138" type="enum"/>
             <Unique value="1035013" type="enum"/>
             <RunaroundGap value="6.0 pt" type="num"/>
             <RunaroundType value="Contour" type="enum"/>
@@ -16322,7 +16380,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="138" type="enum"/>
+            <ID value="139" type="enum"/>
             <Unique value="1035015" type="enum"/>
             <ShapeRect value="88.5 mm 14.65 mm 63.5 mm 26.45857 mm" type="num"/>
             <BRect value="88.5 mm 14.65 mm 63.5 mm 26.45857 mm" type="num"/>
@@ -16336,7 +16394,7 @@
         </TextRect>
         <Rectangle>
             <Unique value="1035017" type="enum"/>
-            <GroupID value="139" type="enum"/>
+            <GroupID value="140" type="enum"/>
             <Pen value="0" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -16346,7 +16404,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1035018" type="enum"/>
-            <GroupID value="139" type="enum"/>
+            <GroupID value="140" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
             <ShapeRect value="18.85 mm 18.87092 mm 61.4 mm 53.2 mm" type="num"/>
@@ -16354,7 +16412,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1035019" type="enum"/>
-            <GroupID value="140" type="enum"/>
+            <GroupID value="141" type="enum"/>
             <Fill value="7" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -16363,7 +16421,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1035020" type="enum"/>
-            <GroupID value="140" type="enum"/>
+            <GroupID value="141" type="enum"/>
             <Fill value="15" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -16371,9 +16429,9 @@
             <BRect value="73.19103 mm 18.61281 mm 7.45083 mm 7.36583 mm" type="num"/>
         </Rectangle>
         <TextRect>
-            <ID value="141" type="enum"/>
+            <ID value="142" type="enum"/>
             <Unique value="1035021" type="enum"/>
-            <GroupID value="140" type="enum"/>
+            <GroupID value="141" type="enum"/>
             <Pen value="15" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -16390,7 +16448,7 @@
         </TextRect>
         <PolyLine>
             <Unique value="1035023" type="enum"/>
-            <GroupID value="140" type="enum"/>
+            <GroupID value="141" type="enum"/>
             <Pen value="0" type="enum"/>
             <Separation value="1" type="enum"/>
             <ObColor value="White" type="str"/>
@@ -16402,14 +16460,14 @@
         </PolyLine>
         <PolyLine>
             <Unique value="1035024" type="enum"/>
-            <GroupID value="140" type="enum"/>
+            <GroupID value="141" type="enum"/>
             <NumPoints value="2" type="enum"/>
             <Point value="73.08903 mm 18.0 mm" type="num"/>
             <Point value="81.1 mm 18.0 mm" type="num"/>
         </PolyLine>
         <PolyLine>
             <Unique value="1035025" type="enum"/>
-            <GroupID value="140" type="enum"/>
+            <GroupID value="141" type="enum"/>
             <Separation value="5" type="enum"/>
             <ObColor value="Svart 35%" type="str"/>
             <NumPoints value="2" type="enum"/>
@@ -16418,7 +16476,7 @@
         </PolyLine>
         <Polygon>
             <Unique value="1035026" type="enum"/>
-            <GroupID value="140" type="enum"/>
+            <GroupID value="141" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="7" type="enum"/>
             <PenWidth value="0.15 pt" type="num"/>
@@ -16430,17 +16488,17 @@
             <Point value="80.91079 mm 18.42643 mm" type="num"/>
         </Polygon>
         <Group>
-            <ID value="140" type="enum"/>
+            <ID value="141" type="enum"/>
             <Unique value="1035027" type="enum"/>
-            <GroupID value="139" type="enum"/>
+            <GroupID value="140" type="enum"/>
         </Group>
         <Group>
-            <ID value="139" type="enum"/>
+            <ID value="140" type="enum"/>
             <Unique value="1035028" type="enum"/>
         </Group>
         <Rectangle>
             <Unique value="1035029" type="enum"/>
-            <GroupID value="142" type="enum"/>
+            <GroupID value="143" type="enum"/>
             <Pen value="0" type="enum"/>
             <Fill value="15" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
@@ -16452,7 +16510,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1035030" type="enum"/>
-            <GroupID value="142" type="enum"/>
+            <GroupID value="143" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
             <ShapeRect value="89.35 mm 18.87092 mm 61.4 mm 53.2 mm" type="num"/>
@@ -16460,7 +16518,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1035031" type="enum"/>
-            <GroupID value="143" type="enum"/>
+            <GroupID value="144" type="enum"/>
             <Fill value="7" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -16469,7 +16527,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1035032" type="enum"/>
-            <GroupID value="143" type="enum"/>
+            <GroupID value="144" type="enum"/>
             <Fill value="15" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -16477,9 +16535,9 @@
             <BRect value="143.69103 mm 18.61281 mm 7.45083 mm 7.36583 mm" type="num"/>
         </Rectangle>
         <TextRect>
-            <ID value="144" type="enum"/>
+            <ID value="145" type="enum"/>
             <Unique value="1035033" type="enum"/>
-            <GroupID value="143" type="enum"/>
+            <GroupID value="144" type="enum"/>
             <Pen value="15" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -16496,7 +16554,7 @@
         </TextRect>
         <PolyLine>
             <Unique value="1035035" type="enum"/>
-            <GroupID value="143" type="enum"/>
+            <GroupID value="144" type="enum"/>
             <Pen value="0" type="enum"/>
             <Separation value="1" type="enum"/>
             <ObColor value="White" type="str"/>
@@ -16506,14 +16564,14 @@
         </PolyLine>
         <PolyLine>
             <Unique value="1035036" type="enum"/>
-            <GroupID value="143" type="enum"/>
+            <GroupID value="144" type="enum"/>
             <NumPoints value="2" type="enum"/>
             <Point value="143.58903 mm 18.0 mm" type="num"/>
             <Point value="151.6 mm 18.0 mm" type="num"/>
         </PolyLine>
         <PolyLine>
             <Unique value="1035037" type="enum"/>
-            <GroupID value="143" type="enum"/>
+            <GroupID value="144" type="enum"/>
             <Separation value="5" type="enum"/>
             <ObColor value="Svart 35%" type="str"/>
             <NumPoints value="2" type="enum"/>
@@ -16522,7 +16580,7 @@
         </PolyLine>
         <Polygon>
             <Unique value="1035038" type="enum"/>
-            <GroupID value="143" type="enum"/>
+            <GroupID value="144" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="7" type="enum"/>
             <PenWidth value="0.15 pt" type="num"/>
@@ -16534,12 +16592,12 @@
             <Point value="151.41079 mm 18.42643 mm" type="num"/>
         </Polygon>
         <Group>
-            <ID value="143" type="enum"/>
+            <ID value="144" type="enum"/>
             <Unique value="1035039" type="enum"/>
-            <GroupID value="142" type="enum"/>
+            <GroupID value="143" type="enum"/>
         </Group>
         <Group>
-            <ID value="142" type="enum"/>
+            <ID value="143" type="enum"/>
             <Unique value="1035040" type="enum"/>
         </Group>
     </Page>
@@ -16551,39 +16609,8 @@
         <PageOrientation value="Portrait" type="enum"/>
         <PageAngle value="0.0" type="num"/>
         <TextRect>
-            <ID value="136" type="enum"/>
+            <ID value="137" type="enum"/>
             <Unique value="1035558" type="enum"/>
-            <Pen value="15" type="enum"/>
-            <Fill value="15" type="enum"/>
-            <PenWidth value="1.0 pt" type="num"/>
-            <Separation value="0" type="enum"/>
-            <ObColor value="Black" type="str"/>
-            <DashedPattern>
-                <DashedStyle value="Solid" type="enum"/>
-            </DashedPattern>
-            <RunaroundGap value="0.0 pt" type="num"/>
-            <RunaroundType value="None" type="enum"/>
-            <ShapeRect value="10.0 mm 10.0 mm 140.0 mm 160.0 mm" type="num"/>
-            <BRect value="10.0 mm 10.0 mm 140.0 mm 160.0 mm" type="num"/>
-            <TRNumColumns value="1" type="enum"/>
-            <TRColumnGap value="5.00001 mm" type="num"/>
-            <TRColumnBalance value="No" type="enum"/>
-            <TRSideheadWidth value="30.00005 mm" type="num"/>
-            <TRSideheadGap value="5.00001 mm" type="num"/>
-            <TRSideheadPlacement value="Left" type="enum"/>
-            <TRNext value="145" type="enum"/>
-        </TextRect>
-    </Page>
-    <Page>
-        <Unique value="1035562" type="enum"/>
-        <PageType value="ReferencePage" type="enum"/>
-        <PageTag value="HTML" type="str"/>
-        <PageSize value="170.0 mm 240.0 mm" type="num"/>
-        <PageOrientation value="Portrait" type="enum"/>
-        <PageAngle value="0.0" type="num"/>
-        <TextRect>
-            <ID value="145" type="enum"/>
-            <Unique value="1035563" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
             <PenWidth value="1.0 pt" type="num"/>
@@ -16606,7 +16633,7 @@
         </TextRect>
     </Page>
     <Page>
-        <Unique value="1035567" type="enum"/>
+        <Unique value="1035562" type="enum"/>
         <PageType value="ReferencePage" type="enum"/>
         <PageTag value="HTML" type="str"/>
         <PageSize value="170.0 mm 240.0 mm" type="num"/>
@@ -16614,6 +16641,37 @@
         <PageAngle value="0.0" type="num"/>
         <TextRect>
             <ID value="146" type="enum"/>
+            <Unique value="1035563" type="enum"/>
+            <Pen value="15" type="enum"/>
+            <Fill value="15" type="enum"/>
+            <PenWidth value="1.0 pt" type="num"/>
+            <Separation value="0" type="enum"/>
+            <ObColor value="Black" type="str"/>
+            <DashedPattern>
+                <DashedStyle value="Solid" type="enum"/>
+            </DashedPattern>
+            <RunaroundGap value="0.0 pt" type="num"/>
+            <RunaroundType value="None" type="enum"/>
+            <ShapeRect value="10.0 mm 10.0 mm 140.0 mm 160.0 mm" type="num"/>
+            <BRect value="10.0 mm 10.0 mm 140.0 mm 160.0 mm" type="num"/>
+            <TRNumColumns value="1" type="enum"/>
+            <TRColumnGap value="5.00001 mm" type="num"/>
+            <TRColumnBalance value="No" type="enum"/>
+            <TRSideheadWidth value="30.00005 mm" type="num"/>
+            <TRSideheadGap value="5.00001 mm" type="num"/>
+            <TRSideheadPlacement value="Left" type="enum"/>
+            <TRNext value="147" type="enum"/>
+        </TextRect>
+    </Page>
+    <Page>
+        <Unique value="1035567" type="enum"/>
+        <PageType value="ReferencePage" type="enum"/>
+        <PageTag value="HTML" type="str"/>
+        <PageSize value="170.0 mm 240.0 mm" type="num"/>
+        <PageOrientation value="Portrait" type="enum"/>
+        <PageAngle value="0.0" type="num"/>
+        <TextRect>
+            <ID value="147" type="enum"/>
             <Unique value="1035568" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -16644,7 +16702,7 @@
         <PageOrientation value="Portrait" type="enum"/>
         <PageAngle value="0.0" type="num"/>
         <TextRect>
-            <ID value="147" type="enum"/>
+            <ID value="148" type="enum"/>
             <Unique value="1035573" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -16685,7 +16743,7 @@
         <PageAngle value="0.0" type="num"/>
         <PageBackground value="Första kapitelsida höger" type="str"/>
         <TextRect>
-            <ID value="148" type="enum"/>
+            <ID value="149" type="enum"/>
             <Unique value="1011688" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -16705,10 +16763,10 @@
             <TRSideheadWidth value="30.00005 mm" type="num"/>
             <TRSideheadGap value="5.00001 mm" type="num"/>
             <TRSideheadPlacement value="Left" type="enum"/>
-            <TRNext value="149" type="enum"/>
+            <TRNext value="150" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="149" type="enum"/>
+            <ID value="150" type="enum"/>
             <Unique value="1039928" type="enum"/>
             <ShapeRect value="18.0 mm 80.0 mm 134.0 mm 140.55 mm" type="num"/>
             <BRect value="18.0 mm 80.0 mm 134.0 mm 140.55 mm" type="num"/>
@@ -16718,10 +16776,10 @@
             <TRSideheadWidth value="30.00005 mm" type="num"/>
             <TRSideheadGap value="5.00001 mm" type="num"/>
             <TRSideheadPlacement value="Left" type="enum"/>
-            <TRNext value="150" type="enum"/>
+            <TRNext value="151" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="151" type="enum"/>
+            <ID value="152" type="enum"/>
             <Unique value="1024514" type="enum"/>
             <RunaroundType value="Contour" type="enum"/>
             <ShapeRect value="88.38195 mm 77.54142 mm 63.5 mm 90.93493 mm" type="num"/>
@@ -16736,7 +16794,7 @@
         </TextRect>
         <Rectangle>
             <Unique value="1024559" type="enum"/>
-            <GroupID value="152" type="enum"/>
+            <GroupID value="153" type="enum"/>
             <Pen value="0" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -16746,7 +16804,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1024560" type="enum"/>
-            <GroupID value="152" type="enum"/>
+            <GroupID value="153" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
             <ShapeRect value="89.41146 mm 81.42995 mm 61.4 mm 80.57096 mm" type="num"/>
@@ -16754,7 +16812,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1024561" type="enum"/>
-            <GroupID value="153" type="enum"/>
+            <GroupID value="154" type="enum"/>
             <Fill value="7" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -16763,7 +16821,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1024562" type="enum"/>
-            <GroupID value="153" type="enum"/>
+            <GroupID value="154" type="enum"/>
             <Fill value="15" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -16771,9 +16829,9 @@
             <BRect value="143.75249 mm 81.17183 mm 7.45083 mm 7.36583 mm" type="num"/>
         </Rectangle>
         <TextRect>
-            <ID value="154" type="enum"/>
+            <ID value="155" type="enum"/>
             <Unique value="1024563" type="enum"/>
-            <GroupID value="153" type="enum"/>
+            <GroupID value="154" type="enum"/>
             <Pen value="15" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -16790,7 +16848,7 @@
         </TextRect>
         <PolyLine>
             <Unique value="1024565" type="enum"/>
-            <GroupID value="153" type="enum"/>
+            <GroupID value="154" type="enum"/>
             <Pen value="0" type="enum"/>
             <Separation value="1" type="enum"/>
             <ObColor value="White" type="str"/>
@@ -16802,14 +16860,14 @@
         </PolyLine>
         <PolyLine>
             <Unique value="1024566" type="enum"/>
-            <GroupID value="153" type="enum"/>
+            <GroupID value="154" type="enum"/>
             <NumPoints value="2" type="enum"/>
             <Point value="143.65049 mm 80.55903 mm" type="num"/>
             <Point value="151.66146 mm 80.55903 mm" type="num"/>
         </PolyLine>
         <PolyLine>
             <Unique value="1024567" type="enum"/>
-            <GroupID value="153" type="enum"/>
+            <GroupID value="154" type="enum"/>
             <Separation value="5" type="enum"/>
             <ObColor value="Svart 35%" type="str"/>
             <NumPoints value="2" type="enum"/>
@@ -16818,7 +16876,7 @@
         </PolyLine>
         <Polygon>
             <Unique value="1024568" type="enum"/>
-            <GroupID value="153" type="enum"/>
+            <GroupID value="154" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="7" type="enum"/>
             <PenWidth value="0.15 pt" type="num"/>
@@ -16830,14 +16888,31 @@
             <Point value="151.47225 mm 80.98545 mm" type="num"/>
         </Polygon>
         <Group>
-            <ID value="153" type="enum"/>
+            <ID value="154" type="enum"/>
             <Unique value="1024569" type="enum"/>
-            <GroupID value="152" type="enum"/>
+            <GroupID value="153" type="enum"/>
         </Group>
         <Group>
-            <ID value="152" type="enum"/>
+            <ID value="153" type="enum"/>
             <Unique value="1036562" type="enum"/>
         </Group>
+        <TextRect>
+            <ID value="156" type="enum"/>
+            <Unique value="1041012" type="enum"/>
+            <Fill value="15" type="enum"/>
+            <PenWidth value="0.5 pt" type="num"/>
+            <Separation value="0" type="enum"/>
+            <ObColor value="Black" type="str"/>
+            <ShapeRect value="18.0 mm 7.0 mm 95.0 mm 12.30905 mm" type="num"/>
+            <BRect value="18.0 mm 7.0 mm 95.0 mm 12.30905 mm" type="num"/>
+            <TRNumColumns value="1" type="enum"/>
+            <TRColumnGap value="5.00001 mm" type="num"/>
+            <TRColumnBalance value="No" type="enum"/>
+            <TRSideheadWidth value="30.00005 mm" type="num"/>
+            <TRSideheadGap value="5.00001 mm" type="num"/>
+            <TRSideheadPlacement value="Left" type="enum"/>
+            <TRNext value="0" type="enum"/>
+        </TextRect>
     </Page>
     <Page>
         <Unique value="1022367" type="enum"/>
@@ -16849,7 +16924,7 @@
         <PageAngle value="0.0" type="num"/>
         <PageBackground value="Left utan linje" type="str"/>
         <TextRect>
-            <ID value="155" type="enum"/>
+            <ID value="157" type="enum"/>
             <Unique value="1022370" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -16872,7 +16947,7 @@
             <TRNext value="0" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="156" type="enum"/>
+            <ID value="158" type="enum"/>
             <Unique value="1022377" type="enum"/>
             <RunaroundType value="Contour" type="enum"/>
             <ShapeRect value="18.0 mm 14.65 mm 134.0 mm 204.37925 mm" type="num"/>
@@ -16896,7 +16971,7 @@
         <PageAngle value="0.0" type="num"/>
         <PageBackground value="Default" type="str"/>
         <TextRect>
-            <ID value="150" type="enum"/>
+            <ID value="151" type="enum"/>
             <Unique value="1016853" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -16916,10 +16991,10 @@
             <TRSideheadWidth value="30.00005 mm" type="num"/>
             <TRSideheadGap value="5.00001 mm" type="num"/>
             <TRSideheadPlacement value="Left" type="enum"/>
-            <TRNext value="157" type="enum"/>
+            <TRNext value="159" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="158" type="enum"/>
+            <ID value="160" type="enum"/>
             <Unique value="1027789" type="enum"/>
             <RunaroundType value="Contour" type="enum"/>
             <ShapeRect value="88.32361 mm 14.65 mm 63.5 mm 71.45595 mm" type="num"/>
@@ -16934,7 +17009,7 @@
         </TextRect>
         <Rectangle>
             <Unique value="1017056" type="enum"/>
-            <GroupID value="159" type="enum"/>
+            <GroupID value="161" type="enum"/>
             <Pen value="0" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -16944,7 +17019,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1017057" type="enum"/>
-            <GroupID value="159" type="enum"/>
+            <GroupID value="161" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
             <ShapeRect value="89.23507 mm 18.87092 mm 61.4 mm 63.23151 mm" type="num"/>
@@ -16952,7 +17027,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1017058" type="enum"/>
-            <GroupID value="160" type="enum"/>
+            <GroupID value="162" type="enum"/>
             <Fill value="7" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -16961,7 +17036,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1017059" type="enum"/>
-            <GroupID value="160" type="enum"/>
+            <GroupID value="162" type="enum"/>
             <Fill value="15" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -16969,9 +17044,9 @@
             <BRect value="143.5761 mm 18.61281 mm 7.45083 mm 7.36583 mm" type="num"/>
         </Rectangle>
         <TextRect>
-            <ID value="161" type="enum"/>
+            <ID value="163" type="enum"/>
             <Unique value="1017060" type="enum"/>
-            <GroupID value="160" type="enum"/>
+            <GroupID value="162" type="enum"/>
             <Pen value="15" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -16988,7 +17063,7 @@
         </TextRect>
         <PolyLine>
             <Unique value="1017062" type="enum"/>
-            <GroupID value="160" type="enum"/>
+            <GroupID value="162" type="enum"/>
             <Pen value="0" type="enum"/>
             <Separation value="1" type="enum"/>
             <ObColor value="White" type="str"/>
@@ -17000,14 +17075,14 @@
         </PolyLine>
         <PolyLine>
             <Unique value="1017063" type="enum"/>
-            <GroupID value="160" type="enum"/>
+            <GroupID value="162" type="enum"/>
             <NumPoints value="2" type="enum"/>
             <Point value="143.4741 mm 18.0 mm" type="num"/>
             <Point value="151.48507 mm 18.0 mm" type="num"/>
         </PolyLine>
         <PolyLine>
             <Unique value="1017064" type="enum"/>
-            <GroupID value="160" type="enum"/>
+            <GroupID value="162" type="enum"/>
             <Separation value="5" type="enum"/>
             <ObColor value="Svart 35%" type="str"/>
             <NumPoints value="2" type="enum"/>
@@ -17016,7 +17091,7 @@
         </PolyLine>
         <Polygon>
             <Unique value="1017065" type="enum"/>
-            <GroupID value="160" type="enum"/>
+            <GroupID value="162" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="7" type="enum"/>
             <PenWidth value="0.15 pt" type="num"/>
@@ -17028,12 +17103,12 @@
             <Point value="151.29586 mm 18.42643 mm" type="num"/>
         </Polygon>
         <Group>
-            <ID value="160" type="enum"/>
+            <ID value="162" type="enum"/>
             <Unique value="1017066" type="enum"/>
-            <GroupID value="159" type="enum"/>
+            <GroupID value="161" type="enum"/>
         </Group>
         <TextRect>
-            <ID value="162" type="enum"/>
+            <ID value="164" type="enum"/>
             <Unique value="1038967" type="enum"/>
             <Fill value="15" type="enum"/>
             <PenWidth value="1.0 pt" type="num"/>
@@ -17052,7 +17127,7 @@
         </TextRect>
         <Rectangle>
             <Unique value="1038969" type="enum"/>
-            <GroupID value="163" type="enum"/>
+            <GroupID value="165" type="enum"/>
             <Pen value="0" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -17062,7 +17137,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1038970" type="enum"/>
-            <GroupID value="163" type="enum"/>
+            <GroupID value="165" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
             <ShapeRect value="18.85 mm 18.38585 mm 61.4 mm 94.90859 mm" type="num"/>
@@ -17070,7 +17145,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1038971" type="enum"/>
-            <GroupID value="164" type="enum"/>
+            <GroupID value="166" type="enum"/>
             <Fill value="7" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -17079,7 +17154,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1038972" type="enum"/>
-            <GroupID value="164" type="enum"/>
+            <GroupID value="166" type="enum"/>
             <Fill value="15" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -17087,9 +17162,9 @@
             <BRect value="73.19103 mm 18.12773 mm 7.45083 mm 7.36583 mm" type="num"/>
         </Rectangle>
         <TextRect>
-            <ID value="165" type="enum"/>
+            <ID value="167" type="enum"/>
             <Unique value="1038973" type="enum"/>
-            <GroupID value="164" type="enum"/>
+            <GroupID value="166" type="enum"/>
             <Pen value="15" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -17106,7 +17181,7 @@
         </TextRect>
         <PolyLine>
             <Unique value="1038975" type="enum"/>
-            <GroupID value="164" type="enum"/>
+            <GroupID value="166" type="enum"/>
             <Pen value="0" type="enum"/>
             <Separation value="1" type="enum"/>
             <ObColor value="White" type="str"/>
@@ -17116,14 +17191,14 @@
         </PolyLine>
         <PolyLine>
             <Unique value="1038976" type="enum"/>
-            <GroupID value="164" type="enum"/>
+            <GroupID value="166" type="enum"/>
             <NumPoints value="2" type="enum"/>
             <Point value="73.08903 mm 17.51493 mm" type="num"/>
             <Point value="81.1 mm 17.51493 mm" type="num"/>
         </PolyLine>
         <PolyLine>
             <Unique value="1038977" type="enum"/>
-            <GroupID value="164" type="enum"/>
+            <GroupID value="166" type="enum"/>
             <Separation value="5" type="enum"/>
             <ObColor value="Svart 35%" type="str"/>
             <NumPoints value="2" type="enum"/>
@@ -17132,7 +17207,7 @@
         </PolyLine>
         <Polygon>
             <Unique value="1038978" type="enum"/>
-            <GroupID value="164" type="enum"/>
+            <GroupID value="166" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="7" type="enum"/>
             <PenWidth value="0.15 pt" type="num"/>
@@ -17144,16 +17219,16 @@
             <Point value="80.91079 mm 17.94135 mm" type="num"/>
         </Polygon>
         <Group>
-            <ID value="164" type="enum"/>
+            <ID value="166" type="enum"/>
             <Unique value="1038979" type="enum"/>
-            <GroupID value="163" type="enum"/>
+            <GroupID value="165" type="enum"/>
         </Group>
         <Group>
-            <ID value="163" type="enum"/>
+            <ID value="165" type="enum"/>
             <Unique value="1038980" type="enum"/>
         </Group>
         <Group>
-            <ID value="159" type="enum"/>
+            <ID value="161" type="enum"/>
             <Unique value="1040061" type="enum"/>
         </Group>
     </Page>
@@ -17167,7 +17242,7 @@
         <PageAngle value="0.0" type="num"/>
         <PageBackground value="Default" type="str"/>
         <TextRect>
-            <ID value="157" type="enum"/>
+            <ID value="159" type="enum"/>
             <Unique value="1016861" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -17187,10 +17262,10 @@
             <TRSideheadWidth value="30.00005 mm" type="num"/>
             <TRSideheadGap value="5.00001 mm" type="num"/>
             <TRSideheadPlacement value="Left" type="enum"/>
-            <TRNext value="166" type="enum"/>
+            <TRNext value="168" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="167" type="enum"/>
+            <ID value="169" type="enum"/>
             <Unique value="1024668" type="enum"/>
             <RunaroundType value="Contour" type="enum"/>
             <ShapeRect value="88.5 mm 14.65 mm 63.5 mm 81.54108 mm" type="num"/>
@@ -17205,7 +17280,7 @@
         </TextRect>
         <Rectangle>
             <Unique value="1024695" type="enum"/>
-            <GroupID value="168" type="enum"/>
+            <GroupID value="170" type="enum"/>
             <Pen value="0" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -17215,7 +17290,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1024696" type="enum"/>
-            <GroupID value="168" type="enum"/>
+            <GroupID value="170" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
             <ShapeRect value="89.41146 mm 19.09141 mm 61.4 mm 73.55235 mm" type="num"/>
@@ -17223,7 +17298,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1024697" type="enum"/>
-            <GroupID value="169" type="enum"/>
+            <GroupID value="171" type="enum"/>
             <Fill value="7" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -17232,7 +17307,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1024698" type="enum"/>
-            <GroupID value="169" type="enum"/>
+            <GroupID value="171" type="enum"/>
             <Fill value="15" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -17240,9 +17315,9 @@
             <BRect value="143.75249 mm 18.83329 mm 7.45083 mm 7.36583 mm" type="num"/>
         </Rectangle>
         <TextRect>
-            <ID value="170" type="enum"/>
+            <ID value="172" type="enum"/>
             <Unique value="1024699" type="enum"/>
-            <GroupID value="169" type="enum"/>
+            <GroupID value="171" type="enum"/>
             <Pen value="15" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -17259,7 +17334,7 @@
         </TextRect>
         <PolyLine>
             <Unique value="1024701" type="enum"/>
-            <GroupID value="169" type="enum"/>
+            <GroupID value="171" type="enum"/>
             <Pen value="0" type="enum"/>
             <Separation value="1" type="enum"/>
             <ObColor value="White" type="str"/>
@@ -17271,14 +17346,14 @@
         </PolyLine>
         <PolyLine>
             <Unique value="1024702" type="enum"/>
-            <GroupID value="169" type="enum"/>
+            <GroupID value="171" type="enum"/>
             <NumPoints value="2" type="enum"/>
             <Point value="143.65049 mm 18.22049 mm" type="num"/>
             <Point value="151.66146 mm 18.22049 mm" type="num"/>
         </PolyLine>
         <PolyLine>
             <Unique value="1024703" type="enum"/>
-            <GroupID value="169" type="enum"/>
+            <GroupID value="171" type="enum"/>
             <Separation value="5" type="enum"/>
             <ObColor value="Svart 35%" type="str"/>
             <NumPoints value="2" type="enum"/>
@@ -17287,7 +17362,7 @@
         </PolyLine>
         <Polygon>
             <Unique value="1024704" type="enum"/>
-            <GroupID value="169" type="enum"/>
+            <GroupID value="171" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="7" type="enum"/>
             <PenWidth value="0.15 pt" type="num"/>
@@ -17299,12 +17374,12 @@
             <Point value="151.47225 mm 18.64691 mm" type="num"/>
         </Polygon>
         <Group>
-            <ID value="169" type="enum"/>
+            <ID value="171" type="enum"/>
             <Unique value="1024705" type="enum"/>
-            <GroupID value="168" type="enum"/>
+            <GroupID value="170" type="enum"/>
         </Group>
         <Group>
-            <ID value="168" type="enum"/>
+            <ID value="170" type="enum"/>
             <Unique value="1031709" type="enum"/>
         </Group>
     </Page>
@@ -17318,7 +17393,7 @@
         <PageAngle value="0.0" type="num"/>
         <PageBackground value="Right utan linje" type="str"/>
         <TextRect>
-            <ID value="166" type="enum"/>
+            <ID value="168" type="enum"/>
             <Unique value="1016869" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -17338,10 +17413,10 @@
             <TRSideheadWidth value="30.00005 mm" type="num"/>
             <TRSideheadGap value="5.00001 mm" type="num"/>
             <TRSideheadPlacement value="Left" type="enum"/>
-            <TRNext value="171" type="enum"/>
+            <TRNext value="173" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="172" type="enum"/>
+            <ID value="174" type="enum"/>
             <Unique value="1023332" type="enum"/>
             <RunaroundType value="Contour" type="enum"/>
             <ShapeRect value="18.0 mm 14.65 mm 134.0 mm 150.34999 mm" type="num"/>
@@ -17376,7 +17451,7 @@
         <PageAngle value="0.0" type="num"/>
         <PageBackground value="Default" type="str"/>
         <TextRect>
-            <ID value="171" type="enum"/>
+            <ID value="173" type="enum"/>
             <Unique value="1016877" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -17396,14 +17471,14 @@
             <TRSideheadWidth value="30.00005 mm" type="num"/>
             <TRSideheadGap value="5.00001 mm" type="num"/>
             <TRSideheadPlacement value="Left" type="enum"/>
-            <TRNext value="173" type="enum"/>
+            <TRNext value="175" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="174" type="enum"/>
+            <ID value="176" type="enum"/>
             <Unique value="1024745" type="enum"/>
             <RunaroundType value="Contour" type="enum"/>
-            <ShapeRect value="88.16146 mm 14.75243 mm 63.5 mm 89.74414 mm" type="num"/>
-            <BRect value="88.16146 mm 14.75243 mm 63.5 mm 89.74414 mm" type="num"/>
+            <ShapeRect value="88.16146 mm 14.75243 mm 63.5 mm 110.117 mm" type="num"/>
+            <BRect value="88.16146 mm 14.75243 mm 63.5 mm 110.117 mm" type="num"/>
             <TRNumColumns value="1" type="enum"/>
             <TRColumnGap value="5.00001 mm" type="num"/>
             <TRColumnBalance value="No" type="enum"/>
@@ -17414,7 +17489,7 @@
         </TextRect>
         <Rectangle>
             <Unique value="1025065" type="enum"/>
-            <GroupID value="175" type="enum"/>
+            <GroupID value="177" type="enum"/>
             <Pen value="0" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -17424,7 +17499,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1025066" type="enum"/>
-            <GroupID value="175" type="enum"/>
+            <GroupID value="177" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
             <ShapeRect value="89.41146 mm 19.09141 mm 61.4 mm 82.61992 mm" type="num"/>
@@ -17432,7 +17507,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1025067" type="enum"/>
-            <GroupID value="176" type="enum"/>
+            <GroupID value="178" type="enum"/>
             <Fill value="7" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -17441,7 +17516,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1025068" type="enum"/>
-            <GroupID value="176" type="enum"/>
+            <GroupID value="178" type="enum"/>
             <Fill value="15" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -17449,9 +17524,9 @@
             <BRect value="143.75249 mm 18.83329 mm 7.45083 mm 7.36583 mm" type="num"/>
         </Rectangle>
         <TextRect>
-            <ID value="177" type="enum"/>
+            <ID value="179" type="enum"/>
             <Unique value="1025069" type="enum"/>
-            <GroupID value="176" type="enum"/>
+            <GroupID value="178" type="enum"/>
             <Pen value="15" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -17468,7 +17543,7 @@
         </TextRect>
         <PolyLine>
             <Unique value="1025071" type="enum"/>
-            <GroupID value="176" type="enum"/>
+            <GroupID value="178" type="enum"/>
             <Pen value="0" type="enum"/>
             <Separation value="1" type="enum"/>
             <ObColor value="White" type="str"/>
@@ -17480,14 +17555,14 @@
         </PolyLine>
         <PolyLine>
             <Unique value="1025072" type="enum"/>
-            <GroupID value="176" type="enum"/>
+            <GroupID value="178" type="enum"/>
             <NumPoints value="2" type="enum"/>
             <Point value="143.65049 mm 18.22049 mm" type="num"/>
             <Point value="151.66146 mm 18.22049 mm" type="num"/>
         </PolyLine>
         <PolyLine>
             <Unique value="1025073" type="enum"/>
-            <GroupID value="176" type="enum"/>
+            <GroupID value="178" type="enum"/>
             <Separation value="5" type="enum"/>
             <ObColor value="Svart 35%" type="str"/>
             <NumPoints value="2" type="enum"/>
@@ -17496,7 +17571,7 @@
         </PolyLine>
         <Polygon>
             <Unique value="1025074" type="enum"/>
-            <GroupID value="176" type="enum"/>
+            <GroupID value="178" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="7" type="enum"/>
             <PenWidth value="0.15 pt" type="num"/>
@@ -17508,12 +17583,12 @@
             <Point value="151.47225 mm 18.64691 mm" type="num"/>
         </Polygon>
         <Group>
-            <ID value="176" type="enum"/>
+            <ID value="178" type="enum"/>
             <Unique value="1025075" type="enum"/>
-            <GroupID value="175" type="enum"/>
+            <GroupID value="177" type="enum"/>
         </Group>
         <Group>
-            <ID value="175" type="enum"/>
+            <ID value="177" type="enum"/>
             <Unique value="1035883" type="enum"/>
         </Group>
     </Page>
@@ -17527,7 +17602,7 @@
         <PageAngle value="0.0" type="num"/>
         <PageBackground value="Default" type="str"/>
         <TextRect>
-            <ID value="173" type="enum"/>
+            <ID value="175" type="enum"/>
             <Unique value="1016885" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -17547,10 +17622,10 @@
             <TRSideheadWidth value="30.00005 mm" type="num"/>
             <TRSideheadGap value="5.00001 mm" type="num"/>
             <TRSideheadPlacement value="Left" type="enum"/>
-            <TRNext value="178" type="enum"/>
+            <TRNext value="180" type="enum"/>
         </TextRect>
         <TextRect>
-            <ID value="179" type="enum"/>
+            <ID value="181" type="enum"/>
             <Unique value="1025148" type="enum"/>
             <RunaroundType value="Contour" type="enum"/>
             <ShapeRect value="18.0 mm 14.65 mm 63.5 mm 69.98832 mm" type="num"/>
@@ -17565,7 +17640,7 @@
         </TextRect>
         <Rectangle>
             <Unique value="1025933" type="enum"/>
-            <GroupID value="180" type="enum"/>
+            <GroupID value="182" type="enum"/>
             <Pen value="0" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -17575,7 +17650,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1025934" type="enum"/>
-            <GroupID value="180" type="enum"/>
+            <GroupID value="182" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
             <ShapeRect value="18.87361 mm 19.53049 mm 61.4 mm 62.22734 mm" type="num"/>
@@ -17583,7 +17658,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1025935" type="enum"/>
-            <GroupID value="181" type="enum"/>
+            <GroupID value="183" type="enum"/>
             <Fill value="7" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -17592,7 +17667,7 @@
         </Rectangle>
         <Rectangle>
             <Unique value="1025936" type="enum"/>
-            <GroupID value="181" type="enum"/>
+            <GroupID value="183" type="enum"/>
             <Fill value="15" type="enum"/>
             <PenWidth value="0.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -17600,9 +17675,9 @@
             <BRect value="73.21463 mm 19.27238 mm 7.45083 mm 7.36583 mm" type="num"/>
         </Rectangle>
         <TextRect>
-            <ID value="182" type="enum"/>
+            <ID value="184" type="enum"/>
             <Unique value="1025937" type="enum"/>
-            <GroupID value="181" type="enum"/>
+            <GroupID value="183" type="enum"/>
             <Pen value="15" type="enum"/>
             <PenWidth value="1.5 pt" type="num"/>
             <ObTint value="3500.0%" type="num"/>
@@ -17619,7 +17694,7 @@
         </TextRect>
         <PolyLine>
             <Unique value="1025939" type="enum"/>
-            <GroupID value="181" type="enum"/>
+            <GroupID value="183" type="enum"/>
             <Pen value="0" type="enum"/>
             <Separation value="1" type="enum"/>
             <ObColor value="White" type="str"/>
@@ -17631,14 +17706,14 @@
         </PolyLine>
         <PolyLine>
             <Unique value="1025940" type="enum"/>
-            <GroupID value="181" type="enum"/>
+            <GroupID value="183" type="enum"/>
             <NumPoints value="2" type="enum"/>
             <Point value="73.11264 mm 18.65956 mm" type="num"/>
             <Point value="81.12361 mm 18.65956 mm" type="num"/>
         </PolyLine>
         <PolyLine>
             <Unique value="1025941" type="enum"/>
-            <GroupID value="181" type="enum"/>
+            <GroupID value="183" type="enum"/>
             <Separation value="5" type="enum"/>
             <ObColor value="Svart 35%" type="str"/>
             <NumPoints value="2" type="enum"/>
@@ -17647,7 +17722,7 @@
         </PolyLine>
         <Polygon>
             <Unique value="1025942" type="enum"/>
-            <GroupID value="181" type="enum"/>
+            <GroupID value="183" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="7" type="enum"/>
             <PenWidth value="0.15 pt" type="num"/>
@@ -17659,12 +17734,12 @@
             <Point value="80.9344 mm 19.086 mm" type="num"/>
         </Polygon>
         <Group>
-            <ID value="181" type="enum"/>
+            <ID value="183" type="enum"/>
             <Unique value="1025943" type="enum"/>
-            <GroupID value="180" type="enum"/>
+            <GroupID value="182" type="enum"/>
         </Group>
         <Group>
-            <ID value="180" type="enum"/>
+            <ID value="182" type="enum"/>
             <Unique value="1030154" type="enum"/>
         </Group>
     </Page>
@@ -17678,74 +17753,8 @@
         <PageAngle value="0.0" type="num"/>
         <PageBackground value="Default" type="str"/>
         <TextRect>
-            <ID value="178" type="enum"/>
+            <ID value="180" type="enum"/>
             <Unique value="1016893" type="enum"/>
-            <Pen value="15" type="enum"/>
-            <Fill value="15" type="enum"/>
-            <PenWidth value="1.0 pt" type="num"/>
-            <Separation value="0" type="enum"/>
-            <ObColor value="Black" type="str"/>
-            <DashedPattern>
-                <DashedStyle value="Solid" type="enum"/>
-            </DashedPattern>
-            <RunaroundGap value="6.0 pt" type="num"/>
-            <RunaroundType value="None" type="enum"/>
-            <ShapeRect value="18.0 mm 18.0 mm 134.0 mm 202.55 mm" type="num"/>
-            <BRect value="18.0 mm 18.0 mm 134.0 mm 202.55 mm" type="num"/>
-            <TRNumColumns value="2" type="enum"/>
-            <TRColumnGap value="7.0 mm" type="num"/>
-            <TRColumnBalance value="No" type="enum"/>
-            <TRSideheadWidth value="30.00005 mm" type="num"/>
-            <TRSideheadGap value="5.00001 mm" type="num"/>
-            <TRSideheadPlacement value="Left" type="enum"/>
-            <TRNext value="183" type="enum"/>
-        </TextRect>
-    </Page>
-    <Page>
-        <Unique value="1016898" type="enum"/>
-        <PageType value="BodyPage" type="enum"/>
-        <PageNum value="401" type="str"/>
-        <PageTag value="" type="str"/>
-        <PageSize value="170.0 mm 240.0 mm" type="num"/>
-        <PageOrientation value="Portrait" type="enum"/>
-        <PageAngle value="0.0" type="num"/>
-        <PageBackground value="Default" type="str"/>
-        <TextRect>
-            <ID value="183" type="enum"/>
-            <Unique value="1016901" type="enum"/>
-            <Pen value="15" type="enum"/>
-            <Fill value="15" type="enum"/>
-            <PenWidth value="1.0 pt" type="num"/>
-            <Separation value="0" type="enum"/>
-            <ObColor value="Black" type="str"/>
-            <DashedPattern>
-                <DashedStyle value="Solid" type="enum"/>
-            </DashedPattern>
-            <RunaroundGap value="6.0 pt" type="num"/>
-            <RunaroundType value="None" type="enum"/>
-            <ShapeRect value="18.0 mm 18.0 mm 134.0 mm 202.55 mm" type="num"/>
-            <BRect value="18.0 mm 18.0 mm 134.0 mm 202.55 mm" type="num"/>
-            <TRNumColumns value="2" type="enum"/>
-            <TRColumnGap value="7.0 mm" type="num"/>
-            <TRColumnBalance value="No" type="enum"/>
-            <TRSideheadWidth value="30.00005 mm" type="num"/>
-            <TRSideheadGap value="5.00001 mm" type="num"/>
-            <TRSideheadPlacement value="Left" type="enum"/>
-            <TRNext value="184" type="enum"/>
-        </TextRect>
-    </Page>
-    <Page>
-        <Unique value="1016906" type="enum"/>
-        <PageType value="BodyPage" type="enum"/>
-        <PageNum value="402" type="str"/>
-        <PageTag value="" type="str"/>
-        <PageSize value="170.0 mm 240.0 mm" type="num"/>
-        <PageOrientation value="Portrait" type="enum"/>
-        <PageAngle value="0.0" type="num"/>
-        <PageBackground value="Default" type="str"/>
-        <TextRect>
-            <ID value="184" type="enum"/>
-            <Unique value="1016909" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
             <PenWidth value="1.0 pt" type="num"/>
@@ -17768,9 +17777,9 @@
         </TextRect>
     </Page>
     <Page>
-        <Unique value="1022886" type="enum"/>
+        <Unique value="1016898" type="enum"/>
         <PageType value="BodyPage" type="enum"/>
-        <PageNum value="403" type="str"/>
+        <PageNum value="401" type="str"/>
         <PageTag value="" type="str"/>
         <PageSize value="170.0 mm 240.0 mm" type="num"/>
         <PageOrientation value="Portrait" type="enum"/>
@@ -17778,7 +17787,7 @@
         <PageBackground value="Default" type="str"/>
         <TextRect>
             <ID value="185" type="enum"/>
-            <Unique value="1022889" type="enum"/>
+            <Unique value="1016901" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
             <PenWidth value="1.0 pt" type="num"/>
@@ -17801,9 +17810,9 @@
         </TextRect>
     </Page>
     <Page>
-        <Unique value="1023482" type="enum"/>
+        <Unique value="1016906" type="enum"/>
         <PageType value="BodyPage" type="enum"/>
-        <PageNum value="404" type="str"/>
+        <PageNum value="402" type="str"/>
         <PageTag value="" type="str"/>
         <PageSize value="170.0 mm 240.0 mm" type="num"/>
         <PageOrientation value="Portrait" type="enum"/>
@@ -17811,7 +17820,7 @@
         <PageBackground value="Default" type="str"/>
         <TextRect>
             <ID value="186" type="enum"/>
-            <Unique value="1023485" type="enum"/>
+            <Unique value="1016909" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
             <PenWidth value="1.0 pt" type="num"/>
@@ -17834,6 +17843,72 @@
         </TextRect>
     </Page>
     <Page>
+        <Unique value="1022886" type="enum"/>
+        <PageType value="BodyPage" type="enum"/>
+        <PageNum value="403" type="str"/>
+        <PageTag value="" type="str"/>
+        <PageSize value="170.0 mm 240.0 mm" type="num"/>
+        <PageOrientation value="Portrait" type="enum"/>
+        <PageAngle value="0.0" type="num"/>
+        <PageBackground value="Default" type="str"/>
+        <TextRect>
+            <ID value="187" type="enum"/>
+            <Unique value="1022889" type="enum"/>
+            <Pen value="15" type="enum"/>
+            <Fill value="15" type="enum"/>
+            <PenWidth value="1.0 pt" type="num"/>
+            <Separation value="0" type="enum"/>
+            <ObColor value="Black" type="str"/>
+            <DashedPattern>
+                <DashedStyle value="Solid" type="enum"/>
+            </DashedPattern>
+            <RunaroundGap value="6.0 pt" type="num"/>
+            <RunaroundType value="None" type="enum"/>
+            <ShapeRect value="18.0 mm 18.0 mm 134.0 mm 202.55 mm" type="num"/>
+            <BRect value="18.0 mm 18.0 mm 134.0 mm 202.55 mm" type="num"/>
+            <TRNumColumns value="2" type="enum"/>
+            <TRColumnGap value="7.0 mm" type="num"/>
+            <TRColumnBalance value="No" type="enum"/>
+            <TRSideheadWidth value="30.00005 mm" type="num"/>
+            <TRSideheadGap value="5.00001 mm" type="num"/>
+            <TRSideheadPlacement value="Left" type="enum"/>
+            <TRNext value="188" type="enum"/>
+        </TextRect>
+    </Page>
+    <Page>
+        <Unique value="1023482" type="enum"/>
+        <PageType value="BodyPage" type="enum"/>
+        <PageNum value="404" type="str"/>
+        <PageTag value="" type="str"/>
+        <PageSize value="170.0 mm 240.0 mm" type="num"/>
+        <PageOrientation value="Portrait" type="enum"/>
+        <PageAngle value="0.0" type="num"/>
+        <PageBackground value="Default" type="str"/>
+        <TextRect>
+            <ID value="188" type="enum"/>
+            <Unique value="1023485" type="enum"/>
+            <Pen value="15" type="enum"/>
+            <Fill value="15" type="enum"/>
+            <PenWidth value="1.0 pt" type="num"/>
+            <Separation value="0" type="enum"/>
+            <ObColor value="Black" type="str"/>
+            <DashedPattern>
+                <DashedStyle value="Solid" type="enum"/>
+            </DashedPattern>
+            <RunaroundGap value="6.0 pt" type="num"/>
+            <RunaroundType value="None" type="enum"/>
+            <ShapeRect value="18.0 mm 18.0 mm 134.0 mm 202.55 mm" type="num"/>
+            <BRect value="18.0 mm 18.0 mm 134.0 mm 202.55 mm" type="num"/>
+            <TRNumColumns value="2" type="enum"/>
+            <TRColumnGap value="7.0 mm" type="num"/>
+            <TRColumnBalance value="No" type="enum"/>
+            <TRSideheadWidth value="30.00005 mm" type="num"/>
+            <TRSideheadGap value="5.00001 mm" type="num"/>
+            <TRSideheadPlacement value="Left" type="enum"/>
+            <TRNext value="189" type="enum"/>
+        </TextRect>
+    </Page>
+    <Page>
         <Unique value="1026236" type="enum"/>
         <PageType value="BodyPage" type="enum"/>
         <PageNum value="405" type="str"/>
@@ -17843,7 +17918,7 @@
         <PageAngle value="0.0" type="num"/>
         <PageBackground value="Default" type="str"/>
         <TextRect>
-            <ID value="187" type="enum"/>
+            <ID value="189" type="enum"/>
             <Unique value="1026239" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -17876,7 +17951,7 @@
         <PageAngle value="0.0" type="num"/>
         <PageBackground value="None" type="str"/>
         <TextRect>
-            <ID value="188" type="enum"/>
+            <ID value="190" type="enum"/>
             <Unique value="1040293" type="enum"/>
             <Pen value="15" type="enum"/>
             <Fill value="15" type="enum"/>
@@ -17991,7 +18066,7 @@
                 <PgfLocked value="No" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="43" type="enum"/>
+                <TextRectID value="44" type="enum"/>
                 <String>KapRub</String>
             </ParaLine>
         </Para>
@@ -18057,7 +18132,7 @@
                 <PgfLanguage value="UKEnglish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="45" type="enum"/>
+                <TextRectID value="46" type="enum"/>
                 <Variable>
                     <VariableName value="Current Page #" type="str"/>
                     <Unique value="1034563" type="enum"/>
@@ -18107,7 +18182,7 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="46" type="enum"/>
+                <TextRectID value="47" type="enum"/>
                 <String>Läkemedelsverket</String>
             </ParaLine>
         </Para>
@@ -18163,7 +18238,7 @@
                 <PgfLanguage value="Swedish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="47" type="enum"/>
+                <TextRectID value="48" type="enum"/>
                 <Variable>
                     <VariableName value="Avsnittsnamn" type="str"/>
                     <Unique value="1034569" type="enum"/>
@@ -18267,7 +18342,7 @@
                 <PgfLanguage value="UKEnglish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="29" type="enum"/>
+                <TextRectID value="30" type="enum"/>
                 <Variable>
                     <VariableName value="Current Page #" type="str"/>
                     <Unique value="1034490" type="enum"/>
@@ -18317,7 +18392,7 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="30" type="enum"/>
+                <TextRectID value="31" type="enum"/>
                 <String>Läkemedelsverket</String>
             </ParaLine>
         </Para>
@@ -18370,7 +18445,7 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="51" type="enum"/>
+                <TextRectID value="52" type="enum"/>
                 <Variable>
                     <VariableName value="Current Page #" type="str"/>
                     <Unique value="1034600" type="enum"/>
@@ -18420,7 +18495,7 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="52" type="enum"/>
+                <TextRectID value="53" type="enum"/>
                 <String>Läkemedelsverket</String>
             </ParaLine>
         </Para>
@@ -18477,7 +18552,7 @@
                 <PgfLanguage value="Swedish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="53" type="enum"/>
+                <TextRectID value="54" type="enum"/>
                 <Variable>
                     <VariableName value="Avsnittsnamn" type="str"/>
                     <Unique value="1034606" type="enum"/>
@@ -18567,7 +18642,7 @@
                 </PgfFont>
             </Pgf>
             <ParaLine>
-                <TextRectID value="54" type="enum"/>
+                <TextRectID value="55" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -18579,7 +18654,7 @@
         <Para>
             <Unique value="1034495" type="enum"/>
             <ParaLine>
-                <TextRectID value="31" type="enum"/>
+                <TextRectID value="32" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -18592,7 +18667,7 @@
                 <PgfAlignment value="Left" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="32" type="enum"/>
+                <TextRectID value="33" type="enum"/>
                 <Variable>
                     <VariableName value="Avsnittsnamn" type="str"/>
                     <Unique value="1034497" type="enum"/>
@@ -18697,7 +18772,7 @@
                 <PgfLanguage value="UKEnglish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="59" type="enum"/>
+                <TextRectID value="60" type="enum"/>
                 <Variable>
                     <VariableName value="Current Page #" type="str"/>
                     <Unique value="1034635" type="enum"/>
@@ -18751,7 +18826,7 @@
                 <PgfLanguage value="Swedish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="124" type="enum"/>
+                <TextRectID value="125" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -18811,7 +18886,7 @@
                 <PgfLanguage value="UKEnglish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="60" type="enum"/>
+                <TextRectID value="61" type="enum"/>
                 <String>Läkemedelsverket</String>
             </ParaLine>
         </Para>
@@ -18870,7 +18945,7 @@
                 <PgfLanguage value="Swedish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="61" type="enum"/>
+                <TextRectID value="62" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -18883,7 +18958,7 @@
                 <PgfAlignment value="Left" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="62" type="enum"/>
+                <TextRectID value="63" type="enum"/>
                 <Variable>
                     <VariableName value="Avsnittsnamn" type="str"/>
                     <Unique value="1034642" type="enum"/>
@@ -18986,7 +19061,7 @@
                     <XRefSrcText value="89923: FaktaRub1: Typiska symtom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1385402402 938000" type="num"/>
+                    <XRefLastUpdate value="1423919988 506000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -19028,7 +19103,7 @@
                     <XRefSrcText value="78243: FaktaRub1: Differentialdiagnoser vid benartär\x04 sjukdom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1385402402 938000" type="num"/>
+                    <XRefLastUpdate value="1423919988 506000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -19094,7 +19169,7 @@
                 <PgfLeading value="1.7 pt" type="num"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="66" type="enum"/>
+                <TextRectID value="67" type="enum"/>
                 <Variable>
                     <VariableName value="Avsnittsnamn" type="str"/>
                     <Unique value="1034669" type="enum"/>
@@ -19183,7 +19258,7 @@
                 </PgfFont>
             </Pgf>
             <ParaLine>
-                <TextRectID value="67" type="enum"/>
+                <TextRectID value="68" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -19243,7 +19318,7 @@
                 <PgfLanguage value="UKEnglish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="68" type="enum"/>
+                <TextRectID value="69" type="enum"/>
                 <Variable>
                     <VariableName value="Current Page #" type="str"/>
                     <Unique value="1034678" type="enum"/>
@@ -19293,7 +19368,7 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="69" type="enum"/>
+                <TextRectID value="70" type="enum"/>
                 <String>Läkemedelsverket</String>
             </ParaLine>
         </Para>
@@ -19349,7 +19424,7 @@
                 <PgfLanguage value="Swedish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="127" type="enum"/>
+                <TextRectID value="128" type="enum"/>
                 <String>1</String>
             </ParaLine>
         </Para>
@@ -19362,7 +19437,7 @@
         <Para>
             <Unique value="1040292" type="enum"/>
             <ParaLine>
-                <TextRectID value="188" type="enum"/>
+                <TextRectID value="190" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -19407,7 +19482,7 @@
                 <PgfLeading value="2.0 pt" type="num"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="33" type="enum"/>
+                <TextRectID value="34" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -19476,7 +19551,7 @@
                 <PgfLanguage value="UKEnglish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="73" type="enum"/>
+                <TextRectID value="74" type="enum"/>
                 <Variable>
                     <VariableName value="Current Page #" type="str"/>
                     <Unique value="1034702" type="enum"/>
@@ -19526,7 +19601,7 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="74" type="enum"/>
+                <TextRectID value="75" type="enum"/>
                 <String>Läkemedelsverket</String>
             </ParaLine>
         </Para>
@@ -19585,7 +19660,7 @@
                 <PgfLanguage value="Swedish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="75" type="enum"/>
+                <TextRectID value="76" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -19598,7 +19673,7 @@
                 <PgfAlignment value="Left" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="76" type="enum"/>
+                <TextRectID value="77" type="enum"/>
                 <Variable>
                     <VariableName value="Avsnittsnamn" type="str"/>
                     <Unique value="1034709" type="enum"/>
@@ -19689,7 +19764,7 @@
                 <PgfLeading value="2.0 pt" type="num"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="35" type="enum"/>
+                <TextRectID value="36" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -19747,7 +19822,7 @@
                 <PgfLeading value="1.7 pt" type="num"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="36" type="enum"/>
+                <TextRectID value="37" type="enum"/>
                 <Variable>
                     <VariableName value="Avsnittsnamn" type="str"/>
                     <Unique value="1034525" type="enum"/>
@@ -19834,7 +19909,7 @@
                 </PgfFont>
             </Pgf>
             <ParaLine>
-                <TextRectID value="80" type="enum"/>
+                <TextRectID value="81" type="enum"/>
                 <Variable>
                     <VariableName value="Avsnittsnamn" type="str"/>
                     <Unique value="1034735" type="enum"/>
@@ -19939,7 +20014,7 @@
                 <PgfLanguage value="UKEnglish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="81" type="enum"/>
+                <TextRectID value="82" type="enum"/>
                 <Variable>
                     <VariableName value="Current Page #" type="str"/>
                     <Unique value="1034743" type="enum"/>
@@ -19989,7 +20064,7 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="82" type="enum"/>
+                <TextRectID value="83" type="enum"/>
                 <String>Läkemedelsverket</String>
             </ParaLine>
         </Para>
@@ -20047,7 +20122,7 @@
                 <PgfLanguage value="Swedish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="83" type="enum"/>
+                <TextRectID value="84" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -20059,7 +20134,7 @@
         <Para>
             <Unique value="1034532" type="enum"/>
             <ParaLine>
-                <TextRectID value="37" type="enum"/>
+                <TextRectID value="38" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -20119,7 +20194,7 @@
                 <PgfLanguage value="UKEnglish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="38" type="enum"/>
+                <TextRectID value="39" type="enum"/>
                 <Variable>
                     <VariableName value="Current Page #" type="str"/>
                     <Unique value="1034534" type="enum"/>
@@ -20136,7 +20211,7 @@
                 <PgfAlignment value="Right" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="87" type="enum"/>
+                <TextRectID value="88" type="enum"/>
                 <Variable>
                     <VariableName value="Current Page #" type="str"/>
                     <Unique value="1034770" type="enum"/>
@@ -20186,7 +20261,7 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="88" type="enum"/>
+                <TextRectID value="89" type="enum"/>
                 <String>Läkemedelsverket</String>
             </ParaLine>
         </Para>
@@ -20245,7 +20320,7 @@
                 <PgfLanguage value="Swedish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="89" type="enum"/>
+                <TextRectID value="90" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -20258,7 +20333,7 @@
                 <PgfAlignment value="Left" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="90" type="enum"/>
+                <TextRectID value="91" type="enum"/>
                 <Variable>
                     <VariableName value="Avsnittsnamn" type="str"/>
                     <Unique value="1034777" type="enum"/>
@@ -20363,7 +20438,7 @@
                 <PgfLanguage value="UKEnglish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="39" type="enum"/>
+                <TextRectID value="40" type="enum"/>
                 <String>Läkemedelsverket</String>
             </ParaLine>
         </Para>
@@ -20416,7 +20491,7 @@
                 <PgfLanguage value="Swedish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="40" type="enum"/>
+                <TextRectID value="41" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -20473,7 +20548,7 @@
                 <PgfLeading value="1.7 pt" type="num"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="94" type="enum"/>
+                <TextRectID value="95" type="enum"/>
                 <Variable>
                     <VariableName value="Avsnittsnamn" type="str"/>
                     <Unique value="1034805" type="enum"/>
@@ -20562,7 +20637,7 @@
                 </PgfFont>
             </Pgf>
             <ParaLine>
-                <TextRectID value="95" type="enum"/>
+                <TextRectID value="96" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -20622,7 +20697,7 @@
                 <PgfLanguage value="UKEnglish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="96" type="enum"/>
+                <TextRectID value="97" type="enum"/>
                 <Variable>
                     <VariableName value="Current Page #" type="str"/>
                     <Unique value="1034814" type="enum"/>
@@ -20672,7 +20747,7 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="97" type="enum"/>
+                <TextRectID value="98" type="enum"/>
                 <String>Läkemedelsverket</String>
             </ParaLine>
         </Para>
@@ -20726,7 +20801,7 @@
                 <PgfLanguage value="Swedish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="42" type="enum"/>
+                <TextRectID value="43" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -20751,7 +20826,7 @@
                 <PgfAlignment value="Right" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="48" type="enum"/>
+                <TextRectID value="49" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -20809,14 +20884,14 @@
                 <PgfLeading value="1.7 pt" type="num"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="101" type="enum"/>
+                <TextRectID value="102" type="enum"/>
             </ParaLine>
         </Para>
         <Para>
             <Unique value="1034844" type="enum"/>
             <PgfTag value="KapRub" type="str"/>
             <ParaLine>
-                <TextRectID value="102" type="enum"/>
+                <TextRectID value="103" type="enum"/>
                 <String>KapRub</String>
             </ParaLine>
         </Para>
@@ -20881,7 +20956,7 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="103" type="enum"/>
+                <TextRectID value="104" type="enum"/>
                 <Variable>
                     <VariableName value="Kapitelnamn" type="str"/>
                     <Unique value="1034846" type="enum"/>
@@ -20930,7 +21005,7 @@
                 <PgfLanguage value="UKEnglish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="105" type="enum"/>
+                <TextRectID value="106" type="enum"/>
                 <Variable>
                     <VariableName value="Current Page #" type="str"/>
                     <Unique value="1034850" type="enum"/>
@@ -20980,7 +21055,7 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="106" type="enum"/>
+                <TextRectID value="107" type="enum"/>
                 <String>Läkemedelsverket</String>
             </ParaLine>
         </Para>
@@ -21034,7 +21109,7 @@
                 <PgfLanguage value="Swedish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="50" type="enum"/>
+                <TextRectID value="51" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -21059,7 +21134,7 @@
                 <PgfAlignment value="Right" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="56" type="enum"/>
+                <TextRectID value="57" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -21128,7 +21203,7 @@
                 <PgfLanguage value="UKEnglish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="110" type="enum"/>
+                <TextRectID value="111" type="enum"/>
                 <Variable>
                     <VariableName value="Current Page #" type="str"/>
                     <Unique value="1034877" type="enum"/>
@@ -21178,7 +21253,7 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="111" type="enum"/>
+                <TextRectID value="112" type="enum"/>
                 <String>Läkemedelsverket</String>
             </ParaLine>
         </Para>
@@ -21237,7 +21312,7 @@
                 <PgfLanguage value="Swedish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="112" type="enum"/>
+                <TextRectID value="113" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -21250,7 +21325,7 @@
                 <PgfAlignment value="Left" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="113" type="enum"/>
+                <TextRectID value="114" type="enum"/>
                 <Variable>
                     <VariableName value="Avsnittsnamn" type="str"/>
                     <Unique value="1034884" type="enum"/>
@@ -21341,7 +21416,7 @@
                 <PgfLeading value="2.0 pt" type="num"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="58" type="enum"/>
+                <TextRectID value="59" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -21366,7 +21441,7 @@
                 <PgfAlignment value="Right" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="63" type="enum"/>
+                <TextRectID value="64" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -21423,7 +21498,7 @@
                 <PgfLeading value="1.7 pt" type="num"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="117" type="enum"/>
+                <TextRectID value="118" type="enum"/>
                 <Variable>
                     <VariableName value="Avsnittsnamn" type="str"/>
                     <Unique value="1034911" type="enum"/>
@@ -21512,7 +21587,7 @@
                 </PgfFont>
             </Pgf>
             <ParaLine>
-                <TextRectID value="118" type="enum"/>
+                <TextRectID value="119" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -21525,7 +21600,7 @@
                 <PgfAlignment value="Center" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="129" type="enum"/>
+                <TextRectID value="130" type="enum"/>
                 <String>1</String>
             </ParaLine>
         </Para>
@@ -21572,7 +21647,7 @@
                 <PgfLeading value="2.0 pt" type="num"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="130" type="enum"/>
+                <TextRectID value="131" type="enum"/>
                 <AFrame value="11" type="enum"/>
             </ParaLine>
         </Para>
@@ -21631,7 +21706,7 @@
                 <PgfLanguage value="UKEnglish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="119" type="enum"/>
+                <TextRectID value="120" type="enum"/>
                 <Variable>
                     <VariableName value="Current Page #" type="str"/>
                     <Unique value="1034920" type="enum"/>
@@ -21681,7 +21756,7 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="120" type="enum"/>
+                <TextRectID value="121" type="enum"/>
                 <String>Läkemedelsverket</String>
             </ParaLine>
         </Para>
@@ -21735,7 +21810,7 @@
                 <PgfLanguage value="Swedish" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="65" type="enum"/>
+                <TextRectID value="66" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -21760,7 +21835,7 @@
                 <PgfAlignment value="Right" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="70" type="enum"/>
+                <TextRectID value="71" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -21819,7 +21894,7 @@
                 <PgfLeading value="1.7 pt" type="num"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="135" type="enum"/>
+                <TextRectID value="136" type="enum"/>
                 <ATbl value="12" type="enum"/>
                 <ATbl value="13" type="enum"/>
                 <ATbl value="14" type="enum"/>
@@ -21869,8 +21944,8 @@
                 <PgfLeading value="0.0 pt" type="num"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="137" type="enum"/>
-                <ATbl value="27" type="enum"/>
+                <TextRectID value="138" type="enum"/>
+                <ATbl value="28" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -21880,8 +21955,8 @@
         <Para>
             <Unique value="1035553" type="enum"/>
             <ParaLine>
-                <TextRectID value="138" type="enum"/>
-                <ATbl value="28" type="enum"/>
+                <TextRectID value="139" type="enum"/>
+                <ATbl value="29" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -21924,7 +21999,7 @@
                 <PgfLeading value="1.7 pt" type="num"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="141" type="enum"/>
+                <TextRectID value="142" type="enum"/>
                 <String>1</String>
             </ParaLine>
         </Para>
@@ -21970,7 +22045,7 @@
                 <PgfLeading value="2.0 pt" type="num"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="72" type="enum"/>
+                <TextRectID value="73" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -21995,7 +22070,7 @@
                 <PgfAlignment value="Right" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="77" type="enum"/>
+                <TextRectID value="78" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -22053,7 +22128,7 @@
                 <PgfLeading value="1.7 pt" type="num"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="144" type="enum"/>
+                <TextRectID value="145" type="enum"/>
                 <String>1</String>
             </ParaLine>
         </Para>
@@ -22069,7 +22144,7 @@
                 <PgfAlignment value="Right" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="147" type="enum"/>
+                <TextRectID value="148" type="enum"/>
                 <ATbl value="18" type="enum"/>
             </ParaLine>
         </Para>
@@ -22086,7 +22161,7 @@
             <Unique value="1040886" type="enum"/>
             <PgfTag value="Bröd" type="str"/>
             <ParaLine>
-                <TextRectID value="162" type="enum"/>
+                <TextRectID value="164" type="enum"/>
             </ParaLine>
         </Para>
         <Para>
@@ -22142,8 +22217,57 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="165" type="enum"/>
+                <TextRectID value="167" type="enum"/>
                 <String>2</String>
+            </ParaLine>
+        </Para>
+    </TextFlow>
+    <TextFlow>
+        <Notes>
+        </Notes>
+        <Para>
+            <Unique value="1041014" type="enum"/>
+            <PgfTag value="Bröd" type="str"/>
+            <Pgf>
+                <PgfAlignment value="Left" type="enum"/>
+                <PgfFont>
+                    <FTag value="" type="str"/>
+                    <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
+                    <FFamily value="Frutiger LT Std 45 Light" type="str"/>
+                    <FVar value="Regular" type="str"/>
+                    <FWeight value="Bold" type="str"/>
+                    <FAngle value="Regular" type="str"/>
+                    <FPostScriptName value="FrutigerLTStd-Bold" type="str"/>
+                    <FEncoding value="FrameRoman" type="str"/>
+                    <FSize value="9.0 pt" type="num"/>
+                    <FUnderlining value="FNoUnderlining" type="enum"/>
+                    <FOverline value="No" type="enum"/>
+                    <FStrike value="No" type="enum"/>
+                    <FChangeBar value="No" type="enum"/>
+                    <FOutline value="No" type="enum"/>
+                    <FShadow value="No" type="enum"/>
+                    <FPairKern value="Yes" type="enum"/>
+                    <FTsume value="No" type="enum"/>
+                    <FCase value="FAsTyped" type="enum"/>
+                    <FPosition value="FNormal" type="enum"/>
+                    <FDX value="0.0%" type="num"/>
+                    <FDY value="0.0%" type="num"/>
+                    <FDW value="0.0%" type="num"/>
+                    <FStretch value="100.0%" type="num"/>
+                    <FLanguage value="Swedish" type="enum"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="5" type="enum"/>
+                    <FColor value="PANTONE Rubine Red CVC" type="str"/>
+                    <FBackgroundColor value="NoColor" type="enum"/>
+                </PgfFont>
+            </Pgf>
+            <ParaLine>
+                <TextRectID value="156" type="enum"/>
+                <String>Ändrad 2015-03-04, s</String>
+                <Char value="HardSpace" type="enum"/>
+                <String>398 och s</String>
+                <Char value="HardSpace" type="enum"/>
+                <String>403–404.</String>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -22153,8 +22277,12 @@
         <Para>
             <Unique value="1034719" type="enum"/>
             <Pgf>
+                <PgfTag value="Body" type="str"/>
                 <PgfUseNextTag value="No" type="enum"/>
                 <PgfNextTag value="" type="str"/>
+                <PgfAlignment value="Center" type="enum"/>
+                <PgfRunInDefaultPunct value=". " type="str"/>
+                <PgfBlockSize value="1" type="enum"/>
                 <PgfFont>
                     <FTag value="" type="str"/>
                     <FPlatformName value="W.Frutiger LT Std 45 Light.R.700" type="str"/>
@@ -22186,9 +22314,11 @@
                     <FBackgroundColor value="NoColor" type="enum"/>
                 </PgfFont>
                 <PgfLeading value="2.0 pt" type="num"/>
+                <HyphenMaxLines value="2" type="enum"/>
+                <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="79" type="enum"/>
+                <TextRectID value="80" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -22213,7 +22343,7 @@
                 <PgfAlignment value="Right" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="84" type="enum"/>
+                <TextRectID value="85" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -22238,7 +22368,7 @@
                 <PgfAlignment value="Center" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="86" type="enum"/>
+                <TextRectID value="87" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -22263,7 +22393,7 @@
                 <PgfAlignment value="Right" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="91" type="enum"/>
+                <TextRectID value="92" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -22288,7 +22418,7 @@
                 <PgfAlignment value="Center" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="93" type="enum"/>
+                <TextRectID value="94" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -22313,7 +22443,7 @@
                 <PgfAlignment value="Right" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="98" type="enum"/>
+                <TextRectID value="99" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -22336,7 +22466,7 @@
             <Unique value="1027791" type="enum"/>
             <PgfTag value="Bröd" type="str"/>
             <ParaLine>
-                <TextRectID value="158" type="enum"/>
+                <TextRectID value="160" type="enum"/>
             </ParaLine>
         </Para>
         <Para>
@@ -22344,7 +22474,7 @@
             <PgfTag value="Bröd" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
-                <ATbl value="24" type="enum"/>
+                <ATbl value="25" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -22395,7 +22525,7 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="100" type="enum"/>
+                <TextRectID value="101" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -22420,7 +22550,7 @@
                 <PgfAlignment value="Right" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="107" type="enum"/>
+                <TextRectID value="108" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -22445,7 +22575,7 @@
                 <PgfAlignment value="Center" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="109" type="enum"/>
+                <TextRectID value="110" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -22470,7 +22600,7 @@
                 <PgfAlignment value="Right" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="114" type="enum"/>
+                <TextRectID value="115" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -22489,6 +22619,45 @@
     <TextFlow>
         <TFTag value="A" type="str"/>
         <Notes>
+            <FNote>
+                <ID value="191" type="enum"/>
+                <Para>
+                    <Unique value="1041052" type="enum"/>
+                    <PgfTag value="Footnote" type="str"/>
+                    <ParaLine>
+                        <Font>
+                            <FTag value="" type="str"/>
+                            <FLocked value="No" type="enum"/>
+                            <FSeparation value="2" type="enum"/>
+                            <FColor value="Red" type="str"/>
+                        </Font>
+                        <String>För detaljerad genomgång av lämpligaste förebyggande läkemedelsbehandling vid aterosklerotisk hjärt-kärlsjukdom se Läkemedelsverkets behandlingsrekommendation “Att förebygga aterosklerotisk hjärt-kärlsjukdom med läkemedel” publicerad 2014-06-24, </String>
+                    </ParaLine>
+                    <ParaLine>
+                        <Font>
+                            <FTag value="Blue" type="str"/>
+                            <FLocked value="No" type="enum"/>
+                        </Font>
+                        <Marker>
+                            <MType value="8" type="enum"/>
+                            <MTypeName value="Hypertext" type="str"/>
+                            <MText value="message URL http://www.lakemedelsverket.se/upload/halso-och-sjukvard/behandlingsrekommendationer/Att_forebygga_aterosklerotisk_hjart-karlsjukdom_med%20_lakemedel_behandlingsrekommendation.pdf" type="str"/>
+                            <MCurrPage value="403" type="str"/>
+                            <Unique value="1041053" type="enum"/>
+                        </Marker>
+                        <String>www.lakemedelsverket.se</String>
+                    </ParaLine>
+                    <ParaLine>
+                        <Font>
+                            <FTag value="Blue" type="str"/>
+                            <FLocked value="No" type="enum"/>
+                            <FSeparation value="0" type="enum"/>
+                            <FColor value="Black" type="str"/>
+                        </Font>
+                        <String>.</String>
+                    </ParaLine>
+                </Para>
+            </FNote>
         </Notes>
         <Para>
             <Unique value="1016578" type="enum"/>
@@ -22503,7 +22672,7 @@
             </Pgf>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
-                <TextRectID value="148" type="enum"/>
+                <TextRectID value="149" type="enum"/>
                 <Marker>
                     <MType value="2" type="enum"/>
                     <MTypeName value="Index" type="str"/>
@@ -22546,7 +22715,7 @@
             <PgfTag value="Inledning" type="str"/>
             <PgfNumString value="Inledning" type="str"/>
             <ParaLine>
-                <TextRectID value="149" type="enum"/>
+                <TextRectID value="150" type="enum"/>
             </ParaLine>
         </Para>
         <Para>
@@ -22640,7 +22809,7 @@
                     <XRefSrcText value="92980: FaktaRub1: Remitteringsråd" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1385402402 938000" type="num"/>
+                    <XRefLastUpdate value="1423919988 506000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -22665,7 +22834,7 @@
                     <XRefSrcText value="92980: FaktaRub1: Remitteringsråd" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1385402402 938000" type="num"/>
+                    <XRefLastUpdate value="1423919988 506000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -22721,7 +22890,7 @@
                     <XRefSrcText value="54258: FigurNr: Figur 1. Flödesschema – Handläggning vid benartärsjukdom (modifierat efter referenser (1,2))" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1385402402 938000" type="num"/>
+                    <XRefLastUpdate value="1423919988 506000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -22746,7 +22915,7 @@
                     <XRefSrcText value="54258: FigurNr: Figur 1. Flödesschema – Handläggning vid benartärsjukdom (modifierat efter referenser (1,2))" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1385402402 938000" type="num"/>
+                    <XRefLastUpdate value="1423919988 506000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -22785,7 +22954,7 @@
                     <XRefSrcText value="78243: FaktaRub1: Differentialdiagnoser vid benartär\x04 sjukdom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1385402402 938000" type="num"/>
+                    <XRefLastUpdate value="1423919988 507000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -22901,7 +23070,7 @@
                 <String>värk? Vad gör patienten </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="149" type="enum"/>
+                <TextRectID value="150" type="enum"/>
                 <String>vid smärta och vad händer då med smär</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -22961,7 +23130,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="150" type="enum"/>
+                <TextRectID value="151" type="enum"/>
                 <Char value="DiscHyphen" type="enum"/>
                 <String>utom kvarstår de betydligt längre tid efter </String>
             </ParaLine>
@@ -23060,7 +23229,7 @@
                     <XRefSrcText value="20310: Rub1: Specifika ryggbesvär \x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;P3_ROR_RyggNacke_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1385402402 978000" type="num"/>
+                    <XRefLastUpdate value="1421666794 766000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -23173,7 +23342,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="150" type="enum"/>
+                <TextRectID value="151" type="enum"/>
                 <String>pulsar i knävecken samt fotpulsar vid medi</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -23363,7 +23532,7 @@
             <PgfTag value="Rub2" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
-                <TextRectID value="157" type="enum"/>
+                <TextRectID value="159" type="enum"/>
                 <Marker>
                     <MType value="2" type="enum"/>
                     <MTypeName value="Index" type="str"/>
@@ -23456,7 +23625,7 @@
                     <XRefSrcText value="65628: FaktaRub1: Ankelbrakialindex (ABI) som mått på cirkulationsn" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1385402402 938000" type="num"/>
+                    <XRefLastUpdate value="1423919988 506000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -23481,7 +23650,7 @@
                     <XRefSrcText value="65628: FaktaRub1: Ankelbrakialindex (ABI) som mått på cirkulationsn" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1385402402 938000" type="num"/>
+                    <XRefLastUpdate value="1423919988 506000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -23723,7 +23892,7 @@
                 <String>lan subjektiva besvär och objektiva fynd. </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="157" type="enum"/>
+                <TextRectID value="159" type="enum"/>
                 <String>Normalt får man inte mer information än </String>
             </ParaLine>
             <ParaLine>
@@ -23952,7 +24121,7 @@
                     <XRefSrcText value="89923: FaktaRub1: Typiska symtom" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1385402402 938000" type="num"/>
+                    <XRefLastUpdate value="1423919988 506000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -23983,7 +24152,7 @@
                 <String>2% på 5 år – för en patient med nedsatt </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="166" type="enum"/>
+                <TextRectID value="168" type="enum"/>
                 <String>gångsträcka pga </String>
                 <Marker>
                     <MType value="2" type="enum"/>
@@ -24061,7 +24230,7 @@
                 <String>dom. Inför operation av kritisk ischemi bör </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="166" type="enum"/>
+                <TextRectID value="168" type="enum"/>
                 <String>alla patienter bedömas </String>
                 <Font>
                     <FTag value="" type="str"/>
@@ -24166,7 +24335,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="171" type="enum"/>
+                <TextRectID value="173" type="enum"/>
                 <String>gaste symtomet. Pati</String>
                 <Char value="DiscHyphen" type="enum"/>
                 <String>enten uppger ty</String>
@@ -24251,7 +24420,7 @@
                     <XRefSrcText value="93209: FigurNr: Figur 2. Flödesschema – Behandling av kronisk ischemi (modifierat" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1385402402 938000" type="num"/>
+                    <XRefLastUpdate value="1423919988 506000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -24276,7 +24445,7 @@
                     <XRefSrcText value="93209: FigurNr: Figur 2. Flödesschema – Behandling av kronisk ischemi (modifierat" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1385402402 938000" type="num"/>
+                    <XRefLastUpdate value="1423919988 507000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -24503,7 +24672,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="171" type="enum"/>
+                <TextRectID value="173" type="enum"/>
                 <Char value="DiscHyphen" type="enum"/>
                 <String>vakade träningsprogram) kan ge bättre mo</String>
                 <Char value="SoftHyphen" type="enum"/>
@@ -24627,7 +24796,7 @@
                     <XRefSrcText value="67232: KapRub: Tobaksberoende" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;T1_BER_Nikotinber_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1385384520 986000" type="num"/>
+                    <XRefLastUpdate value="1421666794 801000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -24658,6 +24827,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="175" type="enum"/>
                 <String>licylsyra (ASA) och lipid</String>
                 <Char value="DiscHyphen" type="enum"/>
                 <String>sänkning med </String>
@@ -24669,7 +24839,7 @@
                     <XRefSrcText value="38777: FaktaRub1: Riskfaktorbehandling" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1385402402 938000" type="num"/>
+                    <XRefLastUpdate value="1423919988 506000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -24710,7 +24880,6 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="173" type="enum"/>
                 <String>föringsbegränsande claudicatio (utan kri</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -24829,6 +24998,7 @@
             <PgfTag value="BrödIn" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
+                <TextRectID value="175" type="enum"/>
                 <Font>
                     <FTag value="" type="str"/>
                     <FDW value="1.0%" type="num"/>
@@ -24863,7 +25033,6 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="173" type="enum"/>
                 <String>vaskulära tekniker. Ibland kom</String>
                 <Char value="DiscHyphen" type="enum"/>
                 <String>bineras fle</String>
@@ -24876,7 +25045,7 @@
                     <XRefSrcText value="63336: FaktaRub1: Invasiva rekonstruktions\x04 alternativ" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1385402402 938000" type="num"/>
+                    <XRefLastUpdate value="1423919988 506000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25199,6 +25368,7 @@
                 <String>i muskler och nerver uppstå. Total ischemi </String>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="180" type="enum"/>
                 <String>ses mest hos yngre person</String>
                 <Char value="DiscHyphen" type="enum"/>
                 <String>er utan utvecklad </String>
@@ -25219,7 +25389,6 @@
             <Unique value="1024786" type="enum"/>
             <PgfTag value="Rub3" type="str"/>
             <ParaLine>
-                <TextRectID value="178" type="enum"/>
                 <String>Behandling</String>
             </ParaLine>
         </Para>
@@ -25523,6 +25692,7 @@
                 <String>plötslig övergående blindhet), se kapitlet </String>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="180" type="enum"/>
                 <String>Ögonsjukdomar, avsnittet Amaurosis fug</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -25534,7 +25704,7 @@
                     <XRefSrcText value="95340: Rub2: Amaurosis fugax\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;O1_OGO_Ogonsjukdom_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1385384521 2000" type="num"/>
+                    <XRefLastUpdate value="1421666794 829000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25607,7 +25777,6 @@
                 <String>fläckar av varierande storlek ytterst på </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="178" type="enum"/>
                 <String>finger</String>
                 <Char value="DiscHyphen" type="enum"/>
                 <String>toppar eller tår. Missfärgningen är inte </String>
@@ -25629,7 +25798,7 @@
                     <XRefSrcText value="96851: Rub2: Vaskuliter" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1385402402 938000" type="num"/>
+                    <XRefLastUpdate value="1423919988 506000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25756,7 +25925,7 @@
                     <XRefSrcText value="50435: Rub1: Vaskulitsjukdomar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;P2_ROR_ReumSjukdom_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1385384521 19000" type="num"/>
+                    <XRefLastUpdate value="1421666794 938000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25889,6 +26058,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="185" type="enum"/>
                 <String>grafi, med tryckmätning och beredskap för </String>
             </ParaLine>
             <ParaLine>
@@ -25915,7 +26085,6 @@
                 <String>rosklerotisk NAS ges trombocythämmare </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="183" type="enum"/>
                 <String>och lipidsänkare. Indikationer för PTRA är </String>
             </ParaLine>
             <ParaLine>
@@ -25980,7 +26149,7 @@
                     <XRefSrcText value="57533: Rub3: Renovaskulär hypertoni\x0d " type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;E5_HJA_Hypertoni_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1385402402 998000" type="num"/>
+                    <XRefLastUpdate value="1423919988 522000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26240,6 +26409,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="185" type="enum"/>
                 <String>mation känns igen och föranleder remiss </String>
             </ParaLine>
             <ParaLine>
@@ -26256,7 +26426,6 @@
             <PgfTag value="Rub2" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
-                <TextRectID value="183" type="enum"/>
                 <Marker>
                     <MType value="2" type="enum"/>
                     <MTypeName value="Index" type="str"/>
@@ -26342,7 +26511,7 @@
                     <XRefSrcText value="50435: Rub1: Vaskulitsjukdomar" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;P2_ROR_ReumSjukdom_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1385384521 19000" type="num"/>
+                    <XRefLastUpdate value="1421666794 938000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26665,6 +26834,7 @@
                 <String>ning med SR och vaskulitmarkörer som </String>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="186" type="enum"/>
                 <String>ANA och DNA-antikroppar göras. Segmen</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -26685,7 +26855,6 @@
             <Unique value="1024864" type="enum"/>
             <PgfTag value="Rub3" type="str"/>
             <ParaLine>
-                <TextRectID value="184" type="enum"/>
                 <String>Behandling</String>
             </ParaLine>
         </Para>
@@ -27024,6 +27193,7 @@
                 <String>eller extremiteter nedströms. Då aneurysm </String>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="186" type="enum"/>
                 <String>ofta uppträder på flera ställen samtidigt, </String>
             </ParaLine>
             <ParaLine>
@@ -27039,7 +27209,6 @@
             <PgfTag value="Rub2" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
-                <TextRectID value="184" type="enum"/>
                 <String>Pseudoaneurysm</String>
             </ParaLine>
         </Para>
@@ -27293,6 +27462,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="187" type="enum"/>
                 <String>ta fall, exempelvis vid upprepade symtom </String>
             </ParaLine>
             <ParaLine>
@@ -27316,7 +27486,6 @@
             </Pgf>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
-                <TextRectID value="185" type="enum"/>
                 <Marker>
                     <MType value="9" type="enum"/>
                     <MTypeName value="Cross-Ref" type="str"/>
@@ -27509,8 +27678,20 @@
         <Para>
             <Unique value="1016756" type="enum"/>
             <PgfTag value="Rub1" type="str"/>
+            <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
                 <String>Läkemedelsbehandling</String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                </Font>
+                <FNote value="191" type="enum"/>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
             </ParaLine>
         </Para>
         <Para>
@@ -27580,6 +27761,7 @@
                 <String>cythämmande behandling minskar risken </String>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="187" type="enum"/>
                 <String>för reocklusion efter kirurgisk rekonstruk</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -27770,7 +27952,6 @@
             </Pgf>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
-                <TextRectID value="185" type="enum"/>
                 <String>Förändringar i läkemedelskostnaderna </String>
             </ParaLine>
             <ParaLine>
@@ -28075,34 +28256,30 @@
                 <String>tersträvas. Vid diabetes rekommenderas </String>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="188" type="enum"/>
                 <String>blodtryckssänkning till &lt;</String>
                 <Char value="HardSpace" type="enum"/>
-                <String>130 mm Hg systo</String>
-                <Char value="SoftHyphen" type="enum"/>
-            </ParaLine>
-            <ParaLine>
-                <String>liskt, för att minska risken för kärlkompli</String>
-                <Char value="SoftHyphen" type="enum"/>
-            </ParaLine>
-            <ParaLine>
-                <String>kationer </String>
                 <Font>
-                    <FTag value="Blue" type="str"/>
+                    <FTag value="" type="str"/>
                     <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
                 </Font>
-                <Marker>
-                    <MType value="8" type="enum"/>
-                    <MTypeName value="Hypertext" type="str"/>
-                    <MText value="gotolink 7E7" type="str"/>
-                    <MCurrPage value="403" type="str"/>
-                    <Unique value="1039280" type="enum"/>
-                </Marker>
-                <String>(7)</String>
+                <String>140/85 </String>
                 <Font>
                     <FTag value="" type="str"/>
                     <FLocked value="No" type="enum"/>
                 </Font>
-                <String>. </String>
+                <String>mm</String>
+                <Char value="HardSpace" type="enum"/>
+                <String>Hg, </String>
+            </ParaLine>
+            <ParaLine>
+                <String>för att minska risken för kärlkomplikatio</String>
+                <Char value="SoftHyphen" type="enum"/>
+            </ParaLine>
+            <ParaLine>
+                <String>ner. </String>
             </ParaLine>
         </Para>
         <Para>
@@ -28163,7 +28340,6 @@
             <Unique value="1016774" type="enum"/>
             <PgfTag value="Rub2" type="str"/>
             <ParaLine>
-                <TextRectID value="186" type="enum"/>
                 <String>Behandling vid lipidrubbningar </String>
             </ParaLine>
         </Para>
@@ -28406,7 +28582,7 @@
                     <XRefSrcText value="18570: KapRub: Diabetes mellitus" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;K1_END_DiabetMellitus_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1385384521 38000" type="num"/>
+                    <XRefLastUpdate value="1423748376 47000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28522,6 +28698,7 @@
             <Unique value="1016783" type="enum"/>
             <PgfTag value="Rub2" type="str"/>
             <ParaLine>
+                <TextRectID value="188" type="enum"/>
                 <String>Vitaminer och naturläkemedel</String>
             </ParaLine>
         </Para>
@@ -28666,7 +28843,6 @@
                 <String>medel inte kan rekommenderas. Även för </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="186" type="enum"/>
                 <String>flera and</String>
                 <Char value="DiscHyphen" type="enum"/>
                 <String>ra alternativa metoder saknas evi</String>
@@ -29029,11 +29205,12 @@
             <PgfNumString value="9.\t" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
+                <TextRectID value="189" type="enum"/>
                 <Marker>
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="newlink 9E7" type="str"/>
-                    <MCurrPage value="404" type="str"/>
+                    <MCurrPage value="405" type="str"/>
                     <Unique value="1039233" type="enum"/>
                 </Marker>
                 <String>Läkemedelsverket. EMA rekommenderar </String>
@@ -29052,7 +29229,7 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="message URL http://www.lakemedelsverket.se/Alla-nyheter/Nyheter-2013/EMA-rekommenderar-begransad-anvandning-av-Pletal-/" type="str"/>
-                    <MCurrPage value="404" type="str"/>
+                    <MCurrPage value="405" type="str"/>
                     <Unique value="1037823" type="enum"/>
                 </Marker>
                 <String>www.lakemedelsverket.se</String>
@@ -29068,7 +29245,7 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="newlink 10E7" type="str"/>
-                    <MCurrPage value="404" type="str"/>
+                    <MCurrPage value="405" type="str"/>
                     <Unique value="1032909" type="enum"/>
                 </Marker>
                 <String>SBU. Cilostazol vid behandling av fönstertittar</String>
@@ -29096,7 +29273,7 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="message URL http://www.sbu.se/sv/Publicerat/Alert/Cilostazol-vid-behandling-av-fonstertittarsjuka-claudicatio-intermittens/" type="str"/>
-                    <MCurrPage value="404" type="str"/>
+                    <MCurrPage value="405" type="str"/>
                     <Unique value="1031598" type="enum"/>
                 </Marker>
                 <String>www.sbu.se</String>
@@ -29112,7 +29289,7 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="newlink 11E7" type="str"/>
-                    <MCurrPage value="404" type="str"/>
+                    <MCurrPage value="405" type="str"/>
                     <Unique value="1026749" type="enum"/>
                 </Marker>
                 <String>Aronow WS, Nayak D, Woodworth S, Ahn C. </String>
@@ -29130,7 +29307,6 @@
                 <Char value="HardReturn" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="187" type="enum"/>
                 <String>arterial disease at six months and at one year </String>
                 <Char value="HardReturn" type="enum"/>
             </ParaLine>
@@ -29292,7 +29468,7 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="116" type="enum"/>
+                <TextRectID value="117" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -29315,7 +29491,7 @@
             <Unique value="1024555" type="enum"/>
             <PgfTag value="BrödIn" type="str"/>
             <ParaLine>
-                <TextRectID value="151" type="enum"/>
+                <TextRectID value="152" type="enum"/>
             </ParaLine>
         </Para>
         <Para>
@@ -29373,7 +29549,7 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="154" type="enum"/>
+                <TextRectID value="155" type="enum"/>
                 <String>1</String>
             </ParaLine>
         </Para>
@@ -29389,7 +29565,7 @@
                 <PgfAlignment value="Right" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="155" type="enum"/>
+                <TextRectID value="157" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -29400,7 +29576,7 @@
             <Unique value="1033020" type="enum"/>
             <PgfTag value="FigurIns" type="str"/>
             <ParaLine>
-                <TextRectID value="156" type="enum"/>
+                <TextRectID value="158" type="enum"/>
                 <AFrame value="4" type="enum"/>
             </ParaLine>
         </Para>
@@ -29497,7 +29673,7 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="121" type="enum"/>
+                <TextRectID value="122" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -29555,7 +29731,7 @@
                 <PgfLeading value="1.7 pt" type="num"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="161" type="enum"/>
+                <TextRectID value="163" type="enum"/>
                 <String>3</String>
             </ParaLine>
         </Para>
@@ -29601,7 +29777,7 @@
                 <PgfLeading value="2.0 pt" type="num"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="123" type="enum"/>
+                <TextRectID value="124" type="enum"/>
                 <Font>
                     <FTag value="LänkSidhuvud" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -29624,7 +29800,7 @@
             <Unique value="1024691" type="enum"/>
             <PgfTag value="BrödIn" type="str"/>
             <ParaLine>
-                <TextRectID value="167" type="enum"/>
+                <TextRectID value="169" type="enum"/>
             </ParaLine>
         </Para>
         <Para>
@@ -29682,7 +29858,7 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="170" type="enum"/>
+                <TextRectID value="172" type="enum"/>
                 <String>4</String>
             </ParaLine>
         </Para>
@@ -29694,7 +29870,7 @@
             <Unique value="1026494" type="enum"/>
             <PgfTag value="FigurIns" type="str"/>
             <ParaLine>
-                <TextRectID value="172" type="enum"/>
+                <TextRectID value="174" type="enum"/>
                 <AFrame value="1" type="enum"/>
             </ParaLine>
         </Para>
@@ -29750,7 +29926,7 @@
             <Unique value="1024762" type="enum"/>
             <PgfTag value="Bröd" type="str"/>
             <ParaLine>
-                <TextRectID value="174" type="enum"/>
+                <TextRectID value="176" type="enum"/>
             </ParaLine>
         </Para>
         <Para>
@@ -29806,7 +29982,7 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="177" type="enum"/>
+                <TextRectID value="179" type="enum"/>
                 <String>5</String>
             </ParaLine>
         </Para>
@@ -29818,14 +29994,14 @@
             <Unique value="1025180" type="enum"/>
             <PgfTag value="BrödIn" type="str"/>
             <ParaLine>
-                <TextRectID value="179" type="enum"/>
+                <TextRectID value="181" type="enum"/>
             </ParaLine>
         </Para>
         <Para>
             <Unique value="1027917" type="enum"/>
             <PgfTag value="BrödIn" type="str"/>
             <ParaLine>
-                <ATbl value="23" type="enum"/>
+                <ATbl value="24" type="enum"/>
             </ParaLine>
         </Para>
     </TextFlow>
@@ -29876,7 +30052,7 @@
                 <PgfPDFStructureLevel value="0" type="enum"/>
             </Pgf>
             <ParaLine>
-                <TextRectID value="182" type="enum"/>
+                <TextRectID value="184" type="enum"/>
                 <String>6</String>
             </ParaLine>
         </Para>

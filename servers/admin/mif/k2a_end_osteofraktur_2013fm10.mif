@@ -5927,6 +5927,252 @@
  > # end of TblFormat
 > # end of TblCatalog
 <KumihanCatalog 
+ <Kumihan 
+  <KLanguage UKEnglish>
+  <CharClass 
+   <BegParentheses `'>
+   <EndParentheses `'>
+   <NoLineBeginChar `'>
+   <QuestionBang `'>
+   <CenteredPunct `'>
+   <PeriodComma `'>
+   <NonSeparableChar `'>
+   <PrecedingSymbol `'>
+   <SucceedingSymbol `'>
+   <AsianSpace `'>
+   <Hiragana `'>
+   <BaseCharWithSuper `'>
+   <BaseCharWithRubi `'>
+   <Numeral `'>
+   <UnitSymbol `'>
+   <RomanSpace ` '>
+   <RomanChar `!"#$%&\q()*+,-./0123456789:;<=\>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_\Qabc'>
+   <RomanChar `defghijklmnopqrstuvwxyz{|}~­ÄÅÇÉÑÖÜáàâäãåçéèêëí'>
+   <RomanChar `ìîïñóòôöõúùûü†°¢£§•¶ß®©™´¨¦ÆØ×±ð'>
+   <RomanChar `Š¥µ¹²³¼½ªº¾æø¿¡¬ÐƒÝý«»…þÀÃÕŒœ–—“'>
+   <RomanChar `”‘’÷ÞÿŸ⁄¤‹›ﬁﬂ‡·‚„‰ÂÊÁËÈÍÎÏÌÓ'>
+   <RomanChar `ÔšÒÚÛÙ€ˆ˜¯˘Ž°¸˝žˇ'>
+   <ParenBegWariChu `'>
+   <ParenEndWariChu `'>
+   <Spare1 `'>
+   <Spare2 `'>
+   <Spare3 `'>
+   <Spare4 `'>
+   <Spare5 `'>
+  > # end of CharClass
+  <SqueezeTable 
+   <SqueezeHorizontal  1 2 0 0 3 2 0 0 0 0 0 0 0 0 5 0 0 0 1 2 0 0 0 0 0>
+   <SqueezeVertical    1 2 0 0 4 2 0 0 0 0 0 0 0 0 5 0 0 0 1 2 0 0 0 0 0>
+  > # end of SqueezeTable
+  <SpreadTable 
+   <BegParentheses     14  0  0  0  4  0  0  0  0  0  0  0  0 12  0  0  0  0  0 16  0  0  0  0  0 16>
+   <EndParentheses      1 15  1  1  4 15  1  1  1  0  1  1  1 10  1  1  1  1  1  1  1  1  1  1  1  0>
+   <NoLineBeginChar     2  0  0  0  4  0  0  0  0  0  0  0  3 12  3  3  0  3  0  0  0  0  0  0  0  0>
+   <QuestionBang        2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  3  0  0  0  0  0  0  0  0>
+   <CenteredPunct       3  3  3  3  5  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  0>
+   <PeriodComma         1 15  1  1  6  0  1  1  1  1  1  1  1 10  1  1  1  1  1  1  1  1  1  1  1  1>
+   <NonSeparableChar    2  0  0  0  4  0  0  0  0  0  0  0  0 12  0  0  0  0  0  0  0  0  0  0  0  0>
+   <PrecedingSymbol     2  0  0  0  4  0  0  0  0  0  0  0  0  0  0  0  0  0  0 16  0  0  0  0  0 16>
+   <SucceedingSymbol    2  0  0  0  4  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0>
+   <AsianSpace          0  0  0  0  4  0  0  0  0  0  0  0  0 12  0  0  0  0  0  0  0  0  0  0  0  0>
+   <Hiragana            2  0  0  0  4  0  0  0  0  0  0  0  3 12  3  3  0  7  0  0  0  0  0  0  0  0>
+   <Others              2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0>
+   <BaseCharWithSuper   2  0  0  0  4  0  0  0  0  0  4  4  0  4  0  0  0  3  3  0  4  4  4  4  4  0>
+   <BaseCharWithRubi   11 12  0  0  4 12 12  0  0 12 12  0  3 13  3  3  0  7  0  0  0  0  0  0  0  0>
+   <Numeral             2  0  0  0  4  0  0  0  0  0  4  4  0  4  0  3  0  0  3  0  4  4  4  4  4  0>
+   <UnitSymbol          2  0  0  0  4  0  0  0  0  0  4  4  0  4  3  0  0  0  3  0  4  4  4  4  4  0>
+   <RomanSpace          2  0  0  0  4  0  0  0  0  0  0  0  0  0  0  0  0  0  0  9  0  0  0  0  0  9>
+   <RomanChar           2  0  0  0  4  0  0  0  0  0  8  8  3  8  0  0  0  0  3  0  8  8  8  8  8  0>
+   <ParenBegWariChu     2 16 16 16 16 16  0  0  0  0  0  0  0  0  0  0  9  0 16 16  0  0  0  0  0 16>
+   <ParenEndWariChu     2  0  0  0  4  0  0  0  0  0  0  0  4  0  4  4  0  4  0 16  0  0  0  0  0  9>
+   <Spare1              2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0>
+   <Spare2              2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0>
+   <Spare3              2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0>
+   <Spare4              2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0>
+   <Spare5              2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0>
+   <LineBeginEnd        0 16 16 16 16 16  0  0  0  0  0  0  0  0  0  0  9  0  9 16  0  0  0  0  0 16>
+  > # end of SpreadTable
+  <LineBreakTable 
+   <BegParentheses     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3 1 1 1 1 1>
+   <EndParentheses     0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <NoLineBeginChar    0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <QuestionBang       0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <CenteredPunct      0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <PeriodComma        0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <NonSeparableChar   0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <PrecedingSymbol    0 1 1 1 1 1 0 0 0 0 0 0 0 0 1 0 0 0 0 3 0 0 0 0 0>
+   <SucceedingSymbol   0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <AsianSpace         0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <Hiragana           0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <Others             0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <BaseCharWithSuper  0 1 1 1 1 1 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0>
+   <BaseCharWithRubi   0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <Numeral            0 1 1 1 1 1 0 0 1 0 0 0 0 0 1 0 0 1 0 1 0 0 0 0 0>
+   <UnitSymbol         0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 0 0 0 0>
+   <RomanSpace         0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0>
+   <RomanChar          0 1 1 1 1 1 0 0 0 0 0 0 0 0 1 1 0 2 0 1 0 0 0 0 0>
+   <ParenBegWariChu    1 3 3 3 3 3 1 1 1 1 1 1 1 1 1 1 3 1 3 3 1 1 1 1 1>
+   <ParenEndWariChu    0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0>
+   <Spare1             0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <Spare2             0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <Spare3             0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <Spare4             0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <Spare5             0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+  > # end of LineBreakTable
+  <ExtraSpaceTable 
+   <BegParentheses     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 6 1 1 1 1 1>
+   <EndParentheses     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1>
+   <NoLineBeginChar    1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <QuestionBang       1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1>
+   <CenteredPunct      1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1>
+   <PeriodComma        1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1>
+   <NonSeparableChar   1 1 0 1 1 1 1 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <PrecedingSymbol    1 1 0 1 1 1 0 0 0 1 0 0 0 0 1 0 0 0 0 6 0 0 0 0 0>
+   <SucceedingSymbol   1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <AsianSpace         1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1>
+   <Hiragana           1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0>
+   <Others             1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0>
+   <BaseCharWithSuper  1 1 0 1 1 1 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0>
+   <BaseCharWithRubi   1 1 0 1 1 1 0 0 0 1 0 0 0 1 0 0 0 4 0 1 0 0 0 0 0>
+   <Numeral            1 1 1 1 1 1 0 0 1 1 0 0 0 0 1 1 0 1 1 1 0 0 0 0 0>
+   <UnitSymbol         1 1 1 1 1 1 0 0 0 1 0 0 0 0 1 1 0 1 1 1 0 0 0 0 0>
+   <RomanSpace         0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5 2 0 6 0 0 0 0 0>
+   <RomanChar          1 1 1 1 1 1 0 0 0 1 4 4 0 4 1 1 2 3 1 1 4 4 4 4 4>
+   <ParenBegWariChu    1 6 6 6 6 6 1 1 1 1 1 1 1 1 1 1 6 1 6 6 1 1 1 1 1>
+   <ParenEndWariChu    1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 6 0 0 0 0 0>
+   <Spare1             1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0>
+   <Spare2             1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0>
+   <Spare3             1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0>
+   <Spare4             1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0>
+   <Spare5             1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0>
+  > # end of ExtraSpaceTable
+ > # end of Kumihan
+ <Kumihan 
+  <KLanguage Japanese>
+  <CharClass 
+   <BegParentheses `‘“（〔［｛〈《「『【'>
+   <EndParentheses `、，’”）〕］｝〉》」』】'>
+   <NoLineBeginChar `ヽヾゝゞ々ーぁぃぅぇぉっゃゅょゎァィゥェォ'>
+   <NoLineBeginChar `ッャュョヮヵヶ'>
+   <QuestionBang `？！'>
+   <CenteredPunct `・：；'>
+   <PeriodComma `。．'>
+   <NonSeparableChar `―…‥'>
+   <PrecedingSymbol `￥＄￡'>
+   <SucceedingSymbol `゛゜°′″￠％‰'>
+   <AsianSpace `　'>
+   <Hiragana `あいうえおかがきぎくぐけげこごさざしじすずせぜ'>
+   <Hiragana `そぞただちぢつづてでとどなにぬねのはばぱひびぴ'>
+   <Hiragana `ふぶぷへべぺほぼぽまみむめもやゆよらりるれろわ'>
+   <Hiragana `ゐゑをん'>
+   <BaseCharWithSuper `'>
+   <BaseCharWithRubi `'>
+   <Numeral `０１２３４５６７８９'>
+   <UnitSymbol `'>
+   <RomanSpace ` '>
+   <RomanChar `!"#$%&\q()*+,-./0123456789:;<=\>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_\Qabc'>
+   <RomanChar `defghijklmnopqrstuvwxyz{|}~ＡＢＣＤＥＦＧＨＩＪＫＬＭＮ'>
+   <RomanChar `ＯＰＱＲＳＴＵＶＷＸＹＺａｂｃｄｅｆｇｈｉｊｋ'>
+   <RomanChar `ｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚΑΒΓΔΕΖΗΘΙΚΛ'>
+   <RomanChar `ΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρστυφ'>
+   <RomanChar `χψωАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭ'>
+   <RomanChar `ЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэю'>
+   <RomanChar `я'>
+   <ParenBegWariChu `'>
+   <ParenEndWariChu `'>
+   <Spare1 `'>
+   <Spare2 `'>
+   <Spare3 `'>
+   <Spare4 `'>
+   <Spare5 `'>
+  > # end of CharClass
+  <SqueezeTable 
+   <SqueezeHorizontal  1 2 0 0 3 2 0 0 0 0 0 0 0 0 5 0 0 0 1 2 0 0 0 0 0>
+   <SqueezeVertical    1 2 0 0 4 2 0 0 0 0 0 0 0 0 5 0 0 0 1 2 0 0 0 0 0>
+  > # end of SqueezeTable
+  <SpreadTable 
+   <BegParentheses     14  0  0  0  4  0  0  0  0  0  0  0  0 12  0  0  0  0  0 16  0  0  0  0  0 16>
+   <EndParentheses      1 15  1  1  4 15  1  1  1  0  1  1  1 10  1  1  1  1  1  1  1  1  1  1  1  0>
+   <NoLineBeginChar     2  0  0  0  4  0  0  0  0  0  0  0  3 12  3  3  0  3  0  0  0  0  0  0  0  0>
+   <QuestionBang        2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  3  0  0  0  0  0  0  0  0>
+   <CenteredPunct       3  3  3  3  5  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  3  0>
+   <PeriodComma         1 15  1  1  6  0  1  1  1  1  1  1  1 10  1  1  1  1  1  1  1  1  1  1  1  1>
+   <NonSeparableChar    2  0  0  0  4  0  0  0  0  0  0  0  0 12  0  0  0  0  0  0  0  0  0  0  0  0>
+   <PrecedingSymbol     2  0  0  0  4  0  0  0  0  0  0  0  0  0  0  0  0  0  0 16  0  0  0  0  0 16>
+   <SucceedingSymbol    2  0  0  0  4  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0>
+   <AsianSpace          0  0  0  0  4  0  0  0  0  0  0  0  0 12  0  0  0  0  0  0  0  0  0  0  0  0>
+   <Hiragana            2  0  0  0  4  0  0  0  0  0  0  0  3 12  3  3  0  7  0  0  0  0  0  0  0  0>
+   <Others              2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0>
+   <BaseCharWithSuper   2  0  0  0  4  0  0  0  0  0  4  4  0  4  0  0  0  3  3  0  4  4  4  4  4  0>
+   <BaseCharWithRubi   11 12  0  0  4 12 12  0  0 12 12  0  3 13  3  3  0  7  0  0  0  0  0  0  0  0>
+   <Numeral             2  0  0  0  4  0  0  0  0  0  4  4  0  4  0  3  0  0  3  0  4  4  4  4  4  0>
+   <UnitSymbol          2  0  0  0  4  0  0  0  0  0  4  4  0  4  3  0  0  0  3  0  4  4  4  4  4  0>
+   <RomanSpace          2  0  0  0  4  0  0  0  0  0  0  0  0  0  0  0  0  0  0  9  0  0  0  0  0  9>
+   <RomanChar           2  0  0  0  4  0  0  0  0  0  8  8  3  8  0  0  0  0  3  0  8  8  8  8  8  0>
+   <ParenBegWariChu     2 16 16 16 16 16  0  0  0  0  0  0  0  0  0  0  9  0 16 16  0  0  0  0  0 16>
+   <ParenEndWariChu     2  0  0  0  4  0  0  0  0  0  0  0  4  0  4  4  0  4  0 16  0  0  0  0  0  9>
+   <Spare1              2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0>
+   <Spare2              2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0>
+   <Spare3              2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0>
+   <Spare4              2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0>
+   <Spare5              2  0  0  0  4  0  0  0  0  0  0  0  3  0  3  3  0  7  0  0  0  0  0  0  0  0>
+   <LineBeginEnd        0 16 16 16 16 16  0  0  0  0  0  0  0  0  0  0  9  0  9 16  0  0  0  0  0 16>
+  > # end of SpreadTable
+  <LineBreakTable 
+   <BegParentheses     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 3 1 1 1 1 1>
+   <EndParentheses     0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <NoLineBeginChar    0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <QuestionBang       0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <CenteredPunct      0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <PeriodComma        0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <NonSeparableChar   0 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <PrecedingSymbol    0 1 1 1 1 1 0 0 0 0 0 0 0 0 1 0 0 0 0 3 0 0 0 0 0>
+   <SucceedingSymbol   0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <AsianSpace         0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <Hiragana           0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <Others             0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <BaseCharWithSuper  0 1 1 1 1 1 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0>
+   <BaseCharWithRubi   0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <Numeral            0 1 1 1 1 1 0 0 1 0 0 0 0 0 1 0 0 1 0 1 0 0 0 0 0>
+   <UnitSymbol         0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 1 0 1 0 1 0 0 0 0 0>
+   <RomanSpace         0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0>
+   <RomanChar          0 1 1 1 1 1 0 0 0 0 0 0 0 0 1 1 0 2 0 1 0 0 0 0 0>
+   <ParenBegWariChu    1 3 3 3 3 3 1 1 1 1 1 1 1 1 1 1 3 1 3 3 1 1 1 1 1>
+   <ParenEndWariChu    0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0>
+   <Spare1             0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <Spare2             0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <Spare3             0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <Spare4             0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <Spare5             0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+  > # end of LineBreakTable
+  <ExtraSpaceTable 
+   <BegParentheses     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 6 1 1 1 1 1>
+   <EndParentheses     1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1>
+   <NoLineBeginChar    1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <QuestionBang       1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1>
+   <CenteredPunct      1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1>
+   <PeriodComma        1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1>
+   <NonSeparableChar   1 1 0 1 1 1 1 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <PrecedingSymbol    1 1 0 1 1 1 0 0 0 1 0 0 0 0 1 0 0 0 0 6 0 0 0 0 0>
+   <SucceedingSymbol   1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0>
+   <AsianSpace         1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1>
+   <Hiragana           1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0>
+   <Others             1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0>
+   <BaseCharWithSuper  1 1 0 1 1 1 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0>
+   <BaseCharWithRubi   1 1 0 1 1 1 0 0 0 1 0 0 0 1 0 0 0 4 0 1 0 0 0 0 0>
+   <Numeral            1 1 1 1 1 1 0 0 1 1 0 0 0 0 1 1 0 1 1 1 0 0 0 0 0>
+   <UnitSymbol         1 1 1 1 1 1 0 0 0 1 0 0 0 0 1 1 0 1 1 1 0 0 0 0 0>
+   <RomanSpace         0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5 2 0 6 0 0 0 0 0>
+   <RomanChar          1 1 1 1 1 1 0 0 0 1 4 4 0 4 1 1 2 3 1 1 4 4 4 4 4>
+   <ParenBegWariChu    1 6 6 6 6 6 1 1 1 1 1 1 1 1 1 1 6 1 6 6 1 1 1 1 1>
+   <ParenEndWariChu    1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 0 0 6 0 0 0 0 0>
+   <Spare1             1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0>
+   <Spare2             1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0>
+   <Spare3             1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0>
+   <Spare4             1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0>
+   <Spare5             1 1 0 1 1 1 0 0 0 1 0 0 0 0 0 0 0 4 0 1 0 0 0 0 0>
+  > # end of ExtraSpaceTable
+ > # end of Kumihan
 > # end of KumihanCatalog
 <Views 
  <View 
@@ -6127,10 +6373,10 @@
  > # end of XRefFormat
 > # end of XRefFormats
 <Document 
- <DViewRect 18 20 1283 764 >
- <DWindowRect 0 0 1751 1044 >
- <DViewScale  112.28%>
- <DNextUnique 1066710>
+ <DViewRect 18 20 1271 631 >
+ <DWindowRect 0 0 1735 867 >
+ <DViewScale  95.9%>
+ <DNextUnique 1066939>
  <DPageSize  170.0 mm 240.0 mm>
  <DMenuBar `'>
  <DVoMenuBar `'>
@@ -6211,7 +6457,7 @@
  <DFullRulers Yes>
  <DGraphicsOff No>
  <DCurrentView 1>
- <DBordersOn No>
+ <DBordersOn Yes>
  <DSymbolsOn Yes>
  <DLinkBoundariesOn No>
  <DTrackChangesOn No>
@@ -6312,7 +6558,7 @@
  > # end of PDFDocInfo
  <DocFileInfo 
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30323A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131342D30362D31305431373A35313A30312B30323A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131342D30362D31305431373A35313A30312B30323A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130382D30322D30365430393A34383A33382B30313A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131352D30312D31345431343A32323A32382B30313A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131352D30312D31345431343A32323A32382B30313A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E4F7374656F706F726F73206F6368206672616B74757270726576656E74696F6E20E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020
@@ -13248,7 +13494,7 @@
          <FTag `'>
          <FPlatformName `W.Arial Unicode MS.R.400'>
          <FFamily `Arial Unicode MS'>
-         <FEncoding `GB2312-80.EUC'>
+         <FEncoding `JISX0208.ShiftJIS'>
          <FLocked No>
         > # end of Font
         <String `≤'>
@@ -42347,10 +42593,10 @@
  > # end of TextRect
  <TextRect 
   <ID 151>
-  <Unique 1066699>
+  <Unique 1066715>
   <PenWidth  0.5 pt>
-  <ShapeRect  57.0 mm 7.0 mm 95.0 mm 12.30905 mm>
-  <BRect  57.0 mm 7.0 mm 95.0 mm 12.30905 mm>
+  <ShapeRect  57.0 mm 7.0 mm 95.0 mm 19.20616 mm>
+  <BRect  57.0 mm 7.0 mm 95.0 mm 19.20616 mm>
   <TRNumColumns 1>
   <TRColumnGap  5.00001 mm>
   <TRColumnBalance No>
@@ -43873,6 +44119,46 @@
  <TFTag `A'>
  <TFAutoConnect Yes>
  <Notes 
+  <FNote 
+   <ID 178>
+   <Para 
+    <Unique 1066723>
+    <PgfTag `Footnote'>
+    <ParaLine 
+     <Font 
+      <FTag `'>
+      <FLocked No>
+      <FSeparation 2>
+      <FColor `Red'>
+     > # end of Font
+     <String `“D-vitaminbehandling och skeletthälsa – svenska riktlinjer behövs" publicerad 2014-07-29,'>
+    >
+    <ParaLine 
+     <Char DiscHyphen>
+     <String `'>
+     <Font 
+      <FTag `'>
+      <FLocked No>
+     > # end of Font
+     <String ` '>
+     <Char HardReturn>
+    >
+    <ParaLine 
+     <Font 
+      <FTag `Blue'>
+      <FLocked No>
+     > # end of Font
+     <Marker 
+      <MType 8>
+      <MTypeName `Hypertext'>
+      <MText `message URL http://www.lakartidningen.se/Klinik-och-vetenskap/Rapport/2014/07/D-vitaminbehandling-och-skeletthalsa--svenska-riktlinjer-behovs/'>
+      <MCurrPage `619'>
+      <Unique 1066724>
+     > # end of Marker
+     <String `www.lakartidningen.se'>
+    >
+   > # end of Para
+  > # end of FNote
  > # end of Notes
  <Para 
   <Unique 1054968>
@@ -45183,7 +45469,7 @@
     <XRefSrcText `60772: FaktaRub1: Riskfaktorer i FRAX (6)'>
     <XRefSrcIsElem No>
     <XRefSrcFile `'>
-    <XRefLastUpdate  1405007461 613000>
+    <XRefLastUpdate  1423920148 758000>
     <XRefSrcElemNonUniqueId `'>
     <XRefAltText `'>
     <XRefApiClient 
@@ -45573,7 +45859,7 @@
     <XRefSrcText `25078: FaktaRub1: Bedömning av frakturrisk vid misstanke om osteoporos'>
     <XRefSrcIsElem No>
     <XRefSrcFile `'>
-    <XRefLastUpdate  1405007461 613000>
+    <XRefLastUpdate  1423920148 758000>
     <XRefSrcElemNonUniqueId `'>
     <XRefAltText `'>
     <XRefApiClient 
@@ -45985,7 +46271,7 @@
     <XRefSrcText `60152: FaktaRub1: Laboratorieprover som tas för att utesluta andra'>
     <XRefSrcIsElem No>
     <XRefSrcFile `'>
-    <XRefLastUpdate  1405007461 613000>
+    <XRefLastUpdate  1423920148 758000>
     <XRefSrcElemNonUniqueId `'>
     <XRefAltText `'>
     <XRefApiClient 
@@ -46157,7 +46443,7 @@
     <XRefSrcText `94041: FaktaRub1: Praktiska fall- och frakturpreventiva insatser\x0d '>
     <XRefSrcIsElem No>
     <XRefSrcFile `'>
-    <XRefLastUpdate  1405007461 613000>
+    <XRefLastUpdate  1423920148 758000>
     <XRefSrcElemNonUniqueId `'>
     <XRefAltText `'>
     <XRefApiClient 
@@ -46182,7 +46468,7 @@
     <XRefSrcText `94041: FaktaRub1: Praktiska fall- och frakturpreventiva insatser\x0d '>
     <XRefSrcIsElem No>
     <XRefSrcFile `'>
-    <XRefLastUpdate  1405007461 613000>
+    <XRefLastUpdate  1423920148 758000>
     <XRefSrcElemNonUniqueId `'>
     <XRefAltText `'>
     <XRefApiClient 
@@ -46322,7 +46608,7 @@
     <XRefSrcText `94041: FaktaRub1: Praktiska fall- och frakturpreventiva insatser\x0d '>
     <XRefSrcIsElem No>
     <XRefSrcFile `'>
-    <XRefLastUpdate  1405007461 614000>
+    <XRefLastUpdate  1423920148 758000>
     <XRefSrcElemNonUniqueId `'>
     <XRefAltText `'>
     <XRefApiClient 
@@ -46579,7 +46865,7 @@
     <XRefSrcText `38388: TabellRekRub: Terapirekommendationer – för patienter med mycket hög respektive låg risk för'>
     <XRefSrcIsElem No>
     <XRefSrcFile `'>
-    <XRefLastUpdate  1405007461 613000>
+    <XRefLastUpdate  1423920148 758000>
     <XRefSrcElemNonUniqueId `'>
     <XRefAltText `'>
     <XRefApiClient 
@@ -46604,7 +46890,7 @@
     <XRefSrcText `38388: TabellRekRub: Terapirekommendationer – för patienter med mycket hög respektive låg risk för'>
     <XRefSrcIsElem No>
     <XRefSrcFile `'>
-    <XRefLastUpdate  1405007461 613000>
+    <XRefLastUpdate  1423920148 758000>
     <XRefSrcElemNonUniqueId `'>
     <XRefAltText `'>
     <XRefApiClient 
@@ -46638,6 +46924,17 @@
     <Unique 1060681>
    > # end of Marker
    <String `Kalcium och vitamin D'>
+   <Font 
+    <FTag `'>
+    <FLocked No>
+    <FSeparation 2>
+    <FColor `Red'>
+   > # end of Font
+   <FNote 178>
+   <Font 
+    <FTag `'>
+    <FLocked No>
+   > # end of Font
   > # end of ParaLine
  > # end of Para
  <Para 
@@ -46938,6 +47235,7 @@
    <String `förstoppning orsakad av kalciumtillskottet. '>
   > # end of ParaLine
   <ParaLine 
+   <TextRectID 168>
    <String `Lindrigare oftast övergående hyperkalce'>
    <Char SoftHyphen>
   > # end of ParaLine
@@ -46949,7 +47247,6 @@
    <Char SoftHyphen>
   > # end of ParaLine
   <ParaLine 
-   <TextRectID 168>
    <String `cium och P/S-kreatinin bör kontrolleras ef'>
    <Char SoftHyphen>
   > # end of ParaLine
@@ -47203,6 +47500,7 @@
    <Char SoftHyphen>
   > # end of ParaLine
   <ParaLine 
+   <TextRectID 168>
    <String `dier med postmenopausala kvinnor med an'>
    <Char SoftHyphen>
   > # end of ParaLine
@@ -47214,7 +47512,6 @@
    <String `ler låg bentäthet i rygg eller höft kan man '>
   > # end of ParaLine
   <ParaLine 
-   <TextRectID 168>
    <String `se en relativ riskreduktion för kotkompres'>
    <Char SoftHyphen>
   > # end of ParaLine
@@ -47277,7 +47574,7 @@
     <XRefSrcText `38388: TabellRekRub: Terapirekommendationer – för patienter med mycket hög respektive låg risk för'>
     <XRefSrcIsElem No>
     <XRefSrcFile `'>
-    <XRefLastUpdate  1405007461 613000>
+    <XRefLastUpdate  1423920148 758000>
     <XRefSrcElemNonUniqueId `'>
     <XRefAltText `'>
     <XRefApiClient 
@@ -47302,7 +47599,7 @@
     <XRefSrcText `38388: TabellRekRub: Terapirekommendationer – för patienter med mycket hög respektive låg risk för'>
     <XRefSrcIsElem No>
     <XRefSrcFile `'>
-    <XRefLastUpdate  1405007461 613000>
+    <XRefLastUpdate  1423920148 758000>
     <XRefSrcElemNonUniqueId `'>
     <XRefAltText `'>
     <XRefApiClient 
@@ -47324,7 +47621,7 @@
   > # end of ParaLine
  > # end of Para
  <Para 
-  <Unique 1063769>
+  <Unique 1066760>
   <PgfTag `BrödIn'>
   <PgfReferenced Yes>
   <ParaLine 
@@ -47333,7 +47630,7 @@
     <MTypeName `Index'>
     <MText `bisfosfonater:biverkningar'>
     <MCurrPage `620'>
-    <Unique 1063768>
+    <Unique 1066759>
    > # end of Marker
    <String `Biverkningar av perorala bisfosfonater är '>
   > # end of ParaLine
@@ -47365,7 +47662,7 @@
     <MTypeName `Index'>
     <MText `käkbensnekros:bisfosfonater'>
     <MCurrPage `620'>
-    <Unique 1063770>
+    <Unique 1066761>
    > # end of Marker
    <String `käk'>
    <Char SoftHyphen>
@@ -47377,7 +47674,7 @@
     <MTypeName `Index'>
     <MText `atypisk femurfraktur:bisfosfonater'>
     <MCurrPage `620'>
-    <Unique 1063771>
+    <Unique 1066762>
    > # end of Marker
    <String `atypiska femurfrakturer '>
   > # end of ParaLine
@@ -47404,71 +47701,61 @@
   > # end of ParaLine
   <ParaLine 
    <String `rige '>
-   <Font 
-    <FTag `Blue'>
-    <FLocked No>
-   > # end of Font
    <Marker 
     <MType 8>
     <MTypeName `Hypertext'>
     <MText `gotolink 16K2a'>
     <MCurrPage `620'>
-    <Unique 1063772>
+    <Unique 1066763>
    > # end of Marker
-   <String `(16)'>
-  > # end of ParaLine
-  <ParaLine 
-  <Font 
-   <FTag `'>
-   <FLocked No>
-   <FSeparation 2>
-   <FColor `Red'>
-  > # end of Font
-  <String `. Vad gäller AFF visar en svensk studie en riskökning i samma storleksordning samt att risken ökar med behandlingstiden '>
+   <String `(16). '>
+   <Font 
+    <FTag `'>
+    <FLocked No>
+    <FSeparation 2>
+    <FColor `Red'>
+   > # end of Font
+   <String `Vad gäller AFF visar en svensk '>
+   <String `studie en riskökning i samma storleksordning samt att risken ökar med behandlingstiden'>
   > # end of ParaLine
   <ParaLine 
    <Font 
     <FTag `Blue'>
     <FLocked No>
    > # end of Font
+   <String ` '>
    <Marker 
     <MType 8>
     <MTypeName `Hypertext'>
     <MText `gotolink 17K2a'>
     <MCurrPage `620'>
-    <Unique 1063832>
+    <Unique 1066776>
    > # end of Marker
-   <String `(17)'>
+   <String `(17, '>
+   <Marker 
+    <MType 8>
+    <MTypeName `Hypertext'>
+    <MText `gotolink 18K2a'>
+    <MCurrPage `620'>
+    <Unique 1066777>
+   > # end of Marker
+   <String `18)'>
+   <Font 
+    <FTag `'>
+    <FLocked No>
+    <FSeparation 2>
+    <FColor `Red'>
+   > # end of Font
+   <String `. Risken för käkbensnekros '>
+   <String `och AFF bör vägas mot förväntad vinst vid '>
+   <String `långtidsbehandling.'>
   > # end of ParaLine
   <ParaLine 
-  <Font 
-   <FTag `'>
-   <FLocked No>
-   <FSeparation 2>
-   <FColor `Red'>
-  > # end of Font
-   <String `. Risken för käkbensnekros och '>
-  <Font 
-   <FTag `'>
-   <FLocked No>
-   <FSeparation 2>
-   <FColor `Red'>
-  > # end of Font
-   <String `AFF bör vägas mot förväntad vinst vid '>
-  > # end of ParaLine
-  <ParaLine 
-  <Font 
-   <FTag `'>
-   <FLocked No>
-   <FSeparation 2>
-   <FColor `Red'>
-  > # end of Font
-   <String `långtidsbehandling. '>
    <Font 
     <FTag `'>
     <FLocked No>
    > # end of Font
-   <String `Se även kapitlet Mun'>
+   <String ` Se även kapitlet Mun'>
    <Char SoftHyphen>
   > # end of ParaLine
   <ParaLine 
@@ -47482,14 +47769,14 @@
     <XRefSrcText `36887: Rub1: Käkbensnekroser relaterade till bisfosfonater, biolog'>
     <XRefSrcIsElem No>
     <XRefSrcFile `<u\><u\><c\>LB TRYCKVERSION 2014<c\>N2_AND_Munhala_2013FM10.fm'>
-    <XRefLastUpdate  1405007461 752000>
+    <XRefLastUpdate  1423759208 540000>
     <XRefSrcElemNonUniqueId `'>
     <XRefAltText `'>
     <XRefApiClient 
      <XRefClientName `'>
      <XRefClientType `'>
     > # end of XRefApiClient
-    <Unique 1063775>
+    <Unique 1066766>
    > # end of XRef
    <Font 
     <FTag `Blue'>
@@ -47505,7 +47792,7 @@
   > # end of ParaLine
  > # end of Para
  <Para 
-  <Unique 1047106>
+  <Unique 1066769>
   <PgfTag `Rub2'>
   <PgfReferenced Yes>
   <ParaLine 
@@ -47515,7 +47802,7 @@
     <MTypeName `Index'>
     <MText `denosumab '>
     <MCurrPage `620'>
-    <Unique 1059009>
+    <Unique 1066768>
    > # end of Marker
    <String `enosumab'>
   > # end of ParaLine
@@ -48492,7 +48779,7 @@
   > # end of ParaLine
  > # end of Para
  <Para 
-  <Unique 1048890>
+  <Unique 1066811>
   <PgfTag `BrödIn'>
   <PgfReferenced Yes>
   <ParaLine 
@@ -48510,11 +48797,11 @@
    <Marker 
     <MType 8>
     <MTypeName `Hypertext'>
-    <MText `gotolink 18K2a'>
+    <MText `gotolink 19K2a'>
     <MCurrPage `622'>
-    <Unique 1063025>
+    <Unique 1066819>
    > # end of Marker
-   <String `(18)'>
+   <String `(19)'>
    <Font 
     <FTag `'>
     <FLocked No>
@@ -48525,7 +48812,7 @@
     <MTypeName `Index'>
     <MText `bisfosfonater:behandlingstid'>
     <MCurrPage `622'>
-    <Unique 1059088>
+    <Unique 1066813>
    > # end of Marker
    <String `bisfosfonater '>
   > # end of ParaLine
@@ -48567,11 +48854,11 @@
    <Marker 
     <MType 8>
     <MTypeName `Hypertext'>
-    <MText `gotolink 18K2a'>
+    <MText `gotolink 19K2a'>
     <MCurrPage `622'>
-    <Unique 1063032>
+    <Unique 1066832>
    > # end of Marker
-   <String `(18)'>
+   <String `(19)'>
    <Font 
     <FTag `'>
     <FLocked No>
@@ -48631,11 +48918,11 @@
    <Marker 
     <MType 8>
     <MTypeName `Hypertext'>
-    <MText `gotolink 19K2a'>
+    <MText `gotolink 20K2a'>
     <MCurrPage `622'>
-    <Unique 1063039>
+    <Unique 1066880>
    > # end of Marker
-   <String `(19)'>
+   <String `(20)'>
    <Font 
     <FTag `'>
     <FLocked No>
@@ -48744,7 +49031,7 @@
     <XRefSrcText `89705: Rub2: \x0d Kalcium och vitamin D\x0d '>
     <XRefSrcIsElem No>
     <XRefSrcFile `'>
-    <XRefLastUpdate  1405007461 613000>
+    <XRefLastUpdate  1423920148 758000>
     <XRefSrcElemNonUniqueId `'>
     <XRefAltText `'>
     <XRefApiClient 
@@ -49745,7 +50032,7 @@
   > # end of ParaLine
  > # end of Para
  <Para 
-  <Unique 1062542>
+  <Unique 1066845>
   <PgfTag `RefTextNrForts'>
   <PgfNumString `17.\t'>
   <PgfReferenced Yes>
@@ -49765,24 +50052,10 @@
     <FColor `Red'>
    > # end of Font
    <String `Schilcher J1, Michaëlsson K, Aspenberg P. '>
-  > # end of ParaLine
-  <ParaLine 
-  <Font 
-   <FTag `'>
-   <FLocked No>
-   <FSeparation 2>
-   <FColor `Red'>
-  > # end of Font
    <String `Bisphosphonate use and atypical fractures of the '>
+   <String `femoral shaft.'>
   > # end of ParaLine
   <ParaLine 
-  <Font 
-   <FTag `'>
-   <FLocked No>
-   <FSeparation 2>
-   <FColor `Red'>
-  > # end of Font
-   <String `femoral shaft.'>
    <Font 
     <FTag `Blue'>
     <FLocked No>
@@ -49793,29 +50066,93 @@
     <MTypeName `Hypertext'>
     <MText `message URL http://www.ncbi.nlm.nih.gov/pubmed/?term=schilcher+j+2011+bisphosphonate'>
     <MCurrPage `624'>
-    <Unique 1063811>
+    <Unique 1066846>
    > # end of Marker
-   <String `N Engl J Med. 2011;364:1728—37. '>
-   <Font 
-    <FTag `'>
-    <FLocked No>
-    <FSeparation 4>
-    <FColor `Blue'>
-   > # end of Font
+   <String `N Engl J Med. 2011;364:1728—37.'>
   > # end of ParaLine
  > # end of Para
  <Para 
-  <Unique 1054584>
+  <Unique 1066848>
   <PgfTag `RefTextNrForts'>
+  <Pgf 
+   <PgfFont 
+    <FTag `'>
+    <FPlatformName `W.Frutiger LT Std 55 Roman.R.400'>
+    <FFamily `Frutiger LT Std 55 Roman'>
+    <FVar `Regular'>
+    <FWeight `Regular'>
+    <FAngle `Regular'>
+    <FPostScriptName `FrutigerLTStd-Roman'>
+    <FEncoding `FrameRoman'>
+    <FSize  7.5 pt>
+    <FUnderlining FNoUnderlining>
+    <FOverline No>
+    <FStrike No>
+    <FChangeBar No>
+    <FOutline No>
+    <FShadow No>
+    <FPairKern Yes>
+    <FTsume No>
+    <FCase FAsTyped>
+    <FPosition FNormal>
+    <FDX  0.0%>
+    <FDY  0.0%>
+    <FDW  0.0%>
+    <FStretch  100.0%>
+    <FLanguage Swedish>
+    <FLocked No>
+    <FSeparation 2>
+    <FColor `Red'>
+    <FBackgroundColor NoColor>
+   > # end of PgfFont
+  > # end of Pgf
   <PgfNumString `18.\t'>
-  <PgfReferenced Yes>
   <ParaLine 
    <Marker 
     <MType 8>
     <MTypeName `Hypertext'>
     <MText `newlink 18K2a'>
     <MCurrPage `624'>
-    <Unique 1062956>
+    <Unique 1066847>
+   > # end of Marker
+   <Font 
+    <FTag `'>
+    <FLocked No>
+    <FSeparation 2>
+    <FColor `Red'>
+   > # end of Font
+   <String `Schilcher J1, Koeppen V, Aspenberg P, Michaëlsson K. Risk of atypical femoral fracture during '>
+   <String `and after bisphosphonate use. '>
+  > # end of ParaLine
+  <ParaLine 
+   <Font 
+    <FTag `Blue'>
+    <FLocked No>
+   > # end of Font
+   <Marker 
+    <MType 8>
+    <MTypeName `Hypertext'>
+    <MText `message URL http://www.ncbi.nlm.nih.gov/pubmed/?term=10.1056%2FNEJMc1403799'>
+    <MCurrPage `624'>
+    <Unique 1066849>
+   > # end of Marker
+   <String `N Engl J Med. '>
+  > # end of ParaLine
+  <ParaLine 
+   <String `2014;371:974–6.'>
+  > # end of ParaLine
+ > # end of Para
+ <Para 
+  <Unique 1066851>
+  <PgfTag `RefTextNrForts'>
+  <PgfNumString `19.\t'>
+  <ParaLine 
+   <Marker 
+    <MType 8>
+    <MTypeName `Hypertext'>
+    <MText `newlink 19K2a'>
+    <MCurrPage `624'>
+    <Unique 1066850>
    > # end of Marker
    <String `Whitaker M, Guo J, Kehoe T, Benson G. Bisphos'>
    <Char SoftHyphen>
@@ -49825,33 +50162,40 @@
    <String `phonates for osteoporosis — where do we go '>
   > # end of ParaLine
   <ParaLine 
-   <String `from here? '>
+   <String `from here?'>
    <Font 
     <FTag `Blue'>
     <FLocked No>
    > # end of Font
+   <String ` '>
    <Marker 
     <MType 8>
     <MTypeName `Hypertext'>
     <MText `message URL http://www.ncbi.nlm.nih.gov/pubmed/22571168'>
     <MCurrPage `624'>
-    <Unique 1054585>
+    <Unique 1066852>
    > # end of Marker
-   <String `N Engl J Med. 2012;366:2048–51. '>
+   <String `N Engl J Med. 2012;366:2048–51'>
+   <Font 
+    <FTag `Blue'>
+    <FLocked No>
+    <FSeparation 0>
+    <FColor `Black'>
+   > # end of Font
+   <String `. '>
   > # end of ParaLine
  > # end of Para
  <Para 
-  <Unique 1049692>
+  <Unique 1066854>
   <PgfTag `RefTextNrForts'>
-  <PgfNumString `19.\t'>
-  <PgfReferenced Yes>
+  <PgfNumString `20.\t'>
   <ParaLine 
    <Marker 
     <MType 8>
     <MTypeName `Hypertext'>
-    <MText `newlink 19K2a'>
+    <MText `newlink 20K2a'>
     <MCurrPage `624'>
-    <Unique 1062961>
+    <Unique 1066853>
    > # end of Marker
    <String `Black DM, Bauer DC, Schwartz AV, Cummings SR, '>
   > # end of ParaLine
@@ -49872,7 +50216,7 @@
     <MTypeName `Hypertext'>
     <MText `message URL http://www.ncbi.nlm.nih.gov/pubmed/22571169'>
     <MCurrPage `624'>
-    <Unique 1054618>
+    <Unique 1066855>
    > # end of Marker
    <String `N Engl J Med. 2012;366:2051–3.'>
    <Font 
@@ -49882,7 +50226,7 @@
   > # end of ParaLine
  > # end of Para
  <Para 
-  <Unique 1062865>
+  <Unique 1066856>
   <PgfTag `FaktaText'>
   <Pgf 
    <PgfBotSeparator `Tunn_Tjock'>
@@ -52404,7 +52748,7 @@
  <Notes 
  > # end of Notes
  <Para 
-  <Unique 1066701>
+  <Unique 1066924>
   <PgfTag `Bröd'>
   <Pgf 
    <PgfFIndent  43.38272 mm>
@@ -52446,6 +52790,7 @@
     <TSLeaderStr ` '>
    > # end of TabStop
   > # end of Pgf
+  <PgfReferenced Yes>
   <ParaLine 
    <TextRectID 151>
    <String `Ändrad'>
@@ -52462,6 +52807,59 @@
    <String `2014-07-16, s'>
    <Char HardSpace>
    <String `621.'>
+   <Char HardReturn>
+  > # end of ParaLine
+  <ParaLine 
+   <Font 
+    <FTag `'>
+    <FDW  -1.0%>
+    <FLocked No>
+   > # end of Font
+   <Char Tab>
+   <String `2015-03-04, s'>
+   <Char HardSpace>
+   <String `619, s'>
+   <Char HardSpace>
+   <String `620 och '>
+   <Char Tab>
+  > # end of ParaLine
+  <ParaLine 
+   <Char Tab>
+   <Char HardSpace>
+   <Char HardSpace>
+   <Char HardSpace>
+   <Char HardSpace>
+   <Char HardSpace>
+   <Char HardSpace>
+   <Char HardSpace>
+   <Char HardSpace>
+   <Char HardSpace>
+   <Char HardSpace>
+   <Char HardSpace>
+   <Char HardSpace>
+   <Char HardSpace>
+   <Char HardSpace>
+   <Char HardSpace>
+   <Char HardSpace>
+   <Char HardSpace>
+   <Char HardSpace>
+   <Char HardSpace>
+   <Font 
+    <FTag `'>
+    <FSize  8.5 pt>
+    <FDW  -1.0%>
+    <FLocked No>
+   > # end of Font
+   <Char HardSpace>
+   <Char HardSpace>
+   <Font 
+    <FTag `'>
+    <FDW  -1.0%>
+    <FLocked No>
+   > # end of Font
+   <String `s'>
+   <Char HardSpace>
+   <String `624'>
   > # end of ParaLine
  > # end of Para
 > # end of TextFlow
