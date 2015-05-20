@@ -3,7 +3,6 @@ var spawn = require('child_process').spawn;
 var async = require("async");
 var fs = require("fs");
 var request = require('request');
-var inspect = require('eyes').inspector({maxLength: false});
 var pd = require('pretty-data').pd;
 var cheerio = require("cheerio");
 
