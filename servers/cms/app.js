@@ -100,7 +100,8 @@ var session = require('express-session');
 var FileStore = require('session-file-store')(session);
 
 var fileStoreOptions = {
-	ttl: (3600 * 24 * 31)
+	ttl: (3600 * 24 * 31),
+	path: path.join(__dirname, "sessions")
 };
 
 app.use(session({
