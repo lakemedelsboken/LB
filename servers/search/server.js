@@ -61,43 +61,13 @@ initFileWatchers();
 
 //TODO: Switch to polling
 function initFileWatchers() {
+
+	var reloadSearchIndex = false;
 	
-	//var chaptersPath = path.normalize(__dirname + "/../site/chapters/");
-	//var staticPath = path.normalize(__dirname + "/static/");
 	var atcTreePath = path.normalize(__dirname + "/../../npl/atcTree.json");
-	var searchesPath = path.normalize(__dirname + "/../../search/");
+//	var searchesPath = path.normalize(__dirname + "/../../search/");
 	
-	//var chaptersWatcher = chokidar.watch(chaptersPath, {ignored: /^\./, persistent: true, ignoreInitial: true, interval: 20000, binaryInterval: 20000});
-	//var staticWatcher = chokidar.watch(chaptersPath, {ignored: /^\./, persistent: true, ignoreInitial: true, interval: 20000, binaryInterval: 20000});
 	var atcTreeWatcher = chokidar.watch(atcTreePath, {persistent: true, ignoreInitial: true, interval: 20000, binaryInterval: 20000});
-	/*
-	var searchWatcher = chokidar.watch(searchesPath, {ignored: /^\./, persistent: false, ignoreInitial: true, interval: 1000, binaryInterval: 2000});
-
-	searchWatcher.on('error', function(error) {console.error('Error happened on search file watch', error);})
-	searchWatcher.on('add', function(path) {
-		if (path.indexOf(".json.gz") > -1) {
-			//console.log('File', path, 'has been added');
-			finishedSearches[path] = true;
-		}
-	});
-
-	searchWatcher.on('unlink', function(path) {
-		if (path.indexOf(".json.gz") > -1) {
-			finishedSearches[path] = undefined;
-		}
-	});
-*/
-	//chaptersWatcher.on('error', function(error) {console.error('Error happened on chapters file watch', error);})
-	//console.log("Watching " + chaptersPath + " for changes...");
-
-	/*
-	chaptersWatcher.on('all', function(path, stats) {
-
-		console.log("Reinitializing search index.");
-		initSearchIndex();
-
-	});
-	*/
 
 	atcTreeWatcher.on('error', function(error) {console.error('Error happened on atc file watch', error);})
 	console.log("Watching " + atcTreePath + " for changes...");
@@ -107,11 +77,38 @@ function initFileWatchers() {
 
 		console.log("Reloading ATC tree.");
 		atcTree = JSON.parse(fs.readFileSync(__dirname + "/../../npl/atcTree.json", "utf8"));
+		reloadSearchIndex = true;
 
 		console.log("Reinitializing search index.");
 		initSearchIndex();
 
 	});
+
+
+	var siteDir = path.normalize(path.join(__dirname, "..", "cms", "output", "published"));
+
+	if (fs.existsSync(siteDir) && fs.statSync(siteDir).isDirectory()) {
+
+		console.log("Watching " + siteDir + " for changes...");
+		
+		var indexWatcher = chokidar.watch(siteDir, {ignored: /[\/\\]\./, ignoreInitial: true});
+		
+		indexWatcher.on("all", function(event, path) {
+			//Something has changed
+			if (path.indexOf(".index") > -1) {
+				console.log(path + " has changed, will reload search index");
+				reloadSearchIndex = true;
+			}
+		});
+	}
+
+	setInterval(function() {
+		if (reloadSearchIndex) {
+			reloadSearchIndex = false;
+			console.log("Reinitializing search index.");
+			initSearchIndex();
+		}
+	}, 20000);
 
 }
 
@@ -268,6 +265,21 @@ function initSearchIndex() {
 	searchIndices = [];
 
 	//Iterate and add all search indexes
+	var publishedDirPath = path.join(__dirname, "..", "cms", "output", "published");
+	var indexFiles = wrench.readdirSyncRecursive(publishedDirPath);
+	
+	indexFiles = indexFiles.filter(function(element) {
+		return (element.indexOf(".index") > -1);
+	});
+
+	for (var i = 0; i < indexFiles.length; i++) {
+		var index = JSON.parse(fs.readFileSync(path.join(publishedDirPath, indexFiles[i]), "utf8"));
+		searchIndex = searchIndex.concat(index);
+		searchIndices.push(indexFiles[i]);
+	}
+
+/*
+	//Pre CMS
 	var previewFolders = fs.readdirSync(__dirname + "/../site/chapters/");
 	for (var i=0; i < previewFolders.length; i++) {
 		if (previewFolders[i].indexOf("_index") > -1) {
@@ -276,7 +288,7 @@ function initSearchIndex() {
 			searchIndices.push(previewFolders[i]);
 		}
 	}
-
+*/
 	console.log("Book search index is populated with " + searchIndex.length + " items.");
 	console.log("Medicine search index is populated with " + atcTree.length + " items.");
 

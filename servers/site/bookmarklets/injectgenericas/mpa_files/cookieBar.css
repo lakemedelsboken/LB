@@ -1,42 +1,0 @@
-.ui-cookiewidget{
-display: none;top:0;left:0;right:0;height: 37px;
-}
-
-.cookie-message {
-position: relative;
-padding:0 0 0 0;
-width: 990px;
-margin: 0 auto;
-}
-
-.cookie-message > a {    position:absolute;    top:0; *top:-2px; right:0px;    cursor:pointer;
-    font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
-    font-size: 70%;
-}.cookie-message p, .cookie-message a {color:#fff;font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
-padding-top: 10px;
-}
-
-.blue {
-background: #0059A1;
-}
-
-.blue p, .blue a, .blue .cookie-message .closeBar { color:#fff; }.closeBar{
-float: right;
-cursor: pointer;
-width:65px;
-}.closeBar > span{
-float: right;
-width: 18px;
-height: 17px;
-color: #fff;
-font-family: verdana;
-font-weight: bold;
-text-align: center;
-line-height: 15px;
-border: 2px solid #fff;
-border-radius: 10px;
-margin-top: -2px;
-}.closeBar:hover > span{
-color: #0059A1 !important;
-background: #fff;
-}

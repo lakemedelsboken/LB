@@ -1,5 +1,7 @@
 var fs = require("fs");
 var Fuse = require("../lib/fuse.js");
+var wrench = require("wrench");
+var path = require("path");
 
 var isInitializingSearchIndex = false;
 var searchIndices = null;
@@ -22,6 +24,27 @@ function initSearchIndex() {
 	};
 
 	//Iterate and add all search indices
+	var publishedDirPath = path.join(__dirname, "..", "..", "cms", "output", "published");
+	var indexFiles = wrench.readdirSyncRecursive(publishedDirPath);
+	
+	indexFiles = indexFiles.filter(function(element) {
+		return (element.indexOf(".index") > -1);
+	});
+
+	for (var i = 0; i < indexFiles.length; i++) {
+		var index = JSON.parse(fs.readFileSync(path.join(publishedDirPath, indexFiles[i]), "utf8"));
+		var id = indexFiles[i];
+
+		//Remove root objects and "Terapirekommendationer / Faktarutor etc."
+		index = index.filter(function(element) {
+			return (element.title !== "root" && element.title !== "Terapirekommendationer / Faktarutor etc.");
+		});
+		
+		searchIndices[id] = new Fuse(index, options);
+	}
+
+	/*
+	//Iterate and add all search indices
 	var previewFolders = fs.readdirSync(__dirname + "/../../site/chapters/");
 	for (var i=0; i < previewFolders.length; i++) {
 		if (previewFolders[i].indexOf("_index") > -1) {
@@ -36,7 +59,7 @@ function initSearchIndex() {
 			searchIndices[id] = new Fuse(index, options);
 		}
 	}
-
+	*/
 	isInitializingSearchIndex = false;
 }
 

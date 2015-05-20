@@ -1,1 +1,0 @@
-document.write("<scr" + "ipt>var _baLocale = 'se', _baMode = ' ';</scr" + "ipt>" + "<scr" +"ipt src=\"//www.browsealoud.com/plus/scripts/ba.js\"></scr" + "ipt>");

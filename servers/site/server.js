@@ -43,6 +43,10 @@ var searchPort = settings.internalServerPorts.search;
 
 var app = require('./app').init(networkPort);
 
+var redirect = require("express-redirect");
+
+redirect(app);
+
 var finishedSearches = {};
 var searchIndex = null;
 var searchIndices = [];
@@ -52,24 +56,123 @@ var siteMap = null;
 
 initFileWatchers();
 
-//TODO: Switch to polling
+var currentRedirects = [];
+
+//Set a stamp in the router stack where future redirects should be inserted after
+app.redirect("/thisisastamp", "/");
+var indexAfterStamp = app._router.stack.length;
+
+initRedirects();
+
+function initRedirects() {
+	console.log("Initializing redirects...");
+
+	var possibleRedirectsListPath = path.normalize(path.join(__dirname, "..", "cms", "output", "published", "redirects.json"));
+
+	if (fs.existsSync(possibleRedirectsListPath)) {
+		
+		var redirects = null;
+		try {
+			redirects = JSON.parse(fs.readFileSync(possibleRedirectsListPath, "utf8"));
+		} catch (err) {
+			redirects = null;
+			console.error(err);
+		}
+		
+		if (redirects !== null) {
+
+			console.log("Found " + redirects.length + " redirects...")
+
+			//Unregister current redirects
+			if (currentRedirects.length > 0) {
+				var routes = app._router.stack;
+				for (var i = routes.length - 1; i >= 0; i--) {
+					if (routes[i].route !== undefined && routes[i].route.path !== undefined) {
+						var routePath = routes[i].route.path;
+
+						var toBeRemoved = false;
+						for (var j = currentRedirects.length - 1; j >= 0; j--) {
+							if (currentRedirects[j].path === routePath) {
+								toBeRemoved = true;
+								break;
+							}
+						}
+					
+						if (toBeRemoved) {
+							console.log("Unregistering old redirect: " + routePath);
+							routes.splice(i, 1);
+						}
+					}
+				}
+			
+				currentRedirects = [];
+			}
+			
+			//Register new redirects
+			for (var i = 0; i < redirects.length; i++) {
+				var route = redirects[i];
+
+				if (route.path !== undefined && route.target !== undefined) {
+
+					console.log("Registering redirect: " + route.path + " to: " + route.target);
+					if (route.type !== undefined) {
+						//route.type = 301 for permanent etc... http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#3xx_Redirection
+						app.redirect(route.path, route.target, route.type);
+					} else {
+						//route.type = defaults to 307, temporary redirect
+						app.redirect(route.path, route.target);
+					}
+
+					//Save new current redirects 
+					currentRedirects.push({path: route.path, target: route.target});
+				}
+
+			}
+			
+			//Now move all the new redirects to the top of the stack
+			if (currentRedirects.length > 0) {
+				var routes = app._router.stack;
+				var stackToBeMoved = [];
+				for (var i = routes.length - 1; i >= 0; i--) {
+					if (routes[i].route !== undefined && routes[i].route.path !== undefined) {
+						var routePath = routes[i].route.path;
+
+						var toBeMoved = false;
+						for (var j = currentRedirects.length - 1; j >= 0; j--) {
+							if (currentRedirects[j].path === routePath) {
+								toBeMoved = true;
+								break;
+							}
+						}
+					
+						if (toBeMoved) {
+							stackToBeMoved.unshift(routes.splice(i, 1)[0]);
+						}
+					}
+				}
+				
+				if (stackToBeMoved.length > 0) {
+
+					//Insert in router stack after stamp ala http://stackoverflow.com/questions/7032550/javascript-insert-an-array-inside-another-array
+
+					routes.splice.apply(routes, [indexAfterStamp, 0].concat(stackToBeMoved));
+					
+					console.log("Moved " + stackToBeMoved.length + " after index " + indexAfterStamp + " in stack.");
+				}
+				
+			}
+			
+		}
+		
+	}
+
+}
+
 function initFileWatchers() {
 	
-	//var chaptersPath = path.normalize(__dirname + "/chapters/");
 	var atcTreePath = path.normalize(__dirname + "/../../npl/atcTree.json");
 	
-	//var chaptersWatcher = chokidar.watch(chaptersPath, {ignored: /^\./, persistent: true, ignoreInitial: true, interval: 20000, binaryInterval: 20000});
 	var atcTreeWatcher = chokidar.watch(atcTreePath, {persistent: true, ignoreInitial: true, interval: 20000, binaryInterval: 20000});
-
-	//chaptersWatcher.on('error', function(error) {console.error('Error happened on chapters file watch', error);})
-	//console.log("Watching " + chaptersPath + " for changes...");
-
-	//chaptersWatcher.on('all', function(path, stats) {
-
-	//	console.log("Clearing cached file reads.");
-	//	clearCachedFileReads();
-
-	//});
 
 	atcTreeWatcher.on('error', function(error) {console.error('Error happened on atc file watch', error);})
 	console.log("Watching " + atcTreePath + " for changes...");
@@ -80,6 +183,20 @@ function initFileWatchers() {
 		console.log("Reloading ATC tree.");
 		atcTree = JSON.parse(fs.readFileSync(__dirname + "/../../npl/atcTree.json", "utf8"));
 
+	});
+
+
+	var redirectsPath = path.normalize(path.join(__dirname, "..", "cms", "output", "published", "redirects.json"));
+	
+	var redirectsWatcher = chokidar.watch(redirectsPath, {persistent: true, ignoreInitial: true, interval: 5000, binaryInterval: 5000});
+
+	redirectsWatcher.on('error', function(error) {console.error('Error happened on redirects file watch', error);})
+	console.log("Watching " + redirectsPath + " for changes...");
+	redirectsWatcher.on('all', function(path, stats) {
+
+		console.log("Reloading redirects.");
+		initRedirects();
+		
 	});
 
 }
