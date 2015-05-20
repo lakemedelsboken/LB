@@ -1,0 +1,542 @@
+<% include header %>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<%
+			if (id !== "/") {
+				var backPath = id.split("/");
+				backPath.pop();
+				backPath = backPath.join("/");
+				backPath = "/cms" + backPath;
+				if (backPath === "") {
+					backPath = "/"
+				}
+			%>
+			<a href="<%=backPath%>" class="btn navbar-btn btn-primary"><i class="fa fa-chevron-left"></i> Tillbaka</a>
+			<%					
+			}
+			%>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Meny</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+		</div>
+		<div class="navbar-collapse collapse navbar-right">
+			<% if (canBePublished) { %>
+			<a class="btn navbar-btn btn-success" href="/cms/content/publishpage?pagepath=<%=id%>"><i class="fa fa-check"></i> Märk för publicering</a>
+			<% } %>
+			<% if (canBeUnpublished) { %>
+			<a class="btn navbar-btn btn-danger" href="/cms/content/unpublishpage?pagepath=<%=id%>"><i class="fa fa-chain-broken"></i> Avpublicera</a>
+			<% } %>
+			<button class="btn navbar-btn btn-info" data-toggle="modal" data-target="#publishedVersionsModal"><i class="fa fa-history"></i> Publiceringshistorik...</button>
+			<button class="btn navbar-btn btn-warning" data-toggle="modal" data-target="#versionsModal"><i class="fa fa-history"></i> All historik...</button>
+			<a href="/cms/draft<%=id.replace(".json", ".html")%>" target="_blank" class="btn navbar-btn btn-primary" id="show-draft"><i class="fa fa-tablet"></i> Visa utkast</a>
+			<% if (canBeUnpublished) { %>
+			<a href="<%=id.replace(".json", ".html")%>" target="_blank" class="btn navbar-btn btn-success" id="show-published"><i class="fa fa-desktop"></i> Visa publicerad</a>
+			<% } %>
+			<button class="btn navbar-btn btn-danger" data-toggle="modal" data-target="#removePageModal"><i class="fa fa-trash"></i> Ta bort sida...</button>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12 col-md-12 main">
+			<h1 class="page-header">Redigera sida: <small><%=id.replace(".json", "")%></small></h1>
+
+			<form class="form-horizontal" role="form" id="pageForm" action="/cms/content/savepage" method="post">
+
+				<input type="hidden" name="pageId" value="<%=id%>" />
+
+				<h2 class="sub-header">Metadata</h2>
+
+				<div id="metdata">
+
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="submit" class="btn btn-primary pull-right">Spara</button>
+						</div>
+					</div>
+					<div class="form-group">
+
+						<input type="hidden" name="indexed" value="false">
+
+						<div class="checkbox col-sm-offset-2">
+							<label class="control-label">
+								<%
+								if (page.indexed !== "false") {
+								%>
+								<input type="checkbox" name="indexed" checked value="true">
+								<%
+								} else {
+								%>
+								<input type="checkbox" name="indexed" value="true">
+								<%
+								}
+								%>
+								Gör sidan tillgänglig i sökresultat
+							</label>
+						</div>
+
+					</div>
+					<div class="form-group">
+						<label for="title" class="col-sm-2 control-label">Titel</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="title" name="title" placeholder="Titel" value="<%=page.title%>">
+							<small>
+								Ska i korthet beskriva innehållet så att det framgår 
+								vad dokumentet handlar om, och så att man enkelt 
+								i publika sökmotorer ser vad för slags information 
+								man har sökt fram. Överväg även att beskriva vilken 
+								den tänkta målgruppen för dokumentet är
+								beskrivning några få meningar om vad informationen handlar om, 
+								konkret
+							</small>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="description" class="col-sm-2 control-label">Beskrivning</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="description" name="description" placeholder="Beskrivning" value="<%=page.description%>">
+							<small>
+								Kort beskrivning av innehållet
+							</small>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="pageType" class="col-sm-2 control-label">Taggar</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="pageType" name="pageType" placeholder="Taggar" value="<%=page.pageType%>">
+							<small>
+								Taggar, separera med kommatecken. Till exempel: "nyhet, ". Används för att gruppera sidor.
+							</small>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="keywords" class="col-sm-2 control-label">Nyckelord</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="keywords" name="keywords" placeholder="Nyckelord" value="<%=page.keywords%>">
+							<small>
+								Några fritt beskrivande ord som sidan ska bli sökbar 
+								med. Kontrollerad vokabulär inte nödvändig. 
+								Tex gärna synonymer, och ord som inte redan finns 
+								i rubriker
+							</small>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="subject" class="col-sm-2 control-label">Ämne</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="subject" name="subject" placeholder="Ämne" value="<%=page.subject%>">
+							<small>
+								Ämnen, diagnoser, tillstånd, behandlingar etc som 
+								informationen handlar om enligt en kontrollerad 
+								vokabulär, exempelvis MeSH eller ICD-10
+							</small>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="informationType" class="col-sm-2 control-label">Informationstyp</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="informationType" name="informationType" placeholder="Informationstyp" value="<%=page.informationType%>">
+							<small>
+								Klassificering av vilken sorts information det är, t ex 
+								utifrån syfte med informationen. Exempel: riktlinje, 
+								HTA-rapport eller behandlingsrekommendation. 
+								Utvecklingsområde som behöver diskuteras.
+								Några relevanta benämningar, enligt ISO 13119:2012, 
+								på textresurser (kunskapsdokument) i DC-attributet 
+								type (informationstyp) kan vara:
+								<ul>
+									<li>
+										Clinical guideline
+									</li>
+									<li>
+										Policy strategy
+									</li>
+									<li>
+										Known uncertainty
+									</li>
+									<li>
+										Systematic review
+									</li>
+								</ul>
+							</small>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="created" class="col-sm-2 control-label">Skapad</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control datetime" id="created" name="created" placeholder="Skapad" value="<%=page.created%>">
+							<small>
+								Datum då informationen skapades (yyyy-mm-dd HH:MM)
+							</small>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="published" class="col-sm-2 control-label">Publicerad</label>
+						<div class="col-sm-10">
+							<input type="text" disabled class="form-control" id="published" name="published" placeholder="(Datum sätts när sidan publiceras)" value="<%=page.published%>">
+							<small>
+								Datum då informationen publicerades (yyyy-mm-dd HH:MM)
+							</small>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="validUntil" class="col-sm-2 control-label">Giltighetstid</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control datetime" id="validUntil" name="validUntil" placeholder="Giltighetstid" value="<%=page.validUntil%>">
+							<small>
+								”Bäst-före”-datum, tidsspann som informationen bedöms vara giltig (yyyy-mm-dd HH:MM)
+							</small>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="createdBy" class="col-sm-2 control-label">Upphovsperson/-organisation</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="createdBy" name="createdBy" placeholder="Upphovsperson/-organisation" value="<%=page.createdBy%>">
+							<small>
+								Person eller organisation som har skrivit innehållet
+							</small>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="replacesUrl" class="col-sm-2 control-label">Ersätter</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="replacesUrl" name="replacesUrl" placeholder="Ersätter" value="<%=page.replacesUrl%>">
+							<small>
+								Om det finns en tidigare version anges här vilket dokument som ersätts (tidigare url)
+							</small>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="submit" class="btn btn-primary pull-right">Spara</button>
+						</div>
+					</div>
+				</div>
+
+				<div id="headerAndFooter">
+					<h2 class="sub-header">Html för sidhuvud och sidfot</h2>
+					<div class="form-group">
+						<label for="headerContent" class="col-sm-2 control-label">Sidhuvud</label>
+						<div class="col-sm-10">
+							<textarea rows="3" class="form-control" id="headerContent" name="headerContent"><%-(page.headerContent || "")%></textarea>
+							<small>
+								Placeras precis innan &lt;/header&gt;
+							</small>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="footerContent" class="col-sm-2 control-label">Sidfot</label>
+						<div class="col-sm-10">
+							<textarea rows="3" class="form-control" id="footerContent" name="footerContent"><%-(page.footerContent || "")%></textarea>
+							<small>
+								Placeras precis innan &lt;/body&gt;
+							</small>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="submit" class="btn btn-primary pull-right">Spara</button>
+						</div>
+					</div>
+				</div>
+				<%
+				//Add interface for components
+				if (componentEditors.length > 0) {
+					%>
+				<h2 class="sub-header">Komponenter</h2>
+					<%
+
+					for (var i = 0; i < componentEditors.length; i++) {
+					%>
+					<div class="col-sm-12 col-md-12 editComponent">
+						<%-componentEditors[i]%>
+					</div>
+					<%
+					}
+					%>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="submit" class="btn btn-primary pull-right">Spara</button>
+						</div>
+					</div>
+					<%
+				}
+				
+				%>
+
+				<h2 class="sub-header">Innehåll</h2>
+
+				<%
+					for (var i = 0; i < contentEditors.length; i++) {
+				%>
+				<div class="col-sm-12 col-md-12 editContent">
+					<div class="col-sm-7 col-md-7 editor">
+						<div class="panel panel-default">
+							<div id="<%=page.content[i].name%>" class="panel-heading"><a href="/cms/content/movecontentitemdown?pagepath=<%=id%>&contentname=<%=page.content[i].name%>" class="pull-right"><i class="fa fa-arrow-down"></i> Flytta ned</a><a href="/cms/content/movecontentitemup?pagepath=<%=id%>&contentname=<%=page.content[i].name%>" class="pull-right"><i class="fa fa-arrow-up"></i> Flytta upp&nbsp;&nbsp;</a><%=contentTypes[page.content[i].type].name%></div>
+							<div class="panel-body">
+								<%-contentEditors[i]%>
+							</div>
+							<div class="panel-footer">
+								<div class="btn-group pull-right">
+									<button type="button" class="btn btn-danger removeContent" data-toggle="modal" data-target="#removeContentModal" data-content-name="<%=page.content[i].name%>"><i class="fa fa-trash"></i> Ta bort...</button>
+									<button type="submit" class="btn btn-primary" data-submit-id="<%=page.content[i].name%>">Spara</button>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5 col-md-5 hidden-xs resultContent">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								Förhandsvisning
+							</div>
+							<div class="panel-body content-preview">
+								<%-contentPreviews[i]%>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-12 text-center">
+					<button type="button" class="btn btn-success btn-lg btn-block add-content" data-toggle="modal" data-target="#addContentModal" data-after="<%=page.content[i].name%>"><i class="fa fa-plus"></i> Lägg till innehåll...</button>
+					<br><br>
+				</div>
+				<%
+				}
+				
+				if (contentEditors.length === 0) {
+				%>
+				<div class="col-sm-12 col-md-12 text-center">
+					<button type="button" class="btn btn-success btn-lg btn-block add-content" data-toggle="modal" data-target="#addContentModal"><i class="fa fa-plus"></i> Lägg till innehåll...</button>
+				</div>
+				<%
+				}
+				%>
+			</form>
+
+		</div>
+	</div>
+</div>
+
+<div class="modal"  tabindex="-1" role="dialog" aria-labelledby="Ta bort sida" id="removePageModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Ta bort sida: <%=id%></h4>
+			</div>
+			<form action="/cms/content/removepage" method="get" class="form-horizontal" role="form">
+				<input type="hidden" name="pagepath" value="<%=id%>">
+				<div class="modal-body">
+					Är du säker på att du vill ta bort den här sidan?
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ta bort</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal"  tabindex="-1" role="dialog" aria-labelledby="Ta bort innehåll" id="removeContentModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Ta bort innehåll</h4>
+			</div>
+			<form action="/cms/content/removecontentitemfrompage" method="get" class="form-horizontal" role="form">
+				<input type="hidden" name="pagepath" value="<%=id%>">
+				<input type="hidden" id="removeContentName" name="contentname" value="">
+				<div class="modal-body">
+					Är du säker på att du vill ta bort innehållet?
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ta bort</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal"  tabindex="-1" role="dialog" aria-labelledby="Lägg till innehåll" id="addContentModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Lägg till innehåll</h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/content/addcontentitemtopage" method="get" class="form-horizontal" role="form">
+					<input type="hidden" name="page" value="<%=id%>">
+					<input type="hidden" name="insertafter" id="insertafter" value="">
+					<div class="form-group">
+						<label for="contenttype" class="col-sm-3 control-label">Typ av innehåll</label>
+						<div class="col-sm-9">
+							<select id="contenttype" name="contenttype" class="form-control">
+								<%
+								for	(var contentTypeName in contentTypes) {
+								%>
+								<option value="<%=contentTypeName%>"><%=contentTypes[contentTypeName].name%> (<%=contentTypes[contentTypeName].description%>)</option>
+								<%
+								}
+								%>
+							</select>
+							<br>
+							<button type="submit" class="btn btn-primary pull-right">Skapa</button>
+						</div>
+					</div>
+					<div class="form-group">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal"  tabindex="-1" role="dialog" aria-labelledby="Välj bild" id="pickImageModal" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<a class="btn btn-primary pull-right" href="/cms/images/"><i class="fa fa-upload"></i> Ladda upp bilder...</a>
+				<h4>Välj bild</h4>
+			</div>
+			<div class="modal-body">
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal"  tabindex="-1" role="dialog" aria-labelledby="Versioner" id="publishedVersionsModal" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Publicerade versioner</h4>
+			</div>
+			<div class="modal-body">
+			<%
+			if (publishedVersions.length === 0) {
+				%>
+				<p>Det finns inga publicerade versioner av den här sidan.</p>
+				<%
+			} else {
+				%>
+				<ul class="list-group">
+				<%
+				for	(var i = 0; i < publishedVersions.length; i++) {
+					var version = publishedVersions[i];
+				%>
+					<li class="list-group-item">
+						<div class="btn-group btn-group-sm pull-right" role="group">
+							<a class="btn btn-sm btn-default" href="/cms<%=version.id%>">Visa som json</a>
+							<button class="btn btn-sm btn-primary show-diff" data-snapshot-id="<%=version.id%>" data-page-id="<%=id%>">Jämför json <i class="fa fa-chevron-down"></i></button>
+<!--							<button class="btn btn-sm btn-danger">Gör till nuvarande version</button> -->
+						</div>
+						<strong>Skapad: </strong><%=version.niceTime%>
+						<div class="clearfix"></div>
+						<div class="diff-view"></div>
+					</li>
+				<%
+				}
+				%>
+				</ul>
+				<%
+			}
+			%>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal"  tabindex="-1" role="dialog" aria-labelledby="Utkast" id="draftModal" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+					<h4>Utkast</h4>
+					<div class="btn-group" role="group" aria-label="...">
+						<button type="button" class="btn btn-warning viewsize mobile"><i class="fa fa-mobile"></i></button>
+						<button type="button" class="btn btn-warning viewsize tablet active"><i class="fa fa-tablet"></i></button>
+						<button type="button" class="btn btn-warning viewsize desktop"><i class="fa fa-desktop"></i></button>
+					</div>
+			</div>
+			<div class="modal-body" style="padding: 0; margin: 0; background: black;">
+		      <iframe id="draftFrame" src="" style="zoom:1.0" width="768px" height="600" frameborder="0"></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" aria-labelledby="Utkast" id="publishedModal" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Publicerad version</h4>
+				<div class="btn-group" role="group">
+					<button type="button" class="btn btn-warning viewsize mobile"><i class="fa fa-mobile"></i></button>
+					<button type="button" class="btn btn-warning viewsize tablet active"><i class="fa fa-tablet"></i></button>
+					<button type="button" class="btn btn-warning viewsize desktop"><i class="fa fa-desktop"></i></button>
+				</div>
+			</div>
+			<div class="modal-body" style="padding: 0; margin: 0; background: black;">
+		      <iframe id="publishedFrame" src="" style="zoom:1.0; " width="768px" height="600" frameborder="0"></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal"  tabindex="-1" role="dialog" aria-labelledby="Versioner" id="versionsModal" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Tidigare versioner</h4>
+			</div>
+			<div class="modal-body">
+			<%
+			if (snapshots.length === 0) {
+				%>
+				<p>Det finns inga tidigare versioner av den här sidan.</p>
+				<%
+			} else {
+				%>
+				<ul class="list-group">
+				<%
+				for	(var i = 0; i < snapshots.length; i++) {
+					var snapshot = snapshots[i];
+				%>
+					<li class="list-group-item">
+						<div class="btn-group btn-group-sm pull-right" role="group">
+							<a class="btn btn-sm btn-default" href="/cms<%=snapshot.id%>">Visa som json</a>
+							<button class="btn btn-sm btn-primary show-diff" data-snapshot-id="<%=snapshot.id%>" data-page-id="<%=id%>">Jämför json <i class="fa fa-chevron-down"></i></button>
+<!--							<button class="btn btn-sm btn-danger">Gör till nuvarande version</button>-->
+						</div>
+						<strong>Skapad: </strong><%=snapshot.niceTime%>
+						<div class="clearfix"></div>
+						<div class="diff-view"></div>
+					</li>
+				<%
+				}
+				%>
+				</ul>
+				<%
+			}
+			%>
+			</div>
+		</div>
+	</div>
+</div>
+
+<% include footer %>

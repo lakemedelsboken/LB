@@ -1,0 +1,216 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-04-16 01:42",
+	"published": "2015-04-16 01:42",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "/m3_and_tuberkulos_2013fm10.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"description": "Vänsterkolumn",
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "3fb3d68a-c36f-4650-8f16-e7d9e63b2fd6",
+			"name": "3fb3d68a-c36f-4650-8f16-e7d9e63b2fd6",
+			"type": "author",
+			"content": {
+				"firstname": "Ingela",
+				"surname": "Berggren",
+				"description": "Smittskyddsenheten,",
+				"email": ""
+			},
+			"settings": {}
+		},
+		{
+			"id": "ddd7946b-2e40-45a5-ba84-4eb2fd655085",
+			"name": "ddd7946b-2e40-45a5-ba84-4eb2fd655085",
+			"type": "text",
+			"content": "<h1 id=\"m3_1\"><a class=\"index\" id=\"1021194\" data-text=\"tuberkulos:&lt;$nopage&gt;se tbc[tuberkulos]\"></a><a class=\"crossref\" id=\"27461\"></a>Tuberkulos</h1><h2 id=\"m3_2\">Inledning</h2><p class=\"ingress\">Tuberkulos (tbc) är fortfarande en av de vanligaste infektionssjukdomarna i världen (Figur 1 <a href=\"#52879\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>). I&nbsp;Sverige minskade antalet tbc-fall under flera decennier för att sedan i mitten av 90-talet stabiliseras med runt 500 nyinsjuknade/år med en tendens till ökning sedan 2005. Merparten av de insjuknade idag har migrerat till Sverige från länder med hög förekomst av tbc (&gt;&nbsp;100&nbsp;fall/100&nbsp;000 invånare) och incidensen i denna grupp är jämförbar med incidensen i ursprungslandet (<a href=\"http://www.who.int/tb/en\" target=\"_blank\" class=\"linkOut\">www.who.int/ tb/en</a>). Fortfarande är emellertid incidensen generellt i Sverige mycket låg, ca 6 fall/100&nbsp;000 invånare. Flertalet insjuknade är mellan 25 och 44 år med risk för smittspridning till familj, vänner och arbetskamrater vid fördröjd diagnos. Det är viktigt att komma ihåg att det fortsatt sker en inhemsk smittspridning av tbc vilket molekylär typning av tbc-stammar kunnat påvisa.</p>",
+			"settings": {}
+		},
+		{
+			"id": "6a2a98bc-510e-44c2-9b8d-9a506289f94a",
+			"name": "6a2a98bc-510e-44c2-9b8d-9a506289f94a",
+			"type": "figure",
+			"content": {
+				"number": 1,
+				"maxwidth": "",
+				"image": "/images/m3_and_tuberkulos_2013fm10_images/figur1.png",
+				"title": "",
+				"text": "<a class=\"crossref\" id=\"52879\"></a>Utbredning av tuberkulos 2010. Beräknat antal nya fall per 100&nbsp;000 invånare är &gt; 300 för de mörkaste områdena, 100–300 för de ljusare områdena och &lt;&nbsp;100 för de allra ljusaste områdena. ",
+				"alt": "",
+				"id": "m3_3"
+			},
+			"settings": {}
+		},
+		{
+			"id": "a991a56d-70af-4987-a055-b11b8c2aa54f",
+			"name": "a991a56d-70af-4987-a055-b11b8c2aa54f",
+			"type": "text",
+			"content": "<span> </span><p class=\"ingress indent\">Samtidig hiv-infektion ökar risken att insjukna i tbc. Hiv angriper det cellbundna immunförsvaret som är nödvändigt för att bekämpa mykobakterier. Även immunmodulerande läkemedel som glukokortikoider i hög dos och TNF-alfahämmare som används vid reumatoid artrit, inflammatoriska tarmsjukdomar m&nbsp;fl ökar påtagligt risken att insjukna i tbc (1). </p><h2 id=\"m3_4\"><a class=\"crossref\" id=\"60509\"></a>Klinik</h2>",
+			"settings": {}
+		},
+		{
+			"id": "372677c6-4dca-455c-8af6-ae907085e522",
+			"name": "372677c6-4dca-455c-8af6-ae907085e522",
+			"type": "facts",
+			"content": {
+				"number": 1,
+				"title": "<a class=\"crossref\" id=\"25554\"></a>Riskgrupper för insjuknande i tbc",
+				"text": "<table><tbody><tr><td><ul><li><span class=\"tab\"></span>Tidigare otillräckligt behandlad tbc</li></ul><ul><li><span class=\"tab\"></span>Hiv/aids och andra kroniska sjukdomar som malignitet, njursvikt, diabetes mellitus</li></ul><ul><li><span class=\"tab\"></span>Immunmodulerande behandling t&nbsp;ex TNF-alfahämmare, glukokortikoider (&gt;&nbsp;15 mg prednisolon/dag)</li></ul><ul><li>Spädbarn</li></ul><ul><li>Tonåringar</li></ul><ul><li>Åldringar</li></ul><ul><li>Missbrukare</li></ul><ul><li>Hemlösa</li></ul><ul><li>Personer med ursprung från eller annan lång&shy;varig kontakt med högendemiskt land (Afrika <br>söder om Sahara, de flesta länder i Asien) eller miljö (flyktingläger, fängelse)</li></ul></td></tr></tbody></table>",
+				"id": "m3_6"
+			},
+			"settings": {}
+		},
+		{
+			"id": "adc05261-650b-4b9b-8c29-c9ec1f6238cc",
+			"name": "adc05261-650b-4b9b-8c29-c9ec1f6238cc",
+			"type": "facts",
+			"content": {
+				"number": 2,
+				"title": "<a class=\"crossref\" id=\"86749\"></a>Tänk på tbc vid",
+				"text": "<table><tbody><tr><td><ul><li>riskutsatt person</li></ul><ul><li><span class=\"tab\"></span>långvarig hosta (&gt;&nbsp;3&nbsp;veckor)</li></ul><ul><li><span class=\"tab\"></span>oklar feber</li></ul><ul><li><span class=\"tab\"></span>avmagring</li></ul><ul><li><span class=\"tab\"></span>körtlar på halsen</li></ul><ul><li><span class=\"tab\"></span>blodhosta.</li></ul></td></tr></tbody></table>",
+				"id": "m3_8"
+			},
+			"settings": {}
+		},
+		{
+			"id": "0001c252-e251-4a3f-9e11-899a3a61a461",
+			"name": "0001c252-e251-4a3f-9e11-899a3a61a461",
+			"type": "text",
+			"content": "<p>Tbc sprids som luftburen droppsmitta. Det upphostade sekretet med bakterier sprids via luftburna droppar, med högre risk för smitta ju längre och tätare kontakten med den smittsamme personen varit. Hos majoriteten av de personer som smittats med tbc går infektionen över i ett vilande skede, <a class=\"index\" id=\"1026844\" data-text=\"tbc:latent\"></a>latent tbc. En person med latent tbc är att betrakta som frisk, har inga symtom och kan inte smitta andra. Risken för sjukdomsutveckling för en person med latent tbc beräknas vara 5–10&#37; under en levnadstid, men är betydligt högre i vissa utsatta grupper (Faktaruta 1). Risken är störst de första åren efter smittotillfället, men kan kvarstå hela livet.</p><span> </span><p><a class=\"index\" id=\"1021231\" data-text=\"lung-tbc;tbc:lung-\"></a>Lung-tbc är den dominerande sjukdomsmanifestationen (60–70&#37;). Vanliga symtom är långdragen hosta, feber, nattliga svettningar och avmagring (Faktaruta 2). Symtomen är ofta vaga och misstolkas lätt av såväl patient som sjukvården. Barn har ofta inte hosta utan misstanke väcks vid oklar feber och epidemiologiskt samband. Tbc i andra organ kan vålla differentialdiagnostiska problem. Den vanligaste <a class=\"index\" id=\"1021233\" data-text=\"extrapulmonell tbc;tbc:extrapulmonell\"></a>extrapulmonella lokaliseringen är lymfkörtlar på halsen men så gott som alla organ, inklusive CNS och leder–skelett, kan drabbas.</p><span> </span><h2 id=\"m3_9\"><a class=\"crossref\" id=\"96987\"></a>Diagnostik</h2><p><a class=\"index\" id=\"1026845\" data-text=\"tbc:lungr&#xF6;ntgen\"></a>Lungröntgen bör utföras på personer med hosta &gt;&nbsp;6&nbsp;veckor, tidigare vid epidemiologiskt samband eller annan riskfaktor. När det gäller barn görs en lungröntgen så snart misstanke om tbc väckts. Röntgenologiska förändringar på primär lung-tbc kan ibland ses innan barnet fått kliniska symtom. Tre upphostningsprov för direktmikroskopi, PCR och odling, tas vid misstanke om engagemang i luftvägarna. Om patienten inte kan lämna upphostningsprov eller om upphostningsprovet är negativt, görs bronkoskopi och/eller ventrikelaspiration. </p><p class=\"indent\">Vid misstanke om extrapulmonell tbc tas en biopsi från det aktuella området och vävnadsprovet skickas både för odling och patologi/cytologi. Vid misstänkt CNS-engagemang tas prov från likvor, vid buk-tbc från feces och vid misstänkt <a class=\"index\" id=\"1021237\" data-text=\"urogenital tbc;tbc:urogenital \"></a>urogenital eller m<a class=\"index\" id=\"1021238\" data-text=\"miliar-tbc\"></a>iliar-tbc tas prov för odling på urin. Bakteriologisk verifikation (odling och resistensbestämning) måste alltid eftersträvas. Odling tar 3–4 veckor vid positivt fynd och ytterligare 1–3 veckor för full resistensbestämning. Snabbmetoder finns (2).</p><h2 id=\"m3_10\">Vårdrutiner</h2>",
+			"settings": {}
+		},
+		{
+			"id": "2d42a7d6-74f4-435a-8b79-9ddb4a315755",
+			"name": "2d42a7d6-74f4-435a-8b79-9ddb4a315755",
+			"type": "facts",
+			"content": {
+				"number": 3,
+				"title": "<a class=\"crossref\" id=\"41016\"></a>Behandlande läkares skyldighet  enligt <a class=\"index\" id=\"1038979\" data-text=\"smittskyddslagen\"></a>smittskyddslagen",
+				"text": "<table><tbody><tr><td><ul><li><span class=\"tab\"></span>Anmäla nyupptäckt tbc till smittskydds-<br>läkaren och Smittskyddsinstitutet utan dröjs&shy;mål. </li></ul><ul><li><span class=\"tab\"></span>Informera den tbc-sjuke om sjukdomen, försäkra sig om att denne sköter sin medicinering och informera om hur patienten ska förhålla sig för att undvika vidare smittspridning.</li></ul><ul><li><span class=\"tab\"></span>Genomföra smittspårning (miljöundersökning) för att hitta eventuell smittkälla och/eller andra personer som kan vara smittade.</li></ul></td></tr></tbody></table>",
+				"id": "m3_12"
+			},
+			"settings": {}
+		},
+		{
+			"id": "30d5091f-d159-4fdb-90c9-3ba49c6ddbd3",
+			"name": "30d5091f-d159-4fdb-90c9-3ba49c6ddbd3",
+			"type": "text",
+			"content": "<p>Tbc handläggs på infektionsklinik eller lungmedicinsk klinik i samråd med respektive organspecialist (Faktaruta 3 <a href=\"#41016\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>). Barn behandlas oftast på barnklinik. Patient med mikroskopi-positiva upphostningar bedöms som höggradigt smittsam, mikroskopinegativa men odlingspositiva som låggradigt smittsam, medan patient med enbart extrapulmonell tbc inte alls är smittsam. Barn med tbc smittar vanligen inte förrän de kommer upp i skolåldern.</p><span> </span><p class=\"indent\">Smittsamma patienter bedöms vara smittfria efter 2 veckors behandling med kemoterapi samt klinisk förbättring. Vid misstanke om <a class=\"index\" id=\"1025873\" data-text=\"multiresistent tbc;tbc:multiresistent\"></a>multiresistent tbc bör patienten vara isolerad till dess sputumprovet är negativt i direktmikroskopi. För vårdpersonal används andningsskydd med hepafilter (FFP3) vid kontakt med smittsam patient. </p><h2 id=\"m3_13\">Smittskydd</h2><p>Tbc är klassad som en allmänfarlig sjukdom (Smittskyddslagen SFS 2004:168). Behandlande läkare ska anmäla varje nytt fall till smittskyddsläkaren, ge patienten förhållningsregler samt smittspåra. Vid smittspårning letar man efter eventuell smittkälla och testar exponerade kontakter som kan ha smittats (3). Patienten har rätt till kostnadsfri vård och behandling. På receptet anges ”fritt enligt smittskyddslagen”. </p><h2 id=\"m3_14\"><a class=\"crossref\" id=\"78510\"></a>Förebyggande åtgärder</h2>",
+			"settings": {}
+		},
+		{
+			"id": "1d94f677-7271-47d5-a8d5-415241b9c98f",
+			"name": "1d94f677-7271-47d5-a8d5-415241b9c98f",
+			"type": "facts",
+			"content": {
+				"number": 4,
+				"title": "<a class=\"crossref\" id=\"64330\"></a>Indikationer för BCG-vaccination  av barn",
+				"text": "<table><tbody><tr><td><ul><li>Tidigare tbc har förekommit hos en nära<br>anhörig eller hushållskontakt.</li></ul><ul><li>Aktuell tbc har diagnostiserats hos en nära an&shy;hörig eller hushållskontakt (samråd med den <br>behandlande läkaren när det gäller eventuell kemoterapi och tidpunkt för BCG).</li></ul><ul><li>Familjen kommer från ett land med hög tbc-<br>förekomst (de flesta länder utanför Nordamerika, Västeuropa, Australien och Nya Zeeland).</li></ul><ul><li>Vid planerad vistelse i ett land eller område med hög tbc-förekomst och vid nära kontakt med <br>lokalbefolkningen.</li></ul></td></tr></tbody></table>",
+				"id": "m3_16"
+			},
+			"settings": {}
+		},
+		{
+			"id": "ad71d199-9831-49aa-8c22-48cbc0eeddc0",
+			"name": "ad71d199-9831-49aa-8c22-48cbc0eeddc0",
+			"type": "text",
+			"content": "<p>Screening för tbc med <a class=\"index\" id=\"1040350\" data-text=\"tuberkulintest\"></a>tuberkulintest eller <a class=\"index\" id=\"1040352\" data-text=\"interferon-gammatest\"></a>interferon-gammatest (<a class=\"index\" id=\"1040353\" data-text=\"IGRA:tbc\"></a>IGRA) och/eller lungröntgen är motiverad bland grupper med hög risk för tbc såsom nyanlända asylsökande från högendemiskt land och deras anhöriga. Barn bör vaccineras med <a class=\"index\" id=\"1040354\" data-text=\"BCG-vaccin;vaccination mot:tbc\"></a>BCG-vaccin (Bacillus Calmette-Guérin) enligt Faktaruta 4. För ytterligare information se kapitlet Vaccination av barn och ungdomar, avsnittet Vaccination mot tuberkulos <a href=\"c1c_ped_vaccbarnundom_2013fm10.html#25782\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.</p><span> </span><p class=\"indent\">För övriga personer som löper ökad risk att utsättas för tbc-smitta kan det vara motiverat med BCG-vaccin, t&nbsp;ex viss personal inom hälso- och sjukvården, resenärer till högendemiskt land som ska vistas en längre tid bland lokalbefolkningen, sjömän m&nbsp;fl (se även kapitlet Råd och profylax vid resa, avsnittet BCG-vaccin mot tuberkulos <a href=\"l2_inf_reseprofylax_2013fm10.html#93930\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>). BCG-vaccin ger framför allt hos små barn ett skydd mot aktiv sjukdom. Hur gott skyddet är varierar kraftigt (0–80&#37;) i olika studier och revaccination saknar vetenskapligt underlag. För att utesluta att personen inte redan bär på tbc-smitta görs en tuberkulinprövning innan BCG-vaccination och om testet är <span>≥</span>&nbsp;6 mm ska personen inte vaccineras. I Socialstyrelsens ”Rekommendationer för preventiva insatser mot tuberkulos – hälsokontroll, smittspårning och vaccination” finns flödesschema för screening av tbc bland flyktingar, asylsökande m&nbsp;fl samt vid studier eller arbete i riskutsatta miljöer (3).</p><h3 id=\"m3_17\"><a class=\"index\" id=\"1027245\" data-text=\"tuberkulintest\"></a>Tuberkulintest</h3><p>Tuberkulin (Purified protein derivate, <a class=\"index\" id=\"1027351\" data-text=\"PPD-tuberkulin\"></a>PPD, 2&nbsp;TU/0,1&nbsp;ml) injiceras intrakutant på underarmens ovansida. Om personen är <a class=\"index\" id=\"1027352\" data-text=\"infektioner:mykobakterier\"></a>infekterad med <a class=\"index\" id=\"1027353\" data-text=\"mykobakterier\"></a>mykobakterier bildas en induration omgiven av en rodnad. Indurationens tvärdiameter mäts efter 72 timmar och om måttet är <span>≥</span>&nbsp;15 mm är sannolikheten att personen smittats med tbc hög – ett mått på 10–15 mm ser man såväl vid tbc-smitta som vid infektion med atypiska mykobakterier. Om indurationen är &lt;&nbsp;10&nbsp;mm beror reaktionen oftast på kontakt med atypiska mykobakterier eller BCG-vaccination. Gränsvärdet för ett ”positivt” test brukar sättas vid 10 mm om man vill undvika överdiagnostik, medan ett gränsvärde på 6&nbsp;mm ger högre sensitivitet, men minskar specificiteten med avseende på tbc. Ett gränsvärde på 6&nbsp;mm används vid nedsatt immunitet och vid hög expositionsrisk.</p><p class=\"indent\">Tuberkulinreaktionens prediktiva värde är beroende av det epidemiologiska sambandet och bör därför bara användas vid känd exposition som vid <a class=\"index\" id=\"1026946\" data-text=\"smittsp&#xE5;rning, tbc;tbc:smittsp&#xE5;rning\"></a>smittspårning kring en smittsam person, screening av högriskgrupp samt innan eventuell BCG-vaccination. Som allmän screening är tuberkulintestet alltför ospecifikt. I diagnostiken av klinisk tbc bör PPD undvikas då kraftiga reaktioner med nekroser kan förekomma. </p><h3 id=\"m3_18\"><a class=\"index\" id=\"1038866\" data-text=\"interferon-gammatest\"></a>Interferon-gammatest (<a class=\"index\" id=\"1030088\" data-text=\"IGRA:tbc\"></a>IGRA)</h3>",
+			"settings": {}
+		},
+		{
+			"id": "8fd57de3-0cbc-4346-a2d1-2c3560dda8b9",
+			"name": "8fd57de3-0cbc-4346-a2d1-2c3560dda8b9",
+			"type": "tablenarrow",
+			"content": {
+				"number": 1,
+				"title": "<a class=\"crossref\" id=\"31175\"></a>Principer för användning av IGRA och <a class=\"index\" id=\"1039075\" data-text=\"PPD\"></a>PPD",
+				"id": "m3_19",
+				"text": "<table><tbody><tr><td><div class=\"tableLine\"><strong><span style=\"font-weight: bold;\">Grupp</span></strong></div></td><td><div class=\"tableLine\"><strong><span style=\"font-weight: bold;\">Analys</span></strong></div></td></tr><tr><td><div class=\"tableLine\">Friska vuxna och barn &gt;&nbsp;5 år</div></td><td><div class=\"tableLine\">IGRA<sup><a class=\"tableFootnoteLink\" href=\"#fnote_23\"><sup>a</sup></a></sup> eller PPD</div></td></tr><tr><td><div class=\"tableLine\">Immunsupprimerade</div></td><td><div class=\"tableLine\">IGRA och/<br></div><div class=\"tableLine\">eller PPD<sup>b</sup></div></td></tr><tr><td><div class=\"tableLine\">Barn &lt;&nbsp;5 år</div></td><td><div class=\"tableLine\">PPD</div></td></tr><tr><td colspan=\"2\" class=\"footNotes\"><div class=\"tableFootnote\" id=\"fnote_23\">a. <span class=\"tabstop\"></span><div class=\"tableLine\">IGRA är att föredra hos individer som är BCG-vac-</div><div class=\"tableLine\">cinerade</div><span class=\"tabstop\"></span><div class=\"tableLine\">b.<span class=\"tab\"></span><span class=\"tab\"></span>Båda testen görs om det första testet är negativt</div></div></td></tr></tbody></table>"
+			},
+			"settings": {}
+		},
+		{
+			"id": "b69d2447-21a6-4984-891e-c9c616c5a8eb",
+			"name": "b69d2447-21a6-4984-891e-c9c616c5a8eb",
+			"type": "text",
+			"content": "<p>Nya diagnostiska tester som bygger på påvisande av produktion eller proliferation av interferon-gamma i blod (<a class=\"index\" id=\"1037478\" data-text=\"QuantiFERON\"></a>QuantiFERON-TB Gold In-tube, <a class=\"index\" id=\"1037481\" data-text=\"T-SPOT.TB\"></a>T-SPOT.TB) finns på marknaden. Testen är mer selektiva för M.&nbsp;tuberculosis än PPD. Analysen görs på helblod. Runt gränsvärdet för ett positivt test finns en gråzon. Laboratoriet rekommenderar i sådana fall ett nytt test. Personer med nedsatt immunsvar kan reagera med ett indeterminant resultat som inte är möjligt att bedöma. Se Tabell 1.</p><span> </span><p class=\"indent\">Det är viktigt att känna till att PPD kan boostra ett IGRA-svar. Vill man komplettera PPD med ett prov för IGRA bör man därför sätta dessa samtidigt eller avvakta med IGRA till minst 8 veckor efter att PPD sattes.</p><h2 id=\"m3_20\">Allmänna behandlingsprinciper</h2><h3 id=\"m3_21\">Kombinationsterapi och behandlingstid</h3><p>Kombinationsbehandling med flera preparat med skilda verkningsmekanismer är nödvändig för att öka behandlingseffekten och minska risken för resistensutveckling. Behandlingen inleds med 4 preparat: isoniazid (H), rifampicin (R), pyrazinamid (Z) och etambutol (E) i 2&nbsp;månader följt av ytterligare 4 månader med H + R, dvs sammanlagt 6 månaders behandling (Terapirekommendationerna). Är tbc-stammen fullt känslig kan E sättas ut tidigare. Om Z inte kan ges förlängs behandlingsperioden till 9&nbsp;månader. H och R har en överlägsen klinisk effektivitet, är baktericida och har sin verkan extracellulärt. Z verkar intracellulärt i den tidiga behandlingsfasen, men har sedan i normalfallet spelat ut sin roll. E har betydligt sämre effekt och används initialt för att undvika resistensutveckling.</p><div class=\"clearfix\"></div>",
+			"settings": {}
+		},
+		{
+			"id": "1ceab490-b230-477b-a5d0-4bd6ac64d28d",
+			"name": "1ceab490-b230-477b-a5d0-4bd6ac64d28d",
+			"type": "therapy",
+			"content": {
+				"number": 1,
+				"title": "<a class=\"crossref\" id=\"38578\"></a>Behandling av tbc<a class=\"tableFootnoteLink\" href=\"#fnote_16\"><sup>a</sup></a>",
+				"id": "m3_22",
+				"text": "<table><tbody><tr><td colspan=\"2\"><p><strong>Standardbehandling</strong></p></td></tr><tr><td><div class=\"tableLine\">H + R + Z + E</div></td><td><div class=\"tableLine\">Initial fas: Isoniazid<a class=\"tableFootnoteLink\" href=\"#fnote_17\"><sup>b</sup></a> + rifampicin + pyrazinamid + etambutol i 2&nbsp;månader</div><div class=\"tableLine\">Uppföljningsfas: Isoniazid<sup>b</sup> + rifampicin i 4&nbsp;månader</div></td></tr><tr><td colspan=\"2\"><p><strong>Behandling av tbc i CNS</strong></p></td></tr><tr><td><div class=\"tableLine\">H + R + Z + S/A/E</div></td><td><div class=\"tableLine\">Initial fas: Isoniazid<sup>b</sup> + rifampicin + pyrazinamid + streptomycin/amikacin/etambutol i </div><div class=\"tableLine\">2&nbsp;månader. Tillägg av glukokortikoider.</div><div class=\"tableLine\">Uppföljningsfas: Isoniazid<sup>b</sup> + rifampicin i 10 månader</div></td></tr><tr><td colspan=\"2\"><p><strong>Behandling av latent tbc-infektion</strong></p></td></tr><tr><td><div class=\"tableLine\">H + eventuellt R</div></td><td><div class=\"tableLine\">Isoniazid<sup>b</sup> i 6 månader</div><div class=\"tableLine\">Alternativt isoniazid<sup>b</sup> + rifampicin i 3 månader <br></div><div class=\"tableLine\">Isoniazid<sup>b</sup> i 9 månader (vid <a class=\"index\" id=\"1026848\" data-text=\"tbc:nedsatt immunf&#xF6;rsvar\"></a>nedsatt immunförsvar)</div></td></tr><tr><td colspan=\"2\" class=\"footNotes\"><div class=\"tableFootnote\" id=\"fnote_16\">a. Rekommendationerna gäller vid fullt känslig stam, vid resistens, se texten.</div><div class=\"tableFootnote\" id=\"fnote_17\">b. <div class=\"tableLine\">Vid behandling med isoniazid ges pyridoxin (vitamin B<sub>6</sub>).</div></div></td></tr></tbody></table>"
+			},
+			"settings": {}
+		},
+		{
+			"id": "f5316bea-22ae-40ca-9af0-bc7a5c045337",
+			"name": "f5316bea-22ae-40ca-9af0-bc7a5c045337",
+			"type": "text",
+			"content": "<span> </span><p class=\"indent\">Vid resistens mot ett av huvudpreparaten H eller R ersätts det resistenta medlet med E i uppföljningsfasen med en total behandlingsperiod på 12 månader. Eventuellt läggs amikacin till de första 2 månaderna. Tillägg av kinolon bör ges vid resistens mot R. Vid resistens mot både H och R (<a class=\"index\" id=\"1021302\" data-text=\"multiresistent tbc;tbc:multiresistent\"></a>multiresistent tbc) krävs behandling med minst 5 preparat, för vilka bakterien är känslig, och behandlingsperioden blir då betydligt längre, minst 20 månader. Multiresistent tbc ska behandlas i samråd med tbc-erfaren specialist.</p><p class=\"indent\">Behandlingsprinciperna är gemensamma för både lung-tbc och <a class=\"index\" id=\"1029865\" data-text=\"extrapulmonell tbc;tbc:extrapulmonell\"></a>extrapulmonell tbc. Vid <a class=\"index\" id=\"1029866\" data-text=\"tuberkul&#xF6;s meningit\"></a>tuberkulös meningit används ofta streptomycin eller amikacin som tillägg eller alternativ till etambutol som penetrerar dåligt till CNS. Initialt ges även glukokortikoider i avsikt att reducera inflammationen och därmed neurologiska resttillstånd. Aminoglykosider ska undvikas till äldre och gravida pga risk för hörselskador. Till en äldre patient överväg etambutol i&nbsp;stället för aminoglykosid. På grund av sämre penetrans till CNS justeras doseringen av tuberkulosläkemedlen och behandlingstiden förlängs till 12 månader (2) </p><p class=\"indent\"><a class=\"index\" id=\"1029945\" data-text=\"tbc:graviditet;graviditet:tbc\"></a>Gravida behandlas efter samma schema för standardbehandling som icke-gravida. Modern kan fortsätta att amma. Aminoglykosider kan ha ototoxiska effekter på fostret och ska därför undvikas till gravida (<a href=\"http://www.medscinet.se/infpreg/\" target=\"_blank\" class=\"linkOut\">www.infpreg.se</a> ). Kinoloner, som kan bli aktuella vid R-resistens, har rapporterats orsaka degeneration av ledbrosk hos växande <span>djur</span> och bör därför undvikas till barn. Till små barn som inte kan syntestas brukar E undvikas. </p><p class=\"indent\">Brist på vitamin D diskuteras som predisponerande orsak till utveckling av aktiv tbc och bör behandlas parallellt.</p><h3 id=\"m3_23\">Dosering</h3><p>Alla tbc-läkemedel doseras efter kroppsvikt, men approximativa beräkningar kan användas och dagsdosen anpassas efter befintliga beredningar. Hela dygnsdosen ges vid ett tillfälle så att en hög serum- och vävnadskoncentration uppnås. Mätning av serumkoncentration är viktig vid misstanke om bristande absorption, oväntade biverkningar, samtidig behandling med interagerande läkemedel, t&nbsp;ex antiretrovirala medel, samt vid behandling av multiresistent tbc. Mätning av läkemedelskoncentrationen (diskutera med lokalt klin farm lab) kan även vara befogad vid misstanke om att patienten inte tar sina läkemedel som ordinerat.</p><h3 id=\"m3_24\">Behandlingsstöd</h3>",
+			"settings": {}
+		},
+		{
+			"id": "3e4ec736-f5de-417a-8f6d-5db07cc08727",
+			"name": "3e4ec736-f5de-417a-8f6d-5db07cc08727",
+			"type": "facts",
+			"content": {
+				"number": 5,
+				"title": "<a class=\"crossref\" id=\"71385\"></a>Uppföljning vid behandling av tbc",
+				"text": "<table><tbody><tr><td><ul><li><span class=\"tab\"></span>Återbesök 1, 2, 4 och 6 månader efter <br>behandlingsstart samt 3, 6 och eventuellt 12&nbsp;månader efter avslutad behandling. Kontrollröntgen vid lung-tbc. </li></ul><ul><li><span class=\"tab\"></span>Kontroll av ASAT, ALAT och kreatinin initialt 1&nbsp;gång/vecka, därefter 1&nbsp;gång/månad, om inte provsvaren indicerar tätare kontroller.</li></ul><ul><li><span class=\"tab\"></span>Kontroll av visus och färgseende vid varje åter&shy;besök vid etambutolbehandling. </li></ul><ul><li><span class=\"tab\"></span>Vid utebliven förbättring</li></ul><p class=\"indent\">– Följsamhet, följsamhet, följsamhet?</p><p class=\"indent\">– Koncentrationsbestämning?</p><p class=\"indent\">– Resistens?</p><ul><li><span class=\"tab\"></span>Upprepa smittspårningsanamnesen – har någon missats?</li></ul><ul><li><span class=\"tab\"></span>Avanmäl till smittskyddsläkaren/Smittskydds&shy;institutet efter avslutad behandling.</li></ul></td></tr></tbody></table>",
+				"id": "m3_26"
+			},
+			"settings": {}
+		},
+		{
+			"id": "24bc60a0-46d0-4367-bc3e-e96caecaf55c",
+			"name": "24bc60a0-46d0-4367-bc3e-e96caecaf55c",
+			"type": "text",
+			"content": "<p>En förutsättning för ett gott behandlingsresultat utan recidiv är att patienterna tar sina läkemedel på rätt sätt. När behandlingen inleds måste stor möda ägnas åt att informera patienten om sjukdomen, smittspridning och nödvändigheten av regelbunden medicinering. Alla patienter bör få någon form av behandlingsstöd. Direkt observerad terapi (DOT), dvs att patienterna sväljer sina mediciner under övervakning, rekommenderas särskilt under de 2 första månaderna. Därefter är det ofta möjligt att ge läkemedlen i dosett för varje vecka. DOT kan ske på tbc-mottagning, via distriktssköterska, företagshälsovård eller på annat sätt som är lämpligt för patienten.</p><p class=\"indent\">Patienter med direktpositiv tbc bör som regel påbörja sin behandling på vårdavdelning. Cirka 2 veckor efter påbörjad läkemedelsbehandling bedöms smittsamheten som ringa och vid okomplicerat förlopp bör patienten kunna skrivas ut. </p><p class=\"indent\">Klinisk kontroll efter påbörjad behandling bör ske minst varannan månad (Faktaruta 5 <a href=\"#71385\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>). Många patienter behöver tätare kontakt. I samband med återbesök är det viktigt att fortlöpande motivera patienten att ta sina läkemedel, följa upp smittspårningen samt kontrollera visus och färgseende om patienten behandlas med E. Leverstatus kontrolleras 1 gång/vecka i 1–2 månader och därefter 1 gång/månad, såvida inte provsvaren indicerar tätare kontroller. </p><span> </span><h3 id=\"m3_27\">Prognos</h3><p>Vid korrekt ordinerad och genomförd läkemedelsbehandling är behandlingssvikt ytterst sällsynt om bakterierna är fullt känsliga. Om R eller H inte kan användas, pga resistens eller biverkningar, är risken för recidiv större och ett sådant kan komma efter många år.</p><h3 id=\"m3_28\">Behandling av <a class=\"index\" id=\"1021331\" data-text=\"tbc:latent\"></a>latent tbc</h3><p>Diagnostiken (tuberkulintest och/eller IGRA (3)) av latent tbc är osäker och ca 90&#37; förblir friska i en normalbefolkning utan behandling. Syftet med att ändå behandla en latent infektion (Terapirekommendationerna <a href=\"#38578\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>) är att förhindra progress till aktiv sjukdom. Något test för att selektera fram de personer som har nytta av profylaktisk behandling finns inte, men risken för aktivering, biverkningar och förväntad följsamhet till behandling måste vägas in i ställningstagandet. Värdet av profylaktisk behandling är störst för barn, tonåringar, nysmittade vuxna samt för personer med nedsatt immunförsvar mot tbc (hiv, behandling med TNF-alfahämmare m&nbsp;fl). Aktiv tbc måste uteslutas då det vid större bakteriemängd finns risk för resistensutveckling.<span> </span><span class=\"tab\"></span></p><h2 id=\"m3_29\">Läkemedelsöversikt </h2><p>Isoniazid (H) och rifampicin (R) är de mest potenta tbc-läkemedlen idag. I standardbehandlingen kompletteras dessa med pyrazinamid (Z) och etambutol (E). Aminoglykosiden streptomycin (licenspreparat, Streptomycin Orion injektionsvätska) har tidigare använts, men har under senare år ersatts med amikacin som finns lätt tillgängligt och sannolikt har väl så god effekt, även om kontrollerade studier saknas. Kombinationspreparat har tagits fram för att förenkla för patienterna. Nackdelen är att de ingående substanserna inte kan doseras oberoende av varandra.</p><p class=\"indent\">Vid resistens eller intolerans mot de traditionella tbc-läkemedlen används nyare makrolider, kinoloner och linezolid. Även äldre preparat med kända biverkningar som paraaminosalicylsyra (<a class=\"index\" id=\"1026172\" data-text=\"PAS;paraaminosalicylsyra\"></a>PAS; Paser Jacobus Pharmaceutical, dosgranulat 4&nbsp;<a class=\"index\" id=\"1026173\" data-text=\"etionamid\"></a>g), etionamid (Trecator Wyeth, tabletter 250 mg) och cykloserin, alla licenspreparat, kan behöva ingå i arsenalen vid behandling av multiresistent tbc. Rifabutin har likvärdig effekt som rifampicin men färre läkemedelsinteraktioner. </p><p class=\"indent\">Samtliga tbc-läkemedel är potentiellt levertoxiska varför transaminaser (ALAT, ASAT) följs under hela behandlingen. Om patientens värden ökar till 5 gånger över referensvärdena sätts alla läkemedel ut. När levervärdena normaliserats återinsätts läkemedlen ett efter ett (2).</p><h3 id=\"m3_30\"><a class=\"index\" id=\"1026174\" data-text=\"isoniazid\"></a>Isoniazid</h3><p>Isoniazid (H) som introducerades på 1950-talet har en väldokumenterad baktericid effekt, specifik för mykobakterier. Preparatet har låg biverkningsfrekvens och är billigt. Vanligaste biverkning är leverpåverkan. Perifer polyneurit, som framför allt ses hos gravida, undernärda samt hos personer med alkoholproblem eller långsam metabolism, kan undvikas genom att man tillför <a class=\"index\" id=\"1035664\" data-text=\"pyridoxin:tbc\"></a>pyridoxin (vitamin B<sub>6</sub>), 10 mg/dag till barn och 40 mg/dag till vuxna. Tilltagande resistens, ca 10&#37; av nya isolat i Sverige, är ett problem.</p><h3 id=\"m3_31\"><a class=\"index\" id=\"1026178\" data-text=\"rifampicin:tbc\"></a>Rifampicin</h3><p>Rifampicin (R) har baktericid effekt genom att interferera med bakteriernas RNA-syntes. R är aktivt mot en mängd bakterier, men reserveras i första hand för behandling av tbc, lepra, multiresistenta stafylokocker och neisseriastammar. Biverkningsfrekvensen är låg, men allvarliga reaktioner som trombocytopeni och akut njursvikt har rapporterats. Övergående leverpåverkan med måttliga aminotransferasstegringar är vanligt, främst i början av behandlingen.</p><p class=\"indent\">Patienten bör upplysas om att medlet rödfärgar urin och andra kroppsvätskor. R inducerar leverns läkemedelsnedbrytande <span>enzymer</span> och doseringen av t&nbsp;ex perorala antikoagulantia och virushämmande medel behöver justeras. P-piller behöver kompletteras med barriärskydd.</p><h3 id=\"m3_32\"><a class=\"index\" id=\"1026182\" data-text=\"rifabutin\"></a>Rifabutin</h3><p>Rifabutin är ett semisyntetiskt rifamycinderivat med en effekt vid tbc som är likvärdig med R. Rifabutin ökar metabolismen av vissa läkemedel, men i mindre grad än R. Preparatet har framför allt sin plats vid behandling av hiv-infekterade individer som står på antiretroviral läkemedelsbehandling. Kostnaden är hög. Påverkan på blodbilden förekommer, varför erytrocyter, leukocyter och trombocyter bör kontrolleras under behandlingen. Uveit har rapporterats och leverpåverkan förekommer i samma omfattning som för R. Medlet färgar också kroppsvätskor röda.</p><h3 id=\"m3_33\"><a class=\"index\" id=\"1026185\" data-text=\"pyrazinamid\"></a>Pyrazinamid</h3><p>Pyrazinamid (Z; licenspreparat, t&nbsp;ex Pyrazinamid Jenapharm, tabletter 500&nbsp;mg) har baktericid effekt i sur miljö och har sin huvudsakliga effekt intracellulärt under behandlingens initialfas. Z hämmar den renala utsöndringen av urinsyra med hyperurikemi som följd. Artralgier förekommer, främst i början av behandlingen, men manifest gikt är sällsynt. Illamående, buksmärtor, leverpåverkan och allergiska hudreaktioner förekommer.</p><h3 id=\"m3_34\"><a class=\"index\" id=\"1026188\" data-text=\"etambutol\"></a>Etambutol</h3><p>Etambutol (E) har enbart bakteriostatisk effekt och används i första hand som komplement till mer potenta medel för att undvika resistensutveckling. E har god tolerans och låg biverkningsfrekvens. Levertoxicitet samt hyperurikemi har rapporterats. En ovanlig biverkning är optikusneurit med nedsatt synskärpa och stört färgseende. Risken är ökad vid dagsdoser &gt;&nbsp;15&nbsp;mg/kg kroppsvikt och vid nedsatt njurfunktion. Biverkningen är vanligen reversibel vid läkemedlets utsättande. Alkoholism och tobaksrökning predisponerar för utveckling av optikusneurit. Synskärpa och färgseende ska kontrolleras regelbundet före och under behandlingen (Faktaruta 5 <a href=\"#71385\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>).</p><h3 id=\"m3_35\"><a class=\"index\" id=\"1026191\" data-text=\"streptomycin\"></a>Streptomycin och <a class=\"index\" id=\"1026192\" data-text=\"amikacin\"></a>amikacin</h3><p>Streptomycin (S) har en väldokumenterad baktericid effekt men finns enbart på licens (Streptomycin Orion, injektionsvätska). I&nbsp;stället används alternativa aminoglykosider, i första hand amikacin (A). En fördel är att det inte föreligger korsresistens mellan S och A. Amikacin kan även användas hos patienter med leversvikt. För samtliga <a class=\"index\" id=\"1026622\" data-text=\"aminoglykosider\"></a>aminoglykosider finns risk för skador på hörsel- och balansnerven samt njurpåverkan – risken är korrelerad till såväl daglig dos som totaldos. </p><p class=\"indent\">Koncentrationsmätningar bör göras kontinuerligt och medlen ska användas med försiktighet till äldre och personer med njursvikt.</p><h3 id=\"m3_36\"><a class=\"index\" id=\"1026197\" data-text=\"levofloxacin:tbc\"></a>Levofloxacin och <a class=\"index\" id=\"1037486\" data-text=\"moxifloxacin:tbc\"></a>moxifloxacin</h3><p>Levofloxacin och moxifloxacin är de kinoloner som föredras vid tbc-behandling när standardläkemedel behöver ersättas eller kompletteras. Läkemedlen har en svagt baktericid effekt och ska inte ges till gravida.</p><h2 class=\"referenceHeader\" id=\"m3_37\">Referenser</h2>",
+			"settings": {}
+		},
+		{
+			"id": "f501ea67-435d-438f-93c8-55266be08f9a",
+			"name": "f501ea67-435d-438f-93c8-55266be08f9a",
+			"type": "references",
+			"content": "<ol class=\"references\"><li id=\"reference_1\"> Risk för tuberkulos vid behandling med TNF-alfahämmare. Flera fall i Sverige. 2004-05-28. <a href=\"http://www.lakemedelsverket.se/Alla-nyheter/NYHETER---2004/Risk-for-tuberkulos-vid-behandling-med-TNF-alfahammare-Flera-fall-i-Sverige/\" target=\"_blank\" class=\"linkOut\">www.lakemedelsverket.se</a> </li>\n<li id=\"reference_2\">Tuberkulos – Vägledning för sjukvårdspersonal.  September 2009. Artikelnr 2009-9-19. <br><a href=\"http://www.socialstyrelsen.se/publikationer2009/2009-9-19/Sidor/default.aspx\" target=\"_blank\" class=\"linkOut\">www.socialstyrelsen.se</a> </li>\n<li id=\"reference_3\">Rekommendationer för preventiva insatser mot  tuberkulos – hälsokontroll, smittspårning och vaccination. 2012. Artikelnr 2012-3-16. <br><a href=\"http://www.socialstyrelsen.se/publikationer2012/2012-3-16\" target=\"_blank\" class=\"linkOut\">www.socialstyrelsen.se</a> </li>\n</ol>",
+			"settings": {}
+		},
+		{
+			"id": "a51c0b72-cd70-4c39-a3e3-57d93c29724f",
+			"name": "a51c0b72-cd70-4c39-a3e3-57d93c29724f",
+			"type": "text",
+			"content": "<h5 id=\"m3_38\">För vidare läsning:</h5>",
+			"settings": {}
+		},
+		{
+			"id": "029ea01f-75a5-4f60-b16f-3df9fb76c9e6",
+			"name": "029ea01f-75a5-4f60-b16f-3df9fb76c9e6",
+			"type": "references",
+			"content": "<ol class=\"references\"><li id=\"reference_1\">Maartens G, Wilkinson RJ. Tuberculosis.<br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/17719083?ordinalpos=5&amp;itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum\" target=\"_blank\" class=\"linkOut\">Lancet. 2007;370:2030–43.</a> </li>\n<li id=\"reference_2\">Migliori GB, Zellweger JP, Abubakar I, et al. European union standards for tuberculosis care. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22467723\" target=\"_blank\" class=\"linkOut\">Eur Respir J. 2012;39:807</a> –</li>\n<li id=\"reference_3\">Puranen B. Tuberkulos – En sjukdoms förekomst och dess orsaker. Sverige 1750–1980. Doktorsavhandling Umeå (1984). ISBN 9171741801.</li>\n<li id=\"reference_4\">Pai M, Minion J, Sohn H, et al. Novel and improved technologies for TB diagnosis: progress and challenges. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/19925962\" target=\"_blank\" class=\"linkOut\">Clin Chest Med. 2009;30:701–16.</a> </li>\n</ol>",
+			"settings": {}
+		}
+	],
+	"type": "file",
+	"path": "/Users/staliv/Projects/LB/servers/cms/content/kapitel/andningsvagar/tuberkulos.json",
+	"modified": "2015-04-16 01:42",
+	"isPublished": true
+}

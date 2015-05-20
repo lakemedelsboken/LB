@@ -1,14 +1,5 @@
 [
 	{
-		"name"      : "blog",
-		"script"    : "./blog/app.js",
-		"instances" : "8",
-		"min_uptime" : "100",
-		"max_restarts" : "10",
-		"fileError" : "./logs/blog-err.log",
-		"fileOutput" : "./logs/blog-out.log"
-	},
-	{
 		"name"      : "site",
 		"script"    : "./site/server.js",
 		"instances" : "8",
@@ -70,6 +61,14 @@
 		"max_restarts" : "1",
 		"fileError" : "./logs/updateFromNplService-err.log",
 		"fileOutput" : "./logs/updateFromNplService-out.log"
+	},
+	{
+		"name"      : "InboundListenerService",
+		"script"    : "./cms/services/InboundListenerService.js",
+		"instances" : "1",
+		"min_uptime" : "100",
+		"max_restarts" : "1",
+		"fileError" : "./logs/InboundListenerService-err.log",
+		"fileOutput" : "./logs/InboundListenerService-out.log"
 	}
-	
 ]

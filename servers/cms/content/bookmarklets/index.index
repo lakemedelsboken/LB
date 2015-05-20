@@ -1,0 +1,37 @@
+[
+	{
+		"title": "root",
+		"level": 0,
+		"id": "_0",
+		"parentId": null,
+		"chapter": null,
+		"type": "header",
+		"titlePath": "",
+		"hasChildren": true
+	},
+	{
+		"title": "Smart bokmärke",
+		"level": 1,
+		"id": "Smart-bokmarke",
+		"parentId": "_0",
+		"chapter": "",
+		"url": "/bookmarklets/index.html",
+		"type": "header",
+		"titlePath": "Smart bokmärke",
+		"content": " Vi har skapat ett smart bokmärke. Med hjälp av bokmärket kan du hitta substansnamn/ATC-rubriker på en webbsida och därefter direkt se vilka preparat eller underrubriker som finns för det valda ordet. Klicka sedan på ett preparat för att visa förskrivarinformation. Bokmärket är ett exempel på hur man kan använda sig av Läkemedelsbokens API. Tyvärr fungerar inte bokmärket på alla sidor p.g.a. tekniska begränsningar.",
+		"products": "",
+		"hasChildren": true
+	},
+	{
+		"title": "Installera bokmärke",
+		"level": 3,
+		"id": "",
+		"parentId": "Smart-bokmarke",
+		"chapter": "",
+		"url": "/bookmarklets/index.html",
+		"type": "facts",
+		"titlePath": "Smart bokmärke && Installera bokmärke",
+		"content": " På en dator Dra den röda knappen till bokmärkesfältet i din webbläsare. Vissa versioner av Internet Explorer tillåter inte att man drar knappen till bokmärkesfältet. Gör då så här: Högerklicka på den röda knappen Välj \"Lägg till i Favoriter...\" Spara till \"Favorites bar\" Hitta substansnamn På en mobil enhet Detta är lite mer komplicerat. Kopiera följande kod: Skapa därefter ett bokmärke, döp det till \"Hitta substansnamn\". Välj sedan att redigera ditt nya bokmärke. Ändra adressen för bokmärket till den kodsnutt som du precis kopierade. På en dator Dra den röda knappen till bokmärkesfältet i din webbläsare. Vissa versioner av Internet Explorer tillåter inte att man drar knappen till bokmärkesfältet. Gör då så här: Högerklicka på den röda knappen Välj \"Lägg till i Favoriter...\" Spara till \"Favorites bar\" Högerklicka på den röda knappen Välj \"Lägg till i Favoriter...\" Spara till \"Favorites bar\" Hitta substansnamn På en mobil enhet Detta är lite mer komplicerat. Kopiera följande kod: Skapa därefter ett bokmärke, döp det till \"Hitta substansnamn\". Välj sedan att redigera ditt nya bokmärke. Ändra adressen för bokmärket till den kodsnutt som du precis kopierade.",
+		"products": ""
+	}
+]

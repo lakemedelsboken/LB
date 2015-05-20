@@ -1,0 +1,47 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "Uppdaterade kapitel",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "nyhet",
+	"created": "2014-03-07 00:00",
+	"published": "2015-04-18 11:27",
+	"validUntil": "",
+	"createdBy": "Läkemedelsverket",
+	"replacesUrl": "/blog/2014-03-07-uppdaterade_kapitel",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "53c09ab7-d0cc-49c3-8f98-5b1cfe450d45",
+			"name": "83256b07-9b0e-4cba-8517-7837257e4624",
+			"type": "text",
+			"content": "<h1 id=\"Uppdaterade-kapitel\">Uppdaterade kapitel</h1>\n<h3 id=\"n-\"></h3>\n<h3 id=\"n-1-Den-akut-medvetslose-patienten-http-www-lakemedelsboken-se-a1-aku-akutmedv-2013fm10-html-id-a1-16-\">1. [Den akut medvetsl&ouml;se patienten](http://www.lakemedelsboken.se/a1_aku_akutmedv_2013fm10.html?id=a1_16)</h3>\n<p>Ordet \"Blod\" har bytts ut mot \"Erytrocyter\".</p>\n<h3 id=\"n-2-Urininkontinens-http-www-lakemedelsboken-se-g2-nef-urininkontinens-2013fm10-html-id-g2-64-\">2. [Urininkontinens](http://www.lakemedelsboken.se/g2_nef_urininkontinens_2013fm10.html?id=g2_64)</h3>\n<p>Ett fel har &aring;tg&auml;rdats g&auml;llande omr&auml;kningen mellan frystorkade Desmopressintabletter kontra vanliga Desmopressintabletter.</p>\n<h3 id=\"n-3-Osteoporos-och-frakturprevention\">3. <a href=\"{pre}/kapitel/endokrinologi/osteoporos_och_frakturprevention.html#k2a_32\">Osteoporos och frakturprevention</a></h3>\n<p>Referens nr 17 har bytts ut och texten har d&auml;rf&ouml;r modifierats n&aring;got.</p>\n<p></p>",
+			"settings": {
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				},
+				"preprocessors": {
+					"idinjection.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/Users/staliv/Projects/LB/servers/cms/content/blog/2014-03-07-uppdaterade_kapitel.json",
+	"modified": "2015-04-18 11:27",
+	"isPublished": true
+}

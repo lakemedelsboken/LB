@@ -1,0 +1,46 @@
+{
+	"templateName": "default",
+	"templateDescription": "Vanlig sida",
+	"title": "Smart bokmärke | Läkemedelsboken",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-04-20 17:39",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "69b6ef3f-ab44-436b-9ea9-70781c06adf5",
+			"name": "69b6ef3f-ab44-436b-9ea9-70781c06adf5",
+			"type": "text",
+			"content": "<h1 id=\"Smart-bokmarke\">Smart bokm&auml;rke</h1>\n<p class=\"p1 normal\"><span class=\"s1\">Vi har skapat ett <a href=\"http://en.wikipedia.org/wiki/Bookmarklet\"><span class=\"s2\">smart bokm&auml;rke</span></a>.</span></p>\n<p class=\"p1 normal\"><span class=\"s1\"></span></p>\n<p class=\"p1 normal\"><span class=\"s1\">Med hj&auml;lp av bokm&auml;rket kan du hitta substansnamn/ATC-rubriker p&aring; en webbsida och d&auml;refter direkt se vilka preparat eller underrubriker som finns f&ouml;r det valda ordet.</span></p>\n<p class=\"p1 normal\"><span class=\"s1\"></span></p>\n<p class=\"p1 normal\"><span class=\"s1\">Klicka sedan p&aring; ett preparat f&ouml;r att visa f&ouml;rskrivarinformation.</span></p>\n<p class=\"p1 normal\"><span class=\"s1\"></span></p>\n<p class=\"p1 normal\"><span class=\"s1\">Bokm&auml;rket &auml;r ett exempel p&aring; hur man kan anv&auml;nda sig av <a href=\"{pre}/api/\"><span class=\"s2\">L&auml;kemedelsbokens API</span></a>.</span></p>\n<p class=\"p1 normal\"><span class=\"s1\"></span></p>\n<p class=\"p2 normal\"><span class=\"s3\">Tyv&auml;rr fungerar inte bokm&auml;rket p&aring; alla sidor p.g.a. tekniska begr&auml;nsningar.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/Users/staliv/Projects/LB/servers/cms/content/bookmarklets/index.json",
+	"modified": "2015-04-20 19:06"
+}

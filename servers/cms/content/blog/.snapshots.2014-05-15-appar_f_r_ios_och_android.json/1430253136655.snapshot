@@ -1,0 +1,65 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "Appar för iOS och Android",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "nyhet",
+	"created": "2014-05-15 09:00",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "/blog/2014-05-15-appar_f_r_ios_och_android",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "397382a8-8a73-4728-94c7-f5b4f3e54141",
+			"name": "5f15d1d4-8e30-4825-9db6-b107217df9c6",
+			"type": "text",
+			"content": "<h1 id=\"Appar-for-iOS-och-Android\">Appar f&ouml;r iOS och Android</h1>\n<p>F&ouml;r en &auml;nnu snabbare upplevelse av L&auml;kemedelsboken p&aring; mobila enheter sl&auml;pper vi idag appar f&ouml;r iOS och Android som kan laddas ned utan kostnad.</p>\n<h2 id=\"iOS\">iOS</h2>\n<p>Appen fungerar b&aring;de p&aring; iPhone och iPad, <a href=\"https://itunes.apple.com/us/app/lakemedelsboken-2014/id869927460?ls=1&amp;mt=8\">hitta app f&ouml;r iOS h&auml;r</a>.</p>\n<h2 id=\"Android\">Android</h2>\n<p>Appen &auml;r anpassad f&ouml;r olika sk&auml;rmstorlekar och fungerar i stort sett okej i nul&auml;get. Vi har testat den p&aring; ett antal olika enheter men &aring;terkom g&auml;rna till oss om den inte fungerar p&aring; just din enhet. Vi st&ouml;djer som minimum Android version 2.3.3.</p>\n<p><a href=\"https://play.google.com/store/apps/details?id=com.staffanliving.lb2014\">Hitta app f&ouml;r Android h&auml;r</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "02fa2800-d4a9-40ee-8892-7ad58e06ca5f",
+			"name": "cbc13d0b-2b3d-4f90-b074-4980927c8f60",
+			"type": "summary",
+			"content": "<p><span>Nu sl&auml;pps appar f&ouml;r L&auml;kemedelsboken 2014</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/Users/staliv/Projects/LB/servers/cms/content/blog/2014-05-15-appar_f_r_ios_och_android.json",
+	"indexed": "true",
+	"modified": "2015-04-28 22:32"
+}

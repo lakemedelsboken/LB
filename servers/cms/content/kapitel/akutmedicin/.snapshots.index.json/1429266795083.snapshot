@@ -1,0 +1,53 @@
+{
+	"templateName": "default",
+	"templateDescription": "Vanlig sida",
+	"title": "Akutmedicin | Kapitel | Läkemedelsboken",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-04-17 12:31",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "642c977a-35d7-4cfb-8489-a02fc8817ddc",
+			"name": "642c977a-35d7-4cfb-8489-a02fc8817ddc",
+			"type": "collection",
+			"content": {
+				"basedir": "/kapitel/akutmedicin/",
+				"filter": "",
+				"perpage": "50",
+				"htmlbefore": "",
+				"htmlafter": "",
+				"createfeed": "true"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/Users/staliv/Projects/LB/servers/cms/content/kapitel/akutmedicin/index.json",
+	"modified": "2015-04-17 12:33"
+}

@@ -1,0 +1,169 @@
+{
+	"templateName": "default",
+	"templateDescription": "Blank sida",
+	"title": "Läkemedelsboken",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"created": "",
+	"published": "2015-04-18 11:28",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"content": [
+		{
+			"id": "c9e1be39-2a42-431e-8aba-a01f8db467bb",
+			"name": "c9e1be39-2a42-431e-8aba-a01f8db467bb",
+			"type": "html",
+			"content": "<div class=\"row span3 pull-right\">",
+			"settings": {
+				"postprocessors": {
+					"boxlinks.js": "true",
+					"genericas.js": "true",
+					"pagefootnotes.js": "true",
+					"references.js": "true"
+				},
+				"preprocessors": {
+					"idinjection.js": "true"
+				}
+			}
+		},
+		{
+			"id": "fd9f0413-4b61-4b78-926f-3b6f53425dde",
+			"name": "fd9f0413-4b61-4b78-926f-3b6f53425dde",
+			"type": "image",
+			"content": {
+				"image": "/images/mpa.png",
+				"alt": "Läkemedelsverket",
+				"htmlbefore": "<a href=\"http://www.lv.se/\">",
+				"htmlafter": "</a>",
+				"maxwidth": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "true"
+				},
+				"postprocessors": {
+					"boxlinks.js": "true",
+					"genericas.js": "true",
+					"pagefootnotes.js": "true",
+					"references.js": "true"
+				}
+			}
+		},
+		{
+			"id": "c47dc6bd-803d-4a34-9db1-dfc89c3b90e7",
+			"name": "c47dc6bd-803d-4a34-9db1-dfc89c3b90e7",
+			"type": "facts",
+			"content": {
+				"number": "0",
+				"title": "Kontakta redaktionen",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><span>Kontakta oss g&auml;rna, i f&ouml;rsta hand via e-post.<br /><a href=\"http://www.lakemedelsverket.se/topp/Kontakta-oss/Kontaktpersoner/Ovrigt/Kontakta-redaktionen/\">Skicka meddelande till redaktionen</a><br /></span></p>\r\n<p><span></span></p>\r\n<p><span><strong>Redakt&ouml;r:</strong><br /><span>Helena Ramstr&ouml;m</span><br /><span>leg. apotekare, farm. dr</span><br /><a href=\"mailto:helena.ramstrom@mpa.se\">helena.ramstrom@mpa.se</a><br /><span>070-276 34 95</span></span></p>\r\n<p></p>\r\n<p></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<h4><span>Vem f&aring;r L&auml;kemedelsboken?</span></h4>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p class=\"normal\">All sjukv&aring;rdspersonal med f&ouml;rskrivningsr&auml;tt erh&aring;ller ett exemplar utan kostnad, och f&ouml;r distributionen av LB inom de olika landstingen svarar respektive&nbsp;<a href=\"http://www.skl.se/vi_arbetar_med/halsaochvard/lakemedel/kontaktpersoner_landsting/lakemedelskommitteerna\">l&auml;kemedelsr&aring;d / l&auml;kemedelskommitt&eacute;&nbsp;</a>.</p>\r\n<p>Andra intressenter som universitet, h&ouml;gskolor, apotek och l&auml;kemedelsindustri h&auml;nvisas till L&auml;kemedelsverket f&ouml;r information om leveransvillkor och pris.</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "34c70332-6873-4e0e-876d-913b5ab232da",
+			"name": "34c70332-6873-4e0e-876d-913b5ab232da",
+			"type": "text",
+			"content": "<table id=\"facts_1\" class=\"table table-bordered facts span3 pull-right\">\n<tbody>\n<tr>\n<td colspan=\"1\">\n<h4 id=\"Kontakta-redaktionen\">Kontakta redaktionen</h4>\n</td>\n</tr>\n<tr>\n<td>\n<p>Kontakta oss g&auml;rna, i f&ouml;rsta hand via e-post. <br> <a href=\"http://www.lakemedelsverket.se/topp/Kontakta-oss/Kontaktpersoner/Ovrigt/Kontakta-redaktionen/\"> Skicka meddelande till redaktionen</a> <br><br></p>\n<p><strong>Redakt&ouml;r:</strong><br>Pernilla &Ouml;rtqvist<br> leg. apotekare, farm. dr<br><a href=\"mailto:lakemedelsboken@mpa.se\">lakemedelsboken@mpa.se</a><br> 070-276 34 95</p>\n</td>\n</tr>\n<tr>\n<td>\n<h4 id=\"Vem-far-Lakemedelsboken-\">Vem f&aring;r L&auml;kemedelsboken?</h4>\n</td>\n</tr>\n<tr>\n<td>\n<p class=\"normal\">All sjukv&aring;rdspersonal med f&ouml;rskrivningsr&auml;tt erh&aring;ller ett exemplar utan kostnad, och f&ouml;r distributionen av LB inom de olika landstingen svarar respektive <a href=\"http://www.skl.se/vi_arbetar_med/halsaochvard/lakemedel/kontaktpersoner_landsting/lakemedelskommitteerna\">l&auml;kemedelsr&aring;d / l&auml;kemedelskommitt&eacute; </a>.</p>\n<p>Andra intressenter som universitet, h&ouml;gskolor, apotek och l&auml;kemedelsindustri h&auml;nvisas till L&auml;kemedelsverket f&ouml;r information om leveransvillkor och pris.</p>\n</td>\n</tr>\n<tr>\n<td colspan=\"1\">\n<h4 id=\"PDF-versioner\">PDF-versioner</h4>\n</td>\n</tr>\n<tr>\n<td>\n<p><a class=\"pdfLink\" href=\"../files/v0.1.28/LB2014.pdf\"> Ladda hem hela boken (15 MB).</a></p>\n<p>Detta &auml;r en PDF-version av den tryckta boken som inte uppdateras, till skillnad fr&aring;n enskilda kapitel i PDF-format. H&aring;kan &auml;r b&auml;st!</p>\n</td>\n</tr>\n<tr>\n<td>\n<p><a href=\"pdfs.html\">Visa enskilda kapitel som PDF </a></p>\n</td>\n</tr>\n<tr>\n<td>\n<h4 id=\"Javsdeklarationer\">J&auml;vsdeklarationer</h4>\n</td>\n</tr>\n<tr>\n<td>\n<p class=\"normal\">F&ouml;rfattarnas j&auml;vsdeklarationer har bed&ouml;mts och godk&auml;nts enligt de riktlinjer som tagits fram i det myndighetsgemensamma j&auml;vsn&auml;tverket, <a href=\"http://www.lakemedelsverket.se/overgripande/Publikationer/Deklaration-av-jav-intressekonflikter-eller-andra-bindningar-/\">www.lakemedelsverket.se</a>. J&auml;vsdeklarationerna finns tillg&auml;ngliga p&aring; f&ouml;rfr&aring;gan till L&auml;kemedelsverket. I slutet av varje kapitel finns f&ouml;rberedda mejl till <a href=\"mailto:registrator@mpa.se\">registrator@mpa.se</a>.</p>\n</td>\n</tr>\n<tr>\n<td>\n<h4 id=\"Oppen-kallkod\">&Ouml;ppen k&auml;llkod</h4>\n</td>\n</tr>\n<tr>\n<td>\n<p class=\"normal\">Webbversionen av L&auml;kemedelsboken &auml;r &ouml;ppen k&auml;llkod. Gabriel</p>\n<p>Vi tar tacksamt emot f&ouml;rb&auml;ttringsf&ouml;rslag via <a href=\"https://github.com/lakemedelsboken\"><i class=\"fa fa-github\"> </i> GitHub</a>.</p>\n</td>\n</tr>\n<tr>\n<td>\n<h4 id=\"Forord-\"><a href=\"foreword.html\">F&ouml;rord </a></h4>\n</td>\n</tr>\n<tr>\n<td>\n<h4 id=\"Forfattarregister-\"><a href=\"authors.html\">F&ouml;rfattarregister </a></h4>\n</td>\n</tr>\n<tr>\n<td>\n<h4 id=\"Redaktionskommitt-\"><a href=\"editors.html\">Redaktionskommitt&eacute; </a></h4>\n</td>\n</tr>\n<tr>\n<td>\n<h4 id=\"Pressmaterial-\"><a href=\"press.html\">Pressmaterial </a></h4>\n</td>\n</tr>\n<tr>\n<td>\n<h4 id=\"Webbtjanster-\"><a href=\"../api/\">Webbtj&auml;nster </a></h4>\n</td>\n</tr>\n<tr>\n<td>\n<h4 id=\"Smart-bokmarke-\"><a href=\"../bookmarklets/\">Smart bokm&auml;rke </a></h4>\n</td>\n</tr>\n</tbody>\n</table>",
+			"settings": {
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				},
+				"preprocessors": {
+					"idinjection.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ba03ef99-8135-4ea7-bbf1-ccf974c638cf",
+			"name": "ba03ef99-8135-4ea7-bbf1-ccf974c638cf",
+			"type": "html",
+			"content": "</div>",
+			"settings": {
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				},
+				"preprocessors": {
+					"idinjection.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3275a971-0a04-4996-b496-fcfaed11984b",
+			"name": "3275a971-0a04-4996-b496-fcfaed11984b",
+			"type": "collection",
+			"content": {
+				"basedir": "/blog/",
+				"filter": "nyhet",
+				"perpage": "10",
+				"htmlbefore": "",
+				"htmlafter": "<div>\r\n<a href=\"{URL}\">Läs vidare &#187;</a>\r\n</div>\r\n<hr>",
+				"createfeed": "false"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f548801a-92ab-4328-bb37-ba7fea7984e1",
+			"name": "f548801a-92ab-4328-bb37-ba7fea7984e1",
+			"type": "text",
+			"content": "<h2 class=\"p1\" id=\"Om-Lakemedelsboken\"><span class=\"s1\">Om&nbsp;L&auml;kemedelsboken</span></h2>\n<p class=\"p2 normal\">L&auml;kemedelsbokens &ouml;vergripande m&aring;ls&auml;ttning &auml;r att ge producentoberoende information om l&auml;kemedelsbehandling vid vanliga sjukdomstillst&aring;nd. Boken inneh&aring;ller ocks&aring; kapitel som tar upp mer &ouml;vergripande aktuella aspekter p&aring; l&auml;kemedelsanv&auml;ndning samt kapitel om regelverket inom l&auml;kemedelsomr&aring;det.</p>\n<p class=\"p3 normal\">LB v&auml;nder sig framf&ouml;r allt till specialister i allm&auml;nmedicin, l&auml;kare under specialistutbildning eller allm&auml;ntj&auml;nstg&ouml;ring samt medicine och farmacie studerande, men ocks&aring; till l&auml;kare som beh&ouml;ver r&aring;d vid medicinska problem utanf&ouml;r den egna specialiteten.</p>\n<h2 class=\"p1\" id=\"Den-nya-webbversionen\"><span class=\"s1\">Den nya webbversionen</span></h2>\n<p class=\"p2\">Den nya webbversionen &auml;r en betaversion. Det inneb&auml;r att ett visst arbete kvarst&aring;r med layouten och l&auml;nkarna till Fass-texter f&ouml;r l&auml;kemedelssubstanserna. L&auml;kemedelssubstanser som n&auml;mns i texten &auml;r &rdquo;underprickade&rdquo; (med diskreta prickar) och klickbara. Kopplingar till Fass-texter har delvis genererats automatiskt och d&auml;rf&ouml;r har substanserna blivit underprickade vare sig det i texten r&ouml;r sig om ett l&auml;kemedel eller inte, exempelvis glukos. Detta kommer successivt att &aring;tg&auml;rdas liksom att det f&ouml;r en viss l&auml;kemedelssubstans i dagsl&auml;get kan saknas l&auml;kemedel som egentligen skulle varit kopplade till en aktuell substans/l&auml;kemedelsgrupp.</p>\n<h3 class=\"p4\" id=\"Terapirekommendationer-tabeller-figurer-och-faktarutor\"><span class=\"s1\">Terapirekommendationer, tabeller, figurer och faktarutor</span></h3>\n<p class=\"p2\">Terapirekommendationer, tabeller, figurer och faktarutor har samlats f&ouml;rst i kapitlen, innan inledningsavsnitten, f&ouml;r att vara l&auml;tt&aring;tkomliga men &aring;terfinns &auml;ven d&auml;r de omn&auml;mns i texten.</p>\n<h3 class=\"p4\" id=\"Sokfunktionen\"><span class=\"s1\">S&ouml;kfunktionen</span></h3>\n<p class=\"p2\">S&auml;rskild omsorg har &auml;gnats s&ouml;kfunktionen s&aring; att den ska vara snabb, l&auml;ttnavigerad och &auml;ven i &ouml;vrigt anv&auml;ndarv&auml;nlig. Pr&ouml;va och kom med synpunkter!</p>",
+			"settings": {
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				},
+				"preprocessors": {
+					"idinjection.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"pageType": "",
+	"path": "/Users/staliv/Projects/LB/servers/cms/content/index.json",
+	"isPublished": true,
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"headerContent": "",
+	"footerContent": "",
+	"modified": "2015-04-26 23:34",
+	"indexed": "false",
+	"description": ""
+}

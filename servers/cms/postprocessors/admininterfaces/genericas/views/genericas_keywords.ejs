@@ -1,0 +1,248 @@
+<% include ../../../../views/header %>
+<style>
+
+.treeview, .treeview ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.treeview ul {
+	background-color: white;
+	margin-top: 4px;
+}
+
+.treeview .hitarea {
+	background: url(/cms/images/treeview-default.gif) -64px -25px no-repeat;
+	height: 16px;
+	width: 16px;
+	margin-left: -16px;
+	float: left;
+	cursor: pointer;
+}
+/* fix for IE6 */
+* html .hitarea {
+	display: inline;
+	float:none;
+}
+
+.treeview li {
+	margin: 0;
+	padding: 3px 0pt 3px 16px;
+}
+
+.treeview a.selected {
+	background-color: #eee;
+}
+
+#treecontrol { margin: 1em 0; display: none; }
+
+.treeview .hover { text-decoration: underline; cursor: pointer; }
+
+.treeview li { background: url(/cms/images/treeview-default-line.gif) 0 0 no-repeat; }
+.treeview li.collapsable, .treeview li.expandable { background-position: 0 -176px; }
+
+.treeview .expandable-hitarea { background-position: -80px -3px; }
+
+.treeview li.last { background-position: 0 -1766px }
+.treeview li.lastCollapsable, .treeview li.lastExpandable { background-image: url(/cms/images/treeview-default.gif); }
+.treeview li.lastCollapsable { background-position: 0 -111px }
+.treeview li.lastExpandable { background-position: -32px -67px }
+
+.treeview div.lastCollapsable-hitarea, .treeview div.lastExpandable-hitarea { background-position: 0; }
+
+.treeview-red li { background-image: url(/cms/images/treeview-red-line.gif); }
+.treeview-red .hitarea, .treeview-red li.lastCollapsable, .treeview-red li.lastExpandable { background-image: url(/cms/images/treeview-red.gif); }
+
+.treeview-black li { background-image: url(/cms/images/treeview-black-line.gif); }
+.treeview-black .hitarea, .treeview-black li.lastCollapsable, .treeview-black li.lastExpandable { background-image: url(/cms/images/treeview-black.gif); }
+
+.treeview-gray li { background-image: url(/cms/images/treeview-gray-line.gif); }
+.treeview-gray .hitarea, .treeview-gray li.lastCollapsable, .treeview-gray li.lastExpandable { background-image: url(/cms/images/treeview-gray.gif); }
+
+.treeview-famfamfam li { background-image: url(/cms/images/treeview-famfamfam-line.gif); }
+.treeview-famfamfam .hitarea, .treeview-famfamfam li.lastCollapsable, .treeview-famfamfam li.lastExpandable { background-image: url(/cms/images/treeview-famfamfam.gif); }
+
+.treeview .placeholder {
+	background: url(/cms/images/ajax-loader.gif) 0 0 no-repeat;
+	height: 16px;
+	width: 16px;
+	display: block;
+}
+
+.filetree li { padding: 3px 0 2px 16px; }
+.filetree span.folder, .filetree span.file { padding: 1px 0 1px 16px; display: block; }
+.filetree span.folder { background: url(/cms/images/folder.gif) 0 0 no-repeat; }
+.filetree li.expandable span.folder { background: url(/cms/images/folder-closed.gif) 0 0 no-repeat; }
+.filetree span.file { background: url(/cms/images/file.gif) 0 0 no-repeat; }
+
+</style>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<%
+			if (id !== "/") {
+				var backPath = id.split("/");
+				backPath.pop();
+				backPath = backPath.join("/");
+				backPath = "/cms" + backPath;
+				if (backPath === "") {
+					backPath = "/"
+				}
+			%>
+			<a href="<%=backPath%>" class="btn navbar-btn btn-primary"><i class="fa fa-chevron-left"></i> Tillbaka</a>
+			<%
+			}
+			%>
+
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Meny</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+		</div>
+		<div class="navbar-collapse collapse navbar-right">
+
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12 col-md-12 main">
+			<h1 class="page-header">Nyckelord för substansnamn</h1>
+
+
+
+	<div class="row">
+		<div class="col-sm-5">
+			<div class="well">
+				<a class="btn btn-sm btn-primary pull-right" target="_blank" href="/cms/processors/genericas/keywords.json"><i class="fa fa-arrow-down"></i> Ladda hem ordlistan</a>
+				<br>
+				<ul id="wordList" class="nav nav-list">
+					<li class="nav-header">Ordlista</li>
+					<% for (var word in keywords) { %>
+					<li class="clearfix word" style="cursor: pointer;"><button class="btn btn-xs btn-danger pull-right deleteWord" data-word-id="<%=word%>"><i class="fa fa-times"></i></button> <i class="fa fa-pencil"></i> <small><strong><%=word%></strong> : <%=keywords[word].atc%></small></li>
+					<% } %>
+				</ul>
+			</div>
+		</div>
+		<div class="col-sm-7">
+			<!--
+			<a class="btn btn-primary" href="/cms/processors/genericas/keywords/existing">Visa alla hittade ordkopplingar <i class="fa fa-arrow-right"></i></a>
+			-->
+			<h2>Skapa ny ordkoppling</h2>
+			<div>
+				<fieldset>
+					<form id="update">
+						<label>Ord i text:</label>
+						<input class="form-control" type="text" id="keyword" name="keyword" autocomplete="off" placeholder="Till exempel 'tyroxin'">
+
+						<label>ATC-kod:</label>
+						<input class="ajax-typeahead form-control" type="text" id="value" autocomplete="off" name="value" placeholder="Till exempel 'H03AA Tyreoideahormoner'" data-link="/cms/processors/genericas/atc">
+						<br>
+						<button id="updateKeyword" class="btn btn-primary" data-loading-text="Sparar..." autocomplete="off"><i class="fa fa-check"></i> Spara koppling</button>
+					</form>
+				</fieldset>
+			</div>
+			<h2>Leta i ATC-trädet:</h2>
+			<div>
+				<ul id="asyncTree">
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+		</div>
+	</div>
+</div>
+
+<script src="/cms/javascripts/jquery.min.js"></script>
+<script src="/cms/javascripts/bootstrap.js"></script>
+<script src="/cms/javascripts/typeahead.js"></script>
+<script src="/cms/javascripts/picturefill.js"></script>
+<script src="/cms/javascripts/image-picker.js"></script>
+<script src="/cms/javascripts/jquery.simple-dtpicker.js"></script>
+<script src="/cms/javascripts/tinymce/tinymce.min.js"></script>
+<script src="/cms/javascripts/jquery.treeview.min.js"></script>
+<script src="/cms/javascripts/jquery.treeview.async.js"></script>
+
+<script>
+$.ajaxSetup({ cache: false });
+
+$('.ajax-typeahead').typeahead({
+    source: function(query, process) {
+        return $.ajax({
+            url: $("#value").attr("data-link"),
+            type: 'get',
+            data: {query: query},
+            dataType: 'json',
+            success: function(json) {
+                return typeof json.options == 'undefined' ? false : process(json.options);
+            }
+        });
+    }
+});
+
+$("#asyncTree").treeview({
+	url: "/cms/processors/genericas/atctree"
+})
+
+$("#updateKeyword").on("click", function(event) {
+	event.preventDefault();
+	var word = $.trim($("#keyword").val());
+	var atc = $.trim($("#value").val());
+
+	if (word !== "" && atc !== "") {
+		var formData = {keyword: word, value: atc};
+		var button = $(this);
+		button.button('loading');
+		$.get("/cms/processors/genericas/updatekeyword", formData, function(data, textStatus, jqXHR) {
+			if (textStatus === "success") {
+				//Reset inputs
+				$("#keyword").val("");
+				$("#value").val("");
+				//Update list of words
+				updateWordList();
+			} else {
+				alert(textStatus);
+			}
+			button.button('reset');
+		});
+	}
+});
+
+$(document).on("click", ".deleteWord", function(event) {
+	event.stopPropagation();
+	$.get("/cms/processors/genericas/deletekeyword", {keyword: $(this).attr("data-word-id")}, function(data, textStatus, jqXHR) {
+		updateWordList();
+	});
+});
+
+$(document).on("click", ".word", function(event) {
+
+	var text = $(this).text().split(" : ");
+	var keyword = $.trim(text[0]);
+	var value = $.trim(text[1]);
+	$("#keyword").val(keyword);
+	$("#value").val(value);
+
+});
+
+function updateWordList() {
+	$.get("/cms/processors/genericas/keywords.json", function(data) {
+		var words = data;
+		$("#wordList").empty();
+		$("#wordList").append($("<li class=\"nav-header\">Ordlista</li>"));
+		for (var word in words) { 
+			$("#wordList").append($("<li class=\"clearfix word\" style=\"cursor: pointer;\"><button class=\"btn btn-xs btn-danger pull-right deleteWord\" data-word-id=\"" + word + "\"><i class=\"fa fa-times\"></i></button> <i class=\"fa fa-pencil\"></i> <small><strong>" + word + "</strong> : " + words[word].atc + "</small></li>"));
+		}
+
+	});
+}
+		</script>
+	</body>
+</html>

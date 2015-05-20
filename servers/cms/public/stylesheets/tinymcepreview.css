@@ -1,0 +1,28 @@
+.updated {
+	color: red;
+}
+
+p.ingress {
+	font-family: 'Helvetica Neue Ultra Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 23px;
+}
+
+p {
+	margin: 0;
+}
+
+p.normal {
+	margin-bottom: 10px;
+}
+
+p.indent {
+	text-indent: 30px;
+	margin: 0;
+}
+
+.facts p.indent {
+	text-indent: 15px;
+	margin: 0;
+}

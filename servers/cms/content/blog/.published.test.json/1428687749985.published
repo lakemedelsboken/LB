@@ -1,0 +1,39 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida/Nyhet",
+	"title": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "nyhet",
+	"created": "2015-03-21 09:26:00",
+	"published": "2015-04-10 19:42",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"content": [
+		{
+			"id": "4853a8d7-bca1-4205-a52a-5c0b2eb1a9e2",
+			"name": "d68a36a8-411f-4a89-bc76-32526300c21a",
+			"type": "text",
+			"content": "<h1 id=\"Rubrik\">Rubrik</h1>\n<p>Lorem ipsum</p>\n<p>Dolor</p>",
+			"settings": {
+				"postprocessors": []
+			}
+		}
+	],
+	"type": "file",
+	"path": "/Users/staliv/Projects/LB/servers/cms/content/blog/test.json",
+	"isPublished": true,
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"modified": "2015-04-10 19:42",
+	"headerContent": "",
+	"footerContent": ""
+}

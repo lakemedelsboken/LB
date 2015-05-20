@@ -1,0 +1,48 @@
+#sideMenu {
+	overflow-y: scroll;
+}
+#sideBar {
+	display: block;
+}
+a#fullscreen {
+	display: none;
+}
+a#pdf {
+	top: 10px;
+}
+a.pageFootnoteItem, a.pageFootnoteItem:hover {
+	background: none;
+	border: none;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+a.pageFootnoteItem .icon {
+	display: none;
+}
+fieldset.pageFootnote {
+	display: block;
+}
+sup.hiddenNoteNumber {
+	display: block;
+}
+
+#settings {
+	display: none;
+}
+
+@media (max-width: 767px) {
+	a#toggleNavigation.visible-phone {
+		display: none !important;
+	}
+	#sideMenu {
+		overflow-y: scroll;
+		display: block;
+	}
+	#sideBar {
+		display: block;
+	}
+	#settings {
+		display: none;
+	}
+}

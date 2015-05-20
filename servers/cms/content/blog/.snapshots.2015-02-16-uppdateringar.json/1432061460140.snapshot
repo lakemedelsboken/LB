@@ -1,0 +1,65 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "Uppdateringar",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "nyhet",
+	"created": "2015-02-16 09:00",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "/blog/2015-02-16-uppdateringar",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "76f9bd55-34d1-4c3b-99ea-680c90e05642",
+			"name": "3f3aa8c4-4465-45fb-a06c-a6fe9cb9c5d7",
+			"type": "summary",
+			"content": "<p>Uppdateringar 2015-02-16</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1b6675d1-280d-495f-9615-60cbea1ee8e7",
+			"name": "a9d3577b-e889-4743-a0ae-d6b8e98a7253",
+			"type": "text",
+			"content": "<h1 id=\"Uppdateringar\">Uppdateringar</h1>\n<h3 id=\"1urininkontinenshttpwwwlakemedelsbokenseg2_nef_urininkontinens_2013fm10htmlidg2_20g2_20\">1.&nbsp;<a href=\"http://www.lakemedelsboken.se/g2_nef_urininkontinens_2013fm10.html?id=g2_20#g2_20\">Urininkontinens</a></h3>\n<p>Texten om mirabegron &auml;r uppdaterad.</p>\n<h3 id=\"n-2-Redaktionskommitt-n\">2.&nbsp;<a href=\"http://www.lakemedelsboken.se/editors.html\">Redaktionskommitt&eacute;n</a></h3>\n<p>Redaktionskommitt&eacute;n &auml;r uppdaterad.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/Users/staliv/Projects/LB/servers/cms/content/blog/2015-02-16-uppdateringar.json",
+	"indexed": "true",
+	"modified": "2015-05-19 20:51"
+}

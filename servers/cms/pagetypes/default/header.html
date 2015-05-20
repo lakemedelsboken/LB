@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<title>{title}</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="{author}">
+		<meta name="description" content="{description}">
+		<meta name="keywords" content="{keywords}">
+		<link rel="schema.DC" href="http://purl.org/dc/terms/">
+		<meta name="DC.title" content="{title}">
+		<meta name="DC.description" content="{description}">
+		<meta name="DC.subject" content="{subject}">
+		<meta name="DC.created" content="{created}">
+		<meta name="DC.modified" content="{modified}">
+		<meta name="DC.type" content="{informationType}">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+		<link rel="stylesheet" href="{pre}/css/styles.min.css">
+		<!--[if lt IE 9]><script src="{pre}/js/html5shiv.min.js"></script><![endif]-->
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="{pre}/css/noscript.min.css">
+		</noscript>
+		{headerContent}
+	</head>
+	<body>
+		<a href="#" id="gotoTop" class="btn btn-mini btn-primary visible-phone" title="G&#229; till sidans topp"><i class="fa fa-arrow-up"></i></a>
+		<a href="#" id="fullscreen" class="btn btn-small btn-primary hidden-phone" title="Visa text i fullsk&#228;rm (f)"><i id="fullscreenIcon" class="fa fa-expand"></i></a>
+		<a href="#" id="normalscreen" class="btn btn-small btn-primary hidden-phone" title="Visa text normalt (f)"><i id="normalscreenIcon" class="fa fa-compress"></i></a>
+		<a href="#" id="settings" class="btn btn-small btn-primary" title="Inst&#228;llningar"><i id="settingsIcon" class="fa fa-cog"></i></a>
+		<div class="container" id="content">
+			<div class="row">
+				{leftcolumn}
+				<div id="mainContainer" class="span10 offset1">
+					<div id="main">

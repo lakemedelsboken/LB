@@ -1,0 +1,40 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida/Nyhet",
+	"title": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-03-21 19:59:07",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"content": [
+		{
+			"id": "dcdd7720-d56e-462c-a073-eeb1e5b31f37",
+			"name": "77998a67-13be-4229-9d3b-fd4fb2ead2b1",
+			"type": "text",
+			"content": "<h1 id=\"Gabriel-ar-bast\">Gabriel &auml;r b&auml;st</h1>\r\n<p>Lorem ipsum</p>",
+			"settings": {
+				"postprocessors": []
+			}
+		},
+		{
+			"id": "00691970-0a10-4fe0-9b23-30cfd6d3a9a4",
+			"name": "00691970-0a10-4fe0-9b23-30cfd6d3a9a4",
+			"type": "image",
+			"content": {
+				"image": "/images/mpa.png",
+				"alt": "",
+				"htmlbefore": "",
+				"htmlafter": "",
+				"maxwidth": ""
+			},
+			"settings": {}
+		}
+	],
+	"type": "file",
+	"path": "/Users/staliv/Projects/LB/servers/cms/content/blog/gabriel-r-b-st.json"
+}

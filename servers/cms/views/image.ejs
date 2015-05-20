@@ -1,0 +1,128 @@
+<% include header %>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<%
+			if (id !== "/") {
+				var backPath = id.split("/");
+				backPath.pop();
+				backPath = backPath.join("/");
+				backPath = "/cms" + backPath;
+				if (backPath === "") {
+					backPath = "/"
+				}
+			%>
+			<a href="<%=backPath%>" class="btn navbar-btn btn-primary"><i class="fa fa-chevron-left"></i> Tillbaka</a>
+			<%					
+			}
+			%>
+
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Meny</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+<!--
+			<a class="navbar-brand" href="/"><%=id%></a>
+			-->
+		</div>
+		<div class="navbar-collapse collapse">
+			<button class="btn navbar-btn btn-danger pull-right" data-toggle="modal" data-target="#removeImageModal"><i class="fa fa-trash"></i> Ta bort bild...</button>
+<!--
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Dashboard</a></li>
+				<li><a href="#">Settings</a></li>
+				<li><a href="#">Profile</a></li>
+			</ul>
+			<form class="navbar-form navbar-right">
+				<input type="text" class="form-control" placeholder="Search...">
+			</form>
+-->		
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12 col-md-12 main">
+			<h1 class="page-header">Bild</h1>
+
+				<%
+				
+				for (var i = 0; i < data.regImages.length; i++) {
+					var imageData = data.regImages[i];
+				%>
+				<div class="col-sm-2">
+					<div class="panel panel-default">
+						<div class="panel-heading"><%=imageData.name%></div>
+						<div class="panel-body">
+							<a href="/cms/draft<%=data.path%>/<%=imageData.name%>"><img class="img-thumbnail" src="/cms/draft<%=data.path%>/<%=imageData.name%>"></a>
+							<br>
+					
+							<br>
+							<%
+							if (imageData.features) {
+							%>
+								<strong>Dimensioner:</strong><br><%=imageData.features.width%> x <%=imageData.features.height%><br>
+								<strong>Storlek:</strong> <%=imageData.size%><br>
+							<%
+							}
+							%>
+						</div>
+					</div>
+				</div>
+				<%
+					imageData = data.optImages[i];
+					if (imageData !== undefined) {
+				%>
+				<div class="col-sm-2">
+					<div class="panel panel-success">
+						<div class="panel-heading"><%=imageData.name%> (opt)</div>
+						<div class="panel-body">
+							<a href="/cms/draft<%=data.path%>/opt/<%=imageData.name%>"><img class="img-thumbnail" src="/cms/draft<%=data.path%>/opt/<%=imageData.name%>"></a>
+							<br>
+					
+							<br>
+							<%
+							if (imageData.features) {
+							%>
+								<strong>Dimensioner:</strong><br><%=imageData.features.width%> x <%=imageData.features.height%><br>
+								<strong>Storlek:</strong> <%=imageData.size%><br>
+							<%
+							}
+							%>
+						</div>
+					</div>
+				</div>
+				<%
+					}
+				}
+				
+				%>
+
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Ta bort bild" id="removeImageModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4>Ta bort bild: <%=id%></h4>
+			</div>
+			<form action="/cms/images/removeimage" method="get" class="form-horizontal" role="form">
+				<input type="hidden" name="imagepath" value="<%=id%>">
+				<div class="modal-body">
+					Är du säker på att du vill ta bort den här bilden?
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ta bort</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<% include footer %>

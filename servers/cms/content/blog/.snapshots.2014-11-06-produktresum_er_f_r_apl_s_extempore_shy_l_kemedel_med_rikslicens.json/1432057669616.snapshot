@@ -1,0 +1,134 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "Produktresuméer för APL:s extempore­läkemedel med rikslicens",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "nyhet",
+	"created": "2015-05-19 19:25",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "/blog/2014-11-06-produktresum_er_f_r_apl_s_extempore_shy_l_kemedel_med_rikslicens",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "a098678b-ad27-44f9-a555-6178aa9d7c36",
+			"name": "2ff6ca04-81a8-4f26-9561-9111061a2940",
+			"type": "summary",
+			"content": "<p>Nu finns produktresum&eacute;er f&ouml;r extemporel&auml;kemedel med rikslicens fr&aring;n APL</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "464bf3a4-0968-42e1-b83e-3f4bb5c9adab",
+			"name": "9116c85b-d971-4b60-a338-3831127fc015",
+			"type": "text",
+			"content": "<h1 id=\"Produktresum-er-for-APL-s-extempore-lakemedel-med-rikslicens\">Produktresum&eacute;er f&ouml;r APL:s extempore&shy;l&auml;kemedel med rikslicens</h1>\n<p class=\"normal\">Sedan n&aring;gra veckor tillbaka exponerar LB produktresum&eacute;er f&ouml;r&nbsp;<a href=\"http://www.lakemedelsboken.se/u25_rgv_lakemdsaknas_2013fm10.html?id=u25_10\">extemporel&auml;kemedel med rikslicens</a>&nbsp;fr&aring;n&nbsp;<a href=\"https://www.apl.se/sv/Sidor/valkommen.aspx\">APL (Apotek Produktion &amp; Laboratorier AB)</a>. Produktresum&eacute;erna h&auml;mtas via en &ouml;ppen webbtj&auml;nst.</p>\n<p class=\"normal\">Utseendet f&ouml;r produktinformationen &auml;r snarlik den LB visar fr&aring;n&nbsp;<a href=\"https://npl.mpa.se/mpa.npl.services/home2.aspx\" title=\"Nationellt Produktregister f&#xF6;r L&#xE4;kemedel\">NPL</a>&nbsp;och&nbsp;<a href=\"http://www.fass.se/\">Fass</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "898ece63-1a65-4eee-896a-ac578b305c96",
+			"name": "898ece63-1a65-4eee-896a-ac578b305c96",
+			"type": "image",
+			"content": {
+				"image": "/images/blog/apl/kolkicin_apl.png",
+				"alt": "",
+				"htmlbefore": "",
+				"htmlafter": "",
+				"maxwidth": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b2f6065b-1edb-4ac9-a9de-ca3810131461",
+			"name": "b2f6065b-1edb-4ac9-a9de-ca3810131461",
+			"type": "image",
+			"content": {
+				"image": "/images/blog/apl/kolkicin_apl_iphone6.png",
+				"alt": "",
+				"htmlbefore": "<div class=“row”><div class=“span6\">",
+				"htmlafter": "</div>",
+				"maxwidth": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "53d2604a-d21c-4c19-999e-872890c76a89",
+			"name": "53d2604a-d21c-4c19-999e-872890c76a89",
+			"type": "image",
+			"content": {
+				"image": "/images/blog/apl/kolkicin_apl_nexus5.png",
+				"alt": "",
+				"htmlbefore": "<div class=\"span6\">",
+				"htmlafter": "</div></div>",
+				"maxwidth": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/Users/staliv/Projects/LB/servers/cms/content/blog/2014-11-06-produktresum_er_f_r_apl_s_extempore_shy_l_kemedel_med_rikslicens.json",
+	"indexed": "true",
+	"modified": "2015-05-19 19:47"
+}

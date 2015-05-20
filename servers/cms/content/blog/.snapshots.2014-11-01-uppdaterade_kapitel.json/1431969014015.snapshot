@@ -1,0 +1,65 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "Uppdaterade kapitel",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "nyhet",
+	"created": "2014-11-01 09:00",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "/blog/2014-11-01-uppdaterade_kapitel",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "89ade39f-f3e8-4fc1-97a4-946f8aa45f50",
+			"name": "5a827ad1-3684-407a-b2ee-142a6c05f150",
+			"type": "summary",
+			"content": "<p>Fyra kapitel har uppdaterats 2014-11-01</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "69fc9232-e9d2-4ac9-b8c4-597ea4608305",
+			"name": "8844d5bf-f4a7-4ba0-bb3f-9685d51a278b",
+			"type": "text",
+			"content": "<h1 id=\"Rubrik\">Rubrik</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/Users/staliv/Projects/LB/servers/cms/content/blog/2014-11-01-uppdaterade_kapitel.json",
+	"indexed": "true",
+	"modified": "2015-05-18 19:10"
+}

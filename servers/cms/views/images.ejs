@@ -1,0 +1,222 @@
+<% include header %>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<%
+			if (id !== "/") {
+				var backPath = id.split("/");
+				var test = backPath.pop();
+				
+				if (test === "" && backPath.length > 0) {
+					backPath.pop();
+				}
+				
+				backPath = backPath.join("/");
+				backPath = "/cms" + backPath;
+				if (backPath === "") {
+					backPath = "/"
+				}
+			%>
+			<a href="<%=backPath%>" class="btn navbar-btn btn-primary"><i class="fa fa-chevron-left"></i> Tillbaka</a>
+			<%					
+			}
+			%>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Meny</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="navbar-collapse collapse navbar-right">
+			<button type="button" class="btn navbar-btn btn-info" data-toggle="modal" data-target="#uploadImageModal"><i class="fa fa-file"></i> Ny bild...</button>
+			<button type="button" class="btn navbar-btn btn-success" data-toggle="modal" data-target="#createDirectoryModal"><i class="fa fa-plus"></i> Ny katalog...</button>
+			<%
+			if (id && id !== "/images/" && id !== "/images") {
+			%>
+			<button type="button" class="btn navbar-btn btn-warning" data-toggle="modal" data-target="#moveDirectoryModal"><i class="fa fa-folder-open"></i> Flytta katalog...</button>
+			<button type="button" class="btn navbar-btn btn-danger" data-toggle="modal" data-target="#removeDirectoryModal"><i class="fa fa-trash"></i> Ta bort katalog...</button>
+			<%
+			}
+			%>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-4 col-md-4 sidebar">
+
+			<%
+			if (id && id.length > 1) {
+			%>
+			<ol class="breadcrumb">
+				<li><a href="/cms/">Hem</a></li>
+			<%
+			
+				var link = "/cms";
+				var links = id.split("/");
+				links.shift();
+				for	(var i = 0; i < links.length; i++) {
+					link += "/" + links[i];
+					%>
+					<li><a href="<%=link%>"><%=links[i]%></a></li>
+					<%
+				}
+			
+			%>
+			</ol>
+			<%
+			}
+			%>
+
+
+			<ul class="nav nav-sidebar">
+				<li class="dropdown-header">INNEHÅLL</li>
+			<%
+			for (var i = 0; i < content.length; i++) {
+				var item = content[i];
+			
+				if (item.type === "dir") {
+				%>
+				<li class="dir"><a href="/cms<%=item.relativePath%>"><i class="fa fa-folder"></i> <%=item.name%></a></li>
+				<%
+				} else if (item.type === "page") {
+				%>
+				<li class="file"><a href="/cms<%=item.relativePath%>"><i class="fa fa-file"></i> <%=item.name%></a></li>
+				<%
+				} else if (item.type === "image") {
+				%>
+				<!--
+					<li class="file"><a href="<%=item.relativePath%>"><i class="fa fa-picture"></i> <%=item.name%></a></li>
+				-->
+				<%
+				} else {
+				%>
+				<li class="file"><a href="/cms<%=item.relativePath%>"><i class="fa fa-question-circle"></i> <%=item.name%></a></li>
+				<%
+				}
+			}
+			%>
+
+			</ul>
+		</div>
+		<div class="col-sm-8 col-sm-offset-4 col-md-8 col-md-offset-4 main">
+			<h1 class="page-header">Bilder</h1>
+			<%
+			for (var i = 0; i < content.length; i++) {
+				var item = content[i];
+			
+				if (item.type === "image") {
+				%>
+
+			<div class="col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<%=item.name%>
+					</div>
+					<div class="panel-body">
+						<a href="/cms<%=item.relativePath%>"><img src="/cms/draft<%=item.relativePath%>/small.png" class="img-responsive"></a>
+					</div>
+				</div>
+			</div>
+				
+				<%
+				}
+			}
+			%>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Ladda upp bild" id="uploadImageModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4>Ladda upp bild</h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/images/upload" class="form-horizontal" role="form" method="post" enctype="multipart/form-data">
+					<input type="hidden" name="basedir" value="<%=id%>">
+					<div class="form-group">
+						<label for="image" class="col-sm-5 control-label">Bild (png-format, hög upplösning, gärna kring 600 dpi)</label>
+						<div class="col-sm-7">
+							<input type="file" class="form-control" id="image" name="image" placeholder="Välj en bild...">
+							<br>
+							<button type="submit" class="btn btn-primary pull-right"><i class="fa fa-upload"></i> Ladda upp</button>
+						</div>
+					</div>
+					<div class="form-group">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Flytta katalog" id="moveDirectoryModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4>Flytta katalog</h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/images/rename" method="get" class="form-horizontal" role="form">
+					<input type="hidden" name="before" value="<%=id%>">
+					<div class="form-group">
+						<label for="after" class="col-sm-2 control-label">Ny plats</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="after" name="after" placeholder="Ny plats" value="<%=id%>">
+							<br>
+							<button type="submit" class="btn btn-primary pull-right">Flytta</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Skapa katalog" id="createDirectoryModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4>Skapa katalog</h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/images/mkdir" method="get" class="form-horizontal" role="form">
+					<input type="hidden" name="basedir" value="<%=id%>">
+					<div class="form-group">
+						<label for="dirname" class="col-sm-2 control-label">Namn</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="dirname" name="dirname" placeholder="Katologens namn">
+							<br>
+							<button type="submit" class="btn btn-primary pull-right">Skapa</button>
+						</div>
+					</div>
+					<div class="form-group">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Ta bort katalog" id="removeDirectoryModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4>Ta bort katalog: <%=id%></h4>
+			</div>
+			<form action="/cms/images/rmdir" method="get" class="form-horizontal" role="form">
+				<input type="hidden" name="dirname" value="<%=id%>">
+				<div class="modal-body">
+					Är du säker på att du vill ta bort den här katalogen?
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ta bort</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<% include footer %>

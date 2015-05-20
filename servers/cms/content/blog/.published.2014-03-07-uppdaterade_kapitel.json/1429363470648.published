@@ -1,0 +1,64 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "Uppdaterade kapitel",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "nyhet",
+	"created": "2014-03-07 00:00",
+	"published": "2015-04-18 15:24",
+	"validUntil": "",
+	"createdBy": "Läkemedelsverket",
+	"replacesUrl": "/blog/2014-03-07-uppdaterade_kapitel",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "98b57993-e706-4e7e-b689-7f66117f6ba2",
+			"name": "98b57993-e706-4e7e-b689-7f66117f6ba2",
+			"type": "summary",
+			"content": "<p class=\"summary\">Tre kapitel har uppdaterats 2014-03-07</p>\n<p class=\"summary\">Test</p>\n<p>dsada</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "53c09ab7-d0cc-49c3-8f98-5b1cfe450d45",
+			"name": "83256b07-9b0e-4cba-8517-7837257e4624",
+			"type": "text",
+			"content": "<h1 id=\"Uppdaterade-kapitel\">Uppdaterade kapitel</h1>\n<h3 id=\"n-\"></h3>\n<h3 id=\"n-1-Den-akut-medvetslose-patienten\">1. <a href=\"{pre}/kapitel/akutmedicin/den_akut_medvetslose_patienten.html#a1_16\">Den akut medvetsl&ouml;se patienten</a></h3>\n<p>Ordet \"Blod\" har bytts ut mot \"Erytrocyter\".</p>\n<h3 id=\"n-2-Urininkontinens\">2. <a href=\"{pre}/kapitel/nefrologi-urologi/urininkontinens.html#g2_64\">Urininkontinens</a></h3>\n<p>Ett fel har &aring;tg&auml;rdats g&auml;llande omr&auml;kningen mellan frystorkade Desmopressintabletter kontra vanliga Desmopressintabletter.</p>\n<h3 id=\"n-3-Osteoporos-och-frakturprevention\">3. <a href=\"{pre}/kapitel/endokrinologi/osteoporos_och_frakturprevention.html#k2a_32\">Osteoporos och frakturprevention</a></h3>\n<p>Referens nr 17 har bytts ut och texten har d&auml;rf&ouml;r modifierats n&aring;got.</p>\n<p></p>",
+			"settings": {
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				},
+				"preprocessors": {
+					"idinjection.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/Users/staliv/Projects/LB/servers/cms/content/blog/2014-03-07-uppdaterade_kapitel.json",
+	"modified": "2015-04-18 15:24",
+	"isPublished": true
+}

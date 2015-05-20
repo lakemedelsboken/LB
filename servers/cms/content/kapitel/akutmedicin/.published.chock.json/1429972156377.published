@@ -1,0 +1,123 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Chock | Läkemedelsboken",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-04-25 16:29",
+	"published": "2015-04-25 16:29",
+	"validUntil": "",
+	"createdBy": "Christer Nilsson, Dan Westlin, Elisabet Ekman",
+	"replacesUrl": "/a2_aku_chock_2013fm10.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"description": "Vänsterkolumn",
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "a6b9d1fd-2b2d-4b4c-b734-e9a35733582c",
+			"name": "a6b9d1fd-2b2d-4b4c-b734-e9a35733582c",
+			"type": "author",
+			"content": {
+				"firstname": "Christer",
+				"surname": "Nilsson",
+				"description": "Karlskrona",
+				"email": ""
+			},
+			"settings": {}
+		},
+		{
+			"id": "ca7d651d-e4de-4275-8ec6-191838a12bcb",
+			"name": "ca7d651d-e4de-4275-8ec6-191838a12bcb",
+			"type": "author",
+			"content": {
+				"firstname": "Dan",
+				"surname": "Westlin",
+				"description": "Thoraxcentrum, Blekingesjukhuset, Karlskrona",
+				"email": ""
+			},
+			"settings": {}
+		},
+		{
+			"id": "cf2f2a3c-4096-4959-b57d-1a09c1f0791f",
+			"name": "cf2f2a3c-4096-4959-b57d-1a09c1f0791f",
+			"type": "author",
+			"content": {
+				"firstname": "Elisabet",
+				"surname": "Ekman",
+				"description": "Jämjö vårdcentral, Jämjö",
+				"email": ""
+			},
+			"settings": {}
+		},
+		{
+			"id": "52342ce0-b6ee-41cf-aaff-d7de3533dcd4",
+			"name": "52342ce0-b6ee-41cf-aaff-d7de3533dcd4",
+			"type": "text",
+			"content": "<h1 id=\"a2_3\"><a class=\"index\" id=\"1023314\" data-text=\"chock\"></a><a class=\"crossref\" id=\"41565\"></a>Chock</h1><h2 id=\"a2_4\">Inledning</h2><p class=\"ingress\"><a class=\"index\" id=\"1029334\" data-text=\"hypovolemisk chock;chock:hypovolemisk\"></a>Hypovolemisk chock (pga blödning eller stora vätskeförluster), kardiogen chock (t&nbsp;ex vid hjärtinfarkt) samt septisk chock utgör tre huvudtyper av <a class=\"index\" id=\"1029336\" data-text=\" chock:cirkulatorisk\"></a>cirkulatorisk chock som behandlas i detta kapitel. Ett specialfall av chock är anafylaktisk chock som beskrivs i ett separat kapitel <a href=\"a3_aku_anafylaxi_2013fm10.html#76028\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>. Chock kan också vara ett delsymtom vid intoxikationer, som beskrivs i kapitlet Förgiftningar – Antidotbehandling <a href=\"a6_aku_forgiftning_2013fm10.html#20346\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>, respektive Den akut medvetslöse patienten <a href=\"a1_aku_akutmedv_2013fm10.html#53811\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.</p><h2 id=\"a2_5\">Symtom</h2>",
+			"settings": {}
+		},
+		{
+			"id": "e96f1368-2d33-47e8-be60-c6cd1c4138f6",
+			"name": "e96f1368-2d33-47e8-be60-c6cd1c4138f6",
+			"type": "facts",
+			"content": {
+				"number": 1,
+				"title": "<a class=\"crossref\" id=\"60541\"></a><span style=\"font-weight: bold;\"></span>Minnesregel – kritiskt sjuk patient",
+				"text": "<table><tbody><tr><td><p>BAS–90–30–90<br>som innebär ett systoliskt blodtryck &lt;&nbsp;90 mm Hg, <br>en andningsfrekvens &gt;&nbsp;30 andetag/minut och en syrgasmättnad &lt;&nbsp;90&#37;.</p></td></tr></tbody></table>",
+				"id": "a2_7"
+			},
+			"settings": {}
+		},
+		{
+			"id": "b218c357-30e3-4491-ba3a-b6cd94a6949e",
+			"name": "b218c357-30e3-4491-ba3a-b6cd94a6949e",
+			"type": "text",
+			"content": "<p>En patient i chock uppvisar ofta rastlöshet, oro och ångest samt vid svårare chock en alltmer sänkt medvetandegrad och slutligen medvetslöshet. </p><p class=\"indent\">Patienten är, med undantag för tidig septisk chock, kallsvettig och har perifer cyanos och svag, snabb puls. Blodtrycket sjunker (systoliskt tryck &lt;&nbsp;90&nbsp;mm Hg hos tidigare normotensiv) liksom urinproduktionen (&lt;&nbsp;20 ml/timme). Se också Faktaruta 1.</p><span> </span><p class=\"indent\">Vid chock fås en störd cellmetabolism eftersom den sviktande cirkulationen inte kan förse vävnaderna med syre i tillräcklig omfattning.</p><p class=\"indent\">Genom att stänga av vävnadscirkulationen som inte primärt har till uppgift att transportera syre, t&nbsp;ex i huden, splanknikusområdet och njurarna, kan kroppen i inledningsfasen av chocken, under prechock, säkra syretillförseln till celler i vitala vävnader som hjärta och hjärna (samt upprätthålla ett nästan normalt blodtryck). Detta ses kliniskt som den bleka och kalla huden, vilken utmärker den vanliga s&nbsp;k <a class=\"index\" id=\"1028218\" data-text=\"chock:kall\"></a>kalla chocken, exempelvis vid hypovolemisk (blödning och dehydrering) och kardiogen chock.</p><h2 id=\"a2_8\">Behandling</h2>",
+			"settings": {}
+		},
+		{
+			"id": "0243eec3-04c8-440c-bafe-302262b17e57",
+			"name": "0243eec3-04c8-440c-bafe-302262b17e57",
+			"type": "facts",
+			"content": {
+				"number": 2,
+				"title": "<span style=\"font-weight: bold;\"><a class=\"crossref\" id=\"74477\"></a>Chock</span>",
+				"text": "<table><tbody><tr><td><h5 id=\"a2_11\"><span style=\"font-style: italic;\">Allmänt</span></h5><ul class=\"ordered\"><li><strong class=\"itemType\">1. </strong>Fria luftvägar</li></ul><ul class=\"ordered\"><li><strong class=\"itemType\">2. </strong>Oxygen</li></ul><ul class=\"ordered\"><li><strong class=\"itemType\">3. </strong>Höjd fotända</li></ul><ul class=\"ordered\"><li><strong class=\"itemType\">4. </strong>Fri venväg</li></ul><ul class=\"ordered\"><li><strong class=\"itemType\">5. </strong>Balanserad saltlösning (Ringer-acetat)</li></ul><h5 id=\"a2_12\"><span style=\"font-style: italic;\">Specifika åtgärder  </span>– <span class=\"tab\"></span>betingade av tillståndet/orsaken</h5><ul class=\"ordered\"><li><strong class=\"itemType\">1. </strong><a class=\"index\" id=\"1030406\" data-text=\"anafylaktisk chock;chock:anafylaktisk\"></a>Anafylaxi (kapitlet Anafylaxi, Terapirekommen&shy;dationerna – Anafylaxibehandling i akutsjuk&shy;vården <a href=\"a3_aku_anafylaxi_2013fm10.html#99203\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>).<br><a class=\"index\" id=\"1030408\" data-text=\"adrenalin:chock\"></a>Adrenalin (0,1 mg/ml) 0,1–0,3 mg (= 1–3 ml) intravenöst och kortikosteroider (tablett Beta&shy;pred 0,5 mg, 10 st i en liten mängd vatten eller injektion Betapred 4 mg/ml, 2 ml intravenöst alternativt Solu-Cortef 200 mg intravenöst).<br>Blodvolymexpansion (se punkt 3 nedan).<br>Inotropa kärlaktiva medel (dopamin och/<br>eller noradrenalin) vid behov därav.</li></ul><ul class=\"ordered\"><li><strong class=\"itemType\">2. </strong>Kardiogen chock <br>Inotropa kärlaktiva läkemedel, t&nbsp;ex dobutamin. <br>Vid hjärtinfarkt PCI (ballongvidgning av krans&shy;kärlen). Se kapitlet Ischemisk hjärtsjukdom, avsnittet PCI och stentar <a href=\"e1_hja_ischemhjart_2013fm10.html#73689\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a><span class=\"updated\" title=\"Texten &#xE4;r uppdaterad\"></span>.</li></ul><ul class=\"ordered\"><li><strong class=\"itemType\">3. </strong>Hypovolemi/blödning<br>Balanserade saltlösningar (t&nbsp;ex Ringer-acetat).<br>Erytrocytkoncentrat.</li></ul><ul class=\"ordered\"><li><strong class=\"itemType\">4. </strong>Acidoskorrektion<br>Tribonat, initialt 100 ml (50 mmol buffert) intra&shy;venöst.</li></ul><ul class=\"ordered\"><li><strong class=\"itemType\">5. </strong><a class=\"index\" id=\"1030449\" data-text=\"septisk chock;chock:septisk\"></a>Septisk chock<br>Blodvolymexpansion med balanserad saltlös&shy;ning (Ringer-acetat 1 000 ml på 15–20 minuter) och vid tillgång kompletterad med kolloid infu&shy;sionslösning (albumin 40–50 mg/ml).<br>Antibiotika.<br>Inotropa kärlaktiva läkemedel.<br><a class=\"index\" id=\"1030451\" data-text=\"hydrokortison:chock\"></a>Hydrokortison 200 mg/dygn som intravenös kontinuerlig infusion. Behandlingen övervägs hos vuxen patient som är vasopressorberoende.<br>Vid koagulationsrubbning (DIC) tillförsel <br>av <span>koagulationsfaktorer</span> och hämmare <br>(se kapitlet Blödningstillstånd, avsnittet Disse&shy;minerad intravasal koagulation (DIC) <a href=\"d3_blo_blodning_2013fm10.html#64776\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>).</li></ul><ul class=\"ordered\"><li><strong class=\"itemType\">6. </strong>Intoxikation<br>Allmän symtomatisk behandling.<br>Specifik behandling, se kapitlet Förgiftningar – Antidotbehandling <a href=\"a6_aku_forgiftning_2013fm10.html#20346\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>, samt Fass.</li></ul><p><span style=\"font-style: italic;\">OBS! Vid chocktillstånd är adekvat behandling av </span>den bakomliggande orsaken avgörande för ut&shy;gången. Effektiv behandling av smärta, t&nbsp;ex vid trauma och hjärtinfarkt, har hög prioritet och ska sättas in tidigt<span style=\"font-style: italic;\">.<br></span></p></td></tr></tbody></table>",
+				"id": "a2_10"
+			},
+			"settings": {}
+		},
+		{
+			"id": "e7be6955-0cf2-4c6e-844c-4fb5f5107d9a",
+			"name": "e7be6955-0cf2-4c6e-844c-4fb5f5107d9a",
+			"type": "text",
+			"content": "<p>Vid chocktillstånd är adekvat behandling av den bakomliggande orsaken avgörande för utgången. Effektiv behandling av smärta, t&nbsp;ex vid trauma och hjärtinfarkt, har hög prioritet och ska sättas in tidigt. För en översikt se Faktaruta 2 <a href=\"#74477\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.</p><span> </span><p class=\"indent\">Det är viktigt att uppmärksamma den inledande fasen till ett chocksyndrom och tidigt sätta in aktiv behandling med <a class=\"index\" id=\"1029232\" data-text=\"oxygen:chock\"></a>oxygentillförsel, 3–5 L/minut, med modern s&nbsp;k öppen mask eller grimma/näskateter. Om endast klassisk mask finns att tillgå bör flödet vara högre, 5–10 L/minut. Därutöver ges volymsubstitution med balanserad saltlösning, Ringer-acetat, 1–2 L (under iakttagande av halsvener vid misstanke om kardiell sjukdom). Detta kan förhindra utvecklandet av vävnadsanoxi med en anaerob cellmetabolism och acidos samt frisättandet av inflammatoriska mediatorer. En sådan <a class=\"index\" id=\"1028289\" data-text=\"v&#xE4;vnadsanoxi\"></a>vävnadsanoxi innebär en ytterligare försämrad vävnadsperfusion som i en ond cirkel leder till en ”irreversibel” chock med stor risk för utveckling av multiorgansvikt. Saknas tillgång till perifer ven är, vid tillgång på lämplig utrustning, den intraossösa tekniken enkel, snabb och säker, se även kapitlet Den akut medvetslöse patienten <a href=\"a1_aku_akutmedv_2013fm10.html#53811\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.</p><h3 id=\"a2_13\"><a class=\"index\" id=\"1021242\" data-text=\"acidos:chock\"></a>Acidos</h3><p>Behandling med initialt 100 ml <a class=\"index\" id=\"1021244\" data-text=\"Tribonat:chock\"></a>Tribonat (50&nbsp;mmol buffert) kan vid acidos vara av avgörande betydelse för effekten av andra insatser vid chockbehandling.</p><h3 id=\"a2_14\">Hypovolemi</h3><p>Kroppens kompensation vid ”kall chock” innebär frisättning av endogena katekolaminer och exogen tillförsel av katekolaminer ska rutinmässigt inte ges. Man strävar i&nbsp;stället efter att med blodvolymexpansion motverka den negativa vasokonstriktionen av katekolaminerna. </p><p class=\"indent\">Vid större blodförluster (glöm inte att söka efter blodförlust genom exempelvis rektalundersökning) förbereds blodtransfusion. </p><h3 id=\"a2_15\"><a class=\"index\" id=\"1021260\" data-text=\"kardiogen chock;chock:kardiogen\"></a>Kardiogen chock</h3><p><a class=\"index\" id=\"1028393\" data-text=\"atropin:chock\"></a>Atropin, 1&nbsp;mg intravenöst, upprepat upp till 3&nbsp;gånger, kan vara tillräcklig behandling av <a class=\"index\" id=\"1028395\" data-text=\"hypotension\"></a>hypotoni kopplad till <a class=\"index\" id=\"1028396\" data-text=\"bradykardi:chock\"></a>bradykardi, t&nbsp;ex vid hjärtinfarkt. Extern pacemaker, alternativt isoprenalin (licenspreparat Isuprel injektionsvätska, 0,2 mg/ml, Hospira) initialt 0,01 mikrog/kg kroppsvikt/minut, kan vara aktuellt vid uttalad bradyarytmi respektive omedelbar elkonvertering vid snabb takyarytmi.</p><p class=\"indent\">Vid kardiellt betingade chocktillstånd får en ofta begränsad volymsubstitution kompletteras med katekolaminer med inotropa och vasokonstriktiva effekter, t&nbsp;ex <a class=\"index\" id=\"1028400\" data-text=\"dobutamin:chock\"></a>dobutamin i dosen 2,5–15 mikrog/kg kroppsvikt/minut, vilket i normalfallet blir aktuellt först då patienten vårdas på specialavdelning. </p><p class=\"indent\">Kardiogen chock vid akut hjärtinfarkt är en etablerad indikation för primär PCI (ballongvidgning av kranskärlen), ofta kombinerad med aortaballongpump och inotropa läkemedel. Se vidare kapitlet Ischemisk hjärtsjukdom, avsnittet PCI och stentar,  <a href=\"e1_hja_ischemhjart_2013fm10.html#73689\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.</p><h3 id=\"a2_16\"><a class=\"index\" id=\"1023260\" data-text=\"septisk chock;chock:septisk\"></a><a class=\"crossref\" id=\"47244\"></a>Septisk chock</h3><p>Vid den initialt ”<a class=\"index\" id=\"1029732\" data-text=\"chock:varm\"></a>varma” septiska chocken(1) finns, liksom vid <a class=\"index\" id=\"1029735\" data-text=\"neurogen chock\"></a>neurogen chock och intoxikation, ofta ett inslag av vasodilatation. Behandlingen bör i första hand utgöras av blodvolymexpansion med balanserad saltlösning (Ringer-acetat 1 000 ml på 15–20 minuter) och vid tillgång kompletterad med kolloid infusionslösning (albumin 40–50 mg/ml). Minst 30 ml/kg kroppsvikt av saltlösning eller saltlösning + kolloid bör eftersträvas. Komplettering med vasoaktiva läkemedel i första hand noradrenalin samt, vid tecken på hämmad hjärtfunktion, dobutamin kan behövas. Ställningstagande till behandling med kärlaktiva farmaka sker vanligen sedan patienten överförts till specialavdelning. Tidigt insatt adekvat antibiotikum är av yttersta vikt (2). <a class=\"index\" id=\"1029738\" data-text=\"hydrokortison:chock\"></a>Hydrokortison, 200 mg/dygn som intravenös kontinuerlig infusion, kan övervägas vid vasopressorberoende septisk chock hos vuxna. </p><p class=\"indent\">I kapitlet Akuta svåra infektioner, avsnittet Sepsis <a href=\"a5_aku_akutinfekt_2013fm10.html#32303\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>, beskrivs behandling av sepsis. Koagulationsrubbning (DIC) vid sepsis kan kräva tillförsel av <span>koagulationsfaktorer</span> och hämmare, se kapitlet Blödningstillstånd, avsnittet Disseminerad intravasal koagulation (DIC) <a href=\"d3_blo_blodning_2013fm10.html#64776\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>. </p><h3 id=\"a2_17\"><a class=\"index\" id=\"1021308\" data-text=\"chock:barn;barn:chock\"></a><a class=\"crossref\" id=\"93150\"></a>Chock hos barn</h3><p>Barn är inte små vuxna (3). Skillnader i kroppsstorlek, anatomi och organfunktioner gör att handläggningen av barn kräver särskild eftertanke. Det lilla barnets avsaknad av språk och ibland uttalade rädsla kan också medföra problem. </p><p class=\"indent\">Kroppsproportionerna varierar med åldern, t&nbsp;ex utgör huvudet 19&#37; av kroppsytan vid födseln och bara 9&#37; vid 15 års ålder. Dessa förhållanden gör att små barn är mera känsliga för värmeförluster och lättare drabbas av hypotermi. Anatomiska skillnader i t&nbsp;ex luftvägarna påverkar tekniken för skapande av fria luftvägar i olika åldrar. Den cirkulerande <a class=\"index\" id=\"1029246\" data-text=\"blodvolym:barn;barn:blodvolym\"></a>blodvolymen är högre (70–80 ml/kg) än hos vuxna medan totalvolymen är låg, vilket ökar känsligheten för i ml ganska små blodförluster. Cirkulationsfysiologiskt varierar hjärtminutvolymen direkt med hjärtfrekvensen (slagvolymen förändras inte) hos spädbarn upp till 2 års ålder. Detta förhållande måste beaktas då man värderar ett sjukt spädbarn. Hypotension utgör ett sent och mycket allvarligt fynd där hjärtstopp kan vara nära förestående. Pulsen palperas hos spädbarn lättast i armvecket eller ljumsken. Hos lite äldre barn är det liksom hos vuxna lättast på halsen. </p><p class=\"indent\">De vanligaste orsakerna till chockbild hos ett barn är hypovolemi (blödning, gastroenterit, ”kirurgisk buk” t&nbsp;ex volvolus), sepsis eller trauma (ventilpneumotorax, hemopneumotorax).</p><p class=\"indent\">I avsaknad av övertygande tecken på hjärtsvikt tillförs 20&nbsp;ml/kg kroppsvikt av Ringer-acetat eller NaCl 9&nbsp;mg/ml på 5 minuter efter att intravenös/intraossös väg (se kapitlet Den akut medvetslöse patienten, avsnittet Hjärt–lungräddning (HLR) vuxna patienter <a href=\"a1_aku_akutmedv_2013fm10.html#67292\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>) etablerats. <a class=\"index\" id=\"1029251\" data-text=\"barn:kroppsstorlek;kroppsstorlek:barn\"></a>Kroppsstorleken varierar kraftigt med åldern och att fastställa ett ungefärligt värde på vikten är därför väsentligt. Om man känner åldern kan formeln enligt följande ge vägledning: </p><ul><li><a class=\"index\" id=\"1029872\" data-text=\"barn:viktuppskattning\"></a>vikt = 8 + 2 x ålder.</li></ul><p>Hypoglykemi (se kapitlet Den akut medvetslöse patienten, avsnittet Hypoglykemi/insulinkoma <a href=\"a1_aku_akutmedv_2013fm10.html#34302\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>) måste uteslutas eftersom det sjuka barnet har små glukosreserver. Om man inte noterar någon förbättring efter första vätskebolus ges ytterligare 20&nbsp;ml/kg kroppsvikt av Ringer-acetat eller NaCl 9&nbsp;mg/ml under 5–10 minuter. En tredje bolus, gärna albumin 4–5&#37; (40–50 mg/ml) 10–20 ml/kg kroppsvikt, kan övervägas om utebliven effekt. Barnet behöver då sannolikt snabbt tas om hand på intensivvårdsavdelning. Om inte albumin finns tillgängligt väljs samma vätska som användes för bolus ett och två.</p><h2 class=\"referenceHeader\" id=\"a2_18\">Referenser</h2>",
+			"settings": {}
+		},
+		{
+			"id": "6abfebc3-36e2-4c04-afce-77b9a9830152",
+			"name": "6abfebc3-36e2-4c04-afce-77b9a9830152",
+			"type": "references",
+			"content": "<ol class=\"references\"><li id=\"reference_1\">Dellinger RP, Levy MM, Rhodes A, Annane D,  Gerlach H, Opal SM, et al. Surviving sepsis campaign: international guidelines for management of severe sepsis and septic shock: 2012. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23353941\" target=\"_blank\" class=\"linkOut\">Crit Care Med. 2013;41:580–637</a> .</li>\n<li id=\"reference_2\">Kumar A, Roberts D, Wood KE, Light B, Parrillo JE,  Sharma S, et al. Duration of hypotension before initiation of effective antimicrobial therapy is the critical determinant of survival in human septic chock. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/16625125\" target=\"_blank\" class=\"linkOut\">Crit Care Med. 2006;34:1589–96.</a> </li>\n<li id=\"reference_3\"> Advanced life support group. Advanced paediatric life support: The practical approach, 5th Edition. 2011. ISBN 9781444330595.</li>\n</ol>",
+			"settings": {}
+		},
+		{
+			"id": "755ba1f7-186c-47fe-8266-da5525432b73",
+			"name": "755ba1f7-186c-47fe-8266-da5525432b73",
+			"type": "text",
+			"content": "<h5 id=\"a2_19\">För vidare läsning:</h5>Se kapitlet Akutmedicin på vårdcentral <a href=\"a4_aku_akutmedvc_2013fm10.html#32247\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.",
+			"settings": {}
+		}
+	],
+	"type": "file",
+	"path": "/Users/staliv/Projects/LB/servers/cms/content/kapitel/akutmedicin/chock.json",
+	"modified": "2015-04-25 16:29",
+	"isPublished": true
+}

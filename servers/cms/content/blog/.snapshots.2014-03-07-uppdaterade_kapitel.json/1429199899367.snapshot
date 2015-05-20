@@ -1,0 +1,46 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "Uppdaterade kapitel",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "nyhet",
+	"created": "2014-03-07 00:00",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Läkemedelsverket",
+	"replacesUrl": "/blog/2014-03-07-uppdaterade_kapitel",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": ""
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "53c09ab7-d0cc-49c3-8f98-5b1cfe450d45",
+			"name": "83256b07-9b0e-4cba-8517-7837257e4624",
+			"type": "text",
+			"content": "<h1 id=\"Rubrik\">Rubrik</h1>",
+			"settings": {
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				},
+				"preprocessors": {
+					"idinjection.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/Users/staliv/Projects/LB/servers/cms/content/blog/2014-03-07-uppdaterade_kapitel.json",
+	"modified": "2015-04-16 17:58"
+}
