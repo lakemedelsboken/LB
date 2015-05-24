@@ -113,7 +113,25 @@ var ContentModel = {
 							if(a.name > b.name) return 1;
 							return 0;
 						});
+
+						var dirs = [];
+
+						for (var i = list.length - 1; i >= 0; i--) {
+
+							var item = list[i];
+							
+							
+							if (item.type === "dir") {
+								dirs.unshift(list.splice(i, 1)[0]);
+							}
+							
+						}
+
+						if (dirs.length > 0) {
+							list = dirs.concat(list);
+						}
 					
+						/*
 						//Sort dirs first
 						list.sort(function(a, b){
 							if(a.type === "dir" && b.type !== "dir") return -1;
@@ -121,6 +139,7 @@ var ContentModel = {
 							return 0;
 						});
 						
+						*/
 						
 						var specialDirs = [];
 						
