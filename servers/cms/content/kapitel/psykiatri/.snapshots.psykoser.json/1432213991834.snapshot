@@ -90,6 +90,29 @@
 			}
 		},
 		{
+			"id": "53c18b42-ed3b-4098-bc8f-f80dd5b75952",
+			"name": "53c18b42-ed3b-4098-bc8f-f80dd5b75952",
+			"type": "author",
+			"content": {
+				"firstname": "Staffan",
+				"surname": "Living",
+				"description": "?",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					".DS_Store": "false",
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
 			"id": "f78af4ba-7b8d-4009-ad7a-a32cab2fea7b",
 			"name": "f78af4ba-7b8d-4009-ad7a-a32cab2fea7b",
 			"type": "text",
