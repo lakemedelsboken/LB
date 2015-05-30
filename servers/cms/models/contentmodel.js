@@ -114,6 +114,8 @@ var ContentModel = {
 							return 0;
 						});
 
+
+						//Place dirs first in the list
 						var dirs = [];
 
 						for (var i = list.length - 1; i >= 0; i--) {
@@ -131,16 +133,7 @@ var ContentModel = {
 							list = dirs.concat(list);
 						}
 					
-						/*
-						//Sort dirs first
-						list.sort(function(a, b){
-							if(a.type === "dir" && b.type !== "dir") return -1;
-							if(a.type !== "dir" && b.type === "dir") return 1;
-							return 0;
-						});
-						
-						*/
-						
+						//Place special dirs before all other items
 						var specialDirs = [];
 						
 						for (var i = list.length - 1; i >= 0; i--) {
@@ -190,7 +183,6 @@ var ContentModel = {
 						var globalPagePath = path.join(baseDir, localPagePath);
 
 						//Check if a published version exists
-						
 						var pageFileName = path.basename(globalPagePath);
 						var pageDirPath = path.dirname(globalPagePath);
 						
@@ -218,7 +210,7 @@ var ContentModel = {
 								mostRecentPublishedContent.type = mostRecentDraftContent.type;
 								mostRecentPublishedContent.path = mostRecentDraftContent.path;
 								
-								//Prepare for compare
+								//Prepare for comparison
 								mostRecentDraftContent = JSON.stringify(mostRecentDraftContent, null, "");
 								mostRecentPublishedContent = JSON.stringify(mostRecentPublishedContent, null, "");
 
@@ -247,6 +239,7 @@ var ContentModel = {
 					callback(null, result);
 				
 				});
+				
 			} else if (stat.isFile()) {
 
 				var baseName = path.basename(fullPath);
