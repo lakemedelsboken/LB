@@ -7,6 +7,7 @@ var historyModel = require("../models/historymodel");
 var async = require("async");
 var crypto = require("crypto")
 var extend = require("node.extend");
+var shell = require("shelljs");
 
 function Publisher(options) {
 	
@@ -651,10 +652,9 @@ var ContentController = {
 			});
 		}
 		
-		//Clear /payloads
+		//Clear /payloads?
 		
-		//Clear /services/archives 
-		//and /services/deployments
+		//Clear /services/archives and /services/deployments?
 
 		//TODO: Clear hashes in historymodel
 		if (historyModel !== undefined && historyModel.contentHashes !== undefined) {
@@ -662,6 +662,93 @@ var ContentController = {
 		}
 
 		callback(null)
+		
+	},
+	saveToLog: function(message, pathToLog) {
+
+		if (message !== undefined && pathToLog !== undefined) {
+
+			var log = [];
+
+			if (fs.existsSync(pathToLog) && fs.statSync(pathToLog).isFile()) {
+				try {
+					log = JSON.parse(fs.readFileSync(pathToLog, "utf8"));
+				} catch(err) {
+					log = [];
+				}
+			}
+		
+			var item = {date: new Date().getTime(), message: message};
+		
+			console.log("Log: " + message);
+			log.unshift(item);
+		
+			if (log.length > 100) {
+				log.length = 100;
+			}
+		
+			fs.writeFileSync(pathToLog, JSON.stringify(log, null, "\t"), "utf8");
+			
+		} else {
+			console.log("Could not save to log path: " + pathToLog + " with message: " + message);
+		}
+		
+	},
+	saveContentToGitHub: function(callback) {
+
+		var gitStatusLogPath = path.join(__dirname, "..", "public", "status", "github.json");
+
+		ContentController.saveToLog("Beginning upload to GitHub...", gitStatusLogPath);
+
+		if (!shell.which("git")) {
+
+			ContentController.saveToLog("Could not find git, could not upload content changes.", gitStatusLogPath);
+
+			return callback();
+
+		}
+		
+		var contentDirPath = path.join(__dirname, "..", "content").replace(/\s/g, "\\ ");
+		
+		var gitStatus = shell.exec("git status " + contentDirPath + "", {silent: true}).output;
+		
+		var nrOfLines = gitStatus.split("\n").length;
+
+		if (nrOfLines <= 5) {
+			//No changed files
+			ContentController.saveToLog("There are no changes in the content tree, nothing to upload.", gitStatusLogPath);
+
+			ContentController.saveToLog("Finished without uploading.", gitStatusLogPath);
+
+			return callback();
+
+		} else {
+
+			var upload = shell.exec("git add -A " + contentDirPath + " && git commit -m 'Auto commit' && git push", {async: true}, function(code, output) {
+
+				if (code !== 0) {
+
+					ContentController.saveToLog("Error: code: " + code + ", message: " + output, gitStatusLogPath);
+					ContentController.saveToLog("Finished with error.", gitStatusLogPath);
+
+					return callback();
+				}
+
+				ContentController.saveToLog("Finished upload to GitHub.", gitStatusLogPath);
+
+				return callback();
+
+			});
+
+			upload.stdout.on("data", function(data) {
+				ContentController.saveToLog(data, gitStatusLogPath);
+			});
+			
+			upload.stderr.on("data", function(data) {
+				ContentController.saveToLog(data, gitStatusLogPath);
+			});
+			
+		}
 		
 	},
 	createHash: function(path, callback) {

@@ -397,6 +397,22 @@ router.get("/clearcaches", function(req, res) {
 	
 });
 
+router.get("/savecontenttogithub", function(req, res) {
+
+	contentController.saveContentToGitHub(function(err) {
+		if (err) {
+			res.status(err.status || 500);
+			res.render('error', {
+				message: err.message,
+				error: err
+			});
+		} else {
+			res.redirect("back");
+		}
+	});
+	
+});
+
 
 
 router.get("/addcontentitemtopage", function(req, res) {

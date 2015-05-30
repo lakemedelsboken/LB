@@ -34,7 +34,7 @@
 					<li class="divider"></li>
 					<li class="disabled"><a href="#" data-toggle="modal" class="disabled" data-target="#checkLinks"><i class="fa fa-question"></i> Kontrollera länkar...</a></li>
 					<li class="divider"></li>
-					<li class="disabled"><a href="#" data-toggle="modal" class="disabled" data-target="#commitToGitHub"><i class="fa fa-github"></i> Spara till GitHub...</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#saveContentToGitHub"><i class="fa fa-github"></i> Spara till GitHub...</a></li>
 					<li class="divider"></li>
 					<li><a href="#" data-toggle="modal" data-target="#publishExternal"><i class="fa fa-rocket"></i> Publicera live...</a></li>
 				</ul>
@@ -256,6 +256,34 @@
 					<div class="progress-bar tasks-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
 						<span class="sr-only">0% färdigt</span>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Spara till GitHub" id="saveContentToGitHub" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Spara till GitHub</h4>
+			</div>
+<!--
+			<div class="modal-body text-center">
+				<form action="/cms/content/savecontenttogithub" method="get" class="form-horizontal" role="form">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-primary"><i class="fa fa-github"></i> Spara</button>
+				</form>
+			</div>
+-->
+			<div class="modal-body">
+				<div>
+					<a id="saveToGitHub" href="/cms/content/savecontenttogithub" class="btn btn-primary"><i class="fa fa-github"></i> <span class="text">Starta uppladdning till GitHub</span></a>
+					<br><br>
+				</div>
+				<div>
+					<pre id="github-status"></pre>
 				</div>
 			</div>
 		</div>

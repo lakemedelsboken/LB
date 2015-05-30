@@ -134,6 +134,82 @@
 
 			});
 
+			//Fetch github status text once when the modal is shown
+			$('#saveContentToGitHub').on('shown.bs.modal', function (e) {
+				
+				var statusUpdate = $("pre#github-status");
+				
+				$.ajax({url: "/cms/status/github.json", success: function(data){
+
+					//Update 
+					var output = [];
+					
+					for (var i = 0; i < data.length; i++) {
+						var time = new Date(data[i].date);
+						
+						output.push(time.toLocaleString() + "\t" + data[i].message);
+					}
+					
+					statusUpdate.html(output.join("\n"));
+			
+				}, dataType: "json"});
+			});
+
+			//Save to GitHub
+			$("a#saveToGitHub").on("click", function(event) {
+				
+				event.preventDefault();
+				
+				var button = $(this);
+				button.find("i").first().removeClass("fa-github").addClass("fa-refresh").addClass("fa-spin");
+				button.attr("disabled", "disabled");
+				button.find("span.text").text("Laddar upp...");
+				
+				var continuePolling = true;
+
+				var statusUpdate = $("pre#github-status");
+
+				(function poll(){
+					setTimeout(function(){
+						$.ajax({url: "/cms/status/github.json", success: function(data){
+
+							//Update 
+							var output = [];
+							
+							for (var i = 0; i < data.length; i++) {
+								var time = new Date(data[i].date);
+								
+								output.push(time.toLocaleString() + "\t" + data[i].message);
+							}
+							
+							statusUpdate.html(output.join("\n"));
+					
+							//Setup the next poll recursively
+							if (continuePolling) {
+								setTimeout(poll, 300);
+							} else {
+								button.find("i").first().removeClass("fa-spin").removeClass("fa-refresh").addClass("fa-github");
+								button.removeAttr("disabled");
+								button.find("span.text").text("Starta uppladdning till GitHub");
+								
+							}
+						}, dataType: "json"});
+					}, 100);
+				})();
+
+				
+				//Make initial request
+				$.get(button.attr("href"), function() {
+					
+					continuePolling = false;
+
+				})
+				.fail(function() {
+					alert("error");
+				});
+
+			});
+
 
 			$("button.viewsize").on("click", function(event) {
 				
