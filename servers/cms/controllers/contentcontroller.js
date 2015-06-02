@@ -8,6 +8,7 @@ var async = require("async");
 var crypto = require("crypto")
 var extend = require("node.extend");
 var shell = require("shelljs");
+var imageController = require("./imagecontroller");
 
 function Publisher(options) {
 	
@@ -530,25 +531,93 @@ var ContentController = {
 		}
 
 		//TODO: Delete empty directories
+		
+		//Recreate images
+		ContentController.recreateAllImages(function(err) {
 
-		if (foundPages.length > 0) {
+			if (err) {
+				console.log("Error: Could not recreate images in a correct manner");
+			}
 
-			//Build sitemap
-			var siteMapContent = ContentController.getSiteMap(foundPages);
-			fs.writeFileSync(path.join(__dirname, "..", "output", "published", "sitemap.xml"), siteMapContent, "utf8");
-			ContentController.oneTaskIsDone();
+			if (foundPages.length > 0) {
+
+				//Build sitemap
+				var siteMapContent = ContentController.getSiteMap(foundPages);
+				fs.writeFileSync(path.join(__dirname, "..", "output", "published", "sitemap.xml"), siteMapContent, "utf8");
+				ContentController.oneTaskIsDone();
 			
-			//Build redirects
-			var redirects = ContentController.getPublishedRedirects(foundPages);
-			fs.writeFileSync(path.join(__dirname, "..", "output", "published", "redirects.json"), JSON.stringify(redirects, null, "\t"), "utf8");
-			ContentController.oneTaskIsDone();
+				//Build redirects
+				var redirects = ContentController.getPublishedRedirects(foundPages);
+				fs.writeFileSync(path.join(__dirname, "..", "output", "published", "redirects.json"), JSON.stringify(redirects, null, "\t"), "utf8");
+				ContentController.oneTaskIsDone();
 
-			//Render the pages
-			ContentController.renderPages(foundPages, callback);
+				//Render the pages
+				ContentController.renderPages(foundPages, callback);
+			} else {
+				callback();
+			}
+			
+		});
+
+
+	},
+	recreateAllImages: function(callback) {
+
+		//Make sure images in /output/static/images/ are created
+
+		//Find all images
+		var imagesDir = path.join(ContentController.baseDir, "..", "content", "images");
+		var imageFiles = wrench.readdirSyncRecursive(imagesDir);
+		
+		//Filter only png files
+		imageFiles = imageFiles.filter(function(element) {
+			return (
+				path.extname(element) === ".png" &&
+				fs.statSync(path.join(imagesDir, element)).isFile()
+			);
+		});
+		
+		if (imageFiles.length > 0) {
+			ContentController.addTasks(imageFiles.length);
+			
+			//Setup queue task
+			var q = async.queue(function(item, callback) {
+
+				var originalImagePath = path.join(imagesDir, item);
+				var outputDir = path.join(ContentController.baseDir, "..", "output", "static", "images", item);
+				var forceOverwrite = false;
+
+				imageController.createImageSizes(originalImagePath, outputDir, forceOverwrite, function(err, results) {
+					
+					if (err) {
+						console.log("Error when trying to create image sizes for " + item);
+					}
+
+					ContentController.oneTaskIsDone();
+					return callback(null, item);
+					
+				});
+
+			}, 1);
+		
+			//Return when all images are done
+			q.drain = function() {
+				return callback();
+			}
+			
+			//Add tasks to queue
+			for (var i = 0; i < imageFiles.length; i++) {
+				
+				q.push(imageFiles[i], function (err, name) {
+					//Done
+				});
+
+			}
+			
 		} else {
-			callback();
+			return callback();
 		}
-
+		
 	},
 	getPublishedRedirects: function(pages) {
 
