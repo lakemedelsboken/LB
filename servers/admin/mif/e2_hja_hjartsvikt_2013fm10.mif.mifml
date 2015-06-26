@@ -5707,10 +5707,10 @@
         </XRefFormat>
     </XRefFormats>
     <Document>
-        <DViewRect value="18 20 1283 764 " type="enum"/>
-        <DWindowRect value="0 0 1751 1044 " type="enum"/>
-        <DViewScale value="120.0%" type="num"/>
-        <DNextUnique value="1081007" type="enum"/>
+        <DViewRect value="18 20 1278 635 " type="enum"/>
+        <DWindowRect value="0 0 1745 872 " type="enum"/>
+        <DViewScale value="99.04%" type="num"/>
+        <DNextUnique value="1081246" type="enum"/>
         <DPageSize value="170.0 mm 240.0 mm" type="num"/>
         <DMenuBar value="" type="str"/>
         <DVoMenuBar value="" type="str"/>
@@ -5873,7 +5873,7 @@
         <DPDFOpenPage value="320" type="str"/>
         <DPDFFit value="Page" type="enum"/>
         <DPDFZoom value="0.0%" type="num"/>
-        <DPDFJobOptions value="Standard" type="str"/>
+        <DPDFJobOptions value="High Quality Print" type="str"/>
         <DPDFSaveSeparate value="No" type="enum"/>
         <DPDFRegMarks value="None" type="enum"/>
         <DPDFPageSizeSet value="No" type="enum"/>
@@ -5894,7 +5894,7 @@
         </PDFDocInfo>
         <DocFileInfo value="
 3C3F787061636B657420626567696E3D22EFBBBF222069643D2257354D304D7043656869487A7265537A4E54637A6B633964223F3E0A3C783A786D706D65746120786D6C6E733A783D2261646F62653A6E733A6D6574612F2220783A786D70746B3D2241646F626520584D5020436F726520352E322D633030312036332E3133393433392C20323031302F31302F30332D31323A30383A35302020202020202020223E0A2020203C7264663A52444620786D6C6E733A7264663D22687474703A2F2F7777772E77332E6F72672F313939392F30322F32322D7264662D73796E7461782D6E7323223E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A7064663D22687474703A2F2F6E732E61646F62652E636F6D2F7064662F312E332F223E0A2020202020202020203C7064663A43726561746F72546F6F6C3E4672616D654D616B657220372E303C2F7064663A43726561746F72546F6F6C3E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D703D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F223E0A20202020
-20202020203C786D703A437265617465446174653E303130392D30322D32375431303A34393A31352B30323A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131342D30362D31305431373A34373A34322B30323A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131342D30362D31305431373A34373A34322B30323A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
+20202020203C786D703A437265617465446174653E303130392D30322D32375431303A34393A31352B30323A30303C2F786D703A437265617465446174653E0A2020202020202020203C786D703A4D6F64696679446174653E303131352D30352D32335431323A32333A33302B30323A30303C2F786D703A4D6F64696679446174653E0A2020202020202020203C786D703A4D65746164617461446174653E303131352D30352D32335431323A32333A33302B30323A30303C2F786D703A4D65746164617461446174653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A786D705269676874733D22687474703A2F2F6E732E61646F62652E636F6D2F7861702F312E302F7269676874732F223E0A2020202020202020203C786D705269676874733A4D61726B65643E547275653C2F786D705269676874733A4D61726B65643E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020202020203C7264663A4465736372697074696F6E207264663A61626F75743D22220A202020202020202020202020786D6C6E733A64633D22687474703A2F2F7075726C2E6F72672F64632F656C656D656E74732F312E312F223E0A
 2020202020202020203C64633A7469746C653E0A2020202020202020202020203C7264663A416C743E0A2020202020202020202020202020203C7264663A6C6920786D6C3A6C616E673D22782D64656661756C74223E486AC3A472747376696B7420E28093204CC3A46B656D6564656C73626F6B656E20323031343C2F7264663A6C693E0A2020202020202020202020203C2F7264663A416C743E0A2020202020202020203C2F64633A7469746C653E0A2020202020203C2F7264663A4465736372697074696F6E3E0A2020203C2F7264663A5244463E0A3C2F783A786D706D6574613E0A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 2020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
 202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020200A2020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
@@ -15727,7 +15727,7 @@
                                         <XRefSrcText value="40181: TabellRubrik_1sp: Tabell 2. Viktig information till patienter med hjärtsvikt – åtg" type="str"/>
                                         <XRefSrcIsElem value="No" type="enum"/>
                                         <XRefSrcFile value="" type="str"/>
-                                        <XRefLastUpdate value="1405007262 27000" type="num"/>
+                                        <XRefLastUpdate value="1435054990 818000" type="num"/>
                                         <XRefSrcElemNonUniqueId value="" type="str"/>
                                         <XRefAltText value="" type="str"/>
                                         <XRefApiClient>
@@ -24516,7 +24516,59 @@
             <FNote>
                 <ID value="211" type="enum"/>
                 <Para>
-                    <Unique value="1080989" type="enum"/>
+                    <Unique value="1081158" type="enum"/>
+                    <PgfTag value="Footnote" type="str"/>
+                    <ParaLine>
+                        <Font>
+                            <FTag value="" type="str"/>
+                            <FLocked value="No" type="enum"/>
+                            <FSeparation value="2" type="enum"/>
+                            <FColor value="Red" type="str"/>
+                        </Font>
+                        <String>Nyhet från Läkemedelsverket publicerad 2014-11-07: </String>
+                    </ParaLine>
+                    <ParaLine>
+                        <String>“PRAC rekommenderar åtgärder för att minska risken för </String>
+                    </ParaLine>
+                    <ParaLine>
+                        <String>hjärtproblem med Procoralan (ivabradin)”</String>
+                        <Font>
+                            <FTag value="" type="str"/>
+                            <FLocked value="No" type="enum"/>
+                        </Font>
+                        <String>, </String>
+                        <Font>
+                            <FTag value="" type="str"/>
+                            <FLocked value="No" type="enum"/>
+                            <FSeparation value="4" type="enum"/>
+                            <FColor value="Blue" type="str"/>
+                        </Font>
+                        <Marker>
+                            <MType value="8" type="enum"/>
+                            <MTypeName value="Hypertext" type="str"/>
+                            <MText value="message URL https://lakemedelsverket.se/Alla-nyheter/NYHETER-2014/PRAC-rekommenderar-atgarder-for-att-minska-risken-for-hjartproblem-med-Procoralan-ivabradin/" type="str"/>
+                            <MCurrPage value="324" type="str"/>
+                            <Unique value="1081159" type="enum"/>
+                        </Marker>
+                        <String>www.lakeme</String>
+                        <Char value="SoftHyphen" type="enum"/>
+                    </ParaLine>
+                    <ParaLine>
+                        <String>delsverket.se</String>
+                        <Font>
+                            <FTag value="" type="str"/>
+                            <FLocked value="No" type="enum"/>
+                            <FSeparation value="2" type="enum"/>
+                            <FColor value="Red" type="str"/>
+                        </Font>
+                        <String>.</String>
+                    </ParaLine>
+                </Para>
+            </FNote>
+            <FNote>
+                <ID value="212" type="enum"/>
+                <Para>
+                    <Unique value="1081016" type="enum"/>
                     <PgfTag value="Footnote" type="str"/>
                     <Pgf>
                         <PgfFont>
@@ -24550,33 +24602,63 @@
                             <FBackgroundColor value="NoColor" type="enum"/>
                         </PgfFont>
                     </Pgf>
+                    <PgfReferenced value="Yes" type="enum"/>
                     <ParaLine>
-                <Font>
-                    <FTag value="" type="str"/>
-                    <FLocked value="No" type="enum"/>
-                    <FSeparation value="2" type="enum"/>
-                    <FColor value="Red" type="str"/>
-                </Font>
                         <String>Nyhet från Läkemedelsverket: PRAC avråder ifrån att </String>
                     </ParaLine>
                     <ParaLine>
-                <Font>
-                    <FTag value="" type="str"/>
-                    <FLocked value="No" type="enum"/>
-                    <FSeparation value="2" type="enum"/>
-                    <FColor value="Red" type="str"/>
-                </Font>
                         <String>kombinera läkemedel som påverkar reninangiotensinsyste</String>
                         <Char value="SoftHyphen" type="enum"/>
                     </ParaLine>
                     <ParaLine>
-                <Font>
-                    <FTag value="" type="str"/>
-                    <FLocked value="No" type="enum"/>
-                    <FSeparation value="2" type="enum"/>
-                    <FColor value="Red" type="str"/>
-                </Font>
-                        <String>met. </String>
+                        <String>met (dvs ACE-hämmare, ARB och reninhämmare).</String>
+                        <Char value="HardReturn" type="enum"/>
+                    </ParaLine>
+                    <ParaLine>
+                        <Font>
+                            <FTag value="Blue" type="str"/>
+                            <FLocked value="No" type="enum"/>
+                        </Font>
+                        <Marker>
+                            <MType value="8" type="enum"/>
+                            <MTypeName value="Hypertext" type="str"/>
+                            <MText value="message URL http://www.lakemedelsverket.se/Alla-nyheter/NYHETER-2014/PRAC-avrader-ifran-att-kombinera-lakemedel-som-paverkar-reninangiotensinsystemet/" type="str"/>
+                            <MCurrPage value="325" type="str"/>
+                            <Unique value="1081065" type="enum"/>
+                        </Marker>
+                        <String>www.lakemedelsverket.se</String>
+                        <Font>
+                            <FTag value="" type="str"/>
+                            <FLocked value="No" type="enum"/>
+                        </Font>
+                        <String> (red. anmärkning)</String>
+                    </ParaLine>
+                </Para>
+            </FNote>
+            <FNote>
+                <ID value="213" type="enum"/>
+                <Para>
+                    <Unique value="1081174" type="enum"/>
+                    <PgfTag value="Footnote" type="str"/>
+                    <ParaLine>
+                        <Font>
+                            <FTag value="" type="str"/>
+                            <FLocked value="No" type="enum"/>
+                            <FSeparation value="2" type="enum"/>
+                            <FColor value="Red" type="str"/>
+                        </Font>
+                        <String>Nyhet från Läkemedelsverket publicerad 2014-11-07: </String>
+                    </ParaLine>
+                    <ParaLine>
+                        <String>“PRAC rekommenderar åtgärder för att minska risken för </String>
+                    </ParaLine>
+                    <ParaLine>
+                        <String>hjärtproblem med Procoralan (ivabradin)”</String>
+                        <Font>
+                            <FTag value="" type="str"/>
+                            <FLocked value="No" type="enum"/>
+                        </Font>
+                        <String>, </String>
                         <Font>
                             <FTag value="" type="str"/>
                             <FLocked value="No" type="enum"/>
@@ -24586,22 +24668,22 @@
                         <Marker>
                             <MType value="8" type="enum"/>
                             <MTypeName value="Hypertext" type="str"/>
-                            <MText value="message URL http://www.lakemedelsverket.se/Alla-nyheter/NYHETER-2014/PRAC-avrader-ifran-att-kombinera-lakemedel-som-paverkar-reninangiotensinsystemet/" type="str"/>
-                            <MCurrPage value="325" type="str"/>
-                            <Unique value="1080990" type="enum"/>
+                            <MText value="message URL https://lakemedelsverket.se/Alla-nyheter/NYHETER-2014/PRAC-rekommenderar-atgarder-for-att-minska-risken-for-hjartproblem-med-Procoralan-ivabradin/" type="str"/>
+                            <MCurrPage value="328" type="str"/>
+                            <Unique value="1081175" type="enum"/>
                         </Marker>
-                        <String>www.lakemedelsverket.se</String>
+                        <String>www.lakeme</String>
+                        <Char value="SoftHyphen" type="enum"/>
+                    </ParaLine>
+                    <ParaLine>
+                        <String>delsverket.se</String>
                         <Font>
                             <FTag value="" type="str"/>
                             <FLocked value="No" type="enum"/>
+                            <FSeparation value="2" type="enum"/>
+                            <FColor value="Red" type="str"/>
                         </Font>
-                <Font>
-                    <FTag value="" type="str"/>
-                    <FLocked value="No" type="enum"/>
-                    <FSeparation value="2" type="enum"/>
-                    <FColor value="Red" type="str"/>
-                </Font>
-                        <String> (red. anmärkning)</String>
+                        <String>.</String>
                     </ParaLine>
                 </Para>
             </FNote>
@@ -24902,7 +24984,7 @@
                     <XRefSrcText value="94819: FaktaRub1: Kriterier för diagnosen hjärtsvikt" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 817000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25268,7 +25350,7 @@
                     <XRefSrcText value="53134: FaktaRub1: Symtom vid hjärtsvikt" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 817000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25306,7 +25388,7 @@
                     <XRefSrcText value="18695: TabellRubrik_1sp: Tabell 1. NYHA-klassificering" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 817000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25347,7 +25429,7 @@
                     <XRefSrcText value="18695: TabellRubrik_1sp: Tabell 1. NYHA-klassificering" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 817000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25453,7 +25535,7 @@
                     <XRefSrcText value="39334: FaktaRub1: Orsaker till hjärtsvikt" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 817000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25495,7 +25577,7 @@
                     <XRefSrcText value="39334: FaktaRub1: Orsaker till hjärtsvikt" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 817000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25770,7 +25852,7 @@
                     <XRefSrcText value="19583: FigurNr: Figur 1. Identifiering/utredning av patienter hos vilka hjärts" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 818000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -25929,7 +26011,7 @@
                     <XRefSrcText value="19583: FigurNr: Figur 1. Identifiering/utredning av patienter hos vilka hjärts" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 818000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26122,7 +26204,7 @@
                     <XRefSrcText value="42053: FaktaRub1: Differentialdiagnoser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 817000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26167,7 +26249,7 @@
                     <XRefSrcText value="42053: FaktaRub1: Differentialdiagnoser" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 817000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26294,7 +26376,7 @@
                     <XRefSrcText value="40014: TabellRekRub: Terapirekommendationer – Icke-farmakologiska åtgärder" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 817000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26319,7 +26401,7 @@
                     <XRefSrcText value="40014: TabellRekRub: Terapirekommendationer – Icke-farmakologiska åtgärder" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 817000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26351,7 +26433,7 @@
                     <XRefSrcText value="40181: TabellRubrik_1sp: Tabell 2. Viktig information till patienter med hjärtsvikt – åtg" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 818000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26383,7 +26465,7 @@
                     <XRefSrcText value="40181: TabellRubrik_1sp: Tabell 2. Viktig information till patienter med hjärtsvikt – åtg" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 818000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26459,7 +26541,7 @@
                     <XRefSrcText value="35227: FigurNr: Figur 2. Behandling i relation till svårighetsgrad (funktion" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 818000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26493,7 +26575,7 @@
                     <XRefSrcText value="35227: FigurNr: Figur 2. Behandling i relation till svårighetsgrad (funktion" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 818000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26568,11 +26650,23 @@
                 <String>tidigare aldosteronhämmare). Behandling </String>
             </ParaLine>
             <ParaLine>
-                <String>med ivabradin kan vara aktuell i selektera</String>
+                <String>med ivabradin</String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                </Font>
+                <FNote value="211" type="enum"/>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <String> kan vara aktuell i selekte</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <String>de fall med sinusrytm som tillägg till sed</String>
+                <String>rade fall med sinusrytm som tillägg till sed</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
@@ -26590,6 +26684,7 @@
                 <String>har pacemaker eller CRT-D som dessutom </String>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="186" type="enum"/>
                 <String>har en inbyggd defibrillator) eller annan </String>
             </ParaLine>
             <ParaLine>
@@ -26604,7 +26699,6 @@
                 <String>par månaders tid för adekvat titrering till </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="186" type="enum"/>
                 <String>måldoser. EKG och förnyad ekokardiografi </String>
             </ParaLine>
             <ParaLine>
@@ -26636,7 +26730,7 @@
                     <XRefSrcText value="96660: TabellRubrik_2sp: Tabell 3. Evidensbaserade start- och måldoser för sjukdomsmodifie" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 818000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26668,7 +26762,7 @@
                     <XRefSrcText value="96660: TabellRubrik_2sp: Tabell 3. Evidensbaserade start- och måldoser för sjukdomsmodifie" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 818000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -26775,6 +26869,7 @@
                 <String>dysfunktion. Detta motverkas med adekvat </String>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="188" type="enum"/>
                 <String>grundbehandling (RAAS-blockad och beta</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -26793,7 +26888,6 @@
                 <String>ligt och gärna vara tillfällig. Man kan med </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="188" type="enum"/>
                 <String>fördel lära patienten att själv styra sin diu</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -26929,7 +27023,8 @@
                     <FSeparation value="2" type="enum"/>
                     <FColor value="Red" type="str"/>
                 </Font>
-                <FNote value="211" type="enum"/>
+                <FNote value="212" type="enum"/>
+                <String> </String>
                 <Font>
                     <FTag value="" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -26984,6 +27079,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="188" type="enum"/>
                 <String>nister, vilka tidigare benämndes aldoste</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -27002,7 +27098,6 @@
                 <String>en av RAAS och åstadkommer i olika grad </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="188" type="enum"/>
                 <String>arteriell kärldilatation, ökad urinutsönd</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -27014,40 +27109,8 @@
             </ParaLine>
         </Para>
         <Para>
-            <Unique value="1076120" type="enum"/>
-            <PgfTag value="Bröd" type="str"/>
-            <Pgf>
-                <PgfFont>
-                    <FTag value="" type="str"/>
-                    <FPlatformName value="W.NewCenturySchlbk LT Std.R.400" type="str"/>
-                    <FFamily value="NewCenturySchlbk LT Std" type="str"/>
-                    <FVar value="Regular" type="str"/>
-                    <FWeight value="Regular" type="str"/>
-                    <FAngle value="Regular" type="str"/>
-                    <FPostScriptName value="NewCenturySchlbkLTStd-Roman" type="str"/>
-                    <FEncoding value="FrameRoman" type="str"/>
-                    <FSize value="9.0 pt" type="num"/>
-                    <FUnderlining value="FNoUnderlining" type="enum"/>
-                    <FOverline value="No" type="enum"/>
-                    <FStrike value="No" type="enum"/>
-                    <FChangeBar value="No" type="enum"/>
-                    <FOutline value="No" type="enum"/>
-                    <FShadow value="No" type="enum"/>
-                    <FPairKern value="Yes" type="enum"/>
-                    <FTsume value="No" type="enum"/>
-                    <FCase value="FAsTyped" type="enum"/>
-                    <FPosition value="FNormal" type="enum"/>
-                    <FDX value="0.0%" type="num"/>
-                    <FDY value="0.0%" type="num"/>
-                    <FDW value="0.8%" type="num"/>
-                    <FStretch value="100.0%" type="num"/>
-                    <FLanguage value="Swedish" type="enum"/>
-                    <FLocked value="No" type="enum"/>
-                    <FSeparation value="0" type="enum"/>
-                    <FColor value="Black" type="str"/>
-                    <FBackgroundColor value="NoColor" type="enum"/>
-                </PgfFont>
-            </Pgf>
+            <Unique value="1081075" type="enum"/>
+            <PgfTag value="BrödIn" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
                 <String>Såväl ACE-hämmare som ARB och MRA </String>
@@ -27056,54 +27119,48 @@
                 <String>måste monitoreras avseende njurfunktion </String>
             </ParaLine>
             <ParaLine>
-                <String>och elektrolyter (P/S-natrium, P/S-kali</String>
+                <String>och elektrolyter (P/S-natrium, P/S-kalium). </String>
+            </ParaLine>
+            <ParaLine>
+                <String>Detta görs extra noggrant initialt samt vid </String>
+            </ParaLine>
+            <ParaLine>
+                <String>kombinationsanvändning av preparaten. </String>
+            </ParaLine>
+            <ParaLine>
+                <String>Vidare ska blodtrycket kontrolleras och vid </String>
+            </ParaLine>
+            <ParaLine>
+                <String>yrsel rekommenderas ortostatiskt prov med </String>
+            </ParaLine>
+            <ParaLine>
+                <String>blodtryck. Ofta ger det initialt låga blod</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <String>um). Detta görs extra noggrant initialt </String>
-            </ParaLine>
-            <ParaLine>
-                <String>samt vid kombinationsanvändning av pre</String>
+                <String>trycket inga symtom men skulle sådana fin</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <String>paraten. Vidare ska blodtrycket kontrolle</String>
+                <String>nas måste hänsyn tas till det genom lång</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <String>ras och vid yrsel rekommenderas ortosta</String>
+                <String>sammare ökning av dosen, framför allt ini</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <String>tiskt prov med blodtryck. Ofta ger det initi</String>
+                <String>tialt. Med förbättrad hjärtfunktion </String>
+            </ParaLine>
+            <ParaLine>
+                <String>”återhämtar sig” ofta blodtrycket. Stor för</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <String>alt låga blodtrycket inga symtom men </String>
+                <String>siktighet anbefalls med ACE-hämmare och </String>
             </ParaLine>
             <ParaLine>
-                <String>skulle sådana finnas måste hänsyn tas till </String>
-            </ParaLine>
-            <ParaLine>
-                <String>det genom långsammare ökning av dosen, </String>
-            </ParaLine>
-            <ParaLine>
-                <String>framför allt initialt. Med förbättrad hjärt</String>
-                <Char value="SoftHyphen" type="enum"/>
-            </ParaLine>
-            <ParaLine>
-                <String>funktion ”återhämtar sig” ofta blodtrycket. </String>
-            </ParaLine>
-            <ParaLine>
-                <String>Stor försiktighet anbefalls med ACE-häm</String>
-                <Char value="SoftHyphen" type="enum"/>
-            </ParaLine>
-            <ParaLine>
-                <String>mare och ARB vid stenosvitier och outred</String>
-                <Char value="SoftHyphen" type="enum"/>
-            </ParaLine>
-            <ParaLine>
-                <String>da blåsljud.</String>
+                <String>ARB vid stenosvitier och outredda blåsljud.</String>
             </ParaLine>
         </Para>
         <Para>
@@ -27183,6 +27240,7 @@
             <PgfTag value="BrödIn" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
+                <TextRectID value="190" type="enum"/>
                 <String>Behandling ges med de preparat som har </String>
             </ParaLine>
             <ParaLine>
@@ -27196,7 +27254,7 @@
                     <XRefSrcText value="96660: TabellRubrik_2sp: Tabell 3. Evidensbaserade start- och måldoser för sjukdomsmodifie" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 818000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -27222,7 +27280,6 @@
                 <String>treras till måldos/högsta tolerabla dos. </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="190" type="enum"/>
                 <String>Dosökning kan ske snabbare på sjukhus </String>
             </ParaLine>
             <ParaLine>
@@ -27457,6 +27514,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="190" type="enum"/>
                 <String>kombination inkluderande även ACE-häm</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -27469,7 +27527,6 @@
             <PgfTag value="Rub3" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
-                <TextRectID value="190" type="enum"/>
                 <String>Mineralkortikoidantagonister (</String>
                 <Marker>
                     <MType value="2" type="enum"/>
@@ -28004,44 +28061,108 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <String>na, se doseringsschema i Tabell 3. Tvingas </String>
-            </ParaLine>
-            <ParaLine>
-                <String>man sätta ut behandlingen bör detta ske </String>
-            </ParaLine>
-            <ParaLine>
-                <String>långsamt pga risk för rebound</String>
-                <Char value="DiscHyphen" type="enum"/>
-                <String>effekter. Dos</String>
-                <Char value="SoftHyphen" type="enum"/>
-            </ParaLine>
-            <ParaLine>
-                <Char value="DiscHyphen" type="enum"/>
-                <String>erna ökas med 1–4 veckors mellanrum un</String>
-                <Char value="SoftHyphen" type="enum"/>
-            </ParaLine>
-            <ParaLine>
-                <String>der kontroll av hjärtfrekvens och blodtryck. </String>
-            </ParaLine>
-            <ParaLine>
-                <String>Om patienten är under noggrann kontroll </String>
-            </ParaLine>
-            <ParaLine>
-                <String>kan dosökning ske oftare. Avvikelser från ti</String>
-                <Char value="SoftHyphen" type="enum"/>
-            </ParaLine>
-            <ParaLine>
-                <String>treringsschemat styrs utifrån symtomgivan</String>
-                <Char value="SoftHyphen" type="enum"/>
-            </ParaLine>
-            <ParaLine>
-                <String>de biverkningar, t</String>
+                <String>na, se doseringsschema i Tabell 3, </String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                </Font>
+                <String>s</String>
                 <Char value="HardSpace" type="enum"/>
-                <String>ex hypotension och brady</String>
+                <XRef>
+                    <XRefName value="Page" type="str"/>
+                    <XRefSrcText value="96660: TabellRubrik_2sp: Tabell 3. Evidensbaserade start- och måldoser för sjukdomsmodifie" type="str"/>
+                    <XRefSrcIsElem value="No" type="enum"/>
+                    <XRefSrcFile value="" type="str"/>
+                    <XRefLastUpdate value="1435054990 818000" type="num"/>
+                    <XRefSrcElemNonUniqueId value="" type="str"/>
+                    <XRefAltText value="" type="str"/>
+                    <XRefApiClient>
+                        <XRefClientName value="" type="str"/>
+                        <XRefClientType value="" type="str"/>
+                    </XRefApiClient>
+                    <Unique value="1081095" type="enum"/>
+                </XRef>
+                <Font>
+                    <FTag value="Blue" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <String>327</String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                </Font>
+                <XRefEnd />
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <String>.</String>
+                <XRef>
+                    <XRefName value="Ref" type="str"/>
+                    <XRefSrcText value="96660: TabellRubrik_2sp: Tabell 3. Evidensbaserade start- och måldoser för sjukdomsmodifie" type="str"/>
+                    <XRefSrcIsElem value="No" type="enum"/>
+                    <XRefSrcFile value="" type="str"/>
+                    <XRefLastUpdate value="1435054990 818000" type="num"/>
+                    <XRefSrcElemNonUniqueId value="" type="str"/>
+                    <XRefAltText value="" type="str"/>
+                    <XRefApiClient>
+                        <XRefClientName value="" type="str"/>
+                        <XRefClientType value="" type="str"/>
+                    </XRefApiClient>
+                    <Unique value="1081088" type="enum"/>
+                </XRef>
+                <Font>
+                    <FTag value="Ref" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <String> </String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <XRefEnd />
+                <String> </String>
+            </ParaLine>
+            <ParaLine>
+                <String>Tvingas man sätta ut behandlingen bör det</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <String>kardi.</String>
+                <String>ta ske långsamt pga risk för rebound</String>
+                <Char value="DiscHyphen" type="enum"/>
+                <String>effekter. </String>
+            </ParaLine>
+            <ParaLine>
+                <String>Dos</String>
+                <Char value="DiscHyphen" type="enum"/>
+                <String>erna ökas med 1–4 veckors mellanrum </String>
+            </ParaLine>
+            <ParaLine>
+                <String>under kontroll av hjärtfrekvens och blod</String>
+                <Char value="SoftHyphen" type="enum"/>
+            </ParaLine>
+            <ParaLine>
+                <String>tryck. Om patienten är under noggrann kon</String>
+                <Char value="SoftHyphen" type="enum"/>
+            </ParaLine>
+            <ParaLine>
+                <String>troll kan dosökning ske oftare. Avvikelser </String>
+            </ParaLine>
+            <ParaLine>
+                <String>från titreringsschemat styrs utifrån sym</String>
+                <Char value="SoftHyphen" type="enum"/>
+            </ParaLine>
+            <ParaLine>
+                <String>tomgivande biverkningar, t</String>
+                <Char value="HardSpace" type="enum"/>
+                <String>ex hypotension </String>
+            </ParaLine>
+            <ParaLine>
+                <String>och bradykardi.</String>
             </ParaLine>
         </Para>
         <Para>
@@ -28104,7 +28225,19 @@
             <ParaLine>
                 <String>sinus</String>
                 <Char value="DiscHyphen" type="enum"/>
-                <String>nodhämmaren ivabradin </String>
+                <String>nodhämmaren ivabradin</String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                </Font>
+                <FNote value="213" type="enum"/>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <String> </String>
                 <Font>
                     <FTag value="Blue" type="str"/>
                     <FLocked value="No" type="enum"/>
@@ -28288,6 +28421,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="194" type="enum"/>
                 <String>sats till betablockerare, ingen dokumente</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -28299,7 +28433,6 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="194" type="enum"/>
                 <Char value="DiscHyphen" type="enum"/>
                 <String>xin är dock ännu mer effektiv vid frekvens</String>
                 <Char value="SoftHyphen" type="enum"/>
@@ -28404,7 +28537,7 @@
             </ParaLine>
         </Para>
         <Para>
-            <Unique value="1076283" type="enum"/>
+            <Unique value="1081108" type="enum"/>
             <PgfTag value="Bröd" type="str"/>
             <Pgf>
                 <PgfFont>
@@ -28456,6 +28589,7 @@
                 <String>behovet av sjukhusvård (endast CRT) samt </String>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="196" type="enum"/>
                 <String>ökar överlevnaden (CRT och CRT-D) på i öv</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -28472,24 +28606,24 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="gotolink 3E2" type="str"/>
-                    <MCurrPage value="328" type="str"/>
-                    <Unique value="1078882" type="enum"/>
+                    <MCurrPage value="329" type="str"/>
+                    <Unique value="1081109" type="enum"/>
                 </Marker>
                 <String>(3,</String>
                 <Marker>
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="gotolink 38E2" type="str"/>
-                    <MCurrPage value="328" type="str"/>
-                    <Unique value="1078887" type="enum"/>
+                    <MCurrPage value="329" type="str"/>
+                    <Unique value="1081110" type="enum"/>
                 </Marker>
                 <String>38,</String>
                 <Marker>
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="gotolink 39E2" type="str"/>
-                    <MCurrPage value="328" type="str"/>
-                    <Unique value="1078892" type="enum"/>
+                    <MCurrPage value="329" type="str"/>
+                    <Unique value="1081111" type="enum"/>
                 </Marker>
                 <String>39)</String>
                 <Font>
@@ -28499,7 +28633,6 @@
                 <String>. Det är en </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="196" type="enum"/>
                 <String>ytterst viktig uppgift för alla som ser och </String>
             </ParaLine>
             <ParaLine>
@@ -28520,20 +28653,59 @@
                 <String>ter som kan vara aktuella för CRT, CRT-D </String>
             </ParaLine>
             <ParaLine>
-                <String>eller ICD enbart, se Faktaruta 5.</String>
+                <String>eller ICD enbart, se Faktaruta 5, </String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                </Font>
+                <String>s</String>
+                <Char value="HardSpace" type="enum"/>
                 <XRef>
-                    <XRefName value="Ref" type="str"/>
+                    <XRefName value="Page" type="str"/>
                     <XRefSrcText value="62408: FaktaRub1: CRT, CRT-D eller ICD enbart vid hjärtsvikt" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 818000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
                         <XRefClientName value="" type="str"/>
                         <XRefClientType value="" type="str"/>
                     </XRefApiClient>
-                    <Unique value="1079007" type="enum"/>
+                    <Unique value="1081119" type="enum"/>
+                </XRef>
+                <Font>
+                    <FTag value="Blue" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <String>328</String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                </Font>
+                <XRefEnd />
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <String>.</String>
+                <XRef>
+                    <XRefName value="Ref" type="str"/>
+                    <XRefSrcText value="62408: FaktaRub1: CRT, CRT-D eller ICD enbart vid hjärtsvikt" type="str"/>
+                    <XRefSrcIsElem value="No" type="enum"/>
+                    <XRefSrcFile value="" type="str"/>
+                    <XRefLastUpdate value="1435054990 817000" type="num"/>
+                    <XRefSrcElemNonUniqueId value="" type="str"/>
+                    <XRefAltText value="" type="str"/>
+                    <XRefApiClient>
+                        <XRefClientName value="" type="str"/>
+                        <XRefClientType value="" type="str"/>
+                    </XRefApiClient>
+                    <Unique value="1081113" type="enum"/>
                 </XRef>
                 <Font>
                     <FTag value="Ref" type="str"/>
@@ -28548,7 +28720,7 @@
             </ParaLine>
         </Para>
         <Para>
-            <Unique value="1073176" type="enum"/>
+            <Unique value="1081116" type="enum"/>
             <PgfTag value="Rub1" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
@@ -28558,7 +28730,7 @@
                     <MTypeName value="Index" type="str"/>
                     <MText value="tromboemboliprofylax:hjärtsvikt;hjärtsvikt:trombosprofylax" type="str"/>
                     <MCurrPage value="329" type="str"/>
-                    <Unique value="1076292" type="enum"/>
+                    <Unique value="1081115" type="enum"/>
                 </Marker>
                 <String>romboemboliprofylax</String>
             </ParaLine>
@@ -28636,7 +28808,7 @@
                     <XRefSrcText value="21959: Rub2: Förmaksflimmer" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="&lt;u&gt;&lt;c&gt;E3_HJA_HjartRytmRubbn_2013FM10.fm" type="str"/>
-                    <XRefLastUpdate value="1404839713 104000" type="num"/>
+                    <XRefLastUpdate value="1434474625 449000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -28875,6 +29047,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="196" type="enum"/>
                 <String>teterisering är aktuell för värdering av be</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -28885,7 +29058,6 @@
                 <String>eller sjukdom i hjärtats klaffapparat samt </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="196" type="enum"/>
                 <String>vid oklar eller behandlingsrefraktär bild. </String>
             </ParaLine>
             <ParaLine>
@@ -29185,6 +29357,7 @@
                 <String>ex om patienten vill vårdas </String>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="201" type="enum"/>
                 <String>hemma den sista tiden med stöd av t</String>
                 <Char value="HardSpace" type="enum"/>
                 <String>ex </String>
@@ -29197,7 +29370,6 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="201" type="enum"/>
                 <String>sjukvård. Även andra palliativa behand</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -29227,6 +29399,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="201" type="enum"/>
                 <String>fibrillatorfunktion i pacemaker stängs av i </String>
             </ParaLine>
             <ParaLine>
@@ -29237,7 +29410,6 @@
             <Unique value="1073243" type="enum"/>
             <PgfTag value="Rub1" type="str"/>
             <ParaLine>
-                <TextRectID value="201" type="enum"/>
                 <String>Akut behandling</String>
             </ParaLine>
         </Para>
@@ -29298,6 +29470,7 @@
                 <String>hjärtsjukdom, avsnittet Behandling under </String>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="202" type="enum"/>
                 <String>STEMI, s</String>
                 <Char value="HardSpace" type="enum"/>
                 <XRef>
@@ -29328,13 +29501,52 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <String>dationerna.</String>
+                <String>dationerna, </String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                </Font>
+                <String>s</String>
+                <Char value="HardSpace" type="enum"/>
+                <XRef>
+                    <XRefName value="Page" type="str"/>
+                    <XRefSrcText value="66286: TabellRekRub: Terapirekommendationer – Akut behandling av hjärtsvikt" type="str"/>
+                    <XRefSrcIsElem value="No" type="enum"/>
+                    <XRefSrcFile value="" type="str"/>
+                    <XRefLastUpdate value="1435054990 818000" type="num"/>
+                    <XRefSrcElemNonUniqueId value="" type="str"/>
+                    <XRefAltText value="" type="str"/>
+                    <XRefApiClient>
+                        <XRefClientName value="" type="str"/>
+                        <XRefClientType value="" type="str"/>
+                    </XRefApiClient>
+                    <Unique value="1081202" type="enum"/>
+                </XRef>
+                <Font>
+                    <FTag value="Blue" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <String>330</String>
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                    <FSeparation value="2" type="enum"/>
+                    <FColor value="Red" type="str"/>
+                </Font>
+                <XRefEnd />
+                <Font>
+                    <FTag value="" type="str"/>
+                    <FLocked value="No" type="enum"/>
+                </Font>
+                <String>.</String>
                 <XRef>
                     <XRefName value="Ref" type="str"/>
                     <XRefSrcText value="66286: TabellRekRub: Terapirekommendationer – Akut behandling av hjärtsvikt" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 818000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -29360,7 +29572,6 @@
             <PgfTag value="Rub1" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
-                <TextRectID value="202" type="enum"/>
                 <Marker>
                     <MType value="2" type="enum"/>
                     <MTypeName value="Index" type="str"/>
@@ -29483,7 +29694,7 @@
                     <XRefSrcText value="35227: FigurNr: Figur 2. Behandling i relation till svårighetsgrad (funktion" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 818000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -29660,6 +29871,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="202" type="enum"/>
                 <String>fekt uppnås vid en fortsatt långsiktig hjärt</String>
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
@@ -29678,7 +29890,6 @@
             <PgfTag value="Rub1" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
-                <TextRectID value="202" type="enum"/>
                 <String>Hjärtsvikt hos </String>
                 <Marker>
                     <MType value="2" type="enum"/>
@@ -29817,7 +30028,7 @@
                     <XRefSrcText value="59452: FaktaRub1: Hjärtsvikt hos barn kan misstänkas vid:" type="str"/>
                     <XRefSrcIsElem value="No" type="enum"/>
                     <XRefSrcFile value="" type="str"/>
-                    <XRefLastUpdate value="1405007262 27000" type="num"/>
+                    <XRefLastUpdate value="1435054990 817000" type="num"/>
                     <XRefSrcElemNonUniqueId value="" type="str"/>
                     <XRefAltText value="" type="str"/>
                     <XRefApiClient>
@@ -29904,6 +30115,7 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
+                <TextRectID value="204" type="enum"/>
                 <String>mendationer. Det är därför önskvärt att alla </String>
             </ParaLine>
             <ParaLine>
@@ -29925,7 +30137,6 @@
                 <Char value="SoftHyphen" type="enum"/>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="204" type="enum"/>
                 <String>mation om närmaste GUCH-enhet finns på </String>
             </ParaLine>
             <ParaLine>
@@ -30182,10 +30393,11 @@
             <Unique value="1024577" type="enum"/>
             <PgfTag value="RefRub" type="str"/>
             <Pgf>
-                <PgfPlacement value="Anywhere" type="enum"/>
+                <PgfPlacement value="ColumnTop" type="enum"/>
             </Pgf>
             <PgfNumString value="Referenser" type="str"/>
             <ParaLine>
+                <TextRectID value="204" type="enum"/>
             </ParaLine>
         </Para>
         <Para>
@@ -30338,7 +30550,6 @@
                 <String>dysfunktion. Behandlingsrekommendationer. </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="204" type="enum"/>
                 <Char value="DiscHyphen" type="enum"/>
                 <String>Läkemedelsverket. 2006:(17)1.</String>
                 <Char value="HardReturn" type="enum"/>
@@ -30665,16 +30876,18 @@
             <Unique value="1060206" type="enum"/>
             <PgfTag value="RefTextNrForts" type="str"/>
             <Pgf>
+                <PgfPlacement value="ColumnTop" type="enum"/>
                 <HyphenMaxLines value="4" type="enum"/>
             </Pgf>
             <PgfNumString value="13.\t" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
+                <TextRectID value="209" type="enum"/>
                 <Marker>
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="newlink 13E2" type="str"/>
-                    <MCurrPage value="332" type="str"/>
+                    <MCurrPage value="333" type="str"/>
                     <Unique value="1078496" type="enum"/>
                 </Marker>
                 <String>Kelder JC, Cramer MJ, van Wijngaarden J, van </String>
@@ -30706,7 +30919,7 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="message URL http://www.ncbi.nlm.nih.gov/pubmed/22104551" type="str"/>
-                    <MCurrPage value="332" type="str"/>
+                    <MCurrPage value="333" type="str"/>
                     <Unique value="1060207" type="enum"/>
                 </Marker>
                 <String>Circulation. 2011;124:2865–73.</String>
@@ -30722,7 +30935,7 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="newlink 14E2" type="str"/>
-                    <MCurrPage value="332" type="str"/>
+                    <MCurrPage value="333" type="str"/>
                     <Unique value="1078501" type="enum"/>
                 </Marker>
                 <String>Hobbs FD, Jones MI, Allan TF, Wilson S, Tobias R. </String>
@@ -30745,7 +30958,7 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="message URL http://www.ncbi.nlm.nih.gov/pubmed/11052861" type="str"/>
-                    <MCurrPage value="332" type="str"/>
+                    <MCurrPage value="333" type="str"/>
                     <Unique value="1060214" type="enum"/>
                 </Marker>
                 <String>Eur Heart J. 2000;21:1877–87.</String>
@@ -30761,7 +30974,7 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="newlink 15E2" type="str"/>
-                    <MCurrPage value="332" type="str"/>
+                    <MCurrPage value="333" type="str"/>
                     <Unique value="1078506" type="enum"/>
                 </Marker>
                 <String>Khunti K, Baker R, Grimshaw G. Diagnosis of pa</String>
@@ -30784,7 +30997,7 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="message URL http://www.ncbi.nlm.nih.gov/pubmed/?term=chronic+and+examination+and+heart+failure+and+2000+and+khunti" type="str"/>
-                    <MCurrPage value="332" type="str"/>
+                    <MCurrPage value="333" type="str"/>
                     <Unique value="1056407" type="enum"/>
                 </Marker>
                 <String>Br J Gen Pract. 2000;50:50–4.</String>
@@ -30800,7 +31013,7 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="newlink 16E2" type="str"/>
-                    <MCurrPage value="332" type="str"/>
+                    <MCurrPage value="333" type="str"/>
                     <Unique value="1078511" type="enum"/>
                 </Marker>
                 <String>Maisel A, Mueller C, Adams K Jr, Anker SD, Aspro</String>
@@ -30822,7 +31035,7 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="message URL http://www.ncbi.nlm.nih.gov/pubmed/18760965" type="str"/>
-                    <MCurrPage value="332" type="str"/>
+                    <MCurrPage value="333" type="str"/>
                     <Unique value="1056515" type="enum"/>
                 </Marker>
                 <String>Eur J Heart Fail. 2008;10:824–39.</String>
@@ -30838,7 +31051,7 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="newlink 17E2" type="str"/>
-                    <MCurrPage value="332" type="str"/>
+                    <MCurrPage value="333" type="str"/>
                     <Unique value="1078516" type="enum"/>
                 </Marker>
                 <String>Dahlström U, Håkansson J, Swedberg K, Walden</String>
@@ -30848,7 +31061,6 @@
                 <String>ström A. Adequacy of diagnosis and treatment of </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="209" type="enum"/>
                 <String>chronic heart failure in primary health care in </String>
             </ParaLine>
             <ParaLine>
@@ -31175,6 +31387,7 @@
             <PgfNumString value="24.\t" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
+                <TextRectID value="209" type="enum"/>
                 <Marker>
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
@@ -31346,7 +31559,6 @@
             <PgfNumString value="28.\t" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
-                <TextRectID value="209" type="enum"/>
                 <Marker>
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
@@ -31609,11 +31821,12 @@
             <PgfNumString value="34.\t" type="str"/>
             <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
+                <TextRectID value="210" type="enum"/>
                 <Marker>
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="newlink 34E2" type="str"/>
-                    <MCurrPage value="333" type="str"/>
+                    <MCurrPage value="334" type="str"/>
                     <Unique value="1078613" type="enum"/>
                 </Marker>
                 <String>Effect of metoprolol CR/XL in chronic heart </String>
@@ -31636,7 +31849,7 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="message URL http://www.ncbi.nlm.nih.gov/pubmed/10376614" type="str"/>
-                    <MCurrPage value="333" type="str"/>
+                    <MCurrPage value="334" type="str"/>
                     <Unique value="1059681" type="enum"/>
                 </Marker>
                 <String>Lancet. 1999;353:2001–7.</String>
@@ -31652,7 +31865,7 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="newlink 35E2" type="str"/>
-                    <MCurrPage value="333" type="str"/>
+                    <MCurrPage value="334" type="str"/>
                     <Unique value="1078618" type="enum"/>
                 </Marker>
                 <String>Swedberg K, Komajda M, Böhm M, Borer JS, </String>
@@ -31679,7 +31892,7 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="message URL http://www.ncbi.nlm.nih.gov/pubmed/20801500" type="str"/>
-                    <MCurrPage value="333" type="str"/>
+                    <MCurrPage value="334" type="str"/>
                     <Unique value="1077552" type="enum"/>
                 </Marker>
                 <String>Lancet. 2010;376:875–85.</String>
@@ -31700,7 +31913,7 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="newlink 36E2" type="str"/>
-                    <MCurrPage value="333" type="str"/>
+                    <MCurrPage value="334" type="str"/>
                     <Unique value="1078623" type="enum"/>
                 </Marker>
                 <String>The effect of digoxin on mortality and morbidity </String>
@@ -31722,7 +31935,7 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="message URL http://www.ncbi.nlm.nih.gov/pubmed/9036306" type="str"/>
-                    <MCurrPage value="333" type="str"/>
+                    <MCurrPage value="334" type="str"/>
                     <Unique value="1058463" type="enum"/>
                 </Marker>
                 <String>N Engl J Med. 1997;336:525–33.</String>
@@ -31738,7 +31951,7 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="newlink 37E2" type="str"/>
-                    <MCurrPage value="333" type="str"/>
+                    <MCurrPage value="334" type="str"/>
                     <Unique value="1078628" type="enum"/>
                 </Marker>
                 <String>Rathore SS, Curtis JP, Wang Y, Bristow MR, </String>
@@ -31761,7 +31974,7 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="message URL http://www.ncbi.nlm.nih.gov/pubmed/12588271" type="str"/>
-                    <MCurrPage value="333" type="str"/>
+                    <MCurrPage value="334" type="str"/>
                     <Unique value="1074283" type="enum"/>
                 </Marker>
                 <String>JAMA. 2003;289:871–8.</String>
@@ -31777,7 +31990,7 @@
                     <MType value="8" type="enum"/>
                     <MTypeName value="Hypertext" type="str"/>
                     <MText value="newlink 38E2" type="str"/>
-                    <MCurrPage value="333" type="str"/>
+                    <MCurrPage value="334" type="str"/>
                     <Unique value="1078633" type="enum"/>
                 </Marker>
                 <String>Dickstein K, Vardas PE, Auricchio A, Daubert JC, </String>
@@ -31793,7 +32006,6 @@
                 <String>failure: an update of the 2008 ESC Guidelines for </String>
             </ParaLine>
             <ParaLine>
-                <TextRectID value="210" type="enum"/>
                 <String>the diagnosis and treatment of acute and chronic </String>
             </ParaLine>
             <ParaLine>
@@ -32033,8 +32245,12 @@
         <Para>
             <Unique value="1073289" type="enum"/>
             <PgfTag value="ForVidareLasning" type="str"/>
+            <Pgf>
+                <PgfPlacement value="ColumnTop" type="enum"/>
+            </Pgf>
             <PgfNumString value="För vidare läsning" type="str"/>
             <ParaLine>
+                <TextRectID value="210" type="enum"/>
             </ParaLine>
         </Para>
         <Para>
@@ -33286,7 +33502,7 @@
         <Notes>
         </Notes>
         <Para>
-            <Unique value="1080983" type="enum"/>
+            <Unique value="1081029" type="enum"/>
             <PgfTag value="Bröd" type="str"/>
             <Pgf>
                 <PgfAlignment value="Right" type="enum"/>
@@ -33321,15 +33537,22 @@
                     <FBackgroundColor value="NoColor" type="enum"/>
                 </PgfFont>
             </Pgf>
+            <PgfReferenced value="Yes" type="enum"/>
             <ParaLine>
                 <TextRectID value="170" type="enum"/>
-                <String>Ändrad</String>
-                <Char value="Tab" type="enum"/>
-                <String> </String>
-                <Char value="Tab" type="enum"/>
-                <String>2014-07-16, s</String>
+                <String>Ändrad 2014-12-01, s</String>
                 <Char value="HardSpace" type="enum"/>
                 <String>325.</String>
+                <Char value="HardReturn" type="enum"/>
+            </ParaLine>
+            <ParaLine>
+                <String>2015-06-26, s</String>
+                <Char value="HardSpace" type="enum"/>
+                <String>328, s</String>
+                <Char value="HardSpace" type="enum"/>
+                <String>329 och s</String>
+                <Char value="HardSpace" type="enum"/>
+                <String>331.</String>
             </ParaLine>
         </Para>
     </TextFlow>
