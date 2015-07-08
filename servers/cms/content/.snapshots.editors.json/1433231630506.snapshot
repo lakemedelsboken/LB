@@ -1,0 +1,50 @@
+{
+	"templateName": "default",
+	"templateDescription": "Vanlig sida",
+	"title": "Redaktionskommitté",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-05-19 23:51",
+	"published": "2015-05-28 10:30",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "e75cb6af-4a7b-4cff-b068-3294f02cb4e7",
+			"name": "e75cb6af-4a7b-4cff-b068-3294f02cb4e7",
+			"type": "text",
+			"content": "<h1 id=\"Redaktionskommitt-\">Redaktionskommitt&eacute;</h1>\n<ul class=\"authorsByLetter\">\n<li><strong>Patrik Midl&ouml;v</strong>&nbsp;<small>Ordf&ouml;rande</small><br>Institutionen f&ouml;r Kliniska Vetenskaper i Malm&ouml;, Lunds Universitet samt V&aring;rdcentralen, T&aring;belund, Esl&ouml;v</li>\n<li><strong>Pernilla &Ouml;rtqvist</strong>&nbsp;<small>Redakt&ouml;r</small><br>L&auml;kemedelsverket, Uppsala</li>\n<li><strong>Annika And&eacute;n</strong><br>Lule&aring;</li>\n<li><strong>Anders Carlsten</strong><br>L&auml;kemedelsverket, Uppsala</li>\n<li><strong>Kerstin Claesson</strong><br>L&auml;kemedelsverket, Uppsala</li>\n<li><strong>Leif Gothefors</strong><br>Klinisk vetenskap, pediatrik, Ume&aring; Universitet, Ume&aring;</li>\n<li><strong>Tove Gunnarsson</strong><br>Psykiatri Karolinska, Karolinska Universitetssjukhuset, Stockholm</li>\n<li><strong>Bengt Jeppsson</strong><br>Kirurgiska kliniken, Sk&aring;nes universitetssjukhus, Malm&ouml;</li>\n<li><strong>Hans Liedholm</strong><br>Lund</li>\n<li><strong>Jan Liliemarkglukos</strong><br>SBU, Stockholm</li>\n<li><strong>Staffan Living</strong><br>Eskilstuna</li>\n<li><strong>H&aring;kan Odeberg</strong><br>Landstinget Blekinge kompetenscentrum, Karlskrona</li>\n</ul>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false",
+					".DS_Store": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/Users/staliv/Projects/LB/servers/cms/content/editors.json",
+	"indexed": "true",
+	"modified": "2015-06-02 09:53",
+	"isPublished": true
+}
