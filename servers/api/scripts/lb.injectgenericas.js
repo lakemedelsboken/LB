@@ -6,7 +6,7 @@
 
 	function log(message) {
 		if (console && console.log) {
-			console.log("LB: ", message);
+			console.log("LB: " + message);
 		}
 	}
 
@@ -72,7 +72,9 @@
 
 				var sendData = encodeURIComponent(window.location.href);
 				
-				var request = $.getJSON("http://www.lakemedelsboken.se/api/v1/injectgenericas/{URL_SELECTOR}/?url=" + sendData + "&apikey={APIKEY}&callback=?", function(data) {
+				log("Using " + sendData + " for server content lookup");
+				
+				$.getJSON("http://{ENVIRONMENT}/api/v1/injectgenericas/{URL_SELECTOR}/?url=" + sendData + "&apikey={APIKEY}&callback=?", function(data) {
 					callback(null, data.content);
 				})
 				.fail(function(request, textStatus, error) {
@@ -106,7 +108,6 @@
 				} else {
 					//Remove loading box
 					//loadBox.html("Färdig.");
-					log("Done loading substances.");
 					//setTimeout(function() {
 					//	loadBox.hide("fast");
 					//}, 1000);
@@ -114,7 +115,7 @@
 					//Attach handlers
 					$("body").on("click", "a.inlineGenerica", handleGenericas);
 					$("body").on("click", "a.atcCodeInPopover", handleAtcCodeInPopover);
-					$("head").append('<link rel="stylesheet" href="http://www.lakemedelsboken.se/api/v1/injectgenericas/lb.injectgenericas.css" id="injectGenericasStyles">');
+					$("head").append('<link rel="stylesheet" href="http://{ENVIRONMENT}/api/v1/injectgenericas/lb.injectgenericas.css" id="injectGenericasStyles">');
 
 					//Switch content
 					var selectedElement = $("{SELECTOR}");
@@ -122,6 +123,7 @@
 					if (selectedElement.length > 0) {
 						selectedElement = selectedElement.first();
 						selectedElement.html(data);
+						log("Done loading substances.");
 					}
 
 				}
@@ -132,23 +134,23 @@
 				tipCounter: 0,
 				getATCItems: function(parentId, callback) {
 					var out = {atcCode: parentId};
-					$.getJSON("http://www.lakemedelsboken.se/api/v1/atctree?parentid=" + encodeURIComponent(parentId) + "&callback=?", function(results) {
+					$.getJSON("http://{ENVIRONMENT}/api/v1/atctree?parentid=" + encodeURIComponent(parentId) + "&callback=?", function(results) {
 						out.data = results;
 						callback(null, out);
-					}).error(function(jqXHR, status, error) {
+					}).error(function() { //jqXHR, status, error
 						callback("Kunde inte hitta rubriker", out);
 					});
 				},
 				getBoxSearch: function(medName, callback) {
 					var out = [];
-					$.getJSON("http://www.lakemedelsboken.se/api/v1/contentsearch?search=" + encodeURIComponent(medName) + "&callback=?", function(results) {
+					$.getJSON("http://{ENVIRONMENT}/api/v1/contentsearch?search=" + encodeURIComponent(medName) + "&callback=?", function(results) {
 						out = results;
 						callback(null, out);
-					}).error(function(jqXHR, status, error) {
+					}).error(function() { //jqXHR, status, error
 						callback("Preparatet kunde inte hittas", out);
 					});
 				},
-				getIcon: function(type) {
+				getIcon: function() { //type
 					return "";
 				}
 			};
@@ -185,7 +187,7 @@
 					}
 			
 					content += "</div><div class=\"lb\" style=\"float: left !important; width: 47% !important; margin-left: 5% !important;\"><h4 class=\"lb\">Innehåll</h4><ul class=\"lb search-" + atcCodes.join("") + " nav nav-tabs nav-stacked\"><li class=\"lb loading\"><a class=\"lb\" href=\"#\"><i class=\"lb icon icon-refresh icon-spin\"></i> Söker...</a></ul></div>";
-					var title = "Preparatinformation från <a class=\"lb\" href=\"http://www.lakemedelsboken.se\" target=\"_blank\">Läkemedelsboken</a>";
+					var title = "Preparatinformation från <a class=\"lb\" href=\"http://{ENVIRONMENT}\" target=\"_blank\">Läkemedelsboken</a>";
 
 					title += '<button type="button" class="lb close" data-dismiss="clickover">&times;</button>'
 
@@ -241,7 +243,7 @@
 
 											var title = (item.title_HL !== undefined) ? item.title_HL : item.title;
 							
-											currentTherapyMenu.append($("<li class=\"lb\"><a class=\"lb boxSearchResult\" target=\"_blank\" href=\"http://www.lakemedelsboken.se/" + item.chapter + "?search=&iso=false&imo=false&nplId=null&id=" + item.id + "\"><i class=\"lb icon " + lb.getIcon(item.type) + "\"></i> <strong class=\"lb\">" + title + "</strong><br class=\"lb\"><small class=\"lb\">" + titlePath + "</small><div class=\"lb\">" + item.content_HL + "</div></a></li>")); 
+											currentTherapyMenu.append($("<li class=\"lb\"><a class=\"lb boxSearchResult\" target=\"_blank\" href=\"http://{ENVIRONMENT}/" + item.chapter + "?search=&iso=false&imo=false&nplId=null&id=" + item.id + "\"><i class=\"lb icon " + lb.getIcon(item.type) + "\"></i> <strong class=\"lb\">" + title + "</strong><br class=\"lb\"><small class=\"lb\">" + titlePath + "</small><div class=\"lb\">" + item.content_HL + "</div></a></li>")); 
 
 										}
 
@@ -269,14 +271,14 @@
 
 											var item = results.data[i];
 											if (item.hasChildren) {
-												currentATCMenu.append("<li class=\"lb\" id=\"" + tipId + "_" + item.id + "\"><a target=\"_blank\" href=\"http://www.lakemedelsboken.se/atc/" + item.id + "\" data-indentation=\"0\" class=\"lb atcCodeInPopover\"><i class=\"lb icon icon-plus-sign-alt\">+</i><i class=\"lb icon icon-angle-down pull-right\"></i> <strong class=\"lb\">" + item.text + "</strong></a></li>");
+												currentATCMenu.append("<li class=\"lb\" id=\"" + tipId + "_" + item.id + "\"><a target=\"_blank\" href=\"http://{ENVIRONMENT}/atc/" + item.id + "\" data-indentation=\"0\" class=\"lb atcCodeInPopover\"><i class=\"lb icon icon-plus-sign-alt\">+</i><i class=\"lb icon icon-angle-down pull-right\"></i> <strong class=\"lb\">" + item.text + "</strong></a></li>");
 											} else if (item.children && item.children.length > 0) {
 												for (var j = 0; j < item.children.length; j++) {
 													var productItem = item.children[j];
 													var images = "";
 													if (productItem.images) {
 														for (var x=0; x < productItem.images.length; x++) {
-															images += "<img src=\"http://www.lakemedelsboken.se" + productItem.images[x] + "\" class=\"lb img-polaroid pull-right\" style=\"width: 15px !important; height: 15px !important; margin-right: 5px !important;\" />";
+															images += "<img src=\"http://{ENVIRONMENT}" + productItem.images[x] + "\" class=\"lb img-polaroid pull-right\" style=\"width: 15px !important; height: 15px !important; margin-right: 5px !important;\" />";
 														}
 													}
 													var productInfo = productItem.text.split(",");
@@ -291,14 +293,14 @@
 													productInfo = productInfo.join(",");
 
 													var extraIndent = 0;
-													if (j > 0) {
+													//if (j > 0) {
 														//extraIndent = 25;
-													}
+														//}
 												
 													if (productItem.noinfo === true) {
-														noInfoItems += "<li" + (productItem.noinfo === true ? " class=\"lb ui-state-disabled\"" : " class=\"lb\"") + "><a target=\"_blank\" href=\"http://www.lakemedelsboken.se/?imo=true&nplId=" + productItem.id + "\" data-product-id=\"" + productItem.id + "\" class=\"lb inlineProduct\" " + ((extraIndent > 0) ? " style=\"padding-left: " + extraIndent + "px !important;\"" : "") + ">" + images + productInfo + "</a></li>";
+														noInfoItems += "<li" + (productItem.noinfo === true ? " class=\"lb ui-state-disabled\"" : " class=\"lb\"") + "><a target=\"_blank\" href=\"http://{ENVIRONMENT}/?imo=true&nplId=" + productItem.id + "\" data-product-id=\"" + productItem.id + "\" class=\"lb inlineProduct\" " + ((extraIndent > 0) ? " style=\"padding-left: " + extraIndent + "px !important;\"" : "") + ">" + images + productInfo + "</a></li>";
 													} else {
-														currentATCMenu.append("<li" + (productItem.noinfo === true ? " class=\"lb ui-state-disabled\"" : " class=\"lb\"") + "><a target=\"_blank\" href=\"http://www.lakemedelsboken.se/?imo=true&nplId=" + productItem.id + "\" data-product-id=\"" + productItem.id + "\" class=\"lb inlineProduct\" " + ((extraIndent > 0) ? " style=\"padding-left: " + extraIndent + "px !important;\"" : "") + ">" + images + productInfo + "</a></li>");
+														currentATCMenu.append("<li" + (productItem.noinfo === true ? " class=\"lb ui-state-disabled\"" : " class=\"lb\"") + "><a target=\"_blank\" href=\"http://{ENVIRONMENT}/?imo=true&nplId=" + productItem.id + "\" data-product-id=\"" + productItem.id + "\" class=\"lb inlineProduct\" " + ((extraIndent > 0) ? " style=\"padding-left: " + extraIndent + "px !important;\"" : "") + ">" + images + productInfo + "</a></li>");
 													}
 												}
 											} else {
@@ -361,12 +363,12 @@
 					//Close sub menu
 
 					var id = currentAnchor.parent().attr("id");
-					var parentMenu = $("#" + id).parents("ul.ui-menu");
+					//var parentMenu = $("#" + id).parents("ul.ui-menu");
 
 					var indentationLevel = parseInt(currentAnchor.attr("data-indentation"));
 		
 					//Find proceeding items with higher indentation level and remove
-					var children = currentAnchor.parent().nextAll().each(function(index, element) {
+					currentAnchor.parent().nextAll().each(function(index, element) {
 						var firstAnchor = $(element).find("a").first();
 						if (firstAnchor.attr("data-indentation") !== undefined && parseInt(firstAnchor.attr("data-indentation")) > indentationLevel) {
 							$(element).remove();
@@ -398,7 +400,7 @@
 	
 					//console.log(atcCode);
 					//console.log(tipId);
-					var parentMenu = $("#" + id).parents("ul.ui-menu");
+					//var parentMenu = $("#" + id).parents("ul.ui-menu");
 
 					//Display loading indicator
 					currentAnchor.find("i.icon-plus-sign-alt").removeClass("icon-plus-sign-alt").addClass("icon-refresh");
@@ -423,7 +425,7 @@
 
 								var item = results.data[i];
 								if (item.hasChildren) {
-									content += "<li class=\"lb\" id=\"" + tipId + "_" + item.id + "\"><a target=\"_blank\" href=\"http://www.lakemedelsboken.se/atc/" + item.id + "\" data-indentation=\"" + (indentationLevel + 1) + "\" class=\"lb atcCodeInPopover\" style=\"padding-left: " + indentationPixels + " !important;\"><i class=\"lb icon icon-plus-sign-alt\">+</i><i class=\"icon icon-angle-down pull-right\"></i> <strong class=\"lb\">" + item.text + "</strong></a></li>";
+									content += "<li class=\"lb\" id=\"" + tipId + "_" + item.id + "\"><a target=\"_blank\" href=\"http://{ENVIRONMENT}/atc/" + item.id + "\" data-indentation=\"" + (indentationLevel + 1) + "\" class=\"lb atcCodeInPopover\" style=\"padding-left: " + indentationPixels + " !important;\"><i class=\"lb icon icon-plus-sign-alt\">+</i><i class=\"icon icon-angle-down pull-right\"></i> <strong class=\"lb\">" + item.text + "</strong></a></li>";
 								} else if (item.children && item.children.length > 0) {
 									//content += "<li><a style=\"padding-left: " + indentationPixels + ";\"><strong>" + item.text + "</strong></a></li>";
 					
@@ -433,7 +435,7 @@
 										var images = "";
 										if (productItem.images) {
 											for (var x=0; x < productItem.images.length; x++) {
-												images += "<img src=\"http://www.lakemedelsboken.se" + productItem.images[x] + "\" class=\"lb img-polaroid pull-right\" style=\"width: 15px !important; height: 15px !important; margin-right: 5px !important;\" />";
+												images += "<img src=\"http://{ENVIRONMENT}" + productItem.images[x] + "\" class=\"lb img-polaroid pull-right\" style=\"width: 15px !important; height: 15px !important; margin-right: 5px !important;\" />";
 											}
 										}
 						
@@ -447,14 +449,14 @@
 										productInfo = productInfo.join(",");
 						
 										var extraIndent = 0;
-										if (j > 0) {
+										//if (j > 0) {
 											//extraIndent = 25;
-										}
+											//}
 
 										if (productItem.noinfo === true) {
-											noInfoItems += "<li" + (productItem.noinfo === true ? " class=\"lb ui-state-disabled\"" : " class=\"lb\"") + "><a target=\"_blank\" href=\"http://www.lakemedelsboken.se/?imo=true&nplId=" + productItem.id + "\" data-product-id=\"" + productItem.id + "\" class=\"lb inlineProduct\" data-indentation=\"" + (indentationLevel + 1) + "\" style=\"padding-left: " + (parseInt(indentationPixels) + extraIndent) + "px !important;\">" + images + productInfo + "</a></li>"; 
+											noInfoItems += "<li" + (productItem.noinfo === true ? " class=\"lb ui-state-disabled\"" : " class=\"lb\"") + "><a target=\"_blank\" href=\"http://{ENVIRONMENT}/?imo=true&nplId=" + productItem.id + "\" data-product-id=\"" + productItem.id + "\" class=\"lb inlineProduct\" data-indentation=\"" + (indentationLevel + 1) + "\" style=\"padding-left: " + (parseInt(indentationPixels) + extraIndent) + "px !important;\">" + images + productInfo + "</a></li>"; 
 										} else {
-											content += "<li" + (productItem.noinfo === true ? " class=\"lb ui-state-disabled\"" : " class=\"lb\"") + "><a target=\"_blank\" href=\"http://www.lakemedelsboken.se/?imo=true&nplId=" + productItem.id + "\" data-product-id=\"" + productItem.id + "\" class=\"lb inlineProduct\" data-indentation=\"" + (indentationLevel + 1) + "\" style=\"padding-left: " + (parseInt(indentationPixels) + extraIndent) + "px !important;\">" + images + productInfo + "</a></li>";
+											content += "<li" + (productItem.noinfo === true ? " class=\"lb ui-state-disabled\"" : " class=\"lb\"") + "><a target=\"_blank\" href=\"http://{ENVIRONMENT}/?imo=true&nplId=" + productItem.id + "\" data-product-id=\"" + productItem.id + "\" class=\"lb inlineProduct\" data-indentation=\"" + (indentationLevel + 1) + "\" style=\"padding-left: " + (parseInt(indentationPixels) + extraIndent) + "px !important;\">" + images + productInfo + "</a></li>";
 										}
 									}
 
@@ -980,17 +982,17 @@
 							maxLeftPosition = indent;
 						}
 
-						if ((tp.left + actualWidth) > maxRightPosition) {
-							tp.left = maxRightPosition - indent - actualWidth;
+						if ((parseInt(tp.left) + parseInt(actualWidth)) > maxRightPosition) {
+							tp.left = (maxRightPosition - indent - actualWidth) + "px";
 
-							$tip.find(".arrow").css("left", (pos.left + (pos.width / 2) - tp.left) + "px");
+							$tip.find(".arrow").css("left", (pos.left + (pos.width / 2) - parseInt(tp.left)) + "px");
 
 						}
 
-						if (tp.left < maxLeftPosition) {
-							tp.left = maxLeftPosition;
+						if (parseInt(tp.left) < maxLeftPosition) {
+							tp.left = maxLeftPosition + "px";
 
-							$tip.find(".arrow").css("left", (pos.left + (pos.width / 2) - tp.left) + "px");
+							$tip.find(".arrow").css("left", (pos.left + (pos.width / 2) - parseInt(tp.left)) + "px");
 						}
 
 						$tip
