@@ -23,12 +23,12 @@ var processor = {
 					}
 					word = word.toLowerCase();
 					updateWord(word, atc);
-					res.send(200);
+					res.sendStatus(200);
 				} else {
-					res.send(500, "Not what I was expecting...");
+					res.sendStatus(500, "Not what I was expecting...");
 				}
 			} else {
-				res.send(500, "Not what I was expecting...");
+				res.sendStatus(500, "Not what I was expecting...");
 			}
 		});
 
@@ -37,12 +37,12 @@ var processor = {
 				var word = req.query["keyword"];
 				if (word !== undefined && word !== "") {
 					deleteWord(word);
-					res.send(200);
+					res.sendStatus(200);
 				} else {
-					res.send(500, "Not what I was expecting...");
+					res.sendStatus(500, "Not what I was expecting...");
 				}
 			} else {
-				res.send(500, "Not what I was expecting...");
+				res.sendStatus(500, "Not what I was expecting...");
 			}
 		});
 
