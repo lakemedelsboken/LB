@@ -741,9 +741,20 @@ ga = function() {};
 				}
 				newMenu.append($("<li class=\"menuLoading\"><a href=\"#\"><i class=\"fa fa-refresh fa-spin\"></i> Hämtar rubriker...</a></li>")); 
 
-				//Apply jquery-ui-menu magic
-
+				//Override jquery-ui-menu functions
 				newMenu.menu(
+					{
+						select: function(event, ui) {
+
+							//Make sure keyboard works when selecting items in left menu
+							if (event.which > 1) {
+								var anchor = ui.item.find("a").first();
+								if (anchor !== undefined && anchor.attr("href") !== undefined) {
+									location.href = anchor.attr("href");
+								}
+							}
+						}
+					}
 					/*
 					{select: function(event, ui) {
 
@@ -1013,8 +1024,6 @@ ga = function() {};
 			
 				var titleIndex = oldMenuItems.index(titleItem);
 			
-				var animationProperties = {};
-
 				var hideDuration = duration;
 
 				//Make sure hiding is a fraction faster than displaying the new menu
@@ -1562,7 +1571,7 @@ ga = function() {};
 		},
 		openPage: function(chapter, id, forceMenuUpdate) {
 			//Inject content via ajax
-			var self = this;
+			//var self = this;
 		
 			lb.currentChapter = chapter;
 		
@@ -1586,7 +1595,7 @@ ga = function() {};
 			}
 
 			return;
-			
+			/*
 			if (forceMenuUpdate === undefined) {
 				forceMenuUpdate = true;
 			}
@@ -1713,13 +1722,14 @@ ga = function() {};
 					return false;
 				}
 			});
+			*/
 		},
 		oldSearchValue: "",
 		initSearch: function() {
 
 			var self = this;
 			var search = $("#search");
-			var searchResults = $("#searchResults");
+			//var searchResults = $("#searchResults");
 
 			/*
 			$("#titleSearchResultsList").menu({select: function(event, ui) {
@@ -2218,7 +2228,8 @@ ga = function() {};
 				var indentationLevel = parseInt(currentAnchor.attr("data-indentation"));
 				
 				//Find proceeding items with higher indentation level and remove
-				var children = currentAnchor.parent().nextAll().each(function(index, element) {
+				//var children = 
+				currentAnchor.parent().nextAll().each(function(index, element) {
 					var firstAnchor = $(element).find("a").first();
 					if (firstAnchor.attr("data-indentation") !== undefined && parseInt(firstAnchor.attr("data-indentation")) > indentationLevel) {
 						$(element).remove();
@@ -2298,9 +2309,9 @@ ga = function() {};
 									productInfo = productInfo.join(",");
 								
 									var extraIndent = 0;
-									if (j > 0) {
+									//if (j > 0) {
 										//extraIndent = 25;
-									}
+										//}
 									content += "<li" + (productItem.noinfo === true ? " class=\"ui-state-disabled\"" : "") + "><a href=\"/product/" + productItem.id + "\" data-product-id=\"" + productItem.id + "\" class=\"inlineProduct\" data-indentation=\"" + (indentationLevel + 1) + "\" style=\"padding-left: " + (parseInt(indentationPixels) + extraIndent) + "px;\">" + images + productInfo + "</a></li>";
 								}
 							
@@ -2410,9 +2421,9 @@ ga = function() {};
 												productInfo = productInfo.join(",");
 
 												var extraIndent = 0;
-												if (j > 0) {
+												//if (j > 0) {
 													//extraIndent = 25;
-												}
+												//}
 												
 												currentATCMenu.append("<li" + (productItem.noinfo === true ? " class=\"ui-state-disabled\"" : "") + "><a href=\"/product/" + productItem.id + "\" data-product-id=\"" + productItem.id + "\" class=\"inlineProduct\" " + ((extraIndent > 0) ? " style=\"padding-left: " + extraIndent + "px;\"" : "") + ">" + images + productInfo + "</a></li>");
 											}
