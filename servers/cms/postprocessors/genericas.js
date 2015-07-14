@@ -2,6 +2,7 @@ var cheerio = require("cheerio");
 var fs = require("fs");
 var crypto = require("crypto");
 var path = require("path");
+var chokidar = require("chokidar");
 
 var injector;
 
@@ -189,7 +190,9 @@ module.exports = injector = {
 	loadGenericas: function() {
 		var self = this;
 		
-		var genericas = JSON.parse(fs.readFileSync(__dirname + "/../../../npl/atcTree.json"), "utf8");
+		var atcTreePath = path.join(__dirname, "..", "..", "..", "npl", "atcTree.json");
+		
+		var genericas = JSON.parse(fs.readFileSync(atcTreePath), "utf8");
 		genericas.shift(); //remove root element
 		
 		//console.log(genericas.length);
@@ -305,5 +308,42 @@ module.exports = injector = {
 	
 };
 
-//var testText = "<html><body><p><span>paracetamol</span>tramadol</p></body></html>";
-//console.log(injector.injectGenericas(testText));
+
+var keywordsPath = path.join(__dirname, "admininterfaces", "genericas", "keywords.json");
+var checkAtcTreePath = path.join(__dirname, "..", "..", "..", "npl", "atcTree.json");
+
+var chokidarOptions = {
+	persistent: true,
+	ignoreInitial: true
+};
+
+chokidar.watch(keywordsPath, chokidarOptions).on("all", function(event, path) {
+
+	if (event === "change" || event === "add") {
+
+		console.log("'keywords.json' has changed, clearing genericas in postprocessor 'genericas.js'");
+
+		//Clear keywords and genericas
+		if (injector !== undefined && injector.genericas !== null) {
+			injector.genericas = null;
+		}
+
+	}
+
+});
+
+chokidar.watch(checkAtcTreePath, chokidarOptions).on("all", function(event, path) {
+
+	if (event === "change" || event === "add") {
+
+		console.log("'atcTree.json' has changed, clearing genericas in postprocessor 'genericas.js'");
+
+		//Clear keywords and genericas
+		if (injector !== undefined && injector.genericas !== null) {
+			injector.genericas = null;
+		}
+
+	}
+
+});
+
