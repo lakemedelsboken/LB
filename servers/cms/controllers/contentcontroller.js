@@ -860,7 +860,8 @@ var ContentController = {
 		
 		var contentDirPath = path.join(__dirname, "..", "content").replace(/\s/g, "\\ ");
 		var imagesDirPath = path.join(__dirname, "..", "output", "static", "images").replace(/\s/g, "\\ ");
-
+		var keywordsDirPath = path.join(__dirname, "..", "postprocessors", "admininterfaces", "genericas", "keywords.json").replace(/\s/g, "\\ ");
+		
 		ContentController.saveToLog("Checking content dir...", gitStatusLogPath);
 		
 		ContentController.checkAndUploadPathToGit(contentDirPath, function(err) {
@@ -874,8 +875,17 @@ var ContentController = {
 				if (err) {
 					return callback(err);
 				}
+
+				ContentController.saveToLog("Checking keywords file...", gitStatusLogPath);
+
+				ContentController.checkAndUploadPathToGit(keywordsDirPath, function(err) {
+					if (err) {
+						return callback(err);
+					}
 				
-				return callback();
+					return callback();
+				});
+
 			});
 			
 			
@@ -892,9 +902,9 @@ var ContentController = {
 
 		if (nrOfLines <= 5) {
 			//No changed files
-			ContentController.saveToLog("There are no changes in the content tree, nothing to upload.", gitStatusLogPath);
+			ContentController.saveToLog("There are no changes in the content tree for: " + contentDirPath, gitStatusLogPath);
 
-			ContentController.saveToLog("Finished without uploading.", gitStatusLogPath);
+			//ContentController.saveToLog("Finished without uploading.", gitStatusLogPath);
 
 			return callback();
 
@@ -910,7 +920,7 @@ var ContentController = {
 					return callback();
 				}
 
-				ContentController.saveToLog("Finished upload to GitHub.", gitStatusLogPath);
+				ContentController.saveToLog("Finished upload to GitHub for: " + contentDirPath, gitStatusLogPath);
 
 				return callback();
 
