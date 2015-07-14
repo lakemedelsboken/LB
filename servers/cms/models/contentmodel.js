@@ -189,6 +189,7 @@ var ContentModel = {
 						var possiblePublishedDirectory = path.join(pageDirPath, ".published." + pageFileName);
 						
 						var lastVersionIsPublished = false;
+						var canBeRevertedToLastPublishedVersion = false;
 						
 						if (fs.existsSync(possiblePublishedDirectory)) {
 							//Find the most recent published version
@@ -200,6 +201,7 @@ var ContentModel = {
 							});
 							
 							if (publishedFileNames.length > 0) {
+								canBeRevertedToLastPublishedVersion = true;
 								var mostRecent = publishedFileNames[0];
 								var mostRecentPath = path.join(possiblePublishedDirectory, mostRecent);
 								
@@ -209,6 +211,7 @@ var ContentModel = {
 								//These values always differ between the two, make sure they are the same
 								mostRecentPublishedContent.type = mostRecentDraftContent.type;
 								mostRecentPublishedContent.path = mostRecentDraftContent.path;
+								mostRecentPublishedContent.modified = mostRecentDraftContent.modified;
 								
 								//Prepare for comparison
 								mostRecentDraftContent = JSON.stringify(mostRecentDraftContent, null, "");
@@ -225,7 +228,7 @@ var ContentModel = {
 						if (!lastVersionIsPublished) {
 							var lastDraftDate = fs.statSync(globalPagePath).mtime.getTime();
 							//console.log(lastDraftDate);
-							draftPages.push({path: path.join(contentPath, localPagePath), date: lastDraftDate, niceDate: dateFormat(new Date(lastDraftDate), "yyyy-mm-dd HH:MM")});
+							draftPages.push({path: path.join(contentPath, localPagePath), canBeRevertedToLastPublishedVersion: canBeRevertedToLastPublishedVersion, date: lastDraftDate, niceDate: dateFormat(new Date(lastDraftDate), "yyyy-mm-dd HH:MM")});
 						}
 						
 					}
@@ -244,7 +247,7 @@ var ContentModel = {
 
 				var baseName = path.basename(fullPath);
 				
-				if (baseName.indexOf(".json") > -1) {
+				if (path.extname(baseName) === ".json") {
 					fs.readFile(fullPath, "utf8", function(err, data) {
 					
 						if (err) {
@@ -553,7 +556,7 @@ var ContentModel = {
 				
 				var feedOutput = ContentModel.getFeedOutput(feedItems, data.title, feedUrlPath, data.author);
 				
-				//TODO: Handle {pre} in links
+				//TODO: Handle {pre} in links better, read from settings
 				feedOutput = feedOutput.replace(/\{pre\}/g, "http://www.lakemedelsboken.se");
 				
 				//Write feed to disk
@@ -601,8 +604,34 @@ var ContentModel = {
 			//Run through post render template hook from pagetypes
 			var postRender = hooks.postRender(output, data);
 			
-			//Add current path preset to the page
-			postRender = postRender.replace(/\{pre\}/g, "/cms/draft");
+			//Determine level of dirs
+			var levels = contentPath.replace(/\/\//g, "/").split("/");
+
+			//Remove empty items
+			levels = levels.filter(function(item) {
+				return item !== "";
+			});
+
+			levels = levels.length;
+			levels = levels - 1;
+			
+			var pre = [];
+			
+			for (var i = 0; i < levels; i++) {
+				pre.push("..");
+			}
+			
+			pre = pre.join("/");
+
+			if (levels === 0) {
+				pre = ".";
+			}
+
+
+
+			postRender = postRender.replace(/\{pre\}/g, pre);
+
+			//postRender = postRender.replace(/\{pre\}/g, "/cms/draft");
 
 			//Write the new content of the file
 			fs.writeFile(outPath, postRender, "utf8", function(err) {
@@ -1003,7 +1032,31 @@ var ContentModel = {
 			
 			//Add current path preset to the page
 			//postRender = postRender.replace(/\{pre\}/g, "/cms/published");
-			postRender = postRender.replace(/\{pre\}/g, "");
+
+			//Determine level of dirs
+			var levels = contentPath.replace(/\/\//g, "/").split("/");
+
+			//Remove empty items
+			levels = levels.filter(function(item) {
+				return item !== "";
+			});
+
+			levels = levels.length;
+			levels = levels - 1;
+			
+			var pre = [];
+			
+			for (var i = 0; i < levels; i++) {
+				pre.push("..");
+			}
+			
+			pre = pre.join("/");
+
+			if (levels === 0) {
+				pre = ".";
+			}
+
+			postRender = postRender.replace(/\{pre\}/g, pre);
 
 			//Write the new content of the file
 			fs.writeFile(outPath, postRender, "utf8", function(err) {
@@ -1252,6 +1305,9 @@ var ContentModel = {
 		if (!fs.statSync(fullPath).isFile()) {
 			return callback(new Error(pagePath + " is not a file"));
 		}
+
+		//Get dependent pages
+		var dependentPages = ContentModel.getDependentPages(pagePath);
 		
 		//Remove the index
 		var indexPath = fullPath.replace(".json", ".index");
@@ -1306,11 +1362,11 @@ var ContentModel = {
 		//The container
 		fs.unlinkSync(fullPath);
 		
-		//Render dependent pages
-		var allFiles = wrench.readdirSyncRecursive(ContentModel.baseDir);
-
-		var dependentPages = ContentModel.getDependentPages(pagePath);
+		//TODO: Remove snapshot history
 		
+		//TODO: Remove published history
+		
+		//Render dependent pages
 		if (dependentPages.length > 0) {
 			ContentModel.renderPages(dependentPages, function(err) {
 				if (callback !== undefined) {
