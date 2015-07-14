@@ -96,12 +96,20 @@ var ImageController = {
 							//console.error('stdout: ' + stdout);
 							//console.error('stderr: ' + stderr);
 							if (error !== null) {
-								//console.error('exec error: ' + error);
+
+								console.error('exec error: ' + error);
+
+							} else {
+								
+								exec("pngout -s2 -y " + optImageDir + "/" + newFileName, function (error, stdout, stderr) {
+
+									if (error !== null) {
+										console.error('exec error: ' + error);
+									}
+
+									callback(null, "Resized: " + imagePath + " to " + newWidth + "x" + newHeight + " at " + newDestination);
+								});
 							}
-					
-							exec("pngout -s1 -y " + optImageDir + "/" + newFileName, function (error, stdout, stderr) {
-								callback(null, "Resized: " + imagePath + " to " + newWidth + "x" + newHeight + " at " + newDestination);
-							});
 						});
 					});
 				});
