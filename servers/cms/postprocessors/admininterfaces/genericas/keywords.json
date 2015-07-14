@@ -26,16 +26,16 @@
 	"ispaghula": {
 		"atc": "A06AC01 Loppfrö och vitt loppfrö"
 	},
-	"osmotiska laxantia": {
+	"osmotiskt laxativ": {
 		"atc": "A06AD Osmotiskt aktiva laxermedel"
 	},
 	"osmotiskt verkande medel": {
 		"atc": "A06AD Osmotiskt aktiva laxermedel"
 	},
-	"osmotiskt laxativ": {
+	"polyetylenglykol": {
 		"atc": "A06AD Osmotiskt aktiva laxermedel"
 	},
-	"polyetylenglykol": {
+	"osmotiska laxantia": {
 		"atc": "A06AD Osmotiskt aktiva laxermedel"
 	},
 	"osmotiskt verkande läkemedel": {
@@ -56,6 +56,12 @@
 	"loperamid": {
 		"atc": "A07DA Propulsionsdämpande medel"
 	},
+	"5-asa": {
+		"atc": "A07EC Aminosalicylsyra och liknande medel"
+	},
+	"5-asa-behandling": {
+		"atc": "A07EC Aminosalicylsyra och liknande medel"
+	},
 	"5-asa-klysma": {
 		"atc": "A07EC Aminosalicylsyra och liknande medel"
 	},
@@ -66,12 +72,6 @@
 		"atc": "A07EC Aminosalicylsyra och liknande medel"
 	},
 	"5-asa-preparat": {
-		"atc": "A07EC Aminosalicylsyra och liknande medel"
-	},
-	"5-asa": {
-		"atc": "A07EC Aminosalicylsyra och liknande medel"
-	},
-	"5-asa-behandling": {
 		"atc": "A07EC Aminosalicylsyra och liknande medel"
 	},
 	"insulin": {
@@ -158,10 +158,10 @@
 	"ocplex": {
 		"atc": "B02BD01 Koagulationsfaktor IX, II, VII och X i kombination "
 	},
-	"perorala järnpreparat": {
+	"järn": {
 		"atc": "B03A Medel vid järnbristanemier"
 	},
-	"järn": {
+	"perorala järnpreparat": {
 		"atc": "B03A Medel vid järnbristanemier"
 	},
 	"niferex": {
@@ -176,14 +176,11 @@
 	"dextriferon": {
 		"atc": "B03AC01 Järnoxid polymaltoskomplexer"
 	},
-	"järn(iii)isomaltosid 1 000": {
-		"atc": "B03AC06 Järnoxid dextrankomplexer"
-	},
 	"järndextrankomplex": {
 		"atc": "B03AC06 Järnoxid dextrankomplexer"
 	},
-	"glukos": {
-		"atc": "B05BA03 Kolhydrater"
+	"järn(iii)isomaltosid 1 000": {
+		"atc": "B03AC06 Järnoxid dextrankomplexer"
 	},
 	"storpåseblandningar": {
 		"atc": "B05BA10 Kombinationer"
@@ -245,10 +242,10 @@
 	"kandesartan+tiazid": {
 		"atc": "C09DA06 Kandesartan och diuretika"
 	},
-	"steroidbehandlingen med utvärtes jästsvampdödande medel som mikonazol": {
+	"imidazolderivat lokalt": {
 		"atc": "D01AC Imidazol- och triazolderivat"
 	},
-	"imidazolderivat lokalt": {
+	"steroidbehandlingen med utvärtes jästsvampdödande medel som mikonazol": {
 		"atc": "D01AC Imidazol- och triazolderivat"
 	},
 	"mikonazol + hydrokortison": {
@@ -257,13 +254,13 @@
 	"zinkliniment apl, kräm": {
 		"atc": "D02AB"
 	},
+	"glycerol": {
+		"atc": "D02AX Övriga hudskyddande och uppmjukande medel"
+	},
 	"mjölksyra": {
 		"atc": "D02AX Övriga hudskyddande och uppmjukande medel"
 	},
 	"propylenglykol": {
-		"atc": "D02AX Övriga hudskyddande och uppmjukande medel"
-	},
-	"glycerol": {
 		"atc": "D02AX Övriga hudskyddande och uppmjukande medel"
 	},
 	"kalcipotriol + betametason": {
@@ -275,25 +272,25 @@
 	"kalcipotriol": {
 		"atc": "D05AX52 Kalcipotriol, kombinationer"
 	},
-	"kortisonkräm": {
-		"atc": "D07 Kortikosteroider för utvärtes bruk"
-	},
 	"glukokortikoider i salver och krämer": {
 		"atc": "D07 Kortikosteroider för utvärtes bruk"
 	},
 	"lokala glukokortikoider": {
 		"atc": "D07 Kortikosteroider för utvärtes bruk"
 	},
-	"grupp i–ii-steroid": {
+	"kortisonkräm": {
+		"atc": "D07 Kortikosteroider för utvärtes bruk"
+	},
+	"grupp ii–iii-steroid": {
 		"atc": "D07A Kortikosteroider"
 	},
 	"lokala steroider": {
 		"atc": "D07A Kortikosteroider"
 	},
-	"grupp ii–iii-steroid": {
+	"grupp iii–iv-steroid": {
 		"atc": "D07A Kortikosteroider"
 	},
-	"grupp iii–iv-steroid": {
+	"grupp i–ii-steroid": {
 		"atc": "D07A Kortikosteroider"
 	},
 	"steroidkräm": {
@@ -335,12 +332,6 @@
 	"hormonspiral": {
 		"atc": "G02B Antikonceptionella medel för lokal användning"
 	},
-	"medroxiprogesteron": {
-		"atc": "G03 Könshormoner"
-	},
-	"gestagenbehandling": {
-		"atc": "G03 Könshormoner"
-	},
 	"gestagener": {
 		"atc": "G03 Könshormoner"
 	},
@@ -351,6 +342,12 @@
 		"atc": "G03 Könshormoner"
 	},
 	"noretisteron": {
+		"atc": "G03 Könshormoner"
+	},
+	"medroxiprogesteron": {
+		"atc": "G03 Könshormoner"
+	},
+	"gestagenbehandling": {
 		"atc": "G03 Könshormoner"
 	},
 	"p-piller": {
@@ -401,13 +398,13 @@
 	"kortikosteroider": {
 		"atc": "H02A Kortikosteroider för systemiskt bruk"
 	},
-	"steroider": {
-		"atc": "H02AB Glukokortikoider"
-	},
 	"systemisk steroidbehandling": {
 		"atc": "H02AB Glukokortikoider"
 	},
 	"intravenös steroidbehandling": {
+		"atc": "H02AB Glukokortikoider"
+	},
+	"steroider": {
 		"atc": "H02AB Glukokortikoider"
 	},
 	"tyroxin": {
@@ -530,10 +527,10 @@
 	"difteri-stelkramp": {
 		"atc": "J07AM51 Stelkrampstoxoid, kombinationer med difteritoxoid"
 	},
-	"bcg-vaccination": {
+	"bcg-vaccin": {
 		"atc": "J07AN Vaccin mot tuberkulos"
 	},
-	"bcg-vaccin": {
+	"bcg-vaccination": {
 		"atc": "J07AN Vaccin mot tuberkulos"
 	},
 	"vaccination mot fästingburen hjärninflammation": {
@@ -542,10 +539,10 @@
 	"vaccin mot tbe": {
 		"atc": "J07BA01 Vaccin mot fästingburen encefalit, inaktiverat helvirusvaccin"
 	},
-	"vaccination mot säsongsinfluensa": {
+	"säsongsinfluensavaccin": {
 		"atc": "J07BB Vaccin mot influensa"
 	},
-	"säsongsinfluensavaccin": {
+	"vaccination mot säsongsinfluensa": {
 		"atc": "J07BB Vaccin mot influensa"
 	},
 	"säsongsinfluensavaccin som ges i sprayform": {
@@ -563,10 +560,10 @@
 	"vaccination mot mpr": {
 		"atc": "J07BD Vaccin mot mässling"
 	},
-	"vaccin mot mässling-påssjuka-röda hund": {
+	"mpr-vaccin": {
 		"atc": "J07BD52 Vaccin mot mässling, påssjuka och röda hund, levande försvagat"
 	},
-	"mpr-vaccin": {
+	"vaccin mot mässling-påssjuka-röda hund": {
 		"atc": "J07BD52 Vaccin mot mässling, påssjuka och röda hund, levande försvagat"
 	},
 	"poliovaccin": {
@@ -581,10 +578,10 @@
 	"vattkoppsvaccin": {
 		"atc": "J07BK01 Vaccin mot vattkoppor, levande försvagat"
 	},
-	"hpv-vaccin": {
+	"vaccin mot hpv": {
 		"atc": "J07BM Papillomvirusvacciner"
 	},
-	"vaccin mot hpv": {
+	"hpv-vaccin": {
 		"atc": "J07BM Papillomvirusvacciner"
 	},
 	"difteri-stelkramp-kikhosta-polio": {
@@ -605,13 +602,13 @@
 	"jak2-inhibitorer": {
 		"atc": "L01XE18 Ruxolitinib"
 	},
-	"anti-tnf": {
+	"anti-tnf-terapi": {
 		"atc": "L04AB Tumörnekrosfaktor alfa (TNF-) hämmare"
 	},
 	"anti-tnf-preparat": {
 		"atc": "L04AB Tumörnekrosfaktor alfa (TNF-) hämmare"
 	},
-	"anti-tnf-terapi": {
+	"anti-tnf": {
 		"atc": "L04AB Tumörnekrosfaktor alfa (TNF-) hämmare"
 	},
 	"antiflogistika": {
@@ -632,10 +629,10 @@
 	"lidokainhydroklorid apl, rektalgel 5 mg/ml": {
 		"atc": "N01BB02 Lidokain"
 	},
-	"lidokain, prilokain": {
+	"emla": {
 		"atc": "N01BB20 Kombinationer"
 	},
-	"emla": {
+	"lidokain, prilokain": {
 		"atc": "N01BB20 Kombinationer"
 	},
 	"analgetika": {
@@ -716,10 +713,10 @@
 	"salbutamol + ipratropium": {
 		"atc": "R03AK04 Salbutamol och övriga medel vid obstruktiva luftvägssjukdomar"
 	},
-	"flutikason + salmeterol": {
+	"salmeterol + flutikason": {
 		"atc": "R03AK06 Salmeterol och övriga medel vid obstruktiva luftvägssjukdomar"
 	},
-	"salmeterol + flutikason": {
+	"flutikason + salmeterol": {
 		"atc": "R03AK06 Salmeterol och övriga medel vid obstruktiva luftvägssjukdomar"
 	},
 	"formoterol + budesonid": {
@@ -902,9 +899,6 @@
 	"elektrolyter": {
 		"atc": "X Ingen koppling"
 	},
-	"glukostolerans": {
-		"atc": "X Ingen koppling"
-	},
 	"syredissociationskurvan": {
 		"atc": "X Ingen koppling"
 	},
@@ -1023,6 +1017,9 @@
 		"atc": "X Ingen koppling"
 	},
 	"antiseptika": {
+		"atc": "X Ingen koppling"
+	},
+	"glukostolerans": {
 		"atc": "X Ingen koppling"
 	},
 	"dimetikonlösning": {
