@@ -1,6 +1,6 @@
 var fs = require("fs");
 var request = require("request");
-var genericasInjector = require("../../parser/postprocessors/genericas.js")
+var genericasInjector = require("../cms/postprocessors/genericas.js")
 var crypto = require("crypto");
 var cheerio = require("cheerio");
 var path = require("path");
@@ -221,6 +221,45 @@ app.get('/api/v1/atctree', function(req,res){
 
 });
 
+//Get test html
+app.get('/api/v1/injectgenericas/test1.html', function(req,res) {
+
+	var apiKey = req.query["apikey"];
+	var isAllowed = checkIfApiKeyIsLegit(apiKey, req);
+
+	if (isAllowed) {
+
+		var testFilePath = path.join(__dirname, "html", "test1.html");
+		
+		res.sendfile(testFilePath);
+
+	} else {
+		res.status(403);
+		res.end("403 Forbidden, too many requests from the same ip-address without an api key");
+	}
+	
+});
+
+//Get full atcTree
+app.get('/api/v1/atcTree.json', function(req,res) {
+
+	var apiKey = req.query["apikey"];
+	var isAllowed = checkIfApiKeyIsLegit(apiKey, req);
+
+	if (isAllowed) {
+
+		var atcTreePath = path.join(__dirname, "..", "..", "npl", "atcTree.json");
+		
+		res.sendfile(atcTreePath);
+
+	} else {
+		res.status(403);
+		res.end("403 Forbidden, too many requests from the same ip-address without an api key");
+	}
+	
+});
+
+
 //Get css for injected generica names
 app.get('/api/v1/injectgenericas/lb.injectgenericas.css', function(req,res) {
 
@@ -244,6 +283,8 @@ app.get('/api/v1/injectgenericas/lb.injectgenericas.css', function(req,res) {
 app.get('/api/v1/injectgenericas/lb.injectgenericas.js/:selector?', function(req,res) {
 
 	var apiKey = req.query["apikey"];
+	var envSetting = req.query["env"];
+	
 	var isAllowed = checkIfApiKeyIsLegit(apiKey, req);
 
 	if (isAllowed) {
@@ -259,7 +300,13 @@ app.get('/api/v1/injectgenericas/lb.injectgenericas.js/:selector?', function(req
 			selector = "body";
 		}
 
-		var cacheKey = createHash(apiKey + "_" + selector);
+		var environment = "www.lakemedelsboken.se";
+
+		if (envSetting === "test") {
+			environment = "localhost";
+		}
+
+		var cacheKey = createHash(apiKey + "_" + selector + "_" + environment);
 		
 		var script = "";
 		
@@ -271,6 +318,7 @@ app.get('/api/v1/injectgenericas/lb.injectgenericas.js/:selector?', function(req
 			script = script.replace(/{SELECTOR}/g, selector);
 			script = script.replace(/{URL_SELECTOR}/g, encodeURIComponent(selector));
 			script = script.replace(/{APIKEY}/g, apiKey);
+			script = script.replace(/{ENVIRONMENT}/g, environment);
 
 			cache.set(cacheKey, script);
 		}
