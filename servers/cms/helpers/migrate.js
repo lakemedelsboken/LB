@@ -111,13 +111,13 @@ var masterIndex = {
 	"U26": {"division": "Regelverket och IT-stöd", "name": "Läkemedelsförteckningen"}
 };
 
-//var oldChapterPath = __dirname + "/../../site/chapters/l2_inf_reseprofylax_2013fm10.html";
-//var oldChapterPath = __dirname + "/../../site/chapters/b2_mag_lever_2013fm10.html";
-//var oldChapterPath = __dirname + "/../../site/chapters/g4_nef_njursjukdomar_2013fm10.html";
-//var oldChapterPath = __dirname + "/../../site/chapters/r5_neu_parkinson_2013fm10.html";
-//var oldChapterPath = __dirname + "/../../site/chapters/a1_aku_akutmedv_2013fm10.html";
-//var oldChapterPath = __dirname + "/../../site/chapters/b1_mag_strupesacktarm_2013fm10.html";
-//var oldChapterPath = __dirname + "/../../site/chapters/p2_ror_reumsjukdom_2013fm10.html";
+//var oldChapterPath = __dirname + "/../../_site/chapters/l2_inf_reseprofylax_2013fm10.html";
+//var oldChapterPath = __dirname + "/../../_site/chapters/b2_mag_lever_2013fm10.html";
+//var oldChapterPath = __dirname + "/../../_site/chapters/g4_nef_njursjukdomar_2013fm10.html";
+//var oldChapterPath = __dirname + "/../../_site/chapters/r5_neu_parkinson_2013fm10.html";
+//var oldChapterPath = __dirname + "/../../_site/chapters/a1_aku_akutmedv_2013fm10.html";
+//var oldChapterPath = __dirname + "/../../_site/chapters/b1_mag_strupesacktarm_2013fm10.html";
+//var oldChapterPath = __dirname + "/../../_site/chapters/p2_ror_reumsjukdom_2013fm10.html";
 
 var $;
 var savedText = [];
@@ -146,7 +146,7 @@ q.drain = function() {
 
 // add some items to the queue
 
-var files = fs.readdirSync(__dirname + "/../../site/chapters/");
+var files = fs.readdirSync(__dirname + "/../../_site/chapters/");
 files = files.filter(function(item) {
 	return (
 		item.indexOf(".html") > -1 &&
@@ -158,7 +158,7 @@ files = files.filter(function(item) {
 
 for (var i = 0; i < files.length; i++) {
 
-	q.push(__dirname + "/../../site/chapters/" + files[i], function(err, contentPath) {
+	q.push(__dirname + "/../../_site/chapters/" + files[i], function(err, contentPath) {
 		//if (err)
 	    console.log('Finished processing ' + contentPath);
 	});
@@ -479,8 +479,6 @@ function migrate(oldPath) {
 				saveText(allContent);
 				allContent.push(getFigure($item));
 
-				//console.log("Figure");
-
 			} else if ($item.hasClass("therapy-recommendations")) {
 
 				saveText(allContent);
@@ -606,7 +604,7 @@ function getFigure($item) {
 	//Move images around
 	var image = $item.find("div.figureImage").first().find("div").first().attr("data-src").replace("/opt/", "/").replace("_small", "")
 	
-	var currentBaseImagePath = path.join(__dirname, "..", "..", "site", "chapters", image);
+	var currentBaseImagePath = path.join(__dirname, "..", "..", "_site", "chapters", image);
 
 	contentType.content.image = "/images/" + image;
 
@@ -911,6 +909,49 @@ function translateHtml(html) {
 	//Reference
 	_$(".inlineReference").each(function() {
 		_$(this).replaceWith("(" + _$(this).attr("data-referencenumber") + ")");
+	});
+
+	//Internal link
+	_$(".pageLink").each(function() {
+
+		var oldHref = _$(this).attr("href");
+
+		if (oldHref.indexOf(".html") > -1) {
+
+			var oldPageName = oldHref.split("/").pop().split(".html")[0];
+
+			var chapterIdentifier = oldPageName.split("_")[0].toUpperCase();
+
+			var index = masterIndex[chapterIdentifier];
+
+			if (index !== undefined) {
+
+				var chapterDivision = index.division.toLowerCase();
+
+				chapterDivision = chapterDivision.replace(/å/g, "a").replace(/ä/g, "a").replace(/ö/g, "o").replace(/–/g, "-").replace(/\s-\s/g, "-").replace(/\s+/g, "_").replace(/\,/g, "").replace(/([^a-z0-9_]+)/gi, '-');
+				var niceChapterName = index.name;
+				var chapterName = index.name.toLowerCase();
+				chapterName = chapterName.replace(/å/g, "a").replace(/ä/g, "a").replace(/ö/g, "o").replace(/–/g, "-").replace(/\s-\s/g, "-").replace(/\s+/g, "_").replace(/\,/g, "").replace(/([^a-z0-9_]+)/gi, '-');
+
+				chapterName = chapterName + ".html";
+		
+				var slug = oldHref.split(".html");
+				if (slug.length === 2) {
+					slug = slug.pop();
+				} else {
+					slug = "";
+				}
+		
+				var newHref = "/kapitel/" + chapterDivision + "/" + chapterName + slug;
+		
+				_$(this).attr("href", newHref);
+			
+			} else {
+				console.log("Could not find index for: " + oldHref); 
+			}
+			
+		}
+
 	});
 
 	//Page foot note item
