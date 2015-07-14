@@ -1,12 +1,12 @@
 var express = require('express');
 var path = require('path');
-var fs = require("fs");
+var fs = require("fs-extra");
 var favicon = require('static-favicon');
 var logger = require('morgan');
-//var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var multer = require('multer');
 var flash = require('connect-flash');
+var request = require("request");
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -47,6 +47,135 @@ var secretSettings = JSON.parse(fs.readFileSync(secretSettingsPath, "utf8"));
 var settings = JSON.parse(fs.readFileSync(settingsPath, "utf8"));
 
 app.version = settings.version;
+
+var cronJob = require('cron').CronJob;
+
+var job = new cronJob({
+	cronTime: '00 00 07 * * *',
+	onTick: function() {
+		// Runs every day at 07:00:00 AM.
+		updateATCTreeFromMaster();
+	},
+	start: true
+});
+
+function updateATCTreeFromMaster() {
+	var apiKeys = secretSettings.api.keys;
+	
+	var cmsApiKey = "CMS";
+	
+	for (var key in apiKeys) {
+		if (apiKeys[key] === "CMS") {
+			cmsApiKey = key;
+			break;
+		}
+	}
+	
+	if (cmsApiKey === "CMS") {
+		console.log("Could not find API key for CMS.")
+	}
+
+	var statusError = false;
+	var generalError = false;
+
+	var tempAtcTreePath = path.join(__dirname, "tmp", "atcTree.json");
+
+	console.log("Downloading new atcTree.json from master server...");
+
+	var masterAtcTreeUrl = "http://www.lakemedelsboken.se/api/v1/atcTree.json";
+
+	request(masterAtcTreeUrl)
+	.on('response', function(response) {
+		if (response.statusCode !== 200) {
+			statusError = response.statusCode;
+		}
+	})
+	.on('error', function(err) {
+		generalError = err;
+	})
+	.pipe(fs.createWriteStream(tempAtcTreePath))
+	.on('error', function (err) {
+		generalError = err;
+	})
+	.on('close', function(err) {
+
+		if (statusError) {
+			console.error("Status code for response was: " + statusError);
+			console.error("Could not download atcTree from " + masterAtcTreeUrl);
+		}
+		
+		if (generalError) {
+			console.error("General error: ", generalError);
+			console.error("Could not download atcTree from " + masterAtcTreeUrl);
+		}
+
+		if (!statusError && !generalError) {
+			
+			//TODO:Check integrity of atcTree.json
+			var atcTree = null;
+			var readError = false;
+			var parseError = false;
+			
+			try {
+				atcTree = fs.readFileSync(tempAtcTreePath, "utf8");
+			} catch(err) {
+				readError = true;
+				console.error("Could not read temp atc tree after downloading from master server");
+			}
+				
+			
+			if (!readError && atcTree !== null) {
+
+				try {
+					atcTree = JSON.parse(atcTree);
+				} catch(err) {
+					parseError = true;
+					console.error("Could not parse temp atc tree after downloading from master server");
+				}
+			
+				if (!parseError && !readError) {
+
+					if (Array.isArray(atcTree)) {
+
+						//Expect at least 20000 items in the atc tree
+						var minExpectedItems = 20000;
+
+						if (atcTree.length > minExpectedItems) {
+
+							console.log("Downloaded new atcTree.json, everything seems fine, replacing npl version");
+							
+							var nplAtcTreePath = path.join(__dirname, "..", "..", "npl", "atcTree.json");
+
+							fs.copy(tempAtcTreePath, nplAtcTreePath, function(err) {
+								if (err) {
+									console.error("Could not copy file from: " + tempAtcTreePath + " to: " + nplAtcTreePath, err);
+								} else {
+									console.log("Finished replacing atcTree.json with new version");
+								}
+								
+							});
+
+						} else {
+							console.error("Downloaded atc tree only contained " + atcTree.length + " items, aborting replacement of new tree from master server");
+						}
+
+						
+					} else {
+						console.error("Atc tree is not an array, aborting replacement of new tree from master server");
+					}
+
+
+					
+				}
+				
+			}
+			
+		}
+	})
+	
+}
+
+updateATCTreeFromMaster();
 
 //View engine setup
 //Find admin interface views for pre and post processors
@@ -164,7 +293,11 @@ var Users = {
 
 passport.deserializeUser(function(id, done) {
 	Users.findById(id, function(err, user) {
-		done(err, user);
+		if (err) {
+			done(null, false, {message: "Användare existerar ej."});
+		} else {
+			done(err, user);
+		}
 	});
 });
 
