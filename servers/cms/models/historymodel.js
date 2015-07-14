@@ -7,7 +7,7 @@ var HistoryModel = {
 	baseDir: path.normalize(path.join(__dirname, "..", "content")),
 	getPublished: function(filePath) {
 
-		console.log("HistoryModel.getPublished: " + filePath);
+		//console.log("HistoryModel.getPublished: " + filePath);
 
 		filePath = path.resolve(filePath);
 		
@@ -234,7 +234,7 @@ var HistoryModel = {
 			return HistoryModel.contentHashes[filePath];
 		} else {
 
-			console.log("HistoryModel.getContentHash: " + filePath);
+			//console.log("HistoryModel.getContentHash: " + filePath);
 			
 			var content = fs.readFileSync(filePath, "utf8");
 
