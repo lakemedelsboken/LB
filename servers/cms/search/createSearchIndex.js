@@ -70,8 +70,8 @@ function createSearchIndex(htmlContent, name, newName) {
 		newChapterName = newName;
 	
 		chapterIdentifier = chapterName.split("_")[0];
-
-		toc = [{title: "root", level: 0, id: chapterIdentifier + "_" + contentsId, parentId: null, chapter: null, type: "header", titlePath: "", "hasChildren": false}];
+		
+		toc = [{title: "root", level: 0, id: chapterIdentifier + "_" + contentsId, parentId: null, chapter: null, type: "header", titlePath: "", "hasChildren": false, checksum: checksum}];
 	
 		var body = $("div#main")[0];
 		if (body === undefined) {
