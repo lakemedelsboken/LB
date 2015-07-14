@@ -128,7 +128,6 @@
 		</div>
 		<div class="col-sm-8 col-sm-offset-4 col-md-8 col-md-offset-4 main">
 			<h1 class="page-header">Katalog: <%=id%></h1>
-<!--
 			<h2>Metadata</h2>
 			<button id="createMetadata" class="btn btn-primary" data-toggle="modal" data-target="#modifyMetadataModal"><i class="fa fa-plus-circle"></i> Skapa metadata</button>
 			<br><br>
@@ -166,7 +165,6 @@
 			}
 			
 			%>
--->			
 
 			<%
 			
@@ -181,6 +179,7 @@
 						<th class="span6">Plats</th>
 						<th>Senast ändrad</th>
 						<th>Publicera nu?</th>
+						<th>Återgå</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -192,8 +191,21 @@
 					%>
 					<tr>
 						<td class="col-sm-2"><a href="/cms/<%=draft.path%>"><%=draft.path%></a></td>
-						<td><%=draft.niceDate%></td>
-						<td><a class="btn btn-sm btn-success" href="/cms/content/publishpage?pagepath=<%=draft.path%>"><i class="fa fa-check"></i> Märk för publicering</a></td>
+						<td style="white-space: nobreak;"><%=draft.niceDate%></td>
+						<td><a class="btn btn-sm btn-success" href="/cms/content/publishpage?pagepath=<%=draft.path%>"><i class="fa fa-check"></i> Publicera</a></td>
+						<td>
+							<%
+							if (draft.canBeRevertedToLastPublishedVersion) {
+							%>
+							<a class="btn btn-sm btn-danger" href="/cms/content/revertolastpublished?pagepath=<%=draft.path%>"><i class="fa fa-check"></i> Återgå</a>
+							<%
+							} else {
+							%>
+							-
+							<%
+							}
+							%>
+						</td>
 					<%
 				}
 

@@ -119,6 +119,59 @@ var ContentController = {
 	existsContent: function(contentPath, callback) {
 		contentModel.existsContent(contentPath, callback);
 	},
+	revertToLastPublishedPage: function(pagePath, callback) {
+
+		var globalPagePath = path.join(ContentController.baseDir, pagePath);
+
+		//Check if a published version exists
+		var pageFileName = path.basename(globalPagePath);
+		var pageDirPath = path.dirname(globalPagePath);
+		
+		var possiblePublishedDirectory = path.join(pageDirPath, ".published." + pageFileName);
+		
+		//Can it be reverted?
+		if (fs.existsSync(possiblePublishedDirectory)) {
+			//Find the most recent published version
+			var publishedFileNames = fs.readdirSync(possiblePublishedDirectory);
+
+			//Sort descending
+			publishedFileNames.sort(function(a, b) {
+				return parseInt(b.replace(".published", "")) - parseInt(a.replace(".published", ""));
+			});
+			
+			if (publishedFileNames.length > 0) {
+				var mostRecent = publishedFileNames[0];
+				var mostRecentPath = path.join(possiblePublishedDirectory, mostRecent);
+				
+				var mostRecentPublishedContent = JSON.parse(fs.readFileSync(mostRecentPath, "utf8"));
+				var mostRecentDraftContent = JSON.parse(fs.readFileSync(globalPagePath, "utf8"));
+
+				//These values always differ between the two, make sure they are the same
+				mostRecentPublishedContent.type = mostRecentDraftContent.type;
+				mostRecentPublishedContent.path = mostRecentDraftContent.path;
+				
+				var publishNowBool = false;
+				
+				contentModel.setContent(pagePath, mostRecentPublishedContent, publishNowBool, function(err) {
+					if (err) {
+						return callback(err);
+					}
+					
+					//Exit OK
+					return callback();
+				});
+
+			} else {
+				console.log(pagePath + " has no published version, can not revert.");
+				return callback();
+			}
+			
+		} else {
+			console.log(pagePath + " has no published version, can not revert.");
+			return callback();
+		}
+		
+	},
 	getEditors: function(page) {
 		
 		var contentEditors = [];
@@ -154,15 +207,16 @@ var ContentController = {
 		var preProcessorsDirPath = path.join(__dirname, "..", "preprocessors");
 		var preProcessorFiles = fs.readdirSync(preProcessorsDirPath);
 		
+		
 		var postProcessorsDirPath = path.join(__dirname, "..", "postprocessors");
 		var postProcessorFiles = fs.readdirSync(postProcessorsDirPath);
 		
 		preProcessorFiles = preProcessorFiles.filter(function(element) {
-			return fs.statSync(path.join(preProcessorsDirPath, element)).isFile();
+			return fs.statSync(path.join(preProcessorsDirPath, element)).isFile() && element.charAt(0) !== ".";
 		});
 
 		postProcessorFiles = postProcessorFiles.filter(function(element) {
-			return fs.statSync(path.join(postProcessorsDirPath, element)).isFile();
+			return fs.statSync(path.join(postProcessorsDirPath, element)).isFile() && element.charAt(0) !== ".";
 		});
 
 		if (preProcessorFiles.length > 0) {
@@ -283,8 +337,10 @@ var ContentController = {
 
 		var outgoing = path.normalize(path.join(ContentController.baseDir, "..", "payloads", "outgoing"));
 
-		//Clean outgoing
+		//Clean outgoing, except .gitignore
+		var gitIgnore = fs.readFileSync(path.join(outgoing, ".gitignore"), "utf8");
 		fs.emptyDirSync(outgoing);
+		fs.writeFileSync(path.join(outgoing, ".gitignore"), gitIgnore, "utf8");
 		
 		//Copy published and static dirs to outgoing
 		var outputDirPath = path.join(ContentController.baseDir, "..", "output");
@@ -352,6 +408,10 @@ var ContentController = {
 			
 		}
 
+		//Write payload to disk
+		var payloadPath = path.join(outgoing, "payload.json")
+		fs.writeFileSync(payloadPath, JSON.stringify(payload, null, "\t"), "utf8");
+
 		//console.log("Payload length: " + payload.length);
 
 		var secretSettingsPath = path.join(__dirname, "..", "..", "..", "settings", "secretSettings.json");
@@ -390,15 +450,13 @@ var ContentController = {
 			}
 
 		}, 1);
-		
+
 		// assign a callback
 		q.drain = function() {
 
 			console.log('All items have been transferred');
 
 			//Deliver the payload description
-			var payloadPath = path.join(outgoing, "payload.json")
-			fs.writeFileSync(payloadPath, JSON.stringify(payload, null, "\t"), "utf8");
 			var item = {path: payloadPath, relativePath: "payload.json", type: "file"};
 			publisher.publish(item, function(err) {
 				
@@ -465,6 +523,7 @@ var ContentController = {
 				} else {
 					//+1 for upload of payload file
 					ContentController.addTasks(1);
+					//Force drain of queue
 					q.drain();
 				}
 				
@@ -482,13 +541,23 @@ var ContentController = {
 		var draftFiles = wrench.readdirSyncRecursive(draftDir);
 
 		draftFiles = draftFiles.filter(function(element) {
+
+			var isFile = false;
+			
+			try {
+				isFile = fs.statSync(path.join(draftDir, element)).isFile();
+			} catch(err) {
+				console.log("Error when statSync.isFile(): " + element);
+				isFile = false;
+			}
+
 			return (
-				(element.indexOf(".xml") > -1 || element.indexOf(".html") > -1 || element.indexOf(".index") > -1) &&
-				fs.statSync(path.join(draftDir, element)).isFile()
+				(path.extname(element) === ".xml" || path.extname(element) === ".html" || path.extname(element) === ".index") &&
+				isFile
 			);
 		});
 		
-
+		//Delete old published pages
 		for (var i = 0; i < draftFiles.length; i++) {
 			var filePath = path.join(draftDir, draftFiles[i]);
 			console.log("Deleting: " + filePath);
@@ -499,11 +568,28 @@ var ContentController = {
 		var publishedFiles = wrench.readdirSyncRecursive(publishedDir);
 
 		publishedFiles = publishedFiles.filter(function(element) {
+			var isFile = false;
+			
+			try {
+				isFile = fs.statSync(path.join(publishedDir, element)).isFile();
+			} catch(err) {
+				console.log("Error when statSync.isFile(): " + element);
+				isFile = false;
+			}
+
 			return (
-				(element.indexOf(".xml") > -1 || element.indexOf(".html") > -1 || element.indexOf(".index") > -1) &&
-				fs.statSync(path.join(publishedDir, element)).isFile()
+				(path.extname(element) === ".xml" || path.extname(element) === ".html" || path.extname(element) === ".index") &&
+				isFile
 			);
 		});
+
+		//Delete old published pages
+		for (var i = 0; i < publishedFiles.length; i++) {
+			var filePath = path.join(publishedDir, publishedFiles[i]);
+			console.log("Deleting: " + filePath);
+			fs.unlinkSync(filePath);
+			//ContentController.oneTaskIsDone();
+		}
 		
 		//Get all content files, render
 		var files = wrench.readdirSyncRecursive(ContentController.baseDir);
@@ -522,13 +608,6 @@ var ContentController = {
 		//+2 for redirects and sitemap, each foundPage is rendered twice
 		ContentController.addTasks((foundPages.length * 2) + 2);
 
-		//Delete old pages
-		for (var i = 0; i < publishedFiles.length; i++) {
-			var filePath = path.join(publishedDir, publishedFiles[i]);
-			console.log("Deleting: " + filePath);
-			fs.unlinkSync(filePath);
-			//ContentController.oneTaskIsDone();
-		}
 
 		//TODO: Delete empty directories
 		
@@ -562,6 +641,8 @@ var ContentController = {
 
 	},
 	recreateAllImages: function(callback) {
+
+		console.log("ContentController.recreateAllImages()");
 
 		//Make sure images in /output/static/images/ are created
 
@@ -778,7 +859,33 @@ var ContentController = {
 		}
 		
 		var contentDirPath = path.join(__dirname, "..", "content").replace(/\s/g, "\\ ");
+		var imagesDirPath = path.join(__dirname, "..", "output", "static", "images").replace(/\s/g, "\\ ");
+
+		ContentController.saveToLog("Checking content dir...", gitStatusLogPath);
 		
+		ContentController.checkAndUploadPathToGit(contentDirPath, function(err) {
+			if (err) {
+				return callback(err);
+			}
+
+			ContentController.saveToLog("Checking images dir...", gitStatusLogPath);
+
+			ContentController.checkAndUploadPathToGit(imagesDirPath, function(err) {
+				if (err) {
+					return callback(err);
+				}
+				
+				return callback();
+			});
+			
+			
+		});
+		
+	},
+	checkAndUploadPathToGit: function(contentDirPath, callback) {
+
+		var gitStatusLogPath = path.join(__dirname, "..", "public", "status", "github.json");
+
 		var gitStatus = shell.exec("git status " + contentDirPath + "", {silent: true}).output;
 		
 		var nrOfLines = gitStatus.split("\n").length;
