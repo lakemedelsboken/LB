@@ -120,7 +120,7 @@ var ImageController = {
 
 		var newImagePath = originalImagePath;
 
-		async.parallel([
+		async.series([
 			function(callback) {
 				resizeImage(newImagePath, 300, "small", forcedImageResizing, function(err, result) {
 					callback(err, result);
