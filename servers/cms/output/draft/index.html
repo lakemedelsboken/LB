@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<title>Läkemedelsboken</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="undefined">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link rel="schema.DC" href="http://purl.org/dc/terms/">
+		<meta name="DC.title" content="L&#xE4;kemedelsboken">
+		<meta name="DC.description" content="">
+		<meta name="DC.subject" content="">
+		<meta name="DC.created" content="">
+		<meta name="DC.modified" content="2015-06-22 14:52">
+		<meta name="DC.type" content="">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+		<link rel="stylesheet" href="./css/styles.min.css">
+		<!--[if lt IE 9]><script src="./js/html5shiv.min.js"></script><![endif]-->
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="./css/noscript.min.css">
+		</noscript>
+		<link rel="alternate" type="application/atom+xml" title="Nyheter | L&#xE4;kemedelsboken" href="/blog/index.xml">
+	</head>
+	<body>
+		<a href="#" id="gotoTop" class="btn btn-mini btn-primary visible-phone" title="G&#xE5; till sidans topp"><i class="fa fa-arrow-up"></i></a>
+		<a href="#" id="fullscreen" class="btn btn-small btn-primary hidden-phone" title="Visa text i fullsk&#xE4;rm (f)"><i id="fullscreenIcon" class="fa fa-expand"></i></a>
+		<a href="#" id="normalscreen" class="btn btn-small btn-primary hidden-phone" title="Visa text normalt (f)"><i id="normalscreenIcon" class="fa fa-compress"></i></a>
+		<a href="#" id="settings" class="btn btn-small btn-primary" title="Inst&#xE4;llningar"><i id="settingsIcon" class="fa fa-cog"></i></a>
+		<div class="container" id="content">
+			<div class="row">
+				<div id="sideContainer" class="affix span4 nonindexed">
+	<div id="searchContainer" class="navbar">
+		<div class="navbar-inner">
+			<div id="searchResultsNavigation" class="navbar-inverse hidden">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="goto">Gå till:</li>
+						<li class="search"><a href="#sideContainer">Sökruta</a></li>
+						<li class="content"><a href="#contentSearchResults">Innehåll</a></li>
+						<li class="medicines"><a href="#medicineSearchResults">Läkemedel</a></li>
+					</ul>
+				</div>
+			</div>
+			<a class="brand" href="./">Läkemedelsboken</a>
+			<form id="searchForm" class="form-search" action="/search" method="get">
+				<a href="#" id="performSearch" title="S&#xF6;k (Enter)"><i class="fa fa-arrow-circle-right"></i></a>
+				<a href="#" id="resetSearch" title="Avbryt s&#xF6;kning (Esc)"><i class="fa fa-times-circle"></i></a>
+				<input type="text" class="search-query input-block-level" placeholder="S&#xF6;k" name="search" id="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" title="S&#xF6;kruta (s)">
+				<div class="fa fa-search"></div>
+			</form>
+		</div>
+	</div>
+	<a class="btn btn-primary btn-block visible-phone" id="toggleNavigation"><i class="fa fa-chevron-down"></i> Visa meny</a>
+	<div id="sideMenu">
+		<ul id="sideBar" role="navigation">
+<li><i class="fa fa-comment-o"> </i> <a href="./blog/index.html">Nyheter</a></li>
+<li><i class="fa fa-bookmark"></i> Akutmedicin
+<ul>
+<li><a href="./kapitel/akutmedicin/den_akut_medvetslose_patienten.html"><i class="fa fa-bookmark-o"></i> Den akut medvetsl&ouml;se patienten</a></li>
+<li><a href="./kapitel/akutmedicin/chock.html"><i class="fa fa-bookmark-o"></i> Chock</a></li>
+<li><a href="./kapitel/akutmedicin/anafylaxi.html"><i class="fa fa-bookmark-o"></i> Anafylaxi</a></li>
+<li><a href="./kapitel/akutmedicin/akutmedicin_pa_vardcentral_och_andra_vardenheter.html"><i class="fa fa-bookmark-o"></i> Akutmedicin p&aring; v&aring;rdcentral och andra v&aring;rdenheter</a></li>
+<li><a href="./kapitel/akutmedicin/akuta_svara_infektioner-initial_behandling.html"><i class="fa fa-bookmark-o"></i> Akuta sv&aring;ra infektioner &ndash; initial behandling</a></li>
+<li><a href="./kapitel/akutmedicin/forgiftningar-antidotbehandling.html"><i class="fa fa-bookmark-o"></i> F&ouml;rgiftningar &ndash; Antidotbehandling</a></li>
+</ul>
+</li>
+<li><i class="fa fa-bookmark"></i> Mage - Tarm
+<ul>
+<li><a href="./kapitel/mage-tarm/sjukdomar_i_matstrupe_magsack_och_tolvfingertarm.html"><i class="fa fa-bookmark-o"></i> Sjukdomar i matstrupe, mags&auml;ck och tolvfingertarm</a></li>
+<li><a href="./kapitel/mage-tarm/leversjukdomar.html"><i class="fa fa-bookmark-o"></i> Leversjukdomar</a></li>
+<li><a href="./kapitel/mage-tarm/gallvags-_och_pankreassjukdomar.html"><i class="fa fa-bookmark-o"></i> Gallv&auml;gs- och pankreassjukdomar</a></li>
+<li><a href="./kapitel/mage-tarm/inflammatoriska_tarmsjukdomar.html"><i class="fa fa-bookmark-o"></i> Inflammatoriska tarmsjukdomar</a></li>
+<li><a href="./kapitel/mage-tarm/tarmkanalens_funktionsrubbningar.html"><i class="fa fa-bookmark-o"></i> Tarmkanalens funktionsrubbningar</a></li>
+<li><a href="./kapitel/mage-tarm/infektioner_i_mag-tarmkanalen.html"><i class="fa fa-bookmark-o"></i> Infektioner i mag-tarmkanalen</a></li>
+<li><a href="./kapitel/mage-tarm/kolorektala_sjukdomar.html"><i class="fa fa-bookmark-o"></i> Kolorektala sjukdomar</a></li>
+</ul>
+</li>
+<li><i class="fa fa-bookmark"></i> Pediatrik
+<ul>
+<li><a href="./kapitel/pediatrik/krav_vid_utveckling_av_lakemedel_till_barn.html"><i class="fa fa-bookmark-o"></i> Krav vid utveckling av l&auml;kemedel till barn</a></li>
+<li><a href="./kapitel/pediatrik/lakemedelsbehandling_till_barn.html"><i class="fa fa-bookmark-o"></i> L&auml;kemedelsbehandling till barn</a></li>
+<li><a href="./kapitel/pediatrik/vanliga_problem_under_smabarnsaren.html"><i class="fa fa-bookmark-o"></i> Vanliga problem under sm&aring;barns&aring;ren</a></li>
+<li><a href="./kapitel/pediatrik/vaccination_av_barn_och_ungdomar.html"><i class="fa fa-bookmark-o"></i> Vaccination av barn och ungdomar</a></li>
+</ul>
+</li>
+<li><i class="fa fa-bookmark"></i> Nutrition
+<ul>
+<li><a href="./kapitel/nutrition/overvikt_och_fetma.html"><i class="fa fa-bookmark-o"></i> &Ouml;vervikt och fetma</a></li>
+<li><a href="./kapitel/nutrition/vitaminer_mineraler_och_sparamnen.html"><i class="fa fa-bookmark-o"></i> Vitaminer, mineraler och sp&aring;r&auml;mnen</a></li>
+<li><a href="./kapitel/nutrition/enteral_och_parenteral_nutrition.html"><i class="fa fa-bookmark-o"></i> Enteral och parenteral nutrition</a></li>
+<li><a href="./kapitel/nutrition/lakemedelstillforsel_till_patienter_med_enteral_nutrition.html"><i class="fa fa-bookmark-o"></i> L&auml;kemedelstillf&ouml;rsel till patienter med enteral nutrition</a></li>
+</ul>
+</li>
+<li><i class="fa fa-bookmark"></i> Blod
+<ul>
+<li><a href="./kapitel/blod/anemier.html"><i class="fa fa-bookmark-o"></i> Anemier</a></li>
+<li><a href="./kapitel/blod/venos_tromboembolism_och_medel_mot_trombos.html"><i class="fa fa-bookmark-o"></i> Ven&ouml;s tromboembolism och medel mot trombos</a></li>
+<li><a href="./kapitel/blod/blodningstillstand.html"><i class="fa fa-bookmark-o"></i> Bl&ouml;dningstillst&aring;nd</a></li>
+</ul>
+</li>
+<li><i class="fa fa-bookmark"></i> Hj&auml;rta - K&auml;rl
+<ul>
+<li><a href="./kapitel/hjarta-karl/ischemisk_hjartsjukdom.html"><i class="fa fa-bookmark-o"></i> Ischemisk hj&auml;rtsjukdom</a></li>
+<li><a href="./kapitel/hjarta-karl/hjartsvikt.html"><i class="fa fa-bookmark-o"></i> Hj&auml;rtsvikt</a></li>
+<li><a href="./kapitel/hjarta-karl/hjartrytmrubbningar.html"><i class="fa fa-bookmark-o"></i> Hj&auml;rtrytmrubbningar</a></li>
+<li><a href="./kapitel/hjarta-karl/blodfettsrubbningar.html"><i class="fa fa-bookmark-o"></i> Blodfettsrubbningar</a></li>
+<li><a href="./kapitel/hjarta-karl/hypertoni.html"><i class="fa fa-bookmark-o"></i> Hypertoni</a></li>
+<li><a href="./kapitel/hjarta-karl/cerebrovaskulara_sjukdomar.html"><i class="fa fa-bookmark-o"></i> Cerebrovaskul&auml;ra sjukdomar</a></li>
+<li><a href="./kapitel/hjarta-karl/perifera_artarsjukdomar.html"><i class="fa fa-bookmark-o"></i> Perifera art&auml;rsjukdomar</a></li>
+</ul>
+</li>
+<li><i class="fa fa-bookmark"></i> Hud
+<ul>
+<li><a href="./f1_hud_hudsjukdomar_2013fm10.html"><i class="fa fa-bookmark-o"></i> Hudsjukdomar</a></li>
+<li><a href="./f2_hud_benfotsar_2013fm10.html"><i class="fa fa-bookmark-o"></i> Bens&aring;r, fots&aring;r hos diabetiker och trycks&aring;r</a></li>
+</ul>
+</li>
+<li><i class="fa fa-bookmark"></i> Nefrologi - Urologi
+<ul>
+<li><a href="./g1_nef_stentumorurinvag_2013fm10.html"><i class="fa fa-bookmark-o"></i> Sten- och tum&ouml;rsjukdomar i urinv&auml;garna</a></li>
+<li><a href="./g2_nef_urininkontinens_2013fm10.html"><i class="fa fa-bookmark-o"></i> Urininkontinens</a></li>
+<li><a href="./g3_nef_urinvaginfekt_2013fm10.html"><i class="fa fa-bookmark-o"></i> Urinv&auml;gsinfektioner</a></li>
+<li><a href="./g4_nef_njursjukdomar_2013fm10.html"><i class="fa fa-bookmark-o"></i> Njursjukdomar</a></li>
+<li><a href="./g5_nef_sjukdmanlgenital_2013fm10.html"><i class="fa fa-bookmark-o"></i> Sjukdomar i manliga genitalia</a></li>
+</ul>
+</li>
+<li><a href="./h1_sex_sexoverforbsjukd_2013fm10.html"><i class="fa fa-bookmark-o"></i> Sexuellt &ouml;verf&ouml;rbara sjukdomar</a></li>
+<li><i class="fa fa-bookmark"></i> Gynekologi
+<ul>
+<li><a href="./i1-2_gyn_sjukdlmgravamning_2013fm10.html"><i class="fa fa-bookmark-o"></i> Sjukdomar och l&auml;kemedel under graviditet och amning</a></li>
+<li><a href="./i3_gyn_allmgynekologi_2013fm10.html"><i class="fa fa-bookmark-o"></i> Allm&auml;n gynekologi</a></li>
+<li><a href="./i4_gyn_antikonceptaborter_2013fm10.html"><i class="fa fa-bookmark-o"></i> Antikonception och aborter</a></li>
+</ul>
+</li>
+<li><i class="fa fa-bookmark"></i> Onkologi
+<ul>
+<li><a href="./j1_onk_farmbehmaltumor_2013fm10.html"><i class="fa fa-bookmark-o"></i> Farmakologisk behandling av maligna tum&ouml;rer</a></li>
+<li><a href="./j2_onk_hematmaligniteter_2013fm10.html"><i class="fa fa-bookmark-o"></i> Hematologiska maligniteter</a></li>
+<li><a href="./j3_onk_sjukdbrostkortel_2013fm10.html"><i class="fa fa-bookmark-o"></i> Sjukdomar i br&ouml;stk&ouml;rteln</a></li>
+<li><a href="./j4_onk_lungcancer_2013fm10.html"><i class="fa fa-bookmark-o"></i> Lungcancer</a></li>
+</ul>
+</li>
+<li><i class="fa fa-bookmark"></i> Endokrinologi
+<ul>
+<li><a href="./k1_end_diabetmellitus_2013fm10.html"><i class="fa fa-bookmark-o"></i> Diabetes mellitus</a></li>
+<li><a href="./k2a_end_osteofraktur_2013fm10.html"><i class="fa fa-bookmark-o"></i> Osteoporos och frakturprevention</a></li>
+<li><a href="./k2b_end_rubbnkalc_2013fm10.html"><i class="fa fa-bookmark-o"></i> Rubbningar i kalciumoms&auml;ttningen</a></li>
+<li><a href="./k3_end_tyreoideasjukd_2013fm10.html"><i class="fa fa-bookmark-o"></i> Tyreoideasjukdomar</a></li>
+<li><a href="./k4_end_kortikohypofys_2013fm10.html"><i class="fa fa-bookmark-o"></i> Kortikosteroider och hypofyshormoner</a></li>
+</ul>
+</li>
+<li><i class="fa fa-bookmark"></i> Antibiotika och reseprofylax
+<ul>
+<li><a href="./l1_inf_antibiotresistens_2013fm10.html"><i class="fa fa-bookmark-o"></i> Antibiotika och resistens</a></li>
+<li><a href="./l2_inf_reseprofylax_2013fm10.html"><i class="fa fa-bookmark-o"></i> R&aring;d och profylax vid resa</a></li>
+</ul>
+</li>
+<li><i class="fa fa-bookmark"></i> Andningsv&auml;gar
+<ul>
+<li><a href="./m1_and_astmakol_2013fm10.html"><i class="fa fa-bookmark-o"></i> Astma och KOL</a></li>
+<li><a href="./m2_and_luftvinfbarnvux_2013fm10.html"><i class="fa fa-bookmark-o"></i> Luftv&auml;gsinfektioner hos barn och vuxna</a></li>
+<li><a href="./m3_and_tuberkulos_2013fm10.html"><i class="fa fa-bookmark-o"></i> Tuberkulos</a></li>
+<li><a href="./n1_and_oronnasahals_2013fm10.html"><i class="fa fa-bookmark-o"></i> &Ouml;ron-, n&auml;s- och halssjukdomar</a></li>
+<li><a href="./n2_and_munhala_2013fm10.html"><i class="fa fa-bookmark-o"></i> Munh&aring;lans sjukdomar</a></li>
+</ul>
+</li>
+<li><a href="./o1_ogo_ogonsjukdom_2013fm10.html"><i class="fa fa-bookmark-o"></i> &Ouml;gonsjukdomar</a></li>
+<li><i class="fa fa-bookmark"></i> Allergiska och immunologiska tillst&aring;nd
+<ul>
+<li><a href="./p1a_all_transplimmunorgtranspl_2013fm10.html"><i class="fa fa-bookmark-o"></i> Allergiska och immunologiska tillst&aring;nd</a></li>
+<li><a href="./p1a_all_transplimmunorgtranspl_2013fm10.html"><i class="fa fa-bookmark-o"></i> Transplantationsimmunologi och organtransplantationer</a></li>
+</ul>
+</li>
+<li><i class="fa fa-bookmark"></i> R&ouml;relseapparaten
+<ul>
+<li><a href="./p2_ror_reumsjukdom_2013fm10.html"><i class="fa fa-bookmark-o"></i> Reumatiska sjukdomar</a></li>
+<li><a href="./p3_ror_ryggnacke_2013fm10.html"><i class="fa fa-bookmark-o"></i> Rygg- och nackbesv&auml;r</a></li>
+</ul>
+</li>
+<li><i class="fa fa-bookmark"></i> Sm&auml;rta
+<ul>
+<li><a href="./q1_sma_smartbehandl_2013fm10.html"><i class="fa fa-bookmark-o"></i> Sm&auml;rta och sm&auml;rtbehandling</a></li>
+<li><a href="./q2_sma_smartapalliativ_2013fm10.html"><i class="fa fa-bookmark-o"></i> Palliativ v&aring;rd</a></li>
+</ul>
+</li>
+<li><i class="fa fa-bookmark"></i> Neurologi
+<ul>
+<li><a href="./r1_neu_allmneurolms_2013fm10.html"><i class="fa fa-bookmark-o"></i> Allm&auml;n neurologi och multipel skleros</a></li>
+<li><a href="./r2_neu_huvudvark_2013fm10.html"><i class="fa fa-bookmark-o"></i> Huvudv&auml;rk</a></li>
+<li><a href="./r3_neu_yrsel_2013fm10.html"><i class="fa fa-bookmark-o"></i> Yrsel</a></li>
+<li><a href="./r4_neu_epilepsi_2013fm10.html"><i class="fa fa-bookmark-o"></i> Epilepsi</a></li>
+<li><a href="./r5_neu_parkinson_2013fm10.html"><i class="fa fa-bookmark-o"></i> Parkinsons sjukdom</a></li>
+<li><a href="./r6_neu_porfyrilakem_2013fm10.html"><i class="fa fa-bookmark-o"></i> Porfyri och l&auml;kemedel</a></li>
+</ul>
+</li>
+<li><i class="fa fa-bookmark"></i> Psykiatri
+<ul>
+<li><a href="./s1_psy_somnstorn_2013fm10.html"><i class="fa fa-bookmark-o"></i> S&ouml;mnst&ouml;rningar</a></li>
+<li><a href="./s2_psy_angestoro_2013fm10.html"><i class="fa fa-bookmark-o"></i> &Aring;ngest och oro</a></li>
+<li><a href="./s3_psy_forstamning_2013fm10.html"><i class="fa fa-bookmark-o"></i> F&ouml;rst&auml;mningssyndrom</a></li>
+<li><a href="./s4_psy_atstorningar_2013fm10.html"><i class="fa fa-bookmark-o"></i> &Auml;tst&ouml;rningar</a></li>
+<li><a href="./s5_psy_psykoser_2013fm10.html"><i class="fa fa-bookmark-o"></i> Psykoser</a></li>
+<li><a href="./s6_psy_utvneuropsyk_2013fm10.html"><i class="fa fa-bookmark-o"></i> Utvecklings- och neuropsykiatriska st&ouml;rningar</a></li>
+<li><a href="./s7_psy_demens_2013fm10.html"><i class="fa fa-bookmark-o"></i> Demens</a></li>
+</ul>
+</li>
+<li><i class="fa fa-bookmark"></i> Beroendetillst&aring;nd
+<ul>
+<li><a href="./t1_ber_nikotinber_2013fm10.html"><i class="fa fa-bookmark-o"></i> Tobaksberoende</a></li>
+<li><a href="./t2_ber_alkohol_2013fm10.html"><i class="fa fa-bookmark-o"></i> Alkohol &ndash; riskbruk, missbruk och beroende</a></li>
+<li><a href="./t3_ber_narkotika_2013fm10.html"><i class="fa fa-bookmark-o"></i> Narkotikaberoende</a></li>
+</ul>
+</li>
+<li><i class="fa fa-bookmark"></i> L&auml;kemedelsanv&auml;ndning
+<ul>
+<li><a href="./x2_lma_klinfarmprincip_2013fm10.html"><i class="fa fa-bookmark-o"></i> Kliniskt farmakologiska principer</a></li>
+<li><a href="./y1_lma_lakemedaldre_2013fm10.html"><i class="fa fa-bookmark-o"></i> L&auml;kemedelsbehandling hos &auml;ldre</a></li>
+<li><a href="./v1_lma_hyperbaroxygen_2013fm10.html"><i class="fa fa-bookmark-o"></i> Behandling med hyperbar oxygen (HBO)</a></li>
+<li><a href="./u11_lma_kostnadseffekt_2013fm10.html"><i class="fa fa-bookmark-o"></i> Kostnadseffektivitetens betydelse vid prioritering av l&auml;kemedel</a></li>
+<li><a href="./x1_lma_evidens_2013fm10.html"><i class="fa fa-bookmark-o"></i> Evidensbaserad l&auml;kemedelsv&auml;rdering</a></li>
+<li><a href="./x5_lma_naturvaxtlakem_2013fm10.html"><i class="fa fa-bookmark-o"></i> V&auml;xtbaserade l&auml;kemedel och naturl&auml;kemedel</a></li>
+<li><a href="./x3_lma_biverkningar_2013fm10.html"><i class="fa fa-bookmark-o"></i> L&auml;kemedelsbiverkningar</a></li>
+<li><a href="./x7_lma_lakemedmiljo_2013fm10.html"><i class="fa fa-bookmark-o"></i> L&auml;kemedel i milj&ouml;n</a></li>
+<li><a href="./x4_psy_lakemedutvstorda_2013fm10.html"><i class="fa fa-bookmark-o"></i> L&auml;kemedel hos personer med utvecklingsst&ouml;rning</a></li>
+<li><a href="./t4_ber_doping_2013fm10.html"><i class="fa fa-bookmark-o"></i> Doping inom idrotten och i samh&auml;llet</a></li>
+<li><a href="./u28_rgv_olagliglakemed_2013fm10.html"><i class="fa fa-bookmark-o"></i> Olagliga l&auml;kemedel</a></li>
+<li><a href="./y2_lma_trafikrisk_2013fm10.html"><i class="fa fa-bookmark-o"></i> Trafik, riskfyllt arbete och l&auml;kemedel</a></li>
+</ul>
+</li>
+<li><i class="fa fa-bookmark"></i> Regelverket och IT-st&ouml;d
+<ul>
+<li><a href="./u19_rgv_godkannlakemed_2013fm10.html"><i class="fa fa-bookmark-o"></i> Godk&auml;nnande av l&auml;kemedel</a></li>
+<li><a href="./u20_rgv_lakemedformon_2013fm10.html"><i class="fa fa-bookmark-o"></i> L&auml;kemedelsf&ouml;rm&aring;nerna</a></li>
+<li><a href="./u21_rgv_recskrivregler_2013fm10.html"><i class="fa fa-bookmark-o"></i> Receptskrivningsregler</a></li>
+<li><a href="./u23_rgv_sarskildblankett_2013fm10.html"><i class="fa fa-bookmark-o"></i> S&auml;rskilda l&auml;kemedel</a></li>
+<li><a href="./u25_rgv_lakemdsaknas_2013fm10.html"><i class="fa fa-bookmark-o"></i> N&auml;r godk&auml;nda l&auml;kemedel saknas &ndash; licensf&ouml;rskrivning, extempore och andra alternativ</a></li>
+<li><a href="./v3_reg_dosdisplakem_2013fm10.html"><i class="fa fa-bookmark-o"></i> Dosdispenserade l&auml;kemedel</a></li>
+<li><a href="./u7_lma_itstod_2013fm10.html"><i class="fa fa-bookmark-o"></i> Den gemensamma elektroniska patientjournalen</a></li>
+<li><a href="./u27_rgv_elektrrecept_2013fm10.html"><i class="fa fa-bookmark-o"></i> Elektronisk recepthantering</a></li>
+<li><a href="./u26_rgv_lakemforteckn_2013fm10.html"><i class="fa fa-bookmark-o"></i> L&auml;kemedelsf&ouml;rteckningen</a></li>
+</ul>
+</li>
+</ul>
+	</div>
+</div>
+<div class="popover bottom span12 affix" id="searchResults">
+	<div class="arrow" id="searchResultsArrow"></div>
+	<div class="popover-inner">
+		<h3 class="popover-title searchTitleBar">Sökresultat <button class="close" id="closeSearchResults">&times;</button></h3>
+		<div class="popover-content">
+			<div class="container" id="searchResultsContainer">
+				<div id="contentSearchResults" class="span7">
+					<h5>Innehåll</h5>
+					<ul class="nav nav-tabs nav-stacked" id="contentSearchResultsList">
+					</ul>
+				</div>
+				<div id="medicineSearchResults" class="span5">
+					<h5>Läkemedel</h5>
+					<ul class="nav nav-tabs nav-stacked" id="medicineSearchResultsList">
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</div>
+				<div id="mainContainer" class="span8 offset4">
+					<div id="main"><div class="row span4 pull-right">
+<a href="http://www.lv.se/">
+<div class="image" data-picture="" data-alt="L&#xE4;kemedelsverket">
+	<div data-src="./images/mpa.png/opt/small.png"></div>
+	<div data-src="./images/mpa.png/opt/small_x2.png" data-media="(min-device-pixel-ratio: 2.0)"></div>
+	<div data-src="./images/mpa.png/opt/medium.png" data-media="(min-width: 481px)"></div>
+	<div data-src="./images/mpa.png/opt/medium_x2.png" data-media="(min-width: 481px) and (min-device-pixel-ratio: 2.0)"></div>
+	<div data-src="./images/mpa.png/opt/large.png" data-media="(min-width: 980px)"></div>
+	<div data-src="./images/mpa.png/opt/large_x2.png" data-media="(min-width: 980px) and (min-device-pixel-ratio: 2.0)"></div>
+	<div data-src="./images/mpa.png/opt/huge.png" data-media="(min-width: 1200px)"></div>
+	<div data-src="./images/mpa.png/opt/huge_x2.png" data-media="(min-width: 1200px) and (min-device-pixel-ratio: 2.0)"></div>
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	<div data-src="./images/mpa.png/large.png"></div>
+	<![endif]-->
+	<noscript>
+		<img class="img-responsive" src="./images/mpa.png/opt/medium_x2.png" alt="L&#xE4;kemedelsverket">
+	</noscript>
+</div>
+</a>
+
+<table id="facts_1" class="table table-bordered facts span4">
+<tbody>
+<tr>
+<td colspan="1">
+<h4 id="Kontakta-redaktionen">Kontakta redaktionen</h4>
+</td>
+</tr>
+<tr>
+<td>
+<p>Kontakta oss g&auml;rna, i f&ouml;rsta hand via e-post. <br> <a href="http://www.lakemedelsverket.se/topp/Kontakta-oss/Kontaktpersoner/Ovrigt/Kontakta-redaktionen/"> <i class="fa fa-envelope-o"> </i> Skicka meddelande till redaktionen</a> <br><br></p>
+<p><strong>Redakt&ouml;r:</strong><br>Pernilla &Ouml;rtqvist<br> leg. apotekare, farm. dr<br><a href="mailto:lakemedelsboken@mpa.se">lakemedelsboken@mpa.se</a><br>018-17 49 31</p>
+</td>
+</tr>
+<tr>
+<td>
+<h4 id="Vem-far-Lakemedelsboken-">Vem f&aring;r L&auml;kemedelsboken?</h4>
+</td>
+</tr>
+<tr>
+<td>
+<p class="normal">All sjukv&aring;rdspersonal med f&ouml;rskrivningsr&auml;tt erh&aring;ller ett exemplar utan kostnad, och f&ouml;r distributionen av LB inom de olika landstingen svarar respektive <a href="http://www.skl.se/vi_arbetar_med/halsaochvard/lakemedel/kontaktpersoner_landsting/lakemedelskommitteerna">l&auml;kemedelsr&aring;d / l&auml;kemedelskommitt&eacute; </a>.</p>
+<p>Andra intressenter som universitet, h&ouml;gskolor, apotek och l&auml;kemedelsindustri h&auml;nvisas till L&auml;kemedelsverket f&ouml;r information om leveransvillkor och pris.</p>
+</td>
+</tr>
+<tr>
+<td>
+<h4 id="Javsdeklarationer">J&auml;vsdeklarationer</h4>
+</td>
+</tr>
+<tr>
+<td>
+<p class="normal">F&ouml;rfattarnas j&auml;vsdeklarationer har bed&ouml;mts och godk&auml;nts enligt de riktlinjer som tagits fram i det myndighetsgemensamma j&auml;vsn&auml;tverket, <a href="http://www.lakemedelsverket.se/overgripande/Publikationer/Deklaration-av-jav-intressekonflikter-eller-andra-bindningar-/">www.lakemedelsverket.se</a>. J&auml;vsdeklarationerna finns tillg&auml;ngliga p&aring; f&ouml;rfr&aring;gan till L&auml;kemedelsverket. I slutet av varje kapitel finns f&ouml;rberedda mejl till <a href="mailto:registrator@mpa.se">registrator@mpa.se</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<h4 id="Oppen-kallkod">&Ouml;ppen k&auml;llkod</h4>
+</td>
+</tr>
+<tr>
+<td>
+<p class="normal">Webbversionen av L&auml;kemedelsboken &auml;r &ouml;ppen k&auml;llkod.</p>
+<p>Vi tar tacksamt emot f&ouml;rb&auml;ttringsf&ouml;rslag via <a href="https://github.com/lakemedelsboken"><i class="fa fa-github"> </i> GitHub</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<h4 id="Forord-"><a href="foreword.html">F&ouml;rord </a></h4>
+</td>
+</tr>
+<tr>
+<td>
+<h4 id="Forfattarregister-"><a href="authors.html">F&ouml;rfattarregister </a></h4>
+</td>
+</tr>
+<tr>
+<td>
+<h4 id="Redaktionskommitt-"><a href="editors.html">Redaktionskommitt&eacute; </a></h4>
+</td>
+</tr>
+<tr>
+<td>
+<h4 id="Pressmaterial-"><a href="press.html">Pressmaterial </a></h4>
+</td>
+</tr>
+<tr>
+<td>
+<h4 id="Webbtjanster-"><a href="../api/">Webbtj&auml;nster </a></h4>
+</td>
+</tr>
+<tr>
+<td>
+<h4 id="n-"></h4>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h2><a href="./blog/2015-03-04-uppdaterade_kapitel.html">Uppdaterade kapitel</a></h2>
+<p class="summary">Tretton kapitel har uppdaterats 2015-03-04</p>
+<div>
+<a href="./blog/2015-03-04-uppdaterade_kapitel.html">Läs vidare &#187;</a>
+</div>
+<hr>
+
+<h2><a href="./blog/2015-02-16-uppdateringar.html">Uppdateringar</a></h2>
+<p class="summary">Uppdateringar 2015-02-16</p>
+<div>
+<a href="./blog/2015-02-16-uppdateringar.html">Läs vidare &#187;</a>
+</div>
+<hr>
+
+<h2><a href="./blog/2014-11-06-produktresum_er_f_r_apl_s_extempore_shy_l_kemedel_med_rikslicens.html">Produktresuméer för APL:s extempore­läkemedel med rikslicens</a></h2>
+<p class="summary">Nu finns produktresum&eacute;er f&ouml;r extemporel&auml;kemedel med rikslicens fr&aring;n APL</p>
+<div>
+<a href="./blog/2014-11-06-produktresum_er_f_r_apl_s_extempore_shy_l_kemedel_med_rikslicens.html">Läs vidare &#187;</a>
+</div>
+<hr>
+
+<h2><a href="./blog/2014-11-01-uppdaterade_kapitel.html">Uppdaterade kapitel</a></h2>
+<p class="summary">Fyra kapitel har uppdaterats 2014-11-01</p>
+<div>
+<a href="./blog/2014-11-01-uppdaterade_kapitel.html">Läs vidare &#187;</a>
+</div>
+<hr>
+
+<h2><a href="./blog/2014-10-16-uppdaterad_text_r_dmarkeras_genom_en_ny_funktion.html">Uppdaterad text rödmarkeras genom en ny funktion</a></h2>
+<p class="summary">Det g&aring;r nu att v&auml;lja om uppdaterad text ska r&ouml;dmarkeras</p>
+<div>
+<a href="./blog/2014-10-16-uppdaterad_text_r_dmarkeras_genom_en_ny_funktion.html">Läs vidare &#187;</a>
+</div>
+<hr>
+
+<h2><a href="./blog/2014-07-16-uppdaterade_kapitel.html">Uppdaterade kapitel</a></h2>
+<p class="summary">Fjorton kapitel har uppdaterats 2014-07-16</p>
+<div>
+<a href="./blog/2014-07-16-uppdaterade_kapitel.html">Läs vidare &#187;</a>
+</div>
+<hr>
+
+<h2><a href="./blog/2014-05-15-l_kemedelsboken_sl_pper__ppna_webbtj_nster.html">Läkemedelsboken släpper öppna webbtjänster</a></h2>
+<p class="summary"><span class="summary">L&auml;s mer om L&auml;kemedelsbokens webbtj&auml;nster</span></p>
+<div>
+<a href="./blog/2014-05-15-l_kemedelsboken_sl_pper__ppna_webbtj_nster.html">Läs vidare &#187;</a>
+</div>
+<hr>
+
+<h2><a href="./blog/2014-05-15-appar_f_r_ios_och_android.html">Appar för iOS och Android</a></h2>
+<p class="summary"><span class="summary">Nu sl&auml;pps appar f&ouml;r L&auml;kemedelsboken 2014</span></p>
+<div>
+<a href="./blog/2014-05-15-appar_f_r_ios_och_android.html">Läs vidare &#187;</a>
+</div>
+<hr>
+
+<h2><a href="./blog/2014-05-05-uppdaterade_kapitel.html">Uppdaterade kapitel</a></h2>
+<p class="summary">Tv&aring; kapitel har uppdaterats 2014-05-05</p>
+<div>
+<a href="./blog/2014-05-05-uppdaterade_kapitel.html">Läs vidare &#187;</a>
+</div>
+<hr>
+
+<h2><a href="./blog/2014-03-07-uppdaterade_kapitel.html">Uppdaterade kapitel</a></h2>
+<p class="summary">Tre kapitel har uppdaterats 2014-03-07</p>
+<div>
+<a href="./blog/2014-03-07-uppdaterade_kapitel.html">Läs vidare &#187;</a>
+</div>
+<hr>
+<h2 id="Om-Lakemedels-boken">Om L&auml;kemedels&shy;boken</h2>
+<p class="p2 normal">L&auml;kemedelsbokens &ouml;vergripande m&aring;ls&auml;ttning &auml;r att ge producentoberoende information om l&auml;kemedelsbehandling vid vanliga sjukdomstillst&aring;nd. Boken inneh&aring;ller ocks&aring; kapitel som tar upp mer &ouml;vergripande aktuella aspekter p&aring; l&auml;kemedelsanv&auml;ndning samt kapitel om regelverket inom l&auml;kemedelsomr&aring;det.</p>
+<p class="p3 normal">LB v&auml;nder sig framf&ouml;r allt till specialister i allm&auml;nmedicin, l&auml;kare under specialistutbildning eller allm&auml;ntj&auml;nstg&ouml;ring samt medicine och farmacie studerande, men ocks&aring; till l&auml;kare som beh&ouml;ver r&aring;d vid medicinska problem utanf&ouml;r den egna specialiteten.</p>
+<h2 class="p1" id="Den-nya-webbversionen"><span class="s1">Den nya webbversionen</span></h2>
+<p class="p2">Den nya webbversionen &auml;r en betaversion. Det inneb&auml;r att ett visst arbete kvarst&aring;r med layouten och l&auml;nkarna till Fass-texter f&ouml;r l&auml;kemedelssubstanserna. L&auml;kemedelssubstanser som n&auml;mns i texten &auml;r &rdquo;underprickade&rdquo; (med diskreta prickar) och klickbara. Kopplingar till Fass-texter har delvis genererats automatiskt och d&auml;rf&ouml;r har substanserna blivit underprickade vare sig det i texten r&ouml;r sig om ett l&auml;kemedel eller inte, exempelvis <a href="/atc/V04CA02" data-atcid="V04CA02" data-atctitles="&#xD6;vrigt--Diagnostiska_medel--&#xD6;vriga_diagnostiska_medel--Medel_f&#xF6;r_diabetestest--Glukos" class="inlineGenerica text">glukos</a>. Detta kommer successivt att &aring;tg&auml;rdas liksom att det f&ouml;r en viss l&auml;kemedelssubstans i dagsl&auml;get kan saknas l&auml;kemedel som egentligen skulle varit kopplade till en aktuell substans/l&auml;kemedelsgrupp.</p>
+<h3 class="p4" id="Terapirekommendationer-tabeller-figurer-och-faktarutor"><span class="s1">Terapirekommendationer, tabeller, figurer och faktarutor</span></h3>
+<p class="p2">Terapirekommendationer, tabeller, figurer och faktarutor har samlats f&ouml;rst i kapitlen, innan inledningsavsnitten, f&ouml;r att vara l&auml;tt&aring;tkomliga men &aring;terfinns &auml;ven d&auml;r de omn&auml;mns i texten.</p>
+<h3 class="p4" id="Sokfunktionen"><span class="s1">S&ouml;kfunktionen</span></h3>
+<p class="p2">S&auml;rskild omsorg har &auml;gnats s&ouml;kfunktionen s&aring; att den ska vara snabb, l&auml;ttnavigerad och &auml;ven i &ouml;vrigt anv&auml;ndarv&auml;nlig. Pr&ouml;va och kom med synpunkter!</p>					</div>
+					<hr>
+					<footer>
+						<p>© <a href="http://www.lakemedelsverket.se">Läkemedelsverket</a> | Senast ändrad: 2015-06-22 14:52</p>
+					</footer>
+				</div>
+				
+			</div>
+		</div>
+		<div id="modalMed" class="window">
+			<button id="medListToggler" class="btn btn-primary btn-block"></button>
+			<ul id="medList" class="nav nav-tabs nav-stacked">
+			</ul>
+			<div id="close" title="St&#xE4;ng"><button class="close">&times;</button><h3 id="modalMedTitle"></h3></div>
+			<div id="medDisplay"></div>
+		</div>
+		<div id="mask"></div>
+		<div id="searchMask"></div>
+		<script>
+		/*
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-46072475-2', 'auto');
+		ga('send', 'pageview');
+		*/
+
+		/*
+		ga('create', 'UA-46072475-2', {
+			'storage': 'none',
+			'clientId': new Fingerprint().get(),
+			'cookieDomain': 'none'
+		});
+		
+		ga('set', 'anonymizeIp', true);
+
+		ga('send', 'pageview');
+		*/
+
+		</script>
+		<script src="./js/scripts.min.js"></script>
+		
+	</body>
+</html>
