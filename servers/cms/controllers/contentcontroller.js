@@ -859,7 +859,7 @@ var ContentController = {
 		}
 		
 		var contentDirPath = path.join(__dirname, "..", "content").replace(/\s/g, "\\ ");
-		var imagesDirPath = path.join(__dirname, "..", "output", "static", "images").replace(/\s/g, "\\ ");
+		var outputDirPath = path.join(__dirname, "..", "output").replace(/\s/g, "\\ ");
 		var keywordsDirPath = path.join(__dirname, "..", "postprocessors", "admininterfaces", "genericas", "keywords.json").replace(/\s/g, "\\ ");
 		
 		ContentController.saveToLog("Checking content dir...", gitStatusLogPath);
@@ -869,9 +869,9 @@ var ContentController = {
 				return callback(err);
 			}
 
-			ContentController.saveToLog("Checking images dir...", gitStatusLogPath);
+			ContentController.saveToLog("Checking output dir...", gitStatusLogPath);
 
-			ContentController.checkAndUploadPathToGit(imagesDirPath, function(err) {
+			ContentController.checkAndUploadPathToGit(outputDirPath, function(err) {
 				if (err) {
 					return callback(err);
 				}
