@@ -140,7 +140,7 @@ var ComponentController = {
 		//Read published component data
 		var componentFullPath = path.join(baseDir, componentPath);
 
-		var publishedVersions = historyModel.getPublished(path.join(baseDir, componentPath));
+		var publishedVersions = historyModel.getPublished(componentPath);
 		
 		if (publishedVersions.length > 0) {
 			var mostRecentPublishedVersion = publishedVersions[0];

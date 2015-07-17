@@ -131,7 +131,7 @@ var Views = {
 
 			}
 
-			output.push("<h2><a href=\"" + url + "\">" + title + "</a></h2>");
+			output.push("<h3><a href=\"" + url + "\">" + title + "</a></h3>");
 
 			//TODO: Better handling of first paragraphs from the content
 			output.push(summaries.join(""));
@@ -391,7 +391,8 @@ function getSortedPages(item, publishType) {
 	var sortedPages = [];
 	
 	for (var i = foundPages.length - 1; i >= 0; i--) {
-		var pagePath = path.join(baseDir, foundPages[i]);
+		var cmsPath = path.join(item.content.basedir, foundPages[i]);
+		var pagePath = path.join(contentController.baseDir, cmsPath);
 
 		if (item.content.basedir === "") {
 			item.content.basedir = "/";
@@ -403,7 +404,7 @@ function getSortedPages(item, publishType) {
 			var pageContent = JSON.parse(fs.readFileSync(pagePath, "utf8"));
 			
 			if (pageContent.isPublished) {
-				var publishedVersions = historyModel.getPublished(pagePath);
+				var publishedVersions = historyModel.getPublished(cmsPath);
 				if (publishedVersions.length > 0) {
 					var lastPublishedVersion = publishedVersions[0];
 					sortedPages.push({path: pagePath, contentPath: path.join(item.content.basedir, foundPages[i].replace(".json", ".html")), content: JSON.parse(fs.readFileSync(lastPublishedVersion.path, "utf8"))});

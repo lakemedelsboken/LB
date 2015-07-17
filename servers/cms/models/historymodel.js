@@ -7,9 +7,11 @@ var HistoryModel = {
 	baseDir: path.normalize(path.join(__dirname, "..", "content")),
 	getPublished: function(filePath) {
 
-		//console.log("HistoryModel.getPublished: " + filePath);
+		console.log("HistoryModel.getPublished: " + filePath);
 
-		filePath = path.resolve(filePath);
+		//filePath = path.resolve(filePath);
+		
+		filePath = path.join(HistoryModel.baseDir, filePath);
 		
 		if (!fs.existsSync(filePath)) {
 			throw new Error("File does not exist at: " + filePath + ", could not get published versions");
@@ -60,7 +62,9 @@ var HistoryModel = {
 
 		console.log("HistoryModel.getSnapshots: " + filePath);
 
-		filePath = path.resolve(filePath);
+		//filePath = path.resolve(filePath);
+
+		filePath = path.join(HistoryModel.baseDir, filePath)
 		
 		if (!fs.existsSync(filePath)) {
 			return callback(new Error("File does not exist at: " + filePath + ", could not get snapshots"));

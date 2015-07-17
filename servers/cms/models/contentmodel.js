@@ -257,7 +257,7 @@ var ContentModel = {
 							try {
 								var result = JSON.parse(data);
 								result.type = "file";
-								result.path = fullPath;
+								result.path = contentPath;
 								callback(null, result);
 							} catch (err) {
 								return callback(err);
@@ -276,7 +276,7 @@ var ContentModel = {
 							try {
 								var result = JSON.parse(data);
 								result.type = "snapshot";
-								result.path = fullPath;
+								result.path = contentPath;
 								callback(null, result);
 							} catch (err) {
 								return callback(err);
@@ -295,7 +295,7 @@ var ContentModel = {
 							try {
 								var result = JSON.parse(data);
 								result.type = "published";
-								result.path = fullPath;
+								result.path = contentPath;
 								callback(null, result);
 							} catch (err) {
 								return callback(err);
@@ -319,7 +319,7 @@ var ContentModel = {
 					
 					var result = {
 						type: "unknown",
-						path: fullPath,
+						path: contentPath,
 						size: stat.size,
 						niceSize: filesize(stat.size, {round: 1}),
 						fileType: type
@@ -578,18 +578,19 @@ var ContentModel = {
 				if (searchIndex.length > 1) {
 
 					//Save search index to disk
-					var indexPath = data.path.replace(".json", ".index");
-					fs.writeFileSync(indexPath, JSON.stringify(searchIndex, null, "\t"), "utf8");
+					var indexPath = path.join(ContentModel.baseDir, data.path.replace(".json", ".index"));
+					var indexContent = JSON.stringify(searchIndex, null, "\t");
+					fs.writeFileSync(indexPath, indexContent, "utf8");
 
 					//Save search index to draft output
 					indexPath = outPath.replace(".html", ".index");
-					fs.writeFileSync(indexPath, JSON.stringify(searchIndex, null, "\t"), "utf8");
+					fs.writeFileSync(indexPath, indexContent, "utf8");
 
 				}
 
 			} else {
 				//Check if an old index exists and remove
-				var indexPath = data.path.replace(".json", ".index");
+				var indexPath = path.join(ContentModel.baseDir, data.path.replace(".json", ".index"));
 				if (fs.existsSync(indexPath)) {
 					fs.unlinkSync(indexPath);
 				}
@@ -829,7 +830,7 @@ var ContentModel = {
 			
 			if (!renderDependencies) {
 				//Only the first call has renderDependencies set to true, otherwise use published version of dependent page
-				var publishedVersionsOfPage = historyModel.getPublished(path.join(ContentModel.baseDir, contentPath));
+				var publishedVersionsOfPage = historyModel.getPublished(contentPath);
 				if (publishedVersionsOfPage.length > 0) {
 
 					var lastPublishedVersionOfPage = publishedVersionsOfPage[0];
@@ -1004,18 +1005,20 @@ var ContentModel = {
 				if (searchIndex.length > 1) {
 
 					//Save search index to disk
-					var indexPath = data.path.replace(".json", ".index");
-					fs.writeFileSync(indexPath, JSON.stringify(searchIndex, null, "\t"), "utf8");
+					var indexPath = path.join(ContentModel.baseDir, data.path.replace(".json", ".index"));
+					var indexContent = JSON.stringify(searchIndex, null, "\t");
+					
+					fs.writeFileSync(indexPath, indexContent, "utf8");
 
 					//Save search index to published output
 					indexPath = outPath.replace(".html", ".index");
-					fs.writeFileSync(indexPath, JSON.stringify(searchIndex, null, "\t"), "utf8");
+					fs.writeFileSync(indexPath, indexContent, "utf8");
 					
 				}
 				
 			} else {
 				//Check if an old index exists and remove
-				var indexPath = data.path.replace(".json", ".index");
+				var indexPath = path.join(ContentModel.baseDir, data.path.replace(".json", ".index"));
 				if (fs.existsSync(indexPath)) {
 					fs.unlinkSync(indexPath);
 				}
@@ -1406,7 +1409,7 @@ var ContentModel = {
 			if (page.isPublished === true) {
 
 				//Find most recent published version
-				var publishedVersions = historyModel.getPublished(path.join(ContentModel.baseDir, foundPagePath));
+				var publishedVersions = historyModel.getPublished(foundPagePath);
 				
 				if (publishedVersions.length > 0) {
 					var lastPublished = publishedVersions[0];

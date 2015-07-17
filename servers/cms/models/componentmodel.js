@@ -198,7 +198,7 @@ var ComponentModel = {
 							try {
 								var result = JSON.parse(data);
 								result.type = "component";
-								result.path = fullPath;
+								result.path = contentPath;
 								callback(null, result);
 							} catch (err) {
 								return callback(err);
@@ -217,7 +217,7 @@ var ComponentModel = {
 							try {
 								var result = JSON.parse(data);
 								result.type = "snapshot";
-								result.path = fullPath;
+								result.path = contentPath;
 								callback(null, result);
 							} catch (err) {
 								return callback(err);
@@ -236,7 +236,7 @@ var ComponentModel = {
 							try {
 								var result = JSON.parse(data);
 								result.type = "published";
-								result.path = fullPath;
+								result.path = contentPath;
 								callback(null, result);
 							} catch (err) {
 								return callback(err);
@@ -260,7 +260,7 @@ var ComponentModel = {
 					
 					var result = {
 						type: "unknown",
-						path: fullPath,
+						path: contentPath,
 						size: stat.size,
 						niceSize: filesize(stat.size, {round: 1}),
 						fileType: type
@@ -451,7 +451,7 @@ var ComponentModel = {
 			
 			if (!renderDependencies) {
 				//Only the first call has renderDependencies set to true, otherwise use the last published version of dependent page
-				var publishedVersionsOfComponent = historyModel.getPublished(path.join(ComponentModel.baseDir, contentPath));
+				var publishedVersionsOfComponent = historyModel.getPublished(contentPath);
 				if (publishedVersionsOfComponent.length > 0) {
 
 					var lastPublishedVersionOfComponent = publishedVersionsOfComponent[0];
@@ -487,7 +487,7 @@ var ComponentModel = {
 					if (page.isPublished === true) {
 
 						//Find most recent published version
-						var publishedVersions = historyModel.getPublished(path.join(ComponentModel.baseDir, pagePath));
+						var publishedVersions = historyModel.getPublished(pagePath);
 						
 						if (publishedVersions.length > 0) {
 							var lastPublished = publishedVersions[0];

@@ -1,5 +1,7 @@
 var cheerio = require("cheerio");
 var fs = require("fs");
+var contentModel = require("../../models/contentmodel");
+var path = require("path");
 
 var Hooks = {
 	settings: {
@@ -12,7 +14,7 @@ var Hooks = {
 
 		var $ = cheerio.load(html);
 
-		var searchIndexPath = data.path.replace(".json", ".index");
+		var searchIndexPath = path.join(contentModel.baseDir, data.path.replace(".json", ".index"));
 
 		//Read search index for this page
 		var searchIndex = JSON.parse(fs.readFileSync(searchIndexPath, "utf8"));
