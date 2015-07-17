@@ -1,26 +1,42 @@
-#cap production deploy
+# config valid only for current version of Capistrano
+lock '3.4.0'
 
 set :application, 'lb'
 set :repo_url, 'https://github.com/lakemedelsboken/LB.git'
 
-# ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
+# Default branch is :master
+ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
-set :deploy_to, '/var/www/lb'
-set :scm, :git
-set :branch, 'master'
+# Default deploy_to directory is /var/www/my_app_name
+# set :deploy_to, '/var/www/lb'
 
+# Default value for :scm is :git
+# set :scm, :git
+
+# Default value for :format is :pretty
 # set :format, :pretty
+
+# Default value for :log_level is :debug
 # set :log_level, :debug
+
+# Default value for :pty is false
 # set :pty, true
 
-# set :linked_files, %w{config/database.yml}
-# set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+# Default value for :linked_files is []
+# set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 
+# Default value for linked_dirs is []
+# set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
+
+# Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
-set :keep_releases, 3
-#set :pass, fetch(:pass, '')
+
+# Default value for keep_releases is 5
+# set :keep_releases, 5
 
 namespace :deploy do
+
+  after 'deploy:publishing', 'deploy:restart'
 
   desc 'Restart application'
   task :restart do
@@ -44,7 +60,10 @@ namespace :deploy do
         #rebuild node-xml module
         execute "cd #{release_path}/npl/node_modules/xml-stream/ && npm rebuild"
 
-        ask(:secretSettingsPassword, "")
+        #rebuild scrypt module
+        execute "cd #{release_path}/servers/cms/node_modules/scrypt/ && npm install"
+
+        ask(:secretSettingsPassword, nil, echo: false)
         
         execute "mkdir -p #{shared_path}/settings"
         execute "rm -f #{shared_path}/settings/*"
@@ -57,8 +76,8 @@ namespace :deploy do
 
         execute "pm2 kill"
         execute "export NODE_ENV=production"
-        execute "cd /var/www/lb/current/servers/ && pm2 start pm2_#{fetch(:stage)}.json &"
-        #end
+        
+        execute "cd /var/www/lb/current/servers/ && pm2 start ./pm2_#{fetch(:stage)}.json"
     end
   end
 
@@ -71,7 +90,4 @@ namespace :deploy do
     end
   end
 
-  after :finishing, 'deploy:cleanup'
-
 end
-
