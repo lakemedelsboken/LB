@@ -13,7 +13,6 @@ var fs = require("fs");
 //var multer = require('multer');
 
 var secretSettingsPath = __dirname + "/../../settings/secretSettings.json";
-var settingsPath = __dirname + "/../../settings/settings.json";
 
 if (!fs.existsSync(secretSettingsPath)) {
 	console.error("Config file [" + secretSettingsPath + "] missing!");
@@ -33,25 +32,63 @@ if (!fs.existsSync(secretSettingsPath)) {
 })();
 
 var secretSettings = JSON.parse(fs.readFileSync(secretSettingsPath, "utf8"));
+
+
+var settingsPath = __dirname + "/../../settings/settings.json";
 var settings = JSON.parse(fs.readFileSync(settingsPath, "utf8"));
 
-app.version = settings.version;
-var versionator = require('versionator').create(app.version);
+var chokidar = require("chokidar");
+
+var chokidarOptions = {
+	persistent: true,
+	ignoreInitial: true
+};
+
+chokidar.watch(settingsPath, chokidarOptions).on("all", function(event, path) {
+
+	if (event === "change" || event === "add") {
+		console.log("'settings.json' has changed, reloading in site/app.js");
+		settings = JSON.parse(fs.readFileSync(settingsPath, "utf8"));
+		app.version = settings.version;
+	}
+
+});
+
 
 exports.init = function(port) {
-
-	function authorize(username, password) {
-		return secretSettings.admin.basicAuthId === username & secretSettings.admin.basicAuthPassword === password;
-	}
 
 	app.enable('trust proxy');
 
 	app.set('views', __dirname + '/views');
 	app.set('view engine', 'ejs');
-	app.use(versionator.middleware);
-	app.use('/bookmarklets', express.static(__dirname + '/bookmarklets'));
-	//app.use(express.static(__dirname + '/static', {maxAge: 31104000000})); //
-	app.use(express.static(__dirname + '/../cms/output/static')); //
+	
+	app.version = settings.version;
+	
+	var versionRemover = function(req, res, next) {
+
+		//From Versionator
+
+		// We only do this on GET and HEAD requests
+		if ('GET' !== req.method && 'HEAD' !== req.method) {
+			return next();
+		}
+
+		var vPos = req.url.indexOf(settings.version)
+
+		// If version isn't in path then move on.
+		if (vPos === -1) {
+			return next();
+		}
+
+		// Rebuild the URL without the version and set the request url.
+		req.url = req.url.substring(0, vPos - 1) + req.url.substring(vPos + settings.version.length);
+		next();
+	};
+	
+	app.use(versionRemover);
+	//app.use('/bookmarklets', express.static(__dirname + '/bookmarklets'));
+	app.use(express.static(__dirname + '/../cms/output/static', {maxAge: 31104000000})); //
+	//app.use(express.static(__dirname + '/../cms/output/static')); //
 	app.use(express.static(__dirname + '/../cms/output/published', {index: ["index.html", "default.html"]}));
 	
 	app.use(express.static(__dirname + '/../../fass/www'));
