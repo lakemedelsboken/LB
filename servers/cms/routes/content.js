@@ -367,7 +367,7 @@ router.get("/rename", function(req, res) {
 					error: err
 				});
 			} else {
-				res.redirect(after);
+				res.redirect(("/cms/" + after).replace(/\/\//g, "/"));
 			}
 		});
 	} else {
