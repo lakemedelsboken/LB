@@ -32,7 +32,7 @@ ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
 # Default value for keep_releases is 5
-# set :keep_releases, 5
+set :keep_releases, 3
 
 namespace :deploy do
 
@@ -46,38 +46,46 @@ namespace :deploy do
       #within release_path do
 
       #Create symlinks for fass products
-        execute "rm -rf #{release_path}/fass/www/products"
-        execute "mkdir -p #{release_path}/fass/www/"
-        execute "mkdir -p #{shared_path}/fass/www/products"
-        execute "ln -nfs #{shared_path}/fass/www/products #{release_path}/fass/www/"
+      execute "rm -rf #{release_path}/fass/www/products"
+      execute "mkdir -p #{release_path}/fass/www/"
+      execute "mkdir -p #{shared_path}/fass/www/products"
+      execute "ln -nfs #{shared_path}/fass/www/products #{release_path}/fass/www/"
 
-        #Create symlink for foundUpdates.json
-        execute "mkdir -p #{shared_path}/fass/shared"
-        execute "cp -n #{release_path}/fass/shared/foundUpdates.json #{shared_path}/fass/shared/foundUpdates.json"
-        execute "rm -rf #{release_path}/fass/shared"
-        execute "ln -nfs #{shared_path}/fass/shared #{release_path}/fass/"
+      #Create symlink for foundUpdates.json
+      execute "mkdir -p #{shared_path}/fass/shared"
+      execute "cp -n #{release_path}/fass/shared/foundUpdates.json #{shared_path}/fass/shared/foundUpdates.json"
+      execute "rm -rf #{release_path}/fass/shared"
+      execute "ln -nfs #{shared_path}/fass/shared #{release_path}/fass/"
 
-        #rebuild node-xml module
-        execute "cd #{release_path}/npl/node_modules/xml-stream/ && npm rebuild"
+      #rebuild node-xml module
+      execute "cd #{release_path}/npl/node_modules/xml-stream/ && npm rebuild"
 
-        #rebuild scrypt module
-        execute "cd #{release_path}/servers/cms/node_modules/scrypt/ && npm install"
+      #rebuild scrypt module
+      execute "cd #{release_path}/servers/cms/node_modules/scrypt/ && npm install"
 
-        ask(:secretSettingsPassword, nil, echo: false)
-        
-        execute "mkdir -p #{shared_path}/settings"
-        execute "rm -f #{shared_path}/settings/*"
-        execute "cp  #{release_path}/settings/* #{shared_path}/settings/"
+      ask(:secretSettingsPassword, nil, echo: false)
+      
+      #if
+      execute "mkdir -p #{shared_path}/settings"
+      execute "rm -f #{shared_path}/settings/*"
+      execute "cp  #{release_path}/settings/* #{shared_path}/settings/"
 
-        execute "rm -rf #{release_path}/settings"
+      execute "rm -rf #{release_path}/settings"
 
-        execute "ln -nfs #{shared_path}/settings #{release_path}/"
-        execute "cd #{shared_path}/settings && make decrypt_conf_pass PASS=#{fetch(:secretSettingsPassword)}"
+      execute "ln -nfs #{shared_path}/settings #{release_path}/"
+      execute "cd #{shared_path}/settings && make decrypt_conf_pass PASS=#{fetch(:secretSettingsPassword)}"
 
-        execute "pm2 kill"
-        execute "export NODE_ENV=production"
-        
-        execute "cd /var/www/lb/current/servers/ && pm2 start ./pm2_#{fetch(:stage)}.json"
+      #Make current release a working git repository
+      if fetch(:stage) == :staging 
+        execute "git clone -b #{fetch(:branch)} --single-branch --depth 1 ssh://git@github.com/lakemedelsboken/LB.git /var/www/lb/gittemp"
+        execute "mv /var/www/lb/gittemp/.git /var/www/lb/current/.git"
+        execute "rm -rf /var/www/lb/gittemp/"
+      end
+
+      execute "pm2 kill"
+      execute "export NODE_ENV=production"
+      
+      execute "cd /var/www/lb/current/servers/ && pm2 start ./pm2_#{fetch(:stage)}.json"
     end
   end
 
