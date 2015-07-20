@@ -536,6 +536,9 @@ var ContentController = {
 
 		console.log("ContentController.recreateAll()");
 		
+		//TODO: Set a new version number
+		//TODO: Make sure version is updated when uploading to master server
+		
 		//Remove all files of type index, xml and html in output/published and output/draft
 		var draftDir = path.join(ContentController.baseDir, "..", "output", "draft");
 		var draftFiles = wrench.readdirSyncRecursive(draftDir);

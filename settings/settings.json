@@ -1,5 +1,5 @@
 {
-	"version": "v0.1.39",
+	"version": "v0.1.42",
 	"externalServerPorts": {
 		"main": 80
 	},
@@ -10,5 +10,6 @@
 		"admin": 8002,
 		"api": 8003,
 		"cms": 8004
-	}
+	},
+	"baseUrl": "http://www.lakemedelsboken.se"
 }

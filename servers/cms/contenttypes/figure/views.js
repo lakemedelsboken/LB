@@ -3,6 +3,25 @@ var path = require("path");
 var escape = require("escape-html");
 var cheerio = require("cheerio");
 
+var settingsPath = path.join(__dirname, "..", "..", "..", "..", "settings", "settings.json");
+var settings = JSON.parse(fs.readFileSync(settingsPath, "utf8"));
+
+var chokidar = require("chokidar");
+
+var chokidarOptions = {
+	persistent: true,
+	ignoreInitial: true
+};
+
+chokidar.watch(settingsPath, chokidarOptions).on("all", function(event, path) {
+
+	if (event === "change" || event === "add") {
+		console.log("'settings.json' has changed, reloading /contenttypes/figure/views.js");
+		settings = JSON.parse(fs.readFileSync(settingsPath, "utf8"));
+	}
+
+});
+
 var Views = {
 	name: "Figur",
 	description: "Mall för figur",
@@ -109,7 +128,7 @@ var Views = {
 		
 		output = output.replace(new RegExp("{maxwidth}", "g"), maxWidth);
 
-		output = output.replace(new RegExp("{source}", "g"), "{pre}" + item.content.image);
+		output = output.replace(new RegExp("{source}", "g"), "{pre}/" + settings.version + item.content.image);
 
 		if (removeTitle) {
 			$ = cheerio.load(output);

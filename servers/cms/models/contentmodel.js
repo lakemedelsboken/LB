@@ -10,6 +10,25 @@ var readChunk = require('read-chunk');
 var fileType = require('file-type');
 var async = require("async");
 
+var settingsPath = path.join(__dirname, "..", "..", "..", "settings", "settings.json");
+var settings = JSON.parse(fs.readFileSync(settingsPath, "utf8"));
+
+var chokidar = require("chokidar");
+
+var chokidarOptions = {
+	persistent: true,
+	ignoreInitial: true
+};
+
+chokidar.watch(settingsPath, chokidarOptions).on("all", function(event, path) {
+
+	if (event === "change" || event === "add") {
+		console.log("'settings.json' has changed, reloading in /models/contentmodel.js");
+		settings = JSON.parse(fs.readFileSync(settingsPath, "utf8"));
+	}
+
+});
+
 var ContentModel = {
 	baseDir: path.normalize(path.join(__dirname, "..", "content")),
 	_contentTypes: undefined,
@@ -406,6 +425,10 @@ var ContentModel = {
 	},
 	renderPageDraft: function(contentPath, renderDependencies, callback) {
 
+		if (contentPath.charAt(0) !== "/") {
+			contentPath = "/" + contentPath;
+		}
+
 		console.log("ContentModel.renderPageDraft: " + contentPath);
 
 		ContentModel.getContent(contentPath, function(err, data) {
@@ -456,6 +479,7 @@ var ContentModel = {
 			var footer = fs.readFileSync(footerPath, "utf8");
 						
 			//Fill in the rest of the meta data
+/*
 			header = header.replace(/\{title\}/g, data.title);
 			header = header.replace(/\{description\}/g, data.description);
 			header = header.replace(/\{author\}/g, data.author);
@@ -475,7 +499,7 @@ var ContentModel = {
 			footer = footer.replace(/\{modified\}/g, data.modified);
 			footer = footer.replace(/\{published\}/g, data.published);
 			footer = footer.replace(/\{informationType\}/g, data.informationType);
-			
+*/			
 			//Render components
 			if (data.components && data.components !== undefined) {
 				for (var name in data.components) {
@@ -556,8 +580,10 @@ var ContentModel = {
 				
 				var feedOutput = ContentModel.getFeedOutput(feedItems, data.title, feedUrlPath, data.author);
 				
-				//TODO: Handle {pre} in links better, read from settings
-				feedOutput = feedOutput.replace(/\{pre\}/g, "http://www.lakemedelsboken.se");
+				//Handle {pre} in links
+				var baseUrl = settings.baseUrl;
+				
+				feedOutput = feedOutput.replace(/\{pre\}/g, baseUrl);
 				
 				//Write feed to disk
 				fs.writeFileSync(feedOutPath, feedOutput, "utf8");
@@ -567,7 +593,23 @@ var ContentModel = {
 			output = output.replace("{headerContent}", headerContent);
 			output = output.replace("{footerContent}", footerContent);
 
+			//Fill in metadata
+			output = output.replace(/\{title\}/g, data.title);
+			output = output.replace(/\{description\}/g, data.description);
+			output = output.replace(/\{author\}/g, data.author);
+			output = output.replace(/\{subject\}/g, data.subject);
+			output = output.replace(/\{keywords\}/g, data.keywords);
+			output = output.replace(/\{created\}/g, data.created);
+			output = output.replace(/\{modified\}/g, data.modified);
+			output = output.replace(/\{published\}/g, data.published);
+			output = output.replace(/\{informationType\}/g, data.informationType);
+			
+			output = output.replace(/\{version\}/g, settings.version);
+
 			var relativePath = data.path.replace(ContentModel.baseDir, "").replace(/\\/g, "/").replace(".json", ".html").replace(/\/\//g, "/");
+			if (relativePath.charAt(0) !== "/") {
+				relativePath = "/" + relativePath;
+			}
 
 			//Build search index
 			//Check if this page is supposed to be indexed
@@ -627,8 +669,6 @@ var ContentModel = {
 			if (levels === 0) {
 				pre = ".";
 			}
-
-
 
 			postRender = postRender.replace(/\{pre\}/g, pre);
 
@@ -811,6 +851,10 @@ var ContentModel = {
 	},
 	renderPagePublished: function(contentPath, renderDependencies, callback) {
 
+		if (contentPath.charAt(0) !== "/") {
+			contentPath = "/" + contentPath;
+		}
+
 		console.log("ContentModel.renderPagePublished: " + contentPath);
 
 		ContentModel.getContent(contentPath, function(err, data) {
@@ -882,7 +926,8 @@ var ContentModel = {
 			
 			var header = fs.readFileSync(headerPath, "utf8");
 			var footer = fs.readFileSync(footerPath, "utf8");
-						
+
+			/*
 			//Fill in the rest of the meta data
 			header = header.replace(/\{title\}/g, data.title);
 			header = header.replace(/\{description\}/g, data.description);
@@ -903,6 +948,7 @@ var ContentModel = {
 			footer = footer.replace(/\{modified\}/g, data.modified);
 			footer = footer.replace(/\{published\}/g, data.published);
 			footer = footer.replace(/\{informationType\}/g, data.informationType);
+			*/
 
 			//Render components
 			if (data.components && data.components !== undefined) {
@@ -983,8 +1029,10 @@ var ContentModel = {
 				
 				var feedOutput = ContentModel.getFeedOutput(feedItems, data.title, feedUrlPath, data.author);
 				
-				//TODO: Handle {pre} in links
-				feedOutput = feedOutput.replace(/\{pre\}/g, "http://www.lakemedelsboken.se");
+				//Handle {pre} in links
+				var baseUrl = settings.baseUrl;
+
+				feedOutput = feedOutput.replace(/\{pre\}/g, baseUrl);
 				
 				//Write feed to disk
 				fs.writeFileSync(feedOutPath, feedOutput, "utf8");
@@ -994,7 +1042,23 @@ var ContentModel = {
 			output = output.replace("{headerContent}", headerContent);
 			output = output.replace("{footerContent}", footerContent);
 
+			//Fill in metadata
+			output = output.replace(/\{title\}/g, data.title);
+			output = output.replace(/\{description\}/g, data.description);
+			output = output.replace(/\{author\}/g, data.author);
+			output = output.replace(/\{subject\}/g, data.subject);
+			output = output.replace(/\{keywords\}/g, data.keywords);
+			output = output.replace(/\{created\}/g, data.created);
+			output = output.replace(/\{modified\}/g, data.modified);
+			output = output.replace(/\{published\}/g, data.published);
+			output = output.replace(/\{informationType\}/g, data.informationType);
+			
+			output = output.replace(/\{version\}/g, settings.version);
+
 			var relativePath = data.path.replace(ContentModel.baseDir, "").replace(/\\/g, "/").replace(".json", ".html").replace(/\/\//g, "/");
+			if (relativePath.charAt(0) !== "/") {
+				relativePath = "/" + relativePath;
+			}
 
 			//Build search index
 			//Check if this page is supposed to be indexed

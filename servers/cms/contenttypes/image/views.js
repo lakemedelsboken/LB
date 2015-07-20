@@ -2,6 +2,25 @@ var fs = require("fs");
 var path = require("path");
 var escape = require('escape-html');
 
+var settingsPath = path.join(__dirname, "..", "..", "..", "..", "settings", "settings.json");
+var settings = JSON.parse(fs.readFileSync(settingsPath, "utf8"));
+
+var chokidar = require("chokidar");
+
+var chokidarOptions = {
+	persistent: true,
+	ignoreInitial: true
+};
+
+chokidar.watch(settingsPath, chokidarOptions).on("all", function(event, path) {
+
+	if (event === "change" || event === "add") {
+		console.log("'settings.json' has changed, reloading /contenttypes/image/views.js.");
+		settings = JSON.parse(fs.readFileSync(settingsPath, "utf8"));
+	}
+
+});
+
 var Views = {
 	name: "Bild",
 	description: "Välj en bild",
@@ -33,7 +52,7 @@ var Views = {
 	getOutput: function(item) {
 		var output = fs.readFileSync(__dirname + "/output.html", "utf8");
 
-		output = output.replace(new RegExp("{source}", "g"), path.join("{pre}", item.content.image));
+		output = output.replace(new RegExp("{source}", "g"), "{pre}/" + settings.version + item.content.image);
 
 		output = output.replace(new RegExp("{alt}", "g"), item.content.alt);
 
