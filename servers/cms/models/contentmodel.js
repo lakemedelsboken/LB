@@ -13,6 +13,9 @@ var async = require("async");
 var settingsPath = path.join(__dirname, "..", "..", "..", "settings", "settings.json");
 var settings = JSON.parse(fs.readFileSync(settingsPath, "utf8"));
 
+var staticSettingsPath = path.join(__dirname, "..", "output", "static", "settings.json");
+var staticSettings = JSON.parse(fs.readFileSync(staticSettingsPath, "utf8"));
+
 var chokidar = require("chokidar");
 
 var chokidarOptions = {
@@ -20,11 +23,11 @@ var chokidarOptions = {
 	ignoreInitial: true
 };
 
-chokidar.watch(settingsPath, chokidarOptions).on("all", function(event, path) {
+chokidar.watch(staticSettingsPath, chokidarOptions).on("all", function(event, path) {
 
 	if (event === "change" || event === "add") {
 		console.log("'settings.json' has changed, reloading in /models/contentmodel.js");
-		settings = JSON.parse(fs.readFileSync(settingsPath, "utf8"));
+		staticSettings = JSON.parse(fs.readFileSync(staticSettingsPath, "utf8"));
 	}
 
 });
@@ -604,7 +607,7 @@ var ContentModel = {
 			output = output.replace(/\{published\}/g, data.published);
 			output = output.replace(/\{informationType\}/g, data.informationType);
 			
-			output = output.replace(/\{version\}/g, settings.version);
+			output = output.replace(/\{version\}/g, staticSettings.version);
 
 			var relativePath = data.path.replace(ContentModel.baseDir, "").replace(/\\/g, "/").replace(".json", ".html").replace(/\/\//g, "/");
 			if (relativePath.charAt(0) !== "/") {
@@ -1053,7 +1056,7 @@ var ContentModel = {
 			output = output.replace(/\{published\}/g, data.published);
 			output = output.replace(/\{informationType\}/g, data.informationType);
 			
-			output = output.replace(/\{version\}/g, settings.version);
+			output = output.replace(/\{version\}/g, staticSettings.version);
 
 			var relativePath = data.path.replace(ContentModel.baseDir, "").replace(/\\/g, "/").replace(".json", ".html").replace(/\/\//g, "/");
 			if (relativePath.charAt(0) !== "/") {

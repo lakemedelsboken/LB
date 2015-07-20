@@ -47,6 +47,9 @@ var app = express();
 var settingsPath = path.join(__dirname,"..", "..", "settings", "settings.json");
 var settings = JSON.parse(fs.readFileSync(settingsPath, "utf8"));
 
+var staticSettingsPath = path.join(__dirname,"output", "static", "settings.json");
+var staticSettings = JSON.parse(fs.readFileSync(staticSettingsPath, "utf8"));
+
 var chokidar = require("chokidar");
 
 var chokidarOptions = {
@@ -54,17 +57,17 @@ var chokidarOptions = {
 	ignoreInitial: true
 };
 
-chokidar.watch(settingsPath, chokidarOptions).on("all", function(event, path) {
+chokidar.watch(staticSettingsPath, chokidarOptions).on("all", function(event, path) {
 
 	if (event === "change" || event === "add") {
 		console.log("'settings.json' has changed, reloading in /app.js");
-		settings = JSON.parse(fs.readFileSync(settingsPath, "utf8"));
+		staticSettings = JSON.parse(fs.readFileSync(staticSettingsPath, "utf8"));
 	}
 
 });
 
 
-app.version = settings.version;
+app.version = staticSettings.version;
 
 var cronJob = require('cron').CronJob;
 
@@ -126,7 +129,7 @@ var versionRemover = function(req, res, next) {
 		return next();
 	}
 
-	var vPos = req.url.indexOf(settings.version)
+	var vPos = req.url.indexOf(staticSettings.version)
 
 	// If version isn't in path then move on.
 	if (vPos === -1) {
@@ -134,7 +137,7 @@ var versionRemover = function(req, res, next) {
 	}
 
 	// Rebuild the URL without the version and set the request url.
-	req.url = req.url.substring(0, vPos - 1) + req.url.substring(vPos + settings.version.length);
+	req.url = req.url.substring(0, vPos - 1) + req.url.substring(vPos + staticSettings.version.length);
 	next();
 };
 

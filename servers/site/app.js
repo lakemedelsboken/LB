@@ -33,9 +33,11 @@ if (!fs.existsSync(secretSettingsPath)) {
 
 var secretSettings = JSON.parse(fs.readFileSync(secretSettingsPath, "utf8"));
 
-
 var settingsPath = __dirname + "/../../settings/settings.json";
 var settings = JSON.parse(fs.readFileSync(settingsPath, "utf8"));
+
+var staticSettingsPath = __dirname + "/../cms/output/static/settings.json";
+var staticSettings = JSON.parse(fs.readFileSync(staticSettingsPath, "utf8"));
 
 var chokidar = require("chokidar");
 
@@ -44,12 +46,12 @@ var chokidarOptions = {
 	ignoreInitial: true
 };
 
-chokidar.watch(settingsPath, chokidarOptions).on("all", function(event, path) {
+chokidar.watch(staticSettingsPath, chokidarOptions).on("all", function(event, path) {
 
 	if (event === "change" || event === "add") {
 		console.log("'settings.json' has changed, reloading in site/app.js");
-		settings = JSON.parse(fs.readFileSync(settingsPath, "utf8"));
-		app.version = settings.version;
+		staticSettings = JSON.parse(fs.readFileSync(staticSettingsPath, "utf8"));
+		app.version = staticSettings.version;
 	}
 
 });
@@ -62,7 +64,7 @@ exports.init = function(port) {
 	app.set('views', __dirname + '/views');
 	app.set('view engine', 'ejs');
 	
-	app.version = settings.version;
+	app.version = staticSettings.version;
 	
 	var versionRemover = function(req, res, next) {
 
@@ -73,7 +75,7 @@ exports.init = function(port) {
 			return next();
 		}
 
-		var vPos = req.url.indexOf(settings.version)
+		var vPos = req.url.indexOf(staticSettings.version)
 
 		// If version isn't in path then move on.
 		if (vPos === -1) {
@@ -81,7 +83,7 @@ exports.init = function(port) {
 		}
 
 		// Rebuild the URL without the version and set the request url.
-		req.url = req.url.substring(0, vPos - 1) + req.url.substring(vPos + settings.version.length);
+		req.url = req.url.substring(0, vPos - 1) + req.url.substring(vPos + staticSettings.version.length);
 		next();
 	};
 	
