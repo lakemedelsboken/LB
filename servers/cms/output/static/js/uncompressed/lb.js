@@ -3292,19 +3292,21 @@ ga = function() {};
 		},
 		handlePageFootnoteItems: function(event) {
 			event.preventDefault();
-			console.log("pageFootNoteItems");
+			//console.log("pageFootNoteItems");
 			if ($(this).attr("data-original-title") === undefined) {
 				var popoverPlacement = "bottom";
 
 				var pageFootnoteList = $($(this).attr("href"));
 				var title = $.trim(pageFootnoteList.find("legend").first().text());
-				pageFootnoteList.find("legend").remove();
+				//pageFootnoteList.find("legend").remove();
 				
 				var content = "";
 
-				console.log(pageFootnoteList.html());
+				//console.log(pageFootnoteList.html());
 
 				if (pageFootnoteList.length > 0) {
+					pageFootnoteList = pageFootnoteList.clone();
+					pageFootnoteList.find("legend").remove();
 					content = "<div class=\"pageFootnoteDisplay\">" +  pageFootnoteList.html() + "</div>";
 				}
 
