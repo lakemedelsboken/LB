@@ -1,0 +1,38 @@
+{
+	"templateName": "default",
+	"templateDescription": "Vanlig sida",
+	"title": "Författarregister | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-22 22:36",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "53fe69ab-ff1a-4fb0-94d6-abb1783c13ee",
+			"name": "53fe69ab-ff1a-4fb0-94d6-abb1783c13ee",
+			"type": "text",
+			"content": "<h1>Rubrik</h1>\n<p>Text</p>",
+			"settings": {}
+		}
+	],
+	"type": "file",
+	"path": "/forfattare/index.json",
+	"indexed": "true",
+	"modified": "2015-07-22 22:37"
+}
