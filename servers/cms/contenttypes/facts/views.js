@@ -34,12 +34,14 @@ var Views = {
 		var output = fs.readFileSync(__dirname + "/output.html", "utf8");
 
 		var removeFactsTitle = false;
+		var removeSecondTitle = false;
 
 		if (item.content.number > 0) {
 			output = output.replace(new RegExp("{number}", "g"), item.content.number);
 		} else {
 			removeFactsTitle = true;
 		}
+
 		
 
 		if (item.content.id !== "" && item.content.id !== "undefined" && item.content.id !== undefined) {
@@ -68,6 +70,7 @@ var Views = {
 			output = output.replace(new RegExp("{title}", "g"), resultHtml);
 		} else {
 			output = output.replace(new RegExp("{title}", "g"), "");
+			removeSecondTitle = true;
 		}
 
 		var $ = cheerio.load(item.content.text);
@@ -126,6 +129,16 @@ var Views = {
 		if (removeFactsTitle) {
 			$ = cheerio.load(output);
 			$("tr").first().remove();
+			output = $.html();
+		}
+
+		if (removeSecondTitle) {
+			$ = cheerio.load(output);
+			if (removeFactsTitle) {
+				$("tr").first().remove();
+			} else {
+				$("tr").eq(1).remove();
+			}
 			output = $.html();
 		}
 
