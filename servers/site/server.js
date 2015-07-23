@@ -206,12 +206,31 @@ function clearCachedFileReads() {
 	indexCache = {};
 }
 
+var staticSettingsPath = __dirname + "/../cms/output/static/settings.json";
+var staticSettings = JSON.parse(fs.readFileSync(staticSettingsPath, "utf8"));
+
+var chokidarOptions = {
+	persistent: true,
+	ignoreInitial: true
+};
+
+chokidar.watch(staticSettingsPath, chokidarOptions).on("all", function(event, path) {
+
+	if (event === "change" || event === "add") {
+		console.log("'settings.json' has changed, reloading in site/server.js");
+		staticSettings = JSON.parse(fs.readFileSync(staticSettingsPath, "utf8"));
+		locals.version = staticSettings.version;
+	}
+
+});
+
 var locals = {
 	title: 'Läkemedelsboken',
 	description: '',
 	author: '',
-	version: settings.version
+	version: staticSettings.version
 };
+
 
 app.get('/sitemap.xml', function(req,res){
 
