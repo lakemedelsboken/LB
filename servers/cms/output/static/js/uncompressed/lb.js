@@ -929,7 +929,8 @@ ga = function() {};
 								if (item.hasChildren) {
 									itemType = "parent";
 								}
-								
+
+/*								
 								var indentation = 0;
 								if (item.indent !== undefined) {
 									for (var k = 0; k < item.indent; k++) {
@@ -942,13 +943,13 @@ ga = function() {};
 								} else {
 									indentation = "";
 								}
-
+*/
 								var itemIcon = lb.getIcon(itemType);
 								if (item.icon !== null) {
 									itemIcon = item.icon;
 								}
 								
-								newMenu.append($("<li><a class=\"" + id.replace("#", "") + "\" " + indentation + "href=\"" + item.chapter + id + "\"" + ((item.chapter !== undefined) ? " data-chapter=\"" + item.chapter + "\"" : " data-chapter=\"\"") + " data-has-children=\"" + (item.hasChildren ? "true" : "false") + "\"><i class=\"" + itemIcon + "\"></i> " + (item.hasChildren ? "<i class=\"fa fa-angle-down pull-right\"></i> " : "") + item.title + "</a></li>"));
+								newMenu.append($("<li><a class=\"" + id.replace("#", "") + ((item.indent !== undefined) ? " indent" + item.indent : "") + "\" href=\"" + item.chapter + id + "\"" + ((item.chapter !== undefined) ? " data-chapter=\"" + item.chapter + "\"" : " data-chapter=\"\"") + " data-has-children=\"" + (item.hasChildren ? "true" : "false") + "\">" + (itemIcon ? "<i class=\"" + itemIcon + "\"></i> " : "") + item.title + "</a></li>"));
 							}
 						}
 
@@ -1413,7 +1414,7 @@ ga = function() {};
 		getIcon: function(type) {
 			var icons = {
 				parent: "fa fa-bookmark-o",
-				header: "fa fa-chevron-right",
+				header: "fa fa-bookmark-o", //fa-chevron-right
 				infoTable: "fa fa-th-large",
 				facts: "fa fa-th-list",
 				therapyRecommendations: "fa fa-info-circle",

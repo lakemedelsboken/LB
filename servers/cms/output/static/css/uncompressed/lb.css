@@ -197,6 +197,39 @@ ol.references li, p.popoverReference {
 	
 }
 
+.ui-menu .ui-menu-item a.indent0 {
+	font-weight: 400;
+	font-size: 16px;
+}
+.ui-menu .ui-menu-item a.indent1 {
+	margin-left: 20px;
+	font-weight: 400;
+	font-size: 15px;
+}
+.ui-menu .ui-menu-item a.indent2 {
+	margin-left: 40px;
+	font-weight: 400;
+}
+.ui-menu .ui-menu-item a.indent3 {
+	margin-left: 60px;
+	font-weight: 400;
+}
+.ui-menu .ui-menu-item a.indent4 {
+	margin-left: 80px;
+}
+.ui-menu .ui-menu-item a.indent5 {
+	margin-left: 100px;
+}
+.ui-menu .ui-menu-item a.indent6 {
+	margin-left: 120px;
+}
+.ui-menu .ui-menu-item a.indent7 {
+	margin-left: 140px;
+}
+.ui-menu .ui-menu-item a.indent8 {
+	margin-left: 160px;
+}
+
 .popover-title {
 	background-color: #fdfdfd;
 	-webkit-border-radius: 4px 4px 0 0;
