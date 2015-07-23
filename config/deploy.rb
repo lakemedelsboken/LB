@@ -83,9 +83,8 @@ namespace :deploy do
       end
 
       execute "pm2 kill"
-      execute "export NODE_ENV=production"
       
-      execute "cd /var/www/lb/current/servers/ && pm2 start ./pm2_#{fetch(:stage)}.json"
+      execute "cd /var/www/lb/current/servers/ && export NODE_ENV=production && pm2 start ./pm2_#{fetch(:stage)}.json"
     end
   end
 
