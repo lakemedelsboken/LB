@@ -241,7 +241,7 @@ function buildSideBarToc(index) {
 function getIcon(type) {
 	var icons = {
 		parent: "fa fa-bookmark-o",
-		header: "fa fa-chevron-right",
+		header: "fa fa-bookmark-o",
 		infoTable: "fa fa-th-large",
 		facts: "fa fa-th-list",
 		therapyRecommendations: "fa fa-info-circle",
