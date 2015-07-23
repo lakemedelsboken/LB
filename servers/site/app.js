@@ -89,8 +89,15 @@ exports.init = function(port) {
 	
 	app.use(versionRemover);
 	//app.use('/bookmarklets', express.static(__dirname + '/bookmarklets'));
-	app.use(express.static(__dirname + '/../cms/output/static', {maxAge: 31104000000})); //
-	//app.use(express.static(__dirname + '/../cms/output/static')); //
+
+	if ('development' == app.get('env')) {
+		app.use(express.static(__dirname + '/../cms/output/static')); //
+	}
+	
+	if ('production' == app.get('env')) {
+		app.use(express.static(__dirname + '/../cms/output/static', {maxAge: 31104000000}));
+	}
+
 	app.use(express.static(__dirname + '/../cms/output/published', {index: ["index.html", "default.html"]}));
 	
 	app.use(express.static(__dirname + '/../../fass/www'));
