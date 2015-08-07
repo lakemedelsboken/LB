@@ -4,6 +4,7 @@ var genericasInjector = require("../cms/postprocessors/genericas.js")
 var crypto = require("crypto");
 var cheerio = require("cheerio");
 var path = require("path");
+var chokidar = require("chokidar");
 
 var LRU = require("lru-cache")
   , options = {max: 2000}
@@ -33,6 +34,25 @@ var settings = JSON.parse(fs.readFileSync(__dirname + "/../../settings/settings.
 var thisPort = settings.internalServerPorts.api;
 var sitePort = settings.internalServerPorts.site;
 var searchPort = settings.internalServerPorts.search;
+
+var staticSettingsPath = __dirname + "/../cms/output/static/settings.json";
+var staticSettings = JSON.parse(fs.readFileSync(staticSettingsPath, "utf8"));
+
+var chokidarOptions = {
+	persistent: true,
+	ignoreInitial: true
+};
+
+chokidar.watch(staticSettingsPath, chokidarOptions).on("all", function(event, path) {
+
+	if (event === "change" || event === "add") {
+		console.log("'settings.json' has changed, reloading in site/server.js");
+		staticSettings = JSON.parse(fs.readFileSync(staticSettingsPath, "utf8"));
+		locals.version = staticSettings.version;
+	}
+
+});
+
 
 var app = require('./app').init(thisPort);
 
@@ -278,6 +298,139 @@ app.get('/api/v1/injectgenericas/lb.injectgenericas.css', function(req,res) {
 	}
 	
 });
+
+app.get('/api/v1/appindex', function(req,res) {
+
+	var apiKey = req.query["apikey"];
+
+	var isAllowed = checkIfApiKeyIsLegit(apiKey, req);
+
+	if (isAllowed) {
+
+		var index = JSON.parse(fs.readFileSync(path.join(__dirname, "app", "masterIndex.json")));
+
+		if (req.query["callback"] !== undefined && req.query["callback"] !== "") {
+			res.jsonp(index);
+		} else {
+			res.json(index);
+		}
+		
+	} else {
+		res.status(403);
+		res.end("403 Forbidden, too many requests from the same ip-address without an api key");
+	}
+
+});
+
+app.get('/api/v1/appify', function(req,res) {
+
+	var apiKey = req.query["apikey"];
+	var url = req.query["url"];
+
+	var isAllowed = checkIfApiKeyIsLegit(apiKey, req);
+
+	if (isAllowed) {
+		
+		url = url.replace(/\.\./g, "");
+		
+		//Find if the page exists
+		var basePath = path.join(__dirname, "..", "cms", "output", "published");
+		var fullPath = path.join(basePath, url);
+		if (path.extname(fullPath) === ".html") {
+			fs.exists(fullPath, function(exists) {
+				if (exists && fs.statSync(fullPath).isFile()) {
+
+					parseToAppHtml(fullPath, function(err, appHtml) {
+						if (err) {
+							res.status(404);
+							res.end("Error");
+						} else {
+							res.set('Content-Type', 'text/html');
+							res.send(appHtml);
+						}
+					});
+				} else {
+					res.status(403);
+					res.end("Forbidden");
+				}
+			});
+			
+		} else {
+			res.status(403);
+			res.end("Forbidden");
+		}
+
+	} else {
+		res.status(403);
+		res.end("403 Forbidden, too many requests from the same ip-address without an api key");
+	}
+
+});
+
+function parseToAppHtml(fullPath, callback) {
+
+	var outline = fs.readFileSync(path.join(__dirname, "app", "appOutline.html"), "utf8");
+
+	fs.readFile(fullPath, "utf8", function(err, data) {
+
+		if (err) {
+			return callback(err);
+		}
+
+		var $ = cheerio.load(data);
+		
+		//Fix images
+		$("div.figureImage, div.image").each(function(index, element) {
+			var $element = $(element);
+
+			var correctSrc = undefined;
+
+			$element.children().each(function(i, e) {
+				if ($(e).attr("data-src") !== undefined && $(e).attr("data-src").indexOf("medium_x2.png") > -1) {
+					correctSrc = $(e).attr("data-src");
+					correctSrc = correctSrc.replace(/\.\.\//g, "/");
+					correctSrc = correctSrc.replace(/\.\//g, "/");
+					correctSrc = correctSrc.replace(/\/\//g, "/");
+					correctSrc = "{server}" + correctSrc;
+					return false;
+				}
+			});
+			
+			if (correctSrc !== undefined) {
+				$element.empty();
+				$element.replaceWith("<img src=\"" + correctSrc + "\" class=\" figureImage img-responsive\">");
+			}
+			
+		});
+		
+		//Fix pageLinks
+/*
+		$("a.pageLink").each(function(index, element) {
+			var $element = $(element);
+			
+			var href = $element.attr("href");
+			
+			
+			if 
+			
+		});
+*/
+		
+		//Fix header and footer, remove menu and search
+		outline = outline.replace("{content}", $("div#main").html());
+		var title = $("h1").first();
+		if (title !== undefined && title.length === 1) {
+			outline = outline.replace("{title}", title.text());
+		}
+		
+		outline = outline.replace(/\{version\}/g, staticSettings.version);
+
+		return callback(null, outline);
+
+	});
+
+
+}
 
 //Get javascript for injecting generica names
 app.get('/api/v1/injectgenericas/lb.injectgenericas.js/:selector?', function(req,res) {

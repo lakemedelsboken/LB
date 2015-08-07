@@ -6,16 +6,19 @@
 
 cat ../servers/cms/output/static/css/uncompressed/bootstrap.css ../servers/cms/output/static/css/uncompressed/bootstrap-responsive.css ../servers/cms/output/static/css/uncompressed/jquery-ui-1.10.0.custom.css ../servers/cms/output/static/css/uncompressed/font-awesome.css ../servers/cms/output/static/css/uncompressed/anchor.css ../servers/cms/output/static/css/uncompressed/jquery.ui.1.10.0.ie.css ../servers/cms/output/static/css/uncompressed/lb.css ../servers/cms/output/static/css/uncompressed/print.css > cms_styles.css
 
+cat ../servers/cms/output/static/css/app/uncompressed/bootstrap-app.css ../servers/cms/output/static/css/app/uncompressed/bootstrap-app-responsive.css ../servers/cms/output/static/css/uncompressed/font-awesome.css ../servers/cms/output/static/css/app/uncompressed/lb.css > app_styles.css
 #cleancss --s0 -o ../servers/admin/static/css/styles.min.css styles.css
 
 #Old
 #cleancss --s0 -o ../servers/site/static/css/styles.min.css styles.css
 cleancss --s0 -o ../servers/cms/output/static/css/styles.min.css cms_styles.css
+cleancss --s0 -o ../servers/cms/output/static/css/app/styles.min.css app_styles.css
 
 #cp -f cms_styles.css ../servers/cms/output/static/css/styles.min.css
 
 #rm -f styles.css
 rm -f cms_styles.css
+rm -f app_styles.css
 
 #cat ../servers/admin/static/css/lb.css ../servers/admin/static/css/print.css > styles.css
 
