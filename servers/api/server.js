@@ -404,17 +404,19 @@ function parseToAppHtml(fullPath, callback) {
 		});
 		
 		//Fix pageLinks
-/*
-		$("a.pageLink").each(function(index, element) {
+		$("a").each(function(index, element) {
 			var $element = $(element);
 			
 			var href = $element.attr("href");
 			
-			
-			if 
+			if (href !== undefined && typeof href === "string" && href.indexOf("http://") === -1 && href.indexOf("https://") === -1) {
+				if ($element.attr("class") === undefined || $element.attr("class") === "") {
+					$element.addClass("pageLink");
+				}
+			}
 			
 		});
-*/
+
 		
 		//Fix header and footer, remove menu and search
 		outline = outline.replace("{content}", $("div#main").html());
