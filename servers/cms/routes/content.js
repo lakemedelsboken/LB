@@ -232,6 +232,20 @@ router.post("/savepage", function(req, res) {
 					}
 				}
 
+				//Check for author content types and modify metadata attribute accordingly
+				var authors = [];
+
+				for (var i = 0; i < data.content.length; i++) {
+					if (data.content[i].type === "author") {
+						var author = data.content[i];
+						authors.push(author.content.firstname + " " + author.content.surname);
+					}
+				}
+
+				if (authors.length > 0) {
+					data.createdBy = authors.join(", ");
+				}
+
 				contentController.setContent(pageId, data, false, function(err) {
 					if (err) {
 						res.status(err.status || 500);
@@ -440,7 +454,7 @@ router.get("/addcontentitemtopage", function(req, res) {
 	var insertAfterId = req.query["insertafter"];
 		
 	if (pageId !== undefined && pageId !== "" && contentType !== undefined && contentType !== "") {
-		contentController.addContentItemToPage(contentType, pageId, insertAfterId, function(err) {
+		contentController.addContentItemToPage(contentType, pageId, insertAfterId, function(err, createdId) {
 			if (err) {
 				res.status(err.status || 500);
 				res.render('error', {
@@ -448,7 +462,12 @@ router.get("/addcontentitemtopage", function(req, res) {
 					error: err
 				});
 			} else {
-				res.redirect("back");
+				var referrer = req.get("Referrer");
+				if (createdId !== undefined) {
+					res.redirect(referrer + "#" + createdId);
+				} else {
+					res.redirect("back");
+				}
 			}
 		});
 	} else {
@@ -462,7 +481,7 @@ router.get("/movecontentitemup", function(req, res) {
 	var contentName = req.query["contentname"];
 	
 	if (pageId !== undefined && pageId !== "" && contentName !== undefined && contentName !== "") {
-		contentController.moveContentItemUp(contentName, pageId, function(err) {
+		contentController.moveContentItemUp(contentName, pageId, function(err, itemId) {
 			if (err) {
 				res.status(err.status || 500);
 				res.render('error', {
@@ -470,7 +489,12 @@ router.get("/movecontentitemup", function(req, res) {
 					error: err
 				});
 			} else {
-				res.redirect("back");
+				var referrer = req.get("Referrer");
+				if (itemId !== undefined) {
+					res.redirect(referrer + "#" + itemId);
+				} else {
+					res.redirect("back");
+				}
 			}
 		});
 	} else {
@@ -485,7 +509,7 @@ router.get("/movecontentitemdown", function(req, res) {
 	var contentName = req.query["contentname"];
 	
 	if (pageId !== undefined && pageId !== "" && contentName !== undefined && contentName !== "") {
-		contentController.moveContentItemDown(contentName, pageId, function(err) {
+		contentController.moveContentItemDown(contentName, pageId, function(err, itemId) {
 			if (err) {
 				res.status(err.status || 500);
 				res.render('error', {
@@ -493,7 +517,13 @@ router.get("/movecontentitemdown", function(req, res) {
 					error: err
 				});
 			} else {
-				res.redirect("back");
+				var referrer = req.get("Referrer");
+				if (itemId !== undefined) {
+					res.redirect(referrer + "#" + itemId);
+				} else {
+					res.redirect("back");
+				}
+
 			}
 		});
 	} else {

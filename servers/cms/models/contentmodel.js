@@ -227,6 +227,12 @@ var ContentModel = {
 								var mostRecent = publishedFileNames[0];
 								var mostRecentPath = path.join(possiblePublishedDirectory, mostRecent);
 								
+								var skipCache = true;
+								
+								var mostRecentPublishedChecksum = historyModel.getContentHash(mostRecentPath);
+								var mostRecentDraftChecksum = historyModel.getContentHash(globalPagePath, skipCache);
+								
+								/*
 								var mostRecentPublishedContent = JSON.parse(fs.readFileSync(mostRecentPath, "utf8"));
 								var mostRecentDraftContent = JSON.parse(fs.readFileSync(globalPagePath, "utf8"));
 
@@ -243,6 +249,14 @@ var ContentModel = {
 								if (mostRecentPublishedContent === mostRecentDraftContent) {
 									lastVersionIsPublished = true;
 								}
+								*/
+								if (mostRecentPublishedChecksum === mostRecentDraftChecksum) {
+									lastVersionIsPublished = true;
+								} else {
+									console.log(mostRecentDraftChecksum + " !== " + mostRecentPublishedChecksum);
+									console.log(globalPagePath, mostRecentPath);
+								}
+								
 							}
 							
 						}
@@ -599,7 +613,7 @@ var ContentModel = {
 			//Fill in metadata
 			output = output.replace(/\{title\}/g, data.title);
 			output = output.replace(/\{description\}/g, data.description);
-			output = output.replace(/\{author\}/g, data.author);
+			output = output.replace(/\{author\}/g, data.createdBy);
 			output = output.replace(/\{subject\}/g, data.subject);
 			output = output.replace(/\{keywords\}/g, data.keywords);
 			output = output.replace(/\{created\}/g, data.created);
@@ -1048,7 +1062,7 @@ var ContentModel = {
 			//Fill in metadata
 			output = output.replace(/\{title\}/g, data.title);
 			output = output.replace(/\{description\}/g, data.description);
-			output = output.replace(/\{author\}/g, data.author);
+			output = output.replace(/\{author\}/g, data.createdBy);
 			output = output.replace(/\{subject\}/g, data.subject);
 			output = output.replace(/\{keywords\}/g, data.keywords);
 			output = output.replace(/\{created\}/g, data.created);
@@ -1724,7 +1738,7 @@ var ContentModel = {
 						if (err) {
 							return callback(err);
 						}
-						return callback();
+						return callback(null, contentItemName);
 					});
 				} else {
 					return callback(new Error("Item with name: " + contentItemName + " does not exist."));
@@ -1777,7 +1791,7 @@ var ContentModel = {
 						if (err) {
 							return callback(err);
 						}
-						return callback();
+						return callback(null, contentItemName);
 					});
 				} else {
 					return callback(new Error("Item with name: " + contentItemName + " does not exist."));
@@ -1881,7 +1895,7 @@ var ContentModel = {
 				if (err) {
 					return callback(err);
 				}
-				return callback();
+				return callback(null, id);
 			});
 			
 		});

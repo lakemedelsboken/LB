@@ -38,6 +38,8 @@ var HistoryModel = {
 		var files = fs.readdirSync(publishedDirPath);
 		var publishedVersions = [];
 		
+		//TODO: Make sure only 50 versions are stored here, let older versions be archived
+		
 		for (var i = 0; i < files.length; i++) {
 			if (files[i].indexOf(".published") > -1) {
 				var timeStamp = parseInt(files[i].replace(".published", ""));
@@ -232,7 +234,7 @@ var HistoryModel = {
 
 	},
 	contentHashes: {},
-	getContentHash: function(filePath) {
+	getContentHash: function(filePath, skipCache) {
 
 		if (HistoryModel.contentHashes[filePath] !== undefined) {
 			return HistoryModel.contentHashes[filePath];
@@ -259,18 +261,24 @@ var HistoryModel = {
 			if (content.hasOwnProperty("isPublished")) {
 				delete content.isPublished;
 			}
+			if (content.hasOwnProperty("modified")) {
+				delete content.modified;
+			}
 			content = JSON.stringify(content, null, "");
 			
 			var contentHash = HistoryModel.getChecksum(content);
 			
-			HistoryModel.contentHashes[filePath] = contentHash;
+			if (!skipCache) {
+				HistoryModel.contentHashes[filePath] = contentHash;
+			}
+
 			return contentHash;
 		}
 		
 	},
 	getChecksum: function(str, algorithm, encoding) {
 		return crypto
-			.createHash(algorithm || 'md5')
+			.createHash(algorithm || 'sha1')
 			.update(str, 'utf8')
 			.digest(encoding || 'hex');
 	}

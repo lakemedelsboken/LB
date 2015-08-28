@@ -491,6 +491,38 @@
 			});
 		});
 
+		$("#contentTypeFilter").on("change", function(event) {
+			if (this.value === "all") {
+				$(".contentItemOverview").show();
+			} else {
+				$(".contentItemOverview").hide();
+				$(".contentItemOverview." + this.value).show();
+			}
+		});
+		
+		$(".showFullPreview").on("click", function(event) {
+			$(this).parent().prev().css("max-height", "none");
+			$(this).parent().remove();
+		});
+
+		$(".expandContentEditor").on("click", function(event) {
+			var editorContentView = $(this).parent().parent().parent();
+			var previewContent = editorContentView.next();
+			
+			editorContentView.toggleClass("col-sm-7");
+			editorContentView.toggleClass("col-sm-12");
+
+			previewContent.toggleClass("col-sm-5");
+			previewContent.toggleClass("hidden");
+			
+			if ($(this).find("i").first().hasClass("fa-expand")) {
+				$(this).html("<i class=\"fa fa-compress\"></i> Minska");
+			} else {
+				$(this).html("<i class=\"fa fa-expand\"></i> Bredda");
+			}
+			
+		});
+
 		
 		$("textarea.mce").on("focus", function(event) {
 
@@ -505,7 +537,7 @@
 
 				var id = $(this).attr("id");
 
-				console.log("init: textarea#" + id);
+				//console.log("init: textarea#" + id);
 				
 				tinymce.init({
 					selector: "textarea#" + id,

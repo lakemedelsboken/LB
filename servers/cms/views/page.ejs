@@ -43,8 +43,42 @@
 </div>
 
 <div class="container-fluid">
+
 	<div class="row">
-		<div class="col-sm-12 col-md-12 main">
+		<div class="col-sm-2 sidebar">
+			Filtrera på innehållstyp:
+			<select id="contentTypeFilter" class="form-control input-sm">
+				<option value="all">Alla</option>
+			<%
+			for (var type in contentTypes) {
+			%>
+				<option value="<%=type%>"><%=contentTypes[type].name%></option>
+			<%
+			}
+			%>
+			</select>
+			<h4>Innehåll:</h4>
+			<ul class="list-unstyled">
+				<li class="contentItemOverview metadata"><a href="#metadata">Metadata</a></li>
+			<%
+			for (var i = 0; i < page.content.length; i++) {
+				
+				var number = "";
+				
+				var item = page.content[i];
+				
+				if (item.content.number !== undefined) {
+					number = " " + item.content.number;
+				}
+
+			%>
+				<li class="contentItemOverview <%=item.type%>"><a href="#<%=item.name%>"><%=contentTypes[item.type].name + number%></a></li>
+			<%
+			}
+			%>
+			</ul>
+		</div>
+		<div class="col-sm-10 col-sm-offset-2 main">
 			<h1 class="page-header">Redigera sida: <small><%=id.replace(".json", "")%></small></h1>
 
 			<form class="form-horizontal" role="form" id="pageForm" action="/cms/content/savepage" method="post">
@@ -53,7 +87,7 @@
 
 				<h2 class="sub-header">Metadata</h2>
 
-				<div id="metdata">
+				<div id="metadata">
 
 					<div class="form-group">
 						<div class="col-sm-offset-2 col-sm-10">
@@ -276,9 +310,9 @@
 					for (var i = 0; i < contentEditors.length; i++) {
 				%>
 				<div class="col-sm-12 col-md-12 editContent">
-					<div class="col-sm-7 col-md-7 editor">
-						<div class="panel panel-default">
-							<div id="<%=page.content[i].name%>" class="panel-heading"><a href="/cms/content/movecontentitemdown?pagepath=<%=id%>&contentname=<%=page.content[i].name%>" class="pull-right"><i class="fa fa-arrow-down"></i> Flytta ned</a><a href="/cms/content/movecontentitemup?pagepath=<%=id%>&contentname=<%=page.content[i].name%>" class="pull-right"><i class="fa fa-arrow-up"></i> Flytta upp&nbsp;&nbsp;</a><%=contentTypes[page.content[i].type].name%></div>
+					<div class="col-sm-7 editor">
+						<div class="panel panel-primary">
+							<div id="<%=page.content[i].name%>" class="panel-heading"><a class="btn btn-xs btn-primary pull-right hidden-xs expandContentEditor" role="button"><i class="fa fa-expand"></i> Bredda</a><a href="/cms/content/movecontentitemdown?pagepath=<%=id%>&contentname=<%=page.content[i].name%>" class="btn btn-xs btn-primary pull-right"><i class="fa fa-arrow-down"></i> Flytta ned</a><a href="/cms/content/movecontentitemup?pagepath=<%=id%>&contentname=<%=page.content[i].name%>" class="btn btn-xs btn-primary pull-right"><i class="fa fa-arrow-up"></i> Flytta upp&nbsp;&nbsp;</a><span class="contentTypeName <%=page.content[i].type%>"><strong><%=contentTypes[page.content[i].type].name%></strong></span></div>
 							<div class="panel-body">
 								<%-contentEditors[i]%>
 							</div>
@@ -291,19 +325,22 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-5 col-md-5 hidden-xs resultContent">
-						<div class="panel panel-default">
+					<div class="col-sm-5 hidden-xs resultContent">
+						<div class="panel panel-success">
 							<div class="panel-heading">
 								Förhandsvisning
 							</div>
 							<div class="panel-body content-preview">
 								<%-contentPreviews[i]%>
 							</div>
+							<div class="panel-footer">
+								<button class="btn btn-block btn-normal showFullPreview"><i class="fa fa-arrow-down"></i> Visa hela förhandsvisningen</button>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-12 col-md-12 text-center">
-					<button type="button" class="btn btn-success btn-lg btn-block add-content" data-toggle="modal" data-target="#addContentModal" data-after="<%=page.content[i].name%>"><i class="fa fa-plus"></i> Lägg till innehåll...</button>
+					<button type="button" class="btn btn-block add-content" data-toggle="modal" data-target="#addContentModal" data-after="<%=page.content[i].name%>"><i class="fa fa-plus"></i> Lägg till innehåll...</button>
 					<br><br>
 				</div>
 				<%
