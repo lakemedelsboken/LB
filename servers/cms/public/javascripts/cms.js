@@ -524,6 +524,16 @@ $("textarea.mce").on("focus", function(event) {
 
 		$(this).attr("data-mce-initialized", "true");
 		
+		//Find preview
+		var itemContainer = $(this).parents(".editContent").first();
+		
+		if (itemContainer.length === 1) {
+			var showFullPreviewButton = itemContainer.find("button.showFullPreview").first();
+			if (showFullPreviewButton.length === 1) {
+				showFullPreviewButton.trigger("click");
+			}
+		}
+		
 		if ($(this).attr("id") === undefined) {
 			var elementName = $(this).attr("name").replace(/\:/g, "_").replace(/\-/g, "_");
 			$(this).attr("id", elementName);
@@ -544,7 +554,7 @@ $("textarea.mce").on("focus", function(event) {
 				"fontawesome noneditable"
 			],
 			//content_css: "/cms/draft/css/styles.min.css,/cms/draft/css/lb.min.css",
-			content_css: "/cms/stylesheets/tinymcepreview.css, /cms/font-awesome-4.3.0/css/font-awesome.min.css",
+			content_css: "/cms/stylesheets/tinymcepreview.css, /cms/stylesheets/font-awesome-4.3.0/css/font-awesome.min.css",
 			link_list: "/cms/utils/links.json",
 /*
 			table_class_list: [
