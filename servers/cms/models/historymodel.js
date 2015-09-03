@@ -36,19 +36,75 @@ var HistoryModel = {
 		}
 		
 		var files = fs.readdirSync(publishedDirPath);
+
+		//Keep files with extension ".published"
+		files = files.filter(function(item) {
+			return path.extname(item) === ".published";
+		});
+
+		
+		//TODO: Make sure only 10 versions are stored here, let older versions be archived
+		if (files.length > 10) {
+
+			var filesToKeep = [];
+			files.forEach(function(fileName) {
+				var timeStamp = parseInt(path.basename(fileName));
+				filesToKeep.push({name: fileName, time: timeStamp});
+			});
+
+			filesToKeep.sort(function(a, b) {
+				return b.time - a.time;
+			});
+
+			//console.log(filesToKeep);
+			
+			filesToKeep.length = 10;
+			
+			//console.log(filesToKeep);
+
+			var keepFiles = {};
+			for (var i = 0; i < filesToKeep.length; i++) {
+				keepFiles[filesToKeep[i].name] = true;
+			}
+
+			var publishedArchiveDirPath = path.join(publishedDirPath, "archive");
+		
+			if (!fs.existsSync(publishedArchiveDirPath)) {
+				console.log("Create dir: " + publishedArchiveDirPath);
+				fs.mkdirSync(publishedArchiveDirPath);
+			} else {
+				
+			}
+
+			files.forEach(function(fileName) {
+				
+				if (!keepFiles[fileName]) {
+					var oldPath = path.join(publishedDirPath, fileName);
+					var newPath = path.join(publishedArchiveDirPath, fileName)
+					console.log("Archiving: " + oldPath + " to " + newPath);
+					fs.renameSync(oldPath, newPath);
+				}
+			});
+
+			//Fetch files again, after archiving
+			files = fs.readdirSync(publishedDirPath);
+
+			//Keep files with extension ".published"
+			files = files.filter(function(item) {
+				return path.extname(item) === ".published";
+			});
+			
+		}
+		
 		var publishedVersions = [];
 		
-		//TODO: Make sure only 50 versions are stored here, let older versions be archived
-		
 		for (var i = 0; i < files.length; i++) {
-			if (files[i].indexOf(".published") > -1) {
-				var timeStamp = parseInt(files[i].replace(".published", ""));
-				var fullPath = path.join(publishedDirPath, files[i]);
-				var contentHash = HistoryModel.getContentHash(fullPath);
-				var id = fullPath.replace(HistoryModel.baseDir, "");
-				if (contentHash !== null) {
-					publishedVersions.push({id: id, path: fullPath, contentHash: contentHash, name: files[i], time: timeStamp, niceTime: dateFormat(new Date(timeStamp), "yyyy-mm-dd HH:MM:ss")});
-				}
+			var timeStamp = parseInt(files[i].replace(".published", ""));
+			var fullPath = path.join(publishedDirPath, files[i]);
+			var contentHash = HistoryModel.getContentHash(fullPath);
+			var id = fullPath.replace(HistoryModel.baseDir, "");
+			if (contentHash !== null) {
+				publishedVersions.push({id: id, path: fullPath, contentHash: contentHash, name: files[i], time: timeStamp, niceTime: dateFormat(new Date(timeStamp), "yyyy-mm-dd HH:MM:ss")});
 			}
 		}
 		
@@ -92,6 +148,60 @@ var HistoryModel = {
 			if (err) {
 				return callback(err);
 			}
+
+			files = files.filter(function(item) {
+				return path.extname(item) === ".snapshot";
+			});
+			
+			//Make sure only 10 versions are stored here, let older versions be archived
+			if (files.length > 10) {
+
+				var filesToKeep = [];
+				files.forEach(function(fileName) {
+					var timeStamp = parseInt(path.basename(fileName));
+					filesToKeep.push({name: fileName, time: timeStamp});
+				});
+
+				filesToKeep.sort(function(a, b) {
+					return b.time - a.time;
+				});
+
+				filesToKeep.length = 10;
+			
+				var keepFiles = {};
+				for (var i = 0; i < filesToKeep.length; i++) {
+					keepFiles[filesToKeep[i].name] = true;
+				}
+
+				var archiveDirPath = path.join(snapshotsDirPath, "archive");
+		
+				if (!fs.existsSync(archiveDirPath)) {
+					console.log("Create dir: " + archiveDirPath);
+					fs.mkdirSync(archiveDirPath);
+				} else {
+				
+				}
+
+				files.forEach(function(fileName) {
+				
+					if (!keepFiles[fileName]) {
+						var oldPath = path.join(snapshotsDirPath, fileName);
+						var newPath = path.join(archiveDirPath, fileName)
+						console.log("Archiving: " + oldPath + " to " + newPath);
+						fs.renameSync(oldPath, newPath);
+					}
+				});
+
+				//Fetch files again, after archiving
+				files = fs.readdirSync(snapshotsDirPath);
+
+				//Keep files with extension ".snapshot"
+				files = files.filter(function(item) {
+					return path.extname(item) === ".snapshot";
+				});
+			
+			}
+			
 			
 			var snapshots = [];
 			
