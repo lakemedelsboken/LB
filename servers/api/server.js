@@ -419,11 +419,23 @@ function parseToAppHtml(fullPath, callback) {
 
 		
 		//Fix header and footer, remove menu and search
-		outline = outline.replace("{content}", $("div#main").html());
+		var mainContainer = $("div#main");
+		
+		var mainClasses = mainContainer.attr("class");
+		
+		if (mainClasses !== undefined) {
+			outline = outline.replace("{mainclass}", " class=\"" + mainClasses + "\"");
+		} else {
+			outline = outline.replace("{mainclass}", "");
+		}
+		
+		outline = outline.replace("{content}", mainContainer.html());
 		var title = $("h1").first();
 		if (title !== undefined && title.length === 1) {
 			outline = outline.replace("{title}", title.text());
 		}
+		
+		
 		
 		outline = outline.replace(/\{version\}/g, staticSettings.version);
 
