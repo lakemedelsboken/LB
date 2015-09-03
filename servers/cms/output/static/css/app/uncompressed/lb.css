@@ -119,7 +119,13 @@ a.pageFootnoteItem {
 }
 
 fieldset.pageFootnote {
-	display: none;
+	margin: 1em 0 1em 0;
+	font-family: 'Avenir Next', 'Helvetica Neue Ultra Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	background-color: #f0f0f0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
 }
 
 sup.hiddenNoteNumber {
