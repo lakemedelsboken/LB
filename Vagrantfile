@@ -122,6 +122,7 @@ Vagrant.configure(2) do |config|
 
    #------NPM--------
    sudo npm install -g pm2
+   sudo npm install -g uglifyjs #needed to be able to build the sh in /build
 
   SHELL
 
