@@ -51,7 +51,7 @@ noinfoProducts.sort(function(a,b){
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Preparatinformation - <%=pageTitle%>">
 		<meta name="author" content="Läkemedelsverket">
-		
+
 		<link rel="stylesheet" href="/css/<%=version%>/styles.min.css">
 		<!--[if lt IE 9]><script src="/js/<%=version%>/html5shiv.min.js"></script><![endif]-->
 		<link rel="shortcut icon" href="/favicon.ico">
@@ -91,7 +91,7 @@ noinfoProducts.sort(function(a,b){
 								<div class="hero-unit"><h5><i class="icon icon-info-sign"></i> Det finns tyvärr ingen förskrivarinformation i Fass om detta läkemedel.</h5><h5><a href="http://www.fass.se/LIF/product?4&userType=0&nplId=<%=product.id%>" target="_blank"><i class="icon-search"></i> Visa preparat på Fass.se</a></h5></div>
 								<%
 							} else {
-							
+
 								var medInfo = "<div class='medInfo' style='background: none;'>";
 								var nplId = product.id;
 
@@ -111,12 +111,14 @@ noinfoProducts.sort(function(a,b){
 									providerImage += "</div>";
 
 									var providerLink = product.providerLink;
-				
+
 									if (providerLink !== undefined) {
-										providerLink = providerLink.replace("{NPLID}", nplId);
-										//medInfo += "<div class='pull-right' style='width: 120px;'><a href='" + providerLink + "' target='_blank'>" + providerImage + "</a></div>";
+										//providerLink = providerLink.replace("{NPLID}", nplId);
+										medInfo += "<div class='pull-right' style='width: 120px;'><a href='" + providerLink + "' target='_blank'>" + providerImage + "</a></div>";
+									} else {
+										medInfo += "<div class='pull-right' style='width: 120px;'>" + providerImage + "</div>";
 									}
-				
+
 								}
 
 								medInfo += "<h2>" + product.name + "</h2>";
@@ -172,18 +174,18 @@ noinfoProducts.sort(function(a,b){
 										break;
 								}
 
-								//Narkotikaklass 	
-								//	- = Ospecificerad, 
-								//	0 = Ej narkotikaklassad, 
-								//	1 = II - Narkotika. Substanser med högre beroendepotential och liten terapeutisk användning, 
-								//	2 = Narkotika förteckning IV/V, 
-								//	3 = III - Narkotika. Beredning innehållande dessa är narkotika under vissa förutsättningar, 
-								//	4 = IV - Narkotika. Substanser med lägre beroendepotential och bred terapeutisk användning, 
-								//	5 = V - Narkotika enbart enligt svensk lag, 
-								//	6 = I - Narkotika ej förekommande i läkemedel, 
+								//Narkotikaklass
+								//	- = Ospecificerad,
+								//	0 = Ej narkotikaklassad,
+								//	1 = II - Narkotika. Substanser med högre beroendepotential och liten terapeutisk användning,
+								//	2 = Narkotika förteckning IV/V,
+								//	3 = III - Narkotika. Beredning innehållande dessa är narkotika under vissa förutsättningar,
+								//	4 = IV - Narkotika. Substanser med lägre beroendepotential och bred terapeutisk användning,
+								//	5 = V - Narkotika enbart enligt svensk lag,
+								//	6 = I - Narkotika ej förekommande i läkemedel,
 								//	NA = Ej tillämplig
-	
-	
+
+
 								if (narcotic !== null) {
 									var narcImage = "<div data-picture data-alt='Narkotiskt preparat' class='narcImage'>";
 									narcImage += "<div data-src='/img/narcotic.png'></div>";
@@ -191,7 +193,7 @@ noinfoProducts.sort(function(a,b){
 									narcImage += "<img src='/img/narcotic.png' />";
 									narcImage += "</div>";
 
-			
+
 									narcotic = product.narcoticClassTextCaution + "<br />" + product.narcoticClassTextHabituation;
 									medInfo += "<div style='margin-bottom: 10px;'>" + narcImage + "<div style='margin-left: 30px;'>" + narcotic + "</div></div>";
 								}
@@ -221,9 +223,9 @@ noinfoProducts.sort(function(a,b){
 										linkText += " som PDF";
 									}
 									medInfo += "<div><strong>Produktresumé:</strong> <a target='_blank' href='" + product.spcLink + "'>" + linkText + " <i class='icon icon-file-text-alt'></i></a></div>";
-				
+
 								}
-	
+
 								//Benefit
 								var benefit = null;
 								switch(parseInt(product.benefit)) {
@@ -282,20 +284,20 @@ noinfoProducts.sort(function(a,b){
 								}
 
 								if (prescription !== null) {
-		
+
 									if (product.specRecipe === "true") {
 										prescription += " - <strong>" + product.specRecipeText + "</strong>";
 									}
 									medInfo += "<div><strong>Recept:</strong> " + prescription + "</div>";
 								}
-			
+
 
 								//Over the counter
 								if (product.overTheCounter === "AD") {
 									medInfo.append($("<div><strong>Försäljning:</strong> Läkemedlet kan utöver på apotek även köpas i dagligvaruhandeln.</div>"));
 								}
-	
-	
+
+
 								//LFF
 								var lff = null;
 
@@ -322,7 +324,7 @@ noinfoProducts.sort(function(a,b){
 								if (product.partOfFass === "false") {
 									lff = "Oklart om läkemedlet omfattas av <a href='http://www.fass.se/LIF/produktfakta/fakta_lakare_artikel.jsp?articleID=18336' target='_new'>Läkemedelsförsäkringen</a>. Sök mer information på <a href='http://www.lakemedelsforsakringen.se/' target='_new'>www.lakemedelsforsakringen.se</a>";
 								}
-	
+
 								if (lff !== null) {
 									medInfo += "<div><strong>Försäkring:</strong> " + lff + "</div>";
 								}
@@ -330,7 +332,7 @@ noinfoProducts.sort(function(a,b){
 								if (product.license !== undefined) {
 
 									var license = product.license;
-				
+
 									if (product.licenseLink && product.licenseLink !== "") {
 										license = "<a href=\"" + product.licenseLink + "\" target=\"_blank\">" + license + "</a>";
 									}
@@ -339,10 +341,16 @@ noinfoProducts.sort(function(a,b){
 								}
 
 								medInfo += "</div>";
-							
+
 								var medHeadLines = "<div id='medHeadLines'>";
-								var sectionsHeader = "<h3 id='sectionsHeader' style='margin-left: 5px;'>Genvägar till rubriker:</h3><ul class='nav nav-pills' style='list-style-type: none; margin: 5px; list-style-position: inside; white-space: nowrap;  font-family: Helvetica, Arial, sans;'>";
-		
+
+								if(product.noSections === undefined || products.noSections === false){
+									var sectionsHeader = "<h3 id='sectionsHeader' style='margin-left: 5px;'>Genvägar till rubriker:</h3><ul class='nav nav-pills' style='list-style-type: none; margin: 5px; list-style-position: inside; white-space: nowrap;  font-family: Helvetica, Arial, sans;'>";
+								} else {
+									var sectionsHeader = "";
+								}
+
+
 								for(headLine in product.sections) {
 									var headLineId = headLine.replace(/\s/g, "_").replace(/å/ig, "a").replace(/ä/ig, "a").replace(/ö/ig, "o").replace(/,/ig, "")
 									var content = product.sections[headLine];
@@ -353,13 +361,13 @@ noinfoProducts.sort(function(a,b){
 								}
 								medHeadLines += "</div>"
 								sectionsHeader += "</ul>";
-							
+
 								%>
 								<%-medInfo%>
 								<%-sectionsHeader%>
 								<%-medHeadLines%>
-								
-								<% 
+
+								<%
 							}
 								%>
 						</div>
@@ -391,12 +399,12 @@ noinfoProducts.sort(function(a,b){
 										if (item.parallelimport !== undefined && item.parallelimport !== "") {
 											title[title.length - 1] = title[title.length - 1] + " (Parallellimport " + item.parallelimport + ")";
 										}
-							
+
 										title = title.join(" <br>");
 									}
 									//list.append($("<li id='item_" + product.id + "'" + (product.noinfo === true ? " class='ui-state-disabled'" : "") + "><a class='inlineListProduct' data-product-id='" + product.id + "' href='/product/" + product.id + "'>" + images + title + "</a></li>"));
-									
-									
+
+
 								%>
 								<li style="margin-bottom: 10px;"><a<%=disabled%> href="/product/<%=item.id%>"><%-images + title%></a></li>
 								<% } %>
@@ -424,12 +432,12 @@ noinfoProducts.sort(function(a,b){
 										if (item.parallelimport !== undefined && item.parallelimport !== "") {
 											title[title.length - 1] = title[title.length - 1] + " (Parallellimport " + item.parallelimport + ")";
 										}
-							
+
 										title = title.join(" <br>");
 									}
 									//list.append($("<li id='item_" + product.id + "'" + (product.noinfo === true ? " class='ui-state-disabled'" : "") + "><a class='inlineListProduct' data-product-id='" + product.id + "' href='/product/" + product.id + "'>" + images + title + "</a></li>"));
-									
-									
+
+
 								%>
 								<li style="margin-bottom: 10px;"><a<%=disabled%> href="/product/<%=item.id%>"><%-images + title%></a></li>
 								<% } %>
@@ -437,7 +445,7 @@ noinfoProducts.sort(function(a,b){
 							</ul>
 						</div>
 						<% } %>
-						
+
 					</div>
 				</div>
 				<hr>
