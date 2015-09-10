@@ -19,7 +19,7 @@ if (!fs.existsSync(secretSettingsPath)) {
 (function() {
 	var conf_time = fs.statSync(secretSettingsPath).mtime.getTime();
 	var cast5_time = fs.statSync(secretSettingsPath + ".cast5").mtime.getTime();
- 
+
 	if (conf_time < cast5_time) {
 		console.error("Your config file is out of date!");
 		console.error("You need to run `make decrypt_conf` to update it.");
@@ -70,7 +70,7 @@ function initRedirects() {
 	var possibleRedirectsListPath = path.normalize(path.join(__dirname, "..", "cms", "output", "published", "redirects.json"));
 
 	if (fs.existsSync(possibleRedirectsListPath)) {
-		
+
 		var redirects = null;
 		try {
 			redirects = JSON.parse(fs.readFileSync(possibleRedirectsListPath, "utf8"));
@@ -78,7 +78,7 @@ function initRedirects() {
 			redirects = null;
 			console.error(err);
 		}
-		
+
 		if (redirects !== null) {
 
 			console.log("Found " + redirects.length + " redirects...")
@@ -97,17 +97,17 @@ function initRedirects() {
 								break;
 							}
 						}
-					
+
 						if (toBeRemoved) {
 							console.log("Unregistering old redirect: " + routePath);
 							routes.splice(i, 1);
 						}
 					}
 				}
-			
+
 				currentRedirects = [];
 			}
-			
+
 			//Register new redirects
 			for (var i = 0; i < redirects.length; i++) {
 				var route = redirects[i];
@@ -123,12 +123,12 @@ function initRedirects() {
 						app.redirect(route.path, route.target);
 					}
 
-					//Save new current redirects 
+					//Save new current redirects
 					currentRedirects.push({path: route.path, target: route.target});
 				}
 
 			}
-			
+
 			//Now move all the new redirects to the top of the stack
 			if (currentRedirects.length > 0) {
 				var routes = app._router.stack;
@@ -144,34 +144,33 @@ function initRedirects() {
 								break;
 							}
 						}
-					
+
 						if (toBeMoved) {
 							stackToBeMoved.unshift(routes.splice(i, 1)[0]);
 						}
 					}
 				}
-				
-				if (stackToBeMoved.length > 0) {
 
+				if (stackToBeMoved.length > 0) {
 					//Insert in router stack after stamp ala http://stackoverflow.com/questions/7032550/javascript-insert-an-array-inside-another-array
 
 					routes.splice.apply(routes, [indexAfterStamp, 0].concat(stackToBeMoved));
-					
+
 					console.log("Moved " + stackToBeMoved.length + " after index " + indexAfterStamp + " in stack.");
 				}
-				
+
 			}
-			
+
 		}
-		
+
 	}
 
 }
 
 function initFileWatchers() {
-	
+
 	var atcTreePath = path.normalize(__dirname + "/../../npl/atcTree.json");
-	
+
 	var atcTreeWatcher = chokidar.watch(atcTreePath, {persistent: true, ignoreInitial: true, interval: 20000, binaryInterval: 20000});
 
 	atcTreeWatcher.on('error', function(error) {console.error('Error happened on atc file watch', error);})
@@ -187,7 +186,7 @@ function initFileWatchers() {
 
 
 	var redirectsPath = path.normalize(path.join(__dirname, "..", "cms", "output", "published", "redirects.json"));
-	
+
 	var redirectsWatcher = chokidar.watch(redirectsPath, {persistent: true, ignoreInitial: true, interval: 5000, binaryInterval: 5000});
 
 	redirectsWatcher.on('error', function(error) {console.error('Error happened on redirects file watch', error);})
@@ -196,7 +195,7 @@ function initFileWatchers() {
 
 		console.log("Reloading redirects.");
 		initRedirects();
-		
+
 	});
 
 }
@@ -239,12 +238,12 @@ app.get('/sitemap.xml', function(req,res){
 		if (err) {
 			console.log(err);
 		}
-		
+
 		res.set('Content-Type', 'text/xml');
 		res.send(200, sitemapXml);
 	});
 
-	
+
 });
 
 function htmlEscape (text) {
@@ -265,19 +264,19 @@ app.get('/search', function(req,res){
 	if (typeof terms === "string") {
 		terms = terms.trim()
 	}
-	
+
 	if (terms === undefined) {
 		terms = "";
 	}
 
 	locals.terms = terms;
 	locals.results = undefined;
-	
+
 	if (terms === "") {
 		locals.err = false;
 		locals.results = {medicinesearch: [], contentsearch: []};
 		res.render('search.ejs', locals);
-		
+
 	} else {
 
 		async.parallel({
@@ -313,7 +312,7 @@ app.get('/search', function(req,res){
 				res.render('search.ejs', locals);
 			}
 		});
-		
+
 	}
 
 });
@@ -338,13 +337,13 @@ app.get('/medlist', function(req,res){
 
 	//Find item
 	var items = [];
-	
+
 	for (var i=0; i < atcTree.length; i++) {
 		if (atcTree[i].id === id) {
 			items.push(atcTree[i]);
 		}
 	}
-	
+
 	if (items.length > 0) {
 		for (var m=0; m < items.length; m++) {
 			var item = items[m];
@@ -352,14 +351,14 @@ app.get('/medlist', function(req,res){
 			//Find item's grandparent
 			var parentId = item.parentId;
 			var parent = null;
-	
+
 			for (var i=0; i < atcTree.length; i++) {
 				if (atcTree[i].id === parentId) {
 					parent = atcTree[i];
 					break;
 				}
 			}
-	
+
 			if (parent !== null) {
 				//Build list
 				tree.push(parent);
@@ -371,8 +370,8 @@ app.get('/medlist', function(req,res){
 			}
 		}
 	}
-	
-	
+
+
 	//Send back
 	res.json(tree);
 });
@@ -396,7 +395,7 @@ app.get('/tocitems', function(req,res){
 	if (parentId === "root") {
 
 		var index = masterIndex;
-		
+
 		//Return divisions
 		var divisions = {};
 		var chapterId;
@@ -415,23 +414,23 @@ app.get('/tocitems', function(req,res){
 		}
 
 		res.json(newDivisions);
-		
+
 	} else if (parentId === "" || (parentId.indexOf("_") === -1) || parentId === undefined || parentId === null) {
 
 		var chapters = [];
 
 		var files = getChapterFileNames();
-		
+
 		if (parentId.length < 4) {
 			//Must be an id and not a division name
-			
+
 			//Find correct division name
 			if (masterIndex[parentId.toUpperCase()] !== undefined) {
 				parentId = masterIndex[parentId.toUpperCase()].division;
 				chapters.push({headeritem: true, id: "", title: parentId, chapter: "", hasChildren: false});
 			}
 		}
-		
+
 		//Try with id === division name
 		for (var chapterId in masterIndex) {
 			if (masterIndex[chapterId].division === parentId) {
@@ -447,15 +446,15 @@ app.get('/tocitems', function(req,res){
 				chapters.push({id: chapterId.toLowerCase() + "_", title: masterIndex[chapterId].name, chapter: fileName, hasChildren: (fileName !== "" ? true : false)});
 			}
 		}
-		
+
 		res.json(chapters);
 	} else {
 		//Find correct index
 		var chapterId = parentId.split("_")[0];
-		
+
 		//Get index
 		var index = getIndexByChapterId(chapterId);
-		
+
 		if (index === null) {
 			res.json([]);
 		} else {
@@ -467,7 +466,7 @@ app.get('/tocitems', function(req,res){
 					break;
 				}
 			}
-			
+
 			if (!parentIdExists) {
 				parentId = index[1].id;
 			}
@@ -483,7 +482,7 @@ app.get('/tocitems', function(req,res){
 					}
 					//index[i].headeritem = false;
 					index[i].products = "";
-					
+
 					children.push(index[i]);
 				}
 				if (index[i].id === parentId) {
@@ -493,8 +492,8 @@ app.get('/tocitems', function(req,res){
 					index[i].products = "";
 					children.push(index[i]);
 				}
-				
-				
+
+
 			}
 			res.json(children);
 		}
@@ -505,10 +504,10 @@ app.get('/tocitems', function(req,res){
 function getSiteMap(callback) {
 
 	if (siteMap === null) {
-		
+
 		var header = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\" xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n";
 		var footer = "\n</urlset>";
-	
+
 		var content = [];
 
 		//Get all pages
@@ -518,23 +517,23 @@ function getSiteMap(callback) {
 			} else {
 
 				var htmlFiles = data.filter(function(fileName) { return (fileName.indexOf(".html") > -1);})
-	
+
 				for (var i = 0; i < htmlFiles.length; i++) {
 					content.push("\t<url>");
 					content.push("\t\t<loc>http://www.lakemedelsboken.se/" + htmlFiles[i] + "</loc>");
 					content.push("\t</url>");
 				}
-	
+
 				content = content.join("\n");
-	
+
 				var combined = header + content + footer;
 
 				siteMap = combined;
 
 				callback(null, siteMap);
-			
+
 			}
-		
+
 		});
 	} else {
 		callback(null, siteMap);
@@ -560,7 +559,7 @@ function getIndexByChapterId(chapterId) {
 			index = JSON.parse(fs.readFileSync(filePath));
 			indexCache[chapterId] = index;
 		}
-		
+
 	} else {
 		index = indexCache[chapterId];
 	}
@@ -573,7 +572,7 @@ app.get('/tocparentitems', function(req,res){
 	var itemId = req.query["id"];
 
 	var index = masterIndex;
-		
+
 	if (itemId.indexOf("parent") > -1 || itemId === "" || itemId === undefined || itemId === null) {
 		//Return divisions
 		var divisions = {};
@@ -602,11 +601,11 @@ app.get('/tocparentitems', function(req,res){
 
 
 function getChapterFileNames() {
-	
+
 	if (chapterFileNames === null) {
 		chapterFileNames = fs.readdirSync(__dirname + "/chapters").filter(function(fileName) { return (fileName.indexOf(".html") > -1);});
 	}
-	
+
 	return chapterFileNames;
 }
 
@@ -619,15 +618,15 @@ function getChaptersFromChapterId(chapterId) {
 	if (index[itemId.toUpperCase()] !== undefined) {
 		divisionId = index[itemId.toUpperCase()].division;
 	}
-	
+
 	if (divisionId === null) {
 		return [];
 	} else {
 		var chapters = [];
-	
+
 		var chapterId;
 		var files = getChapterFileNames();
-		
+
 		for (chapterId in index) {
 			if (index[chapterId].division === divisionId) {
 				//Find name of html file
@@ -641,10 +640,10 @@ function getChaptersFromChapterId(chapterId) {
 				chapters.push({id: chapterId.toLowerCase() + "_", title: index[chapterId].name, chapter: fileName, hasChildren: (fileName !== "" ? true : false)});
 			}
 		}
-	
+
 		return chapters;
 	}
-	
+
 }
 
 app.get('/medicinesearch', function(req,res){
@@ -746,7 +745,7 @@ function getATCTreeChildren(parentId, showATCCodes) {
 				childProducts.push(child);
 			}
 		}
-	
+
 		if (atcTree[j].id === parentId) {
 			parent = atcTree[j];
 		}
@@ -758,7 +757,7 @@ function getATCTreeChildren(parentId, showATCCodes) {
 	    if(a.title > b.title) return 1;
 	    return 0;
 	});
-	
+
 	for (var i = 0; i < childATCCodes.length; i++) {
 		result.push({text: ((showATCCodes) ? childATCCodes[i].id + " " : "") + childATCCodes[i].title, id: childATCCodes[i].id, hasChildren: true});
 	}
@@ -782,7 +781,7 @@ function getATCTreeChildren(parentId, showATCCodes) {
 		title[1] = parallelimport + title[1];
 
 		title = title.join(",");
-		
+
 		var images = (childProducts[i].images !== undefined) ? childProducts[i].images : [];
 
 		product.children.push({text: title, id: childProducts[i].id, images: images, noinfo: (childProducts[i].noinfo === true)});
@@ -793,7 +792,7 @@ function getATCTreeChildren(parentId, showATCCodes) {
 
 	function getProduct(productTitle) {
 		productTitle = productTitle.split(",")[0];
-	
+
 		var product = null;
 		//Find if the product already exists
 		for (var i=0; i < result.length; i++) {
@@ -802,12 +801,12 @@ function getATCTreeChildren(parentId, showATCCodes) {
 				break;
 			}
 		}
-	
+
 		if (product === null) {
 			product = {text: productTitle, id: productTitle, children: [], type: "product"};
 			result.push(product)
 		}
-	
+
 		return product;
 	}
 
@@ -835,7 +834,7 @@ function getTreeChildren(parentId, showATCCodes) {
 				childProducts.push(child);
 			}
 		}
-	
+
 		if (atcTree[j].id === parentId) {
 			parent = atcTree[j];
 		}
@@ -863,7 +862,7 @@ function getTreeChildren(parentId, showATCCodes) {
 
 	function getProduct(productTitle) {
 		productTitle = productTitle.split(",")[0];
-	
+
 		var product = null;
 		//Find if the product already exists
 		for (var i=0; i < result.length; i++) {
@@ -872,12 +871,12 @@ function getTreeChildren(parentId, showATCCodes) {
 				break;
 			}
 		}
-	
+
 		if (product === null) {
 			product = {text: productTitle, id: productTitle, children: []};
 			result.push(product)
 		}
-	
+
 		return product;
 	}
 
@@ -885,11 +884,11 @@ function getTreeChildren(parentId, showATCCodes) {
 
 app.get('/atc/:atcCodes?', function(req, res) {
 	var atcCodes = ["root"];
-	
+
 	if (req.params.atcCodes !== undefined && req.params.atcCodes !== "") {
 		atcCodes = req.params.atcCodes.split("-");
 	}
-	
+
 	var atcItems = [];
 	for (var i = 0; i < atcCodes.length; i++) {
 		var atcItem = null;
@@ -902,18 +901,18 @@ app.get('/atc/:atcCodes?', function(req, res) {
 				children.push(atcTree[j]);
 			}
 		}
-		
+
 		if (atcItem !== null) {
 			var titlePath = atcItem.titlePath.split(" / ");;
 			var idPath = atcItem.idPath.split(" / ");
-			
+
 			titlePath.unshift("ATC");
 			idPath.unshift("root");
 
 			for (var k = 0; k < titlePath.length; k++) {
 				titlePath[k] = "<a href=\"/atc/" + idPath[k] + "\">" + titlePath[k] + "</a>";
 			}
-			
+
 			titlePath.pop();
 
 			titlePath = titlePath.join(" &#187; ");
@@ -933,12 +932,25 @@ app.get('/atc/:atcCodes?', function(req, res) {
 
 app.get('/product/:nplId?', function(req, res) {
 	var nplId = "";
-	
+
 	if (req.params.nplId !== undefined && req.params.nplId !== "") {
 		nplId = req.params.nplId;
-		nplId = nplId.replace(/\//g, "").replace(/\./g, "");
+		//nplId = nplId.replace(/\//g, "").replace(/\./g, "");
 	}
-		
+	nplId = nplId.toLowerCase();
+	if((nplId.indexOf(".") > -1)) {
+		res.sendFile(nplId, {root: __dirname + "../../../npl/content-providers/static-spc-documents/"}, function(err) {
+			if (err) {
+      			console.log(err);
+      			res.status(err.status).end();
+    		} else {
+      		console.log('Sent:', nplId);
+    		}
+
+		});
+		return;
+	}
+
 	var product = {noinfo: true, id: nplId};
 
 	async.parallel({
@@ -1002,7 +1014,7 @@ function getOldNameFromChapterPath(chapterPath) {
 			break;
 		}
 	}
-	
+
 	return foundName;
 }
 
@@ -1022,8 +1034,8 @@ app.get('/*', function(req, res){
 	var medicineName = undefined;
 	var chapter = undefined;
 	var pdf = undefined;
-	
-	
+
+
 	//Requested toc in chapter?
 	for (var key in query) {
 		if (key.indexOf("toc") === 0) {
@@ -1035,7 +1047,7 @@ app.get('/*', function(req, res){
 	if (query["medicine"] !== null) {
 		medicineName = query["medicine"];
 	}
-	
+
 	//Requested chapter?
 	if (url.toLowerCase().indexOf(".html") > -1) {
 		chapter = url.toLowerCase().split(".html")[0];
@@ -1043,7 +1055,7 @@ app.get('/*', function(req, res){
 			chapter = chapter.split("/");
 			chapter = chapter[chapter.length - 1];
 		}
-		
+
 		var possibleChapter = getOldNameFromChapterPath(chapter + ".html");
 		if (possibleChapter === undefined) {
 			chapter = decodeURIComponent(chapter);
@@ -1063,7 +1075,7 @@ app.get('/*', function(req, res){
 	}
 
 	var foundIndex = undefined;
-	
+
 	if (tocKey) {
 		for (var i = oldIndex.length - 1; i >= 0; i--) {
 			if (oldIndex[i].id === tocKey) {
@@ -1073,7 +1085,7 @@ app.get('/*', function(req, res){
 			}
 		}
 	}
-	
+
 	locals.suggestions = [];
 	locals.medicineSuggestions = [];
 
@@ -1083,7 +1095,7 @@ app.get('/*', function(req, res){
 			if (!err && body !== undefined) {
 				locals.suggestions = body;
 			}
-			
+
 			if (locals.suggestions.length === 0) {
 				request('http://127.0.0.1:' + searchPort + '/titlesearch?search=' + encodeURIComponent(chapter), {'json': true}, function (err, response, body) {
 					if (!err && body !== undefined) {
@@ -1092,7 +1104,7 @@ app.get('/*', function(req, res){
 						locals.suggestions.sort(function(a,b){
 							var aParam = a.id;
 							var bParam = b.id;
-							
+
 							if (aParam.indexOf("_") > -1) {
 								aParam = aParam.split("_")[1];
 								if (aParam.length > 0) {
@@ -1110,18 +1122,18 @@ app.get('/*', function(req, res){
 									bParam = b.id;
 								}
 							}
-							
+
 							if(aParam < bParam) return -1;
 							if(aParam > bParam) return 1;
 							return 0;
 						});
 
 					}
-						
+
 					res.render('404.ejs', locals);
 
 				});
-				
+
 			} else {
 				res.render('404.ejs', locals);
 			}
@@ -1133,7 +1145,7 @@ app.get('/*', function(req, res){
 			if (!err) {
 				locals.medicineSuggestions = body;
 			}
-			
+
 			res.render('404.ejs', locals);
 
 		});
@@ -1147,7 +1159,7 @@ app.get('/*', function(req, res){
 				locals.suggestions.sort(function(a,b){
 					var aParam = a.id;
 					var bParam = b.id;
-					
+
 					if (aParam.indexOf("_") > -1) {
 						aParam = aParam.split("_")[1];
 						if (aParam.length > 0) {
@@ -1165,18 +1177,18 @@ app.get('/*', function(req, res){
 							bParam = b.id;
 						}
 					}
-					
+
 					if(aParam < bParam) return -1;
 					if(aParam > bParam) return 1;
 					return 0;
 				});
 
 			}
-				
+
 			res.render('404.ejs', locals);
 
 		});
-		
+
 	} else {
 		res.render('404.ejs', locals);
 	}
