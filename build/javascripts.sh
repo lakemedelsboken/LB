@@ -22,7 +22,7 @@ uglifyjs ../servers/cms/output/static/js/app/uncompressed/jquery.js ../servers/c
 
 uglifyjs ../servers/api/scripts/lb.injectgenericas.js -m -c > ../servers/api/scripts/lb.injectgenericas.min.js
 
-uglifyjs ../servers/cms/public/javascripts/jquery.min.js ../servers/cms/public/javascripts/bootstrap.js ../servers/cms/public/javascripts/picturefill.js ../servers/cms/public/javascripts/jquery.simple-dtpicker.js ../servers/cms/public/javascripts/tinymce/tinymce.min.js ../servers/cms/public/javascripts/cms.js -m -c > ../servers/cms/public/javascripts/scripts.min.js
+uglifyjs ../servers/cms/public/javascripts/jquery.min.js ../servers/cms/public/javascripts/bootstrap.js ../servers/cms/public/javascripts/picturefill.js ../servers/cms/public/javascripts/jquery.simple-dtpicker.js ../servers/cms/public/javascripts/cms.js  -m -c > ../servers/cms/public/javascripts/scripts.min.js
 #cp scripts.js ../servers/admin/static/js/scripts.min.js
 #cp scripts.js ../servers/site/static/js/scripts.min.js
 

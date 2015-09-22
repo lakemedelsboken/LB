@@ -140,7 +140,12 @@ var Views = {
 		}
 		
 		output = output.join("\n");
-				
+		
+		//Assign id:s before saving in order to build a correct index of the page
+		if (!(item.settings.preprocessors && item.settings.preprocessors["idinjection.js"] === "true")) {
+			output = require(path.join(__dirname, "..", "..", "preprocessors", "idinjection.js")).process(output);
+		}
+
 		return output;
 
 	},
