@@ -13,6 +13,10 @@
 		max-width: 100%;
 	}
 
+	.row {
+		margin: 0;
+	}
+
 	.table, .table.pull-right {
 		position: inherit;
 		max-width: auto;
@@ -23,9 +27,17 @@
 	table.facts, table.facts td {
 		background-color: #fff !important;
 	}
+	table.facts {
+		float: none;
+	}
+
+	#boxCollection {
+		display: none;
+	}
 
 	.table.pull-right {
 		margin-left: 10px;
+		float: none;
 	}
 
 	.table.span4 {
@@ -39,7 +51,7 @@
 	#mainContainer {
 		display: block;
 		float: none;
-		width: 80%;
+		width: 100%;
 		padding: 0;
 		margin: 0 auto 0 auto;
 		background-color: #fff;
