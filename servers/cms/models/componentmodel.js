@@ -380,7 +380,7 @@ var ComponentModel = {
 				
 					var pageIsDependent = false;
 
-					//TODO: If a page has an instance of this component it is considered dependent
+					//If a page has an instance of this component it is considered dependent
 					if (!pageIsDependent && pageComponents !== undefined) {
 						for (var name in pageComponents) {
 							if (pageComponents[name].content !== "" && pageComponents[name].content !== undefined && pageComponents[name].content !== null &&pageComponents[name].content.length > 0) {
@@ -769,7 +769,7 @@ var ComponentModel = {
 		
 			var pageIsDependent = false;
 
-			//TODO: If a page has an instance of this component it is considered dependent
+			//If a page has an instance of this component it is considered dependent
 			if (!pageIsDependent && pageComponents) {
 				for (var name in pageComponents) {
 					if (pageComponents[name].content !== "" && pageComponents[name].content !== undefined && pageComponents[name].content !== null &&pageComponents[name].content.length > 0) {
