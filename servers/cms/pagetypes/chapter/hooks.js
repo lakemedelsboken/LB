@@ -200,8 +200,9 @@ var Hooks = {
 			}
 			
 			if (after.length === 1) {
+				overview.prepend($("<h2>Terapirekommendationer / Faktarutor etc.</h2>"))
 				after.after(overview);
-				after.after($("<h2>Terapirekommendationer / Faktarutor etc.</h2>"))
+				//after.after($("<h2>Terapirekommendationer / Faktarutor etc.</h2>"));
 			}
 		}
 
