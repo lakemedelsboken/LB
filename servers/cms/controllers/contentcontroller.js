@@ -201,7 +201,7 @@ var ContentController = {
 		return contentEditors;
 	},
 	getSettingsEditor: function(item) {
-		//TODO: Add interface for processors settings
+
 		var output = ["<div><button class=\"btn btn-default\" type=\"button\" data-toggle=\"collapse\" data-target=\"#processors_" + item.name + "\" aria-expanded=\"false\" aria-controls=\"processors_" + item.name + "\"><i class=\"fa fa-tasks\"></i> Processorer <i class=\"fa fa-caret-down\"></i></button><div class=\"collapse\" id=\"processors_" + item.name + "\">"];
 		
 		var preProcessorsDirPath = path.join(__dirname, "..", "preprocessors");
@@ -560,7 +560,7 @@ var ContentController = {
 			);
 		});
 		
-		//Delete old published pages
+		//Find old published pages
 		for (var i = 0; i < draftFiles.length; i++) {
 			var filePath = path.join(draftDir, draftFiles[i]);
 			console.log("Deleting: " + filePath);
@@ -805,11 +805,11 @@ var ContentController = {
 			});
 		}
 		
-		//Clear /payloads?
+		//TODO: Clear /payloads?
 		
-		//Clear /services/archives and /services/deployments?
+		//TODO: Clear /services/archives and /services/deployments?
 
-		//TODO: Clear hashes in historymodel
+		//Clear hashes in historymodel
 		if (historyModel !== undefined && historyModel.contentHashes !== undefined) {
 			historyModel.contentHashes = {};
 		}
