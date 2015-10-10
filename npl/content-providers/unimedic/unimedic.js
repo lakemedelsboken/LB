@@ -5,19 +5,19 @@
         // Add new products here.
         unimedicData: {
             "20110929000129": {
-                "spcLink": "/product/20110929000129.pdf"
+                "spcLink": "http://www.lakemedelsboken.se/product/20110929000129.pdf"
             },
             "20110927000022": {
-                "spcLink": "/product/20110927000022.pdf"
+                "spcLink": "http://www.lakemedelsboken.se/product/20110927000022.pdf"
             },
             "20110929000105": {
-                "spcLink": "/product/20110929000105.pdf"
+                "spcLink": "http://www.lakemedelsboken.se/product/20110929000105.pdf"
             },
             "20110929000112": {
-                "spcLink": "/product/20110929000112.pdf"
+                "spcLink": "http://www.lakemedelsboken.se/product/20110929000112.pdf"
             },
             "20120301000067": {
-                "spcLink": "/product/20120301000067.pdf"
+                "spcLink": "http://www.lakemedelsboken.se/product/20120301000067.pdf"
             }
         },
 
