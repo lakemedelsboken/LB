@@ -5,8 +5,7 @@ var fileController = require("../controllers/filecontroller");
 var jsondiffpatch = require('jsondiffpatch');
 var path = require("path");
 var historyModel = require("../models/historymodel");
-var fs = require("fs");
-var wrench = require("wrench");
+var fs = require("fs-extra");
 
 router.get("/createpage", function(req, res) {
 
@@ -589,9 +588,9 @@ router.post("/files/upload", function(req, res) {
 			var draftOutputDirPath = path.join(contentController.baseDir, "..", "output", "draft", dir);
 			var draftOutputFilePath = path.join(draftOutputDirPath, safeFileName);
 
-			wrench.mkdirSyncRecursive(draftOutputDirPath, 0777);
+			fs.ensureDirSync(draftOutputDirPath);
 
-			historyModel.copyFile(newFilePath, draftOutputFilePath, function(err) {
+			fs.copy(newFilePath, draftOutputFilePath, function(err) {
 				if (err) {
 					res.status(err.status || 500);
 					res.render('error', {
@@ -606,6 +605,54 @@ router.post("/files/upload", function(req, res) {
 		} else {
 			res.redirect("back");
 		}
+	} else {
+		res.redirect("back");
+	}
+
+});
+
+router.get("/files/publishfile", function(req, res) {
+
+	var filePath = req.query["filepath"];
+
+	//var returnPath = req.get("Referrer");
+	
+	if (filePath !== undefined && filePath !== "") {
+		fileController.publishFile(filePath, function(err) {
+			if (err) {
+				res.status(err.status || 500);
+				res.render('error', {
+					message: err.message,
+					error: err
+				});
+			} else {
+				res.redirect("back");
+			}
+		});
+	} else {
+		res.redirect("back");
+	}
+
+});
+
+router.get("/files/unpublishfile", function(req, res) {
+
+	var filePath = req.query["filepath"];
+
+	//var returnPath = req.get("Referrer");
+	
+	if (filePath !== undefined && filePath !== "") {
+		fileController.unpublishFile(filePath, function(err) {
+			if (err) {
+				res.status(err.status || 500);
+				res.render('error', {
+					message: err.message,
+					error: err
+				});
+			} else {
+				res.redirect("back");
+			}
+		});
 	} else {
 		res.redirect("back");
 	}

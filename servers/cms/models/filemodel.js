@@ -1,12 +1,50 @@
-var fs = require("fs");
+var fs = require("fs-extra");
 var path = require("path");
 var dateFormat = require("dateformat");
 var wrench = require("wrench");
-var historyModel = require("./historymodel");
 
 var FileModel = {
 	baseDir: path.normalize(path.join(__dirname, "..", "content")),
+	publishFile: function(filePath, callback) {
+
+		console.log("FileModel.publishFile: " + filePath);
+
+		var draftFilePath = path.join(FileModel.baseDir, "..", "output", "draft", filePath);
+
+		if (!fs.existsSync(draftFilePath)) {
+			return callback(new Error(draftFilePath + " does not exist."));
+		}
+
+		var publishedFilePath = path.join(FileModel.baseDir, "..", "output", "published", filePath);
+
+		var publishedFileDirPath = path.dirname(publishedFilePath);
+
+		console.log("Publish file from: " + draftFilePath + " to " + publishedFilePath)
+		
+		fs.ensureDirSync(publishedFileDirPath);
+		
+		//callback();
+		fs.copySync(draftFilePath, publishedFilePath);
+		
+		callback();
+
+	},
+	unpublishFile: function(filePath, callback) {
+
+		console.log("FileModel.unpublishFile: " + filePath);
+
+		var publishedFilePath = path.join(FileModel.baseDir, "..", "output", "published", filePath);
+
+		if (!fs.existsSync(publishedFilePath)) {
+			return callback(new Error(publishedFilePath + " does not exist."));
+		}
+		
+		fs.unlink(publishedFilePath, callback);
+		
+	},
 	removeFile: function(filePath, callback) {
+
+		console.log("FileModel.removeFile: " + filePath);
 
 		filePath = unescape(filePath);
 

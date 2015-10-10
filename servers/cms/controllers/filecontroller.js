@@ -6,6 +6,12 @@ var FileController = {
 	baseDir: fileModel.baseDir,
 	removeFile: function(filePath, callback) {
 		fileModel.removeFile(filePath, callback);
+	},
+	publishFile: function(filePath, callback) {
+		fileModel.publishFile(filePath, callback);
+	},
+	unpublishFile: function(filePath, callback) {
+		fileModel.unpublishFile(filePath, callback);
 	}
 };
 

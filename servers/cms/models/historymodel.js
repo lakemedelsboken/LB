@@ -42,9 +42,10 @@ var HistoryModel = {
 			return path.extname(item) === ".published";
 		});
 
+		var nrOfFilesToKeep = 10;
 		
-		//TODO: Make sure only 10 versions are stored here, let older versions be archived
-		if (files.length > 10) {
+		//Make sure only 10 versions are stored here, let older versions be archived
+		if (files.length > nrOfFilesToKeep) {
 
 			var filesToKeep = [];
 			files.forEach(function(fileName) {
@@ -58,7 +59,7 @@ var HistoryModel = {
 
 			//console.log(filesToKeep);
 			
-			filesToKeep.length = 10;
+			filesToKeep.length = nrOfFilesToKeep;
 			
 			//console.log(filesToKeep);
 
@@ -154,7 +155,9 @@ var HistoryModel = {
 			});
 			
 			//Make sure only 10 versions are stored here, let older versions be archived
-			if (files.length > 10) {
+			var nrOfFilesToKeep = 10;
+			
+			if (files.length > nrOfFilesToKeep) {
 
 				var filesToKeep = [];
 				files.forEach(function(fileName) {
@@ -166,7 +169,7 @@ var HistoryModel = {
 					return b.time - a.time;
 				});
 
-				filesToKeep.length = 10;
+				filesToKeep.length = nrOfFilesToKeep;
 			
 				var keepFiles = {};
 				for (var i = 0; i < filesToKeep.length; i++) {
@@ -391,6 +394,28 @@ var HistoryModel = {
 			.createHash(algorithm || 'sha1')
 			.update(str, 'utf8')
 			.digest(encoding || 'hex');
+	},
+	getFileChecksumSync: function(srcFile) {
+
+		var hash = crypto.createHash("sha1");
+
+		var fdr = fs.openSync(srcFile, 'r');
+		var bytesRead = 1;
+		var pos = 0;
+
+		var BUF_LENGTH = 64 * 1024;
+		var _buff = new Buffer(BUF_LENGTH);
+
+		while (bytesRead > 0) {
+			bytesRead = fs.readSync(fdr, _buff, 0, BUF_LENGTH, pos);
+			hash.update(_buff);
+			//fs.writeSync(fdw, _buff, 0, bytesRead)
+			pos += bytesRead;
+		}
+
+		fs.closeSync(fdr);
+		
+		return hash.digest("hex");
 	}
 	
 };
