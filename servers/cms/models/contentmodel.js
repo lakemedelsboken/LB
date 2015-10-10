@@ -353,12 +353,29 @@ var ContentModel = {
 						type = type.mime;
 					}
 					
+					var isPublished = false;
+					
+					//Check if an exact version exists in the published directory
+					var possiblePublishedFilePath = path.join(ContentModel.baseDir, "..", "output", "published", contentPath);
+					
+					if (fs.existsSync(possiblePublishedFilePath)) {
+						
+						var draftFileChecksum = historyModel.getFileChecksumSync(fullPath);
+						var publishedFileChecksum = historyModel.getFileChecksumSync(possiblePublishedFilePath);
+						
+						if (draftFileChecksum === publishedFileChecksum) {
+							isPublished = true;
+						}
+						
+					}
+					
 					var result = {
 						type: "unknown",
 						path: contentPath,
 						size: stat.size,
 						niceSize: filesize(stat.size, {round: 1}),
-						fileType: type
+						fileType: type,
+						isPublished: isPublished
 					};
 					callback(null, result);
 					//return callback(new Error("Could not handle file: " + fullPath));
@@ -1480,6 +1497,7 @@ var ContentModel = {
 			);
 		});
 
+		//TODO: Possible to parallelize?
 
 		for (var i = 0; i < foundPages.length; i++) {
 			var foundPagePath = foundPages[i];
