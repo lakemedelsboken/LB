@@ -156,7 +156,7 @@ function deployLastPublish() {
 		}
 		
 		if (!allFilesOk) {
-			//TODO: Revert back to the archived version
+			//Revert back to the archived version
 			console.log("Something went wrong when trying to remove old output, reverting to last published version...");
 			var archiveDirPath = path.join(__dirname, "archives", dateDirName);
 			var outputDirPath = path.join(__dirname, "..", "output");
