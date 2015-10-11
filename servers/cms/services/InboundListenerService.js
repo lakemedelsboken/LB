@@ -23,8 +23,8 @@ chokidar.watch(payloadPath, chokidarOptions).on("all", function(event, path) {
 		if (event === "change" || event === "add") {
 			//console.log(event, path);
 			deploymentHasOcurred = true;
-			//Wait 1 second before deploying
-			setTimeout(deployLastPublish, 1000);
+			//Wait 10 seconds before deploying
+			setTimeout(deployLastPublish, 10000);
 		}
 	}
 
