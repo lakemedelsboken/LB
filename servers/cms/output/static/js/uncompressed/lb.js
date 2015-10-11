@@ -143,12 +143,6 @@ ga = function() {};
 			$("body").on("click", ".therapyLink", self.handleBoxLinks);
 			$("body").on("click", "a.pageFootnoteItem", self.handlePageFootnoteItems);
 			$("body").on("click", "a.atcCodeInPopover", self.handleAtcCodeInPopover);
-			$("body").on("click", "a.pdfLink", function(event) {
-				if (ga !== undefined) {
-					ga('send', 'pageview', {'page': $(this).attr("href"), 'title': "PDF: " + $(this).text()});
-					ga('send', 'event', 'pdf', $(this).text(), {'nonInteraction': 0});
-				}
-			});
 
 			//Check if settings button should be shown
 			var updatedElements = $("span.updated");
@@ -1596,183 +1590,12 @@ ga = function() {};
 			}
 
 			return;
-			/*
-			if (forceMenuUpdate === undefined) {
-				forceMenuUpdate = true;
-			}
-
-			lb.closeSearchResults();
-			$("#search").blur();
-
-			$("#loading").show();
-
-			var documentHtml = function(html){
-				// Prepare
-				var result = String(html)
-					.replace(/<\!DOCTYPE[^>]*>/i, '')
-					.replace(/<(html|head|body|title|meta|script)([\s\>])/gi,'<div class="document-$1"$2')
-					.replace(/<\/(html|head|body|title|meta|script)\>/gi,'</div>')
-				;
-
-				// Return
-				return $.trim(result);
-			};
-
-			$.ajax({
-				url: chapter ,
-				success: function(data, textStatus, jqXHR){
-					var
-						$data = $(documentHtml(data)),
-						$dataBody = $data.find('.document-body:first'),
-						$dataContent = $dataBody.find("#mainContainer").filter(':first'),
-						$menuChildren, contentHtml;
-
-					// Fetch the content
-					contentHtml = $dataContent.html()||$data.html();
-
-					if (!contentHtml) {
-						document.location.href = chapter + "#" + id;
-						return false;
-					}
-
-					$("#mainContainer").html(contentHtml);
-
-					//Fix link to pdf
-					var pdf = $("#pdf");
-					var newPdf = $dataBody.find("#pdf");
-
-					if (pdf.length === 1 && newPdf.length === 1 && newPdf.attr("href") !== "{PDF}") {
-						pdf.attr("href", newPdf.attr("href"));
-						pdf.show("fast");
-					}
-
-					//Check if settings should be visible
-					var updatedElements = $("span.updated");
-
-					if (updatedElements.length > 0) {
-						$("#settings").show("fast");
-					} else {
-						$("#settings").hide();
-					}
-
-					//Read cookie
-					var visualizeUpdatedText = $.cookie("visualizeUpdatedText");
-
-					if (visualizeUpdatedText === undefined || visualizeUpdatedText === "false") {
-						visualizeUpdatedText = false;
-					} else {
-						visualizeUpdatedText = true;
-					}
-
-					//Convert text style on load
-					if (visualizeUpdatedText && updatedElements.length > 0) {
-						updatedElements.addClass("active");
-					}
-
-					var scrollItem = $("#" + id);
-					if (scrollItem.length === 1) {
-						scrollItem.ScrollTo();
-					} else {
-						$("body").animate({ scrollTop: 0 }, "fast");
-					}
-
-					$("#loading").hide();
-
-					//Fix navigation menu
-					if (forceMenuUpdate) {
-						self.initMenu(History.getState(), true);
-					}
-
-					lb.preventAutoSearchOnce = true;
-					$("#search").focus();
-
-					picturefill(undefined, function() {
-
-						// Complete the change
-						if (scrollItem.length === 1) {
-							scrollItem.ScrollTo();
-						}
-
-						lb.preventAutoSearchOnce = true;
-						$("#search").focus();
-
-						//TODO: Maybe add this again?
-						//self.initScrollSpy();
-
-					});
-
-					//Update the title
-					document.title = $data.find('.document-title:first').text();
-					try {
-						document.getElementsByTagName('title')[0].innerHTML = document.title.replace('<','&lt;').replace('>','&gt;').replace(' & ',' &amp; ');
-					}
-					catch ( Exception ) { }
-
-					var relativeUrl = chapter;
-
-					addAnchors();
-
-					//Track page request
-					if (ga !== undefined) {
-						ga('send', 'pageview', {'page': chapter, 'title': document.title});
-					}
-
-				},
-				error: function(jqXHR, textStatus, errorThrown){
-					document.location.href = chapter + "#" + id;
-					return false;
-				}
-			});
-			*/
 		},
 		oldSearchValue: "",
 		initSearch: function() {
 
 			var self = this;
 			var search = $("#search");
-			//var searchResults = $("#searchResults");
-
-			/*
-			$("#titleSearchResultsList").menu({select: function(event, ui) {
-				event.preventDefault();
-				lb.closeSearchResults();
-				var anchor = ui.item.find("a");
-				if (anchor) {
-					var chapter = anchor.attr("href").split("#")[0];
-					var id = anchor.attr("href").split("#")[1];
-
-					var currentChapter = lb.currentChapter;
-
-					if (currentChapter === "") {
-						currentChapter = window.location.href;
-					}
-
-					if (currentChapter.indexOf(chapter) > -1) {
-						if (lb.isMobile.any()) {
-							search.blur();
-						}
-						var scrollItem = $("#" + id);
-						if (scrollItem.length === 1) {
-							scrollItem.ScrollTo();
-						} else {
-							$("body").animate({ scrollTop: 0 }, "fast");
-						}
-
-						lb.closeSearchResults();
-						//Set history
-						var state = lb.getState(id);
-						History.pushState(state, null, state.toString());
-					} else {
-						var state = lb.getState(id);
-						History.pushState(state, null, "/" + chapter + state.toString());
-
-						//Inject
-						lb.openPage(chapter, id);
-
-					}
-				}
-			}});
-			*/
 
 			$("#contentSearchResultsList").menu({select: function(event, ui) {
 				event.preventDefault();
@@ -2060,13 +1883,6 @@ ga = function() {};
 				list.append($("<li><a href=\"#\"><i class=\"fa fa-refresh fa-spin\"></i> Söker efter \"" + searchValue + "\"...</a></li>"));
 				list.menu("refresh");
 
-				/*
-				list = $("#titleSearchResultsList");
-				list.empty();
-				list.append($("<li><a href=\"#\"><i class=\"fa fa-refresh fa-spin\"></i> Söker efter \"" + searchValue + "\"...</a></li>"));
-				list.menu("refresh");
-				*/
-
 				list = $("#contentSearchResultsList");
 				list.empty();
 				list.append($("<li><a href=\"#\"><i class=\"fa fa-refresh fa-spin\"></i> Söker efter \"" + searchValue + "\"...</a></li>"));
@@ -2079,43 +1895,6 @@ ga = function() {};
 				var state = lb.getState();
 				History.replaceState(state, "Sök: " + searchValue + " | Läkemedelsboken", state.toString());
 
-				/*
-				lb.titleSearch = $.getJSON("/titlesearch?search=" + encodeURIComponent(searchValue), function(results) {
-
-					lb.titleSearch = null;
-					if ($.trim(search.val()) === searchValue) {
-						var resultsList = $("#titleSearchResultsList");
-						resultsList.empty();
-						for (var i=0; i < results.length; i++) {
-							var titleItem = results[i];
-							var titlePath = titleItem.titlePath;
-							if (titlePath.indexOf(" && ") > -1) {
-								titlePath = titlePath.split(" && ");
-								titlePath.pop();
-								titlePath = titlePath.join(" &#187; ");
-							}
-
-							resultsList.append($("<li><a class=\"searchResult\" href=\"/" + titleItem.chapter + "#" + titleItem.id + "\"><i class=\"fa " + lb.getIcon(titleItem.type) + "\"></i> <strong>" + titleItem.title + "</strong><br><small>" + titlePath + "</small></a></li>"));
-						}
-						if (results.length === 0) {
-							//$("#titleSearchResults").hide();
-							resultsList.append($("<li><a href=\"#\"><i class=\"fa fa-ban-circle\"></i> Inga träffar</a></li>"));
-						}
-						resultsList.menu("refresh");
-
-						ga('send', 'event', 'search', searchValue, {'nonInteraction': 1});
-
-					}
-				}).error(function(jqXHR, status, error) {
-					lb.titleSearch = null;
-					if (search.val() !== "") {
-						var resultsList = $("#titleSearchResultsList");
-						resultsList.empty();
-						resultsList.append($("<li><a href=\"#\"><i class=\"fa fa-info-circle\"></i> Sökningen misslyckades<br><small>Var god försök igen lite senare</small></a></li>"));
-						resultsList.menu("refresh");
-					}
-				});
-				*/
 				lb.medicineSearch = $.getJSON("/medicinesearch?search=" + encodeURIComponent(searchValue), function(results) {
 					lb.medicineSearch = null;
 					if ($.trim(search.val()) === searchValue) {
@@ -2194,12 +1973,6 @@ ga = function() {};
 						}
 						resultsList.menu("refresh");
 
-						if (ga !== undefined) {
-
-							ga('send', 'pageview', {'page': '/search?' + searchValue, 'title': 'Sökning: ' + searchValue + ' | Läkemedelsboken'});
-							ga('send', 'event', 'search', searchValue, {'nonInteraction': 0});
-
-						}
 					}
 				}).error(function(jqXHR, status, error) {
 					lb.contentSearch = null;
@@ -2830,11 +2603,6 @@ ga = function() {};
 
 		},
 		renderProductInfo: function(product, nplId, container, forcedNplId) {
-
-			if (ga !== undefined) {
-				ga('send', 'pageview', {'page': '/product/' + nplId, 'title': product.name + ' | Läkemedelsboken'});
-				ga('send', 'event', 'product', product.name, {'nonInteraction': 0});
-			}
 
 			lb.nplId = nplId;
 			if (!forcedNplId) {
