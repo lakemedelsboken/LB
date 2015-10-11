@@ -6,16 +6,13 @@
 		<meta name="description" content="Sökresultat">
 		<meta name="author" content="Läkemedelsverket">
 		
-		<link href="/css/styles.min.css" rel="stylesheet">
+		<link href="/css/<%=version%>/styles.min.css" rel="stylesheet">
 
 		<!--[if lt IE 9]>
 			<link rel="stylesheet" type="text/css" href="/css/jquery.ui.ie.min.css"/>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-			
-		<link rel="stylesheet" type="text/css" href="/css/<%=version%>/lb.min.css">
-		<link rel="stylesheet" type="text/css" href="/css/<%=version%>/print.min.css" media="print">
-
+		
 		<link rel="shortcut icon" href="/favicon.ico">
 		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
@@ -57,7 +54,7 @@
 							<li><a href="#atc">Hämta information från vårt träd med ATC-koder och läkemedel</a></li>
 							<!--<li><a href="#titles">Söka efter rubriker i Läkemedelsboken</a></li>-->
 							<li><a href="#boxes">Söka efter innehåll i informationsrutor, dvs. terapirekommendationer, faktarutor och tabeller</a></li>
-							<li><a href="#genericas">Skicka in html och få generiska preparatnamn uppmärkta</a></li>
+							<!--<li><a href="#genericas">Skicka in html och få generiska preparatnamn uppmärkta</a></li>-->
 							<li><a href="#deeplinking">Länka direkt till en del av Läkemedelsbokens webbplats</a></li>
 						</ul>
 						<h2>Beskrivningar</h2>
@@ -427,6 +424,7 @@ $(&quot;body&quot;).on(&quot;click&quot;, &quot;a.atc&quot;, function() {
     "titlePath_HL": "Smärta och smärtbehandling && Behandling && Faktaruta 5"
   }
 ]</pre>
+<!--
 						<h3 id="genericas">Skicka in en html-text och få eventuella namn på generika uppmärkta</h3>
 						<p class="normal">Detta är en tjänst som i dagsläget används av ett <a href="http://en.wikipedia.org/wiki/Bookmarklet">smart bokmärke</a> (bookmarklet på engelska) för att <a href="/bookmarklets/">hitta och märka upp substansnamn/ATC-rubriker på en webbsida</a>. Vi planerar att bygga ut funktionen framöver.</p>
 <pre>
@@ -437,6 +435,7 @@ Svaret kommer i JSON som ett objekt med ett värde vid namn 'content' med den up
 {
   &quot;content&quot;: &quot;&lt;a href=\&quot;/atc/N02BE01\&quot; data-atcid=\&quot;N02BE01\&quot; data-atctitles=\&quot;Nervsystemet--Analgetika--&#214;vriga_analgetika_och_antipyretika--Anilider,_inkl_kombinationer--Paracetamol\&quot; class=\&quot;inlineGenerica text\&quot;&gt;paracetamol&lt;/a&gt;&quot;
 }</pre>
+-->
 
 						<h3 id="deeplinking">Länka direkt till en del av Läkemedelsbokens webbplats</h3>
 						<h4>Länka till ett sökresultat</h4>
@@ -462,16 +461,6 @@ Svaret kommer i JSON som ett objekt med ett värde vid namn 'content' med den up
 				</div>
 			</div>
 		</div>
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-46072475-1', 'lakemedelsboken.se');
-		  ga('send', 'pageview');
-
-		</script>
 		<script src="/js/<%=version%>/scripts.min.js"></script>
 	</body>
 </html>
