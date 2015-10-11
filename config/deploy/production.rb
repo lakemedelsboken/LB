@@ -33,6 +33,8 @@ server 'www.lakemedelsboken.se', user: 'deploy', roles: %w{app db web}
 
 set :stage, :production
 
+set :keep_releases, 100
+
 # Custom SSH Options
 # ==================
 # You may pass any option but keep in mind that net/ssh understands a
