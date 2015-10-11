@@ -179,8 +179,10 @@ function initFileWatchers() {
 
 		//TODO: Mail?
 
-		console.log("Reloading ATC tree.");
-		atcTree = JSON.parse(fs.readFileSync(__dirname + "/../../npl/atcTree.json", "utf8"));
+		setTimeout(function() {
+			console.log("Reloading ATC tree.");
+			atcTree = JSON.parse(fs.readFileSync(__dirname + "/../../npl/atcTree.json", "utf8"));
+		}, 5000);
 
 	});
 
@@ -193,8 +195,10 @@ function initFileWatchers() {
 	console.log("Watching " + redirectsPath + " for changes...");
 	redirectsWatcher.on('all', function(path, stats) {
 
-		console.log("Reloading redirects.");
-		initRedirects();
+		setTimeout(function() {
+			console.log("Reloading redirects.");
+			initRedirects();
+		}, 4000);
 
 	});
 
