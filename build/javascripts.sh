@@ -17,6 +17,9 @@
 #uglifyjs newscripts.js -m -c > ../servers/cms/output/static/js/scripts.min.js
 uglifyjs ../servers/cms/output/static/js/uncompressed/jquery.js ../servers/cms/output/static/js/uncompressed/jquery.history.js ../servers/cms/output/static/js/uncompressed/twitter-dev/bootstrap-tooltip.js ../servers/cms/output/static/js/uncompressed/twitter-dev/bootstrap-popover.js ../servers/cms/output/static/js/uncompressed/clickover.js ../servers/cms/output/static/js/uncompressed/jquery.cookie.js ../servers/cms/output/static/js/uncompressed/jquery.hotkeys.js ../servers/cms/output/static/js/uncompressed/jquery-ui-1.10.2.custom.js ../servers/cms/output/static/js/uncompressed/jquery-scrollto.js ../servers/cms/output/static/js/uncompressed/jquery.animate-enhanced.js ../servers/cms/output/static/js/uncompressed/matchmedia.js ../servers/cms/output/static/js/uncompressed/respond.js ../servers/cms/output/static/js/uncompressed/picturefill.js ../servers/cms/output/static/js/uncompressed/anchor.js ../servers/cms/output/static/js/uncompressed/lb.js -m -c > ../servers/cms/output/static/js/scripts.min.js
 
+#Fix {version}
+node ./fixversion.js
+
 uglifyjs ../servers/cms/output/static/js/app/uncompressed/jquery.js ../servers/cms/output/static/js/app/uncompressed/lb.js -m -c > ../servers/cms/output/static/js/app/scripts.min.js
 #cp newscripts.js ../servers/cms/output/static/js/scripts.min.js
 
