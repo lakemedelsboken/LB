@@ -234,22 +234,6 @@ var locals = {
 	version: staticSettings.version
 };
 
-
-app.get('/sitemap.xml', function(req,res){
-
-	getSiteMap(function(err, sitemapXml) {
-
-		if (err) {
-			console.log(err);
-		}
-
-		res.set('Content-Type', 'text/xml');
-		res.send(200, sitemapXml);
-	});
-
-
-});
-
 function htmlEscape (text) {
 
 	return String(text)
@@ -320,7 +304,7 @@ app.get('/search', function(req,res){
 	}
 
 });
-
+/*
 app.get('/tree', function(req,res){
 
 	var root = req.query["root"];
@@ -333,7 +317,7 @@ app.get('/tree', function(req,res){
 
 	res.json(tree);
 });
-
+*/
 app.get('/medlist', function(req,res){
 
 	var id = req.query["id"];
@@ -391,7 +375,7 @@ function isParentInItems(items, item) {
 	return result;
 }
 
-
+/*
 app.get('/tocitems', function(req,res){
 
 	var parentId = req.query["id"];
@@ -504,46 +488,9 @@ app.get('/tocitems', function(req,res){
 	}
 
 });
+*/
 
-function getSiteMap(callback) {
-
-	if (siteMap === null) {
-
-		var header = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\" xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n";
-		var footer = "\n</urlset>";
-
-		var content = [];
-
-		//Get all pages
-		fs.readdir(__dirname + "/chapters", function(err, data) {
-			if (err) {
-				callback(err, "");
-			} else {
-
-				var htmlFiles = data.filter(function(fileName) { return (fileName.indexOf(".html") > -1);})
-
-				for (var i = 0; i < htmlFiles.length; i++) {
-					content.push("\t<url>");
-					content.push("\t\t<loc>http://www.lakemedelsboken.se/" + htmlFiles[i] + "</loc>");
-					content.push("\t</url>");
-				}
-
-				content = content.join("\n");
-
-				var combined = header + content + footer;
-
-				siteMap = combined;
-
-				callback(null, siteMap);
-
-			}
-
-		});
-	} else {
-		callback(null, siteMap);
-	}
-}
-
+/*
 function getIndexByChapterId(chapterId) {
 
 	var index = null;
@@ -570,7 +517,9 @@ function getIndexByChapterId(chapterId) {
 
 	return index;
 }
+*/
 
+/*
 app.get('/tocparentitems', function(req,res){
 
 	var itemId = req.query["id"];
@@ -602,8 +551,8 @@ app.get('/tocparentitems', function(req,res){
 	}
 
 });
-
-
+*/
+/*
 function getChapterFileNames() {
 
 	if (chapterFileNames === null) {
@@ -649,7 +598,7 @@ function getChaptersFromChapterId(chapterId) {
 	}
 
 }
-
+*/
 app.get('/medicinesearch', function(req,res){
 
 	request("http://127.0.0.1:" + searchPort + req.originalUrl, {'json': true}, function (error, response, body) {
@@ -815,7 +764,7 @@ function getATCTreeChildren(parentId, showATCCodes) {
 	}
 
 }
-
+/*
 function getTreeChildren(parentId, showATCCodes) {
 
 	var childATCCodes = [];
@@ -885,7 +834,7 @@ function getTreeChildren(parentId, showATCCodes) {
 	}
 
 }
-
+*/
 app.get('/atc/:atcCodes?', function(req, res) {
 	var atcCodes = ["root"];
 
@@ -1022,6 +971,9 @@ function getOldNameFromChapterPath(chapterPath) {
 	return foundName;
 }
 
+/*
+ http://www.riksdagen.se/sv/Dokument-Lagar/Lagar/Svenskforfattningssamling/Lag-2010566-om-vidareutnytt_sfs-2010-566/
+*/
 app.get("/psidata", function(req, res){
 	res.redirect(301, "/api/");
 });
