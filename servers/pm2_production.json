@@ -70,5 +70,14 @@
 		"max_restarts" : "1",
 		"fileError" : "./logs/InboundListenerService-err.log",
 		"fileOutput" : "./logs/InboundListenerService-out.log"
+	},
+	{
+		"name"      : "LogSenderService",
+		"script"    : "./cms/services/LogSenderService.js",
+		"instances" : "1",
+		"min_uptime" : "100",
+		"max_restarts" : "1",
+		"fileError" : "./logs/LogSenderService-err.log",
+		"fileOutput" : "./logs/LogSenderService-out.log"
 	}
 ]

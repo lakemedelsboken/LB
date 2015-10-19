@@ -34,3 +34,8 @@ p.indent {
 td {
 	padding: 15px;
 }
+
+td div.tableLine {
+	white-space: nowrap;
+	margin-left: 5px;
+}

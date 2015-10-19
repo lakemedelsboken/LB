@@ -172,3 +172,8 @@ p.ingress {
 .content-preview .updated {
 	color: red;
 }
+
+.content-preview td div.tableLine {
+	white-space: nowrap;
+	margin-left: 5px;
+}

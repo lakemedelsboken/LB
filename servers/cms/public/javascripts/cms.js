@@ -571,6 +571,7 @@ $("textarea.mce").on("focus", function(event) {
 				{title: 'Ingress', block: 'p', classes: 'ingress'},
 				{title: 'Indenterad första rad', block: 'p', classes: 'indent'},
 				{title: 'Stycke med avstånd', block: 'p', classes: 'normal'},
+				{title: 'Tabellrad utan radbrytning', block: 'div', classes: 'tableLine'},
 			],
 			toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
 			toolbar2: "print preview media | forecolor backcolor emoticons | fontawesome",
