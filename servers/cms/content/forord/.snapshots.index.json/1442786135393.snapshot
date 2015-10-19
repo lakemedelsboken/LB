@@ -1,0 +1,71 @@
+{
+	"templateName": "default",
+	"templateDescription": "Vanlig sida",
+	"title": "Förord | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-23 23:32",
+	"published": "2015-07-23 23:43",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "/foreword.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "afac355c-1ad2-4339-8828-5e34d934f491",
+			"name": "afac355c-1ad2-4339-8828-5e34d934f491",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p>Information om indikationer och doser f&ouml;r l&auml;kemedel samt om biverkningar revideras kontinuerligt och l&auml;saren rekommenderas att h&auml;mta aktuell information fr&aring;n:</p>\r\n<ul>\r\n<li><a href=\"http://www.lakemedelsverket.se/\">www.lakemedelsverket.se</a></li>\r\n<li><a href=\"http://www.sbu.se/\">www.sbu.se</a></li>\r\n<li><a href=\"http://www.socialstyrelsen.se/\">www.socialstyrelsen.se</a></li>\r\n<li><a href=\"http://www.tlv.se/\">www.tlv.se</a></li>\r\n<li><a href=\"http://www.fass.se/\">www.fass.se</a></li>\r\n</ul>\r\n<p>samt fr&aring;n aktuell vetenskaplig litteratur.</p>\r\n<p>F&ouml;r utf&ouml;rlig information om tillg&auml;ngliga l&auml;kemedel inklusive parallellimporterade l&auml;kemedel och generika h&auml;nvisas till L&auml;kemedelsverkets webbplats,&nbsp;<a href=\"http://www.lakemedelsverket.se/LMF/\">www.lakemedelsverket.se (&rdquo;L&auml;kemedelsfakta&rdquo;)</a>.</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "73a628c5-f4cc-4e50-97af-8f80061038ad",
+			"name": "73a628c5-f4cc-4e50-97af-8f80061038ad",
+			"type": "text",
+			"content": "<h1 id=\"Forord\">F&ouml;rord</h1>\n<p>Detta &auml;r den 19:e utg&aring;van av L&auml;kemedelsboken (LB). Med anledning av apoteksmarknadens omreglering har L&auml;kemedelsverket fr&aring;n och med f&ouml;rra utg&aring;van tagit &ouml;ver ansvaret f&ouml;r utgivningen fr&aring;n Apoteket AB, som gett ut boken sedan den f&ouml;rsta utg&aring;van 1977. LB finns tillg&auml;nglig i elektroniskt format och som en traditionellt tryckt bok.</p>\n<p class=\"indent\">Den webbaserade versionen av LB har f&aring;tt en helt ny utformning och anpassats till den kliniska vardagen och dess behov av att snabbt f&aring; fram information om l&auml;mplig behandling/l&auml;mpliga l&auml;kemedel vid ett aktuellt sjukdomstillst&aring;nd. Terapirekommendationer, faktarutor och tabeller finns l&auml;tt &aring;tkomliga i respektive kapitel. Webbversionen har utvecklats med s&auml;rskilt fokus p&aring; s&ouml;kfunktionen med m&aring;ls&auml;ttningen att den ska vara snabb och tr&auml;ffs&auml;ker. Den webbaserade versionen har ocks&aring; anpassats till olika sk&auml;rmstorlekar. Vidare kommer den webbaserade versionen att kontinuerligt kunna uppdateras med f&ouml;r LB:s l&auml;sare relevant information fr&aring;n L&auml;kemedelsverket och andra myndigheter samt med nya r&ouml;n fr&aring;n den vetenskapliga litteraturen.</p>\n<p class=\"indent\">Webbversionen av LB kommer fortsatt att utvecklas och framtiden f&aring;r utvisa om samma behov av en samlad tryckt bok kommer att f&ouml;religga som hittills.</p>\n<p class=\"indent\">Kapitelf&ouml;rfattarna svarar sj&auml;lva f&ouml;r inneh&aring;llet &auml;ven om en redaktionskommitt&eacute;, frist&aring;ende fr&aring;n L&auml;kemedelsverkets myndighetsuppdrag, granskat inneh&aring;llet och i dialog med f&ouml;rfattarna vinnlagt sig om att inneh&aring;llet inte st&aring;r i strid med officiella direktiv, riktlinjer eller vetenskap och bepr&ouml;vad erfarenhet. Ledam&ouml;terna i redaktionskommitt&eacute;n har en omfattande klinisk erfarenhet och &auml;r v&auml;l insatta i forsknings- och utvecklingsarbete inom sina respektive omr&aring;den. De har vidare ett brett n&auml;tverk inom s&aring;v&auml;l L&auml;kemedelsverket och SBU som Svenska L&auml;kares&auml;llskapet och Apotekarsocieteten.&nbsp;</p>\n<p class=\"indent\">Redaktionskommitt&eacute;ns ledam&ouml;ter och samtliga f&ouml;rfattare har f&aring;tt redovisa eventuella j&auml;vsf&ouml;rh&aring;llanden och bindningar till l&auml;kemedelsindustrin och dessa har bed&ouml;mts och godk&auml;nts enligt det regelverk som finns inom L&auml;kemedelsverket. J&auml;vsdeklarationerna finns tillg&auml;ngliga hos L&auml;kemedelsverket.&nbsp;</p>\n<p class=\"indent\">LB:s &ouml;vergripande m&aring;ls&auml;ttning &auml;r att ge producentoberoende information om l&auml;kemedelsbehandling vid vanliga sjukdomstillst&aring;nd. Boken inneh&aring;ller ocks&aring; kapitel som tar upp mer &ouml;vergripande aktuella aspekter p&aring; l&auml;kemedelsanv&auml;ndning samt kapitel om regelverket inom l&auml;kemedelsomr&aring;det.</p>\n<p class=\"indent\">LB v&auml;nder sig framf&ouml;r allt till specialister i allm&auml;nmedicin, l&auml;kare under specialistutbildning eller allm&auml;ntj&auml;nstg&ouml;ring samt medicine och farmacie studerande, men ocks&aring; till l&auml;kare som beh&ouml;ver r&aring;d vid medicinska problem utanf&ouml;r den egna specialiteten. LB anv&auml;nds som ett uppslagsverk av alla kategorier av sjukv&aring;rdspersonal inklusive farmaceuter.</p>\n<p class=\"indent\">LB:s huvuddel utg&ouml;rs av terapikapitlen som beskriver olika sjukdomstillst&aring;nd, deras f&ouml;rekomst, symtom, diagnostik och behandling, varvid l&auml;kemedel placeras in i ett helhetsperspektiv i vilket &auml;ven icke-farmakologiska l&ouml;sningar ing&aring;r. I specialkapitlen redog&ouml;rs f&ouml;r kliniskt farmakologiska principer, biverkningsm&ouml;nster, l&auml;kemedelsinteraktioner samt l&auml;kemedels milj&ouml;p&aring;verkan. Dessutom tas mer &ouml;vergripande aspekter upp om l&auml;kemedelsanv&auml;ndning s&aring;som h&auml;lsoekonomi och IT-st&ouml;d. I regelverkskapitlen beskrivs de olika lagarna och f&ouml;rordningarna som finns inom l&auml;kemedelsomr&aring;det. Se &auml;ven Faktaruta 1.</p>\n<p class=\"indent\">Webbversionen inneh&aring;ller alla kapitel medan bokutg&aring;van inneh&aring;ller terapikapitlen samt, av utrymmessk&auml;l, ett urval av specialkapitlen. Preparatlistorna, som tidigare avslutade varje kapitel i den tryckta boken, har ersatts av ett substansregister med registrerade l&auml;kemedel vilket finns i slutet av boken. I webbversionen finns l&auml;nkar till produktresum&eacute;er/Fass-texter n&auml;r l&auml;kemedelssubstanser omn&auml;mns i texten.</p>\n<p class=\"indent\">Synpunkter p&aring; s&aring;v&auml;l webbversionen som den tryckta boken tas tacksamt emot av redaktionen, se vidare information om kontaktuppgifter p&aring; LB:s webbplats,&nbsp;<a href=\"http://www.lakemedelsboken.se/\">www.l&auml;kemedelsboken.se</a>.</p>\n<p class=\"indent\">Ett varmt tack g&aring;r till samtliga f&ouml;rfattare f&ouml;r ett utm&auml;rkt arbete liksom till redaktionskommitt&eacute;n f&ouml;r dess v&auml;rdefulla insatser. Till sist vill vi p&aring; redaktionskommitt&eacute;ns och egna v&auml;gnar framf&ouml;ra ett tack till involverade personer p&aring; L&auml;kemedelsverket utan vars entr&auml;gna arbete denna bok inte varit m&ouml;jlig.</p>\n<p class=\"normal\"></p>\n<p class=\"normal\">Progesteron</p>\n<p class=\"normal\">Uppsala i oktober 2013</p>\n<p class=\"normal\"></p>\n<p class=\"normal\"><em>H&aring;kan Odeberg</em></p>\n<p class=\"normal\">Ordf&ouml;rande i redaktionskommitt&eacute;n f&ouml;r L&auml;kemedelsboken</p>\n<p class=\"normal\"></p>\n<p class=\"normal\"><em>Helena Ramstr&ouml;m</em></p>\n<p class=\"normal\">Redakt&ouml;r f&ouml;r L&auml;kemedelsboken</p>\n<p class=\"normal\"></p>\n<p class=\"normal\"><em>Anders Carlsten</em></p>\n<p class=\"normal\">Direkt&ouml;r f&ouml;r VO Anv&auml;ndning vid L&auml;kemedelsverket</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/forord/index.json",
+	"indexed": "true",
+	"modified": "2015-09-20 23:55",
+	"isPublished": true
+}

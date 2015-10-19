@@ -1,0 +1,30 @@
+{
+	"templateName": "default",
+	"templateDescription": "Vanlig sida",
+	"title": "PDF-versioner av alla kapitel | Läkemedelsboken",
+	"description": "PDF-versioner av alla kapitel i Läkemedelsboken",
+	"keywords": "pdf",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-10-10 14:32",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "/pdfs.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [],
+	"type": "file",
+	"path": "/pdf/index.json",
+	"indexed": "false",
+	"modified": "2015-10-10 14:34"
+}
