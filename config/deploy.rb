@@ -77,6 +77,7 @@ namespace :deploy do
 
       #Make current release a working git repository
       if fetch(:stage) == :staging 
+        execute "rm -rf /var/www/lb/gittemp/"
         execute "git clone -b #{fetch(:branch)} --single-branch --depth 1 ssh://git@github.com/lakemedelsboken/LB.git /var/www/lb/gittemp"
         execute "mv /var/www/lb/gittemp/.git /var/www/lb/current/.git"
         execute "rm -rf /var/www/lb/gittemp/"
