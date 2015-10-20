@@ -25,8 +25,11 @@
 			<!--
 			<a class="navbar-brand" href="/"><%=id%></a>
 			-->
-			<div class="dropdown navbar-left">
-				<a href="#" class="dropdown-toggle btn navbar-btn btn-warning" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-cloud-upload"></i> Publicering <span class="caret"></span></a>
+			
+		</div>
+		<div class="collapse navbar-collapse navbar-right">
+			<span class="dropdown">
+				<a href="#" class="dropdown-toggle btn navbar-btn btn-success" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-cloud-upload"></i> Publicering <span class="caret"></span></a>
 				<ul class="dropdown-menu" role="menu">
 					<li><a href="#" data-toggle="modal" data-target="#clearCachesModal"><i class="fa fa-trash"></i> Rensa cache...</a></li>
 					<li class="divider"></li>
@@ -38,10 +41,8 @@
 					<li class="divider"></li>
 					<li><a href="#" data-toggle="modal" data-target="#publishExternal"><i class="fa fa-rocket"></i> Publicera live...</a></li>
 				</ul>
-			</div>
-			
-		</div>
-		<div class="navbar-collapse collapse navbar-right">
+			</span>
+
 			<%
 			if (id && id !== "/") {
 			%>
@@ -52,6 +53,7 @@
 			%>
 
 			<a href="/cms/logout" class="btn navbar-btn btn-default"><i class="fa fa-sign-out"></i> Logga ut <%=username%></a>
+
 
 		</div>
 	</div>
@@ -190,14 +192,14 @@
 
 					%>
 					<tr>
-						<td class="col-sm-2"><a href="/cms/<%=draft.path%>"><%=draft.path%></a></td>
-						<td style="white-space: nobreak;"><%=draft.niceDate%></td>
-						<td><a class="btn btn-sm btn-success" href="/cms/content/publishpage?pagepath=<%=draft.path%>"><i class="fa fa-check"></i> Publicera</a></td>
-						<td>
+						<td class="col-sm-3"><a href="/cms/<%=draft.path%>" class="break"><%=draft.path.replace(".json", "")%></a></td>
+						<td class="col-sm-2" style="white-space: nobreak;"><%=draft.niceDate%></td>
+						<td class="col-sm-1"><a class="btn btn-sm btn-success" href="/cms/content/publishpage?pagepath=<%=draft.path%>" title="Märk den här sidan för publicering"><i class="fa fa-check"></i> Publicera</a></td>
+						<td class="col-sm-1">
 							<%
 							if (draft.canBeRevertedToLastPublishedVersion) {
 							%>
-							<a class="btn btn-sm btn-danger" href="/cms/content/revertolastpublished?pagepath=<%=draft.path%>"><i class="fa fa-check"></i> Återgå</a>
+							<a class="btn btn-sm btn-danger revertToPublishedButton" data-toggle="modal" data-target="#revertToPublishedModal" data-pagepath="<%=draft.path%>" title="Återgå till den senast publicerade versionen av den här sidan"><i class="fa fa-check"></i> Återgå</a>
 							<%
 							} else {
 							%>
@@ -432,6 +434,33 @@
 		</div>
 	</div>
 </div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Återgå till publicerad" id="revertToPublishedModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Återgå till senaste publicerade versionen av den här sidan?</h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/content/revertolastpublished" method="get" class="form-horizontal" role="form">
+					<input type="hidden" name="pagepath" id="revertPagePath" value="">
+					<div class="form-group">
+						<div class="col-sm-10">
+							<strong>Är du säker?</strong> <br><br>Detta kommer att skriva över eventuella ändringar som är gjorda sedan du senast publicerade denna sida.
+							<br>
+						</div>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ja, återgå till publicerad</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Ta bort metadata" id="removeMetadataModal" aria-hidden="true">
 	<div class="modal-dialog modal-md">
 		<div class="modal-content">
