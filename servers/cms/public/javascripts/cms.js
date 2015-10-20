@@ -290,6 +290,10 @@ $(document).ready(function() {
 	$("button.removeMetadata").on("click", function(event) {
 		$("input#removemetakey").val($(this).attr("data-meta-key"));
 	});
+
+	$("a.revertToPublishedButton").on("click", function(event) {
+		$("input#revertPagePath").val($(this).attr("data-pagepath"));
+	});
 	
 	$("button.add-content").on("click", function(event) {
 		if ($(this).attr("data-after") !== undefined) {
@@ -546,12 +550,13 @@ $("textarea.mce").on("focus", function(event) {
 		tinymce.init({
 			selector: "textarea#" + id,
 			theme: "modern",
+			menubar: "edit insert view format table tools",
 			plugins: [
 				"advlist autolink autoresize lists link image charmap print preview hr anchor pagebreak",
 				"searchreplace wordcount visualblocks visualchars code fullscreen",
-				"insertdatetime media nonbreaking save table contextmenu directionality",
-				"emoticons template paste textcolor colorpicker textpattern",
-				"fontawesome noneditable"
+				"insertdatetime media nonbreaking table contextmenu directionality", //save
+				"template paste textcolor colorpicker textpattern", //emoticons
+				"fontawesome noneditable removetablelines removetableparagraphs"
 			],
 			//content_css: "/cms/draft/css/styles.min.css,/cms/draft/css/lb.min.css",
 			content_css: "/cms/stylesheets/tinymcepreview.css, /cms/stylesheets/font-awesome-4.3.0/css/font-awesome.min.css",
@@ -565,6 +570,7 @@ $("textarea.mce").on("focus", function(event) {
 				{title: 'Faktaruta', value: 'facts'}
 			],
 */
+			language: "sv_SE",
 			style_formats_merge: true,
 			style_formats: [
 				{title: 'Uppdaterad text', inline: 'span', classes: 'updated'},
@@ -573,11 +579,12 @@ $("textarea.mce").on("focus", function(event) {
 				{title: 'Stycke med avstånd', block: 'p', classes: 'normal'},
 				{title: 'Tabellrad utan radbrytning', block: 'div', classes: 'tableLine'},
 			],
-			toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
-			toolbar2: "print preview media | forecolor backcolor emoticons | fontawesome",
+			toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media | forecolor backcolor",
+			toolbar2: "fontawesome | removetablelines | removetableparagraphs", //emoticons print preview 
 			image_advtab: true,
 			valid_elements: "*[*]",
 			extended_valid_elements: "span[class|style]",
+			autoresize_max_height: "500px",
 			templates: [
 			],
 			convert_urls: false
