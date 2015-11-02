@@ -1,9 +1,64 @@
 @media print {
+
+	* {
+		letter-spacing: normal;
+		
+	}
+
 	body {
 		padding: 0;
 		margin: 0;
 		background-color: #fff;
 		font-size: 12pt;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		/*
+		text-rendering: auto;
+		font-family: sans-serif;
+		font-weight: normal;
+		*/
+		letter-spacing: normal;
+	}
+
+	a.btn-mini.inlineReference {
+		letter-spacing: normal;
+		font-weight: normal;
+		padding: none;
+		vertical-align: super;
+		font-size: 60%;
+	}
+	
+	img {
+		max-width: 100%;
+	}
+
+	table.table {
+		page-break-inside: avoid;
+		font-size: 80%;
+	}
+	
+	div.pull-right {
+		float: none !important;
+		max-width: 100%;
+		overflow: visible;
+		margin-left: 0;
+	}
+	
+	div.facts {
+		width: 100%;
+	}
+
+	div.facts, div.narrow {
+		width: 100%;
+	}
+
+	p.ingress {
+		font-weight: bold;
+	}
+
+	div.authorsDisclosure {
+		display: none;
 	}
 
 	.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 {
@@ -17,6 +72,7 @@
 		margin: 0;
 	}
 
+	/*
 	.table, .table.pull-right {
 		position: inherit;
 		max-width: auto;
@@ -30,11 +86,6 @@
 	table.facts {
 		float: none;
 	}
-
-	#boxCollection {
-		display: none;
-	}
-
 	.table.pull-right {
 		margin-left: 10px;
 		float: none;
@@ -42,6 +93,11 @@
 
 	.table.span4 {
 		width: 40%;
+	}
+	*/
+
+	#boxCollection {
+		display: none;
 	}
 
 	#sideContainer {
@@ -83,7 +139,7 @@
 	}
 
 	div.figure img {
-		width: 80%;
+		width: 100%;
 	}
 
 	h2.overview {
@@ -98,6 +154,11 @@
 		margin: 10px 0 10px 0;
 	}
 
+	table ul {
+		padding-left: 0;
+		margin-left: 20px;
+	}
+	
 	.pageLink {
 		display: none;
 	}
