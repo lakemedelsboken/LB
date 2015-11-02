@@ -4,6 +4,7 @@ var fs = require("fs-extra");
 var favicon = require("static-favicon");
 var logger = require("morgan");
 var bodyParser = require("body-parser");
+var cookieParser = require("cookie-parser");
 var multer = require("multer");
 var flash = require("connect-flash");
 var request = require("request");
@@ -166,7 +167,7 @@ app.use(session({
 }));
 
 app.use(flash());
-//app.use(cookieParser());
+app.use(cookieParser());
 
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;

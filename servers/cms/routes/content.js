@@ -6,6 +6,8 @@ var jsondiffpatch = require('jsondiffpatch');
 var path = require("path");
 var historyModel = require("../models/historymodel");
 var fs = require("fs-extra");
+var spawn = require("child_process").spawn;
+var dateFormat = require("dateformat");
 
 router.get("/createpage", function(req, res) {
 
@@ -684,6 +686,101 @@ router.get("/files/removefile", function(req, res) {
 				res.redirect(returnPath);
 			}
 		});
+	} else {
+		res.redirect("back");
+	}
+
+});
+
+router.get("/pdf/download", function(req, res) {
+
+	var url = req.query["url"];
+
+	//var returnPath = req.get("Referrer");
+	
+	if (url !== undefined && url !== "") {
+
+		var outPath = path.join(require("os").tmpdir(), contentController.getGUID() + ".pdf");
+
+		console.log("Building pdf for " + url + " to " + outPath);
+
+		var date = new Date();
+		var fileNameDate = dateFormat(date, "yyyy-mm-dd--HH-MM-ss");
+		var printDate = dateFormat(date, "yyyy-mm-dd HH:MM:ss");
+
+		var draftOrPublish = (url.indexOf("/cms/draft/") === 0) ? "draft" : "publish";
+
+		var newFileName = path.basename(url, ".html") + "-" + draftOrPublish + "-" + fileNameDate + ".pdf";
+		
+		var cookies = [];
+		
+		for (var cookie in req.cookies) {
+			cookies.push("--cookie");
+			cookies.push(encodeURIComponent(cookie));
+			cookies.push(encodeURIComponent(req.cookies[cookie]));
+		}
+		
+		var arguments = ["--print-media-type", "--disable-smart-shrinking", "--no-background", "--zoom", "0.7", "--dpi", "240", "-n", "--viewport-size", "950"];
+		
+		arguments = arguments.concat(cookies);
+
+		arguments = arguments.concat(["--footer-font-size", 8]);
+		arguments = arguments.concat(["--header-font-size", 8]);
+		arguments = arguments.concat(["--footer-font-name", "Courier"]);
+		arguments = arguments.concat(["--header-font-name", "Courier"]);
+		//arguments = arguments.concat(["--header-left", "Läkemedelsboken - " + draftOrPublish]);
+		//arguments = arguments.concat(["--footer-left", printDate]);
+		//arguments = arguments.concat(["--footer-right", "[page]/[toPage]"]);
+		
+		arguments.push("http://localhost" + url)
+		arguments.push(outPath);
+
+		var hasExited = false;
+		var converter = spawn('wkhtmltopdf', arguments);
+
+		converter.stdout.on('data', function (data) {
+			console.log('stdout: ' + data);
+		});
+
+		converter.stderr.on('data', function (data) {
+			console.log('stderr: ' + data);
+		});
+
+		converter.on('close', function (code) {
+			if (code !== 0) {
+				console.log('Child process exited with code ' + code);
+				hasExited = true;
+
+				res.status(500);
+				var err = new Error('Child process exited with code ' + code);
+				res.render('error', {
+					message: err.message,
+					error: err
+				});
+
+			} else if (!hasExited) {
+				hasExited = true;
+
+				//Everything is ok
+				res.download(outPath, newFileName);
+
+			}
+		});	
+
+		converter.on('error', function (err) {
+
+			console.log('Child process exited with err ', err);
+
+			if (!hasExited) {
+				hasExited = true;
+				res.status(500);
+				res.render('error', {
+					message: 'Child process exited with err: ' + err.message,
+					error: err
+				});
+			}
+		});
+		
 	} else {
 		res.redirect("back");
 	}

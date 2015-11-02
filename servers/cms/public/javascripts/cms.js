@@ -360,6 +360,10 @@ $(document).ready(function() {
 		$("#draftModal").on('show.bs.modal', function () {
 
 			$("#draftFrame").prop("src", url);
+			$("#draftLink").prop("href", url);
+			$("#draftPdfLink").prop("href", "/cms/content/pdf/download?url=" + encodeURIComponent(url));
+			//$("#draftWordLink").prop("href", url);
+
 
 		});
 
@@ -378,6 +382,9 @@ $(document).ready(function() {
 		$("#publishedModal").on('show.bs.modal', function () {
 
 			$("#publishedFrame").prop("src", url);
+			$("#publishedLink").prop("href", url);
+			$("#publishedPdfLink").prop("href", "/cms/content/pdf/download?url=" + encodeURIComponent(url));
+			//$("#publishedWordLink").prop("href", url);
 
 		});
 

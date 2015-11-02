@@ -975,7 +975,9 @@ var ContentController = {
 
 		return hash.digest("hex");
 		
-	}
+	},
+	getGUID: contentModel.getGUID
+	
 };
 
 

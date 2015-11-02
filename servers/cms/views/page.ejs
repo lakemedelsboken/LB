@@ -501,12 +501,18 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal">×</button>
-					<h4>Utkast</h4>
-					<div class="btn-group" role="group" aria-label="...">
-						<button type="button" class="btn btn-warning viewsize mobile"><i class="fa fa-mobile"></i></button>
-						<button type="button" class="btn btn-warning viewsize tablet active"><i class="fa fa-tablet"></i></button>
-						<button type="button" class="btn btn-warning viewsize desktop"><i class="fa fa-desktop"></i></button>
-					</div>
+				<h4>Utkast</h4>
+				<div class="btn-group" role="group" aria-label="...">
+					<button type="button" class="btn btn-warning viewsize mobile" title="Mobilskärm"><i class="fa fa-mobile"></i></button>
+					<button type="button" class="btn btn-warning viewsize tablet active" title="Surfplatta"><i class="fa fa-tablet"></i></button>
+					<button type="button" class="btn btn-warning viewsize desktop" title="Datorskärm"><i class="fa fa-desktop"></i></button>
+					<a id="draftLink" target="_blank" class="btn btn-warning" title="Öppna i eget fönster"><i class="fa fa-external-link"></i></a>
+				</div>
+				<div class="btn-group pull-right" role="group" aria-label="...">
+					<a id="draftPdfLink" class="btn btn-primary" title="Ladda hem som PDF-fil"><i class="fa fa-file-pdf-o"></i></a>
+<!--					<a id="draftWordLink" class="btn btn-primary" title="Ladda hem som Word-fil"><i class="fa fa-file-word-o"></i></a>-->
+				</div>
+
 			</div>
 			<div class="modal-body" style="padding: 0; margin: 0; background: black;">
 		      <iframe id="draftFrame" src="" style="zoom:1.0" width="768px" height="600" frameborder="0"></iframe>
@@ -525,6 +531,11 @@
 					<button type="button" class="btn btn-warning viewsize mobile"><i class="fa fa-mobile"></i></button>
 					<button type="button" class="btn btn-warning viewsize tablet active"><i class="fa fa-tablet"></i></button>
 					<button type="button" class="btn btn-warning viewsize desktop"><i class="fa fa-desktop"></i></button>
+					<a id="publishedLink" target="_blank" class="btn btn-warning" title="Öppna i eget fönster"><i class="fa fa-external-link"></i></a>
+				</div>
+				<div class="btn-group pull-right" role="group" aria-label="...">
+					<a id="publishedPdfLink" class="btn btn-primary" title="Ladda hem som PDF-fil"><i class="fa fa-file-pdf-o"></i></a>
+<!--					<a id="publishedWordLink" class="btn btn-primary" title="Ladda hem som Word-fil"><i class="fa fa-file-word-o"></i></a>-->
 				</div>
 			</div>
 			<div class="modal-body" style="padding: 0; margin: 0; background: black;">
