@@ -8,6 +8,7 @@ var historyModel = require("../models/historymodel");
 var fs = require("fs-extra");
 var spawn = require("child_process").spawn;
 var dateFormat = require("dateformat");
+var cheerio = require("cheerio");
 
 router.get("/createpage", function(req, res) {
 
@@ -110,6 +111,30 @@ router.get("/removepage", function(req, res) {
 				});
 			} else {
 				res.redirect(returnPath);
+			}
+		});
+	} else {
+		res.redirect("back");
+	}
+
+});
+
+router.get("/movepage", function(req, res) {
+
+	var fromPath = req.query["frompath"];
+	var pageName = req.query["pageName"];
+	var pageDir = req.query["pageDir"];
+	
+	if (pageName !== undefined && pageName !== "" && pageDir !== undefined && pageDir !== "" && fromPath !== undefined && fromPath !== "") {
+		contentController.movePage(fromPath, pageDir, pageName, function(err) {
+			if (err) {
+				res.status(err.status || 500);
+				res.render('error', {
+					message: err.message,
+					error: err
+				});
+			} else {
+				res.redirect(path.join("/cms", pageDir, pageName + ".json"));
 			}
 		});
 	} else {
@@ -696,8 +721,6 @@ router.get("/pdf/download", function(req, res) {
 
 	var url = req.query["url"];
 
-	//var returnPath = req.get("Referrer");
-	
 	if (url !== undefined && url !== "") {
 
 		var outPath = path.join(require("os").tmpdir(), contentController.getGUID() + ".pdf");
@@ -737,6 +760,211 @@ router.get("/pdf/download", function(req, res) {
 
 		var hasExited = false;
 		var converter = spawn('wkhtmltopdf', arguments);
+
+		converter.stdout.on('data', function (data) {
+			console.log('stdout: ' + data);
+		});
+
+		converter.stderr.on('data', function (data) {
+			console.log('stderr: ' + data);
+		});
+
+		converter.on('close', function (code) {
+			if (code !== 0) {
+				console.log('Child process exited with code ' + code);
+				hasExited = true;
+
+				res.status(500);
+				var err = new Error('Child process exited with code ' + code);
+				res.render('error', {
+					message: err.message,
+					error: err
+				});
+
+			} else if (!hasExited) {
+				hasExited = true;
+
+				//Everything is ok
+				res.download(outPath, newFileName);
+
+			}
+		});	
+
+		converter.on('error', function (err) {
+
+			console.log('Child process exited with err ', err);
+
+			if (!hasExited) {
+				hasExited = true;
+				res.status(500);
+				res.render('error', {
+					message: 'Child process exited with err: ' + err.message,
+					error: err
+				});
+			}
+		});
+		
+	} else {
+		res.redirect("back");
+	}
+
+});
+
+router.get("/docx/download", function(req, res) {
+
+	var url = req.query["url"];
+
+	if (url !== undefined && url !== "") {
+
+		var outPath = path.join(require("os").tmpdir(), contentController.getGUID() + ".docx");
+
+		console.log("Building docx for " + url + " to " + outPath);
+
+		var date = new Date();
+		var fileNameDate = dateFormat(date, "yyyy-mm-dd--HH-MM-ss");
+		var printDate = dateFormat(date, "yyyy-mm-dd HH:MM:ss");
+
+		var draftOrPublish = (url.indexOf("/cms/draft/") === 0) ? "draft" : "publish";
+		var isDraft = (url.indexOf("/cms/draft/") === 0);
+
+		var baseUrl = path.join(contentController.baseDir, "..", "output");
+
+		if (isDraft) {
+			baseUrl = path.join(baseUrl, "draft");
+		} else {
+			baseUrl = path.join(baseUrl, "published");
+		}
+		
+		url = url.replace("/cms/draft", "");
+		url = path.join(baseUrl, url);
+		
+		if (!fs.existsSync(url)) {
+			console.log('Could not find path: ' + url);
+			hasExited = true;
+
+			res.status(500);
+			var err = new Error('Child not find path: ' + url);
+			res.render('error', {
+				message: err.message,
+				error: err
+			});
+			return;
+		}
+		
+		var tempDir = require("os").tmpdir();
+		var tempHtmlPath = path.join(tempDir, contentController.getGUID() + ".html");
+		
+		//Reformat the html for docx output
+		var oldHtml = fs.readFileSync(url, "utf8");
+		var $ = cheerio.load(oldHtml);
+		
+		//Remove left side container
+		$("#sideContainer").remove();
+		
+		//Fix image links
+		var currentVersion = JSON.parse(fs.readFileSync(path.join(contentController.baseDir, "..", "output", "static", "settings.json"))).version;
+		$("img").each(function(index, item) {
+			var $item = $(item);
+			var relativeImagePath = $item.attr("src").replace("/" + currentVersion + "/", "/");
+			relativeImagePath = relativeImagePath.replace(/\.\.\//g, "");
+			var relativeBaseDir = path.join(contentController.baseDir, "..", "output", "static");
+			var fromImagePath = path.join(relativeBaseDir, relativeImagePath);
+			var toImagePath = path.join(tempDir, contentController.getGUID() + ".png");
+			
+			console.log("Copy from: " + fromImagePath);
+			console.log("To: " + toImagePath);
+			
+			fs.copySync(fromImagePath, toImagePath, {clobber: true});
+			$(item).attr("src", toImagePath);
+		});
+		
+		//Remove ATC-links
+		$("a.inlineGenerica").each(function(index, item) {
+			$(item).replaceWith($(item).text());
+		});
+		
+		//Remove footer
+		$("footer").remove();
+		
+		//Remove box collection
+		$("#boxCollection").remove();
+		
+		//Remove search result
+		$("#searchResults").remove();
+
+		//Remove modalMed
+		$("#modalMed").remove();
+		
+		//Remove the title, the metadata title will be used
+		$("h1").first().remove();
+
+		//Remove authors, metadata authors will be used
+		$("p.authors").remove();
+		
+		//Remove links concerning authors disclosure
+		$(".authorsDisclosure").remove();
+
+		//Unwrap links to fact boxes
+		$("a.factsLink").each(function(index, item) {
+			$(item).replaceWith($(item).text());
+		});
+
+		//Unwrap links to table boxes
+		$("a.tableLink").each(function(index, item) {
+			$(item).replaceWith($(item).text());
+		});
+
+		//Unwrap links to figure boxes
+		$("a.figureLink").each(function(index, item) {
+			$(item).replaceWith($(item).text());
+		});
+
+		//Fix references
+		$("a.inlineReference").each(function(index, item) {
+			$(item).replaceWith("<sup>(" + $(item).text() + ")</sup>");
+		});
+
+		//Remove from metadata title if it exists
+		$("title").text($("title").text().replace(" | Läkemedelsboken", ""));
+
+		//Pandoc does not handle colspans, insert 
+		$("td").each(function(index, item) {
+			var $item = $(item);
+			if ($item.attr("colspan") !== undefined) {
+				var nrOfMissingColumns = parseInt($item.attr("colspan")) - 1;
+				if (nrOfMissingColumns > 0) {
+					for (var i = 0; i < nrOfMissingColumns; i++) {
+						$item.after("<td></td>");
+					}
+				}
+			}
+		});
+
+		$("th").each(function(index, item) {
+			var $item = $(item);
+			if ($item.attr("colspan") !== undefined) {
+				var nrOfMissingColumns = parseInt($item.attr("colspan")) - 1;
+				if (nrOfMissingColumns > 0) {
+					for (var i = 0; i < nrOfMissingColumns; i++) {
+						$item.after("<th></th>");
+					}
+				}
+			}
+		});
+		
+		//Insert lines before and after figures
+		$("div.figure").before("<hr>").after("<hr>");
+
+		//Write temp html file
+		console.log("Writing temp html file: " + tempHtmlPath);
+		fs.writeFileSync(tempHtmlPath, $.html(), "utf8");
+		
+		var newFileName = path.basename(url, ".html") + "-" + draftOrPublish + "-" + fileNameDate + ".docx";
+		
+		var arguments = ["-S", tempHtmlPath, "-o", outPath];
+		
+		var hasExited = false;
+		var converter = spawn('pandoc', arguments);
 
 		converter.stdout.on('data', function (data) {
 			console.log('stdout: ' + data);

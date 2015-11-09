@@ -1,4 +1,4 @@
-var fs = require("fs");
+var fs = require("fs-extra");
 var path = require("path");
 var dateFormat = require("dateformat");
 var wrench = require("wrench");
@@ -253,8 +253,8 @@ var ContentModel = {
 								if (mostRecentPublishedChecksum === mostRecentDraftChecksum) {
 									lastVersionIsPublished = true;
 								} else {
-									console.log(mostRecentDraftChecksum + " !== " + mostRecentPublishedChecksum);
-									console.log(globalPagePath, mostRecentPath);
+									//console.log(mostRecentDraftChecksum + " !== " + mostRecentPublishedChecksum);
+									//console.log(globalPagePath, mostRecentPath);
 								}
 								
 							}
@@ -512,28 +512,6 @@ var ContentModel = {
 			var header = fs.readFileSync(headerPath, "utf8");
 			var footer = fs.readFileSync(footerPath, "utf8");
 						
-			//Fill in the rest of the meta data
-/*
-			header = header.replace(/\{title\}/g, data.title);
-			header = header.replace(/\{description\}/g, data.description);
-			header = header.replace(/\{author\}/g, data.author);
-			header = header.replace(/\{subject\}/g, data.subject);
-			header = header.replace(/\{keywords\}/g, data.keywords);
-			header = header.replace(/\{created\}/g, data.created);
-			header = header.replace(/\{modified\}/g, data.modified);
-			header = header.replace(/\{published\}/g, data.published);
-			header = header.replace(/\{informationType\}/g, data.informationType);
-
-			footer = footer.replace(/\{title\}/g, data.title);
-			footer = footer.replace(/\{description\}/g, data.description);
-			footer = footer.replace(/\{author\}/g, data.author);
-			footer = footer.replace(/\{subject\}/g, data.subject);
-			footer = footer.replace(/\{keywords\}/g, data.keywords);
-			footer = footer.replace(/\{created\}/g, data.created);
-			footer = footer.replace(/\{modified\}/g, data.modified);
-			footer = footer.replace(/\{published\}/g, data.published);
-			footer = footer.replace(/\{informationType\}/g, data.informationType);
-*/			
 			//Render components
 			if (data.components && data.components !== undefined) {
 				for (var name in data.components) {
@@ -961,29 +939,6 @@ var ContentModel = {
 			var header = fs.readFileSync(headerPath, "utf8");
 			var footer = fs.readFileSync(footerPath, "utf8");
 
-			/*
-			//Fill in the rest of the meta data
-			header = header.replace(/\{title\}/g, data.title);
-			header = header.replace(/\{description\}/g, data.description);
-			header = header.replace(/\{author\}/g, data.createdBy);
-			header = header.replace(/\{subject\}/g, data.subject);
-			header = header.replace(/\{keywords\}/g, data.keywords);
-			header = header.replace(/\{created\}/g, data.created);
-			header = header.replace(/\{modified\}/g, data.modified);
-			header = header.replace(/\{published\}/g, data.published);
-			header = header.replace(/\{informationType\}/g, data.informationType);
-
-			footer = footer.replace(/\{title\}/g, data.title);
-			footer = footer.replace(/\{description\}/g, data.description);
-			footer = footer.replace(/\{author\}/g, data.createdBy);
-			footer = footer.replace(/\{subject\}/g, data.subject);
-			footer = footer.replace(/\{keywords\}/g, data.keywords);
-			footer = footer.replace(/\{created\}/g, data.created);
-			footer = footer.replace(/\{modified\}/g, data.modified);
-			footer = footer.replace(/\{published\}/g, data.published);
-			footer = footer.replace(/\{informationType\}/g, data.informationType);
-			*/
-
 			//Render components
 			if (data.components && data.components !== undefined) {
 				for (var name in data.components) {
@@ -1131,9 +1086,6 @@ var ContentModel = {
 			//Run through post render template hook from pagetypes
 			var postRender = hooks.postRender(output, data);
 			
-			//Add current path preset to the page
-			//postRender = postRender.replace(/\{pre\}/g, "/cms/published");
-
 			//Determine level of dirs
 			var levels = contentPath.replace(/\/\//g, "/").split("/");
 
@@ -1418,6 +1370,7 @@ var ContentModel = {
 		}
 
 		//Remove any published versions
+		
 		//Check if draft version exists
 		var outPath = path.join(ContentModel.baseDir, "..", "output", "draft", pagePath.replace(".json", ".html"));
 		
@@ -1463,9 +1416,19 @@ var ContentModel = {
 		//The container
 		fs.unlinkSync(fullPath);
 		
-		//TODO: Remove snapshot history
+		//Remove snapshot history
+		var snapshotsDirPath = path.join(ContentModel.baseDir, path.dirname(pagePath), ".snapshots." + path.basename(pagePath));
 		
-		//TODO: Remove published history
+		if (fs.existsSync(snapshotsDirPath) && fs.statSync(snapshotsDirPath).isDirectory()) {
+			fs.removeSync(snapshotsDirPath);
+		}
+		
+		//Remove published history
+		var publishedVersionsDirPath = path.join(ContentModel.baseDir, path.dirname(pagePath), ".published." + path.basename(pagePath));
+		
+		if (fs.existsSync(publishedVersionsDirPath) && fs.statSync(publishedVersionsDirPath).isDirectory()) {
+			fs.removeSync(publishedVersionsDirPath);
+		}
 		
 		//Render dependent pages
 		if (dependentPages.length > 0) {
@@ -1577,6 +1540,22 @@ var ContentModel = {
 		
 		if (!fs.statSync(baseDirPath).isDirectory()) {
 			return callback(new Error(baseDirPath + " is not a directory"));
+		}
+
+		//Check if any pages reside in this directory
+		var allFiles = wrench.readdirSyncRecursive(baseDirPath);
+		
+		var pageExists = false;
+		
+		for (var i = allFiles.length - 1; i >= 0; i--) {
+			if (path.extname(allFiles[i]) === ".json") {
+				pageExists = true;
+				break;
+			}
+		}
+		
+		if (pageExists) {
+			return callback(new Error(baseDirPath + " has child pages that needs to be removed before the directory can be deleted"));
 		}
 		
 		var possibleMetadataPath = path.join(baseDirPath, "metadata");
@@ -1702,6 +1681,107 @@ var ContentModel = {
 		}
 		
 		fs.rename(beforePath, afterPath, callback);
+	},
+	movePage: function(fromPath, toDir, toName, callback) {
+
+		if (typeof fromPath !== "string") {
+			return callback(new Error("From: " + fromPath + " is not a string."));
+		}
+
+		if (typeof toDir !== "string") {
+			return callback(new Error("To dir: " + toDir + " is not a string."));
+		}
+
+		if (typeof toName !== "string") {
+			return callback(new Error("To name: " + toName + " is not a string."));
+		}
+		
+		//Remove unwanted characters
+		toDir = toDir.replace(/([^a-z0-9\/]+)/gi, '-');
+		if (toDir.length > 200) {
+			toDir = toDir.substr(0, 200);
+		}
+
+		//Remove unwanted characters
+		toName = toName.replace(/([^a-z0-9\/]+)/gi, '-');
+		if (toName.length > 200) {
+			toName = toName.substr(0, 200);
+		}
+
+		if (toDir === "") {
+			return callback(new Error("To dir was empty."));
+		}
+
+		if (toName === "") {
+			return callback(new Error("To name was empty."));
+		}
+		
+		var beforePath = path.join(ContentModel.baseDir, fromPath);
+		
+		if (!fs.existsSync(beforePath)) {
+			return callback(new Error(beforePath + " does not exist."));
+		}
+
+		var afterPath = path.join(ContentModel.baseDir, toDir, toName + ".json");
+		
+		if (fs.existsSync(afterPath)) {
+			return callback(new Error("A file or directory already exists at: " + afterPath));
+		}
+		
+		if (fromPath === "/") {
+			return callback(new Error("Cannot rename root directory."));
+		}
+		
+		//Checks are finished
+		
+		var toPath = path.join(toDir, toName + ".json");
+		
+		//Copy main file
+		fs.copySync(beforePath, afterPath);
+
+		//Copy index file
+		var beforeIndexPath = path.join(ContentModel.baseDir, fromPath.replace(".json", ".index"));
+
+		if (fs.existsSync(beforeIndexPath)) {
+			var afterIndexPath = path.join(ContentModel.baseDir, toDir, toName + ".index");
+
+			fs.copySync(beforeIndexPath, afterIndexPath);
+		}
+		
+		var oldDirPath = path.dirname(beforePath);
+		var oldFileName = path.basename(beforePath);
+		
+		//Copy snapshot versions dir
+		var beforeSnapshotsDirPath = path.join(oldDirPath, ".snapshots." + oldFileName);
+		if (fs.existsSync(beforeSnapshotsDirPath) && fs.statSync(beforeSnapshotsDirPath).isDirectory()) {
+			var afterSnapshotsDirPath = path.join(ContentModel.baseDir, toDir, ".snapshots." + toName + ".json");
+			fs.copySync(beforeSnapshotsDirPath, afterSnapshotsDirPath, {clobber: true, preserveTimestamps: true});
+		}
+		
+		//Copy published versions dir
+		var beforePublishedDirPath = path.join(oldDirPath, ".published." + oldFileName);
+		if (fs.existsSync(beforePublishedDirPath) && fs.statSync(beforePublishedDirPath).isDirectory()) {
+			var afterPublishedDirPath = path.join(ContentModel.baseDir, toDir, ".published." + toName + ".json");
+			fs.copySync(beforePublishedDirPath, afterPublishedDirPath, {clobber: true, preserveTimestamps: true});
+		}
+
+		//If everything is ok, remove the old page and save and publish the new one
+		ContentModel.removePage(fromPath, function(err) {
+			if (err) {
+				return callback(err);
+			}
+			
+			ContentModel.renderPageDraft(toPath, true, function(err) {
+				//Check if this page is to be published
+				var pageContents = fs.readJSONSync(afterPath, {throws: false});
+				if (pageContents !== null && pageContents.isPublished === true) {
+					ContentModel.renderPagePublished(toPath, true, callback);
+				} else {
+					return callback(null);
+				}
+			});
+			
+		});
 	},
 	getGUID: function() {
 		return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {

@@ -362,8 +362,7 @@ $(document).ready(function() {
 			$("#draftFrame").prop("src", url);
 			$("#draftLink").prop("href", url);
 			$("#draftPdfLink").prop("href", "/cms/content/pdf/download?url=" + encodeURIComponent(url));
-			//$("#draftWordLink").prop("href", url);
-
+			$("#draftWordLink").prop("href", "/cms/content/docx/download?url=" + encodeURIComponent(url));
 
 		});
 
@@ -384,7 +383,7 @@ $(document).ready(function() {
 			$("#publishedFrame").prop("src", url);
 			$("#publishedLink").prop("href", url);
 			$("#publishedPdfLink").prop("href", "/cms/content/pdf/download?url=" + encodeURIComponent(url));
-			//$("#publishedWordLink").prop("href", url);
+			$("#publishedWordLink").prop("href", "/cms/content/docx/download?url=" + encodeURIComponent(url));
 
 		});
 

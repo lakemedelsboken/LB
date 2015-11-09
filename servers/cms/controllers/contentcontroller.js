@@ -322,6 +322,7 @@ var ContentController = {
 	removePage: function(pagePath, callback) {
 		contentModel.removePage(pagePath, callback);
 	},
+	movePage: contentModel.movePage,
 	rename: function(before, after, callback) {
 		
 		if (after.indexOf("/images/") === 0) {
