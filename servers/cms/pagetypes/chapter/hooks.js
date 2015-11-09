@@ -2,6 +2,7 @@ var cheerio = require("cheerio");
 var fs = require("fs");
 var contentModel = require("../../models/contentmodel");
 var path = require("path");
+var createSearchIndex = require(__dirname + "/../../search/createSearchIndex.js");
 
 var Hooks = {
 	settings: {
@@ -16,8 +17,24 @@ var Hooks = {
 
 		var searchIndexPath = path.join(contentModel.baseDir, data.path.replace(".json", ".index"));
 
-		//Read search index for this page
-		var searchIndex = JSON.parse(fs.readFileSync(searchIndexPath, "utf8"));
+		var searchIndex = null;
+
+		if (fs.existsSync(searchIndexPath) && fs.statSync(searchIndexPath).isFile()) {
+			//Read search index for this page
+			searchIndex = JSON.parse(fs.readFileSync(searchIndexPath, "utf8"));
+		} else {
+
+			//Create a temporary search index
+			var relativePath = data.path.replace(contentModel.baseDir, "").replace(/\\/g, "/").replace(".json", ".html").replace(/\/\//g, "/");
+			if (relativePath.charAt(0) !== "/") {
+				relativePath = "/" + relativePath;
+			}
+
+			//Build search index
+			var chapterName = data.replacesUrl.replace(/\//g, "");
+			searchIndex = createSearchIndex(html, chapterName, relativePath);
+			
+		}
 		
 		//Build table of contents for side bar
 		var toc = buildSideBarToc(searchIndex);
