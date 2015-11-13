@@ -106,7 +106,6 @@ Vagrant.configure(2) do |config|
        #Skapa secretSettings
        #$ cd settings
        #make decrypt_conf
-       #Pw: house69_Cray
 
 
    #---------NodeJS ------- #TODO: placement of node bin
