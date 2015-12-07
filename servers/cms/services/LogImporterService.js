@@ -35,7 +35,7 @@ function run(callback) {
 		if (err) {
 			return callback(err);
 		}
-		
+
 		splitLogs(foundLogs, function(err, splittedLogs) {
 			if (err) {
 				return callback(err);
@@ -43,33 +43,33 @@ function run(callback) {
 
 			//Move found logs to processed dir
 			fs.ensureDirSync("/var/log/nginx/processed/");
-			
+
 			async.eachSeries(foundLogs, function(item, callback) {
 
 				fs.rename(item, "/var/log/nginx/processed/" + path.basename(item), callback);
-				
+
 			}, function(err) {
 
 				if (err) {
 					return callback(err);
 				}
-				
+
 				//Import the splitted log files
 				async.eachSeries(splittedLogs, function(item, callback) {
 					importRegularLogFile(item.regular, function(err) {
 						if (err) {
 							return callback(err);
 						}
-						
+
 						fs.unlinkSync(item.regular);
-						
+
 						importApiLogFile(item.api, function(err) {
 							if (err) {
 								return callback(err);
 							}
-							
+
 							fs.unlink(item.api, callback);
-							
+
 						});
 					});
 				}, function(err) {
@@ -84,16 +84,16 @@ function run(callback) {
 						}
 
 						return callback(null, "Finished importing logs");
-						
+
 					});
 
 				});
-				
+
 			});
 
 		});
 	});
-	
+
 }
 
 function archiveReports(callback) {
@@ -101,7 +101,7 @@ function archiveReports(callback) {
 	console.log("Archiving...");
 
 	var hasExited = false;
-	var archiver = spawn('/var/www/piwik/console', ["core:archive", "--force-all-websites", "--force-all-periods=315576000", "--force-date-last-n=7", "--url='http://staging.lakemedelsboken.se/piwik/'"]);
+	var archiver = spawn('/var/www/piwik/console', ["core:archive", "--force-all-websites", "--force-all-periods=315576000", "--force-date-last-n=7", "--url='http://service.lakemedelsboken.se/piwik/'"]);
 
 	archiver.stdout.on('data', function (data) {
 		console.log('stdout: ' + data);
@@ -120,7 +120,7 @@ function archiveReports(callback) {
 			hasExited = true;
 			callback();
 		}
-	});	
+	});
 
 	archiver.on('error', function (err) {
 
@@ -139,7 +139,7 @@ function importRegularLogFile(filePath, callback) {
 	console.log("Importing " + filePath);
 
 	var hasExited = false;
-	var importer = spawn('python', ["/var/www/piwik/misc/log-analytics/import_logs.py", "--url=http://staging.lakemedelsboken.se/piwik/", "--exclude-path='/fonts'", "--idsite=7", filePath]);
+	var importer = spawn('python', ["/var/www/html/piwik/misc/log-analytics/import_logs.py", "--url=http://service.lakemedelsboken.se/piwik/", "--exclude-path='/fonts'", "--idsite=3", filePath]);
 
 	importer.stdout.on('data', function (data) {
 		console.log('stdout: ' + data);
@@ -158,7 +158,7 @@ function importRegularLogFile(filePath, callback) {
 			hasExited = true;
 			callback();
 		}
-	});	
+	});
 
 	importer.on('error', function (err) {
 
@@ -169,7 +169,7 @@ function importRegularLogFile(filePath, callback) {
 			callback(err);
 		}
 	});
-
+ls
 }
 
 function importApiLogFile(filePath, callback) {
@@ -177,7 +177,7 @@ function importApiLogFile(filePath, callback) {
 	console.log("Importing " + filePath);
 
 	var hasExited = false;
-	var importer = spawn('python', ["/var/www/piwik/misc/log-analytics/import_logs.py", "--url=http://staging.lakemedelsboken.se/piwik/", "--idsite=8", filePath]);
+	var importer = spawn('python', ["/var/www/html/piwik/misc/log-analytics/import_logs.py", "--url=http://service.lakemedelsboken.se/piwik/", "--idsite=4", filePath]);
 
 	importer.stdout.on('data', function (data) {
 		console.log('stdout: ' + data);
@@ -196,7 +196,7 @@ function importApiLogFile(filePath, callback) {
 			hasExited = true;
 			callback();
 		}
-	});	
+	});
 
 	importer.on('error', function (err) {
 
@@ -222,15 +222,15 @@ function findLogs(callback) {
 		if (err) {
 			return callback(err);
 		}
-		
+
 		logFiles = logFiles.filter(function(item) {
 			return (item.indexOf("access.log") === 0);
 		});
-		
+
 		var zippedLogs = logFiles.filter(function(item) {
 			return (path.extname(item) === ".gz");
 		});
-		
+
 		zippedLogs = zippedLogs.map(function(item) {
 			return path.join(logsDirPath, item);
 		});
@@ -238,20 +238,20 @@ function findLogs(callback) {
 		logFiles = logFiles.map(function(item) {
 			return path.join(logsDirPath, path.basename(item, ".gz"));
 		});
-		
+
 		if (zippedLogs.length > 0) {
 
 			unzipFiles(zippedLogs, function(err) {
 				if (err) {
 					return callback(err);
 				}
-				
+
 				return callback(null, logFiles);
 			});
 		} else {
 			return callback(null, logFiles)
 		}
-		
+
 	});
 
 }
@@ -261,12 +261,12 @@ function unzipFiles(filePaths, callback) {
 	if (filePaths.length === 0) {
 		return callback();
 	}
-	
+
 	async.eachSeries(filePaths, unzipFile, callback);
 }
 
 function unzipFile(filePath, callback) {
-	
+
 	var hasExited = false;
 	var gunzip = spawn('gunzip', [filePath]);
 
@@ -287,7 +287,7 @@ function unzipFile(filePath, callback) {
 			hasExited = true;
 			callback();
 		}
-	});	
+	});
 
 	gunzip.on('error', function (err) {
 
@@ -298,7 +298,7 @@ function unzipFile(filePath, callback) {
 			callback(err);
 		}
 	});
-	
+
 }
 
 function splitLogs(logPaths, callback) {
@@ -315,7 +315,7 @@ function splitLog(logPath, callback) {
 	var total = 0;
 
 	var outputLogsDir = path.join(__dirname, "logs");
-	
+
 	fs.ensureDirSync(outputLogsDir);
 
 	var baseName = path.basename(logPath)
@@ -329,9 +329,9 @@ function splitLog(logPath, callback) {
 	lineReader.eachLine(logPath, function(line, last) {
 
 		total++;
-		
+
 		var url = undefined;
-		
+
 		if (line.indexOf("\"GET ") > -1) {
 			url = line.split("\"GET ")[1];
 			url = url.split("\"")[0];
@@ -372,5 +372,5 @@ function splitLog(logPath, callback) {
 
 			callback(null, {regular: regularLogFilePath, api: apiLogFilePath});
 		}
-	});	
+	});
 }

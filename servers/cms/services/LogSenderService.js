@@ -31,10 +31,10 @@ function run(callback) {
 			} else {
 				return callback(null, "Finished sending log to piwik");
 			}
-			
+
 		});
 	});
-	
+
 }
 
 function findLog(callback) {
@@ -44,7 +44,7 @@ function findLog(callback) {
 
 	//TODO: Test file
 	//expectedLogFileName = "access.log";
-	
+
 	console.log("Looking for log named: " + expectedLogFileName);
 
 	var logsDirPath = "/var/log/nginx/";
@@ -54,7 +54,7 @@ function findLog(callback) {
 	}
 
 	var expectedLogFilePath = path.join(logsDirPath, expectedLogFileName);
-	
+
 	if (!fs.existsSync(expectedLogFilePath)) {
 		return callback(new Error("File: " + expectedLogFilePath + " does not exist."));
 	}
@@ -66,12 +66,12 @@ function findLog(callback) {
 function sendFile(filePath, callback) {
 
 	var hasExited = false;
-	
+
 	console.log("Sending: " + filePath);
 
 	var baseName = path.basename(filePath);
 
-	var rsync = spawn('rsync', ['-z', filePath, 'root@staging.lakemedelsboken.se:/var/log/nginx/incoming/' + baseName]);
+	var rsync = spawn('rsync', ['-z', filePath, 'root@service.lakemedelsboken.se:/var/log/nginx/incoming/' + baseName]);
 
 	rsync.stdout.on('data', function (data) {
 		console.log('stdout: ' + data);
@@ -90,7 +90,7 @@ function sendFile(filePath, callback) {
 			hasExited = true;
 			callback();
 		}
-	});	
+	});
 
 	rsync.on('error', function (err) {
 
@@ -100,6 +100,6 @@ function sendFile(filePath, callback) {
 			hasExited = true;
 			callback(err);
 		}
-	});	
+	});
 
 }
