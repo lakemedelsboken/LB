@@ -58,13 +58,13 @@ namespace :deploy do
       execute "ln -nfs #{shared_path}/fass/shared #{release_path}/fass/"
 
       #rebuild node-xml module
-      execute "cd #{release_path}/npl/node_modules/xml-stream/ && npm rebuild"
+      execute "cd #{release_path}/npl/ && npm install xml-stream"
 
       #rebuild scrypt module
       execute "cd #{release_path}/servers/cms/node_modules/scrypt/ && npm install"
 
       ask(:secretSettingsPassword, nil, echo: false)
-      
+
       #if
       execute "mkdir -p #{shared_path}/settings"
       execute "rm -f #{shared_path}/settings/*"
@@ -74,9 +74,8 @@ namespace :deploy do
 
       execute "ln -nfs #{shared_path}/settings #{release_path}/"
       execute "cd #{shared_path}/settings && make decrypt_conf_pass PASS=#{fetch(:secretSettingsPassword)}"
-
       #Make current release a working git repository
-      if fetch(:stage) == :staging 
+      if fetch(:stage) == :staging
         execute "rm -rf /var/www/lb/gittemp/"
         execute "git clone -b #{fetch(:branch)} --single-branch --depth 1 ssh://git@github.com/lakemedelsboken/LB.git /var/www/lb/gittemp"
         execute "mv /var/www/lb/gittemp/.git /var/www/lb/current/.git"
@@ -84,7 +83,7 @@ namespace :deploy do
       end
 
       execute "pm2 kill"
-      
+
       execute "cd /var/www/lb/current/servers/ && export NODE_ENV=production && pm2 start ./pm2_#{fetch(:stage)}.json"
     end
   end
