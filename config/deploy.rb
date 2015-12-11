@@ -75,7 +75,7 @@ namespace :deploy do
       execute "ln -nfs #{shared_path}/settings #{release_path}/"
       execute "cd #{shared_path}/settings && make decrypt_conf_pass PASS=#{fetch(:secretSettingsPassword)}"
       #Make current release a working git repository
-      if fetch(:stage) == :staging
+      if fetch(:stage) == :cms
         execute "rm -rf /var/www/lb/gittemp/"
         execute "git clone -b #{fetch(:branch)} --single-branch --depth 1 ssh://git@github.com/lakemedelsboken/LB.git /var/www/lb/gittemp"
         execute "mv /var/www/lb/gittemp/.git /var/www/lb/current/.git"
