@@ -7,6 +7,9 @@ var cheerio = require("cheerio");
 var crypto = require("crypto");
 var request = require("request");
 var nodemailer = require("nodemailer");
+var auth = require('./authenticationService');
+var Q = require('q');
+
 
 var baseUrl = "http://www.fass.se/LIF/FassDocumentWebService2?WSDL";
 
@@ -23,7 +26,7 @@ if (!fs.existsSync(secretSettingsPath)) {
 (function() {
 	var conf_time = fs.statSync(secretSettingsPath).mtime.getTime();
 	var cast5_time = fs.statSync(secretSettingsPath + ".cast5").mtime.getTime();
- 
+
 	if (conf_time < cast5_time) {
 		console.error("Your config file is out of date!");
 		console.error("You need to run `make decrypt_conf` to update it.");
@@ -34,6 +37,8 @@ if (!fs.existsSync(secretSettingsPath)) {
 var secretSettings = JSON.parse(fs.readFileSync(secretSettingsPath, "utf8"));
 
 var fassUserId = secretSettings.fass.fassUserId;
+var fassUsername = secretSettings.fass.username;
+var fassPassword = secretSettings.fass.password;
 
 var chokidar = require("chokidar");
 var watcher = chokidar.watch(path.normalize(__dirname + "/shared/foundUpdates.json"), {persistent: true, ignoreInitial: true, interval:1000});
@@ -55,30 +60,34 @@ function fetchUpdates() {
 		//console.log("Updated already in progress");
 		return;
 	}
-	
+
 	isUpdating = true;
 
 	var foundUpdates = [];
-	
+
 	try {
 		foundUpdates = JSON.parse(fs.readFileSync(__dirname + "/shared/foundUpdates.json", "utf8"));
 	} catch (err) {
 		console.error("Error trying to parse shared/foundUpdates.json:")
 		console.error(err);
 	}
-	
+
 	if (foundUpdates.length > 1) {
 		//Get the last item and update
 		var updates = [foundUpdates[foundUpdates.length - 1]];
 		check(updates);
 	} else {
+		auth.logout();
 		console.log("Fetch queue is empty.");
 		isUpdating = false;
 	}
+
 }
 
 //Run at start
 fetchUpdates();
+
+
 
 function check(updates) {
 
@@ -86,18 +95,13 @@ function check(updates) {
 
 	var q = async.queue(function (task, callback) {
 
-		var productInfoEnvelope = "<env:Envelope xmlns:env=\"http://schemas.xmlsoap.org/soap/envelope/\"><env:Header /><env:Body><getXmlDocumentByNplIdElement xmlns=\"http://webservice.usersys.fass.lif.se/\"><nplId>{NPLID}</nplId><userId>{USERID}</userId></getXmlDocumentByNplIdElement></env:Body></env:Envelope>";
-		productInfoEnvelope = productInfoEnvelope.replace("{NPLID}", task.nplId).replace("{USERID}", fassUserId);
-
-		//Send request
-		requestSoapData(task.url, productInfoEnvelope, function(err, answer) {
-			if (err) {
-				//console.log(err);
-				callback(err, task.nplId);
-			} else {
+		auth.login(fassUsername, fassPassword)
+		.then(function (ticket) {
+			getProductByNplId(ticket, task.nplId)
+			.then(function (answer) {
 				processAnswer(answer, task.nplId, function(err, data) {
 
-					if (err && (err.message.indexOf("Error fetching") > -1 || err.message.indexOf("Unexpected error") > -1)) { 
+					if (err && (err.message.indexOf("Error fetching") > -1 || err.message.indexOf("Unexpected error") > -1)) {
 						callback(err, task.nplId);
 					} else if (data && data.id !== undefined) {
 						var fileName = __dirname + "/www/products/" + data.id + ".json";
@@ -105,7 +109,7 @@ function check(updates) {
 
 						//Save to file
 						fs.writeFileSync(fileName, JSON.stringify(data, null, "\t"));
-						
+
 						var description = data.name + ", " + data.description;
 						if (data.name === undefined) {
 							description = "Preparatet har ingen förskrivarinformation: " + data.id;
@@ -119,25 +123,16 @@ function check(updates) {
 						}
 					}
 				});
-			}
+			});
+		})
+		.fail(function (error) {
+			console.log(error.message);
 		});
-
 	}, 1);
-
-	//When queue is done
-	q.drain = function() {
-
-		//console.log("Queue is done for now");
-		isUpdating = false;
-		fetchUpdates();
-
-	}
 
 	//Add to queue
 	for (var i = 0; i < updates.length; i++) {
-
 		if (updates[i] !== null && updates[i] !== undefined && updates[i] !== "undefined") {
-
 			q.push({url: baseUrl, nplId: updates[i]}, function(err, id, name) {
 				if (err) {
 					console.log(err);
@@ -160,7 +155,7 @@ function check(updates) {
 							moveToLast(id);
 						}
 					}
-				
+
 				} else {
 					//Remove from master list, this will trigger a new run of fetchUpdates()
 					removeFromFoundUpdates(id);
@@ -170,9 +165,9 @@ function check(updates) {
 					}
 					console.log(formatDate(new Date()) + " Finished updating " + id + " (" + abbrName + ")");
 				}
-			
+
 			});
-			
+
 		} else {
 			//Remove from list if undefined, null or "undefined"
 			removeFromFoundUpdates(updates[i]);
@@ -180,9 +175,35 @@ function check(updates) {
 				q.drain();
 			}
 		}
+	}
+
+	//When queue is done
+	q.drain = function() {
+		//console.log("Queue is done for now");
+		isUpdating = false;
+		fetchUpdates();
 
 	}
-	
+}
+
+function getProductByNplId(ticket, nplId) {
+	var deferred = Q.defer();
+	var options = {
+		url: 'https://www.fass.se/rest/fassdocument/nplid?version=1.0&nplId='+nplId,
+		headers: {
+			'ticket': ticket
+		}
+	};
+
+
+
+	request(options, function (error, response, body) {
+		deferred.resolve(body);
+	}).on('error', function (e) {
+		deferred.reject(e);
+	});
+
+	return deferred.promise
 }
 
 function moveToLast(nplId) {
@@ -206,7 +227,7 @@ function moveToLast(nplId) {
 	} else {
 		removeFromFoundUpdates(nplId);
 	}
-	
+
 }
 
 function removeFromFoundUpdates(nplId) {
@@ -223,7 +244,7 @@ function removeFromFoundUpdates(nplId) {
 	//console.log("Saving new list");
 	fs.writeFileSync(__dirname + "/shared/foundUpdatesFetchLock.json", JSON.stringify(foundUpdates, null, "\t"), "utf8");
 	fs.renameSync(__dirname + "/shared/foundUpdatesFetchLock.json", __dirname + "/shared/foundUpdates.json");
-	
+
 }
 
 function getNoInfo(nplId) {
@@ -246,28 +267,26 @@ function processAnswer(answer, nplId, callback) {
 		var output = getNoInfo(nplId);
 		callback(new Error("No published FASS-document: " + nplId), output);
 
-		
+
 	} else if (answer.indexOf("Product is not active") > -1) {
 
 		var output = getNoInfo(nplId);
 		callback(new Error("Product is not active: " + nplId), output);
-		
+
 	} else if (answer.indexOf("Unable to find document for nplId = ") > -1) {
 
 		var output = getNoInfo(nplId);
 		callback(new Error("Unable to find document for nplId = " + nplId), output);
-		
+
 	} else if (answer.indexOf("Unexpected error") > -1) {
 
 		var output = getNoInfo(nplId);
 		callback(new Error("Unexpected error for nplId = " + nplId), output);
-		
-	} else {
 
+	} else {
 		var $ = cheerio.load("<html><body>" + answer + "</body></html>");
 
 		var product = $("npl-id:contains('" + nplId + "')").parent().parent();
-		
 		if (product.length > 0) {
 			processProduct(product, $, function(err, result) {
 				callback(err, result);
@@ -286,11 +305,9 @@ function processProduct(product, $, callback) {
 	var nplId = product.find("npl-id").text().trim();
 
 	if (drugName === "" || drugName === null || nplId === null || nplId === "undefined" || nplId === undefined && nplId === "") {
-		
-		console.log(answer);
-	
+
 		var output = {id: nplId, noinfo: true};
-	
+
 		callback(new Error("Error fetching nplId: " + nplId), output);
 	} else {
 		getImageData(nplId, function(err, imagesData) {
@@ -310,17 +327,17 @@ function processProduct(product, $, callback) {
 					output.available = product.find("product-info > available").text();
 					output.active = product.find("product-info > active").text();
 					var additionalMonitoring = product.find("product-info > additional-monitoring");
-					
+
 					if (additionalMonitoring.length > 0 && additionalMonitoring.first().text() === "true") {
 						output.additionalMonitoring = true;
 					} else {
 						output.additionalMonitoring = false;
 					}
-					
+
 					if (spcLink !== undefined && spcLink !== null && spcLink !== "" && spcLink !== "undefined") {
 						output.spcLink = spcLink;
 					}
-					
+
 					output.partOfFass = $("is-part-of-fass").text();
 					output.lffInsurance = $("lff-insurance-member").text();
 					/*
@@ -334,11 +351,11 @@ function processProduct(product, $, callback) {
 					I fall 3 och 4 ignoreras alltså värdet för läkemedelsförsäkringen eftersom värdet för Fass medlemsskap är ”False”.
 					Vi fortsätter att titta på detta men tills vidare måste alltså ni som användare av Fass webtjänst se till att korrekt information presenteras med hänvisning till ovanstående kombination av svar!
 					*/
-									
+
 					output.benefit = product.find("product-info > benefit").text();
 					/*
 					Förmånsbegränsning, Värden: 0 = ingen förp. ingår i förmånen, 1 = alla förp. ingår i förmånen, 2 vissa förp. ingår i förmånen, 3 förmån med begränsning, 4 ingen symbol
-					*/						
+					*/
 					output.prescription = product.find("product-info > prescription").text();
 					/*
 					Receptbelagt -=Ospecificerad, 0=Receptfritt, 1=Receptbelagt, 2=Inskränkt förskrivning, 3=Vissa förpackningar receptbelagda, 4=Receptfritt från 2 års ålder, 5=Receptfritt från 12 års ålder, N=Ej tillämplig
@@ -352,12 +369,12 @@ function processProduct(product, $, callback) {
 
 					output.narcoticClass = product.find("product-info > narcotic-class").text();
 					//Narkotikaklass - = Ospecificerad, 0 = Ej narkotikaklassad, 1 = II - Narkotika. Substanser med högre beroendepotential och liten terapeutisk användning, 2 = Narkotika förteckning IV/V, 3 = III - Narkotika. Beredning innehållande dessa är narkotika under vissa förutsättningar, 4 = IV - Narkotika. Substanser med lägre beroendepotential och bred terapeutisk användning, 5 = V - Narkotika enbart enligt svensk lag, 6 = I - Narkotika ej förekommande i läkemedel, NA = Ej tillämplig
-									
+
 					output.narcoticClassTextCaution = product.find("product-info > narcotic-class-text-caution").text();
 					output.narcoticClassTextHabituation = product.find("product-info > narcotic-class-text-habituation").text();
-									
+
 					//http://dtd.fass.se/schemas/ws-schemas/common/extra-product-info.xsd
-									
+
 					var substances = [];
 					product.find("substance > display-substance-name").each(function(index, element) {
 						substances.push($(element).text());
@@ -427,14 +444,14 @@ function processProduct(product, $, callback) {
 					sections["Förpackningsinformation"] = formatSection($("price-text", body));
 
 					output.sections = sections;
-			
+
 					callback(null, output);
-					
+
 				});
 			}
 		});
 	}
-	
+
 }
 
 function createCheckSum(data) {
@@ -456,7 +473,7 @@ function formatSection(section) {
 
 	//replace links
 	$("newslink", section).remove();
-	
+
 	//turn to string
 	section = section.html();
 
@@ -496,8 +513,8 @@ function formatSection(section) {
 
 		section = section.replace(/\<clickable\/\>/g, "");
 		section = section.replace(/\<clickable\>/g, "");
-		
-		
+
+
 		section = section.replace(/\<paragraph\>/g, "<p>");
 		section = section.replace(/\<\/paragraph\>/g, "</p>");
 
@@ -526,7 +543,7 @@ function formatSection(section) {
 		section = section.replace(/\<\/image\>/g, "");
 		section = section.replace(/fileref\=\"\//g, "src=\"http://www.fass.se/");
 		section = section.replace(/fileref\=\"/g, "src=\"");
-		
+
 	} else {
 		section = "";
 	}
@@ -536,27 +553,22 @@ function formatSection(section) {
 
 function getImageData(nplId, callback) {
 
-	var productInfoEnvelope = "<env:Envelope xmlns:env=\"http://schemas.xmlsoap.org/soap/envelope/\"><env:Header /><env:Body><getTabletInfoByProductIdElement xmlns=\"http://webservice.usersys.fass.lif.se/\"><nplId>{NPLID}</nplId><userId>{USERID}</userId></getTabletInfoByProductIdElement></env:Body></env:Envelope>";
-	productInfoEnvelope = productInfoEnvelope.replace("{NPLID}", nplId).replace("{USERID}", fassUserId);
+	auth.login(fassUsername, fassPassword)
+	.then(function (ticket) {
+		var options = {
+			url: 'https://www.fass.se/rest/fia/tabletinfo?version=1.0&nplId='+nplId,
+			headers: {
+				'ticket': ticket
+			}
+		};
 
-	requestSoapData("http://www.fass.se/LIF/FIAWebService2?WSDL", productInfoEnvelope, function(err, data) {
-		if (err) {
-			callback(err);
-		} else {
-			//Clean data
-			data = data.replace(/ns0\:/g, "");
-			data = data.replace(/ns1\:/g, "");
-			data = data.replace(/ns2\:/g, "");
-			data = data.replace(/ns3\:/g, "");
-			data = data.replace(/ns4\:/g, "");
-			data = data.replace(/ns5\:/g, "");
-
+		request(options, function (error, response, data) {
 			var images = [];
 
 			var $ = cheerio.load("<html><body>" + data + "</body></html>");
 
 			$("items").each(function(index, item) {
-			
+
 				item = $(item);
 				var image = {};
 
@@ -580,51 +592,15 @@ function getImageData(nplId, callback) {
 				}
 			});
 
-			callback(null, images);
-		}
+			callback(null, images)
+
+		}).on('error', function (e) {
+
+		});
+	})
+	.fail(function (error) {
+		console.log(error.message);
 	});
-}
-
-function requestSoapData(url, xmlDoc, callback) {
-
-	url = urlParser.parse(url);
-	var responseXml = [];
-
-	var options = {
-	  host: url.host,
-	  port: 80,
-	  path: url.pathname + url.search,
-	  method: 'POST',
-	  headers: {"Content-Type": "text/xml"}
-	};
-	
-	var req = http.request(options, function(res) {
-		res.on('data', function (chunk) {
-			responseXml.push(chunk);
-		});
-		res.on("end", function() {
-			req = null;
-			res = null;
-			//Success
-			callback(null, responseXml.join(""));
-		});
-		res.on("error", function(err) {
-			req = null;
-			res = null;
-			callback(err);
-		});
-	});
-
-	req.on("error", function(err) {
-	    if (err.code === "ECONNRESET") {
-			callback(new Error("Timeout for: " + url + " with data: " + xmlDoc));
-	    } else {
-	    	callback(err);
-	    }
-	});	
-
-	req.write(xmlDoc);
-	req.end();	
 }
 
 function formatDate(time) {
@@ -656,7 +632,7 @@ function formatDate(time) {
 function getSPC(name, nplId, callback) {
 
 	var alreadyFetched = false;
-/*	
+/*
 	if (fs.existsSync(__dirname + "/products/" + nplId + ".json")) {
 		var produ = JSON.parse(fs.readFileSync(__dirname + "/products/" + nplId + ".json", "utf8"));
 		if (produ.spcLink !== undefined) {
@@ -665,7 +641,7 @@ function getSPC(name, nplId, callback) {
 			setTimeout(function() {
 				callback(null, produ.spcLink);
 			}, 1);
-		} 
+		}
 	}
 */
 	if (!alreadyFetched) {
@@ -673,7 +649,7 @@ function getSPC(name, nplId, callback) {
 			if (err) {
 				return callback(err);
 			}
-		
+
 			if (!data.isCentral) {
 				callback(null, data.spcLink)
 			} else {
@@ -708,7 +684,7 @@ function _getMpaSPC(name, nplId, callback) {
 	}
 	callback(error, {isCentral: isCentral, spcLink: spcLink});
 
-/*	
+/*
 
 	request("http://www.lakemedelsverket.se/LMF/Lakemedelsinformation/?nplid=" + nplId + "&type=product", function (err, response, body) {
 
@@ -720,11 +696,11 @@ function _getMpaSPC(name, nplId, callback) {
 			if (body.indexOf("Detta läkemedel är centralt godkänt") > -1) {
 				isCentral = true;
 			}
-			
+
 			if (!isCentral) {
 				var $ = cheerio.load(body);
 				var links = $("div.docLink a");
-			
+
 				links.each(function(index, element) {
 					if ($(element).attr("href").indexOf("SmPC") > -1) {
 						spcLink = $(element).attr("href");
@@ -733,22 +709,22 @@ function _getMpaSPC(name, nplId, callback) {
 					}
 				});
 			}
-			
+
 		} else {
 			error = new Error("Error loading docs: http://www.lakemedelsverket.se/LMF/Lakemedelsinformation/?nplid=" + nplId + "&type=product");
 		}
 
 		callback(error, {isCentral: isCentral, spcLink: spcLink});
-		
+
 	});
-	
+
 */
 }
 
 //var finishedCentralSPCs = {};
 
 function _getCentralSPC(name, nplId, callback) {
-	
+
 	var searchName = name.replace("®", "").toLowerCase();
 	if (searchName.indexOf("(") > -1) {
 		searchName = searchName.substr(0, searchName.indexOf("("));
@@ -774,30 +750,30 @@ function _getCentralSPC(name, nplId, callback) {
 				var link = $(element);
 				possibleLinks.push({name: link.text().trim().toLowerCase(), href: "http://www.ema.europa.eu/ema/" + link.attr("href")});
 			});
-		
+
 			if (possibleLinks.length > 1) {
 				var filteredLinks = possibleLinks.filter(function(link) {
 					return (link.name === searchName)
 				});
-				
+
 				if (filteredLinks.length === 0 || filteredLinks.length > 1) {
 					filteredLinks = [possibleLinks[0]];
 				}
 				possibleLinks = filteredLinks;
 			}
-		
+
 			if (possibleLinks.length === 1) {
 				//console.log("Link for: " + searchName);
 				//Pursue, get specific page for product
 				request(possibleLinks[0].href, function (err2, response2, body2) {
 					if (!err2 && response2.statusCode == 200) {
-						
+
 						var $d = cheerio.load(body2);
-						
+
 						var pdfLink = $d("a.pdf").filter(function(index) {
 							return (($d(this).text().indexOf("EPAR - Product Information") > -1) && ($d(this).attr("href").indexOf("sv_SE") > -1));
 						});
-						
+
 						if (pdfLink.length === 1) {
 							//console.log("Found SPC: " + spcLink);
 							var spcLink = "http://www.ema.europa.eu" + pdfLink.attr("href");
@@ -806,7 +782,7 @@ function _getCentralSPC(name, nplId, callback) {
 						} else {
 							callback(new Error("Multiple links for " + searchName + " " + pdfLink.length));
 						}
-						
+
 					} else {
 						callback(err2);
 					}
@@ -836,9 +812,9 @@ function sendMail(subject, text) {
 	});
 
 	var mailOptions = {
-		from: "Läkemedelsboken <" + secretSettings.fass.gmailAddress + ">", 
-		to: secretSettings.fass.dailyReportRecipients, 
-		subject: "[BOT] " + subject, 
+		from: "Läkemedelsboken <" + secretSettings.fass.gmailAddress + ">",
+		to: secretSettings.fass.dailyReportRecipients,
+		subject: "[BOT] " + subject,
 		text: plainMail
 	}
 
@@ -850,5 +826,5 @@ function sendMail(subject, text) {
 		}
 
 		smtpTransport.close();
-	});	
+	});
 }
