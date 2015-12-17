@@ -1,7 +1,5 @@
-var cheerio = require("cheerio");
 var fs = require("fs");
 var Q = require('q');
-var urlParser = require("url");
 var request = require('request');
 var auth = require('./authenticationService');
 
@@ -89,6 +87,7 @@ function findUpdates() {
 		};
 
 		request(options, function (error, response, body) {
+
 			deferred.resolve(body);
 		}).on('error', function (e) {
 			deferred.reject(e);
@@ -101,15 +100,13 @@ function findUpdates() {
 
 
 	function parseResponseAndSave(response) {
-		response = response.replace(/ns0\:documentInfo/g, "result");
-		response = response.replace(/ns0\:id/g, "nplid");
-
 		var nplIds = [];
-		var $ = cheerio.load(response, {xmlMode: true});
-		var results = $("result");
+		var arr = JSON.parse(response);
+		console.log(arr[0]);
 
-		results.each(function(index, result) {
-			nplId = $(result).children()['0'].children[0].data;
+		arr.forEach(function(result) {
+			console.log(result);
+			nplId = result.id;
 
 			if (nplId !== "") {
 				nplIds.push(nplId);
