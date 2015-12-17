@@ -21,7 +21,7 @@ if (!fs.existsSync(secretSettingsPath)) {
 (function() {
 	var conf_time = fs.statSync(secretSettingsPath).mtime.getTime();
 	var cast5_time = fs.statSync(secretSettingsPath + ".cast5").mtime.getTime();
- 
+
 	if (conf_time < cast5_time) {
 		console.error("Your config file is out of date!");
 		console.error("You need to run `make decrypt_conf` to update it.");
@@ -198,7 +198,7 @@ app.get('/api/v1/boxsearch', function(req,res){
 			}
 
 		});
-		
+
 	} else {
 		res.status(403);
 		res.end("403 Forbidden, too many requests from the same ip-address without an api key");
@@ -233,7 +233,7 @@ app.get('/api/v1/atctree', function(req,res){
 			}
 
 		});
-		
+
 	} else {
 		res.status(403);
 		res.end("403 Forbidden, too many requests from the same ip-address without an api key");
@@ -257,7 +257,7 @@ app.get('/api/v1/injectgenericas/test1.html', function(req,res) {
 		res.status(403);
 		res.end("403 Forbidden, too many requests from the same ip-address without an api key");
 	}
-	
+
 });
 
 //Get full atcTree
@@ -269,14 +269,14 @@ app.get('/api/v1/atcTree.json', function(req,res) {
 	if (isAllowed) {
 
 		var atcTreePath = path.join(__dirname, "..", "..", "npl", "atcTree.json");
-		
+
 		res.sendfile(atcTreePath);
 
 	} else {
 		res.status(403);
 		res.end("403 Forbidden, too many requests from the same ip-address without an api key");
 	}
-	
+
 });
 
 
@@ -289,14 +289,14 @@ app.get('/api/v1/injectgenericas/lb.injectgenericas.css', function(req,res) {
 	if (isAllowed) {
 
 		var cssPath = path.join(__dirname, "css", "lb.injectgenericas.min.css");
-		
+
 		res.sendfile(cssPath);
 
 	} else {
 		res.status(403);
 		res.end("403 Forbidden, too many requests from the same ip-address without an api key");
 	}
-	
+
 });
 
 app.get('/api/v1/appindex', function(req,res) {
@@ -314,7 +314,7 @@ app.get('/api/v1/appindex', function(req,res) {
 		} else {
 			res.json(index);
 		}
-		
+
 	} else {
 		res.status(403);
 		res.end("403 Forbidden, too many requests from the same ip-address without an api key");
@@ -330,9 +330,9 @@ app.get('/api/v1/appify', function(req,res) {
 	var isAllowed = checkIfApiKeyIsLegit(apiKey, req);
 
 	if (isAllowed) {
-		
+
 		url = url.replace(/\.\./g, "");
-		
+
 		//Find if the page exists
 		var basePath = path.join(__dirname, "..", "cms", "output", "published");
 		var fullPath = path.join(basePath, url);
@@ -354,7 +354,7 @@ app.get('/api/v1/appify', function(req,res) {
 					res.end("Forbidden");
 				}
 			});
-			
+
 		} else {
 			res.status(403);
 			res.end("Forbidden");
@@ -378,7 +378,7 @@ function parseToAppHtml(fullPath, callback) {
 		}
 
 		var $ = cheerio.load(data);
-		
+
 		//Fix images
 		$("div.figureImage, div.image").each(function(index, element) {
 			var $element = $(element);
@@ -395,48 +395,48 @@ function parseToAppHtml(fullPath, callback) {
 					return false;
 				}
 			});
-			
+
 			if (correctSrc !== undefined) {
 				$element.empty();
 				$element.replaceWith("<img src=\"" + correctSrc + "\" class=\" figureImage img-responsive\">");
 			}
-			
+
 		});
-		
+
 		//Fix pageLinks
 		$("a").each(function(index, element) {
 			var $element = $(element);
-			
+
 			var href = $element.attr("href");
-			
+
 			if (href !== undefined && typeof href === "string" && href.indexOf("http://") === -1 && href.indexOf("https://") === -1) {
 				if ($element.attr("class") === undefined || $element.attr("class") === "") {
 					$element.addClass("pageLink");
 				}
 			}
-			
+
 		});
 
-		
+
 		//Fix header and footer, remove menu and search
 		var mainContainer = $("div#main");
-		
+
 		var mainClasses = mainContainer.attr("class");
-		
+
 		if (mainClasses !== undefined) {
 			outline = outline.replace("{mainclass}", " class=\"" + mainClasses + "\"");
 		} else {
 			outline = outline.replace("{mainclass}", "");
 		}
-		
+
 		outline = outline.replace("{content}", mainContainer.html());
 		var title = $("h1").first();
 		if (title !== undefined && title.length === 1) {
 			outline = outline.replace("{title}", title.text());
 		}
-		
-		
-		
+
+
+
 		outline = outline.replace(/\{version\}/g, staticSettings.version);
 
 		return callback(null, outline);
@@ -451,7 +451,7 @@ app.get('/api/v1/injectgenericas/lb.injectgenericas.js/:selector?', function(req
 
 	var apiKey = req.query["apikey"];
 	var envSetting = req.query["env"];
-	
+
 	var isAllowed = checkIfApiKeyIsLegit(apiKey, req);
 
 	if (isAllowed) {
@@ -460,9 +460,9 @@ app.get('/api/v1/injectgenericas/lb.injectgenericas.js/:selector?', function(req
 			'Vary': 'Accept-Encoding',
 			'Last-Modified': '0'
 		});
-		
+
 		var selector = req.params.selector;
-		
+
 		if (!selector) {
 			selector = "body";
 		}
@@ -474,14 +474,14 @@ app.get('/api/v1/injectgenericas/lb.injectgenericas.js/:selector?', function(req
 		}
 
 		var cacheKey = createHash(apiKey + "_" + selector + "_" + environment);
-		
+
 		var script = "";
-		
+
 		if (cache.has(cacheKey)) {
 			script = cache.get(cacheKey);
 		} else {
 			script = fs.readFileSync(path.join(__dirname, "scripts", "lb.injectgenericas.min.js"), "utf8");
-		
+
 			script = script.replace(/{SELECTOR}/g, selector);
 			script = script.replace(/{URL_SELECTOR}/g, encodeURIComponent(selector));
 			script = script.replace(/{APIKEY}/g, apiKey);
@@ -489,14 +489,14 @@ app.get('/api/v1/injectgenericas/lb.injectgenericas.js/:selector?', function(req
 
 			cache.set(cacheKey, script);
 		}
-		
+
 		res.send(script);
-		
+
 	} else {
 		res.status(403);
 		res.end("403 Forbidden, too many requests from the same ip-address without an api key");
 	}
-	
+
 });
 
 //Tag generica names in a text
@@ -507,7 +507,7 @@ app.get('/api/v1/injectgenericas/:selector?', function(req,res){
 
 	var content = req.query["content"];
 	var url = req.query["url"];
-	
+
 	var apiKey = req.query["apikey"];
 	var isAllowed = checkIfApiKeyIsLegit(apiKey, req);
 
@@ -526,22 +526,22 @@ app.get('/api/v1/injectgenericas/:selector?', function(req,res){
 				} else {
 					//Load in cheerio
 					var $ = cheerio.load(data);
-					
+
 					var selector = req.params.selector;
 					if (!selector) {
 						selector = "body";
 					}
-					
+
 					var selectedElement = $(selector);
-					
+
 					if (selectedElement.length > 0) {
 						selectedElement = selectedElement.first();
-						
+
 						selectedElement.find("script").remove();
 
 						data = selectedElement.html();
 						data = data.replace(/\r\n/g, "\n"); //.replace(/\n/g, "").replace(/\t/g, "");
-					
+
 						if (data.length > 0) {
 							data = genericasInjector.process(data);
 							result.content = data;
@@ -550,7 +550,7 @@ app.get('/api/v1/injectgenericas/:selector?', function(req,res){
 						}
 
 					}
-					
+
 					if (req.query["callback"] !== undefined && req.query["callback"] !== "") {
 						res.jsonp(result);
 					} else {
@@ -568,7 +568,7 @@ app.get('/api/v1/injectgenericas/:selector?', function(req,res){
 				content = genericasInjector.process(content);
 				cache.set(contentHash, content);
 			}
-	
+
 			result.content = content;
 
 			if (req.query["callback"] !== undefined && req.query["callback"] !== "") {
@@ -617,7 +617,7 @@ function checkIfApiKeyIsLegit(apiKey, req) {
 		var url = req.originalUrl.replace(apiKey, "").replace("&apikey=", "").replace("apikey=", "");
 		logRequest(apiKeys[apiKey], url);
 	}
-	
+
 	//Allow a certain number of requests per time interval from an ip-address
 	if (!isLegit) {
 		if (requestChecker[req.ip.toString()] !== undefined) {
@@ -625,7 +625,7 @@ function checkIfApiKeyIsLegit(apiKey, req) {
 		} else {
 			requestChecker[req.ip.toString()] = 1;
 		}
-		
+
 		if (requestChecker[req.ip.toString()] <= allowedUnauthorizedRequestsPerTimeInterval) {
 			isLegit = true;
 			logRequest("temp-" + req.ip.toString(), req.originalUrl);
@@ -655,7 +655,7 @@ function createHash(data) {
 }
 
 function getContentFromUrl(url, callback) {
-	
+
 	request(url, function(error, response, body) {
 		if (!error && response.statusCode == 200) {
 			return callback(null, body);
@@ -665,7 +665,7 @@ function getContentFromUrl(url, callback) {
 			return callback(new Error(response.statusCode));
 		}
 	});
-	
+
 };
 
 app.get("/api/", function(req, res) {
@@ -678,7 +678,5 @@ app.get('/*', function(req, res){
 
 	res.status(400);
 	res.end("404");
-	
+
 });
-
-
