@@ -262,28 +262,12 @@ function getNoInfo(nplId) {
 
 function processAnswer(answer, nplId, callback) {
 
-	if (answer.indexOf("No published FASS-document") > -1) {
+	if (answer.indexOf("errorMessage") > -1) {
 
 		var output = getNoInfo(nplId);
-		callback(new Error("No published FASS-document: " + nplId), output);
+		callback(new Error("No product info: " + nplId), output);
 
-
-	} else if (answer.indexOf("Product is not active") > -1) {
-
-		var output = getNoInfo(nplId);
-		callback(new Error("Product is not active: " + nplId), output);
-
-	} else if (answer.indexOf("Unable to find document for nplId = ") > -1) {
-
-		var output = getNoInfo(nplId);
-		callback(new Error("Unable to find document for nplId = " + nplId), output);
-
-	} else if (answer.indexOf("Unexpected error") > -1) {
-
-		var output = getNoInfo(nplId);
-		callback(new Error("Unexpected error for nplId = " + nplId), output);
-
-	} else {
+	}else {
 		var $ = cheerio.load("<html><body>" + answer + "</body></html>");
 
 		var product = $("npl-id:contains('" + nplId + "')").parent().parent();
