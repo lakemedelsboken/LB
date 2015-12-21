@@ -6,7 +6,8 @@
 	var host = 'ws.fass.se';
 	var path = '/rest/tickets/'
 
-	var using = 0;
+	var fetchedTimeStamp;
+	var renewalIntervalInMinutes = 15;
 	var ticket;
 	var pendingPromise;
 
@@ -16,23 +17,20 @@
 		  // This function is providing a ticker that needs to be added to all request headers.
 		  // The function handles both promises and callbacks.
 		  login: function (username, password, callback) {
-			  	// Increase the counter to prevent multiple functions to logout if the ticket is in use.
-			  	using++;
 
 				// Create a promise.
 				var deferred = Q.defer();
 
 				// If the counter is greater than 0, then return the existing ticket and skip the request.
-				if (using > 1) {
+				if (ticket !== undefined && !this.ticketExpired()) {
 					 // Resolve the promise and pass the ticket along. But wait for exsisting requests to finish.
 					 if (pendingPromise.isPending()) {
 						 pendingPromise.then(function () {
-							 //console.log('Login existing: '+ ticket);
+							 console.log('Login existing: '+ ticket);
 						 	deferred.resolve(ticket);
 						 });
 					 } else {
-						 //console.log('Login existing: '+ ticket);
-
+						 console.log('Login existing: '+ ticket);
 						 deferred.resolve(ticket);
 					 }
 				} else {
@@ -66,6 +64,7 @@
 									 // Example ticket: ZECUNHXWIIXQ
 									 //console.log('Login: '+ resData);
 									 ticket = resData;
+									 fetchedTimeStamp = Math.floor(Date.now());
 									 deferred.resolve(resData);
 
 								} else {
@@ -95,9 +94,6 @@
 
 				// Create a promise.
 				var deferred = Q.defer();
-
-				// Decrease the counter to prevent multiple functions to logout if the ticket is in use.
-				using--;
 
 				// Only send this request is the count is less or equal to zero.
 				if (using <= 0 && ticket !== undefined) {
@@ -144,7 +140,17 @@
 					 deferred.resolve();
 				}
 
-				return deferred.promise.nodeify(callback)
-		  }
+				return deferred.promise.nodeify(callback);
+		 },
+
+		 ticketExpired: function () {
+		 	if (fetchedTimeStamp !== undefined) {
+				var diffInSeconds = (Math.floor((Date.now() - fetchedTimeStamp)/1000));
+		 		if (diffInSeconds/60 > renewalIntervalInMinutes) {
+		 			return true;
+		 		}
+		 	}
+			return false;
+		 }
 	 };
 }());
