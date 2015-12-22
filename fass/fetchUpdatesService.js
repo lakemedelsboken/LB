@@ -77,7 +77,6 @@ function fetchUpdates() {
 		var updates = [foundUpdates[foundUpdates.length - 1]];
 		check(updates);
 	} else {
-		auth.logout();
 		console.log("Fetch queue is empty.");
 		isUpdating = false;
 	}
@@ -99,6 +98,7 @@ function check(updates) {
 		.then(function (ticket) {
 			getProductByNplId(ticket, task.nplId)
 			.then(function (answer) {
+
 				processAnswer(answer, task.nplId, function(err, data) {
 
 					if (err && (err.message.indexOf("Error fetching") > -1 || err.message.indexOf("Unexpected error") > -1)) {
@@ -269,15 +269,17 @@ function processAnswer(answer, nplId, callback) {
 
 	}else {
 		var $ = cheerio.load("<html><body>" + answer + "</body></html>");
-
+		console.log(nplId);
 		var product = $("npl-id:contains('" + nplId + "')").parent().parent();
+		//console.log(product);
 		if (product.length > 0) {
 			processProduct(product, $, function(err, result) {
 				callback(err, result);
 			});
 		} else {
 			//console.log("No products listed under nplId: " + nplId);
-			callback(new Error("Error fetching: " + nplId + ". No products listed."));
+			var output = getNoInfo(nplId);
+			callback(new Error("Error: " + nplId + ". No products listed."), output);
 		}
 	}
 

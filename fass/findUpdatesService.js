@@ -69,8 +69,7 @@ function findUpdates() {
 
 	auth.login(fassUsername, fassPassword)
 	.then(checkForFassUpdates)
-	.then(parseResponseAndSave)
-	.then(auth.logout);
+	.then(parseResponseAndSave);
 
 
 
@@ -82,12 +81,12 @@ function findUpdates() {
 		var options = {
 			url: 'https://www.fass.se/rest/fassdocument/updated?version=1.0&fromDate='+fromDate+'&toDate='+formatDate(currentDate) ,
 			headers: {
-				'ticket': ticket
+				'ticket': ticket,
+				'Content-Type': 'application/json'
 			}
 		};
 
 		request(options, function (error, response, body) {
-
 			deferred.resolve(body);
 		}).on('error', function (e) {
 			deferred.reject(e);
@@ -102,10 +101,10 @@ function findUpdates() {
 	function parseResponseAndSave(response) {
 		var nplIds = [];
 		var arr = JSON.parse(response);
-		console.log(arr[0]);
+		//console.log(arr[0]);
 
 		arr.forEach(function(result) {
-			console.log(result);
+			//console.log(result);
 			nplId = result.id;
 
 			if (nplId !== "") {

@@ -7,7 +7,7 @@
 	var path = '/rest/tickets/'
 
 	var fetchedTimeStamp;
-	var renewalIntervalInMinutes = 15;
+	var renewalIntervalInMinutes = 50;
 	var ticket;
 	var pendingPromise;
 
@@ -26,11 +26,11 @@
 					 // Resolve the promise and pass the ticket along. But wait for exsisting requests to finish.
 					 if (pendingPromise.isPending()) {
 						 pendingPromise.then(function () {
-							 console.log('Login existing: '+ ticket);
+							 //console.log('Login existing: '+ ticket);
 						 	deferred.resolve(ticket);
 						 });
 					 } else {
-						 console.log('Login existing: '+ ticket);
+						 //console.log('Login existing: '+ ticket);
 						 deferred.resolve(ticket);
 					 }
 				} else {
