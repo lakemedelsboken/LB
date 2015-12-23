@@ -1,0 +1,58 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-12-22 11:32",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"description": "Vänsterkolumn",
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "f71fa396-3076-40ad-9b42-d58d1a736a95",
+			"name": "c17bdeaa-2f36-4d84-ae3f-1e2c61c9ebf3",
+			"type": "text",
+			"content": "<h1>Kapitelrubrik</h1>",
+			"settings": {}
+		},
+		{
+			"id": "cade91f3-82c5-42bb-9280-4c6ec74949fc",
+			"name": "88e31793-2590-44b8-bd84-bb6bfbccc31f",
+			"type": "author",
+			"content": {
+				"firstname": "Förnamn",
+				"surname": "Efternamn",
+				"description": "Arbetsplats",
+				"email": "e-post"
+			},
+			"settings": {}
+		},
+		{
+			"id": "cf45bb2a-135d-4177-9245-a0d55fa328f2",
+			"name": "fc6bc93f-0968-49ac-89db-44f85236ca6d",
+			"type": "text",
+			"content": "<p class=\"ingress\">Ingresstext</p>",
+			"settings": {}
+		},
+		{
+			"id": "54ca2ef2-bb6c-4c3c-a627-31815aaa3c76",
+			"name": "f3fc0648-8b4a-4a5a-83fe-b4ca239c25c7",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\">Referenser</h2><ol><li>Referens 1</li></ol>",
+			"settings": {}
+		}
+	]
+}
