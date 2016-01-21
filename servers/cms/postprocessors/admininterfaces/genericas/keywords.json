@@ -17,25 +17,25 @@
 	"laxativa": {
 		"atc": "A06A Medel vid förstoppning"
 	},
-	"bulkmedel": {
+	"bulklaxativa": {
 		"atc": "A06AC Bulkbildande laxermedel"
 	},
-	"bulklaxativa": {
+	"bulkmedel": {
 		"atc": "A06AC Bulkbildande laxermedel"
 	},
 	"ispaghula": {
 		"atc": "A06AC01 Loppfrö och vitt loppfrö"
 	},
-	"polyetylenglykol": {
+	"osmotiska laxantia": {
 		"atc": "A06AD Osmotiskt aktiva laxermedel"
 	},
 	"osmotiskt verkande medel": {
 		"atc": "A06AD Osmotiskt aktiva laxermedel"
 	},
-	"osmotiska laxantia": {
+	"osmotiskt laxativ": {
 		"atc": "A06AD Osmotiskt aktiva laxermedel"
 	},
-	"osmotiskt laxativ": {
+	"polyetylenglykol": {
 		"atc": "A06AD Osmotiskt aktiva laxermedel"
 	},
 	"osmotiskt verkande läkemedel": {
@@ -50,11 +50,17 @@
 	"aktivt kol": {
 		"atc": "A07BA01 Medicinskt kol"
 	},
+	"loperamid/loperamiddioxid": {
+		"atc": "A07DA Propulsionsdämpande medel"
+	},
 	"loperamid": {
 		"atc": "A07DA Propulsionsdämpande medel"
 	},
-	"loperamid/loperamiddioxid": {
-		"atc": "A07DA Propulsionsdämpande medel"
+	"5-asa-klysma": {
+		"atc": "A07EC Aminosalicylsyra och liknande medel"
+	},
+	"5-asa-suppositorier": {
+		"atc": "A07EC Aminosalicylsyra och liknande medel"
 	},
 	"aminosalicylsyraderivat": {
 		"atc": "A07EC Aminosalicylsyra och liknande medel"
@@ -66,12 +72,6 @@
 		"atc": "A07EC Aminosalicylsyra och liknande medel"
 	},
 	"5-asa-behandling": {
-		"atc": "A07EC Aminosalicylsyra och liknande medel"
-	},
-	"5-asa-klysma": {
-		"atc": "A07EC Aminosalicylsyra och liknande medel"
-	},
-	"5-asa-suppositorier": {
 		"atc": "A07EC Aminosalicylsyra och liknande medel"
 	},
 	"insulin": {
@@ -98,19 +98,19 @@
 	"d-vitamin vatten/olja aco orala droppar": {
 		"atc": "A11CC Vitamin D och analoger"
 	},
-	"kolekalciferol": {
+	"vitamin d": {
 		"atc": "A11CC Vitamin D och analoger"
 	},
-	"vitamin d": {
+	"kolekalciferol": {
 		"atc": "A11CC Vitamin D och analoger"
 	},
 	"tiamin": {
 		"atc": "A11DA Tiamin (vitamin B1)"
 	},
-	"askorbinsyra": {
+	"vitamin c": {
 		"atc": "A11G Askorbinsyra (vitamin C) inkl. kombinationer"
 	},
-	"vitamin c": {
+	"askorbinsyra": {
 		"atc": "A11G Askorbinsyra (vitamin C) inkl. kombinationer"
 	},
 	"tokoferol": {
@@ -158,10 +158,10 @@
 	"ocplex": {
 		"atc": "B02BD01 Koagulationsfaktor IX, II, VII och X i kombination "
 	},
-	"perorala järnpreparat": {
+	"järn": {
 		"atc": "B03A Medel vid järnbristanemier"
 	},
-	"järn": {
+	"perorala järnpreparat": {
 		"atc": "B03A Medel vid järnbristanemier"
 	},
 	"niferex": {
@@ -188,10 +188,10 @@
 	"natriumklorid": {
 		"atc": "B05BB Lösningar som påverkar elektrolytbalansen"
 	},
-	"addex-magnesium": {
+	"magnesium": {
 		"atc": "B05XA05 Magnesiumsulfat"
 	},
-	"magnesium": {
+	"addex-magnesium": {
 		"atc": "B05XA05 Magnesiumsulfat"
 	},
 	"antiarytmika": {
@@ -242,10 +242,10 @@
 	"kandesartan+tiazid": {
 		"atc": "C09DA06 Kandesartan och diuretika"
 	},
-	"steroidbehandlingen med utvärtes jästsvampdödande medel som mikonazol": {
+	"imidazolderivat lokalt": {
 		"atc": "D01AC Imidazol- och triazolderivat"
 	},
-	"imidazolderivat lokalt": {
+	"steroidbehandlingen med utvärtes jästsvampdödande medel som mikonazol": {
 		"atc": "D01AC Imidazol- och triazolderivat"
 	},
 	"mikonazol + hydrokortison": {
@@ -254,10 +254,10 @@
 	"zinkliniment apl, kräm": {
 		"atc": "D02AB"
 	},
-	"mjölksyra": {
+	"glycerol": {
 		"atc": "D02AX Övriga hudskyddande och uppmjukande medel"
 	},
-	"glycerol": {
+	"mjölksyra": {
 		"atc": "D02AX Övriga hudskyddande och uppmjukande medel"
 	},
 	"propylenglykol": {
@@ -266,14 +266,11 @@
 	"kalcipotriol + betametason": {
 		"atc": "D05AX52 Kalcipotriol, kombinationer"
 	},
-	"kalcipotriol": {
-		"atc": "D05AX52 Kalcipotriol, kombinationer"
-	},
 	"betametason + kalcipotriol": {
 		"atc": "D05AX52 Kalcipotriol, kombinationer"
 	},
-	"lokala glukokortikoider": {
-		"atc": "D07 Kortikosteroider för utvärtes bruk"
+	"kalcipotriol": {
+		"atc": "D05AX52 Kalcipotriol, kombinationer"
 	},
 	"kortisonkräm": {
 		"atc": "D07 Kortikosteroider för utvärtes bruk"
@@ -281,16 +278,19 @@
 	"glukokortikoider i salver och krämer": {
 		"atc": "D07 Kortikosteroider för utvärtes bruk"
 	},
-	"grupp iii–iv-steroid": {
+	"lokala glukokortikoider": {
+		"atc": "D07 Kortikosteroider för utvärtes bruk"
+	},
+	"grupp i–ii-steroid": {
 		"atc": "D07A Kortikosteroider"
 	},
 	"lokala steroider": {
 		"atc": "D07A Kortikosteroider"
 	},
-	"grupp i–ii-steroid": {
+	"grupp ii–iii-steroid": {
 		"atc": "D07A Kortikosteroider"
 	},
-	"grupp ii–iii-steroid": {
+	"grupp iii–iv-steroid": {
 		"atc": "D07A Kortikosteroider"
 	},
 	"steroidkräm": {
@@ -311,10 +311,10 @@
 	"grupp iv-steroid": {
 		"atc": "D07AD Kortikosteroider, extra starkt verkande (grupp IV)"
 	},
-	"klorhexidinsprit, 5 mg/ml": {
+	"kombination med hydrokortison": {
 		"atc": "D08AC02 Klorhexidin"
 	},
-	"kombination med hydrokortison": {
+	"klorhexidinsprit, 5 mg/ml": {
 		"atc": "D08AC02 Klorhexidin"
 	},
 	"kaliumpermanganat": {
@@ -332,12 +332,6 @@
 	"hormonspiral": {
 		"atc": "G02B Antikonceptionella medel för lokal användning"
 	},
-	"gestagen": {
-		"atc": "G03 Könshormoner"
-	},
-	"noretisteron": {
-		"atc": "G03 Könshormoner"
-	},
 	"medroxiprogesteron": {
 		"atc": "G03 Könshormoner"
 	},
@@ -350,10 +344,16 @@
 	"gestagenterapi": {
 		"atc": "G03 Könshormoner"
 	},
-	"levonorgestrel": {
-		"atc": "G03A Hormonella antikonceptionella medel för systemisk användning"
+	"gestagen": {
+		"atc": "G03 Könshormoner"
+	},
+	"noretisteron": {
+		"atc": "G03 Könshormoner"
 	},
 	"p-piller": {
+		"atc": "G03A Hormonella antikonceptionella medel för systemisk användning"
+	},
+	"levonorgestrel": {
 		"atc": "G03A Hormonella antikonceptionella medel för systemisk användning"
 	},
 	"p-plåstret": {
@@ -368,10 +368,10 @@
 	"högdosgestagen": {
 		"atc": "G03AC Gestagener"
 	},
-	"p-spruta": {
+	"minipiller": {
 		"atc": "G03AC Gestagener"
 	},
-	"minipiller": {
+	"p-spruta": {
 		"atc": "G03AC Gestagener"
 	},
 	"akut-p-piller": {
@@ -379,9 +379,6 @@
 	},
 	"anabola steroider": {
 		"atc": "G03B Androgener"
-	},
-	"östrogen": {
-		"atc": "G03C Östrogener"
 	},
 	"östrogensubstitution": {
 		"atc": "G03C Östrogener"
@@ -392,14 +389,14 @@
 	"östrogenbehandling": {
 		"atc": "G03C Östrogener"
 	},
+	"östrogen": {
+		"atc": "G03C Östrogener"
+	},
 	"estradiol": {
 		"atc": "G03CA03 Östradiol"
 	},
 	"kortikosteroider": {
 		"atc": "H02A Kortikosteroider för systemiskt bruk"
-	},
-	"intravenös steroidbehandling": {
-		"atc": "H02AB Glukokortikoider"
 	},
 	"steroider": {
 		"atc": "H02AB Glukokortikoider"
@@ -407,13 +404,16 @@
 	"systemisk steroidbehandling": {
 		"atc": "H02AB Glukokortikoider"
 	},
+	"intravenös steroidbehandling": {
+		"atc": "H02AB Glukokortikoider"
+	},
 	"tyroxin": {
 		"atc": "H03AA Tyreoideahormoner"
 	},
-	"antibiotika": {
+	"betalaktamantibiotika": {
 		"atc": "J01 Antibakteriella medel för systemiskt bruk"
 	},
-	"betalaktamantibiotika": {
+	"antibiotika": {
 		"atc": "J01 Antibakteriella medel för systemiskt bruk"
 	},
 	"tetracyklinbehandling": {
@@ -434,10 +434,10 @@
 	"penicillin v": {
 		"atc": "J01CE02 Fenoximetylpenicillin"
 	},
-	"piperacillin + tazobaktam": {
+	"piperacillin/tazobactam": {
 		"atc": "J01CR05 Piperacillin och enzymhämmare"
 	},
-	"piperacillin/tazobactam": {
+	"piperacillin + tazobaktam": {
 		"atc": "J01CR05 Piperacillin och enzymhämmare"
 	},
 	"cefosporin": {
@@ -578,10 +578,10 @@
 	"vattkoppsvaccin": {
 		"atc": "J07BK01 Vaccin mot vattkoppor, levande försvagat"
 	},
-	"hpv-vaccin": {
+	"vaccin mot hpv": {
 		"atc": "J07BM Papillomvirusvacciner"
 	},
-	"vaccin mot hpv": {
+	"hpv-vaccin": {
 		"atc": "J07BM Papillomvirusvacciner"
 	},
 	"difteri-stelkramp-kikhosta-polio": {
@@ -602,13 +602,13 @@
 	"jak2-inhibitorer": {
 		"atc": "L01XE18 Ruxolitinib"
 	},
-	"anti-tnf-preparat": {
-		"atc": "L04AB Tumörnekrosfaktor alfa (TNF-) hämmare"
-	},
 	"anti-tnf": {
 		"atc": "L04AB Tumörnekrosfaktor alfa (TNF-) hämmare"
 	},
 	"anti-tnf-terapi": {
+		"atc": "L04AB Tumörnekrosfaktor alfa (TNF-) hämmare"
+	},
+	"anti-tnf-preparat": {
 		"atc": "L04AB Tumörnekrosfaktor alfa (TNF-) hämmare"
 	},
 	"antiflogistika": {
@@ -629,10 +629,10 @@
 	"lidokainhydroklorid apl, rektalgel 5 mg/ml": {
 		"atc": "N01BB02 Lidokain"
 	},
-	"lidokain, prilokain": {
+	"emla": {
 		"atc": "N01BB20 Kombinationer"
 	},
-	"emla": {
+	"lidokain, prilokain": {
 		"atc": "N01BB20 Kombinationer"
 	},
 	"analgetika": {
@@ -647,10 +647,10 @@
 	"ergotamin": {
 		"atc": "N02CA Mjöldrygealkaloider"
 	},
-	"antiepileptika": {
+	"antiepileptisk medicinering": {
 		"atc": "N03A Antiepileptika"
 	},
-	"antiepileptisk medicinering": {
+	"antiepileptika": {
 		"atc": "N03A Antiepileptika"
 	},
 	"antiepileptiska preparat": {
@@ -668,10 +668,10 @@
 	"bensodiazepiner": {
 		"atc": "N05BA Bensodiazepinderivat"
 	},
-	"antidepressiv medicinering": {
+	"antidepressiva": {
 		"atc": "N06A Antidepressiva medel"
 	},
-	"antidepressiva": {
+	"antidepressiv medicinering": {
 		"atc": "N06A Antidepressiva medel"
 	},
 	"tricykliska": {
@@ -692,10 +692,10 @@
 	"disulfiram": {
 		"atc": "P03AA54 Disulfiram, kombinationer"
 	},
-	"nässpray med kortison": {
+	"lokal steroid": {
 		"atc": "R01AD Kortikosteroider"
 	},
-	"lokal steroid": {
+	"nässpray med kortison": {
 		"atc": "R01AD Kortikosteroider"
 	},
 	"glukokortikoider": {
@@ -719,10 +719,10 @@
 	"flutikason + salmeterol": {
 		"atc": "R03AK06 Salmeterol och övriga medel vid obstruktiva luftvägssjukdomar"
 	},
-	"budesonid + formoterol": {
+	"formoterol + budesonid": {
 		"atc": "R03AK07 Formoterol och övriga medel vid obstruktiva luftvägssjukdomar"
 	},
-	"formoterol + budesonid": {
+	"budesonid + formoterol": {
 		"atc": "R03AK07 Formoterol och övriga medel vid obstruktiva luftvägssjukdomar"
 	},
 	"inhalationssteroid": {
@@ -899,7 +899,7 @@
 	"elektrolyter": {
 		"atc": "X Ingen koppling"
 	},
-	"syredissociationskurvan": {
+	"ampicillinkänsliga": {
 		"atc": "X Ingen koppling"
 	},
 	"syrebrist": {
@@ -1022,10 +1022,13 @@
 	"glukostolerans": {
 		"atc": "X Ingen koppling"
 	},
+	"syredissociationskurvan": {
+		"atc": "X Ingen koppling"
+	},
 	"dimetikonlösning": {
 		"atc": "X Ingen lösning"
 	},
-	"ampicillinkänsliga": {
+	"glukos": {
 		"atc": "X Ingen koppling"
 	}
 }
