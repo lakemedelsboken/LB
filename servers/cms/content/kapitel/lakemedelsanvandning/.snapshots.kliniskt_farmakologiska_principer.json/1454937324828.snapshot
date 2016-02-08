@@ -1,0 +1,832 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Kliniskt farmakologiska principer | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-09 01:06",
+	"published": "2015-07-09 01:06",
+	"validUntil": "",
+	"createdBy": "Anders Rane, Margareta Hammarlund-Udenaes",
+	"replacesUrl": "/x2_lma_klinfarmprincip_2013fm10.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "aae544af-53dc-471f-81e9-9324bbd0ea5d",
+			"name": "aae544af-53dc-471f-81e9-9324bbd0ea5d",
+			"type": "author",
+			"content": {
+				"firstname": "Anders",
+				"surname": "Rane",
+				"description": "Avdelningen för klinisk farmakologi, Karolinska Universitetssjukhuset, Stockholm",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a65c387a-dc10-495e-8d3e-1b61c75d8a83",
+			"name": "a65c387a-dc10-495e-8d3e-1b61c75d8a83",
+			"type": "author",
+			"content": {
+				"firstname": "Margareta",
+				"surname": "Hammarlund-Udenaes",
+				"description": "Farmaceutiska fakulteten, Uppsala Universitet",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0e76fd1a-8606-4f6a-b556-f151d881ce1b",
+			"name": "0e76fd1a-8606-4f6a-b556-f151d881ce1b",
+			"type": "text",
+			"content": "<h1 id=\"x2_3\"><a class=\"index\" id=\"1022255\" data-text=\"l&#xE4;kemedelsv&#xE4;rdering;l&#xE4;kemedel:dosering, se l&#xE4;kemedelsdosering &lt;$nopage&gt;\"></a><a class=\"crossref\" id=\"90986\"></a>Kliniskt farmakologiska principer</h1>\n<h2 id=\"x2_4\">Allm&auml;n klinisk <a class=\"index\" id=\"1022258\" data-text=\"farmakokinetik\"></a>farmakologi och l&auml;kemedelskinetik</h2>\n<h2 id=\"x2_5\">Inledning</h2>\n<p class=\"ingress\">Kunskap om hur l&auml;kemedel fungerar och oms&auml;tts i kroppen &auml;r viktig f&ouml;r att f&ouml;rskrivarna r&auml;tt ska kunna v&auml;rdera l&auml;kemedlens medicinska &auml;ndam&aring;lsenlighet utifr&aring;n vetenskaplig litteratur,&nbsp; l&auml;kemedelsinformation <span style=\"color: #ff0000;\">och patientens sjukdomsbild</span>.</p>\n<p class=\"ingress indent\">Detta kapitel behandlar grundl&auml;ggande principer f&ouml;r l&auml;kemedels verkan, principer f&ouml;r dosanpassning, interindividuell variation i dosbehov samt inverkan av &auml;rftlighet, &aring;lder, sjukdom etc p&aring; behandlingsresultatet.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "32c8416c-0b3d-4fa1-b933-c3b5f0839176",
+			"name": "32c8416c-0b3d-4fa1-b933-c3b5f0839176",
+			"type": "text",
+			"content": "<h2 id=\"x2_6\">Hur v&auml;ljs l&auml;kemedel?</h2>\n<p>Information om l&auml;kemedel kan h&auml;mtas fr&aring;n olika k&auml;llor. Den producentobundna informationen utg&ouml;r bara en <span style=\"color: #ff0000;\">mindre</span> del av all tillg&auml;nglig information om olika farmaceutiska specialiteter. Den &rdquo;medicinska &auml;ndam&aring;lsenligheten&rdquo; &auml;r grundl&auml;ggande vid val av l&auml;kemedel (se Tabell 1). Den baserar sig p&aring; avv&auml;gningen mellan effekt och biverkningsrisk och kan variera om l&auml;kemedlet anv&auml;nds vid olika terapeutiska indikationer. N&auml;r medroxiprogesteronacetat anv&auml;nds f&ouml;r antikonception hos friska kvinnor tolereras t&nbsp;ex inte de biverkningar som kan upptr&auml;da hos kvinnor som f&aring;r medlet i h&ouml;gre dos vid olika cancerformer.</p>\n<p class=\"indent\">All <a class=\"index\" id=\"1030301\" data-text=\"l&#xE4;kemedelsv&#xE4;rdering\"></a>l&auml;kemedelsbehandling &auml;r f&ouml;renad med en biverkningsrisk. Biverkningar kan grovt indelas i:</p>\n<ul>\n<li><span class=\"tab\"></span>Typ A-biverkningar, som &auml;r vanligast, &ouml;kar med &ouml;kande dos <span style=\"color: #ff0000;\">och</span> kan f&ouml;rutses utifr&aring;n l&auml;kemedlets farmakologiska egenskaper.</li>\n<li><span class=\"tab\"></span>Typ B-biverkningar &auml;r oftast of&ouml;ruts&auml;gbara och kan upptr&auml;da pl&ouml;tsligt efter kort eller l&aring;ng tids behandling. Mekanismerna f&ouml;r typ B-biverkningar &auml;r ofullst&auml;ndigt k&auml;nda.</li>\n</ul>\n<p>L&auml;kemedelsbiverkningar &auml;r ett betydande medicinskt problem och drabbar samh&auml;llet med avsev&auml;rda kostnader. F&ouml;rskrivare har skyldighet att rapportera d&ouml;dliga och allvarliga misst&auml;nkta biverkningar samt <span style=\"color: #ff0000;\">biverkningar</span> som &auml;r nya och ofullst&auml;ndigt dokumenterade. Se kapitlet L&auml;kemedelsbiverkningar, avsnittet Biverkningsrapportering, samt <span style=\"color: #ff0000;\">information</span> p&aring; L&auml;kemedelsverkets webbplats, <a href=\"http://www.lakemedelsverket.se/malgrupp/Halso---sjukvard/Rapportera-biverkningar/\" target=\"_blank\" class=\"linkOut\">www.lakemedelsverket.se</a>.</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1ba3b461-64a2-4d42-a2ae-098b68b5faa0",
+			"name": "1ba3b461-64a2-4d42-a2ae-098b68b5faa0",
+			"type": "tablewide",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"index\" id=\"1022957\" data-text=\"l&#xE4;kemedel:informationsk&#xE4;llor\"></a><a class=\"crossref\" id=\"29836\"></a>Informationskällor för val av läkemedel ",
+				"id": "x2_7",
+				"text": "<table><tbody><tr><td><div class=\"tableLine\"><strong>Utgivare</strong></div></td><td><div class=\"tableLine\"><strong><span class=\"tab\"></span>Typ<span class=\"tab\"></span></strong></div></td><td><div class=\"tableLine\"><strong>Utgångspunkt<span class=\"tab\"></span></strong></div></td><td><div class=\"tableLine\"><strong>Speciella egenskaper</strong></div></td></tr><tr><td><div class=\"tableLine\">Medicinska </div><div class=\"tableLine\">specialist-</div><div class=\"tableLine\">föreningar</div></td><td><div class=\"tableLine\"><span class=\"tab\"></span>Vårdprogram<span class=\"tab\"></span></div></td><td><div class=\"tableLine\">Medicinsk ändamålsenlighet </div><div class=\"tableLine\">vid sjukdomsbehandling <br></div><div class=\"tableLine\">(effekt/biverkningar)</div></td><td><div class=\"tableLine\"><span class=\"tab\"></span>Inte primärt ekonomiska hänsyn</div></td></tr><tr><td><div class=\"tableLine\">Läkemedels-</div><div class=\"tableLine\">industrin</div></td><td><div class=\"tableLine\">Fass</div></td><td><div class=\"tableLine\"><span class=\"tab\"></span><span class=\"tab\"></span>Produktbeskrivningar av enskil-</div><div class=\"tableLine\">da farmaceutiska specialiteter</div><div class=\"tableLine\">Försäljningsincitament<span class=\"tab\"></span> </div></td><td><div class=\"tableLine\">Producentbunden information</div><div class=\"tableLine\">Bygger på ”Produktresumén”</div><div class=\"tableLine\">Tar upp nästan alla läkemedel </div></td></tr><tr><td><div class=\"tableLine\">Läkemedelsverket<span class=\"tab\"></span></div></td><td><div class=\"tableLine\">Läkemedelsboken</div><div class=\"tableLine\">&nbsp;</div></td><td><div class=\"tableLine\"><span class=\"tab\"></span>Författares uppfattning om ve-</div><div class=\"tableLine\">tenskap och beprövad erfaren-</div><div class=\"tableLine\">het kompletterad med en </div><div class=\"tableLine\">redaktionell granskning av att </div><div class=\"tableLine\">innehållet dessutom inte står i </div><div class=\"tableLine\">strid med officiella riktlinjer och </div><div class=\"tableLine\">rekommendationer</div></td><td><div class=\"tableLine\">Tar upp de flesta aktuella läke-</div><div class=\"tableLine\">medel</div><div class=\"tableLine\">Terapiområden/substansgrupper </div><div class=\"tableLine\">Producentobunden information</div></td></tr><tr><td><div class=\"tableLine\">Läkemedelsverket</div></td><td><div class=\"tableLine\">Behandlingsrekom-</div><div class=\"tableLine\">mendationer</div><div class=\"tableLine\">Meddelanden</div></td><td><div class=\"tableLine\">Granskad dokumentation</div><div class=\"tableLine\">Konsensusrapporter</div><div class=\"tableLine\">Biverkningsnytt<span class=\"tab\"></span></div></td><td><div class=\"tableLine\">Myndighetsinformation</div><div class=\"tableLine\">Producentobunden information</div></td></tr><tr><td><div class=\"tableLine\">Statens beredning </div><div class=\"tableLine\">för medicinsk ut-</div><div class=\"tableLine\">värdering (SBU)<span class=\"tab\"></span></div></td><td><div class=\"tableLine\">Rapporter, kunskaps-</div><div class=\"tableLine\">sammanställningar<span class=\"tab\"></span></div><div class=\"tableLine\">&nbsp;</div></td><td><div class=\"tableLine\">Beslutsunderlag för sjukvården </div><div class=\"tableLine\">om medicinska metoder<span class=\"tab\"></span> <br></div><div class=\"tableLine\">“Evidence based medicine”</div></td><td><div class=\"tableLine\">Analys av nytta/kostnader och </div><div class=\"tableLine\">vetenskap/vårdpraxis</div><div class=\"tableLine\">Producentobunden information</div></td></tr><tr><td><div class=\"tableLine\">Tandvårds- och <br></div><div class=\"tableLine\">läkemedelsför-</div><div class=\"tableLine\">månsverket (TLV)</div></td><td><div class=\"tableLine\">Subventionsbeslut</div></td><td><div class=\"tableLine\">Pris och medicinsk ändamåls-</div><div class=\"tableLine\">enlighet<span class=\"tab\"></span></div></td><td><div class=\"tableLine\">Myndighetsinformation</div></td></tr><tr><td><div class=\"tableLine\">Läkemedels-</div><div class=\"tableLine\">kommittéer</div></td><td><div class=\"tableLine\">Rekommendations-</div><div class=\"tableLine\">listor och webbinfor-</div><div class=\"tableLine\">mation t&nbsp;ex</div><div class=\"tableLine\"><a href=\"http://www.janusinfo.org\" target=\"_blank\" class=\"linkOut\">www.janusinfo.se</a> </div></td><td><div class=\"tableLine\">Dokumentation</div><div class=\"tableLine\">Terapitradition</div><div class=\"tableLine\">Pris<span class=\"tab\"></span></div></td><td><div class=\"tableLine\">Lagstadgade kommittéer </div><div class=\"tableLine\">Producentobunden information</div></td></tr><tr><td><div class=\"tableLine\">Forskare/<br></div><div class=\"tableLine\">forskargrupper</div></td><td><div class=\"tableLine\">Vetenskaplig <br></div><div class=\"tableLine\">litteratur</div></td><td><div class=\"tableLine\">Forskning</div></td><td><div class=\"tableLine\"><span class=\"tab\"></span><span class=\"tab\"></span>Refereegranskade rapporter</div></td></tr><tr><td><div class=\"tableLine\">European Medici-</div><div class=\"tableLine\">nes Agency (EMA)</div></td><td><div class=\"tableLine\">European Public <br></div><div class=\"tableLine\">Assessment Report </div><div class=\"tableLine\">(EPAR, scientific <br></div><div class=\"tableLine\">discussion)</div></td><td><div class=\"tableLine\">Granskad dokumentation som </div><div class=\"tableLine\">insänts av företagen</div></td><td><div class=\"tableLine\">Risk-/nyttavärdering</div></td></tr><tr><td><div class=\"tableLine\">Socialstyrelsen</div></td><td><div class=\"tableLine\">Nationella riktlinjer</div></td><td><div class=\"tableLine\">Expertgrupper</div></td><td><div class=\"tableLine\">Myndighetsrekommendation</div></td></tr></tbody></table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "62fa200d-54a0-413c-821e-3cb2a4a8ac92",
+			"name": "62fa200d-54a0-413c-821e-3cb2a4a8ac92",
+			"type": "text",
+			"content": "<h2 id=\"x2_8\">F&ouml;rv&auml;ntningar och nytta med l&auml;kemedel</h2>\n<p>F&ouml;rv&auml;ntningarna p&aring; l&auml;kemedels f&ouml;rm&aring;ga att bota, f&ouml;rebygga eller lindra sjukdom och sjukdomssymtom &auml;r mycket h&ouml;ga. <span style=\"color: #ff0000;\">Detta har varit en av f&ouml;ruts&auml;ttningarna f&ouml;r den &ouml;kande l&auml;kemedelsanv&auml;ndningen och samh&auml;llets kostnader f&ouml;r l&auml;kemedel. </span>Men l&auml;kemedel har ocks&aring; ett indirekt pris i form av biverkningar, som medf&ouml;r lidande f&ouml;r patienten och kostnader f&ouml;r sjukv&aring;rden och andra sektorer i samh&auml;llet. Avv&auml;gningen mellan effekt och biverkningar &auml;r avg&ouml;rande f&ouml;r den &rdquo;medicinska &auml;ndam&aring;lsenligheten&rdquo; som ligger till grund f&ouml;r godk&auml;nnandebeslut, f&ouml;rm&aring;nsbeslut m&nbsp;m (se vidare kapitlet <a href=\"{pre}/kapitel/regelverket_och_it-stod/godkannande_av_lakemedel.html#u19_6\">Godk&auml;nnande av l&auml;kemedel</a>, avsnittet om vad som ing&aring;r, och vad som inte ing&aring;r, i en nytta&ndash;riskbed&ouml;mning).</p>\n<p class=\"indent\">Vid f&ouml;rebyggande behandling, t&nbsp;ex mot stroke och ischemisk hj&auml;rtsjukdom, m&aring;ste ett stort antal m&auml;nniskor behandlas under l&aring;ng tid f&ouml;r att undvika en enda &rdquo;h&auml;ndelse&rdquo;. Begreppet &rdquo;number needed to treat&rdquo; (NNT) beskriver den behandlingsinsats (antal behandlade personer) som beh&ouml;vs f&ouml;r att undvika en &rdquo;sjukdomsh&auml;ndelse&rdquo;. P&aring; motsvarande s&auml;tt kan man uttrycka biverkningsrisken genom begreppet &rdquo;number needed to harm&rdquo; (NNH), vilket anger antalet behandlade per &rdquo;biverkningsh&auml;ndelse&rdquo; (se vidare kapitlet Evidensbaserad l&auml;kemedelsv&auml;rdering, avsnittet <a href=\"{pre}/kapitel/lakemedelsanvandning/evidensbaserad_lakemedelsvardering.html#x1_64\">Hur m&aring;nga m&aring;ste behandlas</a>). Balansen mellan effekt och biverkningar och de potentiella vinsterna kan vara sv&aring;r att f&ouml;rklara p&aring; ett pedagogiskt s&auml;tt <span style=\"color: #ff0000;\">eftersom patienten m&aring;ste &rdquo;&ouml;vers&auml;t</span>ta&rdquo; den kollektiva behandlingsvinsten till sin egen individuella situation.</p>\n<p class=\"indent\">Nya l&auml;kemedel under utveckling j&auml;mf&ouml;rs i regel med <span style=\"color: #ff0000;\">dem</span> som redan &auml;r i anv&auml;ndning. Det &auml;r viktigt att j&auml;mf&ouml;relsen innefattar b&aring;de effekt och biverkningar av l&auml;kemedlet. Ett l&auml;kemedel (A) med effekt p&aring; en stor andel patienter (75%) kan j&auml;mf&ouml;ras med ett nytt l&auml;kemedel (B) p&aring; samma indikation som har en s&auml;kerst&auml;llt st&ouml;rre effekt (85%). Den relativa &ouml;kningen av andelen patienter med effekt &auml;r 13%. Antibiotika har ofta denna storlek p&aring; sin effekt. Om l&auml;kemedel A ger biverkningar hos 30% och B ger biverkningar hos 35% av patienterna blir bed&ouml;mningen av det nya l&auml;kemedlets v&auml;rde betydligt sv&aring;rare. I detta exempel kommer 55% (0,85 x 0,65) av patienterna med behandling med B att ha effekt utan biverkningar, medan motsvarande siffra f&ouml;r det gamla l&auml;kemedlet A blir 52,5% (0,75 x 0,70).</p>\n<p class=\"indent\">Om det nya l&auml;kemedlet godk&auml;nns m&aring;ste l&auml;kemedelsvalet grundas p&aring; en noggrann analys av den enskilda patientens behov och f&ouml;ruts&auml;ttningar. Detta f&aring;r v&auml;gas mot det h&ouml;gre priset f&ouml;r det nya l&auml;kemedlet. Uppgiften att informera f&ouml;rskrivarna om denna typ av j&auml;mf&ouml;relser &aring;ligger l&auml;kemedelskommitt&eacute;erna och myndigheterna. L&auml;karen i sin tur har en viktig uppgift att bed&ouml;ma de nya l&auml;kemedlens medicinska v&auml;rde och ge patienten information p&aring; ett begripligt s&auml;tt.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b9b58b58-2a61-40df-b300-c1082cbf3be8",
+			"name": "b9b58b58-2a61-40df-b300-c1082cbf3be8",
+			"type": "text",
+			"content": "<h2 id=\"x2_9\">Hur <a class=\"index\" id=\"1035441\" data-text=\"l&#xE4;kemedelsdosering\"></a>doseras l&auml;kemedel?</h2>\n<p>F&ouml;r nya preparat utvecklas produktresum&eacute;ernas/Fass-texternas farmakokinetikinformation mot st&ouml;rre och st&ouml;rre detaljrikedom. F&ouml;r gamla preparat &auml;r informationen ofta bristf&auml;llig. Det kan i b&aring;da fallen vara sv&aring;rt att urskilja eller hitta den kliniskt viktiga informationen som kan beh&ouml;vas f&ouml;r att dosera l&auml;kemedlen optimalt, dvs med b&auml;sta m&ouml;jliga effekt och minsta m&ouml;jliga biverkningar. Nedan f&ouml;ljer en beskrivning av grundl&auml;ggande farmakokinetiska samband och en f&ouml;rklaring av begrepp och termer som anv&auml;nds.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "43c1d162-396b-4358-b440-4c790118e5d1",
+			"name": "43c1d162-396b-4358-b440-4c790118e5d1",
+			"type": "text",
+			"content": "<h3 id=\"x2_10\">Absorption och <a class=\"index\" id=\"1022284\" data-text=\"distributionsvolym, l&#xE4;kemedel; f&#xF6;rdelningsvolym, l&#xE4;kemedel;l&#xE4;kemedel:distribution\"></a>distribution</h3>\n<p>N&auml;r l&auml;kemedlet tas upp i kroppen (absorption), f&ouml;rdelas det via blodet ut i kroppens alla v&auml;vnader (distribution). Beroende p&aring; l&auml;kemedlets kemiska egenskaper, som grad av fettl&ouml;slighet och joniseringsgrad vid fysiologiskt pH, <span style=\"color: #ff0000;\">varierar affiniteten</span> till olika v&auml;vnader. Fettl&ouml;sliga l&auml;kemedel tenderar att f&ouml;rdelas ut i kroppens v&auml;vnader i st&ouml;rre utstr&auml;ckning &auml;n vattenl&ouml;sliga l&auml;kemedel.</p>\n<p class=\"indent\">Som ett m&aring;tt p&aring; distributionen anv&auml;nds begreppet distributionsvolym (uttrycks som liter eller L/kg). Den beskriver ingen reell volym utan &auml;r en proportionalitet mellan biotillg&auml;nglig dos och koncentration i plasma.<span style=\"color: #ff0000;\"> Ju st&ouml;rre distributionsvolymen &auml;r, desto mer </span><span style=\"color: #ff0000;\">l&auml;kemedel </span><span style=\"color: #ff0000;\">finns i v&auml;vnaderna och desto mindre &auml;r kvar i blodbanan. Det finns egentligen ingen &ouml;vre gr&auml;ns f&ouml;r distributionsvolymen.</span></p>\n<p class=\"indent\">Graden av proteinbindning till t&nbsp;ex albumin i blodet styr ocks&aring; hur mycket som distribueras ut i kroppen. Ju h&ouml;gre bindning, desto mer stannar kvar i blodbanan och desto mindre blir distributionsvolymen. L&auml;kemedel som &auml;r svaga syror tenderar att ha h&ouml;g och specifik bindning till albumin. Trots att plasmavolymen &auml;r cirka 3 liter &auml;r den minsta m&ouml;jliga distributionsvolymen cirka 7 liter (omkring 0,1 l/kg), pga att cirka 60% av albuminet finns extracellul&auml;rt utanf&ouml;r blodbanan.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "27c5c252-b49b-4c9c-b226-9790b5c01bac",
+			"name": "27c5c252-b49b-4c9c-b226-9790b5c01bac",
+			"type": "text",
+			"content": "<h3 id=\"x2_11\"><a class=\"index\" id=\"1022292\" data-text=\"elimination, l&#xE4;kemedel;l&#xE4;kemedel:elimination\"></a><a class=\"crossref\" id=\"50094\"></a>Elimination</h3>\n<p>Kroppens f&ouml;rm&aring;ga att <a class=\"index\" id=\"1048049\" data-text=\"metabolism:l&#xE4;kemedel;l&#xE4;kemedel:metabolism\"></a>eliminera l&auml;kemedel beskrivs med hj&auml;lp av begreppet <a class=\"index\" id=\"1048051\" data-text=\"clearance:l&#xE4;kemedel\"></a>clearance, som anger hur stor volym av till exempel blod som renas fr&aring;n ett l&auml;kemedel per tidsenhet (ml/minut). Clearance <span style=\"color: #ff0000;\">motsvarar</span> summan av leverns f&ouml;rm&aring;ga att eliminera l&auml;kemedel via metabolism (<a class=\"index\" id=\"1048052\" data-text=\"leverclearance\"></a>leverclearance) och njurarnas f&ouml;rm&aring;ga att eliminera l&auml;kemedel via renal uts&ouml;ndring (njurclearance). Vissa l&auml;kemedel kan ocks&aring; brytas ner av <span>enzymer</span> i blodbanan, men det &auml;r mer ovanligt och diskuteras inte vidare h&auml;r. L&auml;kemedel kan ocks&aring; transporteras fr&aring;n levern ut i gallan och elimineras via tarmen, bland annat statiner.</p>\n<p class=\"indent\">Fettl&ouml;sliga l&auml;kemedel tenderar att f&ouml;rst metaboliseras till mer vattenl&ouml;sliga substanser innan metaboliterna uts&ouml;ndras via njurarna. Mer vattenl&ouml;sliga substanser uts&ouml;ndras i h&ouml;gre utstr&auml;ckning of&ouml;r&auml;ndrade direkt via njurarna. <span style=\"color: #000000;\">Tabell 2 ger e</span>xempel p&aring; den fraktion av olika l&auml;kemedel som uts&ouml;ndras of&ouml;r&auml;ndrad via njurarna och som styr behovet av dosjustering vid till exempel nedsatt njurfunktion.</p>\n<p class=\"indent\">Leverns och njurarnas maximala f&ouml;rm&aring;ga att eliminera l&auml;kemedel eller endogena substanser styrs av blodfl&ouml;det till organet. Leverblodfl&ouml;det &auml;r ca 1,5 l/minut och blodfl&ouml;det genom njurarna &auml;r ca 1,2 l/minut. Om allt l&auml;kemedel som kommer till exempelvis levern metaboliseras under en passage genom organet, &auml;r extraktionsgraden 1. Det inneb&auml;r att kapaciteten hos <span>enzymer</span>na, i form av leverns inneboende clearancef&ouml;rm&aring;ga, vida &ouml;verstiger blodfl&ouml;det (h&ouml;gextraktionsl&auml;kemedel har extraktionsgraden 0,7&ndash;1). Det st&ouml;rsta m&ouml;jliga v&auml;rdet p&aring; leverns clearance utifr&aring;n plasmakoncentrationerna blir s&aring;ledes lika med plasmafl&ouml;det (blodfl&ouml;de genom levern x [1-hematokritv&auml;rdet]), dvs ca 900 ml/minut. Om mycket lite elimineras under en passage n&auml;rmar sig extraktionsgraden 0 (l&aring;gextraktionsl&auml;kemedel har extraktionsgraden 0&ndash;0,3). Det kan &auml;nd&aring; inneb&auml;ra att det mesta metaboliseras till slut p&aring; grund av att l&auml;kemedlet &auml;r f&ouml;r fettl&ouml;sligt f&ouml;r att kunna elimineras via njurarna (se Tabell 2).</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ee7fa775-fd04-47cf-b6a9-d7d35e3ead2b",
+			"name": "ee7fa775-fd04-47cf-b6a9-d7d35e3ead2b",
+			"type": "tablewide",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"crossref\" id=\"58753\"></a>Exempel på läkemedel som elimineras A) huvudsakligen via metabolism, B) både via metabolism och renal elimination samt C) huvudsakligen via renal utsöndring. Siffrorna anger fraktion som utsöndras oförändrad via njurarna, fe. (Uppgifter från Goodman &amp; Gilman. The pharmacological basis of therapeutics, 12th Ed., McGraw Hill, 2011, eller från Produktmonografier på Läkemedelsverkets webbplats).",
+				"id": "x2_12",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td colspan=\"2\">\r\n<p><strong>A<br />&lt;&nbsp;30% renal <br />uts&ouml;ndring</strong></p>\r\n</td>\r\n<td colspan=\"2\">\r\n<p><strong>A forts.<br />&lt;&nbsp;30% renal <br />uts&ouml;ndring</strong></p>\r\n</td>\r\n<td colspan=\"2\">\r\n<p><strong>B<br />30&ndash;70% renal <br />uts&ouml;ndring</strong></p>\r\n</td>\r\n<td colspan=\"2\">\r\n<p><strong>C<br />&gt;&nbsp;70% renal <br />uts&ouml;ndring</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Alfentanil</div>\r\n<div class=\"tableLine\">Amitriptylin</div>\r\n<div class=\"tableLine\">Atorvastatin</div>\r\n<div class=\"tableLine\">Ciklosporin A</div>\r\n<div class=\"tableLine\">Cisplatin</div>\r\n<div class=\"tableLine\">Citalopram</div>\r\n<div class=\"tableLine\">Diazepam</div>\r\n<div class=\"tableLine\">Diklofenak</div>\r\n<div class=\"tableLine\">Epoetin alfa</div>\r\n<div class=\"tableLine\">Erytromycin</div>\r\n<div class=\"tableLine\">Felodipin <sup>a</sup></div>\r\n<div class=\"tableLine\">Fentanyl <sup>a</sup></div>\r\n<div class=\"tableLine\">Fenytoin</div>\r\n<div class=\"tableLine\">Fexofenadin</div>\r\n<div class=\"tableLine\">Finasterid</div>\r\n<div class=\"tableLine\">Flumazenil <sup>a</sup></div>\r\n<div class=\"tableLine\">Fluoxetin</div>\r\n<div class=\"tableLine\">Fluvastatin</div>\r\n<div class=\"tableLine\">Galantamin</div>\r\n<div class=\"tableLine\">Haloperidol</div>\r\n<div class=\"tableLine\">Ibuprofen</div>\r\n<div class=\"tableLine\">Indometacin</div>\r\n<div class=\"tableLine\">Itrakonazol</div>\r\n<div class=\"tableLine\">Karbamazepin</div>\r\n<div class=\"tableLine\">Karvedilol</div>\r\n<div class=\"tableLine\">Klindamycin</div>\r\n<div class=\"tableLine\">Klorpromazin</div>\r\n<div class=\"tableLine\">Klozapin</div>\r\n<div class=\"tableLine\">Lamotrigin</div>\r\n<div class=\"tableLine\">Levodopa</div>\r\n<div class=\"tableLine\">Lidokain <sup><a class=\"tableFootnoteLink\" href=\"#fnote_19\"><sup>a</sup></a></sup></div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">Linezolid</span></div>\r\n<div class=\"tableLine\">Loratadin</div>\r\n<div class=\"tableLine\">Lorazepam</div>\r\n<div class=\"tableLine\">Losartan</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,02</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">0,02</div>\r\n<div class=\"tableLine\">0,10</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,03</div>\r\n<div class=\"tableLine\">0,12</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">0,08</div>\r\n<div class=\"tableLine\">0,02</div>\r\n<div class=\"tableLine\">0,12</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,03</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">0,20</div>\r\n<div class=\"tableLine\">0,01</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">0,15</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,02</div>\r\n<div class=\"tableLine\">0,13</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,10</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">0,02</div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">0,25</span></div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">0,04</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Metadon</div>\r\n<div class=\"tableLine\">Metoprolol <sup>a</sup></div>\r\n<div class=\"tableLine\">Metylfenidat</div>\r\n<div class=\"tableLine\">Midazolam</div>\r\n<div class=\"tableLine\">Morfin <sup>a</sup></div>\r\n<div class=\"tableLine\">Naloxon</div>\r\n<div class=\"tableLine\">Naproxen</div>\r\n<div class=\"tableLine\">Nelfinavir</div>\r\n<div class=\"tableLine\">Nifedipin <sup>a</sup></div>\r\n<div class=\"tableLine\">Nikotin</div>\r\n<div class=\"tableLine\">Nitrazepam</div>\r\n<div class=\"tableLine\">Nitroglycerin <sup>a</sup></div>\r\n<div class=\"tableLine\">Nortriptylin</div>\r\n<div class=\"tableLine\">Olanzapin</div>\r\n<div class=\"tableLine\">Omeprazol</div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">Oxikodon</span></div>\r\n<div class=\"tableLine\">Paracetamol</div>\r\n<div class=\"tableLine\">Paroxetin</div>\r\n<div class=\"tableLine\">Prednisolon</div>\r\n<div class=\"tableLine\">Propranolol <sup>a</sup></div>\r\n<div class=\"tableLine\">Risperidon</div>\r\n<div class=\"tableLine\">Ritonavir</div>\r\n<div class=\"tableLine\">Sakvinavir</div>\r\n<div class=\"tableLine\">Sertralin</div>\r\n<div class=\"tableLine\">Sildenafil</div>\r\n<div class=\"tableLine\">Simvastatin</div>\r\n<div class=\"tableLine\">Sumatriptan</div>\r\n<div class=\"tableLine\">Tadalafil</div>\r\n<div class=\"tableLine\">Takrolimus</div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">Tigecyklin</span></div>\r\n<div class=\"tableLine\">Torasemid</div>\r\n<div class=\"tableLine\">Valproinsyra</div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">Vardenafil</span></div>\r\n<div class=\"tableLine\">Venlafaxin</div>\r\n<div class=\"tableLine\">Verapamil <sup>a</sup></div>\r\n<div class=\"tableLine\">Warfarin</div>\r\n<div class=\"tableLine\">Zidovudin</div>\r\n<div class=\"tableLine\">Zolmitriptan</div>\r\n<div class=\"tableLine\">Zolpidem</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">0,24</div>\r\n<div class=\"tableLine\">0,10</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">0,04</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">0,05</div>\r\n<div class=\"tableLine\">0,01</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">0,17</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">0,02</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">0,19</span></div>\r\n<div class=\"tableLine\">0,03</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,02</div>\r\n<div class=\"tableLine\">0,26</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">0,03</div>\r\n<div class=\"tableLine\">0,03</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">0,20</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">0,20</span></div>\r\n<div class=\"tableLine\">0,25</div>\r\n<div class=\"tableLine\">0,02</div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">&lt; 0,05</span></div>\r\n<div class=\"tableLine\">0,05</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,03</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,02</div>\r\n<div class=\"tableLine\">0,18</div>\r\n<div class=\"tableLine\">0,10</div>\r\n<div class=\"tableLine\">&lt;&nbsp;0,01</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Amilorid</div>\r\n<div class=\"tableLine\">Cefotaxim</div>\r\n<div class=\"tableLine\">Ceftriaxon</div>\r\n<div class=\"tableLine\">Cimetidin</div>\r\n<div class=\"tableLine\">Ciprofloxacin</div>\r\n<div class=\"tableLine\">Digoxin</div>\r\n<div class=\"tableLine\">Disopyramid</div>\r\n<div class=\"tableLine\">Doxycyklin</div>\r\n<div class=\"tableLine\">Etoposid</div>\r\n<div class=\"tableLine\">Famotidin</div>\r\n<div class=\"tableLine\">Gabapentin</div>\r\n<div class=\"tableLine\">Kaptopril</div>\r\n<div class=\"tableLine\">Nitrofurantoin</div>\r\n<div class=\"tableLine\">Pravastatin</div>\r\n<div class=\"tableLine\">Ranitidin</div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">Rivaroxaban</span></div>\r\n<div class=\"tableLine\">Stavudin</div>\r\n<div class=\"tableLine\">Sulfasalazin</div>\r\n<div class=\"tableLine\">Tetracyklin</div>\r\n<div class=\"tableLine\">Topotekan</div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">Tramadol</span></div>\r\n<div class=\"tableLine\">Valsartan</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">0,49</div>\r\n<div class=\"tableLine\">0,55</div>\r\n<div class=\"tableLine\">0,55</div>\r\n<div class=\"tableLine\">0,62</div>\r\n<div class=\"tableLine\">0,50</div>\r\n<div class=\"tableLine\">0,60</div>\r\n<div class=\"tableLine\">0,55</div>\r\n<div class=\"tableLine\">0,41</div>\r\n<div class=\"tableLine\">0,35</div>\r\n<div class=\"tableLine\">0,65</div>\r\n<div class=\"tableLine\">0,66</div>\r\n<div class=\"tableLine\">0,40</div>\r\n<div class=\"tableLine\">0,47</div>\r\n<div class=\"tableLine\">0,47</div>\r\n<div class=\"tableLine\">0,69</div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">0,33</span></div>\r\n<div class=\"tableLine\">0,43</div>\r\n<div class=\"tableLine\">0,37</div>\r\n<div class=\"tableLine\">0,58</div>\r\n<div class=\"tableLine\">0,40</div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">0,30</span></div>\r\n<div class=\"tableLine\">0,30</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Aciklovir</div>\r\n<div class=\"tableLine\">Amoxicillin</div>\r\n<div class=\"tableLine\">Atenolol</div>\r\n<div class=\"tableLine\">Cefadroxil</div>\r\n<div class=\"tableLine\">Cefalexin</div>\r\n<div class=\"tableLine\">Cefepim</div>\r\n<div class=\"tableLine\">Ceftazidim</div>\r\n<div class=\"tableLine\">Cefuroxim</div>\r\n<div class=\"tableLine\">Cetirizin</div>\r\n<div class=\"tableLine\">Enalaprilat</div>\r\n<div class=\"tableLine\">Flukonazol</div>\r\n<div class=\"tableLine\">Furosemid</div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">Gabapentin</span></div>\r\n<div class=\"tableLine\">Ganciklovir</div>\r\n<div class=\"tableLine\">Gentamicin</div>\r\n<div class=\"tableLine\">Hydroklortiazid</div>\r\n<div class=\"tableLine\">Lisinopril</div>\r\n<div class=\"tableLine\">Litium</div>\r\n<div class=\"tableLine\">Metformin</div>\r\n<div class=\"tableLine\">Metotrexat</div>\r\n<div class=\"tableLine\">Oseltamivir (karboxylat)</div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">Pregabalin</span></div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">Sitagliptin</span></div>\r\n<div class=\"tableLine\">Sotalol</div>\r\n<div class=\"tableLine\">Tobramycin</div>\r\n<div class=\"tableLine\">Topiramat</div>\r\n<div class=\"tableLine\">Vankomycin</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">0,75</div>\r\n<div class=\"tableLine\">0,86</div>\r\n<div class=\"tableLine\">0,94</div>\r\n<div class=\"tableLine\">0,90</div>\r\n<div class=\"tableLine\">0,91</div>\r\n<div class=\"tableLine\">0,80</div>\r\n<div class=\"tableLine\">0,84</div>\r\n<div class=\"tableLine\">0,96</div>\r\n<div class=\"tableLine\">0,71</div>\r\n<div class=\"tableLine\">0,88</div>\r\n<div class=\"tableLine\">0,75</div>\r\n<div class=\"tableLine\">0,71</div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">&gt; 0,95</span></div>\r\n<div class=\"tableLine\">0,73</div>\r\n<div class=\"tableLine\">&gt;&nbsp;0,90</div>\r\n<div class=\"tableLine\">&gt;&nbsp;0,95</div>\r\n<div class=\"tableLine\">&gt;&nbsp;0,88</div>\r\n<div class=\"tableLine\">0,95</div>\r\n<div class=\"tableLine\">1,00</div>\r\n<div class=\"tableLine\">0,81</div>\r\n<div class=\"tableLine\">&gt;&nbsp;0,95</div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">&gt; 0,95</span></div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">0,80</span></div>\r\n<div class=\"tableLine\">&gt;&nbsp;0,80</div>\r\n<div class=\"tableLine\">0,90</div>\r\n<div class=\"tableLine\">&gt;&nbsp;0,70</div>\r\n<div class=\"tableLine\">0,79</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"8\" class=\"footNotes\">\r\n<div class=\"tableFootnote\" id=\"fnote_19\">a.\r\n<div class=\"tableLine\">H&ouml;gextraktionsl&auml;kemedel i levern.</div>\r\n</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8975ce1b-b39c-48d5-b771-1ea41a937970",
+			"name": "8975ce1b-b39c-48d5-b771-1ea41a937970",
+			"type": "text",
+			"content": "<h3 id=\"x2_13\"><a class=\"index\" id=\"1022305\" data-text=\"l&#xE4;kemedel:halveringstid;halveringstid, l&#xE4;kemedel\"></a>Halveringstid</h3>\n<p>Halveringstiden styrs av b&aring;de distributionsvolym och clearance. Ju mer l&auml;kemedel som &auml;r f&ouml;rdelat ut i v&auml;vnaderna (st&ouml;rre distributionsvolym), desto mindre finns tillg&auml;ngligt i blodet f&ouml;r levern och njurarna att eliminera. Med &ouml;kad kapacitet hos leverns <span>enzymer</span> eller njurens uts&ouml;ndringsmekanismer (t&nbsp;ex aktiv transport) &ouml;kar elimineringen av det som finns i blodbanan (st&ouml;rre clearance).</p>\n<p class=\"indent\"><span style=\"color: #ff0000;\">Distributionsvolym och clearance p&aring;verkar s&aring;ledes halveringstiden i olika riktning (se Faktaruta 1).</span> Halveringstiden blir l&auml;ngre f&ouml;r l&auml;kemedel med stor distributionsvolym och kortare om distributionsvolymen &auml;r liten, medan den blir l&auml;ngre om clearance &auml;r l&aring;gt och kortare om clearance &auml;r h&ouml;gt. Man brukar s&auml;ga att clearance och distributionsvolym &auml;r &rdquo;prim&auml;ra&rdquo;, sinsemellan oberoende parametrar som styr den &rdquo;sekund&auml;ra&rdquo; parametern halveringstiden.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1c109904-d12f-482d-9dcd-ea63ab7cd78d",
+			"name": "1c109904-d12f-482d-9dcd-ea63ab7cd78d",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"62372\"></a>Vad styr halveringstiden?",
+				"text": "<table><tbody><tr><td><p>t<sub>1/2</sub> = 0,7 x Distributionsvolym / Clearance</p></td></tr></tbody></table>",
+				"id": "x2_15"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e411188a-e334-49e0-a2ef-fb9fa09283e6",
+			"name": "e411188a-e334-49e0-a2ef-fb9fa09283e6",
+			"type": "text",
+			"content": "<h3 id=\"x2_16\">Doseringsintervall</h3>\n<p>Halveringstiden har i allm&auml;nhet betydelse f&ouml;r hur ofta ett l&auml;kemedel beh&ouml;ver doseras (doseringsintervall) och grundregeln &auml;r att l&auml;kemedel <span style=\"font-style: italic;\">inte</span> beh&ouml;ver ges oftare &auml;n motsvarande en halveringstid. Det &auml;r &ouml;nskv&auml;rt med dosering endast 1&nbsp;g&aring;ng/dygn, vilket bidrar till h&ouml;gre medicinerings<a class=\"index\" id=\"1035476\" data-text=\"f&#xF6;ljsamhet, l&#xE4;kemedel\"></a>f&ouml;ljsamhet. Sm&auml;rtlindrande l&auml;kemedel har generellt korta halveringstider, vilket g&ouml;r doseringen problematisk. Morfin beh&ouml;ver doseras upp till 6 g&aring;nger/dygn. I dessa fall har beredningsformer som ger l&aring;ngsammare fris&auml;ttning av l&auml;kemedlet i mag-tarmkanalen utvecklats (t&nbsp;ex Dolcontin <span style=\"color: #ff0000;\">och Oxycontin</span> dep&aring;tabletter). V&aring;rt vanligaste sm&auml;rtstillande l&auml;kemedel, paracetamol, beh&ouml;ver doseras upp till 4 g&aring;nger/dygn, men en nyare beredning medger dosering var 8:e timme.</p>\n<p class=\"indent\">Beredningsformen kan s&aring;ledes anv&auml;ndas som ett instrument f&ouml;r att utj&auml;mna toppar och dalar i plasmakoncentrationerna och d&auml;rmed effekten &ouml;ver tiden. Det sker genom f&ouml;rdr&ouml;jd fris&auml;ttning av l&auml;kemedlet fr&aring;n tabletter eller granulatkorn. Detta &auml;r kliniskt motiverat i de fall flera doser/dag beh&ouml;ver ges f&ouml;r att uppr&auml;tth&aring;lla en effekt.</p>\n<p class=\"indent\">P&aring; grund av farmakodynamiska f&ouml;rh&aring;llanden kan ett flertal l&auml;kemedel doseras mer s&auml;llan &auml;n varje halveringstid. Orsaken kan vara att l&auml;kemedlet fungerar som en icke-kompetitiv h&auml;mmare av vissa m&aring;lreceptorer eller <span>enzymer</span>. D&aring; &auml;r &aring;terbildningen av receptorn eller enzymet avg&ouml;rande f&ouml;r doseringsintervallet, snarare &auml;n hur snabbt l&auml;kemedlet f&ouml;rsvinner.</p>\n<p class=\"indent\">Ett exempel &auml;r omeprazol som ges vid mags&aring;r eller sura uppst&ouml;tningar och p&aring;verkar H<sup>+</sup>/K<sup>+</sup>-ATPas. Halveringstiden f&ouml;r omeprazol &auml;r 40 minuter, men pga l&aring;ngsam &aring;terbildning av enzymet &auml;r det tillr&auml;ckligt med ett doseringsintervall p&aring; 24 timmar (1&nbsp;g&aring;ng/dag). En annan orsak kan vara att bindningen till receptorn/enzymet varar l&auml;ngre &auml;n vad som syns utifr&aring;n plasmakoncentrationerna, trots att bindningen &auml;r kompetitiv.</p>\n<p class=\"indent\">I andra fall kan l&auml;kemedlet p&aring;verka t&nbsp;ex den monoaminerga transmissionen som successivt f&ouml;r&auml;ndras d&aring; l&auml;kemedlet &auml;r n&auml;rvarande. Antidepressiva medel, b&aring;de tricykliska och SSRI/SNRI, har halveringstider p&aring; ca 1&nbsp;dygn (med stor variation) men det tar 3&ndash;4 veckor innan den fulla effekten av l&auml;kemedlet kan utv&auml;rderas. Biverkningarna av dessa medel kommer dock betydligt tidigare, vilket visar att olika effekter av ett l&auml;kemedel kan ha olika tidsprofil.</p>\n<p class=\"indent\">M&aring;nga antibiotika har mycket kort halveringstid j&auml;mf&ouml;rt med doseringsintervallet, till exempel&nbsp; fenoximetylpenicillin som har en halveringstid p&aring; cirka 30 minuter och ett rekommenderat doseringsintervall p&aring; 8&ndash;12 timmar. Behandling med antibiotika grundas p&aring; l&auml;kemedlens effekt p&aring; bakteriernas tillv&auml;xt, varf&ouml;r doseringen kan ske betydligt mer s&auml;llan &auml;n vad halveringstidens l&auml;ngd skulle indikera.</p>\n<p class=\"indent\">De allra flesta l&auml;kemedel ges som underh&aring;llsbehandling under l&aring;ng tid. Kortare behandlingar &auml;r aktuellt f&ouml;r medel mot sm&auml;rta och infektioner. De styrinstrument vi har f&ouml;r att erh&aring;lla en viss effekt &ouml;ver tiden &auml;r dosens storlek och doseringsintervallet (se Faktaruta 2). J&auml;mviktskoncentrationen, C<sub>ss</sub>, uppn&aring;s efter 3&ndash;4 halveringstider. M<span style=\"color: #ff0000;\">an b&ouml;r s&aring;ledes r&auml;kna med att det tar minst tre halveringstider innan en behandlingsj&auml;mvikt uppn&aring;tts och innan man kan f&ouml;rv&auml;nta sig att ha uppn&aring;tt full effekt</span>.</p>\n<p class=\"indent\">Halveringstiden styr inte koncentrationen som s&aring;dan. Det &auml;r endast clearance (som m&aring;tt p&aring; elimineringen) i relation till tillf&ouml;rselhastigheten (biotillg&auml;nglighet x&nbsp;dos/doseringsintervall) som best&auml;mmer koncentrationen och d&auml;rmed effekten.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d576aec6-a62b-4301-bbcc-d8596b26acd5",
+			"name": "d576aec6-a62b-4301-bbcc-d8596b26acd5",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"crossref\" id=\"36672\"></a>Vad styr läkemedelskoncentrationen  vid upprepad dosering?",
+				"text": "<table><tbody><tr><td><p>C<sub>SS</sub> = (Biotillgänglighet x Dos) / (Clearance x Dose&shy;ringsintervall)</p></td></tr></tbody></table>",
+				"id": "x2_18"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ed93393a-c569-4393-87d9-6ab02ddabf73",
+			"name": "ed93393a-c569-4393-87d9-6ab02ddabf73",
+			"type": "text",
+			"content": "<h3 id=\"x2_19\">Biotillg&auml;nglighet</h3>\n<p>Biotillg&auml;ngligheten beskriver hur mycket av en given dos som kommer in i cirkulationen. Vid peroral dosering g&aring;r l&auml;kemedlet genom levern i en &rdquo;f&ouml;rsta passage&rdquo; innan det n&aring;r cirkulationen. H&ouml;gextraktionsl&auml;kemedel har generellt l&aring;g biotillg&auml;nglighet efter peroral administrering eftersom en stor del metaboliseras redan i den f&ouml;rsta passagen genom tarmslemhinnan och levern (<span style=\"color: #ff0000;\">till exempel beta-adrenoceptorblockerare och opiater</span>, se f&ouml;r &ouml;vrigt Tabell 2). Biotillg&auml;ngligheten kan ocks&aring; vara l&aring;g p&aring; grund av d&aring;lig l&ouml;slighet i mag-tarmkanalen eller sv&aring;righeter f&ouml;r l&auml;kemedlet att passera in i kroppen genom mag-tarmkanalens epitelceller. Detta kan bero p&aring; of&ouml;rdelaktiga fysikalisk-kemiska egenskaper f&ouml;r transport &ouml;ver membran, eller p&aring; nedbrytning i eller uttransport fr&aring;n epitelcellerna.</p>\n<p class=\"indent\">Intraven&ouml;s administrering sker direkt i blodbanan vilket definitionsm&auml;ssigt inneb&auml;r 100% biotillg&auml;nglighet. L&auml;kemedel administreras ocks&aring; sublingualt, intramuskul&auml;rt och subkutant. Biotillg&auml;ngligheten f&ouml;r dessa administreringsv&auml;gar &auml;r mycket h&ouml;g, ofta n&auml;ra 100%, <span style=\"color: #ff0000;\">men inte alltid. F&ouml;r biologiska l&auml;kemedel som administreras subkutant kan biotillg&auml;ngligheten vara betydligt l&auml;gre.</span> F&ouml;r rektal administrering (via &auml;ndtarmen) kan biotillg&auml;ngligheten variera beroende p&aring; placeringen av suppositoriet. Vid vaginal administrering kan vissa l&auml;kemedel absorberas till viss del, medan andra n&auml;stan inte alls absorberas utan ut&ouml;var sin effekt mer lokalt.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a69c12c0-9d73-4b3c-af07-bc4547de245d",
+			"name": "a69c12c0-9d73-4b3c-af07-bc4547de245d",
+			"type": "text",
+			"content": "<h3 id=\"x2_20\">Ackumulering</h3>\n<p><a class=\"index\" id=\"1022349\" data-text=\"ackumulering, l&#xE4;kemedel;l&#xE4;kemedel:ackumulering\"></a>Ackumulering &auml;r ett begrepp som ofta signalerar &rdquo;fara&rdquo;. Det beskriver relationen mellan j&auml;mviktskoncentrationen och koncentrationen efter en singeldos. L&auml;kemedel med l&aring;ng halveringstid ackumuleras s&aring;ledes i st&ouml;rre utstr&auml;ckning &auml;n de med kort halveringstid vid samma doseringsintervall. F&ouml;r att ut&ouml;va effekt kr&auml;vs en viss m&aring;ldosering (koncentration). Vi har s&aring;ledes inget val och ett l&auml;kemedel som ackumuleras &auml;r inte &rdquo;farligare&rdquo; &auml;n ett som inte ackumuleras. Effekten kanske till och med upplevs som j&auml;mnare &auml;n f&ouml;r ett l&auml;kemedel med kort halveringstid.</p>\n<p class=\"indent\">Styrbarheten av effekt och eventuella biverkningar &auml;r dock mindre om halveringstiden &auml;r l&aring;ng, eftersom det tar l&auml;ngre tid att n&aring; terapeutiska niv&aring;er vid behandlingsstart eller minska koncentrationen vid en &ouml;verdosering.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "726c5bce-f1b3-4ec0-998e-196b066c32d8",
+			"name": "726c5bce-f1b3-4ec0-998e-196b066c32d8",
+			"type": "text",
+			"content": "<h3 id=\"Biologiska-lakemedel\"><span style=\"color: #ff0000;\">Biologiska l&auml;kemedel</span></h3>\n<p><span style=\"color: #ff0000;\">Generellt behandlar detta kapitel l&auml;kemedel som &auml;r sm&aring; molekyler. Med den &ouml;kande anv&auml;ndningen av biologiska l&auml;kemedel beh&ouml;vs ocks&aring; ett speciellt fokus p&aring; deras farmakokinetiska egenskaper. Biologiska l&auml;kemedel &auml;r endera peptider eller proteiner och best&aring;r s&aring;ledes av aminosyror. M&aring;nga av de nya biologiska l&auml;kemedel som utvecklas &auml;r monoklonala antikroppar. De har speciella egenskaper som g&ouml;r att de stannar betydligt l&auml;ngre i kroppen &auml;n vad som &auml;r vanligt f&ouml;r sm&aring; molekyler (se nedan).</span></p>\n<p class=\"indent\"><span style=\"color: #ff0000;\">Generellt sett kan biologiska l&auml;kemedel inte administreras peroralt, eftersom de &auml;r f&ouml;r stora f&ouml;r att kunna absorberas fr&aring;n mag-tarmkanalen. D&auml;rf&ouml;r ges de ofta subkutant eller intramuskul&auml;rt och i undantagsfall intraven&ouml;st. Fr&aring;n administreringsst&auml;llet transporteras de via lymfk&auml;rlen ut i blodbanan och vidare till resten av kroppen. Genom att lymffl&ouml;det &auml;r relativt l&aring;ngsamt blir plasmakoncentrationsprofilen betydligt l&aring;ngsammare &auml;n om samma l&auml;kemedel ges intraven&ouml;st. Biotillg&auml;ngligheten &auml;r ofta relativt l&aring;g.</span></p>\n<p class=\"indent\"><span style=\"color: #ff0000;\">Ett exempel p&aring; detta &auml;r rekombinant humant erytropoietin som </span><span style=\"color: #ff0000;\">efter intraven&ouml;s dosering </span><span style=\"color: #ff0000;\">har en halveringstid&nbsp; p&aring; 4 timmar och </span><span style=\"color: #ff0000;\">uppn&aring;r </span><span style=\"color: #ff0000;\">maximal koncentration efter subkutan administrering f&ouml;rst efter 12&ndash;18 timmar. Biotillg&auml;ngligheten &auml;r 20% och doseringsintervallet &auml;r tre g&aring;nger per vecka. </span></p>\n<p class=\"indent\"><span style=\"color: #ff0000;\">F&ouml;r andra l&auml;kemedel kan doseringsintervall p&aring; en vecka eller en m&aring;nad r&auml;cka. Generellt distribueras biologiska l&auml;kemedel i det extracellul&auml;ra kroppsvattnet, men g&aring;r inte in i cellerna. Monoklonala antikroppar som &auml;r baserade p&aring; IgG har affinitet till den s&aring; kallade neonatala Fc-receptorn (FcRn), en receptor som hos vuxna finns i kapill&auml;rv&auml;ggarnas endotelceller, i lungorna och i tarmepitelet. Den &auml;r bland annat ansvarig f&ouml;r att f&ouml;ra &ouml;ver antikroppar mellan moder och foster under graviditeten samt fr&aring;n mag-tarmkanalen d&aring; barnet ammas, d&auml;rav namnet neonatal. N&auml;r molekylerna binder till FcRn skyddas de fr&aring;n nedbrytning och utg&ouml;r d&auml;rigenom en dep&aring; som kan recirkulera tillbaks till blodbanan. De f&aring;r d&auml;rmed betydligt l&auml;ngre halveringstid och kan doseras mer s&auml;llan.</span></p>\n<p class=\"indent\"><span style=\"color: #ff0000;\">Vissa biologiska l&auml;kemedel, som insulin och koagulationsfaktorerna VIII och IX, har linj&auml;r farmakokinetik precis som sm&aring; l&auml;kemedelsmolekyler. De f&ouml;ljer allts&aring; exponentiella principer med en halveringstid. De biologiska l&auml;kemedel som &auml;r baserade p&aring; IgG har ist&auml;llet vad man kallar f&ouml;r &rdquo;target-mediated drug disposition&rdquo;. Det inneb&auml;r att m&aring;lorganet (receptorn som l&auml;kemedlet binder till) ocks&aring; bidrar till elimineringen. Nedbrytning kan ocks&aring; ske i andra v&auml;vnader och i njurarna efter filtration och &aring;terupptag i proximala tubuli. Farmakokinetiken &auml;r d&aring; beroende av storleken p&aring; dosen, s&aring; kallad icke-linj&auml;r farmakokinetik. Man kan d&auml;rf&ouml;r inte generellt prata om halveringstid f&ouml;r dessa l&auml;kemedel. Hur l&auml;nge l&auml;kemedlet stannar i kroppen &auml;r i betydligt st&ouml;rre utstr&auml;ckning beroende av hur stor dos man ger.&nbsp; </span><span style=\"color: #ff0000;\">Sambanden </span><span style=\"color: #ff0000;\">&auml;r s&aring;ledes betydligt mer komplicerade &auml;n f&ouml;r l&auml;kemedel som utg&ouml;rs av sm&aring; molekyler.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4bacda2b-eeee-475a-8c76-9351b5c38df3",
+			"name": "4bacda2b-eeee-475a-8c76-9351b5c38df3",
+			"type": "text",
+			"content": "<h2 id=\"x2_21\">Varf&ouml;r varierar behandlingsresultaten?</h2>\n<h3 id=\"x2_22\"><a class=\"index\" id=\"1022361\" data-text=\"&#xE4;rftliga faktorer:l&#xE4;kemedel;l&#xE4;kemedel:&#xE4;rftliga faktorer\"></a><a class=\"crossref\" id=\"23193\"></a>&Auml;rftliga faktorer</h3>\n<p><a class=\"index\" id=\"1022363\" data-text=\"farmakogenetik\"></a>Farmakogenetik handlar <a class=\"index\" id=\"1022364\" data-text=\"l&#xE4;kemedelsdosering:&#xE4;rftliga faktorer\"></a>om hur generna p&aring;verkar oms&auml;ttningen av l&auml;kemedel och det farmakologiska svaret p&aring; en behandling. Farmakogenetik utg&ouml;r en del av <a class=\"index\" id=\"1022366\" data-text=\"farmakogenomik\"></a>farmakogenomiken som &auml;ven omfattar studier av hela genomet f&ouml;r att finna varianter som &auml;r associerade med sjukdom och/eller deras behandlingsm&ouml;jligheter. En stor del av forskningen inom l&auml;kemedelsutvecklingen syftar till att hitta nya &rdquo;targets&rdquo;, dvs gener eller proteiner som p&aring;verkar sjukdomars uppkomst, f&ouml;rlopp och behandlingsm&ouml;jligheter.</p>\n<p class=\"indent\">Den &auml;rftliga variationen i enzymgener som p&aring;verkar nedbrytning av l&auml;kemedel och d&auml;rigenom l&auml;kemedlens effekt &auml;r v&auml;lstuderad. Det finns ett 50-tal karakteriserade cytokrom P450 (CYP)-enzym. Detta fylogenetiskt mycket gamla enzymsystem har en naturlig funktion i organismens avgiftningsprocesser men &auml;ven i syntesen och metabolismen av viktiga endogena <span>hormoner</span>, <span>gallsyror</span>, fetter etc.</p>\n<p class=\"indent\">De flesta l&auml;kemedelsmetaboliserande <span>enzym</span> har ett monomorft uttrycksm&ouml;nster, det vill s&auml;ga aktiviteten varierar enligt en normalf&ouml;rdelningskurva kring ett medelv&auml;rde. <span style=\"color: #ff0000;\">Ett enzym r&auml;knas som polymorft om det f&ouml;rekommer i flera olika &auml;rftliga former &ndash; fenotyper, till exempel &rdquo;snabb&rdquo; respektive &rdquo;l&aring;ngsam metaboliserare&rdquo; (se Figur 1).</span> Flera av medlemmarna i familjen av CYP-<span>enzymer</span> har ett s&aring;dant polymorft uttrycksm&ouml;nster, t&nbsp;ex CYP2D6, CYP2C19 och CYP2C9. I Tabell 3 anges ett antal l&auml;kemedelssubstanser som metaboliseras av, respektive h&auml;mmar eller inducerar olika <span>enzymer</span>.</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e52e4edd-31c8-41c7-984e-49aaef47dbe8",
+			"name": "e52e4edd-31c8-41c7-984e-49aaef47dbe8",
+			"type": "figure",
+			"content": {
+				"number": "1",
+				"maxwidth": "",
+				"image": "/images/x2_lma_klinfarmprincip_2013fm10_images/figur1.png",
+				"title": "",
+				"text": "<p>Monomorft (v&auml;nster) respektive polymorft (h&ouml;ger) m&ouml;nster av l&auml;kemedelsmetabolisk f&ouml;rm&aring;ga i en population (se texten). Skalan p&aring; x-axeln &auml;r arbitr&auml;r. Behandlingsresultatet vid olika grad av metabolismf&ouml;rm&aring;ga anges vid klamrarna.</p>",
+				"alt": "",
+				"id": "x2_23"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "90ff3956-ebf9-49df-b1aa-559ee63df7dd",
+			"name": "90ff3956-ebf9-49df-b1aa-559ee63df7dd",
+			"type": "tablewide",
+			"content": {
+				"number": "3",
+				"title": "<a class=\"crossref\" id=\"33739\"></a>Några läkemedelsmetaboliserande <span>enzymer</span> <a class=\"index\" id=\"1036824\" data-text=\"cytokrom P-450-enzymer\"></a>(cytokrom P450/CYP) med exempel på substrat och läkemedel som hämmar eller inducerar ett enzym",
+				"id": "x2_24",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>&nbsp;</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong><span class=\"tab\"></span><span class=\"tab\"></span>CYP1A2<span class=\"tab\"></span><span class=\"tab\"></span></strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>CYP2C9<span class=\"tab\"></span><span class=\"tab\"></span></strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>CYP2C19<span class=\"tab\"></span></strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>CYP2D6<span class=\"tab\"></span></strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong><span class=\"tab\"></span>CYP3A4</strong></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">L&auml;kemedels-</div>\r\n<div class=\"tableLine\">substrat</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Amitriptylin</div>\r\n<div class=\"tableLine\">Klomipramin</div>\r\n<div class=\"tableLine\">Klozapin</div>\r\n<div class=\"tableLine\">Fluvoxamin</div>\r\n<div class=\"tableLine\">Koffein<span class=\"tab\"></span><span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Fenytoin</div>\r\n<div class=\"tableLine\">Tolbutamid</div>\r\n<div class=\"tableLine\">Warfarin</div>\r\n<div class=\"tableLine\">Losartan</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Citalopram</div>\r\n<div class=\"tableLine\">Diazepam</div>\r\n<div class=\"tableLine\">Omeprazol</div>\r\n<div class=\"tableLine\">Proguanil</div>\r\n<div class=\"tableLine\">Mefenytoin</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span>De flesta antidepressiva</div>\r\n<div class=\"tableLine\">De flesta antipsykotika</div>\r\n<div class=\"tableLine\">Kodein</div>\r\n<div class=\"tableLine\">Etylmorfin</div>\r\n<div class=\"tableLine\">Metoprolol</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Ciklosporin A</div>\r\n<div class=\"tableLine\">Diazepam</div>\r\n<div class=\"tableLine\">Midazolam</div>\r\n<div class=\"tableLine\">Triazolam</div>\r\n<div class=\"tableLine\">Erytromycin</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span>L&auml;kemedel</div>\r\n<div class=\"tableLine\">som h&auml;mmar</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span>Fluvoxamin<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\"><span class=\"tab\">Flukonazol</span><span class=\"tab\"></span><span class=\"tab\"></span><span class=\"tab\"></span></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Kinidin<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Ketokonazol</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Inducerande</div>\r\n<div class=\"tableLine\">faktorer<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Tobaksr&ouml;kning<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span><span class=\"tab\"></span><span class=\"tab\"></span><span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span><span class=\"tab\"></span><span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Karbamazepin</div>\r\n<div class=\"tableLine\">Fenytoin</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e25e0cf3-5b1a-4580-8309-432b45ce5304",
+			"name": "e25e0cf3-5b1a-4580-8309-432b45ce5304",
+			"type": "text",
+			"content": "<p class=\"indent\">Bildningen av cytokrom P450 2D6-enzymet styrs av en gen (monogen ned&auml;rvning) som finns i mer &auml;n 50 allelvarianter. Varje allel har en sifferbeteckning (efter en asterisk) sist i enzymbeteckningen, t&nbsp;ex CYP2D6*1, som anger referensvarianten. Muterade alleler resulterar oftast i en defekt enzymfunktion eller avsaknad av <span>enzymer</span>. I dubbel upps&auml;ttning kan de muterade allelerna leda till egenskapen &rdquo;l&aring;ngsam metabolism&rdquo; vilket f&ouml;rekommer hos 5&ndash;7% i den v&auml;sterl&auml;ndska befolkningen (kaukasier). Aktiviteten f&ouml;rdelar sig s&aring;ledes p&aring; tv&aring; grupper och den totala spridningen blir oftast betydligt st&ouml;rre &auml;n annars (se Figur 1). Hos 1&ndash;2% av individerna finns den v&auml;lfungerande genen i flera upplagor, vilket leder till en s&nbsp;k ultrasnabb metabolism.</p>\n<p class=\"indent\">Individer med en eller tv&aring; muterade alleler i CYP2C19-genen &auml;r ocks&aring; &rdquo;l&aring;ngsamma metaboliserare&rdquo; f&ouml;r ett antal l&auml;kemedel. &rdquo;L&aring;ngsamma metaboliserare&rdquo; kr&auml;ver l&auml;gre doser av t&nbsp;ex citalopram, annars &ouml;kar risken f&ouml;r biverkningar. Proguanil, som &auml;r ett antimalariamedel, &auml;r ett annat exempel p&aring; betydelsen av CYP2C19-polymorfier. Proguanil m&aring;ste metaboliseras av CYP2C19 till en aktiv metabolit f&ouml;r att ut&ouml;va sin effekt. Det &ouml;nskade behandlingsresultatet kan d&auml;rf&ouml;r utebli om patienten har en defekt CYP2C19-funktion.</p>\n<p class=\"indent\"><a class=\"index\" id=\"1048605\" data-text=\"N-acetyltransferas\"></a>N-acetyltransferas finns i tv&aring; enzymformer och katalyserar konjugeringen (<a class=\"index\" id=\"1048607\" data-text=\"acetylerare:l&#xE5;ngsamma\"></a>acetylering) av t&nbsp;ex isoniazid, sulfonamider, hydralazin och salazopyrin. Frekvensen av vissa biverkningar av dessa l&auml;kemedel &auml;r signifikant &ouml;kad hos &rdquo;l&aring;ngsamma acetylerare&rdquo;. De utg&ouml;r ca 60% i den v&auml;sterl&auml;ndska befolkningen, men endast ca 15% bland japaner och kineser.</p>\n<p class=\"indent\"><a class=\"index\" id=\"1022382\" data-text=\"etniska skillnader, l&#xE4;kemedel;l&#xE4;kemedel:etniska skillnader\"></a>Etniska skillnader i <a class=\"index\" id=\"1022383\" data-text=\"genotypning\"></a>genotyp- och fenotyp-frekvens finns &auml;ven f&ouml;r andra <span>enzymer</span>. F&ouml;r <a class=\"index\" id=\"1029717\" data-text=\"CYP2D6\"></a>CYP2D6 finns det en genetiskt betingad populationsskillnad i frekvensen av &rdquo;l&aring;ngsamma metaboliserare&rdquo;. Dessa utg&ouml;r bara ca 1% av den orientaliska befolkningen, j&auml;mf&ouml;rt med 5&ndash;7% hos v&auml;sterl&auml;nningar. Omv&auml;nd skillnad har p&aring;visats f&ouml;r CYP2C19, d&auml;r motsvarande siffror &auml;r 15&ndash;20% respektive 3%. Kunskaper om etniska skillnader i metabolism &auml;r viktiga vid utvecklingen av nya l&auml;kemedel, d&aring; resultat fr&aring;n vissa befolkningsgrupper inte utan vidare kan &ouml;vers&auml;ttas till andra.</p>\n<p class=\"indent\">Den metaboliska polymorfin f&aring;r en st&ouml;rre klinisk betydelse om l&auml;kemedlet har en brant koncentrations-effektkurva &ndash; individer med l&aring;ngsam metabolism drabbas j&auml;mf&ouml;relsevis ofta av uttalade effekter eller biverkningar om behandling sker med en standarddos. Detta har visats f&ouml;r t&nbsp;ex neuroleptika. Omv&auml;nt kan individer med extremt snabb metabolism bli &rdquo;underbehandlade&rdquo;. Om koncentrations-effektkurvan i&nbsp;st&auml;llet har en svag lutning f&ouml;rst&auml;rks effekten endast marginellt med &ouml;kande koncentration och betydelsen av genetiska polymorfier i CYP-<span>enzymer</span>na minskar i motsvarande m&aring;n.</p>\n<p class=\"indent\">Om ett l&auml;kemedels effekt &auml;r beroende av metabolisk omvandling till en aktiv metabolit kan effekten utebli om enzymet &auml;r muterat och saknar eller har l&aring;g aktivitet. Kodein &auml;r ett exempel p&aring; detta. Hos l&aring;ngsamma CYP2D6-metaboliserare <span style=\"color: #ff0000;\">(5&ndash;7% bland v&auml;sterl&auml;nningar)</span> &auml;r enzymet muterat och har l&aring;g eller ingen aktivitet och kodeinet kan bli verkningsl&ouml;st eller ge endast en svag effekt. Behandlande l&auml;kare b&ouml;r t&auml;nka p&aring; m&ouml;jligheten av en genetisk orsak om effekten av kodein &auml;r otillr&auml;cklig. Patienten b&ouml;r i s&aring; fall behandlas med ett alternativt analgetikum.</p>\n<p class=\"indent\">Med moderna genanalyser kan vi idag <span style=\"color: #ff0000;\">enkelt</span> identifiera patienter med muterade gener (<a class=\"index\" id=\"1022387\" data-text=\"genotypning\"></a>genotypning) som leder till l&aring;g, h&ouml;g eller ingen metaboliseringsf&ouml;rm&aring;ga. Detta kommer att f&aring; &ouml;kande genomslag i klinisk behandlingspraxis. Alternativt kan patienten fenotypas. Vid <a class=\"index\" id=\"1022388\" data-text=\"fenotypning:test\"></a>fenotypning ges en l&aring;g eng&aring;ngsdos av ett l&auml;kemedel som &auml;r substrat f&ouml;r det enzym som &auml;r av intresse. L&auml;kemedlet och dess metabolit(er) m&auml;ts sedan f&ouml;r best&auml;mning av vilken fenotyp patienten tillh&ouml;r.</p>\n<p class=\"indent\">F&ouml;r fenotypning av CYP2D6 kan bland annat dextrometorfan (testl&auml;kemedel, ej l&auml;ngre registrerat i Sverige) anv&auml;ndas. F&ouml;r fenotypning av CYP2C19 anv&auml;nds ofta mefenytoin (testl&auml;kemedel, ej registrerat i Sverige).</p>\n<p class=\"indent\">Genotypning och/eller fenotypning kan g&ouml;ras f&ouml;r att minska risken f&ouml;r under- eller &ouml;verbehandling. Detta g&auml;ller s&auml;rskilt om ett l&auml;kemedel ska anv&auml;ndas under l&aring;ng tid, eller om effekten inte kan m&auml;tas med objektiva metoder. Ett l&aring;gt terapeutiskt index (se Faktaruta 3) f&ouml;r ett l&auml;kemedel eller ett ov&auml;ntat behandlingsresultat kan ocks&aring; vara anledning att genotypa eller fenotypa patienten.</p>\n<p class=\"indent\">Exempel p&aring; detta &auml;r behandling med merkaptopurin vid leukemi hos barn respektive azatioprin f&ouml;r immunsuppression. Dessa l&auml;kemedel &auml;r beroende av enzymet tiopurinmetyltransferas (TPMT) f&ouml;r sin nedbrytning. Det finns genetiska TPMT-varianter som leder till nedsatt eller n&auml;stan obefintlig aktivitet av enzymet. Patienter med tv&aring; s&aring;dana alleler l&ouml;per risk f&ouml;r allvarliga blodbiverkningar med d&ouml;dlig utg&aring;ng. Rutinm&auml;ssig genotypning av TPMT <span style=\"color: #ff0000;\">har numera f&aring;tt</span> allm&auml;n acceptans i Sverige och internationellt. Identifiering av muterade patienter f&ouml;re behandlingens b&ouml;rjan &auml;r viktig f&ouml;r att justera dosen och undvika <span style=\"color: #ff0000;\">allvarlig</span> toxicitet.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "56402e8f-7990-411e-9038-1d712f0d38f7",
+			"name": "56402e8f-7990-411e-9038-1d712f0d38f7",
+			"type": "text",
+			"content": "<h3 id=\"Transportorer\">Transport&ouml;rer</h3>\n<p><span style=\"color: #ff0000;\">L&auml;kemedels upptag, f&ouml;rdelning och eliminering &auml;r ocks&aring; beroende av ett stort antal membrantransportproteiner ur flera olika familjer. L&auml;kemedel och m&aring;nga kroppsegna f&ouml;reningar utnyttjar dessa transport&ouml;rer f&ouml;r att passera cellv&auml;ggar och membran vilket har st&ouml;rst klinisk betydelse i tarmv&auml;ggen, levern, njurarna, i blod-hj&auml;rnbarri&auml;ren och i placentan och testiklarna, samt i br&ouml;stk&ouml;rtlar under amning. Det finns &auml;ven transport&ouml;rer i tum&ouml;rceller.</span></p>\n<p class=\"indent\"><span style=\"color: #ff0000;\">L&auml;kemedels biotillg&auml;nglighet styrs till viss del av transport&ouml;rernas aktivitet i tarmv&auml;ggen, men &auml;ven i levern d&auml;r det transport&ouml;rberoende upptaget i levercellen &auml;r avg&ouml;rande f&ouml;r hur mycket l&auml;kemedel som n&aring;r leverenzymerna och kan metaboliseras. Kunskapen om transport&ouml;rer och kliniska konsekvenser &ouml;kar hela tiden. Den genetiska styrningen av transport&ouml;rer &auml;r dock fortfarande mindre k&auml;nd &auml;n f&ouml;r enzymer.</span></p>\n<p class=\"indent\"><span style=\"color: #ff0000;\">Den f&ouml;rst uppm&auml;rksammade transport&ouml;ren var P-glykoprotein (P-gp). Den har en viktig funktion i flera av de membran som n&auml;mns ovan, framf&ouml;rallt f&ouml;r att skydda organ mot o&ouml;nskad p&aring;verkan fr&aring;n omgivningsfaktorer. Detta g&auml;ller &auml;ven vissa l&auml;kemedel vilket har en negativ konsekvens (se nedan). P-gp transporterar i f&ouml;rsta hand lipofila, neutrala eller positivt laddade f&ouml;reningar. Den har flera <span style=\"background-color: #ffff00;\">gemensamma</span> substrat med BCRP (breast cancer resistance protein) och de tv&aring; transport&ouml;rerna verkar arbeta tillsammans, till exempel i blod-hj&auml;rbarri&auml;ren.</span></p>\n<p class=\"indent\"><span style=\"color: #ff0000;\">M&aring;nga l&auml;kemedel &auml;r dock organiska anjoner och substrat f&ouml;r andra transport&ouml;rer, framf&ouml;r allt MRP2 (multidrug resistance associated protein) samt medlemmar i OATP familjen (organic anion transporter protein), som OATP1B1, 1B3, 2B1 och 1A2. Siffrorna och bokstaven identifierar<span style=\"background-color: #ffff00;\"> i n&auml;mnd ordning</span> familjen, subfamiljen och medlemmen. &Auml;ven konjugerade metaboliter utnyttjar transport&ouml;rerna, liksom ett stort antal kroppsegna substanser&nbsp;&ndash; bilirubin, gallsyror, k&ouml;nshormoner och deras konjugerade metaboliter m fl. OATP1B1 och 1B3 uttrycks huvudsakligen i hepatocyterna och utnyttjas av m&aring;nga organiska anjonl&auml;kemedel f&ouml;r transport in i levercellerna. K&auml;nda l&auml;kemedelsgrupper med h&ouml;g affinitet f&ouml;r OATP1B1 &auml;r proteash&auml;mmare (ritonavir) och makrolidantibiotika (klaritromycin, erytromycin).</span></p>\n<p class=\"indent\"><span style=\"color: #ff0000;\">I tunntarmens v&auml;gg uttrycks bland annat P-gp, MRP2 och BCRP som transporterar ut sina substrat i tarmlumen (&rdquo;exsorptive&rdquo; transporters) samt OATP2B1 som bidrar till l&auml;kemedels transport in i blodcirkulationen (&rdquo;absorptive&rdquo; transporter).</span></p>\n<p class=\"indent\"><span style=\"color: #ff0000;\">I levern finns s&aring;ledes b&aring;de upptagstransport&ouml;rer och s&aring;dana som transporterar ut l&auml;kemedel till gallan (P-gp, BCRP). Till exempel bidrar OATP1B1 och OATP1B3 till att statinerna tas upp i hepatocyterna d&auml;r de sedan ut&ouml;var effekt. Upptaget &auml;r s&aring; effektivt att biotillg&auml;ngligheten f&ouml;r vissa statiner &auml;r mycket l&aring;g. Biverkningar av statinerna kommer framf&ouml;r allt fr&aring;n muskelv&auml;vnaden. N&auml;r l&auml;kemedel som blockerar upptaget i levern (exempelvis cyklosporin A och erytromycin) ges samtidigt med statiner, &ouml;kar<span style=\"background-color: #ffff00;\"> statinkoncentration</span> i resten av kroppen och d&auml;rmed ocks&aring; i musklerna, vilket kan ge myopati och mindre effekt p&aring; grund av l&auml;gre koncentrationer i hepatocyterna.</span></p>\n<p class=\"indent\"><span style=\"color: #ff0000;\">I blod-hj&auml;rnbarri&auml;ren g&ouml;r P-gp och BCRP att vissa l&auml;kemedel inte n&aring;r in i hj&auml;rnan i tillr&auml;ckligt h&ouml;g koncentration, vilket kan ha b&aring;de f&ouml;r- och nackdelar. P-gp hindrar till exempel de nyare antihistaminerna att n&aring; in i hj&auml;rnan och minskar deras sederande effekt, vilket &auml;r en f&ouml;rdel j&auml;mf&ouml;rt med tidigare generationers antihistaminer. Loperamid, en opiat som anv&auml;nds vid diarr&eacute;er, skulle ha v&auml;sentliga effekter i hj&auml;rnan om det inte vore f&ouml;r att det bromsas av P-gp i blodhj&auml;rnbarri&auml;ren. Till nackdel &auml;r det bland annat f&ouml;r cancerl&auml;kemedel som p&aring; grund av minskat upptag i hj&auml;rnan kan ge otillr&auml;cklig effekt p&aring; tum&ouml;rv&auml;vnad i CNS.</span></p>\n<p class=\"indent\"><span style=\"color: #ff0000;\">Ciprofloxacin transporteras aktivt ut i br&ouml;stmj&ouml;lken med hj&auml;lp av BCRP i s&aring;dana m&auml;ngder att produktresum&eacute;n/Fass anger att det &auml;r ol&auml;mpligt att ge under amning. Att notera &auml;r dock att den rekommendationen gavs innan man f&ouml;rstod att det var transport&ouml;rer som var ansvariga f&ouml;r p&aring;verkan.</span></p>\n<p class=\"indent\"><span style=\"color: #ff0000;\">Betydelsen av transportfunktionen bekr&auml;ftas ocks&aring; av tydliga funktions&auml;ndringar orsakade av mutationer. Vissa genetiska varianter av OATP1B1 p&aring;verkar plasmakoncentrationerna av bland annat statiner och kan ha betydelse f&ouml;r biverkningsrisk och effekt. En viss mutation i P-gp genen (MDR1) har en tydlig p&aring;verkan p&aring; biotillg&auml;ngligheten av digoxin, med cirka 40% skillnad mellan genotyperna beroende p&aring; skillnaden i uttryck av P-gp i tarmv&auml;ggen.</span></p>\n<p class=\"indent\"><span style=\"color: #ff0000;\">N&aring;gra av de m&aring;nga transport&ouml;rer som beskrivits har en farmakokinetisk och klinisk betydelse dels beroende p&aring; interaktioner p&aring; transport&ouml;rniv&aring;, dels genom att transport&ouml;rernas funktion kan h&auml;mmas eller stimuleras av vissa l&auml;kemedel. Ett l&auml;kemedel som h&auml;mmar eller inducerar en transport&ouml;r (&rdquo;perpetrator drug&rdquo;) kan p&aring; s&aring; s&auml;tt interagera med ett annat l&auml;kemedel (&rdquo;victim drug&rdquo;).</span></p>\n<p class=\"indent\"><span style=\"color: #ff0000;\">Amerikanska FDA och senare &auml;ven <span style=\"background-color: #ffff00;\">den europeiska l&auml;kemedelsmyndigheten</span> EMA har uppm&auml;rksammat dessa fr&aring;gor och tagit fram riktlinjer f&ouml;r l&auml;kemedelsutveckling och information f&ouml;r f&ouml;rskrivare. Ett exempel &auml;r rifampicin som kan b&aring;de h&auml;mma och inducera transport&ouml;rer. Rifampicin h&auml;mmar upptaget av till exempel atorvastatin via OATP1B1 men inducerar samtidigt dess metabolism via CYP3A4. Den f&ouml;rstn&auml;mnda interaktionen v&auml;ger tyngre &auml;n den senare varf&ouml;r resultatet blir att plasmakoncentrationen &ouml;kar. Cyklosporin A h&auml;mmar b&aring;de P-gp och OATP1B-transport&ouml;rerna och kan p&aring; s&aring; vis &ouml;ka plasmakoncentrationen av l&auml;kemedel, ibland med flera hundra procent. P&aring; s&aring; s&auml;tt kan cyklosporin A &ouml;ka koncentrationen av digoxin (p-GP), atorvastatin, rosuvastatin, pravastatin, repaglinid m fl (OATP1B). Variationen &auml;r dock v&auml;ldigt stor mellan individer i hur stor p&aring;verkan &auml;r, vilket i sig &auml;r ett problem om l&auml;kemedlen beh&ouml;ver ges samtidigt.</span></p>\n<p class=\"indent\"><span style=\"color: #ff0000;\">Vissa l&auml;kemedel som h&auml;mmar P-gp, till exempel vidareutvecklingar av cyklosporin A, har pr&ouml;vats f&ouml;r att anv&auml;ndas som s&aring; kallade &rdquo;sensitizers&rdquo;, f&ouml;r att f&ouml;rst&auml;rka effekten av tum&ouml;rbehandlingar. Kliniska studier har dock &auml;nnu inte visat att denna kombination har avsedd effekt.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d5a78007-a76a-41b1-b993-92a78a92d6d6",
+			"name": "d5a78007-a76a-41b1-b993-92a78a92d6d6",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "<a class=\"crossref\" id=\"37980\"></a>Terapeutisk bredd",
+				"text": "<table><tbody><tr><td><p><a class=\"index\" id=\"1055246\" data-text=\"terapeutisk bredd, l&#xE4;kemedel;l&#xE4;kemedel:terapeutisk bredd\"></a><span class=\"tab\"></span>Terapeutisk bredd (terapeutiskt index, <br>terapeutiskt fönster) beskriver skillnaden mellan den dos (koncentration) av läkemedlet som ger optimal effekt och den dos (koncentration) som ger biverkningar. En liten terapeutisk bredd mot&shy;svaras av ett lågt terapeutiskt index.</p></td></tr></tbody></table>",
+				"id": "x2_26"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4e43162c-72e4-497b-8d97-dec075e30ea9",
+			"name": "4e43162c-72e4-497b-8d97-dec075e30ea9",
+			"type": "text",
+			"content": "<h2 id=\"x2_27\">L&auml;kemedels effekt &ouml;ver tid</h2>\n<p>Den terapeutiska effekten varierar generellt inte &ouml;ver tid, givet att sjukdomstillst&aring;ndet &auml;r of&ouml;r&auml;ndrat. Ett blodtryckss&auml;nkande l&auml;kemedel kan t&nbsp;ex ges i samma dos under m&aring;nga &aring;r. Regelbunden uppf&ouml;ljning &auml;r dock av st&ouml;rsta vikt eftersom sjukdomen kan f&ouml;r&auml;ndras.</p>\n<p class=\"indent\">Toleransutveckling &auml;r ett s&auml;rskilt fenomen som &ouml;kar dosbehovet hos patienten &ouml;ver tid. Som fenomen betraktat &auml;r det relativt ovanligt med <span style=\"color: #ff0000;\">undantag f&ouml;r till exempel</span> opioider. Morfinliknande sm&auml;rtstillande l&auml;kemedel m&aring;ste d&auml;rf&ouml;r ofta ges i stigande doser vid kontinuerlig behandling. Nitrater (exempelvis nitroglycerin) orsakar ocks&aring; toleransutveckling om de ges kontinuerligt, <span style=\"color: #ff0000;\">vilket d&auml;rf&ouml;r b&ouml;r undvikas.</span></p>\n<p class=\"indent\">En snabb uts&auml;ttning av l&auml;kemedel som ger tolerans eller som har p&aring;verkat balansen i ett endogent system kan ibland leda till allvarliga symtom som i vissa fall kan f&ouml;rv&auml;xlas med &aring;terfall av sjukdomen om patienten slarvar med medicineringen. S&aring;dana uts&auml;ttningssymtom &auml;r vanliga f&ouml;r l&auml;kemedel som ingriper i eller p&aring; annat s&auml;tt p&aring;verkar det autonoma nervsystemet, till exempel antidepressiva l&auml;kemedel och neuroleptika samt vissa hypertonimedel, som metoprolol och propranolol. Se &auml;ven avsnittet om uts&auml;ttning av l&auml;kemedel i <a href=\"http://www.fass.se/LIF/healthcarefacts;jsessionid=g9Cs0xbqyXQH2F4H2Mi1k-Yc3nGelTy4Esg9yWUpCEV7-phOkbnc!894842271?docId=43748&amp;userType=0\" target=\"_blank\">FASS.</a></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "96cea98f-cadf-414c-aabb-932d8aab7b53",
+			"name": "96cea98f-cadf-414c-aabb-932d8aab7b53",
+			"type": "text",
+			"content": "<h3 id=\"x2_28\">Konstitutionella faktorer (<a class=\"index\" id=\"1022399\" data-text=\"&#xE5;ldersskillnader:l&#xE4;kemedel;l&#xE4;kemedel:&#xE5;lder\"></a>&aring;lder, k&ouml;n)</h3>\n<h4 id=\"x2_29\"><em><a class=\"crossref\" id=\"90456\"></a>Barn</em></h4>\n<p>L&auml;kemedelsbehandling av barn kompliceras av att tillv&auml;xten och mognadsprocessen i olika organ ofta p&aring;verkar barnets k&auml;nslighet f&ouml;r l&auml;kemedel och dess f&ouml;rm&aring;ga att metabolisera och uts&ouml;ndra l&auml;kemedel. De flesta godk&auml;nda l&auml;kemedel &auml;r bristf&auml;lligt studerade p&aring; barn, vilket inneb&auml;r att rekommendationer om anv&auml;ndning oftast saknas eller inneh&aring;ller f&ouml;rbeh&aring;ll. Inom EU finns krav p&aring; <span style=\"color: #ff0000;\">att nya l&auml;kemedel och nya indikationer ska dokumenteras &auml;ven p&aring; barn</span> (Paediatric Regulation, EC No 1901/2006). L&auml;kemedelstillverkarna m&aring;ste presentera en unders&ouml;kningsplan som ska ligga till grund f&ouml;r Paediatric Use Marketing Authorisation (PUMA) och som ger m&ouml;jlighet till f&ouml;rl&auml;ngd <span style=\"color: #ff0000;\">patenttid</span>.</p>\n<p class=\"indent\"><span style=\"color: #ff0000;\">Studier av</span> effekter och biverkningar av l&auml;kemedel p&aring; barn <span style=\"color: #ff0000;\">&auml;r ofta sv&aring;ra att g&ouml;ra</span>. Kunskaperna bygger mest p&aring; klinisk erfarenhet. Nyf&ouml;dda har till exempel &ouml;kad k&auml;nslighet f&ouml;r opioidernas andningsdeprimerande effekt. Om det beror p&aring; en skillnad i receptorns k&auml;nslighet eller minskad aktivitet av transport&ouml;rer i blod-hj&auml;rnbarri&auml;ren och d&auml;rmed en &ouml;kad passage av medlen till hj&auml;rnan &auml;r f&ouml;r n&auml;rvarande oklart. Ett annat exempel &auml;r digoxin, vars &aring;ldersberoende dosering och toxicitet inte enbart kan f&ouml;rklaras av olikheter i uts&ouml;ndring, utan ocks&aring; av ett varierande farmakologiskt svar.</p>\n<p class=\"indent\">Olika funktioner i mag-tarmkanalen &auml;ndras under tillv&auml;xten och kan p&aring;verka l&auml;kemedels absorption. &Auml;ven kroppssammans&auml;ttningen &auml;ndras, s&auml;rskilt under det f&ouml;rsta &aring;ret, vilket kan p&aring;verka l&auml;kemedlens distribution. B&aring;de extracellul&auml;rv&auml;tskan och totala kroppsvattnet minskar procentuellt upp till 1-&aring;rs&aring;ldern. &Auml;ven proteinbindningen p&aring;verkar f&ouml;rdelningen av l&auml;kemedel. De flesta l&auml;kemedel har en l&auml;gre proteinbindning i blod fr&aring;n nyf&ouml;dda j&auml;mf&ouml;rt med blod fr&aring;n vuxna. Skillnaderna har dock liten klinisk betydelse.</p>\n<p class=\"indent\">Under nyf&ouml;ddhetsperioden &auml;r glomerul&auml;r filtration och tubul&auml;r sekretion omogna, men antar den vuxnes v&auml;rden vid knappt 1&nbsp;&aring;rs &aring;lder. Clearance av l&auml;kemedel som uts&ouml;ndras via njurarna &ouml;kar d&auml;rf&ouml;r gradvis med &ouml;kande &aring;lder, men den st&ouml;rsta f&ouml;r&auml;ndringen sker under den f&ouml;rsta levnadsm&aring;naden. Det &auml;r viktigt att ta h&auml;nsyn till detta vid dosering av penicilliner, aminoglykosider och vissa cefalosporiner, t&nbsp;ex ceftriaxon.</p>\n<p class=\"indent\">Elimineringen av l&auml;kemedel via metabolism utvecklas ocks&aring; under barnets tillv&auml;xt. Kapaciteten &auml;r ofta l&auml;gre i nyf&ouml;ddhetsperioden &ndash; till exempel glukuronideringsf&ouml;rm&aring;gan. Sulfatkonjugeringen &auml;r d&auml;remot utvecklad redan hos det nyf&ouml;dda barnet, <span style=\"color: #ff0000;\">men avtar n&auml;r barnet mognar och v&auml;xer</span>. Den &auml;r av betydelse bland annat f&ouml;r paracetamol. <span style=\"color: #ff0000;\">Under fosterstadiet</span> konjugeras paracetamol <span style=\"color: #ff0000;\">huvudsakligen</span> med sulfat <span style=\"color: #ff0000;\">men efter f&ouml;dseln </span>glukuronideras paracetamol i allt st&ouml;rre utstr&auml;ckning.</p>\n<p class=\"indent\">I 2&ndash;4-&aring;rs&aring;ldern &auml;r metabolism och dosbehov ofta h&ouml;gre &auml;n hos vuxna, r&auml;knat per kg kroppsvikt.&nbsp;<span style=\"color: #ff0000;\">Njurclearance f&ouml;r m&aring;nga l&auml;kemedel &auml;r h&ouml;gre hos barn &auml;n vuxna r&auml;knat per kg kroppsvikt. D&auml;rf&ouml;r blir den rekommenderade dosen till barn st&ouml;rre f&ouml;r l&auml;kemedel som till stor del uts&ouml;ndras renalt, till exempel gentamycin, cefalosporiner och digoxin. F&ouml;r digoxin &auml;r den kroppsviktrelaterade barndosen 3&ndash;5 g&aring;nger h&ouml;gre &auml;n f&ouml;r vuxna.</span> I ton&aring;ren f&aring;r barnet samma kapacitet som vuxna. Utvecklingen av metaboliseringsf&ouml;rm&aring;gan &auml;r d&auml;rf&ouml;r inte linj&auml;r, varf&ouml;r dosen kan beh&ouml;va korrigeras d&auml;refter. V&auml;lk&auml;nda exempel p&aring; detta m&ouml;nster &auml;r antiepileptika.</p>\n<p class=\"indent\">Doseringen av l&auml;kemedel till barn &auml;r s&aring;ledes komplicerad beroende p&aring; den snabba f&ouml;r&auml;ndringen i metabolism och uts&ouml;ndringsfunktioner under tillv&auml;xten, s&auml;rskilt under det f&ouml;rsta levnads&aring;ret. De fysiologiska funktionerna &auml;r fr&aring;n 2-&aring;rs&aring;ldern b&auml;ttre relaterade till kroppsytan &auml;n till vikten, varf&ouml;r <a class=\"index\" id=\"1033689\" data-text=\"l&#xE4;kemedelsdosering:kroppsyta\"></a>kroppsytan &auml;r en b&auml;ttre grund f&ouml;r dosering hos barn. F&ouml;r de f&aring; l&auml;kemedel som &auml;r dokumenterade p&aring; barn anges &auml;nd&aring; dos/kg kroppsvikt av praktiska sk&auml;l. I dessa fall &auml;r h&auml;nsyn i regel redan tagen till ovanst&aring;ende f&ouml;rh&aring;llanden. Dosering enligt kroppsyta kan approximeras till sambandet i Faktaruta 4.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "72ac4e13-2cdb-4ec9-99e9-d59a38baed41",
+			"name": "72ac4e13-2cdb-4ec9-99e9-d59a38baed41",
+			"type": "facts",
+			"content": {
+				"number": "4",
+				"title": "<a class=\"crossref\" id=\"83034\"></a>Dos till barn jämfört med vuxen",
+				"text": "<table><tbody><tr><td><p>Dos<sub>barn</sub>= Dos<sub>vuxen</sub> (barn vikt / vuxen vikt)<sup>0,7</sup></p></td></tr></tbody></table>",
+				"id": "x2_31"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "532c785c-b89c-4444-92e7-b81bb9c1bfc8",
+			"name": "532c785c-b89c-4444-92e7-b81bb9c1bfc8",
+			"type": "text",
+			"content": "<h4 id=\"x2_32\"><em><a class=\"index\" id=\"1033690\" data-text=\"farmakokinetik:&#xE4;ldre;l&#xE4;kemedel:&#xE4;ldre\"></a><a class=\"crossref\" id=\"80463\"></a>&Auml;ldre</em></h4>\n<p>L&auml;kemedelsanv&auml;ndningen &ouml;kar vid h&ouml;g &aring;lder. I Sverige &auml;r 9% av befolkningen 75 &aring;r eller &auml;ldre. Mer &auml;n &frac14; av alla l&auml;kemedel konsumeras av denna &aring;ldersgrupp. Deras l&auml;kemedelsanv&auml;ndning har &ouml;kat och &auml;ldre i s&auml;rskilda boendeformer anv&auml;nder idag ofta 7<span style=\"font-style: italic;\"></span>&ndash;15<span style=\"font-style: italic;\"> </span><span style=\"font-style: italic;\"></span>preparat samtidigt. &Auml;ldre st&aring;r f&ouml;r 2<span style=\"font-style: italic;\">&ndash;</span>3 g&aring;nger fler recept/person/&aring;r &auml;n yngre personer, vilket ocks&aring; &auml;r naturligt eftersom sjukligheten &ouml;kar med &ouml;kad &aring;lder. Riskerna f&ouml;r interaktioner, biverkningar, feldoseringar och bristande f&ouml;ljsamhet &auml;r betydande. Biverkningar kan leda till att ytterligare l&auml;kemedel s&auml;tts in eller att de misstolkas som sjukdomssymtom. N&auml;stan 1 av 5 sjukhusinl&auml;ggningar av &auml;ldre patienter orsakas helt eller delvis av l&auml;kemedelsbiverkningar. De flesta biverkningar &auml;r av typ A, dvs de &auml;r resultatet av en f&ouml;rst&auml;rkning av l&auml;kemedlets farmakologiska effekt. Denna typ &auml;r m&ouml;jlig att f&ouml;rebygga genom &ouml;kade kunskaper om l&auml;kemedlens verkningar och anpassning av l&auml;kemedelsval och dos efter &aring;lder. Trots det &auml;r kunskaperna om den <span style=\"color: #ff0000;\">&auml;ldre</span> m&auml;nniskans oms&auml;ttning, effekter och biverkningar av l&auml;kemedel otillr&auml;ckliga. De st&ouml;rsta l&auml;kemedelsgrupperna som f&ouml;rskrivs &auml;r kardiovaskul&auml;ra medel, psykofarmaka och mag-tarml&auml;kemedel.</p>\n<p class=\"indent\">B&aring;de den metaboliska kapaciteten och renala uts&ouml;ndringen avtar med stigande &aring;lder (se avsnittet <a href=\"{pre}/kapitel/nefrologi-urologi/njursjukdomar.html#g4_3\">Njursjukdomar</a>). Njurens eliminationsf&ouml;rm&aring;ga avtar dock mer i relation till &aring;lder &auml;n vad leverns metabola kapacitet g&ouml;r. Dosanpassning till individens k&auml;nslighet och eliminationsf&ouml;rm&aring;ga &auml;r d&auml;rf&ouml;r viktig. Vissa receptorsystem kan f&ouml;r&auml;ndras med stigande &aring;lder, vilket ocks&aring; ger &ouml;kad risk f&ouml;r biverkningar och paradoxala effekter. Detta tillsammans med interaktionsrisk vid medicinering med flera l&auml;kemedel, som beskrivs nedan, g&ouml;r att l&auml;kemedelsbehandling hos &auml;ldre kan bli ett sv&aring;rt balansstycke.</p>\n<p class=\"indent\">Vid behandling av &auml;ldre &auml;r det viktigt att anpassa dosen till de &auml;ndrade fysiologiska f&ouml;ruts&auml;ttningarna f&ouml;r en optimal l&auml;kemedelsbehandling och till f&ouml;r&auml;ndringar i den &ouml;vriga l&auml;kemedelsbehandlingen. Det &auml;r en f&ouml;rdel om man kan v&auml;lja ett l&auml;kemedel som b&aring;de metaboliseras och uts&ouml;ndras of&ouml;r&auml;ndrat i njurarna i relativt lika delar, eftersom effekten av minskad njurfunktion p&aring; l&auml;kemedlets kinetik d&aring; blir mindre (se Figur 3). Koncentrationsm&auml;tningar &auml;r i m&aring;nga fall en v&auml;rdefull m&ouml;jlighet att optimera dosen. F&ouml;r l&auml;kemedel som huvudsakligen uts&ouml;ndras of&ouml;r&auml;ndrade b&ouml;r dosjustering ske i relation till den s&auml;nkta njurfunktionen (se avsnittet <a href=\"{pre}/kapitel/nefrologi-urologi/njursjukdomar.html#g4_3\">Njursjukdomar</a>). Doseringsanvisningarna i produktresum&eacute;n &auml;r inte alltid tydliga d&aring; det ofta fattas v&auml;rden p&aring; den fraktion som uts&ouml;dras of&ouml;r&auml;ndrat (se Tabell 2) och man b&ouml;r vara uppm&auml;rksam p&aring; kliniska effekter och eventuella biverkningar.</p>\n<p class=\"indent\">Eftersom &auml;ldre patienter ofta behandlas med m&aring;nga l&auml;kemedel &auml;r det viktigt att ompr&ouml;va l&auml;kemedelsbehandlingen med j&auml;mna mellanrum. Det &auml;r inte ovanligt att patienten <span style=\"font-style: italic;\"></span>har f&aring;tt flera l&auml;kemedel p&aring; samma indikation. D<span style=\"color: #ff0000;\">etta &auml;r vanligt</span> vid behandling av t&nbsp;ex <span style=\"color: #ff0000;\">hypertoni och</span> vissa psykiska problem. <span style=\"color: #ff0000;\">En vanlig orsak &auml;r</span> att l&auml;kemedlen inte utpr&ouml;vats ett i taget, dvs dosen har inte titrerats med avseende p&aring; optimal effekt och s&auml;kerhet.</p>\n<p class=\"indent\"><span style=\"color: #ff0000;\">Det &auml;r viktigt att regelbundet ompr&ouml;va en kronisk l&auml;kemedelsbehandling. Den </span>medicinska situationen kan f&ouml;r&auml;ndras. Sjukdomen kan progrediera, annan sjukdom och/eller annan behandling kan ha tillkommit liksom nya kontraindikationer eller till och med bortfall av indikation. Uppf&ouml;ljning av l&auml;kemedelsanv&auml;ndningen b&ouml;r ske regelbundet, t&nbsp;ex i form av en l&auml;kemedelsgenomg&aring;ng. Den syftar till att optimera behandlingen med avseende p&aring; effekt och biverkningar, reducera antalet insatta l&auml;kemedel till ett minimum och f&ouml;rb&auml;ttra kvaliteten i l&auml;kemedelsanv&auml;ndningen med hj&auml;lp av Socialstyrelsens kvalitetsindikatorer f&ouml;r l&auml;kemedelsbehandling hos &auml;ldre, www.social styrelsen.se<span style=\"font-style: italic;\"></span>.</p>\n<p class=\"indent\"><span style=\"font-style: italic;\"></span>Se &auml;ven kapitlet <a href=\"{pre}/kapitel/lakemedelsanvandning/lakemedelsbehandling_hos_aldre.html#y1_2\">L&auml;kemedelsbehandling hos &auml;ldre</a><span style=\"font-style: italic;\"></span>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "90d3a2aa-afce-435d-ae3a-7d0e24029597",
+			"name": "90d3a2aa-afce-435d-ae3a-7d0e24029597",
+			"type": "figure",
+			"content": {
+				"number": "3",
+				"maxwidth": "",
+				"image": "/images/x2_lma_klinfarmprincip_2013fm10_images/figur3.png",
+				"title": "",
+				"text": "<a class=\"crossref\" id=\"13434\"></a>Illustration av den relativa ökningen av jämviktskoncentrationen av läkemedel om normaldosering bibehålls trots sänkt njurfunktion; fe anger den fraktion av läkemedlet som utsöndras oförändrad via njurarna hos en person med normal njurfunktion (jämför Tabell 2 <a href=\"#58753\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>, vad gäller <br>konkreta exempel).",
+				"alt": "",
+				"id": "x2_33"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a6f596d7-0ab5-47a0-bca4-3a68503b6752",
+			"name": "a6f596d7-0ab5-47a0-bca4-3a68503b6752",
+			"type": "text",
+			"content": "<h4 id=\"x2_34\"><em><a class=\"index\" id=\"1046828\" data-text=\"l&#xE4;kemedelsdosering:k&#xF6;nsskillnader;k&#xF6;nsskillnader, l&#xE4;kemedel;l&#xE4;kemedel:k&#xF6;nsskillnader\"></a>K&ouml;nsskillnader</em></h4>\n<p>Kvinnor och m&auml;n oms&auml;tter de flesta l&auml;kemedel p&aring; liknande s&auml;tt. Skillnaden i kroppsvikt g&ouml;r dock att kvinnor vid samma dos per person f&aring;r en genomsnittligt h&ouml;gre plasmakoncentration. Vissa k&ouml;nsskillnader i aktiviteten av en del CYP-<span>enzymer</span> har observerats. S&aring;ledes &auml;r clearance av klozapin h&ouml;gre hos m&auml;n &auml;n hos kvinnor, beroende p&aring; att CYP1A2-enzymet &auml;r mer aktivt hos m&auml;n. Det visar sig i motsvarande skillnader i plasmakoncentrationer. CYP3A-enzymet &auml;r &aring; andra sidan mer aktivt hos kvinnor &auml;n hos m&auml;n, m&ouml;jligen beroende p&aring; att det deltar i metabolismen av m&aring;nga steroidhormoner. Vilken betydelse detta har f&ouml;r oms&auml;ttningen av alla de l&auml;kemedel som &auml;r substrat f&ouml;r CYP3A &auml;r f&ouml;r n&auml;rvarande oklart.</p>\n<p class=\"indent\">&Auml;ven om farmakokinetiken av ett l&auml;kemedel skiljer sig mellan kvinnor och m&auml;n beh&ouml;ver det inte inneb&auml;ra skillnader i dosering. Farmakodynamiken av l&auml;kemedel p&aring; receptorniv&aring; kan skilja sig mellan k&ouml;nen och kompensera f&ouml;r skillnader i oms&auml;ttning. Idag &auml;r kunskapen om dessa fr&aring;gor begr&auml;nsad.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "316314e8-c1db-44e2-b5e8-863bb1944c73",
+			"name": "316314e8-c1db-44e2-b5e8-863bb1944c73",
+			"type": "text",
+			"content": "<h3 id=\"x2_35\">Omgivningsfaktorer</h3>\n<p>Omgivningsfaktorer kan p&aring;verka l&auml;kemedelsoms&auml;ttningen. Framf&ouml;r allt &auml;r det metabolismen som kan p&aring;verkas av vissa f&ouml;do&auml;mnen, av luftf&ouml;roreningar och av tobaksr&ouml;k och alkohol. Vanligtvis sker en <a class=\"index\" id=\"1022438\" data-text=\"enzyminduktion\"></a>induktion av vissa isoenzymer. Teofyllin &auml;r ett exempel p&aring; l&auml;kemedel vars clearance s&aring; p&aring;tagligt f&ouml;r&auml;ndras av <a class=\"index\" id=\"1022439\" data-text=\"interaktioner:r&#xF6;kning;interaktioner:alkohol;interaktioner:f&#xF6;da\"></a>r&ouml;kning att olika doseringsrekommendationer finns f&ouml;r r&ouml;kare och icke-r&ouml;kare. Alkohol kan b&aring;de inducera <span>enzymer</span> (vid l&aring;ngtidsanv&auml;ndning) och h&auml;mma <span>enzymer</span> (akuta effekter av h&ouml;ga doser). Till f&ouml;do&auml;mnen som inducerar <span>enzymer</span> h&ouml;r grillad mat samt brysselk&aring;l.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "795b923a-7481-40b5-bb2d-2d9160403b03",
+			"name": "795b923a-7481-40b5-bb2d-2d9160403b03",
+			"type": "text",
+			"content": "<h3 id=\"x2_36\"><a class=\"index\" id=\"1033750\" data-text=\"interaktioner:omgivningsfaktorer;interaktioner:l&#xE4;kemedel\"></a><a class=\"crossref\" id=\"88217\"></a>L&auml;kemedelsinteraktioner</h3>\n<p>M&aring;nga l&auml;kemedel &auml;r f&ouml;rem&aring;l f&ouml;r interaktioner som kr&auml;ver dosjustering av l&auml;kemedlet i fr&aring;ga. Den potentiella kliniska risken &auml;r delvis avh&auml;ngig av den terapeutiska bredden (se Faktaruta 3), d&auml;r interaktionen &auml;r mer allvarlig om l&auml;kemedlet som p&aring;verkas har en sn&auml;v terapeutisk bredd, till exempel digoxin, antidepressiva, antiepileptika och neuroleptika.</p>\n<p class=\"indent\">Kliniskt viktiga l&auml;kemedelsinteraktioner ger endera en p&aring;verkan p&aring; oms&auml;ttningen och koncentrationen av ett l&auml;kemedel eller en f&ouml;rst&auml;rkt effekt eller biverkning (t&nbsp;ex antikolinerga biverkningar) alternativt en minskad effekt (t&nbsp;ex minskad effekt av blodtryckss&auml;nkande l&auml;kemedel av samtidigt givet NSAID).</p>\n<p class=\"indent\">De vanligaste interaktionerna som p&aring;verkar koncentrationen sker i levern, endera genom metabolisk h&auml;mning (vanligen konkurrens om bindning till <span>enzymer</span>na) eller genom induktion (&ouml;kning av kapaciteten hos enzymsystemet). I b&aring;da fallen p&aring;verkas clearance, vilket ger f&ouml;r&auml;ndring av j&auml;mviktskoncentrationen (se Faktaruta 2). Interaktioner kan ocks&aring; ske i levern genom blockering av upptagstransport&ouml;rer eller eliminationstransport&ouml;rer till gallan. F&auml;rre interaktioner sker vid den aktiva uts&ouml;ndringen i njurarna. H&auml;r blir resultatet oftast en minskad uts&ouml;ndring med &ouml;kade blodkoncentrationer som f&ouml;ljd. En interaktion i mag-tarmkanalen eller vid absorptionen kan leda b&aring;de till s&auml;nkt och &ouml;kad biotillg&auml;nglighet.</p>\n<p class=\"indent\">Det &auml;r viktigt att k&auml;nna till interaktioner, s&auml;rskilt av typ C och D. Typ C-interaktioner kan leda till &auml;ndrad effekt eller biverkningar men kan bem&auml;stras med individuell dosering och/eller plasmakoncentrationsbest&auml;mning, dvs kombinationen kan kr&auml;va dosanpassning. Typ D-interaktioner kan leda till allvarliga konsekvenser i form av sv&aring;ra biverkningar, utebliven effekt eller i &ouml;vrigt vara sv&aring;ra att bem&auml;stra med individuell dosering, dvs kombinationen b&ouml;r undvikas. I de fall interaktionen p&aring;verkar koncentrationen (typ C-interaktion), kan en dosjustering g&ouml;ras f&ouml;r att &aring;terst&auml;lla den terapeutiskt l&auml;mpliga koncentrationen av l&auml;kemedlet som p&aring;verkas. I Tabell 4, framg&aring;r att warfarinets metabolism p&aring;verkas av ett stort antal l&auml;kemedel genom h&auml;mning eller induktion, varf&ouml;r noggrann monitorering av effekten &auml;r viktig vid ut- och ins&auml;ttning av interagerande l&auml;kemedel. Betydelsen av noggrann kontroll understryks genom att warfarin metaboliseras av CYP2C9 som &auml;r genetiskt polymorft. Interaktionernas betydelse &auml;r delvis beroende p&aring; patientens genotyp. I de fall tv&aring; l&auml;kemedel interagerar p&aring; effektniv&aring; kan det vara sv&aring;rare att dosjustera f&ouml;r att &aring;tg&auml;rda problemet.</p>\n<p class=\"indent\">Den tid det tar f&ouml;r en interaktion att utvecklas styrs av halveringstiden f&ouml;r det l&auml;kemedel som p&aring;verkas. Om ett l&auml;kemedelsmetaboliserande enzym h&auml;mmas momentant tar det &auml;nd&aring; 3&ndash;4 <span style=\"color: #ff0000;\">nya</span> halveringstider innan l&auml;kemedlets <span style=\"color: #ff0000;\">&auml;ndrade</span> j&auml;mviktskoncentration uppn&aring;s. F&ouml;r l&auml;kemedel med l&aring;nga halveringstider kan det s&aring;ledes r&ouml;ra sig om flera dagar innan effekten av interaktionen blir tydlig, vilket &auml;r ett observandum f&ouml;r den behandlande l&auml;karen. &Auml;ven f&ouml;r en induktion dr&ouml;jer det motsvarande l&aring;ng tid innan full effekt n&aring;s. H&auml;r kan dessutom induktionen ta viss tid innan den &auml;r fullt utvecklad, vilket ytterligare kan f&ouml;rdr&ouml;ja f&ouml;rloppet.</p>\n<p class=\"indent\">Antalet beskrivna l&auml;kemedelsinteraktioner &ouml;kar ju fler l&auml;kemedel vi f&aring;r p&aring; marknaden. Dessutom finns problem med interaktioner mellan naturl&auml;kemedel (t&nbsp;ex johannes&ouml;rt) respektive f&ouml;do&auml;mnen (t&nbsp;ex grapefrukt) och l&auml;kemedel. Problemet f&ouml;r l&auml;karen &auml;r att h&aring;lla reda p&aring; alla dessa interaktioner. IT-teknik och datorst&ouml;d i f&ouml;rskrivnings&ouml;gonblicket <span style=\"color: #ff0000;\">kan vara till stor hj&auml;lp f&ouml;r behandlingsresultatet</span> (se kapitlet <a href=\"{pre}/kapitel/regelverket_och_it-stod/den_gemensamma_elektroniska_patientjournalen.html#u7_1\">Den gemensamma elektroniska patientjournalen</a>, och Janus-systemet i Stockholms l&auml;ns landsting (<a href=\"http://www.janusinfo.se\">www.janusinfo.se</a>)) och SIL (Svensk informationsdatabas f&ouml;r l&auml;kemedel). Apoteken kan ocks&aring; signalera om ol&auml;mpliga kombinationer. I Tabell 4 redovisas n&aring;gra l&auml;kemedelsgrupper som &auml;r vanligt f&ouml;rekommande vad g&auml;ller interaktioner av typ C och D d&auml;r l&auml;karen b&ouml;r vara s&auml;rskilt uppm&auml;rksam.</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0e4b271a-ad2b-4548-8903-3e348d77f9dc",
+			"name": "0e4b271a-ad2b-4548-8903-3e348d77f9dc",
+			"type": "tablewide",
+			"content": {
+				"number": "4",
+				"title": "<a class=\"crossref\" id=\"64807\"></a>Mekanismerna för några kliniskt betydelsefulla <a class=\"index\" id=\"1054710\" data-text=\"interaktioner:kliniskt betydelsefulla\"></a>interaktioner",
+				"id": "x2_37",
+				"text": "<table><tbody><tr><td><div class=\"tableLine\"><strong>ATC-grupp</strong></div><p><strong><div class=\"tableLine\">Läkemedel <br></div><div class=\"tableLine\">som påverkar</div></strong></p></td><td><div class=\"tableLine\"><strong>C3/C4</strong></div><p><strong><div class=\"tableLine\">Kombinationen kan kräva dos-<br></div><div class=\"tableLine\">anpassning av följande läkemedel</div></strong></p></td><td><div class=\"tableLine\"><strong>D3/D4 </strong></div><p><strong><div class=\"tableLine\">Kombinationen bör undvikas pga <br></div><div class=\"tableLine\">påverkan på följande läkemedel</div></strong></p></td></tr><tr><td><div class=\"tableLine\">A02 antacida</div></td><td><div class=\"tableLine\">B03 järn abs <span>↓</span></div><div class=\"tableLine\">H03 levotyroxin abs <span>↓</span></div></td><td><div class=\"tableLine\">J01 tetracykliner abs <span>↓↓</span></div><div class=\"tableLine\">J01 fluorokinoloner (ofloxacin<a class=\"tableFootnoteLink\" href=\"#fnote_26\"><sup>a</sup></a>, cipro-</div><div class=\"tableLine\">floxacin m fl) abs <span>↓↓</span></div><div class=\"tableLine\">J02 ketokonazol abs <span>↓↓</span></div></td></tr><tr><td><div class=\"tableLine\">A02 omeprazol</div></td><td><div class=\"tableLine\">J02 ketokonazol abs <span>↓</span></div><div class=\"tableLine\">J02 flukonazol met <span>↓</span></div></td><td><div class=\"tableLine\">B01 klopidogrel eff <span>↓</span></div></td></tr><tr><td><div class=\"tableLine\">A02 sukralfat</div></td><td><div class=\"tableLine\">H03 levotyroxin abs <span>↓</span></div></td><td><div class=\"tableLine\">J01 fluorokinoloner (ciprofloxacin m fl) </div><div class=\"tableLine\">abs <span>↓↓</span></div></td></tr><tr><td><div class=\"tableLine\">B03 tvåvärt järn<span class=\"tab\"></span></div></td><td><div class=\"tableLine\">C09 kaptopril abs <span>↓</span></div><div class=\"tableLine\">H03 tyroxin abs <span>↓</span></div></td><td><div class=\"tableLine\"><span class=\"tab\"></span>J01 fluorokinoloner abs <span>↓</span></div></td></tr><tr><td><div class=\"tableLine\">C01 organiska nitrater<span class=\"tab\"></span><span class=\"tab\"></span></div></td><td><div class=\"tableLine\">&nbsp;</div></td><td><div class=\"tableLine\">G04 sildenafil biv <span>↑</span></div></td></tr><tr><td><div class=\"tableLine\">C03 spironolakton<span class=\"tab\"></span> </div></td><td><div class=\"tableLine\">C01 digoxin utsöndr<span class=\"tab\"></span> <span>↓</span></div></td><td><div class=\"tableLine\">kalium ökar risken för hyperkalemi</div></td></tr><tr><td><div class=\"tableLine\">C03 bendroflumetiazid</div></td><td><div class=\"tableLine\">N05 litium utsöndr <span>↓</span></div></td><td><div class=\"tableLine\">&nbsp;</div></td></tr><tr><td><div class=\"tableLine\">C03 hydroklortiazid</div></td><td><div class=\"tableLine\">N05 litium utsöndr <span>↓</span></div></td><td><div class=\"tableLine\">&nbsp;</div></td></tr><tr><td><div class=\"tableLine\">C07 betablockare</div></td><td><div class=\"tableLine\">&nbsp;</div></td><td><div class=\"tableLine\"><span class=\"tab\"></span><span class=\"tab\"></span>C08 verapamil eff <span>↑</span></div></td></tr><tr><td><div class=\"tableLine\">C08 verapamil<span class=\"tab\"></span></div></td><td><div class=\"tableLine\">C01 digoxin utsöndr <span>↓</span></div></td><td><div class=\"tableLine\">J01 erytromycin ökad risk för arytmier</div></td></tr><tr><td><div class=\"tableLine\">C09 ACE-hämmare<span class=\"tab\"></span></div></td><td><div class=\"tableLine\">Insulin och perorala antidiabetika eff <span>↑</span></div><div class=\"tableLine\">N05 litium utsöndr <span>↓</span></div><div class=\"tableLine\">C03 kaliumsparande diuretika, </div><div class=\"tableLine\">kalium: risk för hyperkalemi <span>↑</span></div></td><td><div class=\"tableLine\">&nbsp;</div></td></tr><tr><td><div class=\"tableLine\">G03 antikonceptio-<br></div><div class=\"tableLine\">nella medel</div></td><td><div class=\"tableLine\">N04 selegilin konc <span>↑</span></div></td><td><div class=\"tableLine\">&nbsp;</div></td></tr><tr><td><div class=\"tableLine\">J01 penicilliner <br></div><div class=\"tableLine\">(vissa)</div></td><td><div class=\"tableLine\">B01 warfarin eff <span>↓</span></div><div class=\"tableLine\">L01 metotrexat elim <span>↓</span></div></td><td><div class=\"tableLine\">&nbsp;</div></td></tr><tr><td><div class=\"tableLine\">J01 fluorokinoloner <br></div><div class=\"tableLine\">(vissa)</div></td><td><div class=\"tableLine\">L01 metotrexat elim <span>↓</span></div><div class=\"tableLine\">B01 warfarin met <span>↓</span></div></td><td><div class=\"tableLine\">&nbsp;</div></td></tr><tr><td><div class=\"tableLine\">J01 erytromycin</div></td><td><div class=\"tableLine\">B01 warfarin met <span>↓</span></div><div class=\"tableLine\">C10 simvastatin met <span>↓</span></div><div class=\"tableLine\">G04 sildenafil met <span>↓</span></div><div class=\"tableLine\">L04 ciklosporin met <span>↓</span></div><div class=\"tableLine\">N05 zopiklon met <span>↓</span></div></td><td><div class=\"tableLine\">C08 felodipin met <span>↓</span></div><div class=\"tableLine\">C08 verapamil met <span>↓</span></div><div class=\"tableLine\">N03 karbamazepin met <span>↓</span></div></td></tr><tr><td><div class=\"tableLine\">J01 klaritromycin</div></td><td><div class=\"tableLine\">A10 glibenklamid met <span>↓</span></div><div class=\"tableLine\">C10 simvastatin met <span>↓</span></div><div class=\"tableLine\">L04 ciklosporin met <span>↓</span></div></td><td><div class=\"tableLine\">C01 digoxin met <span>↓</span></div><div class=\"tableLine\">&nbsp;</div></td></tr><tr><td><div class=\"tableLine\">J01 metronidazol</div></td><td><div class=\"tableLine\">&nbsp;</div></td><td><div class=\"tableLine\">B01 warfarin met <span>↓</span></div></td></tr><tr><td><div class=\"tableLine\">J02 ketokonazol</div></td><td><div class=\"tableLine\">B01 warfarin met <span>↓</span></div><div class=\"tableLine\">G04 sildenafil met <span>↓</span></div><div class=\"tableLine\">H02 prednisolon och metylprednisolon met <span>↓</span></div><div class=\"tableLine\">L04 ciklosporin met <span>↓</span></div><div class=\"tableLine\">L04 takrolimus met <span>↓</span></div><div class=\"tableLine\">L04 sirolimus met <span>↓</span>,&nbsp;transp <span>↓</span></div><div class=\"tableLine\">N06 venlafaxin met <span>↓↓</span></div></td><td><div class=\"tableLine\">A07, R03 budesonid met <span>↓↓</span></div><div class=\"tableLine\">N05 midazolam met <span>↓↓</span></div><div class=\"tableLine\"><span></span></div><div class=\"tableLine\">&nbsp;</div></td></tr><tr><td><div class=\"tableLine\">J02 flukonazol</div></td><td><div class=\"tableLine\">C10 fluvastatin met <span>↓</span></div><div class=\"tableLine\">L04 takrolimus, ciklosporin met <span>↓</span></div><div class=\"tableLine\">M01 celecoxib, parecoxib met <span>↓</span></div><div class=\"tableLine\">N05 diazepam met <span>↓</span></div></td><td><div class=\"tableLine\">N05 midazolam met <span>↓↓</span></div><div class=\"tableLine\">B01 warfarin met <span>↓</span></div><div class=\"tableLine\">A10 glibenklamid, glipizid met <span>↓</span></div></td></tr><tr><td><div class=\"tableLine\">J02 itrakonazol</div></td><td><div class=\"tableLine\">C01 digoxin utsöndr <span>↓</span></div><div class=\"tableLine\">H02 metylprednisolon met <span>↓</span></div><div class=\"tableLine\">L04 takrolimus met <span>↓</span></div><div class=\"tableLine\">N05 alprazolam met <span>↓</span></div><div class=\"tableLine\">N05 zopiklon met <span>↓</span></div></td><td><div class=\"tableLine\">C08 felodipin met <span>↓</span></div><div class=\"tableLine\">C10 simvastatin met <span>↓↓</span></div><div class=\"tableLine\">N05 midazolam met <span>↓↓</span></div><div class=\"tableLine\">R03 budesonid met <span>↓↓</span></div></td></tr><tr><td><div class=\"tableLine\">J04 rifampicin</div></td><td><div class=\"tableLine\">C07 propranolol, metoprolol met <span>↑</span></div><div class=\"tableLine\">C10 simvastatin met <span>↑</span></div><div class=\"tableLine\">G03 antikonceptionella medel eff <span>↓</span></div><div class=\"tableLine\">H02 glukokortikoider met <span>↑</span></div><div class=\"tableLine\">J02 ketokonazol met <span>↑</span></div><div class=\"tableLine\">J05 ritonavir met <span>↑</span></div><div class=\"tableLine\">L04 ciklosporin, takrolimus, sirolimus met <span>↑</span></div><div class=\"tableLine\">N02 morfin (oralt) met <span>↑</span></div><div class=\"tableLine\">N05 zopiklon, zolpidem met <span>↑</span></div><div class=\"tableLine\">B01 warfarin met <span>↑</span></div></td><td><div class=\"tableLine\">C08 nifedipin abs <span>↓↓</span>&nbsp;pga met <span>↑</span></div><div class=\"tableLine\">J01 klaritromycin met <span>↑↑</span></div><div class=\"tableLine\">J02 itrakonazol met <span>↑↑</span></div><div class=\"tableLine\">N05 midazolam met <span>↑↑</span></div><div class=\"tableLine\">N05 diazepam met <span>↑↑</span></div></td></tr><tr><td><div class=\"tableLine\">J05 ritonavir <br></div><div class=\"tableLine\">(proteashämmare)</div></td><td><div class=\"tableLine\">C10 pravastatin (oklar mek) konc <span>↓</span></div><div class=\"tableLine\">C10 simvastatin met <span>↓</span></div><div class=\"tableLine\">H02 prednisolon met <span>↓</span></div><div class=\"tableLine\">N05 alprazolam met <span>↓</span></div></td><td><div class=\"tableLine\">G04 sildenafil met <span>↓↓</span></div></td></tr><tr><td><div class=\"tableLine\">L04 ciklosporin</div></td><td><div class=\"tableLine\">C08 felodipin konc <span>↑</span></div><div class=\"tableLine\">C10 pravastatin konc <span>↑↑</span></div></td><td><div class=\"tableLine\">&nbsp;</div></td></tr><tr><td><div class=\"tableLine\">L04 takrolimus</div></td><td><div class=\"tableLine\">&nbsp;</div></td><td><div class=\"tableLine\">L04 ciklosporin met <span>↓↓</span></div></td></tr><tr><td><div class=\"tableLine\">M01 NSAID <br></div><div class=\"tableLine\">(vissa skillnader)</div></td><td><div class=\"tableLine\">C03 tiazider och loopdiuretika eff <span>↓</span></div><div class=\"tableLine\">C07 betablockerare eff <span>↓</span></div><div class=\"tableLine\">C09 ACE-hämmare eff <span>↓</span></div><div class=\"tableLine\">L04 ciklosporin njurbiv <span>↑</span></div><div class=\"tableLine\">N06 SSRI-preparat blödningsrisk <span>↑</span></div></td><td><div class=\"tableLine\">B01 warfarin eff <span>↑</span></div><div class=\"tableLine\">B01 tiklopidin eff <span>↑</span></div><div class=\"tableLine\">L01 metotrexat utsöndr <span>↓↓</span></div></td></tr><tr><td><div class=\"tableLine\">M01 COX-2-hämmare</div></td><td><div class=\"tableLine\">B01 warfarin eff <span>↑</span></div></td><td><div class=\"tableLine\">&nbsp;</div></td></tr><tr><td><div class=\"tableLine\">M04 allopurinol</div></td><td><div class=\"tableLine\">L01 merkaptopurin met <span>↓</span></div><div class=\"tableLine\">L04 azatioprin met <span>↓</span></div></td><td><div class=\"tableLine\">&nbsp;</div></td></tr><tr><td><div class=\"tableLine\">N02 tramadol</div></td><td><div class=\"tableLine\">&nbsp;</div></td><td><div class=\"tableLine\">N06 moklobemid biv <span>↑</span></div><div class=\"tableLine\">N06 fluoxetin, paroxetin, sertralin biv <span>↑</span></div></td></tr><tr><td><div class=\"tableLine\">N03 karbamazepin</div></td><td><div class=\"tableLine\">B01 warfarin met <span>↑</span></div><div class=\"tableLine\">C08 felodipin met <span>↑</span></div><div class=\"tableLine\">H02 glukokortikoider met <span>↑</span></div><div class=\"tableLine\">J01 doxycyklin met <span>↑</span></div><div class=\"tableLine\">J05 proteashämmare met <span>↑</span></div><div class=\"tableLine\">N03 valproinsyra met <span>↑</span></div><div class=\"tableLine\">N03 topiramat met <span>↑</span></div><div class=\"tableLine\">N05 olanzapin met <span>↑</span></div><div class=\"tableLine\">N06 TCA, SSRI met <span>↑</span></div></td><td><div class=\"tableLine\">C08 felodipin met <span>↑</span></div><div class=\"tableLine\">G03 levonorgestrel met <span>↑</span></div><div class=\"tableLine\">G03 etinylöstradiol met <span>↑</span></div><div class=\"tableLine\">N05 midazolam met <span>↑↑</span></div><div class=\"tableLine\">N05 quetiapin met <span>↑↑</span></div></td></tr><tr><td><div class=\"tableLine\">N03 valproinsyra</div></td><td><div class=\"tableLine\">N06 tricykliska antidepressiva met <span>↓</span></div><div class=\"tableLine\">N05 lorazepam met <span>↓</span></div></td><td><div class=\"tableLine\">&nbsp;</div></td></tr><tr><td><div class=\"tableLine\">N04 selegilin</div></td><td><div class=\"tableLine\">N06 SSRI biv <span>↑</span></div></td><td><div class=\"tableLine\">N06 moklobemid biv <span>↑</span></div></td></tr><tr><td><div class=\"tableLine\">N05 neuroleptika (vissa </div><div class=\"tableLine\">skillnader)</div></td><td><div class=\"tableLine\">N05 litium biv <span>↑</span></div><div class=\"tableLine\">N06 flertal tricykliska antidepressiva met <span>↓</span></div><div class=\"tableLine\">N06 flertal SSRI met <span>↓</span></div></td><td><div class=\"tableLine\">&nbsp;</div></td></tr><tr><td><div class=\"tableLine\">N06 tricykliska anti-</div><div class=\"tableLine\">depressiva</div></td><td><div class=\"tableLine\">M01 NSAID blödningsrisk <span>↑</span></div><div class=\"tableLine\">N05 flertal neuroleptika met <span>↓</span></div></td><td><div class=\"tableLine\">&nbsp;</div></td></tr><tr><td><div class=\"tableLine\">N06 SSRI</div></td><td><div class=\"tableLine\">N05 flertal neuroleptika met <span>↓</span></div><div class=\"tableLine\">N06 flertal tricykliska antidepressiva met <span>↓</span></div><div class=\"tableLine\">N05 litium risk för serotonergt syndrom <span>↑</span></div></td><td><div class=\"tableLine\">&nbsp;</div></td></tr><tr><td><div class=\"tableLine\">N06 klomipramin</div></td><td><div class=\"tableLine\">M01 NSAID blödningsrisk <span>↑</span></div></td><td><div class=\"tableLine\">moklobemid, tramadol risk för <br></div><div class=\"tableLine\">serotonergt syndrom <span>↑</span></div></td></tr><tr><td colspan=\"3\"><p>abs<span class=\"tab\"></span> = absorption (kan också beteckna biotillgänglighet)</p><p>biv<span class=\"tab\"></span> = biverkningar</p><p>eff<span class=\"tab\"></span> = effekt</p><p>elim = <span class=\"tab\"></span>elimination (via njurar eller metabolism i levern)</p><p>konc = <span class=\"tab\"></span>koncentration i plasma (orsak oklar)</p><p>met<span class=\"tab\"></span> = metabolism</p><p>utsöndr = <span class=\"tab\"></span>utsöndring i njuren eller gallan</p><p>transp = <span class=\"tab\"></span>transport via aktiv efflux såsom P-glykoprotein </p><p>tub sekr<span class=\"tab\"></span> = tubulär sekretion</p></td></tr><tr><td colspan=\"3\" class=\"footNotes\"><div class=\"tableFootnote\" id=\"fnote_26\">a. <div class=\"tableLine\">Ej registrerat i Sverige (september 2013).</div></div></td></tr></tbody></table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "bfcb4adc-964f-44f3-bd53-7c8dbf83b164",
+			"name": "bfcb4adc-964f-44f3-bd53-7c8dbf83b164",
+			"type": "text",
+			"content": "<h3 id=\"x2_38\">&Ouml;vriga faktorer</h3>\n<p>I kontakten mellan l&auml;kare och patient &ouml;verf&ouml;rs l&auml;karens uppfattningar om l&auml;kemedlet och f&ouml;rv&auml;ntningar p&aring; behandlingen till patienten. Det kan, liksom informationen patienten f&aring;r p&aring; apoteket, p&aring;verka patientens medicineringsf&ouml;ljsamhet i positiv eller negativ riktning. Medicinens utseende, smak, f&auml;rg, form, konsistens, tablettstorlek etc har ocks&aring; en inverkan p&aring; patientens acceptans av behandlingen. Erfarenheter och studier har visat att &auml;ven doseringsintervallet har betydelse. Det &auml;r l&auml;ttare att komma ih&aring;g 1&nbsp;tablett/dag &auml;n 1 tablett 2 eller flera g&aring;nger/dag. &Auml;ven ett h&ouml;gt pris minskar ben&auml;genheten att h&auml;mta ut medicinen och genomf&ouml;ra behandlingen.</p>\n<p class=\"indent\">Med den generiska substitution som &auml;r vanlig idag kan vissa patienter vara k&auml;nsligare f&ouml;r ett utbytespreparat &auml;n f&ouml;r det preparat som han/hon stod p&aring; innan. Det kan d&auml;rf&ouml;r vara v&auml;rdefullt f&ouml;r f&ouml;rskrivande l&auml;kare och apotekspersonal att fr&aring;ga om iakttagelser i samband med generisk substitution.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "68d79eec-0360-43ed-b2a1-62593d5084e9",
+			"name": "68d79eec-0360-43ed-b2a1-62593d5084e9",
+			"type": "text",
+			"content": "<h2 id=\"x2_39\">L&auml;kemedelsbehandling vid &rdquo;<a class=\"index\" id=\"1022458\" data-text=\"l&#xE4;kemedelsdosering:risktillst&#xE5;nd\"></a>risktillst&aring;nd&rdquo;</h2>\n<h3 id=\"x2_40\"><a class=\"index\" id=\"1022459\" data-text=\"l&#xE4;kemedelsdosering:leversjukdom\"></a>Leversjukdom</h3>\n<p>Levern &auml;r kroppens viktigaste organ f&ouml;r metabolism av l&auml;kemedel och kroppsfr&auml;mmande substanser. Vid behandling av patienter med <a class=\"index\" id=\"1022462\" data-text=\"metabolism:leversjukdom;leverfunktionsneds&#xE4;ttning:l&#xE4;kemedel\"></a>leversjukdom b&ouml;r f&ouml;ljande tv&aring; fr&aring;gor beaktas:</p>\n<ul>\n<li><span class=\"tab\"></span>F&ouml;r&auml;ndras l&auml;kemedlets effekter och/<br>eller farmakokinetik t&nbsp;ex genom f&ouml;rs&auml;mrad leverclearance eller l&auml;gre bindning till S-albumin (bildas i mindre utstr&auml;ckning vid leversjukdom)?</li>\n<li><span class=\"tab\"></span>Kan l&auml;kemedlet vara skadligt f&ouml;r levern och f&ouml;rv&auml;rra leversjukdomen?</li>\n</ul>\n<p>Generellt sett har levern en mycket stor reservkapacitet att metabolisera l&auml;kemedel, varf&ouml;r leverskadan m&aring;ste vara uttalad innan en f&ouml;rs&auml;mring ses. Vid levercirros med nedsatt protrombinsyntes, stigande bilirubinkoncentration och/eller fallande albuminkoncentration b&ouml;r leverfunktionen beaktas vid behandling med l&auml;kemedel som huvudsakligen metaboliseras i levern (se Tabell 2, <a href=\"#58753\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>).</p>\n<p class=\"indent\">N&auml;r blodfl&ouml;det till funktionella leverceller shuntas f&ouml;rbi dessa i eller utanf&ouml;r en cirrotisk lever minskar leverclearance av l&auml;kemedel med h&ouml;g extraktionsgrad (E &gt;&nbsp;0,7). En s&aring;dan shunt f&ouml;rbi levern kan markant &ouml;ka biotillg&auml;ngligheten, effekten och biverkningsrisken. Exempel p&aring; detta har visats bl&nbsp;a f&ouml;r petidin, klometiazol, propranolol och verapamil.</p>\n<p class=\"indent\">F&ouml;r l&auml;kemedel som har l&aring;g extraktionsgrad ses p&aring;verkan mer som en f&ouml;rl&auml;ngd halveringstid, men kan vid underh&aring;llsbehandling &auml;nd&aring; vara betydelsefull. L&auml;kemedelsclearance i levern kan s&aring;ledes p&aring;verkas av leversjukdom, men den kliniska betydelsen varierar och beror p&aring; en rad faktorer som terapeutisk bredd, koncentrations-effektkurvans lutning etc.</p>\n<p class=\"indent\">Leversjukdom kan ocks&aring; f&ouml;r&auml;ndra den farmakologiska effekten och biverkningarna av l&auml;kemedlet. Psykoaktiva l&auml;kemedel som morfin, klorpromazin, bensodiazepiner och barbiturater kan utl&ouml;sa encefalopati och koma eller prekoma pga &auml;ndrad k&auml;nslighet i hj&auml;rnan hos patienter med grav leversjukdom. Diuretikabehandling kan ocks&aring; utl&ouml;sa encefalopati hos patienter med &ouml;dem och ascites baserat p&aring; cirros. Av bensodiazepinerna anses oxazepam vara s&auml;krast, eftersom l&auml;kemedlet saknar aktiva metaboliter. Hos kvinnor med kolestatisk leversjukdom b&ouml;r p-piller undvikas, s&auml;rskilt om de haft kl&aring;da under graviditet eller &ouml;strogenbehandling.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a38faffa-bd48-4dbf-999b-583e25cf7a87",
+			"name": "a38faffa-bd48-4dbf-999b-583e25cf7a87",
+			"type": "text",
+			"content": "<h3 id=\"x2_41\">Njursjukdom</h3>\n<p>Vid njursjukdom och h&ouml;g &aring;lder g&auml;ller samma principer f&ouml;r l&auml;kemedelsdosering. Det &auml;r v&auml;lk&auml;nt att den glomerul&auml;ra filtrationshastigheten (GFR) minskar med stigande &aring;lder. Njurfunktionsminskningen varierar dock betydligt mellan individer.</p>\n<p class=\"indent\">Kliniskt anv&auml;nds ofta <a class=\"index\" id=\"1055112\" data-text=\"kreatinin\"></a>P/S-kreatinin som m&aring;tt p&aring; njurfunktionen, men koncentrationen &ouml;kar inte linj&auml;rt med avtagande njurfunktion. Det b&ouml;r observeras att en s&auml;nkt bildningshastighet av kreatinin fr&aring;n muskelnedbrytning vid normalt &aring;ldrande g&aring;r parallellt med en minskning av njurfunktionen och att P/S-kreatinin d&auml;rf&ouml;r f&ouml;rblir relativt konstant (se Figur 2). Det &auml;r viktigt att po&auml;ngtera att f&ouml;r l&auml;kemedelsdosering &auml;r det GFR som anger behov av dosjustering och inte P/S-kreatinin. Inom klinisk farmakologi och vid framtagning av doseringsanvisningar f&ouml;r l&auml;kemedel har GFR sedan l&auml;nge skattats (eGFR) fr&aring;n P/S-kreatinin med <a class=\"index\" id=\"1055114\" data-text=\"Cockcroft&#x2013;Gaults formel\"></a>Cockcroft&ndash;Gaults formel. SBU har i en f&auml;rsk rapport menat att denna formel b&ouml;r ers&auml;ttas av mer noggranna formler, baserade p&aring; P/S-kreatinin och/eller P/S-cystatin C. Se SBU-rapport fr&aring;n 2012 (referens 5 under rubriken F&ouml;r vidare l&auml;sning) och &auml;ven kapitlet Njursjukdomar, avsnittet Kronisk njursjukdom <a href=\"/kapitel/nefrologi-urologi/njursjukdomar.html#63892\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.</p>\n<p class=\"indent\">P/S-<a class=\"index\" id=\"1055077\" data-text=\"cystatin C\"></a>cystatin C anv&auml;nds i &ouml;kande utstr&auml;ckning i&nbsp;st&auml;llet f&ouml;r P/S-kreatinin som mark&ouml;r f&ouml;r GFR eftersom det inte p&aring;verkas av muskelmassa, k&ouml;n eller &aring;lder. Cystatin C p&aring;verkas dock av kortisonbehandling och av vissa sjukdomar (tyreoidearubbningar och vissa hematologiska sjukdomar). Vid skattning av GFR ger, enligt SBU, formler som enbart inneh&aring;ller cystatin C i allm&auml;nhet god noggrannhet, medan kreatininbaserade formler m&aring;ste inneh&aring;lla vissa demografiska uppgifter (t&nbsp;ex &aring;lder och k&ouml;n) och ibland antropometriska m&aring;tt (vikt och l&auml;ngd) f&ouml;r att ge likv&auml;rdig noggrannhet. SBU anger vidare att medelv&auml;rdet av skattat GFR utifr&aring;n kreatinin respektive cystatin C ger &ouml;verlag h&ouml;gre noggrannhet j&auml;mf&ouml;rt med formler som endast utnyttjar en av mark&ouml;rerna, n&aring;got som inte &auml;r allm&auml;nt k&auml;nt. Detta g&auml;ller i synnerhet vuxna patienter med l&aring;gt GFR (&lt;&nbsp;30&nbsp;ml/minut/1,73 m<sup>2</sup>) och barn. Kalkylator f&ouml;r skattning av relativt och absolut GFR n&aring;s via <a href=\"http://www.sbu.se/sv/Publicerat/Gul/Skattning-av-njurfunktion-/\" target=\"_blank\" class=\"linkOut\">www.sbu.se. </a> Se &auml;ven kapitlet Njursjukdomar, avsnittet Kronisk njursjukdom <a href=\"/kapitel/nefrologi-urologi/njursjukdomar.html#63892\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.</p>\n<p class=\"indent\">Generellt &auml;r l&auml;kemedel som uts&ouml;ndras of&ouml;r&auml;ndrade till mer &auml;n 70% via njurarna aktuella f&ouml;r dosjustering vid nedsatt njurfunktion (se Tabell 2 <a href=\"#58753\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>). Behovet av dosjustering beror ocks&aring; p&aring; den terapeutiska bredden av l&auml;kemedlet i fr&aring;ga. Digoxin, som uts&ouml;ndras of&ouml;r&auml;ndrat till n&auml;rmare 70%, beh&ouml;ver dosjusteras redan vid m&aring;ttligt nedsatt njurfunktion, medan fenoximetylpenicillin, trots ca 95-procentig uts&ouml;ndring i of&ouml;r&auml;ndrad form, inte beh&ouml;ver dosjusteras f&ouml;rr&auml;n vid gravt nedsatt njurfunktion eftersom dess terapeutiska bredd &auml;r stor.</p>\n<p class=\"indent\">Hur stor dosjustering som beh&ouml;vs framg&aring;r i de flesta fall av produktresum&eacute;/Fass-text. Om ingen dosjustering g&ouml;rs &ouml;kar j&auml;mviktskoncentrationen med sjunkande njurfunktion, beroende p&aring; hur mycket som uts&ouml;ndras of&ouml;r&auml;ndrat enligt Figur 3.</p>\n<h3 id=\"x2_43\"></h3>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5dbc9824-9a60-4911-b93d-c216e99f72d3",
+			"name": "5dbc9824-9a60-4911-b93d-c216e99f72d3",
+			"type": "figure",
+			"content": {
+				"number": "2",
+				"maxwidth": "",
+				"image": "/images/x2_lma_klinfarmprincip_2013fm10_images/figur2.png",
+				"title": "",
+				"text": "<a class=\"crossref\" id=\"38232\"></a>Relation mellan kreatininutsöndring respektive S-kreatinin (P-kreatinin) och <br>ålder. Kreatininutsöndringen minskar med stigande ålder både pga minskad kreatininproduktion och minskad utsöndringsförmåga i njurarna. Kreatininclearance är relaterad till utsöndringsförmågan. Den resulterande koncentrationen av kreatinin i blod blir konstant, jämför Faktaruta 2 <a href=\"#36672\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>. (Efter MB Mayersohn i Applied Pharmacokinetics, 3rd Ed, Evans, Schentag and Jusko, Applied <br>Therapeutics Inc., Vancouver, WA, 1992; med tillåtelse från förlaget.)",
+				"alt": "",
+				"id": "x2_42"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "85fc4c35-5d4b-496c-82ae-308465582fe5",
+			"name": "85fc4c35-5d4b-496c-82ae-308465582fe5",
+			"type": "text",
+			"content": "<h3 id=\"x2_43\">Graviditet</h3>\n<p>Behandling av en gravid kvinna med l&auml;kemedel utg&ouml;r en unik klinisk situation eftersom inte bara kvinnan behandlas utan indirekt &auml;ven fostret. Placentan &auml;r permeabel f&ouml;r de flesta l&auml;kemedel. I&nbsp;den m&aring;n den fungerar som en &rdquo;barri&auml;r&rdquo; &auml;r mekanismen oklar, men involverar sannolikt aktiva transportsystem s&aring;som P-glykoprotein. L&auml;kemedelskonsumtionen &auml;r h&ouml;gre hos gravida &auml;n hos icke-gravida kvinnor. D&aring; l&auml;kemedel s&auml;tts in till gravida kvinnor b&ouml;r behandlingens nytta f&ouml;r modern vara noga avv&auml;gd mot de potentiella riskerna f&ouml;r fostret.</p>\n<p class=\"indent\">F&ouml;r att f&ouml;rst&aring; riskerna med l&auml;kemedelsbehandling under graviditet &auml;r det viktigt att k&auml;nna den gravida kvinnans l&auml;kemedelsoms&auml;ttning, som ofta skiljer sig fr&aring;n den icke-gravida kvinnans, passagen av l&auml;kemedlet till fostret samt oms&auml;ttningen och effekterna av l&auml;kemedlet i fostret. Dessa fr&aring;gor har st&auml;ndig aktualitet och diskussionen idag g&auml;ller inte bara l&auml;kemedel, utan &auml;ven kemiska substanser i milj&ouml;n.</p>\n<p class=\"indent\">Under graviditeten &ouml;kar elimineringen av de flesta l&auml;kemedel, t&nbsp;ex fenytoin och metoprolol. Vid behandling av gravida uppn&aring;s d&auml;rf&ouml;r l&auml;gre plasmakoncentrationer &auml;n hos icke-gravida kvinnor. Mycket tyder p&aring; att detta beror p&aring; en &ouml;kad l&auml;kemedelsmetabolism. I m&aring;nga fall kan l&aring;ga plasmakoncentrationer av l&auml;kemedel ocks&aring; orsakas av en bristande ordinationsf&ouml;ljsamhet pga den utbredda r&auml;dslan f&ouml;r fosterskador och debatten om detta. Vissa l&auml;kemedel som uts&ouml;ndras renalt elimineras ocks&aring; snabbare under graviditet. Om det &auml;r motiverat b&ouml;r behandlingen kontrolleras med plasmakoncentrationsbest&auml;mningar. Man kan dock inte ta f&ouml;r givet att dosen ska h&ouml;jas om j&auml;mviktskoncentrationen &auml;r l&aring;g under graviditeten. Den gravida kvinnans k&auml;nslighet f&ouml;r ett l&auml;kemedel kan vara f&ouml;rh&ouml;jd, vilket visats f&ouml;r t&nbsp;ex betablockerare.</p>\n<p class=\"indent\">En eventuell f<a class=\"index\" id=\"1050714\" data-text=\"fosterskador:l&#xE4;kemedel\"></a>osterskadas typ och grad beror f&ouml;rutom p&aring; l&auml;kemedelsexponeringen p&aring; embryots eller fostrets utvecklingsstadium. Under den <span style=\"font-style: italic;\"><a class=\"index\" id=\"1050716\" data-text=\"embryoperiod\"></a>embryonala</span> perioden &auml;r fostret som mest k&auml;nsligt f&ouml;r teratogena l&auml;kemedel. Exempel p&aring; l&auml;kemedel med &ouml;kad risk f&ouml;r morfologisk teratogen effekt &auml;r antiepileptika, folsyraantagonister, m&nbsp;fl cytostatika, gestagener, androgener, <sup>131</sup>jod, litium, retinoider, warfarin och &ouml;strogener. Vissa antiepileptika, d&auml;ribland fenytoin, kan orsaka <span>folsyrabrist</span> som ocks&aring; kan drabba fostret. L&aring;ga niv&aring;er av folsyra hos gravida kvinnor med epilepsibehandling anses vara en riskfaktor f&ouml;r uppkomsten av missbildningar, t&nbsp;ex <a class=\"index\" id=\"1050717\" data-text=\"neuralr&#xF6;rsdefekt\"></a>neuralr&ouml;rsdefekt. Profylaktisk tillf&ouml;rsel av <a class=\"index\" id=\"1050718\" data-text=\"folsyra:graviditet\"></a>folsyra &auml;r d&auml;rf&ouml;r s&auml;rskilt angel&auml;gen till s&aring;dana kvinnor inf&ouml;r graviditet. Se ocks&aring; kapitlet Sjukdomar och l&auml;kemedel under graviditet och amning, avsnittet Information till den fertila kvinnan <a href=\"/kapitel/gynekologi/sjukdomar_och_lakemedel_under_graviditet_och_amning.html#87120\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.</p>\n<p class=\"indent\">&Auml;ven under den n&auml;stkommande <span style=\"font-style: italic;\">fetala</span> perioden kan fostret p&aring;verkas negativt av l&auml;kemedel. &rdquo;Osynliga&rdquo; fosterskador av funktionell fysiologisk-biokemisk natur kan utg&ouml;ra ett lika stort medicinskt och socialt problem som de morfologiska &rdquo;klassiska&rdquo; missbildningarna. S&aring;ledes kan psykofarmaka, av typen fentiaziner och tricykliska antidepressiva, ingripa i monoaminoms&auml;ttningen i CNS och st&ouml;ra den normala fosterutvecklingen.</p>\n<p class=\"indent\">Fr&aring;gor om risken f&ouml;r fosterskador blir ofta aktuella n&auml;r kvinnan de facto har behandlats med l&auml;kemedel under graviditeten. Ytterst s&auml;llan leder riskbed&ouml;mningen till ett abortingrepp. &Auml;nd&aring; &auml;r det &ouml;nskv&auml;rt att man alltid beaktar riskerna vid ins&auml;ttning av l&auml;kemedel till kvinnor i fertil &aring;lder. Vid os&auml;kerhet: L&auml;s i produktresum&eacute;/Fass eller kontakta den regionala L&auml;kemedelsinformationscentralen vid n&aring;got av universitetssjukhusen (se kapitlet L&auml;kemedelsbiverkningar, Faktaruta 7, <a href=\"/kapitel/lakemedelsanvandning/lakemedelsbiverkningar.html#49340\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>).</p>\n<p class=\"indent\">Slutsatser om l&auml;kemedel och graviditet presenteras i Faktaruta 5. Se &auml;ven kapitlet Sjukdomar och l&auml;kemedel under graviditet och amning, avsnittet Graviditet och l&auml;kemedel <a href=\"/kapitel/gynekologi/sjukdomar_och_lakemedel_under_graviditet_och_amning.html#95651\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>, och <a href=\"http://www.janusinfo.se/Beslutsstod/Lakemedel-och-fosterpaverkan/\" target=\"_blank\" class=\"linkOut\">www.janusinfo.se</a> .</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6d117e69-a63a-4d3b-8dac-9ec5bfd0367e",
+			"name": "6d117e69-a63a-4d3b-8dac-9ec5bfd0367e",
+			"type": "facts",
+			"content": {
+				"number": "5",
+				"title": "<a class=\"crossref\" id=\"38479\"></a>Läkemedel och graviditet – slutsatser",
+				"text": "<table><tbody><tr><td><ul><li><span class=\"tab\"></span>All läkemedelsbehandling av gravida <br>kvinnor är förenad med en viss, men oftast <br>försumbar, risk för fosterskador. Risken är minst för väl beprövade och länge använda läkeme&shy;del, som därför bör användas i första hand.</li></ul><ul><li><span class=\"tab\"></span>Nya läkemedel, speciellt de med begränsad <br>användning, bör om möjligt undvikas, eftersom inga prekliniska <span>djur</span>tester kan utesluta risker för det mänskliga fostret. </li></ul><ul><li>Produktresuméerna/Fass-texterna innehåller information om användning av specifika läke&shy;medel under graviditet.</li></ul></td></tr></tbody></table>",
+				"id": "x2_45"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "84ad76b6-0cac-4c8a-aace-b8b4d093d3a0",
+			"name": "84ad76b6-0cac-4c8a-aace-b8b4d093d3a0",
+			"type": "text",
+			"content": "<h3 id=\"x2_46\"><a class=\"index\" id=\"1027799\" data-text=\"dosering, l&#xE4;kemedel: se l&#xE4;kemedelsdosering &lt;$nopage&gt;\"></a><a class=\"crossref\" id=\"55644\"></a>Amning<a class=\"index\" id=\"1041355\" data-text=\"l&#xE4;kemedelsdosering:amning;amning:l&#xE4;kemedel;l&#xE4;kemedel:amning\"></a></h3>\n<p>Amning har stora medicinska och psykologiska f&ouml;rdelar och b&ouml;r, om det &auml;r m&ouml;jligt, uppr&auml;tth&aring;llas &auml;ven under l&auml;kemedelsbehandling. M&aring;nga faktorer har betydelse f&ouml;r passagen av l&auml;kemedel till br&ouml;stmj&ouml;lken. F&ouml;r att bed&ouml;ma risken f&ouml;r barnet att exponeras f&ouml;r en farmakologiskt aktiv (eller toxisk) dos m&aring;ste man ta h&auml;nsyn till:</p>\n<ul>\n<li><span class=\"tab\"></span>dosen via modersmj&ouml;lken</li>\n<li><span class=\"tab\"></span>barnets upptag av och f&ouml;rm&aring;ga att eliminera l&auml;kemedlet</li>\n<li><span class=\"tab\"></span>dos (koncentrations)-effektsambandet hos barnet.</li>\n</ul>\n<p>Den s&nbsp;k <a class=\"index\" id=\"1049967\" data-text=\"mj&#xF6;lk/blodkvot, l&#xE4;kemedel;l&#xE4;kemedel:mj&#xF6;lk/blodkvot\"></a>mj&ouml;lk/blodkoncentrationskvoten (M/B-kvoten) anges ofta i litteraturen. F&ouml;r att minimera exponeringen av barnet och riskerna f&ouml;r l&auml;kemedelseffekter och biverkningar rekommenderas ibland amning i slutet av dosintervallet d&aring; mj&ouml;lkkoncentrationen f&ouml;r m&aring;nga l&auml;kemedel &auml;r som l&auml;gst.</p>\n<p class=\"indent\">M/B-kvoten ger i sig sj&auml;lv ingen information om hur mycket barnet f&aring;r i sig via mj&ouml;lken, utan m&aring;ste relateras till l&auml;kemedlets distributionsvolym. Ju mindre distributionsvolym och ju h&ouml;gre M/B-kvot, desto st&ouml;rre andel av moderns l&auml;kemedelsm&auml;ngd f&aring;r barnet i sig via <a class=\"index\" id=\"1049979\" data-text=\"br&#xF6;stmj&#xF6;lk:l&#xE4;kemedel;l&#xE4;kemedel:br&#xF6;stmj&#xF6;lk \"></a>br&ouml;stmj&ouml;lken.</p>\n<p class=\"indent\">Upptag och eliminering av ett l&auml;kemedel hos det ammade barnet har betydelse f&ouml;r risken att p&aring;verkas. Detsamma g&auml;ller sambandet mellan l&auml;kemedelskoncentration och effekt hos barnet. Beteendeunders&ouml;kningar p&aring; nyf&ouml;dda <span>djur</span> kan ge oss uppslag om vilka typer av effekter som kan drabba den nyf&ouml;dde. <span>Djur</span>experimentella data har t&nbsp;ex visat att neuroleptikaexponering via br&ouml;stmj&ouml;lken kan ge inl&auml;rningsproblem senare i livet. Inget mots&auml;ger att s&aring;dana effekter kan uppst&aring; &auml;ven hos m&auml;nniska.</p>\n<p class=\"indent\">Vissa l&auml;kemedelsgrupper &auml;r sj&auml;lvklart <a class=\"index\" id=\"1027896\" data-text=\"amning:l&#xE4;kemedel\"></a>kontraindicerade vid amning, t&nbsp;ex cytostatika och radiofarmaka. M&aring;nga vill ocks&aring; h&auml;nf&ouml;ra psykofarmaka till denna kategori. Neuroleptika och andra l&auml;kemedel som ingriper i neuronala funktioner b&ouml;r anv&auml;ndas med stor &aring;terh&aring;llsamhet. I&nbsp;en valsituation med en mycket viktig l&auml;kemedelsbehandling kan naturligtvis amningen l&auml;ggas ned.</p>\n<p class=\"indent\">I de flesta fall kan man anta att barnet inte blir negativt p&aring;verkat av amning om den relativa dosen av l&auml;kemedlet &auml;r mindre &auml;n 10% av moderns. Endast ett f&aring;tal l&auml;kemedel &ouml;verskrider denna gr&auml;ns (se Tabell 5).</p>\n<p><span> </span></p>\n<p class=\"indent\">Se vidare Faktaruta 6 och kapitlet Sjukdomar och l&auml;kemedel under graviditet och amning, avsnittet Amning och l&auml;kemedel, <a href=\"/kapitel/gynekologi/sjukdomar_och_lakemedel_under_graviditet_och_amning.html#24848\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>, och <a href=\"http://www.janusinfo.se/Beslutsstod/Lakemedel-amning/\" target=\"_blank\" class=\"linkOut\">www.janusinfo.se</a> .</p>\n<p><span> </span></p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "46541483-4dea-4c1c-b440-c500028b5747",
+			"name": "46541483-4dea-4c1c-b440-c500028b5747",
+			"type": "tablenarrow",
+			"content": {
+				"number": "5",
+				"title": "<a class=\"crossref\" id=\"86273\"></a>Exempel på läkemedel som går över i bröstmjölk i sådan mängd att amning inte bör ske, såvida barnet inte kan övervakas noga (se text). <sup><a class=\"tableFootnoteLink\" href=\"#fnote_29\"><sup>a</sup></a></sup>",
+				"id": "x2_47",
+				"text": "<table><tbody><tr><td><div class=\"tableLine\"><strong>Läkemedel</strong></div></td><td><p><strong><div class=\"tableLine\">”Barnets dos i &#37;” <br></div><div class=\"tableLine\">(genomsnittlig/<br></div><div class=\"tableLine\">maximal)<sup><a class=\"tableFootnoteLink\" href=\"#fnote_30\"><sup>b</sup></a></sup></div></strong></p></td></tr><tr><td><div class=\"tableLine\">Atenolol</div></td><td><p><span class=\"tabstop\"></span><div class=\"tableLine\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8/19</div></p></td></tr><tr><td><div class=\"tableLine\">Diazepam</div></td><td><div class=\"tableLine\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5/12</div></td></tr><tr><td><div class=\"tableLine\">Teofyllin</div></td><td><div class=\"tableLine\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10/–</div></td></tr><tr><td><div class=\"tableLine\">Tinidazol</div></td><td><div class=\"tableLine\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4/10</div></td></tr><tr><td><div class=\"tableLine\">Metronidazol</div></td><td><div class=\"tableLine\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12/24</div></td></tr><tr><td><div class=\"tableLine\">Sotalol</div></td><td><div class=\"tableLine\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22/42</div></td></tr><tr><td><div class=\"tableLine\">Litium</div></td><td><div class=\"tableLine\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;54/80</div></td></tr><tr><td><div class=\"tableLine\">Etosuximid</div></td><td><div class=\"tableLine\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;64/99</div></td></tr><tr><td><div class=\"tableLine\">Fenobarbital</div></td><td><div class=\"tableLine\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;43–94/297</div></td></tr><tr><td colspan=\"2\" class=\"footNotes\"><div class=\"tableFootnote\" id=\"fnote_29\">a. Uppgifter från Drugs and Human Lactation. Bennet PN, red., 2:a upplagan. Amsterdam: Elsevier; 1996.</div><div class=\"tableFootnote\" id=\"fnote_30\">b. <div class=\"tableLine\">Barnets ”dos” uttryckt i procent av moderns dos räknat </div><div class=\"tableLine\">per kg kroppsvikt (genomsnittlig/maximal).</div></div></td></tr></tbody></table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "24c8bb52-bff7-4adf-8985-5ab430f5f5d6",
+			"name": "24c8bb52-bff7-4adf-8985-5ab430f5f5d6",
+			"type": "facts",
+			"content": {
+				"number": "6",
+				"title": "<a class=\"crossref\" id=\"50498\"></a>Läkemedel och amning – slutsatser",
+				"text": "<table><tbody><tr><td><ul><li><span class=\"tab\"></span>Grundregeln är att noggrant väga <br>indikationen för en behandling mot riskerna <br>för barnet. </li></ul><ul><li><span class=\"tab\"></span>En hög mjölk/blodkoncentrationskvot tillsam&shy;mans med en liten fördelningsvolym av läke&shy;medlet ger en hög relativ ”dos” till det ammade barnet. </li></ul><ul><li><span class=\"tab\"></span>Om uppgifter om läkemedlet saknas och be&shy;handlingen är viktig samtidigt som amning är angelägen, kan man ändå ofta genomföra be&shy;handlingen om man gör en noggrann uppfölj&shy;ning av barnet. </li></ul><ul><li><span class=\"tab\"></span>Hjälp med konsultation och analys av läkemedel i blod och mjölk erhålls från kliniskt farmakolo&shy;giska avdelningar vid universitetssjukhusen. </li></ul><ul><li>Produktresuméerna/Fass-texterna innehåller in&shy;formation om de specifika läkemedlens använd&shy;ning vid amning.</li></ul></td></tr></tbody></table>",
+				"id": "x2_49"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "591a53d0-25fc-4c37-8887-da49a7bbba83",
+			"name": "591a53d0-25fc-4c37-8887-da49a7bbba83",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"x2_50\">Referenser</h2>\n<h5 id=\"x2_51\">F&ouml;r vidare l&auml;sning:</h5>\n<ol class=\"references\"><li id=\"reference_1\">Goodman and Gilman\\qs the Pharmacological <br>Basis of Therapeutics. Brunton LL, Chabner BA, Knollman BC, red. 12:e uppl. McGraw-Hill <br>Incorporated; 2011. ISBN 0071624422.</li>\n<li id=\"reference_2\">Drugs in pregnancy and lactation: A reference guide to fetal and neonatal risk. I: Briggs GG, Freeman RK, Yaffe SJ, red. 8:e uppl. 2008. <br>ISBN13: 9780781778763.</li>\n<li id=\"reference_3\">Indikatorer f&ouml;r god l&auml;kemedelsterapi hos &auml;ldre. Socialstyrelsen. 2010. Artikelnr 2010-6-29. <br><a href=\"http://www.socialstyrelsen.se/lists/artikelkatalog/attachments/18085/2010-6-29.pdf\" target=\"_blank\" class=\"linkOut\">www.socialstyrelsen.se</a></li>\n<li id=\"reference_4\"><a href=\"http://www.janusinfo.se/\" target=\"_blank\" class=\"linkOut\">www.janusinfo.se</a></li>\n<li id=\"reference_5\">SBU. Skattning av njurfunktion. En systematisk litteratur&ouml;versikt. Stockholm: Statens beredning f&ouml;r medicinsk utv&auml;rdering (SBU); 2012. <br>SBU-rapport nr 214. ISBN 9789185413539.<br><a href=\"http://www.sbu.se/sv/Publicerat/Gul/Skattning-av-njurfunktion-/\" target=\"_blank\" class=\"linkOut\">www.sbu.se</a></li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/lakemedelsanvandning/kliniskt_farmakologiska_principer.json",
+	"modified": "2016-02-08 13:15",
+	"isPublished": true,
+	"indexed": "true"
+}
