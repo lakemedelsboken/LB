@@ -1,0 +1,62 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Förord onkologi",
+	"description": "",
+	"keywords": "",
+	"subject": "onkologi",
+	"informationType": "",
+	"pageType": "",
+	"created": "2016-02-08 11:14",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Förnamn Efternamn",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "4f34001d-6af0-4418-9d08-ea3a4ce80255",
+			"name": "70f373a8-188e-4820-8663-54bb951c6912",
+			"type": "text",
+			"content": "<h1 id=\"Forord-Onkologi\">F&ouml;rord Onkologi</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a39dc602-d50e-4d5b-abe8-b437bf3db936",
+			"name": "8e0d3d3f-46e1-4065-87ff-c25e0375ba85",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2><ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/onkologi/forord.json",
+	"indexed": "true",
+	"modified": "2016-02-08 20:41"
+}

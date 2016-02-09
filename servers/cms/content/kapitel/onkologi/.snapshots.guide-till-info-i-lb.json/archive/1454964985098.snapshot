@@ -1,0 +1,79 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Förord onkologi",
+	"description": "",
+	"keywords": "",
+	"subject": "onkologi",
+	"informationType": "",
+	"pageType": "",
+	"created": "2016-02-08 11:14",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Förnamn Efternamn",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "4f34001d-6af0-4418-9d08-ea3a4ce80255",
+			"name": "70f373a8-188e-4820-8663-54bb951c6912",
+			"type": "text",
+			"content": "<h1 id=\"Forord-Onkologi\">F&ouml;rord Onkologi</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d9dfe189-1a1d-460c-a88e-b3ecf51bfcd7",
+			"name": "d9dfe189-1a1d-460c-a88e-b3ecf51bfcd7",
+			"type": "text",
+			"content": "<p>Tum&ouml;rsjukdomar behandlas i en rad olika terapi- och organkapitel. I denna avdelning, Onkologi, finns kapitlen <a href=\"{pre}/kapitel/onkologi/farmakologisk_behandling_av_maligna_tumorer.html\">Farmakologisk behandling av maligna tum&ouml;rer</a>, <a href=\"{pre}/kapitel/onkologi/hematologiska_maligniteter.html\">Hematologiska maligniteter</a>, <a href=\"{pre}/kapitel/onkologi/sjukdomar_i_brostkorteln.html\">Sjukdomar i br&ouml;stk&ouml;rteln</a>, och <a href=\"{pre}/kapitel/onkologi/lungcancer.html\">Lungcancer</a>.</p>\n<p></p>\n<p class=\"indent\">I kapitlet <em>Farmakologisk behandling av maligna tum&ouml;rer</em> beskrivs anv&auml;ndning och biverkningar av de olika typer av l&auml;kemedel som ges vid medicinsk tum&ouml;rbehandling, dvs cytostatika, endokrina l&auml;kemedel, cytokiner, monoklonala antikroppar samt kinasinhibitorer och &ouml;vriga l&auml;kemedel. Dessutom sammanfattas i ett avsnitt evidensbaserad farmakologisk behandling vid kolorektal cancer. D&auml;rtill beskrivs den evidensbaserade behandlingen av maligna hj&auml;rntum&ouml;rer som inte n&auml;rmare beskrivs i n&aring;got annat terapikapitel. I Tabell 1 redovisas tum&ouml;rsjukdomar behandlade i olika terapi- och organkapitel.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a39dc602-d50e-4d5b-abe8-b437bf3db936",
+			"name": "8e0d3d3f-46e1-4065-87ff-c25e0375ba85",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"For-vidare-lasning\">F&ouml;r vidare l&auml;sning</h2>\n<h3 id=\"Allman-onkologi\">Allm&auml;n onkologi</h3>\n<p>Nationella v&aring;rdprogram f&ouml;r olika tum&ouml;rformer finns f&ouml;r nedladdning p&aring; www.cancercentrum.se.</p>\n<p class=\"indent normal\">Ut&ouml;ver nationella v&aring;rdprogram finns en rad regionala v&aring;rdprogram. Inom flera diagnoser finns det regionala v&aring;rdprogram som &auml;nnu saknar en nationell motsvarighet. Dessa v&aring;rdprogram samt regionala tilll&auml;mpningar och anpassningar av nationella v&aring;rdprogram &aring;terfinns p&aring; de regionala cancercentrumens webbplatser:</p>\n<p class=\"normal\"></p>\n<p class=\"indent normal\"></p>\n<p class=\"normal\"><a href=\"http://www.skane.se/default.aspx?id=264847\">www.skane.se/default.aspx?id=264847</a>&nbsp;<br>(Regionalt cancercentrum syd)</p>\n<p class=\"normal\"></p>\n<p class=\"normal\"><a href=\"http://www.cancercentrum.se/sv/sydost\">www.cancercentrum.se/sv/sydost</a>&nbsp;<br>(Regionalt cancercentrum syd&ouml;st)</p>\n<p class=\"normal\"></p>\n<p class=\"normal\"><a href=\"http://www.cancercentrum.se/sv/vast\">www.cancercentrum.se/sv/vast</a>&nbsp;<br>(Regionalt cancercentrum v&auml;st)</p>\n<p class=\"normal\"></p>\n<p class=\"normal\"><a href=\"http://www.cancercentrum.se/sv/stockholmgotland\">www.cancercentrum.se/sv/stockholmgotland</a>&nbsp;<br>(Regionalt cancercentrum Stockholm, Gotland)</p>\n<p class=\"normal\"></p>\n<p class=\"normal\"><a href=\"http://www.cancercentrum.se/sv/uppsalaorebro\">www.cancercentrum.se/sv/uppsalaorebro</a>&nbsp;<br>(Reginalt cancercentrum Uppsala, &Ouml;rebro)</p>\n<p class=\"normal\"></p>\n<p class=\"normal\"><a href=\"http://www.cancercentrum.se/norr\">www.cancercentrum.se/norr</a>&nbsp;<br>(Regionalt cancercentrum norr)</p>\n<p class=\"normal\"></p>\n<p class=\"normal\">F&ouml;r f&ouml;rdjupning och vidare l&auml;sning finns flera nyligen utkomna onkologiska standardverk, exempelvis:</p>\n<p></p>\n<ol class=\"references\"><li id=\"reference_1\">Ringborg U, Dalianis T, Henriksson R, red. Onkologi. 2:a uppl. Stockholm: Liber AB; 2008. ISBN 9789147084012.</li>\n<li id=\"reference_2\">De Vita VT, Lawrence TS, Rosenberg SA, eds. Cancer. Principles &amp; practice of oncology. 9th ed. Philadelphia: Lippincott Williams &amp; Wilkins; 2011. ISBN 9781451105452.</li>\n<li id=\"reference_3\">Niederhuber JE, Armitage JO, Doroshow JH, Kastan MB,Tepper J, eds. Abeloff`s Clinical oncology. 5th ed. Churchill Livingstone; 2013. ISBN 9781455728657.</li>\n<li id=\"reference_4\">Hong WK, Bast Jr RC, Robert C, Hait W, Kufe DW, Pollock RE et al, eds. Holland and Frei Cancer medicine. 8th ed. McGrawHill; 2010.<br>ISBN 9781607950141.</li>\n</ol>\n<h3 id=\"Hematologisk-onkologi\">Hematologisk onkologi</h3>\n<p>Hematologiska v&aring;rdprogram kan h&auml;mtas fr&aring;n Svensk f&ouml;rening f&ouml;r hematologis webbplats: www.sfhem.se/riktlinjer.</p>\n<p class=\"indent normal\">F&ouml;r f&ouml;rdjupning och vidare l&auml;sning finns flera nyligen utkomna hematologiska standardverk, exempelvis:</p>\n<p class=\"normal\"></p>\n<p class=\"normal\"></p>\n<ol>\n<li>Gahrton G, Juliusson G, red. Blodets sjukdomar: l&auml;robok i hematologi. Lund: Studentlitteratur AB; 2012. ISBN 9789144069241.</li>\n<li>Hoffman R, Benz EJ, Silberstein LE, Heslop HE, Weitz JI, Anastasi J, eds. Hematology. Basic principles and practice. 6th ed. Philadelphia: Saunders; 2013. ISBN 9781437729283.</li>\n<li>Kaushansky K, Lichtman MA, Beutler E, Kipps TJ, Seligsohn U, Prchal JT, eds. Williams Hematology. 8th ed. McGrawHill; 2010. ISBN 9780071621441.</li>\n<li>Greer JP, Arber DA, Glader BE, List AF, Means R, eds. Wintrobe's Clinical Hematology. 13th ed. Philadelphia: Lippincott Williams &amp; Wilkins; 2013. ISBN 9781451172683.</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/onkologi/forord.json",
+	"indexed": "true",
+	"modified": "2016-02-08 20:56"
+}

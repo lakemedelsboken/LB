@@ -38,28 +38,6 @@
 			}
 		},
 		{
-			"id": "5a13851b-99b4-45fd-a8bf-97d6249caba2",
-			"name": "987043cc-7cd4-4d98-8802-501e9ac1fbbf",
-			"type": "author",
-			"content": {
-				"firstname": "Förnamn",
-				"surname": "Efternamn",
-				"description": "Arbetsplats",
-				"email": "e-post"
-			},
-			"settings": {
-				"preprocessors": {
-					"idinjection.js": "false"
-				},
-				"postprocessors": {
-					"boxlinks.js": "false",
-					"genericas.js": "false",
-					"pagefootnotes.js": "false",
-					"references.js": "false"
-				}
-			}
-		},
-		{
 			"id": "9fc86dda-e71e-4c89-91a5-e4baa30d9fdf",
 			"name": "ffdb453e-2584-4a67-b8fd-d8ed97878fd3",
 			"type": "text",
@@ -97,5 +75,5 @@
 	"type": "file",
 	"path": "/kapitel/onkologi/forord.json",
 	"indexed": "true",
-	"modified": "2016-02-08 11:16"
+	"modified": "2016-02-08 20:41"
 }
