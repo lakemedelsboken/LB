@@ -50,6 +50,9 @@ function Publisher(options) {
 };
 
 Publisher.prototype.getLastPayload = function(callback) {
+
+	console.log("Fetching last payload from server...");
+
 	var self = this;
 	var payloadRemotePath = path.join(self.options.remoteDir, "payload.json");
 	self.client.download(payloadRemotePath, path.join(__dirname, "temp", "recentpayload.json"), function(err) {
@@ -333,6 +336,124 @@ var ContentController = {
 	},
 	renderPages: function(pages, callback) {
 		contentModel.renderPages(pages, callback);
+	},
+	getUnpublishedFiles: function(callback) {
+
+		var outputDirPath = path.join(ContentController.baseDir, "..", "output");
+		var publishedDirPath = path.join(outputDirPath, "published");
+
+		//Add files to payload
+		var allFiles = wrench.readdirSyncRecursive(publishedDirPath);
+		
+		var payload = [];
+		for (var i = 0; i < allFiles.length; i++) {
+			var fullPath = path.join(publishedDirPath, allFiles[i]);
+			var stat = fs.statSync(fullPath);
+			if (stat.isFile()) {
+				payload.push({path: fullPath, relativePath: "published/" + allFiles[i], type: "file", hash: ContentController.createHashSync(fullPath)});
+			} else if (stat.isDirectory()) {
+				//No need to upload dirs, they will be created anyway
+				//payload.push({path: fullPath, relativePath: allFiles[i], type: "dir"});
+			} else {
+				console.log("Could not handle: " + fullPath);
+			}
+			
+		}
+		
+		var secretSettingsPath = path.join(__dirname, "..", "..", "..", "settings", "secretSettings.json");
+		var secretSettings = null;
+
+		if (fs.existsSync(secretSettingsPath)) {
+			secretSettings = JSON.parse(fs.readFileSync(secretSettingsPath, "utf8"));
+		}
+
+		var publishServerOptions = {};
+		
+		if (secretSettings && secretSettings.cms.publishServerOptions) {
+			publishServerOptions = secretSettings.cms.publishServerOptions;
+		}
+
+		var publisher = new Publisher(publishServerOptions);
+
+		publisher.getLastPayload(function(err, lastPayload) {
+
+			if (err) {
+				return callback(err);
+			}
+
+			var cleanedPayload = JSON.parse(JSON.stringify(payload));
+
+			//Remove files in payload that already seem to exist on server
+			for (var i = cleanedPayload.length - 1; i >= 0; i--) {
+				var item = cleanedPayload[i];
+				for (var j = 0; j < lastPayload.length; j++) {
+					var uploadedItem = lastPayload[j];
+					if (item.relativePath === uploadedItem.relativePath && item.hash === uploadedItem.hash) {
+						//Remove
+						//console.log("Removing " + item.relativePath + " from cleanedPayload");
+						cleanedPayload.splice(i, 1);
+						break;
+					}
+				}
+			}
+			
+			//Files that only exist in the last published payload are deleted
+			var deletedFiles = JSON.parse(JSON.stringify(lastPayload));
+
+			//Remove files in payload that are present in the new payload
+			for (var i = deletedFiles.length - 1; i >= 0; i--) {
+				var item = deletedFiles[i];
+				for (var j = 0; j < payload.length; j++) {
+					var newItem = payload[j];
+					if (item.relativePath === newItem.relativePath) {
+						//Remove
+						deletedFiles.splice(i, 1);
+						break;
+					}
+				}
+			}
+			
+			
+			//Fix relative path
+			cleanedPayload.forEach(function(item) {
+				item.relativePath = item.relativePath.replace("published/", "");
+			});
+
+			//Filter out index files
+			for (var i = cleanedPayload.length - 1; i >= 0; i--) {
+				var item = cleanedPayload[i];
+				if (item.type === "file" && path.extname(item.relativePath) === ".index") {
+					cleanedPayload.splice(i, 1);
+				}
+			}
+
+			//Fix relative path
+			deletedFiles.forEach(function(item) {
+				item.relativePath = item.relativePath.replace("published/", "");
+			});
+
+			//Filter out index files and static files
+			for (var i = deletedFiles.length - 1; i >= 0; i--) {
+				var item = deletedFiles[i];
+				if (item.type === "file" && (path.extname(item.relativePath) === ".index" || item.relativePath.indexOf("static/") === 0)) {
+					deletedFiles.splice(i, 1);
+				}
+			}
+			
+			var affectedFiles = [];
+
+			for (var i = 0; i < deletedFiles.length; i++) {
+				affectedFiles.push("DELETED " + deletedFiles[i].relativePath);
+			}
+			
+			for (var i = 0; i < cleanedPayload.length; i++) {
+				affectedFiles.push(cleanedPayload[i].relativePath);
+			}
+			
+			return callback(null, affectedFiles);
+			
+		});
+		
 	},
 	publishExternal: function(uploadAllFiles, callback) {
 

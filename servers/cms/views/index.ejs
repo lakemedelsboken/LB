@@ -241,13 +241,28 @@
 							Tvinga att alla filer skickas, tar längre tid.
 						</label>
 					</div>
-					<a id="publishExternal" href="/cms/content/publishexternal" class="btn btn-primary"><i class="fa fa-refresh"></i> <span class="text">Starta publicering till skarp site</span></a>
+					<a id="publishExternal" href="/cms/content/publishexternal" class="btn btn-success"><i class="fa fa-refresh"></i> <span class="text">Starta publicering till skarp site</span></a>
 					<br><br>
 				</div>
 				<div class="progress">
 					<div class="progress-bar publish-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
 						<span class="sr-only indicator">0%</span>
 					</div>
+				</div>
+				<div>
+					<div>
+						<a id="showUnpublishedFiles" class="btn btn-primary btn-block" href="/cms/content/getunpublishedfiles"><i class="fa fa-list"></i> <span class="text">Visa först vilka filer som är förändrade</span></a>
+					</div>
+					<div class="panel hidden" id="unpublishedInformation">
+						<br>
+						Dessa filer är förändrade i sin publicerade form och behöver laddas upp till den skarpa servern. Detta kan bero på flera saker:
+						<ul>
+							<li>Filen har redigerats och märkts för publicering</li>
+							<li>Alla filer är ombyggda och ny information har tillkommit från exempelvis NPL som gör att innehållet har ändrats till viss del</li>
+							<li>Filen är beroende av en annan fil som i sin tur har ändrats och publicerats</li>
+						</ul>
+					</panel>
+					<ul id="unpublishedOutput" class="list-group hidden"></ul>
 				</div>
 			</div>
 		</div>

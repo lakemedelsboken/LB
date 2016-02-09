@@ -14,6 +14,50 @@ $(document).ready(function() {
 	}
 
 	//Publish external
+	$("a#showUnpublishedFiles").on("click", function(event) {
+		
+		event.preventDefault();
+
+		//Show loading indicator
+
+		var button = $(this);
+		button.find("i").first().removeClass("fa-list").addClass("fa-refresh").addClass("fa-spin");
+		button.attr("disabled", "disabled");
+		button.find("span.text").text("Hämtar information...");
+
+		//Clear output
+		var list = $("#unpublishedOutput");
+		list.children().remove();
+		
+		$.getJSON(button.attr("href"), function(data, textStatus, xhr) {
+
+			button.find("i").first().removeClass("fa-spin").removeClass("fa-refresh").addClass("fa-list");
+			button.removeAttr("disabled");
+			button.find("span.text").text("Visa först vilka filer som är förändrade");
+
+			list.removeClass("hidden");
+			$("#unpublishedInformation").removeClass("hidden");
+
+			for (var i = 0; i < data.length; i++) {
+				var item = data[i];
+				if (item.indexOf("DELETED ") === 0) {
+					list.append($("<li class=\"list-group-item list-group-item-warning\">" + item.replace("DELETED ", "") + " (Kommer att försvinna)</li>"));
+				} else if (item.indexOf(".html") > -1) {
+					list.append($("<li class=\"list-group-item\"><a href=\"/cms/" + item.replace(".html", ".json") + "\">" + item + "</a></li>"));
+				} else {
+					list.append($("<li class=\"list-group-item\">" + item + "</li>"));
+				}
+			}
+
+		})
+		.fail(function() {
+			console.log("Error fetching diff");
+		});
+		
+		
+	});
+
+	//Publish external
 	$("a#publishExternal").on("click", function(event) {
 		
 		event.preventDefault();

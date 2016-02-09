@@ -1035,6 +1035,24 @@ router.get("/recreateall", function(req, res) {
 
 });
 
+router.get("/getunpublishedfiles", function(req, res) {
+
+	contentController.getUnpublishedFiles(function(err, data) {
+
+		if (err) {
+			res.status(500);
+			res.render('error', {
+				message: err.message,
+				error: err
+			});
+			
+		} else {
+			res.json(data);
+		}
+	});
+
+});
+
 router.get("/publishexternal", function(req, res) {
 
 	var sentStatus = false;
