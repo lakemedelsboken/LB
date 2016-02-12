@@ -1198,7 +1198,7 @@ var ContentModel = {
 		}
 		
 		//Remove unwanted characters from dirName
-		dirName = dirName.replace(/([^a-z0-9]+)/gi, '-');
+		dirName = dirName.replace(/([^a-z0-9_]+)/gi, '-');
 		if (dirName.length > 200) {
 			dirName = dirName.substr(0, 200);
 		}
@@ -1655,7 +1655,7 @@ var ContentModel = {
 		}
 		
 		//Remove unwanted characters from after
-		after = after.replace(/([^a-z0-9\/]+)/gi, '-');
+		after = after.replace(/([^a-z0-9_\/]+)/gi, '-');
 		if (after.length > 200) {
 			after = after.substr(0, 200);
 		}
@@ -1697,13 +1697,13 @@ var ContentModel = {
 		}
 		
 		//Remove unwanted characters
-		toDir = toDir.replace(/([^a-z0-9\/]+)/gi, '-');
+		toDir = toDir.replace(/([^a-z0-9_\/]+)/gi, '-');
 		if (toDir.length > 200) {
 			toDir = toDir.substr(0, 200);
 		}
 
 		//Remove unwanted characters
-		toName = toName.replace(/([^a-z0-9\/]+)/gi, '-');
+		toName = toName.replace(/([^a-z0-9_\/]+)/gi, '-');
 		if (toName.length > 200) {
 			toName = toName.substr(0, 200);
 		}
