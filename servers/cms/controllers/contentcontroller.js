@@ -926,6 +926,21 @@ var ContentController = {
 				
 			});
 		}
+
+		//Clear preparsed synonyms
+		var synonymsCacheDirPath = path.join(__dirname, "..", "search", "synonyms", "preparsed_synonyms");
+
+		if (fs.existsSync(synonymsCacheDirPath)) {
+			//Remove .txt files
+			var files = fs.readdirSync(synonymsCacheDirPath);
+			files.forEach(function(fileName) {
+				
+				if (path.extname(fileName) === ".txt") {
+					fs.unlinkSync(path.join(synonymsCacheDirPath, fileName));
+				}
+				
+			});
+		}
 		
 		//TODO: Clear /payloads?
 		
