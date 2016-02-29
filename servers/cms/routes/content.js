@@ -743,7 +743,8 @@ router.get("/pdf/download", function(req, res) {
 			cookies.push(encodeURIComponent(req.cookies[cookie]));
 		}
 		
-		var arguments = ["--print-media-type", "--disable-smart-shrinking", "--no-background", "--zoom", "0.7", "--dpi", "240", "-n", "--viewport-size", "950"];
+		var arguments = ["--print-media-type", "--disable-smart-shrinking", "--zoom", "0.7", "--dpi", "240", "-n", "--viewport-size", "950"];
+		//"--no-background",
 		
 		arguments = arguments.concat(cookies);
 
