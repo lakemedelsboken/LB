@@ -816,7 +816,8 @@ router.get("/docx/download", function(req, res) {
 
 	if (url !== undefined && url !== "") {
 
-		var outPath = path.join(require("os").tmpdir(), contentController.getGUID() + ".docx");
+		var outFileName = contentController.getGUID() + ".docx";
+		var outPath = path.join(require("os").tmpdir(), outFileName);
 
 		console.log("Building docx for " + url + " to " + outPath);
 
@@ -927,14 +928,18 @@ router.get("/docx/download", function(req, res) {
 		//Remove from metadata title if it exists
 		$("title").text($("title").text().replace(" | Läkemedelsboken", ""));
 
-		//Pandoc does not handle colspans, insert 
+		//Pandoc does not handle colspans, insert empty td:s
 		$("td").each(function(index, item) {
 			var $item = $(item);
 			if ($item.attr("colspan") !== undefined) {
 				var nrOfMissingColumns = parseInt($item.attr("colspan")) - 1;
 				if (nrOfMissingColumns > 0) {
 					for (var i = 0; i < nrOfMissingColumns; i++) {
-						$item.after("<td></td>");
+						if (i === (nrOfMissingColumns - 1)) {
+							$item.after("<td>{EMPTY}</td>");
+						} else {
+							$item.after("<td></td>");
+						}
 					}
 				}
 			}
@@ -946,7 +951,11 @@ router.get("/docx/download", function(req, res) {
 				var nrOfMissingColumns = parseInt($item.attr("colspan")) - 1;
 				if (nrOfMissingColumns > 0) {
 					for (var i = 0; i < nrOfMissingColumns; i++) {
-						$item.after("<th></th>");
+						if (i === (nrOfMissingColumns - 1)) {
+							$item.after("<th>{EMPTY}</th>");
+						} else {
+							$item.after("<th></th>");
+						}
 					}
 				}
 			}
@@ -989,7 +998,64 @@ router.get("/docx/download", function(req, res) {
 			} else if (!hasExited) {
 				hasExited = true;
 
-				//Everything is ok
+				//Everything is ok, now merge some table columns that pandoc is unable to handle
+				
+				//Read the zip file
+				var AdmZip = require("adm-zip");
+				fs.renameSync(outPath, outPath + ".zip");
+
+				var zip = new AdmZip(outPath + ".zip");
+								
+				//Open filename/word/document.xml
+				var unzippedFolderPath = outPath.replace(".docx", "/");
+				zip.extractAllTo(unzippedFolderPath);
+				
+				var contents = fs.readFileSync(path.join(unzippedFolderPath, "word", "document.xml"), "utf8");
+				var $ = cheerio.load(contents, {xmlMode: true});
+				
+				var empties = [];
+				
+				//Find <w:t xml:space="preserve">{EMPTY}</w:t>
+				$("w\\:tc:contains({EMPTY})").each(function() {
+					
+					var alsoEmpty = $(this).nextAll();
+					var toBeExtended = $(this).prev();
+
+					empties.push($(this));
+					
+					var lengthToExpand = 2 + alsoEmpty.length;
+					
+					//Remove empty ones
+					alsoEmpty.remove();
+					$(this).remove();
+					
+					//Find <w:tcPr>
+					var designer = toBeExtended.children().first();
+					if (designer.length === 1) {
+
+						//Add <w:gridSpan w:val="{int}"/> as a child
+						designer.append('<w:gridSpan w:val="' + lengthToExpand + '"/>');
+
+					}
+					
+				
+				});
+				
+				//Fix case for gridSpan
+				var outputDocXml = $.xml().replace(/gridspan/g, "gridSpan");
+				
+				//Re add to zip file
+				fs.writeFileSync(path.join(unzippedFolderPath, "word", "document.xml"), outputDocXml, "utf8");
+				
+				//TODO: Replace AdmZip as it is flaky. 
+				//Resulting zip files need to be repaired by Word and the api isn't working as intended, hence the full unzip and rezip
+				zip = new AdmZip();
+				zip.addLocalFolder(unzippedFolderPath);
+				
+				zip.writeZip(outPath + ".1.zip");
+				
+				fs.renameSync(outPath + ".1.zip", outPath);
+				
 				res.download(outPath, newFileName);
 
 			}
