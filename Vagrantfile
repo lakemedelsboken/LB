@@ -22,7 +22,21 @@ Vagrant.configure(2) do |config|
 
 		#------------------------- GENERAL ----------------------------------------------------
 		sudo apt-get update
-		apt-get install -y build-essential python wget
+		apt-get install -y build-essential python wget zlib1g-dev libssl-dev libreadline6-dev libyaml-dev
+
+
+		#------------------------- Ruby -------------------------------------------------------
+		cd /tmp
+		wget http://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.5.tar.gz 
+		tar -xvzf ruby-2.1.5.tar.gz
+		cd ruby-2.1.5/
+		./configure --prefix=/usr/local
+		make
+		sudo make install
+
+
+		#------------------------- Capistrano -------------------------------------------------
+		sudo gem install capistrano
 
 
 		#------------------------- Imagemagick ------------------------------------------------
