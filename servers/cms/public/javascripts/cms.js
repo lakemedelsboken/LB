@@ -338,6 +338,11 @@ $(document).ready(function() {
 	$("a.revertToPublishedButton").on("click", function(event) {
 		$("input#revertPagePath").val($(this).attr("data-pagepath"));
 	});
+
+	$("button.revertToSnapshotButton").on("click", function(event) {
+		$("input#revertPagePath").val($(this).attr("data-pagepath"));
+		$("input#revertVersion").val($(this).attr("data-version"));
+	});
 	
 	$("button.add-content").on("click", function(event) {
 		if ($(this).attr("data-after") !== undefined) {

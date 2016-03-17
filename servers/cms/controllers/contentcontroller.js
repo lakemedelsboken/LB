@@ -122,7 +122,7 @@ var ContentController = {
 	existsContent: function(contentPath, callback) {
 		contentModel.existsContent(contentPath, callback);
 	},
-	revertToLastPublishedPage: function(pagePath, callback) {
+	revertToLastPublishedPage: function(pagePath, comment, callback) {
 
 		var globalPagePath = path.join(ContentController.baseDir, pagePath);
 
@@ -162,7 +162,7 @@ var ContentController = {
 					
 					//Exit OK
 					return callback();
-				});
+				}, comment);
 
 			} else {
 				console.log(pagePath + " has no published version, can not revert.");
@@ -175,6 +175,50 @@ var ContentController = {
 		}
 		
 	},
+
+
+	revertToSnapshot: function(pagePath, snapshotPath, comment, callback) {
+
+		var contentPagePath = path.join(ContentController.baseDir, pagePath);
+
+		var snapshotPagePath = path.join(ContentController.baseDir, snapshotPath);
+
+		console.log(contentPagePath);
+		console.log(snapshotPagePath);
+
+		try {
+
+			var statsSnapshot = fs.statSync(snapshotPagePath);
+			var statsGlobal = fs.statSync(contentPagePath);
+
+			if (statsSnapshot.isFile() && statsGlobal.isFile()) {
+				var snapshotPage = JSON.parse(fs.readFileSync(snapshotPagePath, "utf8"));
+				var contentPage = JSON.parse(fs.readFileSync(contentPagePath, "utf8"));
+
+				//These values always differ between the two, make sure they are the same
+				snapshotPage.type = contentPage.type;
+				snapshotPage.path = contentPage.path;
+
+				var publishNowBool = false;
+
+				contentModel.setContent(pagePath, snapshotPage, publishNowBool, function(err) {
+					if (err) {
+						return callback(err);
+					}
+
+					//Exit OK
+					return callback();
+				}, comment);
+
+			}
+
+		} catch (e){
+			console.log(pagePath + " has no snapshot version, can not revert.");
+			return callback(e);
+		}
+	},
+
+
 	getEditors: function(page) {
 		
 		var contentEditors = [];

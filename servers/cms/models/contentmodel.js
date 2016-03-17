@@ -388,7 +388,7 @@ var ContentModel = {
 		});
 
 	},
-	setContent: function(contentPath, jsonData, publishNow, callback) {
+	setContent: function(contentPath, jsonData, publishNow, callback, comment) {
 
 		console.log("ContentModel.setContent: " + contentPath);
 
@@ -409,38 +409,55 @@ var ContentModel = {
 			if (stat.isFile() && contentPath.indexOf(".json" > -1)) {
 
 				var oldData = fs.readFileSync(fullPath, "utf8");
-				
+
+				// Remove the comment if present.
+				if (jsonData.hasOwnProperty("comment")) {
+					delete jsonData.comment;
+				}
+
 				var newData = JSON.stringify(jsonData, null, "\t");
 				
 				if (oldData !== newData) {
 
-					var now = new Date();
-					jsonData.modified = dateFormat(now, "yyyy-mm-dd HH:MM");
 
-					newData = JSON.stringify(jsonData, null, "\t");
+					// Add the content to the new snapshot.
+					oldData = JSON.parse(oldData);
+					oldData.comment = comment;
+					oldData = JSON.stringify(oldData, null, "\t");
+					fs.writeFileSync(fullPath, oldData, "utf8");
 
-					//Save the content
-					fs.writeFile(fullPath, newData, "utf8", function(err) {
-						if (err) {
-							return callback(err);
-						} else {
-							//Save historic snapshot of the new file
-							historyModel.createSnapshot(fullPath, function(err) {
-								if (err) {
-									//An error is not fatal in this case
-									console.log("Error creating snapshot:", err);
-								}
 
-								if (publishNow) {
-									ContentModel.renderPageDraft(contentPath, true);
-									ContentModel.renderPagePublished(contentPath, true, callback);
-								} else {
-									ContentModel.renderPageDraft(contentPath, true, callback);
-								}
-							});
-						}
+					// Create a new snapshot before overwriting it.
+					historyModel.createSnapshot(fullPath, function(err) {
+
+						var now = new Date();
+						jsonData.modified = dateFormat(now, "yyyy-mm-dd HH:MM");
+
+
+						newData = JSON.stringify(jsonData, null, "\t");
+
+						//Save the content
+						fs.writeFile(fullPath, newData, "utf8", function (err) {
+							if (err) {
+								return callback(err);
+							} else {
+								//Save historic snapshot of the new file
+								historyModel.createSnapshot(fullPath, function (err) {
+									if (err) {
+										//An error is not fatal in this case
+										console.log("Error creating snapshot:", err);
+									}
+
+									if (publishNow) {
+										ContentModel.renderPageDraft(contentPath, true);
+										ContentModel.renderPagePublished(contentPath, true, callback);
+									} else {
+										ContentModel.renderPageDraft(contentPath, true, callback);
+									}
+								});
+							}
+						});
 					});
-					
 				} else {
 					//Render the page draft even if this page has not changed its content,
 					//it could have dependent pages that have changed their content
