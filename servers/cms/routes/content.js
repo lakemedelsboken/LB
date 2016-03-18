@@ -55,8 +55,30 @@ router.get("/publishpage", function(req, res) {
 router.get("/revertolastpublished", function(req, res) {
 
 	var pagePath = req.query["pagepath"];
+	var comment = req.query["comment"];
 
-	contentController.revertToLastPublishedPage(pagePath, function(err) {
+	contentController.revertToLastPublishedPage(pagePath, comment, function(err) {
+		if (err) {
+			res.status(err.status || 500);
+			res.render('error', {
+				message: err.message,
+				error: err
+			});
+		} else {
+			res.redirect("back");
+		}
+	});
+
+});
+
+router.get("/revertosnapshot", function(req, res) {
+	console.log("here");
+
+	var pagePath = req.query["pagepath"];
+	var version = req.query["version"];
+	var comment = req.query["comment"];
+
+	contentController.revertToSnapshot(pagePath, version, comment, function(err) {
 		if (err) {
 			res.status(err.status || 500);
 			res.render('error', {
@@ -743,7 +765,8 @@ router.get("/pdf/download", function(req, res) {
 			cookies.push(encodeURIComponent(req.cookies[cookie]));
 		}
 		
-		var arguments = ["--print-media-type", "--disable-smart-shrinking", "--no-background", "--zoom", "0.7", "--dpi", "240", "-n", "--viewport-size", "950"];
+		var arguments = ["--print-media-type", "--disable-smart-shrinking", "--zoom", "0.7", "--dpi", "240", "-n", "--viewport-size", "950"];
+		//"--no-background",
 		
 		arguments = arguments.concat(cookies);
 

@@ -4,18 +4,20 @@ var dateFormat = require("dateformat");
 var crypto = require("crypto");
 
 var HistoryModel = {
+
+    // Path to all the content.
 	baseDir: path.normalize(path.join(__dirname, "..", "content")),
+
+    // Get the publish version of the file.
 	getPublished: function(filePath) {
 
 		console.log("HistoryModel.getPublished: " + filePath);
 
-		//filePath = path.resolve(filePath);
-		
 		filePath = path.join(HistoryModel.baseDir, filePath);
-		
+
+        // Error handling
 		if (!fs.existsSync(filePath)) {
 			throw new Error("File does not exist at: " + filePath + ", could not get published versions");
-			//return callback(new Error("File does not exist at: " + filePath + ", could not get published versions"));
 		}
 		
 		var fileStat = fs.statSync(filePath);
@@ -23,9 +25,10 @@ var HistoryModel = {
 		if (!fileStat.isFile()) {
 			return callback(new Error(filePath + " is not a file, could not get published versions"));
 		}
-		
+
+
+		// Get the path to the published version and check if there is any published version.
 		var pathParts = filePath.split(path.sep);
-		
 		var fileName = pathParts[pathParts.length - 1];
 		var basePath = path.dirname(filePath);
 		var publishedDirPath = path.join(basePath, ".published." + fileName);
@@ -34,17 +37,17 @@ var HistoryModel = {
 			//No previous published versions
 			return [];
 		}
-		
-		var files = fs.readdirSync(publishedDirPath);
 
-		//Keep files with extension ".published"
+
+        // Get the published files and filer out any files without the extension ".published".
+		var files = fs.readdirSync(publishedDirPath);
 		files = files.filter(function(item) {
 			return path.extname(item) === ".published";
 		});
 
 		var nrOfFilesToKeep = 10;
 		
-		//Make sure only 10 versions are stored here, let older versions be archived
+		//Make sure only 10 versions are stored in the published directory, let older versions be archived
 		if (files.length > nrOfFilesToKeep) {
 
 			var filesToKeep = [];
@@ -57,11 +60,8 @@ var HistoryModel = {
 				return b.time - a.time;
 			});
 
-			//console.log(filesToKeep);
-			
 			filesToKeep.length = nrOfFilesToKeep;
 			
-			//console.log(filesToKeep);
 
 			var keepFiles = {};
 			for (var i = 0; i < filesToKeep.length; i++) {
@@ -96,6 +96,7 @@ var HistoryModel = {
 			});
 			
 		}
+
 		
 		var publishedVersions = [];
 		
@@ -188,10 +189,17 @@ var HistoryModel = {
 				files.forEach(function(fileName) {
 				
 					if (!keepFiles[fileName]) {
-						var oldPath = path.join(snapshotsDirPath, fileName);
-						var newPath = path.join(archiveDirPath, fileName)
-						console.log("Archiving: " + oldPath + " to " + newPath);
-						fs.renameSync(oldPath, newPath);
+						// If there is a comment, do not archive...
+
+						var data = fs.readFileSync(path.join(snapshotsDirPath, fileName), "utf8");
+						data = JSON.parse(data);
+
+						if(data.comment === undefined) {
+							var oldPath = path.join(snapshotsDirPath, fileName);
+							var newPath = path.join(archiveDirPath, fileName)
+							console.log("Archiving: " + oldPath + " to " + newPath);
+							fs.renameSync(oldPath, newPath);
+						}
 					}
 				});
 
@@ -214,7 +222,7 @@ var HistoryModel = {
 					var fullPath = path.join(snapshotsDirPath, files[i]);
 					var contentHash = HistoryModel.getContentHash(fullPath);
 					var id = fullPath.replace(HistoryModel.baseDir, "");
-					snapshots.push({id: id, path: fullPath, contentHash: contentHash, name: files[i], time: timeStamp, niceTime: dateFormat(new Date(timeStamp), "yyyy-mm-dd HH:MM:ss")});
+					snapshots.push({id: id, path: fullPath, contentHash: contentHash, name: files[i], time: timeStamp, niceTime: dateFormat(new Date(timeStamp), "yyyy-mm-dd HH:MM:ss"), comment: HistoryModel.getContentComment(fullPath)});
 				}
 			}
 			
@@ -388,6 +396,17 @@ var HistoryModel = {
 			return contentHash;
 		}
 		
+	},
+	getContentComment: function(filePath) {
+
+
+			//console.log("HistoryModel.getContentHash: " + filePath);
+
+			var content = fs.readFileSync(filePath, "utf8");
+			content = JSON.parse(content);
+			return content.comment;
+
+
 	},
 	getChecksum: function(str, algorithm, encoding) {
 		return crypto
