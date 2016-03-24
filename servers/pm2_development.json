@@ -43,6 +43,15 @@
 		"max_restarts" : "1",
 		"fileError" : "./logs/InboundListenerService-err.log",
 		"fileOutput" : "./logs/InboundListenerService-out.log"
+	},
+	{
+		"name"      : "BrokenLinkService",
+		"script"    : "./cms/services/BrokenLinkService.js",
+		"instances" : "1",
+		"min_uptime" : "100",
+		"max_restarts" : "1",
+		"fileError" : "./logs/BrokenLinkService-err.log",
+		"fileOutput" : "./logs/BrokenLinkService-out.log"
 	}
 	
 ]

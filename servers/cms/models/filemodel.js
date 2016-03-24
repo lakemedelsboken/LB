@@ -53,7 +53,7 @@ var FileModel = {
 		}
 		
 		var fullPath = path.join(FileModel.baseDir, filePath);
-		
+
 		if (!fs.existsSync(fullPath)) {
 			return callback(new Error(filePath + " does not exist."));
 		}
