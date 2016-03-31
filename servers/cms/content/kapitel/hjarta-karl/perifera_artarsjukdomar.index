@@ -8,7 +8,7 @@
 		"type": "header",
 		"titlePath": "",
 		"hasChildren": true,
-		"checksum": "d2ed6a8e9d84df7d1cee4449820b8442"
+		"checksum": "97115e4ed5d503e419cf1e22c78ec91b"
 	},
 	{
 		"title": "Perifera artärsjukdomar",
@@ -32,7 +32,20 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "header",
 		"titlePath": "Perifera artärsjukdomar && Inledning",
-		"content": " Perifera artärsjukdomar kan grovt indelas i ocklusiva, aneurysmatiska, inflammatoriska och vasospastiska. Arteriovenösa missbildningar, fistlar och kärltrauman berörs inte här. För handläggning av karotisstenoser hänvisas till kapitlet Cerebrovaskulära sjukdomar. Råd om när remiss bör skickas till kärlspecialist finns i Faktaruta 2.",
+		"content": " Perifera artärsjukdomar kan grovt indelas i ocklusiva, aneurysmatiska, inflammatoriska och vasospastiska. Arteriovenösa missbildningar, fistlar och kärltrauman berörs inte här. För handläggning av karotisstenoser hänvisas till kapitlet Cerebrovaskulära sjukdomar . Råd om när remiss bör skickas till kärlspecialist finns i Faktaruta 2, .",
+		"products": "",
+		"hasChildren": true
+	},
+	{
+		"title": "Faktaruta 2 - Remitteringsråd",
+		"level": 3,
+		"id": "facts_2_header",
+		"parentId": "e7_4",
+		"chapter": "e7_hja_periferaartar_2013fm10.html",
+		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
+		"type": "facts",
+		"titlePath": "Perifera artärsjukdomar && Inledning && Faktaruta 2",
+		"content": " Remitteringsråd Remittera till kärlspecialist vidAllvarliga symtom–kritisk ischemi (= vilovärk, sår, gangrän)– svår claudicatio (= starkt livsföringsbegränsande, ”invalidiserande”)–TIA, Amaurosis fugax (brådskande fall)–renovaskulär sjukdom–mikroembolism–aortaaneurysm > 5 cm i diameter (ultraljud eller CT)–extremitetsaneurysm > 2 cm i diameter (ultraljud)vid önskan om ”second opinion”RemissinnehållAnamnes–symtomduration–maximal gångsträcka i meter–nattlig vilovärk–lindring i låg- eller höglägeStatus–pulspalpation (speciellt viktigt att ange om puls finns i ljumske eller inte!)–lokalstatus (sår, gangrän)–distalt tryck, ABI Remittera till kärlspecialist vid Allvarliga symtom vid önskan om ”second opinion” Remissinnehåll Anamnes Status",
 		"products": ""
 	},
 	{
@@ -44,9 +57,21 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "header",
 		"titlePath": "Perifera artärsjukdomar && Diagnostik",
-		"content": " En undersökning med anamnes, pulsstatus, auskultation och hudinspektion är ofta tillräcklig för att ställa diagnos och bör därför göras innan patienten remitteras till kärlspecialist (Figur 1). Se även Faktaruta 1 (Differentialdiagnoser vid benartärsjukdom) och Faktaruta 2 (Remitteringsråd).",
+		"content": " En undersökning med anamnes, pulsstatus, auskultation och hudinspektion är ofta tillräcklig för att ställa diagnos och bör därför göras innan patienten remitteras till kärlspecialist (se Figur 1 ).",
 		"products": "",
 		"hasChildren": true
+	},
+	{
+		"title": "Figur 1. Flödesschema – Handläggning vid benartärsjukdom (modifierat efter referenser )",
+		"level": 3,
+		"id": "e7_10",
+		"parentId": "e7_9",
+		"chapter": "e7_hja_periferaartar_2013fm10.html",
+		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
+		"type": "figure",
+		"titlePath": "Perifera artärsjukdomar && Diagnostik && Figur 1.",
+		"content": " Flödesschema – Handläggning vid benartärsjukdom (modifierat efter referenser )",
+		"products": ""
 	},
 	{
 		"title": "Faktaruta 1 - Differentialdiagnoser vid benartärsjukdom",
@@ -61,30 +86,6 @@
 		"products": ""
 	},
 	{
-		"title": "Faktaruta 2 - Remitteringsråd",
-		"level": 3,
-		"id": "facts_2_header",
-		"parentId": "e7_9",
-		"chapter": "e7_hja_periferaartar_2013fm10.html",
-		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
-		"type": "facts",
-		"titlePath": "Perifera artärsjukdomar && Diagnostik && Faktaruta 2",
-		"content": " Remitteringsråd Remittera till kärlspecialist vid Allvarliga symtom –kritisk ischemi (= vilovärk, sår, gangrän) – svår claudicatio (= starkt livsföringsbegränsande, ”invalidiserande”) –TIA, Amaurosis fugax (brådskande fall) –renovaskulär sjukdom –mikroembolism –aortaaneurysm > 5 cm i diameter (ultraljud eller CT) –extremitetsaneurysm > 2 cm i diameter (ultraljud) vid önskan om ”second opinion” Remissinnehåll Anamnes –symtomduration –maximal gångsträcka i meter –nattlig vilovärk –lindring i låg- eller högläge Status –pulspalpation (speciellt viktigt att ange om puls finns i ljumske eller inte!) –lokalstatus (sår, gangrän) –distalt tryck, ABI Remittera till kärlspecialist vid Allvarliga symtom vid önskan om ”second opinion” Remissinnehåll Anamnes Status",
-		"products": ""
-	},
-	{
-		"title": "Figur 1. Flödesschema – Handläggning vid benartärsjukdom (modifierat efter referenser ) Flödesschema – Handläggning vid benartärsjukdom (modifierat efter referenser )",
-		"level": 3,
-		"id": "e7_10",
-		"parentId": "e7_9",
-		"chapter": "e7_hja_periferaartar_2013fm10.html",
-		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
-		"type": "figure",
-		"titlePath": "Perifera artärsjukdomar && Diagnostik && Figur 1.",
-		"content": " Flödesschema – Handläggning vid benartärsjukdom (modifierat efter referenser ) Flödesschema – Handläggning vid benartärsjukdom (modifierat efter referenser )",
-		"products": ""
-	},
-	{
 		"title": "Anamnes",
 		"level": 3,
 		"id": "e7_15",
@@ -93,7 +94,7 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "header",
 		"titlePath": "Perifera artärsjukdomar && Diagnostik && Anamnes",
-		"content": " Vid utredning av perifer artärsjukdom har anamnesen en central betydelse. Viktigast är att patientens smärtor och besvär analyseras noga: Var börjar smärtorna? När börjar smärtorna – omedelbart vid ansträngning eller först efter en stund? Hur lång är gångsträckan innan smärtorna börjar, respektive hur lång är den maximala gångsträckan? Det är den av patienten upplevda maximala gångsträckan, dvs när denne måste stanna till följd av smärtor, som är den viktiga att notera och följa. Finns (nattlig) vilovärk? Vad gör patienten vid smärta och vad händer då med smärtan? Typiskt för ischemiskt betingade smärtor beroende på minskat blodflöde är att smärtorna börjar efter ansträngning. Musklerna har då en syreskuld. Typiskt är också att smärtan försvinner efter någon minuts vila när blodflödet ”betalar tillbaka” syreskulden, som när patienten stannar under promenaden eller håller foten i lågläge vid vilovärk. Smärtor från muskuloskeletala belastningsskador försvinner däremot inte direkt utan kan faktiskt öka i vila. Dessutom kvarstår de betydligt längre tid efter ansträngning. Ett typexempel på smärta som inte beror på minskat blodflöde är spinal stenos, som ger en smärtbegränsad gångsträcka som inte påverkas av kortvarig gångvila, s k pseudoclaudicatio. Patienten måste ibland sätta sig på huk, varefter smärtan viker efter ett tiotal minuter. Smärtorna beror vid spinal stenos på kompression av nervstrukturer där avlastning inte medför snabb förbättring. Se även kapitlet Rygg- och nackbesvär, avsnittet Specifika ryggbesvär. Smärtanalysen omfattar även smärtupplevelsens kvalitet. Den sprängande nattliga ischemiska värken i tår och framfot skiljer sig från nattlig vadkramp eller stickningar och myrkrypningar vid RLS (restless legs syndrome).",
+		"content": " Vid utredning av perifer artärsjukdom har anamnesen en central betydelse. Viktigast är att patientens smärtor och besvär analyseras noga: Var börjar smärtorna? När börjar smärtorna – omedelbart vid ansträngning eller först efter en stund? Hur lång är gångsträckan innan smärtorna börjar, respektive hur lång är den maximala gångsträckan? Det är den av patienten upplevda maximala gångsträckan, dvs när denne måste stanna till följd av smärtor, som är den viktiga att notera och följa. Finns (nattlig) vilovärk? Vad gör patienten vid smärta och vad händer då med smärtan? Typiskt för ischemiskt betingade smärtor beroende på minskat blodflöde är att smärtorna börjar efter ansträngning. Musklerna har då en syreskuld. Typiskt är också att smärtan försvinner efter någon minuts vila när blodflödet ”betalar tillbaka” syreskulden, som när patienten stannar under promenaden eller håller foten i lågläge vid vilovärk. Smärtor från muskuloskeletala belastningsskador försvinner däremot inte direkt utan kan faktiskt öka i vila. Dessutom kvarstår de betydligt längre tid efter ansträngning. Ett typexempel på smärta som inte beror på minskat blodflöde är spinal stenos, som ger en smärtbegränsad gångsträcka som inte påverkas av kortvarig gångvila, s k pseudoclaudicatio. Patienten måste ibland sätta sig på huk, varefter smärtan viker efter ett tiotal minuter. Smärtorna beror vid spinal stenos på kompression av nervstrukturer där avlastning inte medför snabb förbättring. Se även kapitlet Rygg- och nackbesvär, avsnittet Specifika ryggbesvär . Smärtanalysen omfattar även smärtupplevelsens kvalitet. Den sprängande nattliga ischemiska värken i tår och framfot skiljer sig från nattlig vadkramp eller stickningar och myrkrypningar vid RLS (restless legs syndrome).",
 		"products": "medicinsk oxygen air yara"
 	},
 	{
@@ -117,7 +118,7 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "header",
 		"titlePath": "Perifera artärsjukdomar && Diagnostik && Höglägesprov",
-		"content": " Vid höglägesprovet ligger patienten på rygg och underbenen lyfts över hjärthöjd med samtidigt böjda höft- och knäleder under någon minut. Vid allvarlig ischemi blir fotsulan och tårna bleka i högläge, medan man i lågläge ser en fördröjd venfyllnad och reaktiv hyperemi med rodnad på den sjuka sidan.",
+		"content": " Vid höglägesprovet ligger patienten på rygg och underbenen lyfts över hjärthöjd med samtidigt böjda höft- och knäleder under någon minut. Vid allvarlig ischemi blir fotsulan och tårna bleka i högläge, medan man i lågläge ser en fördröjd venfyllnad och reaktiv hyperemi med rodnad på den sjuka sidan. ",
 		"products": ""
 	},
 	{
@@ -129,7 +130,7 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "header",
 		"titlePath": "Perifera artärsjukdomar && Diagnostik && Ankeltrycksmätning",
-		"content": " Med ankeltrycksmätning kan ischemin kvantifieras: Med blodtrycksmanschetten strax ovanför fotleden (inte mitt på underbenet!) auskulteras med en handdoppler någon av ankelartärerna a. tibialis posterior (bakom mediala malleolen) eller a. dorsalis pedis (på mediala tredjedelen av fotryggen). När ett tydligt flödesljud hörs, blåses manschetten upp tills ljudet försvinner. Efter tryckreducering återkommer ljudet som när man mäter systoliskt blodtryck med stetoskop. Detta tryck kallas ankeltrycket och divideras med armblodtrycket; kvoten kallas ABI – ankelbrakialindex. ABI är normalt 0,9–1,1, dvs blodtrycket kan vara något högre i benet än i armen. Vid ocklusiv sjukdom minskar det distala blodtrycket vid ankeln och därmed ABI (se Faktaruta 3). Efter ett tiotal knäböjningar kan ankeltrycksmätningen upprepas. Då kan man upptäcka en stenos i a. iliaca som inte märks i vila. Normalt sjunker ankeltrycket bara marginellt av knäböjningar men en tydlig tryckminskning ses vid en stenos i a. iliaca. Omkring 20% av diabetespatienter kan ha en mediaskleros med stela kärlväggar, vilket medför för högt avlästa tryck. Vid icke komprimerbara kärl (blodtryck > 250 mm Hg) har ankeltrycksmätningen inget värde. Mätning av tåtrycket kan dock ge värdefull information, men utförs med specialapparatur via kliniskt fysiologiskt laboratorium. Tåtryck < 20 mm Hg indikerar gangränrisk. ABI < 0,9 är en indikator på generell ateroskleros och betydande överdödlighet i kardiovaskulära sjukdomar. Bestämning av ABI är en underutnyttjad undersökningsmetod i primärvården. Riskfaktorintervention med rökstopp, diabeteskontroll, blodtrycksbehandling och statinbehandling bör ske och även trombocythämmare bör ges om patienten har symtomgivande benartärsjukdom.",
+		"content": " Med ankeltrycksmätning kan ischemin kvantifieras: Med blodtrycksmanschetten strax ovanför fotleden (inte mitt på underbenet!) auskulteras med en handdoppler någon av ankelartärerna a. tibialis posterior (bakom mediala malleolen) eller a. dorsalis pedis (på mediala tredjedelen av fotryggen). När ett tydligt flödesljud hörs, blåses manschetten upp tills ljudet försvinner. Efter tryckreducering återkommer ljudet som när man mäter systoliskt blodtryck med stetoskop. Detta tryck kallas ankeltrycket och divideras med armblodtrycket; kvoten kallas ABI – ankelbrakialindex. ABI är normalt 0,9–1,1, dvs blodtrycket kan vara något högre i benet än i armen. Vid ocklusiv sjukdom minskar det distala blodtrycket vid ankeln och därmed ABI (se Faktaruta 3 ). Efter ett tiotal knäböjningar kan ankeltrycksmätningen upprepas. Då kan man upptäcka en stenos i a. iliaca som inte märks i vila. Normalt sjunker ankeltrycket bara marginellt av knäböjningar men en tydlig tryckminskning ses vid en stenos i a. iliaca. Omkring 20% av diabetespatienter kan ha en mediaskleros med stela kärlväggar, vilket medför för högt avlästa tryck. Vid icke komprimerbara kärl (blodtryck > 250 mm Hg) har ankeltrycksmätningen inget värde. Mätning av tåtrycket kan dock ge värdefull information, men utförs med specialapparatur via kliniskt fysiologiskt laboratorium. Tåtryck < 20 mm Hg indikerar gangränrisk. ABI < 0,9 är en indikator på generell ateroskleros och betydande överdödlighet i kardiovaskulära sjukdomar. Bestämning av ABI är en underutnyttjad undersökningsmetod i primärvården. Riskfaktorintervention med rökstopp, diabeteskontroll, blodtrycksbehandling och statinbehandling bör ske och även trombocythämmare bör ges om patienten har symtomgivande benartärsjukdom.",
 		"products": ""
 	},
 	{
@@ -141,7 +142,7 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "facts",
 		"titlePath": "Perifera artärsjukdomar && Diagnostik && Faktaruta 3",
-		"content": " Ankelbrakialindex (ABI) som mått på cirkulationsnedsättning (Gränserna ska uppfattas som ungefärliga tumregler.) Normalt 0,9–1,1 Ateroskleros < 0,9 Claudicatio < 0,5 Vilovärk, dvs kritisk ischemi ca 0,3 Gangrän/sår < 0,2 ABI = högsta uppmätta ankeltrycka/centralt tryck (armtryck)b (Gränserna ska uppfattas som ungefärliga tumregler.) Normalt 0,9–1,1 Ateroskleros < 0,9 Claudicatio < 0,5 Vilovärk, dvs kritisk ischemi ca 0,3 Gangrän/sår < 0,2 ABI = högsta uppmätta ankeltrycka/centralt tryck (armtryck)b a a b b a. Mätt med doppler och blodtrycksmanschett vid ankel­nivå. b. Systoliskt värde med stetoskop i a. brachialis eller flödes-ljud med doppler över a. radialis med manschett på överarm. ",
+		"content": " Ankelbrakialindex (ABI) som mått på cirkulationsnedsättning (Gränserna ska uppfattas som ungefärliga tumregler.)Normalt 0,9–1,1Ateroskleros < 0,9Claudicatio < 0,5Vilovärk, dvs kritisk ischemi ca 0,3Gangrän/sår < 0,2ABI = högsta uppmätta ankeltrycka/centralt tryck (armtryck)b (Gränserna ska uppfattas som ungefärliga tumregler.) Normalt 0,9–1,1 Ateroskleros < 0,9 Claudicatio < 0,5 Vilovärk, dvs kritisk ischemi ca 0,3 Gangrän/sår < 0,2 ABI = högsta uppmätta ankeltrycka/centralt tryck (armtryck)b a a b b a. Mätt med doppler och blodtrycksmanschett vid ankel­nivå.b. Systoliskt värde med stetoskop i a. brachialis eller flödes-ljud med doppler över a. radialis med manschett på överarm.",
 		"products": ""
 	},
 	{
@@ -154,18 +155,6 @@
 		"type": "header",
 		"titlePath": "Perifera artärsjukdomar && Diagnostik && Laboratorieutredningar",
 		"content": " Ultraljud, duplex och segmentell blodtrycksmätning bör bara göras vid utredning av oklara symtom och vid diskrepans mellan subjektiva besvär och objektiva fynd. Normalt får man inte mer information än av anamnes och status. Möjligen kan gångprov på rullmatta ge ett utgångsvärde inför träningsprogram hos vissa patienter. Ett enkelt gångprov i mottagningskorridoren kan ofta ge tillräcklig information. Mätning av tåtrycket kan vara värdefullt hos diabetiker och andra med grav ateroskleros och falskt höga ankeltryck pga stela, förkalkade kärl. Angiografi, CT- eller MR-angiografi används preoperativt, men inte i diagnostiskt syfte. Inför behandling av riskfaktorer som anemi, polycytemi, diabetes och hypertoni bör man ta blodprover – hemoglobin, lipidstatus, elektrolyter, kreatinin, urat, fasteblodsocker och HbA1c. 1c",
-		"products": ""
-	},
-	{
-		"title": "Faktaruta 4 - Typiska symtom",
-		"level": 3,
-		"id": "facts_4_header",
-		"parentId": "e7_9",
-		"chapter": "e7_hja_periferaartar_2013fm10.html",
-		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
-		"type": "facts",
-		"titlePath": "Perifera artärsjukdomar && Diagnostik && Faktaruta 4",
-		"content": " Typiska symtom Claudicatio intermittens, “fönster­tittarsjuka”Smärta och/eller uttalad trötthet i muskelgrupper vid ansträngning med symtomfrihet efter kort vila (vanligen några minuter). Patienter med diabetes har pga neuropati ibland ingen smärta.Kritisk ischemiSmärta i vila och/eller ischemiska sår och/eller gangrän. Symtomen är lokaliserade perifert eller inom områden utsatta för tryck eller trauma. Smärtan börjar ofta i liggande ställning, speciellt nattetid. Patienter med diabetes har till följd av neuropati mera sällan smärta.Akut ischemiPlötsligt nedsatt perfusion med extremitetshot beroende på ocklusion av en artär, orsakad endera av emboli eller trombos. Risk för irreversibel vävnadsdöd och amputation. Claudicatio intermittens, “fönster­tittarsjuka” Smärta och/eller uttalad trötthet i muskelgrupper vid ansträngning med symtomfrihet efter kort vila (vanligen några minuter). Patienter med diabetes har pga neuropati ibland ingen smärta. Kritisk ischemi Smärta i vila och/eller ischemiska sår och/eller gangrän. Symtomen är lokaliserade perifert eller inom områden utsatta för tryck eller trauma. Smärtan börjar ofta i liggande ställning, speciellt nattetid. Patienter med diabetes har till följd av neuropati mera sällan smärta. Akut ischemi Plötsligt nedsatt perfusion med extremitetshot beroende på ocklusion av en artär, orsakad endera av emboli eller trombos. Risk för irreversibel vävnadsdöd och amputation.",
 		"products": ""
 	},
 	{
@@ -182,6 +171,18 @@
 		"hasChildren": true
 	},
 	{
+		"title": "Faktaruta 4 - Typiska symtom",
+		"level": 3,
+		"id": "facts_4_header",
+		"parentId": "e7_22",
+		"chapter": "e7_hja_periferaartar_2013fm10.html",
+		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
+		"type": "facts",
+		"titlePath": "Perifera artärsjukdomar && Ocklusiva kärlsjukdomar && Faktaruta 4",
+		"content": " Typiska symtom Claudicatio intermittens, “fönster­tittarsjuka”Smärta och/eller uttalad trötthet i muskelgrupper vid ansträngning med symtomfrihet efter kort vila (vanligen några minuter). Patienter med diabetes har pga neuropati ibland ingen smärta.Kritisk ischemiSmärta i vila och/eller ischemiska sår och/eller gangrän. Symtomen är lokaliserade perifert eller inom områden utsatta för tryck eller trauma. Smärtan börjar ofta i liggande ställning, speciellt nattetid. Patienter med diabetes har till följd av neuropati mera sällan smärta.Akut ischemiPlötsligt nedsatt perfusion med extremitetshot beroende på ocklusion av en artär, orsakad endera av emboli eller trombos. Risk för irreversibel vävnadsdöd och amputation. Claudicatio intermittens, “fönster­tittarsjuka” Smärta och/eller uttalad trötthet i muskelgrupper vid ansträngning med symtomfrihet efter kort vila (vanligen några minuter). Patienter med diabetes har pga neuropati ibland ingen smärta. Kritisk ischemi Smärta i vila och/eller ischemiska sår och/eller gangrän. Symtomen är lokaliserade perifert eller inom områden utsatta för tryck eller trauma. Smärtan börjar ofta i liggande ställning, speciellt nattetid. Patienter med diabetes har till följd av neuropati mera sällan smärta. Akut ischemi Plötsligt nedsatt perfusion med extremitetshot beroende på ocklusion av en artär, orsakad endera av emboli eller trombos. Risk för irreversibel vävnadsdöd och amputation.",
+		"products": ""
+	},
+	{
 		"title": "Kronisk ischemi",
 		"level": 3,
 		"id": "e7_28",
@@ -190,12 +191,12 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "header",
 		"titlePath": "Perifera artärsjukdomar && Ocklusiva kärlsjukdomar && Kronisk ischemi",
-		"content": " Kronisk ischemi beror oftast på att aterosklerotiska plack successivt förtränger kärlen. Symtomen kommer av blodflödesminskning sekundärt till förträngningen. Claudicatio intermittens (intermittent hälta eller ”fönstertittarsjuka”) är det vanligaste symtomet. Patienten uppger typiskt en begränsad gångsträcka, pga smärtor som nästan omedelbart försvinner i vila. Smärtorna börjar i klassiska fall i vaderna, men vid stenoser i iliacakärlen beskrivs snarare tyngd- och trötthetskänsla i lår och gluteer, speciellt vid trappstigning eller gång i uppåtlut. Patientens uppgift om gångsträckans längd är inte sällan otillförlitlig (mestadels underskattad) respektive oklart definierad. Många gånger anges sträckan till smärtdebut, medan den maximala gångsträckan kan vara betydligt längre. Gångsträckans längd kan även variera spontant, framför allt i de lindrigare fallen. För planering av behandling är den maximala gångsträckan av störst intresse och bör noteras (Figur 2). I samband med planläge och nedgång i blodtryck och puls under natten kan blodflödet bli kritiskt lågt och ge upphov till värk. Kronisk kritisk extremitetsischemi definieras kliniskt som kronisk (> 2 veckor) ischemisk vilovärk, sår eller gangrän på basen av objektivt verifierad arteriell ocklusiv sjukdom. Den vetenskapliga definitionen av tillståndet inkluderar dessutom ankeltryck < 50–70 mm Hg, tåtryck < 30–50 mm Hg eller transkutan syremättnad (TCPO2) < 30–50 mm Hg . Höglägesprovet är tydligt positivt och ibland är foten rödcyanotisk redan i planläge som tecken på kontinuerlig syreskuld. 2",
+		"content": " Kronisk ischemi beror oftast på att aterosklerotiska plack successivt förtränger kärlen. Symtomen kommer av blodflödesminskning sekundärt till förträngningen. Claudicatio intermittens (intermittent hälta eller ”fönstertittarsjuka”) är det vanligaste symtomet. Patienten uppger typiskt en begränsad gångsträcka, pga smärtor som nästan omedelbart försvinner i vila. Smärtorna börjar i klassiska fall i vaderna, men vid stenoser i iliacakärlen beskrivs snarare tyngd- och trötthetskänsla i lår och gluteer, speciellt vid trappstigning eller gång i uppåtlut. Patientens uppgift om gångsträckans längd är inte sällan otillförlitlig (mestadels underskattad) respektive oklart definierad. Många gånger anges sträckan till smärtdebut, medan den maximala gångsträckan kan vara betydligt längre. Gångsträckans längd kan även variera spontant, framför allt i de lindrigare fallen. För planering av behandling är den maximala gångsträckan av störst intresse och bör noteras (Figur 2, ). I samband med planläge och nedgång i blodtryck och puls under natten kan blodflödet bli kritiskt lågt och ge upphov till värk. Kronisk kritisk extremitetsischemi definieras kliniskt som kronisk (> 2 veckor) ischemisk vilovärk, sår eller gangrän på basen av objektivt verifierad arteriell ocklusiv sjukdom. Den vetenskapliga definitionen av tillståndet inkluderar dessutom ankeltryck < 50–70 mm Hg, tåtryck < 30–50 mm Hg eller transkutan syremättnad (TCPO2) < 30–50 mm Hg . Höglägesprovet är tydligt positivt och ibland är foten rödcyanotisk redan i planläge som tecken på kontinuerlig syreskuld. 2",
 		"products": "medicinsk oxygen air yara",
 		"hasChildren": true
 	},
 	{
-		"title": "Figur 2. Flödesschema – Behandling av kronisk ischemi (modifierat efter referenser ) Flödesschema – Behandling av kronisk ischemi (modifierat efter referenser )",
+		"title": "Figur 2. Flödesschema – Behandling av kronisk ischemi (modifierat efter referenser )",
 		"level": 3,
 		"id": "e7_29",
 		"parentId": "e7_22",
@@ -203,7 +204,7 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "figure",
 		"titlePath": "Perifera artärsjukdomar && Ocklusiva kärlsjukdomar && Figur 2.",
-		"content": " Flödesschema – Behandling av kronisk ischemi (modifierat efter referenser ) Flödesschema – Behandling av kronisk ischemi (modifierat efter referenser )",
+		"content": " Flödesschema – Behandling av kronisk ischemi (modifierat efter referenser )",
 		"products": ""
 	},
 	{
@@ -227,11 +228,11 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "header",
 		"titlePath": "Perifera artärsjukdomar && Ocklusiva kärlsjukdomar && Kronisk ischemi && Riskfaktorintervention",
-		"content": " Riskfaktorer för ateroskleros bör intensivt påverkas då patienten med claudicatio är generellt kärlsjuk med hög risk att få kardiovaskulär sjukdom (Faktaruta 5). Rökstopp är grundläggande och ytterst angeläget för varje patient. Remiss till sluta röka-grupper, nikotinersättningsmedel och behandling med läkemedel för rökavvänjning bör övervägas (se kapitlet Tobaksberoende). Farmakologisk behandling med trombocythämmare som acetylsalicylsyra (ASA) och lipidsänkning med statiner är oftast indicerad.",
+		"content": " Riskfaktorer för ateroskleros bör intensivt påverkas då patienten med claudicatio är generellt kärlsjuk med hög risk att få kardiovaskulär sjukdom (Faktaruta 5). Rökstopp är grundläggande och ytterst angeläget för varje patient. Remiss till sluta röka-grupper, nikotinersättningsmedel och behandling med läkemedel för rökavvänjning bör övervägas (se kapitlet Tobaksberoende ). Farmakologisk behandling med trombocythämmare som acetylsalicylsyra (ASA) och lipidsänkning med statiner är oftast indicerad.",
 		"products": "500 nicorette nicotinell nikotugg niquitin nicotab nicopass microtab nicopatch habitrol zonnic nicorol nicolan newnic nikotin tropisk zetamint nikorono nicomae nicovel nico niqero exmo frukt mint nicachet alfamint betamint aspirin alka-seltzer albyl acetylsalicylsyra magnecyl bamyl apernyl mit i.v. trombyl asacard acetyratio peneprin sifuprin medisapi esteprin tianzakt gentazetan thromboass"
 	},
 	{
-		"title": "Faktaruta 5 - Riskfaktorbehandling",
+		"title": "Faktaruta 5 - Riskfaktorbehandlinga",
 		"level": 3,
 		"id": "facts_5_header",
 		"parentId": "e7_22",
@@ -239,7 +240,7 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "facts",
 		"titlePath": "Perifera artärsjukdomar && Ocklusiva kärlsjukdomar && Faktaruta 5",
-		"content": " Riskfaktorbehandling För detaljerad genomgång av lämpligaste förebyggande läkemedelsbehandling vid aterosklerotisk hjärt-kärlsjukdom se Läkemedelsverkets behandlingsrekommendation “Att förebygga aterosklerotisk hjärt-kärlsjukdom med läkemedel\" . Rökstopp ska eftersträvas Nikotinersättningsmedel respektive läkemedel (bupropion, vareniklin) ökar sannolikheten för rökfrihet jämfört med placebo och/eller enbart rådgivning. Behandling med lipidreglerande läkemedel Alla ska erbjudas behandling med statiner. Mål­värdet som ska eftersträvas är för LDL-kolesterol < 1,8 mmol/L . Behandling av högt blodtryck Blodtrycksbehandling ska påbörjas vid ett blod­tryck > 140/90 mm Hg (vid diabetes mellitus och njursjukdom rekommenderas 140/85 mm Hg). Med hänsyn till benartärsjukdom saknas evidens för att rekommendera eller avråda från använd­ning av någon specifik preparatgrupp. Betablock­ad är inte kontraindicerad. Behandling av blodsocker vid diabetes mellitus Målvärde < 52 mmol/mol för HbA1c bör eftersträvas. För detaljerad genomgång av lämpligaste förebyggande läkemedelsbehandling vid aterosklerotisk hjärt-kärlsjukdom se Läkemedelsverkets behandlingsrekommendation “Att förebygga aterosklerotisk hjärt-kärlsjukdom med läkemedel\" . Rökstopp ska eftersträvas Nikotinersättningsmedel respektive läkemedel (bupropion, vareniklin) ökar sannolikheten för rökfrihet jämfört med placebo och/eller enbart rådgivning. Behandling med lipidreglerande läkemedel Alla ska erbjudas behandling med statiner. Mål­värdet som ska eftersträvas är för LDL-kolesterol < 1,8 mmol/L . Behandling av högt blodtryck Blodtrycksbehandling ska påbörjas vid ett blod­tryck > 140/90 mm Hg (vid diabetes mellitus och njursjukdom rekommenderas 140/85 mm Hg). Med hänsyn till benartärsjukdom saknas evidens för att rekommendera eller avråda från använd­ning av någon specifik preparatgrupp. Betablock­ad är inte kontraindicerad. Behandling av blodsocker vid diabetes mellitus Målvärde < 52 mmol/mol för HbA1c bör eftersträvas. 1c ",
+		"content": " Riskfaktorbehandlinga a Rökstopp ska eftersträvasNikotinersättningsmedel respektive läkemedel (bupropion, vareniklin) ökar sannolikheten för rökfrihet jämfört med placebo och/eller enbart rådgivning.Behandling med lipidreglerande läkemedelAlla ska erbjudas behandling med statiner. Mål­värdet som ska eftersträvas är för LDL-kolesterol < 1,8 mmol/L .Behandling av högt blodtryckBlodtrycksbehandling ska påbörjas vid ett blod­tryck > 140/90 mm Hg (vid diabetes mellitus och njursjukdom rekommenderas 140/85 mm Hg). Med hänsyn till benartärsjukdom saknas evidens för att rekommendera eller avråda från använd­ning av någon specifik preparatgrupp. Betablock­ad är inte kontraindicerad.Behandling av blodsocker vid diabetes mellitusMålvärde < 52 mmol/mol för HbA1c bör eftersträvas. Rökstopp ska eftersträvas Nikotinersättningsmedel respektive läkemedel (bupropion, vareniklin) ökar sannolikheten för rökfrihet jämfört med placebo och/eller enbart rådgivning. Behandling med lipidreglerande läkemedel Alla ska erbjudas behandling med statiner. Mål­värdet som ska eftersträvas är för LDL-kolesterol < 1,8 mmol/L . Behandling av högt blodtryck Blodtrycksbehandling ska påbörjas vid ett blod­tryck > 140/90 mm Hg (vid diabetes mellitus och njursjukdom rekommenderas 140/85 mm Hg). Med hänsyn till benartärsjukdom saknas evidens för att rekommendera eller avråda från använd­ning av någon specifik preparatgrupp. Betablock­ad är inte kontraindicerad. Behandling av blodsocker vid diabetes mellitus Målvärde < 52 mmol/mol för HbA1c bör eftersträvas. 1c a. För detaljerad genomgång av lämpligaste förebyggande läkemedelsbehandling vid aterosklerotisk hjärt-kärlsjukdom se Läkemedelsverkets behandlingsrekommendation “Att förebygga aterosklerotisk hjärt-kärlsjukdom med läkemedel” publicerad 2014-06-24, www.lakemedelsverket.se .",
 		"products": "nicorette nicotinell nikotugg niquitin nicotab nicopass microtab nicopatch habitrol zonnic nicorol nicolan newnic nikotin tropisk zetamint nikorono nicomae nicovel nico niqero exmo frukt mint nicachet alfamint betamint zyban magerion voxra wellbutrin bupropion champix"
 	},
 	{
@@ -269,13 +270,13 @@
 	{
 		"title": "Akut ischemi",
 		"level": 3,
-		"id": "Akut-ischemi",
+		"id": "e7_43",
 		"parentId": "e7_22",
 		"chapter": "e7_hja_periferaartar_2013fm10.html",
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "header",
 		"titlePath": "Perifera artärsjukdomar && Ocklusiva kärlsjukdomar && Akut ischemi",
-		"content": " Akut ischemi resulterar i kritisk ischemi och kan bero på trombotisering i ett redan stenotiskt kärlavsnitt, embolisering eller trauma. Tecknen på akut insättande ischemi har klassiskt sammanfattats i ”de fem P:na” – Pain, Pallor, Pulselessness, Paresthesia och Paralysis – tecken som dock inte behöver finnas alla samtidigt ens vid fullständig ischemi. Ibland kan patienten ange ett plötsligt insjuknande vilket då är typiskt för embolier. Ett mer successivt insjuknande över timmar kan ses vid trombotisering, men det är oftast svårt att skilja mellan trombotisk och embolisk ocklusion. Dessutom är det viktigare att bestämma ischemigraden, för att kunna välja den lämpligaste behandlingen, än att ställa exakt orsaksdiagnos. Kort anamnes och svår ischemi kräver ofta ett omedelbart operativt åtgärdande. Vid längre anamnes och mindre svår ischemi kan mer tidskrävande åtgärder, som kateterledd trombolys, accepteras. Vanligaste orsaken till akut ischemi är embolier från hjärtat. Förmaksflimmer, murala tromber från nyligen genomgången hjärtinfarkt och hjärtväggsaneurysm är vanliga embolikällor. Embolierna fastnar oftast vid kärlens förgreningsställen och det klassiska är ocklusion av lårbensartärens förgrening i ljumsken. Ischemigraden bestäms primärt genom anamnes och status där duration och svårighetsgrad på de subjektiva besvären tillsammans med undersökningsfynden ger information om graden av ischemi. Om ischemin är total i 4–6 timmar kan irreversibla skador i muskler och nerver uppstå. Total ischemi ses mest hos yngre personer utan utvecklad kollateralcirkulation, efter större kärltrauman eller vid ocklusion av tidigare kärlrekonstruktioner.",
+		"content": " Akut ischemi resulterar i kritisk ischemi och kan bero på trombotisering i ett redan stenotiskt kärlavsnitt, embolisering eller trauma. Tecknen på akut insättande ischemi har klassiskt sammanfattats i ”de fem P:na” – Pain, Pallor, Pulselessness, Paresthesia och Paralysis – tecken som dock inte behöver finnas alla samtidigt ens vid fullständig ischemi. Ibland kan patienten ange ett plötsligt insjuknande vilket då är typiskt för embolier. Ett mer successivt insjuknande över timmar kan ses vid trombotisering, men det är oftast svårt att skilja mellan trombotisk och embolisk ocklusion. Dessutom är det viktigare att bestämma ischemigraden, för att kunna välja den lämpligaste behandlingen, än att ställa exakt orsaksdiagnos. Kort anamnes och svår ischemi kräver ofta ett omedelbart operativt åtgärdande. Vid längre anamnes och mindre svår ischemi kan mer tidskrävande åtgärder, som kateterledd trombolys, accepteras. Vanligaste orsaken till akut ischemi är embolier från hjärtat. Förmaksflimmer, murala tromber från nyligen genomgången hjärtinfarkt och hjärtväggsaneurysm är vanliga embolikällor. Embolierna fastnar oftast vid kärlens förgreningsställen och det klassiska är ocklusion av lårbensartärens förgrening i ljumsken. Ischemigraden bestäms primärt genom anamnes och status där duration och svårighetsgrad på de subjektiva besvären tillsammans med undersökningsfynden ger information om graden av ischemi. Om ischemin är total i 4–6 timmar kan irreversibla skador i muskler och nerver uppstå. Total ischemi ses mest hos yngre personer utan utvecklad kollateralcirkulation, efter större kärltrauman eller vid ocklusion av tidigare kärlrekonstruktioner. ",
 		"products": "",
 		"hasChildren": true
 	},
@@ -283,7 +284,7 @@
 		"title": "Behandling",
 		"level": 4,
 		"id": "e7_44",
-		"parentId": "Akut-ischemi",
+		"parentId": "e7_43",
 		"chapter": "e7_hja_periferaartar_2013fm10.html",
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "header",
@@ -300,7 +301,7 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "header",
 		"titlePath": "Perifera artärsjukdomar && Ocklusiva kärlsjukdomar && Mikroembolier",
-		"content": " Mikroembolier är < ca 1 mm och ger därför perfusionsstörningar långt perifert. Vanligaste embolikällan är perifera aneurysm eller ulcererande aterosklerotiska plack, men embolierna kan även komma från kardiella källor. Typexempel för mikroembolier är övergående ischemiska episoder i hjärnan och retina (s k TIA och amaurosis fugax, plötslig övergående blindhet), se kapitlet Ögonsjukdomar, avsnittet Amaurosis fugax. I extremiteterna är den typiska manifestationen plötsligt debuterande, intensivt ömmande blårödcyanotiska, skarpt begränsade fläckar av varierande storlek ytterst på fingertoppar eller tår. Missfärgningen är inte borttryckbar och kan kvarstå under flera veckor och ge uttalade och svårbehandlade smärtor. Vaskuliter är en differentialdiagnos, se detta avsnitt: Vaskuliter.",
+		"content": " Mikroembolier är < ca 1 mm och ger därför perfusionsstörningar långt perifert. Vanligaste embolikällan är perifera aneurysm eller ulcererande aterosklerotiska plack, men embolierna kan även komma från kardiella källor. Typexempel för mikroembolier är övergående ischemiska episoder i hjärnan och retina (s k TIA och amaurosis fugax, plötslig övergående blindhet), se kapitlet Ögonsjukdomar, avsnittet Amaurosis fugax . I extremiteterna är den typiska manifestationen plötsligt debuterande, intensivt ömmande blårödcyanotiska, skarpt begränsade fläckar av varierande storlek ytterst på fingertoppar eller tår. Missfärgningen är inte borttryckbar och kan kvarstå under flera veckor och ge uttalade och svårbehandlade smärtor. Vaskuliter är en differentialdiagnos, se .",
 		"products": "",
 		"hasChildren": true
 	},
@@ -313,7 +314,7 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "header",
 		"titlePath": "Perifera artärsjukdomar && Ocklusiva kärlsjukdomar && Mikroembolier && Behandling",
-		"content": " Behandlingen är rent symtomatisk med analgetika. Orsaken bör dock klarläggas och embolikällan elimineras då upprepade episoder kan leda till att större distala småkärlavsnitt slås ut, vilket kan leda till vävnadsförlust och gangrän. Under utredningstiden bör profylax med trombocythämmare (ASA) ges, medan peroral antikoagulation (warfarin) troligen inte har någon effekt och medför ökad blödningsrisk. Mikroembolisering måste skiljas från lokala hudblödningar eller subkutana blödningar som inte är lokaliserade längst ut på extremiteterna, utan mestadels i ledhöjd på flexorsidan. Områdena är inte alls så smärtande och inte skarpt begränsade och bleknar snabbt av. Man bör även ha vaskuliter i åtanke som manifestation av en reumatisk sjukdom (se kapitlet Reumatiska sjukdomar, avsnittet Vaskulitsjukdomar).",
+		"content": " Behandlingen är rent symtomatisk med analgetika. Orsaken bör dock klarläggas och embolikällan elimineras då upprepade episoder kan leda till att större distala småkärlavsnitt slås ut, vilket kan leda till vävnadsförlust och gangrän. Under utredningstiden bör profylax med trombocythämmare (ASA) ges, medan peroral antikoagulation (warfarin) troligen inte har någon effekt och medför ökad blödningsrisk. Mikroembolisering måste skiljas från lokala hudblödningar eller subkutana blödningar som inte är lokaliserade längst ut på extremiteterna, utan mestadels i ledhöjd på flexorsidan. Områdena är inte alls så smärtande och inte skarpt begränsade och bleknar snabbt av. Man bör även ha vaskuliter i åtanke som manifestation av en reumatisk sjukdom (se kapitlet Reumatiska sjukdomar, avsnittet Vaskulitsjukdomar, ).",
 		"products": "50 500 morfin epidural dolcontin maxidon oramorph depolan special kohne nifrom ab kapanol avinza contalgin dolaristo sevre-long palladon hydromorfon hydromorfonhydroklorid oxycontin oxynorm oxikodon oxycodone depot 1a oxydorine oxylan oxylor carenoxa carenoxin oxycodon oxytia bupivakain-morfin citodon panocod treo ardinex paracetamol/kodein codalvonil burana altermol targiniq oxycodone/naloxone ketogan novum med ketodur ketobemidon petidin durogesic actiq matrifen ionsys fentanyl nycofen matrimed quatrofen diviafen rojunil abstral effentora instanyl breakyl pecfent vellofent apacs fentelene fentacan fentasub doloxene dexofen abalgin distalgesic pentazocine fortral temgesic subutex norspan buprenorphine subuphine buprenorfin transtec nalpain spasmofen morfin-skopolamin oxikodon-hyoscin valoron nobligan tradolan tiparol tramadol gemadol scand dolol retard tridural tramuno bmm opidol dolatramyl tramadol/paracetamol trampara zaldiar palexia yantil aspirin alka-seltzer albyl acetylsalicylsyra magnecyl bamyl apernyl mit i.v. donobid diflunisal magnecyl-koffein migpriv acetylsalicylsyra/koffein novalgin koffazon quarelin alvedon panodil reliv curadon paracetamol perfalgan pamol paraceon paracut brus pinex fresenius nordic hedavic quramol pirasan rph tokosan b. therimin honung & parikon stasipara panoneo paracip exopon pro-dafalgan paracetamol/phenylephrine paracetamol/caffeine bristol renlaucol nerozila katadolon prialt sativex saridon orstanorm ergotam-ct migranal dihydergot dihydroergotamine deseril cafergot belladonna-ergotamin anervan imigran imigrane sumatriptan glaxo triptamed matrip sumite sariptan trisuman zumo sumamedan sumacta cinie oriptan suma eql sumavel triptagram naramig frozamig zomig zomigoro zomigon zolmitriptan zolomster boehringer maxalt rizatriptan rizasmelt riptaspec zaptafar zatrispec zatraptin rizaspec tanrispes almogran relpax eletriptan migard tigreat frova sandomigrin sandomigran kapvay klonidin waran warfarin utan coumadin"
 	},
 	{
@@ -325,8 +326,8 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "header",
 		"titlePath": "Perifera artärsjukdomar && Ocklusiva kärlsjukdomar && Renovaskulär sjukdom",
-		"content": " Renovaskulär sjukdom, njurartärstenos (NAS), orsakas av ateroskleros eller fibromuskulär dysplasi (FMD) och kan ge hypertoni och/eller njurinsufficiens. Snabbt debuterande, accelererande eller svårbehandlad hypertoni, plötslig kreatininstegring särskilt efter tillförsel av ACE-hämmare eller angiotensin-II-antagonist, oförklarade recidiverande lungödem, blåsljud över buk eller flank, hypokalemi eller aterosklerosmanifestation från ett annat organ ger misstanke om diagnosen. Olika metoder används för screening: ultraljud med flödesmätning i njurartärer och bedömning av resistensindex, njurskintigrafi med kaptopril, MR- och CT-angiografi, där de båda sistnämnda har bäst diagnostisk säkerhet. Renal angiografi, med tryckmätning och beredskap för perkutan transluminal renal angioplastik (PTRA), görs om någon av ovannämnda undersökningar indikerat signifikant stenos. Hypertoni ska behandlas och vid aterosklerotisk NAS ges trombocythämmare och lipidsänkare. Indikationer för PTRA är vid aterosklerotisk NAS behov av > 3 antihypertensiva läkemedel, stigande serumkreatinin eller hjärtsvikt eller lungödemattacker. Vid FMD görs PTRA på vidare indikationer. Vid behandling av patienter med aterosklerotisk njurartärstenos med mindre uttalad symtomatologi har PTRA ingen dokumenterad effekt . Se även kapitlet Hypertoni, avsnittet Renovaskulär hypertoni.",
-		"products": "capoten captopril scand kaptopril"
+		"content": " Renovaskulär sjukdom, njurartärstenos (NAS), orsakas av ateroskleros eller fibromuskulär dysplasi (FMD) och kan ge hypertoni och/eller njurinsufficiens. Snabbt debuterande, accelererande eller svårbehandlad hypertoni, plötslig kreatininstegring särskilt efter tillförsel av ACE-hämmare eller angiotensin-II-antagonist, oförklarade recidiverande lungödem, blåsljud över buk eller flank, hypokalemi eller aterosklerosmanifestation från ett annat organ ger misstanke om diagnosen. Olika metoder används för screening: ultraljud med flödesmätning i njurartärer och bedömning av resistensindex, njurskintigrafi med kaptopril, MR- och CT-angiografi, där de båda sistnämnda har bäst diagnostisk säkerhet. Renal angiografi, med tryckmätning och beredskap för perkutan transluminal renal angioplastik (PTRA), görs om någon av ovannämnda undersökningar indikerat signifikant stenos. Hypertoni ska behandlas och vid aterosklerotisk NAS ges trombocythämmare och lipidsänkare. Indikationer för PTRA är vid aterosklerotisk NAS behov av > 3 antihypertensiva läkemedel, stigande serumkreatinin eller hjärtsvikt eller lungödemattacker. Vid FMD görs PTRA på vidare indikationer. Vid behandling av patienter med aterosklerotisk njurartärstenos med mindre uttalad symtomatologi har PTRA ingen dokumenterad effekt . Se även kapitlet Hypertoni, avsnittet Renovaskulär hypertoni .",
+		"products": "5 25 capoten captopril scand kaptopril renitec linatil enalapril ednyt enap vivatec zestril lisinopril lisopress primylis primylin lisigen coversyl coverex perindopril arginine pramace triatec ramipril ramipress sigacaps prilacaps riprosil raprilix ramitab accupro kinatabs kiprisil kinoprilam kinamed kinaprosil medokinal ekiprine kinastad kipristad kiprimed kinasil kinapromed quinapril cibacen inhibace cilazapril monopril fosinopril fosinamed fosiact prilamedana fenosimed fosavis actaprilana prilafosina odrik gopten bifril zofenil zofenopril zofenomyl zofymyl aldomet presinol catapresan catapres dixarit catapres-tts intuniv tenex guanfacine physiotens moxonidin prazosin prazosin-ratiopharm hypovase minipress pfizer laboratoire doxazosin alfadil doxatens doxazocin nm prostasin doxastad cardosin doserix cardura carduran doxazosin-ratiopharm doxacor ebrantil guanethidine ismelin eudemine nepresol apresolin loniten lonolox minoxidil mutual mg nitropress tracleer stayveer bosentan volibris thelin opsumit adempas"
 	},
 	{
 		"title": "Inflammatoriska artärsjukdomar",
@@ -374,7 +375,7 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "header",
 		"titlePath": "Perifera artärsjukdomar && Inflammatoriska artärsjukdomar && Vaskuliter",
-		"content": " Vaskuliter kan förekomma som delsymtom vid sjukdomar inom gruppen inflammatoriska systemsjukdomar. Den vanligaste vaskuliten är jättecellsarterit (temporalisarterit och polymyalgia rheumatica), se vidare i kapitlet Reumatiska sjukdomar, avsnittet Vaskulitsjukdomar . För diagnos av vaskuliter används inflammationsmarkörer (CRP, SR, proteinanalys) och autoantikroppar (ANA, DNA-ak, p-ANCA, c-ANCA m fl). Vaskuliter kan även ses som reaktion på läkemedel (t ex ASA, furosemid).",
+		"content": " Vaskuliter kan förekomma som delsymtom vid sjukdomar inom gruppen inflammatoriska systemsjukdomar. Den vanligaste vaskuliten är jättecellsarterit (temporalisarterit och polymyalgia rheumatica), se vidare i kapitlet Reumatiska sjukdomar, avsnittet Vaskulitsjukdomar . För diagnos av vaskuliter används inflammationsmarkörer (CRP, SR, proteinanalys) och autoantikroppar (ANA, DNA-ak, p-ANCA, c-ANCA m fl). Vaskuliter kan även ses som reaktion på läkemedel (t ex ASA, furosemid). ",
 		"products": "lasix impugan furix furosemid lasilix furosemide ab diural frusol",
 		"hasChildren": true
 	},
@@ -387,7 +388,7 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "header",
 		"titlePath": "Perifera artärsjukdomar && Inflammatoriska artärsjukdomar && Vaskuliter && Behandling",
-		"content": " Behandlingen inkluderar immunmodulerande läkemedel och/eller steroider.",
+		"content": " Behandlingen inkluderar immunmodulerande läkemedel och/eller steroider. ",
 		"products": "betapred celeston betametason betamethasone american celestamine bentelan decadron dexacortal dexametason oradexon dexamethason dexa-ratiopharm lipotalon fortecortin dexamethasone sodium soldesam medrol depo-medrol solu-medrol cum methylprednisolone metylprednisolon precortalon prednisolon solu-decortin rindelt deltison lodotra nocasio kenacort-t lederspan triamcinolone lederlon solu-cortef hydrokortison plenadren hydrocortison hydrocortisone hydrocortone kortisonacetat cortison cortone rimexel calcort deflazacort"
 	},
 	{
@@ -499,7 +500,7 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "header",
 		"titlePath": "Perifera artärsjukdomar && Aneurysm && Dissektion och ruptur && Dissektion",
-		"content": " Vid en dissektion sker en separation av artärens vägglager, utan att för den skull en blödning utåt uppstår. Dissektionen kan fortskrida både i ante- och retrograd riktning och leda till ocklusion av avgående artärgrenar. Eftersom kärlväggen blir försvagad, kan så småningom ett regelrätt aneurysm uppstå. Aortadissektion orsakas av intimaskada och kan leda till aortaruptur. Symtom är plötslig bröst- eller ryggsmärta, pulsskillnad i extremiteterna, neurologiska symtom, aortainsufficiens och chock. Diagnosen ställs med CT- eller MR-angiografi eller ultraljudsundersökning. Kärl- eller toraxkirurg konsulteras. Blodtryckssänkning med systoliskt målblodtryck < 120 mm Hg rekommenderas i akutskedet och riskfaktorintervention genomförs . Dissektion kan också förekomma i arteria carotis eller vertebralis, och utgör den näst vanligaste orsaken till stroke hos patienter < 45 år. Dissektionen kan vara spontant eller traumatiskt utlöst, och ge smärta samt neurologiska bortfallssymtom. Ultraljudsundersökning (duplex), CT- och MR-angiografi kan liksom konventionell angiografi användas för diagnostik. Behandlingen är till helt övervägande del medicinsk – antikoagulantia följt av trombocythämmare, alternativt enbart trombocythämmare. I sällsynta fall, exempelvis vid upprepade symtom trots behandling, kan stentning av arteria carotis övervägas. Majoriteten av halsartärdissektioner spontanläker.",
+		"content": " Vid en dissektion sker en separation av artärens vägglager, utan att för den skull en blödning utåt uppstår. Dissektionen kan fortskrida både i ante- och retrograd riktning och leda till ocklusion av avgående artärgrenar. Eftersom kärlväggen blir försvagad, kan så småningom ett regelrätt aneurysm uppstå. Aortadissektion orsakas av intimaskada och kan leda till aortaruptur. Symtom är plötslig bröst- eller ryggsmärta, pulsskillnad i extremiteterna, neurologiska symtom, aortainsufficiens och chock. Diagnosen ställs med CT- eller MR-angiografi eller ultraljudsundersökning. Kärl- eller toraxkirurg konsulteras. Blodtryckssänkning med systoliskt målblodtryck < 120 mm Hg rekommenderas i akutskedet och riskfaktorintervention genomförs. Dissektion kan också förekomma i arteria carotis eller vertebralis, och utgör den näst vanligaste orsaken till stroke hos patienter < 45 år. Dissektionen kan vara spontant eller traumatiskt utlöst, och ge smärta samt neurologiska bortfallssymtom. Ultraljudsundersökning (duplex), CT- och MR-angiografi kan liksom konventionell angiografi användas för diagnostik. Behandlingen är till helt övervägande del medicinsk – antikoagulantia följt av trombocythämmare, alternativt enbart trombocythämmare. I sällsynta fall, exempelvis vid upprepade symtom trots behandling, kan stentning av arteria carotis övervägas. Majoriteten av halsartärdissektioner spontanläker.",
 		"products": "waran warfarin utan coumadin ab marcoumar marcumar meda pharma sintrom previscan heparin sodium heparin-natrium-5000-ratiopharm atenativ antithrombin iii atryn fragmin (med dalteparinnatrium klexane fraxiparine nadroparine fraxodi clivarin orgaran innohep plavix iscover clopidogrel cloriocard clotromboz origrel esp klopidogrel farma grepid zyllt clopispes clopirod nivenol defrozyp 1a vasogrel vatoud teva krka ratiopharm acino generics usv ticlid ticlopidine sanofi trombyl aspirin asacard acetyratio acetylsalicylsyra peneprin sifuprin medisapi esteprin tianzakt gentazetan thromboass persantin dipyridamol epoprostenol ilomedin ventavis reopro integrilin eptifibatide aggrastat asasantin duoplavin duocover diprasorin clopidogrel/acetylsalicylic acid amolita remodulin tyvaso efient brilique possia axanum cilostazol kengrexal zontivity pletal eql streptase actilyse urokinase hs syner-kinase rapilysin xigris ceprotin tenecteplase boehringer ingelheim gmbh & co. metalyse arixtra quixidar defitelio defibrotide melagatran exarta revasc refludan novastan angiox bivalirudin reig pradaxa eliquis xarelto"
 	},
 	{
@@ -511,7 +512,7 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "header",
 		"titlePath": "Perifera artärsjukdomar && Aneurysm && Dissektion och ruptur && Ruptur",
-		"content": " Vid en ruptur uppstår en mer eller mindre kraftig blödning. Sker rupturen utanför vävnader som kan ge mottryck, blir blödningen mycket stor och kan leda till omedelbar förblödning (t ex ruptur av bukaorta till fri bukhåla). Vid mottryck från omgivande vävnader kan en täckt ruptur uppstå som senare kan rupturera.",
+		"content": " Vid en ruptur uppstår en mer eller mindre kraftig blödning. Sker rupturen utanför vävnader som kan ge mottryck, blir blödningen mycket stor och kan leda till omedelbar förblödning (t ex ruptur av bukaorta till fri bukhåla). Vid mottryck från omgivande vävnader kan en täckt ruptur uppstå som senare kan rupturera. ",
 		"products": ""
 	},
 	{
@@ -535,7 +536,7 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "header",
 		"titlePath": "Perifera artärsjukdomar && Läkemedelsbehandling",
-		"content": " För detaljerad genomgång av lämpligaste förebyggande läkemedelsbehandling vid aterosklerotisk hjärt-kärlsjukdom se Läkemedelsverkets behandlingsrekommendation \"Att förebygga aterosklerotisk hjärt-kärlsjukdom med läkemedel\" .",
+		"content": " Fotnot 1 För detaljerad genomgång av lämpligaste förebyggande läkemedelsbehandling vid aterosklerotisk hjärt-kärlsjukdom se Läkemedelsverkets behandlingsrekommendation “Att förebygga aterosklerotisk hjärt-kärlsjukdom med läkemedel” publicerad 2014-06-24, www.lakemedelsverket.se . Fotnot 1",
 		"products": "",
 		"hasChildren": true
 	},
@@ -584,7 +585,7 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "header",
 		"titlePath": "Perifera artärsjukdomar && Läkemedelsbehandling && Behandling vid lipidrubbningar",
-		"content": " På grund av den stora risken för patienter med perifer ateroskleros att drabbas av hjärtinfarkt, gäller samma riktlinjer som för patienter med koronarkärlssjukdom, se kapitlet Blodfettsrubbningar, avsnittet Behandlingsrekommendationer. I tre placebokontrollerade studier med statiner (två studier på 6 respektive 12 månader med simvastatin 40 mg/dygn och en studie på 12 månader med atorvastatin 80 mg/dygn) noterades längre smärtfri gångsträcka . Detta är dock inte godkänd indikation för behandling. Preventiv effekt vid generell ateroskleros finns dokumenterad ända upp till 80-årsåldern. Eftersom patenten för simvastatin och atorvastatin gått ut är behandling med dessa preparat mer kostnadseffektivt än behandling med patentskyddade statiner.",
+		"content": " På grund av den stora risken för patienter med perifer ateroskleros att drabbas av hjärtinfarkt, gäller samma riktlinjer som för patienter med koronarkärlssjukdom, se kapitlet Blodfettsrubbningar, avsnittet Behandlingsrekommendationer . I tre placebokontrollerade studier med statiner (två studier på 6 respektive 12 månader med simvastatin 40 mg/dygn och en studie på 12 månader med atorvastatin 80 mg/dygn) noterades längre smärtfri gångsträcka . Detta är dock inte godkänd indikation för behandling. Preventiv effekt vid generell ateroskleros finns dokumenterad ända upp till 80-årsåldern. Eftersom patenten för simvastatin och atorvastatin gått ut är behandling med dessa preparat mer kostnadseffektivt än behandling med patentskyddade statiner.",
 		"products": "zocord simvastatin lipcut arteriostad zocolip scand lipo vasta athersim vabadin zocor simidon daxistin ab lipitor zarator sortis tahor torvast atorvastatin atostin atovans torvarin actastatin atorstad lambdastatin atorbir astator tinator lipostatin tavara atoran atorvastad atorab"
 	},
 	{
@@ -596,7 +597,7 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "header",
 		"titlePath": "Perifera artärsjukdomar && Läkemedelsbehandling && Diabetesbehandling",
-		"content": " Generella rekommendationer för behandling av diabetes gäller. Vid kritisk ischemi med sårinfektioner rekommenderas att en aggressiv antihyperglykemisk behandling inleds. Se vidare i kapitlet Diabetes mellitus.",
+		"content": " Generella rekommendationer för behandling av diabetes gäller. Vid kritisk ischemi med sårinfektioner rekommenderas att en aggressiv antihyperglykemisk behandling inleds. Se vidare i kapitlet Diabetes mellitus .",
 		"products": ""
 	},
 	{
@@ -632,7 +633,7 @@
 		"url": "/kapitel/hjarta-karl/perifera_artarsjukdomar.html",
 		"type": "header",
 		"titlePath": "Perifera artärsjukdomar && Referenser",
-		"content": " Benartärsjukdom – diagnostik och behandling. SBU-rapport 187:2007. Norgren L, Hiatt W, Dormandy J, Nehler M, Harris K, Fowkes F. Inter-society consensus for the management of peripheral arterial disease (TASC II). J Vasc Surg. 2007;45:5–67. Att förebygga aterosklerotisk hjärt-kärlsjukdom med läkemedel – behandlingsrekommendation. Information från Läkemedelsverket 2014;25(5):20–33. Perk J, DeBacker G, Gohlke H, et al. European Guidelines on cardiovascular disease prevention in clinical practice (version 2012). Eur Heart J 2012;33:1635-1701. ASTRAL investigators. Revascularization versus medical therapy for renal-artery stenosis.N Engl J Med. 2009;361:1953–62. Cooper CJ, Murphy TP, Cutlip DE, Jamerson K, Henrich W, Reid DM, et al. Stenting and medical therapy for atherosclerotic renal-artery stenosis. N Engl J Med 2014:370:13-22 Erbel R, Aboyans V, Boileau C, et al. The Task Force for the diagnosis and treatment of aortic diseases of the European Society of Cardiology (ESC). 2014 ESC guidelines on the diagnosis and treatment of aortic diseases: Document covering acute and chronic aortic diseases of the thoracic and abdominal aorta of the adult. Eur Heart J 2014;35:2873-926. Wanhainen A, Björck M. The Swedish experience of screening for abdominal aortic aneurysm. J Vasc Surg. 2011;53:1164–5. Sobel M, Verhaeghe R. Antithrombotic therapy for peripheral artery occlusive disease: American College of Chest Physicians Evidence-Based Clinical Practice Guidelines (8th Edition). Chest. 2008;133:815–43. CAPRIE Steering Committee. A randomised, blinded, trial of clopidogrel versus aspirin in patients at risk of ischaemic events (CAPRIE). Lancet. 1996;348:1329–39. Läkemedelsverket. EMA rekommenderar begränsad användning av Pletal. 2013-04-03. www.lakemedelsverket.se SBU. Cilostazol vid behandling av fönstertittarsjuka (claudicatio intermittens). Stockholm: Statens beredning för medicinsk utvärdering (SBU); 2010. SBU Alert-rapport nr 2010-01. ISSN 1652-7151. www.sbu.se Aronow WS, Nayak D, Woodworth S, Ahn C. Effect of simvastatin versus placebo on treadmill exercise time until the onset of intermittent claudication in older patients with peripheral arterial disease at six months and at one year after treatment. Am J Cardiol. 2003;92:711–2. Mondillo S, Ballo P, et al. Effects of simvastatin on walking performance and symptoms of intermittent claudication in hypercholesterolemic patients with peripheral vascular disease. Am J Med. 2003;114:359–64. Mohler ER, 3rd, Hiatt WR, Creager MA. Cholesterol reduction with atorvastatin improves walking distance in patients with peripheral arterial disease. Circulation. 2003;108:1481–6.",
+		"content": " Benartärsjukdom – diagnostik och behandling. SBU-rapport 187:2007. Norgren L, Hiatt W, Dormandy J, Nehler M, Harris K, Fowkes F. Inter-society consensus for the management of peripheral arterial disease (TASC II). J Vasc Surg. 2007;45:5–67 . ESC/EAS Guidelines for the management of dyslipidaemias: the Task Force for the management of dyslipidaemias of the European Society of Cardiology (ESC) and the European Atherosclerosis Society (EAS). Eur Heart J. 2011;32:1769–818. ASTRAL investigators. Revascularization versus medical therapy for renal-artery stenosis.N Engl J Med. 2009;361:1953–62. Wanhainen A, Björck M. The Swedish experience of screening for abdominal aortic aneurysm. J Vasc Surg. 2011;53:1164–5. Sobel M, Verhaeghe R. Antithrombotic therapy for peripheral artery occlusive disease: American College of Chest Physicians Evidence-Based Clinical Practice Guidelines (8th Edition).Chest. 2008;133:815–43. Graham I, Atar D, Borch-Johnsen K, Boysen G, Burell G, Cifkova R, et al. European guidelines on cardiovascular disease prevention in clinical practice: Executive summary.Atherosclerosis. 2007;194:1–45. CAPRIE Steering Committee. A randomised, blinded, trial of clopidogrel versus aspirin in patients at risk of ischaemic events (CAPRIE). Lancet. 1996;348:1329–39. Läkemedelsverket. EMA rekommenderar begränsad användning av Pletal. 2013-04-03.www.lakemedelsverket.se SBU. Cilostazol vid behandling av fönstertittarsjuka (claudicatio intermittens). Stockholm: Statens beredning för medicinsk utvärdering (SBU); 2010. SBU Alert-rapport nr 2010-01. ISSN 1652-7151. www.sbu.se Aronow WS, Nayak D, Woodworth S, Ahn C. Effect of simvastatin versus placebo on treadmill exercise time until the onset of intermittent claudication in older patients with peripheral arterial disease at six months and at one year after treatment. Am J Cardiol. 2003;92:711–2. Mondillo S, Ballo P, et al. Effects of simvastatin on walking performance and symptoms of intermittent claudication in hypercholesterolemic patients with peripheral vascular disease.Am J Med. 2003;114:359–64. Mohler ER, 3rd, Hiatt WR, Creager MA. Cholesterol reduction with atorvastatin improves walking distance in patients with peripheral arterial disease. Circulation. 2003;108:1481–6. ",
 		"products": "plavix iscover clopidogrel cloriocard clotromboz origrel esp klopidogrel farma grepid zyllt clopispes clopirod nivenol defrozyp 1a vasogrel vatoud teva krka ratiopharm acino pharma generics usv cilostazol zocord simvastatin lipcut arteriostad zocolip scand lipo vasta athersim vabadin zocor simidon daxistin ab lipitor zarator sortis tahor torvast atorvastatin atostin atovans torvarin actastatin atorstad lambdastatin atorbir astator tinator lipostatin tavara atoran atorvastad atorab"
 	}
 ]
