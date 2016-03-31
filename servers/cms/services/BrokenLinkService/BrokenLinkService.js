@@ -102,8 +102,6 @@ function sendMail(brokenLinksString) {
             }
         });
 
-        38510/(38510-2458)
-
         var mailOptions = {
             from: "Läkemedelsboken <" + secretSettings.fass.gmailAddress + ">",
             to: secretSettings.cms.brokenLinkRecipients,
