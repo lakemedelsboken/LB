@@ -1,0 +1,271 @@
+{
+	"templateName": "default",
+	"templateDescription": "Vanlig sida",
+	"title": "Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2016-03-28 11:57",
+	"published": "",
+	"validUntil": "2016-04-30 11:57",
+	"createdBy": "Läkemedelsbokens redaktionskommitté",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": ""
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "44779a73-8c9b-4a2c-98f3-7a9e169952f7",
+			"name": "44779a73-8c9b-4a2c-98f3-7a9e169952f7",
+			"type": "text",
+			"content": "<h1 id=\"Lakemedelsboken\">L&auml;kemedelsboken</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2a930ee3-d16f-4b29-a8ed-2076eeb28f7d",
+			"name": "2a930ee3-d16f-4b29-a8ed-2076eeb28f7d",
+			"type": "html",
+			"content": "<div class=\"row\">",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e52fda84-0458-425c-b9c1-b6f51ed26979",
+			"name": "e52fda84-0458-425c-b9c1-b6f51ed26979",
+			"type": "text",
+			"content": "<div class=\"span5\">\n<ul>\n<li>L&auml;kemedelsboken har getts ut vartannat &aring;r sedan 1977</li>\n<li>Sedan 2009 i L&auml;kemedelsverkets&nbsp;regi</li>\n<li>Tar upp de vanligaste sjukdomarna i &ouml;ppenv&aring;rd med fokus p&aring; l&auml;kemedelsbehandling</li>\n</ul>\n<h2 id=\"Innehall\">Inneh&aring;ll</h2>\n<ul>\n<li><a href=\"#Oppen-kallkod\">&Ouml;ppen k&auml;llkod</a></li>\n<li><a href=\"#Oppna-webbtjanster\">&Ouml;ppna webbtj&auml;nster</a></li>\n<li><a href=\"#Organisation\">Organisation</a></li>\n<li><a href=\"#Kvalitetssakring\">Kvalitetss&auml;kring</a></li>\n<li><a href=\"#Kontakt\">Kontakt</a></li>\n</ul>\n</div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e67d4406-002a-4bfa-8a95-1b9f51b5009e",
+			"name": "e67d4406-002a-4bfa-8a95-1b9f51b5009e",
+			"type": "image",
+			"content": {
+				"image": "/images/default.png",
+				"alt": "",
+				"htmlbefore": "<div class=\"span5\">",
+				"htmlafter": "</div>",
+				"maxwidth": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8ba48b4c-7493-4d0d-a356-5f975c5a69ac",
+			"name": "8ba48b4c-7493-4d0d-a356-5f975c5a69ac",
+			"type": "html",
+			"content": "</div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b14fb46e-d3ee-4175-a889-00dd67c274b7",
+			"name": "b14fb46e-d3ee-4175-a889-00dd67c274b7",
+			"type": "text",
+			"content": "<div class=\"clearfix\"></div>\n<hr>\n<h2 id=\"Oppen-kallkod\">&Ouml;ppen k&auml;llkod</h2>\n<p>L&auml;kemedelsbokens webbversion och tillh&ouml;rande app&nbsp;&auml;r &ouml;ppen k&auml;llkod med MIT-licens. &nbsp;Koden finns att hitta p&aring; <a href=\"https://github.com/lakemedelsboken/\" title=\"L&#xE4;nk till LB p&#xE5; GitHub\"><i class=\"fa fa-github\"> </i> GitHub</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e06ae412-db7a-4be3-b0e0-fe2f8273811a",
+			"name": "e06ae412-db7a-4be3-b0e0-fe2f8273811a",
+			"type": "image",
+			"content": {
+				"image": "/images/press/vitalis-2016/github.png",
+				"alt": "GitHub",
+				"htmlbefore": "<a href=\"https://github.com/lakemedelsboken/LB\">",
+				"htmlafter": "</a>",
+				"maxwidth": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a96fe92b-2e3d-4782-958d-1d291b07c952",
+			"name": "a96fe92b-2e3d-4782-958d-1d291b07c952",
+			"type": "text",
+			"content": "<hr>\n<h2 id=\"Oppna-webbtjanster\">&Ouml;ppna webbtj&auml;nster</h2>\n<p>Webbtj&auml;nsterna m&ouml;jligg&ouml;r s&ouml;kning i L&auml;kemedelsbokens inneh&aring;ll,&nbsp;</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3e088bb9-da8d-4d7c-8dc6-24ab51d7a17f",
+			"name": "3e088bb9-da8d-4d7c-8dc6-24ab51d7a17f",
+			"type": "html",
+			"content": "<div class=\"row\">",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "209615b2-9101-4cc1-b56f-708893f0c67e",
+			"name": "209615b2-9101-4cc1-b56f-708893f0c67e",
+			"type": "text",
+			"content": "<h1>Rubrik</h1>\n<p>Text</p>",
+			"settings": {}
+		},
+		{
+			"id": "5977d8e5-67da-4ba6-bba7-6fafc5c51557",
+			"name": "5977d8e5-67da-4ba6-bba7-6fafc5c51557",
+			"type": "text",
+			"content": "<hr>\n<div class=\"span5\">\n<h2 id=\"Organisation\">Organisation</h2>\n<h3 id=\"Kapitelforfattare\">Kapitelf&ouml;rfattare</h3>\n<ul>\n<li>Ca 200 f&ouml;rfattare, merparten ej anst&auml;llda p&aring; L&auml;kemedelsverket</li>\n<li>Ca 100 kapitel &ndash; terapikapitel och specialkapitel</li>\n</ul>\n<h3 id=\"Redaktionskommitt-\">Redaktionskommitt&eacute;</h3>\n<ul>\n<li>Ej anst&auml;llda p&aring; L&auml;kemedelsverket</li>\n<li>Specialistl&auml;kare (ca 10 personer)</li>\n<li>Ordf&ouml;rande Patrik Midl&ouml;v</li>\n</ul>\n<h3 id=\"Pa-Lakemedelsverket\">P&aring; L&auml;kemedelsverket</h3>\n<ul>\n<li>Redaktion (redakt&ouml;r Pernilla &Ouml;rtqvist)</li>\n<li>IT-f&ouml;rvaltning</li>\n</ul>\n</div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1497696c-ac6f-4dff-bbd5-2133b1627db1",
+			"name": "1497696c-ac6f-4dff-bbd5-2133b1627db1",
+			"type": "text",
+			"content": "<div class=\"span5\">\n<h2 id=\"Kvalitetssakring\">Kvalitetss&auml;kring</h2>\n<ul>\n<li><strong>J&auml;vsgrupp:</strong> Ordf&ouml;rande, redakt&ouml;r, repr. f&ouml;r redaktionskommitt&eacute;n, LV-jurist</li>\n<li><strong>F&ouml;rfattarna:</strong>&nbsp;Experter inom respektive omr&aring;de<br>\n<ul>\n<li>Normalt en terapiomr&aring;desspecialist och en intresserad allm&auml;nl&auml;kare</li>\n</ul>\n</li>\n<li><strong>Faktagranskning</strong><br>\n<ul>\n<li>Huvudgranskare samt allm&auml;n/barnperspektiv</li>\n<li>Nyskrivna kapitel g&aring;s igenom av samtliga granskare</li>\n<li>Granskarnas kommentarer anonymiseras innan de f&ouml;rmedlas till f&ouml;rfattarna</li>\n</ul>\n</li>\n<li><strong>Intern bed&ouml;mning p&aring; L&auml;kemedelsverket</strong><br>\n<ul>\n<li>Vid behov</li>\n</ul>\n</li>\n</ul>\n</div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3d9f01c6-0f72-4f37-96a2-5253f4f4da1f",
+			"name": "3d9f01c6-0f72-4f37-96a2-5253f4f4da1f",
+			"type": "html",
+			"content": "</div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "62c48c67-fb50-417d-bf5e-df870052f860",
+			"name": "62c48c67-fb50-417d-bf5e-df870052f860",
+			"type": "text",
+			"content": "<h2 id=\"Kontakt\">Kontakt</h2>\n<p>F&ouml;r mer information g&aring;r det bra att kontakta redakt&ouml;r Pernilla &Ouml;rtqvist p&aring; e-postadress <a href=\"mailto:lakemedelsboken@mpa.se\">lakemedelsboken@mpa.se</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/press/vitalis-2016/index.json",
+	"indexed": "false",
+	"modified": "2016-03-28 19:50"
+}
