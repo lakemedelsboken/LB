@@ -74,6 +74,10 @@ namespace :deploy do
 
       execute "ln -nfs #{shared_path}/settings #{release_path}/"
       execute "cd #{shared_path}/settings && make decrypt_conf_pass PASS=#{fetch(:secretSettingsPassword)}"
+
+      #Decrypt synonym database
+      execute "cd #{release_path}/servers/cms/search/synonyms && make decrypt_conf_pass PASS=#{fetch(:secretSettingsPassword)}"
+      
       #Make current release a working git repository
       if fetch(:stage) == :cms
         execute "rm -rf /var/www/lb/gittemp/"
