@@ -17,10 +17,10 @@ function initSearchIndex() {
 
 	//Full text search setup
 	var options = {
-		keys: ["content", "title", "titlePath", "products"],
+		keys: ["content", "title", "titlePath", "products", "contentSynonyms", "titleSynonyms"],
 		distance: 8000,
 		threshold: 0.3,
-		boost: [2, 3, 1, 0.09]
+		boost: [2, 3, 1, 0.09, 1.5, 2.5]
 	};
 
 	//Iterate and add all search indices
@@ -61,6 +61,13 @@ module.exports = function(input, callback) {
 		if (trimmed[i].products !== undefined) {
 			trimmed[i].products = "";
 		}
+		if (trimmed[i].contentSynonyms !== undefined) {
+			trimmed[i].contentSynonyms = "";
+		}
+		if (trimmed[i].titleSynonyms !== undefined) {
+			trimmed[i].titleSynonyms = "";
+		}
+
 	}
 
 	results = trimmed;

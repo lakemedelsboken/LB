@@ -1,8 +1,10 @@
-var fs = require("fs");
+var fs = require("fs-extra");
 var cheerio = require("cheerio");
 var exports = module.exports = createSearchIndex;
 var crypto = require("crypto");
 var path = require("path");
+
+var synonymFinder = require("./synonyms.js");
 
 var $ = null;
 var chapterName = null;
@@ -11,7 +13,19 @@ var chapterIdentifier = null;
 var toc = null;
 var contentsId = 0;
 
-var atcTree = JSON.parse(fs.readFileSync(__dirname + "/../../../npl/atcTree.json", "utf8"));
+var atcTree = [];
+
+function getAtcTree() {
+
+	if (atcTree.length === 0) {
+		atcTree = fs.readJsonSync(__dirname + "/../../../npl/atcTree.json", {throws: false});
+		if (atcTree === null) {
+			atcTree = [];
+		}
+	}
+
+	return atcTree;
+}
 
 var argv = require("optimist")
     .usage('Create search index from html chapter\nUsage: $0')
@@ -79,9 +93,18 @@ function createSearchIndex(htmlContent, name, newName) {
 		}
 		iterateElement(body, "");
 
+		//Add synonyms
+		toc.forEach(function(tocItem) {
+			if (tocItem.content !== undefined) {
+				tocItem.titleSynonyms = synonymFinder.process(tocItem.title);
+				tocItem.contentSynonyms = synonymFinder.process(tocItem.content);
+			}
+		});
+
 		//Save to cache
 		console.log("Saving search index to cache: " + cachePath);
 		fs.writeFileSync(cachePath, JSON.stringify(toc), "utf8");
+
 
 		return toc;
 		
@@ -404,6 +427,8 @@ var cachedATCResults = {};
 
 function findProductNamesFromATCCode(atcCode) {
 	var result = [];
+
+	getAtcTree();
 
 	if (cachedATCResults[atcCode] === undefined) {
 		for (var i = 0; i < atcTree.length; i++) {
