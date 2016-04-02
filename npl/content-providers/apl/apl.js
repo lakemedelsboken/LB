@@ -192,7 +192,7 @@
 
 					//Update the atc tree in memory
 					stub.noinfo = false;
-					if (indication !== undefined && indication.trim() !== "") {
+					if (indication !== undefined && indication !== null && indication.trim() !== "") {
 						stub.indications = indication;
 					}
 
