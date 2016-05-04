@@ -22,7 +22,7 @@ Vagrant.configure(2) do |config|
 
 		#------------------------- GENERAL ----------------------------------------------------
 		sudo apt-get update
-		apt-get install -y build-essential python wget zlib1g-dev libssl-dev libreadline6-dev libyaml-dev
+		apt-get install -y build-essential python wget zlib1g-dev libssl-dev libreadline6-dev libyaml-dev git
 
 
 		#------------------------- Ruby -------------------------------------------------------
