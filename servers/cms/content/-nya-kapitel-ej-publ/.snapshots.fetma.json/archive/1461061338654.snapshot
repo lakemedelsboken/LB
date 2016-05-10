@@ -1,0 +1,257 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Övervikt och fetma",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2016-04-15 15:49",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Staffan  Marild, Torsten Olbers, Jarl Torgerson",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "84127f29-5d95-4cb1-9aa6-652ac87f3332",
+			"name": "fe73e5fb-86c9-4a40-97c2-0db342e76b7f",
+			"type": "text",
+			"content": "<h1 id=\"Fetma\">Fetma</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6cd23127-a252-497a-af67-4dcc0ab71f90",
+			"name": "4b607546-5402-45ce-a8de-45be6a26817c",
+			"type": "author",
+			"content": {
+				"firstname": "Staffan ",
+				"surname": "Marild",
+				"description": "",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f546811d-3981-4733-80b5-c9d180b2395d",
+			"name": "f546811d-3981-4733-80b5-c9d180b2395d",
+			"type": "author",
+			"content": {
+				"firstname": "Torsten",
+				"surname": "Olbers",
+				"description": "",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a8d28b74-9911-41e9-b3fb-07b3b06c7cf4",
+			"name": "a8d28b74-9911-41e9-b3fb-07b3b06c7cf4",
+			"type": "author",
+			"content": {
+				"firstname": "Jarl",
+				"surname": "Torgerson",
+				"description": "",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "640d2920-8cdc-43f4-ae69-8772a7cda4d9",
+			"name": "33486b6a-e90a-47e6-814a-92954c3752af",
+			"type": "text",
+			"content": "<p class=\"ingress\">Fetma har &ouml;kat dramatiskt sedan 40&ndash;50 &aring;r, b&aring;de i Sverige och globalt, s&aring;v&auml;l bland barn som bland vuxna. WHO har talat om en &rdquo;fetmaepidemi&rdquo; eftersom f&ouml;rekomsten blivit s&aring; omfattande. Fetma sprids dock inte med virus eller bakterier som de klassiska epidemierna. Den klassas ist&auml;llet av WHO som en &rdquo;non-communicable disease&rdquo; vilket inneb&auml;r en icke-smittsam men samh&auml;lls-f&ouml;rv&auml;rvad sjukdom som till stor del h&auml;nger samman med samh&auml;llets struktur. Detta kapitel beskriver grundl&auml;ggande fakta om fetma hos barn och vuxna med fokus p&aring; f&ouml;rebyggande och behandlande insatser.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "848a1f8c-1939-4797-8456-8a0a533575ca",
+			"name": "848a1f8c-1939-4797-8456-8a0a533575ca",
+			"type": "text",
+			"content": "<h1 id=\"Definitioner\">Definitioner</h1>\n<p>Fetma inneb&auml;r att kroppens fettdep&aring;er &auml;r &ouml;kade till den grad att h&auml;lsan riskeras. Hos s&aring;v&auml;l vuxna som barn &ouml;ver tv&aring; &aring;rs &aring;lder anv&auml;nds body mass index <span style=\"color: #ff0000;\">(BMI)&nbsp; f&ouml;r att definiera och avgr&auml;nsa fetma, &ouml;vervikt, normalvikt och undervikt. BMI-v&auml;rdet (kg/m<sup>2</sup>) f&aring;s genom att dividera vikten i kilogram med kvadraten p&aring; kroppsl&auml;ngden i meter.</span> Faktaruta 1 redovisar denna klassifikation hos vuxna. Hos barn finns inga fasta BMI-gr&auml;nser eftersom barn v&auml;xer p&aring; l&auml;ngden, vilket g&ouml;r att barns BMI varierar med l&auml;ngd och d&auml;rmed ocks&aring; med &aring;lder. Med hj&auml;lp av BMI-kurvor (Figur 1) kan man dock enkelt se var flickor och pojkar i olika &aring;lder ligger i f&ouml;rh&aring;llande till internationella gr&auml;nsv&auml;rdena f&ouml;r &ouml;vervikt och fetma. <span>Det enda som beh&ouml;vs f&ouml;r att fastst&auml;lla om ett barn har fetma eller &ouml;vervikt &auml;r allts&aring; m&auml;tning av l&auml;ngd och vikt och ber&auml;kning av BMI f&ouml;r att se hur det ligger i f&ouml;rh&aring;llande till gr&auml;nsv&auml;rdena i kurvan. </span></p>\n<p>&nbsp;</p>\n<p>BMI tar endast h&auml;nsyn till kroppsvikten i relation till kroppsl&auml;ngden och s&auml;ger ingenting om vare sig fettf&ouml;rdelning eller kroppsammans&auml;ttning. Det &auml;r v&auml;l belagt att det abdominella fettet (bukfettet) &auml;r mer associerat med &ouml;kad medicinsk risk &auml;n det femoro-gluteala (fettet &ouml;ver stussen) n&auml;r det g&auml;ller utveckling av h&ouml;gt blodtryck, insulinresistens och oh&auml;lsosamma blodfetter, det vill s&auml;ga kardiometabola komplikationer. Bukomf&aring;nget - m&auml;tt mitt emellan tolfte revbenet och h&ouml;ftbenskammen, i st&aring;ende och efter en normal utandning - &auml;r ett bra och enkelt m&aring;tt p&aring; den fettf&ouml;rdelningsrelaterade risken (se Faktaruta 2). Hos barn &auml;r normalv&auml;rdena f&ouml;r midjem&aring;ttet olika beroende p&aring; &aring;lder. Det finns publicerade v&auml;rden f&ouml;r dessa. En enkel tumregel f&ouml;r skolbarn &auml;r att ber&auml;kna kvoten mellan midjem&aring;tt och l&auml;ngd (b&aring;da i centimeter). <span style=\"color: #ff0000;\">En kvot st&ouml;rre &auml;n 0,5 talar f&ouml;r att barnet har bukfetma.</span><br><br></p>\n<p>Fetma klassificeras som en sjukdom, vilket &ouml;vervikt d&auml;remot inte g&ouml;r. &Ouml;vervikt klassas ist&auml;llet som en riskfaktor f&ouml;r annan sjuklighet, framf&ouml;r allt kardiovaskul&auml;ra sjukdomar och diabetes (se nedan).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9b7255c4-86ff-4214-97b7-e3ce501aaa9b",
+			"name": "9b7255c4-86ff-4214-97b7-e3ce501aaa9b",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "BMI-gränser för klassifikation av olika viktklasser hos vuxna ",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td width=\"564\">\r\n<p><strong>BMI (kg/m&sup2;)<br /></strong></p>\r\n</td>\r\n<td width=\"564\">\r\n<p><strong>Klassifikation</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"564\">\r\n<p>&lt; 18,5</p>\r\n</td>\r\n<td width=\"564\">\r\n<p>Undervikt</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"564\">\r\n<p>18,5 &ndash; 24,9</p>\r\n</td>\r\n<td width=\"564\">\r\n<p>Normalvikt</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"564\">\r\n<p>25,0 &ndash; 29,9</p>\r\n</td>\r\n<td width=\"564\">\r\n<p>&Ouml;vervikt</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"564\">\r\n<p>30,0 &ndash; 34,9</p>\r\n</td>\r\n<td width=\"564\">\r\n<p>Fetma</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"564\">\r\n<p>35,0 &ndash; 39,9</p>\r\n</td>\r\n<td width=\"564\">\r\n<p>Sv&aring;r fetma</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"564\">\r\n<p>&lt; 40</p>\r\n</td>\r\n<td width=\"564\">\r\n<p>Extrem fetma</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b05ecb63-3293-4dcb-b2fa-d7010eeb74e5",
+			"name": "b05ecb63-3293-4dcb-b2fa-d7010eeb74e5",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "Bukomfång och risk för metabola sjukdomar hos vuxna",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td><strong>M&auml;n </strong></td>\r\n<td><strong>Kvinnor</strong></td>\r\n<td><strong>Risk</strong></td>\r\n</tr>\r\n<tr>\r\n<td>&lt; 94 cm</td>\r\n<td>&lt; 80 cm</td>\r\n<td>Inte &ouml;kad</td>\r\n</tr>\r\n<tr>\r\n<td>94 &ndash;102 cm</td>\r\n<td>80&ndash;88 cm</td>\r\n<td>&Ouml;kad</td>\r\n</tr>\r\n<tr>\r\n<td>&gt; 102 cm</td>\r\n<td>&gt; 88 cm</td>\r\n<td>Mycket &ouml;kad</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4e63c9e2-b95e-4cdc-be0c-ed1194971615",
+			"name": "4e63c9e2-b95e-4cdc-be0c-ed1194971615",
+			"type": "text",
+			"content": "<h2 id=\"Epidemiologi\">Epidemiologi</h2>\n<p>Fetma har utvecklats till att bli v&auml;stv&auml;rldens vanligaste n&auml;ringsrubbning. Den sj&auml;lvrapporterade f&ouml;rekomsten av fetma i den vuxna svenska befolkningen har f&ouml;rdubblats sedan 1980-talet. Enligt Global Burden of Disease Study fr&aring;n 2013 har 19&nbsp;% av vuxna individer &auml;ldre &auml;n 20&nbsp;&aring;r definitionsm&auml;ssigt fetma, det vill s&auml;ga ett BMI&nbsp;&gt;&nbsp;30 kg/m<sup>2</sup>. &Auml;ven om fetmaf&ouml;rekomsten &ouml;kar i alla befolkningsgrupper s&aring; finns det en tydlig social gradient d&auml;r fetma &auml;r vanligare i l&auml;gre socialgrupper &auml;n i h&ouml;gre.<br><br></p>\n<p>F&ouml;rekomst av &ouml;vervikt och fetma hos barn och ungdomar har ocks&aring; &ouml;kat kraftigt sedan 1980-talet. WHO har sammanst&auml;llt globala data som visar att barnfetma &ouml;kar i alla l&auml;nder. En sammanst&auml;llning fr&aring;n 2013 betr&auml;ffande fetma bland 6&minus;9 &aring;ringar i tolv l&auml;nder i Europa visade att f&ouml;rekomsten varierad mycket. Fetma p&aring;visades hos 6&minus;27&nbsp;% av pojkar och mellan 5&minus;17&nbsp;% hos flickor. Det fanns en tydlig skillnad mellan l&auml;nder, d&auml;r de runt Medelhavet och i s&ouml;dra Europa hade en betydligt h&ouml;gre prevalens &auml;n l&auml;nder i centrala och norra Europa. &Auml;ven i Sverige &ouml;kade fetma bland 10-&aring;riga skolbarn fr&aring;n mindre &auml;n 1&nbsp;% p&aring; 1980-talet till cirka 3&nbsp;% vid millennieskiftet men har d&auml;refter legat relativt konstant. Data fr&aring;n BVC under de senaste &aring;ren visar att 2&ndash;4&nbsp;% av fyra&aring;ringarna har fetma. F&ouml;rskolebarn med s&auml;mre sociala eller ekonomiska f&ouml;rh&aring;llanden har h&ouml;gre f&ouml;rekomst.<br><br></p>\n<p>Data fr&aring;n Socialstyrelsen visar att barns f&ouml;delsevikt &ouml;kat i medeltal fr&aring;n 1970- till 2000-talet fr&aring;n strax under till strax &ouml;ver 3500&nbsp;g. Detta sammanh&auml;nger med att gravida kvinnors vikt har &ouml;kat. Fetma hos barnaf&ouml;dande kvinnor &ouml;kade fr&aring;n cirka 5&nbsp;% 1990 till 12&nbsp;% 2007. En h&ouml;gre f&ouml;delsevikt hos barn ger en risk f&ouml;r utveckling av fetma vilket &auml;ven barn med l&aring;g f&ouml;delsevikt har. Tidig <em>adiposity rebound</em> (d&auml;r BMI i 3-4-&aring;rs&aring;ldern v&auml;nder fr&aring;n att g&aring; ner&aring;t till att &ouml;ka och att denna v&auml;ndning kommer tidigare &auml;n genomsnittet) inneb&auml;r ocks&aring; en &ouml;kad risk f&ouml;r fetma. P&aring; barnav&aring;rdscentralen kan man identifiera detta m&ouml;nster och har m&ouml;jlighet att starta f&ouml;rebyggande insatser.<br><br></p>\n<p>Ett flertal studier visar att ett barn som har fetma n&auml;stan alltid forts&auml;tter att ha fetma som vuxen. En tio&aring;ring med fetma har cirka 20&nbsp;g&aring;nger &ouml;kad risk att ha fetma vid 30&nbsp;&aring;rs &aring;lder. Studier i Finland p&aring; vuxna med fetma som uppst&aring;tt redan i barndomen hade en &ouml;kad risk f&ouml;r diabetes och hj&auml;rt-k&auml;rlsjukdom j&auml;mf&ouml;rt med vuxna som utvecklat fetma senare i livet.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6ff78678-286c-41ee-a76c-f5945c985a5e",
+			"name": "6ff78678-286c-41ee-a76c-f5945c985a5e",
+			"type": "text",
+			"content": "<h2 id=\"Symtom-och-samsjuklighet-vid-fetma-hos-vuxna\">Symtom och samsjuklighet vid fetma hos vuxna</h2>\n<p><strong></strong>M&aring;nga av de livshotande sjukdomar som individer med fetma riskerar att drabbas av &auml;r relaterade till det metabola syndromet. &Auml;ven om det metabola syndromet definierats lite olika av olika internationella expertgrupper s&aring; ing&aring;r vanligen en kombination av bukfetma, insulinresistens/nedsatt glukostolerans/diabetes typ 2, hypertoni samt dyslipidemi med f&ouml;rh&ouml;jda triglycerider, f&ouml;rh&ouml;jt LDL och s&auml;nkt HDL.</p>\n<p></p>\n<h3 id=\"Mortalitet\"><strong>Mortalitet</strong></h3>\n<p>Personer med fetma l&ouml;per en &ouml;kad risk att d&ouml; i f&ouml;rtid. Uppskattningar fr&aring;n WHO anger den globala &aring;rliga fetmarelaterade mortaliteten till 2,5&nbsp;miljoner avlidna. Den vanligaste fetmaassocierade d&ouml;dsorsaken &auml;r kardiovaskul&auml;r sjukdom.</p>\n<h3 id=\"Insulinresistens-och-diabetes-typ-2\"><strong>Insulinresistens och diabetes typ 2</strong></h3>\n<p>F&ouml;rekomsten av diabetes&nbsp;typ&nbsp;2 &ouml;kar med &aring;lder och stigande kroppsvikt och diabetes &auml;r en av de dominerande komplikationerna som &auml;r associerat till fetma. Den stora epidemiologiska unders&ouml;kningen Nurses&rsquo; Health Study har visat att kvinnor med BMI&nbsp;&gt;&nbsp;35 kg/m<sup>2</sup> har en n&auml;stan 100&nbsp;g&aring;nger h&ouml;gre &aring;ldersstandardiserad risk att utveckla typ-2-diabetes j&auml;mf&ouml;rt med kvinnor som har ett BMI&nbsp;&lt;&nbsp;22 kg/m<sup>2</sup>.<br><br></p>\n<p>Insulinresistens och en kompensatorisk hyperinsulinemi &auml;r tidiga tecken p&aring; v&auml;gen mot nedsatt glukostolerans (IGT) som till slut kan utvecklas till typ-2-diabetes. Dessa tillst&aring;nd utg&ouml;r viktiga delar i det metabola syndromet.</p>\n<h3 id=\"Hjartkarlsjukdom\"><strong>Hj&auml;rtk&auml;rlsjukdom</strong></h3>\n<p>Det finns ett tydligt samband mellan fetma och risken f&ouml;r kransk&auml;rlssjukdom med en accentuerad risk&ouml;kning vid BMI&nbsp;&gt;&nbsp;27 kg/m<sup>2</sup> hos m&auml;n och &gt;&nbsp;25 kg/m<sup>2</sup> hos kvinnor. Fetma &ouml;kar risken f&ouml;r aterosklerotisk hj&auml;rtk&auml;rlsjukdom, hj&auml;rtsvikt, hj&auml;rtrytmrubbningar liksom f&ouml;r stroke. Risk&ouml;kningen kan delvis f&ouml;rklaras av en &ouml;kad f&ouml;rekomst av v&auml;lk&auml;nda riskfaktorer som f&ouml;rh&ouml;jt blodtryck, lipidrubbningar, insulinresistens, nedsatt fibrinolys och en l&aring;ggradig kronisk inflammation.</p>\n<h3 id=\"Obstruktiv-somnapn-\"><strong>Obstruktiv s&ouml;mnapn&eacute;</strong></h3>\n<p>Obstruktiv s&ouml;mnapn&eacute; (OSA) f&ouml;rekommer vanligare vid fetma &auml;n vid normalvikt och &auml;r relaterat till en &ouml;kad risk f&ouml;r kardiovaskul&auml;r sjukdom och f&ouml;rtida d&ouml;d. Snarkningar, andningsuppeh&aring;ll, blodtrycksstegring, uttalad dagtr&ouml;tthet, koncentrationssv&aring;righeter och psykosociala problem ing&aring;r som kliniska manifestationer. OSA ska skiljas fr&aring;n den hypoventilation med &aring;tf&ouml;ljande koldioxidretention (Pickwick-syndromet) som f&ouml;rekommer vid extrem fetma.</p>\n<h3 id=\"Lever-och-gallvagar\"><strong>Lever och gallv&auml;gar</strong></h3>\n<p>Fetma, framf&ouml;rallt hos kvinnor, &ouml;kar p&aring;tagligt risken att drabbas av gallstenssjukdom. Orsaken &auml;r en &ouml;kad kolesterolhalt i gallan och en minskad kontraktilitet i gallbl&aring;san. Vid snabb viktnedg&aring;ng &ouml;kar dessutom risken f&ouml;r gallstenssjukdom ytterligare p&aring; grund av en &ouml;kad belastning p&aring; kolesteroloms&auml;ttningen.<br><br></p>\n<p>Non-alcoholic fatty liver disease (NAFLD) &auml;r ett samlingsbegrepp f&ouml;r fetmaassocierad leversjuklighet och omfattar hela spektrum fr&aring;n leversteatos (f&ouml;rfettning av levern) till levercirros (skrumplever). I vilken grad leversteatos leder till inflammation och fibrosomvandling &auml;r debatterat men risken f&ouml;r cirrosutveckling &auml;r helt klart st&ouml;rre &auml;n man tidigare trott.</p>\n<h3 id=\"Cancer\"><strong>Cancer</strong></h3>\n<p>Ett stort antal tum&ouml;r- och cancerformer &auml;r &ouml;verrepresenterade vid fetma. Det handlar bland annat om cancer i tjocktarm, prostata, br&ouml;st och endometrium. De patofysiologiska mekanismer som kopplar samman fetma, diabetes och cancer &auml;r &auml;nnu inte helt klarlagda.</p>\n<h3 id=\"Artros\"><strong>Artros</strong></h3>\n<p>Artros &auml;r &ouml;verrepresenterat vid fetma och symtom fr&aring;n viktb&auml;rande leder; rygg, h&ouml;fter, kn&auml;n och fotleder, dominerar.</p>\n<h3 id=\"Inkontinens-och-fertilitet\"><strong>Inkontinens och fertilitet</strong></h3>\n<p>Fetma &auml;r kopplat till nedsatt fertilitet, polycystiskt ovariesyndrom (PCO) liksom till komplikationer under graviditet och f&ouml;rlossning. Hos &auml;ldre postmenopausala kvinnor &ouml;kar risken f&ouml;r urininkontinens.</p>\n<h3 id=\"Hud\"><strong>Hud</strong></h3>\n<p>Acantosis nigricans &ndash; en hyperkeratos och brunpigmentering runt nacke, hals och axiller &ndash; f&ouml;rekommer vid fetma och &auml;r kopplat till en &ouml;kad insulinresistens. Intertrigin&ouml;s dermatit ses vid uttalad fetma och kan vara besv&auml;rande f&ouml;r patienten.</p>\n<h3 id=\"Psykiska-och-psykosociala-problem\"><strong>Psykiska och psykosociala problem</strong></h3>\n<p>Det &auml;r v&auml;l belagt att personer med fetma &auml;r utsatta f&ouml;r s&aring;v&auml;l f&ouml;rdomar som diskriminering. Bland psykiska sjukdomar som kan knytas till fetma m&auml;rks bulimi och binge eating disorder (BED). Det senare tillst&aring;ndet inneb&auml;r, till skillnad fr&aring;n bulimi, f&ouml;rvisso attackvis &ouml;ver&auml;tning men dock utan kr&auml;kningsprovokation. Hos individer med fetma &auml;r olika m&aring;tt p&aring; h&auml;lsorelaterad livskvalitet (&aring;ngest, depression, mentalt v&auml;lbefinnande) klart l&auml;gre &auml;n hos andra grupper av kroniskt sjuka.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1760016e-0aba-40b2-8f6d-17fd88731bc6",
+			"name": "1760016e-0aba-40b2-8f6d-17fd88731bc6",
+			"type": "text",
+			"content": "<h1 id=\"Rubrik\">Rubrik</h1>\n<p>Text</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4659f4c1-9f9e-43a0-8cfe-3ffe07b9dee2",
+			"name": "b1f33364-7133-44cc-af41-6d26c8d188f1",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2><ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/-nya-kapitel-ej-publ/-vervikt-och-fetma.json",
+	"indexed": "true",
+	"modified": "2016-04-19 12:17"
+}
