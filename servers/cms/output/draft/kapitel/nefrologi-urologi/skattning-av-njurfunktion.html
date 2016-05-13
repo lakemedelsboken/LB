@@ -12,7 +12,7 @@
 		<meta name="DC.description" content="">
 		<meta name="DC.subject" content="">
 		<meta name="DC.created" content="2015-11-17 15:55">
-		<meta name="DC.modified" content="2016-05-10 12:31">
+		<meta name="DC.modified" content="2016-05-13 14:25">
 		<meta name="DC.type" content="">
 		<link rel="shortcut icon" href="/v0.2.1/favicon.ico">
 		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/v0.2.1/apple-touch-icon-152x152-precomposed.png">
@@ -32,8 +32,55 @@
 		<a href="#" id="settings" class="btn btn-small btn-primary" title="Inst&#xE4;llningar"><i id="settingsIcon" class="fa fa-cog"></i></a>
 		<div class="container" id="content">
 			<div class="row">
-				
-				<div id="mainContainer" class="span8 offset2">
+				<div id="sideContainer" class="affix span4 nonindexed">
+	<div id="searchContainer" class="navbar">
+		<div class="navbar-inner">
+			<div id="searchResultsNavigation" class="navbar-inverse hidden">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="goto">Gå till:</li>
+						<li class="search"><a href="#sideContainer">Sökruta</a></li>
+						<li class="content"><a href="#contentSearchResults">Innehåll</a></li>
+						<li class="medicines"><a href="#medicineSearchResults">Läkemedel</a></li>
+					</ul>
+				</div>
+			</div>
+			<a class="brand" href="../../">Läkemedelsboken</a>
+			<form id="searchForm" class="form-search" action="/search" method="get">
+				<a href="#" id="performSearch" title="S&#xF6;k (Enter)"><i class="fa fa-arrow-circle-right"></i></a>
+				<a href="#" id="resetSearch" title="Avbryt s&#xF6;kning (Esc)"><i class="fa fa-times-circle"></i></a>
+				<input type="text" class="search-query input-block-level" placeholder="S&#xF6;k" name="search" id="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" title="S&#xF6;kruta (s)">
+				<div class="fa fa-search"></div>
+			</form>
+		</div>
+	</div>
+	<a class="btn btn-primary btn-block visible-phone" id="toggleNavigation"><i class="fa fa-chevron-down"></i> Visa meny</a>
+	<div id="sideMenu">
+		<ul id="sideBar" role="navigation"><li><a href="../../"><i class="fa fa-chevron-left"></i> Tillbaka</a><ul><li><a href="../../kapitel/nefrologi-urologi/skattning-av-njurfunktion.html#Skattning-av-njurfunktion"><i class="fa fa-bookmark-o"></i> Skattning av njurfunktion</a><ul><li><a href="../../kapitel/nefrologi-urologi/skattning-av-njurfunktion.html#facts_1_header"><i class="fa fa fa-th-list"></i> Faktaruta 1 - Övergripande slutsatser från SBU:s rapport </a></li><li><a href="../../kapitel/nefrologi-urologi/skattning-av-njurfunktion.html#Inledning"><i class="fa fa-bookmark-o"></i> Inledning</a><ul><li><a href="../../kapitel/nefrologi-urologi/skattning-av-njurfunktion.html#"><i class="fa fa fa-bar-chart"></i> Figur 1. Medelvärde för njurfunktion (GFR) och prevalens av sänkt njurfunktion i olika åldersgrupper Sänkt njurfunktion: GFR &lt; 60 ml/min och 1,73 m2 Sänkt njurfunktion: GFR &lt; 60 ml/min och 1,73 m2 2</a></li></ul></li><li><a href="../../kapitel/nefrologi-urologi/skattning-av-njurfunktion.html#Att-mata-GFR"><i class="fa fa fa-bookmark-o"></i> Att mäta GFR</a></li><li><a href="../../kapitel/nefrologi-urologi/skattning-av-njurfunktion.html#Att-skatta-GFR"><i class="fa fa fa-bookmark-o"></i> Att skatta GFR</a></li><li><a href="../../kapitel/nefrologi-urologi/skattning-av-njurfunktion.html#Skattningarnas-formaga-att-skatta-det-sanna-GFR"><i class="fa fa fa-bookmark-o"></i> Skattningarnas förmåga att skatta det sanna GFR</a></li><li><a href="../../kapitel/nefrologi-urologi/skattning-av-njurfunktion.html#Sammanfattande-resultat-fran-SBU-rapporten"><i class="fa fa fa-bookmark-o"></i> Sammanfattande resultat från SBU-rapporten</a></li><li><a href="../../kapitel/nefrologi-urologi/skattning-av-njurfunktion.html#Vardering-och-tolkning-av-GFR-skattningen"><i class="fa fa fa-bookmark-o"></i> Värdering och tolkning av GFR-skattningen</a></li><li><a href="../../kapitel/nefrologi-urologi/skattning-av-njurfunktion.html#Absolut-och-relativ-GFR"><i class="fa fa fa-bookmark-o"></i> Absolut och relativ GFR</a></li><li><a href="../../kapitel/nefrologi-urologi/skattning-av-njurfunktion.html#Hur-anpassas-doseringen-av-lakemedel-till-GFR-"><i class="fa fa fa-bookmark-o"></i> Hur anpassas doseringen av läkemedel till GFR?</a></li><li><a href="../../kapitel/nefrologi-urologi/skattning-av-njurfunktion.html#Referenser"><i class="fa fa-bookmark-o"></i> Referenser</a><ul><li><a href="../../kapitel/nefrologi-urologi/skattning-av-njurfunktion.html#For-vidare-lasning"><i class="fa fa fa-bookmark-o"></i> För vidare läsning</a></li></ul></li></ul></li></ul></li></ul>
+	</div>
+</div>
+<div class="popover bottom span12 affix" id="searchResults">
+	<div class="arrow" id="searchResultsArrow"></div>
+	<div class="popover-inner">
+		<h3 class="popover-title searchTitleBar">Sökresultat <button class="close" id="closeSearchResults">&times;</button></h3>
+		<div class="popover-content">
+			<div class="container" id="searchResultsContainer">
+				<div id="contentSearchResults" class="span7">
+					<h5>Innehåll</h5>
+					<ul class="nav nav-tabs nav-stacked" id="contentSearchResultsList">
+					</ul>
+				</div>
+				<div id="medicineSearchResults" class="span5">
+					<h5>Läkemedel</h5>
+					<ul class="nav nav-tabs nav-stacked" id="medicineSearchResultsList">
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</div>
+				<div id="mainContainer" class="span8 offset4">
 					<div id="main" class="chapterContent"><h1 id="Skattning-av-njurfunktion">Skattning av njurfunktion</h1><p class="authors">Carl-Gustaf Elinder, Hälso- och sjukvårdsförvaltningen, Stockholms läns landsting</p><div id="boxCollection"><h2>Terapirekommendationer / Faktarutor etc.</h2><ul class="thumbnails clearfix overview factsOverview"><li class="span2"><div class="thumbnail factsLink" data-numbers="1"><div class="caption"><i class="fa fa-th-list"></i><h5 class="overview"><a href="#facts_1" class="factsLink" data-numbers="1">Faktaruta 1</a></h5><p><a href="#facts_1" class="factsLink" data-numbers="1">Övergripande slutsatser från SBU:s rapport (1)</a></p></div></div></li></ul><ul class="thumbnails clearfix overview figuresOverview"><li class="span2"><div class="thumbnail figureLink" data-numbers="1"><div class="caption"><i class="fa fa-bar-chart"></i><h5 class="overview"><a href="#figure_1" class="figureLink" data-numbers="1">Figur 1</a></h5><p><a href="#figure_1" class="figureLink" data-numbers="1">Sänkt njurfunktion: GFR < 60 ml="" min="" och="" 1,73 m2<="" a=""></ 60></a></p></div></div></li></ul></div>
 
 <p class="ingress"><span>Njurfunktionen (GFR) kan idag och som regel v&auml;l skattas genom att ber&auml;kna eGFR fr&aring;n plasmakreatinin och/eller cystatin&nbsp;C. Med cystatin&nbsp;C kan GFR ocks&aring; skattas hos barn fr&aring;n ett &aring;rs &aring;lder och hos patienter med avvikande muskelmassa. En &ouml;kad anv&auml;ndning av eGFR &auml;r av stort v&auml;rde f&ouml;r att identifiera olika typer av riskpatienter och ger st&ouml;d f&ouml;r en s&auml;krare l&auml;kemedelsanv&auml;ndning.<br><br></span></p>
@@ -142,14 +189,14 @@
 <li id="reference_14">St&aring;hle, L., <em>F&ouml;lj doseringsanvisningarna n&auml;r dos ska justeras efter njurfunktion.</em> L&auml;kartidningen, 2013. <strong>2013</strong>: p. CHXY.</li>
 <li id="reference_15">Elinder, C.G., P. Barany, and O. Heimburger, <em>The use of estimated glomerular filtration rate for dose adjustment of medications in the elderly.</em> Drugs Aging, 2014. <strong>31</strong>(7): p. 493-9.</li>
 </ol>
-<h1 id="For-vidare-lasning">F&ouml;r vidare l&auml;sning</h1>
+<h3 id="For-vidare-lasning">F&ouml;r vidare l&auml;sning</h3>
 <ol style="list-style-type: lower-alpha;">
 <li>Grubb A, Sterner G. Att best&auml;mma och estimera glomerul&auml;r filtrations hastighet. I:Clyne N, Rippe B, red. Njursjukdom. Teori och klinik. Lund: Studentlitteratur; 2015. s 203-212. ISBN 978914408925-6.</li>
 <li>17. Sterner G, Nyman U. Kliniskt fysiologi och radiologiska unders&ouml;kningar. I: Aurell M, Samuelsson O, red. Njurmedicin. 4:e uppl. Stockholm:Liber AB; 2014. s 32-42. ISBN 978914711432-0.</li>
 </ol>					<div class="authorsDisclosure"><p>Jävsdeklarationer för kapitlets författare kan erhållas via <a href="mailto:registrator@mpa.se">registrator@mpa.se</a>. Enklast sker detta genom de förberedda mejlen nedan.</p><ul class="authors"><li>Carl-Gustaf Elinder, Hälso- och sjukvårdsförvaltningen, Stockholms läns landsting <a href="mailto:registrator@mpa.se?subject=F%C3%B6rfr%C3%A5gan%20om%20j%C3%A4vsdeklaration&amp;body=Jag%20%C3%B6nskar%20j%C3%A4vsdeklaration%20f%C3%B6r%0D%0ACarl-Gustaf%20Elinder%2C%20H%C3%A4lso-%20och%20sjukv%C3%A5rdsf%C3%B6rvaltningen%2C%20Stockholms%20l%C3%A4ns%20landsting%0D%0Af%C3%B6rfattare%20till%20kapitlet%20Skattning%20av%20njurfunktion%2C%20L%C3%A4kemedelsboken%202014.%0D%0A%0D%0AV%C3%A4nliga%20h%C3%A4lsningar%0D%0A" class="btn btn-mini"><i class="fa fa-envelope-o"></i> Fråga efter jävsdeklaration via mejl</a></li></ul></div></div>
 					<hr>
 					<footer>
-						<p>© <a href="http://www.lakemedelsverket.se">Läkemedelsverket</a> | Senast ändrad: 2016-05-10 12:31</p>
+						<p>© <a href="http://www.lakemedelsverket.se">Läkemedelsverket</a> | Senast ändrad: 2016-05-13 14:25</p>
 					</footer>
 				</div>
 			</div>
