@@ -11,12 +11,12 @@ var shell = require("shelljs");
 var imageController = require("./imagecontroller");
 
 function Publisher(options) {
-	
+
 	var self = this;
-	
+
 	//console.log("Init publisher...")
 	//console.log(options);
-	
+
 	//TODO: Fix in settings
 	var defaultOptions = {
 		port: 22,
@@ -25,28 +25,28 @@ function Publisher(options) {
 		privateKey: "",
 		remoteDir: ""
 	};
-	
+
 	self.options = extend(defaultOptions, options);
-	
+
 	if (self.options.privateKey.indexOf("BEGIN RSA PRIVATE KEY") === -1) {
 		//Try to read from file
 		var key = "";
 		if (fs.existsSync(self.options.privateKey)) {
 			key = fs.readFileSync(self.options.privateKey, "utf8");
 		}
-		
+
 		if (key.indexOf("BEGIN RSA PRIVATE KEY") === -1) {
 			throw new Error("Could not find private key at: " + self.options.privateKey);
 		} else {
 			self.options.privateKey = key
 		}
 	}
-	
+
 	//TODO: Check options
 	var Client = require("scp2").Client;
 
 	this.client = new Client(self.options);
-	
+
 };
 
 Publisher.prototype.getLastPayload = function(callback) {
@@ -68,12 +68,12 @@ Publisher.prototype.publish = function(item, callback) {
 	var self = this;
 
 	var remoteFilePath = path.join(self.options.remoteDir, item.relativePath);
-	
+
 	self.client.upload(item.path, remoteFilePath, function(err){
 		callback(err);
 	});
-	
-	
+
+
 };
 
 Publisher.prototype.finished = function() {
@@ -129,9 +129,9 @@ var ContentController = {
 		//Check if a published version exists
 		var pageFileName = path.basename(globalPagePath);
 		var pageDirPath = path.dirname(globalPagePath);
-		
+
 		var possiblePublishedDirectory = path.join(pageDirPath, ".published." + pageFileName);
-		
+
 		//Can it be reverted?
 		if (fs.existsSync(possiblePublishedDirectory)) {
 			//Find the most recent published version
@@ -141,25 +141,25 @@ var ContentController = {
 			publishedFileNames.sort(function(a, b) {
 				return parseInt(b.replace(".published", "")) - parseInt(a.replace(".published", ""));
 			});
-			
+
 			if (publishedFileNames.length > 0) {
 				var mostRecent = publishedFileNames[0];
 				var mostRecentPath = path.join(possiblePublishedDirectory, mostRecent);
-				
+
 				var mostRecentPublishedContent = JSON.parse(fs.readFileSync(mostRecentPath, "utf8"));
 				var mostRecentDraftContent = JSON.parse(fs.readFileSync(globalPagePath, "utf8"));
 
 				//These values always differ between the two, make sure they are the same
 				mostRecentPublishedContent.type = mostRecentDraftContent.type;
 				mostRecentPublishedContent.path = mostRecentDraftContent.path;
-				
+
 				var publishNowBool = false;
-				
+
 				contentModel.setContent(pagePath, mostRecentPublishedContent, publishNowBool, function(err) {
 					if (err) {
 						return callback(err);
 					}
-					
+
 					//Exit OK
 					return callback();
 				}, comment);
@@ -168,12 +168,12 @@ var ContentController = {
 				console.log(pagePath + " has no published version, can not revert.");
 				return callback();
 			}
-			
+
 		} else {
 			console.log(pagePath + " has no published version, can not revert.");
 			return callback();
 		}
-		
+
 	},
 
 
@@ -220,44 +220,44 @@ var ContentController = {
 
 
 	getEditors: function(page) {
-		
+
 		var contentEditors = [];
-		
+
 		var content = page.content;
-		
+
 		if (content && content.length > 0) {
 			for (var i = 0; i < content.length; i++) {
 				var item = content[i];
 				item.pagePath = page.path;
-				
+
 				var contentViews = contentModel.getContentTypes()[item.type];
 				if (contentViews !== undefined) {
 					var editorContent = contentViews.getEditor(item);
 
 					//Add interface for settings
 					editorContent += ContentController.getSettingsEditor(item);
-					
+
 					contentEditors.push(editorContent);
 				} else {
 					console.log("No views exist for content type: " + item.type);
 				}
-			
+
 			}
-		} 
-		
+		}
+
 		return contentEditors;
 	},
 	getSettingsEditor: function(item) {
 
 		var output = ["<div><button class=\"btn btn-default\" type=\"button\" data-toggle=\"collapse\" data-target=\"#processors_" + item.name + "\" aria-expanded=\"false\" aria-controls=\"processors_" + item.name + "\"><i class=\"fa fa-tasks\"></i> Processorer <i class=\"fa fa-caret-down\"></i></button><div class=\"collapse\" id=\"processors_" + item.name + "\">"];
-		
+
 		var preProcessorsDirPath = path.join(__dirname, "..", "preprocessors");
 		var preProcessorFiles = fs.readdirSync(preProcessorsDirPath);
-		
-		
+
+
 		var postProcessorsDirPath = path.join(__dirname, "..", "postprocessors");
 		var postProcessorFiles = fs.readdirSync(postProcessorsDirPath);
-		
+
 		preProcessorFiles = preProcessorFiles.filter(function(element) {
 			return fs.statSync(path.join(preProcessorsDirPath, element)).isFile() && element.charAt(0) !== ".";
 		});
@@ -268,9 +268,9 @@ var ContentController = {
 
 		if (preProcessorFiles.length > 0) {
 			output.push("<h5>Exkludera följande preprocessorer</h5>");
-			
+
 			for (var i = 0; i < preProcessorFiles.length; i++) {
-				
+
 				var checkedValue = "";
 				if (item.settings.preprocessors && item.settings.preprocessors[preProcessorFiles[i]] === "true") {
 					checkedValue = "checked";
@@ -284,12 +284,12 @@ var ContentController = {
 				output.push('</label>');
 				output.push('</div>');
 			}
-			
+
 		}
 
 		if (postProcessorFiles.length > 0) {
 			output.push("<h5>Exkludera följande postprocessorer</h5>");
-			
+
 			for (var i = 0; i < postProcessorFiles.length; i++) {
 
 				var checkedValue = "";
@@ -305,9 +305,9 @@ var ContentController = {
 				output.push('</label>');
 				output.push('</div>');
 			}
-			
+
 		}
-		
+
 		output.push("</div></div>");
 
 		output = output.join("\n");
@@ -317,16 +317,16 @@ var ContentController = {
 		return output;
 	},
 	getPreviews: function(page) {
-		
+
 		var contentPreviews = [];
-		
+
 		var content = page.content;
-		
+
 		if (content && content.length > 0) {
 			for (var i = 0; i < content.length; i++) {
 				var item = content[i];
 				item.pagePath = page.path;
-				
+
 				var contentViews = contentModel.getContentTypes()[item.type];
 				if (contentViews !== undefined) {
 					if (item.type === "html") {
@@ -337,10 +337,10 @@ var ContentController = {
 				} else {
 					console.log("No views exist for content type: " + item.type);
 				}
-			
+
 			}
-		} 
-		
+		}
+
 		return contentPreviews;
 	},
 	findEditableItemByName: function(key, list) {
@@ -371,11 +371,11 @@ var ContentController = {
 	},
 	movePage: contentModel.movePage,
 	rename: function(before, after, callback) {
-		
+
 		if (after.indexOf("/images/") === 0) {
 			return callback(new Error("The path can not be a sub directory of /images/: " + after));
 		}
-		
+
 		contentModel.rename(before, after, callback);
 	},
 	renderPages: function(pages, callback) {
@@ -388,7 +388,7 @@ var ContentController = {
 
 		//Add files to payload
 		var allFiles = wrench.readdirSyncRecursive(publishedDirPath);
-		
+
 		var payload = [];
 		for (var i = 0; i < allFiles.length; i++) {
 			var fullPath = path.join(publishedDirPath, allFiles[i]);
@@ -401,9 +401,9 @@ var ContentController = {
 			} else {
 				console.log("Could not handle: " + fullPath);
 			}
-			
+
 		}
-		
+
 		var secretSettingsPath = path.join(__dirname, "..", "..", "..", "settings", "secretSettings.json");
 		var secretSettings = null;
 
@@ -412,7 +412,7 @@ var ContentController = {
 		}
 
 		var publishServerOptions = {};
-		
+
 		if (secretSettings && secretSettings.cms.publishServerOptions) {
 			publishServerOptions = secretSettings.cms.publishServerOptions;
 		}
@@ -440,7 +440,7 @@ var ContentController = {
 					}
 				}
 			}
-			
+
 			//Files that only exist in the last published payload are deleted
 			var deletedFiles = JSON.parse(JSON.stringify(lastPayload));
 
@@ -456,8 +456,8 @@ var ContentController = {
 					}
 				}
 			}
-			
-			
+
+
 			//Fix relative path
 			cleanedPayload.forEach(function(item) {
 				item.relativePath = item.relativePath.replace("published/", "");
@@ -483,21 +483,21 @@ var ContentController = {
 					deletedFiles.splice(i, 1);
 				}
 			}
-			
+
 			var affectedFiles = [];
 
 			for (var i = 0; i < deletedFiles.length; i++) {
 				affectedFiles.push("DELETED " + deletedFiles[i].relativePath);
 			}
-			
+
 			for (var i = 0; i < cleanedPayload.length; i++) {
 				affectedFiles.push(cleanedPayload[i].relativePath);
 			}
-			
+
 			return callback(null, affectedFiles);
-			
+
 		});
-		
+
 	},
 	publishExternal: function(uploadAllFiles, callback) {
 
@@ -507,14 +507,14 @@ var ContentController = {
 		var gitIgnore = fs.readFileSync(path.join(outgoing, ".gitignore"), "utf8");
 		fs.emptyDirSync(outgoing);
 		fs.writeFileSync(path.join(outgoing, ".gitignore"), gitIgnore, "utf8");
-		
+
 		//Copy published and static dirs to outgoing
 		var outputDirPath = path.join(ContentController.baseDir, "..", "output");
 		var publishedDirPath = path.join(outputDirPath, "published");
 		var staticDirPath = path.join(outputDirPath, "static");
 		var staticOutgoingDirPath = path.join(outgoing, "static");
 		var publishedOutgoingDirPath = path.join(outgoing, "published");
-		
+
 		wrench.copyDirSyncRecursive(publishedDirPath, publishedOutgoingDirPath, {
 			forceDelete: true, // Whether to overwrite existing directory or not
 			excludeHiddenUnix: true, // Whether to copy hidden Unix files or not (preceding .)
@@ -547,7 +547,7 @@ var ContentController = {
 		//Clear non optimized images
 		var imagesPath = path.join(staticOutgoingDirPath, "images");
 		var allImages = wrench.readdirSyncRecursive(imagesPath);
-		
+
 		allImages.forEach(function(image) {
 			var imagePath = path.join(imagesPath, image);
 			if (image.indexOf(".png") > -1 && image.indexOf("/opt/") === -1 && fs.statSync(imagePath).isFile()) {
@@ -555,10 +555,10 @@ var ContentController = {
 			}
 		});
 */
-		
+
 		//Add files to payload
 		var allFiles = wrench.readdirSyncRecursive(outgoing);
-		
+
 		var payload = [];
 		for (var i = 0; i < allFiles.length; i++) {
 			var fullPath = path.join(outgoing, allFiles[i]);
@@ -571,7 +571,7 @@ var ContentController = {
 			} else {
 				console.log("Could not handle: " + fullPath);
 			}
-			
+
 		}
 
 		//Write payload to disk
@@ -588,7 +588,7 @@ var ContentController = {
 		}
 
 		var publishServerOptions = {};
-		
+
 		if (secretSettings && secretSettings.cms.publishServerOptions) {
 			publishServerOptions = secretSettings.cms.publishServerOptions;
 		}
@@ -625,23 +625,23 @@ var ContentController = {
 			//Deliver the payload description
 			var item = {path: payloadPath, relativePath: "payload.json", type: "file"};
 			publisher.publish(item, function(err) {
-				
+
 				ContentController.oneTaskIsDone();
-				
+
 				if (err) {
 					return callback(err, item.relativePath);
 				} else {
 					return callback(null, item.relativePath);
 				}
-				
+
 			});
 
 
 			publisher.finished();
 			return callback();
 		}
-		
-		
+
+
 		if (payload.length === 0) {
 			publisher.finished();
 			ContentController.resetTasks();
@@ -692,19 +692,19 @@ var ContentController = {
 					//Force drain of queue
 					q.drain();
 				}
-				
+
 			});
 
 		}
-		
+
 	},
 	recreateAll: function(callback) {
 
 		console.log("ContentController.recreateAll()");
-		
+
 		//TODO: Set a new version number
 		//TODO: Make sure version is updated when uploading to master server
-		
+
 		//Remove all files of type index, xml and html in output/published and output/draft
 		var draftDir = path.join(ContentController.baseDir, "..", "output", "draft");
 		var draftFiles = wrench.readdirSyncRecursive(draftDir);
@@ -712,7 +712,7 @@ var ContentController = {
 		draftFiles = draftFiles.filter(function(element) {
 
 			var isFile = false;
-			
+
 			try {
 				isFile = fs.statSync(path.join(draftDir, element)).isFile();
 			} catch(err) {
@@ -725,7 +725,7 @@ var ContentController = {
 				isFile
 			);
 		});
-		
+
 		//Find old published pages
 		for (var i = 0; i < draftFiles.length; i++) {
 			var filePath = path.join(draftDir, draftFiles[i]);
@@ -738,7 +738,7 @@ var ContentController = {
 
 		publishedFiles = publishedFiles.filter(function(element) {
 			var isFile = false;
-			
+
 			try {
 				isFile = fs.statSync(path.join(publishedDir, element)).isFile();
 			} catch(err) {
@@ -759,15 +759,15 @@ var ContentController = {
 			fs.unlinkSync(filePath);
 			//ContentController.oneTaskIsDone();
 		}
-		
+
 		//Get all content files, render
 		var files = wrench.readdirSyncRecursive(ContentController.baseDir);
 		var foundPages = files.filter(function(element) {
 			return (
-				element.indexOf(".json") > -1 && 
-				element.indexOf(".snapshot") === -1 && 
-				element.indexOf(".published") === -1 && 
-				element.indexOf("components/") === -1 && 
+				element.indexOf(".json") > -1 &&
+				element.indexOf(".snapshot") === -1 &&
+				element.indexOf(".published") === -1 &&
+				element.indexOf("components/") === -1 &&
 				fs.statSync(ContentController.baseDir + "/" + element).isFile()
 			);
 		});
@@ -779,7 +779,7 @@ var ContentController = {
 
 
 		//TODO: Delete empty directories
-		
+
 		//Recreate images
 		ContentController.recreateAllImages(function(err) {
 
@@ -793,7 +793,7 @@ var ContentController = {
 				var siteMapContent = ContentController.getSiteMap(foundPages);
 				fs.writeFileSync(path.join(__dirname, "..", "output", "published", "sitemap.xml"), siteMapContent, "utf8");
 				ContentController.oneTaskIsDone();
-			
+
 				//Build redirects
 				var redirects = ContentController.getPublishedRedirects(foundPages);
 				fs.writeFileSync(path.join(__dirname, "..", "output", "published", "redirects.json"), JSON.stringify(redirects, null, "\t"), "utf8");
@@ -804,7 +804,7 @@ var ContentController = {
 			} else {
 				callback();
 			}
-			
+
 		});
 
 
@@ -818,7 +818,7 @@ var ContentController = {
 		//Find all images
 		var imagesDir = path.join(ContentController.baseDir, "..", "content", "images");
 		var imageFiles = wrench.readdirSyncRecursive(imagesDir);
-		
+
 		//Filter only png files
 		imageFiles = imageFiles.filter(function(element) {
 			return (
@@ -826,10 +826,10 @@ var ContentController = {
 				fs.statSync(path.join(imagesDir, element)).isFile()
 			);
 		});
-		
+
 		if (imageFiles.length > 0) {
 			ContentController.addTasks(imageFiles.length);
-			
+
 			//Setup queue task
 			var q = async.queue(function(item, callback) {
 
@@ -838,80 +838,80 @@ var ContentController = {
 				var forceOverwrite = false;
 
 				imageController.createImageSizes(originalImagePath, outputDir, forceOverwrite, function(err, results) {
-					
+
 					if (err) {
 						console.log("Error when trying to create image sizes for " + item);
 					}
 
 					ContentController.oneTaskIsDone();
 					return callback(null, item);
-					
+
 				});
 
 			}, 1);
-		
+
 			//Return when all images are done
 			q.drain = function() {
 				return callback();
 			}
-			
+
 			//Add tasks to queue
 			for (var i = 0; i < imageFiles.length; i++) {
-				
+
 				q.push(imageFiles[i], function (err, name) {
 					//Done
 				});
 
 			}
-			
+
 		} else {
 			return callback();
 		}
-		
+
 	},
 	getPublishedRedirects: function(pages) {
 
 		var redirects = [];
-		
+
 		for (var i = 0; i < pages.length; i++) {
 
-			//Find out if page is published 
+			//Find out if page is published
 			var page = JSON.parse(fs.readFileSync(path.join(ContentController.baseDir, pages[i]), "utf8"));
 			if (page.isPublished) {
-				
+
 				//Now read the last published version of this page
 				var versions = historyModel.getPublished(page.path);
-				
+
 				if (versions.length > 0) {
 
 					page = JSON.parse(fs.readFileSync(versions[0].path, "utf8"));
-					
+
 					//Does the page have a redirect?
 					if (page.replacesUrl && page.replacesUrl !== "" && (typeof page.replacesUrl === "string") && page.replacesUrl.length > 0) {
 						//Make sure string begins with a slash
 						if (page.replacesUrl.charAt(0) !== '/') {
 							page.replacesUrl = "/" + page.replacesUrl;
 						}
-					
+
 						redirects.push({path: page.replacesUrl, target: "/" + pages[i].replace(".json", ".html"), type: 301});
 					}
-					
+
 				}
 			}
 		}
-		
+
 		return redirects;
-		
+
 	},
 	getSiteMap: function(pages) {
 		var header = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd\" xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n";
 		var footer = "\n</urlset>";
-	
+
 		var content = [];
 
 		for (var i = 0; i < pages.length; i++) {
 
-			//Find out if page is published 
+			//Find out if page is published
 			var page = JSON.parse(fs.readFileSync(path.join(ContentController.baseDir, pages[i]), "utf8"));
 			if (page.isPublished) {
 				content.push("\t<url>");
@@ -919,12 +919,12 @@ var ContentController = {
 				content.push("\t</url>");
 			}
 		}
-	
+
 		content = content.join("\n");
-	
+
 		var sitemap = header + content + footer;
 		return sitemap;
-	
+
 	},
 	resetTasks: function() {
 		contentModel.resetTasks();
@@ -941,17 +941,17 @@ var ContentController = {
 	clearCaches: function(callback) {
 		//Clear preparsed_genericas
 		var preparsedGenericasDirPath = path.join(__dirname, "..", "postprocessors", "admininterfaces", "genericas", "preparsed_genericas");
-		
+
 		if (fs.existsSync(preparsedGenericasDirPath)) {
 
 			//Remove all .txt files
 			var files = fs.readdirSync(preparsedGenericasDirPath);
 			files.forEach(function(fileName) {
-				
+
 				if (path.extname(fileName) === ".txt") {
 					fs.unlinkSync(path.join(preparsedGenericasDirPath, fileName));
 				}
-				
+
 			});
 
 		}
@@ -963,11 +963,11 @@ var ContentController = {
 			//Remove .json files
 			var files = fs.readdirSync(searchIndexCacheDirPath);
 			files.forEach(function(fileName) {
-				
+
 				if (path.extname(fileName) === ".json") {
 					fs.unlinkSync(path.join(searchIndexCacheDirPath, fileName));
 				}
-				
+
 			});
 		}
 
@@ -978,16 +978,16 @@ var ContentController = {
 			//Remove .txt files
 			var files = fs.readdirSync(synonymsCacheDirPath);
 			files.forEach(function(fileName) {
-				
+
 				if (path.extname(fileName) === ".txt") {
 					fs.unlinkSync(path.join(synonymsCacheDirPath, fileName));
 				}
-				
+
 			});
 		}
-		
+
 		//TODO: Clear /payloads?
-		
+
 		//TODO: Clear /services/archives and /services/deployments?
 
 		//Clear hashes in historymodel
@@ -996,7 +996,7 @@ var ContentController = {
 		}
 
 		callback(null)
-		
+
 	},
 	saveToLog: function(message, pathToLog) {
 
@@ -1011,43 +1011,45 @@ var ContentController = {
 					log = [];
 				}
 			}
-		
+
 			var item = {date: new Date().getTime(), message: message};
-		
+
 			console.log("Log: " + message);
 			log.unshift(item);
-		
+
 			if (log.length > 100) {
 				log.length = 100;
 			}
-		
+
 			fs.writeFileSync(pathToLog, JSON.stringify(log, null, "\t"), "utf8");
-			
+
 		} else {
 			console.log("Could not save to log path: " + pathToLog + " with message: " + message);
 		}
-		
+
 	},
 	saveContentToGitHub: function(callback) {
 
+        // Path to the log output file.
 		var gitStatusLogPath = path.join(__dirname, "..", "public", "status", "github.json");
 
 		ContentController.saveToLog("Beginning upload to GitHub...", gitStatusLogPath);
 
+        // Check if git is installed.
 		if (!shell.which("git")) {
-
 			ContentController.saveToLog("Could not find git, could not upload content changes.", gitStatusLogPath);
 
 			return callback();
-
 		}
-		
+
+        // Publish to git will only look for changes in the following locations:
 		var contentDirPath = path.join(__dirname, "..", "content").replace(/\s/g, "\\ ");
 		var outputDirPath = path.join(__dirname, "..", "output").replace(/\s/g, "\\ ");
 		var keywordsDirPath = path.join(__dirname, "..", "postprocessors", "admininterfaces", "genericas", "keywords.json").replace(/\s/g, "\\ ");
-		
+
 		ContentController.saveToLog("Checking content dir...", gitStatusLogPath);
-		
+
+        // Do this command three times.
 		ContentController.checkAndUploadPathToGit(contentDirPath, function(err) {
 			if (err) {
 				return callback(err);
@@ -1066,35 +1068,32 @@ var ContentController = {
 					if (err) {
 						return callback(err);
 					}
-				
+
 					return callback();
 				});
 
 			});
-			
-			
+
+
 		});
-		
+
 	},
 	checkAndUploadPathToGit: function(contentDirPath, callback) {
 
 		var gitStatusLogPath = path.join(__dirname, "..", "public", "status", "github.json");
 
 		var gitStatus = shell.exec("git status " + contentDirPath + "", {silent: true}).output;
-		
+
 		var nrOfLines = gitStatus.split("\n").length;
 
 		if (nrOfLines <= 5) {
 			//No changed files
 			ContentController.saveToLog("There are no changes in the content tree for: " + contentDirPath, gitStatusLogPath);
-
-			//ContentController.saveToLog("Finished without uploading.", gitStatusLogPath);
-
 			return callback();
 
 		} else {
 
-			var upload = shell.exec("git add -A " + contentDirPath + " && git commit -m 'Auto commit' && git push", {async: true}, function(code, output) {
+			var upload = shell.exec("git add -A " + contentDirPath + " && git commit -m 'Auto commit' && git push origin master --force", {async: true}, function(code, output) {
 
 				if (code !== 0) {
 
@@ -1113,13 +1112,13 @@ var ContentController = {
 			upload.stdout.on("data", function(data) {
 				ContentController.saveToLog(data, gitStatusLogPath);
 			});
-			
+
 			upload.stderr.on("data", function(data) {
 				ContentController.saveToLog(data, gitStatusLogPath);
 			});
-			
+
 		}
-		
+
 	},
 	createHash: function(path, callback) {
 
@@ -1145,7 +1144,7 @@ var ContentController = {
 		});
 	},
 	createHashSync: function(path) {
-		
+
 		var hash = crypto.createHash("md5");
 
 		try {
@@ -1155,10 +1154,10 @@ var ContentController = {
 		}
 
 		return hash.digest("hex");
-		
+
 	},
 	getGUID: contentModel.getGUID
-	
+
 };
 
 
