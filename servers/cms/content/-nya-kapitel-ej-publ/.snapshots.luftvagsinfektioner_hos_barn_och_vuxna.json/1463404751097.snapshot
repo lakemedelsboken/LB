@@ -1287,28 +1287,6 @@
 			}
 		},
 		{
-			"id": "50bc6d0b-8518-490d-9319-cefcb9c8f53f",
-			"name": "50bc6d0b-8518-490d-9319-cefcb9c8f53f",
-			"type": "facts",
-			"content": {
-				"number": "12",
-				"title": "Måttskalor för bedömning av allvarlighetsgraden vid lunginflammation",
-				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td><strong>BAS 90&ndash;30&ndash;90<br /></strong><br /><strong>B</strong>lodtryck systoliskt &lt; 90 mm Hg<br /><strong>A</strong>ndningsfrekvens &gt; 30 andetag/min<br /><strong>S</strong>aturation &lt; 90% syrgassaturation m&auml;tt med pulsoximeter<br /><br />Patienter som har ett eller flera m&auml;tv&auml;rden som uppfyller kriterierna f&ouml;r BAS 90&ndash;30&ndash;90 ska utan f&ouml;rdr&ouml;jning till sjukhus. Andningsfrekvens &gt; 30 andetag/minut &auml;r ofta det f&ouml;rsta tecknet p&aring; sviktande vitala funktioner hos en patient med sv&aring;r infektion som lunginflammation.<br /><br /><br /><strong>CRB-65<br /></strong><br /><strong>C</strong> = konfusion eller s&auml;nkt medvetenhet<br /><strong>R</strong> = Andningsfrekvens &gt; 30 andetag/minut<br /><strong>B</strong> = Blodtryck &lt; 90 mm Hg systoliskt eller &lt; 60 mm Hg diastoliskt samt<br /><strong>65</strong> = &aring;lder 65 &aring;r eller &auml;ldre<br /><br />Varje uppfylld CRB-65-mark&ouml;r ger 1 po&auml;ng. Uppfyllda po&auml;ng adderas och en summa, 0&ndash;4 po&auml;ng, erh&aring;lls.<br /><br /><strong>0 CRB-65 po&auml;ng</strong>: mortalitetsrisken &auml;r l&aring;g och sjukhusv&aring;rd beh&ouml;vs inte av medicinska sk&auml;l.<br /><strong>1 CRB-65 po&auml;ng</strong>: mortalitetsrisk 0&ndash;14%. Sjukhusv&aring;rd &ouml;verv&auml;gs &aring;tminstone initialt.<br /><strong>2 CRB-65 po&auml;ng</strong>: mortalitetsrisk 10&ndash;21%. Sjukhusv&aring;rd.<br /><strong>3&ndash;4 CRB-65 po&auml;ng</strong>: mortalitetsrisk &gt; 20%. Intensivv&aring;rd b&ouml;r &ouml;verv&auml;gas.</td>\r\n</tr>\r\n</tbody>\r\n</table>",
-				"id": ""
-			},
-			"settings": {
-				"preprocessors": {
-					"idinjection.js": "false"
-				},
-				"postprocessors": {
-					"boxlinks.js": "false",
-					"genericas.js": "false",
-					"pagefootnotes.js": "false",
-					"references.js": "false"
-				}
-			}
-		},
-		{
 			"id": "90f9e916-9d39-42ae-9ac9-aad2c8b25faa",
 			"name": "90f9e916-9d39-42ae-9ac9-aad2c8b25faa",
 			"type": "text",
@@ -1725,5 +1703,5 @@
 	"type": "file",
 	"path": "/-nya-kapitel-ej-publ/luftvagsinfektioner_hos_barn_och_vuxna.json",
 	"indexed": "true",
-	"modified": "2016-05-16 15:29"
+	"modified": "2016-05-16 15:19"
 }
