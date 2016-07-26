@@ -9,6 +9,8 @@ var fs = require("fs-extra");
 var spawn = require("child_process").spawn;
 var dateFormat = require("dateformat");
 var cheerio = require("cheerio");
+var wrench = require("wrench");
+var urlObject = require("url");
 
 router.get("/createpage", function(req, res) {
 
@@ -1183,6 +1185,167 @@ router.get("/publishexternal", function(req, res) {
 	}, 5000);
 
 });
+
+router.get("/findincominglinks", function(req, res) {
+
+	//TODO: Widen search to include components
+
+	var url = req.query["url"];
+
+	if (url !== undefined && url !== "") {
+
+		var outputPath = path.join(contentController.baseDir, "..", "output");
+
+		var allFiles = wrench.readdirSyncRecursive(outputPath);
+		var foundPages = allFiles.filter(function(element) {
+			return path.extname(element) === ".html";
+		});
+
+		var linkingPages = [];
+
+		foundPages.forEach(function(item) {
+			
+			//Remove draft/ and published/ from path
+			var baseUrl = item.split(path.sep);
+			baseUrl.shift();
+			baseUrl = path.sep + baseUrl.join(path.sep);
+			
+			var links = findLinksToUrl(path.join(outputPath, item), baseUrl, url);
+			if (links.length > 0) {
+				linkingPages.push({path: item, links: links});
+			}
+		});
+
+		
+		res.json(linkingPages);
+		
+	} else {
+		res.json([]);
+	}
+
+});
+
+function findLinksToUrl(filePath, baseUrl, url) {
+	var tempDir = path.join(__dirname, "..", "tmp");
+	var checksum = historyModel.getFileChecksumSync(filePath);
+	
+	var precalcResultPath = path.join(tempDir, checksum + ".links");
+	
+	if (fs.existsSync(precalcResultPath)) {
+		//Already checked for links
+		var result = fs.readJsonSync(precalcResultPath, {throws: false});
+		if (result === null) {
+			return [];
+		} else {
+			return result;
+		}
+	} else {
+		//Find the links
+		var html = fs.readFileSync(filePath, "utf8");
+		var $ = cheerio.load(html);
+		
+		//Remove components
+		//TODO: Add .component class to components for a better filter
+		$("#sideContainer").remove();
+		
+		var foundLinks = [];
+		
+		$("a").each(function(index, item) {
+			var $item = $(item);
+			if ($item.attr("href") !== undefined) {
+				
+				var cleanedHref = $item.attr("href");
+				
+				//Remove parameters
+				if (cleanedHref.indexOf("?") > -1) {
+					cleanedHref = cleanedHref.split("?")[0];
+				}
+
+				//Remove slug
+				if (cleanedHref.indexOf("#") > -1) {
+					cleanedHref = cleanedHref.split("#")[0];
+				}
+
+				//Resolve relative paths
+				if (cleanedHref.indexOf("./") > -1) {
+					//console.log("Before:" + cleanedHref);
+					//console.log("baseUrl:" + baseUrl);
+					cleanedHref = urlObject.resolve(baseUrl, cleanedHref);
+					//console.log("After:" + cleanedHref);
+					//console.log(" ");
+				}
+				
+				//console.log("Checking: " + url + " : " + cleanedHref);
+				
+				if (cleanedHref === url) {
+					var fullLinkHtml = $("<div />").append($item.clone()).html();
+					var rawHref = $item.attr("href");
+					var closestId = getClosestId($, $item);
+
+					if (closestId.length === 1) {
+						closestId = closestId.attr("id");
+					} else {
+						closestId = "";
+					}
+					
+					var htmlContext = $item.parent().html();
+					var linkText = $item.text();
+
+					if (linkText.trim() === "") {
+						linkText = "LINK";
+					}
+					
+					htmlContext = htmlContext.replace(fullLinkHtml, " __" + linkText + "__ ");
+					
+					var context = $("<div>" + htmlContext + "</div>").text();
+					
+					foundLinks.push({html: fullLinkHtml, rawHref: rawHref, closestId: closestId, context: context});
+				}
+			}
+		});
+		
+		return foundLinks;
+		
+	}
+}
+
+function getClosestId($, $item) {
+	
+	var selector = "[id]";
+
+	var el = $item;
+
+	var match = $();
+	
+	while (el.length && !match.length) {
+		
+		if (el.attr("id") !== undefined) {
+			match = el;
+			break;
+		} else if (el.find(selector).length) {
+			match = el.find(selector).last();
+			break;
+		}
+
+		if (el.prev().length === 1) {
+			el = el.prev();
+		} else {
+
+			var par = el.parent();
+
+			if (par.length === 0) {
+				break;
+			} else {
+				el = par;
+			}
+
+		}
+
+	}
+
+	return match;
+}
+
 
 router.get("/tasksstatus", function(req, res) {
 

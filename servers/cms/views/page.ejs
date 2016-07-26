@@ -80,7 +80,7 @@
 			</ul>
 		</div>
 		<div class="col-sm-10 col-sm-offset-2 main">
-			<h1 class="page-header">Redigera sida: <small class="break"><%=id.replace(".json", "")%></small> <button class="btn btn-sm btn-primary pull-right" data-toggle="modal" data-target="#movePageModal"><i class="fa fa-file-o"></i> Flytta sida</button></h1>
+			<h1 class="page-header">Redigera sida: <small class="break"><%=id.replace(".json", "")%></small> <button class="btn btn-sm btn-primary pull-right" data-toggle="modal" data-target="#movePageModal"><i class="fa fa-file-o"></i> Flytta sida</button><button class="btn btn-sm btn-warning pull-right" data-toggle="modal" data-target="#checkLinksModal"><i class="fa fa-link"></i> Kontrollera länkar</button></h1>
 
 			<form class="form-horizontal" role="form" id="pageForm" action="/cms/content/savepage" method="post" autocomplete="off">
 
@@ -357,6 +357,30 @@
 				%>
 			</form>
 
+		</div>
+	</div>
+</div>
+
+<div class="modal"  tabindex="-1" role="dialog" aria-labelledby="Kontrollera länkar" id="checkLinksModal" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<form action="/cms/content/findincominglinks" method="get" class="form-horizontal" role="form" autocomplete="off">
+					<h4>Kontrollera länkar till: <input class="form-control" name="url" type="text" value="<%=id.replace(".json", ".html")%>"></h4>
+
+
+					<div>
+						<div>
+							<button type="submit" id="findIncomingLinks" class="btn btn-primary btn-block"><i class="fa fa-list"></i> <span class="text">Hitta sidor med länkar</span></a>
+						</div>
+						<div class="panel hidden" id="incomingLinksInformation">
+						
+						</div>
+						<ul id="incomingLinks" class="list-group hidden"></ul>
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
 </div>

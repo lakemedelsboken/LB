@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	$.ajaxSetup({cache: false});
+
 	function getUrlParameter(sParam) {
 		var sPageURL = window.location.search.substring(1);
 		var sURLVariables = sPageURL.split('&');
@@ -13,7 +15,136 @@ $(document).ready(function() {
 		}
 	}
 
-	//Publish external
+	//Show internal links to this url
+	$("button#findIncomingLinks").on("click", function(event) {
+		
+		event.preventDefault();
+
+		//Show loading indicator
+
+		var button = $(this);
+		button.find("i").first().removeClass("fa-list").addClass("fa-refresh").addClass("fa-spin");
+		button.attr("disabled", "disabled");
+		button.find("span.text").text("Hämtar information...");
+
+		//Clear output
+		var list = $("#incomingLinks");
+		list.children().remove();
+		
+		var currentForm = button.parents("form").first();
+		var currentUrl = currentForm.find("input").first().val();
+		
+		var getUrl = currentForm.attr("action") + "?url=" + currentUrl;
+		
+		$.getJSON(getUrl, function(data, textStatus, xhr) {
+
+			button.find("i").first().removeClass("fa-spin").removeClass("fa-refresh").addClass("fa-list");
+			button.removeAttr("disabled");
+			button.find("span.text").text("Hitta sidor med länkar");
+
+			list.removeClass("hidden");
+			$("#incomingLinksInformation").removeClass("hidden");
+
+			for (var i = 0; i < data.length; i++) {
+				var item = data[i];
+				
+				item.state = "";
+				
+				if (item.path.indexOf("draft/") === 0) {
+					item.state = "Utkast";
+					item.path = item.path.replace("draft/", "/");
+				}
+
+				if (item.path.indexOf("published/") === 0) {
+					item.state = "Publicerad";
+					item.path = item.path.replace("published/", "/");
+				}
+
+			}
+
+			//Sort by path alphabetically
+			data.sort(function(a, b) {
+				if(a.path < b.path) return -1;
+				if(a.path > b.path) return 1;
+				return 0;
+			});
+			
+			//Build output
+			for (var i = 0; i < data.length; i++) {
+				var item = data[i];
+
+				var state = "";
+				if (item.state.length > 0) {
+					state = "<span class=\"badge\">" + item.state + "</span>";
+
+					if (item.state === "Publicerad") {
+						state = "<span class=\"badge progress-bar-info\">" + item.state + "</span>";
+					}
+
+				}
+
+				var listItem = $("<li class=\"list-group-item\" />");
+				
+				listItem.append($(state + "<h5 class=\"list-group-item-heading\"><strong>" + item.path + "</strong></h5>"));
+
+				var linksButtonText = item.links.length + " länkar, visa mer information";
+
+				if (item.links.length === 1) {
+					var linksButtonText = item.links.length + " länk, visa mer information";
+				}
+
+				var buttons = $("<div class=\"btn-group btn-group-justified\" role=\"group\" />");
+
+				var linksInformation = $("<div class=\"btn-group\" role=\"group\"><button class=\"btn btn-primary\" type=\"button\" data-toggle=\"collapse\" data-target=\"#page_" + i + "\" aria-expanded=\"false\" aria-controls=\"page_" + i + "\">" + linksButtonText + "</button></div>");
+				var editInformation = $("<div class=\"btn-group\" role=\"group\"><a class=\"btn btn-success\" target=\"_blank\" href=\"/cms/" + item.path.replace(".html", ".json") + "\">Redigera sida (öppnas i nytt fönster)</a></div>");
+
+				buttons.append(linksInformation);
+				buttons.append(editInformation);
+				
+				listItem.append(buttons);
+
+				var listedLinks = $("<div class=\"listedLinks collapse\" id=\"page_" + i + "\" />");
+
+				for (var j = 0; j < item.links.length; j++) {
+					var link = item.links[j];
+
+					var linkToRenderedPage = "/cms/draft" + item.path + "?id=" + link.closestId + "#" + link.closestId;
+					
+					if (item.state === "Publicerad") {
+						linkToRenderedPage = item.path + "?id=" + link.closestId + "#" + link.closestId;
+					}
+					
+					var linkRepresentation = $("<div class=\"panel panel-default\"><div class=\"panel-heading\"><a href=\"" + linkToRenderedPage + "\" target=\"_blank\">" + (j + 1) + ". Visa närmsta rubrik (öppnas i nytt fönster)</a></div><div class=\"panel-body\"><small>" + link.context + "</small></div></div>");
+					
+					listedLinks.append(linkRepresentation);
+					
+				}
+
+				listItem.append(listedLinks);
+				
+				list.append(listItem);
+			}
+			
+			//No incoming links
+			if (data.length === 0) {
+				list.append($("<li class=\"list-group-item\">Hittade inga länkar till url: " + currentUrl + "</li>"));
+				
+			}
+
+		})
+		.fail(function() {
+			button.find("i").first().removeClass("fa-spin").removeClass("fa-refresh").addClass("fa-list");
+			button.removeAttr("disabled");
+			button.find("span.text").text("Ett fel inträffade");
+
+			console.log("Error fetching incoming links");
+		});
+		
+		
+	});
+
+
+	//Show diffing files compared to published version
 	$("a#showUnpublishedFiles").on("click", function(event) {
 		
 		event.preventDefault();
