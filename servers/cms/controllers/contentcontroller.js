@@ -10,6 +10,8 @@ var extend = require("node.extend");
 var shell = require("shelljs");
 var imageController = require("./imagecontroller");
 
+var updatedPages = require('../helpers/updatedPages');
+
 function Publisher(options) {
 
 	var self = this;
@@ -93,10 +95,25 @@ var ContentController = {
 		contentModel.renderPageDraft(contentPath, renderDependencies, callback);
 	},
 	publishPage: function(pagePath, callback) {
-		contentModel.publishPage(pagePath, callback);
+		contentModel.publishPage(pagePath, function (err) {
+
+			if (!err) {
+				// Add to updatedPages.json.
+				updatedPages.add(pagePath);
+			}
+
+			callback(err);
+		});
 	},
 	unpublishPage: function(pagePath, callback) {
-		contentModel.unpublishPage(pagePath, callback);
+		contentModel.unpublishPage(pagePath, function (err) {
+			if (!err) {
+				// Add to updatedPages.json.
+				updatedPages.add(pagePath);
+			}
+
+			callback(err);
+		});
 	},
 	getContent: function(contentPath, callback) {
 		contentModel.getContent(contentPath, callback);
@@ -159,6 +176,9 @@ var ContentController = {
 					if (err) {
 						return callback(err);
 					}
+
+					// Remove from updatedPages.json.
+					updatedPages.remove(pagePath);
 
 					//Exit OK
 					return callback();
@@ -367,7 +387,14 @@ var ContentController = {
 		contentModel.createPage(pageName, pageType, baseDir, callback);
 	},
 	removePage: function(pagePath, callback) {
-		contentModel.removePage(pagePath, callback);
+		contentModel.removePage(pagePath, function (err) {
+			if (!err) {
+				// Add to updatedPages.json.
+				updatedPages.add(pagePath);
+			}
+
+			callback(err);
+		});
 	},
 	movePage: contentModel.movePage,
 	rename: function(before, after, callback) {
@@ -441,6 +468,15 @@ var ContentController = {
 				}
 			}
 
+			// Get the manually updated pages and make them into a map. OBS Remove the '/'
+			var updatedPagesList = updatedPages.list();
+			var updatedPagesMap = {};
+
+			updatedPagesList.forEach(function (item) {
+				item = item.substring(1);
+				updatedPagesMap[item] = true;
+			});
+
 			//Files that only exist in the last published payload are deleted
 			var deletedFiles = JSON.parse(JSON.stringify(lastPayload));
 
@@ -456,7 +492,6 @@ var ContentController = {
 					}
 				}
 			}
-
 
 			//Fix relative path
 			cleanedPayload.forEach(function(item) {
@@ -487,12 +522,26 @@ var ContentController = {
 			var affectedFiles = [];
 
 			for (var i = 0; i < deletedFiles.length; i++) {
-				affectedFiles.push("DELETED " + deletedFiles[i].relativePath);
+
+				if (updatedPagesMap[deletedFiles[i].relativePath] === true) {
+					affectedFiles.unshift("DELETED CHANGED " + deletedFiles[i].relativePath);
+				} else {
+					affectedFiles.unshift("DELETED " + deletedFiles[i].relativePath);
+				}
+
+
 			}
 
 			for (var i = 0; i < cleanedPayload.length; i++) {
-				affectedFiles.push(cleanedPayload[i].relativePath);
+				if (updatedPagesMap[cleanedPayload[i].relativePath] === true) {
+					affectedFiles.unshift("CHANGED " + cleanedPayload[i].relativePath);
+				} else {
+					affectedFiles.push(cleanedPayload[i].relativePath);
+				}
+
 			}
+
+
 
 			return callback(null, affectedFiles);
 

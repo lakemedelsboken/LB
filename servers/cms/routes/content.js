@@ -9,13 +9,14 @@ var fs = require("fs-extra");
 var spawn = require("child_process").spawn;
 var dateFormat = require("dateformat");
 var cheerio = require("cheerio");
+var updatedPages = require('../helpers/updatedPages');
 
 router.get("/createpage", function(req, res) {
 
 	var pageName = req.query["pagename"];
 	var pageType = req.query["pagetype"];
 	var baseDir = req.query["basedir"];
-	
+
 	if (pageName !== undefined && pageType !== undefined && pageType !== "" && baseDir !== undefined && pageName !== "" && baseDir !== "") {
 		contentController.createPage(pageName, pageType, baseDir, function(err) {
 			if (err) {
@@ -39,6 +40,7 @@ router.get("/publishpage", function(req, res) {
 	var pagePath = req.query["pagepath"];
 
 	contentController.publishPage(pagePath, function(err) {
+		console.log(pagePath);
 		if (err) {
 			res.status(err.status || 500);
 			res.render('error', {
@@ -72,7 +74,6 @@ router.get("/revertolastpublished", function(req, res) {
 });
 
 router.get("/revertosnapshot", function(req, res) {
-	console.log("here");
 
 	var pagePath = req.query["pagepath"];
 	var version = req.query["version"];
@@ -122,7 +123,7 @@ router.get("/removepage", function(req, res) {
 		returnPath.pop();
 	}
 	returnPath = returnPath.join("/");
-	
+
 	if (pagePath !== undefined && pagePath !== "") {
 		contentController.removePage(pagePath, function(err) {
 			if (err) {
@@ -146,7 +147,7 @@ router.get("/movepage", function(req, res) {
 	var fromPath = req.query["frompath"];
 	var pageName = req.query["pageName"];
 	var pageDir = req.query["pageDir"];
-	
+
 	if (pageName !== undefined && pageName !== "" && pageDir !== undefined && pageDir !== "" && fromPath !== undefined && fromPath !== "") {
 		contentController.movePage(fromPath, pageDir, pageName, function(err) {
 			if (err) {
@@ -189,15 +190,15 @@ router.post("/savepage", function(req, res) {
 						if (key.indexOf("edit:") === 0) {
 							//Page content
 							var itemName = key.replace("edit:", "");
-							
+
 							var subContentName = null;
-							
+
 							if (itemName.indexOf(":") > -1) {
 								itemName = itemName.split(":");
 								subContentName = itemName[1];
 								itemName = itemName[0];
 							}
-							
+
 							//Find item in list of editable items
 							var item = contentController.findEditableItemByName(itemName, data.content);
 
@@ -206,7 +207,7 @@ router.post("/savepage", function(req, res) {
 								if (subContentName) {
 
 									item.content[subContentName] = body[key];
-									
+
 									if (body[key] && Object.prototype.toString.call(body[key]) === '[object Array]') {
 										//Pick the last item
 										item.content[subContentName] = body[key][body[key].length - 1].replace(/\r/g, "");
@@ -214,17 +215,17 @@ router.post("/savepage", function(req, res) {
 								} else {
 									item.content = body[key].replace(/\r/g, "");
 								}
-								
+
 								var contentViews = contentController.getContentTypes()[item.type];
 								item = contentViews.preProcess(item);
-								
+
 							}
-							
+
 						} else if (key.indexOf("component:") === 0) {
-							
+
 							var componentName = key.replace("component:", "");
 							var componentValue = body[key];
-							
+
 							if (data.components === undefined) {
 								data.components = {};
 							}
@@ -238,7 +239,7 @@ router.post("/savepage", function(req, res) {
 
 							var subSettingName = null;
 							var subSubSettingName = null;
-							
+
 							if (itemName.indexOf(":") > -1) {
 								itemName = itemName.split(":");
 								subSettingName = itemName[1];
@@ -247,16 +248,16 @@ router.post("/savepage", function(req, res) {
 								}
 								itemName = itemName[0];
 							}
-							
+
 							//console.log(itemName + " : " + subSettingName + " : " + subSubSettingName + " = " + itemValue);
-							
+
 							var item = contentController.findEditableItemByName(itemName, data.content);
-							
+
 							if (item) {
 								if (item.settings[subSettingName] === undefined) {
 									item.settings[subSettingName] = {};
 								}
-								
+
 								if (item.settings[subSettingName] instanceof Array) {
 									item.settings[subSettingName] = {};
 								}
@@ -268,7 +269,7 @@ router.post("/savepage", function(req, res) {
 								item.settings[subSettingName][subSubSettingName] = itemValue;
 
 							}
-							
+
 						} else {
 							//Metadata
 							if (Object.prototype.toString.call(body[key]) === '[object Array]') {
@@ -307,7 +308,7 @@ router.post("/savepage", function(req, res) {
 
 					}
 				});
-				
+
 			}
 		});
 	}
@@ -318,7 +319,7 @@ router.get("/mkdir", function(req, res) {
 
 	var dirName = req.query["dirname"];
 	var baseDir = req.query["basedir"];
-	
+
 	if (dirName !== undefined && baseDir !== undefined && dirName !== "" && baseDir !== "") {
 		contentController.mkdir(dirName, baseDir, function(err) {
 			if (err) {
@@ -349,7 +350,7 @@ router.get("/rmdir", function(req, res) {
 		returnPath.pop();
 	}
 	returnPath = returnPath.join("/");
-	
+
 	if (dirName !== undefined && dirName !== "") {
 		contentController.rmdir(dirName, function(err) {
 			if (err) {
@@ -419,7 +420,7 @@ router.get("/rename", function(req, res) {
 
 	var before = req.query["before"];
 	var after = req.query["after"];
-		
+
 	if (before !== undefined && before !== "" && after !== undefined && after !== "") {
 		contentController.rename(before, after, function(err) {
 			if (err) {
@@ -441,7 +442,7 @@ router.get("/removecontentitemfrompage", function(req, res) {
 
 	var pageId = req.query["pagepath"];
 	var contentName = req.query["contentname"];
-	
+
 	if (pageId !== undefined && pageId !== "" && contentName !== undefined && contentName !== "") {
 		contentController.removeContentItemFromPage(contentName, pageId, function(err) {
 			if (err) {
@@ -457,8 +458,8 @@ router.get("/removecontentitemfrompage", function(req, res) {
 	} else {
 		res.redirect("back");
 	}
-	
-	
+
+
 });
 
 router.get("/clearcaches", function(req, res) {
@@ -474,7 +475,7 @@ router.get("/clearcaches", function(req, res) {
 			res.redirect("back");
 		}
 	});
-	
+
 });
 
 router.get("/savecontenttogithub", function(req, res) {
@@ -490,7 +491,7 @@ router.get("/savecontenttogithub", function(req, res) {
 			res.redirect("back");
 		}
 	});
-	
+
 });
 
 
@@ -500,7 +501,7 @@ router.get("/addcontentitemtopage", function(req, res) {
 	var pageId = req.query["page"];
 	var contentType = req.query["contenttype"];
 	var insertAfterId = req.query["insertafter"];
-		
+
 	if (pageId !== undefined && pageId !== "" && contentType !== undefined && contentType !== "") {
 		contentController.addContentItemToPage(contentType, pageId, insertAfterId, function(err, createdId) {
 			if (err) {
@@ -527,7 +528,7 @@ router.get("/movecontentitemup", function(req, res) {
 
 	var pageId = req.query["pagepath"];
 	var contentName = req.query["contentname"];
-	
+
 	if (pageId !== undefined && pageId !== "" && contentName !== undefined && contentName !== "") {
 		contentController.moveContentItemUp(contentName, pageId, function(err, itemId) {
 			if (err) {
@@ -548,14 +549,14 @@ router.get("/movecontentitemup", function(req, res) {
 	} else {
 		res.redirect("back");
 	}
-	
+
 });
 
 router.get("/movecontentitemdown", function(req, res) {
 
 	var pageId = req.query["pagepath"];
 	var contentName = req.query["contentname"];
-	
+
 	if (pageId !== undefined && pageId !== "" && contentName !== undefined && contentName !== "") {
 		contentController.moveContentItemDown(contentName, pageId, function(err, itemId) {
 			if (err) {
@@ -577,18 +578,18 @@ router.get("/movecontentitemdown", function(req, res) {
 	} else {
 		res.redirect("back");
 	}
-	
+
 });
 
 router.get("/diff", function(req, res) {
 
 	var current = req.query["current"];
 	var previous = req.query["previous"];
-	
+
 	var result = {html: ""};
-	
+
 	if (current !== undefined && current !== "" && previous !== undefined && previous !== "") {
-		
+
 		contentController.getContent(current, function(err, currentPage) {
 			if (err) {
 				res.json(result);
@@ -602,27 +603,27 @@ router.get("/diff", function(req, res) {
 
 				previousPage.type = currentPage.type;
 				previousPage.path = currentPage.path;
-				
+
 				var delta = jsondiffpatch.create().diff(previousPage, currentPage);
-				
+
 				result.html = jsondiffpatch.formatters.html.format(delta, currentPage);
 				result.html = result.html.replace(/\\r/g, "").replace(/\\n/g, "<br>");
-				
+
 				res.json(result);
-				
+
 			});
 		});
-		
+
 	} else {
 		res.json(result);
 	}
-	
+
 });
 
 router.post("/files/upload", function(req, res) {
 
 	req.connection.setTimeout(1000 * 60 * 30); //30 minutes
-	
+
 	var dir = req.body["basedir"];
 
 	//Move file to correct path
@@ -632,7 +633,7 @@ router.post("/files/upload", function(req, res) {
 		if (file.originalname !== "") {
 			var safeFileName = file.originalname;
 			var newFilePath = path.join(contentController.baseDir, dir, safeFileName);
-			
+
 			fs.renameSync(file.path, newFilePath);
 			var draftOutputDirPath = path.join(contentController.baseDir, "..", "output", "draft", dir);
 			var draftOutputFilePath = path.join(draftOutputDirPath, safeFileName);
@@ -665,7 +666,7 @@ router.get("/files/publishfile", function(req, res) {
 	var filePath = req.query["filepath"];
 
 	//var returnPath = req.get("Referrer");
-	
+
 	if (filePath !== undefined && filePath !== "") {
 		fileController.publishFile(filePath, function(err) {
 			if (err) {
@@ -689,7 +690,7 @@ router.get("/files/unpublishfile", function(req, res) {
 	var filePath = req.query["filepath"];
 
 	//var returnPath = req.get("Referrer");
-	
+
 	if (filePath !== undefined && filePath !== "") {
 		fileController.unpublishFile(filePath, function(err) {
 			if (err) {
@@ -720,7 +721,7 @@ router.get("/files/removefile", function(req, res) {
 		returnPath.pop();
 	}
 	returnPath = returnPath.join("/");
-	
+
 	if (filePath !== undefined && filePath !== "") {
 		fileController.removeFile(filePath, function(err) {
 			if (err) {
@@ -756,18 +757,18 @@ router.get("/pdf/download", function(req, res) {
 		var draftOrPublish = (url.indexOf("/cms/draft/") === 0) ? "draft" : "publish";
 
 		var newFileName = path.basename(url, ".html") + "-" + draftOrPublish + "-" + fileNameDate + ".pdf";
-		
+
 		var cookies = [];
-		
+
 		for (var cookie in req.cookies) {
 			cookies.push("--cookie");
 			cookies.push(encodeURIComponent(cookie));
 			cookies.push(encodeURIComponent(req.cookies[cookie]));
 		}
-		
+
 		var arguments = ["--print-media-type", "--disable-smart-shrinking", "--zoom", "0.7", "--dpi", "240", "-n", "--viewport-size", "950"];
 		//"--no-background",
-		
+
 		arguments = arguments.concat(cookies);
 
 		arguments = arguments.concat(["--footer-font-size", 8]);
@@ -777,7 +778,7 @@ router.get("/pdf/download", function(req, res) {
 		//arguments = arguments.concat(["--header-left", "Läkemedelsboken - " + draftOrPublish]);
 		//arguments = arguments.concat(["--footer-left", printDate]);
 		//arguments = arguments.concat(["--footer-right", "[page]/[toPage]"]);
-		
+
 		arguments.push("http://localhost" + url)
 		arguments.push(outPath);
 
@@ -811,7 +812,7 @@ router.get("/pdf/download", function(req, res) {
 				res.download(outPath, newFileName);
 
 			}
-		});	
+		});
 
 		converter.on('error', function (err) {
 
@@ -826,7 +827,7 @@ router.get("/pdf/download", function(req, res) {
 				});
 			}
 		});
-		
+
 	} else {
 		res.redirect("back");
 	}
@@ -858,10 +859,10 @@ router.get("/docx/download", function(req, res) {
 		} else {
 			baseUrl = path.join(baseUrl, "published");
 		}
-		
+
 		url = url.replace("/cms/draft", "");
 		url = path.join(baseUrl, url);
-		
+
 		if (!fs.existsSync(url)) {
 			console.log('Could not find path: ' + url);
 			hasExited = true;
@@ -874,17 +875,17 @@ router.get("/docx/download", function(req, res) {
 			});
 			return;
 		}
-		
+
 		var tempDir = require("os").tmpdir();
 		var tempHtmlPath = path.join(tempDir, contentController.getGUID() + ".html");
-		
+
 		//Reformat the html for docx output
 		var oldHtml = fs.readFileSync(url, "utf8");
 		var $ = cheerio.load(oldHtml);
-		
+
 		//Remove left side container
 		$("#sideContainer").remove();
-		
+
 		//Fix image links
 		var currentVersion = JSON.parse(fs.readFileSync(path.join(contentController.baseDir, "..", "output", "static", "settings.json"))).version;
 		$("img").each(function(index, item) {
@@ -894,37 +895,37 @@ router.get("/docx/download", function(req, res) {
 			var relativeBaseDir = path.join(contentController.baseDir, "..", "output", "static");
 			var fromImagePath = path.join(relativeBaseDir, relativeImagePath);
 			var toImagePath = path.join(tempDir, contentController.getGUID() + ".png");
-			
+
 			console.log("Copy from: " + fromImagePath);
 			console.log("To: " + toImagePath);
-			
+
 			fs.copySync(fromImagePath, toImagePath, {clobber: true});
 			$(item).attr("src", toImagePath);
 		});
-		
+
 		//Remove ATC-links
 		$("a.inlineGenerica").each(function(index, item) {
 			$(item).replaceWith($(item).text());
 		});
-		
+
 		//Remove footer
 		$("footer").remove();
-		
+
 		//Remove box collection
 		$("#boxCollection").remove();
-		
+
 		//Remove search result
 		$("#searchResults").remove();
 
 		//Remove modalMed
 		$("#modalMed").remove();
-		
+
 		//Remove the title, the metadata title will be used
 		$("h1").first().remove();
 
 		//Remove authors, metadata authors will be used
 		$("p.authors").remove();
-		
+
 		//Remove links concerning authors disclosure
 		$(".authorsDisclosure").remove();
 
@@ -983,18 +984,18 @@ router.get("/docx/download", function(req, res) {
 				}
 			}
 		});
-		
+
 		//Insert lines before and after figures
 		$("div.figure").before("<hr>").after("<hr>");
 
 		//Write temp html file
 		console.log("Writing temp html file: " + tempHtmlPath);
 		fs.writeFileSync(tempHtmlPath, $.html(), "utf8");
-		
+
 		var newFileName = path.basename(url, ".html") + "-" + draftOrPublish + "-" + fileNameDate + ".docx";
-		
+
 		var arguments = ["-S", tempHtmlPath, "-o", outPath];
-		
+
 		var hasExited = false;
 		var converter = spawn('pandoc', arguments);
 
@@ -1022,36 +1023,36 @@ router.get("/docx/download", function(req, res) {
 				hasExited = true;
 
 				//Everything is ok, now merge some table columns that pandoc is unable to handle
-				
+
 				//Read the zip file
 				var AdmZip = require("adm-zip");
 				fs.renameSync(outPath, outPath + ".zip");
 
 				var zip = new AdmZip(outPath + ".zip");
-								
+
 				//Open filename/word/document.xml
 				var unzippedFolderPath = outPath.replace(".docx", "/");
 				zip.extractAllTo(unzippedFolderPath);
-				
+
 				var contents = fs.readFileSync(path.join(unzippedFolderPath, "word", "document.xml"), "utf8");
 				var $ = cheerio.load(contents, {xmlMode: true});
-				
+
 				var empties = [];
-				
+
 				//Find <w:t xml:space="preserve">{EMPTY}</w:t>
 				$("w\\:tc:contains({EMPTY})").each(function() {
-					
+
 					var alsoEmpty = $(this).nextAll();
 					var toBeExtended = $(this).prev();
 
 					empties.push($(this));
-					
+
 					var lengthToExpand = 2 + alsoEmpty.length;
-					
+
 					//Remove empty ones
 					alsoEmpty.remove();
 					$(this).remove();
-					
+
 					//Find <w:tcPr>
 					var designer = toBeExtended.children().first();
 					if (designer.length === 1) {
@@ -1060,29 +1061,29 @@ router.get("/docx/download", function(req, res) {
 						designer.append('<w:gridSpan w:val="' + lengthToExpand + '"/>');
 
 					}
-					
-				
+
+
 				});
-				
+
 				//Fix case for gridSpan
 				var outputDocXml = $.xml().replace(/gridspan/g, "gridSpan");
-				
+
 				//Re add to zip file
 				fs.writeFileSync(path.join(unzippedFolderPath, "word", "document.xml"), outputDocXml, "utf8");
-				
-				//TODO: Replace AdmZip as it is flaky. 
+
+				//TODO: Replace AdmZip as it is flaky.
 				//Resulting zip files need to be repaired by Word and the api isn't working as intended, hence the full unzip and rezip
 				zip = new AdmZip();
 				zip.addLocalFolder(unzippedFolderPath);
-				
+
 				zip.writeZip(outPath + ".1.zip");
-				
+
 				fs.renameSync(outPath + ".1.zip", outPath);
-				
+
 				res.download(outPath, newFileName);
 
 			}
-		});	
+		});
 
 		converter.on('error', function (err) {
 
@@ -1097,7 +1098,7 @@ router.get("/docx/download", function(req, res) {
 				});
 			}
 		});
-		
+
 	} else {
 		res.redirect("back");
 	}
@@ -1118,7 +1119,7 @@ router.get("/recreateall", function(req, res) {
 //			res.sendStatus(200);
 		}
 	});
-	
+
 //	res.redirect("/cms/content/tasksstatus");
 	res.status(200).end();
 
@@ -1127,14 +1128,14 @@ router.get("/recreateall", function(req, res) {
 router.get("/getunpublishedfiles", function(req, res) {
 
 	contentController.getUnpublishedFiles(function(err, data) {
-
+		console.log(data);
 		if (err) {
 			res.status(500);
 			res.render('error', {
 				message: err.message,
 				error: err
 			});
-			
+
 		} else {
 			res.json(data);
 		}
@@ -1170,11 +1171,12 @@ router.get("/publishexternal", function(req, res) {
 		} else {
 			if (!sentStatus) {
 				sentStatus = true;
+				updatedPages.clear();
 				res.status(200).end();
 			}
 		}
 	});
-	
+
 	setTimeout(function() {
 		if (!sentStatus) {
 			sentStatus = true;
