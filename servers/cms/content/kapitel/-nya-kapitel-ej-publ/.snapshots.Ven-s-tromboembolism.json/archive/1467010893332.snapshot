@@ -1,0 +1,996 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Venös tromboembolism",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2016-03-08 07:20",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Bengt Zöller, Peter J Svensson",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "c5e917a7-7ee3-47fa-8b9b-d70e87f1e6a9",
+			"name": "01a126b3-b408-407f-ab27-bdb5eb657ce1",
+			"type": "text",
+			"content": "<h1 id=\"Venos-tromboembolism\">Ven&ouml;s tromboembolism</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "cc00db85-8fbe-4649-b51c-d440b189892e",
+			"name": "40c153d6-e2d6-4928-a374-fa0abb5e9fb6",
+			"type": "author",
+			"content": {
+				"firstname": "Bengt",
+				"surname": "Zöller",
+				"description": "Centrum för Primärvårdsforskning, Region Skåne/Lunds Universitet",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2127c5b9-399c-46cb-87b2-21cec59ca7cc",
+			"name": "2127c5b9-399c-46cb-87b2-21cec59ca7cc",
+			"type": "author",
+			"content": {
+				"firstname": "Peter J",
+				"surname": "Svensson",
+				"description": "Koagulationscentrum, Skånes Universitetssjukhuset Malmö/ Lunds Universitet",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "22350a9a-ec13-441c-a2e2-a8959434bc37",
+			"name": "17d72709-c358-403e-a289-49f9d2577e05",
+			"type": "text",
+			"content": "<h2 class=\"ingress\" id=\"Inledning\">Inledning</h2>\n<p class=\"ingress\" id=\"Venos-tromboembolism-VTE-ar-den-tredje-vanligaste-kardiovaskulara-sjukdomen-efter-kranskarlsjukdom-och-stroke-Risken-for-VTE-okar-med-aldern-och-totalt-kommer-5-10-av-befolkningen-att-drabbas-VTE-ar-en-potentiellt-allvarlig-sjukdom-med-risk-for-letal-lungemboli-Symtomen-kan-vara-svarvarderade-varfor-enbart-klinisk-diagnostik-inte-ar-tillracklig-Behandling-med-antikoagulationslakemedel-ar-effektiv-men-risk-for-komplikation-i-form-av-blodning-foreligger-Riskvardering-ar-nodvandig-for-att-bestamma-behandlingstidens-langd-da-VTE-ofta-ar-en-recidiverande-sjukdom-\">Ven&ouml;s tromboembolism (VTE) &auml;r den tredje vanligaste kardiovaskul&auml;ra sjukdomen efter kransk&auml;rlsjukdom och stroke. Risken f&ouml;r VTE &ouml;kar med &aring;ldern och totalt kommer 5&ndash;10&nbsp;% av befolkningen att drabbas. VTE &auml;r en potentiellt allvarlig sjukdom med risk f&ouml;r letal lungemboli. Symtomen kan vara sv&aring;rv&auml;rderade, varf&ouml;r enbart klinisk diagnostik inte &auml;r tillr&auml;cklig. Behandling med antikoagulationsl&auml;kemedel &auml;r effektiv men risk f&ouml;r komplikation i form av bl&ouml;dning f&ouml;religger. Riskv&auml;rdering &auml;r n&ouml;dv&auml;ndig f&ouml;r att best&auml;mma behandlingstidens l&auml;ngd, d&aring; VTE ofta &auml;r en recidiverande sjukdom.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9ba14251-afd3-4646-b0e1-148daa5faf76",
+			"name": "9ba14251-afd3-4646-b0e1-148daa5faf76",
+			"type": "text",
+			"content": "<h2 id=\"Kliniska-manifestationer\">Kliniska manifestationer</h2>\n<p>VTE &auml;r en sjukdom med m&aring;nga ansikten, alltifr&aring;n asymtomatisk trombos till pl&ouml;tslig d&ouml;d p&aring; grund av massiv lungemboli (Faktaruta 1)(1). Symtomen kan vara akuta men ocks&aring; sekund&auml;ra till kroniska komplikationer, som kronisk pulmonell hypertension och posttrombotiskt syndrom. <span style=\"color: #ff0000;\">Djup ventrombos i benen (DVT) och lungemboli (LE) st&aring;r tillsammans f&ouml;r majoriteten av VTE-fallen (&gt;&nbsp;90&nbsp;%).</span> Betydligt ovanligare trombosmanifestationer &auml;r ven&ouml;s trombos i armen, sinustrombos (trombos i hj&auml;rnans ven&ouml;sa system), mesenterialvenstrombos, portavenstrombos, levervenstrombos (Budd-Chiaris Syndrom) och njurvenstrombos.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0f5bb675-3e78-4209-895e-3c92b5b8489b",
+			"name": "0f5bb675-3e78-4209-895e-3c92b5b8489b",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "VTE är en sjukdom med många ansikten",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>Asymtomatisk ven&ouml;s tromboembolism</td>\r\n</tr>\r\n<tr>\r\n<td>Symtomatisk djup ven&ouml;s tromboembolism</td>\r\n</tr>\r\n<tr>\r\n<td>Ytlig trombos eller tromboflebit</td>\r\n</tr>\r\n<tr>\r\n<td>Lungembolism</td>\r\n</tr>\r\n<tr>\r\n<td>Pl&ouml;tslig d&ouml;d (mors subita)</td>\r\n</tr>\r\n<tr>\r\n<td>Kronisk pulmonell hypertension</td>\r\n</tr>\r\n<tr>\r\n<td>Kronisk ven&ouml;s insufficiens (posttrombotiskt syndrom</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "81267439-73e9-470c-a7e8-88d0a392d06b",
+			"name": "81267439-73e9-470c-a7e8-88d0a392d06b",
+			"type": "text",
+			"content": "<h2 id=\"Epidemiologi\">Epidemiologi</h2>\n<p>Incidensen av VTE &auml;r 1&ndash;3 per 1&nbsp;000 inv&aring;nare och &aring;r, varav 65&ndash;70 % utg&ouml;rs av DVT och 25&ndash;30&nbsp;% av LE. Av &ouml;vriga ven&ouml;sa tromboser representerar armtrombos 1&ndash;5 % av all VTE med en ber&auml;knad incidens p&aring; 2&ndash;4 per 100&nbsp;000 inv&aring;nare och &aring;r. VTE i porta och mesenterialk&auml;rl &auml;r ovanligt med en incidens p&aring; omkring 2&nbsp;per 100&nbsp;000 inv&aring;nare och &aring;r. Ven&ouml;s trombos inom CNS &auml;r mycket ovanlig med en uppskattad incidens p&aring; 3&ndash;4 per 1 000 000 inv&aring;nare och &aring;r och representerar &lt;&nbsp;2&nbsp;% av alla stroke.</p>\n<p><br>I Sverige v&aring;rdas mer &auml;n 11&nbsp;000 patienter p&aring; sjukhus f&ouml;r VTE. D&auml;rtill avlider cirka 1&nbsp;000 patienter &aring;rligen till f&ouml;ljd av lungemboli. Antalet l&auml;karbes&ouml;k i &ouml;ppen v&aring;rd har uppskattas till cirka 40&nbsp;000. VTE &auml;r ovanligt hos personer under 15 &aring;r, med en incidens p&aring; mindre &auml;n 1 per 100&nbsp;000 inv&aring;nare och &aring;r, f&ouml;r att sedan i &aring;ldersgruppen upp till 50 &aring;r vara 1&ndash;2 per 10&nbsp;000 inv&aring;nare och &aring;r. Vid 80 &aring;rs &aring;lder &auml;r incidensen cirka 1 per 100 inv&aring;nare och &aring;r.</p>\n<p><br>Bland yngre individer &auml;r VTE vanligare hos fertila kvinnor och i den &auml;ldre &aring;ldersgruppen &auml;r VTE lite vanligare hos m&auml;n. Att kvinnor insjuknar n&aring;got tidigare &auml;r fr&auml;mst relaterat till graviditet, puerperium och p-pilleranv&auml;ndning.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3c171bef-3472-4a2b-afcc-efbe977f1c5f",
+			"name": "3c171bef-3472-4a2b-afcc-efbe977f1c5f",
+			"type": "text",
+			"content": "<h2 id=\"Riskfaktorer\">Riskfaktorer</h2>\n<p>VTE &auml;r en multifaktoriell sjukdom som orsakas av en kombination av genetiska och f&ouml;rv&auml;rvade faktorer.(2) I 20&ndash;40&nbsp;% av fallen hittas dock ingen utl&ouml;sande riskfaktor f&ouml;r VTE, s&aring; kallad idiopatisk VTE.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f73307b6-692e-4da6-9568-ae65fb89133b",
+			"name": "f73307b6-692e-4da6-9568-ae65fb89133b",
+			"type": "text",
+			"content": "<h3 id=\"Forvarvade-riskfaktorer\">F&ouml;rv&auml;rvade riskfaktorer</h3>\n<p><span style=\"color: #ff0000;\">En kortfattad sammanst&auml;llning &ouml;ver f&ouml;rv&auml;rvade riskfaktorer ges i Faktaruta 2, v&auml;nster kolumn. En mycket stark riskfaktor f&ouml;r VTE &auml;r &aring;lder. En aktuell cancer, immobilisering, stor kirurgi, graviditet och puerperium &auml;r liksom en tidigare DVT andra exempel p&aring; starka riskfaktorer. (3)</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e92d3496-4726-4e37-a219-5d54c9b2958d",
+			"name": "e92d3496-4726-4e37-a219-5d54c9b2958d",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "Riskfaktorer för venös tromboembolism",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>F&ouml;rv&auml;rvade riskfaktorer</td>\r\n<td>Heredit&auml;ra riskfaktorer</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>&Aring;lder</li>\r\n<li>Malignitet</li>\r\n<li>Graviditet och puerperium</li>\r\n<li>Trauma (s&auml;rskilt h&ouml;ftfraktur och ryggm&auml;rgsskada)</li>\r\n<li>Kirurgi (s&auml;rskilt st&ouml;rre ortopedisk kirurgi, cancerkirurgi, l&aring;ng operationstid, generell anestesi, reoperation, &auml;ldre patient)</li>\r\n<li>Antifosfolipidsyndrom (lupus antikoagulans och/eller kardiolipinantikroppar)</li>\r\n<li>Inflammatorisk sjukdom, till exempel infektion eller autoimmun sjukdom (inflammatorisk tarmsjukdom, systemisk lupus erythematosus etc)</li>\r\n<li>Tidigare VTE</li>\r\n<li>Stroke (s&auml;rskilt paretiska benet)</li>\r\n<li>Nefrotiskt syndrom</li>\r\n<li>&Ouml;vervikt</li>\r\n<li>Immobilisering</li>\r\n<li>Varicer</li>\r\n<li>Hj&auml;rtsvikt, KOL</li>\r\n<li>Sjukhusv&aring;rd f&ouml;r akut sjukdom</li>\r\n<li>L&auml;kemedelsbehandling (cytostatika, steroider, &ouml;strogeninneh&aring;llande p-piller)</li>\r\n<li>F&ouml;rh&ouml;jda koagulationsfaktorniv&aring;er (s&auml;rskilt faktor VIII)</li>\r\n<li>L&aring;nga flygresor (&gt; 8 timmar)</li>\r\n</ul>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>Antitrombinbrist</li>\r\n<li>Protein C-brist</li>\r\n<li>Protein S-brist</li>\r\n<li>Faktor V Leiden-mutationen G1691A (APC-resistens)</li>\r\n<li>Protrombinmutation (G20210A)</li>\r\n<li>Hereditet (oberoende av identifierad genetisk riskfaktor)</li>\r\n<li>Genvarianter som har svag koppling till &ouml;kad VTE-risk och &auml;nnu inte anv&auml;nds i klinisk praxis (bland annat ABO, F11, och VWF). </li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b024f318-b665-4832-a018-8c672a8311ad",
+			"name": "b024f318-b665-4832-a018-8c672a8311ad",
+			"type": "text",
+			"content": "<h3 id=\"Hereditara-riskfaktorer\">Heredit&auml;ra riskfaktorer</h3>\n<p>Familj&auml;r f&ouml;rekomst av VTE beskrevs redan 1905 av Briggs men det var inte f&ouml;rr&auml;n efter Dahlb&auml;ck och medarbetares uppt&auml;ckt av resistens mot aktiverat protein C (APC-resistens) <span style=\"color: #ff0000;\">&aring;r 1993</span> som det blev uppenbart att &auml;rftliga faktorer &auml;r vanliga riskfaktorer f&ouml;r VTE (Faktaruta 2, h&ouml;ger kolumn) (4). Familjehistoria spelar en stor roll och 20&ndash;30&nbsp;% av patienterna med VTE rapporterar att en n&auml;ra sl&auml;kting har haft VTE (5). I patientgruppen med sl&auml;ktanamnes &auml;r sannolikheten att hitta en kliniskt heredit&auml;r riskfaktor,s&aring; kallad heredit&auml;r trombofili ocks&aring; st&ouml;rre. Sl&auml;ktanamnesen &auml;r tydligare i patientgruppen med idiopatisk VTE om man j&auml;mf&ouml;r med gruppen som har en k&auml;nd riskfaktor f&ouml;r ven&ouml;s trombos, till exempel operation eller cancer d&auml;r sl&auml;ktanamnes f&ouml;rekommer hos cirka 10&nbsp;%. Sannolikheten att hitta n&aring;gon &auml;rftlig orsak till VTE &auml;r ocks&aring; st&ouml;rre hos en yngre &auml;n hos en &auml;ldre patient, d&auml;r &aring;lder och andra f&ouml;rv&auml;rvade riskfaktorer spelar en st&ouml;rre roll.</p>\n<p><br>Antalet genetiska varianter kopplade till &ouml;kad risk f&ouml;r VTE &ouml;kar snabbt men &auml;n s&aring; l&auml;nge &auml;r det bara &auml;rftlig brist p&aring; antitrombin, protein C och protein S, faktor V Leiden-mutationen som orsakar APC-resistens samt protrombin G20210A mutationen som best&auml;ms i klinisk praxis (<span style=\"color: #ff0000;\">se avsnittet Trombofiliutredning</span>) (6).</p>\n<p><strong><br></strong><span style=\"color: #008000;\">APC-resistens orsakat av faktor V Leiden &auml;r den vanligaste genetiska riskfaktorn kopplad till ven&ouml;s trombos. APC-resistens &auml;r en relativt sett m&aring;ttlig men vanlig riskfaktor (heterozygot form hos 5&ndash;11&nbsp;% av befolkningen). Risken f&ouml;r en f&ouml;rsta trombos &auml;r 3&ndash;5 g&aring;nger &ouml;kad, f&ouml;r &aring;terinsjuknande i trombos endast cirka 1,5 g&aring;ngers risk&ouml;kning. Den homozygota formen inneb&auml;r 10&ndash;16 g&aring;ngers risk&ouml;kning f&ouml;r en f&ouml;rsta trombos och cirka 2 g&aring;nger &ouml;kad risk f&ouml;r &aring;terinsjuknande i trombos. V&auml;rdet av att kontrollera APC-resistens hos patienter med ven&ouml;s trombos har diskuterats eftersom risk&ouml;kningen f&ouml;r en ny trombos &auml;r relativt l&aring;g.</span></p>\n<p class=\"indent\"><span style=\"color: #008000;\">Protrombingenmutationen G20210A medf&ouml;r en &ouml;kad niv&aring; av trombin som ger en &ouml;kad risk f&ouml;r ven&ouml;s trombos. Risk&ouml;kningen &auml;r aningen mindre &auml;n den f&ouml;r APC-resistens (2&ndash;3 g&aring;nger &ouml;kad risk).</span></p>\n<p class=\"indent\"><span style=\"color: #008000;\"><em></em>Antitrombin, protein S och protein C brist inneb&auml;r alla s&auml;nkta niv&aring;er av koagulationssystemets naturliga h&auml;mmare. Heterozygot brist p&aring; n&aring;gon av dessa brukar ofta i selekterade familjer leda till en VTE innan 50 &aring;rs &aring;lder. Homozygot brist av protein C och protein S leder till fatal purpura fulminans inom n&aring;gra timmar efter partus. Homozygot brist p&aring; antitrombin finns inte beskrivet och &auml;r inte f&ouml;renlig med livets fortbest&aring;nd. Flera mutationer har beskrivits f&ouml;r varje protein varf&ouml;r genetisk testning med DNA-sekvensering inte sker i klinisk praxis. Diagnostiken baseras d&auml;rf&ouml;r i klinisk praxis p&aring; upprepade m&auml;tning av respektive faktor. Dess heredit&auml;ra natur konfirmeras genom familjeanalys. Risken f&ouml;r en f&ouml;rsta trombos &ouml;kar 10&ndash;16 g&aring;nger vid protein S-, protein C- eller antitrombrist, &aring;terfall i en ny ven&ouml;s trombos &auml;r cirka 2 g&aring;nger &ouml;kad.</span></p>\n<p class=\"indent\"><span style=\"color: #008000;\">F&ouml;rh&ouml;jda niv&aring;er av koagulations faktor VIII, IX och XI &auml;r f&ouml;rknippade med en 2&ndash;3 g&aring;nger &ouml;kad risk f&ouml;r VTE. H&ouml;ga niv&aring;er av faktor VIII kan vara &auml;rftligt, f&ouml;r faktor IX och XI &auml;r det mer oklart. En del av f&ouml;rh&ouml;jningen av faktor VIII &auml;r kopplat till ABO-blodgrupp. Individer med 0-blodgrupp har l&auml;gre faktor VIII-niv&aring;er och l&auml;gre VTE-risk. Best&auml;mning av ABO-blodgrupp och faktor VIII-niv&aring;er v&auml;ntar &auml;nnu p&aring; en plats i klinisk praxis.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fd14dc9f-d675-48b0-bfc6-bf17cf5352a7",
+			"name": "fd14dc9f-d675-48b0-bfc6-bf17cf5352a7",
+			"type": "text",
+			"content": "<h2 id=\"Patofysiologi\">Patofysiologi</h2>\n<p>Patologen Rudolf Virchow myntade 1856 begreppet Virchows triad som ger en god bild av patofysiologin bakom VTE och som i uppdaterad version st&aring;r sig &auml;n i dag:</p>\n<ul>\n<li><span>F&ouml;r&auml;ndringar i blodk&auml;rlet och dess n&auml;rmaste omgivning (k&auml;rlskada)</span>: till exempel tidigare DVT/LE, trauma, operation, malignitet, fraktur</li>\n<li><span>F&ouml;r&auml;ndringar i blodets levringsf&ouml;rm&aring;ga (hyperkoagulation)</span>: till exempel koagulationsrubbningar, infektion, malignitet, p-piller, graviditet</li>\n<li><span>F&ouml;r&auml;ndringar i blodfl&ouml;dets egenskaper (venstas)</span>:<span> </span>till exempel immobilisering/l&aring;nga resor, graviditet</li>\n</ul>\n<p>Den arteriella trombosen byggs upp av trombocyter i ett h&ouml;gfl&ouml;des-system medan den ven&ouml;sa trombosen initieras av plasmakoagulationen och bildandet av fibrin i ett l&aring;gfl&ouml;dessystem. Vad som f&aring;r den ven&ouml;sa trombosen att f&auml;sta mot ett icke aktiverat k&auml;rlendotel diskuteras men bidragande &auml;r b&aring;de inflammation och blodstas. Blodstas och hypoxi kan aktivera endotelet, varvid leukocyter och protrombotiska proteiner, till exempel trombin, anrikas och initierar blodkoagulationen. Hypoxi stimulerar ocks&aring; &rdquo;tissue factor&rdquo; (TF)-syntes fr&aring;n monocyter vilket bidrar till bildning av FVII-TF-komplex som aktiverar blodkoagulationen med fibrinbildning som slutprodukt. Hyperkoagulation, exempelvis heredit&auml;r trombofili (det vill s&auml;ga APC-resistens orsakad av faktor V-Leidenmutationen, protrombin G20210 A-mutationen samt brist p&aring; antitrombin, protein C och protein S) kan ocks&aring; leda till aktivering och ven&ouml;s trombos.</p>\n<h2 id=\"Lakemedel-for-antikoagulationsbehandling\">L&auml;kemedel f&ouml;r antikoagulationsbehandling</h2>\n<p>Sammantaget &auml;r patofysiologin vid VTE komplex. (7) Ur klinisk synvinkel &auml;r dock speciellt plasmakoagulationen viktig vid VTE, d&aring; de l&auml;kemedel som prim&auml;rt p&aring;verkar plasmakoagulationen (l&aring;gmolekyl&auml;rt heparin [LMH], warfarin och nya orala antikoagulantia (NOAK, synonymt anv&auml;nds NOAC&nbsp;&ndash; Non-vitamin K Oral AntiCoagulants och DOAC &ndash; Direct Oral AntiCoagulants) har en dokumenterad behandlingseffekt. (8-19) I Tabell 1 j&auml;mf&ouml;rs NOAK och warfarin. En nackdel med warfarin &auml;r att &auml;ven syntesen av antikoagulationsproteinerna protein S och C h&auml;mmas. Hos individer med &auml;rftlig protein S-eller protein C-brist kan det d&auml;rf&ouml;r vid initiering av warfarinbehandling leda till hudnekros. ASA och andra l&auml;kemedel som d&auml;mpar den prim&auml;r hemostasen genom trombocyth&auml;mning har d&auml;remot ingen dokumenterad klinisk behandlingseffekt vad g&auml;ller VTE.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9db02331-b8e7-48d9-9334-a11494f2d7de",
+			"name": "9db02331-b8e7-48d9-9334-a11494f2d7de",
+			"type": "tablewide",
+			"content": {
+				"number": "1",
+				"title": "Egenskaper hos NOAK och warfarin",
+				"id": "",
+				"text": "<table class=\"table table-bordered\">\r\n<tbody>\r\n<tr>\r\n<td></td>\r\n<td>Dabigatran</td>\r\n<td>Rivaroxaban</td>\r\n<td>Apixaban</td>\r\n<td>Edoxaban</td>\r\n<td>Warfarin</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Prodrug</td>\r\n<td class=\"footNotes\">Ja</td>\r\n<td class=\"footNotes\">Nej</td>\r\n<td class=\"footNotes\">Nej</td>\r\n<td class=\"footNotes\">Nej</td>\r\n<td class=\"footNotes\">Nej</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Mekanism</td>\r\n<td class=\"footNotes\">Direkt trombin-h&auml;mmare</td>\r\n<td class=\"footNotes\">Direkt faktor Xa-h&auml;mmare</td>\r\n<td class=\"footNotes\">Direkt faktor Xa-h&auml;mmare</td>\r\n<td class=\"footNotes\">Direkt faktor Xa-h&auml;mmare</td>\r\n<td class=\"footNotes\">H&auml;mmar syntes av vitamin K-beroende proteiner, faktor II, VII, IX och X men ocks&aring; protein C och protein S.</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Dosering</td>\r\n<td class=\"footNotes\">Fast tv&aring;dos</td>\r\n<td class=\"footNotes\">Fast endos</td>\r\n<td class=\"footNotes\">Fast tv&aring;dos</td>\r\n<td class=\"footNotes\">Fast endos</td>\r\n<td class=\"footNotes\">Dosering efter INR, stor variation</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Biotillg&auml;nglighet (%)</td>\r\n<td class=\"footNotes\">6</td>\r\n<td class=\"footNotes\">&gt; 80</td>\r\n<td class=\"footNotes\">&gt; 50</td>\r\n<td class=\"footNotes\">45</td>\r\n<td class=\"footNotes\">100</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Tid till max plasma-koncentration (timmar)</td>\r\n<td class=\"footNotes\">2</td>\r\n<td class=\"footNotes\">3</td>\r\n<td class=\"footNotes\">3</td>\r\n<td class=\"footNotes\">1,5</td>\r\n<td class=\"footNotes\">120</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">T 1/2 (timmar)</td>\r\n<td class=\"footNotes\">80</td>\r\n<td class=\"footNotes\">33</td>\r\n<td class=\"footNotes\">25</td>\r\n<td class=\"footNotes\">35</td>\r\n<td class=\"footNotes\">1</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Antidot (specifik)</td>\r\n<td class=\"footNotes\">Ja (dec -15)</td>\r\n<td class=\"footNotes\">I klinisk pr&ouml;vning</td>\r\n<td class=\"footNotes\">I klinisk pr&ouml;vning</td>\r\n<td class=\"footNotes\">I klinisk pr&ouml;vning</td>\r\n<td class=\"footNotes\">Ja</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8f2699d0-897c-4597-a513-338ae812b685",
+			"name": "8f2699d0-897c-4597-a513-338ae812b685",
+			"type": "therapy",
+			"content": {
+				"number": "1",
+				"title": "Dosering av läkemedel mot VTE",
+				"id": "",
+				"text": "<table class=\"table table-bordered therapy-recommendations\">\r\n<tbody>\r\n<tr>\r\n<td colspan=\"4\"><strong>1) L&aring;gmolekyl&auml;rt heparin (LMH) eller fondaparinux till&nbsp; PK (INR) &ge; 2,0; dock under minst fem dygn. Alternativ:</strong></td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"4\" class=\"footNotes\">\r\n<p>Injektion dalteparin (25 000&nbsp;E/ml), 200 E/kg &times; 1 s.c. (maximal eng&aring;ngsdos &auml;r 18&nbsp;000 E - vid kroppsvikt &gt; 90 kg kan 2-dosschema bli aktuellt)</p>\r\n<ul>\r\n<li>Patientvikt 45&ndash;56 kg: 0,4 ml&nbsp;&times; 1 s.c.</li>\r\n<li>Patientvikt 57&ndash;68 kg: 0,5 ml&nbsp;&times; 1 s.c.</li>\r\n<li>Patientvikt 69&ndash;82 kg: 0,6 ml&nbsp;&times; 1 s.c.</li>\r\n<li>Patientvikt &ge; 83 kg: 0,72 ml&nbsp;&times; 1 s.c.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"4\" class=\"footNotes\">\r\n<p>Injektion tianzaparin (20 000&nbsp;E/ml), 175 E/kg &times; 1 s.c., i praktiken ofta avrundat till:</p>\r\n<ul>\r\n<li>Patientvikt 50&nbsp;&plusmn; 10&nbsp;kg: 10 000 E &times; 1 s.c.</li>\r\n<li>Patientvikt 70&nbsp;&plusmn; 10&nbsp;kg: 14 000 E &times; 1 s.c.</li>\r\n<li>Patientvikt 90&nbsp;&plusmn; 10&nbsp;kg och d&auml;r&ouml;ver: 18 000 E &times; 1 s.c.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"4\" class=\"footNotes\">\r\n<p>Injektion enoxaparin, 1,5 mg/kg &times; 1 s.c. alternativt 1 mg/kg &times; 2 s.c., till exempel vid fetma:</p>\r\n<p></p>\r\n<p>Endosspruta 100 mg/ml</p>\r\n<ul>\r\n<li>Patientvikt 36&ndash;45 kg: 0,6 ml&nbsp;&times; 1 s.c.</li>\r\n<li>Patientvikt 46&ndash;59 kg: 0,8 ml&nbsp;&times; 1 s.c.</li>\r\n<li>Patientvikt 60&ndash;74 kg: 1,0 ml&nbsp;&times; 1 s.c.</li>\r\n</ul>\r\n<p>Endosspruta 150 mg/ml</p>\r\n<ul>\r\n<li>Patientvikt 75&ndash;89 kg: 0,8 ml&nbsp;&times; 1 s.c.</li>\r\n<li>Patientvikt 90&ndash;111&nbsp;kg: 1,0 ml&nbsp;&times; 1 s.c.</li>\r\n<li>Patientvikt &ge;&nbsp;112 kg: 1,5 mg/kg &times; 1 s.c.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"4\" class=\"footNotes\">\r\n<p>Injektion fondaparinux</p>\r\n<ul>\r\n<li>Patientvikt &lt; 50 kg: 5,0 mg &times; 1 s.c.</li>\r\n<li>Patientvikt 50&ndash;100 kg: 7,5 mg &times; 1 s.c.</li>\r\n<li>Patientvikt &gt; 100 kg: 10 mg &times; 1 s.c.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"4\" class=\"footNotes\">\r\n<p><strong>2) Warfarin</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"4\" class=\"footNotes\">\r\n<p>Tabletter 2,5 mg. Individuell dos beroende p&aring; &aring;lder, vikt och genetiska faktorer. Initialt till exempel</p>\r\n<ul>\r\n<li>Normalfall: 4 &ndash; 3 &ndash; 2 tabletter</li>\r\n<li>H&ouml;g &aring;lder eller l&aring;g kroppsvikt: 3 &ndash; 2 &ndash; 2 tabletter</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"4\" class=\"footNotes\">\r\n<p>PK(INR) tas dag 3&ndash;4 och sedan 2 g&aring;nger/vecka under dosinst&auml;llningsperioden.</p>\r\n<ul>\r\n<li>Intensitet PK(INR) 2,0&ndash;3,0</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"4\" class=\"footNotes\">\r\n<p><strong>3) Faktor Xa-h&auml;mmare</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"4\" class=\"footNotes\">\r\n<p>Tabletter rivaroxaban</p>\r\n<ul>\r\n<li>15 mg &times; 2 i 3 veckor, d&auml;refter 20 mg &times; 1</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"4\" class=\"footNotes\">\r\n<p>Tabletter apixaban</p>\r\n<ul>\r\n<li>10 mg &times; 2 i 7 dagar, d&auml;refter 5 mg &times;2</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"4\" class=\"footNotes\">\r\n<p><strong>4) Direkt trombinh&auml;mmare</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"4\" class=\"footNotes\">\r\n<p>Tabletter dabigatran</p>\r\n<ul>\r\n<li>150 mg &times; 2 p&aring;b&ouml;rjas efter minst 5 dagars LMH-behandling</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "657bfbe5-3d2d-494a-941a-7e8708d61c88",
+			"name": "657bfbe5-3d2d-494a-941a-7e8708d61c88",
+			"type": "text",
+			"content": "<h2 id=\"Primarprofylax\">Prim&auml;rprofylax</h2>\n<p>F&ouml;r att prim&auml;rprofylax ska vara kostnadseffektiv f&ouml;ruts&auml;tts en h&ouml;g incidens av VTE samt att den profylaktiska behandlingen minskar antalet symtomgivande sjukdomsfall betydligt och samtidigt medf&ouml;r en l&aring;g risk f&ouml;r bl&ouml;dningsbiverkningar. Indikation finns till exempel vid immobilisering av patienter med cancer, tidigare trombos eller k&auml;nd koagulationsrubb&shy;ning. Vid st&ouml;rre kirurgi &auml;r incidensen av VTE ofta s&aring; h&ouml;g att trombosprofylax b&ouml;r ges. Indikationer f&ouml;r postoperativ profylax &auml;r speciellt f&ouml;ljande (20):</p>\n<ul>\n<li>ortopedisk kirurgi vid st&ouml;rre fraktur i b&auml;cken/nedre extremitet</li>\n<li>artroplastik p&aring; nedre extremitet</li>\n<li>laparotomi om patienten &auml;r &ouml;ver &gt;&nbsp;40 &aring;r</li>\n<li>reoperation</li>\n<li>tidigare VTE, utbredda symtomatiska varicer eller k&auml;nd koagulationsrubbning</li>\n<li>malignitet</li>\n<li>fetma (BMI &gt;&nbsp;30 kg/m<sup>2</sup>)</li>\n<li>operationstid &gt;&nbsp;90 minuter</li>\n<li><a href=\"http://www.lakemedelsboken.se/atc/G03A\">p-piller</a> som inte har satts ut 1 m&aring;nad f&ouml;re operation</li>\n<li>graviditet</li>\n</ul>\n<p>Kompressionsstrumpor &auml;r den metod som ger minst biverkningar men den profylaktiska effekten &auml;r otillr&auml;cklig om den inte kombineras med l&auml;kemedel. L&aring;gmolekyl&auml;rt <a href=\"http://www.lakemedelsboken.se/atc/B01AB-B01AB01\">heparin</a> (<a href=\"http://www.lakemedelsboken.se/atc/B01AB\">LMH</a> det vill s&auml;ga dalteparin, enoxaparin, tinzaparin med dosering enligt produktresum&eacute;) &auml;r effektivare &auml;n ofraktionerat <a href=\"http://www.lakemedelsboken.se/atc/B01AB-B01AB01\">heparin</a> och anv&auml;nds d&auml;rf&ouml;r i h&ouml;g utstr&auml;ckning. Vid allm&auml;nkirurgi &auml;r profylaxstart postoperativt en f&ouml;rdel, p&aring; grund av l&auml;gre bl&ouml;dningsrisk. I allm&auml;nhet rekommenderas 7&ndash;10 dagars profylax med LMH, s&aring;vida inte patienten har h&ouml;g risk d&aring; profylaxen kan f&ouml;rl&auml;ngas upp till 30 dagar. Vid ortopedisk kirurgi &auml;r start f&ouml;r profylax kv&auml;llen f&ouml;re eller 4&ndash;8 timmar efter operationen sannolikt likv&auml;rdigt. Vid ortopedisk kirurgi &auml;r de perorala medlen <a href=\"http://www.lakemedelsboken.se/atc/B01AF01\">rivaroxaban</a>, apixaban och <a href=\"http://www.lakemedelsboken.se/atc/B01AE07\">dabigatran</a> goda alternativ (dosering enligt produktresum&eacute;), som underl&auml;ttar den rekommenderade f&ouml;rl&auml;ngda profylaxen upp till cirka 30 dagar. Lokala v&aring;rdprogram som i detalj beskriver indikation, profylaxmetod och behandlingsl&auml;ngd b&ouml;r finnas p&aring; varje klinik.</p>\n<p><br>Vid icke-kirurgiska sjukdomar b&ouml;r patienter som v&aring;rdas p&aring; sjukhus med &ouml;kad trombosrisk, till exempel tidigare VTE, hj&auml;rtinsufficiens, andningsinsufficiens, cancer och allvarlig infektion, f&aring; profylax. Vid hj&auml;rtinfarkt ges idag vanligen s&aring; pass omfattande koagulations- och trombocyth&auml;mmande behandling f&ouml;r grundsjukdomen att profylax mot VTE d&auml;rut&ouml;ver inte &auml;r indicerad.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "39251598-e8a0-4178-b501-612c5a9b573e",
+			"name": "39251598-e8a0-4178-b501-612c5a9b573e",
+			"type": "text",
+			"content": "<h2 id=\"Symtomgivande-venos-tromboembolism\">Symtomgivande ven&ouml;s tromboembolism</h2>\n<h3 id=\"Symtom-vid-djup-ventrombos\">Symtom vid djup ventrombos</h3>\n<p><span>Anamnesen &auml;r viktig</span> hos patienter med misst&auml;nkt DVT och eventuella utl&ouml;sande riskfaktorer b&ouml;r efters&ouml;kas (Faktaruta 2). Vid DVT f&ouml;rklaras m&aring;nga av symtomen och de kliniska tecknen av venobstruktion och inflammation. Symtomen varierar fr&aring;n mycket lindriga till uttalade besv&auml;r. De kliniska symtomen &auml;r f&ouml;r ospecifika f&ouml;r att ensamma till&aring;ta s&auml;ker diagnos (21).<br><br>Flera symtom och fynd har visat sig ha diagnostiskt v&auml;rde som del i det v&auml;letablerade Well-score, en klinisk po&auml;ngbaserad bed&ouml;mning vid djup ventrombos (22):</p>\n<ul>\n<li>lokaliserad &ouml;mhet l&auml;ngs djupa vener</li>\n<li>svullnad l&auml;ngs hela benet</li>\n<li>vadomf&aring;ng &gt; 3 cm st&ouml;rre p&aring; den symtomgivande sidan j&auml;mf&ouml;rt med den asymtomatiska</li>\n<li>pitting&ouml;dem, ensidigt eller mest p&aring; den symtomgivande sidan</li>\n<li>synliga venkollateraler (inte enbart &aring;derbr&aring;ck)</li>\n</ul>\n<p>Differentialdiagnoser vid DVT &auml;r m&aring;nga och presenteras i Faktaruta 3.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "15c4f917-96dd-482a-8377-fc2e47c656b7",
+			"name": "15c4f917-96dd-482a-8377-fc2e47c656b7",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "Vanliga differentialdiagnoser till djup ventrombos",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>Inflammation</td>\r\n<td>Ven&ouml;s stas, lymfstas</td>\r\n<td>Annat</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Hudinfektion</li>\r\n<li>Erysipelas</li>\r\n<li>Artrit</li>\r\n<li>Tromboflebit</li>\r\n</ul>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>Lymf&ouml;dem</li>\r\n<li>Posttrombotiskt syndrom</li>\r\n<li>Ven&ouml;s obstruktion, annan genes</li>\r\n<li>Hj&auml;rtsvikt (bilateral bensvullnad)</li>\r\n<li>Hypoproteinemi p&aring; grund av lever- eller njursjukdom (bilateral bensvullnad)</li>\r\n</ul>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>Fraktur</li>\r\n<li>Arteriell ischemi</li>\r\n<li>Bakercysta</li>\r\n<li>Hematom</li>\r\n<li>Akillessenruptur</li>\r\n<li>Muskelruptur</li>\r\n<li>Ledutgjutning</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a5b41e7f-442a-4537-ae7a-eb6b2f198cdf",
+			"name": "a5b41e7f-442a-4537-ae7a-eb6b2f198cdf",
+			"type": "text",
+			"content": "<h3 id=\"Symtom-vid-lungemboli\">Symtom vid lungemboli</h3>\n<p>Vid lungemboli (LE) kan det finnas b&aring;de en respiratorisk och en hemodynamisk komponent i den kliniska symtombilden. Precis som vid DVT kan symtomen vid LE vara diffusa och vid misstanke ska patienten fr&aring;gas om eventuella utl&ouml;sande riskfaktorer (Faktaruta 2). (23)</p>\n<p><br>Det vanligaste symtomet och fyndet vid lungemboli &auml;r andf&aring;ddhet som kan utg&ouml;ras av endast dyspne (sj&auml;lvupplevd andf&aring;ddhet 79&nbsp;%) eller &auml;ven av takypne (observerad &ouml;kad andningsfrekvens &gt;&nbsp;20. I Wells-score f&ouml;r LE ing&aring;r som symtom och fynd enbart takykardi (hj&auml;rtfrekvens &gt; 100) och hemoptys (24). Stor vikt l&auml;ggs vid kliniska tecken p&aring; DVT samt vid riskfaktorer, som en tidigare genomg&aring;ngen VTE, immobilisering och malignitet.<br><br>Differentialdiagnoserna till lungemboli &auml;r liksom f&ouml;r DVT m&aring;nga (Faktaruta 4). M&aring;nga patienter med letal LE har s&ouml;kt sjukv&aring;rd utan att f&aring; r&auml;tt diagnos vilket illustrerar den ofta diffusa symtombilden och de m&aring;nga differentialdiagnoserna.</p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e29a765b-24ef-4906-9bff-cd957085d574",
+			"name": "e29a765b-24ef-4906-9bff-cd957085d574",
+			"type": "facts",
+			"content": {
+				"number": "4",
+				"title": "Vanliga differentialdiagnoser till lungemboli",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>Akut dyspn&eacute;</td>\r\n<td>Pleuritsm&auml;rta</td>\r\n<td>Hemoptys</td>\r\n<td>H&ouml;gersvikt</td>\r\n<td>Chock</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Pneumotorax</li>\r\n<li>Astma</li>\r\n<li>Hj&auml;rtsvikt</li>\r\n<li>Pneumoni</li>\r\n<li>Bronkit</li>\r\n<li>Vaskulit</li>\r\n</ul>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>Pleurit</li>\r\n<li>Pneumotorax</li>\r\n<li>Pneumoni</li>\r\n<li>Perikardit</li>\r\n<li>Tum&ouml;r</li>\r\n<li>Vaskulit</li>\r\n</ul>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>Tum&ouml;r</li>\r\n<li>Pneumoni</li>\r\n<li>TBC</li>\r\n<li>Mitralisstenos</li>\r\n<li>Bronkit</li>\r\n<li>Vaskulit</li>\r\n</ul>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>Hj&auml;rtinfarkt</li>\r\n<li>Hj&auml;rttamponad</li>\r\n<li>Myokardit</li>\r\n<li>Pneumoni</li>\r\n<li>KOL</li>\r\n</ul>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>Hj&auml;rtinfarkt</li>\r\n<li>Bl&ouml;dning</li>\r\n<li>Sepsis</li>\r\n<li>Hj&auml;rttamponad</li>\r\n<li>Pneumotorax</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7e3e5ac5-6571-42ea-a391-59f0e1c77b9d",
+			"name": "7e3e5ac5-6571-42ea-a391-59f0e1c77b9d",
+			"type": "text",
+			"content": "<h2 id=\"Diagnostik\">Diagnostik</h2>\n<p>Diagnostiken av VTE bygger p&aring; klinisk bed&ouml;mning och, om misstanken &auml;r stark, att man alltid objektivt ska verifiera diagnosen (7). Symtomen och de kliniska fynden vid b&aring;de DVT och LE &auml;r n&auml;mligen ospecifika och r&auml;cker inte f&ouml;r diagnos.</p>\n<p><br>Den kliniska sannolikheten f&ouml;r DVT och LE ska best&auml;mmas med po&auml;ngsystem enligt Well-score f&ouml;r klinisk sannolikhetsbed&ouml;mning avseende DVT respektive LE (Tabell 2 respektive Tabell 3). Om sannolikheten f&ouml;r VTE &auml;r l&aring;g kan ett D-dimertest g&ouml;ras och om resultatet &auml;r negativt beh&ouml;ver inte utredning vad g&auml;ller VTE drivas vidare. D-dimertest i denna situation har h&ouml;g sensitivitet (missar f&aring; VTE) och l&aring;g specificitet (kan bli positiv &auml;ven vid andra sjukdomar). Negativ D-dimer och negativ Well-score har s&aring;ledes ett h&ouml;gt negativt prediktivt v&auml;rde f&ouml;r att utesluta VTE. D-dimer beh&ouml;ver inte analyseras n&auml;r den kliniska bed&ouml;mningen ger h&ouml;g sannolikhet f&ouml;r DVT eller LE<em>.</em> Vid h&ouml;g sannolikhet ska VTE antingen verifieras eller uteslutas med ultraljud och/eller r&ouml;ntgenologisk metod. D-dimer utg&ouml;rs av nedbrytningsprodukter av korsbundet fibrin och f&ouml;rh&ouml;jd D-dimer ses vid VTE men ocks&aring; vid andra tillst&aring;nd, till exempel postoperativt, hos sv&aring;rt sjuka och gravida samt vid h&ouml;g &aring;lder. ELISA-metoder f&ouml;r D-dimer best&auml;mning &auml;r mest tillf&ouml;rlitliga men kr&auml;ver laboratorieutrustning. Varje metod m&aring;ste valideras lokalt vilket &auml;r problematiskt p&aring; en v&aring;rdcentral, varf&ouml;r metoden l&auml;mpar sig b&auml;st p&aring; sjukhus. En diagnostisk algoritm presenteras i Figur 1.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f8cbb0f0-0b68-4c9b-8517-fad2eb098838",
+			"name": "f8cbb0f0-0b68-4c9b-8517-fad2eb098838",
+			"type": "tablenarrow",
+			"content": {
+				"number": "2",
+				"title": "Klinisk poängbaserad bedömning (Wells score) vid djup ventrombos",
+				"id": "",
+				"text": "<table class=\"table table-bordered\">\r\n<tbody>\r\n<tr>\r\n<td><strong>Symtom/fynd</strong></td>\r\n<td><strong>Po&auml;ng</strong></td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Aktuell cancer (behandlad de senaste 6 m&aring;naderna eller palliation)</td>\r\n<td class=\"footNotes\">1,0</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Paralys, pares eller nyligen gipsat ben</td>\r\n<td class=\"footNotes\">1,0</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Immobilisering &ge; 3 dagar eller stor kirurgi de senaste 12 veckorna</td>\r\n<td class=\"footNotes\">1,0</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Lokaliserad &ouml;mhet l&auml;ngs djupa vener</td>\r\n<td class=\"footNotes\">1,0</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Svullnad i hela benet</td>\r\n<td class=\"footNotes\">1,0</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Vadomf&aring;ng &gt; 3 cm st&ouml;rre &auml;n p&aring; den asymtomatiska sidan</td>\r\n<td class=\"footNotes\">1,0</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Pitting&ouml;dem (ensidigt eller mest p&aring; den symtomgivande sidan)</td>\r\n<td class=\"footNotes\">1,0</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Synliga ytliga venkollateraler (inte enbart &aring;derbr&aring;ck)</td>\r\n<td class=\"footNotes\">1,0</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Tidigare verifierad VTE</td>\r\n<td class=\"footNotes\">1,0</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Alternativ diagnos minst lika sannolik som DVT</td>\r\n<td class=\"footNotes\">&minus; 2,0</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\"><strong>Sannolikhet</strong><strong></strong></td>\r\n<td class=\"footNotes\"><strong>Summerad po&auml;ng</strong></td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\"><strong>L&aring;g <br /></strong></td>\r\n<td class=\"footNotes\"><strong>0&ndash;1</strong></td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\"><strong>H&ouml;g</strong></td>\r\n<td class=\"footNotes\"><strong>&ge; 2</strong></td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9eee15cb-57ed-4e0a-b81c-7d9a108ba248",
+			"name": "9eee15cb-57ed-4e0a-b81c-7d9a108ba248",
+			"type": "tablenarrow",
+			"content": {
+				"number": "3",
+				"title": "Klinisk poängbaserad bedömning (Wells score) vid lungemboli",
+				"id": "",
+				"text": "<table class=\"table table-bordered\">\r\n<tbody>\r\n<tr>\r\n<td><strong>Symtom/fynd</strong></td>\r\n<td><strong>Po&auml;ng</strong></td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Kliniska tecken p&aring; DVT (svullnad och &ouml;mhet)</td>\r\n<td class=\"footNotes\">3,0</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">LE lika eller mer sannolikt &auml;n andra diagnoser</td>\r\n<td class=\"footNotes\">3,0</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Puls &gt; 100 slag per minut</td>\r\n<td class=\"footNotes\">1,5</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Immobilisering &gt; 3 dagar eller kirurgi de senaste 4 veckorna (som kr&auml;vt narkos/regional anestesi)</td>\r\n<td class=\"footNotes\">1,5</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Tidigare verifierad VTE</td>\r\n<td class=\"footNotes\">1,5</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Hemoptys</td>\r\n<td class=\"footNotes\">1,0</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">Malignitet behandlad de senaste 6 m&aring;naderna eller under palliation</td>\r\n<td class=\"footNotes\">1,0</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\"><strong>Sannolikhet</strong></td>\r\n<td class=\"footNotes\"><strong>Summerad po&auml;ng</strong></td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\"><strong>L&aring;g</strong></td>\r\n<td class=\"footNotes\"><strong>&le; 4<br /></strong></td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\"><strong>H&ouml;g</strong></td>\r\n<td class=\"footNotes\"><strong>&gt; 4</strong></td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2952c789-72d3-4410-99fc-d4818b035adf",
+			"name": "2952c789-72d3-4410-99fc-d4818b035adf",
+			"type": "figure",
+			"content": {
+				"number": "1",
+				"maxwidth": "",
+				"image": "/images/figur_1_vte.png",
+				"title": "Utredningsalgoritm",
+				"text": "",
+				"alt": "",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b62f7fa6-7fe7-408b-9cbd-3a93c609f4d2",
+			"name": "b62f7fa6-7fe7-408b-9cbd-3a93c609f4d2",
+			"type": "text",
+			"content": "<h3 id=\"Diagnostik-vid-djup-ventrombos\">Diagnostik vid djup ventrombos</h3>\n<p>F&ouml;r att objektivt verifiera en DVT anv&auml;nds ultraljud och flebografi som f&ouml;rstahandsmetoder. Ultraljud &auml;r en icke-invasiv unders&ouml;kning och f&aring;r anses vara f&ouml;rstahandsmetod med m&ouml;jlighet till differentialdiagnostik (muskelruptur, hematom, Bakerscysta etc). Ultraljud har god tillf&ouml;rlitlighet inom v.&nbsp;poplitea till v.&nbsp;femoralis, men n&aring;got s&auml;mre s&auml;kerhet p&aring; underben och i v.&nbsp;iliaca. En negativ ultraljudsunders&ouml;kning, d&auml;r &auml;ven underbenets vener identifierats, utesluter ocks&aring; DVT med god s&auml;kerhet. Vid os&auml;kra ultraljudsfynd och kvarst&aring;ende klinisk misstanke b&ouml;r unders&ouml;kningen kompletteras med flebografi.</p>\n<p><br>Flebografi f&aring;r anses vara en referensmetod men &auml;r till skillnad fr&aring;n ultraljud en invasiv unders&ouml;kning. Flebografin &auml;r tillf&ouml;rlitlig inom benets och armens olika vensegment, men inte helt s&auml;ker inom muskelvener, v.&nbsp;femoralis profunda och v.&nbsp;iliaca interna. I vissa situationer &auml;r d&auml;rf&ouml;r DT/MR-angiografi ett alternativ, till exempel vid negativt ultraljud och misstanke om b&auml;ckentrombos och ensidig bensvullnad eller hos &ouml;verviktiga personer som &auml;r sv&aring;runders&ouml;kta.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "caefe865-bd3e-40a8-a2e3-94d1e2c0177d",
+			"name": "caefe865-bd3e-40a8-a2e3-94d1e2c0177d",
+			"type": "text",
+			"content": "<h3 id=\"Diagnostik-vid-lungemboli\">Diagnostik vid lungemboli</h3>\n<p>Lungr&ouml;ntgen &auml;r initialt ofta normal vid lungemboli, men &auml;r av v&auml;rde f&ouml;r differentialdiagnostiken (pneumoni, pneumothorax, hj&auml;rtsvikt etc).</p>\n<p><br>Datortomografi av lungart&auml;rer (DTLA) kan avsl&ouml;ja differentialdiagnoser (25). Unders&ouml;kningen kr&auml;ver kontrastmedel. En positiv DTLA f&ouml;r LE &auml;r en s&auml;ker diagnos och negativ DTLA utesluter med f&aring; undantag behandlingskr&auml;vande lungemboli.</p>\n<p><br>Ventilations- och perfusionsskintigrafi erbjuds som regel endast kontorstid. D&auml;remot kr&auml;ver unders&ouml;kningen ingen kontrasttillf&ouml;rsel och har inga kontraindikationer. Om inkonklusivt svar f&aring;s och klinisk misstanke kvarst&aring;r b&ouml;r DTLA eller bilateral benunders&ouml;kning med ultraljud &ouml;verv&auml;gas.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "83a0579c-6dfc-4a47-bb02-594041f19eff",
+			"name": "83a0579c-6dfc-4a47-bb02-594041f19eff",
+			"type": "text",
+			"content": "<h2 id=\"Behandling\">Behandling</h2>\n<p>Initialt ska all VTE behandlas under 3&ndash;6 m&aring;nader. Obehandlad har VTE en mycket h&ouml;g mortalitet. Efter att behandling med antikoagulantia inletts f&aring;r patienten r&ouml;ra sig fritt. Antitrombosstrumpa rekommenderas initialt. Patienter med uttalade besv&auml;r efter 1&ndash;2 m&aring;nader kan ha nytta av ytterligare kompressionsbehandling.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "068ed616-35fb-4e1d-9869-7590a38298a4",
+			"name": "068ed616-35fb-4e1d-9869-7590a38298a4",
+			"type": "text",
+			"content": "<h3 id=\"Lakemedelsbehandling\">L&auml;kemedelsbehandling</h3>\n<ol>\n<li>NOAK (<a href=\"http://www.lakemedelsboken.se/atc/B01AF01\">rivaroxaban</a>, apixaban eller <a href=\"http://www.lakemedelsboken.se/atc/B01AE07\">dabigatran</a>) &auml;r idag den vanligaste behandlingen av VTE i Sverige och anv&auml;ndningen &ouml;kar. NOAK kan initieras direkt efter diagnosen av VTE. Apixaban och rivaroxaban kr&auml;ver inte kombination med LMH vid initieringen. Vid initiering av behandling med dabigatran eller<span style=\"background-color: #ffff00;\"> edoxaban (ej registrerat i Sverige december 2015)</span> p&aring; indikationen VTE beh&ouml;vs komplettering med LMH. NOAK kr&auml;ver sedan ingen monitorering annat &auml;n att man f&ouml;ljer njurfunktionen vid n&aring;gra tillf&auml;llen. F&ouml;r dosering av NOAK var god se respektive l&auml;kemedels produktresum&eacute;/Fass.</li>\n<li>L&aring;gmolekyl&auml;rt heparin (LMH) ges dagligen subkutant i minst fem dygn och vid behov l&auml;ngre tills PK(INR)&nbsp;&ge;&nbsp;<span style=\"background-color: #ffff00;\">2,0</span>. Samtidigt initieras behandling med warfarin under PK-monitorering med INR m&aring;lomr&aring;de 2,0&ndash;3,0. F&ouml;r dosering av LMH (dalteparin, enoxaparin, tinzaparin) var god se Terapirekommendation 1 \"Dosering av l&auml;kemedel mot VTE\" samt respektive l&auml;kemedels produktresum&eacute;/Fass. Pentasackariden fondaparinux &auml;r ett alternativ till LMH f&ouml;r patienter som tidigare reagerat p&aring; LMH (allergiska eller andra reaktioner). Denna behandling av VTE, med LMH och warfarin, &auml;r 2016&zwnj; inte l&auml;ngre generellt f&ouml;rstahandsalternativ i Sverige.</li>\n<li>Trombolys kan bli aktuellt vid lungembolisering.</li>\n</ol>\n<p></p>\n<p>Vid p&aring;visad lungemboli b&ouml;r riskstratifiering g&ouml;ras enligt n&aring;gon riskskattnings modell, till exempel PESI (pulmonary embolism severity index) och sPESI, som European Society of Cardiology rekommenderar (26,27). I Faktaruta 5 anges faktorer som kan tala f&ouml;r s&auml;mre prognos och kan ha betydelse f&ouml;r val av behandling och v&aring;rdniv&aring;. F&ouml;r patienter med massiv lungembolisering (minst tv&aring; lobart&auml;rer) kan det vara en f&ouml;rdel att starta behandling omedelbart med ofraktionerat heparin tills man avgjort huruvida trombolytisk behandling ska ges eller inte.<br><br>Trombolys &ouml;verv&auml;gs till patienter med lungemboli och cirkulatorisk instabilitet (systoliskt blodtryck &lt;&nbsp;90 mmHg eller blodtrycksfall &gt;&nbsp;40 mmHg under &gt;&nbsp;15 min och/eller h&ouml;gerkammarp&aring;verkan) och kan vara livr&auml;ddande, men risken f&ouml;r allvarlig bl&ouml;dning &auml;r 2&ndash;3 g&aring;nger &ouml;kad (28). Patient som behandlas med trombolys ska d&auml;rf&ouml;r v&aring;rdas p&aring; IVA- eller HIA-avdelning.</p>\n<p><br>Endast rt-PA (<a href=\"http://www.lakemedelsboken.se/atc/B01AD02\">alteplas</a>) &auml;r godk&auml;nt f&ouml;r trombolytisk behandling av VTE i Sverige. Alteplas ges 10&nbsp;mg som bolusdos intraven&ouml;st, d&auml;refter f&ouml;ljt av infusion med 90&nbsp;mg under 2 timmar. Vid h&ouml;g DVT med uttalade symtom kan man &ouml;verv&auml;ga lokal trombolys av iliofemoral trombos, oftast med kateter via v.&nbsp;poplitea, eventuellt med mekanisk fragmentering av trombosen. Risken minskar d&aring; f&ouml;r posttrombotiskt syndrom. Metoden &auml;r resurskr&auml;vande och s&auml;rskild radiologisk expertis &auml;r n&ouml;dv&auml;ndig. Dessutom f&ouml;religger en viss &ouml;kad bl&ouml;dningsrisk (29).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c99a71b5-b7bd-4241-8fd6-4b0c962216f1",
+			"name": "c99a71b5-b7bd-4241-8fd6-4b0c962216f1",
+			"type": "text",
+			"content": "<h3 id=\"Uppfoljande-behandling-sekundarprofylax\">Uppf&ouml;ljande behandling/sekund&auml;rprofylax</h3>\n<p>En distal DVT med eller utan riskfaktorer ges som regel 3 m&aring;naders behandling och en proximal DVT eller okomplicerad lungemboli 6 m&aring;naders behandling med warfarin eller NOAK. Vid &aring;terfall i VTE, komplicerade VTE med kvarst&aring;ende riskfaktorer, till exempel aktiv cancer eller vissa trombofilier, eller livshotande VTE (bland annat massiv lungemboli) &ouml;verv&auml;gs l&aring;ngtidsbehandling med &aring;rlig riskutv&auml;rdering</p>\n<p><br>Uppf&ouml;ljande behandling/sekund&auml;rprofylax med LMH utan waran eller NOAK b&ouml;r alltid &ouml;verv&auml;gas vid aktiv cancer men kan &auml;ven vara aktuell i andra situationer, exempelvis under graviditet. F&ouml;r dosering se Terapirekommendation 1.<br><br></p>\n<p>Risken att drabbas av komplikationer vid behandling med warfarin eller NOAK m&aring;ste s&auml;ttas i relation till vinsten med behandlingen. Patienter med VTE under kontinuerlig behandling med orala antikoagulantia l&ouml;per en risk f&ouml;r ny trombos p&aring; 1&ndash;2&nbsp;% per &aring;r. Fr&aring;n litteraturen kan man uppskatta att f&ouml;r en patientgrupp med tidigare VTE och utan orala antikoagulantia &auml;r risken f&ouml;r recidiv av VTE 3&ndash;8 % per &aring;r beroende p&aring; om patientens tidigare VTE har varit associerad med permanent eller tempor&auml;r riskfaktor, och risken kan vara st&ouml;rre under vissa omst&auml;ndigheter. Denna risk&ouml;kning ska v&auml;gas mot risken att drabbas av en allvarlig bl&ouml;dning, som kan uppskattas till 1&ndash;4&nbsp;% beroende p&aring; riskfaktorer, till exempel &aring;lder. I litteraturen finns en stor heterogenitet avseende risken f&ouml;r bl&ouml;dningskomplikationer fr&auml;mst beroende p&aring; definition av begreppet allvarlig bl&ouml;dning, men &auml;ven relaterat till studieuppl&auml;gg. Randomiserade kontrollerade studier (RCT) redovisar l&auml;gre risk &auml;n i observationsstudier med uppf&ouml;ljning av kohorter.<br><br>Hur l&auml;nge behandling med antikoagulantia ska p&aring;g&aring; efter en VTE (DVT eller lungemboli) &auml;r fortfarande kontroversiellt. Behandlingstiden f&ouml;r en VTE best&auml;ms av balansen mellan recidivrisken f&ouml;r VTE och bl&ouml;dningsrisken av antikoagulationsbehandlingen.<br><br>American College of Chest Physisians (ACCP) har sammanst&auml;llt riktlinjer f&ouml;r antikoagulationsbehandling vid VTE baserat p&aring; resultat fr&aring;n kliniska studier. Rekommendationer om behandlingstidens l&auml;ngd sammanfattas i Faktaruta 6. Riktlinjerna fr&aring;n ACCP ska ses som st&ouml;d i beslutsfattandet och kan naturligtvis modifieras utifr&aring;n individuella patientkarakteristika som &aring;lder, annan samsjuklighet, bl&ouml;dningsrisk samt risk f&ouml;r &aring;terfall. N&auml;r behandlingstiden best&auml;ms f&ouml;r den enskilde patienten ska risken f&ouml;r recidiv i VTE alltid v&auml;gas mot risken f&ouml;r en behandlingsorsakad bl&ouml;dning. I de yngre patientgrupperna &auml;r detta som regel mycket l&auml;ttare d&aring; risken f&ouml;r &aring;terfall m&aring;nga g&aring;nger &auml;r l&aring;g. Hos &auml;ldre d&auml;r recidivrisken &auml;r h&ouml;gre, kanske 5&ndash;10&nbsp;% per &aring;r, &auml;r avv&auml;gningen sv&aring;rare eftersom bl&ouml;dningsrisken ocks&aring; &auml;r &ouml;kad. I dessa situationer f&aring;r individuella h&auml;nsyn tas samt en diskussion f&ouml;ras med patienten om f&ouml;rh&aring;llandet mellan risk och nytta vid behandlingen. I dessa komplexa situationer m&aring;ste alltid &rdquo;primum non nocere&rdquo; r&aring;da.</p>\n<p></p>\n<p>I klinisk praxis blir handl&auml;ggningen som regel att en distal DVT med eller utan riskfaktorer ges 3 m&aring;naders behandling och en proximal DVT eller okomplicerad lungemboli 6 m&aring;naders behandling med antikoagulation. Vid &aring;terfall i VTE, komplicerade VTE med kvarst&aring;ende riskfaktorer (till exempel aktiv cancer eller vissa trombofilier) eller livshotande VTE (bland annat massiv lungemboli) &ouml;verv&auml;gs l&aring;ngtidsbehandling med &aring;rlig riskutv&auml;rdering.</p>\n<p><br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "41e3234c-b0ca-4b1f-b4b5-418ff56315a2",
+			"name": "41e3234c-b0ca-4b1f-b4b5-418ff56315a2",
+			"type": "text",
+			"content": "<h3 id=\"Ingrepp-pa-antikoagulantiabehandlade-patienter\">Ingrepp p&aring; antikoagulantiabehandlade patienter</h3>\n<p>Mindre hudkirurgi och mjukdelspunktioner kan utf&ouml;ras vid terapeutiskt INR med kompression efter&aring;t (30).<br><br>Vid st&ouml;rre kirurgi, ledpunktioner och biopsier av inre organ m&aring;ste INR-v&auml;rdet s&auml;nkas till 1,5 vilket b&ouml;r g&ouml;ras i samr&aring;d med antikoagulations- (AK-) mottagning. Tandextraktion kan g&ouml;ras vid terapeutiskt INR (2&ndash;3). Vid tandextraktion ska patienten vid behov ha en sudd indr&auml;kt i tranexamsyra under en dryga halvtimme efter ett ingrepp samt rekommenderas att ej intaga varm dryck och f&ouml;da f&ouml;rsta dygnet efter en extraktion.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "797ecccb-7b42-47ac-98e0-d84e5032c3eb",
+			"name": "797ecccb-7b42-47ac-98e0-d84e5032c3eb",
+			"type": "text",
+			"content": "<h2 id=\"Atgarder-vid-avvikande-PK-INR-varden\">&Aring;tg&auml;rder vid avvikande PK(INR)-v&auml;rden</h2>\n<p>Fr&aring;gor att st&auml;lla sig vid PK(INR) &lt;&nbsp;1,8 eller &gt;&nbsp;4,0</p>\n<ul>\n<li>Vad &auml;r den sannolika orsaken till PK(INR)-avvikelsen?</li>\n<li>Beh&ouml;ver patienten kontaktas?</li>\n<li>Beh&ouml;ver enstaka AK-dos eller underh&aring;llsdos &auml;ndras?</li>\n<li>Beh&ouml;vs behandling med LMH eller vitamin K?</li>\n<li>N&auml;r ska PK(INR) kontrolleras?</li>\n</ul>\n<p>&Aring;tg&auml;rder vid l&aring;gt PK(INR)-v&auml;rde (&lt;&nbsp;1,8)</p>\n<ul>\n<li>Kontakta vid behov patienten f&ouml;r att utreda orsaken.</li>\n<li>Ge eventuellt extrados warfarin och justera vid behov veckodosen.</li>\n<li>Ge vid behov till&auml;gg av LMH i profylaxdos, &ouml;kad profylaxdos eller i vissa situationer terapeutisk dos till patienter med h&ouml;g tromboembolirisk, till exempel de med mekanisk hj&auml;rtklaff eller som nyligen p&aring;b&ouml;rjat behandling f&ouml;r ven&ouml;s eller arteriell tromboembolism. Se Faktaruta X.</li>\n<li>Kontrollera PK(INR) inom n&aring;gra dagar till en vecka.</li>\n</ul>\n<p>&Aring;tg&auml;rder vid h&ouml;gt PK(INR) (&gt;&nbsp;4,0)</p>\n<ul>\n<li>Kontakta vid behov patienten f&ouml;r att utreda orsaken.</li>\n<li>G&ouml;r vid behov uppeh&aring;ll med warfarin och justera eventuellt veckodosen.</li>\n<li>Ge vid behov vitamin K 2 mg per oralt av den intraven&ouml;sa l&ouml;sningen (Konakion Novum). Se Faktaruta X.</li>\n<li>Kontrollera PK(INR) inom n&aring;gra dagar till en vecka.</li>\n</ul>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f4ab3b31-722e-4540-9676-28d1cd631b4a",
+			"name": "f4ab3b31-722e-4540-9676-28d1cd631b4a",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "Dosering vid avvikande PK(INR)-värden",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><strong>Profylaxdoser av LMH</strong></p>\r\n<p>&Ouml;kad profylaxdos inneb&auml;r ett till&auml;gg p&aring; 50&ndash;100&nbsp;%</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Dalteparin (25 000 E/ml)<br />5&nbsp;000 E = 0,2 ml&nbsp;&times;&nbsp;1 s.c.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Tinzaparin (10 000 E/ml)<br />4&nbsp;500 enh = 0,45 ml&nbsp;&times;&nbsp;1 s.c.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Enoxaparin 100 mg/ml)<br />40 mg = 0,4 ml&nbsp;&times;&nbsp;1 s.c.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Vitamin K</strong></p>\r\n<p>Vitamin K kan anv&auml;ndas f&ouml;r att reversera effekten av warfarin. Det aktuella PK(INR)-v&auml;rdet och dosen avg&ouml;r reverseringseffekten, som dr&ouml;jer flera timmar och &auml;r maximal f&ouml;rst efter cirka 24 timmar. Vanligen &auml;r 2 mg tillr&auml;ckligt f&ouml;r att s&auml;nka ett INR-v&auml;rde fr&aring;n terapeutisk niv&aring;, det vill s&auml;ga 2,0-3,0 till &lt;&nbsp;1,5 p&aring; 12&ndash;16 timmar.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Konakion Novum, injektionsv&auml;tska, l&ouml;sning 10 mg/ml.</li>\r\n<li>Den intraven&ouml;sa l&ouml;sningen kan ges peroralt 1,0&ndash;5,0 mg, beroende p&aring; PK(INR) och klinisk situation.</li>\r\n<li>Stor dos, till exempel 10 mg, kan ge resistens mot warfarin i mer &auml;n en vecka, vilket kan vara en ol&auml;genhet om man avser att forts&auml;tta warfarinbehandlingen.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "69169a4f-00c8-4ff0-b662-c2dd61f7d0f4",
+			"name": "69169a4f-00c8-4ff0-b662-c2dd61f7d0f4",
+			"type": "facts",
+			"content": {
+				"number": "6",
+				"title": "Rekommenderad behandlingslängd enligt ACCP (American College of Chest Physisians).",
+				"text": "<table width=\"631\">\r\n<tbody>\r\n<tr>\r\n<td width=\"227\">\r\n<p><strong>Indikation f&ouml;r antikoagulationsbehandling</strong></p>\r\n</td>\r\n<td width=\"216\">\r\n<p><strong>ACCP 2012</strong></p>\r\n</td>\r\n<td width=\"188\">\r\n<p><strong>Sverige 2015</strong></p>\r\n<p><strong>Klinisk praxis</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"227\">\r\n<p>VTE associerad med &ouml;verg&aring;ende riskfaktor (f&ouml;rsta VTE)</p>\r\n</td>\r\n<td width=\"216\">\r\n<p>3 m&aring;nader</p>\r\n</td>\r\n<td width=\"188\">\r\n<p>Distal DVT 3 m&aring;nader</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"227\">\r\n<p>VTE idiopatisk (f&ouml;rsta VTE)</p>\r\n</td>\r\n<td width=\"216\">\r\n<p>Minst 3-6 m&aring;nadersbehandling sedan ny riskbed&ouml;mning</p>\r\n</td>\r\n<td width=\"188\">\r\n<p>Proximal DVT och okomplicerad lungemboli 3-6 m&aring;nader</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"227\">\r\n<p>&Ouml;vriga t.ex. &aring;terfall i VTE, aktiv cancer, h&ouml;grisk patienter f&ouml;r &aring;terfall</p>\r\n</td>\r\n<td width=\"216\">\r\n<p>L&aring;ngtidsbehandling med &aring;rlig utv&auml;rdering</p>\r\n</td>\r\n<td width=\"188\">\r\n<p>&Aring;terfall av VTE eller komplicerad f&ouml;rsta g&aring;ngs VTE l&aring;ngtidsbehandling med &aring;rlig utv&auml;rdering</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3457a8d5-800d-4f67-9700-5f1640e0309e",
+			"name": "3457a8d5-800d-4f67-9700-5f1640e0309e",
+			"type": "text",
+			"content": "<h2 id=\"Poliklinisering-av-VTE-patienter\">Poliklinisering av VTE-patienter</h2>\n<h3 id=\"DVT\">DVT</h3>\n<p>Idag polikliniseras &ouml;ver 80&nbsp;% av patienterna med DVT. Patienter som f&aring;r anses ol&auml;mpliga f&ouml;r poliklinisering &auml;r till exempel de med uttalad symtomatologi, okontrollerad hypertoni, annan allvarlig sjuklighet (till exempel cancer), p&aring;g&aring;ende bl&ouml;dning, CNS-bl&ouml;dning eller <span style=\"background-color: #ffff00;\">CNS-operation</span>, &ouml;kad bl&ouml;dningsrisk, graviditet och bristande compliance (demens, missbruk).</p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "131367ad-2577-472b-ab49-613bb90ee176",
+			"name": "131367ad-2577-472b-ab49-613bb90ee176",
+			"type": "text",
+			"content": "<h3 id=\"Lungemboli\">Lungemboli</h3>\n<p>Poliklinisk behandling av patienter med lungemboli g&ouml;rs vid op&aring;verkat allm&auml;ntillst&aring;nd, normala vitalparametrar (som puls, blodtryck, andningsfrekvens, saturation, temperatur) samt fr&aring;nvaro av prognostiskt ogynsamma tecken som till exempel h&ouml;gerkammarp&aring;verkan (Faktaruta 5). Inl&auml;ggning b&ouml;r &ouml;verv&auml;gas vid f&ouml;rekomst av faktorer som komplicerar antikoagulansbehandlingen (till exempel graviditet, bl&ouml;dningsrisk och missbruk), samt om patienten har minskade kardiopulmonella reserver (kronisk lung- eller hj&auml;rtsjukdom, utbredd LE) eller annan allvarlig sjukdom (till exempel cancer).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "cca68308-8b1d-4e3b-958e-84969cfebab4",
+			"name": "cca68308-8b1d-4e3b-958e-84969cfebab4",
+			"type": "facts",
+			"content": {
+				"number": "5",
+				"title": "Faktorer associerade med sämre prognos och hög risk vid lungemboli",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>Massiv lungemboli</td>\r\n<td>Minst 2 affekterade lobart&auml;rer eller mer &auml;n 50 % vid perfusionsskintigrafi.</td>\r\n</tr>\r\n<tr>\r\n<td>P&aring;verkad hemodynamik</td>\r\n<td>Hypotension (SBT &lt; 100), puls &gt; 110/min, chockindex &gt; 1 (= puls dividerat med systoliskt blodtryck), yrsel, svimning</td>\r\n</tr>\r\n<tr>\r\n<td>H&ouml;gerkammarp&aring;verkan enligt EKG</td>\r\n<td>T-neg V1-4 och/eller SI/QIII/TIII, nytillkommet f&ouml;rmaksflimmer</td>\r\n</tr>\r\n<tr>\r\n<td>H&ouml;gerkammarp&aring;verkan med biokemiska mark&ouml;rer</td>\r\n<td>F&ouml;rh&ouml;jda hj&auml;rtbiomark&ouml;rer (BNP, NT-proBNP, Trop T och Trop I)</td>\r\n</tr>\r\n<tr>\r\n<td>H&ouml;gerkammarp&aring;verkan p&aring; ekokardiografi</td>\r\n<td>Dilaterad h&ouml;ger kammare, f&ouml;rh&ouml;jt systoliskt PA-tryck, avplanad eller invers septumr&ouml;relse, myokardhypokinesi</td>\r\n</tr>\r\n<tr>\r\n<td>H&ouml;gerkammarp&aring;verkan p&aring; DTLA</td>\r\n<td>H&ouml;gerkammardiameter/v&auml;nsterkammardiameter &gt; 1,0</td>\r\n</tr>\r\n<tr>\r\n<td>Nedsatt hj&auml;rtlungreserv</td>\r\n<td>K&auml;nd hj&auml;rtlungsjukdom</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ccb8073d-c9bc-480d-9dc5-21d7ad46ddbe",
+			"name": "ccb8073d-c9bc-480d-9dc5-21d7ad46ddbe",
+			"type": "figure",
+			"content": {
+				"number": "1",
+				"maxwidth": "",
+				"image": "/images/default.png",
+				"title": "Behandlingsalgoritm som stöd för behandling utifrån hemodynamisk påverkan och prognos vid misstänkt lungemboli (modifierad efter ESC)",
+				"text": "",
+				"alt": "",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0e849168-b810-4c69-b4a4-d4af1037048b",
+			"name": "0e849168-b810-4c69-b4a4-d4af1037048b",
+			"type": "text",
+			"content": "<h2 id=\"Komplikationer\">Komplikationer</h2>\n<p>VTE &auml;r en allvarlig sjukdom som obehandlad kan leda till <span>lungembolism</span> och <span>pl&ouml;tslig d&ouml;d</span> (mors subita). Andra komplikationer &auml;r <span>kronisk pulmonell hypertension</span><em>, </em>ett allvarligt tillst&aring;nd med d&aring;lig prognos. Posttrombotisk syndrom kan leda till bens&aring;r. <span>Bens&aring;r</span> &auml;r en DVT-komplikation som ofta manifesterar sig efter 2&ndash;5&nbsp;&aring;r hos cirka 10&nbsp;% av patienterna. <span>Bl&ouml;dning</span> &auml;r en allvarlig komplikation till antikoagulationsbehandling och kan ber&auml;knas intr&auml;ffa f&ouml;r 1&ndash;4&nbsp;% av patienterna &aring;rligen. Vid &aring;lder &ouml;ver 80&nbsp;&aring;r &auml;r risken f&ouml;r allvarlig bl&ouml;dning h&ouml;gre. Patienterna b&ouml;r d&auml;rf&ouml;r alltid bed&ouml;mas ur riskh&auml;nseende ocks&aring; f&ouml;r bl&ouml;dning.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "464dea02-c730-44ae-bbb5-e2d98e8d5a98",
+			"name": "464dea02-c730-44ae-bbb5-e2d98e8d5a98",
+			"type": "text",
+			"content": "<h3 id=\"Behandling-av-blodningskomplikationer-vid-antikoagulantiabehandling-och-trombolys\">Behandling av bl&ouml;dningskomplikationer vid antikoagulantiabehandling och trombolys</h3>\n<p>Vid akuta bl&ouml;dningskomplikationer till perorala antikoagulantia finns idag s&aring; kallade PCC (protrombinkomplexkoncentrat) (30). De tv&aring; produkter som finns i Sverige &auml;r <span>Ocplex</span> och <span>Confidex</span>. Doseringen av dessa b&ouml;r ske i samr&aring;d med specialist om behandlande l&auml;kare inte &auml;r f&ouml;rtrogen med dessa produkter. Den vanliga dosen &auml;r 1000&nbsp;E&ndash;1500&nbsp;E och reverserar warfarineffekten. K-vitamin ges ofta samtidigt i dosen 2,5-5,0 mg.<br><br>Till LMH finns ingen tydlig antidot men protaminsulfat kan i enstaka fall &ouml;verv&auml;gas. Denna behandling b&ouml;r dock alltid ske i samr&aring;d med specialist.<br><br></p>\n<p>Till dabigatran finns nu en specifik antidot (Praxbind) som lagerh&aring;lls p&aring; de flesta sjukhusbundna akutmottagningar i Sverige. Preparatet ges som tv&aring; infusioner med 15 minuters intervall, och har d&aring; en mycket specik effekt p&aring; dabigatran. I kliniska pr&ouml;vningar har det visat sig ha god effekt.</p>\n<p><br>Till apixaban och rivaroxaban finns idag inga specifika antidoter. Kliniska pr&ouml;vningar p&aring;g&aring;r med en specifik antidot mot perorala faktor Xa h&auml;mmare och godk&auml;nnande i Europa kan v&auml;ntas under 2018 eller senare.</p>\n<p></p>\n<p>I en situation med allvarlig bl&ouml;dning kan PCC anv&auml;ndas och d&aring; b&ouml;r det alltid ske i samr&aring;d med specialist.</p>\n<p>Vid trombolys med till exempel t-PA beh&ouml;vs ingen specifik antidot d&aring; preparatet har mycket kort halveringstid (minuter).</p>\n<p></p>\n<p>Se Faktaruta X.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "15f016f5-77a9-4cab-89b0-d7fafebc3723",
+			"name": "15f016f5-77a9-4cab-89b0-d7fafebc3723",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "Antidoter",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td><strong>Antikoagulantia</strong></td>\r\n<td><strong>Antidot</strong></td>\r\n</tr>\r\n<tr>\r\n<td rowspan=\"2\">Warfarin</td>\r\n<td>Vitamin K &ndash; ger effekt inom 12&ndash;24 timmar</td>\r\n</tr>\r\n<tr>\r\n<td>PCC &ndash; ger effekt inom minuter</td>\r\n</tr>\r\n<tr>\r\n<td>LMH</td>\r\n<td>Protamin &ndash; effekten &auml;r sv&aring;rv&auml;rderad</td>\r\n</tr>\r\n<tr>\r\n<td>Dabigatran</td>\r\n<td>Idarucizumab &ndash; ger effekt inom minuter</td>\r\n</tr>\r\n<tr>\r\n<td>Apixaban, Rivaroxaban</td>\r\n<td>\r\n<p>Ingen specifik antidot &auml;r registrerad (2016&zwnj;).</p>\r\n<p>Vid allvarliga bl&ouml;dningar kan PCC testas.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><span style=\"color: #ff0000;\">Kan det vara av v&auml;rde med l&auml;nk till Giftinfo.se?</span></p>\r\n</td>\r\n<td>\r\n<p></p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e15f4574-a9b8-4664-b6bd-5c9b2fe81ddc",
+			"name": "e15f4574-a9b8-4664-b6bd-5c9b2fe81ddc",
+			"type": "text",
+			"content": "<h2 id=\"Trombofiliutredning\">Trombofiliutredning</h2>\n<p>Av den m&aring;ngfald genetiska varianter som &auml;r kopplade till &ouml;kad risk f&ouml;r VTE &auml;r det &auml;n s&aring; l&auml;nge bara faktor&nbsp;V Leiden-mutationen som orsakar APC-resistens, protrombin G20210A-mutationen samt &auml;rftlig brist p&aring; antitrombin, protein C och protein S, som best&auml;ms i klinisk praxis (Faktaruta 2) (31).<br><br></p>\n<p>APC-resistens orsakat av faktor&nbsp;V&nbsp;Leiden &auml;r den vanligaste genetiska riskfaktorn med koppling till ven&ouml;s trombos. APC-resistens &auml;r en relativt sett m&aring;ttlig men vanlig riskfaktor (heterozygot form f&ouml;rekommer hos 5&ndash;11&nbsp;% av befolkningen). Risken f&ouml;r en f&ouml;rsta trombos &auml;r 3&ndash;5 g&aring;nger &ouml;kad, men f&ouml;r &aring;terinsjuknande i trombos ses endast cirka 1,5 g&aring;ngers risk&ouml;kning (32). Den homozygota formen inneb&auml;r 10&ndash;16 g&aring;ngers risk&ouml;kning f&ouml;r en f&ouml;rsta trombos och cirka 2 g&aring;nger &ouml;kad risk f&ouml;r &aring;terinsjuknande i trombos. V&auml;rdet av att kontrollera APC-resistens hos patienter med ven&ouml;s trombos har diskuterats eftersom risk&ouml;kningen f&ouml;r en ny trombos &auml;r relativt l&aring;g.</p>\n<p><br>Protrombingenmutationen G20210A medf&ouml;r en &ouml;kad niv&aring; av trombin som ger en &ouml;kad risk f&ouml;r ven&ouml;s trombos. Risk&ouml;kningen &auml;r aningen mindre &auml;n den f&ouml;r APC-resistens (2&ndash;3 g&aring;nger &ouml;kad risk)<br><br>Antitrombin, protein S och protein C brist inneb&auml;r alla s&auml;nkta niv&aring;er av koagulationssystemets naturliga h&auml;mmare. Heterozygot brist p&aring; n&aring;gon av dessa brukar ofta i selekterade familjer leda till en VTE f&ouml;re 50 &aring;rs &aring;lder. Homozygot brist p&aring; protein C och protein S leder till fatal purpura fulminans inom n&aring;gra timmar efter partus. Homozygot brist p&aring; antitrombin har inte beskrivits och &auml;r inte f&ouml;renlig med liv. Flera mutationer har beskrivits f&ouml;r varje protein varf&ouml;r genetisk testning med DNA-sekvensering inte sker i klinisk praxis. Diagnostiken baseras d&auml;rf&ouml;r i praktiken p&aring; upprepade m&auml;tningar av respektive faktor. Den heredit&auml;ra naturen bekr&auml;ftas genom familjeanalys. Risken f&ouml;r en f&ouml;rsta trombos &ouml;kar 10&ndash;16 g&aring;nger vid protein S-, protein C- eller antitrombrist, &aring;terfall i en ny ven&ouml;s trombos &auml;r cirka 2 g&aring;nger &ouml;kad.<br><br>F&ouml;rh&ouml;jda niv&aring;er av koagulationsfaktor VIII, IX och XI &auml;r f&ouml;rknippade med en 2&ndash;3 g&aring;nger &ouml;kad risk f&ouml;r VTE. H&ouml;ga niv&aring;er av faktor&nbsp;VIII kan vara &auml;rftliga, f&ouml;r faktor IX och XI &auml;r det mer oklart. En del av f&ouml;rh&ouml;jningen av faktor&nbsp;VIII &auml;r kopplat till AB0-blodgrupp. Individer med 0-blodgrupp har l&auml;gre faktor VIII-niv&aring;er och l&auml;gre VTE-risk. Best&auml;mning av AB0-blodgrupp och faktor VIII-niv&aring;er v&auml;ntar &auml;nnu p&aring; en plats i klinisk praxis. Det s&auml;llsynta tillst&aring;ndet homocysteinuri som orsakas av brist p&aring; enzymet cystationin-beta-syntas medf&ouml;r en kraftig&nbsp; homocysteinemi och &ouml;kad risk f&ouml;r s&aring;v&auml;l arteriella som ven&ouml;sa tromboser. M&aring;ttlig homocysteinemi av annan anledning har ocks&aring; visats ha samband med en &ouml;kad risk f&ouml;r VTE men sambandet tycks inte vara kausalt. En genetisk variant i MTHF genen (C677T) som g&aring;r med &ouml;kad niv&aring; av homocystein i plasma har inte visats sig vara en risk faktor f&ouml;r VTE. <span style=\"background-color: #ffff00;\">Se Tabell X.</span><br><br></p>\n<p>Screening f&ouml;r trombofili rekommenderas inte generellt vid VTE utom f&ouml;r patienter under 50&nbsp;&aring;r, recidiverande tromboembolisk sjukdom eller om stark hereditet f&ouml;religger. Prover att ta vid trombofiliutredning &auml;r:</p>\n<ul>\n<li>antitrombin</li>\n<li>protein C</li>\n<li>protein S fritt</li>\n<li>faktor V-mutation (det vill s&auml;ga APC-resistens)</li>\n<li>protrombinmutation</li>\n<li>kardiolipinanti&shy;kroppar (IgG)</li>\n<li>lupusantikoagulans</li>\n<li>eventu&shy;ellt faktor VIII.</li>\n</ul>\n<p>Vid p&aring;visad &auml;rftlig koagulationsrubbning ska f&ouml;rstagradssl&auml;ktingar erbjudas utredning, det vill s&auml;ga barn (n&auml;r de &auml;r &auml;ldre &auml;n 10&ndash;12 &aring;r), syskon och f&ouml;r&auml;ldrar.<br><br>Cancer f&ouml;rekommer hos omkring 5&nbsp;% av patienterna vid diagnos och m&aring;nga g&aring;nger &auml;r det uppenbart att patienten har n&aring;gon annan allvarlig sjukdom som orsak till sin VTE. Generell screening av patienter f&ouml;r cancersjukdom kan inte rekommenderas, men noggrann anamnes och unders&ouml;kning ska alltid g&ouml;ras. P&aring; riktad indikation ska man vara liberal att utreda misst&auml;nkt cancer eller annan bakomliggande sjukdom. Riskfaktorer f&ouml;r cancer &auml;r &aring;lder &ouml;ver 70&nbsp;&aring;r och anemi vid diagnosen av VTE.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "cccd87f7-1b19-49bf-992e-7f2e9e340cb4",
+			"name": "cccd87f7-1b19-49bf-992e-7f2e9e340cb4",
+			"type": "tablenarrow",
+			"content": {
+				"number": "1",
+				"title": "Prevalenstal för genvarianter som medför ökad risk för VTE",
+				"id": "",
+				"text": "<table class=\"table table-bordered\">\r\n<tbody>\r\n<tr>\r\n<td>Trombofili-abnormitet</td>\r\n<td colspan=\"2\">Prevalens (%)</td>\r\n<td colspan=\"2\">Relativ risk</td>\r\n</tr>\r\n<tr>\r\n<td></td>\r\n<td>Allm&auml;nna befolkningen</td>\r\n<td>VTE-patienter</td>\r\n<td>Prim&auml;r VTE</td>\r\n<td>Recidiv</td>\r\n</tr>\r\n<tr>\r\n<td>Antitrombinbrist</td>\r\n<td>0,02&ndash;0,2</td>\r\n<td>1</td>\r\n<td>10&ndash;20</td>\r\n<td>2,5</td>\r\n</tr>\r\n<tr>\r\n<td>Protein C-brist</td>\r\n<td>0,2&ndash;0,4</td>\r\n<td>3</td>\r\n<td>10</td>\r\n<td>2,5</td>\r\n</tr>\r\n<tr>\r\n<td>Protein S-brist</td>\r\n<td>0,03&ndash;0,1</td>\r\n<td>2</td>\r\n<td>10</td>\r\n<td>2,5</td>\r\n</tr>\r\n<tr>\r\n<td>Faktor V Leiden (heterozygot)</td>\r\n<td>5&ndash;10</td>\r\n<td>20&ndash;25</td>\r\n<td>3&ndash;5</td>\r\n<td>1,5</td>\r\n</tr>\r\n<tr>\r\n<td>Faktor V Leiden (homozygot)</td>\r\n<td>0,02&ndash;0,1</td>\r\n<td>1,5&ndash;4</td>\r\n<td>10&ndash;16</td>\r\n<td>2</td>\r\n</tr>\r\n<tr>\r\n<td>Protrombin G20210A (heterozygot)</td>\r\n<td>2</td>\r\n<td>6&ndash;7</td>\r\n<td>3&ndash;4</td>\r\n<td>1,5</td>\r\n</tr>\r\n<tr>\r\n<td>Protrombin G20210A (homozygot)</td>\r\n<td>0,01</td>\r\n<td>&lt; 1</td>\r\n<td>?</td>\r\n<td>?</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "edf1abcf-dc2d-4960-be52-00646f34c4a0",
+			"name": "edf1abcf-dc2d-4960-be52-00646f34c4a0",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "Åtgärder vid påvisad heterozygot faktor V- eller protrombinmutation",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td><strong>Vid mutation utan genomg&aring;ngen trombos ges f&ouml;ljande r&aring;d:</strong></td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Patienten ska aktivt r&ouml;ra p&aring; benen vid l&auml;ngre resor/flygresor samt undvika uttorkning.</li>\r\n<li>Kombinerade p-piller och &ouml;strogenbehandling ska undvikas under fertil &aring;lder</li>\r\n<li>Post-menopausal &ouml;strogenbehandling (l&auml;gre risk) ska individualiseras.</li>\r\n<li>Profylax b&ouml;r diskuteras i samband med operation, benbrott, graviditet och l&aring;ngvarigt s&auml;ngl&auml;ge.</li>\r\n<li>Vid sjukdom b&ouml;r patienten ber&auml;tta om sin koagulationsrubbning f&ouml;r l&auml;karen.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td><strong>Vid mutation, efter genomg&aring;ngen trombos:</strong></td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Fortsatt handl&auml;ggning ska ske vid, eller i samr&aring;d med, specialistklinik.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c2a5f9ff-cc91-4c07-969b-e34318413bbc",
+			"name": "c2a5f9ff-cc91-4c07-969b-e34318413bbc",
+			"type": "text",
+			"content": "<h2 id=\"Ovanliga-lokalisationer-av-venos-trombos\">Ovanliga lokalisationer av ven&ouml;s trombos</h2>\n<p><span>Tromboser i arm, ven&ouml;sa k&auml;rl i buken</span> eller i <span>CNS</span> &auml;r relativt ovanliga och st&aring;r f&ouml;r omkring 5&nbsp;% av all VTE. Ovanlig lokalisation kan vara en manifestation av familj&auml;r tromobfili, till exempel antitrombin, protein C och protein S-brist samt Faktor V Leiden och protrombingenmutationen G20210A. Behandling och riskfaktorer skiljer sig inte n&auml;mnv&auml;rt fr&aring;n LE och DVT och dessa relativt ovanliga tromboser avhandlas inte ytterligare.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ad4ca307-eebe-4589-8a30-1aca1bbc4a98",
+			"name": "ad4ca307-eebe-4589-8a30-1aca1bbc4a98",
+			"type": "text",
+			"content": "<h2 id=\"Tromboflebit\"><a name=\"_Toc147136472\"></a>Tromboflebit</h2>\n<p>Tromboflebit eller ytlig trombos &auml;r vanligt och debuterar ofta som en palpabel och &ouml;mmande k&auml;rlstr&auml;ng i underhuden, som p&aring; underbenet ibland str&auml;cker sig upp p&aring; l&aring;ret. Ofta finns ett starkt inflammatorisk inslag med sekund&auml;r trombosbildning. Tromboflebit kan uppst&aring; i ett k&auml;rl, som retats av l&auml;kemedel eller bakterier, vid kirurgi av varicer, spontant i varicer eller sekund&auml;rt till vissa sjukdomar (malignitet, Beh&ccedil;ets syndrom eller morbus B&uuml;rger) samt i &ouml;kad frekvens vid vissa trombofilier (APC-resistens, brist p&aring; protein C eller protein S). Eftersom DVT i samma eller i det kontralaterala benet f&ouml;rekommer samtidigt hos 10&ndash;50&nbsp;% hos patienterna med ytlig trombos b&ouml;r alltid noggrant status utf&ouml;ras och b&aring;da benen unders&ouml;kas. D-dimer kan vara &ouml;kad vid en ytlig tromboflebit men f&aring; studier har unders&ouml;kt D-dimerniv&aring;er vid ytlig tromboflebit. Wells score &auml;r inte heller validerat vid ytlig tromboflebit. Ultraljud g&ouml;rs p&aring; liberal indikation vid tromboflebit f&ouml;r att utesluta DVT och b&ouml;r alltid g&ouml;ras n&auml;r st&ouml;rre vener, till exempel v. safena magna och v. safena parva, &auml;r drabbade.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "62a99739-5295-454e-97d2-8b66d8ab0d7f",
+			"name": "62a99739-5295-454e-97d2-8b66d8ab0d7f",
+			"type": "text",
+			"content": "<h3 id=\"Behandling-av-tromboflebit\">Behandling av tromboflebit</h3>\n<p>Dokumentationen &auml;r bristf&auml;llig n&auml;r det g&auml;ller behandling av tromboflebit. Korta isolerade tromboflebiter med liten risk f&ouml;r djup trombos har f&ouml;reslagits att behandlas med antiinflammatoriska l&auml;kemedel som till exempel ibuprofen 400&nbsp;mg 3 g&aring;nger/dag. Ett annat alternativ kan vara h<span>eparinoider</span> lokalt. Lokal applikation av Hiriduid kr&auml;m kan ge god symtomlindring och majoriteten av patienterna svarar bra p&aring; behandling 2&nbsp;g&aring;nger dagligen under n&aring;gra veckor. Fondaprinux har godk&auml;nd indikation f&ouml;r ytlig tromboflebit (f&ouml;r dosering se produktresum&eacute;n). <span>LMH</span> i halv eller full behandlingsdos i 1&ndash;2 veckor eller tills de akuta symtomen avklingat kan vara indicerat som symtomatisk behandling och profylaktisk &aring;tg&auml;rd mot trombotisering av djupare k&auml;rl. Vid samtidig djup ventrombos ges behandling f&ouml;r denna. <span>Kirurgi</span> i form av akut h&ouml;g underbindning &ouml;verv&auml;gs vid migration av tromboflebiten till v.&nbsp;safena magna p&aring; l&aring;ret som n&auml;rmar sig ljumsken. Detta eliminerar risken f&ouml;r propagation av trombosen och lungembolisering.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "aa032d51-1885-47e4-aafa-8139e6da4c3c",
+			"name": "aa032d51-1885-47e4-aafa-8139e6da4c3c",
+			"type": "text",
+			"content": "<h2 id=\"Ostrogener-och-trombos\">&Ouml;strogener och trombos</h2>\n<p>&Ouml;strogenkomponenten i p-piller &ouml;kar risken f&ouml;r trombos trefaldigt (33).</p>\n<p><a href=\"http://www.lakemedelsboken.se/atc/G03\">Gestagen</a>komponenten i tredje generationens <a href=\"http://www.lakemedelsboken.se/atc/G03A\">p-piller</a> (<a href=\"http://www.lakemedelsboken.se/atc/G03AA09-G03AC09\">desogestrel</a>, gestoden) &ouml;kar risken uppskattningsvis 1,7 g&aring;nger j&auml;mf&ouml;rt med andra generationens <a href=\"http://www.lakemedelsboken.se/atc/G03A\">p-piller</a>, troligen p&aring; grund av en mer uttalad antiandrogen effekt. Kvinnor med ven&ouml;s insufficiens och kraftig &ouml;vervikt b&ouml;r ordineras antikonceptionsmedel utan <a href=\"http://www.lakemedelsboken.se/atc/G03C\">&ouml;strogen</a>. Se &auml;ven kapitlet <a href=\"{pre}/kapitel/gynekologi/antikonception_och_aborter.html#i4_12\">Antikonception och aborter, avsnittet Djup ventrombos</a>.<br><br></p>\n<p>Risken f&ouml;r VTE &ouml;kar 2&ndash;3 g&aring;nger av <a href=\"http://www.lakemedelsboken.se/atc/G03C\">&ouml;strogen</a>ers&auml;ttning mot klimakteriebesv&auml;r. Vid elektiv kirurgi &auml;r det f&ouml;rdelaktigt om behandling med <a href=\"http://www.lakemedelsboken.se/atc/G03C\">&ouml;strogen</a> s&auml;tts ut 1 m&aring;nad i f&ouml;rv&auml;g f&ouml;r att minska trombosrisken. &Aring;terins&auml;ttning kan ske 1 m&aring;nad efter operation. Hos patienter med konstaterad VTE kan <a href=\"http://www.lakemedelsboken.se/atc/G03C\">&ouml;strogenbehandling</a>en beh&aring;llas s&aring; l&auml;nge patienten &auml;r skyddad med <a href=\"http://www.lakemedelsboken.se/atc/B01A\">antikoagulantia</a>.</p>\n<p><br>Kombinationen r&ouml;kning och <a href=\"http://www.lakemedelsboken.se/atc/G03A\">p-piller</a> ger synergistisk risk&ouml;kning f&ouml;r trombos.</p>\n<p><br>Kvinnor som &ouml;nskar <a href=\"http://www.lakemedelsboken.se/atc/G03A\">p-piller</a> men har en n&auml;ra sl&auml;kting med ven&ouml;s tromboembolism b&ouml;r ocks&aring; f&aring; antikonceptionsmedel utan <a href=\"http://www.lakemedelsboken.se/atc/G03C\">&ouml;strogen</a>. Det finns inte indikation f&ouml;r trombofiliutredning hos dessa, d&aring; ett negativt resultat inte utesluter trombofili och d&auml;rmed inte &auml;ndrar st&auml;llningstagandet.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "24f0db2b-f93e-4f31-91ae-34ddbfcf712b",
+			"name": "24f0db2b-f93e-4f31-91ae-34ddbfcf712b",
+			"type": "text",
+			"content": "<h2 id=\"Graviditet-och-trombos\">Graviditet och trombos</h2>\n<p>Incidensen av tromboembolism &auml;r ungef&auml;r 1&nbsp;p&aring; 1&nbsp;000 graviditeter,det vill s&auml;ga ungef&auml;r 10 g&aring;nger &ouml;kad j&auml;mf&ouml;rt med icke-gravida kvinnor (34). Riskfaktorer f&ouml;r VTE under och efter graviditet &auml;r f&ouml;ljande:</p>\n<ul>\n<li>BMI&nbsp;&gt;&nbsp;28 kg/m<sup>2</sup></li>\n<li>r&ouml;kning</li>\n<li>tidigare ven&ouml;s tromboembolism</li>\n<li>varicer, trombofili</li>\n<li>akut kejsarsnitt</li>\n<li>preeklampsi.</li>\n</ul>\n<p>Kompressionsstrumpor rekommenderas profylaktiskt vid &ouml;kad risk. Medikamentell profylax ges med <a href=\"http://www.lakemedelsboken.se/atc/B01AB\">LMH</a>, men dosen beror p&aring; graden av trombosrisk och kan beh&ouml;va justeras under en graviditet. Denna behandling b&ouml;r sk&ouml;tas via specialistmottagning. Vid misst&auml;nkt DVT drivs diagnostiken i f&ouml;rsta hand med ultraljud &ndash; f&ouml;r b&auml;ckentrombos helst med magnetkamera. Lungemboli diagnostiseras med lungskintigrafi, datortomografi eller bilateralt ultraljud av benens vener. D-dimertest &auml;r inte anv&auml;ndbart p&aring; gravida. Behandling av VTE b&ouml;r inledas p&aring; sjukhus. I akutskedet anv&auml;nds ofraktionerat <a href=\"http://www.lakemedelsboken.se/atc/B01AB-B01AB01\">heparin</a> eller <a href=\"http://www.lakemedelsboken.se/atc/B01AB\">LMH</a>. Warfarin &auml;r kontraindicerat vid graviditet. F&ouml;r sekund&auml;rprofylax &auml;r <a href=\"http://www.lakemedelsboken.se/atc/B01AB\">LMH</a> att f&ouml;redra. Efter f&ouml;rlossningen &auml;r <a href=\"http://www.lakemedelsboken.se/atc/B01AA03\">warfarin</a> ett alternativ till <a href=\"http://www.lakemedelsboken.se/atc/B01AB\">LMH</a>, d&aring; passagen till modersmj&ouml;lken &auml;r f&ouml;rsumbar. NOAK rekommenderas f&ouml;r n&auml;rvarande inte till gravida och/eller ammande kvinnor.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "68aa7309-f64b-4efb-8530-32e49f68b0f2",
+			"name": "68aa7309-f64b-4efb-8530-32e49f68b0f2",
+			"type": "text",
+			"content": "<h2 id=\"Venos-tromboembolism-hos-barn\">Ven&ouml;s tromboembolism hos barn</h2>\n<p>Incidensen av ven&ouml;s tromboembolism &auml;r &lt;&nbsp;1 per 100&nbsp;000 barn och &aring;r (35). H&ouml;gst risk ses hos barn &lt;&nbsp;1 &aring;rs &aring;lder och hos barn i ton&aring;ren. Till skillnad fr&aring;n hos vuxna kan man i de flesta fall p&aring;visa en utl&ouml;sande orsak. I m&aring;nga fall &auml;r trombosen associerad till en central venkateter (CVK) eller liknande. Trombos i &ouml;vre extremiteterna ses n&auml;stan lika ofta som i de nedre extremiteterna. Diagnostik och behandling sk&ouml;ts av pediatriker p&aring; sjukhus.<br><br></p>\n<p>F&ouml;r diagnostik av ven&ouml;s tromboembolism &auml;r den huvudsakliga erfarenheten baserad p&aring; flebografi och lungskintigrafi. D&aring; ven&ouml;s access ofta kan vara sv&aring;rt kan ultraljud ist&auml;llet f&ouml;r flebografi g&ouml;ras som initial unders&ouml;kning.<br><br></p>\n<p>Trombolytisk terapi kan ges vid lungembolism som &auml;r massiv eller inte svarar p&aring; <a href=\"http://www.lakemedelsboken.se/atc/B01AB-B01AB01\">heparin</a> samt vid utbredd djup ventrombos, men &auml;r f&ouml;renad med &ouml;kad bl&ouml;dningsrisk. Om trombolytisk behandling till barn &ouml;verv&auml;gs b&ouml;r detta ske i samr&aring;d med pediatriker som har erfarenhet av denna typ av behandling, se Terapirekommendation X.<br><br></p>\n<p>Sekund&auml;rprofylax kan ges med fortsatt <a href=\"http://www.lakemedelsboken.se/atc/B01AB-B01AB01\">heparin</a> eller &ouml;verg&aring;ng till <a href=\"http://www.lakemedelsboken.se/atc/B01AA03\">warfarin</a> som hos vuxna. Vid tillf&auml;lligt utl&ouml;sande trombosorsak som elimineras och med normalisering av status, ges sekund&auml;rprofylax i 3 m&aring;nader. Efter oprovocerad tromboembolism f&ouml;rl&auml;ngs behandlingen till 6&ndash;12 m&aring;nader och om denna recidiverar ges behandling tills vidare (24).</p>\n<p><br>F&ouml;r de l&aring;gmolekyl&auml;ra <a href=\"http://www.lakemedelsboken.se/atc/B01AB-B01AB01\">heparin</a>er som &auml;r registrerade i Sverige finns n&auml;mnv&auml;rd pediatrisk dokumentation bara f&ouml;r <a href=\"http://www.lakemedelsboken.se/atc/B01AB05\">enoxaparin</a>. Se vidare Terapirekommendationerna X.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c30fccdb-30be-45af-98c5-e701eb00b3d3",
+			"name": "c30fccdb-30be-45af-98c5-e701eb00b3d3",
+			"type": "therapy",
+			"content": {
+				"number": "1",
+				"title": "Dosering av hepariner vid venös tromboembolism hos barn",
+				"id": "",
+				"text": "<table class=\"table table-bordered therapy-recommendations\">\r\n<tbody>\r\n<tr>\r\n<td></td>\r\n<td><strong>Dosering<sup>a</sup></strong></td>\r\n<td><strong>&Ouml;nskad plasmaniv&aring;</strong></td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"3\"><strong>L&aring;gmolekyl&auml;ra hepariner</strong></td>\r\n</tr>\r\n<tr>\r\n<td>Enoxaparin</td>\r\n<td>1,0&ndash;1,5 mg/kg kroppsvikt 2 g&aring;nger/dag</td>\r\n<td>0,5&ndash;1,0 anti-Xa-enheter i prov taget 4&ndash;6 timmar efter subkutan injektion</td>\r\n</tr>\r\n<tr>\r\n<td>Dalteparin</td>\r\n<td>100&ndash;150 IE/kg kroppsvikt 1&nbsp;g&aring;ng/dag</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td>Tinzaparin</td>\r\n<td>175&ndash;275 IE/kg kroppsvikt 1&nbsp;g&aring;ng/dag</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"3\"><strong>Ofraktionerat heparin</strong></td>\r\n</tr>\r\n<tr>\r\n<td>Bolusdos</td>\r\n<td>H&ouml;gst 75&ndash;100 IE/kg kroppsvikt</td>\r\n<td>0,35&ndash;0,70 anti-Xa-enheter/ml (eller APTT motsvarande detta)</td>\r\n</tr>\r\n<tr>\r\n<td>Infusion</td>\r\n<td>20&ndash;28 IE/kg kroppsvikt/timme</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"3\">a. H&ouml;gst dos ges neonatalt och dosen reduceras successivt fr&aring;n 2 m&aring;naders &aring;lder. G&auml;ller alla hepariner.</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d8832377-963d-4265-910f-1b19ee727c2e",
+			"name": "dad11842-d329-4a0b-bad9-75ae55abc22d",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2>\n<ol class=\"references\"><li id=\"reference_1\">Blodpropp &ndash; f&ouml;rebyggande, diagnostik och behandling av ven&ouml;s tromboembolism. <span>Stockholm: SBU; 2002. <a href=\"http://www.sbu.se\">www.sbu.se</a><br></span></li>\n<li id=\"reference_2\">Rosendaal FR. Venous thrombosis: a multicausal disease. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/10209995\">Lancet 1999;353:1167-73</a>.</li>\n<li id=\"reference_3\"><span>Heit JA. Epidemiology of venous thromboembolism. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/26076949\">Nat Rev Cardiol 2015;12:464-74</a>.</span></li>\n<li id=\"reference_4\">Dahlb&auml;ck B, Carlsson M, Svensson PJ. <span>Familial thrombophilia due to a previously unrecognized mechanism characterized by poor anticoagulant response to activated protein C: prediction of a cofactor to activated protein C.<a href=\"http://www.ncbi.nlm.nih.gov/pmc/articles/PMC45799/\"> Proc Natl Acad Sci U S A. 1993;90:1004-8</a>.</span></li>\n<li id=\"reference_5\"><span>Z&ouml;ller B, Li X, Ohlsson H, Ji J, Sundquist J, Sundquist K. Family history of venous thromboembolism as a risk factor and genetic research tool. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/26305449\">Thromb Haemost 2015;114:890-900</a>.</span></li>\n<li id=\"reference_6\"><span>Morange PE, Suchon P, Tr&eacute;gou&euml;t DA. Genetics of Venous Thrombosis: update in 2015. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/26354877\">Thromb Haemost 2015;114:910-9</a>.</span></li>\n<li id=\"reference_7\"><span>Goldhaber SZ, Bounameaux H. Pulmonary embolism and deep vein thrombosis. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22494827\">Lancet 2012;379:1835-46</a>.</span></li>\n<li id=\"reference_8\"><span> </span><span>Kearon C, Akl EA, Comerota AJ, Prandoni P, Bounameaux H, Goldhaber SZ, et al. Antithrombotic therapy for VTE disease: antithrombotic therapy and prevention of thrombosis, 9th ed: American College of Chest Physicians Evidence-Based Clinical Practice Guidelines. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22315268\"> 2012;141:e419S&ndash;94S.</a></span></li>\n<li id=\"reference_9\"><span>Carrier M, Lazo-Langner A, Shivakumar S, Tagalakis V, Zarychanski R, Solymoss S, et al. Screening for Occult Cancer in Unprovoked Venous Thromboembolism.<a href=\"http://www.nejm.org/doi/full/10.1056/NEJMoa1506623#t=article\"> N Engl J Med;373:697-704</a>.</span></li>\n<li id=\"reference_10\">van Dongen CJJ, van der Belt AGM, Prins MH, Lensing AWA. <span>Fixed dose subcutaneous low molecular weight <a href=\"http://www.lakemedelsboken.se/atc/B01AB-B01AB01\">heparin</a>s versus adjusted dose unfractionated <a href=\"http://www.lakemedelsboken.se/atc/B01AB-B01AB01\">heparin</a> for venous thromboembolism.<br> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/15495007\">Cochrane Database Syst Rev. 2004: CD001100.</a></span></li>\n<li id=\"reference_11\"><span>B&uuml;ller HR, Davidson BL, Decousus H, Gallus A, Gent M, Piovella F, et al. <a href=\"http://www.lakemedelsboken.se/atc/B01AX05\">Fondaparinux</a> or <a href=\"http://www.lakemedelsboken.se/atc/B01AB05\">enoxaparin</a> for the initial treatment of symptomatic deep venous thrombosis: a randomized trial. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/15172900\">Ann Intern Med. 2004;140:867&ndash;73.</a></span></li>\n<li id=\"reference_12\"><span>B&uuml;ller HR, Davidson BL, Decousus H, Gallus A, Gent M, Piovella F, et al. Subcutaneous <a href=\"http://www.lakemedelsboken.se/atc/B01AX05\">fondaparinux</a> versus intravenous unfractionated <a href=\"http://www.lakemedelsboken.se/atc/B01AB-B01AB01\">heparin</a> in the initial treatment of pulmonary embolism. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/14585937\">N Engl J Med. 2003;349:1695&ndash;702</a>.</span></li>\n<li id=\"reference_13\">Lee AYY, Levine MN, Baker RI, Bowden C, Kakkar AK, Prins M, et al. <span>Low-molecular-weight <a href=\"http://www.lakemedelsboken.se/atc/B01AB-B01AB01\">heparin</a> versus a coumarin for the prevention of recurrent venous thromboembolism in patients with cancer. <a href=\"http://www.nejm.org/doi/full/10.1056/NEJMoa025313#t=article\">N Engl J Med. 2003;349:146&ndash;53</a>.</span></li>\n<li id=\"reference_14\"><span>Schulman S, Kearon C, Kakkar AK, Mismetti P, Schellong S, Eriksson H, et al. <a href=\"http://www.lakemedelsboken.se/atc/B01AE07\">Dabigatran</a> versus <a href=\"http://www.lakemedelsboken.se/atc/B01AA03\">warfarin</a> in the treatment of acute venous thromboembolism. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/19966341\">N Engl J Med. 2009;361:2342&ndash;52.</a></span></li>\n<li id=\"reference_15\"><span>EINSTEIN Investigators, Bauersachs R, Berkowitz SD, Brenner B, Buller HR, Decousus H, et al. Oral <a href=\"http://www.lakemedelsboken.se/atc/B01AF01\">rivaroxaban</a> for symptomatic venous thromboembolism. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=bauersachs+r+2010+rivaroxaban\">N Engl J Med. 2010;363:2499&ndash;510.</a></span></li>\n<li id=\"reference_16\"><span>EINSTEIN&ndash;PE Investigators, B&uuml;ller HR, Prins MH, Lensin AW, Decousus H, Jacobson BF, et al. Oral <a href=\"http://www.lakemedelsboken.se/atc/B01AF01\">rivaroxaban</a> for the treatment of symptomatic pulmonary embolism. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22449293\">N Engl J Med. 2012;366:1287&ndash;97.</a></span></li>\n<li id=\"reference_17\"><span>Agnelli G, Buller HR, Cohen A, Curto M, Gallus AS, Johnson M, et al. Oral <a href=\"http://www.lakemedelsboken.se/atc/B01AF02\">apixaban</a> for the treatment of acute venous thromboembolism.<br> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23808982\">N Engl J Med. 2013;369:799</a> &ndash;808.</span></li>\n<li id=\"reference_18\"><span>Schulman S, Kearon C, Kakkar AK, Schellong S, Eriksson H, Baanstra D, et al. Extended use of <a href=\"http://www.lakemedelsboken.se/atc/B01AE07\">dabigatran</a>, <a href=\"http://www.lakemedelsboken.se/atc/B01AA03\">warfarin</a>, or placebo in venous thromboembolism. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23425163\">N Engl J Med. 2013;368:709&ndash;18.</a></span></li>\n<li id=\"reference_19\"><span>Agnelli G, Buller HR, Cohen A, Curto M, Gallus AS, Johnson M, et al. <a href=\"http://www.lakemedelsboken.se/atc/B01AF02\">Apixaban</a> for extended treatment of venous thromboembolism.<br> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23216615\">N Engl J Med. 2013;368:699&ndash;708.</a></span></li>\n<li id=\"reference_20\">Bergqvist D, Eriksson B, Eriksson H, Nyman U, Ljungstr&ouml;m K-G, Schulman S, et al. Socialstyrelsens riktlinjer f&ouml;r v&aring;rd av blodpropp/ven&ouml;s tromboembolism 2004. Elanders Gotab, Stockholm, 2004, s 1&ndash;147.</li>\n<li id=\"reference_21\"><span>Sandler DA, Martin JF, Duncan JS, Blake GM, Ward P, Ramsay LE, Lamont AC, Ross B, Sherriff S, Walton L. Diagnosis of deep-vein thrombosis: comparison of clinical evaluation, ultrasound, plethysmography, and venoscan with X-ray venogram. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/6148472\">Lancet</a> 1984;2:716-9.</span></li>\n<li id=\"reference_22\"><span>Wells PS, Anderson DR, Rodger M, Forgie M, Kearon C, Dreyer J, et al. Evaluation of D-dimer in the diagnosis of suspected deep-vein thrombosis. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/14507948\">N Engl J Med. 2003;349:1227&ndash;35.</a></span></li>\n<li id=\"reference_23\"><span>Stein PD, Beemath A, Matta F, Weg JG, Yusen RD, Hales CA, Hull RD, Leeper KV Jr, Sostman HD, Tapson VF, Buckley JD, Gottschalk A, Goodman LR, Wakefied TW, Woodard PK. Clinical characteristics of patients with acute pulmonary embolism: data from PIOPED II. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=stein+and+beemath+matta+weg+yusen\">Am J Med</a> 2007;120:871-9.</span></li>\n<li id=\"reference_24\">Wells PS, Anderson DR, Rodger M, Ginsberg JS, Kearon C, Gent M, et al. <span>Derivation of a simple clinical model to categorize patients probability of pulmonary embolism: increasing the models utility with the SimpliRED D-dimer. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/10744147\">Thromb Haemost. 2000;83:416&ndash;20.</a></span></li>\n<li id=\"reference_25\"><span>Huisman MV, Klok FA. How I diagnose acute pulmonary embolism. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23591793\"></a> 2013;121:4443-8.</span></li>\n<li id=\"reference_26\"><span>Konstantinides SV, Torbicki A, Agnelli G, Danchin N, Fitzmaurice D, Gali&egrave; N, et al. 2014 ESC guidelines on the diagnosis and management of acute pulmonary embolism. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/25173341\">Eur Heart J</a> 2014;35:3033-69, 3069a-3069k.</span></li>\n<li id=\"reference_27\"><span>Aujesky D, Perrier A, Roy PM, Stone RA, Cornuz J, Meyer G, et al. Validation of a clinical prognostic model to identify low-risk patients with pulmonary embolism. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/17547715\">J Intern Med. 2007;261:597&ndash;604.</a></span></li>\n<li id=\"reference_28\"><span> </span><span>Wan S, Quinlan DJ, Agnelli G, Eikelboom JW. Thrombolysis compared with <a href=\"http://www.lakemedelsboken.se/atc/B01AB-B01AB01\">heparin</a> for the initial treatment of pulmonary embolism: a meta-analysis of the randomized controlled trials. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/15262836?ordinalpos=2&amp;itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum\"> 2004;110:744&ndash;9.</a></span></li>\n<li id=\"reference_29\"><span> </span><span>Enden T, Haig Y, Klow NE, Slagsvold CE, Sandvik L, Ghanima W, et al. Long-term outcome after additional catheter-directed thrombolysis versus standard treatment for acute iliofemoral deep vein thrombosis (the CaVenT study): a randomised controlled trial. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22172244\"> 2012;379:31&ndash;8.</a></span></li>\n<li id=\"reference_30\"><span> </span>Profylax mot och reversering av bl&ouml;dning orsakad av <span><a href=\"http://www.lakemedelsboken.se/atc/B01AA\">anti-vitamin K</a></span> (AVK)-l&auml;kemedel &ndash; Behandlingsrekommendation. Information fr&aring;n L&auml;kemedelsverket. 2006<span><a href=\"http://www.lakemedelsboken.se/kapitel/blod/venos_tromboembolism_och_medel_mot_trombos.html?id=d2_43#reference_17\">17</a></span><br> <span><a href=\"http://www.lakemedelsverket.se/malgrupp/Halso---sjukvard/Behandlings--rekommendationer/Behandlingsrekommendation---listan/Antivitamin-K-lakemedel-AVK/\">www.lakemedelsverket.se</a></span></li>\n<li id=\"reference_31\">Mannucci PM, Franchini M. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/26018405\">Classic thrombophilic gene variants.</a> Thromb Haemost. 2015;114:885-9.</li>\n<li id=\"reference_32\"><span>Sundquist K, Sundquist J, Svensson PJ, Z&ouml;ller B, Memon AA. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/26407905\">Role of family history of venous thromboembolism (VTE) and thrombophilia as predictors of VTE recurrence: a prospective follow-up study.</a> J Thromb Haemost 2015;13:2180-6.</span></li>\n<li id=\"reference_33\"><span>Marjoribanks J, Farquhar C, Roberts H, Lethaby A. Long term hormone therapy for perimenopausal and postmenopausal women. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22786488\">Cochrane Database Syst Rev. 2012;7:CD004143.</a></span></li>\n<li id=\"reference_34\"><span>Bates SM, Greer IA, Middeldorp S, Veenstra DL, Prabulos AM, Vandvik PO. VTE, thrombophilia, antithrombotic therapy, and pregnancy. Antithrombotic therapy and prevention of thrombosis, 9th ed: American College of Chest Physicians Evidence-Based Clinical Practice Guidelines. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22315276\"> 2012;141:e691S&ndash;736S.</a></span></li>\n<li id=\"reference_35\"><span> </span><span>Monagle P, Chan AK, Goldenberg NA, Ichord RN, Journeycake JM, Nowak-G&ouml;ttl U, Vesely SK. Antithrombotic therapy in neonates and children: antithrombotic therapy and prevention of thrombosis, 9th ed: American College of Chest Physicians Evidence-Based Clinical Practice Guidelines. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22315277\"> 2012;141:e737S&ndash;801S.</a></span></li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "true"
+				}
+			}
+		},
+		{
+			"id": "4d1bb72a-1b10-45dd-b3b7-d25c16950938",
+			"name": "4d1bb72a-1b10-45dd-b3b7-d25c16950938",
+			"type": "text",
+			"content": "<h3 id=\"For-vidare-lasning\">F&ouml;r vidare l&auml;sning</h3>\n<ol>\n<li>Gotts&auml;ter A, Svensson PJ, red. Klinisk handl&auml;ggning av ven&ouml;s tromboembolism. Lund: Studentlitteratur AB. 2010. ISBN 9144053196.</li>\n<li>Schulman S. Trombos och emboli. I: Gahrton G, Juliusson G. Blodets sjukdomar. Lund: Studentlitteratur AB; 2012. s 299&ndash;308. ISBN&nbsp;9789144069241.</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/-nya-kapitel-ej-publ/Ven-s-tromboembolism.json",
+	"indexed": "true",
+	"modified": "2016-06-27 09:00"
+}
