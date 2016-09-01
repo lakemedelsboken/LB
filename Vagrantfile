@@ -27,7 +27,7 @@ Vagrant.configure(2) do |config|
 
 		#------------------------- Ruby -------------------------------------------------------
 		cd /tmp
-		wget http://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.5.tar.gz 
+		wget http://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.5.tar.gz
 		tar -xvzf ruby-2.1.5.tar.gz
 		cd ruby-2.1.5/
 		./configure --prefix=/usr/local
@@ -96,6 +96,8 @@ Vagrant.configure(2) do |config|
 		#------------------------- NPM --------------------------------------------------------
 		sudo npm install -g pm2
 		sudo npm install -g uglifyjs #needed to be able to build the sh in /build
+		sudo npm install -g node-inspector
+
 
 	SHELL
 
@@ -106,6 +108,7 @@ Vagrant.configure(2) do |config|
 		sudo service nginx restart
 		cd /vagrant/servers
 		pm2 start pm2_development.json
+
 	SHELL
 
 end
