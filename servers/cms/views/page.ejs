@@ -369,15 +369,42 @@
 				<form action="/cms/content/findincominglinks" method="get" class="form-horizontal" role="form" autocomplete="off">
 					<h4>Kontrollera länkar till: <input class="form-control" name="url" type="text" value="<%=id.replace(".json", ".html")%>"></h4>
 
-
 					<div>
-						<div>
-							<button type="submit" id="findIncomingLinks" class="btn btn-primary btn-block"><i class="fa fa-list"></i> <span class="text">Hitta sidor med länkar</span></a>
+						<div class="btn-group btn-group-justified" role="group">
+							<div class="btn-group">
+								<button type="submit" id="findIncomingLinks" class="btn btn-primary"><i class="fa fa-list"></i> <span class="text">Hitta inkommande länkar</span></button>
+							</div>
+							<div class="btn-group">
+								<a href="/cms/content/findoutgoinglinks?url=<%=id.replace(".json", ".html")%>" id="findOutgoingLinks" class="btn btn-warning"><i class="fa fa-list"></i> <span class="text">Hitta utgående länkar</span></a>
+							</div>
 						</div>
 						<div class="panel hidden" id="incomingLinksInformation">
 						
 						</div>
-						<ul id="incomingLinks" class="list-group hidden"></ul>
+						<div class="panel hidden" id="outgoingLinksInformation">
+						
+						</div>
+						<div class="panel panel-default hidden" id="incomingLinksFilter">
+							<div class="panel-heading">
+								<h4 class="panel-title">Filtrera</h4>
+							</div>
+							<div class="panel-body">
+								<label class="radio-inline">
+									<input type="radio" name="linksFilter" id="showAllLinks" value="showAll" checked>
+									Visa alla
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="linksFilter" id="showDraftsLinks" value="showDrafts">
+									Visa endast <strong>utkast</strong>
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="linksFilter" id="showPublishedLinks" value="showPublished">
+									Visa endast <strong>publicerade</strong>
+								</label>
+							</div>
+						</div>
+						<ul class="list-group hidden" id="incomingLinks"></ul>
+						<ul class="list-group hidden" id="outgoingLinks"></ul>
 					</div>
 				</form>
 			</div>

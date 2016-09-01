@@ -581,7 +581,14 @@ var ContentModel = {
 				
 				var contentViews = ContentModel.getContentTypes()[item.type];
 				if (contentViews !== undefined) {
-					outContent.push(contentViews.getOutput(item, "draft"));
+					
+					var contentItemOutput = contentViews.getOutput(item, "draft");
+
+					if (item.type !== "html") {
+						contentItemOutput = "<div class=\"cms-id\" id=\"" + item.id + "\">" + contentItemOutput + "</div>";
+					}
+					
+					outContent.push(contentItemOutput);
 
 					if (typeof contentViews.getFeedItems === "function") {
 						feedItems = feedItems.concat(contentViews.getFeedItems(item, "draft"));
@@ -1006,7 +1013,14 @@ var ContentModel = {
 
 				var contentViews = ContentModel.getContentTypes()[item.type];
 				if (contentViews !== undefined) {
-					outContent.push(contentViews.getOutput(item, "published"));
+
+					var contentItemOutput = contentViews.getOutput(item, "published");
+
+					if (item.type !== "html") {
+						contentItemOutput = "<div class=\"cms-id\" id=\"" + item.id + "\">" + contentItemOutput + "</div>";
+					}
+					
+					outContent.push(contentItemOutput);
 					
 					if (typeof contentViews.getFeedItems === "function") {
 						feedItems = feedItems.concat(contentViews.getFeedItems(item, "published"));
