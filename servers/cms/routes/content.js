@@ -924,6 +924,8 @@ router.get("/docx/download", function(req, res) {
 		$("h1").first().remove();
 
 		//Remove authors, metadata authors will be used
+		var autorsFromPageString = $("p.authors").first().html();
+		autorsFromPage = autorsFromPageString.split('<br>');
 		$("p.authors").remove();
 
 		//Remove links concerning authors disclosure
@@ -994,7 +996,7 @@ router.get("/docx/download", function(req, res) {
 
 		var newFileName = path.basename(url, ".html") + "-" + draftOrPublish + "-" + fileNameDate + ".docx";
 
-		var arguments = ["-S", tempHtmlPath, "-o", outPath];
+		var arguments = ["-S", tempHtmlPath, "-o", outPath, '-f', 'html', '-t','docx' , '--metadata=author:'+autorsFromPage[0],'--metadata=author:'+autorsFromPage[1]];
 
 		var hasExited = false;
 		var converter = spawn('pandoc', arguments);

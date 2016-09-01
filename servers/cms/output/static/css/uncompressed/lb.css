@@ -2,15 +2,15 @@ body {
 	margin-top: 7px;
 	padding-bottom: 10px;
 	background-color: #fdfdfd;
-	
 
-	font-family: Palatino, 'Times New Roman', 'Book Antiqua', serif; 
+
+	font-family: Palatino, 'Times New Roman', 'Book Antiqua', serif;
 /*	text-rendering: optimizelegibility; */
 	font-size: 17.5px;
 	font-size: 18px\9;
 	line-height: 27px;
 	line-height: 28px\9;
-	
+
 	color: #000;
 	/*
 	font-family: 'Helvetica Neue Ultra Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -80,7 +80,7 @@ table li {
 }
 
 td div.tableLine {
-	white-space: nowrap;
+	/*white-space: nowrap; removed due to strange behaivor with tables when creating pdf documents.*/
 	margin-left: 5px;
 }
 
@@ -194,7 +194,7 @@ ol.references li, p.popoverReference {
 }
 
 .introduction {
-	
+
 }
 
 .ui-menu .ui-menu-item a.indent0 {
@@ -257,7 +257,7 @@ ol.references li, p.popoverReference {
 	display: block;
 	padding: 0;
 	margin: 0;
-	
+
 }
 
 #searchResultsNavigation .navbar-inner {
@@ -307,7 +307,7 @@ ol.references li, p.popoverReference {
 	font-size: 11px;
 	color: #fdfdfd;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	
+
 }
 
 .overview li.span4, .overview li.span2 {
@@ -339,7 +339,7 @@ div.thumbnail {
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
        -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-	*/		
+	*/
     -webkit-box-shadow: none;
        -moz-box-shadow: none;
             box-shadow: none;
@@ -363,8 +363,8 @@ div.thumbnail.therapyLink {
 
 
 div.thumbnail .caption {
-	
-	padding: 7px; 
+
+	padding: 7px;
 }
 
 div.thumbnail h5 {
@@ -372,7 +372,7 @@ div.thumbnail h5 {
 	margin-bottom: 0px;
 	font-size: 12px;
 	font-weight: 600;
-	
+
 }
 
 div.thumbnail .fa {
@@ -384,21 +384,21 @@ div.thumbnail p {
 	font-size: 12px;
 }
 
-div.thumbnail a { 
+div.thumbnail a {
     color: #404040;
     color: #000;
 }
 
-div.thumbnail .fa { 
+div.thumbnail .fa {
     color: #404040;
     color: #000;
 }
 
-div.thumbnail a:hover { 
+div.thumbnail a:hover {
 	text-decoration: none;
 }
 
-div.thumbnail:hover { 
+div.thumbnail:hover {
     -webkit-box-shadow: 0 8px 10px #EBEBEB inset, 4px 35px 65px 5px rgba(242, 242, 242, 0.9) inset;;
        -moz-box-shadow: 0 8px 10px #EBEBEB inset, 4px 35px 65px 5px rgba(242, 242, 242, 0.9) inset;;
             box-shadow: 0 8px 10px #EBEBEB inset, 4px 35px 65px 5px rgba(242, 242, 242, 0.9) inset;
@@ -431,12 +431,12 @@ ul.authors {
 }
 
 div.tabStop {
-	margin: 5px 0 5px 25px; 
+	margin: 5px 0 5px 25px;
 }
 
 li.tabStop {
-	padding-left: 15px; 
-	list-style: none; 
+	padding-left: 15px;
+	list-style: none;
 	background-image: none;
 }
 
@@ -450,8 +450,8 @@ a, ol.references li {
 
 	-webkit-hyphens: auto;
 	   -moz-hyphens: auto;
-	        hyphens: auto;	
-			
+	        hyphens: auto;
+
 }
 
 .not-available {
@@ -546,7 +546,7 @@ span.updated.active {
 }
 
 a.footnote {
-	font-size: x-small; 
+	font-size: x-small;
 	vertical-align:top;
 }
 
@@ -570,7 +570,7 @@ a.toggleSection {
 	-moz-border-radius:  5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
-	border-radius: 5px;	
+	border-radius: 5px;
 }
 
 a.toggleSection:hover {
@@ -595,7 +595,7 @@ h4.section-header {
 #searchForm {
     position: relative;
 }
-  
+
 #searchForm .search-query {
     padding-left: 29px;
     padding-right: 48px;
@@ -664,7 +664,7 @@ table {
 /*	font-weight: 300; */
 	font-size: 14px;
 	line-height: 22px;
-	
+
 }
 
 div.facts, div.wide, div.therapy-recommendations, div.narrow {
@@ -678,7 +678,7 @@ table.facts {
 	background-color: #f5f5f5;
 	max-width: none;
 }
-		
+
 
 table.therapy-recommendations {
 	background-color: #f5f5f5;
@@ -695,7 +695,7 @@ table.wide {
 }
 
 table.narrow {
-	background-color: #fff;	
+	background-color: #fff;
 	max-width: none;
 }
 
@@ -708,7 +708,7 @@ table.framed div.tableLine {
 table li {
 line-height: 20px;
 }
-		
+
 td p {
 margin: 0;
 padding: 0;
@@ -799,21 +799,21 @@ a.inlineGenerica.text {
 #sideMenu {
 	display: block;
 	position: absolute;
-	top: 90px; 
-	left: 0px; 
+	top: 90px;
+	left: 0px;
 	right: 0px;
-	bottom: 0; 
+	bottom: 0;
 	overflow: hidden;
 	border: none;
 	padding: 0;
-	
+
 	/*
-	position: absolute; 
-	bottom: 0px; 
-	top: 100px; 
-	right: 0px; 
-	left: 0px; 
-	
+	position: absolute;
+	bottom: 0px;
+	top: 100px;
+	right: 0px;
+	left: 0px;
+
 	overflow-y: auto;
 	overflow-x: hidden;
 	*/
@@ -915,7 +915,7 @@ a.inlineGenerica.text {
 	margin: 0;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
-	overflow-x: hidden;	
+	overflow-x: hidden;
 
     -webkit-box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.065);
        -moz-box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.065);
@@ -944,14 +944,14 @@ a.inlineGenerica.text {
 }
 
 .sideBarNavigation .fa-angle-down, .sideBarNavigation .fa-double-angle-up {
-	font-size: 16px; 
+	font-size: 16px;
 	margin-top: 1px;
 }
 
 #searchResults {
 	display: none;
-	top: 85px; 
-	bottom: 10px; 
+	top: 85px;
+	bottom: 10px;
 	left: auto;
 	z-index: 15;
 }
@@ -968,17 +968,17 @@ a.inlineGenerica.text {
 }
 
 div#searchMask {
-	display: none; 
-	background-color: #fdfdfd; 
+	display: none;
+	background-color: #fdfdfd;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom: 0; 
-	z-index: 9;	
+	bottom: 0;
+	z-index: 9;
     opacity: 0.8;
     filter: alpha(opacity=80);
-	
+
 }
 
 
@@ -987,11 +987,11 @@ div#searchMask {
 }
 
 #searchResultsContainer {
-	position: absolute; 
-	top: 40px; 
-	bottom: 0; 
-	left: 0; 
-	right: 0; 
+	position: absolute;
+	top: 40px;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	overflow-y: auto;
 }
 
@@ -999,7 +999,7 @@ div#searchMask {
 .ui-menu strong {
 	font-weight: 600;
 }
-	
+
 
 #titleSearchResultsList, #contentSearchResultsList, #medicineSearchResultsList {
 	border: 0;
@@ -1036,7 +1036,7 @@ div#searchMask {
 	-ms-border-radius: 		4px;
 	-o-border-radius: 		4px;
 	border-radius: 			4px;
-	
+
 }
 .modal {
 	top: 10px;
@@ -1048,7 +1048,7 @@ div#searchMask {
 	background-color: #fff;
 	background-image: none;
 	background-color: #fdfdfd;
-	
+
 }
 
 .navbar .brand {
@@ -1100,14 +1100,14 @@ div#searchMask {
 }
 
 #modalMed {
-	display: none; 
-	position: fixed; 
-	z-index: 3000; 
-	border: solid 1px #d4d4d4; 
-	background-color: #fdfdfd; 
-	padding: 0px; 
-	top: 85px; 
-	bottom: 10px; 
+	display: none;
+	position: fixed;
+	z-index: 3000;
+	border: solid 1px #d4d4d4;
+	background-color: #fdfdfd;
+	padding: 0px;
+	top: 85px;
+	bottom: 10px;
 	left: 50%;
 	width: 940px;
 	margin-left: -470px;
@@ -1118,14 +1118,14 @@ div#searchMask {
 	-ms-border-radius: 		4px;
 	-o-border-radius: 		4px;
 	border-radius: 			4px;
-	
+
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
        -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     -webkit-background-clip: padding-box;
        -moz-background-clip: padding;
             background-clip: padding-box;
-	
+
 }
 
 #modalMedTitle {
@@ -1135,7 +1135,7 @@ div#searchMask {
     font-weight: 400;
     line-height: 18px;
     margin: 0;
-    padding: 5px 14px;	
+    padding: 5px 14px;
 }
 
 #modalMed #close {
@@ -1162,7 +1162,7 @@ div#searchMask {
 	-moz-border-radius-topright: 4px;
 	-moz-border-radius-topleft: 4px;
 	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;	
+	border-top-right-radius: 4px;
 }
 
 #medListToggler {
@@ -1170,17 +1170,17 @@ div#searchMask {
 }
 
 ul#medList {
-	position: absolute; 
+	position: absolute;
 /*	background-color: #E7ECF1; */
-	background-color: #fdfdfd; 
-	left: 0; 
-	top: 34px; 
-	width: 310px; 
+	background-color: #fdfdfd;
+	left: 0;
+	top: 34px;
+	width: 310px;
 	border: none;
 /*	border-right: solid 1px #B4B4B4; */
-	bottom: 0; 
-	overflow: hidden; 
-	overflow-y: auto;	
+	bottom: 0;
+	overflow: hidden;
+	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
 	z-index: 100;
 	-webkit-border-radius: 	5px 0 0 5px;
@@ -1189,21 +1189,21 @@ ul#medList {
 	-o-border-radius: 		5px 0 0 5px;
 	border-radius: 			5px 0 0 5px;
 	margin: 0;
-	
+
 }
 
 ul#medList li {
 	min-height: 50px;
 }
 div#medDisplay {
-	position: absolute; 
-	left: 312px; 
-	top: 34px; 
+	position: absolute;
+	left: 312px;
+	top: 34px;
 	bottom: 0;
-	right: 0; 
-	overflow: scroll; 
+	right: 0;
+	overflow: scroll;
 	-webkit-overflow-scrolling: touch;
-	padding: 2px;	
+	padding: 2px;
 	z-index: 10;
 	-webkit-border-radius: 	0 5px 5px 0;
 	-moz-border-radius: 	0 5px 5px 0;
@@ -1256,7 +1256,7 @@ div.medInfo {
 	-o-border-radius: 		4px;
 	border-radius: 			4px;
 	margin-bottom: 5px;
-	border: 1px solid #d4d4d4;	
+	border: 1px solid #d4d4d4;
 
     background-color: #fff;
     -webkit-border-radius: 4px;
@@ -1280,7 +1280,7 @@ div.medInfo {
 	*/
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	
+
 
 }
 
@@ -1330,7 +1330,7 @@ a.accordion-toggle:hover {
 
 	overflow-x: scroll;
 	-webkit-overflow-scrolling: touch;
-	
+
 }
 
 /*
@@ -1382,46 +1382,46 @@ div.medContent {
 	-ms-border-radius: 		5px;
 	-o-border-radius: 		5px;
 	border-radius: 			5px;
-	
+
 	background-color: #fdfdfd;
 }
 
 div#mask {
-	display: none; 
-	background-color: transparent; 
-	background-color: #202020; 
+	display: none;
+	background-color: transparent;
+	background-color: #202020;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom: 0; 
-	z-index: 2999;	
+	bottom: 0;
+	z-index: 2999;
 
-	display: none; 
-	background-color: #fdfdfd; 
+	display: none;
+	background-color: #fdfdfd;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom: 0; 
-	z-index: 2999;	
+	bottom: 0;
+	z-index: 2999;
     opacity: 0.8;
     filter: alpha(opacity=80);
 
 }
 
 ul#authorsRegistryLetterIndex {
-	list-style-type: none; 
-	margin: 0px; 
+	list-style-type: none;
+	margin: 0px;
 	padding: 0;
-	list-style-position: inside; 
+	list-style-position: inside;
 	font-family: Helvetica, Arial, sans;
 }
 
 ul.authorsByLetter {
-	list-style-type: none; 
-	margin: 10px 0 10px 0; 
-	list-style-position: inside; 
+	list-style-type: none;
+	margin: 10px 0 10px 0;
+	list-style-position: inside;
 }
 
 ul.authorsByLetter li {
@@ -1429,19 +1429,19 @@ ul.authorsByLetter li {
 }
 
 ul.authorsByLetter li ul {
-	list-style-type: none; 
-	margin: 0px; 
-	list-style-position: inside; 
+	list-style-type: none;
+	margin: 0px;
+	list-style-position: inside;
 }
 
 ul.authorsByLetter li ul li {
-	margin: 0px; 
+	margin: 0px;
 }
 
 /* Large desktop */
 @media (min-width: 1200px) {
 	#sideMenu {
-		position: absolute; bottom: 0px; top: 90px; right: 0px; left: 0px; overflow: hidden;	
+		position: absolute; bottom: 0px; top: 90px; right: 0px; left: 0px; overflow: hidden;
 	}
 
 	#modalMed {
@@ -1449,18 +1449,18 @@ ul.authorsByLetter li ul li {
 		margin-left: -585px;
 		margin-top: 0;
 	}
-	
+
 	#titleSearchResults, #contentSearchResults, #medicineSearchResults {
 		margin-left: 10px;
 	}
-	
+
 
 }
- 
+
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
 	#sideMenu {
-		position: absolute; bottom: 0px; top: 90px; right: 0px; left: 0px; overflow: hidden;	
+		position: absolute; bottom: 0px; top: 90px; right: 0px; left: 0px; overflow: hidden;
 	}
 
 	div.thumbnail {
@@ -1525,14 +1525,14 @@ ul.authorsByLetter li ul li {
 
 		-webkit-hyphens: auto;
 		   -moz-hyphens: auto;
-		        hyphens: auto;	
-			
+		        hyphens: auto;
+
 	}
 
 
 
 }
- 
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 
@@ -1583,7 +1583,7 @@ ul.authorsByLetter li ul li {
 		font-size: 16px;
 		line-height: 24px;
 	}
-	
+
 
 	h1 {
 	  font-size: 34px;
@@ -1633,8 +1633,8 @@ ul.authorsByLetter li ul li {
 
 		-webkit-hyphens: auto;
 		   -moz-hyphens: auto;
-		        hyphens: auto;	
-			
+		        hyphens: auto;
+
 	}
 
 	#mainContainer {
@@ -1649,23 +1649,23 @@ ul.authorsByLetter li ul li {
 	div.thumbnail {
 		height: auto;
 	}
-	
+
 	/*
 	a.inlineGenerica.text {
 		border-bottom: dotted 1px black;
 		color: #000;
 	}
 	*/
-	
+
 	#toggleNavigation {
 		margin-bottom: 20px;
 	}
-	
+
 	#sideContainer.hidden {
 		display: block;
 		visibility: visible;
 	}
-	
+
 	#sideMenu {
 		position: static;
 		display: none;
@@ -1679,21 +1679,21 @@ ul.authorsByLetter li ul li {
 	#searchResults {
 		position: absolute;
 		display: none;
-		top: 85px; 
-		bottom: auto; 
-		z-index: 1009; 
-		margin-left: 0; 
+		top: 85px;
+		bottom: auto;
+		z-index: 1009;
+		margin-left: 0;
 		width: auto;
 		right: 20px;
 		left: 20px;
 	}
 
 	#searchResultsContainer {
-		position: static; 
-		top: auto; 
-		bottom: auto; 
-		left: auto; 
-		right: auto; 
+		position: static;
+		top: auto;
+		bottom: auto;
+		left: auto;
+		right: auto;
 		overflow-y: auto;
 		margin-bottom: 10px;
 	}
@@ -1752,25 +1752,25 @@ ul.authorsByLetter li ul li {
 		margin-top: 10px;
 		width: auto;
 	}
-	
+
 	#medListToggler {
 		display: block;
 		position: static;
 	}
-	
+
 	ul#medList {
 		float: none;
 		display: none;
 		clear: left;
-		position: static; 
+		position: static;
 	/*	background-color: #E7ECF1; */
-		background-color: #fdfdfd; 
+		background-color: #fdfdfd;
 /*		width: 100%; */
 		width: auto;
 		border: none;
-		bottom: auto; 
+		bottom: auto;
 		overflow-y: scroll;
-		-webkit-overflow-scrolling: touch; 
+		-webkit-overflow-scrolling: touch;
 		/*overflow-y: auto;	*/
 		z-index: 100;
 		-webkit-border-radius: 	5px 0 0 5px;
@@ -1786,18 +1786,18 @@ ul.authorsByLetter li ul li {
 	}
 
 	div#medDisplay {
-		position: static; 
+		position: static;
 		clear: left;
-		left: 0; 
-		top: auto; 
+		left: 0;
+		top: auto;
 		bottom: auto;
-		right: 0; 
+		right: 0;
 		/*
-		overflow: hidden; 
-		overflow-y: auto; 
+		overflow: hidden;
+		overflow-y: auto;
 		*/
-		
-		padding: 10px;	
+
+		padding: 10px;
 		z-index: 10;
 		-webkit-border-radius: 	0 5px 5px 0;
 		-moz-border-radius: 	0 5px 5px 0;
@@ -1806,7 +1806,7 @@ ul.authorsByLetter li ul li {
 		border-radius: 			0 5px 5px 0;
 		margin: 0;
 	}
-	
+
 
 	div.figure {
 		padding: 10px 0 10px 0;
@@ -1833,14 +1833,14 @@ ul.authorsByLetter li ul li {
 	div.popover-content div.figure {
 		margin: 10px 0px 10px 0px;
 	}
-	
+
 	a.btn.inlineBoxSearch {
 		position: static;
 		float: none;
 	}
 
 }
- 
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
 	#sideMenu {
