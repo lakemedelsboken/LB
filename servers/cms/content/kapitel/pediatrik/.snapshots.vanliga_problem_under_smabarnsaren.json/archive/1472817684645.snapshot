@@ -1,0 +1,535 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Vanliga problem under småbarnsåren | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-09 00:52",
+	"published": "2015-07-09 00:52",
+	"validUntil": "",
+	"createdBy": "Hans Edenwall, Elisabet Ekman",
+	"replacesUrl": "/c1_ped_problemsmabarn_2013fm10.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "65493519-4f06-4fcb-b59c-ab02e1938068",
+			"name": "65493519-4f06-4fcb-b59c-ab02e1938068",
+			"type": "author",
+			"content": {
+				"firstname": "Hans",
+				"surname": "Edenwall",
+				"description": "BHV-enheten, Karlskrona",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4f1ef469-d507-4097-bdd3-5ce485d17bf2",
+			"name": "4f1ef469-d507-4097-bdd3-5ce485d17bf2",
+			"type": "author",
+			"content": {
+				"firstname": "Elisabet",
+				"surname": "Ekman",
+				"description": "Jämjö vårdcentral, Jämjö",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f7c66745-ed13-48ff-b147-292c1ceccc13",
+			"name": "f7c66745-ed13-48ff-b147-292c1ceccc13",
+			"type": "text",
+			"content": "<h1 id=\"c1_2\">Vanliga problem under <a class=\"index\" id=\"1040599\" data-text=\"barn:problem under sm&#xE5;barns&#xE5;ren\"></a>sm&aring;barns&aring;ren</h1>\n<h2 id=\"c1_3\">Inledning</h2>\n<p class=\"ingress\">Barnh&auml;lsov&aring;rden (BHV) har en l&aring;ng tradition i Sverige. I b&ouml;rjan av 1900-talet var det mest en filantropisk verksamhet som byggde p&aring; privata initiativ, men 1937 b&ouml;rjade uppbyggnaden av offentligt finansierade barnav&aring;rdscentraler (BVC) &ouml;ver hela landet. Fr&aring;n att ha varit en medicinskt inriktad verksamhet har den moderna <a class=\"index\" id=\"1040604\" data-text=\"barnh&#xE4;lsov&#xE5;rden\"></a>barnh&auml;lsov&aring;rden alltmer utvecklats till att vara ett f&ouml;r&auml;ldrast&ouml;d, arbeta med h&auml;lsor&aring;dgivning och inriktas mot en h&auml;lsofr&auml;mjande verksamhet. Sjuksk&ouml;terskan &auml;r nyckelperson i barnh&auml;lsov&aring;rden men s&aring;v&auml;l sjuksk&ouml;terskans som l&auml;karens arbete har f&ouml;r&auml;ndrats och blivit ett teamarbete. I teamet ing&aring;r ocks&aring; BHV-psykologer och till verksamheten &auml;r ofta &auml;ven dietister, logopeder och tandv&aring;rden kopplade. Barnh&auml;lsov&aring;rden har en unik position i Sverige, d&aring; den v&auml;nder sig till alla barn 0&ndash;6 &aring;r och praktiskt taget alla barn kommer dit.</p>\n<p class=\"ingress\"><br>I detta kapitel behandlas n&aring;gra vanliga problem d&auml;r den f&ouml;rsta bed&ouml;mningen och handl&auml;ggningen ofta sker inom prim&auml;rv&aring;rden eller p&aring; BVC. Bra webbplatser f&ouml;r barn och vardagspediatrik inom barnh&auml;lsov&aring;rden &auml;r <a href=\"http://1177.se/\" target=\"_blank\" class=\"linkOut\">1177.se</a> och <a href=\"http://www.rikshandboken-bhv.se/\" target=\"_blank\" class=\"linkOut\">www.rikshandboken-</a> bhv.se. Till dessa sidor kan ocks&aring; f&ouml;r&auml;ldrar h&auml;nvisas.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "464a3960-4226-4c63-9a1f-08e204c5bbde",
+			"name": "464a3960-4226-4c63-9a1f-08e204c5bbde",
+			"type": "text",
+			"content": "<h2 id=\"c1_4\">Normal uppf&ouml;dning av <a class=\"index\" id=\"1040609\" data-text=\"sp&#xE4;dbarn:normal uppf&#xF6;dning\"></a>sp&auml;dbarn</h2>\n<p>Den f&ouml;rsta tiden &auml;r br&ouml;stmj&ouml;lken barnets b&auml;sta n&auml;ring och r&auml;cker, tillsammans med D-vitamin, som enda n&auml;ringsk&auml;lla under barnets f&ouml;rsta 6&nbsp;m&aring;nader. Br&ouml;stmj&ouml;lken har en f&ouml;r&nbsp;<span style=\"color: #ff0000;\">det enskilda</span> barnet speciellt anpassad sammans&auml;ttning av n&auml;ring, energi och immunglobuliner. Br&ouml;stmj&ouml;lken bidrar till skydd mot infektioner i tarm och luftv&auml;gar, och f&ouml;rstoppning &auml;r ovanligare hos br&ouml;stbarn &auml;n hos flaskuppf&ouml;dda. Frekvensen av pl&ouml;tslig sp&auml;dbarnsd&ouml;d &auml;r l&auml;gre hos ammade barn. Helamning rekommenderas i 6&nbsp;m&aring;nader och <span style=\"color: #ff0000;\">detta</span> &auml;r ett &ouml;nskv&auml;rt m&aring;l, men delamning liksom amning av kortare l&auml;ngd &auml;r ocks&aring; v&auml;rdefull. Ett matintresserat barn som &auml;r mellan 4 och 6 m&aring;nader gammalt kan erbjudas smaksensationer fr&aring;n familjens mat, dock aldrig s&aring; mycket att det konkurrerar ut br&ouml;stmj&ouml;lk eller br&ouml;stmj&ouml;lksers&auml;ttning. Efter 6 m&aring;naders &aring;lder b&ouml;r amningen av n&auml;ringsm&auml;ssiga sk&auml;l kompletteras med annan f&ouml;da, men det &auml;r f&ouml;rdelaktigt om br&ouml;stmj&ouml;lken utg&ouml;r en del av kosten under hela f&ouml;rsta levnads&aring;ret eller l&auml;ngre.</p>\n<p><br>Vissa f&ouml;r&auml;ldrar vill eller kan inte amma. Dessa f&ouml;r&auml;ldrar ska f&ouml;rst&aring;s ha samma st&ouml;d av barnh&auml;lsov&aring;rden. Det &auml;r en f&ouml;rdel om flaskmatning sker under s&aring; amningslika f&ouml;rh&aring;llanden som m&ouml;jligt med hud-mot-hud-kontakt, &ouml;gonkontakt och liknande.</p>\n<p><br>Vid amningsproblem som inte kan l&ouml;sas eller d&aring; det finns sk&auml;l att inte amma, utg&ouml;r komj&ouml;lksbaserad br&ouml;stmj&ouml;lksers&auml;ttning ett bra alternativ till br&ouml;stmj&ouml;lk. Till barn fr&aring;n allergiska h&ouml;griskfamiljer (d&aring; b&aring;da f&ouml;r&auml;ldrarna har omfattande och behandlingskr&auml;vande allergi) rekommenderas komj&ouml;lkshydrolysat under de f&ouml;rsta 4&nbsp;m&aring;naderna, eftersom detta kan minska risken f&ouml;r utveckling av komj&ouml;lksallergi.</p>\n<p><br>Mj&ouml;lk som dryck b&ouml;r inte introduceras f&ouml;re 12&nbsp;m&aring;naders &aring;lder.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c1a2eef9-a752-4894-9d76-81e521db2f77",
+			"name": "c1a2eef9-a752-4894-9d76-81e521db2f77",
+			"type": "text",
+			"content": "<h2 id=\"c1_5\"><a class=\"index\" id=\"1041546\" data-text=\"amningsproblem\"></a>Amningsproblem</h2>\n<h3 id=\"c1_6\">&Ouml;mma och s&aring;riga <a class=\"index\" id=\"1041548\" data-text=\"br&#xF6;stv&#xE5;rtor:&#xF6;mma och s&#xE5;riga\"></a>br&ouml;stv&aring;rtor</h3>\n<ul>\n<li>Kontrollera amningstekniken. Barnet ska ha hela br&ouml;stv&aring;rtan och st&ouml;rre delen av v&aring;rtg&aring;rden i munnen d&aring; det suger.</li>\n<li>Sm&ouml;rj in br&ouml;stv&aring;rtan med br&ouml;stmj&ouml;lk b&aring;de f&ouml;re och efter amning. L&aring;t lufttorka. Detta &auml;r &auml;ven bra att g&ouml;ra f&ouml;rebyggande. <span style=\"color: #ff0000;\">Undvik att tv&auml;tta br&ouml;stv&aring;rtan med tv&aring;l.</span></li>\n</ul>\n<h3 id=\"c1_7\"><a class=\"index\" id=\"1040688\" data-text=\"amningsproblem:svampinfektion;svampinfektioner:amningsproblem\"></a>Svampinfektion</h3>\n<p>Om br&ouml;stv&aring;rtan och v&aring;rtg&aring;rden &auml;r inflammerade och &ouml;mma, b&aring;de under och mellan amningarna, kan svampinfektion misst&auml;nkas. Barnet har ofta samtidigt vita bel&auml;ggningar i munnen, s&aring; kallad torsk.</p>\n<ul>\n<li>Vid lindriga besv&auml;r kan b&aring;de mor och barn behandlas med vichyvatten lokalt 6&ndash;8 g&aring;nger/dag.</li>\n<li>Vid mer utbredd infektion ges nystatin mixtur 1&nbsp;ml 4&nbsp;g&aring;nger/dag till barnet och imidazolderivat lokalt under 10&nbsp;dagar till modern. Hj&auml;lper inte detta kan peroral behandling med flukonazol 50&nbsp;mg 1&nbsp;g&aring;ng/dag i 7&nbsp;dagar till modern bli aktuell.</li>\n</ul>\n<h3 id=\"c1_8\"><a class=\"index\" id=\"1040729\" data-text=\"mj&#xF6;lkstockning\"></a>Mj&ouml;lkstockning</h3>\n<p>Mj&ouml;lkstockning uppst&aring;r n&auml;r en eller flera mj&ouml;lkg&aring;ngar blir tillt&auml;ppta p&aring; grund av att br&ouml;stet inte t&ouml;mts ordentligt. Man finner en eller flera, ibland &ouml;mmande, kn&ouml;lar i br&ouml;stet. Ibland &auml;r dessa omr&aring;den r&ouml;da och v&auml;rme&ouml;kade.</p>\n<p><br>Vid mj&ouml;lkstockning b&ouml;r den ammande kvinnan kontrollera amningstekniken och amma oftare &auml;n vanligt. Br&ouml;stet b&ouml;r masseras i riktning mot br&ouml;stv&aring;rtan n&auml;r barnet suger och br&ouml;sten b&ouml;r h&aring;llas varma. Om barnet ammas &auml;r amning b&auml;sta s&auml;ttet att t&ouml;mma br&ouml;stet. Om barnet inte ammas, fungerar br&ouml;stpump alldeles utm&auml;rkt.</p>\n<h3 id=\"c1_9\">Mastit/br&ouml;stb&ouml;ld</h3>\n<p>Misst&auml;nk mastit/br&ouml;stb&ouml;ld om sm&auml;rta och feber tillkommer vid mj&ouml;lkstockning. Ut&ouml;ver behandling enligt ovan, ge sm&auml;rtstillande (paracetamol i dosering enligt produktresum&eacute;/Fass) och ta st&auml;llning till antibiotikabehandling. F&ouml;r behandling, se kapitlet Sjukdomar i br&ouml;stk&ouml;rteln, avsnittet <a href=\"{pre}/kapitel/onkologi/sjukdomar_i_brostkorteln.html#j3_12\">Mastit samt br&ouml;stkn&ouml;lar hos gravida</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ee56b53a-54a6-40d1-9be5-f74e7ed71e01",
+			"name": "ee56b53a-54a6-40d1-9be5-f74e7ed71e01",
+			"type": "text",
+			"content": "<h2 id=\"c1_10\"><a class=\"crossref\" id=\"55612\"></a>Kolik hos sp&auml;dbarn</h2>\n<p>Kolik hos sp&auml;dbarn (trem&aring;naderskolik) f&ouml;rekommer fr&aring;n ungef&auml;r 2 veckors upp till 4 m&aring;naders &aring;lder men kan ibland h&aring;lla p&aring; l&auml;ngre. Barnet skriker oftast p&aring; eftermiddagen och kv&auml;llen. F&ouml;r att diagnosen ska kunna s&auml;ttas brukar man ange att skriken ska p&aring;g&aring; i mer &auml;n 2&ndash;3 timmar/dygn och under minst 3&nbsp;dagar/vecka. Tillst&aring;ndet &auml;r vanligt och f&ouml;rekommer hos cirka 15&nbsp;% av alla sp&auml;dbarn. Mellan skrikperioderna ter sig barnet friskt. Vid unders&ouml;kning hittas ingen annan orsak till skriken och tillv&auml;xtkurvan &auml;r normal.</p>\n<p><br>Trem&aring;naderskolik har flera orsaker. Matningsteknik och komj&ouml;lksproteinallergi &auml;r vanliga orsaker. &Auml;nnu inte helt f&auml;rdigutvecklad tarm har diskuterats som orsak, liksom att m&auml;ngden laktobaciller &auml;r l&auml;gre i tarmen hos barn med kolik.</p>\n<h3 id=\"c1_11\">Behandling</h3>\n<p>Behandlingen best&aring;r till stor del av r&aring;d och st&ouml;d. Tillst&aring;ndet &auml;r ofarligt och g&aring;r ofta relativt snart &ouml;ver. R&aring;d om matningsteknik kan ges, som att barnet ska &auml;ta l&aring;ngsammare och f&aring;s att rapa. Kroppskontakt och sp&auml;dbarnsmassage (<a href=\"http://www.1177.se/Uppsala-lan/Fakta-och-rad/Behandlingar/Spadbarnsmassage-vid-kolik/\" target=\"_blank\" class=\"linkOut\">www.1177.se</a> ) har ofta god effekt. <span style=\"background-color: #ffff00;\">Komj&ouml;lksproteinfri kost</span> b&ouml;r pr&ouml;vas d&aring; 25&ndash;30&nbsp;% av kolikbarnen har komj&ouml;lksallergi. Sempers magdroppar kan pr&ouml;vas.</p>\n<p><br>Dimetikon har anv&auml;nts i m&aring;nga &aring;r men har inte mer effekt &auml;n placebo. Akupunktur har pr&ouml;vats men mer forskning beh&ouml;vs f&ouml;r att s&auml;kerst&auml;lla effekten.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "df7dd6f1-347c-4a86-a0f5-1d7fd52f2702",
+			"name": "df7dd6f1-347c-4a86-a0f5-1d7fd52f2702",
+			"type": "text",
+			"content": "<h2 id=\"c1_12\"><a class=\"index\" id=\"1040754\" data-text=\"kr&#xE4;kningar:problem under sm&#xE5;barns&#xE5;ren\"></a><a class=\"crossref\" id=\"52902\"></a>Kr&auml;kningar</h2>\n<p>&Ouml;verskottskr&auml;kningar &auml;r ett fysiologiskt tillst&aring;nd. Barnet ter sig friskt och har normal viktutveckling. Kr&auml;kningarna kommer efter m&aring;ltid och beh&ouml;ver vanligtvis inte behandlas.</p>\n<p><br>Sprutande kr&auml;kningar under de f&ouml;rsta levnadsm&aring;naderna kan vara orsakade av en <a class=\"index\" id=\"1040759\" data-text=\"pylorusstenos:kr&#xE4;kningar;kr&#xE4;kningar:pylorusstenos\"></a>pylorusstenos. Dessa barn ser inte ut att m&aring; bra och har d&aring;lig viktutveckling. Barnet ska remitteras direkt till barnklinik eller barnkirurgisk klinik f&ouml;r kirurgisk &aring;tg&auml;rd.</p>\n<p><br>Akut tillkommande kr&auml;kningar kan vara en infektion. Vinterkr&auml;ksjuka, gastroenterit, luftv&auml;gsinfektion, urinv&auml;gsinfektion eller annan infektion kan vara orsaken. Gl&ouml;m inte att kr&auml;kningar och buksm&auml;rtor hos barn med k&auml;nd diabetes &auml;r ketoacidos tills motsatsen &auml;r bevisad (Faktaruta 1)! Allm&auml;ntillst&aring;ndet och hydreringsgraden avg&ouml;r handl&auml;ggningen. Vid oklarheter i diagnostik eller behandling g&auml;ller liberala indikationer f&ouml;r remiss till barnklinik.<br><br></p>\n<p>Mer l&aring;ngdragna kr&auml;kningar kan vara orsakade av f&ouml;do&auml;mnesallergi eller -intolerans. Tillv&auml;xtkurvan beh&ouml;ver inte vara p&aring;verkad. Aktuella f&ouml;do&auml;mnen &auml;r komj&ouml;lk, gluten eller annat f&ouml;do&auml;mne som barnet uts&auml;tts f&ouml;r.</p>\n<p><br>Kraftiga kr&auml;kningar hos ett skrikigt och/eller allm&auml;np&aring;verkat barn kan vara orsakade av <a class=\"index\" id=\"1040769\" data-text=\"invagination:kr&#xE4;kningar;kr&#xE4;kningar:invagination\"></a>invagination. Barnet blir d&aring; d&aring;ligt under skrik till skillnad fr&aring;n vid otit, kolik och liknande. Vid misstanke om invagination ska barnet remitteras akut till barnklinik.</p>\n<p><br>Gallf&auml;rgade <a class=\"index\" id=\"1040774\" data-text=\"kr&#xE4;kningar:gallf&#xE4;rgade\"></a>kr&auml;kningar kan orsakas av missbildning i mag-tarmkanalen.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "dc64b0df-61b6-4de6-84b7-7118e94fb693",
+			"name": "dc64b0df-61b6-4de6-84b7-7118e94fb693",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "Kräkningar/buksmärta hos barn med diabetes",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p>Kr&auml;kningar och buksm&auml;rtor hos barn med k&auml;nd diabetes &auml;r ketoacidos tills motsatsen &auml;r bevisad!</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f60c6308-f577-4678-8e1d-ff80c172d85e",
+			"name": "f60c6308-f577-4678-8e1d-ff80c172d85e",
+			"type": "text",
+			"content": "<h2 id=\"c1_14\"><a class=\"index\" id=\"1040779\" data-text=\"diarr&#xE9;\"></a>Diarr&eacute;</h2>\n<p>Br&ouml;stbarn kan t&ouml;mma sin tarm 7&ndash;8 g&aring;nger dagligen eller s&aring; s&auml;llan som en g&aring;ng i veckan. Gott allm&auml;ntillst&aring;nd och normal viktkurva talar f&ouml;r ett friskt barn.</p>\n<p><br>Gastroenterit orsakas ofta av rota- eller adenovirus. Allm&auml;ntillst&aring;ndet och hydreringsgraden avg&ouml;r handl&auml;ggningen. V&auml;tskeers&auml;ttning (se kapitlet Infektioner i mag-tarmkanalen, avsnittet <a href=\"{pre}/kapitel/mage-tarm/infektioner_i_mag-tarmkanalen.html#b6_16\">Behandling av akut gastroenterit</a>) som ges i sm&aring; m&auml;ngder &auml;r ofta ett bra alternativ f&ouml;r egenv&aring;rd. Forts&auml;tt amma eller ge br&ouml;stmj&ouml;lk med sked.</p>\n<p><br>L&aring;ngdragen diarr&eacute; kan orsakas av f&ouml;do&auml;mnesallergi eller -intolerans.</p>\n<p><br>Funktionell sm&aring;barnsdiarr&eacute; kallas ett tillst&aring;nd som k&auml;nnetecknas av pigga barn, oftast n&aring;gra &aring;r gamla, med diarr&eacute; och ofta till synes osm&auml;lt mat i avf&ouml;ringen men med en normal viktkurva. Besv&auml;ren brukar f&ouml;rb&auml;ttras med &ouml;kad m&auml;ngd fett i maten och minskad m&auml;ngd fibrer samt <span style=\"background-color: #ffff00;\">mindre m&auml;ngder frukt och b&auml;r</span>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e5b4ec6a-9d09-4974-9d22-8bc8d75ab6ec",
+			"name": "e5b4ec6a-9d09-4974-9d22-8bc8d75ab6ec",
+			"type": "text",
+			"content": "<h2 id=\"c1_15\"><a class=\"index\" id=\"1040794\" data-text=\"f&#xF6;rstoppning\"></a><a class=\"crossref\" id=\"11009\"></a>F&ouml;rstoppning</h2>\n<p>Sp&auml;dbarn som f&aring;r mj&ouml;lkers&auml;ttning kan drabbas av f&ouml;rstoppningstendens som kan kr&auml;va behandling. Liksom vid f&ouml;rstoppning hos &auml;ldre barn sker behandling med laktulos eller genom att &ouml;ka m&auml;ngden fibrer i maten. Mj&ouml;lkers&auml;ttning som inneh&aring;ller laktulos kan k&ouml;pas p&aring; apotek. Smakportioner med frukt kan ges f&ouml;r att &ouml;ka m&auml;ngden fibrer i maten.</p>\n<p><br>F&ouml;r att motverka f&ouml;rstoppning beh&ouml;vs regelbundna toalettvanor. Exempel p&aring; detta &auml;r pottr&auml;ning med toalettbes&ouml;k vid samma tid varje dag, g&auml;rna strax efter m&aring;ltid, med tillr&auml;cklig tid avsatt (l&auml;s g&auml;rna en saga n&auml;r barnet sitter p&aring; pottan) och viss avskildhet. Regelbunden fysisk aktivitet, fibrer fr&aring;n frukt, gr&ouml;nsaker och gr&ouml;vre mj&ouml;lsorter liksom adekvata v&auml;tskem&auml;ngder utan att mj&ouml;lkm&auml;ngden blir f&ouml;r stor, motverkar ocks&aring; f&ouml;rstoppning.</p>\n<p><br>Ett barn med etablerad f&ouml;rstoppning kan beh&ouml;va snabbverkande lavemang som <a class=\"index\" id=\"1040815\" data-text=\"sorbitol:f&#xF6;rstoppning hos barn\"></a><span>sorbitol</span>, <a class=\"index\" id=\"1040816\" data-text=\"bisakodyl:f&#xF6;rstoppning, barn\"></a>bisakodyl eller <a class=\"index\" id=\"1040819\" data-text=\"laurylsulfat:f&#xF6;rstoppning hos barn\"></a>laurylsulfat. Detta kan beh&ouml;va upprepas dagligen under en kortare tid f&ouml;r att v&auml;nja barnet vid daglig tarmt&ouml;mning. L&aring;t det inte g&aring; mer &auml;n tre dygn mellan tarmt&ouml;mningarna (spontana eller inducerade) f&ouml;r att motverka sm&auml;rtsamma defekationer med risk f&ouml;r fekalombildning.</p>\n<p><br>Osmotiskt verkande medel som laktulos och laktitol kan beh&ouml;vas dagligen under en l&auml;ngre tid f&ouml;r att motverka ny f&ouml;rstoppning. Andra alternativ &auml;r saliniskt aktiva medel som polyetylenglykol (makrogol). I form av Forlax Junior kan det ges fr&aring;n 6&nbsp;m&aring;naders &aring;lder. Det &auml;r viktigt att utv&auml;rdera effekten. T&auml;nk d&aring; p&aring; att alltf&ouml;r l&ouml;s avf&ouml;ring inte ger n&aring;gon k&auml;nsla av defekationsbehov och d&auml;rmed motverkar barnets fortsatta pottr&auml;ning.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b597cda8-895b-4a57-aa98-41809c66fb7d",
+			"name": "b597cda8-895b-4a57-aa98-41809c66fb7d",
+			"type": "text",
+			"content": "<h2 id=\"c1_16\"><a class=\"index\" id=\"1040839\" data-text=\"komj&#xF6;lks&#xF6;verk&#xE4;nslighet\"></a>Komj&ouml;lks&ouml;verk&auml;nslighet</h2>\n<h3 id=\"c1_17\"><a class=\"index\" id=\"1040844\" data-text=\"komj&#xF6;lksallergi\"></a>Komj&ouml;lksallergi</h3>\n<p>En vanlig anledning till komj&ouml;lks&ouml;verk&auml;nslighet hos f&ouml;rskolebarn i Sverige &auml;r komj&ouml;lksproteinallergi. Detta f&ouml;rekommer hos 2&nbsp;% av svenska barn och kan &ouml;verv&auml;gas redan i tidig sp&auml;dbarns&aring;lder, &auml;ven om barnet ammas helt. Snabballergiska symtom kan vara kr&auml;kningar, diarr&eacute;, n&auml;sselutslag, andningsbesv&auml;r, kl&aring;da och anafylaxi. Sensymtom, vanligast i &aring;ldern 6&ndash;18&nbsp;m&aring;nader, kan komma f&ouml;rst timmar till dygn efter mj&ouml;lkintag och kan best&aring; av eksem, kr&auml;kningar, buksm&auml;rtor, s&ouml;mnst&ouml;rningar och ibland &auml;ven avplaning av tillv&auml;xtkurvan.</p>\n<p><br>Pricktest och analys av specifika IgE-antikroppar ger ingen s&auml;ker diagnos. Oftast kr&auml;vs total elimination av allt komj&ouml;lksprotein under minst 2 men helst 4&nbsp;veckor, eventuellt f&ouml;ljt av provokation f&ouml;r att st&auml;lla diagnos. F&ouml;r att f&ouml;rs&auml;kra sig om att eliminationen av komj&ouml;lksprotein blir total, &auml;r dietistinsats mycket viktig. Detta ocks&aring; f&ouml;r att utv&auml;rdera behovet av ett eventuellt kalciumtillskott.</p>\n<p><br>Komj&ouml;lksallergin har i 60&nbsp;% av fallen f&ouml;rsvunnit vid 2&ndash;3&nbsp;&aring;rs &aring;lder. Reintroduktion av mj&ouml;lkprotein kan testas var 6:e m&aring;nad i hemmet, s&aring;vida inte tidigare symtom varit allvarliga med anafylaxi. D&aring; b&ouml;r uppf&ouml;ljningen ske p&aring; barnklinik.</p>\n<h3 id=\"c1_18\"><a class=\"index\" id=\"1040904\" data-text=\"laktosintolerans\"></a>Laktosintolerans</h3>\n<p>Laktasbrist g&ouml;r att laktos inte kan spj&auml;lkas till glukos och galaktos. Detta ger diarr&eacute;, gasbildning och buksm&auml;rtor vid intag av laktos. Globalt utvecklar 60&ndash;100&nbsp;% av befolkningen utanf&ouml;r Nordeuropa och Nordamerika en laktasbrist i skol&aring;ldern eller i vuxen &aring;lder. <span style=\"color: #ff0000;\">Prim&auml;r laktosintolerans f&ouml;rekommer hos ungef&auml;r 3 % i den vuxna, svenskf&ouml;dda befolkningen. </span>Laktosintolerans &auml;r allts&aring; inget problem i sm&aring;barns&aring;ren.</p>\n<h4 id=\"c1_19\"><em>Diagnostik</em></h4>\n<p>F&ouml;r diagnostik &auml;r oftast laktosreduktion och provokation tillr&auml;ckligt. Genotypning f&ouml;r adult hypolaktasi kan vara anv&auml;ndbar som komplement om utfallet av laktosreduktion och provokation &auml;r sv&aring;rv&auml;rderat hos &auml;ldre barn eller vuxna.</p>\n<h4 id=\"c1_20\"><em>Behandling</em></h4>\n<p>Behandlingen best&aring;r av minskat laktosintag. M&auml;ngden laktos som den enskilde individen klarar av varierar. I vissa situationer kan <a class=\"index\" id=\"1040909\" data-text=\"laktas:laktosintolerans\"></a>laktastabletter anv&auml;ndas av barnet. Laktosfria eller laktosreducerade produkter fungerar utm&auml;rkt f&ouml;r den laktosintolerante men de inneh&aring;ller vanligen komj&ouml;lksprotein och fungerar d&auml;rf&ouml;r inte alls f&ouml;r den komj&ouml;lksallergiske.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f8696893-e771-4c00-9e6e-b188182b6c98",
+			"name": "f8696893-e771-4c00-9e6e-b188182b6c98",
+			"type": "text",
+			"content": "<h2 id=\"c1_21\">Celiaki</h2>\n<p>Celiaki &auml;r en immunologisk sjukdom p&aring; genetisk grund som inneb&auml;r en T-cellsmedierad reaktion mot gluten i vete, r&aring;g och korn. Detta ger villusatrofi och kronisk inflammation i tunntarmen med malabsorption som f&ouml;ljd. Prevalensen varierar mellan olika befolkningar och ber&auml;knas ligga p&aring; cirka 1/100 i v&auml;stv&auml;rlden <span style=\"background-color: #ffff00;\">med betydligt h&ouml;gre f&ouml;rekomst hos n&auml;ra sl&auml;ktingar</span>. Flertalet fall &auml;r odiagnostiserade.</p>\n<p><br>N&auml;stintill alla med celiaki har HLA-typerna DQ2/8. HLA-DQ-analys kan anv&auml;ndas f&ouml;r att med stor s&auml;kerhet utesluta celiaki, men inte f&ouml;r att fastst&auml;lla diagnosen.</p>\n<p><br>De flesta barn med tydliga symtom p&aring; celiaki diagnostiseras under sm&aring;barns&aring;ren. Under de f&ouml;rsta levnads&aring;ren noteras ofta avplaning av viktkurvan och &auml;ven <a class=\"index\" id=\"1040949\" data-text=\"viktnedg&#xE5;ng:celiaki\"></a>viktnedg&aring;ng, stor buk och <a class=\"index\" id=\"1040944\" data-text=\"diarr&#xE9;:celiaki\"></a>diarr&eacute;. &Auml;ven <a class=\"index\" id=\"1040939\" data-text=\"f&#xF6;rstoppning:celiaki\"></a>f&ouml;rstoppning kan f&ouml;rekomma. N&aring;got &auml;ldre f&ouml;rskolebarn kan f&aring; p&aring;verkan p&aring; l&auml;ngdtillv&auml;xten, <a class=\"index\" id=\"1040954\" data-text=\"buksm&#xE4;rta:celiaki\"></a>buksm&auml;rtor och gn&auml;llighet. Symtomen blir alltmer ospecifika ju &auml;ldre barnet &auml;r, exempelvis anemi, tr&ouml;tthet, d&aring;lig matlust och depression. Celiaki kan ocks&aring; f&ouml;rekomma helt utan symtom.</p>\n<p><br>Celiaki &auml;r en livsl&aring;ng sjukdom som g&aring;r att behandla men inte bota. Obehandlad celiaki &ouml;kar risken f&ouml;r ett flertal komplikationer. <span style=\"background-color: #ffff00;\">Risken f&ouml;r andra autoimmuna sjukdomar &ouml;kar</span>. H&auml;mmad l&auml;ngd- och viktutveckling samt sen pubertet kan ses om sjukdomen inte behandlas under uppv&auml;xt&aring;ren. I alla &aring;ldrar ses en &ouml;kad risk f&ouml;r osteoporos samt j&auml;rn- och vitaminbrist. I vuxen &aring;lder ses &ouml;kad risk f&ouml;r vissa leversjukdomar samt en viss risk&ouml;kning avseende lymfom i magtarmkanalen. Otillr&auml;ckligt behandlad celiaki ger ofta f&ouml;rs&auml;mrad livskvalitet i form av tr&ouml;tthet och depression. Mer information finns p&aring; webbplatsen f&ouml;r Svenska f&ouml;reningen f&ouml;r pediatrisk gastroenterologi, hepatologi och nutrition, <a href=\"http://www.blf.net/gastro/vardprogram/vardprogram_reg.html\" target=\"_blank\" class=\"linkOut\">www.blf.net</a>.</p>\n<h3 id=\"c1_22\">Diagnostik</h3>\n<p>Diagnostiken grundar sig p&aring; tunntarmsslemhinnans morfologi i biopsipreparat. D&aring; obehandlad celiaki ofta har h&ouml;ga titrar av serumantikroppar av IgA-typ mot <a class=\"index\" id=\"1040959\" data-text=\"gliadin\"></a>gliadin (AGA), <a class=\"index\" id=\"1040964\" data-text=\"endomysium\"></a>endomysium (EMA) och <a class=\"index\" id=\"1040969\" data-text=\"transglutaminas\"></a>transglutaminas (TGA) kan analys av dessa g&ouml;ras som hj&auml;lp i utredningen och uppf&ouml;ljningen. AGA har h&ouml;gst sensitivitet hos barn under 2&ndash;4 &aring;r medan EMA och TGA har h&ouml;gre sensitivitet &ouml;ver 2&ndash;4 &aring;rs &aring;lder. B&aring;de falskt positiva och falskt negativa v&auml;rden f&ouml;rekommer. Vid IgA-brist &auml;r alla IgA-antikroppar l&aring;ga, &auml;ven om vederb&ouml;rande har celiaki. Kom ih&aring;g att h&ouml;ga antikroppstitrar och patologisk biopsi bara finns om barnet &auml;ter glutenhaltig mat. Ge d&auml;rf&ouml;r inte barnet glutenfri mat f&ouml;rr&auml;n diagnostiken &auml;r klar!</p>\n<p><br>I framtiden kan barn med klassiska symtom komma att diagnostiseras med enbart serologier och klinisk uppf&ouml;ljning, men fortfarande utg&ouml;r tunntarmsbiopsi grunden f&ouml;r diagnostiken och &auml;r &rdquo;gyllene standard&rdquo;.</p>\n<h3 id=\"c1_23\">Behandling</h3>\n<p>Behandlingen best&aring;r av livsl&aring;ng glutenfri diet. Dietistmedverkan &auml;r n&ouml;dv&auml;ndig.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "670161d7-b2ef-4ce6-8d61-049238046777",
+			"name": "670161d7-b2ef-4ce6-8d61-049238046777",
+			"type": "text",
+			"content": "<h2 id=\"c1_24\">Medel vid celiaki, komj&ouml;lksallergi och laktosintolerans</h2>\n<p>Livsmedel f&ouml;r s&auml;rskilda n&auml;rings&auml;ndam&aring;l, enligt LVFS 1997:13, kan erh&aring;llas p&aring; livsmedelsanvisning till barn under 16 &aring;r. F&ouml;rskrivande l&auml;kare ska ha specialistbeh&ouml;righet enligt SOSFS 1979:102. Denna inkluderar specialist i allm&auml;nmedicin som tj&auml;nstg&ouml;r p&aring; barnav&aring;rdscentral (SOSFS 1987:4). <span style=\"background-color: #ffff00;\">Se prislista Livsmedel f&ouml;r s&auml;rskilda n&auml;rings&auml;ndam&aring;l, Apoteket AB, eller p&aring; <a style=\"background-color: #ffff00;\" href=\"http://www.apoteketfarmaci.se/NyheterOchFakta/Farmaci%20Broschyrer/SortimentFort_Livsmedel_utan_pris.pdf\" target=\"_blank\" class=\"linkOut\"></a>www.apoteket farmaci.se.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "11805cbe-46d0-4886-bd4f-39653331361b",
+			"name": "11805cbe-46d0-4886-bd4f-39653331361b",
+			"type": "text",
+			"content": "<h2 id=\"c1_25\"><a class=\"index\" id=\"1040984\" data-text=\"barnfetma:problem under sm&#xE5;barns&#xE5;ren\"></a>&Ouml;vervikt och fetma</h2>\n<p>Liksom hos vuxna har &ouml;vervikt och fetma hos barn varit ett tilltagande problem under de senaste decennierna, men &ouml;kningstakten har nu visat tecken p&aring; att stanna av b&aring;de hos barn och vuxna. Tidig &ouml;vervikt och fetma har dock idag s&auml;mre prognos &auml;n f&ouml;rr om &aring;ren. De som idag blir &ouml;verviktiga och feta redan vid 4 &aring;rs &aring;lder &auml;r i st&ouml;rre utstr&auml;ckning &auml;n tidigare &auml;ven &ouml;verviktiga och feta som skolbarn, ton&aring;ringar och vuxna. Det &auml;r d&auml;rf&ouml;r viktigt att tidigt motverka denna utveckling genom att grundl&auml;gga sunda vanor med god kosth&aring;llning och regelbunden fysisk aktivitet.</p>\n<p><br>Barn beh&ouml;ver regelbundna m&aring;ltider &ndash; frukost, lunch och middag samt ofta tv&aring; mellanm&aring;l. Fr&aring;n 2&nbsp;&aring;rs &aring;lder b&ouml;r mat m&auml;rkt med gr&ouml;nt nyckelh&aring;l v&auml;ljas. Vatten b&ouml;r vara m&aring;ltidsdryck och t&ouml;rstsl&auml;ckare. Minska sockerintaget. Begr&auml;nsa godis, chips, l&auml;sk eller saft och liknande till 1 g&aring;ng/vecka.</p>\n<p><br>Barn beh&ouml;ver fysisk aktivitet eller lek som g&ouml;r dem varma och andf&aring;dda minst 1&nbsp;timme varje dag. Denna timme kan delas upp p&aring; flera tillf&auml;llen. Barn beh&ouml;ver ocks&aring; tid f&ouml;r &aring;terh&auml;mtning och vila. L&auml;ngre tids stillasittande ska motverkas och i skol&aring;ldern rekommenderas en maximal sk&auml;rmtid (TV, dator, datorspel m&nbsp;m) p&aring; 2 timmar/dag. Se &auml;ven kapitlet &Ouml;vervikt och fetma, avsnittet <a href=\"{pre}/kapitel/nutrition/overvikt_och_fetma.html#c2_63\">Barnfetma</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "316112b2-260a-41e1-8525-1ef20b7027c0",
+			"name": "316112b2-260a-41e1-8525-1ef20b7027c0",
+			"type": "text",
+			"content": "<h2 id=\"c1_26\"><a class=\"index\" id=\"1043724\" data-text=\"s&#xF6;mnst&#xF6;rningar:problem under sm&#xE5;barns&#xE5;ren\"></a><a class=\"crossref\" id=\"38151\"></a>S&ouml;mnproblem</h2>\n<p>Sp&auml;dbarnet och det lilla barnet ska avnjuta omv&auml;rlden i sm&aring; portioner. Det ska vara balans mellan mat, vila och aktivitet. F&ouml;r&auml;ldrarnas famn och n&auml;rhet ska vara barnets hamn f&ouml;r anknytning och samspel, trygghet, tillit och vila.</p>\n<p><br>L&auml;ttare s&ouml;mnproblem &auml;r vanliga hos sp&auml;d- och sm&aring;barn. Flertalet barn med s&ouml;mnproblem &auml;r helt friska. Hur olika familjer hanterar och tolerar barns s&ouml;mnst&ouml;rningar varierar. F&ouml;r&auml;ldrarna beh&ouml;ver, n&auml;r somatisk orsak uteslutits, f&aring; information om hur vanligt tillst&aring;ndet &auml;r och hur god prognosen ter sig. M&ouml;jlighet att f&aring; ventilera problemet kan i sig fungera terapeutiskt.</p>\n<p><br>Nyf&ouml;dda barn sover i genomsnitt 16&ndash;18 timmar/dygn. Redan under de f&ouml;rsta levnadsm&aring;naderna etableras en dygnsrytm med mer s&ouml;mn nattetid och mindre dagtid. F&ouml;rst vid 4 &aring;rs &aring;lder &auml;r barnet vaket mer &auml;n det sover under dygnet. De individuella variationerna i hur mycket ett &auml;ldre barn sover &auml;r mycket stora.</p>\n<p><br>Sp&auml;dbarnet passerar igenom en s&ouml;mncykel snabbare &auml;n en vuxen och har ocks&aring; en st&ouml;rre andel ytlig REM-s&ouml;mn. Sp&auml;dbarnet sover ytligt b&aring;de oftare och under l&auml;ngre tid &auml;n en vuxen. Det som skiljer de barn som sover bra fr&aring;n dem som sover d&aring;ligt &auml;r att barnen sj&auml;lva kan lugna sig till en ny s&ouml;mncykel.</p>\n<p><br>Ett barn som &auml;r &rdquo;&ouml;vertr&ouml;tt&rdquo; har sv&aring;rare att somna. Vila p&aring; dagen ger b&auml;ttre natts&ouml;mn. Man vinner inget p&aring; att h&aring;lla barnet uppe l&auml;ngre p&aring; kv&auml;llen. F&ouml;r att barnet ska kunna sova kr&auml;vs ett visst m&aring;tt av lugn. P&aring;frestningar i familjen kan g&ouml;ra det sv&aring;rt att ge detta lugn. Insatserna kan d&aring; beh&ouml;va inriktas p&aring; att minska effekterna av familjep&aring;frestningarna. En kontakt med BVC-psykolog kan ofta hj&auml;lpa f&ouml;r&auml;ldrarna vid sv&aring;ra s&ouml;mnproblem hos barnet.</p>\n<h3 id=\"c1_27\">Goda r&aring;d vid s&ouml;mnproblem</h3>\n<p>Kopplingen mellan mat och s&ouml;mn beh&ouml;ver ofta brytas. Det kan vara m&ouml;jligt fr&aring;n 3&ndash;4&nbsp;m&aring;naders &aring;lder. L&aring;t det g&aring; minst en halvtimme efter ett m&aring;l innan barnet l&auml;ggs i s&auml;ngen.</p>\n<p><br>Ha en kv&auml;llsritual som f&ouml;r&auml;lder och barn f&ouml;ljer varje kv&auml;ll. Barnet ska slappna av och lugna ner sig. Barnet l&auml;ggs d&aring; vaket i s&auml;ngen efter en stunds kroppskontakt.</p>\n<p><br>Barnet m&aring;ste f&ouml;rst&aring; att f&ouml;r&auml;ldern finns &auml;ven om hon/han inte finns i barnets synf&auml;lt. Om barnet skriker, lugnas det med n&aring;gra lugnande ord och genom att stillsamt smeka barnet men n&ouml;dv&auml;ndigtvis inte genom att f&ouml;r&auml;ldern tar upp det. Barnet ska inte ignoreras. Om barnet skriker igen, ska f&ouml;r&auml;ldern komma tillbaka efter en kort stund och tr&ouml;sta igen.</p>\n<p><br>Det &auml;r mycket s&auml;llan aktuellt med l&auml;kemedel mot s&ouml;mnproblem.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "02980d9e-b186-42f7-add3-5a9546444cc1",
+			"name": "02980d9e-b186-42f7-add3-5a9546444cc1",
+			"type": "text",
+			"content": "<h2 id=\"c1_28\"><a class=\"index\" id=\"1041062\" data-text=\"hud:problem under sm&#xE5;barns&#xE5;ren\"></a>Hudproblem</h2>\n<p>Se &auml;ven kapitlet <a href=\"{pre}/kapitel/hud/hudsjukdomar.html#f1_4\">Hudsjukdomar</a>. F&ouml;r n&auml;rmare information om behandling av olika infektioner i huden rekommenderas behandlingsrekommendationer fr&aring;n L&auml;kemedelsverket (1).</p>\n<h3 id=\"c1_29\"><a class=\"index\" id=\"1041067\" data-text=\"navelv&#xE5;rd\"></a>Navelv&aring;rd</h3>\n<h4 id=\"Normal-navel\">Normal navel</h4>\n<p>En normal navel tv&auml;ttas dagligen med hj&auml;lp av en kompress eller bomullspinne (tops)&nbsp;och ljummet vatten och torkas d&auml;refter.</p>\n<h4 id=\"Smetig-och-illaluktande-navel\">Smetig och illaluktande navel</h4>\n<p>Om naveln blir smetig och illaluktande tv&auml;ttas den ren med klorhexidinsprit, 5&nbsp;mg/ml. Observera att alsolsprit inte ska anv&auml;ndas! <span style=\"color: #ff0000;\">Om klorhexidin anv&auml;nds f&ouml;r navelv&aring;rd p&aring; prematura barn ska f&ouml;rsiktighet iakttagas.</span> F&ouml;r&auml;ldrarna f&aring;r r&aring;d om navelv&aring;rden och &aring;tg&auml;rden f&ouml;ljs upp av sjuksk&ouml;terska p&aring; BVC.</p>\n<p><br>Vid smetig och illaluktande navel med tilltagande rodnad av omgivande hud samt eventuellt feber och allm&auml;np&aring;verkan ska navelinfektion (omfalit) misst&auml;nkas. Barnet remitteras akut till barnl&auml;kare eftersom det finns risk f&ouml;r sepsis.&nbsp;</p>\n<h4 id=\"Vatskande-navel\">V&auml;tskande navel</h4>\n<p>Om naveln v&auml;tskar kan orsaken vara kvarst&aring;ende rester av g&aring;ngar (omfalomesentericus respektive urachus) fr&aring;n fostertiden. Barnet ska remitteras till (barn)kirurgisk klinik.</p>\n<h4 id=\"Blodande-navel\">Bl&ouml;dande navel</h4>\n<p>Det &auml;r vanligt att naveln bl&ouml;der lite efter det att navelstumpen fallit av. Detta beh&ouml;ver mycket s&auml;llan &aring;tg&auml;rdas.</p>\n<h4 id=\"Navelgranulom\">Navelgranulom</h4>\n<p>Navelgranulom visar sig som en gr&aring;vit h&aring;rd tapp som kvarst&aring;r efter att navelstumpen fallit av och behandlas med fysiologisk koksaltl&ouml;sning. Naveln tv&auml;ttas med tops 1&ndash;3 g&aring;nger/dag varefter de flesta granulom f&ouml;rsvinner inom 3 veckor. <span style=\"color: #ff0000;\">Om granulomen kvarst&aring;r efter denna behandling kan silvernitratsticka eller Dermovat anv&auml;ndas (se Rikshandboken-bhv.se).</span></p>\n<h3 id=\"c1_30\"><a class=\"index\" id=\"1041082\" data-text=\"toxiskt utslag\"></a>Toxiskt utslag &ndash; <a class=\"index\" id=\"1041077\" data-text=\"erythema toxicum\"></a>erythema toxicum</h3>\n<p>Upp mot 50&ndash;70&nbsp;% av alla nyf&ouml;dda f&aring;r toxiskt utslag. Dessa hudf&ouml;r&auml;ndringar kommer kort efter f&ouml;delsen n&auml;r barnet &auml;r 1&ndash;4&nbsp;dagar gammalt. Det visar sig som r&ouml;da, oregelbundna utslag av varierande storlek, 2&ndash;10&nbsp;mm. Oftast ser eller k&auml;nner man sm&aring; knottror, 1&ndash;2&nbsp;mm stora, som blir gulvita n&auml;r man trycker p&aring; huden. Knottrorna kan ocks&aring; likna sm&aring; varbl&aring;sor, men de &auml;r inte infekterade. Utslagen &auml;r spridda framf&ouml;r allt p&aring; b&aring;len och ibland &auml;ven till armar, l&aring;r och ansikte. Orsaken &auml;r ok&auml;nd. Hudf&ouml;r&auml;ndringarna f&ouml;rsvinner av sig sj&auml;lva efter n&aring;gra dagar till veckor.</p>\n<h3 id=\"c1_31\"><a class=\"index\" id=\"1042882\" data-text=\"milier\"></a>Milier</h3>\n<p>Milier visar sig som mycket sm&aring;, vitaktiga knottror, framf&ouml;r allt p&aring; n&auml;san hos nyf&ouml;dda. Uppkomstmekanismen &auml;r ok&auml;nd och knottrorna f&ouml;rsvinner spontant utan behandling<br>inom ett par veckor.</p>\n<h3 id=\"c1_32\">Bl&ouml;jdermatit<a class=\"index\" id=\"1041115\" data-text=\"aatgaerder\"></a></h3>\n<p>Bl&ouml;jeksem har blivit mindre vanligt i takt med att bl&ouml;jorna blivit allt b&auml;ttre men f&ouml;rekommer fortfarande och kan bli ett stort problem. Bl&ouml;jeksem uppst&aring;r n&auml;r huden &auml;r utsatt f&ouml;r fukt, urin, avf&ouml;ring eller tv&auml;tt och &auml;r inst&auml;ngd i ett luftt&auml;tt system under bl&ouml;jan. I denna fuktiga och varma milj&ouml; trivs &auml;ven j&auml;stsvamp (Candida) vilket kan f&ouml;rv&auml;rra eksemet ytterligare.</p>\n<p><br>Bl&ouml;jeksemet yttrar sig som rodnade, torra f&ouml;r&auml;ndringar, speciellt p&aring; de hudytor som har n&auml;rmast kontakt med bl&ouml;jan. Om det dessutom v&auml;xer j&auml;stsvamp i eksemet blir huden ilsket r&ouml;d, delvis macererad och glansig l&auml;ngst in i hudvecken. F&ouml;r behandling, se Terapirekommendationerna.</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5877f81a-6026-442c-b269-c644ff2a56fa",
+			"name": "5877f81a-6026-442c-b269-c644ff2a56fa",
+			"type": "therapy",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"index\" id=\"1052132\" data-text=\"hur_behandlas_bloejeksem?\"></a>Behandling av <a class=\"index\" id=\"1052133\" data-text=\"bl&#xF6;jdermatit:behandling\"></a>blöjdermatit<span class=\"tab\"></span><span class=\"tab\"></span><span class=\"tab\"></span><span class=\"tab\"></span> ",
+				"id": "c1_33",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong><span style=\"font-weight: bold;\">Generellt</span></strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Lufta av stj&auml;rten ofta, det vill s&auml;ga l&aring;t barnet vara utan bl&ouml;ja s&aring; mycket som m&ouml;jligt.</div>\r\n<div class=\"tableLine\">Byta bl&ouml;ja ofta och anv&auml;nd h&ouml;gabsorberande bl&ouml;jor.</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong><span style=\"font-weight: bold;\">Enbart rodnad hud</span></strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Sm&ouml;rj med neutrala barnsalvor, eventuellt hydrokortison lokalt. </div>\r\n<div class=\"tableLine\">Anv&auml;nd skyddande<span> salva som inneh&aring;ller zink</span>.</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong><span style=\"font-weight: bold;\">S&aring;rig och v&auml;tskande hud</span></strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Badda med alsoll&ouml;sning 1&nbsp;%, l&aring;t lufttorka. Ge svampd&ouml;dande medel (imidazol-</div>\r\n<div class=\"tableLine\">derivat) lokalt, vid uttalad inflammation i kombination med hydrokortison.</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"font-weight: bold;\">Varig sekretion, varbl&aring;sor, </span></div>\r\n<div class=\"tableLine\"><strong>smetiga krustor och sprickor</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Tv&auml;tta med koksaltl&ouml;sning eller alsoll&ouml;sning 1&nbsp;%.</div>\r\n<div class=\"tableLine\">Vid uttalade besv&auml;r ges behandling med <a class=\"index\" id=\"1052153\" data-text=\"retapamulin:bl&ouml;jdermatit\"></a>retapamulin som appliceras i ett tunt</div>\r\n<div class=\"tableLine\">lager 2&nbsp;g&aring;nger/dag i 5&nbsp;dagar<span style=\"color: #ff0000;\"> (b&ouml;r inte anv&auml;ndas om barnet &auml;r yngre &auml;n 9 m&aring;nader).</span></div>\r\n<div class=\"tableLine\">Alternativ behandling &auml;r v&auml;teperoxidkr&auml;m som p&aring;strykes 2&nbsp;g&aring;nger/dag tills utl&auml;kning har skett.</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong><span style=\"font-weight: bold;\">Vid utbredd infektion</span></strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&Ouml;verv&auml;g, efter odling, peroral antibiotikabehandling med cefadroxil alternativt flukloxacillin.</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "84de7270-08d4-45e3-8d24-7f60d9739815",
+			"name": "84de7270-08d4-45e3-8d24-7f60d9739815",
+			"type": "text",
+			"content": "<h3 id=\"c1_34\">Skorv<span style=\"color: #ff0000;\"> &ndash; seborroiskt eksem i h&aring;rbotten</span></h3>\n<p><a class=\"index\" id=\"1041157\" data-text=\"mj&#xF6;lkskorv\"></a>Mj&ouml;lkskorv, eller <a class=\"index\" id=\"1041162\" data-text=\"gnejs\"></a>gnejs, kallas ett tillst&aring;nd med gulaktiga, fj&auml;llande hudf&ouml;r&auml;ndringar i h&aring;rbotten vilket ses hos m&aring;nga barn, framf&ouml;r allt sp&auml;dbarn.</p>\n<p><br>Behandlingen &auml;r v&auml;sentligen indicerad av kosmetiska sk&auml;l. I lindriga fall beh&ouml;vs ingen behandling. Den traditionella behandlingen &auml;r insm&ouml;rjning av h&aring;rbotten med salicylsyrevaselin 1&nbsp;% som f&aring;r verka n&aring;gra timmar eller &ouml;ver natten, varefter fj&auml;llen f&ouml;rsiktigt kammas bort f&ouml;re schamponering (se <a href=\"{pre}/kapitel/pediatrik/vanliga_problem_under_smabarnsaren.html#c1_38\">Infantilt seborroiskt eksem</a>). Alternativt anv&auml;nds i st&auml;llet en fet kr&auml;m, till exempel Locobase Repair. En annan behandlingsform &auml;r insm&ouml;rjning med Essex kr&auml;m som f&aring;r verka under 2&nbsp;timmar innan h&aring;ret tv&auml;ttas med Fungoral schampo. Boragoolja (Boragokr&auml;m, handelsvara) har visat sig ha mycket god effekt p&aring; skorv. Sm&ouml;rjs in i h&aring;rbotten 3&nbsp;g&aring;nger dagligen i 8&ndash;10&nbsp;dagar.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "480dd88d-d333-43fc-b6a6-df55965e91bb",
+			"name": "480dd88d-d333-43fc-b6a6-df55965e91bb",
+			"type": "text",
+			"content": "<h3 id=\"c1_35\"><a class=\"index\" id=\"1047621\" data-text=\"atopiskt eksem;eksem:atopiskt\"></a><a class=\"crossref\" id=\"52948\"></a>Atopiskt eksem</h3>\n<p>Atopiskt eksem &auml;r den vanligaste formen av eksem hos barn och drabbar ungef&auml;r vart femte barn (1). Denna eksemform beror p&aring; vissa medf&ouml;dda anlag och har en koppling till andra allergiska symtom, varf&ouml;r det ofta finns allergi i sl&auml;kten. Barn med atopiskt eksem l&ouml;per en &ouml;kad risk att f&aring; luftv&auml;gsallergi senare i livet. Under sp&auml;dbarns&aring;ret lokaliseras eksemet fr&auml;mst till ansiktet, s&auml;rskilt kinderna, extremiteternas str&auml;cksidor och b&aring;len, medan det senare under sm&aring;barns&aring;ren sker en &auml;ndrad lokalisering till b&ouml;jveck (armar och kn&auml;n), runt hand- och fotleder, till halsen och huden bakom &ouml;rsnibbarna.</p>\n<p><br>Huvudsymtomet &auml;r <a class=\"index\" id=\"1042840\" data-text=\"kl&#xE5;da:atopiskt eksem\"></a>kl&aring;da, som kan vara sv&aring;r och inte s&aring; s&auml;llan leda till s&ouml;mnproblem. Kl&aring;dan orsakar i sin tur att barnet river sig, vilket inneb&auml;r en risk f&ouml;r bakteriell sekund&auml;rinfektion. Bakteriella agens &auml;r ofta stafylokocker, mer s&auml;llan betahemolytiska streptokocker.</p>\n<p><br>Barnen har ofta generellt torr hud och &ouml;kad k&auml;nslighet f&ouml;r irriterande &auml;mnen som tv&aring;l, vatten, ylle etc.</p>\n<p><br>I cirka 10&nbsp;% av fallen med m&aring;ttligt eksem och i h&auml;lften av fallen med sv&aring;rt eksem finns en bakomliggande <a class=\"index\" id=\"1052550\" data-text=\"f&#xF6;do&#xE4;mnesallergi:eksem\"></a>f&ouml;do&auml;mnesallergi. De vanligaste allergiframkallande f&ouml;do&auml;mnena &auml;r &auml;gg och mj&ouml;lk. &Auml;mnen fr&aring;n dessa livsmedel kan &ouml;verf&ouml;ras via moderns br&ouml;stmj&ouml;lk och ge upphov till eksem eller andra allergiska manifestationer redan under amningstiden. Multipel f&ouml;do&auml;mnesallergi b&ouml;r utredas av barnl&auml;kare.</p>\n<p><br>N&aring;gra f&ouml;do&auml;mnen, som citrusfrukter, viss choklad, konserveringsmedel, starka kryddor, <span style=\"background-color: #ffff00;\">r&ouml;da eller orange frukter, gr&ouml;nsaker och b&auml;r</span> kan ge upphov till &ouml;verk&auml;nslighet. S&aring;dan &ouml;verk&auml;nslighet &auml;r inte allergisk och ger aldrig upphov till sv&aring;ra reaktioner. Den kan inte p&aring;visas i test. F&ouml;rs&auml;mringar ses ofta vid f&ouml;rkylningar medan eksemet ofta f&ouml;rb&auml;ttras sommartid.</p>\n<h4 id=\"c1_36\">Behandling</h4>\n<p>Grunden i behandlingen, ut&ouml;ver elimination av eventuella <span>allergener</span> i kosten, &auml;r att bevara huden intakt och minska kl&aring;dan. F&ouml;r lindriga, torrsprickiga eksem r&auml;cker det ofta med mjukg&ouml;rande salvor, men eksem som &auml;r r&ouml;tt och kliar b&ouml;r behandlas med glukokortikoider i salvor eller kr&auml;mer. Det &auml;r viktigt att f&ouml;rst&aring; att anlaget naturligtvis inte kan tas bort, utan f&ouml;ljer barnet under uppv&auml;xten. Se vidare Terapirekommendationerna.</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6aadf36c-a1ef-4185-aacb-537dd96f72af",
+			"name": "6aadf36c-a1ef-4185-aacb-537dd96f72af",
+			"type": "therapy",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"crossref\" id=\"91476\"></a>Råd vid atopiskt eksem",
+				"id": "c1_37",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Allm&auml;nna r&aring;d</strong></div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Undvik f&ouml;r mycket tv&aring;l och vatten samt kl&auml;der som irriterar huden.</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Ha badolja i badvattnet.</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Anv&auml;nd mjukg&ouml;rande salvor eller kr&auml;mer dagligen. Obs! Behandlande l&auml;kare ska</div>\r\n<div class=\"tableLine\">skriva ut tillr&auml;ckliga m&auml;ngder av dessa. L&auml;r ut noggrann sm&ouml;rjning genom att</div>\r\n<div class=\"tableLine\">massera in kr&auml;men. Undvik karbamidtillsats som ofta svider.</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Ett icke-medikamentellt alternativ till lokal steroidbehandling till barn med sv&aring;ra </div>\r\n<div class=\"tableLine\">eksem &auml;r underkl&auml;der och nattkl&auml;der av ett specialv&auml;vt sidenmaterial, <a class=\"index\" id=\"1051467\" data-text=\"DermaSilk\"></a>DermaSilk</div>\r\n<div class=\"tableLine\">(<a href=\"http://www.medeca.se/eksem?utm_source=dermasilk-se&amp;utm_medium=direct\" target=\"_blank\" class=\"linkOut\">www.dermasilk.se</a>).</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Lindrigt eksem med</strong></div>\r\n<div class=\"tableLine\"><strong>kl&aring;da</strong></div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Lokal behandling med <a class=\"index\" id=\"1051024\" data-text=\"hydrokortison:atopiskt eksem\"></a>hydrokortison, 2 g&aring;nger/dag. N&aring;gra dagars behandling med grupp II-</div>\r\n<div class=\"tableLine\">steroid kan vara aktuellt f&ouml;r att f&aring; bort kl&aring;dan.</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Tunna vantar, till exempel av bomull, nattetid kan minska risken f&ouml;r infektion vid sv&aring;rt</div>\r\n<div class=\"tableLine\">kliande eksem. Ett kl&aring;dstillande antihistamin, till exempel <a class=\"index\" id=\"1051027\" data-text=\"klemastin:atopiskt eksem\"></a>klemastin, kan under en period</div>\r\n<div class=\"tableLine\">ges till natten f&ouml;r att minska kl&aring;dan.</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Uppblossning av </strong></div>\r\n<div class=\"tableLine\"><strong>eksemet</strong></div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Vid uppblossning av eksemet kan lokal behandling med grupp II&ndash;III-</div>\r\n<div class=\"tableLine\">steroid vara motiverad under 1&ndash;2 veckor med nedtrappning till hydrokortison. Till</div>\r\n<div class=\"tableLine\">sp&auml;dbarn b&ouml;r man endast anv&auml;nda salvor med steroider ur grupp I med till&auml;gg av grupp II under</div>\r\n<div class=\"tableLine\">kort tid p&aring; de sv&aring;raste st&auml;llena. I ansiktet, och speciellt kring &ouml;gon och mun, b&ouml;r</div>\r\n<div class=\"tableLine\">enbart grupp&nbsp;I anv&auml;ndas.</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Sekund&auml;rinfektion</strong></div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Vid misstanke om sekund&auml;rinfektion kan peroralt antibiotikum verksamt mot</div>\r\n<div class=\"tableLine\">stafylokocker, till exempel <a class=\"index\" id=\"1051036\" data-text=\"cefadroxil:atopiskt eksem\"></a>cefadroxil, &ouml;verv&auml;gas.</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "734f5b7b-7fc1-48c1-8eab-2be94b8f683c",
+			"name": "734f5b7b-7fc1-48c1-8eab-2be94b8f683c",
+			"type": "text",
+			"content": "<h3 id=\"c1_38\">Infantilt seborroiskt eksem</h3>\n<p>Den viktigaste differentialdiagnosen till atopiskt eksem &auml;r infantilt seborroiskt eksem. Denna typ av eksem debuterar vanligen under barnets f&ouml;rsta levnadsm&aring;nad och spontanl&auml;ker ofta f&ouml;re 6 m&aring;naders &aring;lder. Barnen har rodnade, fj&auml;llande fl&auml;ckar i h&aring;rbotten, ibland &auml;ven med spridning till ansiktet, bakom &ouml;ronen och i hudveck, till exempel i axillerna och bl&ouml;jregionen. F&ouml;r&auml;ndringarna kliar inte. Se &auml;ven <a href=\"{pre}/kapitel/pediatrik/vanliga_problem_under_smabarnsaren.html#c1_34\">Skorv - seborroiskt eksem i h&aring;rbotten</a>.</p>\n<h4 id=\"c1_39\">Behandling</h4>\n<p>Avfj&auml;llning av h&aring;rbotten med salicylsyrevaselin 1&nbsp;%. Eventuellt ges hydrokortison lokalt, 2&nbsp;g&aring;nger/dag. <span style=\"color: #ff0000;\">P&aring; kroppen kan svampmedel som Daktacort eller Cortimyk anv&auml;ndas.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "882a4acd-0b27-4085-886e-281508dac57f",
+			"name": "882a4acd-0b27-4085-886e-281508dac57f",
+			"type": "text",
+			"content": "<h2 id=\"c1_40\">Infektioner i huden</h2>\n<p>F&ouml;r n&auml;rmare information om behandling av olika infektioner i huden rekommenderas behandlingsrekommendationen fr&aring;n L&auml;kemedelsverket (2).</p>\n<h3 id=\"c1_41\"><a class=\"index\" id=\"1041212\" data-text=\"impetigo\"></a>Impetigo</h3>\n<p>Impetigo orsakas av stafylokocker eller streptokocker och har ett typiskt utseende med gulaktiga bl&aring;sor och s&aring;r runt n&auml;sa och mun. Bl&aring;sor kan &auml;ven finnas p&aring; h&auml;nderna, runt naglarna eller p&aring; kroppen. Barnen f&aring;r s&auml;llan feber.</p>\n<h4 id=\"c1_42\">Behandling och hygienr&aring;d</h4>\n<p>S&aring;rskorporna tv&auml;ttas bort med tv&aring;l och vatten och huden behandlas med i f&ouml;rsta hand retapamulinsalva<span style=\"color: #ff0000;\"> (b&ouml;r dock inte ges till barn yngre &auml;n 9 m&aring;nader)</span> i 5&nbsp;dagar. Fucidinsalva ska undvikas p&aring; grund av risk f&ouml;r resistensutveckling. Vid stor utbredning kan peroral antibiotika ges, till exempel cefadroxil.</p>\n<p><br>Impetigo smittar s&aring; l&auml;nge s&aring;ret v&auml;tskar och barnet ska d&auml;rf&ouml;r undvika n&auml;rkontakt med andra barn tills s&aring;ret torkat.</p>\n<p><br>God handhygien &auml;r oerh&ouml;rt viktig vid impetigo, b&aring;de f&ouml;r de infekterade barnen och de vuxna som sk&ouml;ter dem. Anv&auml;nd eng&aring;ngshanddukar och reng&ouml;r leksaker, handtag och annat som kommit i kontakt med infekterade h&auml;nder.</p>\n<h3 id=\"c1_43\"><a class=\"crossref\" id=\"65807\"></a>Stj&auml;rtfluss (<a class=\"index\" id=\"1041242\" data-text=\"perianal streptokockdermatit\"></a>perianal streptokockdermatit)</h3>\n<p>Med &rdquo;<a class=\"index\" id=\"1041237\" data-text=\"stj&#xE4;rtfluss\"></a>stj&auml;rtfluss&rdquo; avses ett rodnat och &ouml;mmande v&auml;lavgr&auml;nsat hudomr&aring;de runt anus och i vulva hos sm&aring; barn. Hos sm&aring;flickor ser man ibland &auml;ven flytning. Barnet har inga allm&auml;nsymtom eller feber. Man kan ofta hitta streptokockinfektion hos annan familjemedlem samtidigt.</p>\n<p><br>Diagnosen bekr&auml;ftas genom odling, alternativt med snabbtest f&ouml;r streptokocker, fr&aring;n omr&aring;det. Oftast &auml;r det streptokocker som &auml;r orsaken till problemet men &auml;ven <span style=\"color: #ff0000;\">Haemofilus influensae-infektioner kan f&ouml;rekomma.</span></p>\n<h4 id=\"c1_44\">Behandling</h4>\n<p>Fenoximetylpenicillin (penicillin V) 50&ndash;75&nbsp;mg/kg kroppsvikt/dygn f&ouml;rdelat p&aring; 3 doser i 10 dagar, alternativt cefadroxil 25&nbsp;mg/kg kroppsvikt/dygn f&ouml;rdelat p&aring; 2&nbsp;doser i 5 dagar.</p>\n<h3 id=\"c1_45\"><a class=\"index\" id=\"1041257\" data-text=\"nagelbandsinfektion\"></a>Nagelbandsinfektion &ndash; <a class=\"index\" id=\"1041262\" data-text=\"paronyki\"></a>paronyki</h3>\n<p>Nagelbandsinfektion &auml;r vanlig under barnets f&ouml;rsta levnadsveckor och visar sig som en svullen, rodnad nagelvall. Orsaken &auml;r oftast stafylo- eller streptokocker. Tillst&aring;ndet f&aring;r oftast ett lindrigt f&ouml;rlopp, men kan utvecklas till allvarlig septisk infektion.</p>\n<h4 id=\"c1_46\"><em>Behandling</em></h4>\n<p>Tv&auml;ttas med koksalt- eller alsoll&ouml;sning. Vid spridning av infektionen och/eller allm&auml;np&aring;verkan tas st&auml;llning till behandling med perorala antibiotika (t&nbsp;ex <a class=\"index\" id=\"1041267\" data-text=\"cefadroxil:paronyki\"></a>cefadroxil) eller remiss till sjukhus.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "aca050bc-c0a1-4ca1-a280-d8b226111a0c",
+			"name": "aca050bc-c0a1-4ca1-a280-d8b226111a0c",
+			"type": "text",
+			"content": "<h2 id=\"c1_47\"><a class=\"index\" id=\"1041272\" data-text=\"f&#xF6;delsem&#xE4;rken\"></a>F&ouml;delsem&auml;rken</h2>\n<h3 id=\"c1_48\"><a class=\"index\" id=\"1041277\" data-text=\"caf&#xE9;-au-lait-fl&#xE4;ckar\"></a>Caf&eacute;-au-lait-fl&auml;ckar</h3>\n<p>Dessa &auml;r gulbruna f&ouml;delsem&auml;rken som kan finnas hos det sp&auml;da barnet, men &auml;ven bli mera synliga senare under barna&aring;ren. De kan inte maligniseras och saknar som regel betydelse.</p>\n<p class=\"indent\">Barn med m&aring;nga eller ovanligt stora caf&eacute;-au-lait-m&auml;rken b&ouml;r bed&ouml;mas av barnl&auml;kare.</p>\n<h3 id=\"c1_49\"><a class=\"index\" id=\"1041284\" data-text=\"smultronm&#xE4;rken\"></a>Smultronm&auml;rken/<a class=\"index\" id=\"1041289\" data-text=\"jordgubbshemangiom\"></a>jordgubbshemangiom Kapill&auml;ra &ndash; <a class=\"index\" id=\"1041294\" data-text=\"kavern&#xF6;sa hemangiom\"></a>kavern&ouml;sa hemangiom</h3>\n<p>Under det f&ouml;rsta levnads&aring;ret och s&auml;rskilt de f&ouml;rsta levnadsm&aring;naderna kan blodk&auml;rlen under huden pl&ouml;tsligt b&ouml;rja v&auml;xa okontrollerat inom ett begr&auml;nsat omr&aring;de. Ett smultronm&auml;rke uppkommer pl&ouml;tsligt och kan sitta var som helst p&aring; kroppen. Det v&auml;xer ofta hastigt i b&ouml;rjan och visar sig som en m&ouml;rkr&ouml;d, upph&ouml;jd, mjuk knuta som kan variera i storlek fr&aring;n n&aring;gon centimeter upp till &ouml;ver en decimeter. F&ouml;r&auml;ndringarna finns inte hos nyf&ouml;dda, men ibland kan man genom en viss f&auml;rgskiftning i huden f&ouml;rutsp&aring; att ett smultronm&auml;rke kommer att uppst&aring; p&aring; detta st&auml;lle.</p>\n<p class=\"indent\">Vanliga platser &auml;r i ansiktet och p&aring; b&aring;len. N&auml;r hemangiomet sitter helt eller delvis under huden kan det skymta som en r&ouml;dbl&aring; f&ouml;r&auml;ndring.</p>\n<p class=\"indent\">Smultronm&auml;rket ger inga speciella symtom. Om det sitter p&aring; ett olyckligt st&auml;lle kan det dock medf&ouml;ra stora problem. I n&auml;rheten av &ouml;gat kan det hindra synen, vilket kan leda till kvarst&aring;ende nedsatt syn eller t&nbsp;o&nbsp;m blindhet. Om hemangiomet &auml;r lokaliserat till munnens n&auml;rhet kan det f&ouml;rhindra barnets amningsf&ouml;rm&aring;ga och eventuellt st&ouml;ra barnets normala tillv&auml;xt. I underlivet kan ofta problem uppst&aring; med bl&ouml;dningar och sm&auml;rta n&auml;r barnet kissar eller bajsar.</p>\n<h4 id=\"c1_50\"><em>Behandling</em></h4>\n<p>Ett smultronm&auml;rke tillbakabildas alltid av sig sj&auml;lvt. Tillbakabildningen b&ouml;rjar som en ljusgr&aring; f&auml;rgf&ouml;r&auml;ndring i hemangiomets mitt. Det kan ta fr&aring;n ett par m&aring;nader till &aring;r innan det har f&ouml;rsvunnit. De flesta &auml;r borta f&ouml;re 3&ndash;4 &aring;rs &aring;lder och n&auml;stan alla f&ouml;re 7 &aring;rs &aring;lder. Man kan d&auml;refter ofta se en ljus fl&auml;ck p&aring; platsen d&auml;r m&auml;rket har suttit.</p>\n<p class=\"indent\">N&auml;r det sitter n&aring;gon annanstans &auml;n vid &ouml;gonen, munnen eller underlivet l&aring;ter man knutan tillbakabildas av sig sj&auml;lv. Om det sitter i n&aring;got av de k&auml;nsliga omr&aring;dena ska barnet bed&ouml;mas av en hudspecialist s&aring; fort som m&ouml;jligt. Lokalt behandlas dessa illasittande hemangiom med laser.</p>\n<p class=\"indent\">Stora, snabbt v&auml;xande f&ouml;r&auml;ndringar behandlas oftast med <a class=\"index\" id=\"1041299\" data-text=\"kortikosteroider:f&#xF6;delsem&#xE4;rken\"></a>glukokortikoider peroralt under en l&auml;ngre tid.</p>\n<h3 id=\"c1_51\"><a class=\"index\" id=\"1041304\" data-text=\"sorkbett\"></a>Storkbett</h3>\n<p>Storkbett &auml;r en mycket vanlig, medf&ouml;dd r&ouml;d hudf&ouml;r&auml;ndring i pannan och i nacken (engelska &rdquo;angel&rsquo;s kiss&rdquo;). Rodnaden orsakas av att det finns m&aring;nga mycket sm&aring;, tunna och ytliga blodk&auml;rl i huden. Ett storkbett f&ouml;rsvinner av sig sj&auml;lvt under det f&ouml;rsta levnads&aring;ret.</p>\n<h3 id=\"c1_52\"><a class=\"index\" id=\"1041314\" data-text=\"k&#xE4;rlmissbildning\"></a>K&auml;rlmissbildning/<a class=\"index\" id=\"1041309\" data-text=\"naevus flammeus\"></a>naevus flammeus</h3>\n<p>K&auml;rlmissbildningen finns vid f&ouml;delsen och kan sitta var som helst p&aring; kroppen. Den visar sig som en ljus- eller m&ouml;rkr&ouml;d fl&auml;ck i hudens plan och f&ouml;rekommer i m&aring;nga olika storlekar. Vid vissa f&ouml;r&auml;ndringar i ansiktet kan &auml;ven inv&auml;rtes k&auml;rlmissbildningar f&ouml;rekomma.</p>\n<p class=\"indent\">Hudf&ouml;r&auml;ndringarna vid naevus flammeus kvarst&aring;r hela livet och v&auml;xer i takt med barnet. Vid st&ouml;rre f&ouml;r&auml;ndringar eller om k&auml;rlmissbildningen sitter p&aring; synlig plats b&ouml;r bed&ouml;mning ske av hudl&auml;kare i tidig &aring;lder f&ouml;r st&auml;llningstagande till laserbehandling.</p>\n<h3 id=\"c1_53\"><a class=\"index\" id=\"1041319\" data-text=\"pigmenterade nevi;nevi, pigmenterade\"></a>Pigmenterade nevi</h3>\n<p>Svarta eller m&ouml;rkbruna nevi tillbakabildas inte utan finns kvar under resten av livet. Risken f&ouml;r malignisering f&ouml;re puberteten &auml;r ytterst liten. Nevi p&aring; fotsulor, handflator och p&aring; hudst&auml;llen som uts&auml;tts f&ouml;r skavning beh&ouml;ver i motsats till vad man tidigare rekommenderat inte l&auml;ngre tas bort. Det &auml;r dock viktigt att barnet undviker att exponeras f&ouml;r alltf&ouml;r starkt solljus. F&ouml;r&auml;ldrar b&ouml;r instrueras om hur malignisering av pigmenterade nevi kan se ut: snabb tillv&auml;xt, f&auml;rgv&auml;xling, asymmetri och oklara gr&auml;nser. S&aring;dana pigmentnevi b&ouml;r opereras bort liksom de som v&auml;xer hastigt eller ger st&auml;ndiga krustor eller ulcerationer.</p>\n<h2 id=\"c1_54\">&Ouml;gonproblem</h2>\n<p>Se &auml;ven kapitlet &Ouml;gonsjukdomar <a href=\"/kapitel/ogon/ogonsjukdomar.html#44686\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.</p>\n<h3 id=\"c1_55\">Akut <a class=\"index\" id=\"1041324\" data-text=\"konjunktivit:akut\"></a>konjunktivit</h3>\n<p>Akut konjunktivit &auml;r oftast en del i en virusutl&ouml;st &ouml;vre luftv&auml;gsinfektion och behandlas genom att torka bort sekret fr&aring;n &ouml;gonlockskanterna med en bomullstuss indr&auml;nkt i ljummet vatten upprepade g&aring;nger dagligen. Torkningen ska ske inifr&aring;n och ut! Om den variga sekretproduktionen inte avtagit efter en vecka finns risk f&ouml;r att infektionen &auml;r bakteriell. Behandling b&ouml;r d&aring; ske med <span>antibiotikasalva</span> lokalt (fusidinsyra, kloramfenikol).</p>\n<p class=\"indent\">Vid st&auml;ndigt t&aring;rfl&ouml;de och ensidiga eller upprepade variga konjunktiviter kan barnet ha t&aring;rv&auml;gsstenos. F&ouml;r&auml;ldrarna ges r&aring;det att massera &ouml;ver t&aring;rs&auml;cksomr&aring;det och h&aring;lla &ouml;gonen rena. Tillst&aring;ndet g&aring;r ofta &ouml;ver spontant. Om besv&auml;ren kvarst&aring;r efter 1 &aring;rs &aring;lder b&ouml;r barnet bed&ouml;mas av &ouml;gonl&auml;kare.</p>\n<p class=\"indent\">Konjunktivit hos nyf&ouml;dda &auml;r ofta av mer allvarlig art. Gonokocker kan ge en allvarlig infektion i &ouml;gat och debuterar ofta under de f&ouml;rsta levnadsdygnen. Konjunktivit orsakad av klamydia ger ofta symtom vid 1&ndash;2 veckors &aring;lder, aldrig f&ouml;re 5 dagars &aring;lder. Vid misstanke om konjunktivit orsakad av dessa bakterier ska kontakt tas med &ouml;gonklinik.</p>\n<h2 id=\"c1_56\"><a class=\"index\" id=\"1041339\" data-text=\"missbildningar\"></a>Missbildningar/ f&ouml;r&auml;ndringar inom yttre genitalia</h2>\n<p>F&ouml;r indikation och tidpunkt f&ouml;r remiss av olika testikelabnormiteter till kirurgisk klinik, se Tabell 1 <a href=\"#37877\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "118f1d50-7789-4a99-9586-df7866c9ba38",
+			"name": "118f1d50-7789-4a99-9586-df7866c9ba38",
+			"type": "tablewide",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"37877\"></a>Indikation och tidpunkt för remiss av olika testikelabnormiteter till kirurgisk klinik",
+				"id": "c1_57",
+				"text": "<table><tbody><tr><td><div class=\"tableLine\"><strong>Fynd</strong></div></td><td><div class=\"tableLine\"><strong>Ålder vid remiss</strong></div></td></tr><tr><td><div class=\"tableLine\">Testiklar saknas helt på båda sidor</div></td><td><div class=\"tableLine\">Neonatalt eller vid senare fynd</div></td></tr><tr><td><div class=\"tableLine\">Testiklar kan inte fås ned ur ljumsken + ovanligt liten penis eller annan </div><div class=\"tableLine\">avvikelse</div></td><td><div class=\"tableLine\">Neonatalt eller vid senare fynd</div></td></tr><tr><td><div class=\"tableLine\">Testikel kan inte fås ned i pungens botten eller fjädrar snabbt upp igen</div></td><td><div class=\"tableLine\">Vid 5–6 månader eller&nbsp;vid senare fynd</div></td></tr><tr><td><div class=\"tableLine\">Osäkert fynd vid upprepade kontroller</div></td><td><div class=\"tableLine\">Vid 5–6 månader eller&nbsp;vid senare fynd</div></td></tr></tbody></table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7c16793a-97c9-4783-a40b-d95c32519d34",
+			"name": "7c16793a-97c9-4783-a40b-d95c32519d34",
+			"type": "text",
+			"content": "<span> </span><h3 id=\"c1_58\"><a class=\"index\" id=\"1041345\" data-text=\"fimosis\"></a>Fimosis</h3><p>Trång förhud hos pojkar är vanligt men om pojken inte har besvär kan man avvakta med åtgärd tills början av tonåren. Förhuden kan då vara som ett stramt band runt förhudsöppningen. Man ser bara en nåltunn öppning. När pojken kissar blåser förhuden upp sig som en ballong.</p><p class=\"indent\">Om pojken har upprepade <a class=\"index\" id=\"1049093\" data-text=\"balanit\"></a>balaniter, besvär vid miktion, inte kan kissa med god stråle eller har recidiverande urinvägsinfektioner, bör ställningstagande ske till behandling. I första hand kan man hos barn &gt;&nbsp;3 år försöka att lösa den bandformiga förträngningen med lokalbehandling. Man smörjer då pojkens förhud med <a class=\"index\" id=\"1049095\" data-text=\"klobetasol:fimosis\"></a>klobetasol (Dermovat kräm) i minst 4 veckor. Om detta inte hjälper bör pojken remitteras till kirurg för operation, s&nbsp;k förhudsplastik. </p><h3 id=\"c1_59\"><a class=\"index\" id=\"1041390\" data-text=\"synekier\"></a>Synekier mellan preputium och glans penis</h3><p>Det är vanligt att det under uppväxten uppstår sammanväxningar mellan pojkens ollon och förhud. Detta är att betrakta som ett normaltillstånd och behöver inte behandlas. Vid enstaka tillfällen, som vid upprepade balaniter, kan denna sammanväxning behöva åtgärdas genom lösning i narkos. </p><h3 id=\"c1_60\"><a class=\"index\" id=\"1041395\" data-text=\"balanit\"></a>Balanit</h3><p>Balanit är en infektion under förhuden med rodnad, svullnad av penisspetsen, ibland hela penis. Oftast trång förhud som utlösande orsak. Ingen feber eller allmänpåverkan och antibiotikabehandling eller odling krävs normalt inte.</p><p class=\"indent\">Balanit behandlas med koksaltspolning, kan göras smidigt via en venflon som man dragit ut nålen ur alternativt plastspruta, 5&nbsp;ml, där spetsen förs in i öppningen och man spolar rent. Man kan sedan följa upp med sittbad i ljummet vatten i hemmet.</p><p class=\"indent\">Efter flera balaniter bör behandling/operation av eventuell fimosis övervägas.</p><h3 id=\"c1_61\">Retentio testis</h3><p>Vid födelsen har ca 5&#37; av pojkarna <a class=\"index\" id=\"1048471\" data-text=\"retentio testis\"></a>retentio testis. Vid ett halvt års ålder endast 1–2&#37;. Pojkar med retentio testis vid 5–6 månaders ålder ska remitteras till kirurg och opereras före 12 månaders ålder. Om man upptäcker retentio hos ett äldre barn remitteras det genast för operation.</p><h3 id=\"c1_62\"><a class=\"index\" id=\"1041405\" data-text=\"vulvasynekier\"></a>Vulvasynekier</h3><p>Vulvasynekier (sammanväxningar mellan labia majora) är normalt hos flickor i förskoleåldern och löses oftast spontant vid 7–8 års ålder. Oftast behövs ingen behandling. </p><p class=\"indent\">Vid lokal irritation eller recidiverande urinvägsinfektioner kan behandling ske med östrogensalva som smörjs 1 gång/dag med en tops eller ett finger över synekien. Det lilla tryck som då uppstår mot den tunna synekien bidrar till att den släpper efter någon eller några veckor. Behandlingen ska fortsätta dagligen ytterligare någon vecka och därefter 1 gång/vecka ytterligare 3 veckor. Biverkning av denna behandling, som ibland kan ses, är något svullna labia. Regress av svullnaden sker när behandlingen avslutats. När synekierna lösts är det viktigt att smörja blygdläpparnas insida med mjuk kräm eller olja för att förhindra ny sammanväxning. </p><h2 id=\"c1_63\">Ortopediska problem</h2><p>På BVC ingår också att titta på barnens fötter, ben och ryggar. Remiss till ortoped/ bandagemästare var tidigare vanliga åtgärder, men behövs numera alltmer sällan då man vet att det mesta ”rättar till sig”. Bra tips angående denna problematik finns i rikshandboken med länkar till specifika problem (<a href=\"www.rikshandboken-bhv.se\" target=\"_blank\" class=\"linkOut\">www.rikshandboken-bhv.se</a> ).</p><h2 class=\"referenceHeader\" id=\"c1_64\">Referenser</h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "027dcddb-019c-43fe-9788-09d46c032d2d",
+			"name": "027dcddb-019c-43fe-9788-09d46c032d2d",
+			"type": "references",
+			"content": "<ol class=\"references\"><li id=\"reference_1\"> Behandling av atopiskt eksem – Behandlingsrekommendation. Information från Läkemedelsverket. 2005:(16)2. <a href=\"http://www.lakemedelsverket.se/upload/halso-och-sjukvard/behandlingsrekommendationer/atopiskteksem.pdf\" target=\"_blank\" class=\"linkOut\">www.lakemedelsverket.se</a> </li>\n<li id=\"reference_2\">Farmakologisk behandling av bakteriella hud-  och mjukdelsinfektioner – ny rekommendation. Information från Läkemedelsverket 5:2009. <a href=\"http://www.lakemedelsverket.se/upload/halso-och-sjukvard/behandlingsrekommendationer/Rek%20-%20farmakologisk%20beh%20av%20bakteriella%20hud-%20och%20mjukdelsinfektioner.pdf\" target=\"_blank\" class=\"linkOut\">www.lakemedelsverket.se</a> </li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ed14c6dd-d7b7-4614-a5e0-3bf379a4618f",
+			"name": "ed14c6dd-d7b7-4614-a5e0-3bf379a4618f",
+			"type": "text",
+			"content": "<h5 id=\"c1_65\">För vidare läsning:</h5>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ce2fae14-e573-4a66-9b0b-79aaf3d72f7c",
+			"name": "ce2fae14-e573-4a66-9b0b-79aaf3d72f7c",
+			"type": "references",
+			"content": "<ol class=\"references\"><li id=\"reference_1\">Barnhälsovårdens ”Rikshandboken”.<br><a href=\"http://www.rikshandboken-bhv.se/\" target=\"_blank\" class=\"linkOut\">www.rikshandboken-bhv.se</a> </li>\n<li id=\"reference_2\">Svenska barnläkarföreningens webbplats. <a href=\"http://www.blf.net/\" target=\"_blank\" class=\"linkOut\"><a href=\"http://www.blf.net\" target=\"_blank\" class=\"linkOut\">www.blf.net</a> </a></li>\n<li id=\"reference_3\">Hudproblem. <a href=\"http://www.dermis.net/dermisroot/en/home/index.htm\" target=\"_blank\" class=\"linkOut\">www.dermis.net</a> </li>\n<li id=\"reference_4\">Norgren S, Ludvigsson JF, Norman M, red. <br>Akut pediatrik. Stockholm: Liber AB; 2010. <br>ISBN 9789147094028</li>\n<li id=\"reference_5\">Livsmedelsverket. <a href=\"www.slv.se\" target=\"_blank\" class=\"linkOut\">www.slv.se</a> </li>\n<li id=\"reference_6\">Moëll C, Gustafsson J. Pediatrik, bok med eLabb. 1:a uppl. Liber; 2011. ISBN 9789147103454.</li>\n<li id=\"reference_7\">Hanséus K, Lagercrantz H, Lindberg T, red. <br>Barnmedicin. 4:e uppl. Studentlitteratur AB; 2012. ISBN 9144076096.</li>\n<li id=\"reference_8\">Pediatrik, bok med eLabb. Moëll C, Gustafsson J, red. Bok+IT-stöd. Liber AB. 2011. <br>ISBN 9789147103454.</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/pediatrik/vanliga_problem_under_smabarnsaren.json",
+	"modified": "2016-09-02 14:00",
+	"isPublished": true,
+	"indexed": "true"
+}
