@@ -10,6 +10,9 @@ var spawn = require("child_process").spawn;
 var dateFormat = require("dateformat");
 var cheerio = require("cheerio");
 var updatedPages = require('../helpers/updatedPages');
+var wrench = require("wrench");
+var urlObject = require("url");
+var request = require("request");
 
 router.get("/createpage", function(req, res) {
 
