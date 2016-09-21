@@ -1,0 +1,196 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Hypertoni",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2016-02-22 12:17",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Kristina Bengtsson Boström, Karin Manhem",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "4abddc20-0d7a-4f9c-a43a-00fb5f4cb3e2",
+			"name": "be607a44-1196-4d28-a439-66008abd48e1",
+			"type": "text",
+			"content": "<h1 id=\"Hypertoni\">Hypertoni</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5f95a961-c151-4a3d-bd34-1ef5826c2a9f",
+			"name": "496fc955-8e0a-496a-bb1b-feb5f627f73a",
+			"type": "author",
+			"content": {
+				"firstname": "Kristina",
+				"surname": "Bengtsson Boström",
+				"description": "Närhälsan Billingen Vårdcentral, FoU centrum Skaraborg, Skövde",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "93e88d77-b365-4eb5-8a12-f3c816250e71",
+			"name": "93e88d77-b365-4eb5-8a12-f3c816250e71",
+			"type": "author",
+			"content": {
+				"firstname": "Karin",
+				"surname": "Manhem",
+				"description": "Avdelningen för molekylär och klinisk medicin, Sahlgrenska Universitetssjukhuset, Göteborg",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a1bcae09-8bb6-41a6-8026-b1c5da686033",
+			"name": "0a910d97-6736-469c-9051-98de96690f60",
+			"type": "text",
+			"content": "<p class=\"ingress\">Inledning</p>\n<p>H&ouml;gt blodtryck (hypertoni) &auml;r ett vanligt tillst&aring;nd, i Sverige ber&auml;knas cirka 2 miljoner ha h&ouml;gt blodtryck. F&ouml;rekomsten &ouml;kar med &aring;ldern. Hypertoni &auml;r den enskilt st&ouml;rsta och behandlingsbara riskfaktorn f&ouml;r hj&auml;rtk&auml;rlkomplikationer. Komplikationerna &auml;r framf&ouml;rallt stroke, men &auml;ven hj&auml;rtsvikt, kransk&auml;rls- och njursjukdom. F&ouml;r&auml;ndring av livsstil &auml;r grunden i behandlingen, men flertalet individer beh&ouml;ver ocks&aring; l&auml;kemedel. L&auml;kemedelsbehandlingen &auml;r numera billig, men nya l&auml;kemedel har inte tillkommit p&aring; senare tid varf&ouml;r behandlingsarsenalen med &auml;ldre l&auml;kemedel lyfts fram.</p>\n<p class=\"indent\">Nya, liksom &auml;ldre studier har visat att endast runt 50&nbsp;% av patienterna med behandlad hypertoni n&aring;r m&aring;lv&auml;rdet f&ouml;r blodtryck efter behandling. En orsak kan vara att hypertoni vanligen inte ger mycket symtom medan behandlingen kan ge biverkningar vilket f&ouml;rsv&aring;rar omh&auml;ndertagandet och utg&ouml;r en utmaning f&ouml;r v&aring;rden.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "33f86f60-3d27-41a5-acf2-db3816d2b2cb",
+			"name": "33f86f60-3d27-41a5-acf2-db3816d2b2cb",
+			"type": "text",
+			"content": "<h1 id=\"Forekomst-av-hypertoni\"><strong>F&ouml;rekomst av hypertoni</strong></h1>\n<p><strong></strong>F&ouml;rekomsten av hypertoni (systoliskt blodtryck &ge;&nbsp;140 mm&nbsp;Hg och/eller diastoliskt blodtryck &ge;&nbsp;90 mm&nbsp;Hg) i Sverige ber&auml;knas till cirka 27&nbsp;%, och f&ouml;rdelningen &auml;r lika f&ouml;r m&auml;n och kvinnor samt stiger brant med &aring;ldern (SBU). Vid 65 &aring;r har mer &auml;n 50 % av befolkningen hypertoni. Hos bara cirka h&auml;lften &auml;r tillst&aring;ndet uppt&auml;ckt. Det &auml;r sv&aring;rt att uppskatta om frekvensen hypertoni &ouml;kar eller minskar. Andelen &auml;ldre &ouml;kar vilket skulle ge en &ouml;kning, men data &ouml;ver d&ouml;dlighet i stroke, som &auml;r den vanligaste komplikationen till hypertoni, visar en minskande trend under senare &aring;rtionden i Sverige (1,2). Hypertoni indelas i mild (Grad I) som finns hos 60&nbsp;%, m&aring;ttlig (Grad II) hos 30&nbsp;% och sv&aring;r (Grad III) hos 10&nbsp;% av patienterna, Tabell 1. Om endast det systoliska blodtrycket &auml;r f&ouml;rh&ouml;jt, vilket &auml;r vanligt hos &auml;ldre, kallas det f&ouml;r isolerad systolisk hypertoni.</p>\n<p class=\"indent\">Hypertoni f&ouml;rekommer s&auml;llan isolerat. Diabetes, blodfettst&ouml;rning och fetma (speciellt bukfetma med metabola rubbningar) &auml;r ofta associerade med hypertoni. H&ouml;gt blodtryck ger ocks&aring; organskada. Allt detta &ouml;kar risken f&ouml;r komplikationer och g&ouml;r att en kartl&auml;ggning av patientens hela riskprofil &auml;r n&ouml;dv&auml;ndig inf&ouml;r behandling.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ad72876f-1678-48d5-bb65-97d1b93589ef",
+			"name": "ad72876f-1678-48d5-bb65-97d1b93589ef",
+			"type": "text",
+			"content": "<h1 id=\"Etiologi-och-patogenes\"><strong>Etiologi och patogenes</strong></h1>\n<p><strong></strong>Hypertoni i tidiga stadier, hos unga, k&auml;nnetecknas av framf&ouml;r allt h&ouml;ga diastoliska blodtryck vilket &auml;r ett resultat av funktionella k&auml;rlf&ouml;r&auml;ndringar i art&auml;rv&auml;ggen (3). En kompensatorisk k&auml;rlhypertrofi kan efterhand ta &ouml;ver den tryckf&ouml;rst&auml;rkande rollen och &auml;ldre personer har oftast en &ouml;verv&auml;gande systolisk hypertoni som ett kvitto p&aring; den k&auml;rlstelhet som oftast utvecklas med &aring;ldern (4). Denna k&auml;rlstelhet &auml;r ett resultat av flera olika orsaker s&aring;som &aring;lder, f&ouml;rh&ouml;jda blodfetter, r&ouml;kning, f&ouml;rekomst av diabetes/insulinresistens samt den tidiga &ouml;verv&auml;gande diastoliska blodtrycksf&ouml;rh&ouml;jningen. &Aring;derf&ouml;rkalkning leder till en minskad eftergivlighet i de st&ouml;rre k&auml;rlen som normalt d&auml;mpar pulsv&aring;gens amplitud d&aring; hj&auml;rtat skickar ut blodet i aorta under systole. I ett friskt och elastiskt k&auml;rlsystem kommer de eftergivliga stora k&auml;rlen att b&aring;de d&auml;mpa pulsv&aring;gen och dessutom fj&auml;dra tillbaka under diastole. Stela och &aring;derf&ouml;rkalkade blodk&auml;rl medf&ouml;r d&auml;remot en snabbare pulsv&aring;gsreflexion som d&auml;rmed hinner m&ouml;ta den fr&aring;n hj&auml;rtat utg&aring;ende pulsv&aring;gen redan under systole. Detta medf&ouml;r &ouml;kat systoliskt och minskat diastoliskt blodtryck. En stor differens mellan systoliskt och diastoliskt blodtryck, h&ouml;gt pulstryck, &auml;r s&aring;ledes ett uttryck f&ouml;r stela k&auml;rl, och detta &ouml;kar risken f&ouml;r kardiovaskul&auml;r sjukdom hos &auml;ldre (5). M&aring;nga hormonsystem &auml;r involverade i blodtrycksregleringen och det kan vara relevant att s&auml;rskilt lyfta fram betydelsen av aldosteron, katekolaminer och kortisol f&ouml;r utvecklingen och uppr&auml;tth&aring;llandet av hypertoni. F&ouml;r den enskilda individen kan s&aring;ledes flera patofysiologiska v&auml;gar ha olika betydelse, vilket delvis kan f&ouml;rklara att olika individer svarar olika bra p&aring; en specifik antihypertensiv behandling.</p>\n<p class=\"indent\">Etiologin till det som kallas prim&auml;r/essentiell hypertoni &auml;r s&aring;ledes inte oklar, men multifaktoriell. N&auml;r hypertoni kan f&ouml;rklaras av en enstaka utl&ouml;sande orsak med en tydlig etiologi brukar det beskrivas som sekund&auml;r hypertoni.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a169b60e-b83a-404b-a95e-c2fee1467308",
+			"name": "a169b60e-b83a-404b-a95e-c2fee1467308",
+			"type": "text",
+			"content": "<h1 id=\"Symtom\"><strong>Symtom</strong></h1>\n<p>Hypertoni &auml;r i allm&auml;nhet ett symtoml&ouml;st tillst&aring;nd. Det kan vara en f&ouml;rklaring till att det till stor del &auml;r ouppt&auml;ckt men g&ouml;r ocks&aring; att behandlingen kan kr&auml;va t&aring;lamod och pedagogisk f&ouml;rm&aring;ga hos v&aring;rdpersonalen. De symtom som vanligen &auml;r f&ouml;rknippade med m&aring;ttligt f&ouml;rh&ouml;jt blodtryck &auml;r diffusa s&aring;som tr&ouml;tthet och huvudv&auml;rk som kan finnas vid m&aring;nga andra tillst&aring;nd. F&ouml;rst efter insatt behandling kan patienten uppleva en f&ouml;rb&auml;ttring (6).</p>\n<p></p>\n<h2 id=\"Hypertensiv-kris-och-malign-hypertoni\">Hypertensiv kris och malign hypertoni</h2>\n<p>Hypertensiv kris och malign hypertoni &auml;r oftast ett resultat av f&ouml;rs&auml;mrad essentiell hypertoni, men sekund&auml;r hypertoni b&ouml;r uteslutas. Symtomen vid denna typ av blodtrycksf&ouml;rh&ouml;jning &auml;r huvudv&auml;rk, synp&aring;verkan, yrsel och andf&aring;ddhet. Tillst&aring;nden &auml;r s&auml;llsynta, men viktiga att uppt&auml;cka d&aring; akut behandling b&ouml;r ske inneliggande p&aring; sjukhus, se Faktaruta 1 och Terapirekommendation. Det &auml;r viktigt att inte s&auml;nka blodtrycket alltf&ouml;r drastiskt/snabbt, f&ouml;r att undvika cerebrala komplikationer, och man b&ouml;r efterstr&auml;va normalisering av blodtrycket efter dagar eller veckor.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "69a4634c-bdc7-4280-8924-9482aadbc1e5",
+			"name": "69a4634c-bdc7-4280-8924-9482aadbc1e5",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "Hypertensiv kris - malign hypertoni",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><strong>Symtom</strong></p>\r\n<p><strong></strong></p>\r\n<p>Huvudv&auml;rk, yrsel, illam&aring;ende, andn&ouml;d, medvetanderubbning, synst&ouml;rning</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Kliniska fynd</strong></p>\r\n<ul>\r\n<li>&Ouml;gonbottenf&ouml;r&auml;ndringar obligat vid malign hypertoni, bl&ouml;dningar och/eller papill&ouml;dem (fundus hypertonikus 3, 4) </li>\r\n<li>Blodtryck vanligen mycket h&ouml;gt &gt;240/&gt;120 mm Hg</li>\r\n<li>V&auml;nsterkammarhypertrofi p&aring; EKG, hj&auml;rtsvikt/lung&ouml;dem</li>\r\n<li>Proteinuri, kreatininf&ouml;rh&ouml;jning</li>\r\n<li>L&aring;gt p-kalium (prim&auml;r eller sekund&auml;r hyperaldosteronism)</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Differentialdiagnoser</strong></p>\r\n<ul>\r\n<li>Blodtrycksf&ouml;rh&ouml;jning vid akut stroke (bilddiagnostik av hj&auml;rnan)</li>\r\n<li>Intoxikation eller abstinens</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Behandling<br /><br /></strong></p>\r\n<p>Inneliggande p&aring; sjukhus, se Tabell xx</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4d97542c-149c-4973-afbd-c4df8297f7f8",
+			"name": "9a1c0d14-b4e0-403b-936b-f433fa41f0ea",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2>\n<ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/-nya-kapitel-ej-publ/E5-Hypertoni-nytt.json",
+	"indexed": "true",
+	"modified": "2016-02-22 15:23"
+}

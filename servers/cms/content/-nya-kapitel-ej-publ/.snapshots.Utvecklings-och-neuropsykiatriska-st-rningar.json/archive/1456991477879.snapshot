@@ -1,0 +1,101 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Utvecklings- och neuropsykiatriska störningar",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2016-03-03 07:48",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Förnamn Efternamn",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "ee93a667-034c-4ca9-9c69-2991cd03b109",
+			"name": "38132264-9ecf-4326-806b-80398a16f223",
+			"type": "text",
+			"content": "<h1 id=\"Utvecklings-och-neuropsykiatriska-storningar\">Utvecklings- och neuropsykiatriska st&ouml;rningar</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7485b429-f240-4d0d-8ff2-54e708f829a3",
+			"name": "ef1b2f1b-d2c4-444b-a396-3287ede3f78e",
+			"type": "author",
+			"content": {
+				"firstname": "Förnamn",
+				"surname": "Efternamn",
+				"description": "Arbetsplats",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9bc2c4a2-d09e-4312-930a-b0f10146aaae",
+			"name": "ef59dd97-4da3-49df-92c2-b7d15565df02",
+			"type": "text",
+			"content": "<p class=\"ingress\">Ingresstext</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fde34534-b5bf-42bc-8ca8-5be7c6088278",
+			"name": "927c40b7-2bec-4e25-88ba-8750485cda1d",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2><ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/-nya-kapitel-ej-publ/Utvecklings-och-neuropsykiatriska-st-rningar.json",
+	"indexed": "true",
+	"modified": "2016-03-03 07:51"
+}

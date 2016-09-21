@@ -1,0 +1,340 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Skattning av njurfunktion",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-11-17 15:55",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Carl-Gustaf Elinder",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "a2f06d57-504b-478c-a5c1-c0b1a5635c27",
+			"name": "d9563214-4f10-4a94-96a2-d9eb32fc9711",
+			"type": "text",
+			"content": "<h1 id=\"Skattning-av-njurfunktion\">Skattning av njurfunktion</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "da23fe3f-384f-44a7-85ee-b730abe29567",
+			"name": "4fc971bc-a504-4235-b5e4-d1ef565c0b18",
+			"type": "author",
+			"content": {
+				"firstname": "Carl-Gustaf",
+				"surname": "Elinder",
+				"description": "Hälso- och sjukvårdsförvaltningen, Stockholms läns landsting",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "49c29d63-9143-437e-81ec-5601b02d3fe2",
+			"name": "696977c0-e065-48b2-a3bb-e7ca0244872a",
+			"type": "text",
+			"content": "<p class=\"ingress\">Statens beredning f&ouml;r medicinsk och social utv&auml;rdering (SBU) redovisade 2013 en omfattande systematisk litteratur&ouml;versikt och rapport, Skattning av njurfunktion (SBU-rapport 214) (1). I denna granskades och v&auml;rderades noga olika metoder att m&auml;ta och skatta njurfunktionen, de senare genom att analysera plasmakreatinin och eller cystatin-C och estimering av den glomerul&auml;ra funktionen (eGFR) med formler.</p>\n<p class=\"ingress\">&nbsp;</p>\n<p class=\"ingress\">Av de &ouml;vergripande slutsatserna fr&aring;n SBU rapporten framgick att:</p>\n<ul>\n<li>\n<p class=\"ingress\">Njurfunktionen (GFR) kan i allm&auml;nhet skattas med tillr&auml;cklig och likv&auml;rdig noggrannhet med formler baserade p&aring; plasmakoncentrationen av kreatinin eller cystatin C. Detta under f&ouml;ruts&auml;ttning att validerade och kvalitetss&auml;krade analysmetoder och formler f&ouml;r ber&auml;kning anv&auml;nds.</p>\n</li>\n<li>\n<p class=\"ingress\">Cystatin C ger i allm&auml;nhet god noggrannhet, medan kreatininbaserade formler m&aring;ste inneh&aring;lla vissa demografiska uppgifter (t ex &aring;lder och k&ouml;n) och ibland antropometriska m&aring;tt (vikt och l&auml;ngd) f&ouml;r att ge likv&auml;rdig noggrannhet.</p>\n</li>\n<li>\n<p class=\"ingress\">Medelv&auml;rdet av skattat GFR utifr&aring;n kreatinin respektive cystatin C ger &ouml;verlag h&ouml;gre noggrannhet j&auml;mf&ouml;rt med formler som endast utnyttjar en av mark&ouml;rerna. Detta g&auml;ller i synnerhet vuxna patienter med l&aring;gt GFR (&lt;&nbsp;30&frasl;ml/min/1,73 m<sup>2</sup>) och barn.</p>\n</li>\n</ul>\n<p class=\"ingress\">Den tidigare ofta anv&auml;nda Cockcroft-Gaults kreatininbaserade formel f&ouml;r att skatta GFR ger avsev&auml;rt s&auml;mre noggrannhet och b&ouml;r utm&ouml;nstras. Likas&aring; endogent kreatininclearance.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3cec556a-c2af-4a25-94b9-effba0b26aeb",
+			"name": "3cec556a-c2af-4a25-94b9-effba0b26aeb",
+			"type": "text",
+			"content": "<h2 id=\"Inledning\">Inledning</h2>\n<p>Det &auml;r viktigt att b&aring;de uppskatta och skatta njurfunktionen. Njurarna har en livsviktig roll genom att styra och anpassa v&aring;r inre milj&ouml;. <span style=\"color: #ff0000;\">De reglerar syra&ndash;bas-, v&auml;tske- och saltbalans. Genom njurarnaelimineras slaggprodukter,&nbsp; fr&auml;mmande substanser fr&aring;n f&ouml;dan, toxiska substanser och i olika grad de flesta l&auml;kemedel.</span> Njurarna p&aring;verkar ocks&aring; bildning av r&ouml;da blodkroppar, mineraloms&auml;ttning och blodtryck samt har dessutom flera andra endokrina funktioner. Utan njurfunktion avlider en m&auml;nniska inom n&aring;gra dagar till en vecka till f&ouml;ljd av ansamling av v&auml;tska, slaggprodukter och rubbad elektrolytbalans.</p>\n<p>&nbsp;</p>\n<p>Den glomerul&auml;ra filtrationshastigheten (GFR) &auml;r den viktigaste funktionsvariabeln som m&auml;ts i ml/min (absolut GFR) eller normeras till en kroppsyta p&aring; 1,73 m<sup>2</sup>. Hos en ung frisk vuxen ligger GFR p&aring; 100&ndash;130 ml/min/1,73 m<sup>2</sup>. GFR sjunker med stigande &aring;lder. Fr&aring;n 40&ndash;50 &aring;rs &aring;lder sjunker GFR med cirka 10 ml/min/1,73 m<sup>2 </sup>per 10-&aring;rsperiod. Figur 1 presenterar medelv&auml;rdet f&ouml;r njurfunktionen (GFR) och prevalensen av s&auml;nkt njurfunktion (GFR&nbsp;&lt;&nbsp;60 ml/min och 1,73&nbsp;m<sup>2</sup>) i olika &aring;ldersklasser.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f8cf8811-9f44-4038-b458-9fb530c56be4",
+			"name": "f8cf8811-9f44-4038-b458-9fb530c56be4",
+			"type": "figure",
+			"content": {
+				"number": "1",
+				"maxwidth": "",
+				"image": "/images/fig1_gfr__lder.png",
+				"title": "Medelvärde för njurfunktion (GFR) och prevalens av sänkt njurfunktion i olika åldersklasser",
+				"text": "<p>S&auml;nkt njurfunktion: GFR&nbsp;&lt;&nbsp;60 ml/min och 1,73&nbsp;m<sup>2</sup></p>",
+				"alt": "",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3d6244a3-e634-4d8e-9908-dde1d1e553c4",
+			"name": "3d6244a3-e634-4d8e-9908-dde1d1e553c4",
+			"type": "text",
+			"content": "<p>Ett system for att klassificera graden av njurfunktionsneds&auml;ttning och njurskada har tagits fram i USA (classification of chronic kidney disease, CKD) (2), och det anv&auml;nds allt mer (Tabell 1)</p>\n<p>&nbsp;</p>\n<p>De vanligaste orsakerna till att njurfunktionen f&ouml;rs&auml;mras &auml;r, f&ouml;rutom &aring;lder, generell arterioskleros, diabetes och kronisk njurinflammation. S&auml;nkt GFR &ouml;kar risken for komplikationer, t ex i samband med operationer, l&auml;kemedelsbehandling och efter injektioner med kontrastmedel. Nedsatt njurfunktion utg&ouml;r ocks&aring; en allvarlig risk for utveckling och f&ouml;rs&auml;mring av hj&auml;rt- och k&auml;rlsjukdom.</p>\n<p>&nbsp;</p>\n<p>Det &auml;r viktigt att s&aring; noggrant som m&ouml;jligt kunna bed&ouml;ma njurfunktionen med enkel provtagning. Kravet p&aring; noggrannhet i skattningen av GFR varierar. Hos patienter i</p>\n<p>&ouml;ppenv&aring;rd med sannolikt normal eller n&auml;stan normal njurfunktion kr&auml;vs i regel bara en relativt grov, &rdquo;rimligt noggrann&rdquo; skattning. Hos en patient med misst&auml;nkt eller k&auml;nd njursvikt kan d&auml;remot en noggrann matning av GFR vara angel&auml;gen. Samma sak g&auml;ller f&ouml;rstas om exempelvis njurdonation &ouml;verv&auml;gs, d&aring; man m&aring;ste vara &ouml;vertygad om att en kvarvarande njure ger fullt tillr&auml;cklig funktion for donatorn. Vid dosering av l&auml;kemedel och kontrastmedel som uts&ouml;ndras via njurarna &auml;r en noggrann skattning av GFR v&auml;rdefull, i synnerhet om det g&auml;ller l&auml;kemedel som har en begr&auml;nsad terapeutisk bredd. I andra situationer kan det handla om att f&ouml;lja en patients njurfunktion &ouml;ver tid. D&aring; kanske inte ett noga v&auml;rde p&aring; skattningen av GFR &auml;r viktigast utan m&ouml;jligheten att uppt&auml;cka f&ouml;r&auml;ndringar i njurfunktionen &ouml;ver tid. Vid kraftigt s&auml;nkt GFR, &lt;&nbsp;15 ml/min/1,73 m<sup>2</sup>, uppst&aring;r urinf&ouml;rgiftning (uremi), och behandling med dialys eller njurtransplantation kan beh&ouml;vas f&ouml;r att den drabbade ska &ouml;verleva. Andra viktiga tecken p&aring; njurskada som b&ouml;r kontrolleras i klinisk praxis &auml;r f&ouml;rekomst av hematuri och/eller albuminuri. Riskerna f&ouml;r framtida komplikationer fr&aring;n njurarna eller andra sjukdomar &ouml;kar kraftigt om patienten har s&aring;v&auml;l nedsatt njurfunktion som albuminuri, och v&auml;rre desto mer.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "62bd66ea-a691-4b9a-a68e-1b36a45a7b71",
+			"name": "62bd66ea-a691-4b9a-a68e-1b36a45a7b71",
+			"type": "tablenarrow",
+			"content": {
+				"number": "1",
+				"title": "Stadier av kronisk njursjukdom (chronic kidney disease, CKD)",
+				"id": "",
+				"text": "<table class=\"table table-bordered\">\r\n<tbody>\r\n<tr>\r\n<td>Stadium</td>\r\n<td>Beskrivning</td>\r\n<td>\r\n<p>GFR</p>\r\n<p>(ml/min/1,73 m<sup>2</sup>)</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>1</td>\r\n<td>Njurskada med normal njurfunktion</td>\r\n<td>&gt; 90</td>\r\n</tr>\r\n<tr>\r\n<td>2</td>\r\n<td>Njurskada med l&auml;tt nedsatt njurfunktion</td>\r\n<td>60&ndash;89</td>\r\n</tr>\r\n<tr>\r\n<td>3</td>\r\n<td>M&aring;ttligt nedsatt njurfunktion</td>\r\n<td>30&ndash;59</td>\r\n</tr>\r\n<tr>\r\n<td>4</td>\r\n<td>Kraftigt nedsatt njurfunktion</td>\r\n<td>15&ndash;29</td>\r\n</tr>\r\n<tr>\r\n<td>5</td>\r\n<td>Terminal njursvikt</td>\r\n<td>&lt; 15</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "95361722-acbf-44c6-8a02-5a7fd8a60804",
+			"name": "95361722-acbf-44c6-8a02-5a7fd8a60804",
+			"type": "text",
+			"content": "<h2 id=\"Att-mata-GFR\">Att m&auml;ta GFR</h2>\n<p>FR kan inte m&auml;tas direkt i njuren, eftersom filtrationen p&aring;gar samtidigt</p>\n<p>i miljontals glomeruli, och prim&auml;rurinen f&ouml;r&auml;ndras b&aring;de till volym och sammans&auml;ttning under sin v&auml;g genom njurarna.</p>\n<p></p>\n<p>GFR kan d&auml;remot m&auml;tas t ex genom att ber&auml;kna hur snabbt en mark&ouml;r som injiceras i blodbanan elimineras i urinen. Inulin ar en s&aring;dan mark&ouml;r. Det &auml;r en polysackarid som bara uts&ouml;ndras genom fri filtration i njurarnas glomeruli utan att d&auml;refter uts&ouml;ndras eller &aring;terresorberas i andra delar av njuren. Dessa egenskaper g&ouml;r att inulin kan anv&auml;ndas for att m&auml;ta GFR, och renalt clearance av inulin anses vara referensmetod (kallas gold standard). Metoden &auml;r dock b&aring;de komplicerad och dyr.</p>\n<p></p>\n<p>Andra &auml;mnen kan ocks&aring; anv&auml;ndas for att m&auml;ta GFR. De viktigaste &auml;r renalt clearance eller plasmaclearance av DTPA (dietylentriaminpentaacetat), 51Cr-EDTA (radioaktivt m&auml;rkt etylendiamintetraacetat), johexol (r&ouml;ntgenkontrastmedel), jotalamat (radioaktivt m&auml;rkt r&ouml;ntgenkontrastmedel), plasmaclearance av inulin och endogent kreatininclearance (renalt clearance av kreatinin).</p>\n<p></p>\n<p>SBU-gruppen granskade dessa olika metoder att m&auml;ta njurfunktionen och konkluderade vilka av dem som kan avv&auml;ndas som tillf&ouml;rlitliga preferensmetoder f&ouml;r att v&auml;rdera olika metoder att skatta GFR (eGFR) (3).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0c34ab1a-82a0-4679-b1f9-d787ded6b273",
+			"name": "0c34ab1a-82a0-4679-b1f9-d787ded6b273",
+			"type": "text",
+			"content": "<h2 id=\"Att-skatta-GFR\">Att skatta GFR</h2>\n<p>Ist&auml;llet f&ouml;r att m&auml;ta GFR har sedan l&aring;ng tid tillbaka alternativ utvecklats f&ouml;r att skatta GFR. Den mest anv&auml;nda metoden baseras p&aring; kreatinin, och &aring;r 2011 gjordes mer &auml;n sju miljoner kreatininanalyser i Sverige. Plasmakoncentrationen av kreatinin stiger vid sjunkande GFR, och man kan genom att bara notera att koncentrationen &auml;r f&ouml;rh&ouml;jd f&aring; en grov indikation p&aring; att njurfunktionen &auml;r f&ouml;rs&auml;mrad. Muskelmassan hos individen p&aring;verkar dock koncentrationen av kreatinin i plasma, varf&ouml;r matematiska formler har tagits fram for att kunna skatta GFR fr&aring;n kreatinin med beaktande av &aring;lder, k&ouml;n och i vissa fall etnicitet, vikt och l&auml;ngd. Dessa m&aring;tt anv&auml;nds f&ouml;r att uppskatta individens muskelmassa som i sin tur, i likhet med njurfunktionen, p&aring;verkar plasmakoncentrationen av kreatinin.</p>\n<p>&nbsp;</p>\n<p>En alternativ mark&ouml;r f&ouml;r att skatta njurfunktionen ar cystatin C, ett l&aring;gmolekyl&auml;rt protein som bildas i alla kroppens k&auml;rninneh&aring;llande celler. Cystatin C filtreras i likhet med kreatinin fritt genom glomeruli. F&ouml;rdelen med att skatta GFR baserat p&aring; cystatin C &auml;r att det kan g&ouml;ras utan uppgift om &aring;lder, k&ouml;n, etnicitet, vikt och l&auml;ngd. Cystatin C har d&auml;rf&ouml;r kommit att anv&auml;ndas alltmer b&aring;de i Sverige och internationellt. I Sverige utf&ouml;rdes &aring;r 2011 cirka &nbsp;240&nbsp;000 analyser med cystatin C. F&ouml;rutom formler som baseras p&aring; antingen kreatinin eller cystatin C anv&auml;nds ocks&aring; s&aring; kallade kombinationsformler. En kombinationsformel kan antingen vara en medelv&auml;rdesformel, det vill s&auml;ga medelv&auml;rdet av skattat GFR utifr&aring;n kreatinin respektive cystatin C, eller en sammansatt formel (en s&aring; kallad kompositformel) som inneh&aring;ller b&aring;da mark&ouml;rerna.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2d54e837-eea2-4ac6-adda-adbf0b92f382",
+			"name": "2d54e837-eea2-4ac6-adda-adbf0b92f382",
+			"type": "text",
+			"content": "<h2 id=\"Skattningarnas-formaga-att-skatta-det-sanna-GFR\">Skattningarnas f&ouml;rm&aring;ga att skatta det sanna GFR</h2>\n<p>I SBU rapporten (1) lades mycket stort arbete ned p&aring; att j&auml;mf&ouml;ra och v&auml;rdera olika skattningsmetoder av GFR fr&aring;n kreatinin och cystatin C med validerade och godk&auml;nda m&auml;tmetoder. De utfallsm&aring;tt som anv&auml;nds i rapporten baseras p&aring; internationell praxis inom omr&aring;det.</p>\n<p></p>\n<p>De tv&aring; huvudsakliga m&aring;tten f&ouml;r att utv&auml;rdera olika formlers &ouml;verensst&auml;mmelse med uppm&auml;tt GFR &auml;r bias och P30. Bias anger det systematiska felet i skattat GFR och uttrycks som medel- eller medianskillnaden mellan skattade och uppm&auml;tta GFR-v&auml;rden i absoluta tal (ml/min eller ml/min/1,73 m<sup>2</sup>) eller i relativa tal (procent). P30 anger hur stor andel av skattade GFR-v&auml;rden som ligger inom &plusmn;&nbsp;30&nbsp;% av uppm&auml;tta GFR-v&auml;rden. Ett P30 p&aring; till exempel 75&nbsp;% betyder att 75&nbsp;% av de skattade v&auml;rdena ligger inom &plusmn;&nbsp;30&nbsp;% av uppm&auml;tta GFR-v&auml;rden. Ett exempel: om GFR &auml;r&nbsp;60&nbsp;ml/min/1,73 m<sup>2</sup> och P30 &auml;r 75&nbsp;%, inneb&auml;r det att 75&nbsp;% av skattningarna ligger mellan 42 och 78&nbsp;ml/min/1,73 m<sup>2&nbsp;</sup>(&plusmn;&nbsp;30&nbsp;% av 60&nbsp;ml/min/1,73 m<sup>2</sup>).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a062a057-f2a4-42d1-9355-dc6ab923971a",
+			"name": "a062a057-f2a4-42d1-9355-dc6ab923971a",
+			"type": "text",
+			"content": "<h2 id=\"Sammanfattande-resultat-fran-SBU-rapporten\">Sammanfattande resultat fr&aring;n SBU-rapporten</h2>\n<p>Noggrannheten f&ouml;r de fyra mest v&auml;ldokumenterade kreatininformlerna, samt cystatin C-formler, vid skattning av GFR och formler som baseras p&aring; en kombination av b&aring;da mark&ouml;rerna sammanfattas i Tabell 2. De kreatininbaserade formlerna MDRD (Modification of Diet in Renal Disease Study(4)), CKD-EPI (Chronic Kidney Diesease Epidemiology Collaboration(5)) och LM-rev (den reviderade Lund-Malm&ouml;-formeln(6)) har, generellt sett, tillr&auml;cklig noggrannhet (P30&nbsp;&ge;&nbsp;75&nbsp;%) f&ouml;r att skatta njurfunktionen hos vuxna, med undantag for patienter med GFR &lt;&nbsp;30&nbsp;ml/min/1,73&nbsp;m<sup>2 </sup>eller BMI &lt;&nbsp;20 kg/m<sup>2</sup>. I motsats till detta ger den tidigare ofta anv&auml;nda kreatininformeln Cockcroft-Gault (7) (CG) otillr&auml;cklig noggrannhet (P30&nbsp;&lt;&nbsp;75&nbsp;%), i synnerhet vid GFR &lt;&nbsp;60&nbsp;ml/min/1,73&nbsp;m<sup>2</sup>(8). Medelv&auml;rdet av skattat GFR utifr&aring;n kreatinin respektive cystatin C ger &ouml;verlag h&ouml;gre noggrannhet &auml;n formler som endast nyttjar en av mark&ouml;rerna. F&ouml;rb&auml;ttringen ar s&auml;rskilt p&aring;taglig hos barn och patienter med l&aring;gt GFR (&lt;&nbsp;30&nbsp;ml/min/1,73&nbsp;m<sup>2</sup>). Underlag f&ouml;r motsvarande j&auml;mf&ouml;relse saknas f&ouml;r olika BMI-intervall och individer &auml;ldre &auml;n 80&nbsp;&aring;r. Hos individer &auml;ldre &auml;n 80&nbsp;&aring;r ger de kreatininbaserade formlerna CKD-EPI och LM-rev tillr&auml;cklig noggrannhet.</p>\n<p></p>\n<p>Hos barn &auml;r noggrannheten otillr&auml;cklig f&ouml;r samtliga kreatininbaserade formler.</p>\n<p></p>\n<p>Cystatin C-formler ger, generellt sett, tillr&auml;cklig noggrannhet hos vuxna och &auml;r likv&auml;rdiga med de b&auml;sta kreatininformlerna. Under de senaste &aring;ren har m&ouml;jligheterna att skatta GFR hos barn med utnyttjande av cystatin-c utvecklats ytterligare och idag kan eGFR, utg&aring;ende fr&aring;n cystatin C, skattas med tillr&auml;cklig noggrannhet fr&aring;n 1 till 17&nbsp;&aring;rs &aring;lder (9). Underlag saknas &auml;nnu f&ouml;r att bed&ouml;ma cystatin C-formlernas noggrannhet i olika BMI-intervall och hos individer &auml;ldre &auml;n 80&nbsp;&aring;r.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7cba5a88-1654-4bc7-842f-449622b2f24e",
+			"name": "7cba5a88-1654-4bc7-842f-449622b2f24e",
+			"type": "tablewide",
+			"content": {
+				"number": "2",
+				"title": "Sammanfattning av de viktigaste resultaten och deras evidensstyrka avseende noggrannheten i skattningen av GFR (ml/min/1,73 m<sup>2</sup>) med kreatinin-, cystatin C- respektive kombinationsformler i stora patientgrupper.  ",
+				"id": "",
+				"text": "<table class=\"table table-bordered\">\r\n<tbody>\r\n<tr>\r\n<td colspan=\"8\">Bias ing&aring;r inte i kravet p&aring; noggrannhet, men pilar i tabellen visar bias &ouml;ver 10 % (&uarr;= &ouml;verskattning,&darr;= underskattning). Fr&aring;n SBU 2013.</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"8\">Starkt vetenskapligt underlag (&oplus;&oplus;&oplus;&oplus;). M&aring;ttligt starkt vetenskapligt underlag (&oplus;&oplus;&oplus;O). Begr&auml;nsat vetenskapligt underlag (&oplus;&oplus;OO). Otillr&auml;ckligt vetenskapligt underlag (&oplus;OOO).<strong></strong></td>\r\n</tr>\r\n<tr>\r\n<td></td>\r\n<td style=\"text-align: center;\" colspan=\"2\"><strong>Kreatininformler</strong></td>\r\n<td style=\"text-align: center;\"></td>\r\n<td colspan=\"2\" style=\"text-align: center;\"><strong>Kreatininformler</strong></td>\r\n<td><strong>Cystatin C-formler</strong></td>\r\n<td><strong>Kombinationsformler</strong></td>\r\n</tr>\r\n<tr>\r\n<td></td>\r\n<td><strong><em>Cockcroft-Gault (CG)</em></strong></td>\r\n<td><strong><em>MDRD</em></strong></td>\r\n<td></td>\r\n<td><strong><em>CDK-EPI</em></strong></td>\r\n<td><strong><em>LM-reviderad</em></strong></td>\r\n<td></td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td><strong><em>Vuxna</em></strong></td>\r\n<td>\r\n<p></p>\r\n</td>\r\n<td>\r\n<p></p>\r\n</td>\r\n<td></td>\r\n<td>\r\n<p></p>\r\n</td>\r\n<td>\r\n<p></p>\r\n</td>\r\n<td>\r\n<p></p>\r\n</td>\r\n<td>\r\n<p></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td><em>&Ouml;verordnade resultat</em></td>\r\n<td>\r\n<p>Nej &uarr;</p>\r\n<p>&oplus;&oplus;&oplus;&oplus;</p>\r\n</td>\r\n<td>\r\n<p>Ja</p>\r\n<p>&oplus;&oplus;&oplus;&oplus;</p>\r\n</td>\r\n<td>\r\n<p></p>\r\n</td>\r\n<td>\r\n<p>Ja</p>\r\n<p>&oplus;&oplus;&oplus;&oplus;</p>\r\n</td>\r\n<td>\r\n<p>Ja</p>\r\n<p>&oplus;&oplus;OO</p>\r\n</td>\r\n<td>\r\n<p>Ja</p>\r\n<p>&oplus;&oplus;&oplus;O</p>\r\n</td>\r\n<td>\r\n<p>Ja</p>\r\n<p>&oplus;&oplus;&oplus;O</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><em>GFR-intervall</em></p>\r\n<p><em>(ml/min/1,73 m<sup>2</sup>)</em></p>\r\n</td>\r\n<td>\r\n<p></p>\r\n</td>\r\n<td>\r\n<p></p>\r\n</td>\r\n<td></td>\r\n<td>\r\n<p></p>\r\n</td>\r\n<td>\r\n<p></p>\r\n</td>\r\n<td>\r\n<p></p>\r\n</td>\r\n<td>\r\n<p></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>&lt; 30</td>\r\n<td>Nej &uarr;&oplus;&oplus;&oplus;O</td>\r\n<td>Nej &oplus;&oplus;&oplus;O</td>\r\n<td></td>\r\n<td>Nej &oplus;&oplus;&oplus;O</td>\r\n<td>Nej &oplus;&oplus;OO</td>\r\n<td>Nej &oplus;&oplus;OO</td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n</tr>\r\n<tr>\r\n<td>30&ndash;59</td>\r\n<td>Nej &uarr;&oplus;&oplus;&oplus;O</td>\r\n<td>Ja &oplus;&oplus;&oplus;O</td>\r\n<td></td>\r\n<td>Ja &oplus;&oplus;&oplus;O</td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n</tr>\r\n<tr>\r\n<td>60&ndash;89</td>\r\n<td>Ja &oplus;&oplus;&oplus;O</td>\r\n<td>Ja &oplus;&oplus;&oplus;O</td>\r\n<td></td>\r\n<td>Ja &oplus;&oplus;&oplus;O</td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n</tr>\r\n<tr>\r\n<td>&ge; 90</td>\r\n<td>Ja &oplus;&oplus;&oplus;O</td>\r\n<td>Ja &darr;&oplus;&oplus;OO</td>\r\n<td></td>\r\n<td>Ja &oplus;&oplus;&oplus;O</td>\r\n<td>Ja &darr; &oplus;&oplus;OO</td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n</tr>\r\n<tr>\r\n<td><em>&Aring;ldersintervall (&aring;r)</em></td>\r\n<td></td>\r\n<td></td>\r\n<td></td>\r\n<td></td>\r\n<td></td>\r\n<td></td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td>&lt; 40</td>\r\n<td>- &oplus;OOO</td>\r\n<td>Ja &oplus;&oplus;&oplus;O</td>\r\n<td></td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n</tr>\r\n<tr>\r\n<td>40&ndash;79</td>\r\n<td>- &oplus;OOO</td>\r\n<td>Ja &oplus;&oplus;&oplus;O</td>\r\n<td></td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n</tr>\r\n<tr>\r\n<td>&ge; 80</td>\r\n<td>- &oplus;OOO</td>\r\n<td>Nej &uarr; &oplus;&oplus;OO</td>\r\n<td></td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n<td>- &oplus;OOO</td>\r\n<td>- &oplus;OOO</td>\r\n</tr>\r\n<tr>\r\n<td><em>BMI-intervall (kg/m<sup>2</sup>)</em></td>\r\n<td></td>\r\n<td></td>\r\n<td></td>\r\n<td></td>\r\n<td></td>\r\n<td></td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td>&lt; 20</td>\r\n<td>- &oplus;OOO</td>\r\n<td>Nej &uarr; &oplus;&oplus;OO</td>\r\n<td></td>\r\n<td>Nej &uarr; &oplus;&oplus;OO</td>\r\n<td>Nej &uarr; &oplus;&oplus;OO</td>\r\n<td>- &oplus;OOO</td>\r\n<td>- &oplus;OOO</td>\r\n</tr>\r\n<tr>\r\n<td>20&ndash;39</td>\r\n<td>- &oplus;OOO</td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n<td></td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n<td>- &oplus;OOO</td>\r\n<td>- &oplus;OOO</td>\r\n</tr>\r\n<tr>\r\n<td>&ge; 40</td>\r\n<td>- &oplus;OOO</td>\r\n<td>- &oplus;OOO</td>\r\n<td></td>\r\n<td>- &oplus;OOO</td>\r\n<td>- &oplus;OOO</td>\r\n<td>- &oplus;OOO</td>\r\n<td>- &oplus;OOO</td>\r\n</tr>\r\n<tr>\r\n<td><em>Specifika etniska grupper i Sverige</em></td>\r\n<td>- &oplus;OOO</td>\r\n<td>- &oplus;OOO</td>\r\n<td></td>\r\n<td>- &oplus;OOO</td>\r\n<td>- &oplus;OOO</td>\r\n<td>- &oplus;OOO</td>\r\n<td>- &oplus;OOO</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"8\"></td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"8\"><strong>Barn</strong></td>\r\n</tr>\r\n<tr>\r\n<td></td>\r\n<td><em><strong>CG, MDRD, CKD-EPI</strong></em></td>\r\n<td><em><strong>Schwartz original</strong></em></td>\r\n<td></td>\r\n<td><em><strong>Schwartz IDMS</strong></em></td>\r\n<td>\r\n<p><em><strong>LM-original</strong></em></p>\r\n<p><em><strong>LM-reviderad</strong></em></p>\r\n</td>\r\n<td><em><strong>Cystatin C-formler</strong></em></td>\r\n<td><em><strong>Kombinationsformler</strong></em></td>\r\n</tr>\r\n<tr>\r\n<td>&Ouml;verordnade resultat</td>\r\n<td>Inte applicerbara p&aring; barn</td>\r\n<td>Nej &oplus;&oplus;&oplus;&oplus;</td>\r\n<td></td>\r\n<td>Nej<sup>a&nbsp;</sup>&oplus;&oplus;&oplus;O</td>\r\n<td>\r\n<p>Nej<sup> </sup>&oplus;&oplus;OO</p>\r\n</td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n<td>Ja &oplus;&oplus;OO</td>\r\n</tr>\r\n<tr>\r\n<td>K&ouml;n, GFR-, &aring;lders- och BMI-intervall</td>\r\n<td>Inte applicerbara p&aring; barn</td>\r\n<td>- &oplus;OOO</td>\r\n<td></td>\r\n<td>- &oplus;OOO</td>\r\n<td>\r\n<p>- &oplus;OOO</p>\r\n</td>\r\n<td>- &oplus;OOO</td>\r\n<td>- &oplus;OOO</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"8\">\r\n<p><sup>a </sup>Schwartz-IDMS uppvisade likv&auml;rdig och tillr&auml;cklig noggrannhet j&auml;mf&ouml;rt med cystatin C-formler i parvisa j&auml;mf&ouml;relser. Sammantaget uppvisar emellertid Schwartz-IDMS otillr&auml;cklig noggrannhet n&auml;r &auml;ven studier som inte inneh&aring;ller j&auml;mf&ouml;relser med cystatin C-formler inkluderas.</p>\r\n<p></p>\r\n<p></p>\r\n<p>- = Underlag saknas; BMI = Body mass index; CKD-EPI = Chronic Kidney Disease Epidemiology Collaboration; GFR = Glomerular filtration rate; IDMS = Isotope dilution mass spectrometry; Ja = Tillr&auml;cklig noggrannhet: P30 &epsilon;&ge; 75 %; MDRD = Modification of Diet in Renal Disease Study; Nej = Otillr&auml;cklig noggrannhet: P30 &lt;75%; P30 = Andelen skattade GFR inom &plusmn;30 procent av uppm&auml;tta GFR.</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5c8228b8-594b-4d31-b541-1f3e519a57ec",
+			"name": "5c8228b8-594b-4d31-b541-1f3e519a57ec",
+			"type": "text",
+			"content": "<h2 id=\"Vardering-och-tolkning-av-skattningen\">V&auml;rdering och tolkning av skattningen</h2>\n<p>Resultatet av ett skattat GFR m&aring;ste alltid v&auml;rderas med h&auml;nsyn till faktorer som kan p&aring;verka de enskilda mark&ouml;rerna men som inte &auml;r relaterade till GFR. S&aring;ledes kan skattningar baserade p&aring; kreatinin bli felaktiga hos patienter med p&aring;tagligt avvikande muskelmassa. Detta g&auml;ller i synnerhet avmagrade och/eller sv&aring;rt sjuka patienter med onormalt liten muskelmassa, d&aring; eGFR fr&aring;n kreatinin grovt kan &ouml;verskatta GFR. Motsvarande g&auml;ller f&ouml;r cystatin C vid medicinering med stora doser kortison d&aring; koncentrationen av cystatin C stiger i plasma, och njurfunktionen riskerar att skattas l&auml;gre &auml;n den &auml;r. F&ouml;r b&aring;da mark&ouml;rerna g&auml;ller att noggrannheten av skattningarna f&ouml;rs&auml;mras till exempel vid st&ouml;rd sk&ouml;ldk&ouml;rtelfunktion och under graviditet. Inte s&auml;llan p&aring;verkas skattningar som utg&aring;r fr&aring;n kreatinin respektive cystatin C i olika riktning. Har man sv&aring;rt att avg&ouml;ra detta kan man utnyttja medelv&auml;rdet av skattningarna som i allm&auml;nhet &auml;r noggrannare &auml;n respektive skattning var f&ouml;r sig. Den f&ouml;rb&auml;ttrade noggrannheten hos medelv&auml;rdet beror sannolikt p&aring; att mark&ouml;rerna kompenserar varandras brister.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "be9deb70-b9ef-4ab2-869a-8db447defa32",
+			"name": "be9deb70-b9ef-4ab2-869a-8db447defa32",
+			"type": "text",
+			"content": "<h2 id=\"Absolut-och-relativ-GFR\">Absolut och relativ GFR</h2>\n<p>Hos en ung vuxen i 20&ndash;30 &aring;rs&aring;ldern &auml;r GFR cirka 180&nbsp;l/dygn, eller 125&nbsp;ml/min. Absolut GFR &auml;r som regel l&auml;gre hos kvinnor och sjunker med stigande &aring;lder hos s&aring;v&auml;l kvinnor som m&auml;n. Eftersom njurfunktionen &auml;r relaterad till kroppsstorlek, rapporteras ofta GFR normerat till kroppsyta (relativt GFR), vanligtvis 1,73 m<sup>2</sup> (motsvarar en person med l&auml;ngd &nbsp;170&nbsp;cm och vikt 63&nbsp;kg).</p>\n<p></p>\n<p>Absolut GFR betecknar den faktiska filtrationshastigheten hos en individ i ml/min. Den beror p&aring; individens kroppsstorlek och &auml;r d&auml;rf&ouml;r helt olika hos ett barn och en vuxen. Genom att relatera den absoluta njurfunktionen till individens kroppsyta i f&ouml;rh&aring;llande till en standardiserad kroppsyta om 1,73&nbsp;m<sup>2</sup> erh&aring;lls den s&aring; kallade relativa njurfunktionen som varierar mindre mellan njurfriska individer av olika storlek, eftersom njurarnas storlek och funktion &auml;r proportionella mot kroppsytan (10).</p>\n<p></p>\n<p>Relativt GFR m&ouml;jligg&ouml;r samma referensintervall f&ouml;r individer av olika storlek och utg&ouml;r d&auml;rmed en enhetlig grund f&ouml;r bed&ouml;mning. Den absoluta njurfunktionen kan ber&auml;knas fr&aring;n den relativa om man k&auml;nner vikt och l&auml;ngd och ber&auml;knar kroppsytan med n&aring;gon formel, ofta som kroppsytan (m<sup>2</sup>)&nbsp;=&nbsp;0,20247&nbsp;&times;&nbsp;l&auml;ngd (m)<sup>0,725</sup>&nbsp;&times;&nbsp;vikt (kg)<sup>0,425</sup> (11). Absolut GFR (mL/min) = Relativ GFR (mL/min/kroppsyta (1,73 m<sup>2</sup>))&nbsp;&times;&nbsp;kroppsyta&nbsp;(m<sup>2</sup>)/1,73 (m<sup>2</sup>).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4c77922d-8f92-4576-ac97-ac1bc13f9993",
+			"name": "4c77922d-8f92-4576-ac97-ac1bc13f9993",
+			"type": "text",
+			"content": "<h2 id=\"Hur-anpassas-doseringen-av-lakemedel-da-till-GFR-\">Hur anpassas doseringen av l&auml;kemedel d&aring; till GFR?</h2>\n<p>&Auml;ven om den dominerande uts&ouml;ndringen f&ouml;r m&aring;nga l&auml;kemedel sker via njurarna och glomerul&auml;r filtration s&aring; varierar omfattning och p&aring; vilket s&auml;tt mycket. Varierande grad av bindning av l&auml;kemedel till plasmaproteiner p&aring;verkar i h&ouml;g grad hur stor del av den i plasma cirkulerade m&auml;ngden som uts&ouml;ndras genom glomerul&auml;r filtration. Renal elimination kan ocks&aring; ske genom aktiv tubul&auml;r sekretion vilket f&ouml;rkortar halveringstiden j&auml;mf&ouml;rt med om endast glomerul&auml;r filtration f&ouml;rekommer. I andra fall kan l&auml;kemedel som filtrerats aktivt &aring;terresorberas i tubuli vilket d&aring; f&ouml;rl&auml;nger eliminationen om l&auml;kemedlet inte bryts ned i tubuli utan &aring;terf&ouml;rs till cirkulationen.</p>\n<p>&nbsp;</p>\n<p>Av stor betydelse f&ouml;r den sammantagna totala eliminationen &auml;r f&ouml;rst&aring;s ocks&aring; extrarenal elimination. Vid behandling med l&auml;kemedel som i huvudsak har extrarenal elimination, beh&ouml;vs s&auml;llan dosanpassning till njurfunktionen.</p>\n<p>&nbsp;</p>\n<p>Den totala eliminationshastigheten brukar uttryckas som clearance och utg&ouml;r summan av renal och extrarenal clearance. Clearance (Cl) brukar anges i ml/min och s&auml;ttas i relation till distributionsvolym (l) eller kroppsyta (m<sup>2</sup>). &Auml;r distributionsvolymen (VD) k&auml;nd kan halveringstiden (t&frac12;) enkelt r&auml;knas fram fr&aring;n clearance, eller tv&auml;rtom d&aring; t&frac12;&nbsp;=&nbsp;ln(2)* VD/Cl. Distributionsvolym (VD) &auml;r ett farmakokinetiskt begrepp som syftar p&aring; den hypotetiska volym ett l&auml;kemedel upptar efter det att j&auml;mvikt av l&auml;kemedlet mellan v&auml;vnader och plasma inst&auml;llt sig.</p>\n<p></p>\n<p>Om ett l&auml;kemedel har uteslutande renal elimination och filtreras genom glomerulus utan att &aring;terresorberas kommer eliminationen av l&auml;kemedlet ifr&aring;ga via njurarna att vara densamma som f&ouml;r inulin, det vill s&auml;ga cirka &nbsp;125&nbsp;ml/min hos en njurfrisk ung person. Med en antagen typisk distributionsvolym p&aring; 50 l (60&ndash;65&nbsp;% av kroppsvikten) motsvarar detta en halveringstid (t&frac12;) p&aring; 6,8&nbsp;timmar. Om GFR ist&auml;llet &auml;r s&auml;nkt med 50&nbsp;% blir halveringstiden den dubbla; 13,6&nbsp;timmar.</p>\n<p></p>\n<p>Allt detta kan f&ouml;refalla kr&aring;ngligt och knappast n&aring;got f&ouml;rskrivande l&auml;kare har tid att fundera &ouml;ver vid en rutinm&auml;ssig ordination. Men den praktiska till&auml;mpningen &auml;r enkel: om<em> ett l&auml;kemedels elimination &auml;r direkt proportionell mot GFR blir halveringstiden f&ouml;r en given dos proportionellt f&ouml;rl&auml;ngd; t(&frac12;) patient&nbsp;=&nbsp;t(&frac12;) normal&nbsp;&times;&nbsp;normalt GFR/patientens GFR. </em></p>\n<p>Detta inneb&auml;r att en enkel tumregel kan vara &ndash; om man inte har andra specifika data &ndash; att reducera dosen proportionellt med reduktion i procent av normalt eGFR. Om en patient har ett GFR som &auml;r 33&nbsp;% av det normala f&ouml;r vuxna s&aring; n&aring;r man samma medelplasmakoncentration genom att ge l&auml;kemedlet med ett tre g&aring;nger l&auml;ngre dosintervall, exempelvis en g&aring;ng per dygn ist&auml;llet f&ouml;r tre. I andra fall, exempelvis vid medicinering med sm&auml;rtstillande, kan det vara viktigt att h&aring;lla en n&aring;gorlunda stabil plasmakoncentration. D&aring; minskas ist&auml;llet doseringen i motsvarande grad, det vill s&auml;ga till en tredjedel med of&ouml;r&auml;ndrat dosintervall.</p>\n<p></p>\n<p>Mer specifik information f&aring;r man genom att studera l&auml;kemedlets produktresum&eacute; (Summary of Product Characteristics, SmPC), f&ouml;r de enskilda l&auml;kemedlen. P&aring; L&auml;kemedelsverkets webbplats <a href=\"http://www.mpa.se\">www.mpa.se</a> finns SmPC-texter f&ouml;r samtliga l&auml;kemedel godk&auml;nda i Sverige, i vissa fall (centralt godk&auml;nda l&auml;kemedel) genom l&auml;nk till den europeiska l&auml;kemedelsmyndigheten (EMA), <a href=\"http://www.ema.europa.eu\">www.ema.europa.eu</a> . Texterna i FASS, som bygger p&aring; dessa SmPC, &auml;r tyv&auml;rr ofta ganska torftiga. Men finns det specifika uppgifter i FASS och SmPC som inneh&aring;ller specifika doseringsanvisningar i relation till uppm&auml;tta GFR, eller preciserad eGFR, ska ordinerande l&auml;kare dock f&ouml;rst&aring;s f&ouml;lja dessa. I synnerhet &auml;r det av vikt att noga f&ouml;lja de publicerade doseringsanvisningarna vid tillf&ouml;rsel av exempelvis cellgifter.</p>\n<p>&nbsp;</p>\n<p>Under senare &aring;r har elektroniska f&ouml;rskrivarst&ouml;d tagits fram d&auml;r den f&ouml;rskrivande l&auml;karen kan relatera den enskilda patientens l&auml;kemedelsordinationer till patientens eGFR, exempelvis i form av den s&aring; kallade NjuRen som anv&auml;nds bland annat inom Stockholms l&auml;n (12).</p>\n<p>&nbsp;</p>\n<p>Enligt vissa kliniska farmakologer b&ouml;r man dock strikt f&ouml;lja texterna i SmPC, &auml;ven om dessa h&auml;nvisar till &auml;ldre metoder att skatta GFR med Cockcroft-Gaults klassiska formel. En debatt om detta f&ouml;rdes f&ouml;r n&aring;got &aring;r sedan i L&auml;kartidningen (13, 14) och p&aring; annat h&aring;ll (15) och man kan v&auml;l s&auml;ga att slutsatsen blev att det viktiga &auml;r att man verkligen beaktar njurfunktionen vid dosering av l&auml;kemedel men mindre hur.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9a340084-9818-4139-9d0b-e62bbc822b97",
+			"name": "9a340084-9818-4139-9d0b-e62bbc822b97",
+			"type": "text",
+			"content": "<h2 id=\"Sammanfattning\">Sammanfattning</h2>\n<p>Njurfunktionen (GFR) kan idag och som regel v&auml;l skattas genom att ber&auml;kna eGFR fr&aring;n plasma kreatinin och/eller cystatin C. Med cystatin C kan GFR ocks&aring; skattas hos barn fr&aring;n ett &aring;rs &aring;lder och hos patienter med avvikande muskelmassa. En &ouml;kad anv&auml;ndning av eGFR &auml;r av stort v&auml;rde f&ouml;r att identifiera olika typer av riskpatienter och ger st&ouml;d f&ouml;r en s&auml;krare l&auml;kemedelsanv&auml;ndning.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "850bc3f1-c8ed-4a57-aea5-513aded21c83",
+			"name": "30f373dc-dfaa-4430-85a9-bc055cdf1e09",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2>\n<ol class=\"references\"><li id=\"reference_1\">(SBU), S.b.f.m.u., <em>Skattning av njurfunktion. En systematisk litteratur&ouml;versikt.</em>, in <em>SBU-rapport nr 214.</em> 2013, Statens beredning f&ouml;r medicinsk utv&auml;rdering (SBU): Stockholm.</li>\n<li id=\"reference_2\">Levey, A.S., et al., <em>National Kidney Foundation practice guidelines for chronic kidney disease: evaluation, classification, and stratification.</em> Ann Intern Med, 2003. <strong>139</strong>(2): p. 137-47.</li>\n<li id=\"reference_3\">Soveri, I., et al., <em>Measuring GFR: A Systematic Review.</em> Am J Kidney Dis, 2014.</li>\n<li id=\"reference_4\">Levey, A.S., et al., <em>Using standardized serum creatinine values in the modification of diet in renal disease study equation for estimating glomerular filtration rate.</em> Ann Intern Med, 2006. <strong>145</strong>(4): p. 247-54.</li>\n<li id=\"reference_5\">Levey, A.S., et al., <em>A new equation to estimate glomerular filtration rate.</em> Ann Intern Med, 2009. <strong>150</strong>(9): p. 604-12.</li>\n<li id=\"reference_6\">Bjork, J., et al., <em>Revised equations for estimating glomerular filtration rate based on the Lund-Malmo Study cohort.</em> Scand J Clin Lab Invest, 2011. <strong>71</strong>(3): p. 232-9.</li>\n<li id=\"reference_7\">Cockcroft, D.W. and M.H. Gault, <em>Prediction of creatinine clearance from serum creatinine.</em> Nephron, 1976. <strong>16</strong>(1): p. 31-41.</li>\n<li id=\"reference_8\">Evans, M., et al., <em>Glomerular filtration rate-estimating equations for patients with advanced chronic kidney disease.</em> Nephrol Dial Transplant, 2013.</li>\n<li id=\"reference_9\">Grubb, A., et al., <em>Generation of a new cystatin C-based estimating equation for glomerular filtration rate by use of 7 assays standardized to the international calibrator.</em> Clin Chem, 2014. <strong>60</strong>(7): p. 974-86.</li>\n<li id=\"reference_10\">Nyengaard, J.R. and T.F. Bendtsen, <em>Glomerular number and size in relation to age, kidney weight, and body surface in normal man.</em> Anat Rec, 1992. <strong>232</strong>(2): p. 194-201.</li>\n<li id=\"reference_11\">Du Bois, D. and E.F. Du Bois, <em>A formula to estimate the approximate surface area of height and weight be known*.</em> Arch Intern Med, 1916. <strong>17</strong>: p. 863-871.</li>\n<li id=\"reference_12\">Shemeikka, T., et al., <em>A health record integrated clinical decision support system to support prescriptions of pharmaceutical drugs in patients with reduced renal function: design, development and proof of concept.</em> Int J Med Inform, 2015. <strong>84</strong>(6): p. 387-95.</li>\n<li id=\"reference_13\">Elinder, C.G., P. Barany, and O. Heimburger, <em>Dosering av l&auml;kemedel b&ouml;r anpassas till njurfunktionen.</em> Lakartidningen, 2013. <strong>110</strong>(47): p. 2119-20.</li>\n<li id=\"reference_14\">St&aring;hle, L., <em>F&ouml;lj doseringsanvisningarna n&auml;r dos ska justeras efter njurfunktion.</em> L&auml;kartidningen, 2013. <strong>2013</strong>: p. CHXY.</li>\n<li id=\"reference_15\">Elinder, C.G., P. Barany, and O. Heimburger, <em>The use of estimated glomerular filtration rate for dose adjustment of medications in the elderly.</em> Drugs Aging, 2014. <strong>31</strong>(7): p. 493-9.</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "true"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/-nya-kapitel-ej-publ/Skattning-av-njurfunktion.json",
+	"indexed": "true",
+	"modified": "2016-04-01 09:15"
+}

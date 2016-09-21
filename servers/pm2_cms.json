@@ -25,5 +25,14 @@
 		"max_restarts" : "10",
 		"fileError" : "./logs/cms-err.log",
 		"fileOutput" : "./logs/cms-out.log"
+	},
+	{
+		"name"      : "BrokenLinkService",
+		"script"    : "./cms/services/BrokenLinkService/BrokenLinkService.js",
+		"instances" : "1",
+		"min_uptime" : "100",
+		"max_restarts" : "1",
+		"fileError" : "./logs/BrokenLinkService-err.log",
+		"fileOutput" : "./logs/BrokenLinkService-out.log"
 	}
 ]

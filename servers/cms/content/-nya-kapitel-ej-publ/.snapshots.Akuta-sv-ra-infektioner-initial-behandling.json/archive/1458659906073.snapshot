@@ -1,0 +1,656 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Akuta svåra infektioner - initial behandling",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2016-03-18 13:02",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Patrik Gille Johnson, Magnus Brink",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "766fb676-407b-46d3-8067-6312b149fc0c",
+			"name": "adc3c17a-ef53-4b26-83cc-27a99b0dd2b1",
+			"type": "text",
+			"content": "<h1 id=\"Akuta-svara-infektioner-initial-behandling\">Akuta sv&aring;ra infektioner &minus; initial behandling</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0702352f-9756-4d3d-92e1-82cef6c80858",
+			"name": "4b0e6957-a7b5-474b-8ef9-e59dc4083a30",
+			"type": "author",
+			"content": {
+				"firstname": "Patrik",
+				"surname": "Gille Johnson",
+				"description": "Infektionskliniken, Danderyds sjukhus",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b557e362-8e0c-4ae0-acbf-2e2faf249e27",
+			"name": "b557e362-8e0c-4ae0-acbf-2e2faf249e27",
+			"type": "author",
+			"content": {
+				"firstname": "Magnus",
+				"surname": "Brink",
+				"description": "?",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f1cdcf9a-df9f-4a9c-beeb-a31608687f5b",
+			"name": "eaa692ab-8151-4644-9811-5c5285b2eed1",
+			"type": "text",
+			"content": "<p>Historiskt har akuta sv&aring;ra infektioner varit vanliga och tillh&ouml;rt de dominerande d&ouml;dsorsakerna i alla &aring;ldersgrupper. Genom allm&auml;nt f&ouml;rb&auml;ttrade levnadsomst&auml;ndigheter i kombination med introduktionen av antibiotika och effektiva vacciner skedde under 1900-talet en dramatisk minskning av d&ouml;dligheten i infektionssjukdomar. Trots dessa stora framsteg &auml;r infektioner fortfarande en av de st&ouml;rsta sjukdomsgrupperna och under de senaste decennierna har man &aring;ter sett en &ouml;kning av framf&ouml;r allt allvarliga bakteriella infektioner. Den aktuella &ouml;kningen kan f&ouml;rklaras av f&ouml;r&auml;ndringar i befolkningens &aring;lderssammans&auml;ttning med allt fler &auml;ldre samt av utvecklingen inom olika medicinska omr&aring;den som t&nbsp;ex onkologi, transplantationskirurgi och reumatologi, d&auml;r f&ouml;rb&auml;ttrad &ouml;verlevnad och b&auml;ttre funktionsniv&aring; ofta sker till priset av ett nedsatt infektionsf&ouml;rsvar. Den snabbt v&auml;xande f&ouml;rekomsten av multiresistenta bakterier &auml;r ytterligare en faktor som p&aring;verkar infektionspanoramat och som riskerar att i en n&auml;ra framtid st&auml;lla oss inf&ouml;r stora problem vid behandlingen av bakteriella infektioner.<br><br></p>\n<p>Den viktigaste p&aring;verkbara faktorn f&ouml;r f&ouml;rloppet av en akut sv&aring;r infektion &auml;r tiden till p&aring;b&ouml;rjad adekvat behandling. Det &auml;r d&auml;rf&ouml;r n&ouml;dv&auml;ndigt att alla l&auml;kare som tj&auml;nstg&ouml;r inom klinisk sjukv&aring;rd har goda kunskaper om diagnostik och behandling av de vanligaste akuta sv&aring;ra infektionerna.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "163ab850-a7a4-4e17-a02e-85a938d5711e",
+			"name": "163ab850-a7a4-4e17-a02e-85a938d5711e",
+			"type": "text",
+			"content": "<h1 id=\"Vad-ar-en-akut-svar-infektion-\"><strong>Vad &auml;r en akut sv&aring;r infektion?</strong></h1>\n<p>De vanligaste livshotande infektionstillst&aring;nden &auml;r sv&aring;r sepsis och septisk chock. Pneumoni, med eller utan samtidig sv&aring;r sepsis, &auml;r en annan stor sjukdomsgrupp som beskrivs n&auml;rmare i <a href=\"{pre}/kapitel/andningsvagar/luftvagsinfektioner_hos_barn_och_vuxna.html\" target=\"_blank\">kapitlet om luftv&auml;gsinfektioner</a>. Mindre vanliga men allvarliga tillst&aring;nd &auml;r akut bakteriell meningit och nekrotiserande mjukdelsinfektioner. Herpesencefalit &auml;r exempel p&aring; en behandlingsbar akut sv&aring;r virusinfektion och bland protozosjukdomarna &auml;r malaria en sjukdom som kr&auml;ver snabb adekvat handl&auml;ggning.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b6fdf74a-220b-4473-aa17-4c02a32b36f4",
+			"name": "b6fdf74a-220b-4473-aa17-4c02a32b36f4",
+			"type": "text",
+			"content": "<h1 id=\"Diagnostik-av-akut-svar-infektion\"><strong>Diagnostik av akut sv&aring;r infektion</strong></h1>\n<p>De flesta akuta sv&aring;ra infektioner har ett snabbt f&ouml;rlopp med f&ouml;rh&aring;llandevis kort anamnes (timmar till enstaka dagar) samt karakt&auml;riseras av att patienten &auml;r uppenbart allvarligt sjuk.<br><br></p>\n<p>Ibland kan sjukdomsbilden vara mer diffus och sv&aring;rtolkad. Detta &auml;r mer vanligt vid allvarliga infektioner hos sp&auml;dbarn och &aring;ldringar d&auml;r feber m&aring;nga g&aring;nger kan saknas och risken f&ouml;r fel diagnos d&auml;rf&ouml;r &auml;r st&ouml;rre.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d57ab5b7-08f6-442a-b340-ec03269bb32b",
+			"name": "d57ab5b7-08f6-442a-b340-ec03269bb32b",
+			"type": "text",
+			"content": "<h1 id=\"Sepsis\">Sepsis</h1>\n<p>Sepsis &auml;r ett potentiellt livshotande tillst&aring;nd orsakat av ett kraftigt systeminflammatoriskt svar p&aring; en akut infektion med &aring;tf&ouml;ljande p&aring;verkan av fysiologiska funktioner.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7a58f9f5-ec79-46bf-8a38-698c9e728050",
+			"name": "7a58f9f5-ec79-46bf-8a38-698c9e728050",
+			"type": "text",
+			"content": "<h2 id=\"Definitioner\"><strong>Definitioner</strong></h2>\n<p>Nuvarande konsensusdefinitioner anger sepsis som ett tillst&aring;nd med ett systeminflammatoriskt svar (&rdquo;systemic inflammatory response syndrome&rdquo;, SIRS) som utl&ouml;sts av en infektion. D&aring; denna definition till stor del innefattar &auml;ven mindre allvarligt sjuka patienter anv&auml;nds &auml;ven begreppen &rdquo;sv&aring;r sepsis&rdquo; och &rdquo;septisk chock&rdquo; f&ouml;r att n&auml;rmare beskriva mer allvarliga tillst&aring;nd. Sv&aring;r sepsis betecknar en sepsisutl&ouml;st akut organsvikt, medan septisk chock inneb&auml;r en sepsisorsakad cirkulationssvikt.</p>\n<p>Definitionen av sepsis har l&auml;nge kritiserats f&ouml;r att inte vara kliniskt relevant och en mer pragmatisk definition, d&auml;r begreppet reserveras f&ouml;r infektioner med n&aring;gon form av organdysfunktion, har f&ouml;reslagits (1). Konsensusdefinitionen av sepsis kommer sannolikt att reformeras i denna riktning och v&auml;ntas presenteras under 2016. I det f&ouml;ljande anv&auml;nds dock nuvarande definition (december 2015) som &auml;ven redovisas i Faktaruta 1.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "851dc02c-6c23-4deb-bc5e-dd7c544482fb",
+			"name": "851dc02c-6c23-4deb-bc5e-dd7c544482fb",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "Sepsisdefinitioner",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td><strong>Sepsis</strong></td>\r\n<td>\r\n<p><em></em>Systeminflammatoriskt svar p&aring; en misst&auml;nkt infektion</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td><strong>Sv&aring;r sepsis</strong></td>\r\n<td>Sepsis med organsvikt, hypoperfusion eller hypotension</td>\r\n</tr>\r\n<tr>\r\n<td><strong>Septisk chock</strong></td>\r\n<td>Sv&aring;r sepsis med hypotension som inte svarar p&aring; v&auml;tskebehandling</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "cdeb8d52-f43c-4cc2-8c44-253b65135224",
+			"name": "cdeb8d52-f43c-4cc2-8c44-253b65135224",
+			"type": "text",
+			"content": "<h2 id=\"Forekomst\"><strong>F&ouml;rekomst</strong></h2>\n<p><strong></strong>Tillf&ouml;rlitlig statistik avseende f&ouml;rekomsten av sepsis i Sverige saknas, men utifr&aring;n internationella data kan man anta att minst 25&nbsp;000 m&auml;nniskor drabbas av sv&aring;r sepsis eller septisk chock i Sverige &aring;rligen (2). Grovt r&auml;knat varierar d&ouml;dligheten vanligen mellan 20&minus;40&nbsp;% f&ouml;r sv&aring;r sepsis, medan &auml;nnu h&ouml;gre siffror rapporteras f&ouml;r septisk chock. Risken att drabbas &auml;r h&ouml;gst tidigt och sent i livet. Pediatrisk sepsis &auml;r vanligast i nyf&ouml;ddhetsperioden, d&auml;r f&ouml;r tidigt f&ouml;dda utg&ouml;r en s&auml;rskilt utsatt grupp. Efter det f&ouml;rsta levnads&aring;ret sjunker sepsis-incidensen kraftigt f&ouml;r att &aring;ter stiga dramatiskt efter 65 &aring;rs &aring;lder. Ett &ouml;kande antal fall av sv&aring;r sepsis har under senare &aring;r rapporterats f&ouml;r s&aring;v&auml;l barn som vuxna, medan en gl&auml;djande minskning av d&ouml;dligheten samtidigt observerats (3&minus;7).</p>\n<p>Den vanligaste orsaken &auml;r bakteriella infektioner, men sepsis kan &auml;ven orsakas av virus, parasiter och svamp. I cirka en tredjedel av fallen g&aring;r det dock inte att fastst&auml;lla den orsakande mikroorganismen. Bland verifierade patogener &auml;r E. coli, Staphylococcus aureus och pneumokocker dominerande (8, 9). I nyf&ouml;ddhetsperioden &auml;r &auml;ven koagulasnegativa stafylokocker och grupp B-streptokocker viktiga agens. Globalt &auml;r Haemophilus influenzae typ B en vanlig orsak till sepsis och meningit hos barn, men numer s&auml;llsynt i Sverige till f&ouml;ljd av allm&auml;n vaccination (10).</p>\n<p>Pneumoni &auml;r den vanligaste underliggande infektionen vid sv&aring;r sepsis, f&ouml;ljd av buk- och urinv&auml;gsinfektioner hos vuxna och prim&auml;r bakteremi hos barn (6,7,11,12).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b606eb01-c444-421f-a5e6-1896d178e1f6",
+			"name": "b606eb01-c444-421f-a5e6-1896d178e1f6",
+			"type": "text",
+			"content": "<h2 id=\"Klinisk-bild\"><strong>Klinisk bild</strong></h2>\n<p><strong> </strong>Sv&aring;r sepsis och septisk chock &auml;r akuta, livshotande tillst&aring;nd d&auml;r tidig uppt&auml;ckt och behandling &auml;r avg&ouml;rande f&ouml;r utg&aring;ngen (13). Symtombilden varierar kraftigt och tillf&ouml;rlitliga diagnostiska biomark&ouml;rer saknas, samtidigt som odlingssvar inte finns tillg&auml;ngliga i akutskedet. Den prelimin&auml;ra diagnosen m&aring;ste d&auml;rf&ouml;r vila p&aring; en ofullkomlig kombination av anamnes, p&aring;verkade vitalparametrar samt biokemiska avvikelser och st&auml;ller h&ouml;ga krav p&aring; klinikerns medvetenhet om tillst&aring;ndet.</p>\n<p>Typfallet kan s&auml;gas vara en patient som insjuknar med feber, frossa, p&aring;verkat allm&auml;ntillst&aring;nd, takykardi och takypn&eacute; med leukocytos och stegrat CRP. F&ouml;rekomsten av feber leder ofta till infektionsmisstanke och ett korrekt omh&auml;ndertagande, men m&aring;nga patienter har inte feber n&auml;r de v&auml;l upps&ouml;ker v&aring;rden och en del, framf&ouml;r allt &aring;ldringar och nyf&ouml;dda, reagerar inte med feber &ouml;verhuvudtaget. Den &ouml;kande andelen patienter med nedsatt immunf&ouml;rsvar till f&ouml;ljd av medicinska behandlingar (kortison, TNF-h&auml;mmare, cytostatika etc) har ofta ett ofullst&auml;ndigt systeminflammatoriskt svar som d&auml;mpar symtombilden, som likv&auml;l snabbt kan eskalera till en septisk chock. I Faktaruta 2 listas vanliga systeminflammatoriska symtom och fynd vid sv&aring;r sepsis, som b&ouml;r f&ouml;ranleda misstanke om diagnosen.<br><br></p>\n<p>Hos sp&auml;dbarn kan symtomen vara mycket vaga och den kliniska misstanken f&aring;r ibland grundas enbart p&aring; ospecifika avvikelser fr&aring;n en tidigare normal trend. I denna grupp &auml;r hypotoni ovanligt och upptr&auml;der f&ouml;rst i ett mycket framskridet stadium (10). Se &auml;ven Faktaruta 3 f&ouml;r pediatrisk septisk chock.</p>\n<p>&nbsp;</p>\n<p>Bland kritiskt sjuka sepsispatienter har ofta en felbed&ouml;mning tidigare i v&aring;rdkedjan f&ouml;rsenat diagnos och behandling. I Faktaruta 4 beskrivs faktorer som kan leda till diagnostiska felslut.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "81cf6376-5c71-4eff-885c-d689c9ec2c46",
+			"name": "81cf6376-5c71-4eff-885c-d689c9ec2c46",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "Sepsis − symtom, kliniska fynd och laboratoriefynd",
+				"text": "<p><strong>Vanliga symtom och s&ouml;korsaker vid sepsis<br /><br /></strong></p>\r\n<ul>\r\n<li>Feber / Frossa</li>\r\n<li>Dyspn&eacute;</li>\r\n<li>Illam&aring;ende/Kr&auml;kning/Diarr&eacute;</li>\r\n<li>Mental p&aring;verkan</li>\r\n<li>Muskelsvaghet</li>\r\n<li>Sm&auml;rttillst&aring;nd (huvudv&auml;rk, led- och muskelv&auml;rk, men &auml;ven sv&aring;r lokal sm&auml;rta)</li>\r\n<li>Irritabilitet &auml;r vanligt hos sm&aring;barn<br /><br /></li>\r\n</ul>\r\n<p><strong>Vanliga kliniska fynd vid sepsis <br /><br /></strong></p>\r\n<ul>\r\n<li>Onormal temperatur (&gt;&nbsp;38&deg;&nbsp;C eller &lt;&nbsp;36&deg;&nbsp;C). Hypotermi &auml;r ett allvarligt tecken.</li>\r\n<li>Tachykardi<sup>a</sup> (&gt;&nbsp;90 slag/minut)</li>\r\n<li>Tachypn&eacute;<sup>a</sup> (&gt;&nbsp;20 andetag/minut, &gt;&nbsp;25 &auml;r ett allvarligt tecken)</li>\r\n<li>S&auml;nkt syrgassaturation (&lt;&nbsp;90&nbsp;%)</li>\r\n<li>Hypotoni (systoliskt blodtryck &lt;&nbsp;90 mm&nbsp;Hg)</li>\r\n<li>Mental p&aring;verkan (desorientering/motorisk oro/s&auml;nkt medvetande)</li>\r\n<li>Minskad urinproduktion (&lt;&nbsp;0,5 ml/kg/timme)</li>\r\n<li>F&ouml;rl&auml;ngd kapill&auml;r &aring;terfyllnad eller marmorering<br /><br /></li>\r\n</ul>\r\n<p><strong>Vanliga laboratoriefynd vid sepsis<br /><br /></strong></p>\r\n<ul>\r\n<li>Onormalt antal vita blodkroppar (LPK &gt;&nbsp;12x10<sup>9</sup>/L eller &lt;&nbsp;4x10<sup>9</sup>/L)</li>\r\n<li>F&ouml;rh&ouml;jt CRP och/eller prokalcitonin</li>\r\n<li>Kreatininstegring</li>\r\n<li>Koagulationsp&aring;verkan (TPK &lt;&nbsp;100x10<sup>9</sup>/L; INR &gt;&nbsp;1,5; APTT &gt;&nbsp;60 sekunder)</li>\r\n<li>F&ouml;rh&ouml;jt blodsocker<br /><br /></li>\r\n</ul>\r\n<p><strong>Blodgasparametrar<br /><br /></strong></p>\r\n<ul>\r\n<li>F&ouml;rh&ouml;jt laktat</li>\r\n<li>Arteriell hypoxemi</li>\r\n<li>Arteriell hypokapni (p<sub>a</sub>CO<sub>2 </sub>&lt;&nbsp;4,3 kPa)</li>\r\n<li>Base Excess &lt;&nbsp;-5 mmol/L<br /><br /></li>\r\n</ul>\r\n<p><sup>a</sup> F&ouml;r barn g&auml;ller &gt;&nbsp;2 standarddeviationer f&ouml;r &aring;ldern</p>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6b6d65f1-9d21-42b9-b2ba-5e57dc46acde",
+			"name": "6b6d65f1-9d21-42b9-b2ba-5e57dc46acde",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "Pediatrisk septisk chock",
+				"text": "<p><strong>Kall chock<br /><br /></strong></p>\r\n<p>Vanligaste bilden hos mindre barn. Karakt&auml;riseras av:<br /><br /></p>\r\n<ul>\r\n<li>Kall periferi och f&ouml;rl&auml;ngd kapill&auml;r &aring;terfyllnad &gt;&nbsp;3 s pga vasokonstriktion</li>\r\n<li>Bibeh&aring;llet eller f&ouml;rh&ouml;jt blodtryck</li>\r\n<li>Svaga perifera pulsar</li>\r\n<li>Ofta bradykardi hos nyf&ouml;dda/sp&auml;dbarn</li>\r\n<li>L&aring;g hj&auml;rtminutvolym</li>\r\n</ul>\r\n<p>&nbsp;<br /><br /></p>\r\n<p><strong>Varm chock<br /><br /></strong></p>\r\n<p>Vanligare hos &auml;ldre barn och vid nosokomial infektion. Karakt&auml;riseras av:<br /><br /></p>\r\n<ul>\r\n<li>Varm periferi pga vasoplegi</li>\r\n<li>Kraftiga perifera pulsar</li>\r\n<li>Takykardi</li>\r\n<li>H&ouml;g hj&auml;rtminutvolym</li>\r\n</ul>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d1f57c14-9bf1-4306-ab39-d9bcd5e23adb",
+			"name": "d1f57c14-9bf1-4306-ab39-d9bcd5e23adb",
+			"type": "facts",
+			"content": {
+				"number": "4",
+				"title": "Tänk på detta för att inte missa en sepsis!",
+				"text": "<ul>\r\n<li>Feber f&ouml;rekommer inte alltid vid allvarliga infektioner</li>\r\n<li>CRP kan vara l&aring;gt tidigt i f&ouml;rloppet</li>\r\n<li>Takypn&eacute; &auml;r ett tidigt svikttecken varf&ouml;r andningsfrekvensen alltid ska kontrolleras oavsett saturation</li>\r\n<li>Diarr&eacute;er och kr&auml;kningar &auml;r vanliga, kan misstolkas som gastroenterit</li>\r\n<li>Mental p&aring;verkan vid sepsis kan misstolkas som stroke</li>\r\n<li>Diffusa eller lokala sm&auml;rttillst&aring;nd, t&nbsp;ex buksm&auml;rtor, &auml;r vanliga och kan vara det patienten s&ouml;ker f&ouml;r</li>\r\n<li>Fallskador eller &rdquo;funnen p&aring; golvet&rdquo; kan bero p&aring; sepsis, s&auml;rskilt hos &auml;ldre</li>\r\n<li>Influensasymtom utan hosta/luftv&auml;gssymtom kan inte avskrivas som influensa</li>\r\n<li>Influensa kan &ouml;verg&aring; i sekund&auml;r bakteriell pneumoni</li>\r\n</ul>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c23eb812-c9fb-403d-ae03-5e718c1e92bf",
+			"name": "c23eb812-c9fb-403d-ae03-5e718c1e92bf",
+			"type": "facts",
+			"content": {
+				"number": "5",
+				"title": "Tillstånd med ökad risk för allvarliga infektioner ",
+				"text": "<ul>\r\n<li>H&ouml;g (&gt;&nbsp;65 &aring;r) eller l&aring;g &aring;lder (nyf&ouml;dda/prematurer)</li>\r\n<li>Immunh&auml;mmande sjukdom, t&nbsp;ex diabetes, blodsjukdom, malignitet, obehandlad HIV, medf&ouml;dd immunbrist</li>\r\n<li>Immunh&auml;mmande behandling, t&nbsp;ex steroider, cytostatika, TNF-h&auml;mmare eller medicinering efter transplantation</li>\r\n<li>F&ouml;rekomst av infarter, t&nbsp;ex central venkateter, nefrostomikateter, urinkateter</li>\r\n<li>F&ouml;rekomst av protes/implantat, t&nbsp;ex mekanisk hj&auml;rtklaff</li>\r\n<li>Missbruk</li>\r\n<li>Kronisk organsvikt</li>\r\n<li>Nyligen genomg&aring;ngen operation eller annan &aring;tg&auml;rd med risk f&ouml;r hud- eller slemhinneskada, t&nbsp;ex prostatabiopsi eller tandingrepp</li>\r\n</ul>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "77d77581-0fd1-49c9-9922-31704d86822f",
+			"name": "77d77581-0fd1-49c9-9922-31704d86822f",
+			"type": "text",
+			"content": "<h2 id=\"Diagnostik\"><strong>Diagnostik</strong></h2>\n<p><strong> </strong></p>\n<h3 id=\"Riktad-anamnes-och-status\">Riktad anamnes och status</h3>\n<p>Anamnesen &auml;r viktig och rymmer ofta diagnostiska ledtr&aring;dar som annars kan f&ouml;rbises.</p>\n<ul>\n<li>&Auml;ven om patienten &auml;r afebril vid sjukv&aring;rdskontakten har ofta feber och/eller frossa funnits i ett tidigare skede. Frossa (ofrivilliga sk&auml;lvningar) &auml;r vanligare vid allvarliga infektioner &auml;n vid mer godartade febertillst&aring;nd.</li>\n<li>Har patienten haft ett eller flera av &ouml;vriga systeminflammatoriska symtom som beskrivs i Faktaruta 2?</li>\n<li>Har patienten ett f&ouml;rsvagat immunf&ouml;rsvar till f&ouml;ljd av sjukdom eller l&auml;kemedelsbehandling, eller finns andra faktorer som g&ouml;r patienten mer mottaglig f&ouml;r infektioner? Se Faktaruta 5 f&ouml;r exempel.</li>\n<li>Har patienten nyligen v&aring;rdats p&aring; sjukhus/institution? I s&aring; fall m&aring;ste h&auml;nsyn tas till en f&ouml;r&auml;ndrad bakterieflora hos patienten.</li>\n<li>Har patienten nyligen genomg&aring;tt kirurgi eller annat ingrepp?</li>\n<li>Har patienten nyligen genomg&aring;tt antibiotikabehandling? Vilket preparat?</li>\n<li>&Auml;r patienten b&auml;rare av resistenta bakterier?</li>\n<li>Har patienten nyligen vistats utomlands? H&auml;nsyn b&ouml;r tas till lokalt infektionspanorama och risken f&ouml;r antibiotikaresistenta bakterier.</li>\n</ul>\n<p>&nbsp;</p>\n<p>Ett komplett status som inkluderar vitalparametrar ger en uppfattning om sjukdomsgrad och m&ouml;jligt infektionsfokus. Vid m&ouml;jlig sepsis b&ouml;r &auml;ven f&ouml;ljande observeras:</p>\n<ul>\n<li>Har patienten ett eller flera av de fynd som beskrivs i Faktaruta 2?</li>\n<li>Kl&auml; av patienten! Unders&ouml;k huden med avseende p&aring; ev. s&aring;r/stickm&auml;rken, erytem/exantem, petechier, perifer temperatur/cyanos, kapill&auml;r &aring;terfyllnad, marmorering (debuterar ofta &ouml;ver kn&auml;sk&aring;len).</li>\n<li>Mun och svalg b&ouml;r unders&ouml;kas. Tandstatus? Tonsillstatus? Intorkade slemhinnor?</li>\n<li>Nytillkomna kardiella bl&aring;sljud inger misstanke om endokardit.</li>\n<li>Kontrollera nackstyvhet om patienten &auml;r mentalt p&aring;verkad eller om meningitmisstanke f&ouml;religger (fr&aring;nvaro av nackstyvhet utesluter dock inte meningit).</li>\n<li>F&ouml;lj upp lokala symtom med noggrant lokalt status.</li>\n</ul>\n<p>&nbsp;</p>\n<h3 id=\"Provtagning-och-undersokningar\">Provtagning och unders&ouml;kningar</h3>\n<p>Inledande provtagning syftar till att bed&ouml;ma sjukdomens sv&aring;righetsgrad, identifiera orsakande agens och fastst&auml;lla infektionsfokus.</p>\n<ul>\n<li>Blodgas med laktat. Ett f&ouml;rh&ouml;jt laktatv&auml;rde &auml;r kopplat till hypoperfusion och &ouml;kad d&ouml;dlighet (14,15).</li>\n<li>Blododlingar (aerobt + anaerobt) x 2, helst fr&aring;n olika stickst&auml;llen. Vid ev. central infart dras ena odlingen h&auml;rifr&aring;n. Blodm&auml;ngd ska f&ouml;r vuxna vara 10 ml/flaska, f&ouml;r sm&aring; barn 0,5&minus;4&nbsp;ml i en pediatrisk flaska. Efter blododling kan antibiotika ges.</li>\n<li>&Ouml;vriga akutprover:\n<ul>\n<li>CRP och ev. prokalcitonin (PCT). CRP stiger i allm&auml;nhet kraftigt inom 24&minus;48 timmar vid bakteriell sepsis, men kan &auml;ven spegla isolerade infektioner, t&nbsp;ex abscesser, p&aring; liknande s&auml;tt. PCT stiger ofta kraftigt inom 6&minus;24 timmar vid bakteriella infektioner med systemp&aring;verkan, som bakteremi eller sv&aring;r sepsis.</li>\n<li>Hb, LPK, EVF</li>\n<li>Na, K, kreatinin</li>\n<li>PK/INR, APTT, TPK</li>\n<li>Bilirubin, ALP, ALAT</li>\n<li>P-glukos</li>\n</ul>\n</li>\n<li>&Ouml;vrig mikrobiologisk diagnostik (f&aring;r inte f&ouml;rdr&ouml;ja ins&auml;ttande av antibiotika):\n<ul>\n<li>Urinsticka + urinodling</li>\n<li>Odla fr&aring;n misst&auml;nkt fokus, ev. via punktion (cerebrospinalv&auml;tska, ascites etc.). Sputumodling &auml;r &ouml;verl&auml;gsen nasofarynxodling f&ouml;r mikrobiologisk diagnos vid nedre luftv&auml;gsinfektion.</li>\n<li>&Ouml;verv&auml;g riktade snabbtester f&ouml;r t&nbsp;ex influensa, pneumokock- och legionella-antigen i urin och grupp A-streptokock i svalg eller v&auml;vnadsv&auml;tska.</li>\n</ul>\n</li>\n<li>Radiologiska unders&ouml;kningar &auml;r ofta n&ouml;dv&auml;ndiga f&ouml;r att fastst&auml;lla underliggande infektionsfokus och m&ouml;jligg&ouml;ra eventuell dr&auml;nering inom 12 timmar (15). Innan patienten &auml;r stabiliserad m&aring;ste dock nyttan v&auml;gas mot riskerna.</li>\n</ul>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f4f3ab2d-d518-4be4-9a2c-acac10dca83a",
+			"name": "f4f3ab2d-d518-4be4-9a2c-acac10dca83a",
+			"type": "text",
+			"content": "<h2 id=\"Behandling\"><strong>Behandling</strong></h2>\n<p><strong></strong>En allm&auml;np&aring;verkad patient med misst&auml;nkt sepsis ska snarast till sjukhus f&ouml;r fortsatt omh&auml;ndertagande. Patienter med respiratorisk och/eller cirkulatorisk p&aring;verkan b&ouml;r transporteras i ambulans och under transporten behandlas med syrgas och intraven&ouml;s v&auml;tska. Om transporttiden f&ouml;rv&auml;ntas &ouml;verstiga 1 timme b&ouml;r om m&ouml;jligt &auml;ven antibiotikabehandling inledas.</p>\n<p>&nbsp;</p>\n<h3 id=\"Initialt-omhandertagande-pa-sjukhus-av-patient-med-respiratorisk-och-eller-cirkulatorisk-paverkan\">Initialt omh&auml;ndertagande p&aring; sjukhus av patient med respiratorisk och/eller cirkulatorisk p&aring;verkan</h3>\n<ul>\n<li>Ge syrgas: 2&minus;3 L via n&auml;sgrimma vid saturation 91&minus;95&nbsp;%; vid l&auml;gre saturation ges 5&minus;15 L via ansiktsmask. Ansiktsmask rekommenderas &auml;ven f&ouml;r sm&aring; barn.</li>\n<li>S&auml;tt perifera infarter och p&aring;b&ouml;rja infusion av v&auml;tskebolus.\n<ul>\n<li>Till vuxen patient ges 1000 ml Ringer-acetat p&aring; &le;&nbsp;30 minuter.</li>\n<li>Till barn ges upp till 20 ml/kg Ringer-acetat p&aring; &le;&nbsp;10 minuter via intraven&ouml;s eller intraosse&ouml;s infart. Behandlingen upprepas vid otillr&auml;ckligt svar. Nytillkomna pulmonella rassel och hepatomegali indikerar &ouml;verv&auml;tskning.<br><br></li>\n</ul>\n</li>\n</ul>\n<h3 id=\"Antibiotikabehandling\">Antibiotikabehandling</h3>\n<ul>\n<li>Snabbt insatt adekvat antibiotika &auml;r avg&ouml;rande f&ouml;r framg&aring;ngsrik sepsisbehandling och b&ouml;r ges inom 1 timme efter ankomst till sjukhus (13).</li>\n<li>Vid sv&aring;r sepsis/septisk chock m&aring;ste den initiala behandlingen vara tillr&auml;ckligt bred f&ouml;r att t&auml;cka alla patogener som framst&aring;r som sannolika efter en f&ouml;rsta unders&ouml;kning av patienten. Rekommendationer f&ouml;r initial antibiotikabehandling framg&aring;r av <a href=\"{pre}/-nya-kapitel-ej-publ/Akuta-sv-ra-infektioner-initial-behandling.html#therapy_1_header\">Terapirekommendation &minus; Inledande antibiotikabehandling vid sv&aring;r sepsis/septisk chock.</a></li>\n<li>Om patienten nyligen antibiotikabehandlats, b&ouml;r behandling inledas med ett alternativt preparat pga risk f&ouml;r resistens eller otillr&auml;cklig effekt.</li>\n<li>Vid sv&aring;righeter i antibiotikavalet rekommenderas diskussion med infektionsspecialist oavsett tidpunkt p&aring; dygnet.</li>\n<li>N&auml;r odlingssvar eller resultat fr&aring;n andra prover och unders&ouml;kningar ringat in infektionsorsaken b&ouml;r ett skifte till en smalare antibiotikabehandling snarast ske f&ouml;r att undvika on&ouml;dig resistensutveckling.</li>\n</ul>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "406aa08f-8b76-4f49-a973-c960e30266c2",
+			"name": "406aa08f-8b76-4f49-a973-c960e30266c2",
+			"type": "therapy",
+			"content": {
+				"number": "1",
+				"title": " Inledande antibiotikabehandling vid svår sepsis/septisk chock",
+				"id": "",
+				"text": "<table width=\"751\">\r\n<tbody>\r\n<tr>\r\n<td colspan=\"5\" width=\"751\">\r\n<p><strong>F&ouml;rslag p&aring; inledande antibiotikabehandling vid sv&aring;r sepsis/septisk chock med utg&aring;ngspunkt fr&aring;n misst&auml;nkt fokus. Preparatval kan beh&ouml;va modifieras f&ouml;r patienter med nedsatt immunf&ouml;rsvar samt vid &ouml;kad risk f&ouml;r infektion med multiresistenta bakterier</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"163\">\r\n<p><strong>&nbsp;</strong></p>\r\n<p><strong>Misst&auml;nkt infektionsfokus</strong></p>\r\n<p><strong>&nbsp;</strong></p>\r\n</td>\r\n<td width=\"184\">\r\n<p><strong>&nbsp;Vanliga <br />bakterier</strong></p>\r\n</td>\r\n<td width=\"188\">\r\n<p><strong>Antibiotikaval&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br /></strong></p>\r\n</td>\r\n<td width=\"111\">\r\n<p><strong>&nbsp;</strong></p>\r\n<p><strong>Dosering vuxna&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br /></strong></p>\r\n</td>\r\n<td width=\"106\">\r\n<p><strong>&nbsp;</strong></p>\r\n<p><strong>Dosering&nbsp;&nbsp;&nbsp;&nbsp; barn &gt; 1&nbsp;&aring;r&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br /></strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"163\">\r\n<p>Samh&auml;llsf&ouml;rv&auml;rvad sv&aring;r pneumoni</p>\r\n</td>\r\n<td width=\"184\">\r\n<p><em>Streptococcus pneumoniae, Haemophilus influenzae, Legionella pneumophila, Staphylococcus aureus</em></p>\r\n</td>\r\n<td width=\"188\">\r\n<p>cefotaxim + erytromycin</p>\r\n<p><em>alternativt</em></p>\r\n<p>bensylpenicillin + moxifloxacin</p>\r\n</td>\r\n<td width=\"111\">\r\n<p>2 g x 3</p>\r\n<p>1 g x 3</p>\r\n<p>&nbsp;</p>\r\n<p>3 g x 3</p>\r\n<p>400 mg x 1</p>\r\n</td>\r\n<td width=\"106\">\r\n<p>40 mg/kg x 3<br /> 15 mg/kg x 3</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"163\">\r\n<p>Urinv&auml;gar, okomplicerad</p>\r\n</td>\r\n<td width=\"184\">\r\n<p>Enterobacteriacae<sup>a</sup></p>\r\n</td>\r\n<td width=\"188\">\r\n<p>cefotaxim +</p>\r\n<p>tobramycin eller gentamicin<sup>b</sup></p>\r\n</td>\r\n<td width=\"111\">\r\n<p>2 g x 3</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n</td>\r\n<td width=\"106\">\r\n<p>40 mg/kg x 3</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"163\">\r\n<p>Urinv&auml;gar, komplicerad<br /> (avfl&ouml;deshinder eller KAD)</p>\r\n</td>\r\n<td width=\"184\">\r\n<p>Enterobacteriacae, enterokocker, <em>Pseudomonas aeruginosa</em></p>\r\n</td>\r\n<td width=\"188\">\r\n<p>piperacillin-tazobactam +</p>\r\n<p>tobramycin eller gentamicin<sup>b</sup></p>\r\n<p><em>alternativt</em></p>\r\n<p>karbapenem<sup>c</sup> +</p>\r\n<p>tobramycin el. gentamicin<sup>b</sup></p>\r\n</td>\r\n<td width=\"111\">\r\n<p>4 g x 4</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n<p>&nbsp;</p>\r\n<p>1 g x 3</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n</td>\r\n<td width=\"106\">\r\n<p>80 mg/kg x 4</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n<p>&nbsp;</p>\r\n<p>20 mg/kg x 3</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"163\">\r\n<p>Gallv&auml;gar</p>\r\n</td>\r\n<td width=\"184\">\r\n<p>Enterobacteriacae, enterokocker, anaerober</p>\r\n</td>\r\n<td width=\"188\">\r\n<p>piperacillin-tazobactam +</p>\r\n<p>tobramycin eller gentamicin<sup>b</sup></p>\r\n<p><em>alternativt</em></p>\r\n<p>imipinem-cilastatin +</p>\r\n<p>tobramycin eller gentamicin<sup>b</sup></p>\r\n</td>\r\n<td width=\"111\">\r\n<p>4 g x 4</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n<p>&nbsp;</p>\r\n<p>1 g x 3</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n</td>\r\n<td width=\"106\">\r\n<p>80 mg/kg x 3</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n<p>&nbsp;</p>\r\n<p>20 mg/kg x 3</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"163\">\r\n<p>Buk (peritonit)</p>\r\n</td>\r\n<td width=\"184\">\r\n<p>Enterobacteriacae, anaerober</p>\r\n</td>\r\n<td width=\"188\">\r\n<p>cefotaxim +</p>\r\n<p>metronidazol +</p>\r\n<p>tobramycin eller gentamicin<sup>b</sup></p>\r\n<p><em>alternativt</em></p>\r\n<p>piperacillin-tazobactam +</p>\r\n<p>tobramycin eller gentamicin<sup>b</sup></p>\r\n</td>\r\n<td width=\"111\">\r\n<p>2 g x 3</p>\r\n<p>1,5 g<sup>d</sup> x 1</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n<p>&nbsp;</p>\r\n<p>4 g x 4</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n</td>\r\n<td width=\"106\">\r\n<p>40 mg/kg x 3</p>\r\n<p>30 mg/kg<sup>d</sup> x 1</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n<p>&nbsp;</p>\r\n<p>80 mg/kg x 4</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"163\">\r\n<p>Neutropen feber</p>\r\n</td>\r\n<td width=\"184\">\r\n<p>Streptokocker, <em>Staphylococcus aureus</em>, enterobacteriacae, <em>Pseudomonas aeruginosa</em></p>\r\n</td>\r\n<td width=\"188\">\r\n<p>ceftazidim +</p>\r\n<p>tobramycin eller gentamicin<sup>b</sup></p>\r\n<p><em>alternativt</em></p>\r\n<p>karbapenem<sup>c</sup> +</p>\r\n<p>tobramycin eller gentamicin<sup>b</sup></p>\r\n<p><em>alternativt</em></p>\r\n<p>piperacillin-tazobactam +</p>\r\n<p>tobramycin eller gentamicin<sup>b</sup></p>\r\n</td>\r\n<td width=\"111\">\r\n<p>3 g x 3</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n<p>&nbsp;</p>\r\n<p>1 g x 3</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n<p>&nbsp;</p>\r\n<p>4 g x 4</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n</td>\r\n<td width=\"106\">\r\n<p>50 mg/kg x 3</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n<p>&nbsp;</p>\r\n<p>20 mg/kg x 3<br /> 5&ndash;7 mg/kg</p>\r\n<p>&nbsp;</p>\r\n<p>80 mg/kg x 4</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"163\">\r\n<p>Endokardit</p>\r\n</td>\r\n<td width=\"184\">\r\n<p><em>Staphylococcus aureus</em></p>\r\n</td>\r\n<td width=\"188\">\r\n<p>kloxacillin +</p>\r\n<p>tobramycin eller gentamicin</p>\r\n<p><em>alternativt</em></p>\r\n<p>cefotaxim +</p>\r\n<p>tobramycin eller gentamicin</p>\r\n</td>\r\n<td width=\"111\">\r\n<p>3 g x 4</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n<p>&nbsp;</p>\r\n<p>2 g x 3</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n</td>\r\n<td width=\"106\">\r\n<p>50 mg/kg x 4</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n<p>&nbsp;</p>\r\n<p>40 mg/kg x 3</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"163\">\r\n<p>Ok&auml;nt fokus</p>\r\n</td>\r\n<td width=\"184\">\r\n<p><em>Streptococcus pneumoniae, Neisseria meningitidis, Staphylococcus aureus, </em>enterobacteriacae m.fl.</p>\r\n</td>\r\n<td width=\"188\">\r\n<p>piperacillin-tazobactam +</p>\r\n<p>tobramycin eller gentamicin<sup>b</sup></p>\r\n<p><em>alternativt</em></p>\r\n<p>cefotaxim +</p>\r\n<p>tobramycin eller gentamicin<sup>b</sup></p>\r\n</td>\r\n<td width=\"111\">\r\n<p>4 g x 4</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n<p>&nbsp;</p>\r\n<p>2 g x 3</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n</td>\r\n<td width=\"106\">\r\n<p>80 mg/kg x 4</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n<p>&nbsp;</p>\r\n<p>40 mg/kg x 3</p>\r\n<p>5&ndash;7 mg/kg</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"163\">\r\n<p>Neonatal sepsis</p>\r\n<p>&lt; 72 h efter partus</p>\r\n<p>&nbsp;</p>\r\n<p>&gt; 72 h</p>\r\n</td>\r\n<td width=\"184\">\r\n<p>&nbsp;</p>\r\n<p>Grupp B-streptokocker,</p>\r\n<p>enterobacteriacae.</p>\r\n<p>Som ovan + KNS m.fl.</p>\r\n</td>\r\n<td width=\"188\">\r\n<p>&nbsp;</p>\r\n<p>bensylpenicillin +</p>\r\n<p>tobramycin eller gentamicin</p>\r\n<p>cefotaxim +</p>\r\n<p>tobramycin eller gentamicin</p>\r\n</td>\r\n<td colspan=\"2\" width=\"217\">\r\n<p>Dosering<sup>e</sup></p>\r\n<p>100 mg/kg x 4</p>\r\n<p>5 mg/kg x 1</p>\r\n<p>50 mg/kg x 3</p>\r\n<p>5 mg/kg x 1</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"5\" width=\"751\">\r\n<p>a. Enterobakteriacae innefattar bl.a. <em>Escherichia coli, Klebsiella pneumoniae </em>och<em> Proteus mirabilis</em></p>\r\n<p>b. Vid k&auml;nt b&auml;rarskap eller riskfaktor f&ouml;r ESBL (nyligen vistats i h&ouml;gendemiskt omr&aring;de) ges ist&auml;llet amikacin (Biklin) i dosering 15&ndash;30 mg/kg</p>\r\n<p>c. Med karbapenem avses h&auml;r meropenem eller imipenem-cilastatin</p>\r\n<p>d. Efter f&ouml;rsta laddningsdosen ges metronidazol forts&auml;ttningsvis i dosering 1 g x 1 f&ouml;r vuxna och 20mg/kg x 1 f&ouml;r barn</p>\r\n<p>e. G&auml;ller f&ouml;r gestations&aring;lder &ge; 33 veckor vid partus</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"5\" width=\"751\">\r\n<p>Vid septisk chock har patienter en &ouml;kad distributionsvolym f&ouml;r vattenl&ouml;sliga antibiotika. F&ouml;r att snabbt uppn&aring; terapeutiska antibiotikakoncentrationer b&ouml;r man d&auml;rf&ouml;r ge <strong>en extra dos av betalaktamantibiotika</strong> (penicilliner, cefalosporiner och karbapenemer) mellan f&ouml;rsta och andra ordinarie dos.</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "987faa7f-5298-40c6-b39d-534a2698f615",
+			"name": "987faa7f-5298-40c6-b39d-534a2698f615",
+			"type": "text",
+			"content": "<h3 id=\"Principer-for-dosering-av-vanliga-antibiotika-vid-svar-sepsis-och-septisk-chock\">Principer f&ouml;r dosering av vanliga antibiotika vid sv&aring;r sepsis och septisk chock</h3>\n<p>P&aring; grund av de fysiologiska f&ouml;r&auml;ndringar som sker vid sepsis (kapill&auml;rl&auml;ckage och expansion av extracellu&auml;rv&auml;tskan) &auml;r distributionsvolymen f&ouml;r vattenl&ouml;sliga l&auml;kemedel ofta kraftigt f&ouml;rh&ouml;jd, vilket p&aring;verkar doseringen vid empirisk behandling med aminoglykosider och betalaktamantibiotika (penicilliner, cefalosporiner och karbapenemer).</p>\n<p class=\"indent\">Aminoglykosider har en snabb dosberoende baktericid effekt, vilket efterstr&auml;vas vid sepsis. D&auml;rf&ouml;r rekommenderas att samtliga patienter med septisk chock eller hotande septisk chock f&aring;r en h&ouml;g eng&aring;ngsdos av en aminoglykosid. Genom att endast en dos aminoglykosid ges minimeras risken f&ouml;r dess toxiska biverkningar. I till&auml;gg p&aring;b&ouml;rjas fortl&ouml;pande behandling med annat l&auml;mpligt preparat, vanligen ett betalaktamantibiotikum (se <a href=\"{pre}/-nya-kapitel-ej-publ/Akuta-sv-ra-infektioner-initial-behandling.html#therapy_1_header\">Terapirekommendationer &minus; Inledande antibiotikabehandling vid sv&aring;r sepsis/septisk chock</a>).</p>\n<p class=\"indent\">Till skillnad fr&aring;n aminoglykosidernas koncentrationsberoende avd&ouml;dning &auml;r den antibakteriella effekten av betalaktamantibiotika beroende av tiden &ouml;ver MIC, vilket g&ouml;r att dessa l&auml;kemedel, som vanligen har en kort halveringstid, m&aring;ste doseras ofta f&ouml;r att uppn&aring; adekvata koncentrationer. Ett teoretiskt tilltalande alternativ till intermittent dosering vore att ge l&auml;kemedlet som kontinuerlig infusion f&ouml;r att s&auml;kerst&auml;lla erforderliga koncentrationer &ouml;ver MIC (16). Detta har pr&ouml;vats i ett flertal randomiserade studier, men sammanfattningsvis har n&aring;gra f&ouml;rdelar med detta f&ouml;rfarande inte kunnat p&aring;visas (17-19). Vid septisk chock rekommenderas i st&auml;llet att en extra dos av betalaktamantibiotika ges efter halva dosintervallet mellan f&ouml;rsta och andra dosen. Detta g&auml;ller &auml;ven om patienten har en d&aring;lig diures och/eller stegrat kreatininv&auml;rde.</p>\n<p>&nbsp;</p>\n<h3 id=\"Atgardande-av-infektionsfokus\">&Aring;tg&auml;rdande av infektionsfokus</h3>\n<p>Vissa infektioner, t&nbsp;ex abscesser och empyem, kr&auml;ver dr&auml;nering eller kirurgi f&ouml;r framg&aring;ngsrik behandling. Detta b&ouml;r ske s&aring; fort patientens tillst&aring;nd stabiliserats och senast inom 12 timmar fr&aring;n diagnos (15).</p>\n<p>&nbsp;</p>\n<h3 id=\"Overvakning-och-uppfoljning\">&Ouml;vervakning och uppf&ouml;ljning</h3>\n<p>M&aring;let med den initiala behandlingen &auml;r att snabbt stabilisera vitala fysiologiska funktioner. Om s&aring; inte sker kr&auml;vs v&aring;rdinsatser som vanligen endast kan ges p&aring; intensiv- eller intermedi&auml;rv&aring;rdsavdelningar. Vitalparametrar ska d&auml;rf&ouml;r f&ouml;ljas aktivt till patienten &auml;r varaktigt stabiliserad.</p>\n<p class=\"indent\">Den f&ouml;rsta kontrollen av vitalparametrar efter p&aring;b&ouml;rjad behandling b&ouml;r ske senast d&aring; initial v&auml;tskebolus g&aring;tt in. M&aring;let inom en timme efter inledd behandling &auml;r ett systoliskt blodtryck &gt;&nbsp;90&nbsp;mmHg och en syrgassaturation &gt;&nbsp;93&nbsp;%. Vid uppfyllda m&aring;l kan fortsatta kontroller vanligen tas en g&aring;ng per timme, annars beh&ouml;vs t&auml;tare kontroller f&ouml;r att &ouml;vervaka utvecklingen och kunna ta st&auml;llning till behovet av intensivv&aring;rdskontakt. Se Faktaruta 6 f&ouml;r vitalparametrar som b&ouml;r f&ouml;ljas.</p>\n<p class=\"indent\">Efter 3&minus;6&nbsp;timmar b&ouml;r en utv&auml;rdering alltid ske och d&aring; kontrolleras &aring;ter laktat. Vid tidigare laktatstegring &auml;r m&aring;let en sjunkande niv&aring;, samtidigt som en normalisering av urinproduktionen (&gt;&nbsp;0,5 ml/kg/timme) b&ouml;r ha uppn&aring;tts. Om dessa m&aring;l inte n&aring;tts eller om f&ouml;rs&auml;mring intr&auml;tt b&ouml;r fortsatt handl&auml;ggning diskuteras med intensivv&aring;rdsl&auml;kare. I Faktaruta 7 redovisas de patofysiologiska fynd som b&ouml;r f&ouml;ranleda intensivv&aring;rdskontakt.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d9e63b97-a588-4244-adb6-e1cdac4bc29f",
+			"name": "d9e63b97-a588-4244-adb6-e1cdac4bc29f",
+			"type": "facts",
+			"content": {
+				"number": "6",
+				"title": "Vitalparametrar som bör följas vid svår sepsis",
+				"text": "<p><strong>Cirkulation</strong></p>\r\n<ul>\r\n<li>Blodtryck</li>\r\n<li>Hj&auml;rtfrekvens</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n<p><strong>Andning</strong></p>\r\n<ul>\r\n<li>Andningsfrekvens</li>\r\n<li>Syrgassaturation</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n<p><strong>Centrala nervsystemet</strong></p>\r\n<ul>\r\n<li>Orientering</li>\r\n<li>Medvetandegrad</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n<p><strong>Njurfunktion</strong></p>\r\n<ul>\r\n<li>Urinproduktion</li>\r\n</ul>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4deb7ecb-b648-4c0b-a7ac-c144500418e3",
+			"name": "4deb7ecb-b648-4c0b-a7ac-c144500418e3",
+			"type": "facts",
+			"content": {
+				"number": "7",
+				"title": "När ska intensivvårdsläkare kontaktas?",
+				"text": "<ul>\r\n<li>Vid systoliskt blodtryck &lt;&nbsp;90&nbsp;mmHg efter v&auml;tskebolus 30&nbsp;ml/kg</li>\r\n<li>Vid saturation &lt;&nbsp;90&nbsp;% och/eller andningsfrekvens &gt;&nbsp;30/min<sup>a</sup> vid 15&nbsp;L&nbsp;O<sub>2</sub> p&aring; mask</li>\r\n<li>Of&ouml;r&auml;ndrat h&ouml;gt (&gt;&nbsp;3&nbsp;mmol/L) eller stigande laktat eller of&ouml;r&auml;ndrad eller &ouml;kande metabol acidos (BE&nbsp;&lt; -5 mmol/L) efter v&auml;tskebolus 30 ml/kg</li>\r\n<li>Kvarst&aring;ende oliguri (&lt;&nbsp;0,5 ml/kg/timme) trots v&auml;tskebolus</li>\r\n<li>Grav koagulopati</li>\r\n<li>Sjunkande medvetandegrad</li>\r\n</ul>\r\n<p></p>\r\n<p><sup>a </sup>F&ouml;r barn g&auml;ller &gt;&nbsp;2 standarddeviationer f&ouml;r &aring;ldern.</p>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a7e4fc3d-30d8-42a8-b939-bb7d745ab7b3",
+			"name": "a7e4fc3d-30d8-42a8-b939-bb7d745ab7b3",
+			"type": "text",
+			"content": "<h2 id=\"Ytterligare-fakta\"><strong>Ytterligare fakta</strong></h2>\n<p><strong></strong>En mer komplett beskrivning av handl&auml;ggningen av patienter med sv&aring;r sepsis och septisk chock &aring;terfinns i Svenska Infektionsl&auml;karf&ouml;reningens evidensbaserade v&aring;rdprogram f&ouml;r sv&aring;r sepsis och septisk chock som kan laddas ner fr&aring;n f&ouml;reningens hemsida, <a href=\"http://www.infektion.net\">www.infektion.net</a>.</p>\n<p class=\"indent\">F&ouml;r en n&auml;rmare beskrivning av behandling vid neonatal sepsis h&auml;nvisas till <a href=\"https://lakemedelsverket.se/upload/halso-och-sjukvard/behandlingsrekommendationer/Rev%20130806_Rekommendation_neonatal%20sepsis_webb.pdf\">L&auml;kemedelsverkets behandlingsrekommendation f&ouml;r neonatal sepsis</a> fr&aring;n 2013.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8cc0e746-a840-4dce-ab51-e5a701147856",
+			"name": "8cc0e746-a840-4dce-ab51-e5a701147856",
+			"type": "text",
+			"content": "<h2 id=\"Meningit-och-encefalit-hos-vuxna\"><strong>Meningit och encefalit hos vuxna</strong></h2>\n<p><strong></strong>Akut bakteriell meningit (ABM) &auml;r en ovanlig sjukdom som i Sverige &aring;rligen drabbar drygt hundra vuxna individer. &Auml;ven bland barn &auml;r sjukdomen s&auml;llsynt och incidensen sj&ouml;nk dramatiskt efter att man 1993&ndash;1994 inf&ouml;rde allm&auml;n barnvaccination mot <em>Haemophilus influenzae</em> typ B. Pneumokocker &auml;r den dominerande bakterien i alla &aring;ldersgrupper efter nyf&ouml;ddhetsperioden och bland vuxna &aring;terfinns pneumokocker i drygt h&auml;lften av fallen. Efter inf&ouml;randet av pneumokockvaccin i barnvaccinationsprogrammet 2009 har man p&aring;visat minskad f&ouml;rekomst av invasiva pneumokockinfektioner, d&auml;ribland meningit, inom de vaccinerade &aring;ldersgrupperna.</p>\n<p class=\"indent\">Meningokocker &auml;r den n&auml;st vanligaste bakterien vid ABM i Sverige och &aring;terfinns i drygt 10&nbsp;% av fallen. F&ouml;rekomsten &auml;r h&ouml;gst bland ton&aring;ringar och unga vuxna men meningokockmeningit kan upptr&auml;da i alla &aring;ldrar. <em>Listeria monocytogenes </em>f&ouml;rekommer framf&ouml;r allt bland &auml;ldre individer och hos personer med nedsatt immunf&ouml;rsvar. Inom dessa grupper ses ocks&aring; en h&ouml;gre f&ouml;rekomst av andra ovanliga agens s&aring;som <em>Haemophilus influenzae, Staphylococcus aureus</em> och gramnegativa tarmbakterier.</p>\n<p class=\"indent\">Viral meningit &auml;r cirka 10&nbsp;g&aring;nger vanligare &auml;n ABM och &auml;r en mer godartad sjukdom. Vanligaste agens &auml;r herpes simplexvirus (HSV) typ 2, enterovirus och varicella zostervirus (VZV).</p>\n<p>Virusencefalit &auml;r ett allvarligare tillst&aring;nd som &aring;rligen drabbar ett par hundra personer. F&auml;stingburen virusencefalit (&rdquo;tick-borne encephalitis&rdquo;; TBE) har under de senaste &aring;rtiondena etablerat sig i den s&ouml;dra halvan av Sverige och &auml;r med 150&ndash;200 fall per &aring;r numera vanligaste agens vid viral encefalit. Encefalit orsakad av herpes (HSV typ 1) drabbar &aring;rligen 20&ndash;40 personer. I enstaka fall kan encefalit orsakas &auml;ven av virus som f&ouml;retr&auml;desvis f&ouml;rknippas med meningit.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fcb1d541-94fd-4ed2-af0e-29555462540f",
+			"name": "fcb1d541-94fd-4ed2-af0e-29555462540f",
+			"type": "text",
+			"content": "<h2 id=\"Klinisk-bild-\"><strong>Klinisk bild </strong></h2>\n<p><strong></strong>Insjuknandet i ABM &auml;r ofta dramatiskt med en sjukdomsprogress som i typfallet utvecklas under loppet av n&aring;gra timmar eller som h&ouml;gst upp till ett dygn. I cirka h&auml;lften av fallen &auml;r meningitinsjuknandet sekund&auml;rt till andra infektioner, vanligen sinuit, mediaotit eller pneumoni.</p>\n<p>Den klassiska triaden med feber, huvudv&auml;rk och nackstyvhet f&ouml;rekommer endast i h&auml;lften av fallen medan minst tv&aring; av symtomen feber, huvudv&auml;rk, nackstyvhet eller medvetandep&aring;verkan ses hos 95&nbsp;% av vuxna individer med ABM (20). Illam&aring;ende och kr&auml;kningar f&ouml;rekommer hos flertalet patienter med ABM.</p>\n<p class=\"indent\">Viral meningit har en lindrigare symtombild &auml;n ABM med b&auml;ttre allm&auml;ntillst&aring;nd och op&aring;verkad medvetandeniv&aring;.</p>\n<p class=\"indent\">Det kliniska f&ouml;rloppet vid TBE &auml;r vanligen bifasiskt d&auml;r den f&ouml;rsta fasen upptr&auml;der 1&ndash;4&nbsp;veckor efter infektionstillf&auml;llet och pr&auml;glas av feber och muskelv&auml;rk som spontant klingar av efter n&aring;gra dagar. Cirka en vecka senare debuterar den encefalitiska fasen med feber och olika grader av CNS-p&aring;verkan med ataxi och tremor, kognitiv p&aring;verkan och ibland pareser.</p>\n<p class=\"indent\">Symtombilden vid herpesencefalit karakt&auml;riseras av feber, huvudv&auml;rk samt varierande grad av generella och fokala CNS-symtom som f&ouml;rvirring, dysfasi, personlighetsf&ouml;r&auml;ndring, kramper och pareser. Sjukdomsutvecklingen sker i typfallet n&aring;got l&aring;ngsammare &auml;n vid ABM och pr&auml;glas oftare av fokalneurologiska manifestationer men det &auml;r s&auml;llan m&ouml;jligt att enbart med ledning av den kliniska bilden s&auml;kert skilja herpesencefalit fr&aring;n ABM.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f2bb3969-ff7e-458a-85b6-633e8593a086",
+			"name": "f2bb3969-ff7e-458a-85b6-633e8593a086",
+			"type": "text",
+			"content": "<h3 id=\"Diagnostik\"><strong>Diagnostik</strong></h3>\n<p>I flertalet fall ska LP genomf&ouml;ras direkt vid misstanke om ABM eller viral encefalit. I f&ouml;ljande fall b&ouml;r LP undvikas eller senarel&auml;ggas:</p>\n<ul>\n<li>Vid fokala neurologiska bortfall. S&aring;dana symtom kan f&ouml;rekomma vid ABM eller encefalit men kan ocks&aring; vara sekund&auml;ra till en fokal expansiv process (hj&auml;rnabscess, tum&ouml;r eller bl&ouml;dning). Vid fokal process kan LP medf&ouml;ra massf&ouml;rskjuting och risk f&ouml;r cerebral inkl&auml;mning. Fokala neurologiska symtom utg&ouml;r indikation f&ouml;r akut datortomografi (DT) av hj&auml;rnan.</li>\n<li>Vid manifest eller hotande cerebral inkl&auml;mning (medvetsl&ouml;shet med str&auml;ckkramper).</li>\n<li>Vid risk f&ouml;r allvarlig stickbl&ouml;dning (behandling med warfarin eller andra potenta antikoagulantia) (21).</li>\n</ul>\n<p>Grumlig likvor talar entydigt f&ouml;r ABM men klar likvor utesluter inte bakteriell meningit. F&ouml;rh&ouml;jt likvortryck (&ge;&nbsp;20 cm H<sub>2</sub>O) talar f&ouml;r ABM men kan &auml;ven f&ouml;rekomma vid t&nbsp;ex herpesencefalit.</p>\n<p>&nbsp;</p>\n<h4 id=\"Kemiska-likvoranalyser\">Kemiska likvoranalyser</h4>\n<p>Vid meningit- eller encefalit-misstanke skall likvorproverna omfatta cellr&auml;kning, albumin, glukos (med best&auml;mning av likvor-serum kvot) och laktat. Se Faktaruta 8 f&ouml;r typiska niv&aring;er.</p>\n<p><strong>&nbsp;</strong></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "040308f5-4a69-4742-8b1d-3de231dcf6d2",
+			"name": "040308f5-4a69-4742-8b1d-3de231dcf6d2",
+			"type": "facts",
+			"content": {
+				"number": "8",
+				"title": "Typiska nivåer för kemiska likvoranalyser vid akut bakteriell meningit respektive viral meningit/encefalit",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td width=\"245\">\r\n<p><strong>Analys</strong></p>\r\n</td>\r\n<td width=\"142\">\r\n<p><strong>Akut bakteriell meningit</strong><sup>a</sup></p>\r\n</td>\r\n<td width=\"154\">\r\n<p><strong>Viral meningit/encefalit</strong><sup>a</sup></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"245\">\r\n<p>Grumlig likvor?</p>\r\n</td>\r\n<td width=\"142\">\r\n<p>oftast grumlig</p>\r\n</td>\r\n<td width=\"154\">\r\n<p>aldrig grumlig</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"245\">\r\n<p>Likvortryck (cm H<sub>2</sub>0)</p>\r\n</td>\r\n<td width=\"142\">\r\n<p>oftast &ge; 20</p>\r\n</td>\r\n<td width=\"154\">\r\n<p>oftast &lt; 20</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"245\">\r\n<p>Leukocyter (x 10<sup>6</sup>/L)</p>\r\n</td>\r\n<td width=\"142\">\r\n<p>&gt; 500</p>\r\n</td>\r\n<td width=\"154\">\r\n<p>&lt; 500</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"245\">\r\n<p>Polymorfk&auml;rniga vs. mononukle&auml;ra leukocyter</p>\r\n</td>\r\n<td width=\"142\">\r\n<p>polydominans</p>\r\n</td>\r\n<td width=\"154\">\r\n<p>monodominans</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"245\">\r\n<p>Glukos (mmol/L)</p>\r\n</td>\r\n<td width=\"142\">\r\n<p>&lt; 2</p>\r\n</td>\r\n<td width=\"154\">\r\n<p>&gt; 2</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"245\">\r\n<p>Glukoskvot (likvor/plasma)</p>\r\n</td>\r\n<td width=\"142\">\r\n<p>&le; 0,4</p>\r\n</td>\r\n<td width=\"154\">\r\n<p>&gt; 0,4</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"245\">\r\n<p>Albumin (mg/L)</p>\r\n</td>\r\n<td width=\"142\">\r\n<p>&gt; 1000</p>\r\n</td>\r\n<td width=\"154\">\r\n<p>&lt; 1000</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"245\">\r\n<p>Laktat (mmol/L)</p>\r\n</td>\r\n<td width=\"142\">\r\n<p>&ge; 3,5</p>\r\n</td>\r\n<td width=\"154\">\r\n<p>&lt; 3,5</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>\r\n<p><sup>a</sup> V&auml;rdena anger endast <em>typiska</em> niv&aring;er/koncentrationer. Det f&ouml;rekommer t&nbsp;ex ov&auml;ntat l&aring;ga celltal i vissa fall av ABM och vid LP ett par dagar efter p&aring;b&ouml;rjad antibiotikabehandling mot ABM ses ofta en \"viral\" likvorprofil.</p>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f43b4993-89ff-4363-abb1-a2bae45dbdf5",
+			"name": "f43b4993-89ff-4363-abb1-a2bae45dbdf5",
+			"type": "text",
+			"content": "<h4 id=\"Mikrobiologiska-analyser\">Mikrobiologiska analyser</h4>\n<p>Vid ABM-misstanke tas odlingar fr&aring;n likvor, blod och nasofarynx. Bakterie-PCR p&aring; likvor (16srRNA eller multiplex) har h&ouml;gre sensitivitet &auml;n odling men ger inte besked om bakteriens resistensm&ouml;nster.</p>\n<p class=\"indent\">Vanligaste agens vid viral meningit och encefalit (VZV, HSV typ 1 och 2, och enterovirus) kan p&aring;visas med PCR i likvor. PCR-test f&ouml;r HSV&ndash;1 kan vara negativ de f&ouml;rsta dagarna vid herpesencefalit varf&ouml;r LP med PCR b&ouml;r upprepas om misstanke kvarst&aring;r.</p>\n<p class=\"indent\">TBE diagnostiseras genom p&aring;visande av antikroppar i serum.</p>\n<p>&nbsp;</p>\n<h4 id=\"Radiologiska-undersokningar\">Radiologiska unders&ouml;kningar</h4>\n<p>DT eller magnetresonanstomografi (MR) g&ouml;rs i akutskedet fr&auml;mst vid differentialdiagnostiska &ouml;verv&auml;ganden om hj&auml;rnabscess eller annan fokal intrakraniell process samt vid misstanke om herpesencefalit. I dessa fall ska den f&ouml;rsta dosen av adekvat antibiotika samt kortison ges innan den radiologiska unders&ouml;kningen genomf&ouml;rs!</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "713b2256-739f-45dd-893d-1e39ea51835f",
+			"name": "713b2256-739f-45dd-893d-1e39ea51835f",
+			"type": "text",
+			"content": "<h3 id=\"Behandling\"><strong>Behandling</strong></h3>\n<h4 id=\"Antibiotikabehandling\">Antibiotikabehandling</h4>\n<p>Antibiotikabehandlingen m&aring;ste startas utan f&ouml;rdr&ouml;jning. P&aring; akutmottagningar inneb&auml;r detta att behandlingen b&ouml;r ha p&aring;b&ouml;rjats senast en timme efter patientens ankomst. Om ABM misst&auml;nks p&aring; v&aring;rdcentral eller under ambulanstransport och transporttiden ber&auml;knas &ouml;verskrida en timme b&ouml;r antibiotikabehandlingen om m&ouml;jligt p&aring;b&ouml;rjas p&aring; plats.</p>\n<p class=\"indent\">P&aring; grund av f&ouml;rsv&aring;rad l&auml;kemedelstransport &ouml;ver blod-likvorbarri&auml;ren m&aring;ste man vid ABM ge antibiotika i h&ouml;ga doser. F&ouml;r f&ouml;rslag till antibiotikaval samt dosering se Terapirekommendationer vid akut bakteriell meningit.</p>\n<p class=\"indent\">Till&auml;ggsbehandling med steroider vid ABM motverkar tendensen till hj&auml;rnsvullnad och har visats s&auml;nka d&ouml;dligheten och minska f&ouml;rekomsten av neurologiska resttillst&aring;nd (22). Steroidbehandlingen ska p&aring;b&ouml;rjas samtidigt med antibiotikabehandlingen. Ge betametason 0,12 mg/kg kroppsvikt 4&nbsp;g&aring;nger/dygn i 4&nbsp;dygn. Maximalt ges 8&nbsp;mg/dos.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ddc465f3-a36e-45fe-93e9-1973d994784b",
+			"name": "ddc465f3-a36e-45fe-93e9-1973d994784b",
+			"type": "therapy",
+			"content": {
+				"number": "2",
+				"title": "Förslag till intravenös antibiotikabehandling vid akut bakteriell meningit",
+				"id": "",
+				"text": "<table width=\"671\">\r\n<tbody>\r\n<tr>\r\n<td width=\"186\">\r\n<p><strong>Bakgrund/bakterie</strong></p>\r\n</td>\r\n<td width=\"120\">\r\n<p><strong>Antibiotika</strong></p>\r\n</td>\r\n<td width=\"121\">\r\n<p><strong>Dosering vuxna</strong></p>\r\n</td>\r\n<td width=\"112\">\r\n<p><strong>Dosering barn</strong></p>\r\n</td>\r\n<td width=\"132\">\r\n<p><strong>Behandlingstid</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"186\">\r\n<p>Inledande behandling <sup>a</sup></p>\r\n</td>\r\n<td width=\"120\">\r\n<p>cefotaxim</p>\r\n<p>+ ampicillin<sup>b</sup></p>\r\n<p><em>alternativt</em></p>\r\n<p>meropenem</p>\r\n</td>\r\n<td width=\"121\">\r\n<p>3 g x 4</p>\r\n<p>3 g x 4</p>\r\n<p>&nbsp;</p>\r\n<p>2 g x 3</p>\r\n</td>\r\n<td width=\"112\">\r\n<p>50 mg/kg x 4</p>\r\n<p>50 mg/kg x 4</p>\r\n<p>&nbsp;</p>\r\n<p>40 mg/kg x 3</p>\r\n</td>\r\n<td width=\"132\">\r\n<p>&nbsp;</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"186\">\r\n<p>Vid <em>allvarlig &ouml;verk&auml;nslighet</em> <sup>c </sup>mot betalaktamantibiotika <sup>d</sup></p>\r\n</td>\r\n<td width=\"120\">\r\n<p>moxifloxacin<br /> + vancomycin</p>\r\n</td>\r\n<td width=\"121\">\r\n<p>400 mg x 1</p>\r\n<p>1 g x 3</p>\r\n</td>\r\n<td width=\"112\">\r\n<p>20 mg/kg x 1</p>\r\n<p>20 mg/kg x 2</p>\r\n</td>\r\n<td width=\"132\">\r\n<p>&nbsp;</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"186\">\r\n<p><em>Streptococcus pneumoniae</em></p>\r\n</td>\r\n<td width=\"120\">\r\n<p>bensylpenicillin</p>\r\n<p><em>alternativt</em></p>\r\n<p>cefotaxim</p>\r\n</td>\r\n<td width=\"121\">\r\n<p>3 g x 4</p>\r\n<p>&nbsp;</p>\r\n<p>3 g x 4</p>\r\n</td>\r\n<td width=\"112\">\r\n<p>50 mg/kg x 4</p>\r\n<p>&nbsp;</p>\r\n<p>50 mg/kg x 4</p>\r\n</td>\r\n<td width=\"132\">\r\n<p>10&ndash;14 dagar</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"186\">\r\n<p><em>Neisseria meningitidis</em></p>\r\n</td>\r\n<td width=\"120\">\r\n<p>bensylpenicillin</p>\r\n</td>\r\n<td width=\"121\">\r\n<p>3 g x 4</p>\r\n</td>\r\n<td width=\"112\">\r\n<p>50 mg/kg x 4</p>\r\n</td>\r\n<td width=\"132\">\r\n<p>7 dagar</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"186\">\r\n<p><em>Haemophilus influenzae</em></p>\r\n</td>\r\n<td width=\"120\">\r\n<p>cefotaxim</p>\r\n</td>\r\n<td width=\"121\">\r\n<p>3 g x 4</p>\r\n</td>\r\n<td width=\"112\">\r\n<p>50 mg/kg x 4</p>\r\n</td>\r\n<td width=\"132\">\r\n<p>10&ndash;14 dagar</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"186\">\r\n<p><em>Staphylococcus aureus</em></p>\r\n</td>\r\n<td width=\"120\">\r\n<p>cefuroxim</p>\r\n</td>\r\n<td width=\"121\">\r\n<p>3 g x 4</p>\r\n</td>\r\n<td width=\"112\">\r\n<p>50 mg/kg x 4</p>\r\n</td>\r\n<td width=\"132\">\r\n<p>14&ndash;21 dagar</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"186\">\r\n<p><em>Listeria monocytogenes</em></p>\r\n</td>\r\n<td width=\"120\">\r\n<p>ampicillin</p>\r\n</td>\r\n<td width=\"121\">\r\n<p>3 g x 4</p>\r\n</td>\r\n<td width=\"112\">\r\n<p>50 mg/kg x 4</p>\r\n</td>\r\n<td width=\"132\">\r\n<p>14&ndash;21 dagar</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"186\">\r\n<p><em>Escherichia coli/<br /> Klebsiella pneumoniae</em></p>\r\n</td>\r\n<td width=\"120\">\r\n<p>cefotaxim</p>\r\n<p><em>alternativt</em></p>\r\n<p>meropenem</p>\r\n</td>\r\n<td width=\"121\">\r\n<p>3 g x 4</p>\r\n<p>&nbsp;</p>\r\n<p>2 g x 3</p>\r\n</td>\r\n<td width=\"112\">\r\n<p>50 mg/kg x 4</p>\r\n<p>&nbsp;</p>\r\n<p>40 mg/kg x 3</p>\r\n</td>\r\n<td width=\"132\">\r\n<p>14&ndash;21 dagar</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"5\" width=\"671\">\r\n<p>a. Vid l&aring;ng transportv&auml;g (&gt; 30 min) kan prehospital antibiotikabehandling &ouml;verv&auml;gas (cefotaxim 3 g alternativt ceftriaxon 4 g)</p>\r\n<p>b. Till&auml;gg av ampicillin till cefotaxim till barn &lt; 3 m&aring;n, till patienter &gt; 15 &aring;r samt till immunsupprimerade individer f&ouml;r att &auml;ven t&auml;cka <em>L. monocytogenes</em></p>\r\n<p>c. Allvarlig &ouml;verk&auml;nslighet inneb&auml;r angio&ouml;dem, luftv&auml;gsobstruktivitet eller anafylaktisk chock</p>\r\n<p>d. Vid risk f&ouml;r <em>L. monocytogenes</em> (enligt b) ges &auml;ven trimetoprim-sufametoxazol (Eusaprim koncentrat till infusionsv&auml;tska, l&ouml;sning 16 mg/ml + 80 mg/ml) 20 ml x 2 intraven&ouml;st till vuxen (barn 0,375 ml/kg kroppsvikt x 2 intraven&ouml;st)</p>\r\n<p>&nbsp;</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "915880b7-a05a-44c2-bd6a-1dcce5fe7fea",
+			"name": "915880b7-a05a-44c2-bd6a-1dcce5fe7fea",
+			"type": "text",
+			"content": "<h4 id=\"Ovrig-behandling\">&Ouml;vrig behandling</h4>\n<p>Patienten ska v&aring;rdas p&aring; enhet med m&ouml;jlighet till &ouml;vervakning av vitalfunktioner och neurologiskt status. Puls, blodtryck, vakenhetsgrad, pupillreaktioner och andningsfrekvens ska &ouml;vervakas och dokumenteras till dess patienten uppvisar &ouml;vertygande tecken till f&ouml;rb&auml;ttring.</p>\n<p class=\"indent\">Vakenhetsskattning b&ouml;r genomf&ouml;ras med validerade po&auml;ngsystem som Glasgow coma scale (GCS) eller RLS 85.</p>\n<p class=\"indent\">F&ouml;r att minska risken f&ouml;r hj&auml;rnsvullnad och hj&auml;rnskadeutveckling b&ouml;r man undvika &ouml;verv&auml;tskning, uppr&auml;tth&aring;lla normal elektrolytbalans och normoglykemi samt s&auml;nka f&ouml;rh&ouml;jd kroppstemperatur med i f&ouml;rsta hand paracetamol.</p>\n<p class=\"indent\">Vid kramper b&ouml;r krampf&ouml;rebyggande behandling med t&nbsp;ex fenytoin &ouml;verv&auml;gas.</p>\n<p class=\"indent\">Vid nedsatt vakenhet b&ouml;r &ouml;vervakningen ske p&aring; intensivv&aring;rdsavdelning och vid tecken p&aring; kraftigt f&ouml;rh&ouml;jt intrakraniellt tryck och hotande inkl&auml;mning (okontaktbar, stark motorisk oro, kramper, &ouml;gonmuskelpareser eller pupilldilatation) b&ouml;r man ta kontakt med neurokirurgisk enhet. I vissa fall kan det bli aktuellt med intrakraniell tryckm&auml;tning och specifik trycks&auml;nkande behandling (23).</p>\n<p class=\"indent\"></p>\n<h4 id=\"Behandling-av-virusencefalit\">Behandling av virusencefalit</h4>\n<p>Herpesencefalit behandlas med aciklovir i dosering 10 mg/kg x 3 intraven&ouml;st i 14&minus;21 dagar (24). H&ouml;gre dos, 15 mg/kg kroppsvikt x 3, kan &ouml;verv&auml;gas till unga, njurfriska individer.</p>\n<p class=\"indent\">F&ouml;r TBE finns ingen specifik antiviral behandling.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "aa6ec4d3-eab9-498f-9f46-721cbc001242",
+			"name": "aa6ec4d3-eab9-498f-9f46-721cbc001242",
+			"type": "text",
+			"content": "<h3 id=\"Prognos-\"><strong>Prognos </strong></h3>\n<p>I Sverige &auml;r mortaliteten vid ABM hos vuxna strax under 10&nbsp;% vilket &auml;r l&aring;gt i j&auml;mf&ouml;relse vad som rapporteras fr&aring;n andra l&auml;nder med j&auml;mf&ouml;rbar levnadsstandard.</p>\n<p class=\"indent\">Drygt 25&nbsp;% av de &ouml;verlevande drabbas av best&aring;ende neurologiska handikapp d&auml;r h&ouml;rselneds&auml;ttning och kognitiv p&aring;verkan &auml;r de vanligaste resttillst&aring;nden. Viral meningit ger mycket s&auml;llan upphov till best&aring;ende handikapp medan f&ouml;rekomsten av permanenta neurologiska sekvele &auml;r betydande efter herpesencefalit och TBE.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a8018df6-607d-46ef-8185-2b0cf412da20",
+			"name": "a8018df6-607d-46ef-8185-2b0cf412da20",
+			"type": "text",
+			"content": "<h3 id=\"Ytterligare-fakta\"><strong>Ytterligare fakta</strong></h3>\n<p>Se Infektionsl&auml;karf&ouml;reningens v&aring;rdprogram f&ouml;r virala och bakteriella CNS-infektioner, <a href=\"http://www.infektion.net\">www.infektion.net.</a></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "26f04e51-519a-4f36-8345-0f2635eccc4a",
+			"name": "26f04e51-519a-4f36-8345-0f2635eccc4a",
+			"type": "text",
+			"content": "<h1>Rubrik</h1>\n<p>Text</p>",
+			"settings": {}
+		},
+		{
+			"id": "39c2dfc4-a076-4916-9ad7-00b62659c831",
+			"name": "4b431ab4-703a-4523-99d4-f8f1512ebe41",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2><ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/-nya-kapitel-ej-publ/Akuta-sv-ra-infektioner-initial-behandling.json",
+	"indexed": "true",
+	"modified": "2016-03-22 15:18"
+}

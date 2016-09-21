@@ -1,0 +1,65 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "Fler reviderade kapitel",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "nyhet",
+	"created": "2016-07-11 15:18",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "89288453-0a14-4749-9408-b54fe741f45c",
+			"name": "34f81722-f1b3-4769-a9b1-fbcbd4885a63",
+			"type": "summary",
+			"content": "<p>Nu har vi publicerat tv&aring; nyreviderade kapitel p&aring; <a href=\"http://www.lakemedelsboken.se\">www.lakemedelsboken.se<br /><br /></a>Det g&auml;ller:<br /><br /></p>\n<p></p>\n<ul>\n<li><a href=\"http://lakemedelsboken.se/kapitel/lakemedelsanvandning/kliniskt_farmakologiska_principer.html\">Kliniskt farmakologiska principer</a></li>\n<li><a href=\"http://lakemedelsboken.se/kapitel/regelverket_och_it-stod/godkannande_av_lakemedel.html\">Godk&auml;nnande av l&auml;kemedel</a></li>\n</ul>\n<p><br />Detta inneb&auml;r att versionerna av ovanst&aring;ende kapitel i den tryckta boken LB 2014 inte l&auml;ngre &auml;r aktuella.</p>\n<p></p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "392fe1e0-ebef-4e98-9ef8-6d30ee87d318",
+			"name": "f9b9e688-719d-4abc-bafa-ca76ea175bd3",
+			"type": "text",
+			"content": "<h1 id=\"Rubrik\">Rubrik</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/blog/Fler-reviderade-kapitel.json",
+	"indexed": "true",
+	"modified": "2016-07-11 15:26"
+}

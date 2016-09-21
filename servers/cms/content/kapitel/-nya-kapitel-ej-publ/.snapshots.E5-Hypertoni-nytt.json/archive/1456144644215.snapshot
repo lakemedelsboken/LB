@@ -1,0 +1,123 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Hypertoni",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2016-02-22 12:17",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Kristina Bengtsson Boström, Karin Manhem",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "4abddc20-0d7a-4f9c-a43a-00fb5f4cb3e2",
+			"name": "be607a44-1196-4d28-a439-66008abd48e1",
+			"type": "text",
+			"content": "<h1 id=\"Hypertoni\">Hypertoni</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5f95a961-c151-4a3d-bd34-1ef5826c2a9f",
+			"name": "496fc955-8e0a-496a-bb1b-feb5f627f73a",
+			"type": "author",
+			"content": {
+				"firstname": "Kristina",
+				"surname": "Bengtsson Boström",
+				"description": "Närhälsan Billingen Vårdcentral, FoU centrum Skaraborg, Skövde",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "93e88d77-b365-4eb5-8a12-f3c816250e71",
+			"name": "93e88d77-b365-4eb5-8a12-f3c816250e71",
+			"type": "author",
+			"content": {
+				"firstname": "Karin",
+				"surname": "Manhem",
+				"description": "Avdelningen för molekylär och klinisk medicin, Sahlgrenska Universitetssjukhuset, Göteborg",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a1bcae09-8bb6-41a6-8026-b1c5da686033",
+			"name": "0a910d97-6736-469c-9051-98de96690f60",
+			"type": "text",
+			"content": "<p class=\"ingress\">Inledning</p>\n<p>H&ouml;gt blodtryck (hypertoni) &auml;r ett vanligt tillst&aring;nd, i Sverige ber&auml;knas cirka 2 miljoner ha h&ouml;gt blodtryck. F&ouml;rekomsten &ouml;kar med &aring;ldern. Hypertoni &auml;r den enskilt st&ouml;rsta och behandlingsbara riskfaktorn f&ouml;r hj&auml;rtk&auml;rlkomplikationer. Komplikationerna &auml;r framf&ouml;rallt stroke, men &auml;ven hj&auml;rtsvikt, kransk&auml;rls- och njursjukdom. F&ouml;r&auml;ndring av livsstil &auml;r grunden i behandlingen, men flertalet individer beh&ouml;ver ocks&aring; l&auml;kemedel. L&auml;kemedelsbehandlingen &auml;r numera billig, men nya l&auml;kemedel har inte tillkommit p&aring; senare tid varf&ouml;r behandlingsarsenalen med &auml;ldre l&auml;kemedel lyfts fram.</p>\n<p class=\"indent\">Nya, liksom &auml;ldre studier har visat att endast runt 50&nbsp;% av patienterna med behandlad hypertoni n&aring;r m&aring;lv&auml;rdet f&ouml;r blodtryck efter behandling. En orsak kan vara att hypertoni vanligen inte ger mycket symtom medan behandlingen kan ge biverkningar vilket f&ouml;rsv&aring;rar omh&auml;ndertagandet och utg&ouml;r en utmaning f&ouml;r v&aring;rden.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4d97542c-149c-4973-afbd-c4df8297f7f8",
+			"name": "9a1c0d14-b4e0-403b-936b-f433fa41f0ea",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2><ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/-nya-kapitel-ej-publ/E5-Hypertoni-nytt.json",
+	"indexed": "true",
+	"modified": "2016-02-22 12:37"
+}

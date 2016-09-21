@@ -1,0 +1,65 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "Läkemedelsförmånerna har reviderats",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "nyhet",
+	"created": "2016-06-14 07:59",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "dba6b515-70a3-4156-bfc3-9d936ace63f8",
+			"name": "007b2dea-f59d-4825-ba34-8707ab16e6c6",
+			"type": "summary",
+			"content": "<p>Kapitlet L&auml;kemedelsf&ouml;rm&aring;nerna har reviderats</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d25dbb5b-8e69-4a73-a5a0-464cf1314e65",
+			"name": "273a7766-4a5a-4648-bc23-a8561ba18116",
+			"type": "text",
+			"content": "<h1 id=\"Kapitlet-Lakemedelsformanerna-ar-reviderat\">Kapitlet L&auml;kemedelsf&ouml;rm&aring;nerna &auml;r reviderat</h1>\n<p>Kapitlet om L&auml;kemedelsf&ouml;rm&aring;nerna har omarbetats och uppdaterats. Den aktuella versionen av kapitlet g&aring;r att l&auml;sa p&aring; <a href=\"http://www.lakemedelsboken.se\">www.lakemedelsboken.se</a>.<br><br>Vi rekommenderar d&auml;rf&ouml;r att den som s&ouml;ker information om f&ouml;rm&aring;nssystemet l&auml;ser webbversionen och inte kapitlet i den senaste tryckta utg&aring;van, LB 2014.</p>\n<p></p>\n<p>L&auml;s kapitlet h&auml;r: <a href=\"{pre}/kapitel/regelverket_och_it-stod/lakemedelsformanerna-ny.html#u20_2\">L&auml;kemedelsf&ouml;rm&aring;nerna</a></p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/blog/reviderat-kapitel-160614.json",
+	"indexed": "true",
+	"modified": "2016-06-14 08:09"
+}

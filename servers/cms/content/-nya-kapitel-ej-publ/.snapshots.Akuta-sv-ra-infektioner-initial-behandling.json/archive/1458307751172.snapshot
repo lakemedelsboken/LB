@@ -1,0 +1,123 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Akuta svåra infektioner - initial behandling",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2016-03-18 13:02",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Patrik Gille Johnson, Magnus Brink",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "766fb676-407b-46d3-8067-6312b149fc0c",
+			"name": "adc3c17a-ef53-4b26-83cc-27a99b0dd2b1",
+			"type": "text",
+			"content": "<h1 id=\"Akuta-svara-infektioner-initial-behandling\">Akuta sv&aring;ra infektioner &minus; initial behandling</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0702352f-9756-4d3d-92e1-82cef6c80858",
+			"name": "4b0e6957-a7b5-474b-8ef9-e59dc4083a30",
+			"type": "author",
+			"content": {
+				"firstname": "Patrik",
+				"surname": "Gille Johnson",
+				"description": "Infektionskliniken, Danderyds sjukhus",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b557e362-8e0c-4ae0-acbf-2e2faf249e27",
+			"name": "b557e362-8e0c-4ae0-acbf-2e2faf249e27",
+			"type": "author",
+			"content": {
+				"firstname": "Magnus",
+				"surname": "Brink",
+				"description": "?",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f1cdcf9a-df9f-4a9c-beeb-a31608687f5b",
+			"name": "eaa692ab-8151-4644-9811-5c5285b2eed1",
+			"type": "text",
+			"content": "<p class=\"ingress\">Ingresstext</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "39c2dfc4-a076-4916-9ad7-00b62659c831",
+			"name": "4b431ab4-703a-4523-99d4-f8f1512ebe41",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2><ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/-nya-kapitel-ej-publ/Akuta-sv-ra-infektioner-initial-behandling.json",
+	"indexed": "true",
+	"modified": "2016-03-18 13:29"
+}

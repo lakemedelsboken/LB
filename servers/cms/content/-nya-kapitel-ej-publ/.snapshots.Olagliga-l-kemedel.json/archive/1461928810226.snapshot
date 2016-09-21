@@ -1,0 +1,162 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Olagliga läkemedel",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2016-04-29 13:10",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Elin Maria Gustafsson, Anita Finne Grahnén, Bengt  Järhult",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "cd351f0f-cddd-4e0e-af21-b115e4162c6c",
+			"name": "ca85a151-91bc-4af7-be07-981085dfdac1",
+			"type": "text",
+			"content": "<h1 id=\"Olagliga-lakemedel\">Olagliga l&auml;kemedel</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c9d08455-0384-472d-9baf-ab0ef8e87b24",
+			"name": "bddb5dce-7fc5-42b3-80bb-3f72229a1a65",
+			"type": "author",
+			"content": {
+				"firstname": "Elin Maria",
+				"surname": "Gustafsson",
+				"description": "Läkemedelsverket",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f140bd33-a91f-4554-b0fc-a127b0373260",
+			"name": "f140bd33-a91f-4554-b0fc-a127b0373260",
+			"type": "author",
+			"content": {
+				"firstname": "Anita",
+				"surname": "Finne Grahnén",
+				"description": "",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d11d5282-49b0-42a7-87e2-b2235283b9ff",
+			"name": "d11d5282-49b0-42a7-87e2-b2235283b9ff",
+			"type": "author",
+			"content": {
+				"firstname": "Bengt ",
+				"surname": "Järhult",
+				"description": "",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "48069b47-22a0-41a4-b936-df059304c9c6",
+			"name": "4cd97756-7cb3-4814-833b-658cd0e1b5d3",
+			"type": "text",
+			"content": "<p class=\"ingress\">Olagliga och f&ouml;rfalskade l&auml;kemedel &auml;r ett allvarligt och &ouml;kande globalt problem som r&ouml;r alla<br>l&auml;nder i v&auml;rlden. Alla typer av l&auml;kemedel kan f&ouml;rfalskas. Svenska konsumenter kommer i<br>kontakt med produkterna fr&auml;mst via k&ouml;p fr&aring;n os&auml;kra k&auml;llor p&aring; internet.<br><br>Anv&auml;ndningen av olagliga l&auml;kemedel har n&aring;tt en s&aring;dan omfattning i befolkningen att den<br>enskilda l&auml;karen b&ouml;r misst&auml;nka bruk av s&aring;dana preparat vid alla oklara symtom utan rimlig<br>genes, vid patologiska laboratorieprov, sv&aring;rf&ouml;rst&aring;eliga interaktioner och of&ouml;rklarliga<br>biverkningar.<br><br>Alla svenska apotekskedjor erbjuder idag en s&auml;ker f&ouml;rs&auml;ljning av l&auml;kemedel via sina<br>webplatser. Vid k&ouml;p p&aring; internet fr&aring;n andra l&auml;nder s&aring; ska patienten uppmanas att titta efter den<br>EU-gemensamma symbolen f&ouml;r handel p&aring; internet.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2cdc6067-2694-4b09-9115-eee987cae97b",
+			"name": "2cdc6067-2694-4b09-9115-eee987cae97b",
+			"type": "text",
+			"content": "<h1 id=\"Vad-ar-olagliga-lakemedel-\">Vad &auml;r olagliga l&auml;kemedel?</h1>\n<p>Olagliga l&auml;kemedel kan vara produkter som inneh&aring;ller l&auml;kemedelssubstanser, eller som s&auml;ljs<br>med p&aring;st&aring;enden om att lindra eller bota sjukdomar, och som inte &auml;r godk&auml;nda f&ouml;r f&ouml;rs&auml;ljning<br>d&auml;r de s&auml;ljs. Det kan vara till exempel produkter som s&auml;ljs som kosttillskott, kosmetika eller<br>injektionspreparat med deklarerade eller odeklarerade l&auml;kemedelsubstanser. Ibland beskrivs<br>detta som &rdquo;spetsade&rdquo; produkter.<br>F&ouml;rfalskade l&auml;kemedel &auml;r l&auml;kemedel som utger sig f&ouml;r att vara godk&auml;nda l&auml;kemedel. Det kan<br>till exempel vara:<br>-produkter med korrekta ingredienser i r&auml;tt eller fel m&auml;ngd,<br>-produkter med fel aktiv substans eller ett toxiskt &auml;mne,<br>-produkter utan aktiva ingredienser &ndash; med bara mj&ouml;l eller vatten<br>-produkter med f&ouml;rfalskade f&ouml;rpackningar.<br>Det kan ocks&aring; vara produkter som s&auml;ljs med felaktiga uppgifter om var produkten &auml;r<br>tillverkad eller hur den har hanterats (1). B&aring;de originall&auml;kemedel och generika f&ouml;rfalskas.<br>WHO anv&auml;nder ocks&aring; begreppet underm&aring;liga l&auml;kemedel. S&aring;dana l&auml;kemedel produceras av<br>tillverkare som har tillst&aring;nd fr&aring;n beh&ouml;riga myndigheter att producera l&auml;kemedel. Produkterna<br>uppfyller dock inte de nationella standarder som finns (2).<br><br>Olagliga l&auml;kemedel kan leda till stora skador p&aring; grund av misslyckade behandlingsresultat,<br>toxicitet, biverkningar eller genom att livshotande tillst&aring;nd f&ouml;rblir obehandlade. N&auml;r<br>f&ouml;rfalskade l&auml;kemedel tar sig in i legala distributionskanaler s&aring; &auml;r riskerna ocks&aring; stora att<br>allm&auml;nhetens s&aring; viktiga f&ouml;rtroende f&ouml;r l&auml;kemedel och sjukv&aring;rd skadas allvarligt.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "23ab543f-3693-45ae-bcdb-973b965b810f",
+			"name": "16cfdd16-bbe8-4e6f-8979-7bed0348b59d",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2><ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/-nya-kapitel-ej-publ/Olagliga-l-kemedel.json",
+	"indexed": "true",
+	"modified": "2016-04-29 13:19"
+}

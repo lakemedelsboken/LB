@@ -1,0 +1,101 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Venös tromboembolism",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2016-03-08 07:20",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Förnamn Efternamn",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "c5e917a7-7ee3-47fa-8b9b-d70e87f1e6a9",
+			"name": "01a126b3-b408-407f-ab27-bdb5eb657ce1",
+			"type": "text",
+			"content": "<h1 id=\"Venos-tromboembolism\">Ven&ouml;s tromboembolism</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "cc00db85-8fbe-4649-b51c-d440b189892e",
+			"name": "40c153d6-e2d6-4928-a374-fa0abb5e9fb6",
+			"type": "author",
+			"content": {
+				"firstname": "Förnamn",
+				"surname": "Efternamn",
+				"description": "Arbetsplats",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "22350a9a-ec13-441c-a2e2-a8959434bc37",
+			"name": "17d72709-c358-403e-a289-49f9d2577e05",
+			"type": "text",
+			"content": "<p class=\"ingress\">Ingresstext</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d8832377-963d-4265-910f-1b19ee727c2e",
+			"name": "dad11842-d329-4a0b-bad9-75ae55abc22d",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2><ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/-nya-kapitel-ej-publ/Ven-s-tromboembolism.json",
+	"indexed": "true",
+	"modified": "2016-03-08 07:22"
+}

@@ -1,0 +1,601 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Epilepsi",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "kapitel",
+	"created": "2016-05-27 21:09",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Elinor Ben-Menachem, Ingrid Olsson, Paul Uvebrant",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "3416d078-49b9-4a22-8056-448ba231213f",
+			"name": "3416d078-49b9-4a22-8056-448ba231213f",
+			"type": "author",
+			"content": {
+				"firstname": "Elinor",
+				"surname": "Ben-Menachem",
+				"description": "Institutionen för klinisk neurovetenskap och fysiologi, Sahlgrenska Universitetssjukhuset Göteborg",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e154bd5d-f135-4786-91f1-1fbb9b05b832",
+			"name": "e154bd5d-f135-4786-91f1-1fbb9b05b832",
+			"type": "author",
+			"content": {
+				"firstname": "Ingrid",
+				"surname": "Olsson",
+				"description": "Barn- och ungdomsneurologi, Sahlgrenska Universitetssjukhuset Göteborg",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7900355b-ed7a-4cf3-8f27-f05bd50d5592",
+			"name": "7900355b-ed7a-4cf3-8f27-f05bd50d5592",
+			"type": "author",
+			"content": {
+				"firstname": "Paul",
+				"surname": "Uvebrant",
+				"description": "Barn- och ungdomsneurologi, Sahlgrenska Universitetssjukhuset Göteborg",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4e885987-0a58-479f-affd-df63f4f3a253",
+			"name": "4e885987-0a58-479f-affd-df63f4f3a253",
+			"type": "text",
+			"content": "<h1 id=\"r4_2\"><a class=\"index\" id=\"1021218\"></a><a class=\"index\" id=\"94494\"></a>Epilepsi<a class=\"index\" id=\"1021219\"></a></h1>\n<h2 class=\"overview\" id=\"Inledning\">Inledning</h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d39f9ce8-f32a-49ce-a8aa-9b31ddfcd208",
+			"name": "d39f9ce8-f32a-49ce-a8aa-9b31ddfcd208",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"index\" id=\"11994\"></a>Klassifikation av anfall",
+				"text": "<table><tbody><tr><td><h5 id=\"r4_8\"> <a class=\"index\" id=\"1034016\"></a>Fokala anfall </h5><ul><li>Fokalt anfall utan medvetandepåverkan</li></ul><ul><li>Fokalt anfall med medvetandepåverkan </li></ul><ul><li>Fokalt anfall med utveckling till ett bilateralt konvulsivt anfall</li></ul><h5 id=\"r4_9\"> Generaliserade anfall  (med samtidig start i båda hemisfärerna)</h5><ul><li>Tonisk-kloniska anfall</li></ul><ul><li>Absenser<a class=\"index\" id=\"1022104\"></a></li></ul><ul><li>Atypiska absenser</li></ul><ul><li><a class=\"index\" id=\"1022105\"></a>Myoklona anfall</li></ul><ul><li>Toniska anfall</li></ul><ul><li>Kloniska anfall</li></ul><ul><li>Atoniska anfall</li></ul><h5 id=\"r4_10\"> Anfall som inte kan klassificeras </h5></td></tr></tbody></table>",
+				"id": "r4_7"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "81b9d824-34d0-4382-8135-5f758001908a",
+			"name": "81b9d824-34d0-4382-8135-5f758001908a",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "<a class=\"index\" id=\"88830\"></a>Klassifikation av epilepsisyndrom",
+				"text": "<table><tbody><tr><td><p> Klassifikationen baseras på etiologiska faktorer, ålder vid insjuknandet, EEG-fynd och anfallstyp. Exempel på syndrom är Wests syndrom (<a class=\"index\" id=\"1040205\"></a>infantila spasmer) och <a class=\"index\" id=\"1040206\"></a>Lennox–Gastauts syndrom, absensepilepsi i barndomen och juvenil myoklon epilepsi.</p></td></tr></tbody></table>",
+				"id": "r4_12"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "db3bd0b1-26af-4e2a-bce2-92f0c377bd4b",
+			"name": "db3bd0b1-26af-4e2a-bce2-92f0c377bd4b",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"index\" id=\"1027769\"></a><a class=\"index\" id=\"84964\"></a>Definition",
+				"text": "<table><tbody><tr><td><p> Epilepsi är en grupp tillstånd som känne&shy;tecknas av minst 2 epileptiska anfall som uppträtt spontant. Ett enstaka epileptiskt anfall leder som regel inte till diagnosen epilepsi, utom i vissa fall då risken för ytterligare anfall bedöms vara stor. Inte heller leder anfall provocerade av akut sjuk&shy;dom eller anfall med exogen orsak till epilepsi&shy;diagnos.</p></td></tr></tbody></table>",
+				"id": "r4_5"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "adac1cfe-3e64-4b25-adc8-1c02cda4d5d8",
+			"name": "adac1cfe-3e64-4b25-adc8-1c02cda4d5d8",
+			"type": "text",
+			"content": "<p class=\"ingress\">Epilepsi förekommer hos 0,5–1&#37; av befolkningen, vilket innebär att ca 60 000 personer i Sverige har epilepsi, varav 10 000 barn. Varje år tillkommer epilepsi hos ca 4 500 personer. Se Faktaruta 1 för definition och Faktaruta 2 och 3 för klassifikation.</p><p class=\"ingress indent\">Den medicinska behandlingen är ofta långvarig och diagnosen har stor hälsoekonomisk betydelse pga höga kostnader för läkemedel och sjukfrånvaro. Epilepsi leder ofta till medicinska och psykosociala konsekvenser genom aktivitetsinskränkning och minskad social delaktighet. Det är av stor vikt att epilepsidiagnosen säkerställs och att epilepsi- och anfallstyp klassificeras på ett adekvat sätt, då detta har såväl prognostisk som terapeutisk betydelse.</p><span> </span><span> </span><span> </span><h2 id=\"r4_13\">Vårdnivå</h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "77d6e11f-db5b-4a3d-96fe-99513d96636e",
+			"name": "77d6e11f-db5b-4a3d-96fe-99513d96636e",
+			"type": "facts",
+			"content": {
+				"number": "4",
+				"title": "<a class=\"index\" id=\"65440\"></a>Diagnostik",
+				"text": "<table><tbody><tr><td><ul><li>  Anamnes inklusive anfallsbeskrivning av ögonvittne</li></ul><ul><li> EEG, helst också under sömn, ibland även <br>hyperventilation, fotostimulering</li></ul><ul><li> Kliniskt status</li></ul><ul><li> MRT</li></ul><ul><li> EKG<br></li></ul><h4 id=\"r4_16\" class=\"facts skip\">Differentialdiagnoser</h4><ul><li>  Akutsymtomatiska anfall vid tillstånd som<br>– Trauma<br>– Abstinens (alkohol, droger)<br>– Intoxikation<br>– Stroke<br>– Infektion</li></ul><ul><li>Feberkramper hos barn 6 månader till 4 år</li></ul><ul><li> Icke-epileptiska anfall <br>– <a class=\"index\" id=\"1022311\"></a>Affektanfall hos barn<br>– <a class=\"index\" id=\"1022312\"></a>Pavor nocturnus hos barn<br>– TIA hos vuxna<br>– Migrän<br>– Hypoglykemi<br>– <a class=\"index\" id=\"1022313\"></a>Synkope<br>– Psykogena eller pseudoepileptiska anfall<br>– Hyperventilationsattacker<br>– Panikattacker<br>– Långt QT-syndrom</li></ul></td></tr></tbody></table>",
+				"id": "r4_15"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d9cd873f-f0e5-4e84-9d37-c316202a1153",
+			"name": "d9cd873f-f0e5-4e84-9d37-c316202a1153",
+			"type": "text",
+			"content": "<p>Barn med misstänkt epilepsi bör utredas och behandlas av neuropediater (specialistläkare i barn- och ungdomsneurologi med habilitering) eller av barnläkare i samråd med neuropediater. </p><p class=\"indent\">För vuxna bör den primära utredningen och initiering av behandling handläggas av, eller i samarbete med, neurolog. Den fortsatta uppföljningen sker företrädesvis hos neurolog, men där detta inte är möjligt följs patienten vid invärtesmedicinsk mottagning eller i primärvården. I dessa fall bör neurolog konsulteras vid ofullständig eller försämrad anfallskontroll, liksom om biverkningar av läkemedelsbehandlingen noteras. För diagnostik se Faktaruta 4 och Tabell 1. För behandling av feberkramper se Terapirekommendationerna.</p><span> </span><div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ba42374c-c5b0-403d-8742-49abc5fddc3f",
+			"name": "ba42374c-c5b0-403d-8742-49abc5fddc3f",
+			"type": "tablewide",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"index\" id=\"76690\"></a>Fynd/symtom vid olika typer av anfall",
+				"id": "r4_17",
+				"text": "<table><tbody><tr><td><div class=\"tableLine\"><strong>Fynd/symtom</strong></div></td><td><div class=\"tableLine\"><strong>Epileptiskt anfall</strong></div></td><td><div class=\"tableLine\"><strong>Abstinensanfall</strong></div></td><td><p><strong><div class=\"tableLine\">Konvulsiv synko-</div><div class=\"tableLine\">pe</div></strong></p></td><td><div class=\"tableLine\"><strong>Psykogent anfall</strong></div></td></tr><tr><td><div class=\"tableLine\">EEG</div></td><td><div class=\"tableLine\">ofta +</div></td><td><div class=\"tableLine\">–</div></td><td><div class=\"tableLine\">–</div></td><td><div class=\"tableLine\">–</div></td></tr><tr><td><div class=\"tableLine\">MRT</div></td><td><div class=\"tableLine\">ofta +</div></td><td><div class=\"tableLine\">–</div></td><td><div class=\"tableLine\">–</div></td><td><div class=\"tableLine\">–</div></td></tr><tr><td><div class=\"tableLine\">Provokation</div></td><td><div class=\"tableLine\">–</div></td><td><div class=\"tableLine\">+</div></td><td><div class=\"tableLine\">+</div></td><td><div class=\"tableLine\">+</div></td></tr><tr><td><div class=\"tableLine\">Hyperventilation</div></td><td><div class=\"tableLine\">–</div></td><td><div class=\"tableLine\">–</div></td><td><div class=\"tableLine\">+</div></td><td><div class=\"tableLine\">+</div></td></tr><tr><td><div class=\"tableLine\">Blodtrycksfall</div></td><td><div class=\"tableLine\">–</div></td><td><div class=\"tableLine\">–</div></td><td><div class=\"tableLine\">+</div></td><td><div class=\"tableLine\">–</div></td></tr><tr><td><div class=\"tableLine\">Tungbett</div></td><td><div class=\"tableLine\">ofta +</div></td><td><div class=\"tableLine\">+</div></td><td><div class=\"tableLine\">–</div></td><td><div class=\"tableLine\">–</div></td></tr><tr><td><div class=\"tableLine\">Postiktal trötthet</div></td><td><div class=\"tableLine\">+</div></td><td><div class=\"tableLine\">+</div></td><td><div class=\"tableLine\">–</div></td><td><div class=\"tableLine\">–</div></td></tr></tbody></table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8334ba70-90b7-44c1-97f3-4bef7107ebeb",
+			"name": "8334ba70-90b7-44c1-97f3-4bef7107ebeb",
+			"type": "text",
+			"content": "<span> </span><div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "515cbf1e-0aea-45d7-ad66-9674f436e23d",
+			"name": "515cbf1e-0aea-45d7-ad66-9674f436e23d",
+			"type": "therapy",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"index\" id=\"28023\"></a>Behandling vid feberkramper (1)",
+				"id": "r4_18",
+				"text": "<table><tbody><tr><td><ul><li>Kriterier: <a class=\"index\" id=\"1027922\"></a>feber, generaliserat anfall &lt; 15 minuter följt av snabb återhämtning.</li></ul><ul><li>Vid feberkramp som varar &gt; 4–5 minuter kan <a class=\"index\" id=\"1027924\"></a>diazepam ges rektalt. Dosering: 5 mg vid åldern 3 månader till 2 år, därefter 10 mg.</li></ul></td></tr></tbody></table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f530d958-aa54-4eeb-9d52-13b30f69b9df",
+			"name": "f530d958-aa54-4eeb-9d52-13b30f69b9df",
+			"type": "text",
+			"content": "<span> </span><p class=\"indent\">Körkortsfrågor, konsekvenser för yrkeslivet, graviditet samt avslutande av behandling bör också motivera neurologkontakt. Se Faktaruta 5 om körkort.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "bae2d8ef-a857-4d85-a7b1-029e72628742",
+			"name": "bae2d8ef-a857-4d85-a7b1-029e72628742",
+			"type": "facts",
+			"content": {
+				"number": "5",
+				"title": "<a class=\"index\" id=\"1033731\"></a><a class=\"index\" id=\"95344\"></a>Körkort",
+				"text": "<table><tbody><tr><td><ul><li>  Kravet för körkort för personbil är minst <br>1 års anfallsfrihet, med eller utan läkemedels&shy;behandling.</li></ul><ul><li>För körkortstillstånd krävs läkarintyg, utfärdat av specialist i neurologi eller annan specialist&shy;kompetent läkare med god kännedom om pa&shy;tientens sjukdom.</li></ul><ul><li> EEG får inte visa regelbunden 3 Hz spike-and-wave-aktivitet, med eller utan läkemedels&shy;behandling.<br></li></ul></td></tr></tbody></table>",
+				"id": "r4_20"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "cdc871b5-b9e4-476b-b548-71b7b42ea710",
+			"name": "cdc871b5-b9e4-476b-b548-71b7b42ea710",
+			"type": "text",
+			"content": "<span> </span><h2 id=\"r4_21\">Etiologiska faktorer</h2><p>Orsaken till den cerebrala funktionsstörning som ger <a class=\"index\" id=\"1038659\"></a>epilepsi är ofta okänd. Missbildningar, sjukdomar och skador som involverar hjärnan kan självständigt, eller i kombination med genetiska faktorer, utgöra orsaken. Vid flera, ofta godartade, epilepsisyndrom hos barn är genetiska faktorer viktigast, medan epilepsi hos vuxna och äldre ofta orsakas av t ex stroke, trauma, kärlmissbildning, autoimmun encefalopati och ibland av en tumör.</p><p class=\"indent\">Andra symtom och tecken på cerebral funktionsstörning förekommer hos ca var tredje person med epilepsi. Intellektuell eller motorisk funktionsnedsättning, liksom autism och ADHD är vanliga (se även avsnittet Personer med intellektuella funktionsnedsättningar, s 977). Sådana tilläggssymtom talar för en mer omfattande bakomliggande hjärnskada eller missbildning än när epilepsi förekommer isolerat. Epilepsi tillsammans med andra tecken på hjärnskada är ofta svårare att behandla och har större benägenhet att kvarstå i många år eller livslångt jämfört med enbart epilepsi. </p><h2 id=\"r4_22\"><a class=\"index\" id=\"76156\"></a>Akutbehandling av tonisk- kloniska anfall och <a class=\"index\" id=\"1021306\"></a>status epilepticus</h2><p>Definitionen av status epilepticus är pågående anfallsaktivitet &gt; 30 minuter, alternativt två eller flera anfall under motsvarande tidsperiod utan återställt medvetande däremellan. I praktiken ska beslut om behandling fattas redan efter att anfallet pågått i 5–10 minuter, eftersom status epilepticus blir svårare att behandla och risken för bestående skador ökar ju längre anfallet pågår. </p><p class=\"indent\">Alla anfallstyper kan ge upphov till status epilepticus. I praktiken skiljer man mellan </p><ul><li> konvulsivt status epilepticus <br>(tonisk-kloniskt, toniskt, kloniskt) </li><li> icke-konvulsivt status epilepticus <br>(t ex absensstatus, fokalt status med medvetandepåverkan).</li></ul><p>Prognosen vid status epilepticus beror på etiologi, behandlingsstrategi och hur snabbt anfallet kan brytas. Snabb, effektiv och aggressiv behandling är därför viktig liksom utredning av bakomliggande orsak. </p><p class=\"indent\"><a class=\"index\" id=\"85481\"></a>Behandling av tonisk-kloniska anfall och status epilepticus hos barn respektive vuxna i vardagssituationer och i sjukhusmiljö framgår av Terapirekommendationerna, s&emsp;974. För ytterligare behandlingsalternativ se Läkemedelsverkets rekommendationer (2).</p><div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0dec3668-1477-4917-a130-6a1e2da1f17a",
+			"name": "0dec3668-1477-4917-a130-6a1e2da1f17a",
+			"type": "therapy",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"index\" id=\"65082\"></a>Behandling av <a class=\"index\" id=\"1022720\"></a>tonisk-kloniska anfall och <a class=\"index\" id=\"1022721\"></a>status epilepticus hos vuxna",
+				"id": "r4_23",
+				"text": "<table><tbody><tr><td><p><strong>I vardagssituationer</strong></p><ul><li>I första hand diazepam rektalt, 10–30 mg, eller midazolam buckalt, 10 mg.<br></li></ul><p><strong>I sjukhusmiljö</strong></p><ul><li>Under kontroll av andning och blodtryck ges diazepam 0,25 mg/kg kroppsvikt intravenöst (inte snabbare än 5 mg/minut) eller rektalt vid svårigheter att sätta nål. Hela diazepammängden ges även om anfallet upphör under pågående injektion. Dosen kan upprepas om anfallet inte har upphört och kombineras då med fosfeny&shy;toin.</li></ul><ul><li>Fosfenytoin, 15–20 mg FE<a class=\"tableFootnoteLink\" href=\"#fnote_23\"><sup>a</sup></a>/kg kroppsvikt, ges intravenöst med en hastighet av högst 150 mg/minut och under övervakning av EKG och blodtryck. (En praktisk regel är att initialt halvera fosfenytoindosen om patienten redan behandlas med fenytoin och därefter justera efter akut koncentrationsbestämning.) Alternativ till fosfenytoin är fenobarbital 10–20 mg/kg kroppsvikt eller valproat 15–30 mg/kg kroppsvikt intravenöst, alternativt leve&shy;tiracetam 2 000–4 000 mg intravenöst (2).</li></ul><ul><li>Om status epilepticus inte bryts inom 20 minuter efter avslutad fosfenytoininjektion ska patienten överföras till intensivvård för EEG-monitorering och narkosbehandling med tiopental alternativt <a class=\"index\" id=\"1042125\"></a>propofol eller <a class=\"index\" id=\"1042130\"></a>midazolam.</li></ul></td></tr><tr><td><p><strong><a class=\"index\" id=\"98304\"></a>Behandling av <a class=\"index\" id=\"1027331\"></a>tonisk-kloniska anfall och <a class=\"index\" id=\"1027333\"></a>status epilepticus hos <a class=\"index\" id=\"1027334\"></a>barn</strong></p></td></tr><tr><td><p><strong>I vardagssituationer</strong></p><ul><li>I första hand diazepam rektalt, 0,5–0,75 mg/kg kroppsvikt (max 10 mg), eller midazolam buckalt, 0,3 mg/kg kroppsvikt (max 10 mg).<br></li></ul><p><strong>I sjukhusmiljö</strong></p><ul><li>Under kontroll av andning och blodtryck ges <a class=\"index\" id=\"1027346\"></a>diazepam 0,25 mg/kg kroppsvikt intravenöst (inte snabbare än 2 mg/minut) eller rektalt 0,5–1 mg/kg kroppsvikt, högst 15 mg.</li></ul><ul><li>Om anfallet inte upphör eller återkommer upprepas dosen tillsammans med <a class=\"index\" id=\"1027349\"></a>fosfenytoin, motsvarande 15–20 mg FE<sup>a</sup>/kg kroppsvikt, intravenöst (10 mg FE/kg kroppsvikt om fenytoinbehandling pågår) – ges inte snabbare än 2–3 mg FE/kg kroppsvikt/minut. </li></ul><ul><li>Under infusionen kontrolleras andning, blodtryck och EKG.</li></ul><ul><li>Fosfenytoin är godkänt för barn 5 år och äldre.</li></ul><ul><li>Ett alternativ till fosfenytoin är <a class=\"index\" id=\"1038862\"></a>fenobarbital, 10–20 mg/kg kroppsvikt, långsamt intravenöst, eller <a class=\"index\" id=\"1038863\"></a>valproat 15–30  mg/kg kroppsvikt alternativt <a class=\"index\" id=\"1042110\"></a>levetiracetam 30 mg/kg kroppsvikt intravenöst (2).</li></ul><ul><li>Vid utebliven effekt ges intensivvård för <a class=\"index\" id=\"1042115\"></a>tiopentalnarkos, alternativt <a class=\"index\" id=\"1042120\"></a>midazolam.</li></ul></td></tr><tr><td colspan=\"1\" class=\"footNotes\"><div class=\"tableFootnote\" id=\"fnote_23\"><strong>a.</strong> Dosen av fosfenytoin anges som fenytoin-natriumekvivalenter (FE).</div></td></tr></tbody></table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "addcc6e5-fcc7-4f1c-99b5-779b5abd474c",
+			"name": "addcc6e5-fcc7-4f1c-99b5-779b5abd474c",
+			"type": "text",
+			"content": "<span> </span><h2 id=\"r4_24\"><a class=\"index\" id=\"80714\"></a>Profylaktisk behandling</h2><p>Sedan epilepsidiagnosen säkerställts och anfallsutlösande faktorer i möjligaste mån eliminerats, påbörjas behandling med antiepileptika. Personen (eller föräldrarna när det gäller barn) ska ges fullständig information om diagnos, prognos och behandlingsalternativ samt vara delaktig i beslutet att påbörja läkemedelsbehandling. </p><p class=\"indent\">Målet med läkemedelsbehandlingen bör vara anfallsfrihet, dock inte till priset av biverkningar med mer negativa konsekvenser än de anfall som behandlas. Det bör noteras att de flesta biverkningar är reversibla.</p><p class=\"indent\">Anfallsframkallande faktorer bör i största möjliga utsträckning elimineras. Sådana kan förutom tablettglömska (drabbar de flesta någon gång) vara alkohol, sömnbrist, stress, andra läkemedel, infektioner, feber och blinkande ljus. </p><p class=\"indent\">Hematologiskt status samt lever- och njurfunktion bör undersökas inför behandlingsstart och, beroende på preparatval, efter insatt eller förändrad behandling. Däremot finns det inte någon anledning att rutinmässigt följa dessa parametrar om personen mår bra. Det är viktigare att omgående göra en kontroll vid symtom eller tecken på biverkningar. Behandlingsstart görs försiktigt med långsam upptitrering av dosen tills man uppnår effekt eller biverkningsnivå. Målsättningen ska alltid vara lägsta effektiva dos.</p><p>Koncentrationsbestämning av antiepileptika kan vara till hjälp vid frågeställningar som rör interaktioner och bristande följsamhet samt vid komplex farmakokinetik som hos fenytoin. För att styra behandlingen används effekt på anfall och tolerabilitet, snarare än antiepileptikakoncentration. De i Tabell 2 <a href=\"#30470\" class=\"btn btn-primary btn-small pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>, angivna intervallen utgör endast riktområden. Såväl anfallskontroll som biverkningar kan finnas både under och över dessa riktområden.</p><div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0fb1501c-eb15-41fd-9b62-36cf398c39cc",
+			"name": "0fb1501c-eb15-41fd-9b62-36cf398c39cc",
+			"type": "tablewide",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"index\" id=\"30470\"></a>Olika antiepileptika – dosering (peroralt), riktområde för serumkoncentration samt tid till jämviktskoncentration",
+				"id": "r4_25",
+				"text": "<table><tbody><tr><td><div class=\"tableLine\"><strong>Läkemedel</strong></div></td><td><p><strong><div class=\"tableLine\">Dosering vuxna </div><div class=\"tableLine\">(mg/dygn)</div></strong></p></td><td><p><strong><div class=\"tableLine\">Dosering barn (mg/kg </div><div class=\"tableLine\">kroppsvikt/dygn)<sup><a class=\"tableFootnoteLink\" href=\"#fnote_31\"><sup>a</sup></a></sup></div></strong></p></td><td><p><strong><div class=\"tableLine\">Riktområde för se-</div><div class=\"tableLine\">rumkoncentration </div><div class=\"tableLine\">(mikromol/L) </div></strong></p></td><td><p><strong><div class=\"tableLine\">Tid till </div><div class=\"tableLine\">jämvikts-</div><div class=\"tableLine\">koncentration</div></strong></p></td></tr><tr><td><div class=\"tableLine\">Diazepam</div></td><td><div class=\"tableLine\">5–15</div></td><td><div class=\"tableLine\">Ej aktuell</div></td><td><div class=\"tableLine\">Ej fastställt</div></td><td><div class=\"tableLine\">1 dag</div></td></tr><tr><td><div class=\"tableLine\">Eslikarbazepin</div></td><td><div class=\"tableLine\">800–1 200</div></td><td><div class=\"tableLine\">Ej aktuell</div></td><td><div class=\"tableLine\">Ej fastställt</div></td><td><div class=\"tableLine\">4–5 dagar</div></td></tr><tr><td><div class=\"tableLine\">Etosuximid</div></td><td><div class=\"tableLine\">500–1 000</div></td><td><div class=\"tableLine\">20–30</div></td><td><div class=\"tableLine\">280–700<sup> <a class=\"tableFootnoteLink\" href=\"#fnote_32\"><sup>b</sup></a></sup></div></td><td><div class=\"tableLine\">7–9 dagar  </div></td></tr><tr><td><div class=\"tableLine\">Felbamat</div></td><td><div class=\"tableLine\">600–3 600</div></td><td><div class=\"tableLine\">15–45<br></div><div class=\"tableLine\">(max 3 600 mg/dygn) </div></td><td><div class=\"tableLine\">Ej fastställt </div></td><td><div class=\"tableLine\">2–7 dagar</div></td></tr><tr><td><div class=\"tableLine\">Fenobarbital </div></td><td><div class=\"tableLine\">50–150</div></td><td><div class=\"tableLine\">2–5</div></td><td><div class=\"tableLine\">40–130</div></td><td><div class=\"tableLine\">ca 3 veckor</div></td></tr><tr><td><div class=\"tableLine\">Fenytoin</div></td><td><div class=\"tableLine\">200–400</div></td><td><div class=\"tableLine\">5–8</div></td><td><div class=\"tableLine\">40–80</div></td><td><div class=\"tableLine\">2–4 veckor</div></td></tr><tr><td><div class=\"tableLine\">Gabapentin</div></td><td><div class=\"tableLine\">1 200–3 600</div></td><td><div class=\"tableLine\">25–35</div></td><td><div class=\"tableLine\">Ej fastställt</div></td><td><div class=\"tableLine\">ca 1 dag  </div></td></tr><tr><td><div class=\"tableLine\">Karbamazepin</div></td><td><div class=\"tableLine\">400–1 200</div></td><td><div class=\"tableLine\">10–20</div></td><td><div class=\"tableLine\">20–40</div></td><td><div class=\"tableLine\">2–4 veckor</div></td></tr><tr><td><div class=\"tableLine\">Klonazepam</div></td><td><div class=\"tableLine\">0,5–8</div></td><td><div class=\"tableLine\">Ej fastställd</div></td><td><div class=\"tableLine\">Ej fastställt</div></td><td><div class=\"tableLine\">5–10 dagar</div></td></tr><tr><td><div class=\"tableLine\">Lakosamid</div></td><td><div class=\"tableLine\">200–400</div></td><td><div class=\"tableLine\">Ej aktuell</div></td><td><div class=\"tableLine\">Ej fastställt</div></td><td><div class=\"tableLine\">3 dagar</div></td></tr><tr><td><div class=\"tableLine\">Lamotrigin</div></td><td><div class=\"tableLine\">100–600</div></td><td><div class=\"tableLine\">2–10<sup><a class=\"tableFootnoteLink\" href=\"#fnote_33\"><sup>c</sup></a></sup></div></td><td><div class=\"tableLine\">Ej fastställt</div></td><td><div class=\"tableLine\">ca 5 dagar</div></td></tr><tr><td><div class=\"tableLine\">Levetiracetam</div></td><td><div class=\"tableLine\">1 000–4 000</div></td><td><div class=\"tableLine\">5–30 (60) </div></td><td><div class=\"tableLine\">Ej fastställt</div></td><td><div class=\"tableLine\">2 dagar  </div></td></tr><tr><td><div class=\"tableLine\">Nitrazepam</div></td><td><div class=\"tableLine\">5</div></td><td><div class=\"tableLine\">Ej fastställd</div></td><td><div class=\"tableLine\">Ej fastställt</div></td><td><div class=\"tableLine\">1–2 dagar  </div></td></tr><tr><td><div class=\"tableLine\">Oxkarbazepin</div></td><td><div class=\"tableLine\">600–2 400</div></td><td><div class=\"tableLine\">30–46 (vanligen 30)</div></td><td><div class=\"tableLine\">Ej fastställt</div></td><td><div class=\"tableLine\">2–3 dagar</div></td></tr><tr><td><div class=\"tableLine\">Perampanel</div></td><td><div class=\"tableLine\">4–12</div></td><td><div class=\"tableLine\">Ej fastställd</div></td><td><div class=\"tableLine\">Ej fastställd</div></td><td><div class=\"tableLine\">&gt; 2 veckor</div></td></tr><tr><td><div class=\"tableLine\">Pregabalin</div></td><td><div class=\"tableLine\">150–600</div></td><td><div class=\"tableLine\">Ej fastställd</div></td><td><div class=\"tableLine\">Ej fastställt</div></td><td><div class=\"tableLine\">1–2 dagar  </div></td></tr><tr><td><div class=\"tableLine\">Retigabin</div></td><td><div class=\"tableLine\">600–1 200</div></td><td><div class=\"tableLine\">Ej fastställd</div></td><td><div class=\"tableLine\">Ej fastställt</div></td><td><div class=\"tableLine\">3 dagar</div></td></tr><tr><td><div class=\"tableLine\">Rufinamid </div></td><td><div class=\"tableLine\">1 800–3 200</div></td><td><div class=\"tableLine\">Ej fastställd<sup>c</sup></div></td><td><div class=\"tableLine\">Ej fastställt</div></td><td><div class=\"tableLine\">2–3 dagar</div></td></tr><tr><td><div class=\"tableLine\">Topiramat</div></td><td><div class=\"tableLine\">50–600</div></td><td><div class=\"tableLine\">ca 2</div></td><td><div class=\"tableLine\">Ej fastställt</div></td><td><div class=\"tableLine\">4–8 dagar  </div></td></tr><tr><td><div class=\"tableLine\">Valproat</div></td><td><div class=\"tableLine\">900–2 500</div></td><td><div class=\"tableLine\">10–40 (rekommende-</div><div class=\"tableLine\">rad dos ca 30) </div></td><td><div class=\"tableLine\">300–700<sup>b</sup></div></td><td><div class=\"tableLine\">3–4 dagar</div></td></tr><tr><td><div class=\"tableLine\">Vigabatrin</div></td><td><div class=\"tableLine\">2 000–3 000</div></td><td><div class=\"tableLine\">40 (högre doser vid </div><div class=\"tableLine\">Wests syndrom)</div></td><td><div class=\"tableLine\">Ej fastställt</div></td><td><div class=\"tableLine\">5 dagar</div></td></tr><tr><td><div class=\"tableLine\">Zonisamid</div></td><td><div class=\"tableLine\">100–600</div></td><td><div class=\"tableLine\">6–8</div></td><td><div class=\"tableLine\">Ej fastställt</div></td><td><div class=\"tableLine\">ca 13 dagar  </div></td></tr><tr><td colspan=\"5\" class=\"footNotes\"><div class=\"tableFootnote\" id=\"fnote_31\"><strong>a.</strong> <div class=\"tableLine\">Observera åldersangivelser i produktresumé/Fass när det gäller nyare antiepileptika.</div></div><div class=\"tableFootnote\" id=\"fnote_32\"><strong>b.</strong> <div class=\"tableLine\">Osäker klinisk relevans.</div></div><div class=\"tableFootnote\" id=\"fnote_33\"><strong>c.</strong> <div class=\"tableLine\">Observera lägre doser vid samtidig behandling med valproat.</div></div></td></tr></tbody></table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "00cd169b-961e-44ec-9f5d-ec507baa5a64",
+			"name": "00cd169b-961e-44ec-9f5d-ec507baa5a64",
+			"type": "text",
+			"content": "<span> </span><h3 id=\"r4_26\"><a class=\"index\" id=\"91916\"></a>Preparatval </h3><p>Valet av antiepileptikum grundar sig inte enbart på vilka preparat som har dokumenterad effekt mot en viss anfallstyp utan tolerabilitet, biverkningsprofil m m måste också vägas in och behandlingen individualiseras (se Terapirekommendationerna ovan samt Läkemedelsverkets rekommendationer (2)). Monoterapi bör eftersträvas (3).</p><div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e385cc08-a814-4ad9-86ac-1bcf3e18e6ac",
+			"name": "e385cc08-a814-4ad9-86ac-1bcf3e18e6ac",
+			"type": "therapy",
+			"content": {
+				"number": "3",
+				"title": "<a class=\"index\" id=\"94924\"></a>Preparatval vid olika anfallsformer",
+				"id": "r4_27",
+				"text": "<table><tbody><tr><td><div class=\"tableLine\"><strong>Epilepsi/anfallstyp</strong></div></td><td><div class=\"tableLine\"><strong>I första hand</strong></div></td><td><p><strong><div class=\"tableLine\">I andra hand <br></div><div class=\"tableLine\">eller i kombination </div></strong></p></td><td><p><strong><div class=\"tableLine\">Enbart som <br></div><div class=\"tableLine\">tilläggsbehandling </div></strong></p></td></tr><tr><td><div class=\"tableLine\">Fokala anfall med eller utan ut-</div><div class=\"tableLine\">veckling till ett bilateralt konvul-</div><div class=\"tableLine\">sivt anfall</div></td><td><div class=\"tableLine\">karbamazepin <br></div><div class=\"tableLine\">lamotrigin<sup><a class=\"tableFootnoteLink\" href=\"#fnote_26\"><sup>a</sup></a></sup> <br></div><div class=\"tableLine\">oxkarbazepin<sup>a</sup></div><div class=\"tableLine\">levetiracetam<sup>a</sup></div></td><td><div class=\"tableLine\">valproat <br></div><div class=\"tableLine\">topiramat<sup>a</sup> <br></div><div class=\"tableLine\">zonisamid<sup>a</sup></div></td><td><div class=\"tableLine\">gabapentin<sup>a</sup> <br></div><div class=\"tableLine\">pregabalin<sup>a</sup></div><div class=\"tableLine\">lakosamid<sup>a<br></sup></div><div class=\"tableLine\">eslikarbazepin<sup>a</sup></div><div class=\"tableLine\">perampanel<sup>a</sup></div></td></tr><tr><td colspan=\"4\"><div class=\"tableLine\">Generaliserade anfall</div><div class=\"tableLine\"></div><div class=\"tableLine\"></div><div class=\"tableLine\"></div></td></tr><tr><td><div class=\"tableLine\"><a class=\"index\" id=\"1026194\"></a>Tonisk-kloniska anfall</div></td><td><div class=\"tableLine\">valproat <br></div><div class=\"tableLine\">lamotrigin<sup>a</sup></div></td><td><div class=\"tableLine\">topiramat<sup>a<br></sup></div><div class=\"tableLine\">levetiracetam<sup>a</sup></div><div class=\"tableLine\">zonisamid<sup>a</sup></div></td><td><div class=\"tableLine\">perampanel<sup>a</sup><sup></sup></div></td></tr><tr><td><div class=\"tableLine\"><a class=\"index\" id=\"1022881\"></a>Absenser</div></td><td><div class=\"tableLine\">etosuximid</div><div class=\"tableLine\">valproat <br></div><div class=\"tableLine\">lamotrigin<sup>a</sup></div></td><td><div class=\"tableLine\">klonazepam</div></td><td><div class=\"tableLine\"></div></td></tr><tr><td><div class=\"tableLine\"><a class=\"index\" id=\"1022890\"></a>Myoklona anfall</div></td><td><div class=\"tableLine\">valproat</div><div class=\"tableLine\">levetiracetam<sup>a</sup></div></td><td><div class=\"tableLine\">topiramat<sup>a</sup> <br></div><div class=\"tableLine\">klonazepam<br></div><div class=\"tableLine\">zonisamid<sup>a</sup></div></td><td><div class=\"tableLine\"></div></td></tr><tr><td><div class=\"tableLine\"><a class=\"index\" id=\"1022899\"></a>Atoniska och <a class=\"index\" id=\"1022900\"></a>toniska anfall</div></td><td><div class=\"tableLine\">valproat</div></td><td><div class=\"tableLine\">rufinamid<sup>a</sup></div></td><td><div class=\"tableLine\"></div></td></tr><tr><td colspan=\"4\" class=\"footNotes\"><div class=\"tableFootnote\" id=\"fnote_26\"><strong>a.</strong> <div class=\"tableLine\">För åldersgränser, se produktresumé/Fass.</div></div></td></tr></tbody></table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1bc65a20-e5a2-42e5-b5ce-f2539cdb4c15",
+			"name": "1bc65a20-e5a2-42e5-b5ce-f2539cdb4c15",
+			"type": "text",
+			"content": "<span> </span><p class=\"indent\">Terapirekommendationerna ovan baseras på effektivitet, men också på biverkningsprofil, farmakokinetik, kostnader och klinisk erfarenhet. </p><h3 id=\"r4_28\">Särskilda patientgrupper</h3><h4 id=\"r4_29\"><em><a class=\"index\" id=\"1021381\"></a><a class=\"index\" id=\"21319\"></a>Barn</em></h4>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "62635575-df76-4b06-985c-d313f3c64df2",
+			"name": "62635575-df76-4b06-985c-d313f3c64df2",
+			"type": "facts",
+			"content": {
+				"number": "6",
+				"title": "<a class=\"index\" id=\"38442\"></a>Handläggning av barnet med <a class=\"index\" id=\"1033839\"></a>epilepsi",
+				"text": "<table><tbody><tr><td><ul><li> Okomplicerad epilepsi kan utredas och behandlas av barnläkare.</li></ul><ul><li> Vid utebliven behandlingseffekt inom <br>6 månader bör neuropediater på länsnivå konsulteras.</li></ul><ul><li> Barn som inte svarat som förväntat på behand&shy;lingen inom 2 år bör remitteras till regionalt epilepsiteam.</li></ul><ul><li> Små barn med allvarlig epilepsi som hotar att påverka barnets utveckling bör remitteras <br>tidigare.</li></ul><ul><li> Utsättning av antiepileptika kan övervägas efter 2 års anfallsfrihet, vid behov efter diskussion med neuropediater.</li></ul></td></tr></tbody></table>",
+				"id": "r4_31"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "02f67081-d0a3-40c6-ae56-e4b20cd332f9",
+			"name": "02f67081-d0a3-40c6-ae56-e4b20cd332f9",
+			"type": "text",
+			"content": "<p>Läkemedelsprövningar av antiepileptika har i huvudsak utförts på vuxna och nya medel godkänns därför i första hand för behandling av vuxna. Kunskapen om enskilda läkemedels farmakokinetik, effekter och biverkningar hos barn är sämre och mycket av behandlingstraditionen vid epilepsi hos barn bygger på beprövad erfarenhet. En viktig tumregel är att starta med låg dos som successivt höjs. Dosfönstret som anges i Tabell 2 är stort och ofta uppnås anfallsfrihet med doser som ligger i nedre delen av intervallet. Barn som samtidigt har andra funktionsnedsättningar har ofta stor känslighet för antiepileptika och kan få oacceptabla biverkningar, inte minst i form av beteendestörningar och kognitiva problem. Detta gäller även vid betydligt lägre doser än de gängse rekommenderade.</p><p class=\"indent\">För handläggning av barn med epilepsi se Faktaruta 6.</p><span> </span><h4 id=\"r4_32\"><em>Vuxna</em></h4>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fda704a5-9604-4a47-88ad-013d16a74a90",
+			"name": "fda704a5-9604-4a47-88ad-013d16a74a90",
+			"type": "facts",
+			"content": {
+				"number": "7",
+				"title": "<a class=\"index\" id=\"58311\"></a>Handläggning av den vuxne med epilepsi",
+				"text": "<table><tbody><tr><td><ul><li> Efter epilepsidebut bör patienten ses av eller samråd ske med en neurolog inom 3 månader.</li></ul><ul><li> Om anfallsfrihet inte uppnås, bör remiss skickas till det regionala epilepsiteamet efter högst 2 år eller när 2 adekvata behandlingsförsök gjorts.</li></ul><ul><li> Utsättning av antiepileptika bör ske i samråd med neurolog.</li></ul></td></tr></tbody></table>",
+				"id": "r4_34"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "889bdd38-ce27-461b-87db-3138ec2f524b",
+			"name": "889bdd38-ce27-461b-87db-3138ec2f524b",
+			"type": "text",
+			"content": "<p>För handläggning av vuxna med epilepsi se Faktaruta 7.</p><span> </span><h4 id=\"r4_35\"><em><a class=\"index\" id=\"1026217\"></a><a class=\"index\" id=\"59659\"></a>Kvinnor</em></h4>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0b387549-021d-4e10-a012-b39d990844b1",
+			"name": "0b387549-021d-4e10-a012-b39d990844b1",
+			"type": "facts",
+			"content": {
+				"number": "8",
+				"title": "<a class=\"index\" id=\"1033860\"></a><a class=\"index\" id=\"36671\"></a>Interaktioner",
+				"text": "<table><tbody><tr><td><ul><li> Försiktighet måste iakttas vid kombina&shy;tionsbehandling och vid samtidig behandling med andra läkemedel (se produktresumé/Fass för detaljerad information om interaktioner). </li></ul><ul><li> Framför allt gäller detta de <a class=\"index\" id=\"1033865\"></a>enzyminducerande läkemedlen fenobarbital, fenytoin och karba&shy;mazepin samt i viss mån lamotrigin, topiramat och oxkarbazepin.</li></ul><ul><li> Observera särskilt interaktion med antikoa&shy;gulantia!</li></ul><ul><li>Interaktion med naturläkemedel såsom Johan&shy;nesört, Ginkgo biloba och traditionella kinesiska örtmediciner kan förekomma.</li></ul></td></tr></tbody></table>",
+				"id": "r4_37"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "56406537-1ce9-42c1-989f-57608857d803",
+			"name": "56406537-1ce9-42c1-989f-57608857d803",
+			"type": "text",
+			"content": "<p>Vid behandling av kvinnor i fertil ålder bör särskild hänsyn tas vid preparatval. Andra preparat bör övervägas innan valproat ges till flickor eller till kvinnor i fertil ålder. Om valproat trots allt ges, är noggrann information viktig pga preparatets teratogena effekter (neuralrörsdefekt, kognitiv påverkan, autism). Risken är mycket hög vid doser över 800 mg/dygn. Enzyminducerande <a class=\"index\" id=\"1042525\"></a>antiepileptika (se Faktaruta 8) interagerar med hormonella preventivmedel och kan minska effekten av dessa. Omvänt kan hormonella preventivmedel minska nivån av lamotrigin. Rådgivning om <a class=\"index\" id=\"1042526\"></a>preventivmedel bör därför ges av, eller i samråd med, gynekolog och neurolog. Kvinnor med epilepsi bör om möjligt planera en graviditet, så att behandlingen kan anpassas.</p><span> </span><p class=\"indent\">Inför en planerad graviditet är det önskvärt att kvinnan får diskutera läkemedelsbehandlingen med en neurolog, både pga risken för <a class=\"index\" id=\"1039907\"></a>teratogena effekter av vissa <a class=\"index\" id=\"1039908\"></a>antiepileptika (se läkemedelsbeskrivningarna nedan) och eftersom optimal anfallskontroll under graviditeten är viktig.</p><p class=\"indent\">Om en kvinna trots allt har behandling med valproat, bör preparatbyte ske med största försiktighet och endast göras av neurolog. Om detta inte är möjligt rekommenderas tillskott av <a class=\"index\" id=\"1041650\"></a>folsyra, 5 mg/dygn, inför planerad graviditet och under den första trimestern. Detta är en rekommendation även till andra kvinnor som löper ökad risk att föda barn med neuralrörsdefekt. </p><p class=\"indent\">Under <a class=\"index\" id=\"1021395\"></a>graviditeten bör kvinnan kontrolleras inom specialistmödravård och skötas i samråd med ansvarig neurolog. Monoterapi och lägsta effektiva dosering bör eftersträvas. En kvinna med epilepsi bör förlösas under beredskap för generaliserade tonisk-kloniska anfall.</p><p class=\"indent\">Kvinnor med epilepsi kan uppmuntras att amma då de flesta antiepileptika inte går över i bröstmjölken i sådan mängd att barnet riskerar att påverkas allvarligt. Vissa undantag finns och effekten är inte klarlagd för de nyare preparaten. Amningsfrågan bör därför diskuteras med neurolog och vid amning bör barnet observeras avseende symtom som sedering och avvikande viktutveckling.</p><h4 id=\"r4_38\"><em><a class=\"index\" id=\"1026244\"></a>Äldre personer</em></h4><p>Äldre personer har ofta sämre njurfunktion och sänkt nedbrytningshastighet av läkemedel. Detta betyder att de kan drabbas av biverkningar även vid ”normala” doser av antiepileptika. Det är därför viktigt att börja med en låg dos som sedan långsamt ökas tills effekt uppnås. När det gäller fenytoin och karbamazepin bör serumkoncentrationen kontrolleras för att förhindra för höga blodkoncentrationer. Interaktioner bör särskilt uppmärksammas hos äldre, se Faktaruta 8 <a href=\"#36671\" class=\"btn btn-primary btn-small pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>. </p><h4 id=\"r4_39\"><em>Personer med <a class=\"index\" id=\"1027038\"></a> intellektuella funktionsnedsättningar</em></h4><p>Ungefär 20&#37; av vuxna och 30&#37; av barn med epilepsi har intellektuella funktionsnedsättningar. Många av dessa har även andra neurologiska funktionsnedsättningar eller neuropsykiatriska symtom. På grund av den bakomliggande cerebrala funktionsstörningen är det vanligare med läkemedelsresistenta anfall hos dessa personer och epilepsin har oftare en kronisk karaktär. Den kognitiva störningen, som ibland är kombinerad med beteendestörningar, gör det svårt att bedöma anfallssituationen och eventuella biverkningar av antiepileptika. Det tycks också som om känsligheten för biverkningar, i form av sedation, kognitiva störningar, ataxi och beteendestörning, är större i denna grupp. </p><p class=\"indent\">Samtidig behandling med neuroleptika och andra läkemedel som påverkar centrala nervsystemet är vanlig. Det krävs därför större erfarenhet av epilepsi och mer individuell anpassning av epilepsibehandlingen vid samtidig utvecklingsstörning än när epilepsi förekommer som enskilt neurologiskt symtom. </p><h2 id=\"r4_40\"><a class=\"index\" id=\"1026246\"></a>Avslutande av behandling</h2><p>Ungefär 3 av 4 personer med epilepsi uppnår långtidsremission och flera kan avveckla behandlingen med läkemedel. Hos barn brukar man kräva 2 års anfallsfrihet innan försök görs att sätta ut medicinen och hos vuxna brukar motsvarande tid anges till 3–5 år. </p><p class=\"indent\">Vid vissa epilepsisyndrom, som juvenil myoklon epilepsi, är återfallsrisken stor (85&#37;) varför behandlingstiden som regel bör förlängas. EEG har begränsat värde för beslutet att försöka sätta ut antiepileptika. Risken för återfall vid utsättning av behandlingen är ca 35&#37; och den är störst första året efter seponeringen. Enstaka anfall kan vara uttryck för abstinens och måste inte leda till att utsättningen avbryts, men hastigheten i nedtrappningen kan behöva minskas. Behandlingen bör således inte utsättas abrupt utan successivt under loppet av några månader. Vid behandling med klonazepam eller fenobarbital kan utsättningsperioden behöva förlängas till 6–12 månader.</p><p class=\"indent\">För den som får epilepsi i vuxen ålder handlar det oftast om sekundärt utlöst epilepsi orsakad av en hjärnskada, cerebrovaskulär insult, kärlmissbildning, trauma, tumör eller infektion. Eftersom dessa tillstånd som regel ger upphov till bestående skador i hjärnvävnaden är risken för anfallsrecidiv stor om antiepileptika sätts ut hos anfallsfria patienter. Ställningstagande till utsättning av antiepileptika bör därför ske i samråd med neurolog.</p><h2 id=\"r4_41\">Om behandlingen inte hjälper</h2><p>Trots adekvat diagnostik, val och dosering av antiepileptika samt god följsamhet till läkemedelsbehandlingen, kvarstår epilepsianfall hos ca ¼ av dem som behandlas. Det är sällan meningsfullt att under flera år pröva sig igenom ett flertal antiepileptika, enskilt eller i kombination. Det har nämligen visats att sannolikheten för meningsfull effekt av ytterligare läkemedel är mycket låg redan efter försök med 2–4 adekvata läkemedelsalternativ (4). </p><p class=\"indent\">För dessa patienter bör i stället andra behandlingsformer övervägas, t ex epilepsikirurgi, vagusnervstimulering eller <a class=\"index\" id=\"1043959\"></a>ketogen (fettbaserad) kost. Samtliga dessa behandlingsalternativ bör handläggas på regionsjukhusnivå. Patienter, vars anfall inte har bringats under kontroll efter att man prövat två preparat i adekvata doser, ensamt eller i kombination, bör således remitteras till en specialiserad epilepsienhet för ställningstagande till kompletterande diagnostik och behandlingsalternativ (5).</p><p>Små barn med allvarlig epilepsi som hotar att påverka deras utveckling bör remitteras tidigare i förloppet för sådan bedömning.</p><h2 id=\"r4_42\"><a class=\"index\" id=\"1030536\"></a>Läkemedel för  behandling av epilepsi (i bokstavsordning)</h2><h3 id=\"r4_43\"><a class=\"index\" id=\"1030569\"></a>Diazepam</h3><p>Diazepam tillhör bensodiazepingruppen. Dess användning bör reserveras för att bryta akuta anfall. Eftersom risken för toleransutveckling är stor och trötthet är en vanlig biverkning bör detta preparat inte ges som profylax. Diazepam är förstahandsmedel vid status epilepticus och ska då ges parenteralt eller rektalt. Diazepam kan också ges vid feberkramper. </p><h3 id=\"r4_44\"><a class=\"index\" id=\"1031595\"></a>Eslikarbazepin</h3><p>Eslikarbazepin är ett oxkarbazepinderivat. Det är effektivt mot fokala anfall med eller utan utveckling till ett bilateralt konvulsivt anfall. Information saknas om effekt på andra anfallstyper. </p><p class=\"indent\">Biverkningarna är mindre uttalade än för karbamazepin och oxkarbazepin, framför allt avseende överkänslighet och hyponatremi. </p><p class=\"indent\">Eslikarbazepin kan ges i en dos per dygn.</p><h3 id=\"r4_45\"><a class=\"index\" id=\"1040038\"></a>Etosuximid</h3><p>Etosuximid används framför allt till barn (registrerat preparat Suxinutin oral lösning 50 mg/ml eller t ex licenspreparatet Petnidan kapslar 250 mg). Tabletter eller kapslar är alltid att föredra framför oral suspension när barnen kan svälja dessa. Vid behandling av absenser – den enda indikationen – har etosuximid lika god effekt som valproat och bättre effekt än lamotrigin (6). </p><p class=\"indent\">Biverkningarna är huvudsakligen dosberoende och inkluderar illamående och andra gastrointestinala symtom, viktminskning, trötthet och huvudvärk. Utslag förekommer som en sällsynt biverkning. </p><h3 id=\"r4_46\"><a class=\"index\" id=\"1030769\"></a>Felbamat</h3><p>Felbamat är tillgängligt i Sverige i första hand för behandling av patienter med svårbehandlat <a class=\"index\" id=\"1040063\"></a>Lennox–Gastauts syndrom. Preparatet har flera metaboliter och interagerar med många andra antiepileptika.</p><p class=\"indent\">Svåra biverkningar, som aplastisk anemi och levernekros, begränsar användningen av felbamat. Patienter som behandlas med detta preparat måste därför kontrolleras med avseende på hematologiska parametrar och leverfunktionsprover bör tas varannan vecka under hela behandlingen.</p><h3 id=\"r4_47\"><a class=\"index\" id=\"1030791\"></a>Fenobarbital</h3><p>Fenobarbital är världens mest använda antiepileptikum och dessutom det billigaste. Detta preparat har påvisad effekt mot fokala anfall med eller utan utveckling till ett bilateralt konvulsivt anfall, men det har något sämre effekt än karbamazepin. Fenobarbital kan också användas vid generaliserade tonisk-kloniska anfall men har inte visats ha effekt mot absenser.</p><p class=\"indent\">Användbarheten av fenobarbital är begränsad pga biverkningarna. Det har fortfarande en plats i behandlingen av anfall under nyföddhetsperioden och av status epilepticus, då det finns för parenteralt bruk. I speciella fall används det även till äldre patienter.</p><p class=\"indent\">Fenobarbital, som metaboliseras i levern, har en halveringstid på 2–6 dygn hos vuxna och 1–3 dygn hos barn. Toleransutveckling förekommer, vilket gör att seponering bör ske långsamt.</p><p class=\"indent\">Biverkningar, framför allt trötthet och somnolens, är vanliga vid behandling med fenobarbital. Negativ påverkan på kognitiva funktioner, beteendeproblem och hyperaktivitet är vanliga biverkningar hos barn. Utslag ses hos 5–10&#37;, och även bindvävspåverkan som vid <a class=\"index\" id=\"1039323\"></a>Dupuytrens kontraktur och <a class=\"index\" id=\"1039324\"></a>frozen shoulder förekommer. </p><h3 id=\"r4_48\"><a class=\"index\" id=\"1021446\"></a>Fenytoin</h3><p>Globalt sett är fenytoin fortfarande ett viktigt antiepileptikum. Det är effektivt vid fokala anfall med eller utan utveckling till ett bilateralt konvulsivt anfall. Fenytoin är även verksamt vid generaliserade tonisk-kloniska anfall, men det har ingen effekt på absenser, myoklona eller atoniska anfall och kan ibland förvärra dessa. Trots effekten är inte fenytoin idag ett förstahandspreparat pga biverkningar, ogynnsam farmakokinetik och talrika interaktioner. </p><h3 id=\"r4_49\">Fosfenytoin</h3><p><a class=\"index\" id=\"1021450\"></a>Fosfenytoin är en ”prodrug” till fenytoin och har ersatt fenytoin när det gäller parenteral behandling av status epilepticus och när en patient inte kan ta fenytoin peroralt. Fosfenytoin är mindre kärlretande än fenytoin. Läkemedlet kan också ges intramuskulärt.</p><p class=\"indent\">En specifik biverkning är klåda i samband med injektion. Se i övrigt fenytoin.</p><h3 id=\"r4_50\"><a class=\"index\" id=\"1030807\"></a>Gabapentin</h3><p>Gabapentin är effektivt vid fokala anfall men inte vid generaliserade anfall. Preparatet har visats vara mindre effektivt än karbamazepin vid fokala anfall, men den använda dosen kan ha varit för låg och den dos som numera används vid epilepsi är högre. Gabapentin bryts inte ner i levern utan utsöndras i oförändrad form i urinen, vilket gör det till ett lämpligt medel då epilepsi förekommer tillsammans med leversjukdom. </p><p class=\"indent\">Biverkningarna är få. Viktökning förekommer men inte överkänslighetsreaktioner. </p><h3 id=\"r4_51\"><a class=\"index\" id=\"1021453\"></a>Karbamazepin</h3><p>Karbamazepin är ett effektivt och säkert förstahandspreparat vid fokala anfall med eller utan utveckling till ett bilateralt konvulsivt anfall. Det är mindre effektivt mot generaliserade anfall och det kan framkalla myoklona anfall hos predisponerade individer. </p><p class=\"indent\">Karbamazepin metaboliseras i levern och oxideras till en aktiv metabolit (epoxid) som också har antiepileptisk effekt och som kan bidra till biverkningarna. Karbamazepin inducerar leverenzymer och kan inducera sin egen metabolism. Serumkoncentrationen är därför inte stabil förrän efter ca 3 veckors behandling och den kan också påverkas av interaktioner med många andra läkemedel inklusive andra antiepileptika. </p><p class=\"indent\">Dosberoende biverkningar är trötthet, yrsel, dubbelseende, ackommodationssvårigheter och ataxi. Utslag förekommer hos 2–4&#37;. Hyponatremi är vanligt men ger sällan symtom om den inte är uttalad. Leverpåverkan förekommer, liksom benmärgspåverkan med i sällsynta fall agranulocytos och aplastisk anemi. </p><h3 id=\"r4_52\"><a class=\"index\" id=\"1030849\"></a>Klonazepam</h3><p>Klonazepam är ett <a class=\"index\" id=\"1040272\"></a>bensodiazepinpreparat. Det har ett brett antiepileptiskt spektrum, men det har sitt huvudsakliga användningsområde som andra- eller tredjehandsmedel vid svårbehandlade epilepsisyndrom hos barn, t ex vid Wests och Lennox–Gastauts syndrom. Klonazepam har påvisad effekt vid absenser och myoklona anfall men kan öka risken för tonisk-kloniska anfall. Klonazepam finns även för parenteralt bruk och används också vid status epilepticus, framför allt till barn. </p><p class=\"indent\">Biverkningar är vanliga och utgörs av trötthet, beteendeavvikelser samt ataxi och aggressivitet, vilka begränsar användningen. Toleransutveckling kan ske och utsättning av klonazepam medför hög risk för abstinensanfall. Seponering bör därför ske mycket långsamt. </p><h3 id=\"r4_53\"><a class=\"index\" id=\"1042101\"></a>Lakosamid</h3><p>Lakosamid kan användas som tilläggsbehandling vid fokala anfall med eller utan utveckling till ett bilateralt konvulsivt anfall. </p><p class=\"indent\">Biverkningarna, som är dosberoende, utgörs mest av yrsel och ostadighet. Lakosamid finns även för parenteralt bruk (7).</p><h3 id=\"r4_54\"><a class=\"index\" id=\"1031284\"></a><a class=\"index\" id=\"43987\"></a>Lamotrigin</h3><p>Lamotrigin har ett brett spektrum. Det är effektivt mot fokala anfall med eller utan utveckling till ett bilateralt konvulsivt anfall samt generaliserade anfall, absenser och atoniska anfall. Effekten är mindre säker mot myoklona anfall som även kan förstärkas i vissa fall. I kliniska prövningar är lamotrigin lika effektivt som karbamazepin vid nydebuterad fokal epilepsi. </p><p class=\"indent\">Utslag förekommer hos drygt 10&#37; av patienterna och livshotande tillstånd som <a class=\"index\" id=\"1040111\"></a>Stevens–Johnsons syndrom och toxisk epidermal nekrolys kan utvecklas. Risken kan minskas genom långsam upptitrering av dosen med höjning varannan vecka. Andra biverkningar är yrsel, dubbelseende, ataxi, huvudvärk och sömnsvårigheter. Valproat minskar nedbrytningen av lamotrigin, varför en avsevärt lägre dos av lamotrigin måste användas om det ges tillsammans med valproat. Vanlig vuxendos är 100–600 mg/dag, medan dygnsdosen vid samtidig valproatbehandling är 100–200 mg/dag. </p><h3 id=\"r4_55\"><a class=\"index\" id=\"1030909\"></a>Levetiracetam</h3><p>Levetiracetam är effektivt som monoterapi eller tilläggsbehandling mot fokala anfall med eller utan utveckling till ett bilateralt konvulsivt anfall. Studier har visat att levetiracetam är effektivt som tilläggsbehandling vid juvenil myoklon epilepsi och generaliserad epilepsi med tonisk-kloniska anfall. Levetiracetam metaboliseras genom hydrolys och endast till viss del i levern, vilket är gynnsamt vid behandling av epilepsi i kombination med leversjukdom. </p><p class=\"indent\">Genom att långsamt titrera upp dosen kan man undvika trötthet, som annars är den vanligaste biverkningen. En reversibel och dosberoende biverkning är aggressivitet, i synnerhet hos predisponerade individer. Långsam upptitrering är särskilt viktig hos barn. Levetiracetam finns även för parenteralt bruk (se Terapirekommendationerna – Behandling av tonisk-kloniska anfall och status epilepticus <a href=\"#65082\" class=\"btn btn-primary btn-small pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>).<span> </span></p><h3 id=\"r4_56\"><a class=\"index\" id=\"1039409\"></a>Midazolam</h3><p>Midazolam, som tillhör bensodiazepingruppen, används endast för att bryta ett anfall. Preparatet kan dels ges intravenöst i samband med status epilepticus, dels buckalt, dvs innanför kinden. Biverkningarna är desamma som för övriga bensodiazepiner. </p><h3 id=\"r4_57\"><a class=\"index\" id=\"1031166\"></a>Nitrazepam</h3><p>Nitrazepam är ytterligare ett bensodiazepinderivat med antikonvulsiv effekt. Det har stor terapeutisk bredd och låg akut toxicitet. Preparatet kan användas vid vissa anfallstyper som myoklona och atoniska anfall hos barn samt vid Wests syndrom (<a class=\"index\" id=\"1030931\"></a>infantila spasmer). </p><p class=\"indent\">De vanligaste biverkningarna är dåsighet, ataxi, koncentrationssvårigheter, aggressivitet och hypersalivation. Det sistnämnda kan utgöra ett allvarligt problem hos barn med flerfunktionsnedsättningar inkluderande andningssvårigheter. </p><h3 id=\"r4_58\"><a class=\"index\" id=\"1030946\"></a>Oxkarbazepin</h3><p>Oxkarbazepin är ett derivat av karbamazepin och det metaboliseras snabbt i levern till en aktiv monohydroximetabolit som är ansvarig för effekten. Oxkarbazepin är effektivt mot fokala anfall med eller utan utveckling till ett bilateralt konvulsivt anfall men inte mot generaliserade anfall. Liksom karbamazepin kan det förvärra myoklona anfall. Oxkarbazepin kan vara ett förstahandsval vid nydebuterad fokal epilepsi. Risken för interaktioner med oxkarbazepin finns, men är mindre än för karbamazepin.</p><p class=\"indent\">Biverkningarna av oxkarbazepin är av samma typ som för karbamazepin, men för det mesta är de mindre uttalade. Idiosynkratiska hypersensitivitetsreaktioner, som hudutslag, är mindre vanliga än vid behandling med karbamazepin medan hyponatremi ses oftare.</p><h3 id=\"r4_59\"><a class=\"index\" id=\"1041876\"></a>Perampanel</h3><p>Perampanel är avsedd som tillläggsbehandling vid fokala anfall samt vid generaliserade tonisk-kloniska anfall.</p><p class=\"indent\">Perampanel ges endast 1 gång/dag pga den långa halveringstiden (105 timmar). Vid dosering i kombination med karbamazepin, oxkarbazepin och fenytoin ökar halveringstiden av perampanel. </p><p class=\"indent\">Biverkningarna är dosberoende och de vanligaste rapporterade är yrsel och trötthet (7).</p><h3 id=\"r4_60\"><a class=\"index\" id=\"1042096\"></a>Pregabalin</h3><p>Pregabalin är verksamt vid fokala men inte vid generaliserade anfall. Det bryts inte ned i levern utan utsöndras oförändrat i urinen. De vanligaste biverkningarna är viktökning, yrsel och somnolens.</p><h3 id=\"r4_61\"><a class=\"index\" id=\"1042196\"></a>Retigabin</h3><p>Retigabin har mycket begränsad användbarhet pga dess biverkningsprofil.</p><h3 id=\"r4_62\"><a class=\"index\" id=\"1043333\"></a>Rufinamid</h3><p>Rufinamid är ett antiepileptikum med indikationen tilläggsbehandling vid Lennox-Gastauts syndrom. I kliniska prövningar har rufinamid visat bäst effekt på toniska och atoniska anfall (droppattacker). Effekten på andra anfallstyper är inte lika övertygande. </p><p class=\"indent\">De vanligaste biverkningarna som har rapporterats är huvudvärk, yrsel, trötthet/sömnighet och kräkningar. Hudutslag kan förekomma.</p><p class=\"indent\">Rufinamid absorberas bäst vid samtidigt matintag. Maximal plasmakoncentration uppnås efter 6 timmar. Biotillgängligheten minskar allteftersom dosen ökar. Rufinamid elimineras i första hand via njurarna men i viss mån även genom metabolism, dock inte via cytokrom P450-systemet eller som glutationkonjugat. Halveringstiden är 6–10 timmar vilket betyder att preparatet behöver intas två gånger per dag (7).</p><h3 id=\"r4_63\"><a class=\"index\" id=\"1031612\"></a>Stiripentol</h3><p>Stiripentol är en GABA-receptoragonist med ett mycket begränsat användningsområde. Det är endast indicerat som tillläggsbehandling vid allvarlig myoklon epilepsi i barndomen (Dravets syndrom).</p><h3 id=\"r4_64\"><a class=\"index\" id=\"1031753\"></a>Topiramat</h3><p>Topiramat är ett antiepileptikum med ett brett spektrum. Det har visat sig vara effektivt som monoterapi vid fokal epilepsi samt som tilläggsbehandling vid generaliserade tonisk-kloniska anfall och vid Lennox-Gastauts syndrom. Kliniska prövningar har visat att topiramat även har effekt på myoklona anfall och kan användas vid juvenil myoklon epilepsi. För att undvika biverkningar rekommenderas långsam upptitrering av dosen. </p><p class=\"indent\">Biverkningarna är yrsel, trötthet, viktminskning och kognitiv påverkan. Njur-sten kan uppkomma hos predisponerade patienter. En ökad risk för fosterskador vid behandling med <a class=\"index\" id=\"1044982\"></a>topiramat under graviditet har rapporterats.</p><h3 id=\"r4_65\"><a class=\"index\" id=\"1030835\"></a>Valproat</h3><p>Valproat har effekt mot alla anfallstyper, dvs fokala anfall, generaliserade tonisk-kloniska anfall, absenser, atoniska och myoklona anfall. Valproat har rekommenderats som förstahandsmedel vid generaliserade anfall, men de kliniska studierna är få. Medlet har visats vara effektivt vid behandling av absenser.</p><p class=\"indent\">Valproat metaboliseras i levern och kan minska nedbrytningen av flera läkemedel, vilket kan medföra viktiga interaktioner. Metabolismen av valproat kan i sin tur påskyndas av flera läkemedel inklusive andra antiepileptika. Valproat finns också för parenteralt bruk. </p><p class=\"indent\">Biverkningarna är viktiga att känna till. Tremor är en dosberoende biverkning. Ett fåtal fall av överkänslighet har rapporterats. Viktuppgång är vanlig. Hos barn &lt; 3 år har levertoxicitet med dödlig utgång rapporterats. Påverkan på trombocyter förekommer, liksom ökad blödningsrisk. Pankreatit är en ovanlig biverkning. Hormonell påverkan och ökad förekomst av polycystiska ovarier har rapporterats. Valproat kan ge <a class=\"index\" id=\"1039488\"></a>encefalopati och har också <a class=\"index\" id=\"1030594\"></a>teratogena biverkningar, i synnerhet ökar risken för neuralrörsdefekt, kognitiv påverkan och autism hos barnet. Med anledning av detta rekommenderas begränsad användning hos kvinnor och flickor (8).</p><h3 id=\"r4_66\"><a class=\"index\" id=\"1021484\"></a>Vigabatrin</h3><p>Vigabatrin har god effekt på fokala anfall, men har visat sig vara mindre effektivt mot generaliserade anfall och kan i vissa fall förvärra framför allt myoklona anfall. Det har en särskild plats i behandlingen av <a class=\"index\" id=\"1034422\"></a>Wests syndrom hos barn, särskilt om orsaken är tuberös skleros. Inga kliniskt betydelsefulla interaktioner förekommer.</p><p class=\"indent\">Biverkningar är främst trötthet, viktuppgång, depression och huvudvärk. Allvarligast är att vigabatrin hos ca 30&#37; av patienterna ger en irreversibel perifer synfältsinskränkning. Detta har begränsat användningen av preparatet och de patienter som behandlas med vigabatrin ska var 6:e månad genomgå synfältskontroll.</p><h3 id=\"r4_67\"><a class=\"index\" id=\"1031224\"></a>Zonisamid</h3><p>Detta läkemedel kan användas som monoterapi eller som tilläggsbehandling vid fokala anfall med eller utan utveckling till ett bilateralt konvulsivt anfall hos vuxna. Zonisamid kan även ha effekt vid generaliserad epilepsi. Det metaboliseras i levern med viss risk för interaktioner. Preparatet har yrsel och somnolens som de vanligaste biverkningarna.</p><h2 id=\"r4_68\">Referenser</h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "eee00079-3839-4c3d-a842-0807b3549aa8",
+			"name": "eee00079-3839-4c3d-a842-0807b3549aa8",
+			"type": "references",
+			"content": "<ol class=\"references\"><li id=\"reference_1\">Offringa M, Newton R. Prophylactic drug management for febrile seizures in children. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22513908\" target=\"_blank\">Cochrane Database Syst Rev. 2012 Apr </a> 18;4:CD003031.</li>\n<li id=\"reference_2\">Läkemedelsbehandling av epilepsi – ny behandlingsrekommendation. Information från Läkemedelsverket. 2011:1. <a href=\"http://www.lakemedelsverket.se/upload/halso-och-sjukvard/behandlingsrekommendationer/2011_02_02_Rek%20Eilepsi-webb.pdf\" target=\"_blank\">www.lakemedelsverket.se</a> </li>\n<li id=\"reference_3\">Glauser T, Ben-Menachem E, Bourgeois B, <br> Cnaan A, Chadwick D, Guerreiro C, Kalviainen R, Mattson R, Perucca E, Tomson T. ILAE Treatment guidelines: Evidence based analysis of antiepileptic drug efficacy and effectiveness as initial monotherapy for epileptic seizures and syndromes. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/16886973?ordinalpos=6&amp;itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum\" target=\"_blank\">Epilepsia. 2006;47:1094–1120.</a> </li>\n<li id=\"reference_4\">Ben-Menachem E. Medical management of refractory epilepsy - practical treatment with novel antiepileptic drugs. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/24400690\" target=\"_blank\">Epilepsia 2014;55 Suppl 1:3-8.</a> </li>\n<li id=\"reference_5\"> Svenska Epilepsisällskapet. Beslutsstöd för samverkan mellan olika vårdnivåer kring patienter med svårbehandlad epilepsi.<br><a href=\"http://www.epilepsisallskapet.se/?p=vsamhet_show&amp;typ=riktlinjer\" target=\"_blank\">www.epilepsisallskapet.se</a> </li>\n<li id=\"reference_6\">Glauser TA, Cnaan A, Shinnar S, Hirtz DG, Dlugos  D, Masur D, et al; Childhood Absence Epilepsy Study Group. Ethosuximide, valproic acid, and <a href=\"/atclist/N03AX09\" data-atcid=\"N03AX09\" data-atctitles=\"Nervsystemet--Antiepileptika--Antiepileptika--&#xD6;vriga_antiepileptika--Lamotrigin\" class=\"inlineGenerica text\">lamotrigin</a>e in childhood absence epilepsy. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/20200383\" target=\"_blank\">N</a>  Engl J Med. 2010;362:790–9.</li>\n<li id=\"reference_7\">Stephen LJ, Brodie MJ. Pharmacotherapy of epilepsy: newly approved and developmental agents.<br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/21254787\" target=\"_blank\">CNS Drugs. 2011;25:89</a> –107.</li>\n<li id=\"reference_8\">Nyhet från Läkemedelsverket publicerad 2014-10-13 och uppdaterad 2014-11-26: PRAC rekommenderar ytterligare begränsning för användning av valproat hos kvinnor och flickor. <a href=\"https://lakemedelsverket.se/Alla-nyheter/NYHETER-2014/PRAC-rekommenderar-ytterligare-begransning-for-anvandning-av-valproat-hos-kvinnor-och-flickor/\" target=\"_blank\">www.lakemedelsverket.se.</a> </li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/-nya-kapitel-ej-publ/epilepsi.json",
+	"indexed": "true",
+	"modified": "2016-05-27 21:25"
+}
