@@ -1,3 +1,4 @@
+var express = require('express');
 var fs = require("fs");
 var request = require("request");
 var genericasInjector = require("../cms/postprocessors/genericas.js")
@@ -598,7 +599,7 @@ app.get('/api/v1/injectgenericas/:selector?', function(req,res){
 
 var meshTerms = null;
 
-function extractKeywords(data) {
+function extractKeywords(data, excludedWords) {
 
 	if (meshTerms === null) {
 		
@@ -626,8 +627,6 @@ function extractKeywords(data) {
 		}
 	}
 
-	var common = ["behandling", "behandlas", "behandlas", "symtom", "faktaruta", "tabell", "risken", "patienter", "läkemedel", "effekt", "visat", "behandlas", "risk", "män", "svåra", "patienten", "personer", "pga", "kvinnor", "sverige", "mg/dag", "ökad", "ges", "for", "figur", "doser", "isbn", "användas", "alternativ", "form", "äldre", "barn", "vuxna", "månader", "veckor", "grupp", "ses", "differentialdiagnoser", "orsakas", "enstaka", "akut", "sjukdom", "preparat", "övervägas", "hand", "förekomst", "tecken", "vanligen", "patienterna", "utgör", "leda"];
-
 	var keywordsChained = keywordExtractor.extract(data, {language: "swedish", remove_digits: true, return_changed_case: true, return_chained_words: true});
 	
 	for (var i = keywordsChained.length - 1; i >= 0; i--) {
@@ -643,7 +642,7 @@ function extractKeywords(data) {
 	
 	keywords.forEach(function(word) {
 
-		if (word.length > 2 && common.indexOf(word) === -1) {
+		if (word.length > 2 && excludedWords.indexOf(word) === -1) {
 			if (countedKeywords[word] === undefined) {
 				countedKeywords[word] = 0;
 			}
@@ -656,6 +655,14 @@ function extractKeywords(data) {
 	for (var word in countedKeywords) {
 		rankedKeywords.push({word: word, count: countedKeywords[word], meshterm: (meshTerms[word] !== undefined)});
 	}
+	
+	//Triple the count for mesh terms, boosting
+	rankedKeywords.forEach(function(item) {
+		if (item.meshterm) {
+			item.count = item.count * 3;
+		}
+	});
+	
 
 	rankedKeywords.sort(function(a, b) {
 		return b.count - a.count;
@@ -678,10 +685,10 @@ function extractKeywords(data) {
 	var stats = new Stats().push(counts);
 	var mean = stats.amean();
 	var stddev = stats.stddev();
-	cutoff = Math.round(mean + stddev + stddev);
+	cutoff = Math.round(mean + stddev);
 	
 	for (var i = rankedKeywords.length - 1; i >= 0; i--) {
-		if (rankedKeywords[i].count < cutoff) {
+		if (rankedKeywords[i].count < cutoff) { // && rankedKeywords[i].meshterm === false
 			rankedKeywords.splice(i, 1);
 		}
 	}
@@ -713,9 +720,19 @@ function extractKeywords(data) {
 //Return mesh items for a url
 app.get('/api/v1/extractkeywords', function(req,res){
 
-
 	var content = req.query["content"];
 	var url = req.query["url"];
+	var excludedWords = req.query["exclude"];
+	
+	if (excludedWords === undefined) {
+		excludedWords = [];
+	} else {
+		try {
+			excludedWords = JSON.parse(excludedWords);
+		} catch(e) {
+			excludedWords = [];
+		}
+	}
 
 	var apiKey = req.query["apikey"];
 	var isAllowed = checkIfApiKeyIsLegit(apiKey, req);
@@ -743,11 +760,11 @@ app.get('/api/v1/extractkeywords', function(req,res){
 
 						selectedElement.find("script").remove();
 
-						data = selectedElement.text();
+						var data = selectedElement.text();
 						data = data.replace(/\r\n/g, "\n"); //.replace(/\n/g, "").replace(/\t/g, "");
 
 						if (data.length > 0) {
-							result.content = extractKeywords(data);
+							result.content = extractKeywords(data, excludedWords);
 						} else {
 							console.log("No data ");
 						}
@@ -761,25 +778,44 @@ app.get('/api/v1/extractkeywords', function(req,res){
 					}
 				}
 			});
-/*		} else if (content) {
-			var result = {content: content};
+		} else if (content) {
+			var result = {content: ""};
 
-			var contentHash = createHash(content);
+			var contentHash = createHash(content + excludedWords.join(","));
 			if (cache.has(contentHash)) {
-				content = cache.get(contentHash);
+				result.content = cache.get(contentHash);
 			} else {
-				content = genericasInjector.process(content);
-				cache.set(contentHash, content);
+				//Load in cheerio
+				var $ = cheerio.load(content);
+
+				var selectedElement = $("body");
+
+				if (selectedElement.length > 0) {
+					selectedElement = selectedElement.first();
+
+					selectedElement.find("script").remove();
+
+					var data = selectedElement.text();
+					data = data.replace(/\r\n/g, "\n"); //.replace(/\n/g, "").replace(/\t/g, "");
+
+					if (data.length > 0) {
+						result.content = extractKeywords(data, excludedWords);
+					} else {
+						console.log("No data");
+					}
+
+				}
+
 			}
 
-			result.content = content;
+			cache.set(contentHash, result.content);
 
 			if (req.query["callback"] !== undefined && req.query["callback"] !== "") {
 				res.jsonp(result);
 			} else {
 				res.json(result);
 			}
-*/
+
 		} else {
 			var result = {content: ""};
 			if (req.query["callback"] !== undefined && req.query["callback"] !== "") {
@@ -789,6 +825,80 @@ app.get('/api/v1/extractkeywords', function(req,res){
 			}
 		}
 
+
+	} else {
+		res.status(403);
+		res.end("403 Forbidden, too many requests from the same ip-address without an api key");
+	}
+
+});
+
+//Return mesh keywords from post html data
+app.post('/api/v1/extractkeywords', express.urlencoded({extended: false, limit: "50mb"}), function(req,res){
+
+	if (!req.body) return res.sendStatus(400);
+	
+	var content = req.body.content;
+
+	if (!content) return res.sendStatus(400);
+
+	var excludedWords = req.body.exclude;
+	
+	if (excludedWords === undefined) {
+		excludedWords = [];
+	} else {
+		try {
+			excludedWords = JSON.parse(excludedWords);
+		} catch(e) {
+			excludedWords = [];
+		}
+	}
+
+
+	var apiKey = req.body.apikey;
+	var isAllowed = checkIfApiKeyIsLegit(apiKey, req);
+
+	if (isAllowed) {
+
+		var result = {content: ""};
+
+		var contentHash = createHash(content + excludedWords.join(","));
+		if (cache.has(contentHash)) {
+			result.content = cache.get(contentHash);
+		} else {
+			
+			//Load in cheerio
+			var $ = cheerio.load(content);
+
+			var selectedElement = $("body");
+
+			if (selectedElement.length > 0) {
+				selectedElement = selectedElement.first();
+
+				selectedElement.find("script").remove();
+
+				var data = selectedElement.text();
+				data = data.replace(/\r\n/g, "\n"); //.replace(/\n/g, "").replace(/\t/g, "");
+
+				if (data.length > 0) {
+					result.content = extractKeywords(data, excludedWords);
+				} else {
+					console.log("No data");
+				}
+
+			} else {
+				console.log("body element is missing from the html document");
+			}
+
+		}
+
+		cache.set(contentHash, result.content);
+
+		if (req.query["callback"] !== undefined && req.query["callback"] !== "") {
+			res.jsonp(result);
+		} else {
+			res.json(result);
+		}
 
 	} else {
 		res.status(403);
