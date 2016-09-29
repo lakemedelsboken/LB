@@ -141,6 +141,7 @@ ga = function() {};
 			$("body").on("click", ".figureLink", self.handleBoxLinks);
 			$("body").on("click", ".tableLink", self.handleBoxLinks);
 			$("body").on("click", ".therapyLink", self.handleBoxLinks);
+			$("body").on("click", ".casereportLink", self.handleBoxLinks);
 			$("body").on("click", "a.pageFootnoteItem", self.handlePageFootnoteItems);
 			$("body").on("click", "a.atcCodeInPopover", self.handleAtcCodeInPopover);
 
@@ -3000,6 +3001,10 @@ ga = function() {};
 					title = "Faktaruta";
 					type = "facts";
 					typeName = "Faktaruta";
+				} else if ($(this).hasClass("casereportLink")) {
+					title = "Fallbeskrivning";
+					type = "casereport";
+					typeName = "Fallbeskrivning";
 				} else if ($(this).hasClass("figureLink")) {
 					title = "Figur";
 					type = "figure";
