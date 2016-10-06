@@ -611,35 +611,13 @@
 			}
 		},
 		{
-			"id": "5d5e1257-fe7d-4ebd-a08c-ce0af561f884",
-			"name": "5d5e1257-fe7d-4ebd-a08c-ce0af561f884",
-			"type": "facts",
-			"content": {
-				"number": "1",
-				"title": "",
-				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>Text</td>\r\n<td></td>\r\n</tr>\r\n</tbody>\r\n</table>",
-				"id": ""
-			},
-			"settings": {
-				"preprocessors": {
-					"idinjection.js": "false"
-				},
-				"postprocessors": {
-					"boxlinks.js": "false",
-					"genericas.js": "false",
-					"pagefootnotes.js": "false",
-					"references.js": "false"
-				}
-			}
-		},
-		{
 			"id": "f4ab3b31-722e-4540-9676-28d1cd631b4a",
 			"name": "f4ab3b31-722e-4540-9676-28d1cd631b4a",
 			"type": "facts",
 			"content": {
 				"number": "7",
 				"title": "Dosering av LMH alternativt vitamin K vid avvikande låga respektive höga PK(INR)-värden",
-				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><strong>Profylaxdoser av LMH</strong></p>\r\n<p>&Ouml;kad profylaxdos inneb&auml;r ett till&auml;gg p&aring; 50&ndash;100&nbsp;%</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Dalteparin (25 000 E/ml)<br />5&nbsp;000 E = 0,2 ml&nbsp;&times;&nbsp;1 s.c.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Tinzaparin (10 000 E/ml)<br />4&nbsp;500 enh = 0,45 ml&nbsp;&times;&nbsp;1 s.c.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Enoxaparin 100 mg/ml)<br />40 mg = 0,4 ml&nbsp;&times;&nbsp;1 s.c.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Vitamin K</strong></p>\r\n<p>Vitamin K kan anv&auml;ndas f&ouml;r att reversera effekten av warfarin. Det aktuella PK(INR)-v&auml;rdet och dosen avg&ouml;r reverseringseffekten, som dr&ouml;jer flera timmar och &auml;r maximal f&ouml;rst efter cirka 24 timmar. Vanligen &auml;r 2 mg tillr&auml;ckligt f&ouml;r att s&auml;nka ett INR-v&auml;rde fr&aring;n terapeutisk niv&aring;, det vill s&auml;ga 2,0-3,0 till &lt;&nbsp;1,5 p&aring; 12&ndash;16 timmar.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Konakion Novum, injektionsv&auml;tska, l&ouml;sning 10 mg/ml.</li>\r\n<li>Den intraven&ouml;sa l&ouml;sningen kan ges peroralt 1,0&ndash;5,0 mg, beroende p&aring; PK(INR) och klinisk situation.</li>\r\n<li>Stor dos, till exempel 10 mg, kan ge resistens mot warfarin i mer &auml;n en vecka, vilket kan vara en ol&auml;genhet om man avser att forts&auml;tta warfarinbehandlingen.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><strong>Profylaxdoser av LMH</strong></p>\r\n<p>&Ouml;kad profylaxdos inneb&auml;r ett till&auml;gg p&aring; 50&ndash;100&nbsp;%</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Dalteparin (25 000 E/ml)<br />5&nbsp;000 E = 0,2 ml&nbsp;&times;&nbsp;1 s.c.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Tinzaparin (10 000 E/ml)<br />4&nbsp;500 enh = 0,45 ml&nbsp;&times;&nbsp;1 s.c.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Enoxaparin 100 mg/ml)<br />40 mg = 0,4 ml&nbsp;&times;&nbsp;1 s.c.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Vitamin K</strong></p>\r\n<p>Vitamin K kan anv&auml;ndas f&ouml;r att reversera effekten av warfarin. Det aktuella PK(INR)-v&auml;rdet och dosen avg&ouml;r reverseringseffekten, som dr&ouml;jer flera timmar och &auml;r maximal f&ouml;rst efter cirka 24 timmar. Vanligen &auml;r 2 mg tillr&auml;ckligt f&ouml;r att s&auml;nka ett INR-v&auml;rde fr&aring;n terapeutisk niv&aring;, det vill s&auml;ga 2,0-3,0 till &lt;&nbsp;1,5 p&aring; 12&ndash;16 timmar.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Konakion Novum, injektionsv&auml;tska, l&ouml;sning 10 mg/ml.</li>\r\n<li>Den intraven&ouml;sa l&ouml;sningen kan ges peroralt 1,0&ndash;5,0 mg, beroende p&aring; PK(INR) och klinisk situation.</li>\r\n<li>Stor dos, till exempel 10 mg, kan ge resistens mot warfarin i mer &auml;n en vecka, vilket kan vara en ol&auml;genhet om man avser att forts&auml;tta warfarinbehandlingen.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
 				"id": ""
 			},
 			"settings": {
@@ -1014,5 +992,5 @@
 	"type": "file",
 	"path": "/kapitel/-nya-kapitel-ej-publ/Ven-s-tromboembolism.json",
 	"indexed": "true",
-	"modified": "2016-10-05 16:15"
+	"modified": "2016-10-05 16:11"
 }
