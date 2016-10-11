@@ -34,6 +34,8 @@ if (!fs.existsSync(secretSettingsPath)) {
 	var conf_time = fs.statSync(secretSettingsPath).mtime.getTime();
 	var cast5_time = fs.statSync(secretSettingsPath + ".cast5").mtime.getTime();
 
+	console.log((conf_time < cast5_time));
+
 	if (conf_time < cast5_time) {
 		console.error("Your config file is out of date!");
 		console.error("You need to run `make decrypt_conf` to update it.");
@@ -188,7 +190,7 @@ var Users = {
 				break;
 			}
 		}
-	
+
 		if (foundUser) {
 			return callback(null, foundUser);
 		} else {
@@ -205,7 +207,7 @@ var Users = {
 				break;
 			}
 		}
-	
+
 		if (foundUser) {
 			return callback(null, foundUser);
 		} else {
@@ -261,8 +263,8 @@ app.post('/cms/login',function(req, res, next) {
 	passport.authenticate('local', function(err, user, info) {
 		if (err) { return next(err); }
 
-		if (!user) { 
-			return res.redirect('/cms/login'); 
+		if (!user) {
+			return res.redirect('/cms/login');
 		}
 
 		req.logIn(user, function(err) {
@@ -273,8 +275,8 @@ app.post('/cms/login',function(req, res, next) {
 
 			return res.redirect(redirectUrl);
 		});
-		
-	
+
+
 	})(req, res, next);
 
 });
@@ -346,16 +348,16 @@ app.use(function(err, req, res, next) {
 
 function updateATCTreeFromMaster() {
 	var apiKeys = secretSettings.api.keys;
-	
+
 	var cmsApiKey = "CMS";
-	
+
 	for (var key in apiKeys) {
 		if (apiKeys[key] === "CMS") {
 			cmsApiKey = key;
 			break;
 		}
 	}
-	
+
 	if (cmsApiKey === "CMS") {
 		console.log("Could not find API key for CMS.")
 	}
@@ -367,7 +369,7 @@ function updateATCTreeFromMaster() {
 
 	console.log("Downloading new atcTree.json from master server...");
 
-	var masterAtcTreeUrl = "http://www.lakemedelsboken.se/api/v1/atcTree.json";
+	var masterAtcTreeUrl = "https://www.lakemedelsboken.se/api/v1/atcTree.json";
 
 	request(masterAtcTreeUrl)
 	.on('response', function(response) {
@@ -388,27 +390,27 @@ function updateATCTreeFromMaster() {
 			console.error("Status code for response was: " + statusError);
 			console.error("Could not download atcTree from " + masterAtcTreeUrl);
 		}
-		
+
 		if (generalError) {
 			console.error("General error: ", generalError);
 			console.error("Could not download atcTree from " + masterAtcTreeUrl);
 		}
 
 		if (!statusError && !generalError) {
-			
+
 			//TODO:Check integrity of atcTree.json
 			var atcTree = null;
 			var readError = false;
 			var parseError = false;
-			
+
 			try {
 				atcTree = fs.readFileSync(tempAtcTreePath, "utf8");
 			} catch(err) {
 				readError = true;
 				console.error("Could not read temp atc tree after downloading from master server");
 			}
-				
-			
+
+
 			if (!readError && atcTree !== null) {
 
 				try {
@@ -417,7 +419,7 @@ function updateATCTreeFromMaster() {
 					parseError = true;
 					console.error("Could not parse temp atc tree after downloading from master server");
 				}
-			
+
 				if (!parseError && !readError) {
 
 					if (Array.isArray(atcTree)) {
@@ -428,7 +430,7 @@ function updateATCTreeFromMaster() {
 						if (atcTree.length > minExpectedItems) {
 
 							console.log("Downloaded new atcTree.json, everything seems fine, replacing npl version");
-							
+
 							var nplAtcTreePath = path.join(__dirname, "..", "..", "npl", "atcTree.json");
 
 							fs.copy(tempAtcTreePath, nplAtcTreePath, function(err) {
@@ -437,27 +439,27 @@ function updateATCTreeFromMaster() {
 								} else {
 									console.log("Finished replacing atcTree.json with new version");
 								}
-								
+
 							});
 
 						} else {
 							console.error("Downloaded atc tree only contained " + atcTree.length + " items, aborting replacement of new tree from master server");
 						}
 
-						
+
 					} else {
 						console.error("Atc tree is not an array, aborting replacement of new tree from master server");
 					}
 
 
-					
+
 				}
-				
+
 			}
-			
+
 		}
 	})
-	
+
 }
 
 updateATCTreeFromMaster();
