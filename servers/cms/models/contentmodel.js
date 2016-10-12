@@ -1767,6 +1767,21 @@ var ContentModel = {
 			fs.copySync(beforeIndexPath, afterIndexPath);
 		}
 
+		// Make the index links up to date.
+		if (fs.existsSync(afterIndexPath)) {
+			var searchIndex = JSON.parse(fs.readFileSync(afterIndexPath));
+
+			var newPageUrl = toDir + toName + ".html";
+
+			searchIndex.forEach(function(item) {
+				if (item.url !== undefined) {
+				item.url = newPageUrl
+				}
+			});
+
+			fs.writeFileSync(afterIndexPath, JSON.stringify(searchIndex));
+		}
+
 		var oldDirPath = path.dirname(beforePath);
 		var oldFileName = path.basename(beforePath);
 

@@ -13,7 +13,7 @@
 				}
 			%>
 			<a href="<%=backPath%>" class="btn navbar-btn btn-primary"><i class="fa fa-chevron-left"></i> Tillbaka</a>
-			<%					
+			<%
 			}
 			%>
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -63,11 +63,11 @@
 				<li class="contentItemOverview metadata"><a href="#metadata">Metadata</a></li>
 			<%
 			for (var i = 0; i < page.content.length; i++) {
-				
+
 				var number = "";
-				
+
 				var item = page.content[i];
-				
+
 				if (item.content.number !== undefined) {
 					number = " " + item.content.number;
 				}
@@ -122,12 +122,12 @@
 						<div class="col-sm-10">
 							<input type="text" class="form-control" id="title" name="title" placeholder="Titel" value="<%=page.title%>">
 							<small>
-								Ska i korthet beskriva innehållet så att det framgår 
-								vad dokumentet handlar om, och så att man enkelt 
-								i publika sökmotorer ser vad för slags information 
-								man har sökt fram. Överväg även att beskriva vilken 
+								Ska i korthet beskriva innehållet så att det framgår
+								vad dokumentet handlar om, och så att man enkelt
+								i publika sökmotorer ser vad för slags information
+								man har sökt fram. Överväg även att beskriva vilken
 								den tänkta målgruppen för dokumentet är
-								beskrivning några få meningar om vad informationen handlar om, 
+								beskrivning några få meningar om vad informationen handlar om,
 								konkret
 							</small>
 						</div>
@@ -155,9 +155,9 @@
 						<div class="col-sm-10">
 							<input type="text" class="form-control" id="keywords" name="keywords" placeholder="Nyckelord" value="<%=page.keywords%>">
 							<small>
-								Några fritt beskrivande ord som sidan ska bli sökbar 
-								med. Kontrollerad vokabulär inte nödvändig. 
-								Tex gärna synonymer, och ord som inte redan finns 
+								Några fritt beskrivande ord som sidan ska bli sökbar
+								med. Kontrollerad vokabulär inte nödvändig.
+								Tex gärna synonymer, och ord som inte redan finns
 								i rubriker
 							</small>
 						</div>
@@ -167,8 +167,8 @@
 						<div class="col-sm-10">
 							<input type="text" class="form-control" id="subject" name="subject" placeholder="Ämne" value="<%=page.subject%>">
 							<small>
-								Ämnen, diagnoser, tillstånd, behandlingar etc som 
-								informationen handlar om enligt en kontrollerad 
+								Ämnen, diagnoser, tillstånd, behandlingar etc som
+								informationen handlar om enligt en kontrollerad
 								vokabulär, exempelvis MeSH eller ICD-10
 							</small>
 						</div>
@@ -178,12 +178,12 @@
 						<div class="col-sm-10">
 							<input type="text" class="form-control" id="informationType" name="informationType" placeholder="Informationstyp" value="<%=page.informationType%>">
 							<small>
-								Klassificering av vilken sorts information det är, t ex 
-								utifrån syfte med informationen. Exempel: riktlinje, 
-								HTA-rapport eller behandlingsrekommendation. 
+								Klassificering av vilken sorts information det är, t ex
+								utifrån syfte med informationen. Exempel: riktlinje,
+								HTA-rapport eller behandlingsrekommendation.
 								Utvecklingsområde som behöver diskuteras.
-								Några relevanta benämningar, enligt ISO 13119:2012, 
-								på textresurser (kunskapsdokument) i DC-attributet 
+								Några relevanta benämningar, enligt ISO 13119:2012,
+								på textresurser (kunskapsdokument) i DC-attributet
 								type (informationstyp) kan vara:
 								<ul>
 									<li>
@@ -302,7 +302,7 @@
 					</div>
 					<%
 				}
-				
+
 				%>
 
 				<h2 class="sub-header">Innehåll</h2>
@@ -346,7 +346,7 @@
 				</div>
 				<%
 				}
-				
+
 				if (contentEditors.length === 0) {
 				%>
 				<div class="col-sm-12 col-md-12 text-center">
@@ -510,9 +510,17 @@
 						<div class="btn-group btn-group-sm pull-right" role="group">
 							<a class="btn btn-sm btn-default" href="/cms<%=version.id%>">Visa som json</a>
 							<button class="btn btn-sm btn-primary show-diff" data-snapshot-id="<%=version.id%>" data-page-id="<%=id%>">Jämför json <i class="fa fa-chevron-down"></i></button>
-<!--							<button class="btn btn-sm btn-danger">Gör till nuvarande version</button> -->
+							<button class="btn btn-sm btn-danger revertToSnapshotButton" data-toggle="modal" data-target="#revertToSnapshotModal" data-pagepath="<%=id%>" data-version="<%=version.id%>" title="Återgå till äldre version" >Gör till nuvarande version</button>
 						</div>
 						<strong>Skapad: </strong><%=version.niceTime%>
+						<%
+							if (version.comment !== undefined) {
+						%>
+							(<%=version.comment%>)
+						<%
+							}
+						%>
+
 						<div class="clearfix"></div>
 						<div class="diff-view"></div>
 					</li>
