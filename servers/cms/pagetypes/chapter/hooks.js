@@ -109,6 +109,7 @@ var Hooks = {
 		var therapies = [];
 		var tables = [];
 		var figures = [];
+		var casereports = [];
 		
 		for (var i = 0; i < data.content.length; i++) {
 			if (data.content[i].type === "tablewide" || data.content[i].type === "tablenarrow") {
@@ -127,6 +128,10 @@ var Hooks = {
 				figures.push(data.content[i]);
 			}
 
+			if (data.content[i].type === "casereport") {
+				casereports.push(data.content[i]);
+			}
+
 		}
 
 		//Sort each by number
@@ -142,6 +147,9 @@ var Hooks = {
 		tables.sort(function(a, b){
 			return a.content.number - b.content.number;
 		});
+		casereports.sort(function(a, b){
+			return a.content.number - b.content.number;
+		});
 		
 
 		/*
@@ -150,19 +158,25 @@ var Hooks = {
 			Facts
 			Tables
 			Figures
+			Case reports
 		*/
 
 		var therapiesOverview = $("<ul class=\"thumbnails clearfix overview therapiesOverview\"></ul>");
 		var tablesOverview = $("<ul class=\"thumbnails clearfix overview tablesOverview\"></ul>");
 		var factsOverview = $("<ul class=\"thumbnails clearfix overview factsOverview\"></ul>");
 		var figuresOverview = $("<ul class=\"thumbnails clearfix overview figuresOverview\"></ul>");
+		var casereportsOverview = $("<ul class=\"thumbnails clearfix overview casereportsOverview\"></ul>");
 
 		for (var i = 0; i < therapies.length; i++) {
-			therapiesOverview.append($("<li class=\"span4\"><div class=\"thumbnail therapyLink\" data-numbers=\"" + therapies[i].content.number + "\"><div class=\"caption\"><i class=\"fa fa-info-circle\"></i><h5 class=\"overview\"><a href=\"#therapy_" + therapies[i].content.number + "\" class=\"therapyLink\" data-numbers=\"" + therapies[i].content.number + "\">Terapirekommendationer</a></h5><p><a href=\"#therapy_" + therapies[i].content.number + "\" class=\"therapyLink\" data-numbers=\"" + therapies[i].content.number + "\">" + $("<div>" + therapies[i].content.title + "</div>").text() + "</a></p></div></div></li>"));
+			therapiesOverview.append($("<li class=\"span4\"><div class=\"thumbnail therapyLink\" data-numbers=\"" + therapies[i].content.number + "\"><div class=\"caption\"><i class=\"fa fa-info-circle\"></i><h5 class=\"overview\"><a href=\"#therapy_" + therapies[i].content.number + "\" class=\"therapyLink\" data-numbers=\"" + therapies[i].content.number + "\">Terapirekommendation " + therapies[i].content.number + "</a></h5><p><a href=\"#therapy_" + therapies[i].content.number + "\" class=\"therapyLink\" data-numbers=\"" + therapies[i].content.number + "\">" + $("<div>" + therapies[i].content.title + "</div>").text() + "</a></p></div></div></li>"));
 		}
 
 		for (var i = 0; i < facts.length; i++) {
 			factsOverview.append($("<li class=\"span2\"><div class=\"thumbnail factsLink\" data-numbers=\"" + facts[i].content.number + "\"><div class=\"caption\"><i class=\"fa fa-th-list\"></i><h5 class=\"overview\"><a href=\"#facts_" + facts[i].content.number + "\" class=\"factsLink\" data-numbers=\"" + facts[i].content.number + "\">Faktaruta " + facts[i].content.number + "</a></h5><p><a href=\"#facts_" + facts[i].content.number + "\" class=\"factsLink\" data-numbers=\"" + facts[i].content.number + "\">" + $("<div>" + facts[i].content.title + "</div>").text() + "</a></p></div></div></li>"));
+		}
+
+		for (var i = 0; i < casereports.length; i++) {
+			casereportsOverview.append($("<li class=\"span2\"><div class=\"thumbnail casereportLink\" data-numbers=\"" + casereports[i].content.number + "\"><div class=\"caption\"><i class=\"fa fa-th-list\"></i><h5 class=\"overview\"><a href=\"#casereport_" + casereports[i].content.number + "\" class=\"casereportLink\" data-numbers=\"" + casereports[i].content.number + "\">Fallbeskrivning " + casereports[i].content.number + "</a></h5><p><a href=\"#casereport_" + casereports[i].content.number + "\" class=\"casereportLink\" data-numbers=\"" + casereports[i].content.number + "\">" + $("<div>" + casereports[i].content.title + "</div>").text() + "</a></p></div></div></li>"));
 		}
 
 		for (var i = 0; i < tables.length; i++) {
@@ -203,6 +217,11 @@ var Hooks = {
 		if (figures.length > 0) {
 			addOverview = true;
 			overview.append(figuresOverview);
+		}
+
+		if (casereports.length > 0) {
+			addOverview = true;
+			overview.append(casereportsOverview);
 		}
 
 		if (addOverview) {
