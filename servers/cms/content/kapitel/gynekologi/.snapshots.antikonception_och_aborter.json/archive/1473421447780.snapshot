@@ -1,0 +1,617 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Antikonception och aborter",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "kapitel",
+	"created": "2016-05-16 23:10",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Viveca Odlind, Ian Milsom",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "e647ce0d-4e00-4387-8f08-48748d144138",
+			"name": "e647ce0d-4e00-4387-8f08-48748d144138",
+			"type": "author",
+			"content": {
+				"firstname": "Viveca",
+				"surname": "Odlind",
+				"description": "",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8c038bea-d2c5-468e-bc47-cbd8e70d31f0",
+			"name": "8c038bea-d2c5-468e-bc47-cbd8e70d31f0",
+			"type": "author",
+			"content": {
+				"firstname": "Ian",
+				"surname": "Milsom",
+				"description": "Kvinnokliniken, Sahlgrenska universitetssjukhuset, Göteborg",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "cfb5d4ca-65c3-484c-beed-560f0e65d833",
+			"name": "cfb5d4ca-65c3-484c-beed-560f0e65d833",
+			"type": "text",
+			"content": "<h1 id=\"i4_2\"><a class=\"index\" id=\"1026682\"></a><a class=\"index\" id=\"81309\"></a>Antikonception och aborter</h1>\n<h2 class=\"overview\" id=\"Inledning\">Inledning</h2>\n<p class=\"ingress\">Denna &ouml;versikt beskriver de olika preventivmetoderna, deras f&ouml;r- och nackdelar och i vilka situationer metoderna l&auml;mpar sig. &Auml;ven ett kort avsnitt om aktuella metoder f&ouml;r abort ing&aring;r. Inneh&aring;llet i kapitlet baseras till stora delar p&aring; L&auml;kemedelsverkets behandlingsrekommendation om antikonception fr&aring;n 2014 (1).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d1274c79-3896-4164-a1ce-ef117d5af6b3",
+			"name": "d1274c79-3896-4164-a1ce-ef117d5af6b3",
+			"type": "text",
+			"content": "<p></p>\n<h2 id=\"i4_4\"><a class=\"index\" id=\"1021548\"></a>Preventivmetoders effektivitet</h2>\n<p>Med en preventivmetods effektivitet avses hur v&auml;l den skyddar mot graviditet. Effektivitet ska inte blandas ihop med en preventivmetods s&auml;kerhet, vilket beskriver dess risker och biverkningar. I Tabell 1 beskrivs olika metoders effektivitet som Pearl Index, det vill s&auml;ga graviditeter per 100 kvinno&aring;r. Perfekt anv&auml;ndning inneb&auml;r att metoden alltid anv&auml;nds korrekt och konsekvent. I verkligheten varierar dock anv&auml;ndningen mycket beroende p&aring; bland annat kvinnans &aring;lder, motivation och upplevelse av bieffekter. Effektiviteten vid &rdquo;typisk&rdquo; anv&auml;ndning kan d&auml;rf&ouml;r vara betydligt s&auml;mre f&ouml;r s&aring;dana metoder som kr&auml;ver anv&auml;ndarmedverkan och den troliga orsaken &auml;r sporadisk och/eller felaktig anv&auml;ndning.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "83364de7-ae08-4c07-801f-f7a2ee36f5d1",
+			"name": "83364de7-ae08-4c07-801f-f7a2ee36f5d1",
+			"type": "tablewide",
+			"content": {
+				"number": "1",
+				"title": "Pearl Index (graviditeter per 100 kvinnoår) för olika preventivmetoder under första året. För användarberoende metoder anges både PI vid perfekt användning och uppskattad andel graviditeter (%) vid ”typisk” användning (1).",
+				"id": "",
+				"text": "<p><sup></sup></p>\r\n<table class=\"table table-bordered\">\r\n<tbody>\r\n<tr>\r\n<td><strong>Metod</strong></td>\r\n<td><strong>PI</strong> (vid perfekt anv&auml;ndning)</td>\r\n<td><strong>% graviditeter</strong> (vid typisk anv&auml;ndning)</td>\r\n</tr>\r\n<tr>\r\n<td>Ingen metod</td>\r\n<td>85</td>\r\n<td>85</td>\r\n</tr>\r\n<tr>\r\n<td>Manlig sterilisering</td>\r\n<td>0,10</td>\r\n<td>0,15</td>\r\n</tr>\r\n<tr>\r\n<td>Kvinlig sterilisering</td>\r\n<td>0,5</td>\r\n<td>0,5</td>\r\n</tr>\r\n<tr>\r\n<td>Hormonspiral (st&ouml;rre)</td>\r\n<td>0,2</td>\r\n<td>0,2</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Kopparspiral (&ge;&nbsp;300 m<sup>2</sup>)</p>\r\n</td>\r\n<td>\r\n<p>0,6</p>\r\n</td>\r\n<td>0,8</td>\r\n</tr>\r\n<tr>\r\n<td>Kombinerade p-piller</td>\r\n<td>0,3</td>\r\n<td>9</td>\r\n</tr>\r\n<tr>\r\n<td>P-pl&aring;ster</td>\r\n<td>0,3</td>\r\n<td>9</td>\r\n</tr>\r\n<tr>\r\n<td>P-ring</td>\r\n<td>0,3</td>\r\n<td>9</td>\r\n</tr>\r\n<tr>\r\n<td>P-spruta</td>\r\n<td>0,2</td>\r\n<td>6</td>\r\n</tr>\r\n<tr>\r\n<td>P-stav</td>\r\n<td>0,05</td>\r\n<td>0,05</td>\r\n</tr>\r\n<tr>\r\n<td>Mellanpiller (gestagen)</td>\r\n<td>0,3</td>\r\n<td>9</td>\r\n</tr>\r\n<tr>\r\n<td>Minipiller (gestagen)</td>\r\n<td>1,1</td>\r\n<td>&gt; 9</td>\r\n</tr>\r\n<tr>\r\n<td>Pessar och spermied&ouml;dande gel</td>\r\n<td>6</td>\r\n<td>12</td>\r\n</tr>\r\n<tr>\r\n<td>Spermicider</td>\r\n<td>18</td>\r\n<td>40</td>\r\n</tr>\r\n<tr>\r\n<td>Manlig kondom</td>\r\n<td>2</td>\r\n<td>18</td>\r\n</tr>\r\n<tr>\r\n<td>Avbrutet samlag</td>\r\n<td>4</td>\r\n<td>22</td>\r\n</tr>\r\n<tr>\r\n<td>Naturlig familjeplanering</td>\r\n<td>3</td>\r\n<td>24</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"3\" class=\"footNotes\"><span class=\"updated\" style=\"color: #000000;\">Andelen graviditeter (%) under f&ouml;rsta &aring;ret vid s&aring; kallad typisk anv&auml;ndning av olika preventivmetoder har estimerats fr&aring;n uppgifter till National Surveillance of Family Growth. Data kommer allts&aring; fr&aring;n USA eftersom motsvarande data fr&aring;n Sverige och Europa saknas.</span></td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "53cf1527-a01a-43ea-9aa8-5059e9887bad",
+			"name": "53cf1527-a01a-43ea-9aa8-5059e9887bad",
+			"type": "text",
+			"content": "<h2 id=\"i4_5\">Hormonella preventivmetoder<a class=\"index\" id=\"1038151\"></a></h2>\n<h3 id=\"i4_6\">Kombinerad hormonell antikonception</h3>\n<p>Kombinerade p-piller liksom kombinerad vaginal (&rdquo;p-ringen&rdquo;) eller transdermal (&rdquo;p-pl&aring;stret&rdquo;) tillf&ouml;rsel av kontraceptiva hormoner, verkar genom att h&auml;mma &auml;gglossningen och effektiviteten &auml;r i det n&auml;rmaste hundraprocentig, under f&ouml;ruts&auml;ttning att anv&auml;ndningen &auml;r korrekt.</p>\n<p><br>Det mesta av kunskapen om positiva s&aring;v&auml;l som negativa h&auml;lsoeffekter och identifierade risker baseras p&aring; omkring 50&nbsp;&aring;rs erfarenhet av kombinerade p-piller. Eftersom ing&aring;ende hormoner, doser och verkningsmekanism f&ouml;r den vaginala (&rdquo;p-ringen&rdquo;) och transdermala (&rdquo;p-pl&aring;stret&rdquo;) tillf&ouml;rseln &auml;r mycket likartade, kan dessa metoder f&ouml;rv&auml;ntas ha likartade h&auml;lsoeffekter och risker som kombinerade p-piller.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "457463d0-1fb7-4c42-a705-e636234828d3",
+			"name": "457463d0-1fb7-4c42-a705-e636234828d3",
+			"type": "text",
+			"content": "<h4 id=\"i4_7\">Positiva <a class=\"index\" id=\"1024182\"></a>h&auml;lsoeffekter</h4>\n<p>Anv&auml;ndning av kombinerad hormonell antikonception minskar risken f&ouml;r endometrie- och ovarialcancer till ungef&auml;r h&auml;lften. Ju l&auml;ngre anv&auml;ndningstid desto mindre blir risken. Skyddet kvarst&aring;r &auml;ven efter avslutad anv&auml;ndning. Andra positiva effekter &auml;r minskad f&ouml;rekomst av dysmenorr&eacute;, premenstruell sp&auml;nning, benigna br&ouml;sttum&ouml;rer, funktionella ovarialcystor, rikliga menstruationsbl&ouml;dningar, j&auml;rnbristanemi samt &auml;ggledarinflammation.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "23c6b38c-b045-485d-b33c-89f1b1f60dd9",
+			"name": "23c6b38c-b045-485d-b33c-89f1b1f60dd9",
+			"type": "text",
+			"content": "<h4 id=\"i4_8\">Biverkningar</h4>\n<p>Biverkningar i samband med anv&auml;ndning av kombinerad hormonell antikonception &auml;r mycket vanliga och den fr&auml;msta orsaken till att kvinnan slutar med metoden. Nedst&auml;mdhet, hum&ouml;rp&aring;verkan, nedsatt libido, &ouml;kad aptit och vikt&ouml;kning anses bero p&aring; den gestagena komponenten medan illam&aring;ende, sp&auml;nda br&ouml;st och &ouml;dem brukar h&auml;nf&ouml;ras till den &ouml;strogena komponenten. Huvudv&auml;rk och mellanbl&ouml;dningar &auml;r andra vanliga biverkningar.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e1999f8a-5b93-41d4-91c1-56385c3b6885",
+			"name": "e1999f8a-5b93-41d4-91c1-56385c3b6885",
+			"type": "text",
+			"content": "<h4 id=\"i4_9\">Bl&ouml;dningsrubbningar</h4>\n<p>Kombinerad hormonell antikonception minskar bl&ouml;dningsm&auml;ngden under den hormonfria veckan (<a class=\"index\" id=\"1030570\"></a>bortfallsbl&ouml;dning) till ungef&auml;r h&auml;lften j&auml;mf&ouml;rt med en normal menstruation. Bl&ouml;dningar under p&aring;g&aring;ende hormonperiod kan f&ouml;rekomma i form av sm&aring;bl&ouml;dningar och d&aring; fr&auml;mst under de f&ouml;rsta m&aring;naderna eller som en menstruationsliknande bl&ouml;dning (s&aring; kallad <a class=\"index\" id=\"1030571\"></a>genombrottsbl&ouml;dning).</p>\n<p><br>Normal mens (och fertilitet) &aring;terkommer vanligen snabbt, inom 1&ndash;2 m&aring;nader, efter uts&auml;ttandet. Hos cirka 1&nbsp;% av kvinnorna dr&ouml;jer menstruationen &gt;&nbsp;6&nbsp;m&aring;nader. Kvinnans menstruationsst&ouml;rning kan ha funnits innan hon b&ouml;rjade med hormonell antikonception och beror sannolikt p&aring; andra faktorer, men har dolts under den tid hon anv&auml;nt kombinerad hormonell antikonception.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "03b9a3e9-78ec-4d57-ada8-2857f1da6094",
+			"name": "03b9a3e9-78ec-4d57-ada8-2857f1da6094",
+			"type": "text",
+			"content": "<h4 id=\"i4_10\">Blodtryck</h4>\n<p>En m&aring;ttlig blodtrycksstegring ses hos cirka 5&nbsp;%. Blodtrycksstegringen utvecklas l&aring;ngsamt under de f&ouml;rsta 3&ndash;9&nbsp;m&aring;naderna och &auml;r oftast reversibel n&auml;r anv&auml;ndningen avslutas. Effekten p&aring; blodtrycket &auml;r dosberoende och risken &auml;r l&aring;g med de moderna l&aring;gdoserade produkterna (maximalt 30&nbsp;mikrogram etinyl&ouml;stradiol). Blodtrycket b&ouml;r alltid kontrolleras f&ouml;re ins&auml;ttande och med 1&ndash;2&nbsp;&aring;rs intervall under anv&auml;ndning av kombinerad hormonell antikonception.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ec767638-3c9e-4306-964b-f7109d3ea120",
+			"name": "ec767638-3c9e-4306-964b-f7109d3ea120",
+			"type": "text",
+			"content": "<h4 id=\"i4_11\">Djup ventrombos</h4>\n<p>Ven&ouml;s tromboembolisk sjukdom (<a class=\"index\" id=\"1038647\"></a>VTE; <a class=\"index\" id=\"1038648\"></a>djup ventrombos, lungemboli och cerebral trombos) &auml;r s&auml;llsynt hos unga kvinnor, men kvinnor som anv&auml;nder kombinerad hormonell antikonception l&ouml;per en h&ouml;gre risk &auml;n kvinnor som anv&auml;nder andra preventivmetoder.</p>\n<p><br>Den europeiska l&auml;kemedelsmyndighetens s&auml;kerhetskommitt&eacute; utv&auml;rderade 2013 risken f&ouml;r VTE vid anv&auml;ndning av kombinerad hormonell antikonception, <a href=\"http://www.lakemedelsverket.se/Alla-nyheter/Nyheter-2013/Nyttan-med-kombinerade-p-piller-overvager-risken-aven-efter-ny-utredning/\" target=\"_blank\">www.lakemedelsverket.se</a> (2). Man konkluderade att nyttan med kombinerad hormonell antikonception f&ouml;r att f&ouml;rhindra graviditet &ouml;verv&auml;ger risken f&ouml;r VTE. Etiologiskt anses VTE-risken sammanh&auml;nga med den &ouml;strogena komponenten, men storleken p&aring; risken varierar mellan olika preparat beroende p&aring; vilket gestagen som ing&aring;r.</p>\n<p><br>Incidensen av VTE i samband med kombinerad hormonell antikonception har rapporterats till 5&ndash;12&nbsp;per 10&nbsp;000 kvinnor och &aring;r. Den l&auml;gsta incidensen &ndash; mellan 5 och 7 fall av VTE per 10&nbsp;000 kvinnor och &aring;r &ndash; har rapporterats f&ouml;r kombinerad hormonell antikonception som inneh&aring;ller gestagenerna levonorgestrel, norgestimat eller noretisteron, medan kombinerad hormonell antikonception med gestagenerna desogestrel eller drospirenon medf&ouml;r en n&aring;got h&ouml;gre risk (9&ndash;12 fall av VTE per 10&nbsp;000 kvinnor och &aring;r).</p>\n<p><br>Hos kvinnor som inte anv&auml;nder kombinerad hormonell antikonception och inte &auml;r gravida ber&auml;knas att 2 fall av VTE intr&auml;ffar per 10&nbsp;000 kvinnor och &aring;r. Risken f&ouml;r VTE under graviditet, f&ouml;rlossning och puerperium &auml;r f&ouml;rh&ouml;jd 10&ndash;100 g&aring;nger.</p>\n<p><br>Risken f&ouml;r VTE &auml;r st&ouml;rst hos nya anv&auml;ndare under det f&ouml;rsta &aring;ret och allra h&ouml;gst under de f&ouml;rsta 3&nbsp;m&aring;naderna. &Auml;ven efter ett uppeh&aring;ll i anv&auml;ndningen &aring;terkommer en f&ouml;rh&ouml;jd risk vid omstart.</p>\n<p><br>Kvinnor, som av n&aring;got sk&auml;l har en &ouml;kad risk f&ouml;r VTE (Faktaruta 1 samt kapitlet Ven&ouml;s tromboembolism och medel mot trombos, avsnittet <a href=\"{pre}/kapitel/blod/venos_tromboembolism_och_medel_mot_trombos.html#d2_72\">&Ouml;strogener och trombos</a>), b&ouml;r avr&aring;das fr&aring;n att anv&auml;nda kombinerad hormonell antikonception.</p>\n<p><span> </span></p>\n<p>Inf&ouml;r st&ouml;rre operativa ingrepp, som inneb&auml;r immobilisering, b&ouml;r man rekommendera ett uppeh&aring;ll i anv&auml;ndningen under 4&ndash;6 veckor f&ouml;re och efter operationen. Vid akut immobilisering, till exempel vid benfraktur, b&ouml;r kombinerad hormonell antikonception s&auml;ttas ut och trombosprofylaktisk behandling &ouml;verv&auml;gas. Se &auml;ven kapitlet Ven&ouml;s tromboembolism och medel mot trombos, avsnittet <a href=\"{pre}/kapitel/blod/venos_tromboembolism_och_medel_mot_trombos.html#d2_72\">&Ouml;strogener och trombos</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c3221e28-f210-4a19-a469-f240807c4258",
+			"name": "c3221e28-f210-4a19-a469-f240807c4258",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"index\" id=\"1035651\"></a><a class=\"index\" id=\"63200\"></a>Exempel på kontraindikationer mot användning av kombinerad hormo&shy;nell antikonception",
+				"text": "<table><tbody><tr><td><ul><li> Anamnes på djup ven- eller artärtrombos</li></ul><ul><li> Hereditet för djup ventrombos (föräldrar, <br>syskon)</li></ul><ul><li> Känd koagulationsdefekt (hos kvinnan, föräld&shy;rar, syskon)</li></ul><ul><li> Sjukdom i hjärtklaffarna som innebär en ökad risk för trombos</li></ul><ul><li>  Migrän med fokala neurologiska symtom</li></ul><ul><li> Anamnes på cerebrovaskulär- eller myokard&shy;sjukdom</li></ul><ul><li> Uttalade varicer, som kan innebära nedsatt venöst återflöde</li></ul><ul><li> Övriga tillstånd, som kan predisponera för <br>trombos, t ex omfattande kirurgi eller långvarig immobilisering</li></ul><ul><li> Tidigare bröstcancer</li></ul><ul><li> Akut intermittent porfyri</li></ul><ul><li> SLE (Systemisk lupus erythematosus)</li></ul></td></tr></tbody></table>",
+				"id": "i4_13"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fbd8a394-2537-4705-be7a-ef9ee49699ef",
+			"name": "fbd8a394-2537-4705-be7a-ef9ee49699ef",
+			"type": "text",
+			"content": "<h4 id=\"i4_14\">Hj&auml;rt-k&auml;rlsjukdom</h4>\n<p>Risken f&ouml;r hj&auml;rt-k&auml;rlsjukdom och stroke &auml;r mycket l&aring;g hos kvinnor i fertil &aring;lder men &ouml;kar med &aring;ldern. Risken &auml;r &ouml;kad vid f&ouml;rekomst av riskfaktorer som r&ouml;kning, hypertoni, obesitas och diabetes. Studier med moderna l&aring;gdoserade p-piller tyder endast p&aring; en liten risk&ouml;kning f&ouml;r hj&auml;rt-k&auml;rlsjukdom och stroke vid p-pilleranv&auml;ndning hos friska kvinnor som inte r&ouml;ker, &auml;ven i &aring;ldrar &gt;&nbsp;40 &aring;r. Friska kvinnor &gt;&nbsp;40 &aring;r som inte r&ouml;ker, kan d&auml;rf&ouml;r forts&auml;tta att anv&auml;nda kombinerad hormonell antikonception, medan kvinnor med n&aring;gon riskfaktor b&ouml;r avr&aring;das fr&aring;n fortsatt anv&auml;ndning.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "206e9014-0f4d-4854-9e8c-98a9902fa97e",
+			"name": "206e9014-0f4d-4854-9e8c-98a9902fa97e",
+			"type": "text",
+			"content": "<h4 id=\"i4_15\">Br&ouml;stcancer</h4>\n<p>Anv&auml;ndning av kombinerad hormonell antikonception ger en liten men statistiskt s&auml;kerst&auml;lld risk&ouml;kning for br&ouml;stcancer under p&aring;g&aring;ende behandling. I en systematisk &ouml;versikt kunde 23 studier inkluderas i en metaanalys av risken f&ouml;r br&ouml;stcancer hos p-pilleranv&auml;ndare. De inkluderade studierna omfattar ocks&aring; &rdquo;tredje generationens&rdquo; p-piller. Sammantaget fann man en liten men statistiskt signifikant risk&ouml;kning under p&aring;g&aring;ende anv&auml;ndning (OR 1,08; 1,00&ndash;1,17). Inget samband kunde ses mellan duration av anv&auml;ndning och br&ouml;stcancerrisk (OR 0,95; 0,83&ndash;1,09). Den &ouml;kade risken avtog med tid efter avslutad behandling och var tillbaka p&aring; grundniv&aring;n efter 10&ndash;20 &aring;r. Kvinnor med k&auml;nd br&ouml;stcancergen l&ouml;per &ouml;kad risk att drabbas av br&ouml;stcancer, men det &auml;r inte klarlagt om hormonell antikonception p&aring;verkar den underliggande risken. Eftersom den absoluta risken for en ung kvinna att drabbas av br&ouml;stcancer till f&ouml;ljd av kombinerad hormonell antikonception &auml;r mycket liten, bed&ouml;ms nyttan &ouml;verv&auml;ga risken, oavsett f&ouml;rekomst av &auml;rftlighet for br&ouml;stcancer. Se &auml;ven kapitlet Sjukdomar i br&ouml;stk&ouml;rteln, avsnittet <a href=\"{pre}/kapitel/onkologi/sjukdomar_i_brostkorteln.html#j3_15\">Maligna br&ouml;sttum&ouml;rer</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6ee54a4a-f7fa-408b-88fc-80d39f3ee867",
+			"name": "6ee54a4a-f7fa-408b-88fc-80d39f3ee867",
+			"type": "text",
+			"content": "<h4 id=\"i4_16\">Cervixcancer</h4>\n<p>Risken f&ouml;r cervixcancer tycks &ouml;ka med &ouml;kande tid av p-pilleranv&auml;ndning, vilket tyder p&aring; att kombinerad hormonell antikonception kan underl&auml;tta att infektion med HPV leder till utveckling av allvarliga cellf&ouml;r&auml;ndringar och cancer. Anv&auml;ndning av kombinerad hormonell antikonception samvarierar med en rad faktorer som ocks&aring; &ouml;kar risken f&ouml;r cervixcancer, till exempel tidig samlagsdebut, flera partners och sexuellt &ouml;verf&ouml;rbar infektion, varf&ouml;r fortsatt &ouml;vervakning med gynekologisk cellprovstagning rekommenderas.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "094a2ec7-43fb-41bf-bee1-bfc66a3b54de",
+			"name": "094a2ec7-43fb-41bf-bee1-bfc66a3b54de",
+			"type": "text",
+			"content": "<h4 id=\"i4_17\"><a class=\"index\" id=\"1021685\"></a>L&auml;kemedelsinteraktioner</h4>\n<p>Rifampicin och vissa antiepileptika liksom naturl&auml;kemedel som inneh&aring;ller <a class=\"index\" id=\"1036370\"></a>johannes&ouml;rt kan leda till snabbare nedbrytning av b&aring;de den gestagena och &ouml;strogena komponenten, vilket kan medf&ouml;ra en f&ouml;rsvagad effekt. Den snabbare nedbrytningen kan ge upphov till mellanbl&ouml;dningar, och enstaka fall av graviditet, sannolikt uppkommen genom s&aring;dan interaktion, har rapporterats (f&ouml;r rekommendationer, se Allm&auml;nna r&aring;d).</p>\n<p><br>En del <a class=\"index\" id=\"1030240\"></a>hiv-l&auml;kemedel och &auml;ven vissa andra l&auml;kemedel som tas under l&auml;ngre tid tycks kunna interagera med hormonell antikonception. Inf&ouml;r f&ouml;rskrivning av hormonell antikonception &auml;r det viktigt att s&ouml;ka information i respektive l&auml;kemedels produktresum&eacute;/Fass-text. Aktivt kol minskar kraftigt absorptionen av perorala steroider och minskar d&auml;rf&ouml;r ocks&aring; effektiviteten av p-piller.</p>\n<p><br>F&aring; data tyder p&aring; att anv&auml;ndning av bredspektrumantibiotika leder till minskade plasmakoncentrationer eller nedsatt effektivitet av hormonell antikonception, men s&aring;dan behandling b&ouml;r m&ouml;jligen f&ouml;ranleda extra information om betydelsen av regelbundet tablettintag.</p>\n<p><br>Studier har visat att plasmaniv&aring;erna av epilepsil&auml;kemedlen lamotrigin och valproat p&aring;verkas av samtidig anv&auml;ndning av hormonell antikonception, se <a href=\"https://www.lakemedelsverket.se/upload/halso-och-sjukvard/behandlingsrekommendationer/Antikonception_rek.pdf\" target=\"_blank\">www.lakemedelsverket.se</a> (1) samt kapitlet Epilepsi, avsnittet <a href=\"{pre}/kapitel/neurologi/epilepsi.html#r4_35\">Kvinnor</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2412becb-3afb-4e0e-aa19-092d5e7d33b8",
+			"name": "2412becb-3afb-4e0e-aa19-092d5e7d33b8",
+			"type": "text",
+			"content": "<h4 id=\"i4_18\">Allm&auml;nna r&aring;d<em> </em></h4>\n<p>Innan kombinerad hormonell antikonception rekommenderas ska man ta upp en noggrann allm&auml;n och gynekologisk anamnes, m&auml;ta blodtryck och vikt samt oftast g&ouml;ra en gynekologisk unders&ouml;kning. Kontroll kan d&auml;refter l&auml;mpligen ske med 1&ndash;2&nbsp;&aring;rs intervall. Uppf&ouml;ljning b&ouml;r fokusera p&aring; f&ouml;rekomst av (eller oro f&ouml;r) biverkningar samt eventuella sv&aring;righeter att anv&auml;nda aktuellt preparat korrekt. Den rent medicinska uppf&ouml;ljningen kan hos friska kvinnor ofta inskr&auml;nkas till kontroll av blodtryck och vikt.</p>\n<p><br>De flesta kvinnor kan anv&auml;nda kombinerad hormonell antikonception utan risk f&ouml;r allvarliga biverkningar. Vid &ouml;nskem&aring;l om kombinerad hormonell antikonception rekommenderar L&auml;kemedelsverket som f&ouml;rstahandsval vid nyf&ouml;rskrivning ett monofasiskt preparat med levonorgestrel, noretisteron eller norgestimat. Eftersom biverkningsm&ouml;nstret varierar mycket &auml;r det viktigt att ett brett urval av olika preparat finns tillg&auml;ngligt f&ouml;r andrahandsval till kvinnor som inte m&aring;tt bra p&aring; f&ouml;rstahandsvalet. Om en h&ouml;gre dos &ouml;nskas, till exempel p&aring; grund av risk f&ouml;r l&auml;kemedelsinteraktion, kan man &ouml;verv&auml;ga att ge ett monofasiskt preparat utan tablettuppeh&aring;ll under till exempel 3&nbsp;m&aring;nader. D&auml;rigenom elimineras den period d&aring; risken f&ouml;r ovulation &auml;r som st&ouml;rst (den tablettfria veckan). Kontraindikationer och tillst&aring;nd som kr&auml;ver sk&auml;rpt uppm&auml;rksamhet framg&aring;r av Faktaruta 1 och Faktaruta 2.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2bdc34c6-fc67-4485-a6a8-4c388897e4a2",
+			"name": "2bdc34c6-fc67-4485-a6a8-4c388897e4a2",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"index\" id=\"22464\"></a>Tillstånd som kräver speciell  uppmärksamhet ",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p>Risk m&aring;ste v&auml;gas mot nytta och alternativa preventivmetoder b&ouml;r diskuteras. I m&aring;nga fall kan kombinerad hormonell antikonception anv&auml;ndas, men kvinnan kan beh&ouml;va kontrolleras speciellt, bland annat vid:</p>\r\n<ul>\r\n<li>hyperlipidemi</li>\r\n</ul>\r\n<ul>\r\n<li>hypertoni</li>\r\n</ul>\r\n<ul>\r\n<li>obesitas</li>\r\n</ul>\r\n<ul>\r\n<li>diabetes mellitus</li>\r\n</ul>\r\n<ul>\r\n<li>epilepsi</li>\r\n</ul>\r\n<ul>\r\n<li>kronisk leversjukdom</li>\r\n</ul>\r\n<ul>\r\n<li>r&ouml;kning hos kvinnor &gt; 35 &aring;r</li>\r\n</ul>\r\n<ul>\r\n<li>migr&auml;n</li>\r\n</ul>\r\n<ul>\r\n<li>mensst&ouml;rningar, till exempel oligomenorr&eacute; och amenorr&eacute;, hos kvinnor som inte varit gravida.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "i4_20"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "72963aa8-a096-4856-9843-4944d6128ef7",
+			"name": "72963aa8-a096-4856-9843-4944d6128ef7",
+			"type": "text",
+			"content": "<h4 id=\"i4_21\">R&aring;d vid bl&ouml;dningsproblem</h4>\n<p>Om sm&aring; mellanbl&ouml;dningar upptr&auml;der under anv&auml;ndning av kombinerad hormonell antikonception b&ouml;r klamydiainfektion och andra sjukdomar i cervix uteslutas. Betydelsen av regelbundet tablettintag b&ouml;r betonas (det vill s&auml;ga 1 tablett ungef&auml;r var 24:e timme). Om inte bl&ouml;dningarna f&ouml;rsvinner spontant, kan man byta till ett mer &ouml;strogendominerat preparat. Vid mensliknande bl&ouml;dning under p&aring;g&aring;ende behandling (genombrottsbl&ouml;dning) kan det vara l&auml;mpligt att sluta med medicineringen och b&ouml;rja p&aring; en ny behandlingscykel en vecka senare.</p>\n<p><br>Vid kvarst&aring;ende bl&ouml;dningsproblem b&ouml;r byte till icke-hormonell preventivmetod &ouml;verv&auml;gas. Om bl&ouml;dningen helt uteblir b&ouml;r graviditet uteslutas.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7f08a090-98b2-402a-963a-ec05ca1d095d",
+			"name": "7f08a090-98b2-402a-963a-ec05ca1d095d",
+			"type": "text",
+			"content": "<h3 id=\"i4_22\">Gestagenpreparat</h3>\n<p>Gestagenpreparat, som ges kontinuerligt, utvecklades f&ouml;r att erbjuda en hormonell antikonceptionsmetod utan den risk f&ouml;r speciellt VTE som anses vara kopplad till den &ouml;strogena komponenten. Idag finns l&aring;gdoserade (<a class=\"index\" id=\"1034753\"></a>minipiller) och mellandoserade (mellanpiller, <a class=\"index\" id=\"1034754\"></a>implantat) samt h&ouml;gdoserade (f&ouml;r injektion) gestagenpreparat.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a2fbc14d-d507-4a46-9a91-173122b0db7e",
+			"name": "a2fbc14d-d507-4a46-9a91-173122b0db7e",
+			"type": "text",
+			"content": "<h4 id=\"i4_23\">Verkningsmekanism</h4>\n<p>Verkningsmekanismen f&ouml;r gestagenpreparat &auml;r dosberoende. L&aring;gdoserade gestagener (minipiller) f&ouml;rhindrar graviditet genom effekter p&aring; cervixsekretet och endometriet och har endast begr&auml;nsad effekt p&aring; &auml;gglossningen hos de flesta kvinnor. Mellandoserade gestagenpreparat verkar genom ovulationsh&auml;mning, vilket sannolikt inneb&auml;r b&auml;ttre graviditetsskydd och f&ouml;r mellanpiller en n&aring;got st&ouml;rre &rdquo;gl&ouml;mskemarginal&rdquo; j&auml;mf&ouml;rt med klassiska minipiller. H&ouml;gdoserat gestagen (f&ouml;r <a class=\"index\" id=\"1021739\"></a>injektion; <a class=\"index\" id=\"1021740\"></a>Depo-Provera) ger en kraftig h&auml;mning av &auml;gglossningen.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "13bb5e5d-4a3d-4096-a745-b27f3a020873",
+			"name": "13bb5e5d-4a3d-4096-a745-b27f3a020873",
+			"type": "text",
+			"content": "<h4 id=\"i4_24\">Biverkningar</h4>\n<p>De biverkningar som ibland f&ouml;rekommer &auml;r br&ouml;stsp&auml;nningar, akne, viktuppg&aring;ng, huvudv&auml;rk samt hum&ouml;rp&aring;verkan. Gestagenpreparaten ger endast obetydliga effekter p&aring; lipidmetabolismen och p&aring; blodtrycket. Med undantag f&ouml;r h&ouml;gdosgestagen f&ouml;r injektion, d&auml;r resultat fr&aring;n studier &auml;r os&auml;kra, tycks anv&auml;ndning av gestagenpreparat inte &ouml;ka risken f&ouml;r VTE. L&aring;ng tids anv&auml;ndning av h&ouml;gdosgestagen har visat sig ge s&auml;nkt benmineralinneh&aring;ll (BMD), vilket sannolikt sammanh&auml;nger med en dosberoende h&auml;mning av ovariets &ouml;strogenproduktion. Med &ouml;vriga <a class=\"index\" id=\"1034878\"></a>gestagenpreparat bed&ouml;ms risken f&ouml;r benf&ouml;rlust som marginell eftersom endogen &ouml;strogenproduktion bibeh&aring;lls p&aring; en h&ouml;gre niv&aring; med dessa preparat.</p>\n<p><br>P&aring; grund av effekterna p&aring; benmassan rekommenderas inte h&ouml;gdosgestagen till yngre kvinnor (&lt;&nbsp;19 &aring;r) eftersom dessa kvinnor m&ouml;jligen annars inte kan uppn&aring; f&ouml;rv&auml;ntad &rdquo;peak bone mass&rdquo;. Normalisering av BMD har dock setts efter uts&auml;ttning.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "df07e188-13fc-48c4-94ac-53a2412ba84d",
+			"name": "df07e188-13fc-48c4-94ac-53a2412ba84d",
+			"type": "text",
+			"content": "<h4 id=\"i4_25\">Bl&ouml;dningsm&ouml;nster</h4>\n<p>Gemensamt f&ouml;r alla gestagenmetoder &auml;r att bl&ouml;dningsm&ouml;nstret p&aring;verkas s&aring; att oregelbundna och/eller l&aring;ngdragna bl&ouml;dningar och amenorr&eacute; f&ouml;rekommer. Med l&aring;gdosgestagen &ndash; minipiller &ndash; anges att cirka en tredjedel av kvinnorna f&aring;r bl&ouml;dningsst&ouml;rningar. Med mellan- och h&ouml;gdosgestagen f&aring;r alla ett of&ouml;ruts&auml;gbart bl&ouml;dningsm&ouml;nster, som kan variera mycket mellan individer.</p>\n<p><br>Om amenorr&eacute; uppkommer hos anv&auml;ndare av perorala metoder (minipiller, mellanpiller) b&ouml;r graviditet uteslutas eftersom effektiviteten &auml;r beroende av f&ouml;ljsamheten. Om graviditet uteslutits kan behandlingen forts&auml;tta.</p>\n<p><br>Med h&ouml;gdosgestagen f&ouml;rekommer ofta oregelbundna bl&ouml;dningar initialt men med l&auml;ngre tids anv&auml;ndning blir endometriet tunt och efter 1 &aring;r &auml;r omkring h&auml;lften av kvinnorna helt utan bl&ouml;dning.</p>\n<p><br>Noggrann information och r&aring;dgivning ang&aring;ende bl&ouml;dningsm&ouml;nstret &auml;r avg&ouml;rande f&ouml;r acceptansen av dessa metoder. Bl&ouml;dningsschema kan vara till god hj&auml;lp vid information och r&aring;dgivning. Vid kvarst&aring;ende bl&ouml;dningsproblem rekommenderas byte till kombinerad hormonell antikonception eller till annan preventivmetod.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8941fa7c-194c-48d4-b578-675634b7c6cf",
+			"name": "8941fa7c-194c-48d4-b578-675634b7c6cf",
+			"type": "text",
+			"content": "<h3 id=\"i4_26\">Gl&ouml;md tablett, pl&aring;ster eller ring</h3>\n<p>Alla hormonella metoder f&ouml;ruts&auml;tter korrekt och konsekvent anv&auml;ndning f&ouml;r bibeh&aring;llen h&ouml;g effektivitet. Det inneb&auml;r regelbundet tablettintag och ingen f&ouml;rl&auml;ngning av uppeh&aring;llet mellan behandlingscyklerna. Varje preparats produktresum&eacute;/Fass-text eller bipacksedel inneh&aring;ller information om gl&ouml;mska. Vid gl&ouml;mska, speciellt om den inneb&auml;r en f&ouml;rl&auml;ngning av det hormonfria uppeh&aring;llet till mer &auml;n sju dagar, rekommenderas kondom under den n&auml;rmaste veckan. Om ett oskyddat samlag skett under ett gl&ouml;mskeuppeh&aring;ll, rekommenderas akutpreventivmedel.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "64ec869a-3dab-4441-82e4-43e501a3bc58",
+			"name": "64ec869a-3dab-4441-82e4-43e501a3bc58",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "<a class=\"index\" id=\"54386\"></a>Kontraindikationer för insättning  av kopparspiral",
+				"text": "<table><tbody><tr><td><ul><li> Graviditet</li></ul><ul><li> Pågående genital infektion</li></ul><ul><li> Känd uterusmissbildning</li></ul><ul><li> Odiagnostiserad uterusblödning</li></ul><h4 id=\"i4_31\" class=\"facts skip\">Försiktighet vid användning av koppar&shy;spiral</h4><ul><li> Koagulationsrubbningar</li></ul><ul><li> Rikliga menstruationsblödningar</li></ul><ul><li> Större myom</li></ul><ul><li> Salpingit och/eller ektopisk graviditet i anamne&shy;sen hos kvinnor som önskar fler barn</li></ul><ul><li> Ökad risk för sexuellt överförda sjukdomar</li></ul></td></tr></tbody></table>",
+				"id": "i4_30"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "37c7c96b-f0f1-4adb-b1e8-48b8a84ee60c",
+			"name": "37c7c96b-f0f1-4adb-b1e8-48b8a84ee60c",
+			"type": "text",
+			"content": "<p>Det finns numera 2 olika hormonspiraler: en större för 5 års användning och en mindre för 3 års användning. Hormonspiraler frisätter levonorgestrel intrauterint, vilket ger en lokal gestageneffekt på endometriet och på cervixsekretet, men obetydliga effekter på ovarialfunktionen och andra organsystem. Verkningsmekanismen är en försvårad passage genom cervix och ett outvecklat endometrium som omöjliggör spermiepassage, befruktning och implantation.</p><p class=\"indent\">På grund av den låga dosen är hormonella biverkningar ovanliga, men i början av behandlingen kan humörpåverkan, bröstspänningar och lindrig akne uppträda hos vissa kvinnor. </p><p class=\"indent\">En <a class=\"index\" id=\"1027154\"></a>kopparspirals effektivitet är beroende av kopparmängden och endast spiraler med stor kopparyta (&gt; 300 mm<sup>2</sup>) rekommenderas. Kopparspiraler med höga kopparmängder (380 mm<sup>2</sup>) har de lägsta rapporterade graviditetstalen av alla moderna kopparspiraler (0,7–1 graviditeter per 100 kvinnoår). Övriga kopparspiraler har en kumulativ graviditetsfrekvens på 1–4 graviditeter per 100 kvinnoår vid rapporterad användningstid om 3–5 år.</p><p class=\"indent\">För kontraindikationer se Faktaruta 3.</p><span> </span><p class=\"indent\">En kopparspiral i uterus ger upphov till en lokal steril inflammatorisk reaktion i endometriet, som försvårar spermiepenetration och därmed befruktning samtidigt som koppartillsatsen ger en spermietoxisk effekt. Dessutom försvåras sannolikt implantationen om en befruktning skulle ha ägt rum. Flera studier tyder på att den huvudsakliga verkningsmekanismen för en kopparspiral är att förhindra befruktning. </p><h3 id=\"i4_32\"><a class=\"index\" id=\"1029768\"></a><a class=\"index\" id=\"67788\"></a>Blödningsrubbningar och smärta</h3><p>Med hormonspiral blir menstruationerna mycket sparsamma pga den uttalade gestagena effekten på endometriet och kan så småningom försvinna helt. Även mensvärk har rapporterats minska. Den större hormonspiralen är också en utmärkt behandling mot riklig menstruation, där organisk orsak uteslutits. </p><p class=\"indent\">Under de första 3–6 behandlingsmånaderna med hormonspiral är småblödningar vanligt förekommande. Efter uttag av hormonspiralen återkommer normal menstruation och fertilitet snabbt.</p><p class=\"indent\">Kopparspiralanvändning leder som regel till en kraftigare och mer långvarig menstruation än normalt. Behandling med <a class=\"index\" id=\"1035989\"></a>tranexamsyra, 1–1,5 gram 3–4 gånger/dygn under de första dygnen så länge mensen är mycket riklig, kan reducera blödningsmängden. Blödningar mellan menstruationerna kan däremot vanligen inte diagnostiseras eller behandlas utan att spiralen tas ut. Mensvärk hos spiralanvändare kan ofta behandlas med analgetika av typen NSAID. Om krampliknande smärtor förekommer i nedre delen av buken utanför mensperioden bör uttag övervägas, speciellt hos kvinnor som inte varit gravida.</p><h3 id=\"i4_33\">Utstötning och perforation</h3><p>Både hormon- och kopparspiral kan stötas ut. Utstötning förekommer hos ca 5&#37; under första året och sker vanligen i samband med menstruationen. Frekvensen är bl a beroende av kvinnans ålder och paritet, när och hur insättningen skett. Kvinnor som inte fött barn har den högsta utstötningsfrekvensen.</p><p class=\"indent\">Utstötning av en hormonspiral leder som regel till återkomst av ”normala” menstruationer medan kvarstående mycket sparsamma menstruationer talar för att hormonspiralen är intrauterint belägen.</p><p class=\"indent\">Perforation av livmodern kan förekomma med både hormon- och kopparspiral i en frekvens av ca 1/1 000 insättningar och inträffar som regel vid insättningen. Risken för perforation är högre om insättning sker under amningsperioden. En perforation ger sällan några dramatiska symtom och kan därför initialt förbli odiagnostiserad. Om spiraltrådarna inte kan påträffas vid undersökning kan ultraljud eller röntgen som regel fastställa spiralens läge.</p><h3 id=\"i4_34\">Bäckeninflammation</h3><p>Spiralanvändning orsakar inte bäckeninflammation, men speciellt kopparspiral erbjuder inte heller något skydd mot att en infektion i vagina eller cervix sprider sig uppåt. Risken för uppåtstigande infektion är störst i samband med insättning och tycks vara kopplad till sådana faktorer som ökar risken för nedre genitala infektioner, t ex partnerbyten.</p><h3 id=\"i4_35\"><a class=\"index\" id=\"1021776\"></a>Missfall och <a class=\"index\" id=\"1021777\"></a>extrauterin graviditet</h3><p>Blir kvinnan gravid med kopparspiral på plats, är risken för missfall eller prematur förlossning ökad. Denna risk reduceras om spiralen tas ut så snart graviditet konstaterats. Vid graviditet med hormonspiral bör ektopisk graviditet uteslutas.</p><h3 id=\"i4_36\">Insättning och kontroll </h3><p><a class=\"index\" id=\"1034952\"></a>Koppar- och hormonspiral kan rekommenderas till de flesta kvinnor som önskar en långverkande effektiv preventivmetod, även till kvinnor som inte varit gravida. Det finns hittills begränsad kunskap vad gäller effektivitet och biverkningar vid användning av koppar- och hormonspiral bland mycket unga kvinnor (&lt; 18 år).</p><p class=\"indent\">Inför spiralinsättning bör en noggrann gynekologisk undersökning göras och pågående infektion uteslutas. I regel är det bäst att sätta in spiralen under de första dagarna efter menstruationens slut. Insättningen kan dock även ske under andra faser av menstruationscykeln, om kvinnan är säker på att hon inte är gravid. Lämplig tidpunkt för insättning är också i anslutning till kirurgisk abort eller ungefär 1 vecka efter medicinsk abort.</p><p class=\"indent\">Kvinnan bör erbjudas kontroll inom 1–3 månader, när risken för komplikationer är störst, och därefter vid behov. </p><h2 id=\"i4_37\"><a class=\"index\" id=\"1021820\"></a>Barriärmetoder</h2><p>Barriärmetoder (spermiedödande medel, kondom och <a class=\"index\" id=\"1027674\"></a>pessar i kombination med kemiskt medel) har fördelen att de även utgör ett visst skydd mot sexuellt överförbara infektioner (STI). Nackdelarna utgörs främst av en lägre effektivitet i jämförelse med hormonella och intrauterina metoder. Kemiska medel ger hos vissa irritation av hud och slemhinnor och det förekommer allergi mot gummi. </p><p class=\"indent\">Effektiviteten för barriärmetoder är mycket varierande och beroende av användaren (se Tabell 1 <a href=\"#65785\" class=\"btn btn-primary btn-small pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>). Flera undersökningar har emellertid visat att hos välmotiverade par och hos kvinnor &gt; 35–40 år skiljer sig effektiviteten vid kondomanvändning föga från dem som vanligen anges för kopparspiral och hormonella metoder.</p><p class=\"indent\"><a class=\"index\" id=\"1021826\"></a>Kondom intar en särställning eftersom det är det enda preventivmedel som mannen kan använda. </p><h2 id=\"i4_38\"><a class=\"index\" id=\"1021829\"></a>Naturliga metoder</h2><p>Naturliga metoder bygger på att man identifierar den fertila perioden genom mätning av kroppstemperaturen och/eller undersökningar av sekretet i vagina och undviker samlag under de fertila dagarna. Det finns modern datorutrustning för att, med hjälp av lagrade data på basaltemperaturen och upprepade urinprov, identifiera icke-fertila respektive fertila dagar under menstruationscykeln. En sådan metod har i test visat sig ge en effektivitet på ca 6 graviditeter per 100 kvinnoår. Metoden fungerar bäst vid regelbunden mens och kan vara svår att använda effektivt hos kvinnor med långa eller oregelbundna menscykler.</p><p class=\"indent\">En annan naturlig metod är <a class=\"index\" id=\"1021834\"></a>laktationsamenorré (LAM). Den innebär att en kvinna som ammar fullt, inte har fått tillbaka sin menstruation och är mindre än 6 månader efter sin förlossning, har en risk för graviditet som ligger på ca 1,5&#37;, dvs i samma nivå som mycket säkra preventivmetoder.</p><h2 id=\"i4_39\"><a class=\"index\" id=\"1035026\"></a><a class=\"index\" id=\"33082\"></a>Akutpreventivmedel </h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1cf00cfb-641d-43a6-9a60-75f46546d21d",
+			"name": "1cf00cfb-641d-43a6-9a60-75f46546d21d",
+			"type": "facts",
+			"content": {
+				"number": "4",
+				"title": "<a class=\"index\" id=\"1041647\"></a><a class=\"index\" id=\"59506\"></a>Akutpreventivmedel ",
+				"text": "<table><tbody><tr><td><ul><li> Tillförsel av <a class=\"index\" id=\"1041650\"></a>gestagen, levonorgestrel <br>1,5 mg. Tabletten ska tas så snart som möjligt men inom 72 timmar efter det oskyddade <br>samlaget. </li></ul><ul><li>Tillförsel av antiprogesteron, <a class=\"index\" id=\"1041652\"></a>ulipristal 30 mg. Tabletten ska tas så snart som möjligt men inom 120 timmar efter det oskyddade samlaget.</li></ul><ul><li> Insättning av kopparspiral inom 5 dygn efter det oskyddade samlaget.</li></ul></td></tr></tbody></table>",
+				"id": "i4_41"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3770dfe2-4efd-4cda-9651-0431db653c06",
+			"name": "3770dfe2-4efd-4cda-9651-0431db653c06",
+			"type": "text",
+			"content": "<p>Risken för graviditet efter ett enstaka oskyddat samlag varierar kraftigt med tidpunkten i menstruationscykeln, men har beräknats till knappt 20&#37; dagarna strax före ägglossningen. </p><p class=\"indent\">Receptfritt akutpreventivmedel (akut-p-piller) bestående av 1,5 mg <a class=\"index\" id=\"1036183\"></a>levonorgestrel i engångsdos ska tas så snart som möjligt men inte senare än 72 timmar efter ett oskyddat samlag (Faktaruta 4). Verkningsmekanismen är en hämning/förskjutning av ovulationen, varvid fertilisering förhindras. </p><p class=\"indent\">Det finns även ett receptfritt akut-p-piller som innehåller 30 mg ulipristal och ges i engångsdos. Preparatet var receptbelagt fram till april 2015. Ulipristal är ett antiprogesteron och verkar i första hand genom att hämma/förskjuta ägglossningen men ger också en viss påverkan på endometriets utveckling. Akut-p-piller med ulipristal ger ett gott skydd mot graviditet om det tas inom 120 timmar efter ett oskyddat samlag.</p><span> </span><p class=\"indent\">Akut-p-piller kan förhindra 50–85&#37; av graviditeter som skulle ha inträffat om inget skydd använts, beroende på hur snart efter det oskyddade samlaget som akut-p-pillret använts. Akut-p-piller kan inte avbryta eller skada en redan etablerad graviditet. Biverkningar förekommer såsom illamående, huvudvärk, bröstspänningar och störningar i den följande menstruationscykeln med en för tidig eller försenad blödning. </p><p class=\"indent\">Även om vissa studier tyder på sämre effekt vid högre vikt/BMI, finns knappast stöd för att avråda kvinnor med högre BMI från användning av akut p-piller.</p><p class=\"indent\">Att sätta in en kopparspiral inom 5 dagar efter ett oskyddat samlag ger ett högt skydd (0,5–1&#37; graviditetsrisk). Fördelen med denna metod är att den ger en fortsatt varaktig antikonception. Kontraindikationerna är desamma som för spiralanvändning i allmänhet. </p><h2 id=\"i4_42\"><a class=\"index\" id=\"1021836\"></a>Preventivmedelsrådgivning</h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "809a7698-f5ec-465f-9e20-9ba7746e7879",
+			"name": "809a7698-f5ec-465f-9e20-9ba7746e7879",
+			"type": "tablenarrow",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"index\" id=\"15262\"></a> Olika preventivmetoder – <a class=\"index\" id=\"1023101\"></a> Kostnad för användaren, utan rabatter  (Källa: www.apoteket.se, mars 2015)",
+				"id": "i4_47",
+				"text": "<table><tbody><tr><td><div class=\"tableLine\"><strong>Metod</strong></div></td><td><p><strong><div class=\"tableLine\">Schabloniserad </div><div class=\"tableLine\">kostnad för 1 år </div><div class=\"tableLine\">(100 koitus)</div></strong></p></td></tr><tr><td><div class=\"tableLine\">Depo-Provera </div></td><td><div class=\"tableLine\">380 kr</div></td></tr><tr><td><div class=\"tableLine\">Kombinerade p-piller </div></td><td><div class=\"tableLine\">215–1 410 kr</div></td></tr><tr><td><div class=\"tableLine\">NuvaRing</div></td><td><div class=\"tableLine\">1 355 kr</div></td></tr><tr><td><div class=\"tableLine\">Evra plåster</div></td><td><div class=\"tableLine\">1 100 kr</div></td></tr><tr><td><div class=\"tableLine\">Perorala gestagener</div></td><td><div class=\"tableLine\">435–860 kr</div></td></tr><tr><td><div class=\"tableLine\">Implantatmetoder</div></td><td><div class=\"tableLine\">325 kr</div></td></tr><tr><td><div class=\"tableLine\">Mirena</div></td><td><div class=\"tableLine\">200 kr</div></td></tr><tr><td><div class=\"tableLine\">Kopparspiral</div></td><td><div class=\"tableLine\">0<a class=\"tableFootnoteLink\" href=\"#fnote_13\"><sup>a</sup></a></div></td></tr><tr><td><div class=\"tableLine\">Pessar  </div></td><td><div class=\"tableLine\">650 kr<a class=\"tableFootnoteLink\" href=\"#fnote_14\"><sup>b</sup></a></div></td></tr><tr><td><div class=\"tableLine\">Kondom </div></td><td><div class=\"tableLine\">325–1 985 kr<a class=\"tableFootnoteLink\" href=\"#fnote_15\"><sup>c</sup></a></div></td></tr><tr><td><div class=\"tableLine\">Avbrutet samlag </div></td><td><div class=\"tableLine\">0</div></td></tr><tr><td><div class=\"tableLine\">Persona teststickor </div></td><td><div class=\"tableLine\">2 220 kr<a class=\"tableFootnoteLink\" href=\"#fnote_16\"><sup>d</sup></a></div></td></tr><tr><td><div class=\"tableLine\">”Naturlig födelsekontroll”</div></td><td><div class=\"tableLine\">0</div></td></tr><tr><td colspan=\"2\" class=\"footNotes\"><div class=\"tableFootnote\" id=\"fnote_13\"><strong>a.</strong> <div class=\"tableLine\">Kopparspiral är kostnadsfri för patienten.</div></div><div class=\"tableFootnote\" id=\"fnote_14\"><strong>b.</strong> <div class=\"tableLine\">Pessar är kostnadsfritt om det utlämnas vid rådgivning. </div><div class=\"tableLine\">Spermicid kräm finns som Nonoxynol APL vaginalgel 2&#37;. </div><div class=\"tableLine\">Kostnaden är för 2 förpackningar spermiedödande </div><div class=\"tableLine\">medel (hållbarhet 6 månader) + doseringsspruta.</div></div><div class=\"tableFootnote\" id=\"fnote_15\"><strong>c.</strong> <div class=\"tableLine\">Den högre kostnaden avser plastkondom (latexfri).</div></div><div class=\"tableFootnote\" id=\"fnote_16\"><strong>d.</strong> <div class=\"tableLine\">Teststickor för identifiering av icke-fertila dagar (8 test-</div><div class=\"tableLine\">stickor/månad). Monitor tillkommer. </div></div></td></tr></tbody></table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "62a14b72-eea6-4b26-a7b2-a067ffdaf3e9",
+			"name": "62a14b72-eea6-4b26-a7b2-a067ffdaf3e9",
+			"type": "facts",
+			"content": {
+				"number": "5",
+				"title": "<a class=\"index\" id=\"99601\"></a>Checklista vid preventivmedels- rådgivning",
+				"text": "<table><tbody><tr><td><h5 id=\"i4_45\"> Anamnes</h5><ul><li>Tidigare erfarenhet av p-medel? </li></ul><ul><li>Tidigare graviditeter?  </li></ul><ul><li>Menstruationsanamnes</li></ul><ul><li>Relation/livssituation ?</li></ul><ul><li>Kontraindikationer?</li></ul><h5 id=\"i4_46\"> Undersökning</h5><ul><li>Gynekologisk undersökning?</li></ul><ul><li>Blodtryck vid p-pillerförskrivning</li></ul><ul><li>Vikt vid hormonell antikonception</li></ul><ul><li>Eventuellt cytologprov, klamydiaprov</li></ul></td></tr></tbody></table>",
+				"id": "i4_44"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6871d258-b137-4309-8e91-c71f8659d3a0",
+			"name": "6871d258-b137-4309-8e91-c71f8659d3a0",
+			"type": "text",
+			"content": "<p>Tillsammans med kvinnan (paret) kartläggs eventuella riskfaktorer eller kontraindikationer för tänkbara preventivmetoder och kvinnans önskemål och reproduktiva situation vägs in. </p><p class=\"indent\">Tidigare egen erfarenhet av olika preventivmetoder är givetvis en viktig faktor vid metodval. Olika metoders effektivitet är beroende av kvinnans ålder och livssituation. Se också Faktaruta 5, s 536, och Tabell 2.</p><span> </span><span> </span><p class=\"indent\">Om det finns krav på hög effektivitet och/eller önskemål om en icke koitusrelaterad metod, blir kombinerade p-piller, mellanpiller eller koppar- eller hormonspiral rimliga alternativ. Även gestagenpreparat för implantation eller injektion kan övervägas. <a class=\"index\" id=\"1023863\"></a>Sterilisering är en irreversibel preventivmetod som bör diskuteras om en definitiv metod är ett uttalat önskemål. </p><p class=\"indent\">Vid låg koitusfrekvens eller i en situation där man endast önskar uppskjuta en graviditet, kan barriärmetoder vara att föredra, eventuellt med tillgång till akut-p-piller vid behov. </p><p class=\"indent\">Kvinnor med regelbunden mens kan genom att tillämpa ”säkra” perioder i kombination med barriärmetoder uppnå en god effektivitet.</p><h3 id=\"i4_48\"><a class=\"index\" id=\"1021844\"></a>Preventivmedel till yngre</h3><p>Unga kvinnor behöver högeffektiva preventivmetoder eftersom fertiliteten är hög. De har ofta svårare att använda metoder som är beroende av en regelbunden livsstil och dagligt komihåg, t ex p-piller, jämfört med äldre kvinnor. Alla preventivmetoder kan användas och valet av metod bör baseras på kvinnans önskemål och eventuell förekomst av riskfaktorer. </p><p class=\"indent\">Risken för STI är högre i denna grupp, vilket bör beaktas vid rådgivning och uppföljning. Infektionsscreening rekommenderas frikostigt och kondomanvändning bör uppmuntras som tillägg till annan metod. </p><p class=\"indent\">Efter det att menstruationscykeln etablerats, dvs efter 3–4 menstruationer, kan hormonell antikonception förskrivas utan risk för att störa den framtida reproduktiva förmågan eller påverka fortsatt längdtillväxt. </p><ul><li> Kombinerade p-piller önskas ofta av unga kvinnor med behov av säker antikonception. Som förstahandsval vid nyförskrivning rekommenderas ett monofasiskt preparat med levonorgestrel, noretisteron eller norgestimat (se Djup ventrombos <a href=\"#88224\" class=\"btn btn-primary btn-small pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>). Vid biverkningar kan andra preparat övervägas.</li><li> Gestagenmetoder kan fungera väl även om de ibland ger besvär med oregelbundna blödningar, något som unga kvinnor kan ha svårt att acceptera. P-stav kan vara ett alternativ. Minipiller är inte förstahandsalternativ i denna högfertila åldersgrupp pga lägre effektivitet och högre krav på noggrant och regelbundet intag. God rådgivning och stöd är här speciellt viktigt. P-spruta rekommenderas inte till kvinnor &lt; 19 år pga risk för påverkan på benmassan. </li><li> Hormon- eller kopparspiral är långverkande reversibla metoder som kan rekommenderas till yngre kvinnor, även till dem som inte varit gravida. Erfarenheten av spiralanvändning är fortfarande begränsad bland de allra yngsta (tonåringar), men spiral kan efter individuell bedömning vara ett alternativ.</li><li> Pessar kan accepteras av vissa unga kvinnor, men metoden kräver en mycket noggrann instruktion och kontroll på mottagningen så att kvinnan verkligen kan sätta in och använda pessaret på rätt sätt. </li></ul><h3 id=\"i4_49\">Preventivmedel efter  förlossning och <a class=\"index\" id=\"1021861\"></a>amning</h3><p>Under de första 6 månaderna efter en förlossning är risken för graviditet mycket liten hos kvinnor som ammar fullt och som har kvarstående <a class=\"index\" id=\"1021864\"></a>laktationsamenorré. </p><p class=\"indent\">Inga negativa hälsoeffekter på barnet eller påverkan på bröstmjölkens kvalitet har påvisats när modern använt olika former av hormonell antikonception under amningen. Kombinerad hormonell antikonception bör dock undvikas de första 6–8 veckorna efter en förlossning pga VTE-risken. Om hormonell antikonception önskas kan gestagen (minipiller eller mellanpiller) rekommenderas.</p><p class=\"indent\"><a class=\"index\" id=\"1039925\"></a>Koppar- eller hormonspiral är ofta lämpliga metoder till kvinnor som fött barn. Vid insättning av spiral under amningsperioden bör den ökade perforationsrisken beaktas. </p><h3 id=\"i4_50\"><a class=\"index\" id=\"1024199\"></a>Preventivmedel till kvinnor över 40 år</h3><p>Alla preventivmetoder har i kliniska studier visat en mycket hög effektivitet hos kvinnor &gt; 40 år. Preventivmedel rekommenderas till ca 6 månader efter sista menstruationen. </p><p class=\"indent\">Epidemiologiska studier tyder på att tidigare rapporter om risk för hjärt-kärlsjukdom hos kvinnor &gt; 40 år som använt kombinerade p-piller har varit överskattade och hängt samman med sjukdomar och rökvanor. Idag kan man därför, oberoende av ålder, rekommendera fortsatt användning av kombinerad hormonell antikonception till friska kvinnor som inte röker om kvinnan så önskar. Däremot avråds från nyförskrivning av kombinerad hormonell antikonception efter 40 år.</p><p class=\"indent\">En koppar- eller hormonspiral bör tas ut inom 1 år efter menopaus. Hormonspiral är ofta en bra metod för denna åldersgrupp – menstruationen minskar och den större hormonspiralen kan även användas efter menopaus (totalt upp till 5 år) om kvinnan får klimakteriebesvär och önskar substitutionsbehandling med östrogen. </p><h2 id=\"i4_51\"><a class=\"index\" id=\"1021978\"></a>Aborter </h2><p>Det finns många olika skäl till att en kvinna eller ett par önskar avbryta en graviditet. Oavsett vad som ligger bakom är abortbeslutet för kvinnan nästan alltid smärtsamt och svårt. Trots detta framgår av abortstatistiken att åtminstone 1 av 3 abortsökande kvinnor har gjort minst en tidigare abort. </p><p class=\"indent\">Världshälsoorganisationen har uppskattat att det görs 30–40 miljoner inducerade aborter i världen varje år. Av dessa görs minst hälften illegalt i länder där abort är förbjuden. Speciellt de fattigaste kvinnorna i de fattigaste länderna är hänvisade till riskabla abortingrepp med en betydande morbiditet och mortalitet (3,4). </p><p class=\"indent\">I Sverige är abort tillåten i lag, om kvinnan begär åtgärden ”före utgången av 18:e graviditetsveckan”. Därefter får abort utföras endast om Socialstyrelsen lämnar tillstånd och för att få ett sådant tillstånd måste det föreligga ”synnerliga skäl”. En nämnd vid Socialstyrelsens Rättsliga Råd beslutar i varje enskilt fall utifrån det bakgrundsmaterial som ett läkarintyg och en kuratorsutredning utgör. Abort får inte utföras om fostret kan antas vara livsdugligt.</p><p class=\"indent\">Varje år utförs i Sverige 35 000–38 000 aborter, de allra flesta (drygt 90&#37;) före 12:e veckan. Endast ca 1&#37; av samtliga aborter utförs efter utgången av 18:e veckan. Under 2012 gjordes knappt 21 aborter per 1 000 kvinnor i fertil ålder. Allra flest aborter gjordes i åldersgruppen 20–24 år (Socialstyrelsens statistik).</p><h3 id=\"i4_52\">Omhändertagande och uppföljning</h3><p>Inför en abort tar gynekologen eller barnmorskan en noggrann anamnes och gör en gynekologisk undersökning, och oftast ett ultraljud, för att fastställa graviditetslängden. Detta ligger till grund för val av abortmetod. </p><p class=\"indent\">För att minska risken för komplikationer brukar man utesluta pågående genital infektion. Blodgruppering görs för att kvinnor som tillhör blodgrupp Rh- ska kunna få anti-D-profylax i samband med ingreppet. </p><p>Alla kvinnor/par som söker abort ska erbjudas kuratorskontakt för psykosocialt stöd. Många studier har visat att kvinnor som gör abort har haft problem att tolerera olika preventivmetoder. Omsorgsfull rådgivning om preventivmedel ska ges i samband med abortrådgivningen eftersom motivationen att påbörja en preventivmetod då är hög. Det är vidare viktigt att ge möjlighet till återbesök efter en abort, för uppföljning av eventuella problem och framför allt för att följa upp preventivmedelsanvändningen.</p><h3 id=\"i4_53\">Preventivmedel efter abort</h3><p>Eftersom ovulationen kan återkomma så tidigt som 8–10 dagar efter en abort bör hormonella metoder påbörjas direkt (dag 1–4), oavsett abortmetod. </p><p class=\"indent\">Efter en medicinsk abort kan koppar- eller hormonspiral sättas in 1 vecka efter aborten eller efter första mensen, som brukar komma 4–6 veckor efter aborten.</p><p class=\"indent\">Koppar- eller hormonspiral kan sättas in i samband med kirurgisk abort utan att komplikationsrisken efter aborten förändras.</p><h2 id=\"i4_54\"><a class=\"index\" id=\"1021990\"></a>Abortmetoder</h2><p>Abortmetod väljs med utgångspunkt från aktuell graviditetslängd och kvinnans önskemål.</p><h2 id=\"i4_55\">Tidiga aborter  (före graviditetsvecka 13)</h2><h3 id=\"i4_56\"><a class=\"index\" id=\"1021993\"></a>Farmakologisk  abortmetod (graviditetsvecka 5–9)</h3><p>Genom att tillföra ett läkemedel som binder till progesteronreceptorn (<a class=\"index\" id=\"1021996\"></a>mifepriston) kan man i graviditeter, som är högst 9 veckor, åstadkomma en lokal progesteronbrist och därigenom framkalla ett missfall. För att graviditeten ska stötas ut fullständigt måste behandlingen med antiprogesteron följas upp inom 2 dygn med uteruskontraherande medel, vanligen <a class=\"index\" id=\"1021997\"></a>vaginalt prostaglandin (<a class=\"index\" id=\"1023920\"></a>gemeprost, <a class=\"index\" id=\"1023913\"></a>misoprostol). Med denna abortmetod kan man åstadkomma komplett abort i 97&#37; av fallen. Cirka 2&#37; av aborterna blir inkompletta och kvinnan kan då behöva genomgå en skrapning. Hos 1&#37; misslyckas behandlingen och graviditeten måste då avbrytas med vakuumaspiration. </p><p class=\"indent\">Komplikationsfrekvensen är låg och behandling med mifepriston tolereras ofta väl. Prostaglandinbehandlingen innebär dock ofta smärtor och illamående, vilket gör att kvinnan under några timmar kan ha behov av smärtlindring, vilket kan ske med t ex diklofenak eller paracetamol.</p><h3 id=\"i4_57\">Kirurgisk  abortmetod (graviditetsvecka 6–13)</h3><p>Under de första 13 veckorna av graviditeten kan abort göras med vakuumaspiration, vilket innebär en mekanisk dilatation av cervix, varefter kaviteten töms med en vakuumsug. Det kan vara lämpligt att underlätta dilatationen genom förbehandling av cervix med vaginalt eller oralt prostaglandin 3 timmar före ingreppet eller med oralt mifepriston 36–48 timmar före ingreppet eller med uppmjukande stift, som förs in i cervix några timmar före ingreppet. </p><p class=\"indent\">Med förbehandling av cervix kan <a class=\"index\" id=\"1022004\"></a>vakuumaspiration utföras t o m graviditetsvecka 13. Vakuumaspiration kan göras i paracervikalblockad, i kombination med lugnande medel, eller i narkos. </p><p class=\"indent\">De vanligaste komplikationerna till en abort är infektion, blödning eller ofullständig tömning av uterus och förekommer i ca 5&#37; av fallen. Allvarlig komplikation med skada på uterus eller omkringliggande organ är mycket sällsynt. Nedsatt fertilitet hos kvinnor som tidigare gjort abort har inte kunnat påvisas i epidemiologiska studier. I sällsynta fall av mycket svår infektion efter abort kan emellertid tubarskada uppstå.</p><h3 id=\"i4_58\">Sena aborter</h3><p>Med ökande graviditetslängd blir det allt svårare att åstadkomma en tömning av uterus med vakuumaspiration. Efter vecka 13–14 rekommenderas metoder som innebär framkallande av ett värkarbete, som leder till utstötning av fostret. Idag används oftast upprepad tillförsel av prostaglandinanalog (vaginalt gemeprost, vaginalt misoprostol eller peroralt misoprostol) 24–48 timmar efter förbehandling med mifepriston. Denna kombinerade medicinska abortmetod innebär en snabb och skonsam induktion av ett värkarbete. Under behandlingen med prostaglandin bör patienten vara inneliggande på vårdavdelning. Vårdtiden är sällan &gt; 1 dygn. Patienten har stort behov av både smärtlindring och psykologiskt stöd.</p><h2 id=\"i4_59\">Referenser</h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9fa78102-3d07-40c3-843a-796f51b0d832",
+			"name": "9fa78102-3d07-40c3-843a-796f51b0d832",
+			"type": "references",
+			"content": "<ol class=\"references\"><li id=\"reference_1\">Antikonception – behandlingsrekommendation. Information från Läkemedelsverket 2014;25(2):14–28. <a href=\"https://lakemedelsverket.se/malgrupp/Halso---sjukvard/Behandlings--rekommendationer/Behandlingsrekommendation---listan/Antikonception/\" target=\"_blank\">www.lakemedels verket.se</a></li>\n<li id=\"reference_2\">Läkemedelsverket, 2013. Nyttan med kombinerade <a href=\"/atclist/G03A\" data-atcid=\"G03A\" data-atctitles=\"Urin-_och_k&#xF6;nsorgan_samt_k&#xF6;nshormoner--K&#xF6;nshormoner--Hormonella_antikonceptionella_medel_f&#xF6;r_systemisk_anv&#xE4;ndning\" class=\"inlineGenerica text\">p-piller</a> överväger risken även efter ny utredning. <a href=\"https://lakemedelsverket.se/Alla-nyheter/Nyheter-2013/Nyttan-med-kombinerade-p-piller-overvager-risken-aven-efter-ny-utredning/\" target=\"_blank\">www.lakemedelsverket.se</a> </li>\n<li id=\"reference_3\">WHO. Safe abortion: technical and policy guidance for health system. 2nd edition. World Health Organization (WHO); 2012. <br>ISBN 978-92-4-154843-4. <a href=\"http://www.who.int/reproductivehealth/publications/unsafe_abortion/9789241548434/en/\" target=\"_blank\">www.who.int</a> </li>\n<li id=\"reference_4\">SFOG. Inducerad abort. Svensk Förening för Obstetrik &amp; Gynekologi Arbets- och Referensgrupper (ARG) rapportserie; 2006. Rapport nr 54.<br><a href=\"https://www.sfog.se/start/arg-rapporterdiagnosbok/\" target=\"_blank\">www.sfog.se</a> </li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/-nya-kapitel-ej-publ/antikonception_och_aborter.json",
+	"indexed": "true",
+	"modified": "2016-09-09 13:43"
+}
