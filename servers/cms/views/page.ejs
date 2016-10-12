@@ -163,9 +163,14 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="subject" class="col-sm-2 control-label">Ämne</label>
+						<label for="subject" class="col-sm-2 control-label">Ämnen</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="subject" name="subject" placeholder="Ämne" value="<%=page.subject%>">
+							<div class="input-group">
+								<input type="text" class="form-control" id="subject" name="subject" placeholder="Ämnen" value="<%=page.subject%>">
+								<span class="input-group-btn">
+									<a href="/cms/utils/extractkeywords?id=<%=id%>" id="extractKeywordsButton" class="btn btn-success">Visa förslag på ämnen</a>
+								</span>
+							</div>
 							<small>
 								Ämnen, diagnoser, tillstånd, behandlingar etc som
 								informationen handlar om enligt en kontrollerad
@@ -662,4 +667,40 @@
 	</div>
 </div>
 
+<<<<<<< HEAD
+<div class="modal"  tabindex="-1" role="dialog" aria-labelledby="Förslag på ämnen" id="subjectSuggestionsModal" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Förslag på ämnesord</h4>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<ul class="">
+							<li>MeSH-termer i <strong>fetstil</strong></li>
+							<li>Synonymer i <em>kursiv stil</em></li>
+							<li>Vanligt förekommande ord utan formatering</li>
+						</ul>
+					</div>
+				</div>
+				<div id="suggestedSubjects">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="">
+							Laddar...
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Stäng</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
 <% include footer %>
+=======
+<% include footer %>
+>>>>>>> master

@@ -1,10 +1,78 @@
 var express = require('express');
 var router = express.Router();
 var contentController = require("../controllers/contentcontroller");
-var fs = require("fs");
+var fs = require("fs-extra");
 var path = require("path");
+var request = require("request");
 
 var wrench = require("wrench");
+
+router.get("/extractkeywords", function(req, res) {
+	
+	var id = req.query["id"];
+	
+	var result = [];
+	
+	if (id !== undefined) {
+
+		var secretSettings = fs.readJsonSync(path.join(__dirname, "..", "..", "..", "settings", "secretSettings.json"));
+		var apiKeys = secretSettings.api.keys;
+		
+		var apiKey = null;
+		
+		var key;
+		
+		for (key in apiKeys) {
+			if (apiKeys[key] === "CMS") {
+				apiKey = key;
+				break;
+			}
+		}
+		
+		if (apiKey !== null) {
+			
+			id = id.replace(".json", ".html");
+			
+			var draftPath = path.join(contentController.baseDir, "..", "output", "draft", id);
+			if (fs.existsSync(draftPath) && fs.statSync(draftPath).isFile()) {
+				var content = fs.readFileSync(draftPath, "utf8");
+				content = content.replace(/\n/g, "");
+				content = content.replace(/\r/g, "");
+
+				var excludedWords = ["behandling", "behandlas", "behandlas", "symtom", "faktaruta", "tabell", "risken", "patienter", "läkemedel", "effekt", "visat", "behandlas", "risk", "män", "svåra", "patienten", "personer", "pga", "kvinnor", "sverige", "mg/dag", "ökad", "ges", "for", "figur", "doser", "isbn", "användas", "alternativ", "form", "äldre", "barn", "vuxna", "månader", "veckor", "grupp", "ses", "differentialdiagnoser", "orsakas", "enstaka", "akut", "sjukdom", "preparat", "övervägas", "hand", "förekomst", "tecken", "vanligen", "patienterna", "utgör", "leda", "tillägg", "behov", "information"];
+
+				request.post({url: "http://127.0.0.1:8003/api/v1/extractkeywords", 'json': true, form: {apikey: apiKey, content: content, exclude: JSON.stringify(excludedWords)}}, function (error, response, body) {
+					var requestResult = [];
+					if (!error && response.statusCode == 200) {
+						requestResult = body;
+					} else if (error) {
+						console.log(error);
+					} else {
+						console.log("Status code: " + response.statusCode);
+						console.log(body)
+					}
+					res.json(requestResult);
+				});
+
+
+			} else {
+				console.log(draftPath + " does not exist or is not a file");
+				res.json(result);
+			}
+			
+		} else {
+			console.log("Could not find API key for CMS");
+			res.json(result);
+		}
+		
+	} else {
+		console.log("id was undefined");
+		res.json(result);
+		
+	}
+	
+});
+
 
 router.get("/links.json", function(req, res) {
 

@@ -6,6 +6,84 @@ var jsdom = require("jsdom");
 var apiKey = "3946aab9-1d65-46c4-8255-fcbe8c9195c3";
 
 describe("API", function() {
+
+	describe("#/api/v1/extractkeywords?url=http://lakemedelsboken.se/kapitel/akutmedicin/chock.html", function() {
+		it("should find several keywords", function(done) {
+			
+			this.timeout(15000);
+			
+			request("http://localhost/api/v1/extractkeywords?url=http://lakemedelsboken.se/kapitel/akutmedicin/chock.html&apikey=" + apiKey, function (error, response, body) {
+
+				should.not.exist(error);
+				response.statusCode.should.equal(200);
+
+				var data = JSON.parse(body);
+				data.content.should.not.equal("");
+
+				var recognized = data.content.length;
+				
+				recognized.should.be.above(0);
+
+				done();
+
+			});
+
+		});
+	});
+
+	describe("#/api/v1/extractkeywords?content=<body>hypertoni</body>", function() {
+		it("should find one keyword: 'hypertoni' and it should be a MeSH term", function(done) {
+			
+			this.timeout(15000);
+			
+			request("http://localhost/api/v1/extractkeywords?content=<body>hypertoni</body>&apikey=" + apiKey, function (error, response, body) {
+
+				should.not.exist(error);
+				response.statusCode.should.equal(200);
+
+				var data = JSON.parse(body);
+				data.content.should.not.equal("");
+
+				var recognized = data.content.length;
+				
+				recognized.should.be.equal(1);
+				data.content[0].word.should.be.exactly("hypertoni");
+				(data.content[0].meshterm).should.be.true();
+
+				done();
+
+			});
+
+		});
+	});
+
+	describe("#/api/v1/extractkeywords form usage", function() {
+		it("should find one keyword: 'hypertoni' and it should be a MeSH term", function(done) {
+			
+			this.timeout(15000);
+			
+			request.post({url: "http://localhost/api/v1/extractkeywords", form: {apikey: apiKey, content: "<body>hypertoni</body>"}}, function (error, response, body) {
+
+				should.not.exist(error);
+				response.statusCode.should.equal(200);
+
+				var data = JSON.parse(body);
+				data.content.should.not.equal("");
+
+				var recognized = data.content.length;
+				
+				recognized.should.be.equal(1);
+				data.content[0].word.should.be.exactly("hypertoni");
+				(data.content[0].meshterm).should.be.true();
+
+				done();
+
+			});
+
+		});
+	});
+
+
 	describe("#/api/v1/injectgenericas/:selector?", function() {
 		it("should inject code around four substance names when no selector is specified", function(done) {
 			

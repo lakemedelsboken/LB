@@ -1,3 +1,4 @@
+var express = require('express');
 var fs = require("fs");
 var request = require("request");
 var genericasInjector = require("../cms/postprocessors/genericas.js")
@@ -5,6 +6,9 @@ var crypto = require("crypto");
 var cheerio = require("cheerio");
 var path = require("path");
 var chokidar = require("chokidar");
+var keywordExtractor = require("keyword-extractor");
+var synonymFinder = require("../cms/search/synonyms.js");
+var Stats = require('fast-stats').Stats;
 
 var LRU = require("lru-cache")
   , options = {max: 2000}
@@ -585,6 +589,316 @@ app.get('/api/v1/injectgenericas/:selector?', function(req,res){
 			}
 		}
 
+
+	} else {
+		res.status(403);
+		res.end("403 Forbidden, too many requests from the same ip-address without an api key");
+	}
+
+});
+
+var meshTerms = null;
+
+function extractKeywords(data, excludedWords) {
+
+	if (meshTerms === null) {
+		
+		meshTerms = {};
+		
+		var terms = fs.readFileSync(path.join(__dirname, "..", "cms", "search", "synonyms", "terms.txt"), "utf8");
+		terms = terms.replace(/\r/g, "");
+
+		var rows = terms.split("\n");
+
+		for (var i = 1; i < rows.length; i++) {
+
+			var lineValues = rows[i].split("\t");
+			var id = lineValues[0];
+			var word = lineValues[2];
+			
+			if (word !== undefined) {
+				word = word.toLowerCase();
+			}
+	
+			if (word !== undefined) {
+				meshTerms[word] = id;
+			}
+	
+		}
+	}
+
+	var keywordsChained = keywordExtractor.extract(data, {language: "swedish", remove_digits: true, return_changed_case: true, return_chained_words: true});
+	
+	for (var i = keywordsChained.length - 1; i >= 0; i--) {
+		//Duplicate each
+		keywordsChained.push(keywordsChained[i]);
+	}
+
+	var keywordsUnchained = keywordExtractor.extract(data, {language: "swedish", remove_digits: true, return_changed_case: true, return_chained_words: false});
+
+	var keywords = keywordsChained.concat(keywordsUnchained);
+
+	var countedKeywords = {};
+	
+	keywords.forEach(function(word) {
+
+		if (word.length > 2 && excludedWords.indexOf(word) === -1) {
+			if (countedKeywords[word] === undefined) {
+				countedKeywords[word] = 0;
+			}
+		
+			countedKeywords[word] = countedKeywords[word] + 1;
+		}
+	});
+
+	var rankedKeywords = [];
+	for (var word in countedKeywords) {
+		rankedKeywords.push({word: word, count: countedKeywords[word], meshterm: (meshTerms[word] !== undefined)});
+	}
+	
+	//Triple the count for mesh terms, boosting
+	rankedKeywords.forEach(function(item) {
+		if (item.meshterm) {
+			item.count = item.count * 3;
+		}
+	});
+	
+
+	rankedKeywords.sort(function(a, b) {
+		return b.count - a.count;
+	});
+
+	for (var i = rankedKeywords.length - 1; i >= 0; i--) {
+		if (rankedKeywords[i].count < 3) {
+			rankedKeywords.splice(i, 1);
+		}
+	}
+
+	var counts = [];
+
+	var cutoff = 0;
+	var total = 0;
+	for (var i = 0; i < rankedKeywords.length; i++) {
+		counts.push(rankedKeywords[i].count);
+	}
+
+	var stats = new Stats().push(counts);
+	var mean = stats.amean();
+	var stddev = stats.stddev();
+	cutoff = Math.round(mean + stddev);
+	
+	for (var i = rankedKeywords.length - 1; i >= 0; i--) {
+		if (rankedKeywords[i].count < cutoff) { // && rankedKeywords[i].meshterm === false
+			rankedKeywords.splice(i, 1);
+		}
+	}
+
+	rankedKeywords.forEach(function(item) {
+		item.synonyms = synonymFinder.process(item.word).trim().replace(/\s\s+/g, ", ");
+		if (item.synonyms !== "") {
+			item.meshterm = true;
+		}
+	});
+
+	rankedKeywords.sort(function(a, b) {
+		if (a.meshterm && b.meshterm) {
+			return b.count - a.count;
+//			return 0;
+		} else if (a.meshterm) {
+			return -1;
+		} else if (b.meshterm) {
+			return 1;
+		} else {
+			return b.count - a.count;
+//			return 0;
+		}
+	});
+
+	return rankedKeywords;
+}
+
+//Return mesh items for a url
+app.get('/api/v1/extractkeywords', function(req,res){
+
+	var content = req.query["content"];
+	var url = req.query["url"];
+	var excludedWords = req.query["exclude"];
+	
+	if (excludedWords === undefined) {
+		excludedWords = [];
+	} else {
+		try {
+			excludedWords = JSON.parse(excludedWords);
+		} catch(e) {
+			excludedWords = [];
+		}
+	}
+
+	var apiKey = req.query["apikey"];
+	var isAllowed = checkIfApiKeyIsLegit(apiKey, req);
+
+	if (isAllowed) {
+
+		//Fetch content if only url is provided
+		if (content === undefined && url !== undefined) {
+			getContentFromUrl(url, function(err, data) {
+				var result = {content: ""};
+				if (err) {
+					if (req.query["callback"] !== undefined && req.query["callback"] !== "") {
+						res.jsonp(result);
+					} else {
+						res.json(result);
+					}
+				} else {
+					//Load in cheerio
+					var $ = cheerio.load(data);
+
+					var selectedElement = $("body");
+
+					if (selectedElement.length > 0) {
+						selectedElement = selectedElement.first();
+
+						selectedElement.find("script").remove();
+
+						var data = selectedElement.text();
+						data = data.replace(/\r\n/g, "\n"); //.replace(/\n/g, "").replace(/\t/g, "");
+
+						if (data.length > 0) {
+							result.content = extractKeywords(data, excludedWords);
+						} else {
+							console.log("No data ");
+						}
+
+					}
+
+					if (req.query["callback"] !== undefined && req.query["callback"] !== "") {
+						res.jsonp(result);
+					} else {
+						res.json(result);
+					}
+				}
+			});
+		} else if (content) {
+			var result = {content: ""};
+
+			var contentHash = createHash(content + excludedWords.join(","));
+			if (cache.has(contentHash)) {
+				result.content = cache.get(contentHash);
+			} else {
+				//Load in cheerio
+				var $ = cheerio.load(content);
+
+				var selectedElement = $("body");
+
+				if (selectedElement.length > 0) {
+					selectedElement = selectedElement.first();
+
+					selectedElement.find("script").remove();
+
+					var data = selectedElement.text();
+					data = data.replace(/\r\n/g, "\n"); //.replace(/\n/g, "").replace(/\t/g, "");
+
+					if (data.length > 0) {
+						result.content = extractKeywords(data, excludedWords);
+					} else {
+						console.log("No data");
+					}
+
+				}
+
+			}
+
+			cache.set(contentHash, result.content);
+
+			if (req.query["callback"] !== undefined && req.query["callback"] !== "") {
+				res.jsonp(result);
+			} else {
+				res.json(result);
+			}
+
+		} else {
+			var result = {content: ""};
+			if (req.query["callback"] !== undefined && req.query["callback"] !== "") {
+				res.jsonp(result);
+			} else {
+				res.json(result);
+			}
+		}
+
+
+	} else {
+		res.status(403);
+		res.end("403 Forbidden, too many requests from the same ip-address without an api key");
+	}
+
+});
+
+//Return mesh keywords from post html data
+app.post('/api/v1/extractkeywords', express.urlencoded({extended: false, limit: "50mb"}), function(req,res){
+
+	if (!req.body) return res.sendStatus(400);
+	
+	var content = req.body.content;
+
+	if (!content) return res.sendStatus(400);
+
+	var excludedWords = req.body.exclude;
+	
+	if (excludedWords === undefined) {
+		excludedWords = [];
+	} else {
+		try {
+			excludedWords = JSON.parse(excludedWords);
+		} catch(e) {
+			excludedWords = [];
+		}
+	}
+
+
+	var apiKey = req.body.apikey;
+	var isAllowed = checkIfApiKeyIsLegit(apiKey, req);
+
+	if (isAllowed) {
+
+		var result = {content: ""};
+
+		var contentHash = createHash(content + excludedWords.join(","));
+		if (cache.has(contentHash)) {
+			result.content = cache.get(contentHash);
+		} else {
+			
+			//Load in cheerio
+			var $ = cheerio.load(content);
+
+			var selectedElement = $("body");
+
+			if (selectedElement.length > 0) {
+				selectedElement = selectedElement.first();
+
+				selectedElement.find("script").remove();
+
+				var data = selectedElement.text();
+				data = data.replace(/\r\n/g, "\n"); //.replace(/\n/g, "").replace(/\t/g, "");
+
+				if (data.length > 0) {
+					result.content = extractKeywords(data, excludedWords);
+				} else {
+					console.log("No data");
+				}
+
+			} else {
+				console.log("body element is missing from the html document");
+			}
+
+		}
+
+		cache.set(contentHash, result.content);
+
+		if (req.query["callback"] !== undefined && req.query["callback"] !== "") {
+			res.jsonp(result);
+		} else {
+			res.json(result);
+		}
 
 	} else {
 		res.status(403);
