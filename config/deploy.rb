@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock '3.4.0'
+lock '3.6.1'
 
 set :application, 'lb'
 set :repo_url, 'https://github.com/lakemedelsboken/LB.git'
@@ -77,7 +77,7 @@ namespace :deploy do
 
       #Decrypt synonym database
       execute "cd #{release_path}/servers/cms/search/synonyms && make decrypt_conf_pass PASS=#{fetch(:secretSettingsPassword)}"
-      
+
       #Make current release a working git repository
       if fetch(:stage) == :cms
         execute "rm -rf /var/www/lb/gittemp/"
