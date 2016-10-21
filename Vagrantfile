@@ -65,7 +65,7 @@ Vagrant.configure(2) do |config|
 		sudo apt-get install -y xfonts-75dpi
 
 		cd /opt/
-		wget http://download.gna.org/wkhtmltopdf/0.12/0.12.2.1/wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
+		sudo wget http://download.gna.org/wkhtmltopdf/0.12/0.12.2.1/wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
 		sudo dpkg -i wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
 		sudo apt-get install -f
 
@@ -97,6 +97,7 @@ Vagrant.configure(2) do |config|
 		sudo npm install -g pm2
 		sudo npm install -g uglifyjs #needed to be able to build the sh in /build
 		sudo npm install -g node-inspector
+		sudo npm install -g clean-css
 
 
 	SHELL
