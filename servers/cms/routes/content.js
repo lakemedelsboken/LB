@@ -752,12 +752,9 @@ router.get("/pdf/download", function(req, res) {
 
 		var date = new Date();
 		var fileNameDate = dateFormat(date, "yyyy-mm-dd--HH-MM-ss");
-		var printDate = dateFormat(date, "yyyy-mm-dd HH:MM:ss");
 
-		var draftOrPublish = (url.indexOf("/cms/draft/") === 0) ? "draft" : "publish";
-
-		var newFileName = path.basename(url, ".html") + "-" + draftOrPublish + "-" + fileNameDate + ".pdf";
-
+		var newFileName = path.basename(url, ".html") + "-" + fileNameDate + ".pdf";
+		
 		var cookies = [];
 
 		for (var cookie in req.cookies) {
@@ -766,7 +763,7 @@ router.get("/pdf/download", function(req, res) {
 			cookies.push(encodeURIComponent(req.cookies[cookie]));
 		}
 
-		var arguments = ["--print-media-type", "--disable-smart-shrinking", "--zoom", "0.7", "--dpi", "240", "-n", "--viewport-size", "950"];
+		var arguments = ["--print-media-type", "--disable-smart-shrinking", "--zoom", "0.7", "--dpi", "240", "-n"];
 		//"--no-background",
 
 		arguments = arguments.concat(cookies);
@@ -775,9 +772,8 @@ router.get("/pdf/download", function(req, res) {
 		arguments = arguments.concat(["--header-font-size", 8]);
 		arguments = arguments.concat(["--footer-font-name", "Courier"]);
 		arguments = arguments.concat(["--header-font-name", "Courier"]);
-		//arguments = arguments.concat(["--header-left", "Läkemedelsboken - " + draftOrPublish]);
-		//arguments = arguments.concat(["--footer-left", printDate]);
-		//arguments = arguments.concat(["--footer-right", "[page]/[toPage]"]);
+		arguments = arguments.concat(["--margin-left", "30mm"]);
+		arguments = arguments.concat(["--margin-right", "30mm"]);
 
 		arguments.push("http://localhost" + url)
 		arguments.push(outPath);

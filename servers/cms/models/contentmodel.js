@@ -633,7 +633,7 @@ var ContentModel = {
 			output = output.replace(/\{modified\}/g, data.modified);
 			output = output.replace(/\{published\}/g, data.published);
 			output = output.replace(/\{informationType\}/g, data.informationType);
-
+			output = output.replace(/\{path\}/g, data.path);
 			output = output.replace(/\{version\}/g, staticSettings.version);
 
 			var relativePath = data.path.replace(ContentModel.baseDir, "").replace(/\\/g, "/").replace(".json", ".html").replace(/\/\//g, "/");
@@ -1059,6 +1059,7 @@ var ContentModel = {
 			output = output.replace(/\{modified\}/g, data.modified);
 			output = output.replace(/\{published\}/g, data.published);
 			output = output.replace(/\{informationType\}/g, data.informationType);
+			output = output.replace(/\{path\}/g, data.path);
 
 			output = output.replace(/\{version\}/g, staticSettings.version);
 

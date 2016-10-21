@@ -2,6 +2,7 @@
 
 	* {
 		letter-spacing: normal;
+		line-height:200%;
 
 	}
 
@@ -18,11 +19,14 @@
 		font-family: sans-serif;
 		font-weight: normal;
 		*/
+		font-weight: bold;
+		margin-top: 50px;
 		letter-spacing: normal;
 	}
 
 	a.btn-mini.inlineReference {
 		letter-spacing: normal;
+		line-height:200%;
 		font-weight: normal;
 		padding: none;
 		vertical-align: super;
