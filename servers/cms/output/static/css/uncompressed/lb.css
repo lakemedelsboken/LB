@@ -819,15 +819,6 @@ a.inlineGenerica.text {
 	*/
 }
 
-#pdf {
-	position: fixed;
-	top: 63px;
-	right: 7px;
-	margin: 0;
-	z-index: 12;
-	width: 11px;
-}
-
 #gotoTop {
 	position: fixed;
 	top: 3px;
@@ -862,7 +853,7 @@ a.inlineGenerica.text {
 
 #settings {
 	position: fixed;
-	top: 35px;
+	top: 63px;
 	right: 7px;
 	margin: 0;
 	z-index: 13;
@@ -871,7 +862,7 @@ a.inlineGenerica.text {
 
 #download-pdf {
 	position: fixed;
-	top: 63px;
+	top: 35px;
 	right: 7px;
 	margin: 0;
 	z-index: 13;
