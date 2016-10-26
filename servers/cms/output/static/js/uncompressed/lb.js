@@ -58,14 +58,6 @@ ga = function() {};
 		init: function() {
 			var self = this;
 
-			//Check pdf availability
-			var pdfLink = $("#pdf").first();
-			if (pdfLink.length === 1) {
-				if (pdfLink.attr("href") === "{PDF}") {
-					pdfLink.hide();
-				}
-			}
-
 			//Make main content z-index higher than sidebar
 			if (lb.isMobile.any()) {
 				$("#mainContainer").css("position", "relative");
