@@ -5,7 +5,7 @@ var async = require("async");
 var contentProviders = require("./content-providers/contentProviders.js");
 
 var job = new cronJob({
-	cronTime: '00 00 04 * * *',
+	cronTime: '00 00 06 * * *',
 	onTick: function() {
 		// Runs every day at 04:00:00 AM.
 		updateFromNpl();
@@ -21,6 +21,7 @@ var job = new cronJob({
 //	},
 //	start: true
 //});
+
 
 //Initial run,
 updateFromNpl();
