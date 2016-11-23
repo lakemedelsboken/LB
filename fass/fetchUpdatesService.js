@@ -251,11 +251,21 @@ function getNoInfo(nplId) {
 	var noinfo = {noinfo: true, id: nplId};
 	if (fs.existsSync(__dirname + "/../npl/products/" + nplId + ".json")) {
 		var nplProduct = JSON.parse(fs.readFileSync(__dirname + "/../npl/products/" + nplId + ".json", "utf8"));
+
+		if (nplProduct.provider) {
+			return nplProduct;
+		}
+
 		noinfo.name = nplProduct.name;
 		noinfo.description = nplProduct.description;
 		noinfo.atcCode = nplProduct.atcCode;
 		noinfo.brand = nplProduct.brand;
 		noinfo.additionalMonitoring = false;
+		noinfo.available = false;
+		noinfo.packaging = nplProduct.packaging;
+		noinfo.form = nplProduct.form;
+		noinfo.strength = nplProduct.strength;
+		noinfo.spcLink = nplProduct.spcLink;
 	}
 	return noinfo;
 }
