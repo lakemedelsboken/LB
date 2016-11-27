@@ -253,6 +253,7 @@ function getNoInfo(nplId) {
 		var nplProduct = JSON.parse(fs.readFileSync(__dirname + "/../npl/products/" + nplId + ".json", "utf8"));
 
 		if (nplProduct.provider) {
+			nplProduct.additionalMonitoring = false;
 			return nplProduct;
 		}
 
@@ -279,7 +280,6 @@ function processAnswer(answer, nplId, callback) {
 
 	}else {
 		var $ = cheerio.load("<html><body>" + answer + "</body></html>");
-		console.log(nplId);
 		var product = $("npl-id:contains('" + nplId + "')").parent().parent();
 		//console.log(product);
 		if (product.length > 0) {

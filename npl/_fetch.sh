@@ -11,9 +11,9 @@ wget https://docetp.mpa.se/LMF/Reports/Lakemedelsfakta%20produktdokument.xml -O 
 wget http://nsl.mpa.se/sensl.zip -O ./sensl/sensl.zip
 
 cd npl/
-unzip -o npl.zip
+unzip npl.zip
 rm npl.zip
 
 cd ../sensl
-unzip -o sensl.zip
+unzip sensl.zip
 rm sensl.zip
