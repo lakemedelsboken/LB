@@ -397,18 +397,16 @@ function readProducts() {
 
 		xml.on("end", function() {
 			callback();
-			console.log(file);
 			console.log(availableCounter + " products");
 		});
 
-	}, 100);
+	}, 1);
 
 
 	var productFiles = fs.readdirSync(__dirname + "/database/npl/Productdata/");
 
 
 
-	console.log(productFiles.length);
 	for (var i = 0; i < productFiles.length; i++) {
 		if (productFiles[i].indexOf(".xml") > -1) {
 			q.push(productFiles[i], function () {
