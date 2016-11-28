@@ -1,7 +1,7 @@
 .diff-view {
 	max-height: 400px;
 	overflow: auto;
-	
+
 }
 
 .collapsing {
@@ -15,7 +15,7 @@ pre {
   white-space: pre;
   max-height: 200px;
 }
-	
+
 .form-signin
 {
     max-width: 330px;
@@ -189,4 +189,8 @@ p.ingress {
        -moz-hyphens: auto;
         -ms-hyphens: auto;
             hyphens: auto;
+}
+
+.list-group-item-warning{
+	background-color: #999999;
 }
