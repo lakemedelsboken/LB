@@ -1,11 +1,19 @@
-wget https://npl.mpa.se/mpa.npl.services/publicering/npl.tgz -O ./database/npl.tgz
-wget https://docetp.mpa.se/LMF/Reports/Lakemedelsfakta%20produktdokument.xml -O ./database/LMFDocuments.xml
-wget http://nsl.mpa.se/sensl.zip -O ./database/substances/sensl.zip
-
+mkdir database
 cd database/
-tar -zxvf npl.tgz
-rm npl.tgz
+mkdir npl
+mkdir sensl
 
-cd substances/
+cd ..
+node fetchNplFile.js
+cd database/
+
+wget https://docetp.mpa.se/LMF/Reports/Lakemedelsfakta%20produktdokument.xml -O ./LMFDocuments.xml
+wget http://nsl.mpa.se/sensl.zip -O ./sensl/sensl.zip
+
+cd npl/
+unzip -o npl.zip
+rm npl.zip
+
+cd ../sensl
 unzip -o sensl.zip
 rm sensl.zip

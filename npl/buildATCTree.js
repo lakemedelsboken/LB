@@ -2,7 +2,7 @@ var fs = require("fs");
 var XmlStream = require("xml-stream");
 var path = require("path");
 
-var stream = fs.createReadStream(path.join(__dirname, '/database/atc-code-lx.xml'));
+var stream = fs.createReadStream(path.join(__dirname, '/database/sensl/atc-code-lx.xsd'));
 var xml = new XmlStream(stream);
 
 xml.preserve('xs:enumeration', true);
@@ -22,8 +22,14 @@ xml.on('updateElement: xs:enumeration', function(item) {
 	if (item.$.value.substr(0, 1) !== "Q") {
 		counter++;
 		var title = "";
-		var annotation = item["xs:annotation"].$children;
+		var annotation = item["xs:annotation"].$children.filter(function(e) {
+			if (e.$) {
+				return true;
+			}
+			return false
+		});;
 		for (var i = 0; i < annotation.length; i++) {
+
 			if (annotation[i].$["xml:lang"] === "sv") {
 				title = annotation[i].$text;
 				break;
@@ -32,7 +38,7 @@ xml.on('updateElement: xs:enumeration', function(item) {
 
 		if (title.indexOf(" / ") > -1) {
 
-			console.log("Error: " + title + " contains \" / \" in title");	
+			console.log("Error: " + title + " contains \" / \" in title");
 		}
 
 		atcItems.push({id: item.$.value, title: title});
