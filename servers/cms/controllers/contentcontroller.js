@@ -930,7 +930,12 @@ var ContentController = {
 			if (page.isPublished) {
 
 				//Now read the last published version of this page
-				var versions = historyModel.getPublished(page.path);
+				var versions;
+				try {
+						versions = historyModel.getPublished(page.path);
+				} catch (e) {
+					continue;
+				}
 
 				if (versions.length > 0) {
 
