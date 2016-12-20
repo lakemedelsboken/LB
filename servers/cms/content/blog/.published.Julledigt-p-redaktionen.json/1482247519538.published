@@ -1,0 +1,66 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "Julledigt på redaktionen",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "nyhet",
+	"created": "2016-12-20 16:15",
+	"published": "2016-12-20 16:25",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "ab34874f-6e17-4a68-9e6f-c01cc9839bee",
+			"name": "20e1b6ee-c916-4a44-993e-28900409ad75",
+			"type": "summary",
+			"content": "<p>Redaktionen f&ouml;r L&auml;kemedelsboken har julledigt 22 december t.o.m. 9 januari. Under denna period ber vi dig att uppm&auml;rksamma f&ouml;ljande: <br /><br /><strong>F&ouml;rfattare</strong> <br />&Auml;r du f&ouml;rfattare till ett av kapitlen i L&auml;kemedelsboken och har <em>mycket br&aring;dskande fr&aring;gor</em> som r&ouml;r ditt uppdrag som f&ouml;rfattare, v&auml;nligen kontakta ordf&ouml;rande f&ouml;r L&auml;kemedelsbokens redaktionskommitt&eacute;, Patrik Midl&ouml;v, via mejl: <a href=\"mailto:pmidlov@gmail.com\">pmidlov@gmail.com</a> . <br /><br /><strong>Best&auml;llningar</strong> <br />Om du har fr&aring;gor ang&aring;ende best&auml;llningar av den tryckta versionen av L&auml;kemedelsboken 2014 - v&auml;nligen mejla till <a href=\"mailto:lakemedelsboken@mpa.se\">lakemedelsboken@mpa.se</a> s&aring; tar vi hand om det snarast m&ouml;jligt efter ledigheten.<br /><br /><strong>&Ouml;vrigt</strong> <br />Om du har n&aring;got annat mycket br&aring;dskande &auml;rende som r&ouml;r L&auml;kemedelsboken, v&auml;nligen kontakta ist&auml;llet registrator@mpa.se.</p>\n<h3 style=\"text-align: center;\">God Jul och Gott Nytt &Aring;r!<br /><br /></h3>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8dcab2f8-885c-4446-b3e8-17ad2aff8a26",
+			"name": "ebed4cf7-f7ad-4ef4-bc42-85ef4146af98",
+			"type": "text",
+			"content": "<h1 id=\"Rubrik\">Rubrik</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/blog/Julledigt-p-redaktionen.json",
+	"indexed": "true",
+	"modified": "2016-12-20 16:25",
+	"isPublished": true
+}
