@@ -1,0 +1,719 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Njursjukdomar | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-09 00:56",
+	"published": "2015-07-09 00:56",
+	"validUntil": "",
+	"createdBy": "Peter Bárány, Caroline Asplund",
+	"replacesUrl": "/g4_nef_njursjukdomar_2013fm10.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "ccdfc7e4-109f-4542-81bc-7f549a2cc769",
+			"name": "ccdfc7e4-109f-4542-81bc-7f549a2cc769",
+			"type": "author",
+			"content": {
+				"firstname": "Peter",
+				"surname": "Bárány",
+				"description": "Njurmedicinska kliniken, Karolinska Universitetssjukhuset, Stockholm",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4f73391e-7fe6-4665-897e-a61c4fd21f84",
+			"name": "4f73391e-7fe6-4665-897e-a61c4fd21f84",
+			"type": "author",
+			"content": {
+				"firstname": "Caroline",
+				"surname": "Asplund",
+				"description": "Vårdcentralen, Gustavsberg",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2a5f19d2-a950-4fd8-b404-bd7cfd3e12f0",
+			"name": "2a5f19d2-a950-4fd8-b404-bd7cfd3e12f0",
+			"type": "text",
+			"content": "<h1 id=\"g4_3\"><a class=\"index\" id=\"1021429\" data-text=\"njursjukdomar\"></a><a class=\"crossref\" id=\"89489\"></a>Njursjukdomar</h1>\n<h2 id=\"g4_4\">Inledning</h2>\n<p class=\"ingress\">De medicinska njursjukdomarna inkluderar en stor och heterogen grupp av sjukdomar med varierande symtomatologi och prognos. De glomerul&auml;ra syndromen med de vanligaste renala fynden sammanfattas i Tabell 1.</p>\n<p class=\"ingress\"><br>Tidigt i f&ouml;rloppet &auml;r m&aring;nga kroniska njursjukdomar asymtomatiska men kr&auml;ver &auml;nd&aring; utredning, regelbunden uppf&ouml;ljning och behandling av grundsjukdomen eller komplikationer s&aring;som hypertoni. Omh&auml;ndertagandet av m&aring;nga patienter med njursjukdom syftar framf&ouml;r allt till att undvika eller minimera risken f&ouml;r progredierande njurfunktionsneds&auml;ttning.</p>\n<p class=\"ingress\"><br>Sent i f&ouml;rloppet tillkommer behandling av de uremiska manifestationerna vid avancerad njursvikt. Terminal njursvikt inneb&auml;r att patienten inte har livsuppeh&aring;llande njurfunktion och det kr&auml;ver ett st&auml;llningstagande till aktiv uremiv&aring;rd, s&aring;som dialys eller njurtransplantation. Antalet patienter som behandlas med aktiv uremiv&aring;rd i Sverige &auml;r drygt 9 200 och &ouml;kar med cirka 200 varje &aring;r. Drygt h&auml;lften av patienterna har ett fungerande njurtransplantat, cirka en tredjedel behandlas med hemodialys och en tiondel med peritonealdialys.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c4d80076-d6e3-4747-876d-72ee108e6c4e",
+			"name": "c4d80076-d6e3-4747-876d-72ee108e6c4e",
+			"type": "tablenarrow",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"54046\"></a>Vanliga renala fynd vid glomerulära syndrom",
+				"id": "g4_5",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Glomerul&auml;ra</div>\r\n<div class=\"tableLine\">syndrom<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>Fynd/symtom</strong></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Isolerad hematuri<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Asymtomatisk</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Isolerad proteinuri<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Asymtomatisk</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Nefritiskt syndrom<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Hypertoni, hematuri,</div>\r\n<div class=\"tableLine\">proteinuri, njurinsufficiens</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Nefrotiskt</div>\r\n<div class=\"tableLine\">syndrom<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">H&ouml;g SR, hypoalbuminemi,</div>\r\n<div class=\"tableLine\">proteinuri, &ouml;dem, hyper-</div>\r\n<div class=\"tableLine\">lipidemi</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Akut njurskada<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Akut njurfunktionsp&aring;verkan</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Kronisk njursjukdom</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span>Kronisk njurfunktionsneds&auml;ttning och/eller albuminuri</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c3f7d266-4c74-404d-b768-d948dcd0f6aa",
+			"name": "c3f7d266-4c74-404d-b768-d948dcd0f6aa",
+			"type": "text",
+			"content": "<h2 id=\"g4_6\"><a class=\"crossref\" id=\"27760\"></a>Glomerul&auml;ra sjukdomar</h2>\n<p><span style=\"font-style: italic;\"></span>Glomerul&auml;ra sjukdomar utg&ouml;rs framf&ouml;r allt av glomerulonefriter, det vill s&auml;ga inflammation i njurarnas kapill&auml;rnystan. Glomerulonefriter kan ge samtliga kliniska syndrom i Tabell 1. Olika glomerulonefriter beskrivs i Tabell 2.</p>\n<div class=\"clearfix\"><br>F&ouml;r <a class=\"index\" id=\"1021477\" data-text=\"SLE:nefrit;nefrit\"></a>SLE-nefrit finns en klassificering med fem definierade typer. Tillsammans med en bed&ouml;mning av sjukdomsaktiviteten utg&ouml;r denna ett underlag f&ouml;r prognos och beslut om behandlingsintensitet. Idag &auml;r <a class=\"index\" id=\"1021479\" data-text=\"postinfekti&#xF6;s glomerulonefrit\"></a>postinfekti&ouml;s proliferativ glomerulonefrit (&rdquo;<a class=\"index\" id=\"1021480\" data-text=\"streptokocknefrit\"></a>streptokocknefrit&rdquo;) ovanlig.</div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1c733b95-2c2f-4ee6-95ec-b5a9cc3a9403",
+			"name": "1c733b95-2c2f-4ee6-95ec-b5a9cc3a9403",
+			"type": "tablewide",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"crossref\" id=\"89571\"></a>Beskrivning av glomerulonefriter",
+				"id": "g4_7",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Prim&auml;r form</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Sekund&auml;r form/</div>\r\n<div class=\"tableLine\">association</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>Symtom/klinisk bild</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>Prognos</strong></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><a class=\"index\" id=\"1029600\" data-text=\"IgA-nefropati\"></a>IgA-nefropati<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">IgA-vaskulit, tidigare Henoch-</div>\r\n<div class=\"tableLine\">Sch&ouml;nleins</div>\r\n<div class=\"tableLine\">purpura.<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Varierande fr&aring;n asymto-</div>\r\n<div class=\"tableLine\">matisk mikroskopisk</div>\r\n<div class=\"tableLine\">hematuri till snabbt f&ouml;r-</div>\r\n<div class=\"tableLine\">l&ouml;pande glomerulonefrit.</div>\r\n<div class=\"tableLine\">Ofta makroskopisk hema-</div>\r\n<div class=\"tableLine\">turi vid halsinfektioner<span class=\"tab\"></span>.</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Risken f&ouml;r terminal njursvikt</div>\r\n<div class=\"tableLine\">&ouml;kar med uppf&ouml;ljningstiden.</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><a class=\"index\" id=\"1029609\" data-text=\"minimal change nephropathy\"></a>Minimal change</div>\r\n<div class=\"tableLine\">nephropathy</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">I s&auml;llsynta fall maligni-</div>\r\n<div class=\"tableLine\">tetsassocierad hos</div>\r\n<div class=\"tableLine\">vuxna.<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Nefrotiskt syndrom, vanli-</div>\r\n<div class=\"tableLine\">gast hos barn.<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Recidiv vanligt, ger endast un-</div>\r\n<div class=\"tableLine\">dantagsvis upphov till progre-</div>\r\n<div class=\"tableLine\">dierande njursvikt.</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Fokal segmentell</div>\r\n<div class=\"tableLine\">glomeruloskleros<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Obesitas, hiv-associerad.<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><a class=\"index\" id=\"1029622\" data-text=\"nefrotiskt syndrom\"></a>Nefrotiskt syndrom, flera</div>\r\n<div class=\"tableLine\">histologiskt definierade</div>\r\n<div class=\"tableLine\">varianter<span class=\"tab\"></span>.</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Varierande, ofta f&ouml;renad med</div>\r\n<div class=\"tableLine\">progredierande njursvikt.</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><a class=\"index\" id=\"1029627\" data-text=\"membran&ouml;s nefropati\"></a>Membran&ouml;s nefropati<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">SLE-nefrit, malignitet,</div>\r\n<div class=\"tableLine\">l&auml;kemedel (t&nbsp;ex kapto-</div>\r\n<div class=\"tableLine\">pril, clopidogrel,</div>\r\n<div class=\"tableLine\">NSAID), hepatit B-</div>\r\n<div class=\"tableLine\">associerad<span class=\"tab\"></span>.</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Nefrotiskt syndrom<span class=\"tab\"></span>. Vid</div>\r\n<div class=\"tableLine\">den prim&auml;ra formen har</div>\r\n<div class=\"tableLine\">70&ndash;80% antikroppar mot</div>\r\n<div class=\"tableLine\">fosfolipas A2-receptor.</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Mycket varierande, spontant</div>\r\n<div class=\"tableLine\">remitterande skov alternativt</div>\r\n<div class=\"tableLine\">progredierande njursvikt.</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span><a class=\"index\" id=\"1029636\" data-text=\"mesangiokapill&auml;r glomerulonefrit\"></a>Mesangiokapill&auml;r</div>\r\n<div class=\"tableLine\">glomerulonefrit<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">SLE-nefrit,</div>\r\n<div class=\"tableLine\">kryoglobulinemi,</div>\r\n<div class=\"tableLine\">hepatit C-associerad<span class=\"tab\"></span>.</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Proteinuri &ndash; nefrotiskt</div>\r\n<div class=\"tableLine\">syndrom, 3 subtyper med</div>\r\n<div class=\"tableLine\">olika f&ouml;rlopp.<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Varierar beroende p&aring; subtyp.</div>\r\n<div class=\"tableLine\">Relativt stor risk f&ouml;r progre-</div>\r\n<div class=\"tableLine\">dierande njursvikt.</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span><a class=\"index\" id=\"1029645\" data-text=\"glomerulonefrit;extrakapill&auml;r glomerulonefrit\"></a>Extrakapill&auml;r</div>\r\n<div class=\"tableLine\">glomerulonefrit</div>\r\n<div class=\"tableLine\">(<a class=\"index\" id=\"1029647\" data-text=\"crescentnefrit\"></a>crescentnefrit)</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span>Ofta <a class=\"index\" id=\"1050495\" data-text=\"reno-pulmonellt syndrom\"></a>reno-pulmonellt</div>\r\n<div class=\"tableLine\">syndrom associerat till</div>\r\n<div class=\"tableLine\">systemisk <a class=\"index\" id=\"1050497\" data-text=\"njurengagemang, vaskulit\"></a>vaskulit,</div>\r\n<div class=\"tableLine\"><a class=\"index\" id=\"1050498\" data-text=\"granulomat&ouml;s polyangit\"></a>granulomat&ouml;s polyangit</div>\r\n<div class=\"tableLine\">eller antibasalmem-</div>\r\n<div class=\"tableLine\">brannefrit (Goodpastu-</div>\r\n<div class=\"tableLine\">res syndrom). SLE-nefrit<span class=\"tab\"></span>.</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Snabbt f&ouml;rl&ouml;pande</div>\r\n<div class=\"tableLine\">glomerulonefrit med njur-</div>\r\n<div class=\"tableLine\">svikt.</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span>Tre subtyper beroende p&aring;</div>\r\n<div class=\"tableLine\">immunfluorescens. Tidigt in-</div>\r\n<div class=\"tableLine\">satt immunsuppressiv behand-</div>\r\n<div class=\"tableLine\">ling avg&ouml;rande f&ouml;r prognos.</div>\r\n<div class=\"tableLine\">Oftast god effekt av immun-</div>\r\n<div class=\"tableLine\">suppressiv behandling vid</div>\r\n<div class=\"tableLine\"><a class=\"index\" id=\"1029657\" data-text=\"ANCA\"></a>ANCA-associerad vaskulit och</div>\r\n<div class=\"tableLine\">SLE, men risk f&ouml;r framtida</div>\r\n<div class=\"tableLine\">skov.</div>\r\n<div class=\"tableLine\">Anti-basalmembrannefrit</div>\r\n<div class=\"tableLine\">(Goodpastures-syndrom) &auml;r</div>\r\n<div class=\"tableLine\">den allvarligaste formen.</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "55145b88-a47e-465d-a059-8cb6f8db608a",
+			"name": "55145b88-a47e-465d-a059-8cb6f8db608a",
+			"type": "text",
+			"content": "<h2 id=\"g4_8\"><a class=\"index\" id=\"1021481\" data-text=\"tubulointerstitiella njursjukdomar\"></a>Tubulointerstitiella njursjukdomar</h2>\n<p>Akut tubulointerstitiell nefrit kan vara en allergisk reaktion mot l&auml;kemedel, till exempel penicilliner, cefalosporiner och NSAID, och &auml;r ofta f&ouml;renad med eosinofili och eosinofila granulocyter i njurbiopsi och ibland &auml;ven i urinsediment. Nephropathia epidemica (&rdquo;sorkfeber&rdquo;) &auml;r en akut interstitiell nefrit orsakad av Puumala-virus, som sprids fr&aring;n skogssork i norra Sverige. I uthus kan aerosolsmitta fr&aring;n gnagarnas urin ge sjukdomen, som i typiska fall ger h&ouml;g feber, buksm&auml;rtor och akut njursvikt.</p>\n<p><br>Kronisk tubulointerstitiell nefrit kan vara ett delfenomen i en systemsjukdom, till exempel SLE eller Sj&ouml;grens syndrom.</p>\n<p><br>Akut <a class=\"index\" id=\"1021488\" data-text=\"pyelonefrit\"></a>pyelonefrit anses inte inneb&auml;ra n&aring;gon risk f&ouml;r kronisk njursvikt, om det inte finns komplicerande faktorer som vesikoureteral reflux eller avfl&ouml;deshinder. Ben&auml;mningen kronisk pyelonefrit har d&auml;rf&ouml;r ifr&aring;gasatts och delvis ersatts av <a class=\"index\" id=\"1021490\" data-text=\"refluxnefropati\"></a>refluxnefropati.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3030d9b7-8a8e-40c7-9036-9724ea22c038",
+			"name": "3030d9b7-8a8e-40c7-9036-9724ea22c038",
+			"type": "text",
+			"content": "<h2 id=\"g4_9\"><a class=\"index\" id=\"1021491\" data-text=\"njursjukdomar:vaskul&#xE4;ra\"></a>Vaskul&auml;r njursjukdom</h2>\n<p><span style=\"font-style: italic;\"><a class=\"index\" id=\"1021493\" data-text=\"nefroskleros\"></a></span>Nefroskleros till f&ouml;ljd av hypertoni &auml;r, trots modern antihypertensiv behandling, en viktig orsak till neds&auml;ttning av njurfunktion. Obehandlad eller inte optimalt kontrollerad hypertoni leder till f&ouml;r&auml;ndringar i sm&aring;k&auml;rlen i njurarna. Ofta tillkommer arteriosklerotiska f&ouml;r&auml;ndringar i njurart&auml;rer som dels kan leda till njurart&auml;rstenos med f&ouml;rv&auml;rrad hypertoni, dels orsaka en ischemisk nefropati med njursvikt. Ateroembolisk sjukdom (<a class=\"index\" id=\"1021495\" data-text=\"kolesterolembolism\"></a>kolesterolembolism) orsakas av kolesterolkristaller fr&aring;n mjuka plack och utl&ouml;ses av till exempel art&auml;rkateterisering.</p>\n<p><br>Kolesterolembolism kan leda till akut njursvikt och perifer cirkulationsinsufficiens (&rdquo;<a class=\"index\" id=\"1021497\" data-text=\"blue toe syndrome\"></a>blue toe syndrome&rdquo;). <a class=\"index\" id=\"1021498\" data-text=\"fibromuskul&#xE4;r dysplasi:njursjukdom\"></a>Fibromuskul&auml;r dysplasi, som oftast drabbar yngre kvinnor, kan leda till njurart&auml;rstenos med sekund&auml;r hypertoni.</p>\n<p><br>Vid trombotisk mikroangiopati, som innefattar <a class=\"index\" id=\"1021501\" data-text=\"trombotisk trombocytopen purpura:njursjukdom\"></a>trombotisk trombocytopen purpura och <a class=\"index\" id=\"1021502\" data-text=\"hemolytiskt uremiskt syndrom;HUS\"></a>hemolytiskt uremiskt syndrom (HUS), ses intravaskul&auml;ra mikrotromber. Den kliniska bilden domineras av hemolytisk anemi, trombocytopeni, ofta akut njursvikt och CNS-p&aring;verkan. Den kliniska (och histopatologiska) bilden vid malign <a class=\"index\" id=\"1025758\" data-text=\"hypertoni:malign\"></a>hypertoni kan ibland inte skiljas fr&aring;n HUS.</p>\n<p><br>Hos barn &auml;r den vanligaste formen av HUS associerad med gastroenterit orsakad av vissa serotyper av enterohemorragiska E.&nbsp;coli (EHEC O157:H7) som bildar ett shiga-liknande toxin. Ett flertal epidemier &auml;r beskrivna i v&auml;rlden, senast i Tyskland 2011 d&aring; mer &auml;n 800 personer insjuknade med HUS orsakat av EHEC O104:H4. HUS, som inte &auml;r diarr&eacute;associerad, har en betydligt s&auml;mre prognos och &auml;rftliga former har beskrivits, se &auml;ven kapitlet Bl&ouml;dningstillst&aring;nd, avsnittet <a href=\"{pre}/kapitel/blod/blodningstillstand.html#d3_9\">Trombocytopeni</a>.</p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2dcaefea-1259-4d3f-aa59-1b9e3aded79e",
+			"name": "2dcaefea-1259-4d3f-aa59-1b9e3aded79e",
+			"type": "text",
+			"content": "<h2 id=\"g4_10\"><a class=\"index\" id=\"1021505\" data-text=\"njursjukdomar:sekund&#xE4;ra\"></a>Sekund&auml;ra njursjukdomar</h2>\n<h3 id=\"g4_11\"><a class=\"index\" id=\"1025764\" data-text=\"diabetesnefropati;diabetes:nefropati\"></a>Diabetesnefropati</h3>\n<p>Diabetesnefropati &auml;r idag den vanligaste orsaken till terminal njursvikt i de flesta industrialiserade l&auml;nder. I Sverige har det de senaste &aring;ren skett en &ouml;kning av antalet nyupptagna patienter i aktiv uremiv&aring;rd med nefropati orsakad av diabetes mellitus typ 2 (f&ouml;r n&auml;rvarande drygt 180/&aring;r). D&auml;remot har antalet nyupptagna typ 1-diabetiker tenderat att sjunka, cirka 80/&aring;r. Hos patienter med diabetesnefropati &auml;r det mycket vanligt med samtidiga tecken p&aring; retinopati, neuropati och kardiovaskul&auml;r sjukdom.</p>\n<p><br>Faktaruta 1 visar n&auml;r annan njursjukdom &auml;n diabetesnefropati kan misst&auml;nkas hos en diabetiker.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5c6f7765-2a84-4507-a37c-3c889a4383d6",
+			"name": "5c6f7765-2a84-4507-a37c-3c889a4383d6",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"22434\"></a>Utvidgad diagnostik av njursjukdom hos diabetiker bör övervägas vid:",
+				"text": "<table><tbody><tr><td><ul><li>avsaknad av retinopatiförändringar</li></ul><ul><li>kort diabetesduration</li></ul><ul><li>makrohematuri (urologisk sjukdom?)</li></ul><ul><li>röda blodkroppscylindrar i urinsediment</li></ul><ul><li>snabb progress av njurfunktionsnedsättning</li></ul><ul><li>typiska fynd som tyder på annan njursjukdom.</li></ul></td></tr></tbody></table>",
+				"id": "g4_13"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4bbf2b4b-ffa7-423a-875e-39b1f7f4476a",
+			"name": "4bbf2b4b-ffa7-423a-875e-39b1f7f4476a",
+			"type": "text",
+			"content": "<h3 id=\"g4_14\">Njur<a class=\"index\" id=\"1025777\" data-text=\"amyloidos\"></a>amyloidos</h3>\n<p>Njuramyloidos orsakas fr&auml;mst av inlagring av serum amyloid A-protein vid kroniska inflammatoriska sjukdomar, familj&auml;r medelhavsfeber och av monoklonala l&auml;tta kedjor vid plasmacellsdyskrasier.</p>\n<h3 id=\"g4_15\">Myelom</h3>\n<p>Vid myelom &auml;r olika former av njurp&aring;verkan vanliga. Serum- och urinelfores b&ouml;r alltid ing&aring; i utredning av njursjukdom hos vuxna.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d39bd35e-a45a-44ec-96f2-1584fbe0c47d",
+			"name": "d39bd35e-a45a-44ec-96f2-1584fbe0c47d",
+			"type": "text",
+			"content": "<h2 id=\"g4_16\"><a class=\"index\" id=\"1021523\" data-text=\"njursjukdomar:&#xE4;rftliga\"></a>&Auml;rftliga njursjukdomar</h2>\n<h3 id=\"g4_17\">Adult <a class=\"index\" id=\"1025814\" data-text=\"polycystisk njursjukdom\"></a>polycystisk njursjukdom</h3>\n<p>Adult polycystisk njursjukdom (PKD) &auml;r en av de vanligaste &auml;rftliga sjukdomarna &ouml;verhuvudtaget. Uppskattad prevalens &auml;r 1&nbsp;fall/1&nbsp;000&ndash;4&nbsp;500 inv&aring;nare och cirka 10&nbsp;% av patienterna i aktiv uremiv&aring;rd v&auml;rlden &ouml;ver har sjukdomen. PKD &auml;r en dominant &auml;rftlig sjukdom med minst tre genetiska varianter. &Auml;ven om hypertoni kan f&ouml;rekomma i barndomen rekommenderas inte familjescreening f&ouml;rr&auml;n i vuxen &aring;lder och den ska f&ouml;reg&aring;s av genetisk information och r&aring;dgivning. Vid den vanligaste varianten, med mutationen p&aring; kromosom 16, leder sjukdomen oftast till terminal njursvikt vid 40&ndash;55&nbsp;&aring;rs &aring;lder. Vid denna variant av sjukdomen tillv&auml;xer cystor kontinuerligt och vardera njuren kan v&auml;ga upp till cirka 8&nbsp;kg. Vid en annan genetisk variant sitter mutationen p&aring; kromosom 4; nedsatt njurfunktion kommer i genomsnitt omkring 20&nbsp;&aring;r senare och uppt&auml;cks ibland en passant i h&ouml;g &aring;lder.</p>\n<h3 id=\"g4_18\">Alports syndrom</h3>\n<p>Alports syndrom &auml;r en &auml;rftlig sjukdom med m&aring;nga genetiska varianter. Mutationen sitter i genen f&ouml;r ett kollagen som &auml;r en del av det glomerul&auml;ra basalmembranet. Den vanligaste formen &auml;r X-bunden och ger hos m&auml;n neurogen h&ouml;rselneds&auml;ttning, hematuri, proteinuri och kronisk njursvikt. Hos kvinnor &auml;r sjukdomen oftast godartad och kan vara begr&auml;nsad till asymtomatisk mikroskopisk hematuri.</p>\n<h3 id=\"g4_19\">Benign familj&auml;r hematuri</h3>\n<p><span style=\"font-style: italic;\"><a class=\"index\" id=\"1021529\" data-text=\"benign familj&#xE4;r hematuri;hematuri\"></a></span>Benign familj&auml;r hematuri (thin basement-membrane disease) &auml;r en &auml;rftlig sjukdom som ocks&aring; &auml;r lokaliserad till det glomerul&auml;ra basalmembranet. Oftast &auml;r f&ouml;rloppet godartat, men en liten andel av patienterna f&aring;r progredierande njursvikt.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "73ce67bd-cdfd-460e-83d9-5fdacf897f43",
+			"name": "73ce67bd-cdfd-460e-83d9-5fdacf897f43",
+			"type": "text",
+			"content": "<h2 id=\"g4_20\"><a class=\"index\" id=\"1032419\" data-text=\"njurinsufficiens\"></a><a class=\"crossref\" id=\"63892\"></a>Kronisk njursjukdom</h2>\n<h3 id=\"g4_21\"><a class=\"crossref\" id=\"52163\"></a>Definition</h3>\n<p>Med utg&aring;ngspunkt fr&aring;n den kroppsytenormaliserade glomerul&auml;ra filtrationshastigheten (GFR per 1,73&nbsp;m<sup>2</sup> kroppsyta) och graden av albuminuri delas kronisk njursjukdom in i fem stadier (Tabell 3).</p>\n<p><br>GFR kan skattas (eGFR) med formler fr&aring;n P/S-kreatinin alternativt P/S-cystatin C, eller m&auml;tas med exogen mark&ouml;rsubstans, till exempel iohexol eller Cr-EDTA. P/S-kreatininv&auml;rdet hos en individ p&aring;verkas av GFR, tubul&auml;r sekretion, muskelmassa, muskelskada, k&ouml;ttintag och hydreringsgrad. P/S-cystatin C &auml;r en ny mark&ouml;r f&ouml;r njurfunktion och p&aring;verkas av sk&ouml;ldk&ouml;rtelfunktion och behandling med kortikosteroider, men inte av muskelmassa. D&auml;remot &auml;r analyskostnaden h&ouml;gre &auml;n f&ouml;r P/S-kreatinin. Se vidare Kapitlet <a href=\"{pre}/kapitel/nefrologi-urologi/skattning-av-njurfunktion.html#Skattning-av-njurfunktion\">Skattning av njurfunktion</a>.<br><br>Graden av albuminuts&ouml;ndringen i urin best&auml;ms genom att m&auml;ta kvoten mellan albumin- och kreatininhalten i ett stickprov eller morgonprov.</p>\n<p><br>I populationsstudier har cirka 4&nbsp;% av de vuxna varit i stadium 3 och omkring 0,5&nbsp;% i stadierna 4&ndash;5. P/S-kreatinin och urinsticka ing&aring;r ofta i screeningprogram och h&auml;lsokontroller, men screening av normalbefolkningen f&ouml;r enbart njursjukdom rekommenderas inte. Patienter med &ouml;kad risk f&ouml;r njurfunktionsneds&auml;ttning b&ouml;r regelbundet kontrolleras avseende njurfunktion och urinfynd. I denna patientkategori ing&aring;r, f&ouml;rutom diabetespatienter, fr&auml;mst patienter med kardiovaskul&auml;r sjukdom och hypertoni, men &auml;ven patienter med njursjukdom i familjen.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "205793c1-12b6-40b0-bfab-f4c7333680d1",
+			"name": "205793c1-12b6-40b0-bfab-f4c7333680d1",
+			"type": "tablenarrow",
+			"content": {
+				"number": "3",
+				"title": "CKD-stadier indelade efter grad av njurfunktionsnedsättning (1-5). För varje stadium anges grad av albuminuri (1-3).",
+				"id": "g4_22",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td colspan=\"2\">\r\n<div class=\"tableLine\"><strong>Njursjukdom <br /></strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>eGFR ml/minut</strong></div>\r\n</td>\r\n<td colspan=\"7\">\r\n<p><strong>Albuminurigrad, U-albumin/kreatininkvot<br /></strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">\r\n<div class=\"tableLine\"><strong>Grad av njurfunktions-</strong></div>\r\n<div class=\"tableLine\"><strong>neds&auml;ttning</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>per 1,73 m<sup>2</sup></strong></div>\r\n<div class=\"tableLine\"><strong>kroppsyta</strong></div>\r\n</td>\r\n<td colspan=\"5\">\r\n<p><strong>1 (normal)</strong></p>\r\n</td>\r\n<td><strong>2 (mikroalbuminuri)</strong></td>\r\n<td><strong>3 (albuminuri)</strong></td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">1</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Normal njurfunktion</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&gt; 90</div>\r\n</td>\r\n<td rowspan=\"6\" colspan=\"5\">\r\n<p>&lt; 3 mg/mmol</p>\r\n</td>\r\n<td rowspan=\"6\">3&ndash;30 mg/mmol</td>\r\n<td rowspan=\"6\">&gt; 30 mg/mmol</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">2</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Mild - asymtomatisk</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">60&ndash;89</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">3a</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Mild&ndash;m&aring;ttlig</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">45&ndash;59</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">3b</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">M&aring;ttlig&ndash;uttalad</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">30&ndash;44</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">4</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Uttalad njursvikt -</div>\r\n<div class=\"tableLine\">symtomgivande</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">15&ndash;29</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">5</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Terminal njursvikt</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&lt; 15</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d5d3dc27-506b-4a60-bff0-bb87ded925fe",
+			"name": "d5d3dc27-506b-4a60-bff0-bb87ded925fe",
+			"type": "text",
+			"content": "<h3 id=\"g4_23\"><a class=\"index\" id=\"1022716\" data-text=\"uremi\"></a><a class=\"crossref\" id=\"38894\"></a>Uremi</h3>\n<p>Avancerad njursvikt kan vara asymtomatisk, men oftast utvecklas det uremiska syndromet successivt vid sjunkande GFR under 45&nbsp;ml/min (Faktaruta 2).&nbsp;<span style=\"color: #ff0000;\">P/S-urea anv&auml;nds som m&aring;tt p&aring; grad av ansamling av metaboliter vid uremi och p&aring;verkas av njurfunktion, hydreringsgrad, proteinintag och proteinkatabolism. &Auml;ven en stor bl&ouml;dning i tarmkanalen ger ureastegring. Urea i sig &auml;r atoxiskt.</span> I det asymtomatiska stadiet &auml;r hypertoni, m&aring;ttlig anemi och begynnande rubbningar i kalcium-fosfatbalansen vanligt. De f&ouml;rsta uremiska symtomen &auml;r ofta tr&ouml;tthet, anorexi och kl&aring;da. Obehandlad, terminal njursvikt kan leda till akuta livshotande kardiella och neurologiska komplikationer.</p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a088b71f-4095-4f53-8ce6-132f744e00ff",
+			"name": "a088b71f-4095-4f53-8ce6-132f744e00ff",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"crossref\" id=\"15746\"></a>Uremisymtom/klinisk bild",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td><span class=\"tab\"></span>V&auml;tskebalansrubbningar\r\n<ul>\r\n<li>Dehydrering&ndash;lung&ouml;dem</li>\r\n<li>Hypotoni&ndash;hypertensiv kris</li>\r\n</ul>\r\n<span class=\"tab\"></span>Kardiella effekter\r\n<ul>\r\n<li>Perikardit</li>\r\n<li>Arytmi</li>\r\n<li>Synkope</li>\r\n<li>Kardiomyopati</li>\r\n<li>V&auml;nsterkammarhypertrofi</li>\r\n<li>Accelererad arterio&shy;skleros</li>\r\n</ul>\r\n<span class=\"tab\"></span>Hematologi/immunologi\r\n<ul>\r\n<li>Anemi</li>\r\n<li>Bl&ouml;dningsben&auml;genhet</li>\r\n<li>Infektionsben&auml;&shy;genhet</li>\r\n</ul>\r\n<span class=\"tab\"></span>Neurologi<span class=\"tab\"></span>\r\n<ul>\r\n<li>Tr&ouml;tthet</li>\r\n<li>Kl&aring;da</li>\r\n<li>Nedsatt vakenhet</li>\r\n<li>S&ouml;mnst&ouml;rning</li>\r\n<li>Restless legs</li>\r\n<li>Neuropati</li>\r\n<li>Psykos</li>\r\n<li>Koma</li>\r\n<li>Krampanfall</li>\r\n</ul>\r\n<span class=\"tab\"></span>Gastroenterologi<span class=\"tab\"></span>\r\n<ul>\r\n<li>Anorexi</li>\r\n<li>Illam&aring;ende</li>\r\n<li>Kr&auml;kningar</li>\r\n<li>Diarr&eacute;</li>\r\n<li>Pankreatit</li>\r\n<li>Gastrointestinal bl&ouml;dning</li>\r\n</ul>\r\n<span class=\"tab\"></span>Metabola rubbningar<span class=\"tab\"></span>\r\n<ul>\r\n<li>Acidos</li>\r\n<li>Hypokalcemi</li>\r\n<li>Hyperkalcemi</li>\r\n<li>Hyperfosfatemi</li>\r\n<li>Hyperkalemi</li>\r\n<li>St&ouml;rningar i kolhydrat-, lipid- och aminosyrametabolismen</li>\r\n</ul>\r\n<span class=\"tab\"></span>Endokrina rubbningar<span class=\"tab\"></span>\r\n<ul>\r\n<li>Sekund&auml;r hyperparatyreoidism</li>\r\n<li>Gonadinsufficiens</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "g4_25"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9b2a482f-cc10-4574-b147-b32cd4623f2b",
+			"name": "9b2a482f-cc10-4574-b147-b32cd4623f2b",
+			"type": "text",
+			"content": "<h3 id=\"g4_33\"><a class=\"crossref\" id=\"58451\"></a>Akut njurskada</h3>\n<p>Definition &ndash; akut, ofta reversibel njurskada som leder till minskad GFR.(2) Sjunkande urinproduktion &auml;r ett kardinalsymtom (Tabell 4). Urinm&auml;ngden &auml;r en viktig prognostisk faktor (&lt;&nbsp;400 ml/dygn och hos barn &lt;&nbsp;0,5&nbsp;ml/kg kroppsvikt/timme ben&auml;mns oliguri och &lt;&nbsp;100&nbsp;ml/dygn anuri). Det typiska f&ouml;rloppet indelas i:</p>\n<ol>\n<li><strong class=\"itemType\"></strong>Initialstadium med sjunkande diures</li>\n<li><span class=\"tab\"></span>Oliguriskt stadium (dagar&ndash;veckor)</li>\n<li><span class=\"tab\"></span>Polyuriskt stadium (2&ndash;3 veckor)</li>\n<li><span class=\"tab\"></span>Restitutionsstadium (veckor&ndash;m&aring;nader)</li>\n</ol>\n<p>Att identifiera riskpatienter och f&ouml;rebygga akut njursvikt &auml;r av st&ouml;rsta vikt, se Faktaruta 3. Den vanligaste indelningen av orsaker till akut njurskada visas i Tabell 5. Det &auml;r mycket vanligt med multifaktoriellt orsakad njursvikt. En obehandlad prerenal njurskada &ouml;verg&aring;r ofta till att bli renal (akut tubul&auml;r nekros).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5b80a3cd-19d9-4865-aed1-bd1fbbbb2771",
+			"name": "5b80a3cd-19d9-4865-aed1-bd1fbbbb2771",
+			"type": "tablenarrow",
+			"content": {
+				"number": "4",
+				"title": "Kriterier för akut njurskada enligt Kidney Disease Improving Global Outcomes (KDIGO) (3)",
+				"id": "",
+				"text": "<table class=\"table table-bordered\">\r\n<tbody>\r\n<tr>\r\n<td><strong>Akut njurskada, grad</strong></td>\r\n<td><strong>&Ouml;kning i p-kreatinin</strong></td>\r\n<td><strong>Urinproduktion</strong></td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">1</td>\r\n<td class=\"footNotes\">&gt;&nbsp;26 &micro;mol/l inom 48 timmar eller 1,5&ndash;1,9 &times;&nbsp;baslinjev&auml;rdet inom 7&nbsp;dagar</td>\r\n<td class=\"footNotes\">\r\n<p>&lt;&nbsp;0,5 ml/kg/h,</p>\r\n<p>&gt;&nbsp;6 timmar</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">2</td>\r\n<td class=\"footNotes\">\r\n<p>2,0&ndash;2,9 &times;&nbsp;baslinjev&auml;rdet inom 7 dagar</p>\r\n</td>\r\n<td class=\"footNotes\">\r\n<p>&lt;&nbsp;0,5 ml/kg/h,</p>\r\n<p>&gt;&nbsp;12 timmar</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\">3</td>\r\n<td class=\"footNotes\">\r\n<p>&ge; 3,0&nbsp;&times;&nbsp;baslinjev&auml;rdet</p>\r\n<p>eller en &ouml;kning av p-kreatinin &gt;&nbsp;354&nbsp;&micro;mol/l</p>\r\n<p>eller dialysbehandling</p>\r\n<p>eller hos patienter &lt;&nbsp;18 &aring;r, en minskning av GFR till &lt;&nbsp;35&nbsp;ml/min/1,73 m<sup>2</sup></p>\r\n</td>\r\n<td class=\"footNotes\">\r\n<p>&lt;&nbsp;0,3&nbsp;ml/kg/h,</p>\r\n<p>&ge;&nbsp;24 timmar eller anuri &gt;&nbsp;12 timmar</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "cba1b7cd-39d8-4f55-bf38-b9d0c4ad6037",
+			"name": "cba1b7cd-39d8-4f55-bf38-b9d0c4ad6037",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "<a class=\"crossref\" id=\"16030\"></a>Profylax mot akut njurskada",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ol>\r\n<li><strong class=\"itemType\"></strong>Identifiera riskpatienter &ndash; h&ouml;g &aring;lder, nedsatt njurfunktion, njurtransplanterade, diabetesnefropati, arterioskleros, myelom, leverinsufficiens<span class=\"tab\"></span></li>\r\n<li><strong class=\"itemType\"></strong>Undvik dehydrering/hypotension</li>\r\n<li><strong class=\"itemType\"></strong>Profylaktisk v&auml;tsketillf&ouml;rsel (till exempel Ringer-acetat, 1&nbsp;ml/kg kroppsvikt och timme) vid fasta, r&ouml;ntgenkontrastunders&ouml;kningar och operation</li>\r\n<li><strong class=\"itemType\"></strong>Uppr&auml;tth&aring;ll diures (&gt;&nbsp;100&nbsp;ml/timme) vid till exempel r&ouml;ntgenkontrastunders&ouml;kning. I f&ouml;rsta hand ges endast v&auml;tsketillf&ouml;rsel &ndash; risk f&ouml;r dehydre&shy;ring med diuretika!</li>\r\n<li><strong class=\"itemType\"></strong>Beakta risker med nefrotoxiska l&auml;kemedel (bland annat NSAID, ACE-h&auml;mmare, aminoglykosider och ciklosporin)</li>\r\n</ol>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "g4_35"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6116a449-84f5-43bb-a614-fbef26827881",
+			"name": "6116a449-84f5-43bb-a614-fbef26827881",
+			"type": "tablenarrow",
+			"content": {
+				"number": "5",
+				"title": "<a class=\"crossref\" id=\"64585\"></a>Akut njurskada – indelning och orsaker",
+				"id": "g4_36",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Indelning</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>Orsaker</strong></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Prerenal</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Hypoperfusion</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Renal</div>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Akut tubul&auml;r nekros</div>\r\n<div class=\"tableLine\">Prim&auml;ra och sekund&auml;ra nefriter</div>\r\n<div class=\"tableLine\">K&auml;rlsjukdomar</div>\r\n<div class=\"tableLine\">Infektioner</div>\r\n<div class=\"tableLine\">Tum&ouml;rsjukdomar</div>\r\n<div class=\"tableLine\">L&auml;kemedel/intoxikationer</div>\r\n<div class=\"tableLine\">Tubul&auml;r obstruktion</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Postrenal</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Avfl&ouml;deshinder</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b46e19f5-e33e-4da5-b3ed-a82afa278a11",
+			"name": "b46e19f5-e33e-4da5-b3ed-a82afa278a11",
+			"type": "text",
+			"content": "<h3 id=\"g4_37\"><a class=\"crossref\" id=\"37543\"></a>Kronisk <a class=\"index\" id=\"1021714\" data-text=\"njursvikt:kronisk\"></a>njursvikt</h3>\n<p>Naturalf&ouml;rloppet vid m&aring;nga kroniska njursjukdomar &auml;r en progredierande njurskada som i slutstadiet leder till terminal njursvikt. De vanligaste orsakerna till terminal njursvikt &auml;r diabetesnefropati, kronisk glomerulonefrit, nefroskleros och polycystisk njursjukdom. Vid sen uppt&auml;ckt av njursvikt d&auml;r ultraljud visar sm&aring; njurar med parenkymreduktion &auml;r det s&auml;llan m&ouml;jligt att fastst&auml;lla diagnos. I god tid innan njursvikten progredierat till terminal njursvikt b&ouml;r en bed&ouml;mning om patienten &auml;r aktuell f&ouml;r aktiv uremiv&aring;rd g&ouml;ras.</p>\n<p><br>Kontraindikationer mot att starta dialysbehandling kan vara en annan sjukdom i terminalt stadium (till exempel malign sjukdom, hj&auml;rtsvikt eller demenssjukdom i slutstadium).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fd17053e-eec5-4cc5-9d2b-7520e0cea15b",
+			"name": "fd17053e-eec5-4cc5-9d2b-7520e0cea15b",
+			"type": "text",
+			"content": "<h2 id=\"g4_38\">Utredning av njursjukdom</h2>\n<p>Utredningen av njursjukdomar kan inledas i prim&auml;rv&aring;rden, men tidig kontakt och diskussion med nefrolog &auml;r ofta n&ouml;dv&auml;ndig. Det &auml;r av yttersta vikt att en nyuppt&auml;ckt njursjukdom utreds adekvat. I f&ouml;rsta hand ska postrenal obstruktion och prerenala orsaker, som dehydrering, uteslutas. Den kliniska bilden vid njursvikt &auml;r mycket varierande. En snabbt f&ouml;rl&ouml;pande glomerulonefrit med risk f&ouml;r terminal njursvikt kan s&aring;ledes ha ett smygande symtomfattigt f&ouml;rlopp, medan en akut m&aring;ttlig f&ouml;rs&auml;mring av en kronisk njursvikt kan ge dramatiska symtom.</p>\n<ul>\n<li><span class=\"tab\"></span>F&ouml;r akut njurskada talar akut insjuknande, normalt Hb, normalstora eller svullna njurar och oliguri/anuri.</li>\n<li><span class=\"tab\"></span>F&ouml;r kronisk njursjukdom talar smygande debut, anemi, normala urinm&auml;ngder och sm&aring; njurar (undantag amyloidos, diabetesnefropati, cystnjuresjukdom).</li>\n</ul>\n<p>Akut f&ouml;rs&auml;mring av kronisk njursvikt &auml;r vanligt och orsakas av till exempel hypovolemi/hypotension, avfl&ouml;deshinder, nefrotoxiska l&auml;kemedel (bland annat NSAID, ACE-h&auml;mmare, r&ouml;ntgenkontrastmedel) och aktivering av grundsjukdomen (glomerulonefrit, SLE, vaskulit). De flesta patienter med nyuppt&auml;ckt njursvikt m&aring;ste d&auml;rf&ouml;r handl&auml;ggas akut och njurmedicinenhet b&ouml;r kontaktas omg&aring;ende f&ouml;r omh&auml;ndertagande av patienten. Akut remittering &auml;r &auml;ven indicerad vid misstanke om prim&auml;r eller sekund&auml;r extrakapill&auml;r glomerulonefrit och vid malign hypertoni med njurp&aring;verkan. Patienter med nefrotiskt syndrom och massiva &ouml;dem beh&ouml;ver oftast l&auml;ggas in akut f&ouml;r urv&auml;tskning och utredning.</p>\n<p><br>Asymtomatisk njursjukdom uppt&auml;cks ofta vid h&auml;lsokontroll eller rutinm&auml;ssig kontroll av blodtryck, urinprov (till exempel urinsticka f&ouml;r att p&aring;visa albuminuri och hematuri) eller kreatininv&auml;rde. Om en kontroll visar att de patologiska fynden kvarst&aring;r vid ny provtagning, kan en initial utredning enligt Tabell 6 p&aring;b&ouml;rjas, s&aring;vida inte akut remittering enligt ovan &auml;r p&aring;kallad.</p>\n<p><br>Vid makroskopisk hematuri b&ouml;r oftast den urologiska utredningen (urincytologi, cystoskopi, datortomografi) g&ouml;ras innan kontakt med nefrolog tas.</p>\n<p><br>Vid fynd av isolerad mikroskopisk hematuri, det vill s&auml;ga ingen samtidig proteinuri eller n&aring;got patologiskt sedimentfynd, anses inte urologisk utredning beh&ouml;vas, se kapitlet <a href=\"{pre}/kapitel/nefrologi-urologi/sten-_och_tumorsjukdomar_i_urinvagarna.html#g1_24\">Sten- och tum&ouml;rsjukdomar i urinv&auml;garna, avsnittet Blod i urinen, hematuri</a>. Man m&aring;ste dock kontrollera att inte andra tecken p&aring; njursjukdom f&ouml;religger (kreatininstegring, f&ouml;rh&ouml;jda inflammationsmark&ouml;rer, hypertoni). En stor andel av barn och unga vuxna med persisterande mikroskopisk hematuri har en glomerul&auml;r sjukdom (oftast IgA-nefropati eller &rdquo;thin membrane disease&rdquo;). Populationsstudier visar att risken f&ouml;r njurfunktionsp&aring;verkan &auml;r &ouml;kad och patienterna b&ouml;r kontrolleras (urinsticka, P/S-kreatinin och blodtryck) regelbundet med glesa intervall (vartannat till vart tredje &aring;r) (4). Barn med hematuri b&ouml;r remitteras till barnnefrolog.</p>\n<p><br>&Ouml;verg&aring;ende proteinuri vid till exempel feber eller efter kraftig fysisk anstr&auml;ngning &auml;r relativt vanligt, men b&ouml;r f&ouml;ljas upp tills patienten l&auml;mnat ett par negativa kontrollprover. Ortostatisk proteinuri, som f&ouml;rekommer hos ungdomar, utesluts enklast med ett stickprov p&aring; morgonurinen. Albumin/kreatininkvoten ska d&aring; vara &lt;&nbsp;5&nbsp;mg/mmol. Patienter med persisterande mikroalbuminuri (30&ndash;300&nbsp;mg/dygn eller albumin/kreatininkvot 5&ndash;30&nbsp;mg/mmol) b&ouml;r ha regelbunden uppf&ouml;ljning, hos unga f&ouml;r att utesluta progress och att inte andra tecken p&aring; njursjukdom tillkommer. Hos fr&auml;mst diabetes- och hypertonipatienter, men &auml;ven generellt hos &auml;ldre, &auml;r mikroalbuminuri en riskfaktor f&ouml;r njursjukdom och kardiovaskul&auml;r sjukdom. Persisterande proteinuri (urinalbumin &gt;&nbsp;300&nbsp;mg/dygn eller albumin/kreatininkvot &gt;&nbsp;30&nbsp;mg/mmol) med, eller utan, hematuri ska som regel utredas f&ouml;r att klarl&auml;gga genesen. Fr&auml;mst hos barn och unga vuxna &auml;r njurbiopsi indicerad f&ouml;r diagnos och prognos.</p>\n<p><br>Den kliniska bilden &auml;r avg&ouml;rande f&ouml;r vilka kompletterande utredningar som &auml;r indicerade (se Tabell 7). Genesen till njursvikten &auml;r m&aring;nga g&aring;nger uppenbar, till exempel vid dehydrering eller postrenal obstruktion, vilket medf&ouml;r att ytterligare utredning inte &auml;r indicerad. Vilka fall som ska remitteras till njurmedicinare varierar beroende p&aring; de lokala resurserna. Geriatriska patienter med mild, l&aring;ngsamt progredierande kronisk njursvikt (GFR &gt;&nbsp;25&nbsp;ml/minut) kan oftast sk&ouml;tas i prim&auml;rv&aring;rden.</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "cf6193d7-8c89-45ad-ad56-ae854370a220",
+			"name": "cf6193d7-8c89-45ad-ad56-ae854370a220",
+			"type": "tablenarrow",
+			"content": {
+				"number": "6",
+				"title": "",
+				"id": "",
+				"text": "<table class=\"table table-bordered\">\r\n<tbody>\r\n<tr>\r\n<td colspan=\"3\"><strong>Anamnes</strong></td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"3\">\r\n<ul>\r\n<li class=\"tableLine\">Hereditet</li>\r\n<li class=\"tableLine\">Predisponerande sjukdomar</li>\r\n<li class=\"tableLine\">L&auml;kemedel</li>\r\n<li class=\"tableLine\">Gnagarkontakt</li>\r\n<li class=\"tableLine\">Svampintag</li>\r\n<li class=\"tableLine\">Missbruk</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"3\"><strong>Status</strong></td>\r\n</tr>\r\n<tr>\r\n<td>Hud</td>\r\n<td colspan=\"2\">\r\n<ul>\r\n<li class=\"tableLine\">Utslag</li>\r\n<li class=\"tableLine\">Turgor</li>\r\n<li class=\"tableLine\">&Ouml;dem</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>Cirkulation</td>\r\n<td colspan=\"2\">\r\n<ul>\r\n<li class=\"tableLine\">BT</li>\r\n<li class=\"tableLine\">Venfyllnad/-tryck</li>\r\n<li class=\"tableLine\">Hj&auml;rt-/lungstatus</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>Buk</td>\r\n<td colspan=\"2\">\r\n<ul>\r\n<li class=\"tableLine\">Njurloger</li>\r\n<li class=\"tableLine\">Bl&aring;sljud &ouml;ver njurart&auml;rer</li>\r\n<li class=\"tableLine\">Bl&aring;spalpation</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>PR</td>\r\n<td colspan=\"2\">Prostataunders&ouml;kning</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"3\"><strong>Labb</strong></td>\r\n</tr>\r\n<tr>\r\n<td>Blod/plasma</td>\r\n<td colspan=\"2\">\r\n<ul>\r\n<li class=\"tableLine\">Hb</li>\r\n<li class=\"tableLine\">LPK</li>\r\n<li class=\"tableLine\">TPK</li>\r\n<li class=\"tableLine\">CRP</li>\r\n<li class=\"tableLine\">Glukos</li>\r\n<li class=\"tableLine\">Urat</li>\r\n<li class=\"tableLine\">Na</li>\r\n<li class=\"tableLine\">K</li>\r\n<li class=\"tableLine\">Kreatinin</li>\r\n<li class=\"tableLine\">Urea</li>\r\n<li class=\"tableLine\">Ca</li>\r\n<li class=\"tableLine\">Fosfat</li>\r\n<li class=\"tableLine\">Albumin</li>\r\n<li class=\"tableLine\">Koldioxid/standardbikarbonat</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>Urin</td>\r\n<td colspan=\"2\">\r\n<ul>\r\n<li class=\"tableLine\">Urinstatus</li>\r\n<li class=\"tableLine\">Sediment</li>\r\n<li class=\"tableLine\">Kvoten mellan albumin och kreatinin i urin</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>Odlingar</td>\r\n<td colspan=\"2\">Urin</td>\r\n</tr>\r\n<tr>\r\n<td>&nbsp;Ultraljud urinv&auml;gar</td>\r\n<td colspan=\"2\">\r\n<div class=\"tableLine\">Fr&aring;gest&auml;llning: njurstorlek &ndash; parenkymreduktion, avfl&ouml;deshinder, cirkulation</div>\r\n<div class=\"tableLine\">i njurart&auml;r/-ven, urinretention i bl&aring;san</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "739d85b0-3b70-4f9f-8194-2a292b21dd6a",
+			"name": "739d85b0-3b70-4f9f-8194-2a292b21dd6a",
+			"type": "tablewide",
+			"content": {
+				"number": "7",
+				"title": "<a class=\"crossref\" id=\"27540\"></a>Exempel på undersökningar vid nyupptäckt njursjukdom",
+				"id": "g4_40",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td colspan=\"2\">\r\n<div class=\"tableLine\"><strong>Unders&ouml;kningar</strong></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td rowspan=\"3\">\r\n<div class=\"tableLine\"><strong>Blod/</strong></div>\r\n<div class=\"tableLine\"><strong>plasma</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span>S-elfores <span class=\"tab\"></span><span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">M-komponent, Ig-niv&aring;er, komplementniv&aring;er</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Serologi</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">ANA, <a class=\"index\" id=\"1033801\" data-text=\"ANCA\"></a>ANCA (anti-MPO/-PR3), antikropp mot glomerul&auml;rt basalmembran,</div>\r\n<div class=\"tableLine\">antikropp mot fosfolipas A2-receptor, <span class=\"tab\"></span><span class=\"tab\"></span><span class=\"tab\"></span>hepatit B, hepatit C, hiv, Puumalavirus</div>\r\n<div class=\"tableLine\">&ndash; antikroppsbest&auml;mning, stafylokock-, streptokockantikroppar</div>\r\n<div class=\"tableLine\"><span class=\"tab\"></span><span class=\"tab\"></span><span class=\"tab\"></span>Kryoglobuliner</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span>Bl&ouml;dning/hemolys<span class=\"tab\"></span><span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">INR, APTT, bilirubin, LD, haptoglobin</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Urin</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span><span class=\"tab\"></span><span class=\"tab\"></span><span class=\"tab\"></span><span class=\"tab\"></span>Kvantitativt sediment, U-elfores (glomerul&auml;r/tubul&auml;r proteinuri, l&auml;tta kedjor)</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>R&ouml;ntgen</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span><span class=\"tab\"></span><span class=\"tab\"></span><span class=\"tab\"></span><span class=\"tab\"></span>Hj&auml;rt-lungr&ouml;ntgen, datortomografi, magnetisk resonanstomografi, njur-</div>\r\n<div class=\"tableLine\">skintigrafi med renogram, renal angiografi</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>&Ouml;vrigt</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span>Iohexolclearance, CrEDTA-clearence</div>\r\n<div class=\"tableLine\">Njurbiopsi</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1e945393-0a16-4c63-8f19-3ba703c6895b",
+			"name": "1e945393-0a16-4c63-8f19-3ba703c6895b",
+			"type": "text",
+			"content": "<p></p>\n<h2 id=\"g4_41\"><a class=\"crossref\" id=\"14494\"></a>Behandling av njursjukdomar</h2>\n<h3 id=\"g4_42\"><a class=\"index\" id=\"1021842\" data-text=\"glomerulonefrit\"></a><a class=\"crossref\" id=\"96794\"></a>Glomerulonefriter</h3>\n<p>Immunsuppressiv behandling &auml;r framf&ouml;r allt av stort v&auml;rde vid de extrakapill&auml;ra glomerulonefritformerna. Pulsdos cyklofosfamid 0,5&ndash;1,0&nbsp;g/m<sup>2</sup> kroppsyta initialt varannan till var 4:e vecka och prednisolon 1&nbsp;mg/kg&nbsp;kroppsvikt/dag &auml;r en vanlig f&ouml;rstahandskombination vid prim&auml;r och sekund&auml;r (vaskulit, SLE, Goodpastures syndrom) snabbt f&ouml;rl&ouml;pande glomerulonefrit. Om patienten har vaskulitsjukdom med uttalad njurfunktionsneds&auml;ttning, (kreatininv&auml;rden &ouml;ver cirka 500&nbsp;mikromol/l) eller antibasalmembranantikroppar ges &auml;ven plasmaferesbehandling. &rdquo;Minimal change&rdquo; nefropati behandlas vid skov med kortikosteroider, vanligen prednisolon 1&nbsp;mg/kg&nbsp;kroppsvikt/dag i avtrappande dos i minst 8&nbsp;veckor. Vid andra glomerulonefriter &auml;r immunsuppressiv behandling avh&auml;ngig den kliniska och morfologiska bilden. Vid all immunsuppressiv behandling av glomerulonefriter &auml;r avv&auml;gningen sv&aring;r mellan eventuella positiva effekter p&aring; njurfunktionen och de v&auml;lk&auml;nda negativa l&aring;ngtidseffekterna.</p>\n<p><br>F&ouml;rutom den immunsuppressiva behandlingen efterstr&auml;vas v&auml;tskebalans och optimalt blodtryck (&lt;&nbsp;130/80&nbsp;mmHg). Vid hypertoni och njursjukdom och samtidig v&auml;tskeretention anv&auml;nds i f&ouml;rsta hand loopdiuretika. Patienterna b&ouml;r &auml;ven instrueras om en m&aring;ttlig begr&auml;nsning av saltintaget. Angiotensin converting-enzyme (ACE)-h&auml;mmare och angiotensin II (AII)-antagonister (ARB) har, f&ouml;rutom den antihypertensiva effekten, &auml;ven en renoprotektiv antiproteinurisk effekt och &auml;r f&ouml;rstahandsval vid de flesta njursjukdomar (5,6).</p>\n<p><br>Vid icke-diabetisk njursjukdom &auml;r den renoprotektiva effekten b&auml;st dokumenterad f&ouml;r ACE-h&auml;mmare (6). F&ouml;rutom renoprotektion b&ouml;r ofta kardioprotektiva &aring;tg&auml;rder, som statinbehandling &ouml;verv&auml;gas, mikroalbuminuri och f&ouml;rh&ouml;jt kreatininv&auml;rde &auml;r starkt associerade till &ouml;kad kardiovaskul&auml;r risk. Vid nefrotiskt syndrom och uttalad hypoalbuminemi b&ouml;r profylaktisk behandling mot tromboemboliska komplikationer ges.</p>\n<p><br>Uttalad hyperlipidemi &auml;r ett delfenomen av det nefrotiska syndromet och behandlas i f&ouml;rsta hand med statiner. Vid inledning av statinbehandling rekommenderas en l&aring;g initialdos d&aring; det vid njursjukdom f&ouml;religger en n&aring;got &ouml;kad risk f&ouml;r statinutl&ouml;st myopati. Se &auml;ven kapitlet <a href=\"{pre}/kapitel/hjarta-karl/blodfettsrubbningar.html#e4_56\">Blodfettsrubbningar, avsnittet Statiner</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a64ef344-6ca6-4461-badb-5460ae622783",
+			"name": "a64ef344-6ca6-4461-badb-5460ae622783",
+			"type": "text",
+			"content": "<h3 id=\"g4_43\"><a class=\"index\" id=\"1045318\" data-text=\"diabetesnefropati;diabetes:nefropati\"></a>Diabetesnefropati</h3>\n<p>Renoprotektion vid typ 1- och 2-diabetes mellitus har r&ouml;nt ett &ouml;kande intresse sedan de f&ouml;rsta studierna p&aring; 70-talet visade att antihypertensiv behandling har stor betydelse f&ouml;r att f&ouml;rdr&ouml;ja progression av njursvikt vid typ 1-diabetes.</p>\n<p><br>Flera stora studier har visat att ACE-h&auml;mmare och ARB intar en s&auml;rst&auml;llning vad g&auml;ller den renoprotektiva effekten, som vid typ 1-diabetes &auml;r b&auml;st dokumenterad f&ouml;r ACE-h&auml;mmare och vid typ 2-diabetes f&ouml;r ARB (5). Tillg&auml;ngliga data talar f&ouml;r att skyddseffekten &auml;r likv&auml;rdig mellan ACE-h&auml;mmare och ARB vid b&aring;da diabetestyperna, men det &auml;r f&aring; studier d&auml;r direkta j&auml;mf&ouml;relser mellan dessa preparatgrupper har gjorts.</p>\n<p><br>Redan vid mikroalbuminuri b&ouml;r behandling med ACE-h&auml;mmare/ARB inledas. Oftast beh&ouml;vs dock kombinationsbehandling med flera antihypertensiva l&auml;kemedel f&ouml;r att uppn&aring; m&aring;let f&ouml;r behandlingen, som &auml;r att uppn&aring; optimalt blodtryck (&lt;&nbsp;130/80&nbsp;mm&nbsp;Hg). M&aring;lv&auml;rdet f&ouml;r blodsockerkontroll varierar mellan HbA<sub>1c</sub>-v&auml;rden &le;&nbsp;53&ndash;69&nbsp;mmol/mol. H&auml;nsyn m&aring;ste tas till patientens motivation och egenv&aring;rdsf&ouml;rm&aring;ga, allm&auml;nna och kardiovaskul&auml;ra status, &ouml;vriga diabeteskomlikationer och risk f&ouml;r hypoglykemi med olika antidiabetika. Att uppn&aring; dessa m&aring;l kr&auml;ver stort engagemang fr&aring;n patient och behandlande v&aring;rdpersonal. V&auml;rdet av tidig statinbehandling av dyslipidemi vid diabetesnefropati &auml;r inte klarlagt, men m&aring;nga patienter har &auml;ven andra tecken p&aring; angiopati som styrker indikationen f&ouml;r denna behandling.</p>\n<p><br>Metforminbehandling har tidigare inte rekommenderats vid nedsatt njurfunktion (eGFR &lt;&nbsp;60 ml/minut per 1,73 m<sup>2</sup> kroppsyta), pga risken f&ouml;r laktatacidos. Enligt nya riktlinjer kan metformin anv&auml;ndas vid l&auml;gre njurfunktion om adekvat dosanpassning g&ouml;rs (7). Av &ouml;vriga perorala antidiabetika &auml;r&nbsp;sulfonylureapreparat, med undantag av glipizid, kontraindicerade vid avancerad njursvikt, framf&ouml;r allt pga &ouml;kad risk f&ouml;r hypoglykemi. Flera av de nyligen introducerade antidiabetika s&aring;som DPP-4-inhibitorer kan anv&auml;ndas i reducerad dos vid l&aring;g eGFR, men de &auml;r &auml;nnu andrahandspreparat efter metformin.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fce73f47-0aae-41cb-b3e0-54010e2b5205",
+			"name": "fce73f47-0aae-41cb-b3e0-54010e2b5205",
+			"type": "text",
+			"content": "<h3 id=\"g4_44\">Symtomgivande <span style=\"color: #ff0000;\">kronisk</span> njursvikt</h3>\n<p>Omh&auml;ndertagandet av patienter med symtomgivande, kronisk njursvikt (CKD-stadium 4&ndash;5) &auml;r likartat, &auml;ven om den kliniska bilden vid det uremiska syndromet varierar mycket (se Faktaruta 2 ). Behandlingen b&ouml;r inriktas p&aring; att bevara livsuppeh&aring;llande njurfunktion s&aring; l&auml;nge som m&ouml;jligt och att behandla de uremiska manifestationerna (se Terapirekommendationerna).</p>\n<p><br>Vid kronisk njursvikt f&ouml;religger dessutom en uttalad risk f&ouml;r kardiovaskul&auml;ra komplikationer och en markant &ouml;verd&ouml;dlighet i hj&auml;rtsjukdomar. Principen f&ouml;r behandling av kardiovaskul&auml;r sjukdom vid njursvikt skiljer sig inte fr&aring;n den g&auml;ngse vid normal njurfunktion, f&ouml;rutom att l&auml;kemedelsbehandlingen ska anpassas efter njurfunktion och eventuell dialysbehandling.</p>\n<h4 id=\"g4_46\">V&auml;tskebalans och hypertoni</h4>\n<p>Vid avancerad njursvikt beh&ouml;ver blodtrycks- och diuretikabehandlingen modifieras, &auml;ven om m&aring;lblodtrycket &auml;r of&ouml;r&auml;ndrat &lt;&nbsp;130/80&nbsp;mm&nbsp;Hg. Loopdiuretika rekommenderas i f&ouml;rsta hand vid GFR&nbsp;&lt;&nbsp;30&nbsp;ml/minut och h&ouml;ga doser furosemid, upp till 1&nbsp;000&nbsp;mg/dag, kan anv&auml;ndas. Vid uttalad diuretikaresistens kan metolazon kombineras med h&ouml;ga doser furosemid. ACE-h&auml;mmare och ARB m&aring;ste anv&auml;ndas med f&ouml;rsiktighet, se Figur 1, och ofta f&aring;r doserna av dessa preparat s&auml;nkas, eftersom de s&auml;nker filtrationstrycket i glomeruli mer &auml;n andra antihypertensiva. Patienter med njursvikt b&ouml;r instrueras att vid dehydreringsepisoder (fr&auml;mst akuta gastroenteriter med kr&auml;kningar) tillf&auml;lligt g&ouml;ra uppeh&aring;ll med ACE-h&auml;mmare och ARB.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0aa3745b-8a69-4b35-a61d-2d21552caaec",
+			"name": "0aa3745b-8a69-4b35-a61d-2d21552caaec",
+			"type": "therapy",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"38165\"></a>Behandling vid symtomgivande kronisk njursvikt (CKD-stadium 4-5).",
+				"id": "g4_45",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Rubbning</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>&Aring;tg&auml;rd</strong></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">V&auml;tskebalans<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Optimering av saltintaget (2&ndash;5 g/dag), diuretikabehandling (furosemid 80&ndash;1&nbsp;000 mg/dag)</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Hypertoni</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">V&auml;tskebalanskontroll, ACE-h&auml;mmare, ARB, betablockerare, kalciumantagonister</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Hyperkalemi</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Minskat intag av kaliumrika f&ouml;do&auml;mnen, eventuellt jonbytare peroralt (<a class=\"index\" id=\"1042264\" data-text=\"natriumpolystyrensulfonat\"></a>natriumpolystyren-</div>\r\n<div class=\"tableLine\">sulfonat)</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Metabolisk acidos</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Natriumbikarbonat 2&ndash;8 g/dag</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Hyperfosfatemi</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Minskat intag av fosfat med kosten (mj&ouml;lk, ost, livsmedel med tillsatt fosfat), fosfatbindare</div>\r\n<div class=\"tableLine\">(sevelamer, kalciumkarbonat 1 g/dag, lantan, antacida)</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><a class=\"index\" id=\"1042280\" data-text=\"hypokalcemi:njursjukdomar\"></a>Hypokalcemi</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Kalciumsalter, D-vitamin (initialt <a class=\"index\" id=\"1042338\" data-text=\"vitamin D3:njursjukdomar\"></a>vitamin D<sub></sub>3, senare <a class=\"index\" id=\"1042283\" data-text=\"kalcitriol:njursjukdomar\"></a>kalcitriol alternativt <a class=\"index\" id=\"1042284\" data-text=\"alfakalcidol:njursjukdomar\"></a>alfakalcidol)</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Uremisymtom</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Proteinreducerad kost (protein 0,6 g/kg kroppsvikt/dag, energi 35&ndash;40 kcal/kg kroppsvikt/dag,</div>\r\n<div class=\"tableLine\"><a class=\"index\" id=\"1042290\" data-text=\"Aminess N\"></a>Aminess N, 1 tablett/10 kg kroppsvikt/dag)</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Anemi</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Erytropoesstimulerande l&auml;kemedel, j&auml;rnbehandling</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">L&auml;kemedels-</div>\r\n<div class=\"tableLine\">behandling</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Undvikande av nefrotoxiska l&auml;kemedel, dosering av l&auml;kemedel med h&auml;nsyn till njur-</div>\r\n<div class=\"tableLine\">funktionen, beakta interaktioner</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4ef14a84-3711-46e1-bf34-795ef93c596f",
+			"name": "4ef14a84-3711-46e1-bf34-795ef93c596f",
+			"type": "figure",
+			"content": {
+				"number": "1",
+				"maxwidth": "",
+				"image": "/images/g4_nef_njursjukdomar_2013fm10_images/figur1.png",
+				"title": "",
+				"text": "<a class=\"crossref\" id=\"16653\"></a>Behandlingsschema vid insättning av ACE-hämmare/AII-antagonister (ARB) hos patienter med nedsatt njurfunktion (GFR 20–60 ml/minut) ",
+				"alt": "",
+				"id": "g4_47"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ecf00507-af77-4ff1-bbd7-4b6345d09bd8",
+			"name": "ecf00507-af77-4ff1-bbd7-4b6345d09bd8",
+			"type": "text",
+			"content": "<h4 id=\"g4_48\"><a class=\"index\" id=\"1021871\" data-text=\"hyperkalemi\"></a><a class=\"crossref\" id=\"92182\"></a>Hyperkalemi</h4>\n<p>De viktigaste preventiva &aring;tg&auml;rderna mot hyperkalemi &auml;r dietr&aring;dgivning om kaliumrestriktion (40&ndash;50&nbsp;mmol/dag), korrigering av metabol acidos och eventuellt regelbundet intag av natriumpolystyrensulfonat 15&nbsp;g/dag.</p>\n<p><br>F&ouml;rsiktighet med l&auml;kemedel som kan ge hyperkalemi &auml;r av st&ouml;rsta vikt. Kaliumsparande diuretika ska undvikas, men &auml;ven risken f&ouml;r hyperkalemi vid behandling med ACE-h&auml;mmare, ARB och icke-selektiva betablockerare m&aring;ste beaktas. &Aring;tg&auml;rder vid hyperkalemi, se Terapirekommendationerna.</p>\n<div class=\"clearfix\">\n<h4 id=\"g4_50\">Metabolisk acidos</h4>\n<p>M&aring;ttlig acidos (standardbikarbonat/totalkolsyra 16&ndash;22&nbsp;mmol/l) behandlas med natriumbikarbonat 2&ndash;8&nbsp;g peroralt/dag. Vid uttalad grav acidos ges infusion med natriumbikarbonatl&ouml;sning, 50&nbsp;mg/ml, 200&ndash;400&nbsp;ml intraven&ouml;st under 1&ndash;3&nbsp;timmar med &aring;tf&ouml;ljande kontroll av standardbikarbonat/koldioxid och kalium.</p>\n<h4 id=\"g4_51\">Kalk-fosfatbalans</h4>\n<p>Redan vid lindrig njursvikt finns en tendens till fosfatretention, D-vitaminbrist och nedsatt kalciumabsorption. Om inte f&ouml;rebyggande behandling ges leder detta till en kompensatoriskt &ouml;kad sekretion av bisk&ouml;ldk&ouml;rtelhormon (PTH) och senare renal osteodystrofi. Hyperfosfatemi, hyperkalcemi och h&ouml;g kalk-fosfatprodukt &ouml;kar risken f&ouml;r k&auml;rlf&ouml;rkalkningar hos patienter med kronisk njursvikt. Behandling med kalciumsalter och D-vitamin ges initialt i sm&aring; doser f&ouml;r att h&aring;lla kalcium-, fosfat- och PTH-v&auml;rdena normala. &Ouml;verbehandling med kalciumsalter och D-<span>vitamin k</span>an leda till s&aring; kallad adynamisk bensjukdom med l&aring;g eller obefintlig benoms&auml;ttning som f&ouml;ljd. Man b&ouml;r d&auml;rf&ouml;r h&aring;lla PTH n&aring;got &ouml;ver normalv&auml;rdet vid avancerad njursvikt.</p>\n<br>Kalciumsalter har, om de intas till m&aring;ltid, &auml;ven en fosfatbindande effekt som utnyttjas vid behandling av hyperfosfatemi. P&aring; grund av &ouml;kad risk f&ouml;r k&auml;rlf&ouml;rkalkningar rekommenderas att undvika kalciumkarbonatdoser &ouml;ver 1 g/dag. Vid uttalad hyperfosfatemi eller hyperkalcemi kan aluminiumhaltiga antacida anv&auml;ndas som fosfatbindare under en kortare period. Nya aluminiumfria fosfatbindare &auml;r sevelamer och lantan. Behandlingskostnaden &auml;r h&ouml;g med dessa l&auml;kemedel och de b&ouml;r, tillsammans med cinakalcet, betraktas som specialistpreparat. Cinakalcet &auml;r ett kalcimimetikum som vid behandling av sekund&auml;r hyperparatyreoidism direkt s&auml;nker PTH-niv&aring;n genom att &ouml;ka de kalciumavk&auml;nnande receptorernas k&auml;nslighet f&ouml;r extracellul&auml;rt kalcium.\n<h4 id=\"g4_52\">Proteinreducerad kost</h4>\n<p>Vid GFR &lt;&nbsp;25&nbsp;ml/minut b&ouml;r behandling med proteinreducerad kost &ouml;verv&auml;gas. Initialt brukar proteinintaget minskas till 0,6&nbsp;g/kg kroppsvikt/dygn (cirka 40&nbsp;g protein/dygn). F&ouml;rutsatt att omkring tv&aring; tredjedelar av proteinet &auml;r av h&ouml;gt biologiskt v&auml;rde (&auml;gg, k&ouml;tt, fisk) kan kv&auml;vebalansen vanligtvis uppr&auml;tth&aring;llas vid detta proteinintag. F&ouml;r att kunna minska kravet p&aring; ett h&ouml;gt inneh&aring;ll av h&ouml;gv&auml;rdigt protein b&ouml;r dieten supplementeras med essentiella <span>aminosyror</span> (Aminess N; 1 tablett/10&nbsp;kg kroppsvikt eller 1&nbsp;dosgranulat/50&nbsp;kg kroppsvikt). Samtidigt rekommenderas ett tillskott av B- och C-vitaminer. Patienten b&ouml;r informeras om att undvika n&auml;ringspreparat som inneh&aring;ller A-vitamin och mineraler p&aring; grund av ackumulationsrisk.</p>\n<br>Behandling med proteinreducerad kost kan vara ett alternativ till dialysbehandling, endast om ett gott n&auml;ringstillst&aring;nd kan uppr&auml;tth&aring;llas. Patientens kostintag och nutritionsstatus m&aring;ste d&auml;rf&ouml;r f&ouml;ljas noga av behandlande l&auml;kare och dietist. Tyv&auml;rr finns ingen enskild parameter som kan fungera som indikator p&aring; n&auml;ringstillst&aring;ndet. Genom regelbunden fysikalisk unders&ouml;kning med bed&ouml;mning av patientens muskelmassa samt uppf&ouml;ljning av kroppsvikt och S-albumin kan tecken p&aring; f&ouml;rs&auml;mrat nutritionstillst&aring;nd oftast uppt&auml;ckas p&aring; ett tidigt stadium. Om s&aring;dana tecken iakttas m&aring;ste f&ouml;ruts&auml;ttningarna f&ouml;r fortsatt kostbehandling noggrant &ouml;verv&auml;gas.\n<h4 id=\"g4_53\">Anemi</h4>\n<p>J&auml;rntillskott ges f&ouml;r att f&ouml;rhindra j&auml;rnbrist och uppr&auml;tth&aring;lla adekvata j&auml;rnf&ouml;rr&aring;d hos patienter med kronisk njursvikt. Vanligen ges j&auml;rn intraven&ouml;st vilket oftast leder till en f&ouml;rb&auml;ttrad effekt av erytropoesstimulerande behandling. I &ouml;ppenv&aring;rd &auml;r en vanlig dosering 100&ndash;200&nbsp;mg j&auml;rnsackaros med 2&ndash;4&nbsp;veckors intervall; alternativt ges j&auml;rn(III)isomaltosid 1&nbsp;000 eller dextriferron, som &auml;ven kan administreras som infusion med en h&ouml;g dos (500&ndash;1&nbsp;000&nbsp;mg). Se &auml;ven kapitlet <a href=\"{pre}/kapitel/blod/anemier.html#d1_29\">Anemier, avsnittet Parenteral j&auml;rnbehandling</a>. Till hemodialyspatienter kan mindre j&auml;rndoser tillf&ouml;ras regelbundet vid dialysbehandlingarna.</p>\n<br>Erytropoesstimulerande l&auml;kemedel (ESL) ges till patienter med renal anemi d&auml;r minskade anemisymtom, f&ouml;rb&auml;ttring av arbetsf&ouml;rm&aring;ga och/eller livskvalitet kan f&ouml;rv&auml;ntas (8). Fem originalpreparat &auml;r godk&auml;nda &ndash; epoetin alfa, epoetin beta, epoetin theta, darbepoetin alfa och metoxi-polyetylenglykol-epoetin beta. Dessutom finns biosimil&auml;rt epoetin zeta som &auml;r godk&auml;nt f&ouml;r behandling av renal anemi.<br><br>Vanliga epoetindoser &auml;r 3&nbsp;000&ndash;6&nbsp;000 E/vecka (darbepoetin 15&ndash;30 mikrog/vecka, metoxi-polyetylenglykol-epoetin beta 50&nbsp;mikrog/2&nbsp;veckor) vid initial behandling av renal anemi. Injektionerna ges 1&ndash;3&nbsp;g&aring;nger varje till varannan vecka, f&ouml;retr&auml;desvis subkutant. Intraven&ouml;s behandling med epoetin medf&ouml;r i medeltal 20&nbsp;% h&ouml;gre dosbehov &ndash; vid intraven&ouml;s behandling med &ouml;vriga mer l&aring;ngverkande ESL beh&ouml;ver dosen inte &ouml;kas. M&aring;let f&ouml;r behandlingen &auml;r oftast stabilt hemoglobin i niv&aring;n 100&ndash;120&nbsp;g/l. Vid inledning av behandling b&ouml;r hemoglobinv&auml;rdena kontrolleras minst 1&nbsp;g&aring;ng/m&aring;nad och noggrann blodtryckskontroll &auml;r speciellt viktig de f&ouml;rsta m&aring;naderna.</div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5e1a2d3b-3cad-4796-b4b1-91260039f499",
+			"name": "5e1a2d3b-3cad-4796-b4b1-91260039f499",
+			"type": "therapy",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"crossref\" id=\"82564\"></a>Akut behandling av svår hyperkalemi (&gt;&nbsp;7 mmol/L)",
+				"id": "g4_49",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Verknings-</strong></div>\r\n<div class=\"tableLine\"><strong>mekanism</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>Effekt</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>&Aring;tg&auml;rd</strong></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Antagonism</div>\r\n<div class=\"tableLine\">av membran-</div>\r\n<div class=\"tableLine\">effekter<span class=\"tab\"></span><span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Effekt inom</div>\r\n<div class=\"tableLine\">n&aring;gra minuter<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><a class=\"index\" id=\"1032614\" data-text=\"kalciumglubionat:njursjukdomar\"></a>Kalciumglubionat (<a class=\"index\" id=\"1032615\" data-text=\"Calcium-Sandoz:hyperkalemi\"></a>Calcium-Sandoz), 10&ndash;20 ml intraven&ouml;st, ges om patienten</div>\r\n<div class=\"tableLine\">har EKG-f&ouml;r&auml;ndringar som vid hyperkalemi. Kan upprepas om EKG-f&ouml;r&auml;ndring-</div>\r\n<div class=\"tableLine\">ar kvarst&aring;r. F&ouml;rsiktighet vid samtidig digitalisbehandling, &ouml;kad arytmirisk vid</div>\r\n<div class=\"tableLine\">digitalisintoxikation.</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Redistri-</div>\r\n<div class=\"tableLine\">bution</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span>Effekt inom</div>\r\n<div class=\"tableLine\">15&ndash;30 minuter</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span><a class=\"index\" id=\"1029273\" data-text=\"glukos-insulin:hyperkalemi\"></a>Insulin samt glukos intraven&ouml;st, 10 E snabbinsulin/50 g glukos under 2&ndash;4</div>\r\n<div class=\"tableLine\">timmar.</div>\r\n<div class=\"tableLine\">F&ouml;lj blodsocker 1 g&aring;ng/timme.</div>\r\n<div class=\"tableLine\"><br />Salbutamol 10&ndash;15 mg i inhalator under 10&ndash;15 minuter. F&ouml;rsiktighet vid</div>\r\n<div class=\"tableLine\">arytmirisk.</div>\r\n<div class=\"tableLine\"><span class=\"tab\"><br /></span><span class=\"tab\"></span>Vid uttalad metabol acidos (standardbikarbonat/koldioxid &lt;&nbsp;15 mmol/l) har</div>\r\n<div class=\"tableLine\"><a class=\"index\" id=\"1029277\" data-text=\"natriumbikarbonat:njursjukdomar\"></a>natriumbikarbonat effekt p&aring; hyperkalemi. 200&ndash;500 ml natriumbikarbonat-</div>\r\n<div class=\"tableLine\">l&ouml;sning, 50 mg/ml, ges under 1&ndash;4 timmar. Kontroll av standardbikarbonat/</div>\r\n<div class=\"tableLine\">koldioxid efter 4&ndash;8 timmar.</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Bortf&ouml;r-</div>\r\n<div class=\"tableLine\">skaffande</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span>Effekt inom</div>\r\n<div class=\"tableLine\">60&ndash;120 minuter<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Kalcium- eller <a class=\"index\" id=\"1029284\" data-text=\"natriumpolystyrensulfonat\"></a>natriumpolystyrensulfonat (<a class=\"index\" id=\"1029285\" data-text=\"Resonium\"></a>Resonium) 15&ndash;45 g peroralt</div>\r\n<div class=\"tableLine\">eller som lavemang.</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Hemodialys-</div>\r\n<div class=\"tableLine\">behandling</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span>Effekt inom</div>\r\n<div class=\"tableLine\">n&aring;gra minuter</div>\r\n<div class=\"tableLine\">efter dialysstart<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Indicerat vid livshotande eller vid terapiresistent hyperkalemi.</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b07fecc8-0add-45ef-b615-4a23bb71b1e8",
+			"name": "b07fecc8-0add-45ef-b615-4a23bb71b1e8",
+			"type": "text",
+			"content": "<h3 id=\"g4_54\">L&auml;kemedelsorsakad njurfunktionsp&aring;verkan</h3>\n<p>Vanliga l&auml;kemedel som orsakar reversibel f&ouml;rs&auml;mring av njurfunktionen vid njursvikt &auml;r NSAID-preparat, ACE-h&auml;mmare och AII-antagonister samt r&ouml;ntgenkontrastmedel. Vid r&ouml;ntgenkontrastunders&ouml;kning av patienter med njursjukdom g&ouml;rs uppv&auml;tskning med infusion av <span style=\"color: #ff0000;\">Ringer-acetat, 1 ml/kg kroppsvikt och timme</span> i profylaktiskt syfte f&ouml;re och efter unders&ouml;kningen. F&ouml;rutom <span style=\"color: #ff0000;\">Ringer-acetat</span> har natriumbikarbonatinfusion och/eller till&auml;gg av acetylcystein, 600&nbsp;mg 2&nbsp;g&aring;nger/dag i 2&nbsp;dagar, med b&ouml;rjan dagen f&ouml;re unders&ouml;kningen, f&ouml;reslagits ha en viss skyddande effekt mot kontrastinducerad njurskada, men de protektiva effekterna av b&aring;da dessa l&auml;kemedel &auml;r omtvistade. Hemodialysbehandling direkt efter kontrastunders&ouml;kning har ingen skyddande effekt p&aring; njurfunktionen.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "23853792-e79c-4074-b571-983a36879778",
+			"name": "23853792-e79c-4074-b571-983a36879778",
+			"type": "text",
+			"content": "<h3 id=\"g4_55\"><a class=\"crossref\" id=\"27032\"></a>Njurfunktionsorsakad l&auml;kemedelsbiverkning</h3>\n<p>En rad l&auml;kemedel m&aring;ste dosanpassas vid akut och kronisk njurfunktionsneds&auml;ttning f&ouml;r att undvika ackumulation och biverkningar. Vid behandling med <a class=\"index\" id=\"1043376\" data-text=\"morfin:njursjukdomar\"></a>morfin och flera andra <a class=\"index\" id=\"1043377\" data-text=\"opioider:njursjukdomar\"></a>opioider ger ansamling av metaboliter vid njursvikt risk f&ouml;r medvetandep&aring;verkan och f&ouml;rsv&aring;rar en bra sm&auml;rtbehandling.</p>\n<p><br>Vid r&ouml;ntgenkontrastunders&ouml;kning av diabetespatienter som behandlas med metformin kan en eventuell akut njurfunktionsf&ouml;rs&auml;mring leda till ackumulation av l&auml;kemedlet och utveckling av livshotande laktatacidos. Inf&ouml;r r&ouml;ntgenkontrastunders&ouml;kning av dessa patienter ska P/S-kreatinin kontrolleras och metformin s&auml;ttas ut. Om m&ouml;jligt b&ouml;r detta ske 48&nbsp;timmar f&ouml;re unders&ouml;kningen om <span style=\"color: #ff0000;\">eGFR &auml;r &lt; 60 ml/min</span>. Metformin kan &aring;terins&auml;ttas 48&nbsp;timmar efter unders&ouml;kningen om njurfunktionen inte p&aring;verkats.</p>\n<p><br>Nefrogen systemisk fibros har observerats efter anv&auml;ndning av gadoliniumbaserade kontrastmedel vid magnetkameraunders&ouml;kningar hos patienter med njursvikt, fr&auml;mst dialyspatienter. Kliniska bilden karakteriseras av invalidiserande skleroserande hudf&ouml;r&auml;ndringar som kan ge kontrakturer, men &auml;ven andra organ kan drabbas. Gadolinumkontrastmedlen klassificeras i tre grupper efter risken f&ouml;r denna biverkning, d&auml;r de med h&ouml;g risk ska undvikas vid GFR under 30&nbsp;ml/min och de med m&aring;ttlig och l&aring;g risk kan anv&auml;ndas med f&ouml;rsiktighet vid l&auml;gre njurfunktion.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "db4fd434-dbf8-4e1a-acc1-9a4ed8e18a86",
+			"name": "db4fd434-dbf8-4e1a-acc1-9a4ed8e18a86",
+			"type": "text",
+			"content": "<h3 id=\"g4_56\">Aktiv <a class=\"index\" id=\"1021911\" data-text=\"uremiv&#xE5;rd\"></a>uremiv&aring;rd</h3>\n<p>Utredning och information kring dialys och njurtransplantation ska p&aring;b&ouml;rjas i god tid s&aring; att patienten &auml;r v&auml;l f&ouml;rberedd n&auml;r indikation f&ouml;r aktiv uremiv&aring;rd f&ouml;religger. Speciellt hos &auml;ldre med multipla komplicerande sjukdomar, &auml;r st&auml;llningstagandet om indikation f&ouml;r kronisk dialysbehandling f&ouml;religger ett grannlaga arbete f&ouml;r den erfarne njurmedicinaren. Flera unders&ouml;kningar har visat att risken f&ouml;r komplikationer av behandlingen &auml;r mycket stor och att effekt p&aring; &ouml;verlevnad, j&auml;mf&ouml;rt med att forts&auml;tta med konservativ behandling, &auml;r h&ouml;gst tveksam. Senast vid GFR 25&nbsp;ml/minut b&ouml;r en f&ouml;rsta bed&ouml;mning g&ouml;ras och information ges om vilka behandlingsalternativ som kan bli aktuella.</p>\n<h4 id=\"Njurtransplantation\">Njurtransplantation</h4>\n<p>Njurtransplantation &auml;r f&ouml;rstahandsbehandling f&ouml;r patienter utan komplicerande sjukdomar som malignitet och m&aring;ttlig/sv&aring;r hj&auml;rt-k&auml;rlsjukdom. Hos &auml;ldre patienter f&ouml;religger ofta kontraindikationer och riskerna med den immunh&auml;mmande behandlingen &auml;r betydligt h&ouml;gre. Cirka 400 njurtransplantationer utf&ouml;rs &aring;rligen vid fyra centra i Sverige. Vid drygt en tredjedel av transplantationerna anv&auml;nds en levande njurdonator.</p>\n<p><br>Flera alternativa immunsuppressiva protokoll anv&auml;nds idag. Basbehandling &auml;r oftast en kombination av en kalcineurinh&auml;mmare (takrolimus), mykofenolsyra (alternativt azatioprin) och kortikosteroider. Risken f&ouml;r sv&aring;ra avst&ouml;tningsreaktioner har avsev&auml;rt reducerats och resultaten har successivt f&ouml;rb&auml;ttrats de senaste &aring;ren. Koncentrationsbest&auml;mningar g&ouml;rs rutinm&auml;ssigt av ciklosporin A och takrolimus och de styr doseringen. Se vidare kapitlet Transplantationsimmunologi och organtransplantationer, <a href=\"{pre}/kapitel/allergiska-och-immunologiska-tillstand/transplantationsimmunologi-och-organtransplantationer.html#p1a_33\">avsnittet Behandlingsprinciper</a>.</p>\n<p><br>M&aring;nga l&auml;kemedel interagerar med de immunh&auml;mmande preparaten och doserna kan beh&ouml;va justeras vid samtidig behandling med interagerande l&auml;kemedel. Framf&ouml;r allt vid nyins&auml;ttning av l&auml;kemedel m&aring;ste detta beaktas och oftast b&ouml;r behandlande njurmedicinare eller transplantationskirurg kontaktas.</p>\n<h4 id=\"g4_58\">Dialysbehandling</h4>\n<p><a class=\"index\" id=\"1021925\" data-text=\"dialysbehandling\"></a>Dialysbehandling ges antingen som <a class=\"index\" id=\"1021926\" data-text=\"peritonealdialys;dialys:peritoneal\"></a>peritonealdialys eller <a class=\"index\" id=\"1021928\" data-text=\"hemodialys\"></a>hemodialys. M&aring;ls&auml;ttningen &auml;r att den v&auml;linformerade patienten tillsammans med det njurmedicinska teamet i god tid kan besluta om dialysform och p&aring;b&ouml;rja dialysbehandling i r&auml;tt tid.</p>\n<h4 id=\"g4_59\">Peritonealdialys</h4>\n<p>Vid peritonealdialys (PD) sk&ouml;ter patienten behandlingen sj&auml;lv i hemmet. Dialysen sker &ouml;ver bukhinnan n&auml;r dialysv&auml;tska tappas in i buken via en PD-kateter. Dialysen &auml;r kontinuerlig och patienten har, f&ouml;rutom vid byte av v&auml;tska, 1&ndash;2,5 liter v&auml;tska i buken hela tiden. V&auml;tskan kan antingen bytas manuellt 4&nbsp;g&aring;nger/dygn (CAPD), eller s&aring; sk&ouml;ter en dialysmaskin v&auml;tskebytena nattetid (APD).</p>\n<h4 id=\"g4_60\">Hemodialys <span style=\"color: #ff0000;\">och hemodiafiltratio</span>n</h4>\n<p>Vid hemodialys kr&auml;vs tillg&aring;ng till blodbanan, antingen via en operativt anlagd arterioven&ouml;s fistel p&aring; armen eller en tunnelerad central dialyskateter inlagd till vena cava superior via n&aring;gon av halsvenerna. Dialysbehandlingen tar normalt 4&ndash;6&nbsp;timmar 3&nbsp;g&aring;nger i veckan och sker oftast p&aring; en dialysavdelning, men patienten kan l&auml;ra sig att sk&ouml;ta hemodialysen i hemmet. Dialysen sker &ouml;ver ett dialysfilter som inneh&aring;ller ett semipermeabelt membran. Under dialysen dras patienten p&aring; &ouml;verskottsv&auml;tska genom ultrafiltration.</p>\n<p><span style=\"color: #ff0000;\"><br></span>Hemofiltration inneb&auml;r att rening av blodet sker genom filtrering av plasmavatten genom ett h&ouml;gpermeabelt membran. Samtidigt infunderas en motsvarande m&auml;ngd ers&auml;ttningsv&auml;tska till patienten.</p>\n<p><span style=\"color: #ff0000;\"><br></span>Idag kombineras vanligen hemodialys och hemofiltration, s&aring; kallad hemodiafiltration.</p>\n<h4 id=\"g4_61\"><a class=\"crossref\" id=\"64286\"></a>Symtomatisk behandling och palliativ v&aring;rd</h4>\n<p>S&ouml;mnsv&aring;righeter och restless legs &auml;r vanliga uremisymtom och dessa &auml;r ofta sv&aring;rbehandlade. Vid restless legs&nbsp;ska eventuell j&auml;rnbrist behandlas i f&ouml;rsta hand. Vid otillr&auml;cklig effekt ges dopaminagonister (ropinirol eller pramipexol).</p>\n<p><br>Kl&aring;da kan behandlas med mjukg&ouml;rande kr&auml;mer, antihistaminer och tillsats av olja vid bad. Neuropatisk sm&auml;rta f&ouml;rekommer fr&auml;mst hos dialyspatienter med diabetes mellitus. F&ouml;rstahandsmedel &auml;r sedan l&auml;nge amitriptylin, men p&aring; senare &aring;r har &auml;ven gabapentin tillkommit som f&ouml;rstahandsmedel (9). Se &auml;ven kapitlet <a href=\"{pre}/kapitel/smarta/smarta_och_smartbehandling.html#q1_64\">Sm&auml;rta och sm&auml;rtbehandling, avsnittet Neuropatisk sm&auml;rta</a>.</p>\n<p><br>Vid terminal njursvikt d&auml;r dialysbehandling inte &auml;r indicerad ges palliation genom att sk&ouml;ta den ovan beskrivna konservativa behandlingen s&aring; bra som m&ouml;jligt. V&auml;tsketillf&ouml;rseln m&aring;ste anpassas till diuresen. Terminalt ges vid behov sedering med opioider och bensodiazepiner. Se &auml;ven kapitlet <a href=\"{pre}/kapitel/smarta/palliativ_vard.html#q2_81\">Palliativ v&aring;rd, avsnittet Palliativ sedering</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e8dbb915-7c65-4a7a-b0fb-9a1ef5493996",
+			"name": "e8dbb915-7c65-4a7a-b0fb-9a1ef5493996",
+			"type": "references",
+			"content": "<h2 id=\"reference_1\" class=\"referenceHeader\">Referenser</h2>\n<ol class=\"references\"><li id=\"reference_1\">Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group. KDIGO 2012 clinical practice guideline for the evaluation and management of chronic kidney disease. Kidney Int Suppl, 3 (2013), pp. 1&ndash;150</li>\n<li id=\"reference_2\">Ryd&eacute;n, LC, Hertzberg&nbsp; D, Sartipy U, Holzmann MJ:&nbsp; Akut njurskada &auml;r ett vanligt och allvarligt tillst&aring;nd. L&auml;kartidningen. <a href=\"http://www.lakartidningen.se/Klinik-och-vetenskap/Klinisk-oversikt/2016/05/Akut-njurskada-ar-ett-vanligt-och-allvarligt-tillstand/\">2016;113:DXD3</a></li>\n<li id=\"reference_3\">Kidney Disease: Improving Global Outcomes (KDIGO) Acute Kidney Injury Work Group. KDIGO Clinical Practice Guideline for Acute Kidney Injury. Kidney Int Suppl, 2 (2012), pp. 1&ndash;138</li>\n<li id=\"reference_4\">Brown RS. Has the time come to include urine dipstick testing in screening asymptomatic young adults? <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/21846861\">JAMA. 2011;306:764&ndash;5.</a></li>\n<li id=\"reference_5\">Ruggenenti P, Cravedi P, Remuzzi G; Medscape. The RAAS in the pathogenesis and treatment of diabetic nephropathy. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/20440277\">Nat Rev Nephrol. 2010;6:319&ndash;30</a>.</li>\n<li id=\"reference_6\">Chiurchiu C, Remuzzi G, Ruggenenti P. Angiotensin-converting enzyme inhibition and renal protection in nondiabetic patients: the data of the meta-analyses. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/15938036\">J Am Soc Nephrol. 2005;Suppl 1:S58&ndash;63</a>.</li>\n<li id=\"reference_7\">Guideline development group. Clinical Practice Guideline on management of patients with diabetes and chronic kidney disease stage 3b or higher (eGFR &lt;45 mL/min). <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/25940656\">Nephrol Dial Transplant. 2015;30 Suppl 2:1-142</a>.</li>\n<li id=\"reference_8\">Locatelli F, B&aacute;r&aacute;ny P, Covic A, De Francisco A, Del Vecchio L, Goldsmith D, H&ouml;rl W, London G, Vanholder R, Van Biesen W; ERA-EDTA ERBP Advisory Board. Kidney Disease: Improving Global Outcomes guidelines on anaemia management in chronic kidney disease: a European Renal Best Practice position statement. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23585588\">Nephrol Dial Transplant. 2013 Jun;28(6):1346-59</a>.</li>\n<li id=\"reference_9\">Farmakologisk behandling av neuropatisk sm&auml;rta &ndash; Behandlingsrekommendation. Information fr&aring;n L&auml;kemedelsverket. 2007;18(6):9-57.</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "true"
+				}
+			}
+		},
+		{
+			"id": "66fb1e17-dda5-4ec7-a7bc-a7305123dd80",
+			"name": "66fb1e17-dda5-4ec7-a7bc-a7305123dd80",
+			"type": "references",
+			"content": "<h3 id=\"reference_1\">F&ouml;r vidare l&auml;sning</h3>\n<ol class=\"references\"><li id=\"reference_1\">Aurell M, Samuelsson O. Njurmedicin. 4:e upplagan. Liber AB: Stockholm; 2014.</li>\n<li id=\"reference_2\">Naomi Clyne, Bengt Rippe. Njursjukdom<strong>. </strong>Teori och klinik. Studentlitteratur; 2015</li>\n<li id=\"reference_3\">Medscape reference. Nephrology articles. <a href=\"http://emedicine.medscape.com/nephrology\">http://emedicine.medscape.com/nephrology</a></li>\n<li id=\"reference_4\">Nationella riktlinjer f&ouml;r diabetesv&aring;rden 2015. Socialstyrelsen. <a href=\"http://www.socialstyrelsen.se\">www.socialstyrelsen.se</a></li>\n<li id=\"reference_5\">Hansson S, Swerkersson S, &Aring;sling Monemi K, Herthelius M. Nefrotiskt syndrom &ndash; riktlinjer. Svensk barnnefrologisk f&ouml;rening. 2012-11-20. <a href=\"http://www.blf.net\">www.blf.net</a></li>\n<li id=\"reference_6\">Nilsson-Ehle P, Berggren S&ouml;derlund M, Theodorsson E, et al. red. Laurells Klinisk kemi i praktisk medicin. 9:e upplagan. Studentlitteratur; 2012.</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "true"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/nefrologi-urologi/njursjukdomar.json",
+	"modified": "2017-02-13 15:54",
+	"isPublished": true,
+	"indexed": "true"
+}
