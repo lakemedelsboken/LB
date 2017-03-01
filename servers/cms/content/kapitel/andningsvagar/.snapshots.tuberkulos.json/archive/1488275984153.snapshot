@@ -1,0 +1,519 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Tuberkulos | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-09 01:00",
+	"published": "2015-07-09 01:00",
+	"validUntil": "",
+	"createdBy": "Judith Bruchfeld",
+	"replacesUrl": "/m3_and_tuberkulos_2013fm10.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "203f3280-6cd1-4b3c-b721-6e2c464abcdb",
+			"name": "203f3280-6cd1-4b3c-b721-6e2c464abcdb",
+			"type": "author",
+			"content": {
+				"firstname": "Judith",
+				"surname": "Bruchfeld",
+				"description": "Infektionskliniken, Karolinska Universitetssjukhuset Solna",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9ace52c9-f79d-46b4-b994-9a24ad14f3eb",
+			"name": "9ace52c9-f79d-46b4-b994-9a24ad14f3eb",
+			"type": "text",
+			"content": "<h1 id=\"Tuberkulos\">Tuberkulos</h1>\n<h2 id=\"Inledning\">Inledning</h2>\n<p class=\"ingress\">Tuberkulos (tbc) &auml;r fortfarande en av de vanligaste infektionssjukdomarna i v&auml;rlden (Figur 1). I&nbsp;Sverige minskade antalet tbc-fall under flera decennier f&ouml;r att sedan i mitten av 1990-talet stabiliseras med runt 500&nbsp;nyinsjuknade/&aring;r. Sedan 2005 har antalet fall/&aring;r dock successivt &ouml;kat till 835 fall under 2015 (1). Cirka 90&nbsp;% av de insjuknade idag har migrerat till Sverige fr&aring;n l&auml;nder med h&ouml;g f&ouml;rekomst av tbc (&gt;&nbsp;100&nbsp;fall/100&nbsp;000 inv&aring;nare) och incidensen i denna grupp &auml;r j&auml;mf&ouml;rbar med incidensen i ursprungslandet (2). Fortfarande &auml;r dock incidensen generellt mycket l&aring;g i Sverige och uppgick 2015 till 8,5 fall/100&nbsp;000 inv&aring;nare. Flertalet insjuknade &auml;r mellan 15 och 44 &aring;r, med risk f&ouml;r smittspridning till familj, v&auml;nner och arbetskamrater vid f&ouml;rdr&ouml;jd diagnos. Smittspridning inom Sverige &auml;r f&ouml;r n&auml;rvarande mindre vanligt och estimerades till 11&nbsp;% 2015. Det &auml;r viktigt med kontinuerlig &ouml;vervakning av smittspridning vilket g&ouml;rs med molekyl&auml;r typning av samtliga tbc-stammar fr&aring;n tbc-patienter diagnosticerade i Sverige.</p>\n<p class=\"ingress\"><br>Samtidig hiv-infektion &ouml;kar risken att insjukna i tbc (3). Hiv angriper det cellbundna immunf&ouml;rsvaret som &auml;r n&ouml;dv&auml;ndigt f&ouml;r att bek&auml;mpa mykobakterier. &Auml;ven immunmodulerande l&auml;kemedel som&nbsp;<a href=\"http://www.lakemedelsboken.se/atc/R01AD05-R03BA-H02AB\">glukokortikoider</a>&nbsp;i h&ouml;g dos och TNF-alfah&auml;mmare som anv&auml;nds vid bland annat reumatoid artrit, inflammatoriska tarmsjukdomar och psoriasis &ouml;kar p&aring;tagligt risken att insjukna i tbc <span style=\"color: #ff0000;\">(4,5)</span>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b20a5f9d-abbe-4f13-97d0-08a036c46c7c",
+			"name": "b20a5f9d-abbe-4f13-97d0-08a036c46c7c",
+			"type": "figure",
+			"content": {
+				"number": "1",
+				"maxwidth": "",
+				"image": "/images/m3_and_tuberkulos_2013fm10_images/global_tbincidence_2014.png",
+				"title": "",
+				"text": "<p>Utbredning av tuberkulos i v&auml;rlden 2014. Ber&auml;knat antal nya fall per 100&nbsp;000 inv&aring;nare &auml;r &gt;&nbsp;500 f&ouml;r de m&ouml;rkaste gr&ouml;na omr&aring;dena, 125&ndash;499 f&ouml;r de ljusare gr&ouml;na omr&aring;dena och &lt;&nbsp;125 f&ouml;r de allra ljusaste omr&aring;dena.</p>\r\n<p></p>",
+				"alt": "",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "16ab6c62-910e-49a2-8c72-a48f1b6fe83f",
+			"name": "16ab6c62-910e-49a2-8c72-a48f1b6fe83f",
+			"type": "text",
+			"content": "<h2 id=\"Klinik\">Klinik</h2>\n<p>Tbc sprids luftburet. Det upphostade sekretet med bakterier sprids via luftburna droppar, med h&ouml;gre risk f&ouml;r smitta ju l&auml;ngre och t&auml;tare kontakten med den smittsamme personen varit (6,7). Hos majoriteten av de personer som smittats med tbc g&aring;r infektionen &ouml;ver i ett vilande skede, s&aring; kallad<span> </span>latent tbc. En person med latent tbc &auml;r att betrakta som frisk, har inga symtom och kan inte smitta andra (8,9). Risken f&ouml;r sjukdomsutveckling f&ouml;r en immunkompetent person med latent tbc ber&auml;knas vara 5&ndash;10&nbsp;% under en levnadstid, men &auml;r betydligt h&ouml;gre i vissa utsatta grupper (8) Se Faktaruta 1. Risken &auml;r st&ouml;rst de f&ouml;rsta tv&aring; &aring;ren efter smittotillf&auml;llet men kan kvarst&aring; hela livet.<br><br></p>\n<p>Lung-tbc &auml;r den dominerande sjukdomsmanifestationen och utgjorde 2015 cirka 60&nbsp;% av tbc-fallen i Sverige (1). Vanliga symtom &auml;r l&aring;ngdragen hosta, feber, nattliga svettningar och avmagring (10) Se Faktaruta 2. Symtomen &auml;r dock ofta vaga och misstolkas l&auml;tt av s&aring;v&auml;l patient som av sjukv&aring;rden. Hos svenskf&ouml;dda &auml;r tbc s&aring; ovanligt att diagnosen ofta f&ouml;rbises, med l&aring;nga f&ouml;rdr&ouml;jningar till diagnos. Barn har ofta inte hosta utan misstanke om tbc v&auml;cks vid oklar feber och epidemiologiskt samband (11). Tbc i andra organ kan v&aring;lla differentialdiagnostiska problem. Den vanligaste extrapulmonella lokaliseringen &auml;r lymfk&ouml;rtlar p&aring; halsen men s&aring; gott som alla organ, inklusive CNS och leder/skelett, kan drabbas (10).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "72f076ce-d216-430c-b28d-c9f8e9a69613",
+			"name": "72f076ce-d216-430c-b28d-c9f8e9a69613",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "Riskgrupper för insjuknande i tbc",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Personer med ursprung fr&aring;n eller annan l&aring;ng&shy;varig kontakt med h&ouml;gendemisk region (Afrika<span> </span>s&ouml;der om Sahara, de flesta l&auml;nder i Asien) eller milj&ouml; (flyktingl&auml;ger, f&auml;ngelse)</li>\r\n<li>Tidigare otillr&auml;ckligt behandlad tbc</li>\r\n<li>Hiv/aids och andra kroniska sjukdomar som malignitet, njursvikt, diabetes mellitus</li>\r\n<li>Immunmodulerande behandling, till exempel TNF-alfah&auml;mmare, <span></span><span><a href=\"http://www.lakemedelsboken.se/atc/R01AD05-R03BA-H02AB\">glukokortikoider</a></span><span>&nbsp;</span>(&gt;&nbsp;15&nbsp;mg/<span><a href=\"http://www.lakemedelsboken.se/atc/H02AB06-C05AA04-S01BA04-A07EA01\">prednisolon</a></span>/dag under mer &auml;n en m&aring;nad)</li>\r\n<li>Sp&auml;dbarn</li>\r\n<li>Ton&aring;ringar</li>\r\n<li>&Aring;ldringar</li>\r\n<li>Missbrukare</li>\r\n<li>Heml&ouml;sa</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c5997e2d-e836-478e-800f-e57b0bc95be7",
+			"name": "c5997e2d-e836-478e-800f-e57b0bc95be7",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "Misstänk tbc hos riskutsatt person med symtom som:",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ol>\r\n<li>l&aring;ngvarig hosta (&gt;&nbsp;2&nbsp;veckor)</li>\r\n<li>oklar feber</li>\r\n<li>avmagring</li>\r\n<li>k&ouml;rtlar p&aring; halsen</li>\r\n<li>blodhosta</li>\r\n</ol>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "af367e33-f798-4e3d-aa2f-36a17567b697",
+			"name": "af367e33-f798-4e3d-aa2f-36a17567b697",
+			"type": "text",
+			"content": "<h2 id=\"Diagnostik\">Diagnostik</h2>\n<p>Lungr&ouml;ntgen b&ouml;r utf&ouml;ras p&aring; riskutsatta personer med hosta &gt;&nbsp;2&nbsp;veckor. N&auml;r det g&auml;ller barn g&ouml;rs en lungr&ouml;ntgen s&aring; snart misstanke om tbc v&auml;ckts. R&ouml;ntgenologiska f&ouml;r&auml;ndringar som tyder p&aring; prim&auml;r lung-tbc kan ibland ses innan barnet f&aring;tt kliniska symtom. Vid misstanke om aktiv tbc b&ouml;r patienten remitteras till specialistv&aring;rd.<br><br></p>\n<p>Tre upphostningsprov f&ouml;r direktmikroskopi, PCR och odling tas vid misstanke om engagemang i luftv&auml;garna. Om patienten inte kan l&auml;mna upphostningsprov eller om upphostningsprovet &auml;r negativt, g&ouml;rs bronkoskopi och/eller ventrikelaspiration.<br><br></p>\n<p>Vid misstanke om extrapulmonell tbc g&ouml;rs en punktion/ biopsi fr&aring;n det aktuella omr&aring;det och v&auml;vnadsprovet skickas f&ouml;r b&aring;de mykobakterieanalys (mikroskopi, PCR [polymerase chain reaction] och odling) och f&ouml;r patologi/cytologi. Vid misst&auml;nkt CNS-engagemang tas prov fr&aring;n likvor, vid buk-tbc fr&aring;n faeces och/eller v&auml;vnadsmaterial och vid misst&auml;nkt<span>&nbsp;</span>urogenital eller miliar-tbc tas ocks&aring; prov f&ouml;r odling p&aring; urin. Bakteriologisk verifikation (odling och resistensbest&auml;mning) m&aring;ste alltid efterstr&auml;vas. Det tar vanligen 3&ndash;4&nbsp;veckor att f&aring; svar p&aring; odling vid positivt fynd och ytterligare 1&ndash;2&nbsp;veckor f&ouml;r resistensbest&auml;mning f&ouml;r f&ouml;rstahandsl&auml;kemedel. Molekyl&auml;rbiologiska snabbmetoder f&ouml;r resistensbest&auml;mning av f&ouml;rstahandsl&auml;kemedlen isoniazid (INH) och rifampicin (RIF) finns tillg&auml;ngliga p&aring; landets tbc-laboratorier.<span></span>(12,13,14)</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b7d14d47-82f8-401a-8d7a-631c575abddd",
+			"name": "b7d14d47-82f8-401a-8d7a-631c575abddd",
+			"type": "text",
+			"content": "<h2 id=\"Vardrutiner\">V&aring;rdrutiner</h2>\n<p>Tbc handl&auml;ggs p&aring; infektionsklinik eller lungmedicinsk klinik i samr&aring;d med respektive organspecialist (Faktaruta 3). Barn behandlas oftast p&aring; barnklinik.<br><br></p>\n<p>Patient med mikroskopipositiva upphostningar bed&ouml;ms som h&ouml;ggradigt smittsam, mikroskopinegativa men odlingspositiva som l&aring;ggradigt smittsam, medan patient med enbart extrapulmonell tbc inte alls &auml;r smittsam. Barn med tbc smittar vanligen inte f&ouml;rr&auml;n de kommer upp i skol&aring;ldern.<br><br></p>\n<p>Smittsamma patienter bed&ouml;ms vara smittfria efter 2&nbsp;veckors behandling med kemoterapi samt klinisk f&ouml;rb&auml;ttring. Vid misstanke om<span>&nbsp;</span>multiresistent tbc b&ouml;r patienten vara isolerad till dess att sputumprov &auml;r negativt i tv&aring; konsekutiva mykobakterieodlingar. F&ouml;r v&aring;rdpersonal anv&auml;nds andningsskydd med hepafilter (FFP3) vid kontakt med smittsam patient.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fdabd22f-bc7d-4acd-b7bb-3327c86113ac",
+			"name": "fdabd22f-bc7d-4acd-b7bb-3327c86113ac",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "Behandlande läkares skyldigheter enligt smittskyddslagen",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Anm&auml;la nyuppt&auml;ckt tbc till smittskyddsl&auml;karen och Folkh&auml;lsomyndigheten utan dr&ouml;js&shy;m&aring;l.</li>\r\n<li>Informera den tbc-sjuke om sjukdomen och dess behandling, f&ouml;rs&auml;kra sig om att denne sk&ouml;ter sin medicinering och informera om hur patienten ska f&ouml;rh&aring;lla sig f&ouml;r att undvika vidare smittspridning.</li>\r\n<li>Genomf&ouml;ra smittsp&aring;rning f&ouml;r att hitta eventuell smittk&auml;lla och/eller andra personer som kan vara smittade/sjuka.</li>\r\n</ul>\r\n<p><a href=\"http://riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/smittskyddslag-2004168_sfs-2004-168\">Smittskyddslag (2004:168)</a></p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2984e0b9-cff1-4424-be0c-c990c78d8303",
+			"name": "2984e0b9-cff1-4424-be0c-c990c78d8303",
+			"type": "text",
+			"content": "<h2 id=\"Smittskydd\">Smittskydd</h2>\n<p>Tbc &auml;r klassad som en allm&auml;nfarlig sjukdom (<a href=\"http://riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/smittskyddslag-2004168_sfs-2004-168\">Smittskyddslag SFS 2004:168</a>). Behandlande l&auml;kare ska anm&auml;la varje nytt fall till smittskyddsl&auml;karen, ge patienten f&ouml;rh&aring;llningsregler samt smittsp&aring;ra. Vid smittsp&aring;rning letar man efter eventuell smittk&auml;lla och testar exponerade kontakter som kan ha smittats<span>&nbsp;</span>(15). Patienten har r&auml;tt till kostnadsfri v&aring;rd och behandling. Om recept utf&auml;rdas f&ouml;r tbc-l&auml;kemedel anges p&aring; receptet &rdquo;fritt enligt smittskyddslagen&rdquo;. Detta g&auml;ller i m&aring;nga landsting &auml;ven behandling f&ouml;r latent tbc.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2be7f328-9831-4e69-b55a-d82056a5f523",
+			"name": "2be7f328-9831-4e69-b55a-d82056a5f523",
+			"type": "text",
+			"content": "<h2 id=\"Forebyggande-atgarder\">F&ouml;rebyggande &aring;tg&auml;rder</h2>\n<p>Screening f&ouml;r tbc med<span>&nbsp;</span><a href=\"http://www.lakemedelsboken.se/atc/V04CF01\">tuberkulin</a>test eller interferon-gammatest (IGRA) rekommenderas i Sverige bland grupper med h&ouml;g risk f&ouml;r tbc, till exempel nyanl&auml;nda asyls&ouml;kande fr&aring;n h&ouml;gendemiskt land och deras anh&ouml;riga (15). Folkh&auml;lsomyndigheten bed&ouml;mer att vaccination mot tuberkulos, s&aring; kallat <a href=\"http://www.lakemedelsboken.se/atc/J07AN\">BCG-vaccin</a>, (Bacillus Calmette-Gu&eacute;rin) b&ouml;r inf&ouml;ras som ett nationellt s&auml;rskilt vaccinationsprogram (16). De som b&ouml;r omfattas av ett s&aring;dant program &auml;r barn under 18 &aring;r med familjeursprung i ett land med &ouml;kad f&ouml;rekomst av tuberkulos (Faktaruta 4)<em>.</em> &Ouml;vriga grupper som kan vara aktuella f&ouml;r BCG vaccination anges ocks&aring; i Faktaruta 4 men omfattas enligt Folkh&auml;lsomyndigheten inte av ett nationellt vaccinationsprogram<em>. </em>F&ouml;r ytterligare information se kapitlet Vaccination av barn och ungdomar, avsnittet Vaccination mot tuberkulos.</p>\n<p>&nbsp;</p>\n<p>F&ouml;r &ouml;vriga personer som l&ouml;per &ouml;kad risk att uts&auml;ttas f&ouml;r tbc-smitta kan det vara motiverat med <a href=\"http://www.lakemedelsboken.se/atc/J07AN\">BCG-vaccin</a>, till exempel viss personal inom h&auml;lso- och sjukv&aring;rden, resen&auml;rer till h&ouml;gendemiskt land som ska vistas/arbeta en l&auml;ngre tid bland lokalbefolkningen (se &auml;ven kapitlet R&aring;d och profylax vid resa, avsnittet<span>&nbsp;</span><a href=\"http://www.lakemedelsboken.se/atc/J07AN\">BCG-vaccin</a><span>&nbsp;</span>mot tuberkulos). <a href=\"http://www.lakemedelsboken.se/atc/J07AN\">BCG-vaccin</a><span>&nbsp;</span>ger framf&ouml;r allt hos sm&aring; barn ett skydd mot aktiv och disseminerad sjukdom. Hur gott skyddet &auml;r varierar kraftigt (0&ndash;80&nbsp;%) i olika studier och revaccination saknar vetenskapligt underlag. F&ouml;r att utesluta att personen inte redan b&auml;r p&aring; tbc-smitta g&ouml;rs en<span>&nbsp;</span><a href=\"http://www.lakemedelsboken.se/atc/V04CF01\">tuberkulin</a>pr&ouml;vning innan<span>&nbsp;</span><a href=\"http://www.lakemedelsboken.se/atc/J07AN\">BCG-vaccination</a><span>&nbsp;</span>och om testet &auml;r<span>&nbsp;</span>&ge;&nbsp;6&nbsp;mm ska personen inte vaccineras. I Socialstyrelsens &rdquo;Rekommendationer f&ouml;r preventiva insatser mot tuberkulos &ndash; h&auml;lsokontroll, smittsp&aring;rning och vaccination&rdquo; finns fl&ouml;desschema f&ouml;r screening av tbc bland kontakter till individer med aktiv tbc, flyktingar fr&aring;n tbc endemiskt omr&aring;de och immunsupprimerade samt vid studier eller arbete i riskutsatta milj&ouml;er (15).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3be75281-6283-4b96-82ca-3d7d205db9bc",
+			"name": "3be75281-6283-4b96-82ca-3d7d205db9bc",
+			"type": "facts",
+			"content": {
+				"number": "4",
+				"title": "Indikationer för BCG-vaccination av barn",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Barn &lt;&nbsp;18&nbsp;&aring;r med familjeursprung fr&aring;n ett land med h&ouml;g tbc-f&ouml;rekomst (&ge;&nbsp;25&nbsp;fall/100&nbsp;000 inv&aring;nare och &aring;r) vilket innefattar de flesta l&auml;nder utanf&ouml;r Nordamerika, V&auml;steuropa samt Australien och Nya Zeeland.</li>\r\n<li>Vid planerad vistelse i ett land eller omr&aring;de med h&ouml;g tbc-f&ouml;rekomst och vid n&auml;ra kontakt med<span> </span>lokalbefolkningen.</li>\r\n<li>Om tbc tidigare har f&ouml;rekommit hos en n&auml;ra anh&ouml;rig eller hush&aring;llskontakt.</li>\r\n<li>Aktuell tbc har diagnostiserats hos en n&auml;ra an&shy;h&ouml;rig eller hush&aring;llskontakt (samr&aring;d med den<span> </span>behandlande l&auml;karen n&auml;r det g&auml;ller eventuell kemoterapi och tidpunkt f&ouml;r BCG).</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3dd823ef-f8e5-4ea9-b4cc-f96c8d3312b8",
+			"name": "3dd823ef-f8e5-4ea9-b4cc-f96c8d3312b8",
+			"type": "text",
+			"content": "<h2 id=\"Tuberkulintest\"><a href=\"http://www.lakemedelsboken.se/atc/V04CF01\">Tuberkulin</a>test</h2>\n<p><a href=\"http://www.lakemedelsboken.se/atc/V04CF01\">Tuberkulin</a><span>&nbsp;</span>(Purified protein derivate,<span>&nbsp;</span>PPD, 2&nbsp;TU/0, 1&nbsp;ml) injiceras intrakutant p&aring; underarmens ovansida. De antigen som ing&aring;r i tuberkulinet f&ouml;rekommer b&aring;de hos M.&nbsp;tuberculosis, milj&ouml;mykobakterier och M.&nbsp;bovis BCG-stammar. Om personen &auml;r<span>&nbsp;</span>infekterad med<span>&nbsp;</span>mykobakterier bildas en induration omgiven av en rodnad. Indurationens tv&auml;rdiameter m&auml;ts efter 72&nbsp;timmar och om m&aring;ttet &auml;r<span>&nbsp;</span>&ge;&nbsp;15&nbsp;mm &auml;r sannolikheten att personen smittats med tbc h&ouml;g &ndash; ett m&aring;tt p&aring; 10&ndash;15&nbsp;mm kan man dock se s&aring;v&auml;l vid tbc-smitta och vid infektion med milj&ouml;mykobakterier. Om indurationen &auml;r &lt;&nbsp;10&nbsp;mm beror reaktionen oftast p&aring; kontakt med milj&ouml;mykobakterier eller<span>&nbsp;</span><a href=\"http://www.lakemedelsboken.se/atc/J07AN\">BCG-vaccination</a>, s&auml;rskilt om den senare getts upprepat eller efter 2 &aring;rs &aring;lder (15). Gr&auml;nsv&auml;rdet f&ouml;r ett positivt PPD-test brukar s&auml;ttas vid 10&nbsp;mm om man vill undvika &ouml;verdiagnostik (m&aring;l att uppn&aring; h&ouml;g specificitet), medan ett gr&auml;nsv&auml;rde p&aring; 6&nbsp;mm ger h&ouml;gre sensitivitet men minskad specificitet. Ett gr&auml;nsv&auml;rde p&aring; 6&nbsp;mm anv&auml;nds d&auml;rf&ouml;r vid nedsatt immunf&ouml;rsvar och vid h&ouml;g expositionsrisk d&aring; h&ouml;g testsensitivitet prioriteras.</p>\n<p>&nbsp;</p>\n<p><a href=\"http://www.lakemedelsboken.se/atc/V04CF01\">Tuberkulin</a>reaktionens prediktiva v&auml;rde &auml;r beroende av det epidemiologiska sambandet och b&ouml;r d&auml;rf&ouml;r bara anv&auml;ndas vid k&auml;nd exponering, till exempel vid<span>&nbsp;</span>smittsp&aring;rning runt en smittsam person, screening av h&ouml;griskgrupp samt innan eventuell<span>&nbsp;</span><a href=\"http://www.lakemedelsboken.se/atc/J07AN\">BCG-vaccination</a>. Som allm&auml;n screening &auml;r<span>&nbsp;</span><a href=\"http://www.lakemedelsboken.se/atc/V04CF01\">tuberkulin</a>testet alltf&ouml;r ospecifikt. I diagnostiken av klinisk tbc b&ouml;r PPD undvikas d&aring; kraftiga reaktioner med nekros kan f&ouml;rekomma.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c6c887e7-027d-483e-8f6c-48b415b695aa",
+			"name": "c6c887e7-027d-483e-8f6c-48b415b695aa",
+			"type": "text",
+			"content": "<h2 id=\"Interferon-gammatest-IGRA-\">Interferon-gammatest (IGRA)</h2>\n<p>Nya diagnostiska tester som bygger p&aring; att produktion av interferon-gamma eller proliferation av interferon-gammaproducerande lymfocyter i blod (QuantiFERON-TB Gold In-tube,<span>&nbsp;</span>T-SPOT.TB) p&aring;visas efter stimulering med M.&nbsp; tuberculosis-specifika antigen finns p&aring; marknaden. Testen &auml;r mer specifika f&ouml;r M.&nbsp;tuberculosis &auml;n PPD d&aring; de antigen som anv&auml;nds inte ing&aring;r i M.&nbsp;bovis BCG-vaccinstammar och de flesta milj&ouml;mykobakterier (18).</p>\n<p>&nbsp;</p>\n<p>Analysen g&ouml;rs p&aring; helblod. Runt gr&auml;nsv&auml;rdet f&ouml;r ett positivt test finns en gr&aring;zon. Laboratoriet rekommenderar i s&aring;dana fall ett nytt test. D&aring; dessa tester liksom PPD &auml;r beroende av ett funktionellt immunsvar kan personer med nedsatt immunsvar ibland ha sv&aring;rt att reagera i testet. Dessa resultat kallas d&aring; indeterminanta och &auml;r inte m&ouml;jliga att bed&ouml;ma. Se Tabell 1.</p>\n<p>Immunreaktiva tester f&ouml;r tbc vid diagnostik av aktiv tbc anv&auml;nds inte prim&auml;rt d&aring; de inte kan skilja p&aring; latent eller aktiv tbc (19).</p>\n<p>&nbsp;</p>\n<p>Det &auml;r viktigt att k&auml;nna till att PPD kan boosta ett IGRA-svar och ge ett falskt positivt resultat. Detta kan f&ouml;rekomma vid positivt PPD taget innan IGRA och ger i s&aring; fall vanligen resultat inom gr&aring;zon (20). IGRA-test har ocks&aring; en st&ouml;rre variabilitet runt gr&auml;nsv&auml;rdet f&ouml;r ett positivt test &auml;n PPD &ouml;ver tid vilket kan bero b&aring;de p&aring; provtagningsteknik, laborativa och biologiska orsaker (21).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f59468c3-ff82-4036-b0b9-b3fd95cca556",
+			"name": "f59468c3-ff82-4036-b0b9-b3fd95cca556",
+			"type": "tablenarrow",
+			"content": {
+				"number": "1",
+				"title": "Principer för användning av IGRA och PPD",
+				"id": "",
+				"text": "<table width=\"369\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><strong>Grupp</strong></p>\r\n</td>\r\n<td>\r\n<p><strong>Analys</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Friska vuxna och barn &gt;&nbsp;5&nbsp;&aring;r</p>\r\n</td>\r\n<td>\r\n<p>IGRA<sup>a</sup><span> </span>eller PPD</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Immunsupprimerade</p>\r\n</td>\r\n<td>\r\n<p>IGRA och/</p>\r\n<p>eller PPD<sup>b</sup></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Barn &lt;&nbsp;5&nbsp;&aring;r</p>\r\n</td>\r\n<td>\r\n<p>PPD</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">\r\n<p>a. IGRA &auml;r att f&ouml;redra hos individer som &auml;r BCG-vaccinerade.</p>\r\n<p>b. Kompletterande test g&ouml;rs om det f&ouml;rsta testet &auml;r negativt.</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8a7ca62d-b6e2-47a0-b8bf-71c0a50f127a",
+			"name": "8a7ca62d-b6e2-47a0-b8bf-71c0a50f127a",
+			"type": "text",
+			"content": "<h2 id=\"Allmanna-behandlingsprinciper\">Allm&auml;nna behandlingsprinciper</h2>\n<h3 id=\"Kombinationsterapi-och-behandlingstid\">Kombinationsterapi och behandlingstid</h3>\n<p>Kombinationsbehandling med flera preparat med skilda verkningsmekanismer &auml;r n&ouml;dv&auml;ndig f&ouml;r att &ouml;ka behandlingseffekten och minska risken f&ouml;r resistensutveckling.</p>\n<p>&nbsp;</p>\n<p>Behandlingen inleds med fyra preparat: <a href=\"http://www.lakemedelsboken.se/atc/J04AC01\">isoniazid</a><span>&nbsp;</span>(H), <a href=\"http://www.lakemedelsboken.se/atc/J04AB02\">rifampicin</a><span>&nbsp;</span>(R)), <a href=\"http://www.lakemedelsboken.se/atc/J04AK01\">pyrazinamid</a><span>&nbsp;</span>(Z) och <a href=\"http://www.lakemedelsboken.se/atc/J04AK02\">etambutol</a><span>&nbsp;</span>(E) i 2&nbsp;m&aring;nader (initialfas) f&ouml;ljt av ytterligare 4&nbsp;m&aring;nader med H + R (uppf&ouml;ljningsfas), det vill s&auml;ga sammanlagt 6&nbsp;m&aring;naders behandling (22). &Auml;r tbc-stammen fullt k&auml;nslig kan E s&auml;ttas ut under initialfasen. Om Z inte kan ges (p&aring; grund av resistens eller intolerans) f&ouml;rl&auml;ngs behandlingsperioden till 9&nbsp;m&aring;nader. H och R har en &ouml;verl&auml;gsen klinisk effektivitet, &auml;r baktericida och har verkar mot b&aring;de aktivt replikerande och metabolt mer inaktiva former, d&auml;r dock R &auml;r mer verksamt &auml;n INH under uppf&ouml;ljningsfas (22). Z verkar intracellul&auml;rt vid l&aring;gt pH i den initiala behandlingsfasen, men har vid k&auml;nslig tbc d&auml;refter spelat ut sin roll. E har betydligt s&auml;mre mikrobiologisk effekt och anv&auml;nds framf&ouml;rallt initialt som skydd f&ouml;r resistensutveckling och vid resistensproblematik.</p>\n<p></p>\n<p>Vid resistens mot ett av huvudpreparaten H eller R ers&auml;tts det resistenta medlet med E i uppf&ouml;ljningsfasen med en total behandlingsperiod p&aring; 12&nbsp;m&aring;nader. Eventuellt l&auml;ggs <a href=\"http://www.lakemedelsboken.se/atc/J01GB06\">amikacin</a> till de f&ouml;rsta 2&nbsp;m&aring;naderna. Till&auml;gg av <a href=\"http://www.lakemedelsboken.se/atc/J01M\">kinolon</a> b&ouml;r ges vid resistens mot R. Vid resistens mot b&aring;de H och R (multiresistent tbc) rekommenderas behandling med minst fem preparat f&ouml;r vilka bakterien &auml;r k&auml;nslig (22,23), och behandlingsperioden blir enligt WHO:s nuvarande rekommendationer minst 18&nbsp;m&aring;nader efter odlingskonvertering till negativt. I praktiken inneb&auml;r det behandlingstider upp till 20&ndash;24 m&aring;nader (24). Multiresistent tbc ska behandlas i samr&aring;d med erfaren tbc-specialist.</p>\n<p>&nbsp;</p>\n<p>Behandlingsprinciperna &auml;r gemensamma f&ouml;r b&aring;de lung-tbc och extrapulmonell tbc. Vid tuberkul&ouml;s meningit och framf&ouml;rallt tuberkulom anv&auml;nds kinolon som till&auml;gg eller alternativ till <a href=\"http://www.lakemedelsboken.se/atc/J04AK02\">etambutol</a> som penetrerar d&aring;ligt till CNS (25). Initialt ges &auml;ven <a href=\"http://www.lakemedelsboken.se/atc/R01AD05-R03BA-H02AB\">glukokortikoider</a> i avsikt att reducera inflammationen och d&auml;rmed neurologiska resttillst&aring;nd (26). Aminoglykosider ska undvikas till &auml;ldre och gravida p&aring; grund av risk f&ouml;r h&ouml;rselskador. Till en &auml;ldre patient <span>kan </span>&ouml;verv&auml;g <a href=\"http://www.lakemedelsboken.se/atc/J04AK02\">etambutol</a><span> &ouml;verv&auml;gas </span>i st&auml;llet f&ouml;r aminoglykosid. P&aring; grund av s&auml;mre penetration till CNS justeras doseringen av tuberkulosl&auml;kemedlen och behandlingstiden f&ouml;rl&auml;ngs till 12&nbsp;m&aring;nader.</p>\n<p>&nbsp;</p>\n<p>Gravida behandlas efter samma schema f&ouml;r standardbehandling som icke-gravida. Modern kan forts&auml;tta att amma. Aminoglykosider kan ha ototoxiska effekter p&aring; fostret och ska d&auml;rf&ouml;r undvikas till gravida (27). Till sm&aring; barn som inte kan syntestas brukar E undvikas.</p>\n<p>&nbsp;</p>\n<p>Brist p&aring; <a href=\"http://www.lakemedelsboken.se/atc/A11CC\">vitamin&nbsp;D</a> diskuteras som predisponerande orsak till utveckling av aktiv tbc. D-vitaminstatus b&ouml;r analyseras vid aktiv tbc och vid bristtillst&aring;nd substituteras vitamin D parallellt.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ff02e9c1-1ae3-417f-bf58-ff72bd1893cf",
+			"name": "ff02e9c1-1ae3-417f-bf58-ff72bd1893cf",
+			"type": "therapy",
+			"content": {
+				"number": "1",
+				"title": "Behandling av tbc",
+				"id": "",
+				"text": "<table width=\"769\">\r\n<tbody>\r\n<tr>\r\n<td colspan=\"2\"><strong><sup>Rekommendationerna g&auml;ller vid fullt k&auml;nslig stam, vid resistens, se texten.</sup></strong></td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">\r\n<p><strong>Standardbehandling</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>H + R + Z + E</p>\r\n</td>\r\n<td>\r\n<p>Initial fas:<span>&nbsp;</span><span><a href=\"http://www.lakemedelsboken.se/atc/J04AC01\">Isoniazid</a><a href=\"http://www.lakemedelsboken.se/kapitel/andningsvagar/tuberkulos.html#fnote_17\"><sup>a</sup></a></span><span> </span>+<span>&nbsp;</span><span><a href=\"http://www.lakemedelsboken.se/atc/J04AB02\">rifampicin</a></span><span>&nbsp;</span>+<span>&nbsp;</span><span><a href=\"http://www.lakemedelsboken.se/atc/J04AK01\">pyrazinamid</a></span><span>&nbsp;</span>+<span>&nbsp;</span><span><a href=\"http://www.lakemedelsboken.se/atc/J04AK02\">etambutol</a></span><span>&nbsp;</span>i 2&nbsp;m&aring;nader</p>\r\n<p>Uppf&ouml;ljningsfas:<span>&nbsp;</span><span><a href=\"http://www.lakemedelsboken.se/atc/J04AC01\">Isoniazid</a></span><sup>b</sup><span>&nbsp;</span>+<span>&nbsp;</span><span><a href=\"http://www.lakemedelsboken.se/atc/J04AB02\">rifampicin</a></span><span>&nbsp;</span>i 4&nbsp;m&aring;nader</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">\r\n<p><strong>Behandling av tbc i CNS</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>H + R + Z + S/A/E</p>\r\n</td>\r\n<td>\r\n<p>Initial fas:<span>&nbsp;</span><span><a href=\"http://www.lakemedelsboken.se/atc/J04AC01\">Isoniazid</a></span><sup>a</sup><span> </span>+<span>&nbsp;</span><span><a href=\"http://www.lakemedelsboken.se/atc/J04AB02\">rifampicin</a></span><span>&nbsp;</span>+<span>&nbsp;</span><span><a href=\"http://www.lakemedelsboken.se/atc/J04AK01\">pyrazinamid</a></span><span>&nbsp;</span>+ <span><a href=\"http://www.lakemedelsboken.se/atc/J01GB06\">amikacin</a></span>/<span><a href=\"http://www.lakemedelsboken.se/atc/J04AK02\">etambutol</a></span><span>&nbsp;</span>i</p>\r\n<p>2&nbsp;m&aring;nader. Alltid till&auml;gg av<span>&nbsp;</span><span><a href=\"http://www.lakemedelsboken.se/atc/R01AD05-R03BA-H02AB\">glukokortikoider</a></span>.</p>\r\n<p>Uppf&ouml;ljningsfas:<span>&nbsp;</span><span><a href=\"http://www.lakemedelsboken.se/atc/J04AC01\">Isoniazid</a></span><sup>b</sup><span>&nbsp;</span>+<span>&nbsp;</span><span><a href=\"http://www.lakemedelsboken.se/atc/J04AB02\">rifampicin</a></span><span>&nbsp;</span>i 10 m&aring;nader</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">\r\n<p><strong>Behandling av latent tbc (</strong><strong>7</strong><strong>)</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>H + eventuellt R</p>\r\n</td>\r\n<td>\r\n<p><span><a href=\"http://www.lakemedelsboken.se/atc/J04AC01\">Isoniazid</a></span><sup>a</sup><span> </span>i 6-9 m&aring;nader</p>\r\n<p>Rfampicin 4 m&aring;nader</p>\r\n<p><span><a href=\"http://www.lakemedelsboken.se/atc/J04AC01\">Isoniazid</a></span><sup>a</sup><span> </span>+<span>&nbsp;</span><span><a href=\"http://www.lakemedelsboken.se/atc/J04AB02\">rifampicin</a></span><span>&nbsp;</span>i 3 m&aring;nader<span>&nbsp;</span></p>\r\n<p><span>Rifapentine och INH en g&aring;ng/vecka i sammanlagt 12 veckor</span></p>\r\n<p><span><a href=\"http://www.lakemedelsboken.se/atc/J04AC01\">Isoniazid</a></span><sup>a</sup><span> </span>alltid i 9 m&aring;nader (vid<span>&nbsp;</span>immunsuppression, vid fibronodul&auml;ra inaktiva lungf&ouml;r&auml;ndringar)</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">\r\n<p>a. Vid behandling med<span>&nbsp;</span><span><a href=\"http://www.lakemedelsboken.se/atc/J04AC01\">isoniazid</a></span><span>&nbsp;</span>ges pyridoxin (vitamin B<sub>6</sub>).</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "89097cda-13bd-4f84-a7a8-de67c33f76fd",
+			"name": "89097cda-13bd-4f84-a7a8-de67c33f76fd",
+			"type": "text",
+			"content": "<h2 id=\"Dosering\">Dosering</h2>\n<p>Alla tbc-l&auml;kemedel doseras efter kroppsvikt, men approximativa ber&auml;kningar kan anv&auml;ndas och dygnsdosen anpassas efter befintliga beredningar. Hela dygnsdosen ges vid ett tillf&auml;lle s&aring; att en h&ouml;g plasma- och v&auml;vnadskoncentration uppn&aring;s. M&auml;tning av plasmakoncentration &auml;r viktig vid misstanke om bristande absorption, nedsatt lever- och njurfunktion, sv&aring;ra tbc-former, ov&auml;ntade biverkningar, samtidig behandling med interagerande l&auml;kemedel (till exempel antiretrovirala medel) samt vid behandling av multiresistent tbc (28). M&auml;tning av l&auml;kemedelskoncentrationen (diskutera med lokalt kliniskt farmakologiskt laboratorium) kan &auml;ven vara befogad vid misstanke om att patienten inte tar sina l&auml;kemedel som ordinerat. Farmakologiska analysmetoder finns tillg&auml;ngliga i Sverige f&ouml;r standardpreparaten INH, rifampicin, etambutol och pyrazinamid.<span style=\"font-size: 13.0pt; color: black;\"> <o:p></o:p></span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9ebc2f32-4d9d-49b1-b1d5-2650839d6349",
+			"name": "9ebc2f32-4d9d-49b1-b1d5-2650839d6349",
+			"type": "text",
+			"content": "<h2 id=\"Behandlingsstod\">Behandlingsst&ouml;d</h2>\n<p>En f&ouml;ruts&auml;ttning f&ouml;r ett gott behandlingsresultat utan recidiv &auml;r att patienterna tar sina l&auml;kemedel p&aring; r&auml;tt s&auml;tt. N&auml;r behandlingen inleds m&aring;ste stor m&ouml;da &auml;gnas &aring;t att informera patienten om sjukdomen, smittspridning och n&ouml;dv&auml;ndigheten av regelbunden medicinering. Alla patienter b&ouml;r f&aring; n&aring;gon form av behandlingsst&ouml;d. Direkt observerad terapi (DOT), det vill s&auml;ga att patienterna sv&auml;ljer sina mediciner under &ouml;vervakning, rekommenderas av WHO s&auml;rskilt under de 2 f&ouml;rsta m&aring;naderna. DOT kan ske p&aring; tbc-mottagning, via distriktssk&ouml;terska, f&ouml;retagsh&auml;lsov&aring;rd eller p&aring; annat s&auml;tt som &auml;r l&auml;mpligt f&ouml;r patienten. Ett alternativ till DOT &auml;r att ge l&auml;kemedlen i dosett f&ouml;r varje vecka under de f&ouml;rsta 2 m&aring;naderna.</p>\n<p><o:p><br></o:p><o:p></o:p>Patienter med mikroskopipositiv lung-tbc b&ouml;r som regel p&aring;b&ouml;rja sin behandling p&aring; v&aring;rdavdelning. Cirka 2 veckor efter p&aring;b&ouml;rjad l&auml;kemedelsbehandling bed&ouml;ms smittsamheten som ringa och vid okomplicerat f&ouml;rlopp b&ouml;r patienten kunna skrivas ut.</p>\n<p><o:p><br></o:p><o:p></o:p>Klinisk kontroll efter p&aring;b&ouml;rjad behandling b&ouml;r vanligen ske minst varannan m&aring;nad (Faktaruta 5). M&aring;nga patienter beh&ouml;ver t&auml;tare kontakt. I samband med &aring;terbes&ouml;k &auml;r det viktigt att fortl&ouml;pande motivera patienten att ta sina l&auml;kemedel, f&ouml;lja upp smittsp&aring;rningen samt kontrollera visus och f&auml;rgseende om patienten behandlas med E. Leverstatus kontrolleras 1&nbsp;g&aring;ng/vecka i 1&ndash;2&nbsp;m&aring;nader och d&auml;refter 1&nbsp;g&aring;ng/m&aring;nad, s&aring;vida inte provsvaren indikerar behov av t&auml;tare kontroller.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e61cddb1-6a69-4af6-bdd8-c9cb463147ad",
+			"name": "e61cddb1-6a69-4af6-bdd8-c9cb463147ad",
+			"type": "facts",
+			"content": {
+				"number": "5",
+				"title": "Uppföljning av tbc-behandling ",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>&Aring;terbes&ouml;k vanligen 1, 2, 4 och 6 m&aring;nader efter behandlingsstart samt 6&nbsp;m&aring;nader efter avslutad behandling. Kontrollr&ouml;ntgen vid lung-tbc.</li>\r\n<li>Kontroll av ASAT, ALAT initialt 1&nbsp;g&aring;ng/vecka, d&auml;refter 1&nbsp;g&aring;ng/m&aring;nad, om inte provsvaren indikerar behov av t&auml;tare kontroller.</li>\r\n<li>Kontroll av visus och f&auml;rgseende vid varje &aring;ter&shy;bes&ouml;k vid <span></span><span><a href=\"http://www.lakemedelsboken.se/atc/J04AK02\">etambutol</a></span><span>-behandling</span></li>\r\n<li>Vid utebliven f&ouml;rb&auml;ttring:</li>\r\n</ul>\r\n<p style=\"padding-left: 60px;\">&ndash; F&ouml;ljsamhet, f&ouml;ljsamhet, f&ouml;ljsamhet?</p>\r\n<p style=\"padding-left: 60px;\">&ndash; Koncentrationsbest&auml;mning?</p>\r\n<p style=\"padding-left: 60px;\">&ndash; Resistens?</p>\r\n<ul>\r\n<li>Upprepa smittsp&aring;rningsanamnesen &ndash; har n&aring;gon missats?</li>\r\n<li>Avanm&auml;l till smittskyddsl&auml;karen/Smittskydds&shy;institutet efter avslutad behandling.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a65b3d18-1693-4e76-9350-d524f97b0fa7",
+			"name": "a65b3d18-1693-4e76-9350-d524f97b0fa7",
+			"type": "text",
+			"content": "<h2 id=\"Prognos\">Prognos</h2>\n<p>Vid korrekt ordinerad och genomf&ouml;rd l&auml;kemedelsbehandling &auml;r behandlingssvikt eller &aring;terfall ytterst s&auml;llsynt om bakterierna &auml;r fullt k&auml;nsliga (22). Om R eller H inte kan anv&auml;ndas, p&aring; grund av resistens eller biverkningar, &auml;r risken f&ouml;r recidiv st&ouml;rre och ett s&aring;dant kommer vanligen inom det f&ouml;rsta &aring;ret efter avslutad behandling.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8b62b8f4-19ad-4e2a-b151-23d895b019b4",
+			"name": "8b62b8f4-19ad-4e2a-b151-23d895b019b4",
+			"type": "text",
+			"content": "<h2 id=\"Behandling-av-latent-tbc\">Behandling av latent tbc</h2>\n<p>Diagnostiken (<a href=\"http://www.lakemedelsboken.se/atc/V04CF01\">tuberkulin</a>test och/eller IGRA)<span>&nbsp;</span>av latent tbc &auml;r os&auml;ker eftersom en referensmetod f&ouml;r v&auml;rdering av testutfall saknas. Cirka 90&nbsp;% av patienterna med positiva immunreaktiva tester f&ouml;rblir friska i en normalbefolkning utan behandling (9,15). Syftet med att behandla en latent infektion (se Terapirekommendationerna) &auml;r att f&ouml;rhindra progress till aktiv sjukdom. N&aring;got test f&ouml;r att selektera fram de personer som har mest nytta av profylaktisk behandling finns &auml;nnu inte, men risken f&ouml;r aktivering, biverkningar och f&ouml;rv&auml;ntad f&ouml;ljsamhet till behandling m&aring;ste v&auml;gas in i st&auml;llningstagandet (29). V&auml;rdet av f&ouml;rebyggande behandling &auml;r st&ouml;rst f&ouml;r barn, ton&aring;ringar, nysmittade vuxna samt f&ouml;r personer med nedsatt immunf&ouml;rsvar mot tbc (hiv, behandling med TNF-alfah&auml;mmare med flera). Aktiv tbc m&aring;ste alltid uteslutas d&aring; det vid st&ouml;rre bakteriem&auml;ngd finns risk f&ouml;r resistensutveckling vid monoterapi.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f1d515fa-1dab-446a-8455-9a6ec0fabf6d",
+			"name": "f1d515fa-1dab-446a-8455-9a6ec0fabf6d",
+			"type": "text",
+			"content": "<h2 id=\"Lakemedelsoversikt\">L&auml;kemedels&ouml;versikt</h2>\n<h3 id=\"Forstahandslakemedel\">F&ouml;rstahandsl&auml;kemedel</h3>\n<p><a href=\"http://www.lakemedelsboken.se/atc/J04AC01\">Isoniazid</a><span>&nbsp;</span>(H) och <a href=\"http://www.lakemedelsboken.se/atc/J04AB02\">rifampicin</a><span>&nbsp;</span>(R) &auml;r de mest potenta tbc-l&auml;kemedlen idag. I standardbehandlingen kompletteras dessa med <a href=\"http://www.lakemedelsboken.se/atc/J04AK01\">pyrazinamid</a><span>&nbsp;</span>(Z) och <a href=\"http://www.lakemedelsboken.se/atc/J04AK02\">etambutol</a><span>&nbsp;</span>(E). Kombinationspreparat har tagits fram f&ouml;r att f&ouml;renkla f&ouml;r patienterna. Nackdelen &auml;r att de ing&aring;ende substanserna inte kan doseras oberoende av varandra.</p>\n<p>&nbsp;</p>\n<p>Samtliga tbc-l&auml;kemedel &auml;r potentiellt levertoxiska varf&ouml;r transaminaser (ALAT, ASAT) f&ouml;ljs under hela behandlingen. Om patientens leverv&auml;rden &ouml;kar till 5 g&aring;nger &ouml;ver referensv&auml;rdena s&auml;tts alla l&auml;kemedel ut (30). N&auml;r leverv&auml;rdena normaliserats &aring;terins&auml;tts l&auml;kemedlen ett efter ett enligt s&auml;rskilt intrappningsschema.</p>\n<h4 id=\"Isoniazid\"><a href=\"http://www.lakemedelsboken.se/atc/J04AC01\">Isoniazid</a></h4>\n<p><a href=\"http://www.lakemedelsboken.se/atc/J04AC01\">Isoniazid</a><span>&nbsp;</span>(H) introducerades p&aring; 1950-talet och har en v&auml;ldokumenterad baktericid effekt, specifik f&ouml;r M.&nbsp;tuberculosis genom p&aring;verkan p&aring; mykosyrasyntesen i bakteriens cellv&auml;gg. Preparatet har l&aring;g biverkningsfrekvens och &auml;r billigt.Den vanligaste biverkningen &auml;r leverp&aring;verkan. Perifer polyneurit, som framf&ouml;r allt ses hos gravida, undern&auml;rda samt hos personer med alkoholproblem eller l&aring;ngsam metabolism, kan undvikas genom att man tillf&ouml;r pyridoxin (vitamin B<sub>6</sub>), 10&nbsp;mg/dag till barn och 40&nbsp;mg/dag till vuxna. Tilltagande resistens, cirka 10&nbsp;% av nya isolat i Sverige, &auml;r ett problem.</p>\n<h4 id=\"Rifampicin\"><a href=\"http://www.lakemedelsboken.se/atc/J04AB02\">Rifampicin</a></h4>\n<p><a href=\"http://www.lakemedelsboken.se/atc/J04AB02\">Rifampicin</a> (R) ut&ouml;var baktericid effekt genom att interferera med bakteriernas RNA-syntes. R &auml;r aktivt mot en m&auml;ngd bakterier, men reserveras i f&ouml;rsta hand f&ouml;r behandling av tbc, lepra, multiresistenta stafylokocker och neisseriastammar. Biverkningsfrekvensen &auml;r l&aring;g, men ovanliga och allvarliga reaktioner som trombocytopeni och akut njursvikt har rapporterats. &Ouml;verg&aring;ende leverp&aring;verkan med m&aring;ttliga aminotransferasstegringar &auml;r vanlig, fr&auml;mst i b&ouml;rjan av behandlingen.</p>\n<p>&nbsp;</p>\n<p>Patienten b&ouml;r upplysas om att medlet r&ouml;df&auml;rgar urin och andra kroppsv&auml;tskor. R inducerar leverns l&auml;kemedelsnedbrytande enzymer och interagerar med ett flertal l&auml;kemedel varav de viktigaste &auml;r perorala <a href=\"http://www.lakemedelsboken.se/atc/B01A\">antikoagulantia</a><span>, steroider, </span>p-piller och virush&auml;mmande medel mot exempelvis hiv. <a href=\"http://www.lakemedelsboken.se/atc/G03A\">P-piller</a> beh&ouml;ver p&aring; grund av utebliven effekt vid samtidig rifampicinbehandling kompletteras med barri&auml;rskydd.</p>\n<h4 id=\"Rifabutin\"><a href=\"http://www.lakemedelsboken.se/atc/J04AB04\">Rifabutin</a></h4>\n<p><a href=\"http://www.lakemedelsboken.se/atc/J04AB04\">Rifabutin</a><span> &nbsp;</span>&auml;r ett semisyntetiskt rifamycinderivat med effekt vid tbc som &auml;r likv&auml;rdig med R. <a href=\"http://www.lakemedelsboken.se/atc/J04AB04\">Rifabutin</a> inducerar metabolismen av vissa l&auml;kemedel, men i mindre grad &auml;n R, och orsakar d&auml;rf&ouml;r f&auml;rre l&auml;kemedelsinteraktioner. Preparatet har framf&ouml;r allt sin plats vid behandling av hiv-infekterade individer som st&aring;r p&aring; antiretroviral l&auml;kemedelsbehandling. Kostnaden &auml;r h&ouml;g. P&aring;verkan p&aring; blodbilden f&ouml;rekommer, varf&ouml;r erytrocyter, leukocyter och trombocyter b&ouml;r kontrolleras under behandlingen. Uveit har rapporterats och leverp&aring;verkan f&ouml;rekommer i samma omfattning som f&ouml;r R. Medlet f&auml;rgar ocks&aring; kroppsv&auml;tskor r&ouml;da.</p>\n<h4 id=\"Pyrazinamid\"><a href=\"http://www.lakemedelsboken.se/atc/J04AK01\">Pyrazinamid</a></h4>\n<p><a href=\"http://www.lakemedelsboken.se/atc/J04AK01\">Pyrazinamid</a> (Z; licenspreparat), tabletter 500&nbsp;mg, har baktericid effekt i sur milj&ouml; och ut&ouml;var sin huvudsakliga effekt intracellul&auml;rt under behandlingens initialfas. Z h&auml;mmar den renala uts&ouml;ndringen av urinsyra med hyperurikemi som f&ouml;ljd. Artralgier f&ouml;rekommer, fr&auml;mst i b&ouml;rjan av behandlingen, men manifest gikt &auml;r s&auml;llsynt. Illam&aring;ende, buksm&auml;rtor, leverp&aring;verkan och allergiska hudreaktioner f&ouml;rekommer.</p>\n<h4 id=\"Etambutol\"><a href=\"http://www.lakemedelsboken.se/atc/J04AK02\">Etambutol</a></h4>\n<p><a href=\"http://www.lakemedelsboken.se/atc/J04AK02\">Etambutol</a> (E) har bakteriostatisk effekt och anv&auml;nds i f&ouml;rsta hand som komplement till mer potenta medel f&ouml;r att undvika resistensutveckling. E har god tolerans och l&aring;g biverkningsfrekvens. Levertoxicitet samt hyperurikemi har rapporterats. En ovanlig men allvarlig biverkning &auml;r optikusneurit med nedsatt synsk&auml;rpa och st&ouml;rt f&auml;rgseende. Risken &auml;r &ouml;kad vid dygnsdoser &gt;&nbsp;25&nbsp;mg/kg kroppsvikt och vid nedsatt njurfunktion. Biverkningen &auml;r vanligen reversibel n&auml;r l&auml;kemedlet s&auml;tts ut. Alkoholism och tobaksr&ouml;kning predisponerar f&ouml;r utveckling av optikusneurit. Synsk&auml;rpa och f&auml;rgseende ska kontrolleras regelbundet f&ouml;re och under behandlingen (Faktaruta 5).</p>\n<p></p>\n<h3 id=\"Andrahandslakemedel\">Andrahandsl&auml;kemedel</h3>\n<p>Vid resistens eller intolerans mot f&ouml;rstahandsl&auml;kemedlen anv&auml;nds vanligen injektionspreparat och <a href=\"http://www.lakemedelsboken.se/atc/J01M\">kinoloner</a>. Aminoglykosiden <a href=\"http://www.lakemedelsboken.se/atc/J01GA01\">streptomycin </a><span></span>(licenspreparat; injektionsv&auml;tska) har tidigare anv&auml;nts som injektionspreparat, men har p&aring; grund av h&ouml;g f&ouml;rekomst av resistens under senare &aring;r ersatts med <a href=\"http://www.lakemedelsboken.se/atc/J01GB06\">amikacin</a> som &auml;r l&auml;tt tillg&auml;ngligt och sannolikt har j&auml;mf&ouml;rbar effekt, &auml;ven om kontrollerade studier saknas.</p>\n<h4 id=\"Amikacin\"><a href=\"http://www.lakemedelsboken.se/atc/J01GB06\">Amikacin</a></h4>\n<p><a href=\"http://www.lakemedelsboken.se/atc/J01GA01\">Streptomycin</a> (S) har en v&auml;ldokumenterad baktericid effekt men finns enbart p&aring; licens och anv&auml;nds inte p&aring; grund av h&ouml;g f&ouml;rekomst av resistens (injektionsv&auml;tska). I&nbsp;st&auml;llet anv&auml;nds alternativa aminoglykosider, i f&ouml;rsta hand <a href=\"http://www.lakemedelsboken.se/atc/J01GB06\">amikacin</a><span> (A; </span>injektionsv&auml;tska). En f&ouml;rdel &auml;r att det inte f&ouml;religger korsresistens mellan S och A. <a href=\"http://www.lakemedelsboken.se/atc/J01GB06\">Amikacin</a> kan &auml;ven ges till patienter med leversvikt. F&ouml;r samtliga aminoglykosider finns risk f&ouml;r skador p&aring; h&ouml;rsel- och balansnerven samt njurp&aring;verkan &ndash; risken &auml;r korrelerad till s&aring;v&auml;l daglig dos som totaldos.</p>\n<p>&nbsp;</p>\n<p>Koncentrationsm&auml;tningar b&ouml;r g&ouml;ras kontinuerligt och medlen ska anv&auml;ndas med f&ouml;rsiktighet till &auml;ldre och personer med njursvikt.</p>\n<h4 id=\"Levofloxacin-och-moxifloxacin\"><a href=\"http://www.lakemedelsboken.se/atc/S01AE05-J01MA12\">Levofloxacin</a>&nbsp;och&nbsp;<a href=\"http://www.lakemedelsboken.se/atc/S01AE07-J01MA14\">moxifloxacin</a></h4>\n<p><a href=\"http://www.lakemedelsboken.se/atc/S01AE05-J01MA12\">Levofloxacin</a> och <a href=\"http://www.lakemedelsboken.se/atc/S01AE07-J01MA14\">moxifloxacin</a> &auml;r de <a href=\"http://www.lakemedelsboken.se/atc/J01M\">kinoloner</a> som f&ouml;redras vid tbc-behandling n&auml;r standardl&auml;kemedel beh&ouml;ver ers&auml;ttas eller kompletteras. L&auml;kemedlen har en baktericid effekt och ska inte ges till gravida.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e0196d26-352e-4cfd-9955-3188c902e124",
+			"name": "e0196d26-352e-4cfd-9955-3188c902e124",
+			"type": "text",
+			"content": "<h3 id=\"Behandling-av-multiresistent-tbc\"><span>Behandling av multiresistent tbc</span></h3>\n<p><span>Vid behandling av multiresistent tbc ing&aring;r b&aring;de injektionspreparat och kinoloner som tv&aring; av de fem preparat som rekommenderas om k&auml;nslighet f&ouml;religger. </span>&Auml;ven &auml;ldre preparat som paraaminosalicylsyra (PAS; dosgranulat 4&nbsp;g), <a href=\"http://www.lakemedelsboken.se/atc/J04AD03\">prothionamid</a> ( tabletter 250 mg) och<span>&nbsp;</span><a href=\"http://www.lakemedelsboken.se/atc/J04AB01\">cykloserin</a><span> (tabletter 250 mg)</span>, alla licenspreparat, kan beh&ouml;va ing&aring; i arsenalen vid behandling av multiresistent tbc. Preparat som linezolid (tabletter &nbsp;600&nbsp;mg) och klofazimin (50&nbsp;mg tabletter) kan ocks&aring; vara aktuella i en behandlingsregim f&ouml;r multiresistent tbc.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ddbf0dbf-570c-4416-9dba-739482b1d54a",
+			"name": "ddbf0dbf-570c-4416-9dba-739482b1d54a",
+			"type": "text",
+			"content": "<h3 id=\"Nya-lakemedel\">Nya l&auml;kemedel<o:p></o:p></h3>\n<p>Bedakilin och delamanid &auml;r tv&aring; nya l&auml;kemedel med M.&nbsp;tuberculosis-specifik effekt. B&aring;da preparat godk&auml;ndes 2013 p&aring; basen av fas II-studier f&ouml;r multiresistent tbc (31,32). Fas III-studier p&aring;g&aring;r och resultat inv&auml;ntas (33). Indikationen f&ouml;r b&aring;da preparaten &auml;r behandling av multiresistent tbc d&auml;r andra preparat inte r&auml;cker till f&ouml;r att utforma en adekvat behandling.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e64cc0dc-b9e4-41da-afd3-480380f5160e",
+			"name": "e64cc0dc-b9e4-41da-afd3-480380f5160e",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2>\n<ol class=\"references\"><li id=\"reference_1\"><a href=\"http://www.folkhalsomyndigheten.se/amnesomraden/statistik-och-undersokningar/sjukdomsstatistik/tuberkulos/\">http://www.folkhalsomyndigheten.se/amnesomraden/statistik-och-undersokningar/sjukdomsstatistik/tuberkulos</a></li>\n<li id=\"reference_2\"><a href=\"http://www.who.int/tb/publications/global_report/en/\">http://www.who.int/tb/publications/global_report/en/</a></li>\n<li id=\"reference_3\">Bruchfeld J, Correia-Neves M, K&auml;llenius G. Tuberculosis and HIV co-infection.<a href=\"http://www-ncbi-nlm-nih-gov.proxy.kib.ki.se/pubmed/25722472\"> </a><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/25722472\"><span>Cold Spring Harb Perspect Med</span>. 2015 Feb 26. pii: a017871</a>.</li>\n<li id=\"reference_4\"><span style=\"color: #ff0000;\">Askling et al</span></li>\n<li id=\"reference_5\"><span style=\"color: #ff0000;\">Arkema et a</span>l</li>\n<li id=\"reference_6\">Riley RL. 1974. Airborne infection. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/4212915\">Am J Med 57: 466&ndash;475</a>.</li>\n<li id=\"reference_7\">Nardell EA. Transmission and Institutional Infection Control of Tuberculosis. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/26292985\"><span>Cold Spring Harb Perspect Med</span>. 2015 Aug 20;6(2). pii: a018192</a>.</li>\n<li id=\"reference_8\">Erkens CGM., Kamphorst M., Abubakar I. et al. Tuberculosis contact investigation in low prevalence countries: a European consensus. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/20889463\">Eur Respir J.<span>&nbsp;</span>2010 Oct;36(4):925-49</a>.</li>\n<li id=\"reference_9\"><a href=\"http://www.who.int/tb/publications/latent-tuberculosis-infection/en/\">http://www.who.int/tb/publications/latent-tuberculosis-infection/en/</a></li>\n<li id=\"reference_10\">Loddenkemper R, Lipman M, Zumla A. Clinical aspects of adult Tuberculosis. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/25659379\"><span>Cold Spring Harb Perspect Med</span>. 2015 Feb 6; 6(1):a017848</a>.</li>\n<li id=\"reference_11\">Marais BJ, Schaaf HS. <a href=\"http://www-ncbi-nlm-nih-gov.proxy.kib.ki.se/pubmed/25037105\">Tuberculosis in children.</a> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/25037105\"><span>Cold Spring Harb Perspect Med</span>. 2014 Jul 18;4(9):a017855. doi: 10.1101/cshperspect.a017855.</a></li>\n<li id=\"reference_12\">Tuberkulos &ndash; V&auml;gledning f&ouml;r sjukv&aring;rdspersonal. September 2009. Artikelnr 2009-9-19.<span>&nbsp;</span><br> <span><a href=\"http://www.socialstyrelsen.se/publikationer2009/2009-9-19/Sidor/default.aspx\">www.socialstyrelsen.se</a></span></li>\n<li id=\"reference_13\">Ling DI, Zwerling AA, Pai M. <span>Rapid diagnosis of drug-resistant TB using line probe assays: from evidence to policy.</span> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/20477293\"><span>Expert Rev Respir Med</span>. 2008 Oct;2(5):583-8</a>.</li>\n<li id=\"reference_14\">Pai M, Minion J, Sohn H, et al. Novel and improved technologies for TB diagnosis: progress and challenges.<a href=\"http://www.ncbi.nlm.nih.gov/pubmed/19925962\"><span>&nbsp;</span><span>Clin Chest Med. 2009;30:701&ndash;16.</span></a></li>\n<li id=\"reference_15\">Rekommendationer f&ouml;r preventiva insatser mot tuberkulos &ndash; h&auml;lsokontroll, smittsp&aring;rning och vaccination. 2012 (uppdaterad 2013). Artikelnr 2012-3-16.<span> </span><span><a href=\"http://www.socialstyrelsen.se/publikationer2012/2012-3-16\">www.socialstyrelsen.se</a></span></li>\n<li id=\"reference_16\">Tuberkulosvaccination av riskgrupper <span><a href=\"https://www.folkhalsomyndigheten.se/publicerat-material/publikationer/Tuberkulosvaccination-som-sarskilt-vaccinationsprogram/\">https://www.folkhalsomyndigheten.se/publicerat-material/publikationer/Tuberkulosvaccination-som-sarskilt-vaccinationsprogram/</a></span></li>\n<li id=\"reference_17\">Farhat M, Greenaway C, Pai M, et al. False-positive tuberculin skin tests: what is the absolute effect of BCG and non-tuberculous mycobacteria? <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/17131776\">Int J Tuberc Lung Dis 2006;10(11):1192-1204</a>.</li>\n<li id=\"reference_18\">Pai M, Zwerling A, Menzies D. Systematic Review: T-cell Based Assays for the Diagnosis of Latent Tuberculosis Infection-An Update. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/18593687\">Ann Intern Med 2008;149:177-184</a>.</li>\n<li id=\"reference_19\">Metcalfe JZ, Everett C, Steingart KR et al. Interferon-g Release Assays for Active Pulmonary TB Diagnosis in Low- and Middle-Income Countries: Systematic Review and Meta-Analysis. <a href=\"http://jid.oxfordjournals.org/content/204/suppl_4/S1120.full\">J Infect Dis 2011 204: S1120-S1129</a>.</li>\n<li id=\"reference_20\">van Zyl-Smit R, Pai M, Peprah K et al. Within-subject variability and boosting of T cell IFN-&gamma; responses following tuberculin skin testing. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/19342414\">Am J Resp Crit Care Med 2009;180:49-58</a></li>\n<li id=\"reference_21\"><span>Banaei N</span>,<span>&nbsp;</span><span>Gaur RL</span>,<span>&nbsp;</span><span>Pai M.&nbsp;</span><span> </span>Interferon Gamma Release Assays for Latent<span>&nbsp;</span><span>Tuberculosis</span>: What Are the Sources of Variability? <a href=\"http://jcm.asm.org/content/early/2016/01/07/JCM.02803-15\"><span>J Clin Microbiol. </span>2016;54(4):845-50</a>.</li>\n<li id=\"reference_22\">Sotgiu G, Centis R, D'ambrosio L et al. Tuberculosis treatment and drug regimens. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/25573773\"><span>Cold Spring Harb Perspect Med</span>. 2015 Jan 8;5(5):a017822</a>.</li>\n<li id=\"reference_23\">Caminero JA, Scardigli A. Classification of antituberculosis drugs: a new proposal based on the most recent evidence. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/26424519\"><span>Eur Respir J</span>. 2015;46(4):887-93</a>.</li>\n<li id=\"reference_24\"><a href=\"http://www.who.int/tb/publications/pmdt_companionhandbook/en/\">http://www.who.int/tb/publications/pmdt_companionhandbook/en/</a></li>\n<li id=\"reference_25\"><a href=\"http://www.infektion.net/v&#xE5;rdprogram-f&#xF6;r-bakteriella-cns-infektioner-2010\">http://www.infektion.net/v&aring;rdprogram-f&ouml;r-bakteriella-cns-infektioner-2010</a></li>\n<li id=\"reference_26\">Thwaites G, Fisher M, Hemingway C et al. British Infection Society guidelines for the diagnosis and treatment of tuberculosis of the central nervous system in adults and children. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/19643501\"><span>J Infect</span>. 2009 Sep;59(3):167-87</a>.</li>\n<li id=\"reference_27\"><a href=\"http://www.infpreg.se\">http://www.infpreg.se</a></li>\n<li id=\"reference_28\">Alsultan A, Peloquin CA. Therapeutic drug monitoring in the treatment of tuberculosis: an update.<a href=\"http://www.ncbi.nlm.nih.gov/pubmed/24846578\"> Drugs. 2014;74(8):839-54</a>. Erratum in: Drugs. 2014;74(9):2061. Dosage error in article text</li>\n<li id=\"reference_29\">Mahomed H, Hawkridge T, Verver S et al. The tuberculin skin test versus QuantiFERON TB Gold&reg; in predicting tuberculosis disease in an adolescent cohort study in South Africa. <a href=\"http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0017984\"><span>PLoS One</span>. 2011: 29;6(3):e17984</a>. Erratum in: PLoS One. 2011;6(6). doi:10.1371/annotation/b371be66-de38-4ed6-b440-d27c9d7e552</li>\n<li id=\"reference_30\">Tostmann A., Boeree MJ., Aarnoutse RE., et al. Antituberculosis drug induced hepatotoxicity: Concise up to date review.<a href=\"http://www.ncbi.nlm.nih.gov/pubmed/17995946\"> J Gastr and Hep (2008) 23;192-202</a>.</li>\n<li id=\"reference_31\">Diacon AH,<span>&nbsp;</span>Pym A,<span>&nbsp;</span>Grobusch MP et al. Multidrug-resistant tuberculosis and culture conversion with bedaquiline. <a href=\"http://www.nejm.org/doi/full/10.1056/NEJMoa1313865\">N Engl J Med.<span>&nbsp;</span>2014; 21;371(8):723-32</a>.</li>\n<li id=\"reference_32\">Esposito S, Bianchini S, Blasi F. Bedaquiline and<span>&nbsp;</span>delamanid<span>&nbsp;</span>in tuberculosis. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/26293803\"><span>Expert Opin Pharmacother</span>. 2015;16(15):2319-30</a>.</li>\n<li id=\"reference_33\">Moodley R, Godec TR, STREAM Trial Team. Short-course treatment for multidrug-resistant tuberculosis: the STREAM trials.<a href=\"http://www.ncbi.nlm.nih.gov/pubmed/26929418\"> <span>Eur Respir Rev</span>. 2016 Mar;25(139):29-35</a>.</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/andningsvagar/tuberkulos.json",
+	"modified": "2017-02-28 10:56",
+	"isPublished": true,
+	"indexed": "true"
+}
