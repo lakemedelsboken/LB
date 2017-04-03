@@ -34,6 +34,10 @@ server '89.221.249.140', user: 'deploy', roles: %w{app db web}
 set :stage, :cms
 set :keep_releases, 20
 
+set :default_env, {
+  'SERVER' => 'test'
+}
+
 # Custom SSH Options
 # ==================
 # You may pass any option but keep in mind that net/ssh understands a

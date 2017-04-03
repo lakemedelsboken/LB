@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock '3.7.0'
+lock '3.7.2'
 
 set :application, 'lb'
 set :repo_url, 'https://github.com/lakemedelsboken/LB.git'
@@ -61,7 +61,7 @@ namespace :deploy do
       execute "cd #{release_path}/npl/ && npm install xml-stream"
 
       #rebuild scrypt module
-      #execute "cd #{release_path}/servers/cms/node_modules/scrypt/ && npm install"
+      execute "cd #{release_path}/servers/cms/node_modules/scrypt/ && npm install"
 
       ask(:secretSettingsPassword, nil, echo: false)
 

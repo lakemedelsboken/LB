@@ -38,7 +38,13 @@
 					<li class="divider"></li>
 					<!--<li class="disabled"><a href="#" data-toggle="modal" class="disabled" data-target="#checkLinks"><i class="fa fa-question"></i> Kontrollera länkar...</a></li>
 					<li class="divider"></li>-->
+					<%
+					if (server && server !== "test") {
+					%>
 					<li><a href="#" data-toggle="modal" data-target="#saveContentToGitHub"><i class="fa fa-github"></i> Spara till GitHub...</a></li>
+					<%
+					}
+					%>
 					<!--<li class="divider"></li>
 					<li><a href="#" data-toggle="modal" data-target="#publishExternal"><i class="fa fa-rocket"></i> Publicera live...</a></li>-->
 				</ul>
