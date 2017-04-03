@@ -1,0 +1,48 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "Reviderade kapitel 170328",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "nyhet",
+	"created": "2017-03-28 14:08",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "6acfb08a-d26e-4cb5-a360-a153084096f9",
+			"name": "51e168ca-a558-4b83-9446-b7367e805d37",
+			"type": "text",
+			"content": "<p>I b&ouml;rjan av &aring;ret har vi publicerat f&ouml;ljande reviderade kapitel:<br><br></p>\n<p></p>\n<ul>\n<li><a href=\"{pre}/kapitel/psykiatri/somnstorningar.html\" target=\"_blank\">S&ouml;mnst&ouml;rningar</a></li>\n<li><a href=\"{pre}/kapitel/nefrologi-urologi/sjukdomar_i_manliga_genitalia.html\">Sjukdomar i manliga genitalia</a></li>\n<li><a href=\"{pre}/kapitel/blod/Ven-s-tromboembolism.html\" target=\"_blank\">Ven&ouml;s tromboembolism</a></li>\n<li><a href=\"{pre}/kapitel/ogon/ogonsjukdomar.html\" target=\"_blank\">&Ouml;gonsjukdomar</a></li>\n<li><a href=\"{pre}/kapitel/nefrologi-urologi/njursjukdomar.html\" target=\"_blank\">Njursjukdomar</a></li>\n</ul>\n<p></p>\n<p>Detta inneb&auml;r att versionerna av ovanst&aring;ende kapitel i den tryckta boken LB&nbsp;2014 inte l&auml;ngre &auml;r aktuella.<br><br>Trevlig l&auml;sning!</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/blog/2017-03-28-Reviderade-kapitel.json",
+	"indexed": "true",
+	"modified": "2017-03-28 14:18"
+}
