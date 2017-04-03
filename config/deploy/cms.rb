@@ -32,7 +32,7 @@ server '89.221.249.140', user: 'deploy', roles: %w{app db web}
 # Feel free to add new variables to customise your setup.
 
 set :stage, :cms
-set :keep_releases, 20
+set :keep_releases, 4
 
 set :default_env, {
   'SERVER' => 'test'

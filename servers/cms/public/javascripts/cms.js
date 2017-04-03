@@ -341,6 +341,10 @@ $(document).ready(function() {
 		$("input#revertPagePath").val($(this).attr("data-pagepath"));
 	});
 
+	$("a.publishedButton").on("click", function(event) {
+		$("input#publishPagePath").val($(this).attr("data-pagepath"));
+	});
+
 	$("button.revertToSnapshotButton").on("click", function(event) {
 		$("input#revertPagePath").val($(this).attr("data-pagepath"));
 		$("input#revertVersion").val($(this).attr("data-version"));
@@ -557,9 +561,9 @@ $(document).ready(function() {
 			suggestedSubjects.empty();
 
 			for (var i = 0; i < data.content.length; i++) {
-				
+
 				//{word: word, count: count, meshterm: true|false, synonyms: synonyms}
-				
+
 				var item = data.content[i];
 
 				if (item.meshterm) {
@@ -568,14 +572,14 @@ $(document).ready(function() {
 				} else {
 					suggestedSubjects.append($('<div class="checkbox"><label><input type="checkbox" value="' + item.word + '">' + item.word + '</label></div>'))
 				}
-				
+
 				if (item.synonyms !== "") {
 					//Synonyms in italics
 					suggestedSubjects.append($('<div class="checkbox"><label><input type="checkbox" value="' + item.synonyms + '"><em>' + item.synonyms + '</em></label></div>'))
 				}
 
 			}
-			
+
 			if (data.content.length === 0) {
 				suggestedSubjects.append($('<div class="checkbox">Hittade inga förslag på ämnen</div>'))
 			}
@@ -584,27 +588,27 @@ $(document).ready(function() {
 
 
 	}, 500);
-	
+
 	$("#extractKeywordsButton").on("click", function(event) {
-		
+
 		event.preventDefault();
-		
+
 		$("#subjectSuggestionsModal").modal();
-		
+
 	});
-	
+
 	$("#subjectSuggestionsModal").on("show.bs.modal", function() {
 
 		//Sync suggestions with current written subjects
-		
+
 		var currentSubjects = $("input#subject").val();
-		
+
 		currentSubjects = currentSubjects.split(",");
-		
+
 		for (var i = currentSubjects.length - 1; i >= 0; i--) {
 			currentSubjects[i] = $.trim(currentSubjects[i]);
 		}
-		
+
 		suggestedSubjects.find("input").each(function() {
 			if (currentSubjects.indexOf($(this).attr("value")) > -1) {
 				$(this).prop("checked", true);
@@ -612,7 +616,7 @@ $(document).ready(function() {
 				$(this).prop("checked", false);
 			}
 		});
-		
+
 	});
 
 	suggestedSubjects.on("change", ":checkbox", function() {
@@ -620,7 +624,7 @@ $(document).ready(function() {
 		var word = $(this).val();
 
 		var currentSubjects = $("input#subject").val();
-		
+
 		currentSubjects = currentSubjects.split(",");
 
 		for (var i = currentSubjects.length - 1; i >= 0; i--) {
@@ -629,7 +633,7 @@ $(document).ready(function() {
 				currentSubjects.splice(i, 1);
 			}
 		}
-		
+
 		if ($(this).prop("checked")) {
 			//Check if the value already exists, otherwise add it
 			if (currentSubjects.indexOf(word) === -1) {
@@ -642,10 +646,10 @@ $(document).ready(function() {
 			}
 
 		}
-		
+
 		//Write new values to subject input
 		$("input#subject").val(currentSubjects.join(", "));
-		
+
 	});
 
 	$("#contentTypeFilter").on("change", function(event) {
@@ -754,4 +758,3 @@ $(document).ready(function() {
 	});
 
 });
-

@@ -33,7 +33,7 @@ server 'www.lakemedelsboken.se', user: 'deploy', roles: %w{app db web}
 
 set :stage, :production
 
-set :keep_releases, 100
+set :keep_releases, 30
 set :default_env, {
   'SERVER' => 'production'
 }
