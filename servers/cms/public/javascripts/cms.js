@@ -743,7 +743,7 @@ $(document).ready(function() {
 					{title: 'Tabellrad utan radbrytning', block: 'div', classes: 'tableLine'},
 				],
 				toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media | forecolor backcolor",
-				toolbar2: "fontawesome | removetablelines | removetableparagraphs", //emoticons print preview
+				toolbar2: "fontawesome | removetablelines | removetableparagraphs | visualchars | nonbreaking", //emoticons print preview
 				image_advtab: true,
 				valid_elements: "*[*]",
 				extended_valid_elements: "span[class|style]",
@@ -751,7 +751,7 @@ $(document).ready(function() {
 				templates: [
 				],
 				convert_urls: false
-			});
+				});
 
 		}
 
