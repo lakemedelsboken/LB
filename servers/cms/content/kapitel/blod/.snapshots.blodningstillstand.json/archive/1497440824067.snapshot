@@ -1,0 +1,866 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Blödningstillstånd | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-09 00:54",
+	"published": "2015-07-09 00:54",
+	"validUntil": "",
+	"createdBy": "Jan Astermark",
+	"replacesUrl": "/d3_blo_blodning_2013fm10.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "a8dddaa5-b5c5-427d-9ce2-fc55f3bdcc09",
+			"name": "a8dddaa5-b5c5-427d-9ce2-fc55f3bdcc09",
+			"type": "author",
+			"content": {
+				"firstname": "Jan",
+				"surname": "Astermark",
+				"description": "Hematologi- och koagulationskliniken, Skånes universitetssjukhus, Malmö",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "917974e6-554c-47db-88cc-8efca03c012a",
+			"name": "917974e6-554c-47db-88cc-8efca03c012a",
+			"type": "text",
+			"content": "<h1 id=\"Blodningstillstand\">Bl&ouml;dningstillst&aring;nd</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7798cc50-2979-414f-98b5-c8c09225e850",
+			"name": "7798cc50-2979-414f-98b5-c8c09225e850",
+			"type": "text",
+			"content": "<h2 id=\"Inledning\">Inledning</h2>\n<p><strong>Bl&ouml;dningssymtom upptr&auml;der vid st&ouml;rningar i hemostasprocessens olika delmoment (prim&auml;r hemostas, plasmakoagulation och fibrinolys) och kan orsakas av medf&ouml;dda och/eller f&ouml;rv&auml;rvade defekter. Eftersom bl&ouml;dningssymtom &auml;r vanligt f&ouml;rekommande i normalbefolkningen och i m&aring;nga fall inte b&ouml;r utredas vidare &auml;r anamnesen betydelsefull. Tillg&auml;ngliga laboratorieunders&ouml;kningar ska ses som ett komplement.<br><br></strong></p>\n<p><strong>St&ouml;rningar i trombocytfunktionen &auml;r sannolikt den vanligaste orsaken till &ouml;kad bl&ouml;dningsben&auml;genhet och m&aring;nga av dessa fall &auml;r av f&ouml;rv&auml;rvad natur. Defekter i plasmakoagulationen &auml;r ofta medf&ouml;dda och &auml;rftliga, men kan ocks&aring; vara f&ouml;rv&auml;rvade i samband med i f&ouml;rsta hand leversjukdom och behandling med </strong><strong>antikoagulantia</strong><strong>. Disseminerad intravasal koagulation (DIC) utg&ouml;r en komplex st&ouml;rning i hemostasen med konsumtion av olika koagulationsfaktorer och successivt tilltagande bl&ouml;dningstendens.</strong></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "159e1cbf-2b98-4a6b-8681-5ba0ab7a3112",
+			"name": "159e1cbf-2b98-4a6b-8681-5ba0ab7a3112",
+			"type": "text",
+			"content": "<h2 id=\"Utredning\">Utredning</h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "637739fe-e9b4-4c08-ba5b-5b7c187ed2e1",
+			"name": "637739fe-e9b4-4c08-ba5b-5b7c187ed2e1",
+			"type": "text",
+			"content": "<h3 id=\"d3_2\">Anamnes</h3>\n<p><span style=\"color: #000000;\">Eftersom bl&ouml;dningssymtom &auml;r vanligt f&ouml;rekommande i befolkningen &auml;r en noggrann bl&ouml;dningsanamnes v&auml;sentlig f&ouml;r den vidare handl&auml;ggningen. F&ouml;r &auml;ndam&aring;let har olika scoresystem f&ouml;reslagits d&auml;r bl&ouml;dningstyp och sv&aring;righetsgrad v&auml;rderas (1,2). Eventuella bl&ouml;dningar fr&aring;n slemhinnor, muskler och leder liksom bl&ouml;dningar som uppst&aring;tt vid operationer, f&ouml;rlossningar och/eller tandextraktioner ges po&auml;ng enligt en s&auml;rskild mall. Individer med bl&ouml;dningsrubbningar har oftast flera symtom och vid endast en bl&ouml;dningslokalisering ska i f&ouml;rsta hand lokala orsaker misst&auml;nkas. Vid klassisk bl&ouml;darsjuka ses ofta spontana ledbl&ouml;dningar, medan mildare former ofta har mycket lite spontana bl&ouml;dningsbesv&auml;r och d&auml;rf&ouml;r kan vara sv&aring;ra att identifiera anamnestiskt. Defekter i den prim&auml;ra hemostasen ger i f&ouml;rsta hand slemhinnebl&ouml;dningar. &Auml;rftlighet &auml;r en viktig faktor att utv&auml;rdera och i f&ouml;rekommande fall ska sl&auml;ktutredning &ouml;verv&auml;gas. L&auml;kemedel med p&aring;verkan p&aring; trombocytfunktionen (till exempel acetylsalicylsyra, NSAID, tikagrelor och klopidogrel) eller plasmakoagulationen (till exempel warfarin, trombin- eller faktor&nbsp;X-h&auml;mmare och fraktionerat eller ofraktionerat heparin<span style=\"text-decoration: line-through;\"></span>) kan orsaka bl&ouml;dningssymtom och ska uteslutas som m&ouml;jlig orsak. Detta g&auml;ller &auml;ven anv&auml;ndandet av naturmedel, som i vissa fall sammankopplats med &ouml;kad bl&ouml;dningstendens.</span></p>\n<h3 id=\"d3_6\"><span style=\"color: #000000;\">Fysikalisk unders&ouml;kning</span></h3>\n<p><span style=\"color: #000000;\">Vid rubbningar i den prim&auml;ra hemostasen &auml;r petekier och slemhinnebl&ouml;dningar vanligast, men vid sv&aring;rare st&ouml;rningar kan &auml;ven andra typer av bl&ouml;dningar ses. St&ouml;rre och frekventa bl&aring;m&auml;rken samt led- och muskelbl&ouml;dningar b&ouml;r i f&ouml;rsta hand inge misstanke om en st&ouml;rning i plasmakoagulationen. Andra f&ouml;rklaringar s&aring;som misshandel b&ouml;r ocks&aring; &ouml;verv&auml;gas. Lever, mj&auml;lte och lymfk&ouml;rtlar b&ouml;r palperas i differentialdiagnostiskt syfte.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5ac20b62-0f6e-49c9-bcf3-6b9060b69d7f",
+			"name": "5ac20b62-0f6e-49c9-bcf3-6b9060b69d7f",
+			"type": "text",
+			"content": "<h3 id=\"d3_7\">Laboratorieutredning</h3>\n<p>Blodstatus med Hb, LPK, differentialr&auml;kning och <span class=\"updated\" style=\"color: #000000;\">TPK</span> ska prim&auml;rt analyseras f&ouml;r att utesluta anemi, trombocytopeni samt malign blodsjukdom.<span class=\"updated\"><br></span></p>\n<p><span class=\"updated\"><br></span><span style=\"color: #000000;\">Plasmakoagulationsanalyserna APTT och PK(INR) finns tillg&auml;ngliga p&aring; de flesta sjukhuslaboratorier.</span> APTT<span style=\"text-decoration: line-through;\"></span> m&auml;ts i sekunder och<span style=\"text-decoration: line-through;\"></span> <span class=\"updated\" style=\"color: #000000;\">anv&auml;nds i bl&ouml;dningsutredning f&ouml;r att p&aring;visa</span> brister i koagulationsproteinernas aktivitet <span style=\"text-decoration: line-through;\"></span>via en f&ouml;rl&auml;ng<span style=\"color: #000000;\">ning av koagulationstiden,<span style=\"text-decoration: line-through;\"><span style=\"text-decoration: underline;\"></span></span><span class=\"updated\"><span style=\"text-decoration: line-through;\"></span> <span style=\"color: #000000;\">med undantag</span></span></span><span style=\"text-decoration: line-through;\"></span> f&ouml;r faktor VII<span class=\"updated\"><span style=\"color: #000000;\">-</span></span> och faktor XIII-<span style=\"color: #000000;\">brist, vilka ger normal APTT</span>. Tider &gt;&nbsp;150 sekunder orsakas <span class=\"updated\"><span style=\"color: #000000;\">vanligtvis</span></span> av heparinkontamination, faktor&nbsp;XII- eller fibrinogenbrist. De l&aring;gmolekyl&auml;ra heparinerna p&aring;verkar i terapeutiska doser APT-tiden endast i mindre omfattning. Vid klassisk bl&ouml;darsjuka med brist p&aring; faktor VIII (FVIII) eller IX (FIX) och andra medf&ouml;dda koagulationsdefekter erh&aring;lls vanligen <span style=\"color: #000000;\">f&ouml;rl&auml;ngda APT-</span>tider. <span style=\"text-decoration: line-through;\"></span>Det finns en rad olika APTT-reagens vilket g&ouml;r att resultaten<span style=\"text-decoration: line-through;\"></span> <span class=\"updated\" style=\"color: #000000;\">fr&aring;n</span> olika laboratorier &auml;r sv&aring;ra att j&auml;mf&ouml;ra. <span style=\"color: #000000;\">F&ouml;rekomst av antikroppar som binder fosfolipidbindande proteiner (s&aring; kallad </span>Lupus antikoagulans<span style=\"color: #000000;\">)</span> ger <span style=\"color: #000000;\">ocks&aring;</span> ofta en f&ouml;rl&auml;ngning av APT-tiden men orsakar normalt sett inte bl&ouml;dningar utan &ouml;kar ist&auml;llet trombosrisken.</p>\n<p><br>PK(INR) m&auml;ter totalaktiviteten av de K-vitaminberoende faktorerna II, VII och X. Vid brist p&aring; en eller flera av dessa &ouml;kar INR-v&auml;rdet. Om isolerad brist misst&auml;nks kan de specifika faktoraktiviteterna m&auml;tas vid ett speciallaboratorium. Isolerad brist tyder p&aring; medf&ouml;dd rubbning medan en s&auml;nkt aktivitet av flera faktorer tyder p&aring; antivitamin K (AVK)-behandling, K-vitaminbrist eller leversjukdom.</p>\n<p><span style=\"text-decoration: line-through;\"><br></span><span class=\"updated\" style=\"color: #000000;\">F&ouml;r utv&auml;rdering av den prim&auml;ra hemostasen beh&ouml;vs</span><span style=\"text-decoration: line-through;\"></span> specifika tester av trombocyternas f&ouml;rm&aring;ga till adhesion och aggregation<span style=\"text-decoration: line-through;\"></span> och dessa finns tillg&auml;ngliga p&aring; speciallaboratorier.<span class=\"updated\"><span style=\"color: #000000;\"> &Auml;ven genetiska tester kan idag erbjudas i specifika fall. Viskoelastiska metoder (ROTEM, TEG) kan vara av v&auml;rde fr&auml;mst f&ouml;r att styra transfusionsbehovet i samband med en akut bl&ouml;dning</span></span><span style=\"color: #000000;\">. Bl&ouml;dningstidsbest&auml;mning har l&aring;g sensitivitet och specificitet och rekommenderas inte</span>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "029480f0-1478-4143-b65c-b894c62a9291",
+			"name": "029480f0-1478-4143-b65c-b894c62a9291",
+			"type": "text",
+			"content": "<h2 id=\"d3_8\">Prim&auml;r hemostasrubbning</h2>\n<h3 id=\"d3_9\">Trombocytopeni</h3>\n<p>Trombocyter bildas i benm&auml;rgen av megakaryocyter och lever normalt sett i cirka en vecka. Brist p&aring; trombocyter kan uppst&aring; vid en rad olika tillst&aring;nd och beror p&aring; minskad produktion och/eller &ouml;kad konsumtion (<a href=\"{pre}/kapitel/blod/blodningstillstand.html#facts_1_header\" target=\"_blank\">Faktaruta 1</a>).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "882b9b5d-798e-41fa-8d85-f9632710ed6a",
+			"name": "882b9b5d-798e-41fa-8d85-f9632710ed6a",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"73668\"></a>Differentialdiagnoser vid <a class=\"index\" id=\"1044129\" data-text=\"trombocytopeni:differentialdiagnoser\"></a>trombocytopeni",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><br />Minskad produktion</p>\r\n<ul>\r\n<li>Prim&auml;r benm&auml;rgssjukdom (akut leukemi, myelodysplastiskt syndrom (MDS), myelom, lymfoproliferativ sjukdom, aplastisk anemi)</li>\r\n</ul>\r\n<ul>\r\n<li>Benm&auml;rgsfr&auml;mmande celler</li>\r\n</ul>\r\n<ul>\r\n<li>L&auml;kemedel</li>\r\n</ul>\r\n<ul>\r\n<li>Alkohol</li>\r\n</ul>\r\n<ul>\r\n<li>Heredit&auml;ra trombocytopenier</li>\r\n</ul>\r\n<ul>\r\n<li>Immunologisk trombocytopeni (ITP)</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><br />&Ouml;kad destruktion</p>\r\n<ul>\r\n<li>Immunologisk trombocytopeni (ITP) samt annan antikroppsmedierad destruktion</li>\r\n</ul>\r\n<ul>\r\n<li>Heparininducerad trombocytopeni (HIT)</li>\r\n</ul>\r\n<ul>\r\n<li>Hypersplenism</li>\r\n</ul>\r\n<ul>\r\n<li>Trombotisk trombocytopen purpura (TTP/TMA)</li>\r\n</ul>\r\n<ul>\r\n<li>Disseminerad intravasal koagulation (DIC)</li>\r\n</ul>\r\n<ul>\r\n<li>Nephropathia epidemica</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "d3_11"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5ed075cb-48f0-4e58-949e-dce9e12e9c96",
+			"name": "5ed075cb-48f0-4e58-949e-dce9e12e9c96",
+			"type": "text",
+			"content": "<h3 id=\"Minskad-produktion\">Minskad produktion</h3>\n<p>Trombocytopeni ses ofta vid olika typer av benm&auml;rgssjukdomar s&aring;som akut leukemi, lymfoproliferativa sjukdomar, myelodysplastiska syndrom, aplastisk anemi samt vid infiltration i benm&auml;rgen av benm&auml;rgsfr&auml;mmande celler. Antalet megakaryocyter &auml;r mindre &auml;n normalt och vanligtvis &auml;r trombocytopenin inte isolerad utan kombinerad med f&ouml;r&auml;ndringar i den r&ouml;da och vita blodkroppsbilden.</p>\n<p><br>Flera olika l&auml;kemedel vid sidan av cytostatika kan p&aring;verka megakaryocyterna negativt och ge upphov till trombocytopeni, i&nbsp;vissa fall i kombination med andra blodbildsf&ouml;r&auml;ndringar. Alkohol har en toxisk effekt p&aring; benm&auml;rgen. Vanligtvis &auml;r dessa benm&auml;rgseffekter reversibla d&aring; exponeringen upph&ouml;r.</p>\n<p><br>S&auml;llsynta former av heredit&auml;ra trombocytopenier med varierande patogenes finns beskrivna och ska i brist p&aring; andra f&ouml;rklaringar uteslutas. Vid vissa av dessa tillst&aring;nd ses en avvikande trombocytmorfologi.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a618411a-d1e3-4211-8d77-aa3aac172f4d",
+			"name": "a618411a-d1e3-4211-8d77-aa3aac172f4d",
+			"type": "text",
+			"content": "<h3 id=\"d3_15\">&Ouml;kad destruktion</h3>\n<p>Trombocytopeni orsakad av &ouml;kad destruktion &auml;r oftast isolerad, immunologiskt utl&ouml;st och orsakad av antikroppar. Dessa autoantikroppar binder till trombocytytan och stimulerar makrofagernas fagocytos i framf&ouml;r allt mj&auml;lte men till viss del &auml;ven i benm&auml;rg och lever. Benm&auml;rgens normala svar p&aring; denna destruktion &auml;r &ouml;kad produktion av trombocyter och vid benm&auml;rgsunders&ouml;kning ses oftast en normal eller &ouml;kad m&auml;ngd megakaryocyter.</p>\n<p><br>Den vanligaste formen av immunologiskt orsakad trombocytopeni &auml;r immunologisk trombocytopeni (ITP) (3)<span style=\"text-decoration: line-through;\"></span>. Detta &auml;r en autoimmun sjukdom med en incidens hos vuxna p&aring; 1,6&ndash;3,9&nbsp;fall/100&nbsp;000 inv&aring;nare och &aring;r. B&aring;de trombocyterna och megakaryocyterna &auml;r engagerade med &ouml;kad perifer destruktion samt minskad produktion i benm&auml;rgen.</p>\n<p><br>Sjukdomen ben&auml;mndes tidigare idiopatisk trombocytopen purpura, men eftersom det nu &auml;r klarlagt att det &auml;r en autoimmun genes och att bl&ouml;dningssymtom inte alltid upptr&auml;der har ben&auml;mningen &auml;ndrats till immunologisk trombocytopeni och gr&auml;nsen f&ouml;r trombocytopeni har satts vid &lt;&nbsp;100&nbsp;x&nbsp;10<sup>9</sup>/L.</p>\n<p><br>Ben&auml;mningarna akut och kronisk ITP har ersatts av nydiagnostiserad ITP under de f&ouml;rsta 3 m&aring;naderna, persisterande ITP mellan 3 och 12 m&aring;nader samt kronisk ITP om trombocytopenin varar &gt;&nbsp;12 m&aring;nader. Refrakt&auml;r ITP karakteriseras av en prim&auml;r ITP-sjukdom som &auml;r behandlingskr&auml;vande trots genomf&ouml;rd splenektomi. Hos barn ses ofta en snabbt &ouml;verg&aring;ende ITP som debuterar i anslutning till en virusinfektion och normaliseras hos 90&nbsp;% inom 6&nbsp;m&aring;nader. ITP hos vuxna blir dock ofta kronisk.</p>\n<p><br>ITP-sjukdomen kan vara prim&auml;r alternativt sekund&auml;r till ett annat bakomliggande tillst&aring;nd, s&aring;som systemisk lupus erythematosus (SLE), hepatit C, hiv, Helicobacter pylori-infektion, samt lymfoproliferativ sjukdom eller orsakad av l&auml;kemedel.</p>\n<p><br>Posttransfusionspurpura ses framf&ouml;r allt hos kvinnor som genomg&aring;tt flera graviditeter, men &auml;ven hos m&auml;n och orsakas av en immunisering mot vanligtvis trombocytalloantigenet HPA-1 (human platelet antigen&nbsp;1). Trombocytfallet, som kan utvecklas snabbt till l&aring;ga niv&aring;er, ses vanligtvis drygt 1&nbsp;vecka efter transfusionen, men kan &auml;ven upptr&auml;da tidigare eller senare, upp till n&aring;gra veckor. Trombocytniv&aring;erna &aring;terh&auml;mtar sig vanligen spontant och beh&ouml;ver s&auml;llan behandlas, men skulle s&aring; vara fallet &auml;r intraven&ouml;s behandling med gammaglobuliner f&ouml;rstahandsalternativet.</p>\n<p><br>Immunisering av modern med trombocytantigener fr&aring;n fostret kan orsaka fetal neonatal alloimmun trombocytopeni (FNAIT). IgG-antikroppar fr&aring;n modern inducerar d&aring; en destruktion av fostrets trombocyter och symtomen kan vara alltifr&aring;n symtomfrihet till sm&auml;rre bl&ouml;dningar vid f&ouml;dseln och intrakraniella eller andra livshotande bl&ouml;dningar. Vid klinisk misstanke ska neonatal expertis kontaktas. Behandlingen utg&ouml;rs av immunglobuliner till modern, eventuellt trombocyttransfusioner och kejsarsnitt vid mycket l&aring;ga trombocyttal<span style=\"text-decoration: line-through;\"></span>. Trombocytniv&aring;erna hos barnet &aring;terg&aring;r till det normala inom n&aring;gra veckor i takt med att antikropparna f&ouml;rsvinner.</p>\n<p><br>Refrakt&auml;ritet mot trombocyttransfusioner kan vanligen undvikas genom att anv&auml;nda filtrerade blodprodukter.</p>\n<p><br>Vid sidan av den toxiska effekten som vissa l&auml;kemedel kan ut&ouml;va p&aring; benm&auml;rgen, finns &auml;ven l&auml;kemedel som p&aring; immunologisk v&auml;g kan &ouml;ka destruktionen. I f&ouml;rsta hand g&auml;ller detta kinin, kinidin, sulfonamider och hepariner (heparininducerad trombocytopeni, HIT). Dessa fall &auml;r ofta &ouml;verg&aring;ende och trombocytantalet normaliseras d&aring; exponeringen upph&ouml;r. D&auml;remot &aring;terkommer den eventuellt vid f&ouml;rnyad exponering.</p>\n<p>Se &auml;ven kapitlet L&auml;kemedelsbiverkningar, <a href=\"{pre}/kapitel/lakemedelsanvandning/lakemedelsbiverkningar.html#Blod\" target=\"_blank\">avsnittet Blod</a>.</p>\n<p><br>HIT f&ouml;rekommer i 2 former, typ&nbsp;I och II (4,5)<span style=\"text-decoration: line-through;\"></span>. Orsaken till typ&nbsp;I &auml;r oklar, men vanligen ses en lindrig trombocytopeni utan att detta skapar kliniska problem. Typ&nbsp;II orsakas av IgG-antikroppar mot trombocytfaktor&nbsp;4 (TF4). Dessa antikroppar binder TF4 i n&auml;rvaro av hepariner och aktiverar trombocyterna. Trombocytantalet sjunker vanligen till &lt;&nbsp;50&nbsp;x&nbsp;10<sup>9</sup>/L inom 5&ndash;10&nbsp;dagar efter insatt behandling och risken f&ouml;r ven&ouml;s trombos &auml;r stor. &Auml;ven arteriella tromboser kan f&ouml;rekomma. Om patienten tidigare exponerats f&ouml;r hepariner kan reaktionen ses redan inom n&aring;got dygn. Risken &auml;r betydligt h&ouml;gre med ofraktionerat heparin &auml;n med l&aring;gmolekyl&auml;ra former. Sannolikheten f&ouml;r HIT kan uppskattas med hj&auml;lp av ett score-system, &rdquo;fyra&nbsp;T&rdquo; (<a href=\"{pre}/kapitel/blod/blodningstillstand.html#d3_16\">Tabell 1</a>), och kompletteras med antikroppsdiagnostik. Vid HIT ska heparinbehandlingen s&auml;ttas ut och alternativt antikoagulantium ges i f&ouml;rsta hand i form av trombinh&auml;mmare och/eller h&auml;mmare av faktor&nbsp;Xa.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b615129e-1952-4bf2-bba5-28bda94789ff",
+			"name": "b615129e-1952-4bf2-bba5-28bda94789ff",
+			"type": "tablewide",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"52660\"></a>Diagnostik av och sannolikhet för <a class=\"index\" id=\"1044184\" data-text=\"heparininducerad trombocytopeni\"></a>heparininducerad trombocytopeni (HIT) enligt ”Fyra T” ",
+				"id": "d3_16",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>&nbsp;</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>2 po&auml;ng</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>1 po&auml;ng</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>0 po&auml;ng</strong></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Trombocytopeni</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&gt;&nbsp;50% trombocytfall till</div>\r\n<div class=\"tableLine\">&ge;&nbsp;20&nbsp;x&nbsp;10<sup>9</sup>/l</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">30&ndash;50&nbsp;% trombocytfall</div>\r\n<div class=\"tableLine\"><span style=\"font-style: italic;\">eller</span> en niv&aring; mellan</div>\r\n<div class=\"tableLine\">10&nbsp;och&nbsp;19&nbsp;x&nbsp;10<sup>9</sup>/l</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&lt;&nbsp;30&nbsp;% trombocytfall</div>\r\n<div class=\"tableLine\"><span style=\"font-style: italic;\">eller</span> en niv&aring; &lt;&nbsp;10&nbsp;x&nbsp;10<sup>9</sup>/l</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Tidsintervall</strong></div>\r\n<div class=\"tableLine\">(dag 0 motsvarar</div>\r\n<div class=\"tableLine\">f&ouml;rsta heparindosen)</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">5&ndash;10&nbsp;dagar</div>\r\n<div class=\"tableLine\"><span style=\"font-style: italic;\">eller </span>1&nbsp;dag vid tidigare<br />exponering f&ouml;r heparin<br />inom 30&nbsp;dagar<br /><br /></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&gt;&nbsp;10 dagar</div>\r\n<div class=\"tableLine\"><span style=\"font-style: italic;\">eller </span>oklart tidsintervall</div>\r\n<div class=\"tableLine\"><span style=\"font-style: italic;\">eller</span> &lt;&nbsp;1&nbsp;dag vid tidigare<br />exponering f&ouml;r heparin<br />f&ouml;r 31&ndash;100&nbsp;dagar sedan</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&lt;&nbsp;5 dagar utan tidigare<br />exponering f&ouml;r heparin</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Trombos</strong> eller</div>\r\n<div class=\"tableLine\">annan f&ouml;r&auml;ndring</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Verifierad ny trombos</div>\r\n<div class=\"tableLine\"><span style=\"font-style: italic;\">eller </span>hudnekros</div>\r\n<div class=\"tableLine\"><span style=\"font-style: italic;\">eller</span> akut systemreaktion <br />efter ofraktionerat heparin <br />intraven&ouml;st</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Progressiv eller <br />&aring;terkommande trombos</div>\r\n<div class=\"tableLine\"><span style=\"font-style: italic;\">eller </span>misst&auml;nkt men ej<br />verifierad trombos</div>\r\n<div class=\"tableLine\"><span style=\"font-style: italic;\">eller </span>rodnad hudf&ouml;r&auml;ndring</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Ingen</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Trombocytopeni</strong></div>\r\n<div class=\"tableLine\">av annan orsak</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Ingen annan uppenbar orsak</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">M&ouml;jlig annan orsak</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Klarlagd annan orsak</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "53cde447-fc19-4a11-abe5-643f43e12838",
+			"name": "53cde447-fc19-4a11-abe5-643f43e12838",
+			"type": "text",
+			"content": "<p>Poolen av trombocyter lokaliserad till mj&auml;lten &ouml;kar med &ouml;kad mj&auml;ltvolym (splenomegali) och vid oklar trombocytopeni med eller utan annan f&ouml;r&auml;ndring av blodbilden ska mj&auml;ltf&ouml;rstoring uteslutas (hypersplenism) samt i f&ouml;rekommande fall en f&ouml;rklaring till denna f&ouml;rstoring s&aring;som portal hypertension, lymfo- och myeloproliferativa sjukdomar utv&auml;rderas.</p>\n<p><br>Trombotisk trombocytopen purpura (TTP) orsakas av brist p&aring; enzymet ADAMTS <span style=\"text-decoration: line-through;\"></span><span style=\"text-decoration: line-through;\"></span>(6,7)<span style=\"color: #ff0000;\"><span style=\"color: #000000;\">.</span></span> Detta enzym bryter ned von Willebrandfaktorns h&ouml;gmolekyl&auml;ra subenheter och brist p&aring; detta enzym leder till trombbildning i de sm&aring; k&auml;rlen till f&ouml;ljd av trombocytaggregation. Dessutom ses trombocytopeni samt i typfallet hemolytisk anemi, neurologiska symtom, njurp&aring;verkan och feber. I flertalet fall orsakas enzymbristen av autoantikroppar mot enzymet, men en &auml;rftlig form med genetisk bakgrund f&ouml;rekommer ocks&aring; (Upshaw-Schulman-syndrom). Behandlingen utg&ouml;rs av plasmaferes och plasmatransfusioner. Trombocyttransfusioner ska dock inte ges d&aring; dessa kan aggravera den kliniska bilden.</p>\n<p><br>Trombocytopeni uppst&aring;r &auml;ven i samband med generella st&ouml;rningar i hemostasen av typ disseminerad intravasal koagulation (DIC), d&auml;r vid sidan av trombocytkonsumtionen &auml;ven <span>koagulationsfaktorer</span> och deras h&auml;mmare f&ouml;rbrukas.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "40c7afdd-cb4a-44e6-9ad1-f06854219da9",
+			"name": "40c7afdd-cb4a-44e6-9ad1-f06854219da9",
+			"type": "text",
+			"content": "<h3 id=\"d3_17\">Utredning</h3>\n<p>Vid isolerad trombocytopeni utan p&aring;verkan p&aring; de &ouml;vriga hemostasproverna ska utredningen kompletteras enligt <a href=\"{pre}/kapitel/blod/blodningstillstand2.html#facts_2_header\">Faktaruta 2</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "93c3ecac-34a6-4bf8-93c4-24e6ad88ef54",
+			"name": "93c3ecac-34a6-4bf8-93c4-24e6ad88ef54",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "Diagnostik vid isolerad trombocytopeni ",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Konfirmera trombocytopenin med manuell granskning och uteslut pseudotrombocytopeni</li>\r\n</ul>\r\n<ul>\r\n<li>Vitamin B<sub>12</sub> och folsyra</li>\r\n</ul>\r\n<ul>\r\n<li><span>Elektrolyter</span>, S-kreatinin</li>\r\n</ul>\r\n<ul>\r\n<li>Leverprover, S-elfores</li>\r\n</ul>\r\n<ul>\r\n<li>Tyreoideaprover</li>\r\n</ul>\r\n<ul>\r\n<li>Hepatit A, B och C samt hiv</li>\r\n</ul>\r\n<ul>\r\n<li>Autoimmun screening inklusive ANA</li>\r\n</ul>\r\n<ul>\r\n<li>Graviditetstest</li>\r\n</ul>\r\n<ul>\r\n<li>&Ouml;verv&auml;g H. pylori-diagnostik</li>\r\n</ul>\r\n<ul>\r\n<li>&Ouml;verv&auml;g benm&auml;rgsaspiration och biopsi</li>\r\n</ul>\r\n<ul>\r\n<li>&Ouml;verv&auml;g antifosfolipidantikroppar</li>\r\n</ul>\r\n<ul>\r\n<li>&Ouml;verv&auml;g von Willebrands sjukdom typ 2B</li>\r\n</ul>\r\n<ul>\r\n<li>&Ouml;verv&auml;g plasma-trombopoietin</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "d3_19"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "cc6ea8ec-8737-4e07-8a4d-d56f89b1f1ee",
+			"name": "cc6ea8ec-8737-4e07-8a4d-d56f89b1f1ee",
+			"type": "text",
+			"content": "<p><span></span>Pseudotrombocytopeni kan ses n&auml;r trombocytantalet best&auml;mts i ett EDTA-inneh&aring;llande provr&ouml;r. EDTA har n&auml;mligen en f&ouml;rm&aring;ga att aggregera trombocyterna och d&auml;rigenom i analysapparaten generera falskt l&aring;ga v&auml;rden. Detta uppst&aring;r exempelvis inte i citratr&ouml;r. En pseudotrombocytopeni kan ocks&aring; avsl&ouml;jas genom manuell granskning av ett kapill&auml;rt blodutstryk. Huvudsyftet med &ouml;vrig provtagning &auml;r att utesluta andra orsaker till trombocytopenin.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1d42fbf8-ffcc-4616-936a-3167c9f64425",
+			"name": "1d42fbf8-ffcc-4616-936a-3167c9f64425",
+			"type": "text",
+			"content": "<h3 id=\"d3_20\">Behandling</h3>\n<p>Huvudprincipen vid trombocytopeni &auml;r att behandla bl&ouml;dningar samt att rikta behandlingen mot den bakomliggande grund&aring;komman. Specifik behandling kan ges i syfte att minska destruktionen och/eller &ouml;ka produktionen av trombocyter.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a708aec5-2b21-4a75-97c2-11f6904f2087",
+			"name": "a708aec5-2b21-4a75-97c2-11f6904f2087",
+			"type": "text",
+			"content": "<h3 id=\"Behandling-i-syfte-att-minska-blodningssymtomen\">Behandling i syfte att minska bl&ouml;dningssymtomen<em><br></em></h3>\n<p>Bl&ouml;dningssymtom &auml;r s&auml;llsynta vid trombocytniv&aring;er &gt;&nbsp;50&nbsp;x&nbsp;10<sup><span style=\"font-size: small;\">9</span></sup>/l och sv&aring;rare bl&ouml;dningar uppkommer vanligen f&ouml;rst vid v&auml;rden &lt;&nbsp;10&ndash;20&nbsp;x&nbsp;10<sup><span style=\"font-size: small;\">9</span></sup>/l. Risken f&ouml;r bl&ouml;dning &auml;r generellt sett st&ouml;rre vid h&ouml;g &aring;lder.</p>\n<p>I <a href=\"{pre}/kapitel/blod/blodningstillstand.html#facts_3_header\">Faktaruta 3</a> anges riktniv&aring;er f&ouml;r olika ingrepp.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d10c954d-43bf-4aec-b305-530abe7d1701",
+			"name": "d10c954d-43bf-4aec-b305-530abe7d1701",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "<a class=\"crossref\" id=\"51947\"></a>Rekommenderade <a class=\"index\" id=\"1044282\" data-text=\"trombocytniv&#xE5;:vid olika ingrepp\"></a>trombocytnivåer  vid olika typer av ingrepp enligt BCSH Guidelines (5)",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Tandv&aring;rd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&ge;&nbsp;10&nbsp;x&nbsp;10<sup>9</sup>/l</li>\r\n</ul>\r\n<ul>\r\n<li>Tandextraktioner&nbsp; &nbsp;&ge;&nbsp;30&nbsp;x&nbsp;10<sup>9</sup>/l</li>\r\n</ul>\r\n<ul>\r\n<li>Ledningsanestesi&nbsp; &nbsp;&ge;&nbsp;30&nbsp;x&nbsp;10<sup>9</sup>/l</li>\r\n</ul>\r\n<ul>\r\n<li>Mindre kirurgi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&ge;&nbsp;50&nbsp;x&nbsp;10<sup>9</sup>/l</li>\r\n</ul>\r\n<ul>\r\n<li>Avancerad kirurgi &nbsp;&ge;&nbsp;80&nbsp;x&nbsp;10<sup>9</sup>/l</li>\r\n</ul>\r\n<h4>Obstetrik</h4>\r\n<p>&nbsp;&nbsp;&nbsp;&ndash; Under graviditet&nbsp;&nbsp; &nbsp;&ge;&nbsp;20&ndash;30&nbsp;x&nbsp;10<sup>9</sup>/l</p>\r\n<p>&nbsp;&nbsp;&nbsp;&ndash; Vaginal f&ouml;rlossning/kejsarsnitt&nbsp;&nbsp; &nbsp;&ge;&nbsp;50&nbsp;x&nbsp;10<sup>9</sup>/l</p>\r\n<p>&nbsp;&nbsp;&nbsp;&ndash; Vaginal f&ouml;rlossning/kejsarsnitt med epidural&nbsp;anestesi&nbsp;&nbsp; &nbsp;&ge;&nbsp;80&nbsp;x&nbsp;10<sup>9</sup>/l</p>\r\n<p></p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": "d3_23"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7393fc93-7f55-44d8-8eeb-b8f29d3cc843",
+			"name": "7393fc93-7f55-44d8-8eeb-b8f29d3cc843",
+			"type": "text",
+			"content": "<p>Tranexamsyra h&auml;mmar fibrinolysen och kan oavsett orsak till trombocytopenin minska bl&ouml;dningsben&auml;genheten fr&aring;n framf&ouml;r allt slemhinnor. Se ocks&aring; <a href=\"{pre}/kapitel/blod/blodningstillstand.html#therapy_1_header\">Terapirekommendationerna</a> nedan.</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5aabf019-00b4-4cef-8d08-0eb03a81d552",
+			"name": "5aabf019-00b4-4cef-8d08-0eb03a81d552",
+			"type": "therapy",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"54141\"></a>Läkemedel vid <a class=\"index\" id=\"1051516\" data-text=\"bl&#xF6;dningstillst&#xE5;nd:terapirekommendationer\"></a>blödningstillstånd",
+				"id": "",
+				"text": "<p></p>\r\n<table width=\"100%\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><strong>L&auml;kemedel</strong></p>\r\n</td>\r\n<td>\r\n<p><strong>Mekanism</strong></p>\r\n</td>\r\n<td>\r\n<p><strong>Indikation</strong></p>\r\n</td>\r\n<td>\r\n<p><strong>Kommentar</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Desmopressin</p>\r\n</td>\r\n<td>\r\n<p>Fris&auml;ttning av endogen FVIII och VWF.</p>\r\n<p>Stimulerar trombocyt-adhesivitet.</p>\r\n</td>\r\n<td>\r\n<p>von Willebrands sjukdom typ 1.</p>\r\n<p>Lindrig hemofili&nbsp;A.</p>\r\n<p>Trombocytdysfunktion.</p>\r\n</td>\r\n<td>\r\n<p>Antidiuretisk effekt, se&nbsp;<a href=\"{pre}/kapitel/blod/blodningstillstand.html#facts_4_header\">Faktaruta 4.</a></p>\r\n<p>S&auml;rskild varsamhet hos sm&aring; barn.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Tranexamsyra</p>\r\n</td>\r\n<td>\r\n<p>Fibrinolysh&auml;mmare</p>\r\n</td>\r\n<td>\r\n<p>Slemhinnebl&ouml;dningar.</p>\r\n<p>Ortopedisk och gynekologisk kirurgi.</p>\r\n<p>Tandextraktioner.</p>\r\n</td>\r\n<td>\r\n<p>Kontraindicerat vid makroskopisk hematuri.</p>\r\n<p>Dosreduktion vid f&ouml;rh&ouml;jt kreatinin (Fass/SPC).</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Vitamin K</p>\r\n</td>\r\n<td>\r\n<p>Vitamin&nbsp;K-substitution.</p>\r\n<p>Antidot till warfarin.</p>\r\n</td>\r\n<td>\r\n<p>Vitamin K-brist.</p>\r\n<p>Reversering av warfarineffekt.</p>\r\n</td>\r\n<td>\r\n<p>L&aring;ngsam &ouml;kning av vitamin&nbsp;K-beroende faktorer.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Protrombinkomplex-koncentrat</p>\r\n</td>\r\n<td>\r\n<p>Substitution med vitamin&nbsp;K-beroende koagulationsfaktorer.</p>\r\n<p>(II, VII, IX och X)</p>\r\n</td>\r\n<td>\r\n<p>Omedelbar reversering av warfarineffekt.</p>\r\n<p>Bl&ouml;dning vid leversvikt.</p>\r\n<p>Reversering av trombin- och faktor&nbsp;Xa-h&auml;mmare.</p>\r\n</td>\r\n<td>\r\n<p>Omedelbar men relativt kortvarig effekt.</p>\r\n<p>Dos&nbsp;10&ndash;30&nbsp;IE/kg kroppsvikt.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>FVIII-koncentrat</p>\r\n</td>\r\n<td>\r\n<p>Substitution med koagulationsfaktor&nbsp;VIII.</p>\r\n</td>\r\n<td>\r\n<p>Hemofili A</p>\r\n</td>\r\n<td>\r\n<p>&nbsp;</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>FIX-koncentrat</p>\r\n</td>\r\n<td>\r\n<p>Substitution med koagulationsfaktor&nbsp;IX.</p>\r\n</td>\r\n<td>\r\n<p>Hemofili B</p>\r\n</td>\r\n<td>\r\n<p>&nbsp;</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>VWF/FVIII-</p>\r\n<p>koncentrat</p>\r\n</td>\r\n<td>\r\n<p>Substitution med</p>\r\n<p>von&nbsp;Willebrandfaktor och FVIII.</p>\r\n</td>\r\n<td>\r\n<p>von Willebrands sjukdom</p>\r\n</td>\r\n<td>\r\n<p>&nbsp;</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>VWF-koncentrat</p>\r\n</td>\r\n<td>\r\n<p>Substitution med</p>\r\n<p>von&nbsp;Willebrandfaktor.</p>\r\n</td>\r\n<td>\r\n<p>von Willebrands sjukdom</p>\r\n</td>\r\n<td>\r\n<p>&nbsp;</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Aktiverat protrombinkomplex-koncentrat</p>\r\n</td>\r\n<td>\r\n<p>Aktiverade vitamin&nbsp;K-beroende koagulationsfaktorer -aktiverar koagulationen.</p>\r\n</td>\r\n<td>\r\n<p>Hemofili med antikroppar mot FVIII.</p>\r\n<p>Reversering av trombin- och faktor&nbsp;Xa-h&auml;mmare.</p>\r\n</td>\r\n<td>\r\n<p>&rdquo;Bypassing agent&rdquo;</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>rFVIIa-koncentrat</p>\r\n</td>\r\n<td>\r\n<p>Aktiverat rekombinant FVII</p>\r\n<p>-aktiverar koagulationen.</p>\r\n</td>\r\n<td>\r\n<p>Hemofili med antikroppar mot FVIII eller FIX.</p>\r\n<p>Glanzmanns trombasteni.</p>\r\n<p>Reversering av trombin- och faktor&nbsp;Xa-h&auml;mmare.</p>\r\n</td>\r\n<td>\r\n<p>&rdquo;Bypassing agent&rdquo;</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Idarucizumab (Praxbind)</p>\r\n</td>\r\n<td>\r\n<p>Specifik antidot till dabigatran.</p>\r\n</td>\r\n<td>\r\n<p>Reversering av trombinh&auml;mmaren dabigatran vid akut kirurgi och/eller livshotande/st&ouml;rre bl&ouml;dning.</p>\r\n</td>\r\n<td>\r\n<p><span style=\"color: #ff0000;\">&nbsp;</span></p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8026e011-312b-4f4e-a5c4-1f72f1fbfa6a",
+			"name": "8026e011-312b-4f4e-a5c4-1f72f1fbfa6a",
+			"type": "facts",
+			"content": {
+				"number": "4",
+				"title": "<a class=\"index\" id=\"1044337\" data-text=\"desmopressin\"></a><a class=\"crossref\" id=\"77332\"></a>Desmopressin",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p>Desmopressin (DDAVP, [1-Desaminocystein, 8-D-arginin]vasopressin) stimulerar fris&auml;ttningen av bland annat FVIII och VWF (von Willebrandfaktorn) fr&aring;n kroppens egna dep&aring;er, samt &ouml;kar trombocyternas adhesivitet utan att inducera aggregation och har d&auml;rf&ouml;r ett brett anv&auml;ndningsomr&aring;de f&ouml;r patienter med olika typer av bl&ouml;dningstendens (8)<span style=\"color: #ff0000;\"><span style=\"color: #000000;\">.</span></span></p>\r\n<p></p>\r\n<p>Vid mild hemofili &auml;r desmopressin ur ekonomisk synvinkel att f&ouml;redra framf&ouml;r FVIII-koncentrat till desmopressin responders.<span style=\"text-decoration: line-through;\"><br /></span></p>\r\n<p><br />Desmopressin &auml;r en syntetisk analog av hormonet vasopressin<span style=\"text-decoration: line-through;\"></span><span style=\"text-decoration: line-through;\"></span>. Desmopressin har d&auml;rf&ouml;r en kraftig antidiuretisk effekt, som varar 24 timmar efter enstaka doser. Det finns risk f&ouml;r hyponatremi vid upprepad dosering, om inte v&auml;tskeintaget begr&auml;nsas. Barn l&ouml;per st&ouml;rst risk f&ouml;r &ouml;verv&auml;tskning. Man b&ouml;r d&auml;rf&ouml;r, om m&ouml;jligt, undvika att ge <span style=\"background-color: #aaaaaa;\"></span>desmopressin i<span style=\"text-decoration: line-through;\"></span> blodstillande syfte till <span style=\"text-decoration: line-through;\"></span><span style=\"text-decoration: line-through;\"></span>barn. Om barn &lt;&nbsp;2&nbsp;&aring;r ska behandlas med desmopressin rekommenderas att man monitorerar elektrolytbalansen, att v&auml;tsketillf&ouml;rseln reduceras till h&ouml;gst &frac34; av den normala och att man undviker upprepade desmopressindoser.</p>\r\n<p></p>\r\n<p>Desmopressin orsakar en viss blodtryckss&auml;nkning (10&ndash;20&nbsp;mmHg) till f&ouml;ljd av &ouml;verg&aring;ende vasodilatation. Desmopressin ska d&auml;rf&ouml;r ges l&aring;ngsamt vid intraven&ouml;s administration, och b&ouml;r inte ges till personer med grav arterioskleros eller sv&aring;r k&auml;rlkramp eftersom en blodtryckss&auml;nkning kan vara kritisk vid dessa tillst&aring;nd.</p>\r\n<p></p>\r\n<p>Desmopressin har anv&auml;nts<span style=\"text-decoration: line-through;\"></span> till gravida kvinnor i samband med fostervattensprov, moderkaksbiopsi och f&ouml;rlossning utan n&aring;gra s&auml;kerst&auml;llda negativa effekter p&aring; graviditet eller foster. L&auml;kemedlet ska dock ges med f&ouml;rsiktighet och endast om det finns en klar medicinsk indikation.</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "d3_26"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c00776d9-5fac-419c-a9e3-b987aeca0f0f",
+			"name": "c00776d9-5fac-419c-a9e3-b987aeca0f0f",
+			"type": "text",
+			"content": "<p>Desmopressin (DDAVP) (se <a href=\"{pre}/kapitel/blod/blodningstillstand2.html#facts_4_header\">Faktaruta 4</a> ovan) f&ouml;rb&auml;ttrar trombocytfunktionen genom att fris&auml;tta von Willebrandfaktorn. Effekten avtar dock med sjunkande antal trombocyter och trombocytniv&aring;er &gt;&nbsp;50&nbsp;x&nbsp;10<sup>9</sup>/l ska efterstr&auml;vas.</p>\n<p></p>\n<p><br>Trombocyttransfusioner ges vid prim&auml;r ITP endast vid mycket allvarliga och livshotande bl&ouml;dningar. Vid &ouml;vriga tillst&aring;nd &auml;r trombocyttransfusioner indicerade vid bl&ouml;dning samt inf&ouml;r ingrepp och punktioner av olika natur d&auml;r riktm&auml;rket b&ouml;r vara en trombocytniv&aring; &gt;&nbsp;50&nbsp;x&nbsp;10<sup>9</sup>/l. D&auml;rtill b&ouml;r man &ouml;verv&auml;ga f&ouml;rebyggande transfusioner hos patienter med en f&ouml;rv&auml;ntad &ouml;verg&aring;ende icke-immunologiskt utl&ouml;st trombocytopeni i syfte att h&aring;lla trombocytniv&aring;n &gt;&nbsp;10&nbsp;x&nbsp;10<sup>9</sup>/l.</p>\n<h4 id=\"d3_27\">Behandling av ITP i syfte att minska destruktionen av trombocyter</h4>\n<p>Det vetenskapliga underlaget f&ouml;r behandling av patienter med ITP &auml;r bristf&auml;lligt men en allm&auml;n konsensus r&aring;der om att patienter med v&auml;rden &gt;&nbsp;30&nbsp;x&nbsp;10<sup>9</sup>/l i fr&aring;nvaro av bl&ouml;dningssymtom i princip kan l&auml;mnas utan behandling (9,10)<span style=\"text-decoration: line-through;\"></span>. Vid niv&aring;er &lt;&nbsp;10&ndash;20&nbsp;x&nbsp;10<sup>9</sup>/l b&ouml;r dock alltid behandling &ouml;verv&auml;gas, men det &auml;r bl&ouml;dningsben&auml;genheten och inte trombocytv&auml;rdet som ska styra. Tillg&auml;ngliga behandlingsalternativ sammanfattas i <a href=\"{pre}/kapitel/blod/blodningstillstand2.html#d3_28\">Tabell 2</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a3975465-8abd-40d9-85d3-9688a351a242",
+			"name": "a3975465-8abd-40d9-85d3-9688a351a242",
+			"type": "tablewide",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"crossref\" id=\"68139\"></a>Tillgänglig läkemedelsbehandling vid ITP<a class=\"tableFootnoteLink\" href=\"#fnote_19\"><sup>a</sup></a>",
+				"id": "d3_28",
+				"text": "<p></p>\r\n<table width=\"100%\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><strong>L&auml;kemedel</strong></p>\r\n</td>\r\n<td>\r\n<p><strong>Dos</strong></p>\r\n</td>\r\n<td>\r\n<p><strong>Tid (dagar) </strong></p>\r\n<p><strong>till initialt </strong></p>\r\n<p><strong>terapisvar</strong></p>\r\n</td>\r\n<td>\r\n<p><strong>Tid (dagar) </strong></p>\r\n<p><strong>till max </strong></p>\r\n<p><strong>terapisvar</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Prednisolon</p>\r\n</td>\r\n<td>\r\n<p>1&ndash;2 mg/kg kroppsvikt/dag peroralt i</p>\r\n<p>1&ndash;4 veckor</p>\r\n</td>\r\n<td>\r\n<p>4&ndash;14</p>\r\n</td>\r\n<td>\r\n<p>7&ndash;28</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Dexametason</p>\r\n</td>\r\n<td>\r\n<p>40 mg peroralt/dag i 4 dagar under</p>\r\n<p>4&ndash;6 m&aring;nadsvisa cykler</p>\r\n</td>\r\n<td>\r\n<p>2&ndash;14</p>\r\n</td>\r\n<td>\r\n<p>4&ndash;28</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Gammaglobulin (IVIG)</p>\r\n</td>\r\n<td>\r\n<p>0,4&ndash;1 g/kg kroppsvikt intraven&ouml;st</p>\r\n<p>(1&ndash;5 doser)</p>\r\n</td>\r\n<td>\r\n<p>1&ndash;3</p>\r\n</td>\r\n<td>\r\n<p>2&ndash;7</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Rituximab</p>\r\n</td>\r\n<td>\r\n<p>375 mg/m<sup>2</sup> intraven&ouml;st (4 veckovisa doser)</p>\r\n</td>\r\n<td>\r\n<p>7&ndash;56</p>\r\n</td>\r\n<td>\r\n<p>14&ndash;180</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Vinkristin</p>\r\n</td>\r\n<td>\r\n<p>2 mg intraven&ouml;st (4&ndash;6 veckovisa doser)</p>\r\n</td>\r\n<td>\r\n<p>7&ndash;14</p>\r\n</td>\r\n<td>\r\n<p>&nbsp;7&ndash;42</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Vinblastin</p>\r\n</td>\r\n<td>\r\n<p>0,1 mg/kg kroppsvikt intraven&ouml;st</p>\r\n<p>(6 veckovisa doser)</p>\r\n</td>\r\n<td>\r\n<p>&nbsp;7&ndash;14</p>\r\n</td>\r\n<td>\r\n<p>&nbsp;7&ndash;42</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Danazol</p>\r\n<p>(licenspreparat, t.ex. Danol kapslar</p>\r\n<p>100 mg, 200 mg)</p>\r\n</td>\r\n<td>\r\n<p>400&ndash;800 mg/dag peroralt</p>\r\n</td>\r\n<td>\r\n<p>14&ndash;90</p>\r\n</td>\r\n<td>\r\n<p>&nbsp;&nbsp;28&ndash;180</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Azatioprin</p>\r\n</td>\r\n<td>\r\n<p>2 mg/kg kroppsvikt/dag peroralt</p>\r\n</td>\r\n<td>\r\n<p>30&ndash;90</p>\r\n</td>\r\n<td>\r\n<p>&nbsp;&nbsp;30&ndash;180</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Romiplostim</p>\r\n</td>\r\n<td>\r\n<p>1&ndash;10 mikrog/kg kroppsvikt/vecka subkutant</p>\r\n</td>\r\n<td>\r\n<p>&nbsp;5&ndash;14</p>\r\n</td>\r\n<td>\r\n<p>14&ndash;60</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Eltrombopag</p>\r\n</td>\r\n<td>\r\n<p>25&ndash;75 mg/dag peroralt</p>\r\n</td>\r\n<td>\r\n<p>&nbsp;7&ndash;28</p>\r\n</td>\r\n<td>\r\n<p>14&ndash;90</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"4\">\r\n<p>a. Modifierad efter <a href=\"http://lakemedelsboken.se/kapitel/blod/blodningstillstand.html#reference_9\">9</a></p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9b927107-bc85-41ac-a994-bbbf4f3bc445",
+			"name": "9b927107-bc85-41ac-a994-bbbf4f3bc445",
+			"type": "facts",
+			"content": {
+				"number": "5",
+				"title": "<a class=\"crossref\" id=\"96957\"></a>Akut ITP-behandling vid livshotande  blödning",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<table width=\"100%\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p>&middot; IVIG 1 g/kg kroppsvikt intraven&ouml;st dag 1 och 2</p>\r\n<p></p>\r\n<p>&middot; Metylprednisolon 1 g intraven&ouml;st dag 1 till 3 (ej vid GI-bl&ouml;dning)</p>\r\n<p><span style=\"color: #ff0000;\"></span></p>\r\n<p>&middot; Trombocyttransfusion &ndash; 2 enheter (4 givare/enhet) eller 1 enhet erh&aring;llen genom aferes var 4&ndash;6 timme</p>\r\n<p></p>\r\n<p>&middot; Tranexamsyra (Cyklokapron) 10 mg/kg kroppsvikt intraven&ouml;st var 8:e timme (alternativt peroralt 25 mg/kg kroppsvikt)</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "d3_30"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "99913876-c08c-4266-8280-b5a47b0961e2",
+			"name": "99913876-c08c-4266-8280-b5a47b0961e2",
+			"type": "text",
+			"content": "<p>Vid allvarliga och livshotande bl&ouml;dningar och uttalad trombocytopeni ska akutbehandling ges enligt <a href=\"{pre}/kapitel/blod/blodningstillstand.html#facts_5_header\">Faktaruta 5</a>.</p>\n<p><br>I dessa fall ges intraven&ouml;st gammaglobulin under 2&nbsp;dagar i kombination med h&ouml;gdos metylprednisolon samt trombocyttransfusioner och cyklokapron. Effekten av gammaglobulin &auml;r vanligen &ouml;verg&aring;ende men kan via anti-idiotypiska antikroppar och blockering av Fc-receptorer minska makrofagernas fagocytos. Gammaglobulin &auml;r &auml;ven ett betydelsefullt f&ouml;rstahandsalternativ inf&ouml;r operation, till gravida kvinnor samt till barn.</p>\n<p><br>Kortikosteroider har framg&aring;ngsrikt getts till patienter med ITP sedan 1950-talet och utg&ouml;r fortfarande f&ouml;rstahandsbehandling i form av prednisolon 1&ndash;2&nbsp;mg/kg&nbsp;kroppsvikt/dag. N&auml;r trombocyterna stigit kan dosen successivt minskas under kommande veckor med m&aring;let att avsluta behandlingen efter 2-3&nbsp;m&aring;nader. I vissa fall kr&auml;vs en mindre underh&aring;llsdos f&ouml;r att h&aring;lla trombocyterna &gt;&nbsp;30&nbsp;x&nbsp;10<sup>9</sup>/l. Prednisoloneffekten kommer vanligen inom 7&ndash;10&nbsp;dagar men kan i vissa fall dr&ouml;ja n&aring;got l&auml;ngre. &Auml;ven h&ouml;ga doser dexametason, licenspreparat&nbsp;till exempel&nbsp;Dexamethason Galenpharma Gmbh 8&nbsp;mg tabletter (40&nbsp;mg/dag i cykler om 4&nbsp;dagar/m&aring;nad), har visat god effekt, men frekvensen biverkningar &auml;r h&ouml;gre.</p>\n<p><br>Merparten av makrofagernas fagocytos sker i mj&auml;lten och splenektomi<span style=\"text-decoration: line-through;\"></span> har d&auml;rf&ouml;r fortsatt en plats i behandlingsarsenalen f&ouml;r<span style=\"text-decoration: line-through;\"></span> ITP hos vuxna. D&auml;remot genomf&ouml;rs splenektomi mycket s&auml;llan hos barn. Indikationen hos vuxna utg&ouml;rs av behandlingskr&auml;vande ITP d&auml;r den prim&auml;ra behandlingen med kortikosteroider och intraven&ouml;st gammaglobulin inte gett tillfredsst&auml;llande resultat. Man ska dock rutinm&auml;ssigt v&auml;nta minst 6-12&nbsp;m&aring;nader innan operation och &ouml;verv&auml;ga andra alternativ. Cirka 70&nbsp;% av patienterna normaliserar sitt trombocyttal efter splenektomi. Huruvida behandlingssvaret p&aring; intraven&ouml;st gammaglobulin kan prediktera resultatet av splenektomi &auml;r oklart.</p>\n<p><br>En komplikationsfrekvens p&aring; cirka 10&nbsp;% har beskrivits efter splenektomi men med optimala f&ouml;ruts&auml;ttningar &auml;r denna siffra sannolikt l&auml;gre. Till f&ouml;ljd av &ouml;kad risk f&ouml;r allvarliga infektioner med kapself&ouml;rsedda bakterier, framf&ouml;r allt pneumokocker, meningokocker och Haemophilus influenzae, ska vaccinationer ges preoperativt och upprepas i fallet meningokocker efter 3&nbsp;&aring;r och pneumokocker efter 5&nbsp;&aring;r. Vaccinationerna ger dock inte ett absolut skydd och patienterna ska informeras om att kontakta sjukv&aring;rden vid stigande feber &gt;&nbsp;38&nbsp;<sup>o</sup>C. En bimj&auml;lte har beskrivits hos 10&nbsp;% av patienterna och vid fall av kvarst&aring;ende trombocytopeni ska f&ouml;rekomsten av detta uteslutas.</p>\n<p><br>Rituximab utg&ouml;r ett andrahandsalternativ vid ITP, men exakt hur detta preparat ska hanteras &auml;r fortfarande oklart. Med den dos som framg&aring;ngsrikt anv&auml;nts vid lymfomsjukdom (375&nbsp;mg/m<sup>2</sup> per vecka i 4&nbsp;veckor) har h&auml;lften av patienterna med kronisk refrakt&auml;r ITP erh&aring;llit god behandlingseffekt och 15&ndash;20&nbsp;% l&aring;ngvarig remission. Effekten f&ouml;refaller vara oberoende av om mj&auml;lten finns kvar eller ej. &Auml;ven l&auml;gre doser (100&nbsp;mg per vecka) har visat sig ha positiv effekt.</p>\n<p><br>Till p<span style=\"text-decoration: line-through;\"></span>atienter<span style=\"text-decoration: line-through;\"></span> med refrakt&auml;r sjukdom utan effekt av de olika andrahandsalternativen kan, i syfte att minska nedbrytningen av trombocyterna, danazol, immunsuppression och/eller cytostatika &ouml;verv&auml;gas&nbsp;(se <a href=\"{pre}/kapitel/blod/blodningstillstand.html#d3_28\">Tabell 2</a>).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "79caa2ad-b6e6-4beb-9746-80defaff716c",
+			"name": "79caa2ad-b6e6-4beb-9746-80defaff716c",
+			"type": "text",
+			"content": "<h4 id=\"d3_31\">Behandling i syfte att &ouml;ka trombocytproduktionen</h4>\n<p>Suboptimala niv&aring;er av trombopoietin samt minskad produktion av trombocyter utg&ouml;r en viktig del i patofysiologin vid ITP. L&auml;kemedel som binder till och aktiverar trombopoietinreceptorn<span style=\"text-decoration: line-through;\"></span> utg&ouml;r ett av andrahandsalternativen till vuxna patienter med s&auml;kerst&auml;lld kronisk och refrakt&auml;r ITP. I vissa fall kan dessa l&auml;kemedel &auml;ven &ouml;verv&auml;gas inf&ouml;r operation om kortikosteroider och gammaglobulin inte givit &ouml;nskad effekt eller anses mindre l&auml;mpliga.</p>\n<p><br>Romiplostim ges subkutant 1&nbsp;g&aring;ng/vecka med dosen 1&ndash;10&nbsp;mikrog/kg kroppsvikt. Dosen &ouml;kas tills man erh&aring;ller ett adekvat svar med trombocyter mellan 50 och<span style=\"text-decoration: line-through;\"></span> 150&nbsp;x&nbsp;10<sup>9</sup>/l. Effekt ses hos drygt 50&nbsp;% av patienterna och en f&ouml;reg&aring;ende splenektomi f&ouml;refaller inte p&aring;verka behandlingssvaret. Dock &auml;r effekten &ouml;verg&aring;ende och trombocytopeni utvecklas &aring;nyo d&aring; behandlingen avslutas.</p>\n<p><br>Eltrombopag ges peroralt 1 g&aring;ng/dag med dosen 25&ndash;75&nbsp;mg. Effekten liknar den vid behandling med romiplostim. F&ouml;r b&aring;da l&auml;kemedlen finns en &ouml;kad risk f&ouml;r retikulinbildning i benm&auml;rgen och tromboemboliska komplikationer kan f&ouml;rekomma.</p>\n<p><br>S&auml;kerhetsdata saknas f&ouml;r barn och TPO-agonister ska i rutinfallet inte anv&auml;ndas under graviditet samt under amning. D&auml;rtill med f&ouml;rsiktig vid leverfunktionsneds&auml;ttning.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fee0cc6c-112f-4a84-be8b-3053a3d65eee",
+			"name": "fee0cc6c-112f-4a84-be8b-3053a3d65eee",
+			"type": "text",
+			"content": "<h2 id=\"d3_32\">Trombocytfunktionsrubbningar</h2>\n<p>Nedsatt trombocytfunktion vid normala trombocytantal &auml;r ofta en f&ouml;rv&auml;rvad &aring;komma, men f&ouml;rekommer &auml;ven i &auml;rftliga former. Utredningen g&aring;r i f&ouml;rsta hand ut p&aring; att utesluta f&ouml;rv&auml;rvade orsaker<span style=\"text-decoration: line-through;\"></span> samt von Willebrands sjukdom<span style=\"text-decoration: line-through;\"></span>. Vid negativt utfall kan sedan trombocytfunktionen utv&auml;rderas med olika specialtester.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "63dee496-00d6-4002-bb03-849f71edae26",
+			"name": "63dee496-00d6-4002-bb03-849f71edae26",
+			"type": "text",
+			"content": "<h3 id=\"d3_32\">F&ouml;rv&auml;rvade trombocytfunktionsrubbningar</h3>\n<p>En f&ouml;rs&auml;mrad trombocytfunktion kan ses vid olika former av benm&auml;rgssjukdomar. Trombocytantalet kan variera och kan vid myeloproliferativa sjukdomar &auml;ven vara f&ouml;rh&ouml;jda. Genesen till trombocytdefekten kan variera men f&ouml;rb&auml;ttras vanligen genom att grundsjukdomen behandlas.</p>\n<p><br>Vid leversjukdom kan b&aring;de trombocytopeni och trombocytfunktionsrubbning uppkomma. Det &auml;r emellertid i dessa fall &auml;ven viktigt att utv&auml;rdera<span style=\"text-decoration: line-through;\"></span> plasmakoagulationen samt fibrinolysen d&aring; dessa ofta samtidigt &auml;r p&aring;verkade och d&auml;rigenom bidrar till eventuella bl&ouml;dningssymtom.</p>\n<p><br>Vid uremi ses f&ouml;rs&auml;mrad trombocytfunktion och genesen till detta &auml;r sannolikt toxiska metaboliter.</p>\n<p><br>En rad olika l&auml;kemedel p&aring;verkar trombocyternas funktion och dessa utg&ouml;r i sj&auml;lva verket den vanligaste orsaken till trombocytfunktionsst&ouml;rningar. Acetylsalicylsyra h&auml;mmar trombocyternas aggregationsf&ouml;rm&aring;ga genom att irreversibelt inaktivera enzymet cyklooxygenas (COX-1) och d&auml;rigenom bildningen av tromboxan A<sub><span style=\"font-size: small;\">2</span></sub>. Eftersom effekten sitter i hela trombocytens livstid b&ouml;r ASA-inneh&aring;llande l&auml;kemedel uts&auml;ttas cirka 7&nbsp;dagar f&ouml;re operativa &aring;tg&auml;rder d&auml;r man s&auml;kert vill undvika &ouml;kad bl&ouml;dningsben&auml;genhet. Om man vid akut operation beh&ouml;ver motverka ASA-effekten ges desmopressin samt vid behov trombocyttransfusion.</p>\n<p><br>Flertalet NSAID-preparat h&auml;mmar ocks&aring; COX-1 men till skillnad fr&aring;n ASA &auml;r denna h&auml;mning reversibel och d&auml;rigenom bl&ouml;dningsrisken mindre. Inf&ouml;r operation ska man dock &ouml;verv&auml;ga att s&auml;tta ut &auml;ven dessa preparat. Vissa NSAID-preparat av typen coxiber h&auml;mmar selektivt cyklooxygenas (COX-2) och p&aring;verkar d&auml;rigenom inte trombocyternas funktion. Dessa preparat &auml;r l&auml;mpliga till patienter med &ouml;kad bl&ouml;dningsrisk.</p>\n<p><br>Tiklopidin och klopidogrel samt deras metaboliter motverkar trombocyternas aggregation genom att irreversibelt binda till ADP-receptorn och d&auml;rigenom h&auml;mma aktiveringen av glykoproteinkomplexet GPIIb/IIIa. Halveringstiden f&ouml;r tiklopidin &auml;r 30&ndash;50&nbsp;timmar och f&ouml;r klopidogrel minst 8&ndash;10&nbsp;timmar. Prasugrel har flera aktiva metaboliter med samma blockerande effekt. Halveringstiden f&ouml;r den aktiva substansen &auml;r cirka 10&nbsp;timmar men aktiva metaboliter kan p&aring;visas i &ouml;ver en vecka. Dessa f&ouml;rh&aring;llandevis l&aring;nga halveringstider och aktiva metaboliter g&ouml;r att det kan vara sv&aring;rt att motverka effekten av ADP-receptorblockerare vid bl&ouml;dningar och/eller operativa ingrepp. Specifik behandling saknas.</p>\n<p><br>Kvarvarande effekt av trombocytaggregationsh&auml;mmande behandling kan eventuellt m&auml;tas med patientn&auml;ra metodik baserad p&aring; aggregometri om s&aring;dan finns tillg&auml;nglig (Multiplate, Verify-Now).</p>\n<p><span style=\"text-decoration: line-through;\"><br></span>L&auml;kemed<span style=\"text-decoration: line-through;\"></span>el som blockerar GPIIb/IIIa-receptorn och d&auml;rigenom h&auml;mmar trombocytaggregationen har associerats med en risk f&ouml;r trombocytkonsumtion i den initiala behandlingsfasen. Abciximab &auml;r en monoklonal antikropp med kort halveringstid <span style=\"text-decoration: line-through;\"></span>men d&auml;r effekt p&aring; <span style=\"text-decoration: line-through;\"></span>receptorn har p&aring;visats &auml;nnu efter 1&ndash;2&nbsp;veckor. <span style=\"text-decoration: line-through;\"></span>Peptiden eptifibatid samt tirofiban <span style=\"text-decoration: line-through;\"></span>har kortare halveringstid <span style=\"text-decoration: line-through;\"></span>och trombocytfunktionen &aring;terg&aring;r vanligen till den normala 4 respektive 8 timmar efter det att behandlingen upph&ouml;rt.</p>\n<p><br>Iloprost &auml;r en prostacyklinanalog som binder till cellernas prostacyklinreceptorer och &ouml;kar m&auml;ngden cAMP. Trombocyternas funktion h&auml;mmas, men den exakta verkningsmekanismen &auml;r oklar.</p>\n<p><br>Dextran &auml;r en polysackarid som h&auml;mmar trombocyternas aggregation.</p>\n<p><br>Dipyridamol motverkar COX-2 och medf&ouml;r vanligen inte &ouml;kad bl&ouml;dningsben&auml;genhet.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b345e79f-edea-4f08-aec3-25f5be927c97",
+			"name": "b345e79f-edea-4f08-aec3-25f5be927c97",
+			"type": "text",
+			"content": "<h3 id=\"d3_34\">&Auml;rftliga trombocytrubbningar</h3>\n<p>&Auml;rftliga rubbningar av trombocytfunktionen &auml;r ovanliga men viktiga att k&auml;nna till och utg&ouml;rs av <span style=\"text-decoration: line-through;\"></span>flera olika tillst&aring;nd<span style=\"text-decoration: line-through;\"></span> s&aring;som Storage pool deficiency (SPD), Glanzmanns trombasteni och Bernard-Souliers syndrom (11)<span style=\"text-decoration: line-through;\"></span>. Diagnostiken av dessa &aring;kommor sker p&aring; specialkoagulationslaboratorier<span style=\"text-decoration: line-through;\"></span> med aggregationstester och/eller fl&ouml;descytometri. &Auml;ven genetiska tester kan i vissa fall erbjudas. Vid Glanzmanns trombasteni saknas GPIIb/IIIa, medan en brist p&aring; GPIb ses vid Bernard-Souliers syndrom. Bl&ouml;dningssymtomen kan vara mycket allvarliga och sv&aring;rbehandlade.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4eccec82-e009-4c44-b744-0b667e5799e4",
+			"name": "4eccec82-e009-4c44-b744-0b667e5799e4",
+			"type": "text",
+			"content": "<h1 id=\"Behandling-av-trombocytfunktionsrubbningar\">Behandling av trombocytfunktionsrubbningar</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0f66f16f-727a-4ffe-b739-f34d63b86da4",
+			"name": "0f66f16f-727a-4ffe-b739-f34d63b86da4",
+			"type": "text",
+			"content": "<p id=\"d3_35\">Vid behandling av trombocytfunktionsrubbningar och bl&ouml;dningsben&auml;genhet utg&ouml;r tranexamsyra oberoende av grundorsak ett f&ouml;rstahandsmedel. Tranexamsyra h&auml;mmar fibrinolysen genom att binda till plasminogen och f&ouml;rhindra dess aktivering till aktivt plasmin. Tranexamsyra ska dock inte ges vid hematuri.</p>\n<p class=\"indent\"><br>Desmopressin (se vidare den utf&ouml;rliga beskrivningen av behandling med desmopressin i <a href=\"{pre}/kapitel/blod/blodningstillstand.html#facts_4_header\">Faktaruta 4</a>) fris&auml;tter von Willebrandfaktorn och f&ouml;rb&auml;ttrar d&auml;rigenom trombocytfunktionen samt utg&ouml;r ett viktigt behandlingsalternativ vid i princip alla typer av trombocytfunktionsrubbningar. Desmopressin har &auml;ven andra effekter p&aring; hemostasen. Fibrinolysen stimuleras genom fris&auml;ttning av plasminogenaktivatorer och d&auml;rf&ouml;r kombineras desmopressin ofta med tranexamsyra.</p>\n<p class=\"indent\"><br>Trombocytkoncentrat b&ouml;r alltid &ouml;verv&auml;gas vid allvarlig bl&ouml;dningsben&auml;genhet samt inf&ouml;r operationer d&auml;r effekten av desmopressin med eller utan tranexamsyra bed&ouml;ms otillr&auml;cklig. Risken f&ouml;r alloimmunisering m&aring;ste dock beaktas, vilket kan medf&ouml;ra att patienten forts&auml;ttningsvis blir refrakt&auml;r mot framtida transfusioner.</p>\n<p class=\"indent\"><br>Vid benm&auml;rgssjukdomar f&ouml;rb&auml;ttras ofta trombocytfunktionen vid behandling av grundsjukdomen, men andra hemostasbefr&auml;mjande &aring;tg&auml;rder s&aring;som tranexamsyra, desmopressin och trombocyttransfusioner kan kr&auml;vas. Vid myelom och makroglobulinemi kan &auml;ven plasmaferes minska bl&ouml;dningstendensen.</p>\n<p class=\"indent\"><br>Effekten av desmopressin kan vara tillr&auml;cklig vid l&auml;kemedelsinducerad trombocytfunktionsrubbning<span style=\"text-decoration: line-through;\"></span><span><span style=\"text-decoration: line-through;\"></span> och</span> till f&ouml;ljd av de l&aring;nga halveringstiderna och m&aring;nga aktiva metaboliter ska 2&ndash;3&nbsp;enheter trombocyter &ouml;verv&auml;gas vid bl&ouml;dning i samband med ADP-receptorblockerare och inf&ouml;r operativa ingrepp. &Auml;ven vid behandling med GPIIb/IIIa-h&auml;mmare ska trombocyttransfusioner &ouml;verv&auml;gas i f&ouml;rsta hand.</p>\n<p class=\"indent\"><br>&Auml;rftliga trombocytfunktionsst&ouml;rningar ska behandlas i samr&aring;d med de h&ouml;gspecialiserade koagulationsenheterna vid landets tre hemofilicentra (se <a href=\"{pre}/kapitel/blod/blodningstillstand.html#facts_6_header\">Faktaruta 6</a>).</p>\n<p><span> </span> I f&ouml;rsta hand ska tranexamsyra och desmopressin ges, men vid allvarliga bl&ouml;dningar kan rekombinant faktor VIIa vara indicerat. Effekten &auml;r dock inte alltid f&ouml;ruts&auml;gbar.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0b0bb692-2a0d-4e78-bb2b-5a9d17423bde",
+			"name": "0b0bb692-2a0d-4e78-bb2b-5a9d17423bde",
+			"type": "facts",
+			"content": {
+				"number": "6",
+				"title": "<a class=\"index\" id=\"1052735\" data-text=\"hemofilicentra\"></a><a class=\"crossref\" id=\"48635\"></a>Koagulationsmottagningar i Sverige",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<h5 id=\"d3_38\">Malm&ouml;</h5>\r\n<p>Koagulationscentrum</p>\r\n<p>Sk&aring;nes universitetssjukhus</p>\r\n<p>205&nbsp;02 Malm&ouml;</p>\r\n<p>Telefon 040-33&nbsp;10&nbsp;00, beg&auml;r &rdquo;Koagulationsjouren&rdquo;</p>\r\n<h5 id=\"d3_39\">G&ouml;teborg</h5>\r\n<p>Koagulationscentrum</p>\r\n<p>Sahlgrenska Universitetssjukhuset</p>\r\n<p>413 45 G&ouml;teborg</p>\r\n<p>Telefon&nbsp;031-342&nbsp;10&nbsp;00, beg&auml;r &rdquo;Koagulationsjouren&rdquo;</p>\r\n<h5 id=\"d3_40\">Stockholm</h5>\r\n<p>Koagulationsmottagningen</p>\r\n<p>Karolinska Universitetssjukhuset, Solna</p>\r\n<p>171&nbsp;76 Stockholm</p>\r\n<p>Telefon&nbsp;08-517&nbsp;700&nbsp;00</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "d3_37"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "935e5950-3677-4c24-bb85-a4934254c8ea",
+			"name": "935e5950-3677-4c24-bb85-a4934254c8ea",
+			"type": "text",
+			"content": "<h2 id=\"d3_41\">von Willebrands sjukdom</h2>\n<p>von Willebrands sjukdom (VWS) &auml;r en autosomalt &auml;rftlig bl&ouml;dningsrubbning som drabbar b&aring;da k&ouml;nen (12)<span style=\"text-decoration: line-through;\"></span>. Den orsakas av brist p&aring; von Willebrandfaktorn<span style=\"text-decoration: line-through;\"></span> (VWF), antingen p&aring; grund av s&auml;nkt koncentration (typ&nbsp;1), funktionella defekter (typ&nbsp;2) eller total avsaknad (typ&nbsp;3). Prevalensen i flera populationsstudier har varit cirka 1&nbsp;% men symtomgivande sjukdom &auml;r sannolikt betydligt ovanligare och prevalensen av VWS vid olika koagulationscentra har angetts till 23&ndash;113&nbsp;fall/miljon inv&aring;nare.</p>\n<p></p>\n<p>Symtomen vid VWS domineras av slemhinnebl&ouml;dningar s&aring;som riklig menstruation, bl&ouml;dningar fr&aring;n n&auml;sa och munh&aring;la, urinv&auml;gsbl&ouml;dningar och bl&aring;m&auml;rkestendens. &Ouml;kad bl&ouml;dningsrisk f&ouml;religger i samband med tandextraktioner, operationer och andra ingrepp. Ledbl&ouml;dningar kan f&ouml;rekomma i sv&aring;ra fall, framf&ouml;r allt vid VWS typ&nbsp;3 d&auml;r faktor&nbsp;VIII-niv&aring;n &auml;r s&auml;nkt till den niv&aring; som ses vid moderat form av hemofili, det vill s&auml;ga&nbsp;till 1&ndash;5&nbsp;% av den normala.</p>\n<p></p>\n<p>Utredning och uppf&ouml;ljning sker i f&ouml;rsta hand vid landets tre koagulationsmottagningar i Stockholm, G&ouml;teborg och Malm&ouml; (se <a href=\"{pre}/kapitel/blod/blodningstillstand.html#facts_6_header\">Faktaruta 6</a>).</p>\n<h3 id=\"d3_42\">Diagnostik av VWS</h3>\n<p>Den kliniska bilden, med typiska bl&ouml;dningssymtom och positiv familjeanamnes, inger misstanke om diagnosen. VWS-diagnos kr&auml;ver dessutom analys av VWF och FVIII. PK(INR)-v&auml;rdet &auml;r alltid normalt och APTT &auml;r normalt utom i de sv&aring;raste fallen, Trombocytantalet &auml;r normalt, utom ibland vid den ovanliga subtypen 2B d&aring; trombocytopeni kan f&ouml;rekomma vid till exempel stress, infektioner och graviditet.</p>\n<p></p>\n<p>Flera specialanalyser av<span style=\"text-decoration: line-through;\"></span> VWF-funktioner utf&ouml;rs f&ouml;r att best&auml;mma typ och sv&aring;righetsgrad. I ett f&ouml;rsta steg kan plasmaprov skickas till ett specialiserat koagulationslaboratorium f&ouml;r analys av VWF och FVIII. Om detta inger misstanke om diagnosen kallas patienten f&ouml;r fullst&auml;ndig utredning som eventuellt inkluderar familjeutredning.</p>\n<h3 id=\"d3_43\">Behandling av VWS</h3>\n<p>Desmopressin stimulerar fris&auml;ttning av VWF och FVIII fr&aring;n kroppens egna dep&aring;er (se <a href=\"{pre}/kapitel/blod/blodningstillstand.html#facts_4_header\" target=\"_blank\">Faktaruta 4</a>). Svaret &auml;r individuellt och kan utv&auml;rderas med en testdos, varvid man m&auml;ter &ouml;kningen av FVIII och VWF i plasma samt bed&ouml;mer om dessa niv&aring;er &auml;r tillr&auml;ckliga vid bl&ouml;dningsepisoder och/eller ingrepp. Flertalet patienter med VWS typ&nbsp;1, men endast ett f&aring;tal med typ&nbsp;2 och inga med typ&nbsp;3, svarar p&aring; desmopressin. Desmopressin &auml;r kontraindicerat vid typ&nbsp;2B eftersom trombocytopeni ofta utl&ouml;ses av behandlingen.</p>\n<p></p>\n<p>I de fall desmopressin inte kan anv&auml;ndas ger man i st&auml;llet substitutionsbehandling med koncentrat av VWF och FVIII som framst&auml;llts fr&aring;n blodgivarplasma. Numera finns &auml;ven koncentrat med h&ouml;g renhetsgrad av VWF och minimalt inneh&aring;ll av faktor VIII (13,14).</p>\n<p></p>\n<p>Vid behandling av akuta bl&ouml;dningar i samband med akut kirurgi m&aring;ste koncentrat inneh&aring;llande s&aring;v&auml;l VWF som FVIII tillf&ouml;ras. Vid elektiva ingrepp och vid regelbunden profylaxbehandling kan renad VWF ges eftersom korrektion av VWF ger en sekund&auml;r stegring av endogent producerat FVIII inom ett dygn.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4846f1c2-db9a-4fc4-8394-e7e420a44ce0",
+			"name": "4846f1c2-db9a-4fc4-8394-e7e420a44ce0",
+			"type": "text",
+			"content": "<h1 id=\"Koagulationsrubbningar\">Koagulationsrubbningar</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "891e24ad-b881-483e-afa4-6d3184bd737f",
+			"name": "891e24ad-b881-483e-afa4-6d3184bd737f",
+			"type": "text",
+			"content": "<h3 id=\"d3_44\">Hemofili</h3>\n<p>Hemofili (klassisk bl&ouml;darsjuka) &auml;r en &auml;rftlig X-bunden koagulationsrubbning som drabbar m&auml;n, medan kvinnor &auml;r anlagsb&auml;rare (14,15). Hemofili orsakas av brist p&aring; FVIII (hemofili A) eller FIX (hemofili B). Prevalensen &auml;r cirka 20&nbsp;fall/100&nbsp;000 m&auml;n. Bl&ouml;dningsben&auml;genheten &auml;r uttalad med risk f&ouml;r spontana bl&ouml;dningar hos de med sv&aring;r (&lt;&nbsp;1&nbsp;%&nbsp;FVIII eller FIX) eller moderat (1&nbsp;till&nbsp;&lt;&nbsp;5&nbsp;% FVIII eller IX) form av hemofili. Ledbl&ouml;dningar &auml;r ett typiskt symtom och debuterar kring 1&nbsp;&aring;rs &aring;lder d&aring; barnet b&ouml;rjar g&aring;. Vid lindrig hemofili (5&ndash;40&nbsp;%&nbsp;FVIII eller FIX) uppkommer bl&ouml;dningar vid trauma eller operativt ingrepp. APT-tiden &auml;r f&ouml;rl&auml;ngd vid hemofili, och analys av FVIII respektive FIX bekr&auml;ftar diagnosen.</p>\n<p></p>\n<p>Bl&ouml;darsjuka handl&auml;ggs vid landets koagulationscentra (se <a href=\"{pre}/kapitel/blod/blodningstillstand.html#facts_6_header\" target=\"_blank\">Faktaruta 6</a>) som alltid ska kontaktas utan dr&ouml;jsm&aring;l vid trauma,<span style=\"text-decoration: line-through;\"></span> bl&ouml;dning och/eller planerat operativt ingrepp. Patienterna &auml;r f&ouml;rsedda med ett s&aring; kallat bl&ouml;dningsriskkort d&auml;r diagnos och kontaktuppgifter till sjukv&aring;rden framg&aring;r.</p>\n<p></p>\n<p>Modern svensk hemofiliv&aring;rd k&auml;nnetecknas av att patienter med sv&aring;r hemofili f&aring;r substitutionsbehandling (profylax) redan innan ledbl&ouml;dningar intr&auml;ffat och forts&auml;tter sedan genom vuxen &aring;lder. D&auml;rf&ouml;r kan dagens patienter med hemofili se fram emot att kunna leva ett n&auml;stan normalt liv.</p>\n<h3 id=\"d3_46\">Behandling<em> </em></h3>\n<p>FVIII- eller FIX-koncentrat f&ouml;r behandling av hemofili framst&auml;lls fr&aring;n blodgivarplasma eller med rekombinant DNA-teknik. I huvudsak anv&auml;nds idag rekombinanta preparat i v&aring;rt land. Regelbunden substitutionsbehandling (profylax) startas kring 1&nbsp;&aring;rs &aring;lder vid sv&aring;r hemofili. Behandlingen &auml;r i princip livsl&aring;ng. Preparat med f&ouml;rl&auml;ngd halveringstid finns nu att tillg&aring; och dessa kan m&ouml;jligg&ouml;ra ett f&ouml;rl&auml;ngt behandlingsintervall alternativt f&ouml;rh&ouml;jd l&auml;gsta-niv&aring; i syfte att ge &ouml;kat skydd mot bl&ouml;dningar. Det blir en individuell bed&ouml;mning av l&auml;mplig behandling i varje enskilt fall beroende p&aring; klinik och livsstil.</p>\n<p></p>\n<p>Patienter med lindrig (mild) hemofili&nbsp;A kan behandlas med desmopressin om de uppn&aring;r tillr&auml;ckligt h&ouml;g FVIII-niv&aring; f&ouml;r att tillr&auml;cklig hemostas ska uppn&aring;s (&gt;&nbsp;0,5&nbsp;kIU/L eller 50&nbsp;% vid stor kirurgi).</p>\n<p></p>\n<p>Blodsmitta (hepatit och hiv) har tidigare f&ouml;rekommit med plasmabaserade faktorkoncentrat &ndash; idag &auml;r dock alla koncentrat virusinaktiverade och blodgivarna noggrant utvalda och testade.</p>\n<p></p>\n<p>Hos 5&ndash;30&nbsp;% av patienter med sv&aring;r hemofili (den h&ouml;gre siffran vid hemofili&nbsp;A) uppkommer antikroppar mot injicerat FVIII eller FIX (antikoagulans) vilket oftast om&ouml;jligg&ouml;r substitutionsbehandling. Vid h&ouml;g antikoagulanstiter behandlas bl&ouml;dningar i st&auml;llet med en &rdquo;bypassing agent&rdquo;, antingen rekombinant aktiverat FVII (rFVIIa) eller aktiverat protrombinkomplexkoncentrat. Effekten av behandlingen &auml;r sv&aring;r att f&ouml;ruts&auml;ga i det enskilda fallet och laboratorieanalyser f&ouml;r rutinanv&auml;ndning saknas f&ouml;r att m&auml;ta effekten p&aring; ett p&aring;litligt s&auml;tt. Alla patienter som utvecklar antikroppar i titer som f&ouml;rsv&aring;rar behandling ska genomg&aring; s&aring; kallad immuntoleransinduktion syftande till att utsl&auml;cka antikroppsproduktionen och d&auml;rmed g&ouml;ra patienten tillg&auml;nglig f&ouml;r sedvanlig behandling.</p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f52276dd-c225-4e85-a822-e70e9bf63216",
+			"name": "f52276dd-c225-4e85-a822-e70e9bf63216",
+			"type": "text",
+			"content": "<h4 id=\"d3_48\">Co-morbiditet vid VWS och hemofili &ndash; ett nytt problem</h4>\n<p>Den f&ouml;rb&auml;ttrade behandlingen av VWS och hemofili g&ouml;r att man i en n&auml;ra framtid kommer att se allt fler &aring;ldrande patienter och d&auml;rmed co-morbiditet som st&auml;ller speciella krav p&aring; omh&auml;ndertagandet och den behandling som ges. Trots &ouml;kad bl&ouml;dningsben&auml;genhet drabbas exempelvis patienter med hemofili och VWS &auml;ven av hj&auml;rtk&auml;rlsjukdomar samt i minst lika stor omfattning som normalpersonen h&ouml;gt blodtryck. Den mycket dyrbara behandlingen kan <span style=\"text-decoration: line-through;\"></span>&auml;ven i h&ouml;gre &aring;ldrar vara associerat med etiska fr&aring;gor.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c52506a5-00d2-49d2-aed7-94aa32a9618e",
+			"name": "c52506a5-00d2-49d2-aed7-94aa32a9618e",
+			"type": "text",
+			"content": "<h3 id=\"Forvarvad-hemofili\">F&ouml;rv&auml;rvad hemofili</h3>\n<p>F&ouml;rv&auml;rvad hemofili &auml;r ett ovanligt tillst&aring;nd (cirka 1&nbsp;fall/miljon inv&aring;nare) som framf&ouml;r allt drabbar &auml;ldre individer (16). Det kan &auml;ven drabba kvinnor post partum. Utbredda hudbl&ouml;dningar och stora muskelbl&ouml;dningar &auml;r typiskt. APTT &auml;r f&ouml;rl&auml;ngd, men PK(INR) &auml;r normalt. Koagulationsutredning visar antikroppar vanligtvis riktade mot FVIII (antikoagulans) och avsaknad av FVIII i patientens plasma. F&ouml;rv&auml;rvad hemofili&nbsp;B eller antikroppar mot annan koagulationsfaktor &auml;r extremt s&auml;llsynt.</p>\n<p><br>Patienter med f&ouml;rv&auml;rvad hemofili b&ouml;r handl&auml;ggas i samr&aring;d med koagulationsspecialist. Behandlingen best&aring;r i f&ouml;rsta hand av h&ouml;gdos steroider f&ouml;r att f&ouml;rs&ouml;ka minska antikoagulanstitern samt hemostatiska medel f&ouml;r att stoppa p&aring;g&aring;ende bl&ouml;dningar. FVIII-niv&aring;n kan ibland &ouml;kas med desmopressin eller substitution med FVIII-koncentrat, men vid h&ouml;g titer m&aring;ste man i st&auml;llet ge en &rdquo;bypassing agent&rdquo;, som rFVIIa eller aktiverat protrombinkomplexkoncentrat.</p>\n<h3 id=\"Vitamin-K-brist\">Vitamin K-brist</h3>\n<p>Brist p&aring; vitamin&nbsp;K orsakar brist p&aring; de funktionsdugliga koagulationsfaktorerna FII, FVII, FIX, FX och koagulationsh&auml;mmarna protein&nbsp;C samt protein&nbsp;S, vilka samtliga &auml;r beroende av vitamin&nbsp;K f&ouml;r att karboxyleras och kunna binda kalcium och d&auml;rmed vara aktiva i koagulationsmekanismen. PK(INR) &auml;r f&ouml;rh&ouml;jt. I uttalade fall blir &auml;ven APTT f&ouml;rl&auml;ngd. Brist p&aring; vitamin&nbsp;K kan f&ouml;religga i nyf&ouml;ddhetsperioden, <span>samt s</span>ubstitutionsbehandling med vitamin K kan ges peroralt eller parenteralt. Maximal effekt uppn&aring;s efter 12&ndash;24&nbsp;timmar. Vid malabsorption b&ouml;r vitamin&nbsp;K ges parenteralt p&aring;&nbsp;grund av&nbsp;d&aring;ligt upptag fr&aring;n mag-tarmkanalen. Vid bl&ouml;dningstendens ska man undvika intramuskul&auml;r injektion eftersom det kan orsaka muskelbl&ouml;dningar. Vid allvarliga bl&ouml;dningar, som kr&auml;ver omedelbar behandling, substitueras de vitamin&nbsp;K-beroende koagulationsfaktorerna med protrombinkomplexkoncentrat. Plasma &auml;r mindre effektivt och ska i allm&auml;nhet inte anv&auml;ndas.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "43619841-8df0-4f19-8624-bf445f982ea9",
+			"name": "43619841-8df0-4f19-8624-bf445f982ea9",
+			"type": "text",
+			"content": "<h3 id=\"Blodning-till-foljd-av-antikoagulationsbehandling-och-trombolys\">Bl&ouml;dning till f&ouml;ljd av antikoagulationsbehandling och trombolys</h3>\n<p>Antivitamin K-behandling (AVK-behandling) orsakar precis som vid brist p&aring; K-vitamin en minskning av funktionsdugliga vitamin K-beroende koagulationsfaktorer och -h&auml;mmare. Handl&auml;ggning av bl&ouml;dning eller &ouml;verdosering beskrivs i kapitlet <a href=\"{pre}/kapitel/blod/venos_tromboembolism_och_medel_mot_trombos.html\" target=\"_blank\">Ven&ouml;s tromboembolism och medel mot trombos</a>, avsnittet <a href=\"{pre}/kapitel/blod/venos_tromboembolism_och_medel_mot_trombos.html#d2_62\" target=\"_blank\">Bl&ouml;dningskomplikationer under behandling med warfarin</a>, och i <a href=\"https://lakemedelsverket.se/antivitamin-k-lakemedel\" target=\"_blank\" title=\"Behandlingsrekommendation\">Behandlingsrekommendation fr&aring;n L&auml;kemedelsverket</a> (17,18).<span style=\"text-decoration: line-through;\"></span></p>\n<p><br>Effekten av standardheparin &auml;r relativt kortvarig och har f&ouml;rsvunnit cirka 4&nbsp;timmar efter uts&auml;ttning av ett heparindropp. Vid &ouml;verdosering kan heparineffekten reverseras med antidoten protamin. L&aring;gmolekyl&auml;rt heparin har l&auml;ngre halveringstid och endast 25&ndash;50&nbsp;% av effekten kan reverseras med protamin. Protamin ska inte &ouml;verdoseras eftersom h&ouml;ga doser har antikoagulerande effekt. Se &auml;ven kapitlet Ven&ouml;s tromboembolism och medel mot trombos i avsnittet <a href=\"{pre}/kapitel/blod/venos_tromboembolism_och_medel_mot_trombos.html#d2_43\" target=\"_blank\">L&auml;kemedel f&ouml;r akut antikoagulation</a>.</p>\n<p><br>Specifik antidot finns f&ouml;r <span style=\"text-decoration: line-through;\"></span>direkta trombinh&auml;mmare (Idarucizumab<span style=\"text-decoration: line-through;\"><span style=\"text-decoration: line-through;\"></span></span>) men saknas f&ouml;rn&auml;rvarande f&ouml;r<span style=\"text-decoration: line-through;\"></span> FXa-h&auml;mmare<span style=\"text-decoration: line-through;\"></span>. Halveringstiderna f&ouml;r dessa produkter &auml;r korta men vid allvarliga bl&ouml;dningar kan behandling vara n&ouml;dv&auml;ndig. I nul&auml;get kan tillf&ouml;rsel av protrombinkomplexkoncentrat rekommenderas eftersom dessa inneh&aring;ller bland annat protrombin och faktor&nbsp;X. Se &auml;ven <a href=\"{pre}/kapitel/blod/blodningstillstand.html#therapy_1_header\" target=\"_blank\">Terapirekommendationerna</a> och kapitlet Ven&ouml;s tromboembolism och medel mot trombos, avsnittet <a href=\"{pre}/kapitel/blod/venos_tromboembolism_och_medel_mot_trombos.html#d2_71\" target=\"_blank\">Profylax med de nya antikoagulantia</a>. PK(INR) och APTT har mycket begr&auml;nsat v&auml;rde f&ouml;r best&auml;mning av kvarvarande antikoagulerande l&auml;kemedelseffekt. Koncentrationsbest&auml;mning med specifika funktionella analyser f&ouml;r respektive preparat kan om de finns tillg&auml;ngliga vara av v&auml;rde.<br><br>Bl&ouml;dning vid trombolys behandlas, beroende p&aring; den kliniska situationen, med plasma- och fibrinolysh&auml;mmare, se kapitlet Ven&ouml;s tromboembolism och medel mot trombos, avsnittet <a href=\"{pre}/kapitel/blod/venos_tromboembolism_och_medel_mot_trombos.html#d2_39\" target=\"_blank\">Akut behandling av ven&ouml;s tromboembolism</a> .</p>\n<h3 id=\"Leversvikt\">Leversvikt</h3>\n<p>Vid sviktande leverfunktion, till exempel till f&ouml;ljd av levercirros, kan &ouml;kad bl&ouml;dningstendens orsakas av brist p&aring; koagulationsfaktorer, trombocytopeni och &ouml;kad fibrinolys. Fibrinolysh&auml;mning med tranexamsyra kan r&auml;cka vid mindre bl&ouml;dningstendens, medan mer uttalad leversvikt kan kr&auml;va tillf&ouml;rsel av plasma- eller protrombinkomplexkoncentrat. Vid uttalad trombocytopeni kan man &auml;ven beh&ouml;va tillf&ouml;ra trombocyter.</p>\n<h3 id=\"Lupusantikoagulans\">Lupusantikoagulans</h3>\n<p>Lupusantikoagulans (LAK) &auml;r autoantikroppar riktade mot fosfolipidassocierade lipoproteiner. LAK ing&aring;r tillsammans med trombocytopeni i antifosfolipidantikroppssyndromet och ger upphov till &ouml;kad blodproppsben&auml;genhet och obstetriska komplikationer oftare &auml;n &ouml;kad bl&ouml;dningstendens. LAK ger f&ouml;rl&auml;ngd APTT genom att interagera med fosfolipid i testet. F&ouml;rl&auml;ngd APTT indikerar allts&aring; inte &ouml;kad bl&ouml;dningsben&auml;genhet i dessa fall.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "46ce47ef-8d08-4a22-8e1d-9ac74aa245a9",
+			"name": "46ce47ef-8d08-4a22-8e1d-9ac74aa245a9",
+			"type": "text",
+			"content": "<h3 id=\"Disseminerad-intravasal-koagulation-DIC-\">Disseminerad intravasal koagulation (DIC)</h3>\n<p>Disseminerad intravasal koagulation (DIC) kan uppst&aring; vid till exempel sv&aring;r sepsis, obstetriska komplikationer och multitrauma (19,20)<span style=\"text-decoration: line-through;\"><span style=\"text-decoration: line-through;\"></span></span>. Mikrotromber bildas generellt och bidrar till organsvikt och hudnekroser. Bl&ouml;dningstendens uppkommer till f&ouml;ljd av &ouml;kad konsumtion med brist p&aring; koagulationsfaktorer och trombocyter. Man finner f&ouml;rl&auml;ngd APTT och f&ouml;rh&ouml;jt PK(INR), l&aring;ga v&auml;rden f&ouml;r koagulationsfaktorer och -h&auml;mmare, bland annat antitrombin.</p>\n<h3 id=\"Behandling-av-DIC\">Behandling av DIC</h3>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "13f4e6a1-115c-40c0-af0a-b877960547a8",
+			"name": "13f4e6a1-115c-40c0-af0a-b877960547a8",
+			"type": "facts",
+			"content": {
+				"number": "7",
+				"title": "<a class=\"crossref\" id=\"49867\"></a>Principer för behandling av DIC",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p>Principer f&ouml;r koagulationsbehandling vid <br />uttalad disseminerad intravasal koagulation (DIC) med bl&ouml;dning<br /> Typ av behandling styrs av klinik tillsammans med laboratoriev&auml;rden.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p></p>\r\n<ul>\r\n<li>Plasma</li>\r\n</ul>\r\n<ul>\r\n<li>Trombocytkoncentrat</li>\r\n</ul>\r\n<ul>\r\n<li>Fibrinolysh&auml;mmare (tranexamsyra)</li>\r\n</ul>\r\n<ul>\r\n<li>Protrombinkomplexkoncentrat</li>\r\n</ul>\r\n<ul>\r\n<li>Fibrinogenkoncentrat</li>\r\n</ul>\r\n<ul>\r\n<li>Andra koagulationsfaktorkoncentrat</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "d3_61"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "74f92d99-ffbb-4d8c-bb4f-88ce3ec6e686",
+			"name": "74f92d99-ffbb-4d8c-bb4f-88ce3ec6e686",
+			"type": "text",
+			"content": "<p>Grundl&auml;ggande f&ouml;r behandling &auml;r att utl&ouml;sande orsak &aring;tg&auml;rdas &ndash; eventuell infektion bek&auml;mpas, frakturer stabiliseras etc. Den vetenskapliga grunden f&ouml;r koagulationsbehandling &auml;r svag, men inriktas p&aring; att tillf&ouml;ra koagulationsh&auml;mmare f&ouml;r att d&auml;mpa aktiveringen samt att substituera brist p&aring; <span>koagulationsfaktorer</span> om patienten bl&ouml;der (se<a title=\"Faktaruta 7\" href=\"{pre}/kapitel/blod/blodningstillstand.html#facts_7_header\" target=\"_blank\"> Faktaruta 7</a><span style=\"text-decoration: line-through;\"></span>).</p>\n<p><br>Trombocyttransfusion ges endast vid uttalad trombocytopeni (&lt;&nbsp;cirka&nbsp;10&nbsp;x&nbsp;10<sup>9</sup>/L) och om man misst&auml;nker att denna bidrar till en p&aring;g&aring;ende bl&ouml;dning. Plasma ges i en dos av minst 10&ndash;15&nbsp;ml/kg kroppsvikt. Vid uttalad brist p&aring; enskilda faktorer och h&auml;mmare kan substitution med specifika koncentrat beh&ouml;vas, varvid samr&aring;d tillr&aring;ds med koagulationsspecialist vid n&aring;got av landets hemofilicentra (se <a title=\"faktaruta 6\" href=\"{pre}/kapitel/blod/blodningstillstand.html#facts_6_header\" target=\"_blank\">Faktaruta 6</a>).</p>\n<p><br>Protrombinkomplexkoncentrat ges i dosen 10&ndash;30&nbsp;IE/kilo kroppsvikt vid bl&ouml;dning som bed&ouml;ms bero p&aring; brist p&aring; FII, FVII, FIX och FX. Andra specifika koagulationsfaktorkoncentrat, s&aring;som FVIII-, VWF- och fibrinogenkoncentrat, ges vid uttalad bl&ouml;dning som bed&ouml;ms bero p&aring; brist p&aring; respektive faktor. Fibrinolysh&auml;mmare (tranexamsyra) ges om man misst&auml;nker att en patient bl&ouml;der p&aring; grund av f&ouml;rh&ouml;jd fibrinolytisk aktivitet. F&ouml;rsiktighet tillr&aring;ds eftersom &auml;ven nedsatt fibrinolys f&ouml;rekommer vid DIC. Doseringen av tranexamsyra &auml;r 10&nbsp;mg/kilo kroppsvikt intraven&ouml;st 1&ndash;4&nbsp;g&aring;nger/dygn. Heparin ska inte ges vid DIC om bl&ouml;dningsrisk f&ouml;religger.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b448a0f0-7369-4788-a1ce-b2fc0f578474",
+			"name": "b448a0f0-7369-4788-a1ce-b2fc0f578474",
+			"type": "text",
+			"content": "<h2 id=\"Referenser\">Referenser</h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "819a8900-7f29-41d4-96ba-0503f0984861",
+			"name": "819a8900-7f29-41d4-96ba-0503f0984861",
+			"type": "references",
+			"content": "<ol class=\"references\"><li id=\"reference_1\">Tosetto A, Rodeghiero F, Castaman G, Goodeve&nbsp;A, Federici AB, Batlle J, et al. A quantitative analysis of bleeding symptoms in type 1 von Willebrand disease: results from a multicenter European study (MCMDM-1 VWD). <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/16634745\">J Thromb Haemost. 2006;4:766&ndash;73.</a></li>\n<li id=\"reference_2\">Tosetto A, Castaman G, Rodeghiero F. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23809118\">Bleeders, bleeding rates, and bleeding score.</a> J Thromb Haemost. 2013 Jun;11 Suppl 1:142-50.</li>\n<li id=\"reference_3\">Rodeghiero F, Stasi R, Gernsheimer T, Michel M, Provan D, Arnold DM, et al. Standardization of terminology, definitions and outcome criteria in immune thrombocytopenic purpura of adults and children: report from an international working group. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/19005182\"> 2009;113:2386&ndash;93.</a></li>\n<li id=\"reference_4\">Watson H, Davidson S, Keeling D; Haemostasis and Thrombosis Task Force of the British Committee for Standards in Haematology. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23043677\">Guidelines on the diagnosis and management of heparin-induced thrombocytopenia: second edition.</a> Br J Haematol. 2012;159(5):528-40. Epub 2012 Oct 9.</li>\n<li id=\"reference_5\">Warkentin TE, Greinacher A. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/27380556\">Management of heparin-induced thrombocytopenia.</a> Curr Opin Hematol. 2016 Jul 1</li>\n<li id=\"reference_6\">Sadler <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/26637781\">What's new in the diagnosis and pathophysiology of thrombotic thrombocytopenic purpura.</a> Hematology Am Soc Hematol Educ Program. 2015;2015:631-6.</li>\n<li id=\"reference_7\"><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=Shenkman%20B%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24418304\">Shenkman B</a>, Einav Y. Thrombotic thrombocytopenic purpura and other thrombotic microangiopathic hemolytic anemias: diagnosis and classification. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/24418304\">Autoimmun Rev.</a> 2014 Apr-May;13(4-5):584-6. Epub 2014 Jan 11.</li>\n<li id=\"reference_8\"><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=Svensson%20PJ%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24703870\">Svensson PJ</a>, <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=Bergqvist%20PB%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24703870\">Bergqvist PB</a>, <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=Juul%20KV%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24703870\">Juul KV</a>, <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=Berntorp%20E%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=24703870\">Berntorp E</a>. Desmopressin in treatment of haematological disorders and in prevention of surgical bleeding. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/24703870\">Blood Rev.</a> 2014;28(3):95-102. Epub 2014 Mar 22.</li>\n<li id=\"reference_9\">Neunert C, Lim W, Crowther M, Cohen A, Solberg L Jr, Crowther MA; American Society of Hematology. The American Society of Hematology 2011 evidence-based practice guideline for immune thrombocytopenia. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/21325604\"> 2011;117:4190&ndash;207.</a></li>\n<li id=\"reference_10\">Rodeghiero F, Michel M, Gernsheimer T, Ruggeri M, Blanchette V, Bussel JB, Cines DB, Cooper N, Godeau B, Greinacher A, Imbach P, Khellaf M, Klaassen RJ, K&uuml;hne T, Liebman H, Mazzucconi MG, Newland A, Pabinger I, Tosetto A, Stasi R. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23361904\">Standardization of bleeding assessment in immune thrombocytopenia: report from the International Working Group.</a> Blood. 2013;121(14):2596-606. Epub 2013 Jan 29.</li>\n<li id=\"reference_11\"><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=Gresele%20P%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25403439\">Gresele P</a>; <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=Subcommittee%20on%20Platelet%20Physiology%20of%20the%20International%20Society%20on%20Thrombosis%20and%20Hemostasis%5BCorporate%20Author%5D\">Subcommittee on Platelet Physiology of the International Society on Thrombosis and Hemostasis</a>. Diagnosis of inherited platelet function disorders: guidance from the SSC of the ISTH. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/25403439\">J Thromb Haemost.</a> 2015;13(2):314-22. Epub 2015 Jan 22.</li>\n<li id=\"reference_12\"><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=Neff%20AT%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25696907\">Neff AT</a>, <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=Sidonio%20RF%20Jr%5BAuthor%5D&amp;cauthor=true&amp;cauthor_uid=25696907\">Sidonio RF Jr</a>. Management of VWD. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/25696907\">Hematology Am Soc Hematol Educ Program.</a> 2014;2014(1):536-41. Epub 2014 Nov 18.</li>\n<li id=\"reference_13\">Windyga J, Dolan G, Altisent C, Katsarou O, L&oacute;pez Fern&aacute;ndez MF, Z&uuml;lfikar B; EHTSB. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/27292438\">Practical aspects of factor concentrate use in patients with von Willebrand disease undergoing invasive procedures: a European survey.</a> Haemophilia. 2016 Jun 13.</li>\n<li id=\"reference_14\">Treatment of Hemophilia A and B and von Willebrand disease. A systematic review. Stockholm: Statens beredning f&ouml;r medicinsk utv&auml;rdering (SBU); 2011. Report No. 208E, ISBN9789185413447. <a href=\"http://www.sbu.se/sv/Publicerat/Gul/Behandling-av-blodarsjuka-med-koagulationsfaktorer/\">www.sbu.se</a></li>\n<li id=\"reference_15\">Berntorp E, Shapiro AD. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22456059\">Modern haemophilia</a> Lancet. 2012;379(9824):1447-56. Epub 2012 Mar 27.</li>\n<li id=\"reference_16\">Baudo F, Collins P, Huth-K&uuml;hne A, L&eacute;vesque H, Marco P, Nemes L, Pellegrini F, Tengborn L, Knoebl P; EACH2 registry contributors. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22618709\">Management of bleeding in acquired hemophilia A: results from the European Acquired Haemophilia (EACH2) Registry.</a> Blood. 2012;120(1):39-46. Epub 2012 May 22.</li>\n<li id=\"reference_17\">Hoffman M, Monroe DM. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/25696904\">Reversing targeted oral anticoagulants.</a> Hematology Am Soc Hematol Educ Program. 2014;2014(1):518-23. Epub 2014 Nov 18.</li>\n<li id=\"reference_18\">Ansell JE. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/26872887\">Reversing the Effect of Oral Anticoagulant Drugs: Established and Newer Options.</a> Am J Cardiovasc Drugs. 2016;16(3):163-70.</li>\n<li id=\"reference_19\">Gando S, Levi M, Toh CH. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/27250996\">Disseminated intravascular coagulation.</a> Nat Rev Dis Primers. 2016;2:16037.</li>\n<li id=\"reference_20\">Wada H, Thachil J, Di Nisio M, Mathew P, Kurosawa S, Gando S, Kim HK, Nielsen JD, Dempfle C, Levi M, Toh CH; The Scientific Standardization Committee on DIC of the International Society on Thrombosis Haemostasis. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23379279\">Guidance for diagnosis and treatment of DIC from harmonization of the recommendations from three guidelines.</a> J Thromb Haemost. 2013;11:761-7J</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1f9584ac-0d0a-4683-97fd-38d665f1fe18",
+			"name": "1f9584ac-0d0a-4683-97fd-38d665f1fe18",
+			"type": "text",
+			"content": "<h5 id=\"d3_64\">För vidare läsning:</h5>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f7645e56-7e7d-4f5a-84d5-51c0aa6e9f55",
+			"name": "f7645e56-7e7d-4f5a-84d5-51c0aa6e9f55",
+			"type": "references",
+			"content": "<p>1. Blodets sjukdomar - L&auml;robok I hematologi. Gahrton G, Juliusson G, editors. Studentlitteratur; 2012. ISBN 978-91-44-06924-1</p>\n<p></p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "96afa569-a4dc-4a40-9dec-d70536253b15",
+			"name": "96afa569-a4dc-4a40-9dec-d70536253b15",
+			"type": "text",
+			"content": "<h3 id=\"Blod\">Blod</h3>\n<p>J&auml;vsdeklarationer f&ouml;r kapitlets f&ouml;rfattare kan erh&aring;llas via <a href=\"mailto:registrator@mpa.se\">registrator@mpa.se</a>. Enklast sker detta genom de f&ouml;rberedda mejlen nedan.</p>\n<ul>\n<li>Jan Astermark, VO hematologi onkologi och str&aring;lningsfysik, Sk&aring;nes universitetssjukhus, Malm&ouml; <a href=\"mailto:registrator@mpa.se?subject=F%C3%B6rfr%C3%A5gan%20om%20j%C3%A4vsdeklaration&amp;body=Jag%20%C3%B6nskar%20j%C3%A4vsdeklaration%20f%C3%B6r%0D%0AJan%20Astermark%2C%20Hematologi-%20och%20koagulationskliniken%2C%20Sk%C3%A5nes%20universitetssjukhus%2C%20Malm%C3%B6%0D%0Af%C3%B6rfattare%20till%20kapitlet%20Bl%C3%B6dningstillst%C3%A5nd%2C%20L%C3%A4kemedelsboken%202014.%0D%0A%0D%0AV%C3%A4nliga%20h%C3%A4lsningar%0D%0A\">Fr&aring;ga efter j&auml;vsdeklaration via mejl</a><span style=\"text-decoration: line-through;\"></span></li>\n</ul>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/blod/blodningstillstand.json",
+	"modified": "2017-06-14 13:45",
+	"isPublished": true,
+	"indexed": "true"
+}

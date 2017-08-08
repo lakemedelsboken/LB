@@ -1,0 +1,102 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Läkemedel och barn – guide till information i Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2016-02-08 11:18",
+	"published": "2016-02-08 14:32",
+	"validUntil": "",
+	"createdBy": "Förnamn Efternamn",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "a0147136-d513-4abf-95db-477692fa7ede",
+			"name": "33657c50-25f8-49fd-a05a-69d2ff7327f1",
+			"type": "text",
+			"content": "<h1 id=\"Lakemedel-och-barn-guide-till-information-i-Lakemedelsboken\">L&auml;kemedel och barn &ndash; guide till information i L&auml;kemedelsboken</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0fd68260-dbaf-411d-8d1d-d0b9977d9e71",
+			"name": "0fd68260-dbaf-411d-8d1d-d0b9977d9e71",
+			"type": "tablenarrow",
+			"content": {
+				"number": "1",
+				"title": "Terapikapitel med särskild information om läkemedelsbehandling av barn",
+				"id": "",
+				"text": "<table class=\"table table-bordered\">\r\n<tbody>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/akutmedicin/den_akut_medvetslose_patienten.html\">Den akut medvetsl&ouml;se patienten</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/akutmedicin/chock.html\">Chock</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/akutmedicin/anafylaxi.html\">Anafylaxi</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/akutmedicin/akutmedicin_pa_vardcentral_och_andra_vardenheter.html\">Akutmedicin p&aring; v&aring;rdcentral och andra v&aring;rdenheter</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/mage-tarm/sjukdomar_i_matstrupe_magsack_och_tolvfingertarm.html\">Sjukdomar i matstrupe, mags&auml;ck och tolvfingertarm</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/mage-tarm/inflammatoriska_tarmsjukdomar.html\">Inflammatoriska tarmsjukdomar</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/nutrition/overvikt_och_fetma.html\">&Ouml;vervikt och fetma</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/nutrition/vitaminer_mineraler_och_sparamnen.html\">Vitaminer, mineraler och sp&aring;r&auml;mnen</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/blod/anemier.html\">Anemier</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/blod/venos_tromboembolism_och_medel_mot_trombos.html\">Ven&ouml;s tromboembolism och medel mot trombos</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/hjarta-karl/hjartsvikt.html\">Hj&auml;rtsvikt</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/nefrologi-urologi/urininkontinens.html\">Urininkontinens</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/nefrologi-urologi/urinvagsinfektioner.html\">Urinv&auml;gsinfektioner</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/endokrinologi/diabetes_mellitus.html\">Diabetes mellitus</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/endokrinologi/tyreoideasjukdomar.html\">Tyreoideasjukdomar</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/endokrinologi/kortikosteroider_och_hypofyshormoner.html\">Kortikosteroider och hypofyshormoner</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/andningsvagar/astma_och_kol.html\">Astma och KOL</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/andningsvagar/luftvagsinfektioner_hos_barn_och_vuxna.html\">Luftv&auml;gsinfektioner hos barn och vuxna</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/andningsvagar/oron-_nas-_och_halssjukdomar.html\">&Ouml;ron-, n&auml;s- och halssjukdomar</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/smarta/smarta_och_smartbehandling.html\">Sm&auml;rta och sm&auml;rtbehandling</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/neurologi/allman_neurologi_och_multipel_skleros.html\">Allm&auml;n neurologi och multipel skleros</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/neurologi/huvudvark.html\">Huvudv&auml;rk</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/neurologi/yrsel.html\">Yrsel</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/neurologi/epilepsi.html\">Epilepsi</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/psykiatri/angest_och_oro.html\">&Aring;ngest och oro</a></td>\r\n</tr>\r\n<tr>\r\n<td><a href=\"{pre}/kapitel/psykiatri/utvecklings-_och_neuropsykiatriska_storningar.html\">Utvecklings- och neuropsykiatriska st&ouml;rningar</a></td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "true",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "820fe233-54d6-4c0e-9df5-4d9995b93bef",
+			"name": "820fe233-54d6-4c0e-9df5-4d9995b93bef",
+			"type": "text",
+			"content": "<p>Under avsnittsrubriken Pediatrik har de specifika barnkapitlen, n&auml;mligen <a href=\"{pre}/kapitel/pediatrik/krav_vid_utveckling_av_lakemedel_till_barn.html\">Krav vid utveckling av l&auml;kemedel till barn</a>, <a href=\"{pre}/kapitel/pediatrik/lakemedelsbehandling_till_barn.html\">L&auml;kemedelsbehandling till barn</a>, <a href=\"{pre}/kapitel/pediatrik/vanliga_problem_under_smabarnsaren.html\">Vanliga problem under sm&aring;barns&aring;ren</a>, samt <a href=\"{pre}/kapitel/pediatrik/vaccination_av_barn_och_ungdomar.html\">Vaccination av barn och&nbsp;ungdomar, </a>samlats.<br><br></p>\n<p>I vissa av de &ouml;vriga terapikapitlen finns&nbsp;s&auml;rskilda avsnitt om l&auml;kemedelsbehandling&nbsp;av barn vilka redovisas i Tabell 1. Ut&ouml;ver detta har behovet av information om l&auml;kemedel&nbsp;till barn tagits i s&auml;rskilt beaktande i flera andra terapikapitel&nbsp;i LB.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "eec9fd4d-a5c6-4685-ad82-a2d600fb627b",
+			"name": "7748a999-f0c1-4a70-8de7-ddfa80fee932",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"For-vidare-lasning\">F&ouml;r vidare l&auml;sning</h2>\n<p>Pediatriska v&aring;rdprogram och PM kan h&auml;mtas&nbsp;fr&aring;n Svenska Barnl&auml;kar&shy;f&ouml;reningens&nbsp;webbplats, <a href=\"http://www.blf.net\">www.blf.net</a>.&nbsp;</p>\n<p class=\"normal indent\">En annan v&auml;rdefull informations&shy;k&auml;lla p&aring;&nbsp;Internet &auml;r Barnh&auml;lso&shy;v&aring;rdens &rdquo;Rikshandboken&rdquo;, <a href=\"http://www.rikshandboken-bhv.se\">www.rikshandboken-bhv.se</a>.</p>\n<p class=\"normal\"></p>\n<ol class=\"references\"><li id=\"reference_1\">Norgren S, Ludvigsson JF, Norman M, red. Akut<br>pediatrik. Stockholm: Liber AB; 2010.<br>ISBN 9789147094028.</li>\n<li id=\"reference_2\">Mo&euml;ll C, Gustafsson J. Pediatrik, bok med eLabb.<br>1:a uppl. Liber; 2011. ISBN 9789147103454.</li>\n<li id=\"reference_3\">Hans&eacute;us K, Lagercrantz H, Lindberg T, red.<br>Barnmedicin. 4:e uppl. Studentlitteratur AB;<br>2012. ISBN 9144076096.</li>\n<li id=\"reference_4\">Kliegman RM, Stanton B, St. Geme J, Schor NF,<br>Behrman RE, eds. Nelson Textbook of Pediatrics &ndash;<br>Expert Consult Premium Edition - Enhanced Online<br>Features and Print, 19:e uppl. Philadelphia:<br>Saunders; 2011. ISBN 9781437707557.</li>\n<li id=\"reference_5\">Mcintosch N, Helms PJ, Smyth RL, Stuart L, red.<br>Forfar &amp; Arneil's Textbook of Pediatrics 7:e uppl.<br>Churchill Livingstone; 2008. ISBN 9780443103964.</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/pediatrik/guide-till-info-i-lb.json",
+	"indexed": "true",
+	"modified": "2017-06-01 11:15",
+	"isPublished": true
+}
