@@ -27,7 +27,13 @@
 		<div class="navbar-collapse collapse navbar-right">
 			<a href="http://service.lakemedelsboken.se/manual/" target="_blank" class="btn navbar-btn btn-primary"><i class="fa fa-file-text-o"></i> Manual</a>
 			<% if (canBePublished) { %>
-			<a class="btn navbar-btn btn-success" href="/cms/content/publishpage?pagepath=<%=id%>"><i class="fa fa-check"></i> Märk för publicering</a>
+			<a 	class="btn navbar-btn btn-success publishedButton"
+				data-toggle="modal"
+				data-target="#publishedModal2"
+				data-pagepath="<%=id%>"
+				title="Märk den här sidan för publicering">
+					<i class="fa fa-check"></i> Publicera
+			</a>
 			<% } %>
 			<% if (canBeUnpublished) { %>
 			<a class="btn navbar-btn btn-danger" href="/cms/content/unpublishpage?pagepath=<%=id%>"><i class="fa fa-chain-broken"></i> Avpublicera</a>
@@ -667,7 +673,6 @@
 	</div>
 </div>
 
-<<<<<<< HEAD
 <div class="modal"  tabindex="-1" role="dialog" aria-labelledby="Förslag på ämnen" id="subjectSuggestionsModal" aria-hidden="true">
 	<div class="modal-dialog modal-sm">
 		<div class="modal-content">
@@ -700,7 +705,30 @@
 </div>
 
 
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Publicera" id="publishedModal2" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Publicera </h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/content/publishpage" method="get" class="form-horizontal" role="form" autocomplete="off">
+					<input type="hidden" name="pagepath" id="publishPagePath" value="">
+					<div class="form-group">
+						<div class="col-sm-10">
+							<strong>Vill du publicera sidan live?</strong>
+						</div>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ja, publicera</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
 <% include footer %>
-=======
-<% include footer %>
->>>>>>> master

@@ -38,7 +38,13 @@
 					<li class="divider"></li>
 					<!--<li class="disabled"><a href="#" data-toggle="modal" class="disabled" data-target="#checkLinks"><i class="fa fa-question"></i> Kontrollera länkar...</a></li>
 					<li class="divider"></li>-->
+					<%
+					if (server && server !== "test") {
+					%>
 					<li><a href="#" data-toggle="modal" data-target="#saveContentToGitHub"><i class="fa fa-github"></i> Spara till GitHub...</a></li>
+					<%
+					}
+					%>
 					<!--<li class="divider"></li>
 					<li><a href="#" data-toggle="modal" data-target="#publishExternal"><i class="fa fa-rocket"></i> Publicera live...</a></li>-->
 				</ul>
@@ -195,7 +201,15 @@
 					<tr>
 						<td class="col-sm-3"><a href="/cms/<%=draft.path%>" class="break"><%=draft.path.replace(".json", "")%></a></td>
 						<td class="col-sm-2" style="white-space: nobreak;"><%=draft.niceDate%></td>
-						<td class="col-sm-1"><a class="btn btn-sm btn-success" href="/cms/content/publishpage?pagepath=<%=draft.path%>" title="Märk den här sidan för publicering"><i class="fa fa-check"></i> Publicera</a></td>
+						<td class="col-sm-1">
+							<a 	class="btn btn-sm btn-success publishedButton"
+								data-toggle="modal"
+								data-target="#publishedModal"
+								data-pagepath="<%=draft.path%>"
+								title="Märk den här sidan för publicering">
+									<i class="fa fa-check"></i> Publicera
+							</a>
+						</td>
 						<td class="col-sm-1">
 							<%
 							if (draft.canBeRevertedToLastPublishedVersion) {
@@ -463,6 +477,31 @@
 					<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
 					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ja, återgå till publicerad</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Publicera" id="publishedModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Publicera </h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/content/publishpage" method="get" class="form-horizontal" role="form" autocomplete="off">
+					<input type="hidden" name="pagepath" id="publishPagePath" value="">
+					<div class="form-group">
+						<div class="col-sm-10">
+							<strong>Vill du publicera sidan live?</strong>
+						</div>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ja, publicera</button>
 					</div>
 				</form>
 			</div>
