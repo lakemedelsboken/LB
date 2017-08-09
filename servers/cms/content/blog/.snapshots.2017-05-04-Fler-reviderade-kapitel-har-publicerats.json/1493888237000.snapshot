@@ -1,0 +1,49 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "Nya reviderade kapitel",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "nyhet",
+	"created": "2017-05-04 10:48",
+	"published": "2017-05-04 10:54",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "2d2ce3dc-d7f3-440d-baa1-710557d9ddb6",
+			"name": "fc3a9a0e-7460-4b72-8112-0dcb97f1b7f2",
+			"type": "summary",
+			"content": "<p>Vi har nu &auml;ven publicerat reviderade versioner av kapitlen <a href=\"{pre}/kapitel/hud/hudsjukdomar.html#f1_4\">Hudsjukdomar</a> och <a href=\"{pre}/kapitel/beroendetillstand/alkohol-riskbruk_skadligt_bruk_och_beroende.html#t2_2\">Alkohol - riskbruk, skadligt bruk och beroende</a>.<br /><br />Trevlig v&aring;rl&auml;sning!</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/blog/2017-05-04-Fler-reviderade-kapitel-har-publicerats.json",
+	"indexed": "true",
+	"modified": "2017-05-04 10:57",
+	"isPublished": true
+}

@@ -2,6 +2,7 @@
 
 	* {
 		letter-spacing: normal;
+		line-height:200%;
 
 	}
 
@@ -18,11 +19,14 @@
 		font-family: sans-serif;
 		font-weight: normal;
 		*/
+		font-weight: bold;
+		margin-top: 50px;
 		letter-spacing: normal;
 	}
 
 	a.btn-mini.inlineReference {
 		letter-spacing: normal;
+		line-height:200%;
 		font-weight: normal;
 		padding: none;
 		vertical-align: super;
@@ -168,6 +172,10 @@
 		color: #333;
 	}
 
+	h1 {
+
+	}
+
 	#fullscreen {
 		display: none;
 	}
@@ -195,11 +203,12 @@
 		border-radius: 0;
 	}
 
-	#settings, #gotoTop, a.anchor-link {
+	#settings, #download-pdf, #gotoTop, a.anchor-link {
 		display: none !important;
 	}
 
 	tr {
 		page-break-inside: avoid;
 	}
+
 }

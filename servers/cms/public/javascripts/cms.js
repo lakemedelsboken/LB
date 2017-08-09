@@ -665,6 +665,10 @@ $(document).ready(function() {
 		$("input#revertPagePath").val($(this).attr("data-pagepath"));
 	});
 
+	$("a.publishedButton").on("click", function(event) {
+		$("input#publishPagePath").val($(this).attr("data-pagepath"));
+	});
+
 	$("button.revertToSnapshotButton").on("click", function(event) {
 		$("input#revertPagePath").val($(this).attr("data-pagepath"));
 		$("input#revertVersion").val($(this).attr("data-version"));
@@ -868,109 +872,213 @@ $(document).ready(function() {
 			});
 
 	});
-});
 
-$("#contentTypeFilter").on("change", function(event) {
-	if (this.value === "all") {
-		$(".contentItemOverview").show();
-	} else {
-		$(".contentItemOverview").hide();
-		$(".contentItemOverview." + this.value).show();
-	}
-});
+	suggestedSubjects = $("#suggestedSubjects");
 
-$(".showFullPreview").on("click", function(event) {
-	$(this).parent().prev().css("max-height", "none");
-	$(this).parent().remove();
-});
+	//After page load, get suggested subject words from API
+	setTimeout(function() {
 
-$(".expandContentEditor").on("click", function(event) {
-	var editorContentView = $(this).parent().parent().parent();
-	var previewContent = editorContentView.next();
+		var extractKeywordsButton = $("#extractKeywordsButton");
 
-	editorContentView.toggleClass("col-sm-7");
-	editorContentView.toggleClass("col-sm-12");
+		$.ajax({url: extractKeywordsButton.attr("href"), success: function(data){
 
-	previewContent.toggleClass("col-sm-5");
-	previewContent.toggleClass("hidden");
+			suggestedSubjects.empty();
 
-	if ($(this).find("i").first().hasClass("fa-expand")) {
-		$(this).html("<i class=\"fa fa-compress\"></i> Minska");
-	} else {
-		$(this).html("<i class=\"fa fa-expand\"></i> Bredda");
-	}
+			for (var i = 0; i < data.content.length; i++) {
 
-});
+				//{word: word, count: count, meshterm: true|false, synonyms: synonyms}
+
+				var item = data.content[i];
+
+				if (item.meshterm) {
+					//Mesh words in bold
+					suggestedSubjects.append($('<div class="checkbox"><label><input type="checkbox" value="' + item.word + '"><strong>' + item.word + '</strong></label></div>'))
+				} else {
+					suggestedSubjects.append($('<div class="checkbox"><label><input type="checkbox" value="' + item.word + '">' + item.word + '</label></div>'))
+				}
+
+				if (item.synonyms !== "") {
+					//Synonyms in italics
+					suggestedSubjects.append($('<div class="checkbox"><label><input type="checkbox" value="' + item.synonyms + '"><em>' + item.synonyms + '</em></label></div>'))
+				}
+
+			}
+
+			if (data.content.length === 0) {
+				suggestedSubjects.append($('<div class="checkbox">Hittade inga förslag på ämnen</div>'))
+			}
+
+		}, dataType: "json"});
 
 
-$("textarea.mce").on("focus", function(event) {
+	}, 500);
 
-	if ($(this).attr("data-mce-initialized") === undefined) {
+	$("#extractKeywordsButton").on("click", function(event) {
 
-		$(this).attr("data-mce-initialized", "true");
+		event.preventDefault();
 
-		//Find preview
-		var itemContainer = $(this).parents(".editContent").first();
+		$("#subjectSuggestionsModal").modal();
 
-		if (itemContainer.length === 1) {
-			var showFullPreviewButton = itemContainer.find("button.showFullPreview").first();
-			if (showFullPreviewButton.length === 1) {
-				showFullPreviewButton.trigger("click");
+	});
+
+	$("#subjectSuggestionsModal").on("show.bs.modal", function() {
+
+		//Sync suggestions with current written subjects
+
+		var currentSubjects = $("input#subject").val();
+
+		currentSubjects = currentSubjects.split(",");
+
+		for (var i = currentSubjects.length - 1; i >= 0; i--) {
+			currentSubjects[i] = $.trim(currentSubjects[i]);
+		}
+
+		suggestedSubjects.find("input").each(function() {
+			if (currentSubjects.indexOf($(this).attr("value")) > -1) {
+				$(this).prop("checked", true);
+			} else {
+				$(this).prop("checked", false);
+			}
+		});
+
+	});
+
+	suggestedSubjects.on("change", ":checkbox", function() {
+
+		var word = $(this).val();
+
+		var currentSubjects = $("input#subject").val();
+
+		currentSubjects = currentSubjects.split(",");
+
+		for (var i = currentSubjects.length - 1; i >= 0; i--) {
+			currentSubjects[i] = $.trim(currentSubjects[i]);
+			if (currentSubjects[i] === "") {
+				currentSubjects.splice(i, 1);
 			}
 		}
 
-		if ($(this).attr("id") === undefined) {
-			var elementName = $(this).attr("name").replace(/\:/g, "_").replace(/\-/g, "_");
-			$(this).attr("id", elementName);
+		if ($(this).prop("checked")) {
+			//Check if the value already exists, otherwise add it
+			if (currentSubjects.indexOf(word) === -1) {
+				currentSubjects.push(word);
+			}
+		} else {
+			//If the value exists - remove it
+			if (currentSubjects.indexOf(word) > -1) {
+				currentSubjects.splice(currentSubjects.indexOf(word), 1);
+			}
+
 		}
 
-		var id = $(this).attr("id");
+		//Write new values to subject input
+		$("input#subject").val(currentSubjects.join(", "));
 
-		//console.log("init: textarea#" + id);
+	});
 
-		tinymce.init({
-			selector: "textarea#" + id,
-			theme: "modern",
-			menubar: "edit insert view format table tools",
-			plugins: [
-				"advlist autolink autoresize lists link image charmap print preview hr anchor pagebreak",
-				"searchreplace wordcount visualblocks visualchars code fullscreen",
-				"insertdatetime media nonbreaking table contextmenu directionality", //save
-				"template paste textcolor colorpicker textpattern", //emoticons
-				"fontawesome noneditable removetablelines removetableparagraphs"
-			],
-			//content_css: "/cms/draft/css/styles.min.css,/cms/draft/css/lb.min.css",
-			content_css: "/cms/stylesheets/tinymcepreview.css, /cms/stylesheets/font-awesome-4.3.0/css/font-awesome.min.css",
-			link_list: "/cms/utils/links.json",
-/*
-			table_class_list: [
-				{title: 'None', value: ''},
-				{title: 'Terapirekommendation', value: 'therapyRecommendation'},
-				{title: 'Bred tabell', value: 'tbl infoTable wide'},
-				{title: 'Smal tabell', value: 'infoTable'},
-				{title: 'Faktaruta', value: 'facts'}
-			],
-*/
-			language: "sv_SE",
-			style_formats_merge: true,
-			style_formats: [
-				{title: 'Uppdaterad text', inline: 'span', classes: 'updated'},
-				{title: 'Ingress', block: 'p', classes: 'ingress'},
-				{title: 'Indenterad första rad', block: 'p', classes: 'indent'},
-				{title: 'Stycke med avstånd', block: 'p', classes: 'normal'},
-				{title: 'Tabellrad utan radbrytning', block: 'div', classes: 'tableLine'},
-			],
-			toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media | forecolor backcolor",
-			toolbar2: "fontawesome | removetablelines | removetableparagraphs", //emoticons print preview
-			image_advtab: true,
-			valid_elements: "*[*]",
-			extended_valid_elements: "span[class|style]",
-			autoresize_max_height: "500px",
-			templates: [
-			],
-			convert_urls: false
-		});
+	$("#contentTypeFilter").on("change", function(event) {
+		if (this.value === "all") {
+			$(".contentItemOverview").show();
+		} else {
+			$(".contentItemOverview").hide();
+			$(".contentItemOverview." + this.value).show();
+		}
+	});
 
-	}
+	$(".showFullPreview").on("click", function(event) {
+		$(this).parent().prev().css("max-height", "none");
+		$(this).parent().remove();
+	});
+
+	$(".expandContentEditor").on("click", function(event) {
+		var editorContentView = $(this).parent().parent().parent();
+		var previewContent = editorContentView.next();
+
+		editorContentView.toggleClass("col-sm-7");
+		editorContentView.toggleClass("col-sm-12");
+
+		previewContent.toggleClass("col-sm-5");
+		previewContent.toggleClass("hidden");
+
+		if ($(this).find("i").first().hasClass("fa-expand")) {
+			$(this).html("<i class=\"fa fa-compress\"></i> Minska");
+		} else {
+			$(this).html("<i class=\"fa fa-expand\"></i> Bredda");
+		}
+
+	});
+
+
+	$("textarea.mce").on("focus", function(event) {
+
+		if ($(this).attr("data-mce-initialized") === undefined) {
+
+			$(this).attr("data-mce-initialized", "true");
+
+			//Find preview
+			var itemContainer = $(this).parents(".editContent").first();
+
+			if (itemContainer.length === 1) {
+				var showFullPreviewButton = itemContainer.find("button.showFullPreview").first();
+				if (showFullPreviewButton.length === 1) {
+					showFullPreviewButton.trigger("click");
+				}
+			}
+
+			if ($(this).attr("id") === undefined) {
+				var elementName = $(this).attr("name").replace(/\:/g, "_").replace(/\-/g, "_");
+				$(this).attr("id", elementName);
+			}
+
+			var id = $(this).attr("id");
+
+			//console.log("init: textarea#" + id);
+
+			tinymce.init({
+				selector: "textarea#" + id,
+				theme: "modern",
+				menubar: "edit insert view format table tools",
+				plugins: [
+					"advlist autolink autoresize lists link image charmap print preview hr anchor pagebreak",
+					"searchreplace wordcount visualblocks visualchars code fullscreen",
+					"insertdatetime media nonbreaking table contextmenu directionality", //save
+					"template paste textcolor colorpicker textpattern", //emoticons
+					"fontawesome noneditable removetablelines removetableparagraphs"
+				],
+				//content_css: "/cms/draft/css/styles.min.css,/cms/draft/css/lb.min.css",
+				content_css: "/cms/stylesheets/tinymcepreview.css, /cms/stylesheets/font-awesome-4.3.0/css/font-awesome.min.css",
+				link_list: "/cms/utils/links.json",
+	/*
+				table_class_list: [
+					{title: 'None', value: ''},
+					{title: 'Terapirekommendation', value: 'therapyRecommendation'},
+					{title: 'Bred tabell', value: 'tbl infoTable wide'},
+					{title: 'Smal tabell', value: 'infoTable'},
+					{title: 'Faktaruta', value: 'facts'}
+				],
+	*/
+				language: "sv_SE",
+				style_formats_merge: true,
+				style_formats: [
+					{title: 'Uppdaterad text', inline: 'span', classes: 'updated'},
+					{title: 'Ingress', block: 'p', classes: 'ingress'},
+					{title: 'Indenterad första rad', block: 'p', classes: 'indent'},
+					{title: 'Stycke med avstånd', block: 'p', classes: 'normal'},
+					{title: 'Tabellrad utan radbrytning', block: 'div', classes: 'tableLine'},
+				],
+				toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media | forecolor backcolor",
+				toolbar2: "fontawesome | removetablelines | removetableparagraphs | visualchars | nonbreaking", //emoticons print preview
+				image_advtab: true,
+				valid_elements: "*[*]",
+				extended_valid_elements: "span[class|style]",
+				autoresize_max_height: "500px",
+				templates: [
+				],
+				convert_urls: false
+				});
+
+		}
+
+	});
 
 });

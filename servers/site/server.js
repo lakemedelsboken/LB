@@ -7,6 +7,10 @@ var crypto = require("crypto");
 var request = require("request");
 var zlib = require("zlib");
 var chokidar = require("chokidar");
+var uuid = require('node-uuid');
+var spawn = require("child_process").spawn;
+var dateFormat = require("dateformat");
+
 
 var secretSettingsPath = __dirname + "/../../settings/secretSettings.json";
 
@@ -976,6 +980,89 @@ function getOldNameFromChapterPath(chapterPath) {
 */
 app.get("/psidata", function(req, res){
 	res.redirect(301, "/api/");
+});
+
+app.get("/pdf/download", function(req, res) {
+
+	var url = req.query["url"];
+
+	if (url !== undefined && url !== "") {
+
+		if (url.indexOf('.json') !== -1 ) {
+			url = url.replace('.json', '.html');
+		}
+
+		var outPath = path.join(require("os").tmpdir(), uuid.v1() + ".pdf");
+
+		var date = new Date();
+		var fileNameDate = dateFormat(date, "yyyy-mm-dd--HH-MM-ss");
+
+		var newFileName = path.basename(url, ".html") + "-" + fileNameDate + ".pdf";
+
+		var cookies = [];
+
+		var arguments = ["--print-media-type", "--disable-smart-shrinking", "--zoom", "0.7", "--dpi", "240", "-n", "--no-background"];
+
+		arguments = arguments.concat(["--footer-font-size", 8]);
+		arguments = arguments.concat(["--header-font-size", 8]);
+		arguments = arguments.concat(["--footer-font-name", "Courier"]);
+		arguments = arguments.concat(["--header-font-name", "Courier"]);
+		arguments = arguments.concat(["--margin-left", "30mm"]);
+		arguments = arguments.concat(["--margin-right", "30mm"]);
+
+		arguments.push("http://localhost" + url)
+		arguments.push(outPath);
+
+		var hasExited = false;
+		var converter = spawn('wkhtmltopdf', arguments);
+
+		converter.stdout.on('data', function (data) {
+			console.log('stdout: ' + data);
+		});
+
+		converter.stderr.on('data', function (data) {
+			console.log('stderr: ' + data);
+		});
+
+		converter.on('close', function (code) {
+			if (code !== 0) {
+				console.log('Child process exited with code ' + code);
+				hasExited = true;
+
+				res.status(500);
+				var err = new Error('Child process exited with code ' + code);
+				res.render('error', {
+					message: err.message,
+					error: err
+				});
+
+			} else if (!hasExited) {
+				hasExited = true;
+
+				//Everything is ok
+				res.download(outPath, newFileName);
+
+			}
+		});
+
+		converter.on('error', function (err) {
+
+			console.log('Child process exited with err ', err);
+
+			if (!hasExited) {
+				hasExited = true;
+				res.status(500);
+				res.render('error', {
+					message: 'Child process exited with err: ' + err.message,
+					error: err
+				});
+			}
+		});
+
+	} else {
+		res.redirect("back");
+	}
+
 });
 
 /* The 404 Route (Keep this as the last route) */

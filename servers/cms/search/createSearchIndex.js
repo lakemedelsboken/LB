@@ -201,6 +201,8 @@ function addContent(content, elementName, element) {
 			findTypeOfHeader = {"facts": null, "therapyRecommendations": null, "infoTable": null};
 		} else if (elementName !== "body" && existsParent(elementParents, "div", "facts")) {
 			findTypeOfHeader = {"facts": null};
+		} else if (elementName !== "body" && existsParent(elementParents, "div", "casereport")) {
+			findTypeOfHeader = {"casereport": null};
 		} else if (elementName !== "body" && existsParent(elementParents, "div", "figure")) {
 			findTypeOfHeader = {"figure": null};
 		} else if (elementName !== "body" && existsParent(elementParents, "div", "therapy-recommendations")) {
@@ -345,6 +347,8 @@ function iterateElement(element) {
 				type = "infoTable";
 			} else if ($(element).hasClass("figure")) {
 				type = "figure";
+			} else if ($(element).hasClass("casereport")) {
+				type = "casereport";
 			}
 
 			//TODO: Find indices?
@@ -355,7 +359,7 @@ function iterateElement(element) {
 				//console.error(element);
 			}
 			
-			if (type === "facts" || type === "figure" || type === "therapyRecommendations" || type === "infoTable") {
+			if (type === "facts" || type === "figure" || type === "therapyRecommendations" || type === "infoTable" || type === "casereport") {
 				//Switch level to 3
 				level = 3;
 			}
@@ -366,6 +370,15 @@ function iterateElement(element) {
 			if (type === "facts" && $(element).hasClass("skip")) {
 				//If the last item was also a facts item (it probably was) add the title to that header
 				if (toc[toc.length - 1].type === "facts") {
+					toc[toc.length - 1].title += (" - " + $(element).text());
+				} else {
+					$(element).find("a.inlineReference").remove();
+					$(element).find("a.pageFootnoteItem").remove();
+					addToToc(dataId, $(element).text(), level, type);
+				}
+			} else if (type === "casereport" && $(element).hasClass("skip")) {
+					//If the last item was also a casereport item (it probably was) add the title to that header
+				if (toc[toc.length - 1].type === "casereport") {
 					toc[toc.length - 1].title += (" - " + $(element).text());
 				} else {
 					$(element).find("a.inlineReference").remove();

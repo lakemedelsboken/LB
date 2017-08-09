@@ -1,0 +1,49 @@
+{
+	"templateName": "default",
+	"templateDescription": "Vanlig sida",
+	"title": "Redaktionskommitté | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-23 23:48",
+	"published": "2015-07-23 23:51",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "/editors.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "1e878b54-7cb6-451d-8134-5fd5e65aa8ec",
+			"name": "1e878b54-7cb6-451d-8134-5fd5e65aa8ec",
+			"type": "text",
+			"content": "<h1 id=\"Redaktionskommitt-\">Redaktionskommitt&eacute;</h1>\n<p><strong>Patrik Midl&ouml;v</strong> ordf&ouml;rande<small></small><br>Professor i allm&auml;nmedicin, Institutionen f&ouml;r Kliniska Vetenskaper i Malm&ouml;, Lunds Universitet samt allm&auml;nl&auml;kare, V&aring;rdcentralen T&aring;belund, Esl&ouml;v</p>\n<p><strong><br>Pernilla &Ouml;rtqvist</strong> redakt&ouml;r<br>Leg. apotekare, farm.dr., L&auml;kemedelsverket, Uppsala</p>\n<p><strong><br>Annika And&eacute;n</strong><br>Allm&auml;nl&auml;kare, MD, Specialistl&auml;karhuset Hermelinen, Lule&aring;</p>\n<p><strong><br>Inge Eriksson</strong></p>\n<p></p>\n<p></p>\n<p><strong><br>Leif Gothefors</strong><br>Klinisk vetenskap, pediatrik, Ume&aring; Universitet, Ume&aring;</p>\n<p><strong><br>Tove Gunnarsson</strong><br>Psykiatri Karolinska, Karolinska Universitetssjukhuset, Stockholm<strong></strong></p>\n<p><strong><br>Hans Liedholm</strong><br>Docent i inv&auml;rtesmedicin, Lund</p>\n<p><strong><br>Jan Liliemark</strong><br>SBU, Stockholm</p>\n<p><strong><br>Staffan Living</strong><br>Eskilstuna</p>\n<p><strong><br>Pernilla Magnusson</strong></p>\n<p>L&auml;kemedelsverket, Uppsala</p>\n<p><strong><br>H&aring;kan Odeberg</strong><br>Patients&auml;kerhetsavdelningen, Landstinget Blekinge, Karlskrona</p>\n<p><strong><br>Brita Sj&ouml;str&ouml;m</strong></p>\n<p>L&auml;kemedelsverket, Uppsala</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/redaktionskommitte/index.json",
+	"indexed": "true",
+	"modified": "2016-11-23 09:22",
+	"isPublished": true
+}

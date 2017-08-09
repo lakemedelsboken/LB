@@ -26,15 +26,15 @@ var job = new cronJob({
 
 
 
-if (!fs.existsSync("../../../settings/secretSettings.json")) {
+if (!fs.existsSync(__dirname + "../../../settings/secretSettings.json")) {
     console.error("Config file [../../../settings/secretSettings.json] missing!");
     console.error("Did you forget to run `make decrypt_conf`?");
     process.exit(1);
 }
 
 (function() {
-    var conf_time = fs.statSync("../../../settings/secretSettings.json").mtime.getTime();
-    var cast5_time = fs.statSync("../../../settings/secretSettings.json.cast5").mtime.getTime();
+    var conf_time = fs.statSync(__dirname + "../../../settings/secretSettings.json").mtime.getTime();
+    var cast5_time = fs.statSync(__dirname + "../../../settings/secretSettings.json.cast5").mtime.getTime();
 
     if (conf_time < cast5_time) {
         console.error("Your config file is out of date!");
@@ -43,7 +43,7 @@ if (!fs.existsSync("../../../settings/secretSettings.json")) {
     }
 })();
 
-var secretSettings = JSON.parse(fs.readFileSync("../../../settings/secretSettings.json", "utf8"));
+var secretSettings = JSON.parse(fs.readFileSync(__dirname + "../../../settings/secretSettings.json", "utf8"));
 
 
 checkBrokenLinks(function(brokenLinks) {
@@ -120,5 +120,3 @@ function sendMail(brokenLinksString) {
         });
     }
 }
-
-

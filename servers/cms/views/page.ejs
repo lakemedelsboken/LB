@@ -13,7 +13,7 @@
 				}
 			%>
 			<a href="<%=backPath%>" class="btn navbar-btn btn-primary"><i class="fa fa-chevron-left"></i> Tillbaka</a>
-			<%					
+			<%
 			}
 			%>
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -27,7 +27,13 @@
 		<div class="navbar-collapse collapse navbar-right">
 			<a href="http://service.lakemedelsboken.se/manual/" target="_blank" class="btn navbar-btn btn-primary"><i class="fa fa-file-text-o"></i> Manual</a>
 			<% if (canBePublished) { %>
-			<a class="btn navbar-btn btn-success" href="/cms/content/publishpage?pagepath=<%=id%>"><i class="fa fa-check"></i> Märk för publicering</a>
+			<a 	class="btn navbar-btn btn-success publishedButton"
+				data-toggle="modal"
+				data-target="#publishedModal2"
+				data-pagepath="<%=id%>"
+				title="Märk den här sidan för publicering">
+					<i class="fa fa-check"></i> Publicera
+			</a>
 			<% } %>
 			<% if (canBeUnpublished) { %>
 			<a class="btn navbar-btn btn-danger" href="/cms/content/unpublishpage?pagepath=<%=id%>"><i class="fa fa-chain-broken"></i> Avpublicera</a>
@@ -63,24 +69,27 @@
 				<li class="contentItemOverview metadata"><a href="#metadata">Metadata</a></li>
 			<%
 			for (var i = 0; i < page.content.length; i++) {
-				
+
 				var number = "";
-				
 				var item = page.content[i];
-				
+
 				if (item.content.number !== undefined) {
 					number = " " + item.content.number;
 				}
 
 			%>
-				<li class="contentItemOverview <%=item.type%>"><a href="#<%=item.name%>"><%=contentTypes[item.type].name + number%></a></li>
+				<li class="contentItemOverview <%=item.type%>"><a href="#<%=item.name%>"><%=contentTypes[item.type].name + number + item.title%></a></li>
 			<%
 			}
 			%>
 			</ul>
 		</div>
 		<div class="col-sm-10 col-sm-offset-2 main">
-			<h1 class="page-header">Redigera sida: <small class="break"><%=id.replace(".json", "")%></small> <button class="btn btn-sm btn-primary pull-right" data-toggle="modal" data-target="#movePageModal"><i class="fa fa-file-o"></i> Flytta sida</button><button class="btn btn-sm btn-warning pull-right" data-toggle="modal" data-target="#checkLinksModal"><i class="fa fa-link"></i> Kontrollera länkar</button></h1>
+			<h1 class="page-header">Redigera sida: <small class="break"><%=id.replace(".json", "")%></small>
+				<a class="btn btn-sm btn-primary pull-right page-header-btm" style="margin-left:10px;" href=""><i class="fa fa-pencil"></i> Gör all text svart</a>
+				<button class="btn btn-sm btn-primary pull-right page-header-btm" data-toggle="modal" data-target="#movePageModal"><i class="fa fa-file-o"></i> Flytta sida</button>
+				<button class="btn btn-sm btn-warning pull-right" data-toggle="modal" data-target="#checkLinksModal"><i class="fa fa-link"></i> Kontrollera länkar</button>
+			</h1>
 
 			<form class="form-horizontal" role="form" id="pageForm" action="/cms/content/savepage" method="post" autocomplete="off">
 
@@ -122,12 +131,12 @@
 						<div class="col-sm-10">
 							<input type="text" class="form-control" id="title" name="title" placeholder="Titel" value="<%=page.title%>">
 							<small>
-								Ska i korthet beskriva innehållet så att det framgår 
-								vad dokumentet handlar om, och så att man enkelt 
-								i publika sökmotorer ser vad för slags information 
-								man har sökt fram. Överväg även att beskriva vilken 
+								Ska i korthet beskriva innehållet så att det framgår
+								vad dokumentet handlar om, och så att man enkelt
+								i publika sökmotorer ser vad för slags information
+								man har sökt fram. Överväg även att beskriva vilken
 								den tänkta målgruppen för dokumentet är
-								beskrivning några få meningar om vad informationen handlar om, 
+								beskrivning några få meningar om vad informationen handlar om,
 								konkret
 							</small>
 						</div>
@@ -155,20 +164,25 @@
 						<div class="col-sm-10">
 							<input type="text" class="form-control" id="keywords" name="keywords" placeholder="Nyckelord" value="<%=page.keywords%>">
 							<small>
-								Några fritt beskrivande ord som sidan ska bli sökbar 
-								med. Kontrollerad vokabulär inte nödvändig. 
-								Tex gärna synonymer, och ord som inte redan finns 
+								Några fritt beskrivande ord som sidan ska bli sökbar
+								med. Kontrollerad vokabulär inte nödvändig.
+								Tex gärna synonymer, och ord som inte redan finns
 								i rubriker
 							</small>
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="subject" class="col-sm-2 control-label">Ämne</label>
+						<label for="subject" class="col-sm-2 control-label">Ämnen</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="subject" name="subject" placeholder="Ämne" value="<%=page.subject%>">
+							<div class="input-group">
+								<input type="text" class="form-control" id="subject" name="subject" placeholder="Ämnen" value="<%=page.subject%>">
+								<span class="input-group-btn">
+									<a href="/cms/utils/extractkeywords?id=<%=id%>" id="extractKeywordsButton" class="btn btn-success">Visa förslag på ämnen</a>
+								</span>
+							</div>
 							<small>
-								Ämnen, diagnoser, tillstånd, behandlingar etc som 
-								informationen handlar om enligt en kontrollerad 
+								Ämnen, diagnoser, tillstånd, behandlingar etc som
+								informationen handlar om enligt en kontrollerad
 								vokabulär, exempelvis MeSH eller ICD-10
 							</small>
 						</div>
@@ -178,12 +192,12 @@
 						<div class="col-sm-10">
 							<input type="text" class="form-control" id="informationType" name="informationType" placeholder="Informationstyp" value="<%=page.informationType%>">
 							<small>
-								Klassificering av vilken sorts information det är, t ex 
-								utifrån syfte med informationen. Exempel: riktlinje, 
-								HTA-rapport eller behandlingsrekommendation. 
+								Klassificering av vilken sorts information det är, t ex
+								utifrån syfte med informationen. Exempel: riktlinje,
+								HTA-rapport eller behandlingsrekommendation.
 								Utvecklingsområde som behöver diskuteras.
-								Några relevanta benämningar, enligt ISO 13119:2012, 
-								på textresurser (kunskapsdokument) i DC-attributet 
+								Några relevanta benämningar, enligt ISO 13119:2012,
+								på textresurser (kunskapsdokument) i DC-attributet
 								type (informationstyp) kan vara:
 								<ul>
 									<li>
@@ -302,7 +316,7 @@
 					</div>
 					<%
 				}
-				
+
 				%>
 
 				<h2 class="sub-header">Innehåll</h2>
@@ -346,7 +360,7 @@
 				</div>
 				<%
 				}
-				
+
 				if (contentEditors.length === 0) {
 				%>
 				<div class="col-sm-12 col-md-12 text-center">
@@ -379,10 +393,10 @@
 							</div>
 						</div>
 						<div class="panel hidden" id="incomingLinksInformation">
-						
+
 						</div>
 						<div class="panel hidden" id="outgoingLinksInformation">
-						
+
 						</div>
 						<div class="panel panel-default hidden" id="incomingLinksFilter">
 							<div class="panel-heading">
@@ -561,9 +575,17 @@
 						<div class="btn-group btn-group-sm pull-right" role="group">
 							<a class="btn btn-sm btn-default" href="/cms<%=version.id%>">Visa som json</a>
 							<button class="btn btn-sm btn-primary show-diff" data-snapshot-id="<%=version.id%>" data-page-id="<%=id%>">Jämför json <i class="fa fa-chevron-down"></i></button>
-<!--							<button class="btn btn-sm btn-danger">Gör till nuvarande version</button> -->
+							<button class="btn btn-sm btn-danger revertToSnapshotButton" data-toggle="modal" data-target="#revertToSnapshotModal" data-pagepath="<%=id%>" data-version="<%=version.id%>" title="Återgå till äldre version" >Gör till nuvarande version</button>
 						</div>
 						<strong>Skapad: </strong><%=version.niceTime%>
+						<%
+							if (version.comment !== undefined) {
+						%>
+							(<%=version.comment%>)
+						<%
+							}
+						%>
+
 						<div class="clearfix"></div>
 						<div class="diff-view"></div>
 					</li>
@@ -704,5 +726,63 @@
 		</div>
 	</div>
 </div>
+
+<div class="modal"  tabindex="-1" role="dialog" aria-labelledby="Förslag på ämnen" id="subjectSuggestionsModal" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Förslag på ämnesord</h4>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<ul class="">
+							<li>MeSH-termer i <strong>fetstil</strong></li>
+							<li>Synonymer i <em>kursiv stil</em></li>
+							<li>Vanligt förekommande ord utan formatering</li>
+						</ul>
+					</div>
+				</div>
+				<div id="suggestedSubjects">
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="">
+							Laddar...
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Stäng</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Publicera" id="publishedModal2" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Publicera </h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/content/publishpage" method="get" class="form-horizontal" role="form" autocomplete="off">
+					<input type="hidden" name="pagepath" id="publishPagePath" value="">
+					<div class="form-group">
+						<div class="col-sm-10">
+							<strong>Vill du publicera sidan live?</strong>
+						</div>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ja, publicera</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 <% include footer %>

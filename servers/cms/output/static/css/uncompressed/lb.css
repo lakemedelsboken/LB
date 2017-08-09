@@ -819,15 +819,6 @@ a.inlineGenerica.text {
 	*/
 }
 
-#pdf {
-	position: fixed;
-	top: 63px;
-	right: 7px;
-	margin: 0;
-	z-index: 12;
-	width: 11px;
-}
-
 #gotoTop {
 	position: fixed;
 	top: 3px;
@@ -868,6 +859,17 @@ a.inlineGenerica.text {
 	z-index: 13;
 	width: 11px;
 }
+
+#download-pdf {
+	display: none;
+	position: fixed;
+	top: 63px;
+	right: 7px;
+	margin: 0;
+	z-index: 13;
+	width: 11px;
+}
+
 
 .settingsBox {
 	position: fixed;
@@ -1189,6 +1191,10 @@ ul#medList {
 	-o-border-radius: 		5px 0 0 5px;
 	border-radius: 			5px 0 0 5px;
 	margin: 0;
+
+}
+
+h1 {
 
 }
 

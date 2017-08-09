@@ -640,7 +640,7 @@ var ContentModel = {
 			output = output.replace(/\{modified\}/g, data.modified);
 			output = output.replace(/\{published\}/g, data.published);
 			output = output.replace(/\{informationType\}/g, data.informationType);
-
+			output = output.replace(/\{path\}/g, data.path);
 			output = output.replace(/\{version\}/g, staticSettings.version);
 
 			var relativePath = data.path.replace(ContentModel.baseDir, "").replace(/\\/g, "/").replace(".json", ".html").replace(/\/\//g, "/");
@@ -1074,6 +1074,7 @@ var ContentModel = {
 			output = output.replace(/\{modified\}/g, data.modified);
 			output = output.replace(/\{published\}/g, data.published);
 			output = output.replace(/\{informationType\}/g, data.informationType);
+			output = output.replace(/\{path\}/g, data.path);
 
 			output = output.replace(/\{version\}/g, staticSettings.version);
 
@@ -1780,6 +1781,21 @@ var ContentModel = {
 			var afterIndexPath = path.join(ContentModel.baseDir, toDir, toName + ".index");
 
 			fs.copySync(beforeIndexPath, afterIndexPath);
+		}
+
+		// Make the index links up to date.
+		if (fs.existsSync(afterIndexPath)) {
+			var searchIndex = JSON.parse(fs.readFileSync(afterIndexPath));
+
+			var newPageUrl = toDir + toName + ".html";
+
+			searchIndex.forEach(function(item) {
+				if (item.url !== undefined) {
+				item.url = newPageUrl
+				}
+			});
+
+			fs.writeFileSync(afterIndexPath, JSON.stringify(searchIndex));
 		}
 
 		var oldDirPath = path.dirname(beforePath);

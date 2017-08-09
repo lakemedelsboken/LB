@@ -77,12 +77,11 @@ function findUpdates() {
 
 	function checkForFassUpdates(ticket) {
 		var deferred = Q.defer();
-
 		var options = {
 			url: 'https://www.fass.se/rest/fassdocument/updated?version=1.0&fromDate='+fromDate+'&toDate='+formatDate(currentDate) ,
 			headers: {
 				'ticket': ticket,
-				'Content-Type': 'application/json'
+				'accept': 'application/json'
 			}
 		};
 
