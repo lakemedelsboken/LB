@@ -144,7 +144,13 @@ var Views = {
 
 		return output;
 	},
-	preProcess: function(item) {
+	preProcess: function(item, id) {
+
+		//Remove the actual links to self and keep only the hash
+		if (!(item.settings.preprocessors && item.settings.preprocessors["fixlinkstoself.js"] === "true")) {
+			item.content.text = require(path.join(__dirname, "..", "..", "preprocessors", "fixlinkstoself.js")).process(item.content.text, id);
+		}
+		
 		return item;
 	},
 	getDefaultType: function() {

@@ -582,7 +582,14 @@ var ContentModel = {
 
 				var contentViews = ContentModel.getContentTypes()[item.type];
 				if (contentViews !== undefined) {
-					outContent.push(contentViews.getOutput(item, "draft"));
+					
+					var contentItemOutput = contentViews.getOutput(item, "draft");
+
+					if (item.type !== "html") {
+						contentItemOutput = "<div class=\"cms-id\" id=\"" + item.id + "\">" + contentItemOutput + "</div>";
+					}
+					
+					outContent.push(contentItemOutput);
 
 					if (typeof contentViews.getFeedItems === "function") {
 						feedItems = feedItems.concat(contentViews.getFeedItems(item, "draft"));
@@ -799,6 +806,7 @@ var ContentModel = {
 			var pagesWithCollections = [];
 
 			for (var i = pages.length - 1; i >= 0; i--) {
+				console.log("Reading: " + pages[i]);
 				var page = JSON.parse(fs.readFileSync(path.join(ContentModel.baseDir, pages[i])));
 
 				var hasCollection = false;
@@ -1007,8 +1015,15 @@ var ContentModel = {
 
 				var contentViews = ContentModel.getContentTypes()[item.type];
 				if (contentViews !== undefined) {
-					outContent.push(contentViews.getOutput(item, "published"));
 
+					var contentItemOutput = contentViews.getOutput(item, "published");
+
+					if (item.type !== "html") {
+						contentItemOutput = "<div class=\"cms-id\" id=\"" + item.id + "\">" + contentItemOutput + "</div>";
+					}
+					
+					outContent.push(contentItemOutput);
+					
 					if (typeof contentViews.getFeedItems === "function") {
 						feedItems = feedItems.concat(contentViews.getFeedItems(item, "published"));
 					}

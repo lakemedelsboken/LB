@@ -55,6 +55,11 @@
 		"type": 301
 	},
 	{
+		"path": "/https://lakemedelsboken.se/blog/Revisioner-och-uppdateringar.html",
+		"target": "/blog/Revisioner-och-uppdateringar.html",
+		"type": 301
+	},
+	{
 		"path": "/http://lakemedelsboken.se/blog/reviderat-kapitel-160614.html",
 		"target": "/blog/reviderat-kapitel-160614.html",
 		"type": 301
@@ -135,13 +140,13 @@
 		"type": 301
 	},
 	{
-		"path": "/t2_ber_alkohol_2013fm10.html",
-		"target": "/kapitel/beroendetillstand/alkohol-riskbruk_missbruk_och_beroende.html",
+		"path": "/kapitel/beroendetillstand/alkohol-riskbruk_missbruk_och_beroende.html",
+		"target": "/kapitel/beroendetillstand/alkohol-riskbruk_skadligt_bruk_och_beroende.html",
 		"type": 301
 	},
 	{
-		"path": "/t3_ber_narkotika_2013fm10.html",
-		"target": "/kapitel/beroendetillstand/narkotikaberoende.html",
+		"path": "/kapitel/beroendetillstand/narkotikaberoende.html",
+		"target": "/kapitel/beroendetillstand/narkotika.html",
 		"type": 301
 	},
 	{
@@ -157,11 +162,6 @@
 	{
 		"path": "/d3_blo_blodning_2013fm10.html",
 		"target": "/kapitel/blod/blodningstillstand.html",
-		"type": 301
-	},
-	{
-		"path": "/d2_blo_venostrombo_2013fm10.html",
-		"target": "/kapitel/blod/venos_tromboembolism_och_medel_mot_trombos.html",
 		"type": 301
 	},
 	{
@@ -482,11 +482,6 @@
 	{
 		"path": "/s5_psy_psykoser_2013fm10.html",
 		"target": "/kapitel/psykiatri/psykoser.html",
-		"type": 301
-	},
-	{
-		"path": "/s1_psy_somnstorn_2013fm10.html",
-		"target": "/kapitel/psykiatri/somnstorningar.html",
 		"type": 301
 	},
 	{

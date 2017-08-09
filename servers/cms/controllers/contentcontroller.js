@@ -816,6 +816,7 @@ var ContentController = {
 				element.indexOf(".json") > -1 &&
 				element.indexOf(".snapshot") === -1 &&
 				element.indexOf(".published") === -1 &&
+				element.indexOf(".data") === -1 &&
 				element.indexOf("components/") === -1 &&
 				element.indexOf(".data") === -1 &&
 				fs.statSync(ContentController.baseDir + "/" + element).isFile()

@@ -16,7 +16,7 @@ var Views = {
 
 		return editorTemplate;
 	},
-	preProcess: function(item) {
+	preProcess: function(item, id) {
 		//Assign id:s before saving in order to build a correct index of the page
 		item.content = require(path.join(__dirname, "..", "..", "preprocessors", "idinjection.js")).process(item.content);
 
@@ -39,6 +39,11 @@ var Views = {
 		}
 
 		item.content = $.html();
+
+		//Remove the actual links to self and keep only the hash
+		if (!(item.settings.preprocessors && item.settings.preprocessors["fixlinkstoself.js"] === "true")) {
+			item.content = require(path.join(__dirname, "..", "..", "preprocessors", "fixlinkstoself.js")).process(item.content, id);
+		}
 
 		return item;
 		
