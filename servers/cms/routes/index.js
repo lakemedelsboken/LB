@@ -5,6 +5,7 @@ var componentController = require("../controllers/componentcontroller");
 var historyModel = require("../models/historymodel");
 var fs = require("fs");
 var path = require("path");
+const cheerio = require('cheerio')
 
 function mergeRecursive(obj1, obj2) {
 
@@ -42,7 +43,6 @@ router.get('/*', function(req, res) {
 				error: err
 			});
 		} else {
-
 			var output = {id: baseUrl, title: baseUrl, server: process.env.SERVER};
 
 			if (data.type === "dir") {
@@ -56,7 +56,36 @@ router.get('/*', function(req, res) {
 				res.render('index', output);
 			} else if (data.type === "file") {
 				output.page = data;
+				output.page.content = output.page.content.map(function(content) {
+					content.title = '';
+					if (content.type === 'text') {
+						var $ = cheerio.load(content.content);
+						content.title = $('h2').text();
 
+						if (content.title == '') {
+							content.title = $('h3').text();
+						}
+
+						if (content.title == '') {
+							content.title = $('h4').text();
+						}
+
+					}
+
+					if (content.type === 'author') {
+						content.title = content.content.firstname + ' ' + content.content.surname;
+					}
+
+					if (content.type === 'facts') {
+						content.title = content.content.title;
+					}
+
+					if (content.title != '') {
+						content.title = ' (' + content.title + ')'
+					}
+
+					return content;
+				});
 				//Get component editors
 				output.componentEditors = [];
 
