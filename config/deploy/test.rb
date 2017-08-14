@@ -3,7 +3,7 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-server 'lakemedelsboken.se', user: 'deploy', roles: %w{app db web}
+server 'test.lakemedelsboken.se', user: 'deploy', roles: %w{app db web}
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 
@@ -31,11 +31,11 @@ server 'lakemedelsboken.se', user: 'deploy', roles: %w{app db web}
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
 
-set :stage, :production
+set :stage, :test
+set :keep_releases, 4
 
-set :keep_releases, 30
 set :default_env, {
-  'SERVER' => 'production'
+  'SERVER' => 'test'
 }
 
 # Custom SSH Options
