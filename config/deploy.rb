@@ -1,3 +1,5 @@
+lock '3.7.2'
+
 set :application, 'lb'
 set :repo_url, 'https://github.com/lakemedelsboken/LB.git'
 
