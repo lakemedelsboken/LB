@@ -14,7 +14,7 @@ $(document).ready(function() {
 			}
 		}
 	}
-
+	
 	//Radios for filtering the results in the internal link checker
 	$("input#showAllLinks").on("click", function(event) {
 		$(".incoming-links-list-item").removeClass("hidden");
@@ -40,13 +40,13 @@ $(document).ready(function() {
 				$(this).addClass("hidden");
 			}
 		});
-		
+
 	});
 
 
 	//Show internal links to this url
 	$("button#findIncomingLinks").on("click", function(event) {
-		
+
 		event.preventDefault();
 
 		//Show loading indicator
@@ -61,12 +61,12 @@ $(document).ready(function() {
 		list.children().remove();
 		$("#outgoingLinks").children().remove();
 		$("#outgoingLinks").addClass("hidden");
-		
+
 		var currentForm = button.parents("form").first();
 		var currentUrl = currentForm.find("input").first().val();
-		
+
 		var getUrl = currentForm.attr("action") + "?url=" + currentUrl;
-		
+
 		$.getJSON(getUrl, function(data, textStatus, xhr) {
 
 			button.find("i").first().removeClass("fa-spin").removeClass("fa-refresh").addClass("fa-list");
@@ -74,17 +74,17 @@ $(document).ready(function() {
 			button.find("span.text").text("Hitta inkommande länkar");
 
 			list.removeClass("hidden");
-			
+
 			//Show filter
 			$("#incomingLinksFilter").removeClass("hidden");
-			
+
 			$("#incomingLinksInformation").removeClass("hidden");
 
 			for (var i = 0; i < data.length; i++) {
 				var item = data[i];
-				
+
 				item.state = "";
-				
+
 				if (item.path.indexOf("draft/") === 0) {
 					item.state = "Utkast";
 					item.path = item.path.replace("draft/", "/");
@@ -103,7 +103,7 @@ $(document).ready(function() {
 				if(a.path > b.path) return 1;
 				return 0;
 			});
-			
+
 			//Build output
 			for (var i = 0; i < data.length; i++) {
 				var item = data[i];
@@ -119,7 +119,7 @@ $(document).ready(function() {
 				}
 
 				var listItem = $("<li class=\"list-group-item incoming-links-list-item " + item.state + "\" />");
-				
+
 				listItem.append($(state + "<h5 class=\"list-group-item-heading\"><strong>" + item.path + "</strong></h5>"));
 
 				var linksButtonText = item.links.length + " länkar, visa mer information";
@@ -129,7 +129,7 @@ $(document).ready(function() {
 				}
 
 				var linksInformationButtonClass = "btn-primary";
-				
+
 				//Check for invalid links
 				var hasInvalidLink = false;
 				for (var j = 0; j < item.links.length; j++) {
@@ -152,7 +152,7 @@ $(document).ready(function() {
 
 				buttons.append(linksInformation);
 				//buttons.append(editInformation);
-				
+
 				listItem.append(buttons);
 
 				var listedLinks = $("<div class=\"listedLinks collapse\" id=\"page_" + i + "\" />");
@@ -161,34 +161,34 @@ $(document).ready(function() {
 					var link = item.links[j];
 
 					var linkToRenderedPage = "/cms/draft" + item.path + "?id=" + link.closestId + "#" + link.closestId;
-					
+
 					if (item.state === "Publicerad") {
 						linkToRenderedPage = item.path + "?id=" + link.closestId + "#" + link.closestId;
 					}
 
 					var linkToEditor = "/cms" + item.path.replace(".html", ".json") + "#" + link.closestContentId;
-					
+
 					var panelStyle = "panel-default";
-					
+
 					if (!link.isLinkValid) {
 						panelStyle = "panel-warning";
 					}
-					
+
 					var linkRepresentation = $("<div class=\"panel " + panelStyle + "\" style=\"margin-top: 5px;\"><div class=\"panel-heading clearfix\"><h5 class=\"panel-title pull-left\" style=\"margin-top: 7px;\">Länk " + (j + 1) + ((!link.isLinkValid) ? " - länkar till rubrik som inte finns" : "") +"</h5> <div class=\"btn-group pull-right\"><a class=\"btn btn-success btn-sm\" href=\"" + linkToEditor + "\" target=\"_blank\">Redigera text som innehåller länk <i class=\"fa fa-external-link\"></i></a> <a class=\"btn btn-default btn-sm\" href=\"" + linkToRenderedPage + "\" target=\"_blank\">Visa närmsta rubrik i skapad sida <i class=\"fa fa-external-link\"></i></a></div></div><div class=\"panel-body\"><small>" + link.context + "</small></div></div>");
-					
+
 					listedLinks.append(linkRepresentation);
-					
+
 				}
 
 				listItem.append(listedLinks);
-				
+
 				list.append(listItem);
 			}
-			
+
 			//No incoming links
 			if (data.length === 0) {
 				list.append($("<li class=\"list-group-item\">Hittade inga länkar till url: " + currentUrl + "</li>"));
-				
+
 			}
 
 		})
@@ -199,13 +199,13 @@ $(document).ready(function() {
 
 			console.log("Error fetching incoming links");
 		});
-		
-		
+
+
 	});
 
 	//Show outgoing links from this url
 	$("a#findOutgoingLinks").on("click", function(event) {
-		
+
 		event.preventDefault();
 
 
@@ -224,7 +224,7 @@ $(document).ready(function() {
 		$("#incomingLinks").addClass("hidden");
 		$("#incomingLinksFilter").addClass("hidden");
 		$("#incomingLinksInformation").addClass("hidden");
-		
+
 		$.getJSON(getUrl, function(data, textStatus, xhr) {
 
 			button.find("i").first().removeClass("fa-spin").removeClass("fa-refresh").addClass("fa-list");
@@ -232,7 +232,7 @@ $(document).ready(function() {
 			button.find("span.text").text("Hitta utgående länkar");
 
 			list.removeClass("hidden");
-			
+
 			$("#outgoingLinksInformation").removeClass("hidden");
 
 			//Build output for internal links
@@ -240,7 +240,7 @@ $(document).ready(function() {
 				var item = data.internal[i];
 
 				var listItem = $("<li class=\"list-group-item incoming-links-list-item\" />");
-				
+
 				listItem.append($("<h5 class=\"list-group-item-heading\"><strong>" + item.rawHref + "</strong></h5>"));
 
 				var buttons = $("<div class=\"btn-group btn-group-justified\" role=\"group\" />");
@@ -251,7 +251,7 @@ $(document).ready(function() {
 
 				buttons.append(linksInformation);
 				//buttons.append(editInformation);
-				
+
 				listItem.append(buttons);
 
 				var listedLinks = $("<div class=\"listedLinks\" />");
@@ -259,21 +259,21 @@ $(document).ready(function() {
 				var link = item;
 
 				var linkToRenderedPage = "/cms/draft" + item.path + "?id=" + link.closestId + "#" + link.closestId;
-				
+
 				var linkToEditor = "/cms" + item.path.replace(".html", ".json") + "#" + link.closestContentId;
-				
+
 				var panelStyle = "panel-default";
-				
+
 				if (!link.isLinkValid) {
 					panelStyle = "panel-warning";
 				}
-				
+
 				var linkRepresentation = $("<div class=\"panel " + panelStyle + "\" style=\"margin-top: 5px;\"><div class=\"panel-heading clearfix\"><h5 class=\"panel-title pull-left\" style=\"margin-top: 7px;\">Länk " + (i + 1) + ((!link.isLinkValid) ? " - länkar till rubrik som inte finns" : "") + "</h5> <div class=\"btn-group pull-right\"><a class=\"btn btn-success btn-sm\" href=\"" + linkToEditor + "\" target=\"_blank\">Redigera text som innehåller länk <i class=\"fa fa-external-link\"></i></a> <a class=\"btn btn-default btn-sm\" href=\"" + linkToRenderedPage + "\" target=\"_blank\">Visa närmsta rubrik i skapad sida <i class=\"fa fa-external-link\"></i></a></div></div><div class=\"panel-body\"><small>" + link.context + "</small></div></div>");
-				
+
 				listedLinks.append(linkRepresentation);
 
 				listItem.append(listedLinks);
-				
+
 				list.append(listItem);
 			}
 
@@ -282,7 +282,7 @@ $(document).ready(function() {
 				var item = data.external[i];
 
 				var listItem = $("<li class=\"list-group-item incoming-links-list-item\" />");
-				
+
 				listItem.append($("<h5 class=\"list-group-item-heading\"><strong><a href=\"" + item.rawHref + "\" target=\"_blank\">" + item.rawHref + "</a></strong></h5>"));
 
 				var buttons = $("<div class=\"btn-group btn-group-justified\" role=\"group\" />");
@@ -290,7 +290,7 @@ $(document).ready(function() {
 				var linksInformation = $("<div class=\"btn-group\" role=\"group\"></div>");
 
 				buttons.append(linksInformation);
-				
+
 				listItem.append(buttons);
 
 				var listedLinks = $("<div class=\"listedLinks\" />");
@@ -298,27 +298,27 @@ $(document).ready(function() {
 				var link = item;
 
 				var linkToRenderedPage = "/cms/draft" + item.path + "?id=" + link.closestId + "#" + link.closestId;
-				
+
 				var linkToEditor = "/cms" + item.path.replace(".html", ".json") + "#" + link.closestContentId;
-				
+
 				var panelStyle = "panel-default";
-				
+
 				if (link.isLinkValid === false) {
 					panelStyle = "panel-warning";
 				} else if (link.isLinkValid === "waiting") {
 					panelStyle = "panel-info";
 				}
-				
+
 				var linkRepresentation = $("<div class=\"panel " + panelStyle + "\" style=\"margin-top: 5px;\"><div class=\"panel-heading clearfix\"><h5 class=\"panel-title pull-left\" style=\"margin-top: 7px;\">Länk " + (i + 1 + data.internal.length) + ((link.isLinkValid === "waiting") ? " - länk kontrolleras, ladda igen för resultat" : "") + ((link.isLinkValid === false) ? " - länken kan vara felaktig" : "") + "</h5> <div class=\"btn-group pull-right\"><a class=\"btn btn-success btn-sm\" href=\"" + linkToEditor + "\" target=\"_blank\">Redigera text som innehåller länk <i class=\"fa fa-external-link\"></i></a> <a class=\"btn btn-default btn-sm\" href=\"" + linkToRenderedPage + "\" target=\"_blank\">Visa närmsta rubrik i skapad sida <i class=\"fa fa-external-link\"></i></a></div></div><div class=\"panel-body\"><small>" + link.context + "</small></div></div>");
-				
+
 				listedLinks.append(linkRepresentation);
 
 				listItem.append(listedLinks);
-				
+
 				list.append(listItem);
 			}
 
-			
+
 			//No incoming links
 			if (data.internal.length === 0 && data.external.length === 0) {
 				list.append($("<li class=\"list-group-item\">Hittade inga länkar från url: " + currentUrl + "</li>"));
@@ -332,8 +332,8 @@ $(document).ready(function() {
 
 			console.log("Error fetching incoming links");
 		});
-		
-		
+
+
 	});
 
 
@@ -1007,7 +1007,6 @@ $(document).ready(function() {
 		}
 
 	});
-
 
 	$("textarea.mce").on("focus", function(event) {
 
