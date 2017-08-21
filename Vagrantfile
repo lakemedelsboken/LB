@@ -26,17 +26,13 @@ Vagrant.configure(2) do |config|
 
 
 		#------------------------- Ruby -------------------------------------------------------
-		cd /tmp
-		wget http://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.5.tar.gz
-		tar -xvzf ruby-2.1.5.tar.gz
-		cd ruby-2.1.5/
-		./configure --prefix=/usr/local
-		make
-		sudo make install
+		sudo apt-add-repository ppa:brightbox/ruby-ng
+		sudo apt-get update
+		sudo apt-get install -y ruby2.4
 
 
 		#------------------------- Capistrano -------------------------------------------------
-		sudo gem install capistrano
+		sudo gem install capistrano -v 3.7.2
 
 
 		#------------------------- Imagemagick ------------------------------------------------
@@ -94,10 +90,10 @@ Vagrant.configure(2) do |config|
 
 
 		#------------------------- NPM --------------------------------------------------------
-		sudo npm install -g pm2
-		sudo npm install -g uglifyjs #needed to be able to build the sh in /build
-		sudo npm install -g node-inspector
-		sudo npm install -g clean-css
+		sudo npm install -g pm2@2.3.0
+		sudo npm install -g uglifyjs@2.4.10 #needed to be able to build the sh in /build
+		sudo npm install -g node-inspector@0.12.8
+		sudo npm install -g clean-css-cli@4.1.6
 
 
 	SHELL
