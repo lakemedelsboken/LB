@@ -14,6 +14,7 @@ var wrench = require("wrench");
 var urlObject = require("url");
 var request = require("request");
 
+
 router.get("/createpage", function(req, res) {
 
 	var pageName = req.query["pagename"];
@@ -221,7 +222,7 @@ router.post("/savepage", function(req, res) {
 
 								var contentViews = contentController.getContentTypes()[item.type];
 								item = contentViews.preProcess(item, pageId);
-								
+
 							}
 
 						} else if (key.indexOf("component:") === 0) {
@@ -554,6 +555,69 @@ router.get("/movecontentitemup", function(req, res) {
 	}
 
 });
+/*router.get("/makealltextblack", function(req, res) {
+	var pagePath = req.query["pagepath"];
+	console.log(pagePath);
+	fs.readFile(pagePath,function(err,obj){
+		if(err)throw err;
+		var fileObj=JSON.parse(obj);
+		 var newFile=JSON.stringify(fileObj).replace(/#ff0000/g, '#000000');
+		 fs.writeFile(pagePath,newFile,function (err) {
+          if(err)throw err;
+          //console.log(fileObj);
+      });
+	});
+	res.redirect("back");
+});*/
+
+router.get("/makealltextblack", function(req, res) {
+
+	var pagePath = req.query["pagepath"];
+	contentController.getContent(pagePath, function(err, currentPage) {
+		if (err) {
+		throw err;
+		console.log("2er");
+		}
+		var newText='';
+		console.log(currentPage.type);
+		currentPage.content.forEach(function(item){
+			if(item.content && item.content.length > 0) {
+				item.content = item.content.replace(/#([a-f]|[A-F]|[0-9]){3}(([a-f]|[A-F]|[0-9]){3})?/g,"#000000");
+			}
+			if(item.content.text && item.content.text.length > 0) {
+				item.content.text = item.content.text.replace(/#([a-f]|[A-F]|[0-9]){3}(([a-f]|[A-F]|[0-9]){3})?/g,"#000000");
+			}
+
+		});
+		console.log(currentPage);
+		contentController.setContent(pagePath, currentPage, false, function(err) {
+			if (err) {
+				res.status(err.status || 500);
+				res.render('error', {
+					message: err.message,
+					error: err
+				});
+			} else {
+
+				res.redirect("back");
+
+			}
+		});
+
+	});
+});
+
+
+/*router.get("/makealltextblack", function(req, res) {
+	var pagePath = req.query["pagepath"];
+	console.log("path is -----"+pagePath);
+		var readFile=JSON.parse(fs.readFileSync(pagePath, "utf8"));
+		readFile=readFile.replace(/#ff0000/g,"#000000");
+		var stringFile=JSON.stringify(readFile);
+		fs.writeFileSync(pagePath,stringFile, "utf8");
+		res.redirect("back");
+});*/
+
 
 router.get("/movecontentitemdown", function(req, res) {
 
@@ -757,7 +821,7 @@ router.get("/pdf/download", function(req, res) {
 		var fileNameDate = dateFormat(date, "yyyy-mm-dd--HH-MM-ss");
 
 		var newFileName = path.basename(url, ".html") + "-" + fileNameDate + ".pdf";
-		
+
 		var cookies = [];
 
 		for (var cookie in req.cookies) {
@@ -1198,10 +1262,10 @@ router.get("/findoutgoinglinks", function(req, res) {
 		var outputPath = path.join(contentController.baseDir, "..", "output", "draft");
 
 		var $ = undefined;
-		
+
 		//Read possible rendered page for the current url to check for
 		if (fs.existsSync(path.join(contentController.baseDir, "..", "output", "draft", url))) {
-			
+
 			var data = fs.readFileSync(path.join(contentController.baseDir, "..", "output", "draft", url), "utf8");
 			$ = cheerio.load(data);
 
@@ -1211,33 +1275,33 @@ router.get("/findoutgoinglinks", function(req, res) {
 			//TODO: Better approach when removing components
 			//Remove side container
 			$("#sideContainer").remove();
-			
+
 			$("a[href]").each(function() {
 				var $item = $(this);
 				var rawHref = $item.attr("href");
-				if (rawHref.length > 0 
-					&& rawHref.substr(0,1) !== "#" 
+				if (rawHref.length > 0
+					&& rawHref.substr(0,1) !== "#"
 					&& rawHref.indexOf("/atc/") !== 0
 					&& rawHref.indexOf("mailto:") !== 0
-					&& rawHref.indexOf("{PDF}") !== 0) 
+					&& rawHref.indexOf("{PDF}") !== 0)
 				{
 
 					var fullLinkHtml = $("<div />").append($item.clone()).html();
 
 					var closestId = getClosestId($, $item);
 					var closestContentId = getClosestContentId($, $item);
-				
-				
+
+
 					var $currentPage = undefined;
-					
+
 					var cleanedHref = $item.attr("href");
 
 					var isLinkValid = false;
 
 					if (rawHref.indexOf("http") !== 0) {
-			
+
 						//Internal links can be checked on the fly
-			
+
 						//Remove parameters
 						if (cleanedHref.indexOf("?") > -1) {
 							cleanedHref = cleanedHref.split("?")[0];
@@ -1252,17 +1316,17 @@ router.get("/findoutgoinglinks", function(req, res) {
 						if (cleanedHref.indexOf("./") > -1) {
 							cleanedHref = urlObject.resolve(url, cleanedHref);
 						}
-					
+
 						var $currentPage = undefined;
-					
+
 						//Find draft of page that is linked
 						if (fs.existsSync(path.join(contentController.baseDir, "..", "output", "published", cleanedHref))) {
-		
+
 							var data = fs.readFileSync(path.join(contentController.baseDir, "..", "output", "published", cleanedHref), "utf8");
 							$currentPage = cheerio.load(data);
 
 						}
-					
+
 						isLinkValid = checkIfInternalUrlIsValid(rawHref, $currentPage);
 					} else {
 						//External links need to be checked async
@@ -1274,16 +1338,16 @@ router.get("/findoutgoinglinks", function(req, res) {
 					} else {
 						closestId = "";
 					}
-				
+
 					var htmlContext = $item.parent().html();
 					var linkText = $item.text();
 
 					if (linkText.trim() === "") {
 						linkText = "LINK";
 					}
-				
+
 					htmlContext = htmlContext.replace(fullLinkHtml, " __" + linkText + "__ ");
-				
+
 					var context = $("<div>" + htmlContext + "</div>").text();
 
 					link = {path: url, html: fullLinkHtml, rawHref: rawHref, closestId: closestId, closestContentId: closestContentId, isLinkValid: isLinkValid, context: context};
@@ -1293,16 +1357,16 @@ router.get("/findoutgoinglinks", function(req, res) {
 					} else {
 						outgoingLinks.internal.push(link);
 					}
-					
+
 
 				}
 			});
 		}
-		
+
 		//Check if internal links are valid
 
 		res.json(outgoingLinks);
-		
+
 	} else {
 		res.json([]);
 	}
@@ -1328,13 +1392,13 @@ router.get("/findincominglinks", function(req, res) {
 		});
 
 		var linkingPages = [];
-		
+
 		var $currentPublished = undefined;
 		var $currentDraft = undefined;
-		
+
 		//Read possible rendered pages for the current url to check for
 		if (fs.existsSync(path.join(contentController.baseDir, "..", "output", "draft", url))) {
-			
+
 			var data = fs.readFileSync(path.join(contentController.baseDir, "..", "output", "draft", url), "utf8");
 			$currentDraft = cheerio.load(data);
 
@@ -1344,34 +1408,34 @@ router.get("/findincominglinks", function(req, res) {
 
 			var data = fs.readFileSync(path.join(contentController.baseDir, "..", "output", "published", url), "utf8");
 			$currentPublished = cheerio.load(data);
-			
+
 		}
-		
+
 
 		foundPages.forEach(function(item) {
-			
+
 			//Remove draft/ and published/ from path
 			var baseUrl = item.split(path.sep);
 			baseUrl.shift();
 			baseUrl = path.sep + baseUrl.join(path.sep);
-			
+
 			var $currentPage = undefined;
-			
+
 			if (item.indexOf("published/") > -1) {
 				$currentPage = $currentPublished;
 			} else if (item.indexOf("draft/") > -1) {
 				$currentPage = $currentDraft;
 			}
-			
+
 			var links = findLinksToUrl(path.join(outputPath, item), baseUrl, url, $currentPage);
 			if (links.length > 0) {
 				linkingPages.push({path: item, links: links});
 			}
 		});
 
-		
+
 		res.json(linkingPages);
-		
+
 	} else {
 		res.json([]);
 	}
@@ -1382,9 +1446,9 @@ function findLinksToUrl(filePath, baseUrl, url, $currentPage) {
 
 	var tempDir = path.join(__dirname, "..", "tmp");
 	var checksum = historyModel.getFileChecksumSync(filePath);
-	
+
 	var precalcResultPath = path.join(tempDir, checksum + ".links");
-	
+
 	if (fs.existsSync(precalcResultPath)) {
 		//Already checked for links
 		var result = fs.readJsonSync(precalcResultPath, {throws: false});
@@ -1397,19 +1461,19 @@ function findLinksToUrl(filePath, baseUrl, url, $currentPage) {
 		//Find the links
 		var html = fs.readFileSync(filePath, "utf8");
 		var $ = cheerio.load(html);
-		
+
 		//Remove components
 		//TODO: Add .component class to components for a better filter
 		$("#sideContainer").remove();
-		
+
 		var foundLinks = [];
-		
+
 		$("a").each(function(index, item) {
 			var $item = $(item);
 			if ($item.attr("href") !== undefined) {
-				
+
 				var cleanedHref = $item.attr("href");
-				
+
 				//Remove parameters
 				if (cleanedHref.indexOf("?") > -1) {
 					cleanedHref = cleanedHref.split("?")[0];
@@ -1424,14 +1488,14 @@ function findLinksToUrl(filePath, baseUrl, url, $currentPage) {
 				if (cleanedHref.indexOf("./") > -1) {
 					cleanedHref = urlObject.resolve(baseUrl, cleanedHref);
 				}
-				
+
 				if (cleanedHref === url) {
 					var fullLinkHtml = $("<div />").append($item.clone()).html();
 					var rawHref = $item.attr("href");
 
 					var closestId = getClosestId($, $item);
 					var closestContentId = getClosestContentId($, $item);
-					
+
 					var isLinkValid = checkIfInternalUrlIsValid(rawHref, $currentPage);
 
 					if (closestId.length === 1) {
@@ -1439,39 +1503,39 @@ function findLinksToUrl(filePath, baseUrl, url, $currentPage) {
 					} else {
 						closestId = "";
 					}
-					
+
 					var htmlContext = $item.parent().html();
 					var linkText = $item.text();
 
 					if (linkText.trim() === "") {
 						linkText = "LINK";
 					}
-					
+
 					htmlContext = htmlContext.replace(fullLinkHtml, " __" + linkText + "__ ");
-					
+
 					var context = $("<div>" + htmlContext + "</div>").text();
-					
+
 					foundLinks.push({html: fullLinkHtml, rawHref: rawHref, closestId: closestId, closestContentId: closestContentId, isLinkValid: isLinkValid, context: context});
 				}
 			}
 		});
-		
+
 		return foundLinks;
-		
+
 	}
 }
 
 function checkIfInternalUrlIsValid(href, $currentPage) {
 
 	var isValid = true;
-	
+
 	if ($currentPage !== undefined) {
 
 		var currentUrl = urlObject.parse(href, true);
-	
+
 		//Check for ?id= or #hash
 		var idInUrl = (currentUrl.hash) ? currentUrl.hash : currentUrl.query["id"];
-	
+
 		if (idInUrl && idInUrl !== "") {
 			//Remove possible # from hash
 			idInUrl = idInUrl.replace("#", "");
@@ -1484,9 +1548,9 @@ function checkIfInternalUrlIsValid(href, $currentPage) {
 	} else {
 		isValid = false;
 	}
-	
+
 	return isValid;
-	
+
 }
 
 function checkIfExternalUrlIsValid(href) {
@@ -1496,19 +1560,19 @@ function checkIfExternalUrlIsValid(href) {
 	//Build a unique filename based on url and date
 	var date = new Date();
 	var day = dateFormat(date, "yyyy-mm-dd-hh");
-	
+
 	var stamp = day + href;
 	var urlAndDateHash = historyModel.getChecksum(stamp);
-	
+
 	//Place in tmp dir
 	var tmpDir = require("os").tmpdir();
-	
+
 	var outputPath = path.join(tmpDir, urlAndDateHash + ".json");
 
 	//console.log(outputPath);
-	
+
 	var result = null;
-	
+
 	if (fs.existsSync(outputPath)) {
 		result = fs.readJsonSync(outputPath, {throws: false});
 		if (result === null) {
@@ -1520,7 +1584,7 @@ function checkIfExternalUrlIsValid(href) {
 	if (result !== null) {
 		return result.result;
 	}
-	
+
 	//Perform async request
 
 	//Make sure fast subsequent requests are not triggered
@@ -1547,16 +1611,16 @@ function checkIfExternalUrlIsValid(href) {
 		});
 
 	});
-	
+
 	//Return in sync the first time a request is made
 	return "waiting";
-	
+
 }
 
 
 function getClosestContentId($, $item) {
 	var closestId = $item.parents(".cms-id").first();
-	
+
 	if (closestId.length === 1) {
 		return closestId.attr("id");
 	} else {
@@ -1565,15 +1629,15 @@ function getClosestContentId($, $item) {
 }
 
 function getClosestId($, $item) {
-	
+
 	var selector = "[id]";
 
 	var el = $item;
 
 	var match = $();
-	
+
 	while (el.length && !match.length) {
-		
+
 		if (el.attr("id") !== undefined) {
 			match = el;
 			break;
