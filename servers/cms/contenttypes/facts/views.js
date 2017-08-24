@@ -15,6 +15,7 @@ var Views = {
 		}
 
 		//Specific tags
+		item.content.text=item.content.text.replace(/<ul>/g,"<ul style=\"padding:0px; margin:0 0 8px 15px;\">");
 		var findNumber = new RegExp("edit:" + item.name + ":number:value", "g");
 		editorTemplate = editorTemplate.replace(findNumber, escape(item.content.number));
 
@@ -42,7 +43,7 @@ var Views = {
 			removeFactsTitle = true;
 		}
 
-		
+
 
 		if (item.content.id !== "" && item.content.id !== "undefined" && item.content.id !== undefined) {
 			output = output.replace(new RegExp("{id}", "g"), " id=\"" + item.content.id + "\"");
@@ -66,19 +67,20 @@ var Views = {
 			if (!(item.settings.postprocessors && item.settings.postprocessors["pagefootnotes.js"] === "true")) {
 				resultHtml = require("../../postprocessors/pagefootnotes.js").process(resultHtml);
 			}
-			
+
 			output = output.replace(new RegExp("{title}", "g"), resultHtml);
 		} else {
 			output = output.replace(new RegExp("{title}", "g"), "");
 			removeSecondTitle = true;
 		}
 
+
 		var $ = cheerio.load(item.content.text);
-		
+
 		//Count max columns in a row
 		var maxColumns = 1;
 		var table = $("table").first();
-		
+
 		if (table.length === 1) {
 			table.find("tr").each(function(index, element) {
 				var tr = $(element);
@@ -106,7 +108,7 @@ var Views = {
 		}
 
 		if (resultHtml !== undefined && resultHtml !== null) {
-			
+
 			//Determine based on settings if any postprocessing should be omitted for the current item
 			if (!(item.settings.postprocessors && item.settings.postprocessors["genericas.js"] === "true")) {
 				resultHtml = require("../../postprocessors/genericas.js").process(resultHtml);
@@ -123,7 +125,7 @@ var Views = {
 		} else {
 			resultHtml = "";
 		}
-		
+
 		output = output.replace(new RegExp("{text}", "g"), resultHtml);
 
 		if (removeFactsTitle) {
@@ -150,7 +152,7 @@ var Views = {
 		if (!(item.settings.preprocessors && item.settings.preprocessors["fixlinkstoself.js"] === "true")) {
 			item.content.text = require(path.join(__dirname, "..", "..", "preprocessors", "fixlinkstoself.js")).process(item.content.text, id);
 		}
-		
+
 		return item;
 	},
 	getDefaultType: function() {

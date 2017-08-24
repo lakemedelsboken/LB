@@ -555,20 +555,7 @@ router.get("/movecontentitemup", function(req, res) {
 	}
 
 });
-/*router.get("/makealltextblack", function(req, res) {
-	var pagePath = req.query["pagepath"];
-	console.log(pagePath);
-	fs.readFile(pagePath,function(err,obj){
-		if(err)throw err;
-		var fileObj=JSON.parse(obj);
-		 var newFile=JSON.stringify(fileObj).replace(/#ff0000/g, '#000000');
-		 fs.writeFile(pagePath,newFile,function (err) {
-          if(err)throw err;
-          //console.log(fileObj);
-      });
-	});
-	res.redirect("back");
-});*/
+
 
 router.get("/makealltextblack", function(req, res) {
 
@@ -608,15 +595,6 @@ router.get("/makealltextblack", function(req, res) {
 });
 
 
-/*router.get("/makealltextblack", function(req, res) {
-	var pagePath = req.query["pagepath"];
-	console.log("path is -----"+pagePath);
-		var readFile=JSON.parse(fs.readFileSync(pagePath, "utf8"));
-		readFile=readFile.replace(/#ff0000/g,"#000000");
-		var stringFile=JSON.stringify(readFile);
-		fs.writeFileSync(pagePath,stringFile, "utf8");
-		res.redirect("back");
-});*/
 
 
 router.get("/movecontentitemdown", function(req, res) {

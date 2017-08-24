@@ -3157,5 +3157,46 @@ ga = function() {};
 	});
 
 	lb.init();
+	var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+var arr = [];
+
+//$('#search').on('input', function () {
+var term = "";
+var src_str = $("#mainContainer").html();
+arr.push(src_str);
+console.log(arr.length);
+
+
+if (getUrlParameter('search')!=null) {
+	console.log("found");
+	  term=getUrlParameter('search');
+    term = term.replace(/(\s+)/, "(<[^>]+>)*$1(<[^>]+>)*");
+    var pattern = new RegExp("(" + term + ")", "gi");
+    src_str = src_str.replace(pattern, "<mark style=\"background-color: #ADD8E6\">$1</mark>");
+    src_str = src_str.replace(/(<mark>[^<>]*)((<[^>]+>)+)([^<>]*<\/mark>)/, "$1</mark>$2<mark style=\"background-color: #ADD8E6\">$4");
+    $("#mainContainer").html(src_str);
+}
+else {
+	console.log("not found");
+    $("#mainContainer").html(arr[0]);
+}
+// });
+/*$('#target').on('input', function () {
+    console.log("Handler for .keypress() called.");
+
+});*/
 
 })(window);
