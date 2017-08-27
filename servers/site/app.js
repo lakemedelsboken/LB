@@ -3,6 +3,7 @@ http.globalAgent.maxSockets = 200;
 
 var express = require('express');
 var app = express();
+var cookieParser = require("cookie-parser");
 var path = require("path");
 var fs = require("fs");
 
@@ -112,9 +113,12 @@ exports.init = function(port) {
 		//app.use(express.errorHandler()); 
 	}
 	
+	
 	app.use(function(err, req, res, next) {
 		res.render('500.ejs', { locals: { error: err }, status: 500});	
 	});
+
+	app.use(cookieParser());
 
 	app.listen(port);
 
