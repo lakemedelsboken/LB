@@ -70,7 +70,7 @@ var Views = {
 		if (item.content.id !== "" && item.content.id !== "undefined" && item.content.id !== undefined) {
 			output = output.replace(new RegExp("{id}", "g"), " id=\"" + item.content.id + "\"");
 		} else {
-			output = output.replace(new RegExp("{id}", "g"), "");
+			output = output.replace(new RegExp("{id}", "g"), " id=\"figure_id_" + item.content.number + "\"");
 		}
 
 		if (item.content.title && item.content.title !== "") {
