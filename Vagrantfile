@@ -9,7 +9,7 @@ Vagrant.configure(2) do |config|
 
 	config.vm.provider "virtualbox" do |vb|
 		vb.cpus = "4"
-		vb.memory = "4096"
+		vb.memory = "8192"
 	end
 
 
@@ -22,21 +22,17 @@ Vagrant.configure(2) do |config|
 
 		#------------------------- GENERAL ----------------------------------------------------
 		sudo apt-get update
-		apt-get install -y build-essential python wget zlib1g-dev libssl-dev libreadline6-dev libyaml-dev git
+		apt-get install -y build-essential python wget zlib1g-dev libssl-dev libreadline6-dev libyaml-dev git unzip
 
 
 		#------------------------- Ruby -------------------------------------------------------
-		cd /tmp
-		wget http://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.5.tar.gz
-		tar -xvzf ruby-2.1.5.tar.gz
-		cd ruby-2.1.5/
-		./configure --prefix=/usr/local
-		make
-		sudo make install
+		sudo apt-add-repository ppa:brightbox/ruby-ng
+		sudo apt-get update
+		sudo apt-get install -y ruby2.4
 
 
 		#------------------------- Capistrano -------------------------------------------------
-		sudo gem install capistrano
+		sudo gem install capistrano -v 3.7.2
 
 
 		#------------------------- Imagemagick ------------------------------------------------
@@ -65,7 +61,7 @@ Vagrant.configure(2) do |config|
 		sudo apt-get install -y xfonts-75dpi
 
 		cd /opt/
-		sudo wget http://download.gna.org/wkhtmltopdf/0.12/0.12.2.1/wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
+		sudo wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.2.1/wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
 		sudo dpkg -i wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
 		sudo apt-get install -f
 
@@ -94,10 +90,10 @@ Vagrant.configure(2) do |config|
 
 
 		#------------------------- NPM --------------------------------------------------------
-		sudo npm install -g pm2
-		sudo npm install -g uglifyjs #needed to be able to build the sh in /build
-		sudo npm install -g node-inspector
-		sudo npm install -g clean-css
+		sudo npm install -g pm2@2.3.0
+		sudo npm install -g uglifyjs@2.4.10 #needed to be able to build the sh in /build
+		sudo npm install -g node-inspector@0.12.8
+		sudo npm install -g clean-css-cli@4.1.6
 
 
 	SHELL

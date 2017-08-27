@@ -6,11 +6,11 @@
 			if (id !== "/") {
 				var backPath = id.split("/");
 				var test = backPath.pop();
-				
+
 				if (test === "" && backPath.length > 0) {
 					backPath.pop();
 				}
-				
+
 				backPath = backPath.join("/");
 				backPath = "/cms" + backPath;
 				if (backPath === "") {
@@ -18,7 +18,7 @@
 				}
 			%>
 			<a href="<%=backPath%>" class="btn navbar-btn btn-primary"><i class="fa fa-chevron-left"></i> Tillbaka</a>
-			<%					
+			<%
 			}
 			%>
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -29,7 +29,6 @@
 			</button>
 		</div>
 		<div class="navbar-collapse collapse navbar-right">
-			<a href="http://service.lakemedelsboken.se/manual/" target="_blank" class="btn navbar-btn btn-primary"><i class="fa fa-file-text-o"></i> Manual</a>
 			<button type="button" class="btn navbar-btn btn-info" data-toggle="modal" data-target="#uploadImageModal"><i class="fa fa-file"></i> Ny bild...</button>
 			<button type="button" class="btn navbar-btn btn-success" data-toggle="modal" data-target="#createDirectoryModal"><i class="fa fa-plus"></i> Ny katalog...</button>
 			<%
@@ -54,7 +53,7 @@
 			<ol class="breadcrumb">
 				<li><a href="/cms/">Hem</a></li>
 			<%
-			
+
 				var link = "/cms";
 				var links = id.split("/");
 				links.shift();
@@ -64,7 +63,7 @@
 					<li><a href="<%=link%>"><%=links[i]%></a></li>
 					<%
 				}
-			
+
 			%>
 			</ol>
 			<%
@@ -77,7 +76,7 @@
 			<%
 			for (var i = 0; i < content.length; i++) {
 				var item = content[i];
-			
+
 				if (item.type === "dir") {
 				%>
 				<li class="dir"><a href="/cms<%=item.relativePath%>"><i class="fa fa-folder"></i> <%=item.name%></a></li>
@@ -107,7 +106,7 @@
 			<%
 			for (var i = 0; i < content.length; i++) {
 				var item = content[i];
-			
+
 				if (item.type === "image") {
 				%>
 
@@ -121,7 +120,7 @@
 					</div>
 				</div>
 			</div>
-				
+
 				<%
 				}
 			}

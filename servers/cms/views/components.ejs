@@ -13,7 +13,7 @@
 				}
 			%>
 			<a href="<%=backPath%>" class="btn navbar-btn btn-primary"><i class="fa fa-chevron-left"></i> Tillbaka</a>
-			<%					
+			<%
 			}
 			%>
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -25,7 +25,6 @@
 
 		</div>
 		<div class="navbar-collapse collapse navbar-right">
-			<a href="http://service.lakemedelsboken.se/manual/" target="_blank" class="btn navbar-btn btn-primary"><i class="fa fa-file-text-o"></i> Manual</a>
 			<button type="button" class="btn navbar-btn btn-primary" data-toggle="modal" data-target="#createComponentModal"><i class="fa fa-file"></i> Ny komponent...</button>
 			<button type="button" class="btn navbar-btn btn-success" data-toggle="modal" data-target="#createDirectoryModal"><i class="fa fa-plus"></i> Ny katalog...</button>
 			<%
@@ -51,7 +50,7 @@
 			<ol class="breadcrumb">
 				<li><a href="/cms/">Hem</a></li>
 			<%
-			
+
 				var link = "/cms";
 				var links = id.split("/");
 				links.shift();
@@ -61,7 +60,7 @@
 					<li><a href="<%=link%>"><%=links[i]%></a></li>
 					<%
 				}
-			
+
 			%>
 			</ol>
 			<%
@@ -74,7 +73,7 @@
 			<%
 			for (var i = 0; i < content.length; i++) {
 				var item = content[i];
-				
+
 				if (item.type === "dir") {
 				%>
 				<li class="dir"><a href="/cms<%=item.relativePath%>"><i class="fa fa-folder"></i> <%=item.name%></a></li>
@@ -100,7 +99,7 @@
 			<button id="createMetadata" class="btn btn-primary" data-toggle="modal" data-target="#modifyMetadataModal"><i class="fa fa-plus-circle"></i> Skapa metadata</button>
 			<br><br>
 			<%
-			
+
 			if (metadata) {
 
 			%>
@@ -131,12 +130,12 @@
 			<%
 
 			}
-			
+
 			%>
--->			
+-->
 
 			<%
-			
+
 			if (locals.drafts && locals.drafts.length > 0) {
 
 			%>
@@ -171,7 +170,7 @@
 			<%
 
 			}
-			
+
 			%>
 
 
@@ -329,6 +328,32 @@
 					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ta bort</button>
 				</div>
 			</form>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Publicera" id="publishedModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Publicera </h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/content/publishpage" method="get" class="form-horizontal" role="form" autocomplete="off">
+					<input type="hidden" name="pagepath" id="publishPagePath" value="">
+					<div class="form-group">
+						<div class="col-sm-10">
+							<strong>Vill du publicera sidan live?</strong>
+						</div>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ja, publicera</button>
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
 </div>

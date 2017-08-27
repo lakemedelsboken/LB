@@ -13,7 +13,7 @@
 				}
 			%>
 			<a href="<%=backPath%>" class="btn navbar-btn btn-primary"><i class="fa fa-chevron-left"></i> Tillbaka</a>
-			<%					
+			<%
 			}
 			%>
 
@@ -28,7 +28,6 @@
 			-->
 		</div>
 		<div class="navbar-collapse collapse navbar-right">
-			<a href="http://service.lakemedelsboken.se/manual/" target="_blank" class="btn navbar-btn btn-primary"><i class="fa fa-file-text-o"></i> Manual</a>
 			<button class="btn navbar-btn btn-danger" data-toggle="modal" data-target="#removeImageModal"><i class="fa fa-trash"></i> Ta bort bild...</button>
 <!--
 			<ul class="nav navbar-nav navbar-right">
@@ -39,7 +38,7 @@
 			<form class="navbar-form navbar-right">
 				<input type="text" class="form-control" placeholder="Search...">
 			</form>
--->		
+-->
 		</div>
 	</div>
 </div>
@@ -50,7 +49,7 @@
 			<h1 class="page-header">Bild</h1>
 
 				<%
-				
+
 				for (var i = 0; i < data.regImages.length; i++) {
 					var imageData = data.regImages[i];
 				%>
@@ -60,7 +59,7 @@
 						<div class="panel-body">
 							<a href="/cms/draft<%=data.path%>/<%=imageData.name%>"><img class="img-thumbnail" src="/cms/draft<%=data.path%>/<%=imageData.name%>"></a>
 							<br>
-					
+
 							<br>
 							<%
 							if (imageData.features) {
@@ -83,7 +82,7 @@
 						<div class="panel-body">
 							<a href="/cms/draft<%=data.path%>/opt/<%=imageData.name%>"><img class="img-thumbnail" src="/cms/draft<%=data.path%>/opt/<%=imageData.name%>"></a>
 							<br>
-					
+
 							<br>
 							<%
 							if (imageData.features) {
@@ -99,7 +98,7 @@
 				<%
 					}
 				}
-				
+
 				%>
 
 		</div>

@@ -1,5 +1,4 @@
-# config valid only for current version of Capistrano
-lock '3.6.1'
+lock '3.7.2'
 
 set :application, 'lb'
 set :repo_url, 'https://github.com/lakemedelsboken/LB.git'
@@ -79,12 +78,12 @@ namespace :deploy do
       execute "cd #{release_path}/servers/cms/search/synonyms && make decrypt_conf_pass PASS=#{fetch(:secretSettingsPassword)}"
 
       #Make current release a working git repository
-      if fetch(:stage) == :cms
-        execute "rm -rf /var/www/lb/gittemp/"
-        execute "git clone -b #{fetch(:branch)} --single-branch --depth 1 ssh://git@github.com/lakemedelsboken/LB.git /var/www/lb/gittemp"
-        execute "mv /var/www/lb/gittemp/.git /var/www/lb/current/.git"
-        execute "rm -rf /var/www/lb/gittemp/"
-      end
+
+    execute "rm -rf /var/www/lb/gittemp/"
+    execute "git clone -b #{fetch(:branch)} --single-branch --depth 1 ssh://git@github.com/lakemedelsboken/LB.git /var/www/lb/gittemp"
+    execute "mv /var/www/lb/gittemp/.git /var/www/lb/current/.git"
+    execute "rm -rf /var/www/lb/gittemp/"
+
 
       execute "pm2 kill"
 

@@ -25,9 +25,14 @@
 
 		</div>
 		<div class="navbar-collapse collapse navbar-right">
-			<a href="http://service.lakemedelsboken.se/manual/" target="_blank" class="btn navbar-btn btn-primary"><i class="fa fa-file-text-o"></i> Manual</a>
 			<% if (canBePublished) { %>
-			<a class="btn navbar-btn btn-success" href="/cms/content/publishpage?pagepath=<%=id%>"><i class="fa fa-check"></i> Märk för publicering</a>
+			<a 	class="btn navbar-btn btn-success publishedButton"
+				data-toggle="modal"
+				data-target="#publishedModal2"
+				data-pagepath="<%=id%>"
+				title="Märk den här sidan för publicering">
+					<i class="fa fa-check"></i> Publicera
+			</a>
 			<% } %>
 			<% if (canBeUnpublished) { %>
 			<a class="btn navbar-btn btn-danger" href="/cms/content/unpublishpage?pagepath=<%=id%>"><i class="fa fa-chain-broken"></i> Avpublicera</a>
@@ -65,7 +70,6 @@
 			for (var i = 0; i < page.content.length; i++) {
 
 				var number = "";
-
 				var item = page.content[i];
 
 				if (item.content.number !== undefined) {
@@ -73,14 +77,18 @@
 				}
 
 			%>
-				<li class="contentItemOverview <%=item.type%>"><a href="#<%=item.name%>"><%=contentTypes[item.type].name + number%></a></li>
+				<li class="contentItemOverview <%=item.type%>"><a href="#<%=item.name%>"><%=contentTypes[item.type].name + number + item.title%></a></li>
 			<%
 			}
 			%>
 			</ul>
 		</div>
 		<div class="col-sm-10 col-sm-offset-2 main">
-			<h1 class="page-header">Redigera sida: <small class="break"><%=id.replace(".json", "")%></small> <button class="btn btn-sm btn-primary pull-right" data-toggle="modal" data-target="#movePageModal"><i class="fa fa-file-o"></i> Flytta sida</button></h1>
+			<h1 class="page-header">Redigera sida: <small class="break"><%=id.replace(".json", "")%></small>
+				<a class="btn btn-sm btn-primary pull-right page-header-btm" style="margin-left:10px;" href="/cms/content/makealltextblack?pagepath=<%=id%>"><i class="fa fa-pencil"></i> Gör all text svart</a>
+				<button class="btn btn-sm btn-primary pull-right page-header-btm" data-toggle="modal" data-target="#movePageModal"><i class="fa fa-file-o"></i> Flytta sida</button>
+				<button class="btn btn-sm btn-warning pull-right " data-toggle="modal" data-target="#checkLinksModal"><i class="fa fa-link"></i> Kontrollera länkar</button>
+			</h1>
 
 			<form class="form-horizontal" role="form" id="pageForm" action="/cms/content/savepage" method="post" autocomplete="off">
 
@@ -362,6 +370,57 @@
 				%>
 			</form>
 
+		</div>
+	</div>
+</div>
+
+<div class="modal"  tabindex="-1" role="dialog" aria-labelledby="Kontrollera länkar" id="checkLinksModal" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<form action="/cms/content/findincominglinks" method="get" class="form-horizontal" role="form" autocomplete="off">
+					<h4>Kontrollera länkar till: <input class="form-control" name="url" type="text" value="<%=id.replace(".json", ".html")%>"></h4>
+
+					<div>
+						<div class="btn-group btn-group-justified" role="group">
+							<div class="btn-group">
+								<button type="submit" id="findIncomingLinks" class="btn btn-primary"><i class="fa fa-list"></i> <span class="text">Hitta inkommande länkar</span></button>
+							</div>
+							<div class="btn-group">
+								<a href="/cms/content/findoutgoinglinks?url=<%=id.replace(".json", ".html")%>" id="findOutgoingLinks" class="btn btn-warning"><i class="fa fa-list"></i> <span class="text">Hitta utgående länkar</span></a>
+							</div>
+						</div>
+						<div class="panel hidden" id="incomingLinksInformation">
+
+						</div>
+						<div class="panel hidden" id="outgoingLinksInformation">
+
+						</div>
+						<div class="panel panel-default hidden" id="incomingLinksFilter">
+							<div class="panel-heading">
+								<h4 class="panel-title">Filtrera</h4>
+							</div>
+							<div class="panel-body">
+								<label class="radio-inline">
+									<input type="radio" name="linksFilter" id="showAllLinks" value="showAll" checked>
+									Visa alla
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="linksFilter" id="showDraftsLinks" value="showDrafts">
+									Visa endast <strong>utkast</strong>
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="linksFilter" id="showPublishedLinks" value="showPublished">
+									Visa endast <strong>publicerade</strong>
+								</label>
+							</div>
+						</div>
+						<ul class="list-group hidden" id="incomingLinks"></ul>
+						<ul class="list-group hidden" id="outgoingLinks"></ul>
+					</div>
+				</form>
+			</div>
 		</div>
 	</div>
 </div>
@@ -667,7 +726,6 @@
 	</div>
 </div>
 
-<<<<<<< HEAD
 <div class="modal"  tabindex="-1" role="dialog" aria-labelledby="Förslag på ämnen" id="subjectSuggestionsModal" aria-hidden="true">
 	<div class="modal-dialog modal-sm">
 		<div class="modal-content">
@@ -700,7 +758,30 @@
 </div>
 
 
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Publicera" id="publishedModal2" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Publicera </h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/content/publishpage" method="get" class="form-horizontal" role="form" autocomplete="off">
+					<input type="hidden" name="pagepath" id="publishPagePath" value="">
+					<div class="form-group">
+						<div class="col-sm-10">
+							<strong>Vill du publicera sidan live?</strong>
+						</div>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ja, publicera</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
 <% include footer %>
-=======
-<% include footer %>
->>>>>>> master

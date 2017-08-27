@@ -1,0 +1,113 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Utbyte av läkemedel",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2017-08-17 13:13",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Catarina  Bernet",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "696dc4c4-e571-4615-b268-332a65c8b127",
+			"name": "8bd99cd3-29fe-4a7c-b42c-26c2ade381fc",
+			"type": "text",
+			"content": "<h1 id=\"Utbyte-av-lakemedel\">Utbyte av l&auml;kemedel</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "010cfa2b-4f6c-48d0-a209-4ab6a72a6268",
+			"name": "265f7f79-788c-4435-ab21-8ed2b786d0fe",
+			"type": "author",
+			"content": {
+				"firstname": "Catarina ",
+				"surname": "Bernet",
+				"description": "Läkemedelsverket, Uppsala",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fc0aa583-7f5f-4361-9733-54e118ab5889",
+			"name": "fc0aa583-7f5f-4361-9733-54e118ab5889",
+			"type": "author",
+			"content": {
+				"firstname": "",
+				"surname": "",
+				"description": "",
+				"email": ""
+			},
+			"settings": {}
+		},
+		{
+			"id": "c93513db-4de9-4331-863e-1fa36b0b4ed6",
+			"name": "1386c97f-6cb6-450a-a0d8-a9793823368f",
+			"type": "text",
+			"content": "<p class=\"ingress\">Ingresstext</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3ab3a9d1-59df-4fe1-ba6e-438d0358400a",
+			"name": "6627d3ab-971a-4e8f-8f16-efc696cd5660",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2><ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/regelverket_och_it-stod/utbyte-av-lakemedel.json",
+	"indexed": "true",
+	"modified": "2017-08-17 13:17"
+}

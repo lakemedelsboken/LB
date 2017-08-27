@@ -1,0 +1,750 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Fetma",
+	"description": "",
+	"keywords": "",
+	"subject": "fetma, kost, övervikt, fetmakirurgi, bmi, kroppsmasseindex, adipositas obesitet, body mass index",
+	"informationType": "",
+	"pageType": "",
+	"created": "2016-04-15 15:49",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Staffan  Marild, Torsten Olbers, Jarl Torgerson",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "84127f29-5d95-4cb1-9aa6-652ac87f3332",
+			"name": "fe73e5fb-86c9-4a40-97c2-0db342e76b7f",
+			"type": "text",
+			"content": "<h1 id=\"Fetma\">Fetma</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6cd23127-a252-497a-af67-4dcc0ab71f90",
+			"name": "4b607546-5402-45ce-a8de-45be6a26817c",
+			"type": "author",
+			"content": {
+				"firstname": "Staffan ",
+				"surname": "Marild",
+				"description": "",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f546811d-3981-4733-80b5-c9d180b2395d",
+			"name": "f546811d-3981-4733-80b5-c9d180b2395d",
+			"type": "author",
+			"content": {
+				"firstname": "Torsten",
+				"surname": "Olbers",
+				"description": "",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a8d28b74-9911-41e9-b3fb-07b3b06c7cf4",
+			"name": "a8d28b74-9911-41e9-b3fb-07b3b06c7cf4",
+			"type": "author",
+			"content": {
+				"firstname": "Jarl",
+				"surname": "Torgerson",
+				"description": "",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "640d2920-8cdc-43f4-ae69-8772a7cda4d9",
+			"name": "33486b6a-e90a-47e6-814a-92954c3752af",
+			"type": "text",
+			"content": "<p class=\"ingress\">Fetma har &ouml;kat dramatiskt sedan 40&ndash;50 &aring;r, b&aring;de i Sverige och globalt, s&aring;v&auml;l bland barn som bland vuxna. WHO har talat om en \"fetmaepidemi\" eftersom f&ouml;rekomsten blivit s&aring; omfattande.&nbsp;<span style=\"text-decoration: line-through;\"></span> Fetma klassas av WHO som en \"non-communicable disease\" vilket inneb&auml;r en icke-smittsam men samh&auml;llsf&ouml;rv&auml;rvad sjukdom som till stor del h&auml;nger samman med samh&auml;llets struktur. Detta kapitel beskriver grundl&auml;ggande fakta om fetma hos barn och vuxna med fokus p&aring; f&ouml;rebyggande och behandlande insatser.<br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "848a1f8c-1939-4797-8456-8a0a533575ca",
+			"name": "848a1f8c-1939-4797-8456-8a0a533575ca",
+			"type": "text",
+			"content": "<h2 id=\"Definitioner\">Definitioner</h2>\n<p><span style=\"color: #000000;\">Fetma inneb&auml;r att kroppens fettdep&aring;er &auml;r &ouml;kade till den grad att h&auml;lsan riskeras. Hos s&aring;v&auml;l vuxna som barn &ouml;ver tv&aring; &aring;rs &aring;lder anv&auml;nds body mass index (BMI)&nbsp; f&ouml;r att definiera och avgr&auml;nsa fetma, &ouml;vervikt, normalvikt och undervikt. BMI-v&auml;rdet (kg/m<sup>2</sup>) f&aring;s genom att dividera vikten i kilogram med kvadraten p&aring; kroppsl&auml;ngden i meter. Faktaruta 1 redovisar denna klassifikation hos vuxna. Hos barn finns inga fasta BMI-gr&auml;nser eftersom barn v&auml;xer p&aring; l&auml;ngden, vilket g&ouml;r att barns BMI varierar med l&auml;ngd och d&auml;rmed ocks&aring; med &aring;lder. Med hj&auml;lp av BMI-kurvor (Figur 1) kan man dock enkelt se var flickor och pojkar i olika &aring;lder ligger i f&ouml;rh&aring;llande till internationella gr&auml;nsv&auml;rdena f&ouml;r &ouml;vervikt och fetma. </span><span><span style=\"color: #000000;\">Det enda som beh&ouml;vs f&ouml;r att fastst&auml;lla om ett barn har fetma eller &ouml;vervikt &auml;r allts&aring; m&auml;tning av l&auml;ngd och vikt och ber&auml;kning av BMI f&ouml;r att se hur det ligger i f&ouml;rh&aring;llande till gr&auml;nsv&auml;rdena i kurvan.</span> <br><br></span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9b7255c4-86ff-4214-97b7-e3ce501aaa9b",
+			"name": "9b7255c4-86ff-4214-97b7-e3ce501aaa9b",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "BMI-gränser för klassifikation av olika viktklasser hos vuxna ",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td width=\"564\">\r\n<p><strong>BMI (kg/m&sup2;)<br /></strong></p>\r\n</td>\r\n<td width=\"564\">\r\n<p><strong>Klassifikation</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"564\">\r\n<p>&lt; 18,5</p>\r\n</td>\r\n<td width=\"564\">\r\n<p>Undervikt</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"564\">\r\n<p>18,5 &ndash; 24,9</p>\r\n</td>\r\n<td width=\"564\">\r\n<p>Normalvikt</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"564\">\r\n<p>25,0 &ndash; 29,9</p>\r\n</td>\r\n<td width=\"564\">\r\n<p>&Ouml;vervikt</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"564\">\r\n<p>30,0 &ndash; 34,9</p>\r\n</td>\r\n<td width=\"564\">\r\n<p>Fetma</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"564\">\r\n<p>35,0 &ndash; 39,9</p>\r\n</td>\r\n<td width=\"564\">\r\n<p>Sv&aring;r fetma</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"564\">\r\n<p><span style=\"color: #ff0000;\">&gt;</span> 40</p>\r\n</td>\r\n<td width=\"564\">\r\n<p>Extrem fetma</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "29704597-da88-4e68-aa84-69976d66ab1e",
+			"name": "29704597-da88-4e68-aa84-69976d66ab1e",
+			"type": "figure",
+			"content": {
+				"number": "1",
+				"maxwidth": "",
+				"image": "/images/c2_fetma_figur_1.png",
+				"title": "",
+				"text": "<p>BMI-kurvor f&ouml;r pojkar 5&ndash;18 &aring;r (&ouml;verst) och flickor 5&ndash;18 &aring;r (underst). IsoBMI 25 och isoBMI 30 &auml;r inritade som streckade linjer. Blanketterna 412 424 (tillv&auml;xtdiagram pojkar 5&ndash;18&nbsp;&aring;r) och 412 432 (tillv&auml;xtdiagram flickor 5&ndash;18&nbsp;&aring;r) kan best&auml;llas via SKL Kommentus AB, telefon 08-709 59 90, order@sklkommentus.se eller via <a href=\"http://www.sklkommentus.se. \">www.sklkommentus.se. <br /></a><br />BMI-kurvorna &auml;r &aring;tergivna med tillst&aring;nd fr&aring;n SKL Kommentus AB.</p>",
+				"alt": "",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ce573450-ea6c-4210-b4e6-ec5901390b20",
+			"name": "ce573450-ea6c-4210-b4e6-ec5901390b20",
+			"type": "text",
+			"content": "<p><span style=\"color: #000000;\">BMI tar endast h&auml;nsyn till kroppsvikten i relation till kroppsl&auml;ngden och s&auml;ger ingenting om vare sig fettf&ouml;rdelning eller kroppsammans&auml;ttning. Det &auml;r v&auml;l belagt att det abdominella fettet (bukfettet) &auml;r mer associerat med &ouml;kad medicinsk risk &auml;n det femoro-gluteala (fettet &ouml;ver stussen) n&auml;r det g&auml;ller utveckling av h&ouml;gt blodtryck, insulinresistens och oh&auml;lsosamma blodfetter, det vill s&auml;ga kardiometabola komplikationer. Bukomf&aring;nget - m&auml;tt mitt emellan tolfte revbenet och h&ouml;ftbenskammen, i st&aring;ende och efter en normal utandning - &auml;r ett bra och enkelt m&aring;tt p&aring; den fettf&ouml;rdelningsrelaterade risken (se Faktaruta 2). Hos barn &auml;r normalv&auml;rdena f&ouml;r midjem&aring;ttet olika beroende p&aring; &aring;lder. Det finns publicerade v&auml;rden f&ouml;r dessa. En enkel tumregel f&ouml;r skolbarn &auml;r att ber&auml;kna kvoten mellan midjem&aring;tt och l&auml;ngd (b&aring;da i centimeter). En kvot st&ouml;rre &auml;n 0,5 talar f&ouml;r att barnet har bukfetma.</span><br><br></p>\n<p><span style=\"color: #000000;\">Fetma klassificeras som en sjukdom, vilket &ouml;vervikt d&auml;remot inte g&ouml;r. &Ouml;vervikt klassas ist&auml;llet som en riskfaktor f&ouml;r annan sjuklighet, framf&ouml;r allt kardiovaskul&auml;ra sjukdomar och diabetes.</span><br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b05ecb63-3293-4dcb-b2fa-d7010eeb74e5",
+			"name": "b05ecb63-3293-4dcb-b2fa-d7010eeb74e5",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "Bukomfång och risk för metabola sjukdomar hos vuxna",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td><strong>M&auml;n </strong></td>\r\n<td><strong>Kvinnor</strong></td>\r\n<td><strong>Risk</strong></td>\r\n</tr>\r\n<tr>\r\n<td>&lt; 94 cm</td>\r\n<td>&lt; 80 cm</td>\r\n<td>Inte &ouml;kad</td>\r\n</tr>\r\n<tr>\r\n<td>94 &ndash;102 cm</td>\r\n<td>80&ndash;88 cm</td>\r\n<td>&Ouml;kad</td>\r\n</tr>\r\n<tr>\r\n<td>&gt; 102 cm</td>\r\n<td>&gt; 88 cm</td>\r\n<td>Mycket &ouml;kad</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4e63c9e2-b95e-4cdc-be0c-ed1194971615",
+			"name": "4e63c9e2-b95e-4cdc-be0c-ed1194971615",
+			"type": "text",
+			"content": "<h2 id=\"Epidemiologi\"><span style=\"color: #000000;\">Epidemiologi</span></h2>\n<p><span style=\"color: #000000;\">Fetma har utvecklats till att bli v&auml;stv&auml;rldens vanligaste n&auml;ringsrubbning. Den sj&auml;lvrapporterade f&ouml;rekomsten av fetma i den vuxna svenska befolkningen har f&ouml;rdubblats sedan 1980-talet. Enligt Global Burden of Disease Study fr&aring;n 2013 har 19&nbsp;% av vuxna svenskar definitionsm&auml;ssigt fetma, det vill s&auml;ga ett BMI&nbsp;&gt;&nbsp;30 kg/m<sup>2</sup>. &Auml;ven om fetmaf&ouml;rekomsten &ouml;kar i alla befolkningsgrupper s&aring; finns det en tydlig social gradient d&auml;r fetma &auml;r vanligare i grupper med svagare socioekonomisk st&auml;llning.</span><br><br></p>\n<p><span style=\"color: #000000;\">Sedan 1980-talet har f&ouml;rekomsten av &ouml;vervikt och fetma bland barn och ungdomar &ouml;kat markant. &Auml;ven i Sverige &ouml;kade fetma bland 10-&aring;riga skolbarn fr&aring;n mindre &auml;n 1&nbsp;% p&aring; 1980-talet till cirka 3&nbsp;% vid millennieskiftet, men har d&auml;refter legat relativt konstant. Data fr&aring;n BVC under de senaste &aring;ren visar att 2&ndash;4&nbsp;% av fyra&aring;ringarna har fetma. F&ouml;rskolebarn med s&auml;mre sociala eller ekonomiska f&ouml;rh&aring;llanden har h&ouml;gre f&ouml;rekomst.</span><br><br></p>\n<p><span style=\"color: #000000;\">Data fr&aring;n Socialstyrelsen visar att barns f&ouml;delsevikt &ouml;kat i medeltal fr&aring;n 1970- till 2000-talet fr&aring;n strax under till strax &ouml;ver 3500&nbsp;g. Detta sammanh&auml;nger med att gravida kvinnors vikt har &ouml;kat. Fetma hos barnaf&ouml;dande kvinnor &ouml;kade fr&aring;n cirka 5&nbsp;% 1990 till 12&nbsp;% 2007. Ju h&ouml;gre f&ouml;delsevikt ett barn har desto h&ouml;gre risk f&ouml;r utveckling av fetma, vilket dock &auml;ven barn med l&aring;g f&ouml;delsevikt har. BMI-kurvan hos barn sluttar ner&aring;t fr&aring;n ett&aring;rs&aring;ldern och v&auml;nder upp&aring;t vid 6 &aring;rs &aring;lder. V&auml;ndningen kallas <em>adiposity rebound. </em>Om v&auml;ndningen kommer redan vid 3-4 &aring;rs &aring;lder talar man om tidig adiposity rebound vilken inneb&auml;r en &ouml;kad risk f&ouml;r fetma. P&aring; barnav&aring;rdscentralen kan man identifiera detta m&ouml;nster och har m&ouml;jlighet att starta f&ouml;rebyggande insatser.</span><br><br></p>\n<p><span style=\"color: #000000;\">Ett flertal studier visar att ett barn som har fetma n&auml;stan alltid forts&auml;tter att ha fetma som vuxen. En tio&aring;ring med fetma har cirka 20&nbsp;g&aring;nger &ouml;kad risk att ha fetma vid 30&nbsp;&aring;rs &aring;lder. Studier i Finland p&aring; vuxna med fetma som uppst&aring;tt redan i barndomen hade en &ouml;kad risk f&ouml;r diabetes och hj&auml;rt-k&auml;rlsjukdom j&auml;mf&ouml;rt med vuxna som utvecklat fetma senare i livet.</span><br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6ff78678-286c-41ee-a76c-f5945c985a5e",
+			"name": "6ff78678-286c-41ee-a76c-f5945c985a5e",
+			"type": "text",
+			"content": "<h2 id=\"Symtom-och-samsjuklighet-vid-fetma-hos-vuxna\"><span style=\"color: #000000;\">Symtom och samsjuklighet vid fetma hos vuxna</span></h2>\n<p><span style=\"color: #000000;\"><strong></strong>M&aring;nga av de sjukdomar som individer med fetma riskerar att drabbas av &auml;r relaterade till det metabola syndromet. &Auml;ven om det metabola syndromet definierats lite olika av olika internationella expertgrupper s&aring; ing&aring;r vanligen en kombination av bukfetma, insulinresistens/nedsatt glukostolerans/diabetes typ 2, hypertoni samt dyslipidemi med f&ouml;rh&ouml;jda triglycerider, f&ouml;rh&ouml;jt LDL och s&auml;nkt HDL.</span><br><br></p>\n<h3 id=\"Mortalitet\"><span style=\"color: #000000;\">Mortalitet</span></h3>\n<p><span style=\"color: #000000;\">Personer med fetma l&ouml;per en &ouml;kad risk att d&ouml; i f&ouml;rtid. Uppskattningar fr&aring;n WHO anger den globala &aring;rliga fetmarelaterade mortaliteten till 2,5&nbsp;miljoner avlidna. Den vanligaste fetmaassocierade d&ouml;dsorsaken &auml;r kardiovaskul&auml;r sjukdom.</span><br><br></p>\n<h3 id=\"Insulinresistens-och-diabetes-typ-2\"><span style=\"color: #000000;\">Insulinresistens och diabetes typ 2</span></h3>\n<p><span style=\"color: #000000;\">F&ouml;rekomsten av diabetes&nbsp;typ&nbsp;2 &ouml;kar med &aring;lder och stigande kroppsvikt. Diabetes &auml;r en av de dominerande komplikationerna som &auml;r associerad till fetma. Den stora epidemiologiska unders&ouml;kningen Nurses&rsquo; Health Study har visat att kvinnor med BMI&nbsp;&gt;&nbsp;35 kg/m<sup>2</sup> har en n&auml;stan 100&nbsp;g&aring;nger h&ouml;gre &aring;ldersstandardiserad risk att utveckla typ-2-diabetes j&auml;mf&ouml;rt med kvinnor som har ett BMI&nbsp;&lt;&nbsp;22 kg/m<sup>2</sup>.</span><br><br></p>\n<p><span style=\"color: #000000;\">Insulinresistens och en kompensatorisk hyperinsulinemi &auml;r tidiga tecken p&aring; <span style=\"text-decoration: line-through;\"></span> nedsatt glukostolerans (IGT) som till slut kan utvecklas till typ-2-diabetes. </span><br><br></p>\n<h3 id=\"Hjartkarlsjukdom\">Hj&auml;rtk&auml;rlsjukdom</h3>\n<p>Det finns ett tydligt samband mellan fetma och risken f&ouml;r kransk&auml;rlssjukdom med en accentuerad risk&ouml;kning vid BMI&nbsp;&gt;&nbsp;27&nbsp;kg/m<sup>2</sup> hos m&auml;n och &gt;&nbsp;25&nbsp;kg/m<sup>2</sup> hos kvinnor. Fetma &ouml;kar risken f&ouml;r aterosklerotisk hj&auml;rtk&auml;rlsjukdom, hj&auml;rtsvikt, hj&auml;rtrytmrubbningar liksom f&ouml;r stroke. Risk&ouml;kningen kan delvis f&ouml;rklaras av en &ouml;kad f&ouml;rekomst av v&auml;lk&auml;nda riskfaktorer som f&ouml;rh&ouml;jt blodtryck, lipidrubbningar, insulinresistens, nedsatt fibrinolys och en l&aring;ggradig kronisk inflammation.<br><br></p>\n<h3 id=\"Obstruktiv-somnapn-\"><span style=\"color: #000000;\">Obstruktiv s&ouml;mnapn&eacute;</span></h3>\n<p><span style=\"color: #000000;\">Obstruktiv s&ouml;mnapn&eacute; (OSA) f&ouml;rekommer vanligare vid fetma &auml;n vid normalvikt och &auml;r relaterat till en &ouml;kad risk f&ouml;r kardiovaskul&auml;r sjukdom och f&ouml;rtida d&ouml;d. Snarkningar, andningsuppeh&aring;ll, blodtrycksstegring, uttalad dagtr&ouml;tthet, koncentrationssv&aring;righeter och psykosociala problem ing&aring;r som kliniska manifestationer. OSA ska skiljas fr&aring;n den hypoventilation med &aring;tf&ouml;ljande koldioxidretention (Pickwick-syndromet) som f&ouml;rekommer vid extrem fetma.</span><br><br></p>\n<h3 id=\"Lever-och-gallvagar\"><span style=\"color: #000000;\">Lever och gallv&auml;gar</span></h3>\n<p><span style=\"color: #000000;\">Fetma, framf&ouml;rallt hos kvinnor, &ouml;kar p&aring;tagligt risken att drabbas av gallstenssjukdom. Orsaken &auml;r en &ouml;kad kolesterolhalt i gallan och en minskad kontraktilitet i gallbl&aring;san. Vid all snabb viktnedg&aring;ng, till exempel vid bariatrisk kirurgi, &ouml;kar dessutom risken f&ouml;r gallstenssjukdom ytterligare p&aring; grund av en &ouml;kad belastning p&aring; kolesteroloms&auml;ttningen.</span><br><br></p>\n<p><span style=\"color: #000000;\">Non-alcoholic fatty liver disease (NAFLD) &auml;r ett samlingsbegrepp f&ouml;r fetmaassocierad leversjuklighet och omfattar hela spektrum fr&aring;n leversteatos (f&ouml;rfettning av levern) till levercirros (skrumplever). I vilken grad leversteatos leder till inflammation och fibrosomvandling &auml;r debatterat men risken f&ouml;r cirrosutveckling &auml;r helt klart st&ouml;rre &auml;n man tidigare trott.</span><br><br></p>\n<h3 id=\"Cancer\">Cancer</h3>\n<p>Ett stort antal tum&ouml;r- och cancerformer &auml;r &ouml;verrepresenterade vid fetma. Det handlar bland annat om cancer i tjocktarm, prostata, br&ouml;st och endometrium. De patofysiologiska mekanismer som kopplar samman fetma, diabetes och cancer &auml;r &auml;nnu inte helt klarlagda.<br><br></p>\n<h3 id=\"Artros\">Artros</h3>\n<p>Artros &auml;r &ouml;verrepresenterat vid fetma och symtom fr&aring;n viktb&auml;rande leder (rygg, h&ouml;fter, kn&auml;n och fotleder) dominerar.<br><br></p>\n<h3 id=\"Inkontinens-och-fertilitet\">Inkontinens och fertilitet</h3>\n<p>Fetma &auml;r kopplat till nedsatt fertilitet, polycystiskt ovariesyndrom (PCO) liksom till komplikationer under graviditet och f&ouml;rlossning. Hos &auml;ldre postmenopausala kvinnor &ouml;kar risken f&ouml;r urininkontinens.<br><br></p>\n<h3 id=\"Hud\">Hud</h3>\n<p>Acantosis nigricans &ndash; en hyperkeratos och brunpigmentering runt nacke, hals och axiller &ndash; f&ouml;rekommer vid fetma och &auml;r kopplat till en &ouml;kad insulinresistens. Intertrigin&ouml;s dermatit ses vid uttalad fetma och kan vara besv&auml;rande f&ouml;r patienten.<br><br></p>\n<h3 id=\"Psykiska-och-psykosociala-problem\">Psykiska och psykosociala problem</h3>\n<p>Det &auml;r v&auml;l belagt att personer med fetma &auml;r utsatta f&ouml;r s&aring;v&auml;l f&ouml;rdomar som diskriminering. Bland psykiska sjukdomar som kan knytas till fetma m&auml;rks bulimi och binge eating disorder (BED). Det senare tillst&aring;ndet inneb&auml;r, till skillnad fr&aring;n bulimi, attackvis &ouml;ver&auml;tning men utan kr&auml;kningsprovokation. Data fr&aring;n den svenska SOS-studien har visat att hos individer med fetma &auml;r olika m&aring;tt p&aring; h&auml;lsorelaterad livskvalitet (&aring;ngest, depression, mentalt v&auml;lbefinnande) klart l&auml;gre &auml;n hos andra grupper av kroniskt sjuka.<br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1760016e-0aba-40b2-8f6d-17fd88731bc6",
+			"name": "1760016e-0aba-40b2-8f6d-17fd88731bc6",
+			"type": "text",
+			"content": "<h2 id=\"Symtom-och-samsjuklighet-vid-fetma-hos-barn-och-ungdomar-\">Symtom och samsjuklighet vid fetma hos barn och ungdomar<strong> <br></strong></h2>\n<p>Fetma hos barn och ungdomar medf&ouml;r en &ouml;kad risk f&ouml;r medicinska, psykiska och sociala problem som tilltar med &ouml;kande &aring;lder. F&ouml;rskolebarn, &auml;ven de med uttalad fetma, uppfattas mestadels av sig sj&auml;lva och sina familjer som helt friska. I l&aring;gstadiet &auml;r det vanligt att barnen blir retade. D&auml;refter accentueras problemen fram till ton&aring;ren. M&aring;nga k&auml;nner sig d&aring; ensamma och utanf&ouml;r, blir deprimerade och har mycket l&aring;gt sj&auml;lvf&ouml;rtroende. Sekund&auml;rt p&aring;verkas resultaten i skolan liksom fritidsaktiviteter. Fetman leder allts&aring; ofta till en ond cirkel som ytterligare accentuerar problematiken.<br><br></p>\n<p>Bland skolbarn med fetma &auml;r sm&auml;rtor fr&aring;n f&ouml;tter, kn&auml;n, h&ouml;fter och rygg vanligt och ofta &auml;r det d&auml;rf&ouml;r man s&ouml;ker hj&auml;lp i skolh&auml;lsov&aring;rden. Fysisk prestationsf&ouml;rm&aring;ga &auml;r vanligen nedsatt och ton&aring;ringar undviker helst fysisk aktivitet av olika slag. Caput femoris-glidning (det vill s&auml;ga att l&aring;rkulan &aring;ker ur ledpannan i h&ouml;ften) eller felst&auml;llda kn&auml;n (Blounts sjukdom) &auml;r &ouml;verrepresenterat vid fetma. Astma f&ouml;rekommer oftare hos barn med fetma. Ton&aring;ringar med uttalad fetma kan ocks&aring; utveckla sjukdomar som vanligen f&ouml;rknippas med vuxenfetma, till exempel diabetes&nbsp;typ&nbsp;2, s&ouml;mnapn&eacute;, f&ouml;rfettning av levern, polycystiskt ovariesyndrom (PCO) och h&ouml;gt blodtryck.</p>\n<p>&nbsp;</p>\n<p>Metabola avvikelser f&ouml;rekommer hos barn med fetma. Acanthosis nigricans (se ovan) kan finnas hos barn/ungdomar med fetma och &auml;r ett kliniskt tecken p&aring; metabol st&ouml;rning.<br><br> Laboratorieprover visar ofta avvikelser hos barn och ungdomar med fetma vilket blir tydligare med stigande &aring;lder. Avvikelserna g&auml;ller fr&auml;mst niv&aring;erna p&aring; insulin, blodfetter samt leverenzymer. Blodtrycket &auml;r h&ouml;gre hos barn med fetma &auml;n hos j&auml;mn&aring;riga normalviktiga barn. Ett oralt glukostoleranstest (OGTT) &auml;r av v&auml;rde att g&ouml;ra p&aring; ton&aring;ringar med p&aring;taglig fetma, &auml;rftlighet f&ouml;r diabetes typ 2 eller som har acanthosis nigricans. Testet visar om insulinresistens har utvecklats och om det finns tecken p&aring; pre-diabetes eller typ&nbsp;2-diabetes.</p>\n<p>&nbsp;</p>\n<p>F&ouml;rekomst av fetma &auml;r kopplat till f&ouml;rekomst av neuropsykiatriska funktionsneds&auml;ttningar, till exempel autism och ADHD. Vidare kan fetma hos barn vara del i ett syndrom eller i mycket s&auml;llsynta fall bero p&aring; en monogenetisk eller hormonell sjukdom (se avsnittet Genetik). I s&aring;dana fall ser man ofta att fetman startar i tidig &aring;lder. Barnen &auml;r ofta kortvuxna och uppvisar vidare ett flertal andra handikappande medicinska avvikelser.<br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "df396484-87bb-4e41-a601-bcb3d7ed6cc1",
+			"name": "df396484-87bb-4e41-a601-bcb3d7ed6cc1",
+			"type": "text",
+			"content": "<h2 id=\"Etiologi-och-bakgrund\">Etiologi och bakgrund</h2>\n<h3 id=\"Heterogen-sjukdom\">Heterogen sjukdom</h3>\n<p>Utveckling av fetma har ett flertal bakomliggande faktorer vilka dessutom i varierande grad f&ouml;rekommer hos olika individer. En &auml;rftlig predisposition &ouml;kar risken att utveckla fetma, vilket f&ouml;rklarar varf&ouml;r individer har olika ben&auml;genhet att utveckla &ouml;vervikt och fetma trots likartade kost- och motionsvanor. Fetma kan ocks&aring; utvecklas i olika &aring;ldrar, i olika situationer och ha olika medicinska konsekvenser.<br><br></p>\n<h3 id=\"Kostfaktorer\">Kostfaktorer</h3>\n<p>Ett f&ouml;r stort energiintag i f&ouml;rh&aring;llande till f&ouml;rbrukning &auml;r sj&auml;lvklart den centrala faktorn f&ouml;r utveckling av fetma hos s&aring;v&auml;l barn som vuxna. Den globala trenden med &ouml;kande BMI i befolkningen (se epidemiologi ovan) speglar det globala &ouml;verskottet av l&auml;ttillg&auml;nglig och billig kost som modernt jordbruk och livsmedelsindustri skapat.<br><br></p>\n<p>F&ouml;r utveckling av fetma har sockerhaltiga produkter en mycket stor betydelse och konsumtionen av kolhydrathaltiga livsmedel har &ouml;kat stadigt de senaste 40 &aring;ren. Det genomsnittliga sammanlagda intaget i Sverige av godis, glass och chips har &ouml;kat fr&aring;n cirka 10&nbsp;kg per capita 1960 till runt 28&nbsp;kg &aring;r 2010. L&auml;skkonsumtionen har tredubblats till cirka 90&nbsp;liter per person och &aring;r fr&aring;n 1980 till 2012 (Jordbruksverket). Cirka 25&nbsp;% av barns energiintag &auml;r s&aring; kallade \"tomma kalorier\", det vill s&auml;ga huvudsakligen sockerhaltiga produkter som godis, glass, l&auml;sk med mera.<br><br></p>\n<p>Ut&ouml;ver kostens inneh&aring;ll av olika n&auml;rings&auml;mnen spelar &auml;ven m&aring;ltidsordningen roll. Studier p&aring; skolbarn visar att frukost&auml;tandet &auml;r omv&auml;nt proportionellt mot BMI, det vill s&auml;ga de med h&ouml;gt BMI och &ouml;vervikt/fetma &auml;ter frukost mindre ofta &auml;n de med normalvikt. &Auml;tbeteende har &auml;ven betydelse. Kartl&auml;ggningar visar att personer med fetma &auml;ter i snabbare tempo &auml;n normalviktiga individer.<br><br></p>\n<h3 id=\"Fysisk-inaktivitet\">Fysisk inaktivitet</h3>\n<p>Den fysiska aktiviteten i det moderna samh&auml;llet svarar s&auml;llan upp mot energiintaget. Anv&auml;ndning av datorer, TV eller andra apparater, liksom &ouml;kat bil&aring;kande, har minskat den fysiska aktiviteten markant. Stillasittande &auml;r i sig en stor h&auml;lsofara oberoende av vikten, men bidrar tydligt till utveckling av fetma och accentueras i takt med stigande BMI.&nbsp;<br><br></p>\n<h3 id=\"Genetik\">Genetik</h3>\n<p>Fetmadrivande gener har selekterats fram under &aring;rtusenden av oj&auml;mn tillg&aring;ng p&aring; kalorier och perioder av sv&auml;lt. Det har alltid varit en &ouml;verlevnadsf&ouml;rdel att i goda tider kunna samla p&aring; sig f&ouml;rr&aring;d att leva p&aring; under sv&auml;ltperioder, vilket dock under de senaste decennierna v&auml;nts till en nackdel sedan vi i det moderna samh&auml;llet f&aring;tt ett &ouml;verskott p&aring; kalorier och brist p&aring; r&ouml;rlighet.<br><br>Det finns ett stort antal gener och genvarianter identifierade som p&aring;visats kunna driva fetmautveckling. Det &auml;r antalet av dessa, snarare &auml;n styrkan i dem, som &auml;r avg&ouml;rande. Genetiska faktorer p&aring;verkar en rad faktorer s&aring;som &auml;mnesoms&auml;ttning, n&auml;ringsupptag, f&ouml;rbr&auml;nning eller fysisk aktivitet, som i sin tur inverkar p&aring; energif&ouml;rbrukning och -balans.<br><br></p>\n<p>Hos barn med fetma har mycket ofta ena eller b&aring;da f&ouml;r&auml;ldrarna fetma. Risken att utveckla fetma &auml;r 10&minus;15 g&aring;nger h&ouml;gre om n&aring;gon av f&ouml;r&auml;ldrarna har fetma, j&auml;mf&ouml;rt med barn till normalviktiga f&ouml;r&auml;ldrar. Om detta beror helt p&aring; genetiska f&ouml;rh&aring;llanden eller p&aring; familjens livsstilsvanor &auml;r sv&aring;rt att skilja ut. Tvillingstudier talar f&ouml;r att den genetiska komponenten i de individuella fallen &auml;r en viktig del men att en milj&ouml; med ogynnsam livsstil kr&auml;vs f&ouml;r att de genetiska delarna ska aktiveras.<br><br></p>\n<p>I mycket s&auml;llsynta fall finns en monogenetisk bakgrund till fetma. Leptinbrist och monozygot melanocortin-receptor 4-brist &auml;r exempel p&aring; s&aring;dana. Andra s&auml;llsynta former av fetma &auml;r s&aring;&nbsp;kallad syndromfetma d&auml;r individer har fetma i kombination med andra avvikelser i olika organsystem, exempelvis Bardet-Biedls och Prader-Willis syndrom.<br><br></p>\n<h3 id=\"Psykiska-och-sociala-faktorer\">Psykiska och sociala faktorer</h3>\n<p>Sociala faktorer har stark inverkan p&aring; fetmautveckling. Exempelvis pekar studier p&aring; v&auml;rnpliktiga p&aring; att mammans utbildningsniv&aring; har betydelse &ndash; vid l&auml;gre niv&aring; var det en h&ouml;gre f&ouml;rekomst av fetma bland rekryterna. <span style=\"text-decoration: line-through;\">Tillh&ouml;righet till socialgrupp</span> S<span style=\"color: #ff0000;\">ocioekonomisk st&auml;llning </span>kan allts&aring; prediktera viktproblem, l&auml;gre <span style=\"text-decoration: line-through;\">socialgrupp</span> <span style=\"color: #ff0000;\">inkomst</span> ger st&ouml;rre risk. Det &auml;r m&ouml;jligt <span style=\"color: #ff0000;\">att mer v&auml;lututbildade grupper</span> i samh&auml;llet har m&ouml;jligheter att ta till sig relevant kunskap och fakta b&auml;ttre och d&auml;rmed utveckla en h&auml;lsosammare livsstil.<br><br></p>\n<p>Psykiska och sociala faktorer &auml;r ofta kombinerade. I en dansk studie f&ouml;ljdes en grupp barn fr&aring;n 10 till 20 &aring;rs &aring;lder och den st&ouml;rsta risken att utveckla fetma hade de tio&aring;ringar som f&ouml;ref&ouml;ll vara negligerade av f&ouml;r&auml;ldrarna. <span style=\"text-decoration: line-through;\">Stress och s&ouml;mnst&ouml;rningar har &auml;ven setts som en riskfaktor d&auml;r individer med h&ouml;g stressniv&aring; har st&ouml;rningar i hormonniv&aring;er och i dygnsrytmik</span> <span style=\"color: #ff0000;\">Andra riskfaktorer utg&ouml;rs av stress och s&ouml;mnst&ouml;rningar genom att individer med h&ouml;g stressniv&aring; har st&ouml;rningar i hormonniv&aring;er och i dygnsrytmik.<br><br></span></p>\n<h3 id=\"Stigmatisering\">Stigmatisering</h3>\n<p>Det finns ett flertal studier som visar att barn redan i f&ouml;rskole&aring;ldern ser ner p&aring; barn med fetma. Barn som f&aring;r beskriva vad de t&auml;nker d&aring; de ser bilder p&aring; barn med olika konturer, tycker att de som ser ut att ha fetma &auml;r dumma, elaka och fula. I regel blir skolbarn med fetma retade p&aring; olika s&auml;tt. Vuxna personer med fetma &auml;r i allm&auml;nhet sj&auml;lva medvetna om att felaktig kost och brist p&aring; motion &auml;r kopplat till fetman och anklagar ofta sig sj&auml;lva f&ouml;r misslyckandena. Detta f&ouml;rst&auml;rks genom att m&auml;nniskor i omgivningen, direkt eller indirekt, pekar p&aring; att de &auml;r lata som inte r&ouml;r sig och saknar f&ouml;rm&aring;ga att kontrollera vad de &auml;ter. Stigmatisering leder till uppgivenhet och tr&ouml;st&auml;tande och till att problemen accentueras.<br><br></p>\n<h3 id=\"Psykiatriska-tillstand-\">Psykiatriska tillst&aring;nd<strong> </strong></h3>\n<p>ADHD (Attention Deficit/Hyperactivity Disorder) f&ouml;refaller vara &ouml;verrepresenterad bland ungdomar som remitterats f&ouml;r behandling av &ouml;vervikt och fetma. Man anger att bland annat en bristande impulskontroll inverkar menligt p&aring; m&aring;ltidsordning och kostintag.<br><br></p>\n<p>Patienter med psykossjukdom har en betydande &ouml;verrisk att drabbas av s&aring;v&auml;l &ouml;vervikt och fetma som diabetes och hj&auml;rtk&auml;rlsjukdom. Flertalet antipsykotika har viktuppg&aring;ng som en vanlig biverkan. Till detta adderas de psykossjukas kognitiva problem som ofta i betydande grad f&ouml;rsv&aring;rar h&auml;lsosamma livsstilsval.</p>\n<p>&nbsp;</p>\n<h3 id=\"Lakemedel\">L&auml;kemedel</h3>\n<p>Ett flertal l&auml;kemedelsgrupper &auml;r f&ouml;rknippade med st&ouml;rre eller mindre grad av vikt&ouml;kning. Bland antipsykotiska l&auml;kemedel som relaterats till en p&aring;taglig risk f&ouml;r vikt&ouml;kning &aring;terfinns klozapin, olanzapin och risperidon medan aripirazol och flufenazin d&auml;rvidlag &auml;r mindre belastade. Antidepressiva l&auml;kemedel, s&aring;v&auml;l tricykliska preparat som mirtazapin, medf&ouml;r ocks&aring; en risk f&ouml;r viktuppg&aring;ng.<br><br></p>\n<p>Bland antiepileptika associerade med vikt&ouml;kning &aring;terfinns valproat och gabapentin, medan topiramat har motsatt effekt och d&auml;rf&ouml;r ocks&aring; f&ouml;rs&ouml;ksvis anv&auml;nts f&ouml;r att <span style=\"color: #ff0000;\">uppn&aring;</span> en viktminskning. Andra viktdrivande l&auml;kemedel &auml;r kortison, insulin, sulfonylurea<span style=\"color: #ff0000;\">f&ouml;reningar</span>, &ouml;strogener, anti&ouml;strogener och betablockerare.<br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "22fbd58b-366b-4898-976f-1d6ab3714662",
+			"name": "22fbd58b-366b-4898-976f-1d6ab3714662",
+			"type": "text",
+			"content": "<h2 id=\"Prevention\">Prevention</h2>\n<p>F&ouml;rebyggande arbete mot fetma innefattar dels generella h&auml;lsofr&auml;mjande insatser p&aring; samh&auml;llsniv&aring;, dels individuellt riktade insatser. H&auml;lsofr&auml;mjande insatser p&aring; samh&auml;llsniv&aring; (\"community prevention\") inneb&auml;r att man p&aring; nationell niv&aring; eller i enskilda kommuner fattar beslut eller utformar policys f&ouml;r att motverka en \"fetmaframkallande milj&ouml;\", det vill s&auml;ga komma &aring;t orsakerna till den s&aring; kallade \"fetmaepidemin\". Syftet &auml;r att systematiskt skapa f&ouml;ruts&auml;ttningar i samh&auml;llet f&ouml;r mer fysisk aktivitet, b&auml;ttre kostval och h&auml;lsosamma rutiner. De h&auml;lsofr&auml;mjande insatserna riktar sig till hela befolkningen, f&ouml;r att <span style=\"color: #ff0000;\">uppn&aring; en</span> st&ouml;rre effekt p&aring; den totala folkh&auml;lsan &auml;n <span style=\"color: #ff0000;\">vad</span> alla former av individuellt riktade insatser <span style=\"color: #ff0000;\">g&ouml;r</span>. P&aring; kommunal niv&aring; kan &ouml;vergripande planer exempelvis ber&ouml;ra stadsplanering och infrastuktur (till exempel g&aring;ngv&auml;gar, cykelbanor och bra kollektivtrafik), skolor (l&auml;roplaner, skollunch, idrott), idrottsf&ouml;reningar eller samarbete med kommersiella verksamheter. P&aring; nationell niv&aring; kan &aring;tg&auml;rder s&aring;som subventioner (<span style=\"color: #ff0000;\">av</span> nyttig mat), skatter (<span>p&aring; </span>onyttig kost), begr&auml;nsning av reklam f&ouml;r oh&auml;lsosamma produkter eller nationella rekommendationer utformas. Exempel p&aring; denna typ av insatser finns fr&aring;n m&aring;nga l&auml;nder.<br><br></p>\n<p><span style=\"color: #ff0000;\">Individuellt riktad prevention &auml;r ocks&aring; viktig</span> och riktar sig mestadels till barn och ungdomar, mer s&auml;llan till vuxna. De f&ouml;rebyggande insatserna hos barn handlar ofta om att p&aring;verka familjen och barns omedelbara n&auml;rmilj&ouml;, de egna attityderna och om att &ouml;ka medvetandet om god livsstil. &Aring;terigen handlar det om att fr&auml;mja h&auml;lsosam kost, &ouml;ka fysisk aktivitet eller att skapa goda vanor, till exempel tillr&auml;ckligt med s&ouml;mn. Insatser av denna typ har effekt vilket konstateras i en &ouml;versiktsartikel i Cochrane fr&aring;n &aring;r 2011. I sammanst&auml;llningen analyseras 55 studier och man konstaterar att barn mellan 6 och 12 &aring;r som deltog i f&ouml;rebyggande insatser hade en gynnsammare BMI-utveckling <span style=\"color: #ff0000;\">&auml;n vad kontrollerna hade</span>. F&ouml;r Sveriges del slog SBU &aring;r 2004 fast att det g&aring;r att f&ouml;rebygga fetma hos barn och ungdomar och man rekommenderar s&aring;dana insatser. Det var huvudsakligen skolbaserade studier som ingick i denna sammanst&auml;llning. I Sverige bedrivs en generell individriktad, f&ouml;rebyggande insats via barnav&aring;rdscentraler och inom skolh&auml;lsov&aring;rden. De regelbundna v&auml;gningarna och m&auml;tningarna och inprickningen i BMI-kurvan d&auml;r verkar i sig f&ouml;rebyggande eftersom det ger barn och f&ouml;r&auml;ldrar en objektiv bild av barnets tillv&auml;xt. Till detta kopplas individuella r&aring;d om h&auml;lsosamma vanor, aktiviteter och kost. Det finns &auml;ven framg&aring;ngsrika, f&ouml;rebyggande insatser som fokuserat p&aring; n&aring;got enstaka viktigt fenomen, till exempel att minska barns TV-tid, eller minska l&auml;skkonsumtionen.<br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1fb9ff6c-bc30-45c5-9eba-f7391e176dec",
+			"name": "1fb9ff6c-bc30-45c5-9eba-f7391e176dec",
+			"type": "text",
+			"content": "<h2 id=\"Behandling-av-fetma-hos-barn-och-ungdomar\">Behandling av fetma hos barn och ungdomar</h2>\n<h3 id=\"Starta-behandling-fore-puberteten\">Starta behandling f&ouml;re puberteten</h3>\n<p>Innan behandling initieras &auml;r <span style=\"color: #ff0000;\">det viktigt</span> att ta reda p&aring; om barnet verkligen har fetma, <span style=\"color: #ff0000;\">se avsnittet</span> <a href=\"{pre}/-nya-kapitel-ej-publ/fetma.html#Definitioner\">Definitioner</a>. Registerstudier i Sverige visar att behandlande insatser mestadels har gynnsam l&aring;ngtidseffekt om de s&auml;tts in innan barnet n&aring;r puberteten. Barn med fetma som &auml;r yngre &auml;n 4 &aring;r &auml;r s&auml;llan aktuella f&ouml;r behandling f&ouml;rutom barn med mycket extrem fetma. Sannolikt <span style=\"text-decoration: line-through;\">&auml;r den</span> <span style=\"color: #ff0000;\">f&aring;r man b&auml;st effekt av behandlingen</span> om man startar i 7&minus;10 &aring;rs&aring;ldern. Det &auml;r allts&aring; viktigt att inte skjuta upp behandlingsinsatser p&aring; prepubertala barn med fetma. Alla barn med fetma, oberoende av var man bor, b&ouml;r f&aring;r en god m&ouml;jlighet till behandlande insatser i n&auml;rheten av hemmet.<br><br></p>\n<h3 id=\"Livsstilsbehandling-ar-huvudregeln\">Livsstilsbehandling &auml;r huvudregeln</h3>\n<p>S&aring; kallad livsstilsbehandling &auml;r huvudregeln vid behandling av fetma hos barn. Denna inneb&auml;r att v&aring;rdgivare tillsammans med barn/ungdom och familj successivt str&auml;var efter att komma fram till f&ouml;r&auml;ndringar av kost, fysisk aktivitet och vardagsrutiner s&aring; de blir mer h&auml;lsosamma. M&aring;len f&ouml;r detta arbete &auml;r desamma som vid f&ouml;rebyggande insatser, men arbetss&auml;ttet &auml;r direkt anpassat till det enstaka barnets situation, &auml;r fokuserat p&aring; att n&aring; best&auml;mda m&aring;l och &auml;r intensivare. L&auml;kemedel och kirurgiska insatser anv&auml;nds endast i undantagsfall och i speciella situationer.</p>\n<p>&nbsp;</p>\n<p>F&ouml;r barn f&ouml;re puberteten &auml;r f&ouml;r&auml;ldrarna de viktigaste kontaktpersonerna. F&ouml;rskolebarn kan behandlas framg&aring;ngsrikt med insatser som enbart riktats till f&ouml;r&auml;ldrarna. Ton&aring;ringar m&aring;ste ha en helt egen behandlingskontakt, men familj och kamrater b&ouml;r engageras parallellt. I b&aring;da fallen &auml;r det alla personer i barnets omgivning som m&aring;ste n&aring;s av insatser. Individuella behandlingskontakter &auml;r f&ouml;rdelaktiga i ett initialt skede, men att organisera gruppverksamhet kan vara en f&ouml;rdel. En grupp fungerar ofta st&ouml;djande s&aring; att bra exempel betonas och pekpinnar eller skuldupplevelser undviks eller minimeras.<br><br></p>\n<h3 id=\"Vardkedja\">V&aring;rdkedja</h3>\n<p>Barn med fetma b&ouml;r f&aring; hj&auml;lp med behandling inom v&aring;rden. Det &auml;r oftast vid h&auml;lsounders&ouml;kningar p&aring; BVC eller inom skolh&auml;lsov&aring;rd som fetma identifieras. I f&ouml;rsta hand b&ouml;r dessa barn remitteras till n&auml;rmaste v&aring;rdcentral eller barnmottagning. L&auml;kare och sjuksk&ouml;terska d&auml;r kan med f&ouml;rdel samarbeta i behandlingen. L&auml;kare b&ouml;r ansvara f&ouml;r den basala utredningen (se nedan) och tillsammans med sjuksk&ouml;terska st&aring; f&ouml;r behandlingsinsatser kring kost, fysisk aktivitet och rutiner i hemmet med mera. &Auml;ven om ansvaret f&ouml;r behandlande insatser ligger inom v&aring;rden, kan det vara en f&ouml;rdel att ha ett samarbete med skola eller annan kommunal verksamhet. Barn med komplikationer till fetma, till exempel misst&auml;nkt insulinresistens, b&ouml;r ges prioritet till behandling, liksom barn med h&ouml;g risk f&ouml;r fetma (exempelvis vid fetma i familjen). Den mottagning som sk&ouml;ter behandlingen b&ouml;r genomf&ouml;ra en basal utredning innan behandlingen inleds (se Tabell 1). En utf&ouml;rlig anamnes &auml;r det viktigaste. Blodtryck, pubertetsutveckling och eventuell f&ouml;rekomst av acanthosis nigricans &auml;r viktiga delar i status. Fasteprover av blodsocker och blodfetter &auml;r v&auml;rdefulla att analysera p&aring; skolbarn och <span style=\"color: #ff0000;\">vid fetma visar de</span> ofta n&aring;gon form av avvikelse. Vid f&ouml;rh&ouml;jt fasteinsulin b&ouml;r oralt glukostoleranstest (OGTT) genomf&ouml;ras f&ouml;r att se om nedsatt glukostolerans eller typ 2-diabetes f&ouml;religger. Ett exempel p&aring; hur en v&aring;rdkedja kan byggas upp finns i V&auml;stra G&ouml;taland (se referenser).<br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8bb2fa7c-09e1-4ca6-9052-724b2a0d9faf",
+			"name": "8bb2fa7c-09e1-4ca6-9052-724b2a0d9faf",
+			"type": "tablewide",
+			"content": {
+				"number": "1",
+				"title": "Grundläggande medicinsk utredning av barn/ungdomar med fetma",
+				"id": "",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td width=\"201\">\r\n<p><strong>Anamnes, viktiga delar</strong></p>\r\n</td>\r\n<td width=\"189\">\r\n<p><strong>Antropometri</strong></p>\r\n</td>\r\n<td width=\"189\">\r\n<p><strong>Status, viktiga delar</strong></p>\r\n</td>\r\n<td width=\"142\">\r\n<p><strong>Laboratorieprover</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"201\">\r\n<ul>\r\n<li>&Auml;rftlighet f&ouml;r fetma, diabetes</li>\r\n<li>Graviditet (t.ex. graviditetsdiabetes) och f&ouml;delsevikt och l&auml;ngd</li>\r\n<li>Familj och social situation</li>\r\n<li>Tillv&auml;xtm&ouml;nster</li>\r\n<li>Livsstil: kost, inaktivitet, rutiner och s&ouml;mn/dygnsrytm</li>\r\n<li>Sjukdomar, medicinering, symtom och besv&auml;r, t.ex. mensrubbning</li>\r\n</ul>\r\n</td>\r\n<td width=\"189\">\r\n<ul>\r\n<li>Aktuell l&auml;ngd, vikt och BMI</li>\r\n<li>Pricka in alla tillg&auml;ngliga tillv&auml;xtdata fr&aring;n f&ouml;delsen i tillv&auml;xt-kurvorna</li>\r\n<li>Midjem&aring;tt p&aring; skolbarn: kvoten midja/l&auml;ngd (b&aring;da <br /> i centimeter) identifierar relativt s&auml;kert riskindivider. Om kvoten (oberoende av &aring;lder och k&ouml;n) &auml;r &gt;&nbsp;0,5 betyder det oftast bukfetma</li>\r\n</ul>\r\n</td>\r\n<td width=\"189\">\r\n<ul>\r\n<li>Hud: acanthosis nigricans och striae</li>\r\n<li>Blodtryck</li>\r\n<li>Andningsfunktion (auskultation, PEF)</li>\r\n<li><span style=\"color: #ff0000;\">Pubertetsutveckling</span></li>\r\n<li>Inspektera och bed&ouml;ma p&aring;verkan p&aring; kn&auml;, f&ouml;tter och leder</li>\r\n<li>Inspektera munh&aring;la, svalg och t&auml;nder</li>\r\n</ul>\r\n</td>\r\n<td width=\"142\">\r\n<ul>\r\n<li>Hb, <span style=\"text-decoration: line-through;\">EVF</span> <span style=\"color: #ff0000;\">MCV</span>, LPK (poly, mono), TPK</li>\r\n<li>ALAT</li>\r\n<li>Fasteinsulin och -glukos</li>\r\n<li>Lipidstatus (HDL, LDL, TG)</li>\r\n<li>TSH och T<sub>4</sub></li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "11f8d505-7625-4589-bc63-764825e20bc9",
+			"name": "11f8d505-7625-4589-bc63-764825e20bc9",
+			"type": "text",
+			"content": "<h3 id=\"Satta-upp-behandlingsmal-\">S&auml;tta upp behandlingsm&aring;l<strong> <br></strong></h3>\n<p>Innan m&aring;ls&auml;ttningar diskuteras &auml;r det viktigt att f&aring; en bild av hur det ser ut hemma hos familjen n&auml;r det g&auml;ller kost, m&aring;ltidsordning, fysisk aktivitet och rutiner (\"intervention mapping\"). Utifr&aring;n denna bild &auml;r det bra att enas om vad som &auml;r m&ouml;jligt att f&ouml;r&auml;ndra och hur det ska g&aring; till. Det &auml;r l&auml;mpligt att gemensamt diskutera alla m&aring;l med barn och familj och se vad som verkar m&ouml;jligt att f&ouml;r&auml;ndra. <span style=\"color: #ff0000;\">Det &auml;r bra att s&auml;tta realistiska l&aring;ngsiktiga respektive kortsiktiga m&aring;l f&ouml;r vikt och BMI</span> (se Faktaruta 3 och Faktaruta 4). <span style=\"color: #ff0000;\">Viktigt &auml;r ocks&aring; att ta fram ett specifikt m&aring;l f&ouml;r kost, m&aring;ltidsordning eller fysisk aktivitet,</span> men det &auml;r bra att begr&auml;nsa dessa s&aring; de g&aring;r f&ouml;lja upp (se Faktaruta 5, Faktaruta 6 och Faktaruta 7). Det &auml;r avg&ouml;rande att de m&aring;l man enats om utv&auml;rderas separat samt med uppf&ouml;ljning av hur BMI f&ouml;r&auml;ndrats. Olika personalkategorier kan varva sina insatser men m&aring;ste ha klart f&ouml;r sig vad andra medarbetare arbetat med och kunna f&ouml;lja upp detta. Att &auml;ndra livsstil tar tid <span style=\"text-decoration: line-through;\">och familjerna m&aring;ste f&aring; tid p&aring; sig,</span> varf&ouml;r insatserna inom prim&auml;rv&aring;rden inte b&ouml;r vara kortare &auml;n ett &aring;r. Antalet bes&ouml;k kan vara t&auml;tare initialt och glesas ut efterhand. Om problemen tilltar/kvarst&aring;r efter ett till tv&aring; &aring;r kan remiss ordnas till en mer specialiserad enhet som ofta finns inom regionen.</p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8aa6e71b-0946-4ee3-81ee-9abef54fe345",
+			"name": "8aa6e71b-0946-4ee3-81ee-9abef54fe345",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "Allmänna mål för behandling av barn/ungdomar med fetma ",
+				"text": "<ul>\r\n<li>L&aring;t barn/familj sj&auml;lva i dialog formulera realistiska m&aring;l.</li>\r\n<li>M&aring;l f&ouml;r viktutvecklin<span style=\"color: #000000;\">g (se Faktaruta 4)</span> p&aring; b&aring;de kort och l&aring;ng sikt b&ouml;r s&auml;ttas upp.</li>\r\n<li>Ut&ouml;ver viktm&aring;l kan ett eller tv&aring; m&aring;l vara aktuella t.ex. f&ouml;r kost eller fysisk aktivitet.</li>\r\n<li>F&ouml;r barn f&ouml;re puberteten &auml;r det familjen som ska ta p&aring; sig insatserna, inte bara barnet.</li>\r\n<li>F&ouml;r f&ouml;rskolebarn &auml;r det enbart f&ouml;r&auml;ldrarna man riktar sig till.</li>\r\n<li>Ton&aring;ringar m&aring;ste sj&auml;lva ta ansvar f&ouml;r f&ouml;r&auml;ndringsm&aring;l men familjen m&aring;ste st&ouml;tta.</li>\r\n<li>Det &auml;r avg&ouml;rande att varje m&aring;l f&ouml;ljs upp innan <span style=\"color: #ff0000;\">nya m&aring;l s&auml;tts</span>.</li>\r\n</ul>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7bae5725-d070-4a7f-9f74-886b32a7da30",
+			"name": "7bae5725-d070-4a7f-9f74-886b32a7da30",
+			"type": "facts",
+			"content": {
+				"number": "4",
+				"title": "Mål för vikt och tillväxt vid behandling av barn med fetma",
+				"text": "<p>Anv&auml;nd och utg&aring; fr&aring;n BMI-kurvan men &ouml;vers&auml;tt BMI-f&ouml;r&auml;ndringar i hur l&auml;ngd/vikt f&ouml;r&auml;ndras. Kortsiktiga f&ouml;r&auml;ndringar &auml;r de som g&auml;ller inom 3&minus;6 m&aring;nader, de l&aring;ngsiktiga avser 12 m&aring;nader och mer. M&aring;len kan ha olika styrka:<br /><br /></p>\r\n<ul>\r\n<li>BMI &ouml;kar, men l&aring;ngsammare &auml;n sista halv&aring;ret eller &aring;ret. Se p&aring; l&auml;ngd-, vikt- och BMI-&ouml;kning sista &aring;ret/halv&aring;ret och anv&auml;nd detta f&ouml;r l&auml;ngd-, vikt- och BMI-prognos.</li>\r\n<li>BMI &ouml;kar inte, d.v.s. vikt och l&auml;ngd &ouml;kar i en s&aring;dan takt att BMI &auml;r of&ouml;r&auml;ndrat.</li>\r\n<li>Vikten &ouml;kar inte, d.v.s. BMI kommer att minska hos barn som v&auml;xer.</li>\r\n<li>Vikten minskar, d.v.s. BMI minskar b&aring;de hos v&auml;xande barn och hos dem som vuxit f&auml;rdigt.</li>\r\n</ul>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b22041ea-5ab8-4a63-987f-270cf185769c",
+			"name": "b22041ea-5ab8-4a63-987f-270cf185769c",
+			"type": "facts",
+			"content": {
+				"number": "5",
+				"title": "Mål för kost och måltidsordning vid behandling av barn med fetma",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><strong>Kost<br /><br /></strong><u> </u></p>\r\n<ul>\r\n<li>Undvik alla sorters s&ouml;ta drycker; anv&auml;nd dessa som \"l&ouml;rdagsgodis\"</li>\r\n<li>Anv&auml;nd vatten som m&aring;ltidsdryck</li>\r\n<li>Intag av s&ouml;tsaker begr&auml;nsas, t.ex. enbart som l&ouml;rdagsgodis</li>\r\n<li>\"Gr&ouml;nt\" till alla m&aring;ltider &ndash; vad finns som passar?</li>\r\n<li>L&auml;r ut tallriksmodellen b&aring;de i teori och praktik<br /><br /><br /></li>\r\n</ul>\r\n<p><strong>M&aring;ltidsordning<br /><br /></strong></p>\r\n<ul>\r\n<li>Alltid &auml;ta frukost</li>\r\n<li>Organisera middagsm&aring;let till en gemensam m&aring;ltid</li>\r\n<li>Inga m&aring;ltider framf&ouml;r TV eller dator</li>\r\n<li>Best&auml;mda tider f&ouml;r m&aring;ltider &auml;r viktigt&nbsp;&ndash; inget \"sm&aring;&auml;tande\", inga sena kv&auml;llsm&aring;l</li>\r\n<li>En portion mat &ndash; inga omtag</li>\r\n<li>Begr&auml;nsa &auml;t-hastighet&nbsp;&ndash; inte &auml;ta snabbt (gemensamma m&aring;ltider &auml;r en hj&auml;lp i detta)</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2391f4c1-491a-40a9-be30-376b4f9527c2",
+			"name": "2391f4c1-491a-40a9-be30-376b4f9527c2",
+			"type": "facts",
+			"content": {
+				"number": "6",
+				"title": "Mål för fysisk aktivitet vid behandling av barn med fetma",
+				"text": "<ul>\r\n<li>Minska TV- och sk&auml;rmtid till max 2 timmar av fritiden/dygn f&ouml;r alla i familjen.</li>\r\n<li>Goda s&ouml;mnvanor f&ouml;r alla i familjen. Sikta p&aring; 10&ndash;11 timmars natts&ouml;mn f&ouml;r f&ouml;rskolebarn och 9&ndash;10 timmar f&ouml;r skolbarn.</li>\r\n<li>Vardagsmotionen &auml;r det viktigaste: g&aring; till eller fr&aring;n skolan, skaffa bra skor, regnkl&auml;der, laga cykeln m.m.</li>\r\n<li>Se &ouml;ver m&ouml;jligheterna till f&ouml;r barnet sp&auml;nnande klubbidrott eller dans, simning.</li>\r\n<li>&Ouml;ka hela familjens vardagsmotion, t.ex. g&aring;, cykla, st&auml;da rummet och bada p&aring; helger.</li>\r\n<li>Anv&auml;nd stegr&auml;knare, sikta p&aring; 12&nbsp;000 steg/dag. M&auml;t i perioder.</li>\r\n<li>Sikta p&aring; att n&aring; 60 minuters m&aring;ttlig fysisk aktivitet/dygn <span style=\"text-decoration: line-through;\">f&ouml;r barn</span>. F&ouml;r dagbok i perioder f&ouml;r att m&auml;ta den aktuella niv&aring;n och se &ouml;ver m&ouml;jliga f&ouml;r&auml;ndringar.</li>\r\n</ul>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3548ba33-7754-43ae-beda-6a10080340aa",
+			"name": "3548ba33-7754-43ae-beda-6a10080340aa",
+			"type": "facts",
+			"content": {
+				"number": "7",
+				"title": "Mål för självkontroll vid behandling av barn med fetma",
+				"text": "<p>Det finns bel&auml;gg f&ouml;r att personer som v&auml;ger sig regelbundet har b&auml;ttre resultat vid behandling mot fetma. Sj&auml;lvkontroll p&aring; olika s&auml;tt, om r&auml;tt anv&auml;nd, kan &ouml;ka motivationen:<br /><br /></p>\r\n<ul>\r\n<li>Anv&auml;nd v&aring;g i hemmet f&ouml;r v&auml;gning en g&aring;ng/vecka vid best&auml;md tidpunkt. Skriv ner vikten och ta med till uppf&ouml;ljande m&ouml;ten. Ungdomar b&ouml;r sk&ouml;ta detta sj&auml;lva utan att f&ouml;r&auml;ldrarna medverkar.</li>\r\n<li>F&ouml;r kostdagbok (skriv upp allt som intas) under 4 dygn vid start av varje skoltermin.</li>\r\n<li>F&ouml;r aktivitetsdagbok en vecka i slutet av varje skoltermin. Notera vardagsmotion (skolan etc.) och alla former av organiserad motion (fotboll m.m.)</li>\r\n</ul>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7b20661e-2a06-475f-a022-52c1b1c25454",
+			"name": "7b20661e-2a06-475f-a022-52c1b1c25454",
+			"type": "text",
+			"content": "<h3 id=\"Motivation-\">Motivation<strong><em> <br></em></strong></h3>\n<p>Helt avg&ouml;rande f&ouml;r behandlingsframg&aring;ng &auml;r patientens motivation. Att kartl&auml;gga och arbeta med detta &auml;r en viktig uppgift f&ouml;r alla som deltar i behandlingen. Tekniker som motiverande samtal &auml;r ett bra arbetsinstrument. F&ouml;r de sm&aring; barnen &auml;r det f&ouml;r&auml;ldrarna och personer i omgivningen som samtalet riktas till, men ju &auml;ldre barnet &auml;r desto mer riktas det till barnet sj&auml;lvt f&ouml;r att stimulera barnets egen vilja till f&ouml;r&auml;ndring. Att st&auml;rka barn och ungdomars sj&auml;lvf&ouml;rtroende &auml;r viktigt och &ouml;kar deras motivation. Positiva h&auml;ndelser eller f&ouml;rh&aring;llanden bejakas, framh&aring;lls och ber&ouml;ms i samtalet. Det &auml;r direkt kontraproduktivt att anv&auml;nda f&ouml;rebr&aring;elser eller pekpinnar.<br><br></p>\n<h3 id=\"Kost-\">Kost<strong><em> <br></em></strong></h3>\n<p>En sv&aring;righet i arbetet med behandling &auml;r att familjerna ofta upplever att de vet allt om kost och fysisk aktivitet: \"Vi kan detta redan, vi har h&ouml;rt det f&ouml;rut\". D&auml;rf&ouml;r &auml;r det viktigt att inte ifr&aring;gas&auml;tta kunskaperna i sig utan att med konkreta exempel fr&aring;n vardagslivet belysa hur det ser ut nu och diskutera vad som kan g&ouml;ras annorlunda. Sm&aring; f&ouml;r&auml;ndringar leder med tiden till en gynnsam effekt p&aring; BMI-utvecklingen. Livsmedelsverkets rekommendationer och Nordiska n&auml;ringsrekommendationer &auml;r de b&auml;sta utg&aring;ngspunkterna f&ouml;r r&aring;d r&ouml;rande kostens inneh&aring;ll. S&aring; kallad medelhavsliknande kost &auml;r bra att str&auml;va efter. Att undvika s&ouml;tt i fast eller flytande form &auml;r speciellt viktigt och att i st&auml;llet ha vatten som m&aring;ltidsdryck med max tv&aring; glas mj&ouml;lk om dagen. \"Modedieter\" som LCHF (low carbohydrate, high fat), sten&aring;lderskost med mera saknar evidens f&ouml;r effekt hos barn och b&ouml;r inte rekommenderas. Enligt American Academy of Pediatrics &auml;r m&aring;ltidsordning (portionsstorlek, regelbundna m&aring;ltider p&aring; fasta tider, samvaro under m&aring;ltider etc.) v&auml;l s&aring; viktigt att f&ouml;rb&auml;ttra som att arbeta med kostens inneh&aring;ll.</p>\n<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>Kostr&aring;den f&ouml;r vuxna (se nedan) &auml;r &auml;ven en bra grund f&ouml;r behandling av barn med fetma. Barn med fetma har ofta f&ouml;r&auml;ldrar eller n&auml;ra sl&auml;ktingar med fetma eller &ouml;vervikt. Det &auml;r v&auml;rdefullt att dessa personer arbetar enligt r&aring;den nedan och f&ouml;rs&ouml;ker ta sig an sina viktproblem parallellt med insatserna f&ouml;r barnet.<br><br></p>\n<h3 id=\"Fysisk-aktivitet-\">Fysisk aktivitet<strong> <br></strong></h3>\n<p>Vardaglig fysisk aktivitet &auml;r viktigt, exempelvis att g&aring; till skolan, cykla till kompisar eller till olika aktiviteter. F&ouml;r&auml;ldrarnas st&ouml;d och hj&auml;lp &auml;r avg&ouml;rande f&ouml;r att detta ska bli av. Barn rekommenderas att dagligen <span style=\"color: #000000;\">ha &aring;tminstone en timmes aktivitet av m&aring;ttlig till h&ouml;g intensitet (se Folkh&auml;lsomyndighetens hemsida i referenslista). Skolgymnastik &auml;r s&auml;llan lockande f&ouml;r barn med fetma, ofta f&aring;r de sitta vid sidan av eller g&aring; p&aring; promenad (ofta utan kontroll&nbsp;&minus; kan bli till godisaff&auml;ren!) d&aring; de inte medverkar i ordinarie gymnastik. Kontakta l&auml;rare och f&ouml;rs&ouml;k finna b&auml;ttre s&auml;tt att anpassa lektionerna f&ouml;r barn med fetma. Stillasittande b&ouml;r begr&auml;nsas, vilket &auml;r sv&aring;rt d&aring; sp&auml;nnande saker som datorer, mobiltelefoner, l&auml;splattor med mera leder till mycket stillasittande. Rekommendationen &auml;r att begr&auml;nsa sk&auml;rmtiden till 2 timmar per dag (American Academy of Pediatrics, Pediatrics 2001).</span> Det &auml;r &aring;ter avg&ouml;rande att f&ouml;r&auml;ldrar motiveras och f&aring;r st&ouml;d att arbeta med att begr&auml;nsa stillasittande.</p>\n<p><strong>&nbsp;</strong></p>\n<h3 id=\"Rutiner-i-vardagen\">Rutiner i vardagen</h3>\n<p><strong></strong>Familjens och barnets rutiner kring kost, aktivitet, sk&auml;rmtid och s&ouml;mn &auml;r viktiga att f&ouml;rs&ouml;ka p&aring;verka. Ett klassiskt exempel p&aring; en ond cirkel, d&auml;r rutinerna spelar roll, r&ouml;r en hel kedja av h&auml;ndelser: barnet har alltf&ouml;r l&aring;ng sk&auml;rmtid (exempelvis vid <span style=\"color: #ff0000;\">datorspelande</span>), kommer sent i s&auml;ng, f&aring;r sv&aring;rt att sova, &auml;r mycket tr&ouml;tt p&aring; morgonen, orkar inte &auml;ta frukost, &auml;r urhungrigt vid lunch och &auml;ter d&aring; massor av mat. <span style=\"text-decoration: line-through;\">American Acedemy of Pediatrics betonar att de olika rutinerna i vardagen &auml;r viktiga att t&auml;nka p&aring; vid behandling av barn med fetma.<br><br></span></p>\n<h3 id=\"Kognitiv-beteendeterapi\">Kognitiv beteendeterapi</h3>\n<p>Kognitiv beteendeterapi (KBT) visar goda l&aring;ngtidsresultat vid behandling av barn och ungdomar med fetma. Modeller finns d&auml;r barn och f&ouml;r&auml;ldrar <span style=\"color: #ff0000;\">under en tv&aring;&aring;rsperiod</span> genomg&aring;r behandling i grupp<span style=\"text-decoration: line-through;\"> och begr&auml;nsas till en tv&aring;&aring;rsperiod</span>.<br><br></p>\n<h3 id=\"Socialt-stod\">Socialt st&ouml;d</h3>\n<p>Socialt st&ouml;d beh&ouml;vs inom en undergrupp av barn och ungdomar med fetma d&auml;r sv&aring;ra sociala problem &auml;r det &ouml;verskuggande problemet. Det &auml;r viktigt att arbeta med dessa familjer och s&ouml;ka l&ouml;sningar, bland annat med hj&auml;lp av Socialtj&auml;nsten. Enstaka ungdomar m&aring;ste familjehemsplaceras. Sociala &aring;tg&auml;rder kr&auml;ver arbete i n&auml;tverk och &auml;r kr&auml;vande. Fallbeskrivningar visar att <span style=\"text-decoration: line-through;\">\"behandling\"</span> <span style=\"color: #ff0000;\">behandling</span> med enbart sociala &aring;tg&auml;rder kan ge en kraftig viktminskning f&ouml;r enskilda individer.<br><br></p>\n<h3 id=\"Low-calorie-diet-LCD-\">Low calorie diet (LCD)</h3>\n<p><span style=\"color: #ff0000;\">LCD</span> &auml;r en behandlingsform som inte anv&auml;nds till individer under&nbsp;18 &aring;r.<br><br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "37d27730-bf8e-4127-9370-ef1b739679d0",
+			"name": "37d27730-bf8e-4127-9370-ef1b739679d0",
+			"type": "text",
+			"content": "<h2 id=\"Behandling-av-fetma-hos-vuxna\">Behandling av fetma hos vuxna</h2>\n<p>De flesta vuxna med fetma kan g&aring; ner i vikt under en kort till medell&aring;ng period. Sv&aring;righeten &auml;r att l&aring;ngsiktigt bibeh&aring;lla en reducerad kroppsvikt. L&aring;ngtidsstrategier &auml;r d&auml;rf&ouml;r det centrala. En &ouml;verg&aring;ende viktminskning botar fetma lika lite som en &ouml;verg&aring;ende blodtrycks- eller diabetesbehandling botar hypertoni eller diabetes.<br><br></p>\n<p>Oavsett behandlingsstrategi &auml;r fundamentet i behandlingen en best&aring;ende f&ouml;r&auml;ndring av kosten och den fysiska aktiviteten. Att f&ouml;rs&ouml;ka g&aring; ner i vikt &auml;r ett stort och viktigt steg. Det &auml;r oftast inte realistiskt att p&aring;b&ouml;rja en h&aring;llbar viktminskning samtidigt som patienten genomf&ouml;r andra betydande f&ouml;r&auml;ndringar i livet, exempelvis slutar r&ouml;ka, byter arbete eller genomg&aring;r en skilsm&auml;ssa. Fetmabehandling b&ouml;r planeras l&aring;ngsiktigt och redan fr&aring;n b&ouml;rjan b&ouml;r man fundera p&aring; strategier f&ouml;r att byta behandlingsinriktning vid terapisvikt.<br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "325b6a80-ad1d-4d7e-822f-dae27d7cd57f",
+			"name": "325b6a80-ad1d-4d7e-822f-dae27d7cd57f",
+			"type": "text",
+			"content": "<h3 id=\"Kost\">Kost</h3>\n<p>F&ouml;r&auml;ndrade matvanor &auml;r en h&ouml;rnsten vid viktbehandling.<br><br></p>\n<h4 id=\"Fem-enkla-och-basala-kostrad-som-man-alltid-kan-ge-\">Fem enkla och basala kostr&aring;d som man alltid kan ge:<em><br></em></h4>\n<ul>\n<li>&Auml;t bara en portion vid varje m&aring;ltid</li>\n<li>&Auml;t frukt och gr&ouml;nt varje dag</li>\n<li>Drick vatten eller annan energifattig dryck till mat eller n&auml;r du &auml;r t&ouml;rstig</li>\n<li>&Auml;t tre huvudm&aring;l varje dag</li>\n<li>&Auml;t mindre av s&ouml;tsaker, bakverk och snacks</li>\n</ul>\n<p>Erfarenhetsm&auml;ssigt &auml;r det l&auml;ttare att uppr&auml;tth&aring;lla viktkontroll om m&aring;ltiderna &auml;r j&auml;mt f&ouml;rdelade &ouml;ver dagen med tre huvudm&aring;l och tv&aring; mellanm&aring;l. <span style=\"color: #ff0000;\">De grundl&auml;ggande kraven p&aring; en balanserad och energireducerad kost &auml;r f&ouml;rh&aring;llandevis enkla.<br><br></span></p>\n<h4 id=\"Reduktion-av-fett\">Reduktion av fett</h4>\n<ul>\n<li>Uteslut (inget matfett p&aring; br&ouml;d, sk&auml;r bort fett p&aring; k&ouml;tt, undvik konditori- och charkuterivaror)</li>\n<li>Ers&auml;tt (anv&auml;nd nyckelh&aring;lsm&auml;rkta fettsn&aring;la produkter)</li>\n<li>Introducera (fettsn&aring;la tillagningsmetoder som kokning, grillning, tillagning i folie, teflonpanna eller lergryta)<br><br></li>\n</ul>\n<h4 id=\"Reduktion-av-kolhydrater\">Reduktion av kolhydrater</h4>\n<ul>\n<li>Uteslut (s&ouml;ta drycker, l&auml;skedrycker, godis, konditorivaror, s&ouml;ta desserter)</li>\n<li>Begr&auml;nsa (alkoholkonsumtionen)</li>\n<li>Ers&auml;tt (socker med s&ouml;tningsmedel d&auml;r s&aring; &auml;r m&ouml;jligt, vatten ist&auml;llet f&ouml;r l&auml;skedrycker)<br><br></li>\n</ul>\n<h4 id=\"Tallriksmodellen\"><span style=\"color: #ff0000;\">Tallriksmodellen</span></h4>\n<p>Den s&aring; kallade tallriksmodellen ger goda m&ouml;jligheter till en rimlig f&ouml;rdelning av de olika energigivande komponenterna (fett, kolhydrater och protein) i en m&aring;ltid. Fyll halva tallriken med gr&ouml;nsaker. En fj&auml;rdedel av tallriken viks &aring;t proteiner, det vill s&auml;ga &auml;gg, k&ouml;tt, f&aring;gel eller fisk. Den sista fj&auml;rdedelen fylls med kolhydrater fr&aring;n potatis, ris, pasta, b&ouml;nor eller br&ouml;d.<br><br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "cc0f7147-2b4b-45c4-ab3f-2d967fa7afcf",
+			"name": "cc0f7147-2b4b-45c4-ab3f-2d967fa7afcf",
+			"type": "text",
+			"content": "<h3 id=\"Fysisk-aktivitet\">Fysisk aktivitet</h3>\n<p>Realistiska motionsr&aring;d &auml;r den andra h&ouml;rnstenen vid all behandling av &ouml;vervikt och fetma. En bra tumregel f&ouml;r vuxna &auml;r att tv&aring; till tre g&aring;nger per vecka genomf&ouml;ra en motionsaktivitet som man byter om inf&ouml;r och duschar efter.<br><br></p>\n<p>Kroppen &auml;r energisn&aring;l och d&auml;rf&ouml;r r&auml;cker &ouml;kad fysisk aktivitet s&auml;llan ensamt utan m&aring;ste kombineras med oml&auml;ggning av kosten f&ouml;r att uppn&aring; viktnedg&aring;ng. Oavsett det har &ouml;kad fysisk aktivitet andra positiva h&auml;lsoeffekter som &ouml;kat psykiskt v&auml;lbefinnande, &ouml;kad insulink&auml;nslighet, s&auml;nkt blodtryck, f&ouml;rb&auml;ttrad lipidprofil och &ouml;kad syreupptagningsf&ouml;rm&aring;ga.<br><br></p>\n<h3 id=\"Modedieter\">Modedieter</h3>\n<p>Det finns numera en ganska stor vetenskaplig erfarenhet av kolhydratreducerade dieter som Atkinsdieten och Low Carbohydrate High Fat (LCHF) dieter. Sammanfattningsvis kan s&auml;gas att dessa dieter p&aring; ett halv&aring;rs sikt ger en st&ouml;rre viktminskning &auml;n den g&auml;ngse fettreducerade kosten. Efter ett till tv&aring; &aring;r &auml;r viktminskningen dock helt j&auml;mf&ouml;rbar mellan kolhydratreducerade och fettreducerade koster. Det saknas ocks&aring; kunskaper om den kolhydratreducerade &ndash; men i motsvarande grad fettf&ouml;rst&auml;rkta &ndash; kostens h&auml;lsoeffekter p&aring; l&auml;ngre sikt. F&ouml;ljsamheten till l&aring;gkolhydratkost &auml;r varken b&auml;ttre eller s&auml;mre &auml;n till annan energireducerad kost.<br><br></p>\n<p>N&auml;r det g&auml;ller den uppsj&ouml; av preparat, koster och metoder som annonseras i popul&auml;rpress eller p&aring; internet och som utlovar betydande viktminskning med begr&auml;nsade insatser f&ouml;r den enskilde eller med spektakul&auml;ra, ofta vagt beskrivna verkningsmekanismer, kan man kategoriskt sl&aring; fast att verkar det vara f&ouml;r fantastiskt f&ouml;r att vara sant &auml;r det precis just s&aring; det &auml;r!<br><br></p>\n<h3 id=\"VLCD-och-LCD\">VLCD och LCD</h3>\n<p>VLCD (very low calorie diet) och LCD &auml;r pulverbaserade koster med ett dagligt energiinneh&aring;ll om 400&minus;800 kcal respektive 800&minus;1200 kcal. Dessa &auml;r inte l&auml;kemedel utan livsmedel med l&aring;gt energiinneh&aring;ll som kan anv&auml;ndas som ers&auml;ttning f&ouml;r samtliga eller n&aring;gra av dagens m&aring;ltider. Tre veckors VLCD-behandling kan genomf&ouml;ras av individen sj&auml;lv utan medicinsk &ouml;vervakning.<br><br></p>\n<p>Det finns ett gott vetenskapligt st&ouml;d avseende initial effekt och medicinsk s&auml;kerhet f&ouml;r att anv&auml;nda VLCD/LCD under 12&minus;16 veckor inom ramen f&ouml;r ett genomt&auml;nkt l&aring;ngsiktigt behandlingsprogram. De initiala viktnedg&aring;ngarna under en s&aring;dan VLCD-kur kan uppg&aring; till 20&minus;25 kg. Den stora utmaningen blir att bibeh&aring;lla viktnedg&aring;ngen l&aring;ngsiktigt med hj&auml;lp av f&ouml;r&auml;ndrade kost- och motionsvanor och eventuellt till&auml;gg av l&auml;kemedel. Vissa patienter lyckas helt eller delvis men majoriteten fj&auml;drar tyv&auml;rr tillbaka till ursprungsvikten. I klinisk rutin anv&auml;nds VLCD i Sverige idag nog huvudsakligen som f&ouml;rbehandling inf&ouml;r laparoskopisk obesitaskirurgi. Den snabba viktminskning som uppn&aring;s reducerar det intraabdominella fettet och g&ouml;r de tekniska kirurgiska f&ouml;ruts&auml;ttningarna b&auml;ttre.<br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "76f9abe6-375a-4008-b0db-b57ca88a1080",
+			"name": "76f9abe6-375a-4008-b0db-b57ca88a1080",
+			"type": "text",
+			"content": "<h3 id=\"Lakemedel-mot-fetma\">L&auml;kemedel mot fetma</h3>\n<p>Det finns f&ouml;r n&auml;rvarande tv&aring; godk&auml;nda l&auml;kemedel mot fetma <span style=\"color: #ff0000;\">hos vuxna</span> &minus; orlistat och liraglutid.<span style=\"text-decoration: line-through;\"> I skrivande stund finns</span> <span style=\"color: #ff0000;\">B&aring;da substanserna finns tillg&auml;ngliga f&ouml;r receptf&ouml;rskrivning medan orlistat &auml;ven finns receptfritt i en l&auml;gre styrka</span>. <span style=\"text-decoration: line-through;\">Liraglutid inte kommer att introduceras p&aring; marknaden f&ouml;rr&auml;n under 2016.<br><br></span></p>\n<h4 id=\"Orlistat\">Orlistat</h4>\n<p>Orlistat h&auml;mmar pankreaslipas, vilket reducerar nedbrytningen av diet&auml;rt fett i magtarmkanalen och d&auml;rmed upptaget av fria fettsyror och glycerol med en tredjedel. Fettet passerar d&aring; ist&auml;llet ut med avf&ouml;ringen. Orlistat inducerar s&aring;ledes en selektiv fettmalabsorption, vilket i l&aring;ngtidsstudier inte haft n&aring;gon negativ effekt p&aring; upptaget av fettl&ouml;sliga vitaminer.<br><br></p>\n<p>I kliniska studier har man sett <span style=\"color: #ff0000;\">en m&aring;ttlig men signifikant st&ouml;rre</span> viktnedg&aring;ng om orlistat kombineras med r&aring;d om f&ouml;r&auml;ndrade kost- och motionsvanor j&auml;mf&ouml;rt med kost- och motionsr&aring;d enbart. Den st&ouml;rre viktminskningen med orlistat &ouml;ver ett till fyra &aring;rs behandling ligger i storleksordningen 2&minus;4 kg. I den fyra&aring;riga svenska XENDOS-studien dokumenterades ocks&aring; en signifikant diabetespreventiv effekt av orlistat j&auml;mf&ouml;rt med placebo. Diabetesincidensen i de b&aring;da grupperna var 6,2&nbsp;% <span style=\"color: #ff0000;\">j&auml;mf&ouml;rt med</span> 9,0&nbsp;%, vilket motsvarar en riskreduktion p&aring; drygt 35&nbsp;%. En riskreduktion som huvudsakligen drevs av effekten p&aring; patienter med nedsatt glukostolerans (IGT).<br><br></p>\n<p>Den vanligaste <span style=\"text-decoration: line-through;\">f&ouml;rekommande</span> biverkningen <span style=\"text-decoration: line-through;\">vid behandling med</span> <span style=\"color: #ff0000;\">av</span> orlistat &auml;r <span style=\"text-decoration: line-through;\">gastrointestinal i form av</span> l&ouml;s, frekvent, fettinblandad avf&ouml;ring. Om detta &auml;r att betrakta som en strikt biverkan eller en effekt av att medicinen g&ouml;r det den ska kan diskuteras men hur som helst blir det en tydlig signal f&ouml;r patienten om han/hon &auml;tit n&aring;got extra fettrikt i st&ouml;rre m&auml;ngd. N&aring;gra allvarliga orlistatrelaterade biverkningar tycks inte finnas.<br><br></p>\n<p>Orlistat doseras <span style=\"text-decoration: line-through;\">som 1&nbsp;kapsel</span> <span style=\"color: #ff0000;\">120 mg</span> 3&nbsp;g&aring;nger dagligen i samband med m&aring;ltid. Medlet anv&auml;nds endast hos vuxna och indikation f&ouml;r behandling f&ouml;religger vid BMI&nbsp;&gt;&nbsp;30 kg/m<sup>2</sup> eller vid BMI&nbsp;&gt;&nbsp;28 kg/m<sup>2</sup> om samtidiga riskfaktorer/komorbiditet finns. Behandlingen b&ouml;r omv&auml;rderas aktivt och preparatet s&auml;ttas ut om patienten efter 12 veckor inte uppn&aring;tt &aring;tminstone 5&nbsp;% reduktion av vikten vid behandlingsstart. I dosen 60 mg 3&nbsp;g&aring;nger dagligen finns orlistat att tillg&aring; receptfritt.<br><br></p>\n<h4 id=\"Liraglutid\">Liraglutid</h4>\n<p><span style=\"color: #ff0000;\">Liraglutid (ursprungligen ett diabetesl&auml;kemedel) &auml;r en GLP-1-analog</span> (glucagon-like peptid-1). GLP-1 &auml;r en fysiologisk reglerare av aptit och f&ouml;dointag <span style=\"color: #ff0000;\">men den</span> exakta verkningsmekanismen &auml;r inte k&auml;nd. I kliniska ett&aring;riga studier har liraglutid kombinerat med minskat kaloriintag och &ouml;kad fysisk aktivitet haft signifikant st&ouml;rre effekt p&aring; kroppsvikten &auml;n livsstilsf&ouml;r&auml;ndring enbart. Uppn&aring;dda viktminskningar var i storleksordningen 6&minus;8 kg <span style=\"color: #ff0000;\">j&auml;mf&ouml;rt med</span> 1&minus;2 kg. Flera av de studerade populationerna hade diabetes eller prediabetes.<span style=\"text-decoration: line-through;\"> &ndash; liraglutid &auml;r ursprungligen ett diabetesl&auml;kemedel &ndash; och effekten p&aring; glykemiska variabler var signifikant b&auml;ttre hos patienter som fick liraglutid j&auml;mf&ouml;rt med placebogruppen</span>.<br><br></p>\n<p>De vanligaste <span style=\"text-decoration: line-through;\">f&ouml;rekommande </span>biverkningarna <span style=\"text-decoration: line-through;\">vid behandling</span> &auml;r gastrointestinala: illam&aring;ende, kr&auml;kningar, diarr&eacute; eller f&ouml;rstoppning. <span style=\"text-decoration: line-through;\">Biverkningar som</span> Oftast &auml;r <span style=\"color: #ff0000;\">de</span> initiala och &ouml;verg&aring;ende. En potentiellt allvarligare, om &auml;n mindre vanlig, biverkan &auml;r &ouml;kning av hj&auml;rtfrekvensen. Det &auml;r viktigt att informera patienten om detta och att f&ouml;lja pulsen regelbundet. Patienter som f&aring;r en ih&aring;llande och kliniskt relevant pulsstegring ska avbryta behandlingen med liraglutid.<br><br></p>\n<p>Liraglutid injiceras subkutant i dosen 0,6&minus;3,0&nbsp;mg en g&aring;ng dagligen. Upptrappning av den dagliga dosen b&ouml;r inte ske snabbare &auml;n 0,6&nbsp;mg per vecka f&ouml;r att f&ouml;rb&auml;ttra den gastrointestinala toleransen.<br><br></p>\n<p>Liraglutid i kombination med minskat energiintag och &ouml;kad fysisk aktivitet &auml;r indicerad hos vuxna med BMI <span style=\"color: #ff0000;\">&ge;&nbsp;</span>30 kg/m<sup>2</sup> eller BMI <span style=\"color: #ff0000;\">&ge;&nbsp;</span>27&nbsp;kg/m<sup>2</sup> med samtidiga riskfaktorer/komorbiditet. Behandlingen b&ouml;r aktivt omv&auml;rderas och preparatet s&auml;ttas ut om patienten efter 12 veckor inte uppn&aring;tt &aring;tminstone 5&nbsp;% reduktion av vikten vid behandlingsstart.<br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a31fdeef-6a7d-4a83-93d2-a22d00f00773",
+			"name": "a31fdeef-6a7d-4a83-93d2-a22d00f00773",
+			"type": "text",
+			"content": "<h2 id=\"Fetmakirurgi\">Fetmakirurgi</h2>\n<h3 id=\"Verkningsmekanismer-vid-fetmakirurgi\">Verkningsmekanismer vid fetmakirurgi</h3>\n<p>Under flera decennier har verkningsmekanismen f&ouml;r gastrisk bypass tillskrivits en kombination av \"restriktivitet\" (of&ouml;rm&aring;ga att kunna &auml;ta stora m&auml;ngder) och \"malabsorption\" (minskat n&auml;ringsupptag fr&aring;n tarmen). Studier av gastrisk bypass visar dock snarare att mag-tarmkanalens kommunikation med hj&auml;rnan i den s&aring; kallade mag-hj&auml;rn-axeln &auml;ndras. Neurala och hormonella signalv&auml;gar som p&aring;verkar regleringen av kaloriintag och kroppsvikt f&ouml;r&auml;ndras vilket m&ouml;jligg&ouml;r etablerandet av en ny och l&auml;gre viktniv&aring;.<br><br></p>\n<p>Normalt &auml;ter opererade <span style=\"text-decoration: line-through;\">l&aring;ngsammare, n&aring;got mindre portioner och n&aring;got oftare</span><span style=\"color: #ff0000;\"> personer l&aring;ngsammare men n&aring;got oftare och tar oftare n&aring;got mindre portioner</span>. Kostens energit&auml;thet sjunker d&aring; preferensen &ouml;kar f&ouml;r frukt, gr&ouml;nsaker och k&ouml;tt i st&auml;llet f&ouml;r energit&auml;ta, feta och s&ouml;ta livsmedel. Den senare effekten ses &auml;ven i djurmodeller och mekanismen &auml;r f&ouml;r n&auml;rvarande oklar.<br><br></p>\n<p>Omkoppling av mag-tarmkanalen kan ocks&aring; leda till f&ouml;r&auml;ndringar av energimetabolismen (kroppens kalorif&ouml;rbr&auml;nning). Studier antyder att dessa f&ouml;r&auml;ndringar kan vara beroende av f&ouml;r&auml;ndringar i gallsaltsoms&auml;ttningen och/eller bakteriefloran i mag-tarmkanalen.<br><br></p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7f5db2ec-340f-42fb-aa64-8bb244fa0dc0",
+			"name": "7f5db2ec-340f-42fb-aa64-8bb244fa0dc0",
+			"type": "text",
+			"content": "<h3 id=\"Vad-kan-uppnas-med-kirurgi-betraffande-vikt-och-halsa-\">Vad kan uppn&aring;s med kirurgi betr&auml;ffande vikt och h&auml;lsa?</h3>\n<p>Den genomsnittliga viktnedg&aring;ngen efter fetmakirurgi med standardmetoden gastrisk bypass &auml;r runt 30&nbsp;% av kroppsvikten, och l&aring;ngtidsstudier visar att huvuddelen av detta f&ouml;r flertalet &auml;r best&aring;ende &ouml;ver decennier.<br><br></p>\n<p>Operationen leder ocks&aring; till minskad f&ouml;rekomst av riskfaktorer f&ouml;r hj&auml;rt-k&auml;rlsjukdom, minskat behandlingsbehov f&ouml;r sekund&auml;r sjuklighet (till exempel diabetes&nbsp;typ&nbsp;2, hyperlipidemi, hypertoni, f&ouml;rslitningssjukdomar och cancer).<br><br></p>\n<p>En betydande reduktion i mortalitet &auml;r p&aring;visad f&ouml;r gruppen som genomg&aring;r fetmakirurgi i j&auml;mf&ouml;relse med kontroller, vilket framf&ouml;r allt kan tillskrivas den minskade risken att drabbas av stroke, hj&auml;rtinfarkt och cancer.<br><br></p>\n<p>Den fysiska livskvaliteten och fetmarelaterade problem f&ouml;rb&auml;ttras stabilt efter kirurgi och f&ouml;rb&auml;ttringarna f&ouml;refaller best&aring;ende. Vad g&auml;ller den mentala h&auml;lsan &auml;r bilden lite mer komplex d&auml;r <span style=\"color: #ff0000;\">st&auml;mningsl&auml;ge och symtom som &aring;ngest</span> <span style=\"text-decoration: line-through;\">och st&auml;mningsl&auml;ge</span> inte l&aring;ngsiktigt skiljer sig gentemot kontrollgruppen.<br><br></p>\n<p>Det b&ouml;r vid st&auml;llningstagande till fetmakirurgi po&auml;ngteras att m&aring;ls&auml;ttningen prim&auml;rt &auml;r att uppn&aring; f&ouml;rb&auml;ttringar i h&auml;lsa, funktion och livskvalitet och inte <span style=\"text-decoration: line-through;\">f&ouml;r det eventuella</span> <span style=\"color: #ff0000;\">prim&auml;rt &auml;r</span> kosmetiska.<strong> <br></strong></p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "17443d31-cca3-4d39-b4a3-0c5c626ef526",
+			"name": "17443d31-cca3-4d39-b4a3-0c5c626ef526",
+			"type": "text",
+			"content": "<h3 id=\"Indikationer-for-fetmakirurgi\">Indikationer<span style=\"color: #ff0000;\"> f&ouml;r fetmakirurgi</span></h3>\n<p>Normalt &auml;r det patienter med ett BMI&nbsp;&gt;&nbsp;40&nbsp;kg/m<sup>2</sup>, alternativt om det f&ouml;religger s&auml;rskild fetmaassocierad sjuklighet ett BMI&nbsp;&gt;&nbsp;35&nbsp;kg/m<sup>2</sup> som accepteras f&ouml;r fetmakirurgi i Sverige. En nationell utredning har fastslagit att patienter med ett BMI&nbsp;&gt;&nbsp;35&nbsp;kg/m<sup>2</sup> normalt uppfyller indikation f&ouml;r kirurgi eftersom det oftast f&ouml;religger n&aring;gon fetmaassocierad fysisk eller psykisk riskfaktor.<br><br></p>\n<p>F&ouml;r n&auml;rvarande &auml;r det individer &ouml;ver 18&nbsp;&aring;r som accepteras f&ouml;r fetmakirurgi. Det finns egentligen ingen tydlig &ouml;vre &aring;ldersgr&auml;ns, men det &auml;r mycket ovanligt att personer &ouml;ver 70&nbsp;&aring;r opereras. Mellan 60 och 70&nbsp;&aring;r b&ouml;r nyttan noga v&auml;rderas i relation till riskerna.<br><br></p>\n<p>F&ouml;rekommande psykiatrisk sjukdom ska vara <span style=\"text-decoration: line-through;\">stabilt</span> <span style=\"color: #ff0000;\">stabil</span> och optimalt behandlad. P&aring;g&aring;ende missbruk av alkohol, tabletter eller andra droger &auml;r en klar kontraindikation. &Aring;tminstone ett &aring;rs dokumenterad drogfrihet &auml;r n&ouml;dv&auml;ndig f&ouml;r att &ouml;verv&auml;ga kirurgi.</p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "22f1e3e6-adfc-4ca5-9213-92b3acaa8da6",
+			"name": "22f1e3e6-adfc-4ca5-9213-92b3acaa8da6",
+			"type": "text",
+			"content": "<h3 id=\"Operationstekniker-Vilka-tekniker-\"><span style=\"color: #ff0000;\">Operationstekniker</span> <span style=\"text-decoration: line-through;\">Vilka tekniker?</span></h3>\n<p>Under 1980 och 90-talet dominerades den svenska obesitaskirurgin av \"restriktiva\" tekniker, eller s&aring; kallade banding-tekniker. M&aring;nga banding-opererade blir i l&auml;ngden omopererade, d&auml;rf&ouml;r har dessa operationer under senare &aring;r n&auml;stan helt fasats ut.<br><br></p>\n<p><em>Gastrisk bypass</em> (till v&auml;nster i Figur 2) betraktas av de flesta som standardtekniken i skandinavisk fetmakirurgi p&aring; grund av l&aring;ngsiktigt &ouml;verl&auml;gsna resultat f&ouml;r viktnedg&aring;ng i kombination med ett mycket tillfredsst&auml;llande &auml;tm&ouml;nster. I fr&aring;nvaro av evidensbaserade instrument f&ouml;r patientselektion har d&auml;rf&ouml;r resultatet blivit en dominerande anv&auml;ndning av gastrisk bypass.<br><br></p>\n<p><em>Gastrisk sleeve</em> (mittenbilden i Figur 2) har under senare &aring;r introducerats som ett eget <span style=\"text-decoration: line-through;\">sj&auml;lvst&auml;ndigt</span> ingrepp mot fetma. Vid denna operation tas huvuddelen av mags&auml;cken bort och slutresultatet blir en smal r&ouml;rformad mags&auml;ck. De kortsiktiga resultaten &auml;r goda, medan l&aring;ngtidsutfallet f&ouml;r vikten &auml;r oklart.<br><br></p>\n<p><em>Biliopankreatisk divergering (BPD)/duodenal switch</em> (till h&ouml;ger i Figur 2) har som verkningsmekanism &auml;ven en minskning av kaloriupptaget, vilket ofta &auml;r associerat med betydande risk f&ouml;r bristtillst&aring;nd och diarr&eacute;er. Operationen anv&auml;nds f&ouml;r patienter med \"super-obesitas\", det vill s&auml;ga BMI&nbsp;&gt;&nbsp;55&minus;60&nbsp;kg/m<sup>2</sup>. Operationen kan utf&ouml;ras i tv&aring; steg med gastrisk sleeve som f&ouml;rsta steg.</p>\n<p></p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "49437340-ead4-4827-914e-33d953aa4391",
+			"name": "49437340-ead4-4827-914e-33d953aa4391",
+			"type": "figure",
+			"content": {
+				"number": "2",
+				"maxwidth": "",
+				"image": "/images/c2_nyritad_figur_3_inklusive_sleeve_gastrektomi_hl.png",
+				"title": "Operationsmetoder",
+				"text": "<p>Bilden till v&auml;nster illustrerar en <em>gastric bypass. </em>Mittenbilden visar en <em>gastrisk sleeve</em> och bilden till h&ouml;ger en <em>biliopankreatisk divergering (BPD) med duodenal switch</em>.</p>",
+				"alt": "",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0abf1210-1354-4be9-85df-20af987dc27b",
+			"name": "0abf1210-1354-4be9-85df-20af987dc27b",
+			"type": "text",
+			"content": "<h3 id=\"Titthalskirurgi\">Titth&aring;lskirurgi</h3>\n<p>S&aring; gott som all fetmakirurgi g&ouml;rs f&ouml;r n&auml;rvarande med titth&aring;lskirurgi. F&ouml;rdelarna med de s&aring; kallade laparoskopiska teknikerna &auml;r snabbare &aring;terh&auml;mtning, tidigare &aring;terg&aring;ng i normal aktivitet och mindre risk f&ouml;r s&aring;rkomplikationer och &auml;rrbr&aring;ck. V&aring;rdtiden &auml;r f&ouml;r n&auml;rvarande 1&minus;2 dagar efter operationen.<br><br></p>\n<h3 id=\"Normaluppfoljning-av-fetmaopererade\">Normaluppf&ouml;ljning av fetmaopererade</h3>\n<p>Att f&ouml;lja upp det stora antal patienter som numera opereras f&ouml;r fetma &auml;r en utmaning f&ouml;r sjukv&aring;rden,<span style=\"color: #ff0000;\"> trots att de i stor utstr&auml;ckning &auml;ven <span style=\"text-decoration: line-through;\">annars</span> utan operation skulle vara patienter i h&auml;lso- och sjukv&aring;rden</span> beroende p&aring; fetmarelaterade f&ouml;ljdsjukdomar.<br><br></p>\n<p>Ett dagligt tillskott av en multivitamin- och mineraltablett samt i till&auml;gg vitamin B<sub>12</sub> som tablett eller injektion och kalk-/D-vitamin-substitution rekommenderas, och dessutom j&auml;rn till menstruerande kvinnor.<br><br></p>\n<p>Under det f&ouml;rsta &aring;ret efter operationen ska patienterna f&ouml;ljas upp f&ouml;r att identifiera operationskomplikationer och st&ouml;ttas i att etablera ett bra &auml;tm&ouml;nster. D&auml;refter &auml;r i princip ett &aring;rligt bes&ouml;k f&ouml;r v&auml;gning, beteendemotiverande kontakt och f&ouml;rskrivning av tillskottspreparat (se ovan) tillr&auml;ckligt som bas.<br><br></p>\n<p>Varje sjukv&aring;rdsregion b&ouml;r ha ett kompetenscentrum dit prim&auml;rv&aring;rden kan v&auml;nda sig f&ouml;r omh&auml;ndertagande av komplikationer (kirurgiska, nutritionella och psykologiska) utanf&ouml;r det vanliga.<br><br></p>\n<p><span style=\"color: #ff0000;\">F&ouml;rslag p&aring; m&auml;tningar och laboratorieprover vid &aring;rliga kontroller efter kirurgisk behandling av fetma finns i Faktaruta 8.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "17678813-4cb7-477a-86e3-fe32d98f3efb",
+			"name": "17678813-4cb7-477a-86e3-fe32d98f3efb",
+			"type": "facts",
+			"content": {
+				"number": "8",
+				"title": "Förslag på mätningar och laboratorieprover vid årliga kontroller efter kirurgisk behandling av fetma",
+				"text": "<ul>\r\n<li>L&auml;ngd, vikt</li>\r\n<li>Hb</li>\r\n<li>Vitamin B<sub>12</sub>, folsyra, homocystein</li>\r\n<li>Na, K, Ca-korr, Alb, (ev. Mg, Zn), kreatinin</li>\r\n<li>25-OH Vitamin D, PTH</li>\r\n<li>Fe, ferritin, transferrin, transferrinm&auml;ttnad</li>\r\n<li>ALAT, gamma-GT</li>\r\n<li>f-glukos, ev. HbA1c</li>\r\n<li>f-lipidstatus</li>\r\n</ul>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ec6cb2c6-0ed1-4a20-99d3-816e85341d36",
+			"name": "ec6cb2c6-0ed1-4a20-99d3-816e85341d36",
+			"type": "text",
+			"content": "<h3 id=\"Komplikationer-till-fetmakirurgi-\">Komplikationer till fetmakirurgi<strong> <br></strong></h3>\n<p>Som vid all typ av kirurgi finns det risk f&ouml;r komplikationer. Cirka 7&nbsp;% av patienterna f&aring;r n&aring;gon form av komplikation under de f&ouml;rsta 30 postoperativa dagarna. Cirka 3&nbsp;% f&aring;r en komplikation som &auml;r s&aring; allvarlig att den leder till reoperation eller IVA-v&aring;rd, d&auml;r bl&ouml;dning och l&auml;ckage dominerar.<span style=\"color: #ff0000;\"> Mortaliteten var 0,04&nbsp;% f&ouml;r de drygt 36&nbsp;000 operationer som utf&ouml;rdes i Sverige under perioden 2007&minus;2013.<br><br></span></p>\n<p>Opererade beh&ouml;ver ta tillskott av vitaminer och mineraler under resten av livet. Andelen med bristtillst&aring;nd &auml;r helt beroende p&aring; uppf&ouml;ljning och i vilken m&aring;n patienterna f&aring;tt n&ouml;dv&auml;ndiga tillskott</p>\n<p><br>Personer med fetma har h&ouml;g bent&auml;thet men den minskar med viktnedg&aring;ngen efter operationen. Det beh&ouml;ver studeras om denna minskning &ouml;ver l&auml;ngre tid leder till &ouml;kad risk f&ouml;r frakturer.<br><br></p>\n<p>En f&ouml;rv&auml;ntad bieffekt &auml;r att huvuddelen av dem som genomg&aring;tt fetmakirurgi upplever besv&auml;r av &ouml;verskottshud, vanligast p&aring; buken. Detta kan &auml;ven ge medicinska besv&auml;r som skav, svamp och eksem och kr&auml;va plastikkirurgisk korrektion.<br><br></p>\n<p>Tidigare har risken varit minst 10&nbsp;% att utveckla s&aring; kallat inre br&aring;ck (tarmvred) efter gastrisk bypass vilket kr&auml;ver operativ &aring;tg&auml;rd (Figur). F&ouml;r att f&ouml;rebygga denna risk f&ouml;rsluts f&ouml;r n&auml;rvarande oftast de luckor som uppst&aring;r p&aring; grund av <span style=\"text-decoration: line-through;\">konstruktionen</span> <span style=\"color: #ff0000;\">rekonstruktionen</span> vilka tunntarmen kan fastna i.<br><br></p>\n<p>Gallsten &auml;r &ouml;verrepresenterat och mags&aring;r/magkatarr kan uppst&aring;. Kroniska buksm&auml;rtor f&ouml;rekommer med eller utan f&ouml;reg&aring;ende komplikation. <span style=\"color: #ff0000;\">Prim&auml;rv&aring;rden och a</span>kutsjukhus ska ha kunskap om tillst&aring;nd som kan uppkomma efter gastrisk bypass f&ouml;r att kunna hantera dem korrekt. S&auml;rskilda enheter b&ouml;r konsulteras i de mest komplexa fallen.<br><br></p>\n<p>Risken f&ouml;r viktuppg&aring;ng &auml;r mindre <span style=\"text-decoration: line-through;\">vanligt</span> efter gastrisk bypass &auml;n vid tidigare anv&auml;nda bandingmetoder. &Auml;nd&aring; har 5&minus;10&nbsp;% av gastrisk bypass-opererade en p&aring;taglig viktuppg&aring;ng l&aring;ngsiktigt. Bristande livsstilsoml&auml;ggning men &auml;ven fysiologiskt otillr&auml;cklig respons b&ouml;r beaktas.<br><br>Framf&ouml;r allt hos gastrisk bypass-opererade finns en risk att utveckla alkoholproblem, <span style=\"text-decoration: line-through;\">sannolikt</span> <span style=\"color: #ff0000;\">m&ouml;jligen</span> beroende p&aring; snabbare upptag och minskad nedbrytning. Det finns ocks&aring; en &ouml;kad suicidrisk hos fetmaopererade. Etiologin &auml;r oklar men beh&ouml;ver studeras vidare.<br><br></p>\n<p>Blodsockerfall &auml;r inte ovanligt hos patienter som opererats med gastrisk bypass och k&auml;nsligheten f&ouml;r det varierar. Standardbehandlingen &auml;r kostintervention, men i enstaka sv&aring;ra fall kan b&aring;de l&auml;kemedel och kirurgisk behandling beh&ouml;vas.<br><br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "39f508d1-4b07-4156-bd1a-5148c49f81c8",
+			"name": "39f508d1-4b07-4156-bd1a-5148c49f81c8",
+			"type": "text",
+			"content": "<h3 id=\"Avslutning\">Avslutning</h3>\n<p>F&ouml;rebyggande insatser p&aring; samh&auml;llsniv&aring; och individuellt &auml;r i slut&auml;nden avg&ouml;rande f&ouml;r att begr&auml;nsa och till sist eliminera \"fetmaepidemin\". Sammanst&auml;llningar visar att s&aring;dana insatser fungerar i viss m&aring;n, men det beh&ouml;vs v&auml;sentligt mycket mer utvecklingsarbete och satsningar p&aring; detta omr&aring;de. Olika verksamheter inom v&aring;rden bidrar och g&ouml;r mycket nytta i det behandlande arbetet mot fetma. Tillg&aring;ngen p&aring; v&aring;rd och insatser f&ouml;r barn och vuxna med fetma &auml;r f&ouml;r n&auml;rvarande mycket begr&auml;nsad trots att det r&ouml;r sig om en folksjukdom med <span style=\"text-decoration: line-through;\">m&aring;nga</span> allvarliga konsekvenser. Det &auml;r viktigt att st&ouml;tta och motivera dem som lider av fetma att uppn&aring; en h&auml;lsosam livsstil. Sm&aring; f&ouml;r&auml;ndringar &auml;r betydelsefulla p&aring; sikt och det &auml;r viktigt att s&aring; l&aring;ngt som m&ouml;jligt jobba med att aktivera personernas egna resurser. Alla kontakter och insatser m&aring;ste syfta till att st&auml;rka sj&auml;lvf&ouml;rtroendet och b&ouml;r ske p&aring; ett icke-stigmatiserande s&auml;tt och utan att skuldbel&auml;gga de ber&ouml;rda.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4659f4c1-9f9e-43a0-8cfe-3ffe07b9dee2",
+			"name": "b1f33364-7133-44cc-af41-6d26c8d188f1",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2>\n<ol class=\"references\"><li id=\"reference_1\">\n<div>Lobstein T, Jackson-Leach R, Moodie ML, et.al. Child and adolescent obesity: part of a bigger picture. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/25703114\">Lancet. 2015;385:2510&minus;20</a>.</div>\n</li>\n<li id=\"reference_2\">\n<div>Neovius M, Rasmussen F. Alarmerande siffror f&ouml;r &ouml;vervikt och fetma i Sverige och V&auml;rlden. <br><a href=\"http://www.lakartidningen.se/OldWebArticlePdf/1/17424/LKT1149s2566_2568.pdf\">L&auml;kartidningen. 2011;108:2566&minus;8</a>.</div>\n</li>\n<li id=\"reference_3\">\n<div>Wijnhoven TM, van Raaij JM, Spinelli A, et al. WHO European Childhood Obesity Surveillance Initiative 2008: weight, height and body mass index in 6-9-year-old children. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23001989\">Pediatr Obes. 2013;8:79&minus;97</a>.</div>\n</li>\n<li id=\"reference_4\">\n<div>Ng M, Fleming T, Robinson M, et al. Global, regional, and national prevalence of ovwerweight and obesity in children and adults during 1980-2013: a systematic analysis for the Global Burden of Disease Study 2013. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/24880830\">Lancet. 2014;384:766&minus;81</a>.</div>\n</li>\n<li id=\"reference_5\">\n<div>Locke AE, Kahali B, Berndt SI, et al. Genetic studies of body mass index yield new insights for obesity biology. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/25673413\">Nature. 2015;518:197&minus;206</a>.</div>\n</li>\n<li id=\"reference_6\">\n<div>WHO. Population-based prevention strategies for childhood obesity: report of a WHO forum and technical meeting, Geneva, 15&ndash;17 December 2009. ISBN 978 92 4 159934 4. <br><a href=\"http://www.who.int/dietphysicalactivity/childhood/child-obesity-eng.pdf\">www.who.int</a>.&nbsp;<strong> </strong></div>\n</li>\n<li id=\"reference_7\">\n<div>Bleich SN, Segal J, Wu Y, et al. Systematic review of community-based childhood obesity prevention studies. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23753099\">Pediatrics. 2013;132:e201&minus;10</a>.<span> </span></div>\n</li>\n<li id=\"reference_8\">\n<div>De Henauw S, Verbestel V, Marild S, et al. The IDEFICS community-oriented intervention programme: a new model for childhood obesity prevention in Europe? <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/21483418\">Int J Obes. 2011;35:S16&minus;23</a>.</div>\n</li>\n<li id=\"reference_9\">\n<div>Waters E, de Silva-Sanigorski A, Hall BJ, et al. Interventions for preventing obesity in children. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22161367\"><span>Cochrane Database Syst Rev</span>. 2011:CD001871</a>.</div>\n</li>\n<li id=\"reference_10\">\n<div>Marild S, Gronowitz E, Forsell C, et al. A controlled study of lifestyle treatment in primary care for children with obesity. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23172847\">Pediatr Obes. 2013;8:207&minus;17</a>.</div>\n</li>\n<li id=\"reference_11\">\n<div>Beslutst&ouml;d f&ouml;r handlingsprogram mot &ouml;vervikt och fetma inom V&auml;stra G&ouml;talandsregionen. 2015-09-10.</div>\n<div><a href=\"http://www.vgregion.se/Vastra-Gotalandsregionen/startsida/Vard-och-halsa/Forvardgivare/Beslutstod-for-handlingsprogram-mot-overvikt-och-fetma1/\">www.vgregion.se</a></div>\n</li>\n<li id=\"reference_12\">\n<div>Livsmedelsverket. <br><a href=\"http://www.livsmedelsverket.se/matvanor-halsa--miljo/kostrad-och-matvanor/barn-och-ungdomar/\">http://www.livsmedelsverket.se/matvanor-halsa--miljo/kostrad-och-matvanor/barn-och-ungdomar/</a></div>\n</li>\n<li id=\"reference_13\">\n<div>Folkh&auml;lsomyndigheten. <br><span><a href=\"http://www.folkhalsomyndigheten.se/far/rekommendationer/\">http://www.folkhalsomyndigheten.se/far/rekommendationer/</a></span></div>\n</li>\n<li id=\"reference_14\">\n<div>Torgerson JS, Hauptman J, Boldrin MN, et al. XENical in the prevention of diabetes in obese subjects (<span class=\"highlight\">XENDOS</span>) study: a randomized study of orlistat as an adjunct to lifestyle changes for the prevention of type 2 diabetes in obese patients. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/14693982\">Diabetes Care. 2004;27:155&ndash;161</a>.</div>\n</li>\n<li id=\"reference_15\">\n<div>Pi-Sunyer X, Astrup A, Fujioka K, et al. A randomized, controlled trial of 3.0 mg liraglutide in weight management. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/26132939\">N Engl J Med. 2015;373:11&ndash;22</a>.</div>\n</li>\n<li id=\"reference_16\">\n<div>Miras AD, le Roux CW. Mechanisms underlying weight loss after bariatric surgery. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23835488\">Nat Rev Gastroenterol Hepatol. 2013;10:575&minus;84</a>.</div>\n</li>\n<li id=\"reference_17\">\n<div>SOREG - Scandinavian obesity surgery registry. <br><a href=\"http://www.ucr.uu.se/soreg/index.php/arsrapporter\">http://www.ucr.uu.se/soreg/index.php/arsrapporter</a></div>\n</li>\n<li id=\"reference_18\">\n<div href=\"http://www.ncbi.nlm.nih.gov/pubmed/23529939\">Sj&ouml;str&ouml;m L. Review of the key results from the Swedish Obese Subjects (SOS) trial - a prospective controlled intervention study of bariatric surgery. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23163728\">J Intern Med. 2013;273:219&ndash;34</a>.</div>\n</li>\n<li id=\"reference_19\">\n<div>Mechanick JI, Youdim A, Jones DB, et al. Clinical practice guidelines for the perioperative nutritional, metabolic, and nonsurgical support of the bariatric surgery patient--2013 update: cosponsored by American Association of Clinical Endocrinologists, the Obesity Society, and American Society for Metabolic &amp; Bariatric Surgery.</div>\n<div><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23529351\"><span>Endocr Pract.</span> 2013;19:337&ndash;72</a>.</div>\n</li>\n</ol>\n<div></div>\n<div><strong>F&ouml;r vidare l&auml;sning<br></strong></div>\n<ol style=\"list-style-type: lower-alpha;\">\n<li>\n<div>R&ouml;ssner S, Torgerson J. Fetma. I Dahlstr&ouml;m U, Kechagias S, Stenke L (eds). <em>Med.</em> Liber. Stockholm, 2011.</div>\n</li>\n<li>\n<div>Larsson I, R&ouml;ssner S. Fetma i prim&auml;rv&aring;rden. Studentlitteratur. Lund, 2015.</div>\n</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/-nya-kapitel-ej-publ/fetma.json",
+	"indexed": "true",
+	"modified": "2016-12-13 13:37"
+}

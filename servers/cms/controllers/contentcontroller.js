@@ -816,6 +816,7 @@ var ContentController = {
 				element.indexOf(".json") > -1 &&
 				element.indexOf(".snapshot") === -1 &&
 				element.indexOf(".published") === -1 &&
+				element.indexOf(".data") === -1 &&
 				element.indexOf("components/") === -1 &&
 				element.indexOf(".data") === -1 &&
 				fs.statSync(ContentController.baseDir + "/" + element).isFile()
@@ -930,7 +931,12 @@ var ContentController = {
 			if (page.isPublished) {
 
 				//Now read the last published version of this page
-				var versions = historyModel.getPublished(page.path);
+				var versions;
+				try {
+						versions = historyModel.getPublished(page.path);
+				} catch (e) {
+					continue;
+				}
 
 				if (versions.length > 0) {
 
