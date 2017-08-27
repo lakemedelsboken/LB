@@ -4,7 +4,10 @@
 #Old
 #cat ../servers/admin/static/css/bootstrap.css ../servers/admin/static/css/bootstrap-responsive.css ../servers/admin/static/css/jquery-ui-1.10.0.custom.css ../servers/admin/static/css/font-awesome.css ../servers/admin/static/css/anchor.css ../servers/admin/static/css/jquery.ui.1.10.0.ie.css ../servers/admin/static/css/lb.css ../servers/admin/static/css/print.css > styles.css
 
-cat ../servers/cms/output/static/css/uncompressed/bootstrap.css ../servers/cms/output/static/css/uncompressed/bootstrap-responsive.css ../servers/cms/output/static/css/uncompressed/jquery-ui-1.10.0.custom.css ../servers/cms/output/static/css/uncompressed/font-awesome.css ../servers/cms/output/static/css/uncompressed/anchor.css ../servers/cms/output/static/css/uncompressed/jquery.ui.1.10.0.ie.css ../servers/cms/output/static/css/uncompressed/lb.css ../servers/cms/output/static/css/uncompressed/print.css > cms_styles.css
+
+# ../servers/cms/output/static/css/uncompressed/print.css
+
+cat ../servers/cms/output/static/css/uncompressed/bootstrap.css ../servers/cms/output/static/css/uncompressed/bootstrap-responsive.css ../servers/cms/output/static/css/uncompressed/jquery-ui-1.10.0.custom.css ../servers/cms/output/static/css/uncompressed/font-awesome.css ../servers/cms/output/static/css/uncompressed/anchor.css ../servers/cms/output/static/css/uncompressed/jquery.ui.1.10.0.ie.css ../servers/cms/output/static/css/uncompressed/lb.css > cms_styles.css
 
 cat ../servers/cms/output/static/css/app/uncompressed/bootstrap-app.css ../servers/cms/output/static/css/app/uncompressed/bootstrap-app-responsive.css ../servers/cms/output/static/css/uncompressed/font-awesome.css ../servers/cms/output/static/css/app/uncompressed/lb.css > app_styles.css
 #cleancss --s0 -o ../servers/admin/static/css/styles.min.css styles.css
