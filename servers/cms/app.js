@@ -34,7 +34,7 @@ if (!fs.existsSync(secretSettingsPath)) {
 	var conf_time = fs.statSync(secretSettingsPath).mtime.getTime();
 	var cast5_time = fs.statSync(secretSettingsPath + ".cast5").mtime.getTime();
 
-	console.log((conf_time < cast5_time));
+	//console.log((conf_time < cast5_time));
 
 	if (conf_time < cast5_time) {
 		console.error("Your config file is out of date!");
