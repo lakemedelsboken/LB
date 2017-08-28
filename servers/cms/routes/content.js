@@ -1253,6 +1253,9 @@ router.get("/findoutgoinglinks", function(req, res) {
 			//TODO: Better approach when removing components
 			//Remove side container
 			$("#sideContainer").remove();
+			
+			//Remove PDF link
+			$("#download-pdf").remove();
 
 			$("a[href]").each(function() {
 				var $item = $(this);
