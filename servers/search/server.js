@@ -21,7 +21,7 @@ if (!fs.existsSync(secretSettingsPath)) {
 (function() {
 	var conf_time = fs.statSync(secretSettingsPath).mtime.getTime();
 	var cast5_time = fs.statSync(secretSettingsPath + ".cast5").mtime.getTime();
- 
+
 	if (conf_time < cast5_time) {
 		console.error("Your config file is out of date!");
 		console.error("You need to run `make decrypt_conf` to update it.");
@@ -63,10 +63,10 @@ initFileWatchers();
 function initFileWatchers() {
 
 	var reloadSearchIndex = false;
-	
+
 	var atcTreePath = path.normalize(__dirname + "/../../npl/atcTree.json");
 //	var searchesPath = path.normalize(__dirname + "/../../search/");
-	
+
 	var atcTreeWatcher = chokidar.watch(atcTreePath, {persistent: true, ignoreInitial: true, interval: 20000, binaryInterval: 20000});
 
 	atcTreeWatcher.on('error', function(error) {console.error('Error happened on atc file watch', error);})
@@ -90,9 +90,9 @@ function initFileWatchers() {
 	if (fs.existsSync(siteDir) && fs.statSync(siteDir).isDirectory()) {
 
 		console.log("Watching " + siteDir + " for changes...");
-		
+
 		var indexWatcher = chokidar.watch(siteDir, {ignored: /[\/\\]\./, ignoreInitial: true});
-		
+
 		indexWatcher.on("all", function(event, path) {
 			//Something has changed
 			if (path.indexOf(".index") > -1) {
@@ -138,18 +138,18 @@ app.get('/search', function(req,res){
 	if (typeof terms === "string") {
 		terms = terms.trim()
 	}
-	
+
 	if (terms === undefined) {
 		terms = "";
 	}
 
 	locals.terms = terms;
-	
+
 	if (terms === "") {
 		locals.err = false;
 		locals.results = {titlesearch: [], medicinesearch: [], contentsearch: []};
 		res.render('search.ejs', locals);
-		
+
 	} else {
 
 		async.parallel({
@@ -195,7 +195,7 @@ app.get('/search', function(req,res){
 				res.render('search.ejs', locals);
 			}
 		});
-		
+
 	}
 
 });
@@ -215,7 +215,7 @@ function controlSearchChecksums(searchDir, checksum) {
 		//console.error("Checking if \"" + oldCheckSum + "\" == \"" + checksum + "\"");
 		checksumsMatch = (oldCheckSum === checksum);
 	}
-	
+
 	if (!checksumsMatch) {
 		var files = fs.readdirSync(searchDir);
 		for (var i=0; i < files.length; i++) {
@@ -236,7 +236,7 @@ function controlSearchChecksums(searchDir, checksum) {
 
 	//Set current search index checksum for searches
 	fs.writeFileSync(searchChecksumPath, checksum, "utf8");
-	
+
 }
 
 var isInitializingSearchIndex = false;
@@ -260,14 +260,14 @@ function initSearchIndex() {
 	if (workerFarm === null) {
 		workerFarm = require("worker-farm");
 	}
-	
+
 	searchIndex = [];
 	searchIndices = [];
 
 	//Iterate and add all search indexes
 	var publishedDirPath = path.join(__dirname, "..", "cms", "output", "published");
 	var indexFiles = wrench.readdirSyncRecursive(publishedDirPath);
-	
+
 	indexFiles = indexFiles.filter(function(element) {
 		return (element.indexOf(".index") > -1);
 	});
@@ -301,13 +301,13 @@ function initSearchIndex() {
 	boxSearchers = workerFarm({maxConcurrentWorkers: 20}, require.resolve("./workers/boxsearcher"));
 	medicineSearchers = workerFarm({maxConcurrentWorkers: 16}, require.resolve("./workers/medicinesearcher"));
 
-	//Clear prepopulated searches if checksums do not match 
+	//Clear prepopulated searches if checksums do not match
 	controlSearchChecksums(path.normalize(__dirname + "/../../search/titlesearches/"), indexChecksum);
 	controlSearchChecksums(path.normalize(__dirname + "/../../search/contentsearches/"), indexChecksum);
 	controlSearchChecksums(path.normalize(__dirname + "/../../search/boxsearches/"), indexChecksum);
 	controlSearchChecksums(path.normalize(__dirname + "/../../search/medicinesearches/"), medicineIndexChecksum);
 
-/*	
+/*
 	populateFinishedSearches(path.normalize(__dirname + "/../../search/titlesearches/"));
 	populateFinishedSearches(path.normalize(__dirname + "/../../search/contentsearches/"));
 	populateFinishedSearches(path.normalize(__dirname + "/../../search/boxsearches/"));
@@ -328,7 +328,7 @@ function populateFinishedSearches(searchDir) {
 }
 */
 function getResultsThatMatchAllTerms(searchResults) {
-	
+
 	var numberOfSearchResults = Object.keys(searchResults).length;
 
 	//Check which array is the shortest one
@@ -342,7 +342,7 @@ function getResultsThatMatchAllTerms(searchResults) {
 			}
 		}
 	}
-	
+
 	//Create objects for the other arrays with id as key
 	var compareToSearchResults = [];
 	for (var key in searchResults) {
@@ -377,7 +377,7 @@ function getResultsThatMatchAllTerms(searchResults) {
 
 	var resultsWithScores = [];
 	var results = [];
-	
+
 	//Only keep the ones that match all terms
 	for (var id in crossMatches) {
 		if (crossMatches.hasOwnProperty(id) && (crossMatches[id].count >= numberOfSearchResults)) {
@@ -393,17 +393,17 @@ function getResultsThatMatchAllTerms(searchResults) {
 	//Return only the items
 	for (var i = 0; i < resultsWithScores.length; i++) {
 		results.push(resultsWithScores[i].item);
-	}	
-	
+	}
+
 	return results;
 }
 
 function getSearchContents(fileName, limit, searchTerms, highlightedKeys, debug, callback) {
-	
+
 	var results = [];
-	
+
 	//console.log("Cache length: " + searchCache.keys().length);
-	
+
 	if (searchCache.has(fileName)) {
 
 		//console.log("Fetch from cache");
@@ -424,7 +424,7 @@ function getSearchContents(fileName, limit, searchTerms, highlightedKeys, debug,
 		}
 
 		callback(null, results);
-		
+
 	} else {
 		fs.readFile(fileName, function(err, data) {
 			if (err) {
@@ -433,7 +433,7 @@ function getSearchContents(fileName, limit, searchTerms, highlightedKeys, debug,
 			} else {
 				zlib.unzip(data, function(err, buffer) {
 					if (err) {
-					
+
 					} else {
 						var errorParsingJSON = false;
 						try {
@@ -445,7 +445,7 @@ function getSearchContents(fileName, limit, searchTerms, highlightedKeys, debug,
 						if (errorParsingJSON) {
 							callback(errorParsingJSON, []);
 							fs.unlink(fileName, function(err) {});
-						
+
 						} else {
 
 							if (!searchCache.has(fileName)) {
@@ -469,7 +469,7 @@ function getSearchContents(fileName, limit, searchTerms, highlightedKeys, debug,
 			}
 		});
 	}
-	
+
 }
 
 app.get('/medicinesearch', function(req,res){
@@ -499,7 +499,7 @@ app.get('/medicinesearch', function(req,res){
 	replaceCommonCharacters = false;
 
 	var results = [];
-	
+
 	//Find already finished search for the same terms
 	var safeTerms = getSafeSearchTerms(searchTerms);
 	var possibleMedicineSearchFileName = path.normalize(__dirname + "/../../search/medicinesearches/" + safeTerms + ".json.gz");
@@ -518,7 +518,7 @@ app.get('/medicinesearch', function(req,res){
 		} else {
 
 			searchTerms = parseSearchTerms(searchTerms, !limit, replaceCommonCharacters);
-		
+
 			if (searchIndex === null) {
 				initSearchIndex();
 			}
@@ -536,11 +536,11 @@ app.get('/medicinesearch', function(req,res){
 
 				var allSearchResults = [];
 				var count = 0;
-			
+
 				//Distribute search to 16 search workers
 				var nrOfMedicineSearchWorkers = 16;
 				if (debug) {console.time("Search");}
-				
+
 				for (var i = 0; i < nrOfMedicineSearchWorkers; i++) {
 					//if (debug) {console.time("Worker" + i)};
 					medicineSearchers({index: i, term: term}, function(err, data) {
@@ -553,7 +553,7 @@ app.get('/medicinesearch', function(req,res){
 						count++;
 
 						//if (debug) {console.timeEnd("Worker" + (allSearchResults.length - 1))};
-						
+
 						if (count === nrOfMedicineSearchWorkers) {
 
 							if (debug) {console.timeEnd("Search");}
@@ -565,7 +565,7 @@ app.get('/medicinesearch', function(req,res){
 
 							searchResults[0] = merged;
 							if (debug) {console.timeEnd("Merge");}
-						
+
 							if (debug) {console.time("FilterAndSave");}
 							results = filterAndSaveSearchResults(searchTerms, searchResults, possibleMedicineSearchFileName);
 							if (debug) {console.timeEnd("FilterAndSave");}
@@ -573,7 +573,7 @@ app.get('/medicinesearch', function(req,res){
 							if (limit && results.length > resultsLimit) {
 								results.length = resultsLimit;
 							}
-						
+
 							if (limit) {
 								if (debug) {console.time("HighLight");}
 								results = highlightSearchTerms(results, searchTerms, ["title", "titlePath"])
@@ -585,8 +585,8 @@ app.get('/medicinesearch', function(req,res){
 						}
 					});
 				}
-			
-			
+
+
 			} else if (searchTerms.length > 1){
 				//Multiple words, perform searches in parallel
 
@@ -638,7 +638,7 @@ app.get('/medicinesearch', function(req,res){
 					if (term.length > 32) {
 						term = term.substr(0, 32);
 					}
-				
+
 					//Add item to the queue
 					searchQueue.push({index: i, term: term}, function (err, index, result) {
 						//Callback when a request has finished
@@ -686,7 +686,7 @@ app.get('/titlesearch', function(req,res){
 	replaceCommonCharacters = false;
 
 	var results = [];
-	
+
 	//Find already finished search for the same terms
 	var safeTerms = getSafeSearchTerms(searchTerms);
 	var possibleSearchFileName = path.normalize(__dirname + "/../../search/titlesearches/" + safeTerms + ".json.gz");
@@ -705,7 +705,7 @@ app.get('/titlesearch', function(req,res){
 				}
 			});
 		} else {
-			
+
 			if (searchIndex === null) {
 				initSearchIndex();
 			}
@@ -724,7 +724,7 @@ app.get('/titlesearch', function(req,res){
 
 				var allSearchResults = [];
 				var count = 0;
-			
+
 				//Distribute search to search workers
 				for (var i = 0; i < searchIndices.length; i++) {
 					titleSearchers({index: searchIndices[i], term: term}, function(err, data) {
@@ -734,7 +734,7 @@ app.get('/titlesearch', function(req,res){
 							//Done searching, continue
 							var merged = [];
 							merged = merged.concat.apply(merged, allSearchResults);
-						
+
 							searchResults[0] = merged;
 
 							results = filterAndSaveSearchResults(searchTerms, searchResults, possibleSearchFileName);
@@ -742,7 +742,7 @@ app.get('/titlesearch', function(req,res){
 							if (limit && results.length > resultsLimit) {
 								results.length = resultsLimit;
 							}
-							
+
 							if (limit) {
 								results = highlightSearchTerms(results, searchTerms, ["title", "titlePath"]);
 							}
@@ -752,7 +752,7 @@ app.get('/titlesearch', function(req,res){
 						}
 					});
 				}
-			
+
 			} else if (searchTerms.length > 1){
 				//Multiple words, perform searches in parallel
 
@@ -785,7 +785,7 @@ app.get('/titlesearch', function(req,res){
 					if (limit && results.length > resultsLimit) {
 						results.length = resultsLimit;
 					}
-					
+
 					if (limit) {
 						results = highlightSearchTerms(results, searchTerms, ["title", "titlePath"]);
 					}
@@ -801,7 +801,7 @@ app.get('/titlesearch', function(req,res){
 					if (term.length > 32) {
 						term = term.substr(0, 32);
 					}
-				
+
 					//Add item to the queue
 					titleQueue.push({index: i, term: term}, function (err, index, result) {
 						//Callback when a request has finished
@@ -820,7 +820,7 @@ app.get('/titlesearch', function(req,res){
 			}
 
 		}
-			
+
 	});
 
 
@@ -831,10 +831,10 @@ function escapeRegExp(str) {
 }
 
 function highlightSearchTerms(results, searchTerms, keysToHighlight) {
-	
+
 	//Create a copy with no references
 	results = JSON.parse(JSON.stringify(results));
-	
+
 	var maxContentLength = 200;
 
 	var keysLookup = {};
@@ -844,10 +844,10 @@ function highlightSearchTerms(results, searchTerms, keysToHighlight) {
 	}
 
 	//console.log(keysLookup);
-		
+
 	for (var i = 0; i < results.length; i++) {
 		var item = results[i];
-		
+
 		for (var key in item) {
 
 			if (keysLookup.hasOwnProperty(key)) {
@@ -857,56 +857,56 @@ function highlightSearchTerms(results, searchTerms, keysToHighlight) {
 				if (key === "content" && text.length > maxContentLength) {
 
 					var blurbs = [];
-					
+
 					var charsLeft = 90;
 					var charsRight = 90;
 
 					for (var j = 0; j < searchTerms.length; j++) {
 						var term = searchTerms[j];
-						
+
 						var index = text.toLowerCase().indexOf(term);
-						
+
 						if (index > -1) {
 							var start = ((index - charsLeft) < 0) ? 0 : (index - charsLeft);
 							var nrOfChars = term.length + charsRight + charsLeft;
-							
+
 							if ((start + nrOfChars) > text.length) {
 								nrOfChars = text.length - start;
 							}
-							
+
 							if (start <= 100) {
 								nrOfChars += start;
 								start = 0;
 							}
-							
+
 							var blurb = text.substr(start, nrOfChars);
-							
+
 							if (start > 0) {
 								blurb = "..." + blurb;
 							}
-							
+
 							if ((start + nrOfChars) < text.length) {
 								blurb += "...";
 							}
-							
+
 							blurbs.push(blurb);
-							
+
 							text = text.substr(start + nrOfChars);
 						}
 					}
-					
+
 					if (blurbs.length > 0) {
 						text = blurbs.join(" ");
 					} else if (text.length > maxContentLength) {
 						text = text.substr(0, maxContentLength) + "...";
 					}
-					
+
 				}
-			
+
 				for (var j = 0; j < searchTerms.length; j++) {
 					var term = searchTerms[j];
 					text = text.replace(new RegExp(escapeRegExp(term) + "(?!<)", "gi"), function(match) {
-						
+
 						//Add weird chars
 						return "♘" + match + "♖"
 					});
@@ -914,20 +914,20 @@ function highlightSearchTerms(results, searchTerms, keysToHighlight) {
 
 				//Replace weird chars
 				text = text.replace(/♘/g, "<span class=\"highlight\">").replace(/♖/g, "</span>");
-				
+
 				key = key + "_HL";
-				
+
 				item[key] = text;
 
 			}
 
 		}
-		
+
 		if (item["content"] !== undefined) {
 			item.content = "";
 		}
 	}
-	
+
 	return results;
 }
 
@@ -955,8 +955,8 @@ app.get('/contentsearch', function(req,res){
 	replaceCommonCharacters = false;
 
 	var results = [];
-	
-	
+
+
 	//Find already finished search for the same terms
 	var safeTerms = getSafeSearchTerms(searchTerms);
 	var possibleSearchFileName = path.normalize(__dirname + "/../../search/contentsearches/" + safeTerms + ".json.gz");
@@ -976,7 +976,7 @@ app.get('/contentsearch', function(req,res){
 		} else {
 
 			searchTerms = parseSearchTerms(searchTerms, !limit, replaceCommonCharacters);
-		
+
 			if (searchIndex === null) {
 				initSearchIndex();
 			}
@@ -994,7 +994,7 @@ app.get('/contentsearch', function(req,res){
 
 				var allSearchResults = [];
 				var count = 0;
-			
+
 				//Distribute search to search workers
 				for (var i = 0; i < searchIndices.length; i++) {
 					contentSearchers({index: searchIndices[i], term: term}, function(err, data) {
@@ -1004,7 +1004,7 @@ app.get('/contentsearch', function(req,res){
 							//Done searching, continue
 							var merged = [];
 							merged = merged.concat.apply(merged, allSearchResults);
-						
+
 							searchResults[0] = merged;
 
 							results = filterAndSaveSearchResults(searchTerms, searchResults, possibleSearchFileName);
@@ -1012,7 +1012,7 @@ app.get('/contentsearch', function(req,res){
 							if (limit && results.length > resultsLimit) {
 								results.length = resultsLimit;
 							}
-						
+
 							if (limit) {
 								results = highlightSearchTerms(results, searchTerms, ["content", "title", "titlePath"]);
 							}
@@ -1048,7 +1048,7 @@ app.get('/contentsearch', function(req,res){
 				//When all the searches have finished
 				contentQueue.drain = function() {
 					//Finished with async search
-								
+
 					results = filterAndSaveSearchResults(searchTerms, searchResults, possibleSearchFileName);
 
 					if (limit && results.length > resultsLimit) {
@@ -1070,7 +1070,7 @@ app.get('/contentsearch', function(req,res){
 					if (term.length > 32) {
 						term = term.substr(0, 32);
 					}
-				
+
 					//Add item to the queue
 					contentQueue.push({index: i, term: term}, function (err, index, result) {
 						//Callback when a request has finished
@@ -1114,7 +1114,7 @@ app.get('/boxsearch', function(req,res){
 	}
 
 	var results = [];
-	
+
 	//Find already finished search for the same terms
 	var safeTerms = getSafeSearchTerms(searchTerms);
 	var possibleSearchFileName = path.normalize(__dirname + "/../../search/boxsearches/" + safeTerms + ".json.gz");
@@ -1133,7 +1133,7 @@ app.get('/boxsearch', function(req,res){
 		} else {
 
 			searchTerms = parseSearchTerms(searchTerms, !limit, replaceCommonCharacters);
-		
+
 			if (searchIndex === null) {
 				initSearchIndex();
 			}
@@ -1152,7 +1152,7 @@ app.get('/boxsearch', function(req,res){
 
 				var allSearchResults = [];
 				var count = 0;
-			
+
 				//Distribute search to search workers
 				for (var i = 0; i < searchIndices.length; i++) {
 					boxSearchers({index: searchIndices[i], term: term}, function(err, data) {
@@ -1162,7 +1162,7 @@ app.get('/boxsearch', function(req,res){
 							//Done searching, continue
 							var merged = [];
 							merged = merged.concat.apply(merged, allSearchResults);
-						
+
 							searchResults[0] = merged;
 
 							results = filterAndSaveSearchResults(searchTerms, searchResults, possibleSearchFileName);
@@ -1170,7 +1170,7 @@ app.get('/boxsearch', function(req,res){
 							if (limit && results.length > resultsLimit) {
 								results.length = resultsLimit;
 							}
-							
+
 							if (limit) {
 								results = highlightSearchTerms(results, searchTerms, ["title", "titlePath", "content"]);
 							}
@@ -1180,7 +1180,7 @@ app.get('/boxsearch', function(req,res){
 						}
 					});
 				}
-			
+
 			} else if (searchTerms.length > 1){
 				//Multiple words, perform searches in parallel
 
@@ -1212,7 +1212,7 @@ app.get('/boxsearch', function(req,res){
 					if (limit && results.length > resultsLimit) {
 						results.length = resultsLimit;
 					}
-					
+
 					if (limit) {
 						results = highlightSearchTerms(results, searchTerms, ["title", "titlePath", "content"]);
 					}
@@ -1228,7 +1228,7 @@ app.get('/boxsearch', function(req,res){
 					if (term.length > 32) {
 						term = term.substr(0, 32);
 					}
-				
+
 					//Add item to the queue
 					therapyQueue.push({index: i, term: term}, function (err, index, result) {
 						//Callback when a request has finished
@@ -1257,7 +1257,7 @@ function filterAndSaveSearchResults(searchTerms, searchResults, fileName) {
 	if (searchTerms.length > 1) {
 		results = getResultsThatMatchAllTerms(searchResults);
 
-		
+
 		//If none matched, return the results for the term with the most results
 		//TODO: Improve this
 		/*
@@ -1270,7 +1270,7 @@ function filterAndSaveSearchResults(searchTerms, searchResults, fileName) {
 			sortedByLength.sort(function(a, b) {
 				return b.length - a.length;
 			});
-			
+
 			results = sortedByLength[0];
 		}
 		*/
@@ -1280,15 +1280,15 @@ function filterAndSaveSearchResults(searchTerms, searchResults, fileName) {
 
 	//Remove duplicates
 	results = removeDuplicates(results);
-	
+
 	//If this is a medicine search
 	if (results.length > 0 && (results[0].type === "atc" || results[0].type === "product")) {
 		//Sort according to score and lowest position in atc system
 		results.sort(function(a, b) {
-			
+
 			var aScore = a.score;
 			var bScore = b.score;
-			
+
 			var aLevel = a.id.length;
 			if (a.type === "product") {
 				aLevel = a.parentId.length + 1;
@@ -1296,7 +1296,7 @@ function filterAndSaveSearchResults(searchTerms, searchResults, fileName) {
 					aScore += 1;
 				}
 			}
-			
+
 			var bLevel = b.id.length;
 			if (b.type === "product") {
 				bLevel = b.parentId.length + 1;
@@ -1310,9 +1310,9 @@ function filterAndSaveSearchResults(searchTerms, searchResults, fileName) {
 			} else {
 			    return (aScore < bScore) ? -1 : 1;
 			}
-			
+
 		});
-		
+
 	} else if (results.length > 0 && results[0].content !== undefined) {
 
 		//Sort according to score and level
@@ -1334,7 +1334,7 @@ function filterAndSaveSearchResults(searchTerms, searchResults, fileName) {
 		    }
 		});
 
-		
+
 	}
 
 	//Put in cache
@@ -1371,14 +1371,14 @@ function filterAndSaveSearchResults(searchTerms, searchResults, fileName) {
 function removeDuplicates(items) {
 	var usedIds = {};
 	var results = [];
-	
+
 	for (var i = 0; i < items.length; i++) {
 		if (usedIds[items[i].id] === undefined) {
 			results.push(items[i]);
 			usedIds[items[i].id] = true;
 		}
 	}
-	
+
 	return results;
 }
 
@@ -1391,11 +1391,11 @@ function parseSearchTerms(terms, skipSplit, replaceCommonCharacters) {
 	if (skipSplit === undefined) {
 		skipSplit = false;
 	}
-	
+
 	if (util.isArray(terms)) {
 		terms = terms.join(" ");
 	}
-	
+
 	var result = [];
 	var groups = [];
 
@@ -1411,7 +1411,7 @@ function parseSearchTerms(terms, skipSplit, replaceCommonCharacters) {
 				groupLocations.push(i);
 			}
 		}
-		
+
 		//Clear strays
 		if (groupLocations.length === 1 || (groupLocations.length % 2) !== 0) {
 			terms = terms.split("");
@@ -1419,7 +1419,7 @@ function parseSearchTerms(terms, skipSplit, replaceCommonCharacters) {
 			groupLocations.pop();
 			terms = terms.join("");
 		}
-		
+
 		//console.log("Cleared strays: " + terms);
 		//console.log("Group locations: ", groupLocations);
 
@@ -1434,7 +1434,7 @@ function parseSearchTerms(terms, skipSplit, replaceCommonCharacters) {
 				terms = terms.split("");
 				terms.splice(start, stop - start + 1);
 				terms = terms.join("");
-				
+
 				//console.log("Singled out: " + term);
 				//console.log("Removed from terms: " + terms);
 			}
@@ -1447,11 +1447,11 @@ function parseSearchTerms(terms, skipSplit, replaceCommonCharacters) {
 	} else {
 		result = [terms];
 	}
-	
+
 	if (groups.length > 0) {
 		result = result.concat(groups);
 	}
-	
+
 	//Clear empty terms
 	for (var i = result.length - 1; i >= 0; i--) {
 		if (result[i].trim() === "") {
@@ -1461,7 +1461,7 @@ function parseSearchTerms(terms, skipSplit, replaceCommonCharacters) {
 
 	if (replaceCommonCharacters) {
 		var newTerms = [];
-	
+
 		var commonReplacements = {
 			"c": "k",
 			"k": "c",
@@ -1479,15 +1479,15 @@ function parseSearchTerms(terms, skipSplit, replaceCommonCharacters) {
 				}
 			}
 		}
-	
+
 		if (newTerms.length > 0) {
 			result = result.concat(newTerms);
 		}
-		
+
 	}
-	
+
 	//console.log("Finished terms: ", result);
-	
+
 	return result;
 }
 
@@ -1496,5 +1496,5 @@ app.get('/*', function(req, res){
 
 	res.status(400);
 	res.end("404");
-	
+
 });
