@@ -629,10 +629,11 @@
 	}
 
 	div.facts h4.facts {
-		margin-top: -15px;
+		margin-top: 0px;
 		padding-top: 0;
 		font-size: 12px;
 	}
+	
 	div.facts h4.numberHeader {
 		font-size: 10px;
 		transform: rotate(45deg);
