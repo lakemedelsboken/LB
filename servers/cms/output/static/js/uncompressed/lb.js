@@ -142,8 +142,10 @@ ga = function() {};
 
 			if (updatedElements.length > 0) {
 				$("#settings").show();
+				$("#download-pdf").css("top", "63px");
 			} else {
 				$("#settings").hide();
+				$("#download-pdf").css("top", "35px");
 			}
 
 			//Read cookie for this setting
