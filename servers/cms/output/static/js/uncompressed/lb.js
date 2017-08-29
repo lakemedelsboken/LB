@@ -3254,4 +3254,9 @@ function doHighlight(bodyText, searchTerm, highlightStartTag, highlightEndTag)
 			highlightSearchTerms(id);}
 			else
 					$('#mainContainer').html(arr[0]);
+
+//make "Tillbaka" button works like back button in browser
+		$("#ui-id-2[href='../../']").click(function(){
+			$("#ui-id-2").attr('href','javascript: history.back()');
+		});
 })(window);
