@@ -58,16 +58,16 @@ router.get('/*', function(req, res) {
 				output.page = data;
 				output.page.content = output.page.content.map(function(content) {
 					content.title = '';
+					var $ = cheerio.load(content.content);
 					if (content.type === 'text') {
-						var $ = cheerio.load(content.content);
-						content.title = $('h2').text();
+						content.title = $('h2').first().text();
 
 						if (content.title == '') {
-							content.title = $('h3').text();
+							content.title = $('h3').first().text();
 						}
 
 						if (content.title == '') {
-							content.title = $('h4').text();
+							content.title = $('h4').first().text();
 						}
 
 					}
@@ -77,7 +77,7 @@ router.get('/*', function(req, res) {
 					}
 
 					if (content.type === 'facts') {
-						content.title = content.content.title;
+						content.title = $("<div />").html(content.content.title).text();
 					}
 
 					if (content.title != '') {

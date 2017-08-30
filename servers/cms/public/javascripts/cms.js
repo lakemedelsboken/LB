@@ -740,7 +740,7 @@ $(document).ready(function() {
 
 			$("#draftFrame").prop("src", url);
 			$("#draftLink").prop("href", url);
-			$("#draftPdfLink").prop("href", "/cms/content/pdf/download?url=" + encodeURIComponent(url));
+			$("#draftPdfLink").prop("href", "/pdf/download?url=" + encodeURIComponent(url));
 			$("#draftWordLink").prop("href", "/cms/content/docx/download?url=" + encodeURIComponent(url));
 
 		});

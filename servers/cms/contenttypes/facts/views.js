@@ -46,7 +46,7 @@ var Views = {
 
 
 		if (item.content.id !== "" && item.content.id !== "undefined" && item.content.id !== undefined) {
-			output = output.replace(new RegExp("{id}", "g"), " id=\"" + item.content.id + "\"");
+			output = output.replace(new RegExp("{id}", "g"), "<span id=\"" + item.content.id + "\"></span>");
 		} else {
 			output = output.replace(new RegExp("{id}", "g"), "");
 		}

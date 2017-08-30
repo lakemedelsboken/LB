@@ -1,16 +1,119 @@
 @media print {
 
+	@page{
+		size: A4;
+		margin: 2cm;
+		counter-reset: footnote;
+		@footnotes {
+			border-top: solid 1px #cecece;
+			padding-top: 8pt
+		}
+	}
+	
+	@page:left {
+
+	    @top-left {
+			content: string(chapter-title); 
+			font-family: Arial;
+			font-size: 10px;
+			vertical-align: top;
+			margin-top: 17px;
+		}
+
+		@top-left-corner {
+			content: counter(page) " ";
+			white-space: pre; 
+			font-family: Arial;
+			font-size: 20px;
+			font-weight: bold;
+			vertical-align: top;
+			margin-top: 15px;
+		}
+
+	    @bottom-left {
+			content: "Läkemedelsverket\aLäkemedelsboken";  
+			white-space: pre; 
+			font-family: Arial;
+			font-size: 10px;
+			vertical-align: top;
+			margin-top: 17px;
+		}
+
+/*	    margin-left: 2cm;
+	    margin-right: 3cm;*/
+	}
+	@page:right {
+	    @top-right { 
+			content: string(chapter-title); 
+			font-family: Arial;
+			font-size: 10px;
+			vertical-align: top;
+			margin-top: 17px;
+		}
+
+		@top-right-corner {
+			content: " " counter(page);
+			white-space: pre; 
+			font-family: Arial;
+			font-size: 20px;
+			font-weight: bold;
+			vertical-align: top;
+			margin-top: 15px;
+		}
+
+	    @bottom-right { 
+			content: "Läkemedelsverket\aLäkemedelsboken";  
+			white-space: pre; 
+			font-family: Arial;
+			font-size: 10px;
+			vertical-align: top;
+			margin-top: 17px;
+		}
+
+
+/*	    margin-left: 3cm;
+	    margin-right: 2cm;*/
+	}
+
+	h1 { string-set: chapter-title content() }
+
 	* {
 		letter-spacing: normal;
-		line-height:200%;
+		line-height: 150%;
+	}
 
+	div {
+		/*overflow: initial !important;*/
 	}
 
 	body {
 		padding: 0;
 		margin: 0;
 		background-color: #fff;
-		font-size: 12pt;
+		font-size: 9pt;
+		font-family: serif;
+		/*font-family: "Times New Roman", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", Georgia, serif;*/
+		
+
+ 		text-rendering: optimizelegibility;
+	}
+
+	a {
+		color: #000;
+	}
+
+	#main {
+		columns: 2;
+		column-gap: 40px;
+		column-fill: auto;
+		-webkit-columns: 2;
+		-webkit-column-gap: 40px;
+		-webkit-column-fill: auto;
+
+		-webkit-column-rule: 1px outset #cecece;
+		-moz-column-rule: 1px outset #cecece;
+		column-rule: 1px outset #cecece;
+		
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -19,38 +122,40 @@
 		font-family: sans-serif;
 		font-weight: normal;
 		*/
-		font-weight: bold;
-		margin-top: 50px;
+		font-family: sans-serif;
+		font-family: Arial, Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 		letter-spacing: normal;
+		text-align: center;
+		margin: 0;
+	}
+
+	a.btn-mini.inlineReference::before {
+		content: "(";
+	}
+	a.btn-mini.inlineReference::after {
+		content: ")";
 	}
 
 	a.btn-mini.inlineReference {
 		letter-spacing: normal;
-		line-height:200%;
+		line-height:150%;
 		font-weight: normal;
 		padding: none;
-		vertical-align: super;
-		font-size: 60%;
+		/*vertical-align: super; */
+		font-size: inherit;
+		color: #000;
 	}
 
 	img {
+		display: block;
 		max-width: 100%;
-	}
-
-	table.table {
-		page-break-inside: avoid;
-		font-size: 80%;
 	}
 
 	div.pull-right {
-		float: none !important;
+		/*float: none !important;*/
 		max-width: 100%;
 		overflow: visible;
-		margin-left: 0;
-	}
-
-	div.facts {
-		width: 100%;
+		/*margin-left: 0;*/
 	}
 
 	div.facts, div.narrow {
@@ -59,6 +164,8 @@
 
 	p.ingress {
 		font-weight: bold;
+		font-family: sans-serif;
+		font-family: Arial, Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
 
 	div.authorsDisclosure {
@@ -116,7 +223,7 @@
 		margin: 0 auto 0 auto;
 		background-color: #fff;
 	}
-
+	/*
 	div.figure {
 		page-break-inside: avoid;
 
@@ -136,15 +243,17 @@
 		-moz-box-shadow: none;
 		box-shadow: none;
 	}
-
+*/
 	#searchResults {
 		display: none;
 		visibility: hidden;
 	}
 
+	/*
 	div.figure img {
 		width: 100%;
 	}
+	*/
 
 	h2.overview {
 		display: none;
@@ -152,15 +261,6 @@
 
 	ul#overview {
 		display: none;
-	}
-
-	table {
-		margin: 10px 0 10px 0;
-	}
-
-	table ul {
-		padding-left: 0;
-		margin-left: 20px;
 	}
 
 	.pageLink {
@@ -173,7 +273,65 @@
 	}
 
 	h1 {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 20pt;
+		line-height: 26pt;
+		font-weight: bold;
+	}
 
+	h2 {
+		margin-top: 10px;
+		font-size: 10pt;
+		line-height: 13pt;
+		font-weight: bold;
+	}
+	
+	div.ingressHeaderContainer {
+		border-top: solid 2px #cecece;
+		border-bottom: solid 2px #cecece;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+	
+	h2.ingressHeader {
+		border-top: solid 1px #cecece;
+		border-bottom: solid 1px #cecece;
+		padding: 5px 0 5px 0;
+		margin: 0;
+	}
+
+	h3 {
+		margin-top: 10px;
+		font-size: 10pt;
+		line-height: 13pt;
+		font-weight: bold;
+	}
+
+	h4 {
+		margin-top: 10px;
+		font-size: 9pt;
+		line-height: 15pt;
+		font-style: italic;
+		font-weight: normal;
+	}
+	
+	.table h4, .figure h4 {
+		font-weight: bold;
+		font-style: normal;
+		text-align: left;
+	}
+
+	h5 {
+		margin-top: 10px;
+		font-size: 8pt;
+		line-height: 14pt;
+	}
+
+	h6 {
+		margin-top: 10px;
+		font-size: 7pt;
+		line-height: 13pt;
 	}
 
 	#fullscreen {
@@ -184,12 +342,12 @@
 		display: none;
 	}
 
+	/*
 	.btn, .btn:hover {
 		border: 0;
 		color: #333;
 		background-color: transparent;
 		font-family: inherit;
-		/*text-rendering: optimizelegibility;*/
 		font-size: inherit;
 		line-height: inherit;
 		padding: 0;
@@ -201,7 +359,7 @@
 		-webkit-border-radius: 0;
 		-moz-border-radius: 0;
 		border-radius: 0;
-	}
+		}*/
 
 	#settings, #download-pdf, #gotoTop, a.anchor-link {
 		display: none !important;
@@ -209,6 +367,285 @@
 
 	tr {
 		page-break-inside: avoid;
+	}
+
+	body, div.container, div.row, div#mainContainer, div#main {
+		float: none !important;
+	}
+
+	div.clearfix {
+/*		display: block;
+		page-break-after: always; */
+	}
+	
+	a.inlineGenerica {
+		border: none;
+		text-decoration: none;
+	}
+	
+	h1, p.authors {
+		column-span: all;
+		-webkit-column-span: all;
+		text-align: center;
+	}
+
+	table.table {
+		margin: 0;
+		page-break-inside: avoid;
+		font-size: 7pt;
+		width: 100%;
+		border-spacing: 0;
+		border-collapse: collapse;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-family: sans-serif;
+		font-family: Arial, Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		line-height: 25pt;
+		
+	}
+	
+	table.table h4 {
+		font-size: 8pt;
+		padding: 0;
+		margin: 0;
+		line-height: 14pt;
+	}
+	
+	table.table th {
+		padding: 5px 10px 5px 10px;
+		border-top: solid 1px #cecece;
+		border-bottom: solid 1px #cecece;
+		text-align: left;
+	}
+	
+	table.table tr td {
+		vertical-align: top;
+		margin: 0;
+		padding: 5px 10px 5px 10px;
+		border-bottom: solid 1px #cecece;
+		border-right: solid 1px #cecece;
+	}
+
+	table.table tr td:last-child {
+		border-right: none;
+	}
+	
+	table.table tr:first-child td {
+		margin-top: 5px;
+		border-top: solid 1px #cecece;
+	}
+
+	table.table tr:last-child td {
+		margin-bottom: 5px;
+	}
+	
+	table h2, table h3, table h4, table h5, table h6 {
+		text-align: left;
+	}
+	
+	div.facts {
+		border: solid 2px #cecece;
+		padding: 2px;
+		margin-bottom: 5px;
+	}
+	
+	div.facts table.table td, div.facts table.table th {
+		border: none;
+	}
+
+	div.facts table.table {
+		border: solid 1px #cecece;
+	}
+
+	#main > p {
+		text-align:justify;
+	    -ms-word-break: break-all;
+	        word-break: normal;
+
+	        /* Non standard for webkit */
+	        word-break: break-word;
+
+	   -webkit-hyphens: auto;
+	      -moz-hyphens: auto;
+	       -ms-hyphens: auto;
+	           hyphens: auto;
+			   
+			   widows: 5;
+			   orphans: 5;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	p.normal {
+		margin-bottom: 10px;
+	}
+
+
+	p.indent {
+		text-indent: 30px;
+		margin: 0;
+	}
+
+	.facts p.indent {
+		text-indent: 15px;
+		margin: 0;
+	}
+	
+	/* TODO: Fix */
+	/*
+	sup {
+		top: -0.5em;
+		font-size: 80%;
+		line-height: 0;
+		vertical-align: baseline;
+	}
+	*/
+
+	table ul {
+		margin-left: 15px;
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+
+	
+	ul, ol {
+		padding: 0;
+		margin: 0 0 10px 25px;
+	}
+
+	ul.indent {
+		margin-left: 15px;
+	}
+
+	ul.ordered {
+		list-style-type: none;
+		margin-left: 30px;
+		margin-bottom: 5px;
+	}
+
+	li.nobullet {
+		list-style: none;
+		background-image: none;
+	}
+
+	li.nobullet strong.itemType {
+		display: inline-block;
+		width: 25px;
+		margin-left: -25px;
+		font-weight: normal;
+		text-align: center;
+	}
+
+
+	ul.ordered strong.itemType {
+		display: inline-block;
+		width: 25px;
+		margin-left: -25px;
+		font-weight: normal;
+		text-align: center;
+	}
+	
+	#modalMed {
+		display: none;
+	}
+	
+	footer {
+		display: none;
+	}
+
+	hr {
+		border: 0;
+		height: 1px;
+		background: transparent;
+		
+		page-break-after: left;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	a.inlineReference {
+		text-indent: 0;
+	}
+
+	a.inlineGenerica.text {
+		text-decoration: none;
+		color: #000;
+		/* border-bottom: dotted 1px #000; */
+	}
+
+	p.authors {
+		font-size: 10pt;
+		display: block;
+		font-family: sans-serif;
+		font-family: Arial, Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		margin-bottom: 20px;
+		text-align: center !important;
+	}
+
+	div.figure, div.wide, div.therapy-recommendations {
+		column-span: all;
+		-webkit-column-span: all;
+
+		page-break-inside: avoid !important;
+		border-top: solid 0.5mm #cecece;
+		border-bottom: solid 0.5mm #cecece;
+		padding: 0.5mm 0 0.5mm 0;
+		margin: 5mm 0 5mm 0;
+	}
+	
+	div.figure.narrow {
+		column-span: 1;
+		-webkit-column-span: 1;
+	}
+
+	div.figureText {
+		font-family: sans-serif;
+		font-family: Arial, Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 7pt;
+	}
+	
+	div.figureImage {
+		width: 100%;
+		text-align: center !important;
+	}
+	
+	div.figureImage img  {
+		max-height: 740px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	
+	fieldset.pageFootnote {
+		float: footnote;
+	}
+
+	fieldset.pageFootnote span.tabstop {
+		display: none;
+	}
+
+	div.facts h4.facts {
+		margin-top: 0px;
+		padding-top: 0;
+		font-size: 12px;
+	}
+	
+	div.facts h4.numberHeader {
+		font-size: 10px;
+		transform: rotate(45deg);
+		position: relative;
+		float: right;
+		right: -24px;
+		top: -4.3px;
+		width: 50px;
+		text-align: center;
+		border-bottom: solid 1px #cecece;
+		padding-bottom: 0px;
+		margin-top: 0;
 	}
 
 }

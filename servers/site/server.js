@@ -10,6 +10,7 @@ var chokidar = require("chokidar");
 var uuid = require('node-uuid');
 var spawn = require("child_process").spawn;
 var dateFormat = require("dateformat");
+var pdfCreator = require("./lib/prince/pdfcreator.js");
 
 
 var secretSettingsPath = __dirname + "/../../settings/secretSettings.json";
@@ -992,6 +993,39 @@ app.get("/pdf/download", function(req, res) {
 			url = url.replace('.json', '.html');
 		}
 
+		pdfCreator.createFromUrl(url, req.cookies, function(err, result) {
+			if (err) {
+				res.status(500);
+				res.render('error', {
+					message: 'Child process exited with err: ' + err.message,
+					error: err
+				});
+			} else {
+				if (result.name !== undefined && result.name !== "" && result.path !== undefined && result.path !== "") {
+					res.download(result.path, result.name);
+				} else {
+					res.status(500);
+					res.render("error", {
+						message: "Result was malformed after creating the PDF.",
+						error: new Error("Result was malformed after creating the PDF.")
+					});
+				}
+			}
+		});
+
+	}
+});
+
+app.get("/pdf/download_old", function(req, res) {
+
+	var url = req.query["url"];
+
+	if (url !== undefined && url !== "") {
+
+		if (url.indexOf('.json') !== -1 ) {
+			url = url.replace('.json', '.html');
+		}
+
 		var outPath = path.join(require("os").tmpdir(), uuid.v1() + ".pdf");
 
 		var date = new Date();
@@ -1000,15 +1034,15 @@ app.get("/pdf/download", function(req, res) {
 		var newFileName = path.basename(url, ".html") + "-" + fileNameDate + ".pdf";
 
 		var cookies = [];
-
-		var arguments = ["--print-media-type", "--disable-smart-shrinking", "--zoom", "0.7", "--dpi", "240", "-n", "--no-background"];
+//"--disable-smart-shrinking", "--zoom", "0.6", "--dpi", "240",
+		var arguments = ["--print-media-type",  "-n", "--no-background"];
 
 		arguments = arguments.concat(["--footer-font-size", 8]);
 		arguments = arguments.concat(["--header-font-size", 8]);
 		arguments = arguments.concat(["--footer-font-name", "Courier"]);
 		arguments = arguments.concat(["--header-font-name", "Courier"]);
-		arguments = arguments.concat(["--margin-left", "30mm"]);
-		arguments = arguments.concat(["--margin-right", "30mm"]);
+		arguments = arguments.concat(["--margin-left", "20mm"]);
+		arguments = arguments.concat(["--margin-right", "20mm"]);
 
 		arguments.push("http://localhost" + url)
 		arguments.push(outPath);

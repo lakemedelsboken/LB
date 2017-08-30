@@ -188,10 +188,19 @@ var Hooks = {
 		}
 
 		for (var i = 0; i < figures.length; i++) {
-			var text = $("<div>" + figures[i].content.text + "</div").text();
-			if (text.length > 50) {
-				text = text.substr(0,50) + "...";
+			
+			var text = "";
+
+			if (figures[i].content.title !== "") {
+				text = $("<div />").html(figures[i].content.title).text();
+			} else {
+				text = $("<div />").html(figures[i].content.text).text();
 			}
+
+			if (text.length > 50) {
+				text = text.substr(0, 50) + "...";
+			}
+			
 			figuresOverview.append($("<li class=\"span2\"><div class=\"thumbnail figureLink\" data-numbers=\"" + figures[i].content.number + "\"><div class=\"caption\"><i class=\"fa fa-bar-chart\"></i><h5 class=\"overview\"><a href=\"#figure_" + figures[i].content.number + "\" class=\"figureLink\" data-numbers=\"" + figures[i].content.number + "\">Figur " + figures[i].content.number + "</a></h5><p><a href=\"#figure_" + figures[i].content.number + "\" class=\"figureLink\" data-numbers=\"" + figures[i].content.number + "\">" + text + "</a></p></div></div></li>"));
 		}
 

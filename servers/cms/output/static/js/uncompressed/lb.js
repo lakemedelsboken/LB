@@ -58,14 +58,6 @@ ga = function() {};
 		init: function() {
 			var self = this;
 
-			//Check pdf availability
-			var pdfLink = $("#pdf").first();
-			if (pdfLink.length === 1) {
-				if (pdfLink.attr("href") === "{PDF}") {
-					pdfLink.hide();
-				}
-			}
-
 			//Make main content z-index higher than sidebar
 			if (lb.isMobile.any()) {
 				$("#mainContainer").css("position", "relative");
@@ -150,8 +142,10 @@ ga = function() {};
 
 			if (updatedElements.length > 0) {
 				$("#settings").show();
+				$("#download-pdf").css("top", "63px");
 			} else {
 				$("#settings").hide();
+				$("#download-pdf").css("top", "35px");
 			}
 
 			//Read cookie for this setting

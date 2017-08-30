@@ -739,7 +739,7 @@ div.figure ol, div.figure ul {
 	text-align: left;
 }
 
-a.factsLink, a.figureLink, a.tableLink, a.pageLink {
+a.factsLink, a.figureLink, a.tableLink, a.pageLink, a.casereportLink, a.therapyLink {
 	text-indent: 0;
 }
 
@@ -861,9 +861,8 @@ a.inlineGenerica.text {
 }
 
 #download-pdf {
-	display: none;
 	position: fixed;
-	top: 63px;
+	top: 7px; /* 35px 63px;*/
 	right: 7px;
 	margin: 0;
 	z-index: 13;
@@ -1566,6 +1565,9 @@ ul.authorsByLetter li ul li {
 		margin-left: -10px;
 	}
 
+	#download-pdf {
+		display: none;
+	}
 
 	#performSearch {
 		top: 3px;
