@@ -134,7 +134,7 @@ var Views = {
 			output = $.html();
 		}
 
-		if (removeSecondTitle) {
+		/*if (removeSecondTitle) {
 			$ = cheerio.load(output);
 			if (removeFactsTitle) {
 				$("tr").first().remove();
@@ -142,7 +142,7 @@ var Views = {
 				$("tr").eq(1).remove();
 			}
 			output = $.html();
-		}
+		}*/
 
 		return output;
 	},

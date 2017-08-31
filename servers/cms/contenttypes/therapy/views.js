@@ -32,7 +32,7 @@ var Views = {
 	getOutput: function(item) {
 
 		var output = fs.readFileSync(__dirname + "/output.html", "utf8");
-		
+
 		output = output.replace(new RegExp("{number}", "g"), item.content.number);
 
 		if (item.content.id !== "" && item.content.id !== "undefined" && item.content.id !== undefined) {
@@ -57,18 +57,18 @@ var Views = {
 			if (!(item.settings.postprocessors && item.settings.postprocessors["pagefootnotes.js"] === "true")) {
 				resultHtml = require("../../postprocessors/pagefootnotes.js").process(resultHtml);
 			}
-			
-			output = output.replace(new RegExp("{title}", "g"), " – " + resultHtml);
+
+			output = output.replace(new RegExp("{title}", "g"), resultHtml);
 		} else {
 			output = output.replace(new RegExp("{title}", "g"), "");
 		}
 
 		var $ = cheerio.load(item.content.text);
-		
+
 		//Count max columns in a row
 		var maxColumns = 1;
 		var table = $("table").first();
-		
+
 		if (table.length === 1) {
 			table.find("tr").each(function(index, element) {
 				var tr = $(element);
@@ -108,18 +108,18 @@ var Views = {
 		if (!(item.settings.postprocessors && item.settings.postprocessors["pagefootnotes.js"] === "true")) {
 			resultHtml = require("../../postprocessors/pagefootnotes.js").process(resultHtml);
 		}
-		
+
 		output = output.replace(new RegExp("{text}", "g"), resultHtml);
 
 		return output;
 	},
 	preProcess: function(item, id) {
-		
+
 		//Remove the actual links to self and keep only the hash
 		if (!(item.settings.preprocessors && item.settings.preprocessors["fixlinkstoself.js"] === "true")) {
 			item.content.text = require(path.join(__dirname, "..", "..", "preprocessors", "fixlinkstoself.js")).process(item.content.text, id);
 		}
-		
+
 		return item;
 	},
 	getDefaultType: function() {

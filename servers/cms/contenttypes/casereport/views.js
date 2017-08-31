@@ -42,7 +42,7 @@ var Views = {
 			removeCaseReportTitle = true;
 		}
 
-		
+
 
 		if (item.content.id !== "" && item.content.id !== "undefined" && item.content.id !== undefined) {
 			output = output.replace(new RegExp("{id}", "g"), " id=\"" + item.content.id + "\"");
@@ -66,7 +66,7 @@ var Views = {
 			if (!(item.settings.postprocessors && item.settings.postprocessors["pagefootnotes.js"] === "true")) {
 				resultHtml = require("../../postprocessors/pagefootnotes.js").process(resultHtml);
 			}
-			
+
 			output = output.replace(new RegExp("{title}", "g"), resultHtml);
 		} else {
 			output = output.replace(new RegExp("{title}", "g"), "");
@@ -74,11 +74,11 @@ var Views = {
 		}
 
 		var $ = cheerio.load(item.content.text);
-		
+
 		//Count max columns in a row
 		var maxColumns = 1;
 		var table = $("table").first();
-		
+
 		if (table.length === 1) {
 			table.find("tr").each(function(index, element) {
 				var tr = $(element);
@@ -106,7 +106,7 @@ var Views = {
 		}
 
 		if (resultHtml !== undefined && resultHtml !== null) {
-			
+
 			//Determine based on settings if any postprocessing should be omitted for the current item
 			if (!(item.settings.postprocessors && item.settings.postprocessors["genericas.js"] === "true")) {
 				resultHtml = require("../../postprocessors/genericas.js").process(resultHtml);
@@ -123,7 +123,6 @@ var Views = {
 		} else {
 			resultHtml = "";
 		}
-		
 		output = output.replace(new RegExp("{text}", "g"), resultHtml);
 
 		if (removeCaseReportTitle) {
@@ -132,7 +131,7 @@ var Views = {
 			output = $.html();
 		}
 
-		if (removeSecondTitle) {
+	/*	if (removeSecondTitle) {
 			$ = cheerio.load(output);
 			if (removeCaseReportTitle) {
 				$("tr").first().remove();
@@ -141,7 +140,7 @@ var Views = {
 			}
 			output = $.html();
 		}
-
+*/
 		return output;
 	},
 	preProcess: function(item) {
