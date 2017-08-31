@@ -66,7 +66,7 @@ var Views = {
 			output = output.replace(new RegExp("{number}", "g"), "");
 			removeTitle = true;
 		}
-		
+
 		if (item.content.id !== "" && item.content.id !== "undefined" && item.content.id !== undefined) {
 			output = output.replace(new RegExp("{id}", "g"), " id=\"" + item.content.id + "\"");
 		} else {
@@ -125,16 +125,16 @@ var Views = {
 		} else {
 			maxWidth = "";
 		}
-		
+
 		output = output.replace(new RegExp("{maxwidth}", "g"), maxWidth);
 
 		output = output.replace(new RegExp("{source}", "g"), "{pre}/" + staticSettings.version + item.content.image);
 
-		if (removeTitle) {
+		/*if (removeTitle) {
 			$ = cheerio.load(output);
 			$("h4").first().remove();
 			output = $.html();
-		}
+		}*/
 
 		return output;
 	},
@@ -144,7 +144,7 @@ var Views = {
 		if (!(item.settings.preprocessors && item.settings.preprocessors["fixlinkstoself.js"] === "true")) {
 			item.content.text = require(path.join(__dirname, "..", "..", "preprocessors", "fixlinkstoself.js")).process(item.content.text, id);
 		}
-		
+
 		return item;
 	},
 	getDefaultType: function() {
