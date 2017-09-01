@@ -45,5 +45,3 @@ cleancss --s0 -o ../servers/api/css/lb.injectgenericas.min.css ../servers/api/cs
 node ./fixversion.js
 
 cat ../servers/cms/public/stylesheets/theme.css ../servers/cms/public/stylesheets/dashboard.css ../servers/cms/public/stylesheets/image-picker.css ../servers/cms/public/stylesheets/jsondiff.css ../servers/cms/public/stylesheets/jquery.simple-dtpicker.css ../servers/cms/public/stylesheets/font-awesome-4.3.0/css/font-awesome.min.css ../servers/cms/public/stylesheets/style.css | cleancss -o ../servers/cms/public/stylesheets/styles.min.css
-
-

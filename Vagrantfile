@@ -56,15 +56,16 @@ Vagrant.configure(2) do |config|
 		ar p pandoc-1.15.2-1-amd64.deb data.tar.gz | sudo tar xvz --strip-components 2 -C /usr/local
 
 
-		#------------------------- wkhtmltopdf ------------------------------------------------
+		#------------------------- Prince XML ------------------------------------------------
 		#requirements
-		sudo apt-get install -y xfonts-75dpi
+		sudo aptitude install -y gdebi
 
-		cd /opt/
-		sudo wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.2.1/wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
-		sudo dpkg -i wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
-		sudo apt-get install -f
+		echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
+		sudo apt-get install -y ttf-mscorefonts-installer
 
+		cd
+		wget https://www.princexml.com/download/prince_11.3-1_ubuntu14.04_amd64.deb
+		sudo gdebi -n prince_11.3-1_ubuntu14.04_amd64.deb
 
 		#------------------------- OpenSSL ----------------------------------------------------
 		#openssl

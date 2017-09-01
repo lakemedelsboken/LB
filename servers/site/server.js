@@ -995,6 +995,7 @@ app.get("/pdf/download", function(req, res) {
 
 		pdfCreator.createFromUrl(url, req.cookies, function(err, result) {
 			if (err) {
+				console.log(err);
 				res.status(500);
 				res.render('error', {
 					message: 'Child process exited with err: ' + err.message,
