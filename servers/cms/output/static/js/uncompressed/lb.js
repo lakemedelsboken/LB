@@ -3253,4 +3253,6 @@ function doHighlight(bodyText, searchTerm, highlightStartTag, highlightEndTag)
 		$("#ui-id-2[href='../../']").click(function(){
 			$("#ui-id-2").attr('href','javascript: history.back()');
 		});
+
+		$("#Forfattarregister-").closest('tr').hide();
 })(window);
