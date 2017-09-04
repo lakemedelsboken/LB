@@ -77,45 +77,10 @@ router.get('/*', function(req, res) {
 								else{
 									factsTitle+=content.title[i];
 								}
-
 							}
-
-							content.title =factsTitle.split(' ').slice(0,2).join(' ')+"...";
+							content.title =factsTitle;
 						}
-						console.log( "text: "+content.title);
-
-
-
-						/*var $ = cheerio.load(content.content);
-					  content.title = content.content.split(' ')[0];
-						var firstTag='';
-						for (var i = 0; i <content.title.length; i++) {
-							if(content.title[i]=='>')
-							break;
-							if(content.title[i]!='<')
-							firstTag+=content.title[i];
-						}
-						content.title =$(firstTag).text();
-						*/
-
-
-						/*if(content.title.length>25){
-							content.title=content.title.substring(0,20);
-							content.title+="...";
-						}*/
-
-						/*if(firstTag=='p')
-						{
-						 content.title =$(firstTag).text().split(/\s+/).slice(0,2).join(" ");
-					 }*/
-
-						/*if (content.title == '') {
-							content.title = $('h3').text();
-						}
-
-						if (content.title == '') {
-							content.title = $('h4').text();
-						}*/
+						content.title =content.title.split(' ').slice(0,2).join(' ')+"...";
 
 					}
 
@@ -148,7 +113,7 @@ router.get('/*', function(req, res) {
 							content.title =factsTitle;
 						}
 						content.title =content.title.split(' ').slice(0,2).join(' ')+"...";
-						console.log( "other: "+content.title);
+
 					}
 
 
