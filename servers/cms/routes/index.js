@@ -59,7 +59,34 @@ router.get('/*', function(req, res) {
 				output.page.content = output.page.content.map(function(content) {
 					content.title = '';
 					if (content.type === 'text') {
-						var $ = cheerio.load(content.content);
+						if(content.content.length>0)
+						content.title = content.content;
+
+						if( content.title[0]=='<'){
+							var factsTitle='';
+							for (var i = 0; i < content.title.length; i++) {
+								if(content.title[i]=='<'){
+									for (var j = i+1; j < content.title.length; j++) {
+										if(content.title[j]=='>')
+										{
+											i=j;
+											break;
+										}
+									}
+								}
+								else{
+									factsTitle+=content.title[i];
+								}
+
+							}
+
+							content.title =factsTitle.split(' ').slice(0,2).join(' ')+"...";
+						}
+						console.log( "text: "+content.title);
+
+
+
+						/*var $ = cheerio.load(content.content);
 					  content.title = content.content.split(' ')[0];
 						var firstTag='';
 						for (var i = 0; i <content.title.length; i++) {
@@ -68,14 +95,14 @@ router.get('/*', function(req, res) {
 							if(content.title[i]!='<')
 							firstTag+=content.title[i];
 						}
-
-
-
 						content.title =$(firstTag).text();
-						if(content.title.length>20){
+						*/
+
+
+						/*if(content.title.length>25){
 							content.title=content.title.substring(0,20);
 							content.title+="...";
-						}
+						}*/
 
 						/*if(firstTag=='p')
 						{
@@ -120,10 +147,8 @@ router.get('/*', function(req, res) {
 							}
 							content.title =factsTitle;
 						}
-						if(content.title.length>20){
-							content.title=content.title.substring(0,20);
-							content.title+="...";
-						}
+						content.title =content.title.split(' ').slice(0,2).join(' ')+"...";
+						console.log( "other: "+content.title);
 					}
 
 
