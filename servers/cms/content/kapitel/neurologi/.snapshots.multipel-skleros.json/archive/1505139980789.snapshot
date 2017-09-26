@@ -1,0 +1,101 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Multipel skleros",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2017-09-11 16:20",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Förnamn Efternamn",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "1d8c0b67-ab9c-4f65-8597-914622fb6463",
+			"name": "8ff8af45-2d2e-43f9-8f01-c8d0ec79930f",
+			"type": "author",
+			"content": {
+				"firstname": "Förnamn",
+				"surname": "Efternamn",
+				"description": "Arbetsplats",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4aa1dea9-4de0-4db5-ab82-8e1b6875c381",
+			"name": "df3989f9-b279-49fe-ace6-f6abd52a7587",
+			"type": "text",
+			"content": "<h2 class=\"ingress\" id=\"Inledning\">Inledning</h2>\n<p class=\"ingress\">Multipel skleros (MS) &auml;r en kronisk autoimmun sjukdom som via &aring;terkommande inflammationer drabbar det centrala nervsystemet (CNS), d v s hj&auml;rna, synnerv och ryggm&auml;rg. Ur klinisk synpunkt kan sjukdomen delas in i tv&aring; delar: symptom pga inflammatorisk aktivitet respektive restsymptom av tidigare inflammationer. Den inflammatoriska aktiviteten kan idag effektivt behandlas med bromsmedicin, s&aring; pass att m&aring;let med behandling b&ouml;r vara fullst&auml;ndig avsaknad av inflammatorisk aktivitet.</p>\n<p class=\"ingress\"><br>Med stigande &aring;lder och sjukdomsduration avtar den inflammatoriska aktiviteten spontant. En MS-patient utan inflammatorisk aktivitet har inga skov (symptom pga nytillkommen inflammation i CNS) och har heller inga nya inflammationer p&aring; &aring;rlig kontroll med magnetkamera (MR). Den andra delen av sjukdomen, restsymptom, kan liknas vid restsymptomen som en patient har efter ett eller flera strokeinsjuknanden. Restsymptomen vid MS &auml;r p&aring; samma s&auml;tt irreversibla men kan dessutom tillta &ouml;ver tid (&rdquo;smygande&rdquo; eller progressiv MS) via sjukdomsmekanismer som idag inte &auml;r &aring;tkomliga f&ouml;r bromsmediciner. Av detta f&ouml;ljer att tidig diagnos och tidigt ins&auml;ttande av tillr&auml;ckligt effektiv bromsmedicin av allt att d&ouml;ma &auml;r av avg&ouml;rande betydelse f&ouml;r hur sjukdomen utvecklar sig p&aring; sikt.</p>\n<p><strong></strong></p>\n<p class=\"ingress\">S&aring;v&auml;l milj&ouml;faktorer och genetik &auml;r involverade i uppkomsten av MS, s&aring;som &auml;r fallet f&ouml;r andra autoimmuna sjukdomar. I Sverige insjuknar &aring;rligen 500-1000 personer med MS och det totala antalet personer med MS n&auml;rmar sig 20000. MS &auml;r 2-3 g&aring;nger vanligare hos kvinnor och median&aring;ldern vid debuten &auml;r 30 &aring;r med spridning ned i barna&aring;ren och i ovanliga fall &auml;nda upp till 60(-70) &aring;rs &aring;lder.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5b4c8f3c-6913-45d0-9ea4-e343a2a1e44e",
+			"name": "c36c093a-47c9-40c1-b91c-9a33415e0fa6",
+			"type": "text",
+			"content": "<p class=\"ingress\">Ingresstext</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b136b0fa-ea87-4a85-9de0-e1b349f210bb",
+			"name": "1e8fcf72-58af-4cac-8467-c633574ca9d2",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2><ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/neurologi/multipel-skleros.json",
+	"indexed": "true",
+	"modified": "2017-09-11 16:26"
+}

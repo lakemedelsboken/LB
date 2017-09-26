@@ -1,0 +1,101 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Ordnat införande",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2017-09-11 08:59",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Förnamn Efternamn",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "81a60de2-8e25-4e03-9dc3-d3d553dc6c28",
+			"name": "3fe826a9-4159-426f-901b-e3bad9c37309",
+			"type": "text",
+			"content": "<h1 id=\"Ordnat-inforande\">Ordnat inf&ouml;rande</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c1d55877-9c46-4e14-8948-25523374dfb4",
+			"name": "a7022cc2-9b3c-4289-a84b-d19909d4df0f",
+			"type": "author",
+			"content": {
+				"firstname": "Förnamn",
+				"surname": "Efternamn",
+				"description": "Arbetsplats",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "60b0919b-fa30-42a9-a6d6-2b47ca504549",
+			"name": "23bc98b5-ebab-4a4d-a1ec-4c1868e144e2",
+			"type": "text",
+			"content": "<p class=\"ingress\">Ingresstext</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c685b5c0-6143-42f7-ac70-c9bd43fabfa2",
+			"name": "12e44a7e-312d-4b63-9f51-a2f11ad964de",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2><ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/regelverket_och_it-stod/ordnat_inforande.json",
+	"indexed": "true",
+	"modified": "2017-09-11 09:00"
+}

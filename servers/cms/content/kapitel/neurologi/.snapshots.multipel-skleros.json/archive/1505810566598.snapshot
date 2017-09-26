@@ -1,0 +1,360 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Multipel skleros",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2017-09-11 16:20",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Peter Sundström, Stellan Båtsman",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "de0f3c8f-6cd9-4c73-b312-03768e750ead",
+			"name": "de0f3c8f-6cd9-4c73-b312-03768e750ead",
+			"type": "text",
+			"content": "<h1 id=\"Multipel-skleros\">Multipel skleros</h1>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1d8c0b67-ab9c-4f65-8597-914622fb6463",
+			"name": "8ff8af45-2d2e-43f9-8f01-c8d0ec79930f",
+			"type": "author",
+			"content": {
+				"firstname": "Peter",
+				"surname": "Sundström",
+				"description": "Umeå universitet",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3c9eec71-7f89-4a5a-a4cd-0584b8472a3a",
+			"name": "3c9eec71-7f89-4a5a-a4cd-0584b8472a3a",
+			"type": "author",
+			"content": {
+				"firstname": "Stellan",
+				"surname": "Båtsman",
+				"description": "",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4aa1dea9-4de0-4db5-ab82-8e1b6875c381",
+			"name": "df3989f9-b279-49fe-ace6-f6abd52a7587",
+			"type": "text",
+			"content": "<h2 class=\"ingress\" id=\"Inledning\">Inledning</h2>\n<p class=\"ingress\">Multipel skleros (MS) &auml;r en kronisk autoimmun sjukdom som via &aring;terkommande inflammationer drabbar det centrala nervsystemet (CNS), det vill s&auml;ga hj&auml;rna, synnerv och ryggm&auml;rg. Ur klinisk synpunkt kan sjukdomen delas in i tv&aring; delar: symptom pga inflammatorisk aktivitet respektive restsymptom av tidigare inflammationer. Den inflammatoriska aktiviteten kan idag effektivt behandlas med bromsmedicin, s&aring; pass att m&aring;let med behandling b&ouml;r vara fullst&auml;ndig avsaknad av inflammatorisk aktivitet.</p>\n<p class=\"ingress\"><br>Med stigande &aring;lder och sjukdomsduration avtar den inflammatoriska aktiviteten spontant. En MS-patient utan inflammatorisk aktivitet har inga skov (symptom p&aring; grund av nytillkommen inflammation i CNS) och har heller inga nya inflammationer p&aring; &aring;rlig kontroll med magnetkamera (MR). Den andra delen av sjukdomen, restsymptom, kan liknas vid restsymptomen som en patient har efter ett eller flera strokeinsjuknanden. Restsymptomen vid MS &auml;r p&aring; samma s&auml;tt irreversibla men kan dessutom tillta &ouml;ver tid (&rdquo;smygande&rdquo; eller progressiv MS) via sjukdomsmekanismer som idag inte &auml;r &aring;tkomliga f&ouml;r bromsmediciner. Av detta f&ouml;ljer att tidig diagnos och tidigt ins&auml;ttande av tillr&auml;ckligt effektiv bromsmedicin av allt att d&ouml;ma &auml;r av avg&ouml;rande betydelse f&ouml;r hur sjukdomen utvecklar sig p&aring; sikt.</p>\n<p class=\"ingress\"></p>\n<p class=\"ingress\">S&aring;v&auml;l milj&ouml;faktorer och genetik &auml;r involverade i uppkomsten av MS, s&aring;som &auml;r fallet f&ouml;r andra autoimmuna sjukdomar. I Sverige insjuknar &aring;rligen 500-1000 personer med MS och det totala antalet personer med MS n&auml;rmar sig 20000. MS &auml;r 2-3 g&aring;nger vanligare hos kvinnor och median&aring;ldern vid debuten &auml;r 30 &aring;r med spridning ned i barna&aring;ren och i ovanliga fall &auml;nda upp till 60(-70) &aring;rs &aring;lder.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9808e575-35a1-471d-9fbc-9dd0a60698ba",
+			"name": "9808e575-35a1-471d-9fbc-9dd0a60698ba",
+			"type": "image",
+			"content": {
+				"image": "/images/R7-multipel-scleros-images/multipel_scleros_oversatt_figur_1.png",
+				"alt": "",
+				"htmlbefore": "<h3> Figur 1 </h3> <br>",
+				"htmlafter": "",
+				"maxwidth": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5b4c8f3c-6913-45d0-9ea4-e343a2a1e44e",
+			"name": "c36c093a-47c9-40c1-b91c-9a33415e0fa6",
+			"type": "text",
+			"content": "<h2 id=\"Nar-ska-MS-misstankas-\">N&auml;r ska MS misst&auml;nkas?</h2>\n<p>Vanligen, i upp till 90% av fallen, debuterar MS med skov (skovvist f&ouml;rl&ouml;pande MS). Ett skov beror p&aring; en nytillkommen inflammation i CNS som normalt kan visualiseras med MR. Symptomen tilltar under loppet av dagar-n&aring;gra veckor och avtar sedan spontant under veckor-m&aring;nader. I cirka h&auml;lften av fallen g&aring;r symptomen &ouml;ver helt - dessa patienter vill ibland just d&auml;rf&ouml;r inte utredas vidare, men givetvis &auml;r utredning lika motiverad h&auml;r. Ett exempel p&aring; symptom vid skov &auml;r parestesier i f&ouml;tter som sprider sig upp&aring;t och kan omfatta b&aring;l och delar av armar/h&auml;nder (inflammation i ryggm&auml;rgen, myelit). N&auml;r symptomen &auml;r som mest uttalade kan g&aring;ngsv&aring;righeter och vattenkastningsbesv&auml;r finnas. Exempel p&aring; andra symptom &auml;r nedsatt visus och f&auml;rgseende (s&auml;rskild f&ouml;r r&ouml;d f&auml;rg) med sm&auml;rtor vid &ouml;gonr&ouml;relser som tecken p&aring; synnervsinflammation (opticusneurit) eller symptom av en hj&auml;rnstamsinflammation med till exempel dubbelseende och nystagmus eller ett akut vestibul&auml;rt syndrom. &nbsp;Eftersom MS-inflammationer drabbar CNS finns en stor variation av de symptom som kan uppst&aring; vid ett skov. En mindre andel debuterar med en smygande f&ouml;rs&auml;mring (flera m&aring;nader till &aring;r) av neurologiska funktioner, vanligen tilltagande g&aring;ngsv&aring;righeter med vattenkastningsbesv&auml;r (prim&auml;r progressiv MS).<br><br></p>\n<p>Ut&ouml;ver det f&ouml;r MS-skovet typiska tidsf&ouml;rloppet ovan, finns intermittenta symptom som trigeminusneuralgi (sekundl&aring;nga elst&ouml;tsliknande sm&auml;rtor i ansiktet) och Lhermittes fenomen (elst&ouml;tsliknande obehag ned&aring;t benen vid fram&aring;tb&ouml;jning av nacken) som b&ouml;r f&ouml;ra tankarna till MS som orsak.</p>\n<p></p>\n<p>MS-misstanke kan ocks&aring; uppst&aring; vid statusfynd som till exempel internukl&auml;r oftalmoplegi (vid blick &aring;t till exempel h&ouml;ger ses abduktionsnystagmus h&ouml;ger &ouml;ga och eventuell eftersl&auml;pning av adduktion v&auml;nster &ouml;ga). Fynd i rutinnervstatus talande f&ouml;r skada i CNS hos en 30-&aring;ring, exempelvis symptom av &rdquo;droppfot&rdquo;, men positiv Babinski eller stegrade achilles/patellarreflexer; symptom av &rdquo;vestibularisneurit&rdquo; men ataxi vid finger-n&auml;s test, kan ocks&aring; peka mot en bakomliggande MS-sjukdom.</p>\n<p></p>\n<p>En allt vanligare situation &auml;r att MR gjord p&aring; annan indikation visar f&ouml;r&auml;ndringar som kan representera MS.<br><br></p>\n<p>Distriktsl&auml;karen som erh&aring;ller information fr&aring;n olika specialistkliniker kan beh&ouml;va bevaka till exempel att &ouml;gonl&auml;kare faktiskt remitterar till neurolog efter konstaterad synnervsinflammation. Likas&aring; kan distriktsl&auml;karens roll i en v&auml;lfungerande sjukv&aring;rdsorganisation vara att syntetisera information fr&aring;n olika enheter: att till exempel &ouml;verv&auml;ga remiss till neurolog f&ouml;r MS-utredning p&aring; en 40-&aring;ring med kognitiva sv&aring;righeter som inte st&auml;mmer med diagnosticerad depression och som ifjol utreddes av urolog p&aring; grund av tr&auml;ngningsinkontinens.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "722b163b-c48c-4500-be4e-6a914ceea392",
+			"name": "722b163b-c48c-4500-be4e-6a914ceea392",
+			"type": "text",
+			"content": "<h2 id=\"Diagnostik-av-MS\">Diagnostik av MS</h2>\n<p>MS-diagnosen st&auml;lls av l&auml;kare som &auml;r &rdquo;v&auml;l f&ouml;rtrogen med diagnostik och behandling av MS&rdquo; och bygger p&aring; sjukhistoria, neurologisk status, MR av hj&auml;rna och ibland ryggm&auml;rg, samt unders&ouml;kning av ryggm&auml;rgsv&auml;tska. Diagnoskriterier underl&auml;ttar numera tidig diagnos som ibland kan st&auml;llas redan efter ett skov och en MR-unders&ouml;kning, om spridning i tid (minst en lesion laddar kontrast) och rum (f&ouml;rekomst av flera lesioner p&aring; typiska lokaler) kan p&aring;visas (1). S&auml;rskilda kriterier finns f&ouml;r tolkning av magnetkamera, och &auml;ven svenska riktlinjer f&ouml;r hur MR ska anv&auml;ndas vid diagnostik och uppf&ouml;ljning av MS (2).<br><br></p>\n<p>Ryggm&auml;rgsv&auml;tskeprovet analyseras avseende inflammatoriska rutinprover (celler, albumin) och elfores. Resultatet kan ge st&ouml;d f&ouml;r MS-diagnos (tecken till intrathekal immunoglobulinproduktion i form av oligoklonala band eller f&ouml;rh&ouml;jt IgG-index) eller tala mot diagnosen (t ex uttalad cellstegring).<br><br></p>\n<p>En vanlig situation &auml;r att en patient som haft ett skov g&ouml;r MR som visar flera MS-f&ouml;r&auml;ndringar men att ingen lesion laddar kontrast. En s&aring;dan patient uppfyller f&ouml;rvisso inte diagnoskriterier (kriteriet spridning i tid saknas). Men eftersom det &auml;r v&auml;l k&auml;nt att denna patientkategori obehandlat kommer att utveckla MS (&gt;80% inom 20 &aring;r) (3), s&aring; anses behandling med bromsmedicin ofta motiverad &auml;ven h&auml;r.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a0360e04-6e4d-4917-b10b-83e12fa481fe",
+			"name": "a0360e04-6e4d-4917-b10b-83e12fa481fe",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Kvalificerad neurologisk kompetens kr&auml;vs b&aring;de vid diagnostik och uppf&ouml;ljning av MS.</li>\r\n<li>&Ouml;ver 80% av Sveriges MS-patienter &auml;r registrerade i svenska MS-registret som &auml;r en del av Svenska Neuroregister (www.neuroreg.se).&nbsp;</li>\r\n<li>MS-patienten b&ouml;r ha tillg&aring;ng till sjuksk&ouml;terska med neurologisk inriktning som vid behov kan engagera neurologiskt inriktade parakliniker (sjukgymnast, arbetsterapeut, kurator, psykolog).</li>\r\n<li>P&aring; Svenska MS-s&auml;llskapets hemsida (<a href=\"http://www.mssallskapet.se\">www.mssallskapet.se</a>), som uppdateras kontinuerligt, finns specifika behandlingsriktlinjer, checklistor och nationella uppf&ouml;ljningsprogram. D&auml;r finns ocks&aring; Metodboken, som inneh&aring;ller detaljerad information om bl a diagnostik, behandling och omh&auml;ndertagande av MS-patienter.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "95f5fe9c-f7d6-4798-8db8-8b1abfa88514",
+			"name": "95f5fe9c-f7d6-4798-8db8-8b1abfa88514",
+			"type": "text",
+			"content": "<h2 id=\"MS-patienten-som-plotsligt-forsamrats\">MS-patienten som pl&ouml;tsligt f&ouml;rs&auml;mrats</h2>\n<p>En person med MS-diagnos har idag normalt en regelbunden kontakt med neurolog och sjuksk&ouml;terska p&aring; neurologmottagning. Vid en f&ouml;rs&auml;mring av neurologiska funktioner v&auml;nder sig patienten d&auml;rf&ouml;r dit. Ibland finns av olika sk&auml;l ingen s&aring;dan etablerad kontakt varf&ouml;r patienten vid f&ouml;rs&auml;mring kontaktar sin h&auml;lsocentral. &Auml;r f&ouml;rs&auml;mringen relaterad till MS-sjukdomen finns tv&aring; m&ouml;jliga mekanismer: skov och pseudoskov. Skovet utg&ouml;rs vanligen av f&ouml;r patienten nya symtom med tidsf&ouml;rlopp som beskrivits ovan och som motsvaras av en nytillkommen inflammation i CNS. Pseudoskovet beskrivs d&auml;remot som en f&ouml;rs&auml;mring av tidigare restsymptom och kan ofta f&ouml;rklaras av konduktionsblock i remyeliniserade nervbanor pga infektion med feber. Pseudoskov inneb&auml;r d&auml;rmed inte att MS-sjukdomen &auml;r aktiv och behandlingen best&aring;r i att &aring;tg&auml;rda orsaken till den f&ouml;rh&ouml;jda kroppstemperaturen, till exempel en urinv&auml;gsinfektion p&aring; grund av ofullst&auml;ndig bl&aring;st&ouml;mning.<br><br></p>\n<p>MS-skov kan behandlas med kortikosteroider i h&ouml;gdos vid akuta funktionsneds&auml;ttande symptom som till exempel nedsatt g&aring;ngf&ouml;rm&aring;ga eller sv&aring;ra sm&auml;rttillst&aring;nd. Behandlingen med metylprednisolon, 1&nbsp;000 mg dagligen intraven&ouml;st, ges under tre dagar och p&aring;b&ouml;rjas snarast innan spontan f&ouml;rb&auml;ttring av skovet har skett. D&auml;rmed f&ouml;rkortas skovets varaktighet och sv&aring;righetsgrad men &auml;nnu saknas &ouml;vertygande bevis f&ouml;r f&ouml;rb&auml;ttrad utl&auml;kning av skovet.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1a783f34-38d4-47fd-a01b-45bc6c425747",
+			"name": "1a783f34-38d4-47fd-a01b-45bc6c425747",
+			"type": "text",
+			"content": "<h2 id=\"Sjukdomsspecifik-behandling-vid-MS\">Sjukdomsspecifik behandling vid MS</h2>\n<p>Idag finns elva godk&auml;nda sjukdomsspecifika behandlingar vid MS, <span style=\"color: #ff0000;\">se Tabell 1</span>. Samtliga ges som monoterapi och har sin effekt genom att via immunmodulering eller immunsupprimering minska risk f&ouml;r nya MS-inflammationer. Behandling &auml;r d&auml;rf&ouml;r motiverad f&ouml;r patienter med f&ouml;rv&auml;ntad inflammatorisk aktivitet (yngre patienter, &lt;15 &aring;r sedan debut). Initiering av eller fortsatt behandling &auml;r normalt inte motiverad f&ouml;r en 55-&aring;rig patient med MS sedan 25 &aring;r som upplever smygande f&ouml;rs&auml;mring av neurologiska funktioner &ndash; den inflammatoriska aktiviteten &auml;r h&auml;r minimal p&aring; grund av &aring;lder/sjukdomsduration (m&aring;let med behandling redan uppn&aring;tt) och behandlingen inte har n&aring;gon tydlig bromsande effekt vid progressiv sjukdom. &nbsp;Behandlingen ska sk&ouml;tas av l&auml;kare med neurologisk kompetens och intresse f&ouml;r MS. Monitorering av behandlingseffekt g&ouml;rs med &aring;rliga MR-unders&ouml;kningar.</p>\n<p><br>Specifika behandlingsriktlinjer, checklistor och nationella uppf&ouml;ljningsprogram finns tillg&auml;ngliga p&aring; Svenska MS-s&auml;llskapets hemsida (www.mssallskapet.se).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "da050b7f-058b-4c4c-9093-873537fd18bf",
+			"name": "da050b7f-058b-4c4c-9093-873537fd18bf",
+			"type": "tablewide",
+			"content": {
+				"number": "1",
+				"title": "Sjukdomsspecifik behandling vid multipel skleros (MS)",
+				"id": "",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td><strong>L&auml;kemedel</strong></td>\r\n<td><strong>Substans</strong></td>\r\n<td><strong>Administration</strong></td>\r\n<td><strong>Dosering</strong></td>\r\n<td><strong>Introduktions&aring;r&nbsp;<sup>a</sup></strong></td>\r\n</tr>\r\n<tr>\r\n<td>Betaferon Extavia</td>\r\n<td>Interferon beta-1b</td>\r\n<td>Subkutant</td>\r\n<td>varannan dag (250 ug)</td>\r\n<td>1995</td>\r\n</tr>\r\n<tr>\r\n<td>Avonex</td>\r\n<td>Interferon beta-1a</td>\r\n<td>Intramuskul&auml;rt</td>\r\n<td>1&nbsp;g&aring;ng/vecka (30 ug)</td>\r\n<td>1997</td>\r\n</tr>\r\n<tr>\r\n<td>Rebif</td>\r\n<td>Interferon beta-1a</td>\r\n<td>Subkutant</td>\r\n<td>3&nbsp;g&aring;nger/vecka (44 ug)</td>\r\n<td>1998</td>\r\n</tr>\r\n<tr>\r\n<td>Plegridy</td>\r\n<td>Peginterferon beta-1a</td>\r\n<td>Subkutant</td>\r\n<td>1 g&aring;ng varannan vecka (125 ug)</td>\r\n<td>2015</td>\r\n</tr>\r\n<tr>\r\n<td>Copaxone</td>\r\n<td>Glatirameracetat<br /><br /></td>\r\n<td>Subkutant</td>\r\n<td>1 g&aring;ng dagligen (20 mg)* <span style=\"color: #ff0000;\">eller <br /><span style=\"color: #000000;\">3 ggr/vecka (40 mg)*</span><br /></span>\r\n<p><span style=\"color: #ff0000;\"></span></p>\r\n</td>\r\n<td>2001</td>\r\n</tr>\r\n<tr>\r\n<td>Tysabri</td>\r\n<td>Natalizumab</td>\r\n<td>Intraven&ouml;st</td>\r\n<td>1 g&aring;ng/m&aring;nad (300 mg)</td>\r\n<td>2006</td>\r\n</tr>\r\n<tr>\r\n<td>Gilenya</td>\r\n<td>Fingolimod</td>\r\n<td>Peroralt</td>\r\n<td>1 g&aring;ng dagligen (0.5 mg)</td>\r\n<td>2011</td>\r\n</tr>\r\n<tr>\r\n<td>Lemtrada</td>\r\n<td>Alemtuzumab</td>\r\n<td>Intraven&ouml;st</td>\r\n<td>1 g&aring;ng dagligen (12 mg) i 5 dagar. Efter 1 &aring;r ges sammados i 3 dagar</td>\r\n<td>2013</td>\r\n</tr>\r\n<tr>\r\n<td>Tecfidera</td>\r\n<td>Dimetylfumarat</td>\r\n<td>Peroralt</td>\r\n<td>2 g&aring;nger dagligen (240 mg)</td>\r\n<td>2014</td>\r\n</tr>\r\n<tr>\r\n<td>Aubagio</td>\r\n<td>Teriflunomid</td>\r\n<td>Peroralt</td>\r\n<td>1 g&aring;ng dagligen (14 mg)</td>\r\n<td>2014</td>\r\n</tr>\r\n<tr>\r\n<td>Mabthera</td>\r\n<td>Rituximab</td>\r\n<td>Intraven&ouml;st</td>\r\n<td>1000/500 mg var 6:e m&aring;nad i 3 &aring;r</td>\r\n<td>**</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"5\">\r\n<p>F&ouml;r vetenskapliga referenser inkl pivotala studier var god se <a href=\"http://www.sallskapet.se/lakemedel\">www.sallskapet.se/lakemedel</a>.</p>\r\n<p>a) &Aring;rtal som substansen introducerades i Sverige p&aring; MS-indikation.</p>\r\n<p>* Villkorad subvention ** Har inte MS som godk&auml;nd behandlingsindikation</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9c26b63d-1bc5-4d25-8844-e4b3a5574613",
+			"name": "9c26b63d-1bc5-4d25-8844-e4b3a5574613",
+			"type": "text",
+			"content": "<h3 id=\"Interferon-beta-1a-och-1b-och-peginterferon-beta-1a\">Interferon beta (1a och 1b) och peginterferon beta 1a</h3>\n<p>Betainterferonpreparaten ger en m&aring;ttlig, cirka 30%, reduktion av skovfrekvensen och utveckling av neurologisk funktionsneds&auml;ttning, samt 60&ndash;80% reduktion av nya cerebrala MS-lesioner. De vanligaste biverkningarna &auml;r influensaliknande reaktioner, vilka ofta avtar med tiden och kuperas med paracetamol eller ibuprofen, och hudbiverkning vid subkutan administrering. Blod- och leverstatus kontrolleras pga risk f&ouml;r lymfopeni, trombocytopeni och aminotransferasstegring. Hypotyreos kan utvecklas i ett f&aring;tal fall. Neutraliserande antikroppar (NAB) mot betainterferon kan utvecklas och eftersom behandlingseffekten d&aring; blockeras ska kontroll av NAB g&ouml;ras efter 1 respektive 2 &aring;rs behandling. Vid behandling med peginterferon beta &auml;r risken f&ouml;r utveckling av NAB l&auml;gre varf&ouml;r rutinm&auml;ssig kontroll inte &auml;r indicerad.</p>\n<h3 id=\"Glatirameracetat\">Glatirameracetat</h3>\n<p>Glatirameracetat&nbsp;har en klinisk effekt likv&auml;rdig med <a href=\"http://lakemedelsboken.se/atc/A16AA06\">betain</a>terferon. Injektionsreaktioner i huden &auml;r vanliga och hos ca 15% av patienterna kan en sj&auml;lvbegr&auml;nsande post-injektionsreaktion utvecklas med ansiktsrodnad, hj&auml;rtklappning, tryck &ouml;ver br&ouml;stet, andn&ouml;d och oro.</p>\n<h3 id=\"Natalizumab\">Natalizumab</h3>\n<p>Natalizumab &auml;r en humaniserad monoklonal antikropp som blockerar lymfocyters f&ouml;rm&aring;ga att passera genom k&auml;rlv&auml;ggen. Vid MS blockeras d&auml;rmed deras passage till CNS.&nbsp;Natalizumab &auml;r betydligt mer effektivt j&auml;mf&ouml;rt behandlingar listade ovan: cirka 70% reduktion av skovfrekvensen, en tydlig h&auml;mning av risken f&ouml;r &ouml;kat neurologiskt deficit samt en uttalad reduktion av nya cerebrala MS-lesioner.</p>\n<p>Redan i de pivotala studierna noterades en allvarlig biverkning, &rdquo;progressiv multifokal leukoencefalopati&rdquo; (PML), som ger symptom som vid en snabbt (veckor-m&aring;nader) progredierande encefalit och beror p&aring; aktivering av latent JC-virus infektion. Den &aring;rliga risken f&ouml;r PML har uppskattats till 1 promille efter 2 &aring;rs behandling. Risken f&ouml;r PML kan stratifieras med hj&auml;lp av test av JC-virusserologi och JCV-index. Tidig identifiering av PML ledande till uts&auml;ttning av natalizumab &auml;r sannolikt avg&ouml;rande f&ouml;r prognosen. Behandling med natalizumab inneb&auml;r ocks&aring; en viss risk&ouml;kning f&ouml;r infektioner med virus ur herpesgruppen. &Ouml;verk&auml;nslighetsreaktioner &auml;r associerade till utveckling av NAB och kan upptr&auml;da vid de f&ouml;rsta infusionerna och s&auml;llsynt (&lt;1%) som anafylaktoid reaktion.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e3150bc7-21ea-46a7-b48b-8fbfae30f27e",
+			"name": "e3150bc7-21ea-46a7-b48b-8fbfae30f27e",
+			"type": "text",
+			"content": "<h3 id=\"Fingolimod\">Fingolimod</h3>\n<p>Fingolimod&nbsp;h&auml;mmar sfingosin 1-fosfatreceptorn, vilket ger en relativ omf&ouml;rdelning av lymfocyter som i h&ouml;gre utstr&auml;ckning stannar i lymfoid v&auml;vnad och d&auml;rmed l&auml;gre niv&aring;er i blodcirkulationen. I pivotala studier erh&ouml;lls j&auml;mf&ouml;rt placebo cirka 50% reduktion av skovaktiviteten, en m&aring;ttligt minskad risk f&ouml;r best&aring;ende neurologisk f&ouml;rs&auml;mring och en uttalad h&auml;mning p&aring; antalet nybildade cerebrala MS-lesioner. I en j&auml;mf&ouml;rande studie med intramuskul&auml;rt givetinterferon beta-1a var behandlingseffekten tydligt b&auml;ttre med fingolimod.</p>\n<p><br>Behandlingen har effekter p&aring; andra organ som hj&auml;rta, lungor, &ouml;gon och lever. Fingolimod ger bradykardi som &auml;r mest uttalad vid f&ouml;rsta dosen och det finns &auml;ven en risk f&ouml;r AV-block. Behandlingen ska d&auml;rf&ouml;r startas p&aring; mottagningen med 6 timmars kontinuerlig hj&auml;rt&ouml;vervakning. En kontroll av &ouml;gonbottenstatus ska genomf&ouml;ras efter 3&nbsp;m&aring;naders behandling. Behandling med fingolimod kan &ouml;ka risk f&ouml;r infektioner inklusive opportunistiska infektioner. Blodprovskontroller av leukocyter, lymfocyter och leverstatus ska ocks&aring; genomf&ouml;ras.</p>\n<h3 id=\"Alemtuzumab\">Alemtuzumab</h3>\n<p>Alemtuzumab &auml;r en humaniserad monoklonal anti-CD 52 antikropp som via bindning till det membranbundna proteinet CD52 lyserar lymfocyter (T- och B-celler) i perifert blod. Inom hematoonkologi finns stor erfarenhet av substansen som fram till 2012 fanns registrerad p&aring; s&aring;dan indikation. Alemtuzumab ges efter premedicinering (fr&auml;mst metylprednisolon och antihistamin) som en behandlingsomg&aring;ng under 5 dagar som efter 1 &aring;r upprepas med en 3 dagar l&aring;ng behandling.</p>\n<p><br>I pivotala studier har j&auml;mf&ouml;relse gjorts med aktiv behandling (interferon beta 1-a 44 ug subkutant 3 ggr/vecka). Trots att j&auml;mf&ouml;relse inte gjordes mot placebo s&aring;gs en cirka 50% minskning av risk f&ouml;r skov, och behandlingsvinster avseende best&aring;ende neurologisk f&ouml;rs&auml;mring och antal nybildade cerebrala MS-lesioner</p>\n<p><br>Efter en behandling sjunker antalet B- och T-lymfocyter till icke m&auml;tbara niv&aring;er i perifert blod. B-cellsniv&aring;er &aring;terh&auml;mtar sig inom 6 m&aring;nader medan T-cellsniv&aring;er kan vara fortsatt l&aring;ga i flera &aring;r. Den tidigare &aring;terkomsten av B-celler har kopplats till risk f&ouml;r biverkning i form av autoimmun sjukdom s&aring;som: thyroideap&aring;verkan (36%), idiopatisk trombocytopen purpura (1%), och nefropati (0.3%). M&aring;natlig blodprovtagning och u-sticka &auml;r d&auml;rf&ouml;r indicerad till 48 m&aring;nader efter senast given dos. Risken f&ouml;r infektioner &auml;r n&aring;got &ouml;kad, s&auml;rskilt f&ouml;r virus ur herpesgruppen, varf&ouml;r 1 m&aring;nads profylaktisk behandling med aciclovir rekommenderas i samband med en behandlingsomg&aring;ng. Infusionsrelaterade biverkningar (till exempel frossa, urtikaria) &auml;r vanliga men oftast milda till m&aring;ttliga och som mest uttalade vid den f&ouml;rsta infusionen.</p>\n<h3 id=\"Dimetylfumarat\">Dimetylfumarat</h3>\n<p>Dimetylfumarats verkningsmekanism &auml;r inte fullst&auml;ndigt k&auml;nd, men aktivering av en transkriptionsfaktor (Nrf2) &auml;r beskriven vilken kan ge antiinflammatoriska effekter och skydda mot oxidativ stress. I pivotala studier s&aring;gs j&auml;mf&ouml;rt placebo cirka 50% reduktion av skovaktiviteten, en m&aring;ttligt minskad risk f&ouml;r best&aring;ende neurologisk f&ouml;rs&auml;mring och en uttalad h&auml;mning p&aring; antalet nybildade cerebrala MS-lesioner. Effektstorleken ter sig likv&auml;rdig j&auml;mf&ouml;rt fingolimod.</p>\n<p><br>Gastrointestinala biverkningar (illam&aring;ende, buksm&auml;rtor och diarr&eacute;) och flush f&ouml;rekommer vardera hos cirka en tredjedel av behandlade, men gick vanligen &ouml;ver efter 1 m&aring;nads behandling. Enstaka fall med PML &auml;r beskrivna. Blodprover inklusive lymfocytniv&aring;er f&ouml;ljs var tredje m&aring;nad.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3d0879cc-a94b-4384-86d6-45d4b017a486",
+			"name": "3d0879cc-a94b-4384-86d6-45d4b017a486",
+			"type": "text",
+			"content": "<h3 id=\"Teriflunomid\">Teriflunomid</h3>\n<p>Teriflunomid &auml;r den aktiva metaboliten till leflunomid som anv&auml;nds vid reumatoid artrit. Teriflunomid s&auml;nker lymfocytniv&aring;er genom h&auml;mning av pyrimidinsyntesen. Pivotala studier har visat en m&aring;ttlig, cirka 30%, reduktion av skovfrekvensen och utveckling av neurologisk funktionsneds&auml;ttning. Effektstorleken ter sig likv&auml;rdig j&auml;mf&ouml;rt den f&ouml;r betainterferon.</p>\n<p><br>Gastrointestinala biverkningar (illam&aring;ende, diarr&eacute;), laboratorieavvikelser i blodprover (transaminasstegring, l&auml;gre LPK och TPK) samt &ouml;verg&aring;ende h&aring;ravfall &auml;r beskrivna. Blodprover f&ouml;ljs regelbundet, de f&ouml;rsta sex m&aring;naderna kontrolleras leverprover varannan vecka, d&auml;refter varannan m&aring;nad.</p>\n<p><br>P&aring; grund av l&aring;ng halveringstid (genomsnitt 20 dagar) och teratogen effekt i djurstudier &auml;r noggrant graviditetsskydd indicerat. Behandlingsprotokoll f&ouml;r p&aring;skyndad eliminering av teriflunomid finns. Teriflunomid interagerar med ett antal l&auml;kemedel.</p>\n<p></p>\n<h3 id=\"Rituximab\">Rituximab</h3>\n<p>Rituximab &auml;r en chimer monoklonal anti-CD 20 antikropp som via bindning till CD20 selektivt lyserar B-lymfocyter i perifert blod. Inom hematoonkologi och reumatologi finns stor erfarenhet av rituximab som &auml;r godk&auml;nt f&ouml;r behandling av t ex non-Hodgkin lymfom och reumatoid artrit. Rituximab saknar MS som behandlingsindikation enligt FASS. Vetenskapligt st&ouml;d fr&aring;n randomiserade kontrollerade studier med rituximab finns fr&aring;n tv&aring; fas II studier. Fas III studier av rituximab vid MS saknas vilket sammanh&auml;nger med att patentet f&ouml;r rituximab har g&aring;tt ut. St&ouml;d f&ouml;r behandlingsprincipen anti-CD20 behandling vid MS finns fr&aring;n tre fas III studier med den humaniserade anti-CD 20 antikroppen ocrelizumab. Tv&aring; registerbaserade svenska observationsstudier har visat att: behandling med rituximab f&ouml;refaller mer effektiv och tolerabel j&auml;mf&ouml;rt fingolimod hos patienter som bytt fr&aring;n natalizumab pga JC-virus positivitet, samt att behandling med rituximab (n=822, i genomsnitt 22 m&aring;naders behandling) &auml;r s&auml;ker och effektiv. I en ytterligare svensk studie unders&ouml;ktes 75 kliniskt stabila MS patienter som bytte fr&aring;n behandling med interferon beta eller glatirameracetat till rituximab: bytet ledde till en signifikant minskad inflammatorisk aktivitet m&auml;tt med s&aring;v&auml;l magnetkamera som niv&aring;er av axonala nedbrytningsprodukter i ryggm&auml;rgsv&auml;tska.</p>\n<p>Rituximab ges efter premedicinering, med fr&auml;mst metylprednisolon och antihistamin. Dosen 1000 mg ges som initial dos f&ouml;ljt av 500&nbsp; mg (alternativt 1000 mg) var sj&auml;tte m&aring;nad i tre &aring;r. D&auml;refter ges 500 mg (alternativt 1000 mg) som &aring;rlig infusion.</p>\n<p><br>I den nationella uppf&ouml;ljningen av 822 patienter noterades f&aring; allvarliga och inga livshotande biverkningar. Infusionsrelaterade biverkningar &auml;r vanliga men oftast l&auml;tta till m&aring;ttliga och incidensen sjunker med upprepad behandling (10% i samband med infusion nr 1-3, senare 2%). N&aring;gon s&auml;kerst&auml;llt &ouml;kad risk f&ouml;r infektioner har inte noterats vid l&aring;ngtidsuppf&ouml;ljning av patienter med reumatoid artrit. Efter upprepad behandling med rituximab har dock en diskret s&auml;nkning av IgG-niv&aring;er noterats, vilket skulle kunna &ouml;ka risk f&ouml;r infektioner. PML finns inte beskrivet som behandlingskomplikation hos patienter med MS. Blodprover inklusive IgG-niv&aring;best&auml;mning och fl&ouml;descytometri (CD19/CD20) kontrolleras inf&ouml;r infusion. Rituximab ges inte vid p&aring;g&aring;ende infektion med allm&auml;np&aring;verkan.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fa38f16f-75e2-4607-b98c-907fe0372d14",
+			"name": "fa38f16f-75e2-4607-b98c-907fe0372d14",
+			"type": "text",
+			"content": "<h2 id=\"Livsstilsfaktorer\">Livsstilsfaktorer</h2>\n<p>R&ouml;kare har s&auml;mre prognos vad g&auml;ller utveckling av neurologisk funktionsneds&auml;ttning. I en studie noterades att de som slutar r&ouml;ka cigaretter i samband med MS-diagnos har b&auml;ttre prognos j&auml;mf&ouml;rt de som forts&auml;tter att r&ouml;ka. MS-sjukdomen i sig &auml;r d&auml;rf&ouml;r en god anledning att sluta r&ouml;ka.</p>\n<p><br>L&aring;ga D-vitaminniv&aring;er &auml;r associerade till h&ouml;gre inflammatorisk aktivitet och f&ouml;rs&auml;mrad prognos. &Auml;ven epidemiologiska, experimentella och genetiska data talar f&ouml;r att D-vitaminstatus kan vara en viktig faktor f&ouml;r uppkomsten av och prognosen vid MS.</p>\n<p><br>En del MS-l&auml;kare har p&aring; dessa grunder rekommenderat D-vitamintillskott medan andra har inv&auml;ntat resultat av p&aring;g&aring;ende st&ouml;rre randomiserade kontrollerade studier (RCT). H&ouml;sten 2016 presenterades resultat fr&aring;n den hittills st&ouml;rsta RCTn d&auml;r 229 patienter som samtliga fick behandling med betainterferon studerades under 48 veckor: behandling med D-vitamintillskott resulterade i signifikant minskad (32%) inflammatorisk aktivitet p&aring; MR och en trend till minskad risk f&ouml;r skov. Dessa resultat talar mot att samband som setts i observationsstudier beror p&aring; omv&auml;nda orsakssamband eller beror p&aring; andra effekter av solexponering, och b&ouml;r enligt flera bed&ouml;mare leda till att MS-patienter rekommenderas D-vitamintillskott. Ett f&ouml;rslag till dos &auml;r 2000 IE/dag av vitamin D3 (kolekalciferol).&nbsp; Den dosen anses vara ofarlig och ger hos de flesta tillr&auml;ckliga niv&aring;er av D-vitamin (S-25[OH]vitamin D). 100-150 nmol/l har f&ouml;reslagits som m&aring;lniv&aring;. F&ouml;r referenser r&ouml;kning och D-vitamin se <a href=\"http://www.mssallskapet.se\">www.mssallskapet.se</a>.</p>\n<h2 id=\"Graviditet-och-amning\">Graviditet och amning</h2>\n<p>F&ouml;r de flesta l&auml;kemedel listade ovan &auml;r kunskapsl&auml;get g&auml;llande behandling under graviditet antingen bristf&auml;lligt eller s&aring; finns st&ouml;d f&ouml;r teratogenicitet av varierande grad. Ett principiellt undantag &auml;r lyserande monoklonala antikroppar, som kan ges en tid innan planerad graviditet och ha kvar en sjukdomsd&auml;mpande effekt under m&aring;nader till &aring;r trots att l&auml;kemedlet g&aring;tt ur kroppen. Den inflammatoriska sjukdomsaktiviteten avtar spontant under graviditeten, framf&ouml;r allt under sista trimestern. Just efter f&ouml;rlossningen och under de n&auml;rmaste m&aring;naderna &auml;r d&auml;remot risken f&ouml;r skov kraftigt &ouml;kad. Inget av preparaten kan rekommenderas under amning i brist p&aring; tillr&auml;cklig erfarenhet av effekter p&aring; barnet. I normalfallet b&ouml;r d&auml;rf&ouml;r vikt l&auml;ggas vid denna information och att man planerar f&ouml;r att l&auml;gga ned amning och p&aring;b&ouml;rja behandling med bromsmedicin just efter f&ouml;rlossningen.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2fa8c36f-c3ea-4bad-8e32-e576857067b4",
+			"name": "2fa8c36f-c3ea-4bad-8e32-e576857067b4",
+			"type": "text",
+			"content": "<h2 id=\"Symptomlindrande-MS-behandling\">Symptomlindrande MS-behandling</h2>\n<p>MS-patienten som upplever besv&auml;rande symptom b&ouml;r erbjudas symptomlindrande behandling. S&aring;dan behandling kan vara icke-farmakologisk, s&aring;som fysioterapeutisk tr&auml;ning, eller kompensation av funktionsbortfall med hj&auml;lpmedel. Farmakologisk behandling kompletterar ofta s&aring;dan behandling: t ex uroterapeuts insatser i kombination med medicinering mot urinbl&aring;sdysfunktion, eller fysioterapeutisk behandling i kombination med farmakologisk behandling mot spasticitet. Symtomen vid MS &auml;r m&aring;ngfacetterade och naturalf&ouml;rloppet vid obehandlad MS-sjukdom inneb&auml;r en tilltagande &ouml;kad omfattning och sv&aring;righetsgrad. Ibland upptr&auml;der behandlingskr&auml;vande symptom tidigt men &auml;r d&aring; oftare &ouml;verg&aring;ende och associerade till skovaktivitet. Som regel &auml;r behovet av symtomlindrande behandling st&ouml;rst under det progressiva f&ouml;rloppet. Flertalet symtom kan framg&aring;ngsrikt behandlas och behandlingen skiljer sig inte v&auml;sentligt vid MS j&auml;mf&ouml;rt vid andra neurologiska tillst&aring;nd. De vanligaste symtomen med tillh&ouml;rande behandlingar tas upp nedan. F&ouml;r vetenskapliga referenser och mer detaljerad information, se www.mssallskapet.se/Metodboken.</p>\n<p></p>\n<h3 id=\"Trotthet-fatigue-\">Tr&ouml;tthet (fatigue)</h3>\n<p>Tr&ouml;tthet (fatigue), som drabbar upp till 80% av MS-patienterna, &auml;r ofta funktionshindrande och kan finnas tidigt i sjukdomsf&ouml;rloppet hos patienter med i &ouml;vrigt bevarad neurologisk funktion. Bakomliggande depression som kan maskeras av MS-tr&ouml;tthet ska uppm&auml;rksammas. Fatigue k&auml;nnetecknas av orkesl&ouml;shet, uttr&ouml;ttbarhet och kan f&ouml;rs&auml;mras av v&auml;rme, psykisk eller fysisk anstr&auml;ngning. Tr&ouml;ttheten &ouml;kar ofta p&aring; eftermiddagen och kommer ibland relativt pl&ouml;tsligt utan specifik orsak. Problemen minskas av &rdquo;energihush&aring;llning&rdquo;, kortare arbetspass och vilopauser. Behandling &auml;r i f&ouml;rsta hand icke-farmakologisk och innefattar fysisk tr&auml;ning och kurser i hantering av MS-relaterad tr&ouml;tthet. I undantagsfall kan farmakologisk behandling &ouml;verv&auml;gas, till exempel amantadin 200&ndash;400 mg/dag (licenspreparat, t&nbsp;ex Amantadin Stada, tabletter 100&nbsp;mg) eller modafinil 100&ndash;200&nbsp;mg som en dos (morgon) eller tv&aring; doser (morgon och mitt p&aring; dagen).</p>\n<h3 id=\"Depression\">Depression</h3>\n<p>H&auml;lften av MS-patienter utvecklar depression under sjukdomsf&ouml;rloppet. Denna svarar ofta bra p&aring; sedvanlig antidepressiv behandling med SSRI-preparat s&aring;som till exempel citalopram eller sertralin i doser enligt FASS.</p>\n<h3 id=\"Neurogen-blasrubbning\">Neurogen bl&aring;srubbning</h3>\n<p>Neurogen bl&aring;srubbning &auml;r vanligt f&ouml;rekommande. &Ouml;veraktiv bl&aring;sa (begr&auml;nsad fyllnadskapacitet med tr&auml;ngningar, frekventa miktioner, nokturi och ibland inkontinens) &auml;r vanligast. Samtidig detrusor-sfinkter-dyssynergi med ofullst&auml;ndig bl&aring;st&ouml;mning kan f&ouml;rekomma. Basal utredning innefattar anamnes, uteslutande av urinv&auml;gsinfektion och f&ouml;rh&ouml;jd residualurin (&gt;&nbsp;100-200 ml).</p>\n<p><br>Ett s&auml;tt att behandla &ouml;veraktiv bl&aring;sa &auml;r att minska v&auml;tskeintaget, vilket dock kan bidra till problem med f&ouml;rstoppning. Vad g&auml;ller farmakologisk behandling &auml;r antimuskarinerga l&auml;kemedel (tolterodin, solifenacin, darifenacin, fesoterodin) med dosering enligt FASS f&ouml;rstahandspreparat. Mirabegron &auml;r en beta-3-adrenoreceptoragonist som till skillnad fr&aring;n f&ouml;rstahandspreparaten inte har antikolinerga biverkningar. Oxybutynin har p&aring; grund av p&aring;tagligare antikolinerga biverkningar minskad anv&auml;ndbarhet, men kan administreras som depotpl&aring;ster eller via installation i urinbl&aring;san. Vid sv&aring;rbehandlad nokturi eller som vid behovs-medicinering, till exempel vid flygresor och teaterbes&ouml;k, kan n&auml;sspray med desmopressin ges under samtidig v&auml;tskerestriktion.</p>\n<p><br>T&ouml;mningssv&aring;righeter med f&ouml;rh&ouml;jd residualurin kan orsaka &aring;terkommande urinv&auml;gsinfektioner och &ndash; vid h&ouml;ga tryck &ndash; nedsatt njurfunktion. Tillst&aring;ndet behandlas med ren intermittent katetrisering (RIK) 3&ndash;5 g&aring;nger/dag.</p>\n<p><br>Uttalade besv&auml;r fr&aring;n urinbl&aring;san ska utredas och behandlas av urolog. Flera behandlingsalternativ finns s&aring;som intravesikala injektioner med botulinumtoxin och kirurgisk behandling.</p>\n<h3 id=\"Sexuell-dysfunktion\">Sexuell dysfunktion</h3>\n<p>S&auml;nkt sexuell lust och f&ouml;rm&aring;ga f&ouml;rekommer vid MS. Kvinnor kan besv&auml;ras av nedsatt sensibilitet, nedsatt lubrikation och sm&auml;rta vid samlag. Behandlingen &auml;r glidmedel och eventuell &ouml;strogeninneh&aring;llande salva. M&auml;n kan besv&auml;ras av erektil dysfunktion. Behandling med antidepressiva l&auml;kemedel, neuroleptika, bensodiazepiner, betablockerare och antiepileptika kan neds&auml;tta erektionsf&ouml;rm&aring;gan. Peroral behandling, utanf&ouml;r l&auml;kemedelsf&ouml;rm&aring;nen, med sildenafil, tadalafil och vardenafil har ofta god effekt. Injektion av alprostadil i penis corpus cavernosum eller som uretralstift (b&aring;da med l&auml;kemedelsf&ouml;rm&aring;n) utg&ouml;r behandlingsalternativ.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1c08f909-7510-4879-8f59-070ffac1f6b2",
+			"name": "1c08f909-7510-4879-8f59-070ffac1f6b2",
+			"type": "text",
+			"content": "<h3 id=\"Smarta\">Sm&auml;rta</h3>\n<p>Sm&auml;rta kan vara akut eller kronisk och mekanismerna nociceptiva och/eller neurogena. Akuta neurogena, ibland paroxysmalt upptr&auml;dande, sm&auml;rtor (till exempel trigeminusneuralgi, sm&auml;rtsamma kramper, radikul&auml;r sm&auml;rta) behandlas ofta framg&aring;ngsrikt med karbamazepin i l&aring;g dos (depottablett 100-200 mg 2 g&aring;nger dagligen), gabapentin eller m&ouml;jligen pregabalin. Otillr&auml;ckligt behandlad spasticitet kan ocks&aring; vara sm&auml;rtsam och behandlas enligt nedan. Kronisk neurogen sm&auml;rta har ofta en dysestetisk svidande-br&auml;nnande karakt&auml;r och &auml;r mest besv&auml;rande nattetid i nedre extremiteterna. <br><br>F&ouml;rstahandsmedel &auml;r amitryptilin eller gabapentin. Dosen av amitriptylin trappas l&auml;mpligen upp l&aring;ngsamt med 5 mg per vecka till 25 mg till natten f&ouml;r att minska risk f&ouml;r biverkningar. En del patienter upplever effekt f&ouml;rst vid 50-75 mg till natten. Alternativ &auml;r bensodiazepiner (till exempel diazepam) till natten, duloxetin, venlafaxin eller pregabalin. Mer utvecklade funktionshinder, ofta hos rullstolsburna patienter, kan ge kronisk nociceptiv sm&auml;rta som ofta lokaliseras till l&auml;ndryggen. Behandlingen sker i samr&aring;d med sjukgymnast och arbetsterapeut och kan innefatta farmakologisk behandling mot nociceptiv sm&auml;rta, spasticitet och/eller kronisk neurogen v&auml;rk.</p>\n<h3 id=\"Spasticitet\">Spasticitet</h3>\n<p>Spasticitet kan ge uttalade problem framf&ouml;r allt vid progressiv sjukdom. En del MS-patienter med spastisk parapares kan dock anv&auml;nda sin spasticitet vid f&ouml;rflyttningar varf&ouml;r en spasmolytisk behandling i vissa fall kan f&ouml;rs&auml;mra funktionsf&ouml;rm&aring;gan. &nbsp;Behandlingen &auml;r i f&ouml;rsta hand fysioterapeutisk med dagliga t&auml;njnings&ouml;vningar. Vid pl&ouml;tslig f&ouml;rs&auml;mring av spasticitet ska bakomliggande behandlingskr&auml;vande orsak, <span style=\"color: #ff0000;\">exempelvis infektion och trycks&aring;r</span>, uteslutas.</p>\n<p><br>Farmakologiskt anv&auml;nds i f&ouml;rsta hand baklofen peroralt. Vid otillr&auml;cklig effekt kan sirdalud, som &auml;r ett licenspreparat, adderas och om nattliga besv&auml;r f&ouml;rekommer kan diazepam till natten pr&ouml;vas. Vi fokal/segmentell spasticitet &auml;r behandling med botulinumtoxin ett alternativ. En munspray inneh&aring;llande delta-9-tetrahydrocannabinol och cannabidiol (Sativex) har visat effekt p&aring; spasticitet orsakad av MS. Anv&auml;ndningen begr&auml;nsas av att l&auml;kemedlet inte omfattas av h&ouml;gkostnadsskyddet. Vid uttalade besv&auml;r kan baklofen tillf&ouml;ras intrathekalt via en pump.</p>\n<h3 id=\"Nedsatt-gangformaga\">Nedsatt g&aring;ngf&ouml;rm&aring;ga</h3>\n<p>4-aminopyridin f&ouml;rb&auml;ttrar nervimpuls&ouml;verledning i nervbanor med nedsatt funktion pga demyelinisering. Fampridin &auml;r en &rdquo;sustained release&rdquo;-beredning av denna substans. Studier har visat en f&ouml;rb&auml;ttrad g&aring;ngf&ouml;rm&aring;ga (25%) hos 35% (&rdquo;responders&rdquo;). Anv&auml;ndningen begr&auml;nsas av att l&auml;kemedlet inte omfattas av h&ouml;gkostnadsskyddet.</p>\n<h3 id=\"Ataxi-och-tremor\">Ataxi och tremor</h3>\n<p>Cerebell&auml;r ataxi och aktionstremor kan vara gravt funktionshindrande och &auml;r mycket sv&aring;rbehandlade vid MS. Fysioterapeutiska &aring;tg&auml;rder inklusive utprovning av hj&auml;lpmedel kan lindra symptomen. Farmakologisk behandling med betablockerare har oftast ingen effekt . Bensodiazepiner (till exempel klonazepam) har bristf&auml;llig effekt och anv&auml;ndningen begr&auml;nsas av biverkningar, som sedation och risk f&ouml;r tillv&auml;njning. Neurokirurgisk stereotaktisk operation har inte inneburit f&ouml;rb&auml;ttrad funktionsniv&aring;.</p>\n<h3 id=\"Neurogen-tarmdysfunktion\">Neurogen tarmdysfunktion</h3>\n<p>Kronisk obstipation &auml;r vanligt och kan f&ouml;rv&auml;rras av bristf&auml;lligt v&auml;tskeintag, bristf&auml;llig r&ouml;relsef&ouml;rm&aring;ga och antikolinerg behandling. Om inte kostr&aring;d (fiberintag) r&auml;cker f&aring;r i f&ouml;rsta hand bulklaxantia ins&auml;ttas. Inte s&auml;llan &auml;r v&auml;tskeintaget f&ouml;r l&aring;gt p&aring; grund av samtidig urininkontinens och intensifierad behandling av denna kan vara ett s&auml;tt att m&ouml;jligg&ouml;ra &ouml;kat v&auml;tskeintag. Stomioperation kan &ouml;verv&auml;gas vid behandlingsresistent fekal inkontinens.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b136b0fa-ea87-4a85-9de0-e1b349f210bb",
+			"name": "1e8fcf72-58af-4cac-8467-c633574ca9d2",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2><ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/neurologi/multipel-skleros.json",
+	"indexed": "true",
+	"modified": "2017-09-19 10:42"
+}

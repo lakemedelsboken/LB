@@ -1,0 +1,147 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Ordnat införande",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2017-09-11 08:59",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Maria Palmetun Ekbäck, Jan Liliemark",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "81a60de2-8e25-4e03-9dc3-d3d553dc6c28",
+			"name": "3fe826a9-4159-426f-901b-e3bad9c37309",
+			"type": "text",
+			"content": "<h1 id=\"Ordnat-inforande-av-nya-lakemedel\">Ordnat inf&ouml;rande av nya l&auml;kemedel</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c1d55877-9c46-4e14-8948-25523374dfb4",
+			"name": "a7022cc2-9b3c-4289-a84b-d19909d4df0f",
+			"type": "author",
+			"content": {
+				"firstname": "Maria",
+				"surname": "Palmetun Ekbäck",
+				"description": "Hudkliniken, Universitetssjukhuset, Örebro och ordförande LOK (Läkemedelskommittéordförandekollegiet i Sverige)",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "db87da52-4b89-49bc-88e6-ec9147d7f141",
+			"name": "db87da52-4b89-49bc-88e6-ec9147d7f141",
+			"type": "author",
+			"content": {
+				"firstname": "Jan",
+				"surname": "Liliemark",
+				"description": "SBU (Statens beredning för medicinsk och social utvärdering)",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "60b0919b-fa30-42a9-a6d6-2b47ca504549",
+			"name": "23bc98b5-ebab-4a4d-a1ec-4c1868e144e2",
+			"type": "text",
+			"content": "<h2 class=\"ingress\" id=\"Bakgrund\">Bakgrund</h2>\n<p class=\"ingress\">Inf&ouml;rande av nya l&auml;kemedel handlade l&auml;nge om att tillverkaren erh&ouml;ll ett marknadsf&ouml;ringstillst&aring;nd och d&auml;refter lanserade sin produkt direkt till f&ouml;rskrivarna. Efter inf&ouml;randet av l&auml;kemedelskommitt&eacute;er och l&auml;kemedelsenheter i landstingen kom fokus f&ouml;r marknadsf&ouml;ringen att skifta fr&aring;n den enskilde f&ouml;rskrivaren till att ocks&aring; innefatta patientorganisationer, politiker, h&ouml;gre tj&auml;nstem&auml;n och &ouml;vrig sjukv&aring;rdspersonal. Information, v&auml;rdering av nya l&auml;kemedel, erbjudanden och avtal hanterades dock traditionellt i stor utstr&auml;ckning inom det enskilda landstinget. Patienternas tillg&aring;ng till nya l&auml;kemedel varierade &ouml;ver landet, beroende p&aring; v&aring;rdniv&aring; och reflekterade ocks&aring; var de kliniska pr&ouml;vningarna genomf&ouml;rts.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ec29d7e1-1701-4cc4-a351-13aece52f99b",
+			"name": "ec29d7e1-1701-4cc4-a351-13aece52f99b",
+			"type": "text",
+			"content": "<p>&Auml;ven om Riksf&ouml;rs&auml;kringsverket tidigare hade som uppgift att godk&auml;nna nya l&auml;kemedel f&ouml;r rabattering var det f&ouml;rst i och med Lagen om l&auml;kemedelsf&ouml;rm&aring;ner (SFS 2002:160) och tillkomsten av L&auml;kemedelsf&ouml;rm&aring;nsn&auml;mnden (LFN) 2002 som nya l&auml;kemedel kom att p&aring; allvar bed&ouml;mas ur h&auml;lsoekonomisk synvinkel p&aring; nationell niv&aring;. Redan 1997 hade dock riksdagen antagit propositionen om prioriteringar i h&auml;lso- och sjukv&aring;rden (prop 1996/97:60), vilken Lagen om l&auml;kemedelsf&ouml;rm&aring;ner och LFN:s arbete grundade sig p&aring;. LFN:s kunde dock bara ta beslut om de l&auml;kemedel som respektive f&ouml;retag ans&ouml;kt om f&ouml;rm&aring;n f&ouml;r. Idag heter LFN Tandv&aring;rds- och l&auml;kemedelsf&ouml;rm&aring;nsverket (TLV), men samma regler g&auml;ller f&ouml;r f&ouml;rm&aring;nsbeslut, det vill s&auml;ga att f&ouml;retagen ans&ouml;ker om f&ouml;rm&aring;n och TLV har en n&auml;mnd, n&auml;mnden f&ouml;r l&auml;kemedelsf&ouml;rm&aring;ner, som tar beslut om f&ouml;rm&aring;nsstatus. F&ouml;rm&aring;nen g&auml;ller bara d&aring; l&auml;kemedlet s&auml;ljs via expeditionsapotek, medan s&aring;kallade rekvisitionsl&auml;kemedel som anv&auml;nds inom sjukv&aring;rden fram till nyligen saknat en samlad, nationell v&auml;rdering. Se &auml;ven kapitlet om <a href=\"{pre}/kapitel/regelverket_och_it-stod/lakemedelsformanerna.html#u20_2\">l&auml;kemedelsf&ouml;rm&aring;nerna</a>.</p>\n<p><br>Redan 2009 uts&aring;g landets landstingsdirekt&ouml;rer en r&aring;dgivande grupp, Nya L&auml;kemedelsterapi (NLT) gruppen, f&ouml;r att samordna hanteringen av komplicerade nya l&auml;kemedel. Sedan TLV &aring;r 2011 p&aring; regeringens uppdrag startade det s&aring;kallade klinikl&auml;kemedelsprojektet f&ouml;r att bist&aring; landstingen med h&auml;lsoekonomiska underlag f&ouml;r utvalda, nya rekvisitionsl&auml;kemedel har NLT-gruppen gett ut rekommendationer f&ouml;r anv&auml;ndning av nya l&auml;kemedel baserat p&aring; dessa h&auml;lsoekonomiska utredningar och etiska &ouml;verv&auml;gande utifr&aring;n riksdagens prioriteringsprinciper.<br><br>P&aring; basen av ett par utredningsprojekt som tagits fram av SKL, st&ouml;tt av Socialdepartementet och i samverkan mellan landstingen, myndigheter och l&auml;kemedelsindustrin, startade den s&aring;kallade samverkansmodellen f&ouml;r ordnat inf&ouml;rande den 1 januari 2015 f&ouml;r alla typer av l&auml;kemedel. Denna har &auml;ven tidigare beskrivits i annat sammanhang (1).<span style=\"color: #000000;\"> Samv</span>erkansmodellen &auml;r en forts&auml;ttning, utvidgning och formalisering av NLT-gruppens uppdrag och inbegriper det arbete som TLV och landstingen samverkar i tillsammans med ber&ouml;rda f&ouml;retag, men involverar ocks&aring; en rad andra akt&ouml;rer, framf&ouml;rallt myndigheter s&aring;som L&auml;kemedelsverket, SBU och Socialstyrelsen. Syftet med arbetet &auml;r att ett ordnat inf&ouml;rande ska m&ouml;jligg&ouml;ra att alla patienter i landet f&aring;r samma tillg&aring;ng till &auml;ndam&aring;lsenlig och kostnadseffektiv behandling med nya l&auml;kemedel. Landstingen ska tillr&auml;ckligt tidigt (i normalfallet inom ett par m&aring;nader efter marknadsf&ouml;ringsgodk&auml;nnandet) f&aring; en rekommendation om att anv&auml;nda eller avst&aring; fr&aring;n att anv&auml;nda ett nytt l&auml;kemedel. De rekommendationer som ges ska bygga p&aring; en h&auml;lsoekonomisk v&auml;rdering av h&ouml;g kvalitet och p&aring; de allm&auml;nt vedertagna etiska principerna f&ouml;r prioriteringar i sjukv&aring;rden. Det ordnade inf&ouml;randet kommer i praktiken att i f&ouml;rsta hand och initialt ber&ouml;ra l&auml;kemedel utanf&ouml;r prim&auml;rv&aring;rden. De aktuella patienterna behandlas dock &auml;ven till stor del inom prim&auml;rv&aring;rden, varf&ouml;r kunskap om processen &auml;r bra att k&auml;nna till f&ouml;r alla f&ouml;rskrivare.</p>\n<p></p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "871d91d0-2014-4f84-80dc-a14e9bd84736",
+			"name": "871d91d0-2014-4f84-80dc-a14e9bd84736",
+			"type": "text",
+			"content": "<h1>Rubrik</h1>\n<p>Text</p>",
+			"settings": {}
+		},
+		{
+			"id": "c685b5c0-6143-42f7-ac70-c9bd43fabfa2",
+			"name": "12e44a7e-312d-4b63-9f51-a2f11ad964de",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2><ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/regelverket_och_it-stod/ordnat_inforande.json",
+	"indexed": "true",
+	"modified": "2017-09-11 09:14"
+}

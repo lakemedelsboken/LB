@@ -1,0 +1,225 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Multipel skleros",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2017-09-11 16:20",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Peter Sundström, Stellan Båtsman",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "de0f3c8f-6cd9-4c73-b312-03768e750ead",
+			"name": "de0f3c8f-6cd9-4c73-b312-03768e750ead",
+			"type": "text",
+			"content": "<h1 id=\"Multipel-skleros\">Multipel skleros</h1>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1d8c0b67-ab9c-4f65-8597-914622fb6463",
+			"name": "8ff8af45-2d2e-43f9-8f01-c8d0ec79930f",
+			"type": "author",
+			"content": {
+				"firstname": "Peter",
+				"surname": "Sundström",
+				"description": "Umeå universitet",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3c9eec71-7f89-4a5a-a4cd-0584b8472a3a",
+			"name": "3c9eec71-7f89-4a5a-a4cd-0584b8472a3a",
+			"type": "author",
+			"content": {
+				"firstname": "Stellan",
+				"surname": "Båtsman",
+				"description": "",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4aa1dea9-4de0-4db5-ab82-8e1b6875c381",
+			"name": "df3989f9-b279-49fe-ace6-f6abd52a7587",
+			"type": "text",
+			"content": "<h2 class=\"ingress\" id=\"Inledning\">Inledning</h2>\n<p class=\"ingress\">Multipel skleros (MS) &auml;r en kronisk autoimmun sjukdom som via &aring;terkommande inflammationer drabbar det centrala nervsystemet (CNS), det vill s&auml;ga hj&auml;rna, synnerv och ryggm&auml;rg. Ur klinisk synpunkt kan sjukdomen delas in i tv&aring; delar: symptom pga inflammatorisk aktivitet respektive restsymptom av tidigare inflammationer. Den inflammatoriska aktiviteten kan idag effektivt behandlas med bromsmedicin, s&aring; pass att m&aring;let med behandling b&ouml;r vara fullst&auml;ndig avsaknad av inflammatorisk aktivitet.</p>\n<p class=\"ingress\"><br>Med stigande &aring;lder och sjukdomsduration avtar den inflammatoriska aktiviteten spontant. En MS-patient utan inflammatorisk aktivitet har inga skov (symptom p&aring; grund av nytillkommen inflammation i CNS) och har heller inga nya inflammationer p&aring; &aring;rlig kontroll med magnetkamera (MR). Den andra delen av sjukdomen, restsymptom, kan liknas vid restsymptomen som en patient har efter ett eller flera strokeinsjuknanden. Restsymptomen vid MS &auml;r p&aring; samma s&auml;tt irreversibla men kan dessutom tillta &ouml;ver tid (&rdquo;smygande&rdquo; eller progressiv MS) via sjukdomsmekanismer som idag inte &auml;r &aring;tkomliga f&ouml;r bromsmediciner. Av detta f&ouml;ljer att tidig diagnos och tidigt ins&auml;ttande av tillr&auml;ckligt effektiv bromsmedicin av allt att d&ouml;ma &auml;r av avg&ouml;rande betydelse f&ouml;r hur sjukdomen utvecklar sig p&aring; sikt.</p>\n<p><strong></strong></p>\n<p class=\"ingress\">S&aring;v&auml;l milj&ouml;faktorer och genetik &auml;r involverade i uppkomsten av MS, s&aring;som &auml;r fallet f&ouml;r andra autoimmuna sjukdomar. I Sverige insjuknar &aring;rligen 500-1000 personer med MS och det totala antalet personer med MS n&auml;rmar sig 20000. MS &auml;r 2-3 g&aring;nger vanligare hos kvinnor och median&aring;ldern vid debuten &auml;r 30 &aring;r med spridning ned i barna&aring;ren och i ovanliga fall &auml;nda upp till 60(-70) &aring;rs &aring;lder.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5b4c8f3c-6913-45d0-9ea4-e343a2a1e44e",
+			"name": "c36c093a-47c9-40c1-b91c-9a33415e0fa6",
+			"type": "text",
+			"content": "<h2 id=\"Nar-ska-MS-misstankas-\">N&auml;r ska MS misst&auml;nkas?</h2>\n<p>Vanligen, i upp till 90% av fallen, debuterar MS med skov (skovvist f&ouml;rl&ouml;pande MS). Ett skov beror p&aring; en nytillkommen inflammation i CNS som normalt kan visualiseras med MR. Symptomen tilltar under loppet av dagar-n&aring;gra veckor och avtar sedan spontant under veckor-m&aring;nader. I cirka h&auml;lften av fallen g&aring;r symptomen &ouml;ver helt - dessa patienter vill ibland just d&auml;rf&ouml;r inte utredas vidare, men givetvis &auml;r utredning lika motiverad h&auml;r. Ett exempel p&aring; symptom vid skov &auml;r parestesier i f&ouml;tter som sprider sig upp&aring;t och kan omfatta b&aring;l och delar av armar/h&auml;nder (inflammation i ryggm&auml;rgen, myelit). N&auml;r symptomen &auml;r som mest uttalade kan g&aring;ngsv&aring;righeter och vattenkastningsbesv&auml;r finnas. Exempel p&aring; andra symptom &auml;r nedsatt visus och f&auml;rgseende (s&auml;rskild f&ouml;r r&ouml;d f&auml;rg) med sm&auml;rtor vid &ouml;gonr&ouml;relser som tecken p&aring; synnervsinflammation (opticusneurit) eller symptom av en hj&auml;rnstamsinflammation med till exempel dubbelseende och nystagmus eller ett akut vestibul&auml;rt syndrom. &nbsp;Eftersom MS-inflammationer drabbar CNS finns en stor variation av de symptom som kan uppst&aring; vid ett skov. En mindre andel debuterar med en smygande f&ouml;rs&auml;mring (flera m&aring;nader till &aring;r) av neurologiska funktioner, vanligen tilltagande g&aring;ngsv&aring;righeter med vattenkastningsbesv&auml;r (prim&auml;r progressiv MS).<br><br></p>\n<p>Ut&ouml;ver det f&ouml;r MS-skovet typiska tidsf&ouml;rloppet ovan, finns intermittenta symptom som trigeminusneuralgi (sekundl&aring;nga elst&ouml;tsliknande sm&auml;rtor i ansiktet) och Lhermittes fenomen (elst&ouml;tsliknande obehag ned&aring;t benen vid fram&aring;tb&ouml;jning av nacken) som b&ouml;r f&ouml;ra tankarna till MS som orsak.</p>\n<p></p>\n<p>MS-misstanke kan ocks&aring; uppst&aring; vid statusfynd som till exempel internukl&auml;r oftalmoplegi (vid blick &aring;t till exempel h&ouml;ger ses abduktionsnystagmus h&ouml;ger &ouml;ga och eventuell eftersl&auml;pning av adduktion v&auml;nster &ouml;ga). Fynd i rutinnervstatus talande f&ouml;r skada i CNS hos en 30-&aring;ring, exempelvis symptom av &rdquo;droppfot&rdquo;, men positiv Babinski eller stegrade achilles/patellarreflexer; symptom av &rdquo;vestibularisneurit&rdquo; men ataxi vid finger-n&auml;s test, kan ocks&aring; peka mot en bakomliggande MS-sjukdom.</p>\n<p></p>\n<p>En allt vanligare situation &auml;r att MR gjord p&aring; annan indikation visar f&ouml;r&auml;ndringar som kan representera MS.<br><br></p>\n<p>Distriktsl&auml;karen som erh&aring;ller information fr&aring;n olika specialistkliniker kan beh&ouml;va bevaka till exempel att &ouml;gonl&auml;kare faktiskt remitterar till neurolog efter konstaterad synnervsinflammation. Likas&aring; kan distriktsl&auml;karens roll i en v&auml;lfungerande sjukv&aring;rdsorganisation vara att syntetisera information fr&aring;n olika enheter: att till exempel &ouml;verv&auml;ga remiss till neurolog f&ouml;r MS-utredning p&aring; en 40-&aring;ring med kognitiva sv&aring;righeter som inte st&auml;mmer med diagnosticerad depression och som ifjol utreddes av urolog p&aring; grund av tr&auml;ngningsinkontinens.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "722b163b-c48c-4500-be4e-6a914ceea392",
+			"name": "722b163b-c48c-4500-be4e-6a914ceea392",
+			"type": "text",
+			"content": "<h2 id=\"Diagnostik-av-MS\">Diagnostik av MS</h2>\n<p>MS-diagnosen st&auml;lls av l&auml;kare som &auml;r &rdquo;v&auml;l f&ouml;rtrogen med diagnostik och behandling av MS&rdquo; och bygger p&aring; sjukhistoria, neurologisk status, MR av hj&auml;rna och ibland ryggm&auml;rg, samt unders&ouml;kning av ryggm&auml;rgsv&auml;tska. Diagnoskriterier underl&auml;ttar numera tidig diagnos som ibland kan st&auml;llas redan efter ett skov och en MR-unders&ouml;kning, om spridning i tid (minst en lesion laddar kontrast) och rum (f&ouml;rekomst av flera lesioner p&aring; typiska lokaler) kan p&aring;visas (1). S&auml;rskilda kriterier finns f&ouml;r tolkning av magnetkamera, och &auml;ven svenska riktlinjer f&ouml;r hur MR ska anv&auml;ndas vid diagnostik och uppf&ouml;ljning av MS (2).<br><br></p>\n<p>Ryggm&auml;rgsv&auml;tskeprovet analyseras avseende inflammatoriska rutinprover (celler, albumin) och elfores. Resultatet kan ge st&ouml;d f&ouml;r MS-diagnos (tecken till intrathekal immunoglobulinproduktion i form av oligoklonala band eller f&ouml;rh&ouml;jt IgG-index) eller tala mot diagnosen (t ex uttalad cellstegring).<br><br></p>\n<p>En vanlig situation &auml;r att en patient som haft ett skov g&ouml;r MR som visar flera MS-f&ouml;r&auml;ndringar men att ingen lesion laddar kontrast. En s&aring;dan patient uppfyller f&ouml;rvisso inte diagnoskriterier (kriteriet spridning i tid saknas). Men eftersom det &auml;r v&auml;l k&auml;nt att denna patientkategori obehandlat kommer att utveckla MS (&gt;80% inom 20 &aring;r) (3), s&aring; anses behandling med bromsmedicin ofta motiverad &auml;ven h&auml;r.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a0360e04-6e4d-4917-b10b-83e12fa481fe",
+			"name": "a0360e04-6e4d-4917-b10b-83e12fa481fe",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Kvalificerad neurologisk kompetens kr&auml;vs b&aring;de vid diagnostik och uppf&ouml;ljning av MS.</li>\r\n<li>&Ouml;ver 80% av Sveriges MS-patienter &auml;r registrerade i svenska MS-registret som &auml;r en del av Svenska Neuroregister (www.neuroreg.se).&nbsp;</li>\r\n<li>MS-patienten b&ouml;r ha tillg&aring;ng till sjuksk&ouml;terska med neurologisk inriktning som vid behov kan engagera neurologiskt inriktade parakliniker (sjukgymnast, arbetsterapeut, kurator, psykolog).</li>\r\n<li>P&aring; Svenska MS-s&auml;llskapets hemsida (<a href=\"http://www.mssallskapet.se\">www.mssallskapet.se</a>), som uppdateras kontinuerligt, finns specifika behandlingsriktlinjer, checklistor och nationella uppf&ouml;ljningsprogram. D&auml;r finns ocks&aring; Metodboken, som inneh&aring;ller detaljerad information om bl a diagnostik, behandling och omh&auml;ndertagande av MS-patienter.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "95f5fe9c-f7d6-4798-8db8-8b1abfa88514",
+			"name": "95f5fe9c-f7d6-4798-8db8-8b1abfa88514",
+			"type": "text",
+			"content": "<h2 id=\"MS-patienten-som-plotsligt-forsamrats\">MS-patienten som pl&ouml;tsligt f&ouml;rs&auml;mrats</h2>\n<p>En person med MS-diagnos har idag normalt en regelbunden kontakt med neurolog och sjuksk&ouml;terska p&aring; neurologmottagning. Vid en f&ouml;rs&auml;mring av neurologiska funktioner v&auml;nder sig patienten d&auml;rf&ouml;r dit. Ibland finns av olika sk&auml;l ingen s&aring;dan etablerad kontakt varf&ouml;r patienten vid f&ouml;rs&auml;mring kontaktar sin h&auml;lsocentral. &Auml;r f&ouml;rs&auml;mringen relaterad till MS-sjukdomen finns tv&aring; m&ouml;jliga mekanismer: skov och pseudoskov. Skovet utg&ouml;rs vanligen av f&ouml;r patienten nya symtom med tidsf&ouml;rlopp som beskrivits ovan och som motsvaras av en nytillkommen inflammation i CNS. Pseudoskovet beskrivs d&auml;remot som en f&ouml;rs&auml;mring av tidigare restsymptom och kan ofta f&ouml;rklaras av konduktionsblock i remyeliniserade nervbanor pga infektion med feber. Pseudoskov inneb&auml;r d&auml;rmed inte att MS-sjukdomen &auml;r aktiv och behandlingen best&aring;r i att &aring;tg&auml;rda orsaken till den f&ouml;rh&ouml;jda kroppstemperaturen, till exempel en urinv&auml;gsinfektion p&aring; grund av ofullst&auml;ndig bl&aring;st&ouml;mning.<br><br></p>\n<p>MS-skov kan behandlas med kortikosteroider i h&ouml;gdos vid akuta funktionsneds&auml;ttande symptom som till exempel nedsatt g&aring;ngf&ouml;rm&aring;ga eller sv&aring;ra sm&auml;rttillst&aring;nd. Behandlingen med metylprednisolon, 1&nbsp;000 mg dagligen intraven&ouml;st, ges under tre dagar och p&aring;b&ouml;rjas snarast innan spontan f&ouml;rb&auml;ttring av skovet har skett. D&auml;rmed f&ouml;rkortas skovets varaktighet och sv&aring;righetsgrad men &auml;nnu saknas &ouml;vertygande bevis f&ouml;r f&ouml;rb&auml;ttrad utl&auml;kning av skovet.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1a783f34-38d4-47fd-a01b-45bc6c425747",
+			"name": "1a783f34-38d4-47fd-a01b-45bc6c425747",
+			"type": "text",
+			"content": "<h2 id=\"Sjukdomsspecifik-behandling-vid-MS\">Sjukdomsspecifik behandling vid MS</h2>\n<p>Idag finns elva godk&auml;nda sjukdomsspecifika behandlingar vid MS, <span style=\"color: #ff0000;\">se Tabell 1</span>. Samtliga ges som monoterapi och har sin effekt genom att via immunmodulering eller immunsupprimering minska risk f&ouml;r nya MS-inflammationer. Behandling &auml;r d&auml;rf&ouml;r motiverad f&ouml;r patienter med f&ouml;rv&auml;ntad inflammatorisk aktivitet (yngre patienter, &lt;15 &aring;r sedan debut). Initiering av eller fortsatt behandling &auml;r normalt inte motiverad f&ouml;r en 55-&aring;rig patient med MS sedan 25 &aring;r som upplever smygande f&ouml;rs&auml;mring av neurologiska funktioner &ndash; den inflammatoriska aktiviteten &auml;r h&auml;r minimal p&aring; grund av &aring;lder/sjukdomsduration (m&aring;let med behandling redan uppn&aring;tt) och behandlingen inte har n&aring;gon tydlig bromsande effekt vid progressiv sjukdom. &nbsp;Behandlingen ska sk&ouml;tas av l&auml;kare med neurologisk kompetens och intresse f&ouml;r MS. Monitorering av behandlingseffekt g&ouml;rs med &aring;rliga MR-unders&ouml;kningar.</p>\n<p><br>Specifika behandlingsriktlinjer, checklistor och nationella uppf&ouml;ljningsprogram finns tillg&auml;ngliga p&aring; Svenska MS-s&auml;llskapets hemsida (www.mssallskapet.se).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "da050b7f-058b-4c4c-9093-873537fd18bf",
+			"name": "da050b7f-058b-4c4c-9093-873537fd18bf",
+			"type": "tablewide",
+			"content": {
+				"number": 1,
+				"title": "",
+				"id": "",
+				"text": "<table class=\"table table-bordered\"><tbody><tr><td>Text</td><td>Text</td><td>Text</td><td>Text</td></tr><tr><td colspan=\"4\" class=\"footNotes\"></td></tr></tbody></table>"
+			},
+			"settings": {}
+		},
+		{
+			"id": "b136b0fa-ea87-4a85-9de0-e1b349f210bb",
+			"name": "1e8fcf72-58af-4cac-8467-c633574ca9d2",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2><ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/neurologi/multipel-skleros.json",
+	"indexed": "true",
+	"modified": "2017-09-11 16:48"
+}
