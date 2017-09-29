@@ -1,0 +1,66 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "Kapiteluppdatering 2016-02-01",
+	"description": "Nyhet",
+	"keywords": "",
+	"subject": "",
+	"informationType": "Nyhet",
+	"pageType": "uppdatering",
+	"created": "2016-02-01 14:30",
+	"published": "2016-02-01 13:41",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "994a8f84-b997-4e36-9204-cff9908771f2",
+			"name": "32006537-1771-4d16-b834-75a4aeebaa01",
+			"type": "summary",
+			"content": "<p>Uppdaterat kapitel 2016-02-01</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "19c2a71c-6d55-4232-acea-a63c3206b0b9",
+			"name": "f47eab3e-de37-40ff-b569-1880272148cc",
+			"type": "text",
+			"content": "<h1 id=\"Kapitlet-Vaxtbaserade-lakemedel-och-naturlakemedel-har-uppdaterats\">Kapitlet V&auml;xtbaserade l&auml;kemedel och naturl&auml;kemedel har uppdaterats</h1>\n<p>Uppdateringarna g&auml;ller i huvudsak Tabell 1 och Tabell 2.</p>\n<p></p>\n<p>L&auml;nk till kaptitlet: <a href=\"{pre}/kapitel/lakemedelsanvandning/vaxtbaserade_lakemedel_och_naturlakemedel.html\">V&auml;xtbaserade l&auml;kemedel och naturl&auml;kemedel</a></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "true",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/blog/Uppdateringar-2016-02-01.json",
+	"indexed": "true",
+	"modified": "2016-02-01 13:45",
+	"isPublished": true
+}

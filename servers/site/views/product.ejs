@@ -1,0 +1,458 @@
+<%
+var pageTitle = "Hittade ingen produkt | Läkemedelsboken";
+
+if (product && product.name) {
+	pageTitle = product.name + ", " + product.description + " | Läkemedelsboken";
+}
+
+var products = [];
+var noinfoProducts = [];
+var categoryTitle = "";
+
+for (var i=0; i < medList.length; i++) {
+	var item = medList[i];
+
+	if (item.type === "product") {
+		if (item.id !== product.id) {
+			if (item.noinfo === true) {
+				noinfoProducts.push(item);
+			} else {
+				products.push(item);
+			}
+		}
+	} else {
+		categoryTitle = item.title;
+	}
+}
+
+products.sort(function(a,b){
+	if(a.title < b.title) return -1;
+	if(a.title > b.title) return 1;
+	return 0;
+});
+
+noinfoProducts.sort(function(a,b){
+	if(a.title < b.title) return -1;
+	if(a.title > b.title) return 1;
+	return 0;
+});
+
+%>
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html class="ie8"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class=""><!--<![endif]-->
+	<head>
+		<title><%=pageTitle%></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Preparatinformation - <%=pageTitle%>">
+		<meta name="author" content="Läkemedelsverket">
+
+		<link rel="stylesheet" href="/css/<%=version%>/styles.min.css">
+		<!--[if lt IE 9]><script src="/js/<%=version%>/html5shiv.min.js"></script><![endif]-->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="/css/<%=version%>/noscript.min.css">
+		</noscript>
+		<script>
+		window.location = "/?imo=true&nplId=<%=product.id%>";
+		</script>
+	</head>
+
+	<body>
+		<div class="container" id="content">
+			<div class="row">
+				<div id="sideContainer" class="span12">
+					<div id="searchContainer" class="navbar">
+						<div class="navbar-inner" style="text-align: center;">
+							<a class="brand" href="/">Läkemedelsboken</a>
+							<form id="searchForm" class="form-search" action="/search" method="get">
+								<div class="input-append">
+									<input type="text" value="" class="search-query span4" style="padding-left: 15px; padding-right: 2px;" placeholder="Sök" name="search" id="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" title="Sökruta (s)">
+									<input type="submit" class="btn btn-primary" value="Sök">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div style="clear: both;">
+				<div id="mainContainer" class="span12">
+					<div id="main" class="row">
+						<div class="span9">
+							<%
+							if (product.description === "Saknar förskrivarinformation" || product.noinfo === true) {
+								%>
+								<div class="hero-unit"><h5><i class="icon icon-info-sign"></i> Det finns tyvärr ingen förskrivarinformation i Fass om detta läkemedel.</h5><h5><a href="http://www.fass.se/LIF/product?4&userType=0&nplId=<%=product.id%>" target="_blank"><i class="icon-search"></i> Visa preparat på Fass.se</a></h5></div>
+								<%
+							} else {
+
+								var medInfo = "<div class='medInfo' style='background: none;'>";
+								var nplId = product.id;
+
+								if (!product.provider || product.provider === "fass") {
+									var fassImage = "<div data-picture data-alt='FASS.se' class='fassImage'>";
+									fassImage += "<div data-src='/img/fasslogo.png'></div>";
+									fassImage += "<div data-src='/img/fasslogo_x2.png' data-media='(min-device-pixel-ratio: 2.0)'></div>";
+									fassImage += "<img src='/img/fasslogo.png' />";
+									fassImage += "</div>";
+
+									medInfo += "<div class='pull-right' style='width: 120px;'><a href='http://www.fass.se/LIF/product?4&userType=0&nplId=" + nplId + "' target='_blank'>" + fassImage + "</a></div>";
+								} else {
+									var providerImage = "<div data-picture data-alt=\"" + product.provider + "\" class=\"providerImage\">";
+									providerImage += "<div data-src=\"/img/" + product.provider.toLowerCase() + ".png\"></div>";
+									providerImage += "<div data-src=\"/img/" + product.provider.toLowerCase() + "_x2.png\" data-media=\"(min-device-pixel-ratio: 2.0)\"></div>";
+									providerImage += "<img src=\"/img/" + product.provider.toLowerCase() + ".png\" />";
+									providerImage += "</div>";
+
+									var providerLink = product.providerLink;
+
+									if (providerLink !== undefined) {
+										//providerLink = providerLink.replace("{NPLID}", nplId);
+										medInfo += "<div class='pull-right' style='width: 120px;'><a href='" + providerLink + "' target='_blank'>" + providerImage + "</a></div>";
+									} else {
+										medInfo += "<div class='pull-right' style='width: 120px;'>" + providerImage + "</div>";
+									}
+
+								}
+
+								medInfo += "<h2>" + product.name + "</h2>";
+
+								if (product.images !== undefined) {
+									var images = "<div class='medImages'>";
+									for (var i=0; i < product.images.length; i++) {
+										var imageSource = "/products/images/" + product.images[i].checksum + ".jpg";
+										var image = "<img class='img-polaroid medImage pull-right' title='" + product.images[i].description + "' src='" + imageSource + "' />";
+										if (imageSource.indexOf("undefined") === -1) {
+											images += image;
+										}
+									}
+									images += "</div>"
+									medInfo += images;
+								}
+
+								medInfo += "<h3>" + product.brand + ((product.parallelimport !== undefined && product.parallelimport !== "") ? " (Parallelimport " + product.parallelimport + ")" : "") + "</h3>";
+
+								if (product.available === "true") {
+									medInfo += "<h4>" + product.description + "</h4>";
+								} else {
+									medInfo += "<h4 class='not-available'>" + product.description + "</h4>";
+									medInfo += "<div class='alert alert-error'><h4>Tillhandahålls ej</h4></div>";
+								}
+
+								if (product.mechanism) {
+									medInfo += "<h4>" + product.mechanism + "</h4>";
+								}
+
+								//medInfo += "<div style='clear: right;'><a data-productName='" + product.name + "' class='btn pull-right inlineBoxSearch'>Sök bland informationsrutor...</a></div>";
+
+								//Narcotic
+								var narcotic = null;
+
+								switch(product.narcoticClass) {
+									case "1":
+										narcotic = "Klass II: Substanser med högre beroendepotential och liten terapeutisk användning.";
+										break;
+									case "2":
+										narcotic = "Klass IV/V.";
+										break;
+									case "3":
+										narcotic = "Klass III: Beredning innehållande dessa är narkotika under vissa förutsättningar";
+										break;
+									case "4":
+										narcotic = "Klass IV: Substanser med lägre beroendepotential och bred terapeutisk användning";
+										break;
+									case "5":
+										narcotic = "Klass V: Narkotika enbart enligt svensk lag";
+										break;
+									default:
+										break;
+								}
+
+								//Narkotikaklass
+								//	- = Ospecificerad,
+								//	0 = Ej narkotikaklassad,
+								//	1 = II - Narkotika. Substanser med högre beroendepotential och liten terapeutisk användning,
+								//	2 = Narkotika förteckning IV/V,
+								//	3 = III - Narkotika. Beredning innehållande dessa är narkotika under vissa förutsättningar,
+								//	4 = IV - Narkotika. Substanser med lägre beroendepotential och bred terapeutisk användning,
+								//	5 = V - Narkotika enbart enligt svensk lag,
+								//	6 = I - Narkotika ej förekommande i läkemedel,
+								//	NA = Ej tillämplig
+
+
+								if (narcotic !== null) {
+									var narcImage = "<div data-picture data-alt='Narkotiskt preparat' class='narcImage'>";
+									narcImage += "<div data-src='/img/narcotic.png'></div>";
+									narcImage += "<div data-src='/img/narcotic_x2.png' data-media='(min-device-pixel-ratio: 2.0)'></div>";
+									narcImage += "<img src='/img/narcotic.png' />";
+									narcImage += "</div>";
+
+
+									narcotic = product.narcoticClassTextCaution + "<br />" + product.narcoticClassTextHabituation;
+									medInfo += "<div style='margin-bottom: 10px;'>" + narcImage + "<div style='margin-left: 30px;'>" + narcotic + "</div></div>";
+								}
+
+								if (product.additionalMonitoring) {
+									var monitoringImage = "<div data-picture data-alt=\"Utökad övervakning\" class=\"monitoringImage\">";
+									monitoringImage += "<div data-src=\"/img/monitoring.png\"></div>";
+									monitoringImage += "<div data-src=\"/img/monitoring_x2.png\" data-media=\"(min-device-pixel-ratio: 2.0)\"></div>";
+									monitoringImage += "<img src=\"/img/monitoring.png\" />";
+									monitoringImage += "</div>";
+
+									medInfo += "<div style=\"margin-bottom: 10px;\">" + monitoringImage + "<div style=\"margin-left: 30px;\"><a href=\"http://www.lakemedelsverket.se/utokadovervakning\" target=\"_blank\">Detta läkemedel är föremål för utökad övervakning.</a></div></div>";
+								}
+
+								if (product.substance) {
+									medInfo += "<div><strong>Aktiv substans:</strong> " + product.substance + "</div>";
+								}
+
+								medInfo += "<div><strong>ATC-kod:</strong> " + product.atcCode + "</div>";
+
+								if (product.spcLink && product.spcLink !== "") {
+									var spcType = (product.spcLink.indexOf(".pdf") > -1) ? "pdf" : "word";
+									var linkText = "Länk till extern produktresumé";
+									if (spcType === "word") {
+										linkText += " som Word-fil";
+									} else if (spcType === "pdf") {
+										linkText += " som PDF";
+									}
+									medInfo += "<div><strong>Produktresumé:</strong> <a target='_blank' href='" + product.spcLink + "'>" + linkText + " <i class='icon icon-file-text-alt'></i></a></div>";
+
+								}
+
+								//Benefit
+								var benefit = null;
+								switch(parseInt(product.benefit)) {
+									case 0:
+										benefit = "Ingen förpackning har förmån";
+										break;
+									case 1:
+										benefit = "Alla förpackningar har förmån";
+										break;
+									case 2:
+										benefit = "Vissa förpackningar har förmån";
+										break;
+									case 3:
+										benefit = "Förmån med begränsning";
+										break;
+									case 4:
+										benefit = null;
+										break;
+									default:
+										break;
+								}
+
+								if (benefit !== null) {
+									medInfo += "<div><strong>Förmån:</strong> " + benefit + "</div>";
+								}
+
+								//Presciption
+								var prescription = null;
+								switch(product.prescription) {
+									case "-":
+										prescription = "Ospecificerat";
+										break;
+									case "0":
+										prescription = "Receptfritt";
+										break;
+									case "1":
+										prescription = "Receptbelagt";
+										break;
+									case "2":
+										prescription = "Inskränkt förskrivning";
+										break;
+									case "3":
+										prescription = "Vissa förpackningar är receptbelagda";
+										break;
+									case "4":
+										prescription = "Receptfritt från 2 års ålder";
+										break;
+									case "5":
+										prescription = "Receptfritt från 12 års ålder";
+										break;
+									case "N":
+										prescription = "Ej tillämplig";
+										break;
+									default:
+										break;
+								}
+
+								if (prescription !== null) {
+
+									if (product.specRecipe === "true") {
+										prescription += " - <strong>" + product.specRecipeText + "</strong>";
+									}
+									medInfo += "<div><strong>Recept:</strong> " + prescription + "</div>";
+								}
+
+
+								//Over the counter
+								if (product.overTheCounter === "AD") {
+									medInfo.append($("<div><strong>Försäljning:</strong> Läkemedlet kan utöver på apotek även köpas i dagligvaruhandeln.</div>"));
+								}
+
+
+								//LFF
+								var lff = null;
+
+								/*
+								Vi uppmanar er att titta på värdena i nedanstående taggar som kommer med i svaret från webbtjänsten, dvs.:
+								<is-part-of-fass>/<lff-insurance-member>
+								1. True/True – Företaget deltar i Fass OCH i Läkemedelsförsäkringen
+								2. True/False – Företaget deltar i Fass men INTE i Läkemedelsförsäkringen
+								3. False/True – Företaget deltar INTE i Fass men i Läkemedelsförsäkringen – Informationen lämnas INTE med automatik. Det måste alltså läggas till en uppmaning om att söka information om läkemedlet omfattas av Läkemedelsförsäkringen eller ej, förslagsvis via t.ex. en länk: www.lakemedelsforsakringen.se
+								4. False/False – Företaget deltar varken i Fass eller i Läkemedelsförsäkringen – Även här måste det ligga en uppmaning om att söka information om läkemedlet omfattas av Läkemedelsförsäkringen eller ej, förslagsvis via t.ex. en länk: www.lakemedelsforsakringen.se
+
+								I fall 3 och 4 ignoreras alltså värdet för läkemedelsförsäkringen eftersom värdet för Fass medlemsskap är ”False”.
+								Vi fortsätter att titta på detta men tills vidare måste alltså ni som användare av Fass webtjänst se till att korrekt information presenteras med hänvisning till ovanstående kombination av svar!
+								*/
+
+								if (product.partOfFass === "true") {
+									if (product.lffInsurance === "true") {
+										lff = "Läkemedlet omfattas av <a href='http://www.fass.se/LIF/produktfakta/fakta_lakare_artikel.jsp?articleID=18336' target='_new'>Läkemedelsförsäkringen</a>";
+									} else if (product.lffInsurance === "false") {
+										lff = "Läkemedlet omfattas ej av <a href='http://www.fass.se/LIF/produktfakta/fakta_lakare_artikel.jsp?articleID=18336' target='_new'>Läkemedelsförsäkringen</a>";
+									}
+								}
+
+								if (product.partOfFass === "false") {
+									lff = "Oklart om läkemedlet omfattas av <a href='http://www.fass.se/LIF/produktfakta/fakta_lakare_artikel.jsp?articleID=18336' target='_new'>Läkemedelsförsäkringen</a>. Sök mer information på <a href='http://www.lakemedelsforsakringen.se/' target='_new'>www.lakemedelsforsakringen.se</a>";
+								}
+
+								if (lff !== null) {
+									medInfo += "<div><strong>Försäkring:</strong> " + lff + "</div>";
+								}
+
+								if (product.license !== undefined) {
+
+									var license = product.license;
+
+									if (product.licenseLink && product.licenseLink !== "") {
+										license = "<a href=\"" + product.licenseLink + "\" target=\"_blank\">" + license + "</a>";
+									}
+
+									medInfo += "<div><strong>" + license + "</strong></div>";
+								}
+
+								medInfo += "</div>";
+
+								var medHeadLines = "<div id='medHeadLines'>";
+
+								if(product.noSections === undefined || products.noSections === false){
+									var sectionsHeader = "<h3 id='sectionsHeader' style='margin-left: 5px;'>Genvägar till rubriker:</h3><ul class='nav nav-pills' style='list-style-type: none; margin: 5px; list-style-position: inside; white-space: nowrap;  font-family: Helvetica, Arial, sans;'>";
+								} else {
+									var sectionsHeader = "";
+								}
+
+
+								for(headLine in product.sections) {
+									var headLineId = headLine.replace(/\s/g, "_").replace(/å/ig, "a").replace(/ä/ig, "a").replace(/ö/ig, "o").replace(/,/ig, "")
+									var content = product.sections[headLine];
+									if (content !== "" && content !== "<p></p>") {
+										medHeadLines += "<h4 id='" + headLineId + "'><a class='toggleSection' href='#sectionsHeader'><i class='icon icon-arrow-up rightIcon pull-right'></i> " + headLine + "</a></h4><div style='margin-left: 10px'>" + content + "</div>";
+										sectionsHeader += "<li style='margin: 2px; padding: 2px;'><a href='#" + headLineId + "' style='padding: 3px; margin: 0;'><i class='icon icon-plus-sign-alt'></i> " + headLine + "</a></li>";
+									}
+								}
+								medHeadLines += "</div>"
+								sectionsHeader += "</ul>";
+
+								%>
+								<%-medInfo%>
+								<%-sectionsHeader%>
+								<%-medHeadLines%>
+
+								<%
+							}
+								%>
+						</div>
+						<% if (medList.length > 1) { %>
+						<div class="span3 others">
+							<h4>Liknande preparat inom:</h4><h5><%=categoryTitle%></h5>
+							<ul style="list-style-type: none; margin-left: 0; font-size: 14px; font-family: Helvetica, Arial, sans;">
+								<% for (var i=0; i < products.length; i++) {
+									var item = products[i];
+									var disabled = "";
+									if (item.noinfo === true) {
+										disabled = " style='text-decoration: line-through; color: #cecece;'"
+									}
+									var images = "";
+									//Add images
+									if (item.images !== undefined) {
+										images = "";
+										for (var x=0; x < item.images.length; x++) {
+											images += "<img src='" + item.images[x] + "' class='img-polaroid pull-right' style='width: 30px; height: 30px; margin-right: 5px;' />";
+										}
+									}
+									var title = item.title;
+									if (title.indexOf(", ") > -1) {
+										title = title.split(", ");
+										title[0] = "<strong>" + title[0] + "</strong>";
+										if (title.length >= 3) {
+											title[title.length - 1] = "<em>" + title[title.length - 1] + "</em>";
+										}
+										if (item.parallelimport !== undefined && item.parallelimport !== "") {
+											title[title.length - 1] = title[title.length - 1] + " (Parallellimport " + item.parallelimport + ")";
+										}
+
+										title = title.join(" <br>");
+									}
+									//list.append($("<li id='item_" + product.id + "'" + (product.noinfo === true ? " class='ui-state-disabled'" : "") + "><a class='inlineListProduct' data-product-id='" + product.id + "' href='/product/" + product.id + "'>" + images + title + "</a></li>"));
+
+
+								%>
+								<li style="margin-bottom: 10px;"><a<%=disabled%> href="/product/<%=item.id%>"><%-images + title%></a></li>
+								<% } %>
+								<% for (var i=0; i < noinfoProducts.length; i++) {
+									var item = noinfoProducts[i];
+									var disabled = "";
+									if (item.noinfo === true) {
+										disabled = " style='text-decoration: line-through; color: #cecece;'"
+									}
+									var images = "";
+									//Add images
+									if (item.images !== undefined) {
+										images = "";
+										for (var x=0; x < item.images.length; x++) {
+											images += "<img src='" + item.images[x] + "' class='img-polaroid pull-right' style='width: 30px; height: 30px; margin-right: 5px;' />";
+										}
+									}
+									var title = item.title;
+									if (title.indexOf(", ") > -1) {
+										title = title.split(", ");
+										title[0] = "<strong>" + title[0] + "</strong>";
+										if (title.length >= 3) {
+											title[title.length - 1] = "<em>" + title[title.length - 1] + "</em>";
+										}
+										if (item.parallelimport !== undefined && item.parallelimport !== "") {
+											title[title.length - 1] = title[title.length - 1] + " (Parallellimport " + item.parallelimport + ")";
+										}
+
+										title = title.join(" <br>");
+									}
+									//list.append($("<li id='item_" + product.id + "'" + (product.noinfo === true ? " class='ui-state-disabled'" : "") + "><a class='inlineListProduct' data-product-id='" + product.id + "' href='/product/" + product.id + "'>" + images + title + "</a></li>"));
+
+
+								%>
+								<li style="margin-bottom: 10px;"><a<%=disabled%> href="/product/<%=item.id%>"><%-images + title%></a></li>
+								<% } %>
+
+							</ul>
+						</div>
+						<% } %>
+
+					</div>
+				</div>
+				<hr>
+				<footer>
+					<p>&copy; Läkemedelsverket</p>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>

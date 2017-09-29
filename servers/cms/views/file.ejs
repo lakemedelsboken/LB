@@ -1,0 +1,128 @@
+<% include header %>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<%
+			if (id !== "/") {
+				var backPath = id.split("/");
+				backPath.pop();
+				backPath = backPath.join("/");
+				backPath = "/cms" + backPath;
+				if (backPath === "") {
+					backPath = "/"
+				}
+			%>
+			<a href="<%=backPath%>" class="btn navbar-btn btn-primary"><i class="fa fa-chevron-left"></i> Tillbaka</a>
+			<%
+			}
+			%>
+
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Meny</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="navbar-collapse collapse navbar-right">
+			<% if (isPublished) { %>
+			<a class="btn navbar-btn btn-danger" href="/cms/content/files/unpublishfile?filepath=<%=id%>"><i class="fa fa-chain-broken"></i> Avpublicera</a>
+			<% } else { %>
+			<a class="btn navbar-btn btn-success" href="/cms/content/files/publishfile?filepath=<%=id%>"><i class="fa fa-check"></i> Märk för publicering</a>
+			<% }%>
+			<button class="btn navbar-btn btn-danger" data-toggle="modal" data-target="#removeFileModal"><i class="fa fa-trash"></i> Ta bort fil...</button>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12 col-md-12 main">
+			<h1 class="page-header">Fil</h1>
+
+			<div class="row">
+				<div class="col-md-3 col-xs-4 text-right"><strong>URL:</strong></div>
+				<div class="col-md-9 col-xs-8"><code>{pre}<%=id%></code></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-xs-4 text-right"><strong>Storlek:</strong></div>
+				<div class="col-md-9 col-xs-8"><%=niceSize%></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-xs-4 text-right"><strong>Typ:</strong></div>
+				<div class="col-md-9 col-xs-8"><%=fileType%></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-xs-4 text-right"><strong>Publicerad:</strong></div>
+				<div class="col-md-9 col-xs-8"><%=(isPublished ? "Ja" : "Nej")%></div>
+			</div>
+
+			<%
+
+			var supportedImageTypes = [
+				"image/jpeg",
+				"image/gif",
+				"image/png"
+			];
+
+			if (supportedImageTypes.indexOf(fileType) > -1) {
+				%>
+			<div class="row">
+				<div class="col-md-3 col-xs-4 text-right"><strong>Förhandsvisning:</strong></div>
+				<div class="col-md-9 col-xs-8"><img class="img-responsive" src="/cms/draft<%-id%>"></div>
+			</div>
+				<%
+			}
+
+			%>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Ta bort bild" id="removeFileModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4>Ta bort fil: <%=id%></h4>
+			</div>
+			<form action="/cms/content/files/removefile" method="get" class="form-horizontal" role="form">
+				<input type="hidden" name="filepath" value="<%=id%>">
+				<div class="modal-body">
+					Är du säker på att du vill ta bort den här filen?
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ta bort</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Publicera" id="publishedModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Publicera </h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/content/publishpage" method="get" class="form-horizontal" role="form" autocomplete="off">
+					<input type="hidden" name="pagepath" id="publishPagePath" value="">
+					<div class="form-group">
+						<div class="col-sm-10">
+							<strong>Vill du publicera sidan live?</strong>
+						</div>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ja, publicera</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<% include footer %>

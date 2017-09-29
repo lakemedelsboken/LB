@@ -1,0 +1,48 @@
+<div id="sideContainer" class="affix span4 nonindexed">
+	<div id="searchContainer" class="navbar">
+		<div class="navbar-inner">
+			<div id="searchResultsNavigation" class="navbar-inverse hidden">
+				<div class="navbar-inner">
+					<ul class="nav">
+						<li class="goto">Gå till:</li>
+						<li class="search"><a href="#sideContainer">Sökruta</a></li>
+						<li class="content"><a href="#contentSearchResults">Innehåll</a></li>
+						<li class="medicines"><a href="#medicineSearchResults">Läkemedel</a></li>
+					</ul>
+				</div>
+			</div>
+			<a class="brand" href="{pre}/">Läkemedelsboken</a>
+			<form id="searchForm" class="form-search" action="/search" method="get">
+				<a href="#" id="performSearch" title="S&#246;k (Enter)"><i class="fa fa-arrow-circle-right"></i></a>
+				<a href="#" id="resetSearch" title="Avbryt s&#246;kning (Esc)"><i class="fa fa-times-circle"></i></a>
+				<input type="text" class="search-query input-block-level" placeholder="S&#246;k" name="search" id="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" title="S&#246;kruta (s)">
+				<div class="fa fa-search"></div>
+			</form>
+		</div>
+	</div>
+	<a class="btn btn-primary btn-block visible-phone" id="toggleNavigation"><i class="fa fa-chevron-down"></i> Visa meny</a>
+	<div id="sideMenu">
+		{content}
+	</div>
+</div>
+<div class="popover bottom span12 affix" id="searchResults">
+	<div class="arrow" id="searchResultsArrow"></div>
+	<div class="popover-inner">
+		<h3 class="popover-title searchTitleBar">Sökresultat <button class="close" id="closeSearchResults">&times;</button></h3>
+		<div class="popover-content">
+			<div class="container" id="searchResultsContainer">
+				<div id="contentSearchResults" class="span7">
+					<h5>Innehåll</h5>
+					<ul class="nav nav-tabs nav-stacked" id="contentSearchResultsList">
+					</ul>
+				</div>
+				<div id="medicineSearchResults" class="span5">
+					<h5>Läkemedel</h5>
+					<ul class="nav nav-tabs nav-stacked" id="medicineSearchResultsList">
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</div>

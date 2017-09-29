@@ -1,0 +1,38 @@
+[
+	{
+		"name"      : "site",
+		"script"    : "./site/server.js",
+		"instances" : "1",
+		"min_uptime" : "100",
+		"max_restarts" : "10",
+		"fileError" : "./logs/site-err.log",
+		"fileOutput" : "./logs/site-out.log"
+	},
+	{
+		"name"      : "search",
+		"script"    : "./search/server.js",
+		"instances" : "1",
+		"min_uptime" : "100",
+		"max_restarts" : "10",
+		"fileError" : "./logs/search-err.log",
+		"fileOutput" : "./logs/search-out.log"
+	},
+	{
+		"name"      : "api",
+		"script"    : "./api/server.js",
+		"instances" : "1",
+		"min_uptime" : "100",
+		"max_restarts" : "10",
+		"fileError" : "./logs/api-err.log",
+		"fileOutput" : "./logs/api-out.log"
+	},
+	{
+		"name"      : "cms",
+		"script"    : "./cms/server.js",
+		"instances" : "1",
+		"min_uptime" : "100",
+		"max_restarts" : "10",
+		"fileError" : "./logs/cms-err.log",
+		"fileOutput" : "./logs/cms-out.log"
+	}
+]

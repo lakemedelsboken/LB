@@ -1,0 +1,361 @@
+<% include header %>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<%
+			if (id !== "/") {
+				var backPath = id.split("/");
+				backPath.pop();
+				backPath = backPath.join("/");
+				backPath = "/cms" + backPath;
+				if (backPath === "") {
+					backPath = "/"
+				}
+			%>
+			<a href="<%=backPath%>" class="btn navbar-btn btn-primary"><i class="fa fa-chevron-left"></i> Tillbaka</a>
+			<%
+			}
+			%>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Meny</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+		</div>
+		<div class="navbar-collapse collapse navbar-right">
+			<button type="button" class="btn navbar-btn btn-primary" data-toggle="modal" data-target="#createComponentModal"><i class="fa fa-file"></i> Ny komponent...</button>
+			<button type="button" class="btn navbar-btn btn-success" data-toggle="modal" data-target="#createDirectoryModal"><i class="fa fa-plus"></i> Ny katalog...</button>
+			<%
+			if (id && id !== "/components/" && id !== "/components") {
+			%>
+			<button type="button" class="btn navbar-btn btn-warning" data-toggle="modal" data-target="#moveDirectoryModal"><i class="fa fa-folder-open"></i> Flytta katalog...</button>
+			<button type="button" class="btn navbar-btn btn-danger" data-toggle="modal" data-target="#removeDirectoryModal"><i class="fa fa-trash"></i> Ta bort katalog...</button>
+			<%
+			}
+			%>
+
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-4 col-md-4 sidebar">
+
+			<%
+			if (id && id.length > 1) {
+			%>
+			<ol class="breadcrumb">
+				<li><a href="/cms/">Hem</a></li>
+			<%
+
+				var link = "/cms";
+				var links = id.split("/");
+				links.shift();
+				for	(var i = 0; i < links.length; i++) {
+					link += "/" + links[i];
+					%>
+					<li><a href="<%=link%>"><%=links[i]%></a></li>
+					<%
+				}
+
+			%>
+			</ol>
+			<%
+			}
+			%>
+
+
+			<ul class="nav nav-sidebar">
+				<li class="dropdown-header">INNEHÅLL</li>
+			<%
+			for (var i = 0; i < content.length; i++) {
+				var item = content[i];
+
+				if (item.type === "dir") {
+				%>
+				<li class="dir"><a href="/cms<%=item.relativePath%>"><i class="fa fa-folder"></i> <%=item.name%></a></li>
+				<%
+				} else if (item.type === "component") {
+				%>
+				<li class="file"><a href="/cms<%=item.relativePath%>"><i class="fa fa-file"></i> <%=item.name.replace(".json", "")%></a></li>
+				<%
+				} else {
+				%>
+				<li class="file"><a href="/cms<%=item.relativePath%>"><i class="fa fa-question-circle"></i> <%=item.name%></a></li>
+				<%
+				}
+			}
+			%>
+
+			</ul>
+		</div>
+		<div class="col-sm-8 col-sm-offset-4 col-md-8 col-md-offset-4 main">
+			<h1 class="page-header">Katalog: <%=id%></h1>
+<!--
+			<h2>Metadata</h2>
+			<button id="createMetadata" class="btn btn-primary" data-toggle="modal" data-target="#modifyMetadataModal"><i class="fa fa-plus-circle"></i> Skapa metadata</button>
+			<br><br>
+			<%
+
+			if (metadata) {
+
+			%>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Namn</th>
+						<th>Data</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+			<%
+				for (var key in metadata) {
+					%>
+					<tr>
+						<td class="col-sm-2"><strong><%=key%></strong></td>
+						<td><%=metadata[key]%></td>
+						<td><button class="btn btn-sm btn-warning modifyMetadata" data-meta-key="<%=key%>" data-meta-value="<%=metadata[key]%>" data-toggle="modal" data-target="#modifyMetadataModal"><i class="fa fa-pencil"></i> Redigera</button></td>
+						<td><button class="btn btn-sm btn-danger removeMetadata" data-meta-key="<%=key%>" data-toggle="modal" data-target="#removeMetadataModal"><i class="fa fa-trash"></i> Ta bort</button></td>
+					<%
+				}
+
+			%>
+				</tbody>
+			</table>
+			<%
+
+			}
+
+			%>
+-->
+
+			<%
+
+			if (locals.drafts && locals.drafts.length > 0) {
+
+			%>
+			<h2>Icke publicerat material</h2>
+			<div class="table-responsive">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th class="span6">Plats</th>
+						<th>Senast ändrad</th>
+						<th>Publicera nu?</th>
+					</tr>
+				</thead>
+				<tbody>
+			<%
+				for (var i = 0; i < drafts.length; i++) {
+
+					var draft = drafts[i];
+
+					%>
+					<tr>
+						<td class="col-sm-2"><a href="/cms/<%=draft.path%>"><%=draft.path%></a></td>
+						<td><%=draft.niceDate%></td>
+						<td><a class="btn btn-danger" href="/cms/components/publishcomponent?componentpath=<%=draft.path%>"><i class="fa fa-check"></i> Märk för publicering</a></td>
+					<%
+				}
+
+			%>
+				</tbody>
+			</table>
+			</div>
+			<%
+
+			}
+
+			%>
+
+
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Skapa ny komponent" id="createComponentModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4>Skapa ny komponent</h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/components/createcomponent" method="get" class="form-horizontal" role="form">
+					<input type="hidden" name="basedir" value="<%=id%>">
+					<div class="form-group">
+						<label for="componentname" class="col-sm-2 control-label">Namn</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="componentname" name="componentname" placeholder="Namn på komponent (exempelvis: default-menu)">
+							<br>
+							<select id="componenttype" name="componenttype" class="form-control">
+								<%
+								for	(var componentTypeName in componentTypes) {
+								%>
+								<option value="<%=componentTypeName%>"><%=componentTypes[componentTypeName].templateName%> (<%=componentTypes[componentTypeName].templateDescription%>)</option>
+								<%
+								}
+								%>
+							</select>
+							<br>
+							<button type="submit" class="btn btn-primary pull-right">Skapa</button>
+						</div>
+					</div>
+					<div class="form-group">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Flytta katalog" id="moveDirectoryModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4>Flytta katalog</h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/components/rename" method="get" class="form-horizontal" role="form">
+					<input type="hidden" name="before" value="<%=id%>">
+					<div class="form-group">
+						<label for="after" class="col-sm-2 control-label">Ny plats</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="after" name="after" placeholder="Ny plats" value="<%=id%>">
+							<br>
+							<button type="submit" class="btn btn-primary pull-right">Flytta</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Skapa katalog" id="createDirectoryModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4>Skapa katalog</h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/components/mkdir" method="get" class="form-horizontal" role="form">
+					<input type="hidden" name="basedir" value="<%=id%>">
+					<div class="form-group">
+						<label for="dirname" class="col-sm-2 control-label">Namn</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="dirname" name="dirname" placeholder="Katologens namn">
+							<br>
+							<button type="submit" class="btn btn-primary pull-right">Skapa</button>
+						</div>
+					</div>
+					<div class="form-group">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Skapa metadata" id="modifyMetadataModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4>Skapa metadata</h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/content/modifymetadata" method="get" class="form-horizontal" role="form">
+					<input type="hidden" name="basedir" value="<%=id%>">
+					<div class="form-group">
+						<label for="key" class="col-sm-2 control-label">Namn</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="metakey" name="metakey" placeholder="Namn">
+							<br>
+						</div>
+						<label for="value" class="col-sm-2 control-label">Data</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="metavalue" name="metavalue" placeholder="Data">
+						</div>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Spara</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Ta bort metadata" id="removeMetadataModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4>Ta bort metadata</h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/content/removemetadata" method="get" class="form-horizontal" role="form">
+					<input type="hidden" name="basedir" value="<%=id%>">
+					<input type="hidden" name="metakey" id="removemetakey" value="">
+					<div class="form-group">
+						<div class="col-sm-10">
+							Är du säker?
+							<br>
+						</div>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Ta bort</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Ta bort katalog" id="removeDirectoryModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4>Ta bort katalog: <%=id%></h4>
+			</div>
+			<form action="/cms/components/rmdir" method="get" class="form-horizontal" role="form">
+				<input type="hidden" name="dirname" value="<%=id%>">
+				<div class="modal-body">
+					Är du säker på att du vill ta bort den här katalogen?
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ta bort</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Publicera" id="publishedModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Publicera </h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/content/publishpage" method="get" class="form-horizontal" role="form" autocomplete="off">
+					<input type="hidden" name="pagepath" id="publishPagePath" value="">
+					<div class="form-group">
+						<div class="col-sm-10">
+							<strong>Vill du publicera sidan live?</strong>
+						</div>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ja, publicera</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<% include footer %>

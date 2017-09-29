@@ -1,0 +1,337 @@
+<% include header %>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<%
+			if (id !== "/") {
+				var backPath = id.split("/");
+				backPath.pop();
+				backPath = backPath.join("/");
+				backPath = "/cms" + backPath;
+				if (backPath === "") {
+					backPath = "/"
+				}
+			%>
+			<a href="<%=backPath%>" class="btn navbar-btn btn-primary navbar-left"><i class="fa fa-chevron-left"></i> Tillbaka</a>
+			<%
+			}
+			%>
+
+
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Meny</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+		</div>
+		<div class="navbar-collapse collapse navbar-right">
+			<% if (canBePublished) { %>
+			<a class="btn navbar-btn btn-success" href="/cms/components/publishcomponent?componentpath=<%=id%>"><i class="fa fa-check"></i> Märk för publicering</a>
+			<% } %>
+			<% if (canBeUnpublished) { %>
+			<a class="btn navbar-btn btn-danger" href="/cms/components/unpublishcomponent?componentpath=<%=id%>"><i class="fa fa-chain-broken"></i> Avpublicera</a>
+			<% } %>
+			<button class="btn navbar-btn btn-info" data-toggle="modal" data-target="#publishedVersionsModal"><i class="fa fa-history"></i> Publiceringshistorik...</button>
+			<button class="btn navbar-btn btn-warning" data-toggle="modal" data-target="#versionsModal"><i class="fa fa-history"></i> All historik...</button>
+<!--
+			<a href="/cms/draft<%=id.replace(".json", ".html")%>" target="_blank" class="btn navbar-btn btn-primary" id="show-draft"><i class="fa fa-chevron-right"></i> Visa utkast</a>
+			<% if (canBeUnpublished) { %>
+			<a href="/cms/published<%=id.replace(".json", ".html")%>" target="_blank" class="btn navbar-btn btn-primary" id="show-published"><i class="fa fa-chevron-right"></i> Visa publicerad</a>
+			<% } %>
+-->
+			<button class="btn navbar-btn btn-danger" data-toggle="modal" data-target="#removeComponentModal"><i class="fa fa-trash"></i> Ta bort komponent...</button>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12 col-md-12 main">
+			<h1 class="page-header">Redigera komponent</h1>
+
+			<form class="form-horizontal" role="form" id="componentForm" action="/cms/components/savecomponent" method="post">
+
+				<input type="hidden" name="componentId" value="<%=id%>" />
+
+				<h2 class="sub-header">Innehåll</h2>
+
+				<%
+				for (var i = 0; i < contentEditors.length; i++) {
+				%>
+				<div class="col-sm-12 col-md-12 editContent">
+					<div class="col-sm-7 col-md-7 editor">
+						<div class="panel panel-default">
+							<div id="<%=page.content[i].name%>" class="panel-heading"><a href="/cms/components/movecontentitemdown?pagepath=<%=id%>&contentname=<%=page.content[i].name%>" class="pull-right"><i class="fa fa-arrow-down"></i> Flytta ned</a><a href="/cms/components/movecontentitemup?pagepath=<%=id%>&contentname=<%=page.content[i].name%>" class="pull-right"><i class="fa fa-arrow-up"></i> Flytta upp&nbsp;&nbsp;</a><%=contentTypes[page.content[i].type].name%></div>
+							<div class="panel-body">
+								<%-contentEditors[i]%>
+							</div>
+							<div class="panel-footer">
+								<div class="btn-group pull-right">
+									<button type="button" class="btn btn-danger removeContent" data-toggle="modal" data-target="#removeContentModal" data-content-name="<%=page.content[i].name%>"><i class="fa fa-trash"></i> Ta bort...</button>
+									<button type="submit" class="btn btn-primary" data-submit-id="<%=page.content[i].name%>">Spara</button>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5 col-md-5 hidden-xs resultContent">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								Förhandsvisning
+							</div>
+							<div class="panel-body content-preview">
+								<%-contentPreviews[i]%>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-12 text-center">
+					<button type="button" class="btn btn-success btn-lg btn-block add-content" data-toggle="modal" data-target="#addContentModal" data-after="<%=page.content[i].name%>"><i class="fa fa-plus"></i> Lägg till innehåll...</button>
+					<br><br>
+				</div>
+				<%
+				}
+
+				if (contentEditors.length === 0) {
+				%>
+				<div class="col-sm-12 col-md-12 text-center">
+					<button type="button" class="btn btn-success btn-lg btn-block add-content" data-toggle="modal" data-target="#addContentModal"><i class="fa fa-plus"></i> Lägg till innehåll...</button>
+				</div>
+				<%
+				}
+				%>
+
+			</form>
+
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Ta bort komponent" id="removeComponentModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4>Ta bort komponent: <%=id%></h4>
+			</div>
+			<form action="/cms/components/removecomponent" method="get" class="form-horizontal" role="form">
+				<input type="hidden" name="componentpath" value="<%=id%>">
+				<div class="modal-body">
+					Är du säker på att du vill ta bort den här komponenten?
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ta bort</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Ta bort innehåll" id="removeContentModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4>Ta bort innehåll</h4>
+			</div>
+			<form action="/cms/components/removecontentitemfromcomponent" method="get" class="form-horizontal" role="form">
+				<input type="hidden" name="componentpath" value="<%=id%>">
+				<input type="hidden" id="removeContentName" name="contentname" value="">
+				<div class="modal-body">
+					Är du säker på att du vill ta bort innehållet?
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ta bort</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Lägg till innehåll" id="addContentModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4>Lägg till innehåll</h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/components/addcontentitemtocomponent" method="get" class="form-horizontal" role="form">
+					<input type="hidden" name="component" value="<%=id%>">
+					<input type="hidden" name="insertafter" id="insertafter" value="">
+					<div class="form-group">
+						<label for="contenttype" class="col-sm-3 control-label">Typ av innehåll</label>
+						<div class="col-sm-9">
+							<select id="contenttype" name="contenttype" class="form-control">
+								<%
+								for	(var contentTypeName in contentTypes) {
+								%>
+								<option value="<%=contentTypeName%>"><%=contentTypes[contentTypeName].name%> (<%=contentTypes[contentTypeName].description%>)</option>
+								<%
+								}
+								%>
+							</select>
+							<br>
+							<button type="submit" class="btn btn-primary pull-right">Skapa</button>
+						</div>
+					</div>
+					<div class="form-group">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Välj bild" id="pickImageModal" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<a href="/cms/images/" class="pull-right">Ladda upp bilder...</a>
+				<h4>Välj bild</h4>
+			</div>
+			<div class="modal-body">
+				<select id="imagePicker"></select>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Versioner" id="publishedVersionsModal" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4>Publicerade versioner</h4>
+			</div>
+			<div class="modal-body">
+			<%
+			if (publishedVersions.length === 0) {
+				%>
+				<p>Det finns inga publicerade versioner av den här komponenten.</p>
+				<%
+			} else {
+				%>
+				<ul class="list-group">
+				<%
+				for	(var i = 0; i < publishedVersions.length; i++) {
+					var version = publishedVersions[i];
+				%>
+					<li class="list-group-item">
+						<div class="btn-group btn-group-sm pull-right" role="group">
+							<a class="btn btn-sm btn-default" href="/cms<%=version.id%>">Visa som json</a>
+							<button class="btn btn-sm btn-primary show-diff" data-snapshot-id="<%=version.id%>" data-component-id="<%=id%>">Jämför json <i class="fa fa-chevron-down"></i></button>
+							<button class="btn btn-sm btn-danger revertToSnapshotButton" data-toggle="modal" data-target="#revertToSnapshotModal" data-pagepath="<%=id%>" data-version="<%=version.id%>" title="Återgå till äldre version" >Gör till nuvarande version</button>
+						</div>
+						<strong>Skapad: </strong><%=version.niceTime%>
+						<div class="clearfix"></div>
+						<div class="diff-view"></div>
+					</li>
+				<%
+				}
+				%>
+				</ul>
+				<%
+			}
+			%>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Utkast" id="draftModal" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+					<h4>Utkast</h4>
+			</div>
+			<div class="modal-body">
+		      <iframe id="draftFrame" src="" style="zoom:0.60" width="99.6%" height="900" frameborder="0"></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Utkast" id="publishedModal" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+					<h4>Publicerad version</h4>
+			</div>
+			<div class="modal-body">
+		      <iframe id="publishedFrame" src="" style="zoom:0.60" width="99.6%" height="900" frameborder="0"></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Versioner" id="versionsModal" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4>Tidigare versioner</h4>
+			</div>
+			<div class="modal-body">
+			<%
+			if (snapshots.length === 0) {
+				%>
+				<p>Det finns inga tidigare versioner av den här komponenten.</p>
+				<%
+			} else {
+				%>
+				<ul class="list-group">
+				<%
+				for	(var i = 0; i < snapshots.length; i++) {
+					var snapshot = snapshots[i];
+				%>
+					<li class="list-group-item">
+						<div class="btn-group btn-group-sm pull-right" role="group">
+							<a class="btn btn-sm btn-default" href="/cms<%=snapshot.id%>">Visa som json</a>
+							<button class="btn btn-sm btn-primary show-diff" data-snapshot-id="<%=snapshot.id%>" data-component-id="<%=id%>">Jämför json <i class="fa fa-chevron-down"></i></button>
+							<!--<button class="btn btn-sm btn-danger">Gör till nuvarande version</button>-->
+						</div>
+						<strong>Skapad: </strong><%=snapshot.niceTime%>
+						<div class="clearfix"></div>
+						<div class="diff-view"></div>
+					</li>
+				<%
+				}
+				%>
+				</ul>
+				<%
+			}
+			%>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Publicera" id="publishedModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Publicera </h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/content/publishpage" method="get" class="form-horizontal" role="form" autocomplete="off">
+					<input type="hidden" name="pagepath" id="publishPagePath" value="">
+					<div class="form-group">
+						<div class="col-sm-10">
+							<strong>Vill du publicera sidan live?</strong>
+						</div>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ja, publicera</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<% include footer %>

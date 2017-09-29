@@ -1,0 +1,583 @@
+<% include header %>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<%
+			if (id !== "/") {
+				var backPath = id.split("/");
+				backPath.pop();
+				backPath = backPath.join("/");
+				backPath = "/cms" + backPath;
+				if (backPath === "") {
+					backPath = "/"
+				}
+			%>
+			<a href="<%=backPath%>" class="btn navbar-btn btn-primary navbar-left"><i class="fa fa-chevron-left"></i> Tillbaka</a>
+			<%
+			}
+			%>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Meny</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<!--
+			<a class="navbar-brand" href="/"><%=id%></a>
+			-->
+
+		</div>
+		<div class="collapse navbar-collapse navbar-right">
+			<span class="dropdown">
+				<a href="#" class="dropdown-toggle btn navbar-btn btn-success" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-cloud-upload"></i> Verktyg <span class="caret"></span></a>
+				<ul class="dropdown-menu" role="menu">
+					<!--<li><a href="#" data-toggle="modal" data-target="#clearCachesModal"><i class="fa fa-trash"></i> Rensa cache...</a></li>
+					<li class="divider"></li>-->
+					<li><a href="#" data-toggle="modal" data-target="#recreateAllModal"><i class="fa fa-refresh"></i> Bygg om alla sidor...</a></li>
+					<li class="divider"></li>
+					<!--<li class="disabled"><a href="#" data-toggle="modal" class="disabled" data-target="#checkLinks"><i class="fa fa-question"></i> Kontrollera länkar...</a></li>
+					<li class="divider"></li>-->
+					<%
+					if (server && server !== "test") {
+					%>
+					<li><a href="#" data-toggle="modal" data-target="#saveContentToGitHub"><i class="fa fa-github"></i> Spara till GitHub...</a></li>
+					<%
+					}
+					%>
+					<!--<li class="divider"></li>
+					<li><a href="#" data-toggle="modal" data-target="#publishExternal"><i class="fa fa-rocket"></i> Publicera live...</a></li>-->
+				</ul>
+			</span>
+
+			<%
+			if (id && id !== "/") {
+			%>
+			<button type="button" class="btn navbar-btn btn-warning" data-toggle="modal" data-target="#moveDirectoryModal"><i class="fa fa-folder-open"></i> Flytta katalog...</button>
+			<button type="button" class="btn navbar-btn btn-danger" data-toggle="modal" data-target="#removeDirectoryModal"><i class="fa fa-trash"></i> Ta bort katalog...</button>
+			<%
+			}
+			%>
+
+			<a href="/cms/logout" class="btn navbar-btn btn-default"><i class="fa fa-sign-out"></i> Logga ut <%=username%></a>
+
+
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-4 col-md-4 sidebar">
+			<button type="button" class="btn navbar-btn btn-primary" data-toggle="modal" data-target="#createPageModal"><i class="fa fa-file-o"></i> Ny sida...</button>
+			<button type="button" class="btn navbar-btn btn-info" data-toggle="modal" data-target="#uploadFileModal"><i class="fa fa-upload"></i> Ladda upp fil...</button>
+			<button type="button" class="btn navbar-btn btn-success" data-toggle="modal" data-target="#createDirectoryModal"><i class="fa fa-folder-o"></i> Ny katalog...</button>
+
+			<%
+			if (id && id.length > 1) {
+			%>
+			<ol class="breadcrumb">
+				<li><a href="/cms/">Hem</a></li>
+			<%
+
+				var link = "/cms";
+				var links = id.split("/");
+				links.shift();
+				for	(var i = 0; i < links.length; i++) {
+					link += "/" + links[i];
+					%>
+					<li><a href="<%=link%>"><%=links[i]%></a></li>
+					<%
+				}
+
+			%>
+			</ol>
+			<%
+			}
+			%>
+
+
+			<ul class="nav nav-sidebar">
+				<li class="dropdown-header">INNEHÅLL</li>
+			<%
+			for (var i = 0; i < content.length; i++) {
+				var item = content[i];
+
+				if (item.type === "dir") {
+					var icon = "fa fa-folder";
+
+					if (item.relativePath.indexOf("/images") === 0) {
+						icon = "fa fa-picture-o";
+					}
+
+					if (item.relativePath.indexOf("/components") === 0) {
+						icon = "fa fa-wrench";
+					}
+
+					if (item.relativePath.indexOf("/processors") === 0) {
+						icon = "fa fa-tasks";
+					}
+
+				%>
+				<li class="dir"><a href="/cms<%=item.relativePath%>"><i class="<%=icon%>"></i>&nbsp;<%=item.name%></a></li>
+				<%
+				} else if (item.type === "page") {
+				%>
+				<li class="file"><a href="/cms<%=item.relativePath%>"><i class="fa fa-file-o"></i>&nbsp;<%=item.name.replace(".json", "")%></a></li>
+				<%
+				} else {
+				%>
+				<li class="file"><a href="/cms<%=item.relativePath%>"><i class="fa fa-question-circle"></i>&nbsp;<%=item.name%></a></li>
+				<%
+				}
+			}
+			%>
+
+			</ul>
+		</div>
+		<div class="col-sm-8 col-sm-offset-4 col-md-8 col-md-offset-4 main">
+			<h1 class="page-header">Katalog: <%=id%></h1>
+			<h2>Metadata</h2>
+			<button id="createMetadata" class="btn btn-primary" data-toggle="modal" data-target="#modifyMetadataModal"><i class="fa fa-plus-circle"></i> Skapa metadata</button>
+			<br><br>
+			<%
+
+			if (metadata) {
+
+			%>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Namn</th>
+						<th>Data</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+			<%
+				for (var key in metadata) {
+					%>
+					<tr>
+						<td class="col-sm-2"><strong><%=key%></strong></td>
+						<td><%=metadata[key]%></td>
+						<td><button class="btn btn-sm btn-warning modifyMetadata" data-meta-key="<%=key%>" data-meta-value="<%=metadata[key]%>" data-toggle="modal" data-target="#modifyMetadataModal"><i class="fa fa-pencil"></i> Redigera</button></td>
+						<td><button class="btn btn-sm btn-danger removeMetadata" data-meta-key="<%=key%>" data-toggle="modal" data-target="#removeMetadataModal"><i class="fa fa-trash"></i> Ta bort</button></td>
+					<%
+				}
+
+			%>
+				</tbody>
+			</table>
+			<%
+
+			}
+
+			%>
+
+			<%
+
+			if (locals.drafts && locals.drafts.length > 0) {
+
+			%>
+			<h2>Icke publicerat material</h2>
+			<div class="table-responsive">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th class="span6">Plats</th>
+						<th>Senast ändrad</th>
+						<th>Publicera nu?</th>
+						<th>Återgå</th>
+					</tr>
+				</thead>
+				<tbody>
+			<%
+				for (var i = 0; i < drafts.length; i++) {
+
+					var draft = drafts[i];
+
+					%>
+					<tr>
+						<td class="col-sm-3"><a href="/cms/<%=draft.path%>" class="break"><%=draft.path.replace(".json", "")%></a></td>
+						<td class="col-sm-2" style="white-space: nobreak;"><%=draft.niceDate%></td>
+						<td class="col-sm-1">
+							<a 	class="btn btn-sm btn-success publishedButton"
+								data-toggle="modal"
+								data-target="#publishedModal"
+								data-pagepath="<%=draft.path%>"
+								title="Märk den här sidan för publicering">
+									<i class="fa fa-check"></i> Publicera
+							</a>
+						</td>
+						<td class="col-sm-1">
+							<%
+							if (draft.canBeRevertedToLastPublishedVersion) {
+							%>
+							<a class="btn btn-sm btn-danger revertToPublishedButton" data-toggle="modal" data-target="#revertToPublishedModal" data-pagepath="<%=draft.path%>" title="Återgå till den senast publicerade versionen av den här sidan"><i class="fa fa-check"></i> Återgå</a>
+							<%
+							} else {
+							%>
+							Ej möjligt
+							<%
+							}
+							%>
+						</td>
+					<%
+				}
+
+			%>
+				</tbody>
+			</table>
+			</div>
+			<%
+
+			}
+
+			%>
+
+
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Publicera live" id="publishExternal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Publicera live</h4>
+			</div>
+			<div class="modal-body">
+				<div>
+					<div class="checkbox pull-right">
+						<label class="control-label">
+							<input type="checkbox" name="sendAllFiles" id="sendAllFiles">
+							Tvinga att alla filer skickas, tar längre tid.
+						</label>
+					</div>
+					<a id="publishExternal" href="/cms/content/publishexternal" class="btn btn-success"><i class="fa fa-refresh"></i> <span class="text">Starta publicering till skarp site</span></a>
+					<br><br>
+				</div>
+				<div class="progress">
+					<div class="progress-bar publish-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+						<span class="sr-only indicator">0%</span>
+					</div>
+				</div>
+				<div>
+					<div>
+						<a id="showUnpublishedFiles" class="btn btn-primary btn-block" href="/cms/content/getunpublishedfiles"><i class="fa fa-list"></i> <span class="text">Visa först vilka filer som är förändrade</span></a>
+					</div>
+					<div class="panel hidden" id="unpublishedInformation">
+						<br>
+						Dessa filer är förändrade i sin publicerade form och behöver laddas upp till den skarpa servern. Detta kan bero på flera saker:
+						<ul>
+							<li>Filen har redigerats och märkts för publicering</li>
+							<li>Alla filer är ombyggda och ny information har tillkommit från exempelvis NPL som gör att innehållet har ändrats till viss del</li>
+							<li>Filen är beroende av en annan fil som i sin tur har ändrats och publicerats</li>
+						</ul>
+					</div>
+					<ul id="unpublishedOutput" class="list-group hidden"></ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Bygg om alla sidor" id="recreateAllModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Bygg om alla sidor</h4>
+			</div>
+			<div class="modal-body">
+				<div>
+					<a id="recreateAll" href="/cms/content/recreateall" class="btn btn-primary"><i class="fa fa-refresh"></i> <span class="text">Starta</span></a>
+					<br><br>
+				</div>
+				<div class="progress">
+					<div class="progress-bar tasks-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+						<span class="sr-only">0% färdigt</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Spara till GitHub" id="saveContentToGitHub" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Spara till GitHub</h4>
+			</div>
+			<div class="modal-body">
+				<div>
+					<a id="saveToGitHub" href="/cms/content/savecontenttogithub" class="btn btn-primary"><i class="fa fa-github"></i> <span class="text">Starta uppladdning till GitHub</span></a>
+					<br><br>
+				</div>
+				<div>
+					<pre id="github-status"></pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Rensa cache" id="clearCachesModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Rensa cache</h4>
+			</div>
+			<div class="modal-body text-center">
+				<form action="/cms/content/clearcaches" method="get" class="form-horizontal" role="form" autocomplete="off">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Rensa</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Skapa sida" id="createPageModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Skapa sida</h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/content/createpage" method="get" class="form-horizontal" role="form" autocomplete="false">
+					<input type="hidden" name="basedir" value="<%=id%>">
+					<div class="form-group">
+						<label for="pagename" class="col-sm-2 control-label">Namn</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="pagename" name="pagename" placeholder="Namn på sida (exempelvis: index)" autocomplete="off">
+							<br>
+							<select id="pagetype" name="pagetype" class="form-control">
+								<%
+								for	(var pageTypeName in pageTypes) {
+								%>
+								<option value="<%=pageTypeName%>"><%=pageTypes[pageTypeName].templateName%> (<%=pageTypes[pageTypeName].templateDescription%>)</option>
+								<%
+								}
+								%>
+							</select>
+							<br>
+							<button type="submit" class="btn btn-primary pull-right"><i class="fa fa-check"></i> Skapa</button>
+						</div>
+					</div>
+					<div class="form-group">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Flytta katalog" id="moveDirectoryModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Flytta katalog</h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/content/rename" method="get" class="form-horizontal" role="form" autocomplete="off">
+					<input type="hidden" name="before" value="<%=id%>">
+					<div class="form-group">
+						<label for="after" class="col-sm-2 control-label">Ny plats</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="after" name="after" placeholder="Ny plats" value="<%=id%>">
+							<br>
+							<button type="submit" class="btn btn-primary pull-right">Flytta</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Skapa katalog" id="createDirectoryModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Skapa katalog</h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/content/mkdir" method="get" class="form-horizontal" role="form" autocomplete="off">
+					<input type="hidden" name="basedir" value="<%=id%>">
+					<div class="form-group">
+						<label for="dirname" class="col-sm-2 control-label">Namn</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="dirname" name="dirname" placeholder="Katologens namn" autocomplete="off">
+							<br>
+							<button type="submit" class="btn btn-primary pull-right"><i class="fa fa-check"></i> Skapa</button>
+						</div>
+					</div>
+					<div class="form-group">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Skapa metadata" id="modifyMetadataModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Skapa metadata</h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/content/modifymetadata" method="get" class="form-horizontal" role="form" autocomplete="off">
+					<input type="hidden" name="basedir" value="<%=id%>">
+					<div class="form-group">
+						<label for="key" class="col-sm-2 control-label">Namn</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="metakey" name="metakey" placeholder="Namn" autocomplete="off">
+							<br>
+						</div>
+						<label for="value" class="col-sm-2 control-label">Data</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="metavalue" name="metavalue" placeholder="Data" autocomplete="off">
+						</div>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> Spara</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Återgå till publicerad" id="revertToPublishedModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Återgå till senaste publicerade versionen av den här sidan?</h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/content/revertolastpublished" method="get" class="form-horizontal" role="form" autocomplete="off">
+					<input type="hidden" name="pagepath" id="revertPagePath" value="">
+					<div class="form-group">
+						<div class="col-sm-10">
+							<strong>Är du säker?</strong> <br><br>Skriv en kommentar så att du hittar tillbaka till nuvarande version om du ångrar dig:
+							<br>
+							<input type="text" class="form-control" name="comment" value="">
+						</div>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ja, återgå till publicerad</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Publicera" id="publishedModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Publicera </h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/content/publishpage" method="get" class="form-horizontal" role="form" autocomplete="off">
+					<input type="hidden" name="pagepath" id="publishPagePath" value="">
+					<div class="form-group">
+						<div class="col-sm-10">
+							<strong>Vill du publicera sidan live?</strong>
+						</div>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ja, publicera</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Ta bort metadata" id="removeMetadataModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Ta bort metadata</h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/content/removemetadata" method="get" class="form-horizontal" role="form" autocomplete="off">
+					<input type="hidden" name="basedir" value="<%=id%>">
+					<input type="hidden" name="metakey" id="removemetakey" value="">
+					<div class="form-group">
+						<div class="col-sm-10">
+							Är du säker?
+							<br>
+						</div>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Ta bort</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Ta bort katalog" id="removeDirectoryModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Ta bort katalog: <%=id%></h4>
+			</div>
+			<form action="/cms/content/rmdir" method="get" class="form-horizontal" role="form" autocomplete="off">
+				<input type="hidden" name="dirname" value="<%=id%>">
+				<div class="modal-body">
+					Är du säker på att du vill ta bort den här katalogen?
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Avbryt</button>
+					<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Ta bort</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="Ladda upp fil" id="uploadFileModal" aria-hidden="true">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4>Ladda upp fil</h4>
+			</div>
+			<div class="modal-body">
+				<form action="/cms/content/files/upload" class="form-horizontal" role="form" method="post" enctype="multipart/form-data" autocomplete="off">
+					<input type="hidden" name="basedir" value="<%=id%>">
+					<div class="form-group">
+						<label for="file" class="col-sm-5 control-label">Fil</label>
+						<div class="col-sm-7">
+							<input type="file" class="form-control" id="file" name="file" placeholder="Välj en fil...">
+							<br>
+							<button type="submit" class="btn btn-primary pull-right"><i class="fa fa-upload"></i> Ladda upp</button>
+						</div>
+					</div>
+					<div class="form-group">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<% include footer %>

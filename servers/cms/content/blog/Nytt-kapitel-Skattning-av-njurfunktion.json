@@ -1,0 +1,49 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "Nytt kapitel - Skattning av njurfunktion",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "nyhet",
+	"created": "2016-05-27 14:06",
+	"published": "2016-06-14 07:56",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "1df96e4e-7c3f-44a3-95d6-e7a53fc3e213",
+			"name": "3fb36be8-16dd-4119-898f-59c2225ef813",
+			"type": "text",
+			"content": "<h1 id=\"Nytt-kapitel-Skattning-av-njurfunktion\">Nytt kapitel - Skattning av njurfunktion</h1>\n<p>Den digitala versionen av L&auml;kemedelsboken har f&aring;tt ett v&auml;rdefullt tillskott med det helt nyskrivna kapitlet <a href=\"{pre}/kapitel/nefrologi-urologi/skattning-av-njurfunktion.html#Skattning-av-njurfunktion\">Skattning av njurfunktion</a>. F&ouml;rfattare &auml;r professor Carl-Gustaf Elinder.</p>\n<p></p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/blog/Nytt-kapitel-Skattning-av-njurfunktion.json",
+	"modified": "2016-06-17 22:54",
+	"indexed": "true",
+	"isPublished": true
+}

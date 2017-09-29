@@ -1,0 +1,303 @@
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap; }
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button,
+input {
+  line-height: normal; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**
+ * Style-sheet for dtpicker
+ * Forked from https://github.com/mugifly/jquery-simple-datetimepicker
+ */
+.datepicker {
+  display: inline-block;
+  border: 1px solid #dddddd;
+  border-radius: 4px; }
+  .datepicker .datepicker_header {
+    padding: 10px 15px;
+    background-color: whitesmoke;
+    color: #333333;
+    font-weight: 500;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none; }
+    .datepicker .datepicker_header > a {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+      cursor: pointer;
+      color: #428bca; }
+      .datepicker .datepicker_header > a:hover {
+        color: #2a6496; }
+    .datepicker .datepicker_header > span {
+      margin-left: 20px;
+      margin-right: 20px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none; }
+    .datepicker .datepicker_header > .icon-home {
+      position: absolute;
+      display: block;
+      float: left;
+      margin-top: 2px;
+      margin-left: 5px;
+      vertical-align: middle;
+      font-size: 12px;
+	  width: 20px;
+      color: #428bca; }
+      .datepicker .datepicker_header > .icon-home:hover {
+        color: #2a6496; }
+  .datepicker .datepicker_inner_container {
+    border-top: 1px solid #dddddd;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px; }
+    .datepicker .datepicker_inner_container .datepicker_calendar {
+      float: left;
+      width: auto;
+      background-color: white;
+      border-right: 1px solid #dddddd; }
+      .datepicker .datepicker_inner_container .datepicker_calendar > table {
+        padding: 10px;
+        border-collapse: separate;
+        border-spacing: 4px; }
+      .datepicker .datepicker_inner_container .datepicker_calendar .datepicker_table > tbody > tr th {
+        color: #5c5c5c;
+        font-weight: normal;
+        text-align: center; }
+      .datepicker .datepicker_inner_container .datepicker_calendar .datepicker_table > tbody > tr td {
+        text-align: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        padding: 2px;
+        border: 1px solid white;
+        border-radius: 4px;
+        box-sizing: border-box;
+        border: 2px solid white;
+        border-radius: 4px; }
+        .datepicker .datepicker_inner_container .datepicker_calendar .datepicker_table > tbody > tr td.today {
+          border-bottom: #428bca solid 1px; }
+        .datepicker .datepicker_inner_container .datepicker_calendar .datepicker_table > tbody > tr td.wday_sat {
+          color: #428bca; }
+        .datepicker .datepicker_inner_container .datepicker_calendar .datepicker_table > tbody > tr td.wday_sun {
+          color: #d9534f; }
+        .datepicker .datepicker_inner_container .datepicker_calendar .datepicker_table > tbody > tr td.day_another_month {
+          color: #999999; }
+        .datepicker .datepicker_inner_container .datepicker_calendar .datepicker_table > tbody > tr td.active {
+          border: 2px solid #428bca; }
+        .datepicker .datepicker_inner_container .datepicker_calendar .datepicker_table > tbody > tr td.hover {
+          border: 2px solid #b9d4ec; }
+    .datepicker .datepicker_inner_container .datepicker_timelist {
+      float: left;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 8px;
+      overflow: auto;
+      overflow-x: hidden;
+	  background-color: #fff;
+      border-bottom-right-radius: 4px; }
+      .datepicker .datepicker_inner_container .datepicker_timelist::-webkit-scrollbar {
+        overflow: hidden;
+        width: 6px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px; }
+      .datepicker .datepicker_inner_container .datepicker_timelist::-webkit-scrollbar:horizontal {
+        height: 1px; }
+      .datepicker .datepicker_inner_container .datepicker_timelist::-webkit-scrollbar-thumb {
+        background: #aaaaaa;
+        border-radius: 4px; }
+      .datepicker .datepicker_inner_container .datepicker_timelist div.timelist_item {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        width: 4em;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-left: 7px;
+        padding-right: 7px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        margin-left: 5px;
+        margin-right: 5px;
+        cursor: pointer; }
+      .datepicker .datepicker_inner_container .datepicker_timelist div.timelist_item {
+        border: 2px solid white;
+        border-radius: 4px; }
+        .datepicker .datepicker_inner_container .datepicker_timelist div.timelist_item.active {
+          border: 2px solid #428bca; }
+        .datepicker .datepicker_inner_container .datepicker_timelist div.timelist_item.hover {
+          border: 2px solid #b9d4ec; }
