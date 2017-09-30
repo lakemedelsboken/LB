@@ -2107,3 +2107,608 @@
  DEBUG [b91663ea] 	 
  DEBUG [b91663ea] 	ERR!
  DEBUG [b91663ea] 	     /var/www/lb/releases/20170930111830/servers/cms/node_modules/scrypt/npm-debug.log
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-09-30 11:46:11 +0000 cap test deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [216482fd] Running /usr/bin/env mkdir -p /tmp as deploy@test.lakemedelsboken.se
+ DEBUG [216482fd] Command: ( export SERVER="test" ; /usr/bin/env mkdir -p /tmp )
+  INFO [216482fd] Finished in 6.342 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-lb-test-vagrant.sh 0.0%
+  INFO Uploading /tmp/git-ssh-lb-test-vagrant.sh 100.0%
+  INFO [249bda7f] Running /usr/bin/env chmod 700 /tmp/git-ssh-lb-test-vagrant.sh as deploy@test.lakemedelsboken.se
+ DEBUG [249bda7f] Command: ( export SERVER="test" ; /usr/bin/env chmod 700 /tmp/git-ssh-lb-test-vagrant.sh )
+  INFO [249bda7f] Finished in 0.147 seconds with exit status 0 (successful).
+  INFO [a314c0a8] Running /usr/bin/env git ls-remote https://github.com/lakemedelsboken/LB.git HEAD as deploy@test.lakemedelsboken.se
+ DEBUG [a314c0a8] Command: ( export SERVER="test" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-lb-test-vagrant.sh" ; /usr/bin/env git ls-remote https://github.com/lakemedelsboken/LB.git HEAD )
+ DEBUG [a314c0a8] 	d439f9ec3c547730360bbfe71f5c701739d553e5	HEAD
+  INFO [a314c0a8] Finished in 1.126 seconds with exit status 0 (successful).
+  INFO [eaa089d1] Running /usr/bin/env mkdir -p /var/www/lb/shared /var/www/lb/releases as deploy@test.lakemedelsboken.se
+ DEBUG [eaa089d1] Command: ( export SERVER="test" ; /usr/bin/env mkdir -p /var/www/lb/shared /var/www/lb/releases )
+  INFO [eaa089d1] Finished in 0.126 seconds with exit status 0 (successful).
+ DEBUG [ff211764] Running [ -f /var/www/lb/current/REVISION ] as deploy@test.lakemedelsboken.se
+ DEBUG [ff211764] Command: [ -f /var/www/lb/current/REVISION ]
+ DEBUG [ff211764] Finished in 0.124 seconds with exit status 0 (successful).
+ DEBUG [1821dca9] Running /usr/bin/env cat /var/www/lb/current/REVISION 2>/dev/null as deploy@test.lakemedelsboken.se
+ DEBUG [1821dca9] Command: ( export SERVER="test" ; /usr/bin/env cat /var/www/lb/current/REVISION 2>/dev/null )
+ DEBUG [1821dca9] 	a6fe123598f6e21a3d31172caa3907dbbdd69620
+ DEBUG [1821dca9] Finished in 0.132 seconds with exit status 0 (successful).
+ DEBUG [0cf67da1] Running [ -f /var/www/lb/repo/HEAD ] as deploy@test.lakemedelsboken.se
+ DEBUG [0cf67da1] Command: [ -f /var/www/lb/repo/HEAD ]
+ DEBUG [0cf67da1] Finished in 0.126 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/lb/repo
+ DEBUG [0371988c] Running if test ! -d /var/www/lb/repo; then echo "Directory does not exist '/var/www/lb/repo'" 1>&2; false; fi as deploy@test.lakemedelsboken.se
+ DEBUG [0371988c] Command: if test ! -d /var/www/lb/repo; then echo "Directory does not exist '/var/www/lb/repo'" 1>&2; false; fi
+ DEBUG [0371988c] Finished in 0.126 seconds with exit status 0 (successful).
+  INFO [2b453507] Running /usr/bin/env git remote set-url origin https://github.com/lakemedelsboken/LB.git as deploy@test.lakemedelsboken.se
+ DEBUG [2b453507] Command: cd /var/www/lb/repo && ( export SERVER="test" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-lb-test-vagrant.sh" ; /usr/bin/env git remote set-url origin https://github.com/lakemedelsboken/LB.git )
+  INFO [2b453507] Finished in 0.136 seconds with exit status 0 (successful).
+  INFO [91a05301] Running /usr/bin/env git remote update --prune as deploy@test.lakemedelsboken.se
+ DEBUG [91a05301] Command: cd /var/www/lb/repo && ( export SERVER="test" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-lb-test-vagrant.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [91a05301] 	Fetching origin
+ DEBUG [91a05301] 	From https://github.com/lakemedelsboken/LB
+ DEBUG [91a05301] 	   a6fe123..d439f9e  master     -> master
+  INFO [91a05301] Finished in 2.061 seconds with exit status 0 (successful).
+ DEBUG [6513501d] Running if test ! -d /var/www/lb/repo; then echo "Directory does not exist '/var/www/lb/repo'" 1>&2; false; fi as deploy@test.lakemedelsboken.se
+ DEBUG [6513501d] Command: if test ! -d /var/www/lb/repo; then echo "Directory does not exist '/var/www/lb/repo'" 1>&2; false; fi
+ DEBUG [6513501d] Finished in 0.127 seconds with exit status 0 (successful).
+  INFO [b39e4747] Running /usr/bin/env mkdir -p /var/www/lb/releases/20170930114620 as deploy@test.lakemedelsboken.se
+ DEBUG [b39e4747] Command: cd /var/www/lb/repo && ( export SERVER="test" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-lb-test-vagrant.sh" ; /usr/bin/env mkdir -p /var/www/lb/releases/20170930114620 )
+  INFO [b39e4747] Finished in 0.130 seconds with exit status 0 (successful).
+  INFO [d4fec3f3] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/lb/releases/20170930114620 as deploy@test.lakemedelsboken.se
+ DEBUG [d4fec3f3] Command: cd /var/www/lb/repo && ( export SERVER="test" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-lb-test-vagrant.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/lb/releases/20170930114620 )
+  INFO [d4fec3f3] Finished in 80.388 seconds with exit status 0 (successful).
+ DEBUG [4a3f25b8] Running if test ! -d /var/www/lb/repo; then echo "Directory does not exist '/var/www/lb/repo'" 1>&2; false; fi as deploy@test.lakemedelsboken.se
+ DEBUG [4a3f25b8] Command: if test ! -d /var/www/lb/repo; then echo "Directory does not exist '/var/www/lb/repo'" 1>&2; false; fi
+ DEBUG [4a3f25b8] Finished in 1.713 seconds with exit status 0 (successful).
+ DEBUG [3cf41862] Running /usr/bin/env git rev-list --max-count=1 master as deploy@test.lakemedelsboken.se
+ DEBUG [3cf41862] Command: cd /var/www/lb/repo && ( export SERVER="test" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-lb-test-vagrant.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [3cf41862] 	d439f9ec3c547730360bbfe71f5c701739d553e5
+ DEBUG [3cf41862] Finished in 2.132 seconds with exit status 0 (successful).
+ DEBUG [5bbbe3b5] Running if test ! -d /var/www/lb/releases/20170930114620; then echo "Directory does not exist '/var/www/lb/releases/20170930114620'" 1>&2; false; fi as deploy@test.lakemedelsboken.se
+ DEBUG [5bbbe3b5] Command: if test ! -d /var/www/lb/releases/20170930114620; then echo "Directory does not exist '/var/www/lb/releases/20170930114620'" 1>&2; false; fi
+ DEBUG [5bbbe3b5] Finished in 0.130 seconds with exit status 0 (successful).
+  INFO [1950a71f] Running /usr/bin/env echo "d439f9ec3c547730360bbfe71f5c701739d553e5" >> REVISION as deploy@test.lakemedelsboken.se
+ DEBUG [1950a71f] Command: cd /var/www/lb/releases/20170930114620 && ( export SERVER="test" ; /usr/bin/env echo "d439f9ec3c547730360bbfe71f5c701739d553e5" >> REVISION )
+  INFO [1950a71f] Finished in 0.183 seconds with exit status 0 (successful).
+  INFO [683bccdb] Running /usr/bin/env ln -s /var/www/lb/releases/20170930114620 /var/www/lb/releases/current as deploy@test.lakemedelsboken.se
+ DEBUG [683bccdb] Command: ( export SERVER="test" ; /usr/bin/env ln -s /var/www/lb/releases/20170930114620 /var/www/lb/releases/current )
+  INFO [683bccdb] Finished in 0.525 seconds with exit status 0 (successful).
+  INFO [03b8bc42] Running /usr/bin/env mv /var/www/lb/releases/current /var/www/lb as deploy@test.lakemedelsboken.se
+ DEBUG [03b8bc42] Command: ( export SERVER="test" ; /usr/bin/env mv /var/www/lb/releases/current /var/www/lb )
+  INFO [03b8bc42] Finished in 1.226 seconds with exit status 0 (successful).
+  INFO [41378901] Running rm -rf /var/www/lb/releases/20170930114620/fass/www/products as deploy@test.lakemedelsboken.se
+ DEBUG [41378901] Command: rm -rf /var/www/lb/releases/20170930114620/fass/www/products
+  INFO [41378901] Finished in 0.137 seconds with exit status 0 (successful).
+  INFO [308bb057] Running mkdir -p /var/www/lb/releases/20170930114620/fass/www/ as deploy@test.lakemedelsboken.se
+ DEBUG [308bb057] Command: mkdir -p /var/www/lb/releases/20170930114620/fass/www/
+  INFO [308bb057] Finished in 0.141 seconds with exit status 0 (successful).
+  INFO [583191a5] Running mkdir -p /var/www/lb/shared/fass/www/products as deploy@test.lakemedelsboken.se
+ DEBUG [583191a5] Command: mkdir -p /var/www/lb/shared/fass/www/products
+  INFO [583191a5] Finished in 0.134 seconds with exit status 0 (successful).
+  INFO [85d96315] Running ln -nfs /var/www/lb/shared/fass/www/products /var/www/lb/releases/20170930114620/fass/www/ as deploy@test.lakemedelsboken.se
+ DEBUG [85d96315] Command: ln -nfs /var/www/lb/shared/fass/www/products /var/www/lb/releases/20170930114620/fass/www/
+  INFO [85d96315] Finished in 0.131 seconds with exit status 0 (successful).
+  INFO [872a1f59] Running mkdir -p /var/www/lb/shared/fass/shared as deploy@test.lakemedelsboken.se
+ DEBUG [872a1f59] Command: mkdir -p /var/www/lb/shared/fass/shared
+  INFO [872a1f59] Finished in 0.130 seconds with exit status 0 (successful).
+  INFO [06ccf14b] Running cp -n /var/www/lb/releases/20170930114620/fass/shared/foundUpdates.json /var/www/lb/shared/fass/shared/foundUpdates.json as deploy@test.lakemedelsboken.se
+ DEBUG [06ccf14b] Command: cp -n /var/www/lb/releases/20170930114620/fass/shared/foundUpdates.json /var/www/lb/shared/fass/shared/foundUpdates.json
+  INFO [06ccf14b] Finished in 0.167 seconds with exit status 0 (successful).
+  INFO [b9b7f0b4] Running rm -rf /var/www/lb/releases/20170930114620/fass/shared as deploy@test.lakemedelsboken.se
+ DEBUG [b9b7f0b4] Command: rm -rf /var/www/lb/releases/20170930114620/fass/shared
+  INFO [b9b7f0b4] Finished in 0.134 seconds with exit status 0 (successful).
+  INFO [8273e0d4] Running ln -nfs /var/www/lb/shared/fass/shared /var/www/lb/releases/20170930114620/fass/ as deploy@test.lakemedelsboken.se
+ DEBUG [8273e0d4] Command: ln -nfs /var/www/lb/shared/fass/shared /var/www/lb/releases/20170930114620/fass/
+  INFO [8273e0d4] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [fe140ffa] Running cd /var/www/lb/releases/20170930114620/npl/ && npm install xml-stream as deploy@test.lakemedelsboken.se
+ DEBUG [fe140ffa] Command: cd /var/www/lb/releases/20170930114620/npl/ && npm install xml-stream
+ DEBUG [fe140ffa] 	
+> node-expat@2.3.16 install /var/www/lb/releases/20170930114620/npl/node_modules/xml-stream/node_modules/node-expat
+> node-gyp rebuild
+
+ DEBUG [fe140ffa] 	make: Entering directory `/var/www/lb/releases/20170930114620/npl/node_modules/xml-stream/node_modules/node-expat/build'
+ DEBUG [fe140ffa] 	  CC(target) Release/obj.target/expat/deps/libexpat/lib/xmlparse.o
+ DEBUG [fe140ffa] 	../deps/libexpat/lib/xmlparse.c: In function ‘gather_time_entropy’:
+ DEBUG [fe140ffa] 	../deps/libexpat/lib/xmlparse.c:780:7: warning: variable ‘gettimeofday_res’ set but not used [-Wunused-but-set-variable]
+   int gettimeofday_res;
+       ^
+ DEBUG [fe140ffa] 	  CC(target) Release/obj.target/expat/deps/libexpat/lib/xmltok.o
+ DEBUG [fe140ffa] 	  CC(target) Release/obj.target/expat/deps/libexpat/lib/xmlrole.o
+ DEBUG [fe140ffa] 	  AR(target) Release/obj.target/deps/libexpat/libexpat.a
+ DEBUG [fe140ffa] 	  COPY Release/libexpat.a
+ DEBUG [fe140ffa] 	  CXX(target) Release/obj.target/node_expat/node-expat.o
+ DEBUG [fe140ffa] 	  SOLINK_MODULE(target) Release/obj.target/node_expat.node
+ DEBUG [fe140ffa] 	  COPY Release/node_expat.node
+ DEBUG [fe140ffa] 	make: Leaving directory `/var/www/lb/releases/20170930114620/npl/node_modules/xml-stream/node_modules/node-expat/build'
+ DEBUG [fe140ffa] 	
+> iconv@2.3.0 install /var/www/lb/releases/20170930114620/npl/node_modules/xml-stream/node_modules/iconv
+> node-gyp rebuild
+
+ DEBUG [fe140ffa] 	make: Entering directory `/var/www/lb/releases/20170930114620/npl/node_modules/xml-stream/node_modules/iconv/build'
+ DEBUG [fe140ffa] 	  CXX(target) Release/obj.target/iconv/src/binding.o
+ DEBUG [fe140ffa] 	  CC(target) Release/obj.target/iconv/deps/libiconv/lib/iconv.o
+ DEBUG [fe140ffa] 	  CC(target) Release/obj.target/iconv/support/localcharset.o
+ DEBUG [fe140ffa] 	  SOLINK_MODULE(target) Release/obj.target/iconv.node
+ DEBUG [fe140ffa] 	  COPY Release/iconv.node
+ DEBUG [fe140ffa] 	make: Leaving directory `/var/www/lb/releases/20170930114620/npl/node_modules/xml-stream/node_modules/iconv/build'
+ DEBUG [fe140ffa] 	xml-stream@0.4.5 node_modules/xml-stream
+├── readable-stream@1.1.14 (inherits@2.0.3, isarray@0.0.1, string_decoder@0.10.31, core-util-is@1.0.2)
+├── node-expat@2.3.16 (bindings@1.3.0, nan@2.7.0)
+└── iconv@2.3.0 (nan@2.7.0)
+  INFO [fe140ffa] Finished in 35.467 seconds with exit status 0 (successful).
+  INFO [eb034b6d] Running cd /var/www/lb/releases/20170930114620/servers/cms/node_modules/scrypt/ && npm install as deploy@test.lakemedelsboken.se
+ DEBUG [eb034b6d] Command: cd /var/www/lb/releases/20170930114620/servers/cms/node_modules/scrypt/ && npm install
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	WARN
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	package.json scrypt@4.0.7 No license field.
+ DEBUG [eb034b6d] 	
+> scrypt@4.0.7 install /var/www/lb/releases/20170930114620/servers/cms/node_modules/scrypt
+> node-gyp rebuild
+
+ DEBUG [eb034b6d] 	/bin/sh: 1: scrypt/configuration/posixconfig: Permission denied
+ DEBUG [eb034b6d] 	gyp: Call to 'scrypt/configuration/posixconfig' returned exit status 126 while in binding.gyp. while trying to load binding.gyp
+ DEBUG [eb034b6d] 	gyp
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	configure error
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	gyp
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	stack
+ DEBUG [eb034b6d] 	 Error: `gyp` failed with exit code: 1
+ DEBUG [eb034b6d] 	gyp
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	stack
+ DEBUG [eb034b6d] 	     at ChildProcess.onCpExit (/usr/lib/node_modules/npm/node_modules/node-gyp/lib/configure.js:305:16)
+ DEBUG [eb034b6d] 	gyp
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	stack
+ DEBUG [eb034b6d] 	     at ChildProcess.emit (events.js:110:17)
+ DEBUG [eb034b6d] 	gyp
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	stack
+ DEBUG [eb034b6d] 	     at Process.ChildProcess._handle.onexit (child_process.js:1078:12)
+ DEBUG [eb034b6d] 	gyp
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	System
+ DEBUG [eb034b6d] 	 Linux 3.13.0-45-generic
+ DEBUG [eb034b6d] 	gyp
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	command
+ DEBUG [eb034b6d] 	 "node" "/usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+ DEBUG [eb034b6d] 	gyp
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	cwd
+ DEBUG [eb034b6d] 	 /var/www/lb/releases/20170930114620/servers/cms/node_modules/scrypt
+ DEBUG [eb034b6d] 	gyp
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	node -v
+ DEBUG [eb034b6d] 	 v0.12.17
+ DEBUG [eb034b6d] 	gyp
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	node-gyp -v
+ DEBUG [eb034b6d] 	 v3.3.1
+ DEBUG [eb034b6d] 	gyp
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	not ok
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 Linux 3.13.0-45-generic
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	argv
+ DEBUG [eb034b6d] 	 "/usr/bin/node" "/usr/bin/npm" "install"
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	node
+ DEBUG [eb034b6d] 	 v0.12.17
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	npm 
+ DEBUG [eb034b6d] 	 v2.15.1
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	code
+ DEBUG [eb034b6d] 	 ELIFECYCLE
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 scrypt@4.0.7 install: `node-gyp rebuild`
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 Exit status 1
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 Failed at the scrypt@4.0.7 install script 'node-gyp rebuild'.
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 This is most likely a problem with the scrypt package,
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 not with npm itself.
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 Tell the author that this fails on your system:
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	     node-gyp rebuild
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 You can get information on how to open an issue for this project with:
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	     npm bugs scrypt
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 Or if that isn't available, you can get their info via:
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	     npm owner ls scrypt
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 There is likely additional logging output above.
+ DEBUG [eb034b6d] 	
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	 Please include the following file with any support request:
+ DEBUG [eb034b6d] 	npm
+ DEBUG [eb034b6d] 	 
+ DEBUG [eb034b6d] 	ERR!
+ DEBUG [eb034b6d] 	     /var/www/lb/releases/20170930114620/servers/cms/node_modules/scrypt/npm-debug.log
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-09-30 11:53:27 +0000 cap test deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [93fd1523] Running /usr/bin/env mkdir -p /tmp as deploy@test.lakemedelsboken.se
+ DEBUG [93fd1523] Command: ( export SERVER="test" ; /usr/bin/env mkdir -p /tmp )
+  INFO [93fd1523] Finished in 7.516 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-lb-test-vagrant.sh 0.0%
+  INFO Uploading /tmp/git-ssh-lb-test-vagrant.sh 100.0%
+  INFO [12861bb1] Running /usr/bin/env chmod 700 /tmp/git-ssh-lb-test-vagrant.sh as deploy@test.lakemedelsboken.se
+ DEBUG [12861bb1] Command: ( export SERVER="test" ; /usr/bin/env chmod 700 /tmp/git-ssh-lb-test-vagrant.sh )
+  INFO [12861bb1] Finished in 0.156 seconds with exit status 0 (successful).
+  INFO [52856c8b] Running /usr/bin/env git ls-remote https://github.com/lakemedelsboken/LB.git HEAD as deploy@test.lakemedelsboken.se
+ DEBUG [52856c8b] Command: ( export SERVER="test" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-lb-test-vagrant.sh" ; /usr/bin/env git ls-remote https://github.com/lakemedelsboken/LB.git HEAD )
+ DEBUG [52856c8b] 	f8e62d247133de3ddf668ee82b58af83078ef885	HEAD
+  INFO [52856c8b] Finished in 1.272 seconds with exit status 0 (successful).
+  INFO [522c9f92] Running /usr/bin/env mkdir -p /var/www/lb/shared /var/www/lb/releases as deploy@test.lakemedelsboken.se
+ DEBUG [522c9f92] Command: ( export SERVER="test" ; /usr/bin/env mkdir -p /var/www/lb/shared /var/www/lb/releases )
+  INFO [522c9f92] Finished in 0.130 seconds with exit status 0 (successful).
+ DEBUG [8834fb68] Running [ -f /var/www/lb/current/REVISION ] as deploy@test.lakemedelsboken.se
+ DEBUG [8834fb68] Command: [ -f /var/www/lb/current/REVISION ]
+ DEBUG [8834fb68] Finished in 0.127 seconds with exit status 0 (successful).
+ DEBUG [85730710] Running /usr/bin/env cat /var/www/lb/current/REVISION 2>/dev/null as deploy@test.lakemedelsboken.se
+ DEBUG [85730710] Command: ( export SERVER="test" ; /usr/bin/env cat /var/www/lb/current/REVISION 2>/dev/null )
+ DEBUG [85730710] 	d439f9ec3c547730360bbfe71f5c701739d553e5
+ DEBUG [85730710] Finished in 0.132 seconds with exit status 0 (successful).
+ DEBUG [db02c512] Running [ -f /var/www/lb/repo/HEAD ] as deploy@test.lakemedelsboken.se
+ DEBUG [db02c512] Command: [ -f /var/www/lb/repo/HEAD ]
+ DEBUG [db02c512] Finished in 0.126 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/lb/repo
+ DEBUG [4a3619f8] Running if test ! -d /var/www/lb/repo; then echo "Directory does not exist '/var/www/lb/repo'" 1>&2; false; fi as deploy@test.lakemedelsboken.se
+ DEBUG [4a3619f8] Command: if test ! -d /var/www/lb/repo; then echo "Directory does not exist '/var/www/lb/repo'" 1>&2; false; fi
+ DEBUG [4a3619f8] Finished in 0.132 seconds with exit status 0 (successful).
+  INFO [bd228043] Running /usr/bin/env git remote set-url origin https://github.com/lakemedelsboken/LB.git as deploy@test.lakemedelsboken.se
+ DEBUG [bd228043] Command: cd /var/www/lb/repo && ( export SERVER="test" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-lb-test-vagrant.sh" ; /usr/bin/env git remote set-url origin https://github.com/lakemedelsboken/LB.git )
+  INFO [bd228043] Finished in 0.134 seconds with exit status 0 (successful).
+  INFO [4b785573] Running /usr/bin/env git remote update --prune as deploy@test.lakemedelsboken.se
+ DEBUG [4b785573] Command: cd /var/www/lb/repo && ( export SERVER="test" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-lb-test-vagrant.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [4b785573] 	Fetching origin
+ DEBUG [4b785573] 	From https://github.com/lakemedelsboken/LB
+   d439f9e..f8e62d2  master     -> master
+  INFO [4b785573] Finished in 2.129 seconds with exit status 0 (successful).
+ DEBUG [8b11ab82] Running if test ! -d /var/www/lb/repo; then echo "Directory does not exist '/var/www/lb/repo'" 1>&2; false; fi as deploy@test.lakemedelsboken.se
+ DEBUG [8b11ab82] Command: if test ! -d /var/www/lb/repo; then echo "Directory does not exist '/var/www/lb/repo'" 1>&2; false; fi
+ DEBUG [8b11ab82] Finished in 0.122 seconds with exit status 0 (successful).
+  INFO [88036f8f] Running /usr/bin/env mkdir -p /var/www/lb/releases/20170930115338 as deploy@test.lakemedelsboken.se
+ DEBUG [88036f8f] Command: cd /var/www/lb/repo && ( export SERVER="test" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-lb-test-vagrant.sh" ; /usr/bin/env mkdir -p /var/www/lb/releases/20170930115338 )
+  INFO [88036f8f] Finished in 0.130 seconds with exit status 0 (successful).
+  INFO [7e29216c] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/lb/releases/20170930115338 as deploy@test.lakemedelsboken.se
+ DEBUG [7e29216c] Command: cd /var/www/lb/repo && ( export SERVER="test" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-lb-test-vagrant.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /var/www/lb/releases/20170930115338 )
+  INFO [7e29216c] Finished in 126.199 seconds with exit status 0 (successful).
+ DEBUG [1b570091] Running if test ! -d /var/www/lb/repo; then echo "Directory does not exist '/var/www/lb/repo'" 1>&2; false; fi as deploy@test.lakemedelsboken.se
+ DEBUG [1b570091] Command: if test ! -d /var/www/lb/repo; then echo "Directory does not exist '/var/www/lb/repo'" 1>&2; false; fi
+ DEBUG [1b570091] Finished in 0.174 seconds with exit status 0 (successful).
+ DEBUG [c136a1e5] Running /usr/bin/env git rev-list --max-count=1 master as deploy@test.lakemedelsboken.se
+ DEBUG [c136a1e5] Command: cd /var/www/lb/repo && ( export SERVER="test" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-lb-test-vagrant.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [c136a1e5] 	f8e62d247133de3ddf668ee82b58af83078ef885
+ DEBUG [c136a1e5] Finished in 0.257 seconds with exit status 0 (successful).
+ DEBUG [8edd0fc1] Running if test ! -d /var/www/lb/releases/20170930115338; then echo "Directory does not exist '/var/www/lb/releases/20170930115338'" 1>&2; false; fi as deploy@test.lakemedelsboken.se
+ DEBUG [8edd0fc1] Command: if test ! -d /var/www/lb/releases/20170930115338; then echo "Directory does not exist '/var/www/lb/releases/20170930115338'" 1>&2; false; fi
+ DEBUG [8edd0fc1] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [570d2f64] Running /usr/bin/env echo "f8e62d247133de3ddf668ee82b58af83078ef885" >> REVISION as deploy@test.lakemedelsboken.se
+ DEBUG [570d2f64] Command: cd /var/www/lb/releases/20170930115338 && ( export SERVER="test" ; /usr/bin/env echo "f8e62d247133de3ddf668ee82b58af83078ef885" >> REVISION )
+  INFO [570d2f64] Finished in 0.153 seconds with exit status 0 (successful).
+  INFO [9678d815] Running /usr/bin/env ln -s /var/www/lb/releases/20170930115338 /var/www/lb/releases/current as deploy@test.lakemedelsboken.se
+ DEBUG [9678d815] Command: ( export SERVER="test" ; /usr/bin/env ln -s /var/www/lb/releases/20170930115338 /var/www/lb/releases/current )
+  INFO [9678d815] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [f34dbf1e] Running /usr/bin/env mv /var/www/lb/releases/current /var/www/lb as deploy@test.lakemedelsboken.se
+ DEBUG [f34dbf1e] Command: ( export SERVER="test" ; /usr/bin/env mv /var/www/lb/releases/current /var/www/lb )
+  INFO [f34dbf1e] Finished in 0.160 seconds with exit status 0 (successful).
+  INFO [2d9883b1] Running rm -rf /var/www/lb/releases/20170930115338/fass/www/products as deploy@test.lakemedelsboken.se
+ DEBUG [2d9883b1] Command: rm -rf /var/www/lb/releases/20170930115338/fass/www/products
+  INFO [2d9883b1] Finished in 0.132 seconds with exit status 0 (successful).
+  INFO [d9355cd1] Running mkdir -p /var/www/lb/releases/20170930115338/fass/www/ as deploy@test.lakemedelsboken.se
+ DEBUG [d9355cd1] Command: mkdir -p /var/www/lb/releases/20170930115338/fass/www/
+  INFO [d9355cd1] Finished in 0.136 seconds with exit status 0 (successful).
+  INFO [4fcea192] Running mkdir -p /var/www/lb/shared/fass/www/products as deploy@test.lakemedelsboken.se
+ DEBUG [4fcea192] Command: mkdir -p /var/www/lb/shared/fass/www/products
+  INFO [4fcea192] Finished in 0.133 seconds with exit status 0 (successful).
+  INFO [daf3cc74] Running ln -nfs /var/www/lb/shared/fass/www/products /var/www/lb/releases/20170930115338/fass/www/ as deploy@test.lakemedelsboken.se
+ DEBUG [daf3cc74] Command: ln -nfs /var/www/lb/shared/fass/www/products /var/www/lb/releases/20170930115338/fass/www/
+  INFO [daf3cc74] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [bd89ea9f] Running mkdir -p /var/www/lb/shared/fass/shared as deploy@test.lakemedelsboken.se
+ DEBUG [bd89ea9f] Command: mkdir -p /var/www/lb/shared/fass/shared
+  INFO [bd89ea9f] Finished in 0.127 seconds with exit status 0 (successful).
+  INFO [4d0b631b] Running cp -n /var/www/lb/releases/20170930115338/fass/shared/foundUpdates.json /var/www/lb/shared/fass/shared/foundUpdates.json as deploy@test.lakemedelsboken.se
+ DEBUG [4d0b631b] Command: cp -n /var/www/lb/releases/20170930115338/fass/shared/foundUpdates.json /var/www/lb/shared/fass/shared/foundUpdates.json
+  INFO [4d0b631b] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO [2bf71b69] Running rm -rf /var/www/lb/releases/20170930115338/fass/shared as deploy@test.lakemedelsboken.se
+ DEBUG [2bf71b69] Command: rm -rf /var/www/lb/releases/20170930115338/fass/shared
+  INFO [2bf71b69] Finished in 0.126 seconds with exit status 0 (successful).
+  INFO [3f944715] Running ln -nfs /var/www/lb/shared/fass/shared /var/www/lb/releases/20170930115338/fass/ as deploy@test.lakemedelsboken.se
+ DEBUG [3f944715] Command: ln -nfs /var/www/lb/shared/fass/shared /var/www/lb/releases/20170930115338/fass/
+  INFO [3f944715] Finished in 0.131 seconds with exit status 0 (successful).
+  INFO [7f99e983] Running cd /var/www/lb/releases/20170930115338/npl/ && npm install xml-stream as deploy@test.lakemedelsboken.se
+ DEBUG [7f99e983] Command: cd /var/www/lb/releases/20170930115338/npl/ && npm install xml-stream
+ DEBUG [7f99e983] 	
+> node-expat@2.3.16 install /var/www/lb/releases/20170930115338/npl/node_modules/xml-stream/node_modules/node-expat
+> node-gyp rebuild
+
+ DEBUG [7f99e983] 	make: Entering directory `/var/www/lb/releases/20170930115338/npl/node_modules/xml-stream/node_modules/node-expat/build'
+ DEBUG [7f99e983] 	  CC(target) Release/obj.target/expat/deps/libexpat/lib/xmlparse.o
+ DEBUG [7f99e983] 	../deps/libexpat/lib/xmlparse.c: In function ‘gather_time_entropy’:
+ DEBUG [7f99e983] 	../deps/libexpat/lib/xmlparse.c:780:7: warning: variable ‘gettimeofday_res’ set but not used [-Wunused-but-set-variable]
+   int gettimeofday_res;
+       ^
+ DEBUG [7f99e983] 	  CC(target) Release/obj.target/expat/deps/libexpat/lib/xmltok.o
+ DEBUG [7f99e983] 	  CC(target) Release/obj.target/expat/deps/libexpat/lib/xmlrole.o
+ DEBUG [7f99e983] 	  AR(target) Release/obj.target/deps/libexpat/libexpat.a
+ DEBUG [7f99e983] 	  COPY Release/libexpat.a
+ DEBUG [7f99e983] 	  CXX(target) Release/obj.target/node_expat/node-expat.o
+ DEBUG [7f99e983] 	  SOLINK_MODULE(target) Release/obj.target/node_expat.node
+ DEBUG [7f99e983] 	  COPY Release/node_expat.node
+ DEBUG [7f99e983] 	make: Leaving directory `/var/www/lb/releases/20170930115338/npl/node_modules/xml-stream/node_modules/node-expat/build'
+ DEBUG [7f99e983] 	
+> iconv@2.3.0 install /var/www/lb/releases/20170930115338/npl/node_modules/xml-stream/node_modules/iconv
+> node-gyp rebuild
+
+ DEBUG [7f99e983] 	make: Entering directory `/var/www/lb/releases/20170930115338/npl/node_modules/xml-stream/node_modules/iconv/build'
+ DEBUG [7f99e983] 	  CXX(target) Release/obj.target/iconv/src/binding.o
+ DEBUG [7f99e983] 	  CC(target) Release/obj.target/iconv/deps/libiconv/lib/iconv.o
+ DEBUG [7f99e983] 	  CC(target) Release/obj.target/iconv/support/localcharset.o
+ DEBUG [7f99e983] 	  SOLINK_MODULE(target) Release/obj.target/iconv.node
+ DEBUG [7f99e983] 	  COPY Release/iconv.node
+ DEBUG [7f99e983] 	make: Leaving directory `/var/www/lb/releases/20170930115338/npl/node_modules/xml-stream/node_modules/iconv/build'
+ DEBUG [7f99e983] 	xml-stream@0.4.5 node_modules/xml-stream
+├── readable-stream@1.1.14 (inherits@2.0.3, isarray@0.0.1, string_decoder@0.10.31, core-util-is@1.0.2)
+├── node-expat@2.3.16 (bindings@1.3.0, nan@2.7.0)
+└── iconv@2.3.0 (nan@2.7.0)
+  INFO [7f99e983] Finished in 26.275 seconds with exit status 0 (successful).
+  INFO [177ae061] Running cd /var/www/lb/releases/20170930115338/servers/cms/node_modules/scrypt/ && npm install as deploy@test.lakemedelsboken.se
+ DEBUG [177ae061] Command: cd /var/www/lb/releases/20170930115338/servers/cms/node_modules/scrypt/ && npm install
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	WARN
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	package.json
+ DEBUG [177ae061] 	 scrypt@4.0.7 No license field.
+ DEBUG [177ae061] 	
+> scrypt@4.0.7 install /var/www/lb/releases/20170930115338/servers/cms/node_modules/scrypt
+> node-gyp rebuild
+
+ DEBUG [177ae061] 	/bin/sh: 1: scrypt/configuration/posixconfig: Permission denied
+ DEBUG [177ae061] 	gyp: Call to 'scrypt/configuration/posixconfig' returned exit status 126 while in binding.gyp. while trying to load binding.gyp
+ DEBUG [177ae061] 	gyp
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	configure error
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	gyp
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	stack
+ DEBUG [177ae061] 	 Error: `gyp` failed with exit code: 1
+ DEBUG [177ae061] 	gyp
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	stack
+ DEBUG [177ae061] 	     at ChildProcess.onCpExit (/usr/lib/node_modules/npm/node_modules/node-gyp/lib/configure.js:305:16)
+ DEBUG [177ae061] 	gyp
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	stack
+ DEBUG [177ae061] 	     at ChildProcess.emit (events.js:110:17)
+ DEBUG [177ae061] 	gyp
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	stack
+ DEBUG [177ae061] 	     at Process.ChildProcess._handle.onexit (child_process.js:1078:12)
+ DEBUG [177ae061] 	gyp
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	System
+ DEBUG [177ae061] 	 Linux 3.13.0-45-generic
+ DEBUG [177ae061] 	gyp
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	command
+ DEBUG [177ae061] 	 "node" "/usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+ DEBUG [177ae061] 	gyp
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	cwd
+ DEBUG [177ae061] 	 /var/www/lb/releases/20170930115338/servers/cms/node_modules/scrypt
+ DEBUG [177ae061] 	gyp
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	node -v
+ DEBUG [177ae061] 	 v0.12.17
+ DEBUG [177ae061] 	gyp
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	node-gyp -v
+ DEBUG [177ae061] 	 v3.3.1
+ DEBUG [177ae061] 	gyp
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	not ok
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 Linux 3.13.0-45-generic
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	argv
+ DEBUG [177ae061] 	 "/usr/bin/node" "/usr/bin/npm" "install"
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	node
+ DEBUG [177ae061] 	 v0.12.17
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	npm 
+ DEBUG [177ae061] 	 v2.15.1
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	code
+ DEBUG [177ae061] 	 ELIFECYCLE
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 scrypt@4.0.7 install: `node-gyp rebuild`
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 Exit status 1
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 Failed at the scrypt@4.0.7 install script 'node-gyp rebuild'.
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 This is most likely a problem with the scrypt package,
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 not with npm itself.
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 Tell the author that this fails on your system:
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	     node-gyp rebuild
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 You can get information on how to open an issue for this project with:
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	     npm bugs scrypt
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 Or if that isn't available, you can get their info via:
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	     npm owner ls scrypt
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 There is likely additional logging output above.
+ DEBUG [177ae061] 	
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	 Please include the following file with any support request:
+ DEBUG [177ae061] 	npm
+ DEBUG [177ae061] 	 
+ DEBUG [177ae061] 	ERR!
+ DEBUG [177ae061] 	     /var/www/lb/releases/20170930115338/servers/cms/node_modules/scrypt/npm-debug.log
