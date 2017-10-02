@@ -27,7 +27,7 @@ var pdfCreator = {
 			if (url.indexOf("/cms/draft") === 0) {
 				fileOnDisk = path.join(fileOnDisk, "draft", url.replace("/cms/draft/", ""));
 				//Do not cache draft files
-				fileOnDisk = null;
+				//fileOnDisk = null;
 			} else if (url.indexOf("/kapitel") === 0) {
 				fileOnDisk = path.join(fileOnDisk, "published", url.substr(1));
 			} else {
