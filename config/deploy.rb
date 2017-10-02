@@ -60,7 +60,7 @@ namespace :deploy do
       execute "cd #{release_path}/npl/ && npm install xml-stream"
 
       #rebuild scrypt module
-      execute "cd #{release_path}/servers/cms/node_modules/scrypt/ && sudo npm install"
+      execute "cd #{release_path}/servers/cms/node_modules/scrypt/ && npm install"
 
       ask(:secretSettingsPassword, nil, echo: false)
 
