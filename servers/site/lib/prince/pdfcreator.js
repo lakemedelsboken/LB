@@ -26,10 +26,12 @@ var pdfCreator = {
 
 			if (url.indexOf("/cms/draft") === 0) {
 				fileOnDisk = path.join(fileOnDisk, "draft", url.replace("/cms/draft/", ""));
+				console.log("file on disk is : "+fileOnDisk);
 				//Do not cache draft files
 				//fileOnDisk = null;
 			} else if (url.indexOf("/kapitel") === 0) {
 				fileOnDisk = path.join(fileOnDisk, "published", url.substr(1));
+				console.log("file on disk is : "+fileOnDisk);
 			} else {
 				fileOnDisk = null;
 			}
@@ -38,6 +40,7 @@ var pdfCreator = {
 
 			//Find the file on disk
 			if (fileOnDisk !== null && fs.existsSync(fileOnDisk)) {
+				console.log("file is exist");
 				//Calculate the hash of the output html file
 				uniqueIdForContent = historyModel.getFileChecksumSync(fileOnDisk);
 
@@ -48,14 +51,15 @@ var pdfCreator = {
 
 			//The id will either be the checksum of the file or a uuid
 			var outPath = path.join(require("os").tmpdir(), uniqueIdForContent + ".pdf");
-
+			console.log("outpath : "+outPath);
 			var date = new Date();
 			var fileNameDate = dateFormat(date, "yyyy-mm-dd--HH-MM-ss");
-
+			console.log("filenameDate : "+fileNameDate);
 			var newFileName = path.basename(url, ".html") + "-" + fileNameDate + ".pdf";
-
+			console.log("newFileName : "+newFileName);
 			//Simple cache check, hash match equals direct result
 			if (fs.existsSync(outPath)) {
+				console.log("outpath exists");
 				return callback(null, {name: newFileName, path: outPath});
 			}
 
