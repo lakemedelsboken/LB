@@ -13,7 +13,7 @@ var pdfCreator = {
 	printCssFile: "http://localhost/css/uncompressed/print.css",
 	createFromUrl: function(url, requestCookies, callback) {
 
-		if (url !== undefined && url !== "") {
+		if (url !== undefined && url !== "" && (url.indexOf("kapitel/") > -1||url.indexOf("-nya-kapitel-ej-publ/") > -1)) {
 
 			if (url.indexOf('.json') !== -1 ) {
 				url = url.replace('.json', '.html');
