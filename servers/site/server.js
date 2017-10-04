@@ -1003,6 +1003,8 @@ app.get("/pdf/download", function(req, res) {
 				});
 			} else {
 				if (result.name !== undefined && result.name !== "" && result.path !== undefined && result.path !== "") {
+					console.log("result.name = "+result.name);
+					console.log("result.path = "+result.path);
 					res.download(result.path, result.name);
 				} else {
 					res.status(500);
