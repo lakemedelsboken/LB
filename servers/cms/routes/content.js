@@ -569,10 +569,10 @@ router.get("/makealltextblack", function(req, res) {
 		console.log(currentPage.type);
 		currentPage.content.forEach(function(item){
 			if(item.content && item.content.length > 0) {
-				item.content = item.content.replace(/#ff0000/g,"#000000");
+				item.content = item.content.replace(/#([a-f]|[A-F]|[0-9]){2}0000/g,"#000000").replace(/ class="updated"/g,"");
 			}
 			if(item.content.text && item.content.text.length > 0) {
-				item.content.text = item.content.text.replace(/#ff0000/g,"#000000");
+				item.content.text = item.content.text.replace(/#([a-f]|[A-F]|[0-9]){2}0000/g,"#000000").replace(/ class="updated"/g,"");;
 			}
 
 		});
