@@ -14,7 +14,7 @@ $(document).ready(function() {
 			}
 		}
 	}
-	
+
 	//Radios for filtering the results in the internal link checker
 	$("input#showAllLinks").on("click", function(event) {
 		$(".incoming-links-list-item").removeClass("hidden");
@@ -740,7 +740,7 @@ $(document).ready(function() {
 
 			$("#draftFrame").prop("src", url);
 			$("#draftLink").prop("href", url);
-			$("#draftPdfLink").prop("href", "/pdf/download?url=" + encodeURIComponent(url));
+			$("#draftPdfLink").prop("href", "/pdf/download_old?url=" + encodeURIComponent(url));
 			$("#draftWordLink").prop("href", "/cms/content/docx/download?url=" + encodeURIComponent(url));
 
 		});
