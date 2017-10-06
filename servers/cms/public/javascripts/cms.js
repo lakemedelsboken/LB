@@ -761,7 +761,7 @@ $(document).ready(function() {
 
 			$("#publishedFrame").prop("src", url);
 			$("#publishedLink").prop("href", url);
-			$("#publishedPdfLink").prop("href", "/cms/content/pdf/download?url=" + encodeURIComponent(url));
+			$("#publishedPdfLink").prop("href", "/pdf/download_old?url=" + encodeURIComponent(url));
 			$("#publishedWordLink").prop("href", "/cms/content/docx/download?url=" + encodeURIComponent(url));
 
 		});
