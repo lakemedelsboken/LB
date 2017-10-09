@@ -1,0 +1,62 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Förord pediatrik",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2016-02-08 11:18",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Förnamn Efternamn",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "a0147136-d513-4abf-95db-477692fa7ede",
+			"name": "33657c50-25f8-49fd-a05a-69d2ff7327f1",
+			"type": "text",
+			"content": "<h1 id=\"Lakemedel-och-barn\">L&auml;kemedel och barn</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "eec9fd4d-a5c6-4685-ad82-a2d600fb627b",
+			"name": "7748a999-f0c1-4a70-8de7-ddfa80fee932",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2><ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/pediatrik/forord.json",
+	"indexed": "true",
+	"modified": "2016-02-08 12:43"
+}

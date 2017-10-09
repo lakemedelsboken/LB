@@ -1,0 +1,38 @@
+{
+	"templateName": "default",
+	"templateDescription": "Vanlig sida",
+	"title": "Redaktionskommitté | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-23 23:48",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "/editors.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "1e878b54-7cb6-451d-8134-5fd5e65aa8ec",
+			"name": "1e878b54-7cb6-451d-8134-5fd5e65aa8ec",
+			"type": "text",
+			"content": "<h1>Rubrik</h1>\n<p>Text</p>",
+			"settings": {}
+		}
+	],
+	"type": "file",
+	"path": "/redaktionskommitte/index.json",
+	"indexed": "true",
+	"modified": "2015-07-23 23:51"
+}

@@ -1,0 +1,101 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Hypertoni",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2016-02-22 12:17",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Kristina Bengtsson Boström",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "4abddc20-0d7a-4f9c-a43a-00fb5f4cb3e2",
+			"name": "be607a44-1196-4d28-a439-66008abd48e1",
+			"type": "text",
+			"content": "<h1 id=\"Hypertoni\">Hypertoni</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5f95a961-c151-4a3d-bd34-1ef5826c2a9f",
+			"name": "496fc955-8e0a-496a-bb1b-feb5f627f73a",
+			"type": "author",
+			"content": {
+				"firstname": "Kristina",
+				"surname": "Bengtsson Boström",
+				"description": "Närhälsan Billingen Vårdcentral, FoU centrum Skaraborg, Skövde",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a1bcae09-8bb6-41a6-8026-b1c5da686033",
+			"name": "0a910d97-6736-469c-9051-98de96690f60",
+			"type": "text",
+			"content": "<p class=\"ingress\">Ingresstext</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4d97542c-149c-4973-afbd-c4df8297f7f8",
+			"name": "9a1c0d14-b4e0-403b-936b-f433fa41f0ea",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2><ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/-nya-kapitel-ej-publ/E5-Hypertoni-nytt.json",
+	"indexed": "true",
+	"modified": "2016-02-22 12:20"
+}

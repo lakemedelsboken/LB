@@ -1,0 +1,145 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Övervikt och fetma",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2016-04-15 15:49",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Staffan  Marild, Torsten Olbers, Jarl Torgerson",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "84127f29-5d95-4cb1-9aa6-652ac87f3332",
+			"name": "fe73e5fb-86c9-4a40-97c2-0db342e76b7f",
+			"type": "text",
+			"content": "<h1 id=\"Kapitelrubrik\">Kapitelrubrik</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6cd23127-a252-497a-af67-4dcc0ab71f90",
+			"name": "4b607546-5402-45ce-a8de-45be6a26817c",
+			"type": "author",
+			"content": {
+				"firstname": "Staffan ",
+				"surname": "Marild",
+				"description": "",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f546811d-3981-4733-80b5-c9d180b2395d",
+			"name": "f546811d-3981-4733-80b5-c9d180b2395d",
+			"type": "author",
+			"content": {
+				"firstname": "Torsten",
+				"surname": "Olbers",
+				"description": "",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a8d28b74-9911-41e9-b3fb-07b3b06c7cf4",
+			"name": "a8d28b74-9911-41e9-b3fb-07b3b06c7cf4",
+			"type": "author",
+			"content": {
+				"firstname": "Jarl",
+				"surname": "Torgerson",
+				"description": "",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "640d2920-8cdc-43f4-ae69-8772a7cda4d9",
+			"name": "33486b6a-e90a-47e6-814a-92954c3752af",
+			"type": "text",
+			"content": "<p class=\"ingress\">Ingresstext</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4659f4c1-9f9e-43a0-8cfe-3ffe07b9dee2",
+			"name": "b1f33364-7133-44cc-af41-6d26c8d188f1",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2><ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/-nya-kapitel-ej-publ/-vervikt-och-fetma.json",
+	"indexed": "true",
+	"modified": "2016-04-15 15:55"
+}

@@ -1,0 +1,48 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "Reviderade kapitel 170705",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "nyhet",
+	"created": "2017-07-05 09:19",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "c647be3c-83ce-414f-8e54-e2aff526e5cb",
+			"name": "c647be3c-83ce-414f-8e54-e2aff526e5cb",
+			"type": "text",
+			"content": "<h1 id=\"Reviderade-och-uppdaterade-kapitel-forsommaren-2017\">Reviderade och uppdaterade kapitel f&ouml;rsommaren 2017</h1>\n<p></p>\n<p>Under f&ouml;rsommaren har vi publicerat reviderade versioner av f&ouml;ljande kapitel:</p>\n<ul>\n<li><a href=\"{pre}/kapitel/beroendetillstand/tobaksberoende.html#t1_2\">Tobaksberoende</a></li>\n<li><a href=\"{pre}/kapitel/beroendetillstand/narkotikaberoende.html#t3_3\">Narkotikaberoende</a></li>\n<li><a href=\"{pre}/kapitel/hjarta-karl/ischemisk_hjartsjukdom.html#e1_4\">Ischemisk hj&auml;rtsjukdom</a></li>\n<li><a href=\"{pre}/kapitel/blod/anemier.html#d1_3\">Anemier</a></li>\n</ul>\n<p>Vi har ocks&aring; gjort sm&auml;rre uppdateringar i kapitlen om Epilepsi, S&ouml;mnst&ouml;rningar och Sjukdomar i manliga genitalia. Uppdaterad text kan visas i r&ouml;tt genom ett val under Inst&auml;llningar i respektive kapitel.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/blog/Revisioner-och-uppdateringar.json",
+	"indexed": "true",
+	"modified": "2017-07-05 09:35"
+}

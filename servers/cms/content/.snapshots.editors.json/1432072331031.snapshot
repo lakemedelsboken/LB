@@ -1,0 +1,38 @@
+{
+	"templateName": "default",
+	"templateDescription": "Vanlig sida",
+	"title": "Redaktionskommitté",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-05-19 23:51",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "e75cb6af-4a7b-4cff-b068-3294f02cb4e7",
+			"name": "e75cb6af-4a7b-4cff-b068-3294f02cb4e7",
+			"type": "text",
+			"content": "<h1>Rubrik</h1>\n<p>Text</p>",
+			"settings": {}
+		}
+	],
+	"type": "file",
+	"path": "/editors.json",
+	"indexed": "true",
+	"modified": "2015-05-19 23:52"
+}

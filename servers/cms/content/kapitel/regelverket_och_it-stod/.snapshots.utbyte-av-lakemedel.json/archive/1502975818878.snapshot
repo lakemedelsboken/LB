@@ -1,0 +1,296 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Utbyte av läkemedel",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2017-08-17 13:13",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Catarina  Bernet, Frida Hagnestål",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "696dc4c4-e571-4615-b268-332a65c8b127",
+			"name": "8bd99cd3-29fe-4a7c-b42c-26c2ade381fc",
+			"type": "text",
+			"content": "<h1 id=\"Utbyte-av-lakemedel\">Utbyte av l&auml;kemedel</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "010cfa2b-4f6c-48d0-a209-4ab6a72a6268",
+			"name": "265f7f79-788c-4435-ab21-8ed2b786d0fe",
+			"type": "author",
+			"content": {
+				"firstname": "Catarina ",
+				"surname": "Bernet",
+				"description": "Läkemedelsverket, Uppsala",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fc0aa583-7f5f-4361-9733-54e118ab5889",
+			"name": "fc0aa583-7f5f-4361-9733-54e118ab5889",
+			"type": "author",
+			"content": {
+				"firstname": "Frida",
+				"surname": "Hagnestål",
+				"description": "Läkemedelsverket, Uppsala",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c93513db-4de9-4331-863e-1fa36b0b4ed6",
+			"name": "1386c97f-6cb6-450a-a0d8-a9793823368f",
+			"type": "text",
+			"content": "<h2 id=\"Inledning\">Inledning</h2>\n<p><strong>Det generiska utbytet &auml;r en naturlig del i l&auml;kemedelsbehandlingen f&ouml;r m&aring;nga patienter, men kan f&ouml;r en del g&ouml;ra l&auml;kemedelsanv&auml;ndningen mer komplicerad. Detta kapitel syftar till att ge st&ouml;d och kunskapsunderlag till f&ouml;rskrivare, som liksom farmaceuter har en nyckelroll f&ouml;r ett patients&auml;kert utbyte. </strong></p>\n<p><strong>&nbsp;</strong></p>\n<p><strong>Den information som f&ouml;rskrivaren ger patienten om att l&auml;kemedlet kan bytas p&aring; apotek &auml;r viktig f&ouml;r att patienten ska k&auml;nna sig trygg med sina l&auml;kemedel och f&ouml;rebygger felanv&auml;ndning. F&ouml;rskrivaren har ocks&aring; ansvar f&ouml;r att bed&ouml;ma om det finns n&aring;gra medicinska sk&auml;l som utg&ouml;r hinder mot att den enskilde patientens l&auml;kemedel kan bytas ut.</strong></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5a63037c-5a60-4f3b-a2c6-173be21ba165",
+			"name": "5a63037c-5a60-4f3b-a2c6-173be21ba165",
+			"type": "text",
+			"content": "<h2 id=\"Generiskt-utbyte-i-korthet\">Generiskt utbyte i korthet<o:p></o:p></h2>\n<p>I&nbsp; Faktaruta 1, Faktaruta 2, Faktaruta 3 och Faktaruta 4 beskrivs olika aspekter av det generiska utbytet i korthet.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "cd812625-d794-463c-a46c-be8afe11bae3",
+			"name": "cd812625-d794-463c-a46c-be8afe11bae3",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "Generiskt utbyte på apotek",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Generiskt utbyte inneb&auml;r att apoteken erbjuder patienten ett terapeutiskt likv&auml;rdigt l&auml;kemedel med l&auml;gre pris (periodens vara) ist&auml;llet f&ouml;r det f&ouml;rskrivna l&auml;kemedlet.</li>\r\n<li>Terapeutiskt likv&auml;rdiga l&auml;kemedel inneb&auml;r att l&auml;kemedlen inneh&aring;ller samma aktiva substans i samma m&auml;ngd, har samma beredningsform (t.ex. tablett) och har bed&ouml;mts vara terapeutiskt likv&auml;rdiga i &ouml;vrigt. Skillnader i exempelvis hj&auml;lp&auml;mnen, utseende och produktnamn kan f&ouml;rekomma.</li>\r\n<li>Generiskt utbyte sker endast f&ouml;r l&auml;kemedel inom l&auml;kemedelsf&ouml;rm&aring;nen.</li>\r\n<li>Syftet med generiskt utbyte &auml;r att varken patienten eller samh&auml;llet ska beh&ouml;va betala mer &auml;n n&ouml;dv&auml;ndigt f&ouml;r l&auml;kemedel.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6672d473-f2bb-497d-94d8-cf239aec297f",
+			"name": "6672d473-f2bb-497d-94d8-cf239aec297f",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "Förskrivarens bedömning och information vid generiskt utbyte",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>g&ouml;r en medicinsk bed&ouml;mning om utbyte av det f&ouml;rskrivna l&auml;kemedlet &auml;r l&auml;mpligt f&ouml;r patienten</li>\r\n<li>ger information till patienten om att utbyte av f&ouml;rskrivet l&auml;kemedel kan komma att ske p&aring; apotek</li>\r\n<li>tar h&auml;nsyn till om utbytet eventuellt kan ha p&aring;verkat l&auml;kemedelsanv&auml;ndningen vid uppf&ouml;ljning av l&auml;kemedelsbehandlingen</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d8eadb4f-d614-4b9a-bf15-4d1a1dd1ff15",
+			"name": "d8eadb4f-d614-4b9a-bf15-4d1a1dd1ff15",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "Farmaceutens bedömning och information vid generiskt utbyte",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>bed&ouml;mer om utbyte av det f&ouml;rskrivna l&auml;kemedlet till den aktuella periodens vara &auml;r l&auml;mpligt, utifr&aring;n ett farmaceutiskt och expeditionsm&auml;ssigt perspektiv, och har m&ouml;jlighet att mots&auml;tta sig utbytet p&aring; vissa grunder</li>\r\n<li>erbjuder periodens vara, upplyser om valm&ouml;jligheter och hur valet kan p&aring;verka kostnaden</li>\r\n<li>s&auml;kerst&auml;ller att apotekskunden, s&aring; l&aring;ngt som m&ouml;jligt, vet hur l&auml;kemedlet ska <em>anv&auml;ndas</em></li>\r\n<li>h&auml;nvisar till f&ouml;rskrivaren vid behov av medicinska bed&ouml;mningar</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7c1eef28-f2e4-421a-84c6-f00653c4aae7",
+			"name": "7c1eef28-f2e4-421a-84c6-f00653c4aae7",
+			"type": "facts",
+			"content": {
+				"number": "4",
+				"title": "Bedömning av utbytbara läkemedel och periodens vara",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>L&auml;kemedelsverket beslutar om l&auml;kemedels utbytbarhet. F&ouml;r att l&auml;kemedel ska vara utbytbara ska de ha bed&ouml;mts som medicinskt likv&auml;rdiga vad g&auml;ller sammanv&auml;gd effekt och s&auml;kerhet.</li>\r\n<li>\r\n<ul></ul>\r\nTandv&aring;rds- och L&auml;kemedelsf&ouml;rm&aring;nsverket (TLV) beslutar om periodens vara.<em> </em>Periodens vara &auml;r den f&ouml;rpackning av ett utbytbart l&auml;kemedel inom l&auml;kemedelsf&ouml;rm&aring;nen som &auml;r tillg&auml;nglig p&aring; marknaden och har l&auml;gst pris inom en specifik f&ouml;rpackningsstorleksgrupp. Det &auml;r periodens vara som apoteken ska erbjuda sina kunder i utbyte vid expeditionstillf&auml;llet.\r\n<p></p>\r\n<p></p>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "874237a2-6789-4956-a5da-d37ff05229ed",
+			"name": "874237a2-6789-4956-a5da-d37ff05229ed",
+			"type": "text",
+			"content": "<p>I f&ouml;ljande avsnitt beskrivs f&ouml;rskrivarens roll mer utf&ouml;rligt. D&auml;refter f&ouml;ljer en beskrivning av farmaceutens roll. L&auml;kemedelsverkets bed&ouml;mning av utbytbarhet och vilka skillnader som kan f&ouml;rekomma f&ouml;r utbytbara l&auml;kemedel beskrivs i slutet av kapitlet.</p>\n<p><br>I kapitlet om L&auml;kemedelsf&ouml;rm&aring;ner finns mer information l&auml;kemedelsf&ouml;rm&aring;nen (inom vilken allt generiskt utbyte sker), om periodens vara och hur kostnaden f&ouml;r patienten p&aring;verkas av m&ouml;jligheten att mots&auml;tta sig utbyte.</p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "813170f1-7de2-4148-b32b-7a80a1f9f278",
+			"name": "813170f1-7de2-4148-b32b-7a80a1f9f278",
+			"type": "text",
+			"content": "<h2 id=\"Forskrivarens-roll-vid-generiskt-utbyte\">F&ouml;rskrivarens roll vid generiskt utbyte<o:p></o:p></h2>\n<p>F&ouml;rskrivare har en nyckelroll f&ouml;r att skapa ett patients&auml;kert utbyte och &auml;ndam&aring;lsenlig l&auml;kemedelsanv&auml;ndning. <br><br></p>\n<p>F&ouml;rskrivaren:</p>\n<ul>\n<li>g&ouml;r en medicinsk bed&ouml;mning om utbyte av det f&ouml;rskrivna l&auml;kemedlet &auml;r l&auml;mpligt f&ouml;r patienten</li>\n<li>ger information till patienten om att utbyte av f&ouml;rskrivet l&auml;kemedel kan komma att ske p&aring; apotek</li>\n<li>tar h&auml;nsyn till om utbytet eventuellt kan ha p&aring;verkat l&auml;kemedelsanv&auml;ndningen vid uppf&ouml;ljning av l&auml;kemedelsbehandlingen</li>\n</ul>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8c5c4d24-c885-4c5e-aee3-11b01ac1d063",
+			"name": "8c5c4d24-c885-4c5e-aee3-11b01ac1d063",
+			"type": "text",
+			"content": "<h3 id=\"Medicinsk-bedomning-i-samband-med-forskrivning\"><span>Medicinsk bed&ouml;mning i samband med f&ouml;rskrivnin</span>g</h3>\n<p>Vid f&ouml;rskrivningstillf&auml;llet bed&ouml;mer f&ouml;rskrivaren om patienten har f&ouml;ruts&auml;ttningar f&ouml;r att klara l&auml;kemedelshantering och -anv&auml;ndning efter ett generiskt utbyte. Om f&ouml;rskrivaren anser att ett f&ouml;rordnat l&auml;kemedel inte f&aring;r bytas ut av medicinska sk&auml;l ska f&ouml;rskrivaren informera patienten om detta samt g&ouml;ra en anteckning p&aring; receptet. Detta framg&aring;r av Socialstyrelsens f&ouml;reskrifter och allm&auml;nna r&aring;d om informationsskyldighet f&ouml;r l&auml;kare och tandl&auml;kare om generiska l&auml;kemedel m.m.<br><br>Ett exempel p&aring; ett medicinskt sk&auml;l som kan medf&ouml;ra att f&ouml;rskrivaren beh&ouml;ver mots&auml;tta sig utbyte &auml;r allergi mot hj&auml;lp&auml;mnen/tillsats&auml;mnen som kan f&ouml;rekomma i l&auml;kemedel. Ett annat fall d&aring; f&ouml;rskrivaren av medicinska sk&auml;l kan f&ouml;rhindra att ett l&auml;kemedel byts ut &auml;r n&auml;r en patient har sv&aring;rt att hantera ett byte till l&auml;kemedel med annat namn och utseende, eller n&auml;r bytet i sig skulle kunna inneb&auml;ra en f&ouml;rv&auml;xlingsrisk s&aring; att patienten riskerar avbryta behandlingen eller ta dubbla doser.<br><br></p>\n<p>F&ouml;rskrivaren beh&ouml;ver inte ta h&auml;nsyn till eller k&auml;nna till alla andra utbytbara l&auml;kemedel som det f&ouml;rskrivna l&auml;kemedlet skulle kunna bytas ut mot p&aring; apoteket. Vilka l&auml;kemedel som &auml;r utbytbara kan &auml;ndras &ouml;ver tid. F&ouml;rskrivarens bed&ouml;mning inneb&auml;r ist&auml;llet att v&auml;rdera m&ouml;jliga medicinska risker f&ouml;r patienten om utbyte av det f&ouml;rskrivna l&auml;kemedlet sker till ett utbytbart alternativ som &auml;ven om det &auml;r medicinskt likv&auml;rdigt <em>kan</em> ha annan utformning, andra hj&auml;lp&auml;mnen eller ha ett annat l&auml;kemedelsnamn.</p>\n<p></p>\n<p>F&ouml;r en patient som till exempel har en allergi mot ett hj&auml;lp&auml;mne som kan f&ouml;rekomma i l&auml;kemedel inneb&auml;r detta att f&ouml;rskrivaren alltid mots&auml;tter sig utbyte genom att signera p&aring; receptet, f&ouml;r att s&auml;kerst&auml;lla att inget annat l&auml;kemedel &auml;n det f&ouml;rskrivna l&auml;kemedlet som patienten tolererar kommer att expedieras. L&auml;s mer om skillnader mellan utbytbara l&auml;kemedel.</p>\n<h3 id=\"Nar-det-finns-medicinska-hinder-for-utbyte\">N&auml;r det finns medicinska hinder f&ouml;r utbyte</h3>\n<p>I de fall det finns medicinska grunder f&ouml;r att det f&ouml;rskrivna l&auml;kemedlet inte ska bytas ut p&aring; apoteket, mots&auml;tter sig f&ouml;rskrivaren utbytet genom att signera i avsedd ruta p&aring; receptet.<br><br>Det &auml;r viktigt att f&ouml;rskrivaren vid f&ouml;rskrivningstillf&auml;llet mots&auml;tter sig utbyte om det finns medicinska sk&auml;l. N&auml;r receptet expedieras p&aring; apotek f&ouml;ruts&auml;tts det att f&ouml;rskrivaren gjort denna aktiva bed&ouml;mning och att l&auml;kemedlet kan bytas ut om det inte finns n&aring;gon markering p&aring; receptet. Farmaceuten p&aring; apotek kan inte mots&auml;tta sig utbyte av <em>medicinska sk&auml;l</em> annat &auml;n i akuta undantagsfall. Om det i dialog mellan farmaceut och kund p&aring; apoteket framkommer att det finns medicinska sk&auml;l som g&ouml;r att utbyte inte &auml;r l&auml;mpligt, beh&ouml;ver som regel f&ouml;rskrivaren kontaktas f&ouml;r ett nytt recept eller &auml;ndring av receptet.</p>\n<p></p>\n<p>Om f&ouml;rskrivaren mots&auml;tter sig utbyte omfattas hela kostnaden av h&ouml;gkostnadsskyddet. Se vidare kapitlet L&auml;kemedelsf&ouml;rm&aring;nerna, avsnittet M&ouml;jligheter att mots&auml;tta sig utbyte.</p>\n<p></p>\n<h3 id=\"Nar-inga-medicinska-hinder-finns-for-utbyte\">N&auml;r inga medicinska hinder finns f&ouml;r utbyte</h3>\n<p>N&auml;r f&ouml;rskrivaren bed&ouml;mer att det inte finns n&aring;gra medicinska sk&auml;l att hindra ett utbyte p&aring; apotek, beh&ouml;vs ingen s&auml;rskild markering g&ouml;ras p&aring; receptet om detta. Det f&ouml;ruts&auml;tts att f&ouml;rskrivaren bed&ouml;mt att utbyte &auml;r medicinskt l&auml;mpligt f&ouml;r patienten n&auml;r receptet sedan expedieras p&aring; apoteket.<br><br></p>\n<p>Om ett utbyte &auml;r aktuellt p&aring; apoteket erbjuds patienten utbyte av det f&ouml;rskrivna l&auml;kemedlet mot den f&ouml;rpackning som &auml;r periodens vara vid expeditionstillf&auml;llet. Farmaceuten kan mots&auml;tta sig utbytet om den aktuella periodens vara inte &auml;r l&auml;mpligf&ouml;r patienten i fr&aring;ga och d&aring; expedieras den f&ouml;rskrivna l&auml;kemedelsf&ouml;rpackningen. Se vidare avsnittet Farmaceutens roll vid generiskt utbyte.</p>\n<h4 id=\"Forskrivarens-val-av-forpackning-pa-receptet\">F&ouml;rskrivarens val av f&ouml;rpackning p&aring; receptet</h4>\n<p>Vid f&ouml;rskrivningstillf&auml;llet v&auml;ljer f&ouml;rskrivaren ett l&auml;kemedel i den f&ouml;rpackningsstorlek och i den utformning som &auml;r l&auml;mplig f&ouml;r patientens behandling. Till exempel v&auml;ljer man en tablett som &auml;r delbar i lika doser vid f&ouml;rskrivning av halv dos, en tablett med rimlig storlek om en patient har sv&auml;ljsv&aring;righeter och en f&ouml;rpackning av den typ och/eller med de bipackade tillbeh&ouml;r som kr&auml;vs f&ouml;r patientens behandling. Detta g&auml;ller oavsett eventuellt utbyte p&aring; apotek eller ej. Farmaceuten kan g&ouml;ra vissa &auml;ndringar av recept av tekniska sk&auml;l med st&ouml;d av L&auml;kemedelsverkets f&ouml;reskrifter (HSLF-FS&nbsp;2016:34) om f&ouml;rordnande och utl&auml;mnande av l&auml;kemedel och teknisk sprit. I andra fall beh&ouml;ver farmaceuten f&ouml;rst kontakta f&ouml;rskrivaren. Att l&auml;mplig f&ouml;rpackning &auml;r f&ouml;rskriven &auml;r ocks&aring; av betydelse om patienten eller farmaceuten mots&auml;tter sig utbyte, eftersom det d&aring; endast &auml;r den f&ouml;rpackning som &auml;r f&ouml;rskriven p&aring; receptet som kan expedieras inom h&ouml;gkostnadsskyddet, och inget annat utbytbart alternativ.</p>\n<h4 id=\"n-\"><br><o:p></o:p></h4>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "994582bc-9919-4983-9cb8-f39bd5db0243",
+			"name": "994582bc-9919-4983-9cb8-f39bd5db0243",
+			"type": "text",
+			"content": "<h3 id=\"Information-till-patienten-om-att-utbyte-kan-komma-att-ske\"><span>Information till patienten om att utbyte kan komma att ske</span></h3>\n<p>N&auml;r det inte finns medicinska hinder f&ouml;r utbytet ska f&ouml;rskrivaren informera patienten om att det f&ouml;rskrivna l&auml;kemedlet kan komma att bytas ut till ett annat likv&auml;rdigt l&auml;kemedel p&aring; apoteket (1). Patientens behov av information kan variera, liksom tillf&auml;llet och formen f&ouml;r informationen. Informationen fr&aring;n f&ouml;rskrivaren f&ouml;rbereder patienten f&ouml;r utbytet och ger kunskap och trygghet om att ett utbytbart l&auml;kemedel ger samma behandlingsresultat men till en l&auml;gre kostnad.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3ab3a9d1-59df-4fe1-ba6e-438d0358400a",
+			"name": "6627d3ab-971a-4e8f-8f16-efc696cd5660",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2><ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/regelverket_och_it-stod/utbyte-av-lakemedel.json",
+	"indexed": "true",
+	"modified": "2017-08-17 15:16"
+}

@@ -1,0 +1,519 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Leversjukdomar | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-09 00:51",
+	"published": "2015-07-09 00:51",
+	"validUntil": "",
+	"createdBy": "Rolf Hultcrantz, Ann-Sofi Duberg",
+	"replacesUrl": "/b2_mag_lever_2013fm10.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "cbb23c01-7b68-4f4b-b4f1-be9d8f9a55f6",
+			"name": "cbb23c01-7b68-4f4b-b4f1-be9d8f9a55f6",
+			"type": "author",
+			"content": {
+				"firstname": "Rolf",
+				"surname": "Hultcrantz",
+				"description": "GastroCentrum Medicin, Karolinska Universitetssjukhuset, Stockholm",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ebbf8e3f-d187-417b-8897-001ccedb907f",
+			"name": "ebbf8e3f-d187-417b-8897-001ccedb907f",
+			"type": "author",
+			"content": {
+				"firstname": "Ann-Sofi",
+				"surname": "Duberg",
+				"description": "Infektionskliniken, Universitetssjukhuset Örebro samt Örebro universitet, Örebro",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "dc2ac210-08cc-490c-8274-a09a0826c8c6",
+			"name": "dc2ac210-08cc-490c-8274-a09a0826c8c6",
+			"type": "text",
+			"content": "<h1 id=\"b2_2\"><a class=\"index\" id=\"1021296\" data-text=\"leversjukdomar\"></a><a class=\"crossref\" id=\"40038\"></a>Leversjukdomar</h1>\n<h2 id=\"b2_3\">Inledning</h2>\n<p class=\"ingress\">Terapin vid leversjukdomar har f&ouml;rb&auml;ttrats avsev&auml;rt de senaste decennierna och omfattar allt fr&aring;n diet till l&auml;kemedel och mycket avancerad kirurgi. Diagnostiken har f&ouml;rb&auml;ttrats betydligt vad g&auml;ller serumprover och radiologisk teknik. Trots detta bygger en del av diagnostiken fortfarande p&aring; leverbiopsi.</p>\n<p class=\"ingress\"><br>Patienter med leversjukdomar utvecklar symtom sent i sjukdomsf&ouml;rloppet och vi uppt&auml;cker dem ofta d&auml;rf&ouml;r att leverprover ing&aring;tt som ett led i en annan utredning. De prover som vanligen anv&auml;nds <a class=\"index\" id=\"1021306\" data-text=\"transaminaser;aminotransferaser\"></a>(aminotransferaser) indikerar endast att en skada f&ouml;religger men inte vilka sjukdomar som orsakar skadan. I v&aring;rt land &auml;r det relativt f&aring; sjukdomar som ger allvarlig leverskada och i kapitlet finns ett f&ouml;rslag till utredningsg&aring;ng f&ouml;r att snabbt kunna identifiera dessa.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "44b28505-9572-4983-a115-ea87ecfb7fd2",
+			"name": "44b28505-9572-4983-a115-ea87ecfb7fd2",
+			"type": "text",
+			"content": "<h2 id=\"b2_4\">Utredning av f&ouml;rh&ouml;jda <a class=\"index\" id=\"1021308\" data-text=\"leverprover\"></a>leverprover</h2>\n<p>F&ouml;r att detektera leversjukdomar unders&ouml;ker man aktiviteten av <a class=\"index\" id=\"1025040\" data-text=\"aspartataminotransferas\"></a>aspartataminotransferas <a class=\"index\" id=\"1025041\" data-text=\"ASAT\"></a>(ASAT) och <a class=\"index\" id=\"1025042\" data-text=\"alaninaminotransferas\"></a>alaninaminotransferas <a class=\"index\" id=\"1025043\" data-text=\"ALAT\"></a>(ALAT), <a class=\"index\" id=\"1025044\" data-text=\"alkaliska fosfataser\"></a>alkaliska fosfataser <a class=\"index\" id=\"1025045\" data-text=\"ALP\"></a>(ALP) och <a class=\"index\" id=\"1025046\" data-text=\"glutamyltransferas\"></a>glutamyltransferas <a class=\"index\" id=\"1025047\" data-text=\"GT\"></a>(GT) i serum. &Ouml;vriga prover som indikerar skada, till exempel laktatdehydrogenas (LD), tillf&ouml;r ingen ytterligare information.</p>\n<p><br>I samband med infektioner eller l&auml;kemedelsbiverkningar &auml;r tillf&auml;lliga h&ouml;jningar av aminotransferaser vanliga och dessa b&ouml;r endast utredas om patienten &auml;r allm&auml;np&aring;verkad eller om v&auml;rdena stiger oavbrutet. En allm&auml;n regel &auml;r att om patienten &auml;r op&aring;verkad och aminotransferaserna &auml;r &lt;&nbsp;5 g&aring;nger &ouml;vre normalv&auml;rdet kan man avvakta och endast f&ouml;lja patienten i 6 m&aring;nader innan man utreder vidare, se Faktaruta 1.</p>\n<p><br>Om det finns andra indikationer p&aring; specifik sjukdom ska detta givetvis utredas. Erfarenheten har visat att patienter med f&ouml;rh&ouml;jda leverprover kan delas in i de som har enbart aminotransferasstegring och de som dessutom har en stegring av ALP (se Faktaruta&nbsp;2 och Figur&nbsp;1). GT &auml;r oftast f&ouml;rh&ouml;jt vid leversjukdomar. Om GT inte &auml;r h&ouml;gt beror ALP-stegring inte p&aring; leversjukdom utan orsaken ska s&ouml;kas i andra organ, till exempel i skelettet. Patienter med f&ouml;rh&ouml;jt ALP (&ouml;ver normalv&auml;rdet) b&ouml;r utredas snabbare d&aring; det ibland r&ouml;r sig om sjukdomar som ska utredas omg&aring;ende, se Faktaruta 2.</p>\n<p><br>Tillf&auml;lliga fynd av isolerad stegring av aminotransferaser hos barn i &aring;ldern 0&ndash;2 &aring;r &auml;r inte ovanligt. Oftast normaliseras v&auml;rdena inom n&aring;got &aring;r och om barnet f&ouml;r &ouml;vrigt &auml;r friskt och kolestas inte f&ouml;religger, kan dessa barn troligtvis f&ouml;ljas konservativt &auml;ven om en barnl&auml;karkontakt &auml;r indicerad i initialskedet. Det finns dock hos barn tv&aring; typer av tidigt debuterande leversjukdom med upph&auml;vt gallfl&ouml;de till tarmen (neonatal kolestas), gallv&auml;gsatresi respektive Bylers sjukdom. Kirurgisk &aring;tg&auml;rd kan vara indicerad redan f&ouml;re 8 veckors &aring;lder.</p>\n<p><span></span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3983b627-3718-4d4e-9bf9-171c8743b88c",
+			"name": "3983b627-3718-4d4e-9bf9-171c8743b88c",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"87462\"></a>Allmänna synpunkter",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li><span class=\"tab\"></span>Op&aring;verkade patienter med enbart m&aring;ttlig stegring av aminotransferaser beh&ouml;ver inte utredas omedelbart.</li>\r\n</ul>\r\n<ul>\r\n<li><span class=\"tab\"></span>De vanligaste orsakerna till stegring av amino&shy;transferaser &auml;r fettlever p&aring; grund av alkohol eller &ouml;ver&shy;vikt, hepatit C, l&auml;kemedel och hemokromatos. Dessa utg&ouml;r cirka 95&nbsp;% av alla fall. Om proverna inte stiger kan man avvakta upp till 6&nbsp;m&aring;nader med mer omfattande utredning.</li>\r\n</ul>\r\n<ul>\r\n<li><span class=\"tab\"></span>Alla patienter med <span style=\"color: #800000;\">b&aring;de</span> f&ouml;rh&ouml;jda alkaliska fosfataser och aminotransferaser b&ouml;r utredas omg&aring;ende. Dessa patienter kan ha tum&ouml;rer i lever eller gall&shy;v&auml;gar, l&auml;kemedelsskador, prim&auml;r skleroserande kolangit eller prim&auml;r bili&auml;r cirros. Patienterna b&ouml;r unders&ouml;kas omg&aring;ende enligt schema i Figur&nbsp;1.</li>\r\n</ul>\r\n<ul>\r\n<li><span class=\"tab\"></span>Patienter med ikterus unders&ouml;ks alltid med ultraljud om de har f&ouml;rh&ouml;jda leverv&auml;rden.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": "b2_6"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3c680698-c636-4bed-8ca1-23d8a87ce51b",
+			"name": "3c680698-c636-4bed-8ca1-23d8a87ce51b",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"crossref\" id=\"77906\"></a>Sjukdomar som kan vara orsaken  till förhöjda levervärden",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><strong>Se Figur 1 f&ouml;r information om utredning</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td><strong>Parenkymat&ouml;sa leversjukdomar</strong>\r\n<p></p>\r\n<p>Aminotransferaser och GT</p>\r\n<ul>\r\n<li>Fettlever:<br />Alkoholinducerad<span class=\"tab\"></span><span class=\"tab\"></span><span class=\"tab\"></span><span class=\"tab\"></span><br />&Ouml;vervikt</li>\r\n<li><span class=\"tab\"></span><span class=\"tab\"></span><span class=\"tab\"></span>Kronisk hepatit:<br />Hepatit C<br />Hepatit B</li>\r\n<li>Autoimmun hepatit</li>\r\n<li>Hemokromatos</li>\r\n<li>Alfa-1-antitrypsinbrist</li>\r\n<li>L&auml;kemedel inkl h&auml;lsokostpreparat</li>\r\n</ul>\r\n<p></p>\r\n<p>Aminotransferaser samt ALP och GT</p>\r\n<ul>\r\n<li>Prim&auml;r bili&auml;r cirros</li>\r\n<li>L&auml;kemedelsskador</li>\r\n<li>Akut virushepatit</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Fokala f&ouml;r&auml;ndringar</strong></p>\r\n<p><strong></strong></p>\r\n<p>Aminotransferaser samt oftast ALP och GT</p>\r\n<ul>\r\n<li>Hemangiom<sup>a</sup></li>\r\n<li>Cystor<sup>b</sup></li>\r\n<li>Fokal nodul&auml;r hyperplasi</li>\r\n<li>Adenom</li>\r\n<li>Hepatocellul&auml;r cancer</li>\r\n<li>Metastaser</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Gallv&auml;gssjukdomar</strong></p>\r\n<p><strong></strong></p>\r\n<p>Aminotransferaser samt ALP och GT</p>\r\n<ul>\r\n<li>Koledokussten</li>\r\n<li>Gallg&aring;ngscancer</li>\r\n<li>Pankreascancer</li>\r\n<li>Prim&auml;r skleroserande kolangit</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"1\" class=\"footNotes\">\r\n<div class=\"tableFootnote\" id=\"fnote_13\">a. <span class=\"tabstop\"></span>Hemangiom ger inte f&ouml;rh&ouml;jda leverprover utan uppt&auml;cks som bifynd vid ultraljud eller datortomografiunders&ouml;k&shy;ning.</div>\r\n<div class=\"tableFootnote\" id=\"fnote_14\">b. <span class=\"tabstop\"></span>Cystor kan ses med eller utan f&ouml;rh&ouml;jda leverv&auml;rden. Ultraljud ger god v&auml;gledning om typen av cysta.</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "b2_8"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "86a95683-d4ec-42fd-b39c-cd4f75819d63",
+			"name": "86a95683-d4ec-42fd-b39c-cd4f75819d63",
+			"type": "figure",
+			"content": {
+				"number": "1",
+				"maxwidth": "",
+				"image": "/images/b2_mag_lever_2013fm10_images/figur1.png",
+				"title": "",
+				"text": "<p>Utredning av op&aring;verkad patient med f&ouml;rh&ouml;jda ASAT/ALAT-v&auml;rden</p>",
+				"alt": "",
+				"id": "b2_12"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1f3c6909-42ed-48bf-95da-b438e6edf905",
+			"name": "1f3c6909-42ed-48bf-95da-b438e6edf905",
+			"type": "text",
+			"content": "<h3 id=\"b2_13\">Anamnes</h3>\n<p>Alkohol &auml;r den vanligaste orsaken till allvarlig leverskada i v&auml;stv&auml;rlden. Se &auml;ven kapitlet Alkohol &ndash; riskbruk, missbruk och beroende, avsnittet <a href=\"{pre}/kapitel/beroendetillstand/alkohol-riskbruk_missbruk_och_beroende.html#t2_27\">M&auml;tmetoder och laboratorieprover</a>. Anamnes &auml;r den mest sensitiva metoden f&ouml;r att finna dessa patienter och en patient med f&ouml;rh&ouml;jda leverv&auml;rden ska d&auml;rf&ouml;r tillfr&aring;gas om sin alkoholkonsumtion. Mer &auml;n 60 g alkohol/dag f&ouml;r m&auml;n och 20&nbsp;g/dag f&ouml;r kvinnor anses kunna ge upphov till leverskada. Ett glas (motsvarande 4&nbsp;cl starksprit, 15&nbsp;cl vin eller 30&nbsp;cl stark&ouml;l) inneh&aring;ller cirka 15&nbsp;g alkohol.</p>\n<p><br>En av de vanligaste orsakerna till aminotransferasstegring &auml;r fettlever p&aring; grund av &ouml;vervikt, varf&ouml;r man &auml;ven b&ouml;r ta upp en kostanamnes och fr&aring;ga om viktuppg&aring;ng. Buksm&auml;rtor och viktnedg&aring;ng indikerar malign sjukdom. Epidemiologin f&ouml;r <a href=\"{pre}/kapitel/mage-tarm/leversjukdomar.html#b2_24\">hepatit B</a> och <a href=\"{pre}/kapitel/mage-tarm/leversjukdomar.html#b2_26\">hepatit C</a> beskrivs nedan. Den vanligaste &auml;rftliga leversjukdomen &auml;r hemokromatos.</p>\n<h3 id=\"b2_14\">Status</h3>\n<p><a class=\"index\" id=\"1028265\" data-text=\"spider naevi\"></a>Spider naevus och <a class=\"index\" id=\"1028266\" data-text=\"palmarerytem\"></a>palmarerytem indikerar att patienten har cirros. Bukpalpation kan avsl&ouml;ja leverf&ouml;rstoring och om levern &auml;r oj&auml;mn och kn&ouml;lig, som vid cirros eller tum&ouml;r. Med bukpalpation kan man p&aring;visa ascites.</p>\n<p><br><span style=\"color: #ff0000;\">Vikten b&ouml;r noteras eftersom &ouml;vervikt</span> &auml;r en orsak till fettlever. &Ouml;kad hudpigmentering och svullna metakarpofalangealleder ses vid hemokromatos.</p>\n<h3 id=\"b2_15\">Laboratorieprover</h3>\n<p>F&ouml;rh&ouml;jda aminotransferaser orsakas av att dessa <span>enzymer</span> l&auml;cker ut till blodet p&aring; grund av cellskada. Det finns en korrelation mellan den p&aring;g&aring;ende skadans storlek och hur h&ouml;ga v&auml;rdena &auml;r. Vid en kronisk skada &auml;r v&auml;rdena oftast relativt l&aring;ga, medan de &auml;r skyh&ouml;ga vid en akut intoxikation med <a class=\"index\" id=\"1021338\" data-text=\"paracetamol:leverskada\"></a>paracetamol.</p>\n<p><br>Vid gallstas ses f&ouml;rh&ouml;jda v&auml;rden av ALP p&aring; grund av induktion av enzymet, vilket leder till en &ouml;kad intracellul&auml;r produktion och en &ouml;kad aktivitet i&nbsp;serum. Den &ouml;kade serumaktiviteten beror s&aring;ledes inte p&aring; en cellskada. GT bildas p&aring; samma st&auml;lle i cellen som ALP och kommer att stiga i serum om ALP stiger. Stegring av GT f&ouml;rekommer d&auml;remot ofta utan att ALP stiger. M&aring;nga sjukdomar ger enbart stegring av aminotransferaser och ibland GT, medan vissa sjukdomar alltid ger en stegring av ALP/GT (se Faktaruta&nbsp;2).<br><br>Relativt f&aring; prover ger information om etiologi. F&ouml;r diagnostik av hepatiter, se Tabell 1. Vid kronisk h&ouml;gersidig hj&auml;rtsvikt ses ibland en m&aring;ttlig f&ouml;rh&ouml;jning av aminotransferaser och alkaliska fosfataser/GT. Vid akut p&aring;kommande &rdquo;forward failure&rdquo; f&aring;r patienten ofta kraftigt stegrade aminotransferaser (&gt;&nbsp;50&nbsp;g&aring;nger) under n&aring;got dygn, dessa normaliseras dock snabbt.<br><br></p>\n<p>S-ferritin och j&auml;rnm&auml;ttnad ger upplysning om hemokromatos, alfa-1-antitrypsin om alfa-1-antitrypsinbrist och f&ouml;rekomst av antikroppar mot glatt muskel och mitokondrier ses vid autoimmun hepatit respektive prim&auml;r bili&auml;r cirros.</p>\n<p><br>Leverfunktion speglas av albumin och PK/INR. Dessa &auml;r relativt ok&auml;nsliga och f&ouml;r&auml;ndras f&ouml;rst d&aring; funktionen &auml;r avsev&auml;rt p&aring;verkad. Bilirubin stiger b&aring;de vid gallstas och leversvikt och &auml;r d&auml;rf&ouml;r sv&aring;rt att v&auml;rdera som funktionsprov.</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a6dc9c8a-0594-4a45-9b7d-e012a9661712",
+			"name": "a6dc9c8a-0594-4a45-9b7d-e012a9661712",
+			"type": "tablewide",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"84347\"></a>Diagnostik av virushepatit",
+				"id": "b2_16",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Hepatit</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>Akut</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong><span class=\"tab\"></span><span class=\"tab\"></span>Utl&auml;kt</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong><span class=\"tab\"></span>Kronisk<span class=\"tab\"></span></strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>Vaccinerad</strong></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Hepatit A</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span>Anti-HAV IgM positiv<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Anti-HAV IgM negativ</div>\r\n<div class=\"tableLine\">Anti-HAV IgG positiv</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&ndash;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Anti-HAV IgG positiv</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Hepatit B</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span>HBsAg positiv</div>\r\n<div class=\"tableLine\">Anti-HBc IgM positiv<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">HBsAg negativ</div>\r\n<div class=\"tableLine\">Anti-HBc positiv</div>\r\n<div class=\"tableLine\">Anti-HBs positiv<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">HBsAg positiv</div>\r\n<div class=\"tableLine\">Anti-HBc positiv</div>\r\n<div class=\"tableLine\">Anti-HBc IgM negativ<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Anti-HBs positiv</div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">Anti-HBc negativ</span></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Hepatit C<span class=\"tab\"></span></strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Anti-HCV positiv/<span style=\"color: #ff0000;\">negativ</span></div>\r\n<div class=\"tableLine\">HCV RNA positiv</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span class=\"tab\"></span>Anti-HCV positiv</div>\r\n<div class=\"tableLine\">HCV RNA negativ<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Anti-HCV positiv</div>\r\n<div class=\"tableLine\">HCV RNA positiv<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&ndash;</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Hepatit D<span class=\"tab\"></span></strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Anti-HDV positiv<span class=\"tab\"></span></div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">HCV-RNA positiv</span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Anti-HDV positiv<span class=\"tab\"></span></div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">HDV-RNA negativ</span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Anti-HDV positiv<span class=\"tab\"></span></div>\r\n<div class=\"tableLine\">HDV RNA positiv</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&ndash;</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Hepatit E<span class=\"tab\"></span></strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Anti-HEV positiv<span class=\"tab\"></span></div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">HEV-RNA positiv</span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Anti-HEV positiv<span class=\"tab\"></span></div>\r\n<div class=\"tableLine\"><span style=\"color: #ff0000;\">HEV-RNA negativ</span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&ndash;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&ndash;</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "40343e02-85f6-48f7-a89e-dd33616bdb52",
+			"name": "40343e02-85f6-48f7-a89e-dd33616bdb52",
+			"type": "text",
+			"content": "<h3 id=\"b2_17\">Radiologi</h3>\n<p>Fettlever kan diagnostiseras med ultraljud, men inte inflammation och fibros/cirros. Patienter med fokala f&ouml;r&auml;ndringar har vanligen f&ouml;rh&ouml;jt ALP och p&aring; dessa ska man g&ouml;ra ultraljud eller CT. &Auml;r ultraljudet normalt p&aring; patienter med f&ouml;rh&ouml;jt ALP unders&ouml;ks gallv&auml;garna med MRC (magnetkamerakolangiografi) f&ouml;r att utesluta gallv&auml;gshinder, som sten och tum&ouml;rer (se Figur&nbsp;1). ERC (endoskopisk retrograd kolangiografi) och PTC (perkutan transhepatisk kolangiografi) anv&auml;nds numera endast f&ouml;r att utf&ouml;ra terapeutiska ingrepp.</p>\n<h3 id=\"Elastografi\"><span style=\"color: #ff0000;\">Elastografi</span></h3>\n<p><span style=\"color: #ff0000;\">Elastografi (ofta Fibroscan) anv&auml;nds f&ouml;r att m&auml;ta fibrosgraden i levern, framf&ouml;r allt vid kronisk hepatit B och C. Med hj&auml;lp av en s&aring; kallad skjuvv&aring;g m&auml;ts elasticiteten i levern vilket kan anv&auml;ndas som mark&ouml;r f&ouml;r fibros. Elastografi &auml;r framf&ouml;r allt utprovad vid kronisk hepatit C, d&auml;r det &auml;r mycket anv&auml;ndbart och ofta kan ers&auml;tta leverbiopsin. En stor f&ouml;rdel &auml;r att unders&ouml;kningen g&ouml;rs p&aring; n&aring;gra minuter och kan utf&ouml;ras i samband med mottagningsbes&ouml;k. Dessutom &auml;r den sm&auml;rtfri och ofarlig. Elastografi kan inte anv&auml;ndas vid akut leverskada d&aring; man kan f&aring; h&ouml;ga v&auml;rden av annan orsak &auml;n fibros.</span></p>\n<h3 id=\"b2_18\">Leverbiopsi</h3>\n<p>Leverbiopsi utf&ouml;rs f&ouml;r att diagnostisera och stadieindela sjukdomar i levern, det vill s&auml;ga kartl&auml;gga graden av fibros och inflammation. Alla patienter d&auml;r man &auml;r os&auml;ker p&aring; diagnos och prognos b&ouml;r leverbiopseras, eftersom ingen metod &auml;nnu kan ers&auml;tta histologi f&ouml;r att klarl&auml;gga graden av fibros och inflammation.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1a1292fa-a9fa-4b71-9091-f09518892b9a",
+			"name": "1a1292fa-a9fa-4b71-9091-f09518892b9a",
+			"type": "text",
+			"content": "<h2 id=\"b2_19\">Utredning av <a class=\"index\" id=\"1029048\" data-text=\"ikterus\"></a>ikterus</h2>\n<p>Fl&ouml;desschemat i Figur&nbsp;1 kan anv&auml;ndas vid utredning av ikterus. Patienter med ikterus ska alltid utredas omedelbart. Om den l&auml;tt ikteriske patienten har normala leverv&auml;rden &auml;r det troligt att det r&ouml;r sig om Gilberts syndrom. Gilberts syndrom inneb&auml;r intermittent okonjugerad hyperbilirubinemi och beror p&aring; en minskad konjugeringsf&ouml;rm&aring;ga hos levercellerna. Sjukdomen &auml;r vanlig, ofarlig och ger inga symtom. Bilirubinv&auml;rdena &auml;r vanligen &lt;&nbsp;50&nbsp;mikromol/l. Differentialdiagnostiskt b&ouml;r man t&auml;nka p&aring; hemolytisk anemi.</p>\n<p><br>Parenkymat&ouml;s ikterus orsakas vanligen av alkohol, virushepatiter, l&auml;kemedel eller andra toxiska &auml;mnen, medan ikterus p&aring; grund av gallv&auml;gshinder orsakas av koledokussten eller gallv&auml;gs- eller pankreascancer. Patienten remitteras akut f&ouml;r ultraljudsunders&ouml;kning av lever och gallv&auml;gar. Om unders&ouml;kningen visar vidgade gallv&auml;gar sker fortsatt utredning av gallv&auml;gar med MRC och ERC. Om gallv&auml;garna &auml;r normalvida talar det f&ouml;r parenkymat&ouml;s leversjukdom. Om dessa patienter visar tecken p&aring; leversvikt med stigande PK/INR-v&auml;rden och sjunkande albumin b&ouml;r man ta kontakt med ett levertransplantationscentrum.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2139ad36-6f78-4aed-b1da-af267722bc21",
+			"name": "2139ad36-6f78-4aed-b1da-af267722bc21",
+			"type": "text",
+			"content": "<h2 id=\"b2_20\"><a class=\"crossref\" id=\"74368\"></a>Virushepatiter</h2>\n<p>Det finns idag fem k&auml;nda <a class=\"index\" id=\"1021399\" data-text=\"virushepatit;hepatit:virus\"></a>virushepatiter &ndash; hepatit A&ndash;E, varav hepatit A, B och C &auml;r viktigast. Virushepatiter klassas som allm&auml;nfarliga sjukdomar och varje nydiagnostiserat fall ska anm&auml;las enligt Smittskyddslagen. Hepatit A och E smittar fekalt&ndash;oralt, medan hepatit B, C och D smittar via kroppsv&auml;tskor. Hepatit C &auml;r mycket vanligt f&ouml;rekommande hos personer med intraven&ouml;st missbruk. Anm&auml;lande l&auml;kare ska ge r&aring;d om smittskydd och p&aring;b&ouml;rja smittsp&aring;rning.</p>\n<p><br>F&ouml;rutom ovan n&auml;mnda egentliga hepatitvirus kan &auml;ven andra virus, som Epstein-Barrvirus och cytomegalovirus, ge upphov till leverp&aring;verkan och i s&auml;llsynta fall ocks&aring; klinisk hepatit.</p>\n<p><br>En akut virushepatit kan f&ouml;rl&ouml;pa kliniskt eller subkliniskt. Vid klinisk akut hepatit f&ouml;religger f&ouml;rst allm&auml;nsymtom, till exempel tr&ouml;tthet, feber, matleda och muskelv&auml;rk. D&auml;refter kan ikterus tillst&ouml;ta varvid allm&auml;nsymtomen minskar. Urinen blir m&ouml;rk och avf&ouml;ringen ljus. Akut hepatit B och C kan, oavsett klinisk bild, &ouml;verg&aring; i en kronisk form. En kronisk hepatit f&ouml;rl&ouml;per smygande och &auml;r oftast asymtomatisk. F&ouml;rst vid avancerad leverskada upptr&auml;der symtom som allm&auml;n tr&ouml;tthet och tyngdk&auml;nsla under h&ouml;ger arcus. Kronisk hepatit kan leda till levercirros och prim&auml;r levercancer. F&ouml;r de olika hepatitformerna anges f&ouml;rekomst, smittv&auml;gar, inkubationstid, sjukdomsbild och risker f&ouml;r utveckling av kronicitet i Tabell 2.<br><br></p>\n<p>Laboratoriem&auml;ssigt ser man vid viral hepatit f&ouml;rh&ouml;jda aminotransferaser d&auml;r ALAT normalt &auml;r h&ouml;gre &auml;n ASAT. Vid akut hepatit kan aminotransferaserna, liksom bilirubin (konjugerat), vara kraftigt stegrade, medan ALP och GT &auml;r l&auml;tt till m&aring;ttligt f&ouml;rh&ouml;jda. PK/INR-v&auml;rdet <span style=\"color: #ff0000;\">kan vara stegrat vid kraftig leverskada</span>. Majoriteten av patienterna med akut hepatit f&ouml;ljs i &ouml;ppen v&aring;rd &ndash; initialt cirka 1 g&aring;ng/vecka med kontroll av blod- och leverstatus samt PK/INR. Vid risk f&ouml;r fulminant hepatit l&auml;ggs patienten in f&ouml;r observation. Ett laboratoriem&auml;ssigt ungef&auml;rligt riktm&auml;rke f&ouml;r inl&auml;ggning kan vara PK/INR &gt;&nbsp;1,7, <span style=\"color: #ff0000;\">men patientens allm&auml;ntillst&aring;nd ska v&auml;gas in</span>. Vid kronisk hepatit &auml;r aminotransferaserna oftast endast l&auml;tt stegrade och ibland helt normala. Det g&aring;r inte att s&auml;rskilja de olika hepatiterna p&aring; den kliniska bilden eller p&aring; biokemiska parametrar. Etiologin fastst&auml;lls via serologiskt prov och PCR. F&ouml;r diagnostik av akut, kronisk och utl&auml;kt virushepatit, se Tabell 2.</p>\n<p><br>Patienter med akut hepatit kan &auml;ta normalkost. Alkohol och l&auml;kemedel b&ouml;r undvikas. Immunprofylax b&ouml;r ges till de personer i omgivningen som kan ha utsatts f&ouml;r smitta. Specifik antiviral terapi ges inte &ndash; eventuellt <span style=\"color: #ff0000;\">fulminant hepatit. Tidigare rekommenderades behandling av akut hepatit C men med nya hepatit C-l&auml;kemedel rekommenderas behandling i senare skede om infektionen blir kronisk</span>. Vid kronisk hepatit B och C b&ouml;r d&auml;remot specifik antiviral terapi alltid &ouml;verv&auml;gas (Terapirekommendation 1).</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "38e75fed-042c-4f85-9e43-aeffdb4eebf5",
+			"name": "38e75fed-042c-4f85-9e43-aeffdb4eebf5",
+			"type": "tablewide",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"crossref\" id=\"59428\"></a>Allmänt om virushepatiter",
+				"id": "b2_21",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Hepatit</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>F&ouml;rekomst</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong><span class=\"tab\"></span><span class=\"tab\"></span>Smittv&auml;gar</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong><span class=\"tab\"></span>Inkubationstid<span class=\"tab\"></span></strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>Sjukdomsbild</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>Kronicitet</strong></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Hepatit A</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Vanlig</div>\r\n<div class=\"tableLine\">(utvecklings-</div>\r\n<div class=\"tableLine\">l&auml;nder)</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Fekal&ndash;oral</div>\r\n<div class=\"tableLine\">(kontaminerad f&ouml;da/</div>\r\n<div class=\"tableLine\">dryck)</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">2&ndash;6 veckor</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Klinisk hos</div>\r\n<div class=\"tableLine\">vuxna, ofta</div>\r\n<div class=\"tableLine\">subklinisk hos</div>\r\n<div class=\"tableLine\">barn</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Nej</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Hepatit B</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Vanlig </div>\r\n<div class=\"tableLine\">(global)</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Kropps-</div>\r\n<div class=\"tableLine\">v&auml;tskor, fr&auml;mst</div>\r\n<div class=\"tableLine\">blod och </div>\r\n<div class=\"tableLine\">sexuellt</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">2&ndash;6 m&aring;nader</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Ofta subklinisk &auml;ven</div>\r\n<div class=\"tableLine\">hos vuxna</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">3&ndash;5&nbsp;%, vanligare hos barn</div>\r\n<div class=\"tableLine\">och immun-</div>\r\n<div class=\"tableLine\">supprimerade</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Hepatit C<span class=\"tab\"></span></strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Vanlig </div>\r\n<div class=\"tableLine\">(global)</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Blod (intraven&ouml;st miss-</div>\r\n<div class=\"tableLine\">bruk). Sexuell smitta ovanlig</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">1&ndash;3 m&aring;nader</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Oftast subklinisk</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">70&ndash;80&nbsp;%</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Hepatit D<span class=\"tab\"></span></strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Ovanlig</div>\r\n<div class=\"tableLine\">(medelhavs-</div>\r\n<div class=\"tableLine\">omr&aring;det)</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Blod</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">4&ndash;6 veckor</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Oftast subklinisk</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Ja</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Hepatit E<span class=\"tab\"></span></strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Ovanlig (Asien,</div>\r\n<div class=\"tableLine\">Afrika, Syd-</div>\r\n<div class=\"tableLine\">amerika)</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Fekal&ndash;oral</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">2&ndash;9 veckor</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Oftast klinisk</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Nej</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "94ce7dbf-d7db-4707-8e3d-627b96ebf7dd",
+			"name": "94ce7dbf-d7db-4707-8e3d-627b96ebf7dd",
+			"type": "therapy",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"58013\"></a>Virushepatiter",
+				"id": "b2_22",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Hepatit</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>Terapi</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>Profylax</strong></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Hepatit A</strong></div>\r\n<div class=\"tableLine\"><strong>&nbsp;</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&ndash;</div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Preexposition: Vaccination (gammaglobulin)</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Postexposition: Gammaglobulin <span style=\"color: #ff0000;\">alternativt vaccination</span></div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Hepatit B</strong></div>\r\n<div class=\"tableLine\"><strong><span style=\"background-color: #ffcc00;\">(1)</span></strong></div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Interferon alfa, tenofovir<span style=\"color: #ff0000;\"> eller </span>entecavir vid</div>\r\n<div class=\"tableLine\">kronisk progressiv sjukdom</div>\r\n</li>\r\n</ul>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Preexposition: <span style=\"font-style: italic;\"><a class=\"index\" id=\"1038735\" data-text=\"hepatit:vaccination;vaccination mot:hepatit B\"></a></span>Vaccination</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Postexposition: Vaccination, specifikt immunglobulin</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Hepatit C</strong></div>\r\n<div class=\"tableLine\"><strong><span style=\"background-color: #ffcc00;\">(2)</span></strong></div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\"><span class=\"updated\" style=\"color: #000000;\">Akut hepatit C ska inte behandlas</span></div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li><span style=\"color: #ff0000;\">Nu finns ett antal direktverkande antivirala l&auml;kemedel mot hepatit C som tillh&ouml;r olika substansklasser och kombineras enligt s&auml;rskilda regler. Dessa anv&auml;nds vid m&aring;ttlig till allvarlig kronisk sjukdom.</span></li>\r\n</ul>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&ndash;</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Hepatit D</strong></div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">(Interferon alfa)<span class=\"tab\"></span></div>\r\n</li>\r\n</ul>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Preexposition: Vaccination mot hepatit B</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Hepatit E</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&ndash;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&ndash;</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c45ff8a7-0da2-41c7-b26c-f116b07d38b2",
+			"name": "c45ff8a7-0da2-41c7-b26c-f116b07d38b2",
+			"type": "text",
+			"content": "<h3 id=\"b2_23\"><a class=\"index\" id=\"1021410\" data-text=\"hepatit A\"></a>Hepatit A</h3>\n<p>Hepatit A smittar fekalt&ndash;oralt, fr&auml;mst via avloppsf&ouml;rorenat vatten. I utvecklingsl&auml;nder med l&aring;g hygienisk standard &auml;r hepatit&nbsp;A en vanlig sjukdom. &Aring;rligen rapporteras 50&ndash;100 fall i Sverige, varav de flesta har blivit smittade utomlands. Inhemska sekund&auml;rfall f&ouml;rekommer. Smittsamheten &auml;r st&ouml;rst strax f&ouml;re och vid ikterusdebut och avtar veckorna d&auml;refter.</p>\n<p><br>Inkubationstiden &auml;r 2&ndash;6 veckor. Barn i skol&aring;ldern f&aring;r lindriga symtom eller inga alls. &Auml;ldre patienter f&aring;r en allvarligare sjukdomsbild. Ikterusen f&ouml;reg&aring;s inte s&auml;llan av en influensaliknande sjukdomsbild. Majoriteten &auml;r &aring;terst&auml;llda inom 3 m&aring;nader. Fulminant hepatit A-sjukdom med d&ouml;dlig utg&aring;ng &auml;r ovanlig men f&ouml;rekommer. I &ouml;vrigt l&auml;ker hepatit A alltid ut med kvarst&aring;ende livsl&aring;ng immunitet.</p>\n<p><br>F&ouml;r diagnostik, se Tabell 2. Terapi/profylax framg&aring;r av Terapirekommendation 1.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "118c01a9-4cd7-482b-ab69-96b0c794c157",
+			"name": "118c01a9-4cd7-482b-ab69-96b0c794c157",
+			"type": "text",
+			"content": "<h3 id=\"b2_24\"><a class=\"index\" id=\"1021416\" data-text=\"hepatit B\"></a>Hepatit B</h3>\n<p>Hepatit B smittar parenteralt, framf&ouml;r allt via blod, sexuellt och vid partus fr&aring;n mor till barn. Kroniska hepatit B-b&auml;rare utg&ouml;r en reservoar f&ouml;r smittspridning. Sjukdomen &auml;r mycket vanlig i utvecklingsl&auml;nder<span style=\"color: #ff0000;\"> men minskar nu tack vare globala vaccinationsprogram</span>. I Sverige sprids hepatit B framf&ouml;r allt vid intraven&ouml;st missbruk eller sexuellt. Smittb&auml;rare ska informeras om risken f&ouml;r blodsmitta samt om risken f&ouml;r smitta vid oskyddade samlag. Smittb&auml;rare m&aring;ste ocks&aring; vid kontakt med sjuk- eller tandv&aring;rd informera om sin smittsamhet. Till Folkh&auml;lsomyndigheten anm&auml;ls &aring;rligen <span style=\"color: #ff0000;\">100&ndash;200</span> fall av akut hepatit B och <span style=\"color: #ff0000;\">1 500</span>&ndash;2&nbsp;000 fall av kronisk hepatit B.</p>\n<p><br>Inkubationstiden &auml;r 2&ndash;6 m&aring;nader. Majoriteten, framf&ouml;r allt barn, f&aring;r en subklinisk infektion. <span style=\"color: #ff0000;\">Hos vuxna kan den </span>preikteriska fasen domineras av serumsjukeliknande symtom, som hudutslag och ledbesv&auml;r. Majoriteten &auml;r kliniskt &aring;terst&auml;llda inom 1&ndash;3 m&aring;nader samt laboratoriem&auml;ssigt &aring;terst&auml;llda och serologiskt utl&auml;kta inom 6 m&aring;nader. <span style=\"color: #ff0000;\">Majoriteten av de smittade &auml;r f&ouml;dda och smittade i l&auml;nder d&auml;r mor-barnsmitta vid f&ouml;rlossning &auml;r en vanlig orsak till kronisk hepatit B.</span></p>\n<p><br>Kroniskt b&auml;rarskap, definierat som kvarst&aring;ende HBsAg &gt;&nbsp;6 m&aring;nader, utvecklas hos cirka 5&nbsp;%. Risken f&ouml;r b&auml;rarskap &auml;r st&ouml;rre hos sm&aring; barn och hos immunsupprimerade. Kroniska b&auml;rare har som regel inga symtom, men risk f&ouml;r levercirros och prim&auml;r levercancer f&ouml;religger p&aring; sikt.</p>\n<p><br>F&ouml;r diagnostik, se Tabell 2. Terapi/profylax framg&aring;r av Terapirekommendation 1. <span> </span></p>\n<h4 id=\"b2_25\">Behandling</h4>\n<p>Behandling av hepatit B sker av eller i samr&aring;d med specialist. Behandling av kronisk hepatit B begr&auml;nsas till patienter med fortg&aring;ende aktiv infektion, det vill s&auml;ga framf&ouml;r allt patienter i s&aring; kallad immunaktiveringsfas med f&ouml;rh&ouml;jda aminotransferaser, h&ouml;ga HBV-DNA-niv&aring;er och m&aring;ttlig eller uttalad leverfibros (1). Det &auml;r framf&ouml;r allt dessa patienter som p&aring; sikt riskerar att utveckla levercirros och/eller levercancer. Behandlingen &auml;r ofta livsl&aring;ng och ges mestadels som tabletter med en s&aring; kallad nukleos(t)idanalog. Under behandlingen f&ouml;ljs patienten 2&ndash;4 g&aring;nger/&aring;r med kontroll av blod-/lever-/njurstatus samt monitorering av HBV-DNA-niv&aring;er (1). Biverkningarna &auml;r f&aring;.</p>\n<p><br>I Sverige har man valt att selektivt hepatit B-vaccinera de personer som l&ouml;per h&ouml;g risk att smittas, till exempel intraven&ouml;sa missbrukare samt kroniska b&auml;rares familjemedlemmar och sexuella kontakter. Socialstyrelsen har f&ouml;reslagit att vaccin mot hepatit B inf&ouml;rs i det allm&auml;nna vaccinationsprogrammet, men ett definitivt beslut &auml;r &auml;nnu inte fattat. M&aring;nga landsting/regioner erbjuder &auml;nd&aring; hepatit B-vaccin i vaccinationsprogrammet. Se kapitlet Vaccination av barn och unga, avsnitt <a href=\"{pre}/kapitel/pediatrik/vaccination_av_barn_och_ungdomar.html#c1c_23\">Vaccination mot hepatit B</a>.</p>\n<p><br>Vaccinet mot hepatit B kan ocks&aring; ges som postexpositionsprofylax till personer som just utsatts f&ouml;r smitta. Ofta anv&auml;nds d&aring; en snabb vaccinationsserie, till exempel 0, 2 och 4 veckor, i syfte att snabbt aktivera antikroppssvaret. En speciell och viktig postexpositionsprofylaxsituation &auml;r nyf&ouml;dda barn till kvinnor med hepatit B. Dessa nyf&ouml;dda barn ska alltid vaccineras. Vid stor smittrisk kan vaccinet kombineras med specifikt immunglobulin (licenspreparatet Hepatitis B-Immunglobulin, injektionsv&auml;tska 200 IE/ml).<span style=\"color: #ff0000;\"> Dessutom ska gravida kvinnor med h&ouml;ga virusniv&aring;er erbjudas behandling med nukleotidanalog under sista trimestern f&ouml;r att minska risken att barnet smittas.</span> Profylax med vaccin, med eller utan specifikt immunglobulin, ska alltid &ouml;verv&auml;gas till n&auml;ra kontakter kring ett indexfall.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0938bb19-1649-4c9b-8a70-d523b030a94c",
+			"name": "0938bb19-1649-4c9b-8a70-d523b030a94c",
+			"type": "text",
+			"content": "<h3 id=\"b2_26\"><a class=\"index\" id=\"1021425\" data-text=\"hepatit C\"></a>Hepatit C<span class=\"updated\"></span></h3>\n<p>Hepatit C &auml;r den vanligaste hepatitformen i Sverige. <span style=\"color: #ff0000;\">N&auml;rmare 0,5 % av befolkningen har kronisk hepatit C, med den h&ouml;gsta prevalensen (omkring 1 %) bland personer f&ouml;dda p&aring; 1950- och 1960-talen. </span>Smittv&auml;gen &auml;r via kroppsv&auml;tskor, framf&ouml;r allt blod. &Aring;r 1991 inf&ouml;rdes allm&auml;n blodgivarscreening f&ouml;r hepatit C. Nyinsjuknandet har d&auml;refter minskat, men fortfarande anm&auml;ls <span style=\"color: #ff0000;\">cirka 2&nbsp;000</span> nydiagnostiserade fall/&aring;r till Folkh&auml;lsomyndigheten. Majoriteten av dessa &auml;r smittade via intraven&ouml;st missbruk<span style=\"color: #ff0000;\">, ofta flera &aring;r innan diagnosen st&auml;lls</span>. Andra mindre vanliga smittv&auml;gar &auml;r sexuell och nosokomial smitta. F&ouml;r 10&ndash;20 % av de smittade kan ingen s&auml;ker smittv&auml;g anges. Smittb&auml;rare ska informeras om risken f&ouml;r blodsmitta samt om <span style=\"color: #ff0000;\">att det finns en liten </span>risk f&ouml;r smitta vid oskyddade samlag. De m&aring;ste ocks&aring; vid kontakt med sjuk- eller tandv&aring;rd informera om sin smittsamhet.</p>\n<p><br>Inkubationstiden &auml;r 1&ndash;4 m&aring;nader. Majoriteten f&aring;r en subklinisk eller mycket lindrig akut infektion, men cirka 80 % av de smittade blir kroniska b&auml;rare. En kronisk b&auml;rare har som regel inga symtom, men utg&ouml;r en smittrisk f&ouml;r omgivningen och riskerar att p&aring; sikt utveckla levercirros och levercancer <span style=\"color: #ff0000;\">(HCC)</span>. Naturalf&ouml;rloppet &auml;r mycket varierande och sv&aring;rt att f&ouml;ruts&auml;ga i det enskilda fallet. <span style=\"color: #ff0000;\">Extrahepatiska manifestationer, till exempel nefrit och kryoglobulinemi, &auml;r ovanliga men f&ouml;rekommer.<br><br><span style=\"color: #000000;\">F&ouml;r diagnostik, se Tabell&nbsp;2. <span style=\"color: #ff0000;\">Vid konstaterad kronisk hepatit C ska blodprover tas f&ouml;r att best&auml;mma leverfunktion samt virusets genotyp. Dessutom ska elastografi eller leverbiopsi g&ouml;ras f&ouml;r att bed&ouml;mma grad av leverskada (fibrosstadium). </span>Terapi/profylax framg&aring;r av Terapirekommendation 1. Behandling av hepatit C sker av, eller i samr&aring;d med, specialist.</span></span></p>\n<h4 id=\"Behandling\"><span style=\"color: #ff0000;\">Behandling</span></h4>\n<p><span class=\"updated\">Det &ouml;vergripande medicinska behandlingsm&aring;let vid kronisk hepatit C &auml;r att f&ouml;rhindra allvarlig leversjukdom. En botande behandling leder ocks&aring; till smittfrihet, vilket &auml;r en l&auml;ttnad f&ouml;r patienten och kan vara huvudsyftet i vissa fall, till exempel inf&ouml;r IVF. Vid utl&auml;kt hepatit C normaliseras leverv&auml;rdena (ASAT, ALAT), inflammationen i levern f&ouml;rsvinner och fibrosen avtar. &Auml;ven levercirros kan f&ouml;rb&auml;ttras och risken f&ouml;r leversvikt och HCC minskar, &auml;ven om en viss f&ouml;rh&ouml;jd HCC-risk kvarst&aring;r. Det &auml;r d&auml;rf&ouml;r viktigt med kontroller och behandling innan allvarlig leverskada hunnit utvecklas.<br><br>Under 2014 registrerades de f&ouml;rsta preparaten i en helt ny l&auml;kemedelsgrupp, s&aring; kallade direktverkande antiviraler (DAA), som m&ouml;jligg&ouml;r enkel och effektiv behandling med f&aring; biverkningar. De tidigare interferonbaserade behandlingarna rekommenderas d&auml;rmed inte l&auml;ngre.<br><br>Sedan 2014 har flera DAA godk&auml;nts (Tabell 3). Dessa l&auml;kemedel &auml;r specifikt utformade f&ouml;r att blockera olika steg i virusets replikation och vid behandling kombineras minst tv&aring; l&auml;kemedel med olika verkningsmekanism. Val av l&auml;kemedel och behandlingstid avg&ouml;rs framf&ouml;r allt av virusgenotyp, hur allvarlig leverskada (fibrosstadium) patienten har och eventuella tidigare behandlingsf&ouml;rs&ouml;k. L&auml;kemedlen tas i tablettform i 8&ndash;12 veckor (i undantgsfall 24 veckor), medf&ouml;r f&aring; biverkningar och botar cirka 95 %. Detta g&ouml;r att m&aring;nga patienter som inte svarat p&aring; tidigare interferonbaserad behandling eller inte kunnat behandlas p&aring; grund av kontraindikationer nu kan behandlas. Efter avslutad DAA-behandling f&ouml;ljs patienten under 24 veckor och om infektionen d&aring; &auml;r utl&auml;kt (negativt HCV-RNA) kan kontrollerna upph&ouml;ra. Undantaget &auml;r patienter med cirros, som vanligtvis rekommenderas fortsatta kontroller och HCC-&ouml;vervakning med ultraljud var 6:e m&aring;nad &auml;ven efter utl&auml;kt hepatit C-infektion.<br><br>DAA &auml;r dyra l&auml;kemedel. Det genomsnittliga priset f&ouml;r en behandling uppskattas f&ouml;r n&auml;rvarande till cirka 500&nbsp;000&nbsp;kr. Detta har lett till nationella riktlinjer d&auml;r man f&ouml;r n&auml;rvarande godk&auml;nner DAA-behandling av</span></p>\n<ul>\n<li><span class=\"updated\">patienter med m&aring;ttlig eller allvarlig leverskada (fibrosstadium F2&ndash;F4)</span></li>\n<li><span class=\"updated\">patienter med annan allvarlig hepatit C-associerad sjukdom<br></span><span class=\"updated\"></span></li>\n<li><span class=\"updated\">organtransplanterade</span></li>\n<li><span class=\"updated\">kvinnor som ska genomg&aring; IVF.</span></li>\n</ul>\n<p><span class=\"updated\">Patienter med lindrig leverskada (fibrosstadium F0&ndash;F1) &auml;r f&ouml;r n&auml;rvarande inte prioriterade f&ouml;r behandling . De b&ouml;r f&ouml;ljas regelbundet s&aring; att en f&ouml;rs&auml;mring som f&ouml;ranleder behandling uppt&auml;cks i tid. <br><br>L&auml;kemedlen f&aring;r endast f&ouml;rskrivas av l&auml;kare med erfarenhet av hepatitbehandling vid infektionsklinik eller gastroenterologisk enhet. L&auml;kemedlen ing&aring;r i Sveriges kommuner och landstings (SKL:s) projekt \"Ordnat inf&ouml;rande i samverkan (OtIS), varf&ouml;r nationella avtal med l&auml;kemedelsf&ouml;retagen kan p&aring;verka priser och d&auml;rmed riktlinjer om preparatval.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ed064fb6-a7fa-4ae0-87ca-c04617d03cfa",
+			"name": "ed064fb6-a7fa-4ae0-87ca-c04617d03cfa",
+			"type": "text",
+			"content": "<h3 id=\"b2_27\"><a class=\"index\" id=\"1043788\" data-text=\"hepatit D\"></a>Hepatit D</h3>\n<p>Hepatit D (deltahepatit) smittar via kroppsv&auml;tskor, framf&ouml;r allt blod. Hepatit D-viruset beh&ouml;ver HBsAg som h&ouml;lje f&ouml;r sin egen virusreplikation och kan d&auml;rmed endast infektera individer som samtidigt &auml;r infekterade med hepatit B. Tv&aring; olika smittosituationer f&ouml;religger &ndash; antingen smittas individen med b&aring;da virustyperna samtidigt (co-infektion) eller med hepatit D &ouml;verlagrat ett tidigare hepatit B-b&auml;rarskap (superinfektion). Endast ett f&aring;tal fall rapporteras varje &aring;r i Sverige<span style=\"color: #ff0000;\">, men har p&aring; senare tid &ouml;kat till drygt 50 per &aring;r. &Ouml;kningen ses framf&ouml;r allt bland utrikesf&ouml;dda som sannolikt smittats innan de immigrerat till Sverige</span>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f040ef20-f380-4450-b9e9-5704cdb0e475",
+			"name": "f040ef20-f380-4450-b9e9-5704cdb0e475",
+			"type": "text",
+			"content": "<h3 id=\"b2_28\">Hepatit E</h3>\n<p>Hepatit E smittar fekalt-oralt, fr&auml;mst via f&ouml;rorenat vatten och livsmedel. Epidemier finns beskrivna fr&aring;n Asien och Afrika samt Syd- och Mellanamerika. I <span style=\"color: #ff0000;\">Sverige diagnositceras 20&ndash;30 fall per &aring;r, b&aring;de importfall och enstaka inhemska fall</span>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "35323649-0b84-46ba-8cf5-6b7bb3326085",
+			"name": "35323649-0b84-46ba-8cf5-6b7bb3326085",
+			"type": "text",
+			"content": "<h2 id=\"b2_29\">&Ouml;vriga leversjukdomar</h2>\n<h3 id=\"b2_30\"><a class=\"index\" id=\"1028527\" data-text=\"fettlever\"></a>Fettlever</h3>\n<p>Fettlever orsakas vanligen av &ouml;vervikt, alkohol eller en kombination d&auml;rav. Anamnes och status kan ge v&auml;gledning till korrekt diagnos, men det &auml;r sv&aring;rt att s&auml;rskilja dessa tv&aring; med blodprover eller leverbiopsi.</p>\n<h4 id=\"b2_31\">Fettlever p&aring; grund av till exempel &ouml;vervikt</h4>\n<p>Under senare &aring;r har man funnit att personer med <a class=\"index\" id=\"1029360\" data-text=\"metabolt syndrom:fettlever\"></a>metabolt syndrom (&ouml;vervikt, hypertoni, typ 2-diabetes och hyperlipidemi) ofta har fettlever. En del patienter utvecklar en allvarligare form av fettlever med inflammation, som kan leda till cirros. Detta kallas <a class=\"index\" id=\"1029361\" data-text=\"non-alcoholic steato-hepatitis\"></a>non-alcoholic steato-hepatitis (NASH), svensk ben&auml;mning saknas. I USA har denna sjukdom blivit allt vanligare och man r&auml;knar med att flera procent av befolkningen lider av den.</p>\n<h4 id=\"b2_32\">Diagnostik<em> </em></h4>\n<p>Anamnesen &auml;r viktigast f&ouml;r att utesluta alkohol som orsak till fettlever. Patienten ska dricka mindre &auml;n motsvarande 30&nbsp;g absolut alkohol/dag f&ouml;r att man ska kunna fastst&auml;lla att sjukdomen inte &auml;r alkoholinducerad. I status finner man ofta bukfetma. ALAT &auml;r oftast h&ouml;gre &auml;n ASAT, vid sv&aring;rare former kan ASAT bli h&ouml;gre &auml;n ALAT, n&aring;got som ocks&aring; ses vid alkoholhepatit (se kapitlet Alkohol &ndash; riskbruk, missbruk och beroende, avsnittet <a href=\"{pre}/kapitel/beroendetillstand/alkohol-riskbruk_missbruk_och_beroende.html#t2_27\">M&auml;tmetoder och laboratorieprover</a>). Ultraljud &auml;r bra f&ouml;r att uppt&auml;cka fettlever men inte inflammation eller fibros.</p>\n<h4 id=\"b2_33\">Behandling<em> </em></h4>\n<p>Patienten b&ouml;r behandlas som andra patienter med metabolt syndrom med instruktion om viktreduktion, motion, diet etc. N&aring;gon specifik verksam medicinsk behandling finns inte dokumenterad &auml;nnu. S&aring;v&auml;l metformin som glitazoner har pr&ouml;vats i sm&aring; icke-konklusiva studier. Nyligen har man dock visat att inflammationsgraden minskar hos patienter med NASH efter behandling med vitamin E. Viktreducerande kirurgi minskar inflammation och fett i levern. Alkoholabstinens har positiv effekt vid alkoholinducerad fettlever.</p>\n<h4 id=\"b2_34\">Prognos<em> </em></h4>\n<p>Patienterna kan utveckla <a class=\"index\" id=\"1021447\" data-text=\"lever:fibros\"></a>leverfibros, ibland cirros och leversvikt och vissa beh&ouml;ver levertransplanteras.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e565bf9f-7470-4310-9734-d935d68f9518",
+			"name": "e565bf9f-7470-4310-9734-d935d68f9518",
+			"type": "text",
+			"content": "<h3 id=\"b2_35\"><a class=\"index\" id=\"1021449\" data-text=\"alkohol:hepatit;hepatit:alkohol\"></a><a class=\"crossref\" id=\"46237\"></a>Alkoholhepatit</h3>\n<p>Vid l&aring;ngvarigt alkoholmissbruk utvecklas alkoholhepatit hos 15&ndash;20% av alla missbrukare. Det kr&auml;vs ett dagligt bruk under l&aring;ng tid f&ouml;r att man ska f&aring; en <a class=\"index\" id=\"1028997\" data-text=\"alkohol:hepatit;lever:alkoholskada\"></a>kronisk skada (&gt;&nbsp;80&nbsp;g alkohol/dag). Efter ett stort <a class=\"index\" id=\"1028998\" data-text=\"alkohol:hepatit;hepatit:alkohol\"></a>intag i &gt;&nbsp;10&ndash;20 &aring;r utvecklas <a class=\"index\" id=\"1028999\" data-text=\"cirros:alkoholhepatit\"></a>cirros hos 15&ndash;20% av alla alkoholister. Det &auml;r os&auml;kert varf&ouml;r endast vissa patienter utvecklar fibros och cirros. Man b&ouml;r alltid kontrollera att det inte dessutom f&ouml;religger annan genes till leversjukdom (t&nbsp;ex hepatit C eller hemokromatos).</p>\n<h4 id=\"b2_36\"><em>Symtom </em></h4>\n<p>Patienterna insjuknar med tr&ouml;tthet, feber och ikterus.</p>\n<h4 id=\"b2_37\"><em>Diagnostik </em></h4>\n<p>Anamnesen &auml;r mycket viktig. Patienterna har ikterus, ofta spider naevus och palmarerytem, och f&ouml;rh&ouml;jda leverv&auml;rden med relativt l&aring;ga aminotransferaser, d&auml;r ASAT &auml;r h&ouml;gre &auml;n ALAT. ALP och GT &auml;r mycket h&ouml;ga. Patienterna har ocks&aring; h&ouml;g CRP och stegrade LPK. Ultraljud visar leverf&ouml;rstoring med fettinlagring. Tillst&aring;ndet kan leda till leversvikt. Mortaliteten &auml;r 30&ndash;50%. Patienter som &auml;ven utvecklar njurinsufficiens <a class=\"index\" id=\"1042914\" data-text=\"hepatorenalt syndrom\"></a>(hepatorenalt syndrom) har s&auml;mst prognos.</p>\n<h4 id=\"b2_38\"><em>Behandling</em></h4>\n<p>Abstinens. Allvarlig alkoholhepatit behandlas med <a class=\"index\" id=\"1029014\" data-text=\"prednisolon:hepatit\"></a>prednisolon, initialt 40&nbsp;mg/dag i 4 veckor som sedan reduceras med 5 mg/ vecka. Sedvanlig behandling av alkoholism med B-vitamin och nutrition ska givetvis ges (se kapitlet Alkohol &ndash; riskbruk, missbruk och beroende, avsnittet Behandling, <a href=\"/kapitel/beroendetillstand/alkohol-riskbruk_missbruk_och_beroende.html#90075\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>). Uppf&ouml;ljande behandling av patientens alkoholmissbruk &auml;r mycket viktig n&auml;r inflammationen g&aring;tt tillbaka. Patienter med leversvikt, pga alkohollevercirros, kan behandlas med levertransplantation om de har helt avst&aring;tt fr&aring;n alkohol i mer &auml;n 6&nbsp;m&aring;nader.</p>\n<h4 id=\"b2_39\"><em>Prognos </em></h4>\n<p>Mortaliteten anges vara 30&ndash;50%. L&aring;ngtidsprognosen f&ouml;r dessa patienter &auml;r ocks&aring; usel, om de inte upph&ouml;r med alkoholmissbruket, (70&ndash;80% mortalitet inom 5 &aring;r).</p>\n<h3 id=\"b2_40\"><a class=\"index\" id=\"1021461\" data-text=\"hepatit:autoimmun \"></a>Autoimmun hepatit</h3>\n<p><a class=\"index\" id=\"1021463\" data-text=\"autoimmun hepatit\"></a>Autoimmun hepatit (AIH) &auml;r en ovanlig autoimmun sjukdom som framf&ouml;r allt drabbar kvinnor i ton&aring;ren eller i &aring;ldern 40&ndash;50&nbsp;&aring;r. AIH ger en parenkymat&ouml;s leverskada pga lymfocytangrepp p&aring; hepatocyter.</p>\n<h4 id=\"b2_41\"><em>Symtom </em></h4>\n<p>Ton&aring;ringar insjuknar ofta med ikterus medan &auml;ldre personer har ospecifika symtom, t&nbsp;ex tr&ouml;tthet, eller &auml;r helt symtomfria.</p>\n<h4 id=\"b2_42\"><em>Diagnostik </em></h4>\n<p>Patienten har h&ouml;g SR/CRP, f&ouml;rh&ouml;jda aminotransferaser, h&ouml;gt IgG och antikroppar mot glatt muskel (AIH typ&nbsp;1). Hos patienter fr&aring;n andra l&auml;nder ses f&ouml;rh&ouml;jda antikroppstitrar mot andra antigen t&nbsp;ex, LKM&nbsp;1 (liver kidney microsomes; AIH typ&nbsp;2) och SLA (soluble liver antigen; AIH typ&nbsp;3). Leverbiopsi visar en kronisk hepatit som kan vara alltifr&aring;n lindrig till aktiv med helt utvecklad cirros.</p>\n<h4 id=\"b2_43\"><em>Behandling </em></h4>\n<p>Sjukdomen behandlas med <a class=\"index\" id=\"1042151\" data-text=\"kortikosteroider:hepatit\"></a>kortison, vilket d&auml;mpar inflammationen och f&ouml;rhindrar fibrosutveckling. Startdosen &auml;r 30&nbsp;mg peroralt <a class=\"index\" id=\"1042153\" data-text=\"prednisolon:hepatit\"></a>prednisolon/dygn. En s&auml;nkning av aminotransferaserna ses oftast inom 1&nbsp;vecka, men kan komma betydligt l&aring;ngsammare hos ton&aring;ringar. Dosen trappas ned med 5&nbsp;mg/vecka till 10 mg/dygn. D&auml;refter s&auml;nks dosen l&aring;ngsamt till 7,5 mg/dygn och ibland 5 mg/dygn. Det &auml;r nu visat att <a class=\"index\" id=\"1042154\" data-text=\"budesonid:hepatit\"></a>budesonid i dosen 3&nbsp;mg peroralt 2&nbsp;g&aring;nger/dygn &auml;r effektivt hos patienter med fibrosgrad I&ndash;II (3). <a class=\"index\" id=\"1042155\" data-text=\"azatioprin:hepatit\"></a>Azatioprin, 1&ndash;2&nbsp;mg/kg kroppsvikt/dygn, l&auml;ggs till i kortisonsparande syfte. Patienter som t&aring;l azatioprin kan ha en mycket l&aring;g dos kortison som ibland kan s&auml;ttas ut helt. Terapin ska p&aring;g&aring; i m&aring;nga &aring;r, ofta hela livet. Omkring 5&ndash;10% av patienterna t&aring;l inte azatioprin och de beh&ouml;ver ofta h&ouml;gre doser av prednisolon och f&aring;r t&auml;tare skov. Man b&ouml;r kontrollera aminotransferaserna 2&ndash;4 g&aring;nger/&aring;r och vid skov h&ouml;js dosen prednisolon tempor&auml;rt igen. Man b&ouml;r kontrollera att patienterna inte utvecklar osteoporos och ofta behandlas dessa patienter med osteoporosprofylax, se kapitlet Osteoporos och frakturprevention, avsnittet Farmakologisk behandling <a href=\"/kapitel/endokrinologi/osteoporos_och_frakturprevention.html#93981\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.</p>\n<p class=\"indent\">Det finns rapporterat att dessa patienter kan utveckla cirros &auml;ven om behandlingen sk&ouml;ts v&auml;l och d&auml;rf&ouml;r rekommenderas att man ska f&ouml;lja patienterna med leverbiopsi vart 3:e&ndash;5:e &aring;r.</p>\n<h3 id=\"b2_44\"><a class=\"index\" id=\"1021473\" data-text=\"alfa-1-antitrypsinbrist\"></a>Alfa-1-antitrypsinbrist</h3>\n<p>Alfa-1-antitrypsinbrist &auml;r autosomalt, recessivt &auml;rftlig och f&ouml;rekommer hos ca 1/2&nbsp;000 personer i Sverige. Den leder framf&ouml;r allt till emfysem och risk f&ouml;r KOL, men ocks&aring; till leverskada hos 20%. Ett mindre antal patienter f&aring;r leversjukdom f&ouml;re 4 &aring;rs &aring;lder, medan resten insjuknar i leversvikt och ibland hepatocellul&auml;r cancer i medel&aring;ldern. Sjukdomen l&auml;mpar sig utm&auml;rkt f&ouml;r levertransplantation.</p>\n<h3 id=\"b2_45\"><a class=\"index\" id=\"1021476\" data-text=\"hemokromatos\"></a>Hemokromatos</h3>\n<p>Hemokromatos, som leder till j&auml;rninlagring, &auml;r autosomalt, recessivt &auml;rftlig och orsakas av en st&ouml;rning i HFE-genen. Homozygot mutation finns hos ca 1/200 inv&aring;nare i v&auml;stv&auml;rlden, men endast 75% utvecklar hemokromatos. N&aring;gra procent f&aring;r allvarliga skador p&aring; framf&ouml;r allt lever och leder.</p>\n<h4 id=\"b2_46\"><em>Symtom och kliniska fynd</em></h4>\n<p>Leverskador, ledbesv&auml;r (framf&ouml;r allt hos m&auml;n) och diabetes mellitus.</p>\n<h4 id=\"b2_47\"><em>Diagnostik</em></h4>\n<p>H&ouml;gt serumj&auml;rn och h&ouml;g j&auml;rnm&auml;ttnad. Mutationen i HFE-genen analyseras (C282Y+/+). Ferritinv&auml;rdet &auml;r inte diagnostiskt utan reflekterar endast hur mycket j&auml;rn som patienten hunnit lagra in.</p>\n<h4 id=\"b2_48\"><em>Terapi</em></h4>\n<p>Behandling sker med venesectio, varvid det upplagrade j&auml;rnet anv&auml;nds f&ouml;r nybildning av blod. Prognosen &auml;r mycket god om patienterna uppt&auml;cks innan de utvecklat cirros.</p>\n<h3 id=\"b2_49\"><a class=\"index\" id=\"1021483\" data-text=\"Wilsons sjukdom\"></a>Wilsons sjukdom</h3>\n<p>Wilsons sjukdom har en incidens p&aring; 1/30&nbsp;000. Det f&ouml;ds s&aring;ledes 3&ndash;4 s&aring;dana patienter/&aring;r i Sverige. Var 3:e debuterar med leversjukdom, vanligen i &aring;ldern 6&ndash;20 &aring;r. Patienterna utreds initialt med U-koppar och S-<a class=\"index\" id=\"1032548\" data-text=\"ceruloplasmin\"></a>ceruloplasmin.</p>\n<h2 id=\"b2_50\"><a class=\"index\" id=\"1021487\" data-text=\"hepatit:l&#xE4;kemedelsinducerad;lever:l&#xE4;kemedelsbiverkning\"></a><a class=\"crossref\" id=\"48720\"></a>L&auml;kemedelsinducerad leverskada</h2>\n<p>En stor del av all l&auml;kemedelsmetabolism sker i levern. <a class=\"index\" id=\"1021490\" data-text=\"biverkningar:lever\"></a>Leverp&aring;verkan av l&auml;kemedel &auml;r en av de mest rapporterade biverkningarna. Dessa kan delas in i f&ouml;ruts&auml;gbara, typ A-biverkningar, och icke f&ouml;ruts&auml;gbara, typ B-biverkningar (se kapitlet L&auml;kemedelsbiverkningar, avsnittet Orsaker och mekanismer <a href=\"/kapitel/lakemedelsanvandning/lakemedelsbiverkningar.html#27340\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>). Den f&ouml;rsta typen inneb&auml;r att en viss dos av ett l&auml;kemedel alltid ger en viss skada, t&nbsp;ex <a class=\"index\" id=\"1021491\" data-text=\"paracetamol:leverskada\"></a>paracetamol, som alltid ger massiv cellnekros efter en viss dos. En icke f&ouml;ruts&auml;gbar reaktion inneb&auml;r att en normal dos av ett l&auml;kemedel ibland ger upphov till skada pga &ouml;verk&auml;nslighet.</p>\n<h3 id=\"b2_51\">F&ouml;ruts&auml;gbara reaktioner</h3>\n<p>Den vanligaste &auml;r &ouml;verdosering av <a class=\"index\" id=\"1032586\" data-text=\"paracetamol:leverskada\"></a>paracetamol som kan leda till fulminant leversvikt och d&ouml;d. Om patienten har en kronisk &ouml;verkonsumtion av alkohol kan &auml;ven n&aring;gra dagars intag av normaldos ge levercellsnekros. Leverskadan kommer efter n&aring;got dygn.</p>\n<h3 id=\"b2_52\">Behandling<a class=\"index\" id=\"1021494\" data-text=\"acetylcystein:leverskada\"></a></h3>\n<p>Acetylcystein i dropp. Detta &auml;r en accepterad metod och behandlingen anses kunna vara av nytta &auml;ven n&aring;gra dygn efter intaget av paracetamol (se Fass/produktresum&eacute;). Om patienten g&aring;r in i progressiv leversvikt ska han/hon transplanteras. Detta &auml;r ovanligt i Sverige.</p>\n<h3 id=\"b2_53\">Icke f&ouml;ruts&auml;gbara reaktioner</h3>\n<p>Ett stort antal l&auml;kemedel kan ge upphov till leverskada. Alla sorters reaktioner finns rapporterade: enbart aminotransferasstegring, kolestatisk bild, tum&ouml;rer eller k&auml;rlf&ouml;r&auml;ndringar. &Auml;ven om ett visst l&auml;kemedel ofta ger en typisk skada g&aring;r det inte att skilja den laboratoriem&auml;ssiga och histologiska bilden av t&nbsp;ex kronisk inflammation pga ett l&auml;kemedel fr&aring;n kronisk inflammation av annan genes.</p>\n<h3 id=\"b2_54\">Diagnos</h3>\n<p>Of&ouml;ruts&auml;gbara reaktioner g&aring;r endast att diagnostisera genom fastst&auml;llande av ett tidssamband mellan intaget av l&auml;kemedlet och skadans uppkomst, samt uteslutande av annan genes till skadan.</p>\n<h3 id=\"b2_55\">Behandling</h3>\n<p>Den mest effektiva terapin &auml;r att s&auml;tta ut l&auml;kemedlet. Kl&aring;dstillande medel kan anv&auml;ndas vid l&aring;ngvariga kolestatiska reaktioner enligt samma strategi som beskrivs f&ouml;r prim&auml;r bili&auml;r cirros och prim&auml;r skleroserande kolangit <a href=\"#63418\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.</p>\n<h3 id=\"b2_56\">Prognos</h3>\n<p>Aminotransferasstegringar g&aring;r vanligen &ouml;ver snabbt. Kolestatiska reaktioner kan p&aring;g&aring; betydligt l&auml;ngre och de kan ibland leda till allvarlig kronisk leverskada, t&nbsp;ex av vissa penicilliner (flukloxacillin m&nbsp;fl).</p>\n<h3 id=\"b2_57\">L&auml;kemedel vid leverskada</h3>\n<p>Levern kan vara k&auml;nsligare f&ouml;r paracetamol vid samtidig alkohol&ouml;verkonsumtion d&aring; leverns glutationreserver &auml;r l&aring;ga, dock ej vid annan leverskada. Man ska undvika NSAID-preparat till patienter med allvarlig leverskada. I &ouml;vrigt anses inte en sjuk lever ha h&ouml;gre risk att drabbas av icke f&ouml;ruts&auml;gbara leverskador &auml;n en normal lever.</p>\n<h2 id=\"b2_58\"><a class=\"index\" id=\"1021500\" data-text=\"cirros:prim&#xE4;r bili&#xE4;r;bili&#xE4;r cirros;prim&#xE4;r bili&#xE4;r cirros \"></a>Prim&auml;r bili&auml;r cirros</h2>\n<p>Prim&auml;r bili&auml;r cirros &auml;r en ovanlig, autoimmun sjukdom som drabbar framf&ouml;r allt kvinnor i medel&aring;ldern. Gallg&aring;ngsceller bryts ned av antikroppar och T-celler riktade mot strukturer liknande ett mitokondriellt enzym som av oklar anledning exponeras p&aring; utsidan av gallg&aring;ngscellen. Sjukdomen &auml;r inte alltid allvarlig, men kan leda till cirros och utg&ouml;r en av de vanligaste orsakerna till levertransplantation.</p>\n<h3 id=\"b2_59\">Symtom</h3>\n<p>Patienten f&aring;r ibland kl&aring;da, som kan vara sv&aring;r, och i slutstadiet ikterus.</p>\n<h3 id=\"b2_60\">Diagnostik</h3>\n<p><a class=\"index\" id=\"1021504\" data-text=\"kolestas\"></a>Kolestatiska leverv&auml;rden (h&ouml;gt ALP, GT), h&ouml;gt IgM och antikroppar mot mitokondrier, typ M2. Leverbiopsi visar en typisk bild med destruktion av gallg&aring;ngar och ofta fibrosutveckling.</p>\n<h3 id=\"b2_61\"><a class=\"crossref\" id=\"63418\"></a>Behandling</h3>\n<p>Under 1990-talet har flera stora behandlingsstudier med <a class=\"index\" id=\"1021507\" data-text=\"ursodeoxicholsyra\"></a>ursodeoxicholsyra gjorts. Flera stora v&auml;l genomf&ouml;rda studier har visat goda resultat, medan andra varit negativa med avseende p&aring; &ouml;verlevnad och behov av transplantation. En publicerad metaanalys visade ingen s&auml;ker effekt p&aring; dessa parametrar (4) Patienterna uppn&aring;r dock symtomlindring och f&ouml;rb&auml;ttrade leverv&auml;rden och l&auml;kemedlet anv&auml;nds d&auml;rf&ouml;r ofta. Patienterna har ibland fettmalabsorption och behandlas d&auml;rf&ouml;r med D- och K-vitamin.</p>\n<p class=\"indent\">Kl&aring;da behandlas med <a class=\"index\" id=\"1029656\" data-text=\"kolestyramin:prim&#xE4;r bili&#xE4;r cirros\"></a>kolestyramin, <a class=\"index\" id=\"1029088\" data-text=\"naltrexon:prim&#xE4;r bili&#xE4;r cirros\"></a>naltrexon och, om den blir sv&aring;r, med <a class=\"index\" id=\"1028610\" data-text=\"rifampicin:lever\"></a>rifampicin. Den senare ska anv&auml;ndas med f&ouml;rsiktighet d&aring; den kan utl&ouml;sa leverskada. <a class=\"index\" id=\"1028611\" data-text=\"kolestyramin:prim&#xE4;r bili&#xE4;r cirros\"></a>Kolestyramin &ouml;kar risken f&ouml;r fettmalabsorption. Patienternas skelett b&ouml;r unders&ouml;kas och osteoporos ska tidigt behandlas p&aring; sedvanligt s&auml;tt.</p>\n<p class=\"indent\">Levertransplantation visar goda resultat.</p>\n<h2 id=\"b2_62\"><a class=\"index\" id=\"1021512\" data-text=\"skleroserande kolangit;kolangit\"></a><a class=\"index\" id=\"1021513\" data-text=\"kolangit\"></a><a class=\"crossref\" id=\"74903\"></a>Prim&auml;r skleroserande kolangit</h2>\n<p>Prim&auml;r skleroserande kolangit &auml;r en ovanlig sjukdom. Den f&ouml;rekommer n&aring;got oftare hos m&auml;n och 80% av patienterna har ulcer&ouml;s kolit. De st&ouml;rre gallg&aring;ngarna inflammeras och blir fibrotiska och strikturerade. Orsaken &auml;r, liksom vid ulcer&ouml;s kolit, ok&auml;nd. M&aring;nga utvecklar aldrig n&aring;gon signifikant sjukdom, men prognosstudier i Sverige har visat att ca 50% av alla patienter kommer att levertransplanteras eller avlida inom 12&nbsp;&aring;r. Patienterna har en &aring;rlig risk p&aring; 1% att utveckla gallg&aring;ngscancer.</p>\n<h3 id=\"b2_63\">Symtom</h3>\n<p>Patienterna har ibland <a class=\"index\" id=\"1035606\" data-text=\"kl&#xE5;da:leversjukdomar\"></a>kl&aring;da och attacker av kolangit (v&auml;rk under h&ouml;ger arcus, feber och ikterus). M&aring;nga patienter &auml;r helt asymtomatiska.</p>\n<h3 id=\"b2_64\">Diagnos</h3>\n<p>Kolestatiska leverprover. MRC/ERC visar strikturer i gallv&auml;garna. Leverbiopsi visar gallv&auml;gsinflammation och olika grader av fibros.</p>\n<h3 id=\"b2_65\">Behandling</h3>\n<p>Ursodeoxicholsyra har sedan l&auml;nge anv&auml;nts vid prim&auml;r skleroserande kolangit. Kl&aring;dan minskar och leverv&auml;rdena f&ouml;rb&auml;ttras. Flera studier inklusive en stor skandinavisk studie har dock inte kunnat visa effekt p&aring; &ouml;verlevnad eller behov av levertransplantation.</p>\n<p class=\"indent\">F&ouml;r behandling av kl&aring;da f&ouml;r &ouml;vrigt, se Prim&auml;r bili&auml;r cirros, ovan.</p>\n<p class=\"indent\">Mycket goda resultat har uppn&aring;tts med levertransplantation.</p>\n<h2 id=\"b2_66\"><a class=\"index\" id=\"1021521\" data-text=\"lever:cirros, se levercirros&lt;$nopage&gt;\"></a><a class=\"crossref\" id=\"26611\"></a>Levercirros<a class=\"index\" id=\"1044131\" data-text=\"levercirros\"></a> och dess komplikationer</h2>\n<p><a class=\"index\" id=\"1042921\" data-text=\"cirros:komplikationer\"></a>Cirros &auml;r det slutstadium som vid alla former av kronisk leversjukdom leder till fibrosbildning. Leverns funktionsgrad kan vara allt fr&aring;n normal till mycket d&aring;lig hos cirrospatienter och <a class=\"index\" id=\"1042923\" data-text=\"Child-Pugh-skala\"></a>graderas enligt Child-Pugh-skala. Kollagen lagras in i levern pga inflammation. Hos vuxna tar det vanligen l&aring;ng tid att utveckla cirros (10&ndash;20 &aring;r). Cirros leder till komplikationer i form av portal hypertension med <a class=\"index\" id=\"1042924\" data-text=\"esofagusvaricer;varicer:esofagus\"></a>esofagusvaricer, ascites samt <a class=\"index\" id=\"1042925\" data-text=\"encefalopati\"></a>encefalopati. F&ouml;r en &ouml;versikt av behandlingarna, se Terapirekommendationerna ovan.</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f9169c95-b60e-4efe-9da2-039477e4e224",
+			"name": "f9169c95-b60e-4efe-9da2-039477e4e224",
+			"type": "therapy",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"crossref\" id=\"42491\"></a>",
+				"id": "b2_67",
+				"text": "<table><tbody><tr><td><p><strong>Behandling av blödning från esofagusvaricer</strong></p><ul><li>Övervakning på intensivvårdsavdelning: <span class=\"tab\"></span>puls, blodtryck och andning. <span class=\"tab\"></span>Vätska intravenöst och blod (Hb ska vara ca 80 g/L) ges efter behov.</li></ul><ul><li><a class=\"index\" id=\"1026329\" data-text=\"oktreotid:esofagusvaricer\"></a>Oktreotid 25 mikrog/timme intravenöst i infu<span class=\"tab\"></span>sion medan blödning pågår. <span class=\"tab\"></span>Alternativt <a class=\"index\" id=\"1026331\" data-text=\"terlipressin\"></a>terlipressin 2 mg intra&shy;venöst var 4:e <span class=\"tab\"></span>timme.</li></ul><ul><li>Akut gastroskopi för diagnostik och bandligering, <span class=\"tab\"></span>alternativt sklerosering.</li></ul><ul><li>Profylaktisk antibiotikabehandling med <a class=\"index\" id=\"1026333\" data-text=\"cefotaxim:esofagusvaricer\"></a>cefo<span class=\"tab\"></span>taxim, 1&nbsp;g intravenöst 2 gånger/dag.</li></ul></td></tr><tr><td><p><strong>Behandling av <a class=\"index\" id=\"1026336\" data-text=\"ascites\"></a>ascites</strong></p><ul><li>Vätskerestriktion: 1&nbsp;500–2&nbsp;000 ml/dygn. </li></ul><ul><li><span class=\"tab\"></span>Saltrestriktion vid spänd ascites.</li></ul><ul><li><a class=\"index\" id=\"1026340\" data-text=\"spironolakton:ascites\"></a>Spironolakton 50–400 mg/dag, <span class=\"tab\"></span><a class=\"index\" id=\"1026342\" data-text=\"furosemid:ascites\"></a>furosemid 40–160 mg/dag. </li></ul><ul><li><span class=\"tab\"></span><a class=\"index\" id=\"1026343\" data-text=\"laparocentes\"></a>Laparocentes: Om det tömmer sig mer än 3 L ascites, substituera med <a class=\"index\" id=\"1026345\" data-text=\"albumin\"></a>albumin intravenöst <span class=\"tab\"></span>(8 g/L ascites).</li></ul><ul><li><span class=\"tab\"></span>Transjugular intrahepatisk portosystemisk shunt <span class=\"tab\"></span>(TIPS) används i utvalda diuretikaresistenta fall.</li></ul></td></tr><tr><td><p><strong>Behandling av portosystemisk encefalopati</strong></p><ul><li><span class=\"tab\"></span>Vaken patient: <span class=\"tab\"></span><a class=\"index\" id=\"1026350\" data-text=\"laktulos:leverencefalopati\"></a>Laktulos 10–30 ml 2–3 gånger/dygn. <span class=\"tab\"></span>Patienten ska ha 2 halvfasta avföringar/dygn.</li></ul><ul><li>Påverkad somnolent eller medvetslös patient: <span class=\"tab\"></span>Uteslut annan orsak till medvetandepåverkan. <span class=\"tab\"></span>Laktulos 30 ml <br>i ventrikelsond upprepade gånger tills patienten får avföring.</li></ul><ul><li>Laktuloslavemang (100 ml laktulos + 900 ml vatten), om inte peroral administration ger effekt. <span class=\"tab\"></span><a class=\"index\" id=\"1033487\" data-text=\"metronidazol:leverencefalopati\"></a></li></ul><ul><li>Metronidazol peroralt, 400 mg 2–3 gånger/dag.</li></ul><ul><li><a class=\"index\" id=\"1043476\" data-text=\"rifaximin:leverencefalopati\"></a>Rifaximin kan ges som profylax i upp till 6 månader i dosen 550 mg 2 gånger/dag (se produktresumé/Fass).</li></ul></td></tr></tbody></table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "52274395-086f-4d17-b505-0e24d47b160d",
+			"name": "52274395-086f-4d17-b505-0e24d47b160d",
+			"type": "text",
+			"content": "<span> </span><h3 id=\"b2_68\"><a class=\"index\" id=\"1021528\" data-text=\"portal hypertension;hypertoni:portal\"></a><a class=\"index\" id=\"1021529\" data-text=\"hypertoni:portal\"></a>Portal hypertension </h3><p>Portal hypertension ger upphov till varicer bl&nbsp;a i esofagus. Dessa kan brista och börja blöda, vilket är en komplikation med hög mortalitet. Risken att utveckla varicer är ca 5&#37; per år, varför patienter med cirros bör endoskoperas årligen för att kontrollera om varicer utvecklats. </p><h4 id=\"b2_69\"><em>Symtom</em></h4><p>Cirka en tredjedel av alla patienter med varicer kommer att blöda. </p><h4 id=\"b2_70\"><em>Behandling</em></h4><p>Primärprofylax, dvs innan patienten börjat blöda, är <a class=\"index\" id=\"1024878\" data-text=\"propranolol:varicer\"></a>propranolol i dos som ger 20–25&#37; pulsreduktion (20–40&nbsp;mg 2–3 gånger/dag). Många patienter upplever dock att biverkningarna är för svåra och slutar med behandlingen. Endoskopisk ligering av varicer kan övervägas som primärprofylax om varicerna är stora.</p><p class=\"indent\">Vid akut blödning behandlas patienten på intensivvårdsavdelning. Se Terapirekommendationerna ovan.<span> </span><span> </span></p><p>Medicinsk sekundärprofylax är densamma som primärprofylax, dvs propranolol. Varicer ska behandlas med bandligering eller sklerosering tills de är eradikerade. Patienterna ska sedan kontrolleras med gastroskopi och återkommer varicerna ska de ånyo behandlas. </p><h3 id=\"b2_71\"><a class=\"index\" id=\"1021537\" data-text=\"ascites\"></a><a class=\"crossref\" id=\"61460\"></a>Ascites</h3><p>Ascites uppkommer pga portal hypertension i kombination med en störning i renin-angiotensinsystemet (5).</p><h4 id=\"b2_72\"><em>Symtom</em></h4><p>Patienterna har subjektiva besvär av ascites, vilket är ofarligt om det inte ger andningspåverkan. Ascites kan vara måttlig, spänd eller diuretikarefraktär. </p><h4 id=\"b2_73\"><em>Diagnostik</em></h4><p>Palpation/perkussion är en tillförlitlig metod för att upptäcka ascites – fynden kan dock vara svårvärderade vid samtidig obesitas. Ultraljud, som är den säkraste och mest känsliga metoden, är ofta onödigt. Diagnostisk laparocentes ska alltid utföras vid misstanke på ascites, varvid man bestämmer LPK (poly/mono), albumin och odling. Vid misstanke om malignitet görs cytologi på vätskan.</p><h4 id=\"b2_74\"><em>Behandling</em></h4><p>Patienterna ska ha saltrestriktion, vid uttalat sänkt serumnatrium även vätskerestriktion. I övrigt, se Terapirekommendationerna <a href=\"#42491\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.<span> </span><span> </span></p><h3 id=\"b2_75\">Spontan bakteriell peritonit</h3><p>I vissa fall kan patienten utveckla spontan bakteriell <a class=\"index\" id=\"1021544\" data-text=\"peritonit:bakteriell\"></a>peritonit (SBP), ett tillstånd med relativt ospecifika symtom som allmänpåverkan och feber. Patienterna har inte peritonitstatus. </p><h4 id=\"b2_76\"><em>Diagnostik</em></h4><p>LKP i ascites (&gt;&nbsp;0,25&nbsp;x&nbsp;10<sup>9</sup> celler, varav &gt;&nbsp;80&#37; polymorfkärniga). Man ska alltid ta odling, men denna är sällan positiv och LPK-bestämning anses säkrare. </p><h4 id=\"b2_77\"><em>Behandling</em></h4><p>SBP behandlas på basen av LPK-svaret med intravenöst antibiotikum, t&nbsp;ex <a class=\"index\" id=\"1021547\" data-text=\"cefotaxim:peritonit\"></a>cefotaxim i sedvanlig dos.</p><h3 id=\"b2_78\"><a class=\"index\" id=\"1028708\" data-text=\"hepatorenalt syndrom\"></a><a class=\"crossref\" id=\"53384\"></a>Hepatorenalt syndrom</h3><p>Indelas i typ I (akut påkommande) och typ&nbsp;II (kronisk) och ses framför allt hos patienter med refraktär ascites och vid leversvikt. </p><h4 id=\"b2_79\"><em>Behandling</em></h4><p>Patienterna kan behandlas med <a class=\"index\" id=\"1028713\" data-text=\"terlipressin:hepatorenalt syndrom\"></a>terlipressin och albumin. Detta sker i tät kontakt med hepatolog.</p><h3 id=\"b2_80\"><a class=\"crossref\" id=\"58293\"></a>Portosystemisk <a class=\"index\" id=\"1021548\" data-text=\"lever:encefalopati;encefalopati:lever\"></a>encefalopati </h3><p><a class=\"index\" id=\"1021550\" data-text=\"portosystemisk encefalopati\"></a>Portosystemisk encefalopati (PSE) beror på att blod som kommer från vena porta inte kommer i kontakt med leverceller utan shuntas förbi levern. Encefalopati ses inte bara vid cirros utan också vid fulminant leversvikt pga att levern då är helt utslagen. Genesen är oklar men tillförsel av protein till tarmen, t&nbsp;ex vid stor gastrointestinal blödning, kan utlösa tillståndet.</p><h4 id=\"b2_81\"><em>Symtom</em></h4><p>Patienterna blir allt ifrån förvirrade (stadium 1) till helt komatösa (stadium 4). En del patienter har kronisk encefalopati, vilket är mycket handikappande.</p><h4 id=\"b2_82\"><em>Behandling</em></h4><p>Tillståndet har tidigare behandlats med proteinfattig diet, men pga dålig effekt ges numera normalkost. Se Terapirekommendationerna <a href=\"#42491\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>102.<span> </span></p><h2 id=\"b2_83\"><a class=\"crossref\" id=\"73118\"></a>Primär <a class=\"index\" id=\"1021618\" data-text=\"lever:cancer;cancer:lever;levercancer\"></a>levercancer</h2><p>Primär levercancer delas in i <a class=\"index\" id=\"1021620\" data-text=\"gallg&#xE5;ngscancer;cancer:gallg&#xE5;ngar\"></a>gallgångscancer och <a class=\"index\" id=\"1021622\" data-text=\"hepatocellul&#xE4;r cancer;cancer:lever;lever:cancer\"></a>hepatocellulär cancer (HCC). Gallgångscancer behandlas enbart med kirurgi och har mycket dålig prognos.</p><p class=\"indent\">HCC ses hos äldre personer med tidigare normal lever men framför allt hos patienter som har cirros. I Sverige är incidensen 5&nbsp;fall/100&nbsp;000 invånare, medan den i vissa delar av världen är mycket högre (100&nbsp;fall/100 000 invånare). Detta är en av de vanligaste tumörerna i världen. Patienter med levercirros, pga hepatit B eller C, utgör riskgrupper och har en årlig risk att utveckla HCC på 1–3&#37;. </p><h3 id=\"b2_84\">Behandling</h3><p>Lokala injektioner med <a class=\"index\" id=\"1028956\" data-text=\"etanol:&lt;$nopage&gt;se alkohol[etanol]\"></a>etanol<a class=\"index\" id=\"1035841\" data-text=\"alkohol:levercancer\"></a>, RFA (Radio Frequency Ablation) och dessutom intrahepatisk infusion av cytostatika via leverartären. Om tumören är begränsad tillämpar man kirurgisk behandling med antingen resektion eller levertransplantation. Prognosen är dålig, om inte tumören hittas tidigt. Om man kan behandla patienter med levertransplantation medan tumören är mindre än 5 cm är 5-årsöverlevnaden 80&#37;, medan den är 20–50&#37; med andra behandlingsmetoder. </p><p class=\"indent\">De senaste åren behandlas mer uttalad HCC med läkemedlet <a class=\"index\" id=\"1041582\" data-text=\"sorafenib:levercancer\"></a>sorafenib (Nexavar), som i vissa fall förlänger överlevnaden.</p><h2 id=\"b2_85\"><a class=\"index\" id=\"1021627\" data-text=\"lever:transplantation;levertransplantation\"></a>Levertransplantation</h2><p><a class=\"index\" id=\"1021629\" data-text=\"lever:transplantation\"></a>Levertransplantation är en framgångsrik metod med en 1-årsöverlevnad på 80–90&#37; och en 5-årsöverlevnad på &gt;&nbsp;60&#37;. Cirka 100 levertransplantationer/år utförs i Sverige. Indikationerna för levertransplantation är kronisk leversjukdom och levertumörer. Dessa utgör majoriteten av alla fall, medan fulminant leversvikt utgör ca 10&#37; av alla transplantationsfall i Norden. </p><p class=\"indent\">De vanligaste bakomliggande sjukdomarna i Sverige är primär biliär cirros, primär skleroserande kolangit, hepatit B och C samt autoimmun hepatit. Patienter med hepatocellulär cancer transplanteras endast om cancern upptäcks tidigt och inte har spridit sig. De vanligaste orsakerna till fulminant <a class=\"index\" id=\"1021632\" data-text=\"leversvikt\"></a>leversvikt är förgiftningar med läkemedel samt infektioner med hepatit A, B och C.</p><p class=\"indent\">Efter operationen får alla patienter behandling med avstötningshämmande medel som <a class=\"index\" id=\"1042221\" data-text=\"prednisolon:levertransplantation\"></a>prednisolon, <a class=\"index\" id=\"1042222\" data-text=\"azatioprin\"></a>azatioprin, <a class=\"index\" id=\"1042223\" data-text=\"ciklosporin:transplantation\"></a>ciklosporin och <a class=\"index\" id=\"1042224\" data-text=\"takrolimus:levertransplantation\"></a>takrolimus. Dessa är helt nödvändiga, men de har biverkningar i form av diabetes mellitus, hypertoni, njurskador och viktuppgång.</p><h2 class=\"referenceHeader\" id=\"b2_86\">Referenser</h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a6e33d7d-4dac-4d93-b57a-c563cedec1ba",
+			"name": "a6e33d7d-4dac-4d93-b57a-c563cedec1ba",
+			"type": "references",
+			"content": "<ol class=\"references\"><li id=\"reference_1\">Lindh M, Uhnoo I, Bläckberg J, Duberg AS, <br> Friman S, Fischler B, et al. Treatment of chronic hepatitis B infection: an update of Swedish <br>recommendations.<br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/18584530\" target=\"_blank\" class=\"linkOut\">Scand J Infect Dis. 2008;40: 436–50.</a> </li>\n<li id=\"reference_2\"> <span class=\"updated\" title=\"Texten &#xE4;r uppdaterad\"></span><span class=\"updated\" title=\"Texten &#xE4;r uppdaterad\">Läkemedelsbehandling av hepatit C-virusinfektion hos vuxna och barn – kunskapsunderlag.<br></span><span class=\"updated\" title=\"Texten &#xE4;r uppdaterad\">Information från Läkemedelsverket 2014.</span><span class=\"updated\" title=\"Texten &#xE4;r uppdaterad\"> </span><a href=\"http://www.lakemedelsverket.se/upload/halso-och-sjukvard/behandlingsrekommendationer/HCV_kunskapsunderlag_2014-07-03.pdf\" target=\"_blank\" class=\"linkOut\">www.lakemedelsverket.se</a> </li>\n<li id=\"reference_3\">Manns MP, Woynarowski M, Kreisel W, Lurie Y,  Rust C, Zuckerman E, et al. <a href=\"http://www.lakemedelsboken.se/atc/R01AD05-R03BA02-A07EA06\" data-atcid=\"R01AD05,R03BA02,A07EA06\" data-atctitles=\"Andningsorgan--Medel_vid_n&#xE4;ssjukdomar--Avsv&#xE4;llande_och_&#xF6;vriga_medel_f&#xF6;r_lokal_behandling_vid_n&#xE4;ssjukdomar--Kortikosteroider--Budesonid##Andningsorgan--Medel_vid_obstruktiva_luftv&#xE4;gssjukdomar--&#xD6;vriga_medel_vid_obstruktiva_luftv&#xE4;gssjukdomar,_inhalationer--Glukokortikoider--Budesonid##Matsm&#xE4;ltningsorgan_och_&#xE4;mnesoms&#xE4;ttning--Antidiarroika,_intestinala_antiinflammatoriska_och_antiinfektiva_medel--Medel_vid_intestinala_inflammationer--Kortikosteroider_f&#xF6;r_lokal_behandling--Budesonid\" class=\"lb inlineGenerica text\">Budesonid</a>e induces remission more effectively than <a href=\"http://www.lakemedelsboken.se/atc/H02AB07\" data-atcid=\"H02AB07\" data-atctitles=\"Systemiska_hormonpreparat,_exkl._k&#xF6;nshormoner_och_insuliner--Kortikosteroider_f&#xF6;r_systemiskt_bruk--Kortikosteroider_f&#xF6;r_systemiskt_bruk--Glukokortikoider--Prednison\" class=\"lb inlineGenerica text\">prednison</a>e in a controlled trial of patients with autoimmune <br>hepatitis. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/20600032\" target=\"_blank\" class=\"linkOut\">Gastroenterology. 2010;139:1198–206.</a> </li>\n<li id=\"reference_4\">Crosignani A, Battezzati PM, Invernizzi P, Selmi C,  Prina E, Podda M. Clinical features and management of primary biliary cirrhosis. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/18528929?ordinalpos=3&amp;itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum\" target=\"_blank\" class=\"linkOut\">World J Gastroenterol. 2008;14:3313–27.</a> </li>\n<li id=\"reference_5\">Runyon BA; AASLD. Practice Guidelines <br> Committee. Management of adult patients <br>with ascites due to cirrhosis: an update. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/19475696\" target=\"_blank\" class=\"linkOut\">Hepatology. 2009;49:2087–107.</a> </li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c9c1e5b7-70b0-4dd7-a6e5-e91d08e73865",
+			"name": "c9c1e5b7-70b0-4dd7-a6e5-e91d08e73865",
+			"type": "text",
+			"content": "<h5 id=\"b2_87\">För vidare läsning:</h5>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "58f2371e-ace5-44d6-b854-5f68137994ad",
+			"name": "58f2371e-ace5-44d6-b854-5f68137994ad",
+			"type": "references",
+			"content": "<ol class=\"references\"><li id=\"reference_1\">Weiland O. Hepatiter. I: Iwarson S, Norrby R, red. Infektionsmedicin – epidemiologi, klinik och terapi. 5:e uppl. Sävedalen: Säve förlag; 2011. s&nbsp;204–20.</li>\n<li id=\"reference_2\">Hultcrantz R, Bergquist A, Lindgren S, Simrén M, Stål P. Gastroenterologi och hepatologi. <br>Stockholm: Liber; 2011. ISBN 9147103647.</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/mage-tarm/leversjukdomar.json",
+	"modified": "2017-03-07 10:38",
+	"isPublished": true,
+	"indexed": "true"
+}

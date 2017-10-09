@@ -1,0 +1,21 @@
+{
+	"templateName": "menu",
+	"templateDescription": "Meny",
+	"title": "",
+	"created": "",
+	"published": "",
+	"content": [
+		{
+			"id": "91561704-7bd7-42fc-aca5-a0b9d4297829",
+			"name": "91561704-7bd7-42fc-aca5-a0b9d4297829",
+			"type": "text",
+			"content": "<ul>\r\n<li>En lista</li>\r\n<li>Med flera</li>\r\n<li>Lite grejer</li>\r\n<li>Punkter\r\n<ul>\r\n<li>Och &auml;nnu fler punkter dsd</li>\r\n<li><a href=\"{pre}/migration/test.html#a1_16\"><i class=\"fa fa-check\"> </i> I en hierarki dasd dsadasdas</a></li>\r\n</ul>\r\n</li>\r\n<li><a href=\"{pre}/migration/test.html\"><i class=\"fa fa-comment-o\"> </i> H&auml;r &auml;r en l&auml;nk</a></li>\r\n</ul>",
+			"settings": {
+				"postprocessors": []
+			}
+		}
+	],
+	"type": "component",
+	"path": "/components/default-left-menu.json",
+	"isPublished": false
+}

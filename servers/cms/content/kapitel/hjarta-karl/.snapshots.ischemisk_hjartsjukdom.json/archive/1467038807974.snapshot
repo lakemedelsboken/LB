@@ -1,0 +1,677 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Ischemisk hjärtsjukdom | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-09 00:54",
+	"published": "2015-07-09 00:54",
+	"validUntil": "",
+	"createdBy": "David Erlinge, Staffan  Nilsson",
+	"replacesUrl": "/e1_hja_ischemhjart_2013fm10.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "2be7c1e8-24d8-451d-9093-2b941ec0b3d7",
+			"name": "2be7c1e8-24d8-451d-9093-2b941ec0b3d7",
+			"type": "author",
+			"content": {
+				"firstname": "David",
+				"surname": "Erlinge",
+				"description": "",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "77476e13-3b37-4f1f-a433-7de1c33c213c",
+			"name": "77476e13-3b37-4f1f-a433-7de1c33c213c",
+			"type": "author",
+			"content": {
+				"firstname": "Staffan ",
+				"surname": "Nilsson",
+				"description": "",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7161763c-8b1a-467e-ba80-7fa8cff6adcf",
+			"name": "7161763c-8b1a-467e-ba80-7fa8cff6adcf",
+			"type": "text",
+			"content": "<h1 id=\"e1_4\"><a class=\"crossref\" id=\"67837\"></a>Ischemisk hj&auml;rtsjukdom</h1>\n<h2 id=\"e1_5\">Inledning</h2>\n<p class=\"ingress\">Ischemisk hj&auml;rtsjukdom &auml;r en folksjukdom som leder till f&ouml;r tidig d&ouml;d och s&auml;nkt livskvalitet. En bred arsenal av evidensbaserad diagnostik och behandling har f&ouml;rb&auml;ttrat prognosen markant. De viktigaste diagnoserna &auml;r stabil angina och akuta koronara syndrom som i sin tur delas upp i instabil angina, icke-ST-h&ouml;jningsinfarkt och ST-h&ouml;jningsinfarkt. I kapitlet presenteras symptom, diagnostik, livstilsf&ouml;r&auml;ndringar, medikamentell och invasiv behandling i enlighet med svenska och internationella riktlinjer.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "64bb2bfa-cfe9-40ac-acb9-671cc2d4fe50",
+			"name": "64bb2bfa-cfe9-40ac-acb9-671cc2d4fe50",
+			"type": "text",
+			"content": "<h2 id=\"Symtom\">Symtom</h2>\n<p>Symtomen vid ischemisk hj&auml;rtsjukdom kan variera fr&aring;n pl&ouml;tslig d&ouml;d och dramatisk br&ouml;stsm&auml;rta med allm&auml;np&aring;verkan till fullst&auml;ndig fr&aring;nvaro av symptom (tyst ischemi). Hos b&aring;de m&auml;n och kvinnor &auml;r den klassiska symptombilden vid ST-h&ouml;jningsinfarkt tryckande och ih&aring;llande br&ouml;stsm&auml;rta, ibland med utstr&aring;lning till armar eller hals/underk&auml;ke. Kvinnor kan i j&auml;mf&ouml;relse med m&auml;n oftare ha atypisk br&ouml;stsm&auml;rta eller i fr&aring;nvaro av br&ouml;stsm&auml;rta uppleva uttalad matthet eller andn&ouml;d vid akut myokardischemi. &Auml;ven sm&auml;rta i axel, k&auml;ke, hals, rygg eller epigastrium &auml;r vanligare hos kvinnor. Beroende p&aring; var i hj&auml;rtat det ischemiska omr&aring;det &auml;r lokaliserat kan sm&auml;rtan ocks&aring; f&ouml;rl&auml;ggas till epigastriet eller ryggen. Se Faktaruta 1.<br><br>Framf&ouml;rallt hos &auml;ldre patienter och diabetiker med polyneuropati kan symptomen vara mer ospecifika och diskreta; uttalad tr&ouml;tthet, dyspn&eacute; eller en ospecifik k&auml;nsla av illabefinnande. Kraftigt illam&aring;ende &auml;r ibland ett framtr&auml;dande symptom och en orsak till att m&aring;nga som d&ouml;r i hj&auml;rtinfarkt p&aring;tr&auml;ffas i badrummet. En arytmiorsakad synkopering kan ocks&aring; vara huvudsymptomet p&aring; en hj&auml;rtinfarkt. Inte minst i prim&auml;rv&aring;rd &auml;r det v&auml;sentligt att vara medveten om den diskreta och ospecifika symptombild som &auml;ldre patienter och diabetiker kan uppvisa, f&ouml;r att f&aring;nga upp patienter med potentiellt livshotande och behandlingsbar akut myokardischemi.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b6ee1faf-0681-4dfc-a1ac-1567e63dbc27",
+			"name": "b6ee1faf-0681-4dfc-a1ac-1567e63dbc27",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "Symtom och fynd som talar starkt för akut koronart syndrom (hjärtinfarkt eller instabil angina)",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Sm&auml;rtan eller uttalat obehag i br&ouml;stet under minst 15 minuter</li>\r\n<li>Sm&auml;rtan/obehaget str&aring;lar ofta ut eller dominerar i rygg, armar, nacke eller underk&auml;ke</li>\r\n<li>Br&ouml;stsm&auml;rta &aring;tf&ouml;ljt av illam&aring;ende och kr&auml;kningar, svettning eller dyspn&eacute;, framf&ouml;r allt vid en kombination av dessa symptom</li>\r\n<li>Br&ouml;stsm&auml;rta hos en hemodynamiskt instabil patient</li>\r\n<li>Br&ouml;stsm&auml;rta av angin&ouml;s typ som &auml;r nytillkommen och progredierande senaste fyra veckorna, eller snabb f&ouml;rs&auml;mring av stabil angina med frekventa sm&auml;rtanfall vid liten anstr&auml;ngning eller i vila. Sm&auml;rtanfallen varar ofta l&auml;ngre &auml;n 15 minuter.</li>\r\n</ul>\r\nSymptomen ska v&auml;rderas utan h&auml;nsyn till k&ouml;n eller etnisk bakgrund. Patient eller n&auml;rst&aring;ende ska i f&ouml;rsta hand ringa 112 vid dessa symptom. Ambulanstransport med h&ouml;gsta prioritet till sjukhus &auml;r p&aring;kallad. Om patienten kommer direkt till v&aring;rdcentral eller liknande med dessa symptom ska l&auml;kare och ambulans genast tillkallas.</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a6d9c300-6d46-4eeb-84d5-e815e36d58bf",
+			"name": "a6d9c300-6d46-4eeb-84d5-e815e36d58bf",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "Fallbeskrivning Hugo, 62 år, bröstsmärta (1‌)",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>Hugo 62 &aring;r s&ouml;ker p&aring; sin v&aring;rdcentral en m&aring;ndagsf&ouml;rmiddag i oktober f&ouml;r obehag i br&ouml;stkorgen. Han har f&aring;tt tid samma dag. Hugo brukar inte s&ouml;ka v&aring;rd s&auml;rskilt ofta. I hans journal framg&aring;r att han behandlas f&ouml;r hypertoni sedan flera &aring;r tillbaka med enalapril 20 mg en tablett dagligen. Han tar &auml;ven omeprazol 20 mg vid behov. Han r&ouml;ker ett paket cigaretter/dag. Du finner Hugo op&aring;verkad och till synes lugn. Han ber&auml;ttar att han sedan 3&ndash;4 veckor tillbaka har en &aring;terkommande br&auml;nnande, svidande, sm&auml;rta i br&ouml;stet. Sm&auml;rtan sitter bakom br&ouml;stbenet &auml;r dov till karakt&auml;ren och saknar utstr&aring;lning. Sm&auml;rtan kan sitta i 5&ndash;10 ibland upp till 20&nbsp;minuter.&nbsp; Sm&auml;rtan kommer vid kraftig anstr&auml;ngning och n&aring;gon g&aring;ng vid ilska. Hugo f&ouml;rnekar att han haft sm&auml;rta i vila eller p&aring; natten. </td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": "e1_15"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "01465114-1298-41f9-9fff-9d8a932f73a4",
+			"name": "01465114-1298-41f9-9fff-9d8a932f73a4",
+			"type": "text",
+			"content": "<h2 id=\"Diagnos\">Diagnos</h2>\n<p>Anamnesen &auml;r helt avg&ouml;rande f&ouml;r att st&auml;lla diagnosen ischemisk hj&auml;rtsjukdom d&aring; en patient s&ouml;ker f&ouml;r sm&auml;rta/obehag i br&ouml;stet. Det g&auml;ller framf&ouml;r allt typen av sm&auml;rta, tidsf&ouml;rlopp och utl&ouml;sande faktorer samt patientens hela kardiovaskul&auml;ra riskprofil. I typiska fall beskriver patienten en retrosternal sm&auml;rta, ibland med utstr&aring;lning till armarna, ryggen eller upp mot underk&auml;ken. Sm&auml;rta som orsakas av myokardischemi &auml;r av visceral typ och upplevs ofta som ett tryckande obehag, ett band runt br&ouml;stet eller &rdquo;sv&aring;righeter att f&aring; luft&rdquo;. Sm&auml;rtan kan till karakt&auml;ren vara mycket lik sm&auml;rta fr&aring;n nedre esofagus/cardia som ocks&aring; har samma segmentella innervation som hj&auml;rtat.<br><br>Vid stabil angina pectoris kommer sm&auml;rtan typiskt vid fysisk anstr&auml;ngning och klingar av efter n&aring;gra minuter (&lt;&nbsp;15) i vila. Den angin&ouml;s sm&auml;rtan kan ibland lindras om patienten forts&auml;tter med fysisk anstr&auml;ngning trots symptom, s&aring; kallad walk through angina. Emotionellt ut&ouml;st angina har sin orsak i &ouml;kad sympatikusaktivitet.<br><br></p>\n<p>I prim&auml;rv&aring;rd rekommenderas inte att anv&auml;nda akut analys av myokardskademark&ouml;rer s&aring;som CKMB och troponin&nbsp;T eller troponin&nbsp;I. De patientn&auml;ra analysmetoder f&ouml;r troponin&nbsp;T och I som f&ouml;r n&auml;rvarande st&aring;r till buds har betydligt h&ouml;gre detektionsgr&auml;ns &auml;n de h&ouml;gsensitiva metoder som anv&auml;nds p&aring; sjukhus &auml;ven om nya k&auml;nsligare patientn&auml;ra metoder &auml;r under utveckling. Risken finns ocks&aring; att man f&ouml;rlitar sig f&ouml;r mycket p&aring; en negativ laboratorieanalys och missar en patient med diskreta symptom p&aring; akut koronart syndrom. I utvalda fall och d&auml;r det &auml;r l&aring;ngt till sjukhus kan patientn&auml;ra analyser av biokemiska myokardskademark&ouml;rer m&ouml;jligen vara av v&auml;rde.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "97c0a1a4-3579-4928-97c4-cfc37603b25c",
+			"name": "97c0a1a4-3579-4928-97c4-cfc37603b25c",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "Fallbeskrivning Hugo, 62 år, bröstsmärta (2‌)",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p>Du g&ouml;r en snabb riskbed&ouml;mning av Hugo. Hans riskprofil; manligt k&ouml;n, r&ouml;kare, &aring;lder och hypertoni g&ouml;r att sannolikheten f&ouml;r ateroskleros i hj&auml;rtats kransk&auml;rl &auml;r h&ouml;g. Symptomen st&auml;mmer ocks&aring; v&auml;l &ouml;verens med br&ouml;stsm&auml;rta orsakad av myokardischemi.</p>\r\n<p>&nbsp;</p>\r\n<p>Vid din unders&ouml;kning finner du Hugo op&aring;verkad. Han f&ouml;rnekar p&aring;g&aring;ende sm&auml;rta i br&ouml;stet. Hj&auml;rtat har regelbunden rytm med frekvens 64/minut och inga biljud. Lungorna har normala andningsljud. Blodtrycket &auml;r 140/90&nbsp;mm&nbsp;Hg. EKG visar regelbunden sinusrytm, frekvens 82/min, normalst&auml;lld el-axel och normala QRS-komplex. Inga ST-T-f&ouml;r&auml;ndringar.&nbsp; Du bed&ouml;mer att Hugo lider av stabil angina. Du tar Hb, HbA1c, P-kreatinin (eGFR) samt ett lipidstatus. Du best&auml;ller &auml;ven ett arbetsprov och ekokardiografi. Han f&aring;r ASA och antiangin&ouml;sbehandling i form av betablockad. Du ordinerar &auml;ven statin i h&ouml;g dos eftersom du bed&ouml;mer att Hugo har mycket h&ouml;g risk f&ouml;r kardiovaskul&auml;ra h&auml;ndelser. Han f&aring;r &auml;ven kortverkande nitrospray att ta vid behov. Du rekommenderar Hugo att han ska sluta r&ouml;ka och remitterar honom f&ouml;r r&ouml;kavv&auml;njning. </p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "bbcd7362-1d65-4bef-8519-3a255666ea20",
+			"name": "bbcd7362-1d65-4bef-8519-3a255666ea20",
+			"type": "text",
+			"content": "<h2 id=\"Epidemiologi-och-patofysiologi\">Epidemiologi och patofysiologi</h2>\n<p>Hj&auml;rt-k&auml;rlsjukdomar orsakar flest d&ouml;dsfall i h&ouml;ginskomstl&auml;nder i alla delar av v&auml;rlden. I Sverige lider &nbsp;200&nbsp;000 av k&auml;rlkramp, 30&nbsp;000 v&aring;rdas f&ouml;r hj&auml;rtinfarkt och 12&nbsp;000 f&ouml;r instabil angina varje &aring;r. Hj&auml;rtinfarktincidensen har sjunkit de senaste 30 &aring;ren, liksom d&ouml;dligheten som har halverats fr&aring;n 14&nbsp;% till 7&nbsp;%.<br><br></p>\n<p>Den viktigaste bakomliggande mekanismen &auml;r ett atheromat&ouml;st lipidinlagrat inflammerat plack som rupturerar. Trombocyter uppfattar det som en k&auml;rlskada, aktiveras, aggregerar och stimulerar i sin tur koagulationssystemet s&aring; att en tromb bildas som hotar att ockludera kransk&auml;rlet. Bildandet av det atheromat&ouml;sa placket b&ouml;rjar redan i ton&aring;ren genom att kolesterol inlagras i k&auml;rlv&auml;ggen. LDL oxideras och aktiverar makrofager som startar en inflammatorisk process som f&ouml;rsvagar placket och g&ouml;r det ben&auml;get att rupturera.<br><br></p>\n<p>De viktigaste p&aring;verkbara riskfaktorerna &auml;r sammanfattade i Faktaruta 4 Riskfaktorer. Icke p&aring;verkbara riskfaktorer &auml;r h&ouml;g &aring;lder, manligt k&ouml;n, reumatiska sjukdomar, psykossjukdomar och genetiskt &auml;rftliga faktorer som f&ouml;rklarar cirka 20&nbsp;% av risken att drabbas.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "038fc16a-7972-4654-9ebc-a0fce6c9ae25",
+			"name": "038fc16a-7972-4654-9ebc-a0fce6c9ae25",
+			"type": "facts",
+			"content": {
+				"number": "4",
+				"title": "Riskfaktorer",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><strong><em>P&aring;verkbara riskfaktorer</em></strong></p>\r\n<ul>\r\n<li>H&ouml;g LDL/HDL-kvot</li>\r\n<li>R&ouml;kning</li>\r\n<li>Diabetes</li>\r\n<li>H&ouml;gt blodtryck</li>\r\n<li>Bukfetma</li>\r\n<li>Psykosocial stress</li>\r\n</ul>\r\n<p>&nbsp;</p>\r\n<p><strong><em>Skyddande faktorer</em></strong></p>\r\n<ul>\r\n<li>Fysisk aktivitet</li>\r\n<li>H&ouml;gt intag av frukt och gr&ouml;nsaker</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": "e1_20"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "16d5520f-9656-4067-b3aa-6c9c69548977",
+			"name": "16d5520f-9656-4067-b3aa-6c9c69548977",
+			"type": "text",
+			"content": "<h2 id=\"Primar-prevention-\">Prim&auml;r prevention&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>\n<h3 id=\"Livsstilsrad\">Livsstilsr&aring;d</h3>\n<p>WHO ber&auml;knar att 80&nbsp;% av all kransk&auml;rlssjukdom och stroke orsakas av oh&auml;lsosamma levnadsvanor. Drygt en femtedel av fallen av akut hj&auml;rtinfarkt i Sverige ber&auml;knas vara orsakade av r&ouml;kning. Socialstyrelsen har publicerat rekommendationer som st&ouml;d f&ouml;r arbetet att motverka de negativa h&auml;lsoeffekterna av oh&auml;lsosamma levnadsvanor. Man anger tre niv&aring;er av r&aring;dgivning:</p>\n<ul>\n<li>enkla r&aring;d</li>\n<li>r&aring;dgivande samtal</li>\n<li>kvalificerat r&aring;dgivande samtal.</li>\n</ul>\n<p>D&aring; det g&auml;ller ischemisk hj&auml;rtsjukdom handlar det framf&ouml;r allt om tobaksr&ouml;kning, l&aring;g fysisk aktivitet och oh&auml;lsosamma matvanor. Personer som r&ouml;ker dagligen b&ouml;r erbjudas kvalificerat r&aring;dgivande samtal och professionellt st&ouml;d f&ouml;r att sluta r&ouml;ka. Se kapitlet <a href=\"{pre}/kapitel/beroendetillstand/tobaksberoende.html#t1_2\">Tobaksberoende</a>. Vid otillr&auml;cklig fysisk aktivitet b&ouml;r sjukv&aring;rden erbjuda r&aring;dgivande samtal f&ouml;r &ouml;kad fysisk aktivitet och minskat stillasittande. Ibland kan till&auml;gg av skriftlig ordination om fysisk aktivitet eller stegr&auml;knare samt s&auml;rskild uppf&ouml;ljning vara av v&auml;rde. Vid oh&auml;lsosamma matvanor b&ouml;r kvalificerat r&aring;dgivande samtal erbjudas.</p>\n<p>&nbsp;</p>\n<p>Med prim&auml;rprevention av ischemisk hj&auml;rtsjukdom brukar man mena &aring;tg&auml;rder som g&ouml;rs f&ouml;r att f&ouml;rhindra eller skjuta upp insjuknande hos friska individer, till skillnad fr&aring;n sekund&auml;rprevention d&auml;r det handlar om att f&ouml;rhindra &aring;terinsjuknande efter exempelvis en hj&auml;rtinfarkt. Denna indelning i sekund&auml;r- och prim&auml;rprevention har delvis f&ouml;rlorat sin relevans och man str&auml;var i st&auml;llet efter riskstratifiering, utifr&aring;n f&ouml;rekomst av riskfaktorer samt &aring;lder och k&ouml;n. Vid skattning av risken f&ouml;r kardiovaskul&auml;r d&ouml;d inom 10 &aring;r &auml;r den s&aring; kallade SCORE-algoritmen anv&auml;ndbar. Denna har utvecklats sedan 2003 och baseras p&aring; &ouml;ver 200&nbsp;000 personer med 2,7 miljoner uppf&ouml;ljnings&aring;r och 8&nbsp;000 kardiovaskul&auml;ra d&ouml;dsfall fr&aring;n 12 europeiska l&auml;nder. Sverige tillh&ouml;r numera l&aring;griskl&auml;nderna f&ouml;r kardiovaskul&auml;r sjukdom. Riskskattning enligt SCORE bygger p&aring; k&ouml;n, &aring;lder, totalkolesterol, systoliskt blodtryck samt r&ouml;kning. <span style=\"background-color: #ffff00;\">(Faktaruta: SCORE-diagram)</span>. SCORE ska anv&auml;ndas vid riskskattning f&ouml;r patienter som inte har diabetes och inte heller n&aring;gon tidigare k&auml;nd k&auml;rlsjukdom (prim&auml;rprevention). SCORE-algoritmen bygger p&aring; ett begr&auml;nsat antal riskfaktorer och till&auml;gg av ytterligare riskfaktorer f&ouml;r hj&auml;rt- k&auml;rlsjukdom exempelvis hereditet leder endast till marginell f&ouml;rb&auml;ttring av precisionen i riskprognosen.<br><br>Anv&auml;ndning av en validerad risk-algoritm som SCORE ger endast en grov uppskattning av risken f&ouml;r den enskilda patienten, men ger en mer strukturerad och systematisk bed&ouml;mning &auml;n om man f&ouml;rlitar sig p&aring; en helt subjektiv bed&ouml;mning. En web-baserad kalkylator f&ouml;r ber&auml;kning enligt SCORE-algoritmen finns tillg&auml;nglig p&aring; <span><a href=\"http://www.heartscore.org\">www.heartscore.org</a></span>. Den kan vara ett pedagogiskt hj&auml;lpmedel vid patientsamtal f&ouml;r att motivera till livsstilsf&ouml;r&auml;ndring genom att ge en fingervisning om hur mycket risken f&ouml;r kardiovaskul&auml;r d&ouml;d minskar om man exempelvis slutar r&ouml;ka.</p>\n<p>&nbsp;</p>\n<p>SCORE &auml;r direkt till&auml;mplig f&ouml;r &aring;ldrarna 40&ndash;65 &aring;r. F&ouml;r yngre individer &auml;r 10-&aring;rsrisken f&ouml;r kardiovaskul&auml;r d&ouml;d generellt sett l&aring;g &auml;ven vid mycket ogynnsamma riskfaktorer. Ett s&auml;tt att pedagogiskt illustrera en f&ouml;rh&ouml;jd risk kan vara att anv&auml;nda sig av &rdquo;risk&aring;lder&rdquo;. &rdquo;Risk&aring;lder&rdquo; inneb&auml;r att en r&ouml;kande man vid 50-&aring;rs &aring;lder med blodtryck 140&nbsp;mm&nbsp;Hg och kolesterol 6&nbsp;mmol/l har samma risk som en 65-&aring;rig man med optimala riskfaktorer; 50-&aring;ringens risk&aring;lder &auml;r allts&aring; 65 &aring;r.</p>\n<p><br>Vid riskstratifiering &auml;r SCORE-ber&auml;kning anv&auml;ndbar tillsammans med mer detaljerad kunskap om individens riskfaktorer. En gruppering i fyra riskklasser: Mycket h&ouml;g risk, h&ouml;g risk, m&aring;ttlig risk och l&aring;g risk kan anv&auml;ndas och har nyligen publicerats av L&auml;kemedelsverket.</p>\n<ul>\n<li><strong>Mycket h&ouml;g risk:</strong> Dokumenterad tidigare kardiovaskul&auml;r sjukdom (sekund&auml;rprevention), ber&auml;knad 10-&aring;rsrisk f&ouml;r kardiovaskul&auml;r d&ouml;d enligt SCORE &ge;&nbsp;10&nbsp;%. Kronisk njursjukdom med GFR&nbsp;&lt;&nbsp;30ml/min/1,73&nbsp;m<sup>2</sup></li>\n<li><strong>H&ouml;g risk:</strong> Markant f&ouml;rh&ouml;jning av enskilda riskfaktorer. Exempelvis totalkolesterol &gt;&nbsp;8&nbsp;mmol/l, systoliskt blodtryck &ge;&nbsp;180&nbsp;mmHg och/eller diastoliskt blodtryck &ge;&nbsp;110&nbsp;mmHg, eller r&ouml;kare med &gt;&nbsp;20 paket&aring;r (antal paket &aacute; 20&nbsp;cigaretter/dag&nbsp;&times;&nbsp;antal &aring;r), f&ouml;re eller under behandling. Ber&auml;knad 10-&aring;rsrisk f&ouml;r kardiovaskul&auml;r d&ouml;d enligt SCORE 5&nbsp;% till &lt;&nbsp;10&nbsp;%. Kronisk njursjukdom med GFR 30&ndash;59&nbsp;ml/min/1,73&nbsp;m<sup>2</sup></li>\n<li><strong>M&aring;ttlig risk:</strong> Ber&auml;knad risk f&ouml;r kardiovaskul&auml;r d&ouml;d enligt SCORE 1&nbsp;% till &lt;&nbsp;5&nbsp;%.</li>\n<li><strong>L&aring;g risk.</strong> Ber&auml;knad risk f&ouml;r kardiovaskul&auml;r d&ouml;d enligt SCORE &lt;&nbsp;1&nbsp;%.</li>\n</ul>\n<p>Riskstratifieringen anv&auml;nds f&ouml;r att tillsammans med patienten planera l&auml;mpliga &aring;tg&auml;rder f&ouml;r att minska risken f&ouml;r kardiovaskul&auml;r d&ouml;d. Vid mycket h&ouml;g och h&ouml;g risk blir l&auml;kemedelsbehandling f&ouml;r det mesta aktuell.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fcab872a-6c89-4d8e-abe1-c12a2b89be07",
+			"name": "fcab872a-6c89-4d8e-abe1-c12a2b89be07",
+			"type": "text",
+			"content": "<h3 id=\"Prevention-vid-typ-2-diabetes\">Prevention vid typ 2-diabetes</h3>\n<p>Vid skattning av kardiovaskul&auml;r risk hos diabetiker i Sverige b&ouml;r inte SCORE-diagrammet anv&auml;ndas. Numera finns en &rdquo;riskmotor&rdquo; framtagen av Nationella Diabetesregistret (NDR) tillg&auml;nglig p&aring; <span><a href=\"http://www.ndr.nu\">www.ndr.nu</a></span>/risk/. Riskskattningarna baseras p&aring; data mellan 2002 och 2007 och &auml;r konstruerad b&aring;de f&ouml;r typ 1- och typ 2-diabetiker. Modellen &auml;r giltig f&ouml;r patienter mellan 30 och 75&nbsp;&aring;rs &aring;lder vid typ&nbsp;2-diabetes och skattar risken f&ouml;r fatala och icke-fatala hj&auml;rt-k&auml;rlh&auml;ndelser under de kommande fem &aring;ren, detta till skillnad fr&aring;n SCORE som ber&auml;knar risken f&ouml;r kardiovaskul&auml;r d&ouml;d under tio &aring;r. Riskmotorn tar h&auml;nsyn till diabetesduration, HBA1C, systoliskt blodtryck, total- och HDL-kolesterol, r&ouml;kning, tidigare kardiovaskul&auml;r sjukdom samt mikroalbuminuri. Det &auml;r en f&ouml;rdel att riskmotorn baseras p&aring; svenska patienter. Riskmotorn &auml;r konstruerad som ett pedagogiskt hj&auml;lpmedel som kan anv&auml;ndas f&ouml;r att demonstrera risken f&ouml;r kardiovaskul&auml;r sjukdom hos den enskilde diabetespatienten och hur denna risk p&aring;verkas vid f&ouml;r&auml;ndring av modifierbara riskfaktorer.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a6c7d9b6-8e66-408b-b976-9436a1594344",
+			"name": "a6c7d9b6-8e66-408b-b976-9436a1594344",
+			"type": "text",
+			"content": "<h2 id=\"Stabil-angina-pectoris\"><span>Stabil angina pectoris</span></h2>\n<h3 id=\"Diagnostik\">Diagnostik</h3>\n<p>Stabil angina pectoris &auml;r i f&ouml;rsta hand en klinisk diagnos. F&ouml;r n&auml;rmare beskrivning av symptomen se under &rdquo;Diagnos&rdquo; p&aring; sidan 1. Kvantifiering av symptomen &auml;r viktigt f&ouml;r att f&ouml;lja f&ouml;rloppet &ouml;ver tiden och effekten av insatt behandling. Man kan d&aring; ha nytta av indelning i olika funktionsgrupper enligt kanadensisk klassifikation (CCS-klass).</p>\n<ol>\n<li>Ordin&auml;r anstr&auml;ngning orsakar inga besv&auml;r. Angina utl&ouml;ses av h&auml;ftig och l&auml;ngre anstr&auml;ngning.</li>\n<li>L&auml;tt s&auml;nkt fysisk arbetsf&ouml;rm&aring;ga. Angina vid snabbare takt, trappor eller normal takt efter m&aring;ltider eller vid kall v&auml;derlek eller emotionell stress.</li>\n<li>Markant s&auml;nkt fysisk arbetsf&ouml;rm&aring;ga med angina vid l&auml;ttare anstr&auml;ngning.</li>\n<li>Angina vid minsta fysiska aktivitet och &auml;ven i vila.</li>\n</ol>\n<p>Vid utredning av stabil angina pectoris &auml;r fysikalisk unders&ouml;kning och provtagning viktiga som del i utredningen. Exempelvis kan fr&aring;nvaro av fotpulsar vara ett tecken p&aring; ateroskleros &auml;ven i perifera k&auml;rl. Hj&auml;rtauskultation kan avsl&ouml;ja en aortastenos som bakomliggande orsak till de angin&ouml;sa symptomen. Ett l&aring;gt hemoglobinv&auml;rde kan avsl&ouml;ja en anemi som ger symptom liknande angina. TSH/T4 b&ouml;r kontrolleras. Ett vilo-EKG kan vara helt normalt, p&aring;visa arytmier eller visa tecken p&aring; tidigare genomg&aring;ngen hj&auml;rtinfarkt.</p>\n<p>&nbsp;</p>\n<p>F&ouml;rstahandsutredning vid den kliniska diagnosen stabil angina pectoris &auml;r arbetsprov &auml;ven om man ska vara medveten om att det har l&aring;g sensitivtet och specificitet. Detta utf&ouml;rs i de flesta fall som ergometercykling. Om patienten av n&aring;gon anledning inte kan cykla &auml;r armarbetsprov ett alternativ. Arbetsprovet ger ytterligare underlag f&ouml;r diagnosen stabil angina pectoris och en i de flesta fall bakomliggande koronarinsufficiens. Vid st&auml;llningstagande till remiss till arbetsprov &auml;r det v&auml;sentligt att g&ouml;ra en bed&ouml;mning av pre-test sannolikheten f&ouml;r koronarsjukdom. En man i 65-&aring;rs&aring;ldern, med typisk angin&ouml;s sm&auml;rta, &auml;r r&ouml;kare och med &auml;rftlighet f&ouml;r kardiovaskul&auml;r sjukdom har mycket st&ouml;rre pre-test sannolikhet f&ouml;r koronarsjukdom j&auml;mf&ouml;rt med en kvinna i 40-&aring;rs&aring;ldern med atypisk br&ouml;stsm&auml;rta och utan specifika riskfaktorer. Ett arbetsprov p&aring; den 65-&aring;rige mannen &auml;r i princip on&ouml;digt f&ouml;r att st&auml;lla diagnosen koronarinsufficiens men ger en uppfattning om allvarlighetsgraden och eventuellt behov av ytterligare utredning. Ett arbetsprov p&aring; den 40-&aring;riga kvinnan &auml;r beh&auml;ftat med l&aring;g specificitet och risken f&ouml;r ett falskt positivt eller sv&aring;rbed&ouml;mt utfall &auml;r stor varf&ouml;r man oftast b&ouml;r avst&aring; fr&aring;n remittering till arbetsprov i detta fall.</p>\n<p>&nbsp;</p>\n<p>Vid tvetydigt resultat av arbetsprovet kan man g&aring; vidare med myocardscintigrafi, vilket ocks&aring; kan vara indicerat utan f&ouml;reg&aring;ende arbetsprov vid f&ouml;r&auml;ndringar p&aring; vilo-EKG, exempelvis ST-s&auml;nkningar eller v&auml;nstergrenblock som kraftigt f&ouml;rsv&aring;rar eller om&ouml;jligg&ouml;r tolkning av arbets-EKG. Myocardscintigrafi utf&ouml;rs i vila och under arbete. En radioaktiv perfusionsmark&ouml;r som tas upp i myocardiet ges intraven&ouml;st och hj&auml;rtat avbildas i olika plan med en gammakamera. Perfusionen av olika delar av hj&auml;rtmuskeln kan v&auml;rderas utifr&aring;n bilderna och j&auml;mf&ouml;ras under vila och arbete. Om patienten av n&aring;gon anledning inte kan utf&ouml;ra ett cykelarbetsprov kan unders&ouml;kningen g&ouml;ras med hj&auml;lp av farmakologisk provokation av hj&auml;rtat, exempelvis med adenosin. Man m&aring;ste ibland g&aring; vidare med en mer detaljerad unders&ouml;kning av kransk&auml;rlen med kransk&auml;rlsr&ouml;ntgen. Ett mindre invasivt s&auml;tt att kartl&auml;gga kransk&auml;rlen &auml;r med angiografi utf&ouml;rd med hj&auml;lp av datortomografi (CT-angio), som vid negativt utfall talar f&ouml;r en god prognos d&aring; unders&ouml;kningen har ett h&ouml;gt negativt prediktivt v&auml;rde.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "18239088-b466-4cf5-87c6-548a6dc8a36c",
+			"name": "18239088-b466-4cf5-87c6-548a6dc8a36c",
+			"type": "text",
+			"content": "<h3 id=\"Medicinsk-behandling-av-stabil-angina-pectoris\">Medicinsk behandling av stabil angina pectoris</h3>\n<p>Genomg&aring;ng och v&auml;l avv&auml;gd r&aring;dgivning om livsstilsfaktorer, som r&ouml;kning, matvanor och fysisk aktivitet, &auml;r grundl&auml;ggande vid handl&auml;ggning av patienten med stabil angina pectoris. Patienten har en manifest kransk&auml;rlssjukdom och b&ouml;r d&aring; klassas i gruppen med mycket h&ouml;g kardiovaskul&auml;r risk.</p>\n<p>Behandlingen med l&auml;kemedel har tv&aring; olika syften; att minska symptomen p&aring; angina samt att minska risken f&ouml;r akuta koronara h&auml;ndelser och progress av ateroskleros i koronark&auml;rlen. I Tabell 1 (Rekomenderade farmaka vid behandling av stabil angina pectoris) visas en &ouml;versikt &ouml;ver den rekommenderade farmakologiska behandlingen vid stabil angina pectoris.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "19edb842-f7fd-4227-9349-836d62d20f4c",
+			"name": "19edb842-f7fd-4227-9349-836d62d20f4c",
+			"type": "tablewide",
+			"content": {
+				"number": "1",
+				"title": "Rekommenderade farmaka vid behandling av stabil angina pectoris",
+				"id": "",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td colspan=\"2\" width=\"604\">\r\n<p><strong>Antiangin&ouml;s behandling</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"302\">\r\n<p>Anfallskupering</p>\r\n</td>\r\n<td width=\"302\">\r\n<p>Kortverkande nitroglycerin sublingualt, 0,25&ndash;0,5&nbsp;mg/dos som spray eller resoriblett</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"302\">\r\n<p>Anfallsprofylax</p>\r\n</td>\r\n<td width=\"302\">\r\n<p>L&aring;ngverkande nitroglycerin, till exempel isosorbidmononitrat 30&ndash;120&nbsp;mg/dag</p>\r\n<p>Beta-blockerare, till exempel metoprolol 50&ndash;200&nbsp;mg/dag</p>\r\n<p>Kalciumantagonister, till exempel amlodipin eller felodipin 5&ndash;10&nbsp;mg/dag</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\" width=\"604\">\r\n<p><strong>F&ouml;rebyggande av akuta koronara h&auml;ndelser och progress av koronarsjukdom</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"302\">\r\n<p>Antitrombotisk behandling</p>\r\n</td>\r\n<td width=\"302\">\r\n<p>ASA 75&nbsp;mg/dag eller klopidogrel 75&nbsp;mg/dag vid ASA-intolerans</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"302\">\r\n<p>Lipids&auml;nkande</p>\r\n</td>\r\n<td width=\"302\">\r\n<p>Statin, exempelvis simvastatin 40&nbsp;mg eller atorvastatin 40&ndash;80&nbsp;mg/dag</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"302\">\r\n<p>RAAS-blockad</p>\r\n</td>\r\n<td width=\"302\">\r\n<p>ACE-h&auml;mmare; till exempel enalapril 20&nbsp;mg/dag, vid samtidig hypertoni, diabetes eller nedsatt v&auml;nsterkammarfunktion.</p>\r\n<p>ARB, till exempel kandesartan 8&ndash;32 mg/dag vid intolerans mot ACE-h&auml;mmare.</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6fb3af3c-9a89-486c-86f5-381ad2d05a94",
+			"name": "6fb3af3c-9a89-486c-86f5-381ad2d05a94",
+			"type": "text",
+			"content": "<h3 id=\"Antianginos-behandling\">Antiangin&ouml;s behandling</h3>\n<h4 id=\"Kortverkande-nitrater\"><span>Kortverkande nitrater</span></h4>\n<p>Kortverkande nitrater, (nitroglycerin, glycerylnitrat) &auml;r standardbehandling f&ouml;r anfallskupering vid angina pectoris. Preparaten tillf&ouml;rs via munslemhinnan och administreras antingen som resoriblett eller spray. Upptaget &auml;r snabbt och full effekt n&aring;s inom n&aring;gra minuter. Spray ger en n&aring;got snabbare effekt i j&auml;mf&ouml;relse med resoriblett sublingualt eller buckalt. Patienter med angina pectoris b&ouml;r alltid ha ett kortverkande nitropreparat i beredskap. En enkel tumregel &auml;r att vid anginaanfall ta en f&ouml;rsta dos och att upprepa denna vid utebliven effekt inom 5 minuter. Om effekten &auml;ven av den andra dosen uteblir tas en tredje dos och patienten b&ouml;r d&aring; omg&aring;ende ta sig till akutmottagning p&aring; l&auml;mpligt s&auml;tt. Kortverkande nitrater kan &auml;ven anv&auml;ndas som situationsprofylax inf&ouml;r planerade aktiviteter som erfarenhetsm&auml;ssigt brukar utl&ouml;sa br&ouml;stsm&auml;rta. Kortverkande nitropreparat ger, p&aring; grund av den k&auml;rldilaterande effekten, huvudv&auml;rk och blodtrycksfall som vanliga biverkningar.</p>\n<h4 id=\"Langverkande-nitrater\"><span>L&aring;ngverkande nitrater</span></h4>\n<p>L&aring;ngverkande nitrater, till exempel isosorbidmononitrat, har en v&auml;l etablerad plats som anfallsf&ouml;rebyggande behandling vid stabil angina pectoris. Effekten medieras av kv&auml;veoxid (NO) och baseras framf&ouml;r allt p&aring; k&auml;rldilatation p&aring; den ven&ouml;sa sidan vilket medf&ouml;r en minskad pre-load p&aring; hj&auml;rtat. F&ouml;r att undvika nitrattolerans rekommenderas dosering som ger ett nitratfritt intervall p&aring; 8&ndash;10 timmar under dygnet, till exempel isosorbidmononitrat 30&ndash;120 mg givet p&aring; morgonen. Om nattlig angina &auml;r ett problem kan dosen ges p&aring; kv&auml;llen i st&auml;llet.</p>\n<p>&nbsp;</p>\n<p>Kombination med b&aring;de kort- och l&aring;ngverkande nitropreparat och medel mot erektil dysfunktion (sildenafil; tadalafil) ska undvikas p&aring; grund av risken f&ouml;r allvarliga och l&aring;ngvariga blodtrycksfall.</p>\n<h4 id=\"Betablockerare\"><span>Betablockerare</span></h4>\n<p>Betablockerare har en god anginaf&ouml;rebyggande effekt genom att minska energikraven fr&aring;n hj&auml;rtmuskeln genom d&auml;mpad hj&auml;rtfrekvensen och motverkan av den kontraktilitets&ouml;kning som sympatikusp&aring;slag leder till. I Sverige anv&auml;nds framf&ouml;rallt beta-1-selektiva preparat (metoprolol, atenolol, bisoprolol) med liten effekt p&aring; beta-2-receptorer, vilket &auml;r en f&ouml;rdel vid behandling av patienter med exempelvis kronisk obstruktiv lungsjukdom (KOL). (F&ouml;r n&auml;rmare beskrivning av betablockerare se annan plats i denna bok)</p>\n<h4 id=\"Kalciumantagonister\"><span>Kalciumantagonister</span></h4>\n<p>Kalciumantagonister har en god antiangin&ouml;s effekt framf&ouml;r genom k&auml;rldilatation p&aring; art&auml;rsidan. De s&aring; kallade dihydropyridinerna (amlodipin, felodipin) g&aring;r &auml;ven bra att kombinera med beta-blockerare, en kombination som i anpassade doser kan vara av v&auml;rde. Vid behandling med &ouml;vriga kalciumanatgonister (verapamil, diltiazem) b&ouml;r kombination med betablockerare undvikas eller endast ges i samr&aring;d med specialist i kardiologi p&aring; grund av risk f&ouml;r bradykardi, AV-blockering och blodtrycksfall. (F&ouml;r n&auml;rmare beskrivning av kalciumantagonister se annan plats i denna bok).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d5cf1e68-9ef1-4fb8-8fbd-094bd2b97c3c",
+			"name": "d5cf1e68-9ef1-4fb8-8fbd-094bd2b97c3c",
+			"type": "text",
+			"content": "<h2 id=\"Akuta-koronara-syndrom\"><strong>Akuta koronara syndrom</strong></h2>\n<h3 id=\"Klassificering-\"><strong>Klassificering </strong></h3>\n<p>Akuta koronara syndrom (AKS) utg&ouml;rs huvudsakligen av ST-h&ouml;jningsinfarkt och icke-ST-h&ouml;jningsinfarkt (NSTEMI). Termen instabil angina &auml;r en anamnestisk diagnos av nytillkommen eller f&ouml;rv&auml;rrad angina. Diagnosen st&ouml;ds av nytillkomna ST-s&auml;nkningar eller t-negativiseringar p&aring; EKG. Vid instabil angina kan 80&nbsp;% av ischemitillf&auml;llena vara symptoml&ouml;sa.</p>\n<p><br>I takt med att troponin-analyserna har blivit allt mer k&auml;nsliga s&aring; diagnosticeras AKS alltmer s&auml;llan som instabil angina utan som NSTEMI. F&ouml;r diagnosen NSTEMI kr&auml;vs symptom f&ouml;renliga med kransk&auml;rlssjukdom och f&ouml;rh&ouml;jda troponinv&auml;rden med dynamik. Hj&auml;rtinfarkter klassificeras som fem olika typer (Tabell 2 Klassificering av hj&auml;rtinfarkt). Typ 1 &auml;r den klassiska hj&auml;rtinfarkten, oftast orsakad av ett rupturerat trombotiserat plack. Typ 2 orsakas av andra ischemitillst&aring;nd, till exempel anemi eller takykardi. Behandlingen av typ 2 riktar sig mot bakgrundsorsaken (korrigera anemin, behandla takykardin) och ska inte i f&ouml;rsta hand ha dubbel trombocyth&auml;mning.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "428dde01-44d5-4223-8f02-012c87ef8359",
+			"name": "428dde01-44d5-4223-8f02-012c87ef8359",
+			"type": "facts",
+			"content": {
+				"number": "4",
+				"title": "<a class=\"crossref\" id=\"98670\"></a>Klassificering av hjärtinfarkter  enligt nya definitioner ",
+				"text": "<table><tbody><tr><td><p><span style=\"font-weight: bold;\">Typ 1. </span>Spontan hjärtinfarkt orsakad av en primär händelse som plackruptur. Troponinökning till över den 99:e percentilen.</p><p><span style=\"font-weight: bold;\">Typ 2. </span>Hjärtinfarkt orsakad av ett ökat behov av <br>eller minskad tillgång på syrgas. Detta kan t&nbsp;ex vara koronarspasm, anemi, hypertoni, hypotoni och arytmi. Troponinökning till över den 99:e <br>percentilen.</p><p><span style=\"font-weight: bold;\">Typ 3. </span><span style=\"font-weight: bold;\"></span><span class=\"tab\"></span>Plötslig hjärtdöd. Ofta med föregående symtom indikerande kardiell ischemi, åtföljt av ny ST-höjning, nytt grenblock, detektion av koronar trombos på angiografi där döden inträffar innan hjärtskademarkörerna kan kontrolleras, liksom vid obduktion, eller vid en tidpunkt då hjärtskademar&shy;körerna inte hunnit stiga.</p><p><span style=\"font-weight: bold;\">T</span><span style=\"font-weight: bold;\">yp 4a. </span>Hjärtinfarkt i samband med PCI. Troponin&shy;ökning till över 3 gånger den 99:e percentilen.<sup>a</sup></p><p><span style=\"font-weight: bold;\">Typ 4b. </span><span class=\"tab\"></span>Hjärtinfarkt i samband med stenttrombos som är dokumenterad vid angiografi eller obduktion.</p><p><span style=\"font-weight: bold;\">Typ 5. </span>Hjärtinfarkt i samband med koronar bypass-kirurgi. Troponinökning till över 5 gånger den 99:e percentilen.<sup>a<br></sup></p><p><span class=\"tabstop\"></span>a. Förutsatt att utgångsvärdet för troponin var normalt</p><p><span class=\"tabstop\"></span></p></td></tr></tbody></table>",
+				"id": "e1_42"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "67ccdb51-6535-4a10-9da4-24c0acae9ef3",
+			"name": "67ccdb51-6535-4a10-9da4-24c0acae9ef3",
+			"type": "text",
+			"content": "<p>I den kliniska vardagen använder vi oss ofta av nyare definitioner av hjärtinfarkt, som tar fasta på den patofysiologiska uppkomsten till infarkten (8). European Society of Cardiology (ESC), American College of Cardiology (ACC), American Heart Association (AHA) och World Heart Federation (WHF) publicerade 2007 ett gemensamt expertdokument i vilket dessa nya definitioner beskrivs (9). Förhoppningsvis kan de nya definitionerna hjälpa oss att bättre skräddarsy behandlingen till varje enskild patient, såväl i akutskedet som sekundärprofylaktiskt, se Faktaruta 4 (10). Sannolikt kommer man med tiden att kunna klassificera i enlighet med de nya definitionerna, såväl i ICD-10 som i Riks-HIA.</p><span> </span><h3 id=\"e1_43\"><a class=\"crossref\" id=\"75558\"></a>Symtom </h3>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "401dfcd5-6cb0-4453-b61e-712c60d43eff",
+			"name": "401dfcd5-6cb0-4453-b61e-712c60d43eff",
+			"type": "facts",
+			"content": {
+				"number": "5",
+				"title": "<a class=\"index\" id=\"1061800\" data-text=\"akuta koronara syndrom:symtom\"></a><a class=\"crossref\" id=\"29663\"></a>Symtom som bör föranleda miss&shy;tanke om akut koronart syndrom",
+				"text": "<table><tbody><tr><td><ul><li>Se instabil angina, avsnittet Symtom <a href=\"#75558\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a><span class=\"updated\" title=\"Texten &#xE4;r uppdaterad\"></span></li></ul><ul><li>Bröstsmärtor eller tryck över bröstet <br>&gt;&nbsp;15 minuter</li></ul><ul><li>Akut allvarlig allmänpåverkan</li></ul><ul><li>Chock utan misstanke om blödning, hypo&shy;volemi, anafylaxi, sepsis eller intoxikation</li></ul><ul><li>Akut hjärtsvikt med eller utan lungödem, akuta andningsbesvär</li></ul><ul><li>Arytmi: ventrikelflimmer/-takykardi, akut AV-block II eller III</li></ul><ul><li>Akut påkomna symtom som svettning, ångest, illamående eller uttalad trötthet/orkeslöshet</li></ul></td></tr></tbody></table>",
+				"id": "e1_45"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4d287178-020b-4bc1-a68d-510c1da9b276",
+			"name": "4d287178-020b-4bc1-a68d-510c1da9b276",
+			"type": "text",
+			"content": "<p>Det som skiljer ett akut koronart syndrom från stabil kranskärlssjukdom är alltså att det aterosklerotiska placket rupturerat och givit upphov till en trombotisk komplikation, vilken är orsaken till behovet av en snabb handläggning vid AKS. Symtomen vid de båda tillstånden behöver annars inte vara så divergerande. </p><p class=\"indent\">Symtomen vid AKS är i de flesta fall varierande grad av bröstsmärta eller akut påkommen dyspné (Faktaruta 5 <a href=\"#29663\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>). Smärtan kan upplevas som tryckande/kramande eller brännande till sin karaktär. Smärtutstrålning upp mot halsen liksom ut i armarna är vanligt. Smärtor under höger arcus förekommer ofta, särskilt vid inferiora hjärtinfarkter, något som ibland kan förväxlas med gallsmärta. Även smärtutstrålning till ryggen är vanligt. Symtomen vid AKS skiljer sig annars från de vid stabil angina framför allt genom att de förra uppträder i vila eller vid endast lätt ansträngning. Vegetativa symtom som illamående, svettning och oro/ångest är vanliga vid AKS.</p><span> </span><p class=\"indent\">Vid akut påkomna symtom är det extra viktigt att betänka att olika människor har en benägenhet att uppvisa olika symtom. Svår och hastigt påkommen andfåddhet eller orkeslöshet/trötthet kan vara symtom på AKS, framför allt hos äldre patienter. Klassiska symtom (typiska bröstsmärtor) uppvisas mindre ofta hos kvinnor med AKS, och diabetiker med (ibland tidigare okänd) neuropati kan ha AKS utan att känna smärta alls, men i stället ha andra, ofta vegetativa, symtom. Ischemin kan även vid akut sjukdom vara tyst, dvs asymtomatisk, och en inte oansenlig andel av hjärtinfarkterna förefaller förflyta helt utan att patienten upplever symtom som är så allvarliga att man kontaktar sjukvården över huvud taget.</p><p class=\"indent\">Smärta som beskrivs som stickande eller huggande, med punktformig lokalisering är för det mesta inte orsakad av ischemisk hjärtsjukdom. Smärta som uppkommer vid vissa kroppsrörelser eller är andningskorrelerad och som utlöses vid palpation av bröstkorgen talar inte heller för kardiell genes, framför allt inte vid avsaknad av riskfaktorer för kranskärlssjukdom.</p><h3 id=\"e1_46\">Diagnos </h3>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "950a242b-cfc2-4fc7-a8ab-9d380742ed80",
+			"name": "950a242b-cfc2-4fc7-a8ab-9d380742ed80",
+			"type": "facts",
+			"content": {
+				"number": "6",
+				"title": "<a class=\"index\" id=\"1061781\" data-text=\"akuta koronara syndrom:differentialdiagnoser\"></a><a class=\"crossref\" id=\"79796\"></a>AKS – differentialdiagnoser",
+				"text": "<table><tbody><tr><td><ul><li>Aortadissektion</li></ul><ul><li>Pneumotorax</li></ul><ul><li>Lungemboli</li></ul><ul><li>Perikardit/myokardit</li></ul><ul><li>Pneumoni</li></ul><ul><li>Bukåkomma</li></ul><ul><li>Esofagussjukdom (distal esofagusdysfunktion, dysmotorik, esofagit)</li></ul><ul><li>Ulcus ventriculi/duodeni, gastrit</li></ul><ul><li>Gallvägssjukdom</li></ul><ul><li>Pleurit</li></ul><ul><li>Panikångest</li></ul></td></tr></tbody></table>",
+				"id": "e1_48"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "589e3c7d-0dbd-4c82-8995-e56c40c5fb4c",
+			"name": "589e3c7d-0dbd-4c82-8995-e56c40c5fb4c",
+			"type": "text",
+			"content": "<p>Det är ofta svårt att direkt utesluta AKS i öppenvården och undersökning på sjukhus är i många fall indicerad. Det är inte alldeles ovanligt att patienter med STEMI söker akut i primärvården, särskilt i områden med stora avstånd till ett sjukhus. Se också Faktaruta 6.</p><span> </span><p class=\"indent\">Anamnesen är som nämnts tidigare det viktigaste instrumentet för att ställa rätt diagnos. Den innefattar en noggrann smärtanamnes samt insamlandet av uppgifter som stärker eller försvagar misstanken om AKS, men som också belyser prognostiska faktorer vilka kan ha betydelse för hur aggressiv man behöver vara i behandlingen. För sämre prognos talar exempelvis diabetes, genomgången CABG, ålder &gt;&nbsp;70 år, tidigare hjärtinfarkt och njursvikt. </p><p class=\"indent\">Status omfattar självfallet en bedömning av allmäntillståndet, förekomst av takypné, cyanos, perifera ödem, hjärt- och lungauskultation, blodtryck osv. Nytillkommet förmaksflimmer, tecken på lungstas (lösa rassel, lungödem), lågt blodtryck (kardiogen chock) och uttalad allmänpåverkan är prognostiskt ogynnsamma tecken.</p><p class=\"indent\">EKG-utseendet, framför allt förekomst eller avsaknad av ST-höjning (eller grenblock), är en vattendelare i ställningstagandet till vilken behandling patienten ska få. Man bör således tillse att alla patienter med bröstsmärta eller andra symtom som inger misstanke om AKS genomgår EKG-undersökning så fort som möjligt. Den fortsatta handläggningen beror i de flesta fall på EKG-utseendet.</p><p class=\"indent\">De specifika hjärtskademarkörer som idag används för att upptäcka myokardnekros är <a class=\"index\" id=\"1056632\" data-text=\"troponiner:AKS\"></a>troponiner, oftast subgrupp I eller T. Troponiner är mycket känsliga för myokardskada och kan även vara förhöjda vid andra tillstånd med sönderfall av myokardceller eller vid belastning, exempelvis mekanisk hjärtskada (trauma), lungemboli och vid myokardit. De nyare högsensitiva troponin I- och T-analyserna kan detektera förhöjda nivåer i blodet inom 3 timmar efter ischemidebut, men det bör beaktas att det kan vara svårt att definiera debuten i tid i praktiken. Seriell bestämning av högsensitivt troponin var 3:e timme under 6(–9) timmar efter ankomst används därför i rutinen för att bekräfta eller avfärda en hjärtinfarkt. Eftersom det tar tid innan hjärtskademarkörerna stiger efter att en myokardskada börjat inträda, är det inte medicinskt korrekt att vid EKG-mässigt påvisad STEMI vänta på analys av exempelvis troponin innan behandling sätts in. Troponiner kan vara förhöjda i blodet upp till 10 dagar efter en hjärtinfarkt. </p><p class=\"indent\">Det bör noteras att troponiner utsöndras via njurarna och att nedsatt njurfunktion därför kan resultera i en ackumulation som ger förhöjda troponinnivåer utan att någon aktuell myokardskada föreligger. Även andra tillstånd som rabdomyolys, reumatoid artrit och SLE anses kunna ge förhöjda troponinnivåer utan att hjärtmuskelpåverkan föreligger.</p><h3 id=\"e1_49\"><a class=\"crossref\" id=\"44150\"></a>Behandling</h3><p>Det initiala omhändertagandet och behandlingen av patienter med AKS kan vara avgörande för hur omfattande myokardskadan blir, och dessa rutiner måste därför vara välkända av alla läkare. Behandling på eller utanför sjukhus bör inledas med oxygen på mask eller i näskateter. Alla patienter som inte redan behandlas med acetylsalicylsyra (ASA) ska snarast ha en peroral startdos på 320–500 mg. Om patienten fortfarande har ont efter att ha fått sublingualt nitroglycerin påbörjas smärtbehandling med intravenöst morfinpreparat. Även nitroglycerininfusion kan vara av värde, framför allt vid persisterande smärta, hypertoni och lungödem. </p><p class=\"indent\">Vid ångest kan diazepam eller annan bensodiazepin användas. Bradykardi kan motivera atropin intravenöst. Om hjärtsvikt eller lungödem skulle uppträda ges furosemid intravenöst. Transporten till sjukhus bör ske under kontinuerlig EKG-övervakning och med beredskap för defibrillering. </p><p class=\"indent\">Även antiischemisk behandling kan startas utanför sjukhus om hjärtfrekvens och blodtryck är stabila. Förslagsvis ges då sublingualt nitroglycerin. Akut betablockad riskerar att utlösa hemodynamisk påverkan och kardiogen chock, därav stor försiktighet framför allt vid STEMI. </p><h2 id=\"e1_50\"><a class=\"index\" id=\"1032211\" data-text=\"STEMI;ST-h&#xF6;jningsinfarkt\"></a>STEMI</h2><h3 id=\"e1_51\">Diagnos</h3><p>I de flesta fall beror STEMI på en total ocklusion av ett kranskärl, vilket orsakar ischemi inom en stor bit av myokardiet med uppenbar och snar risk för irreversibel myokardskada, dvs nekros. Omfattningen av myokardskadan beror på flera faktorer, exempelvis vilket kranskärl som är affekterat, förekomst av befintliga kollateraler och inte minst på tiden till att reperfunderande behandling påbörjats. STEMI är följaktligen ett medicinskt akuttillstånd och ska prioriteras mycket högt vid triagering av patienter. </p><p class=\"indent\">EKG-mässigt definieras STEMI av en höjning av ST-sträckan. Man brukar kräva &gt;&nbsp;1 mm ST-höjning i minst 2 extremitetsavledningar, eller &gt;&nbsp;2 mm höjning i minst 2 intill varandra liggande prekordialavledningar. Även djupa ST-sänkningar i avledning V1–V3 kan vara tecken på transmural skada i hjärtats posteriora vägg. Dessa ST-sänkningar är så att säga ”spegelvända” uttryck för repolarisationen posteriort, när de projiceras i avledningarna som man annars brukar betrakta som ”anteriora”. Vid utbredd anteroseptal hjärtinfarkt kan retledningssystemet som förlöper i kammarseptum påverkas till en sådan grad att ett vänstersidigt skänkelblock uppträder. Denna EKG-bild som kraftigt försvårar bedömning av ST-sträckan kan alltså, om nytillkommen, vara ett tecken på utbredd akut myokardskada och bör hanteras som om en ST-höjning förelåg. Mycket utbredd ischemi kan till och med orsaka totalt AV-block. </p><h3 id=\"e1_52\"><a class=\"crossref\" id=\"10899\"></a>Behandling</h3><p>Det som framför allt avgör myokardskadans storlek är tiden till, och effekten av, reperfunderande behandling. En grundprincip vid behandling av ST-höjningsinfarkt är därför att så snabbt och effektivt som möjligt skapa reperfusion. Även vårdcentraler bör vara utrustade för och förberedda på att inleda behandling av patienter med hjärtinfarkt. Eventuellt kan trombolytisk behandling påbörjas redan där eller i ambulans. Reperfunderande behandling utanför sjukhus (prehospital trombolys) kan vara indicerad när avståndet till närmaste sjukhus med tillgång till PCI-kapacitet är långt. Reperfusion kan åstadkommas antingen med trombolys eller primär PCI. Se vidare Terapirekommendationer – AKS-behandling (STEMI och NSTEMI).</p><div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c44353bf-1160-4bd4-be1b-2f19fe647dba",
+			"name": "c44353bf-1160-4bd4-be1b-2f19fe647dba",
+			"type": "therapy",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"index\" id=\"1067556\" data-text=\"akuta koronara syndrom:behandling\"></a><a class=\"crossref\" id=\"36709\"></a>AKS-behandling (STEMI och NSTEMI)",
+				"id": "e1_53",
+				"text": "<table><tbody><tr><td colspan=\"2\"><p><strong>Behandling utanför sjukhus (ambulans och vårdcentral)</strong></p><p><strong><span style=\"font-weight: bold;\"></span></strong></p></td></tr><tr><td colspan=\"2\"><ul><li>Oxygen 3–5 L/minut med grimma/näskateter eller modern s&nbsp;k öppen mask. Med klassisk mask bör flödet vara 5–10 L/minut (försiktighet vid känd KOL).</li></ul><ul><li>Nitroglycerin 0,4–0,5 mg sublingualt</li></ul><ul><li>Morfin 5–10 mg intravenöst. Kan upprepas.</li></ul><ul><li>ASA 320–500 mg peroralt</li></ul><ul><li>Vid STEMI P2Y<sub>12</sub>-hämmare i laddningsdos (för preparat och doser se nedan) i ambulans</li></ul></td></tr><tr><td colspan=\"2\"><p><strong>Behandling på sjukhus</strong></p></td></tr><tr><td colspan=\"2\"><ul><li>Läkemedel enligt ovan om detta inte redan givits prehospitalt. </li></ul><ul><li>P2Y<sub>12</sub>-hämmare: Klopidogrel, laddningsdos 300 mg därefter 75 mg 1 x 1, ticagrelor laddningsdos 180 mg där&shy;efter 90 mg 1 x 2 eller prasugrel laddningsdos 60 mg därefter 10 mg 1 x 1. Laddnings- och underhållsdoserna av P2Y<sub>12</sub>-hämmare gäller både NSTEMI och STEMI. Laddningsdos ges ej om sådan redan givits prehospitalt.</li></ul></td></tr><tr><td colspan=\"2\"><p>NSTEMI</p><ul><li>LMWH, t&nbsp;ex enoxaparin 1 mg/kg kroppsvikt subkutant 1 x 2, dock max 100 mg 1 x 2. Fondaparinux 2,5 mg <br>subkutant 1 x 1. Obs vid nedsatt njurfunktion reduceras LMWH- och fondaparinuxdosen.</li></ul></td></tr><tr><td colspan=\"2\"><p>STEMI</p><ul><li>Direkt-PCI om tillgängligt, annars trombolys</li></ul></td></tr></tbody></table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "115ccacf-1159-4038-bd90-0725edfbbe1f",
+			"name": "115ccacf-1159-4038-bd90-0725edfbbe1f",
+			"type": "text",
+			"content": "<span> </span><h4 id=\"e1_54\"><em><a class=\"index\" id=\"1032212\" data-text=\"trombolys:STEMI\"></a>Trombolys</em></h4><p>Trombolysläkemedel beskrivs närmare i kapitlet Venös tromboembolism och medel mot trombos, avsnittet Läkemedel för trombolys,  <a href=\"/kapitel/blod/venos_tromboembolism_och_medel_mot_trombos.html#70080\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>. Fördelarna med trombolys är dess tillgänglighet och att det går snabbt att starta behandlingen redan i hemmet, på vårdcentralen eller i ambulansen. </p><p class=\"indent\">Nackdelarna är att behandlingen oftare än vid PCI endast leder till partiell reperfusion och att risken för reocklusion är relativt stor. För det mesta kräver trombolysbehandling uppföljning med koronarangiografi (och därpå eventuellt följande intervention med PCI eller CABG) i alla fall. Andra nackdelar är risken för allvarliga blödningskomplikationer och att det finns förhållandevis många kontraindikationer. Intracerebrala blödningar förekommer hos 1–2&#37; av patienterna. Kontraindikationer för trombolys är gastrointestinal eller annan allvarlig inre blödning inom de senaste 2 månaderna, operation eller trauma inom de senaste 10 dagarna, tidigare hjärnblödning eller dåligt kontrollerad hypertoni. </p><p>Vid trombolys är det lämpligt att ge ett preparat ur t-PA-gruppen till patienter med utbredda EKG-förändringar (ST-höjning i flera avledningar), till patienter som inkommer med kort smärtduration (&lt;&nbsp;6 timmar), och till patienter som tidigare behandlats med streptokinas. I samband med t-PA-behandling ges antikoagulerande behandling i form av ofraktionerat eller lågmolekylärt heparin. </p><p class=\"indent\">Trombolysmedlet streptokinas är lämpligt att ge vid mer begränsad utbredning av infarkten, om smärtdurationen överstiger 6 timmar och till patienter med ökad blödningsrisk, exempelvis patienter med hög ålder, hypertoni och tidigare stroke. Observera att streptokinas kan utlösa allergiska reaktioner, och ska därför inte ges till patienter som redan fått det en gång tidigare.</p><h4 id=\"e1_55\"><em><a class=\"crossref\" id=\"73689\"></a>PCI och <a class=\"index\" id=\"1032578\" data-text=\"stent:STEMI\"></a>stentar</em></h4><p>Med primär <a class=\"index\" id=\"1032580\" data-text=\"PCI:STEMI\"></a>PCI åstadkommer man invasivt reperfusion genom ballongvidgning och oftast även stentning av stenoser och/eller ocklusioner i kranskärlen. Studier talar för att det kan löna sig att transportera en patient med STEMI till ett centrum som kan utföra primär PCI även om transporttiden uppgår till ett par timmar (11). Om transporttiden är längre än så, bör trombolys tillgripas. Andra indikationer för primär PCI är kontraindikationer för trombolys samt vid kardiogen chock. </p><p class=\"indent\">Utvecklingen går mot ett alltmer utbrett användande av primär PCI i kombination med tidigt insatt tromboshämmande behandling. För att minska risken för stentocklusion ges så tidigt som möjligt förutom trombocythämning med ASA också trombocythämning med P2Y<sub>12</sub>-hämmare (klopidogrel, ticagrelor eller prasugrel) i enlighet med lokala riktlinjer. Under ingreppet ges antikoagulation oftast i form av ofraktionerat heparin och bivalirudin (specifik trombinhämmare). I samband med STEMI och direkt-PCI kombineras ofraktionerat heparin också på många ställen med ytterligare trombocythämning i form av GP IIb/IIIa-receptorhämmare, t&nbsp;ex <a class=\"index\" id=\"1064229\" data-text=\"eptifibatid\"></a>eptifibatid och <a class=\"index\" id=\"1064230\" data-text=\"abciximab\"></a>abciximab.</p><p class=\"indent\">Bruket av stentar vid PCI har reducerat risken för restenos jämfört med enbart ballongvidgning. Införandet av läkemedelsbärande stentar (drug eluting stent; DES), som utsöndrar läkemedel som minskar tillväxten av glatta muskel- och endotelceller, har ytterligare minskat denna risk för restenosering i stentet. </p><p class=\"indent\">Det rekommenderas idag att behandling med P2Y<sub>12</sub>-receptorhämmare (klopidogrel, ticagrelor eller prasugrel) i tillägg till ”livslång” ASA-behandling pågår i 12&nbsp;månader vid användandet av DES, men att 3–12&nbsp;månaders kombinationsbehandling efter PCI med BMS är tillräckligt efter AKS (12). </p><h3 id=\"e1_56\">Komplikationer</h3><p>Arytmier förekommer ofta i samband med reperfusion. De flesta är intermittenta och går över av sig själva och behöver inte behandlas. Behandlingskrävande är arytmier som ger hemodynamisk påverkan som kammarflimmer, persisterande kammartakykardi, förmaksflimmer samt höggradiga AV-block. Kammarflimmer behandlas i enlighet med programmet för Avancerad Hjärt-Lung-Räddning (A-HLR). För mer information hänvisas till kapitlet Den akut medvetslöse patienten, avsnittet Hjärt-lungräddning <a href=\"/kapitel/akutmedicin/den_akut_medvetslose_patienten.html#67292\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>. Kammararytmier som debuterar sent (dagar) efter hjärtinfarkten är ett speciellt problem och kan motivera behandling med implanterbar defibrillator (implantable cardiac defibrillator; ICD). </p><p class=\"indent\">Hjärtsvikt av olika grad är inte ovanligt redan under akutfasen vid hjärtinfarkt och behandlas då med diuretika, oftast furosemid, intravenöst 20–80 mg. Patienter med kvarstående nedsatt vänsterkammarfunktion (ejektionsfraktion &lt;&nbsp;35&#37;) 3 månader efter infarkten, bör bli föremål för bedömning av behov av ICD profylaktiskt. </p><p class=\"indent\">Högerkammarinfarkt, ofta med högersvikt och hypotension, är ett terapeutiskt problem som behandlas med bl&nbsp;a volymsubstitution. </p><p class=\"indent\">Kardiogen chock är ett mycket allvarligt tillstånd med hög mortalitet trots invasiv behandling med PCI. Ofta kombineras PCI då med mekaniskt vänsterkammarstöd (aortaballongpump; intra-aortic balloon pump; IABP), kalciumsensiteraren levosimendan och positivt inotropa läkemedel som dobutamin och i vissa fall även noradrenalin. Kardiogen chock och svår hjärtsvikt kan förutom av utbredd myokardskada orsakas av ruptur i kammarskiljeväggen eller av en papillarmuskel. Behandlingen av dessa tillstånd kräver akut eller subakut toraxkirurgi.</p><h2 id=\"e1_57\"><a class=\"index\" id=\"1032215\" data-text=\"NSTEMI;icke-ST-h&#xF6;jningsinfarkt\"></a><a class=\"crossref\" id=\"25602\"></a>NSTEMI och instabil <a class=\"index\" id=\"1032216\" data-text=\"angina pectoris, instabil\"></a>angina pectoris</h2><h3 id=\"e1_58\">Diagnos</h3>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c4c35b38-1427-4ec1-81cd-c36a4a558d84",
+			"name": "c4c35b38-1427-4ec1-81cd-c36a4a558d84",
+			"type": "facts",
+			"content": {
+				"number": "7",
+				"title": "<a class=\"crossref\" id=\"64320\"></a>Instabil angina",
+				"text": "<table><tbody><tr><td><ul><li>Nytillkommen, allvarlig, ansträngnings&shy;utlöst angina under de senaste 4 veckorna</li></ul><ul><li>Ökande besvär (mer lättutlösta) av ansträng&shy;ningsutlöst angina under de senaste 4 veckorna</li></ul><ul><li>Angina i vila tillkommen under de senaste 4&nbsp;veckorna</li></ul><ul><li>Angina inom 1 månad efter hjärtinfarkt</li></ul></td></tr></tbody></table>",
+				"id": "e1_60"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7cec7e69-8b8e-4947-be2b-879df08692a5",
+			"name": "7cec7e69-8b8e-4947-be2b-879df08692a5",
+			"type": "text",
+			"content": "<p>Den EKG-mässiga bilden vid NSTEMI kan variera från helt normal till gravt patologisk med ST-sänkningar och/eller T-negativiseringar. ST-sänkning &gt;&nbsp;1 mm i 2 närliggande avledningar hos en patient med symtom som vid AKS talar starkt för NSTEMI eller instabil angina pectoris (Faktaruta 7 <a href=\"#64320\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>), särskilt om EKG är taget under pågående smärta och om ST-sträckans plan lutar nedåt (”negative slope”). Även nytillkommen eller tidigare okänd negativisering av T-våg i flera avledningar kan tala för NSTEMI. En relativt vanlig bild som ofta är förenad med allvarlig kranskärlssjukdom i hjärtats framvägg är djupa, symmetriska, negativa T-vågor i flertalet prekordialavledningar, s&nbsp;k koronara T. Såväl ST-sänkning som T-vågsnegativitet är fynd som kan förekomma vid andra tillstånd och är inte patognomona för NSTEMI eller instabil angina.</p><span> </span><p class=\"indent\">Vid NSTEMI och instabil angina spelar analys av hjärtskademarkörer en större roll än vid STEMI, särskilt vid normalt eller nästan normalt EKG. Vid klinisk AKS-misstanke, patologiskt EKG med eller utan förhöjda hjärtskademarkörer är patienten att betrakta som en högriskpatient som ska övervakas och behandlas inneliggande. En patient med bröstsmärta, utan vare sig EKG-förändringar eller förhöjda hjärtskademarkörer, kan naturligtvis ha ett AKS men är generellt sett att betrakta som en lågriskpatient. Eftersom hjärtskademarkörer (högsensitiva troponinanalyser) stiger till patologiska nivåer först 3 timmar efter cellsönderfall krävs minst 2 negativa prov med 3 timmars intervall för att myokardskada ska kunna uteslutas. </p><p class=\"indent\">Instabil angina pectoris är en klinisk diagnos. Om patienten har en tydligt ”instabil” anamnes, men undersöks i smärtfritt skede, kan vederbörande uppvisa ett fullständigt normalt EKG och hjärtskademarkörerna är naturligtvis normala. Detta understryker än en gång vikten av en noggrann anamnes.</p><h3 id=\"e1_61\">Behandling</h3><p>Den farmakologiska behandlingen skiljer sig initialt inte från den vid STEMI. Oxygen, smärtlindring med morfinpreparat, antiischemisk behandling med betablockerare och nitroglycerinpreparat bör ingå. Vid tidig behandling med betablockerare (första dygnet) måste alltid risken för hemodynamisk påverkan vägas mot den antiischemiska nyttan. Jämfört med STEMI-patienter är dock risken för chock generellt sett lägre hos NSTEMI-patienter. Mot bakgrund av den patofysiologiska processen som beskrivits tidigare används tromboshämmande läkemedel för att hämma trombpåbyggnaden över det rupturerade placket. Den antitrombotiska behandlingen inkluderar ASA i kombination med P2Y<sub>12</sub>-receptorhämmare (klopidogrel, ticagrelor eller prasugrel) samt antikoagulation i form av LMWH eller fondaparinux. Patienterna bör ha kontinuerlig EKG-övervakning. </p><p class=\"indent\">Det är välkänt att tidig utredning med kranskärlsröntgen och vid behov revaskularisering med PCI eller CABG förbättrar prognosen avseende både mortalitet och morbiditet hos högriskindivider med NSTEMI och instabil angina. Till gruppen högriskpatienter hör bl&nbsp;a patienter med bröstsmärta och samtidiga ischemitecken på EKG, med eller utan förhöjning av hjärtskademarkörer. Vid avsaknad av EKG-förändringar avslöjar också förhöjda hjärtskademarkörer en högriskindivid. </p><p class=\"indent\">Även diabetiker, patienter med nedsatt vänsterkammarfunktion och äldre har ökad risk för framtida hjärthändelser. Det ska dock noteras att de sistnämnda grupperna också har högre risk för komplikationer och biverkningar vid kranskärlsingrepp varför värdering av risk/nytta alltid ska göras för varje individ innan eventuell intervention genomförs. </p><p class=\"indent\">Patienter som identifieras som högriskindivider med indikation för invasiv utredning och behandling bör kranskärlsröntgas tidigt, redan under det första vårdtillfället och helst inom 1–2 dygn. </p><p class=\"indent\">Kranskärlsanatomin och patientens övriga sjukdomsbild avgör oftast val av revaskulariseringsmetod. Som generell regel kan sägas att patienter med stenoser i vänster huvudstam eller stenoser i alla tre kranskärlen behandlas med CABG medan övriga patienter behandlas med PCI. Vid nedsatt vänsterkammarfunktion och diabetes mellitus anses CABG vara ett bättre val än PCI. Variationer från denna grundregel förekommer ofta beroende på tillgänglighet till respektive revaskulariseringsmetod och på lokala preferenser. </p><p class=\"indent\">Under hela vårdtiden, eller fram till eventuell revaskularisering, brukar patienten ha ”trippelbehandling” med ASA, P2Y<sub>12</sub>-hämmare och LMWH eller fondaparinux. P2Y<sub>12</sub>-hämmare brukar dock sättas ut minst 5&nbsp;dagar innan CABG för att minska risken för peroperativa blödningskomplikationer.</p><p class=\"indent\">Vid behandling av äldre patienter måste man beakta att dessa ofta har en större benägenhet att utveckla biverkningar av läkemedel än yngre patienter. Försiktighet när det gäller framför allt antikoagulantia är därför på sin plats, och reducerade doser av vissa läkemedel eller förkortad behandlingstid kan också övervägas. Det finns emellertid inte någon allmänt spridd koncensus om vilka avsteg från normala rutiner man ska göra när man hanterar den åldrade infarktpatienten. Här måste man utgå från den kliniska situationen i varje enskilt fall.</p><h2 id=\"e1_62\"><a class=\"index\" id=\"1043300\" data-text=\"akuta koronara syndrom:riskv&#xE4;rdering\"></a>AKS – riskvärdering</h2><p>Under den tid patienten vårdas inneliggande genomförs ofta undersökningar som ger information om patientens totala riskfaktorbelastning och som därmed ger vägledning för fortsatt handläggning. Den kontinuerliga EKG-övervakningen ger information om bl&nbsp;a arytmiförekomst. Ultraljudsundersökning av hjärtat (UKG), ger bl&nbsp;a information om systolisk och diastolisk funktion, om hur klaffapparaten ser ut och om eventuell förekomst av vänsterkammarhypertrofi. </p><p class=\"indent\">AKS drabbar mycket oftare patienter med diabetes eller IGT (impaired glucose tolerance; ett förstadium till typ 2-diabetes), än icke-diabetiker (13). För att finna patienter med IGT, liksom för att finna de med typ 2-diabetes och normalt faste-<span>P-glukos</span>, genomförs ofta peroral <span>glukosbelastning</span> under vårdtiden. </p><p class=\"indent\">Blodfetter kontrolleras oftast fastande morgonen efter ankomst. Kontroller av blodtryck görs regelbundet under vårdtiden. Ibland genomförs arbetsprov dels för att bedöma patientens kondition och symtom, dels i de fall invasiv intervention inte är en självklar åtgärd och förekomst av ansträngningsutlösta ischemitecken kan avgöra val av behandling.</p><h2 id=\"e1_63\">AKS – <a class=\"index\" id=\"1032218\" data-text=\"ischemisk hj&#xE4;rtsjukdom:sekund&#xE4;rprevention\"></a>sekundärprevention</h2><p>Hos alla patienter med kranskärlssjukdom gäller naturligtvis att livsstilsförändringar, innefattande <a class=\"index\" id=\"1065997\" data-text=\"r&#xF6;kstopp:ischemisk hj&#xE4;rtsjukdom\"></a>rökstopp, rätt kost och tillräckligt med motion, ska vara basintervention. Det finns idag på de flesta sjukhus väl uppbyggda kranskärls- och hjärtsviktsmottagningar. Dessa erbjuder ofta såväl hjälp för rökavvänjning som sjukgymnastik, eventuellt kuratorsstöd och kontakt med hjärtrehabiliteringsgrupper och patientorganisationer. Behovet av sekundärprevention bedöms även vid uppföljande läkarbesök. Ofta finns anledning att remittera patienten till dietist, och idag finns också, som tidigare nämnts, möjligheten att förskriva fysisk aktivitet på recept. Det är givetvis också viktigt att behandla andra tillstånd som hypertoni, hyperlipidemi och diabetes mellitus. </p><p class=\"indent\">Det finns idag inte några allmänt vedertagna rutiner för sekundärprevention till äldre patienter. Det är inte givet att man kan extrapolera resultaten från preventionsstudier som inte inkluderat äldre patienter till denna del av populationen. Å andra sidan kan man inte heller påstå att äldre patienter inte skulle kunna ha nytta av sekundärpreventiv behandling. Även här måste man göra en risk-nyttaanalys för varje patient för sig. </p><p class=\"indent\">För en översikt över sekundärprevention efter AKS se Terapirekommendationerna – Sekundärprevention efter AKS <a href=\"#49142\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.</p><div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "40aae44c-d675-49ef-b0d4-8e91ee690d1a",
+			"name": "40aae44c-d675-49ef-b0d4-8e91ee690d1a",
+			"type": "therapy",
+			"content": {
+				"number": "3",
+				"title": "<a class=\"crossref\" id=\"49142\"></a>Sekundärprevention efter AKS",
+				"id": "e1_64",
+				"text": "<table><tbody><tr><td><p>Kortverkande nitroglycerin 0,4–0,5 mg sublingualt</p></td></tr><tr><td><p>Betablockerare, t&nbsp;ex metoprolol 50–200 mg/dag</p></td></tr><tr><td><p>ACE-hämmare (t&nbsp;ex ramipril 5–10 mg/dag), ARB vid intolerans (t&nbsp;ex kandesartan 8–32 mg/dag). </p></td></tr><tr><td><p>Statin, exempelvis simvastatin i dosen (20–)40 mg/dag (se <a href=\"#92787\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a> samt kapitlet Blodfettsrubbningar, avsnittet om statiner <a href=\"/kapitel/hjarta-karl/blodfettsrubbningar.html#87040\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>)</p></td></tr><tr><td><p>ASA 75 mg/dag</p></td></tr><tr><td><p>P2Y<sub>12</sub>-hämmare (klopidogrel 75 mg, 1 tablett 1 gång/dag; ticagrelor 90 mg, 1 tablett 2 gånger/dag eller <br>prasugrel 10 mg, 1 tablett 1 gång/dag i 3–12 månader eller kontinuerligt vid ASA-överkänslighet) </p></td></tr><tr><td><p>Fysisk Aktivitet på Recept</p></td></tr></tbody></table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b1db6eb3-4886-4844-895e-f1aa301a572f",
+			"name": "b1db6eb3-4886-4844-895e-f1aa301a572f",
+			"type": "text",
+			"content": "<span> </span><h3 id=\"e1_65\">Trombocythämmande läkemedel</h3><p>Trombocythämmande behandling med <a class=\"index\" id=\"1061505\" data-text=\"acetylsalicylsyra:sekund&#xE4;rprevention\"></a>ASA 75 mg/dag och, vid intolerans mot ASA, klopidogrel 75 mg/dag är rutinbehandling vid all koronarsjukdom (3). Vid ASA-allergi är kontinuerlig behandling med <a class=\"index\" id=\"1061509\" data-text=\"klopidogrel:sekund&#xE4;rprevention\"></a>klopidogrel indicerat men vid gastrointestinala biverkningar kan ASA ofta tolereras med tillägg av en protonpumpshämmare (PPI). För interaktionen klopidogrel och PPI se kapitlet Sjukdomar i matstrupe, magsäck och tolvfingertarm, avsnittet Protonpumpshämmare <a href=\"/kapitel/mage-tarm/sjukdomar_i_matstrupe_magsack_och_tolvfingertarm.html#91997\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.</p><p class=\"indent\">Kombinationsbehandling med ASA, i ovan angiven dos, och P2Y<sub>12</sub>-receptorhämmare (<a class=\"index\" id=\"1061490\" data-text=\"klopidogrel:sekund&#xE4;rprevention\"></a>klopidogrel 75&nbsp;mg/dag, <a class=\"index\" id=\"1061491\" data-text=\"ticagrelor:sekund&#xE4;rprevention\"></a>ticagrelor 180&nbsp;mg/dag eller <a class=\"index\" id=\"1061492\" data-text=\"prasugrel:sekund&#xE4;rprevention\"></a>prasugrel 10&nbsp;mg/dag) är aktuell för i stort sett alla patienter som vårdats för AKS under 3–12 månader. Vid stentinplantation ses en absolut reduktion av kardiovaskulära händelser på 3&#37; under 1 år vid dubbelbehandling med ASA/klopidogrel jämfört med enbart ASA (3). </p><p class=\"indent\">I Sverige rekommenderas idag kombinationsbehandling med ASA och P2Y<sub>12</sub>-receptorhämmare i 3–12 månader efter inläggning av en metallstent och i 12 månader efter läkemedelsavgivande stent (12). För patienter med AKS som inte behandlas invasivt rekommenderas i de flesta fall dubbelbehandling med ASA och P2Y<sub>12</sub>-receptorhämmare i 3–12 månader. </p><p class=\"indent\"><a class=\"index\" id=\"1052883\" data-text=\"prasugrel:sekund&#xE4;rprevention\"></a>Prasugrel är en nyare P2Y<sub>12</sub>-receptorhämmare. Indikationen är tillägg till ASA-behandling vid PCI och stentbehandling av STEMI eller NSTEMI. Kontraindikationer innefattar bl&nbsp;a ålder &gt;&nbsp;75 år och tidigare genomgången CVI (cerebrovaskulär insult). Prasugrel har i studier visat en fördel gentemot klopidogrel när det gäller att minska kardiovaskulär död, icke-fatal hjärtinfarkt och stroke hos patienter som genomgått PCI med stent i samband med STEMI eller NSTEMI (9,4&#37; mot 11,5&#37;, riskförhållande, HR, 0,812). Den ökning av blödningar som sågs i prasugrelgruppen uppvägdes av minskade kranskärlshändelser vilket gjorde att nettoeffekten fortfarande blev positiv för prasugrel. Det beräknades att 2 allvarliga kranskärlshändelser (hjärtinfarkter) förhindras per 100 behandlade patienter med prasugrel framför klopidogrel till priset av 1 extra allvarlig blödning (14).</p><p class=\"indent\">Ytterligare ett nytt trombocythämmande läkemedel som verkar på P2Y<sub>12</sub>-receptorn är <a class=\"index\" id=\"1065609\" data-text=\"ticagrelor:sekund&#xE4;rprevention\"></a>ticagrelor. Detta preparat har i den dubbelblint randomiserade PLATO-studien reducerat ett kombinerat resultatmått av död, hjärtinfarkt och stroke med 1,9&#37; i absoluta tal efter 12 månader (NNT = 53) för patienter med AKS jämfört med klopidogrel. Frekvensen av större blödningar var samma i båda grupperna (15).</p><p class=\"indent\">Några direkta jämförelser mellan prasugrel och ticagrelor föreligger för närvarande inte och för val av P2Y<sub>12</sub>-hämning hänvisas till lokala behandlingsriktlinjer. </p><h3 id=\"e1_66\"><a class=\"index\" id=\"1047970\" data-text=\"betablockerare:sekund&#xE4;rprevention\"></a>Betablockerare</h3><p>Betablockerare som långtidsbehandling har i flera studier visat en signifikant effekt i form av minskat återinsjuknande och död i hjärtinfarkt och bör därför ges till alla patienter som haft AKS. </p><p class=\"indent\">En metaanalys av långtidsstudier med betablockerare efter hjärtinfarkt påvisade en signifikant effekt på mortalitet. Enligt denna metaanalys behöver 84 patienter behandlas under 1 år för att undvika ett dödsfall (16). De betablockerare som har visat signifikanta effekter på mortalitet som sekundärprofylax efter hjärtinfarkt är metoprolol, propranolol, timolol (tabletterna inte längre registrerade i Sverige) och acebutolol (ej registrerat i Sverige). Det har i metaanalyserna inte framkommit data som tyder på att något preparat har fördelar framför något annat.</p><h3 id=\"e1_67\"><a class=\"index\" id=\"1032223\" data-text=\"ACE-h&#xE4;mmare:sekund&#xE4;rprevention\"></a>ACE-hämmare och ARB</h3><p>ACE-hämmare har i flera stora studier visat sekundärprofylaktiska effekter både efter hjärtinfarkt och hos patienter med generaliserad aterosklerotisk kärlsjukdom. Det är således rimligt att behandla alla patienter med IHD och nedsatt vänsterkammarfunktion med ACE-hämmare. En systematisk genomgång av ett flertal randomiserade studier med olika ACE-hämmare (kaptopril, ramipril, trandolapril och enalapril) visar att ACE-hämmarbehandling minskade mortaliteten från 29,1 till 23,4&#37; (OR 0,74 med konfidensintervallet 0,66–0,83), förekomsten av reinfarkt från 13,2 till 10,8&#37; (OR 0,80 med konfidensintervallet 0,69–0,94) och återinläggning för hjärtsvikt från 15,5 till 11,9&#37; (OR 0,73 med konfidensintervallet 0,63–0,85) (17). Även vissa <a class=\"index\" id=\"1053765\" data-text=\"ARB:sekund&#xE4;rprevention\"></a>angiotensin II-receptorblockerare (ARB) har dokumenterad effekt vid hjärtsvikt efter hjärtinfarkt. </p><p class=\"indent\">Även till patienter med IHD och bevarad vänsterkammarfunktion har behandling med ACE-hämmarna ramipril och perindopril samt med telmisartan (ARB) visat minskad mortalitet och morbiditet. En metaanalys av studier med ACE-hämmare vid kranskärlssjukdom med bevarad vänsterkammarfunktion påvisar en 14&#37; mortalitetsreduktion under 2–5 år (18). Denna metaanalys visar att behandling med ACE-hämmare till patienter med känd kranskärlssjukdom och bevarad vänsterkammarfunktion signifikant minskar mortaliteten (OR 0,86 med konfidensintervallet 0,79–0,95), kardiovaskulär mortalitet (OR 0,81 med konfidensintervallet 0,73–0,90), hjärtinfarkt (OR 0,82 med konfidensintervallet 0,75–0,89) och stroke (OR 0,77 med konfidensintervallet 0,66–0,88).</p><h3 id=\"e1_68\"><a class=\"crossref\" id=\"92787\"></a>Lipidsänkande läkemedel</h3><p>Lipidsänkande behandling bör sättas in till de flesta patienter redan under sjukhusvistelsen. Kontroll av lipidnivåerna bör ske vid återbesök, och justering av behandlingen får göras om målvärdena inte uppnåtts. Behandling med lipidsänkande farmaka bör inledas med statiner som har dokumenterat god effekt på mortalitet och morbiditet vid sekundärprevention. </p><p>En metaanalys av sekundärpreventiva studier med <a class=\"index\" id=\"1058401\" data-text=\"statiner:sekund&#xE4;rprevention\"></a>statiner har visat på en 21&#37; relativ mortalitetsreduktion som kan översättas till en absolut mortalitetsreduktion på 5,7&#37; (19). Detta betyder att 18 patienter måste behandlas i genomsnitt 4,7 år för att spara ett liv. </p><p class=\"indent\">Alla de i Sverige tillgängliga statinerna har i vetenskapliga studier visat effekt på hårda resultatmått avseende hjärt-kärlsjukdom, om än i olika patientpopulationer. Prisbilden har radikalt förändrats under det senaste decenniet då exklusiviteten/patenten för simvastatin, pravastatin och atorvastatin gått ut och kostnaden för generika är ungefär en tiondel av originalläkemedlens kostnad. För närvarande är simvastatin i dosen (20–)40 mg dagligen väl etablerat som förstahandspreparat. För utförlig information om lipidsänkande behandling hänvisas till kapitlet Blodfettsrubbningar, avsnittet Läkemedel <a href=\"/kapitel/hjarta-karl/blodfettsrubbningar.html#41207\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.</p><h3 id=\"e1_69\">Kortverkande <a class=\"index\" id=\"1055510\" data-text=\"nitroglycerin:sekund&#xE4;rprevention\"></a>nitroglycerin</h3><p>Alla patienter som vårdats för AKS bör utrustas med kortverkande nitroglycerin som spray eller resoribletter för anfallskupering. Preparaten kan också användas som kortvarig anfallsprofylax inför situationer som för patienten brukar utlösa kärlkrampsbesvär. Om patienten inte provat läkemedlet tidigare, är det klokt att göra detta innan hemgång (”nitrotest”). Det är ganska vanligt med blodtrycksfall och huvudvärk de första gångerna man tar kortverkande nitroglycerin varför patienten bör instrueras att inta läkemedlet sittande eller liggande den första gången.</p><h2 id=\"e1_70\">Strukturerade mottagningar</h2><p>Det finns ett flertal exempel på strukturerade sjuksköterskebaserade mottagningar, för patienter som drabbats av kranskärlssjukdom, på såväl kardiologmottagningar som inom primärvården. Det finns stöd för att denna typ av mottagningar kan minska risken att drabbas av komplikationer till sjukdomen (20). Flera korta besök hos en sjuksköterska kan delvis ersätta och komplettera kontroller hos läkare. </p><p class=\"indent\">Se Tabell 1 för strukturerat omhändertagande <a href=\"#31067\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.</p><div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "85f9044f-7c5d-4c88-9c11-963e1a278924",
+			"name": "85f9044f-7c5d-4c88-9c11-963e1a278924",
+			"type": "tablewide",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"31067\"></a>Exempel på strukturerat omhändertagande av patienter med <a class=\"index\" id=\"1055304\" data-text=\"ischemisk hj&#xE4;rtsjukdom:omh&#xE4;ndertagande\"></a>ischemisk hjärtsjukdom i primärvården",
+				"id": "e1_71",
+				"text": "<table><tbody><tr><td><div class=\"tableLine\"><strong>Besök</strong></div></td><td><div class=\"tableLine\"><strong>Åtgärd</strong></div></td><td><div class=\"tableLine\"><strong>Innehåll</strong></div></td><td><div class=\"tableLine\"><strong>Effekt</strong></div></td></tr><tr><td><div class=\"tableLine\">1</div></td><td><div class=\"tableLine\">Symtom-</div><div class=\"tableLine\">skattning</div></td><td><div class=\"tableLine\">Patienten skattar bröstsmärta, <br></div><div class=\"tableLine\">andfåddhet och bensvullnad. </div><div class=\"tableLine\">Standardiserat formulär för att kunna </div><div class=\"tableLine\">följa förlopp.</div></td><td><div class=\"tableLine\">Tidig upptäckt av nytillkomna eller </div><div class=\"tableLine\">ökande besvär. Rapporteras till </div><div class=\"tableLine\">behandlande läkare vid avvikelser.</div></td></tr><tr><td><div class=\"tableLine\">2</div></td><td><div class=\"tableLine\">Farmakolo-</div><div class=\"tableLine\">gisk genom-</div><div class=\"tableLine\">gång</div></td><td><div class=\"tableLine\">Enkel muntlig och skriftlig information </div><div class=\"tableLine\">om hur ordinerade läkemedel <br></div><div class=\"tableLine\">fungerar, när de ska tas och eventuella </div><div class=\"tableLine\">biverkningar.</div></td><td><div class=\"tableLine\">Förbättrad kunskap om de läkemedel </div><div class=\"tableLine\">patienten tar ger bättre compliance. </div><div class=\"tableLine\">Stämma av ordinationer i förhållande </div><div class=\"tableLine\">till aktuella vårdprogram.</div></td></tr><tr><td><div class=\"tableLine\">3</div></td><td><div class=\"tableLine\">Riskfaktor-</div><div class=\"tableLine\">genomgång</div></td><td><div class=\"tableLine\">Kontroll av blodprover, blodtryck och </div><div class=\"tableLine\">livsstilsfaktorer. Motiverande samtal.</div></td><td><div class=\"tableLine\">Förbättrad kontroll av biokemiska risk-</div><div class=\"tableLine\">faktorer och argument för att för-</div><div class=\"tableLine\">bättra levnadsvanorna.</div></td></tr><tr><td><div class=\"tableLine\">4</div></td><td><div class=\"tableLine\">Psykosocial </div><div class=\"tableLine\">genomgång</div></td><td><div class=\"tableLine\">Samtal kring patientens upplevelser, </div><div class=\"tableLine\">kan kompletteras med depressions- </div><div class=\"tableLine\">och ångestskalor.</div></td><td><div class=\"tableLine\">Tidig upptäckt av psykologiska </div><div class=\"tableLine\">reaktioner på sjukdomen och möjlig-</div><div class=\"tableLine\">het till tidig intervention.</div></td></tr></tbody></table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fce95026-fe15-4a9e-bb5a-1088c9abd369",
+			"name": "fce95026-fe15-4a9e-bb5a-1088c9abd369",
+			"type": "text",
+			"content": "<span> </span><h2 class=\"referenceHeader\" id=\"e1_72\">Referenser</h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "71145599-04dd-4c97-b0f4-5e92c2534b05",
+			"name": "71145599-04dd-4c97-b0f4-5e92c2534b05",
+			"type": "references",
+			"content": "<ol class=\"references\"><li id=\"reference_1\"> INTERHEART study investigators. Effect of potentially modifiable risk factors associated with myocardial infarction in 52 countries (the INTERHEART study): case-control study.<br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/15364185?ordinalpos=5&amp;itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum\" target=\"_blank\" class=\"linkOut\">Lancet. 2004;364:937–52.</a> </li>\n<li id=\"reference_2\">Norhammar A, Tenerz A, Nilsson G, Hamsten A,  Efendíc S, Rydén L, Malmberg K. Glucose metabolism in patients with acute myocardial infarction and no previous diagnosis of diabetes mellitus: a prospective study. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=tenerz+a+2002+myocardial+diabetes\" target=\"_blank\" class=\"linkOut\">Lancet. 2002;359:2140–4.</a> </li>\n<li id=\"reference_3\"> Komplettering av Nationella riktlinjer för hjärtsjukvård 2008 och strokesjukvård 2009 – stöd för styrning och ledning. Slutlig version. Socialstyrelsen 2011. Artikelnummer: 2011-12-21. ISBN&nbsp;9789186885861. <a href=\"http://www.socialstyrelsen.se/publikationer2011/2011-12-21\" target=\"_blank\" class=\"linkOut\">www.socialstyrelsen.se</a> </li>\n<li id=\"reference_4\">Perk J, De Backer G, Gohlke H, Graham I, Reiner  Z, Verschuren WM, et al. European Guidelines on cardiovascular disease prevention in clinical practice (version 2012): The Fifth Joint Task Force of the European Society of Cardiology and Other Societies on Cardiovascular Disease Prevention in Clinical Practice (constituted by representatives of nine societies and by invited experts). <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22698795\" target=\"_blank\" class=\"linkOut\">Atherosclerosis. 2012;223:1–68.</a> </li>\n<li id=\"reference_5\">Perk J, De Backer G, Gohlke H, Graham I, Reiner  Z, Verschuren M, et al. European Guidelines on cardiovascular disease prevention in clinical practice (version 2012). The Fifth Joint Task Force of the European Society of Cardiology and Other Societies on Cardiovascular Disease Prevention in Clinical Practice (constituted by representatives of nine societies and by invited experts).<br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22555213\" target=\"_blank\" class=\"linkOut\">Eur Heart J. 2012;33:1635–701.</a>  </li>\n<li id=\"reference_6\"> Anti Trombotic Trialists\\q Collaboration. Collaborative meta-analysis of randomised trials of antiplatelet therapy for prevention of death, myocardial infarction, and stroke in high risk patients. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/11786451?ordinalpos=23&amp;itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum\" target=\"_blank\" class=\"linkOut\">BMJ. 2002;324:71–86.</a> </li>\n<li id=\"reference_7\"> CAPRIE Steering Committee. A randomised, blinded, trial of <a href=\"http://www.lakemedelsboken.se/atc/B01AC04\" data-atcid=\"B01AC04\" data-atctitles=\"Blod_och_blodbildande_organ--Antikoagulantia--Antikoagulantia--Trombocytaggregationsh&#xE4;mmande_medel,_exkl._heparin--Klopidogrel\" class=\"lb inlineGenerica text\">clopidogrel</a> versus aspirin in patients at risk of ischaemic events (CAPRIE). CAPRIE Steering Committee. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/8918275\" target=\"_blank\" class=\"linkOut\">Lancet. 1996;348:1329–39.</a> </li>\n<li id=\"reference_8\">Agewall S. Nya riktlinjer definierar fem olika <br> typer av hjärtinfarkt.<br><a href=\"http://ltarkiv.lakartidningen.se/2008/temp/pda34916.pdf\" target=\"_blank\" class=\"linkOut\">Läkartidningen. 2008;16:1192–3.</a> </li>\n<li id=\"reference_9\">Thygesen K, Alpert JS, White HD. Joint ESC/ACCF/ AHA/WHF Task Force for the Redefinition of Myocardial Infarction. Universal definition of myocardial infarction.<br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/17951284?ordinalpos=5&amp;itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum\" target=\"_blank\" class=\"linkOut\">Circulation. 2007;116:2634–53.</a> </li>\n<li id=\"reference_10\">Qaseem A, Fihn SD, Williams S, Dallas P, Owens  DK, Shekelle P; Clinical Guidelines Committee of the American College of Physicians. Diagnosis of stable ischemic heart disease: summary of a clinical practice guideline from the American College of Physicians/American College of Cardiology Foundation/American Heart Association/American Association for Thoracic Surgery/Preventive Cardiovascular Nurses Association/Society of Thoracic Surgeons. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23165664\" target=\"_blank\" class=\"linkOut\">Ann Intern Med. 2012;157:729–34.</a> </li>\n<li id=\"reference_11\">Busk M, Maeng M, Rasmussen K, Kelbaek H,  Thayssen P, Abildgaard U, et al. The Danish multicentre randomized study of fibrinolytic therapy vs. primary angioplasty in acute myocardial infarction (the DANAMI-2 trial): outcome after <br>3 years follow-up. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/17956874\" target=\"_blank\" class=\"linkOut\">Eur Heart J. 2008;29:1259–66.</a> </li>\n<li id=\"reference_12\">ESC guidelines för STEMI respektive NSTEMI.  <a href=\"http://www.escardio.org/guidelines-surveys/esc-guidelines/Pages/GuidelinesList.aspx\" target=\"_blank\" class=\"linkOut\">www.escardio.org</a> </li>\n<li id=\"reference_13\">Hage C, Lundman P, Rydén L, Mellbin L. Fasting  glucose, HbA1c, or oral glucose tolerance testing for the detection of glucose abnormalities in patients with acute coronary syndromes.<br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22456695\" target=\"_blank\" class=\"linkOut\">Eur J Prev Cardiol. 2013;20:549–54.</a>  </li>\n<li id=\"reference_14\"> Montalescot G, Wiviott SD, Braunwald E, Murphy  SA, Gibson CM, McCabe CH, et al. <a href=\"http://www.lakemedelsboken.se/atc/B01AC22\" data-atcid=\"B01AC22\" data-atctitles=\"Blod_och_blodbildande_organ--Antikoagulantia--Antikoagulantia--Trombocytaggregationsh&#xE4;mmande_medel,_exkl._heparin--Prasugrel\" class=\"lb inlineGenerica text\">Prasugrel</a> compared with <a href=\"http://www.lakemedelsboken.se/atc/B01AC04\" data-atcid=\"B01AC04\" data-atctitles=\"Blod_och_blodbildande_organ--Antikoagulantia--Antikoagulantia--Trombocytaggregationsh&#xE4;mmande_medel,_exkl._heparin--Klopidogrel\" class=\"lb inlineGenerica text\">clopidogrel</a> in patients undergoing percutaneous coronary intervention for ST-elevation myocardial infarction (TRITON-TIMI 38): double-blind, randomised controlled trial. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/19249633\" target=\"_blank\" class=\"linkOut\">Lancet. 2009;373:723–31.</a> </li>\n<li id=\"reference_15\"> Wallentin L, Becker RC, Budaj A, Cannon CP, Emanuelsson H, Held C, et al. <a href=\"http://www.lakemedelsboken.se/atc/B01AC24\" data-atcid=\"B01AC24\" data-atctitles=\"Blod_och_blodbildande_organ--Antikoagulantia--Antikoagulantia--Trombocytaggregationsh&#xE4;mmande_medel,_exkl._heparin--Tikagrelor\" class=\"lb inlineGenerica text\">Ticagrelor</a> versus <a href=\"http://www.lakemedelsboken.se/atc/B01AC04\" data-atcid=\"B01AC04\" data-atctitles=\"Blod_och_blodbildande_organ--Antikoagulantia--Antikoagulantia--Trombocytaggregationsh&#xE4;mmande_medel,_exkl._heparin--Klopidogrel\" class=\"lb inlineGenerica text\">clopidogrel</a> in patients with acute coronary syndromes. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/19717846\" target=\"_blank\" class=\"linkOut\">N Engl J Med. 2009;361:1045–57.</a> </li>\n<li id=\"reference_16\">Freemantle N, Cleland J, Young P, Mason J, et al.  Beta blockade after myocardial infarction: systematic review and meta regression analysis.<br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/10381708?ordinalpos=3&amp;itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum\" target=\"_blank\" class=\"linkOut\">BMJ. 1999;318:1730–7.</a> </li>\n<li id=\"reference_17\">Flather MD, Yusuf S, Køber L, Pfeffer M, Hall A,  Murray G, et al. Long-term ACE-inhibitor therapy in patients with heart failure or left-ventricular dysfunction: a systematic overview of data from individual patients. ACE-Inhibitor Myocardial Infarction Collaborative Group. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/10821360\" target=\"_blank\" class=\"linkOut\">Lancet. 2000;355:1575–81.</a> </li>\n<li id=\"reference_18\"> Danchin N, Cucherat M, Thulliez C, et al. Angiotensin-converting enzyme inhibitors in patients with coronary artery disease and absence of heart failure or left ventricular systolic dysfunction. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/16606817?ordinalpos=4&amp;itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum\" target=\"_blank\" class=\"linkOut\">Arch Intern Med. 2006;166:787–796.</a> </li>\n<li id=\"reference_19\">Baigent C, Keech A, Kearney PM, Blackwell L,  Buck G, Pollicino C, et al. Cholesterol Treatment Trialists\\q (CTT) Collaborators. Efficacy and safety of cholesterol-lowering treatment: prospective meta-analysis of data from 90.056 participants in 14 randomised trials of statins.<br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/16214597?ordinalpos=11&amp;itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum\" target=\"_blank\" class=\"linkOut\">Lancet. 2005;366:1267–78.</a> </li>\n<li id=\"reference_20\">Campbell NC. Secondary prevention clinics:  improving quality of life and outcome.<br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/15145910\" target=\"_blank\" class=\"linkOut\">Heart. 2004;90 Suppl 4:iv29–32; discussion </a> iv39–40.</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d8854e1c-d377-4729-8dea-d0fedd0cfdd3",
+			"name": "d8854e1c-d377-4729-8dea-d0fedd0cfdd3",
+			"type": "text",
+			"content": "<h5 id=\"e1_73\">För vidare läsning:</h5>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "067c85b8-e1aa-4df5-bad5-1c2f0414ff4c",
+			"name": "067c85b8-e1aa-4df5-bad5-1c2f0414ff4c",
+			"type": "references",
+			"content": "<ol class=\"references\"><li id=\"reference_1\">Förebyggande av aterosklerotisk hjärtsjukdom – Behandlingsrekommendation. Läkemedelsverket 2006. <a href=\"http://www.lakemedelsverket.se/malgrupp/Halso---sjukvard/Behandlings--rekommendationer/Behandlingsrekommendation---listan/Primarprevention/\" target=\"_blank\" class=\"linkOut\">www.lakemedelsverket.se</a> </li>\n<li id=\"reference_2\">Persson J, Stagmo M. Perssons Kardiologi – Hjärtsjukdomar hos vuxna, Studentlitteratur 2007. ISBN 9789144019895.</li>\n<li id=\"reference_3\">Camm AJ, Serreys P, Lüscher TF. The ESC textbook of cardiovascular medicine. Oxford University Press, USA. 2009. ISBN 9780199566990.</li>\n<li id=\"reference_4\">Nationella riktlinjer för sjukdomsförebyggande metoder 2011. Socialstyrelsen. <br><a href=\"http://www.socialstyrelsen.se/nationellariktlinjerforsjukdomsforebyggandemetoder\" target=\"_blank\" class=\"linkOut\">www.socialstyrelsen.se</a> </li>\n<li id=\"reference_5\">Komplettering av Nationella riktlinjer för hjärtsjukvård 2008 och strokesjukvård 2009 – stöd för styrning och ledning. Slutlig version. Socialstyrelsen 2011. Artikelnummer: 2011-12-21. ISBN&nbsp;978918688861. <a href=\"http://www.socialstyrelsen.se/publikationer2011/2011-12-21\" target=\"_blank\" class=\"linkOut\">www.socialstyrelsen.se</a> </li>\n<li id=\"reference_6\">Qaseem A, Fihn SD, Dallas P, Williams S, Owens DK, Shekelle P; Clinical Guidelines Committee of the American College of Physicians. Management of stable ischemic heart disease: summary of a clinical practice guideline from the American College of Physicians/American College of Cardiology Foundation/American Heart Association/American Association for Thoracic Surgery/Preventive Cardiovascular Nurses Association/Society of Thoracic Surgeons. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23165665\" target=\"_blank\" class=\"linkOut\">Ann Intern Med. 2012;157:735–43.</a> </li>\n<li id=\"reference_7\">Kussmaul WG. Guidelines on diagnosis and treatment of stable ischemic heart disease: keeping up with a constantly evolving evidence base.<br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23165667\" target=\"_blank\" class=\"linkOut\">Ann Intern Med. 2012;157:749–51.</a> </li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/hjarta-karl/ischemisk_hjartsjukdom.json",
+	"modified": "2016-06-27 16:45",
+	"isPublished": true,
+	"indexed": "true"
+}

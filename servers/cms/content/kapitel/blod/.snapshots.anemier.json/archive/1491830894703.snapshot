@@ -1,0 +1,779 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Anemier | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-09 00:53",
+	"published": "2015-07-09 00:53",
+	"validUntil": "",
+	"createdBy": "Gunnar Birgegård, Karin Björkegren, Rolf Ljung",
+	"replacesUrl": "/d1_blo_anemier_2013fm10.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "8fe71127-ecb8-4513-9b6c-536703bfc70f",
+			"name": "8fe71127-ecb8-4513-9b6c-536703bfc70f",
+			"type": "author",
+			"content": {
+				"firstname": "Gunnar",
+				"surname": "Birgegård",
+				"description": "Medicinkliniken, Akademiska sjukhuset, Uppsala",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8599f90f-c5f5-46e5-95fa-0becb2ac54f1",
+			"name": "8599f90f-c5f5-46e5-95fa-0becb2ac54f1",
+			"type": "author",
+			"content": {
+				"firstname": "Karin",
+				"surname": "Björkegren",
+				"description": "Flogsta vårdcentral, Uppsala",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c4928623-5f92-4821-a237-9cfaaf03d376",
+			"name": "c4928623-5f92-4821-a237-9cfaaf03d376",
+			"type": "author",
+			"content": {
+				"firstname": "Rolf",
+				"surname": "Ljung",
+				"description": "Barnmedicinska kliniken, Skånes universitetssjukhus, Lund-Malmö",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a08543ec-9989-4d6f-a337-288539c68658",
+			"name": "a08543ec-9989-4d6f-a337-288539c68658",
+			"type": "text",
+			"content": "<h1 id=\"d1_3\">Anemier</h1>\n<h2 id=\"d1_4\">Inledning</h2>\n<p class=\"ingress\"><a class=\"index\" id=\"1062362\" data-text=\"anemi\"></a>Anemi &auml;r ett av de &auml;ldsta medicinska tillst&aring;nd som definierats, och dess betydelse i den medicinska v&auml;rlden har skiftat genom &aring;rhundradena. Eftersom anemi dels kan vara prim&auml;r, dels orsakas av annan sjukdom m&aring;ste alla l&auml;kare kunna handskas med b&aring;de utredning och behandling av anemi. Mer &auml;n 2 miljarder m&auml;nniskor lider av anemi, och i ett globalt perspektiv dominerar j&auml;rnbristanemi och anemi sekund&auml;r till infektioner. I den rika delen av v&auml;rlden finns numera goda m&ouml;jligheter att diagnostisera och behandla de flesta former av anemi, och intresset f&ouml;r och medvetenheten om nyttan med att behandla anemi har &ouml;kat starkt under det senaste decenniet.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3a8e20f3-31f7-4bb3-92e5-ddf7009d4783",
+			"name": "3a8e20f3-31f7-4bb3-92e5-ddf7009d4783",
+			"type": "text",
+			"content": "<h2 id=\"Definitioner-och-fysiologi\">Definitioner och fysiologi</h2>\n<p>Anemi definieras av praktiska sk&auml;l som ett <a class=\"index\" id=\"1062373\" data-text=\"hemoglobinv&#xE4;rde\"></a>hemoglobinv&auml;rde (<a class=\"index\" id=\"1062378\" data-text=\"Hb-v&#xE4;rde\"></a>Hb) l&auml;gre &auml;n referensomr&aring;det (populationsmedelv&auml;rdet &minus;2 SD). Numera anv&auml;nds det referensomr&aring;de som definierats av WHO, med anemigr&auml;ns 120 g/l f&ouml;r (ickegravida) kvinnor och 130 g/l f&ouml;r m&auml;n. Det &auml;r dock viktigt att komma ih&aring;g att en individs Hb-niv&aring; &auml;r t&auml;mligen stabil genom livet och att en biologiskt mer korrekt definition skulle vara &rdquo;ett l&auml;gre Hb &auml;n individens optimala&rdquo;. Om tidigare Hb-niv&aring; &auml;r k&auml;nd, &auml;r allts&aring; ett l&auml;gre Hb att betrakta som anemi hos individen, &auml;ven om s&auml;nkningen inte passerat WHO-gr&auml;nsen. Detta syns&auml;tt har s&auml;rskild betydelse f&ouml;r att tidigt uppt&auml;cka processer med progredierande anemi. Vid h&ouml;g &aring;lder &auml;r Hb-niv&aring;n generellt l&auml;gre, men om orsaken &auml;r andra sjukdomar eller en oberoende Hb-s&auml;nkning &auml;r oklart.</p>\n<p><br>Anemi kan orsakas av m&aring;nga sjukdomar, s&auml;rskilt malignitet och inflammatorisk sjukdom. Tidigare trodde man allm&auml;nt att anemin d&aring; var en of&ouml;rarglig eller rent av nyttig anpassning till grundsjukdomen. Nya studier har tv&auml;rtom visat att anemi i sig medf&ouml;r f&ouml;rs&auml;mringar i funktionstillst&aring;nd och livskvalitet. Anemi ska alltid betraktas som patologisk och utg&ouml;r vid sekund&auml;r anemi ett tillst&aring;nd som den normala homeostasen inte har f&ouml;ruts&auml;ttningar att korrigera, &auml;ven om kompensationsmekanismer i viss m&aring;n lindrar effekterna av anemin. Symtomen vid anemi orsakas av den v&auml;vnadshypoxi som blir f&ouml;ljden av en l&auml;gre <span>syreb&auml;rande</span> kapacitet.</p>\n<p><br>Hb &auml;r ett koncentrationsm&aring;tt, vilket inneb&auml;r att det &auml;r beroende av f&ouml;r&auml;ndringar i plasmavolymen. Intorkning ger d&auml;rf&ouml;r ett h&ouml;gre m&auml;tv&auml;rde f&ouml;r Hb, och vid akut bl&ouml;dning sjunker inte Hb f&ouml;rr&auml;n volymsf&ouml;rlusten ersatts av v&auml;tskeintr&auml;de till blodbanan fr&aring;n v&auml;vnaderna eller v&auml;tska genom intraven&ouml;s tillf&ouml;rsel.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2d6ca65c-1b9d-4937-9fb5-d489bec36f2a",
+			"name": "2d6ca65c-1b9d-4937-9fb5-d489bec36f2a",
+			"type": "text",
+			"content": "<h2 id=\"d1_6\">Symtom</h2>\n<p>Huvudsymtom vid anemi av alla slag &auml;r tr&ouml;tthet, nedsatt fysisk prestationsf&ouml;rm&aring;ga, huvudv&auml;rk, dyspn&eacute;, koncentrationssv&aring;righeter, nedst&auml;mdhet och andra mentala symtom, allt orsakat av v&auml;vnadshypoxi (se Tabell&nbsp;1). Toleransen f&ouml;r anemi varierar kraftigt, beroende p&aring; individuella skillnader i de kompensatoriska mekanismernas effektivitet, bl&nbsp;a f&ouml;rm&aring;gan att h&ouml;gerf&ouml;rskjuta <span>syredissociationskurvan</span> genom &ouml;kning av 2,3-bisfosfoglycerat (2,3-BPG) i erytrocyterna. Om anemin utvecklas l&aring;ngsamt kan kompensatoriska mekanismer g&ouml;ra att symtomen f&ouml;rblir lindriga &auml;ven vid l&aring;ga Hb-niv&aring;er. Ett sakta sjunkande Hb brukar ocks&aring; medf&ouml;ra en psykologisk anpassning till en l&auml;gre funktionsniv&aring;, d&auml;r anstr&auml;ngning som ger symtom undviks. Anemi &auml;r d&auml;rf&ouml;r inte s&auml;llan ett accidentellt fynd. Toleransen f&ouml;r anemi &auml;r l&auml;gre vid h&ouml;gre &aring;lder. En kompensatorisk takykardi i vila upptr&auml;der ofta vid Hb-niv&aring;er under 100 g/l, medan sv&aring;rare kardiovaskul&auml;ra symtom &auml;r ovanliga vid Hb &ouml;ver 80 g/l. Det b&ouml;r dock understrykas att den individuella variationen &auml;r stor och att vissa individer har t&auml;mligen uttalade symtom av tr&ouml;tthet &auml;ven vid m&aring;ttlig anemi.</p>\n<p><br>Vid j&auml;rnbristanemi finns ibland vissa specifika symtom. Frekvensen av restless legs (RLS) har visats vara &ouml;kad vid j&auml;rnbrist och j&auml;rnbristanemi <span style=\"color: #ff0000;\">(1)</span> och f&ouml;rb&auml;ttras av j&auml;rnbehandling <span style=\"color: #ff0000;\">(2,3,4)</span>, se vidare kapitlet <a href=\"{pre}/kapitel/neurologi/allman_neurologi_och_multipel_skleros.html#r1_29\">Allm&auml;n neurologi och multipel skleros, avsnittet Restless legs-syndrom</a>. Pica-beteende (av ordet f&ouml;r skata p&aring; latin) inneb&auml;r en sv&aring;rbem&auml;strad lust att &auml;ta n&aring;got speciellt, m&auml;rkligt nog s&auml;llan n&aring;got j&auml;rninneh&aring;llande. Epitelf&ouml;r&auml;ndringar som munvinkelragader och glossit har tidigare angivits som j&auml;rnbristspecifika men &auml;r s&auml;llsynta och sannolikt orsakade av kombinerad brist p&aring; flera sp&aring;rmetaller.</p>\n<p><br>Det har under l&aring;ng tid diskuterats huruvida j&auml;rnbrist utan anemi ger symtom. I den diskussionen gl&ouml;ms ofta bort att somliga av de patienter som har tomma j&auml;rnf&ouml;rr&aring;d, men Hb inom referensomr&aring;det, kan ha sjunkit fr&aring;n sitt optimala till ett l&auml;gre Hb. P&aring; senare &aring;r har flera studier publicerats som visar att patienter (s&auml;rskilt kvinnor) med tomma j&auml;rnf&ouml;rr&aring;d p&aring; gruppniv&aring; uppvisar mer tr&ouml;tthet och andra anemisymtom &auml;n j&auml;mf&ouml;relsegrupper och att symtomen f&ouml;rb&auml;ttras av j&auml;rnterapi. <span style=\"color: #ff0000;\">(5,6,7,8)</span> Detta g&auml;ller s&auml;rskilt RLS, som kunnat reduceras i exempelvis blodgivarstudier med j&auml;rnbrist utan anemi. <span style=\"color: #ff0000;\">(9)</span> Det f&ouml;refaller som om j&auml;rnet har en specifik effekt oberoende av Hb i dessa studier. Flera studier har visat att j&auml;rnbrist utan anemi kan p&aring;verka funktionsniv&aring;n <span style=\"color: #ff0000;\">(10,11,12)</span>. En rad viktiga studier har visat att behandling av j&auml;rnbrist hos patienter med kronisk hj&auml;rtsvikt (CHF) leder till en betydande f&ouml;rb&auml;ttring av hj&auml;rtfunktion och prestationsf&ouml;rm&aring;ga, oavsett om anemi f&ouml;religger eller ej.</p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5663eb4d-6011-41be-bc41-59f8c263b8cb",
+			"name": "5663eb4d-6011-41be-bc41-59f8c263b8cb",
+			"type": "tablenarrow",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"52093\"></a>Vanliga <a class=\"index\" id=\"1062436\" data-text=\"anemi:symtom\"></a>anemisymtom",
+				"id": "d1_7",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Tr&ouml;tthet</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Huvudv&auml;rk</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Yrsel</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Kraftl&ouml;shet</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Dyspn&eacute;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Koncentrationssv&aring;righeter</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">S&ouml;mnst&ouml;rningar</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Hj&auml;rtklappning</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Menstruations-</div>\r\n<div class=\"tableLine\">rubbningar</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Nedst&auml;mdhet</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "86653abe-6649-44e3-bb03-dbf9277f157f",
+			"name": "86653abe-6649-44e3-bb03-dbf9277f157f",
+			"type": "text",
+			"content": "<h2 id=\"d1_8\"><a class=\"crossref\" id=\"45044\"></a>Anamnes och patientunders&ouml;kning</h2>\n<p>Allm&auml;n tr&ouml;tthet &auml;r den vanligaste anledningen till att patienter med anemi s&ouml;ker l&auml;kare (13). Statusfynd som antyder vilken sorts anemi patienten har &auml;r t&auml;mligen s&auml;llsynta. Ikterus antyder hemolys, mj&auml;ltf&ouml;rstoring likas&aring; och/eller malignitetsanemi. Torrt och risigt h&aring;r &auml;r vanligt vid hypotyreos, en inte ovanlig anemiorsak. Telangiektasier i munnen eller n&auml;san vid j&auml;rnbristanemi kan vara tecken p&aring; kroniska bl&ouml;dningar p&aring; grund av Mb Osler.</p>\n<p><br>Ofta finns vid f&ouml;rsta patientm&ouml;tet redan svar p&aring; blodstatus och andra enkla laboratorieprover, som kan rikta anamnesen. Vid mikrocyt&auml;r anemi hos en kvinna i fertil &aring;lder &auml;r f&ouml;rst&aring;s en noggrann menstruationsanamnes avg&ouml;rande liksom familjehistorien vid mikrocyt&auml;r anemi hos en patient med r&ouml;tter i endemiska talassemiomr&aring;den. Allm&auml;nsymtom som viktnedg&aring;ng, aptitf&ouml;rlust och rubbade avf&ouml;ringsvanor kan antyda malign genes. Tr&ouml;tthet &auml;r det vanligaste symtomet p&aring; anemin i sig sj&auml;lv, ibland ackompanjerad av huvudv&auml;rk, koncentrationssv&aring;righeter och nedsatt fysisk prestationsf&ouml;rm&aring;ga.</p>\n<p><br>Vissa slutsatser kan ibland dras om dynamiken i sjukdomen. En op&aring;verkad patient med uttalad anemi har sannolikt anemiserats l&aring;ngsamt, medan en ung och f&ouml;r &ouml;vrigt frisk patient med m&aring;ttlig anemi och kardiovaskul&auml;r p&aring;verkan troligen har utvecklat anemin p&aring; kort tid.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "76650a0d-6c5a-444d-b659-4c8120916b71",
+			"name": "76650a0d-6c5a-444d-b659-4c8120916b71",
+			"type": "text",
+			"content": "<h2 id=\"d1_9\">Laboratorieutredningens f&ouml;rsta steg</h2>\n<p>N&aring;gra enkla grundl&auml;ggande unders&ouml;kningar ger anemiutredningen dess inriktning, och att utv&auml;rdera dessa sparar tid och kostnader. Allra f&ouml;rst karakt&auml;riseras anemin med hj&auml;lp av mean corpuscular volume (MCV) och retikulocyternas antal, se Figur 1.</p>\n<p><br>Anemierna indelas traditionellt i mikro-, normo- och makrocyt&auml;ra anemier, och denna indelning &auml;r fortfarande en mycket effektiv utg&aring;ngspunkt f&ouml;r utredning. Retikulocytantalet avsl&ouml;jar om benm&auml;rgen kunnat svara med &ouml;kad RBC-produktion och ger d&auml;rigenom omedelbart besked om huruvida hela produktionskedjan &auml;r intakt. F&ouml;rh&ouml;jda retikulocyter avf&auml;rdar ett flertal t&auml;nkbara orsaker till anemin: vitaminbrist, j&auml;rnbrist, benm&auml;rgssvikt och benm&auml;rgsh&auml;mning.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "13f6887f-7e81-4b7f-81c3-bcfcc33017d5",
+			"name": "13f6887f-7e81-4b7f-81c3-bcfcc33017d5",
+			"type": "figure",
+			"content": {
+				"number": "1",
+				"maxwidth": "",
+				"image": "/images/d1_blo_anemier_2013fm10_images/lb_2017_d1_fig_1.png",
+				"title": "",
+				"text": "<p><a class=\"crossref\" id=\"71788\"></a>Anemi<a class=\"index\" id=\"1062582\" data-text=\"anemi:utredning\"></a>utredning med utg&aring;ngspunkt fr&aring;n MCV och retikulocyter</p>",
+				"alt": "",
+				"id": "d1_10"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "48484eed-a3d8-4059-897a-ed124787e03b",
+			"name": "48484eed-a3d8-4059-897a-ed124787e03b",
+			"type": "text",
+			"content": "<h3 id=\"Mikro-och-makrocytos\">Mikro- och makrocytos</h3>\n<p>De mest avg&ouml;rande byggstenarna f&ouml;r erytropoesen &auml;r <a class=\"index\" id=\"1062637\" data-text=\"j&#xE4;rn\"></a>j&auml;rn respektive vitaminerna B<sub>12</sub> (kobalamin) och folat (<a class=\"index\" id=\"1062640\" data-text=\"folsyra\"></a>folsyra). Utredning av anemi underl&auml;ttas starkt av att brist p&aring; dem ger motsatt effekt p&aring; RBC-storleken: mikrocytos &auml;r alltid ett tecken p&aring; j&auml;rnbegr&auml;nsad erytropoes (utom vid talassemi), medan brist p&aring; B<sub>12</sub> och folat ger makrocytos via f&ouml;rdr&ouml;jd celldelning. Vid samtidig brist (exempelvis vid malabsorption) &ouml;verv&auml;ger oftast makrocytos s&aring; att patientens RBC antingen &auml;r normocyt&auml;ra eller makrocyt&auml;ra.</p>\n<p><br>J&auml;rnbegr&auml;nsad erytropoes kan antingen bero p&aring; vanlig j&auml;rnbrist (&rdquo;tomma j&auml;rnf&ouml;rr&aring;d&rdquo;), eller p&aring; att befintligt j&auml;rn inte kan utnyttjas, som vid funktionell j&auml;rnbrist (se <a href=\"{pre}/kapitel/blod/anemier.html#d1_31\">Sekund&auml;r anemi</a>). I b&aring;da fallen utvecklas mikrocytos, men vid funktionell j&auml;rnbrist f&ouml;religger oftast en samtidig inflammation, som kan ge en blandning av sm&aring; och stora RBC och d&auml;rf&ouml;r ett normalt v&auml;rde f&ouml;r MCV.</p>\n<p><br>En viktig aspekt p&aring; mikrocytos &auml;r att m&aring;ttet MCV utg&ouml;r ett medeltal f&ouml;r volymen hos de r&ouml;da blodkropparna i ett blodprov. Eftersom livsl&auml;ngden hos RBC &auml;r cirka 3 m&aring;nader, kan cellerna ha bildats under olika f&ouml;rh&aring;llanden. Om en p&aring;g&aring;ende bl&ouml;dning exempelvis t&ouml;mt ut j&auml;rnf&ouml;rr&aring;den f&ouml;r bara n&aring;gra veckor sedan, kan MCV vara normalt i ett aktuellt blodprov trots att patienten har j&auml;rnbrist. Omv&auml;nt betyder ett uppm&auml;tt l&aring;gt v&auml;rde f&ouml;r MCV att j&auml;rnbristen har f&ouml;relegat i minst 5&ndash;6 veckor.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fa2057dd-a40a-4129-99b1-c5cef3c2b341",
+			"name": "fa2057dd-a40a-4129-99b1-c5cef3c2b341",
+			"type": "text",
+			"content": "<h2 id=\"d1_12\">Fortsatt utredning</h2>\n<p>N&auml;r den initiala karakt&auml;ristiken &auml;r utf&ouml;rd, kan utredningen inriktas specifikt. Det finns i princip 3 olika geneser till blodbrist:</p>\n<ol>\n<li>Minskad RBC-produktion\n<ol style=\"list-style-type: lower-alpha;\">\n<li>brist p&aring; byggstenar</li>\n<li>prim&auml;r benm&auml;rgssjukdom</li>\n<li>h&auml;mning av benm&auml;rgen</li>\n</ol>\n</li>\n<li>&Ouml;kat RBC-s&ouml;nderfall (hemolys)</li>\n<li>&Ouml;kade f&ouml;rluster av RBC (bl&ouml;dning)</li>\n</ol>\n<h3 id=\"d1_13\">Mikrocyt&auml;r anemi</h3>\n<p>Mikrocyt&auml;r anemi beror antingen p&aring; talassemi eller p&aring; j&auml;rnbegr&auml;nsad erytropoes. Om S-ferritin &auml;r s&auml;nkt, &auml;r j&auml;rnbrist bekr&auml;ftad och orsaken till denna ska efterforskas. Om j&auml;rnbrist inte kan bekr&auml;ftas (normalt eller h&ouml;gt S-ferritin) kan anamnesen vara till hj&auml;lp. Om patienten har f&ouml;rh&ouml;jda retikulocyter och ursprung i endemiskt talassemiomr&aring;de utf&ouml;rs Hb-elektrofores. Om annan sjukdom f&ouml;religger samtidigt, s&auml;rskilt inflammatorisk eller malign sjukdom, kan funktionell j&auml;rnbrist misst&auml;nkas och provtagningen kompletteras med transferrinm&auml;ttnad. J&auml;rnf&auml;rgning av ett representativt benm&auml;rgsutstryk &auml;r det s&auml;kraste s&auml;ttet att avg&ouml;ra om patienten har j&auml;rndep&aring;er eller ej. S-<a class=\"index\" id=\"1062660\" data-text=\"ferritin\"></a>ferritin &auml;r det effektivaste provet f&ouml;r att skilja j&auml;rnbristanemi fr&aring;n annan anemi men kan, p&aring; grund av S-ferritins karakt&auml;r av akutfasreaktant, vara normalt trots tomma j&auml;rnf&ouml;rr&aring;d vid samtidig inflammation.</p>\n<p><br>Om ingen f&ouml;rklaring till mikrocyt&auml;r anemi framkommer med tagna prover, kan enligt nya forskningsresultat en kronisk atrofisk gastrit, med eller utan Helicobacter pylori (HP)-infektion, misst&auml;nkas. Se vidare avsnittet <a href=\"{pre}/kapitel/blod/anemier.html#d1_26\">Kronisk autoimmun gastrit</a>.</p>\n<p><br>Mer s&auml;llsynta orsaker till mikrocyt&auml;r anemi omfattar mutationer i j&auml;rnreglerande gener, som kan diagnostiseras med prov analyserade av speciallaboratorier.</p>\n<h3 id=\"d1_14\">Normocyt&auml;r anemi</h3>\n<p>En kombinerad brist p&aring; j&auml;rn och B<sub>12</sub>/folat ger oftast en makrocyt&auml;r anemi, men normocytos kan ocks&aring; f&ouml;rekomma. En l&aring;ng rad sjukdomar kan ge anemi som sekund&auml;rt fenomen, och anemin &auml;r d&aring; ofta normocyt&auml;r. Eftersom mekanismerna kan vara helt olika vid olika sjukdomar, kr&auml;ver en normocyt&auml;r anemi utan uppenbar f&ouml;rklaring en utvidgning av provtagningen till att omfatta njurfunktion, leverskademark&ouml;rer, inflammationsmark&ouml;rer, SR (CRP &auml;r otillr&auml;ckligt) och <span>P/S-albumin</span>.</p>\n<p><br>Renal anemi uppst&aring;r grovt sett n&auml;r en kronisk njurinsufficiens ger P/S-kreatininv&auml;rden omkring 200&nbsp;<span>&mu;</span>mol/l. Prim&auml;r benm&auml;rgssjukdom, till exempel leukemi, myelomatos och myelofibros, &auml;r oftast normocyt&auml;r. N&auml;r leukemi &auml;r orsak till anemi riktas ofta misstankarna mot denna sjukdom genom avvikelser i de andra cellinjerna. &Auml;ven om myelodysplastiskt syndrom (MDS) oftast ger en makrocyt&auml;r bild f&ouml;rekommer normocytos.</p>\n<h3 id=\"d1_15\">Makrocyt&auml;r anemi</h3>\n<p>Den vanligaste uppkomstmekanismen f&ouml;r makrocytos &auml;r en f&ouml;rdr&ouml;jd celldelning hos erytroblasterna, vilket dels kan uppst&aring; p&aring; grund av brist p&aring; vitamin B<sub>12</sub> eller folat (se nedan), dels p&aring; grund av rubbning i deras metabolism som vid leverp&aring;verkan av exempelvis alkohol. Vid f&ouml;rh&ouml;jt antal retikulocyter stiger MCV som en direkt f&ouml;ljd av att retikulocyterna &auml;r st&ouml;rre &auml;n mogna RBC, vilket ger en &rdquo;falsk makrocytos&rdquo;. Redan vid en m&aring;ttlig retikulocytos kan MCV &ouml;verstiga 105&nbsp;fl.</p>\n<p><br>Prim&auml;ra blodsjukdomar som MDS kan ocks&aring; ge makrocytos pga rubbningar i apoptotiska och andra mekanismer i mognad och differentiering.</p>\n<h3 id=\"d1_16\">Anemi med retikulocytsvar</h3>\n<p>En normocyt&auml;r eller makrocyt&auml;r anemi med retikulocytsvar &auml;r oftast en hemolytisk anemi. Haptoglobin konsumeras av frisatt hemoglobin, och S-haptoglobin &auml;r en k&auml;nslig indikator p&aring; hemolys, men har ett begr&auml;nsat v&auml;rde n&auml;r det g&auml;ller att gradera hemolysens intensitet eftersom redan en m&aring;ttlig hemolys &aring;stadkommer v&auml;rden under metodens sensitivitetsgr&auml;ns. F&ouml;rh&ouml;jning av laktatdehydrogenas (LD) i kombination med l&aring;gt S-haptoglobin konfirmerar ocks&aring; hemolysen och utg&ouml;r ett b&auml;ttre m&aring;tt p&aring; dess intensitet. P&aring; grund av hemoglobinets nedbrytning stiger ocks&aring; bilirubin, framf&ouml;r allt okonjugerat. Den stegringen kan komma senare &auml;n LD-stegringen och &auml;r ocks&aring; n&aring;got nyckfullare.</p>\n<p><br>Om anemin &auml;r mikrocyt&auml;r, b&ouml;r talassemi misst&auml;nkas och Hb-elektrofores utf&ouml;ras. Vid normocytos &auml;r n&auml;sta steg direkt antiglobulintest, DAT, f&ouml;r att sp&aring;ra en autoimmun hemolys. F&ouml;r detaljer, se avsnittet <a href=\"{pre}/kapitel/blod/anemier.html#d1_50\">Hemolytisk anemi</a>, och kapitlet<a href=\"{pre}/kapitel/onkologi/hematologiska_maligniteter.html#j2_33\"> Hematologiska maligniteter, avsnittet Kronisk lymfatisk leukemi och autoimmun hemolys</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "bdd06e0e-9002-46b8-8ba0-c075494a4705",
+			"name": "bdd06e0e-9002-46b8-8ba0-c075494a4705",
+			"type": "text",
+			"content": "<h2 id=\"d1_17\">J&auml;rnbristanemi<span style=\"font-style: italic;\"> </span></h2>\n<p>J&auml;rnbristanemi b&ouml;r numera indelas i tv&aring; huvudgrupper: absolut j&auml;rnbrist med tomma j&auml;rnf&ouml;rr&aring;d (&rdquo;iron deficiency anemia&rdquo;, IDA) och funktionell j&auml;rnbrist (&rdquo;functional iron deficiency&rdquo;, FID) med befintliga j&auml;rnf&ouml;rr&aring;d men f&ouml;rsv&aring;rat j&auml;rnutnyttjande. Det senare &auml;r ett tillst&aring;nd som kartlagts det senaste decenniet, fr&auml;mst som en f&ouml;ljd av de nya kunskaperna om j&auml;rnets reglering via hepcidin. B&aring;da formerna ben&auml;mns numera &rdquo;j&auml;rnbegr&auml;nsad erytropoes&rdquo; (&rdquo;iron-restricted erythropoiesis&rdquo;, IRE).</p>\n<h3 id=\"d1_18\"><a class=\"crossref\" id=\"14354\"></a>Absolut <a class=\"index\" id=\"1062710\" data-text=\"j&#xE4;rnbrist:absolut\"></a>j&auml;rnbrist</h3>\n<p>Uttrycket j&auml;rnbrist anv&auml;nds b&aring;de om det tillst&aring;nd d&aring; j&auml;rnf&ouml;rr&aring;den &auml;r tomma men Hb normalt och om j&auml;rnbristanemi. Vid j&auml;rnf&ouml;rlust, p&aring; grund av bl&ouml;dning eller negativ j&auml;rnbalans av annat sk&auml;l, f&ouml;rbrukas f&ouml;rr&aring;dsj&auml;rnet i en str&auml;van att beh&aring;lla ett normalt Hb. Efter en viss tid &auml;r d&aring; f&ouml;rr&aring;den utt&ouml;mda utan att Hb f&ouml;r&auml;ndrats (Figur 2). Benm&auml;rgsj&auml;rn kan inte p&aring;visas och S-ferritin &auml;r subnormalt.<span style=\"color: #ff0000;\"> Transferrinm&auml;ttnaden (Tsat) &auml;r ett uttryck f&ouml;r hur mycket j&auml;rn som transporteras fr&aring;n f&ouml;rr&aring;den via plasma till anv&auml;ndningsplatserna i v&auml;vnaderna, framf&ouml;r allt benm&auml;rgen. N&auml;r f&ouml;rr&aring;den &auml;r t&ouml;mda sjunker d&auml;rf&ouml;r Tsat och fr&aring;n denna tidpunkt &auml;r de nyproducerde erytrocyterna mikrocyt&auml;ra och hypokroma. En &ouml;kning av transferrinreceptorerna p&aring; erytroblasterna (vilket avspeglas i en &ouml;kning av l&ouml;sliga transferrinreceptoreri plasma) syftar till att p&aring; ett effektivare s&auml;tt f&aring;nga allt j&auml;rn som kommer till cellerna via transferrin, men kan inte hindra anemiutvecklingen om den negativa j&auml;rnbalansen kvarst&aring;r.</span> <span style=\"color: #000000;\">Efter 5&ndash;6 veckor n&auml;r tillblandningen av hypokroma, mikrocyt&auml;ra RBC blivit tillr&auml;cklig, blir ocks&aring; MCV subnormalt.</span></p>\n<h3 id=\"d1_20\">Prevalens</h3>\n<p>I de rika l&auml;nderna &auml;r prevalensen av j&auml;rnbristanemi bland kvinnor 7&ndash;8&nbsp;% och bland m&auml;n 1&ndash;3&nbsp;%, medan j&auml;rnbrist utan anemi &aring;terfinns hos cirka 25&nbsp;% av kvinnorna i fertil &aring;lder.</p>\n<h3 id=\"Etiologi\">Etiologi</h3>\n<p>Bl&ouml;dning &auml;r den dominerande orsaken till j&auml;rnbristanemi. Genesen har oftast med den kvinnliga reproduktionen att g&ouml;ra i form av menstruationer, graviditet och f&ouml;rlossning. Gastrointestinal bl&ouml;dning f&ouml;rekommer i alla &aring;ldrar men s&auml;rskilt hos &auml;ldre.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "05c6adbc-1196-4f79-b0b0-f34053b9408f",
+			"name": "05c6adbc-1196-4f79-b0b0-f34053b9408f",
+			"type": "figure",
+			"content": {
+				"number": "2",
+				"maxwidth": "",
+				"image": "/images/d1_blo_anemier_2013fm10_images/lb_2017_d1_fig_2.png",
+				"title": "",
+				"text": "<p><a class=\"crossref\" id=\"72270\"></a>Tidsf&ouml;rloppet f&ouml;r utveckling av olika laboratorievariabler vid negativ j&auml;rnbalans. Vid j&auml;rnf&ouml;rluster bibeh&aring;lls Hb tills j&auml;rnf&ouml;rr&aring;den &auml;r utt&ouml;mda, vilket avspeglas i negativ j&auml;rnf&auml;rgning av benm&auml;rgsutstryk och subnormalt S-ferritin. Detta kallas j&auml;rnbrist utan anemi. N&auml;r f&ouml;rr&aring;den &auml;r tomma sjunker transferrinm&auml;ttnaden och Hb, medan Tf-receptorns uttryck &ouml;kar f&ouml;r att f&ouml;rs&ouml;ka f&aring;nga in mer transferrinj&auml;rn. Efter 5&ndash;6 veckor, n&auml;r tillr&auml;ckligt stort antal mikrocyt&auml;ra celler bildats, uppm&auml;ts ocks&aring; ett subnormalt MCV.</p>",
+				"alt": "",
+				"id": "d1_19"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a7c4e5d8-9b5c-457f-86e9-03b27dcfbf3d",
+			"name": "a7c4e5d8-9b5c-457f-86e9-03b27dcfbf3d",
+			"type": "text",
+			"content": "<h3 id=\"d1_22\"><a class=\"index\" id=\"1062725\" data-text=\"j&#xE4;rnbristanemi:menstruation, graviditet;menstruationer:j&#xE4;rnbristanemi;graviditet:j&#xE4;rnbristanemi\"></a><a class=\"crossref\" id=\"57354\"></a>J&auml;rnbristanemi p&aring; grund av menstruationer och under graviditet</h3>\n<p>Negativ j&auml;rnbalans uppst&aring;r hos menstruerande kvinnor vid stora menstruationsbl&ouml;dningar, s&auml;rskilt vid m&aring;natlig bl&ouml;dningsm&auml;ngd &ouml;ver 80&nbsp;ml. Ett underskott kan ocks&aring; uppst&aring; hos en kvinna med t&auml;mligen ordin&auml;ra bl&ouml;dningsm&auml;ngder om hon samtidigt befinner sig i den nedre delen av normalf&ouml;rdelningen betr&auml;ffande absorptionsf&ouml;rm&aring;ga. Det b&ouml;r ocks&aring; framh&aring;llas, att kvinnor kan anse menstruationsvolymer klart &ouml;ver 80&nbsp;ml som normala eftersom de oftast bara kan referera till sig sj&auml;lva. En noggrann menstruationsanamnes &auml;r d&auml;rf&ouml;r n&ouml;dv&auml;ndig f&ouml;r att f&aring; en uppfattning om bl&ouml;dningens storlek.</p>\n<h4 id=\"d1_23\">Anemi under graviditet</h4>\n<p>Under graviditet har kvinnan ett extra behov av j&auml;rn, som uppskattats till cirka 1&nbsp;000&nbsp;mg. Absorptionen &ouml;kar visserligen n&auml;r j&auml;rnf&ouml;rr&aring;den minskar men nettoresultatet &auml;r klart negativt, och bara kvinnor med goda j&auml;rnf&ouml;rr&aring;d kan r&auml;kna med att inte t&ouml;mma ut dessa under en graviditet. Se vidare kapitlet <a href=\"{pre}/kapitel/gynekologi/sjukdomar_och_lakemedel_under_graviditet_och_amning.html#i1-2_25\">Sjukdomar och l&auml;kemedel under graviditet och amning, avsnittet Anemi</a>.</p>\n<p><br>M&aring;ls&auml;ttningen vid graviditet &auml;r i f&ouml;rsta hand att undvika anemi med Hb &lt;&nbsp;100&ndash;105&nbsp;g/l eftersom negativa effekter p&aring;visats b&aring;de hos mor och foster vid dessa niv&aring;er. Anemi f&ouml;re f&ouml;rlossning &auml;r ocks&aring; den viktigaste prognostiska faktorn f&ouml;r uttalad anemi post partum. D&auml;remot &auml;r det inte &ouml;vertygande visat att generell j&auml;rnsubstitution till alla reducerar komplikationer. <span style=\"color: #ff0000;\">D&auml;rf&ouml;r &auml;r individualiserad handl&auml;ggning n&ouml;dv&auml;ndig. Detta f&ouml;ruts&auml;tter screening med S-ferritin i b&ouml;rjan av graviditeten f&ouml;r att uppskatta j&auml;rnf&ouml;rr&aring;dens storlek. I Sverige saknas tyv&auml;rr nationella rekommendationer f&ouml;r j&auml;rnsubstitution och anemi, men Dansk Forening for Obstetrik og Gynekologi har riktlinjer och v&aring;ra rekommendationer &ouml;verensst&auml;mmer v&auml;sentligen med dessa. (14) </span>Vanligen rekommenderas nu, <span style=\"color: #ff0000;\">i lokala rekommendationer,</span> m&auml;tning av S-ferritin vid f&ouml;rsta MVC-bes&ouml;ket och j&auml;rnsubstitution vid v&auml;rden &lt;&nbsp;60&nbsp;<span>&mu;</span>g/l. Denna gr&auml;ns &auml;r arbitr&auml;r, har svagt st&ouml;d i litteraturen och &auml;r enligt v&aring;r mening f&ouml;r l&aring;gt satt.<br><br><span style=\"color: #ff0000;\"><span style=\"color: #000000;\">Om S-ferritin vid f&ouml;rsta MVC-kontrollen &auml;r l&auml;gre &auml;n rekommenderat b&ouml;r j&auml;rnsubstitution i dosen 100&nbsp;mg peroralt dagligen ges i andra trimestern, n&auml;r risken f&ouml;r illam&aring;ende minskat. Kontroll av S-ferritin b&ouml;r g&ouml;ras vid f&ouml;ljande MVC-bes&ouml;k och sjunker v&auml;rdet b&ouml;r dosen &ouml;kas. Om kvinnan inte kan ta ordinerad dos p&aring; grund av biverkningar kan intraven&ouml;s j&auml;rntillf&ouml;rsel &ouml;verv&auml;gas. M&aring;ttlig j&auml;rnbristanemi (Hb&nbsp;90&ndash;110&nbsp;g/l) under f&ouml;rsta och andra trimestern behandlas med peroralt j&auml;rn i dosen 100&nbsp;mg&nbsp;&times;&nbsp;2.</span> Vid intolerans eller om Hb inte stiger inom 2 veckor kan i st&auml;llet intraven&ouml;s j&auml;rntillf&ouml;rsel &ouml;verv&auml;gas med iakttagande av de f&ouml;rsiktighets&aring;tg&auml;rder som anges f&ouml;r iv j&auml;rn i produktresum&eacute;/FASS. Den godk&auml;nda indikationen f&ouml;r de parenterala j&auml;rnpreparaten omfattar inte behandling under f&ouml;rsta trimestern. Vid j&auml;rnbristanemi med Hb &lt;&nbsp;90&nbsp;g/l rekommenderas intraven&ouml;st j&auml;rn, liksom vid all anemi i tredje trimestern d&aring; peroral behandling inte kan f&ouml;rv&auml;ntas hinna restituera Hb och j&auml;rnf&ouml;rr&aring;d f&ouml;re partus. (15,16,17)<br></span></p>\n<h4 id=\"d1_24\">Anemi efter f&ouml;rlossning</h4>\n<p>Anemi efter f&ouml;rlossning &auml;r vanligt &auml;ven om tillf&ouml;rlitliga incidenssiffror saknas. Kvinnor som har tomma j&auml;rnf&ouml;rr&aring;d eller j&auml;rnbristanemi f&ouml;re f&ouml;rlossningen har ett klart behov av j&auml;rnsubstitution, s&auml;rskilt om de f&aring;r en signifikant f&ouml;rlossningsbl&ouml;dning. Innan en s&aring;dan patient skrivs ut fr&aring;n f&ouml;rlossningsavdelning b&ouml;r j&auml;rnsituationen utv&auml;rderas av l&auml;kare. Vid uttalad post partum-anemi med allm&auml;np&aring;verkan ges blodtransfusion f&ouml;ljd av intraven&ouml;st j&auml;rn. Transfusionsm&auml;ngden b&ouml;r med f&ouml;rdel begr&auml;nsas f&ouml;r att inte sl&auml;cka ut det naturliga erytropoetiska drivet. M&aring;ls&auml;ttningen med transfusion b&ouml;r s&aring;ledes inte vara normalisering av Hb. Observera att intraven&ouml;st j&auml;rn b&ouml;r ges &auml;ven till patienter som f&aring;tt transfusion eftersom j&auml;rnet i de transfunderade r&ouml;da blodkropparna inte &auml;r omedelbart tillg&auml;ngligt och m&auml;ngden inte &auml;r st&ouml;rre &auml;n cirka 225&nbsp;mg/rbs-koncentrat. Vid m&aring;ttlig j&auml;rnbristanemi post partum kan man &ouml;verv&auml;ga att ge intraven&ouml;st j&auml;rn eftersom Hb-&ouml;kningen d&aring; p&aring;visats ske snabbare &auml;n med peroralt j&auml;rn i denna situation. (18,19,20)<span style=\"color: #ff0000;\"><br></span></p>\n<p><br>Korrigering av post partum-anemi &auml;r av stor betydelse eftersom det visats att s&aring;dan kan medf&ouml;ra depression och anknytningssv&aring;righeter. <span style=\"color: #ff0000;\">Vid j&auml;rnbristanemi och samtidig post partum-depression har j&auml;rnbehandling visats ha signifikant effekt p&aring; depressionen. (21,22)</span> Det m&auml;nskliga argumentet att det borde vara sj&auml;lvklart att ge en nybliven mor optimala f&ouml;ruts&auml;ttningar f&ouml;r att ta hand om sitt barn och njuta av den f&ouml;rsta tiden med barnet har ocks&aring; stor tyngd.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "77241656-d7f7-4afc-8f32-9fffd4c0c6e6",
+			"name": "77241656-d7f7-4afc-8f32-9fffd4c0c6e6",
+			"type": "text",
+			"content": "<h3 id=\"d1_25\">&Ouml;vrig <a class=\"index\" id=\"1062933\" data-text=\"j&#xE4;rnbristanemi:&#xF6;vriga orsaker\"></a>j&auml;rnbristanemi</h3>\n<p>Gastrointestinal bl&ouml;dning &auml;r den vanligaste j&auml;rnbristorsaken hos kvinnor efter menopaus samt hos m&auml;n. Diafragmabr&aring;ck och ulcussjukdom &auml;r v&auml;lk&auml;nda orsaker liksom tum&ouml;rer, s&auml;rskilt koloncancer. Den senare &auml;r en av de sjukdomar som alltf&ouml;r ofta diagnostiseras med f&ouml;rdr&ouml;jning b&aring;de p&aring; grund av att patienten s&ouml;ker sent och f&ouml;rdr&ouml;jningar i utredningen. Koloncancer och kolondivertiklar har h&ouml;gre incidens hos &auml;ldre, medan ventrikels&aring;r och hiatusbr&aring;ck har h&ouml;gre incidens hos yngre, se &auml;ven kapitlet <a href=\"{pre}/kapitel/mage-tarm/kolorektala_sjukdomar.html#b7_40\">Kolorektala sjukdomar, avsnittet Koloncancer</a>, samt avsnittet <a href=\"{pre}/kapitel/mage-tarm/kolorektala_sjukdomar.html#b7_48\">Kolondivertiklar/divertikulit</a>, och kapitlet <a href=\"{pre}/kapitel/mage-tarm/sjukdomar_i_matstrupe_magsack_och_tolvfingertarm.html#b1_27\">Sjukdomar i matstrupe, mags&auml;ck och tolvfingertarm, avsnittet Ventrikelulcus</a>. Anemi p&aring; grund av hematuri &auml;r s&auml;llsynt. Kronisk inflammatorisk tarmsjukdom kan v&aring;lla dels tarmbl&ouml;dning, dels sekund&auml;r anemi och funktionell j&auml;rnbrist.</p>\n<p><br>Mb&nbsp;Osler &auml;r en heredit&auml;r sjukdom med telangiektasier i n&auml;sseptum, munslemhinnan, tarmen och ibland &auml;ven i luftv&auml;garna. Bl&ouml;dningar f&ouml;rekommer s&auml;rskilt fr&aring;n n&auml;sslemhinnan (&gt;&nbsp;90&nbsp;% av fallen), men ocks&aring; fr&aring;n GI-kanalen och blodf&ouml;rlusterna kan kr&auml;va stora doser j&auml;rn.</p>\n<p><br>Malabsorption (till exempel celiaki) ger ofta en kombinerad brist av s&aring;v&auml;l j&auml;rn som B<sub>12</sub> och/eller folat. Anemin &auml;r d&aring; oftast normo- eller makrocyt&auml;r. Diet&auml;r j&auml;rnbrist &auml;r ovanlig i Sverige och b&ouml;r inte accepteras som etiologi annat &auml;n i undantagsfall, exempelvis vid strikt vegankost.</p>\n<h4 id=\"d1_26\">Kronisk autoimmun gastrit</h4>\n<p>P&aring; senare &aring;r har ett samband mellan kronisk autoimmun gastrit och j&auml;rnbrist uppm&auml;rksammats, s&auml;rskilt hos Helicobacter pylori (HP)-infekterade individer (23). Bakterien reducerar j&auml;rnabsorptionen bl&nbsp;a genom att ge hypoklorhydri via en skada p&aring; ventrikelcellerna, en skada som kan utvecklas till autoimmun kronisk gastrit. Efter l&aring;ng tid anses detta tillst&aring;nd kunna utvecklas till pernici&ouml;s anemi, se vidare avsnittet <a href=\"{pre}/kapitel/blod/anemier.html#d1_38\">Pernici&ouml;s anemi</a>. Nya rekommendationer anger d&auml;rf&ouml;r att diagnostiken vid j&auml;rnbristanemi utan p&aring;visad bl&ouml;dning b&ouml;r innefatta HP-diagnostik samt serologisk diagnostik f&ouml;r kronisk autoimmun gastrit (24). En eventuell HP-infektion b&ouml;r behandlas med eradikering (se kapitlet <a href=\"{pre}/kapitel/mage-tarm/sjukdomar_i_matstrupe_magsack_och_tolvfingertarm.html#b1_44\">Sjukdomar i matstrupe, mags&auml;ck och tolvfingertarm, Terapirekommendationerna &ndash; Eradikering av Helicobacter pylori</a>) samtidigt som j&auml;rnbristen behandlas.<span> </span></p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3969d603-2d90-4864-9126-35c60b1a3ad0",
+			"name": "3969d603-2d90-4864-9126-35c60b1a3ad0",
+			"type": "therapy",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"73255\"></a>Behandling av <a class=\"index\" id=\"1063114\" data-text=\"j&#xE4;rnbristanemi:behandling\"></a>järnbristanemi",
+				"id": "d1_30",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><strong>Peroral j&auml;rnbehandling</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Standardbehandling vid tillf&auml;llig j&auml;rnbristanemi &auml;r en dos motsvarande 100 mg Fe<sup>2+</sup> 2 g&aring;nger/dag tills Hb normaliserats (planat ut) och ytterligare ca 4 veckor.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><span style=\"background-color: #ff9900;\">Tillg&auml;ngliga preparat: Duroferon, Niferex</span></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Parenteral j&auml;rnbehandling</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Flera alternativ betr&auml;ffande dosering finns och f&aring;r v&auml;gas mot varandra med avseende p&aring; kostnad, patientens &ouml;nskem&aring;l och m&ouml;jligheter. 200 mg varannan vecka r&auml;cker v&auml;l f&ouml;r adekvat Hb-&ouml;kning. Alternativt kan h&ouml;gre dos ges vid ett eller flera tillf&auml;llen, beroende p&aring; behov.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Tillg&auml;ngliga preparat (f&ouml;r information om administration av respektive preparat, se produktresum&eacute;/Fass):</p>\r\n<p><a class=\"index\" id=\"1063119\" data-text=\"Venofer\"></a><span style=\"background-color: #ff9900;\">Venofer, J&auml;rnsackaros Rechon (<a class=\"index\" id=\"1063139\" data-text=\"j&auml;rnsackaros\" style=\"background-color: #ff9900;\"></a>j&auml;rnsackaros). Kan ges som l&aring;ngsam iv injektion eller infusion i en dos upp till 200&nbsp;mg.</span></p>\r\n<p><span style=\"background-color: #ff9900;\"><a class=\"index\" id=\"1063124\" data-text=\"Ferinject\" style=\"background-color: #ff9900;\"></a>Ferinject (<a class=\"index\" id=\"1063144\" data-text=\"dextriferron\" style=\"background-color: #ff9900;\"></a><span style=\"background-color: #ff0000;\">dextriferron</span>). Kan ges som l&aring;ngsam iv injektion eller infusion i en dos upp till 1&nbsp;000 mg.</span></p>\r\n<p><span style=\"background-color: #ff9900;\"><a class=\"index\" id=\"1063129\" data-text=\"Monofer\" style=\"background-color: #ff9900;\"></a>Monofer (<a class=\"index\" id=\"1063149\" data-text=\"j&auml;rn(III)isomaltosid 1000\" style=\"background-color: #ff9900;\"></a>j&auml;rn(III)isomaltosid 1&nbsp;000). Kan ges som iv infusion upp till 20 mg/kg kroppsvikt.</span></p>\r\n<p><span style=\"background-color: #ff9900;\">Cosmofer (j&auml;rndextrankomplex).</span> Kan ges som iv infusion upp till 20 mg/kg kroppsvikt. <span style=\"color: #ff0000;\">Vid varje tillf&auml;lle b&ouml;r den f&ouml;rsta dosen om 25 mg j&auml;rn ges som en 15 minuters infusion (se produktresum&eacute;/FASS). </span>Cosmofer kan &auml;ven ges intramuskul&auml;rt. Kr&auml;ver testdos inf&ouml;r anv&auml;ndandet.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Uppf&ouml;ljning vid j&auml;rnbristanemi<span style=\"font-weight: bold;\"> </span></strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Hb kontrolleras varannan vecka tills optimering uppn&aring;tts. Vid otillr&auml;cklig Hb-&ouml;kning (&lt;&nbsp;7 g/l och vecka) kontrolleras f&ouml;ljsamheten och diagnosen ifr&aring;gas&auml;tts. S-ferritin kontrolleras innan behandlingen avslutas.</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ed3fbd04-7bb0-4bce-a94a-0a1b04ff4c0c",
+			"name": "ed3fbd04-7bb0-4bce-a94a-0a1b04ff4c0c",
+			"type": "text",
+			"content": "<h2 id=\"d1_27\"><a class=\"crossref\" id=\"80967\"></a>Behandling av j&auml;rnbristanemi</h2>\n<p>Standardbehandlingen vid j&auml;rnbristanemi &auml;r j&auml;rn peroralt som ferrosulfat eller ferroglycinsulfat i en dos motsvarande 100&nbsp;mg&nbsp;Fe<sup>2+</sup>&nbsp;2 g&aring;nger/dag. En h&ouml;gre initialdos skulle egentligen vara &ouml;nskv&auml;rd eftersom absorptionen &auml;r h&ouml;gst n&auml;r j&auml;rnbristen &auml;r som mest uttalad, men risken f&ouml;r gastrointestinala biverkningar talar f&ouml;r en m&aring;ttlig dos.</p>\n<p><br>Partiell intolerans f&ouml;r peroralt j&auml;rn &auml;r vanlig, och d&auml;rf&ouml;r &auml;r det viktigt att undvika biverkningar som medf&ouml;r att patienten f&aring;r aversion mot behandlingen. Man ska d&auml;rf&ouml;r tala med patienten om biverkningar, hur man undviker dem och vad man ska g&ouml;ra om de upptr&auml;der. Man kan be patienten att till en b&ouml;rjan ta j&auml;rntabletterna efter maten, trots att absorptionen &auml;r h&ouml;gst p&aring; fastande mage. Om inga obehag upptr&auml;der, kan patienten pr&ouml;va att gradvis &ouml;verg&aring; till att ta tabletterna n&aring;gon timme f&ouml;re m&aring;ltid. Om biverkningar hindrar patienten fr&aring;n att ta ordinerad dos b&ouml;r behandlande l&auml;kare genast kontaktas f&ouml;r diskussion om &aring;tg&auml;rder. Gastrointestinala biverkningar av j&auml;rn brukar inte ge med sig under fortsatt behandling med of&ouml;r&auml;ndrad dos. Ofta minskar patienten p&aring; eget bev&aring;g dosen till en niv&aring; som de tolererar och risken &auml;r d&aring; stor att dosen blir otillr&auml;cklig.</p>\n<p><br>Vid all behandling av j&auml;rnbristanemi b&ouml;r effekten kontrolleras varannan vecka tills Hb-v&auml;rdet planat ut p&aring; en normal niv&aring;. Om Hb-v&auml;rdet inte har stigit efter 2&nbsp;veckors behandling vid en okomplicerad anemi hos en patient med f&ouml;rmodad normal benm&auml;rgsfunktion, b&ouml;r man unders&ouml;ka om patienten kunnat ta den ordinerade dosen. Om s&aring; &auml;r fallet, b&ouml;r diagnosen ifr&aring;gas&auml;ttas liksom m&ouml;jligheten av en p&aring;g&aring;ende bl&ouml;dning. Om benm&auml;rgsfunktionen &auml;r normal och inga h&auml;mmande tillst&aring;nd bromsar, b&ouml;r Hb-&ouml;kningen uppg&aring; till 7&ndash;10&nbsp;g/l och vecka vid j&auml;rnbehandling.</p>\n<p><br>J&auml;rnbehandlingen b&ouml;r forts&auml;tta cirka 1 m&aring;nad efter att Hb-niv&aring;n planat ut f&ouml;r att tillf&ouml;rs&auml;kra patienten ett visst j&auml;rnf&ouml;rr&aring;d. Detta g&auml;ller tillf&auml;llig j&auml;rnbristanemi.</p>\n<h3 id=\"d1_28\"><a class=\"crossref\" id=\"16812\"></a>Kronisk negativ j&auml;rnbalans</h3>\n<p>Helt annorlunda &auml;r situationen vid kroniskt negativ j&auml;rnbalans, som utg&ouml;r majoriteten av all j&auml;rnbristanemi i Sverige. Det g&auml;ller menstruationsbetingad j&auml;rnbrist, som ju &auml;r ett kroniskt tillst&aring;nd fram till menopaus (25). Menstruationsbl&ouml;dningar kan reduceras med hj&auml;lp av fibrinolysh&auml;mmare (tranexamsyra), eller med hormonbehandling (p-piller eller hormonspiral). Om j&auml;rnbalansen fortfarande &auml;r negativ efter s&aring;dana &aring;tg&auml;rder, b&ouml;r patienten ha en kontinuerlig uppf&ouml;ljning f&ouml;r monitorering av j&auml;rnsubstitutionen tills menopaus intr&auml;der. Efter &ouml;verenskommelse med patienten om substitutionens utformning b&ouml;r blodstatus och S-ferritin kontrolleras regelbundet f&ouml;r styrning av j&auml;rndosen och f&ouml;rnyelse av recept. Blodkontroll var 3:e till 6:e m&aring;nad med besked, till exempel brevsvar, om provresultat och ordination &auml;r l&auml;mpligt i de flesta fall. P&aring; detta s&auml;tt skapas stabilitet och trygghet f&ouml;r att kvinnan alltid har adekvata j&auml;rnf&ouml;rr&aring;d, och recidiv i anemi kan helt undvikas.</p>\n<p><br>Substitutionens utformning diskuteras med patienten. Vissa kvinnor, som har god tolerans f&ouml;r peroralt j&auml;rn, f&ouml;redrar att ta exempelvis 100&nbsp;mg&nbsp;Fe<sup>2+</sup>&nbsp;2 g&aring;nger/dag under veckan efter menstruationen d&aring; absorptionen &auml;r n&aring;got h&ouml;gre, andra f&ouml;redrar att ta en tablett dagligen kontinuerligt. Vid bristande tolerans f&ouml;r tabletter kan parenteralt j&auml;rn ofta ges med l&aring;nga intervall, styrt av ferritinniv&aring;erna som inte b&ouml;r f&aring; n&auml;rma sig bristv&auml;rden.</p>\n<h3 id=\"d1_29\"><a class=\"crossref\" id=\"41488\"></a>Parenteral <a class=\"index\" id=\"1063109\" data-text=\"j&#xE4;rn:parenteralt\"></a>j&auml;rnbehandling</h3>\n<p>Om den dos patienten tolererar &auml;r f&ouml;r l&aring;g f&ouml;r ett fullgott resultat av behandling med peroralt j&auml;rn, kan parenteralt j&auml;rn v&auml;ljas (26). R&auml;dslan f&ouml;r anafylaxi, som uppstod p&aring; de gamla h&ouml;gmolekyl&auml;ra dextran-j&auml;rnpreparatens tid, h&auml;mmar fortfarande en adekvat anv&auml;ndning av parenteralt j&auml;rn. De fyra preparat som f&ouml;r n&auml;rvarande &auml;r registrerade i Sverige (se <a href=\"{pre}/kapitel/blod/anemier.html#d1_30\">Terapirekommendationerna &ndash; Behandling av j&auml;rnbristanemi</a>) har emellertid alla l&aring;g biverkningsfrekvens och h&ouml;g andel biologiskt tillg&auml;ngligt j&auml;rn.</p>\n<p><br>J&auml;rnsackaros kan ges i maxdos om 200&nbsp;mg. <span style=\"background-color: #ff0000;\">Dextriferron</span> och j&auml;rn(III)isomaltosid 1&nbsp;000 kan ges i stora eng&aring;ngsdoser om 1&nbsp;000 mg eller mer. Priset f&ouml;r dessa &auml;r h&ouml;gre &auml;n f&ouml;r j&auml;rnsackaros, men de l&auml;ngre behandlingsintervallen kan ibland neutralisera kostnaden. J&auml;rndextrankomplex, som ocks&aring; kan ges intramuskul&auml;rt, inneh&aring;ller l&aring;gmolekyl&auml;rt dextran, vilket i j&auml;mf&ouml;relse med de &auml;ldre h&ouml;gmolekyl&auml;ra dextranpreparaten reducerar risken f&ouml;r anafylaktiska reaktioner. Inf&ouml;r anv&auml;ndning kr&auml;vs dock, liksom f&ouml;r tidigare h&ouml;gmolekyl&auml;ra preparat, att man ger en testdos. Den europeiska l&auml;kemedelsmyndigheten EMAs vetenskapliga kommitt&eacute; CHMP (Committee for Medicinal Products for Human use) slutf&ouml;rde sommaren 2013 en <a href=\"http://www.ema.europa.eu/docs/sv_SE/document_library/Referrals_document/IV_iron_31/WC500151308.pdf\">granskning</a> av intraven&ouml;sa j&auml;rnpreparat som anv&auml;nds f&ouml;r att behandla j&auml;rnbrist och anemi, och kom d&aring; fram till att nyttan med dessa l&auml;kemedel &auml;r st&ouml;rre &auml;n dess risker f&ouml;rutsatt att l&auml;mpliga &aring;tg&auml;rder vidtas f&ouml;r att minska risken f&ouml;r allergiska reaktioner. Se &auml;ven avsnittet <a href=\"{pre}/kapitel/blod/anemier.html#d1_23\">Anemi under graviditet</a>.<span style=\"color: #3366ff;\"><br></span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "185ca1dc-f1b4-4e67-99ef-664fbeccec5e",
+			"name": "185ca1dc-f1b4-4e67-99ef-664fbeccec5e",
+			"type": "text",
+			"content": "<h2 id=\"d1_31\"><a class=\"crossref\" id=\"91242\"></a>Sekund&auml;r <a class=\"index\" id=\"1063558\" data-text=\"anemi:sekund&#xE4;r;sekund&#xE4;r anemi\"></a>anemi och <a class=\"index\" id=\"1063560\" data-text=\"funktionell j&#xE4;rnbrist:se FID &lt;$nopage&gt;\"></a>funktionell <a class=\"index\" id=\"1063561\" data-text=\"j&#xE4;rnbrist:funktionell\"></a>j&auml;rnbrist (<a class=\"index\" id=\"1063567\" data-text=\"FID\"></a>FID)</h2>\n<p>M&aring;nga kroniska sjukdomar v&aring;llar sekund&auml;r anemi, som kallas &rdquo;<a class=\"index\" id=\"1063563\" data-text=\"anemia of chronic disease\"></a>anemia of chronic disease&rdquo; (ACD). Mekanismerna &auml;r flerfaldiga: en direkt h&auml;mning av erytrocytproliferationen i benm&auml;rgen, ett nedsatt Epo (erytropoietin)-svar p&aring; hypoxin, f&ouml;rkortad livsl&auml;ngd hos RBC och, i m&aring;nga fall, en rubbad j&auml;rnoms&auml;ttning med funktionell j&auml;rnbrist. De olika ingredienserna varierar mellan olika sjukdomar men ocks&aring; fr&aring;n individ till individ.</p>\n<h3 id=\"d1_32\">Vanliga orsaker till <a class=\"index\" id=\"1063232\" data-text=\"sekund&#xE4;r anemi:orsaker \"></a>sekund&auml;r anemi</h3>\n<p>Alla <a class=\"index\" id=\"1063247\" data-text=\"inflammatoriska sjukdomar:anemi\"></a>inflammatoriska sjukdomar inklusive infektioner kan ge anemi, ofta komplicerad av funktionell j&auml;rnbrist. Anemi vid malignitet &auml;r oftast ACD, med eller utan funktionell j&auml;rnbrist, men kan vid hematologiska maligniteter ocks&aring; bero p&aring; benm&auml;rgssvikt eller -infiltration.</p>\n<p><br>Njursviktsanemi har flera k&auml;nda ingredienser: &ouml;kad nedbrytning av erytrocyter, nedsatt svar p&aring; endogent Epo och inadekvat Epo-stegring vid anemi. Betydelsen av uremiska toxiner som h&auml;mmar benm&auml;rgen &auml;r omdiskuterad.</p>\n<p><br>Av hormonrubbningarna &auml;r <a class=\"index\" id=\"1063237\" data-text=\"hypotyreos:sekund&#xE4;r anemi\"></a>hypotyreos och <a class=\"index\" id=\"1063242\" data-text=\"testosteronbrist:sekund&#xE4;r anemi\"></a><span>testosteronbrist</span> (oftast orsakad av testosteronsupprimerande behandling, exempelvis vid prostatacancer) v&auml;lk&auml;nda orsaker.</p>\n<h3 id=\"d1_33\">Beskrivning av ACD</h3>\n<p>Den klassiska beskrivningen av ACD &auml;r en m&aring;ttligt uttalad, normocyt&auml;r anemi med d&aring;ligt benm&auml;rgssvar. Om funktionell j&auml;rnbrist &auml;r en del av anemin, kan bilden i st&auml;llet vara mikrocyt&auml;r.</p>\n<p><br>Vid inflammation sker viktiga f&ouml;r&auml;ndringar i j&auml;rnoms&auml;ttningen. Den normala erytropoesen &auml;r beroende av att 25&ndash;30&nbsp;mg j&auml;rn dagligen transporteras fr&aring;n makrofagerna, d&auml;r de nedbrutna erytrocyternas j&auml;rn omh&auml;ndertas, via plasman till m&aring;lcellerna, erytroblasterna. Denna transport &auml;r beroende av kroppens enda k&auml;nda &rdquo;export&ouml;r&rdquo; av j&auml;rn, ferroportin, som f&ouml;r j&auml;rnet &ouml;ver cellmembranet till transferrinet i plasma. Vid inflammation ger inflammatoriska cytokiner (fr&auml;mst IL&minus;6) en uppreglering av j&auml;rnproteinernas &rdquo;dirigent&rdquo; hepcidin, och som en direkt f&ouml;ljd nedregleras produktionen av ferroportin och dess nedbrytning &ouml;kar. Bristen p&aring; ferroportin f&ouml;rsv&aring;rar exporten av j&auml;rn fr&aring;n makrofagerna, vilket g&ouml;r att transferrinm&auml;ttnaden i plasma sjunker och att j&auml;rnet ansamlas i makrofagerna. Transferrinm&auml;ttnaden &auml;r ett uttryck f&ouml;r den tillg&auml;ngliga (funktionella) j&auml;rnpoolen, och n&auml;r den &auml;r s&auml;nkt f&aring;r erytroblasterna inte adekvata m&auml;ngder j&auml;rn, varvid Hb-produktionen minskar (27), se &auml;ven avsnittet <a href=\"{pre}/kapitel/blod/anemier.html#d1_18\">Absolut j&auml;rnbrist</a>. P&aring; sikt s&auml;nker detta MCV, och FID &auml;r ofta mikrocyt&auml;r.</p>\n<p><br>Inflammatoriska tillst&aring;nd ger emellertid ocks&aring; en st&ouml;rning av mognadsprocessen, vilken &aring;stadkommer en f&ouml;rl&aring;ngsammad celldelning och hos en del av erytroblasterna makrocytos, vilket tenderar att ge ett normalt MCV hos m&aring;nga patienter med p&aring;visad FID.</p>\n<p><br>Incidensen av FID &auml;r &auml;nnu d&aring;ligt kartlagd, men fr&aring;n cancersjukv&aring;rden har nyligen rapporterats att 40&ndash;50&nbsp;% av patienterna med solida tum&ouml;rer och anemi har FID (28). All inflammatorisk sjukdom kan v&aring;lla FID, och kronisk inflammatorisk tarmsjukdom kan dessutom &auml;nnu oftare orsaka vanlig bl&ouml;dningsanemi.</p>\n<p><br>Sammanfattningsvis &auml;r sekund&auml;r anemi (ACD) en &ouml;vergripande term. Hos vissa patienter kan ACD f&ouml;rv&auml;rras av ett inslag av funktionell j&auml;rnbrist (FID). Mekanismen f&ouml;r FID illustreras i Figur 3.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ffc15ec8-292f-40fc-9b3c-619d11c8a341",
+			"name": "ffc15ec8-292f-40fc-9b3c-619d11c8a341",
+			"type": "figure",
+			"content": {
+				"number": "3",
+				"maxwidth": "",
+				"image": "/images/d1_blo_anemier_2013fm10_images/lb_2017_d1_fig_3.png",
+				"title": "",
+				"text": "<p><a class=\"crossref\" id=\"83010\"></a>Figuren illustrerar mekanismen vid <a class=\"index\" id=\"1063548\" data-text=\"FID:mekanism\"></a>funktionell j&auml;rnbrist. Vid inflammatoriska tillst&aring;nd &auml;r j&auml;rnmetabolismen rubbad genom uppregleringen av hepcidin, som &aring;stadkommer en &rdquo;inl&aring;sning&rdquo; av j&auml;rn fr&aring;n nedbrutna erytrocyter i makrofagerna.</p>",
+				"alt": "",
+				"id": "d1_34"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "55761766-0a79-4fb1-9890-be84769a7748",
+			"name": "55761766-0a79-4fb1-9890-be84769a7748",
+			"type": "text",
+			"content": "<h3 id=\"d1_35\">Diagnostik</h3>\n<p>Typiskt f&ouml;r FID &auml;r kombinationen av normala eller f&ouml;rh&ouml;jda j&auml;rnf&ouml;rr&aring;d och l&aring;g transferrinm&auml;ttnad vilket skiljer den fr&aring;n klassisk j&auml;rnbrist med tomma f&ouml;rr&aring;d och subnormalt S-ferritin. Alla tillst&aring;nd med j&auml;rnbegr&auml;nsad erytropoes ger f&ouml;rh&ouml;jning av<span style=\"color: #ff0000;\"> halten av l&ouml;slig transferrinreceptor i plasma (Tfr)</span> och andelen hypokroma erytrocyter. De senare analyserna &auml;r inte allm&auml;nt tillg&auml;ngliga &auml;nnu.</p>\n<p><br>F&ouml;r differentialdiagnostik mellan &rdquo;vanlig&rdquo; j&auml;rnbristanemi, ACD med FID respektive ACD utan FID se Tabell 2.</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "19a565f9-c027-4de9-8594-623e7106e8e6",
+			"name": "19a565f9-c027-4de9-8594-623e7106e8e6",
+			"type": "tablewide",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"crossref\" id=\"49440\"></a>Diagnostik av “vanlig” <a class=\"index\" id=\"1063271\" data-text=\"j&#xE4;rnbristanemi:diagnostik\"></a>järnbristanemi, ACD<a class=\"tableFootnoteLink\" href=\"#fnote_57\"><sup>a</sup></a> med FID<a class=\"tableFootnoteLink\" href=\"#fnote_58\"><sup>b</sup></a> respektive ACD utan FID",
+				"id": "d1_36",
+				"text": "<table><tbody><tr><td><div class=\"tableLine\"><strong>&nbsp;</strong></div></td><td><p><strong><div class=\"tableLine\">“Vanlig” järnbrist-</div><div class=\"tableLine\">anemi</div></strong></p></td><td><div class=\"tableLine\"><strong>ACD med FID</strong></div></td><td><div class=\"tableLine\"><strong>ACD utan FID</strong></div></td></tr><tr><td><div class=\"tableLine\"><strong>S-ferritin</strong></div></td><td><div class=\"tableLine\">Subnormalt</div></td><td><div class=\"tableLine\">Normalt eller högt</div></td><td><div class=\"tableLine\">Normalt eller högt</div></td></tr><tr><td><div class=\"tableLine\"><strong>MCV</strong></div></td><td><div class=\"tableLine\">Lågt</div></td><td><div class=\"tableLine\">Lågt eller normalt</div></td><td><div class=\"tableLine\">Normalt</div></td></tr><tr><td><div class=\"tableLine\"><strong>Transferrinmättnad</strong></div></td><td><div class=\"tableLine\">Låg</div></td><td><div class=\"tableLine\">Låg</div></td><td><div class=\"tableLine\">Normal</div></td></tr><tr><td><p><strong><div class=\"tableLine\">Transferrinreceptor, </div><div class=\"tableLine\">löslig</div></strong></p></td><td><div class=\"tableLine\">Förhöjd</div></td><td><div class=\"tableLine\">Förhöjd</div></td><td><div class=\"tableLine\">Normal</div></td></tr><tr><td><div class=\"tableLine\"><strong>Hypokroma RBC</strong></div></td><td><div class=\"tableLine\">Ökade</div></td><td><div class=\"tableLine\">Ökade</div></td><td><div class=\"tableLine\">Normala</div></td></tr><tr><td colspan=\"4\" class=\"footNotes\"><div class=\"tableFootnote\" id=\"fnote_57\">a. ACD = anemi vid kronisk sjukdom</div><div class=\"tableFootnote\" id=\"fnote_58\">b. FID = funktionell järnbrist</div></td></tr></tbody></table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f78d9990-3728-47bc-8cda-081d7767bc79",
+			"name": "f78d9990-3728-47bc-8cda-081d7767bc79",
+			"type": "text",
+			"content": "<h3 id=\"d1_37\">Behandling av funktionell j&auml;rnbrist</h3>\n<p>I f&ouml;rsta hand optimeras behandlingen av den grundsjukdom som gett upphov till den sekund&auml;ra anemin och rubbningen av j&auml;rnoms&auml;ttningen. Om anemin kvarst&aring;r och FID kan p&aring;visas ges parenteralt j&auml;rn eftersom peroralt j&auml;rn inte har effekt p&aring; detta tillst&aring;nd, eventuellt p&aring; grund av att hepcidin&ouml;kningen minskar j&auml;rnabsorptionen. Varf&ouml;r j&auml;rn givet intraven&ouml;st inte st&auml;ngs in i makrofagerna trots hepcidin&ouml;kningen utan tycks vara tillg&auml;ngligt f&ouml;r erytropoesen &auml;r inte k&auml;nt.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a516e321-75d2-4912-921d-9fb5eab64796",
+			"name": "a516e321-75d2-4912-921d-9fb5eab64796",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"42407\"></a>Utredning av <a class=\"index\" id=\"1067718\" data-text=\"makrocyt&#xE4;r anemi:utredning\"></a>makrocytär  anemi med isolerad B<sub>12</sub>-brist (där  man uteslutit kombinerad brist)",
+				"text": "<table><tbody><tr><td><h5 id=\"d1_41\">&gt;&nbsp;65 år – begränsad utredning</h5><ul><li>Lågt/subnormalt S-kobalamin, normalt/högt <br>S-folat och normalt S-ferritin</li></ul><ul><li>Behandla och utvärdera effekten</li></ul><h5 id=\"d1_42\">40–65 år – måttlig utredning</h5><ul><li>Lågt/subnormalt S-kobalamin, normalt/högt <br>S-folat och normalt S-ferritin </li></ul><ul><li>S-gastrin och S-pepsinogen (gastrin högt och/eller pepsinogen sänkt)</li></ul><ul><li>S-IgA-transglutaminasantikroppar</li></ul><ul><li>Behandla och utvärdera effekten</li></ul><ul><li>Gastroskopi med biopsi i oklara fall – syftar till att bekräfta förekomsten av kronisk autoimmun gastrit och utesluta celiaki.</li></ul><h5 id=\"d1_43\">&lt;&nbsp;40 år – maximal utredning</h5><ul><li>Lågt/subnormalt S-kobalamin, normalt/högt <br>S-folat och normalt S-ferritin</li></ul><ul><li>S-gastrin och S-pepsinogen (gastrin högt och/eller pepsinogen sänkt)</li></ul><ul><li>S-IgA-transglutaminasantikroppar</li></ul><ul><li>Gastroskopi med biopsi i oklara fall – syftar till att bekräfta förekomsten av kronisk autoimmun gastrit och utesluta celiaki.</li></ul></td></tr></tbody></table>",
+				"id": "d1_40"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "aed84b51-b21e-4e86-b216-32423fe7a1d6",
+			"name": "aed84b51-b21e-4e86-b216-32423fe7a1d6",
+			"type": "text",
+			"content": "<h2 id=\"d1_38\"><a class=\"crossref\" id=\"50091\"></a>P<a class=\"index\" id=\"1063572\" data-text=\"pernici&#xF6;s anemi \"></a>ernici&ouml;s anemi</h2>\n<p>Pernici&ouml;s anemi orsakas av en kronisk autoimmun gastrit som i sent skede ger skador p&aring; parietalcellerna och en minskad eller upph&auml;vd produktion av intrinsic factor (IF). Detta ger en isolerad B<sub>12</sub>-brist och &auml;r ett tillst&aring;nd som kr&auml;ver livsl&aring;ng behandling och noga b&ouml;r skiljas fr&aring;n generell malabsorption. F&ouml;rekomsten av pernici&ouml;s anemi &auml;r cirka 1 &permil; i befolkningen och sjukdomen &auml;r mycket vanligare i h&ouml;gre &aring;ldrar.</p>\n<p><br><span style=\"color: #ff0000;\">B<sub>12</sub> &auml;r ett coenzym i DNA-syntesen, och brist p&aring; vitaminet leder till en megaloblastisk cellbild i benm&auml;rgen som omfattar s&aring;v&auml;l erytropoes som myelopoes och trombocytopoes. Erytropoesen &auml;r ineffektiv med en omfattande intramedull&auml;r hemolys samt makrocytos i blodet (h&ouml;gt MCV). Som vid alla bristanemier &auml;r retikulocytsvaret d&aring;ligt. Neutropeni och trombocytopeni f&ouml;rekommer men &auml;r relativt ovanligt. S-folat &auml;r normalt eller f&ouml;rh&ouml;jt.</span> B-folat &auml;r en d&aring;lig analys som &auml;r p&aring; v&auml;g ut.</p>\n<p><br>Innan B<sub>12</sub> kunde ges som l&auml;kemedel var sjukdomen mycket farlig, d&auml;rav namnet pernici&ouml;s anemi. Anemin utvecklas ofta mycket l&aring;ngsamt, vilket ger tid f&ouml;r kompensatoriska mekanismer att utvecklas. Patienterna har d&auml;rf&ouml;r ibland mycket l&aring;ga Hb-niv&aring;er men relativt m&aring;ttliga anemisymtom, se avsnittet <a href=\"{pre}/kapitel/blod/anemier.html#d1_8\">Anamnes och patientunders&ouml;kning</a>. Vid uttalad B<sub>12</sub>-brist kan dock neurologiska symtom upptr&auml;da som &auml;r reversibla s&aring; l&auml;nge de &auml;r sensoriska rubbningar, medan senare upptr&auml;dande motoriska rubbningar kan bli permanenta. Med B<sub>12</sub>-substitution lever patienterna ett friskt liv med en normal f&ouml;rv&auml;ntad livsl&auml;ngd.</p>\n<p><br>Eftersom behandlingen &auml;r specifik och livsl&aring;ng &auml;r en s&auml;ker diagnos viktig, och i l&auml;gre &aring;ldrar, d&auml;r sjukdomen &auml;r mindre vanlig, ska diagnostiken drivas s&auml;rskilt l&aring;ngt.</p>\n<p><br>Vid makrocyt&auml;r anemi med ett l&aring;gt/normalt antal retikulocyter tas S-kobalamin (B<sub>12</sub>), S-folat och S-ferritin. Om endast B<sub>12</sub>-v&auml;rdet &auml;r l&aring;gt misst&auml;nks i f&ouml;rsta hand en pernici&ouml;s anemi varvid man kan till&auml;mpa en &aring;ldersstyrd utredning, d&auml;r yngre patienter pr&ouml;vas s&auml;rskilt noga, se Faktaruta 1.</p>\n<p><br>Gastrin och <a class=\"index\" id=\"1063607\" data-text=\"pepsinogen\"></a>pepsinogen i serum, b&aring;da mark&ouml;rer f&ouml;r funktionen av magslemhinnan, &auml;r tv&aring; anv&auml;ndbara test vid misstanke om atrofisk gastrit som orsak till pernici&ouml;s anemi. Pepsinogen brukar anses motsvara &rdquo;en kemisk biopsi&rdquo; av magslemhinnan. Ett l&aring;gt S-pepsinogen talar f&ouml;r uttalad atrofi av parietalcellsmassan. Ett h&ouml;gt gastrinv&auml;rde kan ibland bero p&aring; en gastrinproducerande tum&ouml;r, men indikerar i allm&auml;nhet atrofi av corpus och fundus. Gastrin kan vara falskt normalt om &auml;ven antrum omfattas av atrofin.</p>\n<h3 id=\"d1_44\">Behandling och behandlingskontroll</h3>\n<p>Om diagnosen pernici&ouml;s anemi &auml;r r&auml;tt ska Hb normaliseras hos en patient med adekvat j&auml;rnf&ouml;rr&aring;d med B<sub>12</sub>-behandling, se Terapirekommendationerna.</p>\n<p><br>Efter 10 dagars behandling kontrolleras Hb, retikulocyter, MCV och S-ferritin eller S-j&auml;rn (s&auml;nkning av S-j&auml;rn ses redan inom ett dygn). Det ska d&aring; f&ouml;religga retikulocytos. MCV och S-ferritin (eller S-j&auml;rn) ska ha sjunkit. Hb ska &ouml;ka 7&ndash;10&nbsp;g/vecka. Om detta inte sker m&aring;ste man omv&auml;rdera och ta ny st&auml;llning till diagnosen. Annars f&ouml;ljer man Hb varannan vecka tills normalisering skett. Vid uttalad anemi f&ouml;rbrukas stora m&auml;ngder j&auml;rn och j&auml;rntillskott b&ouml;r ges. &Auml;ven folatf&ouml;rr&aring;det kan minska drastiskt och beh&ouml;va fyllas p&aring;.</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1e677c88-a0cf-4e91-b3bf-507cffa05b97",
+			"name": "1e677c88-a0cf-4e91-b3bf-507cffa05b97",
+			"type": "therapy",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"crossref\" id=\"15832\"></a>Behandling av brist på <a class=\"crossref\" id=\"vitamin B12-brist\"></a>vitamin B<sub>12</sub> och <a class=\"crossref\" id=\"folsyrabrist\"></a>folat",
+				"id": "d1_45",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td colspan=\"2\">\r\n<p><strong>Behandling av brist p&aring; B<sub>12</sub><a class=\"tableFootnoteLink\" href=\"#fnote_48\"><sup>a</sup></a></strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Remissionsbehandling</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Cyanokobalamin 2 mg peroralt 2 g&aring;nger dagligen i 1 m&aring;nad <span style=\"font-weight: bold;\">eller</span></div>\r\n<div class=\"tableLine\">Hydroxokobalamin 1 mg injiceras intramuskul&auml;rt eller subkutant var till</div>\r\n<div class=\"tableLine\">varannan dag i 7&ndash;14 dagar</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Underh&aring;llsbehandling</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Cyanokobalamin 1 mg peroralt dagligen <span style=\"font-weight: bold;\">eller</span></div>\r\n<div class=\"tableLine\">Hydroxokobalamin 1 mg injiceras med 1&ndash;3 m&aring;naders intervall (se produkt-</div>\r\n<div class=\"tableLine\">resum&eacute;/Fass)</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">\r\n<p><strong>Behandling av brist p&aring; folat<a class=\"tableFootnoteLink\" href=\"#fnote_49\"><sup>b</sup></a></strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Remissionsbehandling</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Folsyra 1 mg, 2 tabletter 2&ndash;3 g&aring;nger/dag i ca 2 veckor</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Underh&aring;llsbehandling</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Folsyra 1 mg, 1 tablett 1 g&aring;ng dagligen</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\" class=\"footNotes\">\r\n<div class=\"tableFootnote\" id=\"fnote_48\">a. <span class=\"tabstop\"></span>Vid sv&aring;ra akuta fall med fastst&auml;lld eller misst&auml;nkt neuropati b&ouml;r initialt intensiv parenteral behandling ges intramuskul&auml;rt eller subkutant (se produktresum&eacute;/Fass).<span class=\"tabstop\"></span><span class=\"tab\"></span>Vid uttalad anemi b&ouml;r S-ferritin m&auml;tas f&ouml;r att best&auml;mma j&auml;rnf&ouml;rr&aring;dens storlek, eftersom j&auml;rnbrist kan uppst&aring; n&auml;r Hb-niv&aring;n korrigeras. J&auml;rnsubstitution tillr&aring;ds om S-ferritin &auml;r &lt;&nbsp;100 <span>&mu;</span>g/l vid terapistart.</div>\r\n<div class=\"tableFootnote\" id=\"fnote_49\">b. <span class=\"tabstop\"></span>B<sub>12</sub>-brist m&aring;ste uteslutas innan folsyrabehandling inleds eftersom en B<sub>12</sub>-brist kan maskeras och d&auml;rav beroende neurologiska symtom progrediera.</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9b717aae-6626-4842-941d-fffb219f8edc",
+			"name": "9b717aae-6626-4842-941d-fffb219f8edc",
+			"type": "text",
+			"content": "<h2 id=\"d1_46\">Andra orsaker till brist p&aring; <a class=\"index\" id=\"1063633\" data-text=\"vitamin B&lt;Neds&#xE4;nkt&gt;12&lt;Default Para Font&gt;:brist\"></a>B<sub>12</sub>/<a class=\"index\" id=\"1063638\" data-text=\"folsyra:brist\"></a>folat</h2>\n<p>Ut&ouml;ver pernici&ouml;s anemi &auml;r malabsorption den vanligaste orsaken till B<sub>12</sub>-brist, som d&aring; oftast &auml;r f&ouml;renad med brist p&aring; folat och ibland &auml;ven j&auml;rn. Celiaki och kronisk inflammatorisk tarmsjukdom (s&auml;rskilt Mb Crohn), ventrikelresektion och tunntarmsresektion ger risk f&ouml;r brister, men &auml;ven &ouml;verviktsopererade l&ouml;per h&ouml;g risk att utveckla framf&ouml;r allt <a class=\"index\" id=\"1066553\" data-text=\"B&lt;Neds&#xE4;nkt&gt;12&lt;Default Para Font&gt;:se vitamin B&lt;Neds&#xE4;nkt&gt;12&lt;Default Para Font&gt;&lt;$nopage&gt;\"></a>B<sub>12</sub>-brist och ska substitueras livsl&aring;ngt efter mags&auml;cksoperationen. D&aring; B<sub>12</sub> bara finns i animaliska produkter utvecklar veganer brist p&aring; sikt, men &auml;ven genetiska defekter i de enzym till vilka B<sub>12</sub> och folat &auml;r coenzym respektive substrat kan ge brist. Dessa enzymdefekter kan oftast kompenseras genom &ouml;kat vitaminintag.</p>\n<p><br>Andra f&ouml;rklaringar &auml;r &ouml;kat vitaminbehov till f&ouml;ljd av l&auml;kemedelsinteraktioner (till exempel med antiepileptika, metotrexat och trimetoprim) och sjukdomar. En minskad absorption kan ses vid metforminbehandling, se kapitlet <a href=\"{pre}/kapitel/endokrinologi/diabetes_mellitus.html#k1_40\">Diabetes mellitus, avsnittet Metformin</a>. Ett &ouml;kat behov av folat ses vid graviditet, se kapitlet <a href=\"{pre}/kapitel/gynekologi/sjukdomar_och_lakemedel_under_graviditet_och_amning.html#i1-2_15\">Sjukdomar och l&auml;kemedel under graviditet och amning, avsnittet Information till den fertila kvinnan</a>. Personer som kontinuerligt st&aring;r p&aring; syrah&auml;mmande l&auml;kemedel l&ouml;per risk att utveckla B<sub>12</sub>-brist eftersom milj&ouml;n i mags&auml;cken blir mer basisk, vilket p&aring;verkar B<sub>12</sub>-absorptionen negativt. (29)<span style=\"color: #ff0000;\"><br></span></p>\n<h3 id=\"d1_47\">Utredning av kombinerad brist</h3>\n<p>Vid kombinerad brist p&aring; B<sub>12</sub> och folat f&ouml;religger ofta &auml;ven j&auml;rnbrist varvid utredningen utvidgas f&ouml;r att finna/utesluta celiaki, kronisk gastrit, inflammatorisk tarmsjukdom samt nutritionell brist.</p>\n<h2 id=\"d1_48\">L&aring;ga <a class=\"index\" id=\"1063643\" data-text=\"vitamin B&lt;Neds&#xE4;nkt&gt;12&lt;Default Para Font&gt;:l&#xE5;ga v&#xE4;rden utan anemi\"></a>B<sub>12</sub>-/<a class=\"index\" id=\"1063648\" data-text=\"folsyra:l&#xE5;ga v&#xE4;rden utan anemi\"></a>folatv&auml;rden utan anemi</h2>\n<p>B<sub>12</sub> och folat samverkar i en central reaktion i metyleringscykeln som om den st&ouml;rs resulterar i f&ouml;rh&ouml;jd S-homocysteinniv&aring; (Hcy). Eftersom ett normalt Hcy i praktiken utesluter s&aring;v&auml;l folat- som B<sub>12</sub>-brist kan Hcy anv&auml;ndas som initialt diagnostiskt test, s&auml;rskilt vid l&aring;g klinisk misstanke. Det prediktiva v&auml;rdet f&ouml;r folatbrist av ett f&ouml;rh&ouml;jt Hcy-v&auml;rde &auml;r dock begr&auml;nsat, exempelvis vid nedsatt njurfunktion, d&aring; v&auml;rdet stiger.</p>\n<p><br>Kvarst&aring;r den anamnestiska, kliniska misstanken starkt om B<sub>12</sub>-brist b&ouml;r S-metylmalonat (MMA) m&auml;tas. Ett f&ouml;rh&ouml;jt v&auml;rde kan p&aring;visa brist i v&auml;vnaderna innan B<sub>12</sub> sjunkit. Vid ett f&ouml;rh&ouml;jt MMA b&ouml;r man m&auml;ta gastrin och pepsinogen (se M&aring;ttlig utredning Faktaruta 1).</p>\n<p><br>Omkring 8&nbsp;% av befolkningen har en homozygot mutation av genen f&ouml;r enzymet metylentetrahydrofolatreduktas (MTHFR) med l&aring;ga eller subnormala folatniv&aring;er. Bland kvinnor i den h&auml;r gruppen finns en &ouml;kad risk f&ouml;r &aring;terkommande spontanaborter samt att f&ouml;da barn med ryggm&auml;rgsbr&aring;ck. Man anser att dessa personer har en funktionell folatbrist och b&ouml;r ha folsyratillskott f&ouml;r att uppr&auml;tth&aring;lla en normal enzymfunktion, framf&ouml;r allt inf&ouml;r och under graviditet. Se &auml;ven kapitlet <a href=\"{pre}/kapitel/gynekologi/sjukdomar_och_lakemedel_under_graviditet_och_amning.html#i1-2_15\">Sjukdomar och l&auml;kemedel under graviditet och amning, avsnittet Information till den fertila kvinnan</a>.</p>\n<p><br>Observera att B<sub>12</sub>-brist kan leda till falskt normalt folatv&auml;rde (minskad folatf&ouml;rbrukning ger anhopning). Omv&auml;nt kan folatbrist leda till falskt normalt B<sub>12</sub>-v&auml;rde. Folat i serum &auml;r, som tidigare n&auml;mnts, ofta h&ouml;gt vid B<sub>12</sub>-brist men niv&aring;erna kan sjunka kraftigt efter insatt B<sub>12</sub>-behandling.</p>\n<h3 id=\"d1_49\">Behandling</h3>\n<p>F&ouml;r behandling av B<sub>12</sub>- och folatbrist se Terapirekommendationerna. B<sub>12</sub>-behandlingen i Sverige &auml;r v&auml;rldsunik p&aring; det viset att de flesta behandlas med tabletter. De svenska traditionerna p&aring; omr&aring;det h&aring;ller &auml;ven p&aring; att sl&aring; igenom internationellt (30). Svenska forskare har l&auml;nge varit p&aring; det klara med att de klassiska dosrekommendationerna f&ouml;r folsyra varit alldeles f&ouml;r h&ouml;ga, varf&ouml;r man nu rekommenderar l&auml;gre doser &auml;n tidigare. <span> </span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "db480928-f5bf-40d7-9a11-e149c2daca2a",
+			"name": "db480928-f5bf-40d7-9a11-e149c2daca2a",
+			"type": "text",
+			"content": "<h2 id=\"d1_50\">Hemolytisk anemi</h2>\n<p>Hemolytiska anemier utg&ouml;r en heterogen grupp av sjukdomar som karakt&auml;riseras av att r&ouml;da blodkroppar s&ouml;nderfaller i f&ouml;rtid. Orsakerna kan vara defekter i cellerna, autoimmuna eller mekaniska mekanismer eller exogena faktorer. Faktaruta 2 ger en &ouml;versikt.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "97633726-7bfa-4ad8-9a27-9b14f4f7d1bf",
+			"name": "97633726-7bfa-4ad8-9a27-9b14f4f7d1bf",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "Hemolytiska anemier hos barn",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<h5 id=\"d1_53\">Erytrocytdefekter</h5>\r\n<ul>\r\n<li>Membransjukdomar: sf&auml;rocytos, elliptocytos</li>\r\n</ul>\r\n<ul>\r\n<li>Hemoglobinopati: talassemi, sickelcellanemi</li>\r\n</ul>\r\n<ul>\r\n<li>Enzymdefekter: <span>glukos-6-fosfatdehydrogenas</span>&shy;brist (G6PD), pyruvatkinasbrist</li>\r\n</ul>\r\n<h5 id=\"d1_54\">Extraerytrocyt&auml;ra orsaker</h5>\r\n<ul>\r\n<li>Immunhemolytisk anemi (postinfekti&ouml;s, auto&shy;immun)</li>\r\n</ul>\r\n<ul>\r\n<li>DIC (disseminerad intravasal koagulation)</li>\r\n</ul>\r\n<ul>\r\n<li>Hemolytiskt uremiskt syndrom</li>\r\n</ul>\r\n<ul>\r\n<li>Paroxysmal nokturn hemoglobinuri (PNH)</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "d1_52"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "30a5998c-3797-4798-8665-2de4dd34869d",
+			"name": "30a5998c-3797-4798-8665-2de4dd34869d",
+			"type": "text",
+			"content": "<h3 id=\"d1_55\">Utredning av misst&auml;nkt hemolys</h3>\n<p>Anemi med f&ouml;rh&ouml;jda retikulocyter visar att b&aring;de homeostatiska signaler och alla delar i erytrocytbildningen fungerar normalt, det vill s&auml;ga att den hypoxiska stimulationen resulterar i en &ouml;kad nybildning av r&ouml;da blodkroppar. Bristtillst&aring;nd, benm&auml;rgssvikt och benm&auml;rgsh&auml;mning kan d&aring; genast avf&auml;rdas som anemiorsak. I st&auml;llet misst&auml;nks i f&ouml;rsta hand hemolys, som kan verifieras genom att S-haptoglobin &auml;r s&auml;nkt, S-LD och eventuellt S-bilirubin &auml;r f&ouml;rh&ouml;jda. Bekr&auml;ftas hemolysmisstanken &auml;r det l&auml;mpligt att remittera till specialist f&ouml;r fortsatt utredning, varvid direkt antikroppstest (DAT) utf&ouml;rs f&ouml;r att utr&ouml;na om hemolysen &auml;r autoimmun. Vid positivt DAT-test anges ocks&aring; fr&aring;n laboratoriet antikropparnas temperaturoptimum (&rdquo;varm&rdquo; eller &rdquo;kall&rdquo;). &Auml;r DAT negativt, g&ouml;rs blodutstryk f&ouml;r att leta schistocyter, vilket kan indikera mikroangiopatisk hemolytisk anemi (MAHA), eller sf&auml;rocyter vid heredit&auml;r sf&auml;rocytos.</p>\n<h3 id=\"d1_56\">Medf&ouml;dda hemolytiska anemier</h3>\n<p>Medf&ouml;dda hemolytiska anemier, till exempel heredit&auml;r sf&auml;rocytos, sickelcellanemi och G6PD,<span style=\"font-style: italic;\"> </span>behandlas under <a href=\"{pre}/kapitel/blod/anemier.html#d1_77\">Anemi hos barn, avsnittet Erytrocyt&auml;r orsak till hemolys</a>.</p>\n<h3 id=\"d1_57\">F&ouml;rv&auml;rvade hemolytiska anemier</h3>\n<h4 id=\"d1_58\">Autoimmun hemolytisk anemi (AIHA)</h4>\n<p>Vid &rdquo;varm&rdquo; AIHA destrueras antikroppsbekl&auml;dda erytrocyter av mj&auml;ltens makrofager. Antikropparna &auml;r oftast av IgG-natur och har temperaturoptimum p&aring; cirka 37&nbsp;&deg;C.</p>\n<p><br>Typiskt f&ouml;r sjukdomen &auml;r dess skovvisa f&ouml;rlopp. Intensiteten i processen varierar kraftigt fr&aring;n en lindrig, t&auml;mligen asymtomatisk hemolys till ett stormande f&ouml;rlopp med mycket snabba och livshotande Hb-fall. Vid mycket uttalad hemolys kan fritt hemoglobin uppm&auml;tas i urinen, och njurfunktionsneds&auml;ttning f&ouml;rekommer i vissa fall.</p>\n<p><br>Vid &rdquo;kall&rdquo; AIHA &auml;r temperaturoptimum &le;&nbsp;32&nbsp;&deg;C, vilket inneb&auml;r att antikroppar f&auml;ster vid erytrocyterna i perifera k&auml;rl med l&auml;gre temperatur, d&auml;r en komplementmedierad intravasal hemolys sker som oftast &auml;r t&auml;mligen l&aring;ggradig. Akrocyanos och Raynauds fenomen &auml;r vanliga.</p>\n<p><br>I m&aring;nga fall har patienten redan en diagnostiserad sjukdom som &auml;r en rimlig orsak till sekund&auml;r AIHA, exempelvis lymfatisk leukemi/lymfom (se kapitlet <a href=\"{pre}/kapitel/onkologi/hematologiska_maligniteter.html#j2_33\">Hematologiska maligniteter, avsnittet Kronisk lymfatisk leukemi och autoimmun hemolys</a>) eller autoimmun sjukdom, men saknas detta m&aring;ste patienten utredas f&ouml;r att sp&aring;ra en bakomliggande behandlingsbar sjukdom.</p>\n<h4 id=\"d1_59\">Behandling av autoimmun hemolytisk anemi</h4>\n<p>&rdquo;Varm&rdquo; AIHA behandlas med prednisolon 1&ndash;2&nbsp;mg/kg kroppsvikt per dag. I behandlingsrefrakt&auml;ra fall pr&ouml;vas ibland h&ouml;gdos gammaglobulin, som dock oftast har en kortvarig effekt, eller splenektomi. Vid snabbt Hb-fall ges transfusioner, som kan vara br&aring;dskande och livr&auml;ddande. Positivt korstest f&aring;r inte utg&ouml;ra hinder vid ett akut transfusionsbehov. Det &auml;r ett &rdquo;provr&ouml;rsfenomen&rdquo; som upptr&auml;der vid de allra flesta immunhemolytiska anemier men som inte har klinisk relevans.</p>\n<p><br>Vid &rdquo;kall&rdquo; AIHA har steroider och splenektomi s&auml;llan effekt. Cytostatika och monoklonala antikroppar mot lymfocyter, exempelvis anti-CD-20-antikroppar (rituximab), pr&ouml;vas ibland. Folatsubstitution b&ouml;r ges vid AIHA f&ouml;r att undvika brist.</p>\n<h3 id=\"d1_60\">Mekanisk <a class=\"index\" id=\"1064044\" data-text=\"hemolys:mekanisk;mekanisk hemolys\"></a>hemolys</h3>\n<p>Klaffproteser i hj&auml;rtat kan ge intravasal mekanisk destruktion av erytrocyter, vilket kan leda till anemi. Som vid all kronisk hemolys beh&ouml;vs substitution med folat vid detta tillst&aring;nd.</p>\n<p><br>Tillf&auml;llig mekanisk hemolys kan upptr&auml;da vid l&aring;ngdistansl&ouml;pning men utg&ouml;r s&auml;llan ett kliniskt problem.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "bcbf3422-53e5-4865-ad0e-d9eda570c9d7",
+			"name": "bcbf3422-53e5-4865-ad0e-d9eda570c9d7",
+			"type": "text",
+			"content": "<h2 id=\"d1_61\">Andra hematologiska anemisjukdomar</h2>\n<h3 id=\"d1_62\">M<a class=\"index\" id=\"1064049\" data-text=\"myelodysplastiskt syndrom\"></a>yelodysplastiskt syndrom</h3>\n<p>Myelodysplastiskt syndrom (<a class=\"index\" id=\"1064054\" data-text=\"MDS:se myelodysplastiskt syndrom&lt;$nopage&gt;\"></a>MDS) kallas ocks&aring; <a class=\"index\" id=\"1064059\" data-text=\"refrakt&#xE4;ranemi\"></a>refrakt&auml;ranemi och &auml;r en stamcellssjukdom med risk f&ouml;r &ouml;verg&aring;ng i akut leukemi. En normo- eller makrocyt&auml;r anemi utan retikulocytsvar, som inte uppvisar brister eller annan f&ouml;rklaring till anemin, b&ouml;r misst&auml;nkas vara MDS. M&aring;nga patienter debuterar s&aring;ledes med enbart anemi, men f&ouml;rr eller senare tillkommer leukopeni och/eller trombocytopeni. Hemolys &auml;r inte ovanligt som inslag i bilden vid MDS. Benm&auml;rgsunders&ouml;kning och cytogenetik &auml;r n&ouml;dv&auml;ndiga f&ouml;r diagnostiken, som b&ouml;r ske vid hematologisk enhet.</p>\n<p><br>Anemin kan behandlas med erytropoesstimulerande medel som erytropoietin (Epo), vilket ger en svarsfrekvens p&aring; cirka 25&nbsp;%. Genom till&auml;gg av granulocytstimulerande behandling h&ouml;js denna siffra till cirka 40&nbsp;%. Algoritmer finns f&ouml;r bed&ouml;mning av chans till svar p&aring; tillv&auml;xtfaktorbehandling. Se &auml;ven kapitlet <a href=\"{pre}/kapitel/onkologi/hematologiska_maligniteter.html#j2_36\">Hematologiska maligniteter, avsnittet Myelodysplastiskt syndrom</a>.</p>\n<h3 id=\"d1_63\"><a class=\"crossref\" id=\"70907\"></a>Aplastisk <a class=\"index\" id=\"1064091\" data-text=\"anemi:aplastisk;aplastisk anemi\"></a>anemi</h3>\n<p>Aplastisk anemi &auml;r en s&auml;llsynt sjukdom som kan vara en stamcellssjukdom alternativt orsakad av ett l&auml;kemedel (till exempel tiklopidin och kloramfenikol) eller en virusinfektion. Karakt&auml;ristiskt &auml;r engagemang av alla cellinjer i benm&auml;rgen som ger en pancytopeni, som kan vara mer eller mindre uttalad. Vid sv&aring;r aplastisk anemi med neutrofila granulocyter &lt;&nbsp;0,5&nbsp;x&nbsp;10<sup>9</sup>/l &auml;r risken stor f&ouml;r livshotande septiska infektioner. Dessa patienter ska tas om hand omedelbart p&aring; hematologisk enhet.</p>\n<p><br>Diagnosen kr&auml;ver benm&auml;rgsbiopsi, och behandlingen best&aring;r av kraftig immunsuppression eller stamcellstransplantation. En speciell form av aplasi &auml;r Pure Red Cell Aplasia (PRCA), som enbart ber&ouml;r erytropoesen och som i vissa fall orsakas av parvovirus.</p>\n<h3 id=\"d1_64\">My<a class=\"index\" id=\"1064096\" data-text=\"myelofibros\"></a>elofibros</h3>\n<p>Myelofibros r&auml;knas till de myeloproliferativa sjukdomarna men debuterar ofta med enbart normocyt&auml;r anemi, ibland ocks&aring; med trombocytemi. Splenomegali f&ouml;religger i cirka 25&nbsp;% av fallen vid debuten.</p>\n<p><br>Diagnosen kr&auml;ver benm&auml;rgsbiopsi, och i cirka 50&nbsp;% av fallen finns en mutation i pseudokinasregionen p&aring; kromosom 9, JAK2V617F.</p>\n<p><span style=\"font-style: italic;\"><br></span>Den enda behandling som &auml;r botande &auml;r stamcellstransplantation. &Ouml;vrig terapi &auml;r symtomatisk, exempelvis anemibehandling med tillv&auml;xtfaktor. Nyligen har s&aring; kallade JAK2-inhibitorer visats ha god symtomatisk effekt p&aring; allm&auml;nsymtom, avmagring och mj&auml;ltf&ouml;rstoring, och ett dylikt preparat finns sedan 2013 registrerat f&ouml;r denna indikation. Se &auml;ven kapitlet <a href=\"{pre}/kapitel/onkologi/hematologiska_maligniteter.html#j2_18\">Hematologiska maligniteter, avsnittet Myeloproliferativa neoplacier</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "19588aab-2b50-47c4-a017-ce22585983ed",
+			"name": "19588aab-2b50-47c4-a017-ce22585983ed",
+			"type": "text",
+			"content": "<h2 id=\"d1_65\"><a class=\"crossref\" id=\"70441\"></a>Anemi hos barn</h2>\n<p>Anemi hos barn har delvis andra orsaker &auml;n hos vuxna. Flertalet heredit&auml;ra anemier debuterar under barna&aring;ren. Utredning av anemi b&ouml;rjar med att f&ouml;rs&ouml;ka fastst&auml;lla om anemin beror p&aring; en produktionsbrist eller en &ouml;kad destruktion av erytrocyter (hemolys). Screeningunders&ouml;kning framg&aring;r av Faktaruta 3.</p>\n<p><br>Figur 4 visar schematiskt hur retikulocyttalet kan anv&auml;ndas f&ouml;r att avg&ouml;ra typen av anemi. S&auml;nkt antal retikulocyter betyder att man har en bristande produktion av erytrocyter, medan ett &ouml;kat antal retikulocyter i regel tyder p&aring; en kompensation av en &ouml;kad hemolys. Det finns dock undantagsfall fr&aring;n denna enkla regel och ibland &auml;r retikulocyttalet normalt oavsett genes. Exempelvis ger hemolys som huvudsakligen sker i benm&auml;rgen ingen &ouml;kad retikulocytos. V&auml;rdet p&aring; MCV m&ouml;jligg&ouml;r indelning av anemin i mikro-, normo- respektive makrocyt&auml;r form. I barna&aring;ren &auml;r anemin vanligen mikrocyt&auml;r och orsakad av bristande erytropoes med j&auml;rnbrist och b&auml;rarskap av talassemi som de vanligaste orsakerna.</p>\n<p><br>Hemolytiska anemier uppdelas enklast i dem som beror p&aring; problem i erytrocyten sj&auml;lv, som hemoglobinopati, cellv&auml;ggsdefekt eller enzymbrist, respektive extraerytrocyt&auml;ra orsaker som immunhemolytisk anemi.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "79779a60-4c32-468c-a7fb-19a7224a2cf3",
+			"name": "79779a60-4c32-468c-a7fb-19a7224a2cf3",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "<a class=\"crossref\" id=\"88221\"></a>Screeningundersökning vid anemi  hos barn",
+				"text": "<table><tbody><tr><td><ul><li>Hb</li></ul><ul><li>MCV</li></ul><ul><li>Retikulocyter</li></ul><ul><li>Vita blodkroppar</li></ul><ul><li>Trombocyter</li></ul><ul><li>Differentialräkning</li></ul></td></tr></tbody></table>",
+				"id": "d1_67"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a0ba5445-1315-414b-8f00-730f8f99610d",
+			"name": "a0ba5445-1315-414b-8f00-730f8f99610d",
+			"type": "figure",
+			"content": {
+				"number": "4",
+				"maxwidth": "",
+				"image": "/images/d1_blo_anemier_2013fm10_images/figur4.png",
+				"title": "",
+				"text": "<a class=\"crossref\" id=\"65176\"></a>Hur retikulocyttalet kan användas för att avgöra typen av anemi ",
+				"alt": "",
+				"id": "d1_68"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9e4ed108-4cad-4f4d-9143-76734e30b490",
+			"name": "9e4ed108-4cad-4f4d-9143-76734e30b490",
+			"type": "text",
+			"content": "<h3 id=\"d1_69\"><a class=\"index\" id=\"1042342\" data-text=\"mikrocyt&#xE4;r anemi:barn;anemi:mikrocyt&#xE4;r\"></a><a class=\"crossref\" id=\"21737\"></a>Mikrocyt&auml;r anemi</h3>\n<h4 id=\"d1_70\">J&auml;rnbrist<em> </em></h4>\n<p>Den vanligaste orsaken till mikrocyt&auml;r anemi i barna&aring;ldern &auml;r j&auml;rnbrist. Under de sista veckorna av graviditeten sker en aktiv transport av j&auml;rn &ouml;ver placenta. De mest prematura barnen g&aring;r miste om detta och brukar d&auml;rf&ouml;r profylaktiskt f&aring; j&auml;rnsubstitution.&nbsp;<span style=\"color: #ff0000;\">Alla prematurf&ouml;dda och fullg&aring;ngna barn med f&ouml;delsevikt under 2 500 g b&ouml;r erbjudas j&auml;rntillskott. (31)</span> I 1-&aring;rs&aring;ldern ses j&auml;rnbrist hos barn som endast ammats. I sm&aring;barns&aring;ldern ses ibland j&auml;rnbrist i samband med komj&ouml;lks- eller glutenintolerans, bl&ouml;dande Meckels divertikel, n&auml;sbl&ouml;dningar eller gastrointestinala bl&ouml;dningar och ibland i kombination med &ouml;kad bl&ouml;dningsben&auml;genhet, vanligen trombocytdysfunktion eller lindriga former av von Willebrands sjukdom. Hos de &auml;ldre barnen kan inflammatorisk tarmsjukdom vara orsak till j&auml;rnbrist och hos flickor tillkommer menstruation, eventuellt kombinerat med l&aring;gt j&auml;rnintag.</p>\n<p><br>Om samtidig inflammation misst&auml;nks m&aring;ste man t&auml;nka p&aring; att S-ferritin stiger och S-j&auml;rn sjunker vid inflammatoriska processser varf&ouml;r l&ouml;slig transferrinreceptor (sTfR), som inte p&aring;verkas av inflammation, ger en s&auml;krare bed&ouml;mning av j&auml;rnbrist. Se &auml;ven avsnittet <a href=\"{pre}/kapitel/blod/anemier.html#d1_13\">Mikrocyt&auml;r anemi</a>.</p>\n<p><br>J&auml;rnbrist &auml;r relativt vanligt hos barn och ungdomar och har inte enbart intresse f&ouml;r erytropoesen utan &auml;ven f&ouml;r andra funktioner i den v&auml;xande individen. Behandling sker med tillskott av j&auml;rn, cirka 3&nbsp;mg/kg kroppsvikt/dag, samt j&auml;rnrik kost, framf&ouml;r allt k&ouml;tt och fisk. J&auml;rnbehandling till de minsta barnen ges l&auml;mpligen som droppar/l&ouml;sning och ska inte avslutas f&ouml;rr&auml;n man ser att f&ouml;rr&aring;dsj&auml;rnet, m&auml;tt som S-ferritin, har normaliserats. Ibland kan det vara sv&aring;rt att motivera ton&aring;ringar till j&auml;rnmedicinering och det kan d&aring; vara aktuellt att erbjuda ett antal intraven&ouml;sa injektioner av j&auml;rn f&ouml;r att f&aring; snabb b&auml;ttring.</p>\n<h4 id=\"d1_71\">Talassemia minor</h4>\n<p>Talassemia minor, b&auml;rarskap, heterozygoti f&ouml;r <span>&alpha;</span>-talassemi eller <span>&beta;</span>-talassemi, &auml;r en vanlig orsak till mikrocyt&auml;r anemi hos barn med invandrarbakgrund. Talassemia minor ger upphov till lindrig mikrocyt&auml;r hypokrom anemi, som kan f&ouml;rv&auml;xlas med j&auml;rnbristanemi. I blodutstryk finns s&aring; kallade targetceller och fraktionering av hemoglobin visar i regel f&ouml;rh&ouml;jt HbA<sub>2</sub> och vid <span>&beta;</span>-talassemi ibland &auml;ven f&ouml;rh&ouml;jt HbF. J&auml;rnbrist ger s&auml;nkt HbA<sub>2</sub> vilket kan maskera diagnosen talassemia minor vid Hb-fraktionering. Diagnosen <span>&alpha;</span>-talassemi fordrar ofta genanalys eftersom Hb-fraktionering i regel &auml;r normal eller visar endast l&auml;tt s&auml;nkt HbA<sub>2</sub>. <span style=\"color: #ff0000;\">Idag st&auml;lls ofta talassemidiagnosen med hj&auml;lp av DNA-analys.</span></p>\n<h4 id=\"d1_72\">Behandling</h4>\n<p><span>&alpha;</span>- eller <span>&beta;</span>-talassemia minor kr&auml;ver som regel ingen behandling ut&ouml;ver information om tillst&aring;ndet, men det &auml;r viktigt att i vuxen &aring;lder erbjudas genetisk information. Om man har tecken p&aring; livlig erytropoes med f&ouml;rh&ouml;jda retikulocyttal kan det ibland, framf&ouml;r allt i perioder av snabb tillv&auml;xt, uppst&aring; <span>folsyrabrist</span> och d&auml;rmed behov av substitution.</p>\n<p><br>De sv&aring;ra formerna av talassemi fordrar regelbunden transfusion av erytrocyter f&ouml;r att h&aring;lla medel-Hb &ouml;ver cirka 100&nbsp;g/l och p&aring; s&aring; s&auml;tt st&auml;nga av den egna ineffektiva erytropoesen. Kronisk blodtransfusion leder till j&auml;rnupplagring med problem fr&aring;n myokard (arytmi, hj&auml;rtinsufficiens), lever (cirros) samt endokrina organ med problem som diabetes, infertilitet och tillv&auml;xt. F&ouml;r att minska j&auml;rninlagringen &auml;r det viktigt att behandla med kelerare &ndash; deferoxamin, deferipron eller deferasirox &ndash; som singel- eller kombinationsbehandling. F&ouml;r detaljer om denna behandling, som b&ouml;r sk&ouml;tas av regionklinik, h&auml;nvisas till v&aring;rdprogram utarbetade av VPH (V&aring;rdplaneringsgrupp f&ouml;r Pediatrisk Hematologi) (32).</p>\n<h3 id=\"d1_73\"><a class=\"index\" id=\"1042365\" data-text=\"normocyt&#xE4;r anemi:barn;anemi:normocyt&#xE4;r;anemi, normocyt&#xE4;r\"></a><a class=\"crossref\" id=\"73840\"></a>Normocyt&auml;r anemi</h3>\n<p>Normocyt&auml;r anemi hos barn &auml;r antingen isolerad eller som del i en pancytopeni. TEC (Transient Erythroblastopenia of Childhood) &auml;r en isolerad anemi som drabbar sm&aring;barn som vid diagnos kan ha uttalad anemi, mycket l&aring;gt retikulocyttal och benm&auml;rg med mycket svag erytropoes. Vanligen &auml;r barnen t&auml;mligen op&aring;verkade av sitt l&aring;ga Hb och man saknar andra sjukdomssymtom ut&ouml;ver tr&ouml;tthet och blekhet. Sannolikt orsakas sjukdomen av virus och g&aring;r i spontan regress men barnet kan beh&ouml;va tillf&auml;llig erytrocyttransfusion. Ibland diagnostiseras sjukdomen just d&aring; retikulocyterna &aring;terv&auml;nder och de kan d&aring; vara h&ouml;ga och man kan misstolka att det r&ouml;r sig om hemolytisk anemi. Andra tecken p&aring; hemolys, som f&ouml;rh&ouml;jt okonjugerat bilirubin, saknas dock.</p>\n<h4 id=\"d1_74\">Andra orsaker till isolerad normocyt&auml;r anemi</h4>\n<p>Andra orsaker till isolerad anemi hos barn kan vara tidig benm&auml;rgssjukdom (leukemi!), kronisk inflammation, aplastisk anemi, njurinsufficiens eller hypotyreos. Aplastisk anemi kan vara konstitutionell, som vid fanconianemi (FA) eller dyskeratosis congenita (DC). FA kan debutera i olika &aring;ldrar och debutsymtomen kan vara fr&aring;n olika poeser &ndash; anemi, leukopeni och trombocytopeni. Vid DC finns benm&auml;rgssjukdom i cirka h&auml;lften av fallen och vanligen leder nagelf&ouml;r&auml;ndringar, leukoplaki i munh&aring;lan eller hyperpigmentering till korrekt diagnos.</p>\n<h3 id=\"d1_75\"><a class=\"index\" id=\"1042375\" data-text=\"makrocyt&#xE4;r anemi:barn;anemi:makrocyt&#xE4;r\"></a>Makrocyt&auml;r anemi</h3>\n<p>Makrocyt&auml;r anemi &auml;r ovanlig hos barn men kan upptr&auml;da vid en del genetiska sjukdomar eller vara f&ouml;rv&auml;rvad. I nyf&ouml;ddhets- och sm&aring;barns&aring;ldern kan man &ouml;verv&auml;ga Diamond&ndash;Blackfans anemi (DBA), FA, sideroblastanemi, kongenital dyserytropoetisk anemi och DC. En viktig differentialdiagnos till DBA &auml;r TEC (se <a href=\"{pre}/kapitel/blod/anemier.html#d1_14\">Normocyt&auml;r anemi</a>).</p>\n<p><span style=\"color: #ff0000;\"><br></span>En annan heredit&auml;r makrocyt&auml;r anemi &auml;r Imerslund&ndash;Gr&auml;sbecks syndrom d&auml;r barnet har normal intrinsic factor men en selektiv defekt i upptaget av vitamin B<sub>12</sub> som inte kan korrigeras med intrinsic factor. Det finns ett flertal s&auml;llsynta defekter i <span>folsyrametabolismen</span>. Ton&aring;ringar, framf&ouml;r allt de som &auml;r veganer, utvecklar ibland aliment&auml;r brist p&aring; folsyra och/eller vitamin B<sub>12</sub>.</p>\n<p><br>Ut&ouml;ver dietr&aring;d &auml;r behandlingen som hos vuxna. <span>Folsyrabrist</span> kan ocks&aring; upptr&auml;da som l&auml;kemedelsbiverkning, till exempel av epilepsimediciner. Pernici&ouml;s anemi &auml;r s&auml;llsynt hos barn men kan upptr&auml;da som del i polyglandul&auml;ra autoimmuna syndrom.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "477f307a-96d3-481a-a784-e13eec923f88",
+			"name": "477f307a-96d3-481a-a784-e13eec923f88",
+			"type": "facts",
+			"content": {
+				"number": "4",
+				"title": "<a class=\"crossref\" id=\"34533\"></a>Läkemedel som kan utlösa hemolys  vid G6PD",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>Antimalariamedel</li>\r\n</ul>\r\n<ul>\r\n<li>Sulfonamider/sulfoner</li>\r\n</ul>\r\n<ul>\r\n<li>Nitrofurantoin</li>\r\n</ul>\r\n<ul>\r\n<li>Nalidixinsyra</li>\r\n</ul>\r\n<ul>\r\n<li>Kloramfenikol</li>\r\n</ul>\r\n<ul>\r\n<li>Ciprofloxacin</li>\r\n</ul>\r\n<ul>\r\n<li>Acetylsalicylsyra</li>\r\n</ul>\r\n<ul>\r\n<li><span>Vitamin K</span>-analoger</li>\r\n</ul>\r\n<ul>\r\n<li>Askorbinsyra</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "d1_79"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fe731470-c4f2-4213-9fa7-9172af468268",
+			"name": "fe731470-c4f2-4213-9fa7-9172af468268",
+			"type": "text",
+			"content": "<h3 id=\"d1_76\"><a class=\"index\" id=\"1042384\" data-text=\"hemolytisk anemi:barn\"></a><a class=\"crossref\" id=\"19935\"></a>Hemolytisk anemi</h3>\n<p>Hemolytisk anemi kan ha erytrocyt&auml;r eller extraerytrocyt&auml;r orsak. I Faktaruta 3 finns de vanligaste formerna av hemolytisk anemi. Barn har samma laboratorieprofil vid hemolys som vuxna, se avsnittet <a href=\"{pre}/kapitel/blod/anemier.html#d1_50\">Hemolytisk anemi</a>, men haptoglobin kan saknas eller vara l&aring;gt hos friska mindre barn.</p>\n<h4 id=\"d1_77\"><a class=\"crossref\" id=\"50988\"></a>Erytrocyt&auml;r orsak till hemolys</h4>\n<p><span style=\"font-style: italic;\"><a class=\"index\" id=\"1042396\" data-text=\"heredit&#xE4;r sf&#xE4;rocytos;sf&#xE4;rocytos:heredit&#xE4;r\"></a>Heredit&auml;r sf&auml;rocytos</span> har varierande penetrans och symtomen kan variera kraftigt mellan olika familjemedlemmar. Typiska symtom &auml;r intermittent tr&ouml;tthet, blekhet, ikterus och man finner anemi och ofta splenomegali. &Ouml;kad bilirubinuts&ouml;ndring kan leda till gallsten och symtom fr&aring;n gallv&auml;garna i tidig &aring;lder. Man f&ouml;rs&ouml;ker undvika splenektomi i alltf&ouml;r tidig &aring;lder men ibland &auml;r det n&ouml;dv&auml;ndigt om det finns ett stort behov av erytrocyttransfusion och d&auml;rmed problem med j&auml;rnupplagring.</p>\n<p><span style=\"font-style: italic;\"><br>Sickelcellanemi (HbSS)</span> orsakas av en punktmutation i <span>&beta;</span>-globingenen, och &auml;r en av de vanligaste &auml;rftliga sjukdomarna i v&auml;rlden, framf&ouml;r allt i Afrika och Mellan&ouml;stern. Vid sickelcellanemi &auml;r individen k&auml;nslig f&ouml;r oxidativ stress som leder till deformation av den r&ouml;da blodkroppen som blir halvm&aring;neformad (sicklad). Sicklade celler fastnar i mikrocirkulationen och ger de typiska vasoocklusiva kriserna med ischemi, sm&auml;rta och ibland trombos. Vanliga symtom &auml;r svullnad och sm&auml;rta i fingrar, h&auml;nder, f&ouml;tter och extremiteter. Allvarliga former av vasoocklusiv kris &auml;r akut stroke, akut &rdquo;chest-syndrome&rdquo; och priapism. Det kan ocks&aring; uppst&aring; akut anemi p&aring; grund av hemolytisk kris i samband med infektioner, aplastisk kris vid till exempel infektion med parvovirus eller s&aring; kallad sekvestreringskriser med akut, kraftig mj&auml;ltf&ouml;rstoring, buksm&auml;rtor och cirkulatorisk kollaps. Det finns ocks&aring; en &ouml;kad risk f&ouml;r infektioner, som osteomyelit och peritonit, orsakade av fr&auml;mst salmonella och pneumokocker.</p>\n<p><span style=\"font-style: italic;\"><a class=\"index\" id=\"1042403\" data-text=\"G6PD\"></a><br>G6PD</span> &auml;r en av de mest spridda mutationerna vi k&auml;nner till hos m&auml;nniska och finns i h&ouml;g prevalens (5&ndash;20&nbsp;%) i Mellan&ouml;stern, Afrika och Fj&auml;rran &Ouml;stern. Det finns &ouml;ver 200 mutationer med olika klinisk bild i olika befolkningar. G6PD-brist g&ouml;r att erytrocyterna skadas av fria <span>syreradikaler</span> med hemolys som f&ouml;ljd. Sjukdomen &auml;r X-kromosomal och drabbar pojkar, men &auml;ven flickor kan vid extrem inaktivering av den ena X-kromosomen (lyonisering) f&aring; symtom.</p>\n<p><br>Under normala f&ouml;rh&aring;llanden &auml;r patienten symtomfri, men akut hemolys kan utl&ouml;sas av Fava (bond)-b&ouml;nor, infektion samt vissa l&auml;kemedel. Olika mutationer ger dock en varierad klinisk bild. Faktaruta 4 tar upp l&auml;kemedel som kan orsaka hemolys vid G6PD. Den intravasala hemolysen kan vara mycket kraftig med feber, snabbt fall av hemoglobinniv&aring;n och m&ouml;rk urin. Hemolysen avstannar utan specifik behandling men erytrocyttransfusion &auml;r ofta n&ouml;dv&auml;ndig i den akuta fasen.</p>\n<h4 id=\"d1_80\">Extraerytrocyt&auml;r orsak till hemolys</h4>\n<p><span style=\"font-style: italic;\"><a class=\"index\" id=\"1042407\" data-text=\"autoimmun hemolys;hemolys:autoimmun;hemolytisk anemi:autoimmun\"></a>Autoimmun hemolys</span> kan vara postinfekti&ouml;s eller kopplad till annan autoimmun sjukdom som exempelvis SLE. Med DAT (Coombs direkta antiglobulintest) kan man p&aring;visa immunglobuliner eller komplement p&aring; erytrocytens yta. Alternativt kan man ocks&aring; p&aring;visa cirkulerande antikroppar. Ibland f&ouml;rekommer k&ouml;ldagglutininer (IgM), till exempel vid mykoplasmainfektion. Sjukdomen kan ha ett mycket snabbt f&ouml;rlopp och leda till livshotande anemi. I lindriga, infektionsutl&ouml;sta fall kan sjukdomen vara sj&auml;lvbegr&auml;nsande men ofta beh&ouml;vs steroidbehandling. Ovanliga fall kan kr&auml;va intensivv&aring;rd, plasmabyte, erytrocyttransfusioner och behandling med intraven&ouml;st gammaglobulin, rituximab, azatioprin eller annan immunsuppressiv behandling.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "39ab7c7b-397b-4627-82ef-ce3afd59dccc",
+			"name": "39ab7c7b-397b-4627-82ef-ce3afd59dccc",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"d1_81\">Referenser</h2>\n<ol class=\"references\"><li id=\"reference_1\"><span style=\"color: #ff0000;\">Sun ER, Chen CA, Ho G, Earley CJ, Allen RP. Iron and the restless legs syndrome. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/9646381\">Sleep 1998;21:371-377</a>.</span></li>\n<li id=\"reference_2\"><span style=\"color: #ff0000;\">Wang J, O&rsquo;Reilly B, Venkataraman R, et al. Efficacy of oral iron in patients with restless legs syndrome and a low-normal ferritin: A randomized, double-blind, </span><span style=\"color: #ff0000;\">placebo-controlled study. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/19230757\">Sleep Med 2009;10:973&ndash;975</a>.</span></li>\n<li id=\"reference_3\"><span style=\"color: #ff0000;\">Kryger MH, Otake K, Foerster J. Low body stores of iron and restless legs </span><span style=\"color: #ff0000;\">syndrome: a correctable cause of insomnia in adolescents and teenagers. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/?term=Kryger+MH%2C+Otake+K%2C+Foerster+J.+Low+body+stores+of+iron+and+restless+legs+syndrome%3A+a+correctable+cause+of+insomnia+in+adolescents+and+teenagers.+Sleep+Med.+2002%3B3%3A127%E2%80%9332\">Sleep Med. 2002;3:127&ndash;32</a>.</span></li>\n<li id=\"reference_4\"><span style=\"color: #ff0000;\">Lieske B, Becker I, Schulz RJ, Polidori MC, Kassubek J, Roehrig G. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/?term=Lieske+B%2C+Becker+I%2C+Schulz+RJ%2C+Polidori+MC%2C+Kassubek+J%2C+Roehrig+G.+Z+Gerontol+Geriatr.\">Z Gerontol Geriatr. 2016;49:626-631</a>.</span></li>\n<li id=\"reference_5\"><span style=\"color: #ff0000;\">Favrat B, Balck K, Breymann C, et al. Evaluation of a single dose of ferric carboxymaltose in fatigued, <span class=\"highlight\">iron</span>-deficient women--PREFER a <span class=\"highlight\">randomized</span>, <span class=\"highlight\">placebo-controlled</span> <span class=\"highlight\">study</span>. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/24751822\">PLoS One. 2014; 9(4): e94217. doi:10.1371/journal.pone.0094217</a><br></span></li>\n<li id=\"reference_6\"><span style=\"color: #ff0000;\">Herfs R, Fleitmann L, Kocsis I. Treatment of Iron Deficiency with or without Anaemia with Intravenous Ferric Carboxymaltose in Gynaecological Practices - A Non-Interventional Study. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/24741123\">Geburtshilfe Frauenheilkd. 2014; 74: 81-88</a>.</span></li>\n<li id=\"reference_7\"><span style=\"color: #ff0000;\">Verdon F, Burnand B, Stubi CL et al. <span class=\"highlight\">Iron</span> supplementation for unexplained fatigue in non-anaemic women: <span class=\"highlight\">double blind</span> randomised <span class=\"highlight\">placebo controlled</span> trial. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/12763985\"><span>BMJ.</span> 2003 ;326(7399):1124</a>.</span></li>\n<li id=\"reference_8\"><span style=\"color: #ff0000;\">Krayenbuehl PA, Battegay E, Breymann C, Furrer J, Schulthess G. Intravenous <span class=\"highlight\">iron</span> for the treatment of fatigue in nonanemic, premenopausal women with low serum <span class=\"highlight\">ferritin</span> concentration. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/21705493\"><span>Blood. </span>2011;118:3222-3227.</a></span></li>\n<li id=\"reference_9\"><span style=\"color: #ff0000;\">Birgeg&aring;rd G, Schneider K, Ulfberg J. High incidence of <span class=\"highlight\">iron</span> depletion and <span class=\"highlight\">restless</span> leg <span class=\"highlight\">syndrome</span> (RLS) in regular blood donors: intravenous <span class=\"highlight\">iron</span> sucrose substitution more effective than <span class=\"highlight\">oral</span> <span class=\"highlight\">iron</span>. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/20598107\"><span>Vox Sang.</span> 2010;99:354-61</a></span></li>\n<li id=\"reference_10\">Haas JD, Brownlie T. Iron deficiency and reduced work capacity: A critical review of the research to determine a causal relationship. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed?term=haas%20jd%20and%20iron%20and%202001\" target=\"_blank\" class=\"linkOut\">J Nutr. 2001;131:676S</a> &ndash;88S, diskussion 688S&ndash;90S.</li>\n<li id=\"reference_11\"><span style=\"color: #ff0000;\">Com&iacute;n-Colet J, Enjuanes C, Gonz&aacute;lez G et al. <span class=\"highlight\">Iron</span> deficiency is a key determinant of health-related quality of life in <span class=\"highlight\">patients</span> with chronic heart failure regardless of anaemia status. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/23703106\"><span>Eur J Heart Fail.</span> 2013 Oct;15:1164-1172</a>.</span></li>\n<li id=\"reference_12\"><span style=\"color: #ff0000;\">Silverberg DS, Iaina A, Schwartz D, Wexler D. Intravenous iron in heart failure: beyond targeting anemia. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/21057903\"><span>Curr Heart Fail Rep.</span> 2011 Mar;8:14-21</a>.</span></li>\n<li id=\"reference_13\">Bickley LS, Szilagyi PG. Bates guide to physical examination and history-taking with access code. 11th ed. Philadelphia: Lippincott Williams &amp; Wilkins; 2012. ISBN 13: 9781609137625.</li>\n<li id=\"reference_14\"><span style=\"color: #ff0000;\">DSOG (Dansk Selskab for Obstetrik og Gyn&aelig;kologi). 2016. Anaemia and iron deficiency in pregnancy and postpartum. <a href=\"http://www.nfog.org/files/guidelines/NFOG_guidelines_DEN_Anaemia%20in%20pregnancy%20and%20post%20partum_2016.pdf\">www.dsog.dk</a><br></span></li>\n<li id=\"reference_15\"><span style=\"color: #ff0000;\">Breymann C, Milman N, Mezzacasa A et al. Ferric carboxymaltose vs. oral iron in the treatment of pregnant women with iron deficiency anemia: an international, open-label, randomized controlled trial (FER-ASAP). <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/27278921\">J Perinat Med. 2016; DOI 10.1515/jpm-2016-0050</a>.</span></li>\n<li id=\"reference_16\"><span style=\"color: #ff0000;\">Breymann C, Honegger C, Holzgreve W, Surbek D. Diagnosis and treatment of iron-deficiency anaemia during pregnancy and postpartum. <a href=\"&#xB4;https://www.ncbi.nlm.nih.gov/pubmed/20577752\"><span>Arch Gynecol Obstet.</span> 2010;282:577-80.</a></span></li>\n<li id=\"reference_17\"><span style=\"color: #ff0000;\">Ortiz R, Toblli JE, Romero JD et al. Efficacy and safety of oral iron(III) polymaltose complex versus ferrous sulfate in pregnant women with iron-deficiency anemia: a multicenter, randomized, controlled study. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/21859366\"><span>J Matern Fetal Neonatal Med.</span> 2011;24:1347-1352</a>.</span></li>\n<li id=\"reference_18\"><span style=\"color: #ff0000;\">Van Wyck DB, Martens MG, Seid MH, Baker JB, Mangione A. Intravenous ferric carboxymaltose compared with oral iron in the treatment of postpartum anemia: a randomized controlled trial. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/17666600\"><span>Obstet Gynecol.</span> 2007;110(2 Pt 1):267-278</a>.</span></li>\n<li id=\"reference_19\"><span style=\"color: #ff0000;\">Seid MH, Derman RJ, Baker JB, Banach W, Goldberg C, Rogers R. <span class=\"highlight\">Ferric carboxymaltose</span> <span class=\"highlight\">injection</span> in the <span class=\"highlight\">treatment</span> of <span class=\"highlight\">postpartum</span> <span class=\"highlight\">iron deficiency anemia</span>: a <span class=\"highlight\">randomized controlled clinical trial</span>. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/18928998\"><span>Am J Obstet Gynecol.</span> 2008;199:435.e1-7</a></span></li>\n<li id=\"reference_20\">Bhandal N, Russell R. Intravenous versus oral iron therapy for postpartum anaemia. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed?term=bhandal%20n%20and%20anemia%20and%202006\" target=\"_blank\" class=\"linkOut\">BJOG. 2006;113:1248</a> &ndash;<span class=\"blue\">52.</span></li>\n<li id=\"reference_21\"><span class=\"blue\" style=\"color: #ff0000;\">Sheikh M, Hantoushzadeh S, Shariat M, Farahani Z, Ebrahiminasab O. The <span class=\"highlight\">efficacy</span> of <span class=\"highlight\">early</span> <span class=\"highlight\">iron</span> <span class=\"highlight\">supplementation</span> on <span class=\"highlight\">postpartum</span> <span class=\"highlight\">depression</span>, a <span class=\"highlight\">randomized</span> <span class=\"highlight\">double-blind</span> <span class=\"highlight\">placebo-controlled</span> <span class=\"highlight\">trial</span>. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/?term=The+efficacy+of+early+iron+supplementation+on+postpartum+depression%2C+a+randomized+double-blind+placebo-controlled+trial\"><span>Eur J Nutr.</span> 2017;56:901-908.</a></span></li>\n<li id=\"reference_22\"><span class=\"blue\" style=\"color: #ff0000;\">Eckerdal P, Kollia N, L&ouml;fblad J et al. Delineating the Association between Heavy <span class=\"highlight\">Postpartum</span> Haemorrhage and <span class=\"highlight\">Postpartum</span> <span class=\"highlight\">Depression</span>. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/26807799\"><span>PLoS One.</span> 2016;11(1):e0144274</a>.</span></li>\n<li id=\"reference_23\">Veijola LI, Oksanen AM, Sipponen PI, Rautelin HI. Association of autoimmune type atrophic corpus gastritis with Helicobacter pylori infection. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed?term=veijola%20li%20and%20gastritis%20and%202010\" target=\"_blank\" class=\"linkOut\">World J Gastroenterol. 2010;16:83&ndash;8.</a></li>\n<li id=\"reference_24\">Mana F. The Maastricht III consensus: summary and comments. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed?term=mana%20f%20and%20iron%20and%202009\" target=\"_blank\" class=\"linkOut\">Acta Gastroenterol Belg. 2009;72:344&ndash;9</a><a href=\"http://www.ncbi.nlm.nih.gov/pubmed?term=mana%20f%20and%20iron%20and%202009\" target=\"_blank\" class=\"linkOut\">.</a></li>\n<li id=\"reference_25\">Duport N, Preziosi P, Boutron-Ruault MC, et al. Consequences of iron depletion on health in menstruating women. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed?term=duport%20n%20and%20iron%20and%202003\" target=\"_blank\" class=\"linkOut\">Eur J Clin Nutr. 2003;57:1169</a> .</li>\n<li id=\"reference_26\">Auerbach M, Ballard H. Clinical use of intravenous iron: administration, efficacy, and safety. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/21239816\" target=\"_blank\" class=\"linkOut\">Hematology Am Soc Hematol Educ Program. </a> 2010;2010:338&ndash;47.</li>\n<li id=\"reference_27\"><span class=\"blue\"></span>Goodnough LT, Nemeth E, Ganz T. Detection, evaluation, and management of iron-restricted erythropoiesis.<a href=\"http://www.ncbi.nlm.nih.gov/pubmed/20826717\" target=\"_blank\" class=\"linkOut\">Blood. 2010;116: 4754&ndash;61.</a></li>\n<li id=\"reference_28\">Aapro M, &Ouml;sterborg A, Gasc&oacute;n P, Ludwig H, Beguin Y. Prevalence and management of cancer-related anaemia, iron deficiency and the specific role of i.v. iron. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22575608\" target=\"_blank\" class=\"linkOut\">Ann Oncol. 2012;23:1954&ndash;62.</a></li>\n<li id=\"reference_29\"><span style=\"color: #ff0000;\">Jung SB, Nagaraja V, Kapur A, Eslick GD. Association between B12 deficiency and long-term use of acid-lowering agents: a systematic review and meta-analysis. Intern Med J 2015;45:409-16.</span></li>\n<li id=\"reference_30\">Castelli MC, Friedman K, Sherry J, Brazzillo K, Genoble L, Bhargava P, Riley MG. Comparing the efficacy and tolerability of a new daily oral vitamin B<sub>12</sub> formulation and intermittent intramuscular vitamin B<sub>12</sub> in normalizing low cobalamin levels: a randomized, open-label, parallel-group study. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/21600388\" target=\"_blank\" class=\"linkOut\">Clin Ther. 2011;33:358&ndash;71</a> .</li>\n<li id=\"reference_31\"><span style=\"color: #ff0000;\">Svenska neonatalf&ouml;reningen. 2013. J&auml;rntillskott till prematurf&ouml;dda barn och barn med l&aring;g f&ouml;delsevikt. <a href=\"http://neo.barnlakarforeningen.se/wp-content/uploads/sites/14/2014/03/Jarntillskott_2013.pdf\">www.barnlakarforeningen.se/vardprogram/</a> </span></li>\n<li id=\"reference_32\">V&aring;rdprogram VPH (V&aring;rdplaneringsgrupp f&ouml;r Pediatrisk Hematologi). 2009. Thalassemi och kronisk blodtransfusion. <a href=\"http://www.blf.net/onko/page4/page29/page29.html\" target=\"_blank\" class=\"linkOut\">www.blf.net</a></li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "true",
+					"pagefootnotes.js": "false",
+					"references.js": "true"
+				}
+			}
+		},
+		{
+			"id": "c116785d-d5c3-4b58-9790-af9dd0b7398c",
+			"name": "c116785d-d5c3-4b58-9790-af9dd0b7398c",
+			"type": "text",
+			"content": "<h3 id=\"d1_82\">F&ouml;r vidare l&auml;sning</h3>\n<ol class=\"references\" style=\"list-style-type: lower-alpha;\">\n<li id=\"reference_1\">Garthon G, Juliusson G, red. Blodets sjukdomar. Lund: Studentlittertur AB; 2012 s 195&ndash;253. <br>ISBN 9789144069241.</li>\n<li id=\"reference_2\">Internationella hematologiska standardverk som har utkommit under senare &aring;r finns redovisade under rubriken Hematologisk onkologi i <a href=\"{pre}/kapitel/onkologi/guide-till-info-i-lb.html\">Tum&ouml;rsjukdomar &ndash; guide till information i L&auml;kemedelsboken</a>.</li>\n<li id=\"reference_3\"><span style=\"color: #ff0000;\">Niafar M, Hai F, Porhomayon J, Nader ND. Th role of metformin on vitamin B12 deficiency: a meta-analysis review. Intern Emerg Med 2015;10:93-102.</span><span style=\"color: #ff0000;\"></span></li>\n<li id=\"reference_5\"><span style=\"color: #ff0000;\">Gomes S, Lopes C, Pinto E. Folate and folic acid in the periconceptional period: recommendation from official health organizations in thirty-six countries worldwide and WHO. Public Health Nutrition 2015;16:1-14.</span></li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/blod/anemier.json",
+	"modified": "2017-04-10 15:28",
+	"isPublished": true,
+	"indexed": "true"
+}

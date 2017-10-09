@@ -1,0 +1,101 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Test",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-10-26 21:09",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Förnamn Efternamn",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "e11b4250-2d13-43fc-a9af-5312bfb6eadc",
+			"name": "75898f77-2081-4efd-8011-38c6bcb43a46",
+			"type": "text",
+			"content": "<h1 id=\"Kapitelrubrik\">Kapitelrubrik</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8a5f7e1b-4efb-4df8-9eb1-7ff703dd4337",
+			"name": "b6389922-8819-4077-bdaa-5e12e949dfb9",
+			"type": "author",
+			"content": {
+				"firstname": "Förnamn",
+				"surname": "Efternamn",
+				"description": "Arbetsplats",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f1eeb21b-07f9-4305-a4e3-5b9a9587d148",
+			"name": "94287e38-742f-4738-a667-93663211f167",
+			"type": "text",
+			"content": "<p class=\"ingress\">Ingresstext</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "98b84f87-39d4-4c36-93ba-430b86b2ceff",
+			"name": "cb8d74e2-785f-4f92-b9f4-0544ecfbf73b",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2>\n<ol class=\"references\"><li id=\"reference_1\"><strong> </strong><strong>Rad 1</strong></li>\n<li id=\"reference_2\"><strong> </strong><strong>Rad 2</strong></li>\n<li id=\"reference_3\"><strong> </strong><strong>Rad 3</strong></li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/test.json",
+	"indexed": "true",
+	"modified": "2015-10-26 21:14"
+}

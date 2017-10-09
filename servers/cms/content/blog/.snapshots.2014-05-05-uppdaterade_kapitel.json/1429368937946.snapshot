@@ -1,0 +1,63 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "Uppdaterade kapitel",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "nyhet",
+	"created": "2014-05-05 12:00",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "/blog/2014-05-05-uppdaterade_kapitel",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "ebe97e58-a675-43ee-87dc-b141325fa187",
+			"name": "b9e0301b-dd35-4d53-81bf-1936cdb482cb",
+			"type": "text",
+			"content": "<h1 id=\"Rubrik\">Rubrik</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "62932beb-5f86-48aa-8a89-d543cfb75cd3",
+			"name": "f0e89a46-bb24-4cd7-86d2-123d540dc80c",
+			"type": "summary",
+			"content": "<p>Sammanfattning</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/blog/2014-05-05-uppdaterade_kapitel.json",
+	"modified": "2015-04-18 16:55"
+}

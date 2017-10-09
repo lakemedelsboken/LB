@@ -1,0 +1,65 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "Uppdaterad text rödmarkeras",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-05-18 17:59",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "/blog/2014-10-16-uppdaterad_text_r_dmarkeras_genom_en_ny_funktion",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "696ab417-21ea-4157-a31c-af332c4843dc",
+			"name": "132d8716-4c68-40d4-b9d5-b421166d3856",
+			"type": "summary",
+			"content": "<p>Sammanfattning</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c84054ca-c352-429e-8fe5-0cf16f8e4a89",
+			"name": "40a79a07-8460-436a-b397-e7f0e960b90f",
+			"type": "text",
+			"content": "<h1 id=\"Uppdaterad-text-rodmarkeras-genom-en-ny-funktion\">Uppdaterad text r&ouml;dmarkeras genom en ny funktion</h1>\n<p class=\"normal\">I och med att&nbsp;<a href=\"{pre}/blog/2014-07-16-uppdaterade_kapitel.html\">kapitel uppdateras med ny information</a>, inte minst myndighetsinformation, har vi tagit fram en ny funktion i webbversionen av L&auml;kemedelsboken. Den inneb&auml;r att du nu kan v&auml;lja om uppdaterad text ska visas med r&ouml;d f&auml;rg.</p>\n<p class=\"normal\">En ny symbol (<a href=\"#\" class=\"btn btn-small btn-primary\"><i class=\"fa fa-cog\"></i></a>) visas i &ouml;vre h&ouml;gra h&ouml;rnet f&ouml;r ett kapitel som &auml;r uppdaterat. Klicka p&aring; symbolen och v&auml;lj om du vill att&nbsp;<span class=\"updated\">texten ska r&ouml;dmarkeras</span>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/blog/2014-10-16-uppdaterad_text_r_dmarkeras_genom_en_ny_funktion.json",
+	"indexed": "true",
+	"modified": "2015-05-18 18:20"
+}

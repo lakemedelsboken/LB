@@ -1,0 +1,62 @@
+{
+	"templateName": "default",
+	"templateDescription": "Vanlig sida",
+	"title": "",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-06-15 10:05",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "39e8ff27-955b-4778-87ee-265fd4b5c6d8",
+			"name": "39e8ff27-955b-4778-87ee-265fd4b5c6d8",
+			"type": "text",
+			"content": "<h1 id=\"Gynekologikapitel\">Gynekologikapitel</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "238f9e39-037d-4fbc-86e1-845e606a3c6f",
+			"name": "238f9e39-037d-4fbc-86e1-845e606a3c6f",
+			"type": "collection",
+			"content": {
+				"basedir": "",
+				"filter": "",
+				"perpage": 10,
+				"htmlbefore": "",
+				"htmlafter": "",
+				"createfeed": "true"
+			},
+			"settings": {}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/gynekologi/index.json",
+	"indexed": "true",
+	"modified": "2015-06-15 10:06"
+}

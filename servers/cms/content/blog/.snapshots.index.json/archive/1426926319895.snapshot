@@ -1,0 +1,33 @@
+{
+	"templateName": "default",
+	"templateDescription": "Blank sida",
+	"title": "Nyheter",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-03-14 12:55:09",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"content": [
+		{
+			"id": "c30fa460-4403-47c5-a35b-4cc3a96820e2",
+			"name": "c30fa460-4403-47c5-a35b-4cc3a96820e2",
+			"type": "collection",
+			"content": {
+				"basedir": "/blog/",
+				"filter": "nyhet",
+				"perpage": "10",
+				"htmlbefore": "",
+				"htmlafter": "<div>\r\n<a class=\"pull-right\" href=\"{URL}\">Läs vidare &#187;</a></div>\r\n<div><hr></div>",
+				"createfeed": "true"
+			},
+			"settings": {}
+		}
+	],
+	"type": "file",
+	"path": "/blog/default.json",
+	"isPublished": true
+}

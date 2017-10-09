@@ -1,0 +1,998 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Hypertoni",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2016-02-22 12:17",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Kristina Bengtsson Boström, Karin Manhem",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "4abddc20-0d7a-4f9c-a43a-00fb5f4cb3e2",
+			"name": "be607a44-1196-4d28-a439-66008abd48e1",
+			"type": "text",
+			"content": "<h1 id=\"Hypertoni\">Hypertoni</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5f95a961-c151-4a3d-bd34-1ef5826c2a9f",
+			"name": "496fc955-8e0a-496a-bb1b-feb5f627f73a",
+			"type": "author",
+			"content": {
+				"firstname": "Kristina",
+				"surname": "Bengtsson Boström",
+				"description": "Närhälsan Billingen Vårdcentral, FoU centrum Skaraborg, Skövde",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "93e88d77-b365-4eb5-8a12-f3c816250e71",
+			"name": "93e88d77-b365-4eb5-8a12-f3c816250e71",
+			"type": "author",
+			"content": {
+				"firstname": "Karin",
+				"surname": "Manhem",
+				"description": "Avdelningen för molekylär och klinisk medicin, Sahlgrenska Universitetssjukhuset, Göteborg",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a1bcae09-8bb6-41a6-8026-b1c5da686033",
+			"name": "0a910d97-6736-469c-9051-98de96690f60",
+			"type": "text",
+			"content": "<p class=\"ingress\">H&ouml;gt blodtryck (hypertoni) &auml;r ett vanligt, farligt, behandlingsbart men underbehandlat tillst&aring;nd. I Sverige ber&auml;knas cirka 2 miljoner <span style=\"color: #ff0000;\">individer</span> ha h&ouml;gt blodtryck. F&ouml;rekomsten &ouml;kar med &aring;ldern. Hypertoni &auml;r den enskilt st&ouml;rsta behandlingsbara riskfaktorn f&ouml;r hj&auml;rtk&auml;rlkomplikationer. Komplikationerna &auml;r framf&ouml;rallt stroke, men &auml;ven hj&auml;rtsvikt, kransk&auml;rls- och njursjukdom. F&ouml;r&auml;ndring av livsstil &auml;r grunden i behandlingen, men flertalet individer beh&ouml;ver ocks&aring; l&auml;kemedel. <span style=\"color: #ff0000;\">L&auml;kemedelsbehandlingen, som best&aring;r av &auml;ldre, bepr&ouml;vade l&auml;kemedel, &auml;r numera billig</span>. <span style=\"text-decoration: line-through;\">men nya l&auml;kemedel har inte tillkommit p&aring; senare tid varf&ouml;r behandlingsarsenalen med &auml;ldre l&auml;kemedel lyfts fram</span>.</p>\n<p class=\"indent ingress\"><br>Nya liksom &auml;ldre studier har visat att endast runt 50&nbsp;% av patienterna med behandlad hypertoni n&aring;r m&aring;lv&auml;rdet f&ouml;r blodtryck efter behandling. En orsak kan vara att hypertoni vanligen inte ger mycket symtom medan behandlingen kan ge biverkningar vilket f&ouml;rsv&aring;rar omh&auml;ndertagandet och utg&ouml;r en utmaning f&ouml;r v&aring;rden.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "33f86f60-3d27-41a5-acf2-db3816d2b2cb",
+			"name": "33f86f60-3d27-41a5-acf2-db3816d2b2cb",
+			"type": "text",
+			"content": "<h2 id=\"Forekomst-av-hypertoni\"><strong>F&ouml;rekomst av hypertoni</strong></h2>\n<p><strong></strong>F&ouml;rekomsten av hypertoni (systoliskt blodtryck &ge;&nbsp;140 mm&nbsp;Hg och/eller diastoliskt blodtryck &ge;&nbsp;90 mm&nbsp;Hg) i Sverige ber&auml;knas till cirka 27&nbsp;%. <span style=\"color: #ff0000;\">F&ouml;rdelningen mellan m&auml;n och kvinnor &auml;r j&auml;mn och</span> stiger brant med &aring;ldern (SBU). Vid 65 &aring;r har mer &auml;n 50 % av befolkningen hypertoni. Hos bara cirka h&auml;lften &auml;r tillst&aring;ndet uppt&auml;ckt. Det &auml;r sv&aring;rt att uppskatta om frekvensen hypertoni &ouml;kar eller minskar. Andelen &auml;ldre &ouml;kar vilket skulle ge en &ouml;kning, men data &ouml;ver d&ouml;dlighet i stroke, som &auml;r den vanligaste komplikationen till hypertoni, visar en minskande trend under senare &aring;rtionden i Sverige (1,2). Hypertoni indelas i mild (Grad I) som finns hos 60&nbsp;%, m&aring;ttlig (Grad II) hos 30&nbsp;% och sv&aring;r (Grad III) hos 10&nbsp;% av patienterna, Tabell 1. Om endast det systoliska blodtrycket &auml;r f&ouml;rh&ouml;jt, vilket &auml;r vanligt hos &auml;ldre, kallas det f&ouml;r isolerad systolisk hypertoni.</p>\n<p class=\"indent\"><br>Hypertoni f&ouml;rekommer s&auml;llan isolerat. Diabetes, blodfettst&ouml;rning och fetma (speciellt bukfetma med metabola rubbningar) &auml;r ofta associerade med hypertoni. H&ouml;gt blodtryck ger ocks&aring; organskada. Allt detta &ouml;kar risken f&ouml;r komplikationer och g&ouml;r att en kartl&auml;ggning av patientens hela riskprofil &auml;r n&ouml;dv&auml;ndig inf&ouml;r behandling.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8bd290f3-619e-46d7-a7a0-0e1ae1f80609",
+			"name": "8bd290f3-619e-46d7-a7a0-0e1ae1f80609",
+			"type": "tablewide",
+			"content": {
+				"number": "1",
+				"title": "Definition och klassifikation av blodtryck",
+				"id": "",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td width=\"236\">\r\n<h4><strong>Kategori blodtryck</strong></h4>\r\n</td>\r\n<td width=\"177\">\r\n<h4><strong>Systoliskt blodtryck (mm&nbsp;Hg)</strong></h4>\r\n</td>\r\n<td width=\"95\">\r\n<h4><strong>&nbsp;</strong></h4>\r\n</td>\r\n<td width=\"201\">\r\n<h4><strong>Diastoliskt blodtryck<br />(mm&nbsp;Hg)</strong></h4>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"236\">\r\n<h5><strong>Optimalt</strong></h5>\r\n</td>\r\n<td width=\"177\">\r\n<p>&lt; 120</p>\r\n</td>\r\n<td width=\"95\">\r\n<p>och</p>\r\n</td>\r\n<td width=\"201\">\r\n<p>&lt; 80</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"236\">\r\n<h5><strong>Normalt</strong></h5>\r\n</td>\r\n<td width=\"177\">\r\n<p>120&ndash;129</p>\r\n</td>\r\n<td width=\"95\">\r\n<p>och/eller</p>\r\n</td>\r\n<td width=\"201\">\r\n<p>80&ndash;84</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"236\">\r\n<h5><strong>H&ouml;gt normalt</strong></h5>\r\n</td>\r\n<td width=\"177\">\r\n<p>130&ndash;139</p>\r\n</td>\r\n<td width=\"95\">\r\n<p>och/eller</p>\r\n</td>\r\n<td width=\"201\">\r\n<p>85&ndash;89</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"236\">\r\n<h5><strong>Grad I-<br />hypertoni</strong></h5>\r\n</td>\r\n<td width=\"177\">\r\n<p>140&ndash;159</p>\r\n</td>\r\n<td width=\"95\">\r\n<p>och/eller</p>\r\n</td>\r\n<td width=\"201\">\r\n<p>90&ndash;99</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"236\">\r\n<h5><strong>Grad II-<br />hypertoni</strong></h5>\r\n</td>\r\n<td width=\"177\">\r\n<p>160&ndash;179</p>\r\n</td>\r\n<td width=\"95\">\r\n<p>och/eller</p>\r\n</td>\r\n<td width=\"201\">\r\n<p>100&ndash;109</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"236\">\r\n<h5><strong>Grad III-<br />hypertoni </strong></h5>\r\n</td>\r\n<td width=\"177\">\r\n<p>&ge; 180</p>\r\n</td>\r\n<td width=\"95\">\r\n<p>och/eller</p>\r\n</td>\r\n<td width=\"201\">\r\n<p>&ge; 110</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"236\">\r\n<h5><strong>Isolerad systolisk hypertoni</strong></h5>\r\n</td>\r\n<td width=\"177\">\r\n<p>&ge; 140</p>\r\n</td>\r\n<td width=\"95\">\r\n<p>och</p>\r\n</td>\r\n<td width=\"201\">\r\n<p>&lt; 90</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ad72876f-1678-48d5-bb65-97d1b93589ef",
+			"name": "ad72876f-1678-48d5-bb65-97d1b93589ef",
+			"type": "text",
+			"content": "<h2 id=\"Etiologi-och-patogenes\"><strong>Etiologi och patogenes</strong></h2>\n<p><strong></strong>Hypertoni i tidiga stadier hos unga k&auml;nnetecknas av framf&ouml;r allt h&ouml;ga diastoliska blodtryck vilket &auml;r ett resultat av funktionella k&auml;rlf&ouml;r&auml;ndringar i art&auml;rv&auml;ggen (3). En kompensatorisk k&auml;rlhypertrofi kan efterhand ta &ouml;ver den tryckf&ouml;rst&auml;rkande rollen och &auml;ldre personer har oftast en &ouml;verv&auml;gande systolisk hypertoni som ett kvitto p&aring; den k&auml;rlstelhet som oftast utvecklas med &aring;ldern (4). Denna k&auml;rlstelhet &auml;r ett resultat av flera olika <span style=\"color: #ff0000;\">faktorer </span>s&aring;som &aring;lder, f&ouml;rh&ouml;jda blodfetter, r&ouml;kning, f&ouml;rekomst av diabetes/insulinresistens samt den tidiga &ouml;verv&auml;gande diastoliska blodtrycksf&ouml;rh&ouml;jningen. <span style=\"text-decoration: line-through;\">&Aring;derf&ouml;rkalkning</span> <span style=\"color: #ff0000;\">Ateroskleros</span> leder till en minskad eftergivlighet i de st&ouml;rre k&auml;rlen som normalt d&auml;mpar pulsv&aring;gens amplitud d&aring; hj&auml;rtat skickar ut blodet i aorta under systole. I ett friskt och elastiskt k&auml;rlsystem kommer de eftergivliga stora k&auml;rlen att b&aring;de d&auml;mpa pulsv&aring;gen och dessutom fj&auml;dra tillbaka under diastole. Stela och <span style=\"text-decoration: line-through;\">&aring;derf&ouml;rkalkade</span> <span style=\"color: #ff0000;\">aterosklerotiska</span> blodk&auml;rl medf&ouml;r d&auml;remot en snabbare pulsv&aring;gsreflexion som d&auml;rmed hinner m&ouml;ta den fr&aring;n hj&auml;rtat utg&aring;ende pulsv&aring;gen redan under systole. Detta medf&ouml;r &ouml;kat systoliskt och minskat diastoliskt blodtryck. En stor differens mellan systoliskt och diastoliskt blodtryck, h&ouml;gt pulstryck, &auml;r s&aring;ledes ett uttryck f&ouml;r stela k&auml;rl, och detta <span style=\"text-decoration: line-through;\">&ouml;kar risken f&ouml;r kardiovaskul&auml;r sjukdom</span> <span style=\"color: #ff0000;\">&ouml;kar risken f&ouml;r insjuknande i kardiovaskul&auml;r sjukdom</span> hos &auml;ldre (5). M&aring;nga hormonsystem &auml;r involverade i blodtrycksregleringen och det kan vara relevant att s&auml;rskilt lyfta fram betydelsen av aldosteron, katekolaminer och kortisol f&ouml;r utvecklingen och uppr&auml;tth&aring;llandet av hypertoni. F&ouml;r den enskilda individen kan s&aring;ledes flera patofysiologiska v&auml;gar ha olika betydelse, vilket delvis kan f&ouml;rklara att olika individer svarar olika bra p&aring; en specifik antihypertensiv behandling.</p>\n<p class=\"indent\"><br>Etiologin till det som kallas prim&auml;r/essentiell hypertoni &auml;r s&aring;ledes inte oklar, men multifaktoriell. N&auml;r hypertoni kan f&ouml;rklaras av en enstaka utl&ouml;sande orsak med en tydlig etiologi brukar det beskrivas som sekund&auml;r hypertoni.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a169b60e-b83a-404b-a95e-c2fee1467308",
+			"name": "a169b60e-b83a-404b-a95e-c2fee1467308",
+			"type": "text",
+			"content": "<h2 id=\"Symtom\"><strong>Symtom</strong></h2>\n<p>Hypertoni &auml;r<span style=\"color: #ff0000;\">, f&ouml;rutom vid hypertensiv kris och malign hypertoni,</span> i allm&auml;nhet ett symtoml&ouml;st tillst&aring;nd. Det kan vara en f&ouml;rklaring till att det till stor del &auml;r ouppt&auml;ckt men g&ouml;r ocks&aring; att behandlingen kan kr&auml;va t&aring;lamod och pedagogisk f&ouml;rm&aring;ga hos v&aring;rdpersonalen. De symtom som vanligen &auml;r f&ouml;rknippade med m&aring;ttligt f&ouml;rh&ouml;jt blodtryck &auml;r diffusa s&aring;som tr&ouml;tthet och huvudv&auml;rk<span style=\"color: #ff0000;\">. Dessa symtom kan finnas vid m&aring;nga andra tillst&aring;nd och kan vanligen tillskrivas hypertonin f&ouml;rst efter att antihypertensivbehandling satts in och gett en f&ouml;rb&auml;ttring (6).<br></span></p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8f02e9d4-d17e-402c-aad5-f98de8e4b08f",
+			"name": "8f02e9d4-d17e-402c-aad5-f98de8e4b08f",
+			"type": "text",
+			"content": "<h2 id=\"Utredning-av-hypertoni\"><strong>Utredning av hypertoni</strong></h2>\n<h3 id=\"Teknik-vid-blodtrycksmatning\">Teknik vid blodtrycksm&auml;tning</h3>\n<p><span style=\"text-decoration: line-through;\">Blodtrycket kan m&auml;tas med aeroid manometer eller med oscillatorisk metod. Det &auml;r</span> <span style=\"color: #ff0000;\">Vid m&auml;tning av blodtrycket &auml;r det</span> viktigt att manschettstorleken &auml;r anpassad till &ouml;verarmens omkrets. Detta kan &aring;stadkommas genom tillg&aring;ng till flera manschettstorlekar eller manschetter med automatisk anpassning till omkretsen. Manschetten pumpas upp till ett blodtrycksv&auml;rde &ouml;ver den niv&aring; d&auml;r den palperade pulsen i a.&nbsp;radialis f&ouml;rsvinner. D&aring; minskar man risken f&ouml;r att hamna i det s&aring; kallade \"silent gap\", ett omr&aring;de av blodtrycket d&auml;r pulsljuden tillf&auml;lligt kan f&ouml;rsvinna p&aring; grund av arterioskleros. Blodtrycket s&auml;nks sedan med 2&nbsp;mm&nbsp;Hg i taget tills Korotkoff-ljuden b&ouml;rjar (systolisk blodtrycksniv&aring;) och sedan noteras det n&auml;r de upph&ouml;r eller f&ouml;rsvagas kraftigt. <span style=\"color: #ff0000;\">Vid f&ouml;rsta bes&ouml;ket m&auml;ts blodtrycket i b&aring;da armarna</span> (f&ouml;r att uppt&auml;cka stenoser i det centrala kretsloppet eller coartatio aortae). Blodtrycket m&auml;ts ocks&aring; i st&aring;ende efter 1, 2 och 5 minuter f&ouml;r att uppt&auml;cka ortostatisk hypotoni som &ouml;kar med &ouml;kande &aring;lder. Slutligen m&auml;ts blodtrycket i benen f&ouml;r ber&auml;kning av arm-ankelindex f&ouml;r att uppt&auml;cka eventuell perifer k&auml;rlsjukdom. Manschetten anbringas p&aring; vaderna och pulsen registreras i a.&nbsp;dorsalis pedis med hj&auml;lp av dopplerm&auml;tare.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ed558069-436b-4b88-9aab-9908c049bdd1",
+			"name": "ed558069-436b-4b88-9aab-9908c049bdd1",
+			"type": "text",
+			"content": "<h3 id=\"Diagnostik-av-hypertoni\">Diagnostik av hypertoni</h3>\n<p>Vid uppt&auml;ckt av f&ouml;rh&ouml;jt blodtryck m&auml;ts blodtrycket upprepade g&aring;nger under flera veckor eller m&aring;nader under standardiserade f&ouml;rh&aring;llanden det vill s&auml;ga efter 5 minuters vila, i sittande med h&ouml;ger arm i hj&auml;rth&ouml;jd. &Auml;r blodtrycket vid de upprepade m&auml;tningarna &ge;&nbsp;140 och/eller &ge;&nbsp;90 mm&nbsp;Hg f&ouml;religger hypertoni. Vid misstanke om h&ouml;gre blodtryck vid m&auml;tning p&aring; sjukv&aring;rdsinr&auml;ttning (vitrockshypertoni) eller vid uppm&auml;tta normala blodtryck trots tecken till organskada som misst&auml;nks vara orsakad av hypertoni (maskerad hypertoni) kan 24-timmars blodtrycksm&auml;tning komplettera utredningen. Ett annat alternativ kan vara att patienten m&auml;ter sitt blodtryck hemma. Observera att blodtrycksgr&auml;nserna f&ouml;r diagnos eller m&aring;l f&ouml;r behandling &auml;r olika beroende av m&auml;tmetod, se Tabell 2.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d0c0fc85-29f4-4ce8-94ea-316249855fb7",
+			"name": "d0c0fc85-29f4-4ce8-94ea-316249855fb7",
+			"type": "tablewide",
+			"content": {
+				"number": "2",
+				"title": "",
+				"id": "",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<h4>Kategori blodtrycksm&auml;tning</h4>\r\n</td>\r\n<td>\r\n<h4>Systoliskt blodtryck (mm&nbsp;Hg)</h4>\r\n</td>\r\n<td></td>\r\n<td>\r\n<h4>Diastoliskt blodtryck (mm&nbsp;Hg)</h4>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<h5>P&aring; v&aring;rdmottagning</h5>\r\n</td>\r\n<td>&ge; 140</td>\r\n<td>och/eller</td>\r\n<td>&ge; 90</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"4\">\r\n<h5>24-timmar (ambulatorisk)</h5>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<h6 class=\"indent\"><strong>Dagtid (vaken)</strong></h6>\r\n</td>\r\n<td>&ge; 135</td>\r\n<td>och/eller</td>\r\n<td>&ge; 85</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<h6 class=\"indent\"><strong>Nattetid (s&ouml;mn)</strong></h6>\r\n</td>\r\n<td>&ge; 120</td>\r\n<td>och/eller</td>\r\n<td>&ge; 70</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<h6 class=\"indent\"><strong>Dygn</strong></h6>\r\n</td>\r\n<td>&ge; 130</td>\r\n<td>och/eller</td>\r\n<td>&ge; 80</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<h5>I hemmet</h5>\r\n</td>\r\n<td>&ge; 135</td>\r\n<td>och/eller</td>\r\n<td>&ge; 85</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e30ba3f6-499c-4829-b390-687cc35d47c0",
+			"name": "e30ba3f6-499c-4829-b390-687cc35d47c0",
+			"type": "text",
+			"content": "<h3 id=\"Utredning-och-bedomning-av-risk-for-hjartkarlkomplikationer\">Utredning och bed&ouml;mning av risk f&ouml;r hj&auml;rtk&auml;rlkomplikationer</h3>\n<p><em>&nbsp;</em></p>\n<p>Eftersom hypertoni s&auml;llan f&ouml;rekommer isolerat g&ouml;rs en utredning av andra samtidigt f&ouml;rekommande risker f&ouml;r hj&auml;rtk&auml;rlkomplikationer och samsjuklighet som p&aring;verkar val av behandling. Utredningen som vanligen startar i prim&auml;rv&aring;rden b&ouml;r p&aring; rimlig niv&aring; kunna utesluta sekund&auml;r hypertoni, uppt&auml;cka andra tillst&aring;nd som kan beh&ouml;va behandling och identifiera organskada vilket &ouml;kar indikationen f&ouml;r behandling. Tabell 3 ger en &ouml;versikt &ouml;ver dels basal utredning i prim&auml;rv&aring;rd, dels utredning vid misstanke om sekund&auml;r hypertoni.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fb9c4cf7-f84a-46ca-9dc5-1c13f75e47b8",
+			"name": "fb9c4cf7-f84a-46ca-9dc5-1c13f75e47b8",
+			"type": "tablewide",
+			"content": {
+				"number": "3",
+				"title": "Utredning av hypertoni",
+				"id": "",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td colspan=\"2\" width=\"720\">\r\n<h4><strong>Anamnes</strong></h4>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"271\">\r\n<h5><strong>Hereditet</strong></h5>\r\n</td>\r\n<td width=\"449\">\r\n<p>Hypertoni eller hj&auml;rtk&auml;rlsjuklighet</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"271\">\r\n<h5><strong>Socioekonomi</strong></h5>\r\n</td>\r\n<td width=\"449\">\r\n<p>Civilst&aring;nd, anst&auml;llning, social belastning</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"271\">\r\n<h5><strong>Livsstil</strong></h5>\r\n</td>\r\n<td width=\"449\">\r\n<p>Tobak, alkohol, droger, kost (saltintag, lakrits), fysisk aktivitet</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"271\">\r\n<h5><strong>Symtom</strong></h5>\r\n</td>\r\n<td width=\"449\">\r\n<p>Tr&ouml;tthet, yrsel, illam&aring;ende, huvudv&auml;rk, andn&ouml;d, attacker av huvudv&auml;rk och flusher, t&ouml;rst, &ouml;kade urinm&auml;ngder, viktf&ouml;r&auml;ndring</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"271\">\r\n<h5><strong>Andra sjukdomar</strong></h5>\r\n</td>\r\n<td width=\"449\">\r\n<p>Ischemisk hj&auml;rtsjukdom, perifer k&auml;rlsjukdom, stroke, njursjukdom, diabetes, KOL, psykiatrisk sjukdom, gikt, graviditetshypertoni</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"271\">\r\n<h5><strong>L&auml;kemedel</strong></h5>\r\n</td>\r\n<td width=\"449\">\r\n<p>Kortison, NSAID, p-piller m fl.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\" width=\"720\">\r\n<h4><strong>Status</strong></h4>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"271\">\r\n<h5><strong>Kroppsunders&ouml;kning</strong></h5>\r\n</td>\r\n<td width=\"449\">\r\n<ul>\r\n<li>Auskultation av hj&auml;rta och lungor samt njurart&auml;rer (mitt emellan naveln och revbensb&aring;garna)</li>\r\n<li>Palpation av perifera pulsar</li>\r\n<li>&Ouml;gonbottenunders&ouml;kning (vid misstanke om malign hypertoni)</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\" width=\"720\">\r\n<h4><strong>Laboratorieanalyser och unders&ouml;kningar</strong></h4>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"271\">\r\n<h5><strong>Bed&ouml;mning av orsak till hypertonin</strong></h5>\r\n</td>\r\n<td width=\"449\">\r\n<p>Blodstatus, P-kalium, P-Kalcium/albumin, TSH, ALAT, ASAT, gamma-GT</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"271\">\r\n<h5><strong>Leta andra riskfaktorer f&ouml;r hj&auml;rtk&auml;rlsjukdom</strong></h5>\r\n</td>\r\n<td width=\"449\">\r\n<p>Blodsocker, totalkolesterol, HDL-kolesterol, LDL-kolesterol, triglycerider, P-urat</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"271\">\r\n<h5><strong>Leta organskada</strong></h5>\r\n</td>\r\n<td width=\"449\">\r\n<p>P-kreatinin <span style=\"color: #ff0000;\">och/eller cystatin C f&ouml;r eGFR</span>, U-protein, U-mikroalbumin, U-erytrocyter, vilo-EKG</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\" width=\"720\">\r\n<h4><strong>Utredning vid misstanke om sekund&auml;r hypertoni eller sv&aring;rbehandlad hypertoni</strong></h4>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"271\">\r\n<p><strong>&nbsp;</strong></p>\r\n</td>\r\n<td width=\"449\">\r\n<p>Ambulatorisk blodtrycksm&auml;tning</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"271\">\r\n<h5><strong>Hyperaldosteronism</strong></h5>\r\n</td>\r\n<td width=\"449\">\r\n<p>P-aldosteron, P-renin</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"271\">\r\n<h5><strong>Renovaskul&auml;r hypertoni</strong></h5>\r\n</td>\r\n<td width=\"449\">\r\n<p>Bilddiagnostik av njurar/urinv&auml;gar</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"271\">\r\n<h5><span style=\"color: #ff0000;\"><strong>S&ouml;mnapn&eacute;</strong></span></h5>\r\n</td>\r\n<td width=\"449\">\r\n<p><span style=\"color: #ff0000;\">Fr&aring;geformul&auml;r (ESS)</span></p>\r\n<p><span style=\"color: #ff0000;\">S&ouml;mnapn&eacute;utredning (remiss)</span></p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "408a481d-453e-42b0-8fc6-ff18cd049014",
+			"name": "408a481d-453e-42b0-8fc6-ff18cd049014",
+			"type": "figure",
+			"content": {
+				"number": "1",
+				"maxwidth": "",
+				"image": "/images/score_algoritmen.png",
+				"title": "SCORE. Procentuell 10-årsrisk för kardiovaskulär död hos personer 40–65 år utan känd hjärtkärlsjukdom eller diabetes",
+				"text": "<p>&Aring;terges med tillst&aring;nd av Oxford University Press (UK) &copy; European Society of Cardiology, <a href=\"http://www.escardio.org/guidelines\">www.escardio.org/guidelines</a>. <br /><br />Perk J, et al. European Guidelines on cardiovascular disease prevention in clinical practice. Eur Heart J 2012;33:1635&ndash;1701.<br /><br /><br /></p>",
+				"alt": "",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "84f26ea0-012e-4b9a-b49b-2cd841c791d6",
+			"name": "84f26ea0-012e-4b9a-b49b-2cd841c791d6",
+			"type": "text",
+			"content": "<p>F&ouml;r patienter utan diabetes och tidigare hj&auml;rtk&auml;rlkomplikation kan SCORE-diagrammet anv&auml;ndas, se Figur 1. Man kan anv&auml;nda diagrammet tillsammans med patienten f&ouml;r att illustrera betydelsen av olika riskfaktorer. Diagrammet illustrerar risken f&ouml;r d&ouml;d i hj&auml;rt-k&auml;rlkomplikationer inom 10 &aring;r. SCORE-diagrammet har uppdaterats 2014 <span style=\"color: #ff0000;\">med anledning av</span> den minskande d&ouml;dligheten i hj&auml;rtk&auml;rlsjukdom i norra Europa under de senaste decennierna. SCORE har dock begr&auml;nsningar framf&ouml;rallt p&aring; grund av att patientens &aring;lder tillm&auml;ts s&aring; stor betydelse f&ouml;r risken f&ouml;r komplikationer. I ung &aring;lder &auml;r risken l&aring;g oavsett blodtrycks- och kolesterolniv&aring; och r&ouml;kning hos patienten. Man kan d&aring; antingen extrapolera patientens data till en h&ouml;gre &aring;lder, r&auml;kna ut risk&aring;lder eller anv&auml;nda relativ risk-score, se Figur 2.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "de361e7d-8acd-4312-ba5f-d03b5b18290e",
+			"name": "de361e7d-8acd-4312-ba5f-d03b5b18290e",
+			"type": "figure",
+			"content": {
+				"number": "2",
+				"maxwidth": "",
+				"image": "/images/relativ_risk_f_r_10__rs_kardiovaskul_r_mortalitet.png",
+				"title": "Relativ 10-årsrisk för kardiovaskulär död hos personer utan känd hjärtkärlsjukdom eller diabetes",
+				"text": "<p>&Aring;terges med tillst&aring;nd av Oxford University Press (UK) &copy; European Society of Cardiology, <a href=\"http://www.escardio.org/guidelines\">www.escardio.org/guidelines</a>. <br /><br />Perk J, et al. European Guidelines on cardiovascular disease prevention in clinical practice. Eur Heart J 2012;33:1635&ndash;1701.<br /><br /></p>",
+				"alt": "",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "04dc4d82-c20f-4563-922b-d1824948b7ee",
+			"name": "04dc4d82-c20f-4563-922b-d1824948b7ee",
+			"type": "text",
+			"content": "<p>Hos &auml;ldre &auml;r det tv&auml;rtemot s&aring; att oavsett niv&aring;er av riskfaktorer &auml;r risken h&ouml;g. Dessutom ger inte SCORE n&aring;gon riskbed&ouml;mning hos patienter &ouml;ver 65 &aring;r, den &aring;ldersgrupp d&auml;r de flesta patienterna med hypertoni finns. D&aring; f&aring;r man individualisera behandlingen i samr&aring;d med patienten och med h&auml;nsyn till samsjuklighet, njurfunktion och polyfarmaci. Slutligen har SCORE begr&auml;nsat v&auml;rde f&ouml;r patienter av ursprung utanf&ouml;r Europa.</p>\n<p>&nbsp;</p>\n<p>Patienter med diabetes, speciellt typ 2-diabetes, har ofta hypertoni och ungef&auml;r en <span style=\"color: #ff0000;\">dubblerad</span> risk f&ouml;r komplikationer j&auml;mf&ouml;rt med patienter utan diabetes. F&ouml;r riskber&auml;kning av dessa patienter kan en kalkylator p&aring; Nationella Diabetesregistrets hemsida (<a href=\"http://www.ndr.nu/risk\">www.ndr.nu/risk</a>) anv&auml;ndas f&ouml;r ber&auml;kning av risk f&ouml;r hj&auml;rt-k&auml;rlh&auml;ndelse inom 5 &aring;r.</p>\n<p>&nbsp;</p>\n<p>Patienter med maskerad hypertoni har samma risk som andra patienter med hypertoni, men vitrockshypertoni ger d&auml;remot avsev&auml;rt l&auml;gre risk.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "63117b47-a105-4394-ab3a-b212d94183a9",
+			"name": "63117b47-a105-4394-ab3a-b212d94183a9",
+			"type": "text",
+			"content": "<h2 id=\"Utredning-och-behandling-av-sekundar-hypertoni\"><strong>Utredning och behandling av sekund&auml;r hypertoni</strong></h2>\n<p>Hos patienter med h&ouml;gt blodtryck som &auml;r unga vid diagnos, uppvisar en kraftig blodtrycksstegring, f&aring;r en pl&ouml;tslig blodtrycksstegring under behandling eller svarar d&aring;ligt p&aring; insatt terapi b&ouml;r misstanke om sekund&auml;r hypertoni v&auml;ckas. Totalt r&ouml;r det sig om cirka 10&nbsp;% av populationen med h&ouml;gt blodtryck. Den vanligaste orsaken till sekund&auml;r hypertoni &auml;r prim&auml;r aldosteronism, och man bed&ouml;mer att 2&minus;13&nbsp;% av patienter med hypertoni har denna form av sekund&auml;r hypertoni (7).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "34bb7ab4-37ce-4545-857b-994b200e488b",
+			"name": "34bb7ab4-37ce-4545-857b-994b200e488b",
+			"type": "text",
+			"content": "<h3 id=\"Primar-aldosteronism\">Prim&auml;r aldosteronism</h3>\n<p>Spontan hypokalemi talar f&ouml;r aldosteronism, men &auml;r inte obligat f&ouml;r diagnos. Screening f&ouml;r hyperaldosteronism kan g&ouml;ras under p&aring;g&aring;ende behandling (bortsett fr&aring;n spironolakton eller eplerenon) genom best&auml;mning av kvoten f&ouml;r p-aldosteron/renin. S&aring; h&auml;r l&aring;ngt kan man driva utredningen i prim&auml;rv&aring;rd. F&ouml;r definitiv diagnos kr&auml;vs utredning med s&aring; kallad saltbelastning och CT &ouml;ver binjurarna kombinerat med binjurevenskatetrisering f&ouml;r att s&auml;kerst&auml;lla endokrin &ouml;veraktivitet. Beroende p&aring; om det f&ouml;religger en ensidig eller bilateral sjukdom som genes till hyperaldosteronismen (adenom eller hyperplasi) utg&ouml;r kirurgi eller behandling med aldosteronh&auml;mmare de alternativ som st&aring;r till buds.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "da541da0-8f22-4f67-b624-ecc60388ae9b",
+			"name": "da541da0-8f22-4f67-b624-ecc60388ae9b",
+			"type": "text",
+			"content": "<h3 id=\"Renal-parenkymatos-hypertoni\">Renal parenkymat&ouml;s hypertoni</h3>\n<p>Alla former av nedsatt njurfunktion med glomerul&auml;r sjukdom ger hypertoni n&auml;r njurfunktionen sjunkit tillr&auml;ckligt l&aring;gt. Toxiska substanser, l&aring;ngvarig hypertoni, diabetes eller specifik njursjukdom kan alla orsaka glomerul&auml;r skada. L&auml;mpliga unders&ouml;kningar vid misst&auml;nkt renal hypertoni &auml;r m&auml;tning av albuminuri, sedimentunders&ouml;kning, ultraljud av njurarna och vid behov njurbiopsi.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ec7a7305-54f9-4085-b7d5-510ed4ba91d3",
+			"name": "ec7a7305-54f9-4085-b7d5-510ed4ba91d3",
+			"type": "text",
+			"content": "<h3 id=\"Renovaskular-hypertoni-njurartarstenos-\">Renovaskul&auml;r hypertoni (njurart&auml;rstenos)</h3>\n<p>Man ska s&auml;rskilt misst&auml;nka renovaskul&auml;r hypertoni vid terapiresistent hypertoni, f&ouml;rs&auml;mring av tidigare v&auml;lbehandlad hypertoni och vid ov&auml;ntat kraftfull blodtryckss&auml;nkande effekt, sv&aring;r hypertoni som debuterar hos yngre (&lt;&nbsp;30 &aring;r f&ouml;r m&auml;n och &lt;&nbsp;50 &aring;r f&ouml;r kvinnor), pl&ouml;tsligt hypertensivt lung&ouml;dem eller uttalad kreatininstegring efter p&aring;b&ouml;rjad terapi med ACE-h&auml;mmare eller ARB <span style=\"color: #ff0000;\">(angiotensin II-receptorblockerare)</span>.<br><br></p>\n<p>Det finns i nul&auml;get ingen dokumentation f&ouml;r att korrektion av unilateral <span style=\"color: #ff0000;\">aterosklerotisk</span> stenos <span style=\"text-decoration: line-through;\">p&aring; grund av &aring;derf&ouml;rkalkning</span> i allm&auml;nhet skulle ge b&auml;ttre prognos, eller ens skulle f&ouml;rb&auml;ttra blodtrycket eller njurfunktionen i n&aring;gon h&ouml;gre grad, j&auml;mf&ouml;rt med medicinsk behandling (8). Men patienter med bilateral njurart&auml;rstenos, aterosklerotisk njurart&auml;rstenos och recidiverande hypertensivt lung&ouml;dem eller de som har stenos i singelnjure, har sannolikt nytta av kateterburen intervention (9).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "45e98923-99cb-4ea9-942e-cec66a2ccbf6",
+			"name": "45e98923-99cb-4ea9-942e-cec66a2ccbf6",
+			"type": "text",
+			"content": "<h3 id=\"Somnapn-\">S&ouml;mnapn&eacute;</h3>\n<p>Sambandet mellan s&ouml;mnapn&eacute; och hypertoni &auml;r v&auml;lbelagt (10) och associationen &auml;r mest uttalad i yngre &aring;ldrar. Man kan ha s&ouml;mnapn&eacute; utan att vara &ouml;verviktig, och diagnosen b&ouml;r misst&auml;nkas hos patienter med terapiresistent hypertoni samt hos individer med blodtrycksh&ouml;jning och uppgivna besv&auml;r med snarkning och/eller dagtidss&ouml;mnighet (11).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "19591016-be3d-4a69-9121-205993845f53",
+			"name": "19591016-be3d-4a69-9121-205993845f53",
+			"type": "text",
+			"content": "<h3 id=\"Feokromocytom\">Feokromocytom</h3>\n<p>&Ouml;kad uts&ouml;ndring av katekolaminerna adrenalin och/eller noradrenalin vid hormonproducerande feokromocytom ger ofta, men inte alltid paroxysmala symtom. Klassiskt drabbas man attackvis av huvudv&auml;rk, hj&auml;rtklappning, &aring;ngest, svettningar och blekhet. Manifest hypertoni och/eller attackvis p&aring;kommen hypertoni &auml;r ocks&aring; ganska vanligt. Screening g&ouml;rs genom att kontrollera fraktionerade metoxikatekolaminer (metoxiadrenalin och metoxinoradrenalin) i plasma eller i dygnsurin.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e91c4d3d-85af-4026-b2df-9711da874a35",
+			"name": "e91c4d3d-85af-4026-b2df-9711da874a35",
+			"type": "text",
+			"content": "<h2 id=\"Ovrig-hypertoni-yttre-faktorer-och-sarskilda-grupper-\"><span style=\"color: #000000;\"><strong>&Ouml;vrig hypertoni (yttre faktorer <span style=\"text-decoration: line-through;\">och s&auml;rskilda grupper</span>)</strong></span></h2>\n<p><span style=\"color: #ff0000;\">Yttre faktorer som kan orsaka hypertoni exemplifieras i Faktaruta 1.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8cff757c-a067-4c4a-8543-0700417790fb",
+			"name": "8cff757c-a067-4c4a-8543-0700417790fb",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "Övrig hypertoni (yttre faktorer)",
+				"text": "<p><strong><br />L&auml;kemedel</strong></p>\r\n<p></p>\r\n<p>Cyklooxygenash&auml;mmare/NSAID har i vissa studier visats h&ouml;ja blodtrycket, men vid normaldosering kan man inte s&auml;kert se en f&ouml;rs&auml;mring av m&aring;luppfyllelse avseende blodtrycket. Den v&auml;rkproblematik som ligger bakom behovet av sm&auml;rtstillande kan naturligtvis ocks&aring; h&ouml;ja blodtrycket. Andra l&auml;kemedel som kan p&aring;verka blodtrycket ogynnsamt &auml;r kombinations-p-piller, erytropoetin, kortikosteroider, metylfenidat samt ergotamin.<br /><br /></p>\r\n<p></p>\r\n<p></p>\r\n<p><strong>Salt</strong></p>\r\n<p><strong></strong></p>\r\n<p>Mekanismen f&ouml;r hur salt p&aring;verkar blodtrycket &auml;r inte helt klarlagd. Minskningar i saltintaget har effekter p&aring; blodtrycket hos b&aring;de individer med h&ouml;gt <span style=\"color: #ff0000;\">och med</span> normalt blodtryck <span style=\"color: #ff0000;\">vilket</span> &auml;r visat i olika etniska grupper, hos m&auml;n s&aring;v&auml;l som kvinnor. I en Cochrane-review fr&aring;n 2013 anger man att en minskning med 6 g per dag gav en systolisk blodtryckss&auml;nkning p&aring; 6&nbsp;mm&nbsp;Hg (12). Vi vet inte vad som &auml;r optimalt saltintag, men epidemiologiska data talar f&ouml;r 4&nbsp;g per dag (13). F&ouml;r den enskilda individen kan saltreduktion ha betydelse, men d&aring; tre fj&auml;rdedelar av v&aring;rt saltintag kommer fr&aring;n processade livsmedel &auml;r individens m&ouml;jlighet att p&aring;verka sitt blodtryck genom minskat saltintag begr&auml;nsat. Detta kr&auml;ver att patienten sj&auml;lv lagar sin mat och bakar sitt br&ouml;d.<br /><br /></p>\r\n<p></p>\r\n<p></p>\r\n<p><strong>Alkohol</strong></p>\r\n<p><strong></strong></p>\r\n<p>Alkoholintag i moderata m&auml;ngder har en akut blodtryckss&auml;nkande effekt men intag av alkohol vid &ouml;verkonsumtion h&ouml;jer blodtrycket, och blodtrycket &auml;r ocks&aring; stegrat under alkoholabstinensen som ses vid sv&aring;rt missbruk. Se ocks&aring; kapitlet <a href=\"{pre}/kapitel/beroendetillstand/alkohol-riskbruk_missbruk_och_beroende.html#t2_13\" target=\"_blank\">Alkohol &ndash; riskbruk, missbruk och beroende, avsnittet H&auml;lsoproblem som kan tyda p&aring; riskbruk</a>.<br /><br /></p>\r\n<p></p>\r\n<p><strong></strong></p>\r\n<p><strong>Lakrits</strong></p>\r\n<p><strong></strong></p>\r\n<p>Lakritsintag kan ge upphov till f&ouml;rs&auml;mrad blodtryckskontroll hos patienter med essentiell hypertoni, och det f&ouml;rekommer att lakrits &auml;r den enda utl&ouml;sande orsaken. Blodtrycksf&ouml;rh&ouml;jningen av lakrits beror p&aring; att omvandlingen av kortisol till kortison hindras i njurarna och detta aktiverar aldosteronreceptorn, vilket ger en klinisk bild som liknar den man ser vid prim&auml;r aldosteronism men med l&aring;ga aldosteronhalter i plasma och urin.</p>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2233a8e6-76ae-4642-8cb3-e219ee68a1d1",
+			"name": "2233a8e6-76ae-4642-8cb3-e219ee68a1d1",
+			"type": "text",
+			"content": "<h2 id=\"Barn\">Barn</h2>\n<p>Blodtrycksf&ouml;rh&ouml;jning hos barn &auml;r s&auml;llsynt och d&aring; ofta sekund&auml;rt till t ex njursjukdom, coarctatio aortae, kraftig &ouml;vervikt/fetma eller vid anv&auml;ndning av centralstimulerande medel vid neuropsykiatriska tillst&aring;nd (metylfenidat). Barn med blodtrycksf&ouml;rh&ouml;jning b&ouml;r <span style=\"text-decoration: line-through;\">remitteras till pediatrisk specialist f&ouml;r fortsatt omh&auml;ndertagande </span><span style=\"color: #ff0000;\">sk&ouml;tas av eller i samr&aring;d med en barnspecialist som &auml;r f&ouml;rtrogen med hypertonibehandlin</span>g. Det saknas studier som utv&auml;rderar nyttan av blodtryckss&auml;nkande behandling hos unga vuxna<span style=\"text-decoration: line-through;\">, men man har funnit en relation mellan s&aring;v&auml;l SBP som DBP vid 18 &aring;rs &aring;lder och senare (24 &aring;r) kardiovaskul&auml;r- och totalmortalitet</span> (14).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0e81b8a0-2b50-46f5-a682-68037799da20",
+			"name": "0e81b8a0-2b50-46f5-a682-68037799da20",
+			"type": "text",
+			"content": "<h2 id=\"Graviditet-och-amning\">Graviditet och amning</h2>\n<p>Hypertoni vid graviditet behandlas i kapitlet <a href=\"{pre}/kapitel/gynekologi/sjukdomar_och_lakemedel_under_graviditet_och_amning.html#i1-2_26\" target=\"_blank\">Sjukdomar och l&auml;kemedel under graviditet och amning</a>. Man kan konstatera att kvinnor<span style=\"color: #ff0000;\"> i fertil &aring;lder, som &ouml;nskar bli gravida och har en behandlingskr&auml;vande hypertoni,</span> i f&ouml;rsta hand b&ouml;r erbjudas behandling med betablockerare (metoprolol, pindolol) och kalciumfl&ouml;desh&auml;mmare (nifedipin, isradipin) och undvika ACE-h&auml;mmare/ARB.<br><br></p>\n<p>Under amning kan blodtrycksbehandling med metoprolol, pindolol, labetalol, nifedipin, enalapril och kaptopril ges d&aring; preparaten uts&ouml;ndras i l&aring;g dos i br&ouml;stmj&ouml;lk och anses s&auml;kra att anv&auml;nda (15). Graviditetshypertoni inneb&auml;r en &ouml;kad risk f&ouml;r senare essentiell hypertoni vilket b&ouml;r beaktas vid v&auml;rdering av kvinnors kardiovaskul&auml;ra risk.<br><br></p>\n<p>Alla kombinations-p-piller h&ouml;jer blodtrycket n&aring;gon millimeter, men manifest hypertoni &auml;r mycket ovanligt. Blodtrycket normaliseras <span style=\"text-decoration: line-through;\">alltid</span> efter uts&auml;ttning av p-piller, och individer med p-pillerutl&ouml;st hypertoni har ingen &ouml;kad risk f&ouml;r graviditetsrelaterad blodtrycksstegring. Se ocks&aring; kapitlet <a href=\"{pre}/kapitel/gynekologi/antikonception_och_aborter.html#i4_11\" target=\"_blank\">Antikonception och aborter</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6fa15916-1440-4128-95cd-e5fa1f473c9d",
+			"name": "6fa15916-1440-4128-95cd-e5fa1f473c9d",
+			"type": "text",
+			"content": "<h3 id=\"Psykisk-sjukdom\">Psykisk sjukdom</h3>\n<p><em></em>Allvarlig psykisk sjukdom inneb&auml;r ofta en s&auml;mre livsstil (r&ouml;kning, fysisk inaktivitet och s&auml;mre kostvanor) f&ouml;rutom att l&auml;kemedelsbehandlingen kan ge negativa metabola effekter (16). Risken f&ouml;r metabolt ogynnsamma faktorer s&aring;som &ouml;vervikt, hyperinsulinemi och i viss m&aring;n h&ouml;gt blodtryck &auml;r &ouml;kad (17). Medicinering vid psykiatrisk oh&auml;lsa kan ocks&aring; f&ouml;rsv&aring;ra god blodtryckskontroll. Vid behandling av denna grupp &auml;r icke-farmakologisk intervention s&auml;rskilt viktig.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5cd4c61a-66de-4f5f-a9a1-a90d48303943",
+			"name": "5cd4c61a-66de-4f5f-a9a1-a90d48303943",
+			"type": "text",
+			"content": "<h3 id=\"Aldre\">&Auml;ldre</h3>\n<p><em></em>Det finns inte tillr&auml;ckligt med studier p&aring; &auml;ldre (18) men &auml;nd&aring; vetenskapligt st&ouml;d f&ouml;r att patienter i h&ouml;gre &aring;ldrar (&gt;&nbsp;80 &aring;r) med systoliskt blodtryck &ge;&nbsp;160 mm&nbsp;Hg behandlas till SBP 140&minus;&shy;&shy;&shy;150 mm&nbsp;Hg. Det finns ingen specifik behandling som &auml;r s&auml;rskilt l&auml;mpad till &auml;ldre personer. Individens allm&auml;ntillst&aring;nd och samsjuklighet har betydande inverkan p&aring; behandlingsm&aring;let i denna grupp och det &auml;r extra viktigt att h&auml;r kontrollera blodtrycket &auml;ven i st&aring;ende samt beakta biverkningar och polyfarmaci (18).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0c2e5425-c223-4ef5-b1e0-feff38d42fc1",
+			"name": "0c2e5425-c223-4ef5-b1e0-feff38d42fc1",
+			"type": "text",
+			"content": "<h3 id=\"Ortostatisk-hypotoni\">Ortostatisk hypotoni</h3>\n<p>Ortostatisk hypotoni &auml;r associerat med hypertoni. Det finns m&aring;nga definitioner, men den vanligaste &auml;r blodtryckss&auml;nkning inom 3 minuter efter uppresning till st&aring;ende med minst 20 mm&nbsp;Hg systoliskt och/eller 10 mm&nbsp;Hg diastoliskt (18). De flesta med ortostatisk hypotoni har inte symtom av yrsel och kan ha kvar sin behandling, men om yrsel f&ouml;religger &auml;r det allvarligt med tanke p&aring; fallrisk och n&aring;got man m&aring;ste ta h&auml;nsyn till vid behandling.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e614ef8e-7915-407b-8918-bb7c83562af6",
+			"name": "e614ef8e-7915-407b-8918-bb7c83562af6",
+			"type": "text",
+			"content": "<h2 id=\"Behandling-av-hypertoni\"><strong>Behandling av hypertoni</strong></h2>\n<p><span style=\"color: #ff0000;\">Rekommendationer och gradering av rekommendationerna utg&aring;r fr&aring;n L&auml;kemedelsverkets behandlingsrekommendation \"Att f&ouml;rebygga aterosklerotisk hj&auml;rt-k&auml;rlsjukdom med l&auml;kemedel\" (19).</span></p>\n<p>Behandlingen vid hypertoni syftar till att minska risken f&ouml;r hj&auml;rtk&auml;rlkomplikationer &minus; framf&ouml;rallt stroke och hj&auml;rtsvikt, men &auml;ven <span style=\"color: #ff0000;\">f&ouml;r</span> ischemisk hj&auml;rtsjukdom och njursjukdom. Risken f&ouml;r komplikationer minskar n&auml;r blodtrycket s&auml;nks och blodtryckss&auml;nkningen &auml;r en bra mark&ouml;r f&ouml;r riskminskning. Patientens totala risk f&ouml;r hj&auml;rtk&auml;rlkomplikationer<span style=\"text-decoration: line-through;\"> ska tas i beaktande</span> baserat p&aring; blodtrycksniv&aring;, riskfaktorer, subklinisk organskada samt samsjuklighet och manifest organskada <span style=\"color: #ff0000;\">ska tas i beaktande</span>, se Tabell 4.</p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8abb9c47-738a-4fbf-bee7-cea8bb06577f",
+			"name": "8abb9c47-738a-4fbf-bee7-cea8bb06577f",
+			"type": "tablewide",
+			"content": {
+				"number": "4",
+				"title": "Matris för riskbedömning och behandling av hypertoni",
+				"id": "",
+				"text": "<p></p>\r\n<table>\r\n<tbody>\r\n<tr>\r\n<td><strong></strong></td>\r\n<td style=\"text-align: center;\" colspan=\"4\"><strong></strong>\r\n<p><strong>Blodtryck <br />(mm Hg)<strong><br /></strong></strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td><strong>Andra riskfaktorer, organp&aring;verkan eller sjukdomar​​</strong></td>\r\n<td><strong>H&ouml;gt normalt</strong><i><br /><br /></i><br />Systoliskt 130&ndash;139&nbsp;<br />eller diastoliskt 85&ndash;89&nbsp;</td>\r\n<td><strong>Mild (grad 1) hypertoni</strong> <br /><br />Systoliskt 140&ndash;159<br />eller diastoliskt 90&ndash;99&nbsp;&nbsp;</td>\r\n<td><strong>M&aring;ttlig (grad 2) hypertoni&nbsp;&nbsp;<i><br /><br /></i></strong>Systoliskt 160&ndash;179<br />eller diastoliskt 100&ndash;109&nbsp;&nbsp;</td>\r\n<td><strong>Sv&aring;r (grad 3)<br />hypertoni<br /><br /></strong>\r\n<p>Systoliskt &ge;180</p>\r\n<p>eller diastoliskt &ge;110</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Inga andra riskfaktorer</p>\r\n</td>\r\n<td>Ingen behandling</td>\r\n<td style=\"background-color: #00cc00;\">\r\n<p>Livsstilsf&ouml;r&auml;ndringar</p>\r\n<p>3&ndash;6 m&aring;nader; sedan l&auml;kemedel om inte &lt;&nbsp;140/90 mmHg n&aring;s</p>\r\n</td>\r\n<td style=\"background-color: #ffff00;\">\r\n<p>Livsstilsf&ouml;r&auml;ndringar</p>\r\n<p>3&ndash;6 veckor; l&auml;gg till l&auml;kemedel om ej &lt;&nbsp;140/90 mmHg n&aring;s</p>\r\n</td>\r\n<td style=\"background-color: #ff9900;\">\r\n<p>Livsstilsf&ouml;r&auml;ndringar</p>\r\n<p>S&auml;tt snarast in tv&aring; l&auml;kemedel</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>1&ndash;2 riskfaktorer</td>\r\n<td style=\"background-color: #00cc00;\">\r\n<p>Livsstilsf&ouml;r&auml;ndringar</p>\r\n<p>Inga l&auml;kemedel</p>\r\n</td>\r\n<td style=\"background-color: #ffff00;\">\r\n<p>Livsstilsf&ouml;r&auml;ndringar</p>\r\n<p>3&ndash;6 veckor; sedan l&auml;kemedel om inte &lt;140/90 mmHg n&aring;s</p>\r\n</td>\r\n<td style=\"background-color: #ffff00;\">\r\n<p>Livsstilsf&ouml;r&auml;ndringar</p>\r\n<p>3&ndash;6 veckor; l&auml;gg till l&auml;kemedel om ej &lt;140/90 mmHg n&aring;s</p>\r\n</td>\r\n<td style=\"background-color: #ff9900;\">\r\n<p>Livsstilsf&ouml;r&auml;ndringar</p>\r\n<p>S&auml;tt snarast in tv&aring; l&auml;kemedel</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>&ge; 3 riskfaktorer&nbsp;&nbsp;&nbsp;&nbsp;</td>\r\n<td style=\"background-color: #00cc00;\">\r\n<p>Livsstilsf&ouml;r&auml;ndringar</p>\r\n<p>Inga l&auml;kemedel</p>\r\n</td>\r\n<td style=\"background-color: #ffff00;\">\r\n<p>Livsstilsf&ouml;r&auml;ndringar</p>\r\n<p>3&ndash;6 veckor; sedan l&auml;kemedel om inte &lt;140/90 mmHg n&aring;s</p>\r\n</td>\r\n<td style=\"background-color: #ff9900;\">\r\n<p>Livsstilsf&ouml;r&auml;ndringar</p>\r\n<p>S&auml;tt in tv&aring; l&auml;kemedel</p>\r\n</td>\r\n<td style=\"background-color: #ff9900;\">\r\n<p>Livsstilsf&ouml;r&auml;ndringar</p>\r\n<p>S&auml;tt snarast in tv&aring; l&auml;kemedel</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Organp&aring;verkan, CKD 3 eller diabetes</p>\r\n</td>\r\n<td style=\"background-color: #ffff00;\">\r\n<p>Livsstilsf&ouml;r&auml;ndringar</p>\r\n<p>Inga l&auml;kemedel</p>\r\n</td>\r\n<td style=\"background-color: #ff9900;\">\r\n<p>Livsstilsf&ouml;r&auml;ndringar</p>\r\n<p>S&auml;tt in l&auml;kemedel</p>\r\n</td>\r\n<td style=\"background-color: #ff9900;\">\r\n<p>Livsstilsf&ouml;r&auml;ndringar</p>\r\n<p>S&auml;tt in tv&aring; l&auml;kemedel</p>\r\n</td>\r\n<td style=\"background-color: #ff4b00;\">\r\n<p>Livsstilsf&ouml;r&auml;ndringar</p>\r\n<p>S&auml;tt snarast in tv&aring; l&auml;kemedel</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Manifest hj&auml;rt-k&auml;rlsjukdom,</p>\r\n<p>CKD 4&ndash;5 eller diabetes med</p>\r\n<p>organp&aring;verkan/riskfaktorer</p>\r\n</td>\r\n<td style=\"background-color: #ff4b00;\">\r\n<p>Livsstilsf&ouml;r&auml;ndringar</p>\r\n<p>Inga l&auml;kemedel</p>\r\n</td>\r\n<td style=\"background-color: #ff4b00;\">\r\n<p>Livsstilsf&ouml;r&auml;ndringar</p>\r\n<p>S&auml;tt in l&auml;kemedel</p>\r\n</td>\r\n<td style=\"background-color: #ff4b00;\">\r\n<p>Livsstilsf&ouml;r&auml;ndringar</p>\r\n<p>S&auml;tt in tv&aring; l&auml;kemedel</p>\r\n</td>\r\n<td style=\"background-color: #ff4b00;\">\r\n<p>Livsstilsf&ouml;r&auml;ndringar</p>\r\n<p>S&auml;tt snarast in tv&aring; l&auml;kemedel</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "00d28ddb-a9d6-41bd-b886-0f848b699c55",
+			"name": "00d28ddb-a9d6-41bd-b886-0f848b699c55",
+			"type": "text",
+			"content": "<h3 id=\"Icke-farmakologisk-behandling-av-hypertoni\">Icke-farmakologisk behandling av hypertoni</h3>\n<p><span style=\"color: #ff0000;\">Att f&ouml;r&auml;ndra en livsstil som &auml;r ol&auml;mplig f&ouml;r blodtrycket</span><span style=\"text-decoration: line-through;\"> Livsstilsf&ouml;r&auml;ndringar</span> &auml;r grunden i behandlingen av hypertoni och omfattar r&ouml;kstopp, &ouml;kad fysisk aktivitet, viktminskning, kostbed&ouml;mning och minskning av h&ouml;gt alkohol- och saltintag samt stresshantering. R&ouml;kstopp, &ouml;kad fysisk aktivitet samt viktminskning &auml;r de faktorer som har b&auml;st vetenskapligt st&ouml;d.<br><br></p>\n<p>R&ouml;kstopp minskar inte blodtrycket men p&aring;verkar den aterosklerotiska processen.<br><br></p>\n<p><span style=\"color: #ff0000;\">Regelbunden fysisk aktivitet s&auml;nker blodtrycket vid hypertoni och minskar risken f&ouml;r hj&auml;rt-k&auml;rlkomplikationer (20)</span>&nbsp; <span style=\"text-decoration: line-through;\">Promenader (under 8&minus;12 veckor) och konditionstr&auml;ning med m&aring;ttlig till h&ouml;g intensitet (minst 4 veckor) har i studier visats ge en blodtryckss&auml;nkning p&aring; 8&minus;20/4&minus;12 mm&nbsp;Hg (20)</span>.<span style=\"text-decoration: line-through;\"><span style=\"color: #000000; text-decoration: line-through;\"> Fysisk aktivitet minskar oavsett den blodtryckss&auml;nkande effekten risken f&ouml;r hj&auml;rtk&auml;rlkomplikationer (21)</span></span>. Patienter med hypertoni har ofta &auml;ven metabola st&ouml;rningar samt fetma och/eller bukfetma. En m&aring;ttlig viktminskning hos patienter med &ouml;vervikt s&auml;nker blodtrycket n&aring;got och ger andra positiva metabola effekter.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8bce81ba-0870-4b46-a877-5062bcd641a3",
+			"name": "8bce81ba-0870-4b46-a877-5062bcd641a3",
+			"type": "text",
+			"content": "<h3 id=\"Farmakologisk-behandling-av-hypertoni\">Farmakologisk behandling av hypertoni</h3>\n<p><em></em>Behandlingsrekommendationerna g&auml;ller f&ouml;r vuxna och &auml;r lika f&ouml;r kvinnor och m&auml;n (rekommendationsgrad A). Vid m&aring;ttlig eller sv&aring;r hypertoni (&ge;&nbsp;160/100 mm&nbsp;Hg) och h&ouml;g risk f&ouml;r hj&auml;rtk&auml;rlkomplikationer &auml;r det viktigt att blodtrycket snabbt s&auml;nks. D&aring; beh&ouml;vs ofta en kombination av tv&aring; l&auml;kemedelsklasser (rekommendationsgrad B). En kombination av olika l&auml;kemedel i l&auml;gre doser ger b&auml;ttre s&auml;nkning av blodtrycket och f&auml;rre biverkningar &auml;n h&ouml;g dos av enskilt l&auml;kemedel (rekommendationsgrad A). Dock &auml;r kombinationsbehandling med ACE-h&auml;mmare och ARB ol&auml;mplig, p&aring; grund av &ouml;kad risk f&ouml;r biverkningar och avsaknad av additiv blodtryckss&auml;nkande effekt (rekommendationsgrad A).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d4508f66-e61e-4cc9-8d13-86e725cd63df",
+			"name": "d4508f66-e61e-4cc9-8d13-86e725cd63df",
+			"type": "text",
+			"content": "<h2 id=\"Okomplicerad-hypertoni\"><span style=\"color: #ff0000;\">Okomplicerad hypertoni</span></h2>\n<p><span style=\"color: #ff0000;\">Vid okomplicerad hypertoni rekommenderas antingen s&aring; kallad ACE-h&auml;mmare (angiotensin converting enzyme) eller ARB (angiotensin-receptorblockerare), kalciumantagonist av dihydropyridintyp eller diuretikum av tiazidtyp (bendroflumetiazid, hydroklortiazid, klortalidon) i f&ouml;rsta </span><span style=\"color: #ff0000;\">hand (Rekommendationsgrad A). Se vidare Terapirekommendationer &ndash; L&auml;kemedelsval vid behandling av okomplicerad hypertoni.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0265ed60-89cf-4f9e-85b9-f8160fc38d47",
+			"name": "0265ed60-89cf-4f9e-85b9-f8160fc38d47",
+			"type": "therapy",
+			"content": {
+				"number": "1",
+				"title": "Läkemedelsval vid behandling av okomplicerad hypertoni",
+				"id": "",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td><strong>F&ouml;rstahandsval</strong></td>\r\n<td>\r\n<p>ACE-h&auml;mmare<sup>1</sup> eller ARB<sup>2</sup>, kalciumantagonist av dihydropyridintyp eller diuretikum av tiazidtyp (rekommendationsgrad A). <br /><br /><em>ACE-h&auml;mmare</em>:<br />B&auml;st dokumentation har enalapril 10&ndash;20 mg 1 g&aring;ng dagligen och ramipril 5&ndash;10 mg 1 g&aring;ng dagligen.<br /><br /><em>ARB</em>:<br /><br /><em>Kalciumantagonist av dihydropyridintyp</em>: <br />I f&ouml;rsta hand rekommenderas dihydropyridinderivaten<br />amlodipin 5&ndash;10 mg 1 g&aring;ng dagligen eller felodipin 2,5&ndash;10 mg 1 g&aring;ng dagligen.<br /><br /><em>Diuretikum av tiazidtyp</em>: <br />I f&ouml;rsta hand rekommenderas hydroklortiazid 12,5&ndash;25 mg 1 g&aring;ng dagligen eller bendroflumetiazid 2,5&ndash;5 mg 1 g&aring;ng dagligen.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td><strong>Vid otillr&auml;cklig effekt av </strong><strong>monoterapi med en </strong><strong>klass av l&auml;kemedel</strong></td>\r\n<td>ACE-h&auml;mmare eller ARB + kalciumantagonist eller tiazid (rekommendationsgrad A).</td>\r\n</tr>\r\n<tr>\r\n<td><strong>Vid otillr&auml;cklig effekt av </strong><br /><strong>kombination med tv&aring; </strong><br /><strong>klasser av l&auml;kemedel</strong></td>\r\n<td>Kombinera alla tre klasser av l&auml;kemedel och g&aring; upp i full dos (rekommendationsgrad A).</td>\r\n</tr>\r\n<tr>\r\n<td><strong>Andrahandsval</strong></td>\r\n<td>Betablockad: Beta-1-selektiv blockad rekommenderas, t.ex. metoprolol dep&aring;beredning 50&ndash;100 mg 1 g&aring;ng dagligen eller bisoprolol 5&ndash;10 mg 1 g&aring;ng dagligen.<br /><br />Alfablockad eller&nbsp;<span style=\"color: #ff0000;\"><sup></sup>aldosteronantagonist </span>kan ges om blodtrycksm&aring;let ej uppn&aring;tts med f&ouml;rstahandsmedlen (rekommendationsgrad A).</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">\r\n<p><span style=\"color: #ff0000;\"><sup>1</sup> ACE = angiotensin converting enzyme</span><br /><span style=\"color: #ff0000;\"><sup>2</sup> ARB = angiotensin II-receptorblockerare</span></p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d179153f-bd37-4795-b5a7-0cddf0afe030",
+			"name": "d179153f-bd37-4795-b5a7-0cddf0afe030",
+			"type": "text",
+			"content": "<h3 id=\"Komplicerad-hypertoni\"><span style=\"color: #ff0000;\">Komplicerad hypertoni</span></h3>\n<p><span style=\"color: #ff0000;\">Komplicerande sjukdomar kan&nbsp; inneb&auml;ra s&auml;rskilda st&auml;llningstagande vilka redovisas i </span><span style=\"color: #ff0000;\">Terapirekommendationer &ndash; L&auml;kemedelsval vid behandling av komplicerad hypertoni.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9099ada0-d6db-451c-b7b9-83cc48ec24cc",
+			"name": "9099ada0-d6db-451c-b7b9-83cc48ec24cc",
+			"type": "therapy",
+			"content": {
+				"number": "1",
+				"title": "Läkemedelsval vid behandling av komplicerad hypertoni",
+				"id": "",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<h5>Diabetes typ 1 och 2</h5>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>F&ouml;rstahandsval: ACE-h&auml;mmare<span style=\"color: #ff0000;\"><sup>1</sup></span> eller ARB<sup><span style=\"color: #ff0000;\">2</span></sup> som bromsar en njurfunktionsneds&auml;ttning (rekommendationsgrad A).</li>\r\n<li>I andra hand kalciumantagonist eller tiazid.</li>\r\n<li>Loop-diuretika vid v&auml;tskeretention och volymberoende hypertoni vid typ I-diabetes (rekommendationsgrad C).</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<h5>Ischemisk hj&auml;rtsjukdom</h5>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>F&ouml;rstahandsval: beta-receptorblockerare och/eller kalciumblockerare (rekommendationsgrad A).</li>\r\n<li>ACE-h&auml;mmare b&ouml;r &ouml;verv&auml;gas vid h&ouml;g kardiovaskul&auml;r risk</li>\r\n<li>ACE-h&auml;mmare eller ARB, beta-receptorblockerare och aldosteronantagonister vid systolisk v&auml;nsterkammar-dysfunktion (rekommendationsgrad A).</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<h5>Njursjukdom</h5>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>F&ouml;rstahandsval: ACE-h&auml;mmare eller ARB som bromsar njurfunktionsneds&auml;ttning (rekommendationsgrad A). Vid kreatininstegring &gt;&nbsp;30&nbsp;% reducera dosen eller byt l&auml;kemedel.</li>\r\n<li><span style=\"color: #ff0000;\"></span> <span style=\"color: #ff0000;\">Aldosteronantagonister</span> har god blodtryckss&auml;nkande effekt ocks&aring; vid njursvikt och ger minskad albuminuri &ndash; dock risk f&ouml;r hyperkalemi (rekommendationsgrad&nbsp;B).</li>\r\n<li>Loop-diuretika (i st&auml;llet f&ouml;r tiazider) vid v&auml;tskeretention och volymberoende hypertoni vid njurparenkymskada (rekommendationsgrad C).</li>\r\n<li>Kalciumantagonister av dihydropyridintyp och lipofila beta-receptorblockerare elimineras oberoende av njurfunktion.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<h5>Cerebrovaskul&auml;r sjukdom</h5>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>Se kapitlet <a href=\"{pre}/kapitel/hjarta-karl/cerebrovaskulara_sjukdomar.html#e6_54\">Cerebrovaskul&auml;ra sjukdomar</a>.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<h5>Kronisk obstruktiv lungsjukdom</h5>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>Selektiv beta-1-receptorblockad ger s&auml;llan problem vid kronisk obstruktiv lungsjukdom (rekommendationsgrad B).</li>\r\n<li>Oselektiv beta-receptorblockad b&ouml;r undvikas liksom ACE-h&auml;mmare p.g.a. risk f&ouml;r &ouml;kade besv&auml;r i grundsjukdomen.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<h5><span style=\"text-decoration: line-through;\">Hypertensiv kris, malign hypertoni inneliggande patienter</span></h5>\r\n</td>\r\n<td>\r\n<ul>\r\n<li><span style=\"text-decoration: line-through;\">Kalciumantagonist (dihydropyridin) peroralt</span></li>\r\n<li><span style=\"text-decoration: line-through;\">Furosemid 20&ndash;40 mg iv (vid tecken p&aring; v&auml;nsterkammarsvikt)</span></li>\r\n<li><span style=\"text-decoration: line-through;\">Kaptopril till&auml;gg 12,5&ndash;25 mg peroralt kontroll kreatinin, P-Kalium</span></li>\r\n<li><span style=\"text-decoration: line-through;\">Vid behov alfa- och betablockad (labetalol iv), speciellt vid feokromocytom</span></li>\r\n<li><span style=\"text-decoration: line-through;\">Nitroglycerininfusion</span></li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<h5><span style=\"text-decoration: line-through;\">&Auml;ldre patienter</span></h5>\r\n</td>\r\n<td>\r\n<ul>\r\n<li><span style=\"text-decoration: line-through;\">Samma rekommendation som f&ouml;r &ouml;vriga vuxna, se ovan</span></li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<h5><span style=\"text-decoration: line-through;\">Gravida patienter</span></h5>\r\n</td>\r\n<td>\r\n<ul>\r\n<li><span style=\"text-decoration: line-through;\">Se kapitlet xx</span></li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\"><span style=\"color: #ff0000;\"><sup>1</sup> ACE = angiotensin converting enzyme</span><br /><span style=\"color: #ff0000;\"><sup>2</sup> ARB = angiotensin II-receptorantagonister</span><br /><span style=\"color: #ff0000;\"></span></td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "62382935-73e4-452f-8a52-97c6df06902b",
+			"name": "62382935-73e4-452f-8a52-97c6df06902b",
+			"type": "text",
+			"content": "<h3 id=\"Lakemedelsklasser-vid-hypertonibehandling\"><span style=\"color: #ff0000;\">L&auml;kemedelsklasser vid hypertonibehandling</span></h3>\n<p><span style=\"color: #ff0000;\">De olika klasser av l&auml;kemedel som anv&auml;nds vid farmakologisk behandling av hypertoni beskrivs i Faktaruta &ndash; L&auml;kemedelklasser vid&nbsp; hypertonibehandling.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c442a5fb-ba65-4bf2-8692-2a4b9cd90ea2",
+			"name": "c442a5fb-ba65-4bf2-8692-2a4b9cd90ea2",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "Läkemedelsklasser vid hypertonibehandling",
+				"text": "<h2 id=\"Diuretika\"><strong>Diuretika</strong></h2>\r\n<p><strong></strong>Tiaziddiuretika &auml;r en v&auml;ldokumenterad preparatgrupp (<span style=\"color: #ff0000;\">21</span>) som alltid b&ouml;r &ouml;verv&auml;gas, men som &auml;r s&auml;rskilt l&auml;mpliga vid hj&auml;rtsvikt och vid isolerad systolisk hypertoni. Behandling med tiaziddiuretika har ocks&aring; en <span style=\"text-decoration: line-through;\">positiv</span> skyddande effekt mot osteoporos. Biverkningar &auml;r elektrolytrubbningar, nedsatt glukostolerans, p&aring;verkan p&aring; serumlipider, exantem och hyperurikemi och preparaten b&ouml;r undvikas vid gikt. <span style=\"text-decoration: line-through;\">P-natrium, kalium och kreatinin</span> <span style=\"color: #ff0000;\">Plasmaniv&aring;erna av kreatinin och/eller cystatin&nbsp;C (f&ouml;r&nbsp; eGFR) samt av natrium och kalium</span> b&ouml;r kontrolleras f&ouml;re och efter ins&auml;ttning av ett tiaziddiuretikum. Ett tidigare mycket anv&auml;nt l&auml;kemedel, klortalidon, har &aring;terintroducerats p&aring; svenska marknaden. Amilorid kan anv&auml;ndas som till&auml;gg till tiazider och andra saluretiska hypertonil&auml;kemedel f&ouml;r att undvika kaliumf&ouml;rlust vid l&aring;ngtidsbehandling.</p>\r\n<p>&nbsp;</p>\r\n<p>Loop-diuretika saknar morbiditets- och mortalitetsdokumentation, men kan vara ett alternativ hos patienter med nedsatt njurfunktion (kreatinin 150&nbsp;&micro;mol/L eller eGFR &lt;&nbsp;30 ml/min) d&aring; effekten av tiazider minskar vid nedsatt njurfunktion.<br /><br /></p>\r\n<h2 id=\"Kalciumantagonister\"><strong>Kalciumantagonister</strong></h2>\r\n<p>Kalciumantagonister &auml;r en heterogen l&auml;kemedelsgrupp, som indelas i h&ouml;g respektive l&aring;g k&auml;rlselektivitet perifert. Dihydropyridiner &auml;r h&ouml;ggradigt k&auml;rlselektiva, <span style=\"text-decoration: line-through;\">men</span> <span style=\"color: #ff0000;\">medan kalciumantagonister med l&auml;gre k&auml;rlselektivitet,</span> som verapamil och diltiazem, p&aring;verkar &auml;ven hj&auml;rtats kontraktionskraft och retledningsystem. Kalciumantagonister &auml;r l&auml;mpliga vid isolerad systolisk hypertoni och vid k&auml;rlkramp eller perifer k&auml;rlsjukdom. Ankelsvullnad, ansiktsrodnad, huvudv&auml;rk, yrsel och i vissa fall hj&auml;rtklappning &auml;r vanliga men ofta &ouml;verg&aring;ende biverkningar. L&auml;gsta m&ouml;jliga dos b&ouml;r v&auml;ljas. Verapamil och diltiazem ska inte anv&auml;ndas vid hj&auml;rtsvikt eller AV-block II och III.<br /><br /></p>\r\n<h2 id=\"ACE-hammare\"><strong>ACE</strong>-<strong>h&auml;mmare</strong></h2>\r\n<p>ACE-h&auml;mmare <span style=\"color: #ff0000;\">har liksom angiotensinreceptorblockerare (ARB) en antihypertensiv effekt genom sin p&aring;verkan av renin-angiotensinsystemet (RAS) och b&aring;da klasserna</span> &auml;r s&auml;rskilt l&auml;mpliga vid hj&auml;rtsvikt eller v&auml;nsterkammardysfunktion och efter hj&auml;rtinfarkt samt vid <span style=\"text-decoration: line-through;\">nefropati </span><span style=\"color: #ff0000;\">s&aring;v&auml;l diabetisk som icke-diabetisk njursjukdom, se vidare kapitlet Njursjukdomar, avsnitten <a href=\"{pre}/kapitel/nefrologi-urologi/njursjukdomar.html#g4_11\">Diabetesnefropati</a> och <a href=\"{pre}/kapitel/nefrologi-urologi/njursjukdomar.html#g4_44\">Symtomgivande njursvikt</a>.</span> Torrhosta f&ouml;rekommer hos 10&minus;20&nbsp;% av behandlade patienter. En ovanlig men allvarlig biverkan &auml;r angio&ouml;dem. ACE-h&auml;mmare kan hos vissa patienter, fr&auml;mst de som har njurart&auml;rstenos, <span style=\"text-decoration: line-through;\">skada njurarna </span><span style=\"color: #ff0000;\">f&ouml;rs&auml;mra njurfunktionen.</span> <span style=\"text-decoration: line-through;\">Kreatinin och kalium b&ouml;r f&ouml;ljas regelbundet efter ins&auml;ttning av ACE-h&auml;mmare</span>. <span style=\"color: #ff0000;\">Plasmaniv&aring;erna av kreatinin och/eller cystatin&nbsp;C (f&ouml;r eGFR) samt av natrium och kalium b&ouml;r best&auml;mmas f&ouml;re ins&auml;ttning av ACE-h&auml;mmare och kreatinin och kalium b&ouml;r f&ouml;ljas regelbundet efter ins&auml;ttningen. ACE-h&auml;mmare, liksom ARB, m&aring;ste anv&auml;ndas med f&ouml;rsiktighet vid kronisk njursjukdom och vid nedsatt njurfunktion. I kapitlet Njursjukdomar visas i <a href=\"{pre}/kapitel/nefrologi-urologi/njursjukdomar.html#g4_47\">Figur 1</a> ett behandlingsschema vid ins&auml;ttning av ACE-h&auml;mmare och ARB hos patienter med nedsatt njurfunktion (GFR 20-60&nbsp;ml/min).</span> ACE-h&auml;mmare ska inte ges till gravida.<br /><br /></p>\r\n<h2 id=\"Angiotensinreceptorblockerare-ARB-\"><strong>Angiotensinreceptorblockerare (ARB)</strong></h2>\r\n<p>ARB har en gynnsam biverkningsprofil. Hosta &auml;r mindre framtr&auml;dande varf&ouml;r ARB kan f&ouml;rskrivas till patienter som b&ouml;r ha RAS-blockad men som p&aring; grund av hosta inte kan ta ACE-h&auml;mmare. <span style=\"text-decoration: line-through;\">Specifik dokumentation f&ouml;religger vid nefropati hos typ 2-diabetiker.</span> ARB &auml;r kontraindicerade vid graviditet.<br /><br /></p>\r\n<h2 id=\"Betablockerare\"><strong>Betablockerare</strong></h2>\r\n<p>Betablockerare &auml;r ett bra l&auml;kemedelsval vid ischemisk hj&auml;rtsjukdom, takyarytmier samt vid kompenserad hj&auml;rtsvikt. Symtomgivande bradykardi kan uppkomma. En f&ouml;r snabbt insatt behandling kan utl&ouml;sa eller f&ouml;rv&auml;rra hj&auml;rtsvikt. S&ouml;mnkvaliteten kan p&aring;verkas. Problem med depression, tr&ouml;tthet eller st&ouml;rningar av sexuell funktion &auml;r d&auml;remot ovanliga. Betablockerare b&ouml;r undvikas vid astma, samt &auml;r kontraindicerade vid AV-block II och III.<br /><br /></p>\r\n<h2 id=\"Alfablockerare\"><strong>Alfablockerare</strong></h2>\r\n<p>Alfablockerare (doxazosin) kan anv&auml;ndas som till&auml;gg om inte blodtrycksm&aring;let n&aring;s med f&ouml;rsta- och andrahandsmedel. I monoterapi visade doxazosin h&ouml;gre incidens av stroke och hj&auml;rtsvikt j&auml;mf&ouml;rt med tiaziddiuretika (<span style=\"color: #ff0000;\">21</span>). L&auml;kemedlet har en relaxerande effekt p&aring; glatt muskulatur i k&auml;rl och prostata varf&ouml;r det med f&ouml;rdel kan anv&auml;ndas som symtomlindring vid LUTS (lower urinary tract symtom) i kombination med hypertoni. Biverkningar &auml;r framf&ouml;rallt ortostatism och n&auml;st&auml;ppa.<br /><br /></p>\r\n<h2 id=\"Aldosteronantagonister\"><strong>Aldosteronantagonister</strong></h2>\r\n<p>Spironolakton &auml;r ett l&auml;kemedel mot hypertoni som tidigare anv&auml;ndes i stor utstr&auml;ckning, men f&ouml;rskrivningen minskade d&aring; nya antihypertensiva l&auml;kemedel introducerades p&aring; 80- och 90-talen. Dokumentation av effekt p&aring; hj&auml;rt-k&auml;rlkomplikationer vid hypertoni saknas men det finns god dokumentation av dess positiva effekt vid hj&auml;rtsvikt. P&aring; senare &aring;r har l&auml;kemedlet f&aring;tt en ren&auml;ssans som till&auml;ggsbehandling vid resistent hypertoni<span style=\"color: #ff0000;\"> (22)</span>.<span style=\"text-decoration: line-through;\"> vilket illustreras av prelimin&auml;ra resultat presenterade vid 2015 &aring;rs m&ouml;te f&ouml;r Europeiska kardiologis&auml;llskapet (ESC), (B Williams, presentation 2015).</span> <br /><br />Biverkningar &auml;r hyperkalemi, gynekomasti och menstruationsrubbningar och &auml;r beroende av <span>dos</span> och behandlingsduration. Eplerenon &auml;r en annan aldosteronantagonist som inte har dokumentation f&ouml;r behandling av hypertoni, men har mindre p&aring;verkan p&aring; br&ouml;stk&ouml;rteln och kan anv&auml;ndas vid biverkningar av spironolakton.</p>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "41c996fe-faeb-4e27-83ec-d81e049eec23",
+			"name": "41c996fe-faeb-4e27-83ec-d81e049eec23",
+			"type": "text",
+			"content": "<h2 id=\"Renal-denervering\"><strong>Renal denervering</strong></h2>\n<p>Njuren och dess sympatiska nerver har en viktig roll i blodtrycksregleringen. Detta utg&ouml;r basen f&ouml;r behandlingsmetoden renal denervation (RDN). Denna endovaskul&auml;ra kateterbaserade metod utvecklades f&ouml;r att selektivt minska den njursympatiska nervaktiviteten och d&auml;rmed s&auml;nka blodtrycket. I en utv&auml;rdering av behandlingsmetodens effektivitet s&aring;gs en kraftig blodtrycksreduktion i behandlingsgruppen, men n&auml;r en kontrollerad studie med skenintervention genomf&ouml;rdes framkom inga signifikanta effekter p&aring; blodtrycket j&auml;mf&ouml;rt med placebobehandling (23). Metoden har d&auml;refter minskat i anv&auml;ndning, men forskning forts&auml;tter kring patienter med hypertoni och annan hj&auml;rt-k&auml;rlsjukdom s&aring;som f&ouml;rmaksflimmer och hj&auml;rtsvikt.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "95767776-5936-4e5f-a842-2a228a421cdb",
+			"name": "95767776-5936-4e5f-a842-2a228a421cdb",
+			"type": "text",
+			"content": "<h2 id=\"Malblodtryck\">M&aring;lblodtryck</h2>\n<p>Se Tabell 5.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a85de94c-1e47-4d55-8df6-f34a78559241",
+			"name": "a85de94c-1e47-4d55-8df6-f34a78559241",
+			"type": "tablewide",
+			"content": {
+				"number": "5",
+				"title": "Översikt över målblodtryck",
+				"id": "",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td width=\"378\">\r\n<h4><strong>Grupp</strong></h4>\r\n</td>\r\n<td width=\"378\">\r\n<h4><strong>M&aring;lblodtryck</strong></h4>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"378\">\r\n<h5><strong>F&ouml;r de allra flesta</strong></h5>\r\n</td>\r\n<td width=\"378\">\r\n<p>&le; 140 och &le; 90 mm Hg</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"378\">\r\n<h5><strong>Diabetes</strong></h5>\r\n</td>\r\n<td width=\"378\">\r\n<p>&le; 140 och &le; 85 mm Hg</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"378\">\r\n<h5><strong>Vid njursjukdom, makroalbuminuri</strong></h5>\r\n</td>\r\n<td width=\"378\">\r\n<p>&le; 130 och &le; 80 mm Hg</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\" width=\"378\">\r\n<h5><strong>&Auml;ldre</strong></h5>\r\n<p></p>\r\n<p></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"378\">\r\n<p class=\"indent\">friska</p>\r\n</td>\r\n<td width=\"378\">\r\n<p>&le; 140 och &le; 90 mm Hg</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"378\">\r\n<p class=\"indent\">sk&ouml;ra, &ouml;ver 80 &aring;r:</p>\r\n<p class=\"indent\">individualisera!</p>\r\n</td>\r\n<td width=\"378\">140&minus;150 och 90 mm Hg</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1a140d77-3dd7-417d-84c2-947f0247287f",
+			"name": "1a140d77-3dd7-417d-84c2-947f0247287f",
+			"type": "text",
+			"content": "<p>F&ouml;r de flesta patienter med hypertoni &auml;r m&aring;lblodtrycket &lt; 140/90 mm&nbsp;Hg (rekommendationsgrad A). Tillg&auml;nglig dokumentation st&ouml;djer behandling av patienter upp till &aring;tminstone 85 &aring;rs &aring;lder (rekommendationsgrad A). Hos &auml;ldre och sk&ouml;ra patienter &auml;r risken f&ouml;r biverkningar st&ouml;rre och komplicerande sjukdomar och relativa kontraindikationer vanligare, vilket kan g&ouml;ra det sv&aring;rt att uppn&aring; ett idealt blodtryck. Hos dessa m&aring;ste d&auml;rf&ouml;r blodtrycksm&aring;let individualiseras.</p>\n<p>&nbsp;</p>\n<p>En grupp som har h&ouml;g risk f&ouml;r hj&auml;rt-k&auml;rlkomplikationer &auml;r patienter med etablerad aterosklerossjukdom, hypertensiv njursjukdom eller diabetes med h&ouml;g eller mycket h&ouml;g risk enligt Nationella Diabetes registret (<a href=\"https://www.ndr.nu/#/\">www.ndr.nu</a>). M&aring;luppfyllelse i dessa grupper &auml;r d&auml;rf&ouml;r extra viktig (rekommendationsgrad B). Vid dessa tillst&aring;nd b&ouml;r man &ouml;verv&auml;ga ett l&auml;gre m&aring;lblodtryck vilket styrks av nyligen publicerade data d&auml;r ett SBP m&aring;l &lt;&nbsp;120 mm&nbsp;Hg gav ett b&auml;ttre utfall i mortalitet hos individer med f&ouml;rh&ouml;jd kardiovaskul&auml;r risk j&auml;mf&ouml;rt med SBP m&aring;l &lt;&nbsp;140 mm&nbsp;Hg (27). Evidensen f&ouml;r l&auml;gre m&aring;lblodtryck i denna grupp &auml;r emellertid ofullst&auml;ndig (rekommendationsgrad B). Vid diabetes &auml;r blodtrycksm&aring;let &lt;&nbsp;140/85 mm&nbsp;Hg. Vid diabetisk och icke-diabetisk nefropati med proteinuri (&gt;&nbsp;300&nbsp;mg/L) kan ett l&auml;gre m&aring;lblodtryck vara motiverat (&lt;&nbsp;130/80) (rekommendationsgrad B). L&auml;gre blodtrycksm&aring;l kan &ouml;verv&auml;gas i vissa andra fall, till exempel hos yngre patienter i denna grupp.</p>\n<p><br>Majoriteten av patienter beh&ouml;ver mer &auml;n ett l&auml;kemedel i fulldos f&ouml;r att n&aring; m&aring;lblodtryck, och de flesta l&auml;kemedlen g&aring;r ocks&aring; att kombinera. Observera dock att till&auml;gg av betablockad eller angiotensin II-receptorantagonist till ACE-h&auml;mmare har en liten additiv trycks&auml;nkande effekt.</p>\n<p>&nbsp;</p>\n<p>Med dagens billiga f&ouml;rstahandsmedel (tiaziddiuretika, kalciumfl&ouml;desh&auml;mmare och ACE-h&auml;mmare/ARB) kan man n&aring; m&aring;lblodtrycket hos en &ouml;verv&auml;ldigande majoritet av patienter med essentiell hypertoni om preparatens fulla effekt utnyttjas. Man har visat att man kan n&aring; systoliskt m&aring;lblodtryck &lt;&nbsp;140&nbsp;mm&nbsp;Hg vid behandling med tv&aring; preparat i fulldos (24). En klinisk utmaning &auml;r dock att motivera individen till en l&aring;ngsiktig behandling av en riskfaktor som ofta inte ger mycket symtom. F&ouml;ljsamheten har visat sig vara s&auml;mst hos unga m&auml;n f&ouml;dda utanf&ouml;r Europa, med behov endast av ett l&auml;kemedel (25). Strukturerad uppf&ouml;ljning med h&ouml;g grad av uppm&auml;rksamhet p&aring; biverkningar och andra symtom hos sjuksk&ouml;terska eller l&auml;kare i kombination med hemblodtrycksm&auml;tning kan vara ett s&auml;tt att f&ouml;rb&auml;ttra f&ouml;ljsamheten till behandling (28). Ett praktiskt kliniskt r&aring;d &auml;r ocks&aring; att pr&ouml;va till&auml;gg av en aldosteronantagonist vid sv&aring;righeter att uppn&aring; m&aring;lblodtrycket med de tre f&ouml;rstahandsl&auml;kemedlen (19), B Williams, presentation 2015.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3b891be0-6d53-4ece-b632-cfc35d089ad6",
+			"name": "3b891be0-6d53-4ece-b632-cfc35d089ad6",
+			"type": "text",
+			"content": "<h2 id=\"Terapiresistent-hypertoni\">Terapiresistent hypertoni</h2>\n<p>Begreppet terapiresistent hypertoni (TRH) anv&auml;nds f&ouml;r patienter d&auml;r blodtrycket inte blir v&auml;lreglerat trots optimal icke farmakologisk behandling i kombination med tre l&auml;kemedel i fulldos (varav ett &auml;r ett tiaziddiuretikum). I svensk prim&auml;rv&aring;rd bed&ouml;ms 3&minus;17&nbsp;% ha TRH. Handl&auml;ggningen av detta tillst&aring;nd har aktualiserats i samband med att en ny behandlingsmetod (renal denervering, RDN) introducerades i Sverige 2011. Hos patienter med TRH b&ouml;r man f&ouml;rst s&auml;kerst&auml;lla blodtrycksniv&aring;n med hemblodtryck eller ambulatoriskt 24-timmars blodtryck. D&auml;refter utesluts sekund&auml;ra orsaker (hyperaldosteronism, njursjukdom, njurart&auml;rstenos och s&ouml;mnapn&eacute;) samt kontrolleras f&ouml;r d&aring;lig f&ouml;ljsamhet till behandling eller intag av blodtrycksh&ouml;jande substanser (NSAID, lakrits, h&ouml;g alkoholkonsumtion, p-piller eller &ouml;rtmediciner). Resultat fr&aring;n en studie (19) av till&auml;ggsbehandling med spironolakton presenterades p&aring; 2015 &aring;rs m&ouml;te f&ouml;r europeiska kardiologs&auml;llskapet (ESC). Spironolakton visar sig ge ett bra blodtryckssvar och rekommenderas innan diagnosen resistent hypertoni st&auml;lls (B Williams, presentation 2015) och remiss skickas till specialistklinik f&ouml;r bland annat st&auml;llningstagande till RDN.</p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "45bb6db5-dda7-4516-90de-e7b111a3c01d",
+			"name": "45bb6db5-dda7-4516-90de-e7b111a3c01d",
+			"type": "text",
+			"content": "<h2 id=\"Uppfoljning\"><strong>Uppf&ouml;ljning</strong></h2>\n<p>Best&auml;m m&aring;lblodtryck och vidta &aring;tg&auml;rder mot eventuella andra kardiovaskul&auml;ra riskfaktorer. G&ouml;r patienten delaktig i behandlingen och i behandlingsm&aring;len &ndash; informera om de aktuella m&aring;lv&auml;rdena.</p>\n<p>&nbsp;</p>\n<p>Best&auml;m n&auml;r och hur blodtryck och &ouml;vriga riskfaktorer ska f&ouml;ljas upp. Vid lindrig till m&aring;ttlig hypertoni och inga &ouml;vriga riskfaktorer kan den initiala uppf&ouml;ljningen ske efter ett par m&aring;nader. Vid hypertoni med organp&aring;verkan och vid initialt BT &gt;&nbsp;180/100 mm&nbsp;Hg eller st&ouml;rre riskfaktorbelastning b&ouml;r den initiala uppf&ouml;ljningen ske redan efter n&aring;gra veckor. F&ouml;r ytterligare synpunkter p&aring; uppf&ouml;ljningen av behandlingen, se ocks&aring; Tabell 5.</p>\n<p></p>\n<p>Kontroller av hemblodtryck eller egenm&auml;tta blodtryck p&aring; mottagning kan g&ouml;ras med halv eller helautomatiska m&auml;tare f&ouml;r &ouml;verarmen (m&auml;tare f&ouml;r handled eller fingrar rekommenderas inte). Manschetten ska vara av r&auml;tt storlek anpassad till armens omkrets. Det &auml;r ol&auml;mpligt att anv&auml;nda automatiska m&auml;tare vid fetma eller arrytmier s&aring;som f&ouml;rmaksflimmer. En uppdaterad lista av validerade instrument finns p&aring;: <a href=\"http://www.dableducational.org/\">www.dableducational.org</a> eller <a href=\"http://bhsoc.org/\">www.bhsoc.org</a> (British Hypertension Society). Patienten b&ouml;r noga instrueras i blodtrycksm&auml;tning i hemmet och den ska g&ouml;ras p&aring; ett strukturerat s&auml;tt, se Faktaruta 1.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e690b17b-fc3f-4195-baf7-5ea87daa8a7c",
+			"name": "e690b17b-fc3f-4195-baf7-5ea87daa8a7c",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "Instruktioner till patient inför hemblodtrycksmätning",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td rowspan=\"7\" width=\"543\">\r\n<h5>M&auml;tning minst 3 dagar per vecka, helst alla 7 dagarna<strong></strong></h5>\r\n<ul>\r\n<li>Inf&ouml;r diagnos</li>\r\n<li>Efter l&auml;kemedelsins&auml;ttning eller l&auml;kemedelsf&ouml;r&auml;ndring</li>\r\n<li>Innan &aring;terbes&ouml;k p&aring; mottagning f&ouml;r kontroll<strong> <br /><br /></strong></li>\r\n</ul>\r\n<h5>Minst en g&aring;ng per vecka vid l&aring;ngsiktig uppf&ouml;ljning<br /><br /></h5>\r\n<h5>M&auml;tning morgon och kv&auml;ll</h5>\r\n<ul>\r\n<li>Tv&aring; m&auml;tningar per g&aring;ng med 1&minus;2 minuter emellan<br /><br /></li>\r\n</ul>\r\n<h5>Innan m&auml;tningarna</h5>\r\n<ul>\r\n<li>Inget intag av f&ouml;da eller kaffe, ingen r&ouml;kning eller fysisk aktivitet 30&nbsp;minuter innan m&auml;tningen</li>\r\n<li>Vila 5 minuter i lugn omgivning innan m&auml;tning<br /><br /></li>\r\n</ul>\r\n<h5>M&auml;tningar</h5>\r\n<ul>\r\n<li>Sitt stilla, med ryggst&ouml;d och st&ouml;d f&ouml;r armen, t&nbsp;ex p&aring; ett bord</li>\r\n<li>Undvik samtal, ha inte benen i kors</li>\r\n<li>Manschetten i hj&auml;rtniv&aring;<br /><br /></li>\r\n</ul>\r\n<h5>Efter m&auml;tningarna</h5>\r\n<ul>\r\n<li>Registrera resultatet i loggbok <em>eller</em></li>\r\n<li>Lagra resultatet elektroniskt<br /><br /></li>\r\n</ul>\r\n<h5>Avvikande resultat</h5>\r\n<ul>\r\n<li>Kontakta hypertoniansvarig l&auml;kare eller sjuksk&ouml;terska</li>\r\n<li>&Auml;ndra inte medicinering p&aring; egen hand</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6c360d9f-1e35-4304-9570-21ba317b79a4",
+			"name": "6c360d9f-1e35-4304-9570-21ba317b79a4",
+			"type": "text",
+			"content": "<h2 id=\"Hypertensiv-kris-och-malign-hypertoni\"><span style=\"color: #ff0000;\">Hypertensiv kris och malign hypertoni</span></h2>\n<p><span style=\"color: #ff0000;\">Hypertensiv kris och malign hypertoni &auml;r oftast ett resultat av f&ouml;rs&auml;mrad essentiell hypertoni, men sekund&auml;r hypertoni b&ouml;r uteslutas. Symtomen vid denna typ av blodtrycksf&ouml;rh&ouml;jning &auml;r huvudv&auml;rk, synp&aring;verkan, yrsel och andf&aring;ddhet. Tillst&aring;nden &auml;r s&auml;llsynta, men viktiga att uppt&auml;cka d&aring; akut behandling b&ouml;r ske inneliggande p&aring; sjukhus, se Faktaruta 2 och <a style=\"color: #ff0000;\" href=\"{pre}/kapitel/-nya-kapitel-ej-publ/E5-Hypertoni-nytt.html#therapy_2_header\">Terapirekommendationer - Hypertensiv kris, malign hypertoni inneliggande patienter</a>. Det &auml;r viktigt att inte s&auml;nka blodtrycket alltf&ouml;r drastiskt/snabbt, f&ouml;r att undvika cerebrala komplikationer, och man b&ouml;r efterstr&auml;va normalisering av blodtrycket efter dagar eller veckor.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2500c975-2f95-4798-919c-0045b17f3952",
+			"name": "2500c975-2f95-4798-919c-0045b17f3952",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "Hypertensiv kris och malign hypertoni",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><strong>Symtom<br /></strong></p>\r\n<p>Huvudv&auml;rk, yrsel, illam&aring;ende, andn&ouml;d, medvetanderubbning, synst&ouml;rning</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Kliniska fynd</strong></p>\r\n<ul>\r\n<li>&Ouml;gonbottenf&ouml;r&auml;ndringar <span style=\"color: #ff0000;\">&auml;r obligata</span> vid malign hypertoni, bl&ouml;dningar och/eller papill&ouml;dem (fundus hypertonikus 3, 4)</li>\r\n<li><span style=\"color: #ff0000;\">Blodtrycket &auml;r</span> vanligen mycket h&ouml;gt &gt;&nbsp;240/&gt;&nbsp;120 mm&nbsp;Hg</li>\r\n<li>V&auml;nsterkammarhypertrofi p&aring; EKG, hj&auml;rtsvikt/lung&ouml;dem</li>\r\n<li>Proteinuri, kreatininf&ouml;rh&ouml;jning</li>\r\n<li>L&aring;gt P-kalium (prim&auml;r eller sekund&auml;r hyperaldosteronism)</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Differentialdiagnoser</strong></p>\r\n<ul>\r\n<li>Blodtrycksf&ouml;rh&ouml;jning vid akut stroke (bilddiagnostik av hj&auml;rnan)</li>\r\n<li>Intoxikation eller abstinens</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Behandling<br /></strong></p>\r\n<p>Inneliggande p&aring; sjukhus, se <a href=\"{pre}/kapitel/-nya-kapitel-ej-publ/E5-Hypertoni-nytt.html#therapy_1_header\">Terapirekommendation - L&auml;kemedelsval vid hypertonibehandling</a></p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "db911905-85be-4e04-b46e-184d1e746380",
+			"name": "db911905-85be-4e04-b46e-184d1e746380",
+			"type": "therapy",
+			"content": {
+				"number": "2",
+				"title": "Hypertensiv kris, malign hypertoni inneliggande patienter",
+				"id": "",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li><span style=\"color: #ff0000;\">Kalciumantagonist (dihydropyridin) peroralt</span></li>\r\n<li><span style=\"color: #ff0000;\">Furosemid 20&ndash;40 mg iv (vid tecken p&aring; v&auml;nsterkammarsvikt)</span></li>\r\n<li><span style=\"color: #ff0000;\">Kaptopril till&auml;gg 12,5&ndash;25 mg peroralt kontroll kreatinin, P-Kalium</span></li>\r\n<li><span style=\"color: #ff0000;\">Vid behov alfa- och betablockad (labetalol iv), speciellt vid feokromocytom</span></li>\r\n<li><span style=\"color: #ff0000;\">Nitroglycerininfusion</span></li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "89a642da-9d0d-4901-9f6b-acb3f106a913",
+			"name": "89a642da-9d0d-4901-9f6b-acb3f106a913",
+			"type": "text",
+			"content": "<h2 id=\"Avslutande-av-blodtrycksbehandling\"><strong>Avslutande av blodtrycksbehandling</strong></h2>\n<p>Avslutning av behandling b&ouml;r ske under noggrann uppf&ouml;ljning. Betablockerare &auml;r det enda preparat som beh&ouml;ver trappas ut. Efter en avslutad behandling b&ouml;r blodtrycket kontrolleras under ett &aring;r f&ouml;r att man ska f&ouml;rs&auml;kra sig om att inte blodtrycksstegringen &aring;terkommer. Ett alternativ till uts&auml;ttning av l&auml;kemedel &auml;r s&auml;nkning av doserna.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "db43689b-1a24-491d-82d8-4d6b32240e14",
+			"name": "db43689b-1a24-491d-82d8-4d6b32240e14",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2>\n<ol class=\"references\"><li id=\"reference_1\">\n<p>Socialstyrelsens statistikdatabas.&nbsp;2015-11-15. <a href=\"http://www.socialstyrelsen.se/statistik/statistikdatabas/dodsorsaker\">http://www.socialstyrelsen.se/statistik/statistikdatabas/dodsorsaker</a>.</p>\n</li>\n<li id=\"reference_2\">Bj&ouml;rck L, Capewell S, O'Flaherty M, et al. Decline in coronary mortality in Sweden between 1986 and 2002: comparing contributions from primary and secondary prevention. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/25942424\" target=\"_blank\">PLoS One. 2015;10:e0124769. doi: 10.1371/journal.pone.0124769. eCollection 2015.</a></li>\n<li id=\"reference_3\">Folkow B. Hypertensive structural changes in systemic precapillary resistance vessels: how important are they for in vivo haemodynamics? <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/8903608\" target=\"_blank\">J Hypertens. 1995;13:1546&minus;59.</a></li>\n<li id=\"reference_4\">\n<p>Franklin SS, Gustin Wt, Wong ND, et al. Hemodynamic patterns of age-related changes in blood pressure. The Framingham Heart Study. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/9236450\">Circulation. 1997;96:308&minus;15.</a></p>\n</li>\n<li id=\"reference_5\">Staessen JA, Gasowski J, Wang JG, et al. Risks of untreated and treated isolated systolic hypertension in the elderly: meta-analysis of outcome trials. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/10752701\">Lancet. 2000;355:865&ndash;72.</a></li>\n<li id=\"reference_6\">Neaton JD, Grimm RH, Prineas RJ, et al. Treatment of Mild Hypertension Study. Final results. Treatment of Mild Hypertension Study Research Group. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/8336373\">JAMA. 1993;270:713<span></span>&minus;24.</a></li>\n<li id=\"reference_7\">Rossi GP, Bernini G, Caliumi C, et al. A prospective study of the prevalence of primary aldosteronism in 1,125 hypertensive patients. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=2006+hypertension+2293+am+coll+cardiol\">J Am Coll Cardiol. 2006;48:2293&ndash;300.</a></li>\n<li id=\"reference_8\"><span>Cooper CJ, Murphy TP, Cutlip DE, et al. Stenting and medical therapy for atherosclerotic renal-artery stenosis. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/24245566\" target=\"_blank\">N Engl J Med. 2014;370:13</a><a href=\"http://www.lakartidningen.se/OldWebArticlePdf/1/18467/LKT1229s1354_1356.pdf\" target=\"_blank\">&minus;</a><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/24245566\" target=\"_blank\">22.</a><br></span></li>\n<li id=\"reference_9\"><span>Guron G, J&ouml;nsson KZ, Saeed A, et al. Revaskularisering &auml;r av nytta &ndash; p&aring; r&auml;tt patient och p&aring; r&auml;tt indikation. <br><a href=\"http://www.lakartidningen.se/OldWebArticlePdf/1/18467/LKT1229s1354_1356.pdf\" target=\"_blank\">L&auml;kartidningen. 2012;109:1354&minus;5.</a><br></span></li>\n<li id=\"reference_10\"><span>Nieto FJ, Young TB, Lind BK, et al. Association of sleep-disordered breathing, sleep apnea, and hypertension in a large community-based study. Sleep Heart Health Study. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/10770144\" target=\"_blank\">JAMA. 2000;283:1829</a><a href=\"http://www.lakartidningen.se/OldWebArticlePdf/1/18467/LKT1229s1354_1356.pdf\" target=\"_blank\">&minus;</a><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/10770144\" target=\"_blank\">36.</a><br></span></li>\n<li id=\"reference_11\"><span>Thunstr&ouml;m E, Manhem K, Rosengren A, Peker Y. Blood pressure response to Losartan and CPAP in hypertension and Obstruktive sleep Apnea. <br><a target=\"_blank\" href=\"http://www.ncbi.nlm.nih.gov/pubmed/26414380\">Am J Respir Crit Care Med. 2016;193:310&minus;20.</a><br></span></li>\n<li id=\"reference_12\"><span>He FJ, Li J, MacGreg GA. Effect of longer-term modest salt reduction on blood Pressure. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23633321\" target=\"_blank\">Cochrane Database Syst Rev. 2013 Apr 30;4:CD004937.</a><br></span></li>\n<li id=\"reference_13\"><span>O'Donnell M, Mente A, Rangarajan S, et al. Urinary sodium and potassium excretion, mortality, and cardiovascular events. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/25119607\">N Engl J Med. 2014;371:612&minus;23.</a></span></li>\n<li id=\"reference_14\"><span>Sundstr&ouml;m J, Neovius M, Tynelius P, Rasmussen F. Association of blood pressure in late adolescence with subsequent mortality: cohort study of Swedish male conscripts. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/21343202\">BMJ. 2011;342:d643.</a><br></span></li>\n<li id=\"reference_15\"><span>NICE Hypertension in pregnancy: diagnosis and management. NICE guidelines, England 2010. <a href=\"http://www.nice.org.uk/guidance/cg107/chapter/1-recommendations#management-of-pregnancy-with-chronic-hypertension\">http://www.nice.org.uk/guidance/cg107/chapter/1-recommendations#management-of-pregnancy-with-chronic-hypertension</a></span></li>\n<li id=\"reference_16\"><span>Lindh &Aring;, Gothefors D, Runesson B. H&ouml;gre d&ouml;dlighet och somatisk sjuklighet vid psykossjukdom. <br><a href=\"http://www.lakartidningen.se/EditorialFiles/D4/%5BDHD4%5D/DHD4.pdf\">L&auml;kartidningen. 2015;112:DHD4</a>.</span></li>\n<li id=\"reference_17\"><span>Vancampfort D, Stubbs B, Mitchell AJ, et al. Risk of metabolic syndrome and its components in people with schizophrenia and related psychotic disorders, bipolar disorder and major depressive disorder: a systematic review and meta-analysis. <br><a target=\"_blank\" href=\"http://www.ncbi.nlm.nih.gov/pubmed/26407790\">World Psychiatry. 2015;3:339&minus;47.</a><br></span></li>\n<li id=\"reference_18\"><span>Butt DA, Harvey PJ. Benefits and risks of hypertensive medications in the elderly. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/26497967\">J Intern Med. 2015;278:599&minus;626.</a><br></span></li>\n<li id=\"reference_19\"><span style=\"color: #ff0000;\">Att f&ouml;rebygga aterosklerotisk hj&auml;rt-k&auml;rlsjukdom med l&auml;kemedel&nbsp;&ndash; behandlingsrekommendation. <br><a style=\"color: #ff0000;\" href=\"https://lakemedelsverket.se/malgrupp/Halso---sjukvard/Behandlings--rekommendationer/Behandlingsrekommendation---listan/Aterosklerotisk-hjart-karlsjukdom/\">Information fr&aring;n L&auml;kemedelsverket. 2014;25(5):20&ndash;33.</a></span></li>\n<li id=\"reference_20\"><span style=\"text-decoration: line-through;\">B&ouml;rjesson M, Onerup A, Lundqvist S, Dahl&ouml;f B. Fysisk aktivitet vid hypertoni. FYSS 2015. </span><br><a href=\"http://fyss.se/wp-content/uploads/2015/02/FYSS-kapitel_Hypertoni.pdf\"><span style=\"text-decoration: line-through;\">http://fyss.se/wp-content/uploads/2015/02/FYSS-kapitel_Hypertoni.pdf</span> </a><span>O'Donnell MJ, Xavier D, Liu L, et al. Risk factors for ischaemic and intracerebral haemorrhagic stroke in 22 countries (the INTERSTROKE study): a case-control study. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/20561675\">Lancet. 2010;376:112&minus;23.</a></span></li>\n<li id=\"reference_21\"><span>ALLHAT Officers and Coordinators for the ALLHAT Collaborative Research Group. The Antihypertensive and Lipid-Lowering Treatment to Prevent Heart Attack Trial. Major outcomes in high-risk hypertensive patients randomized to angiotensin-converting enzyme inhibitor or calcium channel blocker vs diuretic: The Antihypertensive and Lipid-Lowering Treatment to Prevent Heart Attack Trial (ALLHAT). <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/12479763\">JAMA. 2002;288:2981&minus;97.</a></span></li>\n<li id=\"reference_22\"><span>Bhatt DL, Kandzari DE, O&rsquo;Neill WW, et al. A controlled trial of renal denervation for resistant hypertension. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/24678939\">N Engl J Med. 2014;370:1393&minus;401.</a></span></li>\n<li id=\"reference_23\"><span style=\"color: #ff0000;\">Williams B, MacDonald TM, Morant S, et al. Spironolactone versus placebo, bisoprolol, and doxazosin to determine the optimal treatment for drug-resistant hypertension (PATHWAY-2): a randomised, double-blind, crossover trial.<br><a target=\"_blank\" href=\"https://www.ncbi.nlm.nih.gov/pubmed/26414968\">Lancet. 2015;386:2059<span>&minus;</span>68.</a> <span style=\"text-decoration: line-through;\">Prevention and treatment of hypertension with algorithm-based therapy (PATHWAY) number 2: protocol for a randomised crossover trial to determine optimal treatment for drug-resistant hypertension. </span><br><span style=\"text-decoration: line-through;\"><a style=\"color: #ff0000; text-decoration: line-through;\" href=\"http://www.ncbi.nlm.nih.gov/pubmed/26253568\">BMJ Open. 2015;5:e008951.</a></span><a style=\"color: #ff0000; text-decoration: line-through;\" href=\"http://www.ncbi.nlm.nih.gov/pubmed/26253568\"> </a></span></li>\n<li id=\"reference_24\">\n<p>SPRINT Research Group, Wright JT Jr, Williamson JD, Whelton PK, et al. A randomized trial of intensive versus standard blood-pressure control. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/26551272\">N Engl J Med. 2015;373:2103<span>&minus;</span>16.</a></p>\n</li>\n<li id=\"reference_25\">Qvarnstr&ouml;m M, Kahan T, Kieler H, et al. Persistence to antihypertensive drug treatment in Swedish primary healthcare. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23857249\">Eur J Clin Pharmacol. 2013;69:1955<span>&minus;</span>64.</a></li>\n<li id=\"reference_26\">Bliziotis IA, Destounis A, Stergiou GS. Home versus ambulatory and office blood pressure in predicting target organ damage in hypertension: a systematic review and meta-analysis. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22499289\">J Hypertens 2012;30:1289<span>&minus;</span>99.</a><br><br>\n<h4 id=\"For-vidare-lasning\"><strong>F&ouml;r vidare l&auml;sning</strong></h4>\n</li>\n<li id=\"reference_27\">2013 ESH/ESC Guidelines for the management of arterial hypertension. The Task Force for the management of arterial hypertension of the European Society of Hypertension (ESH) and of the European Society of Cardiology (ESC). <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23817082\">J Hypertens. 2013;31:1281<span>&minus;</span>357.</a></li>\n<li id=\"reference_28\">Att f&ouml;rebygga aterosklerotisk hj&auml;rt-k&auml;rlsjukdom med l&auml;kemedel&nbsp;&ndash; behandlingsrekommendation. <br><a href=\"https://lakemedelsverket.se/malgrupp/Halso---sjukvard/Behandlings--rekommendationer/Behandlingsrekommendation---listan/Aterosklerotisk-hjart-karlsjukdom/\">Information fr&aring;n L&auml;kemedelsverket. 2014;25(5):20&ndash;33.</a></li>\n</ol>\n<p></p>\n<h4 id=\"n--\"><strong>&nbsp;</strong></h4>\n<p></p>\n<p></p>\n<p></p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "true"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/-nya-kapitel-ej-publ/E5-Hypertoni-nytt.json",
+	"indexed": "true",
+	"modified": "2016-10-05 18:37"
+}

@@ -1,0 +1,58 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2017-09-11 16:20",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"description": "Vänsterkolumn",
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "4aa1dea9-4de0-4db5-ab82-8e1b6875c381",
+			"name": "df3989f9-b279-49fe-ace6-f6abd52a7587",
+			"type": "text",
+			"content": "<h1>Kapitelrubrik</h1>",
+			"settings": {}
+		},
+		{
+			"id": "1d8c0b67-ab9c-4f65-8597-914622fb6463",
+			"name": "8ff8af45-2d2e-43f9-8f01-c8d0ec79930f",
+			"type": "author",
+			"content": {
+				"firstname": "Förnamn",
+				"surname": "Efternamn",
+				"description": "Arbetsplats",
+				"email": "e-post"
+			},
+			"settings": {}
+		},
+		{
+			"id": "5b4c8f3c-6913-45d0-9ea4-e343a2a1e44e",
+			"name": "c36c093a-47c9-40c1-b91c-9a33415e0fa6",
+			"type": "text",
+			"content": "<p class=\"ingress\">Ingresstext</p>",
+			"settings": {}
+		},
+		{
+			"id": "b136b0fa-ea87-4a85-9de0-e1b349f210bb",
+			"name": "1e8fcf72-58af-4cac-8467-c633574ca9d2",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\">Referenser</h2><ol><li>Referens 1</li></ol>",
+			"settings": {}
+		}
+	]
+}

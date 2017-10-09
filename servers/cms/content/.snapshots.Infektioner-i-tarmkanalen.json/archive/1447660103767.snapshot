@@ -1,0 +1,130 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Infektioner i tarmkanalen",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-11-16 08:41",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Bo Svenungsson, Olof Hertting",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "1848bb54-af8e-46dc-b93d-b05455110320",
+			"name": "b07c9e79-28b0-4a21-8cbd-a0e477d75d1b",
+			"type": "text",
+			"content": "<h1 id=\"Infektioner-i-tarmkanalen\">Infektioner i tarmkanalen</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "cf6fdbcf-6709-4e36-96bd-2a1db902b2f6",
+			"name": "5082b3bd-435b-4a0f-881d-ee7552a5f4a4",
+			"type": "author",
+			"content": {
+				"firstname": "Bo",
+				"surname": "Svenungsson",
+				"description": "",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7a3409e1-d362-4363-83df-eabb961f5741",
+			"name": "7a3409e1-d362-4363-83df-eabb961f5741",
+			"type": "author",
+			"content": {
+				"firstname": "Olof",
+				"surname": "Hertting",
+				"description": "Karolinska universitetssjukhuset, Solna",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "97897993-0c52-4d08-be7c-07d67e34f390",
+			"name": "0a408721-d3f8-48d4-a641-d562c9c797e5",
+			"type": "text",
+			"content": "<h2 class=\"ingress\" id=\"Inledning\">Inledning</h2>\n<p>Infektioner i tarmkanalen utg&ouml;r globalt sett ett av de st&ouml;rsta h&auml;lsoproblemen och &auml;r j&auml;mte luftv&auml;gsinfektioner den vanligaste d&ouml;dsorsaken hos barn under fem &aring;rs &aring;lder. D&ouml;dligheten &auml;r st&ouml;rst i fattiga l&auml;nder d&auml;r brist p&aring; rent vatten, d&aring;lig hygien och undern&auml;ring bidrar till h&ouml;g sjuklighet. Tarminfektioner &auml;r ocks&aring; ett vanligt sjukv&aring;rdsproblem i h&ouml;g- och medelinkomstl&auml;nder med en incidens p&aring; 0,5&ndash;2 sjukdomsepisoder per person och &aring;r. Sjukdomsf&ouml;rloppet &auml;r dock ofta kortvarigt och godartat och d&ouml;dligheten &auml;r l&aring;g. De flesta v&aring;rdkontakter sker inom prim&auml;rv&aring;rden men enligt Socialstyrelsens statistikdatabas f&ouml;r &aring;r 2013 sjukhusv&aring;rdades i Sverige drygt 13&nbsp;000 personer p&aring; grund av tarminfektion med en medelv&aring;rdtid p&aring; cirka fyra dygn. Den viktigaste behandlings&aring;tg&auml;rden &auml;r att ers&auml;tta v&auml;tske- och saltf&ouml;rluster. Anti&shy;bio&shy;tika&shy;behandling har i de flesta fall endast marginell effekt.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "459838f4-d784-4fc1-b4db-f581000ad33c",
+			"name": "459838f4-d784-4fc1-b4db-f581000ad33c",
+			"type": "text",
+			"content": "<h1>Rubrik</h1>\n<p>Text</p>",
+			"settings": {}
+		},
+		{
+			"id": "33b49744-bf94-4e9f-a46a-64325ef3ee32",
+			"name": "b07befed-7436-4515-bad4-71d17c638bc2",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2><ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/Infektioner-i-tarmkanalen.json",
+	"indexed": "true",
+	"modified": "2015-11-16 08:48"
+}
