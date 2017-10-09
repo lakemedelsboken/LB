@@ -984,7 +984,7 @@ app.get("/psidata", function(req, res){
 });
 
 app.get("/pdf/download", function(req, res) {
-
+	console.log("download from server.js");
 	var url = req.query["url"];
 
 	if (url !== undefined && url !== "") {
@@ -1020,7 +1020,6 @@ app.get("/pdf/download", function(req, res) {
 });
 
 app.get("/pdf/download_old", function(req, res) {
-
 	var url = req.query["url"];
 
 	if (url !== undefined && url !== "") {

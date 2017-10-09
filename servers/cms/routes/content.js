@@ -786,7 +786,7 @@ router.get("/files/removefile", function(req, res) {
 });
 
 router.get("/pdf/download", function(req, res) {
-
+	console.log("download from content.js");
 	var url = req.query["url"];
 
 	if (url !== undefined && url !== "") {
