@@ -984,8 +984,9 @@ app.get("/psidata", function(req, res){
 });
 
 app.get("/pdf/download", function(req, res) {
-	console.log("download from server.js");
+
 	var url = req.query["url"];
+	var style = req.query["style"] || "";
 
 	if (url !== undefined && url !== "") {
 
@@ -993,7 +994,7 @@ app.get("/pdf/download", function(req, res) {
 			url = url.replace('.json', '.html');
 		}
 
-		pdfCreator.createFromUrl(url, req.cookies, function(err, result) {
+		pdfCreator.createFromUrl(url, style, req.cookies, function(err, result) {
 			if (err) {
 				console.log(err);
 				res.status(500);
@@ -1003,8 +1004,8 @@ app.get("/pdf/download", function(req, res) {
 				});
 			} else {
 				if (result.name !== undefined && result.name !== "" && result.path !== undefined && result.path !== "") {
-					console.log("result.name = "+result.name);
-					console.log("result.path = "+result.path);
+					//console.log("result.name = "+result.name);
+					//console.log("result.path = "+result.path);
 					res.download(result.path, result.name);
 				} else {
 					res.status(500);
