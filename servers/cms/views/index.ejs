@@ -31,14 +31,14 @@
 			<span class="dropdown">
 				<a href="#" class="dropdown-toggle btn navbar-btn btn-success" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-cloud-upload"></i> Verktyg <span class="caret"></span></a>
 				<ul class="dropdown-menu" role="menu">
-					<!--<li><a href="#" data-toggle="modal" data-target="#clearCachesModal"><i class="fa fa-trash"></i> Rensa cache...</a></li>
-					<li class="divider"></li>-->
+					<li><a href="#" data-toggle="modal" data-target="#clearCachesModal"><i class="fa fa-trash"></i> Rensa cache...</a></li>
+					<li class="divider"></li>
 					<li><a href="#" data-toggle="modal" data-target="#recreateAllModal"><i class="fa fa-refresh"></i> Bygg om alla sidor...</a></li>
 					<li class="divider"></li>
 					<!--<li class="disabled"><a href="#" data-toggle="modal" class="disabled" data-target="#checkLinks"><i class="fa fa-question"></i> Kontrollera länkar...</a></li>
 					<li class="divider"></li>-->
 					<%
-					if (server && server !== "test") {
+					if (server && server === "production") {
 					%>
 					<li><a href="#" data-toggle="modal" data-target="#saveContentToGitHub"><i class="fa fa-github"></i> Spara till GitHub...</a></li>
 					<%
