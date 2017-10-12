@@ -11,9 +11,8 @@ var historyModel = require("../../../cms/models/historymodel");
 
 var pdfCreator = {
 	printCssFile: "http://localhost/css/uncompressed/print.css",
-	printCssFileOneCol: "http://localhost/css/uncompressed/printOneColumn.css",
 	createFromUrl: function(url, requestCookies, callback) {
-		var cmsPdf=false;
+
 		if (url !== undefined && url !== "" && (url.indexOf("kapitel/") > -1||url.indexOf("-nya-kapitel-ej-publ/") > -1)) {
 
 			if (url.indexOf('.json') !== -1 ) {
@@ -28,7 +27,6 @@ var pdfCreator = {
 			if (url.indexOf("/cms/draft") === 0) {
 				fileOnDisk = path.join(fileOnDisk, "draft", url.replace("/cms/draft/", ""));
 				console.log("file on disk : "+fileOnDisk);
-				cmsPdf=true;
 				//Do not cache draft files
 				//fileOnDisk = null;
 			} else if (url.indexOf("/kapitel") === 0) {
@@ -73,13 +71,9 @@ var pdfCreator = {
 					cookies.push("--cookie " + encodeURIComponent(cookie) + "=" + encodeURIComponent(requestCookies[cookie]));
 				}
 			}
-			var arguments="";
-			if(cmsPdf==true){
-			arguments = ["-s " + pdfCreator.printCssFileOneCol, "--script=http://localhost/js/uncompressed/print.js"];
-			}
-			else{
-				arguments = ["-s " + pdfCreator.printCssFile, "--script=http://localhost/js/uncompressed/print.js"];
-			}
+
+			var arguments = ["--no-author-style", "-s " + pdfCreator.printCssFile, "--script=http://localhost/js/uncompressed/print.js"];
+
 			arguments = arguments.concat(cookies);
 
 			arguments.push("http://localhost" + url)
@@ -105,7 +99,7 @@ var pdfCreator = {
 
 				return callback(err, {name: newFileName, path: outPath});
 			});
-		
+
 
 		} else {
 			return callback(new Error("'url' was empty or undefined"));
