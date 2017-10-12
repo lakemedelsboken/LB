@@ -59,6 +59,7 @@ var Views = {
 		var output = fs.readFileSync(__dirname + "/output.html", "utf8");
 
 		var removeTitle = false;
+		var removeSecondTitle = false;
 
 		if (item.content.number > 0) {
 			output = output.replace(new RegExp("{number}", "g"), item.content.number);
@@ -66,7 +67,7 @@ var Views = {
 			output = output.replace(new RegExp("{number}", "g"), "");
 			removeTitle = true;
 		}
-		
+
 		if (item.content.id !== "" && item.content.id !== "undefined" && item.content.id !== undefined) {
 			output = output.replace(new RegExp("{id}", "g"), " id=\"" + item.content.id + "\"");
 		} else {
@@ -93,6 +94,7 @@ var Views = {
 			output = output.replace(new RegExp("{title}", "g"), " " + resultHtml);
 		} else {
 			output = output.replace(new RegExp("{title}", "g"), "");
+			removeSecondTitle = true;
 		}
 
 		var resultHtml = item.content.text;
@@ -125,26 +127,37 @@ var Views = {
 		} else {
 			maxWidth = "";
 		}
-		
+
 		output = output.replace(new RegExp("{maxwidth}", "g"), maxWidth);
 
 		output = output.replace(new RegExp("{source}", "g"), "{pre}/" + staticSettings.version + item.content.image);
 
 		if (removeTitle) {
 			$ = cheerio.load(output);
-			$("h4").first().remove();
+			//$("h4").first().remove();
 			output = $.html();
 		}
 
+		if (removeSecondTitle) {
+			$ = cheerio.load(output);
+					/*if (removeFactsTitle) {
+						$("tr").first().remove();
+					} else {
+						$("tr").eq(1).remove();
+					}*/
+			output = $.html();
+		}
+
+
 		return output;
 	},
-	preProcess: function(item) {
+	preProcess: function(item,id) {
 
 		//Remove the actual links to self and keep only the hash
 		if (!(item.settings.preprocessors && item.settings.preprocessors["fixlinkstoself.js"] === "true")) {
 			item.content.text = require(path.join(__dirname, "..", "..", "preprocessors", "fixlinkstoself.js")).process(item.content.text, id);
 		}
-		
+
 		return item;
 	},
 	getDefaultType: function() {

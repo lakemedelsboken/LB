@@ -569,10 +569,10 @@ router.get("/makealltextblack", function(req, res) {
 		console.log(currentPage.type);
 		currentPage.content.forEach(function(item){
 			if(item.content && item.content.length > 0) {
-				item.content = item.content.replace(/#([a-f]|[A-F]|[0-9]){3}(([a-f]|[A-F]|[0-9]){3})?/g,"#000000");
+				item.content = item.content.replace(/#([a-f]|[A-F]|[0-9]){2}0000/g,"#000000").replace(/ class="updated"/g,"");
 			}
 			if(item.content.text && item.content.text.length > 0) {
-				item.content.text = item.content.text.replace(/#([a-f]|[A-F]|[0-9]){3}(([a-f]|[A-F]|[0-9]){3})?/g,"#000000");
+				item.content.text = item.content.text.replace(/#([a-f]|[A-F]|[0-9]){2}0000/g,"#000000").replace(/ class="updated"/g,"");;
 			}
 
 		});
@@ -785,8 +785,8 @@ router.get("/files/removefile", function(req, res) {
 
 });
 
-router.get("/pdf/download", function(req, res) {
-
+/*router.get("/download/pdf", function(req, res) {
+	console.log("download from content.js");
 	var url = req.query["url"];
 
 	if (url !== undefined && url !== "") {
@@ -873,7 +873,7 @@ router.get("/pdf/download", function(req, res) {
 		res.redirect("back");
 	}
 
-});
+});*/
 
 router.get("/docx/download", function(req, res) {
 
@@ -1253,7 +1253,7 @@ router.get("/findoutgoinglinks", function(req, res) {
 			//TODO: Better approach when removing components
 			//Remove side container
 			$("#sideContainer").remove();
-			
+
 			//Remove PDF link
 			$("#download-pdf").remove();
 

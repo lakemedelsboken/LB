@@ -1,0 +1,198 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Ordnat införande",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2017-09-11 08:59",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Maria Palmetun Ekbäck, Jan Liliemark",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "81a60de2-8e25-4e03-9dc3-d3d553dc6c28",
+			"name": "3fe826a9-4159-426f-901b-e3bad9c37309",
+			"type": "text",
+			"content": "<h1 id=\"Ordnat-inforande-av-nya-lakemedel\">Ordnat inf&ouml;rande av nya l&auml;kemedel</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c1d55877-9c46-4e14-8948-25523374dfb4",
+			"name": "a7022cc2-9b3c-4289-a84b-d19909d4df0f",
+			"type": "author",
+			"content": {
+				"firstname": "Maria",
+				"surname": "Palmetun Ekbäck",
+				"description": "Hudkliniken, Universitetssjukhuset, Örebro och ordförande LOK (Läkemedelskommittéordförandekollegiet i Sverige)",
+				"email": "e-post"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "db87da52-4b89-49bc-88e6-ec9147d7f141",
+			"name": "db87da52-4b89-49bc-88e6-ec9147d7f141",
+			"type": "author",
+			"content": {
+				"firstname": "Jan",
+				"surname": "Liliemark",
+				"description": "SBU (Statens beredning för medicinsk och social utvärdering)",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "60b0919b-fa30-42a9-a6d6-2b47ca504549",
+			"name": "23bc98b5-ebab-4a4d-a1ec-4c1868e144e2",
+			"type": "text",
+			"content": "<h2 class=\"ingress\" id=\"Bakgrund\">Bakgrund</h2>\n<p class=\"ingress\">Inf&ouml;rande av nya l&auml;kemedel handlade l&auml;nge om att tillverkaren erh&ouml;ll ett marknadsf&ouml;ringstillst&aring;nd och d&auml;refter lanserade sin produkt direkt till f&ouml;rskrivarna. Efter inf&ouml;randet av l&auml;kemedelskommitt&eacute;er och l&auml;kemedelsenheter i landstingen kom fokus f&ouml;r marknadsf&ouml;ringen att skifta fr&aring;n den enskilde f&ouml;rskrivaren till att ocks&aring; innefatta patientorganisationer, politiker, h&ouml;gre tj&auml;nstem&auml;n och &ouml;vrig sjukv&aring;rdspersonal. Information, v&auml;rdering av nya l&auml;kemedel, erbjudanden och avtal hanterades dock traditionellt i stor utstr&auml;ckning inom det enskilda landstinget. Patienternas tillg&aring;ng till nya l&auml;kemedel varierade &ouml;ver landet, beroende p&aring; v&aring;rdniv&aring; och reflekterade ocks&aring; var de kliniska pr&ouml;vningarna genomf&ouml;rts.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ec29d7e1-1701-4cc4-a351-13aece52f99b",
+			"name": "ec29d7e1-1701-4cc4-a351-13aece52f99b",
+			"type": "text",
+			"content": "<p>&Auml;ven om Riksf&ouml;rs&auml;kringsverket tidigare hade som uppgift att godk&auml;nna nya l&auml;kemedel f&ouml;r rabattering var det f&ouml;rst i och med Lagen om l&auml;kemedelsf&ouml;rm&aring;ner (SFS 2002:160) och tillkomsten av L&auml;kemedelsf&ouml;rm&aring;nsn&auml;mnden (LFN) 2002 som nya l&auml;kemedel kom att p&aring; allvar bed&ouml;mas ur h&auml;lsoekonomisk synvinkel p&aring; nationell niv&aring;. Redan 1997 hade dock riksdagen antagit propositionen om prioriteringar i h&auml;lso- och sjukv&aring;rden (prop 1996/97:60), vilken Lagen om l&auml;kemedelsf&ouml;rm&aring;ner och LFN:s arbete grundade sig p&aring;. LFN:s kunde dock bara ta beslut om de l&auml;kemedel som respektive f&ouml;retag ans&ouml;kt om f&ouml;rm&aring;n f&ouml;r. Idag heter LFN Tandv&aring;rds- och l&auml;kemedelsf&ouml;rm&aring;nsverket (TLV), men samma regler g&auml;ller f&ouml;r f&ouml;rm&aring;nsbeslut, det vill s&auml;ga att f&ouml;retagen ans&ouml;ker om f&ouml;rm&aring;n och TLV har en n&auml;mnd, n&auml;mnden f&ouml;r l&auml;kemedelsf&ouml;rm&aring;ner, som tar beslut om f&ouml;rm&aring;nsstatus. F&ouml;rm&aring;nen g&auml;ller bara d&aring; l&auml;kemedlet s&auml;ljs via expeditionsapotek, medan s&aring;kallade rekvisitionsl&auml;kemedel som anv&auml;nds inom sjukv&aring;rden fram till nyligen saknat en samlad, nationell v&auml;rdering. Se &auml;ven kapitlet om <a href=\"{pre}/kapitel/regelverket_och_it-stod/lakemedelsformanerna.html#u20_2\">l&auml;kemedelsf&ouml;rm&aring;nerna</a>.</p>\n<p><br>Redan 2009 uts&aring;g landets landstingsdirekt&ouml;rer en r&aring;dgivande grupp, Nya L&auml;kemedelsterapi (NLT) gruppen, f&ouml;r att samordna hanteringen av komplicerade nya l&auml;kemedel. Sedan TLV &aring;r 2011 p&aring; regeringens uppdrag startade det s&aring;kallade klinikl&auml;kemedelsprojektet f&ouml;r att bist&aring; landstingen med h&auml;lsoekonomiska underlag f&ouml;r utvalda, nya rekvisitionsl&auml;kemedel har NLT-gruppen gett ut rekommendationer f&ouml;r anv&auml;ndning av nya l&auml;kemedel baserat p&aring; dessa h&auml;lsoekonomiska utredningar och etiska &ouml;verv&auml;gande utifr&aring;n riksdagens prioriteringsprinciper.<br><br>P&aring; basen av ett par utredningsprojekt som tagits fram av SKL, st&ouml;tt av Socialdepartementet och i samverkan mellan landstingen, myndigheter och l&auml;kemedelsindustrin, startade den s&aring;kallade samverkansmodellen f&ouml;r ordnat inf&ouml;rande den 1 januari 2015 f&ouml;r alla typer av l&auml;kemedel. Denna har &auml;ven tidigare beskrivits i annat sammanhang (1).<span style=\"color: #000000;\"> Samv</span>erkansmodellen &auml;r en forts&auml;ttning, utvidgning och formalisering av NLT-gruppens uppdrag och inbegriper det arbete som TLV och landstingen samverkar i tillsammans med ber&ouml;rda f&ouml;retag, men involverar ocks&aring; en rad andra akt&ouml;rer, framf&ouml;rallt myndigheter s&aring;som L&auml;kemedelsverket, SBU och Socialstyrelsen. Syftet med arbetet &auml;r att ett ordnat inf&ouml;rande ska m&ouml;jligg&ouml;ra att alla patienter i landet f&aring;r samma tillg&aring;ng till &auml;ndam&aring;lsenlig och kostnadseffektiv behandling med nya l&auml;kemedel. Landstingen ska tillr&auml;ckligt tidigt (i normalfallet inom ett par m&aring;nader efter marknadsf&ouml;ringsgodk&auml;nnandet) f&aring; en rekommendation om att anv&auml;nda eller avst&aring; fr&aring;n att anv&auml;nda ett nytt l&auml;kemedel. De rekommendationer som ges ska bygga p&aring; en h&auml;lsoekonomisk v&auml;rdering av h&ouml;g kvalitet och p&aring; de allm&auml;nt vedertagna etiska principerna f&ouml;r prioriteringar i sjukv&aring;rden. Det ordnade inf&ouml;randet kommer i praktiken att i f&ouml;rsta hand och initialt ber&ouml;ra l&auml;kemedel utanf&ouml;r prim&auml;rv&aring;rden. De aktuella patienterna behandlas dock &auml;ven till stor del inom prim&auml;rv&aring;rden, varf&ouml;r kunskap om processen &auml;r bra att k&auml;nna till f&ouml;r alla f&ouml;rskrivare.</p>\n<p></p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "871d91d0-2014-4f84-80dc-a14e9bd84736",
+			"name": "871d91d0-2014-4f84-80dc-a14e9bd84736",
+			"type": "text",
+			"content": "<h2 id=\"Samverkansmodellen\">Samverkansmodellen</h2>\n<p><o:p></o:p></p>\n<p>Samverkansmodellen involverar en rad olika akt&ouml;rer som alla har specifika roller, se Figur 1. De olika delarna administreras av SKL, enskilda landsting och TLV, men med SKL som sammanh&aring;llande part. Modellen har en av sjukv&aring;rdsregionerna utsedd styrgrupp med ansvar f&ouml;r &ouml;vergripande principfr&aring;gor och att utse representanter i olika funktioner/organ och d&auml;rmed ge dessa formell legitimitet. Som myndighet har TLV en nyckelroll, dels som producent av kunskapsunderlag om kostnadseffektivitet inom ramen f&ouml;r klinikl&auml;kemedelsprojektet och inf&ouml;r f&ouml;rm&aring;nsbeslut, dels som v&auml;rd f&ouml;r f&ouml;rhandlingar med landstingen och l&auml;kemedelsf&ouml;retagen, s&aring; kallade trepartsf&ouml;rhandlingar. Den ovan beskrivna tudelningen best&aring;r n&auml;r det g&auml;ller hantering av nya l&auml;kemedel s&aring; till vida att TLV har ansvar f&ouml;r att besluta om ett f&ouml;rskrivningsl&auml;kemedel ska ing&aring; i l&auml;kemedelsf&ouml;rm&aring;nen, medan landstingen har att besluta om anv&auml;ndning av s&aring; kallade klinikl&auml;kemedel (rekvisitionsl&auml;kemedel). I och med samverkansmodellen har denna tudelning i praktiken mindre betydelse och inneb&auml;r bara att olika typer av l&auml;kemedel tar olika v&auml;gar till patienten, men att de &auml;nd&aring; bed&ouml;ms p&aring; ett samlat s&auml;tt utifr&aring;n samma principer.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "dae75a1e-38d4-4dde-8c8d-c826e1da090a",
+			"name": "dae75a1e-38d4-4dde-8c8d-c826e1da090a",
+			"type": "text",
+			"content": "<h3 id=\"Livscykelfunktionen\">Livscykelfunktionen<o:p></o:p></h3>\n<p>Inom livscykelfunktionen delar landstingen p&aring; en s&aring; kallad \"horizon scanning\" funktion vilken p&aring; ett systematiskt s&auml;tt inh&auml;mtar information om l&auml;kemedel fr&aring;n f&ouml;retagen och andra k&auml;llor under l&auml;kemedlets utveckling. Detta inneb&auml;r att landstingen i ett skede innan godk&auml;nnande kan f&aring; information om kommande l&auml;kemedel. Kortfattad information samlas i en s&aring; kallad kondenserad lista. Denna inneh&aring;ller information endast om de viktigaste kommande l&auml;kemedlen och &auml;ven de viktigaste nya indikationerna f&ouml;r tidigare godk&auml;nda l&auml;kemedel. Dessutom skrivs tidiga bed&ouml;mningsrapporter f&ouml;r enskilda l&auml;kemedel. Bed&ouml;mningsrapporterna distribueras c:a sex m&aring;nader f&ouml;re det f&ouml;rv&auml;ntade marknadsgodk&auml;nnandet. Bed&ouml;mningsrapporten f&ouml;rbereder b&aring;de den lokala finansiella och praktiska resurshanteringen av nya l&auml;kemedel samt underl&auml;ttar det gemensamma arbetet. Den ligger ocks&aring; till grund f&ouml;r NT-r&aring;dets beslut om inf&ouml;randeniv&aring;. F&ouml;r viktigare nya l&auml;kemedel eller grupper av l&auml;kemedel tar livscykelfunktionen &auml;ven fram s.k. inf&ouml;rande- och uppf&ouml;ljningsprotokoll f&ouml;r att senare underl&auml;tta planeringen av ett inf&ouml;rande (niv&aring; 1). Dessa kan ses som en kombination av guideline och checklista f&ouml;r behandling och remitteras till alla landsting f&ouml;r synpunkter innan publicering. Funktionen arbetar ocks&aring; med att ta planera uppf&ouml;ljningen av viktigare nya l&auml;kemedel.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f8e2b8c2-bb96-4224-9cfa-b903a5bd6ac4",
+			"name": "f8e2b8c2-bb96-4224-9cfa-b903a5bd6ac4",
+			"type": "text",
+			"content": "<h3 id=\"Forhandlingsfunktionen\">F&ouml;rhandlingsfunktionen</h3>\n<p>Det r&aring;der ofta en os&auml;kerhet om nyttan av nya l&auml;kemedel, f&ouml;retagens priss&auml;ttning kan ocks&aring; utg&ouml;ra hinder f&ouml;r ett inf&ouml;rande av ett nytt l&auml;kemedel. F&ouml;r att hantera dessa hinder genomf&ouml;rs en gemensam f&ouml;rhandling f&ouml;r alla landsting via, den av landstingen utsedda, fullmaktsgruppen. TLV har en viktig roll i dessa trepartsf&ouml;rhandlingar och de mynnar ofta ut &ouml;verenskommelser mellan f&ouml;retag och landsting. Trepartsf&ouml;rhandlingarna leder till att identiska upphandlingsavtal mellan f&ouml;retag och enskilda landsting kan tecknas samt ett beslut om f&ouml;rskrivningsl&auml;kemedlet ska ing&aring; i f&ouml;rm&aring;nssystemet eller ej alternativt om ett rekvisitionsl&auml;kemedel ska rekommenderas f&ouml;r anv&auml;ndning. S&aring; kallade riskdelningsavtal speglar den os&auml;kerhet som ofta vidl&aring;der nya l&auml;kemedels dokumentation.</p>\n<h3 id=\"NT-radet\">NT-r&aring;det</h3>\n<p>F&ouml;r att f&ouml;rb&auml;ttra j&auml;mlikheten n&auml;r det g&auml;ller tillg&aring;ng till nya l&auml;kemedel och tillse att de prioriteringar som m&aring;ste g&ouml;ras blir enhetliga &ouml;ver landet har man bildat ett r&aring;d, Nya Terapir&aring;det (NT-r&aring;det), vilket best&aring;r av representanter f&ouml;r sjukv&aring;rdsregionerna (med beslutsr&auml;tt) och sakkunniga. NT-r&aring;det ger bland annat ut rekommendationer om anv&auml;ndning av klinikl&auml;kemedel och godk&auml;nner introduktionsprotokoll.</p>\n<p><br>De rekommendationer till landstingen om att anv&auml;nda eller inte anv&auml;nda nya l&auml;kemedel som NT-r&aring;det g&ouml;r, bygger som tidigare beskrivits (2), p&aring; de h&auml;lsoekonomiska utredningar som TLV g&ouml;r inom</p>\n<p>ramen f&ouml;r det s&aring; kallde klinikl&auml;kemedelsuppdraget sedan 2010 (3)<a href=\"#_ftn1\" name=\"_ftnref1\"><span></span></a>. De h&auml;lsoekonomiska underlagen v&auml;rderas utifr&aring;n de av riksdagen fastslagna etiska principerna f&ouml;r prioriteringar (4)<a href=\"#_ftn2\" name=\"_ftnref2\"><span></span></a>, samma principer som ligger till grund f&ouml;r TLV:s f&ouml;rm&aring;nsbeslut (s&aring;som de finns beskrivna i Lagen om l&auml;kemedelsf&ouml;rm&aring;ner (5)<a href=\"#_ftn3\" name=\"_ftnref3\"><span></span></a>) och &auml;ven Socialstyrelsens riktlinjer. Att NT-r&aring;det g&ouml;r s&aring;dana etiska &ouml;verv&auml;ganden inf&ouml;r sina rekommendationer ligger ocks&aring; v&auml;l i linje med det nyligen inf&ouml;rda kravet i h&auml;lso- och sjukv&aring;rdslagen (2 h &sect;) p&aring; etisk analys vid inf&ouml;rande av vissa nya behandlingsmetoder i sjukv&aring;rden.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d80e8bbd-1832-4a60-9f71-92d8090f9682",
+			"name": "d80e8bbd-1832-4a60-9f71-92d8090f9682",
+			"type": "text",
+			"content": "<h1>Rubrik</h1>\n<p>Text</p>",
+			"settings": {}
+		},
+		{
+			"id": "c685b5c0-6143-42f7-ac70-c9bd43fabfa2",
+			"name": "12e44a7e-312d-4b63-9f51-a2f11ad964de",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2><ol class=\"references\"><li id=\"reference_1\">Referens 1</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/regelverket_och_it-stod/ordnat_inforande.json",
+	"indexed": "true",
+	"modified": "2017-09-11 09:55"
+}

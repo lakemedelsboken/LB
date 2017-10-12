@@ -27,7 +27,7 @@ var Views = {
 		}
 
 		return item;
-		
+
 	},
 	getOutput: function(item, id) {
 		//Run item.content through postprocessing

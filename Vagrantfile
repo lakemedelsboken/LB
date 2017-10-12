@@ -59,12 +59,21 @@ Vagrant.configure(2) do |config|
 		#------------------------- wkhtmltopdf ------------------------------------------------
 		#requirements
 		sudo apt-get install -y xfonts-75dpi
-
 		cd /opt/
 		sudo wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.2.1/wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
 		sudo dpkg -i wkhtmltox-0.12.2.1_linux-trusty-amd64.deb
 		sudo apt-get install -f
 
+		#------------------------- Prince XML ------------------------------------------------
+		#requirements
+		sudo aptitude install -y gdebi
+
+		echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
+		sudo apt-get install -y ttf-mscorefonts-installer
+
+		cd
+		wget https://www.princexml.com/download/prince_11.3-1_ubuntu14.04_amd64.deb
+		sudo gdebi -n prince_11.3-1_ubuntu14.04_amd64.deb
 
 		#------------------------- OpenSSL ----------------------------------------------------
 		#openssl

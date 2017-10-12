@@ -58,17 +58,29 @@ router.get('/*', function(req, res) {
 				output.page = data;
 				output.page.content = output.page.content.map(function(content) {
 					content.title = '';
-					var $ = cheerio.load(content.content);
 					if (content.type === 'text') {
-						content.title = $('h2').first().text();
+						if(content.content.length>0)
+						content.title = content.content;
 
-						if (content.title == '') {
-							content.title = $('h3').first().text();
+						if( content.title[0]=='<'){
+							var factsTitle='';
+							for (var i = 0; i < content.title.length; i++) {
+								if(content.title[i]=='<'){
+									for (var j = i+1; j < content.title.length; j++) {
+										if(content.title[j]=='>')
+										{
+											i=j;
+											break;
+										}
+									}
+								}
+								else{
+									factsTitle+=content.title[i];
+								}
+							}
+							content.title =factsTitle;
 						}
-
-						if (content.title == '') {
-							content.title = $('h4').first().text();
-						}
+						content.title =content.title.split(' ').slice(0,2).join(' ')+"...";
 
 					}
 
@@ -76,9 +88,37 @@ router.get('/*', function(req, res) {
 						content.title = content.content.firstname + ' ' + content.content.surname;
 					}
 
-					if (content.type === 'facts') {
-						content.title = $("<div />").html(content.content.title).text();
+
+					if (content.type === 'figure'||content.type === 'tablewide'||content.type === 'tablenarrow'||content.type === 'therapy'||content.type === 'facts'||content.type==='casereport') {
+						if(content.content.title.length>0)
+						content.title = content.content.title;
+						else
+						content.title = content.content.text;
+						if( content.title[0]=='<'){
+							var factsTitle='';
+							for (var i = 0; i < content.title.length; i++) {
+								if(content.title[i]=='<'){
+									for (var j = i+1; j < content.title.length; j++) {
+										if(content.title[j]=='>')
+										{
+											i=j;
+											break;
+										}
+									}
+								}
+								else{
+									factsTitle+=content.title[i];
+								}
+							}
+							content.title =factsTitle;
+						}
+						content.title =content.title.split(' ').slice(0,2).join(' ')+"...";
+
 					}
+
+
+
+
 
 					if (content.title != '') {
 						content.title = ' (' + content.title + ')'

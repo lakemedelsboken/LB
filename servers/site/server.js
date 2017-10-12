@@ -984,7 +984,7 @@ app.get("/psidata", function(req, res){
 });
 
 app.get("/pdf/download", function(req, res) {
-
+	console.log("download from server.js");
 	var url = req.query["url"];
 
 	if (url !== undefined && url !== "") {
@@ -995,6 +995,7 @@ app.get("/pdf/download", function(req, res) {
 
 		pdfCreator.createFromUrl(url, req.cookies, function(err, result) {
 			if (err) {
+				console.log(err);
 				res.status(500);
 				res.render('error', {
 					message: 'Child process exited with err: ' + err.message,
@@ -1002,6 +1003,8 @@ app.get("/pdf/download", function(req, res) {
 				});
 			} else {
 				if (result.name !== undefined && result.name !== "" && result.path !== undefined && result.path !== "") {
+					console.log("result.name = "+result.name);
+					console.log("result.path = "+result.path);
 					res.download(result.path, result.name);
 				} else {
 					res.status(500);
@@ -1016,8 +1019,7 @@ app.get("/pdf/download", function(req, res) {
 	}
 });
 
-app.get("/pdf/download_old", function(req, res) {
-
+/*app.get("/pdf/download_old", function(req, res) {
 	var url = req.query["url"];
 
 	if (url !== undefined && url !== "") {
@@ -1097,7 +1099,7 @@ app.get("/pdf/download_old", function(req, res) {
 		res.redirect("back");
 	}
 
-});
+});*/
 
 /* The 404 Route (Keep this as the last route) */
 app.get('/*', function(req, res){

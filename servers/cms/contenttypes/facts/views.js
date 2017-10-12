@@ -130,17 +130,17 @@ var Views = {
 
 		if (removeFactsTitle) {
 			$ = cheerio.load(output);
-			$("tr").first().remove();
+			//$("tr").first().remove();
 			output = $.html();
 		}
 
 		if (removeSecondTitle) {
 			$ = cheerio.load(output);
-			if (removeFactsTitle) {
+			/*if (removeFactsTitle) {
 				$("tr").first().remove();
 			} else {
 				$("tr").eq(1).remove();
-			}
+			}*/
 			output = $.html();
 		}
 
