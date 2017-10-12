@@ -10,7 +10,6 @@
 		}
 	}
 
-
 	h1 { string-set: chapter-title content() }
 
 	* {
@@ -31,7 +30,7 @@
 		font-family: "Times New Roman", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", Georgia, serif;
 		color: inherit;
 
- 		text-rendering: optimizelegibility;
+		text-rendering: optimizelegibility;
 	}
 
 	a {
@@ -296,8 +295,8 @@
 	}
 
 	div.clearfix {
-/*		display: block;
-		page-break-after: always; */
+		/*		display: block;
+                page-break-after: always; */
 	}
 
 	a.inlineGenerica {
@@ -323,7 +322,7 @@
 		font-family: sans-serif;
 		font-family: Arial, Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 		line-height: 25pt;
-		border: solid 1px black;
+		border: solid 1px #2f4f4f;
 	}
 
 	table.table h4 {
@@ -335,10 +334,10 @@
 
 	table.table th {
 		padding: 5px 10px 5px 10px;
-		border-top: solid 1px black;
-		border-bottom: solid 1px black;
-		border-right: : solid 1px black;
-		border-left: : solid 1px black;
+		border-top: solid 1px #2f4f4f;
+		border-bottom: solid 1px #2f4f4f;
+		border-right: : solid 1px #2f4f4f;
+		border-left: : solid 1px #2f4f4f;
 		text-align: left;
 	}
 
@@ -346,9 +345,9 @@
 		vertical-align: top;
 		margin: 0;
 		padding: 5px 10px 5px 10px;
-		border-bottom: solid 1px black;
-		border-right: solid 1px black;
-		border-left: solid 1px black;
+		border-bottom: solid 1px #2f4f4f;
+		border-right: solid 1px #2f4f4f;
+		border-left: solid 1px #2f4f4f;
 	}
 
 	table.table tr td:last-child {
@@ -357,7 +356,7 @@
 
 	table.table tr:first-child td {
 		margin-top: 5px;
-		border-top: solid 1px black;
+		border-top: solid 1px #2f4f4f;
 	}
 
 	table.table tr:last-child td {
@@ -372,14 +371,14 @@
 		/*border: solid 2px #cecece;*/
 		padding: 2px;
 		margin-bottom: 5px;
-		background-color: #c0c0c0;
+		background-color: #E6E6FA;
 	}
-div.therapy-recommendations{
-	background-color: #c0c0c0;
-}
+	div.therapy-recommendations{
+		background-color: #E6E6FA;
+	}
 	div.facts table.table td, div.facts table.table th {
-		border-left: solid 1px black;
-		border-right: solid 1px black;
+		border-left: solid 1px #2f4f4f;
+		border-right: solid 1px #2f4f4f;
 	}
 
 	div.facts table.table {
@@ -388,19 +387,19 @@ div.therapy-recommendations{
 
 	#main > p {
 		text-align:justify;
-	    -ms-word-break: break-all;
-	        word-break: normal;
+		-ms-word-break: break-all;
+		word-break: normal;
 
-	        /* Non standard for webkit */
-	        word-break: break-word;
+		/* Non standard for webkit */
+		word-break: break-word;
 
-	   -webkit-hyphens: auto;
-	      -moz-hyphens: auto;
-	       -ms-hyphens: auto;
-	           hyphens: auto;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		-ms-hyphens: auto;
+		hyphens: auto;
 
-			   widows: 5;
-			   orphans: 5;
+		widows: 5;
+		orphans: 5;
 	}
 
 	p {
@@ -482,9 +481,9 @@ div.therapy-recommendations{
 
 	footer {
 		content: &copy"Läkemedelsverket\aLäkemedelsboken";
-			font-family: Arial;
-			font-size: 17px;
-			text-align: center;
+		font-family: Arial;
+		font-size: 17px;
+		text-align: center;
 	}
 
 	hr {
@@ -575,7 +574,7 @@ div.therapy-recommendations{
 		top: -4.3px;
 		width: 50px;
 		text-align: center;
-		border-bottom: solid 1px #cecece;
+		/*border-bottom: solid 1px #cecece;*/
 		padding-bottom: 0px;
 		margin-top: 0;
 	}
