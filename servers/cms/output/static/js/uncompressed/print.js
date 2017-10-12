@@ -10469,6 +10469,20 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
 	
 }( this ));
 
+(function($) {
+    $.fn.changeElementType = function(newType) {
+        var attrs = {};
+
+        $.each(this[0].attributes, function(idx, attr) {
+            attrs[attr.nodeName] = attr.nodeValue;
+        });
+
+        this.replaceWith(function() {
+            return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+    };
+})(jQuery);
+
 $(document).ready(function() {
 
 	$("noscript").remove();
@@ -10574,20 +10588,6 @@ $(document).ready(function() {
 		}
 	});
 	
-
-	(function($) {
-	    $.fn.changeElementType = function(newType) {
-	        var attrs = {};
-
-	        $.each(this[0].attributes, function(idx, attr) {
-	            attrs[attr.nodeName] = attr.nodeValue;
-	        });
-
-	        this.replaceWith(function() {
-	            return $("<" + newType + "/>", attrs).append($(this).contents());
-	        });
-	    };
-	})(jQuery);
 		
 	//Move footnotes to where they are referenced, remove numbering as it is added by the pdf-creator
 	$("fieldset.pageFootnote").changeElementType("span");
