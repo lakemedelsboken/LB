@@ -1019,7 +1019,7 @@ app.get("/pdf/download", function(req, res) {
 	}
 });
 
-app.get("/pdf/download_old", function(req, res) {
+/*app.get("/pdf/download_old", function(req, res) {
 	var url = req.query["url"];
 
 	if (url !== undefined && url !== "") {
@@ -1099,7 +1099,7 @@ app.get("/pdf/download_old", function(req, res) {
 		res.redirect("back");
 	}
 
-});
+});*/
 
 /* The 404 Route (Keep this as the last route) */
 app.get('/*', function(req, res){
