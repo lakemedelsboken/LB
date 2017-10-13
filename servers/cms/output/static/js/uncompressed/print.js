@@ -10469,6 +10469,20 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
 	
 }( this ));
 
+(function($) {
+    $.fn.changeElementType = function(newType) {
+        var attrs = {};
+
+        $.each(this[0].attributes, function(idx, attr) {
+            attrs[attr.nodeName] = attr.nodeValue;
+        });
+
+        this.replaceWith(function() {
+            return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+    };
+})(jQuery);
+
 $(document).ready(function() {
 
 	$("noscript").remove();
@@ -10477,6 +10491,25 @@ $(document).ready(function() {
 	$('link[rel=stylesheet]').remove();
 
 	picturefill();
+	
+	//Remove cms-id elements
+	var unwrapElements = [];
+	
+	$("*").each(function() {
+		
+		if ($(this).parent().is("div.cms-id")) {
+			unwrapElements.push($(this));
+		}
+		
+	});
+	
+	if (unwrapElements.length > 0) {
+		for (var i = unwrapElements.length - 1; i >= 0; i--) {
+			if (unwrapElements[i].parent().is("div.cms-id")) {
+				unwrapElements[i].unwrap();
+			}
+		}
+	}
 	
 	//Fix ingress header styling
 	var ingressHeader = $("p.ingress").first().prev("h2").first();
@@ -10533,7 +10566,7 @@ $(document).ready(function() {
 			}
 		}
 	});
-	
+
 	//Fix facts header title
 	var facts = $("div.facts");
 	
@@ -10555,18 +10588,27 @@ $(document).ready(function() {
 		}
 	});
 	
-	
+		
 	//Move footnotes to where they are referenced, remove numbering as it is added by the pdf-creator
-	var footNotes = $("fieldset.pageFootnote");
+	$("fieldset.pageFootnote").changeElementType("span");
+
+	var footNotes = $("span.pageFootnote");
 	
 	footNotes.each(function() {
 		var footNote = $(this);
+		var footNoteId = footNote.attr("id");
 		
 		footNote.find("legend").first().remove();
 		
-		var footNoteReference = $('a[href="#' + footNote.attr("id") + '"]');
+		var footNoteReference = $('a[href="#' + footNoteId + '"]');
+
+		//footNote = $("#" + footNoteId);
 		
 		if (footNoteReference.length === 1) {
+			if (footNoteReference.parent().is("h1,h2,h3,h4,h5,h6")) {
+				footNoteReference.parent().after(footNoteReference);
+				footNote.addClass("freeFootnote");
+			}
 			footNoteReference.replaceWith(footNote);
 		}
 		

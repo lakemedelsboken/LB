@@ -60,6 +60,7 @@ namespace :deploy do
       execute "cd #{release_path}/npl/ && npm install xml-stream"
 
       #rebuild scrypt module
+      execute "cd #{release_path}/servers/cms/ && npm install scrypt@4.0.7"
 
       ask(:secretSettingsPassword, nil, echo: false)
 
@@ -86,7 +87,7 @@ namespace :deploy do
 
       execute "pm2 kill"
 
-      execute "cd /var/www/lb/current/servers/ && export NODE_ENV=production && pm2 start ./pm2_#{fetch(:stage)}.json"
+      execute "cd /var/www/lb/current/servers/ && export NODE_ENV=production && SERVER=#{fetch(:stage)} pm2 start ./pm2_#{fetch(:stage)}.json"
     end
   end
 

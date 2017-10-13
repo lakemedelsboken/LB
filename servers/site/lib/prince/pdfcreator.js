@@ -10,10 +10,19 @@ var historyModel = require("../../../cms/models/historymodel");
 
 
 var pdfCreator = {
-	printCssFile: "http://localhost/css/uncompressed/print.css",
-	printCssFileOneCol: "http://localhost/css/uncompressed/printOneColumn.css",
-	createFromUrl: function(url, requestCookies, callback) {
-		var cmsPdf=false;
+	printCssFile: "http://localhost/css/uncompressed/print-dual-columns.css",
+	printCssOldFile: "http://localhost/css/uncompressed/printOneColumn.css",
+	printCssSingleColumnFile: "http://localhost/css/uncompressed/print-single-column.css",
+	createFromUrl: function(url, printStyle, requestCookies, callback) {
+
+		if (printStyle === undefined || printStyle === "" || printStyle === null) {
+			printStyle = pdfCreator.printCssFile;
+		} else if (printStyle === "old") {
+			printStyle = pdfCreator.printCssOldFile;
+		} else if (printStyle === "single-column") {
+			printStyle = pdfCreator.printCssSingleColumnFile;
+		}
+
 		if (url !== undefined && url !== "" && (url.indexOf("kapitel/") > -1||url.indexOf("-nya-kapitel-ej-publ/") > -1)) {
 
 			if (url.indexOf('.json') !== -1 ) {
@@ -27,13 +36,12 @@ var pdfCreator = {
 
 			if (url.indexOf("/cms/draft") === 0) {
 				fileOnDisk = path.join(fileOnDisk, "draft", url.replace("/cms/draft/", ""));
-				console.log("file on disk : "+fileOnDisk);
-				cmsPdf=true;
+				//console.log("File on disk : " + fileOnDisk);
 				//Do not cache draft files
-				//fileOnDisk = null;
+				fileOnDisk = null;
 			} else if (url.indexOf("/kapitel") === 0) {
 				fileOnDisk = path.join(fileOnDisk, "published", url.substr(1));
-				console.log("file on disk : "+fileOnDisk);
+				//console.log("File on disk : " + fileOnDisk);
 			} else {
 				fileOnDisk = null;
 			}
@@ -42,10 +50,10 @@ var pdfCreator = {
 
 			//Find the file on disk
 			if (fileOnDisk !== null && fs.existsSync(fileOnDisk)) {
-				console.log("file exists");
+				//console.log("File exists");
 				//Calculate the hash of the output html file
 				uniqueIdForContent = historyModel.getFileChecksumSync(fileOnDisk);
-				console.log("unique Id For Content is : "+uniqueIdForContent);
+				//console.log("Unique Id For Content is : " + uniqueIdForContent);
 
 				if (uniqueIdForContent === null || uniqueIdForContent === undefined) {
 					uniqueIdForContent = uuid.v1();
@@ -54,15 +62,15 @@ var pdfCreator = {
 
 			//The id will either be the checksum of the file or a uuid
 			var outPath = path.join(require("os").tmpdir(), uniqueIdForContent + ".pdf");
-			console.log("outPath is : "+outPath);
+			//console.log("outPath is : "+outPath);
 			var date = new Date();
 			var fileNameDate = dateFormat(date, "yyyy-mm-dd--HH-MM-ss");
-			console.log("fileNameDate is : "+fileNameDate);
+			//console.log("fileNameDate is : "+fileNameDate);
 			var newFileName = path.basename(url, ".html") + "-" + fileNameDate + ".pdf";
-			console.log("newFileName is : "+newFileName);
+			//console.log("newFileName is : "+newFileName);
 			//Simple cache check, hash match equals direct result
 			if (fs.existsSync(outPath)) {
-				console.log("output exists");
+				//console.log("output exists");
 				return callback(null, {name: newFileName, path: outPath});
 			}
 
@@ -73,13 +81,9 @@ var pdfCreator = {
 					cookies.push("--cookie " + encodeURIComponent(cookie) + "=" + encodeURIComponent(requestCookies[cookie]));
 				}
 			}
-			var arguments="";
-			if(cmsPdf==true){
-			arguments = ["-s " + pdfCreator.printCssFileOneCol, "--script=http://localhost/js/uncompressed/print.js"];
-			}
-			else{
-				arguments = ["-s " + pdfCreator.printCssFile, "--script=http://localhost/js/uncompressed/print.js"];
-			}
+
+			var arguments = ["-s " + printStyle, "--script=http://localhost/js/uncompressed/print.js"];
+
 			arguments = arguments.concat(cookies);
 
 			arguments.push("http://localhost" + url)
