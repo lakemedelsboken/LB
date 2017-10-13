@@ -741,7 +741,7 @@ $(document).ready(function() {
 			$("#draftFrame").prop("src", url);
 			$("#draftLink").prop("href", url);
 			$("#draftPdfLink").prop("href", "/pdf/download?style=old&url=" + encodeURIComponent(url));
-			$("#draftNewPdfLink").prop("href", "/pdf/download?style=single-column&url=" + encodeURIComponent(url));
+			//$("#draftNewPdfLink").prop("href", "/pdf/download?style=single-column&url=" + encodeURIComponent(url));
 			$("#draftWordLink").prop("href", "/cms/content/docx/download?url=" + encodeURIComponent(url));
 
 		});
@@ -763,7 +763,7 @@ $(document).ready(function() {
 			$("#publishedFrame").prop("src", url);
 			$("#publishedLink").prop("href", url);
 			$("#publishedPdfLink").prop("href", "/pdf/download?style=old&url=" + encodeURIComponent(url));
-			$("#publishedNewPdfLink").prop("href", "/pdf/download?style=single-column&url=" + encodeURIComponent(url));
+			//$("#publishedNewPdfLink").prop("href", "/pdf/download?style=single-column&url=" + encodeURIComponent(url));
 			$("#publishedWordLink").prop("href", "/cms/content/docx/download?url=" + encodeURIComponent(url));
 
 		});
