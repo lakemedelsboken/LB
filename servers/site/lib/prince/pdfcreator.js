@@ -22,11 +22,11 @@ var pdfCreator = {
 
 
 		if (printStyle === undefined || printStyle === "" || printStyle === null) {
-			printStyle = printCssFile;
+			printStyle = printCssOldFile;
 		} else if (printStyle === "old") {
 			printStyle =printCssOldFile;
 		} else if (printStyle === "single-column") {
-			printStyle = printCssSingleColumnFile;
+			printStyle = printCssOldFile;
 		}
 
 		if (url !== undefined && url !== "" && (url.indexOf("kapitel/") > -1||url.indexOf("-nya-kapitel-ej-publ/") > -1)) {
