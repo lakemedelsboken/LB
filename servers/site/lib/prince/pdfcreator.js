@@ -10,10 +10,16 @@ var historyModel = require("../../../cms/models/historymodel");
 
 
 var pdfCreator = {
-	printCssFile: "http://localhost/css/uncompressed/print-dual-columns.css",
-	printCssOldFile: "http://localhost/css/uncompressed/printOneColumn.css",
-	printCssSingleColumnFile: "http://localhost/css/uncompressed/print-single-column.css",
+	//printCssFile: "http://localhost/css/uncompressed/print-dual-columns.css",
+	//printCssOldFile: "http://localhost/css/uncompressed/printOneColumn.css",
+	//printCssSingleColumnFile: "http://localhost/css/uncompressed/print-single-column.css",
 	createFromUrl: function(url, printStyle, requestCookies, callback) {
+		var fileOnDisk = path.join(__dirname, "..", "..", "..", "cms", "output");
+
+		var printCssFile=path.join(fileOnDisk, "static","css","uncompressed","print-dual-columns.css");
+		var printCssOldFile=path.join(fileOnDisk, "static","css","uncompressed","printOneColumn.css");
+		var printCssSingleColumnFile=path.join(fileOnDisk, "static","css","uncompressed","/print-dual-columns.css");
+
 
 		if (printStyle === undefined || printStyle === "" || printStyle === null) {
 			printStyle = pdfCreator.printCssFile;
@@ -32,7 +38,6 @@ var pdfCreator = {
 			//Calculate hash based on the current output
 			url = url.replace(/\.\.\//g, "").replace(/\.\//g, "");
 
-			var fileOnDisk = path.join(__dirname, "..", "..", "..", "cms", "output");
 
 			if (url.indexOf("/cms/draft") === 0) {
 				fileOnDisk = path.join(fileOnDisk, "draft", url.replace("/cms/draft/", ""));
@@ -109,7 +114,7 @@ var pdfCreator = {
 
 				return callback(err, {name: newFileName, path: outPath});
 			});
-		
+
 
 		} else {
 			return callback(new Error("'url' was empty or undefined"));
