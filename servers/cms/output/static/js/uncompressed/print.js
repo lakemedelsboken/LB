@@ -10568,7 +10568,7 @@ $(document).ready(function() {
 	});
 
 	//Fix facts header title
-	var facts = $("div.facts");
+	//var facts = $("div.facts");
 
 	/*facts.each(function() {
 		var factBox = $(this);

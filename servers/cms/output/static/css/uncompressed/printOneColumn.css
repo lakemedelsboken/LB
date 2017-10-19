@@ -338,8 +338,8 @@
 		padding: 5px 10px 5px 10px;
 		border-top: solid 1px #2f4f4f;
 		border-bottom: solid 1px #2f4f4f;
-		border-right: : solid 1px #2f4f4f;
-		border-left: : solid 1px #2f4f4f;
+		border-right: solid 1px #2f4f4f;
+		border-left: solid 1px #2f4f4f;
 		text-align: left;
 	}
 
@@ -482,7 +482,7 @@
 	}
 
 	footer {
-		content: &copy"Läkemedelsverket\aLäkemedelsboken";
+	/*	content: &copy"Läkemedelsverket\aLäkemedelsboken";*/
 		font-family: Arial;
 		font-size: 17px;
 		text-align: center;
