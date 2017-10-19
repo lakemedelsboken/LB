@@ -14,7 +14,7 @@
 
 	* {
 		letter-spacing: normal;
-		line-height: 200%;
+		line-height: 130%;
 	}
 
 	div {
@@ -25,7 +25,7 @@
 		padding: 0;
 		margin: 0;
 		background-color: #fff;
-		font-size: 13pt;
+		font-size: 14pt;
 		/*font-family: inherit;*/
 		font-family: "Times New Roman", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", Georgia, serif;
 		color: inherit;
@@ -203,8 +203,9 @@
 	h2 {
 		margin-top: 10px;
 		font-size: 18pt;
-		line-height: 13pt;
+		line-height: 22pt;
 		font-weight: bold;
+		margin-bottom: 10px;
 	}
 
 	div.ingressHeaderContainer {
@@ -223,15 +224,16 @@
 
 	h3 {
 		margin-top: 10px;
-		font-size: 13pt;
-		line-height: 13pt;
+		font-size: 15pt;
+		line-height: 19pt;
 		font-weight: bold;
+		margin-bottom: 10px;
 	}
 
 	h4 {
 		margin-top: 10px;
-		font-size: 12pt;
-		line-height: 15pt;
+		font-size: 13pt;
+		line-height: 17pt;
 		font-style: italic;
 		font-weight: normal;
 		font-weight: bold;
@@ -245,13 +247,13 @@
 
 	h5 {
 		margin-top: 10px;
-		font-size: 15pt;
-		line-height: 14pt;
+		font-size: 11pt;
+		line-height: 15pt;
 	}
 
 	h6 {
 		margin-top: 10px;
-		font-size: 15pt;
+		font-size: 9pt;
 		line-height: 13pt;
 	}
 
@@ -562,21 +564,21 @@
 	div.facts h4.facts {
 		margin-top: 0px;
 		padding-top: 0;
-		font-size: 11px;
+		font-size: 14px;
 	}
 
-	div.facts h4.numberHeader {
+	/*div.facts h4.numberHeader {
 		font-size: 11px;
 		/*transform: rotate(45deg);*/
-		position: relative;
+		/*position: relative;
 		float: right;
 		right: -24px;
 		top: -4.3px;
 		width: 50px;
 		text-align: center;
 		/*border-bottom: solid 1px #cecece;*/
-		padding-bottom: 0px;
+		/*padding-bottom: 0px;
 		margin-top: 0;
-	}
+	}*/
 
 }

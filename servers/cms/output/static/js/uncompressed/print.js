@@ -10347,7 +10347,7 @@ return jQuery;
 window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=a.firstElementChild||a.firstChild,d=e.createElement("body"),g=e.createElement("div");g.id="mq-test-1";g.style.cssText="position:absolute;top:-100em";d.appendChild(g);return function(h){g.innerHTML='&shy;<style media="'+h+'"> #mq-test-1 { width: 42px; }</style>';a.insertBefore(d,b);c=g.offsetWidth==42;a.removeChild(d);return{matches:c,media:h}}})(document);/*! Picturefill - Responsive Images that work today. (and mimic the proposed Picture element with divs). Author: Scott Jehl, Filament Group, 2012 | License: MIT/GPLv2 */
 
 (function( w ){
-	
+
 	// Enable strict mode
 	"use strict";
 
@@ -10361,17 +10361,17 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
 
 		//TODO: set a base class
 		var ps = $("div.image, div.figureImage, div.fassImage, div.narcImage, div.staticImage, div.providerImage, div.monitoringImage");
-		
+
 		// Loop the pictures
 		var loadCounter = 0;
 		var invokedCallback = false;
-		
+
 		ps.each(function(index, element) {
-			
+
 				var $element = $(element);
 				var sources = $element.find("div"),
 					matches = [];
-			
+
 				// See which sources match
 				sources.each(function(i, e) {
 					var $e = $(e);
@@ -10393,7 +10393,7 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
 						media = webkitmedia +","+ mozmedia +","+ omedia +","+ media;
 					}
 
-					// if there's no media specified, OR w.matchMedia is supported 
+					// if there's no media specified, OR w.matchMedia is supported
 					if( !media || ( w.matchMedia && w.matchMedia(media).matches ) ){
 						matches.push($e);
 					}
@@ -10410,18 +10410,18 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
 						picImg.attr("alt", $element.attr("data-alt"));
 						$element.append(picImg);
 					}
-				
+
 					//var source = matches.pop().getAttribute( "data-src" );
 					var source = matches.pop().attr("data-src");
 					source = source.replace(/\.\.\//g, "");
 					source = "http://localhost/" + source;
 					source = source.replace("small.png", "huge_x2.png");
-					
+
 					if (picImg.attr("src").indexOf(source) === -1) {
 						++loadCounter;
 						picImg.attr("src", source);
 						//console.log("setting src to " + source);
-						
+
 						picImg.on("load", function() {
 							--loadCounter;
 							//console.log("finished loading " + $(this).attr("src"));
@@ -10441,14 +10441,14 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
 			//}
 		//}
 		});
-		
+
 		if (loadCounter === 0 && !invokedCallback && callback !== undefined) {
 			//console.log("sending callback 2");
 			callback();
 		}
-		
+
 	};
-	
+
 	// Run on resize and domready (w.load as a fallback)
 //	if( w.addEventListener ){
 //		if (lb && !lb.isMobile.any()) {
@@ -10466,7 +10466,7 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
 //	else if( w.attachEvent ){
 		//w.attachEvent( "onload", w.picturefill );
 //	}
-	
+
 }( this ));
 
 (function($) {
@@ -10491,18 +10491,18 @@ $(document).ready(function() {
 	$('link[rel=stylesheet]').remove();
 
 	picturefill();
-	
+
 	//Remove cms-id elements
 	var unwrapElements = [];
-	
+
 	$("*").each(function() {
-		
+
 		if ($(this).parent().is("div.cms-id")) {
 			unwrapElements.push($(this));
 		}
-		
+
 	});
-	
+
 	if (unwrapElements.length > 0) {
 		for (var i = unwrapElements.length - 1; i >= 0; i--) {
 			if (unwrapElements[i].parent().is("div.cms-id")) {
@@ -10510,13 +10510,13 @@ $(document).ready(function() {
 			}
 		}
 	}
-	
+
 	//Fix ingress header styling
 	var ingressHeader = $("p.ingress").first().prev("h2").first();
 	if (ingressHeader.length === 1 && ingressHeader.text().trim() !== "") {
 		ingressHeader.addClass("ingressHeader").wrap("<div class='ingressHeaderContainer'></div>");
 	}
-	
+
 	//Split large fact tables
 /*
 	var factsMaxLines = 75;
@@ -10524,27 +10524,27 @@ $(document).ready(function() {
 
 	facts.each(function(i, e) {
 		var factBox = $(e);
-		
-		
+
+
 		var trs = factBox.find("tr").length;
 		var ps = factBox.find("p").length;
 		var brs = factBox.find("br").length;
-		
+
 		var totalLines = trs + ps + brs;
-		
+
 		//if (totalLines > factsMaxLines) {
 			console.log(factBox.find("h4").first().text() + " " + totalLines);
 		//}
-		
+
 	});
 */
-	
+
 	//Move fact boxes before header if a header is positioned before it
 	var facts = $("div.facts, div.narrow");
 
 	facts.each(function() {
 		var factBox = $(this);
-		
+
 		var previousElement = factBox.prev();
 		if (previousElement.length === 1) {
 			if (previousElement.is("h2,h3,h4,h5,h6")) {
@@ -10558,7 +10558,7 @@ $(document).ready(function() {
 
 	facts.each(function() {
 		var factBox = $(this);
-		
+
 		var previousElement = factBox.prev();
 		if (previousElement.length === 1) {
 			if (previousElement.is("h2,h3,h4,h5,h6")) {
@@ -10569,41 +10569,41 @@ $(document).ready(function() {
 
 	//Fix facts header title
 	var facts = $("div.facts");
-	
-	facts.each(function() {
+
+	/*facts.each(function() {
 		var factBox = $(this);
-		
+
 		var headerTitle = factBox.find("h2.facts, h3.facts, h4.facts").first();
-		
+
 		if (headerTitle.length === 1) {
 			var text = headerTitle.html().trim();
 			var newText = text.replace("Faktaruta ", "");
 			var factNumber = newText.split(".")[0];
 			newText = newText.substr(newText.indexOf(".") + 2);
-			
+
 			headerTitle.html(newText);
 
 			headerTitle.before($('<h4 class="numberHeader">' + factNumber + '</h4>'))
-			
+
 		}
-	});
-	
-		
+	});*/
+
+
 	//Move footnotes to where they are referenced, remove numbering as it is added by the pdf-creator
 	$("fieldset.pageFootnote").changeElementType("span");
 
 	var footNotes = $("span.pageFootnote");
-	
+
 	footNotes.each(function() {
 		var footNote = $(this);
 		var footNoteId = footNote.attr("id");
-		
+
 		footNote.find("legend").first().remove();
-		
+
 		var footNoteReference = $('a[href="#' + footNoteId + '"]');
 
 		//footNote = $("#" + footNoteId);
-		
+
 		if (footNoteReference.length === 1) {
 			if (footNoteReference.parent().is("h1,h2,h3,h4,h5,h6")) {
 				footNoteReference.parent().after(footNoteReference);
@@ -10611,37 +10611,37 @@ $(document).ready(function() {
 			}
 			footNoteReference.replaceWith(footNote);
 		}
-		
+
 	});
-	
+
 	//Fix links for recognized substances
 	var inlineSubstances = $("a.inlineGenerica");
-	
+
 	inlineSubstances.each(function() {
 		var inlineLink = $(this);
-		
+
 		var oldHref = inlineLink.attr("href");
-		
+
 		if (oldHref !== undefined && oldHref.indexOf("/atc/") === 0) {
 
 			inlineLink.attr("href", "http://www.lakemedelsboken.se" + oldHref);
 		}
 	});
-	
+
 	//Fix page links in case they are represented by a button
 	var pageLinkButtons = $("a.btn.pageLink");
-	
+
 	pageLinkButtons.each(function() {
 		var pageLinkButton = $(this);
-		
+
 		var link = pageLinkButton.attr("href");
 		pageLinkButton.removeClass("btn").removeClass("btn-primary").removeClass("btn-mini").removeClass("pageLink");
 		pageLinkButton.text("[länk]");
 		pageLinkButton.attr("href", "http://www.lakemedelsboken.se" + link);
 		//pageLinkButton.css("text-decoration", "underline !important");
-		
+
 	});
-	
+
 	//applyAdaptivePageBreaks("h1, h2, h3", 67);
 
 });
