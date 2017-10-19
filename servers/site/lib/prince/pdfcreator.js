@@ -18,8 +18,7 @@ var pdfCreator = {
 
 		var printCssFile=path.join(fileOnDisk, "static","css","uncompressed","print-dual-columns.css");
 		var printCssOldFile=path.join(fileOnDisk, "static","css","uncompressed","printOneColumn.css");
-		var printCssSingleColumnFile=path.join(fileOnDisk, "static","css","uncompressed","print-dual-columns.css");
-		var printJsFile=path.join(fileOnDisk, "static","js","uncompressed","print.js");
+		var printCssSingleColumnFile=path.join(fileOnDisk, "static","css","uncompressed","/print-dual-columns.css");
 
 
 		if (printStyle === undefined || printStyle === "" || printStyle === null) {
@@ -88,7 +87,7 @@ var pdfCreator = {
 				}
 			}
 
-			var arguments = ["-s " + printStyle, "--script="+printJsFile];
+			var arguments = ["-s " + printStyle, "--script=http://localhost/js/uncompressed/print.js"];
 
 			arguments = arguments.concat(cookies);
 
