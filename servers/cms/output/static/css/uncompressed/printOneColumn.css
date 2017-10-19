@@ -14,7 +14,7 @@
 
 	* {
 		letter-spacing: normal;
-		line-height: 130%;
+		line-height: 140%;
 	}
 
 	div {
@@ -372,7 +372,8 @@
 	div.facts {
 		/*border: solid 2px #cecece;*/
 		padding: 2px;
-		margin-bottom: 5px;
+		margin-bottom: 15px;
+		margin-top: 15px;
 		background-color: #E6E6FA;
 	}
 	div.therapy-recommendations{
@@ -527,7 +528,7 @@
 		border-top: solid 0.5mm #cecece;
 		border-bottom: solid 0.5mm #cecece;
 		padding: 0.5mm 0 0.5mm 0;
-		margin: 5mm 0 5mm 0;
+		margin: 15px 0 15px 0;
 	}
 
 	div.figure.narrow {
@@ -565,6 +566,11 @@
 		margin-top: 0px;
 		padding-top: 0;
 		font-size: 14px;
+	}
+
+	div.casereport {
+		margin-top: 15px;
+		margin-bottom: 15px;
 	}
 
 	/*div.facts h4.numberHeader {
