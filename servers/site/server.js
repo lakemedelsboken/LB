@@ -1018,6 +1018,25 @@ app.get("/pdf/download", function(req, res) {
 		});
 
 	}
+
+	var tmpa = path.join(require("os").tmpdir());
+fs.readdir(tmpa, function(err, files) {
+	if(err){
+		console.log("error!!");
+	}
+	else{
+		console.log(files.length);
+		if(files.length>=100){
+			files.forEach(function(file){
+				if(file.indexOf("pdf")>-1){
+					var pathFile=path.join(require("os").tmpdir(),file);
+					fs.unlinkSync(pathFile);
+				}
+			});
+		}
+ }
+});
+
 });
 
 /*app.get("/pdf/download_old", function(req, res) {

@@ -18,12 +18,12 @@ var pdfCreator = {
 
 		var printCssFile=path.join(fileOnDisk, "static","css","uncompressed","print-dual-columns.css");
 		var printCssOldFile=path.join(fileOnDisk, "static","css","uncompressed","printOneColumn.css");
-		var printCssSingleColumnFile=path.join(fileOnDisk, "static","css","uncompressed","print-dual-columns.css");
+		var printCssSingleColumnFile=path.join(fileOnDisk, "static","css","uncompressed","print-single-column.css");
 		var printJsFile=path.join(fileOnDisk, "static","js","uncompressed","print.js");
 
 
 		if (printStyle === undefined || printStyle === "" || printStyle === null) {
-			printStyle = printCssOldFile;
+			printStyle = printCssFile;
 		} else if (printStyle === "old") {
 			printStyle =printCssOldFile;
 		} else if (printStyle === "single-column") {
@@ -48,6 +48,7 @@ var pdfCreator = {
 			} else if (url.indexOf("/kapitel") === 0) {
 				fileOnDisk = path.join(fileOnDisk, "published", url.substr(1));
 				//console.log("File on disk : " + fileOnDisk);
+				fileOnDisk = null;
 			} else {
 				fileOnDisk = null;
 			}
