@@ -1,0 +1,43 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2017-11-16 10:36",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"description": "Vänsterkolumn",
+			"content": ""
+		},
+		"rightcolumn": {
+			"description": "Högerkolumn",
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "83542fb7-e075-48f7-adda-3043afec2da5",
+			"name": "def7db20-9fb4-445b-907e-9dafab89aa54",
+			"type": "summary",
+			"content": "<p>Sammanfattning</p>",
+			"settings": {}
+		},
+		{
+			"id": "1a7a62e1-373a-4cfe-baf7-db31090d9323",
+			"name": "63d992b7-827e-4790-beac-44bad024b20e",
+			"type": "text",
+			"content": "<h1>Rubrik</h1>",
+			"settings": {}
+		}
+	]
+}
