@@ -34,14 +34,14 @@ var Views = {
 		return editorTemplate;
 	},
 	getOutput: function(item, publishType) {
-		
+
 		if (publishType !== "published") {
 			publishType = "draft";
 		}
-		
+
 		//Run item.content through postprocessing
 		//var output = fs.readFileSync(__dirname + "/output.html", "utf8");
-		
+
 		var sortedPages = getSortedPages(item, publishType);
 
 		//Build the output
@@ -54,11 +54,11 @@ var Views = {
 
 		for (var i = 0; i < sortedPages.length; i++) {
 			var page = sortedPages[i];
-			
+
 			var url = "{pre}" + page.contentPath;
-			
+
 			output.push(item.content.htmlbefore.replace(/\{URL\}/ig, url));
-			
+
 			//Try to find a summary
 			var summaries = [];
 			for (var j = 0; j < page.content.content.length; j++) {
@@ -87,11 +87,11 @@ var Views = {
 			if (fs.existsSync(outPath)) {
 				renderedPage = fs.readFileSync(outPath, "utf8");
 			}
-		
+
 			var $ = cheerio.load(renderedPage);
-		
+
 			var titleItem = $("h1").first();
-		
+
 			if (titleItem.length === 0) {
 				titleItem = $("h2").first();
 			}
@@ -108,15 +108,15 @@ var Views = {
 
 				//Get first content of the page
 				var main = $("div#main").first();
-			
+
 				if (main.length === 0) {
 					main = $("body");
 				}
-			
+
 				main.find(".nonindexed").remove();
-			
+
 				var summary = main.find("p.ingress").first();
-		
+
 				if (summary === undefined || summary === null || summary.length === 0) {
 					summary = main.find("p").first();
 				}
@@ -138,9 +138,9 @@ var Views = {
 
 			output.push(item.content.htmlafter.replace(/\{URL\}/ig, url));
 		}
-		
+
 		output = output.join("\n");
-		
+
 		//Assign id:s before saving in order to build a correct index of the page
 		if (!(item.settings.preprocessors && item.settings.preprocessors["idinjection.js"] === "true")) {
 			output = require(path.join(__dirname, "..", "..", "preprocessors", "idinjection.js")).process(output);
@@ -160,7 +160,7 @@ var Views = {
 			}
 
 			var output = [];
-		
+
 			var sortedPages = getSortedPages(item, publishType);
 
 			for (var i = 0; i < sortedPages.length; i++) {
@@ -182,14 +182,20 @@ var Views = {
 
 				//Try to find a summary
 				var summaries = [];
-				for (var j = 0; j < page.content.content.length; j++) {
-					if (page.content.content[j].type === "summary") {
-						var contentViews = contentController.getContentTypes()["summary"];
-						if (contentViews !== undefined) {
-							var out = contentViews.getOutput(page.content.content[j], publishType);
-							var $ = cheerio.load("<div>" + out + "</div>");
-							var $element = fixLocalLinks($("div").first());
-							summaries.push($element.html());
+				if(page.content.length > 0 && page.content.length !== undefined && page.content.length === "" ) {
+					console.log(page.content.length + " \n \n");
+					if(page.content.content.length > 0 && page.content.content.length !== undefined && page.content.content.length === "" ){
+						console.log(page.content.content.length + " \n \n");
+						for (var j = 0; j < page.content.content.length; j++) {
+							if (page.content.content[j].type === "summary") {
+								var contentViews = contentController.getContentTypes()["summary"];
+								if (contentViews !== undefined) {
+									var out = contentViews.getOutput(page.content.content[j], publishType);
+									var $ = cheerio.load("<div>" + out + "</div>");
+									var $element = fixLocalLinks($("div").first());
+									summaries.push($element.html());
+								}
+							}
 						}
 					}
 				}
@@ -206,7 +212,7 @@ var Views = {
 				} else {
 					item.published = new Date(Date.parse(item.published));
 				}
-		
+
 				//Set modified
 				item.modified = (page.content.modified || page.content.published);
 				if (item.modified === "") {
@@ -231,11 +237,11 @@ var Views = {
 				if (fs.existsSync(outPath)) {
 					renderedPage = fs.readFileSync(outPath, "utf8");
 				}
-		
+
 				var $ = cheerio.load(renderedPage);
-		
+
 				var titleItem = $("h1").first();
-		
+
 				if (titleItem.length === 0) {
 					titleItem = $("h2").first();
 				}
@@ -249,16 +255,16 @@ var Views = {
 				}
 
 				var main = $("div#main").first();
-	
+
 				if (main.length === 0) {
 					main = $("body");
 				}
 
 				if (summaries.length === 0) {
 					//Get first content of the page
-		
+
 					var summary = main.find("p.ingress").first();
-		
+
 					if (summary === undefined || summary === null || summary.length === 0) {
 						summary = main.find("p").first();
 					}
@@ -269,7 +275,7 @@ var Views = {
 						summary = fixLocalLinks(summary);
 						summary = summary.html();
 					}
-				
+
 					summaries.push(summary);
 				}
 
@@ -290,18 +296,18 @@ var Views = {
 					//Set full content
 					item.content = escape(main.html()).trim();
 				}
-			
+
 				output.push(item);
 
 			}
-		
+
 			//Trim feed to 20 items
 			if (output.length > 20) {
 				output.length = 20;
 			}
-		
+
 			return output;
-			
+
 		}
 
 	},
@@ -321,12 +327,12 @@ function fixLocalLinks($element) {
 	var query = cheerio.load("<div/>");
 
 	var links = $element.find("a[href]");
-	
+
 	links.each(function(index, element) {
 		var href = query(element).attr("href");
 		if (href !== undefined && href !== "") {
 			var url = urlparser.parse(href);
-			
+
 			if (url.hostname === undefined || url.hostname === null || url.hostname === "") {
 				//TODO: Read from config
 				url.protocol = "http:";
@@ -334,16 +340,16 @@ function fixLocalLinks($element) {
 				query(element).attr("href", urlparser.format(url));
 			}
 		}
-		
+
 	});
 
 	var images = $element.find("img[src]");
-	
+
 	images.each(function(index, element) {
 		var src = query(element).attr("src");
 		if (src !== undefined && src !== "") {
 			var url = urlparser.parse(src);
-			
+
 			if (url.hostname === undefined || url.hostname === null || url.hostname === "") {
 				//TODO: Read from config
 				url.protocol = "http:";
@@ -351,22 +357,22 @@ function fixLocalLinks($element) {
 				query(element).attr("src", urlparser.format(url));
 			}
 		}
-		
+
 	});
 
 	//Make responsive images a single regular image in the feed
 	var pictures = $element.find("div[data-picture]");
-	
+
 	pictures.each(function(index, element) {
 
 		var image = query(element).find("img").first();
-		
+
 		if (image.length === 1) {
 			query(element).replaceWith(image);
 		}
-		
+
 	});
-	
+
 	return $element;
 }
 
@@ -375,26 +381,26 @@ function getSortedPages(item, publishType) {
 	var baseDir = path.join(contentController.baseDir, item.content.basedir);
 
 	var allFiles = [];
-	
+
 	if (fs.existsSync(baseDir)) {
 		allFiles = wrench.readdirSyncRecursive(baseDir);
 	}
-	
+
 	var foundPages = allFiles.filter(function(element) {
 		return (
-			element.indexOf(".json") > -1 
-			&& fs.statSync(baseDir + "/" + element).isFile() 
-			&& element.indexOf(".snapshot") === -1 
+			element.indexOf(".json") > -1
+			&& fs.statSync(baseDir + "/" + element).isFile()
+			&& element.indexOf(".snapshot") === -1
 			&& element.indexOf(".published") === -1
 			&& element.indexOf("components/") === -1
 			&& fs.statSync(baseDir + "/" + element).isFile())
 			&& item.pagePath !== undefined
 			&& path.normalize(baseDir + "/" + element) !== path.normalize(item.pagePath);
 	});
-	
+
 	//Sort items by creation date
 	var sortedPages = [];
-	
+
 	for (var i = foundPages.length - 1; i >= 0; i--) {
 		var cmsPath = path.join(item.content.basedir, foundPages[i]);
 		var pagePath = path.join(contentController.baseDir, cmsPath);
@@ -402,12 +408,12 @@ function getSortedPages(item, publishType) {
 		if (item.content.basedir === "") {
 			item.content.basedir = "/";
 		}
-		
+
 		if (publishType === "published") {
 
 			//Check if the page is published
 			var pageContent = JSON.parse(fs.readFileSync(pagePath, "utf8"));
-			
+
 			if (pageContent.isPublished) {
 				var publishedVersions = historyModel.getPublished(cmsPath);
 				if (publishedVersions.length > 0) {
@@ -420,19 +426,19 @@ function getSortedPages(item, publishType) {
 		}
 
 	}
-	
+
 	sortedPages.sort(function(a, b) {
 		var aDateString = (a.content.created || a.content.published || a.content.modified);
 		var bDateString = (b.content.created || b.content.published || b.content.modified);
-		
+
 		if (aDateString === "" || aDateString === undefined) {
 			aDateString = a.content.created;
-		} 
-		
+		}
+
 		if (bDateString === "" || bDateString === undefined) {
 			bDateString = b.content.created;
 		}
-		
+
 		var aCreatedDate = new Date(Date.parse(aDateString)).getTime();
 		var bCreatedDate = new Date(Date.parse(bDateString)).getTime();
 
@@ -442,7 +448,7 @@ function getSortedPages(item, publishType) {
 	//Apply filters based on page tags
 	if (item.content.filter && item.content.filter !== "") {
 		var allowedPageTags = {};
-		
+
 		var filters = item.content.filter.split(",");
 		for (var j = 0; j < filters.length; j++) {
 			var filter = filters[j].trim();
