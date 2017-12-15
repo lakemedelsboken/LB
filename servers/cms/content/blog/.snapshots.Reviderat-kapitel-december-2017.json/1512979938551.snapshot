@@ -1,0 +1,67 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "Reviderat kapitel december 2017",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "nyhet",
+	"created": "2017-12-11 09:05",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "d63a4ea8-bc33-4af5-88f0-63d8284089f6",
+			"name": "4ef090b0-161f-4c95-ab33-b4dd36f90799",
+			"type": "summary",
+			"content": "<p>Kapitlet <a href=\"https://lakemedelsboken.se/kapitel/mage-tarm/inflammatoriska_tarmsjukdomar.html\">Inflammatoriska tarmsjukdomar</a> har nyligen publicerats i en reviderad version. Trevlig vinterl&auml;sning!</p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3103777f-eaeb-4a4e-8679-ba6d51a38d7f",
+			"name": "739d885f-3b47-45b8-ad74-654538bcf658",
+			"type": "text",
+			"content": "<h1 id=\"Rubrik\">Rubrik</h1>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/blog/Reviderat-kapitel-december-2017.json",
+	"indexed": "true",
+	"modified": "2017-12-11 09:11"
+}
