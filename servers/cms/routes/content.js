@@ -979,7 +979,7 @@ router.get("/docx/download", function(req, res) {
 				if (nrOfMissingColumns > 0) {
 					for (var i = 0; i < nrOfMissingColumns; i++) {
 						if (i === (nrOfMissingColumns - 1)) {
-							$item.after("<td>{EMPTY}</td>");
+							$item.after("<td></td>");
 						} else {
 							$item.after("<td></td>");
 						}
