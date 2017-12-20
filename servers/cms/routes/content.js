@@ -788,77 +788,55 @@ router.get("/files/removefile", function(req, res) {
 /*router.get("/download/pdf", function(req, res) {
 	console.log("download from content.js");
 	var url = req.query["url"];
-
 	if (url !== undefined && url !== "") {
-
 		var outPath = path.join(require("os").tmpdir(), contentController.getGUID() + ".pdf");
-
 		console.log("Building pdf for " + url + " to " + outPath);
-
 		var date = new Date();
 		var fileNameDate = dateFormat(date, "yyyy-mm-dd--HH-MM-ss");
-
 		var newFileName = path.basename(url, ".html") + "-" + fileNameDate + ".pdf";
-
 		var cookies = [];
-
 		for (var cookie in req.cookies) {
 			cookies.push("--cookie");
 			cookies.push(encodeURIComponent(cookie));
 			cookies.push(encodeURIComponent(req.cookies[cookie]));
 		}
-
 		var arguments = ["--print-media-type", "--disable-smart-shrinking", "--zoom", "0.7", "--dpi", "240", "-n"];
 		//"--no-background",
-
 		arguments = arguments.concat(cookies);
-
 		arguments = arguments.concat(["--footer-font-size", 8]);
 		arguments = arguments.concat(["--header-font-size", 8]);
 		arguments = arguments.concat(["--footer-font-name", "Courier"]);
 		arguments = arguments.concat(["--header-font-name", "Courier"]);
 		arguments = arguments.concat(["--margin-left", "30mm"]);
 		arguments = arguments.concat(["--margin-right", "30mm"]);
-
 		arguments.push("http://localhost" + url)
 		arguments.push(outPath);
-
 		var hasExited = false;
 		var converter = spawn('wkhtmltopdf', arguments);
-
 		converter.stdout.on('data', function (data) {
 			console.log('stdout: ' + data);
 		});
-
 		converter.stderr.on('data', function (data) {
 			console.log('stderr: ' + data);
 		});
-
 		converter.on('close', function (code) {
 			if (code !== 0) {
 				console.log('Child process exited with code ' + code);
 				hasExited = true;
-
 				res.status(500);
 				var err = new Error('Child process exited with code ' + code);
 				res.render('error', {
 					message: err.message,
 					error: err
 				});
-
 			} else if (!hasExited) {
 				hasExited = true;
-
 				//Everything is ok
 				res.download(outPath, newFileName);
-
 			}
 		});
-
 		converter.on('error', function (err) {
-
 			console.log('Child process exited with err ', err);
-
 			if (!hasExited) {
 				hasExited = true;
 				res.status(500);
@@ -868,11 +846,9 @@ router.get("/files/removefile", function(req, res) {
 				});
 			}
 		});
-
 	} else {
 		res.redirect("back");
 	}
-
 });*/
 
 router.get("/docx/download", function(req, res) {
@@ -969,10 +945,6 @@ router.get("/docx/download", function(req, res) {
 		autorsFromPage = autorsFromPageString.split('<br>');
 		$("p.authors").remove();
 
-		$("table").each(function(index, item) {
-			$(item).replaceWith("<hr><table style= \"border:1px solid black;\">"+$(item)+"<table><hr>");
-		});
-
 		//Remove links concerning authors disclosure
 		$(".authorsDisclosure").remove();
 
@@ -1007,7 +979,7 @@ router.get("/docx/download", function(req, res) {
 				if (nrOfMissingColumns > 0) {
 					for (var i = 0; i < nrOfMissingColumns; i++) {
 						if (i === (nrOfMissingColumns - 1)) {
-							$item.after("<td></td>");
+							$item.after("<td>{EMPTY}</td>");
 						} else {
 							$item.after("<td></td>");
 						}
@@ -1023,7 +995,7 @@ router.get("/docx/download", function(req, res) {
 				if (nrOfMissingColumns > 0) {
 					for (var i = 0; i < nrOfMissingColumns; i++) {
 						if (i === (nrOfMissingColumns - 1)) {
-							$item.after("<th></th>");
+							$item.after("<th>{EMPTY}</th>");
 						} else {
 							$item.after("<th></th>");
 						}
@@ -1040,11 +1012,8 @@ router.get("/docx/download", function(req, res) {
 		fs.writeFileSync(tempHtmlPath, $.html(), "utf8");
 
 		var newFileName = path.basename(url, ".html") + "-" + draftOrPublish + "-" + fileNameDate + ".docx";
-		var fileOnDisk = path.join(__dirname, "..", "..", "..", "cms", "output");
-		var printCssOldFile=path.join(fileOnDisk, "static","css","uncompressed","printOneColumn.css");
 
-
-		var arguments = ["-S", tempHtmlPath, "-o", outPath, '-f', 'html', '-t','docx' , '--metadata=author:'+autorsFromPage[0],'--css=' +printCssOldFile, '--metadata=author:'+autorsFromPage[1]];
+		var arguments = ["-S", tempHtmlPath, "-o", outPath, '-f', 'html', '-t','docx' , '--metadata=author:'+autorsFromPage[0],'--metadata=author:'+autorsFromPage[1]];
 
 		var hasExited = false;
 		var converter = spawn('pandoc', arguments);
