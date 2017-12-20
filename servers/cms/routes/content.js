@@ -992,6 +992,11 @@ router.get("/docx/download", function(req, res) {
 			$(item).replaceWith("<sup>(" + $(item).text() + ")</sup>");
 		});
 
+		//Insert lines before and after tables
+		$("table").each(function(index, item) {
+			$(item).replaceWith("<hr><table style= \"border:1px solid black;\">"+$(item)+"<table><hr>");
+		});
+
 		//Remove from metadata title if it exists
 		$("title").text($("title").text().replace(" | Läkemedelsboken", ""));
 
@@ -1003,7 +1008,7 @@ router.get("/docx/download", function(req, res) {
 				if (nrOfMissingColumns > 0) {
 					for (var i = 0; i < nrOfMissingColumns; i++) {
 						if (i === (nrOfMissingColumns - 1)) {
-							$item.after("<td>{EMPTY}</td>");
+							$item.after("<td></td>");
 						} else {
 							$item.after("<td></td>");
 						}
@@ -1019,7 +1024,7 @@ router.get("/docx/download", function(req, res) {
 				if (nrOfMissingColumns > 0) {
 					for (var i = 0; i < nrOfMissingColumns; i++) {
 						if (i === (nrOfMissingColumns - 1)) {
-							$item.after("<th>{EMPTY}</th>");
+							$item.after("<th></th>");
 						} else {
 							$item.after("<th></th>");
 						}
