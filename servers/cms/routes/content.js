@@ -969,6 +969,10 @@ router.get("/docx/download", function(req, res) {
 		autorsFromPage = autorsFromPageString.split('<br>');
 		$("p.authors").remove();
 
+		$("table").each(function(index, item) {
+			$(item).replaceWith("<hr><table style= \"border:1px solid black;\">"+$(item)+"<table><hr>");
+		});
+
 		//Remove links concerning authors disclosure
 		$(".authorsDisclosure").remove();
 
@@ -990,11 +994,6 @@ router.get("/docx/download", function(req, res) {
 		//Fix references
 		$("a.inlineReference").each(function(index, item) {
 			$(item).replaceWith("<sup>(" + $(item).text() + ")</sup>");
-		});
-
-		//Insert lines before and after tables
-		$("table").each(function(index, item) {
-			$(item).replaceWith("<hr><table style= \"border:1px solid black;\">"+$(item)+"<table><hr>");
 		});
 
 		//Remove from metadata title if it exists
@@ -1041,8 +1040,11 @@ router.get("/docx/download", function(req, res) {
 		fs.writeFileSync(tempHtmlPath, $.html(), "utf8");
 
 		var newFileName = path.basename(url, ".html") + "-" + draftOrPublish + "-" + fileNameDate + ".docx";
+		var fileOnDisk = path.join(__dirname, "..", "..", "..", "cms", "output");
+		var printCssOldFile=path.join(fileOnDisk, "static","css","uncompressed","printOneColumn.css");
 
-		var arguments = ["-S", tempHtmlPath, "-o", outPath, '-f', 'html', '-t','docx' , '--metadata=author:'+autorsFromPage[0],'--metadata=author:'+autorsFromPage[1]];
+
+		var arguments = ["-S", tempHtmlPath, "-o", outPath, '-f', 'html', '-t','docx' , '--metadata=author:'+autorsFromPage[0],'--css=' +printCssOldFile, '--metadata=author:'+autorsFromPage[1]];
 
 		var hasExited = false;
 		var converter = spawn('pandoc', arguments);
