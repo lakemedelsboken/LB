@@ -1,0 +1,159 @@
+{
+	"templateName": "default",
+	"templateDescription": "Blank sida",
+	"title": "Läkemedelsboken",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"created": "",
+	"published": "2015-04-18 11:28",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"content": [
+		{
+			"id": "c9e1be39-2a42-431e-8aba-a01f8db467bb",
+			"name": "c9e1be39-2a42-431e-8aba-a01f8db467bb",
+			"type": "html",
+			"content": "<div class=\"row span4 pull-right\">",
+			"settings": {
+				"postprocessors": {
+					"boxlinks.js": "true",
+					"genericas.js": "true",
+					"pagefootnotes.js": "true",
+					"references.js": "true",
+					".DS_Store": "false"
+				},
+				"preprocessors": {
+					"idinjection.js": "true",
+					"fixlinkstoself.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fd9f0413-4b61-4b78-926f-3b6f53425dde",
+			"name": "fd9f0413-4b61-4b78-926f-3b6f53425dde",
+			"type": "image",
+			"content": {
+				"image": "/images/mpa.png",
+				"alt": "Läkemedelsverket",
+				"htmlbefore": "<a href=\"http://www.lv.se/\">",
+				"htmlafter": "</a>",
+				"maxwidth": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false",
+					".DS_Store": "false"
+				}
+			}
+		},
+		{
+			"id": "34c70332-6873-4e0e-876d-913b5ab232da",
+			"name": "34c70332-6873-4e0e-876d-913b5ab232da",
+			"type": "text",
+			"content": "<table class=\"table table-bordered facts span4\" id=\"facts_1\">\n<tbody>\n<tr>\n<td>\n<h4 id=\"Kontakta-redaktionen\">Kontakta redaktionen</h4>\n<p>Kontakta oss g&auml;rna, i f&ouml;rsta hand via e-post<br><a href=\"mailto:lakemedelsboken@mpa.se\">lakemedelsboken@mpa.se</a><br>018&ndash;17 46 00 (L&auml;kemedelsverkets v&auml;xel)</p>\n<p><br><strong>Redakt&ouml;r<br></strong>Erika Brolin<br> leg. apotekare, farm.dr<br><br><br></p>\n<strong>J&auml;vsdeklarationer</strong>\n<p>L&auml;kemedelsbokens f&ouml;rfattare l&auml;mnar in j&auml;vsdeklarationer som bed&ouml;ms och godk&auml;nns innan arbetet p&aring;b&ouml;rjas. Om du vill ta del av n&aring;gon j&auml;vsdeklaration, kontakta L&auml;kemedelsverket (enklast via <a href=\"mailto:registrator@mpa.se\">registrator@mpa.se</a>). I slutet av varje kapitel finns f&ouml;rberedda mejl f&ouml;r detta.</p>\n</td>\n</tr>\n<tr>\n<td>\n<h4 id=\"Lakemedelsboken-LB-nu-helt-digital\">L&auml;kemedelsboken (LB) nu helt digital</h4>\n<p class=\"normal\">L&auml;kemedelsboken &auml;r numer endast en webbpublikation och den tryckta boken (LB 2014) kommer inte att distributeras efter den 31 december 2017. Vi h&auml;nsvisar v&aring;ra l&auml;sare till webben och till L&auml;kemedelbokens app som finns att ladda ner till f&ouml;r iOS (Apple) och Android.</p>\n</td>\n</tr>\n<tr>\n<td>\n<h4 id=\"Oppen-kallkod\">&Ouml;ppen k&auml;llkod</h4>\n<p class=\"normal\">Webbversionen av L&auml;kemedelsboken &auml;r &ouml;ppen k&auml;llkod.</p>\n<p>Vi tar tacksamt emot f&ouml;rb&auml;ttringsf&ouml;rslag via <a href=\"https://github.com/lakemedelsboken\"><i class=\"fa fa-github\"> </i> GitHub</a>.</p>\n</td>\n</tr>\n<tr>\n<td>\n<h4 class=\"normal\" id=\"PDF\">PDF</h4>\n<p>Observera att PDF-filerna motsvarar den tryckta versionen av L&auml;kemedelsboken fr&aring;n 2014 och&nbsp;till skillnad fr&aring;n webbkapitlen inte uppdateras.<br><a href=\"{pre}/pdf/\">Visa enskilda kapitel som PDF&nbsp;<i class=\"fa fa-angle-double-right\">&nbsp;</i></a></p>\n</td>\n</tr>\n<tr>\n<td>\n<h4 id=\"Forord-\"><a href=\"{pre}/forord/\">F&ouml;rord </a></h4>\n</td>\n</tr>\n<tr>\n<td>\n<h4 id=\"Redaktionskommitt-\"><a href=\"{pre}/redaktionskommitte/\">Redaktionskommitt&eacute; </a></h4>\n</td>\n</tr>\n<tr>\n<td>\n<h4 id=\"Pressmaterial-\"><a href=\"{pre}/press/\">Pressmaterial </a></h4>\n</td>\n</tr>\n<tr>\n<td>\n<h4 id=\"Webbtjanster-\"><a href=\"../api/\">Webbtj&auml;nster </a></h4>\n</td>\n</tr>\n</tbody>\n</table>\n<p></p>",
+			"settings": {
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false",
+					".DS_Store": "false"
+				},
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ba03ef99-8135-4ea7-bbf1-ccf974c638cf",
+			"name": "ba03ef99-8135-4ea7-bbf1-ccf974c638cf",
+			"type": "html",
+			"content": "</div>",
+			"settings": {
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false",
+					".DS_Store": "false"
+				},
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3275a971-0a04-4996-b496-fcfaed11984b",
+			"name": "3275a971-0a04-4996-b496-fcfaed11984b",
+			"type": "collection",
+			"content": {
+				"basedir": "/blog/",
+				"filter": "nyhet",
+				"perpage": "10",
+				"htmlbefore": "",
+				"htmlafter": "<div>\r\n<a href=\"{URL}\">Läs vidare &#187;</a>\r\n</div>\r\n<hr>",
+				"createfeed": "false"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false",
+					".DS_Store": "false"
+				}
+			}
+		},
+		{
+			"id": "f548801a-92ab-4328-bb37-ba7fea7984e1",
+			"name": "f548801a-92ab-4328-bb37-ba7fea7984e1",
+			"type": "text",
+			"content": "<h2 id=\"Om-Lakemedels-boken\">Om L&auml;kemedels&shy;boken</h2>\n<p class=\"p2 normal\">L&auml;kemedelsbokens &ouml;vergripande m&aring;ls&auml;ttning &auml;r att ge producentoberoende information om l&auml;kemedelsbehandling vid vanliga sjukdomstillst&aring;nd. Boken inneh&aring;ller ocks&aring; kapitel som tar upp mer &ouml;vergripande aktuella aspekter p&aring; l&auml;kemedelsanv&auml;ndning samt kapitel om regelverket inom l&auml;kemedelsomr&aring;det.</p>\n<p class=\"p3 normal\">LB v&auml;nder sig framf&ouml;r allt till specialister i allm&auml;nmedicin, l&auml;kare under specialistutbildning eller allm&auml;ntj&auml;nstg&ouml;ring samt medicine och farmacie studerande, men ocks&aring; till l&auml;kare som beh&ouml;ver r&aring;d vid medicinska problem utanf&ouml;r den egna specialiteten.</p>\n<h2 class=\"p1\" id=\"n-\"><span class=\"s1\"></span></h2>",
+			"settings": {
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false",
+					".DS_Store": "false"
+				},
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"pageType": "",
+	"path": "/index.json",
+	"isPublished": true,
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"headerContent": "<link rel=\"alternate\" type=\"application/atom+xml\" title=\"Nyheter | Läkemedelsboken\" href=\"/blog/index.xml\">",
+	"footerContent": "",
+	"modified": "2017-12-21 10:25",
+	"indexed": "false",
+	"description": ""
+}
