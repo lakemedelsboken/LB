@@ -13,6 +13,7 @@ var updatedPages = require('../helpers/updatedPages');
 var wrench = require("wrench");
 var urlObject = require("url");
 var request = require("request");
+var htmlDocxJs = require('html-docx-js');
 
 
 router.get("/createpage", function(req, res) {
@@ -857,6 +858,10 @@ router.get("/docx/download", function(req, res) {
 
 	if (url !== undefined && url !== "") {
 
+		var fileOnDisk = path.join(__dirname, "..", "..", "..", "cms", "output");
+		var printCssOldFile=path.join(fileOnDisk, "static","css","uncompressed","pandoc.css");
+
+
 		var outFileName = contentController.getGUID() + ".docx";
 		var outPath = path.join(require("os").tmpdir(), outFileName);
 
@@ -938,15 +943,15 @@ router.get("/docx/download", function(req, res) {
 		$("#modalMed").remove();
 
 		//Remove the title, the metadata title will be used
-		$("h1").first().remove();
+	//	$("h1").first().remove();
 
 		//Remove authors, metadata authors will be used
 		var autorsFromPageString = $("p.authors").first().html();
 		autorsFromPage = autorsFromPageString.split('<br>');
-		$("p.authors").remove();
+		$("p.authors").css("font-size", "13px");
 
 		//Remove links concerning authors disclosure
-		$(".authorsDisclosure").remove();
+	//	$(".authorsDisclosure").remove();
 
 		//Unwrap links to fact boxes
 		$("a.factsLink").each(function(index, item) {
@@ -971,38 +976,62 @@ router.get("/docx/download", function(req, res) {
 		//Remove from metadata title if it exists
 		$("title").text($("title").text().replace(" | Läkemedelsboken", ""));
 
-		//Pandoc does not handle colspans, insert empty td:s
-		$("td").each(function(index, item) {
-			var $item = $(item);
-			if ($item.attr("colspan") !== undefined) {
-				var nrOfMissingColumns = parseInt($item.attr("colspan")) - 1;
-				if (nrOfMissingColumns > 0) {
-					for (var i = 0; i < nrOfMissingColumns; i++) {
-						if (i === (nrOfMissingColumns - 1)) {
-							$item.after("<td></td>");
-						} else {
-							$item.after("<td></td>");
-						}
-					}
-				}
-			}
-		});
+		//fix width of wide table
+		//$("table.wide").before("<hr style='display : none;'>").after("<hr>");
 
-		$("th").each(function(index, item) {
+		$("table").css("margin-top", "20px");
+		$("table").css("margin-bottom", "20px");
+
+		$("table").each(function(index, item) {
+			var $item = $(item);
+			$item.css("border-top", "1px solid black");
+			$item.css("border-left", "1px solid black");
+			//$(item).replaceWith($(item).text());
+			//console.log($(item));
+			/*if($item.attr("class") == "table table-bordered wide") {
+				$item.removeClass("wide");
+				$item.removeClass("table");
+				$item.removeClass("table-bordered");
+				$item.parent().removeClass("wide");
+				console.log($(item));
+			}*/
+		});
+		$("td").css("border-right", "1px solid black");
+		$("td").css("border-bottom", "1px solid black");
+		$("th").css("border-right", "1px solid black");
+		$("th").css("border-bottom", "1px solid black");
+		//Pandoc does not handle colspans, insert empty td:s
+	/*	$("td").each(function(index, item) {
 			var $item = $(item);
 			if ($item.attr("colspan") !== undefined) {
 				var nrOfMissingColumns = parseInt($item.attr("colspan")) - 1;
 				if (nrOfMissingColumns > 0) {
 					for (var i = 0; i < nrOfMissingColumns; i++) {
 						if (i === (nrOfMissingColumns - 1)) {
-							$item.after("<th>{EMPTY}</th>");
+							$item.after("<td style='border-right:1px solid black; border-bottom: 1px solid black;'>--</td>");
 						} else {
-							$item.after("<th></th>");
+							$item.after("<td style='border-right:1px solid black; border-bottom: 1px solid black;'></td>");
 						}
 					}
 				}
 			}
-		});
+		});*/
+
+		/*$("th").each(function(index, item) {
+			var $item = $(item);
+			if ($item.attr("colspan") !== undefined) {
+				var nrOfMissingColumns = parseInt($item.attr("colspan")) - 1;
+				if (nrOfMissingColumns > 0) {
+					for (var i = 0; i < nrOfMissingColumns; i++) {
+						if (i === (nrOfMissingColumns - 1)) {
+							$item.after("<th style='border-right:1px solid black; border-bottom: 1px solid black;'>--</th>");
+						} else {
+							$item.after("<th style='border-right:1px solid black; border-bottom: 1px solid black;'></th>");
+						}
+					}
+				}
+			}
+		});*/
 
 		//Insert lines before and after figures
 		$("div.figure").before("<hr>").after("<hr>");
@@ -1010,113 +1039,17 @@ router.get("/docx/download", function(req, res) {
 		//Write temp html file
 		console.log("Writing temp html file: " + tempHtmlPath);
 		fs.writeFileSync(tempHtmlPath, $.html(), "utf8");
+		console.log();
 
 		var newFileName = path.basename(url, ".html") + "-" + draftOrPublish + "-" + fileNameDate + ".docx";
-
-		var arguments = ["-S", tempHtmlPath, "-o", outPath, '-f', 'html', '-t','docx' , '--metadata=author:'+autorsFromPage[0],'--metadata=author:'+autorsFromPage[1]];
-
+		 var docx = htmlDocxJs.asBlob($.html());
+		 fs.writeFileSync(outPath, docx);
+		var arguments = ["-S", tempHtmlPath, "--css="+printCssOldFile, "-o", outPath, '-f', 'html', '-t','docx', '--metadata=author:'+autorsFromPage[0],'--metadata=author:'+autorsFromPage[1]];
+		//pandoc.table(mtcars[1:2, ], style = "grid", caption = "Wide table to be split!");
 		var hasExited = false;
-		var converter = spawn('pandoc', arguments);
+		//var converter = spawn('pandoc', arguments);
+		res.download(outPath, newFileName);
 
-		converter.stdout.on('data', function (data) {
-			console.log('stdout: ' + data);
-		});
-
-		converter.stderr.on('data', function (data) {
-			console.log('stderr: ' + data);
-		});
-
-		converter.on('close', function (code) {
-			if (code !== 0) {
-				console.log('Child process exited with code ' + code);
-				hasExited = true;
-
-				res.status(500);
-				var err = new Error('Child process exited with code ' + code);
-				res.render('error', {
-					message: err.message,
-					error: err
-				});
-
-			} else if (!hasExited) {
-				hasExited = true;
-
-				//Everything is ok, now merge some table columns that pandoc is unable to handle
-
-				//Read the zip file
-				var AdmZip = require("adm-zip");
-				fs.renameSync(outPath, outPath + ".zip");
-
-				var zip = new AdmZip(outPath + ".zip");
-
-				//Open filename/word/document.xml
-				var unzippedFolderPath = outPath.replace(".docx", "/");
-				zip.extractAllTo(unzippedFolderPath);
-
-				var contents = fs.readFileSync(path.join(unzippedFolderPath, "word", "document.xml"), "utf8");
-				var $ = cheerio.load(contents, {xmlMode: true});
-
-				var empties = [];
-
-				//Find <w:t xml:space="preserve">{EMPTY}</w:t>
-				$("w\\:tc:contains({EMPTY})").each(function() {
-
-					var alsoEmpty = $(this).nextAll();
-					var toBeExtended = $(this).prev();
-
-					empties.push($(this));
-
-					var lengthToExpand = 2 + alsoEmpty.length;
-
-					//Remove empty ones
-					alsoEmpty.remove();
-					$(this).remove();
-
-					//Find <w:tcPr>
-					var designer = toBeExtended.children().first();
-					if (designer.length === 1) {
-
-						//Add <w:gridSpan w:val="{int}"/> as a child
-						designer.append('<w:gridSpan w:val="' + lengthToExpand + '"/>');
-
-					}
-
-
-				});
-
-				//Fix case for gridSpan
-				var outputDocXml = $.xml().replace(/gridspan/g, "gridSpan");
-
-				//Re add to zip file
-				fs.writeFileSync(path.join(unzippedFolderPath, "word", "document.xml"), outputDocXml, "utf8");
-
-				//TODO: Replace AdmZip as it is flaky.
-				//Resulting zip files need to be repaired by Word and the api isn't working as intended, hence the full unzip and rezip
-				zip = new AdmZip();
-				zip.addLocalFolder(unzippedFolderPath);
-
-				zip.writeZip(outPath + ".1.zip");
-
-				fs.renameSync(outPath + ".1.zip", outPath);
-
-				res.download(outPath, newFileName);
-
-			}
-		});
-
-		converter.on('error', function (err) {
-
-			console.log('Child process exited with err ', err);
-
-			if (!hasExited) {
-				hasExited = true;
-				res.status(500);
-				res.render('error', {
-					message: 'Child process exited with err: ' + err.message,
-					error: err
-				});
-			}
-		});
 
 	} else {
 		res.redirect("back");
