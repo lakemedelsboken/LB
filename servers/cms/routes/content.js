@@ -14,7 +14,7 @@ var wrench = require("wrench");
 var urlObject = require("url");
 var request = require("request");
 var htmlDocxJs = require('html-docx-js');
-
+var base64Img = require('base64-img');
 
 router.get("/createpage", function(req, res) {
 
@@ -922,7 +922,8 @@ router.get("/docx/download", function(req, res) {
 			console.log("To: " + toImagePath);
 
 			fs.copySync(fromImagePath, toImagePath, {clobber: true});
-			$(item).attr("src", toImagePath);
+			var toImagePathBase64 = base64Img.base64Sync(toImagePath, 100, 100);
+			$(item).attr("src", toImagePathBase64);
 		});
 
 		//Remove ATC-links
@@ -949,6 +950,7 @@ router.get("/docx/download", function(req, res) {
 		var autorsFromPageString = $("p.authors").first().html();
 		autorsFromPage = autorsFromPageString.split('<br>');
 		$("p.authors").css("font-size", "13px");
+		$("p.authors").css("text-align", "center");
 
 		//Remove links concerning authors disclosure
 	//	$(".authorsDisclosure").remove();
@@ -1000,6 +1002,8 @@ router.get("/docx/download", function(req, res) {
 		$("td").css("border-bottom", "1px solid black");
 		$("th").css("border-right", "1px solid black");
 		$("th").css("border-bottom", "1px solid black");
+
+
 		//Pandoc does not handle colspans, insert empty td:s
 	/*	$("td").each(function(index, item) {
 			var $item = $(item);
@@ -1033,8 +1037,20 @@ router.get("/docx/download", function(req, res) {
 			}
 		});*/
 
+		/*$("img").each(function(index, item) {
+				var $item = $(item);
+				convertImagesToBase64($item, $item.attr("src"));
+				console.log($item.attr("src"));
+		});*/
+
 		//Insert lines before and after figures
 		$("div.figure").before("<hr>").after("<hr>");
+
+		$("table.facts").css("background-color", "#f5f5f5");
+
+		$("div.therapy-recommendations").css("background-color", "#f5f5f5");
+
+		$("h1").css("text-align", "center");
 
 		//Write temp html file
 		console.log("Writing temp html file: " + tempHtmlPath);
@@ -1554,7 +1570,6 @@ function getClosestId($, $item) {
 
 	return match;
 }
-
 
 router.get("/tasksstatus", function(req, res) {
 
