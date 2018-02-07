@@ -16,6 +16,7 @@ var request = require("request");
 var htmlDocxJs = require('html-docx-js');
 var base64Img = require('base64-img');
 
+
 router.get("/createpage", function(req, res) {
 
 	var pageName = req.query["pagename"];
@@ -916,14 +917,16 @@ router.get("/docx/download", function(req, res) {
 			relativeImagePath = relativeImagePath.replace(/\.\.\//g, "");
 			var relativeBaseDir = path.join(contentController.baseDir, "..", "output", "static");
 			var fromImagePath = path.join(relativeBaseDir, relativeImagePath);
+			fromImagePath = fromImagePath.replace("medium", "small");
 			var toImagePath = path.join(tempDir, contentController.getGUID() + ".png");
 
 			console.log("Copy from: " + fromImagePath);
 			console.log("To: " + toImagePath);
 
 			fs.copySync(fromImagePath, toImagePath, {clobber: true});
-			var toImagePathBase64 = base64Img.base64Sync(toImagePath, 100, 100);
+			var toImagePathBase64 = base64Img.base64Sync(toImagePath);
 			$(item).attr("src", toImagePathBase64);
+
 		});
 
 		//Remove ATC-links
@@ -1051,6 +1054,10 @@ router.get("/docx/download", function(req, res) {
 		$("div.therapy-recommendations").css("background-color", "#f5f5f5");
 
 		$("h1").css("text-align", "center");
+
+		$("fieldset.pageFootnote").parent().css("background-color", "#f0f0f0");
+
+		$("fieldset.pageFootnote").parent().css("border", "1px solid black");
 
 		//Write temp html file
 		console.log("Writing temp html file: " + tempHtmlPath);
