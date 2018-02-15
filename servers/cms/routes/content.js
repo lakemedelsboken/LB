@@ -984,8 +984,8 @@ router.get("/docx/download", function(req, res) {
 		//fix width of wide table
 		//$("table.wide").before("<hr style='display : none;'>").after("<hr>");
 
-		$("table").css("margin-top", "20px");
-		$("table").css("margin-bottom", "20px");
+		$("table").parent().css("margin-bottom", "15px");
+		$("table").css("font-family", "Helvetica Neue',Helvetica,Arial,sans-serif");
 
 		$("table").each(function(index, item) {
 			var $item = $(item);
@@ -1003,9 +1003,13 @@ router.get("/docx/download", function(req, res) {
 		});
 		$("td").css("border-right", "1px solid black");
 		$("td").css("border-bottom", "1px solid black");
+		$("td").css("font-size", "14px");
+		$("td").css("padding", "4px");
 		$("th").css("border-right", "1px solid black");
 		$("th").css("border-bottom", "1px solid black");
-
+		$("th").css("font-size", "18px");
+		$("th").css("text-align", "left");
+		$("th").css("padding", "8px");
 
 		//Pandoc does not handle colspans, insert empty td:s
 	/*	$("td").each(function(index, item) {
@@ -1051,7 +1055,7 @@ router.get("/docx/download", function(req, res) {
 
 		$("table.facts").css("background-color", "#f5f5f5");
 
-		$("div.therapy-recommendations").css("background-color", "#f5f5f5");
+		$("table.therapy-recommendations").css("background-color", "#f5f5f5");
 
 		$("h1").css("text-align", "center");
 
