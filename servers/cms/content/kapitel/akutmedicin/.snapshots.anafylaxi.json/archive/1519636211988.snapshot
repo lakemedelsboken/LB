@@ -1,0 +1,464 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Anafylaxi | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "anafylaxi, allergisk chock, adrenalin, epinefrin, kortison, astma, antihistamin",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-09 00:50",
+	"published": "2015-07-09 00:50",
+	"validUntil": "",
+	"createdBy": "Janne Björkander, Peter Odebäck",
+	"replacesUrl": "/a3_aku_anafylaxi_2013fm10.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "6560701b-7a5a-437d-826c-e22e8a602d5e",
+			"name": "6560701b-7a5a-437d-826c-e22e8a602d5e",
+			"type": "author",
+			"content": {
+				"firstname": "Janne",
+				"surname": "Björkander",
+				"description": "Futurum, Akademin för hälsa och vård",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b7b7073f-0ea9-41cf-9f96-3fd5cb35593f",
+			"name": "b7b7073f-0ea9-41cf-9f96-3fd5cb35593f",
+			"type": "author",
+			"content": {
+				"firstname": "Peter",
+				"surname": "Odebäck",
+				"description": "Capio närsjukvård",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3b9f366c-5542-46ff-b589-22a1c6caf7a7",
+			"name": "3b9f366c-5542-46ff-b589-22a1c6caf7a7",
+			"type": "text",
+			"content": "<h1 id=\"Anafylaxi\">Anafylaxi</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3a47e74b-c64c-432b-814b-37fcb07b7054",
+			"name": "3a47e74b-c64c-432b-814b-37fcb07b7054",
+			"type": "text",
+			"content": "<h2 id=\"a3_4\">Inledning</h2>\n<p class=\"ingress\">Med anafylaxi menas en potentiellt farlig reaktion som i allm&auml;nhet kommer snabbt och fr&auml;mst engagerar hud, andning, cirkulation och mag-tarmkanalen. Symtombilden orsakas av mediatorer som fris&auml;tts fr&aring;n mastceller och basofila celler. Anafylaxi &auml;r ett akut tillst&aring;nd som kr&auml;ver snabb behandling. Ett sent omh&auml;ndertagande kan bli fatalt. Adrenalin ska omedelbart ges intramuskul&auml;rt i l&aring;ret.</p>\n<p class=\"ingress indent\"><br>Hos barn och unga &auml;r f&ouml;do&auml;mnen vanligaste orsaken till anafylaxi medan medel&aring;lders och &auml;ldre personer oftare drabbas av anafylaxi pga l&auml;kemedel och bi- eller getingstick (1,2,3<span style=\"color: #ff0000;\">,4</span>). <span style=\"text-decoration: line-through;\">Vid anafylaxi kan tryptas (som tecken p&aring; mastcellsaktivitet) m&auml;tas inom 30 minuter till 3 timmar efter reaktionens maximum.</span><br><span style=\"color: #ff0000;\">Prov f&ouml;r serumtryptas b&ouml;r tas under den akuta reaktionen, helst inom 1 &ndash; 2 timmar efter</span><br><span style=\"color: #ff0000;\">reaktionens b&ouml;rjan. V&auml;rdefull information kan ibland erh&aring;llas &auml;ven om provet tas senare.</span></p>\n<h2 id=\"a3_5\">Incidens</h2>\n<p class=\"indent\">Det f&ouml;refaller som om incidensen av anafylaxi &ouml;kat under 2000-talet. En studie fr&aring;n England har rapporterat om en &ouml;kning av incidensen fr&aring;n 6,7 till 7,9/100&nbsp;000 inv&aring;nare/&aring;r fr&aring;n 2001 till 2005 (<span style=\"color: #ff0000;\">5</span>). Andra internationella studier har i allm&auml;nhet redovisat 2&ndash;10 fall av anafylaxi/100&nbsp;000 inv&aring;nare/&aring;r (<span style=\"color: #ff0000;\">6,7,8</span>).</p>\n<p class=\"indent\"><br>Fr&aring;n Sverige rapporteras tv&aring; d&ouml;dsfall/&aring;r av bi-/getingallergi, of&ouml;r&auml;ndrat fr&aring;n 1970- till 2000-talet. De som avled var &auml;ldre &auml;n 33&nbsp;&aring;r och vanligen kring 60&nbsp;&aring;r. D&ouml;dsfall p&aring; grund av f&ouml;do&auml;mnesallergi har d&auml;remot minskat dramatiskt fr&aring;n 1993&ndash;1996 till 2004&ndash;2011: fr&aring;n 1,75 till 0,25 d&ouml;dsfall/&aring;r (<span style=\"color: #ff0000;\">9</span>). Personerna som avled var alla yngre &auml;n 23 &aring;r <span style=\"color: #ff0000;\">och den direkta d&ouml;dsorsaken var sv&aring;r astma</span>.<br><br>Enligt en ny studie fr&aring;n Stockholm var incidensen 2007 f&ouml;r anafylaxi bland barn 32 fall/100&nbsp;000 inv&aring;nare varav 92&nbsp;% av fallen avs&aring;g anafylaxi orsakad av f&ouml;do&auml;mnen, till exempel &auml;gg, mj&ouml;lk, tr&auml;d- och jordn&ouml;tter (<span style=\"color: #ff0000;\">10</span>).</p>\n<h2 id=\"a3_6\">Tre sv&aring;righetsgrader</h2>\n<p>Anafylaxi graderas numera i tre sv&aring;righetsgrader, se Tabell 1 (<span style=\"color: #ff0000;\">11,12</span>). Anafylaxidiagnosen kr&auml;ver engagemang av minst tv&aring; organ och inkluderar alltid en objektiv respiratorisk, kardiovaskul&auml;r och/eller kraftig allm&auml;np&aring;verkan. Graden best&auml;ms av det organsystem som har den sv&aring;raste niv&aring;n. Grad 3 &auml;r den sv&aring;raste.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3bc9fa43-4163-4f1f-abd9-8434e81eafc2",
+			"name": "3bc9fa43-4163-4f1f-abd9-8434e81eafc2",
+			"type": "figure",
+			"content": {
+				"number": "1",
+				"maxwidth": "",
+				"image": "/images/apotek_symbol_large_rgb.png",
+				"title": "",
+				"text": "",
+				"alt": "",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "13c14d3d-59f5-41f8-9de7-a0219dd161d0",
+			"name": "13c14d3d-59f5-41f8-9de7-a0219dd161d0",
+			"type": "casereport",
+			"content": {
+				"number": "1",
+				"title": "Kalle Karlsson",
+				"text": "<table class=\"table table-bordered casereport\"><tbody><tr><td>Text</td></tr></tbody></table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "922b627b-300c-4fba-838c-f5e751e05f2d",
+			"name": "922b627b-300c-4fba-838c-f5e751e05f2d",
+			"type": "tablewide",
+			"content": {
+				"number": 1,
+				"title": "",
+				"id": "",
+				"text": "<table class=\"table table-bordered\"><tbody><tr><td>Text</td><td>Text</td><td>Text</td><td>Text</td></tr><tr><td colspan=\"4\" class=\"footNotes\"></td></tr></tbody></table>"
+			},
+			"settings": {}
+		},
+		{
+			"id": "24b62c4e-a39e-489b-99ed-dfba1015fdd5",
+			"name": "24b62c4e-a39e-489b-99ed-dfba1015fdd5",
+			"type": "tablenarrow",
+			"content": {
+				"number": 1,
+				"title": "",
+				"id": "",
+				"text": "<table class=\"table table-bordered\"><tbody><tr><td>Text</td><td>Text</td><td>Text</td></tr><tr><td colspan=\"3\" class=\"footNotes\"></td></tr></tbody></table>"
+			},
+			"settings": {}
+		},
+		{
+			"id": "9622e5c6-93b5-475c-a284-c4f1b8339fa5",
+			"name": "9622e5c6-93b5-475c-a284-c4f1b8339fa5",
+			"type": "tablewide",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"13325\"></a>Anafylaxi – <a class=\"index\" id=\"1065947\" data-text=\"anafylaxi:sv&#xE5;righetsgrader\"></a>svårighetsgradering (11)",
+				"id": "a3_7",
+				"text": "<table><tbody><tr><td colspan=\"7\"><p><strong>Bedöm graden av anafylaxi 1–3 med avseende på överkänslighets-/allergireaktioner i olika organ&shy;system samt allmänna symtom enligt tabellen nedan. Symtom från luftvägar, cirkulation och/eller kraftig allmänpåverkan krävs. Graden bestäms av det organsystem som har den svåraste nivån.</strong></p><p><strong></strong></p><p><strong></strong></p><p><strong></strong></p><p><strong></strong></p><p><strong></strong></p><p><strong></strong></p></td></tr><tr><td><div class=\"tableLine\"><strong>Bedömning</strong></div></td><td><div class=\"tableLine\"><strong>Hud</strong></div></td><td><p><strong><div class=\"tableLine\">Ögon och </div><div class=\"tableLine\">näsa</div></strong></p></td><td><p><strong><div class=\"tableLine\">Mun och </div><div class=\"tableLine\">mage/tarm</div></strong></p></td><td><div class=\"tableLine\"><strong>Luftvägar</strong></div></td><td><div class=\"tableLine\"><strong>Hjärta-kärl</strong></div></td><td><p><strong><div class=\"tableLine\">Allmänna<br></div><div class=\"tableLine\">symtom</div></strong></p></td></tr><tr><td><div class=\"tableLine\"><strong>Ej anafylaxi</strong></div><div class=\"tableLine\"><strong>&nbsp;</strong></div></td><td><div class=\"tableLine\">Klåda</div><div class=\"tableLine\">Flush <br></div><div class=\"tableLine\">Urtikaria<br></div><div class=\"tableLine\">Angioödem</div></td><td><div class=\"tableLine\">Konjunkti-</div><div class=\"tableLine\">vit med klå-</div><div class=\"tableLine\">da och </div><div class=\"tableLine\">rodnad</div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">Rinit med </div><div class=\"tableLine\">klåda <br></div><div class=\"tableLine\">Nästäppa </div><div class=\"tableLine\">Rinnsnuva </div><div class=\"tableLine\">Nysningar</div></td><td><div class=\"tableLine\">Klåda i mun </div><div class=\"tableLine\">Läppsvullnad</div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">Svullnads-</div><div class=\"tableLine\">känsla i mun </div><div class=\"tableLine\">och svalg</div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">Illamående</div><div class=\"tableLine\">Lindrig </div><div class=\"tableLine\">buksmärta</div><div class=\"tableLine\">Enstaka </div><div class=\"tableLine\">kräkning</div></td><td><div class=\"tableLine\">&nbsp;</div></td><td><div class=\"tableLine\">&nbsp;</div></td><td><div class=\"tableLine\">Trötthet</div></td></tr><tr><td><div class=\"tableLine\"><strong>Anafylaxi</strong></div><div class=\"tableLine\"><strong>Grad 1</strong></div></td><td><div class=\"tableLine\"><br></div><div class=\"tableLine\">– “ –</div></td><td><div class=\"tableLine\"><br></div><div class=\"tableLine\">– “ –</div></td><td><div class=\"tableLine\">Ökande </div><div class=\"tableLine\">buksmärta</div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">Upprepade </div><div class=\"tableLine\">kräkningar </div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">Diarré</div></td><td><div class=\"tableLine\">Heshet</div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">Lindrig </div><div class=\"tableLine\">bronk-</div><div class=\"tableLine\">obstruktion</div></td><td><div class=\"tableLine\">&nbsp;</div></td><td><div class=\"tableLine\">Uttalad </div><div class=\"tableLine\">trötthet</div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">Rastlöshet</div><div class=\"tableLine\">Oro</div></td></tr><tr><td><div class=\"tableLine\"><strong>Anafylaxi</strong></div><div class=\"tableLine\"><strong>Grad 2</strong></div></td><td><div class=\"tableLine\"><br></div><div class=\"tableLine\">– “ –</div></td><td><div class=\"tableLine\"><br></div><div class=\"tableLine\">– “ –</div></td><td><div class=\"tableLine\"><br></div><div class=\"tableLine\">– “ –</div></td><td><div class=\"tableLine\">Skällhosta</div><div class=\"tableLine\">Sväljnings-</div><div class=\"tableLine\">besvär</div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">Medelsvår </div><div class=\"tableLine\">bronk-</div><div class=\"tableLine\">obstruktion</div></td><td><div class=\"tableLine\">&nbsp;</div></td><td><div class=\"tableLine\">Svimnings-</div><div class=\"tableLine\">känsla</div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">Katastrof-</div><div class=\"tableLine\">känsla</div></td></tr><tr><td><div class=\"tableLine\"><strong>Anafylaxi</strong></div><div class=\"tableLine\"><strong>Grad 3</strong></div></td><td><div class=\"tableLine\"><br></div><div class=\"tableLine\">– “ –</div></td><td><div class=\"tableLine\"><br></div><div class=\"tableLine\">– “ –</div></td><td><div class=\"tableLine\">Urin- och <br></div><div class=\"tableLine\">fecesavgång</div></td><td><div class=\"tableLine\">Hypoxi <br></div><div class=\"tableLine\">Cyanos</div><div class=\"tableLine\">Svår bronk-</div><div class=\"tableLine\">obstruktion</div><div class=\"tableLine\">Andnings-</div><div class=\"tableLine\">stopp</div></td><td><div class=\"tableLine\">Hypotoni</div><div class=\"tableLine\">Bradykardi</div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">Arytmi</div><div class=\"tableLine\">Hjärtstopp</div></td><td><div class=\"tableLine\">Förvirring</div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">Medvets-</div><div class=\"tableLine\">löshet</div></td></tr></tbody></table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2e1d6717-f331-4f30-959d-3f18e88912c9",
+			"name": "2e1d6717-f331-4f30-959d-3f18e88912c9",
+			"type": "text",
+			"content": "<p class=\"indent\"><br>Vid anafylaxi grad 1 ska patienten observeras i minst fyra timmar. Vid anafylaxi grad 2 och 3 ska patienten observeras minst 8 respektive 12 timmar p&aring; sjukhus p&aring; grund av risk f&ouml;r bifasisk reaktion. Bifasiska reaktioner f&ouml;rekommer i upp till 20&nbsp;% av fallen och intr&auml;ffar vanligen inom 4&ndash;8 timmar men i s&auml;llsynta fall upp till ett dygn och i enstaka fall upp till tre dygn senare.</p>\n<h2 id=\"a3_8\">Anafylaxi &ndash; mekanismer</h2>\n<p><span style=\"color: #ff0000;\">Med anafylaxi avses numera s&aring;v&auml;l immunologiska som icke-immunologiska reaktioner. De f&ouml;rstn&auml;mnda orsakas framf&ouml;r allt av IgE men &auml;ven av IgG eller IgM genom aktivering av komplement.</span><br><span style=\"color: #ff0000;\">De icke-immunologiska reaktionerna orsakas av leukotriener eller direktfris&auml;ttning av mediatorer, till exempel histamin, vid fysisk aktivitet eller kyla.</span> (se Figur 1).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3285517a-a10d-4398-9250-4c91819f23c0",
+			"name": "3285517a-a10d-4398-9250-4c91819f23c0",
+			"type": "figure",
+			"content": {
+				"number": "1",
+				"maxwidth": "",
+				"image": "/images/a3_aku_anafylaxi_2013fm10_images/figur1.png",
+				"title": "",
+				"text": "<a class=\"crossref\" id=\"61209\"></a>Orsaker till <a class=\"index\" id=\"1063358\" data-text=\"anafylaxi:orsaker\"></a>anafylaxi enligt ny nomenklatur (12)",
+				"alt": "",
+				"id": "a3_9"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1cf7d441-d1fb-4b5d-b45f-b069a4455467",
+			"name": "1cf7d441-d1fb-4b5d-b45f-b069a4455467",
+			"type": "text",
+			"content": "<h2 id=\"a3_10\">Samverkande faktorer</h2>\n<p>P&aring; senare &aring;r har kunskaperna &ouml;kat v&auml;sentligt om samverkande faktorer vid aktiveringen av mastceller s&aring;som fysisk anstr&auml;ngning, eventuellt i samband med vissa f&ouml;do&auml;mnen (s&auml;rskilt vete) eller alkohol. Andra faciliterande faktorer &auml;r <span style=\"color: #ff0000;\">alkohol</span>, kall dryck, dusch eller bad. L&auml;kemedel, till exempel NSAID, ACE-h&auml;mmare, betablockerare eller &ouml;rtmediciner, kan ocks&aring; ha betydelse.</p>\n<p>Samtidiga sjukdomar som astma, annan kronisk lungsjukdom, kardiovaskul&auml;r sjukdom, sv&aring;r atopisk sjukdom eller mastocytos kan alla bidra till att anafylaxin f&ouml;rsv&aring;ras eller blir letal. Bland &ouml;vriga faciliterande eller utl&ouml;sande faktorer kan n&auml;mnas infektion, stress, resor eller andra avbrott i rutiner eller, f&ouml;r kvinnor, den premenstruella tiden.</p>\n<h2 id=\"a3_11\">Utredning<br><br></h2>\n<p class=\"normal\"><br>Vid oklar anafylaxi, medvetsl&ouml;shet och d&ouml;dsfall b&ouml;r provtagning av tryptas ske snarast, helst inom <span style=\"color: #ff0000;\">1-2</span> timmar efter reaktionen. Tidpunkten n&auml;r provet tas ska dokumenteras i journalen. En normal tryptasniv&aring; utesluter inte anafylaxi s<span style=\"color: #ff0000;\">&auml;rskilt inte vid f&ouml;do&auml;mnesutl&ouml;st anafylaxi</span>.<span style=\"text-decoration: line-through;\">och &auml;r snarast regel vid f&ouml;do&auml;mnesutl&ouml;st anafylaxi.</span> Vid d&ouml;dsfall, p&aring; grund av misst&auml;nkt anafylaxi, ska allergenspecifikt IgE (mot misst&auml;nkta allergen) samt tryptas i serum analyseras. Proverna kan d&aring; tas upp till tv&aring; dygn efter d&ouml;dsfallet. Ventrikelinneh&aring;llet b&ouml;r skickas till Livsmedelsverket f&ouml;r analys av misst&auml;nkta f&ouml;do&auml;mnesallergen. Tryptas &auml;r inte specifikt f&ouml;r IgE-medierad reaktion utan kan stiga oavsett orsak vid engagemang av mastceller och basofila celler. Provet &auml;r ett vanligt serumprov som hanteras enligt lokala rutiner.</p>\n<p class=\"indent\"><br>Den allergiska diagnostiken har f&aring;tt nya verktyg med mer antigenspecifika reagens s&aring; att diagnostiken kan sk&auml;rpas, och f&ouml;rst&aring;elsen f&ouml;r diverse korsreaktiviteter har nu avsev&auml;rt f&ouml;rb&auml;ttrats. Varf&ouml;r vissa individer enbart drabbas av det orala allergisyndromet medan andra drabbas av anafylaxi efter intag av tr&auml;d- och jordn&ouml;tter kan ocks&aring; f&ouml;rklaras.<span style=\"color: #ff0000;\"> Nya utredningsm&ouml;jligheter finns ocks&aring; </span><span style=\"color: #ff0000;\">f&ouml;r allergi mot olika mj&ouml;l- och mj&ouml;lkproteiner </span><span style=\"color: #ff0000;\">samt mot &rdquo;r&ouml;tt k&ouml;tt&rdquo;.</span></p>\n<h3 id=\"a3_12\"></h3>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6cf75fc6-6943-4885-8f94-1000931f5c01",
+			"name": "6cf75fc6-6943-4885-8f94-1000931f5c01",
+			"type": "text",
+			"content": "<h3 id=\"a3_12\">Differentialdiagnoser vid misst&auml;nkt anafylaxi</h3>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1c95efa1-5577-4f3a-84a1-568c4becbff5",
+			"name": "1c95efa1-5577-4f3a-84a1-568c4becbff5",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"60830\"></a><span style=\"font-weight: bold;\"></span>Differentialdiagnoser<a class=\"index\" id=\"1048084\" data-text=\"anafylaxi:differentialdiagnoser\"></a>",
+				"text": "<table><tbody><tr><td><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Panikreaktion/hyperventilation <br>(stickningar, kramper)</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Vasovagal reaktion (blekhet, svettning, bradykardi, blodtrycksfall, eventuell synkope)</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Hjärtinfarkt</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Hjärtarytmi</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Astma</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Lungemboli</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Aspiration</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Septisk chock</li></ul></td></tr></tbody></table>",
+				"id": "a3_14"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9018387d-b549-47cf-9870-daecd03d95b1",
+			"name": "9018387d-b549-47cf-9870-daecd03d95b1",
+			"type": "text",
+			"content": "<p>Man m&aring;ste alltid &ouml;verv&auml;ga eventuella differentialdiagnoser (Se Faktaruta 1). Vid panikattack har man s&auml;llan ronki fr&aring;n nedre luftv&auml;gar eller blodtrycksfall. Vid synkope saknas ofta flush, urtikaria, kl&aring;da och magbesv&auml;r, och patienten &auml;r oftast blek och svettig. Vid hj&auml;rtproblem liksom vid sv&aring;r astma saknas urtikaria med kl&aring;da och eventuellt angio&ouml;dem.</p>\n<p><span> </span></p>\n<h2 id=\"a3_15\"><a class=\"index\" id=\"1063378\" data-text=\"anafylaxi:behandling\"></a><a class=\"crossref\" id=\"80819\"></a>Behandling</h2>\n<p>F&ouml;r behandling se Terapirekommendationerna &ndash; Anafylaxibehandling f&ouml;r distriktssk&ouml;terskor, skolh&auml;lsov&aring;rd och barnav&aring;rdscentraler <a href=\"#10075\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a><span class=\"updated\"></span>, och Terapirekommendationerna &ndash; Anafylaxibehandling inom akutsjukv&aring;rden <a href=\"#99203\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a><span class=\"updated\"></span>. Vid misstanke om anafylaxi ges genast adrenalin intramuskul&auml;rt i l&aring;rets utsida. L&auml;gg patienten med h&ouml;jd fot&auml;nda eller vid andningsbesv&auml;r/kr&auml;kningar sittande med h&ouml;jd fot&auml;nda. Om patienten med anafylaxi hastigt reser sig kan detta leda till livshotande blodtrycksfall. <a class=\"index\" id=\"1063383\" data-text=\"graviditet:anafylaxi\"></a>Gravida ska vara halvliggande p&aring; v&auml;nster sida f&ouml;r att undvika att uterus komprimerar vena cava inferior.</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9233440d-d864-4ae8-8b55-b634536386cd",
+			"name": "9233440d-d864-4ae8-8b55-b634536386cd",
+			"type": "therapy",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"index\" id=\"1063388\" data-text=\"anafylaxi:behandling f&#xF6;r distriktssk&#xF6;terskor\"></a><a class=\"crossref\" id=\"10075\"></a>Anafylaxibehandling för distriktssköterskor, skolhälsovård och barna&shy;vårdscentraler (11) ",
+				"id": "a3_16",
+				"text": "<table><tbody><tr><td colspan=\"6\"><p><span style=\"font-weight: bold;\">Vanliga orsaker: </span>Födoämnen, bi- och getingstick, läkemedel<span style=\"font-weight: bold;\">.</span></p><p><span class=\"tab\"></span><span style=\"font-weight: bold;\">Adrenalin</span> är det viktigaste läkemedlet och ska ges tidigt och intramuskulärt i låret.</p><p><strong></strong></p><p><strong></strong></p><p><strong></strong></p><p><strong></strong></p><p><strong></strong></p></td></tr><tr><td><div class=\"tableLine\"><strong>Indikationer</strong></div></td><td><div class=\"tableLine\"><strong>Läkemedel</strong></div></td><td><div class=\"tableLine\"><strong>Adm.sätt </strong></div></td><td><div class=\"tableLine\"><strong>Dos vuxna</strong></div></td><td><div class=\"tableLine\"><strong>Dos barn</strong></div></td><td><div class=\"tableLine\"><strong>Effekt</strong></div></td></tr><tr><td><div class=\"tableLine\">Kraftig urtikaria</div><div class=\"tableLine\">Andnöd</div><div class=\"tableLine\">Hypotension</div><div class=\"tableLine\">Allmänpåverkan</div><div class=\"tableLine\">Kraftiga </div><div class=\"tableLine\">buksmärtor och</div><div class=\"tableLine\">kräkningar</div></td><td><div class=\"tableLine\">Inj <span style=\"font-weight: bold;\"><a class=\"index\" id=\"1063393\" data-text=\"adrenalin:anafylaxi\"></a>Adrenalin </span></div><div class=\"tableLine\">1&nbsp;mg/ml </div><div class=\"tableLine\">eller</div><div class=\"tableLine\"><span style=\"font-weight: bold;\">Adrenalin-</span></div><div class=\"tableLine\">penna (olika </div><div class=\"tableLine\">typer och </div><div class=\"tableLine\">styrkor finns)<span style=\"font-weight: bold;\"></span></div></td><td><div class=\"tableLine\">Intra-</div><div class=\"tableLine\">muskulärt i </div><div class=\"tableLine\">lårets utsida</div></td><td><div class=\"tableLine\">0,3–0,5 ml </div><div class=\"tableLine\">(0,3–0,5 mg)</div><div class=\"tableLine\">eller</div><div class=\"tableLine\">Adrenalin-</div><div class=\"tableLine\">penna </div><div class=\"tableLine\">0,3–0,5 mg</div></td><td><div class=\"tableLine\">0,01 ml (0,01 mg)/</div><div class=\"tableLine\">kg kroppsvikt max </div><div class=\"tableLine\">0,5 ml (0,5 mg) <br></div><div class=\"tableLine\">eller <br></div><div class=\"tableLine\">Adrenalinpenna </div><div class=\"tableLine\">10–20 kg: 0,15 mg</div><div class=\"tableLine\">&gt;&nbsp;20 kg: 0,3 mg</div></td><td><div class=\"tableLine\">Inom 5 min</div><div class=\"tableLine\">Upprepa vb </div><div class=\"tableLine\">var 10:e min</div></td></tr><tr><td><div class=\"tableLine\">Astma</div></td><td><div class=\"tableLine\">Egen bronk-</div><div class=\"tableLine\">vidgande </div><div class=\"tableLine\">medicin</div></td><td><div class=\"tableLine\">Inhalation</div><div class=\"tableLine\">pulver/spray</div></td><td><div class=\"tableLine\">4–6 doser</div></td><td><div class=\"tableLine\">2–6 doser</div></td><td><div class=\"tableLine\">Inom 5 min </div><div class=\"tableLine\">Upprepa vb </div><div class=\"tableLine\">var 10:e min</div></td></tr><tr><td><div class=\"tableLine\">Alla</div></td><td><div class=\"tableLine\">Tabl <span style=\"font-weight: bold;\"><a class=\"index\" id=\"1063398\" data-text=\"Aerius:anafylaxi\"></a>Aerius</span> </div><div class=\"tableLine\">(<a class=\"index\" id=\"1063403\" data-text=\"desloratadin:anafylaxi\"></a>deslorata-</div><div class=\"tableLine\">din) munlös-</div><div class=\"tableLine\">lig 2,5/5 mg </div><div class=\"tableLine\">(eller annat </div><div class=\"tableLine\">antihistamin </div><div class=\"tableLine\">i dubbel dos)</div></td><td><div class=\"tableLine\">Per os</div></td><td><div class=\"tableLine\">10 mg</div></td><td><div class=\"tableLine\">&lt;&nbsp;6 år 2,5 mg </div><div class=\"tableLine\">6–12 år 5 mg</div></td><td><div class=\"tableLine\">Inom 30–<br></div><div class=\"tableLine\">60 min</div></td></tr><tr><td><div class=\"tableLine\">Alla</div></td><td><div class=\"tableLine\">Tabl <span style=\"font-weight: bold;\"><a class=\"index\" id=\"1063408\" data-text=\"Betapred:anafylaxi\"></a>Beta-</span></div><div class=\"tableLine\">pred (<a class=\"index\" id=\"1063413\" data-text=\"betametason:anafylaxi\"></a>beta-</div><div class=\"tableLine\">metason) <br></div><div class=\"tableLine\">0,5 mg</div></td><td><div class=\"tableLine\">Per os (tug-</div><div class=\"tableLine\">gas, sväljes </div><div class=\"tableLine\">hela eller lö-</div><div class=\"tableLine\">ses i vatten)</div></td><td><div class=\"tableLine\">10 tabletter</div></td><td><div class=\"tableLine\">&lt; 6 år 6 tabletter</div><div class=\"tableLine\"><span>≥</span> &nbsp;6 år 10 tabletter</div></td><td><div class=\"tableLine\">Först efter </div><div class=\"tableLine\">2–3 tim</div></td></tr><tr><td colspan=\"6\"><ul><li><span style=\"font-weight: bold;\">Vid anafylaxi ska patienten akut till sjukhus. Ring 112! Kör ej ensam med egen bil.</span></li></ul><ul><li><span class=\"tab\"></span>Dokumentera reaktionen.</li></ul></td></tr></tbody></table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9fcfa1e6-1a21-4811-bb79-6cbe31d3c544",
+			"name": "9fcfa1e6-1a21-4811-bb79-6cbe31d3c544",
+			"type": "text",
+			"content": "<p><span> </span></p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5117e44e-8a10-4132-aa8c-a98446d2f7a9",
+			"name": "5117e44e-8a10-4132-aa8c-a98446d2f7a9",
+			"type": "therapy",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"index\" id=\"1064543\" data-text=\"anafylaxi:behandling inom akutsjukv&#xE5;rden\"></a><a class=\"crossref\" id=\"99203\"></a>Anafylaxibehandling inom akutsjukvården (11) ",
+				"id": "a3_17",
+				"text": "<table><tbody><tr><td colspan=\"6\"><p><strong>Adrenalin givet intramuskulärt är den viktigaste inledande/primära behandlingen. Sätt PVK och ge vätska till alla med anafylaxi. Följ saturation, puls och blodtryck. </strong></p><p><strong></strong></p><p><strong></strong></p><p><strong></strong></p><p><strong></strong></p><p><strong></strong></p></td></tr><tr><td><div class=\"tableLine\"><strong>Indikation</strong></div></td><td><div class=\"tableLine\"><strong>Läkemedel</strong></div></td><td><div class=\"tableLine\"><strong>Adm.sätt </strong></div></td><td><div class=\"tableLine\"><strong>Dos vuxna</strong></div></td><td><div class=\"tableLine\"><strong>Dos barn</strong></div></td><td><div class=\"tableLine\"><strong>Effekt</strong></div></td></tr><tr><td><div class=\"tableLine\">Kraftig urtikaria</div><div class=\"tableLine\">Andnöd</div><div class=\"tableLine\">Hypotension</div><div class=\"tableLine\">Allmän-</div><div class=\"tableLine\">påverkan</div><div class=\"tableLine\">Kraftiga </div><div class=\"tableLine\">buksmärtor </div><div class=\"tableLine\">och kräkningar</div></td><td><div class=\"tableLine\">Inj <span style=\"font-weight: bold;\"><a class=\"index\" id=\"1064586\" data-text=\"adrenalin:anafylaxi\"></a>Adrenalin<br></span></div><div class=\"tableLine\">1 mg/ml </div><div class=\"tableLine\">eller </div><div class=\"tableLine\"><span style=\"font-weight: bold;\">Adrenalin-</span></div><div class=\"tableLine\">penna (olika ty-</div><div class=\"tableLine\">per och styrkor </div><div class=\"tableLine\">finns)</div></td><td><div class=\"tableLine\">Intramusku-</div><div class=\"tableLine\">lärt i lårets <br></div><div class=\"tableLine\">utsida</div></td><td><div class=\"tableLine\">0,3–0,5 ml <br></div><div class=\"tableLine\">(0,3–0,5 mg)</div><div class=\"tableLine\">eller</div><div class=\"tableLine\">Adrenalin-</div><div class=\"tableLine\">penna <br></div><div class=\"tableLine\">0,3–0,5 mg</div></td><td><div class=\"tableLine\">0,01 ml (0,01 </div><div class=\"tableLine\">mg)/kg kropps-</div><div class=\"tableLine\">vikt max 0,5 ml </div><div class=\"tableLine\">(0,5 mg) eller </div><div class=\"tableLine\">Adrenalinpen-</div><div class=\"tableLine\">na, 10–20 kg: </div><div class=\"tableLine\">0,15 mg,</div><div class=\"tableLine\">&gt;&nbsp;20 kg: 0,3&nbsp;mg</div></td><td><div class=\"tableLine\">&lt;&nbsp;5 min</div><div class=\"tableLine\">Upprepa var </div><div class=\"tableLine\">5:e–10:e min </div><div class=\"tableLine\">vb</div></td></tr><tr><td><div class=\"tableLine\">Astma</div></td><td><div class=\"tableLine\">Inh <span style=\"font-weight: bold;\"><a class=\"index\" id=\"1064641\" data-text=\"Ventoline:anafylaxi\"></a>Ventoline </span></div><div class=\"tableLine\">(<a class=\"index\" id=\"1064643\" data-text=\"salbutamol:anafylaxi\"></a>salbutamol)</div><div class=\"tableLine\">eller eget </div><div class=\"tableLine\">bronkvidgande </div><div class=\"tableLine\">läkemedel</div></td><td><div class=\"tableLine\">Inhalation</div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">Inhalation</div><div class=\"tableLine\">Pulver/spray</div></td><td><div class=\"tableLine\">5 mg</div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">4–6 doser</div></td><td><div class=\"tableLine\">Enligt lokalt </div><div class=\"tableLine\">PM</div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">2–6 doser</div></td><td><div class=\"tableLine\">&lt;&nbsp;5 min</div><div class=\"tableLine\">Upprepa var </div><div class=\"tableLine\">10:e min vb</div></td></tr><tr><td><div class=\"tableLine\">Hypoxi</div></td><td><div class=\"tableLine\"><span style=\"font-weight: bold;\"><a class=\"index\" id=\"1064678\" data-text=\"syrgas:anafylaxi\"></a>Syrgas</span></div></td><td><div class=\"tableLine\">Mask</div></td><td><div class=\"tableLine\">&gt;&nbsp;5 L/min</div></td><td><div class=\"tableLine\">&gt;&nbsp;5 L/min</div></td><td><div class=\"tableLine\">Omgående</div></td></tr><tr><td><div class=\"tableLine\">Allmänpåver-</div><div class=\"tableLine\">kan och/eller </div><div class=\"tableLine\">hypotension </div></td><td><div class=\"tableLine\">Infusion</div><div class=\"tableLine\"><span style=\"font-weight: bold;\"><a class=\"index\" id=\"1064692\" data-text=\"Ringer-Acetat:anafylaxi\"></a>Ringer-Acetat</span></div></td><td><div class=\"tableLine\">Snabbt <br></div><div class=\"tableLine\">intravenöst <br></div><div class=\"tableLine\">(övertrycks-</div><div class=\"tableLine\">manschett)</div></td><td><div class=\"tableLine\">20 ml/kg </div><div class=\"tableLine\">kroppsvikt</div><div class=\"tableLine\">Upprepa vb</div></td><td><div class=\"tableLine\">20 ml/kg </div><div class=\"tableLine\">kroppsvikt</div><div class=\"tableLine\">Upprepa vb</div></td><td><div class=\"tableLine\">Snabb vid till-</div><div class=\"tableLine\">räcklig volym</div></td></tr><tr><td><div class=\"tableLine\">Alla </div></td><td><div class=\"tableLine\">Tabl <span style=\"font-weight: bold;\"><a class=\"index\" id=\"1067297\" data-text=\"Aerius:anafylaxi\"></a>Aerius </span>(<a class=\"index\" id=\"1067298\" data-text=\"desloratadin:anafylaxi\"></a>des-</div><div class=\"tableLine\">loratadin) mun-</div><div class=\"tableLine\">löslig 2,5/5 mg </div><div class=\"tableLine\">(eller annat </div><div class=\"tableLine\">antihistamin i </div><div class=\"tableLine\">dubbel dos)</div></td><td><div class=\"tableLine\">Per os</div></td><td><div class=\"tableLine\">10 mg</div></td><td><div class=\"tableLine\">&lt;&nbsp;6 år 2,5 mg</div><div class=\"tableLine\">6–12 år 5 mg</div></td><td><div class=\"tableLine\">Inom </div><div class=\"tableLine\">30–60&nbsp;min</div></td></tr><tr><td><div class=\"tableLine\">Alla</div></td><td><div class=\"tableLine\">Tabl <span style=\"font-weight: bold;\"><a class=\"index\" id=\"1064722\" data-text=\"Betapred:anafylaxi\"></a>Betapred</span><span style=\"font-weight: bold;\"></span><sup>a</sup><span style=\"font-weight: bold;\"> </span></div><div class=\"tableLine\">(<a class=\"index\" id=\"1064724\" data-text=\"betametason:anafylaxi\"></a>betametason)<span style=\"font-weight: bold;\"> </span></div><div class=\"tableLine\">0,5 mg <br></div><div class=\"tableLine\">eller Inj <span style=\"font-weight: bold;\">Beta-</span></div><div class=\"tableLine\">pred 4&nbsp;mg/ml el-</div><div class=\"tableLine\">ler inj <span style=\"font-weight: bold;\"><a class=\"index\" id=\"1064725\" data-text=\"Solu-Cortef:anafylaxi\"></a>Solu-Cor-</span></div><div class=\"tableLine\">tef (<a class=\"index\" id=\"1064726\" data-text=\"hydrokortison:anafylaxi\"></a>hydrokorti-</div><div class=\"tableLine\">son) 50&nbsp;mg/ml</div></td><td><div class=\"tableLine\">Per os<sup>b</sup> </div><div class=\"tableLine\"><br></div><div class=\"tableLine\"><br></div><div class=\"tableLine\">Intravenöst </div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">Intravenöst</div></td><td><div class=\"tableLine\">10 tabletter</div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">2 ml </div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">4 &nbsp;ml</div></td><td><div class=\"tableLine\">&lt;&nbsp;6 år 6 tabl</div><div class=\"tableLine\"><span>≥</span> &nbsp;6 år 10 tabl</div><div class=\"tableLine\">&nbsp;</div><div class=\"tableLine\">&lt;&nbsp;6 år 1 ml</div><div class=\"tableLine\"><span>≥</span> &nbsp;6 år 2 ml</div><div class=\"tableLine\">&lt; 6 år 2 ml</div><div class=\"tableLine\"><span>≥</span> 6 år 4 ml</div></td><td><div class=\"tableLine\">Först efter </div><div class=\"tableLine\">2–3&nbsp;tim</div></td></tr><tr><td colspan=\"6\"><p><strong><sup>a.</sup> <a class=\"index\" id=\"1067348\" data-text=\"dexametason:anafylaxi\"></a>Dexametason mixt 0,4 mg/ml är ett alternativ (&lt;&nbsp;6 år 8 ml, &gt;&nbsp;6 år 12 ml.)</strong></p><p><strong><sup>b.</sup>Tuggas, sväljes hela eller löses i vatten.</strong></p><p><strong></strong></p><p><strong>Vid utebliven effekt av given behandling larma anestesi-/intensivvårdsläkare</strong></p><p><strong></strong></p><p>Efter upprepade intramuskulära injektioner kan adrenalin ges intravenöst, som bolus eller infusion, på ordination av läkare med god erfarenhet av detta. Täta puls- och blodtryckskontroller, liksom EKG-övervakning är då obligatoriskt.</p><p><strong></strong></p><p><strong>Följ HLR-riktlinjer vid andnings- och/eller hjärtstopp</strong></p><p><strong><span class=\"tab\"></span></strong></p><ul><li>Dokumentera förlopp och svårighetsgrad.</li></ul><ul><li><span class=\"tab\"></span>Tryptas – överväg provtagning. (Utredning av misstänkt anafylaxi.)</li></ul><ul><li><span class=\"tab\"></span>Vid anafylaxi grad 1 ska patienten observeras minst 4 timmar. Vid anafylaxi grad 2 minst 8 timmar och vid grad 3 minst 12 timmar på sjukhus. <span style=\"font-weight: bold;\">Gäller även när adrenalin givits i hemmet.</span></li></ul><ul><li><span class=\"tab\"></span>Efter en anafylaxireaktion skriv remiss till allergimottagning/allergikunnig läkare för uppföljning.</li></ul><ul><li><span class=\"tab\"></span>Varningsmärk journal efter en anafylaxireaktion med säkerställd orsak.</li></ul></td></tr></tbody></table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a8c06234-9d2a-4258-b654-3064cf535c5e",
+			"name": "a8c06234-9d2a-4258-b654-3064cf535c5e",
+			"type": "text",
+			"content": "<p><span> </span>Man beh&ouml;ver ofta vara flera personer. Kalla d&auml;rf&ouml;r p&aring; assistans. F&ouml;lj och dokumentera saturation, puls, andningsfrekvens och blodtryck fortl&ouml;pande. S&auml;tt perifer venkateter och ge v&auml;tska till alla patienter med anafylaxi. F&ouml;lj dosrekommendationer i Terapirekommendationerna.</p>\n<p><br>Vid sviktande vitala funktioner eller utebliven effekt av given behandling b&ouml;r om m&ouml;jligt anestesi-/intensivv&aring;rdsl&auml;kare kontaktas. Det kan bli n&ouml;dv&auml;ndigt att administrera adrenalin och/eller andra vasoaktiva/inotropa l&auml;kemedel intraven&ouml;st. I enstaka fall kan &auml;ven respiratorbehandling bli aktuell. <span style=\"color: #ff0000;\">Se i &ouml;vrigt Terapirekommendationerna</span><span style=\"color: #ff0000;\">&ndash; Anafylaxibehandling f&ouml;r distriktssk&ouml;terskor,</span><br><span style=\"color: #ff0000;\">skolh&auml;lsov&aring;rd och barnav&aring;rdscentraler,</span><span style=\"color: #ff0000;\"> och &ndash; Anafylaxibehandling inom </span><span style=\"color: #ff0000;\">akutsjukv&aring;rden.</span></p>\n<h3 id=\"a3_18\">Adrenalin</h3>\n<p>Vikten av att adrenalin ges intramuskul&auml;rt tidigt och vid behov upprepat var 5:e&ndash;10:e minut kan inte &ouml;verskattas. Injektionen ges alltid intramuskul&auml;rt i l&aring;rets utsida. Vid behov av intraven&ouml;s tillf&ouml;rsel ska denna ske under EKG-&ouml;vervakning och s&auml;krast med infusionspump, se Terapirekommendationerna <a href=\"#99203\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>. Intraven&ouml;st adrenalin kan ge kraftig &aring;ngest, sv&aring;r huvudv&auml;rk, ventrikelarytmi, hypertensiv kris och lung&ouml;dem. Ge aldrig adrenalin subkutant d&aring; det ger l&aring;ngsam och otillr&auml;cklig effekt.<span> </span></p>\n<h3 id=\"a3_19\">Adrenalin vid anafylaxi och samtidig hj&auml;rtsjukdom eller h&ouml;g &aring;lder</h3>\n<p>Patienter med samtidig hj&auml;rtsjukdom eller h&ouml;g &aring;lder ska ha tidig tillf&ouml;rsel av en normal dos adrenalin intramuskul&auml;rt.</p>\n<p><br>Vid anafylaxi kan mastcellerna i hj&auml;rtat vara aktiverade och ge k&auml;rlkramp, infarkt eller arytmier s&auml;rskilt som antalet mastceller dessutom &auml;r &ouml;kat vid arterioskleros och k&auml;rlkramp. Vidare finns ofta en &ouml;kad risk i dessa fall f&ouml;r sv&aring;rbehandlad anafylaxi pga samtidig behandling med betablockerare, ACE-h&auml;mmare och/eller angiotensinreceptorblockerare (ARB).<span style=\"color: #ff0000;\"> Det &auml;r d&auml;rf&ouml;r s&auml;rskilt viktigt f&ouml;r patienter med </span><span style=\"color: #ff0000;\">samtidig hj&auml;rtsjukdom eller h&ouml;g &aring;lder att f&aring; tidig </span><span style=\"color: #ff0000;\">tillf&ouml;rsel av en normal dos adrenalin </span><span style=\"color: #ff0000;\">intramuskul&auml;rt.</span></p>\n<h3 id=\"a3_20\">Luftr&ouml;rsvidgande, antihistamin och kortison</h3>\n<p>Optimalt behandlad astma &auml;r <span style=\"color: #ff0000;\">s&auml;rskilt</span> viktigt f&ouml;r patienter med risk f&ouml;r anafylaxi. Astmatiker ska ha tillg&aring;ng till snabbverkande luftr&ouml;rsvidgande behandling.</p>\n<p><span style=\"color: #ff0000;\">Ut&ouml;ver adrenalin rekommenderas &auml;ven </span><span style=\"color: #ff0000;\">f&ouml;rskrivning av ett antihistamin (desloratadin eller </span><span style=\"color: #ff0000;\">loratadin) och kortison. Det vetenskapliga </span><span style=\"color: #ff0000;\">underlaget f&ouml;r att dessa l&auml;kemedel har effekt vid </span><span style=\"color: #ff0000;\">anafylaxi &auml;r dock bristf&auml;lligt.</span><br><span style=\"text-decoration: line-through;\">Till en patient som f&aring;tt tv&aring; adrenalinpennor utskrivna, se avsnittet Uppf&ouml;ljning nedan, p&aring; grund av anafylaxi grad 2&ndash;3 mot f&ouml;do&auml;mnen, bi- eller getingstick eller anafylaxi vid mer &auml;n ett tillf&auml;lle n&auml;r man inte kunnat fastst&auml;lla orsak, rekommenderas &auml;ven f&ouml;rskrivning av ett antihistamin (desloratadin eller loratadin) och kortison. Det vetenskapliga underlaget f&ouml;r att behandling med dessa l&auml;kemedel har effekt vid anafylaxi &auml;r dock bristf&auml;lligt.</span></p>\n<p><br>Antihistaminer har effekt p&aring; kl&aring;da, urtikaria och allergisk rinit. Full effekt av dessa intr&auml;der <span style=\"color: #ff0000;\">redan</span> efter 30&ndash;60 minuter. Perorala icke-sederande antihistaminer kan vara v&auml;rdefulla som profylaktisk medicinering i risksituationer.</p>\n<p><br>Kortison har ingen akut ins&auml;ttande effekt och b&ouml;r f&ouml;rskrivas med restriktivitet framf&ouml;r allt till barn. Effekten av kortison kommer tidigast efter ett par timmar oavsett administrationsform. Avsikten med medicineringen &auml;r att blockera sena effekter av den allergiska reaktionen.</p>\n<h2 id=\"a3_21\">Uppf&ouml;ljning</h2>\n<p><span style=\"text-decoration: line-through;\"></span></p>\n<p><span style=\"color: #ff0000;\">Patient med anafylaxi grad 2 och 3 p&aring; grund av k&auml;nda </span><span style=\"color: #ff0000;\">orsaker som insektstick, f&ouml;do&auml;mnen, l&auml;kemedel, </span><span style=\"color: #ff0000;\">med mera b&ouml;r erh&aring;lla minst tv&aring; adrenalinpennor redan </span><span style=\"color: #ff0000;\">efter f&ouml;rsta anfallet innan v&aring;rdinr&auml;ttningen l&auml;mnas.</span><br><span style=\"color: #ff0000;\">Vid anafylaxi grad 2 och 3 av ok&auml;nd orsak b&ouml;r </span><span style=\"color: #ff0000;\">patienten likaledes f&ouml;rses med minst </span><span style=\"color: #ff0000;\">adrenalinpennor. Alla patienter instrueras </span><span style=\"color: #ff0000;\">om s&auml;rskild uppm&auml;rksamhet de n&auml;rmaste </span><span style=\"color: #ff0000;\">dygnen.<span style=\"text-decoration: line-through;\"><br><span style=\"color: #000000; text-decoration: line-through;\">Patienter med anafylaxi grad 2 och 3 ska f&ouml;rses med minst tv&aring; adrenalinpennor och instruktioner om s&auml;rskild uppm&auml;rksamhet de n&auml;rmaste dygnen.</span></span></span> Vid &aring;terkommande symtom uppmanas patienten att anv&auml;nda en adrenalinpenna och d&auml;refter s&ouml;ka v&aring;rd akut s&aring; fort f&ouml;rsta injektionen har tagits. Patienten f&ouml;rses med instruktioner om hur man ger sig sj&auml;lv adrenalinpennan. Det &auml;r viktigt att vid outredd orsak till anafylaxi remittera patienten f&ouml;r utredning. Flera studier visar att detta ofta inte g&ouml;rs (2). Patienten ska ocks&aring; utrustas med antihistamin att anv&auml;nda vid lindriga allergiska reaktioner. Om det finns anledning f&ouml;r varningsmarkering ska detta ocks&aring; ske omg&aring;ende.</p>\n<h2 class=\"referenceHeader\" id=\"a3_22\">Referenser</h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fc4a94c1-49e0-46b8-b9f1-4c48f1337d5e",
+			"name": "fc4a94c1-49e0-46b8-b9f1-4c48f1337d5e",
+			"type": "references",
+			"content": "<ol class=\"references\"><li id=\"reference_1\">Foucard T, Yman IM, Nordvall L. F&auml;rre d&ouml;dsfall och livshotande f&ouml;do&auml;mnesreaktioner. L&auml;kark&aring;rens rapportering har lett till effektiva &aring;tg&auml;rder. <br><a href=\"http://ltarkiv.lakartidningen.se/2005/temp/pda30970.pdf\" target=\"_blank\" class=\"linkOut\">L&auml;kartidningen. 2005;102:3465&ndash;8.</a></li>\n<li id=\"reference_2\">Bj&ouml;rnsson E, Janson C, Plaschke P, Norrman E, Sj&ouml;berg O. Venom allergy in adult Swedes: a population study.</li>\n<li id=\"reference_3\"><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=bj%C3%B6rnsson+e+and+1995+and+venom\" target=\"_blank\" class=\"linkOut\">Allergy. 1995;50:800&ndash;5.</a></li>\n<li id=\"reference_4\">Johansson B, Eriksson A, Ornehult L. Human fatalities caused by wasp and bee stings in Sweden.<br> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=johansson+b+and+bee+and+1991\" target=\"_blank\" class=\"linkOut\">Int J Legal Med. 1991;104:99&ndash;103.</a></li>\n<li id=\"reference_5\">Sheikh A, Hippisley-Cox J, Newton J, Fenty J. Trends in national incidence, lifetime prevalence and <a href=\"http://www.lakemedelsboken.se/atc/R03AA01-S01EA01-C01CA24-A01AD01\" data-atcid=\"R03AA01,S01EA01,C01CA24,A01AD01\" data-atctitles=\"Andningsorgan--Medel_vid_obstruktiva_luftv&#xE4;gssjukdomar--Adrenergika,_inhalationer--Alfa-_och_beta-adrenoreceptoragonister--Adrenalin##&#xD6;gon_och_&#xF6;ron--Medel_vid_&#xF6;gonsjukdomar--Medel_vid_glaukom_samt_miotika--Sympatomimetika_vid_glaukom--Adrenalin##Hj&#xE4;rta_och_kretslopp--Medel_vid_hj&#xE4;rtsjukdomar--Hj&#xE4;rtstimulerande_medel_exkl._hj&#xE4;rtglykosider--Adrenerga_och_dopaminerga_medel--Adrenalin##Matsm&#xE4;ltningsorgan_och_&#xE4;mnesoms&#xE4;ttning--Medel_vid_mun-_och_tandsjukdomar--Medel_vid_mun-_och_tandsjukdomar--Andra_medel_f&#xF6;r_lokal_behandling_i_munh&#xE5;lan--Adrenalin\" class=\"lb inlineGenerica text\">adrenalin</a>e prescribing for anaphylaxis in England. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/18344471\" target=\"_blank\" class=\"linkOut\">J R Soc Med. 2008;101:139&ndash;43.</a></li>\n<li id=\"reference_6\">Liew WK, Williamson E, Tang ML. Anaphylaxis fatalities and admissions in Australia. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/19117599\" target=\"_blank\" class=\"linkOut\">J Allergy Clin Immunol. 2009;123:434&ndash;42.</a></li>\n<li id=\"reference_7\">Pastorello EA, Rivolta F, Bianchi M, Mauro M, Pravettoni V. Incidence of anaphylaxis in the emergency department of a general hospital in Milan. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/11419701\" target=\"_blank\" class=\"linkOut\">J Chromatogr B Biomed Sci Appl. 2001;756:11&ndash;7.</a></li>\n<li id=\"reference_8\">S&oslash;rensen HT, Nielsen B, Ostergaard Nielsen J. Anaphylactic shock occurring outside hospitals. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=nielsen+b+and+shock+and+1989\" target=\"_blank\" class=\"linkOut\">Allergy. 1989;44:288&ndash;90.</a></li>\n<li id=\"reference_9\">Ylva Sj&ouml;gren Bohlin, SLV, personlig kontakt</li>\n<li id=\"reference_10\">Vetander M, Helander D, Flodstr&ouml;m C, &Ouml;stblom E, Alfv&eacute;n T, Ly D H, <span style=\"color: #ff0000;\">et al</span>. <span style=\"text-decoration: line-through;\">Hedlin G, Nilsson C, Wickman M</span>. Anaphylaxis and reactions to foods in children &ndash; a population-based case study of emergency department visits. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=vetander+and+children+and+2012\" target=\"_blank\" class=\"linkOut\">Clin Exp Allergy. 2012;42:568&ndash;577.</a></li>\n<li id=\"reference_11\">Simons FE, Ardusso LR, Bil&ograve; MB, El-Gamal YM, Ledford DK, Ring J, et al; World Allergy Organization. World Allergy Organization anaphylaxis guidelines: summary. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/21377030\" target=\"_blank\" class=\"linkOut\">J Allergy Clin Immunol. 2011;127:587&ndash;93.</a></li>\n<li id=\"reference_12\">Anafylaxi: Rekommendationer f&ouml;r omh&auml;ndertagande och behandling. Svensk f&ouml;rening f&ouml;r allergologi. <a href=\"http://www.sffa.nu/\" target=\"_blank\" class=\"linkOut\">www.sffa.nu</a></li>\n<li id=\"reference_13\">Johansson SG, Bieber T, Dahl R, Friedmann PS, Lanier BQ, Lockey RF, et al. Revised nomenclature for allergy for global use: Report of the Nomenclature Rewiew Committee of the World Allergy Organization, October 2003. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/15131563\" target=\"_blank\" class=\"linkOut\">J Allergy Clin Immunol. 2004;113:832&ndash;6.</a></li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "19c70a57-dd55-4744-800b-2190772fcb94",
+			"name": "19c70a57-dd55-4744-800b-2190772fcb94",
+			"type": "text",
+			"content": "<h5 id=\"a3_23\">För vidare läsning:</h5>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b0de56da-2313-41bc-a7b3-e73a42496f7a",
+			"name": "b0de56da-2313-41bc-a7b3-e73a42496f7a",
+			"type": "references",
+			"content": "<ol class=\"references\"><li id=\"reference_1\">Björkander J, Lindfors A. Anafylaxi och insektsallergi. I: Hedlin G, Larsson K, red. Allergi och Astma. Lund: Studentlitteratur AB; 2009. s 399–411. <br>ISBN 9144029969.</li>\n<li id=\"reference_2\">Westfall TC, Westfall DP. Adrenergic agonists and antagonists. In: Brunton LL, ed. Goodman and Gilman\\qs The Pharmacological Basis of Therapeutics. 12th ed. New York: McGraw-Hill; 2010. <br>p 222–334.</li>\n<li id=\"reference_3\">Skidgel RA, Kaplan AP, Erdös EG. Histamine, bradykinin and their antagonists. In: Brunton LL, ed. Goodman and Gilman\\qs The Pharmacological Basis of Therapeutics. 12th ed. New York: McGraw-Hill; 2010. p 911–36.</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/akutmedicin/anafylaxi.json",
+	"modified": "2018-02-26 10:09",
+	"isPublished": true,
+	"indexed": "true"
+}

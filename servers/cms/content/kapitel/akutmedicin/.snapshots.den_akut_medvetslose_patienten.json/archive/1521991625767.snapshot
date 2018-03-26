@@ -1,0 +1,392 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Den akut medvetslöse patienten | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-09 00:50",
+	"published": "2015-07-09 00:50",
+	"validUntil": "",
+	"createdBy": "Christer Nilsson, Dan Westlin, Elisabet Ekman",
+	"replacesUrl": "/a1_aku_akutmedv_2013fm10.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "79e9bec5-6cf5-441d-a3db-1b1b5fb57158",
+			"name": "79e9bec5-6cf5-441d-a3db-1b1b5fb57158",
+			"type": "author",
+			"content": {
+				"firstname": "Christer",
+				"surname": "Nilsson",
+				"description": "Karlskrona",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "43a411df-4060-4def-a9c6-f54dcaa9dfc3",
+			"name": "43a411df-4060-4def-a9c6-f54dcaa9dfc3",
+			"type": "author",
+			"content": {
+				"firstname": "Dan",
+				"surname": "Westlin",
+				"description": "Thoraxcentrum, Blekingesjukhuset, Karlskrona",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c5a5b86a-f21c-4a99-9ebb-3091490dace1",
+			"name": "c5a5b86a-f21c-4a99-9ebb-3091490dace1",
+			"type": "author",
+			"content": {
+				"firstname": "Elisabet",
+				"surname": "Ekman",
+				"description": "Jämjö vårdcentral, Jämjö",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b336e7e2-d87b-4bb7-a818-0b5892a48d06",
+			"name": "b336e7e2-d87b-4bb7-a818-0b5892a48d06",
+			"type": "text",
+			"content": "<h1 id=\"a1_4\"><a class=\"crossref\" id=\"53811\"></a>Den <a class=\"index\" id=\"1031043\" data-text=\"medvetsl&#xF6;shet\"></a>akut medvetsl&ouml;se patienten</h1>\n<h2 id=\"a1_5\">Inledning</h2>\n<p class=\"ingress\">Vid akut <a class=\"index\" id=\"1031503\" data-text=\"medvetsl&#xF6;shet\"></a>medvetsl&ouml;shet blir den viktigaste uppgiften i den initiala handl&auml;ggningen att f&ouml;rse hj&auml;rncellerna med substrat, dvs oxygen och glukos. Fria luftv&auml;gar s&auml;kras, hj&auml;rt-lungr&auml;ddning (HLR) inleds vid hj&auml;rtstillest&aring;nd och glukos tillf&ouml;rs vid misst&auml;nkt hypoglykemi. Vid sjunkande blodtryck och chock inleds behandling med balanserad saltl&ouml;sning.<br><br>Aktuell anamnes s&auml;kras fr&aring;n &ouml;gonvittnen och ambulanspersonal, liksom identitetsuppgifter.&nbsp;Unders&ouml;kningen riktas mot tecken p&aring; trauma, meningism, fokal neurologi, intoxikation och metabola sjukdomstillst&aring;nd samt kompletteras efter behov med laboratorieunders&ouml;kningar och r&ouml;ntgen.&nbsp;Den fortsatta handl&auml;ggningen avg&ouml;rs av den bakomliggande orsaken till medvetsl&ouml;sheten.</p>\n<h2 id=\"a1_6\">Patofysiologiska mekanismer</h2>\n<p>Vakenhet och medvetande &auml;r beroende av ett fungerande samband mellan formatio reticularis i hj&auml;rnstammen och storhj&auml;rnshemisf&auml;rerna. Vid medvetsl&ouml;shet &auml;r antingen b&aring;da hemisf&auml;rerna utslagna och/eller det retikul&auml;ra systemet i hj&auml;rnstammen. De tre dominerande bakomliggande mekanismerna &auml;r</p>\n<ul>\n<li><span class=\"tab\"></span>strukturella skador (t&nbsp;ex traumatisk och icke-traumatisk bl&ouml;dning)</li>\n<li>metabolisk encefalopati (hypoxi, hypoglykemi, endogena och exogena intoxikationer)</li>\n<li><span class=\"tab\"></span>kramptillst&aring;nd (status epilepticus och postiktalt).</li>\n</ul>\n<p>Handl&auml;ggningen av en medvetsl&ouml;s patient kommer att variera beroende p&aring; den bakomliggande orsaken. I den initiala handl&auml;ggningen &auml;r den prim&auml;ra uppgiften att f&ouml;rse fortfarande viabla hj&auml;rnceller med substrat, det vill s&auml;ga oxygen och glukos, genom att s&auml;kerst&auml;lla andning och cirkulation samt behandla eventuell hypoglykemi.</p>\n<h2 id=\"a1_7\">Unders&ouml;kning enligt <a class=\"index\" id=\"1047669\" data-text=\"ABCDE:unders&#xF6;kning medvetsl&#xF6;s;medvetsl&#xF6;shet:unders&#xF6;kning\"></a>ABCDE &ndash; vuxna</h2>\n<h3 id=\"a1_8\">Initial bed&ouml;mning</h3>\n<p>Skaka patienten f&ouml;rsiktigt och fr&aring;ga hur det st&aring;r till. Svarar patienten finns &ouml;ppen luftv&auml;g, andning och perfusion i hj&auml;rnan. Of&ouml;rm&aring;ga att svara = kritisk sjukdom. Om patienten &auml;r medvetsl&ouml;s och inte andas normalt, starta omedelbart hj&auml;rt-lungr&auml;ddning (HLR), se nedan!</p>\n<h3 id=\"a1_9\">Airway (A)</h3>\n<p>Se, lyssna och k&auml;nn om det finns tecken p&aring; ofri luftv&auml;g som &aring;tg&auml;rdas med bak&aring;tb&ouml;jning av huvudet och lyft av underk&auml;ken. Vid trauma stabiliseras nacken. Vid f&ouml;rekomst av slem, blod och/eller maginneh&aring;ll avl&auml;gsnas detta, helst med hj&auml;lp av sug annars via uttorkning medelst kompress eller motsvarande. F&ouml;r att underl&auml;tta inbl&aring;sningar b&ouml;r en tandprotes som sitter stadigt l&auml;mnas kvar medan det kan vara f&ouml;rdelaktigt att avl&auml;gsna en som sitter l&ouml;st.</p>\n<p class=\"indent\"><br>Vid misstanke om aspiration av fr&auml;mmande kropp, t&nbsp;ex vid besv&auml;r som uppkommit i samband med m&aring;ltid, v&auml;nder man patienten upp och ner om det &auml;r m&ouml;jligt. Om inte det lyckas ges en kraftfull st&ouml;t mot &ouml;vre delen av buken, antingen bakifr&aring;n med armarna om patienten (<a class=\"index\" id=\"1047674\" data-text=\"Heimlichs man&#xF6;ver\"></a>Heimlichs man&ouml;ver) eller framifr&aring;n hos den liggande, medvetsl&ouml;se patienten.</p>\n<h3 id=\"a1_10\">Breathing (B)</h3>\n<p>Alla kritiskt sjuka patienter ska tillf&ouml;ras oxygen. Vid tillg&aring;ng till saturationsm&auml;tare b&ouml;r man str&auml;va efter ett saturationsv&auml;rde p&aring; 94&ndash;98 %, och f&ouml;r patienter med kroniskt obstruktiv lungsjukdom (KOL) 88&ndash;92%. Om andning saknas eller dess djup/frekvens bed&ouml;ms som otillr&auml;cklig anv&auml;nds andningsmask eller andningsballong f&ouml;r att ventilera och syres&auml;tta patienten.</p>\n<h3 id=\"a1_11\">Circulation (C)</h3>\n<p>Se kapitlet&nbsp;<a href=\"{pre}/kapitel/akutmedicin/chock.html#a2_3\" target=\"_blank\">Chock</a>.</p>\n<h3 id=\"a1_12\">Disability (D)</h3>\n<p>Vanliga orsaker till s&auml;nkt medvetande &auml;r hypoxi, hyperkapni, cerebral hypoperfusion eller sederande/analgetiska l&auml;kemedel. Vid s&auml;kerst&auml;lld/misst&auml;nkt p&aring;verkan av opioider och/eller bensodiazepiner &ouml;verv&auml;gs intraven&ouml;s tillf&ouml;rsel av naloxon respektive flumazenil, enligt g&auml;llande produktresum&eacute;/Fass-text.&nbsp;<span>P-glukos</span> m&auml;ts och vid v&auml;rden &lt;&nbsp;4 mmol/L tillf&ouml;rs glukos intraven&ouml;st, se avsnittet <a href=\"#a1_22\" target=\"_blank\">Hypoglykemi/insulinkoma</a>.&nbsp;<a href=\"#34302\" class=\"btn btn-primary btn-mini pageLink\"></a>En medvetsl&ouml;s patient med oskyddad luftv&auml;g placeras i framstupa sidol&auml;ge om detta &auml;r m&ouml;jligt.</p>\n<h3 id=\"a1_13\">Exposure (E)</h3>\n<p>Situationsanpassad unders&ouml;kning av hela kroppen kan beh&ouml;va genomf&ouml;ras. T&auml;nk p&aring; integritet och v&auml;rmef&ouml;rluster.</p>\n<h2 id=\"a1_14\"><a class=\"index\" id=\"1055406\" data-text=\"hj&#xE4;rt-lungr&#xE4;ddning:se HLR &lt;$nopage&gt;\"></a><a class=\"crossref\" id=\"67292\"></a>Hj&auml;rt-lungr&auml;ddning (HLR) &ndash; vuxna personer</h2>\n<p>Tidig uppt&auml;ckt och behandling av kritiskt sjuk patient kan f&ouml;rebygga hj&auml;rtstopp. Problem med &rdquo;airway&rdquo;, &rdquo;breathing&rdquo; och/eller &rdquo;circulation&rdquo; kan orsaka hj&auml;rtstopp.<br><br>Faktorer som p&aring;verkar effekten av HLR &auml;r f&ouml;ljande:</p>\n<ul>\n<li>Tid till start av HLR. Omedelbart inledande kan &ouml;ka chanserna till &ouml;verlevnad 2&ndash;3 g&aring;nger.</li>\n<li>Kvaliteten p&aring; kompressionerna.</li>\n<li>Avbrott i HLR.</li>\n<li>Kvaliteten p&aring; ventileringen.</li>\n</ul>\n<p><a class=\"index\" id=\"1055422\" data-text=\"br&#xF6;stkompressioner:vuxna, HLR;vuxna:br&#xF6;stkompressioner\"></a>Handplaceringen vid HLR &auml;r mitt p&aring; br&ouml;stet med patienten p&aring; ett h&aring;rt underlag. Med s&aring;v&auml;l s&aring; kallad 2-r&auml;ddarteknik (tv&aring; personer hj&auml;lps &aring;t med hj&auml;rt-lungr&auml;ddningen) som med en ensam livr&auml;ddare rekommenderas minst 100, men inte &ouml;ver 120, kompressioner per minut. Kompressionsdjupet b&ouml;r vara minst 5 men inte &ouml;ver 6 cm och br&ouml;stkorgen sl&auml;pps upp helt efter varje kompression men med bibeh&aring;llen hudkontakt. Efter 30 kompressioner ges 2 inbl&aring;sningar, &rdquo;30:2&rdquo;. En inbl&aring;sning ska ta 1 sekund och ge en synlig h&ouml;jning av br&ouml;stkorgen. Byte av den som komprimerar sker efter varje 2 minuters HLR-period. Det &auml;r v&auml;sentligt f&ouml;r framg&aring;ngsrik HLR att avbrotten i kompressionerna begr&auml;nsas till ett absolut minimum.</p>\n<p class=\"indent\"><br>All sjukv&aring;rdspersonal ska regelbundet utbildas i HLR. Genomf&ouml;rande av avancerad hj&auml;rt-lungr&auml;ddning (A-HLR) &auml;r f&ouml;rbeh&aring;llet s&auml;rskilt utbildad sjukv&aring;rds- och ambulanspersonal. Detta ska &auml;ven ing&aring; i varje l&auml;kares f&auml;rdighet. De olika momenten vid A-HLR &auml;r beskrivna i Figur 1. L&auml;karen ska, liksom den personal som f&aring;r delegation att anv&auml;nda en defibrillator, g&ouml;ra sig v&auml;l f&ouml;rtrogen med defibrillatorn och tekniken.</p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "true",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "523feeec-1600-4999-b828-dfed3c5e3813",
+			"name": "523feeec-1600-4999-b828-dfed3c5e3813",
+			"type": "figure",
+			"content": {
+				"number": "1",
+				"maxwidth": "",
+				"image": "/images/a1_aku_akutmedv_2013fm10_images/figur1.png",
+				"title": "",
+				"text": "<a class=\"crossref\" id=\"41479\"></a>Flödesschema – <a class=\"index\" id=\"1049762\" data-text=\"HLR:vuxna \"></a>Avancerad hjärt-lungräddning vuxna enligt riktlinjer 2011. Efter förlaga från Svenska rådet för hjärt-lungräddning. Publicerad med tillstånd från Stiftelsen för HLR.",
+				"alt": "",
+				"id": "a1_15"
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "bc98eb9d-eb6e-44a2-b1a5-7e1b4d3addbb",
+			"name": "bc98eb9d-eb6e-44a2-b1a5-7e1b4d3addbb",
+			"type": "text",
+			"content": "<p><span> </span>Anslutningen mellan patient och defibrillator sker allra b&auml;st med klisterelektroder (b&auml;ttre anv&auml;ndars&auml;kerhet, kortare avbrott i HLR och b&auml;ttre avl&auml;sning av hj&auml;rtrytmen). Halvautomatiska defibrillatorer (den enda typen som finns p&aring; allm&auml;nna platser) har alltid klisterelektroder medan multifunktionella apparater kan ha b&aring;de klisterelektroder och spatlar. <a class=\"index\" id=\"1047717\" data-text=\"defibrillering:vuxna\"></a>Defibrillering sker bifasiskt med 150/200 J, monofasiskt med 360 J eller enligt apparattillverkarens rekommendationer. Mycket finv&aring;gigt ventrikelflimmer (VF) defibrilleras inte.</p>\n<h3 id=\"a1_16\"><a class=\"crossref\" id=\"21309\"></a>K&auml;rling&aring;ng</h3>\n<p>I tidigt skede ska fri venv&auml;g s&auml;kerst&auml;llas f&ouml;r att m&ouml;jligg&ouml;ra tillf&ouml;rsel av l&auml;kemedel/infusionsv&auml;tskor. I f&ouml;rsta hand s&auml;tts en perifer venkateter (PVK) i patientens armb&aring;gsveck. I samband med hj&auml;rtstopp &auml;r det ocks&aring; relativt l&auml;tt att s&auml;tta en PVK i den d&aring; vanligen v&auml;l synliga yttre halsvenen (vena jugularis externa). Saknas snabb tillg&aring;ng till perifer ven &auml;r den intraoss&ouml;sa (io) tekniken enkel, snabb och s&auml;ker. Flera kommersiellt tillg&auml;ngliga utrustningar finns att tillg&aring;. Vid avsaknad av l&auml;mplig utrustning kan som en sista utv&auml;g en uppdragskanyl (18G &ndash; 1,2 x 50 mm ) pr&ouml;vas. Oberoende av typ av utrustning ska den <a class=\"index\" id=\"1047722\" data-text=\"intraoss&#xF6;s teknik:vuxna\"></a>intraoss&ouml;sa n&aring;len placeras</p>\n<ul>\n<li>tv&aring; fingerbredder nedom patella n&aring;got medialt p&aring; tibias plana del <span style=\"font-style: italic;\">eller</span></li>\n<li>en fingerbredd nedom tuberositas tibiae n&aring;got medialt p&aring; tibias plana del.</li>\n</ul>\n<p>Observera! Viktigt att flusha igenom n&aring;len med 10 ml NaCl 9 mg/ml omedelbart efter s&auml;ttandet. Alla akutl&auml;kemedel, kristalloida och kolloida l&ouml;sningar kan tillf&ouml;ras. Det rekommenderas att flusha med minst 5 ml NaCl 9 mg/ml mellan olika l&auml;kemedel f&ouml;r att undvika utf&auml;llning. <span class=\"updated\" style=\"color: #000000;\">Erytrocyter </span>kan ges p&aring; vitalindikation i avvaktan p&aring; att fri venv&auml;g etablerats. Volymtillf&ouml;rsel kr&auml;ver regelm&auml;ssigt &ouml;vertryck. Intraoss&ouml;s n&aring;l b&ouml;r sitta &lt;&nbsp;24 timmar.</p>\n<h3 id=\"a1_17\">L&auml;kemedel &ndash; vuxna</h3>\n<p>Se &auml;ven Fl&ouml;desschema &ndash; A-HLR vuxna, Figur 1.</p>\n<h3 id=\"a1_18\"><a class=\"index\" id=\"1047727\" data-text=\"adrenalin:HLR\"></a>Adrenalin</h3>\n<p>Ge 1 mg (10 ml av 0,1 mg/ml) &aring;tf&ouml;ljt av 20&nbsp;ml NaCl 9 mg/ml iv/io vid</p>\n<ul>\n<li>asystoli eller pulsl&ouml;s elektrisk aktivitet (PEA) omg&aring;ende</li>\n<li>ventrikelflimmer (VF) eller ventrikeltakykardi (VT) efter tredje defibrilleringen.</li>\n</ul>\n<p>D&auml;refter vid vartannat byte av den som komprimerar, det vill s&auml;ga var 4:e minut under p&aring;g&aring;ende HLR.</p>\n<h3 id=\"a1_19\"><a class=\"index\" id=\"1047732\" data-text=\"amiodaron:HLR\"></a>Amiodaron (t&nbsp;ex Cordarone)</h3>\n<ul>\n<li>300 mg iv/io om fortsatt VF/VT efter tredje defibrilleringen.</li>\n<li>150 mg som till&auml;ggsdos iv/io om VT/VF kvarst&aring;r efter femte defibrilleringen.</li>\n</ul>\n<h3 id=\"a1_20\"><a class=\"index\" id=\"1047748\" data-text=\"Tribonat:HLR\"></a>Tribonat eller <a class=\"index\" id=\"1047753\" data-text=\"natriumv&#xE4;tekarbonat:HLR\"></a>natriumv&auml;tekarbonat</h3>\n<p>Tribonat eller natriumv&auml;tekarbonat rekommenderas inte l&auml;ngre rutinm&auml;ssigt men b&ouml;r &ouml;verv&auml;gas vid hj&auml;rtstopp pga hyperkalemi eller intoxikation med <a class=\"index\" id=\"1047758\" data-text=\"tricykliska antidepressiva:f&#xF6;rgiftning\"></a>tricykliska antidepressiva (TCA).</p>\n<p class=\"indent\"><br>Pulsl&ouml;s elektrisk aktivitet kan betingas av omfattande myokardiell ischemi. Likartad klinisk bild kan ses vid massiv lungemboli, hj&auml;rttamponad, &ouml;vertryckspneumotorax, uttalad hypovolemi/bl&ouml;dning, elektrolytrubbning, intoxikation och hypotermi. Medvetsl&ouml;shet kan &auml;ven orsakas av extrem bradykardi, AV-block III, ventrikeltakykardi samt vissa supraventrikul&auml;ra takyarytmier, t&nbsp;ex f&ouml;rmaksflimmer vid WPW-syndrom, se kapitlet <a href=\"{pre}/kapitel/hjarta-karl/hjartrytmrubbningar.html#e3_2\">Hj&auml;rtrytmrubbningar</a>.</p>\n<h3 id=\"a1_21\">Uppf&ouml;ljande v&aring;rd</h3>\n<p>Individer som genomg&aring;tt hj&auml;rt-lungr&auml;ddning beh&ouml;ver uppf&ouml;ljande v&aring;rd p&aring; intensivv&aring;rdsavdelning eller motsvarande, varvid hypotermibehandling kan &ouml;verv&auml;gas.</p>\n<h2 id=\"a1_22\"><a class=\"crossref\" id=\"34302\"></a>Hypoglykemi/<a class=\"index\" id=\"1016883\" data-text=\"insulinkoma:akutmedicin\"></a>insulinkoma</h2>\n<p>Hj&auml;rncellerna &auml;r f&ouml;r sin funktion och viabilitet beroende av kontinuerlig tillf&ouml;rsel av s&aring;v&auml;l oxygen som glukos. D&aring; man m&ouml;ter en medvetsl&ouml;s patient &auml;r diagnostik och elimination av eventuell <a class=\"index\" id=\"1033135\" data-text=\"hypoglykemi:vuxna\"></a>hypoglykemi den v&auml;sentliga &aring;tg&auml;rden vid sidan av s&auml;kerst&auml;llande av respiration och cirkulation. Med nuvarande snabbmetoder kan information om <span>P-glukos</span> erh&aring;llas omg&aring;ende. Om denna m&ouml;jlighet saknas hos en medvetsl&ouml;s patient med k&auml;nd insulinbehandlad diabetes b&ouml;r glukosbehandling (se nedan) inledas.</p>\n<p class=\"indent\"><br>Vid medvetsl&ouml;shet pga hypoglykemi (<span>P-glukos</span> &lt; 4 mmol/L) inleds behandling med 30-procentig (300 mg/ml) <a class=\"index\" id=\"1052791\" data-text=\"glukos:hypoglykemi\"></a>glukosl&ouml;sning 30&ndash;50 ml eller mer tills <span>P-glukos</span> normaliserats eller patienten vaknat, se kapitlet <a href=\"{pre}/kapitel/endokrinologi/diabetes_mellitus.html#k1_4\">Diabetes mellitus</a>. Blir patienten fortfarande inte b&auml;ttre b&ouml;r man &ouml;verv&auml;ga om diagnosen &auml;r r&auml;tt. Det b&ouml;r ocks&aring; p&aring;pekas att kapill&auml;rt <span>P-glukos</span> kan vara &rdquo;falskt&rdquo; s&auml;nkt hos individer med d&aring;lig perifer cirkulation. Vid sv&aring;r hypoglykemi, exempelvis efter massiv &ouml;verdos av insulin, f&aring;r behandlingen kompletteras med infusion av en 10&ndash;20-procentig (100&ndash;200 mg/ml) glukosl&ouml;sning och patienten v&aring;rdas med intensiv &ouml;vervakning. Alternativt ges <a class=\"index\" id=\"1053088\" data-text=\"glukagon:insulinkoma\"></a>glukagon 0,5&ndash;1&nbsp;mg subkutant p&aring; l&aring;rets framsida eller intramuskul&auml;rt om fri venv&auml;g inte kan etableras.</p>\n<p class=\"indent\"><br>Medvetsl&ouml;shet, pga hypoglykemi, kan ocks&aring; ses vid behandling med perorala antidiabetika, framf&ouml;r allt sulfonureider. Den kan vara l&aring;ngvarig, varf&ouml;r patienten fortsatt b&ouml;r observeras med <span>P-glukos</span>kontroller. Om patienten inte kan &auml;ta vanlig kost p&aring;b&ouml;rjas infusion av 5&ndash;10-procentig (50&ndash;100 mg/ml) glukosl&ouml;sning.</p>\n<p class=\"indent\"><br>Symtomgivande hypoglykemi, p&aring; grund av t&ouml;mda glykogendep&aring;er, ses hos nedg&aring;ngna alkoholister. Eftersom glukos intraven&ouml;st mycket snabbt kan ge upphov till en relativ tiaminbrist med <a class=\"index\" id=\"1053200\" data-text=\"Wernicke-Korsakoffs syndrom\"></a>Wernickes encefalopati ska alkoholister innan glukos alltid ges <a class=\"index\" id=\"1053201\" data-text=\"tiamin:hypoglykemi;vitamin B&lt;Neds&#xE4;nkt&gt;1&lt;Default Para Font&gt;:akutmedicin\"></a>tiamin 100&ndash;200 mg, till exempel 2&ndash;4 ml av licenspreparatet Vitamin B<sub>1</sub>-Ratiopharm injektionsv&auml;tska 50&nbsp;mg/ml l&aring;ngsamt intramuskul&auml;rt eller intraven&ouml;st. Se vidare i kapitlet Alkohol &ndash; riskbruk, skadligt bruk&nbsp;och beroende, avsnittet <a href=\"{pre}/kapitel/beroendetillstand/alkohol-riskbruk_skadligt_bruk_och_beroende.html#n--Tiamin\">Tiamin</a>.</p>\n<h2 id=\"a1_23\">Annan <a class=\"index\" id=\"1016896\" data-text=\"medvetsl&#xF6;shet:vuxna\"></a>akut medvetsl&ouml;shet</h2>\n<p>D&aring; livshotande andnings- och cirkulationsstillest&aring;nd samt hypoglykemi &aring;tg&auml;rdats hos en akut medvetsl&ouml;s patient blir huvudproblemet att, med tillg&auml;nglig information fr&aring;n anamnes och status, v&auml;lja diagnostisk strategi. Samtidigt ska man se till att patienten f&aring;r fortsatt adekvat &ouml;vervakning av vitala funktioner.</p>\n<p class=\"indent\"><br>&Auml;ven om anamnesen ofta f&aring;r inskr&auml;nkas till den information som ambulanspersonalen eller andra vittnen kan ge om fyndplats, tablettburkar, tidpunkt f&ouml;r intag, avskedsbrev etc, s&aring; blir denna ofta av avg&ouml;rande betydelse. En s&aring;dan anamnes, tillsammans med en f&ouml;rsta unders&ouml;kning, kan inom minuter ge tillr&auml;cklig information f&ouml;r att styra den fortsatta handl&auml;ggningen, se Figur 3.</p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "504233c7-ba84-46f2-90a4-742239ceb5b3",
+			"name": "504233c7-ba84-46f2-90a4-742239ceb5b3",
+			"type": "figure",
+			"content": {
+				"number": "3",
+				"maxwidth": "",
+				"image": "/images/a1_aku_akutmedv_2013fm10_images/figur3.png",
+				"title": "",
+				"text": "<a class=\"crossref\" id=\"52419\"></a>Flödesschema – den akut medvetslöse patienten",
+				"alt": "",
+				"id": "a1_24"
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4fbc41b2-0efe-45e5-ac0d-d0bbecd32a1a",
+			"name": "4fbc41b2-0efe-45e5-ac0d-d0bbecd32a1a",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "<span style=\"font-weight: bold;\"><a class=\"crossref\" id=\"67994\"></a>Medvetslöshet hos <a class=\"index\" id=\"1047763\" data-text=\"barn:medvetsl&#xF6;shet\"></a>barn</span>",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<h5 id=\"a1_27\"><span class=\"tab\"></span>Strukturell skada</h5>\r\n<p>t&nbsp;ex trauma med hj&auml;rnkontusion och bl&ouml;dning</p>\r\n<h5 id=\"a1_28\"><span class=\"tab\"></span>Metabolisk encefalopati</h5>\r\n<p>hypoxi (fr&auml;mmande kropp, astma), endogena och exogena intoxikationer, hypo- eller hyperglykemi, dehydrering, infektioner (meningit, encefalit)</p>\r\n<h5 id=\"a1_29\"><span class=\"tab\"></span><a class=\"index\" id=\"1020533\" data-text=\"kramper:barn;feberkramper:medvetsl&#xF6;shet\"></a>Kramptillst&aring;nd</h5>\r\n<p>status epilepticus och postiktalt, feberkramper</p>\r\n<h5 id=\"a1_30\"><span class=\"tab\"></span>Annat</h5>\r\n<p>anafylaktisk chock (t&nbsp;ex l&auml;kemedel, f&ouml;da, geting&shy;stick, ormbett), elektricitetsolycka, arytmi och psyko&shy;gena tillst&aring;nd (hyperventilationssyndrom)</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "a1_26"
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e7a38b4c-afa9-4608-87a4-a60056375627",
+			"name": "e7a38b4c-afa9-4608-87a4-a60056375627",
+			"type": "text",
+			"content": "<p><span> </span>Unders&ouml;kningen b&ouml;r omfatta temperaturtagning, en yttre bed&ouml;mning avseende kl&auml;dsel, identitetsbricka, tecken p&aring; septiska embolier, trauma (exempelvis bl&ouml;dning i &ouml;rat, periorbitala ekymoser), stickm&auml;rken (som vid heroinberoende&nbsp;eller <a class=\"index\" id=\"1021279\" data-text=\"diabetes:medvetsl&#xF6;shet\"></a>diabetes mellitus), eventuell alkohol- eller acetonlukt (diabetes), nackstelhet, pupillf&ouml;r&auml;ndringar, fokal neurologi (exempelvis hemiplegi eller andra tecken p&aring; stroke) samt tungbett (epilepsi).</p>\n<p class=\"indent\"><br>Medvetsl&ouml;shet hos barn, se Faktaruta 1.<a href=\"#67994\" class=\"btn btn-primary btn-mini pageLink\"></a></p>\n<p><span> </span></p>\n<h3 id=\"a1_31\"><a class=\"crossref\" id=\"73353\"></a>Akuta f&ouml;rgiftningar</h3>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1ee4b77a-fefe-42f2-87b8-eb8f85da1658",
+			"name": "1ee4b77a-fefe-42f2-87b8-eb8f85da1658",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><span style=\"font-weight: bold;\"></span><a class=\"crossref\" id=\"84258\"></a><span class=\"tab\"></span><span style=\"font-weight: bold;\">Observera!</span> Kompletterande uppgifter <br>om f&ouml;rgiftningar kan erh&aring;llas fr&aring;n <br>Giftinformationscentralen</p>\r\n<p>tfn 08-736 03 84 eller<br>tfn 08-517 747 42 <br>(observera, endast f&ouml;r sjukv&aring;rden!)</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0e71d766-dc7f-45fc-ab87-154537fa3a07",
+			"name": "0e71d766-dc7f-45fc-ab87-154537fa3a07",
+			"type": "text",
+			"content": "<p><a class=\"index\" id=\"1016902\" data-text=\"f&#xF6;rgiftningar:akutmedicin\"></a>Akuta f&ouml;rgiftningar kan vara betingade av l&auml;kemedel, <a class=\"index\" id=\"1021280\" data-text=\"alkohol:f&#xF6;rgiftning\"></a>alkohol, <a class=\"index\" id=\"1021281\" data-text=\"narkotika:f&#xF6;rgiftning\"></a>narkotika samt en rad olika &auml;mnen som finns i v&aring;r omgivning (till exempel svampar) eller p&aring; arbetsplatser (cyanid och organiska fosforf&ouml;reningar).</p>\n<p class=\"indent\"><br>I vissa fall kan patientens symtom betingas av b&aring;de intoxikation och av annan skada. Ett exempel &auml;r brandr&ouml;k med risk f&ouml;r s&aring;v&auml;l kolmonoxid- och cyanidf&ouml;rgiftning som termisk skada i larynx och toxisk lungskada (saltsyra).</p>\n<p class=\"indent\"><br>Vid <a class=\"index\" id=\"1016905\" data-text=\"l&#xE4;kemedel:f&#xF6;rgiftning;f&#xF6;rgiftningar:l&#xE4;kemedel\"></a>l&auml;kemedelsf&ouml;rgiftning &auml;r uppgifter fr&aring;n vittnen eller medhavda tablettburkar det huvudsakliga underlaget f&ouml;r diagnosen. Se vidare &Ouml;verdoseringsinformation i <a href=\"http:// www.fass.se \" target=\"_blank\">FASS</a>.</p>\n<p class=\"indent\"><br>Icke-l&auml;kemedelsbetingade f&ouml;rgiftningar beskrivs i kapitlet Akuta f&ouml;rgiftningar<span>, initial bed&ouml;mning och behandling</span>, avsnittet <a href=\"{pre}/kapitel/akutmedicin/akuta_forgiftningar-initial_bedomning_och_behandling.html#Antidoter\">Antidoter</a>. Kompletterande uppgifter om l&auml;kemedelsf&ouml;rgiftningar och icke-l&auml;kemedelsbetingade f&ouml;rgiftningar kan erh&aring;llas fr&aring;n Giftinformationscentralen (tfn 08-736 03 84 eller 08-517 747 42. Observera att dessa nummer endast &auml;r avsedda f&ouml;r sjukv&aring;rdsinr&auml;ttningar).</p>\n<p class=\"indent\"><br>Vid oklara <a class=\"index\" id=\"1016908\" data-text=\"intoxikationer:akutmedicin\"></a>intoxikationer best&auml;ms paracetamol och salicylat i plasma/serum samt syrabasstatus (metanol- och etylenglykolf&ouml;rgiftning) d&aring; tidigt insatt behandling &auml;r avg&ouml;rande f&ouml;r prognosen. Om m&ouml;jligt b&ouml;r &auml;ven analyser av j&auml;rn, litium, teofyllin, digoxin, methemoglobin utf&ouml;ras akut d&aring; behandlingen i akutskedet kan p&aring;verkas av erh&aring;llna analyssvar. Extra prov tas f&ouml;r eventuella senare laboratorieanalyser av plasma/serum. Urin b&ouml;r ocks&aring; sparas. Finns provtagningsset f&ouml;r urinscreening att tillg&aring; kan viss v&auml;gledning erh&aring;llas.</p>\n<p class=\"indent\"><br>De flesta f&ouml;rgiftningar &auml;r perorala. I hemmet kan ett glas mj&ouml;lk eller vatten ges f&ouml;r att sp&auml;da ut intagen substans och minska risken f&ouml;r slemhinneskador samtidigt som manuell kr&auml;kningsprovokation underl&auml;ttas om snar ventrikelt&ouml;mning anses p&aring;kallad. Tillf&ouml;rsel av aktivt kol &auml;r rutin. Doseringen &auml;r 50 g kol initialt till vuxna och till barn ges minst 10 g men man b&ouml;r om m&ouml;jligt efterstr&auml;va att tillf&ouml;ra 25 g. Ventrikelt&ouml;mning (kr&auml;kningsprovokation och/eller ventrikelsk&ouml;ljning) &auml;r indicerad vid potentiellt allvarlig f&ouml;rgiftning d&auml;r enbart kol inte bed&ouml;ms vara tillr&auml;ckligt. Kr&auml;kningsprovokation efter intag av fr&auml;tande &auml;mnen, t&nbsp;ex syra, lut och maskindiskmedel, &auml;r kontraindicerad pga risk att f&ouml;rv&auml;rra fr&auml;tskadan p&aring; matstrupens slemhinna. Samma sak g&auml;ller vid intag av petroleumprodukter (risk f&ouml;r att ge/f&ouml;rv&auml;rra aspiration som kan leda till pneumonit).</p>\n<p class=\"indent\"><br>I kapitlet Akuta f&ouml;rgiftningar, initial bed&ouml;mning och behandling,&nbsp;avsnittet <a href=\"{pre}/kapitel/akutmedicin/akuta_forgiftningar-initial_bedomning_och_behandling.html#Antidoter\">Antidoter</a>, samt &Ouml;verdoseringsinformationen i <a href=\"http://www.fass.se\">FASS</a>, beskrivs ing&aring;ende initialt omh&auml;ndertagande vid olika typer av giftexponering.</p>\n<p class=\"indent\">&nbsp;<br>Antidoter kan vara aktuella s&aring;v&auml;l vid l&auml;kemedelsbetingade som icke l&auml;kemedelsbetingade f&ouml;rgiftningar. Uppgifter om antidoter vid olika f&ouml;rgiftningar ges i ovan angivna k&auml;llor samt, vid behov, av Giftinformationscentralen, f&ouml;r kontaktuppgifter se Faktaruta 2. Se vidare i Figur 4.</p>\n<p><span> </span></p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7362cbe1-b569-4967-916e-f78603f9f17a",
+			"name": "7362cbe1-b569-4967-916e-f78603f9f17a",
+			"type": "figure",
+			"content": {
+				"number": "4",
+				"maxwidth": "",
+				"image": "/images/a1_aku_akutmedv_2013fm10_images/figur4.png",
+				"title": "",
+				"text": "<a class=\"crossref\" id=\"72205\"></a>Flödesschema – akuta <a class=\"index\" id=\"1029892\" data-text=\"naloxon:akutmedicin;flumazenil:akutmedicin\"></a>förgiftningar ",
+				"alt": "",
+				"id": "a1_33"
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "26cdbca7-8bfe-4a7a-bc7e-c4add526576f",
+			"name": "26cdbca7-8bfe-4a7a-bc7e-c4add526576f",
+			"type": "text",
+			"content": "<p><span> </span>Vid de flesta f&ouml;rgiftningar saknas specifika antidoter, varf&ouml;r behandlingen f&aring;r inriktas p&aring; att st&ouml;dja respiration, cirkulation och andra vitala funktioner tills giftet eliminerats.</p>\n<h3 id=\"a1_34\"><a class=\"index\" id=\"1016916\" data-text=\"metabolisk encefalopati;encefalopati:metabolisk\"></a>Metabolisk endogen encefalopati</h3>\n<p>I motsats till medvetandef&ouml;rlust, orsakad av hypoxi och hypoglykemi, intr&auml;der medvetanderubbning vid endogena metaboliska rubbningar, som t&nbsp;ex diabeteskoma, hyperkalcemi, uremi och leversvikt, mera gradvis. Se &auml;ven kapitlet Diabetes mellitus, avsnittet <a href=\"{pre}/kapitel/endokrinologi/diabetes_mellitus.html#k1_60\">Hypoglykemi</a>, kapitlet Rubbningar i <span>kalciumoms&auml;ttningen</span>, avsnittet <a href=\"{pre}/kapitel/endokrinologi/rubbningar_i_kalciumomsattningen.html#k2b_19\">Hyperkalcemi</a>, och kapitlet Leversjukdomar, avsnittet <a href=\"{pre}/kapitel/mage-tarm/leversjukdomar.html#b2_78\">Hepatorenalt syndrom</a>. M&aring;nga g&aring;nger &auml;r individen, p&aring; grund av sin grundsjukdom, k&auml;nd inom sjukv&aring;rden och ofta &auml;r d&auml;rf&ouml;r diagnosen inte sv&aring;r att st&auml;lla. Detsamma g&auml;ller patienter med lunginsufficiens och hypoxi/kolsyreretention.</p>\n<p class=\"indent\"><br>I vissa fall kan emellertid det komat&ouml;sa tillst&aring;ndet vara patientens f&ouml;rsta kontakt med sjukv&aring;rden, t&nbsp;ex vid hyperkalcemiskt betingad medvetsl&ouml;shet. Detta tillst&aring;nd ska alltid h&aring;llas i minnet som differentialdiagnostisk m&ouml;jlighet hos patienter som f&ouml;reter en bild som passar med diffus metabolisk eller toxisk cerebral p&aring;verkan, dvs saknar fokala symtom i anamnes eller status. I&nbsp;denna grupp ing&aring;r ocks&aring; <a class=\"index\" id=\"1034643\" data-text=\"subaraknoidalbl&#xF6;dning:akutmedicin\"></a>subaraknoidalbl&ouml;dning, <a class=\"index\" id=\"1034644\" data-text=\"encefalit:akut\"></a>encefalit och <a class=\"index\" id=\"1034645\" data-text=\"bakteriell meningit;meningit:akutmedicin\"></a>bakteriell meningit utan fokal skada. Postiktal koma efter epileptiskt anfall kan i vissa fall vara i&nbsp;timmar. Vid status epilepticus b&ouml;r man snarast f&ouml;rs&ouml;ka avbryta kramperna med i f&ouml;rsta hand <a class=\"index\" id=\"1034646\" data-text=\"diazepam:kramper\"></a>diazepam, se kapitlet Epilepsi, avsnittet <a href=\"{pre}/kapitel/neurologi/epilepsi.html#r4_22\">Akutbehandling av tonisk-kloniska anfall och status epilepticus</a>.</p>\n<p class=\"indent\"><br>Anamnes och status f&aring;r efter behov kompletteras med laboratorieunders&ouml;kning av blod (till exempel B-Hb, B-LPK, B-TPK, <span>elektrolyter</span>, syrabasstatus, P/S-kreatinin), urin (ketoner) och likvor. Likvorunders&ouml;kning &auml;r framf&ouml;r allt indicerad f&ouml;r att utesluta en purulent meningit. F&ouml;r diagnostik av subaraknoidalbl&ouml;dning ska i f&ouml;rsta hand DT anv&auml;ndas, varefter LP g&ouml;rs om rimlig klinisk misstanke inte verifierats med DT.</p>\n<h3 id=\"a1_35\"><a class=\"index\" id=\"1052893\" data-text=\"medvetsl&#xF6;shet:strukturell skada\"></a>Medvetsl&ouml;shet p&aring; grund av strukturell skada</h3>\n<p>Trauma b&ouml;r alltid uteslutas hos en patient som kommer in medvetsl&ouml;s utan klar genes. Information fr&aring;n ambulanspersonal och andra vittnen kan ge misstanke om ett s&aring;dant.</p>\n<p class=\"indent\"><br>Tecken p&aring; <a class=\"index\" id=\"1034400\" data-text=\"trauma\"></a>trauma &ndash; hematom, periorbitala ekymoser, bl&ouml;dning i eller kring &ouml;ronen &ndash; kan st&auml;rka misstanken, vilken dessutom kan verifieras med r&ouml;ntgen, till exempel DT-skalle.</p>\n<p class=\"indent\"><br>Medvetsl&ouml;shet kan ocks&aring; intr&auml;da pga strukturella icke-traumatiska skador. F&ouml;r att en strukturell skada ska kunna ge medvetsl&ouml;shet ska den antingen sl&aring; ut formatio reticularis i hj&auml;rnstammen eller b&aring;da hj&auml;rnhemisf&auml;rerna. En supratentoriell lokal expansiv process &ndash; till exempel hematom, abscess, stor infarkt, tum&ouml;r &ndash; kan emellertid ge medvetsl&ouml;shet genom sekund&auml;r hj&auml;rnstamsp&aring;verkan. Anamnes och neurologisk unders&ouml;kning (fokala fynd) inklusive &ouml;gonbottenunders&ouml;kning, kan leda till misst&auml;nkt diagnos som vid behov kan verifieras med till exempel DT.</p>\n<h2 id=\"a1_36\"><a class=\"index\" id=\"1047768\" data-text=\"HLR:barn\"></a><a class=\"crossref\" id=\"43915\"></a>Hj&auml;rt-lungr&auml;ddning (HLR) och unders&ouml;kning enligt ABC(DE) &ndash; barn</h2>\n<p>F&ouml;r A-HLR barn se Figur 2. Efter&nbsp;puberteten till&auml;mpas samma behandlingsalgoritm som f&ouml;r vuxna.</p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1dd235d2-a468-47cd-9788-76170fed23cf",
+			"name": "1dd235d2-a468-47cd-9788-76170fed23cf",
+			"type": "figure",
+			"content": {
+				"number": "2",
+				"maxwidth": "",
+				"image": "/images/a1_aku_akutmedv_2013fm10_images/figur2.png",
+				"title": "",
+				"text": "<a class=\"crossref\" id=\"60887\"></a>Flödesschema – <a class=\"index\" id=\"1044887\" data-text=\"HLR:barn;barn:HLR\"></a>Avancerad hjärt-lungräddning barn enligt riktlinjer 2011. Efter förlaga från Svenska rådet för hjärt-lungräddning. Publicerad med tillstånd från Stiftelsen för HLR. ",
+				"alt": "",
+				"id": "a1_37"
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ba2033d6-4272-48f7-b9ba-e89abe24980c",
+			"name": "ba2033d6-4272-48f7-b9ba-e89abe24980c",
+			"type": "text",
+			"content": "<span> </span><p class=\"indent\">Målgrupp för utbildning i avancerad HLR (A-HLR) till barn är i första hand de sjuksköterskor och läkare som arbetar med barn (= specialfall). </p><h3 id=\"a1_38\">Initial bedömning</h3><p>Ropa på barnet och nyp eller skaka det försiktigt i axlarna. Ingen reaktion = kritiskt tillstånd.</p><h3 id=\"a1_39\">Airway (A)</h3><p>Kontrollera om barnet andas genom att öppna luftvägen, se nedan.</p><h4 id=\"a1_40\"><em>Barn 0–1 år</em></h4><ul><li>Placera ena handen på barnets huvud och håll huvudet neutralställt/mycket lätt bakåtböjt. För kraftig bakåtböjning blockerar lätt luftvägen.</li><li>Gör haklyft med andra handens pek- och/eller långfinger. Placera fingrarna på det hårda underkäksbenet, tryck absolut inte på mjukdelarna under barnets underkäke. Situationen kan underlättas av en lätt hoprullad handduk placerad under barnets axelparti.</li></ul><h4 id=\"a1_41\"><em>Hos barn 1 år till puberteten </em></h4><ul><li>Placera ena handen på barnets panna och böj huvudet tydligt bakåt så att luftvägen öppnas.</li><li>Gör ett haklyft med andra handens pek- och långfinger.</li></ul><h3 id=\"a1_42\"><a class=\"index\" id=\"1047773\" data-text=\"luftv&#xE4;gsstopp:barn;barn:luftv&#xE4;gsstopp\"></a>Luftvägsstopp (främmande kropp)</h3><p>Om barnet hostar, uppmuntra till fortsatt hosta. Vid försämrad hostkraft men fortfarande vid medvetande använd omväxlande ryggdunk och bröst- eller buktryck enligt nedan.</p><h4 id=\"a1_43\"><em>Barn &lt;&nbsp;1 år</em></h4><ul><li>Lägg barnet på mage längs din ena arm så att huvudet hamnar lägre än kroppen och ge fem snärtiga slag med handflatan mellan skulderbladen. Vänd barnet till ryggläge på din arm och tryck fem gånger med två fingrar på bröstbenets nedre del, undvik att trycka på buken. Om ingen främmande kropp ses, upprepa. Blir barnet medvetslöst, gå över till HLR. </li></ul><h4 id=\"a1_44\"><em>Barn &gt;&nbsp;1 år</em></h4><ul><li>Luta barnet framåt över din arm (eller knä om större barn) och ge fem snärtiga slag med handflatan mellan skulderbladen. Placera därefter knytnäven mellan bröstbenets spets och naveln och ge fem snabba inåt-uppåtriktade kompressioner. Upprepa vid behov. På stora barn är även Heimlichs manöver användbar. Blir barnet medvetslöst, gå över till HLR. </li></ul><h3 id=\"a1_45\">Breathing (B)</h3><p>Håll kvar greppet om hakspetsen för öppen luftväg. Se, lyssna och känn efter tecken på luftpassage. Om inga tecken på luftpassage kan noteras, gör nytt haklyft för att försöka öppna luftvägen. Om barnet andas då luftvägarna öppnats lägg det i stabilt sidoläge. Om det efter 10 sekunder fortfarande inte märks några tecken till normal andning gör inblåsningar enligt nedan.</p><p class=\"indent\">Observera! Andningskontrollen får ta max 10 sekunder. Vid risk för nackskada (trauma) försök hålla nacken så stilla som möjligt.</p><h3 id=\"a1_46\">Inblåsning</h3><ul><li>Kontrollera snabbt munhålan. Avlägsna slem, blod och främmande föremål.</li><li>Ge 5 långsamma inblåsningar, ungefär 1–1,5 sekund/inblåsning.</li><li>Hos barn 0–1 år placeras munnen, andningsmasken eller masken till andningsballongen över barnets mun och näsa. Tillför om möjligt oxygen, helst 100&#37;.</li><li>Hos barn &gt;&nbsp;1 år kan munnen placeras över barnets mun och näsborrarna klämmas ihop med fingertopparna. Används mask i någon form placeras denna över mun och näsa. Tillför om möjligt oxygen, helst 100&#37;.</li><li>Höjs bröstkorgen? Om inte, kontrollera den fria luftvägen och/eller överväg främmande kropp.</li></ul><h3 id=\"a1_47\">Circulation (C)</h3><p>Cirkulationskontroll utförs under maximalt 10 sekunder efter de 5 inledande inblåsningarna. Enbart pulskontroll är svårt/osäkert. Utebliven reaktion på inblåsningar, gråblek hudfärg och slapphet utgör tecken på avsaknad av cirkulation och då ska bröstkompressioner påbörjas omedelbart.</p><h3 id=\"a1_48\"><a class=\"index\" id=\"1047788\" data-text=\"br&#xF6;stkompressioner:barn, HLR;barn:br&#xF6;stkompressioner\"></a>Bröstkompressioner</h3><ul><li>Hårt underlag eftersträvas.</li><li>Kompressionspunkten på alla barn är den nedre delen av bröstbenet. Undvik bröstkorgsspetsen.</li><li>Kompressionsdjup är 4 cm för barn &lt;&nbsp;1&nbsp;år och 5 cm för äldre barn.</li><li>Barn &lt;&nbsp;1 år komprimeras med pek- och långfinger. Är man två livräddare är det effektivare att omfamna bröstkorgen med båda händerna med tummarna placerade bredvid varandra på bröstbenet, riktade mot barnets huvud, och övriga fingrar bak mot ryggraden.</li><li>Barn &gt;&nbsp;1 år komprimeras med ena handens handlove.</li><li>Normal takt är 100–120 kompressioner per minut. </li><li>Släpp upp mellan varje kompression med bibehållen hudkontakt.</li><li>Samordna (ointuberat barn) kompressioner och inblåsningar enligt 15:2, dvs 15&nbsp;kompressioner och 2 inblåsningar.</li><li>Gör inte avbrott för pulskontroll.</li><li>Avbyte om möjligt efter 2 minuter.</li></ul><h3 id=\"a1_49\">Övervakning</h3><ul><li>Saturationsmätare för A (airway) och B (breathing), stort inslag av osäkra värden.</li><li>EKG, antingen övervakningsutrustning eller defibrillator för C (circulation). Analysera rytmen.</li><li>Kontrollera pulsen.</li></ul><p>Hjärtstopp hos barn uppkommer i flertalet fall som en följd av otillräcklig ventilation/syresättning som leder till hypoxi/acidos. Man ser en tilltagande bradykardi som leder till asystoli. Kammarflimmer är ovanligt men kan förekomma i samband med hypotermi, intoxikationer och vid hjärtsjukdom. Det är angeläget att vid bedömning av cirkulationen tidigt utvärdera hjärtrytmen och bedöma om denna är defibrilleringsbar eller inte.</p><h3 id=\"a1_50\">Ej defibrillerbar rytm</h3><ul><li>Bradykardi (&lt;&nbsp;60 slag/minut).</li><li>Snabbt sjunkande puls.</li><li>Asystoli.</li><li>Pulslös elektrisk aktivitet kan betingas av omfattande myokardiell ischemi. Likartad klinisk bild kan ses vid massiv lungemboli, hjärttamponad, övertryckspneumotorax, uttalad hypovolemi/blödning, elektrolytrubbning, intoxikation och hypotermi.</li></ul><h3 id=\"a1_51\">Defibrillerbar rytm</h3><ul><li>Pulslös ventrikeltakykardi (VT).</li><li>Ventrikelflimmer (VF).</li></ul><h3 id=\"a1_52\">D<a class=\"index\" id=\"1047793\" data-text=\"defibrillering:barn;barn:defibrillering\"></a>efibrillering</h3><p>Klisterelektroder rekommenderas – för barn &lt;&nbsp;1 år en på ryggen och en på bröstet och för barn &gt;&nbsp;1 år en till höger om bröstbenet nedanför nyckelbenet och en ner till vänster på bröstkorgen under armhålan. För barn gäller alltid 4&nbsp;J/kg kroppsvikt vid defibrillering av VF/pulslös VT. Det är utan betydelse om monofasisk eller bifasisk teknik används. Användning av halvautomatisk defibrillator tillråds för närvarande inte pga ringa erfarenhet. Om ingen annan utrustning finns tillgänglig används vad som finns. Vuxenplattor kan användas utan problem till barn &gt;&nbsp;8 år och till mindre barn endast om barnplattor saknas.</p><h3 id=\"a1_53\">Uppföljande vård</h3><p>Individer som genomgått hjärt-lungräddning behöver uppföljande vård på intensivvårdsavdelning eller motsvarande. Hypotermibehandling kan övervägas.</p><h3 id=\"a1_54\"><a class=\"index\" id=\"1047798\" data-text=\"hypoglykemi:medvetsl&#xF6;shet\"></a><a class=\"crossref\" id=\"69736\"></a>Hypoglykemi</h3><p>Hypoglykemi kan enkelt fastställas med snabbmetod och behandlas med glukos intravenöst. För att om möjligt reducera risken för tromboflebit används (om tillgängligt) 10&#37; (100 mg/ml) glukoslösning, 3 ml/kg kroppsvikt (max 300&nbsp;ml) intravenöst under 5–10 minuter. I annat fall ges 30&#37; (300 mg/ml) glukoslösning 1–2 ml/kg kroppsvikt (max 75 ml) intravenöst under 5–10 minuter. Vid problem med intravenös glukostillförsel finns alternativet med glukagon intramuskulärt (subkutant). Dosen som ges är 0,25 mg till barn &lt;&nbsp;5 år, 0,5 mg till barn 5–10 år och 1,0 mg till barn &gt;&nbsp;10 år.</p><p class=\"indent\">Saknas möjlighet att fastställa <span>P-glukos</span> ges till medvetslöst insulinbehandlat barn glukos eller glukagon enligt ovan.</p><h3 id=\"a1_55\">Akuta förgiftningar</h3><p>Akuta förgiftningar hos barn handläggs enligt samma principer som hos vuxna (se  <a href=\"#73353\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>).</p><h3 id=\"a1_56\">K<a class=\"index\" id=\"1048450\" data-text=\"k&#xE4;rling&#xE5;ng:barn, medvetsl&#xF6;shet;barn:k&#xE4;rling&#xE5;ng\"></a>ärlingång</h3><ul><li>Perifer venkateter (PVK) i armveck, hand-/fotrygg eller insidan av fotlederna (vena saphena magna). Hos spädbarn även insidan av handleden eller i skalpen.</li><li>I<a class=\"index\" id=\"1047821\" data-text=\"intraoss&#xF6;s teknik:barn\"></a>ntraossös nål med någon av de kommersiellt tillgängliga utrustningarna. Tibia strax nedom tuberositas tibiae eller, framför allt hos lite större barn, nedre tibia strax ovan mediala malleolen (akta vena saphena magna) eller laterala femurkondylen. Viktigt att direkt efter sättandet flusha igenom med 5–10&nbsp;ml NaCl 9 mg/ml, vidare att flusha med minst 5 ml NaCl 9 mg/ml mellan olika läkemedel för att undvika utfällning. Alla akutläkemedel, kristalloida och kolloida lösningar kan tillföras. Blod kan ges på vitalindikation i avvaktan på att fri venväg etablerats. Volymtillförsel kräver regelmässigt övertryck. Intraossös nål bör sitta &lt;&nbsp;24&nbsp;timmar.</li></ul><h3 id=\"a1_57\">Läkemedel – barn</h3><p>Se flödesschema i A-HLR BARN – Avancerad hjärt-lungräddning <a href=\"#60887\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.</p><h2 class=\"referenceHeader\" id=\"a1_58\">Referenser</h2>För vidare läsning",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e3ff96b8-aa5e-4474-a0a4-3bd2eb819861",
+			"name": "e3ff96b8-aa5e-4474-a0a4-3bd2eb819861",
+			"type": "references",
+			"content": "<ol class=\"references\"><li id=\"reference_1\">Advanced paediatric life support: The practical approach. 5th Edition. 2011. ISBN&nbsp;9781444330595.</li>\n<li id=\"reference_2\">Se även kapitlet Chock <a href=\"a2_aku_chock_2013fm10.html#41565\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a><span class=\"blue\">16</span>, kapitlet Anafylaxi,  <a href=\"a3_aku_anafylaxi_2013fm10.html#76028\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a><span class=\"blue\">20</span><span class=\"updated\" title=\"Texten &#xE4;r uppdaterad\"></span>, kapitlet Akutmedicin på vårdcentral <a href=\"a4_aku_akutmedvc_2013fm10.html#32247\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a><span class=\"blue\">27</span><span class=\"updated\" title=\"Texten &#xE4;r uppdaterad\"></span>, samt kapitlet Akuta svåra infektioner <a href=\"a5_aku_akutinfekt_2013fm10.html#70906\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a><span class=\"blue\">47</span>.</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2546cce7-5db4-4611-9fee-51fde2e8ef82",
+			"name": "2546cce7-5db4-4611-9fee-51fde2e8ef82",
+			"type": "text",
+			"content": "<span class=\"updated\" title=\"Texten &#xE4;r uppdaterad\"></span>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/akutmedicin/den_akut_medvetslose_patienten.json",
+	"modified": "2018-03-25 17:27",
+	"isPublished": true,
+	"indexed": "true"
+}

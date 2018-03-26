@@ -1,0 +1,378 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Osteoporos och frakturprevention | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-09 00:58",
+	"published": "2015-07-09 00:58",
+	"validUntil": "",
+	"createdBy": "Östen Ljunggren, Helena Salminen, Ove Tørring",
+	"replacesUrl": "/k2a_end_osteofraktur_2013fm10.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "b7e8283f-b8b5-4068-ae41-d2b7dc19a1a2",
+			"name": "b7e8283f-b8b5-4068-ae41-d2b7dc19a1a2",
+			"type": "author",
+			"content": {
+				"firstname": "Östen",
+				"surname": "Ljunggren",
+				"description": "Institutionen för medicinska vetenskaper, Akademiska Sjukhuset, Uppsala",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "13d37b4e-3ea4-4b02-a88a-df71fe7ac039",
+			"name": "13d37b4e-3ea4-4b02-a88a-df71fe7ac039",
+			"type": "author",
+			"content": {
+				"firstname": "Helena",
+				"surname": "Salminen",
+				"description": "Centrum för allmänmedicin, Institutionen för  neurobiologi, vårdvetenskap och samhälle, Karolinska Institutet, Stockholm",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "53e86d69-1e4c-4a0c-a956-dcce02265e00",
+			"name": "53e86d69-1e4c-4a0c-a956-dcce02265e00",
+			"type": "author",
+			"content": {
+				"firstname": "Ove",
+				"surname": "Tørring",
+				"description": "Institutionen för klinisk forskning och utveckling, Karolinska Institutet och Sektionen för endokrinologi, Södersjukhuset, Stockholm",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "417da08c-f3d2-414d-a7de-852acbb4ff98",
+			"name": "417da08c-f3d2-414d-a7de-852acbb4ff98",
+			"type": "text",
+			"content": "<h1 id=\"k2a_1\">Osteoporos och frakturprevention</h1>\n<h2 id=\"k2a_2\">Inledning</h2>\n<p class=\"ingress\">Frakturer och osteoporos har &ouml;kat kraftigt i Sverige under de senaste decennierna. Ungef&auml;r varannan kvinna och var 4:e man drabbas av fraktur under sin livstid. F&ouml;rebyggande insatser i form av livsstilsf&ouml;r&auml;ndringar, som ska b&ouml;rja redan i unga &aring;r, torde vara en viktig insats f&ouml;r att minska antalet frakturer. Ut&ouml;ver fallpreventiva insatser bland de &auml;ldre finns &auml;ven m&ouml;jlighet att med farmakologisk behandling minska risken f&ouml;r frakturer, fr&auml;mst i kotor och h&ouml;ft. Nya nationella riktlinjer f&ouml;r utredning och behandling av osteoporos har kommit ut fr&aring;n Socialstyrelsen.</p>\n<h2 id=\"k2a_3\">Osteoporos och frakturprevention</h2>\n<p>Osteoporosrelaterade <a class=\"index\" id=\"1058691\" data-text=\"fraktur\"></a>frakturer utg&ouml;r ett stort och &ouml;kande problem i takt med att befolkningen &aring;ldras. I Sverige intr&auml;ffar &aring;rligen ca 70&nbsp;000 frakturer efter fall i samma plan d&auml;r den avg&ouml;rande riskfaktorn, f&ouml;rutom fallben&auml;genhet, &auml;r l&aring;g benmassa. Av dessa &auml;r ca 17&nbsp;000 h&ouml;ftfrakturer och 10&nbsp;000 kliniska kotfrakturer. Frakturer &auml;r s&aring;ledes ett stort h&auml;lsoproblem som inte bara orsakar lidande och &ouml;kad mortalitet f&ouml;r den enskilde patienten utan ocks&aring; utg&ouml;r en avsev&auml;rd h&auml;lsoekonomisk belastning f&ouml;r samh&auml;llet. En h&ouml;ftfraktur kostar &gt;&nbsp;150&nbsp;000 kr under f&ouml;rsta &aring;ret. &Auml;ven kotfrakturer inneb&auml;r reducerad livskvalitet och &ouml;kad mortalitet. Idag f&ouml;religger en grav underbehandling av h&ouml;griskpatienter. Enligt de &ouml;ppna j&auml;mf&ouml;relserna f&aring;r endast 13&ndash;20% av postmenopausala frakturpatienter l&auml;kemedelsbehandling f&ouml;r att f&ouml;rebygga en ny fraktur.</p>\n<p class=\"indent\"><br>Osteoporos definieras som en mindre m&auml;ngd normalt sammansatt ben med minskad h&aring;llfasthet vilket leder till en &ouml;kad risk f&ouml;r frakturer (1). Osteoporos &auml;r s&aring;ledes en riskfaktor f&ouml;r fraktur snarare &auml;n en regelr&auml;tt sjukdom.</p>\n<p class=\"indent\"><br>Frakturrisken bed&ouml;ms utifr&aring;n en riskfaktorprofil baserad p&aring; kliniska riskfaktorer. Genom att inom riskgruppen ber&auml;kna patientens frakturrisk p&aring; 10&nbsp;&aring;rs sikt med FRAX (se nedan) och med ledning av denna eventuellt utf&ouml;ra bent&auml;thetsm&auml;tning f&ouml;rb&auml;ttras m&ouml;jligheten att m&aring;lrikta l&auml;kemedelsbehandlingen till osteoporospatienter och undvika on&ouml;dig behandling (2).</p>\n<h2 id=\"k2a_4\">Frakturer relaterade till osteoporos</h2>\n<p>Osteoporos utvecklas i tysthet. L&aring;g benmassa ger inga symtom f&ouml;re fraktur och oklara sm&auml;rttillst&aring;nd g&aring;r d&auml;rf&ouml;r inte att f&ouml;rklara utifr&aring;n generell osteoporos. Bland postmenopausala kvinnor medf&ouml;r en s&auml;nkning av bent&auml;theten med 10% (motsvarande 1 standardavvikelse; SD) ungef&auml;r en f&ouml;rdubbling av risken f&ouml;r fraktur hos patienter med osteoporos.</p>\n<p class=\"indent\"><br>I kliniken utg&ouml;r h&ouml;ftfrakturer samt multipla kompressioner de allvarligaste manifestationerna av osteoporos. &Ouml;vriga frakturtyper som vanligtvis anses f&ouml;rknippade med osteoporos &auml;r radius-, &ouml;verarms- och b&auml;ckenfrakturer (1).</p>\n<h3 id=\"k2a_5\">Kotkompressioner</h3>\n<p>Bensk&ouml;rhetsfraktur i kotkropparna &auml;r den mest osteoporosrelaterade kliniska manifestationen. Frakturtypen drabbar f&ouml;retr&auml;desvis postmenopausala kvinnor samt patienter med peroral kortisonbehandling. Frakturerna sitter oftast i mellersta och nedersta br&ouml;stryggen samt i l&auml;ndryggen.</p>\n<p class=\"indent\"><br>Den kliniska bilden &auml;r pl&ouml;tsligt p&aring;kommen sm&auml;rta lokaliserad i ryggen, utan fokal neurologi. Den akuta fraktursm&auml;rtan brukar klinga av inom ca tre m&aring;nader, men kan kvarst&aring; som ett mer kroniskt sm&auml;rttillst&aring;nd &ndash; troligtvis orsakat av muskuloskeletala p&aring;lagringar. Vid upprepade kotkompressioner, med efterf&ouml;ljande l&auml;ngdminskning och kyfos, kan tillst&aring;ndet medf&ouml;ra decennier av sv&aring;rt lidande.</p>\n<h3 id=\"k2a_6\">H&ouml;ftfrakturer</h3>\n<p>H&ouml;ftfrakturen &auml;r kliniskt sett den allvarligaste av bensk&ouml;rhetsfrakturerna. Den uppkommer som regel vid en fallolycka och oftast drabbas personer &gt;&nbsp;75 &aring;r med l&aring;g bent&auml;thet. Risken f&ouml;r h&ouml;ftfrakturer &ouml;kar p&aring;tagligt med stigande &aring;lder (medel&aring;ldern &auml;r 81 &aring;r f&ouml;r kvinnor). En h&ouml;ftfraktur kr&auml;ver operation och efterf&ouml;rloppet pr&auml;glas av l&aring;ngvarig rehabilitering och ofta kvarst&aring;ende funktionsneds&auml;ttning. Tjugo procent av patienterna avlider inom ett &aring;r efter h&ouml;ftfrakturen &ndash; inte s&auml;llan bidrar annan samtidig sjukdom. Det stora antalet h&ouml;ftfrakturer i samh&auml;llet, samt att de kr&auml;ver operation och rehabilitering, har medf&ouml;rt att huvuddelen av kostnaderna f&ouml;r osteoporos utg&ouml;rs av just denna frakturtyp.</p>\n<h3 id=\"k2a_7\">&Ouml;vriga perifera frakturer</h3>\n<p>N&auml;r det g&auml;ller &ouml;vriga frakturer, t&nbsp;ex radius-, humerus- och revbensfrakturer, &auml;r det osannolikt att dessa sjukdomstillst&aring;nd i sig motiverar l&aring;ngvarig l&auml;kemedelsbehandling. De b&ouml;r snarare ses som signaler p&aring; &ouml;kad frakturrisk i h&ouml;ft eller kota och som sk&auml;l till vidare diagnostik med bent&auml;thetsm&auml;tning och bed&ouml;mning av frakturrisk och behandlingsindikation. Det &auml;r dock troligt att l&auml;kemedelsbehandling i syfte att reducera risken f&ouml;r h&ouml;ft- och kotfraktur &auml;ven kommer att medf&ouml;ra reduktion av &ouml;vriga perifera frakturer, &auml;ven om dokumentationen &auml;r svagare.</p>\n<h2 id=\"k2a_8\">Definition av osteoporos</h2>\n<p>Begreppet osteoporos har tv&aring; definitioner. Den ena &auml;r en patologisk, morfologisk definition som s&auml;ger att &rdquo;osteoporos &auml;r ett tillst&aring;nd med en mindre m&auml;ngd normalt sammansatt ben med f&ouml;r&auml;ndrad mikroarkitektur, vilket leder till f&ouml;rs&auml;mrad h&aring;llfasthet och d&auml;rmed &ouml;kad risk f&ouml;r fraktur&rdquo;. Detta &auml;r en &ouml;vergripande definition som &auml;r sv&aring;r att anv&auml;nda i klinisk vardag. D&auml;rf&ouml;r finns det &auml;ven en definition f&ouml;r operationell diagnostik fr&aring;n 1994 som WHO har st&auml;llt sig bakom. Denna diagnostik &auml;r helt baserad p&aring; bent&auml;thetsm&auml;tningar och ber&auml;kningar av prospektiv frakturrisk utifr&aring;n dessa.</p>\n<p class=\"indent\"><br>Definitionen av osteoporos med hj&auml;lp av bent&auml;thetsm&auml;tning bygger p&aring; att BMD (bone mineral density)-v&auml;rdet relateras till genomsnittet av BMD hos en referenspopulation av unga kvinnor som antas ha uppn&aring;tt sitt livs bent&auml;thetsmaximum, &rdquo;peak bone mass&rdquo; (PBM) vid 25&ndash;30 &aring;rs &aring;lder. Det antal SD som patientens m&auml;tv&auml;rde avviker fr&aring;n PBM BMD kallas &rdquo;T-score&rdquo;. Om patientens BMD-v&auml;rde relateras till patientens egen &aring;ldersgrupp kallas v&auml;rdet f&ouml;r &rdquo;Z-score&rdquo; (1).</p>\n<p class=\"indent\"><br>Den operationella diagnostiken baseras p&aring; att patienten j&auml;mf&ouml;rs med en referenspopulation best&aring;ende av individer av samma k&ouml;n och etnicitet. V&auml;rdena anges i T-score. Utifr&aring;n detta koncept har WHO definierat tv&aring; gr&auml;nser:</p>\n<ul>\n<li>Osteopeni n&auml;r patienten ligger mellan 1 och 2,5 SD under medelv&auml;rdet f&ouml;r referensen.</li>\n<li>Osteoporos n&auml;r patienten ligger 2,5 SD eller mer under medelv&auml;rdet f&ouml;r referensen.</li>\n<li>Begreppet &rdquo;manifest osteoporos&rdquo; inneb&auml;r en bent&auml;thet under &minus;2,5 SD samt bensk&ouml;rhetsfraktur.</li>\n</ul>\n<p>Det &auml;r viktigt att sl&aring; fast att detta begrepp g&auml;ller m&auml;n &gt;&nbsp;50 &aring;r och postmenopausala kvinnor. F&ouml;r barn, premenopausala kvinnor samt f&ouml;r yngre m&auml;n saknas i nul&auml;get klara gr&auml;nser f&ouml;r osteoporosdiagnostik och bent&auml;thetsv&auml;rden anges i Z-score. I klinisk praxis till&auml;mpas samma BMD-gr&auml;nser hos m&auml;n som hos kvinnor. D&aring; en mycket stor del av osteoporosfrakturerna f&ouml;rekommer hos patienter med osteopeni &auml;r det n&ouml;dv&auml;ndigt att &auml;ven beakta andra riskfaktorer &auml;n BMD.</p>\n<h2 id=\"k2a_9\">Riskfaktorer f&ouml;r bensk&ouml;rhetsfraktur</h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3cc48905-e79a-4785-bdf4-1ab894c0c1a0",
+			"name": "3cc48905-e79a-4785-bdf4-1ab894c0c1a0",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"60772\"></a>Riskfaktorer i <a class=\"index\" id=\"1058780\" data-text=\"FRAX\"></a>FRAX (6)",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p>FRAX finns tillg&auml;ngligt via<br><a href=\"http://www.shef.ac.uk/FRAX/tool.aspx?country=5\" target=\"_blank\" class=\"linkOut\">www.shef.ac.uk/FRAX/</a></p>\r\n<p></p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>&Aring;lder</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>L&aring;g bent&auml;thet i l&aring;rbenshalsen</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Kvinnligt k&ouml;n</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Vikt</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>L&auml;ngd</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Tidigare fraktur i vuxen &aring;lder</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Hereditet: h&ouml;ftfraktur hos n&aring;gon av f&ouml;r&auml;ldrarna</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Aktuell r&ouml;kning</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>P&aring;g&aring;ende eller tidigare peroral kortisonbehand&shy;ling mer &auml;n tre m&aring;nader motsvarande &ge;&nbsp;5&nbsp;mg prednisolon/dag</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Diagnos av reumatoid artrit antingen fr&aring;n jour&shy;nal eller rapporterad av patienten</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Sekund&auml;r osteoporos (Typ 1-diabetes, osteoge&shy;nesis imperfecta hos vuxen, obehandlad l&aring;ngva&shy;rig tyreotoxikos, hypogonadism eller menopaus &lt;&nbsp;45 &aring;rs &aring;lder, kronisk malnutrition eller malab&shy;sorption, kronisk leversjukdom).</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Ett alkoholintag p&aring; mer &auml;n 2&ndash;3 enheter/dag motsvarande en daglig konsumtion av &ge;&nbsp;24&nbsp;gram alkohol</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": "k2a_11"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "72aaf803-ab32-42eb-bf57-3e99be54b0ee",
+			"name": "72aaf803-ab32-42eb-bf57-3e99be54b0ee",
+			"type": "text",
+			"content": "<p>Det finns ett mycket stort antal kliniska faktorer som medf&ouml;r &ouml;kad frakturrisk (3,4). Samband till ett flertal livsstilsfaktorer, n&auml;rings&auml;mnen, sjukdomstillst&aring;nd och &ouml;kad fallben&auml;genhet &auml;r v&auml;l dokumenterade. H&ouml;ftfrakturrisk &auml;r till stor del &aring;ldersberoende, med en dubblerad risk vart 5:e &aring;r fr&aring;n 70 till 90 &aring;rs &aring;lder. Kvinnor har ungef&auml;r dubbelt s&aring; h&ouml;g h&ouml;ftfrakturrisk som m&auml;n. Tidigare fragilitetsfraktur medf&ouml;r dubblerad risk f&ouml;r en ny fraktur, men efter kotfraktur &auml;r risken f&ouml;r upprepad kotfraktur h&ouml;gre (4-faldig). Minskad bent&auml;thet medf&ouml;r en drygt dubblerad frakturrisk f&ouml;r varje l&auml;gre SD.</p>\n<p class=\"indent\"><br>Frakturrisken &ouml;kar med antalet riskfaktorer och riskfaktorprofilen &auml;r av central betydelse vid frakturprevention och anv&auml;nds i den kliniska beslutsprocessen, se Faktaruta&nbsp;1. Genom att i en riskmodell kombinera utvalda kliniska riskfaktorer med bent&auml;thetsm&auml;tning optimeras frakturriskv&auml;rderingen liksom underlaget f&ouml;r farmakologisk behandling (4,5,6). En s&aring;dan riskmodell &auml;r det av WHO godk&auml;nda webbaserade verktyget FRAX (Fracture Risk Assessment Tool) (6).</p>\n<p class=\"indent\"><span> <br></span>Enligt Socialstyrelsens nya nationella riktlinjer f&ouml;r osteoporos b&ouml;r vid misst&auml;nkt osteoporos frakturrisken ber&auml;knas med FRAX (2). FRAX baseras p&aring; en global multicenterkohort fr&aring;n vilken data p&aring; upp till 12 kliniska riskfaktorer, se Faktaruta&nbsp;1, samt bent&auml;thetsm&auml;tning i h&ouml;ft ing&aring;r och den 10-&aring;riga absoluta frakturrisken f&ouml;r en patient kan d&auml;rigenom ber&auml;knas (6). FRAX tar dock inte h&auml;nsyn till vissa riskfaktorer som kan indikera &ouml;kad frakturrisk, t&nbsp;ex antal tidigare frakturer, typen av dessa (t&nbsp;ex kotkompression), fallrisk och doser vid behandling med kortison.</p>\n<h2 id=\"k2a_12\">Patogenes</h2>\n<p>Skelettet &auml;r en levande v&auml;vnad som hela tiden &auml;r under oms&auml;ttning och hela skelettet byts ut, remodelleras, under 10&ndash;15 &aring;rs tid. De cellul&auml;ra processer som reglerar balansen mellan benresorption och bennybildning f&ouml;rmedlas av osteoklaster, osteoblaster och osteocyter. Ben resorberas av osteoklaster och byggs kontinuerligt upp av osteoblaster.</p>\n<p class=\"indent\"><br>Osteoporos utvecklas n&auml;r benresorptionen under l&auml;ngre tid eller pga disponerande sjukdom eller l&auml;kemedelsbehandling &ouml;verstiger bennybildningen. Detta kan antingen orsakas av en &ouml;kning av benresorptionen, minskning av benformationen eller en kombination av dessa s&aring; att resultatet blir f&ouml;rlust av benmassa. Med tiden minskar s&aring;ledes trabeklernas tjocklek och antal, och perforationer av f&ouml;rtunnade trabekler medf&ouml;r drastiskt f&ouml;rs&auml;mrad h&aring;llfasthet i skelettet som f&ouml;ljd. Den &aring;ldersrelaterade minskningen i bent&auml;thet omfattar b&aring;de kortikalt och trabekul&auml;rt ben men &auml;r mest uttalad i trabekul&auml;rt ben hos kvinnor de n&auml;rmsta &aring;ren efter menopaus.</p>\n<p class=\"indent\"><br>Remodelleringsprocessen regleras av ett stort antal <span>hormoner</span> och cytokiner som styr rekrytering och aktivering av osteoklaster, och som avg&ouml;r storleken av den osteoblastiska benbildningen. Hypogonadism och hyperparatyreoidism leder till &ouml;kad resorption medan kortisonbehandling och allm&auml;nt &aring;ldrande fr&auml;mst leder till minskad benformation. Kortisonbehandling medf&ouml;r &auml;ven &ouml;kad benresorption samt nedsatt absorption av kalcium och vitamin D.</p>\n<p class=\"indent\"><br>L&auml;kemedel som syftar till att motverka osteoporosutveckling, alternativt &aring;terskapa ben, ut&ouml;var alla sina effekter via p&aring;verkan p&aring; remodelleringsprocessen, antingen som h&auml;mmare av resorptionen eller stimulerare av benformationen. H&auml;mning av osteoklastaktiviteten med t&nbsp;ex antiresorptiva l&auml;kemedel medf&ouml;r att bennedbrytningen minskar kraftigt.</p>\n<h2 id=\"k2a_13\">Utredning av osteoporos</h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "265ffe27-75eb-499e-8d98-eda83b2bddd5",
+			"name": "265ffe27-75eb-499e-8d98-eda83b2bddd5",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"crossref\" id=\"25078\"></a>Bedömning av frakturrisk vid misstanke om <a class=\"index\" id=\"1058790\" data-text=\"osteoporos:frakturrisk\"></a>osteoporos hos  personer över 40 år (2)",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Frakturrisken b&ouml;r ber&auml;knas med FRAX f&ouml;r att ta st&auml;llning till om en bent&auml;thetsm&auml;tning b&ouml;r utf&ouml;ras.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Om risken f&ouml;r fraktur p&aring; 10 &aring;rs sikt utan bent&auml;t&shy;hetsm&auml;tning &ouml;verstiger 15% enligt FRAX rekom&shy;menderas att bent&auml;thetsm&auml;tning av h&ouml;ft och l&auml;ndrygg med DXA (dual energy X-ray absorptiometry) utf&ouml;rs.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Om bent&auml;thetsm&auml;tningen visar T-score &le;&nbsp;&minus;2 b&ouml;r man utf&ouml;ra en ny FRAX-ber&auml;kning f&ouml;r att avg&ouml;ra behovet av frakturf&ouml;rebyggande behandling.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Om risken f&ouml;r en fraktur p&aring; 10 &aring;rs sikt utan ben&shy;t&auml;thetsm&auml;tning &auml;r l&auml;gre &auml;n 15% enligt FRAX kan bent&auml;thetsm&auml;tning av h&ouml;ft och l&auml;ndrygg med DXA utf&ouml;ras i undantagsfall, t&nbsp;ex vid ins&auml;ttande av behandling med h&ouml;ga doser kortison.</li>\r\n</ul>\r\n<p>Observera att FRAX &auml;r ett hj&auml;lpmedel och kan inte ers&auml;tta en adekvat klinisk individuell riskbed&ouml;m&shy;ning. FRAX tar inte tillr&auml;cklig h&auml;nsyn till vissa fak&shy;torer som kan indikera &ouml;kad frakturrisk, t&nbsp;ex antal tidigare frakturer, typen av dessa (kotkompressio&shy;ner), fallrisk och dos vid behandling med kortison.</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "k2a_15"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "03e5d16d-4602-4f24-86d5-0ea0fe136f4c",
+			"name": "03e5d16d-4602-4f24-86d5-0ea0fe136f4c",
+			"type": "text",
+			"content": "<p>Utredningen syftar till att:</p>\n<ul class=\"ordered\">\n<li>Bed&ouml;ma huruvida problem hos en patient med tidigare fraktur &auml;r orsakade av osteoporos</li>\n<li>Utesluta sekund&auml;ra osteoporosformer</li>\n<li>Inom riskgrupper klarl&auml;gga frakturrisken med FRAX f&ouml;r att: <br>&ndash; bed&ouml;ma indikation f&ouml;r bent&auml;thetsm&auml;tning samt <br>&ndash; bed&ouml;ma indikation f&ouml;r l&auml;kemedelsbehandling (Faktaruta&nbsp;2).</li>\n</ul>\n<p><span> </span></p>\n<p>Till sin hj&auml;lp har klinikern, f&ouml;rutom anamnes och status, unders&ouml;kningar med bent&auml;thetsm&auml;tning, konventionell r&ouml;ntgen samt laboratorieprover<a href=\"http://www.socialstyrelsen.se/\" target=\"_blank\" class=\"linkOut\">. </a></p>\n<h3 id=\"k2a_16\">Bent&auml;thetsm&auml;tning</h3>\n<p>F&ouml;r att ta st&auml;llning till om bent&auml;thetsm&auml;tning ska utf&ouml;ras b&ouml;r frakturrisken ber&auml;knas enligt Socialstyrelsens nationella riktlinjer, se Faktaruta&nbsp;2 (2). D&auml;rigenom f&ouml;rb&auml;ttras beslutsunderlaget f&ouml;r l&auml;kemedelsbehandling och man undviker on&ouml;dig bent&auml;thetsm&auml;tning samt behandling av patienter med l&aring;g frakturrisk.</p>\n<p class=\"indent\"><br>Tekniken f&ouml;r bent&auml;thetsm&auml;tning baseras p&aring; l&aring;gdosr&ouml;ntgen med tv&aring; energiniv&aring;er (DXA-teknik). De relativa attenueringarna av dessa energiniv&aring;er, n&auml;r de passerar patienten, m&auml;ts. Utifr&aring;n detta kalkyleras t&auml;theten av skelettdelar i kroppen. Unders&ouml;kningen &auml;r sm&auml;rtfri och relativt snabb. Den kr&auml;ver egentligen bara att patienten kan ligga stilla p&aring; rygg i ca 15 minuter.</p>\n<p>Diagnostik av osteoporos utf&ouml;rs i l&auml;ndrygg (L1&ndash;L4) samt i h&ouml;ft d&auml;r man anv&auml;nder sig antingen av det s&nbsp;k femoral neck-v&auml;rdet eller v&auml;rdet fr&aring;n &rdquo;total h&ouml;ft&rdquo;. Samtliga dessa lokaler diagnostiseras utifr&aring;n T- eller Z-score-begreppet. L&auml;gst uppm&auml;tt v&auml;rde anger diagnos och frakturprediktion. B&auml;sta prediktionen f&ouml;r framtida h&ouml;ftfraktur erh&aring;lls fr&aring;n bent&auml;thet i h&ouml;ft. Bent&auml;thet i l&auml;ndrygg &auml;r oftast b&auml;st p&aring; att prediktera kotfraktur, men befintliga kotkompressioner eller degenerativa f&ouml;r&auml;ndringar (vanligt hos &auml;ldre) kan ge falskt h&ouml;ga v&auml;rden. D&auml;remot kan man inte f&aring; falskt l&aring;ga v&auml;rden. Hos &auml;ldre patienter och i FRAX anv&auml;nds d&auml;rf&ouml;r femoral neck-v&auml;rdet.</p>\n<p class=\"indent\"><br>Alla m&auml;tst&auml;llen, &auml;ven de perifera, har en frakturprediktiv f&ouml;rm&aring;ga men perifera m&auml;tmetoder &auml;r inte tillr&auml;ckligt utv&auml;rderade f&ouml;r att kunna rekommenderas f&ouml;r diagnostik av osteoporos (2).</p>\n<h3 id=\"k2a_17\">R&ouml;ntgen</h3>\n<p>Vid akut, eller perioder med &aring;terkommande, ryggv&auml;rk eller vid l&auml;ngdminskning &gt;&nbsp;3&ndash;5 cm b&ouml;r r&ouml;ntgen genomf&ouml;ras f&ouml;r att diagnostisera f&ouml;rekomst av kotkompression och utesluta annan orsak, t&nbsp;ex patologisk fraktur orsakad av myelom eller metastas. S&auml;rskilt vid upprepade tidigare kotkompressioner &auml;r risken f&ouml;r ytterligare kompressioner h&ouml;g. Osteoporos &auml;r d&aring; vanligt och riskbed&ouml;mning enligt FRAX samt eventuell bent&auml;thetsm&auml;tning &auml;r d&auml;rf&ouml;r angel&auml;get f&ouml;r att bed&ouml;ma behovet av l&auml;kemedelsbehandling.</p>\n<h3 id=\"k2a_18\">Laboratorieutredning</h3>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "54ca44de-1a08-46cf-98f7-548bbe9b2607",
+			"name": "54ca44de-1a08-46cf-98f7-548bbe9b2607",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "<a class=\"crossref\" id=\"60152\"></a>Laboratorieprover som tas för  att utesluta andra behandlingsbara  orsaker till <a class=\"index\" id=\"1058833\" data-text=\"osteoporos:laboratorieprover\"></a>osteoporos",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p>Bland s&aring;dana sjukdomar kan n&auml;mnas tyreotoxikos, celiaki, hyperparatyreoidism och myelom. Basal utredning innefattar vikt och l&auml;ngd, nu och hur den var vid 25 &aring;rs &aring;lder, samt f&ouml;ljande laboratorie&shy;prover:</p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>B-SR</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>B-Hb</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>P/S-kalcium</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>P/S-kreatinin</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span>P/S-albumin</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>S-ALP</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>S-TSH, S-T<sub>4</sub></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span>S-testosteron</span> och PSA hos m&auml;n.</li>\r\n</ul>\r\n<h5 id=\"k2a_21\">Proverna kan kompletteras med</h5>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>P/S-elfores</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>U-elfores</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>S-CDT (Carbohydrate Deficient Transferrin)</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>transglutaminas- eller endomysieantikroppar</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>leverstatus</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>joniserat S-kalcium</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>S-PTH</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>S-25-hydroxivitamin D (kalcidiol).</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "k2a_20"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d6109021-6501-417d-911f-3dee5d13ef81",
+			"name": "d6109021-6501-417d-911f-3dee5d13ef81",
+			"type": "text",
+			"content": "<p>Det finns inga laboratorieprover med vars hj&auml;lp man kan st&auml;lla diagnosen osteoporos eller f&ouml;ruts&auml;ga risken f&ouml;r fraktur. Det finns biokemiska mark&ouml;rer som &auml;r associerade antingen till benbildning eller benresorption. Dessa har anv&auml;nts inom forskningen och vid l&auml;kemedelsutprovning, men inte i det enskilda patientfallet.</p>\n<p class=\"indent\"><br>Laboratorieprover tas f&ouml;r att utesluta andra behandlingsbara orsaker till osteoporos, se Faktaruta&nbsp;3.</p>\n<p><span> </span></p>\n<h2 id=\"k2a_22\">Behandling av osteoporos och frakturprevention</h2>\n<h3 id=\"k2a_23\">Omh&auml;ndertagande av en fraktur</h3>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "595a4754-3c29-4ddf-a7a0-62de0a7abf58",
+			"name": "595a4754-3c29-4ddf-a7a0-62de0a7abf58",
+			"type": "facts",
+			"content": {
+				"number": "4",
+				"title": "<a class=\"crossref\" id=\"94041\"></a>Praktiska fall- och <a class=\"index\" id=\"1058879\" data-text=\"frakturprevention:&#xE5;tg&#xE4;rder\"></a>frakturpreventiva  insatser",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p>Att penetrera riskfaktorer och diskutera livsstils&shy;&aring;tg&auml;rder &auml;r en f&ouml;ruts&auml;ttning f&ouml;r &ouml;vrig interven&shy;tion.</p>\r\n<ul class=\"ordered\">\r\n<li>Rekommendera dagliga promenader (helst ut&shy;omhus, under minst 30 minuter) och regelbun&shy;den tr&auml;ning. Viktbelastande &ouml;vningar befr&auml;m&shy;jar bent&auml;theten. Utevistelse under sommar&shy;halv&aring;ret stimulerar vitamin D-bildning.</li>\r\n</ul>\r\n<ul class=\"ordered\">\r\n<li>Tr&auml;ning av koordination, balans och muskel&shy;styrka motverkar fallolyckor. Sjukgymnast kan bist&aring; med tr&auml;ningsprogram hemma eller i grupp.</li>\r\n</ul>\r\n<ul class=\"ordered\">\r\n<li>R&ouml;kstopp och m&aring;ttfullhet vad g&auml;ller alkohol.</li>\r\n</ul>\r\n<ul class=\"ordered\">\r\n<li>Kost med rekommenderat intag av kalcium och vitamin D. Undvik &ouml;verdriven bantning.</li>\r\n</ul>\r\n<ul class=\"ordered\">\r\n<li>Utred fallorsaker: Vad f&ouml;regick fallet? Vad gjordes samtidigt? Direkt utl&ouml;sande orsak?</li>\r\n</ul>\r\n<ul class=\"ordered\">\r\n<li>Hemmilj&ouml;n g&ouml;rs s&auml;krare efter ett fall. Undvik l&ouml;sa mattor och sladdar. G&aring; i v&auml;l fixerad fotbe&shy;kl&auml;dnad (med gummisula/gummisocka) inom&shy;hus. Ha god belysning och eventuell nattbelys&shy;ning. V&auml;gghandtag och gummimatta anv&auml;nds med f&ouml;rdel i badrum. Anpassade g&aring;nghj&auml;lpme&shy;del och halkskydd (broddar) kan beh&ouml;vas f&ouml;r att kunna promenera regelbundet. Arbets&shy;terapeut eller sjukgymnast kan bist&aring; vid anpassning.</li>\r\n</ul>\r\n<ul class=\"ordered\">\r\n<li>H&auml;lsorelaterade fall som kan bero p&aring; synned&shy;s&auml;ttning (glas&ouml;gon och belysning), hj&auml;rtarytmi, hypotension eller CNS-sjukdomar. Akuta infek&shy;tioner kan &ouml;ka fallrisken tempor&auml;rt.</li>\r\n</ul>\r\n<ul class=\"ordered\">\r\n<li>L&auml;kemedel som orsakar fall b&ouml;r s&auml;ttas ut. &Auml;r patientens sedativa, hypnotika, analgetika och blodtryckss&auml;nkande l&auml;kemedel n&ouml;dv&auml;ndiga?</li>\r\n</ul>\r\n<ul class=\"ordered\">\r\n<li>H&ouml;ftskydd &ouml;verv&auml;gs f&ouml;r h&ouml;griskpatienter f&ouml;r h&ouml;ftfraktur. Frakturreduktion har visats f&ouml;r institutionsboende, trots att f&ouml;ljsamheten att b&auml;ra skydden varierade.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "k2a_25"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "704e1132-53ca-4805-a112-745955fcce61",
+			"name": "704e1132-53ca-4805-a112-745955fcce61",
+			"type": "text",
+			"content": "<p>Ut&ouml;ver de rent ortopedkirurgiska ingreppen f&ouml;r att behandla frakturer innefattar denna del adekvat sm&auml;rtlindring och mobilisering. Behandlingen av sm&auml;rta &auml;r individuell men utg&aring;r fr&aring;n konventionell sm&auml;rtlindring med paracetamol och antiinflammatoriska l&auml;kemedel som bas, och med opioider vid t&nbsp;ex akut kompressionssm&auml;rta. Det saknas evidens f&ouml;r positiv effekt av vertebroplastik och kyfoplastik avseende l&aring;ngvarig sm&auml;rta, funktion och livskvalitet (2). Det finns idag ingen generell rekommendation vad g&auml;ller olika ortopedtekniska hj&auml;lpmedel, t&nbsp;ex korsetter. Vid l&aring;g bent&auml;thet rekommenderas fysisk tr&auml;ning, se Faktaruta&nbsp;4.</p>\n<p><span> </span></p>\n<h3 id=\"k2a_26\">Frakturf&ouml;rebyggande behandling</h3>\n<p>Riskv&auml;rdering f&ouml;r framtida sv&aring;ra frakturer &auml;r av central betydelse f&ouml;r att kunna avg&ouml;ra l&auml;mplig frakturprevention. Oavsett om man l&auml;gger ett prim&auml;r- eller sekund&auml;rpreventivt syns&auml;tt p&aring; behandlingen bygger interventionen p&aring; ett och samma schema, d&auml;r man trappar upp &aring;tg&auml;rderna i takt med att risken f&ouml;r nya frakturer &ouml;kar.</p>\n<h3 id=\"k2a_27\">Livsstil och h&auml;lsoinsatser</h3>\n<p>Flera livsstilsfaktorer har betydelse f&ouml;r frakturrisk. Regelbunden motion, r&ouml;kfrihet och h&auml;lsosam kost &auml;r angel&auml;gna livsstilsfaktorer, se Faktaruta&nbsp;4. Flera sjukdomar och l&auml;kemedel &ouml;kar fallrisken. En s&auml;krare hemmilj&ouml; minskar falltendens liksom olika fysiska tr&auml;ningsprogram f&ouml;r &auml;ldre. Att intervenera mot dessa faktorer anses sj&auml;lvklart. Fallprevention har i flera randomiserade, kontrollerade studier visats ge minskad fallrisk (7,8). Dokumentationen f&ouml;r antifraktureffekt &auml;r svagare men studier som utv&auml;rderat regelbunden fysisk aktivitet, r&ouml;kstopp (hos m&auml;n) samt h&ouml;ftskyddsanv&auml;ndning inom institution talar f&ouml;r en l&auml;gre h&ouml;ftfrakturrisk (9,10,11).</p>\n<p class=\"indent\"><br>Att p&aring;verka livsstilen och h&auml;lsol&auml;get syftar till att</p>\n<ul class=\"ordered\">\n<li>F&ouml;rb&auml;ttra r&ouml;relsef&ouml;rm&aring;gan och h&auml;lsan</li>\n<li>F&ouml;rebygga fall (fysisk tr&auml;ning, s&auml;krare hemmilj&ouml; etc)</li>\n<li>Optimera h&aring;llfastheten f&ouml;r skelettet samt &ouml;verv&auml;ga specifika frakturskydd (h&ouml;ftskydd).</li>\n</ul>\n<h2 id=\"k2a_28\">Farmakologisk behandling</h2>\n<p>Det &auml;r praktiskt att indela patienterna efter riskniv&aring;. Ju h&ouml;gre frakturrisk desto st&ouml;rre anledning att &ouml;verv&auml;ga l&auml;kemedelsbehandling (2) , se Terapirekommendationerna.&nbsp;</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d541ad3f-e3a2-4364-9d5b-9d5e1394a03b",
+			"name": "d541ad3f-e3a2-4364-9d5b-9d5e1394a03b",
+			"type": "therapy",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"38388\"></a>för patienter med mycket hög respektive låg risk för frakturer (2)",
+				"id": "k2a_29",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Mycket h&ouml;g frakturrisk<span style=\"font-weight: bold;\"> </span></strong></div>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Patienter som har eller har haft en fraktur i h&ouml;ft</div>\r\n<div class=\"tableLine\">eller ryggkota.</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">T-score p&aring; &le;&nbsp;&minus;2 i BMD och &gt;&nbsp;30% i 10 &aring;rs absolut</div>\r\n<div class=\"tableLine\">frakturrisk d&auml;r BMD-data &auml;r inr&auml;knade.</div>\r\n</li>\r\n</ul>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Behandla med alendronsyra.</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Om en patient har sv&aring;rt att fullf&ouml;lja behandling med</div>\r\n<div class=\"tableLine\">alendronsyra b&ouml;r man &ouml;verg&aring; till zoledronsyra.</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Om en patient inte kan fullf&ouml;lja behandling med</div>\r\n<div class=\"tableLine\">bisfosfonat (alendronsyra eller zoledronsyra) ges</div>\r\n<div class=\"tableLine\">denosumab.</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>L&aring;g frakturrisk</strong></div>\r\n<div class=\"tableLine\">Personer utan tidigare bensk&ouml;rhetsfraktur samt ett</div>\r\n<div class=\"tableLine\">T-score p&aring; &gt;&nbsp;&minus;2,5 och ett FRAX-v&auml;rde &lt;&nbsp;20% bed&ouml;ms</div>\r\n<div class=\"tableLine\">ha l&aring;g frakturrisk.</div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Alendronsyra eller zoledronsyra kan anv&auml;ndas i</div>\r\n<div class=\"tableLine\">undantagsfall, t&nbsp;ex vid ins&auml;ttande av behandling med</div>\r\n<div class=\"tableLine\">h&ouml;ga perorala doser kortison.</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "562618fa-314f-426c-8ccf-a322550a33fd",
+			"name": "562618fa-314f-426c-8ccf-a322550a33fd",
+			"type": "text",
+			"content": "<p><span> </span></p>\n<h3 id=\"k2a_30\">Kalcium och vitamin D<span class=\"updated\"> [1]</span></h3>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "88454527-e5bc-486c-b534-5fbae6a89385",
+			"name": "88454527-e5bc-486c-b534-5fbae6a89385",
+			"type": "pagefootnote",
+			"content": {
+				"number": "1",
+				"text": "<p><span class=\"updated\">&ldquo;D-vitaminbehandling och skeletth&auml;lsa &ndash; svenska riktlinjer beh&ouml;vs\" publicerad 2014-07-29,</span> <br><a href=\"http://www.lakartidningen.se/Klinik-och-vetenskap/Rapport/2014/07/D-vitaminbehandling-och-skeletthalsa--svenska-riktlinjer-behovs/\" target=\"_blank\" class=\"linkOut\">www.lakartidningen.se</a></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4af4cf89-bc75-4328-b035-dece6c3bf0bd",
+			"name": "4af4cf89-bc75-4328-b035-dece6c3bf0bd",
+			"type": "text",
+			"content": "<p>Tillskott av kalcium och vitamin D har l&auml;nge varit en h&ouml;rnsten inom osteoporosbehandlingen. Kalcium och vitamin D ges f&ouml;r att kompensera en negativ kalciumbalans vid &aring;ldrandet och d&auml;rmed motverka sekund&auml;r hyperparatyreoidism med efterf&ouml;ljande benresorption. Kalcium och vitamin D rekommenderas dock inte som enda behandling till postmenopausala kvinnor utan dokumenterad brist p&aring; dessa &auml;mnen (2).</p>\n<p class=\"indent\"><br>Os&auml;kerhet r&aring;der vad g&auml;ller prevalensen av vitamin D-brist, och vid vilka gr&auml;nser man b&ouml;r supplementera och substituera. Flera referensintervall anger 75 nmol/L som nedre gr&auml;ns men det finns ingen konsensus om optimal niv&aring; f&ouml;r S-25-hydroxivitamin D (S-kalcidiol). M&aring;nga anser att niv&aring;er p&aring; 50&ndash;75 nmol/L &auml;r tillr&auml;ckliga. Behandling av vitamin D-brist b&ouml;r individualiseras efter orsak och basniv&aring; p&aring; S-25-hydroxivitamin D. En niv&aring; &lt;&nbsp;25 nmol/L &auml;r uttryck f&ouml;r en uttalad brist som kan leda till osteomalaci med skelettsm&auml;rtor och muskul&auml;ra symtom. Lindrig brist leder hos de flesta till &ouml;kad PTH-ins&ouml;ndring och benresorption.</p>\n<p class=\"indent\"><br>F&ouml;r isolerad vitamin D-behandling enligt doseringen 700&ndash;800 IE (17,5&ndash;20 <span>&mu;</span>g)/dag har fallreduktion p&aring;visats men dess frakturpreventiva effekt har varierat (12,13,14). Sammantaget finns det dock inte vetenskapligt st&ouml;d f&ouml;r en betydande frakturreduktion av kalcium och vitamin D-behandling som enda behandling till personer utan brist p&aring; dessa &auml;mnen (2). Kalcium och vitamin D anv&auml;nds regelm&auml;ssigt som till&auml;ggsbehandling till &ouml;vriga skelettspecifika l&auml;kemedel.</p>\n<p class=\"indent\"><br>Kortisonbehandling medf&ouml;r s&aring;v&auml;l f&ouml;rs&auml;mrat upptag som &ouml;kad uts&ouml;ndring av kalcium. Behandling med kalcium och vitamin D &auml;r d&auml;rf&ouml;r alltid motiverad f&ouml;r att f&ouml;rebygga kortisoninducerad f&ouml;rlust av benmassa och osteoporosutveckling.</p>\n<p class=\"indent\"><br>Biverkningar av kalcium- och vitamin D-behandling &auml;r som regel lindriga: fr&auml;mst f&ouml;rstoppning orsakad av kalciumtillskottet. Lindrigare oftast &ouml;verg&aring;ende hyperkalcemier kan f&ouml;rekomma, med &ouml;kad risk vid l&auml;ttare njurfunktionsneds&auml;ttning. P/S-kalcium och P/S-kreatinin b&ouml;r kontrolleras efter 1 m&aring;nads behandling. Behandling undviks hos patienter med tidigare njurstensbesv&auml;r.</p>\n<h2 id=\"k2a_31\">Antiresorptiv behandling</h2>\n<p>Antiresorptiv osteoporosbehandling innefattar l&auml;kemedel med specifik f&ouml;rm&aring;ga att h&auml;mma osteoklastisk benresorption. Det &auml;r oklart om man lyckas &aring;stadkomma n&aring;gon egentlig netto&ouml;kning av benvolymen med dessa, men en minskad oms&auml;ttning leder till &ouml;kning eller bevarande av benmassan och den minskade benoms&auml;ttningen i sig tycks leda till en &ouml;kad h&aring;llfasthet.</p>\n<p class=\"indent\"><br>Ett stort antal l&auml;kemedel har f&ouml;rm&aring;ga att h&auml;mma osteoklasterna. De som idag anv&auml;nds kliniskt inom osteoporosbehandling innefattar bisfosfonater, denosumab, selektiva &ouml;strogenreceptormodulerare (SERM), samt strontiumsalt.</p>\n<h3 id=\"k2a_32\">Bisfosfonater</h3>\n<p>Bisfosfonater &auml;r den idag mest anv&auml;nda gruppen av osteoporosl&auml;kemedel (15). Dessa &auml;r analoger till naturligt f&ouml;rekommande pyrofosfater d&auml;r tv&aring; organiska fosfatgrupper &auml;r l&auml;nkade med ett kol i&nbsp;st&auml;llet f&ouml;r syre. Bisfosfonaterna skiljer sig genom att sidokedjorna &auml;r olika. Detta medf&ouml;r skillnader i antiresorptiv potens samt i farmakokinetiska egenskaper. Verkningsmekanismen &auml;r s&aring;dan att bisfosfonaterna f&auml;ster till apatitkristaller i ben. N&auml;r osteoklasterna resorberar ben tas bisfosfonaterna upp i cytoplasman. Bisfosfonaterna interfererar med cellmetabolismen och orsakar apoptos av osteoklaster med minskad resorption som f&ouml;ljd. Den orala biotillg&auml;ngligheten &auml;r 1&ndash;3% av given dos och minskas av kalcium, j&auml;rn, mat samt drycker s&aring;som kaffe, te och apelsinjuice. Halveringstiden i skelettet &auml;r &aring;tskilliga &aring;r.</p>\n<p class=\"indent\"><br>Alendronsyra, zoledronsyra och risedronsyra har b&auml;st dokumentation av de bisfosfonater som &auml;r inregistrerade f&ouml;r behandling av osteoporos. Alendronsyra och risedronsyra ges peroralt medan zoledronsyra ges som injektionsbehandling. I stora fas 3-studier med postmenopausala kvinnor med antingen prevalenta kotkompressioner och/eller l&aring;g bent&auml;thet i rygg eller h&ouml;ft kan man se en relativ riskreduktion f&ouml;r kotkompression med uppemot 50% f&ouml;r bisfosfonatgruppen i sin helhet. Ytterligare tv&aring; bisfosfonater med svagare frakturdokumentation finns registrerade (etidronat, ibandronat) och rekommenderas d&auml;rf&ouml;r inte (2), se Terapirekommendationerna .<span> </span></p>\n<p class=\"indent\"><br>Biverkningar av perorala bisfosfonater &auml;r fr&auml;mst gastrointestinala problem i form av dyspepsi och ibland sv&aring;r esofagit, vilket st&auml;ller krav p&aring; anamnes och god patientmedverkan. Med veckodosering av alendronsyra och risedronsyra kan gastrointestinala biverkningar minimeras. &Ouml;vriga biverkningar av bisfosfonater omfatter k&auml;kbensnekros samt atypiska femurfrakturer (AFF). Sistn&auml;mnda biverkningar &auml;r dock s&aring; s&auml;llsynta att de inte p&aring;verkar indikationen att s&auml;tta in bisfosfonat f&ouml;r att f&ouml;rebygga frakturer. F&ouml;r k&auml;kbensnekroser finns en f&auml;rsk svensk unders&ouml;kning som visar en frekvens p&aring; 68 per 100&nbsp;000 patient&aring;r i Sverige (16). <span class=\"updated\">Vad g&auml;ller AFF visar en svensk studie en risk&ouml;kning i samma storleksordning samt att risken &ouml;kar med behandlingstiden</span>(17,18)<span class=\"updated\">. Risken f&ouml;r k&auml;kbensnekros och AFF b&ouml;r v&auml;gas mot f&ouml;rv&auml;ntad vinst vid l&aring;ngtidsbehandling.</span> Se &auml;ven kapitlet Munh&aring;lans sjukdomar, avsnittet om bisfosfonatrelaterade osteonekroser .</p>\n<h3 id=\"k2a_33\">D<a class=\"index\" id=\"1066768\" data-text=\"denosumab \"></a>enosumab</h3>\n<p>Denosumab &auml;r ett registrerat biologiskt l&auml;kemedel f&ouml;r behandling av postmenopausal osteoporos. Denosumabbehandling &auml;r ocks&aring; indicerad hos m&auml;n med h&ouml;g frakturrisk som &auml;r under antihormonell behandling f&ouml;r prostatacancer. Denosumab utg&ouml;rs av monoklonala humana antikroppar riktade mot RANK-liganden som &auml;r det protein som aktiverar osteoklasterna till att resorbera ben. Genom att blockera RANK-liganden motverkas utmognad och funktion av osteoklasterna. Genom att injicera dessa antikroppar subkutant var 6:e m&aring;nad erh&aring;lls en kraftfull h&auml;mning av benresorptionen. I fas 3-studier ses en frakturreducerande effekt i paritet med den f&ouml;r injektionsbehandling med zoledronsyra.</p>\n<h3 id=\"k2a_34\">Raloxifen och strontium</h3>\n<p>Raloxifen och strontium har vid Socialstyrelsens faktagranskning erh&aring;llit l&auml;gre prioritet (2).</p>\n<h4 id=\"k2a_35\"><em><a class=\"index\" id=\"1059024\" data-text=\"raloxifen\"></a>Raloxifen</em></h4>\n<p>Raloxifen &auml;r en selektiv &ouml;strogenreceptormodulerare (SERM) som inte &ouml;kar risken f&ouml;r br&ouml;stcancer. Raloxifen &auml;r en selektiv agonist till &ouml;strogenreceptorerna och dess skeletteffekt &auml;r d&auml;rf&ouml;r lik &ouml;strogenets, dvs h&auml;mning av benoms&auml;ttningen. Det finns data fr&aring;n en randomiserad studie d&auml;r endast kotkompressioner visade en signifikant minskning. SERM betraktas idag som ett andrahandspreparat f&ouml;r behandling av osteoporos. Dosen &auml;r 1 tablett &agrave; 60 mg/dag.</p>\n<p class=\"indent\">Vad g&auml;ller biverkningsprofilen kan raloxifen f&ouml;rv&auml;rra klimakteriella besv&auml;r de f&ouml;rsta &aring;ren perimenopausalt. Risken f&ouml;r djupa ventromboser &auml;r &ouml;kad och anses likv&auml;rdig med den vid hormonbehandling.</p>\n<h4 id=\"k2a_36\"><em><a class=\"index\" id=\"1059033\" data-text=\"strontium\"></a>Strontium</em></h4>\n<p>Strontiumranelat &auml;r ett salt d&auml;r den verksamma komponenten &auml;r strontiumjonen. Den exakta verkningsmekanismen &auml;r inte klarlagd, men strontium h&auml;mmar benresorptionen och kan eventuellt &auml;ven stimulera bennybildning. Studier har visat frakturreducerande effekt f&ouml;r kotkompressioner och reduktion av h&ouml;ftfrakturer samt perifera frakturer vid behandling av &auml;ldre kvinnor med osteoporos. Doseringen &auml;r en dosp&aring;se &agrave; 2 gram/dag.</p>\n<p class=\"indent\">Till biverkningarna av strontium h&ouml;r en viss &ouml;kad risk f&ouml;r djupa ventromboser samt i s&auml;llsynta fall sv&aring;rare hudreaktioner. Den europeiska l&auml;kemedelsmyndighetens s&auml;kerhetskommitt&eacute;, PRAC, har nyligen rekommenderat begr&auml;nsad anv&auml;ndning av strontiumranelat d&aring; man vid utv&auml;rdering av s&auml;kerhetsdata identifierat en risk f&ouml;r hj&auml;rt-/k&auml;rlsjukdom inklusive hj&auml;rtinfarkt, se vidare <a href=\"http://www.lakemedelsverket.se/Alla-nyheter/NYHETER-2014/EMA-rekommenderar-att-ProtelosOsseor-fortsatter-att-tillhandahallas-men-med-ytterligare-begransningar/\" target=\"_blank\" class=\"linkOut\">www.lakemedelsverket.se</a> .</p>\n<h2 id=\"k2a_37\">Anabol behandling</h2>\n<p>Anabol behandling av <a class=\"index\" id=\"1059058\" data-text=\"osteoporos:anabol behandling\"></a>osteoporos omfattar l&auml;kemedel som inte h&auml;mmar benresorptionen utan st&auml;rker skelettet genom att stimulera de benbildande osteoblasterna till &ouml;kad syntes. S&aring;dana l&auml;kemedel har l&auml;nge varit ett &ouml;nskem&aring;l och k&auml;lla till forskning. Flera olika terapier har testats, s&aring;som fluorid och tillv&auml;xthormon, utan att frakturreducerande effekt har kunnat visas.</p>\n<p class=\"indent\">Anabola l&auml;kemedel i kliniskt bruk &auml;r <a class=\"index\" id=\"1059038\" data-text=\"teriparatid\"></a>teriparatid (<a class=\"index\" id=\"1059048\" data-text=\"PTH 1-34\"></a>PTH 1-34) och <a class=\"index\" id=\"1059043\" data-text=\"paratyreoideahormon\"></a>paratyreoideahormon (<a class=\"index\" id=\"1059053\" data-text=\"PTH 1-84\"></a>PTH 1-84). Dessa ges som dagliga subkutana injektioner. L&auml;kemedlen ger en markant &ouml;kad benformation fr&auml;mst i trabekul&auml;rt ben samt en tydlig frakturreduktion &ndash; mest &ouml;vertygande vad g&auml;ller kotkompressioner. Behandlingen rekommenderas p&aring;g&aring; i 18&ndash;24 m&aring;nader och d&auml;refter v&auml;rderas patienten p&aring; nytt f&ouml;r fortsatt antiresorptiv behandling.</p>\n<p class=\"indent\">PTH-behandling &auml;r kostsam och b&ouml;r ske i samr&aring;d med specialister med stor vana av att behandla osteoporos.</p>\n<h2 id=\"k2a_38\">L&auml;kemedel med skelett- p&aring;verkande sidoeffekter</h2>\n<h3 id=\"k2a_39\"><a class=\"index\" id=\"1059063\" data-text=\"&#xF6;strogener:osteoporos\"></a>&Ouml;strogen</h3>\n<p>&Ouml;strogen h&auml;mmar benoms&auml;ttningen men anv&auml;nds numera endast p&aring; indikationen klimakteriella besv&auml;r och ingick d&auml;rf&ouml;r inte i Socialstyrelsens granskning av osteoporosl&auml;kemedel (2). Hos patienter som medicinerar med &ouml;strogen pga klimakteriella besv&auml;r finns det ingen anledning att ge ytterligare antiresorptiva l&auml;kemedel.</p>\n<h3 id=\"k2a_40\"><a class=\"index\" id=\"1059068\" data-text=\"kortikosteroider:osteoporos\"></a><a class=\"crossref\" id=\"67292\"></a>Kortison</h3>\n<p>Perorala steroider orsakar mycket ofta bensk&ouml;rhet som bl&nbsp;a &auml;r relaterad till ackumulerad dos, och &ouml;kad frakturrisk (relaterat dygnsdos) ses redan inom 3&ndash;6 m&aring;nader, se <span>kapitlet Kortikosteroider</span> och hypofyshormoner, avsnittet Osteoporosrisk <a href=\"/kapitel/endokrinologi/kortikosteroider_och_hypofyshormoner.html#94524\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>. Vid ins&auml;ttning av kortisonbehandling ska patienten v&auml;rderas avseende &ouml;vriga riskfaktorer f&ouml;r osteoporos och fraktur. Om m&ouml;jligt g&ouml;rs bent&auml;thetsm&auml;tning med DXA-teknik och adekvat skelettspecifik prevention ins&auml;tts vid T-score under &minus;1 (3). Om tillg&aring;ng till DXA saknas kan aktiv osteoporosbehandling, i f&ouml;rsta hand med alendronsyra, starkt &ouml;verv&auml;gas utifr&aring;n riskfaktorer, se <span>kapitlet Kortikosteroider</span> och hypofyshormoner, avsnittet Osteoporosrisk <a href=\"/kapitel/endokrinologi/kortikosteroider_och_hypofyshormoner.html#94524\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.</p>\n<h3 id=\"k2a_41\">&Ouml;vriga</h3>\n<p>Multimedicinering &auml;r vanligt inom denna <a class=\"index\" id=\"1059073\" data-text=\"&#xE4;ldre:osteoporos;osteoporos:&#xE4;ldre\"></a>&auml;ldre patientgrupp och tyder i sig p&aring; flera underliggande sjukdomar, vilket kan bidra till fall och frakturer. Vid l&auml;kemedelsgenomg&aring;ngar &auml;r det viktigt att t&auml;nka p&aring; att olika sedativa ofta &ouml;kar fallrisken och att vissa l&auml;kemedel &ouml;kar risken f&ouml;r osteoporosutveckling, bl&nbsp;a vissa antiepileptika. Vid bed&ouml;mning av &auml;ldre med osteoporos och bensk&ouml;rhetsfrakturer &auml;r &aring;tg&auml;rderna oftast multidimensionella inkluderande st&auml;llningstagande till behandling med osteoporosl&auml;kemedel, fallriskbed&ouml;mning (inkluderande bed&ouml;mning av hemmilj&ouml;n) och st&auml;llningstagande till ytterligare hj&auml;lpmedel f&ouml;r reducering av frakturrisk s&aring;som h&ouml;ftskydd. Balanstr&auml;ning och livsstilsr&aring;d &auml;r ocks&aring; av v&auml;rde.</p>\n<h2 id=\"k2a_42\"><a class=\"index\" id=\"1059078\" data-text=\"osteoporos:behandlingseffekt\"></a>Behandlingseffekt och kostnader</h2>\n<p>Individens egen behandlingsinsats, f&ouml;rv&auml;ntad behandlingseffekt samt biverkningsrisk beaktas inf&ouml;r planerad terapi. &Auml;ven samh&auml;llsekonomiska resurser b&ouml;r v&auml;gas in. H&ouml;ftfrakturerna intar en s&auml;rst&auml;llning, medf&ouml;rande utdragen rehabilitering och mycket h&ouml;ga samh&auml;llskostnader.</p>\n<p class=\"indent\">Frakturpreventiva insatser blir som regel effektivare d&aring; de riktas till h&ouml;griskpatienter enligt FRAX s&aring;som &auml;ldre kvinnor med flera riskfaktorer. Individualiserad livsstilsbehandling b&ouml;r prioriteras, d&aring; dagliga promenader och r&ouml;kstopp oftast medf&ouml;r v&auml;lbefinnande, autonomi, och f&ouml;rebygger s&aring;v&auml;l frakturer som flera andra vanliga folksjukdomar. Fysiska egentr&auml;ningsprogram har med begr&auml;nsade insatser visat p&aring; fallprevention.</p>\n<p class=\"indent\">Bisfosfonatbehandling (alendronsyra, risedronsyra och zoledronsyra) minskar den absoluta risken f&ouml;r frakturer med stigande &aring;lder f&ouml;r postmenopausala kvinnor med k&auml;nd osteoporos och &auml;r d&auml;rmed mer kostnadseffektiv ju h&ouml;gre den absoluta risken f&ouml;r fraktur &auml;r. Denosumab &auml;r &auml;venledes mycket effektivt hos kvinnor &gt;&nbsp;75 &aring;r med tidigare fraktur.</p>\n<h2 id=\"k2a_43\">Uppf&ouml;ljning av <a class=\"index\" id=\"1059083\" data-text=\"osteoporos:uppf&#xF6;ljning av behandling\"></a>osteoporosbehandling</h2>\n<p>Det r&aring;der ingen absolut konsensus idag om hur l&auml;nge en specifik behandling b&ouml;r p&aring;g&aring;. Det &auml;r huvudsakligen s&auml;kerhetsaspekter som avg&ouml;r och behandlingstiden &auml;r olika f&ouml;r olika terapier.</p>\n<p class=\"indent\">F&ouml;r bisfosfonatbehandling kan man idag rekommendera en initial behandlingstid p&aring; 3&ndash;4 &aring;r (19). Vid uts&auml;ttning av <a class=\"index\" id=\"1066813\" data-text=\"bisfosfonater:behandlingstid\"></a>bisfosfonater har man visat att den f&ouml;rebyggande effekten mot r&ouml;rbensfrakturer kvarstod under &aring;tminstone 5 &aring;r.</p>\n<p class=\"indent\">Begr&auml;nsade frakturdata vid bisfosfonatexponering upp till 10 &aring;r tycks visa att effekten avseende frakturreduktion h&aring;ller i sig men ingen ytterligare f&ouml;rdel ses efter de f&ouml;rsta 3&ndash;4 &aring;rens behandling (19).<span style=\"font-style: italic;\"> </span>Men patienter som efter 3&ndash;5 &aring;rs bisfosfonatbehandling har T-score i l&aring;rbenshalsen l&auml;gre &auml;n &minus;2,5 l&ouml;per h&ouml;gst risk f&ouml;r vertebrala frakturer och tycks d&auml;rf&ouml;r ha mest nytta av fortsatt behandling med bisfosfonat. Detsamma g&auml;ller patienter med en befintlig vertebral fraktur med T-score &minus;2,5 till &minus;2,0 som ocks&aring; kan ha nytta av fortsatt behandling (20).</p>\n<p class=\"indent\">Efter utsatt behandling b&ouml;r man ompr&ouml;va behandlingen varje &aring;r utifr&aring;n BMD, frakturf&ouml;rekomst och ny riskbed&ouml;mning.</p>\n<p class=\"indent\">F&ouml;r anabol behandling med PTH-fragment (teriparatid) g&auml;ller idag en total behandlingstid p&aring; 18&ndash;24 m&aring;nader, d&auml;refter tar man st&auml;llning till eventuell fortsatt antiresorptiv behandling.</p>\n<p class=\"indent\">S<a class=\"index\" id=\"1059111\" data-text=\"strontium:behandlingstid\"></a>trontiumranelat ges f&ouml;rslagsvis s&aring; l&auml;nge som studierna p&aring;g&aring;tt, dvs 3 &aring;r initialt, f&ouml;r att d&auml;refter ompr&ouml;vas &aring;rligen.</p>\n<p class=\"indent\">Det kan vara l&auml;mpligt med ett kort bes&ouml;k, alternativt telefonsamtal, ca 3 m&aring;nader efter insatt behandling f&ouml;r att f&ouml;rh&ouml;ra sig om f&ouml;ljsamheten. Vad g&auml;ller laboratoriem&auml;ssig uppf&ouml;ljning b&ouml;r man kontrollera P/S-kalcium och P/S-ALP vid behandling med PTH. F&ouml;r bisfosfonatbehandling finns inga krav p&aring; specifik blodprovsuppf&ouml;ljning. P/S-kalcium och P/S-kreatinin (se &auml;ven avsnittet Kalcium och vitamin D <a href=\"#89705\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>) b&ouml;r &aring;tminstone kontrolleras 1 m&aring;nad efter insatt behandling med kalcium plus vitamin D.</p>\n<p class=\"indent\">Bent&auml;thetsm&auml;tningar kan upprepas vartannat &aring;r under p&aring;g&aring;ende skelettspecifik l&auml;kemedelsbehandling vid postmenopausal osteoporos. Vid kortisoninducerad osteoporos kan m&auml;tning ske med kortare intervall, 1&ndash;1,5 &aring;r.</p>\n<h2 id=\"k2a_44\">Sammanfattning</h2>\n<ul>\n<li>Varannan kvinna och var fj&auml;rde man drabbas av osteoporosfraktur.</li>\n<li>Frakturrisk v&auml;rderas prim&auml;rt utifr&aring;n kliniska riskfaktorer. Starka faktorer &auml;r k&ouml;n (kvinna), h&ouml;g &aring;lder, tidigare fraktur, kortisonintag under mer &auml;n 3 m&aring;nader och &auml;rftlighet f&ouml;r h&ouml;ft-/kotfraktur. Har patienten m&aring;nga riskfaktorer samtidigt st&auml;rks indikationen f&ouml;r bent&auml;thetsm&auml;tning.</li>\n<li>Osteoporos &auml;r en stark riskfaktor f&ouml;r fraktur hos de kvinnor som samtidigt har kliniska riskfaktorer. Bent&auml;thetsm&auml;tning b&ouml;r utf&ouml;ras p&aring; patienter med tidigare fragilitetsfraktur, vid peroral kortisonbehandling under mer &auml;n 3 m&aring;nader samt vid h&ouml;gt FRAX-score (&gt;&nbsp;15%).</li>\n<li>Osteoporos definieras utifr&aring;n bent&auml;thetsv&auml;rden i h&ouml;ft och l&auml;ndrygg.</li>\n<li>H&ouml;ftfraktur och upprepade kotfrakturer &auml;r vanliga sv&aring;ra frakturer och d&auml;rmed viktigast att f&ouml;rebygga.</li>\n<li>Frakturprevention baseras p&aring; daglig fysisk aktivitet, utevistelse, r&ouml;kstopp och kost samt p&aring; riktad fallprevention och r&ouml;relsetr&auml;ning. Specifik l&auml;kemedelsbehandling ges vid mycket h&ouml;g frakturrisk (FRAX &gt;&nbsp;30%) eller efter individuell bed&ouml;mning till patienter som bed&ouml;ms ha h&ouml;g frakturrisk som inte korrekt estimeras med FRAX-ber&auml;kning, t&nbsp;ex n&auml;r patienten ska ins&auml;ttas p&aring; behandling med h&ouml;ga doser kortison peroralt eller har drabbats av kotkompressioner eller bed&ouml;ms ha en mycket h&ouml;g fallrisk.</li>\n<li>Kalcium och vitamin D rekommenderas inte som enda behandling till individer utan dokumenterad brist p&aring; dessa &auml;mnen. Kalcium och vitamin D ges dock alltid vid kortisonbehandling.</li>\n<li>F&ouml;r personer med h&ouml;g frakturrisk och osteoporos rekommenderas i f&ouml;rsta hand alendronsyra, i andra hand zoledronsyra. Om ingen av dessa kan ges rekommenderas denosumab. Vid uttalad frakturrisk kan paratyreoideahormon f&ouml;rskrivas. Till&auml;gg av kalcium och vitamin D ges till alla dessa patienter.</li>\n</ul>\n<h2 class=\"referenceHeader\" id=\"k2a_45\">Referenser</h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "734260b6-e931-4a29-b59c-f136336af33c",
+			"name": "734260b6-e931-4a29-b59c-f136336af33c",
+			"type": "references",
+			"content": "<ol class=\"references\"><li id=\"reference_1\">Törring O, Mellström D, Ljunggren Ö. <a href=\"http://www.lakemedelsboken.se/atc/A12A-A12AA\" data-atcid=\"A12A,A12AA\" data-atctitles=\"Matsm&#xE4;ltningsorgan_och_&#xE4;mnesoms&#xE4;ttning--Mineral&#xE4;mnen--Kalcium##Matsm&#xE4;ltningsorgan_och_&#xE4;mnesoms&#xE4;ttning--Mineral&#xE4;mnen--Kalcium--Kalcium\" class=\"lb inlineGenerica text\">Kalcium</a>  och skelettmetabola sjukdomar. I: Werner S, red. Endokrinologi. 2:a uppl. Stockholm: Liber AB; 2007. s 200–30. (Uppdaterat kapitel i ny upplaga förväntas under 2014.)</li>\n<li id=\"reference_2\"> Nationella riktlinjer för rörelseorganens sjukdomar – stöd för styrning och ledning. 2012. Socialstyrelsen. Artikelnummer: 2012-5-1. <br>ISBN 9789187169328. <a href=\"http://www.socialstyrelsen.se/publikationer2012/2012-5-1\" target=\"_blank\" class=\"linkOut\">www.socialstyrelsen.se</a>  </li>\n<li id=\"reference_3\"> Behandling av osteoporos – Behandlingsrekommendation. Information från Läkemedelsverket. 2007:(18)4. <a href=\"http://www.lakemedelsverket.se/malgrupp/Halso---sjukvard/Behandlings--rekommendationer/Behandlingsrekommendation---listan/Osteoporos/\" target=\"_blank\" class=\"linkOut\">www.lakemedelsverket.se</a> </li>\n<li id=\"reference_4\">Cummings SR, Nevitt MC, Browner WS, Stone K,  Fox KM, Ensrud KE, et al. Risk factors for hip fracture in white women. Study of Osteoporotic Fractures Research Group. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/7862179\" target=\"_blank\" class=\"linkOut\">N Engl J Med. 1995;332:767–73.</a> </li>\n<li id=\"reference_5\">McGrother CW, Donaldson MM, Clayton D,  Abrams KR, Clarke M. Evaluation of a hip fracture risk score for assessing elderly women: the Melton Osteoporotic Fracture (MOF) study. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=mcgrother+cw+and+hip+and+2002\" target=\"_blank\" class=\"linkOut\">Osteoporos Int. 2002;13:89–96.</a> </li>\n<li id=\"reference_6\">FRAX.  <a href=\"http://www.shef.ac.uk/FRAX/\" target=\"_blank\" class=\"linkOut\">www.shef.ac.uk/FRAX </a> </li>\n<li id=\"reference_7\">Gillespie LD, Robertson MC, Gillespie WJ, Lamb  SE, Gates S, Cumming RG, Rowe BH. Interventions for preventing falls in older people living in the community. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/19370674\" target=\"_blank\" class=\"linkOut\">Cochrane Database Syst Rev. 2009;(2):CD007146.</a>  </li>\n<li id=\"reference_8\">Cameron ID, Murray GR, Gillespie LD, Robertson  MC, Hill KD, Cumming RG, Kerse N. Interventions for preventing falls in older people in nursing care facilities and hospitals. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/20091578\" target=\"_blank\" class=\"linkOut\">Cochrane Database Syst Rev. 2010;(1):CD005465.</a> </li>\n<li id=\"reference_9\">Feskanich D, Willett W, Colditz G. Walking and  leisure-time activity and risk of hip fracture in postmenopausal women. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/12425707\" target=\"_blank\" class=\"linkOut\">JAMA. 2002;288:2300–6.</a> </li>\n<li id=\"reference_10\">Hoidrup S, Prescott E, S ørensen TI, Gottschau A, Lauritzen JB, Schroll M, et al. Tobacco smoking and risk of hip fracture in men and women. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=hoidrup+s+and+tobacco+and+2000\" target=\"_blank\" class=\"linkOut\">Int J Epidemiol. 2000;29:253–9.</a> </li>\n<li id=\"reference_11\"> Parker MJ, Gillespie WJ, Gillespie LD. Effectiveness of hip protectors for preventing hip fractures in elderly people: systematic review. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/16513687\" target=\"_blank\" class=\"linkOut\">BMJ. 2006;332:571–4.</a> </li>\n<li id=\"reference_12\">Bischoff-Ferrari HA, Dawson-Hughes B, Willett  WC, Staehelin HB, Bazemore MG, Zee RY, Wong JB. Effect of <a href=\"http://www.lakemedelsboken.se/atc/A11CC\" data-atcid=\"A11CC\" data-atctitles=\"Matsm&#xE4;ltningsorgan_och_&#xE4;mnesoms&#xE4;ttning--Vitaminer--Vitamin_A_och_D,_inkl._kombinationer_av_de_tv&#xE5;--Vitamin_D_och_analoger\" class=\"lb inlineGenerica text\">Vitamin D</a> on falls: A meta-analysis. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/15113819\" target=\"_blank\" class=\"linkOut\">JAMA. 2004;291:1999–2006.</a> </li>\n<li id=\"reference_13\">Avenell A, Gillespie WJ, Gillespie LD, O\\qConnell  DL. <a href=\"http://www.lakemedelsboken.se/atc/A11CC\" data-atcid=\"A11CC\" data-atctitles=\"Matsm&#xE4;ltningsorgan_och_&#xE4;mnesoms&#xE4;ttning--Vitaminer--Vitamin_A_och_D,_inkl._kombinationer_av_de_tv&#xE5;--Vitamin_D_och_analoger\" class=\"lb inlineGenerica text\">Vitamin D</a> and <a href=\"http://www.lakemedelsboken.se/atc/A11CC\" data-atcid=\"A11CC\" data-atctitles=\"Matsm&#xE4;ltningsorgan_och_&#xE4;mnesoms&#xE4;ttning--Vitaminer--Vitamin_A_och_D,_inkl._kombinationer_av_de_tv&#xE5;--Vitamin_D_och_analoger\" class=\"lb inlineGenerica text\">vitamin D</a> analogues for preventing fractures associated with involutional and post-menopausal osteoporosis. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/16034849\" target=\"_blank\" class=\"linkOut\">Cochrane Database Syst Rev. 2005:CD000227.</a> </li>\n<li id=\"reference_14\"> Trivedi DP, Doll R, Khaw KT. Effect of four monthly oral <a href=\"http://www.lakemedelsboken.se/atc/A11CC\" data-atcid=\"A11CC\" data-atctitles=\"Matsm&#xE4;ltningsorgan_och_&#xE4;mnesoms&#xE4;ttning--Vitaminer--Vitamin_A_och_D,_inkl._kombinationer_av_de_tv&#xE5;--Vitamin_D_och_analoger\" class=\"lb inlineGenerica text\">vitamin D</a>3 (cholecalciferol) supplementation on fractures and mortality in men and women living in the community: randomised double blind controlled trial. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=trivedi+dp+and+vitamin+and+2003\" target=\"_blank\" class=\"linkOut\">BMJ. 2003;326:469.</a> </li>\n<li id=\"reference_15\">MacLean C, Newberry S, Maglione M, McMahon  M, Ranganath V, Suttorp M, et al. Systematic review: comparative effectiveness of treatments to prevent fractures in men and women with low bone density or osteoporosis. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/18087050\" target=\"_blank\" class=\"linkOut\">Ann Intern Med. 2008;148:197–213.</a> </li>\n<li id=\"reference_16\">Ulmner M, Jarnbring F, Törring O. Osteonecrosis  of the jaw in Sweden associated with the oral use of bisphosphonate. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23992777\" target=\"_blank\" class=\"linkOut\">J Oral Maxillofac Surg. 2013 </a> Aug 28. [Epub ahead of print].</li>\n<li id=\"reference_17\"> <span class=\"updated\" title=\"Texten &#xE4;r uppdaterad\">Schilcher J1, Michaëlsson K, Aspenberg P. Bisphosphonate use and atypical fractures of the femoral shaft.</span> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=schilcher+j+2011+bisphosphonate\" target=\"_blank\" class=\"linkOut\">N Engl J Med. 2011;364:1728—37.</a> </li>\n<li id=\"reference_18\"> <span class=\"updated\" title=\"Texten &#xE4;r uppdaterad\">Schilcher J1, Koeppen V, Aspenberg P, Michaëlsson K. Risk of atypical femoral fracture during and after bisphosphonate use. </span><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=10.1056%2FNEJMc1403799\" target=\"_blank\" class=\"linkOut\">N Engl J Med. </a> 2014;371:974–6.</li>\n<li id=\"reference_19\"> Whitaker M, Guo J, Kehoe T, Benson G. Bisphosphonates for osteoporosis — where do we go from here? <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22571168\" target=\"_blank\" class=\"linkOut\">N Engl J Med. 2012;366:2048–51</a> . </li>\n<li id=\"reference_20\">Black DM, Bauer DC, Schwartz AV, Cummings SR,  Rosen CJ. Continuing bisphosphonate treatment for osteoporosis – for whom and for how long? <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22571169\" target=\"_blank\" class=\"linkOut\">N Engl J Med. 2012;366:2051–3.</a> </li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/endokrinologi/osteoporos_och_frakturprevention.json",
+	"modified": "2018-02-12 13:57",
+	"isPublished": true,
+	"indexed": "true"
+}
