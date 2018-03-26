@@ -1,0 +1,797 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Urinvägsinfektioner | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-09 00:56",
+	"published": "2015-07-09 00:56",
+	"validUntil": "",
+	"createdBy": "Torsten Sandberg, Sverker Hansson",
+	"replacesUrl": "/g3_nef_urinvaginfekt_2013fm10.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "aa66c76e-b1b3-440a-9582-d5f4d4f91186",
+			"name": "aa66c76e-b1b3-440a-9582-d5f4d4f91186",
+			"type": "author",
+			"content": {
+				"firstname": "Torsten",
+				"surname": "Sandberg",
+				"description": "Infektionskliniken, Sahlgrenska Universitetssjukhuset/Östra, Göteborg",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b58915fc-e555-44fa-a21c-58a795b8b597",
+			"name": "b58915fc-e555-44fa-a21c-58a795b8b597",
+			"type": "author",
+			"content": {
+				"firstname": "Sverker",
+				"surname": "Hansson",
+				"description": "Barnmedicin, Drottning Silvias barn- och ungdomssjukhus, Göteborg",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ceb5f51f-55a6-49ec-8d84-359ec04068a6",
+			"name": "ceb5f51f-55a6-49ec-8d84-359ec04068a6",
+			"type": "text",
+			"content": "<h1 id=\"g3_2\">Urinv&auml;gsinfektioner</h1>\n<h2 id=\"g3_3\">Inledning</h2>\n<p class=\"ingress\">Urinv&auml;gsinfektion (UVI) &auml;r den &ouml;vergripande termen f&ouml;r ett spektrum av olika tillst&aring;nd med v&auml;xt av bakterier inom urinv&auml;garna. Ur behandlings- och uppf&ouml;ljningssynpunkt &auml;r det &ouml;nskv&auml;rt att g&ouml;ra en diagnostisk indelning.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d67cd88d-739b-4370-8a6a-a582e8726d62",
+			"name": "d67cd88d-739b-4370-8a6a-a582e8726d62",
+			"type": "text",
+			"content": "<h2 id=\"g3_4\">Diagnostisk indelning</h2>\n<p id=\"Febril-UVI-ar-en-infektion-som-engagerar-njurar-och-eller-prostata-akut-pyelonefrit-akut-prostatit-och-som-vanligen-medfor-ett-paverkat-allmantillstand-\"><span class=\"tab\"></span><span style=\"color: #ff0000;\"><strong>Febril UVI</strong> &auml;r en infektion som engagerar njurar och/eller prostata (akut pyelonefrit, akut prostatit)</span> och som vanligen medf&ouml;r ett p&aring;verkat allm&auml;ntillst&aring;nd.<br><br></p>\n<p><span class=\"tab\"></span><strong><span style=\"color: #ff0000;\">Akut cystit</span></strong> &auml;r enbart lokaliserad till de nedre urinv&auml;garna och diagnosen f&aring;r endast st&auml;llas vid akuta miktionsbesv&auml;r i avsaknad av allm&auml;np&aring;verkan och feber.<br><br></p>\n<p><span class=\"tab\"></span><span class=\"tab\"></span><strong>Asymtomatisk bakteriuri (ABU)</strong> &auml;r en term som anv&auml;nds n&auml;r det i upprepade urinprov kan visas att bakteriuri f&ouml;religger hos en individ som inte har symtom fr&aring;n urinv&auml;garna. Det r&aring;der numera enighet om att ett s&aring;dant tillst&aring;nd, med f&aring; undantag, &auml;r ofarligt. Screening f&ouml;r att p&aring;visa och behandla bakteriuri rekommenderas idag endast vid graviditet och inf&ouml;r<span style=\"color: #ff0000;\"> utvalda urologiska ingrepp.</span> <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">prostatakirurgi.</span></span><br><br></p>\n<p><span class=\"tab\"></span>Vid <strong>komplicerad UVI</strong> finns strukturella <span style=\"color: #ff0000;\">och/</span>eller funktionella avvikelser i urinv&auml;garna som disponerar f&ouml;r bakteriuri.<br><br></p>\n<p><span class=\"tab\"></span><strong>Recidiverande infektion</strong> inneb&auml;r<span> tv&aring; eller fler</span> antibiotikabehandlade UVI det senaste halv&aring;ret alternativt <span>tre eller fler</span> det senaste &aring;ret.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a5785270-3f89-42e2-a5b3-67f340866b80",
+			"name": "a5785270-3f89-42e2-a5b3-67f340866b80",
+			"type": "text",
+			"content": "<h2 id=\"g3_5\">Etiologi och patogenes</h2>\n<p>Escherichia coli &auml;r den vanligaste (&gt;&nbsp;80&nbsp;%) orsaken till UVI i alla &aring;ldrar, medan Staphylococcus saprophyticus framf&ouml;r allt drabbar kvinnor i fertil &aring;lder. Dessa bakteriearter kallas f&ouml;r prim&auml;rpatogener, eftersom de kan infektera individer som har normala urinv&auml;gar.</p>\n<p><br>Till sekund&auml;rpatogenerna h&ouml;r bland andra Enterobacter, Klebsiella, Proteus och enterokocker. De har nedsatt k&auml;nslighet f&ouml;r m&aring;nga urinv&auml;gsantibiotika och framodlas inte s&auml;llan fr&aring;n patienter som f&aring;tt upprepade antibiotikakurer p&aring; grund av komplicerad och/eller recidiverande UVI.</p>\n<p><br><span style=\"color: #ff0000;\">F&ouml;rekomsten av multiresistenta ESBL (Extended Spectrum Beta Lactamase)-producerande E. coli &ouml;kar successivt i Sverige och p&aring;visas hos 5-8 % av E. coli i blod- och urinodlingar. Om s&aring;dana stammar orsakar febril UVI saknas ofta perorala antibiotikaalternativ. </span><span style=\"text-decoration: line-through; color: #ff0000;\">Den snabba globala spridningen av multiresistenta E. coli och Klebsiella, vilka producerar ESBL (Extended Spectrum Beta-Lactamases), utg&ouml;r ett stort terapeutiskt problem</span><span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\"><span>.</span> I Sverige anm&auml;ldes</span><span style=\"color: #ff0000; text-decoration: line-through;\"> 2014 cirka 8 100 fall av ESBL-bildande E. coli.</span></span> <span style=\"background-color: #ffff00;\">Se vidare kapitlet Antibiotika och resistens, avsnittet ESBL</span>.</p>\n<p><span class=\"tab\"><br></span>Uropatogena bakterier har sin reservoar i&nbsp;tarmen och intr&auml;det i de nedre urinv&auml;garna f&ouml;reg&aring;s av kolonisering av det periuretrala omr&aring;det. Kolonisering och ben&auml;genhet f&ouml;r UVI underl&auml;ttas av st&ouml;rningar i den genitala mikrofloran. Antibiotika ger negativa ekologiska effekter i varierande grad.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f56ebdd1-9fe4-4390-ba10-6fad1e1edca6",
+			"name": "f56ebdd1-9fe4-4390-ba10-6fad1e1edca6",
+			"type": "text",
+			"content": "<h2 id=\"g3_6\"><span class=\"tab\"></span>Diagnostik</h2>\n<h3 id=\"g3_7\"><a class=\"index\" id=\"1021454\" data-text=\"urinodling\"></a>Urinodling</h3>\n<p>Semikvantitativ urinodling p&aring; bakteriologiskt laboratorium &auml;r referensmetod. Se Faktaruta 1 och Faktaruta 2 f&ouml;r indikationer f&ouml;r urinodling.</p>\n<p><span> </span><span> <br></span>Framodling av fler &auml;n tv&aring; bakteriearter tyder p&aring; kontamination vid provtagningen. I suprapubiskt urinbl&aring;seaspirat &auml;r varje bakteriefynd diagnostiskt. I Faktaruta 3 anges diagnostiska gr&auml;nsv&auml;rden f&ouml;r urinodling.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "45cfdc14-a53a-41ad-98d7-854120c3f1c2",
+			"name": "45cfdc14-a53a-41ad-98d7-854120c3f1c2",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"80043\"></a>Indikationer för urinodling med  art- och resistensbestämning",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Komplicerad, recidiverande eller v&aring;rdrelaterad UVI</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\" style=\"color: #ff0000;\">Febril UVI <span style=\"text-decoration: line-through;\">Akut pyelonefrit/febril UVI</span><br></span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>UVI hos barn</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>UVI hos m&auml;n</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>UVI hos gravida kvinnor</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Terapisvikt <span style=\"color: #ff0000;\">vid <span style=\"text-decoration: line-through;\">UVI-behandling</span> antibiotikabehandling av UVI<br></span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>UVI <span style=\"color: #ff0000;\">vid k&auml;nd eller misst&auml;nkt resistensproblematik <span style=\"text-decoration: line-through;\">efter nylig vistelse i l&auml;nder med &ouml;kad f&ouml;re&shy;komst av antibiotikaresistens</span></span></li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "g3_9"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "35d7a274-08f7-4025-92c0-4e760aa38d3a",
+			"name": "35d7a274-08f7-4025-92c0-4e760aa38d3a",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"crossref\" id=\"50238\"></a>Indikationer för urinodling efter  avslutad behandling ",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span><span class=\"tab\"></span>UVI hos gravida kvinnor</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>UVI orsakad av stenbildande bakterier (framf&ouml;r allt Proteus)</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "g3_11"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7007b3a6-8484-4822-a952-7e8f4ed25586",
+			"name": "7007b3a6-8484-4822-a952-7e8f4ed25586",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "Diagnostiska gränser för positiv urinod&shy;ling (mittstråleurin)",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td colspan=\"3\">\r\n<p><strong>Asymtomatisk bakteriuri</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Kvinnor och barn</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span>&ge;</span>&nbsp;10<sup>5 </sup>CFU/ml</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">2 urinprov</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">M&auml;n</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span>&ge;&nbsp;</span>10<sup>5</sup> CFU/ml</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">1 urinprov</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Symtomgivande </strong></div>\r\n<div class=\"tableLine\"><strong>UVI</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>Prim&auml;r-</strong></div>\r\n<div class=\"tableLine\"><strong>patogen<span class=\"tab\"></span></strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>Sekund&auml;r-</strong></div>\r\n<div class=\"tableLine\"><strong>patogen</strong></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Kvinnor och barn</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span>&ge;</span>&nbsp;10<sup>3</sup> CFU/ml</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span>&ge;</span>&nbsp;10<sup>4</sup> CFU/ml</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">M&auml;n</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span>&ge;</span>&nbsp;10<sup>3</sup> CFU/ml<span class=\"tab\"></span><span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><span>&ge;</span>&nbsp;10<sup>3</sup> CFU/ml</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2021ae17-d9a4-4231-97df-d8a596a599a6",
+			"name": "2021ae17-d9a4-4231-97df-d8a596a599a6",
+			"type": "text",
+			"content": "<h3 id=\"g3_12\">Kemiska <a class=\"index\" id=\"1029260\" data-text=\"urintester:UVI\"></a>snabbtester</h3>\n<p>Testremsor som har reagensf&auml;lt f&ouml;r nitrit och <span style=\"color: #ff0000;\">leukocytesteras</span> <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">granulocytesteras</span></span> <span style=\"text-decoration: line-through; color: #ff0000;\">&auml;r till god hj&auml;lp</span> <span style=\"color: #ff0000;\">kan anv&auml;ndas </span>vid snabbdiagnostik av symtomgivande UVI. Nitrittestet har h&ouml;g specificitet<span style=\"color: #ff0000;\"> </span><span style=\"text-decoration: line-through; color: #ff0000;\">(99&nbsp;%)</span>, men relativt l&aring;g sensitivitet <span style=\"text-decoration: line-through; color: #ff0000;\">(50&ndash;80&nbsp;%)</span>, vilket inneb&auml;r att bakteriuri kan f&ouml;religga &auml;ven om nitritreaktionen uteblir.</p>\n<p><br>Positivt <span style=\"text-decoration: line-through; color: #ff0000;\">granulocytesteras </span><span style=\"color: #ff0000;\">leukocytesteras</span>test indikerar pyuri, det vill s&auml;ga &ouml;kad uts&ouml;ndring av vita blodkroppar i urinen, som tecken p&aring; inflammation i urinv&auml;garna. Pyuri kan p&aring;visas hos &gt;&nbsp;90&nbsp;% av dem som har symtomgivande infektion, men har l&aring;g specificitet f&ouml;r UVI.</p>\n<p><br><span style=\"text-decoration: line-through; color: #ff0000;\">Testremsor f&ouml;r detektion av hematuri och proteinuri ger ingen diagnostisk v&auml;gledning vid misstanke om UVI, men kan vid positivt utfall p&aring;verka behovet av efterkontroll.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b1a8c091-cf2c-4768-a9d7-abaa92f1e5b7",
+			"name": "b1a8c091-cf2c-4768-a9d7-abaa92f1e5b7",
+			"type": "text",
+			"content": "<h3 id=\"g3_13\">CRP</h3>\n<p><a class=\"index\" id=\"1024511\" data-text=\"CRP:UVI\"></a>CRP avspeglar infektionens invasivitet. F&ouml;rh&ouml;jda serumniv&aring;er f&ouml;rekommer vid febril UVI, som tecken p&aring; njur- och/eller prostataengagemang av infektionen.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "cabfda8b-dbfe-4eaa-bbe6-9a36725ba01b",
+			"name": "cabfda8b-dbfe-4eaa-bbe6-9a36725ba01b",
+			"type": "text",
+			"content": "<h2 id=\"g3_14\">Antibiotika f&ouml;r peroral behandling av UVI</h2>\n<h3 id=\"g3_15\">Amoxicillin</h3>\n<p>Amoxicillin anv&auml;nds inte f&ouml;r empirisk behandling av UVI p&aring; grund av utbredd resistens hos E. coli (cirka 30&nbsp;%) och andra gramnegativa enterobakterier.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7a9c4449-f138-4d30-bf48-522f0c1b1f15",
+			"name": "7a9c4449-f138-4d30-bf48-522f0c1b1f15",
+			"type": "text",
+			"content": "<h3 id=\"g3_16\">Cefalosporiner</h3>\n<p>Samtliga cefalosporinpreparat saknar effekt mot enterokocker. Cefadroxil har relativt l&aring;g aktivitet mot gramnegativa uropatogener, medan effekten mot S. saprophyticus &auml;r god.</p>\n<p><br>Ceftibuten har betydligt h&ouml;gre aktivitet mot gramnegativa bakterier &auml;n cefadroxil, men otillr&auml;cklig effekt mot grampositiva bakterier. <span style=\"color: #ff0000;\">Det &auml;r ett f&ouml;rstahandsalternativ f&ouml;r behandling av febril UVI hos barn och gravida kvinnor och ett andrahandsalternativ vid febril UVI hos icke-gravida kvinnor och m&auml;n. </span><span style=\"color: #ff0000;\">Ceftibuten &auml;r f&ouml;r n&auml;rvarande endast tillg&auml;ngligt som licensl&auml;kemedel.</span> <span style=\"text-decoration: line-through; color: #ff0000;\">Ceftibuten &auml;r dyrt och har inte b&auml;ttre effekt &auml;n cefadroxil vid behandling av cystit, men kan vara ett alternativ f&ouml;r peroral behandling av akut pyelonefrit.</span></p>\n<p><br>Den vaginala mikrofloran kan p&aring;verkas ogynnsamt av cefalosporiner, vilket sannolikt bidrar till &ouml;kad recidivrisk efter avslutad behandling.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7d0109f3-d76d-4b5f-a676-62c0881f7a51",
+			"name": "7d0109f3-d76d-4b5f-a676-62c0881f7a51",
+			"type": "text",
+			"content": "<h3 id=\"g3_17\">Kinoloner</h3>\n<p>Fluorokinolonerna har h&ouml;g aktivitet mot gramnegativa bakterier, medan grampositiva bakterier &auml;r mindre k&auml;nsliga. Korsresistens f&ouml;religger mellan ciprofloxacin, levofloxacin och norfloxacin. N&auml;r behandling med en kinolon &auml;r aktuell rekommenderas ciprofloxacin, som har h&ouml;gst aktivitet mot Enterobacteriaceae och Pseudomonas aeruginosa.</p>\n<p><br>Till f&ouml;ljd av &ouml;verf&ouml;rskrivning av kinoloner ses en &ouml;kad resistensutveckling. I Sverige &auml;r <span style=\"color: #ff0000;\">8-15 % <span style=\"text-decoration: line-through;\">cirka 8&nbsp;%</span></span> av E.&nbsp;coli-isolaten resistenta mot ciprofloxacin. Kinoloner ska d&auml;rf&ouml;r inte f&ouml;rskrivas till<span style=\"text-decoration: line-through;\"></span><span style=\"color: #ff0000;\"> patienter med akut</span><span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\"> kvinnor med okomplicerad</span></span> cystit.</p>\n<p><br>De viktigaste indikationerna &auml;r&nbsp;<span style=\"color: #ff0000;\">febril eller komplicerad UVI.</span> <span style=\"text-decoration: line-through; color: #ff0000;\">akut pyelonefrit, komplicerad UVI samt febril UVI hos m&auml;n.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6f49c5dc-bc23-4ac7-8045-6b28a9d34c69",
+			"name": "6f49c5dc-bc23-4ac7-8045-6b28a9d34c69",
+			"type": "text",
+			"content": "<h3 id=\"g3_18\">Nitrofurantoin</h3>\n<p>Nitrofurantoin &auml;r aktivt mot flertalet urinv&auml;gspatogener men Klebsiella, Proteus och Pseudomonas &auml;r resistenta. H&ouml;g k&auml;nslighet f&ouml;religger hos prim&auml;rpatogenerna E.&nbsp;coli och S.&nbsp;saprophyticus (resistensen<span style=\"font-style: italic;\"></span> &auml;r cirka 1&nbsp;%)<span style=\"font-style: italic;\">.</span> <span style=\"text-decoration: line-through; color: #ff0000;\">varf&ouml;r preparatet l&auml;mpar sig v&auml;l f&ouml;r empirisk behandling av cystit hos barn och kvinnor.</span> <span style=\"color: #ff0000;\">&Auml;ven multiresistenta, ESBL-producerande stammar av E. coli &auml;r oftast k&auml;nsliga f&ouml;r nitrofurantoin (andelen resistenta stammar &lt; 5%).</span>&nbsp;<span style=\"color: #ff0000;\">Nitrofurantoin ger h&ouml;ga urinkoncentrationer men inga terapeutiska v&auml;vnadskoncentrationer. Det &auml;r ett f&ouml;rstahandsval vid empirisk behandling av akut cystit och ska inte anv&auml;ndas f&ouml;r behandling av febril UVI.</span></p>\n<p><br>P&aring; grund av fullst&auml;ndig absorption i tunntarmen &auml;r risken f&ouml;r ekologiska st&ouml;rningar och resistensutveckling ringa.</p>\n<p><br>Med de korta kurer som ges idag, beh&ouml;ver ingen oro finnas f&ouml;r allvarliga biverkningar. Nitrofurantoin kan d&auml;rf&ouml;r anv&auml;ndas f&ouml;r behandling av<span style=\"color: #ff0000;\"> akut</span> cystit hos kvinnor, oavsett patientens &aring;lder. Preparatet ska inte ges till patienter med nedsatt njurfunktion (GFR &lt;&nbsp;40&nbsp;ml/minut). Akut &ouml;verk&auml;nslighetsreaktion, s&aring; kallad nitrofurantoinlunga, som yttrar sig i form av hosta, dyspn&eacute;, feber och eosinofili,<span style=\"color: #ff0000;\"> &auml;r en relativt ovanlig biverkan.</span><span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\"> kan intr&auml;ffa n&aring;gon enstaka g&aring;ng</span></span>. Symtomen g&aring;r snabbt i regress n&auml;r preparatet seponeras.</p>\n<p><br><span style=\"text-decoration: line-through; color: #ff0000;\">I mycket s&auml;llsynta fall har hemolytisk anemi rapporterats hos nyf&ouml;dda</span> <span style=\"color: #ff0000;\">I en fallrapport fr&aring;n Frankrike har hemolytisk anemi&nbsp; beskrivits hos en nyf&ouml;dd </span>n&auml;r nitrofurantoin givits<span style=\"color: #ff0000;\"> ett par veckor</span> <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">strax</span></span> f&ouml;re partus. I Sverige har nitrofurantoin anv&auml;nts av ett stort antal gravida kvinnor, under flera decennier, utan att varken hemolys eller negativa effekter p&aring; fostret iakttagits. Det finns mot denna bakgrund ingen anledning att avst&aring; fr&aring;n profylax med nitrofurantoin f&ouml;r att f&ouml;rhindra akut pyelonefrit i slutet av graviditeten. Se avsnittet om <a href=\"#g3_46\">UVI under graviditet</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c0fdb460-b5f8-4676-9a9d-693515a6b019",
+			"name": "c0fdb460-b5f8-4676-9a9d-693515a6b019",
+			"type": "text",
+			"content": "<h3 id=\"g3_19\">Pivmecillinam</h3>\n<p>Pivmecillinam &auml;r en &rdquo;prodrug&rdquo; och hydrolyseras i tarmv&auml;ggen till mecillinam, som &auml;r den antibakteriellt aktiva komponenten. Spektrum omfattar gramnegativa <span style=\"color: #ff0000;\">tarmbakterier som E. coli, Klebsiella och Proteus mirabilis</span> <span style=\"text-decoration: line-through; color: #ff0000;\">enterobakterier, utom Pseudomonas,</span> medan grampositiva bakterier, inklusive S.&nbsp;saprophyticus, &auml;r resistenta in vitro. Infektion orsakad av S.&nbsp;saprophyticus l&auml;ker dock i m&aring;nga fall ut, p&aring; grund av de h&ouml;ga koncentrationer av mecillinam som erh&aring;lls i bl&aring;surinen. Resistensen hos E.&nbsp;coli &auml;r omkring 5&nbsp;%.</p>\n<p><br>Pivmecillinam anv&auml;nds fr&auml;mst f&ouml;r behandling av akut cystit<span style=\"text-decoration: line-through; color: #ff0000;\"> hos kvinnor och barn</span>. L&auml;kemedlet ger f&aring; ekologiska st&ouml;rningar, men enterokocker selekteras ofta fram i normalfloran efter avslutad kur och kan ibland orsaka reinfektion.</p>\n<p><br>Behandling med pivmecillinam &ouml;kar uts&ouml;ndringen av karnitin i urinen. Enstaka kurer p&aring; 5&nbsp;dagar, som rekommenderas vid cystit, inneb&auml;r inte n&aring;gon risk f&ouml;r symtomgivande karnitinbrist.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b5d01ba9-644e-490a-92d3-168980f419c3",
+			"name": "b5d01ba9-644e-490a-92d3-168980f419c3",
+			"type": "text",
+			"content": "<h3 id=\"g3_20\">Trimetoprim</h3>\n<p>Trimetoprim har ett spektrum, som omfattar b&aring;de gramnegativa och grampositiva bakterier. Aktiviteten &auml;r god mot prim&auml;rpatogenerna E.&nbsp;coli och S.&nbsp;saprophyticus. Under de senaste femton &aring;ren<span style=\"color: #ff0000;\"> <span style=\"color: #000000;\">har </span></span>en &ouml;kande trimetoprimresistens&nbsp;rapporterats f&ouml;r E.&nbsp;coli, som uppg&aring;r till cirka 20&nbsp;%. S&auml;rskilt h&ouml;g risk f&ouml;r resistens f&ouml;religger om patienten de senaste m&aring;naderna har behandlats med trimetoprim.</p>\n<p><br>Trimetoprim ger terapeutiska koncentrationer i prostata varf&ouml;r det efter resistensbest&auml;mning kan anv&auml;ndas f&ouml;r behandling av febril UVI hos m&auml;n, som ofta har en samtidig infektion i prostata.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "07c84117-cfc2-4445-adb7-102ef7a6a139",
+			"name": "07c84117-cfc2-4445-adb7-102ef7a6a139",
+			"type": "text",
+			"content": "<h3 id=\"g3_21\"><span style=\"color: #ff0000;\">Trimetoprim/sulfametoxazol <span style=\"text-decoration: line-through;\">sulfa</span><br></span></h3>\n<p>Kombinationen trimetoprim och sulfonamid anv&auml;nds idag s&auml;llan p&aring; indikationen UVI hos vuxna. Vid behandling av cystit ger sulfakomponenten inga ytterligare terapeutiska f&ouml;rdelar.</p>\n<p><br>Trimetoprim/sulfametoxazol &auml;r <span style=\"text-decoration: line-through; color: #ff0000;\">fortfarande</span> ett<span style=\"color: #ff0000;\"> alternativ</span> <span style=\"text-decoration: line-through; color: #ff0000;\">f&ouml;rstahandsval</span> (efter resistensbest&auml;mning) vid behandling av<span style=\"color: #ff0000;\"> febril UVI.</span> <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">akut pyelonefri</span><span style=\"color: #ff0000; text-decoration: line-through;\">t, s&auml;rskilt hos barn, vilka ytterst s&auml;llan drabbas av sv&aring;ra biverkningar.</span></span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e6d67ffa-5df0-4df8-9ff1-79f2ffcef8a4",
+			"name": "e6d67ffa-5df0-4df8-9ff1-79f2ffcef8a4",
+			"type": "text",
+			"content": "<h2 id=\"g3_22\">UVI hos barn</h2>\n<p>Barnets &aring;lder och infektionens lokalisation &auml;r avg&ouml;rande f&ouml;r symtombilden. H&ouml;g feber &auml;r det vanligaste fyndet, men under de f&ouml;rsta levnadsm&aring;naderna kan symtomen vara diskreta med d&aring;lig vikt&ouml;kning, sl&ouml;het eller l&aring;ggradig feber. Akut pyelonefrit &auml;r den dominerande infektionstypen under de tv&aring; f&ouml;rsta levnads&aring;ren, d&auml;refter blir cystit vanligare och dominerar helt fr&aring;n skol&aring;ldern.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a93b4119-c40b-422e-bf32-fdfe491ae573",
+			"name": "a93b4119-c40b-422e-bf32-fdfe491ae573",
+			"type": "text",
+			"content": "<h3 id=\"g3_23\"><span style=\"color: #ff0000;\">Febril UVI <span style=\"text-decoration: line-through;\">Akut pyelonefrit</span></span></h3>\n<p>H&ouml;g feber &auml;r kardinalsymtomet vid <span style=\"text-decoration: line-through; color: #ff0000;\">akut pyelonefrit</span> <span style=\"color: #ff0000;\">febril UVI</span> med gr&auml;nsen satt vid <span>&ge;</span>&nbsp;38,5&nbsp;&deg;C. Allm&auml;np&aring;verkan med sl&ouml;het, anorexi och kr&auml;kningar f&ouml;rekommer ofta, men en del barn &auml;r relativt op&aring;verkade.</p>\n<p><br>Barn kan f&ouml;re 4&ndash;5 &aring;rs &aring;lder s&auml;llan ange rygg- eller flanksm&auml;rta och &auml;ven bland &auml;ldre barn saknas detta tecken p&aring; njurengagemang i mer &auml;n h&auml;lften av fallen. Ofta saknas symtom fr&aring;n de nedre urinv&auml;garna.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5cfd8d7f-3c79-4cb7-8446-499f1973ef6c",
+			"name": "5cfd8d7f-3c79-4cb7-8446-499f1973ef6c",
+			"type": "text",
+			"content": "<h4 id=\"g3_24\">Diagnostik</h4>\n<p>Frikostig urinprovstagning vid oklar feber, fr&auml;mst av sm&aring; barn, &auml;r den enda m&ouml;jligheten att identifiera dem som har akut pyelonefrit. Vid p&aring;verkat allm&auml;ntillst&aring;nd<span style=\"color: #ff0000;\"></span> g&ouml;rs &auml;ven blododling. Snabbtester kan vara av v&auml;rde, men f&ouml;r s&auml;ker diagnostik skickas urinen f&ouml;r odling. Vid provtagning &auml;r det viktigt att minimera risken f&ouml;r kontamination och &ouml;verdiagnostik s&aring; att barnen inte uts&auml;tts f&ouml;r on&ouml;dig behandling och utredning. Bl&aring;spunktion &auml;r den b&auml;sta metoden och efterstr&auml;vas hos barn f&ouml;re 1 &aring;rs &aring;lder. Varje bakteriefynd &auml;r diagnostiskt (<span>&ge;</span>&nbsp;10<sup>2</sup>&nbsp;CFU/ml) (1). N&auml;r bl&aring;spunktion ej kan g&ouml;ras tas ett kastat prov eller mittstr&aring;leprov, vilket oftast lyckas &auml;ven hos mindre barn utan bl&aring;skontroll. F&ouml;r diagnostisk gr&auml;ns f&ouml;r mittstr&aring;leprov, se Faktaruta 3. P&aring;sprov rekommenderas ej f&ouml;r UVI-diagnostik. Som alternativ till bl&aring;spunktion kan prov f&ouml;r odling erh&aring;llas via eng&aring;ngskateterisering av urinbl&aring;san varvid en diagnostisk bakteriehalt &auml;r <span>&ge;</span>&nbsp;10<sup>3</sup>&nbsp;CFU/ml.</p>\n<p><span> <br></span>Vid <span style=\"text-decoration: line-through; color: #ff0000;\">akut</span><span style=\"color: #ff0000;\"> </span><span style=\"color: #ff0000;\"><span style=\"text-decoration: line-through;\">pyelonefrit</span> febril UVI</span> brukar CRP stiga. Vid kort feberduration &auml;r det v&auml;rdefullt att ta ett nytt prov eftersom det tar minst ett dygn f&ouml;r CRP att stiga maximalt. F&ouml;r barn med f&ouml;rstag&aring;ngsinfektion b&ouml;r P/S-kreatinin kontrolleras.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0e57730a-ce54-4974-85fb-821ba10716e5",
+			"name": "0e57730a-ce54-4974-85fb-821ba10716e5",
+			"type": "text",
+			"content": "<h4 id=\"g3_31\">Behandling</h4>\n<p>Sm&aring; barn med feber eller p&aring;verkat allm&auml;ntillst&aring;nd b&ouml;r de f&ouml;rsta dygnen &ouml;vervakas p&aring; sjukhus eller kontrolleras genom snabbt &aring;terbes&ouml;k. Intraven&ouml;s behandling &auml;r indicerad vid allm&auml;np&aring;verkan eller kr&auml;kningar.</p>\n<p><br>F&ouml;rstahandsval vid intraven&ouml;s behandling &auml;r en cefotaxim. Vid peroral behandling v&auml;ljs&nbsp;<span style=\"color: #ff0000;\">i f&ouml;rsta hand ceftibuten, som &auml;r ett licensl&auml;kemedel, och i andra hand trimetoprim-sulfametoxazol</span> <span style=\"text-decoration: line-through; color: #ff0000;\">en cefalosporin (ceftibuten) (2) eller trimetoprim-sulfa </span>(efter resistensbest&auml;mning), se &auml;ven Terapirekommendationerna. Ciprofloxacin &auml;r ett alternativ<span style=\"color: #ff0000;\"> f&ouml;r barn &auml;ldre &auml;n tv&aring; &aring;r.</span> <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">vid recidiverande eller komplicerad pyelonefrit.</span></span></p>\n<p><br>Intraven&ouml;s behandling kan efter n&aring;gra doser vanligen f&ouml;ljas av peroral tillf&ouml;rsel. En total behandlingstid om 10 dagar &auml;r tillr&auml;cklig.</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6bac2ddf-87e8-43b4-913e-8559236ac8e7",
+			"name": "6bac2ddf-87e8-43b4-913e-8559236ac8e7",
+			"type": "text",
+			"content": "<h4 id=\"g3_33\">Utredning</h4>\n<p>Behovet av utredning av barn med<span style=\"color: #ff0000;\"> febril UVI</span> <span style=\"text-decoration: line-through; color: #ff0000;\">pyelonefrit</span> har diskuterats livligt under senare &aring;r. En del f&ouml;respr&aring;kar ultraljudsunders&ouml;kning av endast de minsta barnen och mer omfattande utredning inkluderande bl&aring;sr&ouml;ntgen f&ouml;rst vid recidiv. Andra f&ouml;rordar en mer utf&ouml;rlig utredning redan vid f&ouml;rsta infektionen. I Sverige &auml;r majoriteten av barnl&auml;karna inriktade p&aring; ett stegvis f&ouml;rfarande i utredningen. Ultraljud &auml;r basunders&ouml;kning. DMSA-skintigrafi &auml;r indicerad vid h&ouml;gt CRP (&ge; 70 mg/l) (3). Endast om patologiska fynd p&aring;visas vid ultraljud (framf&ouml;r allt dilatation av njurb&auml;cken och urinledare) eller DMSA-skintigrafi g&aring;r man vidare med bl&aring;sr&ouml;ntgen. Tidpunkten f&ouml;r unders&ouml;kningarna varierar beroende p&aring;<span style=\"color: #ff0000;\"> olika f&ouml;ruts&auml;ttningar</span> <span style=\"text-decoration: line-through; color: #ff0000;\">kapacitet </span>(4,5).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "91ed54c7-12ba-4c94-81ef-e6816fa08ee0",
+			"name": "91ed54c7-12ba-4c94-81ef-e6816fa08ee0",
+			"type": "text",
+			"content": "<h4 id=\"g3_34\">Uppf&ouml;ljning</h4>\n<p><span style=\"color: #ff0000;\">Barn yngre &auml;n tv&aring; &aring;r och de med n&aring;gon form av komplikation b&ouml;r handl&auml;ggas av barnl&auml;kare. <span style=\"text-decoration: line-through;\">Rutinm&auml;ssiga odlingar har ett begr&auml;nsat v&auml;rde</span></span> <span style=\"color: #ff0000;\">Urinodling &auml;r on&ouml;dig </span>d&aring; det inte &auml;r meningsfullt att p&aring;visa asymtomatisk bakteriuri.</p>\n<p><br>Uppf&ouml;ljning rekommenderas om ultraljud visar dilatation eller DMSA-skintigrafi visar njurp&aring;verkan. &Ouml;vriga fall kan avslutas efter genomf&ouml;rd basutredning (ultraljud och DMSA-skintigrafi). <span style=\"text-decoration: line-through; color: #ff0000;\">Barn med n&aring;gon form av komplikation b&ouml;r handl&auml;ggas av, eller i samr&aring;d med, barnl&auml;kare.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "bb81d240-5b6e-49c9-838f-78f02bbb8892",
+			"name": "bb81d240-5b6e-49c9-838f-78f02bbb8892",
+			"type": "text",
+			"content": "<h4 id=\"g3_35\"><a class=\"index\" id=\"1037470\" data-text=\"pyelonefrit:antibiotikaprofylax\"></a>Antibiotikaprofylax</h4>\n<p>V&auml;rdet av antibiotikaprofylax har ifr&aring;gasatts under senare &aring;r. Kvarst&aring;ende indikation &auml;r upprepade febrila recidiv och vesikoureteral reflux med dilatation (grad III&ndash;V) under sp&auml;dbarns&aring;ret f&ouml;r b&aring;de flickor och pojkar och efter 1 &aring;rs &aring;lder f&ouml;r flickor. Som profylax ges nitrofurantoin (1 mg/kg kroppsvikt) eller trimetoprim (0,5&ndash;1 mg/kg kroppsvikt) till natten (<span style=\"color: #ff0000;\">6</span>).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "40259855-8e04-4d15-b645-824c1f567957",
+			"name": "40259855-8e04-4d15-b645-824c1f567957",
+			"type": "text",
+			"content": "<h3 id=\"g3_36\"><a class=\"crossref\" id=\"80489\"></a>Akut <a class=\"index\" id=\"1021563\" data-text=\"cystit:barn\"></a>cystit</h3>\n<p>Kardinalsymtomet vid akut cystit &auml;r akuta miktionsbesv&auml;r, s&auml;rskilt dysuri. T&auml;ta tr&auml;ngningar och sv&aring;righet att h&aring;lla t&auml;tt f&ouml;rekommer ocks&aring;. F&ouml;rst vid 2&nbsp;&aring;rs &aring;lder blir s&aring;dana symtom l&auml;tta att identifiera och diagnosen akut cystit d&auml;rmed m&ouml;jlig att st&auml;lla.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6ea9584a-2bb8-4afc-8283-e37df0ac04ea",
+			"name": "6ea9584a-2bb8-4afc-8283-e37df0ac04ea",
+			"type": "text",
+			"content": "<h4 id=\"g3_37\">Diagnostik</h4>\n<p>Symtom fr&aring;n de nedre urinv&auml;garna betyder inte alltid UVI. Det &auml;r viktigt att inspektera genitalia f&ouml;r att utesluta vulvit, s&aring;r vid meatus eller labiasynekier. Urinprov tas f&ouml;r analys av pyuri och nitrit samt f&ouml;r odling. Pyuri f&ouml;religger n&auml;stan alltid, men p&aring; grund av kort bl&aring;stid blir ofta bakteriehalten l&aring;g och nitrittestet negativt.</p>\n<p><br>Det kan vara av v&auml;rde att m&auml;ta CRP f&ouml;r att med st&ouml;rre s&auml;kerhet kunna utesluta njurengagemang.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ef54c176-c78f-43f8-94ed-5b6741ad9892",
+			"name": "ef54c176-c78f-43f8-94ed-5b6741ad9892",
+			"type": "text",
+			"content": "<h4 id=\"g3_38\">Behandling</h4>\n<p>Flertalet barn som har kraftiga akuta miktionsbesv&auml;r har bakteriell cystit och om pyuri eller positivt nitrittest f&ouml;religger startas behandling genast. Om symtomen d&auml;remot &auml;r lindriga eller diffusa finns anledning att inv&auml;nta odlingsresultatet.</p>\n<p><br>F&ouml;rstahandspreparat &auml;r nitrofurantoin, pivmecillinam och trimetoprim. En behandlingstid om 3&ndash;5&nbsp;dagar &auml;r tillr&auml;cklig (se Terapirekommendationerna).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "05df892a-5523-466c-8990-2e97a9cb2d7d",
+			"name": "05df892a-5523-466c-8990-2e97a9cb2d7d",
+			"type": "text",
+			"content": "<h4 id=\"g3_39\">Uppf&ouml;ljning</h4>\n<p>Vid t&auml;ta recidiv ska barnets miktionsm&ouml;nster och fl&ouml;deskurva bed&ouml;mas och residualurin best&auml;mmas. L&auml;mpliga r&aring;d ges om bl&aring;s- och tarmregim. Familjen beh&ouml;ver en kontinuerlig l&auml;karkontakt och det kan finnas sk&auml;l att diskutera l&aring;gdosprofylax med nitrofurantoin eller trimetoprim under 6&nbsp;m&aring;nader.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b79da629-ec3c-481d-883a-a1d5e6545c1b",
+			"name": "b79da629-ec3c-481d-883a-a1d5e6545c1b",
+			"type": "text",
+			"content": "<h2 id=\"g3_40\"><a class=\"index\" id=\"1038114\" data-text=\"urinv&#xE4;gsinfektioner:kvinnor\"></a>UVI hos kvinnor</h2>\n<h3 id=\"g3_41\">Akut <a class=\"index\" id=\"1037404\" data-text=\"cystit:kvinnor\"></a>cystit</h3>\n<p>Kvinnor som s&ouml;ker f&ouml;r akut ins&auml;ttande dysuri, t&auml;ta urintr&auml;ngningar och frekventa miktioner har med stor sannolikhet en bakteriell cystit. Samtidig f&ouml;rekomst av fluor vaginalis eller underlivskl&aring;da minskar sannolikheten f&ouml;r bakteriell cystit. I s&aring;dana fall f&aring;r man differentialdiagnostiskt &ouml;verv&auml;ga urogenital infektion orsakad av sexuellt &ouml;verf&ouml;rbara mikroorganismer, som klamydia och herpes, vulvovaginit och icke-infekti&ouml;sa orsaker som atrofiska slemhinnor hos kvinnor postmenopausalt (s&aring; kallat urogenitalt &ouml;strogenbristsyndrom).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "94066bf1-c2fa-440a-94d2-a2f5b9b6fcf9",
+			"name": "94066bf1-c2fa-440a-94d2-a2f5b9b6fcf9",
+			"type": "text",
+			"content": "<h4 id=\"g3_42\">Diagnostik</h4>\n<p>Vid sporadiska episoder med typiska cystitsymtom kan empirisk antibiotikabehandling p&aring;b&ouml;rjas direkt utan f&ouml;reg&aring;ende provtagning. Urinprov skickas f&ouml;r odling och resistensbest&auml;mning vid sjukhusv&aring;rd eller vistelse i l&auml;nder med &ouml;kad antibiotikaresistens under det senaste halv&aring;ret, terapisvikt eller t&auml;tt recidiverande infektioner.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "dffb7c44-2b3e-433e-9fd7-808c6da8165e",
+			"name": "dffb7c44-2b3e-433e-9fd7-808c6da8165e",
+			"type": "text",
+			"content": "<h4 id=\"g3_43\">Behandling<em> </em></h4>\n<p>Prim&auml;rpatogenerna E.&nbsp;coli och S.&nbsp;saprophyticus orsakar &gt;&nbsp;90&nbsp;% av alla cystitepisoder hos patienter i prim&auml;rv&aring;rden. Vid sporadiska infektioner f&ouml;religger i regel full k&auml;nslighet f&ouml;r samtliga urinv&auml;gsantibiotika. Vid recidiv och upprepade antibiotikakurer &ouml;kar risken f&ouml;r resistensutveckling.</p>\n<p><br>Syftet med antibiotikabehandling &auml;r fr&auml;mst att f&ouml;rkorta symtomdurationen men &auml;ven att f&ouml;rhindra att bakterierna sprids till njurarna och orsakar akut pyelonefrit. En behandlingstid p&aring; 3&ndash;5&nbsp;dygn &auml;r tillr&auml;cklig. L&auml;ngre kurer ger inte b&auml;ttre resultat. Trimetoprim ges under 3&nbsp;dygn eftersom terapeutiska koncentrationer kvarst&aring;r i urinen under flera dygn efter den sista dosen. Cefalosporiner, nitrofurantoin och pivmecillinam b&ouml;r d&auml;remot, p&aring; grund av snabbare elimination, ges under 5&nbsp;dygn.</p>\n<p><br>Som f&ouml;rstahandsval rekommenderas nitrofurantoin och pivmecillinam. Kinoloner ska inte anv&auml;ndas f&ouml;r behandling av cystit. Efterkontroll &auml;r inte n&ouml;dv&auml;ndig. Om patienten inte blir symtomfri under p&aring;g&aring;ende behandling (terapisvikt) rekommenderas urinodling. Om denna &auml;r negativ f&aring;r annan orsak till besv&auml;ren s&ouml;kas.</p>\n<p><br>Fosfomycin (licenspreparat, Monuril granulat till oral l&ouml;sning 3&nbsp;g) &auml;r ibland det enda perorala alternativet f&ouml;r behandling av cystit orsakad av multiresistenta ESBL-producerande E.&nbsp;coli och Klebsiella.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c296a3bd-dccf-48fa-a371-f286904f856e",
+			"name": "c296a3bd-dccf-48fa-a371-f286904f856e",
+			"type": "text",
+			"content": "<h3 id=\"g3_44\"><a class=\"index\" id=\"1021591\" data-text=\"urinv&#xE4;gsinfektioner:recidiv\"></a>Recidiverande <a class=\"index\" id=\"1021592\" data-text=\"cystit:recidiv\"></a>cystit</h3>\n<p>Vid upprepade infektioner <span style=\"color: #ff0000;\">b&ouml;r </span>profylaktiska &aring;tg&auml;rder <span style=\"color: #ff0000;\">vidtagas</span>. Recidiven beror p&aring; en &ouml;kad ben&auml;genhet f&ouml;r kolonisering med urinv&auml;gspatogener i den vaginala mikrofloran.</p>\n<p class=\"indent\"><br><span style=\"color: #ff0000;\">Sjunkande &ouml;strogenniv&aring;er efter menopaus, liksom anv&auml;ndning av pessar eller kondom med spermied&ouml;dande medel reducerar halten laktobaciller i vaginalfloran </span>och underl&auml;ttar d&auml;rmed kolonisering med uropatogena tarmbakterier, vilket medf&ouml;r en &ouml;kad recidivrisk.<br><br>Det &auml;r v&auml;l dokumenterat att kvinnor med recidiverande cystit vanligen har normala urinv&auml;gar, varf&ouml;r utredning med r&ouml;ntgen, ultraljud eller cystoskopi inte &auml;r n&ouml;dv&auml;ndig. Vid <span style=\"color: #ff0000;\">&aring;terkommande </span>fynd av stenbildande bakterier, till exempel Proteus,<span style=\"font-style: italic;\"> </span>eller om cystitepisoderna interfolieras med pyelonefritattacker b&ouml;r utredning d&auml;remot ske. Det finns s&auml;llan sk&auml;l att upprepa radiologisk utredning om den tidigare visat normala f&ouml;rh&aring;llanden. Gynekologisk unders&ouml;kning g&ouml;rs f&ouml;r att utesluta predisponerande &aring;kommor, till exempel prolaps eller atrofiska slemhinnor hos &auml;ldre kvinnor (&ouml;strogenbrist).</p>\n<p><br>Anamnesen b&ouml;r inriktas p&aring; miktionsm&ouml;nster, urinfl&ouml;de och f&ouml;rekomst av urinl&auml;ckage. Vid misstanke om bl&aring;sdysfunktion rekommenderas urodynamisk utredning med registrering av urinfl&ouml;desprofil, maximalt urinfl&ouml;de och m&auml;tning av residualurin med ultraljud. Urinodling med resistensbest&auml;mning b&ouml;r g&ouml;ras <span style=\"color: #ff0000;\">eftersom upprepade antibiotikakurer riskerar att selektera fram resistenta bakterier</span>. Undvik att behandla med samma preparat som vid n&auml;rmast f&ouml;reg&aring;ende tillf&auml;lle. <span style=\"color: #ff0000;\">Samma preparat</span> och samma behandlingstid (3&ndash;5 dygn) anv&auml;nds som vid sporadisk cystit. L&auml;ngre kurer ger inte b&auml;ttre resultat. Patienten informeras om &aring;kommans ofarliga natur. I f&ouml;rebyggande syfte ges r&aring;d om regelbunden bl&aring;st&ouml;mning och att undvika pessar eller kondom med spermied&ouml;dande medel som preventivmetod. Kvinnor i postmenopausal &aring;lder b&ouml;r erbjudas behandling med &ouml;striol som kr&auml;m eller vagitorier f&ouml;r lokal applikation (se vidare i kapitlet Allm&auml;n gynekologi, avsnittet <a href=\"{pre}/kapitel/gynekologi/allman_gynekologi.html#i3_47\">Klimakteriebesv&auml;r</a>).</p>\n<p><br>Antibiotika f&aring;r ofta tillgripas f&ouml;r att minska recidivfrekvensen. Detta kan g&ouml;ras enligt tv&aring; olika strategier.</p>\n<ul>\n<li><span class=\"tab\"></span>Antibiotika efter samlag har en v&auml;l dokumenterad effekt. De mest bepr&ouml;vade preparaten &auml;r nitrofurantoin 50&nbsp;mg och trimetoprim 100&nbsp;mg som eng&aring;ngsdos.</li>\n<li><span class=\"tab\"></span>Kontinuerlig profylax med ett av ovanst&aring;ende preparat i samma dos till natten fungerar ocks&aring; bra. Nitrofurantoin rekommenderas till unga kvinnor som &auml;r, eller planerar att bli, gravida.</li>\n</ul>\n<p><span class=\"tab\"></span>Den profylaktiska effekten av metenaminhippurat (Hiprex) saknar tillfredsst&auml;llande vetenskaplig dokumentation. Tranb&auml;rsjuice saknar f&ouml;rebyggande effekt, vilket framg&aring;r av <span style=\"color: #ff0000;\">tre randomiserade, dubbelblinda studier p&aring; unga och medel&aring;lders kvinnor</span> <span style=\"color: #ff0000;\">(7,8,9).</span></p>\n<p><br>Antibiotikaprofylaxen kan&nbsp;<span style=\"color: #ff0000;\">avslutas</span> efter 4&ndash;6 m&aring;nader, i f&ouml;rhoppning att infektionsben&auml;genheten avtagit. F&ouml;r somliga kvinnor kan tidigt insatt sj&auml;lvbehandling med l&auml;mpligt antibiotikum under n&aring;gra dygn fungera bra.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "acf3fdc7-cce0-467c-b5c8-40cc5cafd8ff",
+			"name": "acf3fdc7-cce0-467c-b5c8-40cc5cafd8ff",
+			"type": "text",
+			"content": "<h3 id=\"g3_45\">Akut <a class=\"index\" id=\"1021610\" data-text=\"pyelonefrit:kvinnor\"></a>pyelonefrit</h3>\n<p>Den klassiska sjukdomsbilden karakteriseras av pl&ouml;tsligt insjuknande i h&ouml;g feber och frossa, flanksm&auml;rta, illam&aring;ende och kr&auml;kningar. Miktionsbesv&auml;r saknas hos omkring en tredjedel av patienterna. Akut pyelonefrit &auml;r en potentiellt allvarlig sjukdom. Positiva blododlingar f&ouml;rekommer i 20&ndash;30&nbsp;% av fallen och &auml;r &auml;nnu vanligare hos &auml;ldre patienter, som l&ouml;per &ouml;kad risk f&ouml;r komplikationer i form av sv&aring;r sepsis och chock. Sjukdomsbilden &auml;r ofta atypisk hos &auml;ldre individer. H&ouml;g feber, kr&auml;kningar och diarr&eacute; utan flanksm&auml;rta eller dunk&ouml;mhet &ouml;ver njurloger kan vara de enda symtomen p&aring; urosepsis. I oklara fall kan CRP vara till hj&auml;lp f&ouml;r att bed&ouml;ma infektionens invasivitet.</p>\n<p><br>Sjukhusv&aring;rd &ouml;verv&auml;gs, fr&auml;mst f&ouml;r <a class=\"index\" id=\"1037385\" data-text=\"pyelonefrit:graviditet\"></a>gravida och &auml;ldre kvinnor, samt vid septisk allm&auml;np&aring;verkan eller illam&aring;ende och kr&auml;kningar.</p>\n<p><br>Urinprov f&ouml;r odling och resistensbest&auml;mning ska alltid tas innan behandling med antibiotika p&aring;b&ouml;rjas. P&aring; sjukhus rekommenderas &auml;ven blododlingar. Terapin kan i efterhand beh&ouml;va korrigeras med ledning av k&auml;nslighetsm&ouml;nstret, &auml;ven om patienten blivit kliniskt f&ouml;rb&auml;ttrad.</p>\n<p class=\"indent\"><br>P&aring; sjukhus inleds behandlingen vanligen med cefotaxim, 1&nbsp;g&nbsp;3&nbsp;g&aring;nger/dag intraven&ouml;st, alternativt med en aminoglykosid som doseras 1&nbsp;g&aring;ng/dag. F&ouml;r peroral behandling v&auml;ljs i f&ouml;rsta hand ciprofloxacin. Som alternativ finns trimetoprim-sulfa, men p&aring; grund av h&ouml;g resistens hos<span style=\"font-style: italic;\"> </span>E.&nbsp;coli (cirka 20&nbsp;%) b&ouml;r behandling med detta preparat ins&auml;ttas f&ouml;rst efter resistensbest&auml;mning. I tredje hand kan en cefalosporin, till exempel ceftibuten, anv&auml;ndas men recidivrisken &auml;r d&aring; h&ouml;gre &auml;n med kinoloner och trimetoprim-sulfa.</p>\n<p><br>Rekommenderad behandlingstid &auml;r 7&ndash;10&nbsp;dagar. Anv&auml;nds ciprofloxacin &auml;r 7&nbsp;dagars behandling tillr&auml;cklig. I en svensk, placebokontrollerad, multicenter studie av akut pyelonefrit hos kvinnor var 7&nbsp;dagars behandling med ciprofloxacin lika effektiv som en 14-dagarskur <span style=\"color: #ff0000;\">(10)</span>. <span style=\"color: #ff0000;\">Efterkontroll per telefon eller vid &aring;terbes&ouml;k</span> f&ouml;r att konstatera klinisk utl&auml;kning g&ouml;rs cirka 2&nbsp;veckor efter avslutad behandling. Urinodling rekommenderas om infektionen orsakas av potentiellt stenbildande bakterier som Proteus eller vid terapisvikt. Om f&ouml;rloppet &auml;r komplikationsfritt och efterunders&ouml;kningen &auml;r inv&auml;ndningsfri beh&ouml;vs ingen utredning med r&ouml;ntgen eller ultraljud. Vid terapisvikt, trots adekvat antibiotikabehandling, g&ouml;rs akut radiologisk utredning p&aring; misstanke om avst&auml;ngd pyelonefrit eller njurabscess.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2cfca7e4-5192-4c41-8108-4ea86bc82390",
+			"name": "2cfca7e4-5192-4c41-8108-4ea86bc82390",
+			"type": "text",
+			"content": "<h3 id=\"g3_46\"><a class=\"crossref\" id=\"25134\"></a>UVI under <a class=\"index\" id=\"1021620\" data-text=\"urinv&#xE4;gsinfektioner:graviditet;graviditet:UVI\"></a>graviditet</h3>\n<p>Den hormonella omst&auml;llningen ger relaxation av muskeltonus, vilket medf&ouml;r en f&ouml;rl&aring;ngsammad urinpassage och hydronefros, som &auml;r mest uttalad under den senare delen av graviditeten. Obehandlad ABU medf&ouml;r d&auml;rf&ouml;r en &ouml;kad risk f&ouml;r akut pyelonefrit (20&ndash;40&nbsp;%), varf&ouml;r screening med urinodling g&ouml;rs tidigt under graviditeten, optimalt i graviditetsvecka 16.</p>\n<p><br>L&auml;mplig behandling &auml;r nitrofurantoin, pivmecillinam eller en cefalosporin i 5&nbsp;dagar. Efterkontroll med urinodling g&ouml;rs f&ouml;r att konstatera utl&auml;kning. Samma regim kan till&auml;mpas f&ouml;r behandling av cystit.</p>\n<p><br>Vid akut pyelonefrit l&auml;ggs patienten vanligen in p&aring; kvinnoklinik, eftersom det finns risk f&ouml;r prematur f&ouml;dsel och andra komplikationer. Behandlingen inleds med cefotaxim 1&nbsp;g&nbsp;4&nbsp;g&aring;nger/dag intraven&ouml;st f&ouml;ljt av ceftibuten 400&nbsp;mg&nbsp;2&nbsp;g&aring;nger/dag i sammanlagt 10 dagar. Direkt efter avslutad behandling rekommenderas reinfektionsprofylax med nitrofurantoin, 50&nbsp;mg till natten, under &aring;terstoden av graviditeten. S&aring;dan profylax b&ouml;r &auml;ven ges vid recidiverande ABU och recidiverande cystit.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "21a2bd2e-295f-4ba3-8551-5ad82c5ba687",
+			"name": "21a2bd2e-295f-4ba3-8551-5ad82c5ba687",
+			"type": "text",
+			"content": "<h3 id=\"g3_47\"><a class=\"index\" id=\"1021630\" data-text=\"urinv&#xE4;gsinfektioner:&#xE4;ldre\"></a><a class=\"crossref\" id=\"66756\"></a>UVI hos &auml;ldre kvinnor</h3>\n<p>Prevalensen av ABU och incidensen av symtomgivande UVI &ouml;kar med &aring;ldern. Symtombilden &auml;r ofta diffus och sv&aring;rtolkad, vilket ger diagnostiska problem. Dysuri orsakas inte s&auml;llan av slemhinneatrofi (&ouml;strogenbrist). Eftersom ABU &auml;r vanlig hos &auml;ldre kvinnor inneb&auml;r inte f&ouml;rekomst av nitritpositiv urin att eventuell feber har sitt ursprung i urinv&auml;garna.</p>\n<p><br>Diagnosen symtomgivande UVI kan vara sv&aring;r att st&auml;lla hos &auml;ldre kvinnor i s&auml;rskilda boenden p&aring; grund av h&ouml;g prevalens av ABU <span style=\"color: #ff0000;\">(25&ndash;50 %)</span>, f&ouml;rekomst av kroniska urogenitala besv&auml;r och sv&aring;righeter att kommunicera. &Ouml;verdiagnostik &auml;r vanligt och bidrar till on&ouml;dig antibiotikakonsumtion och resistensutveckling. Ospecifika symtom som <span style=\"color: #ff0000;\">oro, tr&ouml;tthet, </span>f&ouml;rvirring och nedsatt aptit tillsammans med positivt nitrittest och/eller positiv urinodling ska inte misstolkas som symtomgivande UVI och inte heller behandlas med antibiotika.<span style=\"color: #ff0000;\">(11)</span></p>\n<p><br><span style=\"color: #ff0000;\">Cystit och pyelonefrit hos &auml;ldre kvinnor behandlas med samma preparat och behandlingstider som hos yngre kvinnor</span>. Dosreduktion b&ouml;r &ouml;verv&auml;gas hos &auml;ldre individer p&aring; grund av den fysiologiskt s&auml;nkta njurfunktionen.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "50ef62d3-f5bd-4254-873f-858de2da06b8",
+			"name": "50ef62d3-f5bd-4254-873f-858de2da06b8",
+			"type": "text",
+			"content": "<h2 id=\"g3_48\">UVI hos m&auml;n</h2>\n<p>UVI &auml;r relativt ovanligt hos unga och medel&aring;lders m&auml;n. Incidensen &ouml;kar med &aring;ldern, vilket delvis beror p&aring; instrumentering av nedre urinv&auml;garna. Prostataengagemang av infektionen &auml;r vanligt f&ouml;rekommande, &auml;ven om prostatitsymtom saknas. M&auml;n som drabbas av recidiverande UVI, oavsett klinisk manifestation, har ofta en underliggande kronisk bakteriell prostatit. Bakterierna &rdquo;g&ouml;mmer sig&rdquo; i biofilmer och f&ouml;rkalkningar i prostata, vilket inneb&auml;r att de sv&aring;rligen kan elimineras med antibiotika. Det &auml;r ok&auml;nt varf&ouml;r bakterierna aktiveras och ibland kommer ut i urinen eller blodbanan. <span style=\"color: #ff0000;\">Vid febril UVI, oavsett kliniska tecken p&aring; akut pyelonefrit, ses i mer &auml;n 90 % av fallen en &ouml;verg&aring;ende stegring av S-PSA.</span></p>\n<p><br>Oavsett infektionstyp b&ouml;r alltid urinodling med art- och resistensbest&auml;mning g&ouml;ras.</p>\n<p><br>Vid UVI med feber v&auml;ljs i f&ouml;rsta hand ciprofloxacin och i andra hand trimetoprim <span style=\"color: #ff0000;\">(efter resistensbest&auml;mning)</span>. B&aring;da preparaten ger goda koncentrationer i prostata och kan d&aring; d&auml;mpa bakterieaktiviteten utanf&ouml;r biofilmer och f&ouml;rkalkningar och d&auml;rmed f&aring; den akuta infektionen under kontroll. Trimetoprim-sulfa har inga f&ouml;rdelar framf&ouml;r trimetoprim, eftersom sulfakomponenten inte n&aring;r terapeutiska koncentrationer i prostata. &Auml;ven om patienten initialt ges parenteral terapi, med till exempel en cefalosporin, b&ouml;r den perorala uppf&ouml;ljningen ske med ciprofloxacin <span style=\"color: #ff0000;\">(f&ouml;rstahandsalternativ) </span>eller trimetoprim. Vid resistens mot b&aring;de ciprofloxacin och trimetoprim rekommenderas ceftibuten. Den sammanlagda behandlingstiden b&ouml;r uppg&aring; till 2 veckor. L&auml;ngre kurer har inte visats vara effektivare.<span style=\"color: #ff0000;\">(12)</span></p>\n<p><br>Vid symtomgivande UVI utan feber efterstr&auml;vas framf&ouml;r allt en h&ouml;g antibakteriell aktivitet i urinen f&ouml;r att uppn&aring; symtomfrihet.<span style=\"color: #ff0000;\"> Ciprofloxacin kan i dessa fall undvaras eftersom eventuell samtidig infektion i prostata inte kan eradikeras. F&ouml;r empirisk behandling rekommenderas i f&ouml;rsta hand nitrofurantoin eller pivmecillinam</span>. Sju dagars behandling torde i de flesta fall vara tillr&auml;cklig (inte evidensbaserat).</p>\n<p><br>Kontroll g&ouml;rs 2&nbsp;veckor efter avslutad behandling f&ouml;r att konstatera klinisk utl&auml;kning. Urinodling rekommenderas om infektionen <span style=\"color: #ff0000;\"><span style=\"text-decoration: line-through;\">orsakas</span> orsakades</span> av stenbildande bakterier, till exempel Proteus. Om infektionen l&auml;ker ut komplikationsfritt beh&ouml;ver inte radiologisk unders&ouml;kning av urinv&auml;garna g&ouml;ras. S&aring;dan utredning &auml;r fr&auml;mst indicerad vid upprepade recidiv och b&ouml;r d&aring; &auml;ven inkludera urinfl&ouml;desm&auml;tning och residualurinbest&auml;mning med ultraljud samt uretrocystoskopi.</p>\n<p><br>Vid t&auml;ta symtomgivande UVI f&aring;r l&aring;ngvarig&nbsp;<span style=\"color: #ff0000;\">(6&ndash;12 m&aring;nader)</span> suppressiv behandling &ouml;verv&auml;gas med ett antibiotikum som isolerad bakterie &auml;r k&auml;nslig f&ouml;r. Se &auml;ven kapitlet Sjukdomar i manliga genitalia, avsnittet <a href=\"{pre}/kapitel/nefrologi-urologi/sjukdomar_i_manliga_genitalia.html#g5_21\">Prostatit</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7a08028b-9b3e-48ef-992a-9d944c1c2765",
+			"name": "7a08028b-9b3e-48ef-992a-9d944c1c2765",
+			"type": "text",
+			"content": "<h2 id=\"g3_49\"><a class=\"index\" id=\"1023903\" data-text=\"urinv&#xE4;gsinfektioner:KAD-associerad\"></a><a class=\"crossref\" id=\"86246\"></a>UVI hos patienter med <a class=\"index\" id=\"1023904\" data-text=\"KAD:UVI\"></a>KAD</h2>\n<p><span style=\"color: #ff0000;\">Efter 10&ndash;14 dagar har alla patienter med kvarkateter (KAD) bakteriuri. Bakterier transporteras till urinbl&aring;san i en biofilm som f&ouml;rst bildas p&aring; kateterns utsida och efterhand &auml;ven l&auml;ngs dess insida. Vid l&aring;ngtidskateterisering etableras en polymikrobiell flora best&aring;ende av olika bakteriearter med varierande resistensm&ouml;nster samt j&auml;stsvamp i urinen. Proteusbakterier kan orsaka utf&auml;llning av kristaller p&aring; katetern och slemhinnan i urinbl&aring;san med risk f&ouml;r komplikationer i form av stenbildning, grumlig urin och stopp f&ouml;r urinavfl&ouml;det. Vid kateterstopp hos l&aring;ngtidsb&auml;rare av KAD och samtidigt fynd av Proteus i urinodling &ouml;verv&auml;gs uretrocytstoskopi f&ouml;r att utesluta f&ouml;rekomst av infektionsstenar i urinbl&aring;san.</span></p>\n<p><span style=\"color: #ff0000;\">&nbsp;</span></p>\n<p><span style=\"color: #ff0000;\">&Ouml;verdiagnostik av UVI &auml;r vanligt f&ouml;rekommande hos kateterb&auml;rare. Irritativa symtom som sveda, tr&auml;ngningar och urinl&auml;ckage beror s&auml;llan p&aring; infektion. Feber hos patient med KAD har ofta annan orsak &auml;n UVI i fr&aring;nvaro av flanksm&auml;rta, suprapubisk sm&auml;rta eller akut stopp f&ouml;r urinavfl&ouml;det.</span></p>\n<p><span style=\"color: #ff0000;\">&nbsp;</span></p>\n<p><span style=\"color: #ff0000;\">Innan antibiotikabehandling p&aring;b&ouml;rjas tas alltid urinprov f&ouml;r odling och resistensbest&auml;mning. Detta sker b&auml;st genom att den gamla biofilmkl&auml;dda katetern avl&auml;gsnas och ers&auml;tts med en ny ur vilken urin tillvaratas f&ouml;r odling. Blododling g&ouml;rs p&aring; sjukhus vid misst&auml;nkt febril UVI.</span></p>\n<p><span style=\"color: #ff0000;\">&nbsp;</span></p>\n<p><span style=\"color: #ff0000;\">F&ouml;r inledande parenteral behandling av febril UVI rekommenderas cefotaxim 1&nbsp;g&nbsp;3&nbsp;g&aring;nger/dag eller piperacillin/tazobaktam 4&nbsp;g&nbsp;3&nbsp;g&aring;nger/dag (l&aring;ngtidskateterisering). F&ouml;r peroral behandling v&auml;ljs i f&ouml;rsta hand ciprofloxacin eller ett preparat enligt resistensbesked. Patient som ofta drabbas av feber det n&auml;rmaste dygnet efter kateterbyte b&ouml;r erh&aring;lla antibiotikaprofylax vid n&auml;sta kateterbyte. Eftersom odlingssvar saknas, v&auml;ljs i f&ouml;rsta hand ciprofloxacin, 500&nbsp;mg som eng&aring;ngsdos ett par timmar f&ouml;re KAD-bytet.</span></p>\n<p><span style=\"color: #ff0000;\">&nbsp;</span></p>\n<p><span style=\"color: #ff0000;\">Metenaminhippurat (Hiprex) rekommenderas inte f&ouml;r att f&ouml;rhindra bakteriuri och grumlig urin. Nyttan av s&aring;dan l&aring;ngtidsbehandling saknar vetenskaplig dokumentation. Vid &ouml;ppet katetersystem f&ouml;rv&auml;ntas inte n&aring;gon antibakteriell effekt i urinbl&aring;san. Om urinen blir grumlig rekommenderas spolning av katetern med kranvatten.</span></p>\n<p><span style=\"color: #ff0000;\">&nbsp;</span></p>\n<p><span style=\"color: #ff0000;\">Det saknas vetenskaplig evidens f&ouml;r att katetrar impregnerade med silverf&ouml;reningar minskar risken f&ouml;r symtomgivande UVI vid kort- eller l&aring;ngtidskateterisering (13). Viss dokumentation finns f&ouml;r att s&aring;dana katetrar kan f&ouml;rdr&ouml;ja upptr&auml;dandet av bakteriuri vid korttidskateterisering. Det finns inte heller tillr&auml;ckligt st&ouml;d f&ouml;r nyttan av antibiotikakl&auml;dda katetrar (13).</span></p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5bdf4147-0be5-472f-b138-a3d7724ad06e",
+			"name": "5bdf4147-0be5-472f-b138-a3d7724ad06e",
+			"type": "therapy",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"18048\"></a>Peroral behandling av urinvägsinfektioner",
+				"id": "g3_32",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Barn</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>F&ouml;rstahandsval<a class=\"tableFootnoteLink\" href=\"#fnote_15\"><sup>a</sup></a></strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>Behandlingstid</strong></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Cystit<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Nitrofurantoin 1,5 mg/kg kroppsvikt 2 g&aring;nger/dag (ej till pojkar)<a class=\"tableFootnoteLink\" href=\"#fnote_16\"><sup>b</sup></a></div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Pivmecillinam 200 mg 3 g&aring;nger/dag (barn &gt;&nbsp;5 &aring;r)</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Trimetoprim 3 mg/kg kroppsvikt 2 g&aring;nger/dag</div>\r\n</li>\r\n</ul>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">5 dagar</div>\r\n<div class=\"tableLine\">5 dagar</div>\r\n<div class=\"tableLine\">3 dagar</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Akut pyelonefrit</div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Ceftibuten 9 mg/kg kroppsvikt (max 400 mg) 1 g&aring;ng/dag</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Trimetoprim + sulfametoxazol 3 mg/kg + 15 mg/kg kroppsvikt</div>\r\n<div class=\"tableLine\">2 g&aring;nger/dag<sup>c</sup></div>\r\n</li>\r\n</ul>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">10 dagar</div>\r\n<div class=\"tableLine\">10 dagar</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"3\">\r\n<p><strong>Ej gravida kvinnor </strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Cystit<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Nitrofurantoin 50 mg 3 g&aring;nger/dag</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Pivmecillinam 200 mg 3 g&aring;nger/dag<sup>d</sup></div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Trimetoprim 160 mg 2 g&aring;nger/dag eller 300 mg 1 g&aring;ng/dag<sup>e</sup></div>\r\n</li>\r\n</ul>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">5 dagar</div>\r\n<div class=\"tableLine\">5 dagar</div>\r\n<div class=\"tableLine\">3 dagar</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Akut pyelonefrit</div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Ciprofloxacin 500&nbsp;mg 2 g&aring;nger/dag</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Trimetoprim + sulfametoxazol 160 mg/800 mg 2 g&aring;nger/dag<sup>c</sup></div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Ceftibuten 400 mg 1 g&aring;ng/dag<sup>e</sup></div>\r\n</li>\r\n</ul>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">7 dagar</div>\r\n<div class=\"tableLine\">10 dagar</div>\r\n<div class=\"tableLine\">10 dagar</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"3\">\r\n<p><strong>Gravida kvinnor </strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Cystit<span class=\"tab\"></span></div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Nitrofurantoin 50 mg 3 g&aring;nger/dag</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Pivmecillinam 200 mg 3 g&aring;nger/dag</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Cefadroxil 1 g 1 g&aring;ng/dag<sup>e</sup></div>\r\n</li>\r\n</ul>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">5 dagar</div>\r\n<div class=\"tableLine\">5 dagar</div>\r\n<div class=\"tableLine\">5 dagar</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Akut pyelonefrit</div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Ceftibuten 400 mg 2 g&aring;nger/dag</div>\r\n</li>\r\n</ul>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">10 dagar</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"3\">\r\n<p><strong>M&auml;n</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">UVI med feber</div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Ciprofloxacin 500 mg 2 g&aring;nger/dag</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Trimetoprim 160 mg 2 g&aring;nger/dag<sup>c, e</sup></div>\r\n</li>\r\n</ul>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">14 dagar</div>\r\n<div class=\"tableLine\">14 dagar</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">UVI utan feber</div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Nitrofurantoin 50&nbsp;mg 3 g&aring;nger/dag</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Pivmecillinam 200 mg 3 g&aring;nger/dag</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Trimetoprim 160 mg 2 g&aring;nger/dag<sup>e</sup></div>\r\n</li>\r\n</ul>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">7 dagar<sup>f</sup></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"3\" class=\"footNotes\">\r\n<div class=\"tableFootnote\" id=\"fnote_15\">a. F&ouml;rstahandsmedlen anges i bokstavsordning.</div>\r\n<div class=\"tableFootnote\" id=\"fnote_16\">b. Nitrofurantoinresistent Proteus &auml;r en vanlig orsak till UVI hos pojkar &gt;&nbsp;1 &aring;r.</div>\r\n<div class=\"tableFootnote\">c. Efter resistensbest&auml;mning.</div>\r\n<div class=\"tableFootnote\">d. Alternativt 200 mg 2 g&aring;nger/dag i 7 dagar eller 400 mg 2 g&aring;nger/dag i 3 dagar till kvinnor &lt;&nbsp;50 &aring;r med sporadisk cystit.</div>\r\n<div class=\"tableFootnote\">e. Andrahandsval.</div>\r\n<div class=\"tableFootnote\">f. Inte evidensbaserat.</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "caf7c943-f927-4ad6-bc19-98e819d58fad",
+			"name": "caf7c943-f927-4ad6-bc19-98e819d58fad",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"reference_1\">Referenser</h2>\n<ol class=\"references\"><li id=\"reference_1\">Swerkersson S, Jodal U, &Aring;hr&eacute;n C, Sixt R, Stokland E, Hansson S. Urinary tract infection in infants: the significance of low bacterial count. Pediatr Nephrol 2016;31:239-45.</li>\n<li id=\"reference_2\">M&aring;rild S, Jodal U, Sandberg T. Ceftibuten versus trimethoprim-sulfamethoxazole for oral treatment of febrile urinary tract infection in children. Pediatr Nephrol 2009;24:521&ndash;6.</li>\n<li id=\"reference_3\">Preda I, Jodal U, Sixt R, Stokland E, Hansson S. Imaging strategy for infants with urinary tract infection: A new algorithm. J Urol 2011;185:1046-52.</li>\n<li id=\"reference_4\">Preda I, Jodal U, Sixt R, Stokland E, Hansson S. Normal dimercaptosuccinic acid scintigraphy makes voiding cystourethrography unnecessary after urinary tract infection. J Pediatr 2007;151:581&ndash;4.</li>\n<li id=\"reference_5\">Preda I, Jodal U, Sixt R, Stokland E, Hansson S. Value of ultrasound in work-up of infants with first time urinary tract infection. J Urol 2010;183:1984&ndash;8.</li>\n<li id=\"reference_6\">Brandstr&ouml;m P, Jodal U, Sill&eacute;n U, Hansson S. The Swedish reflux trial: Review of a randomized, controlled study in children with dilating vesicoureteral reflux. J Pediatr Urol 2011;7:594&ndash;600.</li>\n<li id=\"reference_7\">Barbosa-Cesnik C, Brown MB, Buxton M, Zhang L, DeBusscher J, Foxman B. Cranberry juice fails to prevent recurrent urinary tract infection: results from a randomized placebo-controlled trial. Clin Infect Dis 2011;52:23&ndash;30.</li>\n<li id=\"reference_8\">Stapleton AE, Dziura J, Hooton TM, Cox ME, Yarova-Yarovaya Y, Chen S, et al. Recurrent urinary tract infection and urinary Escherichia coli in women ingesting cranberry juice daily: a randomized controlled trial. Mayo Clin Proc 2012;87:143-50.</li>\n<li id=\"reference_9\">Beerepoot MAJ, ter Riet G, Nys S, van der Wal WM, de Borgie CAJM, de Reijke TM, Prins JM, et al. Cranberries vs antibiotics to prevent urinary tract infections. Arch Intern Med 2011;171:1270-8.</li>\n<li id=\"reference_10\">Sandberg T, Skoog, G, Bornefalk Hermansson A, Kahlmeter G, Kuylenstierna N, Lannerg&aring;rd A, et al. Ciprofloxacin for 7 days versus 14 days in women with acute pyelonephritis: a randomised, open-label and double-blind, placebo-controlled, non-inferiority trial. Lancet 2012;380:484&ndash;90.</li>\n<li id=\"reference_11\">Sundvall PD, Ulleryd P, Gunnarsson RK. Urine culture doubtful in determining etiology of diffuse symptoms among elderly individuals: a cross-sectional study of 32 nursing homes. BMV Fam Pract 2011;12:36.</li>\n<li id=\"reference_12\">Ulleryd P, Sandberg T. Ciprofloxacin for 2 or 4 weeks in the treatment of febrile urinary tract infection in men: a randomized trial with a 1 year followup. Scand J Infect Dis 2003;35:34-9.</li>\n<li id=\"reference_13\">Nicolle LE. Catheter associated urinary tract infections. Antimicrobial resistance and infection control 2014;3:23.</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e580078c-9fab-4b0a-a149-61867ca1c34d",
+			"name": "e580078c-9fab-4b0a-a149-61867ca1c34d",
+			"type": "text",
+			"content": "<h3 id=\"For-vidare-lasning\">F&ouml;r vidare l&auml;sning</h3>\n<p></p>\n<ol style=\"list-style-type: lower-alpha;\">\n<li>V&aring;rdprogram f&ouml;r urinv&auml;gsinfektioner hos vuxna. Svenska infektionsl&auml;karf&ouml;reningen 2006. <a href=\"http://www.infektion.net/v&#xE5;rdprogram-uvi-hos-vuxna-2006\" target=\"_blank\" class=\"linkOut\">www.infektion.net</a></li>\n<li>Nedre urinv&auml;gsinfektion hos kvinnor. Information fr&aring;n L&auml;kemedelsverket. 2007;18(2):8&ndash;45. <a href=\"http://www.lakemedelsverket.se/malgrupp/Halso---sjukvard/Behandlings--rekommendationer/Behandlingsrekommendation---listan/UVI---Nedre-urinvagsinfektion-hos-kvinnor/\" target=\"_blank\" class=\"linkOut\">www.lakemedelsverket.se </a></li>\n<li>Urinv&auml;gsinfektioner hos m&auml;n. Expertm&ouml;te med redovisning av aktuellt kunskapsl&auml;ge mot bakgrund av &ouml;kad <a href=\"http://www.lakemedelsboken.se/atc/J01-D01AA-G01AA-J02AA-J04AB-A07AA-S01AA-R02AB\" data-atcid=\"J01,D01AA,G01AA,J02AA,J04AB,A07AA,S01AA,R02AB\" data-atctitles=\"Antiinfektiva_medel_f&#xF6;r_systemiskt_bruk--Antibakteriella_medel_f&#xF6;r_systemiskt_bruk##Hudpreparat--Svampmedel_f&#xF6;r_utv&#xE4;rtes_bruk--Svampmedel_f&#xF6;r_utv&#xE4;rtes_bruk--Antibiotika##Urin-_och_k&#xF6;nsorgan_samt_k&#xF6;nshormoner--Antiinfektiva_och_antiseptiska_medel_f&#xF6;r_gynekologiskt_bruk--Antiinfektiva_och_antiseptiska_medel,_exkl._kombinationer_med_kortikosteroider--Antibiotika##Antiinfektiva_medel_f&#xF6;r_systemiskt_bruk--Antimykotika_f&#xF6;r_systemiskt_bruk--Antimykotika_f&#xF6;r_systemiskt_bruk--Antibiotika##Antiinfektiva_medel_f&#xF6;r_systemiskt_bruk--Medel_mot_mykobakterier--Medel_f&#xF6;r_behandling_av_tuberkulos--Antibiotika##Matsm&#xE4;ltningsorgan_och_&#xE4;mnesoms&#xE4;ttning--Antidiarroika,_intestinala_antiinflammatoriska_och_antiinfektiva_medel--Medel_vid_tarminfektioner--Antibiotika##&#xD6;gon_och_&#xF6;ron--Medel_vid_&#xF6;gonsjukdomar--Antiinfektiva_medel--Antibiotika##Andningsorgan--Medel_vid_sjukdomar_i_strupe_och_svalg--Medel_vid_sjukdomar_i_strupe_och_svalg--Antibiotika\" class=\"lb inlineGenerica text\">antibiotika</a>resistens. <span style=\"color: #ff0000;\">Folkh&auml;lsomyndigheten. 2014. <a href=\"https://www.folkhalsomyndigheten.se/pagefiles/12855/Urinvagsinfektioner-hos-man.pdf\">www.folkhalsomyndigheten.se</a><a style=\"color: #ff0000;\" href=\"http://smittskyddsinstitutet.se/upload/Publikationer/antibiotika-och-vardhygien/urinvagsinfektion-hos-man-2012-101-12.pdf\" target=\"_blank\" class=\"linkOut\"></a></span></li>\n</ol>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/nefrologi-urologi/urinvagsinfektioner.json",
+	"modified": "2018-03-12 15:20",
+	"isPublished": true,
+	"indexed": "true"
+}

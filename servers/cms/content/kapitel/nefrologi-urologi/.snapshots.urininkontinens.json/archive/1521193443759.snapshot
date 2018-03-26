@@ -1,0 +1,721 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Urininkontinens | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "ansträngningsinkontinens, trängningsinkontinens, urininkontinens, inkontinens, urin urinläckage, inkontinens, urin urinläckage, enures, ofrivillig urinavgång ofrivillig urinavgång, stressinkontinens, nokturi, bäckenbotten, sköra äldre, polyuri, inkontinensskydd, läckage, bäckenbottenträning, trängningar, incontinence",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-09 00:56",
+	"published": "2015-07-09 00:56",
+	"validUntil": "",
+	"createdBy": "Karin Franzén, Eva Samuelsson",
+	"replacesUrl": "/g2_nef_urininkontinens_2013fm10.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "37ea27f5-67f6-4e12-8a85-cee0f3217c04",
+			"name": "37ea27f5-67f6-4e12-8a85-cee0f3217c04",
+			"type": "author",
+			"content": {
+				"firstname": "Karin",
+				"surname": "Franzén",
+				"description": "Kvinnokliniken, Universitetssjukhuset Örebro",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "dd9ad1f8-74da-47e9-833e-3946f430f746",
+			"name": "dd9ad1f8-74da-47e9-833e-3946f430f746",
+			"type": "author",
+			"content": {
+				"firstname": "Eva",
+				"surname": "Samuelsson",
+				"description": "Allmänmedicin, Umeå Universitet",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ab119657-9307-475b-b9db-2dbec55f83ce",
+			"name": "ab119657-9307-475b-b9db-2dbec55f83ce",
+			"type": "text",
+			"content": "<h1 id=\"g2_2\">Urininkontinens</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "098176cd-2d30-43e8-8775-ebc8fa2e7291",
+			"name": "098176cd-2d30-43e8-8775-ebc8fa2e7291",
+			"type": "text",
+			"content": "<h2 id=\"g2_3\">Inledning</h2>\n<p class=\"ingress indent\"><br>Urininkontinens &auml;r ett folkh&auml;lsoproblem som kan medf&ouml;ra f&ouml;rs&auml;mrad livskvalitet. I Sverige har en halv miljon m&auml;nniskor inkontinens minst en g&aring;ng per vecka (1).</p>\n<p class=\"ingress indent\"><br>Hos kvinnor f&ouml;rekommer l&auml;ckage &gt;&nbsp;1 g&aring;ng per vecka hos 3&ndash;5&nbsp;% i 20-&aring;rs&aring;ldern, hos 10&nbsp;% i 40-&aring;rs&aring;ldern och hos 25&nbsp;% i 80-&aring;rs&aring;ldern. Hos m&auml;n &auml;r f&ouml;rekomsten betydligt l&auml;gre upp till 75-&aring;rs&aring;ldern, varefter en brant &ouml;kning sker upp till niv&aring;n f&ouml;r kvinnor. Bland &auml;ldre personer i s&auml;rskilt boende f&ouml;rekommer inkontinens hos &gt;&nbsp;50&nbsp;% och det finns en stark koppling till demens och allm&auml;n sjuklighet (1). Kostnad och anv&auml;ndning av inkontinensskydd &ouml;kar med &ouml;kad &aring;lder. H&auml;lften av kostnaden &aring;terfinns i &aring;ldersgruppen &ouml;ver 80&nbsp;&aring;r (2).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f728f51b-d330-41a0-a3bd-ae90806cfea4",
+			"name": "f728f51b-d330-41a0-a3bd-ae90806cfea4",
+			"type": "text",
+			"content": "<h2 id=\"g2_4\">Definitioner</h2>\n<p>F&ouml;ljande huvudtyper av inkontinens (urinl&auml;ckage) kan s&auml;rskiljas:</p>\n<ul>\n<li><span style=\"color: #000000;\">Anstr&auml;ngningsinkontinens (stressinkontinens), l&auml;ckage utl&ouml;st av anstr&auml;ngning, nysning eller hosta.</span></li>\n<li><span style=\"color: #ff0000;\"><span class=\"tab\"></span><span style=\"color: #000000;\">Tr&auml;ngningsinkontinens, l&auml;ckage<span style=\"color: #ff0000;\"> i samband med urintr&auml;ngning (pl&ouml;tslig \"kissn&ouml;dighet\")</span>.</span></span></li>\n<li><span class=\"tab\"></span>Blandl&auml;ckage, b&aring;de l&auml;ckage vid anstr&auml;ngning och l&auml;ckage med tr&auml;ngningar.</li>\n<li><span class=\"tab\"></span>&Ouml;verrinningsinkontinens,<span style=\"color: #ff0000;\"> l&auml;ckage vid bl&aring;st&ouml;mningssv&aring;righeter (&ouml;verfull bl&aring;sa).</span></li>\n<li><span class=\"tab\"></span><span class=\"tab\"></span>Kontinuerlig inkontinens. Vid sv&aring;r sfinkterdysfunktion, fistel mellan bl&aring;sa och vagina eller ektopiskt mynnande urinledare.</li>\n<li><span class=\"tab\"></span><span style=\"color: #ff0000;\">Funktionell inkontinens, sv&aring;righeter att hinna till toalett p&aring; grund av fysisk eller mental f&ouml;rm&aring;ga.</span></li>\n</ul>\n<p>\"&Ouml;veraktiv bl&aring;sa&rdquo; inneb&auml;r urintr&auml;ngningar och/eller tr&auml;ngningsinkontinens utan uppenbar orsak och f&ouml;rekommer hos 12&ndash;17&nbsp;% av m&auml;n och kvinnor &gt;&nbsp;40&nbsp;&aring;r (3).</p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "975e25e3-0e7c-46ba-aab9-d2bb005fe598",
+			"name": "975e25e3-0e7c-46ba-aab9-d2bb005fe598",
+			"type": "text",
+			"content": "<h2 id=\"g2_5\">Inkontinens hos kvinnor</h2>\n<p>F&ouml;rekomsten av inkontinens &ouml;kar med stigande &aring;lder, antal graviditeter, vid r&ouml;kning och uttalad &ouml;vervikt. K&auml;nda riskfaktorer &auml;r ocks&aring; kroniska luftr&ouml;rssjukdomar, neurologiska sjukdomar s&aring;som demens, stroke<span style=\"text-decoration: line-through;\"></span> och MS&nbsp; samt gynekologiska operationer. Vid d&aring;lig knipf&ouml;rm&aring;ga i b&auml;ckenbotten och vid tendens till framfall &auml;r f&ouml;rekomsten av inkontinens &ouml;kad.</p>\n<h3 id=\"g2_6\">Anstr&auml;ngningsinkontinens</h3>\n<p>Urinl&auml;ckage upptr&auml;der vid &ouml;kat buktryck, till exempel vid hosta, hopp, tunga lyft och joggning. Typiskt &auml;r att sm&aring; skv&auml;ttar av urin avg&aring;r utan urintr&auml;ngningar. Anstr&auml;ngningsinkontinens &auml;r den vanligaste inkontinensformen hos yngre och medel&aring;lders kvinnor. Ofta &auml;r orsaken bristande st&ouml;d under &ouml;verg&aring;ngen mellan urinr&ouml;r och bl&aring;sa p&aring; grund av svaghet i ligament och muskler och/eller en f&ouml;rs&auml;mrad funktion i urinr&ouml;rets slutmuskel som medf&ouml;r l&aring;gt tryck i urinr&ouml;ret.</p>\n<h3 id=\"g2_7\">Tr&auml;ngningsinkontinens</h3>\n<p>Ofrivilligt urinl&auml;ckage som f&ouml;reg&aring;s av pl&ouml;tslig kissn&ouml;dighet kallas tr&auml;ngningsinkontinens. L&auml;ckaget &auml;r ofta st&ouml;rre &auml;n vid anstr&auml;ngningsinkontinens och nattligt l&auml;ckage &auml;r vanligt. Ofta &auml;r orsaken ok&auml;nd (ofrivilliga bl&aring;smuskelsammandragningar, det vill s&auml;ga &ouml;veraktiv bl&aring;sa). Kognitiv svikt hos &auml;ldre och urinv&auml;gsinfektion &auml;r ocks&aring; vanliga orsaker.</p>\n<p class=\"indent\"><br>Tr&auml;ngningarna kan utl&ouml;sas av:</p>\n<ul>\n<li><span class=\"tab\"></span>Retning i eller n&auml;ra urinbl&aring;sa eller urinr&ouml;r. <br>En urinv&auml;gsinfektion, bl&aring;stum&ouml;r eller bl&aring;ssten, eller inflammation i bl&aring;san utan infektion, kan irritera urinbl&aring;san inifr&aring;n. En ovarialtum&ouml;r eller myomat&ouml;s livmoder kan irritera bl&aring;san utifr&aring;n. Sk&ouml;ra slemhinnor postmenopausalt kan medf&ouml;ra sveda och irritation fr&aring;n urinr&ouml;ret. T&auml;ta vattenkastningar p&aring; grund av stora urinm&auml;ngder efter rikligt intag av dryck kan upplevas som tr&auml;ngningar.<br><br></li>\n<li><span class=\"tab\"></span>Ofrivilliga bl&aring;smuskelsammandragningar utan k&auml;nd orsak (&ouml;veraktiv bl&aring;sa). <br>Tr&auml;ngningarna &auml;r ofta kombinerade med tidig upplevelse av bl&aring;sfyllnad och sm&aring; urinvolymer. Patienten hamnar ofta i en ond cirkel med sm&aring; och t&auml;ta vattenkastningar &ndash; orsaken &auml;r oklar.<br><br></li>\n<li><span class=\"tab\"></span> Neurologiska ska<span style=\"color: #000000;\">dor och sjukdomar.</span><br><br><span style=\"color: #000000;\">&ndash; Oh&auml;mmad bl&aring;sa. Bristande kontroll av m</span>iktionscentrum i pons &auml;r en vanlig orsak till inkontinens hos &auml;ldre. Skador p&aring; hj&auml;rnbarken, vilken normalt har en h&auml;mmande effekt p&aring; miktionsreflexen, kan f&ouml;religga vid demens, efter stroke eller som del i neurologiska sjukdomar som till exempel Parkinsons sjukdom. Typiskt &auml;r att patienten upplever mycket sen bl&aring;sfyllnads- och tr&auml;ngningsk&auml;nsla, ibland f&ouml;rst n&auml;r l&auml;ckaget redan har startat. Vid sv&aring;ra former kan patienten helt ha f&ouml;rlorat tr&auml;ngningsk&auml;nslan f&ouml;re l&auml;ckaget.<br>&ndash; Ryggm&auml;rgsskada. Vid total tv&auml;rsnittslesion &auml;r tillst&aring;ndet f&ouml;renat med of&ouml;rm&aring;ga att uppleva bl&aring;sfyllnad. Samordningen mellan bl&aring;smuskel och urinr&ouml;rets slutmuskulatur kan saknas, s&aring; kallad detrusor-sfinkterdyssynergi. Detta inneb&auml;r risk f&ouml;r mycket h&ouml;ga och f&ouml;r njurfunktionen farliga bl&aring;stryck.</li>\n</ul>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "28270456-a39e-4ab6-96d1-f9f7aba31dcb",
+			"name": "28270456-a39e-4ab6-96d1-f9f7aba31dcb",
+			"type": "text",
+			"content": "<h3 id=\"g2_8\">Blandinkontinens</h3>\n<p>Inslag av b&aring;de anstr&auml;ngnings- och tr&auml;ngningsbesv&auml;r finns &ndash; ofta mer besv&auml;rande inkontinens.</p>\n<h3 id=\"g2_9\">&Ouml;verrinningsinkontinens</h3>\n<ul>\n<li><span style=\"font-style: italic;\"><span class=\"tab\"></span></span>Detrusorinsufficiens. Bristande f&ouml;rm&aring;ga till kontraktion av bl&aring;smuskeln kan f&ouml;religga efter &ouml;vert&auml;njning av bl&aring;san samt vid diabetes.</li>\n<li><span class=\"tab\"></span>Neurogen bl&aring;srubbning. Vid ryggm&auml;rgsskada, d&auml;r man inte diagnostiserat bl&aring;st&ouml;mningsproblem f&ouml;rekommer stora resturinm&auml;ngder.</li>\n</ul>\n<h3 id=\"g2_10\">L&auml;kemedelsutl&ouml;st inkontinens</h3>\n<p>Intensiv diuretikabehandling kan vara utl&ouml;sande faktor n&auml;r andra samtidiga riskfaktorer finns. Behandling med ACE-h&auml;mmare kan ge torrhosta som biverkning och kan d&auml;rmed f&ouml;rv&auml;rra eller utl&ouml;sa anstr&auml;ngningsinkontinens. Sedativa, hypnotika och andra l&auml;kemedel, som kan orsaka f&ouml;rvirring, &ouml;kar risken f&ouml;r inkontinens hos &auml;ldre. M&aring;nga l&auml;kemedel har antikolinerg effekt, framf&ouml;r allt m&aring;nga psykofarmaka och antidepressiva l&auml;kemedel, och &ouml;kar risken f&ouml;r urinretention och &ouml;verrinningsinkontinens.</p>\n<p><br>Substanser som stimulerar urinr&ouml;rets alfaadrenerga receptorer, till exempel adrenerga avsv&auml;llande medel som fenylpropanolamin, och hostmediciner inneh&aring;llande efedrin, till exempel Mollipect, kan bidra till &ouml;verrinningsinkontinens.</p>\n<h3 id=\"g2_11\">Andra former av urinl&auml;ckage</h3>\n<ul>\n<li><span style=\"font-style: italic;\"><span class=\"tab\"></span></span>Fistlar mellan bl&aring;sa och vagina &auml;r en av de viktigaste orsakerna till permanent inkontinens hos kvinnor globalt sett (f&ouml;rlossningsskada). Inkontinens kan ocks&aring; vara en f&ouml;ljd av k&ouml;nsstympning. Fistlar kan i s&auml;llsynta fall uppkomma efter gynekologiska ingrepp som hysterektomi eller efter str&aring;lbehandling.</li>\n<li><span class=\"tab\"></span>Efterdropp. L&auml;ckage som enbart uppkommer just efter vattenkastning &auml;r vanligt men kan l&auml;tt uppfattas som inkontinens.<span style=\"text-decoration: line-through;\"> <br></span></li>\n</ul>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8c0ffc32-4474-4109-8014-ca560416a57c",
+			"name": "8c0ffc32-4474-4109-8014-ca560416a57c",
+			"type": "text",
+			"content": "<h2 id=\"g2_12\">Egenv&aring;rd, u<span style=\"text-decoration: line-through;\"></span>tredning och behandling av inkontinens hos kvinnor</h2>\n<h3 id=\"Egenvard-och-utredning\"><span style=\"color: #ff0000;\">Egenv&aring;rd och utredning</span></h3>\n<p>R&aring;dgivning, utredning och behandling sker oftast i prim&auml;rv&aring;rden. &Ouml;nskem&aring;l om behandling &auml;r kopplat till hur ofta och hur mycket man l&auml;cker. Tr&auml;ngnings- och blandinkontinens upplevs ofta som mer besv&auml;rande &auml;n anstr&auml;ngningsinkontinens (4). F&ouml;rsta linjens behandling vid dessa tre huvudtyper av inkontinens inkluderar b&auml;ckenbottentr&auml;ning i tre (till sex) m&aring;nader och livsstilsf&ouml;r&auml;ndringar (5,6). Vid ren anstr&auml;ngningsinkontinens (enbart l&auml;ckage vid hosta, hopp, nysning, fr&aring;nvaro av l&auml;ckage i samband med tr&auml;ngningar) kan b&auml;ckenbottentr&auml;ning rekommenderas utan n&aring;gon utredning innan. Tr&auml;ning kan vara egenstyrd eller styrd av terapeut, och det &auml;r ingen s&auml;ker skillnad i effekt (7). Enkla livsstilsr&aring;d och b&auml;ckenbottentr&auml;ning under tre m&aring;nader med st&ouml;d av en app gav kliniskt relevant f&ouml;rb&auml;ttring hos kvinnor med anstr&auml;ngningsinkontinens avseende symtom, livskvalitet och antal l&auml;ckage, i j&auml;mf&ouml;relse med kontrollgrupp<span style=\"color: #ff0000;\"> efter tre m&aring;nader och vid uppf&ouml;ljning efter tv&aring; &aring;r (ny ref a)</span>(8). En annan studie har visat kliniskt relevant f&ouml;rb&auml;ttring, <span style=\"color: #ff0000;\">p&aring; kort och l&aring;ng sikt</span>, med st&ouml;d av internetprogram eller broschyr (9,10). De flesta kvinnor kan sj&auml;lva hitta &rdquo;r&auml;tt&rdquo; muskler, (11) men ibland kan det beh&ouml;vas mer st&ouml;d fr&aring;n v&aring;rden f&ouml;r instruktion och motivation till tr&auml;ning. Det &auml;r en stor f&ouml;rdel om det finns en barnmorska, distriktssk&ouml;terska, fysioterapeut eller uroterapeut p&aring; mottagningen med specialintresse och utbildning i inkontinensproblem. Vid tr&auml;ngnings- eller blandinkontinens &auml;r det viktigt att utesluta alarmsymtom, se <a href=\"#facts_1_header\" target=\"_blank\">faktaruta 1,</a> och utredning med urinsticka, miktionslista och gynekologisk unders&ouml;kning rekommenderas. S&aring;dan utredning blir ocks&aring; aktuell vid anstr&auml;ngningsinkontinens, d&auml;r b&auml;ckenbottentr&auml;ning inte gett tillr&auml;cklig f&ouml;rb&auml;ttring efter tre till sex m&aring;nader och d&auml;r det finns &ouml;nskem&aring;l om operation. Se Figur 1 nedan. Tv&aring; tredjedelar av kvinnor som g&aring;tt igenom behandling i prim&auml;rv&aring;rden &auml;r n&ouml;jda med resultatet vid fem&aring;rsuppf&ouml;ljning (1).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7eeca944-53e2-4616-9182-dd32928f76db",
+			"name": "7eeca944-53e2-4616-9182-dd32928f76db",
+			"type": "figure",
+			"content": {
+				"number": "1",
+				"maxwidth": "",
+				"image": "/images/g2_nef_urininkontinens_2013fm10_images/urininkontinens_2018_flodesschema.png",
+				"title": "",
+				"text": "<a class=\"crossref\" id=\"31218\"></a>Urininkontinens hos kvinnor",
+				"alt": "",
+				"id": "g2_13"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "47f10b07-dc22-41d3-98ae-32fc4fc131a6",
+			"name": "47f10b07-dc22-41d3-98ae-32fc4fc131a6",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"index\" id=\"1031558\" data-text=\"urininkontinens:alarmsymtom\"></a><a class=\"crossref\" id=\"86249\"></a>Alarmsymtom",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Nytillkomna tr&auml;ngningar (&lt;&nbsp;&frac12; &aring;r) utan UVI</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Sm&auml;rtsamma tr&auml;ngningar</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Bl&aring;st&ouml;mningssv&aring;righeter</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Synligt blod i urinen</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Tidigare malignitet i underliv eller urinv&auml;gar</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "g2_15"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "333c19cb-c046-4f23-be91-cffd3628f7e6",
+			"name": "333c19cb-c046-4f23-be91-cffd3628f7e6",
+			"type": "text",
+			"content": "<p><br>Vid misstanke om neurologisk skada/sjukdom g&ouml;rs ett enkelt neurologstatus. Sensibilitet i perineum? Analtonus? G&aring;ngsv&aring;righeter? Benreflexer? Kognitiva st&ouml;rningar?</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a1d2d375-d196-4cf3-a739-59c80f90310b",
+			"name": "a1d2d375-d196-4cf3-a739-59c80f90310b",
+			"type": "text",
+			"content": "<h3 id=\"g2_16\">Behandling</h3>\n<p><br>Behandlingen utg&aring;r fr&aring;n prim&auml;r klassificering i anstr&auml;ngnings-, tr&auml;ngnings- eller blandinkontinens. Vid blandinkontinens behandlas det dominerande symtomet i f&ouml;rsta hand.</p>\n<h4 id=\"Livsstilsforandringar\">Livsstilsf&ouml;r&auml;ndringar</h4>\n<p>Med miktionslistan som bas diskuteras v&auml;tskeintag och miktion. Vid inkontinens och stora urinm&auml;ngder (&gt;&nbsp;2&nbsp;l/dygn) rekommenderas minskad dryck. Vid stort koffeinintag och f&ouml;rekomst av tr&auml;ngningar rekommenderas minskade m&auml;ngder kaffe/te. Viktnedg&aring;ng vid &ouml;vervikt/fetma har visad effekt i studier och 5&nbsp;% viktminskning kan vara tillr&auml;ckligt (12). M&aring;ttlig, regelbunden fysisk aktivitet verkar ha en f&ouml;rebyggande effekt n&auml;r det g&auml;ller anstr&auml;ngningsinkontinens (13). B&auml;ckenbottentr&auml;ning i kombination med annan fysisk tr&auml;ning reducerar antalet l&auml;ckage hos &auml;ldre oavsett typ av inkontinens (1). R&ouml;kning ger &ouml;kad risk f&ouml;r inkontinens men &ouml;vertygande interventionsstudier saknas.</p>\n<h4 id=\"g2_17\">B&auml;ckenbottentr&auml;ning<em> </em></h4>\n<p>Tr&auml;ningen g&aring;r ut p&aring; att &ouml;ka styrkan, snabbheten och uth&aring;lligheten i b&auml;ckenbottenmuskulaturen. M&aring;let med den funktionella tr&auml;ningen &auml;r att tr&auml;na p&aring; att &rdquo;lyfta&rdquo; upp b&auml;ckenbotten innan hosta, hopp, nysning och tunga lyft s&aring; att det till slut g&aring;r automatiskt. Efter tre-fyra m&aring;naders daglig tr&auml;ning ska man se en tydlig effekt, men ytterligare f&ouml;rb&auml;ttring kan uppn&aring;s med upp till sex m&aring;naders tr&auml;ning. Troligen beh&ouml;vs minst &aring;tta kontraktioner tre g&aring;nger dagligen f&ouml;r effekt (5). Resultatet &auml;r sedan beroende av fortsatt tr&auml;ning men det kan r&auml;cka med s&aring;dan tr&auml;ning tv&aring;-tre g&aring;nger per vecka som underh&aring;llstr&auml;ning. Viktigt att forts&auml;tta med den funktionella tr&auml;ningen i belastande situationer. B&auml;ckenbottentr&auml;ning ger inga biverkningar och 55&nbsp;% blir l&auml;ckagefria eller f&ouml;rb&auml;ttrade med b&auml;ckenbottentr&auml;ning j&auml;mf&ouml;rt med 3,2&nbsp;% utan denna tr&auml;ning (14). Vid anstr&auml;ngningsinkontinens blir tre av tio &rdquo;botade&rdquo; med b&auml;ckenbottentr&auml;ning (7). Det finns f&aring; l&aring;ngtidsstudier, men i en systematisk review fann man att 41-85&nbsp;% av kvinnor som deltagit i b&auml;ckenbottentr&auml;ningsstudier hade ett lyckat resultat 1-15&nbsp;&aring;r efter behandlingen (15).</p>\n<h4 id=\"g2_18\">Bl&aring;str&auml;ning</h4>\n<p>Bl&aring;str&auml;ning i kombination med b&auml;ckenbottentr&auml;ning rekommenderas som f&ouml;rsta behandling vid tr&auml;ngningsl&auml;ckage, men evidensl&auml;get &auml;r inte lika gott som f&ouml;r b&auml;ckenbottentr&auml;ning vid anstr&auml;ngningsinkontinens (6). Patienter som f&aring;r tr&auml;ngningar redan vid sm&aring; m&auml;ngder urin i bl&aring;san f&ouml;rs&ouml;ker ofta minska risken f&ouml;r l&auml;ckage genom t&auml;ta toalettbes&ouml;k. Det underh&aring;ller sannolikt besv&auml;ren. Bl&aring;str&auml;ning inneb&auml;r att man f&ouml;rs&ouml;ker st&aring; emot tr&auml;ngningar genom att &rdquo;knipa&rdquo; vid tr&auml;ngning och att prova olika avslappningstekniker. En tr&auml;ngning varar i regel 20-30&nbsp;sekunder. Miktionslistan &auml;r ett bra underlag f&ouml;r tr&auml;ning och m&aring;let kan vara att f&ouml;rs&ouml;ka &ouml;ka intervallen mellan toalettbes&ouml;ken och kissa minst tv&aring;, g&auml;rna tre till fyra deciliter varje g&aring;ng. NNT (Number Needed to Treat) f&ouml;r att uppn&aring; kontinens med hj&auml;lp av b&auml;ckenbottentr&auml;ning i kombination med bl&aring;str&auml;ning var 6 vid blandinkontinens (7).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0467fd27-3677-4519-9b13-427960e00122",
+			"name": "0467fd27-3677-4519-9b13-427960e00122",
+			"type": "tablewide",
+			"content": {
+				"number": "1",
+				"title": "<span style=\"font-weight: bold;\"><a class=\"crossref\" id=\"86787\"></a>Exempel på miktionslista vid ansträngningsinkontinens och trängningsinkontinens samt vid </span>polyuri",
+				"id": "g2_19",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td colspan=\"4\">\r\n<p><strong>Anstr&auml;ngningsinkontinens</strong></p>\r\n</td>\r\n<td colspan=\"4\">\r\n<p><strong>Tr&auml;ngningsinkontinens</strong></p>\r\n</td>\r\n<td colspan=\"4\">\r\n<p><strong>H&ouml;gt v&auml;tskeintag och polyuri</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Tid</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">M&auml;ngd</div>\r\n<div class=\"tableLine\">(dl)</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">L&auml;ckage<sup><a class=\"tableFootnoteLink\" href=\"#fnote_24\"><sup>a</sup></a></sup></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Tr&auml;ng-</div>\r\n<div class=\"tableLine\">ningar<sup><a class=\"tableFootnoteLink\" href=\"#fnote_25\"><sup>b</sup></a></sup></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Tid</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">M&auml;ngd</div>\r\n<div class=\"tableLine\">(dl)</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">L&auml;ckage<sup>a</sup></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Tr&auml;ng-</div>\r\n<div class=\"tableLine\">ningar<sup>b</sup></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Tid</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">M&auml;ngd</div>\r\n<div class=\"tableLine\">(dl)</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">L&auml;ckage<sup>a</sup></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Tr&auml;ng-</div>\r\n<div class=\"tableLine\">ningar<sup>b</sup></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">05.45</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;5,0</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">03.30</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">2,5</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">08.30</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;3,5</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">+</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">08.15</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;2,0</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">++</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">05.45</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">1,75</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">10.45</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;4,0</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">++</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">11.45</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;2,5</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">+</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">07.30</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">1,0</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">+</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">11.45</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;3,5</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">+</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">15.15</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;3,0</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">+</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">09.15</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">1,0</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">++</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">13.30</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;3,0</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">17.30</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;3,0</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">+++</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">+</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">11.30</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">1,25</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">++</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">++</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">15.15</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;4,5</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">+</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">+</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">19.15</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;1,5</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">+</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">13.15</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">1,5</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">++</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">17.00</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;4,0</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">22.30</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;2,0</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">+</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">15.10</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">1,5</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">+++</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">++</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">18.45</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;4,5</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">+</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">17.35</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">0,75</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">++</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">++</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">20.15</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;4,25</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">19.05</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">1,0</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">++</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">+</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">23.00</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;3,5</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">21.15</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">2,0</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">+</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">++</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">00.30</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;1,5</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">23.05</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">1,0</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">++</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"4\">\r\n<p>Dygnsvolym 19 dl</p>\r\n<p>Frekvens 7 g&aring;nger/1 dygn</p>\r\n<p>Medelvolym 19/7 = 2,7 dl</p>\r\n<p>H&ouml;gsta volym 5,0 dl</p>\r\n</td>\r\n<td colspan=\"4\">\r\n<p>Dygnsvolym 15,25 dl</p>\r\n<p>Frekvens 11 g&aring;nger/1 dygn</p>\r\n<p>Medelvolym 15,25/11 = 1,4 dl</p>\r\n<p>H&ouml;gsta volym 2,5 dl</p>\r\n</td>\r\n<td colspan=\"4\">\r\n<p>Dygnsvolym 36,25 dl</p>\r\n<p>Frekvens 10 g&aring;nger/1 dygn</p>\r\n<p>Medelvolym 36,25/10 = 3,6 dl</p>\r\n<p>H&ouml;gsta volym 4,5 dl</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"12\" class=\"footNotes\">\r\n<div class=\"tableFootnote\" id=\"fnote_24\">a.\r\n<div class=\"tableLine\">Droppar (+), fuktig (++), v&aring;t (+++)</div>\r\n</div>\r\n<div class=\"tableFootnote\" id=\"fnote_25\">b.\r\n<div class=\"tableLine\">Svaga (+), starka (++)</div>\r\n</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "412d4009-92df-4def-b775-4298344d91ed",
+			"name": "412d4009-92df-4def-b775-4298344d91ed",
+			"type": "text",
+			"content": "<h5 id=\"g2_20\">L&auml;kemedelsbehandling vid tr&auml;ngningsinkontinens</h5>\n<p><br>Behandling med antikolinerga (antimuskarina) l&auml;kemedel &auml;r ett alternativ n&auml;r utredning inte p&aring;visat n&aring;gon s&auml;ker orsak till tr&auml;ngningarna/tr&auml;ngningsinkontinensen. I de flesta fall b&ouml;r bl&aring;str&auml;ning rekommenderas under minst sex veckor innan l&auml;kemedel s&auml;tts in. Om besv&auml;ren &auml;r mycket sv&aring;ra kan behandling med l&auml;kemedel och bl&aring;str&auml;ning startas parallellt.</p>\n<p class=\"indent\"><br>Bl&aring;sans kontraktionsfunktion medieras fr&auml;mst via kolinerga nerver. L&auml;kemedel som blockerar bl&aring;sans muskarina receptorer &auml;r d&auml;rf&ouml;r f&ouml;rstahandsval vid tr&auml;ngningsinkontinens. Det finns inga kliniskt betydelsefulla skillnader i effektivitet mellan olika antimuskarina l&auml;kemedel (5). De muskarina receptorerna &auml;r M2- och M3-receptorer i f&ouml;rh&aring;llandet 3:1. Man str&auml;var efter att utveckla s&aring; M3-receptorspecifika l&auml;kemedel som m&ouml;jligt eftersom den receptorn &auml;r specifik f&ouml;r att mediera urinbl&aring;sans kontraktion. I teorin kan risken f&ouml;r biverkningar variera mellan olika preparat p&aring; grund av skillnader i receptorselektivitet och m&ouml;jlighet att passera fr&aring;n blodbanan till hj&auml;rnan. Man har dock inte kunnat visa att selektiva M3-specifika preparat ger mindre biverkningar &auml;n icke-selektiva. Ungef&auml;r en tredjedel av patienterna f&aring;r besv&auml;r av muntorrhet (16).</p>\n<p class=\"indent\"><br>L&auml;kemedlen ger effekt p&aring; sjukdomsspecifik livskvalitet m&auml;tt med olika skalor, men effekterna &auml;r i m&aring;nga fall sm&aring; och en begr&auml;nsad andel av patienterna f&aring;r god effekt (17). Antalet l&auml;ckage minskar med cirka 0,5&nbsp;per dygn vid utg&aring;ngsl&auml;ge tv&aring;-tre per dygn och antal vattenkastningar med fyra-sex per vecka i j&auml;mf&ouml;relse med placebo (18). NNT f&ouml;r kontinens vid behandling med antimuskarina l&auml;kemedel varierar mellan 8-12 i olika studier och f&ouml;r olika preparat.Samtliga antimuskarina preparat utom oxybutynin finns i dep&aring;form. Oxybutynin ger upphov till fler biverkningar vilket p&aring;verkar f&ouml;ljsamheten. Preparatet finns &auml;ven i form av pl&aring;ster och f&ouml;r bl&aring;sinstillation. Vid effekt men oacceptabla biverkningar kan preparatbyte pr&ouml;vas, se L&auml;kemedelsverkets behandlingsrekomendation<a href=\"https://lakemedelsverket.se/upload/halso-och-sjukvard/behandlingsrekommendationer/Ny%20rekommendation%20%e2%80%93%20%20behandling%20av%20urintr%c3%a4ngningar%20och%20tr%c3%a4ngningsinkontinens%20%e2%80%93%20%c3%b6veraktiv%20bl%c3%a5sa%20%5b1%5d.pdf\" target=\"_blank\"> Urintr&auml;ngningar och tr&auml;ningsinkontinens -&ouml;veraktiv bl&aring;sa</a>.</p>\n<p class=\"indent\"><br>Urinretention, myastenia gravis, <span style=\"text-decoration: line-through;\"></span>glaukom med tr&aring;ng kammarvinkel och allvarlig ulcer&ouml;s colit &auml;r kontraindikationer f&ouml;r behandling med antimuskarina l&auml;kemedel. Dessa l&auml;kemedel b&ouml;r ges med f&ouml;rsiktighet till &auml;ldre, speciellt vid anamnes p&aring; stroke, demens eller samtidig anv&auml;ndning av andra l&auml;kemedel med antikolinerg verkan (16).<span style=\"text-decoration: line-through;\"></span></p>\n<p><br>Mirabegron &auml;r ett preparat utan antikolinerg effekt som verkar genom att aktivera beta-3-adrenerga receptorer p&aring; urinbl&aring;san och f&ouml;rst&auml;rka bl&aring;sans avslappning i lagringsfasen. Studier visar b&auml;ttre effekt efter tre m&aring;naders behandling &auml;n placebo avseende inkontinensepisoder, tr&auml;ngningar och miktionsfrekvens men det saknas j&auml;mf&ouml;rande effektstudier med antimuskarina preparat (19,20). Effekt och s&auml;kerhet p&aring; &auml;ldre &gt;&nbsp;75&nbsp;&aring;r och sk&ouml;ra &auml;ldre &auml;r otillr&auml;ckligt studerat. Preparatet &auml;r subventionerat f&ouml;r patienter som f&aring;tt oacceptabla biverkningar av antikolinerga l&auml;kemedel. Minskning av antal miktioner och antal inkontinensepisoder &auml;r p&aring; samma niv&aring; som f&ouml;r antikolinerga preparat, cirka ett halvt l&auml;ckage per dygn j&auml;mf&ouml;rt med placebo. Mirabegron dep&aring;tabletter doseras 50&nbsp;mg per dag.</p>\n<p class=\"indent\"><br>Tolterodin och solifenacin &auml;r de antimuskarina l&auml;kemedel som f&ouml;rskrivs mest i Sverige. &Ouml;vriga preparat &auml;r darifenacin, fesoterodin och oxybutynin.<span style=\"text-decoration: line-through;\"></span> Uttag av inkontinensl&auml;kemedel mot tr&auml;ngningar/tr&auml;ngningsinkontinenes &ouml;kar med &ouml;kad &aring;lder men avtar fr&aring;n 80-&aring;rs&aring;ldern. Kvinnor har en h&ouml;gre anv&auml;ndning &auml;n m&auml;n.</p>\n<p class=\"indent\"><br>Anv&auml;ndningen av inkontinensl&auml;kemedel &ouml;kar och Mirabegron st&aring;r nu f&ouml;r ungef&auml;r en tredjedel av f&ouml;rskrivningen i &aring;ldrar 60&nbsp;&aring;r och upp&aring;t.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3cdfb2b5-baf3-4c2f-901f-9078d1792054",
+			"name": "3cdfb2b5-baf3-4c2f-901f-9078d1792054",
+			"type": "text",
+			"content": "<h5 id=\"Biverkningar-av-lakemedelsbehandlingen\">Biverkningar av l&auml;kemedelsbehandlingen</h5>\n<p><br>De vanligaste biverkningarna vid behandling med antimuskarina l&auml;kemedel &auml;r muntorrhet, obstipation och ackommodationsst&ouml;rningar. Startf&ouml;rpackning kan vara av v&auml;rde f&ouml;r att bed&ouml;ma k&auml;nsligheten f&ouml;r antimuskarina sidoeffekter, medan l&auml;ngre behandlingsf&ouml;rs&ouml;k kr&auml;vs f&ouml;r att utv&auml;rdera klinisk effekt. Viss skillnad i verknings- och biverkningsprofiler g&ouml;r att byte mellan preparaten kan provas vid d&aring;lig behandlingseffekt. Dosjustering inom rekommenderat intervall kan ocks&aring; f&ouml;rs&ouml;kas (18,21).</p>\n<p><br> Frekvensen av biverkningar vid behandling med Mirabegron &auml;r ungef&auml;r p&aring; samma niv&aring; men med betydligt l&auml;gre f&ouml;rekomst av muntorrhet. De vanligaste biverkningarna &auml;r urinv&auml;gsinfektion och takykardi. Mirabegron &auml;r kontraindicerat vid systoliskt BT &ge;&nbsp;180&nbsp;mmHg eller diastoliskt blodtryck&nbsp;&ge;&nbsp;110&nbsp;mmHg och blodtrycket b&ouml;r kontrolleras innan ins&auml;ttning och fortl&ouml;pande under behandling, speciellt vid f&ouml;rekomst av hypertoni.<span style=\"color: #ff0000;\"> <br></span></p>\n<h5 id=\"Uppfoljning-av-lakemedelsbehandlingen\">Uppf&ouml;ljning av l&auml;kemedelsbehandlingen</h5>\n<p><br>L&aring;ngtidsbehandling vid tr&auml;ngningsinkontinens har d&aring;lig patientf&ouml;ljsamhet. En uppf&ouml;ljning av data fr&aring;n l&auml;kemedelsregistret visar att ett &aring;r efter insatt behandling &auml;r det bara 21&nbsp;% som forts&auml;tter att h&auml;mta ut l&auml;kemedlet, och bland de som f&aring;tt recept p&aring; oxybutynin endast 7&nbsp;% (22). Man kan inte p&aring;visa effekt efter avslutad behandling (16). Behandlingseffekten b&ouml;r utv&auml;rderas efter n&aring;gon m&aring;nad och fortl&ouml;pande med uts&auml;ttning av l&auml;kemedlet vid otillr&auml;cklig effekt. Miktionslistan &auml;r till stor hj&auml;lp vid uppf&ouml;ljning och god effekt st&ouml;djer fortsatt behandling.</p>\n<h4 id=\"Behandling-mot-anstrangningsinkontinens\">Behandling mot anstr&auml;ngningsinkontinens</h4>\n<p id=\"Duloxetin-utvecklades-ursprungligen-som-ett-lakemedel-mot-depression-och-hammar-aterupptaget-av-serotonin-och-noradrenalin-i-nervceller-Preparatet-som-ges-i-dosen-60-mg-dag-vid-depression-ar-godkant-pa-indikationen-mattlig-till-svar-anstrangningsinkontinens-i-dosen-40-mg-2-ganger-dag-Effekten-antas-bero-pa-okad-tonus-i-urinroret-I-studier-dar-kvinnor-med-genomsnittligt-17-lackage-vecka-behandlades-med-duloxetin-80-mg-dagligen-minskade-antalet-inkontinensepisoder-med-50-64-i-den-behandlade-gruppen-jamfort-med-28-41-i-placebogruppen-5-\">Duloxetin utvecklades ursprungligen som ett l&auml;kemedel mot depression och h&auml;mmar &aring;terupptaget av serotonin och noradrenalin i nervceller. Preparatet, som ges i dosen 60&nbsp;mg/dag vid depression, &auml;r godk&auml;nt p&aring; indikationen m&aring;ttlig till sv&aring;r anstr&auml;ngningsinkontinens i dosen 40&nbsp;mg 2 g&aring;nger/dag. Effekten antas bero p&aring; &ouml;kad tonus i urinr&ouml;ret. I studier d&auml;r kvinnor med genomsnittligt 17 l&auml;ckage/vecka behandlades med duloxetin 80&nbsp;mg dagligen minskade antalet inkontinensepisoder med 50&ndash;64&nbsp;% i den behandlade gruppen j&auml;mf&ouml;rt med 28&ndash;41&nbsp;% i placebogruppen (5).</p>\n<p class=\"indent\"><br>Vid lindrig anstr&auml;ngningsinkontinens s&aring;gs ingen f&ouml;rb&auml;ttring. Ingen signifikant minskning av l&auml;ckage kunde noteras n&auml;r flera studier slogs samman (23).</p>\n<p class=\"indent\"><br>Biverkningar som illam&aring;ende, muntorrhet, yrsel och tr&ouml;tthet &auml;r vanliga och av patienter som f&aring;tt duloxetin i en studie hade betydligt fler &auml;n h&auml;lften slutat med behandlingen efter ett &aring;r (11). Preparatet har ingen plats som f&ouml;rstahandsmedel men kan vara ett alternativ till kirurgisk behandling i vissa fall (5). Det &auml;r viktigt att upplysa om biverkningar och att utv&auml;rdera effekten efter fyra veckor.</p>\n<h4 id=\"g2_24\"><span style=\"text-decoration: line-through;\">Hormon</span><span style=\"color: #ff0000;\">&Ouml;strogen</span>behandling</h4>\n<p>Hormonbehandling av den typ som ges mot svettningar och blodvallningar (medelpotent &ouml;strogen eller &ouml;strogen i kombination med gestagen) har ingen f&ouml;rebyggande eller behandlande effekt mot urininkont<span style=\"color: #000000;\">inens, utan verkar snarare kunna f&ouml;rv&auml;rra inkontinensbesv&auml;r. &Ouml;strogen som administreras lokalt eller preparat som inneh&aring;ller &ouml;striol&nbsp; har d&auml;remot viss effekt mot tr&auml;ngningar och lokala besv&auml;r i form av sveda och irritation (24). Se &auml;ven kapitlet Allm&auml;n gynekologi, avsnittet</span> <a href=\"{pre}/kapitel/gynekologi/allman_gynekologi.html#i3_47\" target=\"_blank\">Klimakteriebesv&auml;r</a>.</p>\n<h4 id=\"g2_25\">Antibiotika</h4>\n<p>Antibiotika ges vid tr&auml;ngningar och signifikant bakteriuri. Asymtomatisk bakteriuri &auml;r vanligt hos &auml;ldre kvinnor. Ett behandlingsf&ouml;rs&ouml;k med antibiotika kan vara av v&auml;rde om man misst&auml;nker bakteriellt inslag. Se vidare kapitlet Urinv&auml;gsinfektioner, avsnittet <a href=\"{pre}/kapitel/nefrologi-urologi/urinvagsinfektioner.html#g3_47\" target=\"_blank\">UVI hos &auml;ldre kvinnor</a>.</p>\n<h4 id=\"g2_26\">Elektrostimulering<em> </em></h4>\n<p>Elektrostimulering kan pr&ouml;vas i de fall n&auml;r kvinnan inte kan kontrahera sin b&auml;ckenbottenmuskulatur som biofeedback. <span style=\"color: #ff0000;\"><span style=\"color: #000000;\">Vaginal elektrostimulering har b&auml;ttre effekt &auml;n sham-behandling vid inkontinens men upplevs ofta som obehaglig.</span><span style=\"color: #00ff00;\"><span style=\"color: #000000;\"> Transkutan stimulering av tibialis posterior-nerven &auml;r en metod som gett f&ouml;rb&auml;ttring vid tr&auml;ngningsinkontinens i n&aring;gra studier men kompletterande studier beh&ouml;vs.(25)</span><br></span></span></p>\n<h4 id=\"g2_27\">Operation<em> </em></h4>\n<p>Om kvinnan vid anstr&auml;ngningsinkontinens inte &auml;r n&ouml;jd med resultatet efter tre till sex m&aring;naders tr&auml;ning b&ouml;r operation erbjudas. Operation &auml;r ocks&aring; ett alternativ vid blandinkontinens med normal miktionslista. En vanlig operation vid inkontinens &auml;r s&aring; kallad TVT (tension-free vagina<span style=\"color: #000000;\">l tape) vilken g&ouml;rs som dagkirurgi under lokalbed&ouml;vning via incision i slidan d&auml;r tejpen f&ouml;rs ut via </span>tv&aring; sm&aring; incisioner ovanf&ouml;r symfysen. En <span style=\"color: #000000;\">variant p&aring; TVT-operation &auml;r s&aring; kallad TVT-O, d&aring; tejpen i st&auml;llet, via incisionen i slidan, dras ut genom foramen obturatorium till l&aring;rets insida. Upp till 5&nbsp;&aring;r efter operationen uppger &gt;&nbsp;80&nbsp;% av kvinnorna att de aldrig, eller n&auml;stan aldrig l&auml;cker oavsett vilken av dessa tv&aring; operationsmetoder som anv&auml;nts. &Auml;n s&aring; l&auml;nge finns f&aring; studier som redovisar uppf&ouml;ljningstid &gt;&nbsp;5&nbsp;&aring;r men de data som finns pekar p&aring; att de positiva operationsresultaten kvarst&aring;r. (26)<br></span></p>\n<p class=\"indent\"><br><span style=\"color: #000000;\"><span style=\"text-decoration: line-through;\"></span>Komplikationsfrekvensen &auml;r l&aring;g men f&ouml;rekommer fr&auml;mst i form av bl&aring;sskada, bl&aring;st&ouml;mningssv&aring;righeter, sekund&auml;ra tr&auml;ngningar, sm&auml;rta vid samlag och ljumsksm&auml;rta. Komplikationer &auml;r n&aring;got vanligare vid TVT metoden f&ouml;rutom vad g&auml;ller ljumsksm&auml;rta som &auml;r vanligare (men oftast &ouml;verg&aring;ende inom sex till &aring;tta veckor) efter TVT-O metoden.<span style=\"text-decoration: line-through;\"><br></span></span></p>\n<h4 id=\"g2_28\">Injektion av expansiv substans runt urinr&ouml;ret</h4>\n<p>Denna behandling kan anv&auml;ndas vid anstr&auml;ngningsinkontinens. Ingreppet &auml;r mycket enkelt och kan utf&ouml;ras i gelanestesi &ndash; resultatet &auml;r dock inte lika bra, vare sig p&aring; kort eller l&aring;ng sikt, j&auml;mf&ouml;rt med operation.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a3ccfa9b-bc9b-46bf-a925-fb1f1fb617db",
+			"name": "a3ccfa9b-bc9b-46bf-a925-fb1f1fb617db",
+			"type": "text",
+			"content": "<h4 id=\"Intravesikal-injektion-av-botulinumtoxin\">Intravesikal injektion av botulinumtoxin</h4>\n<p><br>Injektionsbehandling med botulinumtoxin i urinbl&aring;sans v&auml;gg via cystoskopi orsakar detrusormuskelf&ouml;rlamning genom att p&aring;verka impulstrafiken fr&aring;n nerv till muskel.<br>Fr&aring;n att tidigare varit en behandling endast vid sv&aring;ra urintr&auml;ngningar/tr&auml;ngningsinkontinens orsakade av neurologisk sjukdom (MS, eller efter ryggm&auml;rgskada) kan det vara en alternativ behandling &auml;ven vid sv&aring;rbehandlad &ouml;veraktiv bl&aring;sa. Behandlingseffekten, med minskat antal inkontinensepisoder i medeltal 0,8&nbsp;per dygn och urintr&auml;ngningar 1,25&nbsp;per dygn j&auml;mf&ouml;rt med placebo, sitter vanligen i under sex till nio m&aring;nader, d&auml;refter kan ny behandling ges. Beskrivna komplikationer &auml;r tre g&aring;nger &ouml;kad risk f&ouml;r UVI och bl&aring;st&ouml;mningssv&aring;righeter (oftast &ouml;verg&aring;ende) definierat som resturin&nbsp;&gt;&nbsp;200&nbsp;ml (27).<span style=\"color: #00ff00;\"></span><br><br><span style=\"color: #339966;\"></span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "46b48742-d55b-4949-92e9-c10d36bc4d57",
+			"name": "46b48742-d55b-4949-92e9-c10d36bc4d57",
+			"type": "text",
+			"content": "<h2 id=\"g2_29\">Utredning och behandling av inkontinens hos m&auml;n</h2>\n<p>M&auml;n drabbas fr&auml;mst av av tr&auml;ngningsinkontinens men &auml;ven av &ouml;verrinnings- och droppinkontinens<span style=\"color: #ff0000;\">. </span><span style=\"color: #ff0000;\">Tr&auml;ngningsinkontinens &auml;r vanligt vid sviktande cerebrala funktioner och/eller prostatahyperplasi. Prostatahyperplasi kan leda till allvarlig &ouml;verrinningsinkontinens och njursvikt. Tr&auml;ngningsinkontinens nattetid kan ibland bero p&aring; nattlig polyuri, se avsnittet <a href=\"#g2_45\" target=\"_blank\">nokturi</a>. </span></p>\n<p><span style=\"color: #ff0000;\">&nbsp;</span></p>\n<h3 id=\"g2_30\">Anstr&auml;ngningsinkontinens</h3>\n<p>Det &auml;r ganska vanligt med &ouml;verg&aring;ende l&auml;ckage efter prostataoperation. Vid godartad prostataf&ouml;rstoring f&aring;r &lt;&nbsp;1&nbsp;% best&aring;ende anstr&auml;ngningsinkontinens efter prostataoperation genom urinr&ouml;ret. Efter radikal prostatektomi p&aring; grund av prostatacancer &auml;r risken betydligt h&ouml;gre. Om anstr&auml;ngningsl&auml;ckage f&ouml;rekommer hos en man, som inte &auml;r opererad, kan orsaken vara b&auml;ckenskada, tum&ouml;r, medf&ouml;dd missbildning eller neurologisk sjukdom.</p>\n<h3 id=\"g2_31\">Tr&auml;ngningsinkontinens</h3>\n<ul>\n<li><span class=\"tab\"></span>Retning i eller n&auml;ra urinbl&aring;sa eller urinr&ouml;r. De vanligaste orsakerna &auml;r godatard prostataf&ouml;rstoring, prostatit, f&ouml;rtr&auml;ngning i urinr&ouml;ret eller prostatacancer. <br>Urinv&auml;gsinfektion, inflammation i bl&aring;san utan infektion, bl&aring;stum&ouml;r eller bl&aring;ssten kan irritera urinbl&aring;san inifr&aring;n.</li>\n<li><span class=\"tab\"></span>Ofrivilliga bl&aring;smuskelsammandragningar, oftast utan k&auml;nd orsak.</li>\n<li>Neurologiska skador efter cerebrovaskul&auml;r h&auml;ndelse, vid MS, Mb Parkinson, ryggm&auml;rgsskador.<span style=\"color: #ff0000;\"> </span>Oh&auml;mmad bl&aring;sa, hyperreflexi och bl&aring;sneuropati &ndash; genes som hos kvinnor, se <a href=\"#g2_7\" target=\"_blank\">Inkontinens hos kvinnor - Tr&auml;ngningsinkontinens</a>.<span style=\"font-style: italic;\"><span class=\"tab\"></span></span><span style=\"text-decoration: line-through;\"></span></li>\n</ul>\n<h3 id=\"g2_32\">&Ouml;verrinningsinkontinens</h3>\n<ul>\n<li><span class=\"tab\"></span>Avfl&ouml;deshinder.<br>&ndash; Vid avfl&ouml;deshinder p&aring; grund av prostatahyperplasi l&auml;cker det lite d&aring; och d&aring;, oftast i samband med sm&aring; kontraktioner i detrusorn. I fall som utvecklats sakta under l&aring;ng tid upplever patienten ofta ingen tr&auml;ngningsk&auml;nsla, men sm&aring;skv&auml;tter urin dag som natt. Ett allvarligt avfl&ouml;deshinder kan utvecklas utan att patienten upplevt bl&aring;st&ouml;mningssv&aring;righeter.<br>&ndash; Avfl&ouml;deshinder p&aring; grund av f&ouml;rstorad prostata kan ge permanenta bl&aring;s- och njurskador om det inte uppt&auml;cks i tid.</li>\n<li><span class=\"tab\"></span>Detrusorinsufficiens, neurogen<span style=\"font-style: italic;\"> &ndash; </span>genes som hos kvinnor,<a href=\"#g2_9\" target=\"_blank\"> Inkontinens hos kvinnor - &Ouml;verriningsinkontinens</a>.</li>\n<li><span style=\"font-style: italic;\"><span class=\"tab\"></span></span>L&auml;kemedelsutl&ouml;st inkontinens<span style=\"font-style: italic;\"> &ndash; </span>genes som hos kvinnor, se,<a href=\"#g2_9\" target=\"_blank\"> Inkontinens hos kvinnor - &Ouml;verriningsinkontinens</a> &ndash; vanligt framf&ouml;r allt hos m&auml;n med prostataf&ouml;rstoring.</li>\n<li>-Droppinkontinens - efterdropp beror p&aring; f&ouml;rsvagning av den bulbouretrala muskeln som ska komprimera urinr&ouml;ret efter avslutad miktion.</li>\n</ul>\n<h3 id=\"g2_33\">Utredning</h3>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2416fa59-3924-4a21-a45c-e926d7c65614",
+			"name": "2416fa59-3924-4a21-a45c-e926d7c65614",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"crossref\" id=\"82850\"></a>Hjälpmedel vid <a class=\"index\" id=\"1030511\" data-text=\"urininkontinens:diagnostik\"></a>diagnostik",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Incontinensscore. <br><br>Ett validerat och ofta anv&auml;nt formul&auml;r f&ouml;r att best&auml;mma sv&aring;righetsgrad och f&ouml;r att f&ouml;lja effekt av behandling &auml;r ICIQ UI-SF, se <a href=\"#\" target=\"_blank\">Bild 1</a>. Po&auml;ngen adderas f&ouml;r de f&ouml;rsta tre fr&aring;gorna och bildar en score p&aring; 0-21. <br>L&auml;tt inkontinens 0-5&nbsp;po&auml;ng, m&aring;ttlig inkontinens 6-12&nbsp;po&auml;ng, sv&aring;r/mycket sv&aring;r inkontinens 13-21&nbsp;po&auml;ng. <br>Den sista fr&aring;gan i formul&auml;ret kan ge hj&auml;lp f&ouml;r klassificering av typ (28).</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Miktionslista/miktionsdagbok, d&auml;r patienten under ett till tre dygn noterar tid och volym vid varje miktion samt eventuella tr&auml;ngningar och l&auml;ckage. <br><br>Miktionsvolymen varierar avsev&auml;rt, b&aring;de mellan individer och med &aring;ldern, men &auml;r i regel 150&ndash;400&nbsp;ml, med fyra till sju miktioner/dag och en total dygnsvolym p&aring; en till tv&aring; liter. En maxvolym p&aring; 300&nbsp;ml eller mer talar f&ouml;r normal bl&aring;skapacitet. En diskussion med patienten kring miktionslistan kan ge god v&auml;gledning kring typen av l&auml;ckage, abnormt v&auml;tskeintag, p&aring;verkan av l&auml;kemedel som diuretika etc. Hos &auml;ldre samt hos barn kan det vara sv&aring;rt att m&auml;ta varje miktionsvolym. Ett toalettschema med kryssmarkering vid varje bl&aring;st&ouml;mning kan d&aring; ge god information.<br><br>Exempel p&aring; resultat fr&aring;n miktionsregistreringar vid olika inkontinenstyper finns i <a href=\"#g2_19\" target=\"_blank\">Tabell 1</a>. Exempel p&aring; en anv&auml;ndbar miktionslista visas i <a href=\"#g2_36\" target=\"_blank\">Figur 2 </a>.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>L&auml;ckagetest. L&auml;ckaget i varje inkontinensskydd m&auml;ts under ett till tv&aring; dygn. Testet kan vara av v&auml;rde vid utprovning av r&auml;tt storlek p&aring; hj&auml;lpmedel och f&ouml;r bed&ouml;mning av terapieffekt. Mer &auml;n 8 gram/dygn anses som signifikant l&auml;ckage.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Laboratorieprover. Urinsticka (+ urinodling vid tr&auml;ngningar), kreatinin vid misstanke om urinretention och PSA hos m&auml;n.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Tidsmiktionsprotokoll anv&auml;nds hos m&auml;n f&ouml;r att avsl&ouml;ja avfl&ouml;deshinder. Om t&ouml;mningen av den f&ouml;rsta decilitern sker p&aring; 10 sekunder eller mindre &auml;r sannolikheten f&ouml;r avfl&ouml;deshinder mycket l&aring;g.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Resturinen kan m&auml;tas med kateter eller ultraljud. Om anamnes och tidsmiktion inte med s&auml;kerhet kan utesluta &ouml;verrinningsinkontinens eller avfl&ouml;deshinder hos m&auml;n b&ouml;r resturin m&auml;tas.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Vid utredning av m&auml;n g&ouml;rs &auml;ven en skattning av miktionsbesv&auml;ren med ett IPSS-formul&auml;r (International prostatic symptom score).</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": "g2_35"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0d04488f-60be-49f5-8d6f-fdae57572cba",
+			"name": "0d04488f-60be-49f5-8d6f-fdae57572cba",
+			"type": "text",
+			"content": "<p>Eftersom inkontinens hos m&auml;n kan vara kopplad till prostatasjukdom ska den prim&auml;ra utredningen inriktas p&aring; prostata. Vid hyperplasi kan ofta m&aring;ttliga tr&auml;ngningsbesv&auml;r p&aring;verkas av l&auml;kemedel eller operation (se kapitlet Sjukdomar i manliga genitalia, avsnittet <a href=\"{pre}/kapitel/nefrologi-urologi/sjukdomar_i_manliga_genitalia.html#Blastomningsproblem-hos-man\" target=\"_blank\">Bl&aring;st&ouml;mningsproblem hos m&auml;n</a><span style=\"text-decoration: line-through;\"></span>). Behandlingsresultaten &auml;r s&auml;mre vid sv&aring;rare inkontinens om denna inte beror p&aring; &ouml;verrinningsl&auml;ckage. Ofta f&ouml;religger d&aring; en oh&auml;mmad bl&aring;sa och patienten f&ouml;rb&auml;ttras inte av behandling mot prostataf&ouml;rstoringen.</p>\n<p><br>N&auml;r det g&auml;ller hj&auml;lpmedel vid diagnostik se <a href=\"#facts_2_header\" target=\"_blank\">Faktaruta 2</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4c9e7a6f-f835-4dc6-a4f2-7fa222c78237",
+			"name": "4c9e7a6f-f835-4dc6-a4f2-7fa222c78237",
+			"type": "image",
+			"content": {
+				"image": "/images/iciq_ui_sf__swedish__2.png",
+				"alt": "ICIQ-UI SW",
+				"htmlbefore": "<h3> Bild 1. ICIQ-UI formulär på svenska</h3> <br><br>",
+				"htmlafter": "",
+				"maxwidth": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3f6151f2-f9b9-4cf2-aac5-d3048bec7d99",
+			"name": "3f6151f2-f9b9-4cf2-aac5-d3048bec7d99",
+			"type": "figure",
+			"content": {
+				"number": "2",
+				"maxwidth": "",
+				"image": "/images/g2_nef_urininkontinens_2013fm10_images/figur2.png",
+				"title": "",
+				"text": "<a class=\"crossref\" id=\"35732\"></a>Miktionslista",
+				"alt": "",
+				"id": "g2_36"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e539b253-cadd-4e10-809d-13f54df37e42",
+			"name": "e539b253-cadd-4e10-809d-13f54df37e42",
+			"type": "text",
+			"content": "<h4 id=\"g2_37\"><em>Utredning</em></h4>\n<ul>\n<li>Anamnes</li>\n<li>Urinsticka eventuellt urinodling</li>\n<li>Buk- och Prostatapalpation, analsfinktertonus</li>\n<li>Miktionslista/miktionsdagbok</li>\n<li>Resturin</li>\n<li>P-kreatinin (eGFR)</li>\n<li>PSA</li>\n<li>eventuellt Tidsmiktionslista</li>\n<li>eventuellt IPSS-formul&auml;r (International prostatic symptom score)</li>\n</ul>\n<h4 id=\"g2_38\"><em>Indikationer f&ouml;r vidare utredning</em></h4>\n<ul>\n<li><span class=\"tab\"></span>Makroskopisk hematuri eller annan misstanke om tum&ouml;rsjukdom</li>\n<li><span class=\"tab\"></span>Misst&auml;nkt neurologisk sjukdom, s&auml;rskilt vid ryggm&auml;rgsgenes</li>\n<li><span class=\"tab\"></span>Tecken p&aring; avfl&ouml;deshinder</li>\n<li><span class=\"tab\"></span>&Ouml;verrinningsinkontinens</li>\n<li><span class=\"tab\"></span>Postoperativ inkontinens</li>\n<li><span class=\"tab\"></span>Misst&auml;nkt l&auml;ckage utanf&ouml;r urinr&ouml;ret</li>\n<li><span class=\"tab\"></span>Oklar diagnos eller otillr&auml;cklig effekt av behandling</li>\n<li>Vid best&aring;ende l&auml;ckage efter operation b&ouml;r vidare utredning ske eftersom postoperativ inkontinens kan ha m&aring;nga andra orsaker &auml;n slutmuskelskada.</li>\n</ul>\n<h3 id=\"g2_39\">Behandling</h3>\n<p class=\"indent\"><br>Vid &ouml;verrinningsinkontinens ska KAD s&auml;ttas eller ren intermittent kateterisering (RIK) p&aring;b&ouml;rjas. Patienten remitteras eller utreds vidare.<br><br>Om tr&auml;ngningsl&auml;ckage f&ouml;religger utan tecken p&aring; avfl&ouml;deshinder (normal tidsmiktion och ingen resturin) b&ouml;r bl&aring;str&auml;ning och l&auml;kemedel mot tr&auml;ngningar/tr&auml;ngningsinkontinens anv&auml;ndas. &Auml;ven vid m&aring;ttligt avfl&ouml;deshinder, om patienten inte svarat p&aring; en mer prostataspecifik behandling, kan i regel antimuskarina eller beta3-stimulerande l&auml;kemedel ges utan st&ouml;rre risk f&ouml;r urinretention. Anstr&auml;ngningsinkontinens &auml;r relativt vanligt efter radikal prostatektomi och behandlas d&aring; i f&ouml;rsta hand med b&auml;ckenbottentr&auml;ning.&nbsp;</p>\n<p class=\"indent\"><span style=\"color: #00ff00;\"><br></span>F&ouml;r avsnittet Utredning och behandling av inkontinens hos m&auml;n, se &auml;ven <a href=\"#g2_67\" target=\"_blank\">F&ouml;r vidare l&auml;sning.</a><span style=\"color: #00ff00;\"><br><br></span></p>\n<h2 id=\"g2_40\">Behandling vid speciella former av inkontinens</h2>\n<p>Vid s&auml;rskilt sv&aring;ra former av urininkontinens, d&auml;r inte bl&aring;str&auml;ning, b&auml;ckenbottentr&auml;ning, peroral bl&aring;sd&auml;mpande medicinering eller klassisk inkontinensoperation hj&auml;lper, kan mer avancerade behandlingstekniker &ouml;verv&auml;gas. Se vidare i <a href=\"#g2_41\" target=\"_blank\">Tabell 2</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b550685b-ae2e-4b36-963e-56e5f14570f2",
+			"name": "b550685b-ae2e-4b36-963e-56e5f14570f2",
+			"type": "tablewide",
+			"content": {
+				"number": "2",
+				"title": "<span style=\"font-weight: bold;\"><a class=\"crossref\" id=\"70783\"></a>Avancerad behandling vid speciella former av inkontinens </span>",
+				"id": "g2_41",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Tr&auml;ngningsinkontinens</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>Sfinkterinkontinens</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>Kronisk urinretention</strong></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Instillation i bl&aring;san</div>\r\n<div class=\"tableLine\">av l&auml;kemedel som</div>\r\n<div class=\"tableLine\">d&auml;mpar bl&aring;saktiviteten</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Injektion av expansiv substans</div>\r\n<div class=\"tableLine\">runt urinr&ouml;ret</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Elektrisk stimulering inuti bl&aring;san</div>\r\n<div class=\"tableLine\">Avfl&ouml;desbefr&auml;mjande kirurgi</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Intravesikal injektion av</div>\r\n<div class=\"tableLine\">botulinumtoxin</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Slyngplastik</div>\r\n<div class=\"tableLine\">&ndash; kroppsegen fascia</div>\r\n<div class=\"tableLine\">&ndash; syntetiska produkter</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Bl&aring;sstimulerande l&auml;kemedel</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Nervrotsstimulering via</div>\r\n<div class=\"tableLine\">pacemakerimplantation</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Implantation av justerbara</div>\r\n<div class=\"tableLine\">bl&aring;shalsst&ouml;djande proteser</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Nervrotsstimulering via</div>\r\n<div class=\"tableLine\">pacemakerimplantation</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Bl&aring;sf&ouml;rstorande ingrepp</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Implantation av artificiellt</div>\r\n<div class=\"tableLine\">trekomponents sfinktersystem</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Kateterbehandling</div>\r\n<div class=\"tableLine\">&ndash; RIK</div>\r\n<div class=\"tableLine\">&ndash; KAD (kateter &agrave; demeure)</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Urinavledande ingrepp</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Urinavledande ingrepp</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Urinavledande ingrepp</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a9029502-25d1-420c-b77a-5326de4829a9",
+			"name": "a9029502-25d1-420c-b77a-5326de4829a9",
+			"type": "text",
+			"content": "<h2 id=\"g2_42\">Inkontinens hos &auml;ldre</h2>\n<p>Inkontinens kan p&aring;verka livskvaliteten betydligt b&aring;de hos &auml;ldre (<u>&gt;&nbsp;</u>65 &aring;r) och deras anh&ouml;riga. Behandling &auml;r effektiv oavsett &aring;lder och utredningen ska omfatta anamnes, genomg&aring;ng av l&auml;kemedelslista, miktionsdagbok (eller lista &ouml;ver l&auml;ckage) och urinprov. Resturin m&auml;ts p&aring; m&auml;n samt vid neurologiska sjukdomar, diabetes och vid bruk av l&auml;kemedel som kan p&aring;verka bl&aring;sfunktionen hos b&auml;gge k&ouml;n. Vid nytillkomna tr&auml;ngningsbesv&auml;r, d&auml;r urinodling &auml;r negativ, b&ouml;r man t&auml;nka p&aring; malignitet i eller runt bl&aring;san speciellt vid samtidig hematuri.</p>\n<p><br>B&auml;ckenbottentr&auml;ning i kombination med annan fysisk tr&auml;ning j&auml;mf&ouml;rt med utbildning eller bl&aring;str&auml;ning reducerar inkontinens och p&aring;verkan p&aring; det dagliga livet vid all typ av inkontinens hos &auml;ldre kvinnor (1,29). Antimuskarina l&auml;kemedel minskar antalet l&auml;ckage vid tr&auml;ngningsinkontinens, vid utg&aring;ngsl&auml;ge tv&aring; till tre l&auml;ckage per dygn motsvarar minskningen ett halvt l&auml;ckage per dygn j&auml;mf&ouml;rt med placebo (1,30). Biverkningsfrekvensen &auml;r h&ouml;g, med muntorrhet hos 11-32&nbsp;% och f&ouml;rstoppning hos 6-24&nbsp;% (1,30) Det vetenskapliga underlaget &auml;r hittills otillr&auml;ckligt f&ouml;r att avg&ouml;ra om dessa l&auml;kemedel p&aring;verkar kognitiva funktioner hos &auml;ldre. Effekten av mirabegron &auml;r inte utv&auml;rderad i studier p&aring; &auml;ldre. Kirurgisk behandling med slyngplastik minskar urinl&auml;ckage och f&ouml;rb&auml;ttrar livskvaliteten hos &auml;ldre kvinnor med anstr&auml;ngningsinkontinens (1,31). Risken f&ouml;r nytillkomna tr&auml;ngningar efter operation f&ouml;refaller &ouml;kad f&ouml;r &auml;ldre (31).</p>\n<h3 id=\"Inkontinens-hos-skora-aldre\">Inkontinens hos sk&ouml;ra &auml;ldre</h3>\n<p>Hos sk&ouml;ra &auml;ldre; &auml;ldre &ge;&nbsp;65&nbsp;&aring;r och boende p&aring; s&auml;rskilt boende, f&aring;r n&auml;rmilj&ouml; och eventuella handikapp stor betydelse f&ouml;r uppkomst och effekt av inkontinens. F&ouml;r&auml;ndringar i syn, finmotorik och f&ouml;rflyttningsf&ouml;rm&aring;ga kan p&aring;verka m&ouml;jligheten att snabbt ta sig till toalett, kn&auml;ppa upp knappar med mera. Ol&auml;mpliga l&auml;kemedel, till exempel snabbverkande diuretika kan g&ouml;ra det om&ouml;jligt att bevara kontinens.</p>\n<p><br>&Auml;ldre med s&aring; kallad oh&auml;mmad bl&aring;sa f&aring;r ofta tr&auml;ngningar strax innan eller precis n&auml;r l&auml;ckaget kommer. Det &auml;r d&aring; till hj&auml;lp att kartl&auml;gga tider f&ouml;r l&auml;ckagen samt p&aring;minna och hj&auml;lpa den &auml;ldre till toalett innan bl&aring;san blir s&aring; full att tr&auml;ngningar och l&auml;ckage uppst&aring;r (vanetr&auml;ning). Schemalagda toalett-tider kan vara en hj&auml;lp ibland. Uppm&auml;rksamhetstr&auml;ning inneb&auml;r att man st&ouml;djer den &auml;ldre att sj&auml;lv efterfr&aring;ga toaletthj&auml;lp. Uppm&auml;rksamhetstr&auml;ning och hj&auml;lp till toalettbes&ouml;k i kombination med funktionell tr&auml;ning ger minskade inkontinensepisoder hos &auml;ldre (1,29). Det &auml;r inte evidensbaserat att behandla sk&ouml;ra &auml;ldre med kirurgi, antimuskarina l&auml;kemedel eller mirabegron d&aring; studier saknas (1,30).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f3657dfe-ea28-47d3-b733-e04b48f40c7b",
+			"name": "f3657dfe-ea28-47d3-b733-e04b48f40c7b",
+			"type": "text",
+			"content": "<h2 id=\"g2_45\">Nokturi</h2>\n<p>Nokturi (= nattligt uppvaknande p&aring; grund av behov av vattenkastning) rapporteras av betydligt mer &auml;n h&auml;lften av alla individer &gt;&nbsp;50 &aring;r och &auml;r allts&aring; helt normalt. Besv&auml;rande nokturi med flera uppvaknanden kan bero p&aring; stora urinvolymer, f&ouml;r liten bl&aring;skapacitet eller en kombination. Nattlig polyuri f&ouml;religger n&auml;r den nattliga urinvolymen, inklusive f&ouml;rsta vattenkastningen p&aring; morgonen, utg&ouml;r mer &auml;n en tredjedel av hela dygnsvolymen.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "09a83f32-05d0-495b-88dc-8b058cd3a4f5",
+			"name": "09a83f32-05d0-495b-88dc-8b058cd3a4f5",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "<a class=\"crossref\" id=\"90552\"></a>Orsaker till nokturi",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Polyuri<br>&ndash; Diabetes mellitus<br>&ndash; Diabetes insipidus<br>&ndash; Excessivt v&auml;tskeintag</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Nattlig polyuri<br>&ndash; St&ouml;rning i dygnsrytm av antidiuretiskt hormon (ADH)<br>&ndash;<span class=\"tab\"></span> Hj&auml;rtsvikt<br>&ndash;<span class=\"tab\"></span> S&ouml;mnapn&eacute;<br>&ndash;<span class=\"tab\"></span> Njursvikt</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Problem med lagring av urin<br>&ndash;<span class=\"tab\"></span> Nedsatt bl&aring;skapacitet<br>&ndash; <span class=\"tab\"></span>Ofrivilliga bl&aring;smuskelsammandragningar som ger tr&auml;ngningar<br>&ndash;<span class=\"tab\"></span> Avfl&ouml;deshinder, till exempel prostatahyperplasi med resturin<br>&ndash;<span class=\"tab\"></span> &Aring;ldersf&ouml;r&auml;ndringar</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>S&ouml;mnproblem<br>&ndash; Det kan vara sv&aring;rt att avg&ouml;ra om s&ouml;mnproblem eller nokturi &auml;r det prim&auml;ra</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "g2_48"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c99393ec-df4c-486c-9a29-12764bdc0243",
+			"name": "c99393ec-df4c-486c-9a29-12764bdc0243",
+			"type": "text",
+			"content": "<h3 id=\"g2_46\">Behandling av nokturi</h3>\n<p>Miktionslista &auml;r ett hj&auml;lpmedel f&ouml;r att avg&ouml;ra orsaken till nokturi och i vissa fall kan grund&aring;komman, s&aring;som hj&auml;rtsvikt och s&ouml;mnapn&eacute;, behandlas.</p>\n<p class=\"indent\"><br>Om andra orsaker, se <a href=\"#facts_3_header\" target=\"_blank\">Faktaruta 3,</a> till nokturi kan uteslutas, kan behandling med desmopressin &ouml;verv&auml;gas vid nattlig polyuri (32). Behandling med desmopressin kan leda till att antalet nattliga bl&aring;st&ouml;mningar minskar fr&aring;n cirka tre till tv&aring; stycken (33,34,35). Risken f&ouml;r symtomatisk hyponatremi (huvudv&auml;rk, yrsel, i sv&aring;ra fall sl&ouml;het och kramper) &ouml;kar med &aring;ldern, vid h&ouml;g dygnsurin och vid natriumv&auml;rde i nedre delen av normalomr&aring;det innan insatt behandling. I en studie av &auml;ldre (&gt;&nbsp;65 &aring;r) uppkom symtomatisk hyponatremi hos 8&nbsp;% &ndash; symtomen kom inom 1&nbsp;vecka efter att behandling inletts eller dos&ouml;kning skett. Hos yngre &auml;r risken betydligt mindre. Patienter som behandlas med diuretika, l&auml;kemedel som kan p&aring;verka ADH-sekretionen (till exempel tricykliska antidepressiva, SSRI, karbamazepin) eller NSAID har speciellt l&auml;tt att utveckla hyponatremi med v&auml;tskeretention. Det &auml;r viktigt att vara uppm&auml;rksam p&aring; &ouml;kande vikt och/eller sjunkande S-Na i samband med ins&auml;ttande av desmopressin. Se &auml;ven Terapirekommendationer i <span>kapitlet <a href=\"{pre}/kapitel/endokrinologi/kortikosteroider_och_hypofyshormoner.html#k4_41\" target=\"_blank\">Kortikosteroider</a></span><a href=\"{pre}/kapitel/endokrinologi/kortikosteroider_och_hypofyshormoner.html#k4_41\" target=\"_blank\"> och hypofyshormoner</a>.</p>\n<p class=\"indent\"><br>Miktionslista i tv&aring; dygn ger grund f&ouml;r diagnosen nattlig polyuri. S-natrium b&ouml;r m&auml;tas innan behandling p&aring;b&ouml;rjas, efter tre dagars behandling med desmopressin samt vid dos&ouml;kning vid behandling av patienter &gt;&nbsp;65&nbsp;&nbsp;&aring;r. Vid symtom p&aring; hyponatremi b&ouml;r behandlingen avslutas. Rekommenderad initialdos &auml;r 0,1&nbsp;mg peroralt till natten (motsvarar 60&nbsp;mikrog frystorkad tablett), som veckovis kan trappas upp till 0,4&nbsp;mg. V&auml;tskerestriktion b&ouml;r iakttas efter tablettintag.</p>\n<p class=\"indent\"><br>Vid nokturi p&aring; grund av l&aring;g bl&aring;skapacitet, tr&auml;ngningar/tr&auml;ngningsl&auml;ckage kan behandling med&nbsp; l&auml;kemedel pr&ouml;vas (se <a href=\"#g2_20\" target=\"_blank\">L&auml;kemedelsbehandling vid tr&auml;ngningsinkontinens</a>).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "559e37a3-af56-4eb1-bbd4-4128e874471f",
+			"name": "559e37a3-af56-4eb1-bbd4-4128e874471f",
+			"type": "text",
+			"content": "<h2 id=\"g2_49\">Inkontinenshj&auml;lpmedel</h2>\n<p>I Sverige &auml;r inkontinenshj&auml;lpmedel oftast kostnadsfria f&ouml;r patienten. H&auml;lften av kostnaderna f&ouml;r inkontinenshj&auml;lpmedel r&ouml;r personer som &auml;r 80&nbsp;&aring;r och &auml;ldre. Utredning g&ouml;rs innan f&ouml;rskrivning av inkontinensskydd och flera studier har visat att noggrant utprovade hj&auml;lmedel minskar kostnaderna v&auml;sentligt. L&auml;ckagetest och anpassning av skydd till kroppform och olika typer av aktivitet &auml;r viktigt. Hj&auml;lpmedelsf&ouml;rteckningar underl&auml;ttar valet av r&auml;tt hj&auml;lpmedel.</p>\n<p class=\"indent\"><br>Ett viktigt hj&auml;lpmedel &auml;r ofta urinflaskan, som kan ordineras som hj&auml;lpmedel. Uridom kan ibland pr&ouml;vas, men h&ouml;g resturin m&aring;ste uteslutas innan behandling p&aring;b&ouml;rjas. Hj&auml;lpmedel att anv&auml;nda i vagina, till exempel kontinensb&aring;ge f&ouml;r kvinnor med anstr&auml;ngningsinkontinens, kan i individuella fall pr&ouml;vas.</p>\n<h3 id=\"g2_50\">Behandling med kateter</h3>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "79679170-40a3-4e0d-9ade-6c8e0c59d285",
+			"name": "79679170-40a3-4e0d-9ade-6c8e0c59d285",
+			"type": "facts",
+			"content": {
+				"number": "4",
+				"title": "Kateter vid urininkontinens KAD",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding:0px; margin:0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>L&aring;ngtidsbehandling med KAD b&ouml;r endast i undantagsfall ske p&aring; annan indikation &auml;n kronisk urinretention.</li>\r\n</ul>\r\n<ul style=\"padding:0px; margin:0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>M&aring;ttlig resturin &auml;r s&auml;llan indikation f&ouml;r KAD &ndash; bl&aring;skapacitet och njurfunktion avg&ouml;r hur h&ouml;g resturin som kan accepteras.</li>\r\n</ul>\r\n<ul style=\"padding:0px; margin:0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Vid urinst&auml;mma brukar katetern i praktiken l&auml;mnas &ouml;ppen under n&aring;gon vecka om resturinen uppg&aring;r till 800&ndash;1&nbsp;000&nbsp;ml eller mer.</li>\r\n</ul>\r\n<ul style=\"padding:0px; margin:0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Tillf&auml;llig resturin &auml;r vanligt hos &auml;ldre vid f&ouml;rs&auml;mrat allm&auml;ntillst&aring;nd, upprepade kateterdragningsf&ouml;rs&ouml;k b&ouml;r i regel g&ouml;ras, f&ouml;rsta g&aring;ngen efter 3&ndash;14 dagar, beroende p&aring; hur mycket som stod i bl&aring;san vid kateters&auml;ttningen.&nbsp; <br>Vid retention p&aring; flera liter, s&auml;rskilt i kombination med p&aring;verkan p&aring; &ouml;vre urinv&auml;garna, kan det vara rimligt att helt avst&aring; fr&aring;n kateterdragningsf&ouml;rs&ouml;k.&nbsp;</li>\r\n</ul>\r\n<ul style=\"padding:0px; margin:0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>F&ouml;rbehandling; med antibiotikum (eftersom odlingssvar i regel saknas, v&auml;ljs i f&ouml;rsta hand ciprofloxacin, 500&nbsp;mg som eng&aring;ngsdos ett par timmar f&ouml;re) och, hos m&auml;n, med alfaadrenerg blockerare (under n&aring;gra dygn), kan underl&auml;tta KAD-dragning.</li>\r\n</ul>\r\n<ul style=\"padding:0px; margin:0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Orsak och planerad behandlingstid med KAD ska alltid journalf&ouml;ras och f&ouml;lja patienten i v&aring;rdkedjan.</li>\r\n</ul>\r\n<ul style=\"padding:0px; margin:0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>&Ouml;verv&auml;g alltid sj&auml;lvtappning som alternativ till KAD.</li>\r\n</ul>\r\n<ul style=\"padding:0px; margin:0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Bakteriuri vid KAD kr&auml;ver s&auml;llan behandling.</li>\r\n</ul>\r\n<ul style=\"padding:0px; margin:0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Individualisera tid f&ouml;r KAD-byte med h&auml;nsyn till stopp, saltutf&auml;llning etc.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": "g2_52"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b32daaa0-13f2-47cc-9592-4a2063ac832d",
+			"name": "b32daaa0-13f2-47cc-9592-4a2063ac832d",
+			"type": "text",
+			"content": "<p>Indikation f&ouml;r kateterbehandling (KAD) &auml;r &ouml;verrinningsinkontinens eller inkontinens av annan genes kombinerad med ofullst&auml;ndig bl&aring;st&ouml;mning. Se vidare i Faktaruta 4 ovan. Se &auml;ven kapitlet Urinv&auml;gsinfektioner, avsnittet <a href=\"{pre}/kapitel/nefrologi-urologi/urinvagsinfektioner.html#g3_49\" target=\"_blank\">UVI hos patienter med KAD</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5a6d6165-910e-44af-814c-2cc147201edd",
+			"name": "5a6d6165-910e-44af-814c-2cc147201edd",
+			"type": "text",
+			"content": "<h2 id=\"g2_53\">Urininkontinens och enures hos barn</h2>\n<p>Urinbl&aring;san rymmer cirka 30&nbsp;ml vid f&ouml;dseln och &ouml;kar sin volym med 30&nbsp;ml per levnads&aring;r upp till en bl&aring;skapacitet p&aring; 450&ndash;500&nbsp;ml vid 16 &aring;rs &aring;lder. Det nyf&ouml;dda barnet har en oh&auml;mmad miktion. Medveten bl&aring;skontroll utvecklas gradvis fr&aring;n tv&aring; till fyra &aring;rs &aring;lder och de flesta barn &auml;r torra b&aring;de dag och natt vid cirka fyra &aring;rs &aring;lder. Fullst&auml;ndig kontroll &ouml;ver bl&aring;sfunktionen f&ouml;religger i regel vid sex till sju &aring;rs &aring;lder, men vid skolstart har fortfarande cirka 25&nbsp;% vissa problem, fr&auml;mst tr&auml;ngningar. Urinl&auml;ckage f&ouml;rekommer i n&aring;gon form hos 15&nbsp;% av svenska skolbarn i &aring;ldern 7&ndash;15 &aring;r.</p>\n<h3 id=\"g2_54\">Nocturn enures hos barn</h3>\n<p class=\"indent\"><br>Nocturn enures (nattenures) definieras som nattlig s&auml;ngv&auml;tning efter fem &aring;rs &aring;lder, utan organisk skada eller samtidig daginkontinens. Barnet har normal bl&aring;sfunktion. En &auml;rftlig komponent finns ofta. Den normala dygnsvariationen i antidiuretiskt hormon (ADH) saknas ofta vid nocturn enures. L&aring;ga niv&aring;er av antidiuretiskt hormon nattetid ger &ouml;kad nattlig urinproduktion som leder till &ouml;verfyllnad av urinbl&aring;san. Vid skolstart har cirka 10&nbsp;% av barnen nattenures. Nattenures &auml;r vanligare hos pojkar.<span style=\"color: #ff0000;\"> </span>Prognosen &auml;r god med spontanutl&auml;kning hos cirka 15&nbsp;% per &aring;r. Hos n&aring;gon procent kvarst&aring;r dock problemet till vuxen &aring;lder.</p>\n<p class=\"indent\"><br>Begreppet sekund&auml;r enures anv&auml;nds f&ouml;r barn som varit torra &gt;&nbsp;6 m&aring;nader, men blir nattv&aring;ta igen. En noggrann utredning av bakomliggande faktorer b&ouml;r g&ouml;ras i dessa fall.</p>\n<h3 id=\"g2_55\">Daginkontinens hos barn</h3>\n<h4 id=\"g2_56\">Retningstillst&aring;nd i urinbl&aring;san</h4>\n<p>Eftersom barn har ofullst&auml;ndigt utvecklad bl&aring;skontroll leder infektioner l&auml;ttare till l&auml;ckage &auml;n hos vuxna. Detta &auml;r vanligt, speciellt hos flickor.</p>\n<h4 id=\"g2_57\">Retningstillst&aring;nd fr&aring;n urinr&ouml;ret</h4>\n<p>Avfl&ouml;deshinder kan underh&aring;lla detrusorinstabilitet. S&auml;rskilt hos pojkar &auml;r det viktigt att utesluta obstruktion i nedre urinv&auml;garna. Anamnesen &auml;r viktig. Kissar barnet med god str&aring;le eller droppande? En speciell form av medf&ouml;dd urinr&ouml;rsf&ouml;rtr&auml;ngning hos pojkar &auml;r s&aring; kallad uretravalvel.</p>\n<h4 id=\"g2_58\">Dysfunktionell bl&aring;srubbning</h4>\n<p>F&ouml;rsenad utveckling av nervsystemets kontroll &ouml;ver bl&aring;sfunktion och b&auml;ckenbotten &auml;r en vanlig orsak till l&auml;ckage i tidig skol&aring;lder. Ofrivilliga bl&aring;smuskelsammandragningar, kombinerat med d&aring;ligt avslappnad slutmuskel vid vattenkastning, kan ge tr&auml;ngningar och inkontinens.</p>\n<h4 id=\"g2_59\">Neurologisk sjukdom<em><br></em></h4>\n<p>Medf&ouml;dda hj&auml;rn- och ryggm&auml;rgsskador (till exempel CP-skada, ryggm&auml;rgsbr&aring;ck) och ryggm&auml;rgsskador efter olyckor leder ofta till l&auml;ckageproblem.</p>\n<p class=\"indent\"><br>En l&ouml;msk variant av ryggm&auml;rgsmissbildning &auml;r dold spina bifida, som man speciellt ska ha i &aring;tanke om barnet tidigare varit kontinent. I dessa fall &auml;r kotornas benring kluven n&auml;rmast huden, men ryggm&auml;rg med hinnor ligger p&aring; normal plats. En noggrann inspektion av ryggen kan avsl&ouml;ja hudf&ouml;r&auml;ndringar s&aring;som h&aring;rtofs eller indragning av huden.</p>\n<h3 id=\"g2_60\">Differentialdiagnoser</h3>\n<ul>\n<li><span class=\"tab\"></span>L&auml;ckage utanf&ouml;r urinr&ouml;ret. En ektopisk uret&auml;r som kan mynna i urinr&ouml;ret utanf&ouml;r sfinktern, i vagina eller vulva, ger ofta ett mycket diskret kontinuerligt droppl&auml;ckage.</li>\n<li><span style=\"font-style: italic;\"><span class=\"tab\"></span></span>Uretrovaginal reflux kan, hos flickor i f&ouml;rpuberteten, ge droppl&auml;ckage efter en i &ouml;vrigt normal miktion. Ett tryck med toalettpapper mot underlivet efter vattenkastning kan f&ouml;rhindra detta.</li>\n<li><span class=\"tab\"></span>Fnissinkontinens &auml;r en reflexm&auml;ssig st&ouml;rning av slutmuskelfunktionen, utan organiskt underlag, och oftast l&auml;ker den utan behandling.</li>\n<li><span class=\"tab\"></span>Efterdropp. Liksom hos vuxna kan ett l&aring;ngvarigt efterdropp efter miktionen missuppfattas som inkontinens. Detta b&ouml;r alltid f&ouml;ranleda misstanke om avfl&ouml;deshinder.</li>\n</ul>\n<h3 id=\"g2_61\">Utredning</h3>\n<p>Den prim&auml;ra utredningen och behandlingen sker ofta hos allm&auml;nl&auml;kare<span style=\"color: #ff0000;\">, p&aring; BVC eller inom skolh&auml;lsov&aring;rden</span>. Vid prim&auml;r nocturn enures med normalt miktionsm&ouml;nster dagtid utan l&auml;ckage &auml;r noggrann anamnes tillr&auml;ckligt.</p>\n<p class=\"indent\"><br>Vid sekund&auml;r nocturn enures och dagenures &auml;r det viktigt att uppt&auml;cka urinv&auml;gsinfektioner, medf&ouml;dda missbildningar och neurologiska skador. Inspektion av genitalia b&ouml;r alltid ske. I den neurologiska utredningen b&ouml;r perineal sensibilitet och resturin testas, liksom akillesreflexer och f&ouml;rm&aring;ga att st&aring;/g&aring; p&aring; t&aring;. Rygg och hud inspekteras.</p>\n<p class=\"indent\"><br>Miktionslista (se <a href=\"#facts_2_header\" target=\"_blank\">Faktaruta 2</a> ) &auml;r v&auml;sentlig f&ouml;r att f&aring; en uppfattning om hur barnet kissar dagtid. Urinsticka och urinodling b&ouml;r tas.</p>\n<h3 id=\"g2_62\">Behandling av nocturn enures</h3>\n<p>Det &auml;r viktigt med information till f&ouml;r&auml;ldrar och barn om bland annat att &aring;komman &auml;r &auml;rftlig och till exempel kan ge senare mognad av hormonsystemet som reglerar urinvolymen nattetid.</p>\n<h4 id=\"g2_63\">Enureslarm</h4>\n<p>Enureslarm &auml;r en v&auml;l fungerande och billig behandling och rekommenderas i f&ouml;rsta hand. En fuktavk&auml;nnare, i form av en matta med aluminiumfolie eller en liten kroppsburen avk&auml;nnare placerad i underbyxan, v&auml;cker barnet n&auml;r miktionen p&aring;b&ouml;rjas och det blir v&aring;tt i s&auml;ngen/byxan. M&aring;let &auml;r att utveckla en betingad reflex, s&aring; att full bl&aring;sa ger uppvaknande. Om inte effekt erh&aring;llits inom en till tv&aring; m&aring;nader b&ouml;r behandlingen avbrytas f&ouml;r att eventuellt &aring;terupptas senare. Farmakologisk behandling kan pr&ouml;vas.</p>\n<h4 id=\"g2_64\">L&auml;kemedel</h4>\n<p>Desmopressin h&auml;mmar diuresen, minskar d&auml;rf&ouml;r urinvolymen nattetid och reducerar antalet n&auml;tter barnet kissar p&aring; sig med i genomsnitt 1,3 per vecka (35). Behandlingen p&aring;b&ouml;rjas n&auml;r barnet k&auml;nner sig besv&auml;rat av att &rdquo;kissa p&aring; sig&rdquo; nattetid och sj&auml;lv vill prova behandling, ofta vid sex till sju &aring;rs &aring;lder.</p>\n<p class=\"indent\"><br>Desmopressin ges till natten som tablett 0,2&nbsp;mg (till barn &gt;&nbsp;6 &aring;r), kan &ouml;kas till 2 tabletter till natten. En frystorkad tablett p&aring; 120&nbsp;mikrog motsvarar en (vanlig) tablett p&aring; 0,2&nbsp;mg och 240&nbsp;mikrog motsvarar <span class=\"updated\" style=\"color: #000000;\">0,4&nbsp;mg</span>. V&auml;tskeintaget b&ouml;r minimeras fr&aring;n 1 timme innan dosen ges och under natten, annars finns risk f&ouml;r v&auml;tskeretention. Behandlingen kr&auml;ver ofta l&aring;ng tid (upp till ett &aring;r), men uppeh&aring;ll f&ouml;r att utv&auml;rdera effekten b&ouml;r ske (till exempel med tre m&aring;naders intervall och sedan en veckas uppeh&aring;ll).</p>\n<p class=\"indent\"><br>F&ouml;r barn som bara kissar p&aring; sig ibland &auml;r det ofta tillr&auml;ckligt att ge desmopressin inf&ouml;r &ouml;vernattning hos kompisar, vid l&auml;gervistelse, etc. I terapiresistenta fall kan enureslarm och desmopressinbehandling kombineras.</p>\n<h3 id=\"g2_65\">Behandling av daginkontinens</h3>\n<p>Om man vid inkontinens hos barn i skol&aring;ldern inte hittar n&aring;got avvikande i status och urinprov<span style=\"text-decoration: line-through;\"></span> kan bl&aring;str&auml;ning med toaschema pr&ouml;vas<span style=\"text-decoration: line-through;\"></span>. Detta kr&auml;ver ett gott samarbete mellan barn, f&ouml;r&auml;ldrar och l&auml;rare. Hur skoltoaletten och rastsituationen ser ut kan vara avg&ouml;rande f&ouml;r hur behandlingen lyckas.</p>\n<p class=\"indent\"><br>Barn med inkontinens har oftast sen eller ingen f&ouml;rvarning innan l&auml;ckage uppst&aring;r. Tiden mellan miktionerna b&ouml;r d&auml;rf&ouml;r kortas s&aring; barnet kissar innan bl&aring;san &auml;r full &ndash; i b&ouml;rjan ofta med tv&aring; till tre timmars intervall som sedan successivt &ouml;kas. Det &auml;r viktigt att barnet f&aring;r sitta sk&ouml;nt och avslappnat p&aring; toaletten och ger sig god tid.</p>\n<p class=\"indent\"><br>Barn som har n&aring;got avvikande i status, som kan tyda p&aring; missbildning eller neurologisk &aring;komma,<span style=\"text-decoration: line-through;\"></span> ska remitteras till barnklinik f&ouml;r vidare utredning. F&ouml;r s&aring; kallade gleskissare (kissar en till tv&aring; g&aring;nger/dygn) b&ouml;r ocks&aring; barnl&auml;kare konsulteras<span style=\"text-decoration: line-through;\"></span>, liksom f&ouml;r barn med upprepade UVI och daginkontinens. Vid sv&aring;rbehandlad &ouml;veraktiv bl&aring;sa hos barn kan antikolinergika vara en kompletterande behandling. Denna typ av behandling ska initieras av barnl&auml;kare. Otillr&auml;cklig effekt av behandling inom prim&auml;rv&aring;rden kan ocks&aring; vara en remissindikation.</p>\n<p class=\"indent\"><br>&rdquo;Kiss-skola&rdquo; f&ouml;r barn med dysfunktionell bl&aring;srubbning finns p&aring; flera kliniker. Barn kan tr&auml;nas att kissa med avslappad slutmuskel, bland annat genom att titta p&aring; sin urinfl&ouml;deskurva eller h&ouml;ra EMG-signaler fr&aring;n klisterelektroder i b&auml;ckenbotten.</p>\n<p class=\"indent\"><br><span style=\"color: #00ff00;\"><span style=\"color: #000000;\">F&ouml;r avsnittet Urininkontinens och enures hos barn, se &auml;ven <a href=\"#g2_67\" target=\"_blank\" style=\"color: #000000;\">F&ouml;r vidare l&auml;sning.</a></span><br><span style=\"text-decoration: line-through;\"><a href=\"#g2_67\" target=\"_blank\"><span style=\"color: #ff0000; text-decoration: line-through;\"></span></a></span></span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "93d4e2d2-bf4e-4e9d-ae59-e94932c992c6",
+			"name": "93d4e2d2-bf4e-4e9d-ae59-e94932c992c6",
+			"type": "text",
+			"content": "<h2 class=\"referenceHeader\" id=\"g2_66\">Referenser</h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5fca019a-42fb-4d01-8e50-9a180359e6bf",
+			"name": "5fca019a-42fb-4d01-8e50-9a180359e6bf",
+			"type": "references",
+			"content": "<ol class=\"references\"><li id=\"reference_1\">Behandling av urininkontinens hos &auml;ldre och sk&ouml;ra &auml;ldre. En systematisk &ouml;versikt. Stockholm: Statens beredning f&ouml;r medicinsk utv&auml;rdering (SBU); 2013.<br> <a href=\"http://www.sbu.se/contentassets/911d0909b43a44b9a35e8a207c164274/Urininkontinens_2013_219.pdf\">SBU-rapport nr 219</a>. ISBN 978-91-85413-60-7.</li>\n<li id=\"reference_2\">Samuelsson, E., et al. (2001). Incontinence aids in Sweden: users and costs. <br><a href=\"http://onlinelibrary.wiley.com/doi/10.1046/j.1464-4096.2001.01429.x/full\" target=\"_blank\">BJU Int 88(9): 893-98</a>.</li>\n<li id=\"reference_3\"><a href=\"http://www.lakemedelsverket.se/malgrupp/Halso---sjukvard/Behandlings--rekommendationer/Behandlingsrekommendation---listan/Urintrangningar-och-trangningsinkontinens--overaktiv-blasa/\" target=\"_blank\">Behandling av urintr&auml;ngningar och tr&auml;ngningsinkontinens &ndash; &ouml;veraktiv bl&aring;sa &ndash; ny rekommendation</a>. L&auml;kemedelsverket. 2011:(22)2.</li>\n<li id=\"reference_4\">Hannestad YS, Rortveit G, Hunskaar S. Help- seeking and associated factors in female urinary incontinence. The Norwegian EPINCONT Study. Epidemiology of incontinence in the County of Nord-Trondelag.<br> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/12184708?ordinalpos=2&amp;itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum\">Scand J Prim Health Care. 2002;20:102&ndash;7.</a></li>\n<li id=\"reference_5\">Urinary incontinence in women: management,<br> <a href=\"https://www.nice.org.uk/guidance/cg171\" target=\"_blank\">NICE Clinical guideline [CG171] September 2013</a></li>\n<li id=\"reference_6\">Shamliyan, T., et al. (2012). Nonsurgical Treatments for Urinary Incontinence in Adult Women: Diagnosis and Comparative Effectiveness. <br><a href=\"https://www.ncbi.nlm.nih.gov/books/NBK92960/\" target=\"_blank\">Rockville (MD)</a>.</li>\n<li id=\"reference_7\">Huang, A. J. (2013). \"Nonsurgical treatments for urinary incontinence in women: summary of primary findings and conclusions.\"<br><a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5124436/\" target=\"_blank\"> JAMA Intern Med 173(15): 1463-64</a>.</li>\n<li id=\"reference_8\">Asklund, I., et al. (2017). \"Mobile app for treatment of stress urinary incontinence: A randomized controlled trial.\"<br> <a href=\"https://link.springer.com/article/10.1007/s00192-017-3514-1\" target=\"_blank\">Neurourol Urodyn 36(5): 1369-76</a>.</li>\n<li id=\"reference_9\"><span style=\"color: #ff0000;\">Hoffman V, S&ouml;derstr&ouml;m L, Samuelsson E. Self-management of stress urinary incontinence via a mobile application &ndash; two year follow up. <br><a href=\"http://onlinelibrary.wiley.com/doi/10.1111/aogs.13192/abstract\" target=\"_blank\">Acta Obstet Gynecol Scand. 2017 Oct;96(10):1180-87.</a> <br></span></li>\n<li id=\"reference_10\">Sjostrom, M., et al. (2013). \"Internet-based treatment of stress urinary incontinence: a randomised controlled study with focus on pelvic floor muscle training.\"<br> <a href=\"https://www.ncbi.nlm.nih.gov/m/pubmed/23350826/\" target=\"_blank\">BJU Int 112(3): 362-72</a>.</li>\n<li id=\"reference_11\">Sjostrom, M., et al. (2015). \"Internet-based treatment of stress urinary incontinence: 1- and 2-year results of a randomized controlled trial with a focus on pelvic floor muscle training.\"<br><a href=\"http://onlinelibrary.wiley.com/doi/10.1111/bju.13091/full\" target=\"_blank\"> BJU Int 116(6): 955-64</a>.</li>\n<li id=\"reference_12\">Henderson JW, Wang S, Egger MJ, et al. Can women correctly contract their pelvic floor muscles without formal instruction? <br><a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3551249/\" target=\"_blank\">Female pelvic medicine &amp; reconstructive surgery. 2013;19(1):8-12</a>.</li>\n<li id=\"reference_13\">Subak, L. L., et al. (2009). \"Weight loss to treat urinary incontinence in overweight and obese women.\"<br> <a href=\"http://www.nejm.org/doi/full/10.1056/NEJMoa0806375\" target=\"_blank\">N Engl J Med 360(5): 481-90</a>.</li>\n<li id=\"reference_14\">Nygaard, I. E., et al. (2015). \"Lifetime physical activity and female stress urinary incontinence.\" <br><a href=\"https://www.sciencedirect.com/science/article/pii/S0002937815001003?via%3Dihub\" target=\"_blank\">Am J Obstet Gynecol 213(1):<span class=\"size-m\"><!-- -->July 2015<!-- -->, Pages 40.e1-40.e10</span></a>.</li>\n<li id=\"reference_15\">Dumoulin, C., et al. (2014). \"Pelvic floor muscle training versus no treatment, or inactive control treatments, for urinary incontinence in women.\"<br><a href=\"http://onlinelibrary.wiley.com/doi/10.1002/14651858.CD005654.pub2/full\" target=\"_blank\"> Cochrane Database Syst Rev(5): CD005654</a>.</li>\n<li id=\"reference_16\">B&ouml;, K. and G. Hilde (2013). \"Does it work in the long term?--A systematic review on pelvic floor muscle training for female stress urinary incontinence.\" <br><a href=\"http://onlinelibrary.wiley.com/doi/10.1002/nau.22292/abstract\" target=\"_blank\">Neurourol Urodyn 32(3): 215-23</a>.</li>\n<li id=\"reference_17\"><a href=\"https://www.socialstyrelsen.se/SiteCollectionDocuments/aldre-lakemedel-som-bor-undvikas-juni-2016.pdf\" onmousedown=\"return rwt(this,&apos;&apos;,&apos;&apos;,&apos;&apos;,&apos;3&apos;,&apos;AFQjCNFXnpOi-DbLMRAOOH1VXIK7mTEsRA&apos;,&apos;&apos;,&apos;0ahUKEwjIwIqJ6vHUAhVGDJoKHXZcAQMQFggxMAI&apos;,&apos;&apos;,&apos;&apos;,event)\" target=\"_blank\">Ol&auml;mpliga l&auml;kemedel f&ouml;r &auml;ldre&nbsp; Socialstyrelsen 2016<span style=\"text-decoration: underline;\"></span></a></li>\n<li id=\"reference_18\"><a href=\"http://www.tlv.se\" target=\"_blank\">TLV</a> 2010 Sammanfattning &ndash; <a href=\"https://www.tlv.se/Upload/Genomgangen/100701-sammanfattning-granskning-inkontinens-prostata.pdf\">genomg&aring;ngen av l&auml;kemedel mot inkontinens och prostatabesv&auml;r</a></li>\n<li id=\"reference_19\">Nabi, G., et al. (2006). \"Anticholinergic drugs versus placebo for overactive bladder syndrome in adults.\" <a href=\"http://onlinelibrary.wiley.com/doi/10.1002/14651858.CD003781.pub2/abstract\" target=\"_blank\">Cochrane Database Syst Rev(4): CD003781</a>.</li>\n<li id=\"reference_20\">Maman, K., et al. (2014). \"Comparative efficacy and safety of medical treatments for the management of overactive bladder: a systematic literature review and mixed treatment comparison.\" <br><a href=\"https://www.sciencedirect.com/science/article/pii/S0302283813012074?via%3Dihub\" target=\"_blank\">Eur Urol 65(4): 755-65</a>.</li>\n<li id=\"reference_21\">Warren, K., et al. (2016). \"Mirabegron in overactive bladder patients: efficacy review and update on drug safety.\"<br>&nbsp;<a href=\"http://journals.sagepub.com/doi/10.1177/2042098616659412\" target=\"_blank\">Ther Adv Drug Saf 7(5): 204-16</a>.</li>\n<li id=\"reference_22\">Peeker, R., et al. (2010). \"A prospective observational study of the effects of treatment with extended-release tolterodine on health-related quality of life of patients suffering overactive bladder syndrome in Sweden.\" <br><a href=\"https://www.tandfonline.com/doi/full/10.3109/00365591003709468\" target=\"_blank\">Scand J Urol Nephrol 44(3): 138-46</a>.</li>\n<li id=\"reference_23\">Linn&eacute;r L, Schi&ouml;ler H, Samuelsson E, Milsom I, Nilsson F. Low persistence of anticholinergic drug use in Sweden. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/21061118\">Eur J Clin Pharmacol. 2011;67:535&ndash;6.</a></li>\n<li id=\"reference_24\">Mariappan P, Alhasso A, Ballantyne Z, Grant A, N&acute;Dow J. <a href=\"http://www.lakemedelsboken.se/atc/N06AX21\">Duloxetin</a>e, a serotonin and <a href=\"http://www.lakemedelsboken.se/atc/C01CA03\">noradrenalin</a>e reuptake inhibitor (<a href=\"http://www.lakemedelsboken.se/atc/N06AX\">SNRI</a>) for the treatment of stress urinary incontinence: A systematic review. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/17014950?ordinalpos=9&amp;itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum\">European urology. 2007;51:67&ndash;74.</a></li>\n<li id=\"reference_25\">Cody JD, Richardson K, Moehrer B, Hextall A, Glazener CM. Oestrogen therapy for urinary incontinence in post-menopausal women.<br> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23076892\">Cochrane Database Syst Rev. 2012;10:CD001405. </a></li>\n<li id=\"reference_26\">Rai, B. P., et al. (2012). \"Anticholinergic drugs versus non-drug active therapies for non-neurogenic overactive bladder syndrome in adults.\" <br><a href=\"http://onlinelibrary.wiley.com/doi/10.1002/14651858.CD003193.pub4/abstract\" target=\"_blank\">Cochrane Database Syst Rev 12: CD003193</a>.</li>\n<li id=\"reference_27\">Ford, A. A., et al. (2015). \"Mid-urethral sling operations for stress urinary incontinence in women.\" <a href=\"http://onlinelibrary.wiley.com/doi/10.1002/14651858.CD006375.pub3/abstract\" target=\"_blank\">Cochrane Database Syst Rev(7): CD006375</a>.</li>\n<li id=\"reference_28\">Lopez Ramos, H., et al. (2017). \"Management of Overactive Bladder With OnabotulinumtoxinA: Systematic Review and Meta-analysis.\" <br><a href=\"https://www.sciencedirect.com/science/article/pii/S0090429516307440?via%3Dihub\" target=\"_blank\">Urology 100: 53-58</a>.</li>\n<li id=\"reference_29\">Avery, K., et al. (2004). \"ICIQ: a brief and robust measure for evaluating the symptoms and impact of urinary incontinence.\" <br><a href=\"http://onlinelibrary.wiley.com/doi/10.1002/nau.20041/abstract\" target=\"_blank\">Neurourol Urodyn 23(4): 322-30</a>.</li>\n<li id=\"reference_30\">Stenzelius, K., et al. (2015). \"The effect of conservative treatment of urinary incontinence among older and frail older people: a systematic review.\" <br><a href=\"https://academic.oup.com/ageing/article/44/5/736/51880\" target=\"_blank\">Age Ageing 44(5): 736-44</a>.</li>\n<li id=\"reference_31\">Samuelsson, E., et al. (2015). \"Effect of pharmacological treatment for urinary incontinence in the elderly and frail elderly: A systematic review.\" <br><a href=\"http://onlinelibrary.wiley.com/doi/10.1111/ggi.12451/abstract\" target=\"_blank\">Geriatr Gerontol Int 15(5): 521-34</a>.</li>\n<li id=\"reference_32\">Franzen, K., et al. (2015). \"Surgery for urinary incontinence in women 65 years and older: a systematic review\".<br><a href=\"https://link.springer.com/article/10.1007%2Fs00192-014-2573-9\" target=\"_blank\">Int Urogynecol J 26(8): 1095-102</a>.</li>\n<li id=\"reference_33\">Weiss, J. P., et al. (2011). \"The evaluation and treatment of nocturia: a consensus statement.\" <br><a href=\"http://onlinelibrary.wiley.com/doi/10.1111/j.1464-410X.2011.10175.x/abstract\" target=\"_blank\">BJU Int 108(1): 6-21</a>.</li>\n<li id=\"reference_34\">Cornu, J. N., et al. (2012). \"A contemporary assessment of nocturia: definition, epidemiology, pathophysiology, and management--a systematic review and meta-analysis.\" <br><a href=\"https://www.sciencedirect.com/science/article/pii/S0302283812008093?via%3Dihub\" target=\"_blank\">Eur Urol 62(5): 877-90</a>.</li>\n<li id=\"reference_35\">Perrin, N., et al. (2015). \"The efficacy of alarm therapy versus desmopressin therapy in the treatment of primary mono-symptomatic nocturnal enuresis: a systematic review.\" <br><a href=\"https://www.cambridge.org/core/journals/primary-health-care-research-and-development/article/efficacy-of-alarm-therapy-versus-desmopressin-therapy-in-the-treatment-of-primary-monosymptomatic-nocturnal-enuresis-a-systematic-review/801BF8049E52B2B1506617068214E1EE\" target=\"_blank\">Prim Health Care Res Dev 16(1): 21-31</a>.</li>\n<li id=\"reference_36\">Deshpande, A. V., et al. (2012). \"Drugs for nocturnal enuresis in children (other than desmopressin and tricyclics).\" <br><a href=\"http://onlinelibrary.wiley.com/doi/10.1002/14651858.CD002238.pub2/abstract\" target=\"_blank\">Cochrane Database Syst Rev 12: CD002238</a></li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "true"
+				}
+			}
+		},
+		{
+			"id": "aad27c7b-8eef-49c6-a783-0fe72e940b66",
+			"name": "aad27c7b-8eef-49c6-a783-0fe72e940b66",
+			"type": "text",
+			"content": "<h3 id=\"g2_67\">F&ouml;r vidare l&auml;sning:</h3>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "56465ceb-edc1-4a50-91a9-6234d4e3c56f",
+			"name": "56465ceb-edc1-4a50-91a9-6234d4e3c56f",
+			"type": "references",
+			"content": "<ol class=\"references\"><li id=\"reference_1\">Behandling av urininkontinens hos &auml;ldre och sk&ouml;ra &auml;ldre. En systematisk &ouml;versikt. <br>Stockholm: Statens beredning f&ouml;r medicinsk utv&auml;rdering (<a href=\"http://www.sbu.se\" target=\"_blank\">SBU</a>); 2013. <a href=\"http://www.sbu.se/sv/Publicerat/Gul/Behandling-av-urininkontinens-hos-aldre-och-skora-aldre/\" target=\"_blank\">SBU-rapport nr 219</a>. ISBN 9789185413607.<br><br></li>\n<li id=\"reference_2\">Referens f&ouml;r hela avsnitten <a href=\"#g2_29\" target=\"_blank\">Inkontinens hos m&auml;n</a> och <a href=\"#g2_53\" target=\"_blank\">Urininkontinens och enures hos barn</a>:<br><a href=\"http://urologi.org\" target=\"_blank\">Svensk urologisk f&ouml;rening</a>, State of the art dokument 2015; <a href=\"http://urologi.org/sites/default/files/pagefiles/Sota_NU_funktion_150629.pdf#overlay-context=sota-%25E2%2580%2593-state-art\" target=\"_blank\">St&ouml;rningar av de nedre urinv&auml;garnas funktioner.</a></li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/nefrologi-urologi/urininkontinens.json",
+	"modified": "2018-03-16 10:44",
+	"isPublished": true,
+	"indexed": "true"
+}

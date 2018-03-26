@@ -1,0 +1,67 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "Uppdaterade kapitel 2016",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "nyhet",
+	"created": "2018-03-09 13:32",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "ff39d822-9a8b-4844-91af-a2f68fbf0207",
+			"name": "24bdb386-4894-4ece-b3f6-4f32e7405637",
+			"type": "summary",
+			"content": "<p>F&ouml;ljande kapitel har helt eller delvis uppdaterats under 2016:</p>\n<p></p>\n<p>Skattning av njurfunktion</p>\n<p>F&ouml;rm&aring;nerna</p>\n<p>Behandling med hyperbar oxygen (HBO)</p>\n<p>Blodfettsrubbningar</p>\n<p>Tyreoideasjukdomar</p>\n<p>Kliniskt farmakologiska principer</p>\n<p>Godk&auml;nnande av l&auml;kemedel</p>\n<p>Akuta f&ouml;rgiftningar - initial behandling och bed&ouml;mning</p>\n<h1 id=\"v1_2\"></h1>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "36b7cecf-35fe-46d8-b218-477247b2de45",
+			"name": "113ed615-47bc-4133-9f84-8b612007969a",
+			"type": "text",
+			"content": "<h1 id=\"Rubrik\">Rubrik</h1>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/blog/Uppdaterade-kapitel-2016.json",
+	"indexed": "true",
+	"modified": "2018-03-09 13:37"
+}
