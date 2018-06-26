@@ -20,7 +20,7 @@ var download = function(url, dest, cb) {
 var today = new Date();
 var d = today.toISOString().substring(0, 10);
 
-download('https://npl.mpa.se/MpaProductExport/'+d+'_Total_NPL.zip', '/database/npl/npl.zip', function (err) {
+download('https://npl.mpa.se/MpaProductExport/4.1/'+d+'_Total_NPL.zip', '/database/npl/npl.zip', function (err) {
 	if (err) {
 		console.error('Download of npl failed');
 	}
