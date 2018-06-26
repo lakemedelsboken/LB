@@ -3255,4 +3255,26 @@ function doHighlight(bodyText, searchTerm, highlightStartTag, highlightEndTag)
 		});
 
 		$("#Forfattarregister-").closest('tr').hide();
+
+//footer up
+		var senast=$("footer").text();
+		var newSenast='';
+		var newFooter='';
+		for (var i = 0; i < senast.length; i++) {
+			if(senast[i]=="|"){
+				for (var j = i+1; j < senast.length; j++) {
+					newSenast+=senast[j];
+					i++;
+					}
+				}
+				else{
+					newFooter+=senast[i];
+				}
+			}
+			$("p.authors").after("<br/><p style=\"text-align:center;\">"+newSenast +"</p>");
+			$("#Reviderade-och-uppdaterade-kapitel-juli-2017").before("<br/><p style=\"text-align:center;\">"+newSenast +"</p>");
+			//$("footer").html("<p>© <a href=\"http://www.lakemedelsverket.se\">Läkemedelsverket</a></p>");
+
+
+
 })(window);
