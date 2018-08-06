@@ -91,7 +91,7 @@
 
 		updateAPLProduct: function (stub, callback) {
 
-			var url = "https://www.apl.se/Sv/vard/extempore/_vti_bin/APLRestService.svc/Produkter/" + stub.id + "/spc";
+			var url = "https://api.apl.se/Sv/vard/extempore/_vti_bin/APLRestService.svc/Produkter/" + stub.id + "/spc";
 			var options = {
 				rejectUnauthorized: false,
 				url: url,
