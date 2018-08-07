@@ -1,0 +1,493 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Atopi, allergi och överkänslighet | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-09 01:00",
+	"published": "2015-07-09 01:00",
+	"validUntil": "",
+	"createdBy": "Ulla Nyström, Lars Ahlbeck",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "af01ff27-6db3-4599-9066-90688bdb88a2",
+			"name": "af01ff27-6db3-4599-9066-90688bdb88a2",
+			"type": "author",
+			"content": {
+				"firstname": "Ulla",
+				"surname": "Nyström",
+				"description": "Allergicentrum, Universitetssjukhuset, Linköping",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1fbfec55-c268-46bb-ae0e-e02c8736b0bf",
+			"name": "1fbfec55-c268-46bb-ae0e-e02c8736b0bf",
+			"type": "author",
+			"content": {
+				"firstname": "Lars",
+				"surname": "Ahlbeck",
+				"description": "Allergicentrum, Universitetssjukhuset, Linköping",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d194acec-11b5-4d88-9bf5-cd73917f0198",
+			"name": "d194acec-11b5-4d88-9bf5-cd73917f0198",
+			"type": "text",
+			"content": "<h1 id=\"p1_4\">Atopi, allergi och &ouml;verk&auml;nslighet</h1>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f2217999-f5e9-49a0-ba88-08b887eae3c3",
+			"name": "f2217999-f5e9-49a0-ba88-08b887eae3c3",
+			"type": "text",
+			"content": "<h2 id=\"p1_5\">Inledning</h2>\n<p class=\"ingress\">&Ouml;verk&auml;nslighet, hypersensitivitet, &auml;r ett tillst&aring;nd med objektivt reproducerbara symtom efter stimuli som normalt tolereras. Allergi &auml;r en &ouml;verk&auml;nslighetsreaktion som &auml;r utl&ouml;st av specifika immunologiska reaktioner. &Ouml;verk&auml;nslighetsreaktioner d&auml;r immunsystemet inte &auml;r involverat b&ouml;r ben&auml;mnas icke allergisk &ouml;verk&auml;nslighet.<br><br></p>\n<p class=\"ingress\">Vid allergi reagerar immunsystemet p&aring; substanser, allergen, som normalt ska tolereras. De immunologiska reaktionerna delas in i typ&nbsp;I-IV,<span style=\"color: #000000;\"> se Tabell 1.</span> Reaktionen kan vara cellmedierad, &auml;ven kallad typ&nbsp;IV reaktion, eller antikroppsmedierad, kallade typ&nbsp;I-III reaktioner. Ett exempel p&aring; cellmedierad reaktion &auml;r kontakteksem (1).<span style=\"color: #000000;\"></span><br><br></p>\n<p class=\"ingress\">Atopi &auml;r en ibland &auml;rftlig ben&auml;genhet att bli sensibiliserad och bilda specifika IgE-antikroppar som svar p&aring; exponering f&ouml;r vanligt f&ouml;rekommande allergen, oftast proteiner. De flesta allergen som ger upphov till allergisk sjukdom &auml;r inhalationsallergen, till exempel pollen och djurepitel. Hos barn &auml;r det ocks&aring; vanligt med reaktioner mot f&ouml;do&auml;mnesallergen.<br><br></p>\n<p class=\"ingress\">Symtomen vid de IgE-medierade allergiska sjukdomarna varierar utifr&aring;n vilka organ som &auml;r drabbade. Vanligast &auml;r engagemang fr&aring;n slemhinnor och hud, d&aring; de utg&ouml;r v&aring;r gr&auml;ns mot omgivande milj&ouml; och &auml;r den v&auml;g vi kommer i kontakt med olika allergen. Vid sv&aring;rare besv&auml;r f&aring;r man en generalisering av symtomen. Det &auml;r vanligt med tr&ouml;tthet och nedsatt allm&auml;ntillst&aring;nd. Den generella sjukdomsbilden som kan vara livshotande kallas <a href=\"{pre}/kapitel/akutmedicin/anafylaxi.html\" target=\"_blank\">anafylaxi</a>.<br><br></p>\n<p class=\"ingress\">De allergiska sjukdomarna b&ouml;rjar ofta som eksem och f&ouml;do&auml;mnesallergi i tidig &aring;lder, f&ouml;ljt av astma och rinit senare i livet. M&aring;nga barn tillfrisknar spontant men de l&ouml;per en &ouml;kad risk att senare utveckla allergiska sjukdomar fr&aring;n luftv&auml;garna. Det &auml;r vanligt att sv&aring;righetsgraden av sjukdomen varierar under olika perioder i livet (2). Se Faktaruta 1 och Faktaruta 2.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3c93fcd7-8209-4b9f-a59d-72f750722770",
+			"name": "3c93fcd7-8209-4b9f-a59d-72f750722770",
+			"type": "tablenarrow",
+			"content": {
+				"number": "1",
+				"title": "Immunologiska typreaktioner",
+				"id": "",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td width=\"64\">\r\n<p>Typ</p>\r\n</td>\r\n<td width=\"302\">\r\n<p>Mekanism</p>\r\n</td>\r\n<td width=\"227\">\r\n<p>Exempel</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"64\">\r\n<p>I</p>\r\n</td>\r\n<td width=\"302\">\r\n<p>Allergenspecifikt IgE bundet till mastceller ger vid kontakt med allergenet upphov till degranulering och fris&auml;ttning av histamin och andra inflammatoriska substanser.</p>\r\n</td>\r\n<td width=\"227\">\r\n<p>Anafylaxi, allergisk rinit, allergisk astma, allergisk urtikaria, f&ouml;do&auml;mnesallergi.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"64\">\r\n<p>II</p>\r\n</td>\r\n<td width=\"302\">\r\n<p>IgG och IgM som bundits till antigen p&aring; celler ger komplementmedierad cellskada. IgG kan via inbindning till Fc-receptorer orsaka cellmedierad cytotoxicitet. Antikroppar kan &auml;ven p&aring;verka cellfunktioner, exempelvis via hormonreceptorer.</p>\r\n</td>\r\n<td width=\"227\">\r\n<p>Hemolys vid trasfusion, f&ouml;rlossning eller hemolytisk anemi, myastenia gravis.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"64\">\r\n<p>III</p>\r\n</td>\r\n<td width=\"302\">\r\n<p>IgG bundet till l&ouml;sligt antigen bildar immunkomplex som aktiverar komplement. Deponering av immunkomplex i v&auml;vnad ger inflammation och kan ge v&auml;vnadsskada.</p>\r\n</td>\r\n<td width=\"227\">\r\n<p>Serumsjuka, RA, SLE, vaskulit, allergiskalveolit.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"64\">\r\n<p>IV</p>\r\n</td>\r\n<td width=\"302\">\r\n<p>Cellmedierad reaktion (f&ouml;rdr&ouml;jd &ouml;verk&auml;nslighetsreaktion) d&auml;r v&auml;vnadsskada orsakas av makrofager som aktiverats av cytokiner fr&aring;n T-hj&auml;lparceller eller &auml;r orsakad av cytotoxiska T-celler.</p>\r\n</td>\r\n<td width=\"227\">\r\n<p>Kontakteksem, avst&ouml;tningsreaktioner, viss f&ouml;do&auml;mnesallergi.</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "300d9b77-fdbc-4b59-ad8b-ed5286891d97",
+			"name": "300d9b77-fdbc-4b59-ad8b-ed5286891d97",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "Överkänslighet",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td colspan=\"2\">\r\n<p><strong>a) Allergi</strong></p>\r\n<p>Immunologisk &ouml;verk&auml;nslighetsreaktion</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Typ&nbsp;1, IgE-medierad allergi</li>\r\n<li>Icke-IgE-medierad allergi</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">\r\n<p><strong>b) Icke-allergi</strong></p>\r\n<p>Icke-immunologisk &ouml;verk&auml;nslighetsreaktion</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">\r\n<p>Exempel:</p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Bronkiell hyperreaktivitet</li>\r\n<li>Doft&ouml;verk&auml;nslighet/sensorisk hyperreaktivitet</li>\r\n<li>Icke-allergisk rinit</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "50d43824-48cf-42f9-a8da-882890e70567",
+			"name": "50d43824-48cf-42f9-a8da-882890e70567",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "De vanligaste IgE-förmedlade allergiska sjukdomarna",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Allergisk konjunktivit</li>\r\n<li>Allergisk rinit</li>\r\n<li>Allergisk astma</li>\r\n<li>Atopiskt eksem</li>\r\n<li>Gastrointestinal allergi</li>\r\n<li>Allergi vid akut urticaria</li>\r\n<li>Vissa l&auml;kemedelsreaktioner</li>\r\n<li>Anafylaktiska reaktioner</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2fbd3163-2b73-41e2-8ce2-73e12f170e44",
+			"name": "2fbd3163-2b73-41e2-8ce2-73e12f170e44",
+			"type": "text",
+			"content": "<h2 id=\"Prevalens\">Prevalens</h2>\n<p>Uppskattningsvis lider 30&ndash;40&nbsp;% av Sveriges befolkning av n&aring;gon form av allergisk sjukdom. Vanligast &auml;r allergisk rinokonjunktivit, som drabbar 20&ndash;30&nbsp;% av vuxna. Astma f&ouml;rekommer hos omkring 10&nbsp;% av vuxna och i n&aring;got l&auml;gre andel hos barn, medan de atopiska eksemen &auml;r vanligare hos barn &auml;n hos vuxna, cirka 20&nbsp;% respektive 10&nbsp;%. Bland barn och ungdomar ber&auml;knas 5&ndash;8&nbsp;% ha f&ouml;do&auml;mnesallergi. En &auml;nnu st&ouml;rre andel av befolkningen &auml;r sensibiliserad, det vill s&auml;ga har utvecklat specifika IgE mot ett eller flera allergen. Sensibiliseringen beh&ouml;ver inte alltid leda till symtom eller klinisk sjukdom &auml;ven om det finns en &ouml;kad risk f&ouml;r detta&nbsp;(3,4).</p>\n<p><br>Den &ouml;kning av prevalensen som man sett de senaste 50 &aring;ren kan till en del bero p&aring; f&ouml;rb&auml;ttrad diagnostik och &ouml;kad medvetenhet i befolkningen, men det f&ouml;rklarar inte hela &ouml;kningen. Den nu vanligaste teorin &auml;r att faktorer under graviditet och tidig uppv&auml;xt bidrar till att immunsystemet st&ouml;rs. Yttre faktorer, som livsstil, milj&ouml;, f&ouml;da och infektionstryck, samverkar sannolikt. Tid och dos f&ouml;r f&ouml;rsta exponering av allergenet tycks vara viktigt f&ouml;r att avg&ouml;ra om tolerans eller sensibilisering ska uppst&aring; (5,6).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3aed4f57-cfaf-417d-8849-698afafa0734",
+			"name": "3aed4f57-cfaf-417d-8849-698afafa0734",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "Omgivningsfaktorer som påverkar allergiutveckling. Frisk- och riskfaktorer.",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><strong>Kost</strong></p>\r\n<p>Graviditet och amning:</p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Blivande/ammande mamma kan &auml;ta vad hon t&aring;l och m&aring;r bra av. Risken f&ouml;r allergi hos barnet kan inte minskas genom att mamman avst&aring;r fr&aring;n viss mat.</li>\r\n</ul>\r\n<p>Sp&auml;dbarnstid:</p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Br&ouml;stmj&ouml;lk ger ett visst skydd mot infektioner och d&auml;rigenom mot tidiga astmabesv&auml;r, men minskar inte risken f&ouml;r allergi.</li>\r\n</ul>\r\n<p>Sm&aring;barnstid:</p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Inget talar f&ouml;r att man kan minska risken f&ouml;r allergier genom att undvika vissa f&ouml;do&auml;mnen eller v&auml;nta med att ge barnet smakportioner fr&aring;n 4-6 m&aring;naders &aring;lder. Tv&auml;rtom visar en uppm&auml;rksammad studie d&auml;r barn med h&ouml;g allergirisk som tidigt f&aring;tt &auml;ta jordn&ouml;tter en minskad risk f&ouml;r jordn&ouml;tsallergi j&auml;mf&ouml;rt med barn som undvikit jordn&ouml;tter <span style=\"color: #000000;\">(7)</span>.</li>\r\n</ul>\r\n<p>Kosttillskott:</p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Studier p&aring;g&aring;r f&ouml;r att unders&ouml;ka om fettsyror, probiotika och vitaminer kan f&ouml;rebygga allergi.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Tobak</strong></p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Barnets risk f&ouml;r obstruktivitet &ouml;kar om mamman r&ouml;ker under graviditeten eller om barnet vistas i r&ouml;kig milj&ouml;. Det kan &auml;ven finnas ett samband mellan mormoderns r&ouml;kning under graviditet och barnbarnets allergi. Mekanismen f&ouml;rsl&aring;s vara epigenetisk.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Luftf&ouml;roreningar</strong></p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Exponering f&ouml;r h&ouml;ga halter av luftf&ouml;roreningar kan &ouml;ka risken f&ouml;r astma och allergi.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Fukt</strong></p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Synliga fuktskador, <span style=\"color: #000000;\">vilka &ouml;kar m&auml;ngden irriterande &auml;mnen i luften,</span> och d&aring;lig ventilation &ouml;kar risken f&ouml;r luftr&ouml;rsbesv&auml;r.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Hygienhypotesen</strong></p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Tidig exponering f&ouml;r virus, bakterier och mikrobiella komponenter kan stimulera immunf&ouml;rsvaret och leda till utmognad av immunologiska reglermekanismer som kan f&ouml;rhindra allergiutveckling.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>P&auml;lsdjur</strong></p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>F&ouml;r friska barn &ouml;kar inte risken f&ouml;r allergi om det finns husdjur i hemmet. Tv&auml;rtemot s&aring; tycks tidig kontakt med djur eller lantbruksmilj&ouml; att ge ett skydd mot allergiutveckling. F&ouml;r barn som redan blivit allergiska inneb&auml;r det &ouml;kade besv&auml;r att tr&auml;ffa de djur de &auml;r allergiska mot.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Vaccinationer</strong></p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Vaccinationer &ouml;kar inte risken f&ouml;r allergi.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Infektioner och l&auml;kemedel</strong></p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Tidig start p&aring; f&ouml;rskola (m&aring;nga infektioner) har beskrivits minska risken f&ouml;r allergi, men senare studier har inte bekr&auml;ftat det.</li>\r\n<li>Tidig behandling med bredspektrumantibiotika och paracetamol har f&ouml;reslagits kunna &ouml;ka risken f&ouml;r allergi, men sambanden &auml;r inte klarlagda.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Stress</strong></p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Stress kan bidra till f&ouml;rs&auml;mring av allergi, men orsakar inte allergi i sig.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>F&ouml;rlossning genom kejsarsnitt</strong></p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Flera studier visar att barn som f&ouml;rl&ouml;sts med kejsarsnitt l&ouml;per &ouml;kad risk att f&aring; allergi och astma. Dessa barn har visats ha mindre biodiversitet i sin tarmflora, vilket antas vara orsaken.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "31563e8c-0855-4eb1-8e95-488d0e9b9a67",
+			"name": "31563e8c-0855-4eb1-8e95-488d0e9b9a67",
+			"type": "text",
+			"content": "<h2 id=\"Den-allergiska-reaktionen\">Den allergiska reaktionen</h2>\n<p>F&ouml;ruts&auml;ttningar f&ouml;r att en IgE-medierad reaktion ska uppkomma &auml;r en sensibilisering. Denna sensibilisering sker genom att allergen f&aring;ngas upp fr&aring;n slemhinnan av antigenpresenterande celler, vilka transporterar allergenet till lymfk&ouml;rtlarna d&auml;r aktivering av T-hj&auml;lparceller sker. Dessa Th2-celler, specifika f&ouml;r allergenet, stimulerar p&aring; olika s&auml;tt immunsystemet, bland annat produceras allergenspecifika antikroppar av IgE-typ. Antikropparna binds till receptorer p&aring; mastceller och basofiler. Vid f&ouml;rnyad allergenexponering sker korsbindningar mellan allergenet och tv&aring; IgE-molekyler p&aring; mastcellen eller basofilen. Om tillr&auml;ckligt m&aring;nga s&aring;dana bindningar bildas sker fris&auml;ttning av mediatorer d&auml;ribland histamin, eikosanoider (<a href=\"http://lakemedelsboken.se/atc/C01EA-G02AD-A02BB\">prostaglandiner</a> och leukotriener) samt proinflammatoriska cytokiner.</p>\n<p><br>Den IgE-medierade allergin k&auml;nnetecknas av en snabb reaktion, som oftast intr&auml;ffar inom 10&ndash;20 minuter efter kontakt med allergenet. Denna reaktion g&aring;r oftast snabbt tillbaka och kan f&ouml;ljas av en senreaktion som beror p&aring; invandring av inflammatoriska celler, fram f&ouml;r allt eosinofila granulocyter, i det drabbade organet. Senreaktionen intr&auml;ffar 6&ndash;8 timmar efter allergenexponering. De frisatta mediatorerna ger upphov till kontraktion av glatt muskulatur i bronker, vasodilatation, &ouml;kad vaskul&auml;r permeabilitet och nervstimulering. Kliniskt f&aring;r man bronkospasm, &ouml;kad sekretion i luftv&auml;garna, kl&aring;da, rinnande &ouml;ga och n&auml;sa samt nysningar (8).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c8e227ce-7933-4db4-9ca8-ffe42ae2c6e8",
+			"name": "c8e227ce-7933-4db4-9ca8-ffe42ae2c6e8",
+			"type": "text",
+			"content": "<h2 id=\"Kliniska-tillstand\">Kliniska tillst&aring;nd</h2>\n<p>I Faktaruta 4 presenteras vanliga allergen som orsakar allergi i Sverige. <a href=\"{pre}/kapitel/akutmedicin/anafylaxi.html#a3_15\" target=\"_blank\">Akutbehandling vid en allergisk reaktion</a> samt <a href=\"{pre}/kapitel/akutmedicin/anafylaxi.html#a3_18\" target=\"_blank\">egenanv&auml;ndning av adrenalinpennor</a> beskrivs i kapitlet<a href=\"{pre}/kapitel/akutmedicin/anafylaxi.html\" target=\"_blank\"> Anafylaxi</a>.<span style=\"text-decoration: line-through;\"></span><span style=\"color: #000000;\"><span style=\"text-decoration: line-through;\"><br></span></span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8230b839-3c1d-4e90-88e9-fea208d16d28",
+			"name": "8230b839-3c1d-4e90-88e9-fea208d16d28",
+			"type": "facts",
+			"content": {
+				"number": "4",
+				"title": "Vanliga allergen som orsakar allergi i Sverige",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><strong>Luftburna</strong></p>\r\n<p>Pollen</p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>L&ouml;vtr&auml;d - al, hassel, bj&ouml;rk, ek</li>\r\n<li>Gr&auml;s - vanligen timotej, &auml;ngssvingel, engelskt rajgr&auml;s</li>\r\n<li>Blommor - gr&aring;bo, mal&ouml;rtsambrosia</li>\r\n</ul>\r\n<p>Kvalster<br><br></p>\r\n<p>P&auml;lsdjur</p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Hund</li>\r\n<li>H&auml;st</li>\r\n<li>Katt</li>\r\n<li>Marsvin</li>\r\n<li>Kanin</li>\r\n<li>Ko</li>\r\n<li>R&aring;tta</li>\r\n</ul>\r\n<p>M&ouml;gel</p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Cladosporium</li>\r\n<li>Alternaria</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>F&ouml;do&auml;mnen</strong></p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Komj&ouml;lk</li>\r\n<li>&Auml;gg</li>\r\n<li>Tr&auml;dn&ouml;tter</li>\r\n<li>Jordn&ouml;tter</li>\r\n<li>Soja</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Insektsgift</strong></p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Bi och humla</li>\r\n<li>Geting</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6637f8ad-67dd-4058-968b-599a403f61a6",
+			"name": "6637f8ad-67dd-4058-968b-599a403f61a6",
+			"type": "text",
+			"content": "<h3 id=\"Luftvagsallergi\">Luftv&auml;gsallergi</h3>\n<p>Sjukdomsbilderna beskrivs<span style=\"color: #000000;\"> i kapitlen <a href=\"{pre}/kapitel/andningsvagar/astma_och_kol.html\" target=\"_blank\">Astma och KOL</a>, respektive <a href=\"{pre}/kapitel/andningsvagar/oron-_nas-_och_halssjukdomar.html\" target=\"_blank\">&Ouml;ron- n&auml;s- och halssjukdomar</a></span>, h&auml;r ger vi en beskrivning av de vanligaste utl&ouml;sande faktorerna. <span style=\"color: #000000;\">(9,10)</span></p>\n<h4 id=\"Pollen\">Pollen</h4>\n<p>Pollen ger s&auml;songsallergi beroende p&aring; v&auml;xternas blomning. Bj&ouml;rken blommar med st&ouml;rst intensitet i april&ndash;maj, gr&auml;set i juni&ndash;juli och gr&aring;bo i augusti.</p>\n<h4 id=\"Palsdjur\">P&auml;lsdjur</h4>\n<p>P&auml;lsdjursallergi &auml;r i h&ouml;gre grad kopplad till astma &auml;n pollenallergi. Alla patienter med astma och som har husdjur ska n&aring;gon g&aring;ng utredas f&ouml;r allergi eftersom det &auml;r helt avg&ouml;rande f&ouml;r behandlingsresultat och prognos. K&auml;llan till allergen &auml;r inte enbart p&auml;lsen, utan &auml;ven saliv, epitel, urin och andra uts&ouml;ndringar. P&auml;lsdjursallergen &auml;r ofta mycket potenta och &auml;ven indirekt exponering kan utl&ouml;sa symtom. Direkt kontakt ger ofta akuta symtom och p&aring;verkan &auml;ven fr&aring;n nedre luftv&auml;garna.</p>\n<h4 id=\"Kvalster\">Kvalster</h4>\n<p>Globalt &auml;r kvalster den st&ouml;rsta k&auml;llan till luftburen allergi. I Sverige &auml;r problemet mest utbrett i s&ouml;dra och v&auml;stra Sverige p&aring; grund av den h&ouml;ga luftfuktigheten och det relativt tempererade klimatet. Kvalster &auml;r sm&aring; spindeldjur som finns i h&ouml;g halt i b&auml;dden och ger besv&auml;r &aring;ret runt, oftast mest p&aring; morgonen. Med ett kvalstertest kan man unders&ouml;ka f&ouml;rekomst av kvalster i hemmet.<span style=\"color: #000000;\">&nbsp;Patienten dammsuger sin s&auml;ng i hemmet med ett munstycke placerat p&aring; damsugaren. Kvalstertestet tillhandah&aring;lls av kliniken som ocks&aring; analyserar resultatet.</span></p>\n<h4 id=\"Mogel\">M&ouml;gel</h4>\n<p>Sensibilisering mot m&ouml;gelallergen &auml;r ovanligt men m&ouml;geltoxiner kan genom icke-allergisk &ouml;verk&auml;nslighet ge symtom som liknar de allergiska symtomen. M&ouml;gelf&ouml;rekomst kan &auml;ven indikera fuktskador i ett hus d&auml;r byggmaterial kan ge emissioner av k&auml;nda och ok&auml;nda &auml;mnen som kan ge besv&auml;r fr&aring;n slemhinnor.</p>\n<h4 id=\"Fodoamnesallergi\">F&ouml;do&auml;mnesallergi</h4>\n<p>&Ouml;verk&auml;nslighet mot f&ouml;da kan vara intolerans med besv&auml;rliga, men ofarliga symtom, men &auml;ven immunologiska reaktioner f&ouml;rekommer och kan ge besv&auml;r av varierande sv&aring;righetsgrad. De f&ouml;do&auml;mnen som dominerar vid IgE-medierad allergi &auml;r f&ouml;r sp&auml;dbarn komj&ouml;lk, &auml;gg, vete och soja. De vanligaste symtomen &auml;r eksem och buksm&auml;rtor men allvarligare reaktioner f&ouml;rkommer ocks&aring;. <br><br></p>\n<p>Tolerans utvecklas ofta fram till skol&aring;ldern d&aring; allergi mot jordn&ouml;tter och fisk blir vanligare. I vuxen &aring;lder dominerar allergi mot jordn&ouml;tter och tr&auml;dn&ouml;tter. Allergi mot skaldjur &auml;r ocks&aring; vanligt hos vuxna. <span style=\"color: #000000;\">Sensibilisering och allergi mot&nbsp; uppr&auml;knade livsmedel kan f&ouml;rekomma i alla &aring;ldrar (11).</span><br><br></p>\n<p>Symtom vid IgE-medierad allergi kan f&ouml;rekomma i n&auml;ra nog alla organsystem och med olika sv&aring;righetsgrader. Luftv&auml;garna &auml;r kritiska chockorgan med larynx&ouml;dem och astma. De f&aring; i Sverige som d&ouml;r av f&ouml;do&auml;mnesallergi (5&ndash;10 per tio &aring;r) har n&auml;stan alltid underbehandlad astma, varf&ouml;r astma alltid m&aring;ste utredas och i f&ouml;rekommande fall behandlas och noga kontrolleras vid sv&aring;r IgE-medierad f&ouml;do&auml;mnesallergi.<br><br></p>\n<p>Den vanligaste IgE medierade f&ouml;do&auml;mnesallergin &auml;r det orala allergiska syndromet, OAS. Personer med pollenallergi kan f&aring; besv&auml;r med kl&aring;da och svullnadsk&auml;nsla i munnen, l&auml;ppar och svalg, n&auml;r de &auml;ter f&ouml;do&auml;mnen som inneh&aring;ller proteiner liknande en del av de som finns i pollenallergenet. Detta &auml;r s&auml;rskilt uttalat vid bj&ouml;rkpollenallergi<span style=\"color: #000000;\">. <span style=\"text-decoration: line-through;\"></span>De olika proteiner/komponenter i pollen respektive olika f&ouml;do&auml;mnen som &auml;r aktuella i detta sammanhang &auml;r n&auml;rmare beskriva i <a href=\"http://www.lakartidningen.se/Klinik-och-vetenskap/Klinisk-oversikt/2016/04/Nya-perspektiv-pa-diagnos-och-behandling-av-matallergier-hos-barn/\" target=\"_blank\" style=\"color: #000000; text-decoration: underline;\">L&auml;kartidningens temanummer</a> om allergi hos barn och vuxna (12). </span> Det orala allergiska syndromet ger inte upphov till allvarliga reaktioner, men det besv&auml;rar ofta patienterna som d&auml;rigenom undviker dessa f&ouml;do&auml;mnen. I majoriteten av fallen kan r&auml;tt diagnos st&auml;llas enbart p&aring; anamnesen, men vid os&auml;kerhet finns m&ouml;jlighet att m&auml;ta allergena komponenter associerade med allvarlig n&ouml;tallergi.<span style=\"color: #000000;\"> Det r&ouml;r sig emellertid om kostsamma analyser och att tolka resultaten &auml;r ofta inte helt l&auml;tt, s&aring; detta sk&ouml;ts med f&ouml;rdel av en specialist i allergi.</span></p>\n<p><br>En variant av f&ouml;do&auml;mnesallergi &auml;r anstr&auml;ngningsutl&ouml;st allergi som inte s&auml;llan leder till anafylaxi. Patienten riskerar att drabbas vid intag av vissa allergen f&ouml;re anstr&auml;ngning.<span style=\"color: #000000;\"> Om det g&aring;r minst fyra timmar fr&aring;n intaget till fysisk aktivitet &auml;r risken f&ouml;r reaktion liten.<span style=\"color: #000000;\"> Det vanligaste f&ouml;do&auml;mnet vid denna reaktion &auml;r allergenet omega-5-gliadin i vete. Vid misstanke p&aring; anstr&auml;ngningsutl&ouml;st allergi kan man analysera niv&aring;n av specifika IgE antikroppar mot detta allergen</span>.</span><br><br></p>\n<p>P&aring; senare &aring;r har man uppt&auml;ckt att en del fall av oklar anafylaxi beror p&aring; k&ouml;ttallergi. Det r&ouml;r sig om sensibilisering mot kolhydraten alfa-gal (ett undantag fr&aring;n regeln att allergen i de flesta fall &auml;r proteiner) som finns i alla fyrfota djur. Man kan analysera serum-IgE mot alfa-gal. Vid k&ouml;ttallergi kommer symtomen, ofta i form av anafylaxi, flera timmar efter intaget av k&ouml;tt. Sensibilisering sker genom f&auml;stingbett d&aring; alfa-gal finns i f&auml;stingarnas saliv. <span style=\"color: #000000;\">(12,13,15,16,17,18)</span></p>\n<h4 id=\"Bi-och-getingallergi\">Bi- och getingallergi</h4>\n<p>Ungef&auml;r 4&nbsp;% av befolkningen har n&aring;gon g&aring;ng upplevt en systemreaktion efter insektsstick. En till tre personer d&ouml;r &aring;rligen i Sverige som en f&ouml;ljd av en reaktion vid bi- eller getingstick. De senaste trettio &aring;ren har d&ouml;dsfallen uteslutande varit &auml;ldre personer. Insektsstick kan leda till b&aring;de toxiska och allergiska reaktioner med anafylaxi. <span style=\"color: #000000;\">Humlors gift kan korsreagera med bigift.</span><br><br></p>\n<p>Enbart hudreaktioner efter insektsstick, &auml;ven urtikaria, beh&ouml;ver inte utredas d&aring; risken f&ouml;r stora reaktioner vid n&auml;sta stick endast &auml;r 5&ndash;10&nbsp;%. De som har haft en livshotande reaktion,anafylaxi grad 2&ndash;3,<span style=\"color: #000000;\"> se kapitlet <a href=\"{pre}/kapitel/akutmedicin/anafylaxi.html\" target=\"_blank\" style=\"color: #000000;\">Anafylaxi</a>, <a href=\"{pre}/kapitel/akutmedicin/anafylaxi.html#a3_7\" target=\"_blank\" style=\"color: #000000;\">tabell 1. Anafylaxi- sv&aring;righetsgradering</a>, har e</span>n kraftigt &ouml;kad risk att f&aring; en sv&aring;r reaktion &auml;ven vid n&auml;sta stick. Dessa personer ska erbjudas anafylaxiprofylax och allergen immunterapi, AIT, i fem &aring;r.<br><br></p>\n<p>Basalt S-tryptas b&ouml;r kontrolleras <span style=\"color: #000000;\">eftersom h&ouml;ga halter indikerar stor risk f&ouml;r allvarlig reaktion</span>,<span style=\"color: #000000;\"> se avsnittet <a href=\"#In-vitro-tester\" target=\"_blank\" style=\"color: #000000;\">In vitro tester</a></span>, personer med h&ouml;ga v&auml;rden ska utredas f&ouml;r mastocytos och eventuellt ha livsl&aring;ng AIT. Vid m&aring;nga stick kan man f&aring; en generell reaktion utan att det f&ouml;religger en sensibilisering. AIT har d&aring; inte n&aring;gon skyddande effekt <span style=\"color: #000000;\">(19)</span>.&nbsp;</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "975294b7-b708-42b4-8eb9-d69bae415599",
+			"name": "975294b7-b708-42b4-8eb9-d69bae415599",
+			"type": "text",
+			"content": "<h3 id=\"Urtikaria-och-angioodem\">Urtikaria och angio&ouml;dem</h3>\n<p>Urtikaria, n&auml;sselutslag, uppkommer n&auml;r mastceller i huden avger histamin och andra mediatorer. N&auml;r s&aring; sker i djupare v&auml;vnad upptr&auml;der angio&ouml;dem. Reaktionerna &auml;r vanliga som delsymtom vid en sv&aring;r allergisk reaktion. Akut urtikaria kan vara allergisk, som vid f&ouml;do&auml;mnesallergi, penicillinallergi samt allergi mot bi- och getinggift, men uppst&aring;r oftare spontant framf&ouml;r allt vid infektioner. Urtikaria som varat mer &auml;n sex veckor kallas kronisk urtikaria och upptr&auml;der ibland tillsammans med angio&ouml;dem. Mycket s&auml;llan &auml;r kronisk urtikaria orsakad av allergi. Patienterna &ouml;nskar bli utredda och f&aring; reda p&aring; vad de &auml;r allergiska mot, men det &auml;r s&auml;llan man finner n&aring;gon allergi. Bred provtagning med m&aring;nga specifika IgE och speciellt pricktest ger ofta fler fr&aring;gor &auml;n svar.<span style=\"text-decoration: line-through;\"></span><br><br></p>\n<p>Isolerat angio&ouml;dem kan vara av allergisk genes men ocks&aring; av idiopatisk natur, s&auml;rskilt vid recidiverande attacker. Det kan ocks&aring; r&ouml;ra sig om heredit&auml;rt angio&ouml;dem, en ovanlig sjukdom som beror p&aring; brist p&aring; komplementfaktorn C1-esterasinhibitor (C1INH).<br><a href=\"http://lakemedelsboken.se/atc/C09A-C09AA\"></a></p>\n<p><a href=\"http://www.fass.se/LIF/atcregister?atcCode=C09A\" target=\"_blank\">ACE-h&auml;mmare</a> kan ge en f&ouml;r l&auml;kemedelsgruppen specifik icke-allergisk biverkning&nbsp;med angio&ouml;dem i mun och svalg. Attackerna kan vara livshotande, komma oregelbundet och kan ibland debutera f&ouml;rst efter fler&aring;rig behandling&nbsp;<span style=\"color: #000000;\">(20).</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d893db8b-7b55-4c0e-8052-ce630ec60716",
+			"name": "d893db8b-7b55-4c0e-8052-ce630ec60716",
+			"type": "text",
+			"content": "<h3 id=\"Lakemedelsoverkanslighet-\">L&auml;kemedels&ouml;verk&auml;nslighet <span style=\"text-decoration: line-through;\"></span></h3>\n<p>&Ouml;verk&auml;nslighetsreaktioner mot l&auml;kemedel kan vara b&aring;de allergiska och icke-allergiska. Vanliga IgE-medierade reaktioner &auml;r hudrodnader, flushing, urtikaria och angio&ouml;dem. Vid sv&aring;rare reaktioner f&ouml;rekommer bronkospasm och anafylaxi. Klassiskt uppkommer IgE-medierade reaktioner i n&auml;ra anslutning till l&auml;kemedelsintag.</p>\n<p><br>Vid misst&auml;nkt l&auml;kemedels&ouml;verk&auml;nslighet &auml;r anamnesen utomordentligt viktig, med noggrann angivelse av preparat, indikation, tidpunkt f&ouml;r administration, administrationsv&auml;g och reaktion angivet i minuter efter administrering, f&ouml;rlopp samt samtidig behandling med andra l&auml;kemedel. Tidigare reaktioner och reaktioner om preparatet getts igen avsiktligt eller accidentellt ska dokumenteras <span style=\"color: #000000;\">(21).</span></p>\n<h4 id=\"Betalaktamantibiotika\">Betalaktamantibiotika</h4>\n<p>Betalaktamantibiotika (penicillin-V, penicillin-G, ampicillin, amoxicillin, cefalosporiner) &auml;r v&aring;ra mest anv&auml;nda antibiotika och orsakar flest antibiotikarelaterade &ouml;verk&auml;nslighetsreaktioner. Upp till 10&nbsp;% av patienter behandlade med betalaktamantibiotika f&aring;r olika typer av &ouml;verk&auml;nslighetsreaktioner. De flesta reaktionerna &auml;r lindriga men misstolkas som antibiotikaallergi och patienten undanh&aring;lls sedan felaktigt behandling med dessa preparat.</p>\n<p><br>Patienter som reagerat omedelbart och med anafylax<span style=\"color: #000000;\">i b&ouml;r inte u</span>tredas ytterligare d&aring; vidare utredning med provokation inneb&auml;r en stor risk f&ouml;r patienten.<span style=\"color: #000000;\"> Ledsvullnad/serumsjuka &auml;r inte en IgE-medierad reaktion utan betingas av att specifikt IgG och ett l&ouml;sligt antigen bildar immunkomplex som aktiverar komplement (en typ III reaktion). </span>Patienterna ska inte testas och ska inte ges respektive l&auml;kemedel forts&auml;ttningsvis. Journalen ska varningsm&auml;rkas f&ouml;r det aktuella l&auml;kemedlet <span style=\"color: #000000;\">i b&aring;da fallen</span>.</p>\n<p><br>Om anamnesen entydigt pekar p&aring; att det inte r&ouml;rt sig om en allvarlig reaktion, exempelvis ett icke kliande exantem n&aring;gra dagar in i behandlingen, eller efter avslutad behandling, kan man ge en tablett fulldos penicillin och l&aring;ta patienten v&auml;nta en timme i v&auml;ntrummet.</p>\n<p><br>I dagsl&auml;get finns in vitro-tester f&ouml;r specifika IgE mot PcV, PcG, ampicillin, amoxicillin samt cefaklor, <span style=\"color: #000000;\">men inte f&ouml;r&nbsp; &ouml;vriga antibiotika</span>.</p>\n<p><br>Ampicillin ger hos 5&ndash;10&nbsp;% av de behandlade patienterna ett finprickigt exantem v&auml;sentligen utan kl&aring;da. <span style=\"color: #000000;\"><span style=\"text-decoration: line-through;\"></span>De allra flesta patienterna med mononucleos f&aring;r exantem vid ampi-/amoxicillinbehandling men utslag f&ouml;rekommer ocks&aring; vid andra virusinfektioner. Detta &auml;r inte en allergisk reaktion och patienterna l&ouml;per inte &ouml;kad risk f&ouml;r en allvarlig reaktion av penicillin. </span>Vid f&ouml;rnyad behandling t&aring;l de flesta ampicillin eller amoxicillin trots att de haft hudutslag vid f&ouml;reg&aring;ende tillf&auml;lle.<span style=\"text-decoration: line-through;\"></span></p>\n<p><span style=\"color: #000000;\">Korsreaktivitet mellan penicilliner och cefalospriner &auml;r inte s&aring; vanliga som man tidigare trott och &auml;r mest</span> rapporterad f&ouml;rr f&ouml;rsta och andra generationerna av cefalosporiner. Korsreaktioner mellan penicillin och tredje och fj&auml;rde generationerna av cefalosporiner &auml;r d&auml;remot s&auml;llsynta <span style=\"color: #000000;\">(22,23).</span></p>\n<h4 id=\"ASA-NSAID\">ASA/NSAID</h4>\n<p>ASA/NSAID &ouml;verk&auml;nslighet r&auml;knas som den n&auml;st vanligaste l&auml;kemedelsrelaterade &ouml;verk&auml;nsligheten, efter antibiotika. Det finns inga biologiska mark&ouml;rer eller s&auml;kra hudtest f&ouml;r detta tillst&aring;nd. Cox-2 h&auml;mmare kan ofta anv&auml;ndas vid NSAID-&ouml;verk&auml;nslighet. F&ouml;rsta dosen b&ouml;r ges under &ouml;ver<span style=\"color: #000000;\">vakning. Se &auml;ven om biverkan av ACE-h&auml;mmare i tidigare avsnitt <a href=\"#Urtikaria-och-angioodem\" target=\"_blank\" style=\"color: #000000;\">Urtikaria och angi&ouml;den</a>.</span></p>\n<h4 id=\"Ovriga-lakemedel\">&Ouml;vriga l&auml;kemedel</h4>\n<p>Exempel p&aring; andra l&auml;kemedel som orsakar reaktioner som &auml;r eller tolkas som IgE-medierade &auml;r lokalanestetika, biologiska l&auml;kemedel, immunglobuliner, intraven&ouml;sa j&auml;rnpreparat, kontrastmedel, antibiotika, narkosmedel, morfinpreparat och cytostatika.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1d0f689f-8582-4386-b73f-284f7961494e",
+			"name": "1d0f689f-8582-4386-b73f-284f7961494e",
+			"type": "text",
+			"content": "<h2 id=\"Utredning-av-allergi\">Utredning av allergi</h2>\n<h3 id=\"Anamnes\">Anamnes</h3>\n<p>Anamnesen &auml;r det viktigaste vid utredning av allergier. Upp mot 50&nbsp;% av den vuxna befolkningen &auml;r sensibiliserade, det vill s&auml;ga har antikroppar mot n&aring;got allergen. M&aring;nga av dessa reagerar &auml;nd&aring; inte vid exposition f&ouml;r allergenet, s&aring; det &auml;r f&ouml;r&ouml;dande att utan anamnes utf&ouml;ra pricktester eller ta specifika IgE utan fr&aring;gest&auml;llning. Risken finns att man hittar sensibilisering utan allergi, och patienten kan b&ouml;rja undvika n&aring;got som personen i fr&aring;ga egentligen t&aring;l <span style=\"color: #000000;\">(24).</span></p>\n<p><br>Se Faktaruta 7 Anamnesupptagning.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "bfd66f6f-2d12-46c7-a0c1-bd69662245c1",
+			"name": "bfd66f6f-2d12-46c7-a0c1-bd69662245c1",
+			"type": "facts",
+			"content": {
+				"number": "7",
+				"title": "Anamnesupptagning",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><strong>B&ouml;rja med &ouml;ppna fr&aring;gor:<br><br></strong></p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Ber&auml;tta om dina besv&auml;r</li>\r\n<li>Vad h&auml;nder/vad h&auml;nde</li>\r\n<li>Hur g&ouml;r du/gjorde du d&aring;?</li>\r\n<li>Hur p&aring;verkar det dig - hemma, p&aring; jobbet, i skolan, p&aring; fritiden?</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>F&ouml;rs&ouml;k, om n&ouml;dv&auml;ndigt, att med riktade fr&aring;gor ringa in:<br><br></strong></p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>&Auml;rftlighet, debut, utveckling.</li>\r\n<li>Vilka symtom utl&ouml;ses? Vilka organ p&aring;verkas? Hur utvecklar sig symtomen med respektive utan eventuell behandling?</li>\r\n<li>I vilken milj&ouml; utl&ouml;ses symtomen? Bostad, arbete, skola, andra platser etc.</li>\r\n<li>Tid? &Aring;rstid, dygnsvariation, tid efter exposition, duration.</li>\r\n<li>Utl&ouml;sande faktorer? F&ouml;da, l&auml;kemedel, anstr&auml;ngning, stress, oro.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "de54b7b0-d285-4990-9cd0-618ff4d306ed",
+			"name": "de54b7b0-d285-4990-9cd0-618ff4d306ed",
+			"type": "text",
+			"content": "<h3 id=\"Hudtester\">Hudtester</h3>\n<p>Pricktest &auml;r enkelt att utf&ouml;ra, ger ett snabbt svar och kan vara mycket pedagogiskt d&aring; det tydligt visar vad patienten reagerar f&ouml;r. S&auml;krast &auml;r att anv&auml;nda h&ouml;grenade standardiserade allergen, men man kan &auml;ven utf&ouml;ra prick-pricktest, d&auml;r lansetten prickas f&ouml;rst i ett f&ouml;do&auml;mne och d&auml;refter i huden <span style=\"color: #000000;\">(25)</span><span style=\"color: #000000;\">.</span><br><br></p>\n<p>Metoden kan anv&auml;ndas b&aring;de f&ouml;r inhalationsallergen, f&ouml;do&auml;mnesallergen, insektsgifter och l&auml;kemedel. Sensitivitet och specificitet &auml;r vanligtvis god men kan variera beroende p&aring; vilket allergen som testas. Man bed&ouml;mer reaktionerna i f&ouml;rh&aring;llande till den positiva och negativa referensen som &auml;ven kan avsl&ouml;ja om patienten tagit l&auml;kemedel som p&aring;verkar reaktionen. Exempel p&aring; s&aring;dana l&auml;kemedel &auml;r antihistamin, kortison och <span style=\"color: #000000;\">tricykliska antidepressiva</span><span style=\"text-decoration: line-through;\"></span>.<br><br></p>\n<p>Intradermaltest &auml;r ett k&auml;nsligare test p&aring; IgE-medierad allergi d&auml;r &auml;mnet injiceras intrakutant i olika koncentrationer. Det ger en uppfattning om sensibiliseringsgrad och anv&auml;nds nu mest vid utredning av l&auml;kemedels&ouml;verk&auml;nslighet eller bi- och getingallergi.<br><br></p>\n<p>Vid misstanke om f&ouml;rdr&ouml;jd &ouml;verk&auml;nslighetsreaktion, typ&nbsp;IV-reaktion, utf&ouml;rs ett lapptest d&auml;r man l&auml;gger allergenet p&aring; huden och t&auml;cker med en liten plastkopp och pl&aring;ster under 48 timmar. Vid avl&auml;sning efter tre till fem dygn ser man vid en positiv reaktion ett litet &rdquo;minieksem&rdquo; med rodnad, papler och vesiklar. Vid utredning av f&ouml;do&auml;mnesallergi hos barn kan testet anv&auml;ndas om pricktestet &auml;r negativt men anamnesen talar f&ouml;r en allergi. Testet brukar d&aring; kallas atopy patch test <span style=\"color: #000000;\">(26).</span></p>\n<h3 id=\"In-vitro-tester\">In vitro-tester</h3>\n<p>Ett alternativ till pricktest &auml;r att analysera IgE i serum. Det p&aring;verkas inte av att patienten tagit antihistamin eller andra l&auml;kemedel. F&ouml;rr anv&auml;ndes metoden RAST - <span class=\"Y0NH2b CLPzrc\">Radio Allergo Sorbent </span>Test, numera vanligen Immuno-Cap. Med dagens metoder kan testet vara positivt vid halter &gt;&nbsp;0,10&nbsp;kU/l, speciellt om totalt IgE &auml;r l&aring;gt. Phadiatop som inneh&aring;ller de vanligaste luftburna allergenen kan anv&auml;ndas som screeningtest och vid positivt utfall kan specifika IgE efterbest&auml;llas. Vid riktad misstanke &auml;r det b&auml;ttre att ta specifikt IgE mot misst&auml;nkt allergen. Prov taget i anslutning till en anafylaktisk reaktion kan bli falskt f&ouml;r l&aring;gt. Man b&ouml;r v&auml;nta minst fyra veckor efter en akut reaktion innan IgE-prov tas. Specifika IgE &auml;r inte n&aring;gon absolut san<span style=\"color: #000000;\">ning. Klinisk tolerans kan f&ouml;religga trots f&ouml;rekomst av specifika IgE-antikroppar och i de fall relevanta allergen inte &auml;r representerade i testet blir provet falskt negativt.</span><br><br></p>\n<p>Ett allergen best&aring;r av flera olika komponenter. Sedan n&aring;gra &aring;r kan man analysera dessa komponenter, se <a href=\"#Fodoamnesallergi\" target=\"_blank\">avsnittet om f&ouml;do&auml;mnesallergi</a>. Mest anv&auml;nds komponenterna vid utredning av reaktioner mot tr&auml;dn&ouml;tter och jordn&ouml;t.<span style=\"color: #000000;\"> I s&aring;v&auml;l jordn&ouml;t som hasseln&ouml;t finns ett protein som &auml;r likt huvudallergenet i bj&ouml;rkpollen. Reaktionen blir oralt allergiskt syndrom. Andra komponenter i n&ouml;tterna kan ge upphov till allvarlig allergisk reaktion.</span><br><br></p>\n<p>Antalet komponenter som kan best&auml;mmas &ouml;kar stadigt. Det finns &auml;ven breda screeningtester som med en liten m&auml;ngd blod analyserar IgE f&ouml;r de flesta k&auml;nda luftburna allergenen och en mycket stor m&auml;ngd f&ouml;do&auml;mnen inklusive dessas komponenter. Ett ben&auml;mns Immuno-Cap ISAC. Provet anv&auml;nds bland annat vid utredning av oklar anafylaxi. Tolkningen av resultaten kr&auml;ver kunskap och erfarenhet av allergidiagnostik.<br><br></p>\n<p>Man kan inte med s&auml;kerhet uttala sig om hur k&auml;nslig en patient &auml;r baserat p&aring; IgE-niv&aring;erna. D&auml;rf&ouml;r utvecklas nya test och ett &auml;r basofilaktiveringstest (BAT) d&auml;r man stimulerar patientens basofiler med stigande koncentrationer av allergen. Med CD-sens m&auml;ter man reaktionen genom att analysera CD-63, eller CD203c, som fris&auml;tts n&auml;r basofilen degranulerar. Testerna anv&auml;nds inte rutinm&auml;ssigt eftersom de &auml;r tidskr&auml;vande och dyra men har b&ouml;rjat anv&auml;ndas i kliniken bland annat vid utv&auml;rdering av behandling med omalizumab, anti IgE. Ett annat basofilaktiveringstest &auml;r histamin release test (HR-test) d&auml;r man ist&auml;llet f&ouml;r CD-63 m&auml;ter halten av histamin som frig&ouml;rs vid kontakt med allergenet.<br><br></p>\n<p>Vid en allergisk reaktion degranulerar mastceller och fris&auml;tter bland annat histamin. Detta bryts dock fort ned och &auml;r sv&aring;rt att analysera varf&ouml;r man ist&auml;llet kan man m&auml;ta tryptas som fris&auml;tts samtidigt. Ett h&ouml;gt tryptasv&auml;rde taget 0,5&ndash;3 timmar efter reaktionen talar f&ouml;r att det varit en degranulering av mastceller. Dock &auml;r provet inte helt tillf&ouml;rlitligt vid allergiska f&ouml;do&auml;mnesreaktioner. I efterf&ouml;rloppet kontrolleras basalt tryptas f&ouml;r j&auml;mf&ouml;relse <span style=\"color: #000000;\">(27,28)</span>.</p>\n<h4 id=\"Provokationstest\">Provokationstest</h4>\n<p>Provokationstest vid allergi inneb&auml;r att man tillf&ouml;r patienten det misst&auml;nkta allergenet i en mycket l&aring;g koncentration eller dos till det aktuella organet. Koncentration/dos &ouml;kas tills symtom upptr&auml;der.</p>\n<p>Provokationsf&ouml;rs&ouml;k ska endast utf&ouml;ras av specialist. I diagnostiskt syfte anv&auml;nds vid luftburen allergi oftast provokation i &ouml;gonen, ibland i n&auml;sslemhinnan. F&ouml;rs&ouml;ken &auml;r huvudsakligen semikvantitativa och bed&ouml;mningsmetoden subjektiv.<br><br></p>\n<p>Provokation med f&ouml;do&auml;mnen g&ouml;rs p&aring; n&aring;gra f&aring; specialistkliniker i landet. Metoden m&aring;ste utf&ouml;ras p&aring; ett dubbelblindkontrollerat s&auml;tt och &auml;r d&auml;rf&ouml;r tidskr&auml;vande. Varianter p&aring; f&ouml;do&auml;mnesprovokation kan vara &ouml;ppna provokationer d&auml;r en orolig patient under &ouml;vervakning f&aring;r uppleva oralt allergiskt syndrom av olika frukter och n&ouml;tter kopplat till bj&ouml;rkpollen. Genom kontrollerad exponering kan man visa att exponeringen inte leder till allvarliga allergiska reaktioner.</p>\n<h4 id=\"Eliminationsforsok\">Eliminationsf&ouml;rs&ouml;k</h4>\n<p>Vid misstanke om f&ouml;do&auml;mnes&ouml;verk&auml;nslighet kan s&aring; kallade eliminationsf&ouml;rs&ouml;k g&ouml;ras. Ett misst&auml;nkt f&ouml;do&auml;mne i taget utesluts fr&aring;n kosten och kvarst&aring;ende symtom analyseras.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d58a3bc1-c781-4dfe-a541-757d3c8d0151",
+			"name": "d58a3bc1-c781-4dfe-a541-757d3c8d0151",
+			"type": "text",
+			"content": "<h2 id=\"Prevention-och-icke-farmakologisk-behandling\">Prevention och icke farmakologisk behandling</h2>\n<p>F&ouml;r information om prim&auml;r prevention, var god se Faktaruta <span style=\"color: #000000;\">3</span>.<br><strong><br></strong></p>\n<p>Sekund&auml;r prevention omfattar generella &aring;tg&auml;rder som leder till att sjukdomssymtom f&ouml;rebyggs eller minskas hos redan sensibiliserade eller hos individer med etablerad allergisk sjukdom. Grundregeln f&ouml;r personer med allergi &auml;r att undvika det specifika allergenet. Vissa allergen &auml;r sv&aring;rare att undvika &auml;n andra.<br><br></p>\n<p>Se Faktaruta 8<strong> </strong>Sekund&auml;rprevention.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "bf3ab5f3-1b0d-4ac0-bcc1-0ed723725182",
+			"name": "bf3ab5f3-1b0d-4ac0-bcc1-0ed723725182",
+			"type": "facts",
+			"content": {
+				"number": "8",
+				"title": "Sekundärprevention",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><strong>N&auml;r det &auml;r m&ouml;jligt, undvik utl&ouml;sande allergen genom att<br><br></strong></p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Undvika p&auml;lsdjur, fram f&ouml;r allt i det egna hemmet</li>\r\n<li>Sanera fukt</li>\r\n<li>Ha god ventilation</li>\r\n<li>Torka tv&auml;tt inomhus under pollens&auml;song</li>\r\n<li>Anv&auml;nda pollenmask</li>\r\n<li>Sk&ouml;lja n&auml;san</li>\r\n<li>Utomhustr&auml;ning f&ouml;rl&auml;ggs till morgonen och efter regn</li>\r\n<li>F&ouml;lja pollenhalten, till exempel via app</li>\r\n<li>L&auml;sa inneh&aring;llsf&ouml;rteckningar p&aring; livsmedel</li>\r\n<li>Fr&aring;ga om livsmedel p&aring; restaurang</li>\r\n<li>Kvalstersanera</li>\r\n<li>Undvika allm&auml;nt irriterande &auml;mnen, till exempel tobaksr&ouml;k</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "80f961ed-200d-40ea-b52f-a47eacda03c2",
+			"name": "80f961ed-200d-40ea-b52f-a47eacda03c2",
+			"type": "text",
+			"content": "<h3 id=\"Airsonett\">Airsonett</h3>\n<p>Airsonett &auml;r en luftrenare som ger ett tempererat lamin&auml;rt fl&ouml;de och har visat sig kunna skapa en allergenfri zon runt patientens luftv&auml;gar under natten. Man har sett att anv&auml;ndande av en s&aring;dan luftrenare ger en minskad bronkiell hyperreaktivitet, minskad inflammation i luftv&auml;garna och &ouml;kad livskvalitet hos patienter med sv&aring;r allergisk astma. Kostnadseffektivitet f&ouml;r metoden har visats vid behandling av patienter med allergisk astma i behandlingssteg 4&ndash;5, se kapitlet <a href=\"{pre}/kapitel/andningsvagar/astma_och_kol.html\" target=\"_blank\">Astma och KOL</a> - <a href=\"{pre}/kapitel/andningsvagar/astma_och_kol.html#figure_id_3\" target=\"_blank\">figur&nbsp;3, behandlingstrappa vid astma</a>. Behandlingen ger inga biverkningar men en del patienter st&ouml;rs av ljudet. Luftrenaren kan leasas och utv&auml;rdering av behandlingen g&ouml;rs efter tre m&aring;nader.<span style=\"color: #000000;\"> Airsonett &auml;r ett hj&auml;lpmedel och kostnaden belastar landsting/region och/eller kommun, enligt lokala avtal.</span> <span style=\"color: #000000;\">(29)</span> <span style=\"color: #000000;\"></span><br><br></p>\n<h3 id=\"Lakemedelsbehandling\">L&auml;kemedelsbehandling</h3>\n<p><span style=\"color: #000000;\">L&auml;kemedelsbehandling vid olika allergiska tillst&aring;nd bland annat ARC - allergisk rinokonjunktivit, urtikaria, astma och anafylaxi beskrivs i respektive kapitel. Se <a href=\"{pre}/kapitel/andningsvagar/oron-_nas-_och_halssjukdomar.html\" target=\"_blank\" style=\"color: #000000;\">&Ouml;ron- n&auml;s- och halssjukdomar</a>, <a href=\"{pre}/kapitel/ogon/ogonsjukdomar.html\" target=\"_blank\" style=\"color: #000000;\">&Ouml;gonsjukdomar</a>, <a href=\"{pre}/kapitel/andningsvagar/astma_och_kol.html\" target=\"_blank\" style=\"color: #000000;\">Astma och KOL</a>, <a href=\"{pre}/kapitel/hud/hudsjukdomar.html\" target=\"_blank\" style=\"color: #000000;\">Hudsjukdomar</a> och <a href=\"{pre}/kapitel/akutmedicin/anafylaxi.html\" target=\"_blank\" style=\"color: #000000;\">Anafylaxi</a>.</span><br><br></p>\n<h3 id=\"Medicinering-under-graviditet-och-amning\">Medicinering under graviditet och amning</h3>\n<p>Vid allergi och astma &auml;r det vanligt att den blivande modern f&ouml;rs&ouml;ker minska sin medicinering av r&auml;dsla f&ouml;r att l&auml;kemedlen ska p&aring;verka fostrets utveckling. Det finns en risk att underbehandling av allergisk rinit och graviditet har negativa effekter p&aring; modern, med risk f&ouml;r till exempel astmaf&ouml;rs&auml;mring. Lokala steroider i n&auml;san och inhalationssteroider i normala doser inneb&auml;r inte n&aring;gra risker och kan anv&auml;ndas av gravida och ammande. Icke-sederande antihistaminer anv&auml;nds vid graviditet och amning, i f&ouml;rsta hand cetirizin och loratadin. Montelukast b&ouml;r inte nyins&auml;ttas, men tidigare p&aring;b&ouml;rjad behandling kan forts&auml;tta.<span style=\"color: #000000;\"> Montelukast b&ouml;r anv&auml;ndas med viss &aring;terh&aring;llsamhet, d&aring; erfarenheten vid graviditet &auml;r begr&auml;nsad</span>. Behandling med omalizumab till gravida ska bara ske om det &auml;r absolut n&ouml;dv&auml;ndigt. Preparatet ska inte ges till ammande. Allergen immunterapi ska inte startas under graviditet p&aring; grund av risken f&ouml;r allergiska reaktioner vid starten, d&auml;remot kan en underh&aring;llsbehandling forts&auml;tta och inga restriktioner finns vid amning. Vid stark klinisk indikation kan perorala steroider anv&auml;ndas vid graviditet i s&aring; l&aring;g dos och kort behandling som m&ouml;jligt <span style=\"color: #000000;\">(30)</span>.&nbsp;</p>\n<h3 id=\"Anti-IgE-behandling\">Anti-IgE-behandling</h3>\n<p>Omalizumab &auml;r en monoklonal antikropp riktad mot cirkulerande IgE-antikroppar och hindrar dessa fr&aring;n att f&auml;sta p&aring; mastceller och basofiler. Vid allergenexponering kan d&aring; inte n&aring;gon korsbindning av allergenet till IgE p&aring; mastcellen ske och den allergiska reaktionen uteblir. Preparatet anv&auml;nds vid sv&aring;r allergisk astma och vid kronisk spontan urtikaria och ges som subkutana injektioner var annan till var fj&auml;rde vecka. Doseringen bygger p&aring; patientens kroppsvikt och niv&aring; av total IgE. Vid allergen immunterapi till patienter d&auml;r man f&aring;r kraftiga allergiska reaktioner har preparatet b&ouml;rjat anv&auml;ndas f&ouml;r att minska risken vid start av behandlingen. Indikation finns f&ouml;r barn fr&aring;n 6 &aring;rs &aring;lder vid sv&aring;r allergisk astma. Erfarenhet av behandling av &auml;ldre personer &auml;r begr&auml;nsade men inget talar f&ouml;r att &auml;ldre patienter ska ges l&auml;gre doser. Bed&ouml;mning av indikation och behandling g&ouml;rs av specialister. Hos patienter med sv&aring;r allergisk astma ger preparatet f&auml;rre astmaexacerbationer och b&auml;ttre astmakontroll. F&ouml;r behandling vid kronisk urtikaria h&auml;nvisas till kapitlet <a href=\"{pre}/kapitel/hud/hudsjukdomar.html#f1_4\">Hudsjukdomar</a>.<br><br> Behandlingskostnaden &auml;r f&ouml;rh&aring;llandevis h&ouml;g och utv&auml;rdering av effekt b&ouml;r g&ouml;ras efter 16 veckor och &aring;terkommande d&auml;refter. Effekten av behandlingen kan kvarst&aring; efter utsatt terapi, sannolikt p&aring; grund av nedreglering av receptorerna f&ouml;r IgE p&aring; mastcellen. Man har &auml;nnu inte n&aring;gon s&auml;ker kunskap om n&auml;r uts&auml;ttningsf&ouml;rs&ouml;k ska g&ouml;ras. Man har de senaste &aring;ren b&ouml;rjat kontrollera effekten av behandlingen med hj&auml;lp av CD sens <span style=\"color: #000000;\">(31,32)</span>.&nbsp;</p>\n<h3 id=\"Allergen-immunterapi-AIT\">Allergen immunterapi, AIT</h3>\n<p>AIT &auml;r den enda metod som kan skapa tolerans mot allergen, minska risken f&ouml;r nya sensibiliseringar och f&ouml;rebygga allergisk astma. Syftet med behandlingen &auml;r att f&ouml;rebygga uppkomsten av symtom genom att minska k&auml;nsligheten f&ouml;r allergen. B&aring;de den snabba och den sena allergiska inflammationen minskar. Behandlingen kan ges fr&aring;n skolbarns&aring;ren om barnet inte &auml;r alltf&ouml;r sprutr&auml;dd och kan medverka och upp till &ouml;ver 70-&aring;rs&aring;ldern vid insektsallergi. Effekten &auml;r oftast mycket god, med minskade symtom och minskat behov av symtomlindrande behandling. B&auml;st effekt n&aring;s vid behandling mot insektsgift d&auml;r man kan f&ouml;rhindra anafylaktisk chock. Effekten mot kvalster, tr&auml;d- och gr&auml;spollenallergi &auml;r ocks&aring; god. Effekten vid behandling mot katt &auml;r b&auml;ttre &auml;n mot hund. <br><br>Toleransutvecklingen &auml;r individuell. Om patienten inte svarar p&aring; behandlingen b&ouml;r den avbrytas. Vid graviditet inleds inte AIT, men underh&aring;llsbehandling avbryts inte.<br><br></p>\n<p>Den hittills vanligaste metoden &auml;r subkutan immunterapi, SCIT<span style=\"text-decoration: line-through;\"></span>. Stort arbete har lagts ned f&ouml;r att g&ouml;ra metoden s&auml;ker genom att standardisera extraktens inneh&aring;ll och styrka samt att sk&auml;rpa indikationer, kontraindikationer och s&auml;kerheten kring behandlingen. Vid SCIT injiceras allergen subkutant i stigande dos. Uppdoseringsfasen tar 7 till 15 veckor, d&auml;refter glesas behandlingarna ut och ges var 6:e till var 8:e vecka under 3&ndash;5 &aring;r. God effekt uppn&aring;s oftast redan f&ouml;rsta &aring;ret. Efter varje injektion ska patienten &ouml;vervakas i minst 30 minuter d&aring; de allvarliga allergiska reaktionerna kommer tidigt efter injektionen. Behandlingen ges endast p&aring; specialistkliniker. Metoden &auml;r resurskr&auml;vande f&ouml;r s&aring;v&auml;l v&aring;rdgivaren som f&ouml;r patienten. Under uppdoseringsfasen &auml;r det mycket vanligt med lokala reaktioner med svullnad rodnad och kl&aring;da, men &auml;ven f&ouml;rs&auml;mring av allergisk astma, som d&auml;rf&ouml;r m&aring;ste behandlas intensivt liksom atopiska eksem. Tr&ouml;tthet samma dag &auml;r vanligt. I Sverige finns allergenextrakt med tr&auml;dpollen, gr&auml;spollen, hund, h&auml;st, katt, kvalster, bi och geting.</p>\n<p>En annan metod f&ouml;r AIT &auml;r sublingual immunterapi, <span style=\"text-decoration: line-through;\"></span>SLIT, d&auml;r allergenet ges som en sublingual tablett eller som droppar under tungan. I Sverige finns metoden i tablettform f&ouml;r behandling av gr&auml;spollen och kvalster. F&ouml;rsta tabletten tas p&aring; mottagningen men d&auml;refter administrerar patienten administrerar l&auml;kemedlet sj&auml;lv. Behandlingstiden &auml;r tre &aring;r, vid behandling mot gr&auml;spollenallergi b&ouml;r behandlingen startas 16 veckor f&ouml;re gr&auml;spollens&auml;ongens start. Indikationerna &auml;r samma som f&ouml;r SCIT och behandlingen b&ouml;r sk&ouml;tas av specialist. Effekten &auml;r j&auml;mf&ouml;rbar med SCIT och kostnaden mindre &auml;n h&auml;lften d&aring; det inte kr&auml;ver t&auml;ta regelbundna bes&ouml;k som scit g&ouml;r. Dock kan det bli problem med f&ouml;ljsamheten om man inte har regelbunden kontakt med patienten. Tabletten mot gr&auml;spollenallergi kan anv&auml;ndas till barn fr&aring;n 6 &aring;rs &aring;lder medan tablettbehandling mot kvalsterallergi &auml;nnu inte har barnindikation <span style=\"color: #000000;\">(33)</span>.<br><br></p>\n<p><strong></strong>Se Faktaruta 9 AIT: indikationer och kontraindikationer</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8eb58824-8471-4232-a819-44d87d17766a",
+			"name": "8eb58824-8471-4232-a819-44d87d17766a",
+			"type": "facts",
+			"content": {
+				"number": "9",
+				"title": "AIT - Allergen immunterapi; indikationer och kontraindikationer",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td><strong>Indikationer</strong></td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Patienten &auml;r k&auml;nslig f&ouml;r s&aring;dana allergen som &auml;r sv&aring;ra att undvika eller sanera bort</li>\r\n<li>Milj&ouml;&aring;tg&auml;rder ger otillr&auml;cklig effekt</li>\r\n<li>Patienten har dagligt medicineringsbehov under l&auml;ngre period eller under hela &aring;ret</li>\r\n<li>Patienten har otillr&auml;cklig effekt eller biverkningar av farmakologisk behandling</li>\r\n<li>Patienten beh&ouml;ver systemiska steroider f&ouml;r symtomkontroll</li>\r\n<li>Begynnande astma st&auml;rker indikationen f&ouml;r AIT</li>\r\n<li>Patienten har f&aring;tt en livshotande/allvarlig reaktion efter bi- eller getingstick</li>\r\n<li>Patienten har kraftigt f&ouml;rs&auml;mrad livskvalitet trots adekvat behandling</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td><strong>Kontraindikationer f&ouml;r AIT</strong></td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Sv&aring;r immunologisk sjukdom, malignitet, kronisk infektion</li>\r\n<li>Sv&aring;r hj&auml;rt-k&auml;rlsjukdom (kan dock bli aktuellt vid sv&aring;r insektsallergi)</li>\r\n<li>Sv&aring;r astma med FEV1 &lt;&nbsp;70&nbsp;% av f&ouml;rv&auml;ntat v&auml;rde trots optimal farmakologisk behandling</li>\r\n<li>D&aring;lig patientf&ouml;ljdsamhet</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Relativa kontraindikationer</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Behandling med betablockerare och ACE-h&auml;mmare</li>\r\n<li>Sv&aring;r atopisk dermatit</li>\r\n<li>Graviditet (g&auml;ller behandlingsstart och uppdosering)</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "p1_65"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "65a60f46-fe05-4d6f-9e2a-3035ebb35882",
+			"name": "65a60f46-fe05-4d6f-9e2a-3035ebb35882",
+			"type": "references",
+			"content": "<h2 id=\"Referenser\">Referenser</h2>\n<ol class=\"references\"><li id=\"reference_1\">Johansson SG, Cardell LO, Foucard T, Montan P, Odeb&auml;ck P, Palmqvist M, Wahlgren CF. Revised, global nomenclature for allergy. Unambiguous terms create clarity and prevent misunderstandings. <a href=\"http://www.lakartidningen.se/OldWebArticlePdf/3/3043/LKT0606s379_383.pdf\">L&auml;kartidningen. 2006;103(6):379-83</a></li>\n<li id=\"reference_2\">Adkinson Jr, N.F., Busse, W.W., Bochner, B.S., Holgate, S.T., Simons, F.E.R., &amp; Lemanske Jr, R.F. O&acute;Heir, R. E. (Eds.). (2009). <span>Middleton&rsquo;s allergy</span><em>: <span>Principles and practice</span></em> (8th ed.). Expert Consult Premium Edition. New York: Elsevier.\n<div><a href=\"https://www.elsevier.com/books/middletons-allergy-2-volume-set/adkinson-jr/978-0-323-08593-9\" target=\"_blank\">Hardcover ISBN: 9780323085939</a></div>\n</li>\n<li id=\"reference_3\">Holmstr&ouml;m M, Davidsson &Aring;, Hellgren J. Allergisk rinit drabbar en tredjedel av befolkningen.<br><a href=\"http://www.lakartidningen.se/Klinik-och-vetenskap/Klinisk-oversikt/2016/04/Allergisk-rinit-drabbar-en-tredjedel-av-befolkningen/\" target=\"_blank\">L&auml;kartidningen 2016; 113:DSAS</a></li>\n<li id=\"reference_4\"><a href=\"https://krefting.gu.se/om_krefting_research_centre/organisation/samverkan/olin_studierna\" target=\"_blank\">Olinstudierna</a>, sammanst&auml;llning av longitudinella studier av f&ouml;rekomst av astma och allergi.</li>\n<li id=\"reference_5\">Hedlin G, Wennergren G, Alm, J. 2014 ; Allergi och astma hos barn; Studentlitteratur<br><a href=\"https://www.studentlitteratur.se/#9789144084572/Allergi+och+astma+hos+barn\" target=\"_blank\">ISBN:9789144084572</a></li>\n<li id=\"reference_6\">Alm J, Goks&ouml;r E. Riskfaktorer och prevention. Varf&ouml;r blir man allergisk, och g&aring;r det att f&ouml;rhindra?<br><a href=\"http://www.lakartidningen.se/Klinik-och-vetenskap/Klinisk-oversikt/2016/04/Riskfaktorer-och-prevention/\" target=\"_blank\">L&auml;kartidningen 2016; 113:DW76</a></li>\n<li id=\"reference_7\">\n<p>George Du Toit, Peter H. Sayre, Graham Roberts, Effect of Avoidance on Peanut Allergy after Early Peanut Consumption,<br> <a href=\"https://www.nejm.org/doi/full/10.1056/NEJMoa1514209\" target=\"_blank\">N Engl J Med 2016; 374:1435-43</a></p>\n</li>\n<li id=\"reference_8\">Akdis C, Agache I et al Global atlas of allergy, European academy of allergy and clinical immunology 2014. <br><a href=\"https://www.eaaci.org/globalatlas/GlobalAtlasAllergy.pdf\" target=\"_blank\">EAACI.org</a></li>\n<li id=\"reference_9\">Akdis C, hellings P, Agache I et al. Global atlas of allergic rhinitis and chronic rhinosinuitis, European academy of allergy and clinical immunology 2015. <br><a href=\"http://www.eaaci.org/globalatlas/ENT_Atlas_web.pdf\" target=\"_blank\">EAACI.org</a></li>\n<li id=\"reference_10\">Brożek JL, Bousquet J, Baena-Cagnani CE, Bonini S, Canonica GW, et al. Rhinitis and its Impact on Asthma (ARIA) guidelines: 2010 revision. <br><a href=\"https://www.ncbi.nlm.nih.gov/pubmed/20816182\" target=\"_blank\">J Allergy Clin Immunol. 2010;126:466-76</a>.</li>\n<li id=\"reference_11\">R&ouml;nmark E, Backman H, Hedman L. Allergier st&ouml;rsta sjukdomsgrupp hos svenska barn och unga vuxna <br>L&auml;kartidningen.<a href=\"http://www.lakartidningen.se/Klinik-och-vetenskap/Klinisk-oversikt/2016/04/Allergier-storsta-sjukdomsgrupp-hos-svenska-barn-och-unga-vuxna/\" target=\"_blank\">2016;113:DWF4</a></li>\n<li id=\"reference_12\">Nilsson C, Brandstr&ouml;m J, Glaumann S, Vetander M, Nya perspektiv p&aring; diagnos och behandling av matallergier hos barn. <br><a href=\"http://www.lakartidningen.se/Klinik-och-vetenskap/Klinisk-oversikt/2016/04/Nya-perspektiv-pa-diagnos-och-behandling-av-matallergier-hos-barn/\" target=\"_blank\">L&auml;kartidningen 2016;113:DTU9</a><span style=\"color: #000000;\"><span class=\"byline__text byline__text--noImg\"></span></span></li>\n<li id=\"reference_13\">\n<div class=\"cit\"><span></span>Apostolovic D, The red meat allergy syndrome in Sweden.</div>\n<p><span><a href=\"https://www.ncbi.nlm.nih.gov/pubmed/27656352#\" title=\"Allergo journal international.\" abstractlink=\"yes\" alsec=\"jour\" alterm=\"Allergo J Int.\" role=\"menuitem\" aria-expanded=\"false\" aria-haspopup=\"true\">Allergo J Int</a><a href=\"https://www.ncbi.nlm.nih.gov/pubmed/27656352\" target=\"_blank\">.</a></span><a href=\"https://www.ncbi.nlm.nih.gov/pubmed/27656352\" target=\"_blank\"> 2016;25(2):49-54. Epub 2016 Mar 23</a>.</p>\n</li>\n<li id=\"reference_14\">Muraro A, Werfel T, Hoffmann-Sommergruber K, Roberts G, Beyer K et al. EAACI food allergy and anaphylaxis guidelines: diagnosis and management of food allergy<strong>. <br></strong><a href=\"https://doi.org/10.1111/all.12429\" target=\"_blank\">Allergy. 2014;69:1008-25.</a></li>\n<li id=\"reference_15\">Svensk hemsida om f&ouml;do&auml;mnes&ouml;verk&auml;nslighet,<br><a href=\"http://www.fffa.se\" target=\"_blank\">Forum f&ouml;r f&ouml;do&auml;mnesallergi</a></li>\n<li id=\"reference_16\">\n<p class=\"m-article-header__title f-h1\">Jones SM, Wesley AB, <span class=\"title_default\">Food Allergy&nbsp; <br><a href=\"https://www.nejm.org/doi/full/10.1056/NEJMcp1611971?query=recirc_inIssue_bottom_article\" target=\"_blank\">N Engl Med J 2017;377:1168-76</a><br></span></p>\n</li>\n<li id=\"reference_17\"><span>Ansley L, Bonini M, Delgado L, Del Giacco S, Du Toit G et al Pathophysiological mechanisms of exercise-induced anaphylaxis: an EAACI position statement. <br><a href=\"https://www.ncbi.nlm.nih.gov/pubmed/26100553\" target=\"_blank\">Allergy 2015;70:1212&ndash;21</a>.</span></li>\n<li id=\"reference_18\">Commins SP, Satinover SM, Hosen J, Mozena J, Borish L, et al. Delayed anaphylaxis, angioedema, or urticaria after consumption of red meat in patients with IgE antibodies specific for galactose-alpha-1,3-galactose.<br> <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/19070355\" target=\"_blank\">J Allergy Clin Immunol. 2009 Feb;123:426-33</a>.</li>\n<li id=\"reference_19\">G&uuml;len T, Bj&ouml;rkander J. Insektsgiftallergi - diagnostiken kan vara sv&aring;r men bra behandling finns.<br><a href=\"http://www.lakartidningen.se/Klinik-och-vetenskap/Klinisk-oversikt/2016/08/Insektsgiftallergi--diagnostiken-kan-vara-svar-men-bra-behandling-finns/\" target=\"_blank\">L&auml;kartidningen 2016;113:D7CI</a>.</li>\n<li id=\"reference_20\">Bernstein JA, Lang DM, Khan DA, Craig T, Dreyfus D et al. The diagnosis and management of acute and chronic urticaria: 2014 update. <br><a href=\"https://www.ncbi.nlm.nih.gov/pubmed/24766875\" target=\"_blank\">J Allergy Clin Immunol. 2014;133;1270-77</a>.</li>\n<li id=\"reference_21\">National institute for health and care excellence (NICE). Drug allergy: diagnosis and management of drug allergy in adults, children and young people.<br> <a href=\"http://www.nice.org.uk/Guidance/CG183\" target=\"_blank\">NICE guidelines [CG183] 2014</a>&nbsp;</li>\n<li id=\"reference_22\">T&auml;ngd&eacute;n, T. Korsallergi mellan penicilliner och &ouml;vriga betalaktam&shy;antibiotika. Risken &auml;r betydligt mindre &auml;n man tidigare trott.<br> <a href=\"http://www.lakartidningen.se/Klinik-och-vetenskap/Klinisk-oversikt/2015/02/Korsallergi-mellan-penicilliner-och-ovriga-betalaktamantibiotika/\" target=\"_blank\">L&auml;kartidningen 2015;112:C9A4</a></li>\n<li id=\"reference_23\">Gottberg L, Penicillinallergi och andra reaktioner p&aring; antibiotika. <br><a href=\"http://www.janusinfo.se/Behandling/Strama-Stockholm/Vardprogram/Urinvagsinfektioner1/Penicillinallergi-och-andra-reaktioner-pa-antibiotika-/\" target=\"_blank\">Janusinfo 2016</a></li>\n<li id=\"reference_24\">Tilling B. Prim&auml;rv&aring;rden &ndash; f&ouml;rsta instans f&ouml;r att utreda allergier. Anamnesen avg&ouml;r hur omfattande utredning som b&ouml;r g&ouml;ras. <br><a href=\"http://www.lakartidningen.se/Klinik-och-vetenskap/Klinisk-oversikt/2016/04/Primarvarden--forsta-instans-for-att-utreda-allergier/\" target=\"_blank\">L&auml;kartidningen 2016;113:DWF6</a>.</li>\n<li id=\"reference_25\">Pricktest och specifikt IgE. Nilsson, Lennart; Nilsson, Caroline; Duchen, Karel; Jenmalm, Maria.<a href=\"https://svemedplus.kib.ki.se/Default.aspx?Dok_ID=147070\" target=\"_blank\"> Allergi i Praxis 2018; (1)20-5</a></li>\n<li id=\"reference_26\">Bolin E, Eduards M, Oscarson L,Persson &Aring;. Pricktest, ett metod och omv&aring;rdnadsdokument. P&aring; uppdrag av astma, allergi och KOL-sjuksk&ouml;terskef&ouml;reningen 2014. <br><a href=\"http://www.swenurse.se/contentassets/a4c721bf473847f8a187c5e3e14afcdf/pricktest-ett-metod-och-omvardnadsdokument.pdf\" target=\"_blank\">Svensk sjuksk&ouml;terskef&ouml;rening</a></li>\n<li id=\"reference_27\">Asarnoj A, Glauman S, Lilja G, Nilsson C et al. IgE antikroppar mot allergena komponenter. Sachsska barn- och ungdomssjukhuset,<br> <a href=\"http://www.barnallergisektionen.se/komponentdiagnostik2013.pdf\" target=\"_blank\">Karolinska sjukhuset 2013</a>.&nbsp;</li>\n<li id=\"reference_28\">Nopp A. Basofilaktiveringstestet CD-sens, den allergiske patienten i ett provr&ouml;r,<br> <a href=\"http://www.naaf.no/globalassets/x-gamle-bilder/documents/1.-allergi-i-praksis/1-2013/aip_1_2013_side30_34_cd-sens_nopp.pdf\" target=\"_blank\">Allergi i Praxis 2013;1</a></li>\n<li id=\"reference_29\">Brodtkorb TH, Zetterstr&ouml;m O, Tingh&ouml;g G. Cost-effectiveness of clean air administered to the breathing zone in allergic asthma. <br><a href=\"https://www.ncbi.nlm.nih.gov/pubmed/20565484\" target=\"_blank\">Clin Respir J. 2010 Apr;4(2):104-10</a>.</li>\n<li id=\"reference_30\">Bjermer L, Gottberg L, Werner S, Red Vihavainen H, Astma och allergi, handbok vid graviditet och amning. Stiftelsen Astma och allergif&ouml;rbundets forskningsfond 2009,<a href=\"http://media.allergiforskning.se/2014/10/Graviditet-och-amning.pdf\" target=\"_blank\"> <br>ISBN 978-91-978333-0-1</a>.</li>\n<li id=\"reference_31\">Produktmonografi Xolair, <a href=\"https://lakemedelsverket.se/malgrupp/Halso---sjukvard/Monografier-varderingar/Monografier-Humanlakemedel/Humanlakemedel-Arkiv/Xolair-omalizumab/\" target=\"_blank\">L&auml;kemedelsverket 2007</a>.</li>\n<li id=\"reference_32\">Nationella riktlinjer vid v&aring;rd av astma och Kroniskt obstruktiv lungsjkukdom, KOL, <br><a href=\"http://www.socialstyrelsen.se/nationellariktlinjerastmaochkol\" target=\"_blank\">Socialstyrelsen 2015</a></li>\n<li id=\"reference_33\">Allergenspecifik immunterapi, rekommendationer f&ouml;r l&auml;kare och sk&ouml;terskor 2009, <br><a href=\"http://www.sffa.nu/\" target=\"_blank\">Svenska f&ouml;reningen f&ouml;r allergolog</a></li>\n</ol>\n<p><span class=\"byline\"><span class=\"byline__text byline__text--noImg\"></span></span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "true"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/allergiska-och-immunologiska-tillstand/allergiska-och-immunologiska-tillstand.json",
+	"modified": "2018-06-18 09:09",
+	"isPublished": true,
+	"indexed": "true"
+}

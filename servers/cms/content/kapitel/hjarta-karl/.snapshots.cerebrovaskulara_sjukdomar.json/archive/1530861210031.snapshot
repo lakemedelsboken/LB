@@ -1,0 +1,1120 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Cerebrovaskulära sjukdomar | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-09 00:55",
+	"published": "2015-07-09 00:55",
+	"validUntil": "",
+	"createdBy": "Per Wester, Margareta Norberg",
+	"replacesUrl": "/e6_hja_cerebrovaskulara_2013fm10.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "d8dfebff-1362-4e0e-9422-71a0d70b20d6",
+			"name": "d8dfebff-1362-4e0e-9422-71a0d70b20d6",
+			"type": "author",
+			"content": {
+				"firstname": "Per",
+				"surname": "Wester",
+				"description": "Umeå Strokecenter,  Institutionen för folkhälsa och klinisk medicin, Umeå Universitet, Umeå och Institutionen för kliniska vetenskaper, Karolinska Institutet Danderyds sjukhus, Danderyd",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1c026216-2f14-4b32-ad68-2ec6c814e95e",
+			"name": "1c026216-2f14-4b32-ad68-2ec6c814e95e",
+			"type": "author",
+			"content": {
+				"firstname": "Margareta",
+				"surname": "Norberg",
+				"description": "Staben för verksamhetsutveckling, Västerbottens läns landsting och Epidemiologi och global hälsa, Institutionen för folkhälsa och klinisk medicin, Umeå universitet, Umeå",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "52dbc9a4-81f9-4d20-ba9b-296b2bcdf04d",
+			"name": "52dbc9a4-81f9-4d20-ba9b-296b2bcdf04d",
+			"type": "text",
+			"content": "<h1 id=\"e6_3\">Cerebrovaskul&auml;ra sjukdomar</h1>\n<h2 id=\"e6_4\">Inledning</h2>\n<p class=\"ingress\">Rekommendationer i detta avsnitt bygger p&aring;<a href=\"http://www.socialstyrelsen.se/Lists/Artikelkatalog/Attachments/20886/2018-3-11.pdf\" target=\"_blank\">&nbsp;<span style=\"color: #ff0000;\">Socialstyrelsens</span> <span style=\"color: #ff0000;\">n</span><span style=\"color: #ff0000;\">ationella riktlinjer f&ouml;r v&aring;rd vid stroke 2018 - St&ouml;d f&ouml;r styrning och ledning</span></a><span style=\"color: #ff0000;\"> (1)</span> samt<span style=\"color: #ff0000;\">&nbsp;<a href=\"https://www.socialstyrelsen.se/SiteCollectionDocuments/2018-6-28-nya-rekomendationer.pdf\" target=\"_blank\" style=\"color: #ff0000;\">Socialstyrelsens &ouml;versyn av nationella riktlinjer f&ouml;r hj&auml;rtsjukv&aring;rd 2018</a> (2)</span>. Begreppen stroke, slaganfall och cerebrovaskul&auml;ra sjukdomar (CVS) anv&auml;nds ofta synonymt. Den klassiska definitionen av CVS &auml;r bredare och innefattar &auml;ven transitorisk ischemisk attack (TIA), sinustrombos och asymtomatisk karotisstenos. De tv&aring; huvudtyperna av CVS &auml;r ischemiska tillst&aring;nd (hj&auml;rninfarkter och TIA) och bl&ouml;dningar (intracerebrala och subaraknoidala). F&ouml;r handl&auml;ggning av patienter med s&auml;llsynta former av cerebrovaskul&auml;ra sjukdomar h&auml;nvisas till speciallitteratur.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7644790b-403f-41ba-90f5-bb2b23eeaed6",
+			"name": "7644790b-403f-41ba-90f5-bb2b23eeaed6",
+			"type": "text",
+			"content": "<h2 id=\"e6_5\">Epidemiologi och prognos</h2>\n<p>Varje &aring;r insjuknar <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">drygt 30&nbsp;000</span></span> <span style=\"color: #ff0000;\">cirka 25 000 </span>svenskar i stroke, varav tre fj&auml;rdedelar &auml;r f&ouml;rstag&aring;ngsinsjuknanden och en fj&auml;rdedel &aring;terinsjuknanden. Uppskattningsvis drabbas ytterligare 10&nbsp;000 patienter &aring;rligen av TIA. Var 5:e kvinna och var 6:e man kommer n&aring;gon g&aring;ng under livet att drabbas av stroke. Som distriktsl&auml;kare med 2&nbsp;000 inv&aring;nare i sitt omr&aring;de inneb&auml;r detta att man under ett &aring;r har 5&ndash;6 patienter med akut insjuknande i stroke och 2 patienter med TIA. Stroke drabbar alla &aring;ldrar men &auml;r vanligare hos &auml;ldre: medel&aring;ldern vid insjuknandet &auml;r <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">76</span></span>&nbsp;<span style=\"color: #ff0000;\">75 </span>&aring;r (bland m&auml;n 73&nbsp;&aring;r och bland kvinnor 78&nbsp;&aring;r). <span style=\"color: #ff0000;\">F&ouml;r TIA &auml;r medel&aring;ldern 74 &aring;r (bland m&auml;n 72 &aring;r och bland kvinnor 74 &aring;r).&nbsp;</span> Subaraknoidalbl&ouml;dningar drabbar inte s&aring; s&auml;llan personer &lt;&nbsp;30 &aring;r, men risken &auml;r st&ouml;rst i &aring;ldrarna 50-60&nbsp;&aring;r. Cerebrovaskul&auml;ra sjukdomar st&aring;r f&ouml;r cirka 12&nbsp;% av alla d&ouml;dsfall i Sverige och &auml;r d&auml;rmed den 3:e vanligaste d&ouml;dsorsaken efter ischemisk hj&auml;rtsjukdom och alla former av cancer. Stroke st&aring;r f&ouml;r fler v&aring;rddagar p&aring; sjukhus och s&auml;rskilda boenden &auml;n n&aring;gon annan somatisk sjukdomsgrupp. Antalet v&aring;rddagar p&aring; sjukhus &auml;r n&auml;rmare en miljon medan prim&auml;rkommunal institutionsv&aring;rd efter stroke st&aring;r f&ouml;r &gt;&nbsp;2 miljoner v&aring;rddagar/&aring;r. Samh&auml;llets kostnader f&ouml;r stroke har ber&auml;knats till drygt 18 miljarder kr/&aring;r, anh&ouml;rigas v&aring;rdinsatser inte inkluderade. Risken att insjukna i stroke i Sverige har under de senaste 25&nbsp;&aring;ren minskat bland &auml;ldre (65&ndash;84-&aring;ringar) d&auml;r de flesta strokeinsjuknanden sker. En viss nedg&aring;ng noteras &auml;ven bland medel&aring;lders (45&ndash;64-&aring;ringar) medan stroke-incidensen hos yngre (18-44-&aring;ringar) successivt &ouml;kat b&aring;de bland kvinnor och m&auml;n. Den totala d&ouml;dligheten har sjunkit eftersom risken att avlida efter stroke minskat kraftigt, s&aring;v&auml;l p&aring; kort som p&aring; l&aring;ng sikt (4). Detta beror sannolikt p&aring; ett v&auml;l fungerande omh&auml;ndertagande under akutfasen p&aring; strokeenheter samt allt effektivare tidigt insatt sekund&auml;rprevention. Den enskilda prognostiska faktor som betyder mest f&ouml;r korttids&ouml;verlevnaden &auml;r medvetandegraden tidigt efter insjuknandet - 3&nbsp;m&aring;nader efter insjuknandet lever 90&nbsp;% av dem som &auml;r vakna n&auml;r de kommer till sjukhus, 50&nbsp;% av dem som &auml;r medvetandes&auml;nkta men v&auml;ckbara och endast 20&nbsp;% av dem som &auml;r komat&ouml;sa. M&auml;n och kvinnor har samma l&aring;ngtids&ouml;verlevnad efter slaganfall. &Aring;ldern spelar ocks&aring; en avg&ouml;rande roll f&ouml;r den l&aring;ngsiktiga &ouml;verlevnaden efter stroke. Av samtidiga sjukdomar inneb&auml;r framf&ouml;r allt hj&auml;rtsvikt d&aring;lig prognos, men ocks&aring; diabetiker har s&auml;mre l&aring;ngtids&ouml;verlevnad &auml;n andra strokepatienter. Risken f&ouml;r &aring;terinsjuknande efter stroke &auml;r i genomsnitt<span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\"> 5&ndash;15&nbsp;%</span></span> <span style=\"color: #ff0000;\">5-10&nbsp;% f&ouml;rsta &aring;ret och d&auml;refter mindre &auml;n 5&nbsp;% &aring;rligen <span style=\"text-decoration: line-through;\">per &aring;r</span></span>. Bland TIA-patienter &auml;r risken f&ouml;r insjuknande i stroke 10&nbsp;% inom 2&nbsp;dygn och 13&nbsp;% inom de f&ouml;rsta 7&nbsp;dygnen. TIA b&ouml;r med denna tidiga h&ouml;ga strokerisk betraktas som en malign men till stor del behandlingsbar sjukdom. Bland de som &ouml;verlever efter stroke tycker de flesta att livskvaliteten f&ouml;rs&auml;mras l&aring;ngsiktigt, men svenska kartl&auml;ggningar har visat att tre fj&auml;rdedelar av de patienter som &auml;r i livet 2&nbsp;&aring;r efter insjuknandet i stroke &auml;nd&aring; upplever sig ha n&aring;gorlunda tillfredsst&auml;llande livskvalitet.</p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a4d5591c-723d-427b-a1fc-9bfb7bf46d6a",
+			"name": "a4d5591c-723d-427b-a1fc-9bfb7bf46d6a",
+			"type": "text",
+			"content": "<h2 id=\"e6_6\">Riskbed&ouml;mning och prim&auml;rprevention</h2>\n<p>Risken att drabbas av stroke &auml;r multifaktoriell. M&aring;nga faktorer &auml;r inte p&aring;verkbara, till exempel &aring;lder, k&ouml;n och gener, eller endast p&aring;verkbara p&aring; en samh&auml;llsniv&aring;, till exempel socioekonomiska f&ouml;rh&aring;llanden. I Figur 1 ses ett urval av prim&auml;rpreventiva riskfaktorer med klart samband med stroke, vilka har stor betydelse f&ouml;r individen, alternativt f&ouml;r samh&auml;llet, samt &auml;r p&aring;verkbara. I och med att hypertoni &auml;r s&aring; vanligt f&ouml;rekommande i befolkningen &auml;r h&ouml;gt blodtryck ur ett befolkningsperspektiv den dominerande riskfaktorn f&ouml;r stroke, se Figur 1 h&ouml;gra diagrammet. Prim&auml;rpreventiva &aring;tg&auml;rder f&ouml;r stroke &auml;r till stor del gemensamma med de vid ischemisk hj&auml;rtsjukdom och perifer k&auml;rlsjukdom. Hur angel&auml;gna olika preventiva &aring;tg&auml;rder &auml;r beror till stor del p&aring; individens totala risk. I 201<span style=\"color: #ff0000;\">6</span>-&aring;rs uppdaterade version av Systematic Cardiovascular Risk Evaluating system (SCORE) (5) har en bred samling av europeiska vetenskapliga f&ouml;reningar tagit fram gemensamma riktlinjer f&ouml;r prim&auml;rpreventiv (men &auml;ven sekund&auml;rpreventiv) riskbed&ouml;mning vilka baseras p&aring; europeiska populationsbaserade studier och som inneh&aring;ller f&ouml;rslag till &aring;tg&auml;rder f&ouml;r att f&ouml;rhindra insjuknande i stroke, hj&auml;rtinfarkt och perifer k&auml;rlsjukdom. Tabell 1 visar en rangordningslista f&ouml;r prim&auml;rpreventiv riskbed&ouml;mning som man har lyft fram.</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "93be43e1-f135-4e9c-9f6b-53ec31839194",
+			"name": "93be43e1-f135-4e9c-9f6b-53ec31839194",
+			"type": "image",
+			"content": {
+				"image": "/images/e6_hja_cerebrovaskulara_2013fm10_images/bild_1_riskfaktorer_180706.png",
+				"alt": "",
+				"htmlbefore": "<h1>Bild 1.</h1>",
+				"htmlafter": "",
+				"maxwidth": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "58bf1513-75b9-4827-ae52-3b16d76c8d9c",
+			"name": "58bf1513-75b9-4827-ae52-3b16d76c8d9c",
+			"type": "text",
+			"content": "<p style=\"text-align: center;\">Bild 1. &Ouml;versta panelen: Risken f&ouml;r stroke &auml;r multifaktoriell vilket visas i den &ouml;vre delen av figuren. I den nedre delen visas i v&auml;nster diagram individens risk (Odds kvot), dvs individens relativa risk&ouml;kning vid f&ouml;rekomst av respektive riskfaktor. I h&ouml;ger diagram visas befolkningsrisk (populationstillskriven risk) vilket inneb&auml;r hur m&aring;nga procent i befolkningen som risken f&ouml;r stroke skulle minska om man helt kunde eliminera respektive riskfaktor. Hj&auml;rtsjukdom innefattar tidigare hj&auml;rtinfarkt, mitral-klaffvitium eller klaffprotes. Noterbart &auml;r regelbunden fysisk aktivitet och sunda matvanor med Odds kvot under 1,&nbsp; vilket inneb&auml;r minskad risk f&ouml;r stroke.&nbsp; Data &auml;r h&auml;mtade fr&aring;n Inter-Stroke-studien 2016 (ref) som innefattar n&auml;stan 27.000 individer med stroke och kontroll-individer fr&aring;n 32 l&auml;nder.</p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "76ed63c4-b014-4893-a1c6-f6ca74980b67",
+			"name": "76ed63c4-b014-4893-a1c6-f6ca74980b67",
+			"type": "tablewide",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"68475\"></a>Rangordningslista för <a class=\"index\" id=\"1064440\" data-text=\"cerebrovaskul&#xE4;ra sjukdomar:prim&#xE4;rpreventiv riskbed&#xF6;mning\"></a>primärpreventiv riskbedömning",
+				"id": "e6_8",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Risk</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>F&ouml;ruts&auml;ttning</strong></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Mycket h&ouml;g risk</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">En eller flera av f&ouml;ljande:</div>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">patienter med aktuell/genomg&aring;ngen hj&auml;rt-k&auml;rlsjukdom s&aring;som tidigare akut koro-</div>\r\n<div class=\"tableLine\">nart syndrom/PCI (ballongvidgning av kransk&auml;rl)/CABG (kransk&auml;rlsoperation), stroke</div>\r\n<div class=\"tableLine\">eller perifer arteriell k&auml;rlsjukdom samt fynd av aterosklerotiska<span style=\"text-decoration: line-through; color: #ff0000;\"> f&ouml;r&auml;ndringar</span> <span style=\"color: #ff0000;\">plaque </span>i stora</div>\r\n<div class=\"tableLine\">halsart&auml;rerna (karotis) <span style=\"color: #ff0000;\">eller kransk&auml;rlen</span></div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">diabetes mellitus (typ 1 eller 2) med ytterligare kardiovaskul&auml;r riskfaktor <span style=\"color: #ff0000;\">(r&ouml;kning, uttalad hyperkolestereolemi eller uttalad hypertoni)</span> eller <span style=\"color: #ff0000;\">m&aring;lorganp&aring;verkan (till exempel proteinuri)</span> <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">mikro-</span></span></div>\r\n<div class=\"tableLine\"><span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">albuminuri</span></span></div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">grav kronisk njursjukdom med GFR (glomerul&auml;r filtrationshastighet) &lt;&nbsp;30 ml/minut/</div>\r\n<div class=\"tableLine\">1,73&nbsp;m<sup>2</sup></div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">SCORE enligt diagram <span>&ge;</span>&nbsp;10&nbsp;% risk f&ouml;r d&ouml;d i kardiovaskul&auml;r sjukdom inom 10&nbsp;&aring;r.</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">H&ouml;g risk</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">En eller flera av f&ouml;ljande:</div>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">markant f&ouml;rh&ouml;jda niv&aring;er av enskilda riskfaktorer s&aring;som<span style=\"color: #ff0000;\"><span style=\"text-decoration: line-through;\"> familj&auml;r dyslipidemi</span> uttalad hyperlipidemi (totalkolesterol &gt;&nbsp;8 mmol/l)</span> och</div>\r\n<div class=\"tableLine\">uttalad hypertoni <span style=\"color: #ff0000;\">&nbsp;(&gt;&nbsp;180/100&nbsp;mmHg)</span></div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">diabetes mellitus (typ 1 eller 2) utan ytterligare kardiovaskul&auml;r riskfaktor eller m&aring;l-</div>\r\n<div class=\"tableLine\">organp&aring;verkan (till exempel <span style=\"color: #ff0000;\">proteinuri</span> <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">mikroalbuminuri</span></span>)</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">M&aring;ttlig kronisk njursjukdom med GFR 30&ndash;59&nbsp;ml/minut/1,73&nbsp;m<sup>2</sup></div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">SCORE enligt diagram 5&ndash;10&nbsp;% risk f&ouml;r d&ouml;d i kardiovaskul&auml;r sjukdom inom 10&nbsp;&aring;r.</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">M&aring;ttlig risk</div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">SCORE enligt diagram 1&ndash;4&nbsp;% risk f&ouml;r d&ouml;d i kardiovaskul&auml;r sjukdom inom 10&nbsp;&aring;r.</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">L&aring;g risk</div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">SCORE enligt diagram 0&nbsp;% risk f&ouml;r d&ouml;d i kardiovaskul&auml;r sjukdom inom 10 &aring;r.</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b183ca75-9b0c-4bc1-b0a1-026f0174339b",
+			"name": "b183ca75-9b0c-4bc1-b0a1-026f0174339b",
+			"type": "text",
+			"content": "<p class=\"\"><span> </span>SCORE-diagrammet baseras p&aring; k&ouml;n, &aring;lder, r&ouml;kning, systoliskt blodtryck och kolesterolniv&aring;, se figur 1 i kapitlet <a href=\"{pre}/kapitel/hjarta-karl/ischemisk_hjartsjukdom.html#e1_4\" target=\"_blank\">Ischemisk hj&auml;rtsjukdom</a>. <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">I 2012 &aring;rs version av SCORE lyfts ocks&aring; b</span></span><span style=\"color: #ff0000;\"> B</span>egreppet kardiovaskul&auml;r risk&aring;lder <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">fram</span></span> <span style=\"color: #ff0000;\">betonas</span>, vilket inneb&auml;r att en yngre individ med multipla riskfaktorer j&auml;mst&auml;lls riskm&auml;ssigt med en 60&ndash;65-&aring;ring med ideal riskfaktor<span style=\"color: #ff0000;\"><span style=\"color: #000000;\">profil.</span> F&ouml;r svenska f&ouml;rh&aring;llanden har ett SCORE-diagram 2015 tagits fram som b&auml;ttre avspeglar kardiovaskul&auml;r risk i Sverige (6).</span> SCORE-diagrammet kan anv&auml;ndas f&ouml;r att ge en fingervisning om effekten av f&ouml;r&auml;ndringar fr&aring;n en riskkategori till en annan, exempelvis n&auml;r patienten slutar r&ouml;ka. Se vidare kapitlet Ischemisk hj&auml;rtsjukdom, avsnittet Prevention. <span></span>F&ouml;r prim&auml;rpreventiv behandling av stroke g&auml;ller att ju st&ouml;rre risken &auml;r (h&ouml;g- versus l&aring;griskindivider) desto st&ouml;rre &auml;r angel&auml;genhetsgraden att &aring;tg&auml;rda respektive riskfaktor. Livsstilsf&ouml;r&auml;ndringar (r&ouml;kstopp, regelbunden fysisk aktivitet, kost med stort intag av frukt och gr&ouml;nsaker, begr&auml;nsat saltintag, undvikande av stora m&auml;ngder alkohol och stresshantering) &auml;r dock angel&auml;gna f&ouml;r alla personer oavsett risk. F&ouml;r detaljerad beskrivning av medikamentell prim&auml;rpreventiv behandling av hypertoni och hyperlipidemi h&auml;nvisas till respektive kapitel, Hypertoni, och Blodfettsrubbningar, samt referenserna (1,2,3,5,7,8). Sammanfattningsvis &auml;r f&ouml;rstahandsval vid okomplicerad m&aring;ttlig hypertoni hos h&ouml;griskindivider ACE-h&auml;mmare alternativt angiotensinreceptorblockerare (ARB), tiaziddiuretikum eller kalciumantagonist vilka dock ofta beh&ouml;ver kombineras f&ouml;r att uppn&aring; m&aring;lblodtryck. <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">Kostnaden f&ouml;r prim&auml;rpreventiv behandling med ARB har radikalt f&ouml;r&auml;ndrats under senare &aring;r sedan exklusiviteten/patenten g&aring;tt ut f&ouml;r flera l&auml;kemedel. TLV har dock i vissa fall beslutat om begr&auml;nsningar vad g&auml;ller subventioneringen.</span> </span>Vid samtidig takyarytmi, kransk&auml;rlssjukdom eller hj&auml;rtsvikt b&ouml;r betablockerare ges. Annars &auml;r betablockerare ett andrahandsval pga f&ouml;rh&aring;llandevis mindre effektiv strokeskyddande effekt. F&ouml;r individer med l&aring;g och m&aring;ttlig risk (SCORE-risk <span>&le;</span>&nbsp;4%) med m&aring;ttligt f&ouml;rh&ouml;jt blodtryck &auml;r intervention av livsstilsfaktorer mycket motiverad, se nationella riktlinjer fr&aring;n Socialstyrelsen om sjukdomsf&ouml;rebyggande metoder (tobak, alkohol, fysisk aktivitet och matvanor (9) samt europeiska motsvarande riktlinjer<span style=\"background-color: #ffffff;\"> (5).</span> Dessa b&ouml;r testas under en definierad v&auml;l tilltagen tid (1&nbsp;&aring;r) f&ouml;r att individen ska komma ner till m&aring;lblodtrycket, vanligen &lt;&nbsp;140/90&nbsp;mm&nbsp;Hg. Se kapitlet Hypertoni, avsnittet Icke-farmakologisk hypertonibehandling. Om individen, trots livsstilsf&ouml;r&auml;ndringar, inte n&aring;r m&aring;lblodtrycket blir antihypertensiv medikamentell behandling enligt ovanst&aring;ende ofta aktuell. En viktig uppgift f&ouml;r prim&auml;rv&aring;rden &auml;r att diagnostisera hypertoni och effektivt behandla patienter med diagnostiserad hypertoni ner till m&aring;lniv&aring;. Detta belyses av en svensk studie som visade att suboptimalt behandlad hypertoni, k&auml;nd men ej behandlad hypertoni samt diabetes var signifikanta riskfaktorer f&ouml;r stroke med h&auml;nsyn tagen till andra riskfaktorer, medan optimalt behandlad hypertoni inte kvarstod som riskfaktor (10). Indikationer f&ouml;r profylaktisk behandling med antikoagulantia vid f&ouml;rmaksflimmer &auml;r n&auml;rmare beskrivna i kapitlet <a href=\"{pre}/kapitel/hjarta-karl/hjartrytmrubbningar.html#e3_2\" target=\"_blank\">Hj&auml;rtrytmrubbningar</a>, avsnittet <a href=\"{pre}/kapitel/hjarta-karl/hjartrytmrubbningar.html#e3_49\" target=\"_blank\">F&ouml;rmaksflimmer och tromboembolism</a>. <span style=\"color: #ff0000;\">F&ouml;r uppdaterade behandlingsrekommendationer, se Socialstyrelsens hj&auml;rtriktlinjer 2018 (2). <span style=\"text-decoration: line-through;\">Hos h&ouml;griskindivider med kroniskt eller paroxysmalt f&ouml;rmaksflimmer reducerar perorala antikoagulantia den &aring;rliga risken fr&aring;n ca 5&nbsp;% till 1,8&nbsp;% (absolut riskreduktion 3,2&nbsp;%, NNT&nbsp;=&nbsp;31), vilket motiverar peroral warfarinbehandling. Nytta/riskkvot vid f&ouml;rmaksflimmer hos l&aring;griskindivider (CHADS2 = 0&nbsp;po&auml;ng och CHA2DS2-VASc = 0&ndash;1&nbsp;po&auml;ng) med l&aring;gdos ASA (75&ndash;320&nbsp;mg/dag) &auml;r starkt ifr&aring;gasatt (9). CHADS2- och CHA2DS2-VASc-po&auml;ng f&ouml;r ber&auml;kning av risk f&ouml;r tromboemboliska komplikationer &auml;r n&auml;rmare beskrivet i kapitlet Hj&auml;rtrytmrubbningar, avsnittet F&ouml;rmaksflimmer och tromboembolism.</span></span> <span style=\"color: #ff0000;\">Alla patienter med f&ouml;rmaksflimmer (paroxysmalt, persitent eller kroniskt) och f&ouml;rh&ouml;jd risk att drabbas av stroke (CHA2DS2 VASc &ge; 2 hos m&auml;n och &ge; 3 hos kvinnor) b&ouml;r behandlas med orala antikoagulantia (OAK). I f&ouml;rsta hand rekommenderas non-vitamin K orala antagonister (NOAK) f&ouml;re warfarin p&aring; grund av minskad risk f&ouml;r allvarliga bl&ouml;dningar, inklusive intrakraniella bl&ouml;dningar och &auml;ven minskad d&ouml;dlighet. Undantagna &auml;r patienter med mekanisk hj&auml;rtklaffprotes, mitralisstenos och gravt nedsatt njurfunktion d&auml;r endast warfarin ska ges.&nbsp; Trombocyth&auml;mmare ger avsev&auml;rt s&auml;mre strokeskydd &auml;n OAC men har lika h&ouml;g bl&ouml;dningsrisk och ska d&auml;rf&ouml;r inte ges p&aring; denna indikation (3).&nbsp;<span style=\"text-decoration: line-through;\">Trombinh&auml;mmaren (2) dabigatran respektive faktor X-h&auml;mmarna rivaroxaban och apixaban &auml;r godk&auml;nda f&ouml;r indikationen profylax mot ischemisk stroke och systemisk embolism hos h&ouml;griskindivider med f&ouml;rmaksflimmer (CHADS2 &ge;&nbsp;2). F&ouml;r dabigatran har man efterstr&auml;vat ett kontrollerat inf&ouml;rande p&aring; denna indikation vilket inneb&auml;r tills vidare strikt begr&auml;nsad f&ouml;rskrivning (2).</span></span> Se f&ouml;r &ouml;vrigt kapitlet <a href=\"{pre}/kapitel/hjarta-karl/hjartrytmrubbningar.html#e3_2\" target=\"_blank\">Hj&auml;rtrytmrubbningar</a>, Kapitlet <a href=\"{pre}/kapitel/blod/venos_tromboembolism_och_medel_mot_trombos.html#d2_3\" target=\"_blank\">Ven&ouml;s tromboembolism och medel mot trombos</a> samt avsnittet <a href=\"{pre}/kapitel/blod/venos_tromboembolism_och_medel_mot_trombos.html#d2_71\" target=\"_blank\">Profylax med de nya antikoagulantia</a> och Svenska s&auml;llskapet f&ouml;r Trombos och Hemostas <a href=\"Svenska s&#xE4;llskapet f&#xF6;r Trombos och Hemostas\" target=\"_blank\">hemsida</a> (11).</p>\n<h2 id=\"e6_9\"></h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3452866c-5769-47cc-937b-6a708dd3b7cf",
+			"name": "3452866c-5769-47cc-937b-6a708dd3b7cf",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"index\" id=\"1064450\" data-text=\"Ansikte-Kroppsdel-Uttal-Tid\"></a><a class=\"crossref\" id=\"70167\"></a>AKUT<sup>a</sup> (<a class=\"index\" id=\"1064445\" data-text=\"Ansikte-Kroppsdel-Uttal-Tid\"></a>Ansikte-Kroppsdel-Uttal-Tid)  – ett enkelt och bra stroketest! (12)",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><span class=\"tab\"></span>AKUT &auml;r ett test f&ouml;r att k&auml;nna igen stroke eller TIA hos andra personer.</p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Ansikte &ndash; Kan personen le eller &auml;r munnen sned?</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Kroppsdel &ndash; Kan personen h&aring;lla b&aring;da armarna utstr&auml;ckta?</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Uttal &ndash; Kan personen tala tydligt och f&ouml;rst&aring; vad du s&auml;ger?</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Tid &ndash; Om du ser n&aring;got av dessa tecken, ring 112 direkt!</li>\r\n</ul>\r\n<p>a. <span class=\"tab\"></span>AKUT &auml;r den svenska &ouml;vers&auml;ttningen av FAST (face-arm-speech-time). Diagnostisk tr&auml;ffs&auml;kerhet &auml;r 8 av 10 stroke&shy;patienter. Anv&auml;nds med f&ouml;rdel av ambulanssjukv&aring;rdare och befolkningen i allm&auml;nhet.</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "e6_11"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "be3a2af6-1f6f-4b57-8c09-c4f58e0bec6a",
+			"name": "be3a2af6-1f6f-4b57-8c09-c4f58e0bec6a",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"crossref\" id=\"75619\"></a><a class=\"index\" id=\"1040391\" data-text=\"stroketrombolyslarm\"></a>Stroketrombolyslarm<a class= href=\"#fnote_28\"><sup>a</sup></a> ",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p>(&rdquo;R&auml;dda hj&auml;rnan 112&rdquo; eller &rdquo;Stroke Alarm&rdquo;), dvs ambulanspersonal ringer trombolys&shy;jour p&aring; n&auml;rmaste sjukhus d&auml;r trombolysbehandling f&ouml;r patienter med stroke ges.</p>\r\n<p>Trombolyslarmet startas vid:</p>\r\n<p></p>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li class=\"nobullet\">Pl&ouml;tsligt p&aring;kommen svaghet i ansikte eller kroppsdel (arm, ben) eller pl&ouml;tslig afasi (AKUT-test)</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li class=\"nobullet\">Ber&auml;knad ankomst till <span style=\"color: #ff0000;\">n&auml;rmaste akutsjukhus</span> <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">akutmottagning</span> </span>inom 4&nbsp;timmar fr&aring;n symtomdebut.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Ambulanssjukv&aring;rdare kontaktar (ringer) ansvaig trombolysjour direkt.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Trombolysjouren beslutar om fortsatt trombo&shy;lyslarm.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Larm via v&auml;xeln med f&ouml;rvarning till r&ouml;ntgenavdelning och strokeenhet (eller motsvarande) att en patient &auml;r p&aring; v&auml;g.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Trombolysjouren inh&auml;mtar i m&aring;n av tid under p&aring;g&aring;ende intransport information via tidigare journaler och ambulanspersonal om kontraindikationer och aktuell vikt samt skriver r&ouml;ntgenremiss.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Ambulanspersonalen ger via delegerat ansvar/telefonordination antihypertensiv behandling om systoliskt blodtryck &gt;&nbsp;185&nbsp;mm Hg (till exempel injektion labetalol 10&nbsp;mg intraven&ouml;st).</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>N&auml;r patienten anl&auml;nder till sjukhus alternativt r&ouml;ntgenavdelning m&ouml;ter trombolysjouren upp patienten och kompletterar anamnes och g&ouml;r kortfattat status samt informerar patienten och/eller n&auml;rst&aring;ende.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Efter trombolysjourens uteslutande av kliniska och radiologiska kontraindikationer startas trombolysbehandling p&aring; r&ouml;ntgenavdelning.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Patienten &ouml;verf&ouml;rs d&auml;refter till strokeenhet eller motsvarande f&ouml;r fortsatt &ouml;vervakning.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"1\" class=\"footNotes\">\r\n<div class=\"tableFootnote\" id=\"fnote_28\">a. H&auml;r beskrivs en modifierad v&aring;rdkedja med direkttransport till r&ouml;ntgenavdelning d&auml;r trombolysbehandlingen startas <span style=\"text-decoration: line-through; color: #ff0000;\">(se exempelvis r&auml;dda hj&auml;rnan p&aring; <a href=\"http://www.vll.se/default.aspx?id=39427&amp;refid=40452\" target=\"_blank\" class=\"linkOut\" style=\"color: #ff0000; text-decoration: line-through;\">www.vll.se/am</a> bulans).</span> Med denna v&aring;rdkedja, av liknade modell som vid prim&auml;r PCI vid akut koronart syndrom, kan tidsf&ouml;rf&ouml;jningen p&aring; sjukhus (door-to-needle) minskas avsev&auml;rt. Ett realistiskt m&aring;l &auml;r att medianen f&ouml;r denna f&ouml;rdr&ouml;jning &auml;r mindre &auml;n 30&nbsp;minuter, det vill s&auml;ga att &aring;tminstone h&auml;lften av patienterna &auml;r handlagda inom denna tidsrymd. Noterbart &auml;r dock att vissa patienter med mer komplicerade samtidiga sjukdomar, mer oklar symtomatologi alternativt medicinsk instabilitet i regel fordrar ytterligare unders&ouml;kningar/provsvar med f&ouml;rdr&ouml;jd handl&auml;ggning som f&ouml;ljd.</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "e6_13"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "463faa51-a3f9-440a-9f4d-c2b2de6cf348",
+			"name": "463faa51-a3f9-440a-9f4d-c2b2de6cf348",
+			"type": "text",
+			"content": "<h2 id=\"e6_9\">Omh&auml;ndertagande prehospitalt och p&aring; akutsjukhus</h2>\n<p>Stroke &auml;r att betrakta som ett akut tillst&aring;nd av samma dignitet som akut hj&auml;rtinfarkt eller trauma. Det &auml;r angel&auml;get f&ouml;r de allra flesta patienter att komma till n&auml;rmaste sjukhus snarast. Cirka h&auml;lften av alla strokedrabbade f&ouml;rst&aring;r inte vad som h&auml;nt och en betydande andel v&auml;ljer att avvakta vid insjuknandet. En nationell 3-&aring;rig AKUT-strokekampanj p&aring; initiativ av Sveriges Regioner och Landsting p&aring;g&aring;r sedan h&ouml;sten 2011 d&auml;r <a href=\"https://www.1177.se/Uppsala-lan/Tema/Stroke/Att-fa-en-stroke/AKUT-test/\" target=\"_blank\">Ansikte-Kroppsdel-Uttal-Tid (AKUT)-testet</a>, se Faktaruta 1, lanseras s&aring;v&auml;l till allm&auml;nheten som sjukv&aring;rdspersonal (12) som ett enkelt och anv&auml;ndbart screeningtest f&ouml;r att uppt&auml;cka strokesymtom hos andra personer och omedelbart kalla p&aring; ambulans. Hos patienter som kan bli aktuella f&ouml;r trombolys initieras stroketrombolyslarm, se Faktaruta 2 f&ouml;r att minimera tiden fr&aring;n symtomdebut till start av behandling.<span></span><span> </span>Tid fr&aring;n symtomdebut till p&aring;b&ouml;rjad trombolysbehandling &auml;r en mycket stark prediktor f&ouml;r gynnsam behandlingseffekt. TID &Auml;R HJ&Auml;RNA! Varje moment i sjukhusens pre- och in-hospitala stroketrombolysv&aring;rdprogram b&ouml;r ses &ouml;ver f&ouml;r att s&auml;kerst&auml;lla adekvat diagnos av ischemisk stroke och minimera all tidsf&ouml;rdr&ouml;jning. Alla unders&ouml;kningar som inte &auml;r absolut n&ouml;dv&auml;ndiga kan v&auml;nta tills trombolysbehandling kommit ig&aring;ng. Detta inneb&auml;r att vid trombolyslarm kan EKG och fullst&auml;ndiga kem lab inkomstprover uppskjutas och tas f&ouml;rst efter trombolysstart vilket &auml;ven g&auml;ller kateter &agrave; demeure &ndash; KAD. Individuell bed&ouml;mning fordras dock om n&aring;got i anamnes eller status s&aring; kr&auml;ver, till exempel vid misst&auml;nkt koagulationsrubbning. Det &auml;r v&auml;sentligt att patienter med misst&auml;nkt stroke, oavsett m&ouml;jlig trombolysbehandling eller inte, unders&ouml;ks och handl&auml;ggs p&aring; sjukhus utan dr&ouml;jsm&aring;l. Detsamma g&auml;ller TIA-patienter. Alla patienter med misst&auml;nkt stroke samt de med TIA senaste dygnet transporteras l&auml;mpligen med ambulans. Det finns numera en nationell praxis som inneb&auml;r att personer som kontaktar sjukv&aring;rdsupplysningen 1177 vid misst&auml;nkt stroke eller TIA direkt&ouml;verkopplas till SOS Alarm 112 f&ouml;r vidare handl&auml;ggning. I m&aring;n av tid under ambulanstransporten till akutmottagning f&ouml;rbereds patienten l&auml;mpligen av ambulanssjukv&aring;rdare f&ouml;r att minska tidsf&ouml;rdr&ouml;jningen p&aring; akutmottagningen till ankomst till strokeenhet.</p>\n<p class=\"indent\"></p>\n<p class=\"indent\">Under ambulanstransporten unders&ouml;ks i m&aring;n av tid faktorer i f&ouml;ljande ordning:</p>\n<ol>\n<li>Vakenhet enligt Reaction Level Scale (RLS)</li>\n<li>AKUT-test (Ansikte-Kroppsdel-Uttal-Tid)</li>\n<li>Kapill&auml;rt P-glukos med korrigering vid behov</li>\n<li>Perifer syrgassaturation med oxygenbehandling om SaO<sub>2</sub> &lt;&nbsp;95%</li>\n<li>Blodtryck</li>\n<li>Intraven&ouml;s infart i vilken ges balanserad saltl&ouml;sning (exempelvis Ringer-Acetat) eller isoton natriumkloridl&ouml;sning (9&nbsp;mg/ml) (avst&aring; fr&aring;n glukosdropp f&ouml;r att undvika hyperglykemi som kan f&ouml;rv&auml;rra hj&auml;rnskadan)</li>\n<li>Temperatur (&ouml;ron)<br><br></li>\n</ol>\n<p>Cirka en fj&auml;rdedel av patienter med stroke eller TIA s&ouml;ker initialt p&aring; v&aring;rdcentral. Det &auml;r angel&auml;get att dessa patienter h&auml;nvisas akut med ambulans till n&auml;rmaste akutmottagning d&auml;r strokeenhetsv&aring;rd erbjuds. Denna praxis g&auml;ller patienter som insjuknat sista veckan medan patienter med TIA eller lindrig stroke som s&ouml;ker efter &gt;&nbsp;1 vecka i regel kan utredas polikliniskt inom prim&auml;rv&aring;rden eller p&aring; sjukhusens mottagningar, dock utan on&ouml;dig f&ouml;rdr&ouml;jning. Den st&ouml;rsta risken f&ouml;r &aring;terinsjuknande &auml;r d&aring; f&ouml;rbi. F&ouml;r &auml;ldre patienter med multipla sjukdomstillst&aring;nd, organsvikt och kognitiv neds&auml;ttning eller demens i s&auml;rskilda boenden uppr&auml;ttas l&auml;mpligen en handlingsplan ang&aring;ende att bo kvar vid en eventuell f&ouml;rs&auml;mring till f&ouml;ljd av exempelvis insjuknande i stroke. Detta grundar sig p&aring; patientens egen vilja och n&auml;rst&aring;endes synpunkter och anges i patientens journal. I dessa speciella fall v&auml;ger ansvariga v&aring;rdgivare den insjuknandes eventuella medicinska vinster i relation till risker med inremittering till sjukhus, se Faktaruta 3.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0eb75166-503b-487d-8b4e-37a6efb4cfde",
+			"name": "0eb75166-503b-487d-8b4e-37a6efb4cfde",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "<a class=\"index\" id=\"1040377\" data-text=\"cerebrovaskul&#xE4;ra sjukdomar:prim&#xE4;rv&#xE5;rd\"></a><a class=\"crossref\" id=\"48468\"></a>Primärvårdens roll",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>En patient med misst&auml;nkt stroke eller TIA som f&ouml;rst v&auml;nder sig till sjukv&aring;rdsupplysningen eller prim&auml;rv&aring;rden (via telefon) h&auml;nvisas akut till n&auml;rmaste sjukhus akutmottagning d&auml;r strokeenhetsv&aring;rd erbjuds.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Tidig identifiering av strokerelaterade symtom inom prim&auml;rv&aring;rden spelar en avg&ouml;rande roll f&ouml;r l&aring;ngtidsutfallet &ndash; patienten remitteras omedelbart av distriktsl&auml;kare med ambulanstransport till akutmottagning vid sjukhus d&auml;r strokeenhetsv&aring;rd erbjuds.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>F&ouml;r &auml;ldre multisjuka personer i s&auml;rskilda boenden bed&ouml;ms medicinska vinster i relation till risker med inremittering till sjukhus. Risk f&ouml;r f&ouml;rs&auml;mring i samband med transport och handl&auml;ggning p&aring; sjukhus och akutintag beaktas, liksom risken f&ouml;r f&ouml;rvirring i samband med fr&auml;mmande milj&ouml;er och ok&auml;nd personal.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "e6_15"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4e21cdba-e985-4d05-8478-99b95a956479",
+			"name": "4e21cdba-e985-4d05-8478-99b95a956479",
+			"type": "facts",
+			"content": {
+				"number": "4",
+				"title": "<a class=\"crossref\" id=\"94038\"></a>Typiska symtom<a class=\"tableFootnoteLink\" href=\"#fnote_30\"><sup>a</sup></a> vid insjuknande i <a class=\"index\" id=\"1040592\" data-text=\"stroke:symtom;TIA:symtom\"></a>stroke eller TIA är akut insjuknande med",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>pl&ouml;tslig svaghet, domningsk&auml;nsla eller f&ouml;rlust <br>av kontroll i ansikte, arm eller ben i ena sidan <br>av kroppen</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>pl&ouml;tslig f&ouml;rlust av talf&ouml;rm&aring;gan, sv&aring;righet att tala eller f&ouml;rst&aring; tal</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>pl&ouml;tslig dimsyn eller synf&ouml;rlust p&aring; ett eller b&aring;da &ouml;gonen<sup><a class=\"tableFootnoteLink\" href=\"#fnote_31\"><sup>b</sup></a></sup></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>pl&ouml;tslig och of&ouml;rklarlig yrsel<sup>b</sup>, ostadighet<sup>b</sup> <br>eller fall<sup>b</sup></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>pl&ouml;tslig sv&aring;righet att sv&auml;lja<sup>b</sup></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>pl&ouml;tslig, ovanlig och sv&aring;r huvudv&auml;rk.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"1\" class=\"footNotes\">\r\n<div class=\"tableFootnote\" id=\"fnote_30\">a. Som f&ouml;rsta stroke-screening anv&auml;nds l&auml;mpligen AKUT, se Faktaruta 1</div>\r\n<div class=\"tableFootnote\" id=\"fnote_31\">b. Som isolerade symtom &auml;r dessa ofta sv&aring;rtolkade, och inte sj&auml;lvklart CVS.</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": "e6_18"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "40f94a4c-4bb5-434c-aa46-db50167c46ef",
+			"name": "40f94a4c-4bb5-434c-aa46-db50167c46ef",
+			"type": "facts",
+			"content": {
+				"number": "5",
+				"title": "<a class=\"crossref\" id=\"13882\"></a>Typiska symtom vid insjuknande i <a class=\"index\" id=\"1058473\" data-text=\"subaraknoidalbl&#xF6;dning:symtom\"></a>subaraknoidalblödning",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Urakut ins&auml;ttande huvudv&auml;rk<sup><a class=\"tableFootnoteLink\" href=\"#fnote_33\"><sup>a</sup></a></sup> och/eller nack&shy;v&auml;rk (&rdquo;&aring;skknallsinsjuknande&rdquo;)</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Tecken p&aring; &ouml;kat intrakraniellt tryck med<br>medvetandes&auml;nkning och illam&aring;ende/<br>kr&auml;kning</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Nackstyvhet (ofta flera timmar efter <br>insjuknandet)</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"1\" class=\"footNotes\">\r\n<div class=\"tableFootnote\" id=\"fnote_33\">a. Kan utg&ouml;ra enda symtom som g&aring;r &ouml;ver efter n&aring;gra tim&shy;mar, men &aring;tf&ouml;ljs efter timmar eller dagar av ett drama&shy;tiskt insjuknande, d&auml;rav termen &rdquo;varningsbl&ouml;dning&rdquo;.</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "e6_20"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ae1d026e-1f06-47b1-bff8-3b5c07e37f27",
+			"name": "ae1d026e-1f06-47b1-bff8-3b5c07e37f27",
+			"type": "facts",
+			"content": {
+				"number": "6",
+				"title": "<a class=\"crossref\" id=\"41852\"></a>De viktigaste differential- diagnoserna vid <a class=\"index\" id=\"1058508\" data-text=\"stroke:differentialdiagnoser;TIA:differentialdiagnoser\"></a>stroke/TIA ",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Fokalt (partiellt) epileptiskt krampanfall med <br>efterf&ouml;ljande Todds paralys</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Utrymmeskr&auml;vande hj&auml;rnlesion<br>&ndash; hj&auml;rntum&ouml;r<br>&ndash; traumatisk hj&auml;rnbl&ouml;dning (subdural-/epidural-bl&ouml;dning)</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Metabol rubbning, infektion <br>&ndash; hypoglykemi<br>&ndash; sepsis</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Perifer nervpares</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">Herpesencefalit</span></span><span style=\"color: #ff0000;\"> Encefalit, meningit<br></span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Migr&auml;n</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Psykogena bortfall</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": "e6_22"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c1ff1d17-ade4-4c28-9a7c-6cd6d73d19d7",
+			"name": "c1ff1d17-ade4-4c28-9a7c-6cd6d73d19d7",
+			"type": "facts",
+			"content": {
+				"number": "7",
+				"title": "<a class=\"crossref\" id=\"75201\"></a>Anamnes vid misstänkt stroke ",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Tidpunkt f&ouml;r insjuknandet</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Insjuknandes&auml;tt och symtom <br>&ndash; Vad gjorde patienten vid symtomdebut?<br>&ndash; <span class=\"tab\"></span>Typ av symtom, sv&aring;righetsgrad och eventuell fluktuering<br>&ndash; <span class=\"tab\"></span>Trauma eller epilepsi vid insjuknandet?</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Tidigare/kvarvarande fokalneurologiska<br>symtom</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Kardiovaskul&auml;ra riskfaktorer<br>&ndash; <span class=\"tab\"></span>livsstil (r&ouml;kning, fysisk aktivitet, kost, alkohol, stress)<br>&ndash; ischemisk hj&auml;rtsjukdom/f&ouml;rmaksflimmer/hj&auml;rtsvikt/hj&auml;rtklaffprotes<br>&ndash; <span class=\"tab\"></span>hypertoni<br>&ndash; <span class=\"tab\"></span>diabetes<br>&ndash; perifer k&auml;rlsjukdom</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Andra tidigare/nuvarande sjukdomar</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Aktuell medicinering</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Allergi</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Sociala f&ouml;rh&aring;llanden</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Funktionsf&ouml;rm&aring;ga f&ouml;re insjuknandet</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": "e6_24"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d23975af-4c56-4e1c-90f8-019094258276",
+			"name": "d23975af-4c56-4e1c-90f8-019094258276",
+			"type": "text",
+			"content": "<h3 id=\"e6_16\">Symtom, diagnostik och differentialdiagnostik</h3>\n<p>Det &auml;r angel&auml;get att den l&auml;kare som f&ouml;rst tar hand om patienten, p&aring; akutsjukhuset eller i prim&auml;rv&aring;rden, &auml;r observant p&aring; strokerelaterade symtom &auml;ven i den stora m&auml;ngden av patienter med mer godartade symtom. Typiska symtom vid stroke/TIA, inklusive de vid subaraknoidalbl&ouml;dning, framg&aring;r i Faktaruta 4 och Faktaruta 5 och de viktigaste differentialdiagnoserna framg&aring;r i Faktaruta 6. <span style=\"color: #ff0000;\">Ett strokeinriktat neurologstatus (NIHSS) anv&auml;nds p&aring; de flesta svenska strokeenheterna; en instruktionsfilm med beskrivning av utf&ouml;rande finns <a href=\"http://neurophys.gu.se/nihss\" target=\"_blank\">h&auml;r.</a></span></p>\n<p><span> </span><span> </span><span> </span></p>\n<p>Stroke-mimics, det vill s&auml;ga strokeliknande symtom, &auml;r vanligare hos den som</p>\n<ul>\n<li>har kognitionsneds&auml;ttning sedan tidigare</li>\n<li>har svimmat</li>\n<li>har haft krampanfall i samband med insjuknandet</li>\n<li>har lindriga neurologiska bortfallssymtom, till exempel k&auml;nselneds&auml;ttning i en del av extremitet eller l&auml;tt dysartri</li>\n<li>saknar ensidiga (lateraliserade) symtom</li>\n<li>saknar fokalneurologiska symtom</li>\n<li>andra organsystem som vid exempelvis sepsis, hypoglykemi.</li>\n</ul>\n<p>Epilepsi kan vara en sv&aring;r differentialdiagnos &ndash; diagnosen bygger fr&auml;mst p&aring; tidigare och aktuell anamnes. Symtom vid hj&auml;rntum&ouml;r utvecklas vanligen under veckor/m&aring;nader, men kan debutera med akuta symtom till f&ouml;ljd av en bl&ouml;dning eller ischemi i tum&ouml;ren. Metabola rubbningar och cerebrala infektioner kan ge fokalneurologiska symtom. Detta &auml;r speciellt vanligt hos patienter som tidigare haft restsymtom fr&aring;n stroke och vars symtom inom samma k&auml;rlterritorium kommer igen eller f&ouml;rv&auml;rras. Isolerade symtom i form av yrsel, balanssv&aring;righeter, dubbelseende, dysfagi, pl&ouml;tslig medvetandef&ouml;rlust eller transitorisk global amnesi kan bero p&aring; stroke, men &auml;r alltf&ouml;r ospecifika f&ouml;r att som enskilda symtom kvalificera f&ouml;r stroke/TIA. I Faktaruta 7 anges uppgifter f&ouml;r att s&auml;kerst&auml;lla adekvat stroke-/TIA-diagnostik.<span> </span>Ut&ouml;ver anamnes och status, speciellt inriktad p&aring; hj&auml;rta, k&auml;rl och neurologi, genomf&ouml;rs i akutskedet datortomografi (DT), d&auml;r intracerebrala bl&ouml;dningar ses direkt. Detta g&auml;ller &auml;ven vid subaraknoidalbl&ouml;dningar om unders&ouml;kningen g&ouml;rs inom det f&ouml;rsta dygnet efter symtom, d&auml;refter minskar sensitiviteten avsev&auml;rt. Vid &aring;skknallshuvudv&auml;rk som enda symtom vid klinisk misstanke om subaraknoidalbl&ouml;dning (SAB) och normalfynd vid DT hj&auml;rna, av god teknisk kvalitet gjord inom 6 timmar fr&aring;n symtomdebut, som tolkats av radiolog med erforderlig kompetens, utesluter denna unders&ouml;kning SAB (13). Om mer &auml;n 6 timmar f&ouml;rflutit sedan symtomdebut och DT visar normalfynd g&ouml;rs lumbalpunktion med unders&ouml;kning av cerebrospinalv&auml;tskan. Vid misstanke om hj&auml;rntum&ouml;r sk&auml;rps diagnostiken med<span style=\"color: #ff0000;\">&nbsp;MR med olika avbildningar och MR-angiofi eller</span> kontrastf&ouml;rst&auml;rkt DT efter 4-6&nbsp;veckor d&aring; blodet resorberats. Vid cerebral ischemi ses ofta inga eller endast diskreta fynd om unders&ouml;kningen g&ouml;rs tidigt efter insjuknandet. F&ouml;rnyad DT efter n&aring;gra dagar f&ouml;r att visualisera den ischemiska lesionen p&aring;verkar i regel inte handl&auml;ggningen och &auml;r d&auml;rf&ouml;r s&auml;llan motiverad. Vid sv&aring;rbed&ouml;mda tillst&aring;nd <span style=\"color: #ff0000;\"><span style=\"text-decoration: line-through;\">s&auml;rskilt om annan diagnos &auml;n stroke misst&auml;nks kan,</span> med differentialdiagnostiska sv&aring;righeter b&ouml;r</span> unders&ouml;kning med magnetkamera med<span style=\"color: #ff0000;\">&nbsp;olika avbildningar inklusive </span>diffusion<span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\"> ge ytterligare information</span></span> <span style=\"color: #ff0000;\">g&ouml;ras</span>. Lumbalpunktion med unders&ouml;kning av cerebrospinalv&auml;tska kan ocks&aring;, f&ouml;rutom vid diagnostik av SAB, vara till hj&auml;lp vid differentialdiagnostiska sv&aring;righeter, exempelvis vid misstanke om cerebral infektion. <span style=\"color: #ff0000;\">DT-angiografi som l&auml;mpligen g&ouml;rs i direkt anslutning till f&ouml;rsta datortomografin visualiserar b&aring;de intra- och extra-kraniella k&auml;rl. Fynd av ocklusion eller subocklusion av hj&auml;rnans stora k&auml;rl medf&ouml;r att trombektomi kan bli aktuell, se Terapirekommendation 2. DT-angiografi p&aring;visar &auml;ven f&ouml;rekomst av karotisstenos varvid komplettering med ultraljud g&ouml;rs inf&ouml;r eventuell karotiskirurgi.&nbsp;</span><span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">Ultraljudsunders&ouml;kning av halsk&auml;rl avg&ouml;r om det finns en signifikant karotisstenos. Vid tekniska problem, till exempel ekoskugga, g&ouml;rs komplettering l&auml;mpligen med MR&nbsp;eller DT-angiografi som har ersatt selektiv karotisangiografi.</span></span> Ekokardiografi g&ouml;rs som riktad unders&ouml;kning vid misstanke om &aring;tg&auml;rdbar kardiell &aring;komma, men &auml;r inte motiverad som allm&auml;n screening efter stroke. Vid stroke hos unga<span style=\"color: #ff0000;\"> utan annan p&aring;visbar orsak till aktuellt stroke</span> finns dock st&ouml;rre anledning att utf&ouml;ra <span style=\"color: #ff0000;\">transesofagal </span>ekokardiografi<span style=\"text-decoration: line-through; color: #ff0000;\">, helst transesofagealt</span>. Ett inte helt ovanligt fynd hos dessa yngre &auml;r kombinationen av &ouml;ppetst&aring;ende foramen ovale <span style=\"text-decoration: line-through; color: #ff0000;\">och</span> <span style=\"color: #ff0000;\">(PFO) med h&ouml;ger-v&auml;nster shunt eller PFO med </span>f&ouml;rmaksseptumaneurysm&nbsp;<span style=\"color: #ff0000;\">medf&ouml;r att endovaskul&auml;r slutning av PFO b&ouml;r &ouml;verv&auml;gas (1).&nbsp;</span> <span style=\"text-decoration: line-through; color: #ff0000;\">, som i sig inneb&auml;r en allvarlig prognos och d&auml;r antikoagulantiabehandling ofta v&auml;ljs.</span></p>\n<h3 id=\"e6_25\"></h3>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "04f1ed3c-8696-468d-be79-c63a4bbd0c5e",
+			"name": "04f1ed3c-8696-468d-be79-c63a4bbd0c5e",
+			"type": "facts",
+			"content": {
+				"number": "8",
+				"title": "<a class=\"crossref\" id=\"91207\"></a>Vårdorganisation ",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>V&aring;rd p&aring; strokeenhet minskar d&ouml;dlighet, funktionsberoende och behov av institutions&shy;v&aring;rd.</li>\r\n<li>Direktinl&auml;ggning p&aring; strokeenhet, det vill s&auml;ga strokeenhet som f&ouml;rsta v&aring;rdinstans, &auml;r starkt motiverat</li>\r\n<li><span class=\"tab\"></span>De positiva effekterna av strokeenheter g&auml;ller samtliga strokedrabbade oavsett &aring;lder, k&ouml;n och slaganfallets sv&aring;righetsgrad.</li>\r\n<li><span class=\"tab\"></span>V&aring;rd p&aring; strokeenhet j&auml;mf&ouml;rt med v&aring;rd p&aring; van&shy;lig v&aring;rdavdelning medf&ouml;r inte f&ouml;rl&auml;ngd v&aring;rd&shy;tid p&aring; sjukhus.<span class=\"tab\"></span></li>\r\n<li>En obruten v&aring;rdkedja p&aring; sjukhus p&aring; en stroke&shy;enhet &auml;r gynnsam.<span class=\"tab\"></span></li>\r\n<li>Mobila stroketeam, dvs strokepatienter v&aring;rdas p&aring; vanlig v&aring;rdavdelning och sk&ouml;ts av ambule&shy;rande team fr&aring;n strokeenhet, har inte visats ha positiva effekter.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "e6_27"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0530b12c-4ba6-4b7e-b6f7-278f3d4ea6f7",
+			"name": "0530b12c-4ba6-4b7e-b6f7-278f3d4ea6f7",
+			"type": "facts",
+			"content": {
+				"number": "9",
+				"title": "<a class=\"index\" id=\"1040943\" data-text=\"strokeenhet\"></a><a class=\"crossref\" id=\"88870\"></a>Strokeenhet – definition",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>&Auml;r en geografiskt identifierbar enhet <br>p&aring; ett sjukhus, det vill s&auml;ga den har en hel eller definierad del av en v&aring;rdavdelning som fungerar som strokeenhetens bas, d&auml;r man enbart (eller n&auml;stan enbart) tar hand om patienter med stroke.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Har personal med expertkunnande inom stroke och rehabilitering. Exempel p&aring; detta &auml;r &aring;terkommande utbildningsprogram med strokekompetensbevis som erh&aring;lls efter godk&auml;nd, genomg&aring;ngen kurs.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Best&aring;r av ett multidisciplin&auml;rt team som har m&ouml;ten minst 1 g&aring;ng/vecka. Teamet innefattar l&auml;kare, sjuksk&ouml;terska, undersk&ouml;terska, sjukgymnast, arbetsterapeut, kurator och logoped samt tillg&aring;ng till dietist och psykolog eller psykiater.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Ger detaljerad information och utbildar pati&shy;enten och n&auml;rst&aring;ende under v&aring;rdtiden p&aring; strokeenheten.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Har ett fastst&auml;llt program f&ouml;r registrering och &aring;tg&auml;rder av vanliga problem f&ouml;r att undvika och i f&ouml;rekommande fall snabbt &aring;tg&auml;rda medicinska och andra komplikationer.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Startar omedelbart med mobilisering och tidig rehabilitering av patienten.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span style=\"color: #ff0000;\">Strokehemrehabilitering (early supported discharge):</span> Tidig utskrivning till hemmet med specialutbildat multidisciplin&auml;rt hemrehabiliteringsteam <span style=\"color: #ff0000;\">som koordinerar utskrivningen fr&aring;n strokeenheten och sk&ouml;ter fortsatt rehabilitering i patientens hem</span><span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\"> knutet till strokeenhet</span> </span>medf&ouml;r f&ouml;rkortad v&aring;rdtid p&aring; sjukhus och minskat funktionsberoende hos <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">utvalda</span></span> strokepatienter med lindriga till m&aring;ttliga symtom.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td></td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "e6_29"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e1dc4e75-b4e3-4c83-b6e0-bb05f61a1067",
+			"name": "e1dc4e75-b4e3-4c83-b6e0-bb05f61a1067",
+			"type": "text",
+			"content": "<h3 id=\"e6_25\">V&aring;rd p&aring; strokeenhet</h3>\n<p>V&aring;rd p&aring; strokeenhet &auml;r en effektiv v&aring;rdform och utg&ouml;r basen f&ouml;r omh&auml;ndertagandet av samtliga patienter med stroke, se Faktaruta 8.<span style=\"color: #ff0000;\"> Direktinl&auml;ggning p&aring; strokeenhet, det vill s&auml;ga strokeenhet som f&ouml;rsta v&aring;rdinstans &auml;r starkt motiverat</span>. V&aring;rd p&aring; en v&auml;lfungerande strokeenhet inneb&auml;r bland annat att man f&ouml;rebygger, tidigt uppt&auml;cker och &aring;tg&auml;rdar vanliga <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">sekund&auml;r</span></span> <span style=\"color: #ff0000;\">tidiga </span>komplikationer. Exempel p&aring; s&aring;dana &auml;r symtomprogress, pneumoni, djup ventrombos, lungemboli, sv&auml;ljningsproblem, nutritionsproblem, trycks&aring;r, konfusion och fallolyckor. Prevention, tidig uppt&auml;ckt och &aring;tg&auml;rd av dessa ligger sannolikt till stor del bakom de positiva effekterna av strokeenhetsv&aring;rd med minskad d&ouml;dlighet, minskad funktionsneds&auml;ttning och minskat behov av institutionsv&aring;rd. <span></span>Strokeenheter definieras utifr&aring;n vissa kriterier, se Faktaruta 9. Mobila stroketeam har inga gynnsamma effekter j&auml;mf&ouml;rt med v&aring;rd p&aring; en vanlig v&aring;rdavdelning och kan d&auml;rf&ouml;r inte ers&auml;tta strokeenheter. En obruten v&aring;rdkedja p&aring; strokeenheten b&ouml;r efterstr&auml;vas.&nbsp;<span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000;\">Samtliga</span></span><span style=\"color: #ff0000;\"> De flesta</span> svenska sjukhus som v&aring;rdar strokepatienter under akutfasen har numera strokeenheter. Tillg&auml;ngligheten, det vill s&auml;ga hur stor andel&nbsp;<span style=\"color: #ff0000;\">som l&auml;ggs in direkt</span> som f&aring;r plats p&aring; strokeenheter &ouml;verhuvudtaget eller bara under en del av v&aring;rdtiden, varierar dock. Mycket korta v&aring;rdtider p&aring; strokeenhet utan direkt uppf&ouml;ljning p&aring; strokeinriktad rehabiliteringsavdelning kan &auml;ventyra strokeenhetens positiva effekt.</p>\n<p><span> </span></p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "962b9247-33b2-4a2f-90bc-e15e837465f3",
+			"name": "962b9247-33b2-4a2f-90bc-e15e837465f3",
+			"type": "text",
+			"content": "<h3 id=\"e6_30\">Trombolysbehandling</h3>\n<p>Trombolysbehandling vid ischemisk stroke &auml;r en hyperakut behandling d&auml;r det &auml;r avg&ouml;rande att till l&auml;mplig patient minimera varje minuts tidsf&ouml;rdr&ouml;jning till behandlingsstart, s&aring;v&auml;l utanf&ouml;r som inom sjukhuset, se Terapirekommendation 1 och &auml;ven Terapirekommendation 3, annan medicinsk behandling under akutfasen. Trombolysbehandling intraven&ouml;st med t-PA ges vid ischemisk stroke inom s&aring;v&auml;l bakre som fr&auml;mre cirkulationen oavsett om genesen &auml;r kardiell emboli, stork&auml;rlssjukdom, lakun&auml;r infarkt<span style=\"color: #ff0000;\"> eller kryptogen ischemisk stroke</span> (14). Stroketrombolys finns tillg&auml;nglig p&aring; samtliga av landets sjukhus som handl&auml;gger strokepatienter under akutfasen. Vid en del <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">mindre</span> </span>sjukhus omdirigeras <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">under</span></span> vissa<span style=\"text-decoration: line-through; color: #ff0000;\"> tider </span>m&ouml;jliga stroketrombolyspatienter i ambulans till n&auml;rliggande sjukhus d&auml;r denna behandling ges. Andelen trombolysbehandlade patienter &ouml;kar successivt &aring;r fr&aring;n &aring;r och p&aring; vissa sjukhus f&aring;r 15&ndash;25&nbsp;% av ischemiska strokepatienter trombolysbehandling, medan man vid m&aring;nga sjukhus endast behandlar n&aring;gra enstaka patienter. En huvudorsak till att f&aring; patienter blir trombolysbehandlade &auml;r att patienterna s&ouml;ker f&ouml;r sent. Stroketrombolys st&auml;ller en del organisatoriska krav, framf&ouml;r allt behov av omedelbart prehospitalt omh&auml;ndertagande med v&aring;rdprogram som inbegriper hela akuta v&aring;rdkedjan, se Faktaruta 2. Stroketrombolys &auml;r en effektiv behandling men potentiellt farlig.</p>\n<div class=\"clearfix\"><span></span></div>\n<div class=\"clearfix\"><span></span><span></span>Behandling inom 4,5&nbsp;timmar medf&ouml;r minskad risk f&ouml;r d&ouml;d eller aktivitetsneds&auml;ttning. Riskminskningen &auml;r fr&aring;n 60 till 50&nbsp;%, absolut riskreduktion (ARR) 10 %, NNT = 10 vid behandling inom 3&nbsp;timmar och fr&aring;n 52&nbsp;% till 45&nbsp;%, absolut riskreduktion 7&nbsp;%, NNT&nbsp;=&nbsp;14 vid behandling insatt vid 3-4,5 timmar (15). Drygt h&auml;lften av behandlade patienter uppvisar en klar f&ouml;rb&auml;ttring n&auml;rmaste timmarna efter insatt behandling. Trombolysbehandling har en gynnsam effekt p&aring; sammanlagda effektm&aring;ttet funktionsberoende eller d&ouml;d. Det finns en &ouml;kad risk f&ouml;r allvarlig symtomgivande hj&auml;rnbl&ouml;dning. Denna risk &auml;r dock inte st&ouml;rre vid behandling 3-4,5 timmar j&auml;mf&ouml;rt med trombolys given inom 0&ndash;3&nbsp;timmar. Den gynnsamma effekten av intraven&ouml;st givet t-PA (alteplas) vid 3-4,5&nbsp;timmar efter symtomdebut &auml;r klart mindre j&auml;mf&ouml;rt med tidigare insatt behandling. Det finns d&auml;rf&ouml;r inte n&aring;got fog f&ouml;r att dr&ouml;ja med insatt behandling &auml;ven om &rdquo;tid finns kvar upp till 4,5 timmar&rdquo;. Det &auml;r mycket viktigt att stroketrombolys ges vid r&auml;tt indikation, det vill s&auml;ga att man vare sig undanh&aring;ller dem som efter genomg&aring;ng av indikation/kontraindikation &auml;r l&auml;mpliga eller att man behandlar patienter utanf&ouml;r givna indikationer. V&auml;sentligt &auml;r d&auml;rf&ouml;r att s&aring;v&auml;l behandlande l&auml;kare och r&ouml;ntgenl&auml;kare har kompetens f&ouml;r denna <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">nya</span> </span>behandling.<span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">sindikation. Eftersom stroketrombolysbehandlingen i Sverige inf&ouml;rts p&aring; bred front, &auml;ven p&aring; st&auml;llen utan tidigare erfarenhet av denna, &auml;r det mycket angel&auml;get att varje sjukhus f&ouml;ljer upp sina resultat genom registrering i kvalitetsregister (t&nbsp;ex Riks-Stroke eller Safe Implementation of Thrombolysis in Stroke, SITS). I produktresum&eacute;/Fass respektive Socialstyrelsens strokeriktlinjer fr&aring;n 2009 anges att patienter &gt;&nbsp;80 &aring;r inte &auml;r aktuella f&ouml;r stroketrombolys.</span><span style=\"color: #ff0000; text-decoration: line-through;\"> I den randomiserade studien IST-3 (International Stroke Trial-3 (15)) samt i efterf&ouml;ljande systematiska &ouml;versikt och metaanalys (16) &auml;r</span></span></div>\n<div class=\"clearfix\"><span style=\"color: #ff0000;\">Trombolysbehandling hos patienter &gt; 80 &aring;r har minst lika gynnsam effekt som hos yngre individer. Detta baseras p&aring; en metaanalys av individuella patientdata fr&aring;n 9 randomiserade studier med 6576 personer med ischemisk stroke</span><span style=\"color: #ff0000;\"> som ocks&aring; st&ouml;ds av en systematisk Cochrane-&ouml;versikt (16</span><span style=\"color: #ff0000;\">)</span>.<span style=\"color: #ff0000;\"></span><br><span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">Vid basilaristrombos saknas data fr&aring;n randomiserade studier &ndash; observationsstudier tyder dock p&aring; att intraven&ouml;s t-PA-behandling upp till 6 timmar fr&aring;n symtomdebut har liknande effekt som vid lokal intraarteriell trombolysbehandling och kan d&auml;rmed utg&ouml;ra ett alternativ i selekterade fall.</span></span></div>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a84c2976-19f8-4f4e-8611-99bf9a491bed",
+			"name": "a84c2976-19f8-4f4e-8611-99bf9a491bed",
+			"type": "therapy",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"12357\"></a>Trombolysbehandling vid ischemisk <a class=\"index\" id=\"1032221\" data-text=\"stroke:trombolys\"></a>stroke",
+				"id": "e6_31",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Behandling ges inom</div>\r\n<div class=\"tableLine\">4,5&nbsp;timmar fr&aring;n symtom-</div>\r\n<div class=\"tableLine\">debut (om avsaknad av</div>\r\n<div class=\"tableLine\">kontraindikationer en-</div>\r\n<div class=\"tableLine\">ligt produktresum&eacute;/Fass<a class=\"tableFootnoteLink\" href=\"#fnote_39\"><sup>a</sup></a>)</div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Patienter med ischemisk stroke, inom s&aring;v&auml;l fr&auml;mre som bakre cirkulationen,</div>\r\n<div class=\"tableLine\">orsakad av kardiell emboli, stork&auml;rlssjukdom, lakun&auml;r infarkt&nbsp;<span style=\"color: #ff0000;\">eller kryptogen ischemisk stroke</span> &auml;r l&auml;mpliga.</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">t-PA (alteplas) 0,9&nbsp;mg/kg kroppsvikt intraven&ouml;st. 10&nbsp;% av t-PA-dosen ges som</div>\r\n<div class=\"tableLine\">bolusdos under 1&ndash;2 minuter och resterande del under 60&nbsp;minuter.</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">ASA <span style=\"color: #ff0000;\">och andra trombocyth&auml;mmare </span>undviks och s&auml;tts in f&ouml;rst efter 24&ndash;48&nbsp;timmar. Om patienten redan st&aring;r p&aring;</div>\r\n<div class=\"tableLine\">ASA/annan trombocyth&auml;mmare utg&ouml;r detta dock inte en kontraindikation.</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Vanliga orsaker till att</div>\r\n<div class=\"tableLine\">patienter inte erbjuds</div>\r\n<div class=\"tableLine\">trombolysbehandling</div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">&gt;&nbsp;4,5 timmar fr&aring;n symtomdebut</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Lindriga symtom eller snabb symtomf&ouml;rb&auml;ttring. Notera dock att en patient</div>\r\n<div class=\"tableLine\">som har b&ouml;rjat f&ouml;rb&auml;ttras efter insjuknandet och som har klara kvarvarande</div>\r\n<div class=\"tableLine\">symtom sannolikt har nytta av insatt behandling.</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\" class=\"footNotes\">\r\n<div class=\"tableFootnote\" id=\"fnote_39\">a. En strikt &aring;ldersgr&auml;ns p&aring; 80 &aring;r till&auml;mpas ej l&auml;ngre i klinisk praxis (efter publicerade<span style=\"text-decoration: line-through; color: #ff0000;\"> nya </span>studier (17,18)).</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ec7bb4d5-6425-4479-bba5-8df21fbb7a01",
+			"name": "ec7bb4d5-6425-4479-bba5-8df21fbb7a01",
+			"type": "text",
+			"content": "<h3 id=\"e6_33\"><span style=\"color: #ff0000;\">Mekanisk t</span>rombektomi <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">(endovaskul&auml;r trombolys)</span></span></h3>\n<p><span style=\"color: #ff0000;\">Ischemisk stroke med ocklusion eller subocklusion i hj&auml;rnans stora k&auml;rl (arteria cerebri media M1/M2; arteria cerebri anterior A1/A2; intrakraniella delarna av arteria karotis interna) inneb&auml;r ett livshotande tillst&aring;nd med h&ouml;g risk f&ouml;r d&ouml;d eller framtida omfattande funktonsneds&auml;ttning. Mekanisk trombektomi inneb&auml;r att en kateter s&auml;tts in i arteria femoralis och f&ouml;rs via arteria femoralis och arteria karotis upp och genom p&aring;visad akut tromb. Ett stent pressar trombmassan ut mot k&auml;rlv&auml;ggen; i vissa fall anv&auml;nds ocks&aring; aspirationskateter. Stentet f&auml;lls ihop och katetern avl&auml;gsnas. Trombektomi med mekaniskt avl&auml;gsnande av trombmassan med kateter har inneburit ett genombrott inom akut strokev&aring;rd hos patienter med mycket sv&aring;ra symtom.&nbsp;Resultat finns sammanst&auml;llda i en systematisk &ouml;versikt och metaanalys av individdata fr&aring;n 5 randomiserade studier (19). Mekanisk trombektomi som till&auml;gg till b&auml;sta medicinska behandling, inklusive intraven&ouml;s trombolys medf&ouml;r en absolut riskreduktion p&aring; 19,9&nbsp;% och ett NNT p&aring; 6 f&ouml;r att undvika funktions- och aktivitetsneds&auml;ttning vid 3 m&aring;nader. Detta motsvarar en oddskvot f&ouml;r gynnsamt utfall p&aring; 2,71 med 95 % konfidensintervall mellan 2,07 och 3,55. Trombektomibehandling har ingen statistiskt s&auml;kerst&auml;lld effekt p&aring; d&ouml;d (oddskvot 0,73, 95&nbsp;% KI&nbsp;0,47-1,13) eller risk f&ouml;r symtomgivande intrakraniella bl&ouml;dningar (oddskvot 1,07, 95&nbsp;% KI 0,62- 1,84). <br><br>&Auml;ven patienter med ocklusion/subocklusion i bakre cirkulationen &auml;r aktuella f&ouml;r trombektomi. Resultat av trombektomi i s&aring;v&auml;l fr&auml;mre som bakre cirkulationen redovisas kontinuerligt i kvalitetsregistren riksstroke och EVAS. Trombektomibehandlingen h&aring;ller p&aring; att implementeras i svensk sjukv&aring;rd med m&aring;ls&auml;ttning att erbjuda samtliga svenskar en likv&auml;rdig v&aring;rd. Trombektomier st&auml;ller mycket stora krav s&aring;v&auml;l vad g&auml;ller neuroradiologisk kompetens p&aring; trombektomicentra, initial klinisk och radiologisk diagnostik p&aring; f&ouml;rsta sjukhus, telemedicin med kontakt med regional strokebakjour och &ouml;verf&ouml;ring via markburen eller helikopterburen ambulans till trombektomicenter.</span><br><span style=\"text-decoration: line-through; color: #ff0000;\">Trombektomi erbjuds p&aring; vissa st&ouml;rre enheter i Sverige till vissa utvalda patienter inom ramen f&ouml;r observationsstudier. Behandlingen inneb&auml;r att en kateter s&auml;tts in i arteria femoralis och f&ouml;rs via aorta och karotis eller vertebralisk&auml;rl fram till tromben som avl&auml;gsnas med olika typer av &rdquo;inf&aring;ngare&rdquo;, dvs stent. Denna behandling kan bli aktuell vid ischemisk stroke med ocklusion/subocklusion av arteria cerebris M1-/M2-k&auml;rl p&aring;visad med DT-angiografi och d&aring; patienten ej f&ouml;rb&auml;ttras under de f&ouml;rsta 45&ndash;60 minuter efter startad intraven&ouml;s trombolys, s&nbsp;k drip-and-ship. Denna behandling kan ocks&aring; vara aktuell f&ouml;r vissa utvalda fall med basilaristrombos. Trombektomi vid sv&aring;r ischemisk stroke &auml;r en lovande ny behandlingsmetod. Hittills publicerade randomiserade studier med endovaskul&auml;r kontra kontrollbehandling var utan p&aring;visbar positiv effekt 17,18,19,20. </span></p>\n<p><span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">Det har dock framf&ouml;rts kritik mot dessa studier d&auml;r patienter inkluderades utan p&aring;visad aktuell trombotisering i hj&auml;rnans k&auml;rl respektive den endovaskul&auml;ra behandlingen bestod i att antingen ge lokal kateterburen trombolys utan mekanisk &rdquo;inf&aring;ngare&rdquo; eller med &auml;ldre generationens &rdquo;korkskruvsinf&aring;ngare&rdquo; som ger s&auml;mre effekt j&auml;mf&ouml;rt med nyare stentinf&aring;ngare 20,21. Endovaskul&auml;r behandling &auml;r fortfarande att betrakta som en forsknings- och utvecklings (FoU)-&aring;tg&auml;rd vid h&ouml;gspecialiserade centra.</span></span></p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "df376f2e-54d1-4c15-bcc4-a1f3c80b7d2e",
+			"name": "df376f2e-54d1-4c15-bcc4-a1f3c80b7d2e",
+			"type": "therapy",
+			"content": {
+				"number": "2",
+				"title": "Mekanisk trombektomi vid omfattande ischemisk stroke",
+				"id": "",
+				"text": "<table class=\"table table-bordered therapy-recommendations\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p>Aktuellt vid Ischemisk stroke i hj&auml;rnans fr&auml;mre stora k&auml;rl med p&aring;visad ocklusion av hj&auml;rnans fr&auml;mre stora k&auml;rl (arteria karotis internas intrakraniella del, arteria cerebri medias M1 eller M2-segment eller arteria cerebri anteriors A1 eller A2-segment)</p>\r\n<p></p>\r\n</td>\r\n<td>\r\n<p>Behandling inom 6 timmar fr&aring;n symtomdebut*</p>\r\n<p>&nbsp;</p>\r\n<p>Ocklusion/subocklusion p&aring;visas med DT-angio</p>\r\n<p>&nbsp;</p>\r\n<p>Behandlingen &auml;r centraliserad till trombektomi-centra vilket inneb&auml;r att diagnosticerade patienter efter samr&aring;d med regional strokebakjour &ouml;verf&ouml;rs direkt fr&aring;n hemortssjukhus till trombektomicenter via markburen ambulans eller helikopter</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td><br>\r\n<p></p>\r\n&Auml;ven aktuellt vid ischemisk stroke i bakre cirkulationen med p&aring;visad ocklusion i arteria basilaris</td>\r\n<td><br>\r\n<p></p>\r\n<p>Oftast ges intraven&ouml;s trombolys f&ouml;rst</p>\r\n<p>&nbsp;</p>\r\n<p>Trombektomi inneb&auml;r att en kateter s&auml;tts in i arteria femoralis och f&ouml;rs via arteria femoralis och arteria karotis upp och genom p&aring;visad akut tromb. Ett stent pressar trombmassan ut mot k&auml;rlv&auml;ggen; i vissa fall anv&auml;nds ocks&aring; aspirationskateter. Stentet f&auml;lls ihop och katetern avl&auml;gsnas.&nbsp;</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">\r\n<p>*Behandling &auml;ven senare &auml;n 6 timmar m&ouml;jlig under f&ouml;ruts&auml;ttning att omfattningen av hj&auml;rnskadan fortfarande &auml;r begr&auml;nsad</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3cdf399d-f7ff-42b1-8e4e-4dbdcfee2bdd",
+			"name": "3cdf399d-f7ff-42b1-8e4e-4dbdcfee2bdd",
+			"type": "therapy",
+			"content": {
+				"number": "3",
+				"title": "<a class=\"crossref\" id=\"24664\"></a>Annan medicinsk behandling på strokeenhet under akutfasen",
+				"id": "e6_32",
+				"text": "<p><span style=\"color: #ff0000;\">&nbsp;</span></p>\r\n<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"font-weight: bold;\">Hypertoni vid ankomst/ <br></span></div>\r\n<div class=\"tableLine\">f&ouml;rsta v&aring;rddygnet</div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Mycket vanligt f&ouml;rekommande, normaliseras i regel spontant</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Vid blodtryck &gt;&nbsp;220/120 mm Hg eller hypertensiv encefalopati, aortadissektion, kardiell svikt eller ischemi kan trycket s&auml;nkas med upprepade doser av labetalol 10 mg intraven&ouml;st. Vid kontraindikationer mot betablockerare ges loop-diuretika 20&ndash;40 mg intraven&ouml;st. Se &auml;ven kapitlet Hypertoni, Terapirekommendationerna &ndash; <a href=\"{pre}/kapitel/hjarta-karl/hypertoni.html#therapy_3_header\" target=\"_blank\">Behandling av akut kraftig blodtrycksh&ouml;jning </a>p&aring; inneliggande patient.<span> </span></div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"font-weight: bold;\">Stresshyperglykemi<br></span></div>\r\n<div class=\"tableLine\">(m&aring;ttligt f&ouml;rh&ouml;jt <span>P-glukos</span>)</div>\r\n<div class=\"tableLine\">vid ankomst</div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Vanligt &auml;ven hos icke-diabetiker, f&ouml;renat med s&auml;mre prognos</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Vid <span>P-glukos</span> &gt;&nbsp;10&ndash;12 mmol/L &auml;r ofta praxis att tillf&auml;lligt s&auml;tta in snabbverkande insulin (6&ndash;8 E vid behov), se kapitlet Diabetes mellitus, Terapirekommendationerna &ndash; Typ 2-diabetes. <span> </span></div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"font-weight: bold;\">Feber/subfebrilitet vid <br></span></div>\r\n<div class=\"tableLine\">ankomst</div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Vanligt och f&ouml;renat med s&auml;mre prognos</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Normotermi (&lt;&nbsp;37,5&nbsp;&deg;C) efterstr&auml;vas, paracetamol kan ges, 1 g 4 g&aring;nger/dygn</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "516ad4b4-5dc2-46ac-8547-4a2b4ffffb47",
+			"name": "516ad4b4-5dc2-46ac-8547-4a2b4ffffb47",
+			"type": "text",
+			"content": "<h2 id=\"e6_40\">Malign mediainfarkt</h2>\n<p>Malign mediainfarkt med hemiparalys, &rdquo;deviation conjug&eacute;e&rdquo; f&ouml;ljt av s&auml;nkt medvetande, d&auml;refter olikstora pupiller (anisokori) och slutligen bilaterala ljusstela pupiller inneb&auml;r ett livshotande tillst&aring;nd med uppenbar inkl&auml;mningsrisk till f&ouml;ljd av omfattande ischemi med hj&auml;rn&ouml;dem inom arteria cerebri medias f&ouml;rs&ouml;rjningsomr&aring;de.<span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\"> En poolad metaanalys av 3 stycken oberoende av varandra randomiserade studier 23</span></span> <span style=\"color: #ff0000;\">En systematisk &ouml;versikt och metaanalys av 7 multicenter randomiserade studier (20) </span>visade att hemikraniektomi inom 48&nbsp;timmar <span style=\"color: #ff0000;\">i 5 studier och inom 96 timmar i 2 studier&nbsp;</span>hos 18-<span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">60</span></span> <span style=\"color: #ff0000;\">-</span><span style=\"color: #ff0000;\">80 </span>&aring;riga patienter med malign mediainfarkt medf&ouml;r kraftigt minskad risk att avlida (<span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">71</span></span> <span style=\"color: #ff0000;\">65&nbsp;</span>% i den medicinskt behandlade gruppen j&auml;mf&ouml;rt med <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">24</span></span>&nbsp;<span style=\"color: #ff0000;\">26&nbsp;</span>% i den kirurgiska behandlingsgruppen efter 12 m&aring;nader, ARR = <span style=\"color: #ff0000;\"><span style=\"text-decoration: line-through;\">50 </span>39&nbsp;</span>%, NNT =&nbsp;<span style=\"color: #ff0000;\">3</span> <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">2</span></span>) utan &ouml;kad risk f&ouml;r allvarligt funktionsberoende hos de &ouml;verlevande.&nbsp;<span style=\"color: #ff0000;\">De gynnsamma effekterna av hemikraniektomi s&aring;gs hos s&aring;v&auml;l patienter under som &ouml;ver 65 &aring;r (21).</span> En mycket aktiv handl&auml;ggning med tidig remittering till strokeenhet p&aring; sjukhus med neurokirurgisk klinik &auml;r p&aring;kallad hos dessa patienter som numer&auml;rt &auml;r relativt f&aring; (<span>&le;</span>&nbsp;1% av alla ischemiska strokepatienter). Se Terapirekommendation 4.</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b1463865-8f27-41bb-ac54-e6a64957d2df",
+			"name": "b1463865-8f27-41bb-ac54-e6a64957d2df",
+			"type": "therapy",
+			"content": {
+				"number": "4",
+				"title": "<a class=\"crossref\" id=\"32335\"></a>Kirurgisk behandling (hemikraniektomi) hos patienter med livshotande malign mediainfarkt (uttalad hemipares, ”deviation conjugée” och hemianopsi)",
+				"id": "e6_41",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td colspan=\"2\">\r\n<p>&Ouml;verf&ouml;ring akut till strokeenhet eller intensivv&aring;rdsenhet p&aring; sjukhus som har neurokirurgisk klinik</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">\r\n<p>Hemikraniektomi med duraplastik snarast <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">(allra senast inom 48 timmar fr&aring;n symtomdebut)</span></span> om klinisk bild som vid malign mediainfarkt, s&auml;nkt medvetande och DT med perfusion eller MR med diffusion visar utbredda ische&shy;miska f&ouml;r&auml;ndringar inom arteria cerebri medias f&ouml;rs&ouml;rjningsomr&aring;de.</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8870bbb0-8a34-4c04-85cf-7e0209f0369e",
+			"name": "8870bbb0-8a34-4c04-85cf-7e0209f0369e",
+			"type": "text",
+			"content": "<h2 id=\"e6_34\">Transitorisk ischemisk attack (TIA)/amaurosis fugax/minor stroke</h2>\n<p>Handl&auml;ggning medicinskt och kirurgiskt av patienter med TIA, amaurosis fugax och minor stroke &auml;r till stor del lika, se Terapirekommendation 5. F&ouml;r TIA-patienter &auml;r risken f&ouml;r strokeinsjuknande mycket stor (10&nbsp;%) under de f&ouml;rsta 48 timmarna vilket medf&ouml;r att dessa patienter direkt ska komma till sjukhus f&ouml;r inl&auml;ggning p&aring; sjukhusets strokeenhet med prompt medicinsk utredning f&ouml;ljt av sekund&auml;rpreventiva &aring;tg&auml;rder som startas utan dr&ouml;jsm&aring;l.</p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "88f50aaa-8985-4f95-a436-1b905d3cb719",
+			"name": "88f50aaa-8985-4f95-a436-1b905d3cb719",
+			"type": "therapy",
+			"content": {
+				"number": "5",
+				"title": "<a class=\"crossref\" id=\"14490\"></a>TIA/amaurosis fugax/mindre ischemisk stroke",
+				"id": "e6_35",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td colspan=\"2\">\r\n<ul>\r\n<li>Inl&auml;ggning p&aring; sjukhus &auml;r synnerligen motiverad vid TIA pga mycket h&ouml;g risk f&ouml;r strokeinsjuknande inom de n&auml;rmaste dygnen. En risk som kan minskas avsev&auml;rt med snar riskfaktorutredning och behandling med &ouml;versyn av livsstilsfaktorer, l&auml;kemedel och eventuell kirurgi.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Skyndsam karotisutredning med sikte p&aring; karotiskirurgi inom 2 veckor (eller snarast) fr&aring;n symtomdebut.</div>\r\n</li>\r\n</ul>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Utredning med ultraljud av halsk&auml;rl alternativt DT/MR-angiografi (det som snabbast finns tillg&auml;ngligt). Vid misstanke om kardiell p&aring;verkan g&ouml;rs ekokardiografi.</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Utredning g&ouml;rs inte vid kontraindikationer mot karotiskirurgi, till exempel vid betydande kognitiv dysfunktion, om patienten inte &auml;r motiverad till operation eller om operationsrisken &ouml;verstiger nyttan med operationen.</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">\r\n<ul>\r\n<li>Vid hopade TIA (ofta definierat som <span>&ge;</span>&nbsp;2 episoder senaste veckan) finns inget vetenskapligt st&ouml;d f&ouml;r behandling med heparin eller dess analoger.</li>\r\n</ul>\r\n<ul></ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0821465b-0bc5-404e-8719-48cffb9ab599",
+			"name": "0821465b-0bc5-404e-8719-48cffb9ab599",
+			"type": "text",
+			"content": "<p><span> </span></p>\n<h3 id=\"e6_36\">Heparin och dess analoger</h3>\n<p>Det finns inget vetenskapligt st&ouml;d f&ouml;r behandling med heparin eller dess analoger under akutskedet av icke-embolisk hj&auml;rninfarkt, ej heller vid hopade TIA dvs <span>&ge;</span>&nbsp;2 attacker de senaste 7 dygnen. I vissa av dessa fall kan en intrakraniell stenos motsvarande symtomgivande k&auml;rlterritorium p&aring;visas. Att &aring;tg&auml;rda s&aring;dana med endovaskul&auml;r intrakraniell stent har visat ogynnsam nytta/riskkvot och &auml;r inte indicerat (22). Hos samtliga patienter med hopade TIA b&ouml;r kraft riktas mot att klarl&auml;gga annan &aring;tg&auml;rdbar genes, till exempel signifikant karotisf&ouml;rtr&auml;ngning, kardiell embolik&auml;lla och arytmier.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d920506d-12c5-4faf-9618-d4e0c42c2b57",
+			"name": "d920506d-12c5-4faf-9618-d4e0c42c2b57",
+			"type": "text",
+			"content": "<h3 id=\"e6_37\">Karotiskirurgi</h3>\n<p>Hos patienter med TIA eller mindre hj&auml;rninfarkt &auml;r skyndsam karotiskirurgiutredning indicerad (f&ouml;rutsatt att kontraindikationer f&ouml;r kirurgi saknas). En f&ouml;rsta screening kan med f&ouml;rdel g&ouml;ras med DT-angiografi i samband med att DT hj&auml;rna g&ouml;rs. Om misstanke om karotisstenos finns g&ouml;rs i regel ultraljud halsk&auml;rl f&ouml;r best&auml;mning av stenosgrad. Vid fynd av signifikant karotisstenos inom samma k&auml;rlterritorium som givit symtom finns indikation f&ouml;r karotisoperation halvakut, dvs inom f&ouml;rsta veckan efter senaste symtom. Den gynnsamma effekten av karotiskirurgi halveras f&ouml;r varje f&ouml;rdr&ouml;jning fr&aring;n 0&ndash;2 veckor till 2&ndash;4 veckor och 4&ndash;12 veckor.</p>\n<p>Endovaskul&auml;r behandling med stent har i flera randomiserade studier inte visat p&aring; b&auml;ttre resultat j&auml;mf&ouml;rt med karotiskirurgi och blir d&auml;rf&ouml;r endast aktuell i vissa selekterade fall d&auml;r kirurgi &auml;r tekniskt sv&aring;rgenomf&ouml;rbart, till exempel vid tidigare karotisoperation eller vid tidigare lokal str&aring;lbehandling mot halsen.</p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c434f790-f887-4b0c-8b7d-ffb863d5944c",
+			"name": "c434f790-f887-4b0c-8b7d-ffb863d5944c",
+			"type": "text",
+			"content": "<h3 id=\"e6_38\">ASA-behandling</h3>\n<p>ASA-behandling under akutskedet har en klar men m&aring;ttlig effekt f&ouml;r att undvika &aring;terinsjuknande. Ofta ges patienten 320&ndash;500 mg ASA som eng&aring;ngsdos efter att bl&ouml;dning uteslutits med DT och f&aring;r d&auml;refter sekund&auml;rpreventiv underh&aring;llsdos (75&ndash;160 mg/dag). B&aring;da dessa doser har likv&auml;rdig dokumenterad antitrombotisk effekt, men 75 mg/dag &auml;r oftast att f&ouml;redra pga mindre risk f&ouml;r gastrointestinala biverkningar (dyspepsi och bl&ouml;dningar). Vid trombolysbehandling avvaktas med ASA-behandling, som d&aring; s&auml;tts in efter 24&ndash;36 timmar. Patienter med ischemisk stroke/TIA som &aring;drar sig gastrointestinal bl&ouml;dning under p&aring;g&aring;ende ASA-behandling kan med f&ouml;rdel &aring;terins&auml;ttas p&aring; ASA (f&ouml;rutsatt att indikationen kvarst&aring;r) som kombineras med protonpumpsh&auml;mmare.</p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7ae9442a-2554-42f1-9aa7-ec5376055e27",
+			"name": "7ae9442a-2554-42f1-9aa7-ec5376055e27",
+			"type": "text",
+			"content": "<h2 id=\"e6_39\">Progressiv (progredierande, f&ouml;rv&auml;rrad) stroke</h2>\n<p>Symtomprogress ses hos 20&ndash;40&nbsp;% inom de f&ouml;rsta dygnen och medf&ouml;r f&ouml;rs&auml;mrad prognos. Komplicerande systemfaktorer, hj&auml;rn&ouml;dem och f&ouml;rv&auml;rrad ischemi kan ligga bakom. Bland systemfaktorerna &auml;r feber med eller utan bakomliggande infektion, hyperglykemi, hypoxemi och arytmier vanliga &aring;tg&auml;rdbara orsaker till symtomf&ouml;rs&auml;mring. &Ouml;vervakning med tidig identifiering och &aring;tg&auml;rd av ovanst&aring;ende faktorer p&aring; v&auml;l fungerande strokeenheter f&ouml;rebygger respektive lindrar konsekvenserna. Symtomf&ouml;rs&auml;mring till f&ouml;ljd av intracerebralt hj&auml;rn&ouml;dem (kombinerat cytotoxiskt och vasogent) &auml;r vanligt f&ouml;rekommande hos patienter med omfattande hj&auml;rnskador och utg&ouml;r huvudorsaken till d&ouml;dsfall inom f&ouml;rsta veckan efter stroke. F&ouml;rutom hemikraniektomi <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">hos yngre (&lt;&nbsp;60&ndash;65 &aring;r)</span></span> patienter med malign mediainfarkt (se ovan) saknas st&ouml;d f&ouml;r behandling. F&ouml;rv&auml;rrad ischemi till f&ouml;ljd av trombospropagation utg&ouml;r inte n&aring;gon vanlig behandlingsbar orsak. Heparin eller dess analoger har ingen p&aring;visad positiv effekt vid symtomprogress.</p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "071f5ac3-2d54-468c-ab43-0fc37ebda90b",
+			"name": "071f5ac3-2d54-468c-ab43-0fc37ebda90b",
+			"type": "text",
+			"content": "<p><span> </span></p>\n<h2 id=\"e6_42\">Dissektion av halsart&auml;r</h2>\n<p>Dissektion inom arteria vertebralis eller arteria karotis &auml;r en vanlig orsak till ischemisk stroke hos yngre individer. Kliniska symtom varierar men innefattar ofta nackv&auml;rk, occipital huvudv&auml;rk och fokalneurologiska symtom. Det &auml;r inte ovanligt med f&ouml;reg&aring;ende trauma, bland annat efter nackmanipulation hos kiropraktiker. Den kliniska misstanken konfirmeras med DT- eller MR-angiografi. En <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">uppdaterad</span> </span>metaanalys av icke-randomiserade observationsstudier <span style=\"color: #ff0000;\">(23) samt multicenter randomiserade studien CADISS (24) </span>visar att behandling med antikoagulantia och ASA var likv&auml;rdiga f&ouml;r att f&ouml;rebygga stroke vilket medf&ouml;r att l&aring;gdos-ASA, 75-160&nbsp;mg/dygn, &auml;r att f&ouml;redra.</p>\n<p></p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3e0bc1e8-7b03-4138-b9c5-5ad2fc4c7830",
+			"name": "3e0bc1e8-7b03-4138-b9c5-5ad2fc4c7830",
+			"type": "text",
+			"content": "<h2 id=\"e6_43\">Ven&ouml;s trombos i hj&auml;rnan</h2>\n<p>Den kliniska symtombilden vid sinustrombos &auml;r ofta sv&aring;rtolkad med huvudv&auml;rk, epileptiska anfall, fokala bortfall och s&auml;nkt vakenhet. Diagnosen st&auml;lls med MR- eller DT-angiografi. Antikoagulantiabehandling&nbsp;<span style=\"color: #ff0000;\">initialt med heparin/l&aring;gmolekyl&auml;rt heparin samt warfarin</span> &auml;r regel. <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">initialt med heparin. I vissa fall har lokal trombolys haft effekt vid progredierande symtom trots antikoagulantiabehandling.</span></span></p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "98f61d30-a4d1-4ab8-9cf6-a7bd94194e58",
+			"name": "98f61d30-a4d1-4ab8-9cf6-a7bd94194e58",
+			"type": "text",
+			"content": "<h2 id=\"e6_44\">Intracerebral bl&ouml;dning</h2>\n<p>Kirurgisk behandling av supratentoriella intracerebrala hematom har ingen generellt p&aring;visbar positiv effekt j&auml;mf&ouml;rt med medicinsk behandling. Kirurgisk behandling anses dock kunna vara av v&auml;rde i utvalda fall, till exempel av patienter med ytliga, lob&auml;ra hematom med expansiv effekt och vakenhetsp&aring;verkan (25). Kirurgisk behandling av hematom i lillhj&auml;rnan med utrymning av bl&ouml;dningsh&auml;rd eller avlastande ventrikeldr&auml;n kan vara livr&auml;ddande f&ouml;r patienter med stora hematom, akut hydrocefalus eller s&auml;nkt medvetande. <br><span style=\"color: #ff0000;\">Akut blodtryckss&auml;nkning kan minska bl&ouml;dningsexpansion och f&ouml;rb&auml;ttra kliniskt utfall. Randomiserade studier (26,27,28) </span><span style=\"color: #ff0000;\">d&auml;r INTERACT-2 och ATTACH-2 dominerar har dock givit delvis motstridiga resultat. Sammantaget finns dock st&ouml;d f&ouml;r att akut (inom 6 timmar fr&aring;n symtomdebut) s&auml;nka blodtrycket intraven&ouml;st vid systoliskt blodtryck &ouml;ver 180 mmHg till mellan 140-180 mmHg.</span><br><br></p>\n<p>En fruktad biverkning av <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">warfarin</span> </span><span style=\"color: #ff0000;\">antikoagulantia</span>behandling &auml;r intracerebral bl&ouml;dning <span style=\"color: #ff0000;\">d&auml;r warfarin har en dubblerad risk j&auml;mf&ouml;rt med non-vitamin K orala antagonister (NOAK) (3)</span>. <span style=\"color: #ff0000;\">F&ouml;r warfarin &auml;r r</span>isken f&ouml;r intracerebralt hematom <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">&auml;r</span></span> ca 0,5&nbsp;% per &aring;r som n&auml;stan dubbleras f&ouml;r varje 0,5&nbsp;INR-enheters &ouml;kning &ouml;ver 4,5. Majoriteten av warfarinassocierade hj&auml;rnbl&ouml;dningar sker dock hos patienter med terapeutiskt INR (2&ndash;3) och kan d&aring; ha andra bidragande orsaker, exempelvis suboptimalt behandlad hypertoni, leukoaraios (vitsubstansf&ouml;r&auml;ndringar) och cerebral amyloid angiopati (degenerativa &aring;ldersf&ouml;r&auml;ndringar, framf&ouml;r allt kortikala blodk&auml;rl). Det fordras akut klinisk och radiologisk diagnostisk handl&auml;ggning vid misstanke om <span style=\"color: #ff0000;\"><span style=\"text-decoration: line-through;\">warfarin</span>antikoagulantia</span>inducerad hj&auml;rnbl&ouml;dning. Vid dessa fall av intracerebralt hematom r&aring;der konsensus (randomiserade studier saknas) att omedelbart reversera effekten av warfarin f&ouml;r att minska utbredningen av bl&ouml;dningen med K1-vitamin och koncentrerat protrombinkomplex. K1-vitamin (10&nbsp;mg) ges intraven&ouml;st men korrigerar INR f&ouml;rst efter minst 6&nbsp;timmar (ofta l&auml;ngre tid) vilket medf&ouml;r att denna behandling l&auml;mpligen kombineras med intraven&ouml;st givet protrombinkomplexkoncentrat (dosering enligt produktresum&eacute;/Fass baserat p&aring; INR-v&auml;rde) som kan upprepas efter 6&nbsp;timmar.&nbsp;<span style=\"color: #ff0000;\">&Auml;ven om risken f&ouml;r intracerebrala bl&ouml;dningar &auml;r halverad vid NOAK j&auml;mf&ouml;rt med warfarin &auml;r NOAK-associerade bl&ouml;dningar p&aring; intet s&auml;tt ovanliga. Fram&ouml;ver med allt fler NOAK-behandlade patienter f&ouml;rv&auml;ntas NOAK-associerade intracerebrala bl&ouml;dningar bli alltmer vanligt. F&ouml;r direkta trombinh&auml;mmaren dabigatran finns Idarucizumab som &auml;r ett humaniserat monoklonalt antikroppsfragment som binder fritt och trombinbundet dabigatran. Det saknas data fr&aring;n randomiserade studier men observationsdata visar att idarucizumab (5&nbsp;g intraven&ouml;st) snabbt och s&auml;kert reverserar antikoagulantiaeffekten av dabigatran (29). F&ouml;r faktor Xa-h&auml;mmare p&aring;g&aring;r studier med reverserande substanser s&aring;som andexanet och ciraparantag. I v&auml;ntan p&aring; godk&auml;nnande av specifika antidoter mot orala faktor Xa-h&auml;mmare finns visst vetenskapligt st&ouml;d f&ouml;r att 4-F-PCC kan ha en viss reverserande effekt. <br>En f&ouml;ruts&auml;ttning f&ouml;r att uppn&aring; klinisk meningsfull effekt av reversering av antikoagulantia-associerade intracerebrala och intrakraniella bl&ouml;dningar fordras att dessa ges mycket tidigt i f&ouml;rloppet. </span>Se Terapirekommendation 6.</p>\n<p><br>Rekombinant aktiverat FVIIa (rFVII) intraven&ouml;st (15&ndash;90&nbsp;mikrog/kg kroppsvikt) har visats normalisera INR-v&auml;rdena snabbt hos dessa patienter men erfarenheten &auml;r liten och anv&auml;ndningen av detta exklusiva preparat &auml;r aktuell endast i exceptionella situationer (30). Aggressiv akut blodtryckss&auml;nkning fr&aring;n 150&ndash;220&nbsp;mm Hg till 140&nbsp;mm Hg systoliskt blodtryck har f&ouml;reslagits minska bl&ouml;dningsexpansionen och kunna ges utan allvarliga biverkningar (31,32).</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9f19d609-00bf-4a50-a578-33d238fcc63f",
+			"name": "9f19d609-00bf-4a50-a578-33d238fcc63f",
+			"type": "therapy",
+			"content": {
+				"number": "6",
+				"title": "Medicinsk behandling av antikoagulantiabehandlade patienter med intracerebrala blödningar",
+				"id": "e6_45",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><span style=\"color: #ff0000;\">Warfarin-associerad hj&auml;rnbl&ouml;dning</span></p>\r\n</td>\r\n<td>\r\n<p>Omedelbart insatt K<sub>1</sub>-vitamin (10 mg) ges intraven&ouml;st kombinerat med:</p>\r\n<p><span style=\"color: #ff0000;\">4-faktor <span style=\"color: #000000;\">protrombinkomplexkoncentrat, Confidex eller Ocplex, intraven&ouml;st (dosering enligt produktresum&eacute;/Fass baserat p&aring; INR-v&auml;rde) som kan upprepas efter 6 timmar</span></span></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><span style=\"color: #ff0000;\">Dabigatran-associerad hj&auml;rnbl&ouml;dning</span></p>\r\n</td>\r\n<td><span style=\"color: #ff0000;\">Omedelbart insatt Idarucizumab (5g intraven&ouml;st)</span></td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><span style=\"color: #ff0000;\">Faktor Xa (apixaban, rivaroxaban, edoxaban)-associerad hj&auml;rnbl&ouml;dning</span></p>\r\n</td>\r\n<td><span style=\"color: #ff0000;\"><span style=\"color: #ff0000;\"></span></span>\r\n<p><span style=\"color: #ff0000;\">Specifika antidoter &auml;r under utpr&ouml;vning</span></p>\r\n<p><span style=\"color: #ff0000;\">&nbsp;</span></p>\r\n<p><span style=\"color: #ff0000;\">4-faktor protrombinkomplexkoncentrat Confidex eller Ocplex, intraven&ouml;st (dosering enligt produktresum&eacute;/Fass baserat p&aring; INR-v&auml;rde) som kan upprepas efter 6 timmar</span></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">\r\n<p><span style=\"color: #ff0000;\">&nbsp;En f&ouml;ruts&auml;ttning f&ouml;r positiv effekt av reversering av antikoagulantia-associerade intracerebrala bl&ouml;dningar &auml;r att behandling startas mycket tidigt. </span></p>\r\n<p><span style=\"color: #ff0000;\"></span></p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "66fcb8ef-8305-415c-a0fe-2ec1239f3df0",
+			"name": "66fcb8ef-8305-415c-a0fe-2ec1239f3df0",
+			"type": "text",
+			"content": "<h2 id=\"e6_46\">Subaraknoidalbl&ouml;dning</h2>\n<p>Patienter med subaraknoidalbl&ouml;dning uppt&auml;cks i regel p&aring; sitt hemsjukhus men remitteras d&auml;refter akut till neurokirurgisk klinik d&auml;r behandling med clips alternativt endovaskul&auml;r embolisering (coiling) g&ouml;rs f&ouml;r att f&ouml;rhindra rebl&ouml;dning. En vanlig komplikation till subaraknoidalbl&ouml;dning &auml;r vasospasm med ischemi och eventuell infarkt som f&ouml;ljd. Som spasmprofylax ges kalciumblockeraren <a class=\"index\" id=\"1021505\" data-text=\"nimodipin:vasospasm\"></a>nimodipin peroralt alternativt intraven&ouml;st.</p>\n<p></p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "612f29c9-1387-4ecb-8156-95267304860c",
+			"name": "612f29c9-1387-4ecb-8156-95267304860c",
+			"type": "text",
+			"content": "<h2 id=\"e6_47\">Sekund&auml;rprevention</h2>\n<p>Sekund&auml;rpreventiva &aring;tg&auml;rder hos en stroke<span style=\"color: #ff0000;\">- eller TIA-</span>patient initieras som regel under sjukhusvistelsen. Strukturerade sekund&auml;rpreventiva mottagningar med uppf&ouml;ljning av initierade sekund&auml;rpreventiva &aring;tg&auml;rder och upps&auml;ttande av individuella m&aring;lniv&aring;er finns etablerade p&aring; vissa st&auml;llen i landet. I vissa fall g&ouml;rs det f&ouml;rsta &aring;terbes&ouml;ket till strokeenheten p&aring; sjukhuset, medan i andra fall g&ouml;rs detta p&aring; v&aring;rdcentral. F&ouml;r en &ouml;versikt &ouml;ver &aring;tg&auml;rder, se Terapirekommendation 7.</p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "84ec6c18-668d-407d-82fb-1c81a222e176",
+			"name": "84ec6c18-668d-407d-82fb-1c81a222e176",
+			"type": "therapy",
+			"content": {
+				"number": "7",
+				"title": "<a class=\"index\" id=\"1065533\" data-text=\"cerebrovaskul&#xE4;ra sjukdomar:sekund&#xE4;rprevention\"></a><a class=\"crossref\" id=\"49053\"></a>Sekundärprevention",
+				"id": "e6_48",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"font-weight: bold;\">Livsstilsfaktorer</span></div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">R&ouml;kning, fysisk aktivitet, kost, alkohol och stress g&aring;s igenom</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"font-weight: bold; font-family: &apos;Avenir Next&apos;, &apos;Helvetica Neue Ultra Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif;\">Karotiskirurgi</span></div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Se Terapirekommendationerna<span> </span></div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"font-weight: bold; font-family: &apos;Avenir Next&apos;, &apos;Helvetica Neue Ultra Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif;\">Antitrombotisk behandling</span></div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">TIA/ischemisk stroke utan kardiell embolik&auml;lla (se &auml;ven texten)</div>\r\n</li>\r\n</ul>\r\n<div class=\"tabStop\"><span class=\"tabstop\"></span>\r\n<div class=\"tableLine\">&ndash;ASA 75&ndash;160 mg/dygn <span style=\"font-weight: bold;\">alternativt</span></div>\r\n</div>\r\n<div class=\"tabStop\"><span class=\"tabstop\"></span>\r\n<div class=\"tableLine\"><span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">&ndash;<span class=\"tab\"></span>ASA 50, 75 eller 160 mg/dygn + dipyridamol 200 mg 2 g&aring;nger/dygn</span></span></div>\r\n<div class=\"tableLine\"><span style=\"text-decoration: line-through;\"><span style=\"font-weight: bold; color: #ff0000; text-decoration: line-through;\">alternativt</span></span></div>\r\n</div>\r\n<div class=\"tabStop\"><span class=\"tabstop\"></span>\r\n<div class=\"tableLine\"><span class=\"tab\">&ndash;</span>Klopidogrel 75 mg/dygn</div>\r\n<div class=\"tableLine\">&ndash;ASA 50, 75 eller 160 mg/dygn + dipyridamol 200 mg 2 g&aring;nger/dygn &auml;r ocks&aring; ett alternativ <span style=\"color: #ff0000;\">som dock ofta &auml;r f&ouml;renat med huvudv&auml;rk och s&auml;mre f&ouml;ljsamhet j&auml;mf&ouml;rt med monoterapi</span></div>\r\n<div class=\"tableLine\"><span class=\"tab\">&nbsp;</span></div>\r\n</div>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">TIA/ischemisk stroke med kardiell embolik&auml;lla<span style=\"color: #ff0000;\"> (vanligtvis f&ouml;rmaksflimmer)</span></div>\r\n</li>\r\n</ul>\r\n<div class=\"tabStop\"><span class=\"tabstop\"></span>\r\n<div class=\"tableLine\">&ndash;<span style=\"color: #ff0000;\">Non-vitamin K orala antagonister (NOAK), det vill s&auml;ga d</span><span class=\"tab\"></span>irekt trombinh&auml;mmare (dabigatran) eller faktor X-h&auml;mmare</div>\r\n<div class=\"tableLine\">(rivaroxaban, apixaban <span style=\"color: #ff0000;\">eller edoxaban) &auml;r f&ouml;rstahandsval<br>-Warfarinbehandling, INR 2-3 som &auml;r aktuellt fr&auml;mst vid mekanisk klaffprotes, mitralvitium eller gravt nedsatt njurfunktion.</span></div>\r\n</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"font-weight: bold; font-family: &apos;Avenir Next&apos;, &apos;Helvetica Neue Ultra Light&apos;, &apos;Helvetica Neue&apos;, Helvetica, Arial, sans-serif;\">Blodtrycksbehandling</span></div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Positiv effekt oavsett blodtryck under v&aring;rdtiden <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">(undantagna de med systo-</span></span></div>\r\n<div class=\"tableLine\"><span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">liskt blodtryck &lt;&nbsp;120 mm Hg)</span></span> hos patienter med TIA/ischemisk stroke och in-</div>\r\n<div class=\"tableLine\">tracerebral bl&ouml;dning</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">M&aring;lblodtryck i regel <span>&le;</span>&nbsp;130/80 mm Hg</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Kombination av ACE-h&auml;mmare och diuretikum &auml;r f&ouml;rstahandsval</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Med l&aring;ngsam upptitrering undviks biverkningar</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Hos de allra &auml;ldsta g&ouml;rs individuell bed&ouml;mning &ndash; risk f&ouml;r multimedicinering</div>\r\n<div class=\"tableLine\">med allvarliga biverkningar som f&ouml;ljd</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Statinbehandling</div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Positiv effekt hos patienter med ischemisk stroke/TIA<span style=\"color: #ff0000;\"> oavsett tidigare LDL-niv&aring;. M&aring;lniv&aring; LDL &le;1,8 mmol/l</span></div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Hos de allra &auml;ldsta g&ouml;rs individuell bed&ouml;mning &ndash; risk f&ouml;r multimedicinering</div>\r\n<div class=\"tableLine\">med allvarliga biverkningar som f&ouml;ljd</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "725ac17c-86ab-42c9-abbe-e53512ecb97d",
+			"name": "725ac17c-86ab-42c9-abbe-e53512ecb97d",
+			"type": "text",
+			"content": "<p><span> </span></p>\n<h3 id=\"e6_49\">Livsstils&aring;tg&auml;rder</h3>\n<p>Livsstils&aring;tg&auml;rder f&ouml;r sekund&auml;rprevention efter stroke f&ouml;ljer samma principer som vid prim&auml;rprevention. R&ouml;kstopp, regelbunden fysisk aktivitet anpassad till funktionsf&ouml;rm&aring;gan och kost rik p&aring; gr&ouml;nsaker och frukt &auml;r generellt accepterade och synnerligen v&auml;lmotiverade r&aring;d. F&ouml;r ytterligare information se nationella riktlinjer fr&aring;n Socialstyrelsen om sjukdomsf&ouml;rebyggande metoder: <a href=\"https://sas.vgregion.se/contentassets/2f34438ea3e7476b9c5614c12aec9190/patientversion-nationella-riktlinjer-sjukdomsforebyggande-metoder.pdf\" target=\"_blank\">Tobak, alkohol, fysisk aktivitet och matvanor.</a></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "191099b2-3d26-4625-ae91-80edddef6f6c",
+			"name": "191099b2-3d26-4625-ae91-80edddef6f6c",
+			"type": "text",
+			"content": "<h3 id=\"e6_50\">Trombocyth&auml;mmare efter TIA/ischemisk stroke</h3>\n<p>Trombocyth&auml;mmare &auml;r basbehandling efter TIA/ischemisk icke-kardiell stroke och ges i form av l&aring;gdos-ASA 75&ndash;160&nbsp;mg 1 g&aring;ng/dygn. Behandlingen har en viss betydelse f&ouml;r att undvika &aring;terinsjuknande under de f&ouml;rsta 2&ndash;4 veckorna (absolut riskreduktion 0,9&nbsp;%, fr&aring;n 9,1 till 8,2&nbsp;%, NNT = 111). Behandling med l&aring;gdos-ASA under l&aring;ng tid har ocks&aring; sin klara men modesta effekt (minskad risk f&ouml;r stroke, myokardinfarkt och vaskul&auml;r d&ouml;d fr&aring;n 21,4 till 17,8&nbsp;% under 2,5&nbsp;&aring;rs behandlingstid, ARR = 3,6&nbsp;%, NNT = 28). Denna gynnsamma effekt av ASA-behandling med dosen 75&ndash;160&nbsp;mg/dag &ouml;verskuggar risken f&ouml;r bl&ouml;dningar i hj&auml;rnan (absolut risk&ouml;kning 0,5&nbsp;%, NNH = 200) och mag-tarmkanalen (absolut risk&ouml;kning 0,85&nbsp;%, NNH = 118). En <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">n&aring;got b&auml;ttre</span></span> <span style=\"color: #ff0000;\">likv&auml;rdig </span>behandlingseffekt <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">&auml;n med enbart</span></span> <span style=\"color: #ff0000;\">j&auml;mf&ouml;rt med </span>l&aring;gdos-ASA erh&aring;lls med <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">kombinationsbehandling med dipyridamol (29) och &auml;ven behandling med enbart</span></span> klopidogrel (33). Behandlingsalternativet ASA + dipyridamol&nbsp;<span style=\"color: #ff0000;\">j&auml;mf&ouml;rt med endast ASA har en liten positiv effekt p&aring; &aring;terinsjuknande i stroke och likv&auml;rdig effekt p&aring; d&ouml;d, hj&auml;rtinfarkt eller bl&ouml;dningar (34). Kombinationsbehandlingen ASA + dipyramidol j&auml;mf&ouml;rt med endast ASA &auml;r dock beh&auml;ftad med fler biverkningar (framf&ouml;r allt huvudv&auml;rk), har s&auml;mre f&ouml;ljsamhet och kostar en inte obetydlig kostnad vilket medf&ouml;rt att denna anv&auml;ndning numera inte &auml;r s&aring; vanlig.</span> <span style=\"text-decoration: line-through; color: #ff0000;\">j&auml;mf&ouml;rt med klopidogrel ter sig ur medicinsk synvinkel likv&auml;rdiga. Eftersom generiskt klopidogrel har en l&auml;gre l&auml;kemedelskostnad j&auml;mf&ouml;rt med ASA + dipyridamol kan klopidogrel med f&ouml;rdel anv&auml;ndas som f&ouml;rstahandsalternativ till ASA efter ischemisk stroke</span><span style=\"color: #ff0000;\"><span style=\"text-decoration: line-through;\">. Kombinationen ASA + klopidogrel v&auml;ljs ibland som korttidsbehandling (1&ndash;3&nbsp;m&aring;nader) &ndash; det saknas dock&nbsp;tillr&auml;ckligt vetenskapligt st&ouml;d fr&aring;n randomiserade studier f&ouml;r s&aring;dan behandling.</span>&nbsp;Kombinationsbehandlingen ASA + klopidogrel som korttidsbehandling (1-3 m&aring;nader) medf&ouml;r minskad risk f&ouml;r kardiovaskul&auml;ra h&auml;ndelser men &ouml;kad risk f&ouml;r bl&ouml;dningar (35). </span>L&aring;ngvarig sekund&auml;rpreventiv behandling med ASA + klopidogrel medf&ouml;r &ouml;kad bl&ouml;dningsrisk och &auml;r d&auml;rf&ouml;r direkt ol&auml;mplig. Samtidig behandling med protonpumpsh&auml;mmarna omeprazol respektive esomeprazol med klopidogrel har f&ouml;reslagits ge en signifikant l&auml;kemedelsinteraktion med minskad antitrombotisk effekt av klopidogrel (36). Detta presumtiva samband &auml;r ifr&aring;gasatt men vid behov av denna kombination b&ouml;r tills vidare andra protonpumpsh&auml;mmare v&auml;ljas i f&ouml;rsta hand. Se &auml;ven kapitlet <a href=\"{pre}/kapitel/mage-tarm/sjukdomar_i_matstrupe_magsack_och_tolvfingertarm.html#b1_4\" target=\"_blank\">Sjukdomar matstrupe, mags&auml;ck och tolvfingertarm</a>, avsnittet <a href=\"{pre}/kapitel/mage-tarm/sjukdomar_i_matstrupe_magsack_och_tolvfingertarm.html#b1_55\" target=\"_blank\">Protonpumpsh&auml;mmare</a>. Vidare har behovet av genetisk s&aring; kallad point-of-care (POC) screening f&ouml;r att identifiera individer som inte svarar p&aring; behandling med klopidogrel diskuterats (37).</p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d3cc45db-674a-4c28-8a0f-cdee46e41ab8",
+			"name": "d3cc45db-674a-4c28-8a0f-cdee46e41ab8",
+			"type": "text",
+			"content": "<h3 id=\"e6_51\">\"ASA-svikt\"</h3>\n<p>Det finns ingen entydig definition p&aring; ASA-svikt. M&aring;nga menar dock med detta begrepp &aring;terinsjuknande i ischemisk stroke under p&aring;g&aring;ende behandling med l&aring;gdos-ASA. Det finns inget vetenskapligt st&ouml;d f&ouml;r att &ouml;ka (eller minska) ASA-dosen (under f&ouml;ruts&auml;ttning att den varit 75&ndash;160&nbsp;mg/dygn). Om kardiell embolik&auml;lla saknas &auml;r det direkt ol&auml;mpligt att byta till antikoagulantia.<span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\"> Ett alternativ &auml;r dock behandling med klopidogrel alternativt kombinationsbehandling med ASA + dipyridamol (se ovan).</span> </span>Riskfaktorsituationen i &ouml;vrigt ses &ouml;ver, till exempel livsstilsfaktorer, tillkomst av signifikant karotisstenos, optimering av antihypertensiv och lipids&auml;nkande behandling.</p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9d1f7bf6-17b6-4749-a8b5-dc3b7a3ca54f",
+			"name": "9d1f7bf6-17b6-4749-a8b5-dc3b7a3ca54f",
+			"type": "text",
+			"content": "<h3 id=\"e6_52\">Antikoagulantiabehandling efter ischemisk stroke/TIA med kardiell embolik&auml;lla</h3>\n<p><span style=\"color: #ff0000;\">Patienter med ischemisk stroke/TIA och kardiell embolik&auml;lla (vanligen f&ouml;rmaksflimmer) har mycket stor risk f&ouml;r &aring;terinsjuknande. Orala antikoagulantia ger ett mycket gott skydd medan trombocyth&auml;mmare (l&aring;gdos-ASA) ger klart s&auml;mre strokeskydd men har likv&auml;rdig bl&ouml;dningsrisk varf&ouml;r ASA-behandling ej ska anv&auml;ndas. Av orala antikoagulantia rekommenderas numera non-vitamin K orala antagonister (NOAK) f&ouml;re warfarin p&aring; grund av visad l&auml;gre d&ouml;dlighet och minskad risk f&ouml;r intracerebral bl&ouml;dningar. Undantag &auml;r patienter med mekanisk klaff, mitralisstenos eller allvarligt nedsatt njurfunktion, d&auml;r endast warfarin ska anv&auml;ndas. Av olika NOAK (dabigatran, apixaban, rivarxoxaban och edoxaban) finns inga direkta j&auml;mf&ouml;relser dem emellan; flera faktorer b&ouml;r h&auml;r v&auml;gas samman. Se f&ouml;r &ouml;vrigt Socialstyrelsens &ouml;versyn av hj&auml;rtriktlinjer 2018 (2) och L&auml;kemedelsverkets behandlingsrekommendation om detta (3).</span></p>\n<p><span style=\"text-decoration: line-through; color: #ff0000;\">Sekund&auml;rprevention med peroralt antikoagulantium &auml;r klart mer effektiv &auml;n trombocyth&auml;mmare, trots inber&auml;knad &ouml;kad bl&ouml;dningsrisk. Heparin (l&aring;gmolekyl&auml;rt eller ofraktionerat) under akutfasen har inga gynnsamma effekter. Vid TIA/minor (ischemisk) stroke s&auml;tts behandling med warfarin in s&aring; snart som m&ouml;jligt, medan man brukar avvakta n&aring;gra dygn vid st&ouml;rre hj&auml;rninfarkt. Om embolik&auml;llan kvarst&aring;r, s&aring;som vid permanent eller intermittent f&ouml;rmaksflimmer eller vid mekanisk hj&auml;rtklaffprotes, blir behandlingen i regel livsl&aring;ng. Vid emboli till hj&auml;rnan i samband med hj&auml;rtinfarkt brukar behandlingstiden vara ca 6 m&aring;nader (se &auml;ven kapitlet Hj&auml;rtrytmrubbningar, avsnittet F&ouml;rmaksflimmer och tromboembolism.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c13be647-db6a-4c66-a60d-31e5d60e0fb3",
+			"name": "c13be647-db6a-4c66-a60d-31e5d60e0fb3",
+			"type": "text",
+			"content": "<h3 id=\"e6_53\"><span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">Nya perorala antikoagulantia</span></span></h3>\n<p></p>\n<p></p>\n<p><span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">Den tromboemboliprofylaktiska effekten av trombinh&auml;mmaren dabigatran respektive faktor X-h&auml;mmarna rivaroxaban och apixaban har j&auml;mf&ouml;rts med warfarin i mycket stora v&auml;lgjorda randomiserade studier (RE-LY, ROCKET AF och ARISTOTLE) hos h&ouml;griskpatienter med kroniskt, persisterande eller paroxysmalt f&ouml;rmaksflimmer (33,34,35). Prim&auml;rt s&auml;kerhetsm&aring;tt var allvarlig bl&ouml;dning. Tid i terapeutiskt intervall (time-in-range, TIR) f&ouml;r warfarinbehandlade patienter var generellt sett i de tre studierna kortare &auml;n vad som rapporterats fr&aring;n Sverige vilket f&aring;r beaktas n&auml;r man ska bed&ouml;ma studiernas relevans f&ouml;r svenska f&ouml;rh&aring;llanden. Se vidare kapitlet Hj&auml;rtrytmrubbningar, avsnittet F&ouml;rmaksflimmer och tromboembolism , och kapitlet Ven&ouml;s tromboembolism och medel mot trombos, avsnittet Profylax med de nya antikoagulantia.</span></span></p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "23c38adc-4d96-410c-9f0e-e189668fbef5",
+			"name": "23c38adc-4d96-410c-9f0e-e189668fbef5",
+			"type": "text",
+			"content": "<p></p>\n<h3 id=\"e6_54\">Blodtrycksbehandling efter stroke</h3>\n<p>Enligt SBU:s rapport fr&aring;n 2007 om m&aring;ttligt f&ouml;rh&ouml;jt blodtryck (8) anges att de flesta patienter med s&aring;v&auml;l ischemisk som hemorragisk stroke eller TIA och med blodtryck <span>&ge;</span>&nbsp;130/85 mm Hg b&ouml;r behandlas med antihypertensiva l&auml;kemedel. B&auml;st dokumentation har kombinationen ACE-h&auml;mmare och tiaziddiuretikum. <span style=\"color: #ff0000;\">Behandling med blodtryckss&auml;nkande l&auml;kemedel hos patienter med genomg&aring;ngen stroke eller TIA och h&ouml;gt eller normalt blodtryck medf&ouml;r en minskad risk f&ouml;r &aring;terinsjuknande i stroke och hj&auml;rtk&auml;rlh&auml;ndelser (1).&nbsp;</span>M&aring;lblodtryck, se kapitlet Hypertoni, avsnittet M&aring;l f&ouml;r behandlingen och uppf&ouml;ljning, medf&ouml;r att f&ouml;rutom ACE-h&auml;mmare&nbsp;<span style=\"color: #ff0000;\">eller angiotensinreceptorblockerare (ARB)</span> och tiaziddiuretikum, &auml;ven till&auml;gg av kalcium- och betablockerare kan bli n&ouml;dv&auml;ndigt.<span style=\"text-decoration: line-through; color: #ff0000;\"> &Auml;ven angiotensinreceptorblockerare (ARB) finns nu tillg&auml;ngliga som generika.</span> Grundregeln &auml;r att m&aring;lblodtrycket ska uppn&aring;s och att ofta kombinationsbehandling med 2&ndash;3 l&auml;kemedel, ibland 4 antihypertensiva l&auml;kemedel fordras. Detta m&aring;ste dock v&auml;gas mot risken f&ouml;r biverkningar till f&ouml;ljd av multimedicinering, speciellt hos de allra &auml;ldsta patienterna. Ofta initieras blodtrycksbehandling under sjukhusvistelsen f&ouml;r att sedan f&ouml;ljas upp och kompletteras vid strukturerade sekund&auml;rprofylaktiska mottagningsbes&ouml;k. Se f&ouml;r &ouml;vrigt kapitlet <a href=\"{pre}/kapitel/hjarta-karl/hypertoni.html#Hypertoni\" target=\"_blank\">Hypertoni</a>, avsnittet <a href=\"{pre}/kapitel/hjarta-karl/hypertoni.html#Farmakologisk-behandling-av-hypertoni\" target=\"_blank\">Farmakologisk behandling av hypertoni</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "aba17cb9-7f5c-44c6-b87a-9d5c6c5700f4",
+			"name": "aba17cb9-7f5c-44c6-b87a-9d5c6c5700f4",
+			"type": "text",
+			"content": "<h3 id=\"e6_55\">Statinbehandling efter ischemisk stroke <span style=\"color: #ff0000;\">eller TIA</span></h3>\n<p><span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">I Heart Protection Study (HPS) (36) ingick &auml;ven patienter med tidigare ischemisk stroke med, eller utan, k&auml;nd kransk&auml;rlssjukdom. Simvastatin 40 mg/dygn gavs till patienter med totalkolesterol &gt;&nbsp;3,5 mmol/L. Hos patienter med tidigare ischemisk stroke s&aring;gs en s&auml;kerst&auml;lld minskad risk f&ouml;r vaskul&auml;ra insjuknanden. Medel&aring;ldern var 65 &aring;r, &ouml;vre &aring;ldersgr&auml;ns 80 &aring;r, och strokepatienterna inkluderades i genomsnitt drygt 4 &aring;r efter sitt strokeinsjuknande. Det ska noteras att f&ouml;ljsamheten i aktiv respektive placebogrupp inte var optimal &ndash; behandlingen togs med s&auml;kerhet hos 85% i den aktiva behandlingsgruppen och hos 17% i placebogruppen.</span></span></p>\n<p class=\"indent\"><span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">I SPARCL-studien (37) testades effekten av atorvastatin 80 mg/dag mot placebo med avsikt att f&ouml;rhindra f&ouml;rnyad stroke hos patienter med stroke eller TIA (medel&aring;lder 63 &aring;r, intervall 21&ndash;92 &aring;r med LDL 2,5&ndash;4,9 mmol/L) utan samtidig koronarsjukdom. I aktivt behandlad grupp s&aring;gs en 2,2% minskad strokerisk efter 5 &aring;rs behandling (NNT = 45), trots en viss &ouml;kad f&ouml;rekomst av hj&auml;rnbl&ouml;dning. Sammanfattningsvis &auml;r statinbehandling klart indicerad till patienter med ischemisk stroke eller TIA, med eller utan samtidig kransk&auml;rlssjukdom. Numera n&auml;r exklusiviteten/patentet har g&aring;tt ut f&ouml;r atorvastatin blir kostnadseffektiviteten acceptabel vid generikaf&ouml;rskrivning i j&auml;mf&ouml;relse med simvastatin. <br><br></span></span><span style=\"color: #ff0000;\">Behandling med statiner efter stroke har positiv effekt p&aring; risk f&ouml;r &aring;terinsjuknande i stroke och annan vaskul&auml;r h&auml;ndelse (1). De positiva behandlingseffekterna ses s&aring;v&auml;l med eller utan samtidig koronarsjukdom och vid s&aring;v&auml;l h&ouml;ga som normala LDL-niv&aring;er. Det saknas studier om efterstr&auml;vansv&auml;rda m&aring;lniv&aring;er men med beaktande av den h&ouml;ga risken f&ouml;r &aring;terinsjuknande efter ischemisk stroke/TIA&nbsp; f&ouml;rordas ofta LDL-niv&aring; &le;&nbsp;1,8&nbsp;mmol/l. En omfattande analys av effekter och s&auml;kerhetsaspekter av statinbehandling finns beskrivet (38).&nbsp;</span>Se &auml;ven kapitlet <a href=\"{pre}/kapitel/hjarta-karl/blodfettsrubbningar.html#e4_2\" target=\"_blank\">Blodfettsrubbningar</a>, avsnittet <a href=\"{pre}/kapitel/hjarta-karl/blodfettsrubbningar.html#e4_56\" target=\"_blank\">Statiner</a>.</p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b16de665-b9d7-48c8-b13b-61d59ee79479",
+			"name": "b16de665-b9d7-48c8-b13b-61d59ee79479",
+			"type": "text",
+			"content": "<h3 id=\"e6_56\"><span style=\"color: #ff0000;\">&Aring;tg&auml;rder i samband med utskrivning och i ett l&auml;ngre perspektiv <span style=\"text-decoration: line-through;\">Checklista inf&ouml;r samordnad v&aring;rdplanering inf&ouml;r utskrivning</span> </span></h3>\n<p>Enligt lagf&ouml;reskrift (1190:1404) ska en v&aring;rdplan uppr&auml;ttas inf&ouml;r utskrivning om behandlande l&auml;kare bed&ouml;mer att patienten beh&ouml;ver fortsatt st&ouml;d fr&aring;n kommunernas socialtj&auml;nst eller h&auml;lso- och sjukv&aring;rd, landstingens prim&auml;rv&aring;rd, &ouml;ppen psykiatrisk v&aring;rd eller annan &ouml;ppenv&aring;rd (39).<span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\"> En checklista inf&ouml;r samordnad v&aring;rdplanering kan vara till god hj&auml;lp och b&ouml;r uppr&auml;ttas lokalt (se f&ouml;rslag, Figur 2 ovan).<br><br></span></span></p>\n<p><span style=\"text-decoration: line-through; color: #ff0000;\">F&ouml;r fortsatta &aring;tg&auml;rder i det l&aring;nga perspektivet &auml;r allm&auml;nl&auml;karens ansvar f&ouml;r uppf&ouml;ljning/rehabilitering och sekund&auml;rprevention central.</span> Den svaga l&auml;nken i v&aring;rdkedjan av cerebrovaskul&auml;ra sjukdomar &auml;r fortfarande uppf&ouml;ljningen <span style=\"color: #ff0000;\">s&aring;v&auml;l</span> under den n&auml;rmaste tiden efter utskrivning fr&aring;n sjukhuset <span style=\"color: #ff0000;\">som i det livsl&aring;nga perspektivet</span>. <span style=\"text-decoration: line-through; color: #ff0000;\">En tydlig &ouml;verf&ouml;ring fr&aring;n sjukhuset till prim&auml;rv&aring;rden enligt lokala &ouml;verenskommelser &auml;r ett m&aring;ste. </span><span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">Tidig utskrivning fr&aring;n sjukhusets strokeenhet med fortsatt rehabilitering i hemmet (strokehemrehabilitering) med hj&auml;lp av stroketeamets medlemmar (inklusive l&auml;kare) med speciell strokekompetens</span></span> <span style=\"color: #ff0000;\">Tidig utskrivning till hemmet med specialutbil dat multidisciplin&auml;rt hemrehabiliteringsteam knutet till strokeenhet&nbsp;</span>har i randomiserade studier visat f&ouml;rdelaktiga resultat j&auml;mf&ouml;rt med l&auml;ngre inneliggande eller annan strokev&aring;rd (40). Kvalificerad hemrehabilitering st&auml;ller stora krav p&aring; kompetens och organisation och l&auml;mpar sig f&ouml;r patienter med lindriga till m&aring;ttliga symtom boende inom rimligt avst&aring;nd fr&aring;n stroketeamet. <span style=\"text-decoration: line-through; color: #ff0000;\">Endast 15% av svenska strokepatienter fick 2011 s&aring;dan v&aring;rd (40), se Faktaruta 8 ).</span></p>\n<p class=\"indent\"><span style=\"text-decoration: line-through; color: #ff0000;\">Sekund&auml;rpreventiva mottagningar f&ouml;r att tidigt f&ouml;lja upp insatt behandling finns tillg&auml;ngliga p&aring; allt fler st&auml;llen, antingen i anslutning till sjukhusens strokeenheter alternativt i prim&auml;rv&aring;rden. Ett exempel &auml;r att stroke- och TIA-patienter kallas en m&aring;nad efter utskrivning och tr&auml;ffar specialutbildad sk&ouml;terska och l&auml;kare (fr&aring;n strokeenhetsteamet) som f&ouml;ljer upp livsstilsfaktorer och insatt sekund&auml;rpreventiv antitrombotisk, antihypertensiv och lipids&auml;nkande behandling och till ytterligare bes&ouml;k tills m&aring;luppfyllelsen uppn&aring;tts. D&auml;refter remitteras patienten, v&auml;linst&auml;lld, till sin distriktsl&auml;kare f&ouml;r fortsatta l&aring;ngsiktiga kontroller. Ett exempel p&aring; hur strokeenheten kan initiera uppf&ouml;ljning efter utskrivning fr&aring;n sjukhuset &auml;r ett hembes&ouml;k i direkt anslutning till utskrivningen varvid g&ouml;rs en bed&ouml;mning av i vilken utstr&auml;ckning patienten och n&auml;rst&aring;ende upplever medicinska, psykologiska och sociala problem. Sedan kan en multidisciplin&auml;r samverkan best&aring;ende av t&nbsp;ex prim&auml;rv&aring;rdsl&auml;kare, sk&ouml;terska, sjukgymnast, arbetsterapeut och logoped g&ouml;ra stora insatser f&ouml;r att forts&auml;tta rehabiliteringen, med syfte att st&ouml;dja en anpassning till patientens funktionsneds&auml;ttning. Det kan r&ouml;ra sig om bostadsanpassning och hj&auml;lpmedel, kartl&auml;ggning av kognitiv dysfunktion och dold depression. Man b&ouml;r g&aring; igenom l&auml;mpliga fysiska aktiviteter, eventuellt r&ouml;kstopp samt andra sekund&auml;rpreventiva &aring;tg&auml;rder med patient och n&auml;rst&aring;ende, se Faktaruta 10. Ett annat exempel p&aring; l&aring;ngsiktig uppf&ouml;ljning i prim&auml;rv&aring;rden &auml;r gruppmottagning f&ouml;r strokepatienter och deras n&auml;rst&aring;ende, d&auml;r deltagarna kallas &aring;rligen f&ouml;r en extra genomg&aring;ng f&ouml;r att p&aring; b&auml;sta s&auml;tt kunna f&ouml;rebygga &aring;terinsjuknandet.</span></p>\n<p><span style=\"color: #ff0000;\">I Socialstyrelsens strokeriktlinjer f&ouml;rordas en strukturerad uppf&ouml;ljning i &ouml;ppenv&aring;rd (p&aring; sjukhus eller i prim&auml;rv&aring;rden). En strukturerad uppf&ouml;ljning av stroke/TIA-patienter och dess n&auml;rst&aring;ende av strokekompetenta personer och med tillg&aring;ng till multiprofesionellt team vid behov f&ouml;rordas. Detta m&ouml;jligg&ouml;r &ouml;versyn av sekund&auml;rpreventiva &aring;tg&auml;rder, f&ouml;rnyade eller f&ouml;r&auml;ndrade symtom, aktuell funktions- och aktivitets-f&ouml;rm&aring;ga, livssituation, rehabiliteringsbehov och tillfredsst&auml;llelse, se Faktaruta 10. En f&ouml;rsta tidig uppf&ouml;ljning av medicinska sekund&auml;rpreventiva &aring;tg&auml;rder blir ofta aktuellt redan n&aring;gon/n&aring;gra veckor efter utskrivning. Det f&ouml;rsta &aring;terbes&ouml;ket f&ouml;r strokepatienter b&ouml;r ske inom 3-6 m&aring;nader och f&ouml;r TIA-patienter inom 1-3 m&aring;nader. Ytterligare uppf&ouml;ljningstillf&auml;llen b&ouml;r vara individanpassade utifr&aring;n patientens aktuella behov. I samband med mottagningsbes&ouml;k kan man med f&ouml;rdel nyttja sig av en <a href=\"https://neurophys.gu.se/digitalAssets/1588/1588424_post-stroke-checklista-psc-pdf.-svensk-version-1.1.pdf\" target=\"_blank\">post-stroke checklista</a> som utarbetats internationellt som sen &ouml;versatts till svenska.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "79903728-eb46-4d4c-b7f8-d4ddfba72784",
+			"name": "79903728-eb46-4d4c-b7f8-d4ddfba72784",
+			"type": "facts",
+			"content": {
+				"number": "10",
+				"title": "Strukturerad uppföljning efter stroke/TIA (1)",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<table>\r\n<tbody>\r\n<tr>\r\n<td width=\"604\">\r\n<p>Uppf&ouml;ljningen b&ouml;r vara mottagningsbaserad och kan ske s&aring;v&auml;l i prim&auml;rv&aring;rden som p&aring; sjukhus. Det f&ouml;rsta &aring;terbes&ouml;ket f&ouml;r strokepatienter b&ouml;r ske inom 3-6 m&aring;nader och f&ouml;r TIA-patienter inom 1-3 m&aring;nader*. Ytterligare uppf&ouml;ljningstillf&auml;llen b&ouml;r vara individanpassade utifr&aring;n patientens aktuella behov.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"604\">\r\n<p>Uppf&ouml;ljningen kan genomf&ouml;ras av olika strokekompetenta professioner,</p>\r\n<p>men det ska finnas tillg&aring;ng till ett multiprofessionellt team vid behov,</p>\r\n<p>s&aring;som l&auml;kare, sjuksk&ouml;terska, fysioterapeut, arbetsterapeut, kurator och logoped.</p>\r\n<p>Det b&ouml;r &auml;ven finnas tillg&aring;ng till dietist och psykolog; helst med neuropsykologisk</p>\r\n<p>inriktning.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td width=\"604\">\r\n<p>M&ouml;jligg&ouml;r individanpassade &aring;tg&auml;rder och att kunna h&auml;nvisa vidare</p>\r\n<p>till r&auml;tt instans. Bed&ouml;mning g&ouml;rs av:</p>\r\n<ul style=\"padding:0px; margin:0 0 8px 15px;\">\r\n<li>sekund&auml;rpreventiva &aring;tg&auml;rder (s&aring;som medicinering och levnadsvanor)</li>\r\n<li>nytillkomna eller f&ouml;r&auml;ndrade symtom (s&aring;som neurologiska symtom, depression, sm&auml;rta, minnesst&ouml;rningar, emotionalism, &aring;ngest, fatigue, inkontinens)</li>\r\n<li>funktionsf&ouml;rm&aring;ga (s&aring;som motorik, r&ouml;rlighet, balans, k&auml;nsel, spasticitet och kognition)</li>\r\n<li>aktivitetsf&ouml;rm&aring;ga (s&aring;som kommunikation, f&ouml;rflyttningar, f&ouml;rm&aring;ga att klara vardagliga aktiviteter samt fritidsaktiviteter)</li>\r\n<li>f&ouml;r&auml;ndrad livssituation (s&aring;som relationer med n&auml;rst&aring;ende, arbets- och bostadssituation)</li>\r\n<li>behov av rehabiliteringsinsatser och hj&auml;lpmedel</li>\r\n<li>l&auml;mplighet som bilf&ouml;rare (k&ouml;rkort) och j&auml;gare (vapenlicens)</li>\r\n<li>tillfredsst&auml;llelse med befintlig v&aring;rd och rehabilitering</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>*En f&ouml;rsta tidig uppf&ouml;ljning av medicinska sekund&auml;rpreventiva &aring;tg&auml;rder blir ofta aktuellt n&aring;gon/n&aring;gra veckor efter utskrivning.&nbsp;</p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "02dc53eb-89a6-435d-a487-20696cbc698e",
+			"name": "02dc53eb-89a6-435d-a487-20696cbc698e",
+			"type": "figure",
+			"content": {
+				"number": "2",
+				"maxwidth": "",
+				"image": "/images/e6_hja_cerebrovaskulara_2013fm10_images/figur2.png",
+				"title": "",
+				"text": "<p><span style=\"text-decoration: line-through;\">Checklista inf&ouml;r samordnad v&aring;rdplanering</span></p>",
+				"alt": "",
+				"id": "e6_57"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f4fa8263-3a02-4089-98f8-44df36024095",
+			"name": "f4fa8263-3a02-4089-98f8-44df36024095",
+			"type": "facts",
+			"content": {
+				"number": "10",
+				"title": "<a class=\"crossref\" id=\"96434\"></a>Checklista i samband med återbesök  hos distriktsläkare",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<h5 id=\"e6_61\"><span style=\"text-decoration: line-through;\">Basalt</span></h5>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"text-decoration: line-through;\">Blodtryck (m&aring;lblodtryck i regel &le;&nbsp;130/80 mm&nbsp;Hg)</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"text-decoration: line-through;\">Blodfetter (m&aring;lniv&aring; LDL &lt;&nbsp;2,5 mmol/L)</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"text-decoration: line-through;\"><span class=\"tab\"></span>Bed&ouml;mning av hj&auml;rta (inklusive EKG), halsk&auml;rl, perifer cirkulation</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"text-decoration: line-through;\"><span class=\"tab\"></span>Hb, blodsocker, blodfetter, kreatinin, mikro&shy;albumin i urin</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"text-decoration: line-through;\"><span class=\"tab\"></span>R&ouml;kning</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"text-decoration: line-through;\"><span class=\"tab\"></span>Kostvanor, vikt (eventuell viktutveckling och BMI)</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"text-decoration: line-through;\"><span class=\"tab\"></span>S&ouml;mn</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"text-decoration: line-through;\"><span class=\"tab\"></span>Fysisk aktivitet</span></li>\r\n</ul>\r\n<h5 id=\"e6_62\"><span style=\"text-decoration: line-through;\"><span class=\"tab\"></span>Specifikt</span></h5>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"text-decoration: line-through;\"><span class=\"tab\"></span>Kontakter betr&auml;ffande rehabilitering och aktivering</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"text-decoration: line-through;\"><span class=\"tab\"></span>Beroende och oberoende samt behov av hj&auml;lpmedel</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"text-decoration: line-through;\"><span class=\"tab\"></span>Funktionsstatus, motorik, perception och kognition, inklusive spr&aring;k</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"text-decoration: line-through;\"><span class=\"tab\"></span>Epilepsi</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"text-decoration: line-through;\"><span class=\"tab\"></span>Emotionalism, tr&ouml;tthet, depression, &aring;ngest</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"text-decoration: line-through;\"><span class=\"tab\"></span>Dysfagi, hosta vid m&aring;ltid</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"text-decoration: line-through;\"><span class=\"tab\"></span>Stressupplevelse</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"text-decoration: line-through;\"><span class=\"tab\"></span>Samliv</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"text-decoration: line-through;\"><span class=\"tab\"></span>Bilk&ouml;rning</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"text-decoration: line-through;\"><span class=\"tab\"></span>Egen uppfattning om vad som utg&ouml;r det sv&aring;raste hindret efter skadan</span></li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "e6_60"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "74a83f6f-fefc-4fab-af15-86634aae037b",
+			"name": "74a83f6f-fefc-4fab-af15-86634aae037b",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"e6_63\">Referenser</h2>\n<ol class=\"references\"><li id=\"reference_1\"><a href=\"http://www.socialstyrelsen.se/publikationer2018/2018-3-11/\" target=\"_blank\">Nationella riktlinjer f&ouml;r v&aring;rd vid stroke - St&ouml;d f&ouml;r styrning och ledning. </a>Socialstyrelsen 2018.</li>\n<li id=\"reference_2\"><a href=\"http://www.socialstyrelsen.se/nationellariktlinjerhjartsjukvard\" target=\"_blank\">Nationella riktlinjer f&ouml;r hj&auml;rtsjukv&aring;rd - &Ouml;versyn 2018</a>. Socialstyrelsen 2018.</li>\n<li id=\"reference_3\"><a href=\"https://lakemedelsverket.se/malgrupp/Halso---sjukvard/Behandlings--rekommendationer/Behandlingsrekommendation---listan/Antikoagulantiabehandling-vid-formaksflimmer1/\" target=\"_blank\">Antikoagulantiabehandling vid f&ouml;rmaksflimmer</a>. Information fr&aring;n L&auml;kemedelsverket 2017:28(1)<strong></strong></li>\n<li id=\"reference_4\">Rosengren A, Giang KW, Lappas G, Jern C, Tor&eacute;n K, Bj&ouml;rck L. Twenty-four-year trends in the incidence of ischemic stroke in sweden from 1987 to 2010. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23839506\" target=\"_blank\" class=\"linkOut\">Stroke, 2013</a></li>\n<li id=\"reference_5\">\n<p>Piepoli MF, Hoes AW, Agewall S, Albus C, Brotons C, Catapano AL et al. 2016 European Guidelines on cardiovascular disease prevention in clinical practice: The Sixth Joint Task Force of the European Society of Cardiology and Other Societies on Cardiovascular Disease Prevention in Clinical Practice (constituted by representatives of 10 societies and by invited experts). Developed with the special contribution of the European Association for Cardiovascular Prevention &amp; Rehabilitation (EACPR). <a href=\"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4986030/\" target=\"_blank\">Eur. Heart J, 2016</a></p>\n</li>\n<li id=\"reference_6\"><span style=\"background-color: #ffff00;\">Karjalainen J, Adiels M, Bj&ouml;rk L, Cooney MT, Graham I et al. An evaluation of the performance of SCORE Sweden in estimation cardiovascular risk: The northern Sweden MONICA study 1999-2014. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/?term=Eur+J+Prev+Cardiol.+2017+Jan%3B24(1)%3A103-110\" target=\"_blank\" style=\"background-color: #ffff00;\"></a><a href=\"https://www.ncbi.nlm.nih.gov/pubmed/?term=Eur+J+Prev+Cardiol.+2017+Jan%3B24(1)%3A103-110#\" title=\"European journal of preventive cardiology.\" abstractlink=\"yes\" alsec=\"jour\" alterm=\"Eur J Prev Cardiol.\" role=\"menuitem\" aria-expanded=\"false\" aria-haspopup=\"true\" target=\"_blank\" style=\"background-color: #ffff00;\"><span class=\"highlight\">Eur J Prev Cardiol</span>.</a> <span class=\"highlight\">2017</span></span></li>\n<li id=\"reference_7\"><a href=\"https://lakemedelsverket.se/aterosklerotisk_hjart-karlsjukdom\" target=\"_blank\">Att f&ouml;rebygga aterosklerotisk hj&auml;rt-k&auml;rlsjukdom med l&auml;kemedel - behandlingsrekommendation.</a> Information fr&aring;n L&auml;kemedelsverket. 2014:(25)5.</li>\n<li id=\"reference_8\">SBU. <a href=\"https://www.sbu.se/sv/publikationer/SBU-utvarderar/mattligt-forhojt-blodtryck/\" target=\"_blank\">M&aring;ttligt f&ouml;rh&ouml;jt blodtryck uppdatering 2007</a>. En systematisk litteratur&ouml;versikt. Stockholm: Statens beredning f&ouml;r medicinsk utv&auml;rdering (SBU); 2007. SBU-rapport nr 170/1U. <br>ISBN 9789185413195.</li>\n<li id=\"reference_9\"><a href=\"https://sas.vgregion.se/contentassets/2f34438ea3e7476b9c5614c12aec9190/patientversion-nationella-riktlinjer-sjukdomsforebyggande-metoder.pdf\" target=\"_blank\">Tobak, alkohol, fysisk aktivitet och matvanor &ndash; s&aring; kan h&auml;lso- och sjukv&aring;rden st&ouml;dja dig att &auml;ndra oh&auml;lsosamma levnadsvanor. </a>Rekommendationer ur Socialstyrelsens nationella riktlinjer. 2012</li>\n<li id=\"reference_10\">Weinehall L, Ohgren B, Persson M, Stegmayr B, Boman K, Hallmans G, Lindholm LH. High remaining risk in poorly treated hypertension: the \\qrule of halves\\q still exists. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=weinehall+l+hypertension+2002\" target=\"_blank\" class=\"linkOut\">J Hypertens, 2002</a></li>\n<li id=\"reference_11\"><a href=\"https://www.ssth.se/\" target=\"_blank\">Svenska s&auml;llskapet f&ouml;r trombos och hemostas</a>.</li>\n<li id=\"reference_12\">Nationella strokekampanjen. Ett initiativ fr&aring;n Sveriges landsting och regioner <a href=\"http://strokekampanjen.se/\" target=\"_blank\" class=\"linkOut\">1177 v&aring;rdguiden.</a></li>\n<li id=\"reference_13\">Perry JJ, Stiell IG, Sivilotti ML, Bullard MJ, Emond M, Symington C, et al. Sensitivity of computed tomography performed within six hours of onset of headache for diagnosis of subarachnoid haemorrhage: prospective cohort study. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/21768192\" target=\"_blank\">BMJ. 2011</a></li>\n<li id=\"reference_14\">Hacke W, Donnan G, Fieschi C, Kaste M, von Kummer R, Broderick JP, et al. Association of outcome with early stroke treatment: pooled analysis of ATLANTIS, ECASS, and NINDS rt-PA stroke trials. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/15016487\" target=\"_blank\" class=\"linkOut\">Lancet. 2004;363:768&ndash;74.</a></li>\n<li id=\"reference_15\">Hacke W, Kaste M, Bluhmki E, Brozman M, Davalos A, Guidetti D, et al. Thrombolysis with <a href=\"http://www.lakemedelsboken.se/atc/B01AD02\" data-atcid=\"B01AD02\" data-atctitles=\"Blod_och_blodbildande_organ--Antikoagulantia--Antikoagulantia--Enzymer--Alteplas\" class=\"lb inlineGenerica text\">alteplas</a>e 3 to 4.5 hours after acute ischemic stroke. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/18815396\" target=\"_blank\" class=\"linkOut\">N Engl J Med. 2008;359:1317&ndash;29</a> .<a class=\"author size-m workspace-trigger\" name=\"bau10\" href=\"https://www.sciencedirect.com/science/article/pii/S0140673615607140?via%3Dihub#!\"><span class=\"content\"><span class=\"text given-name\"></span></span></a><a class=\"author size-m workspace-trigger\" name=\"bau20\" href=\"https://www.sciencedirect.com/science/article/pii/S0140673615607140?via%3Dihub#!\"><span class=\"content\"><span class=\"author-ref\"></span></span></a><span style=\"background-color: #ffff00;\"></span></li>\n<li id=\"reference_16\"><span style=\"background-color: #ffff00;\"><a class=\"author size-m workspace-trigger\" name=\"bau20\" href=\"https://www.sciencedirect.com/science/article/pii/S0140673615607140?via%3Dihub#!\" style=\"background-color: #ffff00;\"><span class=\"content\"><span class=\"author-ref\"></span></span></a>Wardlaw JM, Murray V, Berge E, del Zoppo GJ. Trombolysis for acute ischaemic stroke. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/25072528\" target=\"_blank\" style=\"background-color: #ffff00;\">Cochrane Database Syst Rev. 2014</a></span></li>\n<li id=\"reference_17\">IST-3 collaborative group, Sandercock P, Wardlaw JM, Lindley RI, Dennis M, Cohen G, Murray G, et al. The benefits and harms of intravenous thrombolysis with recombinant tissue plasminogen activator within 6 h of acute ischaemic stroke (the third international stroke trial [IST-3]): a randomised controlled trial. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22632908\" target=\"_blank\" class=\"linkOut\">Lancet. 2012;379:2352&ndash;63.</a></li>\n<li id=\"reference_18\">Wardlaw JM, Murray V, Berge E, del Zoppo G, Sandercock P, Lindley RL, Cohen G. Recombinant tissue plasminogen activator for acute ischaemic stroke: an updated systematic review and meta-analysis.<a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22632907\" target=\"_blank\" class=\"linkOut\"> Lancet. 2012;379:2364&ndash;72.</a></li>\n<li id=\"reference_19\"><span style=\"background-color: #ffff00;\">Goyal M, Menon BK, van Zwam WH, Dippel DW, Mitchell PJ, Demchuk AM et al. Endovascular thrombectomy after large-vessel ischaemic stroke: a meta-analysis of individual patient data from five randomised trials.</span></li>\n<li id=\"reference_20\"><span style=\"background-color: #ffff00;\">Alexander P, Heels-Ansdell D, Siemieniuk R, Bhatnagar N, Chang Y, Fei Y et al. Hemicraniectomy versus medical treatment with large MCA infarct: a review and meta-analysis. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/27884858\" target=\"_blank\" style=\"background-color: #ffff00;\">BMJ Open. 2016</a></span></li>\n<li id=\"reference_21\"><span style=\"background-color: #ffff00;\"><span style=\"background-color: #ffff00;\">Yang MH, Lin HY, Fu J, Roodrajeetsing G, Shi SL, Xiao SW et al. Decompressive hemicraniectomy in patients with malignant middle cerebral artery infarction: A systematic review and meta-analysis. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/25661677\" target=\"_blank\"><span>Surgeon.</span> 2015</a><br></span></span></li>\n<li id=\"reference_22\">Chimowitz MI, Lynn MJ, Derdeyn CP, Turan TN, Fiorella D, Lane BF, et al. Stenting versus aggressive medical therapy for intracranial arterial stenosis. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/21899409\" target=\"_blank\" class=\"linkOut\">N Engl J Med. 2011;365:993&ndash;1003.</a></li>\n<li id=\"reference_23\">Kennedy F, Lanfranconi S, Hicks C, Reid J, Gompertz P, Price C, et al. Antiplatelets vs anticoagulation for dissection: CADISS nonrandomized arm and meta-analysis. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=kennedy+f+and+antiplatelets+and+2012\" target=\"_blank\" class=\"linkOut\">Neurology. 2012.</a></li>\n<li id=\"reference_24\">Markus HS, Hayter E, Levi C, Feldman A, Venables G, Norris J. Antiplatelet treatment compared with anticoagulation treatment for cervical artery dissection (CADISS): a randomised trial. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/25684164\" target=\"_blank\"><span>Lancet Neurol.</span> 2015.</a></li>\n<li id=\"reference_25\">Mendelow AD, Gregson BA, Rowan EN, Murray GD, Gholkar A, Mitchell PM; STICH II Investigators. Early surgery versus initial conservative treatment in patients with spontaneous supratentorial lobar intracerebral haematomas (STICH II): a randomised trial. Lancet. 2013 Aug 3;382(9890):397&ndash;<span class=\"blue\">408</span>.</li>\n<li id=\"reference_26\"><span style=\"background-color: #ffff00;\">Tsivgoulis G, Katsanos AH, Butcher KS, Boviatsis E, Triantafyllou N, Rizos I et al. Intensive blood pressure reduction in acute intracerebral hemorrhage: a meta-analysis. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/25239836#\" title=\"Neurology.\" abstractlink=\"yes\" alsec=\"jour\" alterm=\"Neurology.\" role=\"menuitem\" aria-expanded=\"false\" aria-haspopup=\"true\" target=\"_blank\" style=\"background-color: #ffff00;\">Neurology, 2014</a></span></li>\n<li id=\"reference_27\"><span style=\"background-color: #ffff00;\">Anderson CS, Heeley E, Huang Y, Wang J, Stapf C, Delcourt C et al. Rapid blood-pressure lowering in patients with acute intracerebral hemorrhage. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/23713578\" title=\"The New England journal of medicine.\" abstractlink=\"yes\" alsec=\"jour\" alterm=\"N Engl J Med.\" role=\"menuitem\" aria-expanded=\"false\" aria-haspopup=\"true\" target=\"_blank\" style=\"background-color: #ffff00;\">N Engl J Med, 2013</a></span></li>\n<li id=\"reference_28\"><span style=\"background-color: #ffff00;\">Qureshi AI, Palesch YY, Barsan WG, Hanley DF, Hsu CY, Martin RL et al. Intensive Blood-Pressure Lowering in Patients with Acute Cerebral Hemorrhage. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/27276234\" target=\"_blank\" style=\"background-color: #ffff00;\">N Engl J Med, 2016</a></span></li>\n<li id=\"reference_29\"><span style=\"background-color: #ffff00;\">Pollack CV Jr, Reilly PA, van Ryn J, Eikelboom JW, Glund S, Bernstein RA. Idarucizumab for Dabigatran Reversal - Full Cohort Analysis. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/28693366\" title=\"The New England journal of medicine.\" abstractlink=\"yes\" alsec=\"jour\" alterm=\"N Engl J Med.\" role=\"menuitem\" aria-expanded=\"false\" aria-haspopup=\"true\" target=\"_blank\" style=\"background-color: #ffff00;\">N Engl J Med., 2017</a> 2017</span></li>\n<li id=\"reference_30\">Mayer SA, Brun NC, Begtrup K, Broderick J, Davis S, Diringer MN, et al. Efficacy and safety of recombinant activated factor VII for acute intracerebral hemorrhage. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/18480205\" target=\"_blank\" class=\"linkOut\">N Engl J Med. 2008;358:2127&ndash;37.</a></li>\n<li id=\"reference_31\">Anderson CS, Huang Y, Wang JG, Arima H, Neal B, Peng B, et al. Intensive blood pressure reduction in acute cerebral haemorrhage trial (INTERACT): a randomised pilot trial. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=anderson+cs+and+blood+and+haemorrhage+and+2008\" target=\"_blank\" class=\"linkOut\">Lancet Neurol. 2008;7:391&ndash;9.</a></li>\n<li id=\"reference_32\">Anderson CS, Huang Y, Arima H, Heeley E, Skulina C, Parsons MW, et al. Effects of early intensive blood pressure-lowering treatment on the growth of hematoma and perihematomal edema in acute intracerebral hemorrhage: the Intensive Blood Pressure Reduction in Acute Cerebral Haemorrhage Trial (INTERACT). <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/20044534\" target=\"_blank\" class=\"linkOut\">Stroke. 2010;41:307&ndash;12.</a></li>\n<li id=\"reference_33\">Sacco RL, Diener HC, Yusuf S, Cotton D, Ounpuu S, Lawton WA, et al. PRoFESS Study Group. Aspirin and extended-release <a href=\"http://www.lakemedelsboken.se/atc/B01AC07\" data-atcid=\"B01AC07\" data-atctitles=\"Blod_och_blodbildande_organ--Antikoagulantia--Antikoagulantia--Trombocytaggregationsh&#xE4;mmande_medel,_exkl._heparin--Dipyridamol\" class=\"lb inlineGenerica text\">dipyridamol</a>e versus <a href=\"http://www.lakemedelsboken.se/atc/B01AC04\" data-atcid=\"B01AC04\" data-atctitles=\"Blod_och_blodbildande_organ--Antikoagulantia--Antikoagulantia--Trombocytaggregationsh&#xE4;mmande_medel,_exkl._heparin--Klopidogrel\" class=\"lb inlineGenerica text\">clopidogrel</a> for recurrent stroke. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/18753638\" target=\"_blank\" class=\"linkOut\">N Engl J Med. 2008;359:1238&ndash;51.</a></li>\n<li id=\"reference_34\"><span style=\"background-color: #ffff00;\">Lansberg MG, O'Donnell MJ, Khatri P, Lang ES, Nguyen-Huynh MN, Schwartz NE et al. Antithrombic and thrombolytic therapy for ischemic stroke: Antithrombotic Therapy and Prevention of Thrombosis, 9th ed: American College of Chest Physicians Evidence-Based Clinical Practice Guidelines.&nbsp;<a href=\"https://www.ncbi.nlm.nih.gov/pubmed/22315273\" target=\"_blank\" style=\"background-color: #ffff00;\">Chest. 2012</a></span></li>\n<li id=\"reference_35\">\n<p id=\"Clopidogrel-and-Aspirin-in-Acute-Ischemic-Stroke-and-High-Risk-TIA-Johnston-SC-Easton-JD-Farrant-M-Barsan-W-Conwit-RA-Elm-JJ-et-al-\"><span style=\"background-color: #ffff00;\">Clopidogrel and Aspirin in Acute Ischemic Stroke and High-Risk TIA. Johnston SC, Easton JD, Farrant M, Barsan W, Conwit RA, Elm JJ et al. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/29766750\" target=\"_blank\" style=\"background-color: #ffff00;\">N Engl J Med. 2018</a></span></p>\n</li>\n<li id=\"reference_36\">Interaktion mellan vissa PPI och <a href=\"http://www.lakemedelsboken.se/atc/B01AC04\" data-atcid=\"B01AC04\" data-atctitles=\"Blod_och_blodbildande_organ--Antikoagulantia--Antikoagulantia--Trombocytaggregationsh&#xE4;mmande_medel,_exkl._heparin--Klopidogrel\" class=\"lb inlineGenerica text\">klopidogrel</a>. L&auml;kemedelsverket. 2010-06-21.<br><a href=\"http://www.lakemedelsverket.se/Alla-nyheter/NYHETER-2010/Interaktion-bekraftad-mellan-vissa-PPI-och-klopidogrel-/\" target=\"_blank\" class=\"linkOut\">www.lakemedelsverket.se </a></li>\n<li id=\"reference_37\">Roberts JD, Wells GA, Le May MR, Labinaz M, Glover C, Froeschl M, et al. Point-of-care genetic testing for personalisation of antiplatelet treatment (RAPID GENE): a prospective, randomised, proof-of-concept trial.<br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=roberts+jd+2012+personalisation\" target=\"_blank\" class=\"linkOut\">Lancet. 2012;379:1705&ndash;11.</a></li>\n<li id=\"reference_38\"><span style=\"background-color: #ffff00;\">Collins R, Reith C, Emberson J, Armitage J, Baigent C, Blackwell L et al. Interpretation of the evidence for the efficacy and safety of statin therapy. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/27616593\" target=\"_blank\" style=\"background-color: #ffff00;\">Lancet, 2016</a></span></li>\n<li id=\"reference_39\">SOSFS 2005:27. <a href=\"https://www.socialstyrelsen.se/sosfs/2005-27\" target=\"_blank\">Socialstyrelsens f&ouml;reskrifter om samverkan vid in- och utskrivning av patienter i sluten v&aring;rd. Socialstyrelsen.</a> 2005. Artikelnr 2005-10-27.</li>\n<li id=\"reference_40\">\n<p><span style=\"background-color: #ffff00;\">Langhorne P,&nbsp;Baylan S;&nbsp;Early&nbsp;Supported&nbsp;Discharge&nbsp;Trialists. Early&nbsp;supported&nbsp;discharge&nbsp;services for people with acute stroke. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/28703869\" target=\"_blank\" style=\"background-color: #ffff00;\">Cochrane Database Syst Rev 2017</a>&nbsp;</span></p>\n</li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "true",
+					"pagefootnotes.js": "false",
+					"references.js": "true"
+				}
+			}
+		},
+		{
+			"id": "4f4a82d5-fd23-4640-8fd9-d4f543ced276",
+			"name": "4f4a82d5-fd23-4640-8fd9-d4f543ced276",
+			"type": "references",
+			"content": "<h2 id=\"For-vidare-lasning\">F&ouml;r vidare l&auml;sning</h2>\n<ol class=\"references\"><li id=\"reference_1\">Wester P. Cerebrovaskul&auml;ra sjukdomar, I: Dahlstr&ouml;m, Keshagias S, Stenke L, red. Medicin. <span style=\"color: #ff0000;\">6:e uppl. Stockholm; Liber 2018. s 123-151 </span>ISBN 9789147099887.</li>\n<li id=\"reference_2\">Wester P. Cerebrovaskul&auml;ra sjukdomar, I: Lindgren S, Engstr&ouml;m-Laurent A, Karason K, Tiensuu Janson E, red. Medicin. Lund: Studentlitteratur; <span style=\"color: #ff0000;\">2:a uppl. 2017. ISBN:9789144108162</span></li>\n<li id=\"reference_3\">Gotts&auml;ter A, Lindgren A, Wester P, red. Stroke och cerebrovaskul&auml;r sjukdom. Lund: Studentlitteratur; 2014, <span style=\"color: #ff0000;\">ISBN 9789144086583</span><br><br></li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/hjarta-karl/cerebrovaskulara_sjukdomar.json",
+	"modified": "2018-07-06 09:13",
+	"isPublished": true,
+	"indexed": "true"
+}
