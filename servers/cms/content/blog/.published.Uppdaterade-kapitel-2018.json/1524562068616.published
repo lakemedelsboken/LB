@@ -1,0 +1,68 @@
+{
+	"templateName": "blogitem",
+	"templateDescription": "Bloggsida",
+	"title": "Uppdaterade kapitel 2018",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "nyhet",
+	"created": "2018-03-10 10:26",
+	"published": "2018-03-16 15:19",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "a899878a-4e36-4bcf-ac28-aaca59170946",
+			"name": "bfe3211c-09d7-4feb-8abd-7e4f08e93109",
+			"type": "summary",
+			"content": "<p>F&ouml;ljande kapitel har genomg&aring;tt st&ouml;rre uppdateringar under 2018:</p>\n<p></p>\n<ul>\n<li><a href=\"{pre}/kapitel/onkologi/lungcancer.html#j4_3\">Lungcancer</a></li>\n<li><a href=\"{pre}/kapitel/nutrition/vitaminer_mineraler_och_sparamnen.html#c3_1\">Vitaminer, mineraler och sp&aring;r&auml;mnen</a></li>\n<li><a href=\"{pre}/kapitel/mage-tarm/leversjukdomar.html#b2_2\">Leversjukdomar</a></li>\n<li><a href=\"{pre}/kapitel/nefrologi-urologi/urininkontinens.html#g2_2\" target=\"_blank\">Urininkontinens</a></li>\n<li><a href=\"{pre}/kapitel/pediatrik/vanliga_problem_under_smabarnsaren.html#c1_2\" target=\"_blank\">Vanliga problem under sm&aring;barns&aring;ren</a></li>\n<li><a href=\"{pre}/kapitel/lakemedelsanvandning/lakemedelsbiverkningar.html#Lakemedelsbiverkningar\" target=\"_blank\">L&auml;kemedelsbiverkningar</a></li>\n<li><a href=\"{pre}/kapitel/endokrinologi/kortikosteroider_och_hypofyshormoner.html#k4_3\" target=\"_blank\">Kortikosteroider och hypofyshormoner</a></li>\n<li><a href=\"{pre}/kapitel/andningsvagar/astma_och_kol.html#m1_4\" target=\"_blank\">Astma och KOL</a></li>\n</ul>\n<p>I kapitlen nedan har mindre uppdateringar gjorts:</p>\n<p></p>\n<ul>\n<li><a href=\"{pre}/kapitel/nutrition/fetma.html#Fetma\" target=\"_blank\">Fetma</a></li>\n<li><a href=\"{pre}/kapitel/hjarta-karl/perifera_artarsjukdomar.html#e7_3\" target=\"_blank\">Perifera art&auml;rsjukdomar</a></li>\n</ul>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "true",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d9dbdcaa-d1c3-400d-ad3f-b5ca8d55e29f",
+			"name": "d9dbdcaa-d1c3-400d-ad3f-b5ca8d55e29f",
+			"type": "text",
+			"content": "<h1 id=\"Uppdaterade-kapitel-2018\">Uppdaterade kapitel 2018</h1>\n<p>F&ouml;ljande kapitel har genomg&aring;tt st&ouml;rre uppdateringar under 2018:</p>\n<p></p>\n<ul>\n<li><a href=\"{pre}/kapitel/nefrologi-urologi/urininkontinens.html#g2_2\" target=\"_blank\">Urininkontinens</a></li>\n<li><a href=\"{pre}/kapitel/pediatrik/vanliga_problem_under_smabarnsaren.html#c1_2\" target=\"_blank\">Vanliga problem under sm&aring;barns&aring;ren</a></li>\n<li><a href=\"{pre}/kapitel/lakemedelsanvandning/lakemedelsbiverkningar.html#Lakemedelsbiverkningar\" target=\"_blank\">L&auml;kemedelsbiverkningar</a></li>\n<li><a href=\"{pre}/kapitel/endokrinologi/kortikosteroider_och_hypofyshormoner.html#k4_3\" target=\"_blank\">Kortikosteroider och hypofyshormoner</a></li>\n<li><a href=\"{pre}/kapitel/andningsvagar/astma_och_kol.html#m1_4\" target=\"_blank\">Astma och KOL</a></li>\n</ul>\n<p>I kapitlen nedan har mindre uppdateringar gjorts:</p>\n<p></p>\n<ul>\n<li><a href=\"{pre}/kapitel/nutrition/fetma.html#Fetma\" target=\"_blank\">Fetma</a></li>\n<li><a href=\"{pre}/kapitel/hjarta-karl/perifera_artarsjukdomar.html#e7_3\" target=\"_blank\">Perifera art&auml;rsjukdomar</a></li>\n</ul>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/blog/Uppdaterade-kapitel-2018.json",
+	"indexed": "true",
+	"modified": "2018-04-24 11:27",
+	"isPublished": true
+}

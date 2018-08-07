@@ -1,0 +1,1012 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Demens | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-09 01:04",
+	"published": "2015-07-09 01:04",
+	"validUntil": "",
+	"createdBy": "Ingvar Karlsson, Anders Wimo",
+	"replacesUrl": "/s7_psy_demens_2013fm10.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "127f8ed3-2e4e-40cd-abcb-5eda0209c2ba",
+			"name": "127f8ed3-2e4e-40cd-abcb-5eda0209c2ba",
+			"type": "author",
+			"content": {
+				"firstname": "Ingvar",
+				"surname": "Karlsson",
+				"description": "Neuropsykiatri, SU/Mölndal",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "13d0d750-74e5-4772-8830-96d064f52176",
+			"name": "13d0d750-74e5-4772-8830-96d064f52176",
+			"type": "author",
+			"content": {
+				"firstname": "Anders",
+				"surname": "Wimo",
+				"description": "Bergsjö Hälsocentral, Bergsjö",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "77879fd1-790e-4fc9-936a-0b7cb8dc519c",
+			"name": "77879fd1-790e-4fc9-936a-0b7cb8dc519c",
+			"type": "text",
+			"content": "<h1 id=\"s7_2\">Demens</h1>\n<h2 id=\"s7_3\">Inledning</h2>\n<p class=\"ingress\"><span style=\"color: #ff0000;\">Ordet <span style=\"color: #000000;\">demens har anv&auml;nts som ett begrepp f&ouml;r en varaktig kognitiv neds&auml;ttning sedan mer &auml;n 200 &aring;r.</span> <span style=\"color: #000000;\">Demens orsakas av en rad sjukdomar som p&aring; olika s&auml;tt p&aring;verkar hj&auml;rnan.</span> Definitionen av <span style=\"color: #000000;\">demens &auml;r en nedg&aring;ng av olika kognitiva f&ouml;rm&aring;gor, d&auml;r en minnesst&ouml;rning ska ing&aring;. Den kognitiva st&ouml;rningen ska vid demens vara s&aring; allvarlig att det skapar problem i arbete och/eller socialt liv. <span style=\"text-decoration: line-through;\">F&ouml;r att st&auml;lla diagnos p&aring; en demensjukdom har en demensdiagnos fodrats.</span> <span style=\"color: #ff0000;\">F&ouml;r att fastst&auml;lla en demenssjukdom m&aring;ste specifika diagnostiska kriterier uppfyllas. Dessa inkluderar alltid en minnesst&ouml;rning.</span> Demensbegreppet har kritiserats f&ouml;r att kognitiva sjukdomar som frontotemporal demens inte n&ouml;dv&auml;ndigtvis inkluderas, eftersom det i de tidigare stadierna inte finns minnesst&ouml;rning. En demenssjukdom kommer oftast som en gradvis f&ouml;rs&auml;mring fr&aring;n ett normaltillst&aring;nd. De tidigare stadierna av sjukdomarna inneb&auml;r en funktionsneds&auml;ttning, som inte har den omfattning som fordras f&ouml;r en demensdiagnos. Dessa har enligt nuvarande diagnostiska regler inte kunnat f&aring; en specifik diagnos.</span><br></span><br><span style=\"color: #000000;\">I den nya DSM-5 har begreppet demens ersatts av termen kognitiv sjukdom. Sex olika kognitiva dom&auml;ner n&auml;mns: komplex uppm&auml;rksamhet, exekutiva f&ouml;rm&aring;gor, inl&auml;rning och minne, spr&aring;klig f&ouml;rm&aring;ga, perceptuell-motorisk f&ouml;rm&aring;ga och social kognition. Vidare inkluderas l&auml;tt kognitiv funktionsneds&auml;ttning, som inneb&auml;r att personen fortfarande kan fungera i arbete eller socialt trots f&ouml;rs&auml;mrad kognitiv f&ouml;rm&aring;ga. Gr&auml;nserna &auml;r dock flytande. Grunden &auml;r den f&ouml;rs&auml;mring som &auml;gt rum fr&aring;n en tidigare f&ouml;rm&aring;ga.<br></span><br><span style=\"color: #000000;\">ICD-10 inneh&aring;ller fortfarande demensbegreppet <span style=\"background-color: #ffff00;\">medan ICD-11</span>, som f&ouml;rv&auml;ntas bli klar 2018, kan komma att l&auml;mna detta.<span style=\"text-decoration: line-through;\"> I praktiken kommer troligen b&aring;de begreppet demens och kognitiv sjukdom att finnas.</span> <span style=\"color: #ff0000;\">Begreppet demens &auml;r v&auml;letablerat och beskriver sjukdomstillst&aring;nd med en invalidiserande kognitiv neds&auml;ttning och kan vara sv&aring;rt att ers&auml;tta. </span><span style=\"background-color: #ffff00;\">Med h&auml;nsyn till att diagnostiken i Sverige vilar p&aring; ICD-10 kommer demensbegreppet att anv&auml;ndas i detta kapitel.</span> F&ouml;r diagnostik av olika sjukdomar spelar detta ingen roll f&ouml;rutom frontotemporal demens d&auml;r begreppet kognitiv sjukdom &auml;r mer relevant.<br></span><br><span style=\"color: #000000;\"><span style=\"background-color: #ffff00;\">Lindrig kognitiv funktionsneds&auml;ttning kallades tidigare lindrig kognitiv st&ouml;rning (mild cognitive impairment, MCI).</span> Det omfattar f&ouml;rstadier till demensjukdom men ocks&aring; annan kognitiv neds&auml;ttning som utmattningssyndrom, kognitiv neds&auml;ttning vid psykisk sjukdom som posttraumatiskt stressyndrom, bipol&auml;r sjukdom eller schizofreni. <br><br>Vid Alzheimers sjukdom med lindrig kognitiv funktionsneds&auml;ttning finns<span style=\"text-decoration: line-through;\"> </span>f&ouml;r&auml;ndringar i niv&aring;er av biomark&ouml;rer i spinalv&auml;tska tidigt i f&ouml;rloppet liksom f&ouml;r&auml;ndringar som kan p&aring;visas vid PET-unders&ouml;kning av hj&auml;rnan, vilket medger m&ouml;jlighet till specifik diagnostik innan det finns en mer uttalad kognitiv neds&auml;ttning. F&ouml;r en framtida specifik behandling &auml;r det viktigt att en specifik diagnos kan ges ocks&aring; i detta tidiga skede.</span></p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f38cd802-b878-463d-969e-c97d0ce45183",
+			"name": "f38cd802-b878-463d-969e-c97d0ce45183",
+			"type": "text",
+			"content": "<h2 id=\"s7_4\">Demenssjukdomar</h2>\n<p>F&ouml;r f&ouml;rdjupad information, h&auml;nvisas till SBU-rapporten om demenssjukdomar (1) och L&auml;kemedelsverkets sammanst&auml;llning <span style=\"color: #ff0000;\">fr&aring;n</span> 2008 om behandlin<span style=\"color: #000000;\">g av beteendesymtom vid demenssjukdomar</span><span style=\"color: #ff0000;\"> </span>(2). Se &auml;ven <a href=\"https://lakemedelsverket.se/malgrupp/Halso---sjukvard/Behandlings--rekommendationer/Behandlingsrekommendation---listan/Alzheimers-sjukdom/\">L&auml;kemedelsverkets rapport</a> \"Farmakologisk behandling av kognitiv st&ouml;rning vid Alzheimers sjukdom\". Socialstyrelsen utkom 2010 med<span style=\"color: #000000;\"> Nationella riktlinjer f&ouml;r v&aring;rd och omsorg vid demenssjukdom. Dessa uppdaterades 2017 (3). En annan &ouml;versikt &auml;r <a href=\"http://www.regeringen.se/rattsdokument/departementsserien-och-promemorior/2003/10/ds-200347/\" style=\"color: #000000;\" target=\"_blank\">&rdquo;P&aring; v&auml;g mot en god demensv&aring;rd&rdquo;</a>, Socialdepartementet 2003. I Socialstyrelsens rapport \"Demenssjukdomarnas samh&auml;llskostnader i Sverige 2012\" (4) finns f&ouml;rutom kostnadsskattningar &auml;ven ett avsnitt om epidemiologin. Kvalitetsregistret SveDem (5) &auml;r ocks&aring; en viktig k&auml;lla till information liksom Svenskt Demenscentrum (6).</span><br><br><span style=\"color: #000000;\">Demens &auml;r en vanlig sjukdom. F&ouml;rekomsten &ouml;kar starkt med stigande &aring;lder o</span>ch den f&ouml;r&auml;ndrade &aring;ldersstrukturen medf&ouml;r en kontinuerlig &ouml;kning av antale<span style=\"color: #000000;\">t demenssjuka. Alzheimers sjukdom &auml;r den vanligaste orsaken till demens, den n&auml;st vanligaste &auml;r demens orsakad av va</span>skul&auml;r st&ouml;rning.<br><br><span style=\"color: #000000;\"><span style=\"background-color: #ffff00;\">F&ouml;rekomst </span>av demens framg&aring;r i Tabell 1. Det p&aring;g&aring;r dock en intressant epidemiologisk diskussion huruvida <span style=\"background-color: #ffff00;\">den &aring;ldersklass-specifika prevalensen</span> och incidensen h&aring;ller p&aring; att minska, vilket kan medf&ouml;ra att siffrorna i tabellen &auml;r en &ouml;verskattning med <span style=\"color: #ff0000;\">ca 15-20 %</span>. Antalet demenssjuka kommer dock &auml;nd&aring; att &ouml;ka eftersom antalet &auml;ldre &ouml;kar.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b344d680-d5db-48bf-a718-5db8bffaf9a0",
+			"name": "b344d680-d5db-48bf-a718-5db8bffaf9a0",
+			"type": "tablenarrow",
+			"content": {
+				"number": "1",
+				"title": "Skattad förekomst av demens 2000, 2010, 2015 och 2020. Källor: (1), (4) samt Anders Wimo, uppdaterade beräkningar.",
+				"id": "s7_5",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"color: #000000;\"><strong>&nbsp;</strong></span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\"><strong>2000</strong></span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\"><strong>2010</strong></span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\"><strong>2015</strong></span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\"><strong>2020</strong></span></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"color: #000000;\"><strong><span style=\"font-weight: bold;\">Antal demenssjuka </span></strong></span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">135 000</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">152 000</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">162 000</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">176 000</span></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">&lt;&nbsp;65 &aring;r</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">8 100</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">9 800</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">9 400</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">9 600</span></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">&gt; 80 &aring;r</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">90 000</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">104 000</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">107 000</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">114 000</span></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">Alzheimers sjukdom</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">&nbsp; 81 000</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">&nbsp; 91 000</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">&nbsp; 97 000</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">106 000</span></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">Vaskul&auml;r demens</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">&nbsp;34 000</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">&nbsp;&nbsp;38 000</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">&nbsp; 40 000</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">44 000</span></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">Kvinnor</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">&nbsp; 92 000</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">&nbsp; 100 000</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">&nbsp; 105 000</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">111 000</span></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">M&auml;n</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">&nbsp;&nbsp;43 000</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">&nbsp; 52 000</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">&nbsp; 57 000</span></div>\r\n</td>\r\n<td style=\"text-align: center;\">\r\n<div class=\"tableLine\"><span style=\"color: #000000;\">65 000</span></div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>\r\n<p><span style=\"color: #ff0000;\">&nbsp;</span></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e7485c96-6d38-4713-8e52-9f73fe7b7853",
+			"name": "e7485c96-6d38-4713-8e52-9f73fe7b7853",
+			"type": "text",
+			"content": "<h3 id=\"s7_6\">Alzheimers sjukdom</h3>\n<p>Alzheimers sjukdom &auml;r den vanligaste formen av neurodegenerativa sjukdomar och utg&ouml;r cirka 60 % av alla demenssjukdomar. Alzheimers sjukdom anses inte vara en enda sjukdom utan en grupp av likartade sjukdomar, med variationer relaterade till &aring;lder, uppkomstmekanismer och &auml;rftliga faktorer.<br><br></p>\n<p>Med h&auml;nsyn till de likheter som finns i neuropatologiska f&ouml;r&auml;ndringar, men &auml;ven med tanke p&aring; klinisk bild, m&aring;ste dock ur praktisk klinisk synpunkt Alzheimers sjukdom betraktas som en enhet. Grunden till sjukdomen anses vara f&ouml;rekomst av degenerativa plack, orsakade av inlagring av proteinet beta-amyloid, men en rad andra faktorer bidrar till sjukdomen.<br><br></p>\n<p>Grundsymtomet vid Alzheimers sjukdom &auml;r minnesproblem. Tidigt i sjukdomen &auml;r symtomen diffusa och smygande. Uppm&auml;rksamhetsst&ouml;rning och koncentrationssv&aring;righeter m&auml;rks f&ouml;rst i stressade situationer. Sv&aring;righeter att hitta ord/l&auml;tt afasi kan p&aring;verka spr&aring;klig kommunikation. Orienteringssv&aring;righeter f&ouml;rekommer, framf&ouml;r allt i pressade situationer. Abstrakt tankef&ouml;rm&aring;ga och tidsuppfattning minskar. Patienten har ofta tidigt i sjukdomsf&ouml;rloppet insikt i att mentala funktioner &auml;r f&ouml;r&auml;ndrade och kan, med hj&auml;lp av olika strategier, till viss del kompensera f&ouml;r sin kognitiva neds&auml;ttning.</p>\n<p><br>N&auml;r sjukdomen g&aring;r vidare f&ouml;rs&auml;mras samtliga kognitiva aspekter och dysfasi, dyspraxi, dysgnosi och visuospatiala sv&aring;righeter blir alltmer uppenbara. Den allm&auml;nna funktionsniv&aring;n p&aring;verkas alltmer och patienten klarar s&aring; sm&aring;ningom inte sitt dagliga liv utan hj&auml;lp. Personligheten &auml;r t&auml;mligen v&auml;l bevarad, men insikten i graden av of&ouml;rm&aring;ga &auml;r nedsatt, trots att det finns en medvetenhet om sjukdomen. &Auml;ven sent i sjukdomen kan det finnas stunder av p&aring;fallande psykisk klarhet.</p>\n<p><br>Upp till h&auml;lften av alla med Alzheimers sjukdom har depressiva symtom. Psykotiska symtom finns hos cirka 35 %, ibland tidigt i sjukdomsf&ouml;rloppet<span style=\"color: #000000;\">. Lewy kroppsdemens &auml;r vid tidiga psykotiska symtom en viktig differentialdiagnos till Alzheimers sjukdom. Framf&ouml;rallt i slutskedet a</span>v sjukdomen finns ofta beteendesymtom, som kan p&aring;verka omgivningen (BPSD: Behavioural and Psychological Symptoms of Dementia).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3337e0c6-d04d-4e1f-8d3f-e0e2956541f6",
+			"name": "3337e0c6-d04d-4e1f-8d3f-e0e2956541f6",
+			"type": "text",
+			"content": "<h3 id=\"s7_7\">Lewy<span style=\"color: #000000;\"> kroppsdemens och demens vid Parkinsons sjukdom</span></h3>\n<p><span style=\"color: #000000;\">Ofta finns vid Lewy kroppsdemens synhallucinos som kan dominera sjukdomsbilden initialt. Den kliniska bilden av Lewy kroppsdemens har m&aring;nga drag gemensamma med demens vid Parkinsons sjukdom och Alzheimers sjukdom. Vid Lewy kropps</span>demens finn<span style=\"color: #000000;\">s en <span style=\"text-decoration: line-through;\"></span>sjukdomsbild me</span>d psykotiska symtom, parkinsonsymtom och extrem k&auml;nslighet f&ouml;r extrapyramidala biverkningar av neuroleptika samt en v&auml;xlan<span style=\"color: #000000;\">de symtomintensitet, delvis p&aring; grund av konfusionsattacker. Vid Parkinsons sjukdom med demens intr&auml;der de typiska parkinsonsymtomen &aring;tminstone ett &aring;r f&ouml;re demenssymtomen, men vid Lewy kroppsdemens &auml;r parkinson- och demenssymtomen mer samtidiga.</span><br><br></p>\n<p><span style=\"color: #000000;\">Med dagens kunskap &auml;r det inte alltid m&ouml;jligt att kliniskt skilja Lewy kroppsdemens fr&aring;n Alzheimers sjukdom. Demens vid Parkinsons sjukdom debuterar ofta med exekutiva</span> st&ouml;rningar och sekund&auml;rt kommer minnesproblem, vilket skiljer denna fr&aring;n Alzheimers sjukdom. <span style=\"background-color: #ffff00;\">Specialistunders&ouml;kning som m&auml;tning av tau, fosforylerat tau och beta-amyloid i <span style=\"color: #000000;\">cerebros</span>pinalv&auml;tska skiljer sig mellan dessa sjukdomar och kan &ouml;ka diagnostisk s&auml;kerhet. Vid Alzheimers sjukdom finns en typisk bild med &ouml;kning av tau och fosforylerat tau tillsammans med s&auml;nkt halt av beta-amyloid.&nbsp;</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "16633b33-31aa-4a47-ab32-777aeedb61d8",
+			"name": "16633b33-31aa-4a47-ab32-777aeedb61d8",
+			"type": "text",
+			"content": "<h3 id=\"s7_8\">Frontotemporal demens</h3>\n<p>Frontotemporal demens, med symtom huvudsakligen fr&aring;n frontallober, &auml;r en vanligt f&ouml;rekommande prim&auml;rdegenerativ demenssjukdom innan det egentliga &aring;ldrandet. Detta skiljer den fr&aring;n till exempel Alzheimers sjukdom eller demenstillst&aring;nd associerade med Parkinsons sjukdom. Ocks&aring; frontotemporal demens best&aring;r av ett spektrum av likartade sjukdomar. Symtomen &auml;r i f&ouml;rsta hand personlighetsf&ouml;r&auml;ndringar med minskat omd&ouml;me, emotionell avflackning och minskad f&ouml;rm&aring;ga till strukturerade och planerade aktiviteter, medan minnesf&ouml;rm&aring;gan &auml;r mindre p&aring;verkad.<br><br></p>\n<p>Sjukdomen debuterar oftast f&ouml;re det egentliga &aring;ldrandet och kan drabba personer f&ouml;re 50 &aring;rs &aring;lder. N&aring;gon specifik behandling finns inte.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "26fd99c1-bb61-49d5-8cc0-f5711aa160c7",
+			"name": "26fd99c1-bb61-49d5-8cc0-f5711aa160c7",
+			"type": "text",
+			"content": "<h3 id=\"s7_9\">Vaskul&auml;r demens</h3>\n<p>Vaskul&auml;r demens &auml;r den vanligaste sekund&auml;ra demenssjukdomen. Epidemiologiska studier och bildframst&auml;llning av hj&auml;rnan har visat att cerebrovaskul&auml;ra sjukdomar har stor betydelse f&ouml;r kognitiva st&ouml;rningar och utveckling av demenstillst&aring;nd.<br><br></p>\n<p>Symtombilden vid vaskul&auml;r demens skiljer sig fr&aring;n den vid Alzheimers sjukdom och de tidiga symtomen utg&ouml;rs av exekutiva st&ouml;rningar, det vill s&auml;ga nedsatt initiativf&ouml;rm&aring;ga, sv&aring;righeter att planera och genomf&ouml;ra saker samt minskad simultankapacitet. Ofta finns ocks&aring; psykomotorisk f&ouml;rl&aring;ngsamning och p&aring;verkan p&aring; g&aring;ngf&ouml;rm&aring;gan. Vid &ouml;kad grad av demens kommer minnessv&aring;righeter och andra kognitiva st&ouml;rningar. Var den vaskul&auml;ra skadan &auml;r lokaliserad p&aring;verkar symtomen hos den enskilda individen.</p>\n<p><br>Vaskul&auml;r demens &auml;r en heterogen grupp. &rdquo;Vitsubstansf&ouml;r&auml;ndringar&rdquo;, det vill s&auml;ga f&ouml;r&auml;ndringar i den vita substansen i hj&auml;rnan som ses vid datortomografi eller MR (magnettomografi) &auml;r associerade med de typiska symtomen, men eftersom liknande f&ouml;r&auml;ndringar kan f&ouml;rekomma hos personer utan kognitiv st&ouml;rning finns en os&auml;kerhet. Ofta finns ocks&aring; infarkter i hj&auml;rnan, som ger fokala symtom.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "cd0287c5-05b0-4174-ac33-06ee17a82351",
+			"name": "cd0287c5-05b0-4174-ac33-06ee17a82351",
+			"type": "text",
+			"content": "<h3 id=\"s7_10\">Alkoholdemens</h3>\n<p>L&aring;ngvarig, h&ouml;g alkohol&ouml;verkonsumtion kan leda till kognitiv reduktion och demensbild. I de l&auml;ttaste formerna finns p&aring;verkan p&aring; exekutiva f&ouml;rm&aring;gor, vid mer uttalade former ses minnesproblem och demensbild. Alkoholdemens m&aring;ste skiljas fr&aring;n Korsakoffs syndrom, som orsakas av akut brist p&aring; tiamin i abstinensfasen. I &ouml;vrigt h&auml;nvisas till kapitlet Alkohol &ndash; riskbruk, skadligt bruk och beroende, avsnittet <a href=\"{pre}/kapitel/beroendetillstand/alkohol-riskbruk_skadligt_bruk_och_beroende.html#t2_15\">Psykiska problem</a>.<br><br></p>\n<p>Vid alkoholmissbruk sker vanligen en &aring;terh&auml;mtning av kognitiva f&ouml;rm&aring;gor efter en l&auml;ngre tids abstinens. En demensutredning b&ouml;r d&auml;rf&ouml;r inte ske f&ouml;rr&auml;n efter minst tv&aring; m&aring;naders nykterhet.</p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "69091b5a-beb8-45df-8ad2-7a36d8e6c1d8",
+			"name": "69091b5a-beb8-45df-8ad2-7a36d8e6c1d8",
+			"type": "text",
+			"content": "<h3 id=\"s7_11\">Andra demensformer</h3>\n<p>Det finns ett flertal mer s&auml;llsynta former av demens, som Creutzfeldt-Jakobs sjukdom, demens efter skallskada och demens vid hiv. N&aring;gon specifik behandling av dessa tillst&aring;nd finns inte.</p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "50d8024f-cc4f-4e63-a6d8-b5fa9c0d3840",
+			"name": "50d8024f-cc4f-4e63-a6d8-b5fa9c0d3840",
+			"type": "text",
+			"content": "<h3 id=\"s7_12\">Differentialdiagnoser</h3>\n<p>Sjukdomar som drabbar hj&auml;rnan, som subduralhematom, hj&auml;rntum&ouml;rer och infektionssjukdomar eller vitaminbrist, kan ge demensliknande symtom. En utredning m&aring;ste utesluta andra m&ouml;jliga f&ouml;rklaringar &auml;n demenssjukdom till kognitiv st&ouml;rning. Konfusion (delirium) &auml;r en tillf&auml;llig p&aring;verkan p&aring; kognitiva funktioner och kan ibland blandas ihop med demens, se nedan.<br><br></p>\n<p>Psykisk sjukdom i h&ouml;g &aring;lder medf&ouml;r ofta viss p&aring;verkan p&aring; kognitiva funktioner. Framf&ouml;r allt ses st&ouml;rning av exekutiva funktioner, det vill s&auml;ga f&ouml;rm&aring;ga till planering, organisering och genomf&ouml;rande av aktiviteter. Det &auml;r viktigt att utesluta annan psykisk sjukdom eftersom denna ska ha en specifik behandling. Vanligast &auml;r depressi<span style=\"color: #000000;\">on och psykossjukdom. En psykis</span>k sjukdom och demenssjukdom finns dock ofta samtidigt och b&aring;da kan beh&ouml;va behandlas.<br><br></p>\n<p>Exekutiva st&ouml;rningar &auml;r mycket vanliga i h&ouml;g &aring;lder och leder ofta till stressrelaterad kognitiv of&ouml;rm&aring;ga. Ofta finns d&aring; behov av hj&auml;lp att planera och organisera dagligt liv. Bakom detta finns normala &aring;ldersf&ouml;r&auml;ndringar men ocks&aring; sjuklig p&aring;verkan som vaskul&auml;r hj&auml;rnskada, depression, schizofreni eller stressrelaterad psykisk sjukdom. Det finns ingen etablerad l&auml;kemedelsbehandling vid exekutiv st&ouml;rning utan terapin inriktas p&aring; icke-farmakologiska &aring;tg&auml;rder.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4b1b4eb6-eb58-4a2c-8ce5-d1788b569beb",
+			"name": "4b1b4eb6-eb58-4a2c-8ce5-d1788b569beb",
+			"type": "text",
+			"content": "<h2 id=\"s7_13\">Utredning av demenssjukdom</h2>\n<p>Den basala utredningen vid misst&auml;nkt demenssjukdom g&ouml;rs i prim&auml;rv&aring;rden, eventuellt tillsammans med kommunal demenssjuksk&ouml;terska <span style=\"color: #ff0000;\">eller annan personal i det kommunala demensteamet</span>,<span style=\"background-color: #ffff00;\"> se Faktaruta 1</span>. Vid behov av utvidgad utredning<span style=\"text-decoration: line-through; color: #ff0000;\">, se Faktaruta 2,</span> rekommenderas remiss till geriatrisk eller &auml;ldrepsykiatrisk specialistklinik (Minnesmottagning). Utredning ska g&ouml;ras sn<span style=\"color: #000000;\">arast i samtycke med patienten och n&auml;r </span>klinisk misstanke p&aring; kognitiv st&ouml;rning finns.<br><br></p>\n<p>Den basal<span style=\"color: #000000;\">a utredningen best&aring;r av tv&aring; delar &ndash; en medicinsk och en social, se Faktaruta 1. Som i alla utredningar av misst&auml;nkt sjukdom ska inneh&aring;llet individualiseras. Vissa labprover b&ouml;r alltid ing&aring;, till exempel Hb, blodsocker och njurfunktion. Andra prover som ofta b&ouml;r &ouml;verv&auml;gas utan att f&ouml;r den skull vara obligatoriska &auml;r exempelvis provtaging med avseende p&aring; tyroideafunktion, B-vitaminkomplexet och kalciumbalansen. Datortomografi av hj&auml;rnan b&ouml;r g&ouml;ras frikostigt men hos till exempel mycket gamla personer b&ouml;r en avv&auml;gning g&ouml;ras mellan risk, obehag och nytta. Ett annat test <span style=\"color: #ff0000;\">som m&auml;ter den globala kognitiva f&ouml;rm&aring;gan och</span> anv&auml;nds alltmer i prim&auml;rv&aring;rden &auml;r MOCA <span style=\"color: #ff0000;\">(Montreal Cognitive Assessment).</span> F&ouml;r personer med annan etnisk bakgrund eller l&aring;g utbildning kan RUDAS<span style=\"color: #ff0000;\"> (The Rowland Universal Dementia Assessment Scale), som &auml;r ett m&aring;ngkulturellt kognitivt bed&ouml;mningsinstrument,</span> anv&auml;ndas <span style=\"color: #ff0000;\">f&ouml;r en utvidgad demensutredning</span>. Den sociala utredningen komplette</span>rar den medicinska bed&ouml;mningen och ger information om patientens aktuella f&ouml;rm&aring;ga, funktion och framtida behov, och &auml;r underlag f&ouml;r v&aring;rdplanering.<br><br></p>\n<p>Om diagnosen &auml;r oklar eller om det finns andra <span style=\"color: #000000;\">sk&auml;l f&ouml;resl&aring;s samr&aring;d med eller remiss till specialist. Det kan d&aring; bli aktuellt med ytterligare unders&ouml;kningar av s&aring; kallade biomark&ouml;rer i cerebrospinalv&auml;tska (analys av tau, fosforylerat tau och beta-amyloid), MR, PET, SPECT och EEG. <span style=\"color: #ff0000;\">Vid Alzheimers sjukdom finns ett m&ouml;nster av h&ouml;gt tau och fosforylerat tau samt s&auml;nkt beta amyloid i cerebrospinalv&auml;tska. Vid demenssjukdom ses ofta en s&auml;nkt glukosoms&auml;ttning som kan p&aring;visas vid FDG-PET. M&auml;tning av dopamintransportsystemet med SPECT kan vara av v&auml;rde vid misst&auml;nkt Lewy kroppsdemens och demens vid Parkinsons sjukdom. MR unders&ouml;kning (som &auml;ven anv&auml;nds i prim&auml;rv&aring;rden vid demensutredningar) ger generellt b&auml;ttre information &auml;n datortomografi (till exempel hippocampusatrofi) men &auml;r mer p&aring;frestande f&ouml;r patienten p&aring; grund av bulleroch tid. EEG kan vara av v&auml;rde vid bland annat misst&auml;nkt Creutzfeldt-Jakobs sjukdom.</span> Neuropsykologisk testning &auml;r ocks&aring; av stort v&auml;rde. <span style=\"color: #ff0000;\">En utvidgad utredning b&ouml;r g&ouml;ras hos personer som f&ouml;re 65 &aring;rs &aring;lder misst&auml;nks f&ouml;r demens, vid mycket snabb progress, misstanke om Lewy kroppsdemens, vid uttalade beteendesymtom eller konfusionsepisoder eller vid atypiska eller oklara tillst&aring;nd.</span><br></span></p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5757eb37-e4c1-4c0d-ab7e-f9ebd47028d8",
+			"name": "5757eb37-e4c1-4c0d-ab7e-f9ebd47028d8",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "Förslag till basal medicinsk utredning",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<h4><span style=\"color: #ff0000;\">Medicinsk utredning</span></h4>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span class=\"tab\"><span style=\"text-decoration: line-through; color: #ff0000;\">Medicinsk</span> A</span>namnes inklusive aktuell <span style=\"color: #000000;\">l&auml;kemedelsanv&auml;ndning och andra sjukdomar</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"color: #000000;\"><span class=\"tab\"></span>L&auml;karunders&ouml;kning med neurologstatus</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"color: #000000;\"><span class=\"tab\"></span>Ortostatisk blodtrycksm&auml;tning</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"color: #000000;\"><span class=\"tab\"></span>Mini-mental test (MMT)</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"color: #000000;\"><span class=\"tab\">K</span>locktest</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"color: #000000;\"><span class=\"tab\"></span>EKG</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"color: #000000;\"><span class=\"tab\"></span>Datortomografi hj&auml;rna (fr&aring;gest&auml;llning &ndash; degene&shy;rativa f&ouml;r&auml;ndringar eller vaskul&auml;ra skador)</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"color: #000000;\"><span class=\"tab\"></span>Laboratorieutredning (f&ouml;r detaljer, se lokalt v&aring;rdprogram)</span></li>\r\n</ul>\r\n<h4 id=\"s7_16\" class=\"facts skip\"><span style=\"color: #ff0000;\">Social utredning</span></h4>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"color: #000000;\"><span class=\"tab\"></span><span class=\"tab\"></span>Civilst&aring;nd, anh&ouml;riga</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"color: #000000;\"><span class=\"tab\"></span>Yrke, eventuell yrkeslegitimation, utbildning</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"color: #000000;\"><span class=\"tab\"></span><span class=\"tab\"></span>Intressen, fritidsaktiviteter, livsstil</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"color: #000000;\"><span class=\"tab\"></span>Ekonomi</span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span class=\"tab\"></span>K&ouml;rkort</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span class=\"tab\"></span>Vapenlicens och vapeninnehav<span class=\"tab\"></span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span class=\"tab\"></span>Alkoholvanor</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>",
+				"id": "s7_15"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "575a90e9-b83f-4c36-b631-c5f05e4b8665",
+			"name": "575a90e9-b83f-4c36-b631-c5f05e4b8665",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "Situationer där utvidgad utredning bör ske",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span style=\"text-decoration: line-through; color: #ff0000;\"><span class=\"tab\">Diagnostisk os&auml;kerhet eller atypiska fall<br></span></span></li>\r\n<li><span style=\"text-decoration: line-through; color: #ff0000;\"><span>Yngre patienter (till exempel &lt;&nbsp;65 &aring;r)</span></span></li>\r\n<li><span style=\"text-decoration: line-through; color: #ff0000;\"><span>Snabbt f&ouml;rlopp</span></span></li>\r\n<li><span style=\"text-decoration: line-through; color: #ff0000;\"><span>Uttalade beteendesymtom </span></span><br><span style=\"text-decoration: line-through; color: #ff0000;\"><span>eller konfusionsepisoder<span class=\"tab\"></span></span></span></li>\r\n<li><span style=\"text-decoration: line-through; color: #ff0000;\"><span>Misstanke om Lewy kroppsdemens</span></span></li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td><span style=\"color: #ff0000;\"><em><span class=\"tab\"></span></em></span></td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "s7_32"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f51878a6-271e-412c-9506-be43122e2d20",
+			"name": "f51878a6-271e-412c-9506-be43122e2d20",
+			"type": "text",
+			"content": "<h2 id=\"s7_17\">Stadieindelning av demens</h2>\n<p>Demens omfattar ett mycket stort spann av kognitiva st&ouml;rningar. En praktisk indelning &auml;r:</p>\n<ul>\n<li><span style=\"text-decoration: line-through;\"><span class=\"tab\"></span></span><span class=\"tab\"></span><span style=\"color: #ff0000;\">Mild demenssjukdom </span>: Personen klarar de flesta av vardagens aktiviteter men beh&ouml;ver hj&auml;lp i mer komplicerad<span style=\"color: #000000;\">e situationer.</span></li>\n<li><span style=\"color: #000000;\"><span class=\"tab\"></span>M&aring;ttlig demens<span style=\"color: #ff0000;\">sjukdom</span>: Personen klarar oftast eget boende med st&ouml;d men beh&ouml;ver hj&auml;lp med vissa dagliga aktiviteter.</span></li>\n<li><span style=\"color: #000000;\"><span class=\"tab\"></span>Sv&aring;r demens<span style=\"color: #ff0000;\">sjukdom</span>:</span> Personen beh&ouml;ver omfattande hj&auml;lp i sitt daglig<span style=\"color: #000000;\">a liv </span><span style=\"color: #ff0000;\"><span style=\"color: #000000;\">och bor oftast i s&auml;rskilt boende.</span></span> <span style=\"text-decoration: line-through;\"></span></li>\n</ul>\n<p>MMT ger viss hj&auml;lp i stadieindelningen, 18&ndash;23 po&auml;ng motsvar<span style=\"color: #000000;\">ar mild demenssjukdom, 11&ndash;17 m&aring;ttlig demenssjukdom och 0&ndash;10 sv&aring;r demenssjukdom. MMT ger dock endast en v&auml;gledning, och grad av demenssjukdom och hj&auml;lpbehov m&aring;ste bed&ouml;mas med utg&aring;ngspunkt fr&aring;n funktionsni</span>v&aring;n i det enskilda fallet.<br><br></p>\n<p>Personer med en kognitiv st&ouml;rning, som inte uppfyller kriterierna f&ouml;r demens,<span style=\"color: #ff0000;\"> lindrig<span style=\"text-decoration: line-through;\"></span> kognitiv st&ouml;rning </span>(mild cognitive impairment, MCI), &auml;r en grupp som har f&aring;tt &ouml;kad klinisk relevans. I denna grupp finns personer som kommer att utveckla demens, till exempel Alzheimers sjukdom, men ocks&aring; personer med andra orsaker till nedsatta kognitiva f&ouml;rm&aring;gor, till exempel vaskul&auml;ra skador eller stressrelaterad sjukdom,<span style=\"color: #ff0000;\"> som inte beh&ouml;ver utvecklas till demenssjukdom</span><span style=\"color: #000000;\">. I denna grupp kan h&aring;llpunkter f&ouml;r Alzheimers sjukdom p&aring;visas i typiska f&ouml;r&auml;ndringar i cerebrospinalv&auml;tska eller med andra s&aring; kallade biomark&ouml;rmetoder, innan klin</span>iska symtom &auml;r uppenbara. De som har positivt utfall p&aring; biomark&ouml;rerna f&aring;r termen Alzheimers sjukdom med lindrig kogntiv funktionsneds&auml;ttning.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "60233971-acf7-4fc0-ad9d-28e88744ef4d",
+			"name": "60233971-acf7-4fc0-ad9d-28e88744ef4d",
+			"type": "text",
+			"content": "<h2 id=\"s7_18\">Konfusion och tillf&auml;llig kognitiv st&ouml;rning</h2>\n<p>Konfusion (synonymt med delirium och akut f&ouml;rvirring) skapar kognitiv st&ouml;rning p&aring; ett annat s&auml;tt &auml;n demenssjukdom. Ben&auml;genhet f&ouml;r konfusion &ouml;kar vid demens, eller annan hj&auml;rnskada, men den konfusionella <span style=\"color: #ff0000;\"><span style=\"text-decoration: line-through;\">attacken</span> episoden</span> &auml;r i princip reversibel och vid utl&auml;kning &auml;r de kognitiva funktionerna p&aring; samma niv&aring; som innan. Symtomen best&aring;r s&aring;v&auml;l av kognitiv reduktion som av en rad beteendesymtom.<br><br></p>\n<p>F&ouml;r behandling &auml;r det viktigt att skilja mellan symtom orsakade av konfusion och demens. Se Faktaruta 2 n&auml;r det g&auml;ller centrala konfusionssymtom och sekund&auml;ra symtom vid konfusion.<span> </span>Diagnosen st&auml;lls av det v&auml;xlande f&ouml;rloppet i kombination med typiska symtom. Bakom konfusion finns flera orsaker, se Faktaruta 3.<span> </span>Behandling av konfusion tas upp i slutet av kapitlet, se avsnittet <a href=\"#s7_56\">Behandling av konfusion.</a></p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c3e2b3a3-cd69-442d-930b-3ede4c220000",
+			"name": "c3e2b3a3-cd69-442d-930b-3ede4c220000",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "Konfusionssymtom ",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<h4><span style=\"color: #ff0000;\">Centrala konfusionssymtom (specifika symtom)</span></h4>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Bristande uppm&auml;rksamhet och nedsatt <br>koncentrationsf&ouml;rm&aring;ga</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Feltolkningar av sinnesintryck</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Fragmenterat t&auml;nkande</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Psykomotorisk hypo- eller hyperaktivitet</li>\r\n</ul>\r\n<h4>Sekund&auml;ra symtom vid konfusion (icke-specifika symtom)</h4>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Psykisk oro</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Desorientering</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Minnesst&ouml;rning</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>S&ouml;mn- eller vakenhetsst&ouml;rning</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Hallucinationer/illusioner</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Paranoida f&ouml;rest&auml;llningar</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Aggressivitet</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "s7_20"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c83bcabc-a696-4083-8bb3-6d7329653dd0",
+			"name": "c83bcabc-a696-4083-8bb3-6d7329653dd0",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "<a class=\"crossref\" id=\"87213\"></a>Orsaker till konfusion",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Hj&auml;rnskada eller akut hj&auml;rnp&aring;verkan</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>L&auml;kemedel</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Kroppslig sjukdom</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Psykogena faktorer och milj&ouml;faktorer</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "s7_23"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "940f1806-83fc-4265-bcb0-26fa6b59fd38",
+			"name": "940f1806-83fc-4265-bcb0-26fa6b59fd38",
+			"type": "text",
+			"content": "<h2 id=\"s7_24\">Omv&aring;rdnadst&auml;nkande vid utredning och behandling av demens</h2>\n<p>Vid handl&auml;ggning av sjukdomar som p&aring;verkar kognitiva funktioner &auml;r omv&aring;rdnadsaspekterna viktiga &auml;ven f&ouml;r l&auml;karen. Detta g&auml;ller ocks&aring; vid l&auml;kemedelsbehandling, d&auml;r farmakologisk behandling p&aring;verkar en dement patients f&ouml;rm&aring;ga till kontakt och interaktion med omgivningen. En optimal behandling f&ouml;ruts&auml;tter d&auml;rf&ouml;r att man i val av l&auml;kemedel t&auml;nker p&aring; dessa aspekter. Omv&aring;rdnadsaspekter b&ouml;r, som andra behandlingsstrategier, vara anpassade till graden av demens.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d42103aa-3861-4889-bb0f-e73cf03797c3",
+			"name": "d42103aa-3861-4889-bb0f-e73cf03797c3",
+			"type": "text",
+			"content": "<h3 id=\"s7_25\">Att meddela diagnos</h3>\n<p>En viktig aspekt &auml;r n&auml;r en demensdiagnos meddelas. Att f&aring; besked om demenssjukdom &auml;r ett sv&aring;rt besked. Den drabbade har i de flesta fall haft misstanke om att n&aring;got &auml;r fel, men de flesta m&auml;nniskor &auml;r &auml;nd&aring; inte helt f&ouml;rberedda. Diagnosen f&ouml;rklarar de kognitiva of&ouml;rm&aring;gorna som funnits, men ger en skr&auml;mmande vision om framtiden. Trots detta &auml;r det viktigt att ge en korrekt diagnos, men man kan inte l&auml;mna en m&auml;nniska med bara detta besked. M&ouml;jligheten att kunna leva ett gott liv med en demenssjukdom &auml;r beroende av om personen accepterar diagnosen och l&auml;r sig leva med sjukdomen. F&ouml;r att detta ska vara m&ouml;jligt beh&ouml;vs s&aring;v&auml;l omv&aring;rdnadst&auml;nkande som medicinska &aring;tg&auml;rder. En kontinuerlig st&ouml;dkontakt &auml;r viktig f&ouml;r s&aring;v&auml;l patient som anh&ouml;riga. <span style=\"color: #ff0000;\">En s&aring;dan kontakt &auml;r avsedda att st&ouml;dja patient och anh&ouml;riga, bed&ouml;ma en l&auml;kemedelsbehandling och f&ouml;rebygga problem. Den kan ske av en demenssk&ouml;terska eller en fast l&auml;karkontakt.</span> <span style=\"color: #ff0000;\">Se</span>&nbsp;<a href=\"https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/halso--och-sjukvardsforordning-201780_sfs-2017-80\" target=\"_blank\">H&auml;lso och sjukv&aring;rdsf&ouml;rordningen</a> <span style=\"color: #ff0000;\">(2017:80) och</span> <a href=\"https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/patientlag-2014821_sfs-2014-821\" target=\"_blank\">Patientlagen</a> <span style=\"color: #ff0000;\">(2014:821).</span></p>\n<p></p>\n<h2 id=\"s7_29\"></h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0da351e2-308a-4570-b956-7e68309b311a",
+			"name": "0da351e2-308a-4570-b956-7e68309b311a",
+			"type": "text",
+			"content": "<h3 id=\"s7_26\">Omv&aring;rdnadsaspekter vid <span style=\"color: #ff0000;\">mild</span> demens<span style=\"color: #ff0000;\">sjukdom</span></h3>\n<p>En person med l&auml;tt demens klarar det mesta i livet och beh&ouml;ver hj&auml;lp endast med mer komplicerade situationer eller aktiviteter. Livet blir en gradvis anpassning till s&auml;mre funktioner. I en l&auml;karkontakt &auml;r det viktigt att underl&auml;tta denna anpassnin<span style=\"color: #000000;\">g. S&aring; sm&aring;ningom m&aring;ste bilk&ouml;rning diskuteras. Bilk&ouml;rning &auml;r inte obligat f&ouml;rbjudet vid <span style=\"text-decoration: line-through;\"></span>mild demenssjukdom, men det &auml;r l&auml;karens skyldighet att pr&ouml;va detta enligt Transportstyrelsens f&ouml;reskrift (7). Erfarenhetsm&auml;ssigt &auml;r det l&auml;mpligt att f&ouml;rbereda en person p&aring; att detta kommer att tas upp. Bilk&ouml;rning</span>en b&ouml;r till en b&ouml;rjan anpassas s&aring; att nattk&ouml;rning och komplicerade situationer undviks. Innehav av vapen m&aring;ste ocks&aring; diskuteras.<br><br></p>\n<p>Identitet och sj&auml;lvk&auml;nsla p&aring;verkas starkt av vetskapen om sjukdomen och de misslyckanden som sker. Det &auml;r viktigt att man i kontakten &auml;r medveten om detta. En aktiv behandling av kognitiv of&ouml;rm&aring;ga ger, f&ouml;rutom l&auml;kemedelseffekten, hopp om att n&aring;got kan g&ouml;ras f&ouml;r att p&aring;verka sjukdomssymtomen.<br><br></p>\n<p>Anh&ouml;riga drabbas ocks&aring; i stor utstr&auml;ckning n&auml;r en person f&aring;r en demensdiagnos. De beh&ouml;ver mycket information och st&ouml;d tidigt i f&ouml;rloppet.</p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c3d0d887-761a-466f-9e22-bd42ca16b67b",
+			"name": "c3d0d887-761a-466f-9e22-bd42ca16b67b",
+			"type": "text",
+			"content": "<h2 id=\"s7_29\">Etik och demensv&aring;rd</h2>\n<p>F&ouml;r att den demenssjuke ska f&aring; en god v&aring;rd kr&auml;vs att s&aring;v&auml;l anh&ouml;riga som personal har en god allm&auml;n kunskap om demenssjukdomar. Centralt &auml;r kunskapen att demens &auml;r en sjukdom i hj&auml;rnan som orsakar f&ouml;rs&auml;mrade hj&auml;rnfunktioner och ett successivt &ouml;kande hj&auml;lpbehov men att den demenssjuke har kvar samma k&auml;nslor och behov som tidigare i livet.<br><br></p>\n<p>I<span style=\"color: #000000;\"> Socialdepartementets </span>utredning <a href=\"http://www.regeringen.se/rattsdokument/departementsserien-och-promemorior/2003/10/ds-200347/\">&rdquo;P&aring; v&auml;g mot en god demensv&aring;rd&rdquo;</a> framh&aring;lls att &rdquo;m&aring;ls&auml;ttningen med v&aring;rd, behandling och omsorg &auml;r att bevara personens mentala funktioner s&aring; l&aring;ngt det &auml;r m&ouml;jligt, beh&aring;lla sociala kontakter, lindra sjukdomssymtom och n&auml;r detta inte l&auml;ngre &auml;r m&ouml;jligt, skapa ett s&aring; gott liv som m&ouml;jligt f&ouml;r den sjuke, men ocks&aring; st&ouml;dja och avl&ouml;sa de n&auml;rst&aring;ende&rdquo;. I detta ligger att man ska ha respekt f&ouml;r den sjukes egen vilja och integritet och f&ouml;rs&ouml;ka st&ouml;tta den demenssjuke i dessa aspekter.<br><br></p>\n<p>Det finns ocks&aring; behov av att skydda en person som p&aring; grund av sviktande mentala funktioner inte kan ta vara p&aring; sig sj&auml;lv.<br><br></p>\n<p>Etiska fr&aring;gest&auml;llningar kan komma upp b&aring;de i hemmet, p&aring; sjukhus och i boende f&ouml;r personer med demens. Det finns behov av en st&auml;ndigt p&aring;g&aring;ende diskussion om etiska aspekter, inte bara som en principiell diskussion utan ocks&aring; f&ouml;r att ge v&auml;gledning till handl&auml;ggning av vardagliga problem. S&auml;rskilt g&auml;ller detta vid komplicerande sjukdom och vid v&aring;rd i livets slutskede. Som behandlande l&auml;kare st&auml;lls man f&ouml;rr eller senare inf&ouml;r denna problematik. Var ska patienten v&aring;rdas och hur ska man st&auml;lla sig till livsuppeh&aring;llande &aring;tg&auml;rder? D&aring; &auml;r det viktigt med kunskap om demenssjukdomar i allm&auml;nhet, om deras f&ouml;rlopp och att ha en f&ouml;rm&aring;ga till inlevelse i den demente patientens situation. Den dementes behov m&aring;ste uppfattas och respekteras, och det &auml;r s&auml;rskilt viktigt att vara lyh&ouml;rd f&ouml;r anh&ouml;rigas och personalens synpunkter. Goda m&ouml;jligheter till kommunikation och dokumentation kring v&aring;rden b&ouml;r efterstr&auml;vas.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c926d844-13e8-45cb-972e-2394eb4d8479",
+			"name": "c926d844-13e8-45cb-972e-2394eb4d8479",
+			"type": "text",
+			"content": "<h2 id=\"Prevention-av-demens\"><span style=\"color: #000000;\">Prevention av demens</span></h2>\n<p><span style=\"color: #ff0000;\"><span style=\"color: #000000;\">Kunskapen om riskfaktorer f&ouml;r Alzheimers sjukdom har medf&ouml;rt att man b&ouml;r ha fokus p&aring; prevention (8). En viktig faktor d&auml;rvidlag &auml;r fysisk aktivitet, som har en positiv effekt p&aring; hj&auml;rnan.</span> <span style=\"color: #000000;\">Kognitiva funktioner som minne, uppm&auml;rksamhet och simultankapacitet p&aring;verkas gynnsamt. Aerob fysisk aktivitet minskar risken f&ouml;r att utveckla Alzheimers sjukdom, Parkinsons sjukdom (se (9) f&ouml;r en genomg&aring;ng av litteraturen) och &auml;ven vaskul&auml;r demens (10). Det finns s&aring;ledes evidens f&ouml;r att regelbunden fysisk aktivitet har en preventiv effekt p&aring; olika typer av demenssjukdom. </span></span><span style=\"color: #ff0000;\"><span style=\"color: #000000;\">Fysisk aktivitet har visats minska symtom vid lindrig l&auml;tt kognitiv<span style=\"background-color: #ffff00;\"> funktionsneds&auml;ttning</span> (11) med f&ouml;rb&auml;ttring av minne och exekutiva funktioner. Mer kunskap beh&ouml;vs inom detta omr&aring;de f&ouml;r att det ska vara helt konklusivt.</span><br></span><br><span style=\"color: #000000;\">Det finns god evidens f&ouml;r att aerob fysisk tr&auml;ning f&ouml;rb&auml;ttrar kognitiv funktion vid etablerad demens (11). Tr&auml;ningen ska anpassas till vad som &auml;r m&ouml;jligt f&ouml;r den enskilda individen. Aerob tr&auml;ning, det vill s&auml;ga tr&auml;ning som st&auml;ller krav p&aring; syreupptagning, &auml;r det som visats ge positiv effekt p&aring; kognitiva funktioner och det &auml;r tveksamt om styrketr&auml;ning kan ge lika god effekt.<br></span><br><span style=\"color: #000000;\">Den tr&auml;ning som rekommenderas, enligt FYSS<span style=\"text-decoration: line-through; color: #ff0000;\">, f&ouml;r att f&ouml;rebygga demens &auml;r: </span><br><br>- vid m&aring;ttlig intensitet 150 min/vecka f&ouml;rdelat p&aring; 5&minus;7 tillf&auml;llen <br>- vid h&ouml;g intensitet minst 75 min/vecka f&ouml;rdelad p&aring; 3&minus;5 tillf&auml;llen (11).<br></span><br><span style=\"color: #000000;\">En rad olika riskfaktorer f&ouml;r Alzheimers sjukdom &auml;r idag k&auml;nda (8). &Aring;lder, kardiovaskul&auml;ra faktorer (hypertoni, S-kolesterol, f&ouml;r h&ouml;gt eller f&ouml;r l&aring;gt BMI, diabetes), livsstilsfaktorer (utbildning, mental aktivitet, fysisk aktivitet, diet, r&ouml;kning, alkohol, social stimulans), genetiska faktorer. M&aring;nga av dessa faktorer &auml;r p&aring;verkbara. &Auml;ven stress tycks vara en p&aring;verkbar riskfaktor (12) som p&aring; sikt har visats &ouml;ka risken f&ouml;r Alzheimers sjukdom hos kvinnor. <span style=\"text-decoration: line-through;\"><span style=\"background-color: #ffff00;\">En tv&aring;&aring;rig interventionsstudie rapporterar signifikant b&auml;ttre kognitiv f&ouml;rm&aring;ga efter samtidig f&ouml;r&auml;ndring av fysisk aktivitet, psykosocial stimulans, kognitiv tr&auml;ning, diet, alkohol och kardiovaskul&auml;ra faktorer (13).</span></span>&nbsp;<span style=\"color: #ff0000;\">En tv&aring;&aring;rig randomiserad interventionsstudie med ett s&aring; kallat <span style=\"background-color: #ffff00;\">multidoaminpaket</span> (fysisk aktivitet,&nbsp; psykosocial stimulans, kognitiv tr&auml;ning, n&auml;ringstillskott och kontroll av kardiovaskul&auml;ra faktorer) visade signifikant b&auml;ttre kognitiv f&ouml;rm&aring;ga i interventionsgruppen j&auml;mf&ouml;rt med kontrollgruppen (13).</span><br></span> <br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "eb93e04d-623d-470b-8d76-e57a83757e5f",
+			"name": "eb93e04d-623d-470b-8d76-e57a83757e5f",
+			"type": "text",
+			"content": "<h3 id=\"s7_27\">Omv&aring;rdnadsasp<span style=\"color: #000000;\">ekter vid m&aring;ttlig demenssjukdom</span></h3>\n<p><span style=\"color: #000000;\">Vid m&aring;ttlig demenssjukdom finns sv&aring;righeter f&ouml;r den drabbade att sj&auml;lv initiera och skapa aktiviteter. Utan st&ouml;d skapas en inaktivitet, som</span> leder till negativa effekter p&aring; sj&auml;lvk&auml;nsla och f&ouml;rm&aring;gor. Dagverksamhet ger positiva effekter, men passar inte alla.<br><br></p>\n<p>Den fortskridande f&ouml;rs&auml;mringen leder till att identitet och sj&auml;lvk&auml;nsla p&aring;verkas. P&aring;lagrade depressiva symtom p&aring;verkar dessutom livskvaliteten starkt. Upplevelser av minskade f&ouml;rm&aring;gor kan v&auml;gas upp av positiva mellanm&auml;nskliga kontakter. Hj&auml;lpinsatser m&aring;ste g&ouml;ras f&ouml;rsiktigt, s&aring; att inte sj&auml;lvk&auml;nslan p&aring;verkas negativt.</p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0162fb7d-1d0d-4e60-b581-9241ef851404",
+			"name": "0162fb7d-1d0d-4e60-b581-9241ef851404",
+			"type": "text",
+			"content": "<h3 id=\"s7_28\">Omv&aring;rdnadsaspekter vid sv&aring;<span style=\"color: #000000;\">r demenssjukdom</span></h3>\n<p><span style=\"color: #000000;\">Vid sv&aring;r demenssjukdom &auml;r det sv&aring;rt f&ouml;r personen att klara eget boende. Demensgrad, konfusionstendens, m&ouml;jlighet till hj&auml;lp i hemmet och andra individuella faktorer avg&ouml;r n&auml;r det &auml;r dags f&ouml;r flytt till institution. En flyttning &auml;r alltid sv&aring;r och k&auml;nslosam, ofta mest f&ouml;r anh&ouml;riga.</span><br><br></p>\n<p><span style=\"color: #000000;\">Vid sv&aring;r demenssjukdom har den drabbade sv&aring;rt att f&ouml;rst&aring; och tolka omgivningen. Feltolkningar ligger bakom en stor del av beteendesymtomen. L&auml;kemedelsbe</span>handlingen m&aring;ste anpassas s&aring; att kognitiva funktioner underl&auml;ttas. Kognitiva st&ouml;rningar &auml;r en vanlig biverkning av l&auml;kemedelsbehandling vid andra sjukdomstillst&aring;nd (1). Det finns vid sv&aring;r demens m&aring;nga olika omv&aring;rdnadsstrategier, men det viktiga tycks vara att st&ouml;dja den dementes identitet och sj&auml;lvk&auml;nsla och underl&auml;tta en god kommunikation. L&auml;kemedelsbehandlingen b&ouml;r syfta till att underl&auml;tta detta.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1277f0a6-70c1-42cc-ae1c-2a8b22743f39",
+			"name": "1277f0a6-70c1-42cc-ae1c-2a8b22743f39",
+			"type": "text",
+			"content": "<h2 id=\"s7_30\">L&auml;kemedelsbehandling vid<span style=\"text-decoration: line-through; color: #ff0000;\"></span> <span style=\"color: #ff0000;\">Alzheimers sjukdom</span></h2>\n<p>Det p&aring;g&aring;r intensiv forskning f&ouml;r att hitta ett l&auml;kemedel som kan<span style=\"color: #000000;\"> p&aring;verka sjukdomsmekanismen vid Alzheimers sjukdom. Forskningen har fokuserat p&aring; beta-amyloid och tau. Trots flera bakslag p&aring;g&aring;r fortfarande flera l&auml;kemedelsstudier inom omr&aring;det.</span><br><br></p>\n<p><span style=\"color: #000000;\">Det saknas s&aring;ledes idag etablerad l&auml;kemedelsbehandling riktad mot <span style=\"color: #ff0000;\">den bakomliggande</span> sjukdomsmekanismen vid en demenssjukdom. Sjukdomsprocessen vid diagnoserna Alzheimers sjukdom, vaskul&auml;r demens, frontotemporal demens eller Lewy kroppsdemens kan &auml;nnu inte p&aring;verkas av n&aring;gon specifik behandling. Terapeutiska &aring;tg&auml;rder f&aring;r d&auml;rf&ouml;r syfta till att f&ouml;rb&auml;ttra symtom och minska negativa effekter av demenssjukdomen.</span><br><br></p>\n<p><span style=\"color: #000000;\">I epidemiologiska studier ses ett samband mellan brist p&aring; B<sub>12</sub>/folsyra och demens. Det saknas dock vetenskapligt st&ouml;d f&ouml;r att substitution vid en etablerad demenssjukdom ger en f&ouml;rb&auml;ttring av kognitiva funktioner. Konstaterad vitaminbrist ska behandlas. &Auml;ven andra mentala funktioner som depression &auml;</span>r associerade med brist p&aring; vitamin B<sub>12</sub>/folsyra. Se i &ouml;vrigt kapitlet <a href=\"{pre}/kapitel/nutrition/vitaminer_mineraler_och_sparamnen.html#c3_1\">Vitaminer, mineraler och sp&aring;r&auml;mnen</a>, faktaruta 2 (vitamin B<sub>12</sub>) och faktaruta 4 (folat).<span> </span><span> </span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "376a725f-ef91-4e12-8b35-4b8463105cd1",
+			"name": "376a725f-ef91-4e12-8b35-4b8463105cd1",
+			"type": "text",
+			"content": "<h3 id=\"s7_33\">Symtombehandling vid<span style=\"color: #ff0000;\"> Alzheimers sjukdom<span style=\"text-decoration: line-through;\"><br></span></span></h3>\n<p>Det finns tv&aring; olika behandlingsstrategier mot kognitiv of&ouml;rm&aring;ga: kolinesterash&auml;mmare och memantin, se Terapirekommendation 1.<br><br></p>\n<p>Vid Alzheimers sjukdom<span style=\"text-decoration: line-through; color: #ff0000;\">, men ocks&aring; vid vaskul&auml;r demens,</span> finns en kraftig reduktion av acetylkolin. Bristen p&aring; acetylkolin leder till negativa effekter p&aring; kognitiva funktioner. Mekanismen &auml;r likartad den som ses vid behandling med<span style=\"color: #000000;\"> antikolinerga l&auml;kemedel. Genom att med l&auml;kemedel hindra nedbrytningen &ouml;kar halten acetylkolin </span><span style=\"color: #ff0000;\"><span style=\"color: #000000;\">och detta kan p&aring;verka kognitionen positivt.&nbsp;<span style=\"color: #ff0000;\">Det finns ett svagt st&ouml;d f&ouml;r att kolinesterash&auml;mmare kan ha gynnsamma effekter. Den kliniska betydelsen av effekten &auml;r dock os&auml;ker och behandlingen medf&ouml;r ocks&aring; biverkningar.</span></span> <br></span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0c011e1d-0955-44dc-a4ff-7d031a90c458",
+			"name": "0c011e1d-0955-44dc-a4ff-7d031a90c458",
+			"type": "therapy",
+			"content": {
+				"number": "1",
+				"title": "Symtombehandling vid Alzheimers sjukdom",
+				"id": "s7_34",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>L&auml;kemedel</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>Dosering</strong></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">\r\n<p><strong>Behandling med kolinesterash&auml;mmare</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Donepezil</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Initialt 5 mg/dag. Efter 4 veckor h&ouml;js dosen till 10 mg/dag, som &auml;r maxdos.</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Galantamin</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Initialt 8 mg/dag. Efter 4 veckor h&ouml;js dosen till 16 mg/dag. Vid terapisvikt kan</div>\r\n<div class=\"tableLine\">dosen h&ouml;jas till maxdosen 24 mg/dag.</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Rivastigmin</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Initialt 1,5 mg 2 g&aring;nger/dag. Efter 1 vecka h&ouml;js dosen till 3 mg 2 g&aring;nger/dag.</div>\r\n<div class=\"tableLine\">Dos&ouml;kning sker gradvis s&aring; l&aring;ngt det g&aring;r utan att biverkningar uppst&aring;r. Maxdos</div>\r\n<div class=\"tableLine\">&auml;r 6 mg 2 g&aring;nger/dag. Alternativt anv&auml;nds dep&aring;pl&aring;ster. Behandlingen p&aring;b&ouml;rjas</div>\r\n<div class=\"tableLine\">med 4,6 mg/24 timmar. Efter minst 4 veckors behandling, och om dosen tolere-</div>\r\n<div class=\"tableLine\">ras v&auml;l, b&ouml;r dosen h&ouml;jas till 9,5 mg/24 timmar.</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">\r\n<p><strong>Behandling med memantin</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Memantin</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Behandlingen startas med 5 mg/dag. H&ouml;jning sker med 5 mg/vecka till 20 mg/</div>\r\n<div class=\"tableLine\">dag. Vid biverkningar, som konfusionssymtom, s&auml;nks dosen.</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "17034e7b-866e-42ba-bc31-0ecdf052306f",
+			"name": "17034e7b-866e-42ba-bc31-0ecdf052306f",
+			"type": "text",
+			"content": "<h4 id=\"Kolinesterashammare\">Kolinesterash&auml;mmare</h4>\n<p>Det finns idag tre olika kolinesterash&auml;mmare &ndash; donepezil, galantamin och rivastigmin. Trots att dessa preparat &auml;r olika, och har delvis olika effekter, har ingen s&auml;ker skillnad kunnat p&aring;visas mellan l&auml;kemedlen. Indikationen f&ouml;r kolinesterash&auml;mmare &auml;r <span style=\"color: #ff0000;\">mild eller </span>m&aring;ttlig Alzheimers sjukdom. Enligt resultat, vid utv&auml;rdering med hj&auml;lp av skattningsskalor, &auml;r effekten m&aring;ttlig men har i praktiken oftast en klinisk relevans (1,14).<br><br></p>\n<p>Kolinesterash&auml;mmare har i dagligt tal kallats f&ouml;r &rdquo;bromsmediciner&rdquo;. N&aring;gon effekt p&aring; sjukdomsf&ouml;rloppet har dock inte kunnat p&aring;visas med s&auml;kerhet. Trots positiva effekter av behandlingen forts&auml;tter s&aring;ledes sjukdomsprocessen.<br><br></p>\n<p>Huvuddelen av dokumentationen avser behandling av Alzheimers sjukdom och samtliga preparat &auml;r godk&auml;nda f&ouml;r denna indikation. Positiva effekter har ocks&aring; rapporterats vid demens vid Parkinsons sjukdom, och rivastigmin har denna indikation (15).&nbsp;<span style=\"color: #ff0000;\">&Auml;ven vid Lewy kroppsdemens har kolinesterash&auml;mmare visat sig ha positiva effekter p&aring; kognition och ADL funktion.&nbsp;</span> <br><br></p>\n<p>All behandling av kognitiva sjukdomar ska f&ouml;reg&aring;s av en demensutredning f&ouml;r att fastst&auml;lla diagnos. Prim&auml;rv&aring;rdens basala utredning r&auml;cker oftast f&ouml;r fastst&auml;llande av diagnos och &auml;r d&aring; tillr&auml;cklig f&ouml;r att genomf&ouml;ra behandlingsf&ouml;rs&ouml;k med kolinesterash&auml;mmare. Hos yngre individer, vid snabba f&ouml;rlopp eller mycket tidigt i sjukdomsf&ouml;rloppet kr&auml;vs ofta kompletterande utredning i samr&aring;d med eller av specialiserad minnesmottagning.<br><br></p>\n<p>Vid ins&auml;ttning av kolinesterash&auml;mmare g&ouml;rs testning med minst MMT och klocktest. Vid utv&auml;rdering 3&ndash;6 m&aring;nader efter fulldos fr&aring;gas anh&ouml;riga och patient om eventuella effekter och biverkningar. Annat som efterh&ouml;rs &auml;r koncentrationsf&ouml;rm&aring;ga, initiativ och social f&ouml;rm&aring;ga. En ny testning g&ouml;rs. B&aring;de testresultatet och f&ouml;rm&aring;gan att hantera testsituationen &auml;r viktiga f&ouml;r utv&auml;rderingen. Ofta &auml;ndras inte testresultatet medan andra kvaliteter p&aring;verkas p&aring; ett meningsfullt s&auml;tt. Vid positiva effekter initieras l&aring;ngtidsbehandling.<br><br></p>\n<p>Vid ins&auml;ttning av kolinesterash&auml;mmare, och speciellt vid behandling med rivastigmin, &auml;r det viktigt att l&auml;kare/sjuksk&ouml;terska tar kontakt med patienten under upptitreringsfasen med tanke p&aring; eventuella biverkningar. <span style=\"background-color: #ffff00; color: #ff0000;\">Donepezil kan p&aring;verkar QTc-tiden med risk f&ouml;r Torsade de Pointes och akut hj&auml;rtstopp. Viss risk finns f&ouml;r Galantamin medan Rivastigmin inte har belagts ha denna effekt, ref Crediblemeds.org. Risken &auml;r kliniskt relevant vid riskfaktorer som hj&auml;rtsjukdom, hypokalemi, hypomagnesemi, hypocalcemi, speciellt vid h&ouml;g &aring;lder. Andra l&auml;kemedel som ger QTc-f&ouml;rl&auml;ngning &auml;r en annan riskfaktor, se avsnitt om &ouml;verd&ouml;dlighet av antidepressiva och&nbsp; crediblemeds.org. Vid misstanke att det finns &ouml;kad risk f&ouml;r denna biverkan b&ouml;r en EKG-unders&ouml;kning g&ouml;ras innan och efter fulldos av l&auml;kemedlet.</span><br><br></p>\n<p>Det saknas vetenskapligt underlag f&ouml;r hur en utv&auml;rdering b&ouml;r ske. Effekten av kolinesterash&auml;mmare &auml;r sannolikt olika p&aring; olika kognitiva funktioner. Mest uttalad effekt ses p&aring; uppm&auml;rksamhet, koncentrationsf&ouml;rm&aring;ga, och andra f&ouml;rm&aring;gor som omfattas av begreppet &rdquo;exekutiva f&ouml;rm&aring;gor&rdquo;. Tyv&auml;rr &auml;r dessa kognitiva aspekter sv&aring;rtestade och uppfattas ofta b&auml;ttre i den kliniska situationen. F&ouml;r utv&auml;rdering se Faktaruta 4.<br><br></p>\n<p>De positiva effekter som ses av kolinesterash&auml;mmare kvarst&aring;r under l&aring;ng tid. I&nbsp;slutfasen av sjukdomen kan dock effekterna minska eller upph&ouml;ra. Det saknas studier om hur l&auml;nge en behandling har effekt och klara riktlinjer &auml;r inte m&ouml;jliga att ge. En viktig effekt av kolinesterash&auml;mmare vid sv&aring;r demens &auml;r minskning av beteendesymtomen. En annan viktig effekt &auml;r f&ouml;rb&auml;ttrad kontakt med anh&ouml;riga. Detta g&ouml;r att flytt till institution inte &auml;r sk&auml;l att avsluta en behandling.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e9718e1f-7c3d-400a-b087-935dcbe86a9a",
+			"name": "e9718e1f-7c3d-400a-b087-935dcbe86a9a",
+			"type": "facts",
+			"content": {
+				"number": "4",
+				"title": "<a class=\"crossref\" id=\"15280\"></a>Utvärdering av behandlingen med <a class=\"crossref\" id=\"kolinesterash&#xE4;mmare\"></a>kolinesterashämmare",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0px 0px 8px 15px;\">\r\n<li><span class=\"tab\"></span>Kontakt under upptitreringsfasen f&ouml;r att bed&ouml;ma eventuella biverkningar, som kan med&shy;f&ouml;ra &auml;ndring av dos eller l&aring;ngsammare upp&shy;titrering.</li>\r\n<li><span class=\"tabstop\"></span><span class=\"tabstop\"></span>Utv&auml;rdering av behandlingseffekten 3&ndash;6 m&aring;na&shy;der efter uppn&aring;dd full dos. Utv&auml;rderingen b&ouml;r omfatta: <span class=\"tabstop\"></span><span class=\"tab\"><br></span>\r\n<ul style=\"padding:0px; margin:0 0 8px 15px;\">\r\n<li>Patientens och anh&ouml;rigas uppfattning<span class=\"tabstop\"></span></li>\r\n<li><span class=\"tab\"></span>Egen helhetsuppfattning om funktionsf&ouml;rm&aring;&shy;gan. Fr&aring;ga speciellt efter effekter p&aring; uppm&auml;rksamhet, koncentrationsf&ouml;rm&aring;ga och funktion i sociala situationer. Detta beskrivs ofta av anh&ouml;riga som &rdquo;han/hon &auml;r mer med&rdquo;.</li>\r\n<li><span class=\"tabstop\"></span>Test, minst med mini-mental test (MMT).</li>\r\n</ul>\r\n</li>\r\n<li><span class=\"tab\"></span>Om effekten bed&ouml;ms positiv ska l&aring;ngtids&shy;behandling inledas. Om d&auml;remot ingen effekt &auml;r uppenbar vid utv&auml;rderingen avslutas behand&shy;lingsf&ouml;rs&ouml;ket.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "s7_37"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "501950cf-5c64-451c-b8ed-7a304ba78f9d",
+			"name": "501950cf-5c64-451c-b8ed-7a304ba78f9d",
+			"type": "text",
+			"content": "<h4 id=\"s7_38\">Uts&auml;ttning av kolinesterash&auml;mmare</h4>\n<p><span style=\"color: #000000;\">Det finns inget enhetligt vetenskapligt underlag f&ouml;r hur uts&auml;ttning av kolinesterash&auml;mmare ska ske. F&ouml;rslagsvis b&ouml;rjar man med att halvera dosen under fyra veckor.</span> Om inga f&ouml;rs&auml;mringar intr&auml;der s&auml;tts l&auml;kemedlet ut. Ny utv&auml;rdering av eventuell f&ouml;rs&auml;mring g&ouml;rs efter ytterligare fyra veckor. Om f&ouml;rs&auml;mring sker ska behandlingen s&aring; snart som m&ouml;jligt &aring;terins&auml;ttas.</p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ce54d82d-759c-4c8b-a031-011f9bad44d8",
+			"name": "ce54d82d-759c-4c8b-a031-011f9bad44d8",
+			"type": "text",
+			"content": "<h4 id=\"s7_39\">Memantin</h4>\n<p>Memantin f&ouml;rb&auml;ttrar kognitiva funktioner vid m&aring;ttlig/sv&aring;r demens genom en stabilisering av glutamataktiviteten i NMDA-receptorn (1). Verkningsmekanismen &auml;r en helt annan &auml;n den f&ouml;r kolinesterash&auml;mmare.<br><br></p>\n<p>Memantin &auml;r<span style=\"color: #000000;\"> godk&auml;nd f&ouml;r b</span>ehandling av m&aring;ttlig eller sv&aring;r Alzheimers sjukdom. De som b&ouml;r komma ifr&aring;ga f&ouml;r behandling med memantin &auml;r patienter d&auml;r sjukdomen har f&ouml;rv&auml;rrats s&aring; att dagligt behov av hj&auml;lp &auml;r p&aring;tagligt. En individuell bed&ouml;mning av effekten ska g&ouml;ras.<br><br></p>\n<p>Memantin kan ges som monoterapi eller som till&auml;gg till kolinesterash&auml;mmare. <span style=\"text-decoration: line-through; color: #ff0000;\">Indikationen f&ouml;r memantin &auml;r <span style=\"background-color: #ffff00;\">otillr&auml;cklig effekt av kolinesterash&auml;mmare</span> vid m&aring;ttlig/sv&aring;r Alzheimers sjukdom. </span>Vid behandling med memantin ser man s&aring;v&auml;l f&ouml;rb&auml;ttrad kognitiv f&ouml;rm&aring;ga som minskning av beteendesymtom.<br><br></p>\n<p>De positiva effekterna p&aring; kognitiva f&ouml;rm&aring;gor kommer f&ouml;rh&aring;llandevis snabbt och utv&auml;rdering kan ske en m&aring;nad efter att slutdosen uppn&aring;tts. Biverkningarna i studierna &auml;r f&aring;. Hos enstaka patienter ser man initialt positiva effekter men konfusionstendens vid 15&ndash;20 mg memantin/dag. Dosen b&ouml;r d&aring; s&auml;nkas till 10&nbsp;mg/dag.<br><br></p>\n<p>Behandlingsutv&auml;rdering sker som vid utv&auml;rdering av kolinesterash&auml;mmare. Vid positiva effekter initieras l&aring;ngtidsbehandling. Liksom med kolinesterash&auml;mmare finns inga studier av hur l&auml;nge en behandling ger positiva effekter.</p>\n<h4 id=\"s7_40\">Uts&auml;ttning av memantin</h4>\n<p>Vid uts&auml;ttningsf&ouml;rs&ouml;k ska en utv&auml;rdering g&ouml;ras 3&ndash;4 veckor efter avslutad behandling. Vid f&ouml;rs&auml;mring &aring;terins&auml;tts l&auml;kemedlet.</p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c1ad9211-4720-4baf-97ef-fff971a09717",
+			"name": "c1ad9211-4720-4baf-97ef-fff971a09717",
+			"type": "text",
+			"content": "<h4 id=\"s7_41\">L&aring;ngtidseffekter av kolinesterash&auml;mmare och memantin</h4>\n<p>L&aring;ngtidseffekter av kolinesterash&auml;mmare och memantin har studerats i begr&auml;nsad ut-str&auml;ckning. Ingen effekt rapporterades i en studie efter tv&aring; &aring;rs behandling (16) medan en annan studie rapporterade att tiden till att komma till sjukhem f&ouml;rl&auml;ngdes avsev&auml;rt av kolinesterash&auml;mmare (17). Till&auml;gg av memantin f&ouml;rb&auml;ttrade ytterligare denna effekt. Effekten av till&auml;gg av memantin till kolinesterash&auml;mmare var tydlig, men f&ouml;rst efter ett &aring;rs behandling. B&aring;da dessa studier har svagheter men l&aring;ngtidsstudie<span style=\"color: #000000;\">n (17) talar f&ouml;r att det finns positiva l&aring;ngtidseffekter av kombinationen kolinesterash&auml;mmare och memantin.</span></p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3feed05b-623b-4322-9ffd-5197387c93ce",
+			"name": "3feed05b-623b-4322-9ffd-5197387c93ce",
+			"type": "text",
+			"content": "<h2 id=\"Overdodlighet-med-antidepressiva-lakemedel-psykofarmaka-vid-demens\"><span style=\"color: #ff0000;\"><span style=\"color: #000000;\">&Ouml;verd&ouml;dlighet med <span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\">antidepressiva l&auml;kemedel</span></span></span> <span style=\"color: #000000;\">psykofarmaka vid demens</span></span></h2>\n<p><span style=\"color: #ff0000;\"><span style=\"text-decoration: line-through;\"></span><span style=\"text-decoration: line-through;\"></span><span style=\"color: #000000;\">M&aring;nga antidepressiva l&auml;kemedel kan ge en f&ouml;rl&auml;ngning av QTc-tiden och ge torsade de pointes som kan leda till akut hj&auml;rtd&ouml;d. I populationsbaserade studier har d&aring; en &ouml;kad mortalitet visats framf&ouml;rallt av citalopram. Ocks&aring; andra SSRI-preparat kan ge QTc-f&ouml;rl&auml;ngning men i mindre omfattning. Donepezil och galantamin, men inte rivastigmin, har rapporterats kunna ge f&ouml;rl&auml;ngning av QTc tiden. &Auml;ven mirtazapin har visats ge h&ouml;g mortalitet, men bakgrunden &auml;r os&auml;ker. </span><br><br><span style=\"color: #000000;\">Ett flertal faktorer bidrar till utveckling av torsade de pointes. H&ouml;g &aring;lder, kvinnligt k&ouml;n, hj&auml;rtsjukdom och elektrolytrubbningar med minskat S-K, S-Mg <span style=\"color: #ff0000;\">och S-Ca</span>. Andra l&auml;kemedel vid kroppsliga sjukdomar s&aring; som antipsykotiska l&auml;kemedel (speciellt haloperidol) kan ge QTc-f&ouml;rl&auml;ngning och utg&ouml;r ocks&aring; en riskfaktor. </span><br></span></p>\n<p><span style=\"color: #000000;\"><br>Hos &auml;ldre d&auml;r &ouml;kad risk f&ouml;r f&ouml;rl&auml;ngning av QTc-tiden misst&auml;nks, eller andra riskfaktorer&nbsp; f&ouml;r torsade de pointes, b&ouml;r man genomf&ouml;ra en EKG-unders&ouml;kning innan behandling och efter ins&auml;ttning av antidepressivt l&auml;kemedel.</span></p>\n<p><span style=\"color: #ff0000;\"><br></span><span style=\"color: #000000;\">Hyponatremi, liksom risk f&ouml;r magbl&ouml;dningar &auml;r andra risker med SSRI.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "de2b0116-7c81-43da-bc8f-7a6f325ade38",
+			"name": "de2b0116-7c81-43da-bc8f-7a6f325ade38",
+			"type": "text",
+			"content": "<h3 id=\"s7_42\">Affektiva symtom vid demens</h3>\n<p>Depressiva symtom &auml;r vanliga vid demens. Upp till h&auml;lften av alla med Alzheimers sjukdom eller vaskul&auml;r demens har depressiva symtom. Symtombilden ter sig ofta annorlunda &auml;n vid depression hos yngre. Depressiva symtom vid demens kommer smygande och &auml;r ofta l&aring;ngdragna, speciellt vid vaskul&auml;r demens. Eftersom diagnosen &auml;r rent klinisk &auml;r det l&auml;tt att f&ouml;rbise en p&aring;lagrad depression vid demens. F&ouml;ljande problematik finns:<br><br></p>\n<ul>\n<li><span class=\"tab\"></span>Den drabbade har sj&auml;lv sv&aring;rt att ber&auml;tta om s&auml;nkt st&auml;mningsl&auml;ge.</li>\n<li><span class=\"tab\"></span>I samtal kan bilden variera mellan normalt eller depressivt.</li>\n<li><span class=\"tab\"></span>&Aring;ngestreaktioner &auml;r vanliga. Dessa ter sig som oro och eventuellt i form av beteendesymtom.</li>\n<li><span class=\"tab\"></span>De kognitiva bristerna blir mer accentuerade vid depression.</li>\n<li><span class=\"tab\"></span>Irritabilitet eller aggressivitet kan vara depressionssymtom vid demens.</li>\n<li><span class=\"tab\"></span>Somatiska symtom &auml;r vanliga som aptitst&ouml;rning, sm&auml;rtor eller f&ouml;rstoppning.</li>\n</ul>\n<p>Bristande motivation, initiativ- eller psykomotorisk f&ouml;rl&aring;ngsamning kan vara symtom p&aring; s&aring;v&auml;l depression som en demenssjukdom.</p>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3b648b09-1517-4ce6-8c2b-579927b7eb38",
+			"name": "3b648b09-1517-4ce6-8c2b-579927b7eb38",
+			"type": "text",
+			"content": "<h4 id=\"s7_43\">Behandling</h4>\n<p><span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\"></span></span><span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\"></span></span><span style=\"color: #000000;\">Depression ger en betydande f&ouml;rs&auml;mring av livskvalit&eacute;n och ger ocks&aring; en &ouml;kad mortalitet. Det &auml;r d&auml;rf&ouml;r viktigt att genomf&ouml;ra en behandling men med s&aring; f&aring; biverkningar som m&ouml;jligt. Icke-farmakologiska &aring;tg&auml;rder b&ouml;r d&auml;rf&ouml;r alltid beaktas vid behandling av depression vid demens. I l&auml;kemedelsstudier av depression vid demens finns ett mycket stort placebosvar, som g&ouml;r det sv&aring;rt att se de terapeutiska effekten av l&auml;kemedlet. Detta talar f&ouml;r att psykosociala &aring;tg&auml;rder &auml;r en viktig som behandlingsstrategi. Psykoterapi f&ouml;rsv&aring;ras av den kognitiva reduktionen.</span><br><br><span style=\"color: #000000;\">Det finns endast f&aring; studier av l&auml;kemedelsbehandling av depression vid demens. Resultaten &auml;r varierande och ger svag evidens f&ouml;r positiva effekter. Klinisk erfarenhet talar f&ouml;r att antidepressiva kan ge positiva effekter. </span><br><br><span style=\"text-decoration: line-through;\"><span style=\"color: #000000; background-color: #ffff00; text-decoration: line-through;\">Man b&ouml;r v&auml;lja preparat med s&aring; liten risk som m&ouml;jligt, citalopram och mirtazapin b&ouml;r undvikas. Paroxetin och fluoxetin &auml;r starka h&auml;mmare av CYP2D6 och kan ge interaktionsproblematik. Bupropion och duloxetin &auml;r svaga h&auml;mmare av CYP2D6. Sertralin, maxdos 100 mg och escitalopram, max dos 10 mg kan fungera, escitalopram ger dock en h&ouml;gre risk f&ouml;r QTc-f&ouml;rl&auml;ngning &auml;n sertralin. Duloxetin har visats ge positiv effekt vid depression hos &auml;ldre och ger f&auml;rre biverkningar &auml;n venlafaxin. Bupropion ger ingen f&ouml;rl&auml;ngning av QTc.tiden.</span></span><br><br><span style=\"text-decoration: line-through;\"><span style=\"color: #000000; background-color: #ffff00; text-decoration: line-through;\">All insatt antidepressiv behandling skall f&ouml;ljas med tanke p&aring; biverkningar och effekt. Vid bristande effekt av SSRI b&ouml;r man pr&ouml;va l&auml;kemedel, eller l&auml;kemedelskombination med effekt p&aring; b&aring;de serotonin och noradrenalin som duloxetin.</span></span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fd382e3f-4e15-43da-866d-fdb7e6a32b96",
+			"name": "fd382e3f-4e15-43da-866d-fdb7e6a32b96",
+			"type": "text",
+			"content": "<h4 id=\"s7_44\">Risk f&ouml;r utl&ouml;sande av mani/hypomani</h4>\n<p>Vid alltf&ouml;r kraftfull antidepressiv behandling finns risk f&ouml;r att skapa mani/hypomani. Denna k&auml;nnetecknas vid demens av &ouml;veraktivitet (mest typisk &auml;r verbal &ouml;veraktivitet), utagerande beteende och irritabilitet/aggressivitet, men ocks&aring; stunder av gr&aring;t eller &aring;ngest. Ibland finns konfusionella reaktioner. F&ouml;r&auml;ndringen i st&auml;mningsl&auml;ge och beteende sker p&aring; relativt kort tid. Vid misstanke om manisk reaktion avslutas all antidepressiv behandling och d&auml;mpande behandling ges med neuroleptikum (aripiprazol, risperidon, olanzapin eller quetiapin).</p>\n<h3 id=\"s7_45\"></h3>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "19917c76-3cdf-404d-8409-494403a987e4",
+			"name": "19917c76-3cdf-404d-8409-494403a987e4",
+			"type": "text",
+			"content": "<h3 id=\"s7_45\">Psykotiska symtom vid demens</h3>\n<p>Psykotiska symtom &auml;r vanliga vid demens och kan vara uttryck f&ouml;r:</p>\n<ul>\n<li><span class=\"tab\"></span>Konfusionella attacker</li>\n<li><span class=\"tab\"></span>Lewy <span style=\"color: #000000;\">kropps</span>demens</li>\n<li><span class=\"tab\"></span>Symtom av den neurodegenerativa sjukdomen</li>\n<li>Behandling med dopaminaktiverande l&auml;kemedel vid Parkinsons sjukdom.</li>\n</ul>\n<p></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "dbcf48b2-f8f3-40de-8cc9-f8607996ad3e",
+			"name": "dbcf48b2-f8f3-40de-8cc9-f8607996ad3e",
+			"type": "text",
+			"content": "<h4 id=\"s7_46\">Behandling</h4>\n<ul>\n<li>Behandlingen av de psykotiska symtomen beror p&aring; orsaken. Det &auml;r ol&auml;mpligt att utan noggrant &ouml;verv&auml;gande ge neuroleptikum vid psykotiska symtom.</li>\n<li><span class=\"tab\"></span>Psykotiska symtom vid konfusion behandlas enligt riktlinjer nedan.</li>\n<li><span class=\"tab\"></span>Psykotiska symtom vid Lewy <span style=\"color: #000000;\">kropps</span>demens behandlas med kolinesterash&auml;mmare.</li>\n</ul>\n<p><span style=\"color: #000000;\">Kolinesterash&auml;mmare har vid Alzheimers sjukdom visats ha god effekt vid psykotiska symtom som antipsykotika och b&ouml;r d&auml;rf&ouml;r vara f&ouml;rstahandsmedel ocks&aring; vid psykotiska symtom hos personer med Alzheimers sjukdom med h&auml;nsyn till de biverkningar som finns med antipsykotiska l&auml;kemedel. Vid otillr&auml;cklig effekt kan antipsykotiska l&auml;kemedel pr&ouml;vas i till&auml;gg. </span>Doserna b&ouml;r h&aring;llas l&aring;ga. I f&ouml;rsta hand ges risperidon. Doser p&aring; 1,5&nbsp;mg/dag eller h&ouml;gre ger ofta extrapyramidala biverkningar. Alternativ &auml;r aripiprazol, olanzapin eller quetiapin. Aripiprazol kan ge extrapyramidala biverkningar hos k&auml;nsliga personer, olanzapin kan ge kognitiv f&ouml;rs&auml;mring i doser &ouml;ver 10&nbsp;mg medan quetiapin kan ge p&aring;taglig tr&ouml;tthet.<br><br></p>\n<p>Samtliga studerade <span style=\"text-decoration: line-through;\">neuroleptika har hos personer med demens</span> <span style=\"color: #ff0000;\">antipsykotiska l&auml;kemedel som anv&auml;nds f&ouml;r att behandla personer med demenssjukdom har visat sig</span> &ouml;ka mortaliteten. Bakgrunden &auml;r os&auml;ker. Detta medf&ouml;r att neuroleptika endast ska ges som l&aring;ngtidsbehandling p&aring; stark indikation.<br><br></p>\n<h3 id=\"s7_47\"></h3>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b51e006f-5f3b-45d6-96e1-e6fa480e2d36",
+			"name": "b51e006f-5f3b-45d6-96e1-e6fa480e2d36",
+			"type": "text",
+			"content": "<h3 id=\"s7_47\">Behandling av beteendesymtom vid demens &ndash; handl&auml;ggning av akuta problem</h3>\n<p>F&ouml;r ytterligare information om behandling av beteendesymtom vid demens se L&auml;kemedelsverkets behandlingsrekommendation (2).<br><br></p>\n<p>Demens &auml;r en kronisk sjukdom med l&aring;ngt f&ouml;rlopp. F&ouml;r&auml;ndringarna &auml;r l&aring;ngsamma och den grundl&auml;ggande sjukdomen ger s&auml;llan upphov till beteendeproblem vid l&auml;tt eller m&aring;ttlig grad av demens. Vid sv&aring;r demens finns relativt ofta symtom som &auml;r st&ouml;rande f&ouml;r omgivningen. Grunden till dessa &auml;r vanligen inte de kognitiva st&ouml;rningarna i sig, utan kan h&auml;rledas till f&ouml;rh&aring;llandet mellan den demente och omgivningen eller p&aring;lagrade sjukdomar som konfusion eller depression. De symtom som framkommer &auml;r till sin natur &rdquo;icke-kognitiva&rdquo; och inte direkt relaterade till kognitiva of&ouml;rm&aring;gor. De &auml;r ofta problematiska f&ouml;r omgivningen och kan skapa stor belastning f&ouml;r anh&ouml;riga/v&aring;rdare. Det &auml;r viktigt f&ouml;r diagnos och behandling att beakta att symtomen p&aring;verkas b&aring;de av milj&ouml;faktorer och andra sjukdomar/sjukdomssymtom som infektioner t&nbsp;ex urinv&auml;gsinfektion och pneumoni.<br><br></p>\n<p>&Auml;ven om det finns m&aring;nga olika aspekter av icke-kognitiva symtom hos demenssjuka har de kommit att sammanf&ouml;ras under begreppet &rdquo;Beteendem&auml;ssiga och psykiska symtom vid demenssjukdom&rdquo; (BPSD). H&auml;r ing&aring;r olika symtom som aggressivitet, psykiska symtom, nedst&auml;mdhet, s&ouml;mnrubbningar, vandringsbeteende och andra tecken p&aring; hyperaktivitet.<br><br></p>\n<p>Studier av beteendesymtom fokuserar fr&auml;mst p&aring; biologiska faktorer som orsak till de st&ouml;rande symtomen, men m&aring;nga symtom kan uppst&aring; i en st&ouml;rd relation mellan personen med demens och omgivningen.<br><br></p>\n<p>Akuta problem vid demens utg&ouml;rs n&auml;stan uteslutande av beteendesymtom. Biologiska och sociala orsaker till beteendesymtom, se Faktaruta 6.</p>\n<p><span> <br></span>Biologiska och sociala faktorer p&aring;verkar varandra och orsaken till beteendesymtomen &auml;r komplex. Trots detta ska all behandling inriktas p&aring; grundorsaken och inte p&aring; de symtom som kommer fram. Ett strukturerat diagnostiskt t&auml;nkande &auml;r n&ouml;dv&auml;ndigt, se Terapirekommendation 2.</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d2202dc5-ceda-4010-a0ee-8ab49f6def25",
+			"name": "d2202dc5-ceda-4010-a0ee-8ab49f6def25",
+			"type": "facts",
+			"content": {
+				"number": "6",
+				"title": "Orsaker till beteendesymtom",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<h4><span style=\"color: #ff0000;\">Biologiska orsaker</span></h4>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>P&aring;lagrad konfusion</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Depression (oftast orsakad av delsymtomet &aring;ngest/oro)</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Psykotiska symtom vid Lewy <span style=\"color: #000000;\">kroppsd</span>emens<span class=\"tab\"></span></li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Mani/hypomani</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Aggressivitet som del av demenssjukdomen</li>\r\n</ul>\r\n<h4 id=\"s7_50\" class=\"facts skip\"><span style=\"color: #ff0000;\">Sociala orsaker</span></h4>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Stress eller annan st&ouml;rning utifr&aring;n</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Kr&auml;nkning i omv&aring;rdnadssituation</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Feltolkning i omv&aring;rdnadssituation</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span class=\"tab\"></span>Nya ok&auml;nda milj&ouml;er</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "s7_49"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "515236f3-f356-4413-aea3-d358a4a53a57",
+			"name": "515236f3-f356-4413-aea3-d358a4a53a57",
+			"type": "therapy",
+			"content": {
+				"number": "2",
+				"title": "Grundläggande behandlingsprinciper vid beteendesymtom",
+				"id": "s7_51",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td colspan=\"2\">\r\n<ul>\r\n<li>G&ouml;r en noggrann observation av symtomen. Det kan vara sv&aring;rt att erh&aring;lla en fullgod beskrivning fr&aring;n v&aring;rd&shy;personal och i praktiken &auml;r det ofta n&ouml;dv&auml;ndigt att sj&auml;lv observera f&ouml;r att kunna f&ouml;rst&aring; orsaken.</li>\r\n</ul>\r\n<ul>\r\n<li>G&ouml;r en tolkning av symtombilden f&ouml;r att f&ouml;rst&aring; vad som ligger bakom.</li>\r\n</ul>\r\n<ul>\r\n<li>G&ouml;r en behandlingsplan utifr&aring;n den specifika tolkningen, omv&aring;rdnads&aring;tg&auml;rder oftast prim&auml;ra.</li>\r\n</ul>\r\n<ul>\r\n<li>S&auml;tt in s&aring; specifik behandling som m&ouml;jligt.</li>\r\n</ul>\r\n<ul>\r\n<li>F&ouml;lj upp. Om effekten inte blir den f&ouml;rv&auml;ntade &ndash; ompr&ouml;va diagnos och behandling.</li>\r\n</ul>\r\n<ul>\r\n<li>I behandlingsstrategierna ska b&aring;de omv&aring;rdnadsstrategier och l&auml;kemedel ing&aring;. Omv&aring;rdnadsstrategier b&ouml;r vara den prim&auml;ra strategin. L&auml;kemedelsbehandling f&aring;r inte ges n&auml;r ol&auml;mplig yttre milj&ouml; ger upphov till symtom&shy;bilden.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"font-weight: bold;\">Neuroleptika</span></div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Av tradition har neuroleptika anv&auml;nts vid beteendesymtom vid demens. Det enda</div>\r\n<div class=\"tableLine\">neuroleptikapreparatet som i studier visat godtagbar effekt vid demens &auml;r risperidon.</div>\r\n<div class=\"tableLine\">Effekten &auml;r dock begr&auml;nsad. Initialdosen &auml;r 0,5 mg/dag och optimal dos &auml;r ca 1 mg/dag men individuella skillnader finns. Biverkningar &auml;r framf&ouml;r allt tr&ouml;tthet och extrapyramidala symtom, men &auml;ven blodtrycksfall och ben&ouml;dem kan f&ouml;rekomma.</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Behandling med neuroleptika har rapporterats &ouml;ka risken f&ouml;r cerebrovaskul&auml;r sjukdom och mortalitet. En prospektiv studie (21) visar att neuroleptika som grupp leder till kraftigt &ouml;kad l&aring;ngtidsmortalitet. Detta g&ouml;r att neuroleptika vid demens inte ska</div>\r\n<div class=\"tableLine\">ges annat &auml;n p&aring; strikt indikation och d&aring; endast kortast m&ouml;jliga tid.</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Kolinesteras-</strong></div>\r\n<div class=\"tableLine\"><strong>h&auml;mmare och</strong></div>\r\n<div class=\"tableLine\"><strong>memantin</strong></div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Kolinesterash&auml;mmare har i vissa studier visats ge positiva effekter medan man i andra inte sett n&aring;gon skillnad mot placebo (2). Sannolikt kan l&aring;ngtidsbehandling n&aring;gotminska risken f&ouml;r beteendesymtom. Vid beteendesymtom b&ouml;r d&auml;rf&ouml;r kolinesterash&auml;mmare bibeh&aring;llas men nyins&auml;ttning kan inte f&ouml;rv&auml;ntas p&aring;verka dessa symtom.</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Memantin har i flera studier visats minska beteendesymtom, b&aring;de vid monoterapi och som till&auml;gg till kolinesterash&auml;mmare (2). Memantin kan pr&ouml;vas f&ouml;r att minska beteendesymtom.</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"font-weight: bold;\">Antidepressiva</span></div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Depression kan te sig som beteendesymtom d&auml;r framf&ouml;r allt &aring;ngest kan felbed&ouml;mas som beteendesymtom. Behandling mot depressiva symtom kan ocks&aring; minska &aring;ngest.</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">SSRI-preparat kan hos vissa minska beteendesymtom som irritabilitet/aggressivitet genom att f&ouml;rb&auml;ttra emotionell kontroll (2). Denna effekt kommer snabbt och visar inte samma f&ouml;rdr&ouml;jning som vid behandling av depression eller &aring;ngest.</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"font-weight: bold;\">Antiepileptika</span></div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\"><span style=\"background-color: #ffff00;\">Karbamazepin ger en viss, men begr&auml;nsad, effekt p&aring; beteendesymtom vid demens. </span>Effekten &auml;r oftast inte kliniskt relevant.</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Pregabalin har en specifik effekt p&aring; &aring;ngest vid generaliserat &aring;ngestsyndrom. Studier vid demens saknas men erfarenheten visar effekt. Behandlingen ska initieras med</div>\r\n<div class=\"tableLine\">h&ouml;gst 25&nbsp;mg x 2. Vid dos&ouml;kning m&aring;ste en noggrann utv&auml;rdering av biverkningar g&ouml;ras.</div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">L&aring;ga doser topiramat har i &ouml;ppna studier visat effekt vid sv&aring;r aggressivitet. Evidensbaserad kunskap saknas.</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><span style=\"font-weight: bold;\">Anxiolytika</span></div>\r\n</td>\r\n<td>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Klometiazol ger en snabbt ins&auml;ttande lugnande effekt p&aring; beteendesymtom. Effekten &auml;r kortvarig. Vid regelbunden anv&auml;ndning sker en snabb tillv&auml;njning. <span style=\"color: #ff0000;\">P&aring; grund av den smala </span><span style=\"color: #ff0000;\">terapeutiska bredden hos klometiazol b&ouml;r det dock endast anv&auml;ndas n&auml;r det finns </span><span style=\"color: #ff0000;\">s&auml;ker kontroll av patientens symptombild.</span></div>\r\n</li>\r\n</ul>\r\n<ul>\r\n<li>\r\n<div class=\"tableLine\">Den lugnande effekten av bensodiazepiner liknar den f&ouml;r klometiazol men &auml;r svagare. Oxazepam &auml;r att f&ouml;redra, eftersom substansen har medell&aring;ng halveringstid och <span style=\"text-decoration: line-through; color: #ff0000;\">f&aring;</span><span style=\"color: #ff0000;\"> lindrigare </span><span style=\"text-decoration: line-through; color: #ff0000;\"></span>biverkningar <span style=\"color: #ff0000;\">&auml;n andra bensodiazepiner</span>. Anv&auml;nd preparatet endast tillf&auml;lligtvis, vid l&aring;ngtidsbehandling finns</div>\r\n<div class=\"tableLine\">inga h&aring;llpunkter f&ouml;r positiva effekter medan biverkningarna kvarst&aring;r. Diazepam har mycket l&aring;ng halveringstid och &auml;r d&auml;rf&ouml;r ol&auml;mpligt att anv&auml;nda vid tillf&auml;lliga symtom.</div>\r\n</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fbfc63bb-e589-4638-b174-020c6644560e",
+			"name": "fbfc63bb-e589-4638-b174-020c6644560e",
+			"type": "text",
+			"content": "<p><span> </span></p>\n<h3 id=\"s7_52\">Behandling av ropbeteende</h3>\n<p>Personer med sv&aring;r demens utvecklar ibland ett &rdquo;ropbeteende&rdquo; som kan vara mycket st&ouml;rande f&ouml;r omgivningen. Handl&auml;ggning av detta visar p&aring; en rad sv&aring;righeter och illustrerar de komplicerade faktorer som ligger bakom. Olika faktorer bidrar till ropbeteende &ndash; en sv&aring;r demens med uttalade sv&aring;righeter att skapa nya adekvata handlingss&auml;tt, oftast &auml;r personen bunden till en stol eller s&auml;ng med sv&aring;righet att f&aring; kontakt med omgivningen samt har en orsak att p&aring;kalla uppm&auml;rksamhet. Beteendet upprepas och blir s&aring; sm&aring;ningom sv&aring;rt att bryta.</p>\n<p></p>\n<h2 id=\"s7_54\"></h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "850dda95-a3f3-4fc0-a438-df2d3254fa86",
+			"name": "850dda95-a3f3-4fc0-a438-df2d3254fa86",
+			"type": "text",
+			"content": "<h4 id=\"s7_53\">Behandling</h4>\n<p>Det finns ingen farmakologisk behandling som bryter ett etablerat ropbeteende. L&auml;kemedel som d&auml;mpar eller f&ouml;rs&auml;mrar kognitiva f&ouml;rm&aring;gor ger ibland motsatt effekt. Strategin &auml;r framf&ouml;r allt att f&ouml;rebygga och bibeh&aring;lla kognitiva funktioner s&aring; intakta som m&ouml;jligt, bibeh&aring;lla g&aring;ngf&ouml;rm&aring;ga och undvika att h&aring;lla personen sittande samt genom omv&aring;rdnadsstrategier skapa en god kommunikation. Kontroll av l&auml;kemedelsbehandlingen och uts&auml;ttning av l&auml;kemedel som kan p&aring;verka g&aring;ngf&ouml;rm&aring;gan negativt eller p&aring;verka kognitiva f&ouml;rm&aring;gor &auml;r viktigt. Eventuellt kan memantin pr&ouml;vas. Specifika symtom som depression och &aring;ngest ska behandlas.<br><br></p>\n<p>Begynnande ropbeteende kan vara tecken p&aring; sm&auml;rttillst&aring;nd eller annat kroppsligt lidande. Depressions- eller &aring;ngesttillst&aring;nd kan &ouml;ka risken f&ouml;r ropbeteende.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "23539104-138b-4755-8fa9-a03ed409540a",
+			"name": "23539104-138b-4755-8fa9-a03ed409540a",
+			"type": "text",
+			"content": "<h2 id=\"s7_54\">Negativa effekter p&aring; kognitiva funktioner vid l&auml;kemedelsbehandling</h2>\n<p>Olika typer av l&auml;kemedel kan orsaka kognitiv neds&auml;ttning. Dessa l&auml;kemedel kan ocks&aring; &ouml;ka risken f&ouml;r konfusion. Patienter med demens l&ouml;per s&auml;rskilt stora risker. Problem finns speciellt med l&auml;kemedel med antikolinerg effekt, t&nbsp;ex medel mot neuroleptikabiverkningar och tricykliska antidepressiva. K&auml;nsliga personer kan reagera p&aring; l&auml;kemedel f&ouml;r urininkontinens. F&ouml;r n&aring;gra preparat, s&aring;som antikolinerga l&auml;kemedel och opioider, har man visat att effekten &auml;r dosberoende.</p>\n<p class=\"indent\"><br>Alla l&auml;kemedel har inte blivit grundligt studerade i dessa avseenden. Svaga bel&auml;gg inneb&auml;r d&auml;rf&ouml;r inte med automatik att l&auml;kemedlet inte kan ha betydande o&ouml;nskade effekter p&aring; kognitionen. En viktig generell begr&auml;nsning &auml;r att effekten av de flesta l&auml;kemedelsgrupper inte &auml;r v&auml;l studerad hos &auml;ldre. L&auml;kemedel som visats p&aring;verka kognitiva funktioner framg&aring;r i Tabell 2. Dessa l&auml;kemedel b&ouml;r hanteras med f&ouml;rsiktighet vid demens och effekter p&aring; kognitiva funktioner uppm&auml;rksammas. Samtliga dessa l&auml;kemedel, f&ouml;rutom haloperidol, kan ge upphov till konfusionella reaktioner.</p>\n<p><span> </span></p>\n<h2 id=\"s7_56\"></h2>\n<h2 id=\"s7_57\"></h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "10bee083-ae42-4f86-99c8-35df3e121286",
+			"name": "10bee083-ae42-4f86-99c8-35df3e121286",
+			"type": "tablenarrow",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"crossref\" id=\"18136\"></a>Läkemedel som visats påverka kognitiva funktioner negativt eller ge upphov till <a class=\"index\" id=\"1034078\" data-text=\"konfusion:behandling\"></a>konfusion (se i övrigt Demenssjukdomar (1))",
+				"id": "s7_55",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>L&auml;kemedelsgrupp</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>L&auml;kemedel</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>Evidens (styrka)</strong></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Antikolinerga l&auml;kemedel</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Skopolamin</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Stark</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Bensodiazepiner</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Diazepam</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Stark</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Antihistaminer</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Difenhydramin, hydroxizin, prometazin</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Stark</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Glukokortikoider</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Stark</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Opioider</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Stark</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Antiepileptika</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Karbamazepin, fenytoin, fenobarbital</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">M&aring;ttligt stark</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Tricykliska antidepressiva</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Amitriptylin, imipramin, klomipramin</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">M&aring;ttligt stark</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Medel vid Parkinsons sjukdom</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">L-dopa, dopaminagonister, MAO-h&auml;mmare,</div>\r\n<div class=\"tableLine\">COMT-h&auml;mmare</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Begr&auml;nsad</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Neuroleptika</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Haloperidol</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Begr&auml;nsad</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8b12e43a-cc4a-4f76-8aea-79120db04285",
+			"name": "8b12e43a-cc4a-4f76-8aea-79120db04285",
+			"type": "text",
+			"content": "<h2 id=\"s7_56\">Behandling av konfusion</h2>\n<ul class=\"ordered\">\n<li><strong class=\"itemType\">1. </strong><span class=\"tab\"></span>S&auml;tt ut alla l&auml;kemedel som kan &ouml;ka risken f&ouml;r konfusion.</li>\n<li><strong class=\"itemType\">2. </strong><span class=\"tab\"></span>Leta efter somatisk sjukdom som kan behandlas.</li>\n<li><strong class=\"itemType\">3. </strong><span class=\"tab\"></span>Skapa en lugn och trygg milj&ouml;.</li>\n</ul>\n<p>Milj&ouml;- och omv&aring;rdnadsfaktorer &auml;r ytterst viktiga vid behandling av konfusion. Lugn och trygghet samt frihet fr&aring;n yttre stress &auml;r d&auml;rf&ouml;r grunden vid konfusionsbehandling.<br><br></p>\n<p>Vid behov av ett akut d&auml;mpande medel kan klometiazol kapslar 300&nbsp;mg eller l&ouml;sning 5&ndash;10&nbsp;ml pr&ouml;vas. Alternativt kan oxazepam 10&nbsp;mg ges, men detta preparat ger en n&aring;got svagare effekt. Svar p&aring; behandlingen ses oftast inom en timme. Dosen kan vid behov upprepas upp till 3&nbsp;g&aring;nger/dag om inga biverkningar upptr&auml;der. Vid h&ouml;ga doser av klometiazol ses ofta p&aring;tagliga biverkningar som sedation eller blodtrycksfall. Vid sv&aring;ra akuta problem kan risperidon 0,5&nbsp;mg ges. Dosen kan eventuellt h&ouml;jas till 1&nbsp;mg.<br><br></p>\n<p>Konfusion brukar l&auml;ka ut efter n&aring;gra dygn och lugnande l&auml;kemedel ska d&aring; s&auml;ttas ut.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7357969c-a639-4faf-94c0-d05683992829",
+			"name": "7357969c-a639-4faf-94c0-d05683992829",
+			"type": "text",
+			"content": "<h2 id=\"s7_57\">Patient- och anh&ouml;rigorganisationer</h2>\n<p>F&ouml;r patient- och anh&ouml;rigorganisationer se Faktaruta 7.</p>\n<p><span> </span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "273ece50-755c-4ef5-b3ce-7c4b61f66a7e",
+			"name": "273ece50-755c-4ef5-b3ce-7c4b61f66a7e",
+			"type": "facts",
+			"content": {
+				"number": "7",
+				"title": "<a class=\"crossref\" id=\"61663\"></a>Patient-/anhörigorganisationer",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span style=\"background-color: #ffff00;\">Alzheimerf&ouml;reningen</span>, Karl XII gatan 1, <br>Lund, Box 197, 221 00 Lund. <br><a href=\"mailto:info@alzheimerforeningen.se. \">info@alzheimerforeningen.se. </a><br>Tretton lokal&shy;f&ouml;reningar finns i s&ouml;dra Sverige.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Demensf&ouml;rbundet, Lundagatan 42&nbsp;A, 5 tr, <br>117 27 Stockholm. rdr@demensforbundet.se.<br>Ca 130 lokalf&ouml;reningar finns spridda &ouml;ver landet.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "s7_59"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2a378967-f8be-4575-85d8-5172cf08f1b3",
+			"name": "2a378967-f8be-4575-85d8-5172cf08f1b3",
+			"type": "references",
+			"content": "<h2 id=\"Referenser\">Referenser</h2>\n<ol class=\"references\"><li id=\"reference_1\">Demenssjukdomar. <a href=\"http://www.sbu.se/sv/publikationer/SBU-utvarderar/demenssjukdomar/\" target=\"_blank\">SBU-rapport nr 172</a>. 2006. ISBN 9187890992.</li>\n<li id=\"reference_2\"><a href=\"https://lakemedelsverket.se/malgrupp/Halso---sjukvard/Behandlings--rekommendationer/Behandlingsrekommendation---listan/Beteendemassiga-och-psykiska-symtom-vid-demenssjukdom--BPSD/\" target=\"_blank\">L&auml;kemedelsbehandling och bem&ouml;tande vid beteendem&auml;ssiga och psykiska symtom vid demenssjukdom &ndash; &rdquo;BPSD&rdquo;.</a> Information fr&aring;n L&auml;kemedelsverket. 2008:(&zwnj;19)5.</li>\n<li id=\"reference_3\">Nationella riktlinjer f&ouml;r v&aring;rd och omsorg vid demenssjukdom. Socialstyrelsen. <span style=\"background-color: #ffff00;\">2017</span>.&nbsp;<span style=\"color: #ff0000;\"><a href=\"https://www.socialstyrelsen.se/publikationer2017/2017-12-2\" target=\"_blank\">Artikelnummer: 2017-12-2.</a> ISBN: 978-91-7555-433-4</span></li>\n<li id=\"reference_4\"><span style=\"color: #ff0000;\"><span style=\"color: #000000;\">Wimo A, J&ouml;nsson L, Fratiglioni L, et al. Demenssjukdomarnas samh&auml;llskostnader i Sverige 2012. Socialstyrelsen, Stockholm, 2014. <a href=\"https://www.socialstyrelsen.se/publikationer2014/2014-6-3\" target=\"_blank\">Rapport nr 2014-6-3</a>.</span> <br></span></li>\n<li id=\"reference_5\"><span style=\"color: #000000;\"><a href=\"http://www.ucr.uu.se/svedem/\" target=\"_blank\">Kvalitetsregistret SveDem</a> </span></li>\n<li id=\"reference_6\"><span style=\"color: #000000;\"><a href=\"http://www.demenscentrum.se\" target=\"_blank\">Svenskt Demenscentrum</a> </span></li>\n<li id=\"reference_7\"><span style=\"color: #ff0000;\"><span style=\"color: #000000;\"><a href=\"https://www.transportstyrelsen.se/sv/Regler/ts-foreskrifter-i-nummerordning/2015/?RuleNumber=2015:65&amp;RulePrefix=TSFS\" target=\"_blank\">TSFS 2010:125</a> (grundform) med &auml;ndringar, senast TSFS 2015:65.</span> <br></span></li>\n<li id=\"reference_8\"><span style=\"color: #ff0000;\"><span style=\"color: #000000;\">Imtiaz B, Tolppanen AM, Kivipelto M, Soininen H. Future directions in Alzheimer's disease from risk factors to prevention.</span> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/24418410\">Biochem Pharmacol. 2014;88:661&ndash;70.</a></span></li>\n<li id=\"reference_9\"><span style=\"color: #ff0000;\"><span style=\"color: #000000;\">Gomez-Pinilla F, Hillman C. The influence of exercise on cognitive abilities.</span> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/23720292\">Compr Physiol. 2013;3:403&ndash;28.</a></span></li>\n<li id=\"reference_10\"><span style=\"color: #ff0000;\"><span style=\"color: #000000;\">Aarsland D, Sardahaee FS, Anderssen S, et al. Is physical activity a potential preventive factor for vascular dementia? A systematic review.</span> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/20455113\">Aging Ment Health. 2010;14:386&ndash;95.</a></span></li>\n<li id=\"reference_11\"><span style=\"color: #ff0000;\"><span style=\"color: #000000;\">Taraldsen K, Helbostad JL, Saltvedt I. 2015. Fysisk aktivitet vid demens. <a href=\"http://www.fyss.se/\" target=\"_blank\">FYSS</a></span><br></span></li>\n<li id=\"reference_12\"><span style=\"color: #ff0000;\"><span style=\"color: #000000;\">Johansson L. Can stress increase Alzheimer's disease risk in women?</span> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/24471710\">Expert Rev Neurother. 2014;14:123&ndash;5.</a></span></li>\n<li id=\"reference_13\"><span style=\"color: #ff0000;\"><span style=\"color: #000000;\">Ngandu T, Lehtisalo J, Solomon A, et al. A 2 year multidomain intervention of diet, exercise, cognitive training, and vascular risk monitoring versus control to prevent cognitive decline in at-risk elderly people (FINGER): a randomised controlled trial.</span> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/25771249\">Lancet. 2015;385:2255&ndash;63.</a></span></li>\n<li id=\"reference_14\"><a href=\"https://lakemedelsverket.se/malgrupp/Halso---sjukvard/Behandlings--rekommendationer/Behandlingsrekommendation---listan/Alzheimers-sjukdom/\" target=\"_blank\">Farmakologisk behandling vid Alzheimers sjukdom.</a> Bakgrundsdokumentation. Information fr&aring;n L&auml;kemedelsverket. 2002:(&zwnj;13)7&ndash;8.</li>\n<li id=\"reference_15\">Camicioli R, Gauthier S. Clinical trials in Parkinson\\qs disease dementia and dementia with Lewy bodies. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/17469693?ordinalpos=6&amp;itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum\" target=\"_blank\" class=\"linkOut\">Can J Neurol Sci. 2007;34 Suppl 1: S109&ndash;17.</a></li>\n<li id=\"reference_16\">Courtney C, Farrell D, Gray R, Hills R, Lynch L, Sellwood E, et al. Long-term donepezil treatment in 565 patients with Alzheimer\\qs disease (AD2000): randomised double-blind trial. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/15220031\" target=\"_blank\" class=\"linkOut\">Lancet. 2004;363:2105&ndash;15.</a></li>\n<li id=\"reference_17\">Lopez OL, Becker JT, Wahed AS, Saxton J, Sweet RA, Wolk DA, et al. Long-term effects of the concomitant use of memantine with cholinesterase inhibition in Alzheimer disease. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/19204022\" target=\"_blank\" class=\"linkOut\">J Neurol Neurosurg Psychiatry. 2009;80:600&ndash;7.</a></li>\n<li id=\"reference_18\"><span style=\"color: #ff0000;\"><span style=\"color: #000000;\">Danielsson B, Collin J, Jonasdottir Bergman G, et al. Antidepressants and antipsychotics classified with torsades de pointes arrhythmia risk and mortality in older adults - a Swedish nationwide study.</span> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/26574175\">Br J Clin Pharmacol. 2016;81:773</a><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/24471710\">&ndash;</a><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/26574175\">83.</a><br></span></li>\n<li id=\"reference_19\"><span style=\"color: #ff0000;\"><span style=\"color: #000000;\">Finkel SI. Effects of rivastigmine on behavioral and psychological symptoms of dementia in Alzheimer's disease.</span> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/15336465\">Clin Ther. 2004;26:980&ndash;90.</a></span></li>\n<li id=\"reference_20\"><span style=\"color: #ff0000;\"><span style=\"color: #000000;\">Wynn ZJ, Cummings JL. Cholinesterase inhibitor therapies and neuropsychiatric manifestations of Alzheimer's disease.</span> <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/14564129\">Dement Geriatr Cogn Disord. 2004;17:100&ndash;8.</a><br></span></li>\n<li id=\"reference_21\">Ballard C, Hanney ML, Theodoulou M, Douglas S, McShane R, Kossakowski K, et al; DART-AD investigators. The dementia antipsychotic withdrawal trial (DART-AD): long-term follow-up of a randomised placebo-controlled trial.<a href=\"http://www.ncbi.nlm.nih.gov/pubmed/19138567?ordinalpos=8&amp;itool=EntrezSystem2.PEntrez.Pubmed.Pubmed_ResultsPanel.Pubmed_DefaultReportPanel.Pubmed_RVDocSum\" target=\"_blank\" class=\"linkOut\">Lancet Neurol. 2009;8:151&ndash;7.</a></li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/psykiatri/demens.json",
+	"modified": "2018-05-21 14:28",
+	"isPublished": true,
+	"indexed": "true"
+}

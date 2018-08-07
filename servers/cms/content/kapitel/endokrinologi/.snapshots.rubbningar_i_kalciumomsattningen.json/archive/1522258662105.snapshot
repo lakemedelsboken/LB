@@ -1,0 +1,581 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Rubbningar i kalciumomsättningen | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-09 00:58",
+	"published": "2015-07-09 00:58",
+	"validUntil": "",
+	"createdBy": "Ove Tørring, Christina Rönnmark, Östen Ljunggren",
+	"replacesUrl": "/k2b_end_rubbnkalc_2013fm10.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "0bf4ccae-072a-40ae-b128-13fc74a5b9b7",
+			"name": "0bf4ccae-072a-40ae-b128-13fc74a5b9b7",
+			"type": "author",
+			"content": {
+				"firstname": "Ove",
+				"surname": "Tørring",
+				"description": "Institutionen för klinisk forskning och utveckling, Karolinska Institutet och Sektionen för endokrinologi, Södersjukhuset, Stockholm",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "2a55e99e-d0f5-440e-9f52-85168759eb6a",
+			"name": "2a55e99e-d0f5-440e-9f52-85168759eb6a",
+			"type": "author",
+			"content": {
+				"firstname": "Christina",
+				"surname": "Rönnmark",
+				"description": "Primärvården Uppsala",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e314099f-8a01-4d6e-af84-05893dd09748",
+			"name": "e314099f-8a01-4d6e-af84-05893dd09748",
+			"type": "author",
+			"content": {
+				"firstname": "Östen",
+				"surname": "Ljunggren",
+				"description": "Institutionen för medicinska vetenskaper, Akademiska Sjukhuset, Uppsala",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "56baab6b-22af-4bad-949d-66b67789e8d8",
+			"name": "56baab6b-22af-4bad-949d-66b67789e8d8",
+			"type": "text",
+			"content": "<h1 id=\"k2b_1\">Rubbningar i <a class=\"index\" id=\"1069609\" data-text=\"kalcium:rubbningar\"></a> <span>kalciumoms&auml;ttningen</span></h1>\n<h2 id=\"k2b_2\">Inledning</h2>\n<p class=\"ingress\">Hyperkalcemi ses hos 1&ndash;4 % av patienter i &ouml;ppenv&aring;rd och hos 0,2&ndash;3 % av sjukhuspatienter. Medan prim&auml;r hyperparatyreoidism (pHPT) &auml;r den vanligaste orsaken i &ouml;ppenv&aring;rd, svarar hyperkalcemi vid malignitet (HM) f&ouml;r 30&ndash;50% bland sjukhuspatienter.&nbsp;Hypokalcemi kan ha flera orsaker men iatrogen hypoparatyreoidism efter operation &auml;r den vanligaste. Hypokalcemi kan ocks&aring; upptr&auml;da pga malabsorption, bristande kalcium-/vitamin D-intag eller bristande exponering f&ouml;r solljus.</p>\n<h2 id=\"k2b_3\">K<a class=\"index\" id=\"1069618\" data-text=\"kalcium:oms&#xE4;ttning i kroppen\"></a>alciumoms&auml;ttningen</h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9bbce1d8-e3cc-40ab-88c0-146c5e323ac8",
+			"name": "9bbce1d8-e3cc-40ab-88c0-146c5e323ac8",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"index\" id=\"1069658\" data-text=\"kalcium:koncentrationsm&#xE4;tningar\"></a><a class=\"crossref\" id=\"89088\"></a>Kalciumkoncentrationsmätningar",
+				"text": "<table><tbody><tr><td><h5 id=\"k2b_6\">P/S-kalcium (totalkalcium)</h5><h5 id=\"k2b_7\">Totalkalcium (tCa) eller aktuellt kalcium (Ca<sub>aktuellt</sub>) är beroende av plasmaproteinkoncentrationen och sjunker när albuminkoncentrationen minskar. Lågt tCa ses därför bl&nbsp;a hos patienter med svår ka&shy;tabolism pga cancer, levercirros eller bristfällig nu&shy;trition.</h5><h5 id=\"k2b_8\">Albuminkorrigerat totalkalcium (Ca<sub>korr</sub>)</h5><p>Kalciumkoncentrationen kan korrigeras för al&shy;buminkoncentrationen via en algoritm som kan variera mellan olika laboratorier. Ca<sub>korr</sub> är ett bättre mått än tCa vid hypoalbuminemi. Vissa algoritmer kan dock ge en överskattning av Ca<sub>korr</sub> även vid lätt hyperkalcemi. Referensområdet är metodberoende. </p><h5 id=\"k2b_9\">Joniserat kalcium</h5><p>Det mest sensitiva och specifika måttet på kalcium&shy;koncentrationen. Det påverkas inte nämnvärt av ändringar i plasmaproteinkoncentrationen men av förändringar i pH (bl&nbsp;a venstas, heparinbehand&shy;ling och acidos). Vissa analysinstrument pH-korri&shy;gerar automatiskt, s&nbsp;k pH-korrigerat joniserat kal&shy;cium. Provtagning och transport ska ske enligt laboratoriets föreskrifter. Referensområdet för joniserat kalcium är metodberoende. </p></td></tr></tbody></table>",
+				"id": "k2b_5"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5ce82691-624c-4b28-9f00-4a52ec3d664d",
+			"name": "5ce82691-624c-4b28-9f00-4a52ec3d664d",
+			"type": "text",
+			"content": "<p>Kalcium är utöver betydelsen för skelettet viktigt för en rad neuromuskulära och metabola funktioner. Den extra- och intracellulära kalciumjonkoncentrationen hålls inom ett mycket snävt intervall.</p><p class=\"indent\">I blodet är 50&#37; proteinbundet, främst till albumin, 45&#37; är fritt fysiologiskt aktivt kalcium, s&nbsp;k joniserat kalcium (Ca<sup>2+</sup>), och ca 5&#37; finns som kalciumcitrat, kalciumfosfat m&nbsp;m (1).</p><p class=\"indent\">Kroppens kalciuminnehåll är ca 1 kg (25&nbsp;mol), varav 99&#37; finns i skelettet. Dagligt intag av kalcium för en vuxen individ bör ligga på minst 800 mg och maximalt 2&nbsp;500 mg. De vanligaste näringskällorna för <a class=\"index\" id=\"1069634\" data-text=\"kalcium:n&#xE4;ringsk&#xE4;llor\"></a>kalcium är mjölk, fil, yoghurt och ost, vilka står för &gt;&nbsp;60&#37; av dagsintaget. Resterande kalciumkällor utgörs av bl&nbsp;a ärtor, bönor, grönkål, sardiner, räkor, vetebröd och ljus choklad, vilka alla innehåller &gt;&nbsp;100 mg kalcium/100 g (2).</p><p class=\"indent\">Kalciumhalten i blodet regleras främst av paratyreoideahormon (PTH) och 1,25-dihydroxivitamin D (kalcitriol). Vid peroralt intag av 1&nbsp;000 mg kalcium/dygn netto absorberas ca 200 mg. Detta sker främst i tunntarmens proximala del. Hos en person ”i kalciumbalans” sker dessutom ett utbyte mellan skelett och extracellulär fas på ca 500 mg/dygn. Normal njurfunktion är av största betydelse för normal koncentration av P/S-kalcium. Cirka 10&nbsp;000 mg kalcium filtreras/dygn i glomeruli och 9&nbsp;800 mg återresorberas, främst genom inverkan av PTH, så att nettoutsöndringen via urinen motsvarar ca 200 mg (1).</p><p class=\"indent\">Det stora genomflödet av kalcium i njurarna betyder att även små förändringar i koncentrationen av S-PTH får betydande inverkan på P/S-kalcium. Om inflödet av kalcium från tarm eller skelett ökar (t&nbsp;ex vid högt <span>kalciumintag</span>, tyreotoxikos, immobilisering eller osteolytiska metastaser) och njurarna inte eliminerar motsvarande mängd kalcium uppstår hyperkalcemi.</p><p class=\"indent\">F<a class=\"index\" id=\"1069639\" data-text=\"fosfat:reglering i kroppen\"></a>osfatabsorptionen från tunntarmen är i huvudsak inte reglerad men ökas av 1,25-dihydroxivitamin D. P/S-fosfat regleras främst av PTH. När PTH ökar återresorberas mindre mängd fosfat via njurarna. Lågt P/S-fosfat är därför ett av kännetecknen vid primär hyperparatyreoidism.</p><p class=\"indent\">Genom den hormonella regleringen av kalcium- och fosfatkoncentrationen hålls <a class=\"index\" id=\"1069644\" data-text=\"kalcium-fosfatprodukten\"></a>kalcium-fosfatprodukten, dvs [S-Ca<sup>2+</sup>] x [S-fosfat], konstant på 0,7–2,2. Vid värden &lt;&nbsp;0,7 blir mineraliseringen av skelettet hämmad och vid värden &gt;&nbsp;2,2 sker utfällning av kalciumsalter. Det sistnämnda ses t&nbsp;ex vid immobilisering då utfällning av kalciumfosfat kan ske i exempelvis muskler, njurar och myokard.</p><p class=\"indent\">Ibland kan det vara oklart om lätt ökat eller sänkt P/S-kalcium analyserat som enkelprov (korrigerat för albumin) är ett uttryck för hyper- eller hypokalcemi. I regel fordras minst två prov, varav minst ett prov för joniserat kalcium, för att säkerställa detta. Bestämning av joniserat kalcium är den mätmetod som har högst specificitet och sensitivitet. Många föredrar därför att endast använda joniserat kalcium i klinisk rutin. Se även Faktaruta 1.</p><span> </span><h2 id=\"k2b_10\">Hormonell reglering  av <a class=\"index\" id=\"1069663\" data-text=\"kalcium:hormonell reglering\"></a><span>kalciumomsättningen</span></h2><h3 id=\"k2b_11\">Paratyreoideahormon</h3><p><a class=\"index\" id=\"1069668\" data-text=\"paratyreoideahormon:se PTH&lt;$nopage&gt;\"></a>Paratyreoideahormon (PTH) är det viktigaste hormonet för kalcium- och fosfatbalansen. PTH ökar kalciumkoncentrationen i blodet genom att minska den renala kalciumutsöndringen och öka inflödet av kalcium från skelettet. PTH stimulerar även bildningen av 1,25-dihydroxivitamin D (kalcitriol, ”aktivt” vitamin D) i njurarna varigenom kalciumabsorptionen från tunntarmen ökar. PTH ökar fosfatutsöndringen via urinen genom hämning av återresorptionen.</p><p class=\"indent\">Frisättningen av PTH regleras av en membranbunden kalciumjonkänslig receptor i paratyreoideacellen. Vid sjunkande kalciumkoncentration i blodet frisätts mer PTH, vilket medför en ökning av P/S-kalcium samt en sänkning av P/S-fosfat. Produkten av kalcium-fosfat hålls därmed konstant. Vid en ökning av kalciumkoncentrationen hämmas PTH-frisättningen, varvid koncentrationen av kalcium sjunker och fosfat ökar.  </p><h3 id=\"k2b_12\"><a class=\"crossref\" id=\"48591\"></a>V<a class=\"index\" id=\"1069673\" data-text=\"vitamin D\"></a>itamin D</h3><p>Normal koncentration av vitamin D är bl&nbsp;a viktig för skelettets utveckling och mineralisering.  Uttalad brist på vitamin D medför rakit hos barn och osteomalaci hos vuxna. Otillräckliga halter av vitamin D leder till sekundär hyperparatyreoidism. Vitamin D<sub>3</sub> (kolekalciferol) bildas i huden via en rad metabola processer under inverkan av solens UVB-strålning, se Figur 1 <a href=\"#44117\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>. Bildningen är beroende av antalet solljustimmar, som i Sverige är otillräckligt från september–april. Syntesen är också lägre hos mörkpigmenterade personer samt 2–3 gånger lägre hos personer &gt;&nbsp;70 år än hos unga.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "25d651a5-83f2-4212-a3ea-da06778922bc",
+			"name": "25d651a5-83f2-4212-a3ea-da06778922bc",
+			"type": "figure",
+			"content": {
+				"number": "1",
+				"maxwidth": "",
+				"image": "/images/k2b_end_rubbnkalc_2013fm10_images/figur1.png",
+				"title": "",
+				"text": "<a class=\"crossref\" id=\"44117\"></a>Bildningen av de biologiskt aktiva formerna av <a class=\"index\" id=\"1069697\" data-text=\"vitamin D:biologiskt aktiva former\"></a>vitamin D och målorgan",
+				"alt": "",
+				"id": "k2b_13"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "af047349-ed70-46f2-bf60-27a86e76a935",
+			"name": "af047349-ed70-46f2-bf60-27a86e76a935",
+			"type": "facts",
+			"content": {
+				"number": "5",
+				"title": "<a class=\"crossref\" id=\"19314\"></a>Orsaker till <a class=\"index\" id=\"1076807\" data-text=\"hypokalcemi:orsaker\"></a>hypokalcemi",
+				"text": "<table><tbody><tr><td><h5 id=\"k2b_16\">Tillstånd med sänkt PTH</h5><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Postoperativt pga pHPT</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Idiopatisk hypoparatyreoidism</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Hypomagnesemi</li></ul><h5 id=\"k2b_17\">Tillstånd med förhöjt PTH</h5><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Sekundär hyperparatyreoidism pga<br>– för lågt intag av kalcium och/eller vitamin D<br>– bristfällig solljusexponering<br>– malabsorption av kalcium och/eller vitamin D<br>– kronisk njurinsufficiens<br>– ”hungry bone”-syndrom</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Pseudohypoparatyreoidism<br></li></ul></td></tr></tbody></table>",
+				"id": "k2b_15"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d160c690-4b91-4e21-89b7-7b22e4b93496",
+			"name": "d160c690-4b91-4e21-89b7-7b22e4b93496",
+			"type": "text",
+			"content": "<span> </span><p class=\"indent\">I levern omvandlas vitamin D till <a class=\"index\" id=\"1069688\" data-text=\"25-hydroxivitamin D\"></a>25-hydroxivitamin D (<a class=\"index\" id=\"1069692\" data-text=\"kalcidiol\"></a>kalcidiol). S-25-hydroxivitamin D är ett bra mått på patientens vitamin D-status. Nivån är lägst under januari–mars och högst i juli–september. S-25-hydroxivitamin D &lt;&nbsp;10–12 nmol/L anses som uttalad brist och medför oftast osteomalaci med stegrat ALP, eventuellt hypokalcemi, hypofosfatemi och sekundär hyperparatyreoidism. Nivåer &lt;&nbsp;25 nmol/L är brist och 25–50 nmol/L benämns vitamin D-insufficiens. Ingen konsensus finns om vilken individuell serumkoncentration av 25-hydroxivitamin D som är tillräcklig, men en nivå över 50 nmol/L kan anses tillräcklig hos 97,5&#37; av populationen i USA (3 ()). Konsensus om normalt referensområde saknas också, men 75&nbsp;nmol/L är nedre gräns för flera bestämningsmetoder. Enligt förslag till nya nordiska näringsrekommendationer, NNR 2012, anges nivåer &gt;&nbsp;50 nmol/L som gräns för acceptabel D-vitaminstatus, se kapitlet Vitaminer, mineraler och spårämnen, Faktaruta 5 <a href=\"#19314\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.</p><span> </span><p class=\"indent\">I njurarna omvandlas 25-hydroxivitamin D av enzymet 1-alfa-hydroxylas till aktivt <a class=\"index\" id=\"1069702\" data-text=\"1,25-dihydroxivitamin D\"></a>1,25-dihydroxivitamin D (<a class=\"index\" id=\"1069707\" data-text=\"kalcitriol\"></a>kalcitriol). Processen stimuleras av PTH. Den viktigaste rollen för 1,25-dihydroxivitamin D är att öka absorptionen av kalcium och fosfat från tunntarmen och medverka i bennybildningen. ”Extraskeletala” effekter är mindre väldokumenterade (6).</p><p class=\"indent\">I födan ingår vitamin D både som vitamin D<sub>3</sub> (<a class=\"index\" id=\"1069723\" data-text=\"kolekalciferol\"></a>kolekalciferol), från animaliska livsmedel, och som vitamin D<sub>2</sub> (<a class=\"index\" id=\"1069726\" data-text=\"ergokalciferol\"></a>ergokalciferol), från växter, med likartade biologiska effekter och omsättning. Behovet av vitamin&nbsp;D varierar med bl&nbsp;a ålder och kön. Det rekommenderade dagsbehovet är:</p><ul><li>10 <span>μ</span>g (400 IE) för barn &lt;&nbsp;2 år </li><li>7,5 <span>μ</span>g (300 IE) för barn &gt;&nbsp;2 år och vuxna</li><li>10 <span>μ</span>g för gravida och ammande </li><li>10 <span>μ</span>g för äldre &gt;&nbsp;60 år (2). </li></ul><p>I förslag till nya nordiska näringsrekommendationer, NNR 2012, rekommenderas 10 <span>μ</span>g/dag för alla upp till 75 års ålder. Ett dagligt intag av 20 <span>μ</span>g vitamin D rekommenderas till alla över 60 års ålder med bristande solexposition, och till alla över 75 års ålder, vilket i praktiken kräver vitamintillskott då kostintaget är lågt trots berikning av magra mejeriprodukter, margarin och vegetabiliska oljor. Se vidare kapitlet Vitaminer, mineraler och spårämnen, Faktaruta 5 <a href=\"/kapitel/nutrition/vitaminer_mineraler_och_sparamnen.html#23808\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>, samt avsnittet Äldre <a href=\"/kapitel/nutrition/vitaminer_mineraler_och_sparamnen.html#83281\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>. De vanligaste näringskällorna för vitamin D är matfett, fisk och skaldjur, kött, fågel, ägg och mjölkprodukter (<a href=\"http://www.slv.se/sv/grupp1/Mat-och-naring/Vad-innehaller-maten/Vitaminer/Vitamin-D-/\" target=\"_blank\" class=\"linkOut\">www.slv.se</a> ).<span> </span></p><h3 id=\"k2b_18\">Kalcitonin</h3><p>Vid stigande P/S-kalcium frisätts <a class=\"index\" id=\"1069736\" data-text=\"kalcitonin\"></a>kalcitonin från sköldkörteln och hämmar benresorptionen samt ökar kalciumutsöndringen i njurarna. Kalcitonin tycks dock ha ringa betydelse för kalcium-fosfatregleringen hos människa men är ett värdefullt läkemedel vid hyperkalcemi.</p><h2 id=\"k2b_19\"><a class=\"index\" id=\"1069741\" data-text=\"hyperkalcemi\"></a><a class=\"crossref\" id=\"41500\"></a>Hyperkalcemi</h2><p>Hyperkalcemi uppstår när tillförseln av kalcium till blodbanan från skelettet och gastrointestinalkanalen överstigar njurarnas förmåga att utsöndra kalcium, Figur 2.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4096bba6-a861-4626-9d77-70134c5b4788",
+			"name": "4096bba6-a861-4626-9d77-70134c5b4788",
+			"type": "figure",
+			"content": {
+				"number": "2",
+				"maxwidth": "",
+				"image": "/images/k2b_end_rubbnkalc_2013fm10_images/figur2.png",
+				"title": "",
+				"text": "<a class=\"crossref\" id=\"66216\"></a>Hyperkalcemi uppstår när inflödet av kalcium till blodbanan överstiger njurarnas förmåga att utsöndra denna. Valet av behandling beror på om grundorsaken är ökad benresorption, ökad kalciumabsorption från tarmen, nedsatt renal kalciumutsöndring eller en kombination av dessa.",
+				"alt": "",
+				"id": "k2b_20"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "dfd6dc0f-ef89-4f98-9218-70d277bbe086",
+			"name": "dfd6dc0f-ef89-4f98-9218-70d277bbe086",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"crossref\" id=\"58170\"></a>Vanliga orsaker till <a class=\"index\" id=\"1069731\" data-text=\"hyperkalcemi:orsaker\"></a>hyperkalcemi",
+				"text": "<table><tbody><tr><td><h4 id=\"k2b_23\" class=\"facts skip\">Tillstånd med sänkt PTH</h4><h5 id=\"k2b_24\">Malignitet</h5><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Humoral hyperkalcemi vid malignitet (PTHrP)</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Lokal osteolys (metastaser, myelom, lymfom och leukemi)</li></ul><h5 id=\"k2b_25\"> Läkemedel</h5><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Kalcium och/eller vitamin D</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Aktiva vitamin D-analoger (alfakalcidol, kalcitriol)</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Total parenteral nutrition</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Teriparatid</li></ul><h5 id=\"k2b_26\">Granulomatoser</h5><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Sarkoidos (kalcitriolbildning)</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Lymfom (kalcitriolbildning)</li></ul><h5 id=\"k2b_27\">Övriga</h5><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Immobilisering, tyreotoxikos</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Mjölk-alkalisyndrom</li></ul><h4 id=\"k2b_28\" class=\"facts skip\">Tillstånd med förhöjt PTH</h4><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Primär hyperparatyreoidism</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Benign familjär hypokalciurisk hyperkalcemi</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Litium, tiazider</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Nedsatt njurfunktion (GFR &lt;&nbsp;60–80 ml/minut)</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Tertiär hyperparatyreoidism pga kronisk njur&shy;insufficiens</li></ul><h4 id=\"k2b_29\" class=\"facts skip\">Tillstånd med varierande PTH</h4><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Kortisolsvikt</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Feokromocytom<br></li></ul></td></tr></tbody></table>",
+				"id": "k2b_22"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1e20c307-836b-45e1-9c89-d58cd2c53021",
+			"name": "1e20c307-836b-45e1-9c89-d58cd2c53021",
+			"type": "text",
+			"content": "<span> </span><p class=\"indent\">Hyperkalcemi grupperas i tillstånd med sänkt, förhöjt och varierande PTH (Faktaruta 2). Nedan finns en kort beskrivning av de vanligaste orsakerna och de patofysiologiska mekanismerna som har betydelse för val av behandling vid hyperkalcemi.</p><span> </span><h3 id=\"k2b_30\">Tillstånd med sänkt <a class=\"index\" id=\"1069746\" data-text=\"PTH, s&#xE4;nkt:malignitet\"></a>PTH – orsaker</h3><h4 id=\"k2b_31\"><em>Malignitet</em></h4><p>Hyperkalcemi är en allvarlig komplikation vid cancer och drabbar 5–10&#37; av patienterna någon gång under sjukdomsförloppet. Incidensen vid nydiagnostiserad cancer är ca 1&#37;. Efterhand som cancersjukdomen fortskrider ökar hyperkalcemifrekvensen till 20–40&#37;.</p><p class=\"indent\">Hyperkalcemi vid malignitet kan orsakas av lokal osteolys vid metastaser, t&nbsp;ex från bröst-, blås-, lung- och njurcancer, samt vid myelom, leukemi och lymfom. Cancercellerna kan producera ett PTH-liknande hormon, <a class=\"index\" id=\"1069759\" data-text=\"paratyreoideahormonrelaterad peptid \"></a>paratyreoideahormonrelaterad peptid (PTHrP) samt cytokiner som stimulerar benresorptionen lokalt. Detta medför frisättning av kalcium från skelettet. I samband med benresorptionen frisätts dessutom viktiga tillväxtfaktorer för tumörcellerna som därmed växer och ökar sin produktion.</p><p class=\"indent\">PTHrP kan (liksom i viss grad andra tumörprodukter) via cirkulationen också orsaka en generell benresorption och nedsatt utsöndring av kalcium, vilket medför en s&nbsp;k humoral hyperkalcemi vid malignitet (HHM). PTHrP verkar därvid genom att stimulera PTH-receptorerna i skelett och njurar.  HHM är i regel orsaken till svårbehandlad hyperkalcemi med lågt PTH. </p><h4 id=\"k2b_32\"><em><a class=\"index\" id=\"1069764\" data-text=\"PTH, s&#xE4;nkt:l&#xE4;kemedel\"></a>Läkemedel</em></h4><p>Vid osteoporosprofylax/-behandling med kalcium + vitamin D<sub>3</sub> ses hyperkalcemi ibland hos äldre. Hyperkalcemin uppstår som regel när kalciumabsorptionen överstiger njurarnas förmåga att utsöndra kalciumöverskottet. Kontroll av P/S-kalcium och P/S-kreatinin bör därför åtminstone ske 1–3 månader efter insättning av behandling med kalcium + vitamin D<sub>3</sub>. Kalciumbehandling samtidigt med aktiva vitamin D-analoger ökar risken för hyperkalcemi.</p><h4 id=\"k2b_33\"><em><a class=\"index\" id=\"1069769\" data-text=\"PTH, s&#xE4;nkt:granulomatoser\"></a>Granulomatoser</em></h4><p>Vid exempelvis sarkoidos och lymfom kan 1,25-dihydroxivitamin D (kalcitriol) bildas även utanför njurarna. Orsaken är att granulom och lymfomceller kan ha kraftigt ökad 1-alfa-hydroxylasaktivitet som inte är aktivt reglerad. Vid t&nbsp;ex sarkoidos brukar därför hyperkalcemi kunna utvecklas eller förvärras under sommarhalvåret, när det bildas mer substrat, 25-hydroxivitamin D (kalcidiol), pga ökad solexponering. </p><h4 id=\"k2b_34\"><em>Övriga orsaker</em></h4><p>Vid tyreotoxikos kan den normala skelettomsättningen öka så kraftigt att kalciumfrisättningen kan överstiga njurarnas elimineringsförmåga. Vid immobilisering kan ökad benresorption och minskad mineralinlagring i skelettet också ge hyperkalcemi, särskilt hos unga patienter som tidigare har varit mycket fysiskt aktiva.</p><p class=\"indent\">Intag av alkali och stora mängder kalcium, oftast som kalciumkarbonat, i kombination med lätt nedsatt njurfunktion kan ge hyperkalcemi, det numera ovanliga s&nbsp;k mjölk-alkalisyndromet. </p><h3 id=\"k2b_35\">Tillstånd med förhöjt <a class=\"index\" id=\"1069774\" data-text=\"PTH, f&#xF6;rh&#xF6;jt:pHPT\"></a>PTH – orsaker</h3><h4 id=\"k2b_36\"><em><a class=\"index\" id=\"1069779\" data-text=\"prim&#xE4;r hyperparatyreoidism;PTH, f&#xF6;rh&#xF6;jt:pHPT\"></a>Primär hyperparatyreoidism (pHPT)</em></h4>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "95c3f7e4-8c96-4a79-982a-1a773512ab79",
+			"name": "95c3f7e4-8c96-4a79-982a-1a773512ab79",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "<a class=\"crossref\" id=\"68945\"></a>Symtom vid <a class=\"index\" id=\"1077694\" data-text=\"hyperkalcemi:symtom\"></a>hyperkalcemi",
+				"text": "<table><tbody><tr><td><p>Symtom uppstår tidigare och är mer <br>uttalade ju snabbare hyperkalcemin utvecklas och ju högre kalciumnivå som uppnås. Kronisk hyper&shy;kalcemi kan, pga adaptiva mekanismer, ge sym&shy;tom först vid uttalad hyperkalcemi. Symtomen är således inte direkt korrelerade till P/S-kalcium och kan kvarstå dagar efter dess normalisering.</p><h5 id=\"k2b_39\">Renala</h5><p>Polyuri med dehydrering, törst, nefrokalcinos, njurinsufficiens, njursten</p><h5 id=\"k2b_40\">Neuromuskulära</h5><p>Trötthet, förvirring, nedsatt minne, depressivitet, psykos, koma, proximal muskelsvaghet</p><h5 id=\"k2b_41\">Gastrointestinala</h5><p>Illamående, anorexi, obstipation, dyspepsi, akut pankreatit</p><h5 id=\"k2b_42\">Kardiovaskulära</h5><p>Arytmier, asystoli, EKG-förändringar (AV-block I, kort QT-tid), ökad digitaliskänslighet</p><h5 id=\"k2b_43\">Skelett</h5><p>Smärtor pga destruktiva processer, osteitis fibrosa cystica (vid pHPT), osteoporos (vid pHPT)<br></p></td></tr></tbody></table>",
+				"id": "k2b_38"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "db541f92-53a1-4211-a958-8ef348fc3b4c",
+			"name": "db541f92-53a1-4211-a958-8ef348fc3b4c",
+			"type": "text",
+			"content": "<p>pHPT är en kronisk sjukdom där bisköldkörtlarna har utvecklat en nedsatt känslighet för P/S-kalcium pga adenombildning eller hyperplasi. pHPT kan vara ett led i <a class=\"index\" id=\"1069795\" data-text=\"multipel endokrin neoplasi typ 1\"></a>multipel endokrin neoplasi typ 1 (<a class=\"index\" id=\"1069799\" data-text=\"MENI\"></a>MEN I). </p><p class=\"indent\">pHPT har en prevalens på 1–2&#37; hos postmenopausala kvinnor och är 3 gånger vanligare än hos män. Patienten är oftast asymtomatisk, har blygsam hyperkalcemi och eventuellt osteopeni eller osteoporos. Enstaka patienter diagnostiseras fortfarande pga ”klassiska” pHPT-symtom, se Faktaruta 3. Diagnosen baseras vid normal njurfunktion på ett förhöjt joniserat kalcium eller Ca<sub>korr</sub>, och i relation till kalcium ett förhöjt PTH och lågt P/S-fosfat. Vid normal njurfunktion är P/S-fosfat som regel &lt;&nbsp;1,1 mmol/L.</p><span> </span><p class=\"indent\">Operation är fortfarande den gängse behandlingen. Cirka 85&#37; har ett ”single adenom”, 15&#37; en diffus hyperplasi av paratyreoidea och &lt; 1&#37; paratyroideacancer. Vid hyperplasi tas 3 körtlar och hälften av den 4:e bort. Den kvarvarande halva körteln räcker i regel för att hålla patienten normokalcemisk. Eventuellt reinplanteras en mindre mängd paratyreoideavävnad under operationen.</p><p class=\"indent\">Hyperparatyreoidism, diagnostiserad genom ett förhöjt P/S-kalcium i kombination med ett relativt sett förhöjt PTH, innebär inte automatiskt att patienten måste opereras. Om patienten saknar tydliga symtom på hyperkalcemi blir grunden för operation i&nbsp;stället organpåverkan, t&nbsp;ex osteoporos, nedsatt njurfunktion eller diffusa neuromuskulära symtom.</p><p class=\"indent\">Vad gäller njurfunktion och bentäthet är detta variabler som lätt går att mäta och där resultaten i kombination med diagnosen hyperparatyreoidism kan leda till operation, även om P/S-kalcium endast är måttligt förhöjt. Det är svårare om patienten med lindrig hyperkalcemi uppvisar diffusa neuromuskulära symtom. Här går det inte att ge några absoluta riktlinjer, utan patienten får behandlas individuellt. Det är ofta klokt att konsultera endokrinolog eller endokrinkirurg i dessa fall. </p><p class=\"indent\">Patienter med lindrig pHPT, som inte uppvisar någon organpåverkan, följs konservativt med förnyad provtagning vad gäller kalcium 1–2 gånger/år. Det är viktigt att dessa patienter har ett bra vätskeintag, speciellt om de får feber eller vistas i ett varmt klimat. Långvarig bisfosfonatbehandling har ingen nämnvärd kalciumsänkande effekt, men en viss förbättring av bentätheten har visats bl&nbsp;a med alendronsyra. Hämning av PTH-utsöndringen med kalcimimetika (<a class=\"index\" id=\"1069834\" data-text=\"cinacalcet\"></a>cinacalcet) peroralt 2–4 gånger/dag, kan övervägas vid symtomgivande inoperabel pHPT.  Kalcimimetika ökar känsligheten av kalciumreceptorn på paratyreoideacellerna för extracellulärt kalcium varför PTH-insöndringen till blodet minskar. </p><h4 id=\"k2b_44\"><em>Sekundär och tertiär HPT</em></h4><p>Kronisk njursvikt leder till sekundär hyperparatyreoidism som kan utvecklas till adenombildning i paratyreoidea, s&nbsp;k tertiär hyperparatyreoidism. Detta tillstånd är inte reversibelt och operation bör övervägas. För behandling av sekundär hyperparatyreoidism vid dialys kan tabletter innehållande cinacalcet med fördel användas.  </p><h4 id=\"k2b_45\"><em>Benign familjär hypokalciurisk  hyperkalcemi (<a class=\"index\" id=\"1069858\" data-text=\"PTH, f&#xF6;rh&#xF6;jt:BFHH\"></a>BFHH)</em></h4><p>BFHH är en kliniskt viktig differentialdiagnos till pHPT. På grund av en heterozygot inaktiverande mutation i kalciumreceptorn i paratyreoideacellerna blir dessa mindre känsliga för kalciumjonen. Därför hämmas inte PTH-frisättningen av hyperkalcemin som hos friska. En patient med BFHH är adapterad till sin kalciumnivå sedan barnaåldern och har inga symtom från eller organskador på njure och skelett.</p><p class=\"indent\">BFHH-patienter kräver ingen behandling. Diagnosen ställs genom släktanamnes samt låg kalciumutsöndring, i regel &lt;&nbsp;100&nbsp;mg/24 timmar eller kalcium-/kreatininclearance &lt;&nbsp;0,1. </p><h4 id=\"k2b_46\"><em><a class=\"index\" id=\"1069878\" data-text=\"PTH, f&#xF6;rh&#xF6;jt:litium;litium:PTH, f&#xF6;rh&#xF6;jt\"></a>Litium och <a class=\"index\" id=\"1069883\" data-text=\"PTH, f&#xF6;rh&#xF6;jt:tiazider;tiazider:PTH, f&#xF6;rh&#xF6;jt\"></a>tiazider</em></h4><p>Litiumbehandling ändrar paratyreoideacellernas känslighet för kalcium, vilket vid långvarig behandling anses kunna medföra utveckling av paratyreoideaadenom och pHPT. Hyperkalcemin kan vara reversibel men om litium inte kan sättas ut bör operation övervägas eftersom hyperkalcemin påverkar det mentala tillståndet. </p><p class=\"indent\">Tiazidbehandling ökar även den tubulära reabsorptionen av kalcium, vilket framför allt hos patienter med lätt pHPT kan orsaka hyperkalcemi. </p><h3 id=\"k2b_47\">Symtom</h3><p>Graden av symtom beror bl&nbsp;a på den hastighet varmed hyperkalcemin utvecklas, dess nivå samt hur länge den pågått (Faktaruta 3,  <a href=\"#68945\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>).</p><p class=\"indent\">Vid långsamt utvecklad kronisk hyperkalcemi är symtombilden mindre dramatisk. Depression, minnesstörningar, nedsatt nervledningshastighet, muskelsvaghet och obstipation är vanligt. Symtom kan saknas helt vid lätt pHPT. Symtombilden är inte direkt korrelerad till P/S-kalcium och förbättras inte alltid omedelbart när P/S-kalcium sjunker. Särskilt mentala hyperkalcemisymtom kan dröja kvar flera dagar efter att P/S-kalcium normaliserats.</p><p class=\"indent\">Vid relativt snabbt utvecklad hyperkalcemi ses ofta allmänna symtom på dehydrering och neuropsykiatrisk påverkan med akut psykos, konfusion, stupor eller koma. <a class=\"index\" id=\"1069893\" data-text=\"arytmier:hyperkalcemi;hyperkalcemi:arytmier\"></a>Arytmier är ovanliga och ses främst vid P/S-kalcium &gt;&nbsp;3,5–4 mmol/L. Vid dessa kalciumnivåer används ofta beteckningen hyperkalcemisk kris. Symtombilden kan även präglas av grundsjukdomen. Vid malignitet förekommer ofta anorexi, subfebrilitet och illamående pga samtidig cytokinproduktion. </p><h3 id=\"k2b_48\">Utredning</h3><p>Grundutredningen omfattar minst två bestämningar av P/S-kalcium varav en för joniserat kalcium. Utöver anamnes och klinisk undersökning, bör alltid P/S-kreatinin och S-PTH tas initialt. Därmed kan njurfunktionen bedömas och kalciumrubbningen grupperas enligt Figur 3 <a href=\"#56052\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>. Om paratyreoidea fungerar normalt medför hyperkalcemin en hämning av PTH-frisättningen. Hyperkalcemi med lågt S-PTH ses vid alla tillstånd som medför ökat inflöde av kalcium till blodbanan såsom malignitet, kalcium-/vitamin D-intoxikation, granulomatoser etc.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3cb2ef5f-a475-4428-b6d1-71d0c5a60ba4",
+			"name": "3cb2ef5f-a475-4428-b6d1-71d0c5a60ba4",
+			"type": "figure",
+			"content": {
+				"number": "3",
+				"maxwidth": "",
+				"image": "/images/k2b_end_rubbnkalc_2013fm10_images/figur3.png",
+				"title": "",
+				"text": "<a class=\"crossref\" id=\"56052\"></a>Förhållandet mellan S-<a class=\"index\" id=\"1077433\" data-text=\"PTH:f&#xF6;rh&#xE5;llandet kalcium\"></a>PTH och joniserat kalcium (P/S-Ca<sup>2+</sup> ) vid olika typer av kalciumrubbningar hos individer med normal njurfunktion<br> primär hyperparatyreoidism<br> hypoparatyreodism +/-vitamin D-substitution <br> malabsorption <br> hyperkalcemi vid malignitet eller sarkaidos m&nbsp;m<br>Kvadranten visar referensområdet för P/S-Ca<sup>2+</sup> respektive S-PTH.<br>(Törring O, egna data 1995, Karolinska Universitetssjukhuset, Solna)",
+				"alt": "",
+				"id": "k2b_49"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "13ecc1ff-3f02-4a80-a490-ebc07c71fcd2",
+			"name": "13ecc1ff-3f02-4a80-a490-ebc07c71fcd2",
+			"type": "facts",
+			"content": {
+				"number": "4",
+				"title": "<a class=\"crossref\" id=\"87722\"></a>Utredning av <a class=\"index\" id=\"1077149\" data-text=\"hyperkalcemi:utredning\"></a>hyperkalcemi",
+				"text": "<table><tbody><tr><td><p>Bygger på anamnes och klinisk under-<br>sökning.</p><h5 id=\"k2b_52\">Basutredning</h5><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>P/S-kalcium x 2 (varav minst ett bör vara jonise&shy;rat kalcium), P/S-fosfat, P/S-Na, P/S-K, P/S-krea&shy;tinin, <span>P/S-albumin</span></li></ul><h5 id=\"k2b_53\">Kompletterande utredning</h5><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>B-SR, S-ASAT, S-ALAT, S-GT, S-ALP ev med iso&shy;<span>enzymer</span></li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>S-PTH, P/S-Mg, S-TSH, fritt S-T<sub>4</sub></li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Blodstatus, differentialräkning</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Ev prover för utredning av grundorsaken, t&nbsp;ex plasma- och urinproteinanalys</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Ev lungröntgen, S-ACE, mammografi</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Ev skelettskintigrafi kompletterad med röntgen av skelettdelar som visat ökat upptag</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Ev 1,25-dihydroxivitamin D<sub></sub></li></ul></td></tr></tbody></table>",
+				"id": "k2b_51"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "1cf11b10-86d0-44ee-8848-cbd558ba5a8e",
+			"name": "1cf11b10-86d0-44ee-8848-cbd558ba5a8e",
+			"type": "text",
+			"content": "<span> </span><p>Nedsatt njurfunktion (GFR &lt;&nbsp;60 ml/min) medför retention av PTH och dess fragment, varvid relationen mellan P/S-kalcium och S-PTH kan bli svårare att bedöma. Övrig utredning framgår av Faktaruta 4,  <a href=\"#87722\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>. Utredning av pHPT beskrivs ovan.</p><span> </span><h3 id=\"k2b_54\"><a class=\"crossref\" id=\"47926\"></a>Behandling av hyperkalcemi</h3><h4 id=\"k2b_55\"><em>Akut behandling</em></h4><p>Det är praktiskt att tidigt försöka bedöma om patientens hyperkalcemi främst beror på ett ökat kalciuminflöde från skelettet eller gastrointestinalkanalen eller på sänkt njurfunktion (Figur 2 <a href=\"#66216\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>). Därmed kan den akuta handläggningen bättre målriktas.</p><p class=\"indent\">Vid symtomgivande hyperkalcemi eller kraftigt förhöjt P/S-kalcium startas intravenös rehydrering (Terapirekommendationerna – Behandling av akut hyperkalcemi). Mycket höga kalciumnivåer, hyperkalcemisk kris, är som regel orsakade av en självförstärkande cirkel som uppstår genom att hyperkalcemin medför osmotisk diures med dehydrering och avtagande glomerulusfiltration som resultat, vilket förstärker hyperkalcemin osv. Första steget är därför att bryta cirkeln genom rehydrering. Hyperkalcuri medför natriumförluster via urinen varför rehydrering lämpligen inleds med isoton NaCl-lösning eller Ringer-acetat. Med bisfosfonater samt kalcitonin kan man sedan sänka kalciumnivån genom att osteoklastaktiviteten och benresorptionen hämmas. Kalcitonin ökar även kalciumutsöndringen via njurarna.</p><div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "68e225d3-4c80-4b9c-a2ca-525c8e1ae99c",
+			"name": "68e225d3-4c80-4b9c-a2ca-525c8e1ae99c",
+			"type": "therapy",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"76741\"></a>Behandling av akut <a class=\"index\" id=\"1069898\" data-text=\"hyperkalcemi:behandling\"></a>hyperkalcemi",
+				"id": "k2b_56",
+				"text": "<table><tbody><tr><td><div class=\"tableLine\"><strong>Rehydrering</strong></div></td><td><ul><li><div class=\"tableLine\">Rehydrering med NaCl 9 mg/ml eller Ringer-acetat, 3–6 L (vid 70 kg kroppsvikt), infun-</div><div class=\"tableLine\">deras första dygnet. Lämplig volym är beroende på grad av intorkning, njur- och hjärt-</div><div class=\"tableLine\">funktion och kroppsstorlek. P/S-kalcium minskar i regel med 0,5–1 mmol/L av rehydre-</div><div class=\"tableLine\">ringen enbart. Forcerad diures med loopdiuretika ökar risken för hypokalemi och bör </div><div class=\"tableLine\">ske under övervakning av P/S-kalium.</div></li></ul></td></tr><tr><td><div class=\"tableLine\"><strong>Kalcitonin</strong></div></td><td><ul><li><div class=\"tableLine\">Ges vid svår hyperkalcemi (joniserat kalcium &gt;&nbsp;1,7 mmol/L eller Ca<sub>korr</sub> &gt;&nbsp;3,5 mmol/L).</div></li></ul><ul><li><div class=\"tableLine\"><a class=\"index\" id=\"1069907\" data-text=\"kalcitonin\"></a>Kalcitonin ges i dosen 2–8 IE/kg kroppsvikt upplöst i 500 ml NaCl 9 mg/ml och infunderas </div><div class=\"tableLine\">intravenöst under minst 6 timmar. </div></li></ul><ul><li><div class=\"tableLine\">Effekt ses efter 3–6 timmar. Efter de första 12 timmarna kan infusionen upprepas och </div><div class=\"tableLine\">doseras beroende på kalciumsvaret. Efter 3–5 dygn brukar effekten avta.</div></li></ul></td></tr><tr><td><div class=\"tableLine\"><strong>Bisfosfonater</strong></div></td><td><ul><li><div class=\"tableLine\">Njurfunktionen beaktas vid dosering (se produktresumé/Fass). Infusionen påbörjas när </div><div class=\"tableLine\">patienten är rehydrerad.</div></li></ul><ul><li><div class=\"tableLine\">Vid normal njurfunktion (GFR &gt;&nbsp;60 ml/min) kan infusion av <a class=\"index\" id=\"1069912\" data-text=\"zoledronsyra\"></a>zoledronsyra 4 mg, upplöst i </div><div class=\"tableLine\">100&nbsp;ml NaCl 9 mg/ml eller glukos 50 mg/ml, ges under minst 15 minuter. Vid utebliven </div><div class=\"tableLine\">kalciumsänkning kan dosen upprepas. <a class=\"index\" id=\"1069917\" data-text=\"pamidronat\"></a>Pamidronat 60–90 mg upplöst i 250 ml infusions-</div><div class=\"tableLine\">vätska (infusionslösning NaCl 9 mg/ml eller glukos 50 mg/ml) kan också användas – ges </div><div class=\"tableLine\">under minst 2 timmar. Alternativt kan ibandronat ges.</div></li></ul><ul><li><div class=\"tableLine\">Effekten av bisfosfonaterna på P/S-kalcium ses i regel efter 3–5 dagar. Durationen av en </div><div class=\"tableLine\">enkel injektion beror bl&nbsp;a på dos och läkemedlets potens. Vid terapiresistent HHM kan </div><div class=\"tableLine\"><a class=\"index\" id=\"1069922\" data-text=\"denosumab\"></a>denosumab, 120 mg subkutant, prövas.</div></li></ul></td></tr><tr><td><div class=\"tableLine\"><strong>Glukokortikoider</strong></div></td><td><ul><li><div class=\"tableLine\">Vid sarkoidos och granulomatos ges glukokortikoider i första hand – initialt infusion av </div><div class=\"tableLine\"><a class=\"index\" id=\"1069927\" data-text=\"metylprednisolon:hyperkalcemi\"></a>metylprednisolon 40 mg/dygn eller peroralt <a class=\"index\" id=\"1069932\" data-text=\"prednisolon:hyperkalcemi\"></a>prednisolon 40 mg/dygn. Alternativt ges </div><div class=\"tableLine\"><a class=\"index\" id=\"1069937\" data-text=\"hydrokortison:hyperkalcemi\"></a>hydrokortison 100–200 mg intravenöst 3 gånger/dygn.</div></li></ul><ul><li><div class=\"tableLine\">Maximal effekt ses efter 4–5 dygn. Glukokortikoider kan även ges vid lymfom. </div></li></ul></td></tr><tr><td><div class=\"tableLine\"><strong>Dialys</strong></div></td><td><ul><li><div class=\"tableLine\">D<a class=\"index\" id=\"1069942\" data-text=\"dialys:hyperkalcemi;hyperkalcemi:dialys\"></a>ialys är effektivt och kan användas vid mycket svår till livshotande hyperkalcemi.</div></li></ul></td></tr><tr><td><div class=\"tableLine\"><strong>Grundsjukdomen</strong></div></td><td><ul><li><div class=\"tableLine\">Det är viktigt att så snart som möjligt utreda och behandla orsaken till hyperkalcemin. </div></li></ul></td></tr></tbody></table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fb1a58a8-9098-42bd-a793-d8bcfcece91c",
+			"name": "fb1a58a8-9098-42bd-a793-d8bcfcece91c",
+			"type": "text",
+			"content": "<span> </span><p class=\"indent\">Efter att rehydrering har inletts påbörjar man vanligen vid mycket svår hyperkalcemi infusion av kalcitonin, vars effekt sätter in efter några timmar och kvarstår upp till 3–5 dagar om behandlingen upprepas, dvs tills bisfosfonaternas effekt visar sig. Bisfosfonater ges först när njurfunktionen så tillåter (Terapirekommendationerna – Behandling av akut hyperkalcemi).<span> </span></p><p class=\"indent\">Eftersom PTHrP hämmar njurarnas kalciumutsöndring krävs, vid svår hyperkalcemi pga humoral hyperkalcemi vid malignitet (HHM), oftast både rehydrering och kalcitonin initialt samt högre doser bisfosfonat, t&nbsp;ex kan <a class=\"index\" id=\"1069947\" data-text=\"zoledronsyra\"></a>zoledronsyra 4 mg behöva upprepas pga utebliven kalciumsänkning.  Glukokortikoidernas antiinflammatoriska effekt medför att bildningen av 1,25-dihydroxivitamin D och cytokiner i granulom och lymfom hämmas, vilket minskar benresorptionen och kalciumabsorptionen från tarmen. Ofta kan därför enbart rehydrering och glukokortikoider räcka vid dessa diagnoser.</p><p class=\"indent\">Om hyperkalcemin är livshotande kan dialys vara livräddande. Grundsjukdomen måste behandlas så snart det är möjligt så att orsaken till hyperkalcemin kan elimineras.</p><h4 id=\"k2b_57\"><em>Underhållsbehandling</em></h4><p>Behandlingen av kronisk hyperkalcemi beror på orsaken. Vid kronisk hyperkalcemi bör njurfunktionen hållas under uppsikt och patienten ges råd om tillräckligt högt vätskeintag, minst 2 L/dag eller mer, vid feber, varmt klimat etc för att säkra kalciumutsöndringen via njurarna. Behandling av patienter med pHPT beskrivs ovan.</p><p class=\"indent\">Vid osteolytiska tumörer är det viktigt, för att få ner kalciumvärdena på längre sikt, att man bryter den självstimulerande cykel vid vilken tumörceller och osteoklaster stimulerar varandra. Detta kan ske genom tillförsel av bisfosfonater, som hämmar osteoklastaktiviteten. Oftast används <a class=\"index\" id=\"1069952\" data-text=\"zoledronsyra\"></a>zoledronsyra, 4 mg intravenöst, eller <a class=\"index\" id=\"1069957\" data-text=\"pamidronat\"></a>pamidronat, 90 mg var 3:e–4:e vecka. D<a class=\"index\" id=\"1069962\" data-text=\"denosumab\"></a>enosumab är ett potent antiresorptivt medel indicerat för skelettrelaterade händelser från solida tumörer i dosen 120 mg var 4:e vecka subkutant och kan provas om rehydrering och intravenös bisfosfonat inte haft effekt.</p><p class=\"indent\">Beroende på diagnos kombineras ibland behandlingen med glukokortikoider. Vid sarkoidos, lymfom m&nbsp;m recidiverar hyperkalcemin ofta under sommarperioden och perorala steroider kan då behöva tillgripas eller dosen ökas vid pågående behandling.</p><h2 id=\"k2b_58\">H<a class=\"index\" id=\"1069967\" data-text=\"hypokalcemi\"></a>ypokalcemi</h2><h3 id=\"k2b_59\">Orsaker</h3><p>De vanligaste orsakerna framgår av Faktaruta 5. Postoperativ långvarig hypokalcemi, där man har avlägsnat för mycket paratyreoideavävnad, är vanligast. Ibland ses idiopatisk hypoparatyreoidism, pga autoimmuna processer, eller medfödd aplasi av paratyreoidea. Hypomagnesemi och kronisk respiratorisk alkalos kan medföra hämmad PTH-sekretion och hypokalcemi.</p><p class=\"indent\">Otillräcklig solexposition och/eller bristande intag av kalcium/vitamin D eller malabsorption kan vid brist, dvs S-25-hydroxivitamin D &lt;&nbsp;25 nmol/L, medföra rakit hos barn eller osteomalaci hos vuxna och hypokalcemi samt hypofosfatemi med sekundär hyperparatyreoidism. Hypokalcemi pga vitamin D-brist uppstår relativt sent eftersom sekundär hyperparatyreodism länge förmår att upprätthålla ett P/S-kalcium inom referensområdet (i regel i nedre delen av detta). PTH-stegring kan dock saknas trots uttalad vitamin D-brist. Samtidig förhöjning av S-ALP med normalt S-GT eller förhöjt skelettspecifikt ALP tyder på osteomalaci, men denna kan saknas vid lätt vitamin D-brist. S-PTH-koncentrationen är oftast inverst korrelerad till sänkt S-25-hydroxivitamin D. Särskilt utsatta för vitamin D-brist är personer med begränsat intag av vitamin D eller för låg exponering för solljus, t&nbsp;ex patienter på vårdhem, personer som har begränsad rörlighet samt pigmenterade personer. Användning av klädesplagg som döljer ansikte och kropp kan bidra till uppkomst av vitamin D-brist. </p><p class=\"indent\">Behandling av hypokalcemi pga dietär brist sker i lindriga fall med tablett kalciumkarbonat 0,5 g + kolekalciferol 800 IE (20 <span>μ</span>g) 1–3 tabletter/dygn beroende på kosten. <a class=\"index\" id=\"1073984\" data-text=\"Hungry bone-syndrom\"></a>”Hungry bone”-syndrom, som kan ses dagar till veckor efter operation för pHPT eller tyreotoxikos, beror på en kraftigt ökad kalciumdeponering i skelettet. Sepsis och/eller blödningschock hos kritiskt sjuka intensivvårdspatienter kan medföra intracellulär kalciumanhopning. </p><h3 id=\"k2b_60\">Symtom</h3>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9f4c5a2d-c91e-4008-a8c9-3efda4000f82",
+			"name": "9f4c5a2d-c91e-4008-a8c9-3efda4000f82",
+			"type": "facts",
+			"content": {
+				"number": "6",
+				"title": "<a class=\"crossref\" id=\"32570\"></a>Symtom vid <a class=\"index\" id=\"1076838\" data-text=\"hypokalcemi:symtom\"></a>hypokalcemi",
+				"text": "<table><tbody><tr><td><p>Symtomen uppstår tidigare och är mer <br>uttalade ju snabbare och djupare kalcium sjunker. Kronisk hypokalcemi kan pga adaptiva mekanis&shy;mer ge symtom först vid uttalad hypokalcemi.</p><h5 id=\"k2b_63\">Neuropsykiatriska</h5><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Trötthet, irritabilitet, kognitiva problem, koma</li></ul><h5 id=\"k2b_64\">Neuromuskulära</h5><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Parestesier kring mun och i extremiteter</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Tetani och kramptillstånd</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Larynxspasm, bronkospasm</li></ul><h5 id=\"k2b_65\">Hjärt-kärlsymtom</h5><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Arytmier, hjärtsvikt, hypotoni</li></ul><h5 id=\"k2b_66\">Skelett- och muskelsymtom</h5><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Proximal muskelsvaghet</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Skelettsmärta/-ömhet</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Osteomalaci/rakit</li></ul><h5 id=\"k2b_67\">Övriga symtom</h5><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Torr hy, dålig hårkvalitet, dåliga naglar, psoriasis</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Tandemaljhypoplasi</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Katarakt</li></ul></td></tr></tbody></table>",
+				"id": "k2b_62"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "561a229a-f22a-4711-96bc-fcb347b7dcfd",
+			"name": "561a229a-f22a-4711-96bc-fcb347b7dcfd",
+			"type": "text",
+			"content": "<p>Symtomen uppstår tidigare och är mer uttalade ju snabbare och djupare kalcium sjunker (Faktaruta 6). Akut hypokalcemi leder till ökad neuromuskulär retbarhet med <a class=\"index\" id=\"1069997\" data-text=\"tetani:hypokalcemi\"></a>tetani och <a class=\"index\" id=\"1070002\" data-text=\"kramper:hypokalcemi\"></a>kramper. Orsaken till krampbenägenheten är att kalciumjonen frigörs från albumin och cellytor, vilket underlättar natriumjonens inträde över cellmembranen, varvid aktionspotentialen lättare propageras. Första symtom är ofta stickningar eller nedsatt känslighet kring mungiporna. Efterhand utvecklas symtom som ansträngningsutlösta kramper, tetani och larynxspasm, förvirring och koma.</p><span> </span><p class=\"indent\">Kronisk hypokalcemi kan medföra <a class=\"index\" id=\"1069992\" data-text=\"katarakt:hypokalcemi;hypokalcemi:katarakt\"></a>katarakt och förkalkningar i basala ganglier. Vid uttalad vitamin D-brist utvecklar patienten symtom på osteomalaci. Symtomen är ofta diffusa och kan förväxlas med fibromyalgi då muskuloskeletala symtom brukar dominera. Hypokalcemi ses i regel först vid långvarig vitamin D-brist när ökade PTH-nivåer inte längre kan höja kalcium genom ökad benresorption. </p><h3 id=\"k2b_68\">Utredning</h3>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6b3fba06-8788-41fa-8eaf-1d83619d9ad7",
+			"name": "6b3fba06-8788-41fa-8eaf-1d83619d9ad7",
+			"type": "facts",
+			"content": {
+				"number": "7",
+				"title": "<a class=\"crossref\" id=\"94377\"></a>Utredning av <a class=\"index\" id=\"1076891\" data-text=\"hypokalcemi:utredning\"></a>hypokalcemi",
+				"text": "<table><tbody><tr><td><h5 id=\"k2b_71\">Basutredning</h5><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Minst 2 prov för P/S-kalcium, varav minst ett <br>för joniserat kalcium</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>S-PTH, P/S-kreatinin, P/S-fosfat</li></ul><h5 id=\"k2b_72\">Kompletterande utredning</h5><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>S-ALP (eventuellt benspecifikt), S-25-hydroxi&shy;vitamin D (kalcidiol), P/S-magnesium, dygnsurin kalcium</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Utredning av grundorsaken, t&nbsp;ex malabsorption, lever- och njursjukdom etc<br></li></ul></td></tr></tbody></table>",
+				"id": "k2b_70"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4d224bbd-0880-44d4-987e-e86ea9ebc4f8",
+			"name": "4d224bbd-0880-44d4-987e-e86ea9ebc4f8",
+			"type": "text",
+			"content": "<p>Anamnes (hereditet, operationer etc) och klinisk undersökning är här vägledande. Om patienten nyligen har opererats för pHPT eller tyreotoxikos behövs sällan ytterligare utredning. Vid nykonstaterad hypokalcemi i 2 prov bör utredning inledas med bestämning av S-PTH, P/S-kreatinin, joniserat kalcium eller Ca<sub>korr</sub> samt P/S-fosfat och P/S-magnesium (Faktaruta 7). S-PTH-nivån spelar en avgörande roll för diagnosen och tillsammans med kalciumvärdet kan man som regel gruppera orsakerna enligt Faktaruta 5 <a href=\"#87722\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a> och Figur 3,  <a href=\"#56052\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>. Patienter med hypoparatyreoidism har hypokalcemi, förhöjt P/S-fosfat och inadekvat lågt S-PTH. Hypokalcemi med förhöjt PTH indikerar sekundär hyperparatyreoidism. Om njurfunktionen är normal är orsaken som regel brist på kalcium eller vitamin D pga brister i kosten eller malabsorption.</p><span> </span><p class=\"indent\">Provtagningen kompletteras lämpligen med bestämning av S-25-hydroxivitamin D (S-kalcidiol) och kalcium i dygnsurin. Urinvärden &lt;&nbsp;2–3 mmol kalcium/dygn styrker misstanken om malabsorption eller bristtillstånd. Om S-25-hydroxivitamin D är &lt;&nbsp;25 nmol/L kallas detta för vitamin D-brist och &lt;&nbsp;10–12 nmol/L uttalad brist. Patienten har då som regel skelettpåverkan ofta med PTH-förhöjning, benspecifik ALP-förhöjning och mer eller mindre kliniska symtom på osteomalaci. S-25-hydroxivitamin D i intervallet 25–50 nmol/L kan tyda på brist och patienten kan ha symtom, men inte alltid (6). I denna grupp har minst 40&#37; av äldre patienter sekundär hyperparatyreoidism och som regel ett P/S-kalcium inom referensintervallet, men vanligen lägre än dess medelvärde. Vissa laboratorier anger referensintervallet justerat för variation av S-25-hydroxivitamin D under olika årstider. Det finns för närvarande ingen konsensus om optimal nivå av S-25-hydroxivitamin D men 50–75 nmol/L anses av svenska experter vara tillräckligt.</p><p class=\"indent\">Bestämning av 1,25-dihydroxivitamin D i serum har bara en plats i specialutredning av t&nbsp;ex vitamin D-receptordefekter eftersom 1,25-dihydroxivitamin D-nivåerna bibehålls normala genom ökad PTH-sekretion långt ner i intervallet med vitamin D-brist. </p><h3 id=\"k2b_73\">Behandling</h3><p>Vid behandling av lindrig hypokalcemi med sekundär hyperparatyreoidism (malabsorption, bristande intag eller för lite solljus) ges kalcium och vitamin D<sub>3</sub> som kombinationspreparat (kalciumkarbonat 500 mg + kolekalciferol 800 IE [20 <span>μ</span>g]), initialt 1–3 tabletter/dag, se Terapirekommendationerna – Behandling av hypokalcemi. P/S-kalcium följs var eller varannan månad och patienten är välinställd när även PTH är normalt. Vid uttalad vitamin D-brist (osteomalaci) ges <a class=\"index\" id=\"1070977\" data-text=\"kolekalciferol\"></a>kolekalciferol 2&nbsp;400–3&nbsp;200 IE (60–80 <span>μ</span>g)/dag i 3–4 månader följt av 800–1&nbsp;600 IE (20–40 <span>μ</span>g)/dag med ledning av S-25-hydroxivitamin D. Ergokalciferol är mindre potent och ges i högre dosering. Vid långvarig behandling av hypoparatyreoidism (postoperativt eller idiopatiskt) ges aktiva vitamin D-analoger såsom <a class=\"index\" id=\"1070978\" data-text=\"alfakalcidol\"></a>alfakalcidol eller <a class=\"index\" id=\"1070979\" data-text=\"kalcitriol\"></a>kalcitriol, oftast 0,5–2 <span>μ</span>g/dag peroralt. Kalcitriol är synonymt med 1,25-dihydroxivitamin D medan alfakalcidol behöver aktiveras till kalcitriol i levern.</p><div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d12a1897-b905-4552-be50-6cfa92ae37d6",
+			"name": "d12a1897-b905-4552-be50-6cfa92ae37d6",
+			"type": "therapy",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"crossref\" id=\"23089\"></a>Behandling av <a class=\"index\" id=\"1077356\" data-text=\"hypokalcemi:behandling\"></a>hypokalcemi",
+				"id": "k2b_74",
+				"text": "<table><tbody><tr><td><div class=\"tableLine\"><span style=\"font-weight: bold;\">Akut hypokalcemi </span></div><div class=\"tableLine\">med uttalade sym-</div><div class=\"tableLine\">tom</div></td><td><ul><li><div class=\"tableLine\"><a class=\"index\" id=\"1077363\" data-text=\"kalciumglubionat\"></a>Kalciumglubionat (Calcium-Sandoz) 9 mg/ml, 10–20 ml spätt i 100 ml NaCl 9 mg/ml </div><div class=\"tableLine\">eller glukos 50 mg/ml ges som intravenös infusion under 5–20 minuter. Initialt ges </div><div class=\"tableLine\">eventuellt 10–20 ml outspädd lösning intravenöst under 5 minuter. Upprepas till sym-</div><div class=\"tableLine\">tomfrihet. Hjärtrytmen bör observeras. Helst EKG-övervakning. Försiktighet: Digita-</div><div class=\"tableLine\">lisbehandlade patienter har ökad känslighet för kalcium. Njursvikt kan medföra </div><div class=\"tableLine\">hyperkalcemi.</div></li></ul><ul><li><div class=\"tableLine\">Vid kvarstående hypokalcemi ges 100 ml kalciumglubionat (Calcium-Sandoz) (10 am-</div><div class=\"tableLine\">puller 9 mg/ml à 10 ml ger 900 mg kalcium) i 1 000 ml NaCl 9 mg/ml infusionsvätska </div><div class=\"tableLine\">= 0,9 mg/ml. Cirka 50 ml (45&nbsp;mg kalcium) infunderas/timme. Titrera dosen efter täta </div><div class=\"tableLine\">kontroller av joniserat Ca eller Ca<sub>korr</sub>.</div></li></ul><ul><li><div class=\"tableLine\">Vid misstanke om magnesiumbrist ges parenteral magnesiumtillsats, 20–40 mmol/</div><div class=\"tableLine\">dygn, som tillägg i kalciumdroppet, eller som separat infusion.</div></li></ul></td></tr><tr><td><div class=\"tableLine\"><span style=\"font-weight: bold;\">Akut lindrig hypo-</span></div><div class=\"tableLine\">kalcemi</div></td><td><ul><li><div class=\"tableLine\">Brustabletter med lättlösligt kalciumsalt, kalciumglukonat + kalciumkarbonat <br></div><div class=\"tableLine\">(<a class=\"index\" id=\"1077371\" data-text=\"Calcium-Sandoz\"></a>Calcium-Sandoz) eller <a class=\"index\" id=\"1077372\" data-text=\"kalciumkarbonat\"></a>kalciumkarbonat tuggtabletter. 0,5–1 g kalcium ges initialt </div><div class=\"tableLine\">var 6:e timme. Magnesium ges vid behov.</div></li></ul></td></tr><tr><td><div class=\"tableLine\"><span style=\"font-weight: bold;\">Underhålls-</span></div><div class=\"tableLine\">behandling</div></td><td><ul><li><div class=\"tableLine\">Behandla eventuell bakomliggande orsak.</div></li></ul><ul><li><div class=\"tableLine\">Vid PTH-brist ges <a class=\"index\" id=\"1077377\" data-text=\"alfakalcidol\"></a>alfakalcidol eller <a class=\"index\" id=\"1077378\" data-text=\"kalcitriol\"></a>kalcitriol. Titrera upp tills joniserat kalcium ca </div><div class=\"tableLine\">1,20&nbsp;mmol/L, målvärde i nedre referensintervallet för att undvika njursten, normal-</div><div class=\"tableLine\">dos 0,25–2 <span>μ</span>g. Adekvat kostintag av kalcium (&gt;&nbsp;1 g kalcium/dygn) säkras, annars ges </div><div class=\"tableLine\">kalciumkarbonattabletter.</div></li></ul><ul><li><div class=\"tableLine\">Vid njursvikt ges alfakalcidol eller kalcitriol.</div></li></ul><ul><li><div class=\"tableLine\">Kalcium-/vitamin D-insufficiens pga malabsorption m&nbsp;m behandlas med kombina-</div><div class=\"tableLine\">tionspreparat av typen kalciumkarbonat 0,5 g + kolekalciferol (vitamin D<sub>3</sub>) 800 IE </div><div class=\"tableLine\">(20&nbsp;<span>μ</span>g) 1–3 gånger/dygn i lättare fall. Vid vitamin D-brist (&lt;&nbsp;25 nmol/L) ges <a class=\"index\" id=\"1077382\" data-text=\"kolekalciferol\"></a>kolekalci-</div><div class=\"tableLine\">ferol 2&nbsp;400–3&nbsp;200 IE (60–80 <span>μ</span>g) dagligen i 3–4 månader följt av 20–40 <span>μ</span>g dagligen </div><div class=\"tableLine\">med ledning av S-25-hydroxivitamin D som bestäms med några månaders mellan-</div><div class=\"tableLine\">rum. Kolekalciferol kan ges i multipler om 400–800 IE (10–20 <span>μ</span>g) per tablett eller i </div><div class=\"tableLine\">motsvarande dygnsdoser som D-vitamin ACO orala droppar, lösning 80 IE/droppe </div><div class=\"tableLine\">(2&nbsp;<span>μ</span>g/droppe), dvs 1 600–2 600 IE (40–65 <span>μ</span>g)/dag eller motsvarande doser Detremin, </div><div class=\"tableLine\">orala droppar, lösning 20&nbsp;000 IE/ml (se vidare produktresumé/Fass). Ett alternativ till </div><div class=\"tableLine\">kolekalciferol är ergokalciferol (vitamin&nbsp;D<sub>2</sub>) oral lösning 35 <span>μ</span>g/ml (Ergokalciferol APL </div><div class=\"tableLine\">oral lösning 35 <span>μ</span>g/ml, 1&nbsp;400 IE/ml) 5–7,5 ml, dvs 7&nbsp;000–10&nbsp;500 IE (175–260 <span>μ</span>g) 2 gång-</div><div class=\"tableLine\">er/vecka.</div></li></ul></td></tr><tr><td><div class=\"tableLine\"><span style=\"font-weight: bold;\">Uppföljning</span></div></td><td><ul><li><div class=\"tableLine\">Initialt kontrolleras joniserat kalcium 1–2 gånger/vecka. Nedtrappas till månadsvis, </div><div class=\"tableLine\">sedan till 2–4 gånger/år.</div></li></ul><ul><li><div class=\"tableLine\">Ofta lätt dosreduktion av vitamin D-substitution under juli–september.</div></li></ul><ul><li><div class=\"tableLine\">Samtidig kontroll av dU-Ca och P/S-fosfat. Om högt dU-Ca, trots lågt P/S-Ca vid </div><div class=\"tableLine\">PTH-brist, kan eventuellt tillägg av tiaziddiuretikum försökas (minskar kalcium-</div><div class=\"tableLine\">utsöndringen).</div></li></ul></td></tr></tbody></table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d89569a6-1e41-4c93-8ebc-9c45c23c915b",
+			"name": "d89569a6-1e41-4c93-8ebc-9c45c23c915b",
+			"type": "text",
+			"content": "<span> </span>Patienterna bör informeras om överdoseringssymtom vid hyperkalcemi: trötthet, stora urinmängder, törst och eventuellt förvirring.<p class=\"indent\">Postoperativ hypokalcemi är oftast kortvarig (dagar) och kan behandlas med lättlösligt kalciumsalt (brustabletter), se Terapirekommendationerna – Behandling av hypokalcemi <a href=\"#23089\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.<span> </span></p><p class=\"indent\">Vid långvarig behandling av hypoparatyreoidism (postoperativ eller idiopatisk) ges <a class=\"index\" id=\"1070052\" data-text=\"alfakalcidol\"></a>alfakalcidol eller <a class=\"index\" id=\"1070057\" data-text=\"kalcitriol\"></a>kalcitriol, oftast 0,5–2 <span>μ</span>g/dag peroralt. Om patienten har ett otillräckligt <span>kalciumintag</span> via födan bör supplement ges med <a class=\"index\" id=\"1070062\" data-text=\"kalciumkarbonat\"></a>kalciumkarbonattabletter, 0,5 g, 1–2 gånger/dag. Risken för hyperkalcemi ökar dock vid kombinationsbehandling med alfakalcidol/kalcitriol och kalciumkarbonat. När stabila, adekvata substitutionsdoser hittats bör patienten kontrolleras minst 1 gång/år och ha möjlighet att vid behov lämna extra blodprover. Vid längre vistelse (flera veckor) i stark sol kan dosen av vitamin D behöva minskas några veckor.</p><p class=\"indent\">”Hungry bone”-syndrom behandlas initialt med ett lättlösligt kalciumsalt peroralt, t&nbsp;ex brustabletter 1–2 g, 2–3 gånger/dag, justerat efter symtom och sedan med kalciumkarbonattabletter, se Terapirekommendationerna – Behandling av hypokalcemi,  <a href=\"#23089\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>.<span> </span></p><p class=\"indent\">Akut, svår hypokalcemi behandlas med kalcium intravenöst, se Terapirekommendationerna – Behandling av hypokalcemi,  <a href=\"#23089\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>. När situationen medger kan man senare övergå till ett lättlösligt kalciumsalt peroralt, t&nbsp;ex brustabletter 1–2 g, 2–3 gånger/dag, justerat efter symtom, se Terapirekommendationerna – Behandling av hypokalcemi <a href=\"#23089\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>. Eventuell hypomagnesemi bör korrigeras.<span> </span></p><h2 id=\"k2b_75\">Patienter opererade med <a class=\"index\" id=\"1070067\" data-text=\"gastric bypass:vitamin-, mineralbrist\"></a>gastric bypass</h2><p>Patienter som har genomgått gastric bypass-operation löper ökad risk för <a class=\"index\" id=\"1074971\" data-text=\"vitaminbrist:gastric bypass\"></a>vitamin- och <a class=\"index\" id=\"1074972\" data-text=\"mineralbrist:gastric bypass\"></a>mineralbrist (7). Vid vitamin D-brist behöver man i regel ge <a class=\"index\" id=\"1074974\" data-text=\"kolekalciferol:gastric bypass\"></a>kolekalciferol oralt i högre doser än vanligt, t&nbsp;ex 1&nbsp;600–4&nbsp;000 IE/dag. Koncentrationen av S-25-hydroxivitamin D bestäms efter 8–12 veckor och dosen titreras t&nbsp;ex till 1&nbsp;000–2&nbsp;000 IE (25–50 <span>μ</span>g)/dag beroende på svaret. Urinutsöndringen av kalcium samt S-ALP, som är ett mått på benformationen, bör bestämmas efter 3 månader och därefter var 6:e månad. Lågt dU-kalcium (&lt;&nbsp;3&nbsp;mmol/dygn) tyder på malabsorption eller dietär brist på kalcium. Sekundär hyperparatyreoidism styrker vitamin D- respektive kalciumbrist och vitamin D-dosen samt dosen av kalciumsupplement bör ses över. Ofta behövs mer än 1&nbsp;200 mg <a class=\"index\" id=\"1075364\" data-text=\"kalciumkarbonat:gastric bypass\"></a>kalciumkarbonat oralt/dygn för att hålla en gastric bypass-patient i kalciumbalans. Som alternativ till oralt kolekalciferol kan <a class=\"index\" id=\"1074975\" data-text=\"ergokalciferol:gastric bypass\"></a>ergokalciferol (vitamin D<sub>2</sub>) 50&nbsp;000 IE (1&nbsp;250 <span>μ</span>g)/vecka ges, lämpligen som oral lösning (Ergokalciferol APL oral lösning 175 <span>μ</span>g/ml, 7&nbsp;000 IE/ml) 1 gång/vecka, och 25-hydroxivitamin D-koncentrationen monitoreras efter 8–12 veckor. </p><h2 class=\"referenceHeader\" id=\"k2b_76\">Referenser</h2>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d735eba4-1a46-4345-8440-e63cb97d793f",
+			"name": "d735eba4-1a46-4345-8440-e63cb97d793f",
+			"type": "references",
+			"content": "<ol class=\"references\"><li id=\"reference_1\">Törring O, Mellström D, Ljunggren Ö. <a href=\"http://www.lakemedelsboken.se/atc/A12A-A12AA\" data-atcid=\"A12A,A12AA\" data-atctitles=\"Matsm&#xE4;ltningsorgan_och_&#xE4;mnesoms&#xE4;ttning--Mineral&#xE4;mnen--Kalcium##Matsm&#xE4;ltningsorgan_och_&#xE4;mnesoms&#xE4;ttning--Mineral&#xE4;mnen--Kalcium--Kalcium\" class=\"lb inlineGenerica text\">Kalcium</a>  och skelettmetabola sjukdomar. I: Werner S, red. Endokrinologi. 2:a uppl. Stockholm: Liber AB; 2007. ISBN 9789147084289. s 200–30.</li>\n<li id=\"reference_2\"> Rekommenderat intag av vitaminer och mineraler. Livsmedelsverket, Uppsala. <a href=\"http://www.slv.se/sv/grupp1/Mat-och-naring/Vad-innehaller-maten/Vitaminer/Vitamin-D-/\" target=\"_blank\" class=\"linkOut\">www.slv.se</a> </li>\n<li id=\"reference_3\"> Report release: Dietary reference intakes for calcium and <a href=\"http://www.lakemedelsboken.se/atc/A11CC\" data-atcid=\"A11CC\" data-atctitles=\"Matsm&#xE4;ltningsorgan_och_&#xE4;mnesoms&#xE4;ttning--Vitaminer--Vitamin_A_och_D,_inkl._kombinationer_av_de_tv&#xE5;--Vitamin_D_och_analoger\" class=\"lb inlineGenerica text\">vitamin D</a>. Institute of Medicine. 2010. <a href=\"http://www.iom.edu/Reports/2010/Dietary-Reference-Intakes-for-Calcium-and-Vitamin-D.aspx\" target=\"_blank\" class=\"linkOut\">www.iom.edu</a> </li>\n<li id=\"reference_4\"> Holick MF, Binkley NC, Bischoff-Ferrari HA, Gordon CM, Hanley DA, Heaney RP, et al. Guidelines for preventing and treating <a href=\"http://www.lakemedelsboken.se/atc/A11CC\" data-atcid=\"A11CC\" data-atctitles=\"Matsm&#xE4;ltningsorgan_och_&#xE4;mnesoms&#xE4;ttning--Vitaminer--Vitamin_A_och_D,_inkl._kombinationer_av_de_tv&#xE5;--Vitamin_D_och_analoger\" class=\"lb inlineGenerica text\">vitamin D</a> deficiency and insufficiency revisited. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22442274\" target=\"_blank\" class=\"linkOut\">J Clin Endocrinol Metab. 2012;97:1153–8.</a>  </li>\n<li id=\"reference_5\">Rosen CJ, Abrams SA, Aloia JF, Brannon PM,  Clinton SK, Durazo-Arvizu RA, et al. IOM committee members respond to Endocrine Society <a href=\"http://www.lakemedelsboken.se/atc/A11CC\" data-atcid=\"A11CC\" data-atctitles=\"Matsm&#xE4;ltningsorgan_och_&#xE4;mnesoms&#xE4;ttning--Vitaminer--Vitamin_A_och_D,_inkl._kombinationer_av_de_tv&#xE5;--Vitamin_D_och_analoger\" class=\"lb inlineGenerica text\">vitamin D</a> guideline. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22442278\" target=\"_blank\" class=\"linkOut\">J Clin Endocrinol Metab. 2012;97:1146–52.</a>   </li>\n<li id=\"reference_6\">Rosen CJ, Adams JS, Bikle DD, Black DM, Demay  MB, Manson JE, et al. The nonskeletal effects of <a href=\"http://www.lakemedelsboken.se/atc/A11CC\" data-atcid=\"A11CC\" data-atctitles=\"Matsm&#xE4;ltningsorgan_och_&#xE4;mnesoms&#xE4;ttning--Vitaminer--Vitamin_A_och_D,_inkl._kombinationer_av_de_tv&#xE5;--Vitamin_D_och_analoger\" class=\"lb inlineGenerica text\">vitamin D</a>: an Endocrine Society scientific statement. <a href=\"http://www.ncbi.nlm.nih.gov/pubmed/22596255\" target=\"_blank\" class=\"linkOut\">Endocr Rev. 2012;33:456–92.</a>  </li>\n<li id=\"reference_7\">Bal BS, Finelli FC, Shope TR, Koch TR. Nutritional  deficiencies after bariatric surgery. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=bal+bs+2012+bariatric+surgery\" target=\"_blank\" class=\"linkOut\">Nat Rev Endocrinol. 2012;8:544–56.</a> </li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/endokrinologi/rubbningar_i_kalciumomsattningen.json",
+	"modified": "2018-03-28 19:36",
+	"isPublished": true,
+	"indexed": "true"
+}

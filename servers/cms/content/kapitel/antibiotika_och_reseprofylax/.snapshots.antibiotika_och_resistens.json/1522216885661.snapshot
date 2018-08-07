@@ -1,0 +1,547 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Antibiotika och resistens | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-09 00:58",
+	"published": "2015-07-09 00:58",
+	"validUntil": "",
+	"createdBy": "Inga Odenholt, Malin André",
+	"replacesUrl": "/l1_inf_antibiotresistens_2013fm10.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "ec9e0dae-7467-4594-8e5a-a2275b802423",
+			"name": "ec9e0dae-7467-4594-8e5a-a2275b802423",
+			"type": "author",
+			"content": {
+				"firstname": "Inga",
+				"surname": "Odenholt",
+				"description": "Infektionskliniken, Skånes universitetssjukhus, Malmö",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b40f4fe8-5e64-45fb-97c7-f0397f3dd249",
+			"name": "b40f4fe8-5e64-45fb-97c7-f0397f3dd249",
+			"type": "author",
+			"content": {
+				"firstname": "Malin",
+				"surname": "André",
+				"description": "FFoU-enheten, Primärvården, Landstinget Uppsala län, Uppsala",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7183d09d-ec4f-44f8-8a4a-5aa7fb6df412",
+			"name": "7183d09d-ec4f-44f8-8a4a-5aa7fb6df412",
+			"type": "text",
+			"content": "<h1 id=\"l1_4\"><a class=\"crossref\" id=\"35937\"></a>Antibiotika och resistens</h1>\n<h2 id=\"l1_5\">Inledning</h2>\n<p class=\"ingress\">Larm om resistenta bakterier kommer i &ouml;kande takt. En &ouml;kad resistens p&aring;verkar hela sjukv&aring;rden och framf&ouml;r allt kommer de sv&aring;rast sjuka att drabbas. Det finns f&aring; antibiotika med nya verkningsmekanismer p&aring; g&aring;ng inom l&auml;kemedelsindustrin, d&auml;rf&ouml;r &auml;r vi tvungna att f&ouml;rlita oss p&aring; dem vi redan har. Mycket av sjukv&aring;rdens stora framg&aring;ngar f&ouml;ruts&auml;tter m&ouml;jligheten av kontroll av infektioner, till exempel vid protesoperationer, hj&auml;rtkirurgi och cancerbehandlingar. Med en &ouml;kande resistens hos bakterierna kan inte dessa livr&auml;ddande behandlingar genomf&ouml;ras. D&auml;rf&ouml;r &auml;r en restriktiv anv&auml;ndning av antibiotika av stor betydelse. Det inneb&auml;r att antibiotika ska undvikas n&auml;r nyttan &auml;r begr&auml;nsad.</p>\n<p class=\"ingress indent\"><br>Under senaste &aring;rtionden har kunskapen om antibiotikas begr&auml;nsade effekt vid m&aring;nga vanliga infektioner blivit klarlagd och riktlinjerna har f&ouml;r&auml;ndrats. Behandlingsrekommendationer f&ouml;r faryngotonsillit i &ouml;ppen v&aring;rd kom ut h&ouml;sten 2012 efter ett samarbete mellan L&auml;kemedelsverket och Smittskyddsinstitutet (1). I samarbete mellan Strama och L&auml;kemedelsverket har riktlinjer &auml;ven utf&auml;rdats f&ouml;r sinuit, nedre urinv&auml;gsinfektioner hos kvinnor, bakteriella hud- och mjukdelsinfektioner, nedre luftv&auml;gsinfektioner och akut mediaotit (2,3,4,5,6). Man hittar dessa b&aring;de p&aring; Stramas och L&auml;kemedelsverkets webbplatser.</p>\n<h2 id=\"l1_6\"><a class=\"index\" id=\"1011843\" data-text=\"antibiotika:resistens, &lt;$nopage&gt;se antibiotikaresistens\"></a>Resistensutveckling<a class=\"index\" id=\"1046041\" data-text=\"antibiotikaresistens\"></a> inom antibiotikaomr&aring;det</h2>\n<p>En viktig drivande faktor bakom utvecklingen inom antibiotikaomr&aring;det har varit resistensutvecklingen mot &auml;ldre preparat, vilket i sin tur h&auml;nger samman med en global <a class=\"index\" id=\"1011853\" data-text=\"antibiotika:&#xF6;verf&#xF6;rskrivning\"></a>&ouml;verf&ouml;rskrivning av antibiotika. Nya antibiotika har hittills kunnat m&ouml;ta resistensutvecklingen, men det har blivit allt sv&aring;rare och kostsammare att ta fram medel med nya verkningsmekanismer. Idag f&ouml;rekommer resistens mot alla k&auml;nda antibiotika.</p>\n<p class=\"indent\"><br>Fram till 1980 registrerades en l&aring;ng rad nya antibiotikaklasser, men d&auml;refter tog det 20&nbsp;&aring;r innan n&auml;sta nya grupp av antibiotika, oxazolidinonerna, introducerades, se Figur&nbsp;1. Under dessa 20 &aring;r har tillskottet till antibiotikaarsenalen i stor utstr&auml;ckning best&aring;tt av modifieringar av redan existerande preparatgrupper, till exempel cefalosporiner, makrolider och kinoloner. Mindre kemiska modifieringar av redan existerande preparat ger ofta endast en kortvarig respit innan bakterierna har utvecklat motst&aring;ndskraft &auml;ven mot dessa medel. De senaste tio&nbsp;&aring;ren &auml;r det framf&ouml;r allt antibiotika mot meticillin-resistenta Staphylococcus aureus (MRSA) som tagits fram (lipoglykopeptider), medan medel mot multiresistenta gramnegativa bakterier saknas helt.</p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "530b8f46-569f-4668-a989-7617bdc967c1",
+			"name": "530b8f46-569f-4668-a989-7617bdc967c1",
+			"type": "figure",
+			"content": {
+				"number": "1",
+				"maxwidth": "",
+				"image": "/images/l1_inf_antibiotresistens_2013fm10_images/figur1.png",
+				"title": "",
+				"text": "<a class=\"crossref\" id=\"43291\"></a>Utvecklingen av nya antibiotikaklasser från 1930-talet",
+				"alt": "",
+				"id": "l1_7"
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c04f2deb-49d5-4656-91a7-6c0771d08d2b",
+			"name": "c04f2deb-49d5-4656-91a7-6c0771d08d2b",
+			"type": "text",
+			"content": "<p><span> </span>Sedan mer &auml;n 50&nbsp;&aring;r har m&auml;nniskan rubbat den ekologiska balansen av mikroorganismer genom att anv&auml;nda stora m&auml;ngder antibiotika f&ouml;r infektionsbehandling och f&ouml;r andra &auml;ndam&aring;l t&nbsp;ex f&ouml;r att &ouml;ka tillv&auml;xten hos livsmedelsproducerande <span>djur</span> eller f&ouml;r bek&auml;mpning av infektioner hos v&auml;xter. Omkring 50 % av all antibiotika anv&auml;nds idag inom humanmedicin och resterande inom veterin&auml;rmedicin.</p>\n<p class=\"indent\"><br>Med en minskande tillg&aring;ng till effektiva antibiotika riskerar vi att &aring;ter f&aring; en &ouml;kad sjuklighet och d&ouml;dlighet i bakteriella infektionssjukdomar. Samh&auml;llets kostnader vid &ouml;kande resistensutveckling blir mycket stora pga &ouml;kad mortalitet, &ouml;kad invaliditet, l&auml;ngre v&aring;rdtider, &ouml;kat behov av isoleringsv&aring;rd och h&ouml;gre l&auml;kemedelskostnader. &Ouml;kade kostnader kommer ocks&aring; fr&aring;n ett &ouml;kat behov av smittsp&aring;rning, st&auml;ngda avdelningar och avst&auml;ngning fr&aring;n arbetet inom sjukv&aring;rden.</p>\n<p class=\"indent\"><br>Sjukv&aring;rdsmilj&ouml;er &auml;r s&auml;rskilt k&auml;nsliga f&ouml;r spridning av bakterier. H&auml;r anv&auml;nds antibiotika mer &auml;n i andra milj&ouml;er; tr&auml;ngseln &auml;r st&ouml;rre och t&auml;ta kontakter mellan individer inneb&auml;r &ouml;kad risk f&ouml;r &ouml;verf&ouml;ring av bakterier. Patienter &auml;r ocks&aring; ofta mer mottagliga pga s&auml;mre immunf&ouml;rsvar, defekta f&ouml;rsvarsbarri&auml;rer eller f&ouml;r&auml;ndringar i den normala bakteriefloran.</p>\n<h2 id=\"l1_8\"><a class=\"crossref\" id=\"45865\"></a>Vanliga resistenta <a class=\"index\" id=\"1042951\" data-text=\"antibiotikaresistens:MRSA\"></a>bakterier</h2>\n<h3 id=\"l1_9\"><a class=\"index\" id=\"1042937\" data-text=\"MRSA\"></a>MRSA</h3>\n<p><a class=\"index\" id=\"1053789\" data-text=\"meticillinresistenta S. aureus\"></a>Meticillinresistenta Staphylococcus aureus (MRSA) har utvecklat resistens mot i princip alla betalaktamantibiotika genom bildandet av ett nytt penicillinbindande protein som tagit &ouml;ver funktionen av de andra. Dessa bakterier kan vara mer eller mindre k&auml;nsliga f&ouml;r andra stafylokockantibiotika s&aring;som klindamycin, fusidinsyra m&nbsp;fl. Andelen MRSA av invasiva stafylokockinfektioner (positiva blododlingar) varierar mycket i olika l&auml;nder fr&aring;n ca 20 % i England till ca 1 % i Sverige. En viktig &aring;tg&auml;rd f&ouml;r att minska spridningen av MRSA &auml;r att unders&ouml;ka patienter som varit v&aring;rdade p&aring; sjukhus &gt;&nbsp;24 timmar i ett annat land &auml;n Sverige p&aring; f&ouml;rekomsten av MRSA. Tyv&auml;rr s&aring; &ouml;kar f&ouml;rekomsten av MRSA i &ouml;ppenv&aring;rd som orsak till furunklar, abscesser och andra hud- och mjukdelsinfektioner.</p>\n<h3 id=\"l1_10\"><a class=\"index\" id=\"1042960\" data-text=\"ESBL\"></a><a class=\"crossref\" id=\"94464\"></a>ESBL</h3>\n<p><a class=\"index\" id=\"1051858\" data-text=\"extended-spektrum betalaktamasproducerande bakterier\"></a>Extended-spektrum betalaktamasproducerande bakterier (ESBL), oftast Escherichia coli eller Klebsiella spp., &auml;r bakterier som bildar ett enzym som bryter ner alla penicilliner och cefalosporiner. I ca 50 % av fallen &auml;r de ocks&aring; resistenta mot aminoglykosider, kinoloner och trimetoprim/sulfa, vilket g&ouml;r att de enbart &auml;r k&auml;nsliga f&ouml;r karbapenemer intraven&ouml;st. &Auml;ven h&auml;r varierar f&ouml;rekomsten mycket mellan olika l&auml;nder. I en studie av resen&auml;rer framkom att 25 % av dem som kom fr&aring;n Thailand var b&auml;rare av ESBL i tarmen. Om man hade varit i Indien var risken 50 %! I Sverige ligger f&ouml;rekomsten av ESBL i blododlingar p&aring; ca 2 %. I Sk&aring;ne tredubblades antalet odlingar med ESBL mellan 2007 och 2010.</p>\n<p class=\"indent\"><br>ESBL har blivit ett reellt behandlingsproblem exempelvis f&ouml;r kvinnor med nedre UVI, som inte kan behandlas med orala antibiotika. I Sverige har man haft besv&auml;rliga utbrott p&aring; sjukhus till exempel Akademiska sjukhuset i Uppsala med ca 270 fall. I&nbsp;bl&nbsp;a USA och Israel har man &auml;ven haft utbrott av Klebsiella pneumoniae som ut&ouml;ver penicilliner och cefalosporiner kunnat bryta ner karbapenemer s&aring; kallad KPC-resistens (K. pneumoniae carbapenemas). Sedan mars 2012 &auml;r ESBL-carba anm&auml;lningspliktig b&aring;de fr&aring;n laboratoriet och behandlande l&auml;kare. En ensidig anv&auml;ndning av cefalosporiner och/eller kinoloner leder till att ESBL-producerande bakterier selekteras fram.</p>\n<h3 id=\"l1_11\">VRE</h3>\n<p>&Auml;ven <a class=\"index\" id=\"1051911\" data-text=\"vankomycinresistenta enterokocker\"></a>vankomycinresistenta enterokocker (VRE) har sin hemvist i tarmen. De har en f&ouml;r&auml;ndrad cellv&auml;gg, vilket leder till att vankomycin inte kan binda sig till bakterien. Fr&aring;n att enbart en handfull patienter med VRE rapporterats i hela landet registrerades 2008 &ouml;ver 600 patienter, m&aring;nga smittade p&aring; Stockholmssjukhusen, i V&auml;stmanland och Halland. &Aring;r 2009 anm&auml;ldes 400 fall, &aring;r 2010 214 fall och 2011 106 fall. Behandlingsalternativen f&ouml;r VRE &auml;r mycket begr&auml;nsade.</p>\n<h3 id=\"l1_12\">PRP</h3>\n<p><a class=\"index\" id=\"1053818\" data-text=\"penicillinresistenta pneumokocker\"></a>Penicillinresistenta pneumokocker (PRP) &auml;r luftv&auml;gsbakterier som ger upphov till samma infektionspanorama som de k&auml;nsliga pneumokockerna, dvs otit, sinuit och lunginflammation. Resistensen har uppkommit genom f&ouml;r&auml;ndringar i de penicillinbindande proteinerna vilket medf&ouml;r att penicillinet inte binder lika bra till bakteriecellv&auml;ggen. F&ouml;rekomsten av pneumokocker med nedsatt k&auml;nslighet f&ouml;r penicillin i Sverige varierar fr&aring;n ca 9 % 2011 i Malm&ouml; till ca 2 % i J&auml;mtland. I Sydostasien &auml;r &ouml;ver 50 % av alla pneumokocker resistenta mot penicillin. Det enda orala antibiotikum man kan anv&auml;nda vid behandling av pneumokocker med nedsatt k&auml;nslighet mot penicillin (MIC&nbsp;<span>&le;</span>&nbsp;1&nbsp;mg/l) &auml;r <a class=\"index\" id=\"1053820\" data-text=\"amoxicillin:penicillinresistenta pneumokocker\"></a>amoxicillin i h&ouml;gdos (80&nbsp;mg/kg kroppsvikt/dygn).</p>\n<h2 id=\"l1_13\">Antibiotikaf&ouml;rbrukning och resistens</h2>\n<p>Antibiotikaf&ouml;rbrukningen varierar mycket mellan olika l&auml;nder, se Figur 2, och det finns ett klart samband mellan f&ouml;rbrukning och andel resistenta bakterier. &Auml;ven inom Sverige varierar f&ouml;rbrukningen &ndash; l&auml;nen i Norrland har en klart l&auml;gre f&ouml;rbrukning &auml;n storst&auml;derna och Sk&aring;ne, se Figur&nbsp;3. &Auml;ven inom ett mindre geografiskt omr&aring;de som till exempel Sk&aring;ne finns stora variationer inom de olika kommunerna.</p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "065f5678-f549-4596-8982-a583a6c597e8",
+			"name": "065f5678-f549-4596-8982-a583a6c597e8",
+			"type": "figure",
+			"content": {
+				"number": "2",
+				"maxwidth": "",
+				"image": "/images/l1_inf_antibiotresistens_2013fm10_images/figur2.png",
+				"title": "",
+				"text": "<p><a class=\"index\" id=\"1042256\" data-text=\"antibiotika:f&#xF6;rbrukning\"></a><a class=\"crossref\" id=\"35036\"></a>Antibiotikaf&ouml;rbrukningen i &ouml;ppenv&aring;rd i Europa, 2007 (K&auml;lla: data fr&aring;n ESAC)</p>",
+				"alt": "",
+				"id": "l1_14"
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "18472c41-b949-4c73-acbe-7c91f509d08d",
+			"name": "18472c41-b949-4c73-acbe-7c91f509d08d",
+			"type": "figure",
+			"content": {
+				"number": "3",
+				"maxwidth": "",
+				"image": "/images/l1_inf_antibiotresistens_2013fm10_images/figur3.png",
+				"title": "",
+				"text": "<p><a class=\"crossref\" id=\"98244\"></a>Antibiotikaf&ouml;rbrukningen till barn 0&ndash;4 &aring;r, &aring;ren 2007&ndash;2011, i fallande ordning efter f&ouml;rbrukningen 2011 (K&auml;lla: Apotekens Service AB, Concise)</p>",
+				"alt": "",
+				"id": "l1_15"
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "394f205d-aca3-42fb-92af-38e906ea17ea",
+			"name": "394f205d-aca3-42fb-92af-38e906ea17ea",
+			"type": "text",
+			"content": "<p><span> </span>Omkring 80&ndash;90 % av all antibiotika f&ouml;rskrivs i &ouml;ppenv&aring;rd, d&auml;r prim&auml;rv&aring;rdsl&auml;karna st&aring;r f&ouml;r ca 60 % och resten skrivs ut p&aring; sjukhusens mottagningar. &Auml;ven om sjukhusens slutenv&aring;rd st&aring;r f&ouml;r enbart ca 10 % av f&ouml;rbrukningen behandlas var 3:e patient som v&aring;rdas p&aring; sjukhus med antibiotika. Tv&aring; viktiga faktorer g&ouml;r att vi f&aring;r en &ouml;kad antibiotikaresistens hos bakterierna dels en &ouml;verf&ouml;rbrukning av dessa medel, dels en spridning pga d&aring;lig hygien, se Figur 4.</p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "0b9e9f18-3ad5-4aae-a777-3a97bc395550",
+			"name": "0b9e9f18-3ad5-4aae-a777-3a97bc395550",
+			"type": "figure",
+			"content": {
+				"number": "4",
+				"maxwidth": "",
+				"image": "/images/l1_inf_antibiotresistens_2013fm10_images/figur4.png",
+				"title": "",
+				"text": "<span style=\"font-style: italic;\"><a class=\"crossref\" id=\"53008\"></a> </span>Spridningsväg för resistenta bakterier",
+				"alt": "",
+				"id": "l1_16"
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f84148a7-ebea-4629-8c10-731dfcb33991",
+			"name": "f84148a7-ebea-4629-8c10-731dfcb33991",
+			"type": "text",
+			"content": "<h2 id=\"n--Strama\"><span> </span><a class=\"index\" id=\"1055433\" data-text=\"Strama\"></a>Strama</h2>\n<p>Strama, Strategigruppen f&ouml;r rationell antibiotikaanv&auml;ndning och minskad antibiotikaresistens, bildades 1995 (7) som ett frivilligt n&auml;tverk men fick 2006 ett uppdrag fr&aring;n regeringen. Stramas &ouml;vergripande syfte och uppdrag &auml;r att verka f&ouml;r att bevara m&ouml;jligheten till effektiv anv&auml;ndning av antibiotika. I juli 2010 &ouml;verf&ouml;rdes detta uppdrag till Smittskyddsinstitutet (SMI). Denna f&ouml;r&auml;ndring var ett led i regeringens ambition att st&auml;rka f&ouml;ruts&auml;ttningarna f&ouml;r en kontinuerlig finansiering av arbetet med dessa fr&aring;gor och att f&aring; till en mer samlad organisation nationellt.</p>\n<p class=\"indent\"><br>Vid SMI finns numera ett Stramar&aring;d som ska bist&aring; myndigheten i fr&aring;gor som r&ouml;r en rationell antibiotikaanv&auml;ndning och minskad antibiotikaresistens. Strama fick fr&aring;n starten 1995 en bred f&ouml;rankring lokalt. Inom ett &aring;r hade 21 lokala Stramagrupper bildats i landstingen. Vissa arbetade dock enbart ideellt. Regeringens satsning p&aring; patients&auml;kerhet som genomf&ouml;rs 2011&ndash;2014 st&auml;rker dock de lokala Stramagruppernas st&auml;llning. Ett villkor f&ouml;r att landstingen skulle f&aring; stimulansmedel inom ramen f&ouml;r patients&auml;kerhetssatsningen 2011 var att de instiftade en Stramagrupp med uppdrag och erfoderlig finansiering. En utv&auml;rdering fr&aring;n SMI visar att samtliga landsting uppfyllt detta.</p>\n<p class=\"indent\"><br>Sverige anv&auml;nder lite antibiotika i j&auml;mf&ouml;relse med de flesta andra l&auml;nder. Sedan b&ouml;rjan av 1990-talet har antalet recept i &ouml;ppen v&aring;rd minskat med ungef&auml;r en tredjedel, fr&aring;n 560 till 390 recept per 1&nbsp;000 inv&aring;nare och &aring;r. Den kraftigaste minskningen har skett i f&ouml;rskrivningen till sm&aring; barn, vilka &auml;r en grupp som anv&auml;nder mycket antibiotika.</p>\n<p class=\"indent\"><br>S&aring;v&auml;l kvalitativa som kvantitativa m&aring;tt anv&auml;nds f&ouml;r att f&ouml;lja antibiotikaanv&auml;ndningen nationellt och lokalt. I patients&auml;kerhetssatsningen anv&auml;nds niv&aring;n 250 recept per 1&nbsp;000 inv&aring;nare och &aring;r som m&aring;l f&ouml;r landstingen. Kvalitativa m&aring;l visar exempelvis andel av antibiotikaanv&auml;ndningen som utg&ouml;rs av rekommenderade f&ouml;rstahandsmedel.</p>\n<p class=\"indent\"><br>Antibiotikaf&ouml;rbrukningen hos &auml;ldre ligger h&ouml;gt men har minskat n&aring;got de senaste &aring;ren. En studie som inkluderade 58 &auml;ldreboenden visade att antibiotikaf&ouml;rskrivningen motsvarade 1 recept/boende och &aring;r (8). Av de antibiotikabehandlade infektionerna utgjorde urinv&auml;gsinfektioner 55 %.</p>\n<p class=\"indent\"><br>Resistensen hos E. coli f&ouml;r v&aring;ra vanligaste urinv&auml;gsantibiotika visas i Figur 5.</p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c41e8b11-56ef-465d-96d1-b000bc368d0c",
+			"name": "c41e8b11-56ef-465d-96d1-b000bc368d0c",
+			"type": "figure",
+			"content": {
+				"number": "5",
+				"maxwidth": "",
+				"image": "/images/l1_inf_antibiotresistens_2013fm10_images/figur5.png",
+				"title": "",
+				"text": "<a class=\"crossref\" id=\"39896\"></a>Antibiotikaresistens för E. coli 1996–2011 (Källa: Smittskyddsinstitutet)",
+				"alt": "",
+				"id": "l1_18"
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9e41fd09-42b2-4d74-89b1-027607bb10b5",
+			"name": "9e41fd09-42b2-4d74-89b1-027607bb10b5",
+			"type": "text",
+			"content": "<span> </span><h2 id=\"l1_19\">Referensgruppen  för antibiotikafrågor</h2>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "9295218b-e652-4c68-a95a-431e3381b321",
+			"name": "9295218b-e652-4c68-a95a-431e3381b321",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"index\" id=\"1040400\" data-text=\"SIR-systemet\"></a><a class=\"crossref\" id=\"66433\"></a>Klassificering av bakteriernas  känslighet för antibiotika",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span style=\"font-weight: bold;\"><span class=\"tab\"></span>S =</span> <span style=\"font-weight: bold;\">K&auml;nslig</span> <br>Infektionen kan f&ouml;rv&auml;ntas svara p&aring; behandling med detta antibiotikum vid dosering rekom&shy;menderad f&ouml;r denna typ av infektion. Bakte&shy;rien har inga p&aring;visade resistensmekanismer mot medlet.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span style=\"font-weight: bold;\">I = Intermedi&auml;r<br></span>Behandlingseffekten med detta medel &auml;r os&auml;ker. Bakterien har f&ouml;rv&auml;rvat l&aring;ggradig resi&shy;stens mot medlet eller har naturligt l&auml;gre k&auml;ns&shy;lighet f&ouml;r medlet. Bakterien kan f&ouml;rv&auml;ntas svara p&aring; behandling med doser som &auml;r h&ouml;gre &auml;n normaldosering.</li>\r\n</ul>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li><span style=\"font-weight: bold;\"><span class=\"tab\"></span>R = Resistent</span> <br>Behandlingseffekt med detta medel &auml;r osanno&shy;lik. Bakterien har f&ouml;rv&auml;rvat betydelsefulla resi&shy;stensmekanismer eller &auml;r naturligt resistent mot medlet.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": "l1_21"
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "4fdf500a-754c-4a6a-a83f-182ff7788d5f",
+			"name": "4fdf500a-754c-4a6a-a83f-182ff7788d5f",
+			"type": "text",
+			"content": "<p>Referensgruppen f&ouml;r Antibiotikafr&aring;gor (RAF) och dess metodgrupp RAF-M (numera NordicAST) (9) utg&ouml;r Svenska L&auml;kares&auml;llskapets och Smittskyddsinstitutets expertgrupper i antibiotikafr&aring;gor. RAFs och NordicASTs/RAF-Ms gemensamma huvuduppgift &auml;r att sammanst&auml;lla underlag f&ouml;r indelning av bakterier i k&auml;nslighetsgrupper (S, I och R) f&ouml;r antibakteriella medel, se Faktaruta 1. Utifr&aring;n detta fastst&auml;ller och reviderar RAF antibakteriella medels MIC-gr&auml;nser. RAF och NordicASTs/RAF-M samverkar med andra europeiska referensgrupper i EUCAST (European Committee for Antimicrobial Susceptibility Testing) f&ouml;r att uppn&aring; en harmonisering av resistensbest&auml;mning i Europa (10). RAF liksom Strama verkar f&ouml;r en rationell anv&auml;ndning av antibakteriella medel genom att meddela producentobunden information och genom att medverka i policyskapande &aring;tg&auml;rder.</p>\n<p><span> </span></p>\n<h2 id=\"l1_22\">Att t&auml;nka p&aring; vid f&ouml;rskrivning av <a class=\"index\" id=\"1051994\" data-text=\"antibiotika:f&#xF6;rskrivning\"></a>antibiotika</h2>\n<h3 id=\"l1_23\">Har patienten &ouml;verhuvudtaget en bakteriell infektion?</h3>\n<p>En l&aring;ng rad icke-infekti&ouml;sa tillst&aring;nd ger upphov till feber. Hit h&ouml;r t&nbsp;ex inflammatoriska ledsjukdomar och kollagenoser. Maligniteter ger ocks&aring; ofta feber liksom endokrina sjukdomar. I samband med allergiska hudreaktioner &auml;r feber vanligt men kan ocks&aring; vara det enda symtomet p&aring; en l&auml;kemedelsallergi (&rdquo;drug fever&rdquo;). Virusinfektioner tillh&ouml;r de i s&auml;rklass vanligaste infektionerna och h&auml;r ing&aring;r &auml;ven akut bronkit. Trots att den senare orsakas av virus, f&ouml;rskrivs antibiotika i &gt;&nbsp;60 % p&aring; denna diagnos.</p>\n<p class=\"indent\"><br>Fynd av bakterier &auml;r inte liktydigt med infektion. Exempelvis &auml;r sv&aring;rl&auml;kta bens&aring;r alltid koloniserade med bakterier. Frekvensen av asymtomatisk bakteriuri &ouml;kar med stigande &aring;lder och &auml;r speciellt vanlig hos v&aring;rdtagare i den kommunala &auml;ldreomsorgen d&auml;r upp till 50 % av de boende har positiv urinodling vid screening (11).</p>\n<h3 id=\"l1_24\">M&aring;ste man antibiotikabehandla alla patienter med bakteriella infektioner?</h3>\n<p>Idag finns det klar evidens f&ouml;r att de flesta bakteriella luftv&auml;gsinfektioner l&auml;ker utan antibiotika. Vid m&aring;nga diagnoser, till exempel sinuit, akut otit och streptokocktonsillit, &auml;r nyttan av antibiotikabehandling ytterst begr&auml;nsad. Man vinner t&nbsp;ex 1&ndash;2 dygns symtomfrihet med antibiotikabehandling vid streptokocktonsillit. Det r&auml;cker d&auml;rf&ouml;r inte att besvara fr&aring;gan om infektionen orsakas av bakterier eller virus utan dessutom om antibiotika beh&ouml;vs f&ouml;r att patienten ska tillfriskna och minska risken f&ouml;r komplikationer. Att samtala om dessa fr&aring;gor s&aring; att patienten f&ouml;rst&aring;r och k&auml;nner sig trygg &auml;r grunden f&ouml;r att kunna avst&aring; fr&aring;n on&ouml;dig antibiotikabehandling.</p>\n<p class=\"indent\"><br>Differentialdiagnostiken vid luftv&auml;gsinfektioner &auml;r inte l&auml;tt. I prim&auml;rv&aring;rden begr&auml;nsas den diagnostiska arsenalen i praktiken ofta till en sammanv&auml;gning av kliniska symtom och fynd med resultaten av enkla snabbtester, se kapitlet Luftv&auml;gsinfektioner hos barn och vuxna, avsnittet <a href=\"{pre}/kapitel/andningsvagar/luftvagsinfektioner_hos_barn_och_vuxna.html#m2_12\">Provtagning</a>. Kom ih&aring;g att det &auml;r patienten som ska behandlas, inte provsvaret. Ocks&aring; virusinfektioner kan ge h&ouml;ga CRP-v&auml;rden, liksom andra tillst&aring;nd som till exempel systemiska vaskuliter.</p>\n<p class=\"indent\"><br>I <a href=\"#l1_25\">Terapirekommendation 1</a>&nbsp;finns f&ouml;rslag till standardbehandling av vanliga infektioner i &ouml;ppen v&aring;rd. Figur 6 visar frekvensen av antibiotikaresistens hos de vanligaste luftv&auml;gspatogenerna i Sverige.</p>\n<div class=\"clearfix\"></div>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "45e56965-841a-4c76-b7b2-8f94dec61d54",
+			"name": "45e56965-841a-4c76-b7b2-8f94dec61d54",
+			"type": "therapy",
+			"content": {
+				"number": "1",
+				"title": "<a class=\"crossref\" id=\"72678\"></a>Antibiotikaval vid <a class=\"index\" id=\"1037541\" data-text=\"infektioner:&#xF6;ppen v&#xE5;rd;antibiotika:&#xF6;ppenv&#xE5;rdsrekommendationer;infektioner:luftv&#xE4;gar\"></a>infektioner i öppen vård<a class=\"tableFootnoteLink\" href=\"#fnote_151\"><sup>a</sup></a> ",
+				"id": "l1_25",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\"><strong>Diagnos</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>F&ouml;rstahandsval</strong></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Behandlings-</div>\r\n<div class=\"tableLine\">tid </div>\r\n<div class=\"tableLine\">(dagar)</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">PC-allergi </div>\r\n<div class=\"tableLine\">Typ 1</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"><strong>Svikt</strong></div>\r\n<div class=\"tableLine\"><strong>T&auml;nk p&aring;</strong></div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">F&ouml;rkylning</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Ej antibiotika</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Akut laryngit</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Ej antibiotika</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Akut bronkit</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Ej antibiotika</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Bakteriell sinuit</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Penicillin V</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">7&ndash;10</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Doxycyklin</div>\r\n<div class=\"tableLine\">Makrolid</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Ompr&ouml;va diagnosen</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Otit</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Penicillin V<a class=\"tableFootnoteLink\" href=\"#fnote_152\"><sup>b</sup></a></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">5</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Erytromycin</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Nasofarynxodling</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Streptokock-</div>\r\n<div class=\"tableLine\">tonsillit</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Penicillin V</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">10</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Klindamycin</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Ompr&ouml;va diagnosen</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Pneumoni</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Penicillin V</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">7</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Klindamycin</div>\r\n<div class=\"tableLine\">ev makrolid</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Om utebliven f&ouml;rb&auml;tt-</div>\r\n<div class=\"tableLine\">ring och symtom som</div>\r\n<div class=\"tableLine\">mykoplasmainfektion</div>\r\n<div class=\"tableLine\">byt till makrolid</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Hud- och mjuk-</div>\r\n<div class=\"tableLine\">delsinfektion<a class=\"tableFootnoteLink\" href=\"#fnote_153\"><sup>c</sup></a></div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Tv&aring;l och vatten</div>\r\n<div class=\"tableLine\">Retapamulin</div>\r\n<div class=\"tableLine\">Penicillin V</div>\r\n<div class=\"tableLine\">Flukloxacillin</div>\r\n<div class=\"tableLine\">Cefadroxil (barn)</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\"></div>\r\n<div class=\"tableLine\">5</div>\r\n<div class=\"tableLine\">7&ndash;10</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n<div class=\"tableLine\">Klindamycin</div>\r\n<div class=\"tableLine\">Fusidinsyra</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Icke-farmakologisk</div>\r\n<div class=\"tableLine\">behandling (t&nbsp;ex kom-</div>\r\n<div class=\"tableLine\">pression, s&aring;rreng&ouml;ring)</div>\r\n<div class=\"tableLine\">Adekvat dos?</div>\r\n<div class=\"tableLine\">Vuxen: flukloxacillin 1&nbsp;g</div>\r\n<div class=\"tableLine\">3&nbsp;g&aring;nger/dygn</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<div class=\"tableLine\">Borrelios &ndash; </div>\r\n<div class=\"tableLine\">erythema migrans</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Penicillin V</div>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">10</div>\r\n<div class=\"tableLine\">5</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">Doxycyklin</div>\r\n<div class=\"tableLine\">Azitromycin (barn</div>\r\n<div class=\"tableLine\">&lt;&nbsp;8 &aring;r)</div>\r\n</td>\r\n<td>\r\n<div class=\"tableLine\">&nbsp;</div>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"5\" class=\"footNotes\">\r\n<div class=\"tableFootnote\" id=\"fnote_151\">a. F&ouml;r behandling av urinv&auml;gsinfektioner se kapitlet Urinv&auml;gsinfektioner, avsnittet <a href=\"{pre}/kapitel/nefrologi-urologi/urinvagsinfektioner.html#g3_14\">Antibiotika f&ouml;r peroral behandling av UVI</a>.</div>\r\n<div class=\"tableFootnote\" id=\"fnote_152\">b.&nbsp;Avvakta med antibiotika till barn 1&ndash;12 &aring;r utan komplicerande faktorer eller perforerad otit. Penicillin V till barn &lt;&nbsp;1 &aring;r och till vuxna.</div>\r\n<div class=\"tableFootnote\" id=\"fnote_153\">c.&nbsp;Inf&ouml;r valet av antibiotika i olika behandlingssituationer, se referens <a href=\"http://www.lakemedelsverket.se/upload/halso-och-sjukvard/behandlingsrekommendationer/Rek%20-%20farmakologisk%20beh%20av%20bakteriella%20hud-%20och%20mjukdelsinfektioner.pdf\" target=\"_blank\" class=\"linkOut\">.</a></div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "80489850-cdac-420e-a2bf-959d195579ac",
+			"name": "80489850-cdac-420e-a2bf-959d195579ac",
+			"type": "figure",
+			"content": {
+				"number": "6",
+				"maxwidth": "",
+				"image": "/images/l1_inf_antibiotresistens_2013fm10_images/figur6.png",
+				"title": "",
+				"text": "<p><a class=\"crossref\" id=\"48599\"></a>Resistensm&ouml;nster f&ouml;r olika bakterier<span class=\"tabstop\"></span>A.<span class=\"tab\"></span>Resistens (%) mot vanliga luftv&auml;gsantibiotika f&ouml;r pneumokocker. Alla pneumokocker med nedsatt k&auml;nslighet f&ouml;r penicillin ing&aring;r.<span class=\"tabstop\"></span>B.<span class=\"tab\"></span>Resistens (%) mot vanliga luftv&auml;gsantibiotika f&ouml;r streptokocker grupp A.<span class=\"tabstop\"></span>C.<span class=\"tab\"></span>Resistens (%) mot vanliga luftv&auml;gsantibiotika f&ouml;r Haemophilus influenzae. Kromosomal inneb&auml;r f&ouml;r&auml;ndring i de penicillinbindande proteinerna. (K&auml;lla: Smittskyddsinstitutet)</p>",
+				"alt": "",
+				"id": "l1_26"
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f12bd207-0cb5-4bc7-88bf-63df999d135e",
+			"name": "f12bd207-0cb5-4bc7-88bf-63df999d135e",
+			"type": "text",
+			"content": "<p><span> </span></p>\n<h3 id=\"l1_27\">Vilka bakteriella infektioner kr&auml;ver ett snabbt omh&auml;ndertagande?</h3>\n<p>Det f&ouml;rekommer fortfarande infektionssjukdomar, ocks&aring; i &ouml;ppen v&aring;rd, med hastigt och fulminant f&ouml;rlopp, d&auml;r tidig antibiotikaterapi &auml;r livsavg&ouml;rande. Det g&auml;ller framf&ouml;r allt infektioner hos patienter med nedsatt immunf&ouml;rsvar eller splenektomerade patienter samt vid sv&aring;ra pneumokockpneumonier, nekrotiserande fasciiter och bakteriella meningiter. Patienten som inom loppet av ett par timmar insjuknar i fulminant infektion har inte alltid fokala symtom och har inte heller hunnit f&aring; en stegrad CRP. Patienter med p&aring;verkat allm&auml;ntillst&aring;nd, med eller utan chocksymtom, ska remitteras till sjukhus s&aring; fort som m&ouml;jligt. Om det &auml;r l&aring;ngt till n&auml;rmaste sjukhus b&ouml;r antibiotika s&auml;ttas in f&ouml;re inremitteringen, g&auml;rna efter telefonkontakt med n&auml;rmaste sjukhus, se kapitlet Akuta sv&aring;ra infektioner &ndash; initial behandling, avsnittet <a href=\"{pre}/kapitel/akutmedicin/akuta_svara_infektioner-initial_behandling.html#a5_17\">Hur uppt&auml;cks en patient med sv&aring;r infektion?</a>.</p>\n<h3 id=\"l1_28\">Orsakas infektionen av de mikroorganismer som isolerats p&aring; laboratoriet?</h3>\n<p>I de fall man tagit bakteriologiska odlingar m&aring;ste svaren p&aring; dessa v&auml;rderas kritiskt. Det &auml;r patienten och inte odlingssvaret som ska behandlas med antibiotika och man m&aring;ste ha k&auml;nnedom om den normala bakteriefloran! V&auml;xt av bakterier i nasofarynxodling hos ett barn &auml;r ett normalt fynd och inte liktydigt med att barnet har en bakteriell luftv&auml;gsinfektion.</p>\n<p class=\"indent\"><br>Renkultur av till exempel pneumokocker eller Haemophilus influenzae i nasofarynx hos ett barn med recidiverande otit ger dock viss v&auml;gledning f&ouml;r terapin. F&ouml;rekomst av Gramnegativa bakterier i s&aring;rsekret, t&nbsp;ex fr&aring;n bens&aring;r, m&aring;ste v&auml;rderas kritiskt utifr&aring;n den kliniska bilden. Det &auml;r ofta en kolonisation av s&aring;rytan fr&aring;n patientens normalflora eller omgivningen. Vid djupg&aring;ende infektioner, abscessbildning och feber eller om patienten har nedsatt infektionsf&ouml;rsvar f&aring;r dock ett s&aring;dant odlingsfynd st&ouml;rre betydelse f&ouml;r antibiotikavalet.</p>\n<p class=\"indent\"><br>Provtagningstekniken vid urinodlingar &auml;r av avg&ouml;rande betydelse f&ouml;r resultatet av odlingen. Om provet inte h&aring;lls tillr&auml;ckligt kylt under transport till laboratoriet kan en tillv&auml;xt ske av f&ouml;roreningar fr&aring;n uretrafloran och odlingen blir d&aring; falskt positiv.</p>\n<h3 id=\"l1_29\"><a class=\"crossref\" id=\"18643\"></a>Vilket antibiotikum ska anv&auml;ndas?</h3>\n<p>I flertalet fall m&aring;ste antibiotikabehandlingen s&auml;ttas in utan att man f&aring;tt svar p&aring; f&ouml;reg&aring;ende mikrobiologisk diagnostik, s&nbsp;k empirisk terapi. En grundregel ska vara att v&auml;lja antibiotikum med s&aring; riktat spektrum som m&ouml;jligt. Det &auml;r d&auml;rf&ouml;r viktigt att det lokala mikrobiologiska laboratoriet regelbundet studerar resistenssituationen i upptagningsomr&aring;det och &aring;terf&ouml;r denna kunskap till l&auml;kare i &ouml;ppen och sluten v&aring;rd f&ouml;r att underl&auml;tta valet av empirisk terapi. Man m&aring;ste ocks&aring; ha k&auml;nnedom om den f&ouml;rv&auml;ntade etiologin, vilket &auml;r relativt l&auml;tt n&auml;r det g&auml;ller vanliga samh&auml;llsf&ouml;rv&auml;rvade infektioner som pneumoni, otit, tonsillit och urinv&auml;gsinfektion. Det finns dock undantag till den &rdquo;smala&rdquo; v&auml;gen, till exempel behandling av sv&aring;rt sjuka septiska patienter, patienter med misst&auml;nkt endokardit och behandling av patienter med nedsatt immunf&ouml;rsvar.</p>\n<p class=\"indent\"><br>F&ouml;rutom det antibakteriella spektrumet b&ouml;r en rad andra faktorer v&auml;gas in vid antibiotikavalet, framf&ouml;r allt biverkningsprofilen, de farmakokinetiska egenskaperna (till exempel absorptionsgraden) och kostnaden (12).</p>\n<h3 id=\"l1_30\">Ekologiska aspekter</h3>\n<p>Med <a class=\"index\" id=\"1016269\" data-text=\"antibiotika:ekologi\"></a>ekologiska effekter av antibiotikabehandling menas den rubbning som &aring;stadkoms i den naturliga balansen mellan mikroorganismerna i normalfloran. Vid varje antibiotikabehandling p&aring;verkas inte bara de sjukdomsalstrande bakterierna utan ocks&aring; normalfloran. Ofullst&auml;ndig absorption, brett antibakteriellt spektrum, effekt mot anaeroba bakterier, stabilitet mot betalaktamaser fr&aring;n tarmbakterier samt bili&auml;r uts&ouml;ndring &auml;r n&aring;gra faktorer som ofta p&aring;verkar normalfloran i tarmen negativt.</p>\n<p class=\"indent\"><br>Penicillin&nbsp;V absorberas till enbart ca 50 %. Det som inte absorberas bryts emellertid ner av tarmflorans egna betalaktamaser (ofta fr&aring;n bakteroidesarter), vilket d&aring; minskar graden av p&aring;verkan p&aring; den fekala floran. Bredden p&aring; medlets antibakteriella spektrum &auml;r ocks&aring; av betydelse f&ouml;r hur kraftig den ekologiska p&aring;verkan blir. F&ouml;rutom tarmfloran p&aring;verkas &auml;ven den normala svalgfloran av vissa typer av antibiotika. Mixturer och tabletter kan &auml;ven vid en mycket kort kontakt med munslemhinnan, i samband med sv&auml;ljning, ge upphov till h&ouml;ga koncentrationer i saliven och st&ouml;ra den normala balansen. Ett annat exempel &auml;r antibiotika, s&auml;rskilt amoxicillin, som p&aring;verkar den vaginala floran kraftigt och ger &ouml;verv&auml;xt av candida i underlivet. Det &auml;r ocks&aring; v&auml;lk&auml;nt att all antibiotikabehandling kan leda till &ouml;verv&auml;xt av Clostridium difficile i tarmen, vilket i allvarliga fall kan ge upphov till pseudomembran&ouml;s kolit. Effekten av probiotika (till exempel olika laktobaciller) &auml;r inte vetenskapligt bevisad.</p>\n<p class=\"indent\"><br>De ekologiska effekterna av en antibiotikabehandling kan ocks&aring; gynna spridningen av resistenta bakterier. Se vidare kapitlet L&auml;kemedel i milj&ouml;n, avsnittet <a href=\"{pre}/kapitel/lakemedelsanvandning/lakemedel_i_miljon.html#x7_13\">Antibiotika &ndash; resistens</a>.</p>\n<h3 id=\"l1_31\"><a class=\"crossref\" id=\"65187\"></a>Allergiaspekter</h3>\n<p>&Ouml;verk&auml;nslighet mot penicillin och andra betalaktamantibiotika tillh&ouml;r de vanligaste allergiska reaktionerna mot l&auml;kemedel. Praktisk handl&auml;ggning av penicillinallergi beskrivs i kapitlet Allergiska och immunologiska tillst&aring;nd, <a href=\"{pre}/kapitel/allergiska-och-immunologiska-tillstand/allergiska-och-immunologiska-tillstand.html#p1_54\">Terapirekommendation 1. Praktisk handl&auml;ggning av penicillinreaktioner</a>. Se &auml;ven kapitlet <a href=\"{pre}/kapitel/lakemedelsanvandning/lakemedelsbiverkningar.html#Lakemedelsbiverkningar\">L&auml;kemedelsbiverkningar</a>.<span> </span></p>\n<h2 id=\"l1_32\"><a class=\"index\" id=\"1016273\" data-text=\"antibiotika:dosering\"></a>Doseringsrekommendationer</h2>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "a1a1b3c6-77ca-4854-a2ed-0a2cc640da7e",
+			"name": "a1a1b3c6-77ca-4854-a2ed-0a2cc640da7e",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "<a class=\"crossref\" id=\"45586\"></a>Dosering av penicillin&nbsp;V",
+				"text": "<table><tbody><tr><td><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li><span class=\"tab\"></span>Med tanke på den korta halveringstiden av penicillin och att det är T&nbsp;&gt;&nbsp;MIC som styr effekten bör preparatet doseras minst 3&nbsp;gånger/dygn. </li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li><span class=\"tab\"></span>Normal dosering av <a class=\"index\" id=\"1055556\" data-text=\"penicillin V:tonsillit\"></a>penicillin&nbsp;V vid tonsillit är till barn 12,5&nbsp;mg/kg kroppsvikt 3&nbsp;gånger/dygn och till vuxna 1&nbsp;g 3&nbsp;gånger/dygn. Vid otit och sinuit blir doseringen 25&nbsp;mg/kg kroppsvikt 3&nbsp;gånger/ dygn till barn eller 1,6&nbsp;g 3&nbsp;gånger/dygn till <br>vuxna. <br>Se vidare produktresumé/Fass.<br></li></ul></td></tr></tbody></table>",
+				"id": "l1_34"
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5c7935ad-093b-4db6-ab6a-4df38b68093b",
+			"name": "5c7935ad-093b-4db6-ab6a-4df38b68093b",
+			"type": "text",
+			"content": "<p>Studier ang&aring;ende antibiotikas farmakokinetik och farmakodynamik, dvs hur antibiotika ska doseras (doseringsintervall och dos), har under de senaste &aring;ren visat att olika klasser av antibiotika &auml;r beroende av olika farmakokinetiska variabler f&ouml;r att uppn&aring; b&auml;sta effekt. Studierna &auml;r framf&ouml;r allt gjorda p&aring; <span>djur</span> men de humanstudier som finns, st&ouml;der data man har f&aring;tt fram i de olika <span>djur</span>modellerna. Principerna verkar g&auml;lla f&ouml;r b&aring;de k&auml;nsliga och resistenta bakterier (framf&ouml;r allt visat f&ouml;r penicillink&auml;nsliga och resistenta pneumokocker) (9).</p>\n<p class=\"indent\"><br>N&auml;r det g&auml;ller dosering av betalaktamantibiotika (det vill s&auml;ga penicilliner, cefalosporiner och karbapenemer) &auml;r effekten beroende p&aring; den tid den fria (icke proteinbundna) serumkoncentrationen ligger &ouml;ver den minsta h&auml;mmande koncentrationen (<a class=\"index\" id=\"1023410\" data-text=\"MIC;antibiotika:MIC-v&#xE4;rden\"></a>MIC) f&ouml;r den aktuella bakterien (T&nbsp;&gt;&nbsp;MIC). Hur l&aring;ng T&nbsp;&gt;&nbsp;MIC ska vara &auml;r med stor sannolikhet beroende p&aring; hur allvarlig infektionen &auml;r, men f&ouml;r penicilliner och cefalosporiner har T&nbsp;&gt;&nbsp;MIC p&aring; 40&ndash;50 % av doseringsintervallet visats ge maximal effekt vid behandling av immunkompetenta patienter med otit och sinuit. Det &auml;r d&auml;remot viktigt att koncentrationer &ouml;ver MIC uppn&aring;s under hela doseringsintervallet vid endokardit och infektioner hos patienter med nedsatt immunf&ouml;rsvar.</p>\n<p class=\"indent\"><br>Att T&nbsp;&gt;&nbsp;MIC &auml;r korrelerad till effekt f&ouml;r betalaktamantibiotika beror delvis p&aring; en tidsberoende avd&ouml;dning (vilken allts&aring; inte &auml;r koncentrationsberoende) f&ouml;r dessa l&auml;kemedel. En h&ouml;jning av dosen leder givetvis till en samtidig f&ouml;rl&auml;ngning av T&nbsp;&gt;&nbsp;MIC, men eftersom t&nbsp;ex penicillin V har en halveringstid p&aring; 30 min blir denna tidsvinst mycket marginell. Vid dosering av penicillin V till patienter med normal njurfunktion ger 1&nbsp;g 2 g&aring;nger/dygn T&nbsp;&gt;&nbsp;MIC p&aring; ca 25 %, 1&nbsp;g 3 g&aring;nger/dygn ger T&nbsp;&gt;&nbsp;MIC p&aring; 38 % och 1&nbsp;g 4 g&aring;nger/dygn ger T&nbsp;&gt;&nbsp;MIC p&aring; 50 % f&ouml;r en k&auml;nslig pneumokock. Se &auml;ven Faktaruta 2.</p>\n<p><span> <br></span>Den minsta vuxendosen av isoxazolylpenicillinerna (flukloxacillin) b&ouml;r inte understiga 1&nbsp;g 3 g&aring;nger/dygn.</p>\n<p class=\"indent\"><br>Den farmakokinetiska parameter som b&auml;st korrelerar till god effekt f&ouml;r makroliderna (erytromycin, roxitromycin samt klaritromycin) &auml;r troligen ocks&aring; T&nbsp;&gt;&nbsp;MIC. Undantag &auml;r azitromycin, som &auml;r beroende av ytan under serumkoncentrationskurvan (AUC) i f&ouml;rh&aring;llande till MIC; AUC/MIC. Det sistn&auml;mnda g&auml;ller &auml;ven f&ouml;r kinolonerna och aminoglykosiderna, d&auml;r AUC/MIC men ocks&aring; C<sub>max</sub>/MIC styr effekten. F&ouml;r aminoglykosiderna har studier inte bara visat b&auml;ttre effekt med 1 dos/dygn utan &auml;ven att biverkningar i form av njurtoxicitet minskade. C<sub>max</sub>, AUC, MIC och T&nbsp;&gt;&nbsp;MIC illustreras i Figur 7.</p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "97460ad8-abf0-42b8-b3e8-b214d890336e",
+			"name": "97460ad8-abf0-42b8-b3e8-b214d890336e",
+			"type": "figure",
+			"content": {
+				"number": "7",
+				"maxwidth": "",
+				"image": "/images/l1_inf_antibiotresistens_2013fm10_images/figur7.png",
+				"title": "",
+				"text": "<a class=\"crossref\" id=\"44330\"></a>Farmkokinetiska/farmakodynamiska index: C<sub>max</sub>/MIC, AUC/MIC samt T&nbsp;&gt;&nbsp;MIC",
+				"alt": "",
+				"id": "l1_35"
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d0e8167d-28e7-44e9-ad8e-f2f6bcd1f416",
+			"name": "d0e8167d-28e7-44e9-ad8e-f2f6bcd1f416",
+			"type": "text",
+			"content": "<p><span> </span></p>\n<h3 id=\"l1_36\">Behandlingstidens l&auml;ngd</h3>\n<p>A<a class=\"index\" id=\"1055438\" data-text=\"antibiotika:behandlingstidens l&#xE4;ngd\"></a>ntibiotikastudier i Sverige och andra l&auml;nder har visat att oftast &auml;r behandlingstiden med antibiotika alldeles f&ouml;r l&aring;ng. Rekommenderad behandlingstid &auml;r 5 dagar f&ouml;r en prim&auml;r otit (om den ska behandlas), 10 dagar f&ouml;r tonsillit, 5 dagar f&ouml;r nedre UVI hos kvinnor (nitrofurantoin och pivmecillinam) och 3 dagar f&ouml;r trimetoprim.</p>\n<p class=\"indent\"><br>En holl&auml;ndsk studie som publicerades f&ouml;r n&aring;got &aring;r sedan visade att en 3-dagars behandling med amoxicillin f&ouml;r en icke sjukhuskr&auml;vande pneumoni var lika bra som en 8-dagarskur (13). Nyligen kom ytterligare en studie men denna g&aring;ng p&aring; patienter med sv&aring;r pneumoni d&auml;r en 7-dagars behandling var lika bra som en l&auml;ngre behandling (14). Varje dos med antibiotika som inte &auml;r n&ouml;dv&auml;ndig &ouml;kar bara resistensen ytterligare!</p>\n<h2 id=\"l1_37\"><a class=\"index\" id=\"1030584\" data-text=\"antibiotika:se antibiotikaprofylax&lt;$nopage&gt;;antibiotikaprofylax\"></a><a class=\"crossref\" id=\"83937\"></a>Antibiotikaprofylax vid operativa ingrepp</h2>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e35844d2-8825-4778-8e5d-cafecd9251f4",
+			"name": "e35844d2-8825-4778-8e5d-cafecd9251f4",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "<a class=\"crossref\" id=\"97487\"></a>Antibiotikaprofylax vid <a class=\"index\" id=\"1055467\" data-text=\"operation:antibiotikaprofylax;antibiotika:operationer\"></a>operatio&shy;ner",
+				"text": "<table><tbody><tr><td><p>Idealiskt preparat för antibiotikaprofylax bör ha nedanstående egenskaper:</p><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Spektrum som täcker flertalet (inte alla!) av de viktigaste potentiella patogenerna</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Ekologiskt gynnsamt</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Minskar antalet bakterier, men selekterar inte fram någon speciell bakterieart</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Ger goda serum- och vävnadskoncentrationer</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Kostnadseffektivt</li></ul><ul style=\"padding:0px; margin:0 0 8px 15px;\"><li>Inte är preparat som används för behandling av postoperativ infektion</li></ul></td></tr></tbody></table>",
+				"id": "l1_39"
+			},
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "de419317-2ed6-4c4e-9694-81a02348524a",
+			"name": "de419317-2ed6-4c4e-9694-81a02348524a",
+			"type": "text",
+			"content": "<p>Antibiotikaprofylax vid kirurgiska ingrepp syftar till att minska frekvensen postoperativa infektioner genom att minska antalet bakterier i operationsområdet samt förhindra spridning av bakterier i vävnaderna (15,16). </p><p class=\"indent\">Idag utgör antibiotikaprofylax ca 13&#37; av all antibiotikaanvändning på sjukhusen. Med hänsyn till såväl kostnader som risk för uppkomst av antibiotikaresistens är det viktigt att profylaxen ges på strikta indikationer, med rätt antibiotikum och vid rätt tidpunkt. Se Faktaruta 3. Se även kapitlet Munhålans sjukdomar, avsnittet Antibiotikaprofylax vid ingrepp i munhålan <a href=\"/kapitel/andningsvagar/munhalans_sjukdomar.html#11015\" class=\"btn btn-primary btn-mini pageLink\"><i class=\"fa fa-arrow-right fa-white\"></i></a>, samt Läkemedelsverkets behandlingsrekommendation Indikationer för antibiotikaprofylax i tandvården (17).</p><span> </span><h3 id=\"l1_40\"><a class=\"index\" id=\"1056315\" data-text=\"antibiotikaprofylax\"></a>Profylaxens längd</h3><p>I prospektiva, randomiserade studier har multipla antibiotikadoser (med få undantag) inte visat bättre resultat än enkeldosregimer (16). </p><p class=\"indent\">För att minska risken för uppkomst av antibiotikaresistens samt för att minska kostnaderna, bör således profylax med enkeldos eftersträvas. En punktprevalensstudie (PPS) som genomfördes i&nbsp;november 2003 och 2004, i Stramas regi, visade att man i över 60&#37; av fallen gav profylax med mer än 3&nbsp;doser (inkluderande gastrointestinal kirurgi, där engångsdos rekommenderas). Efter en kampanj mot detta minskade flerdosförfarandet till 16&#37; 2006 men ökade sedan igen 2008 till 22&#37;.</p><h3 id=\"l1_41\">Tidpunkt för administration</h3><p>Traditionellt ges profylaxen oftast intravenöst. De preparat som huvudsakligen används (cefalosporiner, penicilliner) har oftast kort halveringstid på 1–2 timmar, varför dessa bör ges 0,5–1 timme före ingreppet. Ett flertal studier har visat att om profylax med dessa preparat ges 2 timmar före, alternativt efter påbörjat ingrepp, ökar infektionsfrekvensen betydligt. </p><p class=\"indent\">För att undvika problemet med att patienten får profylaxen vid fel tidpunkt kan man använda antibiotika med lång halveringstid. Exempel på preparat med god absorption och lång halveringstid är trimetoprim-sulfa, metronidazol och doxycyklin. Dessa preparat ges med fördel peroralt på operationsdagens morgon (undantag är ingrepp i övre gastrointestinalkanalen, där intravenös administration är att föredra) (16).</p><h3 id=\"l1_42\">Dosens storlek</h3><p>Normalt ges samma dos vid profylax som vid behandling. Dosjustering vid nedsatt njurfunktion är oftast inte aktuell, eftersom endast en dos ges i normalfallet.</p><h2 class=\"referenceHeader\" id=\"l1_43\">Referenser</h2>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "553e3819-921c-4b50-aae8-c04ad9a87e5f",
+			"name": "553e3819-921c-4b50-aae8-c04ad9a87e5f",
+			"type": "references",
+			"content": "<ol class=\"references\"><li id=\"reference_1\">Handläggning av faryngotonsilliter i öppenvård  – ny rekommendation. <br><a href=\"http://www.lakemedelsverket.se/malgrupp/Halso---sjukvard/Behandlings--rekommendationer/Behandlingsrekommendation---listan/Faryngotonsilliter-i-oppen-vard/\" target=\"_blank\" class=\"linkOut\">Information från Läkemedelsverket. 2012:(23)6.</a> </li>\n<li id=\"reference_2\">Läkemedelsbehandling av rinosinuit –  Behandlingsrekommendation. <br><a href=\"http://www.lakemedelsverket.se/upload/halso-och-sjukvard/behandlingsrekommendationer/rinosinuit.pdf\" target=\"_blank\" class=\"linkOut\">Information från Läkemedels verket. 2005:(16)3.</a></li>\n<li id=\"reference_3\">Nedre urinvägsinfektion hos kvinnor –  Behandlingsrekommendation. <br><a href=\"http://www.lakemedelsverket.se/upload/halso-och-sjukvard/behandlingsrekommendationer/UVI_rek.pdf\" target=\"_blank\" class=\"linkOut\">Information från Läkemedelsverket. 2007:(18)2.</a> </li>\n<li id=\"reference_4\">Farmakologisk behandling av bakteriella hud-  och mjukdelsinfektioner – Ny rekommendation. <a href=\"http://www.lakemedelsverket.se/upload/halso-och-sjukvard/behandlingsrekommendationer/Rek%20-%20farmakologisk%20beh%20av%20bakteriella%20hud-%20och%20mjukdelsinfektioner.pdf\" target=\"_blank\" class=\"linkOut\">Information från Läkemedelsverket. 2009:(20)5.</a> </li>\n<li id=\"reference_5\"> Farmakologisk behandling av nedre luftvägsinfektioner i öppen vård. <br><a href=\"http://www.lakemedelsverket.se/upload/halso-och-sjukvard/behandlingsrekommendationer/Rev_NLI-rek_091202.pdf\" target=\"_blank\" class=\"linkOut\">Information från Läkemedelsverket. 2008:(19)3.</a> </li>\n<li id=\"reference_6\"> Otit (akut mediaotit – AOM) – Ny rekommendation. <br><a href=\"http://www.lakemedelsverket.se/upload/halso-och-sjukvard/behandlingsrekommendationer/20101011_rev_Rek_otit.pdf\" target=\"_blank\" class=\"linkOut\">Information från Läkemedelsverket. 2010:(21)5.</a> </li>\n<li id=\"reference_7\"><a href=\"http://www.strama.se/dyn//,12,11.html\" target=\"_blank\" class=\"linkOut\">www.strama.org</a>  </li>\n<li id=\"reference_8\"><a href=\"http://www.srga.org/\" target=\"_blank\" class=\"linkOut\">www.srga.org</a> <a></a> </li>\n<li id=\"reference_9\">Pettersson E, Vernby A, Mölstad S, Lundborg CS.  Infections and antibiotic prescribing in Swedish nursing homes: a cross-sectional study. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/?term=pettersson+e+antibiotic+swedish+2008\" target=\"_blank\" class=\"linkOut\">Scand J Infect Dis. 2008;40:393–8.</a>  </li>\n<li id=\"reference_10\"><a href=\"http://www.eucast.org\" target=\"_blank\" class=\"linkOut\">www.eucast.org</a> <a></a> </li>\n<li id=\"reference_11\"><a href=\"http://www.infektion.net\" target=\"_blank\" class=\"linkOut\">www.infektion.net</a> <a></a>  – Vårdprogram urinvägsinfektioner</li>\n<li id=\"reference_12\">Odenholt I. <a href=\"http://www.lakemedelsboken.se/atc/J01-D01AA-G01AA-J02AA-J04AB-A07AA-S01AA-R02AB\" data-atcid=\"J01,D01AA,G01AA,J02AA,J04AB,A07AA,S01AA,R02AB\" data-atctitles=\"Antiinfektiva_medel_f&#xF6;r_systemiskt_bruk--Antibakteriella_medel_f&#xF6;r_systemiskt_bruk##Hudpreparat--Svampmedel_f&#xF6;r_utv&#xE4;rtes_bruk--Svampmedel_f&#xF6;r_utv&#xE4;rtes_bruk--Antibiotika##Urin-_och_k&#xF6;nsorgan_samt_k&#xF6;nshormoner--Antiinfektiva_och_antiseptiska_medel_f&#xF6;r_gynekologiskt_bruk--Antiinfektiva_och_antiseptiska_medel,_exkl._kombinationer_med_kortikosteroider--Antibiotika##Antiinfektiva_medel_f&#xF6;r_systemiskt_bruk--Antimykotika_f&#xF6;r_systemiskt_bruk--Antimykotika_f&#xF6;r_systemiskt_bruk--Antibiotika##Antiinfektiva_medel_f&#xF6;r_systemiskt_bruk--Medel_mot_mykobakterier--Medel_f&#xF6;r_behandling_av_tuberkulos--Antibiotika##Matsm&#xE4;ltningsorgan_och_&#xE4;mnesoms&#xE4;ttning--Antidiarroika,_intestinala_antiinflammatoriska_och_antiinfektiva_medel--Medel_vid_tarminfektioner--Antibiotika##&#xD6;gon_och_&#xF6;ron--Medel_vid_&#xF6;gonsjukdomar--Antiinfektiva_medel--Antibiotika##Andningsorgan--Medel_vid_sjukdomar_i_strupe_och_svalg--Medel_vid_sjukdomar_i_strupe_och_svalg--Antibiotika\" class=\"lb inlineGenerica text\">Antibiotika</a>, terapi och profylax. In:  Iwarsson S, Norrby R, red. Infektionsmedicin. 5:e utgåvan. Sundbyberg: Säve förlag; 2011. s&nbsp;80–106. ISBN 9789197810838.</li>\n<li id=\"reference_13\">el Moussaoui R, de Borgie CA, van den Broek P,  Hustinx WN, Bresser P, van den Berk GE, et al. Effectiveness of discontinuing antibiotic treatment after three days versus eight days in mild to moderate-severe community acquired pneumonia: randomised, double blind study. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed/16763247\" target=\"_blank\" class=\"linkOut\">BMJ. 2006;332:1355.</a>  </li>\n<li id=\"reference_14\">Choudhury G, Mandal P, Singanayagam A, Akram  AR, Chalmers JD and Hill AT. Seven-day antibiotic courses have similar efficacy to prolonged courses in severe community-acquired pneumina – a propensity-adjusted analysis. <br><a href=\"http://www.ncbi.nlm.nih.gov/pubmed?term=choudhury%20g%202011%20prolonged\" target=\"_blank\" class=\"linkOut\">Clin Microbiol Infect. 2011;17:1852–8.</a> </li>\n<li id=\"reference_15\"> <a href=\"http://www.internetmedicin.se\" target=\"_blank\" class=\"linkOut\">www.internetmedicin.se</a>  – Odenholt I. <a href=\"http://www.lakemedelsboken.se/atc/J01-D01AA-G01AA-J02AA-J04AB-A07AA-S01AA-R02AB\" data-atcid=\"J01,D01AA,G01AA,J02AA,J04AB,A07AA,S01AA,R02AB\" data-atctitles=\"Antiinfektiva_medel_f&#xF6;r_systemiskt_bruk--Antibakteriella_medel_f&#xF6;r_systemiskt_bruk##Hudpreparat--Svampmedel_f&#xF6;r_utv&#xE4;rtes_bruk--Svampmedel_f&#xF6;r_utv&#xE4;rtes_bruk--Antibiotika##Urin-_och_k&#xF6;nsorgan_samt_k&#xF6;nshormoner--Antiinfektiva_och_antiseptiska_medel_f&#xF6;r_gynekologiskt_bruk--Antiinfektiva_och_antiseptiska_medel,_exkl._kombinationer_med_kortikosteroider--Antibiotika##Antiinfektiva_medel_f&#xF6;r_systemiskt_bruk--Antimykotika_f&#xF6;r_systemiskt_bruk--Antimykotika_f&#xF6;r_systemiskt_bruk--Antibiotika##Antiinfektiva_medel_f&#xF6;r_systemiskt_bruk--Medel_mot_mykobakterier--Medel_f&#xF6;r_behandling_av_tuberkulos--Antibiotika##Matsm&#xE4;ltningsorgan_och_&#xE4;mnesoms&#xE4;ttning--Antidiarroika,_intestinala_antiinflammatoriska_och_antiinfektiva_medel--Medel_vid_tarminfektioner--Antibiotika##&#xD6;gon_och_&#xF6;ron--Medel_vid_&#xF6;gonsjukdomar--Antiinfektiva_medel--Antibiotika##Andningsorgan--Medel_vid_sjukdomar_i_strupe_och_svalg--Medel_vid_sjukdomar_i_strupe_och_svalg--Antibiotika\" class=\"lb inlineGenerica text\">Antibiotika</a>profylax</li>\n<li id=\"reference_16\">SBU. <a href=\"http://www.lakemedelsboken.se/atc/J01-D01AA-G01AA-J02AA-J04AB-A07AA-S01AA-R02AB\" data-atcid=\"J01,D01AA,G01AA,J02AA,J04AB,A07AA,S01AA,R02AB\" data-atctitles=\"Antiinfektiva_medel_f&#xF6;r_systemiskt_bruk--Antibakteriella_medel_f&#xF6;r_systemiskt_bruk##Hudpreparat--Svampmedel_f&#xF6;r_utv&#xE4;rtes_bruk--Svampmedel_f&#xF6;r_utv&#xE4;rtes_bruk--Antibiotika##Urin-_och_k&#xF6;nsorgan_samt_k&#xF6;nshormoner--Antiinfektiva_och_antiseptiska_medel_f&#xF6;r_gynekologiskt_bruk--Antiinfektiva_och_antiseptiska_medel,_exkl._kombinationer_med_kortikosteroider--Antibiotika##Antiinfektiva_medel_f&#xF6;r_systemiskt_bruk--Antimykotika_f&#xF6;r_systemiskt_bruk--Antimykotika_f&#xF6;r_systemiskt_bruk--Antibiotika##Antiinfektiva_medel_f&#xF6;r_systemiskt_bruk--Medel_mot_mykobakterier--Medel_f&#xF6;r_behandling_av_tuberkulos--Antibiotika##Matsm&#xE4;ltningsorgan_och_&#xE4;mnesoms&#xE4;ttning--Antidiarroika,_intestinala_antiinflammatoriska_och_antiinfektiva_medel--Medel_vid_tarminfektioner--Antibiotika##&#xD6;gon_och_&#xF6;ron--Medel_vid_&#xF6;gonsjukdomar--Antiinfektiva_medel--Antibiotika##Andningsorgan--Medel_vid_sjukdomar_i_strupe_och_svalg--Medel_vid_sjukdomar_i_strupe_och_svalg--Antibiotika\" class=\"lb inlineGenerica text\">Antibiotika</a>profylax vid kirurgiska ingrepp.  En systematisk litteraturöversikt. Stockholm: Statens beredning för medicinsk utvärdering (SBU); 2010. SBU-rapport nr 200. ISBN&nbsp;9789185413362. <a href=\"http://www.sbu.se/sv/Publicerat/Gul/Antibiotikaprofylax-vid-kirurgiska-ingrepp/\" target=\"_blank\" class=\"linkOut\">www.sbu.se</a> .</li>\n<li id=\"reference_17\">Indikationer för <a href=\"http://www.lakemedelsboken.se/atc/J01-D01AA-G01AA-J02AA-J04AB-A07AA-S01AA-R02AB\" data-atcid=\"J01,D01AA,G01AA,J02AA,J04AB,A07AA,S01AA,R02AB\" data-atctitles=\"Antiinfektiva_medel_f&#xF6;r_systemiskt_bruk--Antibakteriella_medel_f&#xF6;r_systemiskt_bruk##Hudpreparat--Svampmedel_f&#xF6;r_utv&#xE4;rtes_bruk--Svampmedel_f&#xF6;r_utv&#xE4;rtes_bruk--Antibiotika##Urin-_och_k&#xF6;nsorgan_samt_k&#xF6;nshormoner--Antiinfektiva_och_antiseptiska_medel_f&#xF6;r_gynekologiskt_bruk--Antiinfektiva_och_antiseptiska_medel,_exkl._kombinationer_med_kortikosteroider--Antibiotika##Antiinfektiva_medel_f&#xF6;r_systemiskt_bruk--Antimykotika_f&#xF6;r_systemiskt_bruk--Antimykotika_f&#xF6;r_systemiskt_bruk--Antibiotika##Antiinfektiva_medel_f&#xF6;r_systemiskt_bruk--Medel_mot_mykobakterier--Medel_f&#xF6;r_behandling_av_tuberkulos--Antibiotika##Matsm&#xE4;ltningsorgan_och_&#xE4;mnesoms&#xE4;ttning--Antidiarroika,_intestinala_antiinflammatoriska_och_antiinfektiva_medel--Medel_vid_tarminfektioner--Antibiotika##&#xD6;gon_och_&#xF6;ron--Medel_vid_&#xF6;gonsjukdomar--Antiinfektiva_medel--Antibiotika##Andningsorgan--Medel_vid_sjukdomar_i_strupe_och_svalg--Medel_vid_sjukdomar_i_strupe_och_svalg--Antibiotika\" class=\"lb inlineGenerica text\">antibiotika</a>profylax i tandvården  – ny rekommendation. Information från Läkemedelsverket. 2012:(23)5. <br><a href=\"http://www.lakemedelsverket.se/malgrupp/Halso---sjukvard/Behandlings--rekommendationer/Behandlingsrekommendation---listan/-Antibiotikaprofylax-i-tandvarden/\" target=\"_blank\" class=\"linkOut\">www.lakemedelsverket.se</a> </li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/antibiotika_och_reseprofylax/antibiotika_och_resistens.json",
+	"modified": "2018-03-28 08:01",
+	"isPublished": true,
+	"indexed": "true"
+}
