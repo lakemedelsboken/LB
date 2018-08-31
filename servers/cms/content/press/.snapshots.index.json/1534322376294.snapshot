@@ -1,0 +1,50 @@
+{
+	"templateName": "default",
+	"templateDescription": "Vanlig sida",
+	"title": "Pressmaterial | Läkemedelsboken",
+	"description": "",
+	"keywords": "",
+	"subject": "",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-07-20 00:48",
+	"published": "2015-07-24 00:10",
+	"validUntil": "",
+	"createdBy": "",
+	"replacesUrl": "/press.html",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		},
+		"rightcolumn": {
+			"content": ""
+		}
+	},
+	"content": [
+		{
+			"id": "5eab8e39-a790-4ba5-a275-fc2df0f6e8ff",
+			"name": "5eab8e39-a790-4ba5-a275-fc2df0f6e8ff",
+			"type": "text",
+			"content": "<h1 id=\"Pressmaterial\">Pressmaterial</h1>\n<h3 id=\"Hogupplosta-bilder\">H&ouml;guppl&ouml;sta bilder</h3>\n<p></p>\n<div class=\"row tableLine\">\n<div class=\"span2\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src=\"https://lakemedelsboken.se/images/press/lb_ikon_2.png/small.png\" style=\"margin-right: 30px; margin-left: 30px;\" width=\"300\" height=\"300\"></div>\n<h3 id=\"LBs-ikon-i-hogupplost-PNG-format\">LBs ikon i h&ouml;guppl&ouml;st PNG-format</h3>\n<p><a href=\"https://lakemedelsboken.se/images/press/lb_ikon_2.png/huge x2.png\" target=\"_blank\">Stor PNG:</a> (1940 x 1940<strong>, </strong> 62.1 kB)</p>\n<p><a href=\"https://lakemedelsboken.se/images/press/lb_ikon_2.png/medium.png\" target=\"_blank\">Mellan PNG:</a> (1048 x 1048, 31.4 kB)</p>\n<p><a href=\"https://lakemedelsboken.se/images/press/lb_ikon_2.png/small.png\" target=\"_blank\">Liten PNG: (</a>300 x 300,<strong>&nbsp; </strong>8.7 kB)<br><br></p>\n</div>\n<div class=\"row\">\n<div class=\"span2\"><img src=\"{pre}/img/press/devices/LB_2014_devices_mini.png\"></div>\n<div class=\"span5\">\n<h3 id=\"Bok-och-olika-skarmstorlekar\">Bok och olika sk&auml;rmstorlekar</h3>\n<p><a href=\"{pre}/img/press/devices/LB_2014_devices_large.png\" target=\"_blank\">Stor PNG</a>&nbsp;<small>(8000 &times; 6159, 11,2 MB)</small></p>\n<p><a href=\"{pre}/img/press/devices/LB_2014_devices_medium.png\" target=\"_blank\">Mellan PNG</a>&nbsp;<small>(1818 &times; 1400, 660 KB)</small></p>\n<p><a href=\"{pre}/img/press/devices/LB_2014_devices_small.png\" target=\"_blank\">Liten PNG</a>&nbsp;<small>(909 &times; 700, 194 KB)<br><br></small></p>\n<p></p>\n</div>\n</div>\n<div class=\"row\">\n<div class=\"span2\"><img src=\"{pre}/img/press/cover/LB_2014_Framsida_mini.png\" style=\"margin-right: 30px; margin-left: 30px;\"></div>\n<div class=\"span5\">\n<h3 id=\"Bokomslag\">Bokomslag</h3>\n<p><a href=\"{pre}/img/press/cover/LB_2014_Framsida.png\">Framsida PNG</a>&nbsp;<small>(4087 &times; 5787, 240 KB)</small></p>\n<p><a href=\"{pre}/img/press/cover/LB_2014_Rygg.png\">Rygg PNG</a>&nbsp;<small>(1228 &times; 5787, 51 KB)</small></p>\n<p><a href=\"{pre}/img/press/cover/LB_2014_Baksida.png\">Baksida PNG</a>&nbsp;<small>(4087 &times; 5787, 268 KB)</small></p>\n<p><a href=\"{pre}/img/press/cover/LB_2014_cover_pages.pdf\">Bokomslag som PDF</a>&nbsp;<small>(940 KB)</small></p>\n</div>\n</div>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/press/index.json",
+	"indexed": "false",
+	"modified": "2018-08-15 10:38",
+	"isPublished": true
+}
