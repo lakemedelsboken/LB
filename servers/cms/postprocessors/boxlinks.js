@@ -26,11 +26,11 @@ module.exports = injector = {
 		//console.log(text);
 
 		$ = cheerio.load(text);
-		
+
 		var body = $("body").first();
 
 		self.iterate(body);
-		
+
 		return body.html();
 	},
 	htmlEscape: function(text) {
@@ -43,7 +43,7 @@ module.exports = injector = {
 			.replace(/</g, '&lt;')
 			.replace(/>/g, '&gt;');
 	},
-	
+
 	iterate: function(element) {
 		var self = this;
 
@@ -61,7 +61,7 @@ module.exports = injector = {
 		} else if (element.type === "text") {
 			element.data = self._injectBoxLinks(element.data);
 		}
-		
+
 	},
 	_injectBoxLinks: function(text) {
 
@@ -78,7 +78,7 @@ module.exports = injector = {
 			}
 			return numbers;
 		}
-		
+
 		//Add a space for regex operations
 //		text = " " + text;
 
@@ -110,10 +110,28 @@ module.exports = injector = {
 			return "<a class=\"btn btn-small factsLink\" href=\"#facts_" + numbers[0] + "\" data-numbers=\"" + numbers.join(",") + "\">" + match + "</a>";
 		});
 
+		text = text.replace(/Terapirekommendation\s[0-9]+/g, function(match) {
+			//var firstChar = match.substr(0, 1);
+			//match = match.substr(1);
+			//console.log("Extract number from: \"" + match.split(/\s/) + "\"");
+			var numbers = extractNumbers(match.split(/\s/)[1]);
+			//return firstChar + "<a class=\"btn btn-small factsLink\" href=\"#facts_" + numbers[0] + "\" data-numbers=\"" + numbers.join(",") + "\">" + match + "</a>";
+			return "<a class=\"btn btn-small therapyLink\" href=\"#therapy_" + numbers[0] + "\" data-numbers=\"" + numbers.join(",") + "\">" + match + "</a>";
+		});
+
+		text = text.replace(/Fallbeskrivning\s[0-9]+/g, function(match) {
+			//var firstChar = match.substr(0, 1);
+			//match = match.substr(1);
+			//console.log("Extract number from: \"" + match.split(/\s/) + "\"");
+			var numbers = extractNumbers(match.split(/\s/)[1]);
+			//return firstChar + "<a class=\"btn btn-small factsLink\" href=\"#facts_" + numbers[0] + "\" data-numbers=\"" + numbers.join(",") + "\">" + match + "</a>";
+			return "<a class=\"btn btn-small casereportLink\" href=\"#casereport_" + numbers[0] + "\" data-numbers=\"" + numbers.join(",") + "\">" + match + "</a>";
+		});
+
 		//Remove the added space
 		//text = text.substr(1);
 		return text;
-		
+
 	},
 	isNumber:  function(o) {
 	  return ! isNaN (o-0) && o !== null && o !== "" && o !== false;
