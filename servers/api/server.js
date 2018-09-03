@@ -15,6 +15,13 @@ var LRU = require("lru-cache")
   , cache = LRU(options)
 
 var secretSettingsPath = __dirname + "/../../settings/secretSettings.json";
+var secretApikeysPath =  "";
+
+if(__dirname.indexOf("vagrant") !== -1) {
+	secretApikeysPath =  "/vagrant/secretApikeys.json";
+}else {
+	secretApikeysPath =  "/var/www/lb/secretApikeys.json";
+}
 
 if (!fs.existsSync(secretSettingsPath)) {
 	console.error("Config file [" + secretSettingsPath + "] missing!");
@@ -34,6 +41,7 @@ if (!fs.existsSync(secretSettingsPath)) {
 })();
 
 var secretSettings = JSON.parse(fs.readFileSync(secretSettingsPath, "utf8"));
+var secretApikeys = JSON.parse(fs.readFileSync(secretApikeysPath, "utf8"));
 var settings = JSON.parse(fs.readFileSync(__dirname + "/../../settings/settings.json", "utf8"));
 var thisPort = settings.internalServerPorts.api;
 var sitePort = settings.internalServerPorts.site;
@@ -254,7 +262,7 @@ app.get('/api/v1/injectgenericas/test1.html', function(req,res) {
 	if (isAllowed) {
 
 		var testFilePath = path.join(__dirname, "html", "test1.html");
-		
+
 		res.sendfile(testFilePath);
 
 	} else {
@@ -602,9 +610,9 @@ var meshTerms = null;
 function extractKeywords(data, excludedWords) {
 
 	if (meshTerms === null) {
-		
+
 		meshTerms = {};
-		
+
 		var terms = fs.readFileSync(path.join(__dirname, "..", "cms", "search", "synonyms", "terms.txt"), "utf8");
 		terms = terms.replace(/\r/g, "");
 
@@ -615,20 +623,20 @@ function extractKeywords(data, excludedWords) {
 			var lineValues = rows[i].split("\t");
 			var id = lineValues[0];
 			var word = lineValues[2];
-			
+
 			if (word !== undefined) {
 				word = word.toLowerCase();
 			}
-	
+
 			if (word !== undefined) {
 				meshTerms[word] = id;
 			}
-	
+
 		}
 	}
 
 	var keywordsChained = keywordExtractor.extract(data, {language: "swedish", remove_digits: true, return_changed_case: true, return_chained_words: true});
-	
+
 	for (var i = keywordsChained.length - 1; i >= 0; i--) {
 		//Duplicate each
 		keywordsChained.push(keywordsChained[i]);
@@ -639,14 +647,14 @@ function extractKeywords(data, excludedWords) {
 	var keywords = keywordsChained.concat(keywordsUnchained);
 
 	var countedKeywords = {};
-	
+
 	keywords.forEach(function(word) {
 
 		if (word.length > 2 && excludedWords.indexOf(word) === -1) {
 			if (countedKeywords[word] === undefined) {
 				countedKeywords[word] = 0;
 			}
-		
+
 			countedKeywords[word] = countedKeywords[word] + 1;
 		}
 	});
@@ -655,14 +663,14 @@ function extractKeywords(data, excludedWords) {
 	for (var word in countedKeywords) {
 		rankedKeywords.push({word: word, count: countedKeywords[word], meshterm: (meshTerms[word] !== undefined)});
 	}
-	
+
 	//Triple the count for mesh terms, boosting
 	rankedKeywords.forEach(function(item) {
 		if (item.meshterm) {
 			item.count = item.count * 3;
 		}
 	});
-	
+
 
 	rankedKeywords.sort(function(a, b) {
 		return b.count - a.count;
@@ -686,7 +694,7 @@ function extractKeywords(data, excludedWords) {
 	var mean = stats.amean();
 	var stddev = stats.stddev();
 	cutoff = Math.round(mean + stddev);
-	
+
 	for (var i = rankedKeywords.length - 1; i >= 0; i--) {
 		if (rankedKeywords[i].count < cutoff) { // && rankedKeywords[i].meshterm === false
 			rankedKeywords.splice(i, 1);
@@ -723,7 +731,7 @@ app.get('/api/v1/extractkeywords', function(req,res){
 	var content = req.query["content"];
 	var url = req.query["url"];
 	var excludedWords = req.query["exclude"];
-	
+
 	if (excludedWords === undefined) {
 		excludedWords = [];
 	} else {
@@ -837,13 +845,13 @@ app.get('/api/v1/extractkeywords', function(req,res){
 app.post('/api/v1/extractkeywords', express.urlencoded({extended: false, limit: "50mb"}), function(req,res){
 
 	if (!req.body) return res.sendStatus(400);
-	
+
 	var content = req.body.content;
 
 	if (!content) return res.sendStatus(400);
 
 	var excludedWords = req.body.exclude;
-	
+
 	if (excludedWords === undefined) {
 		excludedWords = [];
 	} else {
@@ -866,7 +874,7 @@ app.post('/api/v1/extractkeywords', express.urlencoded({extended: false, limit: 
 		if (cache.has(contentHash)) {
 			result.content = cache.get(contentHash);
 		} else {
-			
+
 			//Load in cheerio
 			var $ = cheerio.load(content);
 
@@ -922,7 +930,7 @@ function checkIfApiKeyIsLegit(apiKey, req) {
 	var isLegit = false;
 
 	//Check table of api keys and log request
-	var apiKeys = secretSettings.api.keys;
+	var apiKeys = secretApikeys.api.keys;
 	if (apiKeys[apiKey] !== undefined) {
 		//Key seems legit
 		isLegit = true;

@@ -8,31 +8,31 @@ var request = require("request");
 var wrench = require("wrench");
 
 router.get("/extractkeywords", function(req, res) {
-	
+
 	var id = req.query["id"];
-	
+
 	var result = [];
-	
+
 	if (id !== undefined) {
 
-		var secretSettings = fs.readJsonSync(path.join(__dirname, "..", "..", "..", "settings", "secretSettings.json"));
-		var apiKeys = secretSettings.api.keys;
-		
+		var secretApikeys = fs.readJsonSync("/var/www/lb/secretApikeys.json");
+		var apiKeys = secretApikeys.api.keys;
+
 		var apiKey = null;
-		
+
 		var key;
-		
+
 		for (key in apiKeys) {
 			if (apiKeys[key] === "CMS") {
 				apiKey = key;
 				break;
 			}
 		}
-		
+
 		if (apiKey !== null) {
-			
+
 			id = id.replace(".json", ".html");
-			
+
 			var draftPath = path.join(contentController.baseDir, "..", "output", "draft", id);
 			if (fs.existsSync(draftPath) && fs.statSync(draftPath).isFile()) {
 				var content = fs.readFileSync(draftPath, "utf8");
@@ -59,18 +59,18 @@ router.get("/extractkeywords", function(req, res) {
 				console.log(draftPath + " does not exist or is not a file");
 				res.json(result);
 			}
-			
+
 		} else {
 			console.log("Could not find API key for CMS");
 			res.json(result);
 		}
-		
+
 	} else {
 		console.log("id was undefined");
 		res.json(result);
-		
+
 	}
-	
+
 });
 
 
@@ -78,9 +78,9 @@ router.get("/links.json", function(req, res) {
 
 	var allFiles = wrench.readdirSyncRecursive(contentController.baseDir);
 	var foundPages = allFiles.filter(function(element) {
-		return (element.indexOf(".index") > -1 
-				&& element.indexOf(".snapshot") === -1 
-				&& element.indexOf(".published") === -1 
+		return (element.indexOf(".index") > -1
+				&& element.indexOf(".snapshot") === -1
+				&& element.indexOf(".published") === -1
 				&& fs.statSync(contentController.baseDir + "/" + element).isFile()
 			);});
 
@@ -95,17 +95,17 @@ router.get("/links.json", function(req, res) {
 		var menu = addParts(parts);
 
 		addPageIndex(menu, pagePath);
-		
+
 
 	}
-	
+
 	function addParts(parts) {
-		
+
 		var lastMenu = links;
-		
+
 		for (var i = 0; i < parts.length; i++) {
 			var part = parts[i];
-			
+
 			var exists = false;
 			for (var j = 0; j < lastMenu.length; j++) {
 				if (lastMenu[j].title === part) {
@@ -119,7 +119,7 @@ router.get("/links.json", function(req, res) {
 				lastMenu = lastMenu[lastMenu.length - 1].menu;
 			}
 		}
-		
+
 		return lastMenu;
 	}
 
@@ -130,7 +130,7 @@ router.get("/links.json", function(req, res) {
 
 		//Load index
 		var index = null;
-		
+
 		try {
 			index = JSON.parse(fs.readFileSync(path.join(contentController.baseDir, pagePath), "utf8"));
 		} catch(err) {
@@ -140,7 +140,7 @@ router.get("/links.json", function(req, res) {
 		if (index !== null) {
 			//Remove the root item
 			index.shift();
-		
+
 			for (var i = 0; i < index.length; i++) {
 				index[i].value = "{pre}/" + pagePath.replace(".index", ".html") + "#" + index[i].id;
 				var indent = "";
@@ -148,15 +148,15 @@ router.get("/links.json", function(req, res) {
 					indent += "––";
 				}
 				index[i].title = indent + " " + index[i].title;
-			
+
 				if (index[i].title.length > 90) {
 					index[i].title = index[i].title.substr(0, 90) + "...";
 				}
-			
+
 				currentMenu.push(index[i]);
 			}
 		}
-		
+
 	}
 
 	res.json(links);
