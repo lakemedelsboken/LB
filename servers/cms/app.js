@@ -356,7 +356,7 @@ app.use(function(err, req, res, next) {
 
 function updateATCTreeFromMaster() {
 	var apiKeys = secretApikeys.api.keys;
-	console.log(apiKeys);
+
 	var cmsApiKey = "CMS";
 
 	for (var key in apiKeys) {

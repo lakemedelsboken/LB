@@ -931,7 +931,7 @@ function checkIfApiKeyIsLegit(apiKey, req) {
 
 	//Check table of api keys and log request
 	var apiKeys = secretApikeys.api.keys;
-	console.log(apiKeys);
+
 	if (apiKeys[apiKey] !== undefined) {
 		//Key seems legit
 		isLegit = true;
