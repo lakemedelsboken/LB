@@ -1,0 +1,659 @@
+{
+	"templateName": "chapter",
+	"templateDescription": "Kapitel",
+	"title": "Infektioner i tarmkanalen",
+	"description": "",
+	"keywords": "",
+	"subject": "infektion, salmonella, feber, shigella, blod, cryptosporidium, norovirus, campylobacter, livsmedel, mat, bakterier, giardia, clostridium, antibiotika, ehec, enterohemorragisk e coli, antibakteriella medel, dricksvatten, vatten, cirkulationskollaps cirkulationsstillestånd cirkulationssvikt, clostridium difficile, rotavirus, diarré, avföringen, smitta, kräkningar, diarréer, vätska, spädbarn, chock",
+	"informationType": "",
+	"pageType": "",
+	"created": "2015-11-16 08:41",
+	"published": "",
+	"validUntil": "",
+	"createdBy": "Bo Svenungsson, Olof Hertting",
+	"replacesUrl": "",
+	"headerContent": "",
+	"footerContent": "",
+	"components": {
+		"leftcolumn": {
+			"content": "/components/default-left-menu.json"
+		}
+	},
+	"content": [
+		{
+			"id": "1848bb54-af8e-46dc-b93d-b05455110320",
+			"name": "b07c9e79-28b0-4a21-8cbd-a0e477d75d1b",
+			"type": "text",
+			"content": "<h1 id=\"Infektioner-i-tarmkanalen\">Infektioner i tarmkanalen</h1>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "cf6fdbcf-6709-4e36-96bd-2a1db902b2f6",
+			"name": "5082b3bd-435b-4a0f-881d-ee7552a5f4a4",
+			"type": "author",
+			"content": {
+				"firstname": "Bo",
+				"surname": "Svenungsson",
+				"description": "Smittskydd Stockholm",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7a3409e1-d362-4363-83df-eabb961f5741",
+			"name": "7a3409e1-d362-4363-83df-eabb961f5741",
+			"type": "author",
+			"content": {
+				"firstname": "Olof",
+				"surname": "Hertting",
+				"description": "Karolinska universitetssjukhuset, Solna ",
+				"email": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "97897993-0c52-4d08-be7c-07d67e34f390",
+			"name": "0a408721-d3f8-48d4-a641-d562c9c797e5",
+			"type": "text",
+			"content": "<h2 class=\"ingress\" id=\"Inledning\">Inledning</h2>\n<p><span style=\"color: #000000;\">Infektioner i tarmkanalen utg&ouml;r globalt sett ett av de st&ouml;rsta h&auml;lsoproblemen och &auml;r j&auml;mte luftv&auml;gsinfektioner den vanligaste d&ouml;dsorsaken hos barn under fem &aring;rs &aring;lder. D&ouml;dligheten &auml;r st&ouml;rst i fattiga l&auml;nder d&auml;r brist p&aring; rent vatten, d&aring;lig hygien och undern&auml;ring bidrar till h&ouml;g sjuklighet. Tarminfektioner &auml;r ocks&aring; ett vanligt sjukv&aring;rdsproblem i h&ouml;g- och medelinkomstl&auml;nder med en incidens p&aring; 0,5&ndash;2 sjukdomsepisoder per person och &aring;r. Sjukdomsf&ouml;rloppet &auml;r i dessa l&auml;nder ofta kortvarigt och godartat och d&ouml;dligheten &auml;r l&aring;g. De flesta v&aring;rdkontakter sker inom prim&auml;rv&aring;rden men enligt Socialstyrelsens statistikdatabas f&ouml;r &aring;r <span style=\"color: #ff0000;\">2016</span> sjukhusv&aring;rdades i Sverige cirka <span style=\"color: #ff0000;\">11 000</span> personer p&aring; grund av tarminfektion med en medelv&aring;rdtid p&aring; cirka fyra dygn. Den viktigaste behandlings&aring;tg&auml;rden &auml;r att ers&auml;tta v&auml;tske- och saltf&ouml;rluster. Antibiotikabehandling har i de flesta fall <span style=\"color: #ff0000;\">ingen eller</span> endast marginell effekt.</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "459838f4-d784-4fc1-b4db-f581000ad33c",
+			"name": "459838f4-d784-4fc1-b4db-f581000ad33c",
+			"type": "text",
+			"content": "<h2 id=\"Etiologi-och-smittvagar\"><strong></strong>Etiologi och smittv&auml;gar</h2>\n<p>Virusinfektioner, framf&ouml;r allt rotavirus och calicivirus (norovirus, sapovirus), &auml;r sannolikt den vanligaste orsaken till inhemsk \"magsjuka\" i Sverige. Smitta som f&ouml;rv&auml;rvats utomlands, s&aring; kallad turistdiarr&eacute;, &auml;r oftare orsakad av bakterier som enterotoxinbildande Escherichia coli (ETEC), Salmonella, Shigella och Campylobacter. Infektion med enterohemorragiska E. coli (EHEC) och Yersinia enterocolitica f&ouml;rv&auml;rvas oftast inom landet.</p>\n<p><br>Sjukhusf&ouml;rv&auml;rvad tarmsjukdom orsakas framf&ouml;r allt av <span style=\"color: #ff0000;\">Clostridioides</span> difficile (tidigare Clostridium difficile), som svarar f&ouml;r cirka <span style=\"color: #ff0000;\">25 %</span> av fallen med antibiotikainducerad diarr&eacute;, samt norovirus, den s&aring; kallade vinterkr&auml;ksjukan. P&aring; senare &aring;r har en speciell variant av C. difficile, ribotyp 027, med h&ouml;g toxinproduktion och &ouml;kad virulens uppm&auml;rksammats (1,2,3).</p>\n<p><br>Den klassiska matf&ouml;rgiftningen, som karakteriseras av kort inkubationstid, se Faktaruta 1, och h&auml;ftigt insjuknande, orsakas av Staphylococcus aureus, Bacillus cereus eller Clostridium perfringens, som bildar s&aring; kallade preformerade toxiner.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f035fae9-1ef6-4ebf-b7a9-889dee714a2f",
+			"name": "f035fae9-1ef6-4ebf-b7a9-889dee714a2f",
+			"type": "facts",
+			"content": {
+				"number": "1",
+				"title": "Inkubationstider vid tarminfektioner",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td><strong>Tarmpatogen</strong></td>\r\n<td><strong>Inkubationstid</strong></td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\"><strong>Virus</strong></td>\r\n</tr>\r\n<tr>\r\n<td>Calicivirus<br>(norovirus, sapovirus)</td>\r\n<td>12&ndash;48&nbsp;timmar</td>\r\n</tr>\r\n<tr>\r\n<td>Rotavirus</td>\r\n<td>1&ndash;3&nbsp;dygn</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\"><strong>Bakterier</strong></td>\r\n</tr>\r\n<tr>\r\n<td>Campylobacter</td>\r\n<td>2&ndash;5&nbsp;dygn</td>\r\n</tr>\r\n<tr>\r\n<td><span style=\"color: #ff0000;\">Clostridioides</span> difficile</td>\r\n<td>Upp till 8&nbsp;veckor efter antibiotikabehandling.<br>Observera den l&aring;nga tiden!</td>\r\n</tr>\r\n<tr>\r\n<td>Clostridium&nbsp;perfringens</td>\r\n<td>10&ndash;12&nbsp;timmar</td>\r\n</tr>\r\n<tr>\r\n<td>EHEC</td>\r\n<td>2&ndash;4&nbsp;dygn</td>\r\n</tr>\r\n<tr>\r\n<td>ETEC</td>\r\n<td>1&ndash;3&nbsp;dygn</td>\r\n</tr>\r\n<tr>\r\n<td>Salmonella</td>\r\n<td>1&ndash;3&nbsp;dygn</td>\r\n</tr>\r\n<tr>\r\n<td>Shigella</td>\r\n<td>1&ndash;3&nbsp;dygn</td>\r\n</tr>\r\n<tr>\r\n<td>Staphylococcus&nbsp;aureus</td>\r\n<td>2&ndash;4&nbsp;timmar</td>\r\n</tr>\r\n<tr>\r\n<td>Yersinia&nbsp;enterocolitica</td>\r\n<td>3&ndash;7&nbsp;dygn</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\"><strong>Protozoer</strong></td>\r\n</tr>\r\n<tr>\r\n<td>Cryptosporidium</td>\r\n<td>2&ndash;10&nbsp;dygn</td>\r\n</tr>\r\n<tr>\r\n<td>Giardia&nbsp;intestinalis</td>\r\n<td>1&ndash;2&nbsp;veckor</td>\r\n</tr>\r\n<tr>\r\n<td>Entam&ouml;ba&nbsp;histolytica</td>\r\n<td>1&ndash;3&nbsp;veckor</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7302b3ea-0a9a-4537-bb9d-df92761f0615",
+			"name": "7302b3ea-0a9a-4537-bb9d-df92761f0615",
+			"type": "text",
+			"content": "<p>Bland protozoerna &auml;r Giardia intestinalis den vanligast f&ouml;rekommande. Cirka 90&nbsp;% av fallen f&ouml;rv&auml;rvas utomlands men inhemska utbrott, framf&ouml;r allt inom f&ouml;rskolan, f&ouml;rekommer. Cryptosporidium har alltmer uppm&auml;rksammats som orsak till diarr&eacute;, &auml;ven inom landet, medan am&ouml;biasis, orsakad av Entam&ouml;ba histolytica, huvudsakligen &auml;r en utlandsf&ouml;rv&auml;rvad sjukdom.<br><br></p>\n<p>Smitt&ouml;verf&ouml;ringen sker fekalt-oralt, vanligen indirekt via livsmedel eller f&ouml;rorenat dricksvatten, men kan vid virusinfektioner ocks&aring; ske via kr&auml;kningar.<br><br></p>\n<p>M&aring;nga tarmpatogener, till exempel Salmonella, Campylobacter, Y.&nbsp;enterocolitica, EHEC och Cryptosporidium, finns normalt i djurv&auml;rlden. Vanliga smittk&auml;llor &auml;r d&auml;rf&ouml;r infekterade r&aring;varor som n&ouml;tk&ouml;tt, exempelvis EHEC-infektion, svink&ouml;tt, exempelvis Y.&nbsp;enterocolitica-infektion, fj&auml;derf&auml;, &auml;ggprodukter och opast&ouml;riserad mj&ouml;lk, exempelvis Salmonella- och Campylobacter-infektion. Gr&ouml;nsaker som g&ouml;dslats eller bevattnats med kontaminerat vatten utg&ouml;r ocks&aring; vanliga smittk&auml;llor, vilket &auml;ven g&auml;ller torkade produkter, till exempel olika kryddblandningar. Den vanligaste orsaken till livsmedelsburna utbrott i Sverige &auml;r norovirus, d&auml;r smittk&auml;llor kan vara bland annat f&ouml;rorenade ostron eller frysta b&auml;r, men &auml;ven bakverk och sallader som hanterats av smittad livsmedelspersonal. Smitta via dricksvatten har i Sverige framf&ouml;r allt orsakats av norovirus, Campylobacter och Cryptosporidium.<br><br></p>\n<p>Direkt eller indirekt kontaktsmitta mellan personer f&ouml;rekommer framf&ouml;r allt vid virusinfektioner d&auml;r smitt&auml;mnet finns i kr&auml;kningarna och kan spridas i luften via aerosoler. Smitta fr&aring;n person till person &auml;r mer ovanligt vid bakteriella tarminfektioner, eftersom det kr&auml;vs en h&ouml;g infektionsdos och d&auml;rmed en tillv&auml;xtfas i till exempel ett livsmedel f&ouml;r att smitta ska kunna ske. Vid bakteriella tarminfektioner med l&aring;g infektionsdos, bland annat infektion med Shigella och EHEC d&auml;r infektionsdosen kan vara s&aring; l&aring;g som 10&ndash;100 bakterier, se Faktaruta 2, m&aring;ste person-till-personsmitta beaktas. Smitta kan ocks&aring; &ouml;verf&ouml;ras genom direktkontakt med djur. Barn har smittats med EHEC vid bes&ouml;k p&aring; bondg&aring;rdar eller vid bad i anslutning till &auml;ngar d&auml;r n&ouml;tkreatur betat. Reptiler &auml;r ofta b&auml;rare av Salmonella och kan smitta via direkt kontakt. Smitta vid intima sexuella kontakter f&ouml;rekommer ock<span style=\"color: #ff0000;\"><span style=\"color: #000000;\">s&aring;</span> (1,4).</span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "45acf782-782c-435d-8fb1-9f3249de357f",
+			"name": "45acf782-782c-435d-8fb1-9f3249de357f",
+			"type": "facts",
+			"content": {
+				"number": "2",
+				"title": "Infektionsdosens storlek för bakteriella tarmpatogener",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td><strong>Tarmpatogen</strong></td>\r\n<td><strong>Infektionsdos (antal bakterier)</strong></td>\r\n</tr>\r\n<tr>\r\n<td>Shigella</td>\r\n<td>10<sup>1&ndash;2</sup></td>\r\n</tr>\r\n<tr>\r\n<td>EHEC</td>\r\n<td>10<sup>1&ndash;2</sup></td>\r\n</tr>\r\n<tr>\r\n<td>Campylobacter</td>\r\n<td>10<sup>2&ndash;6</sup></td>\r\n</tr>\r\n<tr>\r\n<td>Salmonella</td>\r\n<td>10<sup>5&ndash;8</sup></td>\r\n</tr>\r\n<tr>\r\n<td>ETEC</td>\r\n<td>10<sup>8</sup></td>\r\n</tr>\r\n<tr>\r\n<td>Vibrio cholerae</td>\r\n<td>10<sup>8</sup></td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "32693309-44da-4e1d-9151-a7dde8e076da",
+			"name": "32693309-44da-4e1d-9151-a7dde8e076da",
+			"type": "text",
+			"content": "<h2 id=\"Patogenes\">Patogenes</h2>\n<p>Den v&auml;tskem&auml;ngd som varje dag passerar &ouml;vre delen av tunntarmen uppg&aring;r till cirka nio liter. Den best&aring;r av 1&ndash;2 liters intag via dryck och f&ouml;da medan resten utg&ouml;rs av sekret fr&aring;n tarmkanalen. Den allra st&ouml;rsta delen av v&auml;tskan resorberas, cirka sju liter fr&aring;n tunntarmen och 1&ndash;2 liter fr&aring;n tjocktarmen. Allts&aring; avg&aring;r endast 100&ndash;150&nbsp;ml med avf&ouml;ringen. En mikrobiell st&ouml;rning av det normala v&auml;tskeutbytet i tarmen kan leda till minskad absorption och/eller &ouml;kad sekretion av v&auml;tska och salter, vilket orsakar diarr&eacute;. Bakterier &aring;stadkommer detta genom olika mekanismer som adherens, produktion av toxiner och invasivitet.</p>\n<p><br>Vissa mikroorganismer drabbar enbart eller huvudsakligen tunntarmen (till exempel V.&nbsp;cholerae, ETEC, virusinfektioner och Giardia) och andra enbart eller huvudsakligen tjocktarmen, bland annat Campylobacter, C.&nbsp;difficile, Shigella, EHEC och E.&nbsp;histolytica. Tunntarmsdiarr&eacute;n &auml;r ofta frekvent, vattnig och volumin&ouml;s och utan blod eller slem (sekretorisk diarr&eacute;), medan tjocktarmsdiarr&eacute;n i typfallet karakteriseras av blodiga diarr&eacute;er och buksm&auml;rtor samt ibland feber (inflammatorisk diarr&eacute;, enterokolit).</p>\n<p><br>En septisk spridning av bakterier till blodbanan f&ouml;rekommer framf&ouml;r allt vid infektion med Salmonella, och fokala infektioner i organ utanf&ouml;r tarmkanalen kan upptr&auml;da i s&auml;llsynta fall. Tyfoidfeber och paratyfoidfeber &auml;r typiska exempel p&aring; septisk salmonellos, d&auml;r feber och allm&auml;np&aring;verkan dominerar symtombilden (1).</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "5ca4dedc-a7a0-4081-8bcf-2718e4d4cb85",
+			"name": "5ca4dedc-a7a0-4081-8bcf-2718e4d4cb85",
+			"type": "text",
+			"content": "<h2 id=\"Symtom\"><span style=\"color: #000000;\">Symtom</span></h2>\n<p><span style=\"color: #000000;\">Symtomen vid tarminfektioner varierar alltifr&aring;n asymtomatiskt b&auml;rarskap till frekventa livshotande diarr&eacute;er eller fulminant kolit. Inkubationstiden kan variera fr&aring;n n&aring;gra timmar vid den klassiska matf&ouml;rgiftningen upp till n&aring;gon eller ett par veckor vid protozoinfektioner, se Faktaruta 1. Insjuknandet &auml;r vanligen akut med buksm&auml;rtor, diarr&eacute;er med eller utan blod och ibland kr&auml;kningar och feber. Det &auml;r om&ouml;jligt att enbart p&aring; symtomen avg&ouml;ra etiologin men vissa riktlinjer kan vara till hj&auml;lp. Vid virusinfektioner eller matf&ouml;rgiftning orsakad av S.&nbsp;aureus eller B.&nbsp;cereus domineras symtombilden av h&auml;ftigt insjuknande och kr&auml;kningar. Blodiga diarr&eacute;er som tecken p&aring; en inflammatorisk enterokolit f&ouml;rekommer framf&ouml;r allt vid infektion med Campylobacter, EHEC och Shigella men ibland ocks&aring; vid Salmonella- och Y.&nbsp;enterocolitica-infektion. Om patienten har behandlats med antibiotika m&aring;ste C.&nbsp;difficile-infektion - CDI beaktas. Symtomen kan upptr&auml;da flera veckor efter avslutad antibiotikabehandling, se Faktaruta 1. Vid l&aring;ngdragna intermittenta diarr&eacute;er &auml;r det viktigt att utesluta infektion med Giardia eller andra protozoer. Ofta &auml;r dock symtombilden atypisk och mikrobiologisk provtagning &auml;r n&ouml;dv&auml;ndig f&ouml;r att st&auml;lla r&auml;tt diagnos (1,4).</span><br><br></p>\n<p><span style=\"color: #000000;\">Symtomen kan p&aring;minna om de man ser vid inflammatorisk tarmsjukdom (<span class=\"st\">Inflammatory Bowel Disease - </span>IBD) men den infekti&ouml;sa koliten karakteriseras oftast av ett mycket akut insjuknande till skillnad fr&aring;n det mer smygande f&ouml;rloppet vid IBD. Symtombilden vid yersinios kan framf&ouml;r allt hos barn och ungdomar ibland likna insjuknandet i akut appendicit. Det &auml;r viktigt att beakta att kr&auml;kningar och &auml;ven diarr&eacute;er ibland kan vara symtom p&aring; andra allvarliga sjukdomstillst&aring;nd, som till exempel blodf&ouml;rgiftning, toxisk shock syndrome - TSS eller akuta buk&aring;kommor. Uttalad t&ouml;rst och p&aring;verkat allm&auml;ntillst&aring;nd kan hos sm&aring; barn vara tecken till hyperton dehydrering, <span style=\"color: #ff0000;\">vanligast</span> vid rotavirusinfektion.</span><br><br></p>\n<p><span style=\"color: #000000;\">Sjukdomsf&ouml;rloppet &auml;r oftast kortvarigt och godartat och infektionen l&auml;ker vanligen spontant inom n&aring;gon vecka. I s&auml;llsynta fall kan sjukdomen bli mer l&aring;ngdragen, &ouml;ver veckor och m&aring;nader, och det &auml;r d&auml;rf&ouml;r n&ouml;dv&auml;ndigt att misst&auml;nka en infektion &auml;ven vid tarmsymtom som drar ut &ouml;ver tid.</span><br><br></p>\n<p><span style=\"color: #000000;\">Hos upp till 5&ndash;10&nbsp;% av de vuxna patienterna med akut tarminfektion utvecklas ett funktionellt diarr&eacute;tillst&aring;nd (Irritable Bowl Syndrome - IBS) som kan p&aring;g&aring; i m&aring;nader och &aring;r. Infektion med EHEC kompliceras i minst 5&ndash;10&nbsp;% av fallen med hemolytiskt uremiskt syndrom - HUS, som &auml;r den enskilt fr&auml;msta orsaken till njursvikt hos barn. I s&auml;llsynta fall kan Guillain-Barr&eacute;s syndrom upptr&auml;da efter infektion med Campylobacter. Reaktiv artrit upptr&auml;der i n&aring;gra procent efter tarminfektioner <span style=\"color: #ff0000;\">(1,4,5).</span> </span><br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "85562698-b2bd-4790-8b68-a9fa30d111d7",
+			"name": "85562698-b2bd-4790-8b68-a9fa30d111d7",
+			"type": "text",
+			"content": "<h2 id=\"Diagnostik\">Diagnostik</h2>\n<p>Diagnostiken baseras p&aring; epidemiologisk och klinisk information samt p&aring; mikrobiologisk analys av avf&ouml;ringen, se <a href=\"#therapy_1_header\" target=\"_blank\">Terapirekommendation 1</a> och Faktaruta 3. Vid m&ouml;tet med patienten b&ouml;r man alltid fr&aring;ga sig var, n&auml;r och hur han/hon kan ha smittats, vilka symtom som f&ouml;religger, hur stora v&auml;tskef&ouml;rlusterna har varit, vilken provtagning som b&ouml;r utf&ouml;ras samt vilka &aring;tg&auml;rder som b&ouml;r vidtas f&ouml;r att s&ouml;ka smittk&auml;llan och hindra vidare smittspridning.<br><br></p>\n<p>Det &auml;r ocks&aring; viktigt att notera eventuellt riskyrke avseende smittspridning, s&aring; som yrkesm&auml;ssig beredning eller hantering av of&ouml;rpackade livsmedel, yrkesm&auml;ssig v&aring;rd av sp&auml;dbarn eller av patienter med kraftigt nedsatt immunf&ouml;rsvar <span style=\"color: #ff0000;\">(1,4).</span><br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c95d4127-9e73-4fd4-8156-b0a8d3848737",
+			"name": "c95d4127-9e73-4fd4-8156-b0a8d3848737",
+			"type": "facts",
+			"content": {
+				"number": "3",
+				"title": "Viktig klinisk och epidemiologisk information",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<p><strong>Epidemiologisk information</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Resor</li>\r\n<li>Restaurangbes&ouml;k</li>\r\n<li>Hantering/intag av misst&auml;nkta livsmedel eller orent vatten</li>\r\n<li>Bass&auml;ngbad</li>\r\n<li>Djurkontakter</li>\r\n<li>Andra sjuka i omgivningen</li>\r\n<li>Antibiotikabehandling</li>\r\n<li>V&aring;rdrelaterat insjuknande</li>\r\n<li>Vistelse p&aring; f&ouml;rskola/v&aring;rdenhet/institution</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p><strong>Klinisk information</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Tidigare sjukdomar</li>\r\n<li>P&aring;g&aring;ende l&auml;kemedelsbehandling</li>\r\n<li>N&auml;r och hur tarmbesv&auml;ren b&ouml;rjade</li>\r\n<li>Avf&ouml;ringens frekvens, volym, konsistens, f&ouml;rekomst av blod eller slem</li>\r\n<li>Kr&auml;kningar, feber, buksm&auml;rtor</li>\r\n<li>Urinm&auml;ngd, &ouml;kad t&ouml;rst, muntorrhet</li>\r\n<li>Viktminskning</li>\r\n<li>V&auml;tskeintag</li>\r\n<li>Tecken p&aring; intorkning (nedsatt turgor, torra slemhinnor)</li>\r\n<li>Puls, blodtryck, kapill&auml;r &aring;terfyllnad, bukstatus</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "00a751e7-93f8-4a27-8490-527af37d6e53",
+			"name": "00a751e7-93f8-4a27-8490-527af37d6e53",
+			"type": "text",
+			"content": "<h3 id=\"Bedomning-av-dehydrering\">Bed&ouml;mning av dehydrering</h3>\n<p>M&aring;ttlig dehydrering inneb&auml;r en v&auml;tskef&ouml;rlust motsvarande cirka 5&nbsp;% av kroppsvikten utan anamnestiska eller kliniska tecken p&aring; chock, men symtom p&aring; intorkning, till exempel tr&ouml;tthet, torr hud, torra slemhinnor eller sm&aring; urinm&auml;ngder. Hos barn ses f&ouml;rl&auml;ngd kapill&auml;r &aring;terfyllnad &gt;&nbsp;2&nbsp;sekunder och &ouml;kad andningsfrekvens. <br><br></p>\n<p>Sv&aring;r dehydrering<em> </em>inneb&auml;r v&auml;tskef&ouml;rlust motsvarande cirka 10&nbsp;% av kroppsvikten och kliniska symtom p&aring; begynnande eller manifest chock. Mycket torra slemhinnor, snabb och svag puls, l&aring;gt blodtryck och konfusion kan ses framf&ouml;r allt hos vuxna. Hos barn ses f&ouml;rl&auml;ngd kapill&auml;r &aring;terfyllnad &gt;&nbsp;3&nbsp;sekunder och nedsatt hudturgor.<br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "f61be01c-2449-474c-8655-9369c63767fa",
+			"name": "f61be01c-2449-474c-8655-9369c63767fa",
+			"type": "text",
+			"content": "<h3 id=\"Provtagning\">Provtagning</h3>\n<p>Det &auml;r alltid angel&auml;get med mikrobiologisk diagnostik om v&aring;rdkontakt blir aktuell. I vissa situationer &auml;r det s&auml;rskilt viktigt, se Faktaruta 4. F&ouml;r att underl&auml;tta laboratoriets bed&ouml;mning av provet b&ouml;r viktiga anamnestiska uppgifter anges p&aring; remissen, till exempel om diarr&eacute;n &auml;r blodig.<br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "ddac4f7a-fae0-4480-917e-80368d16a9ce",
+			"name": "ddac4f7a-fae0-4480-917e-80368d16a9ce",
+			"type": "facts",
+			"content": {
+				"number": "4",
+				"title": "Mikrobiologisk diagnostik bör alltid utföras vid:",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>\r\n<ul style=\"padding: 0px; margin: 0 0 8px 15px;\">\r\n<li>Diarr&eacute; efter utlandsvistelse</li>\r\n<li>Riskyrken (livsmedelshantering, sjukv&aring;rdsarbete)</li>\r\n<li>Antibiotika-associerad diarr&eacute; som inte upph&ouml;r spontant</li>\r\n<li>Akut enterokolit med blodiga diarr&eacute;er och/eller h&ouml;g feber</li>\r\n<li>P&aring;verkat allm&auml;ntillst&aring;nd</li>\r\n<li>Kraftigt nedsatt immunf&ouml;rsvar</li>\r\n<li>L&aring;ngvarigt eller &aring;terkommande diarr&eacute;tillst&aring;nd</li>\r\n<li>Vid anhopning av fall med diarr&eacute;er och/eller kr&auml;kningar</li>\r\n<li>Misstanke om v&aring;rdrelaterad smitta</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "78bd4a85-caeb-4c74-bc38-ddb694fcbbf9",
+			"name": "78bd4a85-caeb-4c74-bc38-ddb694fcbbf9",
+			"type": "text",
+			"content": "<h4 id=\"Bakteriologisk-provtagning\"><span style=\"color: #000000;\">Bakteriologisk provtagning</span></h4>\n<p><span style=\"color: #000000;\">Avf&ouml;ringsodling &auml;r h&ouml;rnstenen i diagnostiken och kan p&aring;visa Salmonella, Shigella, Campylobacter och Y.&nbsp;enterocolitica. Tv&aring; prov &auml;r prim&auml;rt ofta tillr&auml;ckligt. EHEC ska alltid efterfr&aring;gas p&aring; remissen vid akut blodig diarr&eacute; f&ouml;r att denna analys s&auml;kert ska bli utf&ouml;rd. Eftersom serotypning av Salmonella rutinm&auml;ssigt endast utf&ouml;rs vid inhemsk smitta m&aring;ste uppgift om smittland alltid anges p&aring; provtagningsremissen. Provtagning f&ouml;r C.&nbsp;difficile utf&ouml;rs om patienten behandlats med antibiotika inom &aring;tta veckor f&ouml;re insjuknandet.</span><br><br></p>\n<p><span style=\"color: #000000;\">PCR-baserad diagnostik av bakteriella tarmpatogener, som komplement till avf&ouml;ringsodling,<span style=\"color: #ff0000;\"> g&ouml;rs idag p&aring; vissa laboratorier och</span> kommer sannolikt att bli en rutinm&auml;ssig unders&ouml;kningsmetod i framtiden <span style=\"color: #ff0000;\">(1,2,4).</span> Analysen har h&ouml;gre k&auml;nslighet &auml;n odling, och resultat kan f&aring;s redan efter n&aring;got dygn. Vid positivt fynd med PCR m&aring;ste dock odling utf&ouml;ras f&ouml;r eventuell resistensbest&auml;mning av framodlad bakterie samt m&ouml;jlighet till vidare typning med serologiska eller molekyl&auml;rbiologiska metoder.<br><br></span></p>\n<h4 id=\"Parasitologisk-provtagning-\"><span style=\"color: #000000;\">Parasitologisk provtagning<em> </em></span></h4>\n<p><span style=\"color: #000000;\">Provtagning f&ouml;r parasiter (2&ndash;3&nbsp;prov) utf&ouml;rs i utvalda fall vid diarr&eacute; efter utlandsvistelse eller vid subakuta/l&aring;ngdragna diarr&eacute;er, &auml;ven inhemska. Provtagning kan &auml;ven &ouml;verv&auml;gas vid en anhopning av fall. Provet analyseras med mikroskopi som direkt kan p&aring;visa parasitcystor eller mask&auml;gg. Den mikroskopiska unders&ouml;kningen s&auml;rskiljer inte E.&nbsp;histolytica (patogen) fr&aring;n E.&nbsp;dispar (apatogen), och den senare svarar f&ouml;r cirka 90&nbsp;% av de diagnostiserade E.&nbsp;histolytica-/E.&nbsp;dispar-fallen. Analys f&ouml;r Cryptosporidium m&aring;ste anges p&aring; remissen eftersom den kr&auml;ver specialf&auml;rgning. <span style=\"color: #ff0000;\">M&aring;nga</span> laboratorier utf&ouml;r numera riktad PCR-teknik f&ouml;r prim&auml;rdiagnostik av tarmprotozoer, och med PCR kan man ocks&aring; skilja E.&nbsp;histolytica fr&aring;n E.&nbsp;dispar <span style=\"color: #ff0000;\">(1,4). </span></span><br><br></p>\n<h4 id=\"Virologisk-provtagning\"><span style=\"color: #000000;\">Virologisk provtagning</span></h4>\n<p><span style=\"color: #000000;\">Virusdiagnostik utf&ouml;rs framf&ouml;r allt vid anhopning av fall, till exempel inom v&aring;rden och i f&ouml;rskolan eller vid livsmedelsassocierade utbrott (3). De flesta tarmvirus diagnostiseras med PCR.</span><br><br></p>\n<h4 id=\"Serologi\"><span style=\"color: #000000;\">Serologi</span></h4>\n<p><span style=\"color: #000000;\">Serologi kan utf&ouml;ras vid fr&aring;gest&auml;llningen reaktiv artrit, till exempel Salmonella, Yersinia, Campylobacter, och am&ouml;baserologi vid extraintestinal am&ouml;bainfektion, till exempel leverabscess. Vid fall av akut, infekti&ouml;s diarr&eacute; har serologi dock ett mycket begr&auml;nsat v&auml;rde.<br><em><br></em></span></p>\n<h4 id=\"Ovrig-provtagning\"><span style=\"color: #000000;\">&Ouml;vrig provtagning</span></h4>\n<p><span style=\"color: #000000;\">Blodprovstagning (v&auml;tskebalansprover: natrium, kalium, Hb, EVF, B-glukos, S-kreatinin och syra-bas-status) &auml;r s&auml;llan indicerad vid akut diarr&eacute;, s&aring;vida patienten inte har tecken till dehydrering eller lider av annan underliggande sjukdom som motiverar provtagning. Vid l&aring;ngvariga besv&auml;r och vid misstanke om IBD b&ouml;r gastroenterolog tillfr&aring;gas.</span><br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "7ba7de72-a76a-42bb-9f80-3ea21105357a",
+			"name": "7ba7de72-a76a-42bb-9f80-3ea21105357a",
+			"type": "text",
+			"content": "<h2 id=\"Behandling\">Behandling</h2>\n<p>Den viktigaste behandlings&aring;tg&auml;rden vid infekti&ouml;s diarr&eacute; &auml;r att ers&auml;tta v&auml;tske- och saltf&ouml;rluster. Antibiotikabehandling har vanligen endast marginell effekt och ges bara i utvalda fall, <span style=\"color: #ff0000;\">se Terapirekommendationer.</span> F&ouml;r behandling av turistdiarr&eacute; h&auml;nvisas till dokumentet <a href=\"{pre}/kapitel/antibiotika_och_reseprofylax/rad_och_profylax_vid_resa.html\" target=\"_blank\">R&aring;d och profylax vid resa</a> <span style=\"color: #ff0000;\">(1,4,6).</span></p>\n<h3 id=\"Vatskebehandling\">V&auml;tskebehandling</h3>\n<p>Patientens v&auml;tskebehov skattas utifr&aring;n tidigare v&auml;tskef&ouml;rluster och dehydreringsgrad, se <a href=\"#Bedomning-av-dehydrering\" target=\"_blank\">Bed&ouml;mning av dehydrering</a>. Det totala v&auml;tskebehovet under f&ouml;rsta dygnet ber&auml;knas genom att summera:</p>\n<ul>\n<li>Dygnsbehovet (underh&aring;llsbehovet), som hos en vuxen person motsvarar cirka 30&nbsp;ml/kg kroppsvikt och hos barn varierar med kroppsvikten, se Tabell 1 nedan.</li>\n<li>Uppskattade tidigare f&ouml;rluster/v&auml;tskedeficit (graden av dehydrering).</li>\n<li>P&aring;g&aring;ende f&ouml;rluster, ber&auml;knat utifr&aring;n en uppskattning av de f&ouml;rsta &aring;tta timmarnas f&ouml;rluster (diarr&eacute;, kr&auml;kning, urin, perspiratio). F&ouml;rlusten &ouml;kar med cirka 3 ml/kg/grad feber/dygn.</li>\n</ul>\n<p>Under de f&ouml;rsta 12 timmarna ges st&ouml;rre delen av ber&auml;knad v&auml;tskedeficit, halva dygnsbehovet samt kompensation av p&aring;g&aring;ende f&ouml;rluster under de f&ouml;rsta 12 timmarna.<br><br></p>\n<p><span style=\"color: #ff0000;\">Ett vanligt s&auml;tt att rehydrera barn &auml;r att ge 5 % av kroppsvikten (12,5 ml/kg/timme) de f&ouml;rsta fyra timmarna, d&auml;refter basalt v&auml;tskebehov plus ber&auml;knat v&auml;tskedeficit minus den redan givna v&auml;tskan p&aring; cirka 24 timmar (7,8).<sup><br></sup></span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "6596c2e7-bacf-43e5-acfe-dd2460eeafe2",
+			"name": "6596c2e7-bacf-43e5-acfe-dd2460eeafe2",
+			"type": "tablenarrow",
+			"content": {
+				"number": "1",
+				"title": "Barnets underhållsbehov av vätska efter ett års ålder",
+				"id": "",
+				"text": "<table class=\"table table-bordered\">\r\n<tbody>\r\n<tr>\r\n<td colspan=\"2\">Barnets vikt (kg)</td>\r\n<td>ml/dygn</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">10</td>\r\n<td>1 000</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">15</td>\r\n<td>1 250</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">20</td>\r\n<td>1 500</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">25</td>\r\n<td>1 600</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">30</td>\r\n<td>1 700</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">35</td>\r\n<td>1 800</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">40</td>\r\n<td>1 900</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">45</td>\r\n<td>2 000</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">50</td>\r\n<td>2 100</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">55</td>\r\n<td>2 200</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"2\">60</td>\r\n<td>2 300</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "46fe03ec-92ab-47ca-824e-a99956ab8855",
+			"name": "46fe03ec-92ab-47ca-824e-a99956ab8855",
+			"type": "text",
+			"content": "<p>Rehydrering sker peroralt med exempelvis socker-saltl&ouml;sning, som finns att k&ouml;pa p&aring; apotek. Till vuxna, men ej till de sm&aring; barnen, kan en hemmagjord socker-saltl&ouml;sning beredas genom att blanda 1&nbsp;liter vatten, &frac12;&nbsp;tesked salt och 2&nbsp;matskedar socker och smaks&auml;tta med lite apelsinjuice. Flera mycket allvarliga incidenter har skett vid felaktigt blandad v&auml;tskeers&auml;ttning till sm&aring;barn. S&auml;rskilt sv&aring;r kan f&ouml;ljden bli f&ouml;r de allra minsta. Som till&auml;gg ges te, vatten och flytande kost i form av till exempel buljong eller bl&aring;b&auml;rs- eller morotsoppa. Ammande barn ska forts&auml;tta att amma eller ges br&ouml;stmj&ouml;lkers&auml;ttning och f&aring; till&auml;gg av v&auml;tskeers&auml;ttning vid behov. N&auml;r aptiten &aring;terkommer och diarr&eacute;erna b&ouml;rjar avta kan patienten, f&ouml;rutom v&auml;tska enligt ovan, b&ouml;rja &auml;ta normalkost. Vid lindriga symtom &auml;r valet av dryck mindre viktigt. Viktigast &auml;r att patienten dricker.<br><br></p>\n<p>Peroral illam&aring;endemedicin i form av ondansetron i eng&aring;ngsdos vid kraftigt illam&aring;ende och kr&auml;kningar har visat sig f&ouml;rb&auml;ttra chanserna till peroral rehydrering hos barn <span style=\"color: #ff0000;\">(9).</span> Om det p&aring; barn inte fungerar att ge peroral tillf&ouml;rsel via spruta, sked eller flaska s&auml;tts nasogastrisk sond d&auml;r samma v&auml;tska ges.<br><br></p>\n<p>Om patienten &auml;r sv&aring;rt dehydrerad eller inte kan dricka p&aring; grund av kr&auml;kningar ges v&auml;tska och salter parenteralt. L&auml;mpliga infusionsl&ouml;sningar vid parenteral dehydrering &auml;r Ringer-Acetat och Rehydrex med glukos 25 mg/l. Det &auml;r i dessa fall viktigt att m&auml;ta v&auml;tsketillf&ouml;rseln och skatta f&ouml;rlusterna (urin, avf&ouml;ring, kr&auml;kningar och perspiration), liksom att kontrollera v&auml;tskebalansstatus. Den initiala rehydreringen b&ouml;r helst g&aring; ganska snabbt, 3&ndash;6 timmar beroende p&aring; &aring;lder.<br><span style=\"text-decoration: line-through;\"><br></span></p>\n<p>Hyperton dehydrering hos sm&aring; barn &auml;r ett tillst&aring;nd med hypernatremi som ses vid stora v&auml;tskef&ouml;rluster, vanligen i samband med rotavirusinfektioner. Vid hyperton dehydrering finns risk f&ouml;r kramper och hj&auml;rn&ouml;dem om inte f&ouml;rsiktig parenteral rehydrering under noggrann &ouml;vervakning sker.<br><span style=\"color: #ff0000;\"><br></span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "3ec9e8d9-4e18-461b-8977-8622ea07552a",
+			"name": "3ec9e8d9-4e18-461b-8977-8622ea07552a",
+			"type": "text",
+			"content": "<h3 id=\"Antibiotikabehandling-\">Antibiotikabehandling<strong> </strong></h3>\n<p>Bakteriella tarminfektioner beh&ouml;ver s&auml;llan behandlas med antibiotika eftersom effekten &auml;r marginell och de som regel &auml;r sj&auml;lvl&auml;kande inom en till tv&aring; veckor. Uts&ouml;ndringstiden av Salmonella kan dessutom f&ouml;rl&auml;ngas om antibiotikabehandling ges. Vid vissa infektioner &auml;r effekten p&aring; symtom och smittb&auml;rarskap dock av s&aring;dan omfattning att antibiotika b&ouml;r ges. Detta g&auml;ller framf&ouml;r allt infektioner orsakade av Shigella och C. difficile <span style=\"color: #ff0000;\">(1,2,4,10,11,12,13,14,15).</span> <span style=\"background-color: #ffff00;\"></span><br><br></p>\n<p>Behandling kan &auml;ven vara indicerad till patienter med allvarlig enterit med kolitbild och h&ouml;g feber, liksom till sp&auml;dbarn, &aring;ldringar och patienter med nedsatt immunf&ouml;rsvar, vilka kan l&ouml;pa en st&ouml;rre risk att f&aring; ett allvarligare sjukdomsf&ouml;rlopp.<br><br></p>\n<p id=\"Till-en-svart-sjuk-patient-med-akut-insjuknande-i-inflammatorisk-enterokolit-eller-frekventa-diarr-er-med-hog-feber-till-exempel-efter-utlandsvistelse-bor-empirisk-behandling-overvagas-Resistensbestamning-ska-ut-foras-liberalt-vid-positiva-odlingsfynd-pa-grund-av-den-okande-resistensutvecklingen-mot-anti-biotika-hos-de-flesta-tarmpatogener-Vid-empirisk-behandling-ges-i-forsta-hand-ciprofloxacin-500-mg-2-eller-nar-det-galler-resenarer-fran-Asien-dar-hog-kinolonresistens-forekommer-azitromycin-500-mg-1-Vid-kand-etiologi-ges-behandling-enligt-Terapirekommendationer-for-behandling-under-graviditet-se-www-infpreg-se-\">Till en sv&aring;rt sjuk patient med akut insjuknande i inflammatorisk enterokolit eller frekventa diarr&eacute;er med h&ouml;g feber, till exempel efter utlandsvistelse, b&ouml;r empirisk behandling &ouml;verv&auml;gas. Resistensbest&auml;mning ska utf&ouml;ras liberalt vid positiva odlingsfynd p&aring; grund av den &ouml;kande resistensutvecklingen mot antibiotika hos de flesta tarmpatogener. Vid empirisk behandling ges i f&ouml;rsta hand ciprofloxacin 500&nbsp;mg&nbsp;&times;&nbsp;2, f&ouml;r barn; ciprofloxacin 10&nbsp;mg/kg&nbsp;x&nbsp;2, max 500&nbsp;mg&nbsp;x&nbsp;2. N&auml;r det g&auml;ller resen&auml;rer fr&aring;n Asien, d&auml;r h&ouml;g kinolonresistens f&ouml;rekommer, ges azitromycin 500&nbsp;mg&nbsp;&times;&nbsp;1<span style=\"color: #ff0000;\">, f&ouml;r barn; azitromycin 10&nbsp;mg/kg&nbsp;x&nbsp;1, max&nbsp;500&nbsp;mg&nbsp;x&nbsp;1.</span> Vid k&auml;nd etiologi ges behandling enligt <a href=\"#therapy_2_header\" target=\"_blank\">Terapirekommendation 2, </a>f&ouml;r behandling under graviditet se <a href=\"http://www.infpreg.se\" target=\"_blank\">InfPreg</a> <span style=\"color: #ff0000;\">(4,10,11).</span><br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "c1c9b490-af7f-4ec2-a86a-329e36fb66c2",
+			"name": "c1c9b490-af7f-4ec2-a86a-329e36fb66c2",
+			"type": "text",
+			"content": "<h3 id=\"Motilitetshammande-medel\">Motilitetsh&auml;mmande medel</h3>\n<p>Loperamid har dokumenterad antisekretorisk och motilitetsh&auml;mmande effekt. Det anv&auml;nds f&ouml;r symtomatisk behandling av vuxna med lindrig till m&aring;ttlig turistdiarr&eacute; men inte vid akuta tillst&aring;nd med allm&auml;np&aring;verkan, h&ouml;g feber och blodig avf&ouml;ring. Den maximala doseringen &auml;r 16&nbsp;mg/dygn under tv&aring; dygn. Preparatet ska inte ges till barn &lt;&nbsp;12 &aring;r eller till gravida <span style=\"color: #ff0000;\">(4,6).</span><br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "d525a38e-6f1c-4b7f-847c-3f5a5b564091",
+			"name": "d525a38e-6f1c-4b7f-847c-3f5a5b564091",
+			"type": "text",
+			"content": "<h3 id=\"Probiotika\">Probiotika</h3>\n<p id=\"Probiotika-ar-levande-apatogena-mikroorganismer-som-anses-ha-en-gynnsam-effekt-pa-tarmfloran-Kliniska-studier-med-laktobaciller-till-exempel-L-rhamnosus-GG-L-plantarum-L-reuteri-har-visat-viss-effekt-vid-antibiotikainducerad-diarr-turistdiarr-och-rotavirusdiarr-men-effekten-ar-inte-av-sadan-omfattning-att-preparaten-generellt-kan-rekommenderas-for-kliniskt-bruk-Jastsvampen-Saccharomyces-boulardi-ar-registrerat-som-lakemedel-for-profylax-mot-antibiotikaassocierad-diarr-och-som-tillagg-vid-antibiotikabehandling-for-att-forhindra-recidiv-vid-CDI-Bevisgraden-ar-dock-lag-\">Probiotika &auml;r levande, apatogena mikroorganismer som anses ha en gynnsam effekt p&aring; tarmfloran. Kliniska studier med laktobaciller (till exempel L.&nbsp;rhamnosus GG, L.&nbsp;plantarum, L.&nbsp;reuteri) har visat viss effekt vid antibiotikainducerad diarr&eacute;, turistdiarr&eacute; och rotavirusdiarr&eacute; men effekten &auml;r inte av s&aring;dan omfattning att preparaten generellt kan rekommenderas f&ouml;r kliniskt bruk. J&auml;stsvampen Saccharomyces boulardi &auml;r registrerad som l&auml;kemedel f&ouml;r profylax mot antibiotikaassocierad diarr&eacute; och som till&auml;gg vid antibiotikabehandling f&ouml;r att f&ouml;rhindra recidiv vid <span class=\"st\">C.&nbsp;difficile-infektion</span>. Evidensgraden f&ouml;r preparatet &auml;r dock l&aring;g <span style=\"color: #ff0000;\">(16).</span><span style=\"background-color: #ffff00;\"></span><br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "e1f54933-b6eb-4e2e-bb82-111e4ff10e1c",
+			"name": "e1f54933-b6eb-4e2e-bb82-111e4ff10e1c",
+			"type": "text",
+			"content": "<h3 id=\"Vacciner\">Vacciner</h3>\n<p id=\"Vaccin-mot-tyfoidfeber-ett-peroralt-Ty21a-eller-ett-parenteralt-Vi-har-cirka-70-skyddseffekt-Ty21a-kan-ges-till-personer-fran-5-ars-alder-och-Vi-fran-2-ars-alder-De-rekommenderas-for-personer-som-vistas-langre-tid-i-endemiska-omraden-framfor-allt-i-Asien-se-aven-dokumentet-Rad-och-profylax-vid-resa-\">Vaccin mot tyfoidfeber, peroralt (Ty21a) eller parenteralt (Vi), har cirka 70&nbsp;% skyddseffekt. Ty21a kan ges till personer fr&aring;n 5&nbsp;&aring;rs &aring;lder och Vi fr&aring;n 2&nbsp;&aring;rs &aring;lder. De rekommenderas f&ouml;r personer som vistas l&auml;ngre tid i endemiska omr&aring;den, framf&ouml;r allt i Asien, se &auml;ven kapitlet <a href=\"{pre}/kapitel/antibiotika_och_reseprofylax/rad_och_profylax_vid_resa.html\" target=\"_blank\">R&aring;d och profylax vid resa.</a><span style=\"background-color: #ffff00;\"></span><br><br></p>\n<p id=\"n--Ett-peroralt-koleravaccin-har-cirka-80-skyddseffekt-de-forsta-sex-manaderna-Detta-vaccin-ger-ocksa-ett-60-skydd-mot-turistdiarr-orsakad-av-LT-toxinet-hos-ETEC-Skyddseffekten-mot-turistdiarr-generellt-ar-dock-endast-10-20-se-aven-dokumentet-Rad-och-profylax-vid-resa-\">Ett peroralt koleravaccin har cirka 80&nbsp;% skyddseffekt de f&ouml;rsta sex m&aring;naderna. Detta vaccin ger ocks&aring; ett 60&nbsp;% skydd mot turistdiarr&eacute;, orsakad av LT-toxinet hos ETEC. Skyddseffekten mot turistdiarr&eacute; generellt &auml;r dock endast 10&nbsp;%, se &auml;ven kapitlet <a href=\"{pre}/kapitel/antibiotika_och_reseprofylax/rad_och_profylax_vid_resa.html\" target=\"_blank\">R&aring;d och profylax vid resa</a>, och vaccinet har numera enbart indikationen att f&ouml;rebygga kolerainfektion.<br><br></p>\n<p id=\"Det-finns-tva-levande-orala-vacciner-mot-rotavirusdiarr-Skyddseffekten-mot-svar-infektion-som-kraver-sjukhusvard-har-i-metaanalysstudier-uppskattats-till-cirka-90-For-Rotarix-omfattar-vaccinationsschemat-tva-doser-och-for-RotaTeq-tre-doser-Forsta-dosen-kan-ges-fran-6-veckors-alder-Det-ska-vara-ett-intervall-pa-minst-4-veckor-mellan-doserna-och-samtliga-doser-skall-vara-givna-innan-24-veckors-alder-Lindrig-diarr-och-krakningar-ar-vanliga-biverkningar-medan-invagination-ar-en-allvarlig-men-ytterst-ovanlig-biverkan-\">Det finns tv&aring; levande orala vacciner mot rotavirusdiarr&eacute;. Regeringen har beslutat att ocks&aring; rotavirus ska inf&ouml;ras i det allm&auml;nna vaccinationsprogrammet, men det &auml;r &auml;nnu inte (augusti 2018) best&auml;mt n&auml;r. Vissa landsting erbjuder idag gratis vaccination mot rotavirus. Skyddseffekten mot sv&aring;r infektion som kr&auml;ver sjukhusv&aring;rd har i metaanalysstudier uppskattats till cirka 90&nbsp;%. F&ouml;r Rotarix omfattar vaccinationsschemat tv&aring; doser och f&ouml;r RotaTeq tre doser. F&ouml;rsta dosen kan ges fr&aring;n 6&nbsp;veckors &aring;lder. Det ska vara ett intervall p&aring; minst fyra veckor mellan doserna och samtliga doser skall vara givna f&ouml;re 24 respektive 32 veckors &aring;lder. Lindrig diarr&eacute; och kr&auml;kningar &auml;r vanliga biverkningar, invagination &auml;r en allvarlig men ytterst ovanlig biverkan <span style=\"color: #ff0000;\">(17).</span><span style=\"background-color: #ffff00;\"></span></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "94553534-fffb-4d9a-9bcd-223e97b157d4",
+			"name": "94553534-fffb-4d9a-9bcd-223e97b157d4",
+			"type": "text",
+			"content": "<p><br>Se mer i kapitlet Vaccination av barn och unga, avsnittet <a href=\"{pre}/kapitel/pediatrik/vaccination_av_barn_och_ungdomar.html#Vaccination-mot-rotavirus\" target=\"_blank\">Vaccination mot rotavirus.</a><br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"fixlinkstoself.js": "false",
+					"idinjection.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "true",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "26328af6-9024-4424-89f3-49933a5762dd",
+			"name": "26328af6-9024-4424-89f3-49933a5762dd",
+			"type": "text",
+			"content": "<h3 id=\"Behandling-av-intestinala-maskinfektioner\">Behandling av intestinala maskinfektioner</h3>\n<p>Maskinfektioner &auml;r, med undantag f&ouml;r springmask, ovanliga i Sverige<span style=\"background-color: #ffff00;\"></span>. De diagnostiseras framf&ouml;r allt hos resen&auml;rer, invandrare och adoptivbarn fr&aring;n endemiska omr&aring;den och ofta i samband med h&auml;lsokontroll av i &ouml;vrigt friska personer.<br><br></p>\n<h4 id=\"Springmask-Enterobius-vermicularis-\">Springmask (Enterobius vermicularis)</h4>\n<p>Springmask &auml;r vanligt f&ouml;rekommande framf&ouml;r allt hos f&ouml;rskolebarn. Det vanligaste symtomet &auml;r kl&aring;da kring anal&ouml;ppningen, ofta nattetid. Maskarna kan d&aring; identifieras som smala, millimeterl&aring;nga, vita tr&aring;dar. &Auml;ggen p&aring;visas l&auml;ttast med ett s&aring; kallat tejpprov, d&auml;r tejpen trycks mot anus, helst p&aring; morgonen, och sedan f&ouml;rs &ouml;ver till ett objektglas f&ouml;r mikroskopi. &Auml;ggen &auml;r snabbt infekti&ouml;sa och kan reinfektera direkt genom fingerkontakt mellan anus och mun, eller kontaminera omgivningen och spridas vidare genom kontaktsmitta. Behandlingen, som m&aring;ste upprepas efter tv&aring; veckor och ska ges till hela familjen, &auml;r mebendazol 100&nbsp;mg som eng&aring;ngsdos till b&aring;de barn och vuxna. Ett receptfritt alternativ &auml;r pyrvin <span style=\"background-color: #ffffff;\">50&nbsp;mg/10&nbsp;kg kroppsvikt i eng&aring;ngsdos till vuxna. <span style=\"color: #ff0000;\">Den orala suspensionen som anv&auml;nts till barn har avregistrerats men tabletterna kan delas eller krossas och ges till barn som v&auml;ger tio kilo eller mer.</span></span><span style=\"text-decoration: line-through;\"><span style=\"color: #ff0000; text-decoration: line-through;\"></span></span>Pyrvin kan ocks&aring; ges under graviditet. F&ouml;r att minska risken f&ouml;r reinfektion rekommenderas st&auml;dning av sovrum samt byte av s&auml;ngkl&auml;der, handdukar och underkl&auml;der i samband med behandlingen.<br><em></em><br><em></em></p>\n<h4 id=\"Spolmask-Ascaris-lumbricoides-\">Spolmask (Ascaris lumbricoides)</h4>\n<p>Spolmask f&ouml;rekommer i l&auml;nder med l&aring;g hygienisk standard och p&aring;visas n&auml;stan uteslutande hos resen&auml;rer/invandrare fr&aring;n dessa l&auml;nder. &Auml;ggen, som &auml;r mycket motst&aring;ndskraftiga mot yttre p&aring;verkan, uts&ouml;ndras med avf&ouml;ringen och &auml;r infekti&ouml;sa f&ouml;rst efter ett par veckor. Smittspridning sker via kontamination av till exempel vatten och gr&ouml;nsaker med avf&ouml;ring. Diagnosen st&auml;lls genom p&aring;visande av 15&ndash;30&nbsp;cm l&aring;nga, gulvita maskar i avf&ouml;ringen eller mask&auml;gg i avf&ouml;ringsprov. Spolmask behandlas med mebendazol 100&nbsp;mg&nbsp;&times;&nbsp;2 i tre dagar. Preparatet kan ges till barn &gt;&nbsp;2 &aring;r men b&ouml;r inte ges till gravida.<br><br></p>\n<h4 id=\"Piskmask-Trichuris-trichiura-\">Piskmask (Trichuris trichiura)</h4>\n<p>Piskmask f&ouml;rekommer allm&auml;nt i utvecklingsl&auml;nder. Infektionen ger ofta inga symtom. Diagnosen st&auml;lls genom p&aring;visande av mask&auml;gg i avf&ouml;ringsprov och masken behandlas med mebendazol 100&nbsp;mg&nbsp;&times;&nbsp;2 under 3&ndash;5 dagar till vuxna och barn &gt;&nbsp;2&nbsp;&aring;r.<br><br></p>\n<h4 id=\"Hakmask-Ancylostoma-duodenale-Necator-americanus-\">Hakmask (Ancylostoma duodenale, Necator americanus)</h4>\n<p>Hakmask finns i fuktiga omr&aring;den i tropiska och subtropiska l&auml;nder och kan orsaka anemi eftersom den suger blod fr&aring;n tunntarmslemhinnan. Mask&auml;ggen uts&ouml;ndras med avf&ouml;ringen i den fuktiga milj&ouml;n d&auml;r de utvecklas till larver, som sedan kan penetrera intakt hud vid barfotag&aring;ng. &Auml;gg kan p&aring;visas i avf&ouml;ringen och behandlingen best&aring;r av mebendazol 100&nbsp;mg&nbsp;&times;&nbsp;2 under tre dagar till vuxna och till barn &gt;&nbsp;2&nbsp;&aring;r.<br><br></p>\n<h4 id=\"Dvargtradmask-Strongyloides-stercoralis-\">Dv&auml;rgtr&aring;dmask (Strongyloides stercoralis)</h4>\n<p>Denna mask f&ouml;rekommer liksom hakmasken i tropiska och subtropiska omr&aring;den. &Auml;ggen kl&auml;cks till larver redan i tarmen och kan penetrera huden vid till exempel barfotag&aring;ng. Vid starkt nedsatt immunf&ouml;rsvar kan en kraftig f&ouml;r&ouml;kning av larver ske med invasion till olika v&auml;vnader i kroppen. Personer fr&aring;n endemiska omr&aring;den b&ouml;r d&auml;rf&ouml;r unders&ouml;kas avseende denna mask, till exempel inf&ouml;r transplantationer eller andra behandlingar som leder till nedsatt immunf&ouml;rsvar. Diagnosen st&auml;lls genom p&aring;visande av larver i avf&ouml;ringen. Masken behandlas med ivermektin (licenspreparat) i eng&aring;ngsdos, 12&nbsp;mg till vuxen och 0,15&nbsp;mg/kg kroppsvikt till barn.<br><br></p>\n<h4 id=\"Bandmaskar-Taenia-saginata-Taenia-solium-Diphyllobothrium-latum-\">Bandmaskar (Taenia saginata, Taenia solium, Diphyllobothrium latum)</h4>\n<p>T.&nbsp;saginata (n&ouml;tbinnikemask) &auml;r mycket ovanlig i Sverige. Smitta sker via f&ouml;rt&auml;ring av otillr&auml;ckligt uppv&auml;rmt n&ouml;tk&ouml;tt som inneh&aring;ller larver, s&aring; kallade dynt. T.&nbsp;solium (svinbinnikemask), som smittar via otillr&auml;ckligt uppv&auml;rmt fl&auml;skk&ouml;tt som inneh&aring;ller larver, finns inte i Sverige. D.&nbsp;latum (fiskbinnikemask) f&ouml;rv&auml;rvas genom intag av r&aring; s&ouml;tvattenfisk. Maskarna kan bli meterl&aring;nga eller l&auml;ngre och avsl&ouml;jas d&aring; masksegment avg&aring;r med avf&ouml;ringen. Behandlingen &auml;r niklosamid i eng&aring;ngsdos, 2&nbsp;g till vuxna och barn &gt;&nbsp;6&nbsp;&aring;r, 1&nbsp;g till barn 2&ndash;6&nbsp;&aring;r och 500&nbsp;mg till barn &lt;&nbsp;2 &aring;r.<br><br></p>\n<h4 id=\"Dvargbinnikemask-Hymenolepis-nana-\">Dv&auml;rgbinnikemask (Hymenolepis nana)</h4>\n<p>Denna mask &auml;r allm&auml;n i utvecklingsl&auml;nder men ger s&auml;llan symtom. &Auml;gg p&aring;visas i avf&ouml;ring vid mikroskopi. Om behandling &ouml;verv&auml;gs ges prazikvantel (licenspreparat) 20&nbsp;mg/kg kroppsvikt som eng&aring;ngsdos till barn och vuxna.<br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "576ef30f-a34d-4eb6-ae2a-5603f356d375",
+			"name": "576ef30f-a34d-4eb6-ae2a-5603f356d375",
+			"type": "text",
+			"content": "<h2 id=\"Smittskyddsatgarder\">Smittskydds&aring;tg&auml;rder</h2>\n<p>Vissa tarminfektioner &auml;r anm&auml;lningspliktiga enligt <a href=\"https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/smittskyddslag-2004168_sfs-2004-168\" target=\"_blank\">Smittskyddslagen</a>. Dessa delas upp i allm&auml;nfarliga sjukdomar, d&auml;r l&auml;kare och patient har lagstadgade skyldigheter, och &ouml;vriga anm&auml;lningspliktiga sjukdomar enligt <a href=\"https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/smittskyddsforordning-2004255_sfs-2004-255\" target=\"_blank\">Smittskyddsf&ouml;rordningen</a>, se Faktaruta 5. <a href=\"https://www.folkhalsomyndigheten.se/smittskydd-beredskap/overvakning-och-rapportering/anmalningspliktiga-sjukdomar/\" target=\"_blank\">Folkh&auml;lsomyndigheten </a>f&ouml;r nationell statistik &ouml;ver dessa diagnoser. Smittskyddsanm&auml;lan ska g&ouml;ras elektroniskt hos <a href=\"http://www.sminet.se/ \" target=\"_blank\">SmiNet</a> senast dagen efter det att diagnosen st&auml;llts. Behandlande l&auml;kare ansvarar f&ouml;r att smittsp&aring;rning och eventuell kontrollprovtagning blir utf&ouml;rd och att patienten f&aring;r f&ouml;rh&aring;llningsregler enligt de smittskyddsblad som finns att h&auml;mta f&ouml;r varje diagnos hos <a href=\"https://www.slf.se/Foreningarnas-startsidor/Intresseforening/Smittskyddslakarforeningen/Smittskyddsblad-/\" target=\"_blank\">Smittskyddsl&auml;karf&ouml;reningen</a>. God hand- och livsmedelshygien &auml;r alltid viktig.</p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "fb8f0953-916c-4398-8774-018ccca70599",
+			"name": "fb8f0953-916c-4398-8774-018ccca70599",
+			"type": "facts",
+			"content": {
+				"number": "5",
+				"title": "Anmälningspliktiga tarminfektioner enligt Smittskyddslagen",
+				"text": "<table class=\"table table-bordered facts\">\r\n<tbody>\r\n<tr>\r\n<td>Infektion med Cryptosporidium</td>\r\n</tr>\r\n<tr>\r\n<td>Infektion med Entam&ouml;ba histolytica</td>\r\n</tr>\r\n<tr>\r\n<td>Vibrioinfektion exklusive kolera</td>\r\n</tr>\r\n<tr>\r\n<td>Yersiniainfektion</td>\r\n</tr>\r\n<tr>\r\n<td><strong>Allm&auml;nfarliga tarminfektioner<br></strong></td>\r\n</tr>\r\n<tr>\r\n<td>Campylobacterinfektion</td>\r\n</tr>\r\n<tr>\r\n<td>Giardiainfektion</td>\r\n</tr>\r\n<tr>\r\n<td>Infektion med enterohemorragisk E. coli (EHEC)</td>\r\n</tr>\r\n<tr>\r\n<td>Kolera</td>\r\n</tr>\r\n<tr>\r\n<td>Paratyfoidfeber</td>\r\n</tr>\r\n<tr>\r\n<td>Salmonellainfektion</td>\r\n</tr>\r\n<tr>\r\n<td>Shigellainfektion</td>\r\n</tr>\r\n<tr>\r\n<td>Tyfoidfeber</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+				"id": ""
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "56beada4-4ffb-48c2-84df-7d984c8c6c8f",
+			"name": "56beada4-4ffb-48c2-84df-7d984c8c6c8f",
+			"type": "text",
+			"content": "<p><br>Patienter infekterade med Salmonella och som arbetar inom s&aring; kallade riskyrken - d&auml;r man yrkesm&auml;ssigt bereder eller hanterar of&ouml;rpackade livsmedel, yrkesm&auml;ssigt v&aring;rdar sp&auml;dbarn eller patienter med kraftigt nedsatt immunf&ouml;rsvar - ska f&ouml;ljas upp med ett negativt avf&ouml;ringsprov. Vid fynd av S. Typhi eller S. Paratyphi g&ouml;rs regelm&auml;ssigt tre kontrollodlingar om patienten har ett riskyrke, liksom hos barn inom barnomsorgen.<br><br></p>\n<p>Patienter infekterade med Shigella och som arbetar inom riskyrken enligt ovan, samt barn inom barnomsorgen, ska f&ouml;ljas upp med ett negativt avf&ouml;ringsprov innan &aring;terg&aring;ng till arbete/f&ouml;rskola. Detta under f&ouml;ruts&auml;ttning att patienten fullf&ouml;ljt en antibiotikabehandling med preparat som bakterien efter resistensbest&auml;mning visat k&auml;nslighet f&ouml;r. Utan adekvat antibiotikabehandling kr&auml;vs tre negativa avf&ouml;ringsprover i f&ouml;ljd. Provtagning p&aring;b&ouml;rjas tidigast en vecka efter avslutad antibiotikabehandling.<br><br></p>\n<p>Patienter infekterade med EHEC och som arbetar inom riskyrken samt f&ouml;rskolebarn ska, <span style=\"color: #ff0000;\">med vissa undantag</span> (se <a href=\"https://slf.se/smittskyddslakarforeningen/smittskyddsblad/\" target=\"_blank\">Smittsyddsl&auml;karf&ouml;reningens smittskyddsblad</a>) f&ouml;ljas upp med minst ett negativt avf&ouml;ringsprov innan &aring;terg&aring;ng till arbete eller f&ouml;rskola.<br><br></p>\n<p>F&ouml;r &ouml;vriga diagnoser g&auml;ller att patienten b&ouml;r vara hemma fr&aring;n arbete, skola eller f&ouml;rskola s&aring; l&auml;nge diarr&eacute;/kr&auml;kningar p&aring;g&aring;r och minst ett dygn efter tillfrisknandet.<br><br></p>\n<p>Patienter med misst&auml;nkt infekti&ouml;s diarr&eacute; b&ouml;r, om sjukhusv&aring;rd kr&auml;vs, v&aring;rdas p&aring; enkelrum med egen toalett s&aring; l&auml;nge diarr&eacute;er eller kr&auml;kningar p&aring;g&aring;r. Risk f&ouml;r v&aring;rdrelaterad smitta &auml;r st&ouml;rst vid infektion med norovirus och C. difficile. Basala hygienrutiner ska alltid anv&auml;ndas i patientn&auml;ra v&aring;rdarbete; handhygien, handskar, skyddskl&auml;der och vid behov st&auml;nkskydd. Vid diarr&eacute;utbrott inom sjukv&aring;rden kontaktas avdelningen f&ouml;r v&aring;rdhygien f&ouml;r diskussion om smittskydds&aring;tg&auml;rder. Intagningsstopp eller kohortv&aring;rd, d&auml;r <span class=\"st\">s&auml;rskilt avdelad personal v&aring;rdar patienterna,</span> f&aring;r ibland tillgripas vid utbrott av vinterkr&auml;ksjuka<span style=\"color: #ff0000;\"> (3,18).</span><br><br></p>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "b4a721eb-2715-496b-bb15-e424ce037410",
+			"name": "b4a721eb-2715-496b-bb15-e424ce037410",
+			"type": "therapy",
+			"content": {
+				"number": "1",
+				"title": "Riktlinjer för handläggning av patienter med tarminfektion",
+				"id": "",
+				"text": "<table class=\"table table-bordered therapy-recommendations\" style=\"height: 77px;\" width=\"855\" height=\"77\">\r\n<tbody>\r\n<tr>\r\n<td colspan=\"4\">\r\n<p><strong>A) Initial bed&ouml;mning</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"4\">\r\n<ul>\r\n<li>Dehydrering (allm&auml;ntillst&aring;nd, pulsfrekvens, blodtryck, urinproduktion, &ouml;kad t&ouml;rst, torra slemhinnor, hudturgor, bukstatus).</li>\r\n<li>Sjukdomsduration, tidigare sjukdomar, l&auml;kemedelsbehandling.</li>\r\n<li>Sekretorisk diarr&eacute; (frekvent, vattentunn diarr&eacute; utan blod) eller inflammatorisk diarr&eacute; (feber, blodig diarr&eacute;, tenesmer).</li>\r\n<li>&Ouml;verv&auml;g slutenv&aring;rd: kraftig dehydrering, p&aring;verkat allm&auml;ntillst&aring;nd, kraftigt nedsatt immunf&ouml;rsvar.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\" colspan=\"4\">\r\n<p><strong>B) Symtomatisk behandling</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\" colspan=\"4\">\r\n<ul>\r\n<li>V&auml;tskebehandling.</li>\r\n<li>&Ouml;verv&auml;g loperamid till vuxna utan allm&auml;np&aring;verkan, h&ouml;g feber, blodig diarr&eacute; eller misstanke om C. difficile infektion.</li>\r\n<li>&Ouml;verv&auml;g ondansetron till barn med kr&auml;kningar f&ouml;r att underl&auml;tta oral rehydrering.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\" colspan=\"4\">\r\n<p><strong>C) Epidemiologisk och klinisk information</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\" colspan=\"4\">\r\n<ul>\r\n<li>Epidemiologiska ledtr&aring;dar: livsmedel, resa, antibiotika, f&ouml;rskola/v&aring;rdenhet/institution, restaurangbes&ouml;k, djur, bad, flera sjuka, riskyrke (livsmedelshantering, v&aring;rdarbete).</li>\r\n<li>Kliniska ledtr&aring;dar: frekvent vattnig diarr&eacute;, blodig diarr&eacute;, tenesmer, feber, buksm&auml;rtor, kr&auml;kningar, viktnedg&aring;ng.</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\" colspan=\"4\">\r\n<p><strong>D) Prov f&ouml;r mikrobiologisk diagnostik (alltid vid sv&aring;r, blodig eller l&aring;ngdragen diarr&eacute;, riskyrke eller ansamling av fall)</strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\" colspan=\"2\"><strong>D1 Samh&auml;llsf&ouml;rv&auml;rvad diarr&eacute;/turistdiarr&eacute;</strong></td>\r\n<td class=\"footNotes\">\r\n<p><strong>D2 V&aring;rdrelaterad diarr&eacute;</strong><strong></strong><em><strong> </strong></em></p>\r\n</td>\r\n<td class=\"footNotes\"><strong>D3 L&aring;ngvarig diarr&eacute; (<span style=\"color: #ff0000;\">mer &auml;n</span> 14&nbsp;dygn)<br><br></strong></td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\" colspan=\"2\">\r\n<ul>\r\n<li>Avf&ouml;ring<span style=\"text-decoration: line-through;\"></span>sodling<span style=\"color: #ff0000;\">/PCR</span></li>\r\n<li>Om utbrott/kr&auml;kningar: &auml;ven calicivirus</li>\r\n<li>Om blodig diarr&eacute;: &auml;ven EHEC</li>\r\n<li>Om antibiotikabehandling: &auml;ven C.&nbsp;difficile</li>\r\n<li>Om sm&aring;barn: &auml;ven rotavirus, calicivirus</li>\r\n<li>Om turistdiarr&eacute;: &ouml;verv&auml;g &auml;ven protozoer</li>\r\n</ul>\r\n</td>\r\n<td class=\"footNotes\">\r\n<ul>\r\n<li>C.&nbsp;difficile</li>\r\n<li>Om utbrott/kr&auml;kningar: <br>- &auml;ven avf&ouml;ringsodling<span style=\"color: #ff0000;\">/PCR</span><br>- &auml;ven calicivirus, om barn rotavirus</li>\r\n</ul>\r\n</td>\r\n<td class=\"footNotes\">\r\n<ul>\r\n<li>Avf&ouml;ringsodling/<span style=\"color: #ff0000;\">PCR</span></li>\r\n<li>&Ouml;verv&auml;g &auml;ven protozoer</li>\r\n<li>&Ouml;verv&auml;g inflammatorisk tarmsjukdom</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\" colspan=\"4\">Eventuell &ouml;vrig provtagning: CRP, blodstatus, elektrolytstatus, <span style=\"color: #ff0000;\">S-</span>kreatinin, <span style=\"color: #ff0000;\">B-</span>glukos</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\" colspan=\"4\">\r\n<p><strong>E) <span style=\"background-color: #ffffff;\">Antibiotikabehandling har i de flesta fall ingen eller endast marginell effekt men kan &ouml;verv&auml;gas vid vissa specifika tillst&aring;nd, se Terapirekommendationer.</span></strong></p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td class=\"footNotes\" colspan=\"4\">\r\n<p><strong>F) Ge smittskyddsinformation muntligt och skriftligt, smittsp&aring;ra samt rapportera vid behov till smittskyddsl&auml;kare och/eller v&aring;rdhygien</strong></p>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "8942c355-077f-4430-83e4-2119deeb9e98",
+			"name": "8942c355-077f-4430-83e4-2119deeb9e98",
+			"type": "therapy",
+			"content": {
+				"number": "2",
+				"title": "Behandling av bakteriella tarminfektioner",
+				"id": "",
+				"text": "<table>\r\n<tbody>\r\n<tr>\r\n<td colspan=\"6\"><strong></strong><strong></strong>\r\n<ul>\r\n<li>F&ouml;r empirisk behandling av sv&aring;r enterit, se text.</li>\r\n<li>Beg&auml;r alltid resistensbest&auml;mning om antibiotikabehandling &ouml;verv&auml;gs <span class=\"updated\">(1,2,4,5,10,11,12,15,19)</span>.&nbsp;</li>\r\n</ul>\r\n<strong></strong><strong></strong></td>\r\n</tr>\r\n<tr>\r\n<td><strong>Tarmpatogen</strong></td>\r\n<td style=\"min-width: 5em;\"><strong>L&auml;kemedel</strong></td>\r\n<td>\r\n<p><strong>Dos&nbsp;(vuxna)</strong></p>\r\n</td>\r\n<td>\r\n<p><strong>Dos (barn)</strong></p>\r\n</td>\r\n<td>\r\n<p><strong>Behandlingstid</strong></p>\r\n</td>\r\n<td><strong>Kommentar</strong></td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"6\"><strong>Campylobacter <span class=\"updated\">(5)</span><br></strong></td>\r\n</tr>\r\n<tr>\r\n<td><em></em></td>\r\n<td rowspan=\"2\" style=\"height: 6em;\"><span class=\"updated\">Azitromycin</span><br> <br> <span class=\"updated\">eller</span><br> <br> <span class=\"updated\">Erytromycin</span></td>\r\n<td>\r\n<p><span class=\"updated\">500&nbsp;mg&nbsp;&times;&nbsp;1</span></p>\r\n</td>\r\n<td><span class=\"updated\">10 mg/kg (max 500&nbsp;mg)&nbsp;&times;&nbsp;1</span></td>\r\n<td><span class=\"updated\">3&nbsp;dygn</span></td>\r\n<td rowspan=\"2\">Behandling &ouml;verv&auml;gs endast till patienter med sv&aring;r enterit.</td>\r\n</tr>\r\n<tr>\r\n<td></td>\r\n<td><span class=\"updated\">500&nbsp;mg&nbsp;&times;&nbsp;2</span></td>\r\n<td>\r\n<p><span class=\"updated\">&lt;&nbsp;12 &aring;r: 20&nbsp;mg/kg</span></p>\r\n<p><span class=\"updated\">(max 500&nbsp;mg)&nbsp;&times;&nbsp;2</span></p>\r\n</td>\r\n<td><span class=\"updated\">5&ndash;7&nbsp;dygn</span></td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"6\"><strong><span class=\"updated\">Clostridioides</span> difficile <span class=\"updated\">(2,13,14,20,21)</span></strong></td>\r\n</tr>\r\n<tr>\r\n<td>Asymtomatisk, mild infektion</td>\r\n<td colspan=\"4\">Ingen behandling<sup>a</sup></td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td><span class=\"updated\">Medelsv&aring;r</span> infektion</td>\r\n<td>Metronidazol</td>\r\n<td>400-500 mg &times;&nbsp;3</td>\r\n<td>&gt; 8 veckor: 7,5&nbsp;mg/kg&nbsp;&times;&nbsp;3</td>\r\n<td>10 dygn</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td><span class=\"updated\">Medelsv&aring;r</span> infektion <span class=\"updated\">med terapisvikt eller sv&aring;r infektion</span></td>\r\n<td>Vancomycin</td>\r\n<td>125&nbsp;mg &times;&nbsp;4</td>\r\n<td>10&nbsp;mg/kg&nbsp;&times;&nbsp;4</td>\r\n<td>10 dygn</td>\r\n<td><span class=\"updated\">Vid sv&aring;r komplicerad CDI/fulminant kolit, konsultera infektionsspecialist.</span></td>\r\n</tr>\r\n<tr>\r\n<td rowspan=\"2\">F&ouml;rsta recidiv</td>\r\n<td rowspan=\"2\" style=\"height: 8em;\"><span class=\"updated\">Vancomycin</span><br> <br> <span class=\"updated\">eller</span><br> <br> <span class=\"updated\">Metronidazol</span></td>\r\n<td style=\"height: 4em;\"><span class=\"updated\">125&nbsp;mg &times;&nbsp;4</span></td>\r\n<td><span class=\"updated\">10&nbsp;mg/kg&nbsp;&times;&nbsp;4</span></td>\r\n<td>10 dygn</td>\r\n<td rowspan=\"2\">F&ouml;rekommer i 20&ndash;30&nbsp;% av fallen.</td>\r\n</tr>\r\n<tr>\r\n<td style=\"height: 4em;\"><span class=\"updated\">400-500 mg &times;&nbsp;3</span></td>\r\n<td><span class=\"updated\">&gt;&nbsp;8&nbsp;veckor: 7,5&nbsp;mg/kg&nbsp;&times;&nbsp;3</span></td>\r\n<td>10 dygn</td>\r\n</tr>\r\n<tr>\r\n<td style=\"height: 6em;\">Upprepade recidiv</td>\r\n<td colspan=\"4\">Fekal microbiota transplantation (FMT)<sup>b</sup><br> <br> eller<br> <br> Vancomycin i avtagande och intermittent dosering<sup>b</sup></td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td rowspan=\"4\">&Ouml;vriga l&auml;kemedel</td>\r\n<td style=\"height: 3em;\">Fidaxomicin</td>\r\n<td>200 mg &times; 2</td>\r\n<td style=\"text-align: center;\"><span class=\"updated\">-</span></td>\r\n<td>10 dygn</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"4\"><span class=\"updated\"><span class=\"updated\">Fidaxomicin &auml;r ett lokalt verkande antibiotikum som har samma effekt som vancomycin men som ger <span class=\"updated\">betydligt</span> f&auml;rre recidiv. Preparatet &auml;r mycket dyrt, <span class=\"updated\">men kan &ouml;verv&auml;gas</span> till utvalda fall <span class=\"updated\">av medelsv&aring;r eller sv&aring;r CDI</span> med mycket h&ouml;g recidivrisk <span class=\"updated\">samt till f&ouml;rstag&aring;ngsrecidiv d&auml;r risken f&ouml;r upprepade &aring;terfall bed&ouml;ms vara h&ouml;g.</span></span></span></td>\r\n<td><span class=\"updated\">&nbsp;</span></td>\r\n</tr>\r\n<tr>\r\n<td style=\"height: 3em;\"><span class=\"updated\">Bezlotoxumab</span></td>\r\n<td><span class=\"updated\">10 mg/kg (i.v.)</span></td>\r\n<td style=\"text-align: center;\"><span class=\"updated\">-</span></td>\r\n<td><span class=\"updated\">eng&aring;ngsdos </span></td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"4\"><span class=\"updated\">Bezlotoxumab &auml;r en human monoklonal toxinantikropp som binder med h&ouml;g affinitet till C. difficile toxin B och neutraliserar dess aktivitet. L&auml;kemedlet &auml;r registrerat 2017 och avsett f&ouml;r prevention av recidiverande CDI hos vuxna med h&ouml;g risk f&ouml;r recidiv av CDI. Bezlotoxumab &auml;r inte en behandling mot CDI och har ingen effekt p&aring; den p&aring;g&aring;ende CDI-episoden. L&auml;kemedlet ges som en intraven&ouml;s eng&aring;ngsinfusion under antibakteriell behandling mot CDI f&ouml;r att minsta risken f&ouml;r recidiv. Erfarenheten av preparatet i Sverige &auml;r &auml;nnu mycket begr&auml;nsad.</span></td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"6\"><strong>Enterohemorragisk E. coli (EHEC) <span class=\"updated\">(22,23)</span><span style=\"background-color: #ffff00;\"></span></strong><br><sup></sup></td>\r\n</tr>\r\n<tr>\r\n<td><em></em></td>\r\n<td colspan=\"4\">Behandlas inte med antibiotika<sup>c</sup></td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"6\"><strong>Salmonella <span class=\"updated\">(19)<span style=\"background-color: #ffff00;\"></span><em><br></em></span></strong></td>\r\n</tr>\r\n<tr>\r\n<td rowspan=\"3\">Salmonellasepsis; tyfoid/paratyfoid</td>\r\n<td rowspan=\"3\" style=\"height: 9em;\">Ciprofloxacin<br> <br> eller<br><br> Ceftriaxon<br> <br> eller<br><br> Azitromycin</td>\r\n<td>500&ndash;750&nbsp;mg &times;&nbsp;2&nbsp;per&nbsp;os</td>\r\n<td>10&ndash;15&nbsp;mg/kg (max&nbsp;500&nbsp;mg)&nbsp;&times;&nbsp;2 per&nbsp;os</td>\r\n<td>10&ndash;14 dygn</td>\r\n<td rowspan=\"3\">Till resen&auml;rer fr&aring;n Asien rekommenderas i f&ouml;rsta hand ceftriaxon eller azitromycin, om resistensbest&auml;mning inte finns tillg&auml;nglig.</td>\r\n</tr>\r\n<tr>\r\n<td>2&ndash;3&nbsp;g&nbsp;&times;&nbsp;1 (intraven&ouml;st)</td>\r\n<td>50&nbsp;mg/kg (max&nbsp;2&nbsp;g)&nbsp;&times;&nbsp;1 (intraven&ouml;st)</td>\r\n<td>\r\n<p>10&ndash;14 dygn</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>500&nbsp;mg &times;&nbsp;1</td>\r\n<td>20&nbsp;mg/kg (max&nbsp;500&nbsp;mg)&nbsp;&times;&nbsp;1</td>\r\n<td>\r\n<p>7 dygn</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td rowspan=\"2\">Salmonellaenterit</td>\r\n<td>Ciprofloxacin</td>\r\n<td>500 mg &times;&nbsp;2</td>\r\n<td>10&ndash;15&nbsp;mg/kg (max&nbsp;500&nbsp;mg)&nbsp;&times;&nbsp;2</td>\r\n<td>minst 5 dygn</td>\r\n<td rowspan=\"2\"><br>\r\n<p>Behandling &ouml;verv&auml;gs endast till patienter med;</p>\r\n<ul>\r\n<li>sv&aring;r enterit, fr.a. &aring;ldringar och sm&aring;barn</li>\r\n<li>kraftigt nedsatt immunf&ouml;rsvar</li>\r\n<li>proteser, k&auml;rlgrafter, k&auml;nt aneurysm</li>\r\n<li>aktiv inflammatorisk tarmsjukdom</li>\r\n</ul>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>Azitromycin</td>\r\n<td>500&nbsp;mg&nbsp;&times;&nbsp;1</td>\r\n<td>10&nbsp;mg/kg (max 500&nbsp;mg) &times;&nbsp;1</td>\r\n<td>\r\n<p>3 dygn</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>Salmonella, smittb&auml;rare</td>\r\n<td>Ciprofloxacin</td>\r\n<td>500&nbsp;mg&nbsp;&times;&nbsp;2</td>\r\n<td>10&nbsp;mg/kg (max&nbsp;500&nbsp;mg)&nbsp;&times;&nbsp;2</td>\r\n<td>\r\n<p>2&ndash;3&nbsp;veckor</p>\r\n<p>(barn&nbsp;10&nbsp;dygn)</p>\r\n</td>\r\n<td>\r\n<p>Behandling &ouml;verv&auml;gs vid smittb&auml;rartid l&auml;ngre &auml;n 3-6 m&aring;nader (&ouml;verv&auml;g gallfokus hos vuxna). Barn blir s&auml;llan kroniska b&auml;rare av salmonella och behandlas endast om starka indikationer f&ouml;religger. R&aring;dg&ouml;r vid behov med infektions- eller barnl&auml;kare.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"6\"><strong>Shigella <span class=\"updated\">(12) <span style=\"background-color: #ffff00;\"><em><br></em></span></span></strong></td>\r\n</tr>\r\n<tr>\r\n<td></td>\r\n<td rowspan=\"2\" style=\"height: 6em;\">Ciprofloxacin<br> <br> <span class=\"updated\">eller</span><br> <br> Azitromycin</td>\r\n<td>500&nbsp;mg&nbsp;&times;&nbsp;2</td>\r\n<td>10&nbsp;mg/kg (max&nbsp;500&nbsp;mg)&nbsp;&times;&nbsp;2</td>\r\n<td>\r\n<p>3 dygn</p>\r\n</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td></td>\r\n<td>500&nbsp;mg&nbsp;&times;&nbsp;1</td>\r\n<td>10&nbsp;mg/kg (max&nbsp;500&nbsp;mg)&nbsp;&times;&nbsp;1</td>\r\n<td>\r\n<p>3 dygn</p>\r\n</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"6\"><strong>Yersinia enterocolitica</strong></td>\r\n</tr>\r\n<tr>\r\n<td><em></em></td>\r\n<td>Doxycyklin</td>\r\n<td>\r\n<p>100&nbsp;mg&nbsp;&times;&nbsp;1</p>\r\n</td>\r\n<td>\r\n<p>&gt;&nbsp;12&nbsp;&aring;r: 100&nbsp;mg&nbsp;&times;&nbsp;1</p>\r\n</td>\r\n<td>10 dygn</td>\r\n<td rowspan=\"2\">Behandling &ouml;verv&auml;gs endast till patienter med sv&aring;r eller l&aring;ngdragen enterit.</td>\r\n</tr>\r\n<tr>\r\n<td></td>\r\n<td>Ciprofloxacin</td>\r\n<td>\r\n<p>500&nbsp;mg&nbsp;&times;&nbsp;2</p>\r\n</td>\r\n<td>\r\n<p>10&nbsp;mg/kg (max&nbsp;500&nbsp;mg)&nbsp;&times;&nbsp;2</p>\r\n</td>\r\n<td>10 dygn</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"6\">\r\n<ol style=\"list-style-type: lower-alpha;\">\r\n<li>S&auml;tt om m&ouml;jligt ut antibiotika (25&nbsp;% l&auml;ker inom 2-3&nbsp;dygn utan specifik terapi)</li>\r\n<li>Konsultera infektionsspecialist</li>\r\n<li>Risken f&ouml;r HUS &auml;r m&ouml;jligen h&ouml;gre f&ouml;r patienter som behandlas med antibiotika</li>\r\n</ol>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "44ea12c6-18ce-456a-8e52-69d5559028e2",
+			"name": "44ea12c6-18ce-456a-8e52-69d5559028e2",
+			"type": "therapy",
+			"content": {
+				"number": "3",
+				"title": "Behandling av intestinala protozoer (24,25)",
+				"id": "",
+				"text": "<table class=\"table table-bordered therapy-recommendations\">\r\n<tbody>\r\n<tr>\r\n<td><strong>Tarmpatogen</strong></td>\r\n<td><strong>L&auml;kemedel</strong></td>\r\n<td><strong>Dos (vuxna)</strong></td>\r\n<td><strong>Dos (barn)</strong></td>\r\n<td><strong>Behandlingstid</strong></td>\r\n<td><strong>Kommentar</strong></td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"6\">\r\n<p><strong>Blastocystis hominis</strong> (om behandling &ouml;verv&auml;gs)</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td></td>\r\n<td>Metronidazol</td>\r\n<td>\r\n<p>500&nbsp;<span style=\"text-decoration: line-through;\"></span>mg&nbsp;&times;&nbsp;3</p>\r\n</td>\r\n<td>\r\n<p>12,5&nbsp;mg/kg (max&nbsp;600&nbsp;mg)&nbsp;&times;&nbsp;3</p>\r\n</td>\r\n<td>\r\n<p>10 dygn</p>\r\n</td>\r\n<td>\r\n<p>Parasitens roll som enteropatogen &auml;r oklar, m&ouml;jligen kan vissa subtyper orsaka symtom.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td></td>\r\n<td>Trimetoprim-sulfa</td>\r\n<td>\r\n<p>160/800&nbsp;mg&nbsp;&times;&nbsp;2</p>\r\n</td>\r\n<td>\r\n<p>4/20&nbsp;mg/kg (max&nbsp;160/800&nbsp;mg)&nbsp;&times;&nbsp;2</p>\r\n</td>\r\n<td>\r\n<p>7 dygn</p>\r\n</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"6\"><strong>Cryptosporidium </strong>(om behandling &ouml;verv&auml;gs)<strong><br></strong></td>\r\n</tr>\r\n<tr>\r\n<td rowspan=\"2\">\r\n<p>Paromomycin<sup>a<br><br></sup></p>\r\n<p>kombinerat med</p>\r\n<p>Azitromycin <br><br></p>\r\n<p><strong>eller med<br></strong></p>\r\n<p><strong></strong></p>\r\n<p>Nitazoxanide<sup>a</sup></p>\r\n</td>\r\n<td>\r\n<p>Paromomycin<sup>a</sup></p>\r\n<p>&nbsp;</p>\r\n<p>samt</p>\r\n<p></p>\r\n<p>Azitromycin</p>\r\n</td>\r\n<td>\r\n<p>500&nbsp;mg&nbsp;&times;&nbsp;3-4</p>\r\n<p>&nbsp;</p>\r\n<p>samt</p>\r\n<p></p>\r\n<p>500&nbsp;mg&nbsp;&times;&nbsp;1</p>\r\n</td>\r\n<td>\r\n<p>10&nbsp;mg/kg (max&nbsp;500&nbsp;mg)&nbsp;&times;&nbsp;3</p>\r\n<p></p>\r\n<p>samt</p>\r\n<p></p>\r\n<p>10&nbsp;mg/kg (max&nbsp;500&nbsp;mg)&nbsp;&times;&nbsp;1</p>\r\n</td>\r\n<td>\r\n<p>7-14 dygn</p>\r\n<p></p>\r\n<p>samt</p>\r\n<p></p>\r\n<p>5-7 dygn</p>\r\n</td>\r\n<td rowspan=\"2\">\r\n<p>Behandling &ouml;verv&auml;gs endast till patienter med kraftigt nedsatt immunf&ouml;rsvar</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>Paromomycin<sup>a</sup></p>\r\n<p></p>\r\n<p>samt</p>\r\n<p></p>\r\n<p>Nitazoxanide<sup>a</sup></p>\r\n</td>\r\n<td>\r\n<p>500&nbsp;mg&nbsp;&times;&nbsp;3-4</p>\r\n<p>&nbsp;</p>\r\n<p>samt</p>\r\n<p></p>\r\n<p>500&nbsp;mg&nbsp;&times;&nbsp;2</p>\r\n</td>\r\n<td>\r\n<p>10&nbsp;mg/kg (max&nbsp;500&nbsp;mg)&nbsp;&times;&nbsp;3</p>\r\n<p></p>\r\n<p>samt</p>\r\n<p></p>\r\n<p>1-3&nbsp;&aring;r:&nbsp;100&nbsp;mg&nbsp;&times;&nbsp;2</p>\r\n<p>4-11&nbsp;&aring;r:&nbsp;200&nbsp;mg&nbsp;&times;&nbsp;2</p>\r\n<p>&gt;&nbsp;12&nbsp;&aring;r:&nbsp;500&nbsp;mg&nbsp;&times;&nbsp;2</p>\r\n</td>\r\n<td>\r\n<p>7-14 dygn</p>\r\n<p></p>\r\n<p>samt</p>\r\n<p></p>\r\n<p>14 dygn</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"6\"><strong>Cyclospora cayetanensis</strong></td>\r\n</tr>\r\n<tr>\r\n<td></td>\r\n<td>\r\n<p>Trimetoprim-sulfa</p>\r\n</td>\r\n<td>\r\n<p>160/800&nbsp;mg&nbsp;&times;&nbsp;2</p>\r\n</td>\r\n<td>\r\n<p>4/20&nbsp;mg/kg (max&nbsp;160/800&nbsp;mg)&nbsp;&times;&nbsp;2</p>\r\n</td>\r\n<td>7 dygn</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"6\"><strong>Dientam&ouml;ba fragilis</strong> (om behandling &ouml;verv&auml;gs)<strong><br></strong></td>\r\n</tr>\r\n<tr>\r\n<td><em></em></td>\r\n<td>\r\n<p>Metronidazol</p>\r\n</td>\r\n<td>\r\n<p>500&nbsp;mg&nbsp;&times;&nbsp;3</p>\r\n</td>\r\n<td>\r\n<p>12,5&nbsp;mg/kg (max&nbsp;600&nbsp;mg)&nbsp;&times;&nbsp;3</p>\r\n</td>\r\n<td>10 dygn</td>\r\n<td rowspan=\"2\">\r\n<p>G&auml;ller om behandling &ouml;verv&auml;gs. Vanligen sj&auml;lvl&auml;kande.</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td><em></em></td>\r\n<td>\r\n<p>Doxycyklin</p>\r\n</td>\r\n<td>\r\n<p>100&nbsp;mg&nbsp;&times;&nbsp;2</p>\r\n</td>\r\n<td></td>\r\n<td>10 dygn</td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"6\"><strong>Entam&ouml;ba histolytica</strong></td>\r\n</tr>\r\n<tr>\r\n<td rowspan=\"4\">\r\n<p>Symtomatisk enterit<br><br><br><br></p>\r\n<p>N&aring;got av alternativen&nbsp;a)<br>f&ouml;ljt av <br>n&aring;got av alternativen&nbsp;b)</p>\r\n</td>\r\n<td rowspan=\"2\">\r\n<p>a)&nbsp;Metronidazol</p>\r\n<p></p>\r\n<p style=\"text-align: center;\"><strong>eller</strong></p>\r\n<p style=\"text-align: center;\"><strong></strong></p>\r\n<p>a)&nbsp;Tinidazol</p>\r\n</td>\r\n<td>\r\n<p>800&nbsp;mg&nbsp;&times;&nbsp;3</p>\r\n</td>\r\n<td>\r\n<p>12,5&nbsp;mg/kg</p>\r\n<p>(max <span style=\"color: #ff0000;\">500</span>&nbsp;mg)&nbsp;&times;&nbsp;3</p>\r\n</td>\r\n<td>\r\n<p>7&ndash;10 dygn</p>\r\n</td>\r\n<td rowspan=\"4\"></td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>2&nbsp;g&nbsp;&times;&nbsp;1</p>\r\n</td>\r\n<td>\r\n<p>&gt;&nbsp;25&nbsp;kg: 50&nbsp;mg/kg (max&nbsp;2&nbsp;g)&nbsp;&times;&nbsp;1</p>\r\n</td>\r\n<td>\r\n<p>3 dygn</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td rowspan=\"2\">\r\n<p>b)&nbsp;Diloxanidfurorat<sup>a <br></sup></p>\r\n<p><sup></sup></p>\r\n<p style=\"text-align: center;\"><strong>eller</strong></p>\r\n<p style=\"text-align: center;\"><strong></strong></p>\r\n<p>b)&nbsp;Paromomycin<sup>a</sup></p>\r\n</td>\r\n<td>\r\n<p>500&nbsp;mg&nbsp;&times;&nbsp;3</p>\r\n</td>\r\n<td>\r\n<p>7&nbsp;mg/kg (max&nbsp;500&nbsp;mg)&nbsp;&times;&nbsp;3</p>\r\n</td>\r\n<td>\r\n<p>10 dygn</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>500&nbsp;mg &times;&nbsp;3</p>\r\n</td>\r\n<td>\r\n<p>10&nbsp;mg/kg (max 500&nbsp;mg)&nbsp;&times;&nbsp;3</p>\r\n</td>\r\n<td>\r\n<p>10 dygn</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td rowspan=\"4\">\r\n<p>Am&ouml;baabcess<br><br><br><br></p>\r\n<p>N&aring;got av alternativen&nbsp;a)<br>f&ouml;ljt av <br>n&aring;got av alternativen&nbsp;b)<br><br><br></p>\r\n</td>\r\n<td rowspan=\"2\">\r\n<p>a) Metronidazol</p>\r\n<p></p>\r\n<p style=\"text-align: center;\"><strong>eller</strong></p>\r\n<p style=\"text-align: center;\"><strong></strong></p>\r\n<p>a) Tinidazol</p>\r\n</td>\r\n<td rowspan=\"2\">\r\n<p>800&nbsp;mg&nbsp;&times;&nbsp;3<br><br></p>\r\n<p></p>\r\n<p>2&nbsp;g&nbsp;&times;&nbsp;1<br><br></p>\r\n</td>\r\n<td rowspan=\"2\">\r\n<p></p>\r\n<p></p>\r\n<p>12,5&nbsp;mg/kg</p>\r\n<p>(max <span style=\"color: #ff0000;\">500&nbsp;mg</span>)&nbsp;&times;&nbsp;3</p>\r\n<p></p>\r\n<p>eller</p>\r\n<p></p>\r\n<p></p>\r\n<p><span style=\"color: #ff0000;\">&gt;25 kg: 50 mg/kg (max 2 g) x 1</span></p>\r\n<p></p>\r\n<p></p>\r\n</td>\r\n<td>\r\n<p>10 dygn</p>\r\n</td>\r\n<td rowspan=\"4\"></td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>5 dygn</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td rowspan=\"2\">\r\n<p>b) Diloxanidfurorat<sup>a</sup></p>\r\n<p><sup></sup></p>\r\n<p style=\"text-align: center;\"><strong>eller</strong></p>\r\n<p style=\"text-align: center;\"><strong></strong></p>\r\n<p>b) Paromomycin<sup>a</sup></p>\r\n</td>\r\n<td rowspan=\"2\">\r\n<p>500&nbsp;mg&nbsp;&times;&nbsp;3<br><br></p>\r\n<p></p>\r\n<p>500&nbsp;mg&nbsp;&times;&nbsp;3<br><br></p>\r\n</td>\r\n<td>\r\n<p>7&nbsp;mg/kg (max&nbsp;500&nbsp;mg)&nbsp;&times;&nbsp;3</p>\r\n</td>\r\n<td>\r\n<p>10 dygn</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>\r\n<p>10&nbsp;mg/kg (max&nbsp;500&nbsp;mg)&nbsp;&times;&nbsp;3</p>\r\n</td>\r\n<td>\r\n<p>10 dygn</p>\r\n</td>\r\n</tr>\r\n<tr>\r\n<td>Asymtomatisk</td>\r\n<td>\r\n<p>Diloxanidfuroat<sup>a</sup></p>\r\n</td>\r\n<td>\r\n<p>500&nbsp;mg&nbsp;&times;&nbsp;3</p>\r\n</td>\r\n<td>\r\n<p>7&nbsp;mg/kg (max&nbsp;500&nbsp;mg)&nbsp;&times;&nbsp;3</p>\r\n</td>\r\n<td>\r\n<p>10 dygn</p>\r\n</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td></td>\r\n<td>\r\n<p>Paromomycin<sup>a</sup></p>\r\n</td>\r\n<td>\r\n<p>500&nbsp;mg&nbsp;&times;&nbsp;3</p>\r\n</td>\r\n<td>\r\n<p>10&nbsp;mg/kg (max&nbsp;500&nbsp;mg)&nbsp;&times;&nbsp;3</p>\r\n</td>\r\n<td>\r\n<p>10 dygn</p>\r\n</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"6\"><strong>Giardia intestinalis</strong></td>\r\n</tr>\r\n<tr>\r\n<td></td>\r\n<td>\r\n<p>Tinidazol</p>\r\n</td>\r\n<td>\r\n<p>2&nbsp;g&nbsp;&times;&nbsp;1</p>\r\n</td>\r\n<td>&gt;&nbsp;25&nbsp;kg: 2&nbsp;g&nbsp;&times;&nbsp;1</td>\r\n<td>\r\n<p>Eng&aring;ngsdos</p>\r\n</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td></td>\r\n<td>\r\n<p>Metronidazol</p>\r\n</td>\r\n<td>\r\n<p>600&nbsp;mg&nbsp;&times;&nbsp;2</p>\r\n</td>\r\n<td>\r\n<p>12,5&nbsp;mg/kg (max&nbsp;600&nbsp;mg)&nbsp;&times;&nbsp;2</p>\r\n</td>\r\n<td>\r\n<p>6 dygn</p>\r\n</td>\r\n<td></td>\r\n</tr>\r\n<tr>\r\n<td colspan=\"6\">a. Licenspreparat</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p></p>"
+			},
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "false"
+				}
+			}
+		},
+		{
+			"id": "33b49744-bf94-4e9f-a46a-64325ef3ee32",
+			"name": "b07befed-7436-4515-bad4-71d17c638bc2",
+			"type": "references",
+			"content": "<h2 class=\"referenceHeader\" id=\"Referenser\">Referenser</h2>\n<ol class=\"references\"><li id=\"reference_1\">Jertborn M, Svenungsson B. Infekti&ouml;sa tarmsjukdomar. Redakt&ouml;r Iwarson S, Infektionsmedicin epidemiologi, klinik och terapi, 6:e upplagan, sid. 175 &ndash; 203. S&auml;ve f&ouml;rlag, 2014. <a href=\"https://www.bokus.com/bok/9789197810869/infektionsmedicin-epidemiologi-klinik-terapi/\" target=\"_blank\">ISBN9789197810869</a></li>\n<li id=\"reference_2\">Bagdasarian N, Rao K, Malani PN. Diagnosis and treatment of Clostridium difficile in adults. A systematic review. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/25626036\" target=\"_blank\">JAMA;2015:313:398-408</a>.</li>\n<li id=\"reference_3\">Vinterkr&auml;ksjuka i v&aring;rden. <a href=\"https://www.folkhalsomyndigheten.se/contentassets/b6ac0268061d4fce99e057a21b25e6b7/vinterkraksjuka-i-varden.pdf\" target=\"_blank\">Folkh&auml;lsomyndigheten 2014</a>.<span></span></li>\n<li id=\"reference_4\">Svenungsson B. Akuta tarminfektioner hos vuxna. Regionalt v&aring;rdprogram. <a href=\"http://infektion.net/wp-content/uploads/2017/05/reg_vardprog-akut_tarminfektioner_hos_vuxna2014.pdf\" target=\"_blank\">Stockholms l&auml;ns landsting 2014</a>.</li>\n<li id=\"reference_5\">Kaakoush NO, Casta&ntilde;o-Rodr&iacute;guez N, Mitchell HM, Man SM. Global Epidemiology of Campylobacter Infection. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/26062576\" target=\"_blank\">Clin Microbiol Rev 2015;28:687-720</a>.</li>\n<li id=\"reference_6\">Riddle MS, Connor BA, Beeching NJ, DuPont HL, Hamer DH, Kozarsky P, et al. Guidelines for the prevention and treatment of travelers' diarrhea: a graded expert panel report. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/28521004\" target=\"_blank\">J Travel Med 2017;24(suppl 1):S57-S74</a>.</li>\n<li id=\"reference_7\">Intraven&ouml;s v&auml;tskebehandling till barn &ndash; behandlingsrekommendation. <a href=\"https://lakemedelsverket.se/malgrupp/Halso---sjukvard/Behandlings--rekommendationer/Behandlingsrekommendation---listan/Intravenos-vatskebehandling-till-barn/\" target=\"_blank\">Information fr&aring;n L&auml;kemedelsverket 2018;29:25-49</a>.</li>\n<li id=\"reference_8\">Guarino A, Ashkenazi S, Gendrel D, Lo Vecchio A, Shamir R, Szajewska H. European Society for Pediatric Gastroenterology, Hepatology, and Nutrition/European Society for Pediatric Infectious Diseases evidence-based guidelines for the management of acute gastroenteritis in children in Europe: update 2014. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/24739189\" target=\"_blank\"><span>J Pediatr Gastroenterol Nutr</span> 2014;59:132-52</a>.</li>\n<li id=\"reference_9\"><span> </span><span>Bergemalm J, Ludvigsson JF. Ondansetron minskar kr&auml;kningar hos barn med akut gastroenterit. <a href=\"http://lakartidningen.se/Klinik-och-vetenskap/Klinisk-oversikt/2018/02/Ondansetron-minskar-krakningar-hos-barn-med-akut-gastroenterit/\" target=\"_blank\">L&auml;kartidningen. 2018;115:EWLP</a>.</span></li>\n<li id=\"reference_10\">Shane AL, Mody RK, Crump JA, Tarr PI, Steiner TS, Kotloff K, et al. 2017 Infectious Diseases Society of America Clinical Practice Guidelines for the Diagnosis and Management of Infectious Diarrhea. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/29194529\" target=\"_blank\"><span>Clin Infect Dis</span> 2017;65:1963-73</a>.</li>\n<li id=\"reference_11\">Riddle MS, DuPont HL, Connor BA Clinical Guideline: Diagnosis, Treatment, and Prevention of Acute Diarrheal Infections in Adults. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/27068718\" target=\"_blank\"><span>Am J Gastroenterol</span> 2016;111:602-22</a>.</li>\n<li id=\"reference_12\">Christopher PR, David KV, John SM, Sankarapandian V. Antibiotic therapy for Shigella dysentery. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/20687081\">Cochrane Database Syst Rev 2010;4:CD006784</a>.</li>\n<li id=\"reference_13\">Debast SB, Bauer MP, Kuijper EJ. European Society of Clinical Microbiology and Infectious Diseases: update of the treatment guidance document for Clostridium difficile infection. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/24118601/pubmed/24118601\">Clin Microbiol Infect 2014;20 Suppl 2:1-26</a>.</li>\n<li id=\"reference_14\">Clostridium difficile infektion. V&aring;rdprogram 2017. <a href=\"http://infektion.net/vardprogram/4159-2/#\" target=\"_blank\">Svenska infektionsl&auml;karf&ouml;reningen.</a></li>\n<li id=\"reference_15\">DuPont Persistent Diarrhea: A Clinical Review. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/27357241\" target=\"_blank\">JAMA 2016;315:2712-23</a>.</li>\n<li id=\"reference_16\">Allen SJ, Martinez EG, Gregorio GV, Dans LF. Probiotics for treating acute infectious diarrhea. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/21069673\">Cochrane database Syst Rev 2010;CD003048</a>.</li>\n<li id=\"reference_17\">Hungerford D, Smith K, Tucker A, Iturriza-G&oacute;mara M, Vivancos R, McLeonard C, et al. Population effectiveness of the pentavalent and monovalent rotavirus vaccines: a systematic review and meta-analysis of observational studies. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/28810833\" target=\"_blank\"><span>BMC Infect Dis</span> 2017;17:2-19</a>.</li>\n<li id=\"reference_18\">Clostridium difficile-infektion. Kunskapsunderlag och rekommendationer f&ouml;r &ouml;vervakning, prevention och utbrottshantering. <a href=\"https://www.folkhalsomyndigheten.se/publicerat-material/publikationsarkiv/c/clostridium-difficile-infektion/\" target=\"_blank\">Folkh&auml;lsomyndigheten 2017</a>.</li>\n<li id=\"reference_19\">Onwuezobe IA, Oshun PO, Odigwe CC. Antimicrobials for treating symptomatic non-typhoidal Salmonella infection. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/23152205\">Cochrane Database Syst Rev. 2012;11:CD001167</a>.</li>\n<li id=\"reference_20\">Kassam Z, Lee CH, Yuan Y, Hunt RH. Fecal microbiota transplantation for Clostridium difficile infection: systematic review and meta-analysis. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/23511459\">Am J Gastroenterol 2013;108:500-8.</a></li>\n<li id=\"reference_21\">Beinortas T, Burr NE, Wilcox MH, Subramanian V. Comparative efficacy of treatments for Clostridium difficile infection: a systematic review and network meta-analysis. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/30025913\" target=\"_blank\">Lancet Infect Dis 2018;18:1035-44</a>.</li>\n<li id=\"reference_22\">Freedman SB, Xie J, Neufeld MS, Hamilton WL, Hartling L, Tarr PI, et al. Shiga Toxin-Producing Escherichia coli Infection, Antibiotics, and Risk of Developing Hemolytic Uremic Syndrome: A Meta-analysis. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/26917812\" target=\"_blank\">Clin Infect Dis 2016;62:1251-58</a>.</li>\n<li id=\"reference_23\"><span>Agger</span> M, Scheutz F, Villumsen S, M&oslash;lbak K, Petersen AM. Antibiotic treatment of verocytotoxin-producing Escherichia coli (VTEC) infection: a systematic review and a proposal. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/26093376\" target=\"_blank\">J Antimicrob Chemother 2015;70:2440-6.</a></li>\n<li id=\"reference_24\">Showler AJ, Wilson ME, Kain KC, Boggild AK. Parasitic diseases in travelers: a focus on therapy. <a href=\"https://www.tandfonline.com/doi/abs/10.1586/14787210.2014.892827?journalCode=ierz20\">Expert Rev Anti Infect Ther 2014;12:497-521</a>.</li>\n<li id=\"reference_25\">Kappagoda S, Singh U, Blackburn BG. Antiparasitic therapy. <a href=\"https://www.ncbi.nlm.nih.gov/pubmed/21628620\">Mayo Clin Proc 2011;86:561-83.</a></li>\n</ol>",
+			"settings": {
+				"preprocessors": {
+					"idinjection.js": "false",
+					"fixlinkstoself.js": "false"
+				},
+				"postprocessors": {
+					"boxlinks.js": "false",
+					"genericas.js": "false",
+					"pagefootnotes.js": "false",
+					"references.js": "true"
+				}
+			}
+		}
+	],
+	"type": "file",
+	"path": "/kapitel/mage-tarm/infektioner-i-tarmkanalen.json",
+	"indexed": "true",
+	"modified": "2018-09-11 17:12"
+}
