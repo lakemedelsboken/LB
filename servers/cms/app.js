@@ -23,13 +23,6 @@ scrypt.verify.config.keyEncoding = "utf8";
 scrypt.verify.config.hashEncoding = "base64";
 
 var secretSettingsPath = path.join(__dirname, "..", "..", "settings", "secretSettings.json");
-var secretApikeysPath =  "";
-
-if(__dirname.indexOf("vagrant") !== -1) {
-	secretApikeysPath =  "/vagrant/secretApikeys.json";
-}else {
-	secretApikeysPath =  "/var/www/lb/secretApikeys.json";
-}
 
 if (!fs.existsSync(secretSettingsPath)) {
 	console.error("Config file [" + secretSettingsPath + "] missing!");
@@ -51,7 +44,6 @@ if (!fs.existsSync(secretSettingsPath)) {
 })();
 
 var secretSettings = JSON.parse(fs.readFileSync(secretSettingsPath, "utf8"));
-var secretApikeys = JSON.parse(fs.readFileSync(secretApikeysPath, "utf8"));
 
 var app = express();
 
@@ -355,7 +347,7 @@ app.use(function(err, req, res, next) {
 });
 
 function updateATCTreeFromMaster() {
-	var apiKeys = secretApikeys.api.keys;
+	var apiKeys = secretSettings.api.keys;
 
 	var cmsApiKey = "CMS";
 

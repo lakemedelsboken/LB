@@ -15,9 +15,9 @@ router.get("/extractkeywords", function(req, res) {
 
 	if (id !== undefined) {
 
-		var secretApikeys = fs.readJsonSync("/var/www/lb/secretApikeys.json");
-		var apiKeys = secretApikeys.api.keys;
-		
+		var secretSettings = fs.readJsonSync(path.join(__dirname, "..", "..", "..", "settings", "secretSettings.json"));
+		var apiKeys = secretSettings.api.keys;
+
 		var apiKey = null;
 
 		var key;

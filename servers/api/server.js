@@ -15,13 +15,6 @@ var LRU = require("lru-cache")
   , cache = LRU(options)
 
 var secretSettingsPath = __dirname + "/../../settings/secretSettings.json";
-var secretApikeysPath =  "";
-
-if(__dirname.indexOf("vagrant") !== -1) {
-	secretApikeysPath =  "/vagrant/secretApikeys.json";
-}else {
-	secretApikeysPath =  "/var/www/lb/secretApikeys.json";
-}
 
 if (!fs.existsSync(secretSettingsPath)) {
 	console.error("Config file [" + secretSettingsPath + "] missing!");
@@ -41,7 +34,6 @@ if (!fs.existsSync(secretSettingsPath)) {
 })();
 
 var secretSettings = JSON.parse(fs.readFileSync(secretSettingsPath, "utf8"));
-var secretApikeys = JSON.parse(fs.readFileSync(secretApikeysPath, "utf8"));
 var settings = JSON.parse(fs.readFileSync(__dirname + "/../../settings/settings.json", "utf8"));
 var thisPort = settings.internalServerPorts.api;
 var sitePort = settings.internalServerPorts.site;
@@ -930,8 +922,7 @@ function checkIfApiKeyIsLegit(apiKey, req) {
 	var isLegit = false;
 
 	//Check table of api keys and log request
-	var apiKeys = secretApikeys.api.keys;
-
+	var apiKeys = secretSettings.api.keys;
 	if (apiKeys[apiKey] !== undefined) {
 		//Key seems legit
 		isLegit = true;
