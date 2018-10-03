@@ -1924,7 +1924,7 @@ ga = function() {};
 
 								var titlePath = (item.titlePath_HL !== undefined) ? item.titlePath_HL : item.titlePath;
 
-								resultsList.append($("<li" + (item.noinfo === true ? " class=\"ui-state-disabled\"" : "") + "><a href=\"/product/" + item.id + "\" class=\"inlineProduct searchResult\" data-product-id=\"" + item.id + "\">" + images + title + "<br><small>" + titlePath + "</small></a></li>"));
+								resultsList.append($("<li" + (item.noinfo === true ? " class=\"ui-state-disabled-hidden\"" : "") + "><a href=\"/product/" + item.id + "\" class=\"inlineProduct searchResult\" data-product-id=\"" + item.id + "\">" + images + title + "<br><small>" + titlePath + "</small></a></li>"));
 							}
 						}
 
@@ -2081,7 +2081,7 @@ ga = function() {};
 									//if (j > 0) {
 										//extraIndent = 25;
 										//}
-									content += "<li" + (productItem.noinfo === true ? " class=\"ui-state-disabled\"" : "") + "><a href=\"/product/" + productItem.id + "\" data-product-id=\"" + productItem.id + "\" class=\"inlineProduct\" data-indentation=\"" + (indentationLevel + 1) + "\" style=\"padding-left: " + (parseInt(indentationPixels) + extraIndent) + "px;\">" + images + productInfo + "</a></li>";
+									content += "<li" + (productItem.noinfo === true ? " class=\"ui-state-disabled-hidden\"" : "") + "><a href=\"/product/" + productItem.id + "\" data-product-id=\"" + productItem.id + "\" class=\"inlineProduct\" data-indentation=\"" + (indentationLevel + 1) + "\" style=\"padding-left: " + (parseInt(indentationPixels) + extraIndent) + "px;\">" + images + productInfo + "</a></li>";
 								}
 
 
@@ -2194,7 +2194,7 @@ ga = function() {};
 													//extraIndent = 25;
 												//}
 
-												currentATCMenu.append("<li" + (productItem.noinfo === true ? " class=\"ui-state-disabled\"" : "") + "><a href=\"/product/" + productItem.id + "\" data-product-id=\"" + productItem.id + "\" class=\"inlineProduct\" " + ((extraIndent > 0) ? " style=\"padding-left: " + extraIndent + "px;\"" : "") + ">" + images + productInfo + "</a></li>");
+												currentATCMenu.append("<li" + (productItem.noinfo === true ? " class=\"ui-state-disabled-hidden\"" : "") + "><a href=\"/product/" + productItem.id + "\" data-product-id=\"" + productItem.id + "\" class=\"inlineProduct\" " + ((extraIndent > 0) ? " style=\"padding-left: " + extraIndent + "px;\"" : "") + ">" + images + productInfo + "</a></li>");
 											}
 										} else {
 											//console.log(item);
@@ -2486,7 +2486,7 @@ ga = function() {};
 
 							title = title.join(" <br>");
 						}
-						list.append($("<li id=\"item_" + product.id + "\"" + (product.noinfo === true ? " class=\"ui-state-disabled\"" : "") + "><a class=\"inlineListProduct\" data-product-id=\"" + product.id + "\" href=\"/product/" + product.id + "\">" + images + title + "</a></li>"));
+						list.append($("<li id=\"item_" + product.id + "\"" + (product.noinfo === true ? " class=\"ui-state-disabled-hidden\"" : "") + "><a class=\"inlineListProduct\" data-product-id=\"" + product.id + "\" href=\"/product/" + product.id + "\">" + images + title + "</a></li>"));
 					}
 					for (var j=0; j < noinfoProducts.length; j++) {
 						var product = noinfoProducts[j];
@@ -2511,7 +2511,7 @@ ga = function() {};
 
 							title = title.join(" <br>");
 						}
-						list.append($("<li id=\"item_" + product.id + "\"" + (product.noinfo === true ? " class=\"ui-state-disabled\"" : "") + "><a class=\"inlineListProduct\" data-product-id=\"" + product.id + "\" href=\"/product/" + product.id + "\">" + images + title + "</a></li>"));
+						list.append($("<li id=\"item_" + product.id + "\"" + (product.noinfo === true ? " class=\"ui-state-disabled-hidden\"" : "") + "><a class=\"inlineListProduct\" data-product-id=\"" + product.id + "\" href=\"/product/" + product.id + "\">" + images + title + "</a></li>"));
 					}
 
 				}
