@@ -58,9 +58,9 @@ var ComponentController = {
 		return componentModel.getAllComponents();
 	},
 	getEditors: function(components) {
-		
+
 		var componentEditors = [];
-		
+
 		if (components && components !== undefined) {
 			for (var name in components) {
 				var item = components[name];
@@ -82,7 +82,7 @@ var ComponentController = {
 
 					for (var i = 0; i < allComponents.length; i++) {
 						var componentPath = allComponents[i];
-						
+
 						if (item.content === componentPath) {
 							select.push("<option selected>" + componentPath + "</option>");
 						} else {
@@ -96,8 +96,8 @@ var ComponentController = {
 					//componentEditors.push(item.description + ' <input name="component:' + name + '" type="text" value="">');
 					//}
 			}
-		} 
-		
+		}
+
 		return componentEditors;
 	},
 	cachedComponents: [],
@@ -111,13 +111,13 @@ var ComponentController = {
 
 		//Read draft component data
 		var componentData = JSON.parse(fs.readFileSync(path.join(baseDir, componentPath), "utf8"));
-		
+
 		var templateName = componentData.templateName;
-		
+
 		//Get component object
 		var component = null;
 		var componentPath = path.join(__dirname, "..", "componenttypes", templateName, "component.js");
-		
+
 		if (ComponentController.cachedComponents[componentPath] !== undefined) {
 			component = ComponentController.cachedComponents[componentPath];
 		} else {
@@ -125,10 +125,10 @@ var ComponentController = {
 			component = require(componentPath);
 			ComponentController.cachedComponents[componentPath] = component;
 		}
-		
+
 		//Render the component
 		var output = component.getOutput(componentData, "draft");
-		
+
 		return output;
 	},
 	getPublishedOutput: function(componentPath) {
@@ -141,17 +141,17 @@ var ComponentController = {
 		var componentFullPath = path.join(baseDir, componentPath);
 
 		var publishedVersions = historyModel.getPublished(componentPath);
-		
+
 		if (publishedVersions.length > 0) {
 			var mostRecentPublishedVersion = publishedVersions[0];
 			var componentData = JSON.parse(fs.readFileSync(mostRecentPublishedVersion.path, "utf8"));
 
 			var templateName = componentData.templateName;
-		
+
 			//Get component object
 			var component = null;
 			var componentPath = path.join(__dirname, "..", "componenttypes", templateName, "component.js");
-		
+
 			if (ComponentController.cachedComponents[componentPath] !== undefined) {
 				component = ComponentController.cachedComponents[componentPath];
 			} else {
@@ -159,19 +159,20 @@ var ComponentController = {
 				component = require(componentPath);
 				ComponentController.cachedComponents[componentPath] = component;
 			}
-		
+
 			//Render the component
 			var output = component.getOutput(componentData, "published");
-			
+
 			return output;
 
 		} else {
 			return "";
 		}
-		
+
+
 		
 	}
-	
+
 };
 
 module.exports = ComponentController;
