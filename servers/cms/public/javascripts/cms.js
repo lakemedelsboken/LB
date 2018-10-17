@@ -987,6 +987,7 @@ $(document).ready(function() {
 		}
 	});
 
+
 	$(".showFullPreview").on("click", function(event) {
 		$(this).parent().prev().css("max-height", "none");
 		$(this).parent().remove();
