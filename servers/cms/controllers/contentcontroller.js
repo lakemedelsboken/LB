@@ -878,7 +878,19 @@ var ContentController = {
 			);
 		});
 
-		if (imageFiles.length > 0) {
+		var imagesOutDir = path.join(ContentController.baseDir, "..", "output", "static","images");
+		var imageOutFiles = wrench.readdirSyncRecursive(imagesOutDir);
+
+		//Filter only png files
+		imageOutFiles = imageOutFiles.filter(function(element) {
+			return (
+				path.extname(element) === ".png" &&
+				fs.statSync(path.join(imagesOutDir, element)).isFile()
+			);
+		});
+		
+		if (imageFiles.length != (imageOutFiles.length / 16)) {
+
 			ContentController.addTasks(imageFiles.length);
 
 			//Setup queue task
